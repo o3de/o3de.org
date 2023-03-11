@@ -53,8 +53,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_atom_tools_framework_1_1_atom_tools_document_main_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AtomToolsFramework::AtomToolsDocumentMainWindow Class Reference</div>  </div>
@@ -181,6 +179,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMenus</b> (QMen
 <tr class="memitem:a43e6600a2890397e6066ad20608b102a inherit pub_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43e6600a2890397e6066ad20608b102a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenSettingsDialog</b> ()</td></tr>
 <tr class="separator:a43e6600a2890397e6066ad20608b102a inherit pub_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452d1357a9620d8046e3893469ec4737 inherit pub_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a452d1357a9620d8046e3893469ec4737"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettingsDialogClosed</b> ()</td></tr>
+<tr class="separator:a452d1357a9620d8046e3893469ec4737 inherit pub_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0155f9c772a8eb7dd20508a0aaae2280 inherit pub_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0155f9c772a8eb7dd20508a0aaae2280"></a>
 virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetHelpDialogText</b> () const </td></tr>
 <tr class="separator:a0155f9c772a8eb7dd20508a0aaae2280 inherit pub_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,234 +191,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenHelpDialo
 <tr class="memitem:a9a966c69abe5d4a1aedf3f72ca7e1a4e inherit pub_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a966c69abe5d4a1aedf3f72ca7e1a4e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenAboutDialog</b> ()</td></tr>
 <tr class="separator:a9a966c69abe5d4a1aedf3f72ca7e1a4e inherit pub_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab0c6f1a01dd0564760631642b5d2282e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0c6f1a01dd0564760631642b5d2282e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildCreateMenu</b> (QAction *insertPostion)</td></tr>
-<tr class="separator:ab0c6f1a01dd0564760631642b5d2282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea0f0bde54f0d7eb266d66082f6ca371"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea0f0bde54f0d7eb266d66082f6ca371"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildOpenMenu</b> (QAction *insertPostion)</td></tr>
-<tr class="separator:aea0f0bde54f0d7eb266d66082f6ca371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99fd7751d48635715e9a843ab57ff696"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99fd7751d48635715e9a843ab57ff696"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDocumentTabBar</b> ()</td></tr>
-<tr class="separator:a99fd7751d48635715e9a843ab57ff696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af88b69e6339d178d578ec2a15d44ae60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af88b69e6339d178d578ec2a15d44ae60"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRecentFileMenu</b> ()</td></tr>
-<tr class="separator:af88b69e6339d178d578ec2a15d44ae60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6be35749df1a8c7bec06ada4d428e347"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6be35749df1a8c7bec06ada4d428e347"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveDocument</b> (const AZ::Uuid &amp;documentId)</td></tr>
-<tr class="separator:a6be35749df1a8c7bec06ada4d428e347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac608818ec1f8f4528cb1bf5a5874fb50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac608818ec1f8f4528cb1bf5a5874fb50"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CloseDocumentCheck</b> (const AZ::Uuid &amp;documentId)</td></tr>
-<tr class="separator:ac608818ec1f8f4528cb1bf5a5874fb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2943886ddff173fc0b69ddb9479c0c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2943886ddff173fc0b69ddb9479c0c2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CloseDocuments</b> (const AZStd::vector&lt; AZ::Uuid &gt; &amp;documentIds)</td></tr>
-<tr class="separator:ad2943886ddff173fc0b69ddb9479c0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110ef6ffbc7a97ae9b937b0dc37bde0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a110ef6ffbc7a97ae9b937b0dc37bde0d"></a>
-const AZStd::vector&lt; AZ::Uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetOpenDocumentIds</b> () const </td></tr>
-<tr class="separator:a110ef6ffbc7a97ae9b937b0dc37bde0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc198083755f009269c2cdfbb474f1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accc198083755f009269c2cdfbb474f1e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDocumentOpened</b> (const AZ::Uuid &amp;documentId) override</td></tr>
-<tr class="separator:accc198083755f009269c2cdfbb474f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84f0e2ee76f9f186e1cdb620da23b023"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84f0e2ee76f9f186e1cdb620da23b023"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDocumentClosed</b> (const AZ::Uuid &amp;documentId) override</td></tr>
-<tr class="separator:a84f0e2ee76f9f186e1cdb620da23b023"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f6fa11536a0cb1b6837838dca165cf6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f6fa11536a0cb1b6837838dca165cf6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDocumentCleared</b> (const AZ::Uuid &amp;documentId) override</td></tr>
-<tr class="separator:a4f6fa11536a0cb1b6837838dca165cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbbeaef86c81ecfdd098422b44633fae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbbeaef86c81ecfdd098422b44633fae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDocumentError</b> (const AZ::Uuid &amp;documentId) override</td></tr>
-<tr class="separator:afbbeaef86c81ecfdd098422b44633fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a520a3a39839b5fbd8e54a38eddf6c546"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a520a3a39839b5fbd8e54a38eddf6c546"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDocumentDestroyed</b> (const AZ::Uuid &amp;documentId) override</td></tr>
-<tr class="separator:a520a3a39839b5fbd8e54a38eddf6c546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae149dfdd5c9b329f3bc317f7387bda95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae149dfdd5c9b329f3bc317f7387bda95"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDocumentModified</b> (const AZ::Uuid &amp;documentId) override</td></tr>
-<tr class="separator:ae149dfdd5c9b329f3bc317f7387bda95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51ce548c92d78600ede8eb7b54326173"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51ce548c92d78600ede8eb7b54326173"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDocumentUndoStateChanged</b> (const AZ::Uuid &amp;documentId) override</td></tr>
-<tr class="separator:a51ce548c92d78600ede8eb7b54326173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24023e36416093aa43480be489cb05e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24023e36416093aa43480be489cb05e5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDocumentSaved</b> (const AZ::Uuid &amp;documentId) override</td></tr>
-<tr class="separator:a24023e36416093aa43480be489cb05e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10bf1d85a148080fe916d1da484934a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10bf1d85a148080fe916d1da484934a9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *closeEvent) override</td></tr>
-<tr class="separator:a10bf1d85a148080fe916d1da484934a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb1b9714603d8fd764717962b9139ea9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb1b9714603d8fd764717962b9139ea9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dragEnterEvent</b> (QDragEnterEvent *event) override</td></tr>
-<tr class="separator:adb1b9714603d8fd764717962b9139ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcae3b59c99069e0c7a901cd0efb3a56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcae3b59c99069e0c7a901cd0efb3a56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dragMoveEvent</b> (QDragMoveEvent *event) override</td></tr>
-<tr class="separator:afcae3b59c99069e0c7a901cd0efb3a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01671010263c6232f308a18aeb65e175"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01671010263c6232f308a18aeb65e175"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dragLeaveEvent</b> (QDragLeaveEvent *event) override</td></tr>
-<tr class="separator:a01671010263c6232f308a18aeb65e175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3737d380ba574c7fad52cee34b7647ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3737d380ba574c7fad52cee34b7647ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dropEvent</b> (QDropEvent *event) override</td></tr>
-<tr class="separator:a3737d380ba574c7fad52cee34b7647ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ae25a55052f3d1ee73b1814cd9f67c5"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6ae25a55052f3d1ee73b1814cd9f67c5"></a>
-template&lt;typename Functor &gt; </td></tr>
-<tr class="memitem:a6ae25a55052f3d1ee73b1814cd9f67c5"><td class="memTemplItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CreateActionAtPosition</b> (QMenu *menu, QAction *position, const QString &amp;name, Functor fn, const QKeySequence &amp;shortcut=0)</td></tr>
-<tr class="separator:a6ae25a55052f3d1ee73b1814cd9f67c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window.html">AtomToolsFramework::AtomToolsMainWindow</a></td></tr>
-<tr class="memitem:a7279f5811c9fea91362fc0a3605c59c6 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7279f5811c9fea91362fc0a3605c59c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *showEvent) override</td></tr>
-<tr class="separator:a7279f5811c9fea91362fc0a3605c59c6 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3994d5d1128718ee6aa91337fffa07db inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3994d5d1128718ee6aa91337fffa07db"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *closeEvent) override</td></tr>
-<tr class="separator:a3994d5d1128718ee6aa91337fffa07db inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29790e9a53bc87f30778ec61236323f2 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29790e9a53bc87f30778ec61236323f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildDockingMenu</b> ()</td></tr>
-<tr class="separator:a29790e9a53bc87f30778ec61236323f2 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3f7f3f315e87d6da87a6bb3e23bfd1f inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3f7f3f315e87d6da87a6bb3e23bfd1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildLayoutsMenu</b> ()</td></tr>
-<tr class="separator:ae3f7f3f315e87d6da87a6bb3e23bfd1f inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8be76c00096dbe10fd31ae812974384 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8be76c00096dbe10fd31ae812974384"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildScriptsMenu</b> ()</td></tr>
-<tr class="separator:aa8be76c00096dbe10fd31ae812974384 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb03dc4c9028cada120de2fe2464ebf9 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb03dc4c9028cada120de2fe2464ebf9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RestoreDefaultLayout</b> ()</td></tr>
-<tr class="separator:adb03dc4c9028cada120de2fe2464ebf9 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4d60898c438674e29a08be9b299c735 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4d60898c438674e29a08be9b299c735"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RestoreSavedLayout</b> ()</td></tr>
-<tr class="separator:ab4d60898c438674e29a08be9b299c735 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e403df9428de125f63804f7065c050 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69e403df9428de125f63804f7065c050"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupMetrics</b> ()</td></tr>
-<tr class="separator:a69e403df9428de125f63804f7065c050 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b73d05b7bf1bbea0d2053fc646bd645 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b73d05b7bf1bbea0d2053fc646bd645"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMetrics</b> ()</td></tr>
-<tr class="separator:a1b73d05b7bf1bbea0d2053fc646bd645 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ce93a97c99765384c05121d467a6b5 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13ce93a97c99765384c05121d467a6b5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateWindowTitle</b> ()</td></tr>
-<tr class="separator:a13ce93a97c99765384c05121d467a6b5 inherit pro_methods_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a238710e791a62c412f6a60fe5ae69afe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a238710e791a62c412f6a60fe5ae69afe"></a>
-QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuOpenRecent</b> = {}</td></tr>
-<tr class="separator:a238710e791a62c412f6a60fe5ae69afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa052f8a5bae5da4cda5912f3fd7126ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa052f8a5bae5da4cda5912f3fd7126ec"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionClose</b> = {}</td></tr>
-<tr class="separator:aa052f8a5bae5da4cda5912f3fd7126ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0970537899bc59cfefb6a619cf04e54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0970537899bc59cfefb6a619cf04e54"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionCloseAll</b> = {}</td></tr>
-<tr class="separator:ae0970537899bc59cfefb6a619cf04e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70312322815a4ef4590138b5e5c11d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af70312322815a4ef4590138b5e5c11d0"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionCloseOthers</b> = {}</td></tr>
-<tr class="separator:af70312322815a4ef4590138b5e5c11d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc82a8bb1197a8f800d9be09baaab3b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc82a8bb1197a8f800d9be09baaab3b8"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionSave</b> = {}</td></tr>
-<tr class="separator:adc82a8bb1197a8f800d9be09baaab3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec690ce238f4b7f1103ae1e89f66bdda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec690ce238f4b7f1103ae1e89f66bdda"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionSaveAsCopy</b> = {}</td></tr>
-<tr class="separator:aec690ce238f4b7f1103ae1e89f66bdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8830bc812a6c3c198b6b901a3f6441d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8830bc812a6c3c198b6b901a3f6441d"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionSaveAsChild</b> = {}</td></tr>
-<tr class="separator:ad8830bc812a6c3c198b6b901a3f6441d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5c4ae627ed1d7a98ba2acd4625bdb66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5c4ae627ed1d7a98ba2acd4625bdb66"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionSaveAll</b> = {}</td></tr>
-<tr class="separator:ab5c4ae627ed1d7a98ba2acd4625bdb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a963e4726913a8aad6b13517be944686b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a963e4726913a8aad6b13517be944686b"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionUndo</b> = {}</td></tr>
-<tr class="separator:a963e4726913a8aad6b13517be944686b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac549bf73c1b4cbeb7b1569fded94b58c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac549bf73c1b4cbeb7b1569fded94b58c"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionRedo</b> = {}</td></tr>
-<tr class="separator:ac549bf73c1b4cbeb7b1569fded94b58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625ab4e0a2fbad455a18e52f7a5fc396"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a625ab4e0a2fbad455a18e52f7a5fc396"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionNextTab</b> = {}</td></tr>
-<tr class="separator:a625ab4e0a2fbad455a18e52f7a5fc396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a132da7d2b2968fbae41db3954cec4e51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a132da7d2b2968fbae41db3954cec4e51"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionPreviousTab</b> = {}</td></tr>
-<tr class="separator:a132da7d2b2968fbae41db3954cec4e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c96e1c2ab21621255c2f5fb1bb42cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02c96e1c2ab21621255c2f5fb1bb42cd"></a>
-AzQtComponents::TabWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabWidget</b> = {}</td></tr>
-<tr class="separator:a02c96e1c2ab21621255c2f5fb1bb42cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0142702ca21f9a45e0d01421ed187187"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0142702ca21f9a45e0d01421ed187187"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property_group.html">DynamicPropertyGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_documentSystemSettingsGroup</b></td></tr>
-<tr class="separator:a0142702ca21f9a45e0d01421ed187187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window.html">AtomToolsFramework::AtomToolsMainWindow</a></td></tr>
-<tr class="memitem:a19b813169e883e7d3f85b228850057f6 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19b813169e883e7d3f85b228850057f6"></a>
-const AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolId</b> = {}</td></tr>
-<tr class="separator:a19b813169e883e7d3f85b228850057f6 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f6bf12a88caedb9f875e818a05b19d6 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f6bf12a88caedb9f875e818a05b19d6"></a>
-QPointer<br class="typebreak"/>
-&lt; AzQtComponents::FancyDocking &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_advancedDockManager</b> = {}</td></tr>
-<tr class="separator:a3f6bf12a88caedb9f875e818a05b19d6 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d73d7f86178c6fea9571c10db5e7861 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d73d7f86178c6fea9571c10db5e7861"></a>
-AzQtComponents::WindowDecorationWrapper *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainWindowWrapper</b> = {}</td></tr>
-<tr class="separator:a7d73d7f86178c6fea9571c10db5e7861 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa8b249995f60c91eda61edd1c1693a inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fa8b249995f60c91eda61edd1c1693a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_shownBefore</b> = {}</td></tr>
-<tr class="separator:a6fa8b249995f60c91eda61edd1c1693a inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e7dfa253c31ed19c84952f9d1c6bac5 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e7dfa253c31ed19c84952f9d1c6bac5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_updateMenus</b> = {}</td></tr>
-<tr class="separator:a3e7dfa253c31ed19c84952f9d1c6bac5 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab03982ea2a95a26a841018923c08810c inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab03982ea2a95a26a841018923c08810c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_rebuildMenus</b> = {}</td></tr>
-<tr class="separator:ab03982ea2a95a26a841018923c08810c inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc54b3999b39d1fad5150f3553950a7 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbc54b3999b39d1fad5150f3553950a7"></a>
-QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultWindowState</b></td></tr>
-<tr class="separator:adbc54b3999b39d1fad5150f3553950a7 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc66bd2a6ed42ed042fea0f1db596d0 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfc66bd2a6ed42ed042fea0f1db596d0"></a>
-QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_statusMessage</b> = {}</td></tr>
-<tr class="separator:abfc66bd2a6ed42ed042fea0f1db596d0 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff2b05eeef2e3f4ef956b044e6dd20a inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ff2b05eeef2e3f4ef956b044e6dd20a"></a>
-QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_statusBarFps</b> = {}</td></tr>
-<tr class="separator:a9ff2b05eeef2e3f4ef956b044e6dd20a inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76a8ca1bce077ffb503c173997ef7f04 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76a8ca1bce077ffb503c173997ef7f04"></a>
-QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_statusBarCpuTime</b> = {}</td></tr>
-<tr class="separator:a76a8ca1bce077ffb503c173997ef7f04 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90002b5cbdf6ffbfdf5e6da66748bd84 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90002b5cbdf6ffbfdf5e6da66748bd84"></a>
-QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_statusBarGpuTime</b> = {}</td></tr>
-<tr class="separator:a90002b5cbdf6ffbfdf5e6da66748bd84 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96202276285cc9f3054810745065b894 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96202276285cc9f3054810745065b894"></a>
-QTimer&#160;</td><td class="memItemRight" valign="bottom"><b>m_metricsTimer</b></td></tr>
-<tr class="separator:a96202276285cc9f3054810745065b894 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aca74aa5f2b1c90d10eb829594d2113 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9aca74aa5f2b1c90d10eb829594d2113"></a>
-QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuFile</b> = {}</td></tr>
-<tr class="separator:a9aca74aa5f2b1c90d10eb829594d2113 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c3ec1a36c2d8a1088fa6f3049d5043 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6c3ec1a36c2d8a1088fa6f3049d5043"></a>
-QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuEdit</b> = {}</td></tr>
-<tr class="separator:ae6c3ec1a36c2d8a1088fa6f3049d5043 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec440baebb19b8f4ad0c32b032b89bcb inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec440baebb19b8f4ad0c32b032b89bcb"></a>
-QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuView</b> = {}</td></tr>
-<tr class="separator:aec440baebb19b8f4ad0c32b032b89bcb inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1742f8b5ab255ffc63b91fdcf54dbcd5 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1742f8b5ab255ffc63b91fdcf54dbcd5"></a>
-QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuTools</b> = {}</td></tr>
-<tr class="separator:a1742f8b5ab255ffc63b91fdcf54dbcd5 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a348ae1d344491fe865dfd4f773e1b0ee inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a348ae1d344491fe865dfd4f773e1b0ee"></a>
-QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuHelp</b> = {}</td></tr>
-<tr class="separator:a348ae1d344491fe865dfd4f773e1b0ee inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a127c12d24ccffc9af97bebfbd0f237e1 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a127c12d24ccffc9af97bebfbd0f237e1"></a>
-<a class="el" href="class_atom_tools_framework_1_1_atom_tools_asset_browser.html">AtomToolsFramework::AtomToolsAssetBrowser</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetBrowser</b> = {}</td></tr>
-<tr class="separator:a127c12d24ccffc9af97bebfbd0f237e1 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0f4d764731907ad71d196ebf8b848b inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca0f4d764731907ad71d196ebf8b848b"></a>
-AzToolsFramework::LogPanel::TracePrintFLogPanel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_logPanel</b> = {}</td></tr>
-<tr class="separator:aca0f4d764731907ad71d196ebf8b848b inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5834f9b46357223f478854999e92e32c inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5834f9b46357223f478854999e92e32c"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property_group.html">DynamicPropertyGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_applicationSettingsGroup</b></td></tr>
-<tr class="separator:a5834f9b46357223f478854999e92e32c inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93ea0018d42d40840f38cb9cef6aae75 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93ea0018d42d40840f38cb9cef6aae75"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property_group.html">DynamicPropertyGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetBrowserSettingsGroup</b></td></tr>
-<tr class="separator:a93ea0018d42d40840f38cb9cef6aae75 inherit pro_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_types_class_atom_tools_framework_1_1_atom_tools_main_window"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_atom_tools_framework_1_1_atom_tools_main_window')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window.html">AtomToolsFramework::AtomToolsMainWindow</a></td></tr>
-<tr class="memitem:a9f97b6c18d83c49fa0c50429d454fb27 inherit pro_types_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f97b6c18d83c49fa0c50429d454fb27"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>LayoutSettingsMap</b> = AZStd::map&lt; AZStd::string, AZStd::string &gt;</td></tr>
-<tr class="separator:a9f97b6c18d83c49fa0c50429d454fb27 inherit pro_types_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_atom_tools_framework_1_1_atom_tools_main_window')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window.html">AtomToolsFramework::AtomToolsMainWindow</a></td></tr>
-<tr class="memitem:a694f84af8e6d1bb8d69143d24c184bde inherit pro_static_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a694f84af8e6d1bb8d69143d24c184bde"></a>
-static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>ToolLayoutSettingsKey</b> = &quot;/O3DE/AtomToolsFramework/MainWindow/Layouts/Tool&quot;</td></tr>
-<tr class="separator:a694f84af8e6d1bb8d69143d24c184bde inherit pro_static_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c929d28a476ccdaa52c225365df7da4 inherit pro_static_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c929d28a476ccdaa52c225365df7da4"></a>
-static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>UserLayoutSettingsKey</b> = &quot;/O3DE/AtomToolsFramework/MainWindow/Layouts/User&quot;</td></tr>
-<tr class="separator:a4c929d28a476ccdaa52c225365df7da4 inherit pro_static_attribs_class_atom_tools_framework_1_1_atom_tools_main_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_main_window.html">AtomToolsDocumentMainWindow</a> is a bridge between the base main window class and the document system. It has actions and menus for operations like creating, opening, saving, and closing documents. Additionally, it automatically manages tabs and views for each open document. </p>
@@ -487,7 +260,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:24:58 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

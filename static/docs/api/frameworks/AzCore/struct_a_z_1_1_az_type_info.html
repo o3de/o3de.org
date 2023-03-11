@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>Open 3D Engine AzCore API Reference: AZ::AzTypeInfo&lt; T, IsEnum &gt; Struct Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::AzTypeInfo&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -52,17 +52,79 @@
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="struct_a_z_1_1_az_type_info-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AZ::AzTypeInfo&lt; T, IsEnum &gt; Struct Template Reference</div>  </div>
+<div class="title">AZ::AzTypeInfo&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;TypeInfoSimple.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a76b67a62249e61b391821bb97108e86c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_az_type_info.html#a76b67a62249e61b391821bb97108e86c">Uuid</a> ()</td></tr>
+<tr class="separator:a76b67a62249e61b391821bb97108e86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbb2a25893aaba6318fdd7983fa1a3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dbb2a25893aaba6318fdd7983fa1a3c"></a>
+static <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCanonicalTypeId</b> ()</td></tr>
+<tr class="separator:a0dbb2a25893aaba6318fdd7983fa1a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276a329e7aba6ac5232fd3fd3931624b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a276a329e7aba6ac5232fd3fd3931624b"></a>
+static <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPointeeTypeId</b> ()</td></tr>
+<tr class="separator:a276a329e7aba6ac5232fd3fd3931624b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e65b8910eb6c2b81702a56cba1767e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52e65b8910eb6c2b81702a56cba1767e"></a>
+static <a class="el" href="namespace_a_z.html#a9aa3f94262a96e11e3d6ca3b83688be5">AZ::TemplateId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetTemplateId</b> ()</td></tr>
+<tr class="separator:a52e65b8910eb6c2b81702a56cba1767e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57630f84321c8624e156df4014c44472"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57630f84321c8624e156df4014c44472"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b> ()</td></tr>
+<tr class="separator:a57630f84321c8624e156df4014c44472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2167fada360ff44d613916856873dba2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2167fada360ff44d613916856873dba2"></a>
+static constexpr <a class="el" href="namespace_a_z.html#a1a6ca60ba16a5bf1067b2e161e7debd5">TypeTraits</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeTraits</b> ()</td></tr>
+<tr class="separator:a2167fada360ff44d613916856873dba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb67f5ebfe249ea5f7c5e08888b081cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb67f5ebfe249ea5f7c5e08888b081cb"></a>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Size</b> ()</td></tr>
+<tr class="separator:afb67f5ebfe249ea5f7c5e08888b081cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br/>
+struct AZ::AzTypeInfo&lt; T &gt;</h3>
+
+<p>Since O3DE fully support cross shared libraries (DLL) operation, it does not rely on typeid, static templates, etc. to generate the same result in different compilations. A unique ID for each type is required. By default the code will try to access to a static GetO3deTypeName/GetO3deTypeId functions inside a class the type info metadata. For types when intrusive is not an option(fundamental types such as int, float or enums), the class will need to specialize the <a class="el" href="struct_a_z_1_1_az_type_info.html">AzTypeInfo</a>. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a76b67a62249e61b391821bb97108e86c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> <a class="el" href="struct_a_z_1_1_az_type_info.html">AZ::AzTypeInfo</a>&lt; T &gt;::<a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Used for aggregation of TypeIds when part of a template argument Returns the canonical type id of the actual type when a value type such as int or AZStd::string</p>
+<p>When type T is a pointer Calls the PointeeTypeId function to retrieve the TypeId of for type T instead of T* This is different from the other <a class="el" href="struct_a_z_1_1_az_type_info.html">AzTypeInfo</a> T types Required for maintaining backwards compatibility with code that expects <a class="el" href="struct_a_z_1_1_az_type_info.html#a76b67a62249e61b391821bb97108e86c">AzTypeInfo&lt;int*&gt;::Uuid()</a> == <a class="el" href="struct_a_z_1_1_az_type_info.html#a76b67a62249e61b391821bb97108e86c">AzTypeInfo&lt;int&gt;::Uuid()</a> </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Code/Framework/AzCore/AzCore/RTTI/TypeInfo.h</li>
+<li>Code/Framework/AzCore/AzCore/RTTI/TypeInfoSimple.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

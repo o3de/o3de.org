@@ -55,9 +55,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_spin_box-members.html">List of all members</a>  </div>
@@ -155,63 +152,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2edb42a2cbc85625a65ab7ab980275d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2edb42a2cbc85625a65ab7ab980275d8"></a>
 static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>s_watcherReferenceCount</b></td></tr>
 <tr class="separator:a2edb42a2cbc85625a65ab7ab980275d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a14b01308f0f18f48b365149797c4d10c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14b01308f0f18f48b365149797c4d10c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) static QPointer&lt; SpinBoxWatcher &gt; s_spinBoxWatcher</td></tr>
-<tr class="separator:a14b01308f0f18f48b365149797c4d10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ffee7f71cad00e2523de5fb36e7ec9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ffee7f71cad00e2523de5fb36e7ec9a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>focusInEvent</b> (QFocusEvent *e) override</td></tr>
-<tr class="separator:a5ffee7f71cad00e2523de5fb36e7ec9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed1d48dbd2e02ef75d0d5934791f391"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ed1d48dbd2e02ef75d0d5934791f391"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>focusOutEvent</b> (QFocusEvent *e) override</td></tr>
-<tr class="separator:a1ed1d48dbd2e02ef75d0d5934791f391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869a3db85b052154491c71bb94e4e139"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a869a3db85b052154491c71bb94e4e139"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuEvent</b> (QContextMenuEvent *ev) override</td></tr>
-<tr class="separator:a869a3db85b052154491c71bb94e4e139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef19561acd9f8e0bbfddd05ade29e8b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef19561acd9f8e0bbfddd05ade29e8b1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setLastValue</b> (int v)</td></tr>
-<tr class="separator:aef19561acd9f8e0bbfddd05ade29e8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a912ffcc15b4c63c52a2d611823a4b46e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a912ffcc15b4c63c52a2d611823a4b46e"></a>
-static AZ_POP_DISABLE_WARNING void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeWatcher</b> ()</td></tr>
-<tr class="separator:a912ffcc15b4c63c52a2d611823a4b46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af74b781eaaecc33aa71885de3480459c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af74b781eaaecc33aa71885de3480459c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>uninitializeWatcher</b> ()</td></tr>
-<tr class="separator:af74b781eaaecc33aa71885de3480459c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abae1bd59b83593b0667e36621d5ef10e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abae1bd59b83593b0667e36621d5ef10e"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawSpinBox</b> (const QProxyStyle *style, const QStyleOption *option, QPainter *painter, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_spin_box_1_1_config.html">Config</a> &amp;config)</td></tr>
-<tr class="separator:abae1bd59b83593b0667e36621d5ef10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f300244af7e1a4a07ed082939637fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5f300244af7e1a4a07ed082939637fc"></a>
-static QRect&#160;</td><td class="memItemRight" valign="bottom"><b>editFieldRect</b> (const QProxyStyle *style, const QStyleOptionComplex *option, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_spin_box_1_1_config.html">Config</a> &amp;config)</td></tr>
-<tr class="separator:ae5f300244af7e1a4a07ed082939637fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2731cfb4e0712803be97593dfaecb8a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2731cfb4e0712803be97593dfaecb8a9"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>polish</b> (QProxyStyle *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_spin_box_1_1_config.html">Config</a> &amp;config)</td></tr>
-<tr class="separator:a2731cfb4e0712803be97593dfaecb8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5306bdedea1a9d383609b3f9e2617da2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5306bdedea1a9d383609b3f9e2617da2"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>unpolish</b> (QProxyStyle *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_spin_box_1_1_config.html">Config</a> &amp;config)</td></tr>
-<tr class="separator:a5306bdedea1a9d383609b3f9e2617da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234cb0497c0b5306d17b070b8e14e341"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a234cb0497c0b5306d17b070b8e14e341"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>setButtonSymbolsForStyle</b> (QAbstractSpinBox *spinBox)</td></tr>
-<tr class="separator:a234cb0497c0b5306d17b070b8e14e341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a320064d15d739f89ac84c1662dc89668"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a320064d15d739f89ac84c1662dc89668"></a>
-<a class="el" href="class_az_qt_components_1_1internal_1_1_spin_box_line_edit.html">internal::SpinBoxLineEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_lineEdit</b> = nullptr</td></tr>
-<tr class="separator:a320064d15d739f89ac84c1662dc89668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32fc2c95098c17797fc1687b3a7efc72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32fc2c95098c17797fc1687b3a7efc72"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastValue</b> = 0</td></tr>
-<tr class="separator:a32fc2c95098c17797fc1687b3a7efc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e832c890807064e00d1eca3f3faffa3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e832c890807064e00d1eca3f3faffa3"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastSuffix</b></td></tr>
-<tr class="separator:a1e832c890807064e00d1eca3f3faffa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05f1ef0a688feeb6d1620b0d0c8d38a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae05f1ef0a688feeb6d1620b0d0c8d38a"></a>
-QSize&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastMinimumSize</b></td></tr>
-<tr class="separator:ae05f1ef0a688feeb6d1620b0d0c8d38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -338,7 +278,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleSpinBox</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:07 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

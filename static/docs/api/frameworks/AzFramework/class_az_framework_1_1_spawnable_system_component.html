@@ -55,8 +55,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_spawnable_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::SpawnableSystemComponent Class Reference</div>  </div>
@@ -130,39 +128,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:abea8eb4aa3939fd3bdc019355acaad24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abea8eb4aa3939fd3bdc019355acaad24"></a>
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>RootSpawnableRegistryKey</b> = &quot;/Amazon/AzCore/Bootstrap/RootSpawnable&quot;</td></tr>
 <tr class="separator:abea8eb4aa3939fd3bdc019355acaad24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a24eea3ec1cb7e7403e48beab0f63dd19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24eea3ec1cb7e7403e48beab0f63dd19"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () override</td></tr>
-<tr class="separator:a24eea3ec1cb7e7403e48beab0f63dd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49555af0b2b05a8b68683846491ab206"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49555af0b2b05a8b68683846491ab206"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
-<tr class="separator:a49555af0b2b05a8b68683846491ab206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3883aec4d2787348956e8f66543771"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e3883aec4d2787348956e8f66543771"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadRootSpawnableFromSettingsRegistry</b> ()</td></tr>
-<tr class="separator:a5e3883aec4d2787348956e8f66543771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a4c1efb1034ff3d65ebc1608395495255"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c1efb1034ff3d65ebc1608395495255"></a>
-<a class="el" href="class_az_framework_1_1_spawnable_asset_handler.html">SpawnableAssetHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetHandler</b></td></tr>
-<tr class="separator:a4c1efb1034ff3d65ebc1608395495255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66115a7a9153695c2d025c0833771e93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66115a7a9153695c2d025c0833771e93"></a>
-<a class="el" href="class_az_framework_1_1_spawnable_entities_manager.html">SpawnableEntitiesManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entitiesManager</b></td></tr>
-<tr class="separator:a66115a7a9153695c2d025c0833771e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab600e87b98185b3c487e8b144abcb553"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab600e87b98185b3c487e8b144abcb553"></a>
-<a class="el" href="class_az_framework_1_1_spawnable_entities_container.html">SpawnableEntitiesContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootSpawnableContainer</b></td></tr>
-<tr class="separator:ab600e87b98185b3c487e8b144abcb553"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e6de9bd571a66c9461b8eb87a8dadbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e6de9bd571a66c9461b8eb87a8dadbb"></a>
-AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_registryChangeHandler</b></td></tr>
-<tr class="separator:a6e6de9bd571a66c9461b8eb87a8dadbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa186de705280a58a2e6a820264ceca3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa186de705280a58a2e6a820264ceca3c"></a>
-AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootSpawnableId</b></td></tr>
-<tr class="separator:aa186de705280a58a2e6a820264ceca3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ccc50cee12f37ba19f26da4afaa9e34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ccc50cee12f37ba19f26da4afaa9e34"></a>
-AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_criticalAssetsHandler</b></td></tr>
-<tr class="separator:a9ccc50cee12f37ba19f26da4afaa9e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Spawnable/SpawnableSystemComponent.h</li>
@@ -170,7 +135,7 @@ AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

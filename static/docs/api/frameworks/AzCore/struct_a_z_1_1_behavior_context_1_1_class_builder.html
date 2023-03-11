@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>Open 3D Engine AzCore API Reference: AZ::BehaviorContext::ClassBuilder&lt; C &gt; Struct Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::BehaviorContext::ClassBuilder&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -53,265 +53,134 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_a_z_1_1_behavior_context_1_1_class_builder-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AZ::BehaviorContext::ClassBuilder&lt; C &gt; Struct Template Reference</div>  </div>
+<div class="title">AZ::BehaviorContext::ClassBuilder&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Internal structure to maintain class information while we are describing a class.  
- <a href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#details">More...</a></p>
-
-<p><code>#include &lt;BehaviorContext.h&gt;</code></p>
-
-<p>Inherits AZ::Internal::GenericAttributes&lt; ClassBuilder&lt; C &gt; &gt;.</p>
+<p>Inherits AZ::Internal::ClassBuilderBase.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a7412eae046aa1a7cd54aef674bd27e51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7412eae046aa1a7cd54aef674bd27e51"></a>
-typedef <br class="typebreak"/>
-AZ::Internal::GenericAttributes<br class="typebreak"/>
-&lt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a>&lt; C &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Base</b></td></tr>
-<tr class="separator:a7412eae046aa1a7cd54aef674bd27e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2247abcd230853f6e71b6f45b5a05264"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2247abcd230853f6e71b6f45b5a05264"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#a2247abcd230853f6e71b6f45b5a05264">ClassBuilder</a> (<a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a> *context, <a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass)</td></tr>
-<tr class="memdesc:a2247abcd230853f6e71b6f45b5a05264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal implementation. <br/></td></tr>
-<tr class="separator:a2247abcd230853f6e71b6f45b5a05264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67958470de5b2c4c4f182f74d71e27bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67958470de5b2c4c4f182f74d71e27bc"></a>
+<tr class="memitem:aea548ae097576611ccd7dd1cdef6a210"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea548ae097576611ccd7dd1cdef6a210"></a>
 <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> ()</td></tr>
-<tr class="separator:a67958470de5b2c4c4f182f74d71e27bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a983b53f1b142d92235512b9d605b7375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#a983b53f1b142d92235512b9d605b7375">Allocator</a> (<a class="el" href="class_a_z_1_1_behavior_class.html#ae4ef93da6694695a4c421918fab11e60">BehaviorClass::AllocateType</a> allocate, BehaviorClass::DeallocateType deallocate)</td></tr>
-<tr class="separator:a983b53f1b142d92235512b9d605b7375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4d09ab0f64e4c464a8561018c5d8f9"><td class="memTemplParams" colspan="2"><a class="anchor" id="aac4d09ab0f64e4c464a8561018c5d8f9"></a>
+<tr class="separator:aea548ae097576611ccd7dd1cdef6a210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a73733a213765b994d69e3c364c7b1"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad1a73733a213765b994d69e3c364c7b1"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:ad1a73733a213765b994d69e3c364c7b1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (const char *id, U value)</td></tr>
+<tr class="separator:ad1a73733a213765b994d69e3c364c7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0eb00273dab80825d29e7a667f09451"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa0eb00273dab80825d29e7a667f09451"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:aa0eb00273dab80825d29e7a667f09451"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> id, U value)</td></tr>
+<tr class="separator:aa0eb00273dab80825d29e7a667f09451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7119820f98b8eaa96cb6430f26107d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6f7119820f98b8eaa96cb6430f26107d"></a>
 template&lt;class... Params&gt; </td></tr>
-<tr class="memitem:aac4d09ab0f64e4c464a8561018c5d8f9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#aac4d09ab0f64e4c464a8561018c5d8f9">Constructor</a> ()</td></tr>
-<tr class="memdesc:aac4d09ab0f64e4c464a8561018c5d8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches different constructor signatures to the class. <br/></td></tr>
-<tr class="separator:aac4d09ab0f64e4c464a8561018c5d8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5e796e834745452d3cb8eaa8ded3bf2"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad5e796e834745452d3cb8eaa8ded3bf2"></a>
-template&lt;class WrappedType &gt; </td></tr>
-<tr class="memitem:ad5e796e834745452d3cb8eaa8ded3bf2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#ad5e796e834745452d3cb8eaa8ded3bf2">Wrapping</a> (<a class="el" href="namespace_a_z.html#abcd4c2bc56b1dae44b15435391eafca5">BehaviorClassUnwrapperFunction</a> unwrapper, void *userData)</td></tr>
-<tr class="memdesc:ad5e796e834745452d3cb8eaa8ded3bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">When your class is a wrapper, like smart pointers, you should use this to describe how to unwrap the class. <br/></td></tr>
-<tr class="separator:ad5e796e834745452d3cb8eaa8ded3bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae24c6083ce9b2afc2beec3ea7975702c"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae24c6083ce9b2afc2beec3ea7975702c"></a>
+<tr class="memitem:a6f7119820f98b8eaa96cb6430f26107d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#a6f7119820f98b8eaa96cb6430f26107d">Constructor</a> ()</td></tr>
+<tr class="memdesc:a6f7119820f98b8eaa96cb6430f26107d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches different constructor signatures to the class. <br/></td></tr>
+<tr class="separator:a6f7119820f98b8eaa96cb6430f26107d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089b38aa41d18b8ed251fd7e94aa66e3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a089b38aa41d18b8ed251fd7e94aa66e3"></a>
 template&lt;class WrappedType , class Callable &gt; </td></tr>
-<tr class="memitem:ae24c6083ce9b2afc2beec3ea7975702c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#ae24c6083ce9b2afc2beec3ea7975702c">WrappingMember</a> (Callable callableFunction)</td></tr>
-<tr class="memdesc:ae24c6083ce9b2afc2beec3ea7975702c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a function to unwrap this class (use an underlaying class) <br/></td></tr>
-<tr class="separator:ae24c6083ce9b2afc2beec3ea7975702c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6187fff3fd20f93b2cd7a1657719c494"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6187fff3fd20f93b2cd7a1657719c494"></a>
-<a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#a6187fff3fd20f93b2cd7a1657719c494">UserData</a> (void *userData)</td></tr>
-<tr class="memdesc:a6187fff3fd20f93b2cd7a1657719c494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets userdata to a class. <br/></td></tr>
-<tr class="separator:a6187fff3fd20f93b2cd7a1657719c494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b272e20319297b4fee7954b8a7f38b8"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a4b272e20319297b4fee7954b8a7f38b8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#a4b272e20319297b4fee7954b8a7f38b8">Method</a> (const char *name, Function, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues=nullptr, const char *dbgDesc=nullptr)</td></tr>
-<tr class="separator:a4b272e20319297b4fee7954b8a7f38b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae60e8a5a049418e3941d70fc28029418"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae60e8a5a049418e3941d70fc28029418"></a>
+<tr class="memitem:a089b38aa41d18b8ed251fd7e94aa66e3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>WrappingMember</b> (Callable callableFunction)</td></tr>
+<tr class="separator:a089b38aa41d18b8ed251fd7e94aa66e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892e5dcf45b64d782cafb127d084aef7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a892e5dcf45b64d782cafb127d084aef7"></a>
+<a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>UserData</b> (void *userData)</td></tr>
+<tr class="separator:a892e5dcf45b64d782cafb127d084aef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5570cc22c928901248ce89bd9df220"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6e5570cc22c928901248ce89bd9df220"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:ae60e8a5a049418e3941d70fc28029418"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const char *deprecatedName, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues=nullptr, const char *dbgDesc=nullptr)</td></tr>
-<tr class="separator:ae60e8a5a049418e3941d70fc28029418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a729c7449571f5021485110c8ca92d121"><td class="memTemplParams" colspan="2"><a class="anchor" id="a729c7449571f5021485110c8ca92d121"></a>
+<tr class="memitem:a6e5570cc22c928901248ce89bd9df220"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues=nullptr, const char *dbgDesc=nullptr)</td></tr>
+<tr class="separator:a6e5570cc22c928901248ce89bd9df220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43da7ddacad7dad2b60c36b7e2b4080"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae43da7ddacad7dad2b60c36b7e2b4080"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a729c7449571f5021485110c8ca92d121"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args, const char *dbgDesc=nullptr)</td></tr>
-<tr class="separator:a729c7449571f5021485110c8ca92d121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4b9a97093f64396fc4c3ab21c67651"><td class="memTemplParams" colspan="2"><a class="anchor" id="aaa4b9a97093f64396fc4c3ab21c67651"></a>
+<tr class="memitem:ae43da7ddacad7dad2b60c36b7e2b4080"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const char *deprecatedName, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues=nullptr, const char *dbgDesc=nullptr)</td></tr>
+<tr class="separator:ae43da7ddacad7dad2b60c36b7e2b4080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6c95f4fba7e1b43cb4ef5a44cb3035"><td class="memTemplParams" colspan="2"><a class="anchor" id="aed6c95f4fba7e1b43cb4ef5a44cb3035"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:aaa4b9a97093f64396fc4c3ab21c67651"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const <a class="el" href="struct_a_z_1_1_behavior_parameter_overrides.html">BehaviorParameterOverrides</a> &amp;classMetadata, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;argsMetadata, const char *dbgDesc=nullptr)</td></tr>
-<tr class="separator:aaa4b9a97093f64396fc4c3ab21c67651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaea3d3164e037f8106b16476c2eda67c"><td class="memTemplParams" colspan="2"><a class="anchor" id="aaea3d3164e037f8106b16476c2eda67c"></a>
+<tr class="memitem:aed6c95f4fba7e1b43cb4ef5a44cb3035"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args, const char *dbgDesc=nullptr)</td></tr>
+<tr class="separator:aed6c95f4fba7e1b43cb4ef5a44cb3035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61c582bb6a5a9d387d48c5aa8d56edc"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae61c582bb6a5a9d387d48c5aa8d56edc"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:aaea3d3164e037f8106b16476c2eda67c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const char *deprecatedName, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args, const char *dbgDesc=nullptr)</td></tr>
-<tr class="separator:aaea3d3164e037f8106b16476c2eda67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2685e10dc8c6362d2516e2b3f0ede01"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae2685e10dc8c6362d2516e2b3f0ede01"></a>
+<tr class="memitem:ae61c582bb6a5a9d387d48c5aa8d56edc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const <a class="el" href="struct_a_z_1_1_behavior_parameter_overrides.html">BehaviorParameterOverrides</a> &amp;classMetadata, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;argsMetadata, const char *dbgDesc=nullptr)</td></tr>
+<tr class="separator:ae61c582bb6a5a9d387d48c5aa8d56edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9bc38f5b37216e9da615e7946d60a8"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9a9bc38f5b37216e9da615e7946d60a8"></a>
+template&lt;class Function &gt; </td></tr>
+<tr class="memitem:a9a9bc38f5b37216e9da615e7946d60a8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const char *deprecatedName, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args, const char *dbgDesc=nullptr)</td></tr>
+<tr class="separator:a9a9bc38f5b37216e9da615e7946d60a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b8cc8a6b70abf22e6cc067b8f93f34c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9b8cc8a6b70abf22e6cc067b8f93f34c"></a>
 template&lt;class Getter , class Setter &gt; </td></tr>
-<tr class="memitem:ae2685e10dc8c6362d2516e2b3f0ede01"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Property</b> (const char *name, Getter getter, Setter setter)</td></tr>
-<tr class="separator:ae2685e10dc8c6362d2516e2b3f0ede01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acac32cc7eeeeb61e628cf0512a1425ac"><td class="memTemplParams" colspan="2"><a class="anchor" id="acac32cc7eeeeb61e628cf0512a1425ac"></a>
+<tr class="memitem:a9b8cc8a6b70abf22e6cc067b8f93f34c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Property</b> (const char *name, Getter getter, Setter setter)</td></tr>
+<tr class="separator:a9b8cc8a6b70abf22e6cc067b8f93f34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716550b9d4f062f0d12cb5663ffc980c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a716550b9d4f062f0d12cb5663ffc980c"></a>
 template&lt;auto Value&gt; </td></tr>
-<tr class="memitem:acac32cc7eeeeb61e628cf0512a1425ac"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#acac32cc7eeeeb61e628cf0512a1425ac">Enum</a> (const char *name)</td></tr>
-<tr class="memdesc:acac32cc7eeeeb61e628cf0512a1425ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">All enums are treated as the enum type. <br/></td></tr>
-<tr class="separator:acac32cc7eeeeb61e628cf0512a1425ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32b4f99c99cbe8c9c1fce0abd6140bd4"><td class="memTemplParams" colspan="2"><a class="anchor" id="a32b4f99c99cbe8c9c1fce0abd6140bd4"></a>
+<tr class="memitem:a716550b9d4f062f0d12cb5663ffc980c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Enum</b> (const char *name)</td></tr>
+<tr class="separator:a716550b9d4f062f0d12cb5663ffc980c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a982e758265594099434caf9845ead"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa8a982e758265594099434caf9845ead"></a>
 template&lt;class Getter &gt; </td></tr>
-<tr class="memitem:a32b4f99c99cbe8c9c1fce0abd6140bd4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Constant</b> (const char *name, Getter getter)</td></tr>
-<tr class="separator:a32b4f99c99cbe8c9c1fce0abd6140bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2d95a07bcc9389099b145395050b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#a1c2d95a07bcc9389099b145395050b7d">RequestBus</a> (const char *busName)</td></tr>
-<tr class="separator:a1c2d95a07bcc9389099b145395050b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac60b2ae03c07f7e96f05b30d9d87bf8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac60b2ae03c07f7e96f05b30d9d87bf8d"></a>
+<tr class="memitem:aa8a982e758265594099434caf9845ead"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Constant</b> (const char *name, Getter getter)</td></tr>
+<tr class="separator:aa8a982e758265594099434caf9845ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fa4eb5e55d3e00c9045f2fa3472ad7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93fa4eb5e55d3e00c9045f2fa3472ad7"></a>
+<a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RequestBus</b> (const char *busName)</td></tr>
+<tr class="separator:a93fa4eb5e55d3e00c9045f2fa3472ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a862ff40ec1d64956742a83f7b279b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4a862ff40ec1d64956742a83f7b279b"></a>
 <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NotificationBus</b> (const char *busName)</td></tr>
-<tr class="separator:ac60b2ae03c07f7e96f05b30d9d87bf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4912302a3a42d18b9a117e20c2060d47"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4912302a3a42d18b9a117e20c2060d47"></a>
+<tr class="separator:ac4a862ff40ec1d64956742a83f7b279b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4983e4574986beb67922d42b471ef6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1c4983e4574986beb67922d42b471ef6"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:a1c4983e4574986beb67922d42b471ef6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (const char *id, U value) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:a1c4983e4574986beb67922d42b471ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52946b049dad7cc427dd61b4900760b"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa52946b049dad7cc427dd61b4900760b"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:aa52946b049dad7cc427dd61b4900760b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> id, U value) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:aa52946b049dad7cc427dd61b4900760b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f155c8e6b2e96a6124e024fdee651ec"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0f155c8e6b2e96a6124e024fdee651ec"></a>
 template&lt;class... Params&gt; </td></tr>
-<tr class="memitem:a4912302a3a42d18b9a117e20c2060d47"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Constructor</b> ()</td></tr>
-<tr class="separator:a4912302a3a42d18b9a117e20c2060d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80fa6a4263ef36aace5b8d50c74466d1"><td class="memTemplParams" colspan="2"><a class="anchor" id="a80fa6a4263ef36aace5b8d50c74466d1"></a>
-template&lt;class WrappedType &gt; </td></tr>
-<tr class="memitem:a80fa6a4263ef36aace5b8d50c74466d1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Wrapping</b> (<a class="el" href="namespace_a_z.html#abcd4c2bc56b1dae44b15435391eafca5">BehaviorClassUnwrapperFunction</a> unwrapper, void *userData)</td></tr>
-<tr class="separator:a80fa6a4263ef36aace5b8d50c74466d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55cecf33d676a86c2f96988f34b6f62b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a55cecf33d676a86c2f96988f34b6f62b"></a>
+<tr class="memitem:a0f155c8e6b2e96a6124e024fdee651ec"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Constructor</b> () -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:a0f155c8e6b2e96a6124e024fdee651ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af348f73592b41b900c54594c5a52af1d"><td class="memTemplParams" colspan="2"><a class="anchor" id="af348f73592b41b900c54594c5a52af1d"></a>
 template&lt;class WrappedType , class Callable &gt; </td></tr>
-<tr class="memitem:a55cecf33d676a86c2f96988f34b6f62b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>WrappingMember</b> (Callable callableFunction)</td></tr>
-<tr class="separator:a55cecf33d676a86c2f96988f34b6f62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec969063f891a39733eb988787a0409b"><td class="memTemplParams" colspan="2"><a class="anchor" id="aec969063f891a39733eb988787a0409b"></a>
+<tr class="memitem:af348f73592b41b900c54594c5a52af1d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>WrappingMember</b> (Callable callableFunction) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:af348f73592b41b900c54594c5a52af1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f4c30603b056aec2610b8e03af6472"><td class="memTemplParams" colspan="2"><a class="anchor" id="ac5f4c30603b056aec2610b8e03af6472"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:aec969063f891a39733eb988787a0409b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues, const char *dbgDesc)</td></tr>
-<tr class="separator:aec969063f891a39733eb988787a0409b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bf9b8beda325403675081ef2468a3a2"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3bf9b8beda325403675081ef2468a3a2"></a>
+<tr class="memitem:ac5f4c30603b056aec2610b8e03af6472"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues, const char *dbgDesc) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:ac5f4c30603b056aec2610b8e03af6472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9f651c4b0dd1604f3530527b6e6130"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5a9f651c4b0dd1604f3530527b6e6130"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a3bf9b8beda325403675081ef2468a3a2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const char *deprecatedName, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues, const char *dbgDesc)</td></tr>
-<tr class="separator:a3bf9b8beda325403675081ef2468a3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a67521dbf1aaa88ae619af8fe028103"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6a67521dbf1aaa88ae619af8fe028103"></a>
+<tr class="memitem:a5a9f651c4b0dd1604f3530527b6e6130"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const char *deprecatedName, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues, const char *dbgDesc) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:a5a9f651c4b0dd1604f3530527b6e6130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e1439bbfa1f60430aff8e538a75ea7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a09e1439bbfa1f60430aff8e538a75ea7"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a6a67521dbf1aaa88ae619af8fe028103"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args, const char *dbgDesc)</td></tr>
-<tr class="separator:a6a67521dbf1aaa88ae619af8fe028103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a818713b93f499beee6d3752127f82e13"><td class="memTemplParams" colspan="2"><a class="anchor" id="a818713b93f499beee6d3752127f82e13"></a>
+<tr class="memitem:a09e1439bbfa1f60430aff8e538a75ea7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args, const char *dbgDesc) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:a09e1439bbfa1f60430aff8e538a75ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b2ced9b5c2afcc36a457c65ebc175d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a01b2ced9b5c2afcc36a457c65ebc175d"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a818713b93f499beee6d3752127f82e13"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const <a class="el" href="struct_a_z_1_1_behavior_parameter_overrides.html">BehaviorParameterOverrides</a> &amp;classMetadata, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;argsMetadata, const char *dbgDesc)</td></tr>
-<tr class="separator:a818713b93f499beee6d3752127f82e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a288368664f25b058ee39a72116f57756"><td class="memTemplParams" colspan="2"><a class="anchor" id="a288368664f25b058ee39a72116f57756"></a>
+<tr class="memitem:a01b2ced9b5c2afcc36a457c65ebc175d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const <a class="el" href="struct_a_z_1_1_behavior_parameter_overrides.html">BehaviorParameterOverrides</a> &amp;classMetadata, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;argsMetadata, const char *dbgDesc) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:a01b2ced9b5c2afcc36a457c65ebc175d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3569dc94ec45a252e32caa1261dbff9f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3569dc94ec45a252e32caa1261dbff9f"></a>
 template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a288368664f25b058ee39a72116f57756"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const char *deprecatedName, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args, const char *dbgDesc)</td></tr>
-<tr class="separator:a288368664f25b058ee39a72116f57756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a262709323673aa28713938be721dd093"><td class="memTemplParams" colspan="2"><a class="anchor" id="a262709323673aa28713938be721dd093"></a>
+<tr class="memitem:a3569dc94ec45a252e32caa1261dbff9f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Method</b> (const char *name, Function f, const char *deprecatedName, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args, const char *dbgDesc) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:a3569dc94ec45a252e32caa1261dbff9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d7f67a5b23999afabf2bd58233fb5b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a09d7f67a5b23999afabf2bd58233fb5b"></a>
 template&lt;class Getter , class Setter &gt; </td></tr>
-<tr class="memitem:a262709323673aa28713938be721dd093"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Property</b> (const char *name, Getter getter, Setter setter)</td></tr>
-<tr class="separator:a262709323673aa28713938be721dd093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a425581b5c5b5a17f72565897a02ef"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad3a425581b5c5b5a17f72565897a02ef"></a>
+<tr class="memitem:a09d7f67a5b23999afabf2bd58233fb5b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Property</b> (const char *name, Getter getter, Setter setter) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:a09d7f67a5b23999afabf2bd58233fb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a15cbe8c1a3cfc735cba0193f18ad3"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae0a15cbe8c1a3cfc735cba0193f18ad3"></a>
 template&lt;auto Value&gt; </td></tr>
-<tr class="memitem:ad3a425581b5c5b5a17f72565897a02ef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Enum</b> (const char *name)</td></tr>
-<tr class="separator:ad3a425581b5c5b5a17f72565897a02ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e2919d137f35ad3c95152bdd5a5d479"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7e2919d137f35ad3c95152bdd5a5d479"></a>
+<tr class="memitem:ae0a15cbe8c1a3cfc735cba0193f18ad3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Enum</b> (const char *name) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:ae0a15cbe8c1a3cfc735cba0193f18ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c25d59e039c4e27a685484210a627c"><td class="memTemplParams" colspan="2"><a class="anchor" id="af8c25d59e039c4e27a685484210a627c"></a>
 template&lt;class Getter &gt; </td></tr>
-<tr class="memitem:a7e2919d137f35ad3c95152bdd5a5d479"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a><br class="typebreak"/>
-&lt; C &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Constant</b> (const char *name, Getter getter)</td></tr>
-<tr class="separator:a7e2919d137f35ad3c95152bdd5a5d479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a1415e421de49a56f5884a39cd8d04d18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1415e421de49a56f5884a39cd8d04d18"></a>
-<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_class</b></td></tr>
-<tr class="separator:a1415e421de49a56f5884a39cd8d04d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c25d59e039c4e27a685484210a627c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Constant</b> (const char *name, Getter getter) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a> *</td></tr>
+<tr class="separator:af8c25d59e039c4e27a685484210a627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class C&gt;<br/>
-struct AZ::BehaviorContext::ClassBuilder&lt; C &gt;</h3>
-
-<p>Internal structure to maintain class information while we are describing a class. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a983b53f1b142d92235512b9d605b7375"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class C &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a>&lt; C &gt; * <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">AZ::BehaviorContext::ClassBuilder</a>&lt; C &gt;::Allocator </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_behavior_class.html#ae4ef93da6694695a4c421918fab11e60">BehaviorClass::AllocateType</a>&#160;</td>
-          <td class="paramname"><em>allocate</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BehaviorClass::DeallocateType&#160;</td>
-          <td class="paramname"><em>deallocate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets custom allocator for a class, this function will error if this not inside a class. This is only for very specific cases when you want to override AZ_CLASS_ALLOCATOR or you are dealing with 3rd party classes, otherwise you should use AZ_CLASS_ALLOCATOR to control which allocator the class uses. </p>
-
-</div>
-</div>
-<a class="anchor" id="a4b272e20319297b4fee7954b8a7f38b8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class C &gt; </div>
-<div class="memtemplate">
-template&lt;class Function &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a>* <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">AZ::BehaviorContext::ClassBuilder</a>&lt; C &gt;::Method </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Function&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *&#160;</td>
-          <td class="paramname"><em>defaultValues</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>dbgDesc</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Setup methods </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>Use "Method(const char* name, Function f, const BehaviorParameterOverridesArray&lt;Function&gt;&amp; args, const char* dbgDesc = nullptr)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>Use "Method(const char* name, Function f, const char* deprecatedName, const BehaviorParameterOverridesArray&lt;Function&gt;&amp; args, const char* dbgDesc = nullptr)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1c2d95a07bcc9389099b145395050b7d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class C &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">BehaviorContext::ClassBuilder</a>&lt; C &gt; * <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">AZ::BehaviorContext::ClassBuilder</a>&lt; C &gt;::RequestBus </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>busName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>You can describe buses that this class uses to communicate. Those buses will be used by tools when you need to give developers hints as to what buses this class interacts with. You don't need to reflect all buses that your class uses, just the ones related to class behavior. Please refer to component documentation for more information on the pattern of Request and Notification buses. {@ </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>Code/Framework/AzCore/AzCore/RTTI/BehaviorContext.h</li>
+<li>Code/Framework/AzCore/AzCore/RTTI/BehaviorClassBuilder.inl</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

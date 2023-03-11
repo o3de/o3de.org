@@ -50,7 +50,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_gradient_signal_1_1_image_gradient_modifier-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GradientSignal::ImageGradientModifier Class Reference</div>  </div>
@@ -69,24 +68,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a75323d9386d299ddd9029f0455ad7b5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75323d9386d299ddd9029f0455ad7b5d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ImageGradientModifier</b> (const AZ::EntityComponentIdPair &amp;entityComponentIdPair)</td></tr>
 <tr class="separator:a75323d9386d299ddd9029f0455ad7b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a53af24b451cb8d494321ad0ba563524b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53af24b451cb8d494321ad0ba563524b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBrushStrokeBegin</b> (const AZ::Color &amp;color) override</td></tr>
-<tr class="separator:a53af24b451cb8d494321ad0ba563524b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9976347f0007094fd2b77618563ae69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9976347f0007094fd2b77618563ae69"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBrushStrokeEnd</b> () override</td></tr>
-<tr class="separator:af9976347f0007094fd2b77618563ae69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8494974077579c6df18d49ba7b7b2560"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8494974077579c6df18d49ba7b7b2560"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPaint</b> (const AZ::Color &amp;color, const AZ::Aabb &amp;dirtyArea, ValueLookupFn &amp;valueLookupFn, BlendFn &amp;blendFn) override</td></tr>
-<tr class="separator:a8494974077579c6df18d49ba7b7b2560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29f08922a883176c7644a76d2089f404"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29f08922a883176c7644a76d2089f404"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSmooth</b> (const AZ::Color &amp;color, const AZ::Aabb &amp;dirtyArea, ValueLookupFn &amp;valueLookupFn, AZStd::span&lt; const AZ::Vector3 &gt; valuePointOffsets, SmoothFn &amp;smoothFn) override</td></tr>
-<tr class="separator:a29f08922a883176c7644a76d2089f404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306eb6acbd04b70592abf13463509c1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a306eb6acbd04b70592abf13463509c1f"></a>
-AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>OnGetColor</b> (const AZ::Vector3 &amp;brushCenter) const override</td></tr>
-<tr class="separator:a306eb6acbd04b70592abf13463509c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Top-level class that handles all of the actual image modification calculations for a paintbrush. </p>
@@ -96,7 +77,7 @@ AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>OnGetColor</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:40 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

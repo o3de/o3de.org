@@ -54,8 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_byte_container_stream-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::ByteContainerStream&lt; ContainerType &gt; Class Template Reference</div>  </div>
@@ -131,44 +129,6 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReOpen</b> ()
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Close</b> ()</td></tr>
 <tr class="separator:ad7ae8c7bc0df28b3ec7747bf87c31f26 inherit pub_methods_class_a_z_1_1_i_o_1_1_generic_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad1233ff01b74e98cd72449d6aedd176e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1233ff01b74e98cd72449d6aedd176e"></a>
-SizeType&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareToWrite</b> (SizeType bytes)</td></tr>
-<tr class="separator:ad1233ff01b74e98cd72449d6aedd176e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86dd837bca200cd6474a8deddfb38093"><td class="memTemplParams" colspan="2"><a class="anchor" id="a86dd837bca200cd6474a8deddfb38093"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a86dd837bca200cd6474a8deddfb38093"><td class="memTemplItemLeft" align="right" valign="top">SizeType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Write</b> (SizeType bytes, const void *iBuffer, typename T::type)</td></tr>
-<tr class="separator:a86dd837bca200cd6474a8deddfb38093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1690a56ea917e7c4be7df00bd8ed09c"><td class="memTemplParams" colspan="2"><a class="anchor" id="af1690a56ea917e7c4be7df00bd8ed09c"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af1690a56ea917e7c4be7df00bd8ed09c"><td class="memTemplItemLeft" align="right" valign="top">SizeType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>WriteFromStream</b> (SizeType bytes, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">GenericStream</a> *inputStream, typename T::type)</td></tr>
-<tr class="separator:af1690a56ea917e7c4be7df00bd8ed09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a478905b7771973c36638de843b264603"><td class="memTemplParams" colspan="2"><a class="anchor" id="a478905b7771973c36638de843b264603"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a478905b7771973c36638de843b264603"><td class="memTemplItemLeft" align="right" valign="top">SizeType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Write</b> (SizeType, const void *, unsigned int)</td></tr>
-<tr class="separator:a478905b7771973c36638de843b264603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3566b6d8a387959253b9b38e57fda096"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3566b6d8a387959253b9b38e57fda096"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3566b6d8a387959253b9b38e57fda096"><td class="memTemplItemLeft" align="right" valign="top">SizeType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>WriteFromStream</b> (SizeType, <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">GenericStream</a> *, unsigned int)</td></tr>
-<tr class="separator:a3566b6d8a387959253b9b38e57fda096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_i_o_1_1_generic_stream"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_i_o_1_1_generic_stream')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a></td></tr>
-<tr class="memitem:abf7627673005156a3cd9be9f2c1617a7 inherit pro_methods_class_a_z_1_1_i_o_1_1_generic_stream"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf7627673005156a3cd9be9f2c1617a7"></a>
-SizeType&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeSeekPosition</b> (OffsetType bytes, SeekMode mode)</td></tr>
-<tr class="separator:abf7627673005156a3cd9be9f2c1617a7 inherit pro_methods_class_a_z_1_1_i_o_1_1_generic_stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a002cb99147945f1ab290a4891ce411f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a002cb99147945f1ab290a4891ce411f1"></a>
-ContainerType *&#160;</td><td class="memItemRight" valign="bottom"><b>m_buffer</b></td></tr>
-<tr class="separator:a002cb99147945f1ab290a4891ce411f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adba6cdebe8a1ced070b8bc4f01feb2a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adba6cdebe8a1ced070b8bc4f01feb2a7"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_pos</b></td></tr>
-<tr class="separator:adba6cdebe8a1ced070b8bc4f01feb2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c35fbf12ca06abbf19f7c69ed798b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82c35fbf12ca06abbf19f7c69ed798b8"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxGrowSize</b></td></tr>
-<tr class="separator:a82c35fbf12ca06abbf19f7c69ed798b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_i_o_1_1_generic_stream"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_i_o_1_1_generic_stream')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a></td></tr>
@@ -228,7 +188,7 @@ template&lt;typename ContainerType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

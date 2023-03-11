@@ -55,9 +55,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_components_1_1_editor_selection_accent_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Components::EditorSelectionAccentSystemComponent Class Reference</div>  </div>
@@ -111,37 +108,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3769f1d7e5b27bcb941eb32f66e6df0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3769f1d7e5b27bcb941eb32f66e6df0a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a3769f1d7e5b27bcb941eb32f66e6df0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad63abddf890abc0e0c1a0df55228634a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad63abddf890abc0e0c1a0df55228634a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_selection_accent_system_component.html#ad63abddf890abc0e0c1a0df55228634a">QueueAccentRefresh</a> ()</td></tr>
-<tr class="memdesc:ad63abddf890abc0e0c1a0df55228634a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues the invalidation, recalculation and application of accents. <br/></td></tr>
-<tr class="separator:ad63abddf890abc0e0c1a0df55228634a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15ca30265d56b150a1a183eb12838ea9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15ca30265d56b150a1a183eb12838ea9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_selection_accent_system_component.html#a15ca30265d56b150a1a183eb12838ea9">InvalidateAccents</a> ()</td></tr>
-<tr class="memdesc:a15ca30265d56b150a1a183eb12838ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates all currently applied accents. <br/></td></tr>
-<tr class="separator:a15ca30265d56b150a1a183eb12838ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad54ac1ff01c6930ca57c162a241eb652"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad54ac1ff01c6930ca57c162a241eb652"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_selection_accent_system_component.html#ad54ac1ff01c6930ca57c162a241eb652">RecalculateAndApplyAccents</a> ()</td></tr>
-<tr class="memdesc:ad54ac1ff01c6930ca57c162a241eb652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculates and applies accenting on the currently selected set of entities. <br/></td></tr>
-<tr class="separator:ad54ac1ff01c6930ca57c162a241eb652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab3905dfde2a051ebcef363d567e53acf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3905dfde2a051ebcef363d567e53acf"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
-<tr class="separator:ab3905dfde2a051ebcef363d567e53acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a5b1f49cc7cc98bff2b4bb1638c7cef24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b1f49cc7cc98bff2b4bb1638c7cef24"></a>
-AZStd::unordered_set<br class="typebreak"/>
-&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentlyAccentedEntities</b></td></tr>
-<tr class="separator:a5b1f49cc7cc98bff2b4bb1638c7cef24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d6b94cff0a647f1c443267dca37dbd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d6b94cff0a647f1c443267dca37dbd6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isAccentRefreshQueued</b> = false</td></tr>
-<tr class="separator:a8d6b94cff0a647f1c443267dca37dbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ToolsComponents/EditorSelectionAccentSystemComponent.h</li>
@@ -149,7 +115,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isAccentRefreshQueu
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

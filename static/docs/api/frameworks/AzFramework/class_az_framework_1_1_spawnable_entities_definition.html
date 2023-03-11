@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_framework_1_1_spawnable_entities_definition-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -93,44 +91,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a93abf59da2eb670a57bf9f7b04941285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3484848909d02f2362e0f7eae0d187fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a3484848909d02f2362e0f7eae0d187fb">LoadBarrier</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, BarrierCallback completionCallback, <a class="el" href="struct_az_framework_1_1_load_barrier_optional_args.html">LoadBarrierOptionalArgs</a> optionalArgs={})=0</td></tr>
 <tr class="separator:a3484848909d02f2362e0f7eae0d187fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:af83c36926f97f39e06eee13992769067"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af83c36926f97f39e06eee13992769067"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTicket</b> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&amp;spawnable)=0</td></tr>
-<tr class="separator:af83c36926f97f39e06eee13992769067"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65ef5ea676264a266f1d115674a5cbe6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65ef5ea676264a266f1d115674a5cbe6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementTicketReference</b> (void *ticket)=0</td></tr>
-<tr class="separator:a65ef5ea676264a266f1d115674a5cbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca025c9c3e2657bbfc055ad09bda7e6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca025c9c3e2657bbfc055ad09bda7e6e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DecrementTicketReference</b> (void *ticket)=0</td></tr>
-<tr class="separator:aca025c9c3e2657bbfc055ad09bda7e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86fbc8712072b3dd2e1e2d4379328427"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86fbc8712072b3dd2e1e2d4379328427"></a>
-virtual EntitySpawnTicket::Id&#160;</td><td class="memItemRight" valign="bottom"><b>GetTicketId</b> (void *ticket)=0</td></tr>
-<tr class="separator:a86fbc8712072b3dd2e1e2d4379328427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0bb53dfc43fb59fb9c72321db704afc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0bb53dfc43fb59fb9c72321db704afc"></a>
-virtual const AZ::Data::Asset<br class="typebreak"/>
-&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSpawnableOnTicket</b> (void *ticket)=0</td></tr>
-<tr class="separator:ae0bb53dfc43fb59fb9c72321db704afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:afa212d547e4ab2c60be2adabed3638d9"><td class="memTemplParams" colspan="2"><a class="anchor" id="afa212d547e4ab2c60be2adabed3638d9"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afa212d547e4ab2c60be2adabed3638d9"><td class="memTemplItemLeft" align="right" valign="top">static T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetTicketPayload</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket)</td></tr>
-<tr class="separator:afa212d547e4ab2c60be2adabed3638d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a916b14572f9bca35e40f03f6052d7d79"><td class="memTemplParams" colspan="2"><a class="anchor" id="a916b14572f9bca35e40f03f6052d7d79"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a916b14572f9bca35e40f03f6052d7d79"><td class="memTemplItemLeft" align="right" valign="top">static const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetTicketPayload</b> (const <a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket)</td></tr>
-<tr class="separator:a916b14572f9bca35e40f03f6052d7d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff244fa78dc6625422b54bc7bbcaf276"><td class="memTemplParams" colspan="2"><a class="anchor" id="aff244fa78dc6625422b54bc7bbcaf276"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aff244fa78dc6625422b54bc7bbcaf276"><td class="memTemplItemLeft" align="right" valign="top">static T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetTicketPayload</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> *ticket)</td></tr>
-<tr class="separator:aff244fa78dc6625422b54bc7bbcaf276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af93fb70bbe231aa9b54e172e3e0df0dc"><td class="memTemplParams" colspan="2"><a class="anchor" id="af93fb70bbe231aa9b54e172e3e0df0dc"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af93fb70bbe231aa9b54e172e3e0df0dc"><td class="memTemplItemLeft" align="right" valign="top">static const T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetTicketPayload</b> (const <a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> *ticket)</td></tr>
-<tr class="separator:af93fb70bbe231aa9b54e172e3e0df0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -725,7 +685,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -53,7 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_thumbnailer_1_1_source_control_thumbnail_key-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Thumbnailer::SourceControlThumbnailKey Class Reference</div>  </div>
@@ -64,9 +63,9 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae49a3a78fc0136d18b1502a9659009b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae49a3a78fc0136d18b1502a9659009b7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="struct_az_tools_framework_1_1_source_control_file_info.html">SourceControlFileInfo</a>,&quot;{F6772100-A178-45A7-8F75-41426B07D829}&quot;, ThumbnailKey)</td></tr>
-<tr class="separator:ae49a3a78fc0136d18b1502a9659009b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3806af8d35366fdbe483a4e9b193b44d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3806af8d35366fdbe483a4e9b193b44d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_source_control_thumbnail_key.html">SourceControlThumbnailKey</a>,&quot;{F6772100-A178-45A7-8F75-41426B07D829}&quot;, ThumbnailKey)</td></tr>
+<tr class="separator:a3806af8d35366fdbe483a4e9b193b44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac74d5eca7030cd0a8b890a9f79a15acf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac74d5eca7030cd0a8b890a9f79a15acf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SourceControlThumbnailKey</b> (const char *fileName)</td></tr>
 <tr class="separator:ac74d5eca7030cd0a8b890a9f79a15acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -79,21 +78,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateThumbnail</b> (
 <tr class="memitem:a045b19e6446068ee45e853ef14af1dc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a045b19e6446068ee45e853ef14af1dc2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Equals</b> (const ThumbnailKey *other) const override</td></tr>
 <tr class="separator:a045b19e6446068ee45e853ef14af1dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:af856ed5d0f5b960c498bf6688ec014f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af856ed5d0f5b960c498bf6688ec014f1"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_source_control_thumbnail_key.html#af856ed5d0f5b960c498bf6688ec014f1">m_fileName</a></td></tr>
-<tr class="memdesc:af856ed5d0f5b960c498bf6688ec014f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">absolute path <br/></td></tr>
-<tr class="separator:af856ed5d0f5b960c498bf6688ec014f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fa6465a220c93634a2def40e04e6533"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fa6465a220c93634a2def40e04e6533"></a>
-const AZStd::chrono::minutes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_source_control_thumbnail_key.html#a7fa6465a220c93634a2def40e04e6533">m_updateInterval</a></td></tr>
-<tr class="memdesc:a7fa6465a220c93634a2def40e04e6533"><td class="mdescLeft">&#160;</td><td class="mdescRight">how often should sc thumbnails auto update <br/></td></tr>
-<tr class="separator:a7fa6465a220c93634a2def40e04e6533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a9db09dbd8c3c2d898bbb3406c1df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55a9db09dbd8c3c2d898bbb3406c1df9"></a>
-AZStd::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_source_control_thumbnail_key.html#a55a9db09dbd8c3c2d898bbb3406c1df9">m_nextUpdate</a></td></tr>
-<tr class="memdesc:a55a9db09dbd8c3c2d898bbb3406c1df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">time since this sc thumbnail updated <br/></td></tr>
-<tr class="separator:a55a9db09dbd8c3c2d898bbb3406c1df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Thumbnails/SourceControlThumbnail.h</li>
@@ -101,7 +85,7 @@ AZStd::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valig
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

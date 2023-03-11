@@ -53,9 +53,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::BehaviorContext::EBusBuilder&lt; Bus &gt; Struct Template Reference</div>  </div>
@@ -67,26 +65,24 @@
 
 <p><code>#include &lt;BehaviorContext.h&gt;</code></p>
 
-<p>Inherits AZ::Internal::EBusAttributes&lt; Bus &gt;.</p>
+<p>Inherits AZ::Internal::EBusBuilderBase.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ade7c48a874929125b9e331c4ef770cb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade7c48a874929125b9e331c4ef770cb5"></a>
-typedef <br class="typebreak"/>
-AZ::Internal::EBusAttributes<br class="typebreak"/>
-&lt; Bus &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Base</b></td></tr>
-<tr class="separator:ade7c48a874929125b9e331c4ef770cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a61b935d922057f01d2d949d4fdc8ab12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b935d922057f01d2d949d4fdc8ab12"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>EBusBuilder</b> (<a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a> *context, <a class="el" href="class_a_z_1_1_behavior_e_bus.html">BehaviorEBus</a> *behaviorEBus)</td></tr>
-<tr class="separator:a61b935d922057f01d2d949d4fdc8ab12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a213556b99ef34f670f2c758e0e718ef1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a213556b99ef34f670f2c758e0e718ef1"></a>
+<tr class="memitem:a9bea477da06c29c525a1e4a34e8e93d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bea477da06c29c525a1e4a34e8e93d6"></a>
 <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> ()</td></tr>
-<tr class="separator:a213556b99ef34f670f2c758e0e718ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff3df2237bac83c1b093820531e5d096"><td class="memTemplParams" colspan="2">template&lt;class Function &gt; </td></tr>
-<tr class="memitem:aff3df2237bac83c1b093820531e5d096"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html#aff3df2237bac83c1b093820531e5d096">Event</a> (const char *name, Function f, const char *deprecatedName=nullptr)</td></tr>
+<tr class="separator:a9bea477da06c29c525a1e4a34e8e93d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1895f035816d008c61fc581966835081"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1895f035816d008c61fc581966835081"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:a1895f035816d008c61fc581966835081"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (const char *id, U value)</td></tr>
+<tr class="separator:a1895f035816d008c61fc581966835081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcbd9487fd0484e3485489057d31bfb6"><td class="memTemplParams" colspan="2"><a class="anchor" id="abcbd9487fd0484e3485489057d31bfb6"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:abcbd9487fd0484e3485489057d31bfb6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> id, U value)</td></tr>
+<tr class="separator:abcbd9487fd0484e3485489057d31bfb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3df2237bac83c1b093820531e5d096"><td class="memTemplParams" colspan="2"><a class="anchor" id="aff3df2237bac83c1b093820531e5d096"></a>
+template&lt;class Function &gt; </td></tr>
+<tr class="memitem:aff3df2237bac83c1b093820531e5d096"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Event</b> (const char *name, Function f, const char *deprecatedName=nullptr)</td></tr>
 <tr class="separator:aff3df2237bac83c1b093820531e5d096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad26e2ba620e456ae6ab7a1fc9d98795c"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad26e2ba620e456ae6ab7a1fc9d98795c"></a>
 template&lt;class Function &gt; </td></tr>
@@ -96,183 +92,59 @@ template&lt;class Function &gt; </td></tr>
 template&lt;class Function &gt; </td></tr>
 <tr class="memitem:a684eccc8e47c6ac0d19d92dcc4063f0f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Event</b> (const char *name, Function f, const char *deprecatedName, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args)</td></tr>
 <tr class="separator:a684eccc8e47c6ac0d19d92dcc4063f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e06744c89160ba4f41b2df39cb00065"><td class="memTemplParams" colspan="2">template&lt;typename HandlerType , typename HandlerCreator , typename HandlerDestructor &gt; </td></tr>
-<tr class="memitem:a5e06744c89160ba4f41b2df39cb00065"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html#a5e06744c89160ba4f41b2df39cb00065">Handler</a> (HandlerCreator creator, HandlerDestructor destructor)</td></tr>
-<tr class="separator:a5e06744c89160ba4f41b2df39cb00065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c054156551e2c4c384138f6eed95ad3"><td class="memTemplParams" colspan="2">template&lt;class H &gt; </td></tr>
-<tr class="memitem:a9c054156551e2c4c384138f6eed95ad3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html#a9c054156551e2c4c384138f6eed95ad3">Handler</a> ()</td></tr>
-<tr class="separator:a9c054156551e2c4c384138f6eed95ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3196677a02592b92723d3ec0d7dcc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html#a4d3196677a02592b92723d3ec0d7dcc6">VirtualProperty</a> (const char *name, const char *getterEvent, const char *setterEvent)</td></tr>
-<tr class="separator:a4d3196677a02592b92723d3ec0d7dcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c2105f6bb426461bc02cd01cbfdfca2"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5c2105f6bb426461bc02cd01cbfdfca2"></a>
-template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a5c2105f6bb426461bc02cd01cbfdfca2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">BehaviorContext::EBusBuilder</a><br class="typebreak"/>
-&lt; Bus &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Event</b> (const char *name, Function e, const char *deprecatedName)</td></tr>
-<tr class="separator:a5c2105f6bb426461bc02cd01cbfdfca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8e1cc733488e557f81fca39a38ab8d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5a8e1cc733488e557f81fca39a38ab8d"></a>
-template&lt;class Function &gt; </td></tr>
-<tr class="memitem:a5a8e1cc733488e557f81fca39a38ab8d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">BehaviorContext::EBusBuilder</a><br class="typebreak"/>
-&lt; Bus &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Event</b> (const char *name, Function e, const char *deprecatedName, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args)</td></tr>
-<tr class="separator:a5a8e1cc733488e557f81fca39a38ab8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe1f33c9ced68546015449ae2d785a15"><td class="memTemplParams" colspan="2"><a class="anchor" id="abe1f33c9ced68546015449ae2d785a15"></a>
-template&lt;class Function &gt; </td></tr>
-<tr class="memitem:abe1f33c9ced68546015449ae2d785a15"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">BehaviorContext::EBusBuilder</a><br class="typebreak"/>
-&lt; Bus &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Event</b> (const char *name, Function e, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args)</td></tr>
-<tr class="separator:abe1f33c9ced68546015449ae2d785a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0010ea50e1e8a256e1b26f4cb8912ee7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0010ea50e1e8a256e1b26f4cb8912ee7"></a>
+<tr class="memitem:a5e06744c89160ba4f41b2df39cb00065"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5e06744c89160ba4f41b2df39cb00065"></a>
 template&lt;typename HandlerType , typename HandlerCreator , typename HandlerDestructor &gt; </td></tr>
-<tr class="memitem:a0010ea50e1e8a256e1b26f4cb8912ee7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">BehaviorContext::EBusBuilder</a><br class="typebreak"/>
-&lt; Bus &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Handler</b> (HandlerCreator creator, HandlerDestructor destructor)</td></tr>
-<tr class="separator:a0010ea50e1e8a256e1b26f4cb8912ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83d3f8f6b14fda3d3e3c2618eb1c18d"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab83d3f8f6b14fda3d3e3c2618eb1c18d"></a>
+<tr class="memitem:a5e06744c89160ba4f41b2df39cb00065"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Handler</b> (HandlerCreator creator, HandlerDestructor destructor)</td></tr>
+<tr class="separator:a5e06744c89160ba4f41b2df39cb00065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c054156551e2c4c384138f6eed95ad3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a9c054156551e2c4c384138f6eed95ad3"></a>
 template&lt;class H &gt; </td></tr>
-<tr class="memitem:ab83d3f8f6b14fda3d3e3c2618eb1c18d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">BehaviorContext::EBusBuilder</a><br class="typebreak"/>
-&lt; Bus &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Handler</b> ()</td></tr>
-<tr class="separator:ab83d3f8f6b14fda3d3e3c2618eb1c18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aa8f20bc619d2de7b7ab9f8d299bfea13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8f20bc619d2de7b7ab9f8d299bfea13"></a>
-<a class="el" href="class_a_z_1_1_behavior_e_bus.html">BehaviorEBus</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_ebus</b></td></tr>
-<tr class="separator:aa8f20bc619d2de7b7ab9f8d299bfea13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c054156551e2c4c384138f6eed95ad3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Handler</b> ()</td></tr>
+<tr class="separator:a9c054156551e2c4c384138f6eed95ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea361fed0ddc401db2637a1c682999a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea361fed0ddc401db2637a1c682999a1"></a>
+<a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>VirtualProperty</b> (const char *name, const char *getterEvent, const char *setterEvent)</td></tr>
+<tr class="separator:aea361fed0ddc401db2637a1c682999a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13279901a206a2cf0b5c0567e0f734d"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa13279901a206a2cf0b5c0567e0f734d"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:aa13279901a206a2cf0b5c0567e0f734d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (const char *id, U value) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *</td></tr>
+<tr class="separator:aa13279901a206a2cf0b5c0567e0f734d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6360dfc1b5c4b321f5b7e855e454e68f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6360dfc1b5c4b321f5b7e855e454e68f"></a>
+template&lt;class U &gt; </td></tr>
+<tr class="memitem:a6360dfc1b5c4b321f5b7e855e454e68f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Attribute</b> (<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> id, U value) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *</td></tr>
+<tr class="separator:a6360dfc1b5c4b321f5b7e855e454e68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add58d03cbfefdfde4b25983e8c27f229"><td class="memTemplParams" colspan="2"><a class="anchor" id="add58d03cbfefdfde4b25983e8c27f229"></a>
+template&lt;class Function &gt; </td></tr>
+<tr class="memitem:add58d03cbfefdfde4b25983e8c27f229"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Event</b> (const char *name, Function f, const char *deprecatedName) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *</td></tr>
+<tr class="separator:add58d03cbfefdfde4b25983e8c27f229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651f48748c9774f592d829b4c6ad6c2c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a651f48748c9774f592d829b4c6ad6c2c"></a>
+template&lt;class Function &gt; </td></tr>
+<tr class="memitem:a651f48748c9774f592d829b4c6ad6c2c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Event</b> (const char *name, Function f, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *</td></tr>
+<tr class="separator:a651f48748c9774f592d829b4c6ad6c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2279fc9d74c8571e1eb724a2331deaf"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa2279fc9d74c8571e1eb724a2331deaf"></a>
+template&lt;class Function &gt; </td></tr>
+<tr class="memitem:aa2279fc9d74c8571e1eb724a2331deaf"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Event</b> (const char *name, Function f, const char *deprecatedName, const <a class="el" href="class_a_z_std_1_1array.html">BehaviorParameterOverridesArray</a>&lt; Function &gt; &amp;args) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *</td></tr>
+<tr class="separator:aa2279fc9d74c8571e1eb724a2331deaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f76f78322da625b1ef5bacb15e18bbc"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5f76f78322da625b1ef5bacb15e18bbc"></a>
+template&lt;typename HandlerType , typename HandlerCreator , typename HandlerDestructor &gt; </td></tr>
+<tr class="memitem:a5f76f78322da625b1ef5bacb15e18bbc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Handler</b> (HandlerCreator creator, HandlerDestructor destructor) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *</td></tr>
+<tr class="separator:a5f76f78322da625b1ef5bacb15e18bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844fafdd5eb89bc0c7e7b7db5159c893"><td class="memTemplParams" colspan="2"><a class="anchor" id="a844fafdd5eb89bc0c7e7b7db5159c893"></a>
+template&lt;class H &gt; </td></tr>
+<tr class="memitem:a844fafdd5eb89bc0c7e7b7db5159c893"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Handler</b> () -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a> *</td></tr>
+<tr class="separator:a844fafdd5eb89bc0c7e7b7db5159c893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Bus&gt;<br/>
 struct AZ::BehaviorContext::EBusBuilder&lt; Bus &gt;</h3>
 
 <p>Internal structure to maintain <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> information while describing it. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aff3df2237bac83c1b093820531e5d096"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Bus &gt; </div>
-<div class="memtemplate">
-template&lt;class Function &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a>* <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">AZ::BehaviorContext::EBusBuilder</a>&lt; Bus &gt;::<a class="el" href="class_a_z_1_1_event.html">Event</a> </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Function&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>deprecatedName</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reflects an <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> event, valid only when used with in the context of an <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> reflection. We will automatically add all possible variations (Broadcast,<a class="el" href="class_a_z_1_1_event.html">Event</a>,QueueBroadcast and QueueEvent) </p>
-
-</div>
-</div>
-<a class="anchor" id="a5e06744c89160ba4f41b2df39cb00065"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Bus &gt; </div>
-<div class="memtemplate">
-template&lt;typename HandlerType , typename HandlerCreator , typename HandlerDestructor &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a>* <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">AZ::BehaviorContext::EBusBuilder</a>&lt; Bus &gt;::Handler </td>
-          <td>(</td>
-          <td class="paramtype">HandlerCreator&#160;</td>
-          <td class="paramname"><em>creator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">HandlerDestructor&#160;</td>
-          <td class="paramname"><em>destructor</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Every <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> has two components, sending and receiving. Sending is reflected via BehaviorContext::Event calls and Handler/Received use handled via the receiver class. This class will receive <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> events and forward them to the behavior context functions. Since we can't write a class (without using a codegen) while reflecting, you will need to implement that class with the help of AZ_EBUS_BEHAVIOR_BINDER. This class in mandated because you can't hook to individual events at the moment. In this version of Handler you can provide a custom function to create and destroy that handler (usually where aznew/delete is not applicable or you have a better pooling schema that our memory allocators already have). For most cases use the function <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html#a9c054156551e2c4c384138f6eed95ad3">Handler()</a> </p>
-
-</div>
-</div>
-<a class="anchor" id="a9c054156551e2c4c384138f6eed95ad3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Bus &gt; </div>
-<div class="memtemplate">
-template&lt;class H &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a>* <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">AZ::BehaviorContext::EBusBuilder</a>&lt; Bus &gt;::Handler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the Handler/Receiver for ebus evens that will be forwarded to BehaviorFunctions. This is a helper implementation where aznew/delete is ready to called on the handler. </p>
-
-</div>
-</div>
-<a class="anchor" id="a4d3196677a02592b92723d3ec0d7dcc6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Bus &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">BehaviorContext::EBusBuilder</a>&lt; Bus &gt; * <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">AZ::BehaviorContext::EBusBuilder</a>&lt; Bus &gt;::VirtualProperty </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>getterEvent</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>setterEvent</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>With request buses (please refer to component communication patterns documentation) we ofter have <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> events that represent a getter and a setter for a value. To allow our tools to take advantage of it, you can reflect VirtualProperty to indicate which event is the getter and which is the setter. This function validates that getter event has no argument and a result and setter function has no results and only one argument which is the same type as the result of the getter. </p>
-<dl class="section note"><dt>Note</dt><dd>Make sure you call this function after you have reflected the getter and setter events as it will report an error if we can't find the function </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/RTTI/BehaviorContext.h</li>
+<li>Code/Framework/AzCore/AzCore/RTTI/BehaviorEBusBuilder.inl</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

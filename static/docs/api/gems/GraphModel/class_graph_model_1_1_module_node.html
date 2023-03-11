@@ -51,8 +51,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_graph_model_1_1_module_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GraphModel::ModuleNode Class Reference</div>  </div>
@@ -154,11 +152,11 @@ const SlotDefinitionList &amp;&#160;</td><td class="memItemRight" valign="bottom
 ConstSlotMap&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlots</b> () const </td></tr>
 <tr class="separator:ad921de9ca33f1d1833a87b75fea70c16 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc5c17b41046653603a51aaaf41f1f4 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dc5c17b41046653603a51aaaf41f1f4"></a>
-SlotPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a0dc5c17b41046653603a51aaaf41f1f4">GetSlot</a> (const <a class="el" href="struct_graph_model_1_1_slot_id_data.html">SlotId</a> &amp;slotId)</td></tr>
+SlotPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a0dc5c17b41046653603a51aaaf41f1f4">GetSlot</a> (const <a class="el" href="struct_graph_model_1_1_slot_id.html">SlotId</a> &amp;slotId)</td></tr>
 <tr class="memdesc:a0dc5c17b41046653603a51aaaf41f1f4 inherit pub_methods_class_graph_model_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the slot with the given slotId, or nullptr if it doesn't exist. <br/></td></tr>
 <tr class="separator:a0dc5c17b41046653603a51aaaf41f1f4 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed12a96d47d803f7fd6b13e29a0429f1 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed12a96d47d803f7fd6b13e29a0429f1"></a>
-ConstSlotPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlot</b> (const <a class="el" href="struct_graph_model_1_1_slot_id_data.html">SlotId</a> &amp;slotId) const </td></tr>
+ConstSlotPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlot</b> (const <a class="el" href="struct_graph_model_1_1_slot_id.html">SlotId</a> &amp;slotId) const </td></tr>
 <tr class="separator:aed12a96d47d803f7fd6b13e29a0429f1 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a487873f5d98ac46831b6351287bd958a inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">SlotPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a487873f5d98ac46831b6351287bd958a">GetSlot</a> (const SlotName &amp;name)</td></tr>
 <tr class="separator:a487873f5d98ac46831b6351287bd958a inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +175,10 @@ const ExtendableSlotSet &amp;&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="separator:a2a32fd9b9c95e5f79635042cb2d16629 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1e509b005eed3ad5007d1c48dff8451 inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual SlotPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#ab1e509b005eed3ad5007d1c48dff8451">AddExtendedSlot</a> (const SlotName &amp;slotName)</td></tr>
 <tr class="separator:ab1e509b005eed3ad5007d1c48dff8451 inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84e90f50787ddafa1622cc1251762eb inherit pub_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac84e90f50787ddafa1622cc1251762eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#ac84e90f50787ddafa1622cc1251762eb">ClearCachedData</a> ()</td></tr>
+<tr class="memdesc:ac84e90f50787ddafa1622cc1251762eb inherit pub_methods_class_graph_model_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear any data that was cached for this node. <br/></td></tr>
+<tr class="separator:ac84e90f50787ddafa1622cc1251762eb inherit pub_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_graph_model_1_1_graph_element"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_graph_model_1_1_graph_element')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_graph_model_1_1_graph_element.html">GraphModel::GraphElement</a></td></tr>
 <tr class="memitem:aa8459cf5925037857dff6afe2b0a81a8 inherit pub_methods_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8459cf5925037857dff6afe2b0a81a8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_graph_model_1_1_graph_element.html">GraphElement</a>, AZ::SystemAllocator)</td></tr>
@@ -205,47 +207,10 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="memitem:a9686682d040d290c296c2f4107d410d8 inherit pub_static_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9686682d040d290c296c2f4107d410d8"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a9686682d040d290c296c2f4107d410d8 inherit pub_static_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad58d30237fcdb18e9216ef60f7987b56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad58d30237fcdb18e9216ef60f7987b56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_module_node.html#ad58d30237fcdb18e9216ef60f7987b56">LoadModuleGraph</a> (ModuleGraphManagerPtr moduleGraphManager)</td></tr>
-<tr class="memdesc:ad58d30237fcdb18e9216ef60f7987b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the module graph that defines this <a class="el" href="class_graph_model_1_1_module_node.html">ModuleNode</a>. <br/></td></tr>
-<tr class="separator:ad58d30237fcdb18e9216ef60f7987b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0230d0b279a87dd8d5ecf6cd30600793"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0230d0b279a87dd8d5ecf6cd30600793"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_module_node.html#a0230d0b279a87dd8d5ecf6cd30600793">RegisterSlots</a> () override</td></tr>
-<tr class="memdesc:a0230d0b279a87dd8d5ecf6cd30600793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers input and output SlotDescriptions based on the contents of the module graph. <br/></td></tr>
-<tr class="separator:a0230d0b279a87dd8d5ecf6cd30600793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_graph_model_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_graph_model_1_1_node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_graph_model_1_1_node.html">GraphModel::Node</a></td></tr>
-<tr class="memitem:a2bebb66a1fe6dd527991e4f580b6f967 inherit pro_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a2bebb66a1fe6dd527991e4f580b6f967">CanExtendSlot</a> (SlotDefinitionPtr slotDefinition) const </td></tr>
-<tr class="separator:a2bebb66a1fe6dd527991e4f580b6f967 inherit pro_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae30addfafe05036b8a73f8c07c0b17ce inherit pro_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#ae30addfafe05036b8a73f8c07c0b17ce">RegisterSlot</a> (SlotDefinitionPtr slotDefinition)</td></tr>
-<tr class="separator:ae30addfafe05036b8a73f8c07c0b17ce inherit pro_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afabe2733778453b3c3b7434aace100b9 inherit pro_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#afabe2733778453b3c3b7434aace100b9">CreateSlotData</a> ()</td></tr>
-<tr class="separator:afabe2733778453b3c3b7434aace100b9 inherit pro_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac84e90f50787ddafa1622cc1251762eb inherit pro_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac84e90f50787ddafa1622cc1251762eb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#ac84e90f50787ddafa1622cc1251762eb">ClearCachedData</a> ()</td></tr>
-<tr class="memdesc:ac84e90f50787ddafa1622cc1251762eb inherit pro_methods_class_graph_model_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear any data that was cached for this node. <br/></td></tr>
-<tr class="separator:ac84e90f50787ddafa1622cc1251762eb inherit pro_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a3d0f91d7e0123bd51c82bf70543740eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d0f91d7e0123bd51c82bf70543740eb"></a>
-ConstGraphPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_module_node.html#a3d0f91d7e0123bd51c82bf70543740eb">m_moduleGraph</a></td></tr>
-<tr class="memdesc:a3d0f91d7e0123bd51c82bf70543740eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The module graph that defines the inputs, outputs, and behavior of this node. <br/></td></tr>
-<tr class="separator:a3d0f91d7e0123bd51c82bf70543740eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2f2721e0e40bf76b2acb2f5d458112"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2f2721e0e40bf76b2acb2f5d458112"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_module_node.html#a5e2f2721e0e40bf76b2acb2f5d458112">m_nodeTitle</a></td></tr>
-<tr class="memdesc:a5e2f2721e0e40bf76b2acb2f5d458112"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_graph_model_1_1_node.html">Node</a> title indicates the name of the module file. <br/></td></tr>
-<tr class="separator:a5e2f2721e0e40bf76b2acb2f5d458112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e562fcf66c14e27f930d0accfe8b80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1e562fcf66c14e27f930d0accfe8b80"></a>
-AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_module_node.html#ab1e562fcf66c14e27f930d0accfe8b80">m_moduleGraphFileId</a></td></tr>
-<tr class="memdesc:ab1e562fcf66c14e27f930d0accfe8b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier of the source file that contains the module graph. <br/></td></tr>
-<tr class="separator:ab1e562fcf66c14e27f930d0accfe8b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_graph_model_1_1_graph_element"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_graph_model_1_1_graph_element')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_graph_model_1_1_graph_element.html">GraphModel::GraphElement</a></td></tr>
-<tr class="memitem:a5a3cf1e8691d01ba0bb947a8e4d58ed5 inherit pro_attribs_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a3cf1e8691d01ba0bb947a8e4d58ed5"></a>
-AZStd::weak_ptr&lt; <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_graph</b></td></tr>
-<tr class="separator:a5a3cf1e8691d01ba0bb947a8e4d58ed5 inherit pro_attribs_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_graph_model_1_1_graph_element"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_graph_model_1_1_graph_element')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_graph_model_1_1_graph_element.html">GraphModel::GraphElement</a></td></tr>
+<tr class="memitem:a43d7c5b276b8c7caa29d8e6bf3d28857 inherit pub_static_methods_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43d7c5b276b8c7caa29d8e6bf3d28857"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:a43d7c5b276b8c7caa29d8e6bf3d28857 inherit pub_static_methods_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -254,10 +219,10 @@ Additional Inherited Members</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SlotDefinitionList</b> = AZStd::vector&lt; SlotDefinitionPtr &gt;</td></tr>
 <tr class="separator:a4abe8372025d54625f0597f793021f68 inherit pub_types_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8f76516bbd467bd49742b7b75c53c8b inherit pub_types_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8f76516bbd467bd49742b7b75c53c8b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>SlotMap</b> = AZStd::map&lt; <a class="el" href="struct_graph_model_1_1_slot_id_data.html">SlotId</a>, SlotPtr &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SlotMap</b> = AZStd::map&lt; <a class="el" href="struct_graph_model_1_1_slot_id.html">SlotId</a>, SlotPtr &gt;</td></tr>
 <tr class="separator:ad8f76516bbd467bd49742b7b75c53c8b inherit pub_types_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b648b9165087d277efc37dabf6ef72 inherit pub_types_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79b648b9165087d277efc37dabf6ef72"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstSlotMap</b> = AZStd::map&lt; <a class="el" href="struct_graph_model_1_1_slot_id_data.html">SlotId</a>, const SlotPtr &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ConstSlotMap</b> = AZStd::map&lt; <a class="el" href="struct_graph_model_1_1_slot_id.html">SlotId</a>, const SlotPtr &gt;</td></tr>
 <tr class="separator:a79b648b9165087d277efc37dabf6ef72 inherit pub_types_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae2b89f4a848ac032248c74f734eec2 inherit pub_types_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ae2b89f4a848ac032248c74f734eec2"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ExtendableSlotSet</b> = AZStd::set&lt; SlotPtr, <a class="el" href="struct_graph_model_1_1_node_1_1_sort_slots_by_sub_id.html">SortSlotsBySubId</a> &gt;</td></tr>
@@ -358,7 +323,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>INVALID_N
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

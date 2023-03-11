@@ -54,7 +54,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_framework_1_1_input_mapping_and-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputMappingAnd Class Reference</div>  </div>
@@ -173,17 +172,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStateUpdated</b> ()
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStateEnded</b> () const </td></tr>
 <tr class="separator:afe05418ea7ca76b35ca8334514281969 inherit pub_methods_class_az_framework_1_1_input_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a09a3ca3235a0b54dd708b1f32bb89a55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09a3ca3235a0b54dd708b1f32bb89a55"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_mapping_and.html#a09a3ca3235a0b54dd708b1f32bb89a55">IsSourceInput</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) override</td></tr>
-<tr class="memdesc:a09a3ca3235a0b54dd708b1f32bb89a55"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_mapping.html#ad8e919e8f4126f7749d81da1c93bd1a9">AzFramework::InputMapping::IsSourceInput</a> <br/></td></tr>
-<tr class="separator:a09a3ca3235a0b54dd708b1f32bb89a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200f0343779d772a614586542f7bde30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a200f0343779d772a614586542f7bde30"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_mapping_and.html#a200f0343779d772a614586542f7bde30">OnSourceInputEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) override</td></tr>
-<tr class="memdesc:a200f0343779d772a614586542f7bde30"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_mapping.html#a577b6a382b3f697ebcc70b5649e1ec46">AzFramework::InputMapping::OnSourceInputEvent</a> <br/></td></tr>
-<tr class="separator:a200f0343779d772a614586542f7bde30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_az_framework_1_1_input_channel"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_framework_1_1_input_channel')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_framework_1_1_input_channel.html">AzFramework::InputChannel</a></td></tr>
@@ -202,12 +190,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memitem:acd7e1320092e196a500318d6a1f9bdbe inherit pub_static_methods_class_az_framework_1_1_input_channel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd7e1320092e196a500318d6a1f9bdbe"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:acd7e1320092e196a500318d6a1f9bdbe inherit pub_static_methods_class_az_framework_1_1_input_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_types_class_az_framework_1_1_input_mapping"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_az_framework_1_1_input_mapping')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_az_framework_1_1_input_mapping.html">AzFramework::InputMapping</a></td></tr>
-<tr class="memitem:ab7246917a9d489c93cc3a7f29df81dd6 inherit pro_types_class_az_framework_1_1_input_mapping"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_mapping.html#ab7246917a9d489c93cc3a7f29df81dd6">SourceInputChannelIds</a> = AZStd::unordered_set&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &gt;</td></tr>
-<tr class="separator:ab7246917a9d489c93cc3a7f29df81dd6 inherit pro_types_class_az_framework_1_1_input_mapping"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ed36d66e717fcf169fe9aa9301a9f1 inherit pro_types_class_az_framework_1_1_input_mapping"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14ed36d66e717fcf169fe9aa9301a9f1"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveInputChannelIds</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a> &gt;</td></tr>
-<tr class="separator:a14ed36d66e717fcf169fe9aa9301a9f1 inherit pro_types_class_az_framework_1_1_input_mapping"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that maps multiple different sources to a single output using 'AND' logic. Example: "gamepad_button_L1" AND "gamepad_button_R1" -&gt; "gameplay_strong_attack" </p>
@@ -355,7 +337,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveInputChannelId
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

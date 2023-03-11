@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_manipulator_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ManipulatorView Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -91,84 +89,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Draw</b> (<a 
 <tr class="memitem:a3195d173b57ec38e34f6183445f3f64e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3195d173b57ec38e34f6183445f3f64e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ScreenSizeFixed</b> () const </td></tr>
 <tr class="separator:a3195d173b57ec38e34f6183445f3f64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:afcd959bc94f599b2c252f782bd8318b7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_manipulator_view.html#afcd959bc94f599b2c252f782bd8318b7">ManipulatorViewScaleMultiplier</a> (const AZ::Vector3 &amp;worldPosition, const AzFramework::CameraState &amp;cameraState) const </td></tr>
-<tr class="separator:afcd959bc94f599b2c252f782bd8318b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a1bb1c4fd6706378d42cddebebfa5f60f"><td class="memItemLeft" align="right" valign="top">AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_manipulator_view.html#a1bb1c4fd6706378d42cddebebfa5f60f">m_mouseOverColor</a> = BaseManipulator::s_defaultMouseOverColor</td></tr>
-<tr class="separator:a1bb1c4fd6706378d42cddebebfa5f60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The base interface for the visual representation of manipulators. The View represents the appearance and bounds of the manipulator for the user to interact with. Any manipulator can have any view (some may be more appropriate than others in certain cases). </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afcd959bc94f599b2c252f782bd8318b7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float AzToolsFramework::ManipulatorView::ManipulatorViewScaleMultiplier </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
-          <td class="paramname"><em>worldPosition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AzFramework::CameraState &amp;&#160;</td>
-          <td class="paramname"><em>cameraState</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Scale the manipulator based on the distance from the camera if m_screenSizeFixed is true. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1bb1c4fd6706378d42cddebebfa5f60f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZ::Color AzToolsFramework::ManipulatorView::m_mouseOverColor = BaseManipulator::s_defaultMouseOverColor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>What color should the manipulator be when the mouse is hovering over it. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Manipulators/ManipulatorView.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -53,8 +53,6 @@
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="#index_a"><span>a</span></a></li>
-      <li><a href="#index_c"><span>c</span></a></li>
-      <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
@@ -66,7 +64,6 @@
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_u"><span>u</span></a></li>
-      <li><a href="#index_v"><span>v</span></a></li>
       <li><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
@@ -82,11 +79,10 @@
 : <a class="el" href="class_a_w_s_core_1_1_request_builder.html#a65b5bcd2ba9d66fbbc84682abc78800c">AWSCore::RequestBuilder</a>
 </li>
 <li>ApplySettings()
-: <a class="el" href="class_a_w_s_core_1_1_service_request_job_config.html#a0f7194467ee6f838eb409c949f468d6f">AWSCore::ServiceRequestJobConfig&lt; RequestType &gt;</a>
-, <a class="el" href="class_a_w_s_core_1_1_aws_api_client_job_config.html#ab95fc979ce076dcfdde23504a502d96c">AWSCore::AwsApiClientJobConfig&lt; ClientType &gt;</a>
-, <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#acc52ea34538651d85f3aa45e39413c5f">AWSCore::AwsApiJobConfig</a>
+: <a class="el" href="class_a_w_s_core_1_1_service_job_config.html#a8d728e7cbb1f8219d26c50eef68c1d57">AWSCore::ServiceJobConfig</a>
+, <a class="el" href="class_a_w_s_core_1_1_service_request_job_config.html#a0f7194467ee6f838eb409c949f468d6f">AWSCore::ServiceRequestJobConfig&lt; RequestType &gt;</a>
 , <a class="el" href="class_a_w_s_core_1_1_http_request_job_config.html#a93ed052028a60bac6978a205cd6031af">AWSCore::HttpRequestJobConfig</a>
-, <a class="el" href="class_a_w_s_core_1_1_service_job_config.html#a8d728e7cbb1f8219d26c50eef68c1d57">AWSCore::ServiceJobConfig</a>
+, <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#acc52ea34538651d85f3aa45e39413c5f">AWSCore::AwsApiJobConfig</a>
 </li>
 <li>AwsApiClientJobConfig()
 : <a class="el" href="class_a_w_s_core_1_1_aws_api_client_job_config.html#ae9a4120a6ca5471eed232379e7a2e170">AWSCore::AwsApiClientJobConfig&lt; ClientType &gt;</a>
@@ -97,33 +93,7 @@
 </ul>
 
 
-<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
-<li>CheckAndSet()
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#a146ccddd3e441ddc28bf7247f6ba3353">AWSCore::AwsApiJobConfig</a>
-</li>
-<li>COMPONENT_DISPLAY_NAME
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_job.html#a4f3c1191a5a1fca62820838f7ef586a7">AWSCore::AwsApiJob</a>
-</li>
-<li>CreateClient()
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_client_job_config.html#a35b3271a570e63467e0b8a20f07d8951">AWSCore::AwsApiClientJobConfig&lt; ClientType &gt;</a>
-</li>
-<li>CustomizeRequest()
-: <a class="el" href="class_a_w_s_core_1_1_http_request_job.html#a4431cda7afb17e5b4dd747ffd6f61fff">AWSCore::HttpRequestJob</a>
-</li>
-</ul>
-
-
-<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
-<li>DoCleanup()
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html#a4554e290f7ee35751091a3881ad779be">AWSCore::AwsApiRequestJob&lt; RequestTraits &gt;</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
-<li>EnsureSettingsApplied()
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#a2b7c371559bdac6c710387d625e98819">AWSCore::AwsApiJobConfig</a>
-</li>
 <li>error
 : <a class="el" href="class_a_w_s_core_1_1_service_request.html#a3005bd1c5ef47907d11481ce04619a37">AWSCore::ServiceRequest</a>
 </li>
@@ -143,7 +113,6 @@
 </li>
 <li>GetCredentialsProvider()
 : <a class="el" href="class_a_w_s_core_1_1_a_w_s_credential_requests.html#a9ee34c476cee155e859d2e3779585d43">AWSCore::AWSCredentialRequests</a>
-, <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#ae5f92e2fea70927187966bf81d6af940">AWSCore::AwsApiJobConfig</a>
 </li>
 <li>GetDefaultAccountId()
 : <a class="el" href="class_a_w_s_core_1_1_a_w_s_resource_mapping_requests.html#a806b32f744c584cfa71cc11ae8a63e32">AWSCore::AWSResourceMappingRequests</a>
@@ -198,9 +167,6 @@
 <li>IConfig
 : <a class="el" href="class_a_w_s_core_1_1_service_request_job.html#af7e48add55b949d55e3029ec68efd266">AWSCore::ServiceRequestJob&lt; RequestType &gt;</a>
 </li>
-<li>InitializeRequest()
-: <a class="el" href="class_a_w_s_core_1_1_http_request_job.html#a9208b6b11afdfa32d017a6f1222affeb">AWSCore::HttpRequestJob</a>
-</li>
 </ul>
 
 
@@ -217,9 +183,6 @@
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>Object()
 : <a class="el" href="class_a_w_s_core_1_1_json_writer.html#af11341bbacd6b64422bcfdc7d35b71a3">AWSCore::JsonWriter</a>
-</li>
-<li>OnFailure()
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html#a00c020a347bb94c36c71d50fa71412c1">AWSCore::AwsApiRequestJob&lt; RequestTraits &gt;</a>
 </li>
 <li>OnGetItemError()
 : <a class="el" href="class_a_w_s_core_1_1_a_w_s_script_behavior_dynamo_d_b_notifications.html#a4fd49c6edea035caa4d2d36ca945e9c6">AWSCore::AWSScriptBehaviorDynamoDBNotifications</a>
@@ -252,9 +215,6 @@
 : <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config_holder.html#a92b8b470ee6937f9604ffc747c400e13">AWSCore::AwsApiJobConfigHolder&lt; ConfigType &gt;</a>
 , <a class="el" href="class_a_w_s_core_1_1_a_w_s_core_notifications.html#aae53fd8f1d6af6169076ab26aef0bb91">AWSCore::AWSCoreNotifications</a>
 </li>
-<li>OnSuccess()
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html#a273f58e80a34a51969f239a12bff5763">AWSCore::AwsApiRequestJob&lt; RequestTraits &gt;</a>
-</li>
 <li>operator=()
 : <a class="el" href="struct_a_w_s_core_1_1_a_w_s_credential_result.html#af8c14b9a79ecfe7e747d795aa01a44aa">AWSCore::AWSCredentialResult</a>
 </li>
@@ -270,12 +230,6 @@
 </li>
 <li>Path()
 : <a class="el" href="class_a_w_s_core_1_1_service_request.html#a55bde1b555da68615810feb99ea405a0">AWSCore::ServiceRequest</a>
-</li>
-<li>PrepareRequest()
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html#a9a76316d090a910b5417e0283dacb668">AWSCore::AwsApiRequestJob&lt; RequestTraits &gt;</a>
-</li>
-<li>ProcessResponse()
-: <a class="el" href="class_a_w_s_core_1_1_http_request_job.html#a7aafef8aad23f73a0d6fc75756443ecf">AWSCore::HttpRequestJob</a>
 </li>
 </ul>
 
@@ -359,13 +313,6 @@
 </ul>
 
 
-<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
-<li>Visit()
-: <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#a00fbae05364f15d47fbaf3882eb0ec37">AWSCore::AwsApiJobConfig</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>WriteJson()
 : <a class="el" href="class_a_w_s_core_1_1_json_writer.html#a7fcf80dcfcc22a359d29e03ab521f1f5">AWSCore::JsonWriter</a>
@@ -377,7 +324,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:01 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:39 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

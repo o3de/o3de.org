@@ -121,10 +121,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1shared__ptr.html">shared_ptr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1hash_3_01_a_z_1_1_explicit_overload_info_01_4.html">hash&lt; AZ::ExplicitOverloadInfo &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1hash_3_01_a_z_1_1_checked_operation_info_01_4.html">hash&lt; AZ::CheckedOperationInfo &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1less.html">less</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1less__equal.html">less_equal</a></td></tr>
@@ -569,6 +565,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1unwrap__reference.html">unwrap_reference</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1unwrap__reference_3_01_a_z_std_1_1reference__wrapper_3_01_t_01_4_01_4.html">unwrap_reference&lt; AZStd::reference_wrapper&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1unwrap__ref__decay.html">unwrap_ref_decay</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1checked__deleter.html">checked_deleter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1checked__array__deleter.html">checked_array_deleter</a></td></tr>
@@ -883,13 +883,16 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>atomic_uint64_t</b> 
 <tr class="memitem:a645e9e7e52a0881ccfb337d319f1bb4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a645e9e7e52a0881ccfb337d319f1bb4d"></a>
 typedef <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_std_1_1_thread_events.html">ThreadEvents</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ThreadEventBus</b></td></tr>
 <tr class="separator:a645e9e7e52a0881ccfb337d319f1bb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b15fd73d0dd93ee6d1b8c281479259"><td class="memTemplParams" colspan="2"><a class="anchor" id="a46b15fd73d0dd93ee6d1b8c281479259"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a46b15fd73d0dd93ee6d1b8c281479259"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unwrap_reference_t</b> = typename <a class="el" href="struct_a_z_std_1_1unwrap__reference.html">unwrap_reference</a>&lt; T &gt;::type</td></tr>
+<tr class="separator:a46b15fd73d0dd93ee6d1b8c281479259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00c79359f7d6841c440654b78b73a5b"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad00c79359f7d6841c440654b78b73a5b"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:ad00c79359f7d6841c440654b78b73a5b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unwrap_ref_decay_t</b> = typename <a class="el" href="struct_a_z_std_1_1unwrap__ref__decay.html">unwrap_ref_decay</a>&lt; T &gt;::type</td></tr>
+<tr class="separator:ad00c79359f7d6841c440654b78b73a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a735b022ae5b1e06b63c9bc75f2b4e80b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#a735b022ae5b1e06b63c9bc75f2b4e80b">intrusive_base</a> = <a class="el" href="class_a_z_std_1_1intrusive__refcount.html">intrusive_refcount</a>&lt; atomic_uint &gt;</td></tr>
 <tr class="separator:a735b022ae5b1e06b63c9bc75f2b4e80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb4832383c83113340791a3ab3fe87f0"><td class="memTemplParams" colspan="2"><a class="anchor" id="aeb4832383c83113340791a3ab3fe87f0"></a>
-template&lt;typename T , typename Deleter  = std::default_delete&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:aeb4832383c83113340791a3ab3fe87f0"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_z_std.html#aeb4832383c83113340791a3ab3fe87f0">unique_ptr</a> = std::unique_ptr&lt; T, Deleter &gt;</td></tr>
-<tr class="memdesc:aeb4832383c83113340791a3ab3fe87f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">20.7.12.2 unique_ptr for single objects. <br/></td></tr>
-<tr class="separator:aeb4832383c83113340791a3ab3fe87f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04b28b48dde2e1ebc7a2d6b5d86f6701"><td class="memTemplParams" colspan="2"><a class="anchor" id="a04b28b48dde2e1ebc7a2d6b5d86f6701"></a>
 template&lt;size_t MaxElementCount&gt; </td></tr>
 <tr class="memitem:a04b28b48dde2e1ebc7a2d6b5d86f6701"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fixed_string</b> = <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">basic_fixed_string</a>&lt; char, MaxElementCount, <a class="el" href="struct_a_z_std_1_1char__traits.html">char_traits</a>&lt; char &gt;&gt;</td></tr>
@@ -1293,6 +1296,99 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="memitem:a7a82fdabfa7b91bf66e3484af857b9bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a82fdabfa7b91bf66e3484af857b9bc"></a>
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>to_string</b> (const <a class="el" href="class_a_z_1_1_color.html">AZ::Color</a> &amp;val)</td></tr>
 <tr class="separator:a7a82fdabfa7b91bf66e3484af857b9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40398d7099efd3794bb4692b0b1a5a04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40398d7099efd3794bb4692b0b1a5a04"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_SPECIALIZE_WITH_NAME_DECL</b> (<a class="el" href="struct_a_z_std_1_1monostate.html">AZStd::monostate</a>)</td></tr>
+<tr class="separator:a40398d7099efd3794bb4692b0b1a5a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad01620e06061e10853bbb85e1ec5cbbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad01620e06061e10853bbb85e1ec5cbbf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_SPECIALIZE_WITH_NAME_DECL</b> (<a class="el" href="class_a_z_std_1_1allocator.html">AZStd::allocator</a>)</td></tr>
+<tr class="separator:ad01620e06061e10853bbb85e1ec5cbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60c9eb5d2b6c997ddf47df78ee7d4fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac60c9eb5d2b6c997ddf47df78ee7d4fa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="struct_a_z_std_1_1less.html">AZStd::less</a>,&quot;AZStd::less&quot;,&quot;{41B40AFC-68FD-4ED9-9EC7-BA9992802E1B}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:ac60c9eb5d2b6c997ddf47df78ee7d4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078ff45b6cf1bc98cf39966670c12ae1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a078ff45b6cf1bc98cf39966670c12ae1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="struct_a_z_std_1_1less__equal.html">AZStd::less_equal</a>,&quot;AZStd::less_equal&quot;,&quot;{91CC0BDC-FC46-4617-A405-D914EF1C1902}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a078ff45b6cf1bc98cf39966670c12ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb253109b31b276ef0be738d1975fd46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb253109b31b276ef0be738d1975fd46"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="struct_a_z_std_1_1greater.html">AZStd::greater</a>,&quot;AZStd::greater&quot;,&quot;{907F012A-7A4F-4B57-AC23-48DC08D0782E}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:abb253109b31b276ef0be738d1975fd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b5fea1b800e1b655610b65cb4ac1dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89b5fea1b800e1b655610b65cb4ac1dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="struct_a_z_std_1_1greater__equal.html">AZStd::greater_equal</a>,&quot;AZStd::greater_equal&quot;,&quot;{EB00488F-E20F-471A-B862-F1E3C39DDA1D}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a89b5fea1b800e1b655610b65cb4ac1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a904852b8a2b15f3ce38a606a9b4c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47a904852b8a2b15f3ce38a606a9b4c6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="struct_a_z_std_1_1equal__to.html">AZStd::equal_to</a>,&quot;AZStd::equal_to&quot;,&quot;{4377BCED-F78C-4016-80BB-6AFACE6E5137}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a47a904852b8a2b15f3ce38a606a9b4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa579f9fb42c74ed6ec6c94eef46d62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfa579f9fb42c74ed6ec6c94eef46d62"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="struct_a_z_std_1_1hash.html">AZStd::hash</a>,&quot;AZStd::hash&quot;,&quot;{EFA74E54-BDFA-47BE-91A7-5A05DA0306D7}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:acfa579f9fb42c74ed6ec6c94eef46d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31df304d6428de7af42b8bcd2c5c948e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31df304d6428de7af42b8bcd2c5c948e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>,&quot;AZStd::pair&quot;,&quot;{919645C1-E464-482B-A69B-04AA688B6847}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a31df304d6428de7af42b8bcd2c5c948e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d1b845169c1cddce09c6428848fc6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9d1b845169c1cddce09c6428848fc6e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>,&quot;AZStd::vector&quot;,&quot;{A60E3E61-1FF6-4982-B6B8-9E4350C4C679}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:ab9d1b845169c1cddce09c6428848fc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278de3061c5eee9653d93fe6919117f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a278de3061c5eee9653d93fe6919117f0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1list.html">AZStd::list</a>,&quot;AZStd::list&quot;,&quot;{E1E05843-BB02-4F43-B7DC-3ADB28DF42AC}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a278de3061c5eee9653d93fe6919117f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6935ab8980bbe35b43caf37aa0d1f4c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6935ab8980bbe35b43caf37aa0d1f4c4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1forward__list.html">AZStd::forward_list</a>,&quot;AZStd::forward_list&quot;,&quot;{D7E91EA3-326F-4019-87F0-6F45924B909A}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a6935ab8980bbe35b43caf37aa0d1f4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb839f211875c8644533c8d62fd623f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb839f211875c8644533c8d62fd623f6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1set.html">AZStd::set</a>,&quot;AZStd::set&quot;,&quot;{6C51837F-B0C9-40A3-8D52-2143341EDB07}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:adb839f211875c8644533c8d62fd623f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104d1483fa39185ea648fbaa31c4391c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a104d1483fa39185ea648fbaa31c4391c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1unordered__set.html">AZStd::unordered_set</a>,&quot;AZStd::unordered_set&quot;,&quot;{8D60408E-DA65-4670-99A2-8ABB574625AE}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a104d1483fa39185ea648fbaa31c4391c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8bb5ee641cc1119a6994264f88ca5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d8bb5ee641cc1119a6994264f88ca5d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1unordered__multiset.html">AZStd::unordered_multiset</a>,&quot;AZStd::unordered_multiset&quot;,&quot;{B5950921-7F70-4806-9C13-8C7DF841BB90}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a4d8bb5ee641cc1119a6994264f88ca5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af597b82370096cdf35d86d5ebae0025a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af597b82370096cdf35d86d5ebae0025a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1map.html">AZStd::map</a>,&quot;AZStd::map&quot;,&quot;{F8ECF58D-D33E-49DC-BF34-8FA499AC3AE1}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:af597b82370096cdf35d86d5ebae0025a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326a831e3badefa99a10d4c5f72a363a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a326a831e3badefa99a10d4c5f72a363a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a>,&quot;AZStd::unordered_map&quot;,&quot;{41171F6F-9E5E-4227-8420-289F1DD5D005}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a326a831e3badefa99a10d4c5f72a363a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe2cbb9d8bd48b20d1f8e7e2f1c7155"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabe2cbb9d8bd48b20d1f8e7e2f1c7155"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1unordered__multimap.html">AZStd::unordered_multimap</a>,&quot;AZStd::unordered_multimap&quot;,&quot;{9ED846FA-31C1-4133-B4F4-91DF9750BA96}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:aabe2cbb9d8bd48b20d1f8e7e2f1c7155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc25d2e2bd8ea164bc3f11e350cc7b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfc25d2e2bd8ea164bc3f11e350cc7b9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>,&quot;AZStd::shared_ptr&quot;,&quot;{FE61C84E-149D-43FD-88BA-1C3DB7E548B4}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:adfc25d2e2bd8ea164bc3f11e350cc7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79133f302befafeb93b9c71a2fc54eb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79133f302befafeb93b9c71a2fc54eb3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1intrusive__ptr.html">AZStd::intrusive_ptr</a>,&quot;AZStd::intrusive_ptr&quot;,&quot;{530F8502-309E-4EE1-9AEF-5C0456B1F502}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a79133f302befafeb93b9c71a2fc54eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac453fa03b84cfe0696539b5100d309f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac453fa03b84cfe0696539b5100d309f5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1fixed__vector.html">AZStd::fixed_vector</a>,&quot;AZStd::fixed_vector&quot;,&quot;{74044B6F-E922-4FD7-915D-EFC5D1DC59AE}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_AUTO)</td></tr>
+<tr class="separator:ac453fa03b84cfe0696539b5100d309f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41ad526cf9cf591d125de3c763f1e420"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41ad526cf9cf591d125de3c763f1e420"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1fixed__list.html">AZStd::fixed_list</a>,&quot;AZStd::fixed_list&quot;,&quot;{508B9687-8410-4A73-AE0C-0BA15CF3F773}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_AUTO)</td></tr>
+<tr class="separator:a41ad526cf9cf591d125de3c763f1e420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0c8b9b766284a06b7663976d629538"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba0c8b9b766284a06b7663976d629538"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1fixed__forward__list.html">AZStd::fixed_forward_list</a>,&quot;AZStd::fixed_forward_list&quot;,&quot;{0D9D2AB2-F0CC-4E30-A209-A33D78717649}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_AUTO)</td></tr>
+<tr class="separator:aba0c8b9b766284a06b7663976d629538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4902c7593b660f8ee64a09d5e237808"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4902c7593b660f8ee64a09d5e237808"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1array.html">AZStd::array</a>,&quot;AZStd::array&quot;,&quot;{911B2EA8-CCB1-4F0C-A535-540AD00173AE}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_AUTO)</td></tr>
+<tr class="separator:af4902c7593b660f8ee64a09d5e237808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275088ed15a60ab7569bea31f4b2dc36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a275088ed15a60ab7569bea31f4b2dc36"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_POSTFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1bitset.html">AZStd::bitset</a>,&quot;AZStd::bitset&quot;,&quot;{6BAE9836-EC49-466A-85F2-F4B1B70839FB}&quot;, AZ_TYPE_INFO_INTERNAL_AUTO)</td></tr>
+<tr class="separator:a275088ed15a60ab7569bea31f4b2dc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e68d84961cb03b30a0d99989937f18d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e68d84961cb03b30a0d99989937f18d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_PREFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1variant.html">AZStd::variant</a>,&quot;AZStd::variant&quot;, s_variantTypeId, AZ_TYPE_INFO_INTERNAL_TYPENAME_VARARGS)</td></tr>
+<tr class="separator:a3e68d84961cb03b30a0d99989937f18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3de08c5ee968d374764a029c7999d45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3de08c5ee968d374764a029c7999d45"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_PREFIX_UUID</b> (<a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>,&quot;AZStd::function&quot;,&quot;{C9F9C644-CCC3-4F77-A792-F5B5DBCA746E}&quot;, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:ab3de08c5ee968d374764a029c7999d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b3d384f200c76aafa6da4993a3df59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8b3d384f200c76aafa6da4993a3df59"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_BOTHFIX_UUID_DECL</b> (<a class="el" href="struct_a_z_std_1_1char__traits.html">AZStd::char_traits</a>, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:ad8b3d384f200c76aafa6da4993a3df59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b2ef10292bcad3a31ef9792dc4b401"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4b2ef10292bcad3a31ef9792dc4b401"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_BOTHFIX_UUID_DECL</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::basic_string_view</a>, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:aa4b2ef10292bcad3a31ef9792dc4b401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1e1c70e5ad8eed7f1eced2da7b70a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff1e1c70e5ad8eed7f1eced2da7b70a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_BOTHFIX_UUID_DECL</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::basic_string</a>, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:aff1e1c70e5ad8eed7f1eced2da7b70a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c299a5daf1c8237ab4c2aae65ba0dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40c299a5daf1c8237ab4c2aae65ba0dd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_INTERNAL_SPECIALIZED_TEMPLATE_BOTHFIX_UUID_DECL</b> (<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::basic_fixed_string</a>, AZ_TYPE_INFO_INTERNAL_TYPENAME, AZ_TYPE_INFO_INTERNAL_AUTO, AZ_TYPE_INFO_INTERNAL_TYPENAME)</td></tr>
+<tr class="separator:a40c299a5daf1c8237ab4c2aae65ba0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d46560288f1b3e744be9e5e0a7925b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a28d46560288f1b3e744be9e5e0a7925b"></a>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a28d46560288f1b3e744be9e5e0a7925b"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetMin</b> (const T &amp;left, const T &amp;right)</td></tr>
@@ -2845,7 +2941,7 @@ template&lt;class T &gt; </td></tr>
 <tr class="separator:a1ab1910bd62654466ea54fb756f63218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a8bf339533d91d86861b235a8c3be2b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7a8bf339533d91d86861b235a8c3be2b"></a>
 template&lt;class T , class D &gt; </td></tr>
-<tr class="memitem:a7a8bf339533d91d86861b235a8c3be2b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>shared_ptr</b> (<a class="el" href="namespace_a_z_std.html#aeb4832383c83113340791a3ab3fe87f0">AZStd::unique_ptr</a>&lt; T, D &gt;) -&gt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt;</td></tr>
+<tr class="memitem:a7a8bf339533d91d86861b235a8c3be2b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>shared_ptr</b> (AZStd::unique_ptr&lt; T, D &gt;) -&gt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt;</td></tr>
 <tr class="separator:a7a8bf339533d91d86861b235a8c3be2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33fcf81e11ebd6e8bf142e5e0eb0a8b7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a33fcf81e11ebd6e8bf142e5e0eb0a8b7"></a>
 template&lt;class T , class U &gt; </td></tr>
@@ -2891,29 +2987,29 @@ template&lt;class D , class T &gt; </td></tr>
 template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a28ebad12cb93b75658c0bba522c88c76"><td class="memTemplItemLeft" align="right" valign="top">AZStd::enable_if_t<br class="typebreak"/>
 &lt;!AZStd::is_array&lt; T &gt;::value <br class="typebreak"/>
-&amp;&amp;AZ::HasAZClassAllocator&lt; T &gt;<br class="typebreak"/>
-::value, <a class="el" href="namespace_a_z_std.html#aeb4832383c83113340791a3ab3fe87f0">unique_ptr</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unique</b> (Args &amp;&amp;...args)</td></tr>
+&amp;&amp;<a class="el" href="struct_a_z_1_1_has_a_z_class_allocator.html">AZ::HasAZClassAllocator</a>&lt; T &gt;<br class="typebreak"/>
+::value, unique_ptr&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unique</b> (Args &amp;&amp;...args)</td></tr>
 <tr class="separator:a28ebad12cb93b75658c0bba522c88c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c3661f37bb0b47323e8e49049278d1"><td class="memTemplParams" colspan="2"><a class="anchor" id="a90c3661f37bb0b47323e8e49049278d1"></a>
 template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a90c3661f37bb0b47323e8e49049278d1"><td class="memTemplItemLeft" align="right" valign="top">AZStd::enable_if_t<br class="typebreak"/>
 &lt;!AZStd::is_array&lt; T &gt;::value <br class="typebreak"/>
-&amp;&amp;!AZ::HasAZClassAllocator&lt; T &gt;<br class="typebreak"/>
-::value, <a class="el" href="namespace_a_z_std.html#aeb4832383c83113340791a3ab3fe87f0">unique_ptr</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unique</b> (Args &amp;&amp;...args)</td></tr>
+&amp;&amp;!<a class="el" href="struct_a_z_1_1_has_a_z_class_allocator.html">AZ::HasAZClassAllocator</a>&lt; T &gt;<br class="typebreak"/>
+::value, unique_ptr&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unique</b> (Args &amp;&amp;...args)</td></tr>
 <tr class="separator:a90c3661f37bb0b47323e8e49049278d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb69ccd50489a562e71ff4f24ecef0b"><td class="memTemplParams" colspan="2"><a class="anchor" id="aafb69ccd50489a562e71ff4f24ecef0b"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aafb69ccd50489a562e71ff4f24ecef0b"><td class="memTemplItemLeft" align="right" valign="top">AZStd::enable_if_t<br class="typebreak"/>
 &lt; AZStd::is_array&lt; T &gt;::value <br class="typebreak"/>
 &amp;&amp;AZStd::extent&lt; T &gt;::value==0, <br class="typebreak"/>
-<a class="el" href="namespace_a_z_std.html#aeb4832383c83113340791a3ab3fe87f0">unique_ptr</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unique</b> (std::size_t size)</td></tr>
+unique_ptr&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unique</b> (std::size_t size)</td></tr>
 <tr class="separator:aafb69ccd50489a562e71ff4f24ecef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2042dd3be283c81bbdee80f483a1b69"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad2042dd3be283c81bbdee80f483a1b69"></a>
 template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:ad2042dd3be283c81bbdee80f483a1b69"><td class="memTemplItemLeft" align="right" valign="top">AZStd::enable_if_t<br class="typebreak"/>
 &lt; AZStd::is_array&lt; T &gt;::value <br class="typebreak"/>
 &amp;&amp;AZStd::extent&lt; T &gt;::value!=0, <br class="typebreak"/>
-<a class="el" href="namespace_a_z_std.html#aeb4832383c83113340791a3ab3fe87f0">unique_ptr</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unique</b> (Args &amp;&amp;...args)=delete</td></tr>
+unique_ptr&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_unique</b> (Args &amp;&amp;...args)=delete</td></tr>
 <tr class="separator:ad2042dd3be283c81bbdee80f483a1b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362055473c343515a69d68af4393a918"><td class="memTemplParams" colspan="2"><a class="anchor" id="a362055473c343515a69d68af4393a918"></a>
 template&lt;class T , class U &gt; </td></tr>
@@ -4019,6 +4115,9 @@ template&lt;class L1 , class L2 , class R1 , class R2 , class  = AZStd::void_t&l
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a38bf26d43f2688c1db817d84ab5c13da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38bf26d43f2688c1db817d84ab5c13da"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>s_variantTypeId</b> { &quot;{1E8BB1E5-410A-4367-8FAA-D43A4DE14D4B}&quot; }</td></tr>
+<tr class="separator:a38bf26d43f2688c1db817d84ab5c13da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cbefb74b4add5f1ba21bffa29680a77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cbefb74b4add5f1ba21bffa29680a77"></a>
 const <a class="el" href="struct_a_z_std_1_1transfer__ownership__t.html">transfer_ownership_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>s_transfer_ownership</b> {}</td></tr>
 <tr class="separator:a0cbefb74b4add5f1ba21bffa29680a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5669,7 +5768,7 @@ template&lt;class S , class I &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:28 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

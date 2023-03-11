@@ -53,7 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_archive_file_i_o-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::ArchiveFileIO Class Reference</div>  </div>
@@ -174,23 +173,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReplaceAlias</b> (AZ:
 <tr class="memitem:a9190dbc71cd7e150aaadee3d843a9f74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9190dbc71cd7e150aaadee3d843a9f74"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilename</b> (IO::HandleType fileHandle, char *filename, AZ::u64 filenameSize) const override</td></tr>
 <tr class="separator:a9190dbc71cd7e150aaadee3d843a9f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:afd243913d96c6640d8b563bb31ba6794"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd243913d96c6640d8b563bb31ba6794"></a>
-AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_operationGuard</b></td></tr>
-<tr class="separator:afd243913d96c6640d8b563bb31ba6794"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af75b1eb6c7f7f6cb320b6d7870fb8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8af75b1eb6c7f7f6cb320b6d7870fb8b"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; IO::HandleType, AZ::IO::Path &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_trackedFiles</b></td></tr>
-<tr class="separator:a8af75b1eb6c7f7f6cb320b6d7870fb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673126c075992d706b26b61728c7af42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a673126c075992d706b26b61728c7af42"></a>
-AZStd::fixed_vector&lt; char, <br class="typebreak"/>
-ArchiveFileIoMaxBuffersize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_copyBuffer</b></td></tr>
-<tr class="separator:a673126c075992d706b26b61728c7af42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae85fc59f4cd3c015bf3b3b408f07c692"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae85fc59f4cd3c015bf3b3b408f07c692"></a>
-<a class="el" href="struct_a_z_1_1_i_o_1_1_i_archive.html">IArchive</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_archive</b></td></tr>
-<tr class="separator:ae85fc59f4cd3c015bf3b3b408f07c692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_i_o_1_1_archive_file_i_o.html">ArchiveFileIO</a> An implementation of the FileIOBase which pipes all operations via <a class="el" href="class_a_z_1_1_i_o_1_1_archive.html">Archive</a>, which itself pipes all operations via Local or <a class="el" href="class_a_z_1_1_i_o_1_1_remote_file_i_o.html">RemoteFileIO</a>. this allows us to talk to files inside packfiles, without having to change the interface. </p>
@@ -200,7 +182,7 @@ ArchiveFileIoMaxBuffersize &gt;&#160;</td><td class="memItemRight" valign="botto
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

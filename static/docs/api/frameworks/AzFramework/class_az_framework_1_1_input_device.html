@@ -54,7 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_framework_1_1_input_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDevice Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -106,25 +105,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af08afa2038296d1f7750e61abe58fc3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af08afa2038296d1f7750e61abe58fc3b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:af08afa2038296d1f7750e61abe58fc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a20c49755e8fc367afe62e1c1788e8b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a20c49755e8fc367afe62e1c1788e8b8b">BroadcastInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) const </td></tr>
-<tr class="separator:a20c49755e8fc367afe62e1c1788e8b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e7fba32002cef9260f72d49079c2b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a47e7fba32002cef9260f72d49079c2b2">BroadcastInputTextEvent</a> (const AZStd::string &amp;textUTF8) const </td></tr>
-<tr class="separator:a47e7fba32002cef9260f72d49079c2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b3f1cf8533f960eb86d73d9c0b09dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b3f1cf8533f960eb86d73d9c0b09dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a83b3f1cf8533f960eb86d73d9c0b09dd">BroadcastInputDeviceConnectedEvent</a> () const </td></tr>
-<tr class="memdesc:a83b3f1cf8533f960eb86d73d9c0b09dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device connects to the system. <br/></td></tr>
-<tr class="separator:a83b3f1cf8533f960eb86d73d9c0b09dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8db0be32df8eeec193f83be08cce6fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8db0be32df8eeec193f83be08cce6fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#ae8db0be32df8eeec193f83be08cce6fb">BroadcastInputDeviceDisconnectedEvent</a> () const </td></tr>
-<tr class="memdesc:ae8db0be32df8eeec193f83be08cce6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device disconnects from the system. <br/></td></tr>
-<tr class="separator:ae8db0be32df8eeec193f83be08cce6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7610e16b07bb6c9e5806709d8d142a81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7610e16b07bb6c9e5806709d8d142a81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a7610e16b07bb6c9e5806709d8d142a81">ResetInputChannelStates</a> ()</td></tr>
-<tr class="memdesc:a7610e16b07bb6c9e5806709d8d142a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
-<tr class="separator:a7610e16b07bb6c9e5806709d8d142a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all input devices. Input devices are responsible for processing raw input and using it to update their associated input channels. Input devices can also be queried at any time to determine their current connected state, or retrieve their associated input channels.</p>
@@ -172,68 +152,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a20c49755e8fc367afe62e1c1788e8b8b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzFramework::InputDevice::BroadcastInputChannelEvent </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;&#160;</td>
-          <td class="paramname"><em>inputChannel</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Broadcast an event when an associated input channel's state or value is updated </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inputChannel</td><td>The input channel whose state or value was updated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a47e7fba32002cef9260f72d49079c2b2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzFramework::InputDevice::BroadcastInputTextEvent </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>textUTF8</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Broadcast an event when unicode text input is generated by an input device </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">textUTF8</td><td>The text emitted by the input device (encoded using UTF-8) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a474352f2a230aac184bff0dc190983e7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +202,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Access to all input channels associated with this input device </p>
 <dl class="section return"><dt>Returns</dt><dd>Map of all input channels (keyed by their id) associated with this input device </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_framework_1_1_input_device_keyboard.html#a010971d7bfd2ae2e6bde934ea8adf016">AzFramework::InputDeviceKeyboard</a>, <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a2e3e30ee6591660bd20ad713fdbc88d1">AzFramework::InputDeviceGamepad</a>, <a class="el" href="class_az_framework_1_1_input_device_motion.html#aefb2c61bef7e100f0864c2278c9fb4ae">AzFramework::InputDeviceMotion</a>, <a class="el" href="class_az_framework_1_1_input_device_mouse.html#a45f6863638b38b3ce8855b2adf133bfa">AzFramework::InputDeviceMouse</a>, <a class="el" href="class_az_framework_1_1_input_device_touch.html#accd82590b0a7e43ce342fb5857060d3e">AzFramework::InputDeviceTouch</a>, <a class="el" href="class_az_framework_1_1_input_context.html#aa42a7909b30adc9f3afe3e93e4857bd4">AzFramework::InputContext</a>, and <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#aa7c2ded260c2cc59b300c0a5c27964ba">AzFramework::InputDeviceVirtualKeyboard</a>.</p>
+<p>Implemented in <a class="el" href="class_az_framework_1_1_input_device_keyboard.html#a010971d7bfd2ae2e6bde934ea8adf016">AzFramework::InputDeviceKeyboard</a>, <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a2e3e30ee6591660bd20ad713fdbc88d1">AzFramework::InputDeviceGamepad</a>, <a class="el" href="class_az_framework_1_1_input_device_motion.html#aefb2c61bef7e100f0864c2278c9fb4ae">AzFramework::InputDeviceMotion</a>, <a class="el" href="class_az_framework_1_1_input_device_mouse.html#a45f6863638b38b3ce8855b2adf133bfa">AzFramework::InputDeviceMouse</a>, <a class="el" href="class_az_framework_1_1_input_device_touch.html#accd82590b0a7e43ce342fb5857060d3e">AzFramework::InputDeviceTouch</a>, and <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#aa7c2ded260c2cc59b300c0a5c27964ba">AzFramework::InputDeviceVirtualKeyboard</a>.</p>
 
 </div>
 </div>
@@ -328,7 +246,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Query whether the device is currently connected to the system. A device can be supported but not currently connected, while a currently connected device will always be supported. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the input device is currently connected, false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_framework_1_1_input_device_keyboard.html#a768675e2244d10b5cbd398fd481aed36">AzFramework::InputDeviceKeyboard</a>, <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#acf00517fa4d6e2ff63a2d10d778ee069">AzFramework::InputDeviceGamepad</a>, <a class="el" href="class_az_framework_1_1_input_device_motion.html#a382e9a0d6d6df9b978f1241f646ab049">AzFramework::InputDeviceMotion</a>, <a class="el" href="class_az_framework_1_1_input_device_mouse.html#aa613db9fb6e8503e46d5af3698ff1694">AzFramework::InputDeviceMouse</a>, <a class="el" href="class_az_framework_1_1_input_device_touch.html#a9be0433a7c3071e416c0da48351f0b71">AzFramework::InputDeviceTouch</a>, <a class="el" href="class_az_framework_1_1_input_context.html#a2ab2f2a926fd56c44bdbadf89f6c6644">AzFramework::InputContext</a>, and <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a331238f2fc344aa50ea4e057755f8860">AzFramework::InputDeviceVirtualKeyboard</a>.</p>
+<p>Implemented in <a class="el" href="class_az_framework_1_1_input_device_keyboard.html#a768675e2244d10b5cbd398fd481aed36">AzFramework::InputDeviceKeyboard</a>, <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#acf00517fa4d6e2ff63a2d10d778ee069">AzFramework::InputDeviceGamepad</a>, <a class="el" href="class_az_framework_1_1_input_device_motion.html#a382e9a0d6d6df9b978f1241f646ab049">AzFramework::InputDeviceMotion</a>, <a class="el" href="class_az_framework_1_1_input_device_mouse.html#aa613db9fb6e8503e46d5af3698ff1694">AzFramework::InputDeviceMouse</a>, <a class="el" href="class_az_framework_1_1_input_device_touch.html#a9be0433a7c3071e416c0da48351f0b71">AzFramework::InputDeviceTouch</a>, and <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a331238f2fc344aa50ea4e057755f8860">AzFramework::InputDeviceVirtualKeyboard</a>.</p>
 
 </div>
 </div>
@@ -355,7 +273,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Query whether the device is supported by the current platform. A device can be supported but not currently connected, while a currently connected device will always be supported. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the input device is supported on the current platform, false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_framework_1_1_input_device_keyboard.html#a1276b561894aea744af812e9b756ff2f">AzFramework::InputDeviceKeyboard</a>, <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad96b0c9b385c0ac2fa00d9e15dde1320">AzFramework::InputDeviceGamepad</a>, <a class="el" href="class_az_framework_1_1_input_device_motion.html#a5b429feb895a6cd258a9182fa8e54e76">AzFramework::InputDeviceMotion</a>, <a class="el" href="class_az_framework_1_1_input_device_mouse.html#aa3a6b79766dc05a8bb8ddae36d5148ad">AzFramework::InputDeviceMouse</a>, <a class="el" href="class_az_framework_1_1_input_device_touch.html#adfe57b6e8e533f8b4e4f096e099889d0">AzFramework::InputDeviceTouch</a>, <a class="el" href="class_az_framework_1_1_input_context.html#aaa5f10c42fec01252e1bf9339cdea34e">AzFramework::InputContext</a>, and <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#aef41538042fca0e5679121626845d9a6">AzFramework::InputDeviceVirtualKeyboard</a>.</p>
+<p>Implemented in <a class="el" href="class_az_framework_1_1_input_device_keyboard.html#a1276b561894aea744af812e9b756ff2f">AzFramework::InputDeviceKeyboard</a>, <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad96b0c9b385c0ac2fa00d9e15dde1320">AzFramework::InputDeviceGamepad</a>, <a class="el" href="class_az_framework_1_1_input_device_motion.html#a5b429feb895a6cd258a9182fa8e54e76">AzFramework::InputDeviceMotion</a>, <a class="el" href="class_az_framework_1_1_input_device_mouse.html#aa3a6b79766dc05a8bb8ddae36d5148ad">AzFramework::InputDeviceMouse</a>, <a class="el" href="class_az_framework_1_1_input_device_touch.html#adfe57b6e8e533f8b4e4f096e099889d0">AzFramework::InputDeviceTouch</a>, and <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#aef41538042fca0e5679121626845d9a6">AzFramework::InputDeviceVirtualKeyboard</a>.</p>
 
 </div>
 </div>
@@ -392,7 +310,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

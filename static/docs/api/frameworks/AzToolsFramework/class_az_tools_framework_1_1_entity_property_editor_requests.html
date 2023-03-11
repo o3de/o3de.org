@@ -52,6 +52,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_entity_property_editor_requests-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -63,6 +64,12 @@
 
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a733d34dcb1c2c015dcaa845dda1e152c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a733d34dcb1c2c015dcaa845dda1e152c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>VisitComponentEditorsCallback</b> = AZStd::function&lt; bool(const ComponentEditor *)&gt;</td></tr>
+<tr class="separator:a733d34dcb1c2c015dcaa845dda1e152c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae81f1012ce4752aab24fccb170ebfef2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_entity_property_editor_requests.html#ae81f1012ce4752aab24fccb170ebfef2">GetSelectedAndPinnedEntities</a> (EntityIdList &amp;selectedEntityIds)=0</td></tr>
@@ -71,6 +78,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac5f1ae1bee0db33e5e4a22fcd0c9586d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f7e829ca6ec6ca2fb1eb8501e802a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_entity_property_editor_requests.html#a28f7e829ca6ec6ca2fb1eb8501e802a0">SetNewComponentId</a> (AZ::ComponentId componentId)=0</td></tr>
 <tr class="separator:a28f7e829ca6ec6ca2fb1eb8501e802a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3300d1c34f599956983962be015f357"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_entity_property_editor_requests.html#af3300d1c34f599956983962be015f357">VisitComponentEditors</a> (const VisitComponentEditorsCallback &amp;callback) const =0</td></tr>
+<tr class="separator:af3300d1c34f599956983962be015f357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Requests to be made of all <a class="el" href="class_az_tools_framework_1_1_entity_property_editor_requests.html">EntityPropertyEditorRequests</a> Beware, there may be more than one EntityPropertyEditor that can respond Broadcast should be used for accessing these functions </p>
@@ -162,13 +171,44 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af3300d1c34f599956983962be015f357"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::EntityPropertyEditorRequests::VisitComponentEditors </td>
+          <td>(</td>
+          <td class="paramtype">const VisitComponentEditorsCallback &amp;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Visits the component editors in an EntityPropertyEditor via a callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>The callback that iterates over all the component editors within an EntityPropertyEditor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/API/EntityPropertyEditorRequestsBus.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

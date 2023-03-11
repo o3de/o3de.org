@@ -102,22 +102,22 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual GraphModel::ConnectionPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#aae15e894628f58ea740f1f26995bb5b0">AddConnection</a> (GraphModel::SlotPtr sourceSlot, GraphModel::SlotPtr targetSlot)=0</td></tr>
 <tr class="memdesc:aae15e894628f58ea740f1f26995bb5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new connection between the specified source and target. <br/></td></tr>
 <tr class="separator:aae15e894628f58ea740f1f26995bb5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a3e123003f193257d7720433d0561a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40a3e123003f193257d7720433d0561a"></a>
-virtual GraphModel::ConnectionPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#a40a3e123003f193257d7720433d0561a">AddConnectionBySlotId</a> (GraphModel::NodePtr sourceNode, <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a> sourceSlotId, GraphModel::NodePtr targetNode, <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a> targetSlotId)=0</td></tr>
-<tr class="memdesc:a40a3e123003f193257d7720433d0561a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new connection between the specified source and target specified slots. <br/></td></tr>
-<tr class="separator:a40a3e123003f193257d7720433d0561a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e7ee5924d90ddaaf5a5801b2343754b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e7ee5924d90ddaaf5a5801b2343754b"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#a2e7ee5924d90ddaaf5a5801b2343754b">AreSlotsConnected</a> (GraphModel::NodePtr sourceNode, <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a> sourceSlotId, GraphModel::NodePtr targetNode, <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a> targetSlotId) const =0</td></tr>
-<tr class="memdesc:a2e7ee5924d90ddaaf5a5801b2343754b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is a connection between the specified source and target specified slots. <br/></td></tr>
-<tr class="separator:a2e7ee5924d90ddaaf5a5801b2343754b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d78ff6c86ba05530b4bd6d1c02c9bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21d78ff6c86ba05530b4bd6d1c02c9bc"></a>
+virtual GraphModel::ConnectionPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#a21d78ff6c86ba05530b4bd6d1c02c9bc">AddConnectionBySlotId</a> (GraphModel::NodePtr sourceNode, const <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a> &amp;sourceSlotId, GraphModel::NodePtr targetNode, const <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a> &amp;targetSlotId)=0</td></tr>
+<tr class="memdesc:a21d78ff6c86ba05530b4bd6d1c02c9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new connection between the specified source and target specified slots. <br/></td></tr>
+<tr class="separator:a21d78ff6c86ba05530b4bd6d1c02c9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed45595e6656cf4c849a1ed2c0e9bc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abed45595e6656cf4c849a1ed2c0e9bc5"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#abed45595e6656cf4c849a1ed2c0e9bc5">AreSlotsConnected</a> (GraphModel::NodePtr sourceNode, const <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a> &amp;sourceSlotId, GraphModel::NodePtr targetNode, const <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a> &amp;targetSlotId) const =0</td></tr>
+<tr class="memdesc:abed45595e6656cf4c849a1ed2c0e9bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is a connection between the specified source and target specified slots. <br/></td></tr>
+<tr class="separator:abed45595e6656cf4c849a1ed2c0e9bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1562cbdcc20478350aab07c47551807"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1562cbdcc20478350aab07c47551807"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#ac1562cbdcc20478350aab07c47551807">RemoveConnection</a> (GraphModel::ConnectionPtr connection)=0</td></tr>
 <tr class="memdesc:ac1562cbdcc20478350aab07c47551807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the specified connection. <br/></td></tr>
 <tr class="separator:ac1562cbdcc20478350aab07c47551807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada60107d02f4745f475388ff55ea736b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada60107d02f4745f475388ff55ea736b"></a>
-virtual <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#ada60107d02f4745f475388ff55ea736b">ExtendSlot</a> (GraphModel::NodePtr node, GraphModel::SlotName slotName)=0</td></tr>
-<tr class="memdesc:ada60107d02f4745f475388ff55ea736b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend the given Slot on the specified node. <br/></td></tr>
-<tr class="separator:ada60107d02f4745f475388ff55ea736b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e533241cd1ecb6af085ff9090e0472"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05e533241cd1ecb6af085ff9090e0472"></a>
+virtual <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#a05e533241cd1ecb6af085ff9090e0472">ExtendSlot</a> (GraphModel::NodePtr node, const GraphModel::SlotName &amp;slotName)=0</td></tr>
+<tr class="memdesc:a05e533241cd1ecb6af085ff9090e0472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend the given Slot on the specified node. <br/></td></tr>
+<tr class="separator:a05e533241cd1ecb6af085ff9090e0472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e38db801b6a322e8657510acad7307"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47e38db801b6a322e8657510acad7307"></a>
 virtual GraphModel::NodePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#a47e38db801b6a322e8657510acad7307">GetNodeById</a> (const GraphCanvas::NodeId &amp;nodeId)=0</td></tr>
 <tr class="memdesc:a47e38db801b6a322e8657510acad7307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="class_graph_model_1_1_node.html">GraphModel::Node</a> that corresponds to the Graph Canvas Node Id. <br/></td></tr>
@@ -376,7 +376,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

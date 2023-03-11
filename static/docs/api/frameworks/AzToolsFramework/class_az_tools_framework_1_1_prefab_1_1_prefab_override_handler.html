@@ -63,8 +63,8 @@
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac4e3b5b2557225ee6a2014cac5b23d17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#ac4e3b5b2557225ee6a2014cac5b23d17">AreOverridesPresent</a> (AZ::Dom::Path path, LinkId linkId) const </td></tr>
 <tr class="separator:ac4e3b5b2557225ee6a2014cac5b23d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28fd3b666e6603b54f720704ca6268aa"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; OverrideType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#a28fd3b666e6603b54f720704ca6268aa">GetOverrideType</a> (AZ::Dom::Path path, LinkId linkId) const </td></tr>
-<tr class="separator:a28fd3b666e6603b54f720704ca6268aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fffda53d00fb6b660fdb37b875ca398"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; PatchType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#a4fffda53d00fb6b660fdb37b875ca398">GetPatchType</a> (AZ::Dom::Path path, LinkId linkId) const </td></tr>
+<tr class="separator:a4fffda53d00fb6b660fdb37b875ca398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ecfaa5715b9b29818bcf0812148ae67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#a8ecfaa5715b9b29818bcf0812148ae67">RevertOverrides</a> (AZ::Dom::Path path, LinkId linkId) const </td></tr>
 <tr class="separator:a8ecfaa5715b9b29818bcf0812148ae67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -104,12 +104,12 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a28fd3b666e6603b54f720704ca6268aa"></a>
+<a class="anchor" id="a4fffda53d00fb6b660fdb37b875ca398"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AZStd::optional&lt;OverrideType&gt; AzToolsFramework::Prefab::PrefabOverrideHandler::GetOverrideType </td>
+          <td class="memname">AZStd::optional&lt;PatchType&gt; AzToolsFramework::Prefab::PrefabOverrideHandler::GetPatchType </td>
           <td>(</td>
           <td class="paramtype">AZ::Dom::Path&#160;</td>
           <td class="paramname"><em>path</em>, </td>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the override type on the link object matching the linkId at the provided path. </p>
+<p>Gets the patch type on the link object matching the linkId at the provided path. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to get override type on the link object. </td></tr>
@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an override type if an override is present at the given path on the link object matching the link id. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a patch type if an override is present at the given path on the link object matching the link id. </dd></dl>
 
 </div>
 </div>
@@ -180,7 +180,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

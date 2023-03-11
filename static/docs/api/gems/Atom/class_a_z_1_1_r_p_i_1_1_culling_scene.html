@@ -54,7 +54,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_culling_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RPI::CullingScene Class Reference</div>  </div>
@@ -96,7 +95,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a8c4de8cce94ac3ce84c686ef71d5d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a list of occlusion planes to be used during the culling process. <br/></td></tr>
 <tr class="separator:a8c4de8cce94ac3ce84c686ef71d5d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de95a9da4fb69d1b5f581b9edc1ccde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8de95a9da4fb69d1b5f581b9edc1ccde"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a8de95a9da4fb69d1b5f581b9edc1ccde">BeginCulling</a> (const AZStd::vector&lt; ViewPtr &gt; &amp;views)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a8de95a9da4fb69d1b5f581b9edc1ccde">BeginCulling</a> (const AZStd::vector&lt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> &gt; &amp;views)</td></tr>
 <tr class="memdesc:a8de95a9da4fb69d1b5f581b9edc1ccde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies the <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">CullingScene</a> that culling will begin for this frame. <br/></td></tr>
 <tr class="separator:a8de95a9da4fb69d1b5f581b9edc1ccde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaccc86e0b4f76a41ef44d600e2e2fbaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaccc86e0b4f76a41ef44d600e2e2fbaa"></a>
@@ -131,12 +130,6 @@ const <br class="typebreak"/>
 AzFramework::IVisibilityScene *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#af2d1df550d5742b38e996085aae364bf">GetVisibilityScene</a> () const </td></tr>
 <tr class="memdesc:af2d1df550d5742b38e996085aae364bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the visibility scene. <br/></td></tr>
 <tr class="separator:af2d1df550d5742b38e996085aae364bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a977672da003182f95f0c2dcbd6aa5d63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a977672da003182f95f0c2dcbd6aa5d63"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>CountObjectsInScene</b> ()</td></tr>
-<tr class="separator:a977672da003182f95f0c2dcbd6aa5d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Centralized manager for culling-related processing for a given scene. There is one <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">CullingScene</a> owned by each <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a>, so external systems (such as FeatureProcessors) should access the <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">CullingScene</a> via their parent <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a>. </p>
@@ -259,7 +252,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>CountObjectsInScene
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:24:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

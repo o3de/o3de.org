@@ -54,7 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_framework_1_1_input_context_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputContextComponent Class Reference</div>  </div>
@@ -89,24 +88,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#a9f601704e45c37acedc32c402e16255d">Reflect</a> (AZ::ReflectContext *context)</td></tr>
 <tr class="memdesc:a9f601704e45c37acedc32c402e16255d"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::ComponentDescriptor::Reflect <br/></td></tr>
 <tr class="separator:a9f601704e45c37acedc32c402e16255d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a92eddd78e319081918ce2b24cec1ab3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92eddd78e319081918ce2b24cec1ab3b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#a92eddd78e319081918ce2b24cec1ab3b">Init</a> () override</td></tr>
-<tr class="memdesc:a92eddd78e319081918ce2b24cec1ab3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::Component::Init <br/></td></tr>
-<tr class="separator:a92eddd78e319081918ce2b24cec1ab3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a916ef0b62e1116628531158fa9c4c1a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a916ef0b62e1116628531158fa9c4c1a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#a916ef0b62e1116628531158fa9c4c1a8">Activate</a> () override</td></tr>
-<tr class="memdesc:a916ef0b62e1116628531158fa9c4c1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::Component::Activate <br/></td></tr>
-<tr class="separator:a916ef0b62e1116628531158fa9c4c1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452cbc4eac250cb44f415d1d46a2e293"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a452cbc4eac250cb44f415d1d46a2e293"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#a452cbc4eac250cb44f415d1d46a2e293">Deactivate</a> () override</td></tr>
-<tr class="memdesc:a452cbc4eac250cb44f415d1d46a2e293"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::Component::Deactivate <br/></td></tr>
-<tr class="separator:a452cbc4eac250cb44f415d1d46a2e293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaa0d8b68330494563d4a033a63655bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acaa0d8b68330494563d4a033a63655bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocalUserId</b> (<a class="el" href="namespace_az_framework.html#a68f1ef85c956c9a787e8681e2669599e">LocalUserId</a> localUserId) override</td></tr>
-<tr class="separator:acaa0d8b68330494563d4a033a63655bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="class_az_framework_1_1_input_context_component.html">InputContextComponent</a> is used to configure (at edit time) the data necessary to create an <a class="el" href="class_az_framework_1_1_input_context.html">InputContext</a> (at run time). The life cycle of any <a class="el" href="class_az_framework_1_1_input_context_component.html">InputContextComponent</a> is controlled by the AZ::Entity it is attached to, adhering to the same rules as any other AZ::Component, and the <a class="el" href="class_az_framework_1_1_input_context.html">InputContext</a> which it owns is created/destroyed when the component is activated/deactivated. </p>
@@ -116,7 +97,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocalUserId</b> (<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

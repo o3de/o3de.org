@@ -148,7 +148,7 @@ virtual Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> 
 <tr class="memdesc:acbea2f496ee31a86e86ff6e114e6306b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> using the name of the <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> class. <br/></td></tr>
 <tr class="separator:acbea2f496ee31a86e86ff6e114e6306b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacebed60d9cadfe669b1597eb77c65d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacebed60d9cadfe669b1597eb77c65d7"></a>
-virtual Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#aacebed60d9cadfe669b1597eb77c65d7">CreatePassFromTemplate</a> (const AZStd::shared_ptr&lt; const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt; &amp;passTemplate, Name passName)=0</td></tr>
+virtual Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#aacebed60d9cadfe669b1597eb77c65d7">CreatePassFromTemplate</a> (const <a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt; &amp;passTemplate, Name passName)=0</td></tr>
 <tr class="memdesc:aacebed60d9cadfe669b1597eb77c65d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> using a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a>. <br/></td></tr>
 <tr class="separator:aacebed60d9cadfe669b1597eb77c65d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf41cbbb4951f3dbb30c716296f3592"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bf41cbbb4951f3dbb30c716296f3592"></a>
@@ -172,12 +172,12 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:aa1e62dddff1f5630ea918820965e0062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the pass factory contains passes created with the given template name. <br/></td></tr>
 <tr class="separator:aa1e62dddff1f5630ea918820965e0062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411b96182e6927edb21a6216dd1be2b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a411b96182e6927edb21a6216dd1be2b2"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a411b96182e6927edb21a6216dd1be2b2">AddPassTemplate</a> (const Name &amp;name, const AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt; &amp;passTemplate)=0</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a411b96182e6927edb21a6216dd1be2b2">AddPassTemplate</a> (const Name &amp;name, const <a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt; &amp;passTemplate)=0</td></tr>
 <tr class="memdesc:a411b96182e6927edb21a6216dd1be2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> to the library. <br/></td></tr>
 <tr class="separator:a411b96182e6927edb21a6216dd1be2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a869ae33cf3e31712c9785204620ea3e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a869ae33cf3e31712c9785204620ea3e9"></a>
 virtual const <br class="typebreak"/>
-AZStd::shared_ptr&lt; const <br class="typebreak"/>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; const <br class="typebreak"/>
 <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a869ae33cf3e31712c9785204620ea3e9">GetPassTemplate</a> (const Name &amp;name) const =0</td></tr>
 <tr class="memdesc:a869ae33cf3e31712c9785204620ea3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> from the library. <br/></td></tr>
 <tr class="separator:a869ae33cf3e31712c9785204620ea3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -427,7 +427,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PassTests</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

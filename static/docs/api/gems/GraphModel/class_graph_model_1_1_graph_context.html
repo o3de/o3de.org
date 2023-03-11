@@ -51,7 +51,7 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_graph_model_1_1_graph_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GraphModel::GraphContext Class Reference</div>  </div>
@@ -73,6 +73,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>DataTypeList</b> = A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7c78db2e22729a84f54b2e925f651fb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c78db2e22729a84f54b2e925f651fb6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_graph_model_1_1_graph_context.html">GraphContext</a>, AZ::SystemAllocator)</td></tr>
+<tr class="separator:a7c78db2e22729a84f54b2e925f651fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bce4bc772a28f880c6e1f6035b25a1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bce4bc772a28f880c6e1f6035b25a1d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_graph_model_1_1_graph_context.html">GraphContext</a>,&quot;{4CD3C171-A7AA-4B62-96BB-F09F398A73E7}&quot;)</td></tr>
+<tr class="separator:a8bce4bc772a28f880c6e1f6035b25a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0fa9eb6999d47ac0d3917cc4d294d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b0fa9eb6999d47ac0d3917cc4d294d3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GraphContext</b> (const AZStd::string &amp;systemName, const AZStd::string &amp;moduleExtension, const DataTypeList &amp;dataTypes)</td></tr>
 <tr class="separator:a8b0fa9eb6999d47ac0d3917cc4d294d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,8 +90,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_context.html#af60348e174b0f1c83014a4fff1c2d642">GetModuleFileExtension</a> () const </td></tr>
 <tr class="memdesc:af60348e174b0f1c83014a4fff1c2d642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the file extension used for module files. <br/></td></tr>
 <tr class="separator:af60348e174b0f1c83014a4fff1c2d642"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03b1b6aa674aea83be57096d37800cb9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_context.html#a03b1b6aa674aea83be57096d37800cb9">CreateModuleGraphManager</a> ()</td></tr>
-<tr class="separator:a03b1b6aa674aea83be57096d37800cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a739a57481419d741f2e5fb9ff3aeb82f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_context.html#a739a57481419d741f2e5fb9ff3aeb82f">CreateModuleGraphManager</a> ()</td></tr>
+<tr class="separator:a739a57481419d741f2e5fb9ff3aeb82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab24f62a021e8cbebd7137e138717e69d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab24f62a021e8cbebd7137e138717e69d"></a>
 ModuleGraphManagerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_context.html#ab24f62a021e8cbebd7137e138717e69d">GetModuleGraphManager</a> () const </td></tr>
 <tr class="memdesc:ab24f62a021e8cbebd7137e138717e69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="class_graph_model_1_1_module_graph_manager.html">ModuleGraphManager</a> to support creating ModuleNodes. Subclasses can just return nullptr if this isn't needed. <br/></td></tr>
@@ -111,72 +117,47 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa0fc0ce72e3da56f6f1bb6830f04e140"><td class="memTemplItemLeft" align="right" valign="top">DataTypePtr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_context.html#aa0fc0ce72e3da56f6f1bb6830f04e140">GetDataType</a> () const </td></tr>
 <tr class="memdesc:aa0fc0ce72e3da56f6f1bb6830f04e140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to returns a <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object representing the given template type T, or Invalid if it doesn't exist. <br/></td></tr>
 <tr class="separator:aa0fc0ce72e3da56f6f1bb6830f04e140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f36246e6adf44a6c3af0a8308a60c5"><td class="memItemLeft" align="right" valign="top">virtual DataTypePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_context.html#a78f36246e6adf44a6c3af0a8308a60c5">GetDataTypeForValue</a> (const AZStd::any &amp;value) const </td></tr>
-<tr class="separator:a78f36246e6adf44a6c3af0a8308a60c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100cd77122e3d3e3e4f751f338c9564b"><td class="memItemLeft" align="right" valign="top">DataTypePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_context.html#a100cd77122e3d3e3e4f751f338c9564b">GetDataTypeForValue</a> (const AZStd::any &amp;value) const </td></tr>
+<tr class="separator:a100cd77122e3d3e3e4f751f338c9564b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aad59df58b161a980be746b8d9ca6e308"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad59df58b161a980be746b8d9ca6e308"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_systemName</b></td></tr>
-<tr class="separator:aad59df58b161a980be746b8d9ca6e308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a459a923b76d54763b07feb77eab6ba64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a459a923b76d54763b07feb77eab6ba64"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_moduleExtension</b></td></tr>
-<tr class="separator:a459a923b76d54763b07feb77eab6ba64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d8817fb50670ae6c33f09649524a57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28d8817fb50670ae6c33f09649524a57"></a>
-DataTypeList&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataTypes</b></td></tr>
-<tr class="separator:a28d8817fb50670ae6c33f09649524a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f948f0518030191f3c895bbb1f338e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5f948f0518030191f3c895bbb1f338e"></a>
-GraphModel::ModuleGraphManagerPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_moduleGraphManager</b></td></tr>
-<tr class="separator:ab5f948f0518030191f3c895bbb1f338e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a13032c28284bc752ec6edaab61e0e06c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13032c28284bc752ec6edaab61e0e06c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:a13032c28284bc752ec6edaab61e0e06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>!! Start in Graph.h for high level GraphModel documentation !!! </p>
 <p><a class="el" href="class_graph_model_1_1_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">GraphContext</a> provides access to client specific information and systems required by the graphmodel framework. All supported data types used by graphs in the client system must be registered with the <a class="el" href="class_graph_model_1_1_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">GraphContext</a>. All systems that use GraphModel must provide an instance of this, or a derived, class, passed to the main <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> object. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a03b1b6aa674aea83be57096d37800cb9"></a>
+<a class="anchor" id="a739a57481419d741f2e5fb9ff3aeb82f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void GraphModel::GraphContext::CreateModuleGraphManager </td>
+          <td class="memname">void GraphModel::GraphContext::CreateModuleGraphManager </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Creates the module graph manager used by all module nodes in this context. This is done after construction because it is optional and the module graph manager needs a reference to the graph context </p>
 
 </div>
 </div>
-<a class="anchor" id="a78f36246e6adf44a6c3af0a8308a60c5"></a>
+<a class="anchor" id="a100cd77122e3d3e3e4f751f338c9564b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DataTypePtr GraphModel::GraphContext::GetDataTypeForValue </td>
+          <td class="memname">DataTypePtr GraphModel::GraphContext::GetDataTypeForValue </td>
           <td>(</td>
           <td class="paramtype">const AZStd::any &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Returns a <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> object representing the given AZStd::any value, or Invalid if it doesn't exist. This data type method has a different name because if the <a class="el" href="class_graph_model_1_1_graph_context.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">GraphContext</a> implementation doesn't override this, there will be a compile error for a hidden function because of subclasses implementing the templated version below </p>
 
@@ -188,7 +169,7 @@ GraphModel::ModuleGraphManagerPtr&#160;</td><td class="memItemRight" valign="bot
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

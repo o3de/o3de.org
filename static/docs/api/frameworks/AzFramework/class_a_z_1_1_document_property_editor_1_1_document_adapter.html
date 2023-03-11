@@ -55,8 +55,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_z_1_1_document_property_editor_1_1_document_adapter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DocumentPropertyEditor::DocumentAdapter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -106,25 +104,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a492fc2718dd1cbcedca3d7746be82f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4220bad42997ad1aedc6ec70e16f3414"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a4220bad42997ad1aedc6ec70e16f3414">SetDebugModeEnabled</a> (bool enableDebugMode)</td></tr>
 <tr class="separator:a4220bad42997ad1aedc6ec70e16f3414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:ae353ffbe7bb82ff8df94d736577fc6a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">DocumentResetType</a> { <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a109e0d0bf2b42091e997ddc4d49bab8d">DocumentResetType::SoftReset</a>, 
-<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a9d31379a0302def25480e5a19522c67d">DocumentResetType::HardReset</a>
- }</td></tr>
-<tr class="memdesc:ae353ffbe7bb82ff8df94d736577fc6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the type of reset operation triggered in NotifyResetDocument.  <a href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">More...</a><br/></td></tr>
-<tr class="separator:ae353ffbe7bb82ff8df94d736577fc6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aee629f63b82b281c69e6caf059ed45fa"><td class="memItemLeft" align="right" valign="top">virtual Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aee629f63b82b281c69e6caf059ed45fa">GenerateContents</a> ()=0</td></tr>
-<tr class="separator:aee629f63b82b281c69e6caf059ed45fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac00fd27e2315ce374e4abe2ff72f43c"><td class="memItemLeft" align="right" valign="top">virtual Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aac00fd27e2315ce374e4abe2ff72f43c">HandleMessage</a> (const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html">AdapterMessage</a> &amp;message)</td></tr>
-<tr class="separator:aac00fd27e2315ce374e4abe2ff72f43c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1cb4e7f1eb6b98224d5c9f3ec367d5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ab1cb4e7f1eb6b98224d5c9f3ec367d5e">NotifyResetDocument</a> (<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">DocumentResetType</a> resetType=<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a109e0d0bf2b42091e997ddc4d49bab8d">DocumentResetType::SoftReset</a>)</td></tr>
-<tr class="separator:ab1cb4e7f1eb6b98224d5c9f3ec367d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac356f0634ebfbbd553c5899c5320025e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ac356f0634ebfbbd553c5899c5320025e">NotifyContentsChanged</a> (const Dom::Patch &amp;patch)</td></tr>
-<tr class="separator:ac356f0634ebfbbd553c5899c5320025e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">DocumentAdapter</a> provides an interface for transforming data from an arbitrary source into a DOM hierarchy that can be viewed and edited by a DocumentPropertyView.</p>
@@ -135,38 +114,7 @@ Protected Member Functions</h2></td></tr>
 <li>Label elements displayed as textual labels within a Row. Labels may have attributes, but no children.</li>
 <li>PropertyEditor elements that display a property editor of an arbitrary type, specified by the mandatory "type" attribute. The Document Property View will scan for a registered property editor of this type, and provide this node to the property editor for rendering. The contents of a PropertyEditor are dictated by its type. </li>
 </ul>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ae353ffbe7bb82ff8df94d736577fc6a7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">AZ::DocumentPropertyEditor::DocumentAdapter::DocumentResetType</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Specifies the type of reset operation triggered in NotifyResetDocument. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ae353ffbe7bb82ff8df94d736577fc6a7a109e0d0bf2b42091e997ddc4d49bab8d"></a>SoftReset</em>&nbsp;</td><td class="fielddoc">
-<p>(Default) On soft reset, the adapter will compare any existing cached contents to the new result of GetContents and produce patches based on the difference, assuming cached contents are available. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ae353ffbe7bb82ff8df94d736577fc6a7a9d31379a0302def25480e5a19522c67d"></a>HardReset</em>&nbsp;</td><td class="fielddoc">
-<p>On hard reset, the adapter will clear any cached contents and simply emit a reset event, ensuring any views fully reset their contents. In cases where the new adapter contents are fully disparate, this can be more efficient than the comparison from a soft reset. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a3a984d18705a177a47dbb36209d20118"></a>
 <div class="memitem">
 <div class="memproto">
@@ -218,33 +166,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aee629f63b82b281c69e6caf059ed45fa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Dom::Value AZ::DocumentPropertyEditor::DocumentAdapter::GenerateContents </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Generates the contents of this adapter. This must be an Adapter DOM node. These contents will be cached - to notify clients of changes to the structure, NotifyResetDocument or NotifyContentsChanged must be used. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html">AdapterBuilder</a> for building out this DOM structure. </dd></dl>
-
-<p>Implemented in <a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter.html#ab041db94e5376682b3e5413155663abd">AZ::DocumentPropertyEditor::RowFilterAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_reflection_adapter.html#aa3dfec51982b3012970fd13cce33321b">AZ::DocumentPropertyEditor::ReflectionAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_settings_registry_adapter.html#a32663bb9441038bd6ff26854c1acabc5">AZ::DocumentPropertyEditor::SettingsRegistryAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_sort_adapter.html#aa2aaf4d1ef9095b1c33a93bf4ea6f6c5">AZ::DocumentPropertyEditor::RowSortAdapter</a>, and <a class="el" href="class_a_z_1_1_document_property_editor_1_1_cvar_adapter.html#a3f53fe4289935c1723dc78d0731365cd">AZ::DocumentPropertyEditor::CvarAdapter</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a869b8ae56e3197b08739fb606b1f57df"></a>
 <div class="memitem">
 <div class="memproto">
@@ -258,33 +179,6 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Retrieves the contents of this adapter. These contents will be lazily initialized and kept cached, allowing cheap access. Adapters may send notifications via reset and change notifications to indicate when the internal state has changed. </p>
-
-</div>
-</div>
-<a class="anchor" id="aac00fd27e2315ce374e4abe2ff72f43c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual Dom::Value AZ::DocumentPropertyEditor::DocumentAdapter::HandleMessage </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html">AdapterMessage</a> &amp;&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Called by SendAdapterMessage before the view is notified. This may be overridden to handle BoundAdapterMessages on fields. </p>
-
-<p>Reimplemented in <a class="el" href="class_a_z_1_1_document_property_editor_1_1_reflection_adapter.html#a42aaf38698cd904cfa0f991e8dcb4423">AZ::DocumentPropertyEditor::ReflectionAdapter</a>, and <a class="el" href="class_a_z_1_1_document_property_editor_1_1_settings_registry_adapter.html#a6ed9d3a9dd61e5215e783208924f2c5d">AZ::DocumentPropertyEditor::SettingsRegistryAdapter</a>.</p>
 
 </div>
 </div>
@@ -310,56 +204,6 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>If true, debug mode is enabled for all DocumentAdapters. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a4220bad42997ad1aedc6ec70e16f3414">SetDebugModeEnabled</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac356f0634ebfbbd553c5899c5320025e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::DocumentPropertyEditor::DocumentAdapter::NotifyContentsChanged </td>
-          <td>(</td>
-          <td class="paramtype">const Dom::Patch &amp;&#160;</td>
-          <td class="paramname"><em>patch</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Subclasses may call this to trigger a ChangedEvent to notify the view that this adapter's contents have changed. This patch should apply cleanly on the last result GetContents would have returned after any preceding changed or reset events. </p>
-
-</div>
-</div>
-<a class="anchor" id="ab1cb4e7f1eb6b98224d5c9f3ec367d5e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::DocumentPropertyEditor::DocumentAdapter::NotifyResetDocument </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">DocumentResetType</a>&#160;</td>
-          <td class="paramname"><em>resetType</em> = <code><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a109e0d0bf2b42091e997ddc4d49bab8d">DocumentResetType::SoftReset</a></code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Subclasses may call this to trigger a ResetEvent and let the view know that GetContents should be requeried. Where possible, prefer to use NotifyContentsChanged instead. </p>
 
 </div>
 </div>
@@ -439,8 +283,6 @@ Protected Member Functions</h2></td></tr>
 <p>Sets a router responsible for chaining nested adapters, if supported. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_a_z_1_1_document_property_editor_1_1_routing_adapter.html">RoutingAdapter</a> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_a_z_1_1_document_property_editor_1_1_routing_adapter.html#a16dedf80e6f1cfd6287db3da06d0b863">AZ::DocumentPropertyEditor::RoutingAdapter</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -449,7 +291,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,9 +55,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_compressor_z_std-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::CompressorZStd Class Reference</div>  </div>
@@ -118,61 +115,6 @@ static AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr class="memdesc:abd831494d5e1a5d06c3d66a8103a1ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return compressor type id. <br/></td></tr>
 <tr class="separator:abd831494d5e1a5d06c3d66a8103a1ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a71804cf529f9140163e4d9409ef3d708"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71804cf529f9140163e4d9409ef3d708"></a>
-SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a71804cf529f9140163e4d9409ef3d708">FillFromDecompressCache</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std_data.html">CompressorZStdData</a> *zlibData, void *&amp;buffer, SizeType &amp;byteSize, SizeType &amp;offset)</td></tr>
-<tr class="memdesc:a71804cf529f9140163e4d9409ef3d708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read as much data as possible and adjust the parameters. <br/></td></tr>
-<tr class="separator:a71804cf529f9140163e4d9409ef3d708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af85bcc4719c25ccffdaa8a0a93b4e7a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af85bcc4719c25ccffdaa8a0a93b4e7a9"></a>
-SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#af85bcc4719c25ccffdaa8a0a93b4e7a9">FillCompressedBuffer</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream)</td></tr>
-<tr class="memdesc:af85bcc4719c25ccffdaa8a0a93b4e7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from stream into the compression buffer. <br/></td></tr>
-<tr class="separator:af85bcc4719c25ccffdaa8a0a93b4e7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2f2dbcb7a0b55b42737ef9177ada405"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2f2dbcb7a0b55b42737ef9177ada405"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#af2f2dbcb7a0b55b42737ef9177ada405">AcquireDataBuffer</a> ()</td></tr>
-<tr class="memdesc:af2f2dbcb7a0b55b42737ef9177ada405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire data buffer resource (if not created it will be allocated) and increment m_dataBufferUseCount. <br/></td></tr>
-<tr class="separator:af2f2dbcb7a0b55b42737ef9177ada405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e2a17f1fb2e85b8694cacbd6a73c8ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e2a17f1fb2e85b8694cacbd6a73c8ee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a9e2a17f1fb2e85b8694cacbd6a73c8ee">ReleaseDataBuffer</a> ()</td></tr>
-<tr class="memdesc:a9e2a17f1fb2e85b8694cacbd6a73c8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release data buffer resource, if m_dataBufferUseCount == 0 all memory will be freed. <br/></td></tr>
-<tr class="separator:a9e2a17f1fb2e85b8694cacbd6a73c8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a50ce7ce2d3219feca258c31c3cf20e24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50ce7ce2d3219feca258c31c3cf20e24"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a50ce7ce2d3219feca258c31c3cf20e24">m_lastReadStream</a> = nullptr</td></tr>
-<tr class="memdesc:a50ce7ce2d3219feca258c31c3cf20e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached last stream we read data into the m_dataBuffer. <br/></td></tr>
-<tr class="separator:a50ce7ce2d3219feca258c31c3cf20e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8645d822ab480a9faeb85c9395c442"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e8645d822ab480a9faeb85c9395c442"></a>
-SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a4e8645d822ab480a9faeb85c9395c442">m_lastReadStreamOffset</a> = 0</td></tr>
-<tr class="memdesc:a4e8645d822ab480a9faeb85c9395c442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of the last read (in the m_dataBuffer) in the compressed stream. <br/></td></tr>
-<tr class="separator:a4e8645d822ab480a9faeb85c9395c442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95fa98c59a4499ac7d9c52726df35034"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95fa98c59a4499ac7d9c52726df35034"></a>
-SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a95fa98c59a4499ac7d9c52726df35034">m_lastReadStreamSize</a> = 0</td></tr>
-<tr class="memdesc:a95fa98c59a4499ac7d9c52726df35034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the data in m_dataBuffer of the last read. <br/></td></tr>
-<tr class="separator:a95fa98c59a4499ac7d9c52726df35034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c8d2a1c50d2315bda040935cde0d141"><td class="memItemLeft" align="right" valign="top">unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a2c8d2a1c50d2315bda040935cde0d141">m_compressedDataBuffer</a> = nullptr</td></tr>
-<tr class="memdesc:a2c8d2a1c50d2315bda040935cde0d141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alignment for data buffer.  <a href="#a2c8d2a1c50d2315bda040935cde0d141">More...</a><br/></td></tr>
-<tr class="separator:a2c8d2a1c50d2315bda040935cde0d141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76ceac6fd6b88a9d9c73dcf5f8427057"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76ceac6fd6b88a9d9c73dcf5f8427057"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a76ceac6fd6b88a9d9c73dcf5f8427057">m_compressedDataBufferSize</a></td></tr>
-<tr class="memdesc:a76ceac6fd6b88a9d9c73dcf5f8427057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data buffer size (stored so we can lazy allocate m_dataBuffer as we need). <br/></td></tr>
-<tr class="separator:a76ceac6fd6b88a9d9c73dcf5f8427057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68b11bf5f8fa8389ff125869d9d37457"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68b11bf5f8fa8389ff125869d9d37457"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#a68b11bf5f8fa8389ff125869d9d37457">m_compressedDataBufferUseCount</a> = 0</td></tr>
-<tr class="memdesc:a68b11bf5f8fa8389ff125869d9d37457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data buffer use count. <br/></td></tr>
-<tr class="separator:a68b11bf5f8fa8389ff125869d9d37457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7cd9f41a89afacc32c1fe3a12e90699"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7cd9f41a89afacc32c1fe3a12e90699"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_std.html#ae7cd9f41a89afacc32c1fe3a12e90699">m_decompressionCachePerStream</a></td></tr>
-<tr class="memdesc:ae7cd9f41a89afacc32c1fe3a12e90699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache per stream for each compressed stream stream in bytes. <br/></td></tr>
-<tr class="separator:ae7cd9f41a89afacc32c1fe3a12e90699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:aabdf1a030d548af10491dd4ffae611a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabdf1a030d548af10491dd4ffae611a1"></a>
-static const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_CompressedDataBufferAlignment</b> = 16</td></tr>
-<tr class="separator:aabdf1a030d548af10491dd4ffae611a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_i_o_1_1_compressor"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_i_o_1_1_compressor')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html">AZ::IO::Compressor</a></td></tr>
@@ -218,37 +160,13 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxHead
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2c8d2a1c50d2315bda040935cde0d141"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned char* AZ::IO::CompressorZStd::m_compressedDataBuffer = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Alignment for data buffer. </p>
-<p>Data buffer used to read/write compressed data. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/IO/CompressorZStd.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

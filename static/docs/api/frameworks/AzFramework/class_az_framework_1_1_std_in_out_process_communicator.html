@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_std_in_out_process_communicator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::StdInOutProcessCommunicator Class Reference</div>  </div>
@@ -98,53 +96,6 @@ AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>BlockUntilOutputAv
 <tr class="memitem:a26415a4c81e7e2ec581e0055f985c804 inherit pub_methods_class_az_framework_1_1_process_communicator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26415a4c81e7e2ec581e0055f985c804"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadIntoProcessOutput</b> (<a class="el" href="class_az_framework_1_1_process_output.html">ProcessOutput</a> &amp;processOutput)</td></tr>
 <tr class="separator:a26415a4c81e7e2ec581e0055f985c804 inherit pub_methods_class_az_framework_1_1_process_communicator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a39a3294d6297a5c8343484d6aed3f88c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39a3294d6297a5c8343484d6aed3f88c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateHandles</b> ()</td></tr>
-<tr class="separator:a39a3294d6297a5c8343484d6aed3f88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c1c7f199a81cab72b056e884dd888b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4c1c7f199a81cab72b056e884dd888b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseAllHandles</b> ()</td></tr>
-<tr class="separator:aa4c1c7f199a81cab72b056e884dd888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf67a027dfb7b76ca615cbcdb42f5add"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf67a027dfb7b76ca615cbcdb42f5add"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WaitForReadyOutputs</b> (<a class="el" href="struct_az_framework_1_1_process_communicator_1_1_output_status.html">OutputStatus</a> &amp;outputStatus) const override</td></tr>
-<tr class="separator:adf67a027dfb7b76ca615cbcdb42f5add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_az_framework_1_1_process_communicator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_process_communicator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_process_communicator.html">AzFramework::ProcessCommunicator</a></td></tr>
-<tr class="memitem:a9d6f450a868453b8c256909ce33b60d5 inherit pro_methods_class_az_framework_1_1_process_communicator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d6f450a868453b8c256909ce33b60d5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY</b> (<a class="el" href="class_az_framework_1_1_process_communicator.html">ProcessCommunicator</a>)</td></tr>
-<tr class="separator:a9d6f450a868453b8c256909ce33b60d5 inherit pro_methods_class_az_framework_1_1_process_communicator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5b75ed9e94d8d20bee744c9dcea52bc inherit pro_methods_class_az_framework_1_1_process_communicator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5b75ed9e94d8d20bee744c9dcea52bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFromOutputs</b> (<a class="el" href="class_az_framework_1_1_process_output.html">ProcessOutput</a> &amp;processOutput, <a class="el" href="struct_az_framework_1_1_process_communicator_1_1_output_status.html">OutputStatus</a> &amp;status, char *buffer, AZ::u32 bufferSize)</td></tr>
-<tr class="separator:af5b75ed9e94d8d20bee744c9dcea52bc inherit pro_methods_class_az_framework_1_1_process_communicator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_az_framework_1_1_std_in_out_communication"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_std_in_out_communication')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_std_in_out_communication.html">AzFramework::StdInOutCommunication</a></td></tr>
-<tr class="memitem:a38358af6cf8d0720aefe9d81e5c89665 inherit pro_methods_class_az_framework_1_1_std_in_out_communication"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38358af6cf8d0720aefe9d81e5c89665"></a>
-AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>PeekHandle</b> (StdProcessCommunicatorHandle &amp;handle)</td></tr>
-<tr class="separator:a38358af6cf8d0720aefe9d81e5c89665 inherit pro_methods_class_az_framework_1_1_std_in_out_communication"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d69a8d2b737ec69d098ca4b2fc115fd inherit pro_methods_class_az_framework_1_1_std_in_out_communication"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d69a8d2b737ec69d098ca4b2fc115fd"></a>
-AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>ReadDataFromHandle</b> (StdProcessCommunicatorHandle &amp;handle, void *readBuffer, AZ::u32 bufferSize)</td></tr>
-<tr class="separator:a6d69a8d2b737ec69d098ca4b2fc115fd inherit pro_methods_class_az_framework_1_1_std_in_out_communication"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c822655ec242ee6fe60bb7dec66f8b4 inherit pro_methods_class_az_framework_1_1_std_in_out_communication"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c822655ec242ee6fe60bb7dec66f8b4"></a>
-AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>WriteDataToHandle</b> (StdProcessCommunicatorHandle &amp;handle, const void *writeBuffer, AZ::u32 bytesToWrite)</td></tr>
-<tr class="separator:a5c822655ec242ee6fe60bb7dec66f8b4 inherit pro_methods_class_az_framework_1_1_std_in_out_communication"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a4365ee906ebee2e35e25b661e5107a1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4365ee906ebee2e35e25b661e5107a1e"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_framework_1_1_communicator_handle_impl.html">CommunicatorHandleImpl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_stdInWrite</b></td></tr>
-<tr class="separator:a4365ee906ebee2e35e25b661e5107a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ccae512865f4bc77a4011b9bd46bbe7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ccae512865f4bc77a4011b9bd46bbe7"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_framework_1_1_communicator_handle_impl.html">CommunicatorHandleImpl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_stdOutRead</b></td></tr>
-<tr class="separator:a7ccae512865f4bc77a4011b9bd46bbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11be56cc476a8ca536deb5777adc9b6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11be56cc476a8ca536deb5777adc9b6e"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_framework_1_1_communicator_handle_impl.html">CommunicatorHandleImpl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_stdErrRead</b></td></tr>
-<tr class="separator:a11be56cc476a8ca536deb5777adc9b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f6bcf7e4c1d1d8c45bea6abe82ce5ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f6bcf7e4c1d1d8c45bea6abe82ce5ba"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_initialized</b> = false</td></tr>
-<tr class="separator:a9f6bcf7e4c1d1d8c45bea6abe82ce5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Communicator to talk to processes via std::in and std::out</p>
@@ -155,7 +106,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_initialized</b> = f
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

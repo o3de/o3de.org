@@ -55,7 +55,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_z_1_1_serialize_context_1_1_i_data_container_1_1_i_associative_data_container-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::SerializeContext::IDataContainer::IAssociativeDataContainer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -95,17 +94,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container_1_1_i_associative_data_container.html#a088f7a6aa77dc055178eaece588eefa6">GetValueByKey</a> (void *instance, const void *key)=0</td></tr>
 <tr class="memdesc:a088f7a6aa77dc055178eaece588eefa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mapped value's address by its key. If there is no mapped value (like in a set&lt;&gt;) the value returned is the key itself. <br/></td></tr>
 <tr class="separator:a088f7a6aa77dc055178eaece588eefa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:af59aa6f40932ce84afb6302602083761"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af59aa6f40932ce84afb6302602083761"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container_1_1_i_associative_data_container.html#af59aa6f40932ce84afb6302602083761">AllocateKey</a> ()=0</td></tr>
-<tr class="memdesc:af59aa6f40932ce84afb6302602083761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserve a key and get its address. Used by CreateKey. <br/></td></tr>
-<tr class="separator:af59aa6f40932ce84afb6302602083761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af591dcf7e255d3f54e6997fcffedd5ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af591dcf7e255d3f54e6997fcffedd5ba"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container_1_1_i_associative_data_container.html#af591dcf7e255d3f54e6997fcffedd5ba">FreeKey</a> (void *key)=0</td></tr>
-<tr class="memdesc:af591dcf7e255d3f54e6997fcffedd5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates a key created by ReserveKey. Used by CreateKey. <br/></td></tr>
-<tr class="separator:af591dcf7e255d3f54e6997fcffedd5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mix-in for associative container actions, implement or provide this to offer key/value actions. </p>
@@ -115,7 +103,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:07:12 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

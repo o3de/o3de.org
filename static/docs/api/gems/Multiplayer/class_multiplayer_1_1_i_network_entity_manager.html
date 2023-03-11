@@ -107,6 +107,8 @@ NetworkEntityAuthorityTracker *&#160;</td><td class="memItemRight" valign="botto
 <tr class="separator:a482823c247421502ce88d484a07e6c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3a9a7a553c9755fd53693f656ce171"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_network_entity_handle.html">NetworkEntityHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a9e3a9a7a553c9755fd53693f656ce171">AddEntityToEntityMap</a> (NetEntityId netEntityId, AZ::Entity *entity)=0</td></tr>
 <tr class="separator:a9e3a9a7a553c9755fd53693f656ce171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe777bcdb3739c197ec271db443ed03"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a7fe777bcdb3739c197ec271db443ed03">RemoveEntityFromEntityMap</a> (NetEntityId netEntityId)=0</td></tr>
+<tr class="separator:a7fe777bcdb3739c197ec271db443ed03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ffdc0d5f361ab8ded2c10ac90057ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ad8ffdc0d5f361ab8ded2c10ac90057ab">MarkForRemoval</a> (const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;entityHandle)=0</td></tr>
 <tr class="separator:ad8ffdc0d5f361ab8ded2c10ac90057ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f820b45c0c5b93f81f18c19aed9c8e3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a0f820b45c0c5b93f81f18c19aed9c8e3">IsMarkedForRemoval</a> (const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;entityHandle) const =0</td></tr>
@@ -1159,6 +1161,37 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a class="anchor" id="a7fe777bcdb3739c197ec271db443ed03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::INetworkEntityManager::RemoveEntityFromEntityMap </td>
+          <td>(</td>
+          <td class="paramtype">NetEntityId&#160;</td>
+          <td class="paramname"><em>netEntityId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes the provided netEntityId from the internal entity map. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netEntityId</td><td>the identifier to use for the added entity </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aef75625a11e8dec234ad5d579ebb90de"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1288,7 +1321,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:05 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:42 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

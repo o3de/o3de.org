@@ -55,7 +55,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_e_bus_environment-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -95,23 +94,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e7eeab326c1fabcd68701c20961619a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e7eeab326c1fabcd68701c20961619a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> (<a class="el" href="class_a_z_1_1_e_bus_environment.html">EBusEnvironment</a> *environment)</td></tr>
 <tr class="separator:a2e7eeab326c1fabcd68701c20961619a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ac646ab79eca9baae0e36bd42e132b19e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac646ab79eca9baae0e36bd42e132b19e"></a>
-<a class="el" href="class_a_z_1_1_environment_variable.html">EnvironmentVariable</a><br class="typebreak"/>
-&lt; Internal::EBusEnvironmentTLSAccessors &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_tlsAccessor</b></td></tr>
-<tr class="separator:ac646ab79eca9baae0e36bd42e132b19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad042cad38f6ea77b0bedc2eba6656669"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad042cad38f6ea77b0bedc2eba6656669"></a>
-<a class="el" href="class_a_z_1_1_e_bus_environment.html">EBusEnvironment</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus_environment.html#ad042cad38f6ea77b0bedc2eba6656669">m_stackPrevEnvironment</a></td></tr>
-<tr class="memdesc:ad042cad38f6ea77b0bedc2eba6656669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the previous environment on the TLS stack. This is valid only when the context is in use. Each BusEnvironment can only be active on a single thread at a time. <br/></td></tr>
-<tr class="separator:ad042cad38f6ea77b0bedc2eba6656669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c660202c3034021676d0de1ce4e27b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c660202c3034021676d0de1ce4e27b8"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a><br class="typebreak"/>
-&lt; Internal::ContextBase <br class="typebreak"/>
-*, bool &gt;, <a class="el" href="class_a_z_1_1_a_z_std_alloc.html">OSStdAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_e_bus_environment.html#a1c660202c3034021676d0de1ce4e27b8">m_busContexts</a></td></tr>
-<tr class="memdesc:a1c660202c3034021676d0de1ce4e27b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array with all EBus&lt;T&gt;::Context for this environment. <br/></td></tr>
-<tr class="separator:a1c660202c3034021676d0de1ce4e27b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -232,7 +214,7 @@ template&lt;class Bus &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

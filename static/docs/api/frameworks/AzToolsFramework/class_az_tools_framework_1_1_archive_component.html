@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_archive_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ArchiveComponent Class Reference</div>  </div>
@@ -80,33 +78,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () overr
 <tr class="memitem:a00acba9ff8f1e8eda281ec674c0b6ec7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00acba9ff8f1e8eda281ec674c0b6ec7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
 <tr class="separator:a00acba9ff8f1e8eda281ec674c0b6ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2e49f6e9862bd3edf19339388331072a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e49f6e9862bd3edf19339388331072a"></a>
-std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateArchive</b> (const AZStd::string &amp;archivePath, const AZStd::string &amp;dirToArchive) override</td></tr>
-<tr class="separator:a2e49f6e9862bd3edf19339388331072a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabecdf521616c27eb40c3ccb8b2645cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabecdf521616c27eb40c3ccb8b2645cf"></a>
-std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractArchive</b> (const AZStd::string &amp;archivePath, const AZStd::string &amp;destinationPath) override</td></tr>
-<tr class="separator:aabecdf521616c27eb40c3ccb8b2645cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74810bf71e5768142de59e4b80bc96d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74810bf71e5768142de59e4b80bc96d1"></a>
-std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractFile</b> (const AZStd::string &amp;archivePath, const AZStd::string &amp;fileInArchive, const AZStd::string &amp;destinationPath) override</td></tr>
-<tr class="separator:a74810bf71e5768142de59e4b80bc96d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ac85e4d303e963e4ef164f48e2f35e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5ac85e4d303e963e4ef164f48e2f35e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ListFilesInArchive</b> (const AZStd::string &amp;archivePath, AZStd::vector&lt; AZStd::string &gt; &amp;outFileEntries) override</td></tr>
-<tr class="separator:ad5ac85e4d303e963e4ef164f48e2f35e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1187759054c5701c2235c6f1fdcf3120"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1187759054c5701c2235c6f1fdcf3120"></a>
-std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AddFileToArchive</b> (const AZStd::string &amp;archivePath, const AZStd::string &amp;workingDirectory, const AZStd::string &amp;fileToAdd) override</td></tr>
-<tr class="separator:a1187759054c5701c2235c6f1fdcf3120"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5d3fc1ddd64ee44e2b8d0a4ecd8533c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5d3fc1ddd64ee44e2b8d0a4ecd8533c"></a>
-std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AddFilesToArchive</b> (const AZStd::string &amp;archivePath, const AZStd::string &amp;workingDirectory, const AZStd::string &amp;listFilePath) override</td></tr>
-<tr class="separator:ab5d3fc1ddd64ee44e2b8d0a4ecd8533c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9257e9daaa0dd3d45b0bf63f88f4bb7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9257e9daaa0dd3d45b0bf63f88f4bb7c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
-<tr class="separator:a9257e9daaa0dd3d45b0bf63f88f4bb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Archive/ArchiveComponent.h</li>
@@ -114,7 +85,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

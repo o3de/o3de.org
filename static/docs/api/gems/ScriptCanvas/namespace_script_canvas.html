@@ -337,7 +337,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_node_notifications.html">NodeNotifications</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_node_function_generic_multi_return.html">NodeFunctionGenericMultiReturn</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_node_function_generic_multi_return_impl.html">NodeFunctionGenericMultiReturnImpl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_registrar_generic.html">RegistrarGeneric</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -733,6 +733,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>LogNotificationBus</
 <tr class="memitem:a0beed780f814e5271667061746db05f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0beed780f814e5271667061746db05f6"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeNotificationsBus</b> = AZ::EBus&lt; <a class="el" href="class_script_canvas_1_1_node_notifications.html">NodeNotifications</a> &gt;</td></tr>
 <tr class="separator:a0beed780f814e5271667061746db05f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4340a562576ba335d0fd7e784a5bf7"><td class="memTemplParams" colspan="2"><a class="anchor" id="aff4340a562576ba335d0fd7e784a5bf7"></a>
+template&lt;typename t_Func , typename t_Traits , t_Func function&gt; </td></tr>
+<tr class="memitem:aff4340a562576ba335d0fd7e784a5bf7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>NodeFunctionGenericMultiReturn</b> = <a class="el" href="class_script_canvas_1_1_node_function_generic_multi_return_impl.html">NodeFunctionGenericMultiReturnImpl</a>&lt; function, t_Traits &gt;</td></tr>
+<tr class="separator:aff4340a562576ba335d0fd7e784a5bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f06bdb00d64bf599252a7218767985"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09f06bdb00d64bf599252a7218767985"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>NodelingRequestBus</b> = AZ::EBus&lt; <a class="el" href="class_script_canvas_1_1_nodeling_requests.html">NodelingRequests</a> &gt;</td></tr>
 <tr class="separator:a09f06bdb00d64bf599252a7218767985"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1076,6 +1080,17 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b>
 <tr class="memitem:afe43b760a7d26d1a6adb1070e7a4a0c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe43b760a7d26d1a6adb1070e7a4a0c0"></a>
 <a class="el" href="struct_script_canvas_1_1_serialization_result.html">SerializationResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> (const <a class="el" href="class_script_canvas_1_1_script_canvas_data.html">ScriptCanvasData</a> &amp;graphData, AZ::IO::GenericStream &amp;stream)</td></tr>
 <tr class="separator:afe43b760a7d26d1a6adb1070e7a4a0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f77433a1b72e14f8876553796e3bf5"><td class="memTemplParams" colspan="2"><a class="anchor" id="a34f77433a1b72e14f8876553796e3bf5"></a>
+template&lt;auto Function, typename t_Traits &gt; </td></tr>
+<tr class="memitem:a34f77433a1b72e14f8876553796e3bf5"><td class="memTemplItemLeft" align="right" valign="top">AZ::TypeNameString&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetO3deTypeName</b> (AZ::Adl, AZStd::type_identity&lt; <a class="el" href="class_script_canvas_1_1_node_function_generic_multi_return_impl.html">NodeFunctionGenericMultiReturnImpl</a>&lt; Function, t_Traits &gt;&gt;)</td></tr>
+<tr class="separator:a34f77433a1b72e14f8876553796e3bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae412deaf870fab7f0aea0d21c5045dca"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae412deaf870fab7f0aea0d21c5045dca"></a>
+template&lt;auto Function, typename t_Traits &gt; </td></tr>
+<tr class="memitem:ae412deaf870fab7f0aea0d21c5045dca"><td class="memTemplItemLeft" align="right" valign="top">AZ::TypeId&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetO3deTypeId</b> (AZ::Adl, AZStd::type_identity&lt; <a class="el" href="class_script_canvas_1_1_node_function_generic_multi_return_impl.html">NodeFunctionGenericMultiReturnImpl</a>&lt; Function, t_Traits &gt;&gt;)</td></tr>
+<tr class="separator:ae412deaf870fab7f0aea0d21c5045dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014313d991265badba7dc4fd1de78431"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a014313d991265badba7dc4fd1de78431"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_IMPL_INLINE</b> ((<a class="el" href="class_script_canvas_1_1_node_function_generic_multi_return_impl.html">NodeFunctionGenericMultiReturnImpl</a>, AZ_TYPE_INFO_AUTO, AZ_TYPE_INFO_CLASS), <a class="el" href="class_script_canvas_1_1_node.html">Node</a>)</td></tr>
+<tr class="separator:a014313d991265badba7dc4fd1de78431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa19553f424dda8bb2f4ce8c97bb7f60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa19553f424dda8bb2f4ce8c97bb7f60"></a>
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsExecution</b> (CombinedSlotType slotType)</td></tr>
 <tr class="separator:afa19553f424dda8bb2f4ce8c97bb7f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1265,7 +1280,7 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:07 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:45 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

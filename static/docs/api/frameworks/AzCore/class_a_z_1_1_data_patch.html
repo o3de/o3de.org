@@ -57,7 +57,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_data_patch-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DataPatch Class Reference</div>  </div>
@@ -157,18 +156,6 @@ static <a class="el" href="class_a_z_1_1_data_patch.html#ad7b129d80b658edd528260
 <tr class="memitem:aecd10a63b8f465173031fc13ba162375"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecd10a63b8f465173031fc13ba162375"></a>
 static AZ_INLINE const <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLegacyDataPatchTypeId</b> ()</td></tr>
 <tr class="separator:aecd10a63b8f465173031fc13ba162375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a2aad01833ced21b1da9cbd819a88dfd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aad01833ced21b1da9cbd819a88dfd2"></a>
-<a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetClassId</b></td></tr>
-<tr class="separator:a2aad01833ced21b1da9cbd819a88dfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf3be525c09f5f725d047d9023ecbfd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cf3be525c09f5f725d047d9023ecbfd"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetClassVersion</b></td></tr>
-<tr class="separator:a3cf3be525c09f5f725d047d9023ecbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbb85cc9bea23489b3b63d5b16a0eb34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbb85cc9bea23489b3b63d5b16a0eb34"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">PatchMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_patch</b></td></tr>
-<tr class="separator:adbb85cc9bea23489b3b63d5b16a0eb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure that contains patch data for a given class. The primary goal of this object is to help with tools (slices and undo/redo), this structure is not recommended to runtime due to efficiency. If you want dynamically configure objects, use data overlay which are more efficient and generic. </p>
@@ -525,7 +512,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetClass
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

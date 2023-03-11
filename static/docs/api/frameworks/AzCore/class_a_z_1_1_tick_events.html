@@ -57,7 +57,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_tick_events-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -150,22 +149,11 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a8a3213277ff6f61b1476e0f67ec95622 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#a8a3213277ff6f61b1476e0f67ec95622">LocklessDispatch</a> = false</td></tr>
 <tr class="separator:a8a3213277ff6f61b1476e0f67ec95622 inherit pub_static_attribs_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a5d0c8f19043cd248ab8f877941817e84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_tick_events.html#a5d0c8f19043cd248ab8f877941817e84">m_tickOrder</a></td></tr>
-<tr class="separator:a5d0c8f19043cd248ab8f877941817e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a72cf3dd47a340398185981e81d1307a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72cf3dd47a340398185981e81d1307a8"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentApplication</b></td></tr>
 <tr class="separator:a72cf3dd47a340398185981e81d1307a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_struct_a_z_1_1_e_bus_traits"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_struct_a_z_1_1_e_bus_traits')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a></td></tr>
-<tr class="memitem:ab28df8aaec278ff471e7b5bd943cdc17 inherit pro_methods_struct_a_z_1_1_e_bus_traits"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_e_bus_traits.html#ab28df8aaec278ff471e7b5bd943cdc17">~EBusTraits</a> ()=default</td></tr>
-<tr class="separator:ab28df8aaec278ff471e7b5bd943cdc17 inherit pro_methods_struct_a_z_1_1_e_bus_traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_interface.html">Interface</a> for <a class="el" href="namespace_a_z.html#a7d1883808b1ab3654f7a93e177d5bf50">AZ::TickBus</a>, which is the <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> that dispatches tick events. These tick events are executed on the main game thread. In games, <a class="el" href="namespace_a_z.html#a7d1883808b1ab3654f7a93e177d5bf50">AZ::TickBus</a> dispatches ticks even if the application is not in focus. In tools, <a class="el" href="namespace_a_z.html#a7d1883808b1ab3654f7a93e177d5bf50">AZ::TickBus</a> can become inactive when the tool loses focus. </p>
@@ -340,29 +328,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overrides the default <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a> handler policy so that multiple handlers can connect to the bus. This bus has one address because it uses the default <a class="el" href="struct_a_z_1_1_e_bus_traits.html">EBusTraits</a> address policy. At the address, handlers receive events based on the order in which the components are initialized, unless a handler explicitly sets its <a class="el" href="class_a_z_1_1_tick_events.html#a5d0c8f19043cd248ab8f877941817e84">TickEvents::m_tickOrder</a>. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5d0c8f19043cd248ab8f877941817e84"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int AZ::TickEvents::m_tickOrder</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Deprecated. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Override <a class="el" href="class_a_z_1_1_tick_events.html#a4c63ea1efaf23340024dabd1de1fd311">GetTickOrder()</a> to specify the order in which the handler receives tick events. </dd></dl>
+<p>Overrides the default <a class="el" href="struct_a_z_1_1_e_bus_traits.html">AZ::EBusTraits</a> handler policy so that multiple handlers can connect to the bus. This bus has one address because it uses the default <a class="el" href="struct_a_z_1_1_e_bus_traits.html">EBusTraits</a> address policy. At the address, handlers receive events based on the order in which the components are initialized, unless a handler explicitly sets its TickEvents::m_tickOrder. </p>
 
 </div>
 </div>
@@ -372,7 +338,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

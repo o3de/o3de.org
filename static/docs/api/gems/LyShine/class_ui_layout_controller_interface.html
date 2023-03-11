@@ -50,8 +50,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_ui_layout_controller_interface-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">UiLayoutControllerInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -85,18 +83,6 @@ Static Public Attributes</h2></td></tr>
 static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ui_layout_controller_interface.html#ade76e388bfa66e980e5102d6960778aa">HandlerPolicy</a> = AZ::EBusHandlerPolicy::MultipleAndOrdered</td></tr>
 <tr class="memdesc:ade76e388bfa66e980e5102d6960778aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Events are ordered, each handler may set its priority. <br/></td></tr>
 <tr class="separator:ade76e388bfa66e980e5102d6960778aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0f5ebc4ca1a3722c273104713b3fabe2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f5ebc4ca1a3722c273104713b3fabe2"></a>
-virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority</b> () const </td></tr>
-<tr class="separator:a0f5ebc4ca1a3722c273104713b3fabe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a7983d52f472bdd3c33c7d9bcd71292fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7983d52f472bdd3c33c7d9bcd71292fe"></a>
-static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>k_defaultPriority</b> = 100</td></tr>
-<tr class="separator:a7983d52f472bdd3c33c7d9bcd71292fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This interface can to be implemented by any component that wants to modify transform properties of elements are runtime using the Layout system. The methods in this interface will be called by the LayoutManager whenever the element is told to recompute its layout. Because an element might have multiple components that implement this interface, the handlers will be sorted by priority (lower priority number gets called earlier). </p>
@@ -106,7 +92,7 @@ static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:04 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:42 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

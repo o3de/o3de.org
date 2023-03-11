@@ -110,18 +110,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWrapperNodeActionS
 <tr class="memitem:addf5124f191b0eec157044ce3b6f66a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addf5124f191b0eec157044ce3b6f66a7"></a>
 GraphModel::ConnectionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddConnection</b> (GraphModel::SlotPtr sourceSlot, GraphModel::SlotPtr targetSlot) override</td></tr>
 <tr class="separator:addf5124f191b0eec157044ce3b6f66a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f25312ad8083197ffc61f894919fcea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f25312ad8083197ffc61f894919fcea"></a>
-GraphModel::ConnectionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddConnectionBySlotId</b> (GraphModel::NodePtr sourceNode, <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a> sourceSlotId, GraphModel::NodePtr targetNode, <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a> targetSlotId) override</td></tr>
-<tr class="separator:a7f25312ad8083197ffc61f894919fcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae414c4a116b7234234373282fb81f3e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae414c4a116b7234234373282fb81f3e9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AreSlotsConnected</b> (GraphModel::NodePtr sourceNode, <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a> sourceSlotId, GraphModel::NodePtr targetNode, <a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a> targetSlotId) const override</td></tr>
-<tr class="separator:ae414c4a116b7234234373282fb81f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a06cb04962ffb267e7baf5df1d496fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a06cb04962ffb267e7baf5df1d496fe"></a>
+GraphModel::ConnectionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddConnectionBySlotId</b> (GraphModel::NodePtr sourceNode, const <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a> &amp;sourceSlotId, GraphModel::NodePtr targetNode, const <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a> &amp;targetSlotId) override</td></tr>
+<tr class="separator:a3a06cb04962ffb267e7baf5df1d496fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57e36af274a6cdca671eaedefb54289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af57e36af274a6cdca671eaedefb54289"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AreSlotsConnected</b> (GraphModel::NodePtr sourceNode, const <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a> &amp;sourceSlotId, GraphModel::NodePtr targetNode, const <a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a> &amp;targetSlotId) const override</td></tr>
+<tr class="separator:af57e36af274a6cdca671eaedefb54289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c6ac8efc4c9368a2987fd8399d279b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c6ac8efc4c9368a2987fd8399d279b1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveConnection</b> (GraphModel::ConnectionPtr connection) override</td></tr>
 <tr class="separator:a6c6ac8efc4c9368a2987fd8399d279b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ea7923177b8c96cda0083a5c6e56886"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ea7923177b8c96cda0083a5c6e56886"></a>
-<a class="el" href="struct_graph_model_1_1_slot_id_data.html">GraphModel::SlotId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ExtendSlot</b> (GraphModel::NodePtr node, GraphModel::SlotName slotName) override</td></tr>
-<tr class="separator:a0ea7923177b8c96cda0083a5c6e56886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a181a0ae864bd201baf9d415b31b6bd30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a181a0ae864bd201baf9d415b31b6bd30"></a>
+<a class="el" href="struct_graph_model_1_1_slot_id.html">GraphModel::SlotId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ExtendSlot</b> (GraphModel::NodePtr node, const GraphModel::SlotName &amp;slotName) override</td></tr>
+<tr class="separator:a181a0ae864bd201baf9d415b31b6bd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a236d13c12c967e9fb8121b9db8092e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a236d13c12c967e9fb8121b9db8092e"></a>
 GraphModel::NodePtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeById</b> (const GraphCanvas::NodeId &amp;nodeId) override</td></tr>
 <tr class="separator:a4a236d13c12c967e9fb8121b9db8092e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,7 +219,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveThumbnailFromNo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

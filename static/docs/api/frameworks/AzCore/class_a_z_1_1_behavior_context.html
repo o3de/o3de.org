@@ -70,7 +70,6 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal structure to maintain class information while we are describing a class.  <a href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal structure to maintain <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> information while describing it.  <a href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html#details">More...</a><br/></td></tr>
@@ -85,9 +84,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af1325cbccb2f7d14d5f1275ca2992324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1325cbccb2f7d14d5f1275ca2992324"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>)</td></tr>
 <tr class="separator:af1325cbccb2f7d14d5f1275ca2992324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac778970f374904b5c584ca23b4dfe2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac778970f374904b5c584ca23b4dfe2d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a>,&quot;{ED75FE05-9196-4F69-A3E5-1BDF5FF034CF}&quot;, ReflectContext)</td></tr>
-<tr class="separator:aac778970f374904b5c584ca23b4dfe2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb1a64e0b8b5414f0d2557419900130d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb1a64e0b8b5414f0d2557419900130d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL</b> (<a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a>)</td></tr>
+<tr class="separator:aeb1a64e0b8b5414f0d2557419900130d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6220e4c41ba630f7eb58192adfbae8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f6220e4c41ba630f7eb58192adfbae8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
+<tr class="separator:a8f6220e4c41ba630f7eb58192adfbae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9e4bc33445d25afbe2fb371dd9f1bdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9e4bc33445d25afbe2fb371dd9f1bdf"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTypeReflected</b> (<a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a> typeId) const override</td></tr>
 <tr class="separator:aa9e4bc33445d25afbe2fb371dd9f1bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,14 +131,14 @@ template&lt;class Getter &gt; </td></tr>
 template&lt;class Getter &gt; </td></tr>
 <tr class="memitem:a74affe9446ed76c40778bf02b94dc8bb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_global_property_builder.html">GlobalPropertyBuilder</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ConstantProperty</b> (const char *name, Getter getter)</td></tr>
 <tr class="separator:a74affe9446ed76c40778bf02b94dc8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e37b99498179193f4088125c70d381"><td class="memTemplParams" colspan="2"><a class="anchor" id="a21e37b99498179193f4088125c70d381"></a>
+<tr class="memitem:a976178216763e4124af2b928554cec31"><td class="memTemplParams" colspan="2"><a class="anchor" id="a976178216763e4124af2b928554cec31"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:a21e37b99498179193f4088125c70d381"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Class</b> (const char *name=nullptr)</td></tr>
-<tr class="separator:a21e37b99498179193f4088125c70d381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecb38d420758cad2c5bd4f92806740b8"><td class="memTemplParams" colspan="2"><a class="anchor" id="aecb38d420758cad2c5bd4f92806740b8"></a>
+<tr class="memitem:a976178216763e4124af2b928554cec31"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Class</b> (const char *name=nullptr)</td></tr>
+<tr class="separator:a976178216763e4124af2b928554cec31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cca4a1bd5bd9e8fa6e9545eda1c5a38"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1cca4a1bd5bd9e8fa6e9545eda1c5a38"></a>
 template&lt;class T &gt; </td></tr>
-<tr class="memitem:aecb38d420758cad2c5bd4f92806740b8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EBus</b> (const char *name, const char *deprecatedName=nullptr, const char *toolTip=nullptr)</td></tr>
-<tr class="separator:aecb38d420758cad2c5bd4f92806740b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cca4a1bd5bd9e8fa6e9545eda1c5a38"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EBus</b> (const char *name, const char *deprecatedName=nullptr, const char *toolTip=nullptr)</td></tr>
+<tr class="separator:a1cca4a1bd5bd9e8fa6e9545eda1c5a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1038c412f026cac9368cee4a4368ffdb"><td class="memTemplParams" colspan="2">template&lt;class Value &gt; </td></tr>
 <tr class="memitem:a1038c412f026cac9368cee4a4368ffdb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1intrusive__ptr.html">BehaviorDefaultValuePtr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_context.html#a1038c412f026cac9368cee4a4368ffdb">MakeDefaultValue</a> (Value &amp;&amp;defaultValue)</td></tr>
 <tr class="separator:a1038c412f026cac9368cee4a4368ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,10 +166,21 @@ const <a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *
 <tr class="memitem:aac628813c489f2a4f5c1864e00b4df90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac628813c489f2a4f5c1864e00b4df90"></a>
 const <a class="el" href="class_a_z_1_1_behavior_e_bus.html">BehaviorEBus</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindEBusByReflectedName</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> reflectedName) const </td></tr>
 <tr class="separator:aac628813c489f2a4f5c1864e00b4df90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c61b08570d293c54c6c6be9be67e3b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a63c61b08570d293c54c6c6be9be67e3b"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a63c61b08570d293c54c6c6be9be67e3b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Class</b> (const char *name) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a>&lt; T &gt;</td></tr>
+<tr class="separator:a63c61b08570d293c54c6c6be9be67e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0704c00de4d31a50a6ac5d5edb545e22"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0704c00de4d31a50a6ac5d5edb545e22"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a0704c00de4d31a50a6ac5d5edb545e22"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EBus</b> (const char *name, const char *deprecatedName, const char *toolTip) -&gt; <a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a>&lt; T &gt;</td></tr>
+<tr class="separator:a0704c00de4d31a50a6ac5d5edb545e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_reflect_context"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_reflect_context')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a></td></tr>
-<tr class="memitem:a64ad868a67598b2e8e2f0a8ffd1df205 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64ad868a67598b2e8e2f0a8ffd1df205"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a>,&quot;{B18D903B-7FAD-4A53-918A-3967B3198224}&quot;)</td></tr>
-<tr class="separator:a64ad868a67598b2e8e2f0a8ffd1df205 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57dbf7c55dc21d46055cb09a18c8ad35 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57dbf7c55dc21d46055cb09a18c8ad35"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL</b> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a>)</td></tr>
+<tr class="separator:a57dbf7c55dc21d46055cb09a18c8ad35 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad753048d6d9a153c080699bfd399a775 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad753048d6d9a153c080699bfd399a775"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
+<tr class="separator:ad753048d6d9a153c080699bfd399a775 inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa96b445f9dac0af902d85e015a99af inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fa96b445f9dac0af902d85e015a99af"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableRemoveReflection</b> ()</td></tr>
 <tr class="separator:a5fa96b445f9dac0af902d85e015a99af inherit pub_methods_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,33 +245,6 @@ Public Attributes</h2></td></tr>
 &lt; const <a class="el" href="class_a_z_1_1_behavior_method.html">BehaviorMethod</a> <br class="typebreak"/>
 *, const <a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_checksByOperations</b></td></tr>
 <tr class="separator:a7153a8275549b1314a607f73140db9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_reflect_context"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_reflect_context')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a></td></tr>
-<tr class="memitem:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0491c1dfd7b522a48850c12699345171"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_reflect_context.html#a0491c1dfd7b522a48850c12699345171">m_isRemoveReflection</a></td></tr>
-<tr class="memdesc:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if all calls in the context should be considered to remove not to add reflection. <br/></td></tr>
-<tr class="separator:a0491c1dfd7b522a48850c12699345171 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16791f48dd6ea3320b477b6c3f6bd663"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>, <br class="typebreak"/>
-<a class="el" href="class_a_z_std_1_1weak__ptr.html">AZStd::weak_ptr</a><br class="typebreak"/>
-&lt; Internal::ReflectionFunctionRef &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_reflect_context.html#a16791f48dd6ea3320b477b6c3f6bd663">m_onDemandReflection</a></td></tr>
-<tr class="memdesc:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the on demand reflect functions so we can avoid double-reflecting something. <br/></td></tr>
-<tr class="separator:a16791f48dd6ea3320b477b6c3f6bd663 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6cf243a447b9ceaa95ecb70a36744f3"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a><br class="typebreak"/>
-&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>, <br class="typebreak"/>
-<a class="el" href="namespace_a_z.html#a6332cfe277dbb34b8392a0f0015a0947">StaticReflectionFunctionPtr</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_reflect_context.html#ad6cf243a447b9ceaa95ecb70a36744f3">m_toProcessOnDemandReflection</a></td></tr>
-<tr class="memdesc:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_a_z_1_1_on_demand_reflection.html">OnDemandReflection</a> functions that need to be called. <br/></td></tr>
-<tr class="separator:ad6cf243a447b9ceaa95ecb70a36744f3 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b720c1a62aaf44b2f05f5c733abf638"></a>
-<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_reflect_context.html#a3b720c1a62aaf44b2f05f5c733abf638">m_currentlyProcessingTypeIds</a></td></tr>
-<tr class="memdesc:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type ids of the currently reflecting type. Used to prevent circular references. Is a set to prevent recursive circular references. <br/></td></tr>
-<tr class="separator:a3b720c1a62aaf44b2f05f5c733abf638 inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c09841f41001a3cb7f0451e19b0629d inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c09841f41001a3cb7f0451e19b0629d"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>OnDemandReflectionOwner</b></td></tr>
-<tr class="separator:a2c09841f41001a3cb7f0451e19b0629d inherit pro_attribs_class_a_z_1_1_reflect_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a> is used to reflect classes, methods and EBuses for runtime interaction. A typical consumer of this context and different scripting systems (i.e. Lua, Visual Script, etc.). Even though (as designed) there are overlaps between some context they have very different purpose and set of rules. For example <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a>, doesn't reflect any methods, it just reflects data fields that will be stored for initial object setup, it handles version conversion and so thing, this related to storing the object to a persistent storage. Behavior context, doesn't need to deal with versions as no data is stored, just methods for manipulating the object state. </p>
@@ -275,7 +261,7 @@ friend&#160;</td><td class="memItemRight" valign="bottom"><b>OnDemandReflectionO
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>Use "Method(const char*, Function, const BehaviorParameterOverridesArray&lt;Function&gt;&amp;, const char*)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>Use "Method(const char*, Function, const BehaviorParameterOverridesArray&lt;Function&gt;&amp;, const char*)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits </dd></dl>
 
 </div>
 </div>
@@ -355,7 +341,7 @@ template&lt;class Function &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>Use "Method(const char*, Function, const char*, const BehaviorParameterOverridesArray&lt;Function&gt;&amp;, const char*)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>Use "Method(const char*, Function, const char*, const BehaviorParameterOverridesArray&lt;Function&gt;&amp;, const char*)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits </dd></dl>
 
 </div>
 </div>
@@ -404,7 +390,7 @@ template&lt;class Function &gt; </div>
 </div><div class="memdoc">
 
 <p>&lt; </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>Use "Method(const char*, Function, const char*, const BehaviorParameterOverridesArray&lt;Function&gt;&amp;, const char*)" instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>Use "Method(const char*, Function, const char*, const BehaviorParameterOverridesArray&lt;Function&gt;&amp;, const char*)" instead </dd></dl>
 
 </div>
 </div>
@@ -447,7 +433,7 @@ template&lt;class Function &gt; </div>
 </div><div class="memdoc">
 
 <p>&lt; </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Use "Method(const char*, Function, const BehaviorParameterOverridesArray&lt;Function&gt;&amp;, const char*)" instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>Use "Method(const char*, Function, const BehaviorParameterOverridesArray&lt;Function&gt;&amp;, const char*)" instead </dd></dl>
 
 </div>
 </div>
@@ -465,13 +451,15 @@ template&lt;class Function &gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/RTTI/BehaviorContext.h</li>
+<li>Code/Framework/AzCore/AzCore/RTTI/BehaviorClassBuilder.inl</li>
+<li>Code/Framework/AzCore/AzCore/RTTI/BehaviorEBusBuilder.inl</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

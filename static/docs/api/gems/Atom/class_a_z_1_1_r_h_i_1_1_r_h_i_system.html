@@ -89,19 +89,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterXRSystem</b> 
 <tr class="memitem:a0c4491ed2936e07d3c83f51df8b87eaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c4491ed2936e07d3c83f51df8b87eaf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterXRSystem</b> ()</td></tr>
 <tr class="separator:a0c4491ed2936e07d3c83f51df8b87eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4050390fbaa8f567da75d9a757ea47aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4050390fbaa8f567da75d9a757ea47aa"></a>
-<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">RHI::Device</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevice</b> () override</td></tr>
-<tr class="separator:a4050390fbaa8f567da75d9a757ea47aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83981913db1693698950fc1ce2b2a3a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83981913db1693698950fc1ce2b2a3a0"></a>
+<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">RHI::Device</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevice</b> (int deviceIndex=MultiDevice::DefaultDeviceIndex) override</td></tr>
+<tr class="separator:a83981913db1693698950fc1ce2b2a3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4fc7cd4dba6c0893a1d2b8ba85daac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e4fc7cd4dba6c0893a1d2b8ba85daac"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceCount</b> () override</td></tr>
+<tr class="separator:a7e4fc7cd4dba6c0893a1d2b8ba85daac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf40bc6d50993816ec6eefe8d42e1a6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf40bc6d50993816ec6eefe8d42e1a6a"></a>
 <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html">RHI::DrawListTagRegistry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawListTagRegistry</b> () override</td></tr>
 <tr class="separator:aaf40bc6d50993816ec6eefe8d42e1a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6a46d79db20a75990146192984023c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec6a46d79db20a75990146192984023c"></a>
 <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html">RHI::PipelineStateCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipelineStateCache</b> () override</td></tr>
 <tr class="separator:aec6a46d79db20a75990146192984023c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33da0d07463b02e1f57cb24b573f657"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae33da0d07463b02e1f57cb24b573f657"></a>
-const <br class="typebreak"/>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_scheduler_compile_request.html">RHI::FrameSchedulerCompileRequest</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameSchedulerCompileRequest</b> () const override</td></tr>
-<tr class="separator:ae33da0d07463b02e1f57cb24b573f657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1326e83b3a1d196c8c2c906c426b7e0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1326e83b3a1d196c8c2c906c426b7e0a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ModifyFrameSchedulerStatisticsFlags</b> (RHI::FrameSchedulerStatisticsFlags statisticsFlags, bool enableFlags) override</td></tr>
 <tr class="separator:a1326e83b3a1d196c8c2c906c426b7e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,16 +118,13 @@ const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_statistics.html">RHI::
 const <br class="typebreak"/>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_pool_descriptor.html">RHI::TransientAttachmentPoolDescriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransientAttachmentPoolDescriptor</b> () const override</td></tr>
 <tr class="separator:a6c7a5a0d398a8b85339e2335952d0355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbe0dd191609e0e596c5747124fb3817"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbe0dd191609e0e596c5747124fb3817"></a>
+<tr class="memitem:af3a716043333293bca6bd9f632742d33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3a716043333293bca6bd9f632742d33"></a>
 ConstPtr<br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_platform_limits_descriptor.html">PlatformLimitsDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlatformLimitsDescriptor</b> () const override</td></tr>
-<tr class="separator:adbe0dd191609e0e596c5747124fb3817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_platform_limits_descriptor.html">PlatformLimitsDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlatformLimitsDescriptor</b> (int deviceIndex=MultiDevice::DefaultDeviceIndex) const override</td></tr>
+<tr class="separator:af3a716043333293bca6bd9f632742d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8502e102acc34bff8e347b9df3f9799"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8502e102acc34bff8e347b9df3f9799"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueRayTracingShaderTableForBuild</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_shader_table.html">RayTracingShaderTable</a> *rayTracingShaderTable) override</td></tr>
 <tr class="separator:ae8502e102acc34bff8e347b9df3f9799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae136572d91f0766b087a47cc0aaa28e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae136572d91f0766b087a47cc0aaa28e2"></a>
-const <a class="el" href="class_a_z_1_1_r_h_i_1_1_physical_device_descriptor.html">PhysicalDeviceDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalDeviceDescriptor</b> () override</td></tr>
-<tr class="separator:ae136572d91f0766b087a47cc0aaa28e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4175baa18aeef27d3cf872c562985116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4175baa18aeef27d3cf872c562985116"></a>
 <a class="el" href="class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html">XRRenderingInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetXRSystem</b> () const override</td></tr>
 <tr class="separator:a4175baa18aeef27d3cf872c562985116"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +166,7 @@ static <a class="el" href="class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:24:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

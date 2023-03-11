@@ -55,7 +55,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_debug_1_1_allocation_records-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Debug::AllocationRecords Class Reference</div>  </div>
@@ -169,49 +168,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResizeAllocation</b> 
 <tr class="memitem:a6704b19a68636f294480d38598fa289c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6704b19a68636f294480d38598fa289c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterReallocation</b> (void *address, void *newAddress, size_t byteSize, size_t alignment, unsigned int stackSuppressCount)</td></tr>
 <tr class="separator:a6704b19a68636f294480d38598fa289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ae741fe49c76fa1c0b26bf9bce2acb3b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae741fe49c76fa1c0b26bf9bce2acb3b2"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">Debug::AllocationRecordsType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_records</b></td></tr>
-<tr class="separator:ae741fe49c76fa1c0b26bf9bce2acb3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25fc65287a14abd7fe12d1e03e7d9677"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25fc65287a14abd7fe12d1e03e7d9677"></a>
-<a class="el" href="class_a_z_std_1_1spin__mutex.html">AZStd::spin_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_recordsMutex</b></td></tr>
-<tr class="separator:a25fc65287a14abd7fe12d1e03e7d9677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec15fc9518333d14269104f10882a48e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec15fc9518333d14269104f10882a48e"></a>
-<a class="el" href="class_a_z_1_1_debug_1_1_allocation_records.html#ab8ddd9944b54d2e540ea50ccc964ead2">Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mode</b></td></tr>
-<tr class="separator:aec15fc9518333d14269104f10882a48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a310235dcd23dceb4b3b8bc1a00e8075d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a310235dcd23dceb4b3b8bc1a00e8075d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isAutoIntegrityCheck</b></td></tr>
-<tr class="separator:a310235dcd23dceb4b3b8bc1a00e8075d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e2b3ff6bde6a0a8318f9ade612a907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91e2b3ff6bde6a0a8318f9ade612a907"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_debug_1_1_allocation_records.html#a91e2b3ff6bde6a0a8318f9ade612a907">m_isMarkUnallocatedMemory</a></td></tr>
-<tr class="memdesc:a91e2b3ff6bde6a0a8318f9ade612a907"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we want to set value 0xcd in unallocated memory. <br/></td></tr>
-<tr class="separator:a91e2b3ff6bde6a0a8318f9ade612a907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a85f2c12c20da48d4267c1421d0ca65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a85f2c12c20da48d4267c1421d0ca65"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_saveNames</b></td></tr>
-<tr class="separator:a7a85f2c12c20da48d4267c1421d0ca65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1075e788a0f6e005e65c43535ea21854"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1075e788a0f6e005e65c43535ea21854"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_decodeImmediately</b></td></tr>
-<tr class="separator:a1075e788a0f6e005e65c43535ea21854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5731ce78ce6bcca8a1ed92076dce8e80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5731ce78ce6bcca8a1ed92076dce8e80"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>m_numStackLevels</b></td></tr>
-<tr class="separator:a5731ce78ce6bcca8a1ed92076dce8e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc3bf5428c48e28b45a3dab050884eed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc3bf5428c48e28b45a3dab050884eed"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_memoryGuardSize</b></td></tr>
-<tr class="separator:abc3bf5428c48e28b45a3dab050884eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2301bfa792fd440c85bcdbd70d78c772"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2301bfa792fd440c85bcdbd70d78c772"></a>
-AZStd::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedAllocs</b></td></tr>
-<tr class="separator:a2301bfa792fd440c85bcdbd70d78c772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e486229881a98b15a2b3437abac7b59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e486229881a98b15a2b3437abac7b59"></a>
-AZStd::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedBytes</b></td></tr>
-<tr class="separator:a0e486229881a98b15a2b3437abac7b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a215c538cfad96883b747902fe6c52766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a215c538cfad96883b747902fe6c52766"></a>
-AZStd::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestedBytesPeak</b></td></tr>
-<tr class="separator:a215c538cfad96883b747902fe6c52766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b7bfa6d1ea89e81e773cb4b1cf1a69d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b7bfa6d1ea89e81e773cb4b1cf1a69d"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocatorName</b></td></tr>
-<tr class="separator:a1b7bfa6d1ea89e81e773cb4b1cf1a69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Container for debug allocation records. This records can be thread safe or not depending on your needs. When you set the thread safe flag all functions will be thread safe unless explicitly noted.</p>
@@ -292,7 +248,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocatorNa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

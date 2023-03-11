@@ -54,7 +54,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_framework_1_1_spawnable_monitor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::SpawnableMonitor Class Reference</div>  </div>
@@ -97,23 +96,6 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a22f6ce9e3e5d1ce93ef8d12bb608711e">IsLoaded</a> () const </td></tr>
 <tr class="memdesc:a22f6ce9e3e5d1ce93ef8d12bb608711e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the monitor tracked the spawnable able being ready for use, otherwise false. <br/></td></tr>
 <tr class="separator:a22f6ce9e3e5d1ce93ef8d12bb608711e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac18e73f1a0e208756aa124462c29b974"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac18e73f1a0e208756aa124462c29b974"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_monitor.html#ac18e73f1a0e208756aa124462c29b974">OnSpawnableLoaded</a> ()</td></tr>
-<tr class="memdesc:ac18e73f1a0e208756aa124462c29b974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a spawnable has been loaded and is ready for used. <br/></td></tr>
-<tr class="separator:ac18e73f1a0e208756aa124462c29b974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d49f4bdc98eba744f6a806144069f88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d49f4bdc98eba744f6a806144069f88"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a7d49f4bdc98eba744f6a806144069f88">OnSpawnableUnloaded</a> ()</td></tr>
-<tr class="memdesc:a7d49f4bdc98eba744f6a806144069f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an spawnable has been unloaded and should no longer be used. <br/></td></tr>
-<tr class="separator:a7d49f4bdc98eba744f6a806144069f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5050621aca2e52f33abcaa2d45f801ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a5050621aca2e52f33abcaa2d45f801ab">OnSpawnableReloaded</a> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&amp;replacementAsset)</td></tr>
-<tr class="separator:a5050621aca2e52f33abcaa2d45f801ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a459a5536c7e70018da27a91f79bec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69a459a5536c7e70018da27a91f79bec"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a69a459a5536c7e70018da27a91f79bec">OnSpawnableIssue</a> (IssueType issueType, AZStd::string_view message)</td></tr>
-<tr class="memdesc:a69a459a5536c7e70018da27a91f79bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an error occurred while the Asset Manager did an operation on the spawnable. <br/></td></tr>
-<tr class="separator:a69a459a5536c7e70018da27a91f79bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A utility class to make it easier to work with individual spawnables. This class will monitor a spawnable for changes and provides a simplified interface to respond to. </p>
@@ -169,38 +151,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="a5050621aca2e52f33abcaa2d45f801ab"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzFramework::SpawnableMonitor::OnSpawnableReloaded </td>
-          <td>(</td>
-          <td class="paramtype">AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>replacementAsset</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Called when a spawnable has been reloaded. Note that if the replacement isn't used to replace the original spawnable then the replacement asset will eventually run out of references and send an OnSpawnableUnloaded event. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Spawnable/SpawnableMonitor.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

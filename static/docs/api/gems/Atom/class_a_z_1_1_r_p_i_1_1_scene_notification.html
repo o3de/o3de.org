@@ -91,7 +91,7 @@ template&lt;typename Bus &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aebaeaa5cc461ef71fbfaf7110525e441"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#aebaeaa5cc461ef71fbfaf7110525e441">OnRenderPipelineAdded</a> (RenderPipelinePtr pipeline)</td></tr>
+<tr class="memitem:aebaeaa5cc461ef71fbfaf7110525e441"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#aebaeaa5cc461ef71fbfaf7110525e441">OnRenderPipelineAdded</a> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a> pipeline)</td></tr>
 <tr class="separator:aebaeaa5cc461ef71fbfaf7110525e441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575a9b49a5705a05f43b243cb399db1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a575a9b49a5705a05f43b243cb399db1a">OnRenderPipelinePassesChanged</a> ([[maybe_unused]] <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *renderPipeline)</td></tr>
 <tr class="separator:a575a9b49a5705a05f43b243cb399db1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4688fdd5439bb1715da9c442baf586a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b2e1e469a780f24566acc7e8d91b40"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#ad4b2e1e469a780f24566acc7e8d91b40">OnRenderPipelineChanged</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *, RenderPipelineChangeType)</td></tr>
 <tr class="separator:ad4b2e1e469a780f24566acc7e8d91b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae81cc67faf6b13cbbb74cad92e0df9da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#ae81cc67faf6b13cbbb74cad92e0df9da">OnRenderPipelinePersistentViewChanged</a> ([[maybe_unused]] <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *renderPipeline, PipelineViewTag viewTag, ViewPtr newView, ViewPtr previousView)</td></tr>
+<tr class="memitem:ae81cc67faf6b13cbbb74cad92e0df9da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#ae81cc67faf6b13cbbb74cad92e0df9da">OnRenderPipelinePersistentViewChanged</a> ([[maybe_unused]] <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *renderPipeline, PipelineViewTag viewTag, <a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> newView, <a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> previousView)</td></tr>
 <tr class="separator:ae81cc67faf6b13cbbb74cad92e0df9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a512a344bec6e924d01cdd284c83ddeab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a512a344bec6e924d01cdd284c83ddeab">OnBeginPrepareRender</a> ()</td></tr>
 <tr class="separator:a512a344bec6e924d01cdd284c83ddeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +154,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void AZ::RPI::SceneNotification::OnRenderPipelineAdded </td>
           <td>(</td>
-          <td class="paramtype">RenderPipelinePtr&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td>
           <td class="paramname"><em>pipeline</em></td><td>)</td>
           <td></td>
         </tr>
@@ -271,13 +271,13 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ViewPtr&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a>&#160;</td>
           <td class="paramname"><em>newView</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ViewPtr&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a>&#160;</td>
           <td class="paramname"><em>previousView</em>&#160;</td>
         </tr>
         <tr>
@@ -343,7 +343,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

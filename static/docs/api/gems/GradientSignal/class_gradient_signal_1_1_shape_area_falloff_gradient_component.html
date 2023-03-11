@@ -51,7 +51,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_gradient_signal_1_1_shape_area_falloff_gradient_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,48 +104,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSer
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a42b9789c6ebb0c2fe88efb5d9c85793d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac7bbe435af9dff8277279d5a158f6e05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7bbe435af9dff8277279d5a158f6e05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityActivated</b> (const AZ::EntityId &amp;entityId) override</td></tr>
-<tr class="separator:ac7bbe435af9dff8277279d5a158f6e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ecd31f44602f24940098d598f4ffaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16ecd31f44602f24940098d598f4ffaf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDeactivated</b> (const AZ::EntityId &amp;entityId) override</td></tr>
-<tr class="separator:a16ecd31f44602f24940098d598f4ffaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30d8f786c00b7c5f6ff362cd8d2e3d50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30d8f786c00b7c5f6ff362cd8d2e3d50"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShapeChanged</b> (LmbrCentral::ShapeComponentNotifications::ShapeChangeReasons reasons) override</td></tr>
-<tr class="separator:a30d8f786c00b7c5f6ff362cd8d2e3d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca862459ea2c196bba47b84d7273304c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca862459ea2c196bba47b84d7273304c"></a>
-AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetShapeEntityId</b> () const override</td></tr>
-<tr class="separator:aca862459ea2c196bba47b84d7273304c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaefa28c184b6d4e7da8ec632859e572"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaefa28c184b6d4e7da8ec632859e572"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShapeEntityId</b> (AZ::EntityId entityId) override</td></tr>
-<tr class="separator:aeaefa28c184b6d4e7da8ec632859e572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05f90d1a55207134c2200573d978fd92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05f90d1a55207134c2200573d978fd92"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetFalloffWidth</b> () const override</td></tr>
-<tr class="separator:a05f90d1a55207134c2200573d978fd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dfd1fa6b7d5a75357ba1915bc18980a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dfd1fa6b7d5a75357ba1915bc18980a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFalloffWidth</b> (float falloffWidth) override</td></tr>
-<tr class="separator:a6dfd1fa6b7d5a75357ba1915bc18980a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe537637403d6e790869a17543998401"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe537637403d6e790869a17543998401"></a>
-FalloffType&#160;</td><td class="memItemRight" valign="bottom"><b>GetFalloffType</b> () const override</td></tr>
-<tr class="separator:abe537637403d6e790869a17543998401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6e4dcebf2ff60a3008ab4ba377497ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6e4dcebf2ff60a3008ab4ba377497ae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFalloffType</b> (FalloffType type) override</td></tr>
-<tr class="separator:ae6e4dcebf2ff60a3008ab4ba377497ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ee35534a2ba71af596626ac07dab0d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ee35534a2ba71af596626ac07dab0d0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Get3dFalloff</b> () const override</td></tr>
-<tr class="separator:a9ee35534a2ba71af596626ac07dab0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6b310a52810ae8b3bba7ecb1e3eb5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae6b310a52810ae8b3bba7ecb1e3eb5d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Set3dFalloff</b> (bool is3dFalloff) override</td></tr>
-<tr class="separator:aae6b310a52810ae8b3bba7ecb1e3eb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:added8b66f7a24b8ef7fbd2e04e0e510c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="added8b66f7a24b8ef7fbd2e04e0e510c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CacheShapeBounds</b> ()</td></tr>
-<tr class="separator:added8b66f7a24b8ef7fbd2e04e0e510c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0a0821d934baea2837bc2d3d914094e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0a0821d934baea2837bc2d3d914094e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyRegionChanged</b> (const AZ::Aabb &amp;region)</td></tr>
-<tr class="separator:af0a0821d934baea2837bc2d3d914094e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a8651d636606ce59e62700bd4eadda534"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8651d636606ce59e62700bd4eadda534"></a>
@@ -162,7 +119,7 @@ template&lt;typename , typename &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:40 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

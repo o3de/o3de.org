@@ -69,7 +69,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (GenericClassInfoVector, GetGenericClassInfoVectorTypeId())</td></tr>
 <tr class="separator:ad74c14e4a33fc0943a63584bacaf5f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f9302b9865d82c9946518ef46463927"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f9302b9865d82c9946518ef46463927"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html">SerializeContext::ClassData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_t_00_01_a_01_4_01_4_1_1_generic_class_info_vector.html#a0f9302b9865d82c9946518ef46463927">GetClassData</a> () override</td></tr>
+<a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_t_00_01_a_01_4_01_4_1_1_generic_class_info_vector.html#a0f9302b9865d82c9946518ef46463927">GetClassData</a> () override</td></tr>
 <tr class="memdesc:a0f9302b9865d82c9946518ef46463927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the generic class "class Data" independent from the underlaying templates. <br/></td></tr>
 <tr class="separator:a0f9302b9865d82c9946518ef46463927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e40798e78d1078b459f9b55ed65c622"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e40798e78d1078b459f9b55ed65c622"></a>
@@ -80,7 +80,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumTemplatedArgu
 <tr class="separator:abd84d08a606971dd2cc85b78ba77df80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab088c9413896ccb311c36faf358a6331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab088c9413896ccb311c36faf358a6331"></a>
 <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_t_00_01_a_01_4_01_4_1_1_generic_class_info_vector.html#ab088c9413896ccb311c36faf358a6331">GetSpecializedTypeId</a> () const override</td></tr>
-<tr class="memdesc:ab088c9413896ccb311c36faf358a6331"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default returns AzTypeInfo&lt;ValueType&gt;::Uuid. <br/></td></tr>
+<tr class="memdesc:ab088c9413896ccb311c36faf358a6331"><td class="mdescLeft">&#160;</td><td class="mdescRight">By default returns <a class="el" href="struct_a_z_1_1_az_type_info.html#a76b67a62249e61b391821bb97108e86c">AzTypeInfo&lt;ValueType&gt;::Uuid</a>. <br/></td></tr>
 <tr class="separator:ab088c9413896ccb311c36faf358a6331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad32d552314153c7622b8650493dac2d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad32d552314153c7622b8650493dac2d4"></a>
 <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_t_00_01_a_01_4_01_4_1_1_generic_class_info_vector.html#ad32d552314153c7622b8650493dac2d4">GetGenericTypeId</a> () const override</td></tr>
@@ -105,7 +105,7 @@ Internal::AZStdRandomAccessContainer<br class="typebreak"/>
 &lt; <a class="el" href="class_a_z_std_1_1vector.html">ContainerType</a>, false &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_containerStorage</b></td></tr>
 <tr class="separator:a22c069ac5ef88b1f9189ac14df9d1a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11db019b5e18c0cf82f310d7deec5346"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11db019b5e18c0cf82f310d7deec5346"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html">SerializeContext::ClassData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_classData</b></td></tr>
+<a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_classData</b></td></tr>
 <tr class="separator:a11db019b5e18c0cf82f310d7deec5346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -143,7 +143,7 @@ template&lt;class T , class A &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

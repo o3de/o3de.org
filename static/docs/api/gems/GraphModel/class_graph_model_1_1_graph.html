@@ -52,7 +52,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_graph_model_1_1_graph-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GraphModel::Graph Class Reference</div>  </div>
@@ -174,21 +173,18 @@ AZStd::shared_ptr&lt; <a class="el" href="class_graph_model_1_1_slot.html">Slot<
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph.html#aa289ab25a3c4f48bc85955dee7470d12">ClearCachedData</a> ()</td></tr>
 <tr class="memdesc:aa289ab25a3c4f48bc85955dee7470d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset any data that was cached for this graph. <br/></td></tr>
 <tr class="separator:aa289ab25a3c4f48bc85955dee7470d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a60e2c5e7c1c9ec2f9fd18caceaa0559c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60e2c5e7c1c9ec2f9fd18caceaa0559c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
-<tr class="separator:a60e2c5e7c1c9ec2f9fd18caceaa0559c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
 <tr class="memitem:a63260c57eb94dd5ac8c57da3461b44ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63260c57eb94dd5ac8c57da3461b44ed"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Contains</b> (SlotPtr slot) const </td></tr>
 <tr class="separator:a63260c57eb94dd5ac8c57da3461b44ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa20031aed83eeb18eb282b29c1f85d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa20031aed83eeb18eb282b29c1f85d8"></a>
 ConnectionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindConnection</b> (ConstSlotPtr sourceSlot, ConstSlotPtr targetSlot)</td></tr>
 <tr class="separator:aaa20031aed83eeb18eb282b29c1f85d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a60e2c5e7c1c9ec2f9fd18caceaa0559c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60e2c5e7c1c9ec2f9fd18caceaa0559c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:a60e2c5e7c1c9ec2f9fd18caceaa0559c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the main class for the GraphModel framework. It provides a generic node graph data model that is originally intended for use with <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> Canvas providing the UI, but in theory it could be used with any node graph widget system. It is also designed with primarily editor processing in mind, rather than runtime processing, so if this were to be used at runtime we may need some improvements.</p>
@@ -380,7 +376,7 @@ ConnectionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindConnecti
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

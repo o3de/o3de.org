@@ -54,8 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_pool_schema-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::PoolSchema Class Reference</div>  </div>
@@ -68,9 +66,15 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9e4dec8d3e72146b9584c5d158708c33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e4dec8d3e72146b9584c5d158708c33"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL</b> (<a class="el" href="class_a_z_1_1_pool_schema.html">PoolSchema</a>)</td></tr>
+<tr class="separator:a9e4dec8d3e72146b9584c5d158708c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316115928ac76a7a6c47316a322912e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a316115928ac76a7a6c47316a322912e4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> ()</td></tr>
 <tr class="separator:a316115928ac76a7a6c47316a322912e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c212c037659de304716a27b7ddc419"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39c212c037659de304716a27b7ddc419"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (PoolSchema::size_type pageSize, PoolSchema::size_type minAllocationSize, PoolSchema::size_type maxAllocationSize)</td></tr>
+<tr class="separator:a39c212c037659de304716a27b7ddc419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa02b2b1e866387fbf2f7185dbbe8c547"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa02b2b1e866387fbf2f7185dbbe8c547"></a>
 pointer&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> (size_type byteSize, size_type alignment) override</td></tr>
 <tr class="separator:aa02b2b1e866387fbf2f7185dbbe8c547"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,34 +178,6 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:aa1ca1083c50bad274fdbd1f78399fc38 inherit pub_methods_class_a_z_1_1_i_allocator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if profiling calls will be made. <br/></td></tr>
 <tr class="separator:aa1ca1083c50bad274fdbd1f78399fc38 inherit pub_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa5b9eb4c1b1068cd7ac74f5162a0f797"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5b9eb4c1b1068cd7ac74f5162a0f797"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PoolSchema</b> (const <a class="el" href="class_a_z_1_1_pool_schema.html">PoolSchema</a> &amp;)</td></tr>
-<tr class="separator:aa5b9eb4c1b1068cd7ac74f5162a0f797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56b9d4dc3a7dfb039bf6c2e375005c9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56b9d4dc3a7dfb039bf6c2e375005c9f"></a>
-<a class="el" href="class_a_z_1_1_pool_schema.html">PoolSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_pool_schema.html">PoolSchema</a> &amp;)</td></tr>
-<tr class="separator:a56b9d4dc3a7dfb039bf6c2e375005c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_i_allocator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_i_allocator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_i_allocator.html">AZ::IAllocator</a></td></tr>
-<tr class="memitem:ac799228d29329efa66a0c9be0cac99da inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac799228d29329efa66a0c9be0cac99da"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_allocator.html#ac799228d29329efa66a0c9be0cac99da">PostCreate</a> ()</td></tr>
-<tr class="memdesc:ac799228d29329efa66a0c9be0cac99da inherit pro_methods_class_a_z_1_1_i_allocator"><td class="mdescLeft">&#160;</td><td class="mdescRight">All conforming allocators must call <a class="el" href="class_a_z_1_1_i_allocator.html#ac799228d29329efa66a0c9be0cac99da" title="All conforming allocators must call PostCreate() after their custom Create() method in order to be pr...">PostCreate()</a> after their custom Create() method in order to be properly registered. <br/></td></tr>
-<tr class="separator:ac799228d29329efa66a0c9be0cac99da inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0ccd6c34fbe94c04769cc09e8233814 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0ccd6c34fbe94c04769cc09e8233814"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_allocator.html#aa0ccd6c34fbe94c04769cc09e8233814">PreDestroy</a> ()</td></tr>
-<tr class="memdesc:aa0ccd6c34fbe94c04769cc09e8233814 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="mdescLeft">&#160;</td><td class="mdescRight">All conforming allocators must call <a class="el" href="class_a_z_1_1_i_allocator.html#aa0ccd6c34fbe94c04769cc09e8233814" title="All conforming allocators must call PreDestroy() before their custom Destroy() method in order to be ...">PreDestroy()</a> before their custom <a class="el" href="class_a_z_1_1_i_allocator.html#ac4cc6df15cdc178f7580001468910cd6" title="All allocators must provide their deinitialization routine here. ">Destroy()</a> method in order to be properly deregistered. <br/></td></tr>
-<tr class="separator:aa0ccd6c34fbe94c04769cc09e8233814 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4cc6df15cdc178f7580001468910cd6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_allocator.html#ac4cc6df15cdc178f7580001468910cd6">Destroy</a> ()</td></tr>
-<tr class="memdesc:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="mdescLeft">&#160;</td><td class="mdescRight">All allocators must provide their deinitialization routine here. <br/></td></tr>
-<tr class="separator:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a7f629d6413663baa5d61917cce7ba2a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f629d6413663baa5d61917cce7ba2a1"></a>
-class PoolSchemaImpl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_impl</b></td></tr>
-<tr class="separator:a7f629d6413663baa5d61917cce7ba2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_a_z_1_1_i_allocator"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_a_z_1_1_i_allocator')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_a_z_1_1_i_allocator.html">AZ::IAllocator</a></td></tr>
@@ -216,7 +192,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

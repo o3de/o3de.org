@@ -56,9 +56,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_job_function-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::JobFunction&lt; Function &gt; Class Template Reference</div>  </div>
@@ -69,13 +66,6 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_job_function_1_1_arg_helper.html">ArgHelper</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_job_function_1_1_arg_helper_3_01_function_type_00_010_01_4.html">ArgHelper&lt; FunctionType, 0 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae8a379dc4486c85bfcad40bb488b7ba7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8a379dc4486c85bfcad40bb488b7ba7"></a>
@@ -151,57 +141,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementDependentCou
 <tr class="memitem:a8476d5a99988eb0fa182eabacbaf7a90 inherit pub_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8476d5a99988eb0fa182eabacbaf7a90"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DecrementDependentCount</b> ()</td></tr>
 <tr class="separator:a8476d5a99988eb0fa182eabacbaf7a90 inherit pub_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:aed5270257966970eaf0b517275c44807"><td class="memTemplParams" colspan="2"><a class="anchor" id="aed5270257966970eaf0b517275c44807"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:aed5270257966970eaf0b517275c44807"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>FirstArgType</b> = AZStd::function_traits_get_arg_t&lt; T, 0 &gt;</td></tr>
-<tr class="separator:aed5270257966970eaf0b517275c44807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0a8e4272b4f08ae3316bacb07e8273f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a8e4272b4f08ae3316bacb07e8273f1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>JobFunction</b> (const <a class="el" href="class_a_z_1_1_job_function.html">JobFunction</a> &amp;)=delete</td></tr>
-<tr class="separator:a0a8e4272b4f08ae3316bacb07e8273f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6911415952706bb0bfa74639f3f2f6b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6911415952706bb0bfa74639f3f2f6b4"></a>
-<a class="el" href="class_a_z_1_1_job_function.html">JobFunction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_job_function.html">JobFunction</a> &amp;)=delete</td></tr>
-<tr class="separator:a6911415952706bb0bfa74639f3f2f6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a></td></tr>
-<tr class="memitem:afa201bd36df483c17d618f091ac95998 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa201bd36df483c17d618f091ac95998"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StoreDependent</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *job)</td></tr>
-<tr class="separator:afa201bd36df483c17d618f091ac95998 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa1e05fb1cd2b0f9974e36374cff4d55 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa1e05fb1cd2b0f9974e36374cff4d55"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDependentChild</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *dependent)</td></tr>
-<tr class="separator:afa1e05fb1cd2b0f9974e36374cff4d55 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af90bfa93fcc94bf71ffc82f87a9d9775 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af90bfa93fcc94bf71ffc82f87a9d9775"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementDependentCountAndSetChildFlag</b> ()</td></tr>
-<tr class="separator:af90bfa93fcc94bf71ffc82f87a9d9775 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a38b26c6d4dae66ef188833985fa0e inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3a38b26c6d4dae66ef188833985fa0e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDependentCountAndFlags</b> (unsigned int countAndFlags)</td></tr>
-<tr class="separator:ae3a38b26c6d4dae66ef188833985fa0e inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d61cc2c624b3c718c2e305be07c783 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8d61cc2c624b3c718c2e305be07c783"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentCountAndFlags</b> () const </td></tr>
-<tr class="separator:ae8d61cc2c624b3c718c2e305be07c783 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ae014829e58999fb04e857c4f4035060f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae014829e58999fb04e857c4f4035060f"></a>
-Function&#160;</td><td class="memItemRight" valign="bottom"><b>m_function</b></td></tr>
-<tr class="separator:ae014829e58999fb04e857c4f4035060f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a></td></tr>
-<tr class="memitem:aef3ea768ec0276fb23becd81edd123c9 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef3ea768ec0276fb23becd81edd123c9"></a>
-<a class="el" href="class_a_z_1_1_job_context.html">JobContext</a> *volatile&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
-<tr class="separator:aef3ea768ec0276fb23becd81edd123c9 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bccfddce5120d5f45124d0742b09466 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bccfddce5120d5f45124d0742b09466"></a>
-AZStd::atomic&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependentCountAndFlags</b></td></tr>
-<tr class="separator:a1bccfddce5120d5f45124d0742b09466 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e223188312d37c27e0e1dadced4f73 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6e223188312d37c27e0e1dadced4f73"></a>
-AZStd::atomic&lt; <a class="el" href="class_a_z_1_1_job.html">Job</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependent</b></td></tr>
-<tr class="separator:ab6e223188312d37c27e0e1dadced4f73 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad717202a1d9f76d564a8a0d16266d172 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad717202a1d9f76d564a8a0d16266d172"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_state</b></td></tr>
-<tr class="separator:ad717202a1d9f76d564a8a0d16266d172 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Function&gt;<br/>
@@ -215,7 +154,7 @@ class AZ::JobFunction&lt; Function &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

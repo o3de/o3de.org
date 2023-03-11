@@ -54,9 +54,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_find_data-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::FindData Class Reference</div>  </div>
@@ -65,13 +62,6 @@
 
 <p>Inherits intrusive_base.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_find_data_1_1_archive_file.html">ArchiveFile</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_find_data_1_1_archive_file_hash.html">ArchiveFileHash</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fb771c60693f929fd195260cafb4881"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fb771c60693f929fd195260cafb4881"></a>
@@ -83,27 +73,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94b545aadd14d9c7081839a4d7b013e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94b545aadd14d9c7081839a4d7b013e7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Scan</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_i_archive.html">IArchive</a> *archive, AZStd::string_view path, bool bAllowUseFS=false, bool bScanZips=true)</td></tr>
 <tr class="separator:a94b545aadd14d9c7081839a4d7b013e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:a3788ceed1d16aca8ee04f91e2e869d32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3788ceed1d16aca8ee04f91e2e869d32"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>FileSet</b> = AZStd::unordered_set&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_find_data_1_1_archive_file.html">ArchiveFile</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_find_data_1_1_archive_file_hash.html">ArchiveFileHash</a> &gt;</td></tr>
-<tr class="separator:a3788ceed1d16aca8ee04f91e2e869d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9c62c4fc1b46e5705a2d83a37d122b36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c62c4fc1b46e5705a2d83a37d122b36"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ScanFS</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_i_archive.html">IArchive</a> *archive, AZStd::string_view path)</td></tr>
-<tr class="separator:a9c62c4fc1b46e5705a2d83a37d122b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450774fcb0af03b9952d36b32f1e029a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a450774fcb0af03b9952d36b32f1e029a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ScanZips</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_i_archive.html">IArchive</a> *archive, AZStd::string_view path)</td></tr>
-<tr class="separator:a450774fcb0af03b9952d36b32f1e029a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:af3d2766af0a8ad07bc870a075a268702"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3d2766af0a8ad07bc870a075a268702"></a>
-FileSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileSet</b></td></tr>
-<tr class="separator:af3d2766af0a8ad07bc870a075a268702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Archive/ArchiveFindData.h</li>
@@ -111,7 +80,7 @@ FileSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileSet</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

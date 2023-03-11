@@ -57,7 +57,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_gamepad-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceGamepad Class Reference</div>  </div>
@@ -204,51 +203,6 @@ Static Public Attributes</h2></td></tr>
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad89e718f53ee5173b88522973f532924">Name</a> {&quot;gamepad&quot;}</td></tr>
 <tr class="memdesc:ad89e718f53ee5173b88522973f532924"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name used to identify any game-pad input device. <br/></td></tr>
 <tr class="separator:ad89e718f53ee5173b88522973f532924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a078b07e673457dcfac4bcb8aac81324f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a078b07e673457dcfac4bcb8aac81324f">ButtonChannelByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_digital.html">InputChannelDigital</a> * &gt;</td></tr>
-<tr class="separator:a078b07e673457dcfac4bcb8aac81324f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e00d652fc248b984537d0b0afd535f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e00d652fc248b984537d0b0afd535f9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>TriggerChannelByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_analog.html">InputChannelAnalog</a> * &gt;</td></tr>
-<tr class="separator:a4e00d652fc248b984537d0b0afd535f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98af308d535c570e3aaf9e1da8d43382"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98af308d535c570e3aaf9e1da8d43382"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ThumbStickAxis1DChannelByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_axis1_d.html">InputChannelAxis1D</a> * &gt;</td></tr>
-<tr class="separator:a98af308d535c570e3aaf9e1da8d43382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc66352ece784fa8b7ab532228c206cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc66352ece784fa8b7ab532228c206cc"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ThumbStickAxis2DChannelByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_axis2_d.html">InputChannelAxis2D</a> * &gt;</td></tr>
-<tr class="separator:adc66352ece784fa8b7ab532228c206cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e8ede4278b683796c7dd4455dbeeed2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e8ede4278b683796c7dd4455dbeeed2"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ThumbStickDirectionChannelByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_analog.html">InputChannelAnalog</a> * &gt;</td></tr>
-<tr class="separator:a3e8ede4278b683796c7dd4455dbeeed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aaefb1af48cca443adec34f46401666e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaefb1af48cca443adec34f46401666e1"></a>
-InputChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#aaefb1af48cca443adec34f46401666e1">m_allChannelsById</a></td></tr>
-<tr class="memdesc:aaefb1af48cca443adec34f46401666e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">All game-pad input channels by id. <br/></td></tr>
-<tr class="separator:aaefb1af48cca443adec34f46401666e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29a795b9dd54e5aa3bd3be0d8d7dd2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad29a795b9dd54e5aa3bd3be0d8d7dd2a"></a>
-<a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a078b07e673457dcfac4bcb8aac81324f">ButtonChannelByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad29a795b9dd54e5aa3bd3be0d8d7dd2a">m_buttonChannelsById</a></td></tr>
-<tr class="memdesc:ad29a795b9dd54e5aa3bd3be0d8d7dd2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">All digital button channels by id. <br/></td></tr>
-<tr class="separator:ad29a795b9dd54e5aa3bd3be0d8d7dd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c2e62c3b4449364662679034d559be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91c2e62c3b4449364662679034d559be"></a>
-TriggerChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a91c2e62c3b4449364662679034d559be">m_triggerChannelsById</a></td></tr>
-<tr class="memdesc:a91c2e62c3b4449364662679034d559be"><td class="mdescLeft">&#160;</td><td class="mdescRight">All analog trigger channels by id. <br/></td></tr>
-<tr class="separator:a91c2e62c3b4449364662679034d559be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a651972058c82ddaac0b8d3b09aff1999"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a651972058c82ddaac0b8d3b09aff1999"></a>
-ThumbStickAxis1DChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a651972058c82ddaac0b8d3b09aff1999">m_thumbStickAxis1DChannelsById</a></td></tr>
-<tr class="memdesc:a651972058c82ddaac0b8d3b09aff1999"><td class="mdescLeft">&#160;</td><td class="mdescRight">All thumb-stick axis 1D channels by id. <br/></td></tr>
-<tr class="separator:a651972058c82ddaac0b8d3b09aff1999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fbfc1465b4ed82dc8d9c9f019fa5d74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fbfc1465b4ed82dc8d9c9f019fa5d74"></a>
-ThumbStickAxis2DChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a2fbfc1465b4ed82dc8d9c9f019fa5d74">m_thumbStickAxis2DChannelsById</a></td></tr>
-<tr class="memdesc:a2fbfc1465b4ed82dc8d9c9f019fa5d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">All thumb-stick axis 2D channels by id. <br/></td></tr>
-<tr class="separator:a2fbfc1465b4ed82dc8d9c9f019fa5d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf017511d36587730e746b8e6d6d7fad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf017511d36587730e746b8e6d6d7fad"></a>
-ThumbStickDirectionChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#abf017511d36587730e746b8e6d6d7fad">m_thumbStickDirectionChannelsById</a></td></tr>
-<tr class="memdesc:abf017511d36587730e746b8e6d6d7fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">All thumb-stick direction channels by id. <br/></td></tr>
-<tr class="separator:abf017511d36587730e746b8e6d6d7fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc11bf9312bb57f39e242b201b70071"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad.html#abcc11bf9312bb57f39e242b201b70071">IdForIndex0</a> {<a class="el" href="class_az_framework_1_1_input_device_gamepad.html#ad89e718f53ee5173b88522973f532924">Name</a>, 0}</td></tr>
 <tr class="separator:abcc11bf9312bb57f39e242b201b70071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a110a6b61d6a22b693b31af05c968ad6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a110a6b61d6a22b693b31af05c968ad6d"></a>
@@ -263,52 +217,10 @@ static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html
 <tr class="memitem:a21723f3ef391addff317ce581a66919b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21723f3ef391addff317ce581a66919b"></a>
 static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IdForIndexN</b> (AZ::u32 n)</td></tr>
 <tr class="separator:a21723f3ef391addff317ce581a66919b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_az_framework_1_1_input_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_input_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_input_device.html">AzFramework::InputDevice</a></td></tr>
-<tr class="memitem:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a20c49755e8fc367afe62e1c1788e8b8b">BroadcastInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) const </td></tr>
-<tr class="separator:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a47e7fba32002cef9260f72d49079c2b2">BroadcastInputTextEvent</a> (const AZStd::string &amp;textUTF8) const </td></tr>
-<tr class="separator:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b3f1cf8533f960eb86d73d9c0b09dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a83b3f1cf8533f960eb86d73d9c0b09dd">BroadcastInputDeviceConnectedEvent</a> () const </td></tr>
-<tr class="memdesc:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device connects to the system. <br/></td></tr>
-<tr class="separator:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8db0be32df8eeec193f83be08cce6fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#ae8db0be32df8eeec193f83be08cce6fb">BroadcastInputDeviceDisconnectedEvent</a> () const </td></tr>
-<tr class="memdesc:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device disconnects from the system. <br/></td></tr>
-<tr class="separator:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7610e16b07bb6c9e5806709d8d142a81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a7610e16b07bb6c9e5806709d8d142a81">ResetInputChannelStates</a> ()</td></tr>
-<tr class="memdesc:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
-<tr class="separator:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a generic game-pad input device, including the ids of all associated input channels. Platform specific implementations are defined as private implementations so that creating an instance of this generic class will work correctly on any platform supporting game-pad input, while providing access to the device name and associated channel ids on any platform through the 'null' implementation (primarily so that the editor can use them to setup input mappings). </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a078b07e673457dcfac4bcb8aac81324f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a078b07e673457dcfac4bcb8aac81324f">AzFramework::InputDeviceGamepad::ButtonChannelByIdMap</a> =  AZStd::unordered_map&lt;<a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_digital.html">InputChannelDigital</a>*&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Alias for verbose container class </p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a15b52e92cf622ddec1a5e16885b3f2c9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -499,7 +411,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

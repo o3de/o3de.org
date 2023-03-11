@@ -60,8 +60,6 @@
 <div class="title">AZ::SerializeContext::ClassBuilder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;SerializeContext.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -84,13 +82,13 @@ template&lt;class FromT , class ToT &gt; </td></tr>
 <tr class="memitem:af9e9094f28c9ae1c9ebe9a62d7d4dccd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#af9e9094f28c9ae1c9ebe9a62d7d4dccd">FieldFromBase</a> (const char *name, FieldType BaseType::*address)</td></tr>
 <tr class="separator:af9e9094f28c9ae1c9ebe9a62d7d4dccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c741dd3b02fc5e3f9eb4b6390cd794c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c741dd3b02fc5e3f9eb4b6390cd794c"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a4c741dd3b02fc5e3f9eb4b6390cd794c">Version</a> (unsigned int version, <a class="el" href="class_a_z_1_1_serialize_context.html#a4d3ad9b8c6e9478dbe2041aaeb8e0ef7">VersionConverter</a> converter=nullptr)</td></tr>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a4c741dd3b02fc5e3f9eb4b6390cd794c">Version</a> (unsigned int version, <a class="el" href="class_a_z_1_1_serialize_context.html#a1065bfda2ff2d1eb3fc0f7f3ee3f2b08">VersionConverter</a> converter=nullptr)</td></tr>
 <tr class="memdesc:a4c741dd3b02fc5e3f9eb4b6390cd794c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add version control to the structure with optional converter. If not controlled a version of 0 is assigned. <br/></td></tr>
 <tr class="separator:a4c741dd3b02fc5e3f9eb4b6390cd794c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199f61bca95a2cc149e019262c8d54f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a199f61bca95a2cc149e019262c8d54f8">Serializer</a> (IDataSerializerPtr serializer)</td></tr>
-<tr class="separator:a199f61bca95a2cc149e019262c8d54f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a8e14b4d41bde1011666bcd8e848b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a59a8e14b4d41bde1011666bcd8e848b5">Serializer</a> (Serialize::IDataSerializerPtr serializer)</td></tr>
+<tr class="separator:a59a8e14b4d41bde1011666bcd8e848b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3385bf8fe05b694982cbcba819c6676"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3385bf8fe05b694982cbcba819c6676"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#af3385bf8fe05b694982cbcba819c6676">Serializer</a> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_serializer.html">IDataSerializer</a> *serializer)</td></tr>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#af3385bf8fe05b694982cbcba819c6676">Serializer</a> (<a class="el" href="class_a_z_1_1_serialize_1_1_i_data_serializer.html">IDataSerializer</a> *serializer)</td></tr>
 <tr class="memdesc:af3385bf8fe05b694982cbcba819c6676"><td class="mdescLeft">&#160;</td><td class="mdescRight">For data types (usually base types) or types that we handle the full serialize, implement this interface. <br/></td></tr>
 <tr class="separator:af3385bf8fe05b694982cbcba819c6676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4def1f5f966583369231a25fde3ac40"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad4def1f5f966583369231a25fde3ac40"></a>
@@ -102,7 +100,7 @@ template&lt;typename SerializerImplementation &gt; </td></tr>
 <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#ae950eed90c94623e46d6cb61c1ae601b">SerializeWithNoData</a> ()</td></tr>
 <tr class="memdesc:ae950eed90c94623e46d6cb61c1ae601b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For class type that are empty, we want the serializer to create on load, but have no child elements. <br/></td></tr>
 <tr class="separator:ae950eed90c94623e46d6cb61c1ae601b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6239170acb4fa27dc08f9e4fcef9643c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a6239170acb4fa27dc08f9e4fcef9643c">EventHandler</a> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_i_event_handler.html">IEventHandler</a> *eventHandler)</td></tr>
+<tr class="memitem:a6239170acb4fa27dc08f9e4fcef9643c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a6239170acb4fa27dc08f9e4fcef9643c">EventHandler</a> (<a class="el" href="class_a_z_1_1_serialize_1_1_i_event_handler.html">IEventHandler</a> *eventHandler)</td></tr>
 <tr class="separator:a6239170acb4fa27dc08f9e4fcef9643c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae427312069cca0eecb3398a91d26ac31"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae427312069cca0eecb3398a91d26ac31"></a>
 template&lt;typename EventHandlerImplementation &gt; </td></tr>
@@ -110,7 +108,7 @@ template&lt;typename EventHandlerImplementation &gt; </td></tr>
 <tr class="memdesc:ae427312069cca0eecb3398a91d26ac31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a static instance of specific event handler implementation. <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#af3385bf8fe05b694982cbcba819c6676">Serializer(IDataSerializer*)</a> <br/></td></tr>
 <tr class="separator:ae427312069cca0eecb3398a91d26ac31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab5f52888a4515d43f54657400227311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab5f52888a4515d43f54657400227311"></a>
-<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#aab5f52888a4515d43f54657400227311">DataContainer</a> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html">IDataContainer</a> *dataContainer)</td></tr>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#aab5f52888a4515d43f54657400227311">DataContainer</a> (<a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container.html">IDataContainer</a> *dataContainer)</td></tr>
 <tr class="memdesc:aab5f52888a4515d43f54657400227311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a DataContainer structure for manipulating contained data in custom ways. <br/></td></tr>
 <tr class="separator:aab5f52888a4515d43f54657400227311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b61a54775538cc2bd266de98fe21d54"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1b61a54775538cc2bd266de98fe21d54"></a>
@@ -118,9 +116,9 @@ template&lt;typename DataContainerType &gt; </td></tr>
 <tr class="memitem:a1b61a54775538cc2bd266de98fe21d54"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a1b61a54775538cc2bd266de98fe21d54">DataContainer</a> ()</td></tr>
 <tr class="memdesc:a1b61a54775538cc2bd266de98fe21d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a static instance of the specific data container implementation. <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#aab5f52888a4515d43f54657400227311">DataContainer(IDataContainer*)</a> <br/></td></tr>
 <tr class="separator:a1b61a54775538cc2bd266de98fe21d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd57f056777694e6688f5037144fde0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a8bd57f056777694e6688f5037144fde0">PersistentId</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#a98abfc21de99f0fe5a9fe7425e3c1c38">ClassPersistentId</a> persistentId)</td></tr>
+<tr class="memitem:a8bd57f056777694e6688f5037144fde0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a8bd57f056777694e6688f5037144fde0">PersistentId</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#a1a8a0edaa56e7cd6c573d6450b87ef7c">ClassPersistentId</a> persistentId)</td></tr>
 <tr class="separator:a8bd57f056777694e6688f5037144fde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7b44cd9eb9d36e413177a267c2c1b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#adf7b44cd9eb9d36e413177a267c2c1b2">SerializerDoSave</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#a41a370720d43d913d3d6eccc59e6c6a9">ClassDoSave</a> isSave)</td></tr>
+<tr class="memitem:adf7b44cd9eb9d36e413177a267c2c1b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#adf7b44cd9eb9d36e413177a267c2c1b2">SerializerDoSave</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#add833238065f6fad4032440170567e0e">ClassDoSave</a> isSave)</td></tr>
 <tr class="separator:adf7b44cd9eb9d36e413177a267c2c1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a468da2f3204f60e694a8e677996466"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a6a468da2f3204f60e694a8e677996466"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html#a6a468da2f3204f60e694a8e677996466">Attribute</a> (const char *id, T &amp;&amp;value)</td></tr>
@@ -152,10 +150,7 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeContext</b></td></tr>
 <tr class="separator:ac1a4a60afcc9ac44490da767240b61ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Internal structure to maintain class information while we are describing a class. User should call variety of functions to describe class features and data. example: struct MyStruct { int m_data };</p>
-<p>expose for serialization serializeContext-&gt;Class&lt;MyStruct&gt;() -&gt;Version(3,&amp;MyVersionConverter) -&gt;Field("data",&amp;MyStruct::m_data); </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6a468da2f3204f60e694a8e677996466"></a>
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +224,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a>* AZ::SerializeContext::ClassBuilder::EventHandler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context_1_1_i_event_handler.html">IEventHandler</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_1_1_i_event_handler.html">IEventHandler</a> *&#160;</td>
           <td class="paramname"><em>eventHandler</em></td><td>)</td>
           <td></td>
         </tr>
@@ -275,7 +270,7 @@ template&lt;class ClassType , class BaseType , class FieldType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a>* AZ::SerializeContext::ClassBuilder::PersistentId </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context.html#a98abfc21de99f0fe5a9fe7425e3c1c38">ClassPersistentId</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context.html#a1a8a0edaa56e7cd6c573d6450b87ef7c">ClassPersistentId</a>&#160;</td>
           <td class="paramname"><em>persistentId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -285,14 +280,14 @@ template&lt;class ClassType , class BaseType , class FieldType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a199f61bca95a2cc149e019262c8d54f8"></a>
+<a class="anchor" id="a59a8e14b4d41bde1011666bcd8e848b5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a>* AZ::SerializeContext::ClassBuilder::Serializer </td>
           <td>(</td>
-          <td class="paramtype">IDataSerializerPtr&#160;</td>
+          <td class="paramtype">Serialize::IDataSerializerPtr&#160;</td>
           <td class="paramname"><em>serializer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -309,7 +304,7 @@ template&lt;class ClassType , class BaseType , class FieldType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a>* AZ::SerializeContext::ClassBuilder::SerializerDoSave </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context.html#a41a370720d43d913d3d6eccc59e6c6a9">ClassDoSave</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context.html#add833238065f6fad4032440170567e0e">ClassDoSave</a>&#160;</td>
           <td class="paramname"><em>isSave</em></td><td>)</td>
           <td></td>
         </tr>
@@ -325,7 +320,7 @@ template&lt;class ClassType , class BaseType , class FieldType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

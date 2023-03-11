@@ -56,8 +56,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_std_1_1intrusive__list-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::intrusive_list&lt; T, Hook &gt; Class Template Reference</div>  </div>
@@ -296,22 +294,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_iterator</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__list.html#a222a8a8f40d5da86eb9c37bd2912948e">leak_and_reset</a> ()</td></tr>
 <tr class="memdesc:a222a8a8f40d5da86eb9c37bd2912948e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the container without going to unhook any elements. <br/></td></tr>
 <tr class="separator:a222a8a8f40d5da86eb9c37bd2912948e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6769d0e10d796b5f2455bbd08cebe21e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6769d0e10d796b5f2455bbd08cebe21e"></a>
-node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_head</b> ()</td></tr>
-<tr class="separator:a6769d0e10d796b5f2455bbd08cebe21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a9a5a8f52ab21e928d19d59d3f3ac6448"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a5a8f52ab21e928d19d59d3f3ac6448"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_numElements</b></td></tr>
-<tr class="separator:a9a5a8f52ab21e928d19d59d3f3ac6448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a065a6d7e7dccea1e2f6d47c455444d10"><td class="memItemLeft" align="right" valign="top">aligned_storage&lt; sizeof(node_type), <br class="typebreak"/>
-alignment_of&lt; node_type &gt;<br class="typebreak"/>
-::value &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__list.html#a065a6d7e7dccea1e2f6d47c455444d10">m_root</a></td></tr>
-<tr class="separator:a065a6d7e7dccea1e2f6d47c455444d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T, class Hook&gt;<br/>
@@ -319,41 +301,13 @@ class AZStd::intrusive_list&lt; T, Hook &gt;</h3>
 
 <p>Intrusive list is a <a class="el" href="namespace_a_z_std.html" title="AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...">AZStd</a> extension container. </p>
 <dl class="section user"><dt></dt><dd>It uses the <a class="el" href="struct_a_z_std_1_1intrusive__list__node.html">intrusive_list_node</a> contained in the provided user type T. You have 2 choices you can make your T type to either inherit from <a class="el" href="struct_a_z_std_1_1intrusive__list__node.html">intrusive_list_node</a> or just have <a class="el" href="struct_a_z_std_1_1intrusive__list__node.html">intrusive_list_node</a> as a <b>public</b> member. Based on which option you prefer you should use the appropriate hook type. Hook parameter should be <a class="el" href="struct_a_z_std_1_1list__base__hook.html">list_base_hook</a> (if you inherit the <a class="el" href="struct_a_z_std_1_1intrusive__list__node.html">intrusive_list_node</a>) or <a class="el" href="struct_a_z_std_1_1list__member__hook.html">list_member_hook</a> if you have it as a public member. Intrusive list never allocate any memory, destroy or create any objects. Just used the provided nodes to store it's information. Generally speaking intrusive containers are better for the cache. You can see examples of all that AZStdExamples. </dd></dl>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a065a6d7e7dccea1e2f6d47c455444d10"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class Hook&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">aligned_storage&lt;sizeof(node_type), alignment_of&lt;node_type&gt;::value&gt;::type <a class="el" href="class_a_z_std_1_1intrusive__list.html">AZStd::intrusive_list</a>&lt; T, Hook &gt;::m_root</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>OK we face different problems when we implement intrusive list. We choose to create fake node_type as a root node! Why ? There are 2 general ways to solve this issue:</p>
-<ol type="1">
-<li>Store the head and tail pointer here and store pointer to the list in the iterator. This makes iterator 2 size, plus operators &ndash; and ++ include an if. This is the case because we need end iterator (which will be NULL). And we can't move it.</li>
-<li>We can store the base class in the iterator, and every time we need the value we compute the hook offset and recast the pointer. all of this is fine, but we need to have a "simple" way to debug our containers" in a easy way. So at this stage we consider the wasting a memory for a fake root node as the best solution, while we can debug the container. This can change internally at any moment if needed, no interface change will occur. </li>
-</ol>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/containers/intrusive_list.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:49 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:04 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

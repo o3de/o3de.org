@@ -151,8 +151,8 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">AZ_RTTI(_ComponentClass, __VA_ARGS__, <a class="code" href="class_a_z_1_1_component.html">AZ::Component</a>)        <a class="code" href="_component_8h.html#a270481ec47a42039cf703fe776bc2c7a">\</a></div>
 <div class="line"><a class="code" href="_component_8h.html#a270481ec47a42039cf703fe776bc2c7a">    AZ_COMPONENT_INTRUSIVE_DESCRIPTOR_TYPE</a>(_ComponentClass)     <a class="code" href="_component_8h.html#a0d70490c7a08a211ee578c4cf0b43b5a">\</a></div>
 <div class="line"><a class="code" href="_component_8h.html#a0d70490c7a08a211ee578c4cf0b43b5a">    AZ_COMPONENT_BASE</a>(_ComponentClass, __VA_ARGS__)</div>
-<div class="ttc" id="_component_8h_html_a270481ec47a42039cf703fe776bc2c7a"><div class="ttname"><a href="_component_8h.html#a270481ec47a42039cf703fe776bc2c7a">AZ_COMPONENT_INTRUSIVE_DESCRIPTOR_TYPE</a></div><div class="ttdeci">#define AZ_COMPONENT_INTRUSIVE_DESCRIPTOR_TYPE(_ComponentClass)</div><div class="ttdef"><b>Definition:</b> Component.h:300</div></div>
-<div class="ttc" id="_component_8h_html_a0d70490c7a08a211ee578c4cf0b43b5a"><div class="ttname"><a href="_component_8h.html#a0d70490c7a08a211ee578c4cf0b43b5a">AZ_COMPONENT_BASE</a></div><div class="ttdeci">#define AZ_COMPONENT_BASE(_ComponentClass,...)</div><div class="ttdef"><b>Definition:</b> Component.h:258</div></div>
+<div class="ttc" id="_component_8h_html_a270481ec47a42039cf703fe776bc2c7a"><div class="ttname"><a href="_component_8h.html#a270481ec47a42039cf703fe776bc2c7a">AZ_COMPONENT_INTRUSIVE_DESCRIPTOR_TYPE</a></div><div class="ttdeci">#define AZ_COMPONENT_INTRUSIVE_DESCRIPTOR_TYPE(_ComponentClass)</div><div class="ttdef"><b>Definition:</b> Component.h:295</div></div>
+<div class="ttc" id="_component_8h_html_a0d70490c7a08a211ee578c4cf0b43b5a"><div class="ttname"><a href="_component_8h.html#a0d70490c7a08a211ee578c4cf0b43b5a">AZ_COMPONENT_BASE</a></div><div class="ttdeci">#define AZ_COMPONENT_BASE(_ComponentClass,...)</div><div class="ttdef"><b>Definition:</b> Component.h:259</div></div>
 <div class="ttc" id="class_a_z_1_1_component_html"><div class="ttname"><a href="class_a_z_1_1_component.html">AZ::Component</a></div><div class="ttdef"><b>Definition:</b> Component.h:41</div></div>
 </div><!-- fragment --><p>Declares a component with the default settings. The component derives from <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a>, is not templated, uses <a class="el" href="class_a_z_1_1_system_allocator.html">AZ::SystemAllocator</a>, and so on. AZ_COMPONENT(_ComponentClass, _ComponentId, OtherBaseClases... Component) is included automatically.</p>
 <p>The component that this macro creates has a static function called CreateDescriptor and a type called DescriptorType. Although you can delete the descriptor, keep in mind that you cannot use component instances without a descriptor. This is because descriptors are released when the component application closes or a module is unloaded. Descriptors must have access to <a class="el" href="class_a_z_1_1_component_descriptor.html#a3722af0fb6275969cc052289bdc50c19">AZ::ComponentDescriptor::Reflect</a>, <a class="el" href="class_a_z_1_1_component_descriptor.html#a24ddcbcb1c3c60aaf359043fcca73ec8">AZ::ComponentDescriptor::GetProvidedServices</a>, and other descriptor services.</p>
@@ -183,7 +183,38 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Includes the core component code required to make a component work. This macro is typically included in other macros, such as AZ_COMPONENT, to create a component. </p>
+<b>Value:</b><div class="fragment"><div class="line">AZ_CLASS_ALLOCATOR(_ComponentClass, <a class="code" href="class_a_z_1_1_system_allocator.html">AZ::SystemAllocator</a>)                                                                            \</div>
+<div class="line">    template&lt;class Comp, class Void&gt; <span class="keyword">friend</span> <span class="keyword">class </span>AZ::HasComponentReflect;                                                              \</div>
+<div class="line">    template&lt;class Comp, class Void&gt; <span class="keyword">friend</span> <span class="keyword">class </span>AZ::HasComponentProvidedServices;                                                     \</div>
+<div class="line">    template&lt;class Comp, class Void&gt; <span class="keyword">friend</span> <span class="keyword">class </span>AZ::HasComponentDependentServices;                                                    \</div>
+<div class="line">    template&lt;class Comp, class Void&gt; <span class="keyword">friend</span> <span class="keyword">class </span>AZ::HasComponentRequiredServices;                                                     \</div>
+<div class="line">    template&lt;class Comp, class Void&gt; <span class="keyword">friend</span> <span class="keyword">class </span>AZ::HasComponentIncompatibleServices;                                                 \</div>
+<div class="line">    static <a class="code" href="class_a_z_1_1_component_descriptor.html">AZ::ComponentDescriptor</a>* CreateDescriptor()                                                                                  \</div>
+<div class="line">    { \</div>
+<div class="line">        static <span class="keyword">const</span> <span class="keywordtype">char</span>* s_typeName = _ComponentClass::RTTI_TypeName(); \</div>
+<div class="line">        static <span class="keyword">const</span> <a class="code" href="struct_a_z_1_1_uuid.html">AZ::TypeId</a> s_typeId = _ComponentClass::RTTI_Type(); \</div>
+<div class="line">        AZ::ComponentDescriptor* descriptor = <span class="keyword">nullptr</span>; \</div>
+<div class="line">        AZ::ComponentDescriptorBus::EventResult(descriptor, s_typeId, &amp;<a class="code" href="class_a_z_1_1_component_descriptor.html#af0fb383d1caff31a8f423808ea0e1568">AZ::ComponentDescriptor::GetDescriptor</a>); \</div>
+<div class="line">        if (descriptor) \</div>
+<div class="line">        { \</div>
+<div class="line">            <span class="comment">/* Compare strings first, then pointers. */</span> \</div>
+<div class="line">            if (descriptor-&gt;GetName() != <a class="code" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>(s_typeName)) \</div>
+<div class="line">            { \</div>
+<div class="line">                AZ_Error(<span class="stringliteral">&quot;Component&quot;</span>, <span class="keyword">false</span>, <span class="stringliteral">&quot;Two different components have the same UUID (%s), which is not allowed.\n&quot;</span> \</div>
+<div class="line">                    <span class="stringliteral">&quot;Change the UUID on one of them.\nComponent A: %s\nComponent B: %s&quot;</span>, \</div>
+<div class="line">                    s_typeId.ToFixedString().c_str(), descriptor-&gt;GetName(), s_typeName); \</div>
+<div class="line">                return <span class="keyword">nullptr</span>; \</div>
+<div class="line">            } \</div>
+<div class="line">            return descriptor; \</div>
+<div class="line">        } \</div>
+<div class="line">        return aznew DescriptorType; \</div>
+<div class="line">    }</div>
+<div class="ttc" id="class_a_z_1_1_component_descriptor_html_af0fb383d1caff31a8f423808ea0e1568"><div class="ttname"><a href="class_a_z_1_1_component_descriptor.html#af0fb383d1caff31a8f423808ea0e1568">AZ::ComponentDescriptor::GetDescriptor</a></div><div class="ttdeci">virtual ComponentDescriptor * GetDescriptor()</div><div class="ttdef"><b>Definition:</b> Component.h:415</div></div>
+<div class="ttc" id="class_a_z_1_1_system_allocator_html"><div class="ttname"><a href="class_a_z_1_1_system_allocator.html">AZ::SystemAllocator</a></div><div class="ttdef"><b>Definition:</b> SystemAllocator.h:26</div></div>
+<div class="ttc" id="class_a_z_1_1_component_descriptor_html"><div class="ttname"><a href="class_a_z_1_1_component_descriptor.html">AZ::ComponentDescriptor</a></div><div class="ttdef"><b>Definition:</b> Component.h:326</div></div>
+<div class="ttc" id="struct_a_z_1_1_uuid_html"><div class="ttname"><a href="struct_a_z_1_1_uuid.html">AZ::Uuid</a></div><div class="ttdef"><b>Definition:</b> Uuid.h:24</div></div>
+<div class="ttc" id="class_a_z_std_1_1basic__string__view_html"><div class="ttname"><a href="class_a_z_std_1_1basic__string__view.html">AZStd::basic_string_view</a></div><div class="ttdef"><b>Definition:</b> IConsoleTypes.h:21</div></div>
+</div><!-- fragment --><p>Includes the core component code required to make a component work. This macro is typically included in other macros, such as AZ_COMPONENT, to create a component. </p>
 
 </div>
 </div>
@@ -202,7 +233,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_a_z_1_1_component_descriptor_default.html">AZ::ComponentDescriptorDefault</a>&lt;_ComponentClass&gt;;           \</div>
 <div class="line">    typedef <a class="code" href="class_a_z_1_1_component_descriptor_default.html">AZ::ComponentDescriptorDefault&lt;_ComponentClass&gt;</a> DescriptorType;</div>
-<div class="ttc" id="class_a_z_1_1_component_descriptor_default_html"><div class="ttname"><a href="class_a_z_1_1_component_descriptor_default.html">AZ::ComponentDescriptorDefault</a></div><div class="ttdef"><b>Definition:</b> Component.h:517</div></div>
+<div class="ttc" id="class_a_z_1_1_component_descriptor_default_html"><div class="ttname"><a href="class_a_z_1_1_component_descriptor_default.html">AZ::ComponentDescriptorDefault</a></div><div class="ttdef"><b>Definition:</b> Component.h:512</div></div>
 </div><!-- fragment --><p>Declares a descriptor class. Unless you are implementing very advanced internal functionality, we recommend using AZ_COMPONENT instead of this macro. This macro enables you to implement a static function in the Component class instead of writing a descriptor. It defines a CreateDescriptorFunction that you can call to register a descriptor. (Only one descriptor can exist per environment.) This macro fails silently if you implement the functions with the wrong signatures. </p>
 
 </div>
@@ -210,7 +241,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:25 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

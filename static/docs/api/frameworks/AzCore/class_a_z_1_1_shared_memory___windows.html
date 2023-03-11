@@ -53,8 +53,6 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_shared_memory___windows-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::SharedMemory_Windows Class Reference</div>  </div>
@@ -63,67 +61,6 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_shared_memory___common.html">AZ::SharedMemory_Common</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a64c8a72f25d5eca12eeee4bf8c32f235"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64c8a72f25d5eca12eeee4bf8c32f235"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> () const </td></tr>
-<tr class="separator:a64c8a72f25d5eca12eeee4bf8c32f235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c9a131addfe3d412f8f46bdd157a2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32c9a131addfe3d412f8f46bdd157a2e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsMapHandleValid</b> () const </td></tr>
-<tr class="separator:a32c9a131addfe3d412f8f46bdd157a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a9de9ce882c49fa8b88684a4f3be30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5a9de9ce882c49fa8b88684a4f3be30"></a>
-CreateResult&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (const char *name, unsigned int size, bool openIfCreated)</td></tr>
-<tr class="separator:ac5a9de9ce882c49fa8b88684a4f3be30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c207f8ccecb16748389fe0615cfd74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0c207f8ccecb16748389fe0615cfd74"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (const char *name)</td></tr>
-<tr class="separator:ac0c207f8ccecb16748389fe0615cfd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d349ed4dc156edb71bcabf9140f457b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d349ed4dc156edb71bcabf9140f457b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Close</b> ()</td></tr>
-<tr class="separator:a2d349ed4dc156edb71bcabf9140f457b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b037f9feb01529cc31719bc5d357a8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b037f9feb01529cc31719bc5d357a8d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b> (AccessMode mode, unsigned int size)</td></tr>
-<tr class="separator:a4b037f9feb01529cc31719bc5d357a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a703ccdc9d04ddad0eae9a8066880f487"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a703ccdc9d04ddad0eae9a8066880f487"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>UnMap</b> ()</td></tr>
-<tr class="separator:a703ccdc9d04ddad0eae9a8066880f487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace06ecf145a2778215deb8ce8c1747e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace06ecf145a2778215deb8ce8c1747e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>lock</b> ()</td></tr>
-<tr class="separator:ace06ecf145a2778215deb8ce8c1747e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bed8e5f1a80283d28c94c38de8f4e8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bed8e5f1a80283d28c94c38de8f4e8d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>try_lock</b> ()</td></tr>
-<tr class="separator:a8bed8e5f1a80283d28c94c38de8f4e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b53b4c7d27abbfdb27f986378c355c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14b53b4c7d27abbfdb27f986378c355c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unlock</b> ()</td></tr>
-<tr class="separator:a14b53b4c7d27abbfdb27f986378c355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a486ec03e9562169087c9ed34c84e746c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a486ec03e9562169087c9ed34c84e746c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLockAbandoned</b> ()</td></tr>
-<tr class="separator:a486ec03e9562169087c9ed34c84e746c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f311b084498b03f46b450416e60810"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82f311b084498b03f46b450416e60810"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsWaitFailed</b> () const </td></tr>
-<tr class="separator:a82f311b084498b03f46b450416e60810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ae978a670a24a8ad8126ab68aadabbe05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae978a670a24a8ad8126ab68aadabbe05"></a>
-HANDLE&#160;</td><td class="memItemRight" valign="bottom"><b>m_mapHandle</b></td></tr>
-<tr class="separator:ae978a670a24a8ad8126ab68aadabbe05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae1f0219ad0119aef6c525902e14a55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ae1f0219ad0119aef6c525902e14a55"></a>
-HANDLE&#160;</td><td class="memItemRight" valign="bottom"><b>m_globalMutex</b></td></tr>
-<tr class="separator:a4ae1f0219ad0119aef6c525902e14a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e6db0adcb6ff73df26f1abebea12d6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e6db0adcb6ff73df26f1abebea12d6a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastLockResult</b></td></tr>
-<tr class="separator:a2e6db0adcb6ff73df26f1abebea12d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_shared_memory___common"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_shared_memory___common')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_shared_memory___common.html">AZ::SharedMemory_Common</a></td></tr>
-<tr class="memitem:ad9c84e96b28dbd01492199ace6fba61c inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9c84e96b28dbd01492199ace6fba61c"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b> [128]</td></tr>
-<tr class="separator:ad9c84e96b28dbd01492199ace6fba61c inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac368b0b0257671e4adb31758b960c25d inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac368b0b0257671e4adb31758b960c25d"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mappedBase</b></td></tr>
-<tr class="separator:ac368b0b0257671e4adb31758b960c25d inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ba34438f7f35b41ae86d86e61c918f6 inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ba34438f7f35b41ae86d86e61c918f6"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataSize</b></td></tr>
-<tr class="separator:a9ba34438f7f35b41ae86d86e61c918f6 inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_shared_memory___common"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_shared_memory___common')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_shared_memory___common.html">AZ::SharedMemory_Common</a></td></tr>
@@ -143,7 +80,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

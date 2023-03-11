@@ -53,7 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ViewportUi::ViewportUiManager Class Reference</div>  </div>
@@ -61,6 +60,8 @@
 <div class="contents">
 
 <p>Inherits Handler.</p>
+
+<p>Inherited by UnitTest::ViewportUiManagerTestable.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -173,34 +174,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#a0223ad4e8e7a9e7606b8a9850ec11e5e">Update</a> ()</td></tr>
 <tr class="memdesc:a0223ad4e8e7a9e7606b8a9850ec11e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all registered elements to display up to date. <br/></td></tr>
 <tr class="separator:a0223ad4e8e7a9e7606b8a9850ec11e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a27b1545c3de91fd7271822d2b40d1d67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27b1545c3de91fd7271822d2b40d1d67"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a>, AZStd::shared_ptr<br class="typebreak"/>
-&lt; Internal::ButtonGroup &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#a27b1545c3de91fd7271822d2b40d1d67">m_clusterButtonGroups</a></td></tr>
-<tr class="memdesc:a27b1545c3de91fd7271822d2b40d1d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all registered Clusters. <br/></td></tr>
-<tr class="separator:a27b1545c3de91fd7271822d2b40d1d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abca46999e19517f21ec0815716ef5f4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abca46999e19517f21ec0815716ef5f4b"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a>, <br class="typebreak"/>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; Internal::ButtonGroup &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#abca46999e19517f21ec0815716ef5f4b">m_switcherButtonGroups</a></td></tr>
-<tr class="memdesc:abca46999e19517f21ec0815716ef5f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all registered Switchers. <br/></td></tr>
-<tr class="separator:abca46999e19517f21ec0815716ef5f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d2d64aa9960c2004990cda22f9681a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d2d64aa9960c2004990cda22f9681a6"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">TextFieldId</a>, <br class="typebreak"/>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; Internal::TextField &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#a6d2d64aa9960c2004990cda22f9681a6">m_textFields</a></td></tr>
-<tr class="memdesc:a6d2d64aa9960c2004990cda22f9681a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all registered TextFields. <br/></td></tr>
-<tr class="separator:a6d2d64aa9960c2004990cda22f9681a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9a152e637d7923b4caa300c31a9d4df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9a152e637d7923b4caa300c31a9d4df"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; Internal::ViewportUiDisplay &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#ab9a152e637d7923b4caa300c31a9d4df">m_viewportUi</a></td></tr>
-<tr class="memdesc:ab9a152e637d7923b4caa300c31a9d4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lower level graphical API for Viewport UI. <br/></td></tr>
-<tr class="separator:ab9a152e637d7923b4caa300c31a9d4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ViewportUi/ViewportUiManager.h</li>
@@ -208,7 +181,7 @@ AZStd::unique_ptr<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

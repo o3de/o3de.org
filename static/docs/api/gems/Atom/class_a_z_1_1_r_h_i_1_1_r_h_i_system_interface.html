@@ -69,19 +69,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3855228694de5199e1667700c375276"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3855228694de5199e1667700c375276"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface.html">RHISystemInterface</a>)</td></tr>
 <tr class="separator:ae3855228694de5199e1667700c375276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf4ea80504336be2c2fe72bc6aff6d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbf4ea80504336be2c2fe72bc6aff6d0"></a>
-virtual <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">RHI::Device</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevice</b> ()=0</td></tr>
-<tr class="separator:acbf4ea80504336be2c2fe72bc6aff6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eda549c0063fefdfcb3d0a4b1b0df11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eda549c0063fefdfcb3d0a4b1b0df11"></a>
+virtual <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">RHI::Device</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevice</b> (int deviceIndex=MultiDevice::DefaultDeviceIndex)=0</td></tr>
+<tr class="separator:a4eda549c0063fefdfcb3d0a4b1b0df11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986a1ab2caa4f9f136368d29aef78241"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a986a1ab2caa4f9f136368d29aef78241"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceCount</b> ()=0</td></tr>
+<tr class="separator:a986a1ab2caa4f9f136368d29aef78241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22ad191fcc624f836b060d5440acdc6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22ad191fcc624f836b060d5440acdc6b"></a>
 virtual <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html">RHI::DrawListTagRegistry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawListTagRegistry</b> ()=0</td></tr>
 <tr class="separator:a22ad191fcc624f836b060d5440acdc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4776e3cb5ca07344b7402b586136edb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4776e3cb5ca07344b7402b586136edb7"></a>
 virtual <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html">RHI::PipelineStateCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipelineStateCache</b> ()=0</td></tr>
 <tr class="separator:a4776e3cb5ca07344b7402b586136edb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18fa8495b4aaa3a91d1f49f18121c3c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18fa8495b4aaa3a91d1f49f18121c3c5"></a>
-virtual const <br class="typebreak"/>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_scheduler_compile_request.html">RHI::FrameSchedulerCompileRequest</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameSchedulerCompileRequest</b> () const =0</td></tr>
-<tr class="separator:a18fa8495b4aaa3a91d1f49f18121c3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a368b3125ead4c1cd744bd6a3e2d4dafc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a368b3125ead4c1cd744bd6a3e2d4dafc"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ModifyFrameSchedulerStatisticsFlags</b> (RHI::FrameSchedulerStatisticsFlags statisticsFlags, bool enableFlags)=0</td></tr>
 <tr class="separator:a368b3125ead4c1cd744bd6a3e2d4dafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,17 +99,13 @@ virtual const <br class="typebreak"/>
 virtual const <br class="typebreak"/>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_pool_descriptor.html">RHI::TransientAttachmentPoolDescriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransientAttachmentPoolDescriptor</b> () const =0</td></tr>
 <tr class="separator:a66e087858af1e2ebd1fe022aa76df198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc060b9cabae3599a37056cf53897b13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc060b9cabae3599a37056cf53897b13"></a>
+<tr class="memitem:a64c853b4946384de96d096db94ddce8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64c853b4946384de96d096db94ddce8d"></a>
 virtual ConstPtr<br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_platform_limits_descriptor.html">PlatformLimitsDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlatformLimitsDescriptor</b> () const =0</td></tr>
-<tr class="separator:afc060b9cabae3599a37056cf53897b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_platform_limits_descriptor.html">PlatformLimitsDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlatformLimitsDescriptor</b> (int deviceIndex=MultiDevice::DefaultDeviceIndex) const =0</td></tr>
+<tr class="separator:a64c853b4946384de96d096db94ddce8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa941e201fe2dd1cae9f4390558740b1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa941e201fe2dd1cae9f4390558740b1e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueRayTracingShaderTableForBuild</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_shader_table.html">RayTracingShaderTable</a> *rayTracingShaderTable)=0</td></tr>
 <tr class="separator:aa941e201fe2dd1cae9f4390558740b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a392e94b50234df322dcc67a9ff4349ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a392e94b50234df322dcc67a9ff4349ca"></a>
-virtual const <br class="typebreak"/>
-<a class="el" href="class_a_z_1_1_r_h_i_1_1_physical_device_descriptor.html">PhysicalDeviceDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalDeviceDescriptor</b> ()=0</td></tr>
-<tr class="separator:a392e94b50234df322dcc67a9ff4349ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11048a9ff2c8f9ec1e7b795b872f4cf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11048a9ff2c8f9ec1e7b795b872f4cf7"></a>
 virtual <a class="el" href="class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html">XRRenderingInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetXRSystem</b> () const =0</td></tr>
 <tr class="separator:a11048a9ff2c8f9ec1e7b795b872f4cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +122,7 @@ static <a class="el" href="class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:24:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

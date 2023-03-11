@@ -104,6 +104,8 @@ ActionManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:afbabc8c2f7449d20682bb85b53c61a53"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
 ActionManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#afbabc8c2f7449d20682bb85b53c61a53">SetActionIconPath</a> (const AZStd::string &amp;actionIdentifier, const AZStd::string &amp;iconPath)=0</td></tr>
 <tr class="separator:afbabc8c2f7449d20682bb85b53c61a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6509658bce87ee00d02ac3404a824076"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#a6509658bce87ee00d02ac3404a824076">GenerateActionAlphabeticalSortKey</a> (const AZStd::string &amp;actionIdentifier)=0</td></tr>
+<tr class="separator:a6509658bce87ee00d02ac3404a824076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af713b3c8b63e0be00d8e5debf3e40c31"><td class="memItemLeft" align="right" valign="top">virtual ActionManagerBooleanResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html#af713b3c8b63e0be00d8e5debf3e40c31">IsActionEnabled</a> (const AZStd::string &amp;actionIdentifier) const =0</td></tr>
 <tr class="separator:af713b3c8b63e0be00d8e5debf3e40c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e2ade1331afa13604605f5ca3a9f69a"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
@@ -236,6 +238,38 @@ ActionManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom">
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A successful outcome object, or a string with a message detailing the error in case of failure. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6509658bce87ee00d02ac3404a824076"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int AzToolsFramework::ActionManagerInterface::GenerateActionAlphabeticalSortKey </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>actionIdentifier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generates a sort key from the action's name that can be used to sort alphabetically. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actionIdentifier</td><td>The action identifier to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A sortKey if the action was found, or the max integer otherwise. </dd></dl>
 
 </div>
 </div>
@@ -1356,7 +1390,7 @@ ActionManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

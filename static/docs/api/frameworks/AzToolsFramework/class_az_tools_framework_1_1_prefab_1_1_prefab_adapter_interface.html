@@ -58,19 +58,17 @@
 <div class="title">AzToolsFramework::Prefab::PrefabAdapterInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Inherited by <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_adapter.html">AzToolsFramework::Prefab::PrefabAdapter</a><code> [private]</code>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8214c338b49a653e17f493394264e65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8214c338b49a653e17f493394264e65"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_adapter_interface.html">PrefabAdapterInterface</a>,&quot;{8272C235-1642-432F-8A51-63E9B4488D55}&quot;)</td></tr>
 <tr class="separator:ab8214c338b49a653e17f493394264e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a652294a2e57acd27a755cb5552c1c04e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_adapter_interface.html#a652294a2e57acd27a755cb5552c1c04e">AddPropertyHandlerIfOverridden</a> (AZ::DocumentPropertyEditor::AdapterBuilder *adapterBuilder, const AZ::Dom::Path &amp;relativePathFromEntity, AZ::EntityId entityId)=0</td></tr>
-<tr class="separator:a652294a2e57acd27a755cb5552c1c04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01cc64dfed40ad44d4e2c9606fed75d1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_adapter_interface.html#a01cc64dfed40ad44d4e2c9606fed75d1">AddPropertyLabelNode</a> (AZ::DocumentPropertyEditor::AdapterBuilder *adapterBuilder, AZStd::string_view labelText, const AZ::Dom::Path &amp;relativePathFromEntity, AZ::EntityId entityId)=0</td></tr>
+<tr class="separator:a01cc64dfed40ad44d4e2c9606fed75d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a652294a2e57acd27a755cb5552c1c04e"></a>
+<a class="anchor" id="a01cc64dfed40ad44d4e2c9606fed75d1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -78,10 +76,16 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AzToolsFramework::Prefab::PrefabAdapterInterface::AddPropertyHandlerIfOverridden </td>
+          <td class="memname">virtual void AzToolsFramework::Prefab::PrefabAdapterInterface::AddPropertyLabelNode </td>
           <td>(</td>
           <td class="paramtype">AZ::DocumentPropertyEditor::AdapterBuilder *&#160;</td>
           <td class="paramname"><em>adapterBuilder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>labelText</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -107,10 +111,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds a property handler to the DPE DOM if an override is present on the entity at the provided path. </p>
+<p>Adds a property label node to the DPE DOM and configures its style if an override is present on the entity at the provided path. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adapterBuilder</td><td>The builder to use to add the property handler. It could have already added other things to DOM. </td></tr>
+    <tr><td class="paramname">adapterBuilder</td><td>The builder to use to add the property label node. </td></tr>
+    <tr><td class="paramname">labelText</td><td>The text string to be displayed in label. </td></tr>
     <tr><td class="paramname">relativePathFromEntity</td><td>The path as seen by the entity a component or its properties. </td></tr>
     <tr><td class="paramname">entityId</td><td>The entity id to use to query the prefab system about the presence of overrides. </td></tr>
   </table>
@@ -125,7 +130,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

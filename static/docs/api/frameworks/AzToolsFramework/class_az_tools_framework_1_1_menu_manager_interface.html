@@ -104,6 +104,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54864e969514c9fa13d6638a757ecaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a3ebdab3e2b471bf8157a0c632c29b"><td class="memItemLeft" align="right" valign="top">virtual MenuManagerIntegerResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#ac1a3ebdab3e2b471bf8157a0c632c29b">GetSortKeyOfMenuInMenuBar</a> (const AZStd::string &amp;menuBarIdentifier, const AZStd::string &amp;menuIdentifier) const =0</td></tr>
 <tr class="separator:ac1a3ebdab3e2b471bf8157a0c632c29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade217830dcbe1cbb0e59c2d76b06c6e5"><td class="memItemLeft" align="right" valign="top">virtual MenuManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#ade217830dcbe1cbb0e59c2d76b06c6e5">DisplayMenuAtScreenPosition</a> (const AZStd::string &amp;menuIdentifier, const QPoint &amp;screenPosition) const =0</td></tr>
+<tr class="separator:ade217830dcbe1cbb0e59c2d76b06c6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22733ac9669160df455615cc8ab21b34"><td class="memItemLeft" align="right" valign="top">virtual MenuManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html#a22733ac9669160df455615cc8ab21b34">DisplayMenuUnderCursor</a> (const AZStd::string &amp;menuIdentifier) const =0</td></tr>
+<tr class="separator:a22733ac9669160df455615cc8ab21b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html">MenuManagerInterface</a> Interface to register and manage menus in the Editor. </p>
@@ -434,6 +438,81 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A successful outcome object, or a string with a message detailing the error in case of failure. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ade217830dcbe1cbb0e59c2d76b06c6e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MenuManagerOperationResult AzToolsFramework::MenuManagerInterface::DisplayMenuAtScreenPosition </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>menuIdentifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPoint &amp;&#160;</td>
+          <td class="paramname"><em>screenPosition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Show the menu at the position provided. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menuIdentifier</td><td>The identifier for the menu to display. </td></tr>
+    <tr><td class="paramname">screenPosition</td><td>The position where the menu should appear. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A successful outcome object if the menu could be displayed, or a string with a message detailing the error in case of failure. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a22733ac9669160df455615cc8ab21b34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MenuManagerOperationResult AzToolsFramework::MenuManagerInterface::DisplayMenuUnderCursor </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>menuIdentifier</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Show the menu under the mouse cursor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menuIdentifier</td><td>The identifier for the menu to display. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A successful outcome object if the menu could be displayed, or a string with a message detailing the error in case of failure. </dd></dl>
 
 </div>
 </div>
@@ -905,7 +984,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

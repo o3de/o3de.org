@@ -51,7 +51,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_audio_1_1_ring_buffer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Audio::RingBuffer&lt; SampleType, typename &gt; Class Template Reference</div>  </div>
@@ -90,23 +89,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a45420b9b98460366401cb8e8d2bdfb5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45420b9b98460366401cb8e8d2bdfb5b"></a>
 static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>s_bytesPerSample</b> = sizeof(SampleType)</td></tr>
 <tr class="separator:a45420b9b98460366401cb8e8d2bdfb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aea885c5f921c516385cdfa814cf13292"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_ring_buffer.html#aea885c5f921c516385cdfa814cf13292">ResetBuffer</a> () override</td></tr>
-<tr class="separator:aea885c5f921c516385cdfa814cf13292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f70cb553b374c5fb9455605ff917046"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f70cb553b374c5fb9455605ff917046"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateData</b> (size_t numSamples)</td></tr>
-<tr class="separator:a6f70cb553b374c5fb9455605ff917046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe153cba81f5e6faad321f3141a1d215"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe153cba81f5e6faad321f3141a1d215"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DeallocateData</b> ()</td></tr>
-<tr class="separator:abe153cba81f5e6faad321f3141a1d215"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94e5943c448588846f905ecaf48c596b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94e5943c448588846f905ecaf48c596b"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>SamplesReady</b> () const </td></tr>
-<tr class="separator:a94e5943c448588846f905ecaf48c596b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce08ab012510dab7bef802f689a7c86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ce08ab012510dab7bef802f689a7c86"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>SamplesUnused</b> () const </td></tr>
-<tr class="separator:a1ce08ab012510dab7bef802f689a7c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aafeb3466fcd64b21cfd84e5f70b873c1"></a>
@@ -224,41 +206,13 @@ template&lt;typename SampleType , typename  = AZStd::enable_if_t&lt;AZStd::is_ar
 
 </div>
 </div>
-<a class="anchor" id="aea885c5f921c516385cdfa814cf13292"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename SampleType , typename  = AZStd::enable_if_t&lt;AZStd::is_arithmetic&lt;SampleType&gt;::value&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_audio_1_1_ring_buffer.html">Audio::RingBuffer</a>&lt; SampleType, typename &gt;::ResetBuffer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Zeros the ringbuffer data and resets indices. </p>
-
-<p>Implements <a class="el" href="class_audio_1_1_ring_buffer_base.html#a257571ae050bfdd8698ecba76c85e821">Audio::RingBufferBase</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/AudioSystem/Code/Include/Engine/AudioRingBuffer.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:01 for Open 3D Engine AudioSystem Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:38 for Open 3D Engine AudioSystem Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

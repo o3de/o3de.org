@@ -98,8 +98,8 @@ ToolBarManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:abea86625bfc6e87d7e39d0ce0358d68f"><td class="memItemLeft" align="right" valign="top">virtual <br class="typebreak"/>
 ToolBarManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#abea86625bfc6e87d7e39d0ce0358d68f">AddToolBarToToolBarArea</a> (const AZStd::string &amp;toolBarAreaIdentifier, const AZStd::string &amp;toolBarIdentifier, int sortIndex)=0</td></tr>
 <tr class="separator:abea86625bfc6e87d7e39d0ce0358d68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d43d87c9498fce7952864032fa344da"><td class="memItemLeft" align="right" valign="top">virtual QToolBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#a0d43d87c9498fce7952864032fa344da">GetToolBar</a> (const AZStd::string &amp;toolBarIdentifier)=0</td></tr>
-<tr class="separator:a0d43d87c9498fce7952864032fa344da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76fadc7dc8c08f8ee38dd460406cf0e"><td class="memItemLeft" align="right" valign="top">virtual QToolBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#ab76fadc7dc8c08f8ee38dd460406cf0e">GenerateToolBar</a> (const AZStd::string &amp;toolBarIdentifier)=0</td></tr>
+<tr class="separator:ab76fadc7dc8c08f8ee38dd460406cf0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a995e1616f1fd1240337c4dea2883cd02"><td class="memItemLeft" align="right" valign="top">virtual ToolBarManagerIntegerResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#a995e1616f1fd1240337c4dea2883cd02">GetSortKeyOfActionInToolBar</a> (const AZStd::string &amp;toolBarIdentifier, const AZStd::string &amp;actionIdentifier) const =0</td></tr>
 <tr class="separator:a995e1616f1fd1240337c4dea2883cd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50e6825026690d0704dc256aa76bf561"><td class="memItemLeft" align="right" valign="top">virtual ToolBarManagerIntegerResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html#a50e6825026690d0704dc256aa76bf561">GetSortKeyOfWidgetInToolBar</a> (const AZStd::string &amp;toolBarIdentifier, const AZStd::string &amp;widgetActionIdentifier) const =0</td></tr>
@@ -401,6 +401,38 @@ ToolBarManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
+<a class="anchor" id="ab76fadc7dc8c08f8ee38dd460406cf0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QToolBar* AzToolsFramework::ToolBarManagerInterface::GenerateToolBar </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>toolBarIdentifier</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generate an instance of a ToolBar from its identifier. The requester should take care of correctly parenting and deleting the ToolBar once it is no longer needed. Note that the ToolBar Manager system will still retain control over the contents of the ToolBar and clear and re-populate it when necessary. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toolBarIdentifier</td><td>The identifier for the ToolBar to generate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A raw pointer to the new QToolBar object. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a995e1616f1fd1240337c4dea2883cd02"></a>
 <div class="memitem">
 <div class="memproto">
@@ -484,38 +516,6 @@ ToolBarManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom"
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A successful outcome object containing the sort key, or a string with a message detailing the error in case of failure. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0d43d87c9498fce7952864032fa344da"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual QToolBar* AzToolsFramework::ToolBarManagerInterface::GetToolBar </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>toolBarIdentifier</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Retrieve a QToolBar from its identifier. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">toolBarIdentifier</td><td>The identifier for the ToolBar to retrieve. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A raw pointer to the QToolBar object. </dd></dl>
 
 </div>
 </div>
@@ -704,7 +704,7 @@ ToolBarManagerOperationResult&#160;</td><td class="memItemRight" valign="bottom"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

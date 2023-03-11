@@ -54,9 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_keyboard_1_1_implementation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceKeyboard::Implementation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -108,41 +105,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d35c57245c54fc5e7f13476d0c6623a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html">Implementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#a0d35c57245c54fc5e7f13476d0c6623a">Create</a> (<a class="el" href="class_az_framework_1_1_input_device_keyboard.html">InputDeviceKeyboard</a> &amp;inputDevice)</td></tr>
 <tr class="separator:a0d35c57245c54fc5e7f13476d0c6623a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:a3f860c801ad70f22e778e8b6b912f0b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f860c801ad70f22e778e8b6b912f0b4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#a3f860c801ad70f22e778e8b6b912f0b4">RawKeyEventQueueByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, AZStd::vector&lt; bool &gt;&gt;</td></tr>
-<tr class="memdesc:a3f860c801ad70f22e778e8b6b912f0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for verbose container class. <br/></td></tr>
-<tr class="separator:a3f860c801ad70f22e778e8b6b912f0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae59d65deb56278348a761ab9cd40a126"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#ae59d65deb56278348a761ab9cd40a126">QueueRawKeyEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;inputChannelId, bool rawKeyState)</td></tr>
-<tr class="separator:ae59d65deb56278348a761ab9cd40a126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa46296bf0c16fd2894df2c9b031bf660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#aa46296bf0c16fd2894df2c9b031bf660">QueueRawTextEvent</a> (const AZStd::string &amp;textUTF8)</td></tr>
-<tr class="separator:aa46296bf0c16fd2894df2c9b031bf660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51346780f053709e4bac71afc8262d70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#a51346780f053709e4bac71afc8262d70">ProcessRawEventQueues</a> ()</td></tr>
-<tr class="separator:a51346780f053709e4bac71afc8262d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2c68790ada4f212f46a452ecf90de68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2c68790ada4f212f46a452ecf90de68"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#aa2c68790ada4f212f46a452ecf90de68">ResetInputChannelStates</a> ()</td></tr>
-<tr class="memdesc:aa2c68790ada4f212f46a452ecf90de68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
-<tr class="separator:aa2c68790ada4f212f46a452ecf90de68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:adf8bc7c8f115740cd63ed4d80afe4914"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf8bc7c8f115740cd63ed4d80afe4914"></a>
-<a class="el" href="class_az_framework_1_1_input_device_keyboard.html">InputDeviceKeyboard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#adf8bc7c8f115740cd63ed4d80afe4914">m_inputDevice</a></td></tr>
-<tr class="memdesc:adf8bc7c8f115740cd63ed4d80afe4914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the input device. <br/></td></tr>
-<tr class="separator:adf8bc7c8f115740cd63ed4d80afe4914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8d86feafcb05c842eb5950f8f0dbcae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8d86feafcb05c842eb5950f8f0dbcae"></a>
-<a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#a3f860c801ad70f22e778e8b6b912f0b4">RawKeyEventQueueByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#af8d86feafcb05c842eb5950f8f0dbcae">m_rawKeyEventQueuesById</a></td></tr>
-<tr class="memdesc:af8d86feafcb05c842eb5950f8f0dbcae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw key event queues by id. <br/></td></tr>
-<tr class="separator:af8d86feafcb05c842eb5950f8f0dbcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d557b8bf6171622bda2091fd063989"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48d557b8bf6171622bda2091fd063989"></a>
-AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#a48d557b8bf6171622bda2091fd063989">m_rawTextEventQueue</a></td></tr>
-<tr class="memdesc:a48d557b8bf6171622bda2091fd063989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw text event queue. <br/></td></tr>
-<tr class="separator:a48d557b8bf6171622bda2091fd063989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for platform specific implementations of keyboard input devices. </p>
@@ -298,103 +260,6 @@ AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="
 
 </div>
 </div>
-<a class="anchor" id="a51346780f053709e4bac71afc8262d70"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzFramework::InputDeviceKeyboard::Implementation::ProcessRawEventQueues </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Process raw input events that have been queued since the last call to this function. This function is not thread safe, and so should only be called from the main thread. </p>
-
-</div>
-</div>
-<a class="anchor" id="ae59d65deb56278348a761ab9cd40a126"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzFramework::InputDeviceKeyboard::Implementation::QueueRawKeyEvent </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;&#160;</td>
-          <td class="paramname"><em>inputChannelId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>rawKeyState</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Queue raw key events to be processed in the next call to ProcessRawEventQueues. This function is not thread safe and so should only be called from the main thread. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inputChannelId</td><td>The input channel id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawKeyState</td><td>The raw key state </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa46296bf0c16fd2894df2c9b031bf660"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzFramework::InputDeviceKeyboard::Implementation::QueueRawTextEvent </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>textUTF8</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Queue raw text events to be processed in the next call to ProcessRawEventQueues. This function is not thread safe and so should only be called from the main thread. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">textUTF8</td><td>The text to queue (encoded using UTF-8) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="adf95d15422195925f0b34bcb7d93b57a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +297,7 @@ AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

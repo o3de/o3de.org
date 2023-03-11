@@ -55,7 +55,6 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-slots">Protected Slots</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_table_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetBrowserTableView Class Reference</div>  </div>
@@ -122,10 +121,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RenameEntry</b> ()</t
 <tr class="memitem:abe1188b763bf3aa4479c4ae184803ec2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe1188b763bf3aa4479c4ae184803ec2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AfterRename</b> (QString newVal)</td></tr>
 <tr class="separator:abe1188b763bf3aa4479c4ae184803ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0df449ea6a5679353f4f7700e7964a45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0df449ea6a5679353f4f7700e7964a45"></a>
-AZStd::vector<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSelectedAssets</b> (bool includeProducts=true) const </td></tr>
-<tr class="separator:a0df449ea6a5679353f4f7700e7964a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243d6f3a31f9fe05a31178f3e9e70dff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a243d6f3a31f9fe05a31178f3e9e70dff"></a>
+AZStd::vector&lt; const <br class="typebreak"/>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSelectedAssets</b> (bool includeProducts=true) const </td></tr>
+<tr class="separator:a243d6f3a31f9fe05a31178f3e9e70dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb608004d303be765f542dcaf79b379"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eb608004d303be765f542dcaf79b379"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectProduct</b> (AZ::Data::AssetId assetID) override</td></tr>
 <tr class="separator:a6eb608004d303be765f542dcaf79b379"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,18 +140,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()
 <tr class="memitem:a1410d0b123c8b243c61a2a9adc18facc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1410d0b123c8b243c61a2a9adc18facc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetBrowserComponentReady</b> () override</td></tr>
 <tr class="separator:a1410d0b123c8b243c61a2a9adc18facc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
-Protected Slots</h2></td></tr>
-<tr class="memitem:ae677e6e76a60f1a57738b254f317a73c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae677e6e76a60f1a57738b254f317a73c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>selectionChanged</b> (const QItemSelection &amp;selected, const QItemSelection &amp;deselected) override</td></tr>
-<tr class="separator:ae677e6e76a60f1a57738b254f317a73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44af62aa706780c82dfea5cce327189e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44af62aa706780c82dfea5cce327189e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rowsAboutToBeRemoved</b> (const QModelIndex &amp;parent, int start, int end) override</td></tr>
-<tr class="separator:a44af62aa706780c82dfea5cce327189e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a575d471cecf4f32817ce8ad50287a8b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a575d471cecf4f32817ce8ad50287a8b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>layoutChangedSlot</b> (const QList&lt; QPersistentModelIndex &gt; &amp;parents=QList&lt; QPersistentModelIndex &gt;(), QAbstractItemModel::LayoutChangeHint hint=QAbstractItemModel::NoLayoutChangeHint)</td></tr>
-<tr class="separator:a575d471cecf4f32817ce8ad50287a8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Table view that displays the asset browser entries in a list. </p>
@@ -162,7 +149,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>layoutChangedSlot</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

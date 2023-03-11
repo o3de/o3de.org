@@ -72,9 +72,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>DrawItemVisitor</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adcb4edca58a5f3e07b04767f8b48c9c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcb4edca58a5f3e07b04767f8b48c9c9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#adcb4edca58a5f3e07b04767f8b48c9c9">AZ_DISABLE_COPY_MOVE</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">DrawPacket</a>)</td></tr>
-<tr class="memdesc:adcb4edca58a5f3e07b04767f8b48c9c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw packets cannot be move constructed or copied, as they contain an additional memory payload. <br/></td></tr>
+<tr class="memitem:adcb4edca58a5f3e07b04767f8b48c9c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#adcb4edca58a5f3e07b04767f8b48c9c9">AZ_DISABLE_COPY_MOVE</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">DrawPacket</a>)</td></tr>
 <tr class="separator:adcb4edca58a5f3e07b04767f8b48c9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d4c2399f6fe36de9ead58454bebab3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37d4c2399f6fe36de9ead58454bebab3"></a>
 DrawListMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a37d4c2399f6fe36de9ead58454bebab3">GetDrawListMask</a> () const </td></tr>
@@ -100,6 +98,14 @@ DrawFilterMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a9fc1f19717769ad16299cbdc973e4321">operator delete</a> (void *p, size_t size)</td></tr>
 <tr class="memdesc:a9fc1f19717769ad16299cbdc973e4321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded operator delete for freeing a draw packet. <br/></td></tr>
 <tr class="separator:a9fc1f19717769ad16299cbdc973e4321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93415e438be5b239a5d561fecbb2ea12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93415e438be5b239a5d561fecbb2ea12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a93415e438be5b239a5d561fecbb2ea12">SetRootConstant</a> (uint32_t offset, const AZStd::span&lt; uint8_t &gt; &amp;data)</td></tr>
+<tr class="memdesc:a93415e438be5b239a5d561fecbb2ea12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the root constant at the specified interval. The same root constants are shared by all draw items in the draw packet. <br/></td></tr>
+<tr class="separator:a93415e438be5b239a5d561fecbb2ea12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e979239056b9277ebad736e06afa749"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e979239056b9277ebad736e06afa749"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a5e979239056b9277ebad736e06afa749">SetInstanceCount</a> (uint32_t instanceCount)</td></tr>
+<tr class="memdesc:a5e979239056b9277ebad736e06afa749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the instance count in all draw items. <br/></td></tr>
+<tr class="separator:a5e979239056b9277ebad736e06afa749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -115,13 +121,31 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DrawPacketBuilder</b
 <li>Draw packets can be re-used between different views, scenes, or passes. The embedded shader resource groups should represent only the local data necessary to describe the 'object', not the full context including scene / view / pass specific state. They serve as a 'template'.</li>
 <li>The packet is self-contained and does not reference external memory. Use <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet_builder.html">DrawPacketBuilder</a> to construct an instance and either store in an RHI::Ptr or call 'delete' to release. </li>
 </ul>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="adcb4edca58a5f3e07b04767f8b48c9c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::RHI::DrawPacket::AZ_DISABLE_COPY_MOVE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">DrawPacket</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Draw packets cannot be move constructed or copied, as they contain an additional memory payload. Use <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet_builder.html#af333be2ee253516f8dcc863cd5eba6b5">DrawPacketBuilder::Clone</a> to copy a draw packet. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI/DrawPacket.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:24:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

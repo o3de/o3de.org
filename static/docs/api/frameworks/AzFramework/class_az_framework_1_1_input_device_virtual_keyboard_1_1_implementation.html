@@ -54,7 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceVirtualKeyboard::Implementation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -103,15 +102,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5957326e51da158651240ae5a90135d5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html">Implementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html#a5957326e51da158651240ae5a90135d5">Create</a> (<a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html">InputDeviceVirtualKeyboard</a> &amp;inputDevice)</td></tr>
 <tr class="separator:a5957326e51da158651240ae5a90135d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aceef6ef2921f1a973129e344a481e586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html#aceef6ef2921f1a973129e344a481e586">ProcessRawEventQueues</a> ()</td></tr>
-<tr class="separator:aceef6ef2921f1a973129e344a481e586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c2cb14b333b861565e14dc9f7dfe959"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c2cb14b333b861565e14dc9f7dfe959"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html#a0c2cb14b333b861565e14dc9f7dfe959">ResetInputChannelStates</a> ()</td></tr>
-<tr class="memdesc:a0c2cb14b333b861565e14dc9f7dfe959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
-<tr class="separator:a0c2cb14b333b861565e14dc9f7dfe959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for platform specific implementations of virtual keyboard input devices. </p>
@@ -221,30 +211,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="aceef6ef2921f1a973129e344a481e586"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzFramework::InputDeviceVirtualKeyboard::Implementation::ProcessRawEventQueues </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Process raw input events that have been queued since the last call to this function. This function is not thread safe, and so should only be called from the main thread. </p>
-
-</div>
-</div>
 <a class="anchor" id="a75321932935127e3722cfbab4fefae0c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +294,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

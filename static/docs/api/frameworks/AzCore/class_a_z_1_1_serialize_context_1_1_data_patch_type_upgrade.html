@@ -68,18 +68,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90255ef69e37ce0e74f897516d9f1e9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90255ef69e37ce0e74f897516d9f1e9f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_type_upgrade.html">DataPatchTypeUpgrade</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>)</td></tr>
 <tr class="separator:a90255ef69e37ce0e74f897516d9f1e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a233129a1fa6706e42c56d416fa72f965"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a233129a1fa6706e42c56d416fa72f965"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_type_upgrade.html">DataPatchTypeUpgrade</a>,&quot;{E5A2F519-261C-4B81-925F-3730D363AB9C}&quot;, DataPatchUpgrade)</td></tr>
-<tr class="separator:a233129a1fa6706e42c56d416fa72f965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0a2ae0c1402c87fbe97f06b6616982"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb0a2ae0c1402c87fbe97f06b6616982"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
+<tr class="separator:adb0a2ae0c1402c87fbe97f06b6616982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae459739453f38902a175d3c255972cd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae459739453f38902a175d3c255972cd6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>m_upgrade</b> (AZStd::move(upgradeFunc))</td></tr>
 <tr class="separator:ae459739453f38902a175d3c255972cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b93a5f4ad14e5166dfb80234ccaceb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39b93a5f4ad14e5166dfb80234ccaceb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>m_fromTypeID</b> (azrtti_typeid&lt; FromT &gt;())</td></tr>
-<tr class="separator:a39b93a5f4ad14e5166dfb80234ccaceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa37660f7005aa1ad44b4300a605d8bc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa37660f7005aa1ad44b4300a605d8bc1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>m_toTypeID</b> (azrtti_typeid&lt; ToT &gt;())</td></tr>
-<tr class="separator:aa37660f7005aa1ad44b4300a605d8bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f687891656c8cf4360bb304b7200a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79f687891656c8cf4360bb304b7200a3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>m_fromTypeID</b> (<a class="el" href="struct_a_z_1_1_az_type_info.html">AZ::AzTypeInfo</a>&lt; FromT &gt;::<a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>())</td></tr>
+<tr class="separator:a79f687891656c8cf4360bb304b7200a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7d61de04e4ad52e88b04b995f617c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f7d61de04e4ad52e88b04b995f617c6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>m_toTypeID</b> (<a class="el" href="struct_a_z_1_1_az_type_info.html">AZ::AzTypeInfo</a>&lt; ToT &gt;::<a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a>())</td></tr>
+<tr class="separator:a8f7d61de04e4ad52e88b04b995f617c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a1bcc26ba7f007e9f5519691a0c8e80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a1bcc26ba7f007e9f5519691a0c8e80"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_type_upgrade.html">DataPatchTypeUpgrade</a> &amp;RHS) const </td></tr>
 <tr class="separator:a7a1bcc26ba7f007e9f5519691a0c8e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,7 +87,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (con
 <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (const <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> &amp;in) const override</td></tr>
 <tr class="separator:af0eeda6451b5e8ba2a83967092c2d757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf4512656df60c9b9dbce177b71a5e8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf4512656df60c9b9dbce177b71a5e8f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;context, <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_element_node.html">SerializeContext::DataElementNode</a> &amp;node) const override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> &amp;context, <a class="el" href="class_a_z_1_1_serialize_1_1_data_element_node.html">SerializeContext::DataElementNode</a> &amp;node) const override</td></tr>
 <tr class="separator:abf4512656df60c9b9dbce177b71a5e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca7fc270ebff911b4143c3921144152"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ca7fc270ebff911b4143c3921144152"></a>
 <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFromType</b> () const override</td></tr>
@@ -99,9 +99,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Apply</b> (<a class="
 <tr class="memitem:af5e32684baffdd05399347c9a5a300a2 inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5e32684baffdd05399347c9a5a300a2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">DataPatchUpgrade</a>, <a class="el" href="class_a_z_1_1_system_allocator.html">SystemAllocator</a>)</td></tr>
 <tr class="separator:af5e32684baffdd05399347c9a5a300a2 inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52276ef1f6f1de2165543952e35d6f67 inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52276ef1f6f1de2165543952e35d6f67"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">DataPatchUpgrade</a>,&quot;{FD1C3109-0883-45FF-A12F-CAF5E323E954}&quot;)</td></tr>
-<tr class="separator:a52276ef1f6f1de2165543952e35d6f67 inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b59216c4af8f40ad6810880fd0f93f inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32b59216c4af8f40ad6810880fd0f93f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_WITH_NAME_DECL</b> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">DataPatchUpgrade</a>)</td></tr>
+<tr class="separator:a32b59216c4af8f40ad6810880fd0f93f inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57d7c30753728f94be366d14b5d2a6c inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad57d7c30753728f94be366d14b5d2a6c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI_NO_TYPE_INFO_DECL</b> ()</td></tr>
+<tr class="separator:ad57d7c30753728f94be366d14b5d2a6c inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9798b3a1760ed61c52960a397a0e7267 inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9798b3a1760ed61c52960a397a0e7267"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DataPatchUpgrade</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> fieldName, unsigned int fromVersion, unsigned int toVersion)</td></tr>
 <tr class="separator:a9798b3a1760ed61c52960a397a0e7267 inherit pub_methods_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,25 +144,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad20a44c1a52dc3586d8161f477f6c095"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad20a44c1a52dc3586d8161f477f6c095"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>toVersion</b></td></tr>
 <tr class="separator:ad20a44c1a52dc3586d8161f477f6c095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">AZ::SerializeContext::DataPatchUpgrade</a></td></tr>
-<tr class="memitem:a2f62edac4e88a599af9b73768a6accb2 inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f62edac4e88a599af9b73768a6accb2"></a>
-<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetFieldName</b></td></tr>
-<tr class="separator:a2f62edac4e88a599af9b73768a6accb2 inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb8d08f9968775867811acd728c1a2c inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accb8d08f9968775867811acd728c1a2c"></a>
-<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_targetFieldCRC</b></td></tr>
-<tr class="separator:accb8d08f9968775867811acd728c1a2c inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa241bfb64047b959a2985f2c2db5ecfe inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa241bfb64047b959a2985f2c2db5ecfe"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_fromVersion</b></td></tr>
-<tr class="separator:aa241bfb64047b959a2985f2c2db5ecfe inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac276adc0941e6119781376ed119c9be1 inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac276adc0941e6119781376ed119c9be1"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_toVersion</b></td></tr>
-<tr class="separator:ac276adc0941e6119781376ed119c9be1 inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4fe340154016bd952d572d340f5dffa inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4fe340154016bd952d572d340f5dffa"></a>
-DataPatchUpgradeType&#160;</td><td class="memItemRight" valign="bottom"><b>m_upgradeType</b></td></tr>
-<tr class="separator:ad4fe340154016bd952d572d340f5dffa inherit pro_attribs_class_a_z_1_1_serialize_context_1_1_data_patch_upgrade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Serialization/SerializeContext.h</li>
@@ -167,7 +151,7 @@ DataPatchUpgradeType&#160;</td><td class="memItemRight" valign="bottom"><b>m_upg
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

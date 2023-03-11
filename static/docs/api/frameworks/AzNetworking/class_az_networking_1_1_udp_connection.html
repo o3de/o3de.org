@@ -50,8 +50,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_networking_1_1_udp_connection-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -128,61 +126,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ab35a3f69d923955ed39347c93bc10542 inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19fc7bed4d0d9666afa18a2e4ae32a93 inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_networking_1_1_connection_quality.html">ConnectionQuality</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection.html#a19fc7bed4d0d9666afa18a2e4ae32a93">GetConnectionQuality</a> ()</td></tr>
 <tr class="separator:a19fc7bed4d0d9666afa18a2e4ae32a93 inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aff868bf82c6ff91b01a7ef78c1510d39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_connection.html#aff868bf82c6ff91b01a7ef78c1510d39">PrepareReliablePacketForSend</a> (PacketId packetId, SequenceId reliableSequenceId, const <a class="el" href="class_az_networking_1_1_i_packet.html">IPacket</a> &amp;packet)</td></tr>
-<tr class="separator:aff868bf82c6ff91b01a7ef78c1510d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a181fb571b8c3118bf736dc058521a28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_connection.html#a181fb571b8c3118bf736dc058521a28c">ProcessSent</a> (PacketId packetId, const <a class="el" href="class_az_networking_1_1_i_packet.html">IPacket</a> &amp;packet, uint32_t packetSize, ReliabilityType reliability)</td></tr>
-<tr class="separator:a181fb571b8c3118bf736dc058521a28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd2106e3ab7deff1d6d0e8f35b9d5a3e"><td class="memItemLeft" align="right" valign="top">PacketTimeoutResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_connection.html#afd2106e3ab7deff1d6d0e8f35b9d5a3e">ProcessTimeout</a> (PacketId packetId, ReliabilityType reliability)</td></tr>
-<tr class="separator:afd2106e3ab7deff1d6d0e8f35b9d5a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ea98180b09dd2b2d37929c669c6593f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_connection.html#a1ea98180b09dd2b2d37929c669c6593f">ProcessReceived</a> (<a class="el" href="class_az_networking_1_1_udp_packet_header.html">UdpPacketHeader</a> &amp;header, const <a class="el" href="class_az_networking_1_1_network_output_serializer.html">NetworkOutputSerializer</a> &amp;serializer, uint32_t packetSize, AZ::TimeMs currentTimeMs)</td></tr>
-<tr class="separator:a1ea98180b09dd2b2d37929c669c6593f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8daf277ab3cf446c611b99ae66a44e1"><td class="memItemLeft" align="right" valign="top">PacketDispatchResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_connection.html#ac8daf277ab3cf446c611b99ae66a44e1">HandleCorePacket</a> (<a class="el" href="class_az_networking_1_1_i_connection_listener.html">IConnectionListener</a> &amp;listener, <a class="el" href="class_az_networking_1_1_udp_packet_header.html">UdpPacketHeader</a> &amp;header, <a class="el" href="class_az_networking_1_1_i_serializer.html">ISerializer</a> &amp;serializer)</td></tr>
-<tr class="separator:ac8daf277ab3cf446c611b99ae66a44e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e197964e15ee34ad6cb01cf726b0b9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e197964e15ee34ad6cb01cf726b0b9a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_networking_1_1_udp_connection.html">UdpConnection</a>)</td></tr>
-<tr class="separator:a6e197964e15ee34ad6cb01cf726b0b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a15e757bba01d2096d17ff0aa93c105fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15e757bba01d2096d17ff0aa93c105fc"></a>
-<a class="el" href="class_az_networking_1_1_udp_network_interface.html">UdpNetworkInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_networkInterface</b></td></tr>
-<tr class="separator:a15e757bba01d2096d17ff0aa93c105fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfe3b2fcbdb2d594d8783468142fce39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfe3b2fcbdb2d594d8783468142fce39"></a>
-<a class="el" href="class_az_networking_1_1_udp_packet_tracker.html">UdpPacketTracker</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_packetTracker</b></td></tr>
-<tr class="separator:adfe3b2fcbdb2d594d8783468142fce39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbab48262c3d3edad785406566196953"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbab48262c3d3edad785406566196953"></a>
-<a class="el" href="class_az_networking_1_1_udp_reliable_queue.html">UdpReliableQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_reliableQueue</b></td></tr>
-<tr class="separator:acbab48262c3d3edad785406566196953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64fea584c39c808cfc390842bf62db28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64fea584c39c808cfc390842bf62db28"></a>
-<a class="el" href="class_az_networking_1_1_udp_fragment_queue.html">UdpFragmentQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fragmentQueue</b></td></tr>
-<tr class="separator:a64fea584c39c808cfc390842bf62db28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5361678fd2cb9cecc09338db17472e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5361678fd2cb9cecc09338db17472e5"></a>
-ConnectionState&#160;</td><td class="memItemRight" valign="bottom"><b>m_state</b> = ConnectionState::Disconnected</td></tr>
-<tr class="separator:aa5361678fd2cb9cecc09338db17472e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c36da1312d9b6ee89f8e1e34f0977fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c36da1312d9b6ee89f8e1e34f0977fa"></a>
-ConnectionRole&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionRole</b> = ConnectionRole::Connector</td></tr>
-<tr class="separator:a1c36da1312d9b6ee89f8e1e34f0977fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a4eee7df7efcd8d7823cd1d3c8ea74e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a4eee7df7efcd8d7823cd1d3c8ea74e"></a>
-<a class="el" href="class_az_networking_1_1_dtls_endpoint.html">DtlsEndpoint</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dtlsEndpoint</b></td></tr>
-<tr class="separator:a2a4eee7df7efcd8d7823cd1d3c8ea74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d48e87388a84b55b51f90560e1678c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d48e87388a84b55b51f90560e1678c3"></a>
-AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastSentPacketMs</b></td></tr>
-<tr class="separator:a2d48e87388a84b55b51f90560e1678c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59ffeceabee62341520e2e4f54e165e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59ffeceabee62341520e2e4f54e165e6"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_unackedPacketCount</b> = 0</td></tr>
-<tr class="separator:a59ffeceabee62341520e2e4f54e165e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e548e944228154c921abeddc01b969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e548e944228154c921abeddc01b969"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionMtu</b> = MaxUdpTransmissionUnit</td></tr>
-<tr class="separator:ab5e548e944228154c921abeddc01b969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05ee619839fb8b235d9e1980df61eac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05ee619839fb8b235d9e1980df61eac8"></a>
-TimeoutId&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeoutId</b></td></tr>
-<tr class="separator:a05ee619839fb8b235d9e1980df61eac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f8d427105a5a34487a795624244780e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f8d427105a5a34487a795624244780e"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeoutCounter</b> = 0</td></tr>
-<tr class="separator:a7f8d427105a5a34487a795624244780e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -496,105 +439,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpNetworkInterface<
 
 </div>
 </div>
-<a class="anchor" id="ac8daf277ab3cf446c611b99ae66a44e1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">PacketDispatchResult AzNetworking::UdpConnection::HandleCorePacket </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_az_networking_1_1_i_connection_listener.html">IConnectionListener</a> &amp;&#160;</td>
-          <td class="paramname"><em>listener</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_az_networking_1_1_udp_packet_header.html">UdpPacketHeader</a> &amp;&#160;</td>
-          <td class="paramname"><em>header</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_az_networking_1_1_i_serializer.html">ISerializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Handle a core network packet. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">listener</td><td>a connection listener to receive connection related events </td></tr>
-    <tr><td class="paramname">header</td><td>the packet header received to process </td></tr>
-    <tr><td class="paramname">serializer</td><td>the output serializer containing the transmitted packet data </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>PacketDispatchResult result of processing the core packet </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aff868bf82c6ff91b01a7ef78c1510d39"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzNetworking::UdpConnection::PrepareReliablePacketForSend </td>
-          <td>(</td>
-          <td class="paramtype">PacketId&#160;</td>
-          <td class="paramname"><em>packetId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SequenceId&#160;</td>
-          <td class="paramname"><em>reliableSequenceId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_az_networking_1_1_i_packet.html">IPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Prepare a reliable packet for transmission. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packetId</td><td>identifier of the packet being sent </td></tr>
-    <tr><td class="paramname">packet</td><td>reference to the packet being transmitted </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true on success, false on failure </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ad56979178cea6600dd3e040c2ec23aaf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -650,162 +494,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpNetworkInterface<
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the current result code for the dtls handshake operation, failed, pending, or complete </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1ea98180b09dd2b2d37929c669c6593f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzNetworking::UdpConnection::ProcessReceived </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_az_networking_1_1_udp_packet_header.html">UdpPacketHeader</a> &amp;&#160;</td>
-          <td class="paramname"><em>header</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_az_networking_1_1_network_output_serializer.html">NetworkOutputSerializer</a> &amp;&#160;</td>
-          <td class="paramname"><em>serializer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>packetSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::TimeMs&#160;</td>
-          <td class="paramname"><em>currentTimeMs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Process a received packet header. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">header</td><td>the packet header received to process </td></tr>
-    <tr><td class="paramname">serializer</td><td>the output serializer containing the transmitted packet data </td></tr>
-    <tr><td class="paramname">packetSize</td><td>the size of the received packet in bytes </td></tr>
-    <tr><td class="paramname">currentTimeMs</td><td>current wall clock time in milliseconds </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true on successful handling of the received header </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a181fb571b8c3118bf736dc058521a28c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzNetworking::UdpConnection::ProcessSent </td>
-          <td>(</td>
-          <td class="paramtype">PacketId&#160;</td>
-          <td class="paramname"><em>packetId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_az_networking_1_1_i_packet.html">IPacket</a> &amp;&#160;</td>
-          <td class="paramname"><em>packet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>packetSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ReliabilityType&#160;</td>
-          <td class="paramname"><em>reliability</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Process a packet for sending. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packetId</td><td>identifier of the packet being sent </td></tr>
-    <tr><td class="paramname">packet</td><td>reference to the packet being transmitted </td></tr>
-    <tr><td class="paramname">packetSize</td><td>packet size in bytes </td></tr>
-    <tr><td class="paramname">reliability</td><td>whether or not to guarantee delivery </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="afd2106e3ab7deff1d6d0e8f35b9d5a3e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">PacketTimeoutResult AzNetworking::UdpConnection::ProcessTimeout </td>
-          <td>(</td>
-          <td class="paramtype">PacketId&#160;</td>
-          <td class="paramname"><em>packetId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ReliabilityType&#160;</td>
-          <td class="paramname"><em>reliability</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Process a timed out packet header. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">packetId</td><td>identifier of the packet that timed out </td></tr>
-    <tr><td class="paramname">reliability</td><td>whether or not the packet that timed out was marked reliable </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>PacketTimeoutResult::Acked if the packet was confirmed to be received prior to timeout, PacketTimeoutResult::Lost if not </dd></dl>
 
 </div>
 </div>
@@ -971,7 +659,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpNetworkInterface<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:06 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

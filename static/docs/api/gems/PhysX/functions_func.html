@@ -117,6 +117,9 @@
 <li>CreateMaterialWithRandomId()
 : <a class="el" href="class_phys_x_1_1_material.html#a4a0000e7314e1e6a1af41e36acfdeaed">PhysX::Material</a>
 </li>
+<li>CreateMeshAsset()
+: <a class="el" href="class_phys_x_1_1_pipeline_1_1_mesh_asset_data.html#aab62a8c7ed68741c014cef499817151f">PhysX::Pipeline::MeshAssetData</a>
+</li>
 <li>CreateTriangleMeshFromCooked()
 : <a class="el" href="class_phys_x_1_1_system_requests.html#a89e8603f87bfdadc2e1c031f9f2aef11">PhysX::SystemRequests</a>
 </li>
@@ -134,9 +137,6 @@
 <li>Execute()
 : <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html#afcef4506a00591e57ce4326482ee3aa6">NumericalMethods::Optimization::Function</a>
 </li>
-<li>ExecuteImpl()
-: <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html#acae94c9c558941bf3e69af0a9fa0128f">NumericalMethods::Optimization::Function</a>
-</li>
 </ul>
 
 
@@ -152,16 +152,19 @@
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>GetAssetScale()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a0dddba6fd878c9a33ed6c146828cae41">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_mesh_collider_component_requests.html#a8e23c7c2d2afa15ba124b744e8c7348b">PhysX::EditorMeshColliderComponentRequests</a>
 </li>
 <li>GetBoolValue()
 : <a class="el" href="class_phys_x_1_1_editor_joint_requests.html#ac26dd20b34a8bc1d984cf54d5c2f475f">PhysX::EditorJointRequests</a>
 </li>
+<li>GetBoxDimensions()
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#a80eb8833df9bed83d3e6149287213e00">PhysX::EditorPrimitiveColliderComponentRequests</a>
+</li>
 <li>GetCapsuleHeight()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#ae61afddcb95072622f49d1863ebf5aa7">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#a6658970315734888e19017d56febb142">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>GetCapsuleRadius()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a595c5df1eca99e7d13b6f56f73fea1f8">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#aac01a2265e75e2d0b7a705a0654588ba">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>GetColliderOffset()
 : <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#aff9faa96f4492bc1a9f3cd47dbe9e75c">PhysX::EditorColliderComponentRequests</a>
@@ -179,13 +182,13 @@
 : <a class="el" href="class_phys_x_1_1_system_requests.html#a550ad6fd868177fabf997f348e48c903">PhysX::SystemRequests</a>
 </li>
 <li>GetCylinderHeight()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a4800f8653470702b8dfc57ca320a1953">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#a5982b1434df8abf5f35fdd43df5b6df4">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>GetCylinderRadius()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a4d943522e73aebb506478375341fc1fc">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#ad4faf48ba503797a4d78863aeb3fd09f">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>GetCylinderSubdivisionCount()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#ada7ab805d4e136eb513e23a935e9ff17">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#a7eb6f4b930434dc156b80a7fa87dad6b">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>GetDamping()
 : <a class="el" href="class_phys_x_1_1_force_linear_damping_requests.html#a7da9ae50ee2181bbc5b202f73db79948">PhysX::ForceLinearDampingRequests</a>
@@ -246,8 +249,8 @@
 : <a class="el" href="class_phys_x_1_1_force_spline_follow_requests.html#a7f2be5d6668df660454b6a162bdf6515">PhysX::ForceSplineFollowRequests</a>
 </li>
 <li>GetMagnitude()
-: <a class="el" href="class_phys_x_1_1_force_world_space_requests.html#a562b6b25a50dca52b8806dae54434f31">PhysX::ForceWorldSpaceRequests</a>
-, <a class="el" href="class_phys_x_1_1_force_local_space_requests.html#ab6706b1efc61a744c1cc9eb20dbdbc37">PhysX::ForceLocalSpaceRequests</a>
+: <a class="el" href="class_phys_x_1_1_force_local_space_requests.html#ab6706b1efc61a744c1cc9eb20dbdbc37">PhysX::ForceLocalSpaceRequests</a>
+, <a class="el" href="class_phys_x_1_1_force_world_space_requests.html#a562b6b25a50dca52b8806dae54434f31">PhysX::ForceWorldSpaceRequests</a>
 , <a class="el" href="class_phys_x_1_1_force_point_requests.html#a6f44621be2bb1848b8719974b7f4eb31">PhysX::ForcePointRequests</a>
 </li>
 <li>GetMeshAsset()
@@ -268,11 +271,8 @@
 <li>GetShapes()
 : <a class="el" href="class_phys_x_1_1_collider_component_requests.html#a5dfc6cd5dd425de4cd1b017cef09fa39">PhysX::ColliderComponentRequests</a>
 </li>
-<li>GetShapeType()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a269ade62a07ef6917f2c70f53067a7af">PhysX::EditorColliderComponentRequests</a>
-</li>
 <li>GetSphereRadius()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a071ef44586012fc146796d6713d0a7e1">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#a7283ac395f3797768888505ba5243f6a">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>GetSubComponentModesState()
 : <a class="el" href="class_phys_x_1_1_editor_joint_requests.html#a5fd77c68ce2177a84de3de7e91bc6c1a">PhysX::EditorJointRequests</a>
@@ -357,16 +357,19 @@
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>SetAssetScale()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a652b88f23677d44527279dabb79b9ff2">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_mesh_collider_component_requests.html#a2d8376543905c4e5b030e68b68375bd4">PhysX::EditorMeshColliderComponentRequests</a>
 </li>
 <li>SetBoolValue()
 : <a class="el" href="class_phys_x_1_1_editor_joint_requests.html#aa333b23357e9d8be9496c59bb1a9cfe1">PhysX::EditorJointRequests</a>
 </li>
+<li>SetBoxDimensions()
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#a6d10790e3bbc8bb57c1f6df16bc8b725">PhysX::EditorPrimitiveColliderComponentRequests</a>
+</li>
 <li>SetCapsuleHeight()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a0c1cbedebce66e08198c8254e94d386d">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#a50339c7ee6ac8b2ef0f7538046ad3f9c">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>SetCapsuleRadius()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a22d86c0623c7f080d55905260916eed1">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#aa093ab675e881967412175d6c84dff03">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>SetColliderOffset()
 : <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a9e1ff02ec51b3ca423ffacf6adc3c3b1">PhysX::EditorColliderComponentRequests</a>
@@ -375,13 +378,13 @@
 : <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#ac7e727ae317632e1d5f4449078f9942a">PhysX::EditorColliderComponentRequests</a>
 </li>
 <li>SetCylinderHeight()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#adcc60e477dffca8e55bf95c119ea0ab8">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#ab71fa8f9f448050bf026513b9d48fd78">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>SetCylinderRadius()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#aa9c2a40cc410633950a6b0f709434327">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#aab23af98a03300123ee74b2f5ac24d0b">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>SetCylinderSubdivisionCount()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a3c3ac053ab933de64adc028bdbe6e877">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#ae74c15974e47f58f8b0e7e0c6a20f893">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>SetDamping()
 : <a class="el" href="class_phys_x_1_1_force_linear_damping_requests.html#afec548ab9e31b3f01d2af7eba3821896">PhysX::ForceLinearDampingRequests</a>
@@ -389,12 +392,15 @@
 <li>SetDampingRatio()
 : <a class="el" href="class_phys_x_1_1_force_spline_follow_requests.html#a2ead5456bf31403bb853287dcce0cdb5">PhysX::ForceSplineFollowRequests</a>
 </li>
+<li>SetData()
+: <a class="el" href="class_phys_x_1_1_pipeline_1_1_mesh_asset.html#ab7850ddc76126cf8267adb3592c8a953">PhysX::Pipeline::MeshAsset</a>
+</li>
 <li>SetDensity()
 : <a class="el" href="class_phys_x_1_1_force_simple_drag_requests.html#a84888e790f43ca7bc4225d0801d09ec5">PhysX::ForceSimpleDragRequests</a>
 </li>
 <li>SetDirection()
-: <a class="el" href="class_phys_x_1_1_force_world_space_requests.html#a924cdcccc858db0434325d6a7d592ae8">PhysX::ForceWorldSpaceRequests</a>
-, <a class="el" href="class_phys_x_1_1_force_local_space_requests.html#a4b15a842b3c5ffe5cbdf31cdcba12b26">PhysX::ForceLocalSpaceRequests</a>
+: <a class="el" href="class_phys_x_1_1_force_local_space_requests.html#a4b15a842b3c5ffe5cbdf31cdcba12b26">PhysX::ForceLocalSpaceRequests</a>
+, <a class="el" href="class_phys_x_1_1_force_world_space_requests.html#a924cdcccc858db0434325d6a7d592ae8">PhysX::ForceWorldSpaceRequests</a>
 </li>
 <li>SetEntityIdValue()
 : <a class="el" href="class_phys_x_1_1_editor_joint_requests.html#ae2808b4b3e4d80b513a05886d3ad93c2">PhysX::EditorJointRequests</a>
@@ -431,8 +437,8 @@
 </li>
 <li>SetMagnitude()
 : <a class="el" href="class_phys_x_1_1_force_local_space_requests.html#afc9761463ce69b808ce6c8c1af1183a9">PhysX::ForceLocalSpaceRequests</a>
-, <a class="el" href="class_phys_x_1_1_force_world_space_requests.html#a1c50c5e2a631a3af98794411b9fb73f2">PhysX::ForceWorldSpaceRequests</a>
 , <a class="el" href="class_phys_x_1_1_force_point_requests.html#a3c013b3b812e2e167f2f92a786d538f9">PhysX::ForcePointRequests</a>
+, <a class="el" href="class_phys_x_1_1_force_world_space_requests.html#a1c50c5e2a631a3af98794411b9fb73f2">PhysX::ForceWorldSpaceRequests</a>
 </li>
 <li>SetMaximumForce()
 : <a class="el" href="class_phys_x_1_1_joint_requests.html#a69a892113fecaa08b14da911f6095599">PhysX::JointRequests</a>
@@ -444,10 +450,10 @@
 : <a class="el" href="class_phys_x_1_1_character_controller_requests.html#a39c86d1e8f7bb96e2b972c9aba16adce">PhysX::CharacterControllerRequests</a>
 </li>
 <li>SetShapeType()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a449cb1467a09f51d6e03638936f670ef">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#a0a763426c76caca0de303d9f4175baec">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>SetSphereRadius()
-: <a class="el" href="class_phys_x_1_1_editor_collider_component_requests.html#a78ff2aef5a6c16d99ad02acee075c3d3">PhysX::EditorColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_primitive_collider_component_requests.html#ac14637ae41511b16b0ed8407092fa68a">PhysX::EditorPrimitiveColliderComponentRequests</a>
 </li>
 <li>SetTargetSpeed()
 : <a class="el" href="class_phys_x_1_1_force_spline_follow_requests.html#aba15ae28ebe2dbc15fb68349c09aea6c">PhysX::ForceSplineFollowRequests</a>
@@ -473,7 +479,7 @@
 
 <h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
 <li>ValidateRigidBodyMeshGeometryType()
-: <a class="el" href="class_phys_x_1_1_editor_collider_validation_requests.html#a65ec5eac3bdee030474b531e6cdcdafa">PhysX::EditorColliderValidationRequests</a>
+: <a class="el" href="class_phys_x_1_1_editor_mesh_collider_validation_requests.html#ab7bc4bcbb606cc8bc2c0c478a61c0082">PhysX::EditorMeshColliderValidationRequests</a>
 </li>
 <li>ValidateSwingLimitY()
 : <a class="el" href="struct_phys_x_1_1_d6_joint_limit_configuration.html#a81ea1934bcb1ce5ce2d25c1d8554062a">PhysX::D6JointLimitConfiguration</a>
@@ -482,7 +488,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:05 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:43 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

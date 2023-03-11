@@ -55,8 +55,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_framework_1_1_input_device_touch_1_1_implementation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceTouch::Implementation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -68,12 +66,6 @@
 
 <p><code>#include &lt;InputDeviceTouch.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html">RawTouchEvent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform agnostic representation of a raw touch event.  <a href="struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a82ccf3bf13dcebc5b5cd781d578b8929"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82ccf3bf13dcebc5b5cd781d578b8929"></a>
@@ -101,24 +93,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a618cdd38ce880496bffcedfff6f5cb3b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_az_framework_1_1_input_device_touch_1_1_implementation.html">Implementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch_1_1_implementation.html#a618cdd38ce880496bffcedfff6f5cb3b">Create</a> (<a class="el" href="class_az_framework_1_1_input_device_touch.html">InputDeviceTouch</a> &amp;inputDevice)</td></tr>
 <tr class="separator:a618cdd38ce880496bffcedfff6f5cb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:a2b7ab5a4d1a25e44213f29d0efa10c34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b7ab5a4d1a25e44213f29d0efa10c34"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch_1_1_implementation.html#a2b7ab5a4d1a25e44213f29d0efa10c34">RawTouchEventQueueByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, AZStd::vector&lt; <a class="el" href="struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html">RawTouchEvent</a> &gt;&gt;</td></tr>
-<tr class="memdesc:a2b7ab5a4d1a25e44213f29d0efa10c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for verbose container class. <br/></td></tr>
-<tr class="separator:a2b7ab5a4d1a25e44213f29d0efa10c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a26d3d880275150cd723c9326d33a8d0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch_1_1_implementation.html#a26d3d880275150cd723c9326d33a8d0c">QueueRawTouchEvent</a> (const <a class="el" href="struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html">RawTouchEvent</a> &amp;rawTouchEvent)</td></tr>
-<tr class="separator:a26d3d880275150cd723c9326d33a8d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41ccc651b9afa01cbd2f14259c2086b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch_1_1_implementation.html#a41ccc651b9afa01cbd2f14259c2086b0">ProcessRawEventQueues</a> ()</td></tr>
-<tr class="separator:a41ccc651b9afa01cbd2f14259c2086b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1676d7d0a5e0241e35ef9e24b147e993"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1676d7d0a5e0241e35ef9e24b147e993"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch_1_1_implementation.html#a1676d7d0a5e0241e35ef9e24b147e993">ResetInputChannelStates</a> ()</td></tr>
-<tr class="memdesc:a1676d7d0a5e0241e35ef9e24b147e993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
-<tr class="separator:a1676d7d0a5e0241e35ef9e24b147e993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for platform specific implementations of touch input devices. </p>
@@ -228,68 +202,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a class="anchor" id="a41ccc651b9afa01cbd2f14259c2086b0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzFramework::InputDeviceTouch::Implementation::ProcessRawEventQueues </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Process raw input events that have been queued since the last call to this function. This function is not thread safe, and so should only be called from the main thread. </p>
-
-</div>
-</div>
-<a class="anchor" id="a26d3d880275150cd723c9326d33a8d0c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzFramework::InputDeviceTouch::Implementation::QueueRawTouchEvent </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html">RawTouchEvent</a> &amp;&#160;</td>
-          <td class="paramname"><em>rawTouchEvent</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Queue raw touch events to be processed in the next call to ProcessRawEventQueues. This function is not thread safe and so should only be called from the main thread. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rawTouchEvent</td><td>The raw touch event </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Input/Devices/Touch/InputDeviceTouch.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

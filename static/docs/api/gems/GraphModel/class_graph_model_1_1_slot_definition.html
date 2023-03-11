@@ -50,7 +50,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_graph_model_1_1_slot_definition-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GraphModel::SlotDefinition Class Reference</div>  </div>
@@ -67,6 +66,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a426af195033b325620341b5dabfc0a82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a426af195033b325620341b5dabfc0a82"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a>,&quot;{917F9C1A-1513-4694-B25A-D6404A4991ED}&quot;)</td></tr>
 <tr class="separator:a426af195033b325620341b5dabfc0a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f263e3647308158a2d5383c8eb18e65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f263e3647308158a2d5383c8eb18e65"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SlotDefinition</b> (SlotDirection slotDirection, SlotType slotType, const AZStd::string &amp;name, const AZStd::string &amp;displayName, const AZStd::string &amp;description={}, const DataTypeList &amp;supportedDataTypes={}, const AZStd::any &amp;defaultValue={}, int minimumSlots={}, int maximumSlots={}, const AZStd::string &amp;addButtonLabel={}, const AZStd::string &amp;addButtonTooltip={}, const AZStd::vector&lt; AZStd::string &gt; &amp;enumValues={}, bool visibleOnNode=true, bool editableOnNode=true)</td></tr>
+<tr class="separator:a8f263e3647308158a2d5383c8eb18e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83faa1716b6a8f64564ed7aa76482a3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83faa1716b6a8f64564ed7aa76482a3b"></a>
 SlotDirection&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlotDirection</b> () const </td></tr>
 <tr class="separator:a83faa1716b6a8f64564ed7aa76482a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,28 +143,6 @@ const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a 
 const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#a161e0597d6235eee488ab6a7c0d6402e">GetExtensionTooltip</a> () const </td></tr>
 <tr class="memdesc:a161e0597d6235eee488ab6a7c0d6402e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the hover tooltip for the label with the '+' sign for adding extendable slots. <br/></td></tr>
 <tr class="separator:a161e0597d6235eee488ab6a7c0d6402e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afd337700f149c28c5ed0bac3efa8a7fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd337700f149c28c5ed0bac3efa8a7fb"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_slot_definition.html#afd337700f149c28c5ed0bac3efa8a7fb">CreateInputData</a> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, const AZStd::vector&lt; AZStd::string &gt; &amp;enumValues={}, bool visibleOnNode=true, bool editableOnNode=true)</td></tr>
-<tr class="memdesc:afd337700f149c28c5ed0bac3efa8a7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This set of factory functions create a <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a> for each of the valid SlotDirection/SlotType combinations. <br/></td></tr>
-<tr class="separator:afd337700f149c28c5ed0bac3efa8a7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ad90fb9bf5213b82675e308d6259016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ad90fb9bf5213b82675e308d6259016"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInputData</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypeList supportedDataTypes, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, const AZStd::vector&lt; AZStd::string &gt; &amp;enumValues={}, bool visibleOnNode=true, bool editableOnNode=true)</td></tr>
-<tr class="separator:a1ad90fb9bf5213b82675e308d6259016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a0acb2bd728de59f3f52fcc02182f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1a0acb2bd728de59f3f52fcc02182f7"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutputData</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, const AZStd::vector&lt; AZStd::string &gt; &amp;enumValues={}, bool visibleOnNode=true, bool editableOnNode=true)</td></tr>
-<tr class="separator:ae1a0acb2bd728de59f3f52fcc02182f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21484c6998c03f03468a1cfad05bc3ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21484c6998c03f03468a1cfad05bc3ed"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInputEvent</b> (AZStd::string_view name, AZStd::string_view displayName, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, bool visibleOnNode=true, bool editableOnNode=true)</td></tr>
-<tr class="separator:a21484c6998c03f03468a1cfad05bc3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac76879b33235c360bc7f51c2c62356f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac76879b33235c360bc7f51c2c62356f2"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutputEvent</b> (AZStd::string_view name, AZStd::string_view displayName, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, bool visibleOnNode=true, bool editableOnNode=true)</td></tr>
-<tr class="separator:ac76879b33235c360bc7f51c2c62356f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8948f2c1fbbd0eb96dd081e0d5a0742"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8948f2c1fbbd0eb96dd081e0d5a0742"></a>
-static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateProperty</b> (AZStd::string_view name, AZStd::string_view displayName, DataTypePtr dataType, AZStd::any defaultValue, AZStd::string_view description, <a class="el" href="struct_graph_model_1_1_extendable_slot_configuration.html">ExtendableSlotConfiguration</a> *extendableSlotConfiguration=nullptr, const AZStd::vector&lt; AZStd::string &gt; &amp;enumValues={}, bool visibleOnNode=true, bool editableOnNode=true)</td></tr>
-<tr class="separator:ab8948f2c1fbbd0eb96dd081e0d5a0742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides static information about a <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a>, like its name and data type. The set of features provided by this slot is determined by the combination of SlotDirection and SlotType, which is set depending on which Create* function is used to create the <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a>.</p>
@@ -194,7 +174,7 @@ static SlotDefinitionPtr&#160;</td><td class="memItemRight" valign="bottom"><b>C
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

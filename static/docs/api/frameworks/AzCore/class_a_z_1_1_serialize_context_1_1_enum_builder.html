@@ -74,19 +74,19 @@ template&lt;class EnumType &gt; </td></tr>
 <tr class="memdesc:a631fa1e3449dcf38d869dbec6685e2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare enum field with a specific value. <br/></td></tr>
 <tr class="separator:a631fa1e3449dcf38d869dbec6685e2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f885b7d21f7fd2af97253ed94d3378a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f885b7d21f7fd2af97253ed94d3378a"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a3f885b7d21f7fd2af97253ed94d3378a">Version</a> (unsigned int version, <a class="el" href="class_a_z_1_1_serialize_context.html#a4d3ad9b8c6e9478dbe2041aaeb8e0ef7">VersionConverter</a> converter=nullptr) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a3f885b7d21f7fd2af97253ed94d3378a">Version</a> (unsigned int version, <a class="el" href="class_a_z_1_1_serialize_context.html#a1065bfda2ff2d1eb3fc0f7f3ee3f2b08">VersionConverter</a> converter=nullptr) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
 <tr class="memdesc:a3f885b7d21f7fd2af97253ed94d3378a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add version control to the structure with optional converter. If not controlled a version of 0 is assigned. <br/></td></tr>
 <tr class="separator:a3f885b7d21f7fd2af97253ed94d3378a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75ce2d12b12f7f3f03af78f98b95c331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75ce2d12b12f7f3f03af78f98b95c331"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a75ce2d12b12f7f3f03af78f98b95c331">Serializer</a> (IDataSerializerPtr serializer) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
-<tr class="memdesc:a75ce2d12b12f7f3f03af78f98b95c331"><td class="mdescLeft">&#160;</td><td class="mdescRight">For data types (usually base types) or types that we handle the full serialize, implement this interface. <br/></td></tr>
-<tr class="separator:a75ce2d12b12f7f3f03af78f98b95c331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928ece859a129ac6672ccb9647d86d59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a928ece859a129ac6672ccb9647d86d59"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a928ece859a129ac6672ccb9647d86d59">Serializer</a> (Serialize::IDataSerializerPtr serializer) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
+<tr class="memdesc:a928ece859a129ac6672ccb9647d86d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">For data types (usually base types) or types that we handle the full serialize, implement this interface. <br/></td></tr>
+<tr class="separator:a928ece859a129ac6672ccb9647d86d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89275b2825fe6e58bfe018839d5f5bc6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a89275b2825fe6e58bfe018839d5f5bc6"></a>
 template&lt;typename SerializerImplementation &gt; </td></tr>
 <tr class="memitem:a89275b2825fe6e58bfe018839d5f5bc6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a89275b2825fe6e58bfe018839d5f5bc6">Serializer</a> () -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
 <tr class="memdesc:a89275b2825fe6e58bfe018839d5f5bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a static instance of specific serializer implementation. Serializer(IDataSerializer*) <br/></td></tr>
 <tr class="separator:a89275b2825fe6e58bfe018839d5f5bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab23e6b8dc978ef18f8c40114d2a11512"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#ab23e6b8dc978ef18f8c40114d2a11512">EventHandler</a> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_i_event_handler.html">IEventHandler</a> *eventHandler) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
+<tr class="memitem:ab23e6b8dc978ef18f8c40114d2a11512"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#ab23e6b8dc978ef18f8c40114d2a11512">EventHandler</a> (<a class="el" href="class_a_z_1_1_serialize_1_1_i_event_handler.html">IEventHandler</a> *eventHandler) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
 <tr class="separator:ab23e6b8dc978ef18f8c40114d2a11512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0433cc2109a8fef0c5b202c6d90925ae"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0433cc2109a8fef0c5b202c6d90925ae"></a>
 template&lt;typename EventHandlerImplementation &gt; </td></tr>
@@ -94,7 +94,7 @@ template&lt;typename EventHandlerImplementation &gt; </td></tr>
 <tr class="memdesc:a0433cc2109a8fef0c5b202c6d90925ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a static instance of specific event handler implementation. Serializer(IDataSerializer*) <br/></td></tr>
 <tr class="separator:a0433cc2109a8fef0c5b202c6d90925ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1191e0ed455b7515157781123217166"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1191e0ed455b7515157781123217166"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#ab1191e0ed455b7515157781123217166">DataContainer</a> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html">IDataContainer</a> *dataContainer) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
+auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#ab1191e0ed455b7515157781123217166">DataContainer</a> (<a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container.html">IDataContainer</a> *dataContainer) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
 <tr class="memdesc:ab1191e0ed455b7515157781123217166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a DataContainer structure for manipulating contained data in custom ways. <br/></td></tr>
 <tr class="separator:ab1191e0ed455b7515157781123217166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99972884b52a9dd6244c3c207267c141"><td class="memTemplParams" colspan="2"><a class="anchor" id="a99972884b52a9dd6244c3c207267c141"></a>
@@ -102,7 +102,7 @@ template&lt;typename DataContainerType &gt; </td></tr>
 <tr class="memitem:a99972884b52a9dd6244c3c207267c141"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a99972884b52a9dd6244c3c207267c141">DataContainer</a> () -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
 <tr class="memdesc:a99972884b52a9dd6244c3c207267c141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create a static instance of the specific data container implementation. <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#ab1191e0ed455b7515157781123217166">DataContainer(IDataContainer*)</a> <br/></td></tr>
 <tr class="separator:a99972884b52a9dd6244c3c207267c141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492c5c035d73dd745789c1cad2cd59c1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a492c5c035d73dd745789c1cad2cd59c1">PersistentId</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#a98abfc21de99f0fe5a9fe7425e3c1c38">ClassPersistentId</a> persistentId) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
+<tr class="memitem:a492c5c035d73dd745789c1cad2cd59c1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a492c5c035d73dd745789c1cad2cd59c1">PersistentId</a> (<a class="el" href="class_a_z_1_1_serialize_context.html#a1a8a0edaa56e7cd6c573d6450b87ef7c">ClassPersistentId</a> persistentId) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
 <tr class="separator:a492c5c035d73dd745789c1cad2cd59c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07466e387afa8e64984d1163dc5cb85c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a07466e387afa8e64984d1163dc5cb85c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html#a07466e387afa8e64984d1163dc5cb85c">Attribute</a> (<a class="el" href="class_a_z_1_1_crc32.html">Crc32</a> idCrc, T &amp;&amp;value) -&gt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td></tr>
@@ -154,7 +154,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">auto AZ::SerializeContext::EnumBuilder::EventHandler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context_1_1_i_event_handler.html">IEventHandler</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_1_1_i_event_handler.html">IEventHandler</a> *&#160;</td>
           <td class="paramname"><em>eventHandler</em></td><td>)</td>
           <td> -&gt;  <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td>
         </tr>
@@ -171,7 +171,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">auto AZ::SerializeContext::EnumBuilder::PersistentId </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context.html#a98abfc21de99f0fe5a9fe7425e3c1c38">ClassPersistentId</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context.html#a1a8a0edaa56e7cd6c573d6450b87ef7c">ClassPersistentId</a>&#160;</td>
           <td class="paramname"><em>persistentId</em></td><td>)</td>
           <td> -&gt;  <a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a> *</td>
         </tr>
@@ -188,7 +188,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

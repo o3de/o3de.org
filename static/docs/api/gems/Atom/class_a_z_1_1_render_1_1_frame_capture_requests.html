@@ -64,16 +64,16 @@
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2c401bb5e9b5146929726970936ce6d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#ab2c401bb5e9b5146929726970936ce6d">CanCapture</a> () const =0</td></tr>
 <tr class="separator:ab2c401bb5e9b5146929726970936ce6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59db3c14a9c4386e53483dbeb234b2de"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#a59db3c14a9c4386e53483dbeb234b2de">CaptureScreenshotForWindow</a> (const AZStd::string &amp;filePath, AzFramework::NativeWindowHandle windowHandle)=0</td></tr>
-<tr class="separator:a59db3c14a9c4386e53483dbeb234b2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae603b70362e60bdb33f533030d8194b3"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#ae603b70362e60bdb33f533030d8194b3">CaptureScreenshot</a> (const AZStd::string &amp;filePath)=0</td></tr>
-<tr class="separator:ae603b70362e60bdb33f533030d8194b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83064b9a94196034b5b2d7ce2b9967e8"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#a83064b9a94196034b5b2d7ce2b9967e8">CaptureScreenshotWithPreview</a> (const AZStd::string &amp;outputFilePath)=0</td></tr>
-<tr class="separator:a83064b9a94196034b5b2d7ce2b9967e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac107c986b47f0a6eda95d48ff5275097"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#ac107c986b47f0a6eda95d48ff5275097">CapturePassAttachment</a> (const AZStd::vector&lt; AZStd::string &gt; &amp;passHierarchy, const AZStd::string &amp;slotName, const AZStd::string &amp;outputFilePath, RPI::PassAttachmentReadbackOption option)=0</td></tr>
-<tr class="separator:ac107c986b47f0a6eda95d48ff5275097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30080b9f60394c44c28ce482d92ab0ee"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#a30080b9f60394c44c28ce482d92ab0ee">CapturePassAttachmentWithCallback</a> (const AZStd::vector&lt; AZStd::string &gt; &amp;passHierarchy, const AZStd::string &amp;slotName, RPI::AttachmentReadback::CallbackFunction callback, RPI::PassAttachmentReadbackOption option)=0</td></tr>
-<tr class="separator:a30080b9f60394c44c28ce482d92ab0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d1a23d0b805801a1d6fa6f7443076b"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureOutcome&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#ac7d1a23d0b805801a1d6fa6f7443076b">CaptureScreenshotForWindow</a> (const AZStd::string &amp;imagePath, AzFramework::NativeWindowHandle windowHandle)=0</td></tr>
+<tr class="separator:ac7d1a23d0b805801a1d6fa6f7443076b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97042a6d23c85785489606acd4deec7"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureOutcome&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#ad97042a6d23c85785489606acd4deec7">CaptureScreenshot</a> (const AZStd::string &amp;imagePath)=0</td></tr>
+<tr class="separator:ad97042a6d23c85785489606acd4deec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0430e7b9ed113e388cc7d48de1658f8"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureOutcome&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#ad0430e7b9ed113e388cc7d48de1658f8">CaptureScreenshotWithPreview</a> (const AZStd::string &amp;imagePath)=0</td></tr>
+<tr class="separator:ad0430e7b9ed113e388cc7d48de1658f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7161dd4533ccbf7a4f1a24f0a5d8f8a4"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureOutcome&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#a7161dd4533ccbf7a4f1a24f0a5d8f8a4">CapturePassAttachment</a> (const AZStd::string &amp;imagePath, const AZStd::vector&lt; AZStd::string &gt; &amp;passHierarchy, const AZStd::string &amp;slotName, RPI::PassAttachmentReadbackOption option)=0</td></tr>
+<tr class="separator:a7161dd4533ccbf7a4f1a24f0a5d8f8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e65703cc08b4fa6274959a8741f156"><td class="memItemLeft" align="right" valign="top">virtual FrameCaptureOutcome&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_frame_capture_requests.html#a43e65703cc08b4fa6274959a8741f156">CapturePassAttachmentWithCallback</a> (RPI::AttachmentReadback::CallbackFunction callback, const AZStd::vector&lt; AZStd::string &gt; &amp;passHierarchy, const AZStd::string &amp;slotName, RPI::PassAttachmentReadbackOption option)=0</td></tr>
+<tr class="separator:a43e65703cc08b4fa6274959a8741f156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab2c401bb5e9b5146929726970936ce6d"></a>
@@ -100,7 +100,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac107c986b47f0a6eda95d48ff5275097"></a>
+<a class="anchor" id="a7161dd4533ccbf7a4f1a24f0a5d8f8a4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -108,8 +108,14 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual FrameCaptureId AZ::Render::FrameCaptureRequests::CapturePassAttachment </td>
+          <td class="memname">virtual FrameCaptureOutcome AZ::Render::FrameCaptureRequests::CapturePassAttachment </td>
           <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>imagePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const AZStd::vector&lt; AZStd::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>passHierarchy</em>, </td>
         </tr>
@@ -118,12 +124,6 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>slotName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>outputFilePath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -146,10 +146,10 @@ Public Member Functions</h2></td></tr>
 <p>Save a buffer attachment or a image attachment binded to a pass's slot to a data file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">imagePath</td><td>The output file path. </td></tr>
     <tr><td class="paramname">passHierarchy</td><td>For finding the pass by using a pass hierarchy filter. Check PassFilter::CreateWithPassHierarchy() function for detail </td></tr>
     <tr><td class="paramname">slotName</td><td>Name of the pass's slot. The attachment bound to this slot will be captured. </td></tr>
     <tr><td class="paramname">option</td><td>Only valid for an InputOutput attachment. Use PassAttachmentReadbackOption::Input to capture the input state and use PassAttachmentReadbackOption::Output to capture the output state </td></tr>
-    <tr><td class="paramname">outputFilePath</td><td>The output file path. </td></tr>
   </table>
   </dd>
 </dl>
@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a30080b9f60394c44c28ce482d92ab0ee"></a>
+<a class="anchor" id="a43e65703cc08b4fa6274959a8741f156"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -165,8 +165,14 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual FrameCaptureId AZ::Render::FrameCaptureRequests::CapturePassAttachmentWithCallback </td>
+          <td class="memname">virtual FrameCaptureOutcome AZ::Render::FrameCaptureRequests::CapturePassAttachmentWithCallback </td>
           <td>(</td>
+          <td class="paramtype">RPI::AttachmentReadback::CallbackFunction&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const AZStd::vector&lt; AZStd::string &gt; &amp;&#160;</td>
           <td class="paramname"><em>passHierarchy</em>, </td>
         </tr>
@@ -175,12 +181,6 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>slotName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RPI::AttachmentReadback::CallbackFunction&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -203,9 +203,9 @@ Public Member Functions</h2></td></tr>
 <p>Similar to CapturePassAttachment. But instead of saving the read back result to a file, it will call the callback function provide in the input when callback is finished </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">callback</td><td>function to call when the data is ready to read </td></tr>
     <tr><td class="paramname">passHierarchy</td><td>For finding the pass by using a pass hierarchy filter. Check PassFilter::CreateWithPassHierarchy() function for detail </td></tr>
     <tr><td class="paramname">slotName</td><td>Name of the pass's slot. The attachment bound to this slot will be captured. </td></tr>
-    <tr><td class="paramname">callback</td><td>function to call when the data is ready to read </td></tr>
     <tr><td class="paramname">option</td><td>Only valid for an InputOutput attachment. Use PassAttachmentReadbackOption::Input to capture the input state and use PassAttachmentReadbackOption::Output to capture the output state </td></tr>
   </table>
   </dd>
@@ -214,7 +214,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae603b70362e60bdb33f533030d8194b3"></a>
+<a class="anchor" id="ad97042a6d23c85785489606acd4deec7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -222,10 +222,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual FrameCaptureId AZ::Render::FrameCaptureRequests::CaptureScreenshot </td>
+          <td class="memname">virtual FrameCaptureOutcome AZ::Render::FrameCaptureRequests::CaptureScreenshot </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td class="paramname"><em>imagePath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -238,7 +238,7 @@ Public Member Functions</h2></td></tr>
 <p>Similar to CaptureScreenshotForWindow except it's capturing the screen shot for default window </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filepath</td><td>The output file path. </td></tr>
+    <tr><td class="paramname">imagePath</td><td>The output file path. </td></tr>
   </table>
   </dd>
 </dl>
@@ -246,7 +246,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a59db3c14a9c4386e53483dbeb234b2de"></a>
+<a class="anchor" id="ac7d1a23d0b805801a1d6fa6f7443076b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -254,10 +254,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual FrameCaptureId AZ::Render::FrameCaptureRequests::CaptureScreenshotForWindow </td>
+          <td class="memname">virtual FrameCaptureOutcome AZ::Render::FrameCaptureRequests::CaptureScreenshotForWindow </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>filePath</em>, </td>
+          <td class="paramname"><em>imagePath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -280,7 +280,7 @@ Public Member Functions</h2></td></tr>
 <p>Capture final screen output for the specified window and save it to given file path. The image format is determinate by file extension Current supported formats include ppm and dds. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filepath</td><td>The output file path. </td></tr>
+    <tr><td class="paramname">imagePath</td><td>The output file path. </td></tr>
     <tr><td class="paramname">windowHandle</td><td>The handle to the AzFrameWork::NativeWindow that is being captured </td></tr>
   </table>
   </dd>
@@ -289,7 +289,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a83064b9a94196034b5b2d7ce2b9967e8"></a>
+<a class="anchor" id="ad0430e7b9ed113e388cc7d48de1658f8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -297,10 +297,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual FrameCaptureId AZ::Render::FrameCaptureRequests::CaptureScreenshotWithPreview </td>
+          <td class="memname">virtual FrameCaptureOutcome AZ::Render::FrameCaptureRequests::CaptureScreenshotWithPreview </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>outputFilePath</em></td><td>)</td>
+          <td class="paramname"><em>imagePath</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -313,7 +313,7 @@ Public Member Functions</h2></td></tr>
 <p>Capture a screenshot and save it to a file if the pass image attachment preview is enabled. It will return InvalidFrameCaptureId if the preview is not enabled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">outputFilePath</td><td>The output file path. </td></tr>
+    <tr><td class="paramname">imagePath</td><td>The output file path. </td></tr>
   </table>
   </dd>
 </dl>
@@ -327,7 +327,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:24:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -66,11 +66,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a510c8218cb6af45a0571653310799e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d1b76e135159e0841cf8fd130ea8e4b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html#a1d1b76e135159e0841cf8fd130ea8e4b">AreOverridesPresent</a> (AZ::EntityId entityId, AZStd::string_view relativePathFromEntity={})=0</td></tr>
 <tr class="separator:a1d1b76e135159e0841cf8fd130ea8e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc1227517e0d3ad346fcc14a34bea3a8"><td class="memItemLeft" align="right" valign="top">virtual AZStd::optional<br class="typebreak"/>
-&lt; OverrideType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html#acc1227517e0d3ad346fcc14a34bea3a8">GetOverrideType</a> (AZ::EntityId entityId)=0</td></tr>
-<tr class="separator:acc1227517e0d3ad346fcc14a34bea3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbd009265d4e99a6e9d9ec6dbea7c7d3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html#acbd009265d4e99a6e9d9ec6dbea7c7d3">RevertOverrides</a> (AZ::EntityId entityId)=0</td></tr>
-<tr class="separator:acbd009265d4e99a6e9d9ec6dbea7c7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1bdb32232bef187e8aec253ab1813da"><td class="memItemLeft" align="right" valign="top">virtual AZStd::optional<br class="typebreak"/>
+&lt; OverrideType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html#ad1bdb32232bef187e8aec253ab1813da">GetEntityOverrideType</a> (AZ::EntityId entityId)=0</td></tr>
+<tr class="separator:ad1bdb32232bef187e8aec253ab1813da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5fba781838d004c718a2df575def742"><td class="memItemLeft" align="right" valign="top">virtual AZStd::optional<br class="typebreak"/>
+&lt; OverrideType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html#af5fba781838d004c718a2df575def742">GetComponentOverrideType</a> (const AZ::EntityComponentIdPair &amp;entityComponentIdPair)=0</td></tr>
+<tr class="separator:af5fba781838d004c718a2df575def742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0d6fd1482f2b1a035ef49de72485d3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html#afc0d6fd1482f2b1a035ef49de72485d3">RevertOverrides</a> (AZ::EntityId entityId, AZStd::string_view relativePathFromEntity={})=0</td></tr>
+<tr class="separator:afc0d6fd1482f2b1a035ef49de72485d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce7deb9f7fbb451fe52eb9b865af79c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html#a0ce7deb9f7fbb451fe52eb9b865af79c">RevertComponentOverrides</a> (const AZ::EntityComponentIdPair &amp;entityComponentIdPair)=0</td></tr>
+<tr class="separator:a0ce7deb9f7fbb451fe52eb9b865af79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1d1b76e135159e0841cf8fd130ea8e4b"></a>
@@ -116,7 +121,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acc1227517e0d3ad346fcc14a34bea3a8"></a>
+<a class="anchor" id="af5fba781838d004c718a2df575def742"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -124,7 +129,39 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual AZStd::optional&lt;OverrideType&gt; AzToolsFramework::Prefab::PrefabOverridePublicInterface::GetOverrideType </td>
+          <td class="memname">virtual AZStd::optional&lt;OverrideType&gt; AzToolsFramework::Prefab::PrefabOverridePublicInterface::GetComponentOverrideType </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityComponentIdPair &amp;&#160;</td>
+          <td class="paramname"><em>entityComponentIdPair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the override type on the given component. The prefab that creates the overrides is identified by the class implmenting this interface based on certain selections in the editor. eg: the prefab currently being edited. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityComponentIdPair</td><td>The entityId and componentId for which to get the override type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an override type if an override exists on the given component. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad1bdb32232bef187e8aec253ab1813da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::optional&lt;OverrideType&gt; AzToolsFramework::Prefab::PrefabOverridePublicInterface::GetEntityOverrideType </td>
           <td>(</td>
           <td class="paramtype">AZ::EntityId&#160;</td>
           <td class="paramname"><em>entityId</em></td><td>)</td>
@@ -148,7 +185,39 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acbd009265d4e99a6e9d9ec6dbea7c7d3"></a>
+<a class="anchor" id="a0ce7deb9f7fbb451fe52eb9b865af79c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzToolsFramework::Prefab::PrefabOverridePublicInterface::RevertComponentOverrides </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityComponentIdPair &amp;&#160;</td>
+          <td class="paramname"><em>entityComponentIdPair</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Revert overrides on the given component. Returns false if no overrides are present on the component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityComponentIdPair</td><td>The entityId and componentId on which overrides should be reverted. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether overrides are successfully reverted on the component. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afc0d6fd1482f2b1a035ef49de72485d3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -159,8 +228,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual bool AzToolsFramework::Prefab::PrefabOverridePublicInterface::RevertOverrides </td>
           <td>(</td>
           <td class="paramtype">AZ::EntityId&#160;</td>
-          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td class="paramname"><em>entityId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>relativePathFromEntity</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -173,6 +252,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">entityId</td><td>The id of the entity on which overrides should be reverted. </td></tr>
+    <tr><td class="paramname">relativePathFromEntity</td><td>The relative path from the entity. This can be used to revert overrides on properties. </td></tr>
   </table>
   </dd>
 </dl>
@@ -186,7 +266,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

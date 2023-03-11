@@ -55,9 +55,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_overlay_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::OverlayWidget Class Reference</div>  </div>
@@ -66,11 +63,6 @@
 
 <p>Inherits QWidget.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_qt_components_1_1_overlay_widget_1_1_layer_info.html">LayerInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:aaf2385a6b91e52697fe727a07fcf43af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf2385a6b91e52697fe727a07fcf43af"></a>
@@ -130,46 +122,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:acfffc024cdefec97c9290bfaaf9996f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfffc024cdefec97c9290bfaaf9996f2"></a>
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>s_invalidOverlayIndex</b></td></tr>
 <tr class="separator:acfffc024cdefec97c9290bfaaf9996f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aba77cd259637ce52269ccd59204be4be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba77cd259637ce52269ccd59204be4be"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>PushLayer</b> (Internal::OverlayWidgetLayer *layer)</td></tr>
-<tr class="separator:aba77cd259637ce52269ccd59204be4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a813bffbeb22c71271ae1b0f2d560e1ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a813bffbeb22c71271ae1b0f2d560e1ba"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PopLayer</b> (Internal::OverlayWidgetLayer *layer)</td></tr>
-<tr class="separator:a813bffbeb22c71271ae1b0f2d560e1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e091483ba145effc7280b9774684f56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e091483ba145effc7280b9774684f56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStackEntryRemoved</b> (int index)</td></tr>
-<tr class="separator:a5e091483ba145effc7280b9774684f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9f0c4a9457d83bdc8d5c4c6d9a075ec4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f0c4a9457d83bdc8d5c4c6d9a075ec4"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>PushLayer</b> (<a class="el" href="class_az_qt_components_1_1_overlay_widget.html">OverlayWidget</a> *targetOverlay, Internal::OverlayWidgetLayer *layer, bool hasBreakoutWindow)</td></tr>
-<tr class="separator:a9f0c4a9457d83bdc8d5c4c6d9a075ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a4b49a3e31ffbf35a2bd5dced4d9a0f52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b49a3e31ffbf35a2bd5dced4d9a0f52"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerIdCounter</b></td></tr>
-<tr class="separator:a4b49a3e31ffbf35a2bd5dced4d9a0f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a895f42e4d533a672e1203aa0f63d4694"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a895f42e4d533a672e1203aa0f63d4694"></a>
-AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
-QVector&lt; <a class="el" href="struct_az_qt_components_1_1_overlay_widget_1_1_layer_info.html">LayerInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_layers</b></td></tr>
-<tr class="separator:a895f42e4d533a672e1203aa0f63d4694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a903e9c1dd7c299298f08d89c204d8df4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a903e9c1dd7c299298f08d89c204d8df4"></a>
-QStackedLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_stack</b></td></tr>
-<tr class="separator:a903e9c1dd7c299298f08d89c204d8df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb035f2814390597f62fefc8fb276f1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb035f2814390597f62fefc8fb276f1b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootIndex</b></td></tr>
-<tr class="separator:aeb035f2814390597f62fefc8fb276f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536179edbe1ef9e8e3755b2c794664cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a536179edbe1ef9e8e3755b2c794664cd"></a>
-Qt::DockWidgetAreas&#160;</td><td class="memItemRight" valign="bottom"><b>m_originalDockWidgetAreas</b></td></tr>
-<tr class="separator:a536179edbe1ef9e8e3755b2c794664cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f92e82b2a1357b1fac73b168e5299bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f92e82b2a1357b1fac73b168e5299bb"></a>
-QPointer&lt; QDockWidget &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentDockWidget</b></td></tr>
-<tr class="separator:a9f92e82b2a1357b1fac73b168e5299bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets/OverlayWidget.h</li>
@@ -177,7 +129,7 @@ QPointer&lt; QDockWidget &gt;&#160;</td><td class="memItemRight" valign="bottom"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:07 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -54,10 +54,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DocumentPropertyEditor::RowFilterAdapter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -66,11 +62,6 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_document_property_editor_1_1_meta_adapter.html">AZ::DocumentPropertyEditor::MetaAdapter</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a72f9ea15a62b9ba1e713c79318a6bf9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f9ea15a62b9ba1e713c79318a6bf9c"></a>
@@ -106,121 +97,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSourceAdapter</b> 
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> ()</td></tr>
 <tr class="separator:a5c6abac344d54aab85a8f77a8d9a45be inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:a611e31d3d171189306fc5389412d7b57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>PatchType</b> { <b>Incremental</b>, 
-<b>RemovalsFromSource</b>, 
-<b>PatchToSource</b>
- }</td></tr>
-<tr class="separator:a611e31d3d171189306fc5389412d7b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_a_z_1_1_document_property_editor_1_1_document_adapter')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">AZ::DocumentPropertyEditor::DocumentAdapter</a></td></tr>
-<tr class="memitem:ae353ffbe7bb82ff8df94d736577fc6a7 inherit pro_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">DocumentResetType</a> { <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a109e0d0bf2b42091e997ddc4d49bab8d">DocumentResetType::SoftReset</a>, 
-<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a9d31379a0302def25480e5a19522c67d">DocumentResetType::HardReset</a>
- }</td></tr>
-<tr class="memdesc:ae353ffbe7bb82ff8df94d736577fc6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the type of reset operation triggered in NotifyResetDocument.  <a href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">More...</a><br/></td></tr>
-<tr class="separator:ae353ffbe7bb82ff8df94d736577fc6a7 inherit pro_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a14653d64b8296b5d43c2072d76d2c0ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14653d64b8296b5d43c2072d76d2c0ee"></a>
-virtual <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NewMatchInfoNode</b> () const =0</td></tr>
-<tr class="separator:a14653d64b8296b5d43c2072d76d2c0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f23143b4e11ee743e89002ea6e34a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82f23143b4e11ee743e89002ea6e34a1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CacheDomInfoForNode</b> (const Dom::Value &amp;domValue, <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *matchNode) const =0</td></tr>
-<tr class="separator:a82f23143b4e11ee743e89002ea6e34a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84baf44406470b5fec6fbce95796d94e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84baf44406470b5fec6fbce95796d94e"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>MatchesFilter</b> (<a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *matchNode) const =0</td></tr>
-<tr class="separator:a84baf44406470b5fec6fbce95796d94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a10f56e7263d800376fbe74a99285ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a10f56e7263d800376fbe74a99285ff"></a>
-<a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>MakeNewNode</b> (<a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *parentNode, unsigned int creationFrame)</td></tr>
-<tr class="separator:a6a10f56e7263d800376fbe74a99285ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55173b59970de71026f1e07abf57cd71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55173b59970de71026f1e07abf57cd71"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilterActive</b> (bool activateFilter)</td></tr>
-<tr class="separator:a55173b59970de71026f1e07abf57cd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfa2cf99bb5299c53abd2305f51e99f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cfa2cf99bb5299c53abd2305f51e99f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidateFilter</b> ()</td></tr>
-<tr class="separator:a8cfa2cf99bb5299c53abd2305f51e99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab041db94e5376682b3e5413155663abd"><td class="memItemLeft" align="right" valign="top">Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter.html#ab041db94e5376682b3e5413155663abd">GenerateContents</a> () override</td></tr>
-<tr class="separator:ab041db94e5376682b3e5413155663abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29a3c86762c8e24420acf6032691a7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af29a3c86762c8e24420acf6032691a7d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleReset</b> () override</td></tr>
-<tr class="separator:af29a3c86762c8e24420acf6032691a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfdd5f360961ffc11848d9906e8a2324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfdd5f360961ffc11848d9906e8a2324"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDomChange</b> (const Dom::Patch &amp;patch) override</td></tr>
-<tr class="separator:acfdd5f360961ffc11848d9906e8a2324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad82e2f07ff460e9f63af947a7b92d1a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad82e2f07ff460e9f63af947a7b92d1a4"></a>
-<a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMatchNodeAtPath</b> (const Dom::Path &amp;sourcePath)</td></tr>
-<tr class="separator:ad82e2f07ff460e9f63af947a7b92d1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30edef1082892c9514a993b4d6fcce00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30edef1082892c9514a993b4d6fcce00"></a>
-Dom::Path&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourcePathForNode</b> (const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *matchNode)</td></tr>
-<tr class="separator:a30edef1082892c9514a993b4d6fcce00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e41e4eeb6ff3d1baceb1568492679ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter.html#a6e41e4eeb6ff3d1baceb1568492679ae">PopulateNodesAtPath</a> (const Dom::Path &amp;sourcePath, bool replaceExisting)</td></tr>
-<tr class="separator:a6e41e4eeb6ff3d1baceb1568492679ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c0c91f468288f7c67316d2eb57232aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c0c91f468288f7c67316d2eb57232aa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateFullTree</b> ()</td></tr>
-<tr class="separator:a6c0c91f468288f7c67316d2eb57232aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81db886df07375d360ca5686295f934b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81db886df07375d360ca5686295f934b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GeneratePatch</b> (PatchType patchType, AZ::Dom::Patch &amp;patchToFill)</td></tr>
-<tr class="separator:a81db886df07375d360ca5686295f934b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3fed399df2c93790c576e026a3c5a33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter.html#af3fed399df2c93790c576e026a3c5a33">UpdateMatchState</a> (<a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *rowState)</td></tr>
-<tr class="separator:af3fed399df2c93790c576e026a3c5a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8e6e370a9dfd8bdf1c0ceb6d88cd54e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8e6e370a9dfd8bdf1c0ceb6d88cd54e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter.html#ac8e6e370a9dfd8bdf1c0ceb6d88cd54e">UpdateMatchDescendants</a> (<a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *startNode)</td></tr>
-<tr class="memdesc:ac8e6e370a9dfd8bdf1c0ceb6d88cd54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">calls UpdateMatchState on the subtree starting at startNode <br/></td></tr>
-<tr class="separator:ac8e6e370a9dfd8bdf1c0ceb6d88cd54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_meta_adapter.html">AZ::DocumentPropertyEditor::MetaAdapter</a></td></tr>
-<tr class="memitem:a5d6cac7db06cd54db095dea76bc74b23 inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d6cac7db06cd54db095dea76bc74b23"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDomMessage</b> (const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html">AZ::DocumentPropertyEditor::AdapterMessage</a> &amp;message, Dom::Value &amp;value)</td></tr>
-<tr class="separator:a5d6cac7db06cd54db095dea76bc74b23 inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b104d26edef41881522c91d5e1b8368 inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b104d26edef41881522c91d5e1b8368"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRow</b> (const Dom::Path &amp;sourcePath) const </td></tr>
-<tr class="separator:a8b104d26edef41881522c91d5e1b8368 inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c9bd90ae8f6e67d0dafd7c90b652ba5 inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c9bd90ae8f6e67d0dafd7c90b652ba5"></a>
-Dom::Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_meta_adapter.html#a5c9bd90ae8f6e67d0dafd7c90b652ba5">GetRowPath</a> (const Dom::Path &amp;sourcePath) const </td></tr>
-<tr class="memdesc:a5c9bd90ae8f6e67d0dafd7c90b652ba5 inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the first path in the ancestry of sourcePath that is of type Row, including self <br/></td></tr>
-<tr class="separator:a5c9bd90ae8f6e67d0dafd7c90b652ba5 inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">AZ::DocumentPropertyEditor::DocumentAdapter</a></td></tr>
-<tr class="memitem:aac00fd27e2315ce374e4abe2ff72f43c inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">virtual Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aac00fd27e2315ce374e4abe2ff72f43c">HandleMessage</a> (const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html">AdapterMessage</a> &amp;message)</td></tr>
-<tr class="separator:aac00fd27e2315ce374e4abe2ff72f43c inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1cb4e7f1eb6b98224d5c9f3ec367d5e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ab1cb4e7f1eb6b98224d5c9f3ec367d5e">NotifyResetDocument</a> (<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">DocumentResetType</a> resetType=<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a109e0d0bf2b42091e997ddc4d49bab8d">DocumentResetType::SoftReset</a>)</td></tr>
-<tr class="separator:ab1cb4e7f1eb6b98224d5c9f3ec367d5e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac356f0634ebfbbd553c5899c5320025e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ac356f0634ebfbbd553c5899c5320025e">NotifyContentsChanged</a> (const Dom::Patch &amp;patch)</td></tr>
-<tr class="separator:ac356f0634ebfbbd553c5899c5320025e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5e080d000c9104e941cd6d8b2324640e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e080d000c9104e941cd6d8b2324640e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>CullUnmatchedChildRows</b> (Dom::Value &amp;rowValue, const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *rowMatchNode)</td></tr>
-<tr class="separator:a5e080d000c9104e941cd6d8b2324640e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_meta_adapter.html">AZ::DocumentPropertyEditor::MetaAdapter</a></td></tr>
-<tr class="memitem:a14eb6f6c58cbfd99f7f9a2004e790d61 inherit pro_static_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14eb6f6c58cbfd99f7f9a2004e790d61"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRow</b> (const Dom::Value &amp;domValue)</td></tr>
-<tr class="separator:a14eb6f6c58cbfd99f7f9a2004e790d61 inherit pro_static_methods_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a739d01344889bca7ac4b56e8a5331f17"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter.html#a739d01344889bca7ac4b56e8a5331f17">m_updateFrame</a> = 0</td></tr>
-<tr class="separator:a739d01344889bca7ac4b56e8a5331f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e2643b923992aefc281d1fac8c27fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92e2643b923992aefc281d1fac8c27fd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterActive</b> = false</td></tr>
-<tr class="separator:a92e2643b923992aefc281d1fac8c27fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6feedead27336412c4dfb2845032b4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6feedead27336412c4dfb2845032b4d"></a>
-<a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_root</b> = nullptr</td></tr>
-<tr class="separator:ac6feedead27336412c4dfb2845032b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_meta_adapter.html">AZ::DocumentPropertyEditor::MetaAdapter</a></td></tr>
-<tr class="memitem:a2d5c08fe79d02862a81de36aa10c1f00 inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5c08fe79d02862a81de36aa10c1f00"></a>
-DocumentAdapter::ResetEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_resetHandler</b></td></tr>
-<tr class="separator:a2d5c08fe79d02862a81de36aa10c1f00 inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83cd8e57fe00618f83ca3e1cb3fdfac inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab83cd8e57fe00618f83ca3e1cb3fdfac"></a>
-ChangedEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_changedHandler</b></td></tr>
-<tr class="separator:ab83cd8e57fe00618f83ca3e1cb3fdfac inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a527dbc9868bd2ac52a66c6af672ce5fe inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a527dbc9868bd2ac52a66c6af672ce5fe"></a>
-MessageEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_domMessageHandler</b></td></tr>
-<tr class="separator:a527dbc9868bd2ac52a66c6af672ce5fe inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cdc4f7acc0f357163eb01a915d777a2 inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cdc4f7acc0f357163eb01a915d777a2"></a>
-DocumentAdapterPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_sourceAdapter</b></td></tr>
-<tr class="separator:a3cdc4f7acc0f357163eb01a915d777a2 inherit pro_attribs_class_a_z_1_1_document_property_editor_1_1_meta_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_document_property_editor_1_1_document_adapter')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">AZ::DocumentPropertyEditor::DocumentAdapter</a></td></tr>
@@ -239,129 +115,13 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>MessageEvent</b> = E
 <tr class="memitem:a4220bad42997ad1aedc6ec70e16f3414 inherit pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a4220bad42997ad1aedc6ec70e16f3414">SetDebugModeEnabled</a> (bool enableDebugMode)</td></tr>
 <tr class="separator:a4220bad42997ad1aedc6ec70e16f3414 inherit pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab041db94e5376682b3e5413155663abd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dom::Value AZ::DocumentPropertyEditor::RowFilterAdapter::GenerateContents </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Generates the contents of this adapter. This must be an Adapter DOM node. These contents will be cached - to notify clients of changes to the structure, NotifyResetDocument or NotifyContentsChanged must be used. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html">AdapterBuilder</a> for building out this DOM structure. </dd></dl>
-
-<p>Implements <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aee629f63b82b281c69e6caf059ed45fa">AZ::DocumentPropertyEditor::DocumentAdapter</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a6e41e4eeb6ff3d1baceb1568492679ae"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::DocumentPropertyEditor::RowFilterAdapter::PopulateNodesAtPath </td>
-          <td>(</td>
-          <td class="paramtype">const Dom::Path &amp;&#160;</td>
-          <td class="paramname"><em>sourcePath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>replaceExisting</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>populates the <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> nodes for the given path and any descendant row children created. All new nodes have their m_matchesSelf, m_matchingDescendants, and m_matchableDomTerms set </p>
-
-</div>
-</div>
-<a class="anchor" id="af3fed399df2c93790c576e026a3c5a33"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::DocumentPropertyEditor::RowFilterAdapter::UpdateMatchState </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_a_z_1_1_document_property_editor_1_1_row_filter_adapter_1_1_match_info_node.html">MatchInfoNode</a> *&#160;</td>
-          <td class="paramname"><em>rowState</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>updates the match states (m_matchesSelf, m_matchingDescendants) for the given row node, and updates the m_matchingDescendants state for all its ancestors </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rowState</td><td>the row to operate on </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a739d01344889bca7ac4b56e8a5331f17"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int AZ::DocumentPropertyEditor::RowFilterAdapter::m_updateFrame = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>this increases every time the source Adapter changes or resets to keep track of which node updates are new </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/DocumentPropertyEditor/FilterAdapter.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

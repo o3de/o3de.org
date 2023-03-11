@@ -55,9 +55,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_card_header-members.html">List of all members</a>  </div>
@@ -100,6 +97,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#a578ed23a647122351d3c0ca0fb1c4adb">contentModifiedChanged</a> (bool modified)</td></tr>
 <tr class="memdesc:a578ed23a647122351d3c0ca0fb1c4adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when the content modified state is changed. <br/></td></tr>
 <tr class="separator:a578ed23a647122351d3c0ca0fb1c4adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df3691ebdad95f08dcbc097d1d10987"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1df3691ebdad95f08dcbc097d1d10987"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#a1df3691ebdad95f08dcbc097d1d10987">iconLabelClicked</a> (const QPoint &amp;position)</td></tr>
+<tr class="memdesc:a1df3691ebdad95f08dcbc097d1d10987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when the icon label is clicked. <br/></td></tr>
+<tr class="separator:a1df3691ebdad95f08dcbc097d1d10987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,6 +133,18 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#abb541d56f75d7685b9e99dd9deb70480">setIcon</a> (const QIcon &amp;icon)</td></tr>
 <tr class="memdesc:abb541d56f75d7685b9e99dd9deb70480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the icon. Passing a null icon will hide the current icon. <br/></td></tr>
 <tr class="separator:abb541d56f75d7685b9e99dd9deb70480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa947c7efd5b59e33938398ea3c46e768"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa947c7efd5b59e33938398ea3c46e768"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#aa947c7efd5b59e33938398ea3c46e768">setIconOverlay</a> (const QIcon &amp;icon)</td></tr>
+<tr class="memdesc:aa947c7efd5b59e33938398ea3c46e768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a secondary icon to be drawn on top of the main icon. <br/></td></tr>
+<tr class="separator:aa947c7efd5b59e33938398ea3c46e768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff325702eae1ce8e0f1267eff3a7398"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afff325702eae1ce8e0f1267eff3a7398"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#afff325702eae1ce8e0f1267eff3a7398">setIconClickable</a> (bool clickable)</td></tr>
+<tr class="memdesc:afff325702eae1ce8e0f1267eff3a7398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the icon can be clicked to trigger an event. <br/></td></tr>
+<tr class="separator:afff325702eae1ce8e0f1267eff3a7398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7bcde1ea0b67ecf3ed8384f7629315d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7bcde1ea0b67ecf3ed8384f7629315d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#ac7bcde1ea0b67ecf3ed8384f7629315d">isIconClickable</a> () const </td></tr>
+<tr class="memdesc:ac7bcde1ea0b67ecf3ed8384f7629315d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the icon can be clicked to trigger an event, false otherwise. <br/></td></tr>
+<tr class="separator:ac7bcde1ea0b67ecf3ed8384f7629315d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf9a12e632b6970580abf0cc3f618bab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_card_header.html#abf9a12e632b6970580abf0cc3f618bab">setExpandable</a> (bool expandable)</td></tr>
 <tr class="separator:abf9a12e632b6970580abf0cc3f618bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73bad5fa800ee24d1daf01bae60ae1a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73bad5fa800ee24d1daf01bae60ae1a6"></a>
@@ -221,81 +234,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:af20523c57f6a1cc5f9815d174a159fad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af20523c57f6a1cc5f9815d174a159fad"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>s_iconSize</b></td></tr>
 <tr class="separator:af20523c57f6a1cc5f9815d174a159fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae97c43a2bb3940b7e0e587c7d266e872"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae97c43a2bb3940b7e0e587c7d266e872"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (QMouseEvent *event) override</td></tr>
-<tr class="separator:ae97c43a2bb3940b7e0e587c7d266e872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31cafa949915f7a03bdcebd0e1ed8321"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31cafa949915f7a03bdcebd0e1ed8321"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuEvent</b> (QContextMenuEvent *event) override</td></tr>
-<tr class="separator:a31cafa949915f7a03bdcebd0e1ed8321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6df2bd6a82cc6ca9358e32663e758d9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6df2bd6a82cc6ca9358e32663e758d9b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>triggerContextMenuUnderButton</b> ()</td></tr>
-<tr class="separator:a6df2bd6a82cc6ca9358e32663e758d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a607fcad03c4559ab94099805628687ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a607fcad03c4559ab94099805628687ad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>triggerHelpButton</b> ()</td></tr>
-<tr class="separator:a607fcad03c4559ab94099805628687ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0f17838b0e0d6f622fa5da8ce2ef1116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f17838b0e0d6f622fa5da8ce2ef1116"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCardHeaderIcon</b> (const QWidget *widget)</td></tr>
-<tr class="separator:a0f17838b0e0d6f622fa5da8ce2ef1116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93ca9598d17b204c112f5a27b694a6ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93ca9598d17b204c112f5a27b694a6ca"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCardHeaderMenuButton</b> (const QWidget *widget)</td></tr>
-<tr class="separator:a93ca9598d17b204c112f5a27b694a6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a749ee50f1f506dd58508bbc0b9a46be6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a749ee50f1f506dd58508bbc0b9a46be6"></a>
-QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainLayout</b> = nullptr</td></tr>
-<tr class="separator:a749ee50f1f506dd58508bbc0b9a46be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a228545c17180d8f7008d43076b1d3b7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a228545c17180d8f7008d43076b1d3b7f"></a>
-QHBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_backgroundLayout</b> = nullptr</td></tr>
-<tr class="separator:a228545c17180d8f7008d43076b1d3b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20b22dff5b349834da4edf465fb34f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa20b22dff5b349834da4edf465fb34f1"></a>
-QFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>m_backgroundFrame</b> = nullptr</td></tr>
-<tr class="separator:aa20b22dff5b349834da4edf465fb34f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb726bb1f43d53d82f4befbc12918c15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb726bb1f43d53d82f4befbc12918c15"></a>
-QCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><b>m_expanderButton</b> = nullptr</td></tr>
-<tr class="separator:acb726bb1f43d53d82f4befbc12918c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49c0230174d0551f853bb60e746c6015"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49c0230174d0551f853bb60e746c6015"></a>
-QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_iconLabel</b> = nullptr</td></tr>
-<tr class="separator:a49c0230174d0551f853bb60e746c6015"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67fc789b9689b85b5dc0ed984202890c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67fc789b9689b85b5dc0ed984202890c"></a>
-<a class="el" href="class_az_qt_components_1_1_eliding_label.html">AzQtComponents::ElidingLabel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_titleLabel</b> = nullptr</td></tr>
-<tr class="separator:a67fc789b9689b85b5dc0ed984202890c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8baaca9450dddeff0525498feb934a4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8baaca9450dddeff0525498feb934a4f"></a>
-QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_warningLabel</b> = nullptr</td></tr>
-<tr class="separator:a8baaca9450dddeff0525498feb934a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab92ef8e98e03050e8ee6cb566b20f798"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab92ef8e98e03050e8ee6cb566b20f798"></a>
-QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_contextMenuButton</b> = nullptr</td></tr>
-<tr class="separator:ab92ef8e98e03050e8ee6cb566b20f798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7247ccf4992da4c11d82a5ae6f41a5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7247ccf4992da4c11d82a5ae6f41a5a"></a>
-QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_helpButton</b> = nullptr</td></tr>
-<tr class="separator:aa7247ccf4992da4c11d82a5ae6f41a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad916e6652502bfaf4f4c621a1d7d8b57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad916e6652502bfaf4f4c621a1d7d8b57"></a>
-Internal::RectangleWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_underlineWidget</b> = nullptr</td></tr>
-<tr class="separator:ad916e6652502bfaf4f4c621a1d7d8b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cb47888bd920666620dae2b84da701"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3cb47888bd920666620dae2b84da701"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_warning</b> = false</td></tr>
-<tr class="separator:af3cb47888bd920666620dae2b84da701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581d3c612089f35b47fb5c68c161b1e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a581d3c612089f35b47fb5c68c161b1e8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_readOnly</b> = false</td></tr>
-<tr class="separator:a581d3c612089f35b47fb5c68c161b1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a995c8db0e28c7465470d8a8ea4ce32b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a995c8db0e28c7465470d8a8ea4ce32b5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_modified</b> = false</td></tr>
-<tr class="separator:a995c8db0e28c7465470d8a8ea4ce32b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32eb29ff4e31d9f8a56b2c710e663358"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32eb29ff4e31d9f8a56b2c710e663358"></a>
-QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>m_warningIcon</b></td></tr>
-<tr class="separator:a32eb29ff4e31d9f8a56b2c710e663358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac52a3777b98ad531739348270aa8bd66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac52a3777b98ad531739348270aa8bd66"></a>
-QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>m_icon</b></td></tr>
-<tr class="separator:ac52a3777b98ad531739348270aa8bd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a034cb1fc4b9430ca457cb25e8d298963"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a034cb1fc4b9430ca457cb25e8d298963"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_helpUrl</b></td></tr>
-<tr class="separator:a034cb1fc4b9430ca457cb25e8d298963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -495,7 +433,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Card</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:07 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

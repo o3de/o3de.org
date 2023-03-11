@@ -66,7 +66,7 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_on_demand_reflection_owner.html">AZ::OnDemandReflectionOwner</a>.</p>
 
-<p>Inherited by AZ::Internal::BehaviorEBusEvent&lt; EBus, EventType, R(BusType *, Args...)&gt;, AZ::Internal::BehaviorEBusEvent&lt; EBus, EventType, R(C::*)(Args...)&gt;, AZ::Internal::BehaviorMethodImpl&lt; R(Args...)&gt;, and AZ::Internal::BehaviorMethodImpl&lt; R(C::*)(Args...)&gt;.</p>
+<p>Inherited by AZ::Internal::BehaviorEBusEvent, and AZ::Internal::BehaviorMethodImpl.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -83,9 +83,9 @@ Public Member Functions</h2></td></tr>
 template&lt;class... Args&gt; </td></tr>
 <tr class="memitem:a92eb3f1562a4e71857dd46ed1dc4c8bd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Invoke</b> (Args &amp;&amp;...args) const </td></tr>
 <tr class="separator:a92eb3f1562a4e71857dd46ed1dc4c8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ebcd3434b1add2c9891657619608f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32ebcd3434b1add2c9891657619608f8"></a>
+<tr class="memitem:ac7359c6dafd16ca401a906d85c74435d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7359c6dafd16ca401a906d85c74435d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Invoke</b> () const </td></tr>
-<tr class="separator:a32ebcd3434b1add2c9891657619608f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac7359c6dafd16ca401a906d85c74435d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91eb382c3c3e204dbdae50497c201420"><td class="memTemplParams" colspan="2"><a class="anchor" id="a91eb382c3c3e204dbdae50497c201420"></a>
 template&lt;class R , class... Args&gt; </td></tr>
 <tr class="memitem:a91eb382c3c3e204dbdae50497c201420"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>InvokeResult</b> (R &amp;r, Args &amp;&amp;...args) const </td></tr>
@@ -94,9 +94,9 @@ template&lt;class R , class... Args&gt; </td></tr>
 template&lt;class R &gt; </td></tr>
 <tr class="memitem:a5c419831bb7bd761cad4fec0365fb2b9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>InvokeResult</b> (R &amp;r) const </td></tr>
 <tr class="separator:a5c419831bb7bd761cad4fec0365fb2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f5d6d330be83a7a9720f01f769cfc88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f5d6d330be83a7a9720f01f769cfc88"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeprecatedName</b> (const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;name)</td></tr>
-<tr class="separator:a0f5d6d330be83a7a9720f01f769cfc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97340635657b419e27cf1b2f58d7c2ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97340635657b419e27cf1b2f58d7c2ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeprecatedName</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> name)</td></tr>
+<tr class="separator:a97340635657b419e27cf1b2f58d7c2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8676e6fdc0cd7ff8788513209bd048e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8676e6fdc0cd7ff8788513209bd048e"></a>
 const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeprecatedName</b> () const </td></tr>
 <tr class="separator:af8676e6fdc0cd7ff8788513209bd048e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,15 +139,15 @@ virtual const <a class="el" href="struct_a_z_1_1_behavior_parameter.html">Behavi
 <tr class="memitem:a7a85ae331913ab349e96040644d52f84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a85ae331913ab349e96040644d52f84"></a>
 virtual const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetArgumentName</b> (size_t index) const =0</td></tr>
 <tr class="separator:a7a85ae331913ab349e96040644d52f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89de8b6c95c4741e1a8e71732f68017"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af89de8b6c95c4741e1a8e71732f68017"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArgumentName</b> (size_t index, const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;name)=0</td></tr>
-<tr class="separator:af89de8b6c95c4741e1a8e71732f68017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3457ea62d746d05f98ad09ecfb43d00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3457ea62d746d05f98ad09ecfb43d00"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArgumentName</b> (size_t index, <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> name)=0</td></tr>
+<tr class="separator:ad3457ea62d746d05f98ad09ecfb43d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d16439972c2c3129753394aee9a7375"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d16439972c2c3129753394aee9a7375"></a>
 virtual const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetArgumentToolTip</b> (size_t index) const =0</td></tr>
 <tr class="separator:a9d16439972c2c3129753394aee9a7375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa641eb3d33d972ec595764c5b595f50b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa641eb3d33d972ec595764c5b595f50b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArgumentToolTip</b> (size_t index, const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;name)=0</td></tr>
-<tr class="separator:aa641eb3d33d972ec595764c5b595f50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9782d79efbf071a4d13f3294314b73fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9782d79efbf071a4d13f3294314b73fb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArgumentToolTip</b> (size_t index, <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> name)=0</td></tr>
+<tr class="separator:a9782d79efbf071a4d13f3294314b73fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8bf91317c8503ca35e8a25569e3a9ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8bf91317c8503ca35e8a25569e3a9ca"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultValue</b> (size_t index, <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">BehaviorDefaultValuePtr</a> defaultValue)=0</td></tr>
 <tr class="separator:ab8bf91317c8503ca35e8a25569e3a9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,14 +208,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_a_z_std_1_1vector.html">AttributeArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_method.html#ae5db290f42094e819fbc108a8a6ebc71">m_attributes</a></td></tr>
 <tr class="memdesc:ae5db290f42094e819fbc108a8a6ebc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attributes for the method. <br/></td></tr>
 <tr class="separator:ae5db290f42094e819fbc108a8a6ebc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_on_demand_reflection_owner"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_on_demand_reflection_owner')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_on_demand_reflection_owner.html">AZ::OnDemandReflectionOwner</a></td></tr>
-<tr class="memitem:a9ed459a7c988ecd1655d9c6c85c5a9a6 inherit pro_methods_class_a_z_1_1_on_demand_reflection_owner"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ed459a7c988ecd1655d9c6c85c5a9a6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_on_demand_reflection_owner.html#a9ed459a7c988ecd1655d9c6c85c5a9a6">OnDemandReflectionOwner</a> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a9ed459a7c988ecd1655d9c6c85c5a9a6 inherit pro_methods_class_a_z_1_1_on_demand_reflection_owner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to be called by child class. <br/></td></tr>
-<tr class="separator:a9ed459a7c988ecd1655d9c6c85c5a9a6 inherit pro_methods_class_a_z_1_1_on_demand_reflection_owner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Use behavior method to get type information and invoke reflected methods. </p>
@@ -261,7 +253,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

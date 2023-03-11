@@ -54,7 +54,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_framework_1_1_input_mapping-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputMapping Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -71,9 +70,6 @@
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_mapping_1_1_config_base.html">ConfigBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for input mapping configuration values that are exposed to the editor.  <a href="class_az_framework_1_1_input_mapping_1_1_config_base.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_mapping_1_1_empty_snapshot.html">EmptySnapshot</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty snapshot of an input channel used as the 'default' state for some input mappings.  <a href="struct_az_framework_1_1_input_mapping_1_1_empty_snapshot.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html">InputChannelNameFilteredByDeviceType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience class that allows for selection of an input channel name filtered by device.  <a href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html#details">More...</a><br/></td></tr>
@@ -157,22 +153,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStateUpdated</b> ()
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStateEnded</b> () const </td></tr>
 <tr class="separator:afe05418ea7ca76b35ca8334514281969 inherit pub_methods_class_az_framework_1_1_input_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ab7246917a9d489c93cc3a7f29df81dd6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_mapping.html#ab7246917a9d489c93cc3a7f29df81dd6">SourceInputChannelIds</a> = AZStd::unordered_set&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &gt;</td></tr>
-<tr class="separator:ab7246917a9d489c93cc3a7f29df81dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14ed36d66e717fcf169fe9aa9301a9f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14ed36d66e717fcf169fe9aa9301a9f1"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveInputChannelIds</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a> &gt;</td></tr>
-<tr class="separator:a14ed36d66e717fcf169fe9aa9301a9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad8e919e8f4126f7749d81da1c93bd1a9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_mapping.html#ad8e919e8f4126f7749d81da1c93bd1a9">IsSourceInput</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel)=0</td></tr>
-<tr class="separator:ad8e919e8f4126f7749d81da1c93bd1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a577b6a382b3f697ebcc70b5649e1ec46"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_mapping.html#a577b6a382b3f697ebcc70b5649e1ec46">OnSourceInputEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel)=0</td></tr>
-<tr class="separator:a577b6a382b3f697ebcc70b5649e1ec46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_az_framework_1_1_input_channel"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_framework_1_1_input_channel')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_framework_1_1_input_channel.html">AzFramework::InputChannel</a></td></tr>
@@ -194,29 +174,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all input mappings that listen for 'raw' input and output custom input events. Derived classes should provide additional functions that allow their parent input context to update the state and value(s) of the input mapping as raw input is received from the system, and they can (optionally) override the virtual GetCustomData function to return custom data. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ab7246917a9d489c93cc3a7f29df81dd6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_az_framework_1_1_input_mapping.html#ab7246917a9d489c93cc3a7f29df81dd6">AzFramework::InputMapping::SourceInputChannelIds</a> =  AZStd::unordered_set&lt;<a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Alias for verbose container class </p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8c178c804c5a83151ebfb19ebb6c478e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -252,74 +210,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad8e919e8f4126f7749d81da1c93bd1a9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AzFramework::InputMapping::IsSourceInput </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;&#160;</td>
-          <td class="paramname"><em>inputChannel</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Override to return whether an input channel is a source input for this input mapping. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inputChannel</td><td>The input channel that is a potential source input </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the input channel is a source input, false otherwise </dd></dl>
-
-<p>Implemented in <a class="el" href="class_az_framework_1_1_input_mapping_and.html#a09a3ca3235a0b54dd708b1f32bb89a55">AzFramework::InputMappingAnd</a>, and <a class="el" href="class_az_framework_1_1_input_mapping_or.html#a34b298c656eac1879d728ad3f98a42dc">AzFramework::InputMappingOr</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a577b6a382b3f697ebcc70b5649e1ec46"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AzFramework::InputMapping::OnSourceInputEvent </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;&#160;</td>
-          <td class="paramname"><em>inputChannel</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Override to be notified when a source input is active or its state or value is updated. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">inputChannel</td><td>The input channel that is active or whose state or value updated </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the input event has been consumed, false otherwise </dd></dl>
-
-<p>Implemented in <a class="el" href="class_az_framework_1_1_input_mapping_and.html#a200f0343779d772a614586542f7bde30">AzFramework::InputMappingAnd</a>, and <a class="el" href="class_az_framework_1_1_input_mapping_or.html#a14b5df546207d4f81c5ca639f81a221e">AzFramework::InputMappingOr</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a6e4296d5a7f343a66aa0645675d3046e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +240,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

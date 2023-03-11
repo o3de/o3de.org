@@ -73,13 +73,13 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SizeChangedEvent</b>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ScalarChangedEvent</b> = AZ::Event&lt; float &gt;</td></tr>
 <tr class="separator:ac431abc2f359d5564c9bc018c95c82b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbea875b6c50c6bb6320892ff4adf1d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbea875b6c50c6bb6320892ff4adf1d5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>SceneChangedEvent</b> = AZ::Event&lt; ScenePtr &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SceneChangedEvent</b> = AZ::Event&lt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> &gt;</td></tr>
 <tr class="separator:adbea875b6c50c6bb6320892ff4adf1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8be54eb7144b767286fb4f2a9d8cd4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8be54eb7144b767286fb4f2a9d8cd4f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineChangedEvent</b> = AZ::Event&lt; RenderPipelinePtr &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineChangedEvent</b> = AZ::Event&lt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a> &gt;</td></tr>
 <tr class="separator:ac8be54eb7144b767286fb4f2a9d8cd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a167bcf5deebf52e5f01cede6b18fc480"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a167bcf5deebf52e5f01cede6b18fc480"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ViewChangedEvent</b> = AZ::Event&lt; ViewPtr &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ViewChangedEvent</b> = AZ::Event&lt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> &gt;</td></tr>
 <tr class="separator:a167bcf5deebf52e5f01cede6b18fc480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae28d573a6b469e0287274521f1cc440c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae28d573a6b469e0287274521f1cc440c"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportIdEvent</b> = AZ::Event&lt; AzFramework::ViewportId &gt;</td></tr>
@@ -90,7 +90,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a83f12fc8d38811f662055fb5df6f11bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83f12fc8d38811f662055fb5df6f11bc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a>, AZ::SystemAllocator)</td></tr>
 <tr class="separator:a83f12fc8d38811f662055fb5df6f11bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68da921f32e69127c509b4298b4986d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a68da921f32e69127c509b4298b4986d3">ViewportContext</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_manager.html">ViewportContextManager</a> *manager, AzFramework::ViewportId id, const AZ::Name &amp;name, <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">RHI::Device</a> &amp;device, AzFramework::NativeWindowHandle nativeWindow, ScenePtr renderScene)</td></tr>
+<tr class="memitem:a68da921f32e69127c509b4298b4986d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a68da921f32e69127c509b4298b4986d3">ViewportContext</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_manager.html">ViewportContextManager</a> *manager, AzFramework::ViewportId id, const AZ::Name &amp;name, <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">RHI::Device</a> &amp;device, AzFramework::NativeWindowHandle nativeWindow, <a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> renderScene)</td></tr>
 <tr class="separator:a68da921f32e69127c509b4298b4986d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a303cd3a6fda4aa2cc091065272922215"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a303cd3a6fda4aa2cc091065272922215"></a>
 AzFramework::ViewportId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a303cd3a6fda4aa2cc091065272922215">GetId</a> () const </td></tr>
@@ -101,37 +101,37 @@ AzFramework::NativeWindowHandle&#160;</td><td class="memItemRight" valign="botto
 <tr class="memdesc:a357fcf1c7bd04622fa04a276280f1802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method, gets the window handle associated with this viewport's window manager. <br/></td></tr>
 <tr class="separator:a357fcf1c7bd04622fa04a276280f1802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab92818c084f7f003f61d8878709311b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab92818c084f7f003f61d8878709311b4"></a>
-WindowContextSharedPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ab92818c084f7f003f61d8878709311b4">GetWindowContext</a> ()</td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">WindowContextSharedPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ab92818c084f7f003f61d8878709311b4">GetWindowContext</a> ()</td></tr>
 <tr class="memdesc:ab92818c084f7f003f61d8878709311b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the window context associated with this viewport. <br/></td></tr>
 <tr class="separator:ab92818c084f7f003f61d8878709311b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3704ff7e638ce518cf5f6d502deac5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f3704ff7e638ce518cf5f6d502deac5"></a>
-ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a6f3704ff7e638ce518cf5f6d502deac5">GetRenderScene</a> ()</td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a6f3704ff7e638ce518cf5f6d502deac5">GetRenderScene</a> ()</td></tr>
 <tr class="memdesc:a6f3704ff7e638ce518cf5f6d502deac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the root scene (if any) associated with this viewport. <br/></td></tr>
 <tr class="separator:a6f3704ff7e638ce518cf5f6d502deac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad04b2e5e6ac0ef6e7557257a58a37f62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad04b2e5e6ac0ef6e7557257a58a37f62"></a>
-RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ad04b2e5e6ac0ef6e7557257a58a37f62">GetCurrentPipeline</a> ()</td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ad04b2e5e6ac0ef6e7557257a58a37f62">GetCurrentPipeline</a> ()</td></tr>
 <tr class="memdesc:ad04b2e5e6ac0ef6e7557257a58a37f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current render pipeline associated with our <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a>, if there is one. <br/></td></tr>
 <tr class="separator:ad04b2e5e6ac0ef6e7557257a58a37f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a573276d6d296f38051eb3b61627cb2bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a573276d6d296f38051eb3b61627cb2bb">SetRenderScene</a> (ScenePtr scene)</td></tr>
+<tr class="memitem:a573276d6d296f38051eb3b61627cb2bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a573276d6d296f38051eb3b61627cb2bb">SetRenderScene</a> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> scene)</td></tr>
 <tr class="separator:a573276d6d296f38051eb3b61627cb2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eccba83b4b8aaabe04f61efed8d5795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a2eccba83b4b8aaabe04f61efed8d5795">RenderTick</a> ()</td></tr>
 <tr class="separator:a2eccba83b4b8aaabe04f61efed8d5795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b1501f54b16011cf3357b79e219682"><td class="memItemLeft" align="right" valign="top">AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#aa5b1501f54b16011cf3357b79e219682">GetName</a> () const </td></tr>
 <tr class="separator:aa5b1501f54b16011cf3357b79e219682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08f9511d0893c4aa7371b34eafc27b7f"><td class="memItemLeft" align="right" valign="top">ViewGroupPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a08f9511d0893c4aa7371b34eafc27b7f">GetViewGroup</a> ()</td></tr>
+<tr class="memitem:a08f9511d0893c4aa7371b34eafc27b7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewGroupPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a08f9511d0893c4aa7371b34eafc27b7f">GetViewGroup</a> ()</td></tr>
 <tr class="separator:a08f9511d0893c4aa7371b34eafc27b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3018b98e770e729832abc32d0fe153"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e3018b98e770e729832abc32d0fe153"></a>
-ConstViewGroupPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewGroup</b> () const </td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">ConstViewGroupPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewGroup</b> () const </td></tr>
 <tr class="separator:a9e3018b98e770e729832abc32d0fe153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77d10eeb743c06067adacf97a8d36025"><td class="memItemLeft" align="right" valign="top">ViewPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a77d10eeb743c06067adacf97a8d36025">GetDefaultView</a> ()</td></tr>
+<tr class="memitem:a77d10eeb743c06067adacf97a8d36025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a77d10eeb743c06067adacf97a8d36025">GetDefaultView</a> ()</td></tr>
 <tr class="separator:a77d10eeb743c06067adacf97a8d36025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae389d95995fed02206e9497c38a1edeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae389d95995fed02206e9497c38a1edeb"></a>
-ConstViewPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultView</b> () const </td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">ConstViewPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultView</b> () const </td></tr>
 <tr class="separator:ae389d95995fed02206e9497c38a1edeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab55c3b944c383ccad67d13e2d924275a"><td class="memItemLeft" align="right" valign="top">ViewPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ab55c3b944c383ccad67d13e2d924275a">GetStereoscopicView</a> (AZ::RPI::ViewType viewType)</td></tr>
+<tr class="memitem:ab55c3b944c383ccad67d13e2d924275a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ab55c3b944c383ccad67d13e2d924275a">GetStereoscopicView</a> (AZ::RPI::ViewType viewType)</td></tr>
 <tr class="separator:ab55c3b944c383ccad67d13e2d924275a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9669dbfc624d8083cf6c58c1de3e6ae1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9669dbfc624d8083cf6c58c1de3e6ae1"></a>
-ConstViewPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetStereoscopicView</b> (AZ::RPI::ViewType viewType) const </td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">ConstViewPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetStereoscopicView</b> (AZ::RPI::ViewType viewType) const </td></tr>
 <tr class="separator:a9669dbfc624d8083cf6c58c1de3e6ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d0becfbe06b4b65a661c7f7ce192e6"><td class="memItemLeft" align="right" valign="top">AzFramework::WindowSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a57d0becfbe06b4b65a661c7f7ce192e6">GetViewportSize</a> () const </td></tr>
 <tr class="separator:a57d0becfbe06b4b65a661c7f7ce192e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,7 +253,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ScenePtr&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a>&#160;</td>
           <td class="paramname"><em>renderScene</em>&#160;</td>
         </tr>
         <tr>
@@ -307,7 +307,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ViewPtr AZ::RPI::ViewportContext::GetDefaultView </td>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> AZ::RPI::ViewportContext::GetDefaultView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -356,7 +356,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ViewPtr AZ::RPI::ViewportContext::GetStereoscopicView </td>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> AZ::RPI::ViewportContext::GetStereoscopicView </td>
           <td>(</td>
           <td class="paramtype">AZ::RPI::ViewType&#160;</td>
           <td class="paramname"><em>viewType</em></td><td>)</td>
@@ -373,7 +373,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ViewGroupPtr AZ::RPI::ViewportContext::GetViewGroup </td>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewGroupPtr</a> AZ::RPI::ViewportContext::GetViewGroup </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -424,7 +424,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
         <tr>
           <td class="memname">void AZ::RPI::ViewportContext::SetRenderScene </td>
           <td>(</td>
-          <td class="paramtype">ScenePtr&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a>&#160;</td>
           <td class="paramname"><em>scene</em></td><td>)</td>
           <td></td>
         </tr>
@@ -440,7 +440,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

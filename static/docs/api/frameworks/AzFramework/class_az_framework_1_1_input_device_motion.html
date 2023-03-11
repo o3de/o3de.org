@@ -57,7 +57,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_motion-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceMotion Class Reference</div>  </div>
@@ -185,94 +184,10 @@ Static Public Attributes</h2></td></tr>
 static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion.html#ae9162d67b13d87822a59940ec5bdb00e">Id</a> {&quot;motion&quot;}</td></tr>
 <tr class="memdesc:ae9162d67b13d87822a59940ec5bdb00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id used to identify the primary motion input device. <br/></td></tr>
 <tr class="separator:ae9162d67b13d87822a59940ec5bdb00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a62a7fe296991a5b830368449f77282f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion.html#a62a7fe296991a5b830368449f77282f1">AccelerationChannelByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_axis3_d.html">InputChannelAxis3D</a> * &gt;</td></tr>
-<tr class="separator:a62a7fe296991a5b830368449f77282f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce992a7c65abf78405b150c8b27e902"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ce992a7c65abf78405b150c8b27e902"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>RotationRateChannelByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_axis3_d.html">InputChannelAxis3D</a> * &gt;</td></tr>
-<tr class="separator:a3ce992a7c65abf78405b150c8b27e902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a7aaf7bad235c737edede81f5931fad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a7aaf7bad235c737edede81f5931fad"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MagneticFieldChannelByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_axis3_d.html">InputChannelAxis3D</a> * &gt;</td></tr>
-<tr class="separator:a9a7aaf7bad235c737edede81f5931fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5f33841d1017bb88c4d30dd321575d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e5f33841d1017bb88c4d30dd321575d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>OrientationChannelByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_quaternion.html">InputChannelQuaternion</a> * &gt;</td></tr>
-<tr class="separator:a1e5f33841d1017bb88c4d30dd321575d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aea076643979306f122ee3326818b8e19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea076643979306f122ee3326818b8e19"></a>
-InputChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion.html#aea076643979306f122ee3326818b8e19">m_allChannelsById</a></td></tr>
-<tr class="memdesc:aea076643979306f122ee3326818b8e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">All motion channels by id. <br/></td></tr>
-<tr class="separator:aea076643979306f122ee3326818b8e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ca82db855f6065349faf94c6250f97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95ca82db855f6065349faf94c6250f97"></a>
-<a class="el" href="class_az_framework_1_1_input_device_motion.html#a62a7fe296991a5b830368449f77282f1">AccelerationChannelByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion.html#a95ca82db855f6065349faf94c6250f97">m_accelerationChannelsById</a></td></tr>
-<tr class="memdesc:a95ca82db855f6065349faf94c6250f97"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_az_framework_1_1_input_device_motion_1_1_acceleration.html">Acceleration</a> channels by id. <br/></td></tr>
-<tr class="separator:a95ca82db855f6065349faf94c6250f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44476701de3adf3ed52a677b1716b2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad44476701de3adf3ed52a677b1716b2a"></a>
-RotationRateChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion.html#ad44476701de3adf3ed52a677b1716b2a">m_rotationRateChannelsById</a></td></tr>
-<tr class="memdesc:ad44476701de3adf3ed52a677b1716b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation rate channels by id. <br/></td></tr>
-<tr class="separator:ad44476701de3adf3ed52a677b1716b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d566cfb26bb4a29527f0bffe9625a4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d566cfb26bb4a29527f0bffe9625a4e"></a>
-MagneticFieldChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion.html#a7d566cfb26bb4a29527f0bffe9625a4e">m_magneticFieldChannelsById</a></td></tr>
-<tr class="memdesc:a7d566cfb26bb4a29527f0bffe9625a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magnetic field channels by id. <br/></td></tr>
-<tr class="separator:a7d566cfb26bb4a29527f0bffe9625a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10622d0f898858d97383044372840a02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10622d0f898858d97383044372840a02"></a>
-OrientationChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion.html#a10622d0f898858d97383044372840a02">m_orientationChannelsById</a></td></tr>
-<tr class="memdesc:a10622d0f898858d97383044372840a02"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_az_framework_1_1_input_device_motion_1_1_orientation.html">Orientation</a> channels by id. <br/></td></tr>
-<tr class="separator:a10622d0f898858d97383044372840a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a169a3529d0ad385e1846ad43be3ef2bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a169a3529d0ad385e1846ad43be3ef2bd"></a>
-InputChannelIdSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion.html#a169a3529d0ad385e1846ad43be3ef2bd">m_enabledMotionChannelIds</a></td></tr>
-<tr class="memdesc:a169a3529d0ad385e1846ad43be3ef2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently enabled channels ids. <br/></td></tr>
-<tr class="separator:a169a3529d0ad385e1846ad43be3ef2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_az_framework_1_1_input_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_input_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_input_device.html">AzFramework::InputDevice</a></td></tr>
-<tr class="memitem:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a20c49755e8fc367afe62e1c1788e8b8b">BroadcastInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) const </td></tr>
-<tr class="separator:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a47e7fba32002cef9260f72d49079c2b2">BroadcastInputTextEvent</a> (const AZStd::string &amp;textUTF8) const </td></tr>
-<tr class="separator:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b3f1cf8533f960eb86d73d9c0b09dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a83b3f1cf8533f960eb86d73d9c0b09dd">BroadcastInputDeviceConnectedEvent</a> () const </td></tr>
-<tr class="memdesc:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device connects to the system. <br/></td></tr>
-<tr class="separator:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8db0be32df8eeec193f83be08cce6fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#ae8db0be32df8eeec193f83be08cce6fb">BroadcastInputDeviceDisconnectedEvent</a> () const </td></tr>
-<tr class="memdesc:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device disconnects from the system. <br/></td></tr>
-<tr class="separator:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7610e16b07bb6c9e5806709d8d142a81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a7610e16b07bb6c9e5806709d8d142a81">ResetInputChannelStates</a> ()</td></tr>
-<tr class="memdesc:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
-<tr class="separator:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a generic motion input device including the ids of all its associated input channels. Platform specific implementations are defined as private implementations so that creating an instance of this generic class will work correctly on any platform that support motion input, while providing access to the device name and associated channel ids on any platform through the 'null' implementation (primarily so that the editor can use them to setup input mappings). </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a62a7fe296991a5b830368449f77282f1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_az_framework_1_1_input_device_motion.html#a62a7fe296991a5b830368449f77282f1">AzFramework::InputDeviceMotion::AccelerationChannelByIdMap</a> =  AZStd::unordered_map&lt;<a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_axis3_d.html">InputChannelAxis3D</a>*&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Alias for verbose container class </p>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6f68f4cfc35aaba46664f61a53d7035f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -385,7 +300,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

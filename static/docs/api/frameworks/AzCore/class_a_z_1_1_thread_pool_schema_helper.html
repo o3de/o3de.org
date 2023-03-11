@@ -53,8 +53,6 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_thread_pool_schema_helper-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ThreadPoolSchemaHelper&lt; Allocator &gt; Class Template Reference</div>  </div>
@@ -65,22 +63,6 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_thread_pool_schema.html">AZ::ThreadPoolSchema</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2807c1b2a474e410f3c7e4d934be96a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2807c1b2a474e410f3c7e4d934be96a5"></a>
-static ThreadPoolData *&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreadPoolData</b> ()</td></tr>
-<tr class="separator:a2807c1b2a474e410f3c7e4d934be96a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e578cfee9d07309885cfc17acd08ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69e578cfee9d07309885cfc17acd08ca"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetThreadPoolData</b> (ThreadPoolData *data)</td></tr>
-<tr class="separator:a69e578cfee9d07309885cfc17acd08ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a3a24e524e599ad9bda457bd698aa3245"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a24e524e599ad9bda457bd698aa3245"></a>
-static AZ_THREAD_LOCAL <br class="typebreak"/>
-ThreadPoolData *&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadData</b> = 0</td></tr>
-<tr class="separator:a3a24e524e599ad9bda457bd698aa3245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_thread_pool_schema"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_thread_pool_schema')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_thread_pool_schema.html">AZ::ThreadPoolSchema</a></td></tr>
@@ -97,6 +79,9 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>SetThreadPo
 <tr class="memitem:a164a5b3b8d2e360058fc7dc38d09168c inherit pub_methods_class_a_z_1_1_thread_pool_schema"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a164a5b3b8d2e360058fc7dc38d09168c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> ()</td></tr>
 <tr class="separator:a164a5b3b8d2e360058fc7dc38d09168c inherit pub_methods_class_a_z_1_1_thread_pool_schema"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ed1d924599b5c6a4cd65ce7105b2a2 inherit pub_methods_class_a_z_1_1_thread_pool_schema"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78ed1d924599b5c6a4cd65ce7105b2a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (PoolSchema::size_type pageSize, PoolSchema::size_type minAllocationSize, PoolSchema::size_type maxAllocationSize)</td></tr>
+<tr class="separator:a78ed1d924599b5c6a4cd65ce7105b2a2 inherit pub_methods_class_a_z_1_1_thread_pool_schema"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571ce086982ca3f3ab97ff269e36b755 inherit pub_methods_class_a_z_1_1_thread_pool_schema"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a571ce086982ca3f3ab97ff269e36b755"></a>
 pointer&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> (size_type byteSize, size_type alignment) override</td></tr>
 <tr class="separator:a571ce086982ca3f3ab97ff269e36b755 inherit pub_methods_class_a_z_1_1_thread_pool_schema"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,36 +187,6 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="inherit_header pub_attribs_class_a_z_1_1_i_allocator"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_a_z_1_1_i_allocator')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_a_z_1_1_i_allocator.html">AZ::IAllocator</a></td></tr>
 <tr class="memitem:afb8272c4f82bd349ff6131c4123c4490 inherit pub_attribs_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><b>newSize</b></td></tr>
 <tr class="separator:afb8272c4f82bd349ff6131c4123c4490 inherit pub_attribs_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_thread_pool_schema"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_thread_pool_schema')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_thread_pool_schema.html">AZ::ThreadPoolSchema</a></td></tr>
-<tr class="memitem:aee04d895dcf77f27f8871ba668ab1703 inherit pro_methods_class_a_z_1_1_thread_pool_schema"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee04d895dcf77f27f8871ba668ab1703"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ThreadPoolSchema</b> (const <a class="el" href="class_a_z_1_1_thread_pool_schema.html">ThreadPoolSchema</a> &amp;)</td></tr>
-<tr class="separator:aee04d895dcf77f27f8871ba668ab1703 inherit pro_methods_class_a_z_1_1_thread_pool_schema"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e37eba46d40a26fccb27c360ae3c75 inherit pro_methods_class_a_z_1_1_thread_pool_schema"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2e37eba46d40a26fccb27c360ae3c75"></a>
-<a class="el" href="class_a_z_1_1_thread_pool_schema.html">ThreadPoolSchema</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_thread_pool_schema.html">ThreadPoolSchema</a> &amp;)</td></tr>
-<tr class="separator:ad2e37eba46d40a26fccb27c360ae3c75 inherit pro_methods_class_a_z_1_1_thread_pool_schema"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_i_allocator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_i_allocator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_i_allocator.html">AZ::IAllocator</a></td></tr>
-<tr class="memitem:ac799228d29329efa66a0c9be0cac99da inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac799228d29329efa66a0c9be0cac99da"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_allocator.html#ac799228d29329efa66a0c9be0cac99da">PostCreate</a> ()</td></tr>
-<tr class="memdesc:ac799228d29329efa66a0c9be0cac99da inherit pro_methods_class_a_z_1_1_i_allocator"><td class="mdescLeft">&#160;</td><td class="mdescRight">All conforming allocators must call <a class="el" href="class_a_z_1_1_i_allocator.html#ac799228d29329efa66a0c9be0cac99da" title="All conforming allocators must call PostCreate() after their custom Create() method in order to be pr...">PostCreate()</a> after their custom Create() method in order to be properly registered. <br/></td></tr>
-<tr class="separator:ac799228d29329efa66a0c9be0cac99da inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0ccd6c34fbe94c04769cc09e8233814 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0ccd6c34fbe94c04769cc09e8233814"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_allocator.html#aa0ccd6c34fbe94c04769cc09e8233814">PreDestroy</a> ()</td></tr>
-<tr class="memdesc:aa0ccd6c34fbe94c04769cc09e8233814 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="mdescLeft">&#160;</td><td class="mdescRight">All conforming allocators must call <a class="el" href="class_a_z_1_1_i_allocator.html#aa0ccd6c34fbe94c04769cc09e8233814" title="All conforming allocators must call PreDestroy() before their custom Destroy() method in order to be ...">PreDestroy()</a> before their custom <a class="el" href="class_a_z_1_1_i_allocator.html#ac4cc6df15cdc178f7580001468910cd6" title="All allocators must provide their deinitialization routine here. ">Destroy()</a> method in order to be properly deregistered. <br/></td></tr>
-<tr class="separator:aa0ccd6c34fbe94c04769cc09e8233814 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4cc6df15cdc178f7580001468910cd6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_allocator.html#ac4cc6df15cdc178f7580001468910cd6">Destroy</a> ()</td></tr>
-<tr class="memdesc:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="mdescLeft">&#160;</td><td class="mdescRight">All allocators must provide their deinitialization routine here. <br/></td></tr>
-<tr class="separator:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_thread_pool_schema"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_thread_pool_schema')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_thread_pool_schema.html">AZ::ThreadPoolSchema</a></td></tr>
-<tr class="memitem:a6367a3025d6ca9fd227fcdc40c383053 inherit pro_attribs_class_a_z_1_1_thread_pool_schema"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6367a3025d6ca9fd227fcdc40c383053"></a>
-GetThreadPoolData&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadPoolGetter</b></td></tr>
-<tr class="separator:a6367a3025d6ca9fd227fcdc40c383053 inherit pro_attribs_class_a_z_1_1_thread_pool_schema"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9923cfe65cda47b231403db667e1d16 inherit pro_attribs_class_a_z_1_1_thread_pool_schema"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9923cfe65cda47b231403db667e1d16"></a>
-SetThreadPoolData&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadPoolSetter</b></td></tr>
-<tr class="separator:ae9923cfe65cda47b231403db667e1d16 inherit pro_attribs_class_a_z_1_1_thread_pool_schema"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade49318d430b045554a47e6fb526109c inherit pro_attribs_class_a_z_1_1_thread_pool_schema"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade49318d430b045554a47e6fb526109c"></a>
-class ThreadPoolSchemaImpl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_impl</b></td></tr>
-<tr class="separator:ade49318d430b045554a47e6fb526109c inherit pro_attribs_class_a_z_1_1_thread_pool_schema"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Allocator&gt;<br/>
@@ -244,7 +199,7 @@ class AZ::ThreadPoolSchemaHelper&lt; Allocator &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

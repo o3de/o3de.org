@@ -57,8 +57,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_touch-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceTouch Class Reference</div>  </div>
@@ -166,44 +164,6 @@ Static Public Attributes</h2></td></tr>
 static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch.html#adf2ebd2115092bb14b8f5bed71feb4fa">Id</a> {&quot;touch&quot;}</td></tr>
 <tr class="memdesc:adf2ebd2115092bb14b8f5bed71feb4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id used to identify the primary touch input device. <br/></td></tr>
 <tr class="separator:adf2ebd2115092bb14b8f5bed71feb4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:ad591f60e247c636e708c6cd385574d0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad591f60e247c636e708c6cd385574d0d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch.html#ad591f60e247c636e708c6cd385574d0d">TouchChannelByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_analog_with_position2_d.html">InputChannelAnalogWithPosition2D</a> * &gt;</td></tr>
-<tr class="memdesc:ad591f60e247c636e708c6cd385574d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for verbose container class. <br/></td></tr>
-<tr class="separator:ad591f60e247c636e708c6cd385574d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a15b6e3165bb402091f8eeb244de9abd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15b6e3165bb402091f8eeb244de9abd4"></a>
-InputChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch.html#a15b6e3165bb402091f8eeb244de9abd4">m_allChannelsById</a></td></tr>
-<tr class="memdesc:a15b6e3165bb402091f8eeb244de9abd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">All touch channels by id. <br/></td></tr>
-<tr class="separator:a15b6e3165bb402091f8eeb244de9abd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e7057c436d8d4975279d0712c08862"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91e7057c436d8d4975279d0712c08862"></a>
-<a class="el" href="class_az_framework_1_1_input_device_touch.html#ad591f60e247c636e708c6cd385574d0d">TouchChannelByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_touch.html#a91e7057c436d8d4975279d0712c08862">m_touchChannelsById</a></td></tr>
-<tr class="memdesc:a91e7057c436d8d4975279d0712c08862"><td class="mdescLeft">&#160;</td><td class="mdescRight">All touch channels by id. <br/></td></tr>
-<tr class="separator:a91e7057c436d8d4975279d0712c08862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_az_framework_1_1_input_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_input_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_input_device.html">AzFramework::InputDevice</a></td></tr>
-<tr class="memitem:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a20c49755e8fc367afe62e1c1788e8b8b">BroadcastInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) const </td></tr>
-<tr class="separator:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a47e7fba32002cef9260f72d49079c2b2">BroadcastInputTextEvent</a> (const AZStd::string &amp;textUTF8) const </td></tr>
-<tr class="separator:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b3f1cf8533f960eb86d73d9c0b09dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a83b3f1cf8533f960eb86d73d9c0b09dd">BroadcastInputDeviceConnectedEvent</a> () const </td></tr>
-<tr class="memdesc:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device connects to the system. <br/></td></tr>
-<tr class="separator:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8db0be32df8eeec193f83be08cce6fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#ae8db0be32df8eeec193f83be08cce6fb">BroadcastInputDeviceDisconnectedEvent</a> () const </td></tr>
-<tr class="memdesc:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device disconnects from the system. <br/></td></tr>
-<tr class="separator:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7610e16b07bb6c9e5806709d8d142a81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a7610e16b07bb6c9e5806709d8d142a81">ResetInputChannelStates</a> ()</td></tr>
-<tr class="memdesc:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
-<tr class="separator:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a generic touch input device, including the ids of all its associated input channels. Platform specific implementations are defined as private implementations so that creating an instance of this generic class will work correctly on any platform that supports touch input, while providing access to the device name and associated channel ids on any platform through the 'null' implementation (primarily so that the editor can use them to setup input mappings). </p>
@@ -320,7 +280,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

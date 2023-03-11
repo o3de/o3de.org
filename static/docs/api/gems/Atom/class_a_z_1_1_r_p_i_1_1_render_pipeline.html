@@ -70,9 +70,9 @@ Public Types</h2></td></tr>
 <b>NoRender</b>
  }</td></tr>
 <tr class="separator:a2ed9f5a12eb38d066d7455c4b264d16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24a57606d88525803ed49ae14ec04b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac24a57606d88525803ed49ae14ec04b9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineViewMap</b> = AZStd::map&lt; PipelineViewTag, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pipeline_views.html">PipelineViews</a>, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_a_z_name_sort_ascending.html">AZNameSortAscending</a> &gt;</td></tr>
-<tr class="separator:ac24a57606d88525803ed49ae14ec04b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4100e17dec6ebd345b72ef9276b736"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d4100e17dec6ebd345b72ef9276b736"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineViewMap</b> = AZStd::unordered_map&lt; PipelineViewTag, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pipeline_views.html">PipelineViews</a> &gt;</td></tr>
+<tr class="separator:a8d4100e17dec6ebd345b72ef9276b736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee41e857fcc88ba2ed439fb3e66cbb81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee41e857fcc88ba2ed439fb3e66cbb81"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ViewToViewTagMap</b> = AZStd::map&lt; const <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> *, PipelineViewTag &gt;</td></tr>
 <tr class="separator:aee41e857fcc88ba2ed439fb3e66cbb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -82,15 +82,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afba9f57f1367aebfc55110ca3b7db2c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afba9f57f1367aebfc55110ca3b7db2c2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a>, AZ::SystemAllocator)</td></tr>
 <tr class="separator:afba9f57f1367aebfc55110ca3b7db2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae074b01e6bba38825d3ca2d91aa53db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ae074b01e6bba38825d3ca2d91aa53db1">SetPersistentView</a> (const PipelineViewTag &amp;viewId, ViewPtr view)</td></tr>
+<tr class="memitem:ae074b01e6bba38825d3ca2d91aa53db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ae074b01e6bba38825d3ca2d91aa53db1">SetPersistentView</a> (const PipelineViewTag &amp;viewId, <a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> view)</td></tr>
 <tr class="separator:ae074b01e6bba38825d3ca2d91aa53db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0db07aaa9a3381d52031b040c9d0076"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ab0db07aaa9a3381d52031b040c9d0076">AddTransientView</a> (const PipelineViewTag &amp;viewId, ViewPtr view)</td></tr>
+<tr class="memitem:ab0db07aaa9a3381d52031b040c9d0076"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ab0db07aaa9a3381d52031b040c9d0076">AddTransientView</a> (const PipelineViewTag &amp;viewId, <a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> view)</td></tr>
 <tr class="separator:ab0db07aaa9a3381d52031b040c9d0076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aa8f1b8ce180e4b4f932b09da1f8fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a4aa8f1b8ce180e4b4f932b09da1f8fc7">SetDefaultView</a> (ViewPtr view)</td></tr>
+<tr class="memitem:a4aa8f1b8ce180e4b4f932b09da1f8fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a4aa8f1b8ce180e4b4f932b09da1f8fc7">SetDefaultView</a> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> view)</td></tr>
 <tr class="separator:a4aa8f1b8ce180e4b4f932b09da1f8fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3efbb6b296c546c8c0adcca2ff002e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ae3efbb6b296c546c8c0adcca2ff002e6">SetDefaultStereoscopicViewFromEntity</a> (EntityId entityId, RPI::ViewType viewType)</td></tr>
 <tr class="separator:ae3efbb6b296c546c8c0adcca2ff002e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad42b8f2f0deb98ff908bdc6c4fd036ac"><td class="memItemLeft" align="right" valign="top">ViewPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ad42b8f2f0deb98ff908bdc6c4fd036ac">GetDefaultView</a> ()</td></tr>
+<tr class="memitem:ad42b8f2f0deb98ff908bdc6c4fd036ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ad42b8f2f0deb98ff908bdc6c4fd036ac">GetDefaultView</a> ()</td></tr>
 <tr class="separator:ad42b8f2f0deb98ff908bdc6c4fd036ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa165d70a70a5e16f680d0fc1a03cc259"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa165d70a70a5e16f680d0fc1a03cc259"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#aa165d70a70a5e16f680d0fc1a03cc259">SetDefaultViewFromEntity</a> (EntityId entityId)</td></tr>
@@ -105,7 +105,7 @@ PipelineViewTag&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memdesc:ae507842d55ae3c65160180805754cd48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the main view tag (the tag used for the default view). <br/></td></tr>
 <tr class="separator:ae507842d55ae3c65160180805754cd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13d8a9780a3a3fb8060e2f0ae49d4f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac13d8a9780a3a3fb8060e2f0ae49d4f8"></a>
-const AZStd::vector&lt; ViewPtr &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ac13d8a9780a3a3fb8060e2f0ae49d4f8">GetViews</a> (const PipelineViewTag &amp;viewTag) const </td></tr>
+const AZStd::vector&lt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ac13d8a9780a3a3fb8060e2f0ae49d4f8">GetViews</a> (const PipelineViewTag &amp;viewTag) const </td></tr>
 <tr class="memdesc:ac13d8a9780a3a3fb8060e2f0ae49d4f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get views that are associated with specified view tag. <br/></td></tr>
 <tr class="separator:ac13d8a9780a3a3fb8060e2f0ae49d4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63483f7deb2ab4f817eac28bd5326647"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63483f7deb2ab4f817eac28bd5326647"></a>
@@ -201,17 +201,19 @@ ViewType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad625bb9299099c7dd68e979c8625821d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad625bb9299099c7dd68e979c8625821d"></a>
-static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipeline</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;desc)</td></tr>
+static <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipeline</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;desc)</td></tr>
 <tr class="separator:ad625bb9299099c7dd68e979c8625821d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d9e5edd7f40c0284d79db1c5ef1ef6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47d9e5edd7f40c0284d79db1c5ef1ef6"></a>
-static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineFromAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; pipelineAsset)</td></tr>
+static <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineFromAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; pipelineAsset)</td></tr>
 <tr class="separator:a47d9e5edd7f40c0284d79db1c5ef1ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c287bb70f0c82614c1e18ac74173814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c287bb70f0c82614c1e18ac74173814"></a>
-static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineForWindow</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;desc, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a> &amp;windowContext, const ViewType viewType=ViewType::Default)</td></tr>
+static <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineForWindow</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;desc, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a> &amp;windowContext, const ViewType viewType=ViewType::Default)</td></tr>
 <tr class="separator:a7c287bb70f0c82614c1e18ac74173814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d1d40e68b2018b05450059d189057b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d1d40e68b2018b05450059d189057b8"></a>
-static RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineForWindow</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; pipelineAsset, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a> &amp;windowContext)</td></tr>
+static <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRenderPipelineForWindow</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; pipelineAsset, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html">WindowContext</a> &amp;windowContext)</td></tr>
 <tr class="separator:a2d1d40e68b2018b05450059d189057b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abe5cb88e7ea6ef92f2826f758824a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a2abe5cb88e7ea6ef92f2826f758824a1">CreateRenderPipelineForImage</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;desc, <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_asset.html">AttachmentImageAsset</a> &gt; imageAsset)</td></tr>
+<tr class="separator:a2abe5cb88e7ea6ef92f2826f758824a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -310,7 +312,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add this <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> to the next RPI system's RenderTick and it will be rendered once. This function can be used for render a renderpipeline with desired frequence as its associated window/view is expecting. Note: the <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> will be only renderred once if this function is called multiple time between two system ticks. </p>
+<p>Add this <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> to the next RPI system's RenderTick and it will be rendered once. This function can be used for render a render pipeline with desired frequency as its associated window/view is expecting. Note: the <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> will be only rendered once if this function is called multiple time between two system ticks. </p>
 
 </div>
 </div>
@@ -327,7 +329,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ViewPtr&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a>&#160;</td>
           <td class="paramname"><em>view</em>&#160;</td>
         </tr>
         <tr>
@@ -338,6 +340,41 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Add a view for a PipelineViewTag used in this pipeline. The view's reference will be only saved for rendering one frame and it will be cleared when the next frame starts. This function should be used after OnStartFrame is called. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2abe5cb88e7ea6ef92f2826f758824a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a> AZ::RPI::RenderPipeline::CreateRenderPipelineForImage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html">RenderPipelineDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_asset.html">AttachmentImageAsset</a> &gt;&#160;</td>
+          <td class="paramname"><em>imageAsset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a render pipeline which renders to the specified attachment image The render pipeline's root pass is created from the pass template specified from <a class="el" href="struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#a1bc01d98ead72acc8a3e52a724d2aa54" title="The root pass template name. ">RenderPipelineDescriptor::m_rootPassTemplate</a> The input <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_asset.html" title="The asset for attachment image which is mainly used to create runtime attachment instance. ">AttachmentImageAsset</a> is used to connect to first output attachment of the root pass template Note: the <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_asset.html" title="The asset for attachment image which is mainly used to create runtime attachment instance. ">AttachmentImageAsset</a> doesn't need to be loaded </p>
 
 </div>
 </div>
@@ -363,7 +400,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ViewPtr AZ::RPI::RenderPipeline::GetDefaultView </td>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> AZ::RPI::RenderPipeline::GetDefaultView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -408,7 +445,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
         <tr>
           <td class="memname">void AZ::RPI::RenderPipeline::SetDefaultView </td>
           <td>(</td>
-          <td class="paramtype">ViewPtr&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a>&#160;</td>
           <td class="paramname"><em>view</em></td><td>)</td>
           <td></td>
         </tr>
@@ -431,7 +468,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ViewPtr&#160;</td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a>&#160;</td>
           <td class="paramname"><em>view</em>&#160;</td>
         </tr>
         <tr>
@@ -451,7 +488,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

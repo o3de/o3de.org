@@ -56,8 +56,6 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_log_panel_1_1_base_log_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::LogPanel::BaseLogView Class Reference</div>  </div>
@@ -124,51 +122,6 @@ static QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetErro
 <tr class="memitem:aa070b0ff5582a9460c107ad44cfd1c29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa070b0ff5582a9460c107ad44cfd1c29"></a>
 static QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugIcon</b> ()</td></tr>
 <tr class="separator:aa070b0ff5582a9460c107ad44cfd1c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae6ee99791cf69999dbc20ef072ba8710"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6ee99791cf69999dbc20ef072ba8710"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetIconColumn</b> ()</td></tr>
-<tr class="separator:ae6ee99791cf69999dbc20ef072ba8710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a0b3acc4ebc68224e96acb91a109ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2a0b3acc4ebc68224e96acb91a109ff"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeColumn</b> ()</td></tr>
-<tr class="separator:ac2a0b3acc4ebc68224e96acb91a109ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada94bd1eea53fc973d5cc3736d615c0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada94bd1eea53fc973d5cc3736d615c0b"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindowColumn</b> ()</td></tr>
-<tr class="separator:ada94bd1eea53fc973d5cc3736d615c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3971d4d910fa28d080b81c2c5974f111"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3971d4d910fa28d080b81c2c5974f111"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetMessageColumn</b> ()</td></tr>
-<tr class="separator:a3971d4d910fa28d080b81c2c5974f111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7be268fee7fc08e340bd050c8d62e76d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7be268fee7fc08e340bd050c8d62e76d"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertRowToText</b> (const QModelIndex &amp;row)</td></tr>
-<tr class="separator:a7be268fee7fc08e340bd050c8d62e76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb60af40f0d1d18be32da77d45aa2c35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb60af40f0d1d18be32da77d45aa2c35"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAtMaxScroll</b> () const </td></tr>
-<tr class="separator:afb60af40f0d1d18be32da77d45aa2c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5daaa44e021631015401679c56bc81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f5daaa44e021631015401679c56bc81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *event) override</td></tr>
-<tr class="separator:a7f5daaa44e021631015401679c56bc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69e5e4bc4df3c35d050441f87b42c5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad69e5e4bc4df3c35d050441f87b42c5e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateContextMenu</b> ()</td></tr>
-<tr class="separator:ad69e5e4bc4df3c35d050441f87b42c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aa0fbc1f00c75043ab83ed5a888897c60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0fbc1f00c75043ab83ed5a888897c60"></a>
-QTableView *&#160;</td><td class="memItemRight" valign="bottom"><b>m_ptrLogView</b></td></tr>
-<tr class="separator:aa0fbc1f00c75043ab83ed5a888897c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a937a2097759ff903a8872f3a93ac3760"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a937a2097759ff903a8872f3a93ac3760"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actionSelectAll</b></td></tr>
-<tr class="separator:a937a2097759ff903a8872f3a93ac3760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c3e38fd0fa6326339d62f661469b5a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c3e38fd0fa6326339d62f661469b5a5"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actionSelectNone</b></td></tr>
-<tr class="separator:a8c3e38fd0fa6326339d62f661469b5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdcabc924f1031a6e5469cc2fe9793b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdcabc924f1031a6e5469cc2fe9793b7"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actionCopySelected</b></td></tr>
-<tr class="separator:abdcabc924f1031a6e5469cc2fe9793b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab21817fa9e3934673607e129660158a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab21817fa9e3934673607e129660158a5"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actionCopyAll</b></td></tr>
-<tr class="separator:ab21817fa9e3934673607e129660158a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/Logging/LogControl.h</li>
@@ -176,7 +129,7 @@ QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actionCopyAll</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

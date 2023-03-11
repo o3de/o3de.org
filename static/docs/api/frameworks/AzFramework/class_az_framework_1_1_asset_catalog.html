@@ -54,7 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_framework_1_1_asset_catalog-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::AssetCatalog Class Reference</div>  </div>
@@ -197,30 +196,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAssetBundl
 static AZStd::shared_ptr<br class="typebreak"/>
 &lt; <a class="el" href="class_az_framework_1_1_asset_registry.html">AzFramework::AssetRegistry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadCatalogFromFile</b> (const char *catalogFile)</td></tr>
 <tr class="separator:a2e5556406e5148c0c4dfd167f5b065d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa5c828e018506bd08212b50bb6e841a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_catalog.html#aa5c828e018506bd08212b50bb6e841a1">IsTrackedAssetType</a> (const char *assetFilename) const </td></tr>
-<tr class="separator:aa5c828e018506bd08212b50bb6e841a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34542aaed91930d1e5942a8e5eda9fde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34542aaed91930d1e5942a8e5eda9fde"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_catalog.html#a34542aaed91930d1e5942a8e5eda9fde">AddAssetDependencies</a> (const AZ::Data::AssetId &amp;searchAssetId, AZStd::unordered_set&lt; AZ::Data::AssetId &gt; &amp;assetSet, AZStd::vector&lt; AZ::Data::ProductDependency &gt; &amp;dependencyList, const AZStd::unordered_set&lt; AZ::Data::AssetId &gt; &amp;exclusionList, const AZStd::vector&lt; AZStd::string &gt; &amp;wildcardPatternExclusionList, AZ::Data::PreloadAssetListType &amp;preloadAssetList) const </td></tr>
-<tr class="memdesc:a34542aaed91930d1e5942a8e5eda9fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function that adds all of searchAssetId's dependencies to the depedencySet/List (leaving out ones that are already in the list) <br/></td></tr>
-<tr class="separator:a34542aaed91930d1e5942a8e5eda9fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfffaad72dbb7847193c8781653b75a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfffaad72dbb7847193c8781653b75a1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadCatalogs</b> ()</td></tr>
-<tr class="separator:acfffaad72dbb7847193c8781653b75a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0930447def60beaa13953dd0d42bee63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0930447def60beaa13953dd0d42bee63"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddCatalogEntry</b> (AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_asset_registry.html">AzFramework::AssetRegistry</a> &gt; deltaCatalog)</td></tr>
-<tr class="separator:a0930447def60beaa13953dd0d42bee63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97462d5d0a0229cbe40f88b327218f0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97462d5d0a0229cbe40f88b327218f0e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyDeltaCatalog</b> (AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_asset_registry.html">AzFramework::AssetRegistry</a> &gt; deltaCatalog)</td></tr>
-<tr class="separator:a97462d5d0a0229cbe40f88b327218f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada38de8adccf6d392098664593bb4a39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada38de8adccf6d392098664593bb4a39"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InsertCatalogEntry</b> (AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_asset_registry.html">AzFramework::AssetRegistry</a> &gt; deltaCatalog, size_t catalogIndex)</td></tr>
-<tr class="separator:ada38de8adccf6d392098664593bb4a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac24dea81c7a889a9bc8c648fa645ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaac24dea81c7a889a9bc8c648fa645ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetRegistry</b> ()</td></tr>
-<tr class="separator:aaac24dea81c7a889a9bc8c648fa645ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a0bdba3514bd677cd0bbbccb5fbec2aac"></a>
@@ -246,38 +221,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetRegistry</b> ()<
 
 </div>
 </div>
-<a class="anchor" id="aa5c828e018506bd08212b50bb6e841a1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzFramework::AssetCatalog::IsTrackedAssetType </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>assetFilename</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if the specified filename's extension matches those handled by the catalog. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Asset/AssetCatalog.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

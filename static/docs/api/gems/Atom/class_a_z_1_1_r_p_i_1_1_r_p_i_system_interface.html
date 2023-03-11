@@ -85,15 +85,15 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a9b8b3cd622ff1847de245088c4cf1407"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a9b8b3cd622ff1847de245088c4cf1407">IsNullRenderer</a> () const =0</td></tr>
 <tr class="separator:a9b8b3cd622ff1847de245088c4cf1407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a0d2a782eb5f326dd0555ea0f1c036c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a0d2a782eb5f326dd0555ea0f1c036c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a8a0d2a782eb5f326dd0555ea0f1c036c">RegisterScene</a> (ScenePtr scene)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a8a0d2a782eb5f326dd0555ea0f1c036c">RegisterScene</a> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> scene)=0</td></tr>
 <tr class="memdesc:a8a0d2a782eb5f326dd0555ea0f1c036c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a created scene to <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a>. Registered scene will be simulated and rendered in <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a> ticks. <br/></td></tr>
 <tr class="separator:a8a0d2a782eb5f326dd0555ea0f1c036c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac226fc0392411006efffc6591527f2d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac226fc0392411006efffc6591527f2d4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ac226fc0392411006efffc6591527f2d4">UnregisterScene</a> (ScenePtr scene)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ac226fc0392411006efffc6591527f2d4">UnregisterScene</a> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> scene)=0</td></tr>
 <tr class="memdesc:ac226fc0392411006efffc6591527f2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a scene from <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a>. The scene won't be simulated or rendered. <br/></td></tr>
 <tr class="separator:ac226fc0392411006efffc6591527f2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e5cf576463ad34bef698b1f4b2fa465"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e5cf576463ad34bef698b1f4b2fa465"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a1e5cf576463ad34bef698b1f4b2fa465">AZ_DEPRECATED</a> (virtual ScenePtr GetDefaultScene() const =0;,&quot;This method has been deprecated. Please use <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ae10e2db8b9cc10dec9b1cea38734e9a4">GetSceneByName</a>(name), GetSceneForEntityContextId(entityContextId) or <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88">Scene::GetSceneForEntityId</a>(AZ::EntityId entityId) instead.&quot;)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a1e5cf576463ad34bef698b1f4b2fa465">AZ_DEPRECATED</a> (virtual <a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> GetDefaultScene() const =0;,&quot;This method has been deprecated. Please use <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ae10e2db8b9cc10dec9b1cea38734e9a4">GetSceneByName</a>(name), GetSceneForEntityContextId(entityContextId) or <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88">Scene::GetSceneForEntityId</a>(AZ::EntityId entityId) instead.&quot;)</td></tr>
 <tr class="memdesc:a1e5cf576463ad34bef698b1f4b2fa465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated. Use GetSceneByName(name), GetSceneForEntityContextId(entityContextId) or <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88" title="Gets the RPI::Scene for a given entityId. ">Scene::GetSceneForEntityId(AZ::EntityId entityId)</a> instead. <br/></td></tr>
 <tr class="separator:a1e5cf576463ad34bef698b1f4b2fa465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac72997c379dbd861d9e829847067e8cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac72997c379dbd861d9e829847067e8cd"></a>
@@ -105,7 +105,7 @@ virtual <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160
 <tr class="memdesc:ae10e2db8b9cc10dec9b1cea38734e9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scene by using scene name. <br/></td></tr>
 <tr class="separator:ae10e2db8b9cc10dec9b1cea38734e9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5bb54ab4b1b22ada3354e7910fc33d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5bb54ab4b1b22ada3354e7910fc33d4"></a>
-virtual RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#af5bb54ab4b1b22ada3354e7910fc33d4">GetRenderPipelineForWindow</a> (AzFramework::NativeWindowHandle windowHandle)=0</td></tr>
+virtual <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#af5bb54ab4b1b22ada3354e7910fc33d4">GetRenderPipelineForWindow</a> (AzFramework::NativeWindowHandle windowHandle)=0</td></tr>
 <tr class="memdesc:af5bb54ab4b1b22ada3354e7910fc33d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render pipeline created for a window. <br/></td></tr>
 <tr class="separator:af5bb54ab4b1b22ada3354e7910fc33d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada26b20cb0ade3a250d738131bf5b7f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada26b20cb0ade3a250d738131bf5b7f8"></a>
@@ -282,7 +282,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,7 +55,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -128,11 +127,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>VisitFeatureProcessor
 <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">FeatureProcessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeatureProcessor</b> (const TypeId &amp;featureProcessorTypeId) const </td></tr>
 <tr class="separator:a47c3dfc1e65f1b3f0253a06f10c21d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5ad95e05589dc871c26f6df8ed3a1cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5ad95e05589dc871c26f6df8ed3a1cd"></a>
-RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#ab5ad95e05589dc871c26f6df8ed3a1cd">GetRenderPipeline</a> (const RenderPipelineId &amp;pipelineId) const </td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#ab5ad95e05589dc871c26f6df8ed3a1cd">GetRenderPipeline</a> (const RenderPipelineId &amp;pipelineId) const </td></tr>
 <tr class="memdesc:ab5ad95e05589dc871c26f6df8ed3a1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pipeline by name id. <br/></td></tr>
 <tr class="separator:ab5ad95e05589dc871c26f6df8ed3a1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166d44a1ee2835a421388b1c46e3a341"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a166d44a1ee2835a421388b1c46e3a341"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRenderPipeline</b> (RenderPipelinePtr pipeline)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRenderPipeline</b> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a> pipeline)</td></tr>
 <tr class="separator:a166d44a1ee2835a421388b1c46e3a341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ab7deb1ff9185edcd9df5ef2a3e877"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5ab7deb1ff9185edcd9df5ef2a3e877"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveRenderPipeline</b> (const RenderPipelineId &amp;pipelineId)</td></tr>
@@ -153,12 +152,12 @@ AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () co
 <tr class="memitem:a344433e0fa483abc6ee4b1dccd962f30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a344433e0fa483abc6ee4b1dccd962f30">SetDefaultRenderPipeline</a> (const RenderPipelineId &amp;pipelineId)</td></tr>
 <tr class="separator:a344433e0fa483abc6ee4b1dccd962f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed8018c39d2d6b3c90de88e21adc3851"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed8018c39d2d6b3c90de88e21adc3851"></a>
-RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#aed8018c39d2d6b3c90de88e21adc3851">GetDefaultRenderPipeline</a> () const </td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#aed8018c39d2d6b3c90de88e21adc3851">GetDefaultRenderPipeline</a> () const </td></tr>
 <tr class="memdesc:aed8018c39d2d6b3c90de88e21adc3851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return default pipeline. If the default pipeline wasn't set, then it would return nullptr. <br/></td></tr>
 <tr class="separator:aed8018c39d2d6b3c90de88e21adc3851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac54ae513152895d53765d9c444e18b70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac54ae513152895d53765d9c444e18b70"></a>
 const AZStd::vector<br class="typebreak"/>
-&lt; RenderPipelinePtr &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#ac54ae513152895d53765d9c444e18b70">GetRenderPipelines</a> () const </td></tr>
+&lt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#ac54ae513152895d53765d9c444e18b70">GetRenderPipelines</a> () const </td></tr>
 <tr class="memdesc:ac54ae513152895d53765d9c444e18b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all added render pipelines in this scene. <br/></td></tr>
 <tr class="separator:ac54ae513152895d53765d9c444e18b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2965bf48de6287935fd61345c6e0fbd6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a2965bf48de6287935fd61345c6e0fbd6">ConfigurePipelineState</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a> drawListTag, <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_descriptor_for_draw.html">RHI::PipelineStateDescriptorForDraw</a> &amp;outPipelineState) const </td></tr>
@@ -176,7 +175,7 @@ AzFramework::IVisibilityScene *&#160;</td><td class="memItemRight" valign="botto
 <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCullingScene</b> () const </td></tr>
 <tr class="separator:a53c4536e7c2e7de6afff35b6c48533ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4cef7c7d9f2f373d872cdc62bb8e09a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4cef7c7d9f2f373d872cdc62bb8e09a"></a>
-RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindRenderPipelineForWindow</b> (AzFramework::NativeWindowHandle windowHandle, ViewType viewType=ViewType::Default)</td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindRenderPipelineForWindow</b> (AzFramework::NativeWindowHandle windowHandle, ViewType viewType=ViewType::Default)</td></tr>
 <tr class="separator:ae4cef7c7d9f2f373d872cdc62bb8e09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d4ce9800b2fe7aa0da3b4f368bede43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a4d4ce9800b2fe7aa0da3b4f368bede43">ConnectEvent</a> (PrepareSceneSrgEvent::Handler &amp;handler)</td></tr>
 <tr class="separator:a4d4ce9800b2fe7aa0da3b4f368bede43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,10 +196,10 @@ RHI::Ptr<br class="typebreak"/>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e9d66e83bd427d4e1beda3fba1fa36c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e9d66e83bd427d4e1beda3fba1fa36c"></a>
-static ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateScene</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;sceneDescriptor)</td></tr>
+static <a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateScene</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_scene_descriptor.html">SceneDescriptor</a> &amp;sceneDescriptor)</td></tr>
 <tr class="separator:a2e9d66e83bd427d4e1beda3fba1fa36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06b395e37f8b2c6efbee7305a1a11fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab06b395e37f8b2c6efbee7305a1a11fb"></a>
-static ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSceneFromAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; sceneAsset)</td></tr>
+static <a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSceneFromAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_any_asset.html">AnyAsset</a> &gt; sceneAsset)</td></tr>
 <tr class="separator:ab06b395e37f8b2c6efbee7305a1a11fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adebef26e0a77352aa12687c532ae9645"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#adebef26e0a77352aa12687c532ae9645">GetSceneForEntityContextId</a> (AzFramework::EntityContextId entityContextId)</td></tr>
 <tr class="separator:adebef26e0a77352aa12687c532ae9645"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,27 +215,6 @@ template&lt;typename FeatureProcessorType &gt; </td></tr>
 template&lt;typename FeatureProcessorType &gt; </td></tr>
 <tr class="memitem:a69f231c7a485deb50d13fba5528fc323"><td class="memTemplItemLeft" align="right" valign="top">static FeatureProcessorType *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GetFeatureProcessorForEntityContextId</b> (AzFramework::EntityContextId entityContextId)</td></tr>
 <tr class="separator:a69f231c7a485deb50d13fba5528fc323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a221894c215ae2482c19a4b4ba9806dcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a221894c215ae2482c19a4b4ba9806dcc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSceneNotifictaionHandlerConnected</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html">SceneNotification</a> *handler)</td></tr>
-<tr class="separator:a221894c215ae2482c19a4b4ba9806dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d101cfa2dc5f246a81e703105a7e771"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d101cfa2dc5f246a81e703105a7e771"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineStateLookupNeedsRebuild</b> () override</td></tr>
-<tr class="separator:a8d101cfa2dc5f246a81e703105a7e771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38eb6d23cde85ef87144b56448e6e06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad38eb6d23cde85ef87144b56448e6e06"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Simulate</b> (RHI::JobPolicy jobPolicy, float simulationTime)</td></tr>
-<tr class="separator:ad38eb6d23cde85ef87144b56448e6e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eb6e73f7c867d96b503291a123fe8c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2eb6e73f7c867d96b503291a123fe8c5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareRender</b> (RHI::JobPolicy jobPolicy, float simulationTime)</td></tr>
-<tr class="separator:a2eb6e73f7c867d96b503291a123fe8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dfc429b803085779ef32c9a04c53b05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dfc429b803085779ef32c9a04c53b05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFrameEnd</b> ()</td></tr>
-<tr class="separator:a4dfc429b803085779ef32c9a04c53b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb955714a5ae2885a5483e78bd77571e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb955714a5ae2885a5483e78bd77571e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSrgs</b> ()</td></tr>
-<tr class="separator:afb955714a5ae2885a5483e78bd77571e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -424,7 +402,7 @@ template&lt;typename FeatureProcessorType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

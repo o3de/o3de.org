@@ -86,11 +86,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ac12da684d4df77639aa2e7e70144fba7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#ac12da684d4df77639aa2e7e70144fba7">IsNullRenderer</a> () const override</td></tr>
 <tr class="separator:ac12da684d4df77639aa2e7e70144fba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306267ec5eea7c5871ee894b1573aea2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a306267ec5eea7c5871ee894b1573aea2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#a306267ec5eea7c5871ee894b1573aea2">RegisterScene</a> (ScenePtr scene) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#a306267ec5eea7c5871ee894b1573aea2">RegisterScene</a> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> scene) override</td></tr>
 <tr class="memdesc:a306267ec5eea7c5871ee894b1573aea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a created scene to <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a>. Registered scene will be simulated and rendered in <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a> ticks. <br/></td></tr>
 <tr class="separator:a306267ec5eea7c5871ee894b1573aea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799ef3c6ea4c6f11a19ab13ed73711ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a799ef3c6ea4c6f11a19ab13ed73711ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#a799ef3c6ea4c6f11a19ab13ed73711ef">UnregisterScene</a> (ScenePtr scene) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#a799ef3c6ea4c6f11a19ab13ed73711ef">UnregisterScene</a> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> scene) override</td></tr>
 <tr class="memdesc:a799ef3c6ea4c6f11a19ab13ed73711ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a scene from <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html">RPISystem</a>. The scene won't be simulated or rendered. <br/></td></tr>
 <tr class="separator:a799ef3c6ea4c6f11a19ab13ed73711ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a721d3abaac19cb61e5a5709c3120a7e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a721d3abaac19cb61e5a5709c3120a7e9"></a>
@@ -102,10 +102,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a01610780f03928ea825f6224a32b9953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get scene by using scene name. <br/></td></tr>
 <tr class="separator:a01610780f03928ea825f6224a32b9953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e1714cb94b39f8152f7f5b7f84db83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61e1714cb94b39f8152f7f5b7f84db83"></a>
-ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultScene</b> () const override</td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultScene</b> () const override</td></tr>
 <tr class="separator:a61e1714cb94b39f8152f7f5b7f84db83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a696bfe87a5386cd2b4c6e84ce1b9be76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a696bfe87a5386cd2b4c6e84ce1b9be76"></a>
-RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#a696bfe87a5386cd2b4c6e84ce1b9be76">GetRenderPipelineForWindow</a> (AzFramework::NativeWindowHandle windowHandle) override</td></tr>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">RenderPipelinePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#a696bfe87a5386cd2b4c6e84ce1b9be76">GetRenderPipelineForWindow</a> (AzFramework::NativeWindowHandle windowHandle) override</td></tr>
 <tr class="memdesc:a696bfe87a5386cd2b4c6e84ce1b9be76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render pipeline created for a window. <br/></td></tr>
 <tr class="separator:a696bfe87a5386cd2b4c6e84ce1b9be76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39e1fd9ff3bff0de7d5b3dfbcaf7ac29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39e1fd9ff3bff0de7d5b3dfbcaf7ac29"></a>
@@ -176,7 +176,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterXRSystem</b
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html">RPISystemInterface</a>)</td></tr>
 <tr class="separator:ad6a9528483204de3872e95e69ac3fbac inherit pub_methods_class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e5cf576463ad34bef698b1f4b2fa465 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e5cf576463ad34bef698b1f4b2fa465"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a1e5cf576463ad34bef698b1f4b2fa465">AZ_DEPRECATED</a> (virtual ScenePtr GetDefaultScene() const =0;,&quot;This method has been deprecated. Please use <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ae10e2db8b9cc10dec9b1cea38734e9a4">GetSceneByName</a>(name), GetSceneForEntityContextId(entityContextId) or <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88">Scene::GetSceneForEntityId</a>(AZ::EntityId entityId) instead.&quot;)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a1e5cf576463ad34bef698b1f4b2fa465">AZ_DEPRECATED</a> (virtual <a class="el" href="class_a_z_std_1_1shared__ptr.html">ScenePtr</a> GetDefaultScene() const =0;,&quot;This method has been deprecated. Please use <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ae10e2db8b9cc10dec9b1cea38734e9a4">GetSceneByName</a>(name), GetSceneForEntityContextId(entityContextId) or <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88">Scene::GetSceneForEntityId</a>(AZ::EntityId entityId) instead.&quot;)</td></tr>
 <tr class="memdesc:a1e5cf576463ad34bef698b1f4b2fa465 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated. Use GetSceneByName(name), GetSceneForEntityContextId(entityContextId) or <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html#a1f9e0b6b7b008fc75497b4f4f7374d88" title="Gets the RPI::Scene for a given entityId. ">Scene::GetSceneForEntityId(AZ::EntityId entityId)</a> instead. <br/></td></tr>
 <tr class="separator:a1e5cf576463ad34bef698b1f4b2fa465 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -303,7 +303,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

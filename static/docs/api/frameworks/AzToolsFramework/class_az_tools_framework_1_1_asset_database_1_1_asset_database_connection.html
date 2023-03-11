@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetDatabase::AssetDatabaseConnection Class Reference</div>  </div>
@@ -397,34 +395,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>LogQuery</b> (const c
 <tr class="memitem:a5f814a5c4e2c1b58c49c25cba85ad42c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f814a5c4e2c1b58c49c25cba85ad42c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogResultId</b> (AZ::s64 rowId) override</td></tr>
 <tr class="separator:a5f814a5c4e2c1b58c49c25cba85ad42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a603831c5f2d5fdaf732cd35bce6ee305"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a603831c5f2d5fdaf732cd35bce6ee305"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStatements</b> ()</td></tr>
-<tr class="separator:a603831c5f2d5fdaf732cd35bce6ee305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99f31d8c90bcb5ce124e81593a7cf35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af99f31d8c90bcb5ce124e81593a7cf35"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetDatabaseFilePath</b> ()</td></tr>
-<tr class="separator:af99f31d8c90bcb5ce124e81593a7cf35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9537425c0c4e579f79f7817bd18cbe2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9537425c0c4e579f79f7817bd18cbe2c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateDatabaseTable</b> (const char *callName, const char *tableName)</td></tr>
-<tr class="separator:a9537425c0c4e579f79f7817bd18cbe2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac73849e948a63d626cfef3ac2a9a93f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac73849e948a63d626cfef3ac2a9a93f2"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetCombinedResultAsLambda</b> ()</td></tr>
-<tr class="separator:ac73849e948a63d626cfef3ac2a9a93f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a7e7e971b81ea19d173d69e1fe8fd43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a7e7e971b81ea19d173d69e1fe8fd43"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetCombinedResult</b> (const char *callName, <a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_statement.html">SQLite::Statement</a> *statement, AssetDatabaseConnection::combinedHandler handler, AZ::Uuid builderGuid=AZ::Uuid::CreateNull(), const char *jobKey=nullptr, AssetSystem::JobStatus status=AssetSystem::JobStatus::Any, bool includeLegacyAssetIDs=false)</td></tr>
-<tr class="separator:a5a7e7e971b81ea19d173d69e1fe8fd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a885f76ba64aa1fe4c541f729a0f55a5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a885f76ba64aa1fe4c541f729a0f55a5a"></a>
-<a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_connection.html">SQLite::Connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_databaseConnection</b></td></tr>
-<tr class="separator:a885f76ba64aa1fe4c541f729a0f55a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa010e992c84ee161d7658dac74870ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa010e992c84ee161d7658dac74870ba"></a>
-AZStd::unordered_set<br class="typebreak"/>
-&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_validatedTables</b></td></tr>
-<tr class="separator:aaa010e992c84ee161d7658dac74870ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Connection class represents a read-only connection to the asset database specifically (as opposed to a sql connection). Things like the Asset Processor derive from this in order to provide read-write access and curate the database. You may have as many of these connections as you wish, each represents a single connection to the asset database for use by a specific thread. All general read only queries are added here. Since this is meant for tools, we only care about queries which return data here, no modifications allowed here. Currently the Asset Processor is the only program allowed to modify the database. As such it derives from this class and overrides ReadOnly to return false which allows it to write / curate the database. However most systems only need to read and be notified of changes, so when they derive they don't override anything but CreateStatements to add specific queries that only make sense for their specific purpose, otherwise that statement should be added to this class so it can be reused by any system that needs it. Note that if a system needs read only access and has no special query needs, then this class can be used directly. </p>
@@ -618,7 +588,7 @@ AZStd::unordered_set<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

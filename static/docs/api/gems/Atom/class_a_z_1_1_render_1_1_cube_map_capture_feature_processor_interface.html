@@ -66,22 +66,22 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_cube_map_capture_feature_processor_interface.html">AZ::Render::CubeMapCaptureFeatureProcessorInterface</a>,&quot;{77C6838D-6693-4CF4-9FFC-8110C4551761}&quot;, AZ::RPI::FeatureProcessor)</td></tr>
 <tr class="separator:a3b1b9d6c1719dcd85ff266d636f6f00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3889abb0e651c28d162f2f303d42df3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3889abb0e651c28d162f2f303d42df3"></a>
-virtual CubeMapCaptureHandle&#160;</td><td class="memItemRight" valign="bottom"><b>AddCubeMapCapture</b> (const AZ::Transform &amp;transform)=0</td></tr>
+virtual <a class="el" href="class_a_z_std_1_1shared__ptr.html">CubeMapCaptureHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddCubeMapCapture</b> (const AZ::Transform &amp;transform)=0</td></tr>
 <tr class="separator:aa3889abb0e651c28d162f2f303d42df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af033e319e5ae9d994652e7de35418dec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af033e319e5ae9d994652e7de35418dec"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveCubeMapCapture</b> (CubeMapCaptureHandle &amp;cubeMapCapture)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveCubeMapCapture</b> (<a class="el" href="class_a_z_std_1_1shared__ptr.html">CubeMapCaptureHandle</a> &amp;cubeMapCapture)=0</td></tr>
 <tr class="separator:af033e319e5ae9d994652e7de35418dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aa5399886b52e2e5f424e3d9f73b3d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aa5399886b52e2e5f424e3d9f73b3d3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTransform</b> (const CubeMapCaptureHandle &amp;cubeMapCapture, const AZ::Transform &amp;transform)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTransform</b> (const <a class="el" href="class_a_z_std_1_1shared__ptr.html">CubeMapCaptureHandle</a> &amp;cubeMapCapture, const AZ::Transform &amp;transform)=0</td></tr>
 <tr class="separator:a0aa5399886b52e2e5f424e3d9f73b3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7f25c371679fd7a907bb7283f618668"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7f25c371679fd7a907bb7283f618668"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetExposure</b> (const CubeMapCaptureHandle &amp;cubeMapCapture, float exposure)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetExposure</b> (const <a class="el" href="class_a_z_std_1_1shared__ptr.html">CubeMapCaptureHandle</a> &amp;cubeMapCapture, float exposure)=0</td></tr>
 <tr class="separator:af7f25c371679fd7a907bb7283f618668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a501bc1128a478ec321cdb2af5272a2e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a501bc1128a478ec321cdb2af5272a2e3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRelativePath</b> (const CubeMapCaptureHandle &amp;cubeMapCapture, const AZStd::string &amp;relativePath)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRelativePath</b> (const <a class="el" href="class_a_z_std_1_1shared__ptr.html">CubeMapCaptureHandle</a> &amp;cubeMapCapture, const AZStd::string &amp;relativePath)=0</td></tr>
 <tr class="separator:a501bc1128a478ec321cdb2af5272a2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf6b91a76aacb0d46dd78291c5d041a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf6b91a76aacb0d46dd78291c5d041a9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderCubeMap</b> (const CubeMapCaptureHandle &amp;cubeMapCapture, RenderCubeMapCallback callback, const AZStd::string &amp;relativePath)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderCubeMap</b> (const <a class="el" href="class_a_z_std_1_1shared__ptr.html">CubeMapCaptureHandle</a> &amp;cubeMapCapture, RenderCubeMapCallback callback, const AZStd::string &amp;relativePath)=0</td></tr>
 <tr class="separator:acf6b91a76aacb0d46dd78291c5d041a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d6bbe67c9aeae39847906af5e795fe3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d6bbe67c9aeae39847906af5e795fe3"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCubeMapReferenced</b> (const AZStd::string &amp;relativePath)=0</td></tr>
@@ -108,7 +108,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:aef811438a0a1a5b2040e080256619310 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c82733d39a11de61d8f672aeba9dc8 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a04c82733d39a11de61d8f672aeba9dc8">AddRenderPasses</a> ([[maybe_unused]] <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *pipeline)</td></tr>
 <tr class="separator:a04c82733d39a11de61d8f672aeba9dc8 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a28b655ac096c209bfdcd3cf93bcf32b2">PrepareViews</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_prepare_views_packet.html">PrepareViewsPacket</a> &amp;, AZStd::vector&lt; AZStd::pair&lt; PipelineViewTag, ViewPtr &gt;&gt; &amp;)</td></tr>
+<tr class="memitem:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a28b655ac096c209bfdcd3cf93bcf32b2">PrepareViews</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_prepare_views_packet.html">PrepareViewsPacket</a> &amp;, AZStd::vector&lt; AZStd::pair&lt; PipelineViewTag, <a class="el" href="class_a_z_std_1_1shared__ptr.html">ViewPtr</a> &gt;&gt; &amp;)</td></tr>
 <tr class="separator:a28b655ac096c209bfdcd3cf93bcf32b2 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39a87cce766c54804df525b96d4a499b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#a39a87cce766c54804df525b96d4a499b">Simulate</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_simulate_packet.html">SimulatePacket</a> &amp;)</td></tr>
 <tr class="separator:a39a87cce766c54804df525b96d4a499b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,16 +116,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:abce954571fd7c4b49c35a4c355c8597d inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3d2fbe2dafaf3b035addb9048121bc9 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#ae3d2fbe2dafaf3b035addb9048121bc9">OnRenderEnd</a> ()</td></tr>
 <tr class="separator:ae3d2fbe2dafaf3b035addb9048121bc9 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">AZ::RPI::FeatureProcessor</a></td></tr>
-<tr class="memitem:a527c85ae0643dbdbdd2a7fa4bfda8fae inherit pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a527c85ae0643dbdbdd2a7fa4bfda8fae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableSceneNotification</b> ()</td></tr>
-<tr class="separator:a527c85ae0643dbdbdd2a7fa4bfda8fae inherit pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81d7925d975d56eb9ce78b03d5bc04c9 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81d7925d975d56eb9ce78b03d5bc04c9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotification</b> ()</td></tr>
-<tr class="separator:a81d7925d975d56eb9ce78b03d5bc04c9 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/CubeMapCapture/CubeMapCaptureFeatureProcessorInterface.h</li>
@@ -133,7 +123,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:24:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

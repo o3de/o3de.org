@@ -53,7 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_physics_1_1_material_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Physics::MaterialManager Class Reference</div>  </div>
@@ -84,17 +83,6 @@ AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.html">Mater
 AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_manager.html#a0272ba91c7de427e40b2654e832c83f2">GetMaterial</a> (const <a class="el" href="struct_physics_1_1_material_id.html">MaterialId</a> &amp;id)</td></tr>
 <tr class="memdesc:a0272ba91c7de427e40b2654e832c83f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a physics material instance with the given id. <br/></td></tr>
 <tr class="separator:a0272ba91c7de427e40b2654e832c83f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a402a7cb6c29505ccdc2f4ebf6eae94b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a402a7cb6c29505ccdc2f4ebf6eae94b8"></a>
-AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultMaterial</b></td></tr>
-<tr class="separator:a402a7cb6c29505ccdc2f4ebf6eae94b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac391d5a9c661eb95e6622e4c2c6ff25c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac391d5a9c661eb95e6622e4c2c6ff25c"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; <a class="el" href="struct_physics_1_1_material_id.html">MaterialId</a>, <br class="typebreak"/>
-AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.html">Material</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_materials</b></td></tr>
-<tr class="separator:ac391d5a9c661eb95e6622e4c2c6ff25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class manages all the creation and deletion of physics materials. To use it call AZ::Interface&lt;Physics::MaterialManager&gt;::Get(). </p>
@@ -173,7 +161,7 @@ AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.html">Mater
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:06 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

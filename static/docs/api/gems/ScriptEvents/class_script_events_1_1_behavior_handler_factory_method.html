@@ -51,7 +51,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_script_events_1_1_behavior_handler_factory_method-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptEvents::BehaviorHandlerFactoryMethod Class Reference</div>  </div>
@@ -109,15 +108,15 @@ const AZ::BehaviorParameter *&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:aa13fa1905ad2c78973e5a43b707e1c00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa13fa1905ad2c78973e5a43b707e1c00"></a>
 const AZStd::string *&#160;</td><td class="memItemRight" valign="bottom"><b>GetArgumentName</b> (size_t) const override</td></tr>
 <tr class="separator:aa13fa1905ad2c78973e5a43b707e1c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a092b8bc93dadc4779a8071c3debc885f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a092b8bc93dadc4779a8071c3debc885f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArgumentName</b> (size_t, const AZStd::string &amp;) override</td></tr>
-<tr class="separator:a092b8bc93dadc4779a8071c3debc885f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1299dd57d68cc103f36cab8a42930bd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1299dd57d68cc103f36cab8a42930bd0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArgumentName</b> (size_t, AZStd::string) override</td></tr>
+<tr class="separator:a1299dd57d68cc103f36cab8a42930bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbd8d701f584d8cd867bad877680754f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbd8d701f584d8cd867bad877680754f"></a>
 const AZStd::string *&#160;</td><td class="memItemRight" valign="bottom"><b>GetArgumentToolTip</b> (size_t) const override</td></tr>
 <tr class="separator:abbd8d701f584d8cd867bad877680754f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0991cfcedec11a1ba3dfb01531955f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0991cfcedec11a1ba3dfb01531955f8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArgumentToolTip</b> (size_t, const AZStd::string &amp;) override</td></tr>
-<tr class="separator:aa0991cfcedec11a1ba3dfb01531955f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4bbe3980be58dc04d780a2dd0b10ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a4bbe3980be58dc04d780a2dd0b10ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetArgumentToolTip</b> (size_t, AZStd::string) override</td></tr>
+<tr class="separator:a4a4bbe3980be58dc04d780a2dd0b10ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9c0c774eb93b5aeed265f76ec9402b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c9c0c774eb93b5aeed265f76ec9402b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultValue</b> (size_t, AZ::BehaviorDefaultValuePtr) override</td></tr>
 <tr class="separator:a3c9c0c774eb93b5aeed265f76ec9402b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,15 +126,6 @@ AZ::BehaviorDefaultValuePtr&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:a84f8798641f1b8e6ec6b8e7a4cfbaa50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84f8798641f1b8e6ec6b8e7a4cfbaa50"></a>
 const AZ::BehaviorParameter *&#160;</td><td class="memItemRight" valign="bottom"><b>GetResult</b> () const override</td></tr>
 <tr class="separator:a84f8798641f1b8e6ec6b8e7a4cfbaa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a16f06f28a664c356b1c52b39070d9dfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16f06f28a664c356b1c52b39070d9dfc"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
-<tr class="separator:a16f06f28a664c356b1c52b39070d9dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42c868a7e37125b8017688db985e1eb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42c868a7e37125b8017688db985e1eb1"></a>
-AZ::BehaviorEBus *&#160;</td><td class="memItemRight" valign="bottom"><b>m_ebus</b></td></tr>
-<tr class="separator:a42c868a7e37125b8017688db985e1eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptEvents/Code/Include/ScriptEvents/Internal/BehaviorContextBinding/BehaviorContextFactoryMethods.h</li>
@@ -143,7 +133,7 @@ AZ::BehaviorEBus *&#160;</td><td class="memItemRight" valign="bottom"><b>m_ebus<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:09 for Open 3D Engine ScriptEvents Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:47 for Open 3D Engine ScriptEvents Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

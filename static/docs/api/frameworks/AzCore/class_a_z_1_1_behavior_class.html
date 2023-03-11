@@ -72,10 +72,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae4ef93da6694695a4c421918fab11e60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4ef93da6694695a4c421918fab11e60"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_class.html#ae4ef93da6694695a4c421918fab11e60">AllocateType</a> = void *(*)(void *userData)</td></tr>
-<tr class="memdesc:ae4ef93da6694695a4c421918fab11e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hooks to override default memory allocation for the class (AZ_CLASS_ALLOCATOR is used by default) <br/></td></tr>
-<tr class="separator:ae4ef93da6694695a4c421918fab11e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea36602ce9ade6db96a2da98efe6dcf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea36602ce9ade6db96a2da98efe6dcf2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_class.html#aea36602ce9ade6db96a2da98efe6dcf2">AllocateType</a> = void *(*)(void *userData)</td></tr>
+<tr class="memdesc:aea36602ce9ade6db96a2da98efe6dcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hooks to override default memory allocation for the class (AZ_CLASS_ALLOCATOR is used by default) <br/></td></tr>
+<tr class="separator:aea36602ce9ade6db96a2da98efe6dcf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4100f533cf494deb0e9ea86116281b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4100f533cf494deb0e9ea86116281b3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>DeallocateType</b> = void(*)(void *address, void *userData)</td></tr>
 <tr class="separator:af4100f533cf494deb0e9ea86116281b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,7 +180,7 @@ const <a class="el" href="class_a_z_1_1_behavior_method.html">BehaviorMethod</a>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac5c011cd9330834dd0ec8587c820af02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5c011cd9330834dd0ec8587c820af02"></a>
-<a class="el" href="class_a_z_1_1_behavior_class.html#ae4ef93da6694695a4c421918fab11e60">AllocateType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocate</b></td></tr>
+<a class="el" href="class_a_z_1_1_behavior_class.html#aea36602ce9ade6db96a2da98efe6dcf2">AllocateType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocate</b></td></tr>
 <tr class="separator:ac5c011cd9330834dd0ec8587c820af02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe62a2fc66e36d5040b1887bb231ec0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfe62a2fc66e36d5040b1887bb231ec0"></a>
 DeallocateType&#160;</td><td class="memItemRight" valign="bottom"><b>m_deallocate</b></td></tr>
@@ -246,14 +246,14 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_alignment</b></td
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b></td></tr>
 <tr class="separator:acd371344344b21b19cf1858a7c92a81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01891ee65ca3f8bb3fbd348abc48c255"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01891ee65ca3f8bb3fbd348abc48c255"></a>
-<a class="el" href="namespace_a_z.html#abcd4c2bc56b1dae44b15435391eafca5">BehaviorClassUnwrapperFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_unwrapper</b></td></tr>
+BehaviorClassUnwrapperFunction&#160;</td><td class="memItemRight" valign="bottom"><b>m_unwrapper</b></td></tr>
 <tr class="separator:a01891ee65ca3f8bb3fbd348abc48c255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a3fc306decf7bf02ce56628329d37a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a3fc306decf7bf02ce56628329d37a6"></a>
 <a class="el" href="class_a_z_1_1_behavior_class.html#af43e8d9a4b571960d0d1879aa4fb214c">ValueHasherType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_valueHasher</b></td></tr>
 <tr class="separator:a8a3fc306decf7bf02ce56628329d37a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f48fc4f620cfb9bab5136f0c524b1a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f48fc4f620cfb9bab5136f0c524b1a1"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_unwrapperUserData</b></td></tr>
-<tr class="separator:a7f48fc4f620cfb9bab5136f0c524b1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51548ce7af96f8bf1b03f2d6475dddd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51548ce7af96f8bf1b03f2d6475dddd5"></a>
+<a class="el" href="struct_a_z_1_1_unwrapper_user_data.html">UnwrapperUserData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_unwrapperUserData</b></td></tr>
+<tr class="separator:a51548ce7af96f8bf1b03f2d6475dddd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c80161fb4beadeb3e33497c663b4e58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c80161fb4beadeb3e33497c663b4e58"></a>
 <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_wrappedTypeId</b></td></tr>
 <tr class="separator:a9c80161fb4beadeb3e33497c663b4e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,7 +266,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_unwrapperUserData
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

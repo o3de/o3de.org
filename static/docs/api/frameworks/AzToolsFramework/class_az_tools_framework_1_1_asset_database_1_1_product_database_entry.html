@@ -76,6 +76,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f55d3662dbc1151b9c86734a54a27c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f55d3662dbc1151b9c86734a54a27c0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_product_database_entry.html">ProductDatabaseEntry</a> &amp;other) const </td></tr>
 <tr class="separator:a8f55d3662dbc1151b9c86734a54a27c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb63f83a2516daa2e3644d31e0bbdcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_product_database_entry.html#a5cb63f83a2516daa2e3644d31e0bbdcf">IsSameLogicalProductAs</a> (const <a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_product_database_entry.html">ProductDatabaseEntry</a> &amp;other) const </td></tr>
+<tr class="separator:a5cb63f83a2516daa2e3644d31e0bbdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a8d5d6982969ca5152a3bc303646193"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a8d5d6982969ca5152a3bc303646193"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> () const </td></tr>
 <tr class="separator:a2a8d5d6982969ca5152a3bc303646193"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,13 +112,31 @@ AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_hash</b> = 0</td
 AZStd::bitset&lt; 64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_flags</b> = 0</td></tr>
 <tr class="separator:a0a3685965e8ca3c54b21f45fde6a3082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5cb63f83a2516daa2e3644d31e0bbdcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::AssetDatabase::ProductDatabaseEntry::IsSameLogicalProductAs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_product_database_entry.html">ProductDatabaseEntry</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Logical equality compare. It will return true if the fields that establish the identify of a product are identical, regardless of the equality of things like its flags and hash. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/AssetDatabase/AssetDatabaseConnection.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

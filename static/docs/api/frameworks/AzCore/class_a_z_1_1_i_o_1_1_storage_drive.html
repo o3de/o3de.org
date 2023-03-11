@@ -54,9 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_storage_drive-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::StorageDrive Class Reference</div>  </div>
@@ -102,110 +99,6 @@ virtual const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::st
 <tr class="memitem:aee6fdc1ce65576fbd3dd01a766d9fc13 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee6fdc1ce65576fbd3dd01a766d9fc13"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetContext</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> &amp;context)</td></tr>
 <tr class="separator:aee6fdc1ce65576fbd3dd01a766d9fc13 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac684d8c9be121cf7e321544b0ad2229a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac684d8c9be121cf7e321544b0ad2229a"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>FindFileInCache</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;filePath) const </td></tr>
-<tr class="separator:ac684d8c9be121cf7e321544b0ad2229a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad064b6878d267202d7370493ded28a4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad064b6878d267202d7370493ded28a4f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFile</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request)</td></tr>
-<tr class="separator:ad064b6878d267202d7370493ded28a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a580757ebe214e80fe6259a8b7a61f540"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a580757ebe214e80fe6259a8b7a61f540"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *cancelRequest, <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">FileRequestPtr</a> &amp;target)</td></tr>
-<tr class="separator:a580757ebe214e80fe6259a8b7a61f540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67537dcb184089ed79f27a929bcc8c2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67537dcb184089ed79f27a929bcc8c2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FileExistsRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request)</td></tr>
-<tr class="separator:a67537dcb184089ed79f27a929bcc8c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc40a0391e806e3929069eaffb5764f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dc40a0391e806e3929069eaffb5764f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FileMetaDataRetrievalRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request)</td></tr>
-<tr class="separator:a6dc40a0391e806e3929069eaffb5764f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d762c83ef7e350bf4e39bfef9410798"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d762c83ef7e350bf4e39bfef9410798"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushCache</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;filePath)</td></tr>
-<tr class="separator:a6d762c83ef7e350bf4e39bfef9410798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fdb78179d6698a45776ae411e7cd16a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fdb78179d6698a45776ae411e7cd16a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushEntireCache</b> ()</td></tr>
-<tr class="separator:a2fdb78179d6698a45776ae411e7cd16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62c59b4781d676e8270fffdd1c989873"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62c59b4781d676e8270fffdd1c989873"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EstimateCompletionTimeForRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, AZStd::chrono::steady_clock::time_point &amp;startTime, const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> *&amp;activeFile, u64 &amp;activeOffset) const </td></tr>
-<tr class="separator:a62c59b4781d676e8270fffdd1c989873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60baec06953bb950e3e23f5d0c45f098"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60baec06953bb950e3e23f5d0c45f098"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Report</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_report_data.html">Requests::ReportData</a> &amp;data) const </td></tr>
-<tr class="separator:a60baec06953bb950e3e23f5d0c45f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a226b31596e699ba827e8f4a7b62b0a8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a226b31596e699ba827e8f4a7b62b0a8f"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_average_window.html">TimedAverageWindow</a><br class="typebreak"/>
-&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53">s_statisticsWindowSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileOpenCloseTimeAverage</b></td></tr>
-<tr class="separator:a226b31596e699ba827e8f4a7b62b0a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5adb0518ad695fc7138d2a1b487bc044"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5adb0518ad695fc7138d2a1b487bc044"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_average_window.html">TimedAverageWindow</a><br class="typebreak"/>
-&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53">s_statisticsWindowSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getFileExistsTimeAverage</b></td></tr>
-<tr class="separator:a5adb0518ad695fc7138d2a1b487bc044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae02d2a2d318a5549b7caf5e20f2b1c29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae02d2a2d318a5549b7caf5e20f2b1c29"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_average_window.html">TimedAverageWindow</a><br class="typebreak"/>
-&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53">s_statisticsWindowSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getFileMetaDataTimeAverage</b></td></tr>
-<tr class="separator:ae02d2a2d318a5549b7caf5e20f2b1c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6e015f144b27aff3c9f1489bef08a5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6e015f144b27aff3c9f1489bef08a5a"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_average_window.html">TimedAverageWindow</a><br class="typebreak"/>
-&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53">s_statisticsWindowSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readTimeAverage</b></td></tr>
-<tr class="separator:ae6e015f144b27aff3c9f1489bef08a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1cdb1e4935b3100fa66200e0eeb1654"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1cdb1e4935b3100fa66200e0eeb1654"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_average_window.html">AverageWindow</a>&lt; u64, float, <br class="typebreak"/>
-<a class="el" href="namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53">s_statisticsWindowSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readSizeAverage</b></td></tr>
-<tr class="separator:ae1cdb1e4935b3100fa66200e0eeb1654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71152555819087b9e665fb22cfe2aae3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71152555819087b9e665fb22cfe2aae3"></a>
-<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html#a71152555819087b9e665fb22cfe2aae3">m_pendingRequests</a></td></tr>
-<tr class="memdesc:a71152555819087b9e665fb22cfe2aae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">File requests that are queued for processing. <br/></td></tr>
-<tr class="separator:a71152555819087b9e665fb22cfe2aae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3801e41871c2296000bdc482409f54bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3801e41871c2296000bdc482409f54bc"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
-&lt; AZStd::chrono::steady_clock::time_point &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html#a3801e41871c2296000bdc482409f54bc">m_fileLastUsed</a></td></tr>
-<tr class="memdesc:a3801e41871c2296000bdc482409f54bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last time a file handle was used to access a file. The handle is stored in m_fileHandles. <br/></td></tr>
-<tr class="separator:a3801e41871c2296000bdc482409f54bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e70e06189b9dc4e1cda400284817348"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e70e06189b9dc4e1cda400284817348"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html#a3e70e06189b9dc4e1cda400284817348">m_filePaths</a></td></tr>
-<tr class="memdesc:a3e70e06189b9dc4e1cda400284817348"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file path to the file handle. The handle is stored in m_fileHandles. <br/></td></tr>
-<tr class="separator:a3e70e06189b9dc4e1cda400284817348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a804225b5cbf30a14b9ab28178125271b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a804225b5cbf30a14b9ab28178125271b"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
-&lt; <a class="el" href="namespace_a_z_std.html#aeb4832383c83113340791a3ab3fe87f0">AZStd::unique_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html">SystemFile</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html#a804225b5cbf30a14b9ab28178125271b">m_fileHandles</a></td></tr>
-<tr class="memdesc:a804225b5cbf30a14b9ab28178125271b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of file handles that's being cached in case they're needed again in the future. <br/></td></tr>
-<tr class="separator:a804225b5cbf30a14b9ab28178125271b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd2a84e6fd18e4190d1d37b2e0b3b696"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd2a84e6fd18e4190d1d37b2e0b3b696"></a>
-u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html#afd2a84e6fd18e4190d1d37b2e0b3b696">m_activeOffset</a> = 0</td></tr>
-<tr class="memdesc:afd2a84e6fd18e4190d1d37b2e0b3b696"><td class="mdescLeft">&#160;</td><td class="mdescRight">The offset into the file that's cached by the active cache slot. <br/></td></tr>
-<tr class="separator:afd2a84e6fd18e4190d1d37b2e0b3b696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8c5e3646f5af922f2b896f1db9d15b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8c5e3646f5af922f2b896f1db9d15b1"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_storage_drive.html#ad8c5e3646f5af922f2b896f1db9d15b1">m_activeCacheSlot</a> = <a class="el" href="namespace_a_z_1_1_i_o.html#a2fe969942f6586c2e2969dc2848676f6">s_fileNotFound</a></td></tr>
-<tr class="memdesc:ad8c5e3646f5af922f2b896f1db9d15b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index into m_fileHandles for the file that's currently being read. <br/></td></tr>
-<tr class="separator:ad8c5e3646f5af922f2b896f1db9d15b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">AZ::IO::StreamStackEntry</a></td></tr>
-<tr class="memitem:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b380a8ce0080b376ffc8c7dc03641ac"></a>
-<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a1b380a8ce0080b376ffc8c7dc03641ac">m_name</a></td></tr>
-<tr class="memdesc:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name that uniquely identifies this entry. <br/></td></tr>
-<tr class="separator:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfeb135e5629127cdc15a346d51aa2dd"></a>
-<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a><br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">StreamStackEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#adfeb135e5629127cdc15a346d51aa2dd">m_next</a></td></tr>
-<tr class="memdesc:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next entry in the stack. <br/></td></tr>
-<tr class="separator:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a174d09b6e0ceba3059c234ab15801853"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a174d09b6e0ceba3059c234ab15801853">m_context</a></td></tr>
-<tr class="memdesc:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context information for the entire streaming stack. <br/></td></tr>
-<tr class="separator:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a0a533d58969849b5762eb4b78e3464e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a533d58969849b5762eb4b78e3464e8"></a>
-static const <br class="typebreak"/>
-AZStd::chrono::microseconds&#160;</td><td class="memItemRight" valign="bottom"><b>s_averageSeekTime</b></td></tr>
-<tr class="separator:a0a533d58969849b5762eb4b78e3464e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf041f0f12f7a6ab1cbd597b7c7975f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf041f0f12f7a6ab1cbd597b7c7975f8"></a>
-static constexpr s32&#160;</td><td class="memItemRight" valign="bottom"><b>s_maxRequests</b> = 1</td></tr>
-<tr class="separator:aaf041f0f12f7a6ab1cbd597b7c7975f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Platform agnostic version of a storage drive, such as hdd, ssd, dvd, etc. This stream stack entry is responsible for accessing a storage drive to retrieve file information and data. This entry is designed as a catch-all for any reads that weren't handled by platform specific implementations or the virtual file system. It should by the last entry in the stack as it will not forward calls to the next entry. </p>
@@ -409,7 +302,7 @@ static constexpr s32&#160;</td><td class="memItemRight" valign="bottom"><b>s_max
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

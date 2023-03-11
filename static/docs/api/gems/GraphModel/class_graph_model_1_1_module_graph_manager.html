@@ -50,7 +50,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_graph_model_1_1_module_graph_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GraphModel::ModuleGraphManager Class Reference</div>  </div>
@@ -66,26 +65,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf8ce6800233fbd97e5cce30ae0294f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf8ce6800233fbd97e5cce30ae0294f5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_graph_model_1_1_module_graph_manager.html">ModuleGraphManager</a>, AZ::SystemAllocator)</td></tr>
 <tr class="separator:aaf8ce6800233fbd97e5cce30ae0294f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68e5e96c53f27ab6041b2897d22625dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68e5e96c53f27ab6041b2897d22625dc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_graph_model_1_1_graph.html">Graph</a>,&quot;{68476353-C672-4408-9B34-A409CC63858E}&quot;)</td></tr>
-<tr class="separator:a68e5e96c53f27ab6041b2897d22625dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdc8dd9fc236611b74c7c3b3f1b8560"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bdc8dd9fc236611b74c7c3b3f1b8560"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_graph_model_1_1_module_graph_manager.html">ModuleGraphManager</a>,&quot;{68476353-C672-4408-9B34-A409CC63858E}&quot;)</td></tr>
+<tr class="separator:a1bdc8dd9fc236611b74c7c3b3f1b8560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e409a217af905b593e923f0430e249c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e409a217af905b593e923f0430e249c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ModuleGraphManager</b> (GraphContextPtr graphContext, AZ::SerializeContext *serializeContext=nullptr)</td></tr>
 <tr class="separator:a1e409a217af905b593e923f0430e249c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a680b4eabe15ebef1f762bde999c704e4"><td class="memItemLeft" align="right" valign="top">AZ::Outcome&lt; ConstGraphPtr, <br class="typebreak"/>
 AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_module_graph_manager.html#a680b4eabe15ebef1f762bde999c704e4">GetModuleGraph</a> (AZ::Uuid sourceFileId)</td></tr>
 <tr class="separator:a680b4eabe15ebef1f762bde999c704e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a74f17ba9885907fc0fb1eac896d1e929"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74f17ba9885907fc0fb1eac896d1e929"></a>
-virtual ConstGraphPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_module_graph_manager.html#a74f17ba9885907fc0fb1eac896d1e929">LoadGraph</a> (AZ::IO::FileIOStream &amp;stream)</td></tr>
-<tr class="memdesc:a74f17ba9885907fc0fb1eac896d1e929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a module graph from the given stream. <br/></td></tr>
-<tr class="separator:a74f17ba9885907fc0fb1eac896d1e929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112ab93aafef776cd72fcf97e97f5ebd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a112ab93aafef776cd72fcf97e97f5ebd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_module_graph_manager.html#a112ab93aafef776cd72fcf97e97f5ebd">SourceFileChanged</a> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid sourceUUID) override</td></tr>
-<tr class="memdesc:a112ab93aafef776cd72fcf97e97f5ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">WHen a module graph source file is added or changed, this will cause the <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> to be reloaded. <br/></td></tr>
-<tr class="separator:a112ab93aafef776cd72fcf97e97f5ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a manager that exists to support <a class="el" href="class_graph_model_1_1_module_node.html">ModuleNode</a>. A <a class="el" href="class_graph_model_1_1_module_node.html">ModuleNode</a> is a node that contains another node graph to be reused as a single node. If there are multiple <a class="el" href="class_graph_model_1_1_module_node.html">ModuleNode</a> instances that all use the same graph, we should only need one copy of the referenced graph in memory. The collection of available modules graphs will be managed here. The graphs stored here are const/immutable, and used only for instancing ModuleNodes, which do not make any changes to the underlying module graph. </p>
@@ -119,7 +107,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:25:03 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,8 +55,6 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-slots">Protected Slots</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetBrowserTreeView Class Reference</div>  </div>
@@ -70,6 +68,9 @@ Public Slots</h2></td></tr>
 <tr class="memitem:ab96493d1a4ad2eba8127d0c7eac7dc62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab96493d1a4ad2eba8127d0c7eac7dc62"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenItemForEditing</b> (const QModelIndex &amp;index)</td></tr>
 <tr class="separator:ab96493d1a4ad2eba8127d0c7eac7dc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3936342a998246a1d93f08922f3ee7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3936342a998246a1d93f08922f3ee7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnContextMenu</b> (const QPoint &amp;point)</td></tr>
+<tr class="separator:ab3936342a998246a1d93f08922f3ee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
@@ -110,9 +111,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadState</b> (const 
 <tr class="memitem:a3bac2b2612e3b96a6e9df1064d8d2739"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bac2b2612e3b96a6e9df1064d8d2739"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveState</b> () const </td></tr>
 <tr class="separator:a3bac2b2612e3b96a6e9df1064d8d2739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a629d49b1a683023dd029fac9947ab1e7"><td class="memItemLeft" align="right" valign="top">AZStd::vector<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view.html#a629d49b1a683023dd029fac9947ab1e7">GetSelectedAssets</a> (bool includeProducts=true) const </td></tr>
-<tr class="separator:a629d49b1a683023dd029fac9947ab1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fb488e74c117112cc3e4fa12b0c615"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; const <br class="typebreak"/>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view.html#aa0fb488e74c117112cc3e4fa12b0c615">GetSelectedAssets</a> (bool includeProducts=true) const </td></tr>
+<tr class="separator:aa0fb488e74c117112cc3e4fa12b0c615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802779ae2ba2e1348d204a0a9474e967"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a802779ae2ba2e1348d204a0a9474e967"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectFolder</b> (AZStd::string_view folderPath)</td></tr>
 <tr class="separator:a802779ae2ba2e1348d204a0a9474e967"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,29 +163,14 @@ const <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_b
 <tr class="memitem:a6227fa5f6b25966131c2aab2c1ed5841"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6227fa5f6b25966131c2aab2c1ed5841"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsIndexExpandedByDefault</b> (const QModelIndex &amp;index) const override</td></tr>
 <tr class="separator:a6227fa5f6b25966131c2aab2c1ed5841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
-Protected Slots</h2></td></tr>
-<tr class="memitem:a3e565d9e458b850499bec580da81fefc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e565d9e458b850499bec580da81fefc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>selectionChanged</b> (const QItemSelection &amp;selected, const QItemSelection &amp;deselected) override</td></tr>
-<tr class="separator:a3e565d9e458b850499bec580da81fefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33c6b847b7f6a34e2e7234cf6dca981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af33c6b847b7f6a34e2e7234cf6dca981"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rowsAboutToBeRemoved</b> (const QModelIndex &amp;parent, int start, int end) override</td></tr>
-<tr class="separator:af33c6b847b7f6a34e2e7234cf6dca981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a27c459747820e9df4046e6592cde70c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27c459747820e9df4046e6592cde70c4"></a>
-QModelIndexList&#160;</td><td class="memItemRight" valign="bottom"><b>selectedIndexes</b> () const override</td></tr>
-<tr class="separator:a27c459747820e9df4046e6592cde70c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a629d49b1a683023dd029fac9947ab1e7"></a>
+<a class="anchor" id="aa0fb488e74c117112cc3e4fa12b0c615"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">AZStd::vector&lt;<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a>*&gt; AzToolsFramework::AssetBrowser::AssetBrowserTreeView::GetSelectedAssets </td>
+          <td class="memname">AZStd::vector&lt;const <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a>*&gt; AzToolsFramework::AssetBrowser::AssetBrowserTreeView::GetSelectedAssets </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>includeProducts</em> = <code>true</code></td><td>)</td>
@@ -202,7 +188,7 @@ QModelIndexList&#160;</td><td class="memItemRight" valign="bottom"><b>selectedIn
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

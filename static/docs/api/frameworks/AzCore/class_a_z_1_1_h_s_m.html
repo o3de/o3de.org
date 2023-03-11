@@ -57,8 +57,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_h_s_m-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::HSM Class Reference</div>  </div>
@@ -70,8 +68,6 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_h_s_m_1_1_event.html">Event</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_h_s_m_1_1_state.html">State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -150,46 +146,6 @@ static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a4be82a251a6f3178b593e6b6728b0b7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4be82a251a6f3178b593e6b6728b0b7b"></a>
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidEventId</b> = -4</td></tr>
 <tr class="separator:a4be82a251a6f3178b593e6b6728b0b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a31bb3c62be7127243478962ec99f63ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31bb3c62be7127243478962ec99f63ff"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>StepsToCommonRoot</b> (StateId source, StateId target)</td></tr>
-<tr class="separator:a31bb3c62be7127243478962ec99f63ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70a69fa89ce2339102efc1beef8946b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70a69fa89ce2339102efc1beef8946b8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnterSubState</b> ()</td></tr>
-<tr class="separator:a70a69fa89ce2339102efc1beef8946b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aa04cb93ae57f0d4972f15131dcdf8860"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa04cb93ae57f0d4972f15131dcdf8860"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
-<tr class="separator:aa04cb93ae57f0d4972f15131dcdf8860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa950357761fd6b9d28667961c670c2e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa950357761fd6b9d28667961c670c2e4"></a>
-StateId&#160;</td><td class="memItemRight" valign="bottom"><b>m_curState</b></td></tr>
-<tr class="separator:aa950357761fd6b9d28667961c670c2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb05a4df27e8b6da1ab04eaf38b0818"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedb05a4df27e8b6da1ab04eaf38b0818"></a>
-StateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_h_s_m.html#aedb05a4df27e8b6da1ab04eaf38b0818">m_nextState</a></td></tr>
-<tr class="memdesc:aedb05a4df27e8b6da1ab04eaf38b0818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to next state. Valid only when a transition is taken. <br/></td></tr>
-<tr class="separator:aedb05a4df27e8b6da1ab04eaf38b0818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf5fe62f34961e3d846cf500331a3cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbf5fe62f34961e3d846cf500331a3cf"></a>
-StateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_h_s_m.html#acbf5fe62f34961e3d846cf500331a3cf">m_sourceState</a></td></tr>
-<tr class="memdesc:acbf5fe62f34961e3d846cf500331a3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to source state during last transition. <br/></td></tr>
-<tr class="separator:acbf5fe62f34961e3d846cf500331a3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63dcb787fbda3c31c4cb7f9c4e6103f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63dcb787fbda3c31c4cb7f9c4e6103f8"></a>
-StateId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_h_s_m.html#a63dcb787fbda3c31c4cb7f9c4e6103f8">m_curSourceState</a></td></tr>
-<tr class="memdesc:a63dcb787fbda3c31c4cb7f9c4e6103f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current transition source state. It may not actually complete. <br/></td></tr>
-<tr class="separator:a63dcb787fbda3c31c4cb7f9c4e6103f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01911536c4a8d42f297cca0c60f12e8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01911536c4a8d42f297cca0c60f12e8d"></a>
-StateId&#160;</td><td class="memItemRight" valign="bottom"><b>m_topState</b></td></tr>
-<tr class="separator:a01911536c4a8d42f297cca0c60f12e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f177d0ae32b06ed80fb3dcfcc166c5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f177d0ae32b06ed80fb3dcfcc166c5b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_disallowTransition</b></td></tr>
-<tr class="separator:a3f177d0ae32b06ed80fb3dcfcc166c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741ba6ca146ba2fd4c982b87b1ad3ca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a741ba6ca146ba2fd4c982b87b1ad3ca2"></a>
-<a class="el" href="class_a_z_std_1_1array.html">AZStd::array</a>&lt; <a class="el" href="struct_a_z_1_1_h_s_m_1_1_state.html">State</a>, <br class="typebreak"/>
-MaxNumberOfStates &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_states</b></td></tr>
-<tr class="separator:a741ba6ca146ba2fd4c982b87b1ad3ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Hierarchical state machine. </p>
@@ -260,7 +216,7 @@ MaxNumberOfStates &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_s
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

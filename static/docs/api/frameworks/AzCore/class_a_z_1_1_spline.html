@@ -56,9 +56,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_spline-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Spline Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -129,39 +126,6 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_a_z_1_1_vertex_container.html">VertexContainer</a>&lt; <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_spline.html#a0937ade1f45d0978d5cd0dc81fce261c">m_vertexContainer</a></td></tr>
 <tr class="memdesc:a0937ade1f45d0978d5cd0dc81fce261c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertices representing the spline. <br/></td></tr>
 <tr class="separator:a0937ade1f45d0978d5cd0dc81fce261c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6a71fa77a9e84c7e321eb8bdc4618cd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a71fa77a9e84c7e321eb8bdc4618cd8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_spline.html#a6a71fa77a9e84c7e321eb8bdc4618cd8">OnVertexAdded</a> (size_t index)</td></tr>
-<tr class="memdesc:a6a71fa77a9e84c7e321eb8bdc4618cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal function to be overridden by derived spline spline to handle custom logic when a vertex is added. <br/></td></tr>
-<tr class="separator:a6a71fa77a9e84c7e321eb8bdc4618cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad09a1731f03b366775916d1b58a8412c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad09a1731f03b366775916d1b58a8412c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_spline.html#ad09a1731f03b366775916d1b58a8412c">OnVerticesSet</a> ()</td></tr>
-<tr class="memdesc:ad09a1731f03b366775916d1b58a8412c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal function to be overridden by derived spline spline to handle custom logic when all vertices are set. <br/></td></tr>
-<tr class="separator:ad09a1731f03b366775916d1b58a8412c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e74dddfb09bc8abb29b2f3aedef928c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e74dddfb09bc8abb29b2f3aedef928c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_spline.html#a9e74dddfb09bc8abb29b2f3aedef928c">OnVertexRemoved</a> (size_t index)</td></tr>
-<tr class="memdesc:a9e74dddfb09bc8abb29b2f3aedef928c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal function to be overridden by derived spline to handle custom logic when a vertex is removed. <br/></td></tr>
-<tr class="separator:a9e74dddfb09bc8abb29b2f3aedef928c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88526326b6c125a2d7edd2fd42c31d20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88526326b6c125a2d7edd2fd42c31d20"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_spline.html#a88526326b6c125a2d7edd2fd42c31d20">OnVerticesCleared</a> ()</td></tr>
-<tr class="memdesc:a88526326b6c125a2d7edd2fd42c31d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal function to be overridden by derived spline to handle custom logic when spline is reset (vertices are cleared). <br/></td></tr>
-<tr class="separator:a88526326b6c125a2d7edd2fd42c31d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aba895fdcdb7690b0775c1cf65382130b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba895fdcdb7690b0775c1cf65382130b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_spline.html#aba895fdcdb7690b0775c1cf65382130b">m_closed</a> = false</td></tr>
-<tr class="memdesc:aba895fdcdb7690b0775c1cf65382130b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the spline closed - default is not. <br/></td></tr>
-<tr class="separator:aba895fdcdb7690b0775c1cf65382130b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:adf4d857121c654a31074e8a4a19fdd43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf4d857121c654a31074e8a4a19fdd43"></a>
-static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_spline.html#adf4d857121c654a31074e8a4a19fdd43">s_splineEpsilon</a></td></tr>
-<tr class="memdesc:adf4d857121c654a31074e8a4a19fdd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Epsilon value for splines to use to check approximate results. <br/></td></tr>
-<tr class="separator:adf4d857121c654a31074e8a4a19fdd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generic base spline class. </p>
@@ -506,8 +470,6 @@ static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><div class="memdoc">
 <p>Return the number of parts (lines) that make up a segment (higher granularity - smoother curve). </p>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_catmull_rom_spline.html#a1686f5026a151a5cb514801158cd09f3">AZ::CatmullRomSpline</a>, <a class="el" href="class_a_z_1_1_bezier_spline.html#a05529a09153a781da932a79d2024223e">AZ::BezierSpline</a>, and <a class="el" href="class_a_z_1_1_linear_spline.html#a1fca58a651e72abc4627c509b74cd8e0">AZ::LinearSpline</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab9d3d165c0009b7f84424341f41fd1c9"></a>
@@ -716,8 +678,6 @@ static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><div class="memdoc">
 <p>Notification that spline has changed </p>
 
-<p>Reimplemented in <a class="el" href="class_a_z_1_1_bezier_spline.html#a8cde3c149376367af48651b4d5060df3">AZ::BezierSpline</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a80dedd3faeab63a445acf934208efbb0"></a>
@@ -827,7 +787,7 @@ static const float&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:26 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

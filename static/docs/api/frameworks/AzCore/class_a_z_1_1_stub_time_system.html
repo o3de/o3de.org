@@ -97,9 +97,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetElapsedTim
 <tr class="memitem:a4d674b300aafcb35715d9a71fb783b71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d674b300aafcb35715d9a71fb783b71"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationTickDeltaOverride</b> ([[maybe_unused]]TimeMs timeMs) override</td></tr>
 <tr class="separator:a4d674b300aafcb35715d9a71fb783b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d101ead2c952e77e04ea6170f6513d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06d101ead2c952e77e04ea6170f6513d"></a>
-virtual TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationTickDeltaOverride</b> () const override</td></tr>
-<tr class="separator:a06d101ead2c952e77e04ea6170f6513d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560ffa47f4c22e62a96ebf049def974a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a560ffa47f4c22e62a96ebf049def974a"></a>
+virtual TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationTickDeltaOverride</b> () const override</td></tr>
+<tr class="separator:a560ffa47f4c22e62a96ebf049def974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70506652b17b4ba9d2a11d5bb57f08b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70506652b17b4ba9d2a11d5bb57f08b7"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationTickScale</b> ([[maybe_unused]] float scale) override</td></tr>
 <tr class="separator:a70506652b17b4ba9d2a11d5bb57f08b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,9 +149,12 @@ TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastSimulationTi
 <tr class="memitem:add4695c4eba9b8e5b82880f42d79ae6e inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add4695c4eba9b8e5b82880f42d79ae6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationTickDeltaOverride</b> (TimeMs timeMs) override</td></tr>
 <tr class="separator:add4695c4eba9b8e5b82880f42d79ae6e inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbf23313bd8adbc11acd59357bca31b7 inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbf23313bd8adbc11acd59357bca31b7"></a>
-TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationTickDeltaOverride</b> () const override</td></tr>
-<tr class="separator:afbf23313bd8adbc11acd59357bca31b7 inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4adc2bb7541f4dda47fef78ff38ed27 inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4adc2bb7541f4dda47fef78ff38ed27"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationTickDeltaOverride</b> (TimeUs timeUs) override</td></tr>
+<tr class="separator:aa4adc2bb7541f4dda47fef78ff38ed27 inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7846f9c2890daee3c8e7f1f6f43d583b inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7846f9c2890daee3c8e7f1f6f43d583b"></a>
+TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>GetSimulationTickDeltaOverride</b> () const override</td></tr>
+<tr class="separator:a7846f9c2890daee3c8e7f1f6f43d583b inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2119b0a7181f61ede5f3801d683e4b34 inherit pub_methods_class_a_z_1_1_time_system"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2119b0a7181f61ede5f3801d683e4b34"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimulationTickScale</b> (float scale) override</td></tr>
 <tr class="separator:a2119b0a7181f61ede5f3801d683e4b34 inherit pub_methods_class_a_z_1_1_time_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,7 +181,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,8 +55,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_data_1_1_asset_container-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Data::AssetContainer Class Reference</div>  </div>
@@ -132,106 +130,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetError</b> (<a 
 <tr class="memitem:ae7eeebab3a0e16d69931492b1dac51fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7eeebab3a0e16d69931492b1dac51fd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloadError</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; asset) override</td></tr>
 <tr class="separator:ae7eeebab3a0e16d69931492b1dac51fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3bc8f9231e2ed21957b3fe124316ec80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bc8f9231e2ed21957b3fe124316ec80"></a>
-virtual <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
-&lt; <a class="el" href="struct_a_z_std_1_1pair.html">AZStd::pair</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_info.html">AssetInfo</a>, <br class="typebreak"/>
-<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAndQueueDependentAssets</b> (const <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_info.html">AssetInfo</a> &gt; &amp;dependencyInfoList, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;loadParamsCopyWithNoLoadingFilter)</td></tr>
-<tr class="separator:a3bc8f9231e2ed21957b3fe124316ec80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb941aa5173b5b2c2f679d3651b9ce6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb941aa5173b5b2c2f679d3651b9ce6d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddWaitingAsset</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;waitingAsset)</td></tr>
-<tr class="separator:acb941aa5173b5b2c2f679d3651b9ce6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7007517c53226607faaf6181eda60b7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7007517c53226607faaf6181eda60b7f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddWaitingAssets</b> (const <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &gt; &amp;waitingAssets)</td></tr>
-<tr class="separator:a7007517c53226607faaf6181eda60b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3970c3cccd0a3670ace17e095ad9e9a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3970c3cccd0a3670ace17e095ad9e9a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveWaitingAsset</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;waitingAsset)</td></tr>
-<tr class="separator:a3970c3cccd0a3670ace17e095ad9e9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b35c2461fec7d9be0c8e8cfd5020219"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b35c2461fec7d9be0c8e8cfd5020219"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearWaitingAssets</b> ()</td></tr>
-<tr class="separator:a8b35c2461fec7d9be0c8e8cfd5020219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0ae540ce24231b579e18d8d7447f12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf0ae540ce24231b579e18d8d7447f12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckReady</b> ()</td></tr>
-<tr class="separator:adf0ae540ce24231b579e18d8d7447f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c206e904f50f18c6f1ba55c8818a198"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c206e904f50f18c6f1ba55c8818a198"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDependency</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; &amp;newDependency)</td></tr>
-<tr class="separator:a3c206e904f50f18c6f1ba55c8818a198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecdee994336cd6165da0b635657349a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecdee994336cd6165da0b635657349a2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDependency</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; &amp;&amp;addDependency)</td></tr>
-<tr class="separator:aecdee994336cd6165da0b635657349a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6c7219d837803f7642ef8a074f48ab0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6c7219d837803f7642ef8a074f48ab0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDependentAssets</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; rootAsset, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_load_parameters.html">AssetLoadParameters</a> &amp;loadParams)</td></tr>
-<tr class="separator:ac6c7219d837803f7642ef8a074f48ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71f8831c62731b7fec8eff2824aa91ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71f8831c62731b7fec8eff2824aa91ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupPreloadLists</b> (<a class="el" href="class_a_z_std_1_1unordered__map.html">PreloadAssetListType</a> &amp;&amp;preloadList, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;rootAssetId)</td></tr>
-<tr class="separator:a71f8831c62731b7fec8eff2824aa91ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5567ceddfa62226cbcf2639c837a6ce7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5567ceddfa62226cbcf2639c837a6ce7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPreloads</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;assetId) const </td></tr>
-<tr class="separator:a5567ceddfa62226cbcf2639c837a6ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7deab27890f145b616ca2f8214a8da1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7deab27890f145b616ca2f8214a8da1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFromWaitingPreloads</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;waitingId, const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;preloadAssetId)</td></tr>
-<tr class="separator:ab7deab27890f145b616ca2f8214a8da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e7266390831396c078957fd2bd2b14d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e7266390831396c078957fd2bd2b14d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFromAllWaitingPreloads</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;assetId)</td></tr>
-<tr class="separator:a0e7266390831396c078957fd2bd2b14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad89a32030bdf0e9fa9f4ee3d38f5cde5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad89a32030bdf0e9fa9f4ee3d38f5cde5"></a>
-<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetData</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;assetId) const </td></tr>
-<tr class="separator:ad89a32030bdf0e9fa9f4ee3d38f5cde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad252fdd0d16cf2296d5692e1a39bba1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad252fdd0d16cf2296d5692e1a39bba1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleReadyAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">AZ::Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AZ::Data::AssetData</a> &gt; asset)</td></tr>
-<tr class="separator:ad252fdd0d16cf2296d5692e1a39bba1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a4c79abf92872dbcb4cd4dbbf7e433962"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c79abf92872dbcb4cd4dbbf7e433962"></a>
-AssetInternal::WeakAsset<br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootAsset</b></td></tr>
-<tr class="separator:a4c79abf92872dbcb4cd4dbbf7e433962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c25ca9739bfb0611a32f98898e95a66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c25ca9739bfb0611a32f98898e95a66"></a>
-<a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AssetId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_containerAssetId</b></td></tr>
-<tr class="separator:a9c25ca9739bfb0611a32f98898e95a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9f7679209958e01f552ed68cf785a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b9f7679209958e01f552ed68cf785a1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isReload</b> { false }</td></tr>
-<tr class="separator:a5b9f7679209958e01f552ed68cf785a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cd937ee08eade3defceb9dd62d27f72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cd937ee08eade3defceb9dd62d27f72"></a>
-<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependencyMutex</b></td></tr>
-<tr class="separator:a2cd937ee08eade3defceb9dd62d27f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19357986bfaa3a4e21d5b01d940727f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19357986bfaa3a4e21d5b01d940727f3"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">DependencyList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependencies</b></td></tr>
-<tr class="separator:a19357986bfaa3a4e21d5b01d940727f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad39b461b66bb635542a744c14c0191f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad39b461b66bb635542a744c14c0191f9"></a>
-<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_readyMutex</b></td></tr>
-<tr class="separator:ad39b461b66bb635542a744c14c0191f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae63156bce1b9cb42221f67bbc4f15b13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae63156bce1b9cb42221f67bbc4f15b13"></a>
-<a class="el" href="class_a_z_std_1_1set.html">AZStd::set</a>&lt; <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AssetId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_waitingAssets</b></td></tr>
-<tr class="separator:ae63156bce1b9cb42221f67bbc4f15b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9496c54abde7a47a8be3e2bd28bb104c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9496c54abde7a47a8be3e2bd28bb104c"></a>
-AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_waitingCount</b> {0}</td></tr>
-<tr class="separator:a9496c54abde7a47a8be3e2bd28bb104c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50e929fed642c6dc8faabf285023c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa50e929fed642c6dc8faabf285023c4f"></a>
-AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_invalidDependencies</b> { 0 }</td></tr>
-<tr class="separator:aa50e929fed642c6dc8faabf285023c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0067e579cdce5c7cb8bd567bd837aae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0067e579cdce5c7cb8bd567bd837aae"></a>
-<a class="el" href="class_a_z_std_1_1unordered__set.html">AZStd::unordered_set</a><br class="typebreak"/>
-&lt; <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_unloadedDependencies</b></td></tr>
-<tr class="separator:aa0067e579cdce5c7cb8bd567bd837aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade33bc417d7ee6722196d2103f8ca474"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade33bc417d7ee6722196d2103f8ca474"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_initComplete</b> { false }</td></tr>
-<tr class="separator:ade33bc417d7ee6722196d2103f8ca474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9528ed0863ae5d4a1684756dac657d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab9528ed0863ae5d4a1684756dac657d"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finalNotificationSent</b> {false}</td></tr>
-<tr class="separator:aab9528ed0863ae5d4a1684756dac657d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae34930212813dc6bc345e163708e3ed0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae34930212813dc6bc345e163708e3ed0"></a>
-<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_preloadMutex</b></td></tr>
-<tr class="separator:ae34930212813dc6bc345e163708e3ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21970995115e21fc7ba999705ca5b81f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21970995115e21fc7ba999705ca5b81f"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">PreloadAssetListType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_preloadList</b></td></tr>
-<tr class="separator:a21970995115e21fc7ba999705ca5b81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c105313de50da8f693ffea2d196325"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4c105313de50da8f693ffea2d196325"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">PreloadAssetListType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_preloadWaitList</b></td></tr>
-<tr class="separator:aa4c105313de50da8f693ffea2d196325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab46a12579312ffb7795a1d3c5a5a0505"></a>
@@ -272,7 +170,7 @@ AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_final
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:33:27 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

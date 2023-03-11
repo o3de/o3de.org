@@ -52,8 +52,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_device-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RHI::Device Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -73,8 +71,8 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#a1e7786861d4d7ad21af6eab90a0ef6dd">IsInitialized</a> () const </td></tr>
 <tr class="memdesc:a1e7786861d4d7ad21af6eab90a0ef6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the device is initialized. <br/></td></tr>
 <tr class="separator:a1e7786861d4d7ad21af6eab90a0ef6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1e628c78ef0dacb4e1a594a2052934"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#a0c1e628c78ef0dacb4e1a594a2052934">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_physical_device.html">PhysicalDevice</a> &amp;physicalDevice)</td></tr>
-<tr class="separator:a0c1e628c78ef0dacb4e1a594a2052934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cedb219f025a92f0b96a7264f9d498"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#a86cedb219f025a92f0b96a7264f9d498">Init</a> (int deviceIndex, <a class="el" href="class_a_z_1_1_r_h_i_1_1_physical_device.html">PhysicalDevice</a> &amp;physicalDevice)</td></tr>
+<tr class="separator:a86cedb219f025a92f0b96a7264f9d498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76fa236e181a4ed8ff593308ed32f221"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#a76fa236e181a4ed8ff593308ed32f221">BeginFrame</a> ()</td></tr>
 <tr class="separator:a76fa236e181a4ed8ff593308ed32f221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af933eda6d87a09cf8ef5b801a81347df"><td class="memItemLeft" align="right" valign="top">ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#af933eda6d87a09cf8ef5b801a81347df">EndFrame</a> ()</td></tr>
@@ -89,6 +87,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_physical_device.html">PhysicalDevice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#acdd4e9818584755159aaa72dcf76dc30">GetPhysicalDevice</a> () const </td></tr>
 <tr class="memdesc:acdd4e9818584755159aaa72dcf76dc30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the physical device associated with this device. <br/></td></tr>
 <tr class="separator:acdd4e9818584755159aaa72dcf76dc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121c6be12c3f62a8359d0f3bd1d7283c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a121c6be12c3f62a8359d0f3bd1d7283c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#a121c6be12c3f62a8359d0f3bd1d7283c">GetDeviceIndex</a> () const </td></tr>
+<tr class="memdesc:a121c6be12c3f62a8359d0f3bd1d7283c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the device index. <br/></td></tr>
+<tr class="separator:a121c6be12c3f62a8359d0f3bd1d7283c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec38bd2502345e0ad50ad45698c2562b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec38bd2502345e0ad50ad45698c2562b"></a>
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_descriptor.html">DeviceDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#aec38bd2502345e0ad50ad45698c2562b">GetDescriptor</a> () const </td></tr>
 <tr class="memdesc:aec38bd2502345e0ad50ad45698c2562b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the descriptor associated with the device. <br/></td></tr>
@@ -173,40 +175,6 @@ const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#a40cab6a10612d7fdf473957d9f5b8d9d">use_count</a> ()</td></tr>
 <tr class="memdesc:a40cab6a10612d7fdf473957d9f5b8d9d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current use count of the object. <br/></td></tr>
 <tr class="separator:a40cab6a10612d7fdf473957d9f5b8d9d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:a9d46a5320b74f4b618012cbb572e2258"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d46a5320b74f4b618012cbb572e2258"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>FormatCapabilitiesList</b> = AZStd::array&lt; FormatCapabilities, static_cast&lt; uint32_t &gt;(Format::Count)&gt;</td></tr>
-<tr class="separator:a9d46a5320b74f4b618012cbb572e2258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a0e1f76a59dc6a6ae74ba517ac2649345"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e1f76a59dc6a6ae74ba517ac2649345"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html">DeviceFeatures</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_features</b></td></tr>
-<tr class="separator:a0e1f76a59dc6a6ae74ba517ac2649345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab85c49b0409d427624224b474bb1de5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab85c49b0409d427624224b474bb1de5b"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_limits.html">DeviceLimits</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_limits</b></td></tr>
-<tr class="separator:ab85c49b0409d427624224b474bb1de5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ccabb034db94adee9c1a5a99bf0cdf3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ccabb034db94adee9c1a5a99bf0cdf3"></a>
-<a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_pool_database.html">ResourcePoolDatabase</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_resourcePoolDatabase</b></td></tr>
-<tr class="separator:a6ccabb034db94adee9c1a5a99bf0cdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b6091f8bda300270d166137b99aafd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b6091f8bda300270d166137b99aafd5"></a>
-<a class="el" href="class_a_z_1_1_r_h_i_1_1_device_descriptor.html">DeviceDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
-<tr class="separator:a4b6091f8bda300270d166137b99aafd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
-<tr class="memitem:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2285f323a24b84e7b5ad2249438059b8"></a>
-AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCount</b> = 0</td></tr>
-<tr class="separator:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
-<tr class="memitem:a955994ad257e9d52191e1a52afe61a62 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a955994ad257e9d52191e1a52afe61a62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const </td></tr>
-<tr class="separator:a955994ad257e9d52191e1a52afe61a62 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af79593e4d781972fa270f4940cead50f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#af79593e4d781972fa270f4940cead50f">release</a> () const </td></tr>
-<tr class="separator:af79593e4d781972fa270f4940cead50f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> is a context for managing GPU state and memory on a physical device. The user creates a device instance from a <a class="el" href="class_a_z_1_1_r_h_i_1_1_physical_device.html">PhysicalDevice</a>. Each device has its own capabilities and limits, and can be configured to buffer a specific number of frames.</p>
@@ -298,16 +266,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const 
 
 </div>
 </div>
-<a class="anchor" id="a0c1e628c78ef0dacb4e1a594a2052934"></a>
+<a class="anchor" id="a86cedb219f025a92f0b96a7264f9d498"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">ResultCode AZ::RHI::Device::Init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_h_i_1_1_physical_device.html">PhysicalDevice</a> &amp;&#160;</td>
-          <td class="paramname"><em>physicalDevice</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_h_i_1_1_physical_device.html">PhysicalDevice</a> &amp;&#160;</td>
+          <td class="paramname"><em>physicalDevice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -379,7 +357,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2023 21:24:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

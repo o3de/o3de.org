@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_log_panel_1_1_styled_trace_print_f_log_tab-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::LogPanel::StyledTracePrintFLogTab Class Reference</div>  </div>
@@ -114,31 +112,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAtMaxScroll</b> () 
 <a class="el" href="struct_az_tools_framework_1_1_log_panel_1_1_tab_settings.html">TabSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b> () const </td></tr>
 <tr class="separator:aa51f24030e6fa3d0ab2e6e76661ebd06 inherit pub_methods_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4d9acbc4fb3c7014749bf29e8f76a030"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d9acbc4fb3c7014749bf29e8f76a030"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LogTraceMessage</b> (Logging::LogLine::LogType type, const char *window, const char *message, bool alwaysShowMessage=false)</td></tr>
-<tr class="separator:a4d9acbc4fb3c7014749bf29e8f76a030"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab.html">AzToolsFramework::LogPanel::StyledLogTab</a></td></tr>
-<tr class="memitem:aa060b566439ffbfd01882c7a185e7400 inherit pro_methods_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa060b566439ffbfd01882c7a185e7400"></a>
-virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertRowToText</b> (const QModelIndex &amp;row)</td></tr>
-<tr class="separator:aa060b566439ffbfd01882c7a185e7400 inherit pro_methods_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e67dc725e48dd6afeab4b0aa5753833 inherit pro_methods_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e67dc725e48dd6afeab4b0aa5753833"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuEvent</b> (QContextMenuEvent *ev) override</td></tr>
-<tr class="separator:a4e67dc725e48dd6afeab4b0aa5753833 inherit pro_methods_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aef49e6628d74ad95b9e4280c0614e91f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef49e6628d74ad95b9e4280c0614e91f"></a>
-AZStd::queue&lt; <a class="el" href="class_az_tools_framework_1_1_logging_1_1_log_line.html">Logging::LogLine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferedLines</b></td></tr>
-<tr class="separator:aef49e6628d74ad95b9e4280c0614e91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea01954545eedab9e03f1f43abc9b64a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea01954545eedab9e03f1f43abc9b64a"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_alreadyQueuedDrainMessage</b></td></tr>
-<tr class="separator:aea01954545eedab9e03f1f43abc9b64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ddad12a1854e70858c6c079a858d02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89ddad12a1854e70858c6c079a858d02"></a>
-AZStd::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferedLinesMutex</b></td></tr>
-<tr class="separator:a89ddad12a1854e70858c6c079a858d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header signals_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab"><td colspan="2" onclick="javascript:toggleInherit('signals_class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="class_az_tools_framework_1_1_log_panel_1_1_styled_log_tab.html">AzToolsFramework::LogPanel::StyledLogTab</a></td></tr>
@@ -152,7 +125,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onLinkActivated</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 23 2023 23:34:10 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
