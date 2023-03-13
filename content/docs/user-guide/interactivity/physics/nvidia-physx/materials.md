@@ -49,7 +49,7 @@ Define the degree of compactness of a material.
 
 ****Compliant Contact Mode (available with [PhysX 5.1](/docs/user-guide/interactivity/physics/nvidia-physx/#physx-version-support) enabled only)****
 
-+ ****Enabled****
++ ****Enable****
 When enabled the normal force of the contact is computed using an implicit spring. **Restitution properties** are not used when Compliant Contact Mode is enabled.
 
 + ****Damping****
