@@ -87,7 +87,7 @@ You can follow this tutorial using any source asset that contains at least one m
 
     If your asset has already been processed, you might see a preview image of the asset and a list of product assets below the `.fbx` source asset.
 
-1. To open Scene Settings, **double-click** the `.fbx` source asset, and then choose **Edit settings...** from the context menu.
+1. To open Scene Settings, right-click the `.fbx` source asset, and then choose **Edit settings...** from the context menu.
 
     ![ Open Scene Settings from Asset Browser. ](/images/learning-guide/tutorials/assets/meshes-edit-settings.png)
 
