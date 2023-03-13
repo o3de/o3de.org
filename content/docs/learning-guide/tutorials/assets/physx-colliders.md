@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-**Open 3D Engine (O3DE)** has a robust set of options for generating PhysX collider assets. There are three PhysX collider types that you can use in different simulation scenarios. This topic explains the benefits and limitations of the different collider types, as well as the basics of generating PhysX asset colliders with  [**Scene Settings**](/docs/user-guide/assets/scene-settings/scene-settings).
+**Open 3D Engine (O3DE)** has a robust set of options for generating PhysX collider assets. In [Scene Settings](/docs/user-guide/assets/scene-settings/scene-settings), you can customize PhysX collider asset generation. The generated PhysX colliders are stored in `.pxmesh` product assets. You can add the PhysX collider assets to a **PhysX Mesh Collider** component.
 
 The generated PhysX colliders are stored in `.pxmesh` product assets. You can add the PhysX collider assets to a **PhysX Mesh Collider** component.
 
