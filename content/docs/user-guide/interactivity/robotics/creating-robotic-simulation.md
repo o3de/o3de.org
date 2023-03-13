@@ -7,13 +7,13 @@ toc: true
 
 ## How to create your own robotic simulation
 
-### Tutorials
+<!-- ### Tutorials
 
 >This section is to be filled in
 
 ### High-level steps
 
->This section is to be detailed.
+>This section is to be detailed. -->
 
 Once you are set up and familiar with the example project, consider the following steps:
 1. [Create a new O3DE project](/docs/welcome-guide/create/)
