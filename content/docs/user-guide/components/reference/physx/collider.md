@@ -149,7 +149,7 @@ The following navigation hotkeys are available in collider component mode.
 
 ## Colliders as triggers
 
-Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't be affected by forces when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or Script Canvas to detect overlap.
+Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't be affected by forces when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or Script Canvas to detect overlap. 
 
 {{< note >}}
 Because triggers don't perform contact resolution, the contact points between a trigger and another collider aren't available.
