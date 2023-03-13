@@ -140,12 +140,14 @@ struct AppendArrayVisitor
 {
     CustomArrayVisitor() = default;
 
-    void Visit(const AZ::SettingsRegistryInterface::VisitArgs& visitArgs)
+    AZ::SettingsRegistryInterface::VisitResponse Visit(const AZ::SettingsRegistryInterface::VisitArgs& visitArgs)
     {
         if (int value; visitArgs.m_registry.Get(value, visitArgs.m_jsonKeyPath))
         {
             m_array.push_back(value);
         }
+
+        return AZ::SettingsRegistryInterface::VisitResponse::Skip;
     }
 
     AZStd::vector<int> m_array;
@@ -177,6 +179,8 @@ auto AppendObjectFields = [&fieldToIntMap](const AZ::SettingsRegistryInterface::
     {
         fieldToIntMap.emplace(visitArgs.m_fieldName, value);
     }
+
+    return AZ::SettingsRegistryInterface::VisitResponse::Skip;
 };
 // ...
 
