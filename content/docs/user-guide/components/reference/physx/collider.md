@@ -5,7 +5,7 @@ description: The PhysX Primitive Collider component adds a PhysX collider to an 
 toc: true
 ---
 
-The **PhysX Primitive Collider** component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation. The collider can be defined by a simple shape primitive selected in the the PhysX Primitive Collider component. The PhysX Primitive Collider component can also define a trigger area or a force region.
+The **PhysX Primitive Collider** component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation. The collider is defined by a simple shape primitive selected in the the PhysX Primitive Collider component. The PhysX Primitive Collider component can also define a trigger area or a force region.
 
 {{< note >}}
 Add a [PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) component with a PhysX Primitive Collider component to create a *static* entity that will never move. Add a [PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component to create a *simulated* or a *kinematic* entity. Simulated entities move in response to collisions and forces. Kinematic entities aren't affected by collisions or forces, but are driven by scripted movement.
