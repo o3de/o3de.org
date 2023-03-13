@@ -47,6 +47,17 @@ Define how physics material restitutions are combined between PhysX colliders wh
 ****Density****
 Define the degree of compactness of a material.
 
+****Compliant Contact Mode (available with [PhysX 5.1](/docs/user-guide/interactivity/physics/nvidia-physx/#physx-version-support) enabled only)****
+
++ ****Enable****
+When enabled the normal force of the contact is computed using an implicit spring. **Restitution properties** are not used when Compliant Contact Mode is enabled.
+
++ ****Damping****
+Higher damping values produce spongy contacts.
+
++ ****Stiffness****
+Higher stiffness values produce stiffer springs that behave more like a rigid contact. The higher the mass of the object, the higher the stiffness needs to be to reduce penetration.
+
 ****Debug Color****
 The display color of the physics material in debug view.
 
