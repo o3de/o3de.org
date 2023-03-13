@@ -37,10 +37,10 @@ To create a fork, perform the following steps:
 
 1. Go to the [O3DE documentation repository](https://github.com/o3de/o3de.org).
 
-1. Fork `o3de.org`. Choose the **Fork** button in the upper-right corner of the page. For more information on creating forks, refer to GitHub Docs, [Fork a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+1. Fork `o3de.org`. Choose the **Fork** button in the upper-right corner of the page. For more information on creating forks, refer to GitHub Docs, [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 
 You can access your fork in your repositories or by going to `https://github.com/<your-username>/o3de.org`.
-For more information on working with forks, refer to GitHub Docs, [Working with forks](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks).
+For more information on working with forks, refer to GitHub Docs, [Working with forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks).
 
 
 ### Clone your fork
@@ -62,7 +62,7 @@ Although an SSH protocol is not required to contribute to docs, you may choose t
 
 ### Set the upstream for your clone
 
-Your clone must point to two remote repositories: your fork (origin) and the source repo (upstream). By default, your clone's `origin` already points to your fork. However, you must set up `upstream` to point to the source repository for O3DE docs, `o3de/o3de.org`. Setting up upstream allows you pull new changes into your fork and from `o3de.org:main`. Later, you'll also need to submit changes to upstream in the form of a PR. PRs are the only way you can submit changes, you cannot push directly to upstream. 
+Your clone must point to two remote repositories: your fork (origin) and the source repo (upstream). By default, your clone's `origin` already points to your fork. However, you must set up `upstream` to point to the source repository for O3DE docs, `o3de/o3de.org`. Setting up upstream allows you to pull new changes into your fork and from `o3de.org:main`. Later, you'll also need to submit changes to upstream in the form of a PR. PRs are the only way you can submit changes, you cannot push directly to upstream. 
 
 In a terminal, perform the steps below:
 
@@ -77,7 +77,7 @@ In a terminal, perform the steps below:
     ```shell
     git remote set-url --push upstream NONE
     ```
-For more information about this step, refer to the GitHub Docs, [Configuring a remote for a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork). 
+For more information about this step, refer to the GitHub Docs, [Configuring a remote for a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork). 
 
 
 ### Branches
@@ -190,7 +190,7 @@ A DCO signature appears in the last part of your commit message in the form `Sig
 
 {{< important >}}
 In some cases, you may need to manually add a `Signed-off-by:` line to your commit message, for example if you're using a GUI tool that doesn't support DCO sign off. 
-For GitHub accounts created prior to July 18, 2017, use `username@users.noreply.github.com` as the email address. For accounts created after that date, use your GitHub-provided no-reply email address. The new no-reply email address is a seven-digit ID number and your username in the form of `ID+username@users.noreply.github.com` which can be found in the email tab of your GitHub account settings. For more information about setting your commit email address, refer to the [Setting your commit email address instructions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address).
+For GitHub accounts created prior to July 18, 2017, use `username@users.noreply.github.com` as the email address. For accounts created after that date, use your GitHub-provided no-reply email address. The new no-reply email address is a seven-digit ID number and your username in the form of `ID+username@users.noreply.github.com` which can be found in the email tab of your GitHub account settings. For more information about setting your commit email address, refer to the [Setting your commit email address instructions](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address).
 {{< /important >}}
 
 ### Preview your docs
@@ -229,7 +229,7 @@ PRs are created in the GitHub web interface from your branch. Go to your fork on
 
 If you go to the main o3de.org repo on GitHub and refer to [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls), your new PR appears at the top of the list.
 
-For more information on creating a pull request, refer to [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+For more information on creating a pull request, refer to [Creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 ### Respond to feedback
 
@@ -240,7 +240,7 @@ Feedback comes in the form of comments that you can address by editing files in 
 * When addressing comments, maintain the relative conversation in the PR, edit the topics as necessary, and commit the changes to your fork/branch. Your new commits will be automatically added to the PR.
 * Make sure to request a re-review of your new commits if required.
 
-For more information on incorporating PR feedback, refer to [Incorporating feedback in your pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request).
+For more information on incorporating PR feedback, refer to [Incorporating feedback in your pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request).
 
 ### The PR merge
 

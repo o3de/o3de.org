@@ -5,7 +5,7 @@ description: Use the 3D Viewport to interact with entities in Open 3D Engine (O3
 weight: 400
 ---
 
-In **Open 3D Engine** (O3DE), you can interact directly with entities using the 3D Viewport.  The 3D Viewport provides several features to complete common tasks such as editing the position, rotation, and scale of entities, hierarchies of entities, and their components.  [UI widgets](#ui-widgets), [Manipulators](#manipulators), [Hotkeys](#hotkeys), and visual feedback mechanisms simplify the process of editing and arranging entities. With [Reference spaces](reference-spaces), you can quickly select if entities are transformed in world space, local space, in relation to a parent entity, or custom spaces.
+In **Open 3D Engine** (O3DE), you can interact directly with entities using the 3D Viewport.  The 3D Viewport provides several features to complete common tasks such as editing the position, rotation, and scale of entities, hierarchies of entities, and their components.  [UI widgets](#viewport-ui-widgets), [Manipulators](#manipulators), [Hotkeys](#hotkeys), and visual feedback mechanisms simplify the process of editing and arranging entities. With [Reference spaces](reference-spaces), you can quickly select if entities are transformed in world space, local space, in relation to a parent entity, or custom spaces.
 
 ![Screenshot of 3D Viewport with UI widgets, entity, and a manipulator visible.](/images/user-guide/editor/3d-viewport.png)
 
@@ -25,7 +25,7 @@ You can select one of the three transform modes with the transform mode widget, 
 
 ### Reference space widget
 
-Reference spaces set the alignment of manipulator axes.  By default, entities will translate and rotate in _local space_, which is determined by an entity's **Rotate** and **Translate** values in the [Transform component](\docs\user-guide\components\reference\transform).  _World space_ is constant at all times for all entities.  World space is always centered at the **Translate** coordinates of `(0, 0, 0)` without any rotation.  If an entity is the child of another entity, _parent space_ will reference the **Rotate** and **Translate** values of the parent entity's Transform component.  You can **left-click** on an icon in the widget to lock a reference space selection; **left-click** the icon again to return the reference space to the default, local space.
+Reference spaces set the alignment of manipulator axes.  By default, entities will translate and rotate in _local space_, which is determined by an entity's **Rotate** and **Translate** values in the [Transform component](/docs/user-guide/components/reference/transform).  _World space_ is constant at all times for all entities.  World space is always centered at the **Translate** coordinates of `(0, 0, 0)` without any rotation.  If an entity is the child of another entity, _parent space_ will reference the **Rotate** and **Translate** values of the parent entity's Transform component.  You can **left-click** on an icon in the widget to lock a reference space selection; **left-click** the icon again to return the reference space to the default, local space.
 
 ![Image of reference space widget](/images/user-guide/editor/reference-space-widget.png)
 
@@ -45,17 +45,16 @@ The following table lists some of the components with an edit mode and describes
 
 | Component | Edit Mode Tasks |
 | - | - |
-| [Shape](\docs\user-guide\components\reference\shape) | Edit the dimensions of the various shape components. |
-| [White Box Tool](\docs\user-guide\components\reference\shape\white-box) | Design models with the White Box Tool. |
-| [Spline](\docs\user-guide\components\reference\shape\spline) | Add, remove, and position spline control points. |
-| [Non-uniform Scale](\docs\user-guide\components\reference\non-uniform-scale) | Edit the scaling of an entity on the X, Y, and Z-axis separately. |
-| [PhysX Primitive Collider](\docs\user-guide\components\reference\physx\collider) | Edit the dimensions of a primitive collider. |
-| [PhysX Mesh Collider](\docs\user-guide\components\reference\physx\mesh-collider) | Edit the scale of a PhysX Asset collider. |
-| [PhysX Ball Joint](\docs\user-guide\components\reference\physx\ball-joint) | Edit the position and limitations of a joint. |
+| [Shape](/docs/user-guide/components/reference/shape) | Edit the dimensions of the various shape components. |
+| [White Box Tool](/docs/user-guide/components/reference/shape/white-box) | Design models with the White Box Tool. |
+| [Spline](/docs/user-guide/components/reference/shape/spline) | Add, remove, and position spline control points. |
+| [Non-uniform Scale](/docs/user-guide/components/reference/non-uniform-scale) | Edit the scaling of an entity on the X, Y, and Z-axis separately. |
+| [PhysX Collider](/docs/user-guide/components/reference/physx/collider) | Edit the dimensions of a collider. |
+| [PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint) | Edit the position and limitations of a joint. |
 
 ## Manipulators 
 
-With manipulators, you can edit an entity's Transform component properties directly in the 3D Viewport instead of in the [Entity Inspector](.\..\entity-inspector).  When you select an entity, only the current transform mode's manipulator displays.  The orientation of the manipulator matches the reference space selection.
+With manipulators, you can edit an entity's Transform component properties directly in the 3D Viewport instead of in the [Entity Inspector](../entity-inspector).  When you select an entity, only the current transform mode's manipulator displays.  The orientation of the manipulator matches the reference space selection.
 
 ### Translation manipulator
 
@@ -111,4 +110,3 @@ Refer to the following table for a summary of keyboard hotkeys for the 3D Viewpo
 | **Ctrl + Drag** Scale manipulator | Sets the size of all manipulators. |  |
 | **Ctrl + R** | Resets the current manipulator. |  |
 | **P** | Toggles the pivot of the selected entity. |  |
-

@@ -5,7 +5,7 @@ description: The PhysX Primitive Collider component adds a PhysX collider to an 
 toc: true
 ---
 
-The **PhysX Primitive Collider** component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation. The collider can be defined by a simple shape primitive selected in the the PhysX Primitive Collider component. The PhysX Primitive Collider component can also define a trigger area or a force region.
+The **PhysX Primitive Collider** component adds a PhysX collider to an entity so that the entity can be included in PhysX simulation. The collider is defined by a simple shape primitive selected in the the PhysX Primitive Collider component. The PhysX Primitive Collider component can also define a trigger area or a force region.
 
 {{< note >}}
 Add a [PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) component with a PhysX Primitive Collider component to create a *static* entity that will never move. Add a [PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component to create a *simulated* or a *kinematic* entity. Simulated entities move in response to collisions and forces. Kinematic entities aren't affected by collisions or forces, but are driven by scripted movement.
@@ -149,7 +149,7 @@ The following navigation hotkeys are available in collider component mode.
 
 ## Colliders as triggers
 
-Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't be affected by forces when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or Script Canvas to detect overlap.
+Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't be affected by forces when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or Script Canvas to detect overlap. 
 
 {{< note >}}
 Because triggers don't perform contact resolution, the contact points between a trigger and another collider aren't available.
