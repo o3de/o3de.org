@@ -54,6 +54,9 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_components_1_1_transform_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -295,6 +298,155 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>PasteOverCompo
 <tr class="memitem:a663b83c55b0f573c41840c2e7a79aba4 inherit pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a663b83c55b0f573c41840c2e7a79aba4">Reflect</a> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a663b83c55b0f573c41840c2e7a79aba4 inherit pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a36bc6be0ef5fee6fd38df3617064ca1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36bc6be0ef5fee6fd38df3617064ca1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTransformChanged</b> (const AZ::Transform &amp;local, const AZ::Transform &amp;world) override</td></tr>
+<tr class="separator:a36bc6be0ef5fee6fd38df3617064ca1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829945be9379acae4dff59e412f03934"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a829945be9379acae4dff59e412f03934"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTransformChanged</b> ()</td></tr>
+<tr class="separator:a829945be9379acae4dff59e412f03934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00901d7b16d0a0c1de6c22b7e6e5433"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab00901d7b16d0a0c1de6c22b7e6e5433"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GatherChildren</b> (AZStd::vector&lt; AZ::EntityId &gt; &amp;children) override</td></tr>
+<tr class="separator:ab00901d7b16d0a0c1de6c22b7e6e5433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150476b31e8495156d784b83cc3a45ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_transform_component.html#a150476b31e8495156d784b83cc3a45ed">AddContextMenuActions</a> (QMenu *menu) override</td></tr>
+<tr class="separator:a150476b31e8495156d784b83cc3a45ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e2df835c49fc40ed7aa7a8646c4e30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02e2df835c49fc40ed7aa7a8646c4e30"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidatePotentialParent</b> (void *newValue, const AZ::Uuid &amp;valueType)</td></tr>
+<tr class="separator:a02e2df835c49fc40ed7aa7a8646c4e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7fd64107e2914900d3554fefb4acfa0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7fd64107e2914900d3554fefb4acfa0"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>TransformChangedInspector</b> ()</td></tr>
+<tr class="separator:ad7fd64107e2914900d3554fefb4acfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c22591cba12aa593fe62e14e2d63d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8c22591cba12aa593fe62e14e2d63d8"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>ParentChangedInspector</b> ()</td></tr>
+<tr class="separator:aa8c22591cba12aa593fe62e14e2d63d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbf24e9a59eb7f329e1fd242dbc1a03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacbf24e9a59eb7f329e1fd242dbc1a03"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>StaticChangedInspector</b> ()</td></tr>
+<tr class="separator:aacbf24e9a59eb7f329e1fd242dbc1a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d1a422f055b42d788fe525df9e52c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a671d1a422f055b42d788fe525df9e52c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TransformChanged</b> ()</td></tr>
+<tr class="separator:a671d1a422f055b42d788fe525df9e52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9e972a41d7bb9398eb533d668daa74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad9e972a41d7bb9398eb533d668daa74"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetLocalTranslationTM</b> () const </td></tr>
+<tr class="separator:aad9e972a41d7bb9398eb533d668daa74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10d671140f7d6240a42115f223c9fb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa10d671140f7d6240a42115f223c9fb2"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetLocalRotationTM</b> () const </td></tr>
+<tr class="separator:aa10d671140f7d6240a42115f223c9fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af1d59c5f80db197bf3bb8fbe7c7224"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3af1d59c5f80db197bf3bb8fbe7c7224"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetLocalScaleTM</b> () const </td></tr>
+<tr class="separator:a3af1d59c5f80db197bf3bb8fbe7c7224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76c823f9461951e7c3416a18cd05c2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae76c823f9461951e7c3416a18cd05c2d"></a>
+<a class="el" href="class_az_tools_framework_1_1_components_1_1_transform_component.html">TransformComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParentTransformComponent</b> () const </td></tr>
+<tr class="separator:ae76c823f9461951e7c3416a18cd05c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc8e55bebe8a3c258a1137846bfcb8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcc8e55bebe8a3c258a1137846bfcb8f"></a>
+<a class="el" href="class_az_tools_framework_1_1_components_1_1_transform_component.html">TransformComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransformComponent</b> (AZ::EntityId otherEntityId) const </td></tr>
+<tr class="separator:abcc8e55bebe8a3c258a1137846bfcb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a7ca47c74675ed72ba458505f0e063"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60a7ca47c74675ed72ba458505f0e063"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEntityInHierarchy</b> (AZ::EntityId entityId)</td></tr>
+<tr class="separator:a60a7ca47c74675ed72ba458505f0e063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9462addc50a6d3cd2517dd5631d0b841"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9462addc50a6d3cd2517dd5631d0b841"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParentImpl</b> (AZ::EntityId parentId, bool relative)</td></tr>
+<tr class="separator:a9462addc50a6d3cd2517dd5631d0b841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c815996612e4b57925a9eb700a08b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8c815996612e4b57925a9eb700a08b5"></a>
+const AZ::Transform &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetParentWorldTM</b> () const </td></tr>
+<tr class="separator:ab8c815996612e4b57925a9eb700a08b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add338adc54a5d0c79a55a25b23e3d7ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add338adc54a5d0c79a55a25b23e3d7ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ModifyEditorTransform</b> (AZ::Vector3 &amp;vec, const AZ::Vector3 &amp;data, const AZ::Transform &amp;parentInverse)</td></tr>
+<tr class="separator:add338adc54a5d0c79a55a25b23e3d7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd4dd1ad30b46e6de97f587e33ed655"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cd4dd1ad30b46e6de97f587e33ed655"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckApplyCachedWorldTransform</b> (const AZ::Transform &amp;parentWorld)</td></tr>
+<tr class="separator:a7cd4dd1ad30b46e6de97f587e33ed655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b6f7d35ba796d4f8ecefcbb5225dba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18b6f7d35ba796d4f8ecefcbb5225dba"></a>
+AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><b>FindPresentOrPendingComponent</b> (AZ::Uuid componentUuid)</td></tr>
+<tr class="separator:a18b6f7d35ba796d4f8ecefcbb5225dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f9f5a5d953c945421a08579b024dee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3f9f5a5d953c945421a08579b024dee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAddNonUniformScaleButtonReadOnly</b> ()</td></tr>
+<tr class="separator:aa3f9f5a5d953c945421a08579b024dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b77698893a4b5f4c64cb4007f90589"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80b77698893a4b5f4c64cb4007f90589"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>OnAddNonUniformScaleButtonPressed</b> ()</td></tr>
+<tr class="separator:a80b77698893a4b5f4c64cb4007f90589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:afdd5cb68b37134425a7406c0bd419886"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdd5cb68b37134425a7406c0bd419886"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
+<tr class="separator:afdd5cb68b37134425a7406c0bd419886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee5572d0398df353cb880ef3be8b373"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ee5572d0398df353cb880ef3be8b373"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
+<tr class="separator:a1ee5572d0398df353cb880ef3be8b373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d9c4131cd608f56668f7e2265e46f49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d9c4131cd608f56668f7e2265e46f49"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:a1d9c4131cd608f56668f7e2265e46f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae46baed4ee60306d32dcf40af67753a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae46baed4ee60306d32dcf40af67753a4"></a>
+AZ::TransformConfig::ParentActivationTransformMode&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentActivationTransformMode</b></td></tr>
+<tr class="separator:ae46baed4ee60306d32dcf40af67753a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc55aa1c2f9063b5525cacb7d7beffb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dc55aa1c2f9063b5525cacb7d7beffb"></a>
+AZ::TransformChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_transform_component.html#a1dc55aa1c2f9063b5525cacb7d7beffb">m_transformChangedEvent</a></td></tr>
+<tr class="memdesc:a1dc55aa1c2f9063b5525cacb7d7beffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event used to signal when a transform changes. <br/></td></tr>
+<tr class="separator:a1dc55aa1c2f9063b5525cacb7d7beffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869d8b0ab417fe386095b705002e6d02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a869d8b0ab417fe386095b705002e6d02"></a>
+AZ::ParentChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_transform_component.html#a869d8b0ab417fe386095b705002e6d02">m_parentChangedEvent</a></td></tr>
+<tr class="memdesc:a869d8b0ab417fe386095b705002e6d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event used to signal when a transforms parent changes. <br/></td></tr>
+<tr class="separator:a869d8b0ab417fe386095b705002e6d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678622663ed3d1b3c022ea0ab7e7277b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a678622663ed3d1b3c022ea0ab7e7277b"></a>
+AZ::ChildChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_transform_component.html#a678622663ed3d1b3c022ea0ab7e7277b">m_childChangedEvent</a></td></tr>
+<tr class="memdesc:a678622663ed3d1b3c022ea0ab7e7277b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event used to signal when a transform has a child entity added or removed. <br/></td></tr>
+<tr class="separator:a678622663ed3d1b3c022ea0ab7e7277b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc35fadc61a8843b74b7e72fc54ed7dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc35fadc61a8843b74b7e72fc54ed7dd"></a>
+<a class="el" href="struct_az_tools_framework_1_1_components_1_1_editor_transform.html">EditorTransform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_editorTransform</b></td></tr>
+<tr class="separator:adc35fadc61a8843b74b7e72fc54ed7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0177cbc2e3881b99b2d4c35b9db7d57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0177cbc2e3881b99b2d4c35b9db7d57"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>m_localTransformCache</b></td></tr>
+<tr class="separator:ad0177cbc2e3881b99b2d4c35b9db7d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fe8854f22d24743afca49c1e409888"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2fe8854f22d24743afca49c1e409888"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>m_worldTransformCache</b></td></tr>
+<tr class="separator:ae2fe8854f22d24743afca49c1e409888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20407288d98659070df2ed8790327f6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20407288d98659070df2ed8790327f6b"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedWorldTransform</b></td></tr>
+<tr class="separator:a20407288d98659070df2ed8790327f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03380c82b75ce6535b08556ed61bed4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab03380c82b75ce6535b08556ed61bed4"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedWorldTransformParent</b></td></tr>
+<tr class="separator:ab03380c82b75ce6535b08556ed61bed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0042b2b425ef88b6cc4cec8a36369dbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0042b2b425ef88b6cc4cec8a36369dbc"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentEntityId</b></td></tr>
+<tr class="separator:a0042b2b425ef88b6cc4cec8a36369dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c14cf0a05e622296d073300cf7bc1c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c14cf0a05e622296d073300cf7bc1c0"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_previousParentEntityId</b></td></tr>
+<tr class="separator:a9c14cf0a05e622296d073300cf7bc1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f4bbf46175bd964ed1618d969b1e4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36f4bbf46175bd964ed1618d969b1e4f"></a>
+EntityIdList&#160;</td><td class="memItemRight" valign="bottom"><b>m_childrenEntityIds</b></td></tr>
+<tr class="separator:a36f4bbf46175bd964ed1618d969b1e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816c961a0e0f6349e16f5609fc926faa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a816c961a0e0f6349e16f5609fc926faa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_suppressTransformChangedEvent</b></td></tr>
+<tr class="separator:a816c961a0e0f6349e16f5609fc926faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98240361694ef9ef18bc0563900042bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98240361694ef9ef18bc0563900042bf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_localTransformDirty</b> = true</td></tr>
+<tr class="separator:a98240361694ef9ef18bc0563900042bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01648917d182c07722519a9261166d9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01648917d182c07722519a9261166d9b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_worldTransformDirty</b> = true</td></tr>
+<tr class="separator:a01648917d182c07722519a9261166d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d2999bf08040e839073bd6f2f7b41f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d2999bf08040e839073bd6f2f7b41f0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isStatic</b> = false</td></tr>
+<tr class="separator:a3d2999bf08040e839073bd6f2f7b41f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6342f16cc45a92060d0d60c82995f0e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6342f16cc45a92060d0d60c82995f0e2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_initialized</b> = false</td></tr>
+<tr class="separator:a6342f16cc45a92060d0d60c82995f0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bf089db1580c9551846593f5c6d667"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20bf089db1580c9551846593f5c6d667"></a>
+<a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html">FocusModeInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_focusModeInterface</b> = nullptr</td></tr>
+<tr class="separator:a20bf089db1580c9551846593f5c6d667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8558f0023211c98a99c5cef7721070c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8558f0023211c98a99c5cef7721070c5"></a>
+AZ::InterpolationMode&#160;</td><td class="memItemRight" valign="bottom"><b>m_interpolatePosition</b></td></tr>
+<tr class="separator:a8558f0023211c98a99c5cef7721070c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed6406f5e12433525c0673aa7197843"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ed6406f5e12433525c0673aa7197843"></a>
+AZ::InterpolationMode&#160;</td><td class="memItemRight" valign="bottom"><b>m_interpolateRotation</b></td></tr>
+<tr class="separator:a5ed6406f5e12433525c0673aa7197843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e764c8b6a39c086dd44f03b686149e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05e764c8b6a39c086dd44f03b686149e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_netSyncEnabled</b> = false</td></tr>
+<tr class="separator:a05e764c8b6a39c086dd44f03b686149e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a6d86280cb4d287000d06b5f41764aa92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d86280cb4d287000d06b5f41764aa92"></a>
@@ -331,6 +483,33 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TransformComponentFa
 <p><b>Important:</b> Components derived from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html">EditorComponentBase</a> must call the <a class="el" href="class_az_tools_framework_1_1_components_1_1_transform_component.html#ae03cf0570dba822b2bffdbb130afd181">Activate()</a> function of the base class. </p>
 
 <p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a7df8b021550930d5b3a3ea110c2848ed">AzToolsFramework::Components::EditorComponentBase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a150476b31e8495156d784b83cc3a45ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Components::TransformComponent::AddContextMenuActions </td>
+          <td>(</td>
+          <td class="paramtype">QMenu *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Implement this to add component specific context menu options to your editor component when right clicked in the entity inspector </p>
+
+<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#aac10891f8bd5dc655f2e016c43d597fd">AzToolsFramework::Components::EditorComponentBase</a>.</p>
 
 </div>
 </div>
@@ -454,7 +633,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TransformComponentFa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

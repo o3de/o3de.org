@@ -51,6 +51,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_search_type_selector_filter_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::SearchTypeSelectorFilterModel Class Reference</div>  </div>
@@ -67,6 +70,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02090e021ce37c277aaaa49b620143ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02090e021ce37c277aaaa49b620143ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setNoResultsMessageRow</b> (int row)</td></tr>
 <tr class="separator:a02090e021ce37c277aaaa49b620143ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:ac55e3c12806556ef631cf6ebd84c9a94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac55e3c12806556ef631cf6ebd84c9a94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onRowCountChanged</b> ()</td></tr>
+<tr class="separator:ac55e3c12806556ef631cf6ebd84c9a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:afcf110836d72f06635b199a973b44a81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcf110836d72f06635b199a973b44a81"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>filterAcceptsRow</b> (int source_row, const QModelIndex &amp;source_parent) const override</td></tr>
+<tr class="separator:afcf110836d72f06635b199a973b44a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86faac41c153cfdec88df0b7399f2cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad86faac41c153cfdec88df0b7399f2cb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getNumLeafNodes</b> (const QModelIndex &amp;theIndex=QModelIndex())</td></tr>
+<tr class="separator:ad86faac41c153cfdec88df0b7399f2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a55da128c65efa1003e2703bfb564c6c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55da128c65efa1003e2703bfb564c6c3"></a>
+<a class="el" href="class_az_qt_components_1_1_search_type_selector.html">SearchTypeSelector</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_searchTypeSelector</b> = nullptr</td></tr>
+<tr class="separator:a55da128c65efa1003e2703bfb564c6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18af01127d8ff4e0dd02a1bea0a6687e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18af01127d8ff4e0dd02a1bea0a6687e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_noResultsRow</b> = -1</td></tr>
+<tr class="separator:a18af01127d8ff4e0dd02a1bea0a6687e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a76b1be5b325d9e54f57ebe7bc5973b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a76b1be5b325d9e54f57ebe7bc5973b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_showingNoResultsMessage</b> = false</td></tr>
+<tr class="separator:a2a76b1be5b325d9e54f57ebe7bc5973b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/FilteredSearchWidget.h</li>
@@ -74,7 +104,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setNoResultsMessageRo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

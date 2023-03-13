@@ -53,6 +53,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_document_property_editor_1_1_component_adapter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DocumentPropertyEditor::ComponentAdapter Class Reference</div>  </div>
@@ -100,6 +101,21 @@ Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>HandleMessage</
 <tr class="separator:a9e560d9d5e1853843ea83e70a032b38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62187a5576cd88ac2dd087d2975c8bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_component_adapter.html#a62187a5576cd88ac2dd087d2975c8bd0">CreateLabel</a> (AdapterBuilder *adapterBuilder, AZStd::string_view labelText, AZStd::string_view serializedPath) override</td></tr>
 <tr class="separator:a62187a5576cd88ac2dd087d2975c8bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac17264cea4f34d4e46d9b99285fc42ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac17264cea4f34d4e46d9b99285fc42ba"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityId</b></td></tr>
+<tr class="separator:ac17264cea4f34d4e46d9b99285fc42ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef71c80f5debabf6bf2eb395fec31db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ef71c80f5debabf6bf2eb395fec31db"></a>
+AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><b>m_componentInstance</b> = nullptr</td></tr>
+<tr class="separator:a9ef71c80f5debabf6bf2eb395fec31db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade04afe34148e48c458451ddc817ec06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade04afe34148e48c458451ddc817ec06"></a>
+<a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">AzToolsFramework::UndoSystem::URSequencePoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentUndoNode</b> = nullptr</td></tr>
+<tr class="separator:ade04afe34148e48c458451ddc817ec06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac006ef64b20b553161f2da7302201b2f"><td class="memItemLeft" align="right" valign="top">enum <br class="typebreak"/>
+AzToolsFramework::PropertyModificationRefreshLevel&#160;</td><td class="memItemRight" valign="bottom"><b>m_queuedRefreshLevel</b></td></tr>
+<tr class="separator:ac006ef64b20b553161f2da7302201b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_document_property_editor_1_1_component_adapter.html" title="ComponentAdapter is responsible to listening for signals that affect each component in the Entity Ins...">ComponentAdapter</a> is responsible to listening for signals that affect each component in the Entity Inspector. </p>
@@ -153,13 +169,36 @@ Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>HandleMessage</
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac006ef64b20b553161f2da7302201b2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum AzToolsFramework::PropertyModificationRefreshLevel AZ::DocumentPropertyEditor::ComponentAdapter::m_queuedRefreshLevel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            AzToolsFramework::PropertyModificationRefreshLevel::Refresh_None</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/DocumentPropertyEditor/DPEComponentAdapter.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

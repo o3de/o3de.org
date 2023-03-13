@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Prefab::InstanceUpdateExecutor Class Reference</div>  </div>
@@ -94,6 +96,50 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceUpd
 <tr class="memitem:a72cbaf19035adecbf701f442816d859d inherit pub_methods_class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72cbaf19035adecbf701f442816d859d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html">InstanceUpdateExecutorInterface</a>,&quot;{26BB4ACF-6EA5-4668-84E7-AB75B90BA449}&quot;)</td></tr>
 <tr class="separator:a72cbaf19035adecbf701f442816d859d inherit pub_methods_class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af69fd91ebbee092ea8e278b64ace6aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor.html#af69fd91ebbee092ea8e278b64ace6aa2">LazyConnectGameModeEventHandler</a> ()</td></tr>
+<tr class="separator:af69fd91ebbee092ea8e278b64ace6aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d9dca20d37df19eb3b6b993210c861"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58d9dca20d37df19eb3b6b993210c861"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddInstanceToQueue</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *instance)</td></tr>
+<tr class="separator:a58d9dca20d37df19eb3b6b993210c861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4ba2ebee5085713410463f96e5050511"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ba2ebee5085713410463f96e5050511"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">PrefabSystemComponentInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabSystemComponentInterface</b> = nullptr</td></tr>
+<tr class="separator:a4ba2ebee5085713410463f96e5050511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e74efe9aa0decf366afed490ea3a62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54e74efe9aa0decf366afed490ea3a62"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template_instance_mapper_interface.html">TemplateInstanceMapperInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_templateInstanceMapperInterface</b> = nullptr</td></tr>
+<tr class="separator:a54e74efe9aa0decf366afed490ea3a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136ff8450159e3fe716773587df376e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a136ff8450159e3fe716773587df376e5"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator_interface.html">InstanceDomGeneratorInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceDomGeneratorInterface</b> = nullptr</td></tr>
+<tr class="separator:a136ff8450159e3fe716773587df376e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415351a320bf82da847cad15a4639847"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a415351a320bf82da847cad15a4639847"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootPrefabInstanceSourcePath</b></td></tr>
+<tr class="separator:a415351a320bf82da847cad15a4639847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e28caef6bd81b3aa83357c6a7f087d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1e28caef6bd81b3aa83357c6a7f087d"></a>
+AZStd::deque&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instancesUpdateQueue</b></td></tr>
+<tr class="separator:ae1e28caef6bd81b3aa83357c6a7f087d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ef73ae099568b0f3561eb8a1fc7445"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42ef73ae099568b0f3561eb8a1fc7445"></a>
+AZStd::unordered_set&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_uniqueInstancesForPropagation</b></td></tr>
+<tr class="separator:a42ef73ae099568b0f3561eb8a1fc7445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec299aec8cb10c18ff96002ba84b1aeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec299aec8cb10c18ff96002ba84b1aeb"></a>
+AZ::Event&lt; GameModeState &gt;::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_GameModeEventHandler</b></td></tr>
+<tr class="separator:aec299aec8cb10c18ff96002ba84b1aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b396230fed71fde52391c68a4a9ea35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b396230fed71fde52391c68a4a9ea35"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceCountToUpdateInBatch</b> = 0</td></tr>
+<tr class="separator:a8b396230fed71fde52391c68a4a9ea35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad848df30793d07ef305a7f60d1902374"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad848df30793d07ef305a7f60d1902374"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isRootPrefabInstanceLoaded</b> = false</td></tr>
+<tr class="separator:ad848df30793d07ef305a7f60d1902374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d74ae537fa5c247ca332986602e88b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d74ae537fa5c247ca332986602e88b9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_shouldPausePropagation</b> = false</td></tr>
+<tr class="separator:a2d74ae537fa5c247ca332986602e88b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45453ffe491d9c56a591c952174dddf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa45453ffe491d9c56a591c952174dddf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_updatingTemplateInstancesInQueue</b> { false }</td></tr>
+<tr class="separator:aa45453ffe491d9c56a591c952174dddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aeb7b23020734214fdbd8d015fdbf4a32"></a>
@@ -170,6 +216,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceUpd
 </dl>
 
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html#aa4a9de5e8e86faca1c9f23865aa0f2e0">AzToolsFramework::Prefab::InstanceUpdateExecutorInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af69fd91ebbee092ea8e278b64ace6aa2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::InstanceUpdateExecutor::LazyConnectGameModeEventHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Connect the game mode event handler in a lazy fashion rather than at construction of this class. This is required because the event won't be ready for connection during construction as <a class="el" href="class_az_tools_framework_1_1_editor_entity_context_component.html">EditorEntityContextComponent</a> gets initialized after the <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html">PrefabSystemComponent</a>. </p>
 
 </div>
 </div>
@@ -298,7 +368,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceUpd
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

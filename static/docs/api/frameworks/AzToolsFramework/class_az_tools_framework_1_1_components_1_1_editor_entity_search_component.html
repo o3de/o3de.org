@@ -55,6 +55,7 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_components_1_1_editor_entity_search_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Components::EditorEntitySearchComponent Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -68,6 +69,11 @@
 
 <p>Inherits Component, and Handler.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_components_1_1_editor_entity_search_component_1_1_search_conditions.html">SearchConditions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a097962b03700456f3f03641d370aedd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a097962b03700456f3f03641d370aedd4"></a>
@@ -91,6 +97,27 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ada050d37de92b59c2f7e91b5a9237d62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada050d37de92b59c2f7e91b5a9237d62"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:ada050d37de92b59c2f7e91b5a9237d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8bd6edd91fafcb26a2af098a245bbc25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bd6edd91fafcb26a2af098a245bbc25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllEntitiesInSubtree</b> (AZ::EntityId rootId, EntityIdList &amp;subTreeEntityList)</td></tr>
+<tr class="separator:a8bd6edd91fafcb26a2af098a245bbc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ecbe44f05923193ab4affd8c7d5e1b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ecbe44f05923193ab4affd8c7d5e1b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FilterEntity</b> (AZ::EntityId entityId, const <a class="el" href="struct_az_tools_framework_1_1_components_1_1_editor_entity_search_component_1_1_search_conditions.html">SearchConditions</a> &amp;conditions, EntityIdSet &amp;filteredEntities)</td></tr>
+<tr class="separator:a2ecbe44f05923193ab4affd8c7d5e1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ef9fc8b63bd1ee40000a6245450de5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44ef9fc8b63bd1ee40000a6245450de5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FollowPathHelper</b> (const AZStd::vector&lt; AZ::EntityId &gt; &amp;entities, const AZStd::vector&lt; AZStd::string &gt; &amp;tokenizedPath, EntityIdSet *result, bool caseSensitive, size_t pathSize, size_t currentIndex=0)</td></tr>
+<tr class="separator:a44ef9fc8b63bd1ee40000a6245450de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b673ddfb4613047f7ba33547ed9db47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b673ddfb4613047f7ba33547ed9db47"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPositionContained</b> (AZ::EntityId entityId, const AZ::Aabb &amp;aabb) const </td></tr>
+<tr class="separator:a3b673ddfb4613047f7ba33547ed9db47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0a39b3afcc9cd818b1771d064ca6d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe0a39b3afcc9cd818b1771d064ca6d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AreComponentsMatched</b> (AZ::EntityId entityId, const EntitySearchFilter::Components &amp;components, bool mustMatchAllComponents) const </td></tr>
+<tr class="separator:abe0a39b3afcc9cd818b1771d064ca6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5692446cbc7576c3ae7ef40e3b871ae9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5692446cbc7576c3ae7ef40e3b871ae9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ArePropertyValuesOfComponentMatched</b> (AZ::EntityId entityId, AZ::Uuid componentTypeId, const EntitySearchFilter::ComponentProperties &amp;componentProperties, bool mustMatchAllComponents) const </td></tr>
+<tr class="separator:a5692446cbc7576c3ae7ef40e3b871ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A System Component to reflect Editor operations on Components to Behavior Context. </p>
@@ -100,7 +127,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

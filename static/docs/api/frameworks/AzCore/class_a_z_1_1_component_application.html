@@ -55,6 +55,11 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="class_a_z_1_1_component_application-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ComponentApplication Class Reference</div>  </div>
@@ -191,11 +196,225 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ac37dda7a38985a1617cedcc1fe4a538d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8667e8b23af980350870aee021fda86c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#a8667e8b23af980350870aee021fda86c">LoadDynamicModules</a> ()</td></tr>
 <tr class="separator:a8667e8b23af980350870aee021fda86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a8fcb3ba1ee8b9344ade4dc3103525051"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fcb3ba1ee8b9344ade4dc3103525051"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TickTimepoint</b> = AZStd::chrono::steady_clock::time_point</td></tr>
+<tr class="separator:a8fcb3ba1ee8b9344ade4dc3103525051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02b4b982e15b4894f00190c9f81b45c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#ac02b4b982e15b4894f00190c9f81b45c">RecordMetricsCallback</a> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; bool(AZStd::chrono::steady_clock::time_point)&gt;</td></tr>
+<tr class="separator:ac02b4b982e15b4894f00190c9f81b45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa448ef362ab8881f6eb42446e088398a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa448ef362ab8881f6eb42446e088398a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeSettingsRegistry</b> ()</td></tr>
+<tr class="separator:aa448ef362ab8881f6eb42446e088398a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2f9f790c8b0862ccfa1d41501e0b0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c2f9f790c8b0862ccfa1d41501e0b0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeEventLoggerFactory</b> ()</td></tr>
+<tr class="separator:a6c2f9f790c8b0862ccfa1d41501e0b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15609ab3ee151cf04b7e72c4e4fd3ed9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15609ab3ee151cf04b7e72c4e4fd3ed9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeLifecyleEvents</b> (<a class="el" href="class_a_z_1_1_settings_registry_interface.html">SettingsRegistryInterface</a> &amp;settingsRegistry)</td></tr>
+<tr class="separator:a15609ab3ee151cf04b7e72c4e4fd3ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ded70901cb4ab91a328034bafc392ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ded70901cb4ab91a328034bafc392ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeConsole</b> (<a class="el" href="class_a_z_1_1_settings_registry_interface.html">SettingsRegistryInterface</a> &amp;settingsRegistry)</td></tr>
+<tr class="separator:a4ded70901cb4ab91a328034bafc392ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfbd25eb8c242f13fb2c54f77332a9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cfbd25eb8c242f13fb2c54f77332a9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterCoreEventLogger</b> ()</td></tr>
+<tr class="separator:a7cfbd25eb8c242f13fb2c54f77332a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44873d76b8d2aeefde0f46a176e2676"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae44873d76b8d2aeefde0f46a176e2676"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateReflectionManager</b> ()</td></tr>
+<tr class="separator:ae44873d76b8d2aeefde0f46a176e2676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1702d3e3571e1c7236c91695f28ebe5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1702d3e3571e1c7236c91695f28ebe5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyReflectionManager</b> ()</td></tr>
+<tr class="separator:a1702d3e3571e1c7236c91695f28ebe5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0361beb4dfc3baf153beb53b76670661"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0361beb4dfc3baf153beb53b76670661"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#a0361beb4dfc3baf153beb53b76670661">PreModuleLoad</a> ()</td></tr>
+<tr class="memdesc:a0361beb4dfc3baf153beb53b76670661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform any additional initialization needed before loading modules. <br/></td></tr>
+<tr class="separator:a0361beb4dfc3baf153beb53b76670661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62081736c3915e945b8b4093fc5a5e55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62081736c3915e945b8b4093fc5a5e55"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStaticModules</b> (<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_module.html">AZ::Module</a> * &gt; &amp;outModules)</td></tr>
+<tr class="separator:a62081736c3915e945b8b4093fc5a5e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cef04ebb6b0a232aa021f2339e95628"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cef04ebb6b0a232aa021f2339e95628"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#a1cef04ebb6b0a232aa021f2339e95628">CreateCommon</a> ()</td></tr>
+<tr class="memdesc:a1cef04ebb6b0a232aa021f2339e95628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common logic shared between the multiple Create(...) functions. <br/></td></tr>
+<tr class="separator:a1cef04ebb6b0a232aa021f2339e95628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b9244af8ca0156fcbfc7feb883af1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8b9244af8ca0156fcbfc7feb883af1e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#ab8b9244af8ca0156fcbfc7feb883af1e">ConfigureSystemAllocatorTracking</a> ()</td></tr>
+<tr class="memdesc:ab8b9244af8ca0156fcbfc7feb883af1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the system allocator to track allocations. <br/></td></tr>
+<tr class="separator:ab8b9244af8ca0156fcbfc7feb883af1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595fad199f05ff412d9c107789f048fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a595fad199f05ff412d9c107789f048fc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>MergeSettingsToRegistry</b> (<a class="el" href="class_a_z_1_1_settings_registry_interface.html">SettingsRegistryInterface</a> &amp;registry)</td></tr>
+<tr class="separator:a595fad199f05ff412d9c107789f048fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d6c3d0837ad36ff02b9dad28c7d05e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8d6c3d0837ad36ff02b9dad28c7d05e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MergeSharedSettings</b> (<a class="el" href="class_a_z_1_1_settings_registry_interface.html">SettingsRegistryInterface</a> &amp;registry, const <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">AZ::SettingsRegistryInterface::Specializations</a> &amp;specializations, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; &amp;scratchBuffer)</td></tr>
+<tr class="separator:ac8d6c3d0837ad36ff02b9dad28c7d05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeacc6c09d71676031d580aefcd1017f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeacc6c09d71676031d580aefcd1017f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MergeUserSettings</b> (<a class="el" href="class_a_z_1_1_settings_registry_interface.html">SettingsRegistryInterface</a> &amp;registry, const <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">AZ::SettingsRegistryInterface::Specializations</a> &amp;specializations, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; &amp;scratchBuffer)</td></tr>
+<tr class="separator:afeacc6c09d71676031d580aefcd1017f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9532f86ac72a7d2cdf1d502f5a418d1c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#a9532f86ac72a7d2cdf1d502f5a418d1c">SetSettingsRegistrySpecializations</a> (<a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">SettingsRegistryInterface::Specializations</a> &amp;specializations)</td></tr>
+<tr class="separator:a9532f86ac72a7d2cdf1d502f5a418d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5d2de9516d4d2e484d32115502446d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a5d2de9516d4d2e484d32115502446d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportBadEngineRoot</b> ()</td></tr>
+<tr class="separator:a7a5d2de9516d4d2e484d32115502446d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3426557bf7f28c2d69d731071b46f53a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#a3426557bf7f28c2d69d731071b46f53a">RegisterCoreComponents</a> ()</td></tr>
+<tr class="separator:a3426557bf7f28c2d69d731071b46f53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf325517cf0e7f6303b3a9ed2c7b0552"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf325517cf0e7f6303b3a9ed2c7b0552"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> *context)</td></tr>
+<tr class="separator:abf325517cf0e7f6303b3a9ed2c7b0552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d830544bf55097cc6934b2d2e4e74b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57d830544bf55097cc6934b2d2e4e74b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#a57d830544bf55097cc6934b2d2e4e74b">ShouldAddSystemComponent</a> (<a class="el" href="class_a_z_1_1_component_descriptor.html">AZ::ComponentDescriptor</a> *descriptor)</td></tr>
+<tr class="memdesc:a57d830544bf55097cc6934b2d2e4e74b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a System <a class="el" href="class_a_z_1_1_component.html">Component</a> should be created. <br/></td></tr>
+<tr class="separator:a57d830544bf55097cc6934b2d2e4e74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8411c2b81001d61589d289a5c5b0af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade8411c2b81001d61589d289a5c5b0af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#ade8411c2b81001d61589d289a5c5b0af">AddRequiredSystemComponents</a> (<a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> *systemEntity)</td></tr>
+<tr class="memdesc:ade8411c2b81001d61589d289a5c5b0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds system components requested by modules and the application to the system entity. <br/></td></tr>
+<tr class="separator:ade8411c2b81001d61589d289a5c5b0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:af6cecd9bc2b844fefa7836ee7faebf0b"><td class="memTemplParams" colspan="2"><a class="anchor" id="af6cecd9bc2b844fefa7836ee7faebf0b"></a>
+template&lt;typename Iterator &gt; </td></tr>
+<tr class="memitem:af6cecd9bc2b844fefa7836ee7faebf0b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>NormalizePath</b> (Iterator begin, Iterator end, bool doLowercase=true)</td></tr>
+<tr class="separator:af6cecd9bc2b844fefa7836ee7faebf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a8a514c9c77c21cbf0fa6968aa5d7a26c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a514c9c77c21cbf0fa6968aa5d7a26c"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_module_manager.html">ModuleManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_moduleManager</b></td></tr>
+<tr class="separator:a8a514c9c77c21cbf0fa6968aa5d7a26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9279a7c9bec764ad293bbbcbe4d90f62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9279a7c9bec764ad293bbbcbe4d90f62"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_name_dictionary.html">NameDictionary</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_nameDictionary</b></td></tr>
+<tr class="separator:a9279a7c9bec764ad293bbbcbe4d90f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85b239447cfe59b3f004369fd9630ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae85b239447cfe59b3f004369fd9630ff"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_settings_registry_interface.html">SettingsRegistryInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsRegistry</b></td></tr>
+<tr class="separator:ae85b239447cfe59b3f004369fd9630ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afebb2b5d562a447fac636e853e0d9029"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afebb2b5d562a447fac636e853e0d9029"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html">SettingsRegistryOriginTracker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsRegistryOriginTracker</b></td></tr>
+<tr class="separator:afebb2b5d562a447fac636e853e0d9029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac663c418844a56879fc97d2344cbc83c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac663c418844a56879fc97d2344cbc83c"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_console.html">AZ::IConsole</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_console</b></td></tr>
+<tr class="separator:ac663c418844a56879fc97d2344cbc83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045c0e82ca876215953506dfce056f8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a045c0e82ca876215953506dfce056f8c"></a>
+<a class="el" href="class_a_z_1_1_event.html">EntityAddedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityAddedEvent</b></td></tr>
+<tr class="separator:a045c0e82ca876215953506dfce056f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33891a9bdc635a66808ac773f3185d25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33891a9bdc635a66808ac773f3185d25"></a>
+<a class="el" href="class_a_z_1_1_event.html">EntityRemovedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityRemovedEvent</b></td></tr>
+<tr class="separator:a33891a9bdc635a66808ac773f3185d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23ec3e01a8165495b70fd845d76ee4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab23ec3e01a8165495b70fd845d76ee4a"></a>
+<a class="el" href="class_a_z_1_1_event.html">EntityAddedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityActivatedEvent</b></td></tr>
+<tr class="separator:ab23ec3e01a8165495b70fd845d76ee4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac71a0ec460ba9d23448946602893450"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac71a0ec460ba9d23448946602893450"></a>
+<a class="el" href="class_a_z_1_1_event.html">EntityRemovedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityDeactivatedEvent</b></td></tr>
+<tr class="separator:aac71a0ec460ba9d23448946602893450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82e7d5a976f6750465b90fbb70674e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa82e7d5a976f6750465b90fbb70674e6"></a>
+<a class="el" href="struct_a_z_1_1_component_application_1_1_descriptor.html">Descriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
+<tr class="separator:aa82e7d5a976f6750465b90fbb70674e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa169d1bbc4c0151bbb4b9cbfe9ed8f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa169d1bbc4c0151bbb4b9cbfe9ed8f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isStarted</b> { false }</td></tr>
+<tr class="separator:aaa169d1bbc4c0151bbb4b9cbfe9ed8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d54479bac69250b021d87fdb8a1ae2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70d54479bac69250b021d87fdb8a1ae2"></a>
+<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_osAllocator</b> { nullptr }</td></tr>
+<tr class="separator:a70d54479bac69250b021d87fdb8a1ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e93e09983eb2db8acbdf35a6effaeda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e93e09983eb2db8acbdf35a6effaeda"></a>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">EntitySetType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entities</b></td></tr>
+<tr class="separator:a9e93e09983eb2db8acbdf35a6effaeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b772324960f0f8b2d4df473fbc8a09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89b772324960f0f8b2d4df473fbc8a09"></a>
+AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_projectPathChangedHandler</b></td></tr>
+<tr class="separator:a89b772324960f0f8b2d4df473fbc8a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58813259e7f40bc65d8a9b6276dc3232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58813259e7f40bc65d8a9b6276dc3232"></a>
+AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_projectNameChangedHandler</b></td></tr>
+<tr class="separator:a58813259e7f40bc65d8a9b6276dc3232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff93e30eca66283a1ec0bab31e65ee6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff93e30eca66283a1ec0bab31e65ee6e"></a>
+AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_commandLineUpdatedHandler</b></td></tr>
+<tr class="separator:aff93e30eca66283a1ec0bab31e65ee6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf89b3deeb7acb54c11e29359c8e0c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cf89b3deeb7acb54c11e29359c8e0c0"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_time_system.html">AZ::TimeSystem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeSystem</b></td></tr>
+<tr class="separator:a4cf89b3deeb7acb54c11e29359c8e0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678e3fe21da73177465e54c7a52808ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a678e3fe21da73177465e54c7a52808ef"></a>
+<a class="el" href="struct_a_z_1_1_settings_registry_console_utils_1_1_console_functor_handle.html">AZ::SettingsRegistryConsoleUtils::ConsoleFunctorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsRegistryConsoleFunctors</b></td></tr>
+<tr class="separator:a678e3fe21da73177465e54c7a52808ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079b7f98b8f243260e65a1642861036b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a079b7f98b8f243260e65a1642861036b"></a>
+<a class="el" href="struct_a_z_1_1_settings_registry_console_utils_1_1_console_functor_handle.html">AZ::SettingsRegistryConsoleUtils::ConsoleFunctorHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsRegistryOriginTrackerConsoleFunctors</b></td></tr>
+<tr class="separator:a079b7f98b8f243260e65a1642861036b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e968da31000782ca4dd84ab244a9599"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e968da31000782ca4dd84ab244a9599"></a>
+<a class="el" href="class_a_z_1_1_debug_1_1_budget_tracker.html">Debug::BudgetTracker</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_budgetTracker</b></td></tr>
+<tr class="separator:a4e968da31000782ca4dd84ab244a9599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8171658f89a999605087dca69df21195"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8171658f89a999605087dca69df21195"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>m_commandLineBuffer</b> [AZ_MAX_PATH_LEN]</td></tr>
+<tr class="separator:a8171658f89a999605087dca69df21195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f3b9ddc494dcfb651b9c1f4ebeab83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83f3b9ddc494dcfb651b9c1f4ebeab83"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_commandLineBufferAddress</b> { m_commandLineBuffer }</td></tr>
+<tr class="separator:a83f3b9ddc494dcfb651b9c1f4ebeab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa882081e69ecd776e0fd85bb5f47b95f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa882081e69ecd776e0fd85bb5f47b95f"></a>
+<a class="el" href="struct_a_z_1_1_component_application_1_1_startup_parameters.html">StartupParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_startupParameters</b></td></tr>
+<tr class="separator:aa882081e69ecd776e0fd85bb5f47b95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3a64500c960e58a51793e8acd22a5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c3a64500c960e58a51793e8acd22a5d"></a>
+char **&#160;</td><td class="memItemRight" valign="bottom"><b>m_argV</b> { nullptr }</td></tr>
+<tr class="separator:a5c3a64500c960e58a51793e8acd22a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88319064fccc87a6a6c2dddf73b827b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae88319064fccc87a6a6c2dddf73b827b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_argC</b> { 0 }</td></tr>
+<tr class="separator:ae88319064fccc87a6a6c2dddf73b827b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e24513ee1db3db500ef68727eee40e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17e24513ee1db3db500ef68727eee40e"></a>
+<a class="el" href="class_a_z_1_1_command_line.html">AZ::CommandLine</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_commandLine</b></td></tr>
+<tr class="separator:a17e24513ee1db3db500ef68727eee40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed10e6878d17a165f71612acae63017c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed10e6878d17a165f71612acae63017c"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application.html#aed10e6878d17a165f71612acae63017c">m_systemEntity</a></td></tr>
+<tr class="memdesc:aed10e6878d17a165f71612acae63017c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Track the system entity to ensure we free it on shutdown. <br/></td></tr>
+<tr class="separator:aed10e6878d17a165f71612acae63017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab554174daf3e56ca9e60c91250bbbc90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab554174daf3e56ca9e60c91250bbbc90"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_metrics_1_1_i_event_logger_factory.html">AZ::Metrics::IEventLoggerFactory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventLoggerFactory</b></td></tr>
+<tr class="separator:ab554174daf3e56ca9e60c91250bbbc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5002ab38571c777dc3330cb38ff78357"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5002ab38571c777dc3330cb38ff78357"></a>
+TickTimepoint&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastTickTime</b> {}</td></tr>
+<tr class="separator:a5002ab38571c777dc3330cb38ff78357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fc527623e09ce195fc4ed44c039653b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fc527623e09ce195fc4ed44c039653b"></a>
+<a class="el" href="class_a_z_1_1_component_application.html#ac02b4b982e15b4894f00190c9f81b45c">RecordMetricsCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_recordMetricsOnTickCallback</b></td></tr>
+<tr class="separator:a1fc527623e09ce195fc4ed44c039653b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a9bd9a819354aaa6fb7012bc96fadedca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bd9a819354aaa6fb7012bc96fadedca"></a>
+typedef <a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a>, <a class="el" href="class_a_z_1_1_entity.html">Entity</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySetType</b></td></tr>
+<tr class="separator:a9bd9a819354aaa6fb7012bc96fadedca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A main class that can be used directly or as a base to start a component based application. It will provide all the proper bootstrap and entity bookkeeping functionality.</p>
 <p>IMPORTANT: If you use this as a base class you must follow one rule. You can't add data that will allocate memory on construction. This is because the memory managers are NOT yet ready. They will be initialized during the Create call. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ac02b4b982e15b4894f00190c9f81b45c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_a_z_1_1_component_application.html#ac02b4b982e15b4894f00190c9f81b45c">AZ::ComponentApplication::RecordMetricsCallback</a> =  <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt;bool(AZStd::chrono::steady_clock::time_point)&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Callback function for determining whether a call to record metrics in the <a class="el" href="class_a_z_1_1_component_application.html#ab509b447671e365d7595c7bfa0329255">Tick()</a> member function functionshould take place </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currentMonotonicTime</td><td>- The monotonic tick time of the application since launch </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true to indicate a record event operation should occur in the current <a class="el" href="class_a_z_1_1_component_application.html#ab509b447671e365d7595c7bfa0329255">Tick()</a> call </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ab17aca98bf79d1b422e8464df590d731"></a>
 <div class="memitem">
 <div class="memproto">
@@ -345,6 +564,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a3426557bf7f28c2d69d731071b46f53a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ComponentApplication::RegisterCoreComponents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This is the function that will be called instantly after the memory manager is created. This is where we should register all core component factories that will participate in the loading of the bootstrap file or all factories in general. When you create your own application this is where you should FIRST call <a class="el" href="class_a_z_1_1_component_application.html#a3426557bf7f28c2d69d731071b46f53a">ComponentApplication::RegisterCoreComponents</a> and then register the application specific core components. </p>
+
+</div>
+</div>
 <a class="anchor" id="a6487e5fa089e4372626191f7e51dcb15"></a>
 <div class="memitem">
 <div class="memproto">
@@ -367,6 +610,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 <p>ResolveModulePath is called whenever LoadDynamicModule wants to resolve a module in order to actually load it. You can override this if you need to load modules from a different path or hijack module loading in some other way. If you do, ensure that you use platform-specific conventions to do so, as this is called by multiple platforms. The default implantation prepends the path to the executable to the module path, but you can override this behavior (Call the base class if you want this behavior to persist in overrides) </p>
+
+</div>
+</div>
+<a class="anchor" id="a9532f86ac72a7d2cdf1d502f5a418d1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ComponentApplication::SetSettingsRegistrySpecializations </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">SettingsRegistryInterface::Specializations</a> &amp;&#160;</td>
+          <td class="paramname"><em>specializations</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the specializations that will be used when loading the Settings Registry. Extend this in derived application classes to specialize settings for those applications. </p>
 
 </div>
 </div>
@@ -424,7 +692,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

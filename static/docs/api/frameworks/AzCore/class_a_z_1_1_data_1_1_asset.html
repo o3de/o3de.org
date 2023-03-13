@@ -54,6 +54,10 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_data_1_1_asset-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -181,6 +185,50 @@ template&lt;class U &gt; </td></tr>
 <tr class="memitem:a18f9260e4a3bc8f6a3608a5764b5ddad"><td class="memTemplParams" colspan="2">template&lt;class StringType &gt; </td></tr>
 <tr class="memitem:a18f9260e4a3bc8f6a3608a5764b5ddad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset.html#a18f9260e4a3bc8f6a3608a5764b5ddad">ToString</a> (StringType &amp;result) const </td></tr>
 <tr class="separator:a18f9260e4a3bc8f6a3608a5764b5ddad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a108c69a7a33c4ab5dc2f0b67e3187415"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a108c69a7a33c4ab5dc2f0b67e3187415"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetData</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> *assetData)</td></tr>
+<tr class="separator:a108c69a7a33c4ab5dc2f0b67e3187415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747a35c13cb98b184602085d873d4d32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a747a35c13cb98b184602085d873d4d32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a> &amp;rhs)</td></tr>
+<tr class="separator:a747a35c13cb98b184602085d873d4d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a72138cc995077454a95aae5dc4dc2b2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72138cc995077454a95aae5dc4dc2b2c"></a>
+<a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AssetId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset.html#a72138cc995077454a95aae5dc4dc2b2c">m_assetId</a></td></tr>
+<tr class="memdesc:a72138cc995077454a95aae5dc4dc2b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of asset the pointer currently references. QueueLoad will acquire/load the actual asset. <br/></td></tr>
+<tr class="separator:a72138cc995077454a95aae5dc4dc2b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6badae2e3983c29899422956b1d518db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6badae2e3983c29899422956b1d518db"></a>
+<a class="el" href="struct_a_z_1_1_uuid.html">AssetType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset.html#a6badae2e3983c29899422956b1d518db">m_assetType</a></td></tr>
+<tr class="memdesc:a6badae2e3983c29899422956b1d518db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referenced asset type. <br/></td></tr>
+<tr class="separator:a6badae2e3983c29899422956b1d518db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace741a9657a1d43561a827131240cd9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace741a9657a1d43561a827131240cd9c"></a>
+<a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset.html#ace741a9657a1d43561a827131240cd9c">m_assetData</a> = nullptr</td></tr>
+<tr class="memdesc:ace741a9657a1d43561a827131240cd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the asset data, it's always present when we have bound an asset (it doesn't have to be loaded) <br/></td></tr>
+<tr class="separator:ace741a9657a1d43561a827131240cd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada4be9ff11abd64bd40c6dfb3ff9bed0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada4be9ff11abd64bd40c6dfb3ff9bed0"></a>
+AssetLoadBehavior&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset.html#ada4be9ff11abd64bd40c6dfb3ff9bed0">m_loadBehavior</a></td></tr>
+<tr class="memdesc:ada4be9ff11abd64bd40c6dfb3ff9bed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load behavior for the asset reference. <br/></td></tr>
+<tr class="separator:ada4be9ff11abd64bd40c6dfb3ff9bed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37913eb733c3f7eca71f9a5f4581f0e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37913eb733c3f7eca71f9a5f4581f0e9"></a>
+<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset.html#a37913eb733c3f7eca71f9a5f4581f0e9">m_assetHint</a></td></tr>
+<tr class="memdesc:a37913eb733c3f7eca71f9a5f4581f0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last known path to the asset m_assetId refers to. <br/></td></tr>
+<tr class="separator:a37913eb733c3f7eca71f9a5f4581f0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ac877ecda9a381c715ca0856542865dfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac877ecda9a381c715ca0856542865dfe"></a>
+typedef <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ThisType</b></td></tr>
+<tr class="separator:ac877ecda9a381c715ca0856542865dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a87330ee4f297e2fab80738dcc030fced"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87330ee4f297e2fab80738dcc030fced"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a> &amp;asset)</td></tr>
+<tr class="separator:a87330ee4f297e2fab80738dcc030fced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -562,7 +610,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

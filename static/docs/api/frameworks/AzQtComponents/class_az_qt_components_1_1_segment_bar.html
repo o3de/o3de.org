@@ -53,7 +53,10 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_segment_bar-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::SegmentBar Class Reference</div>  </div>
@@ -185,6 +188,18 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memdesc:af9c70664410e403e87179d1fddb6d21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the icon size. <br/></td></tr>
 <tr class="separator:af9c70664410e403e87179d1fddb6d21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad4ba90d4c36439fd724ac995a26c964d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4ba90d4c36439fd724ac995a26c964d"></a>
+virtual QAbstractButton *&#160;</td><td class="memItemRight" valign="bottom"><b>createButton</b> (const QIcon &amp;icon, const QString &amp;text)</td></tr>
+<tr class="separator:ad4ba90d4c36439fd724ac995a26c964d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15697293252b2185cab398166a8ff4a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15697293252b2185cab398166a8ff4a2"></a>
+QAbstractButton *&#160;</td><td class="memItemRight" valign="bottom"><b>button</b> (int index) const </td></tr>
+<tr class="separator:a15697293252b2185cab398166a8ff4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12952e61743db6c2b8595a573e5b64e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12952e61743db6c2b8595a573e5b64e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTabs</b> ()</td></tr>
+<tr class="separator:a12952e61743db6c2b8595a573e5b64e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aea30699951251493e479d066c954ab6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea30699951251493e479d066c954ab6f"></a>
@@ -203,6 +218,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_segment_bar.html#ac395081fe8ec0cc8b19e8485c65165b0">iconSize</a></td></tr>
 <tr class="memdesc:ac395081fe8ec0cc8b19e8485c65165b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the icons in the <a class="el" href="class_az_qt_components_1_1_segment_bar.html" title="A control used to switch between different sections of associated information. ">SegmentBar</a>. <br/></td></tr>
 <tr class="separator:ac395081fe8ec0cc8b19e8485c65165b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3b845669d308cd569a36d4b523c13a53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b845669d308cd569a36d4b523c13a53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (Qt::Orientation <a class="el" href="class_az_qt_components_1_1_segment_bar.html#aea30699951251493e479d066c954ab6f">orientation</a>)</td></tr>
+<tr class="separator:a3b845669d308cd569a36d4b523c13a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae8ff6274a040863add073e7ef2a15709"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8ff6274a040863add073e7ef2a15709"></a>
+QBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_alignmentLayout</b></td></tr>
+<tr class="separator:ae8ff6274a040863add073e7ef2a15709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9df63f4a031d51b4128a35f03ed99c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9df63f4a031d51b4128a35f03ed99c7"></a>
+QBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_buttonsLayout</b></td></tr>
+<tr class="separator:af9df63f4a031d51b4128a35f03ed99c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38670fcb1830280d27d6d3fb3972911b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38670fcb1830280d27d6d3fb3972911b"></a>
+QButtonGroup *&#160;</td><td class="memItemRight" valign="bottom"><b>m_buttons</b></td></tr>
+<tr class="separator:a38670fcb1830280d27d6d3fb3972911b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1aeb427dabaa22c1dcc0d37fda97ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a1aeb427dabaa22c1dcc0d37fda97ab"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>m_iconSize</b></td></tr>
+<tr class="separator:a3a1aeb427dabaa22c1dcc0d37fda97ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f746027a4fed1a9ec1fcc8cdf7e5c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f746027a4fed1a9ec1fcc8cdf7e5c2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumTabSize</b></td></tr>
+<tr class="separator:a72f746027a4fed1a9ec1fcc8cdf7e5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A control used to switch between different sections of associated information. </p>
@@ -257,7 +296,7 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,9 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_z_std-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ZStd Class Reference</div>  </div>
@@ -119,6 +122,45 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Compress</b> 
 <tr class="memitem:aee38ae55d773211b9d9a1f2b11aa199f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee38ae55d773211b9d9a1f2b11aa199f"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Decompress</b> (const void *compressedData, unsigned int compressedDataSize, void *outputData, unsigned int outputDataSize, size_t *sizeOfNextBlock)</td></tr>
 <tr class="separator:aee38ae55d773211b9d9a1f2b11aa199f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a97494c5fe6d8ae4fc103ad46d39802ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97494c5fe6d8ae4fc103ad46d39802ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupDecompressHeader</b> (<a class="el" href="class_a_z_1_1_z_std.html#ae5d92d1f4ebd6b502e9004965056c084">Header</a> header)</td></tr>
+<tr class="separator:a97494c5fe6d8ae4fc103ad46d39802ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a7e1c1d81330e2d095d8fe1045d831110"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e1c1d81330e2d095d8fe1045d831110"></a>
+static void *&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateMem</b> (void *userData, size_t size)</td></tr>
+<tr class="separator:a7e1c1d81330e2d095d8fe1045d831110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f8666f12cfb32069ca3dfa86f9dc51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03f8666f12cfb32069ca3dfa86f9dc51"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>FreeMem</b> (void *userData, void *address)</td></tr>
+<tr class="separator:a03f8666f12cfb32069ca3dfa86f9dc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a64b5cb4f41edb4d93e61495c0e07395c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64b5cb4f41edb4d93e61495c0e07395c"></a>
+ZSTD_CStream *&#160;</td><td class="memItemRight" valign="bottom"><b>m_streamCompression</b></td></tr>
+<tr class="separator:a64b5cb4f41edb4d93e61495c0e07395c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e37bd18ce9334b93b734725d8ae25a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86e37bd18ce9334b93b734725d8ae25a"></a>
+ZSTD_DStream *&#160;</td><td class="memItemRight" valign="bottom"><b>m_streamDecompression</b></td></tr>
+<tr class="separator:a86e37bd18ce9334b93b734725d8ae25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d513ddd9e8eab65e5ba5d2e1850666"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17d513ddd9e8eab65e5ba5d2e1850666"></a>
+<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_workMemoryAllocator</b></td></tr>
+<tr class="separator:a17d513ddd9e8eab65e5ba5d2e1850666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05fe9c65db1226c7124170c46e396c5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05fe9c65db1226c7124170c46e396c5e"></a>
+ZSTD_inBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>m_inBuffer</b></td></tr>
+<tr class="separator:a05fe9c65db1226c7124170c46e396c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1cdeddbc64dcae8c7366bd2bd26448"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e1cdeddbc64dcae8c7366bd2bd26448"></a>
+ZSTD_outBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>m_outBuffer</b></td></tr>
+<tr class="separator:a9e1cdeddbc64dcae8c7366bd2bd26448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d6f8e0be9523c754609392133afc37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30d6f8e0be9523c754609392133afc37"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_nextBlockSize</b></td></tr>
+<tr class="separator:a30d6f8e0be9523c754609392133afc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda1b6b7889d0dc941733f80d2141158"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afda1b6b7889d0dc941733f80d2141158"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_compressedBufferIndex</b></td></tr>
+<tr class="separator:afda1b6b7889d0dc941733f80d2141158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Compression/zstd_compression.h</li>
@@ -126,7 +168,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Decompress</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

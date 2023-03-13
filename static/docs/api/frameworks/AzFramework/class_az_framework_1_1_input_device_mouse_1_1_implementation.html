@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_mouse_1_1_implementation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceMouse::Implementation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -102,10 +104,77 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aeaa03405bd2c4b758f2044715ae2880c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html">Implementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#aeaa03405bd2c4b758f2044715ae2880c">Create</a> (<a class="el" href="class_az_framework_1_1_input_device_mouse.html">InputDeviceMouse</a> &amp;inputDevice)</td></tr>
 <tr class="separator:aeaa03405bd2c4b758f2044715ae2880c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a24a31c4873949dc84764006277bd8d95"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a24a31c4873949dc84764006277bd8d95">RawButtonEventQueueByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, AZStd::vector&lt; bool &gt;&gt;</td></tr>
+<tr class="separator:a24a31c4873949dc84764006277bd8d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018e5231221d4d5405581e1fce7a4ab1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a018e5231221d4d5405581e1fce7a4ab1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RawMovementEventQueueByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, AZStd::vector&lt; float &gt;&gt;</td></tr>
+<tr class="separator:a018e5231221d4d5405581e1fce7a4ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa6562f56e8af7bd42f358e84cf347d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#aa6562f56e8af7bd42f358e84cf347d8c">QueueRawButtonEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;inputChannelId, bool rawButtonState)</td></tr>
+<tr class="separator:aa6562f56e8af7bd42f358e84cf347d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea979d61431d12e59d99bba0352b3540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#aea979d61431d12e59d99bba0352b3540">QueueRawMovementEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;inputChannelId, float rawMovementDelta)</td></tr>
+<tr class="separator:aea979d61431d12e59d99bba0352b3540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab305db681416835e0ae04ea596ffc84f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#ab305db681416835e0ae04ea596ffc84f">ProcessRawEventQueues</a> ()</td></tr>
+<tr class="separator:ab305db681416835e0ae04ea596ffc84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535139d40c2f4d8519568d34811d041e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a535139d40c2f4d8519568d34811d041e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a535139d40c2f4d8519568d34811d041e">ResetInputChannelStates</a> ()</td></tr>
+<tr class="memdesc:a535139d40c2f4d8519568d34811d041e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
+<tr class="separator:a535139d40c2f4d8519568d34811d041e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a74d07ae4257a702672de2ac31061fd0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74d07ae4257a702672de2ac31061fd0a"></a>
+<a class="el" href="class_az_framework_1_1_input_device_mouse.html">InputDeviceMouse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a74d07ae4257a702672de2ac31061fd0a">m_inputDevice</a></td></tr>
+<tr class="memdesc:a74d07ae4257a702672de2ac31061fd0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the device. <br/></td></tr>
+<tr class="separator:a74d07ae4257a702672de2ac31061fd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ef03e7f5fa1b03964d4f0612707b45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12ef03e7f5fa1b03964d4f0612707b45"></a>
+AZStd::sys_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a12ef03e7f5fa1b03964d4f0612707b45">m_rawMovementSampleRate</a></td></tr>
+<tr class="memdesc:a12ef03e7f5fa1b03964d4f0612707b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw movement sample rate. <br/></td></tr>
+<tr class="separator:a12ef03e7f5fa1b03964d4f0612707b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcad4f5edc8e6f98eb5b9a9f54c9d85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefcad4f5edc8e6f98eb5b9a9f54c9d85"></a>
+<a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a24a31c4873949dc84764006277bd8d95">RawButtonEventQueueByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#aefcad4f5edc8e6f98eb5b9a9f54c9d85">m_rawButtonEventQueuesById</a></td></tr>
+<tr class="memdesc:aefcad4f5edc8e6f98eb5b9a9f54c9d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw button events by id. <br/></td></tr>
+<tr class="separator:aefcad4f5edc8e6f98eb5b9a9f54c9d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33700be148757811e61375e9ecc7f34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa33700be148757811e61375e9ecc7f34"></a>
+RawMovementEventQueueByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#aa33700be148757811e61375e9ecc7f34">m_rawMovementEventQueuesById</a></td></tr>
+<tr class="memdesc:aa33700be148757811e61375e9ecc7f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw movement events by id. <br/></td></tr>
+<tr class="separator:aa33700be148757811e61375e9ecc7f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc733354acba0729793b6b0c75040278"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc733354acba0729793b6b0c75040278"></a>
+AZStd::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#acc733354acba0729793b6b0c75040278">m_timeOfLastRawMovementSample</a></td></tr>
+<tr class="memdesc:acc733354acba0729793b6b0c75040278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time of the last raw movement sample. <br/></td></tr>
+<tr class="separator:acc733354acba0729793b6b0c75040278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for platform specific implementations of mouse input devices. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a24a31c4873949dc84764006277bd8d95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a24a31c4873949dc84764006277bd8d95">AzFramework::InputDeviceMouse::Implementation::RawButtonEventQueueByIdMap</a> =  AZStd::unordered_map&lt;<a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, AZStd::vector&lt;bool&gt;&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Alias for verbose container class </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9d5164e64f0c381770f21b1dd615eac8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -184,6 +253,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Get the current system cursor position normalized relative to the active window. The position obtained has had os ballistics applied, and is valid regardless of whether the system cursor is hidden or visible. When the cursor has been constrained to the active window the values will be in the [0.0, 1.0] range, but not when unconstrained. See also <a class="el" href="class_az_framework_1_1_input_system_cursor_requests.html#ab1bf71cdc85ca95e40a2e93d6103d147">InputSystemCursorRequests::SetSystemCursorState</a> and GetSystemCursorState. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current system cursor position normalized relative to the active window </dd></dl>
 
+<p>Implemented in <a class="el" href="class_az_framework_1_1_xcb_input_device_mouse.html#a326fb38a129d4be1909e197efa3536b6">AzFramework::XcbInputDeviceMouse</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3c90218e7fb763b06fad92ff9410182b"></a>
@@ -209,6 +280,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Get the current state of the system cursor </p>
 <dl class="section return"><dt>Returns</dt><dd>The current state of the system cursor </dd></dl>
 
+<p>Implemented in <a class="el" href="class_az_framework_1_1_xcb_input_device_mouse.html#a584251e751898ebb52f39c8636655351">AzFramework::XcbInputDeviceMouse</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a66265af753a277cde7e4db0ca19b5293"></a>
@@ -233,6 +306,116 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Query the connected state of the input device </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the input device is currently connected, false otherwise </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_framework_1_1_xcb_input_device_mouse.html#a36842381ae82d1763ba42c84095885ee">AzFramework::XcbInputDeviceMouse</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab305db681416835e0ae04ea596ffc84f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::InputDeviceMouse::Implementation::ProcessRawEventQueues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Process raw input events that have been queued since the last call to this function. This function is not thread safe, and so should only be called from the main thread. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6562f56e8af7bd42f358e84cf347d8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::InputDeviceMouse::Implementation::QueueRawButtonEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputChannelId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rawButtonState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Queue raw button events to be processed in the next call to ProcessRawEventQueues. This function is not thread safe and so should only be called from the main thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputChannelId</td><td>The input channel id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawButtonState</td><td>The raw button state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aea979d61431d12e59d99bba0352b3540"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::InputDeviceMouse::Implementation::QueueRawMovementEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputChannelId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rawMovementDelta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Queue raw movement events to be processed in the next call to ProcessRawEventQueues. This function is not thread safe and so should only be called from the main thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputChannelId</td><td>The input channel id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawMovementDelta</td><td>The raw movement delta </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -288,6 +471,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="class_az_framework_1_1_xcb_input_device_mouse.html#a4d74852b338ed0413f4a3697852e6562">AzFramework::XcbInputDeviceMouse</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abb412c361c8e5959475fe1cac18efa9d"></a>
@@ -319,6 +504,8 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="class_az_framework_1_1_xcb_input_device_mouse.html#ae9fb2b4141212e56bb338dc4a67c2501">AzFramework::XcbInputDeviceMouse</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -327,7 +514,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

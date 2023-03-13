@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_stream_stack_entry-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::StreamStackEntry Class Reference</div>  </div>
@@ -101,6 +102,22 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:addd1900209c97840ae43d19cdce667f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af84afcf4ac999b94e62a0ec896ae47ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#af84afcf4ac999b94e62a0ec896ae47ee">CollectStatistics</a> (<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_statistic.html">Statistic</a> &gt; &amp;statistics) const </td></tr>
 <tr class="separator:af84afcf4ac999b94e62a0ec896ae47ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a1b380a8ce0080b376ffc8c7dc03641ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b380a8ce0080b376ffc8c7dc03641ac"></a>
+<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a1b380a8ce0080b376ffc8c7dc03641ac">m_name</a></td></tr>
+<tr class="memdesc:a1b380a8ce0080b376ffc8c7dc03641ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name that uniquely identifies this entry. <br/></td></tr>
+<tr class="separator:a1b380a8ce0080b376ffc8c7dc03641ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfeb135e5629127cdc15a346d51aa2dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfeb135e5629127cdc15a346d51aa2dd"></a>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">StreamStackEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#adfeb135e5629127cdc15a346d51aa2dd">m_next</a></td></tr>
+<tr class="memdesc:adfeb135e5629127cdc15a346d51aa2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next entry in the stack. <br/></td></tr>
+<tr class="separator:adfeb135e5629127cdc15a346d51aa2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174d09b6e0ceba3059c234ab15801853"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a174d09b6e0ceba3059c234ab15801853"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a174d09b6e0ceba3059c234ab15801853">m_context</a></td></tr>
+<tr class="memdesc:a174d09b6e0ceba3059c234ab15801853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context information for the entire streaming stack. <br/></td></tr>
+<tr class="separator:a174d09b6e0ceba3059c234ab15801853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The StreamStack is a stack of elements that serve a specific file <a class="el" href="namespace_a_z_1_1_i_o.html" title="PathView implementation. ">IO</a> function such collecting information from a file, cache read data, decompressing data, etc. The basic functionality tries perform its task and if it fails pass the request to the next entry in the stack. For instance if a request isn't cached it passes the request to the next entry which might read it from disk instead. </p>
@@ -328,7 +345,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

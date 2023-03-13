@@ -54,7 +54,11 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_browse_edit-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -177,12 +181,48 @@ static <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html
 <tr class="memitem:a19d6b958e98ebf587c54d81868f60ba7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_browse_edit.html#a19d6b958e98ebf587c54d81868f60ba7">removeDropTargetStyle</a> (<a class="el" href="class_az_qt_components_1_1_browse_edit.html">BrowseEdit</a> *browseEdit)</td></tr>
 <tr class="separator:a19d6b958e98ebf587c54d81868f60ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a20d6f53e27298d37bc24eff6f25c3ef6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20d6f53e27298d37bc24eff6f25c3ef6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="separator:a20d6f53e27298d37bc24eff6f25c3ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa2ce03b3223320f69f1e7c2fc9f9af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fa2ce03b3223320f69f1e7c2fc9f9af"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>event</b> (QEvent *event) override</td></tr>
+<tr class="separator:a4fa2ce03b3223320f69f1e7c2fc9f9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f291b0306a8ec04dfbaf5f9b473639"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78f291b0306a8ec04dfbaf5f9b473639"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setHasAcceptableInput</b> (bool acceptable)</td></tr>
+<tr class="separator:a78f291b0306a8ec04dfbaf5f9b473639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a8b2d2c76b46bce52f1e0d5612761ff3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b2d2c76b46bce52f1e0d5612761ff3c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_browse_edit.html#a8b2d2c76b46bce52f1e0d5612761ff3c">acceptableInput</a></td></tr>
 <tr class="memdesc:a8b2d2c76b46bce52f1e0d5612761ff3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only value indicating whether or not user input satisfies the inputMask condition and any validator. Default value is true. <br/></td></tr>
 <tr class="separator:a8b2d2c76b46bce52f1e0d5612761ff3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a32aeca95f9fdd48ad8a2e80c995c645b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32aeca95f9fdd48ad8a2e80c995c645b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onTextChanged</b> (const QString &amp;<a class="el" href="class_az_qt_components_1_1_browse_edit.html#ad09c2d3c083a851fcf6733a2f85ab802">text</a>)</td></tr>
+<tr class="separator:a32aeca95f9fdd48ad8a2e80c995c645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a41e49d0e5f7b01ca70e592e3927994dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41e49d0e5f7b01ca70e592e3927994dd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) QScopedPointer&lt; InternalData &gt; m_data</td></tr>
+<tr class="separator:a41e49d0e5f7b01ca70e592e3927994dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ac7f883f8e8103194c0f3f98ae6d2f7bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7f883f8e8103194c0f3f98ae6d2f7bd"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>polish</b> (<a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">LineEdit::Config</a> &amp;lineEditConfig)</td></tr>
+<tr class="separator:ac7f883f8e8103194c0f3f98ae6d2f7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc3ec6e247988f2e95cdc7c97a19747"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dc3ec6e247988f2e95cdc7c97a19747"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>unpolish</b> (<a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">LineEdit::Config</a> &amp;lineEditConfig)</td></tr>
+<tr class="separator:a4dc3ec6e247988f2e95cdc7c97a19747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2382cd34a2660d20d20b6ebfc4fdc425"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2382cd34a2660d20d20b6ebfc4fdc425"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawFrame</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOption *option, QPainter *painter, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a2382cd34a2660d20d20b6ebfc4fdc425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -388,7 +428,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Style</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

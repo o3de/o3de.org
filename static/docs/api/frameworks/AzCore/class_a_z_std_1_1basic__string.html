@@ -58,6 +58,10 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="class_a_z_std_1_1basic__string-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::basic_string&lt; Element, Traits, Allocator &gt; Class Template Reference</div>  </div>
@@ -69,6 +73,16 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>_Format_Internal</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1basic__string_1_1_allocated_string_data.html">AllocatedStringData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">dynamically allocated data  <a href="struct_a_z_std_1_1basic__string_1_1_allocated_string_data.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1basic__string_1_1_pointer_aligned_data.html">PointerAlignedData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1basic__string_1_1_short_string_data.html">ShortStringData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">small buffer used for small string optimization  <a href="struct_a_z_std_1_1basic__string_1_1_short_string_data.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_a_z_std_1_1basic__string_1_1_storage.html">Storage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -569,6 +583,39 @@ Static Public Attributes</h2></td></tr>
 static constexpr size_type&#160;</td><td class="memItemRight" valign="bottom"><b>npos</b> = size_type(-1)</td></tr>
 <tr class="separator:ae5080214041c59927a5c4dd41c94bb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a6b53e8594fec85c36216a93dfe87fadc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a6b53e8594fec85c36216a93dfe87fadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0a94ddeb74a390ef5ad79cd227564e35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a94ddeb74a390ef5ad79cd227564e35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> (size_type newSize, size_type oldLength)</td></tr>
+<tr class="separator:a0a94ddeb74a390ef5ad79cd227564e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e8055ac27eccbdf061f66b227ce662"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19e8055ac27eccbdf061f66b227ce662"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>grow</b> (size_type newSize)</td></tr>
+<tr class="separator:a19e8055ac27eccbdf061f66b227ce662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7bc3a5f2a7150b082bd3ab77c4b48f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d7bc3a5f2a7150b082bd3ab77c4b48f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fits_in_capacity</b> (size_type newSize)</td></tr>
+<tr class="separator:a4d7bc3a5f2a7150b082bd3ab77c4b48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3f24da30f46a02d73783286c3d68f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e3f24da30f46a02d73783286c3d68f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deallocate_memory</b> (pointer <a class="el" href="class_a_z_std_1_1basic__string.html#a287d764cf9d13a4a3f866804c9360654">data</a>, size_type expandedSize)</td></tr>
+<tr class="separator:a1e3f24da30f46a02d73783286c3d68f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a699cb0a84c8819b6aec74e2415f455a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a699cb0a84c8819b6aec74e2415f455a5"></a>
+<a class="el" href="class_a_z_std_1_1compressed__pair.html">AZStd::compressed_pair</a><br class="typebreak"/>
+&lt; <a class="el" href="union_a_z_std_1_1basic__string_1_1_storage.html">Storage</a>, allocator_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_storage</b></td></tr>
+<tr class="separator:a699cb0a84c8819b6aec74e2415f455a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a6355e58d94cfdd5b77de7a2b9573de2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6355e58d94cfdd5b77de7a2b9573de2a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b> = <a class="el" href="class_a_z_std_1_1basic__string.html">basic_string</a>&lt; Element, Traits, Allocator &gt;</td></tr>
+<tr class="separator:a6355e58d94cfdd5b77de7a2b9573de2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Extensions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp5e2f5f3c24ae8c6ab3eca618826b0e23"></a><a class="anchor" id="StringExtensions"></a></p>
@@ -736,7 +783,7 @@ template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_ran
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:43 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:01 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterator-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -95,6 +96,23 @@ constexpr <a class="el" href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterato
 constexpr <a class="el" href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
 <tr class="separator:a78b9189813d2a2174e1d2a7b495cfafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a71015bd3289ed1f6be40327edc3d182c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71015bd3289ed1f6be40327edc3d182c"></a>
+<a class="el" href="class_a_z_std_1_1ranges_1_1split__view.html">split_view</a>&lt; View, Pattern &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterator.html#a71015bd3289ed1f6be40327edc3d182c">m_parent</a> {}</td></tr>
+<tr class="memdesc:a71015bd3289ed1f6be40327edc3d182c"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to parent <a class="el" href="class_a_z_std_1_1ranges_1_1split__view.html">split_view</a> <br/></td></tr>
+<tr class="separator:a71015bd3289ed1f6be40327edc3d182c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7f544a7fbfa8d7695311691c75de20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc7f544a7fbfa8d7695311691c75de20"></a>
+iterator_t&lt; View &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterator.html#abc7f544a7fbfa8d7695311691c75de20">m_current</a> {}</td></tr>
+<tr class="memdesc:abc7f544a7fbfa8d7695311691c75de20"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterator of the current split content of the view <br/></td></tr>
+<tr class="separator:abc7f544a7fbfa8d7695311691c75de20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966395733eed85ac41778e1e33bda38c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a966395733eed85ac41778e1e33bda38c"></a>
+<a class="el" href="class_a_z_std_1_1ranges_1_1subrange.html">subrange</a>&lt; iterator_t&lt; View &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterator.html#a966395733eed85ac41778e1e33bda38c">m_next</a> {}</td></tr>
+<tr class="memdesc:a966395733eed85ac41778e1e33bda38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next subrange within the view that matches the pattern. <br/></td></tr>
+<tr class="separator:a966395733eed85ac41778e1e33bda38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a8cd7a34049380d82e3846ba6b9899"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterator.html#a34a8cd7a34049380d82e3846ba6b9899">m_trailing_empty</a> {}</td></tr>
+<tr class="separator:a34a8cd7a34049380d82e3846ba6b9899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a8ce2577bf4d60810072585ea0a4845c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ce2577bf4d60810072585ea0a4845c2"></a>
@@ -104,13 +122,37 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==<
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterator.html">iterator</a> &amp;y, const <a class="el" href="struct_a_z_std_1_1ranges_1_1split__view_1_1iterator.html">iterator</a> &amp;x)</td></tr>
 <tr class="separator:a2b3cf5c2d4e7c5bd399f297030b6b3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a34a8cd7a34049380d82e3846ba6b9899"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class View, class Pattern, class  = enable_if_t&lt;conjunction_v&lt;        bool_constant&lt;forward_range&lt;View&gt;&gt;,        bool_constant&lt;forward_range&lt;Pattern&gt;&gt;,        bool_constant&lt;view&lt;View&gt;&gt;,        bool_constant&lt;view&lt;Pattern&gt;&gt;,        bool_constant&lt;indirectly_comparable&lt;iterator_t&lt;View&gt;, iterator_t&lt;Pattern&gt;, ranges::equal_to&gt;&gt;        &gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_a_z_std_1_1ranges_1_1split__view.html">AZStd::ranges::split_view</a>&lt; View, Pattern, class &gt;::iterator::m_trailing_empty {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set to true to indicate an iterator pointing to the empty after the last pattern if the pattern is at the end of the view For a View="a,b,c," and Pattern=",", the last iterator will point to the empty element after the last comma. This iteator will not match the sentinel iterator to allow users to know between the end of the View and an empty element after the last pattern </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/split_view.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

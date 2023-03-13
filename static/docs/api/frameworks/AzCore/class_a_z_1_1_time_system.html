@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_time_system-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::TimeSystem Class Reference</div>  </div>
@@ -133,6 +134,34 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa59797f0083f591137e9648efa41c0a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa59797f0083f591137e9648efa41c0a7"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (<a class="el" href="class_a_z_1_1_reflect_context.html">AZ::ReflectContext</a> *context)</td></tr>
 <tr class="separator:aa59797f0083f591137e9648efa41c0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8c15d38fded9c31100900bbabddfa64f"><td class="memItemLeft" align="right" valign="top">TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_time_system.html#a8c15d38fded9c31100900bbabddfa64f">m_lastInvokedTimeUs</a> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="separator:a8c15d38fded9c31100900bbabddfa64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19c21569282872a28516228d38a55af"><td class="memItemLeft" align="right" valign="top">TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_time_system.html#aa19c21569282872a28516228d38a55af">m_accumulatedTimeUs</a> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="separator:aa19c21569282872a28516228d38a55af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00236feae49c4df9e6adfdf798babfe8"><td class="memItemLeft" align="right" valign="top">TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_time_system.html#a00236feae49c4df9e6adfdf798babfe8">m_realLastInvokedTimeUs</a> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="separator:a00236feae49c4df9e6adfdf798babfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc04be7a2beb2d89b5148206a94726d"><td class="memItemLeft" align="right" valign="top">TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_time_system.html#a5fc04be7a2beb2d89b5148206a94726d">m_realAccumulatedTimeUs</a> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="separator:a5fc04be7a2beb2d89b5148206a94726d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d787d77226332e2eea0ffb012ab439a"><td class="memItemLeft" align="right" valign="top">TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_time_system.html#a6d787d77226332e2eea0ffb012ab439a">m_simulationTickDeltaTimeUs</a> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="separator:a6d787d77226332e2eea0ffb012ab439a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3427a31703518e767b49e88268cdaf"><td class="memItemLeft" align="right" valign="top">TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_time_system.html#a2e3427a31703518e767b49e88268cdaf">m_realTickDeltaTimeUs</a> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="separator:a2e3427a31703518e767b49e88268cdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050810a6587dbe47b7046bb7579b1edf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a050810a6587dbe47b7046bb7579b1edf"></a>
+TimeUs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_time_system.html#a050810a6587dbe47b7046bb7579b1edf">m_lastSimulationTickTimeUs</a> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="memdesc:a050810a6587dbe47b7046bb7579b1edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to determine the game tick delta time. <br/></td></tr>
+<tr class="separator:a050810a6587dbe47b7046bb7579b1edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0d262199647cd292ef9701c87f46b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e0d262199647cd292ef9701c87f46b5"></a>
+TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>m_simulationTickDeltaOverride</b> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="separator:a2e0d262199647cd292ef9701c87f46b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779aad11c64d8f34e57e1db29dc90b6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a779aad11c64d8f34e57e1db29dc90b6f"></a>
+TimeUs&#160;</td><td class="memItemRight" valign="bottom"><b>m_simulationTickLimitTimeUs</b> = AZ::Time::ZeroTimeUs</td></tr>
+<tr class="separator:a779aad11c64d8f34e57e1db29dc90b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea47187dce4b90a9df3dbae3755a6cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ea47187dce4b90a9df3dbae3755a6cd"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_simulationTickLimitRate</b> = 0</td></tr>
+<tr class="separator:a8ea47187dce4b90a9df3dbae3755a6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the <a class="el" href="class_a_z_1_1_i_time.html" title="This is an AZ::Interface&lt;&gt; for managing time related operations. AZ::ITime and associated types may n...">ITime</a> system interface. </p>
@@ -195,13 +224,140 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (<
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa19c21569282872a28516228d38a55af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeUs AZ::TimeSystem::m_accumulatedTimeUs = AZ::Time::ZeroTimeUs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Accumulates the delta time of GetElapsedTimeMs/TimeUs() calls. Mutable to allow GetElapsedTimeMs/TimeUs() to be a const functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c15d38fded9c31100900bbabddfa64f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeUs AZ::TimeSystem::m_lastInvokedTimeUs = AZ::Time::ZeroTimeUs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Used to calculate the delta time between calls to GetElapsedTimeMs/TimeUs(). Mutable to allow GetElapsedTimeMs/TimeUs() to be a const functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5fc04be7a2beb2d89b5148206a94726d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeUs AZ::TimeSystem::m_realAccumulatedTimeUs = AZ::Time::ZeroTimeUs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Accumulates the delta time of GetRealElapsedTimeMs/TimeUs() calls. Mutable to allow GetRealElapsedTimeMs/TimeUs() to be a const functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="a00236feae49c4df9e6adfdf798babfe8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeUs AZ::TimeSystem::m_realLastInvokedTimeUs = AZ::Time::ZeroTimeUs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Used to calculate the delta time between calls to GetRealElapsedTimeMs/TimeUs(). Mutable to allow GetRealElapsedTimeMs/TimeUs() to be a const functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e3427a31703518e767b49e88268cdaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeUs AZ::TimeSystem::m_realTickDeltaTimeUs = AZ::Time::ZeroTimeUs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The current real tick delta time. Will not be affected by time system cvars. Updated in <a class="el" href="class_a_z_1_1_time_system.html#a8822868d2e59b4e15a52f377cb968647">AdvanceTickDeltaTimes()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6d787d77226332e2eea0ffb012ab439a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeUs AZ::TimeSystem::m_simulationTickDeltaTimeUs = AZ::Time::ZeroTimeUs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The current game tick delta time. Can be affected by time system cvars. Updated in <a class="el" href="class_a_z_1_1_time_system.html#a8822868d2e59b4e15a52f377cb968647">AdvanceTickDeltaTimes()</a>. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Time/TimeSystem.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

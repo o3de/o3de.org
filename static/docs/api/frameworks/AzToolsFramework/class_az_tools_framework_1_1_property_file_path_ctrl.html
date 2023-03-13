@@ -55,6 +55,8 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_property_file_path_ctrl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::PropertyFilePathCtrl Class Reference</div>  </div>
@@ -94,6 +96,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFilter</b> (const 
 <tr class="memitem:ae34792f249cc4618cfc02b4da82c031f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae34792f249cc4618cfc02b4da82c031f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultFileName</b> (AZ::IO::Path fileName)</td></tr>
 <tr class="separator:ae34792f249cc4618cfc02b4da82c031f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aadbf2cdefeab55565f003a6955b5ce88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadbf2cdefeab55565f003a6955b5ce88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnOpenButtonClicked</b> ()</td></tr>
+<tr class="separator:aadbf2cdefeab55565f003a6955b5ce88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d73ca3ebd5d0875f09d9dc484ef4371"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d73ca3ebd5d0875f09d9dc484ef4371"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>GetPreselectedFilePath</b> () const </td></tr>
+<tr class="separator:a2d73ca3ebd5d0875f09d9dc484ef4371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413f9c6d69f9fbca369b0277c4241b5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a413f9c6d69f9fbca369b0277c4241b5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleNewFilePathSelected</b> (const QString &amp;newFilePath)</td></tr>
+<tr class="separator:a413f9c6d69f9fbca369b0277c4241b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1afc05ccb081ecb22e981cb1bcd20ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1afc05ccb081ecb22e981cb1bcd20ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClearButtonClicked</b> ()</td></tr>
+<tr class="separator:ab1afc05ccb081ecb22e981cb1bcd20ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad2d2ab13375fa0e6363a125236003a73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2d2ab13375fa0e6363a125236003a73"></a>
+AzQtComponents::BrowseEdit *&#160;</td><td class="memItemRight" valign="bottom"><b>m_browseEdit</b> = nullptr</td></tr>
+<tr class="separator:ad2d2ab13375fa0e6363a125236003a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8bd1f3242cdec15acca39217b99d22f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8bd1f3242cdec15acca39217b99d22f"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentFilePath</b></td></tr>
+<tr class="separator:af8bd1f3242cdec15acca39217b99d22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f585d95fc9970b19a8a27640ccf45f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57f585d95fc9970b19a8a27640ccf45f"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_filter</b></td></tr>
+<tr class="separator:a57f585d95fc9970b19a8a27640ccf45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bed92dea1de17e9ddb42258224a79f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bed92dea1de17e9ddb42258224a79f2"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultFileName</b></td></tr>
+<tr class="separator:a6bed92dea1de17e9ddb42258224a79f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A control for representing an AZ::IO::Path field with a BrowseEdit whose popup button triggers a native file dialog. </p>
@@ -103,7 +135,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultFileName</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

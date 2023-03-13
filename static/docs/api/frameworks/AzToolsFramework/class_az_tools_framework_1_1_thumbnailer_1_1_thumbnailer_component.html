@@ -55,6 +55,7 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Thumbnailer::ThumbnailerComponent Class Reference</div>  </div>
@@ -63,6 +64,11 @@
 
 <p>Inherits Component, Handler, and QObject.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component_1_1_provider_compare.html">ProviderCompare</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a51ca5b42e4920bad1d0d87b6ba79d73e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51ca5b42e4920bad1d0d87b6ba79d73e"></a>
@@ -98,6 +104,31 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <tr class="memitem:afd18de841c75f4aa13f6d2e5e1b916ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd18de841c75f4aa13f6d2e5e1b916ec"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
 <tr class="separator:afd18de841c75f4aa13f6d2e5e1b916ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7779959c64a28cba306fcba4434c05a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7779959c64a28cba306fcba4434c05a9"></a>
+AZStd::multiset<br class="typebreak"/>
+&lt; SharedThumbnailProvider, <br class="typebreak"/>
+<a class="el" href="struct_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component_1_1_provider_compare.html">ProviderCompare</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component.html#a7779959c64a28cba306fcba4434c05a9">m_providers</a></td></tr>
+<tr class="memdesc:a7779959c64a28cba306fcba4434c05a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of thumbnail caches provided by this context. <br/></td></tr>
+<tr class="separator:a7779959c64a28cba306fcba4434c05a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232ecf0e871db37ce4ebb2d0ad7ad5c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a232ecf0e871db37ce4ebb2d0ad7ad5c0"></a>
+SharedThumbnail&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component.html#a232ecf0e871db37ce4ebb2d0ad7ad5c0">m_missingThumbnail</a></td></tr>
+<tr class="memdesc:a232ecf0e871db37ce4ebb2d0ad7ad5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default missing thumbnail used when no thumbnail for given key can be found within this context. <br/></td></tr>
+<tr class="separator:a232ecf0e871db37ce4ebb2d0ad7ad5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30728526a405c6137d38fb0fedd60b24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30728526a405c6137d38fb0fedd60b24"></a>
+SharedThumbnail&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component.html#a30728526a405c6137d38fb0fedd60b24">m_loadingThumbnail</a></td></tr>
+<tr class="memdesc:a30728526a405c6137d38fb0fedd60b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default loading thumbnail used when thumbnail is found by is not yet generated. <br/></td></tr>
+<tr class="separator:a30728526a405c6137d38fb0fedd60b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6171d31cfb5b14b9695294b3f521b106"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6171d31cfb5b14b9695294b3f521b106"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component.html#a6171d31cfb5b14b9695294b3f521b106">m_maxThumbnailJobs</a> { 64 }</td></tr>
+<tr class="memdesc:a6171d31cfb5b14b9695294b3f521b106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of concurrent jobs allowed. <br/></td></tr>
+<tr class="separator:a6171d31cfb5b14b9695294b3f521b106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b4f58035f96f7c45986ea50e419add"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79b4f58035f96f7c45986ea50e419add"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnailer_component.html#a79b4f58035f96f7c45986ea50e419add">m_currentJobsCount</a></td></tr>
+<tr class="memdesc:a79b4f58035f96f7c45986ea50e419add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current number of jobs running. <br/></td></tr>
+<tr class="separator:a79b4f58035f96f7c45986ea50e419add"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Thumbnails/ThumbnailerComponent.h</li>
@@ -105,7 +136,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

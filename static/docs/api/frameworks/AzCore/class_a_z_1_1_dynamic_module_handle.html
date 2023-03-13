@@ -55,6 +55,9 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_dynamic_module_handle-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DynamicModuleHandle Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -92,6 +95,39 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d510f51d16ede752e7c17617ae3bf17"><td class="memItemLeft" align="right" valign="top">static AZStd::unique_ptr<br class="typebreak"/>
 &lt; <a class="el" href="class_a_z_1_1_dynamic_module_handle.html">DynamicModuleHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_dynamic_module_handle.html#a2d510f51d16ede752e7c17617ae3bf17">Create</a> (const char *fullFileName)</td></tr>
 <tr class="separator:a2d510f51d16ede752e7c17617ae3bf17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a8d28c5036569e9b04059b3313309e1bf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>LoadStatus</b> { <b>LoadSuccess</b>, 
+<b>LoadFailure</b>, 
+<b>AlreadyLoaded</b>
+ }</td></tr>
+<tr class="separator:a8d28c5036569e9b04059b3313309e1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aee9a2577ddf273dc70208b2b0bf52f4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee9a2577ddf273dc70208b2b0bf52f4a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicModuleHandle</b> (const char *fileFullName)</td></tr>
+<tr class="separator:aee9a2577ddf273dc70208b2b0bf52f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f09fc6d10008973f9934d56ef3bc27a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f09fc6d10008973f9934d56ef3bc27a"></a>
+virtual LoadStatus&#160;</td><td class="memItemRight" valign="bottom"><b>LoadModule</b> ()=0</td></tr>
+<tr class="separator:a8f09fc6d10008973f9934d56ef3bc27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0513eb53a848edb8e2b211d20c331a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d0513eb53a848edb8e2b211d20c331a"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>UnloadModule</b> ()=0</td></tr>
+<tr class="separator:a5d0513eb53a848edb8e2b211d20c331a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3135c32adc624c9f9859e91187c8af9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3135c32adc624c9f9859e91187c8af9a"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunctionAddress</b> (const char *functionName) const =0</td></tr>
+<tr class="separator:a3135c32adc624c9f9859e91187c8af9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac00829b7cd70c518e2b892ad14b31bdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac00829b7cd70c518e2b892ad14b31bdc"></a>
+<a class="el" href="namespace_a_z_1_1_i_o.html#a5ddbcc991821148574f0a4605cffe1a8">AZ::IO::FixedMaxPathString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_dynamic_module_handle.html#ac00829b7cd70c518e2b892ad14b31bdc">m_fileName</a></td></tr>
+<tr class="memdesc:ac00829b7cd70c518e2b892ad14b31bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store the module name for future loads. <br/></td></tr>
+<tr class="separator:ac00829b7cd70c518e2b892ad14b31bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719e1347b4b356ff983d7163c7f7892d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a719e1347b4b356ff983d7163c7f7892d"></a>
+<a class="el" href="class_a_z_1_1_environment_variable.html">AZ::EnvironmentVariable</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_initialized</b></td></tr>
+<tr class="separator:a719e1347b4b356ff983d7163c7f7892d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles platform-specific interaction with dynamic modules (aka DLLs, aka dynamic link libraries, aka shared libraries). </p>
@@ -243,7 +279,7 @@ template&lt;typename Function &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

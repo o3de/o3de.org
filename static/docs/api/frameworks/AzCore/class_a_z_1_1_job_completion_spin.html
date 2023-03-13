@@ -54,6 +54,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_job_completion_spin-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::JobCompletionSpin Class Reference</div>  </div>
@@ -117,6 +119,48 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementDependentCou
 <tr class="memitem:a8476d5a99988eb0fa182eabacbaf7a90 inherit pub_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8476d5a99988eb0fa182eabacbaf7a90"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DecrementDependentCount</b> ()</td></tr>
 <tr class="separator:a8476d5a99988eb0fa182eabacbaf7a90 inherit pub_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a880a1b2e8bd603b25295c0931cb40d07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a880a1b2e8bd603b25295c0931cb40d07"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_job_completion_spin.html#a880a1b2e8bd603b25295c0931cb40d07">Process</a> ()</td></tr>
+<tr class="memdesc:a880a1b2e8bd603b25295c0931cb40d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to implement your processing. <br/></td></tr>
+<tr class="separator:a880a1b2e8bd603b25295c0931cb40d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a></td></tr>
+<tr class="memitem:afa201bd36df483c17d618f091ac95998 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa201bd36df483c17d618f091ac95998"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StoreDependent</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *job)</td></tr>
+<tr class="separator:afa201bd36df483c17d618f091ac95998 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1e05fb1cd2b0f9974e36374cff4d55 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa1e05fb1cd2b0f9974e36374cff4d55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDependentChild</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *dependent)</td></tr>
+<tr class="separator:afa1e05fb1cd2b0f9974e36374cff4d55 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90bfa93fcc94bf71ffc82f87a9d9775 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af90bfa93fcc94bf71ffc82f87a9d9775"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementDependentCountAndSetChildFlag</b> ()</td></tr>
+<tr class="separator:af90bfa93fcc94bf71ffc82f87a9d9775 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a38b26c6d4dae66ef188833985fa0e inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3a38b26c6d4dae66ef188833985fa0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDependentCountAndFlags</b> (unsigned int countAndFlags)</td></tr>
+<tr class="separator:ae3a38b26c6d4dae66ef188833985fa0e inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d61cc2c624b3c718c2e305be07c783 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8d61cc2c624b3c718c2e305be07c783"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentCountAndFlags</b> () const </td></tr>
+<tr class="separator:ae8d61cc2c624b3c718c2e305be07c783 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a6f15464f74f2100c4c99b60f0fc99089"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f15464f74f2100c4c99b60f0fc99089"></a>
+<a class="el" href="class_a_z_std_1_1spin__mutex.html">AZStd::spin_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="separator:a6f15464f74f2100c4c99b60f0fc99089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a></td></tr>
+<tr class="memitem:aef3ea768ec0276fb23becd81edd123c9 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef3ea768ec0276fb23becd81edd123c9"></a>
+<a class="el" href="class_a_z_1_1_job_context.html">JobContext</a> *volatile&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
+<tr class="separator:aef3ea768ec0276fb23becd81edd123c9 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bccfddce5120d5f45124d0742b09466 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bccfddce5120d5f45124d0742b09466"></a>
+AZStd::atomic&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependentCountAndFlags</b></td></tr>
+<tr class="separator:a1bccfddce5120d5f45124d0742b09466 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e223188312d37c27e0e1dadced4f73 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6e223188312d37c27e0e1dadced4f73"></a>
+AZStd::atomic&lt; <a class="el" href="class_a_z_1_1_job.html">Job</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependent</b></td></tr>
+<tr class="separator:ab6e223188312d37c27e0e1dadced4f73 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad717202a1d9f76d564a8a0d16266d172 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad717202a1d9f76d564a8a0d16266d172"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_state</b></td></tr>
+<tr class="separator:ad717202a1d9f76d564a8a0d16266d172 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -192,7 +236,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,8 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_entity_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorEntityModel Class Reference</div>  </div>
@@ -63,6 +65,11 @@
 
 <p>Inherits Handler, Handler, Handler, MultiHandler, Handler, Handler, Handler, Handler, Handler, Handler, Handler, MultiHandler, and Handler.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_model_1_1_editor_entity_model_entry.html">EditorEntityModelEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a74b7ce9f02a6d73c46483a4147b6e12e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCompositionAction</b> { <b>Add</b>, 
@@ -170,6 +177,90 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddToChildrenWithOver
 <tr class="memitem:a7caaa84a99d61307e18795c4c15599ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7caaa84a99d61307e18795c4c15599ae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFromChildrenWithOverrides</b> (const EntityIdList &amp;parentEntityIds, const AZ::EntityId &amp;entityId) override</td></tr>
 <tr class="separator:a7caaa84a99d61307e18795c4c15599ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a829dca223bb0d8a19d4b5faaa1a84f9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a829dca223bb0d8a19d4b5faaa1a84f9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
+<tr class="separator:a829dca223bb0d8a19d4b5faaa1a84f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a77db0a976204b8fee96569bc4ad3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22a77db0a976204b8fee96569bc4ad3a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessQueuedEntityAdds</b> ()</td></tr>
+<tr class="separator:a22a77db0a976204b8fee96569bc4ad3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1381df22a1bacbd196bf7b162ce5c729"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1381df22a1bacbd196bf7b162ce5c729"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearQueuedEntityAdds</b> ()</td></tr>
+<tr class="separator:a1381df22a1bacbd196bf7b162ce5c729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2ebcae234f9db4670ca56a71555c59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b2ebcae234f9db4670ca56a71555c59"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntity</b> (AZ::EntityId entityId)</td></tr>
+<tr class="separator:a4b2ebcae234f9db4670ca56a71555c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72756b0b4d236df185024adb151f4717"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72756b0b4d236df185024adb151f4717"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveEntity</b> (AZ::EntityId entityId)</td></tr>
+<tr class="separator:a72756b0b4d236df185024adb151f4717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc032978026a2867c762916b76eda4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbc032978026a2867c762916b76eda4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddChildToParent</b> (AZ::EntityId parentId, AZ::EntityId childId)</td></tr>
+<tr class="separator:adbc032978026a2867c762916b76eda4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac051bd9fd32b69caabdfbac730738abd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac051bd9fd32b69caabdfbac730738abd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveChildFromParent</b> (AZ::EntityId parentId, AZ::EntityId childId)</td></tr>
+<tr class="separator:ac051bd9fd32b69caabdfbac730738abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12ef4495a4e3e732fa4f8c17008d3f31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12ef4495a4e3e732fa4f8c17008d3f31"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFromAncestorCyclicDependencyList</b> (const AZ::EntityId &amp;parentId, const AZ::EntityId &amp;entityId)</td></tr>
+<tr class="separator:a12ef4495a4e3e732fa4f8c17008d3f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94fb2b0b9b8fe1473c2e9eab9f1ce9f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94fb2b0b9b8fe1473c2e9eab9f1ce9f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReparentChild</b> (AZ::EntityId entityId, AZ::EntityId newParentId, AZ::EntityId oldParentId)</td></tr>
+<tr class="separator:a94fb2b0b9b8fe1473c2e9eab9f1ce9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a4c3a06ad17695fdad75213f13c4ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1a4c3a06ad17695fdad75213f13c4ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSliceInfoHierarchy</b> (AZ::EntityId entityId)</td></tr>
+<tr class="separator:ac1a4c3a06ad17695fdad75213f13c4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0063455f2e185e28fb55a376536909c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0063455f2e185e28fb55a376536909c4"></a>
+<a class="el" href="class_az_tools_framework_1_1_editor_entity_model_1_1_editor_entity_model_entry.html">EditorEntityModelEntry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInfo</b> (const AZ::EntityId &amp;entityId)</td></tr>
+<tr class="separator:a0063455f2e185e28fb55a376536909c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0a8e032f474de6a34a95784e6a36cfae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a8e032f474de6a34a95784e6a36cfae"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZ::EntityId, <br class="typebreak"/>
+<a class="el" href="class_az_tools_framework_1_1_editor_entity_model_1_1_editor_entity_model_entry.html">EditorEntityModelEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityInfoTable</b></td></tr>
+<tr class="separator:a0a8e032f474de6a34a95784e6a36cfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a1ac942d8072e3301e947f8bce332e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8a1ac942d8072e3301e947f8bce332e"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZ::EntityId, <br class="typebreak"/>
+AZStd::unordered_set<br class="typebreak"/>
+&lt; AZ::EntityId &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityOrphanTable</b></td></tr>
+<tr class="separator:ae8a1ac942d8072e3301e947f8bce332e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0448141c95d99b6998c8e53faf1649"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a0448141c95d99b6998c8e53faf1649"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZ::EntityId, AZStd::pair<br class="typebreak"/>
+&lt; AZ::EntityId, AZ::u64 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_savedOrderInfo</b></td></tr>
+<tr class="separator:a6a0448141c95d99b6998c8e53faf1649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df1dc34d24bf576393d7f71cce16958"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df1dc34d24bf576393d7f71cce16958"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_enableChildReorderHandler</b> = true</td></tr>
+<tr class="separator:a5df1dc34d24bf576393d7f71cce16958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9338012f50431bdf0e78222e3e0110"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b9338012f50431bdf0e78222e3e0110"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_forceAddToBack</b> = false</td></tr>
+<tr class="separator:a7b9338012f50431bdf0e78222e3e0110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1acb7f385c580d94568a39528bde12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f1acb7f385c580d94568a39528bde12"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_preparingForContextReset</b> = false</td></tr>
+<tr class="separator:a7f1acb7f385c580d94568a39528bde12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af564821d67861b9d0175f88705b059c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af564821d67861b9d0175f88705b059c3"></a>
+AZStd::unordered_set<br class="typebreak"/>
+&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_queuedEntityAdds</b></td></tr>
+<tr class="separator:af564821d67861b9d0175f88705b059c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af893d63bb3a6761886b2d648177ff5f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af893d63bb3a6761886b2d648177ff5f9"></a>
+AZStd::unordered_set<br class="typebreak"/>
+&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_queuedEntityAddsNotYetActivated</b></td></tr>
+<tr class="separator:af893d63bb3a6761886b2d648177ff5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a884b65662e33c0a5c7c2b37c88d700ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a884b65662e33c0a5c7c2b37c88d700ba"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_postInstantiateBeforeEntity</b></td></tr>
+<tr class="separator:a884b65662e33c0a5c7c2b37c88d700ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7782dd3b2e7d50d488af3c6914cdd7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7782dd3b2e7d50d488af3c6914cdd7d"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_postInstantiateSliceParent</b></td></tr>
+<tr class="separator:aa7782dd3b2e7d50d488af3c6914cdd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d68da33e99d1c8078903ee1f41e540"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7d68da33e99d1c8078903ee1f41e540"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_gotInstantiateSliceDetails</b> = false</td></tr>
+<tr class="separator:ae7d68da33e99d1c8078903ee1f41e540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b28a8e2e4ecc294bc48d039c99dc46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5b28a8e2e4ecc294bc48d039c99dc46"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isPrefabPropagationInProgress</b> = false</td></tr>
+<tr class="separator:ab5b28a8e2e4ecc294bc48d039c99dc46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Entity/EditorEntityModel.h</li>
@@ -177,7 +268,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFromChildrenWit
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

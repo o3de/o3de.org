@@ -56,6 +56,7 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_physics_1_1_material_asset-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Physics::MaterialAsset Class Reference</div>  </div>
@@ -109,6 +110,17 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:abde6df90ae309dfa3739d469e4175323"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abde6df90ae309dfa3739d469e4175323"></a>
 static constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>AssetSubId</b> = 1</td></tr>
 <tr class="separator:abde6df90ae309dfa3739d469e4175323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9c07985b926133e538042b35fe57adb9"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_asset.html#a9c07985b926133e538042b35fe57adb9">m_materialType</a></td></tr>
+<tr class="separator:a9c07985b926133e538042b35fe57adb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1712f64020ff56076596a5153c4bb133"><td class="memItemLeft" align="right" valign="top">AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_asset.html#a1712f64020ff56076596a5153c4bb133">m_version</a> = 0</td></tr>
+<tr class="separator:a1712f64020ff56076596a5153c4bb133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b34a1885962ae023350286524326e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39b34a1885962ae023350286524326e2"></a>
+MaterialProperties&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_asset.html#a39b34a1885962ae023350286524326e2">m_materialProperties</a></td></tr>
+<tr class="memdesc:a39b34a1885962ae023350286524326e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of material properties. <br/></td></tr>
+<tr class="separator:a39b34a1885962ae023350286524326e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_physics_1_1_material_asset.html">MaterialAsset</a> defines a single material, which includes all the properties to create a <a class="el" href="class_physics_1_1_material.html" title="Runtime Physics material instance. ">Material</a> instance to use at runtime. This physics material asset is generic and independent from the physics backend used. </p>
@@ -146,13 +158,56 @@ static constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>A
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9c07985b926133e538042b35fe57adb9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::string Physics::MaterialAsset::m_materialType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>String that identifies the type of the material. Each physics backend must provide a different one. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1712f64020ff56076596a5153c4bb133"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::u32 Physics::MaterialAsset::m_version = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Version number of the material. Used to identify changes in the properties. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Physics/Material/PhysicsMaterialAsset.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

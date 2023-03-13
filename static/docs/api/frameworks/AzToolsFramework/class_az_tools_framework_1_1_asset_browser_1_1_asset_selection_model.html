@@ -54,6 +54,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetSelectionModel Class Reference</div>  </div>
@@ -148,16 +149,65 @@ static <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_
 <tr class="memitem:a94070390dc4875a6b476b5bf70015192"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94070390dc4875a6b476b5bf70015192"></a>
 static <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model.html">AssetSelectionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EverythingSelection</b> (bool multiselect=false)</td></tr>
 <tr class="separator:a94070390dc4875a6b476b5bf70015192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a56f72b09bb4ae81085b11d6e9c7ea730"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56f72b09bb4ae81085b11d6e9c7ea730"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_multiselect</b></td></tr>
+<tr class="separator:a56f72b09bb4ae81085b11d6e9c7ea730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d0c5fc7bd8fbb4b89ddaf5454301fae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d0c5fc7bd8fbb4b89ddaf5454301fae"></a>
+FilterConstType&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectionFilter</b></td></tr>
+<tr class="separator:a4d0c5fc7bd8fbb4b89ddaf5454301fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0936f5aac612068e1fe1b134ed977927"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0936f5aac612068e1fe1b134ed977927"></a>
+FilterConstType&#160;</td><td class="memItemRight" valign="bottom"><b>m_displayFilter</b></td></tr>
+<tr class="separator:a0936f5aac612068e1fe1b134ed977927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c7c91e4c0fca21538a5292c4685d74"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; AZ::Data::AssetId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_selection_model.html#ac7c7c91e4c0fca21538a5292c4685d74">m_selectedAssetIds</a></td></tr>
+<tr class="separator:ac7c7c91e4c0fca21538a5292c4685d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea56c4d941ce1ff66d095059e0ec2fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ea56c4d941ce1ff66d095059e0ec2fa"></a>
+AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectedFilePaths</b></td></tr>
+<tr class="separator:a7ea56c4d941ce1ff66d095059e0ec2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff084802b6f1590bdefbe4c6b682eb52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff084802b6f1590bdefbe4c6b682eb52"></a>
+AZStd::vector&lt; const <br class="typebreak"/>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_results</b></td></tr>
+<tr class="separator:aff084802b6f1590bdefbe4c6b682eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5322ecb32c7ad1d636461aba4c9617c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5322ecb32c7ad1d636461aba4c9617c9"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultDirectory</b></td></tr>
+<tr class="separator:a5322ecb32c7ad1d636461aba4c9617c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf7ed78a39bfc2f30f2675b25f7a9a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cf7ed78a39bfc2f30f2675b25f7a9a7"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_title</b></td></tr>
+<tr class="separator:a7cf7ed78a39bfc2f30f2675b25f7a9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Used in combination with Asset Browser Picker to configure selection settings and store selection results. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac7c7c91e4c0fca21538a5292c4685d74"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::vector&lt;AZ::Data::AssetId&gt; AzToolsFramework::AssetBrowser::AssetSelectionModel::m_selectedAssetIds</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Selection can be based on asset ids (for products), or file paths (for sources) These are mututally exclusive </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/AssetBrowser/AssetSelectionModel.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

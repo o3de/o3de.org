@@ -51,6 +51,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_networking_1_1_udp_network_interface-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -65,6 +67,11 @@
 
 <p>Inherits <a class="el" href="class_az_networking_1_1_i_network_interface.html">AzNetworking::INetworkInterface</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_udp_network_interface_1_1_removed_connection.html">RemovedConnection</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a70757ce5e7a9fdcabc7e1182be40c137"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a70757ce5e7a9fdcabc7e1182be40c137">UdpNetworkInterface</a> (const AZ::Name &amp;name, <a class="el" href="class_az_networking_1_1_i_connection_listener.html">IConnectionListener</a> &amp;connectionListener, TrustZone trustZone, <a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a> &amp;readerThread)</td></tr>
@@ -116,6 +123,76 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a0580964809e5ee84acb05b12299123a6 inherit pub_methods_class_az_networking_1_1_i_network_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a959b6130ad3d34c2f3fc7aae7e0d78 inherit pub_methods_class_az_networking_1_1_i_network_interface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html">NetworkInterfaceMetrics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#a4a959b6130ad3d34c2f3fc7aae7e0d78">GetMetrics</a> ()</td></tr>
 <tr class="separator:a4a959b6130ad3d34c2f3fc7aae7e0d78 inherit pub_methods_class_az_networking_1_1_i_network_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a37eb2cf0a6940133fd3d346bc2e9a5cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a37eb2cf0a6940133fd3d346bc2e9a5cf">RegisterWithTimeoutQueue</a> (ConnectionId connectionId, PacketId packetId, ReliabilityType reliability, const <a class="el" href="struct_az_networking_1_1_connection_metrics.html">ConnectionMetrics</a> &amp;metrics)</td></tr>
+<tr class="separator:a37eb2cf0a6940133fd3d346bc2e9a5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469a678d5c95cfddb64d20acd2ca0980"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a469a678d5c95cfddb64d20acd2ca0980">DecompressPacket</a> (const uint8_t *packetBuffer, size_t packetSize, <a class="el" href="class_az_networking_1_1_byte_buffer.html">UdpPacketEncodingBuffer</a> &amp;packetBufferOut) const </td></tr>
+<tr class="separator:a469a678d5c95cfddb64d20acd2ca0980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2f52313a19925eba0b41e0bddb856c"><td class="memItemLeft" align="right" valign="top">PacketId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a7e2f52313a19925eba0b41e0bddb856c">SendPacket</a> (<a class="el" href="class_az_networking_1_1_udp_connection.html">UdpConnection</a> &amp;connection, const <a class="el" href="class_az_networking_1_1_i_packet.html">IPacket</a> &amp;packet, SequenceId reliableSequence)</td></tr>
+<tr class="separator:a7e2f52313a19925eba0b41e0bddb856c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a315e018458592198a0ee38ed154e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#ad2a315e018458592198a0ee38ed154e5">AcceptConnection</a> (const <a class="el" href="struct_az_networking_1_1_udp_reader_thread_1_1_received_packet.html">UdpReaderThread::ReceivedPacket</a> &amp;connectPacket)</td></tr>
+<tr class="separator:ad2a315e018458592198a0ee38ed154e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ed57e365e02c5359d33e7a8017120e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a61ed57e365e02c5359d33e7a8017120e">RequestDisconnect</a> (<a class="el" href="class_az_networking_1_1_udp_connection.html">UdpConnection</a> *connection, DisconnectReason reason, TerminationEndpoint endpoint)</td></tr>
+<tr class="separator:a61ed57e365e02c5359d33e7a8017120e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba657462070ecee3a63ff02e7c7ca9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a4ba657462070ecee3a63ff02e7c7ca9e">IsHandshakePacket</a> (const <a class="el" href="class_az_networking_1_1_dtls_endpoint.html">DtlsEndpoint</a> &amp;endpoint, AzNetworking::PacketType packetType) const </td></tr>
+<tr class="separator:a4ba657462070ecee3a63ff02e7c7ca9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f832a74e4b985e8b1d67dcd953f7e5"><td class="memItemLeft" align="right" valign="top">TimeoutResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#ac1f832a74e4b985e8b1d67dcd953f7e5">HandleConnectionTimeout</a> (<a class="el" href="struct_az_networking_1_1_timeout_queue_1_1_timeout_item.html">TimeoutQueue::TimeoutItem</a> &amp;item)</td></tr>
+<tr class="separator:ac1f832a74e4b985e8b1d67dcd953f7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30295c44bd155239270f8df99602d662"><td class="memItemLeft" align="right" valign="top">TimeoutResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_network_interface.html#a30295c44bd155239270f8df99602d662">HandlePacketTimeout</a> (<a class="el" href="struct_az_networking_1_1_timeout_queue_1_1_timeout_item.html">TimeoutQueue::TimeoutItem</a> &amp;item)</td></tr>
+<tr class="separator:a30295c44bd155239270f8df99602d662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93276f891cb40ff6209df65855d44e20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93276f891cb40ff6209df65855d44e20"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_networking_1_1_udp_network_interface.html">UdpNetworkInterface</a>)</td></tr>
+<tr class="separator:a93276f891cb40ff6209df65855d44e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a17b93c41f1578eade8b6537060de8aa9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17b93c41f1578eade8b6537060de8aa9"></a>
+AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:a17b93c41f1578eade8b6537060de8aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadad582c41104d481512b5f09b73861a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadad582c41104d481512b5f09b73861a"></a>
+TrustZone&#160;</td><td class="memItemRight" valign="bottom"><b>m_trustZone</b></td></tr>
+<tr class="separator:aadad582c41104d481512b5f09b73861a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bed16727b172b71468e3f3bf28a851"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9bed16727b172b71468e3f3bf28a851"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_port</b> = 0</td></tr>
+<tr class="separator:af9bed16727b172b71468e3f3bf28a851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12340a37058d687631c14b0e6c415974"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12340a37058d687631c14b0e6c415974"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_allowIncomingConnections</b> = false</td></tr>
+<tr class="separator:a12340a37058d687631c14b0e6c415974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4c2bf7cf6c6b2c5550ec32c82268dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b4c2bf7cf6c6b2c5550ec32c82268dc"></a>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeoutMs</b> = AZ::Time::ZeroTimeMs</td></tr>
+<tr class="separator:a9b4c2bf7cf6c6b2c5550ec32c82268dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9800fd16a2831758e3c08f02cc15045d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9800fd16a2831758e3c08f02cc15045d"></a>
+<a class="el" href="class_az_networking_1_1_i_connection_listener.html">IConnectionListener</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionListener</b></td></tr>
+<tr class="separator:a9800fd16a2831758e3c08f02cc15045d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1e3cf6778ade58f5f3f5635e9663f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e1e3cf6778ade58f5f3f5635e9663f4"></a>
+<a class="el" href="class_az_networking_1_1_udp_connection_set.html">UdpConnectionSet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionSet</b></td></tr>
+<tr class="separator:a6e1e3cf6778ade58f5f3f5635e9663f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff90f50025e7d4490fd3d413956662a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff90f50025e7d4490fd3d413956662a6"></a>
+<a class="el" href="class_az_networking_1_1_timeout_queue.html">TimeoutQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionTimeoutQueue</b></td></tr>
+<tr class="separator:aff90f50025e7d4490fd3d413956662a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8228853b7226787bc24fa640eb21026"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8228853b7226787bc24fa640eb21026"></a>
+<a class="el" href="class_az_networking_1_1_timeout_queue.html">TimeoutQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_packetTimeoutQueue</b></td></tr>
+<tr class="separator:ae8228853b7226787bc24fa640eb21026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275c5b12f2eebdc58354045320820757"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a275c5b12f2eebdc58354045320820757"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_az_networking_1_1_udp_socket.html">UdpSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_socket</b></td></tr>
+<tr class="separator:a275c5b12f2eebdc58354045320820757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e1112a073f3c08b7c640e02faa3b16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07e1112a073f3c08b7c640e02faa3b16"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_az_networking_1_1_i_compressor.html">ICompressor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_compressor</b></td></tr>
+<tr class="separator:a07e1112a073f3c08b7c640e02faa3b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7285352ed6255e56ccdc8b71dcd12670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7285352ed6255e56ccdc8b71dcd12670"></a>
+<a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readerThread</b></td></tr>
+<tr class="separator:a7285352ed6255e56ccdc8b71dcd12670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfedc2649e32c24e787e0e6fc6a1abc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfedc2649e32c24e787e0e6fc6a1abc9"></a>
+AZStd::vector&lt; <a class="el" href="struct_az_networking_1_1_udp_network_interface_1_1_removed_connection.html">RemovedConnection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_removedConnections</b></td></tr>
+<tr class="separator:adfedc2649e32c24e787e0e6fc6a1abc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0698d437bc0a4ca83ba1dc727ed3a389"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0698d437bc0a4ca83ba1dc727ed3a389"></a>
+<a class="el" href="class_az_networking_1_1_byte_buffer.html">UdpPacketEncodingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_decryptBuffer</b></td></tr>
+<tr class="separator:a0698d437bc0a4ca83ba1dc727ed3a389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4d908f3a665d85b4213a5f01457f1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef4d908f3a665d85b4213a5f01457f1c"></a>
+<a class="el" href="class_az_networking_1_1_byte_buffer.html">UdpPacketEncodingBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressBuffer</b></td></tr>
+<tr class="separator:aef4d908f3a665d85b4213a5f01457f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -199,6 +276,37 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad2a315e018458592198a0ee38ed154e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzNetworking::UdpNetworkInterface::AcceptConnection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_az_networking_1_1_udp_reader_thread_1_1_received_packet.html">UdpReaderThread::ReceivedPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>connectPacket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Accepts an incoming udp connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectPacket</td><td>the initial connectPacket </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab9beb6b36f8a5d053673673ca6bf80f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -241,6 +349,56 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
 <dl class="section return"><dt>Returns</dt><dd>the connectionId of the new connection, or InvalidConnectionId if the operation failed </dd></dl>
 
 <p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a4cb0d8ffaaade7b30dd1f4dd0f847ca1">AzNetworking::INetworkInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a469a678d5c95cfddb64d20acd2ca0980"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzNetworking::UdpNetworkInterface::DecompressPacket </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>packetBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>packetSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_az_networking_1_1_byte_buffer.html">UdpPacketEncodingBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>packetBufferOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Decompresses an incoming packet data buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">packetBuffer</td><td>the compressed packet buffer to decode </td></tr>
+    <tr><td class="paramname">packetSize</td><td>the size of the compressed packet buffer </td></tr>
+    <tr><td class="paramname">packetBufferOut</td><td>the decoded data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean true on success, false on failure </dd></dl>
 
 </div>
 </div>
@@ -477,6 +635,70 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
 
 </div>
 </div>
+<a class="anchor" id="ac1f832a74e4b985e8b1d67dcd953f7e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeoutResult AzNetworking::UdpNetworkInterface::HandleConnectionTimeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_az_networking_1_1_timeout_queue_1_1_timeout_item.html">TimeoutQueue::TimeoutItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Internal helper to manage connection timeout behaviour. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>the timeout item corresponding to the timed out connection </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether to delete or persist the timeout item </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a30295c44bd155239270f8df99602d662"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeoutResult AzNetworking::UdpNetworkInterface::HandlePacketTimeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_az_networking_1_1_timeout_queue_1_1_timeout_item.html">TimeoutQueue::TimeoutItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Internal helper to manage packet timeout behaviour. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>the timeout item corresponding to the timed out packet </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether to delete or persist the timeout item </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac7ac07081080dd028f7909d6d2755798"></a>
 <div class="memitem">
 <div class="memproto">
@@ -501,6 +723,49 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
 <dl class="section return"><dt>Returns</dt><dd>boolean true if communciations are encrypted, false if not </dd></dl>
 
 <p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#a3fcd0150dc45fa0254a04da683f7e5ab">AzNetworking::INetworkInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4ba657462070ecee3a63ff02e7c7ca9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzNetworking::UdpNetworkInterface::IsHandshakePacket </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_networking_1_1_dtls_endpoint.html">DtlsEndpoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AzNetworking::PacketType&#160;</td>
+          <td class="paramname"><em>packetType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Internal helper to check if a packet's type is for connection handshake. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>DTLS endpoint participating in the handshake </td></tr>
+    <tr><td class="paramname">packetType</td><td>type of the packet </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if the packet is for handshake </dd></dl>
 
 </div>
 </div>
@@ -562,6 +827,161 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
 <dl class="section return"><dt>Returns</dt><dd>boolean true if the operation was successful, false if it failed </dd></dl>
 
 <p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#ad7f204197493c4bd7c1d11263523a19a">AzNetworking::INetworkInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a37eb2cf0a6940133fd3d346bc2e9a5cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzNetworking::UdpNetworkInterface::RegisterWithTimeoutQueue </td>
+          <td>(</td>
+          <td class="paramtype">ConnectionId&#160;</td>
+          <td class="paramname"><em>connectionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PacketId&#160;</td>
+          <td class="paramname"><em>packetId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReliabilityType&#160;</td>
+          <td class="paramname"><em>reliability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_az_networking_1_1_connection_metrics.html">ConnectionMetrics</a> &amp;&#160;</td>
+          <td class="paramname"><em>metrics</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Registers a packet with a timeout queue on the provided connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectionId</td><td>identifier of the connection to register </td></tr>
+    <tr><td class="paramname">packetId</td><td>packet id of the packet to register for the given connection </td></tr>
+    <tr><td class="paramname">reliability</td><td>whether or not to guarantee delivery </td></tr>
+    <tr><td class="paramname">metrics</td><td>reference to the connections metrics instance </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a61ed57e365e02c5359d33e7a8017120e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzNetworking::UdpNetworkInterface::RequestDisconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_networking_1_1_udp_connection.html">UdpConnection</a> *&#160;</td>
+          <td class="paramname"><em>connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DisconnectReason&#160;</td>
+          <td class="paramname"><em>reason</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TerminationEndpoint&#160;</td>
+          <td class="paramname"><em>endpoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Internal helper to cleanly remove a connection from the network interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connection</td><td>pointer to the connection to disconnect </td></tr>
+    <tr><td class="paramname">reason</td><td>reason for the disconnect </td></tr>
+    <tr><td class="paramname">endpoint</td><td>whether the disconnection was initiated locally or remotely </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7e2f52313a19925eba0b41e0bddb856c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PacketId AzNetworking::UdpNetworkInterface::SendPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_networking_1_1_udp_connection.html">UdpConnection</a> &amp;&#160;</td>
+          <td class="paramname"><em>connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_az_networking_1_1_i_packet.html">IPacket</a> &amp;&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SequenceId&#160;</td>
+          <td class="paramname"><em>reliableSequence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sends a packet to the remote connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connection</td><td>the <a class="el" href="class_az_networking_1_1_udp_connection.html" title="Connection class for udp endpoints. ">UdpConnection</a> instance to send the packet on </td></tr>
+    <tr><td class="paramname">packet</td><td>serializable object to transmit </td></tr>
+    <tr><td class="paramname">reliableSequence</td><td>the reliable sequence number to use for this packet, providing InvalidSequenceId will cause the packet to be sent unreliably </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>packet id for the transmitted packet </dd></dl>
 
 </div>
 </div>
@@ -766,7 +1186,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

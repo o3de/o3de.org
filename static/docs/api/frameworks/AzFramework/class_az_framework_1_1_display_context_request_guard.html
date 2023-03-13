@@ -53,6 +53,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_display_context_request_guard-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::DisplayContextRequestGuard Class Reference</div>  </div>
@@ -66,6 +67,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84c953ddda8cfd0ada16d47b4d2d8e91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84c953ddda8cfd0ada16d47b4d2d8e91"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DisplayContextRequestGuard</b> (DisplayContext &amp;displayContext)</td></tr>
 <tr class="separator:a84c953ddda8cfd0ada16d47b4d2d8e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a7cf3eefa00f8bc2cb15106b7d67d23d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cf3eefa00f8bc2cb15106b7d67d23d9"></a>
+DisplayContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prevSetDisplayContext</b> = nullptr</td></tr>
+<tr class="separator:a7cf3eefa00f8bc2cb15106b7d67d23d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22adb37eb99926d67f5b179119eb55e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22adb37eb99926d67f5b179119eb55e9"></a>
+DisplayContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_currSetDisplayContext</b> = nullptr</td></tr>
+<tr class="separator:a22adb37eb99926d67f5b179119eb55e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A helper to wrap DisplayContext set EBus calls. Usage: // enter scope { <a class="el" href="class_az_framework_1_1_display_context_request_guard.html">AzFramework::DisplayContextRequestGuard</a> displayContextGuard(displayContext); ... } // exit scope, clean up </p>
@@ -76,7 +86,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,8 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="struct_az_tools_framework_1_1_entity_utility_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EntityUtilityComponent Struct Reference</div>  </div>
@@ -98,6 +100,30 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa4f835e3377db8a3b0e4fdea08020f9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4f835e3377db8a3b0e4fdea08020f9f"></a>
 static const AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>UtilityEntityContextId</b> = AZ::Uuid(&quot;{9C277B88-E79E-4F8A-BAFF-A4C175BD565F}&quot;)</td></tr>
 <tr class="separator:aa4f835e3377db8a3b0e4fdea08020f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6b6c538a10147681ea1322329c87949c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b6c538a10147681ea1322329c87949c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () override</td></tr>
+<tr class="separator:a6b6c538a10147681ea1322329c87949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042aab87b07dea0057ec301e3d37157a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a042aab87b07dea0057ec301e3d37157a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
+<tr class="separator:a042aab87b07dea0057ec301e3d37157a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a47483f4dbe78bf9e1efbb909723894ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47483f4dbe78bf9e1efbb909723894ad"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; AzFramework::EntityContext &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityContext</b></td></tr>
+<tr class="separator:a47483f4dbe78bf9e1efbb909723894ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63423f745b84c251802e8797c586076"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac63423f745b84c251802e8797c586076"></a>
+AZStd::vector&lt; AZStd::tuple<br class="typebreak"/>
+&lt; AZ::TypeId, AZStd::string, <br class="typebreak"/>
+AZStd::vector&lt; AZStd::string &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_typeInfo</b></td></tr>
+<tr class="separator:ac63423f745b84c251802e8797c586076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8686fdd7752300a1ad7019436f7ed0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b8686fdd7752300a1ad7019436f7ed0"></a>
+AZStd::vector&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_createdEntities</b></td></tr>
+<tr class="separator:a6b8686fdd7752300a1ad7019436f7ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Entity/EntityUtilityComponent.h</li>
@@ -105,7 +131,7 @@ static const AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>Util
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

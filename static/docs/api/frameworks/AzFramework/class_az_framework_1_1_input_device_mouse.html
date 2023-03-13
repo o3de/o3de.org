@@ -57,6 +57,8 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_mouse-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceMouse Class Reference</div>  </div>
@@ -190,10 +192,96 @@ static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html
 <tr class="separator:aeeff594b15d51309422f6df9880590e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d96fcf9f295977ffb29e0772cb8a588"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#a5d96fcf9f295977ffb29e0772cb8a588">SystemCursorPosition</a> {&quot;mouse_system_cursor_position&quot;}</td></tr>
 <tr class="separator:a5d96fcf9f295977ffb29e0772cb8a588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a933db4c3abe8c3e56da88b0bd507b6d3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#a933db4c3abe8c3e56da88b0bd507b6d3">ButtonChannelByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_digital_with_shared_position2_d.html">InputChannelDigitalWithSharedPosition2D</a> * &gt;</td></tr>
+<tr class="separator:a933db4c3abe8c3e56da88b0bd507b6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8a826d971822a024578607834ca34b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b8a826d971822a024578607834ca34b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MovementChannelByIdMap</b> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_delta_with_shared_position2_d.html">InputChannelDeltaWithSharedPosition2D</a> * &gt;</td></tr>
+<tr class="separator:a7b8a826d971822a024578607834ca34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a49117613dcb32887813555b0eccd70fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49117613dcb32887813555b0eccd70fb"></a>
+InputChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#a49117613dcb32887813555b0eccd70fb">m_allChannelsById</a></td></tr>
+<tr class="memdesc:a49117613dcb32887813555b0eccd70fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">All mouse channels. <br/></td></tr>
+<tr class="separator:a49117613dcb32887813555b0eccd70fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eff014070a1bef832d9014e9e99cb25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2eff014070a1bef832d9014e9e99cb25"></a>
+<a class="el" href="class_az_framework_1_1_input_device_mouse.html#a933db4c3abe8c3e56da88b0bd507b6d3">ButtonChannelByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#a2eff014070a1bef832d9014e9e99cb25">m_buttonChannelsById</a></td></tr>
+<tr class="memdesc:a2eff014070a1bef832d9014e9e99cb25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse button channels. <br/></td></tr>
+<tr class="separator:a2eff014070a1bef832d9014e9e99cb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf9636b362201276a471f44a5deec92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebf9636b362201276a471f44a5deec92"></a>
+MovementChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#aebf9636b362201276a471f44a5deec92">m_movementChannelsById</a></td></tr>
+<tr class="memdesc:aebf9636b362201276a471f44a5deec92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse movement channels. <br/></td></tr>
+<tr class="separator:aebf9636b362201276a471f44a5deec92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068117c127589ea54a0cd33deeea3c41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a068117c127589ea54a0cd33deeea3c41"></a>
+<a class="el" href="class_az_framework_1_1_input_channel_delta_with_shared_position2_d.html">InputChannelDeltaWithSharedPosition2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#a068117c127589ea54a0cd33deeea3c41">m_cursorPositionChannel</a></td></tr>
+<tr class="memdesc:a068117c127589ea54a0cd33deeea3c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cursor position channel. <br/></td></tr>
+<tr class="separator:a068117c127589ea54a0cd33deeea3c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47625c4106e6dd1c04f1a231939b8ae3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47625c4106e6dd1c04f1a231939b8ae3"></a>
+<a class="el" href="class_az_framework_1_1_input_channel.html#a7f7ab3e93fa81e219fd1cc44378a13b3">InputChannel::SharedPositionData2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#a47625c4106e6dd1c04f1a231939b8ae3">m_cursorPositionData2D</a></td></tr>
+<tr class="memdesc:a47625c4106e6dd1c04f1a231939b8ae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared cursor position. <br/></td></tr>
+<tr class="separator:a47625c4106e6dd1c04f1a231939b8ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afeb57c5617b31e97ce555e45aaadc124"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeb57c5617b31e97ce555e45aaadc124"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html">Implementation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#afeb57c5617b31e97ce555e45aaadc124">m_pimpl</a></td></tr>
+<tr class="memdesc:afeb57c5617b31e97ce555e45aaadc124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private pointer to the platform specific implementation. <br/></td></tr>
+<tr class="separator:afeb57c5617b31e97ce555e45aaadc124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3419abbc83972aff2a5b32cb69f6a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd3419abbc83972aff2a5b32cb69f6a8"></a>
+<a class="el" href="class_az_framework_1_1_input_device_implementation_request_handler.html">InputDeviceImplementationRequestHandler</a><br class="typebreak"/>
+&lt; <a class="el" href="class_az_framework_1_1_input_device_mouse.html">InputDeviceMouse</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse.html#abd3419abbc83972aff2a5b32cb69f6a8">m_implementationRequestHandler</a></td></tr>
+<tr class="memdesc:abd3419abbc83972aff2a5b32cb69f6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that handles requests to create a custom implementation for this device. <br/></td></tr>
+<tr class="separator:abd3419abbc83972aff2a5b32cb69f6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_az_framework_1_1_input_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_input_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_input_device.html">AzFramework::InputDevice</a></td></tr>
+<tr class="memitem:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a20c49755e8fc367afe62e1c1788e8b8b">BroadcastInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) const </td></tr>
+<tr class="separator:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a47e7fba32002cef9260f72d49079c2b2">BroadcastInputTextEvent</a> (const AZStd::string &amp;textUTF8) const </td></tr>
+<tr class="separator:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b3f1cf8533f960eb86d73d9c0b09dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a83b3f1cf8533f960eb86d73d9c0b09dd">BroadcastInputDeviceConnectedEvent</a> () const </td></tr>
+<tr class="memdesc:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device connects to the system. <br/></td></tr>
+<tr class="separator:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8db0be32df8eeec193f83be08cce6fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#ae8db0be32df8eeec193f83be08cce6fb">BroadcastInputDeviceDisconnectedEvent</a> () const </td></tr>
+<tr class="memdesc:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device disconnects from the system. <br/></td></tr>
+<tr class="separator:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7610e16b07bb6c9e5806709d8d142a81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a7610e16b07bb6c9e5806709d8d142a81">ResetInputChannelStates</a> ()</td></tr>
+<tr class="memdesc:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
+<tr class="separator:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a generic mouse input device, including the ids of all its associated input channels. Platform specific implementations are defined as private implementations so that creating an instance of this generic class will work correctly on any platform that supports mouse input, while providing access to the device name and associated channel ids on any platform through the 'null' implementation (primarily so that the editor can use them to setup input mappings). </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a933db4c3abe8c3e56da88b0bd507b6d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_az_framework_1_1_input_device_mouse.html#a933db4c3abe8c3e56da88b0bd507b6d3">AzFramework::InputDeviceMouse::ButtonChannelByIdMap</a> =  AZStd::unordered_map&lt;<a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel_digital_with_shared_position2_d.html">InputChannelDigitalWithSharedPosition2D</a>*&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Alias for verbose container class </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa7441170b7c485bdf5b1db5c4da4059b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -414,7 +502,7 @@ static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

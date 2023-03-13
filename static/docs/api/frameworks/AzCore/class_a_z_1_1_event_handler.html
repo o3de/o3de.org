@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_event_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,6 +106,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:af908e3bee9e8b6a66b5100adaff38ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab14a849b112f7c1e8f5652092705a7ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_event_handler.html#ab14a849b112f7c1e8f5652092705a7ca">IsConnected</a> () const </td></tr>
 <tr class="separator:ab14a849b112f7c1e8f5652092705a7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6d44057e726d6546b5e289f5a87b201d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_event_handler.html#a6d44057e726d6546b5e289f5a87b201d">SwapEventHandlerPointers</a> (const <a class="el" href="class_a_z_1_1_event_handler.html">EventHandler</a> &amp;from)</td></tr>
+<tr class="separator:a6d44057e726d6546b5e289f5a87b201d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abd9cf570f267415ded2367d27dda2678"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd9cf570f267415ded2367d27dda2678"></a>
+const <a class="el" href="class_a_z_1_1_event.html">Event</a>&lt; Params...&gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_event</b> = nullptr</td></tr>
+<tr class="separator:abd9cf570f267415ded2367d27dda2678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493d0fe5402853ba8a98104055767227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a493d0fe5402853ba8a98104055767227"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_index</b> = 0</td></tr>
+<tr class="separator:a493d0fe5402853ba8a98104055767227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2498315852afa356caf55c4c6a4266"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace2498315852afa356caf55c4c6a4266"></a>
+<a class="el" href="class_a_z_std_1_1function.html">Callback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_callback</b></td></tr>
+<tr class="separator:ace2498315852afa356caf55c4c6a4266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -161,6 +180,39 @@ template&lt;typename... Params&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a6d44057e726d6546b5e289f5a87b201d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Params&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_a_z_1_1_event_handler.html">AZ::EventHandler</a>&lt; Params &gt;::SwapEventHandlerPointers </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_event_handler.html">EventHandler</a>&lt; Params &gt; &amp;&#160;</td>
+          <td class="paramname"><em>from</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Swaps the event handler pointers from the from instance to this instance </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">from</td><td>the handler instance we are replacing on the attached event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/EBus/Event.h</li>
 <li>Code/Framework/AzCore/AzCore/EBus/Event.inl</li>
@@ -168,7 +220,7 @@ template&lt;typename... Params&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -54,6 +54,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_ordered_event-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -87,6 +89,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ab6de55bfe2fb118977ec9fffb27c69da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8019f2b2a19f6b5d22514b2a2ba71e97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_ordered_event.html#a8019f2b2a19f6b5d22514b2a2ba71e97">Signal</a> (const Params &amp;...params) const </td></tr>
 <tr class="separator:a8019f2b2a19f6b5d22514b2a2ba71e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ade63dc73415b36bd68e1160aa043d868"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade63dc73415b36bd68e1160aa043d868"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_ordered_event.html#ade63dc73415b36bd68e1160aa043d868">BindHandlerEventPointers</a> ()</td></tr>
+<tr class="memdesc:ade63dc73415b36bd68e1160aa043d868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to rebind all handlers from an old event to the current event instance. <br/></td></tr>
+<tr class="separator:ade63dc73415b36bd68e1160aa043d868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c773cbcc09b90b7e551d4fc8d22970"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7c773cbcc09b90b7e551d4fc8d22970"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (<a class="el" href="class_a_z_1_1_ordered_event_handler.html">OrderedEventHandler</a>&lt; Params...&gt; &amp;handler) const </td></tr>
+<tr class="separator:af7c773cbcc09b90b7e551d4fc8d22970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e46a0129c23b3260afd5e02167c5c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98e46a0129c23b3260afd5e02167c5c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Disconnect</b> (<a class="el" href="class_a_z_1_1_ordered_event_handler.html">OrderedEventHandler</a>&lt; Params...&gt; &amp;handler) const </td></tr>
+<tr class="separator:a98e46a0129c23b3260afd5e02167c5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4a2033ee0f44179230dc8ca616ba45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a4a2033ee0f44179230dc8ca616ba45"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>InsertHandler</b> (<a class="el" href="class_a_z_1_1_ordered_event_handler.html">OrderedEventHandler</a>&lt; Params...&gt; &amp;handler) const </td></tr>
+<tr class="separator:a9a4a2033ee0f44179230dc8ca616ba45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e0f1fdb9711b1853f7fc7db2d7c331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07e0f1fdb9711b1853f7fc7db2d7c331"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateHandlerIndexes</b> (int32_t startIndex) const </td></tr>
+<tr class="separator:a07e0f1fdb9711b1853f7fc7db2d7c331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acd25fb32c534b408aceac8ef806ac118"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd25fb32c534b408aceac8ef806ac118"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_ordered_event_handler.html">OrderedEventHandler</a><br class="typebreak"/>
+&lt; Params...&gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_ordered_event.html#acd25fb32c534b408aceac8ef806ac118">m_handlers</a></td></tr>
+<tr class="memdesc:acd25fb32c534b408aceac8ef806ac118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active handlers. <br/></td></tr>
+<tr class="separator:acd25fb32c534b408aceac8ef806ac118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7dbee2c8730c536d347a846e44ad4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd7dbee2c8730c536d347a846e44ad4d"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_ordered_event_handler.html">OrderedEventHandler</a><br class="typebreak"/>
+&lt; Params...&gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_ordered_event.html#abd7dbee2c8730c536d347a846e44ad4d">m_addList</a></td></tr>
+<tr class="memdesc:abd7dbee2c8730c536d347a846e44ad4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handlers added during a Signal, pending being added to the active handlers. <br/></td></tr>
+<tr class="separator:abd7dbee2c8730c536d347a846e44ad4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad881a40721d0816ad8065e2087b2d13a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad881a40721d0816ad8065e2087b2d13a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_ordered_event.html#ad881a40721d0816ad8065e2087b2d13a">m_updating</a> = false</td></tr>
+<tr class="memdesc:ad881a40721d0816ad8065e2087b2d13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised during a Signal, false otherwise, used to guard m_handlers during handler iteration. <br/></td></tr>
+<tr class="separator:ad881a40721d0816ad8065e2087b2d13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -139,7 +179,7 @@ template&lt;typename... Params&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

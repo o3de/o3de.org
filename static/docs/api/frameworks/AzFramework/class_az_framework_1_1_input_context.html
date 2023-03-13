@@ -54,6 +54,9 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputContext Class Reference</div>  </div>
@@ -165,6 +168,71 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#a81e6a3271867f664868db7774bc2756f">Disconnect</a> ()</td></tr>
 <tr class="memdesc:a81e6a3271867f664868db7774bc2756f inherit pub_methods_class_az_framework_1_1_input_channel_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect from the input notification bus to stop receiving input notifications. <br/></td></tr>
 <tr class="separator:a81e6a3271867f664868db7774bc2756f inherit pub_methods_class_az_framework_1_1_input_channel_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa42a7909b30adc9f3afe3e93e4857bd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa42a7909b30adc9f3afe3e93e4857bd4"></a>
+const InputChannelByIdMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#aa42a7909b30adc9f3afe3e93e4857bd4">GetInputChannelsById</a> () const override</td></tr>
+<tr class="memdesc:aa42a7909b30adc9f3afe3e93e4857bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_device.html#a0987116b5f3edee71903c039d3cca9dc">AzFramework::InputDevice::GetInputChannelsById</a> <br/></td></tr>
+<tr class="separator:aa42a7909b30adc9f3afe3e93e4857bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5f10c42fec01252e1bf9339cdea34e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa5f10c42fec01252e1bf9339cdea34e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#aaa5f10c42fec01252e1bf9339cdea34e">IsSupported</a> () const override</td></tr>
+<tr class="memdesc:aaa5f10c42fec01252e1bf9339cdea34e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_device.html#af0ff06487528561f0e757da771744d6c">AzFramework::InputDevice::IsSupported</a> <br/></td></tr>
+<tr class="separator:aaa5f10c42fec01252e1bf9339cdea34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab2f2a926fd56c44bdbadf89f6c6644"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ab2f2a926fd56c44bdbadf89f6c6644"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#a2ab2f2a926fd56c44bdbadf89f6c6644">IsConnected</a> () const override</td></tr>
+<tr class="memdesc:a2ab2f2a926fd56c44bdbadf89f6c6644"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_device.html#adff0175f1bb6828ba4ee6c0588ead6bd">AzFramework::InputDevice::IsConnected</a> <br/></td></tr>
+<tr class="separator:a2ab2f2a926fd56c44bdbadf89f6c6644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1251b1270c11aa2220872c3901206f50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1251b1270c11aa2220872c3901206f50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#a1251b1270c11aa2220872c3901206f50">TickInputDevice</a> () override</td></tr>
+<tr class="memdesc:a1251b1270c11aa2220872c3901206f50"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_device_requests.html#a15ded4d936a4319e3b091771d831222d">AzFramework::InputDeviceRequests::TickInputDevice</a> <br/></td></tr>
+<tr class="separator:a1251b1270c11aa2220872c3901206f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d34c38de8c93df744bac5139fd410e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d34c38de8c93df744bac5139fd410e7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#a0d34c38de8c93df744bac5139fd410e7">OnInputChannelEventFiltered</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) override</td></tr>
+<tr class="memdesc:a0d34c38de8c93df744bac5139fd410e7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#ab0dbab15e19a6429639eaa54c7ec5522">AzFramework::InputChannelEventListener::OnInputChannelEventFiltered</a> <br/></td></tr>
+<tr class="separator:a0d34c38de8c93df744bac5139fd410e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_framework_1_1_input_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_input_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_input_device.html">AzFramework::InputDevice</a></td></tr>
+<tr class="memitem:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a20c49755e8fc367afe62e1c1788e8b8b">BroadcastInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) const </td></tr>
+<tr class="separator:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a47e7fba32002cef9260f72d49079c2b2">BroadcastInputTextEvent</a> (const AZStd::string &amp;textUTF8) const </td></tr>
+<tr class="separator:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b3f1cf8533f960eb86d73d9c0b09dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a83b3f1cf8533f960eb86d73d9c0b09dd">BroadcastInputDeviceConnectedEvent</a> () const </td></tr>
+<tr class="memdesc:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device connects to the system. <br/></td></tr>
+<tr class="separator:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8db0be32df8eeec193f83be08cce6fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#ae8db0be32df8eeec193f83be08cce6fb">BroadcastInputDeviceDisconnectedEvent</a> () const </td></tr>
+<tr class="memdesc:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device disconnects from the system. <br/></td></tr>
+<tr class="separator:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7610e16b07bb6c9e5806709d8d142a81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a7610e16b07bb6c9e5806709d8d142a81">ResetInputChannelStates</a> ()</td></tr>
+<tr class="memdesc:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
+<tr class="separator:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_framework_1_1_input_channel_event_listener"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_input_channel_event_listener')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_input_channel_event_listener.html">AzFramework::InputChannelEventListener</a></td></tr>
+<tr class="memitem:a800fe9f8e450e5ab0567f54677885782 inherit pro_methods_class_az_framework_1_1_input_channel_event_listener"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a800fe9f8e450e5ab0567f54677885782"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#a800fe9f8e450e5ab0567f54677885782">OnInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel, bool &amp;o_hasBeenConsumed) final</td></tr>
+<tr class="memdesc:a800fe9f8e450e5ab0567f54677885782 inherit pro_methods_class_az_framework_1_1_input_channel_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_channel_notifications.html#a4c35f63b4139b3fcbc77d48832bf3345">AzFramework::InputChannelNotifications::OnInputChannelEvent</a> <br/></td></tr>
+<tr class="separator:a800fe9f8e450e5ab0567f54677885782 inherit pro_methods_class_az_framework_1_1_input_channel_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a572e45a7c5c3a3306a83f61152c5f729"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a572e45a7c5c3a3306a83f61152c5f729"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#a572e45a7c5c3a3306a83f61152c5f729">InputMappingsByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_input_mapping.html">InputMapping</a> &gt;&gt;</td></tr>
+<tr class="memdesc:a572e45a7c5c3a3306a83f61152c5f729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for verbose container class. <br/></td></tr>
+<tr class="separator:a572e45a7c5c3a3306a83f61152c5f729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa5d642020b6d9b092d9ef2b9ec329c04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5d642020b6d9b092d9ef2b9ec329c04"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#aa5d642020b6d9b092d9ef2b9ec329c04">m_consumesProcessedInput</a> = false</td></tr>
+<tr class="memdesc:aa5d642020b6d9b092d9ef2b9ec329c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should this input context consume input that is processed by any of its input mappings? <br/></td></tr>
+<tr class="separator:aa5d642020b6d9b092d9ef2b9ec329c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a83e33fc6d3329d404a49cd250dea03a4"><td class="memItemLeft" align="right" valign="top">InputChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#a83e33fc6d3329d404a49cd250dea03a4">m_inputChannelsById</a></td></tr>
+<tr class="separator:a83e33fc6d3329d404a49cd250dea03a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3989ac50358ee45f439f4b6723a76172"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3989ac50358ee45f439f4b6723a76172"></a>
+<a class="el" href="class_az_framework_1_1_input_context.html#a572e45a7c5c3a3306a83f61152c5f729">InputMappingsByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_inputMappingsById</b></td></tr>
+<tr class="separator:a3989ac50358ee45f439f4b6723a76172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -308,13 +376,35 @@ static AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a83e33fc6d3329d404a49cd250dea03a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">InputChannelByIdMap AzFramework::InputContext::m_inputChannelsById</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>All input channels/mappings owned by this input context. We need to store two separate containers so that we can return the correct type from GetInputChannelsById while also maintaining shared ownership of input mappings added via the AddInputMapping function. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Input/Contexts/InputContext.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -56,6 +56,8 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetBrowserModel Class Reference</div>  </div>
@@ -175,6 +177,43 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceIndexesT
 <tr class="memitem:ac63ec63de99097166a7925d6fb0ac69e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac63ec63de99097166a7925d6fb0ac69e"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceIndexesToAssetDatabaseEntries</b> (const QModelIndexList &amp;indexes, AZStd::vector&lt; const <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt; &amp;entries)</td></tr>
 <tr class="separator:ac63ec63de99097166a7925d6fb0ac69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa31c7cd64f1939f9a8deec54be68eae6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa31c7cd64f1939f9a8deec54be68eae6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WatchForExpectedAssets</b> (<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> *entry)</td></tr>
+<tr class="separator:aa31c7cd64f1939f9a8deec54be68eae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab545ff48eeaf57ecdae46ec2b76307cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab545ff48eeaf57ecdae46ec2b76307cc"></a>
+AssetBrowserFilterModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterModel</b> = nullptr</td></tr>
+<tr class="separator:ab545ff48eeaf57ecdae46ec2b76307cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10783334f52a41ec0d63778a1fb7e50d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10783334f52a41ec0d63778a1fb7e50d"></a>
+AZStd::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_root_asset_browser_entry.html">RootAssetBrowserEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootEntry</b></td></tr>
+<tr class="separator:a10783334f52a41ec0d63778a1fb7e50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106d6abebbb9a1e8f83f8d48193cce40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a106d6abebbb9a1e8f83f8d48193cce40"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_loaded</b></td></tr>
+<tr class="separator:a106d6abebbb9a1e8f83f8d48193cce40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9888ab7c7711cbf97bfe179533a4cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d9888ab7c7711cbf97bfe179533a4cd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_addingEntry</b></td></tr>
+<tr class="separator:a2d9888ab7c7711cbf97bfe179533a4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749b80d5ea2c429780f4fe3c369157a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a749b80d5ea2c429780f4fe3c369157a1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_removingEntry</b></td></tr>
+<tr class="separator:a749b80d5ea2c429780f4fe3c369157a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d62489b3637f5e9d0db635358628b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61d62489b3637f5e9d0db635358628b9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isTickBusEnabled</b> = false</td></tr>
+<tr class="separator:a61d62489b3637f5e9d0db635358628b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ac7f48f87220d3b7dce64925603af3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24ac7f48f87220d3b7dce64925603af3"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> <br class="typebreak"/>
+*, AZ::Crc32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetEntriesToCreatorBusIds</b></td></tr>
+<tr class="separator:a24ac7f48f87220d3b7dce64925603af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446dbe01bf9b1413e33a1dcb99bbf98a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a446dbe01bf9b1413e33a1dcb99bbf98a"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZStd::string, AZ::Crc32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_newlyCreatedAssetPathsToCreatorBusIds</b></td></tr>
+<tr class="separator:a446dbe01bf9b1413e33a1dcb99bbf98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/AssetBrowser/AssetBrowserModel.h</li>
@@ -182,7 +221,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceIndexesT
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -56,6 +56,9 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_settings_registry_impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::SettingsRegistryImpl Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -64,6 +67,15 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_settings_registry_interface.html">AZ::SettingsRegistryInterface</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_impl_1_1_registry_file.html">RegistryFile</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_impl_1_1_scoped_merge_event.html">ScopedMergeEvent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_impl_1_1_signal_notifier_args.html">SignalNotifierArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ae41e6ffee6cb9be9ceb45c2b616d6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ae41e6ffee6cb9be9ceb45c2b616d6a"></a>
@@ -191,6 +203,86 @@ static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><b>DevU
 <tr class="memitem:aadc014fd7f3a6f1f539424769ed7b916 inherit pub_static_attribs_class_a_z_1_1_settings_registry_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadc014fd7f3a6f1f539424769ed7b916"></a>
 static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformFolder</b> [] = &quot;Platform&quot;</td></tr>
 <tr class="separator:aadc014fd7f3a6f1f539424769ed7b916 inherit pub_static_attribs_class_a_z_1_1_settings_registry_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ae2c6241bc512e58272f0e159225ad9ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2c6241bc512e58272f0e159225ad9ba"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>TagList</b> = <a class="el" href="class_a_z_std_1_1fixed__vector.html">AZStd::fixed_vector</a>&lt; size_t, Specializations::MaxCount+1 &gt;</td></tr>
+<tr class="separator:ae2c6241bc512e58272f0e159225ad9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad873650bec5cd50d192eb8a8a5c37f0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad873650bec5cd50d192eb8a8a5c37f0d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>RegistryFileList</b> = <a class="el" href="class_a_z_std_1_1fixed__vector.html">AZStd::fixed_vector</a>&lt; <a class="el" href="struct_a_z_1_1_settings_registry_impl_1_1_registry_file.html">RegistryFile</a>, MaxRegistryFolderEntries &gt;</td></tr>
+<tr class="separator:ad873650bec5cd50d192eb8a8a5c37f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a653efa0ef59fedb7701e4ae5d81a9947"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a653efa0ef59fedb7701e4ae5d81a9947"></a>
+<a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_settings_type.html">SettingsType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetTypeNoLock</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path) const </td></tr>
+<tr class="separator:a653efa0ef59fedb7701e4ae5d81a9947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b154ef45a7cd7b56e524706c22c8a28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b154ef45a7cd7b56e524706c22c8a28"></a>
+<a class="el" href="class_a_z_1_1_settings_registry_interface.html#a5945696e175a8981c9983c3cad42dbee">VisitResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Visit</b> (<a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_visitor.html">Visitor</a> &amp;visitor, <a class="el" href="class_a_z_1_1_stacked_string.html">StackedString</a> &amp;path, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> valueName, const rapidjson::Value &amp;value) const </td></tr>
+<tr class="separator:a6b154ef45a7cd7b56e524706c22c8a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f3544f84bd7a40c075881fb2bdd6c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73f3544f84bd7a40c075881fb2bdd6c6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLessThan</b> (bool &amp;collisionFound, const <a class="el" href="struct_a_z_1_1_settings_registry_impl_1_1_registry_file.html">RegistryFile</a> &amp;lhs, const <a class="el" href="struct_a_z_1_1_settings_registry_impl_1_1_registry_file.html">RegistryFile</a> &amp;rhs, const <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">Specializations</a> &amp;specializations, const rapidjson::Pointer &amp;historyPointer, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> folderPath)</td></tr>
+<tr class="separator:a73f3544f84bd7a40c075881fb2bdd6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7551e10f99a183e7fa0d3d869356e97a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7551e10f99a183e7fa0d3d869356e97a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractFileDescription</b> (<a class="el" href="struct_a_z_1_1_settings_registry_impl_1_1_registry_file.html">RegistryFile</a> &amp;output, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> filename, const <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">Specializations</a> &amp;specializations)</td></tr>
+<tr class="separator:a7551e10f99a183e7fa0d3d869356e97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ebe7c4841f8d6b9e31b83fbe77e3f1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ebe7c4841f8d6b9e31b83fbe77e3f1a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalNotifier</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> jsonPath, <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_settings_type.html">SettingsType</a> type)</td></tr>
+<tr class="separator:a8ebe7c4841f8d6b9e31b83fbe77e3f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890e9a9122899a0b6d411dc06e5c8246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_impl.html#a890e9a9122899a0b6d411dc06e5c8246">LockForWriting</a> () const </td></tr>
+<tr class="separator:a890e9a9122899a0b6d411dc06e5c8246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af850b7cec592cf78213b89eceab4fa6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_impl.html#af850b7cec592cf78213b89eceab4fa6c">LockForReading</a> () const </td></tr>
+<tr class="separator:af850b7cec592cf78213b89eceab4fa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac0999d6823a6d0a87f5a973785542294"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0999d6823a6d0a87f5a973785542294"></a>
+<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingMutex</b></td></tr>
+<tr class="separator:ac0999d6823a6d0a87f5a973785542294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f85d9ad46bcd54310a90700a04ff0b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f85d9ad46bcd54310a90700a04ff0b0"></a>
+<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_notifierMutex</b></td></tr>
+<tr class="separator:a5f85d9ad46bcd54310a90700a04ff0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b12d6871384a3ad57fb71addd0389f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b12d6871384a3ad57fb71addd0389f2"></a>
+NotifyEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_notifiers</b></td></tr>
+<tr class="separator:a5b12d6871384a3ad57fb71addd0389f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ebe1737f9210f8e8d394b9f89c36b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88ebe1737f9210f8e8d394b9f89c36b5"></a>
+PreMergeEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_preMergeEvent</b></td></tr>
+<tr class="separator:a88ebe1737f9210f8e8d394b9f89c36b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3724e1aeba2494f9491443a86c075208"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3724e1aeba2494f9491443a86c075208"></a>
+PostMergeEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_postMergeEvent</b></td></tr>
+<tr class="separator:a3724e1aeba2494f9491443a86c075208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6fed28c750c5c9a6013263fa333577"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_impl.html#aaf6fed28c750c5c9a6013263fa333577">m_signalMutex</a></td></tr>
+<tr class="separator:aaf6fed28c750c5c9a6013263fa333577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376133ffecf89323faa14df28ee809b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a376133ffecf89323faa14df28ee809b6"></a>
+<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="struct_a_z_1_1_settings_registry_impl_1_1_signal_notifier_args.html">SignalNotifierArgs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_signalNotifierQueue</b></td></tr>
+<tr class="separator:a376133ffecf89323faa14df28ee809b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afadb09efffc410639bf9866d63350a04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afadb09efffc410639bf9866d63350a04"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_signalCount</b> {}</td></tr>
+<tr class="separator:afadb09efffc410639bf9866d63350a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7652c23e62fa039cadd8d83743421f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf7652c23e62fa039cadd8d83743421f"></a>
+rapidjson::Document&#160;</td><td class="memItemRight" valign="bottom"><b>m_settings</b></td></tr>
+<tr class="separator:aaf7652c23e62fa039cadd8d83743421f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ed69dd13bae03005d9bdf9e2c7e93d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85ed69dd13bae03005d9bdf9e2c7e93d"></a>
+<a class="el" href="struct_a_z_1_1_json_serializer_settings.html">JsonSerializerSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializationSettings</b></td></tr>
+<tr class="separator:a85ed69dd13bae03005d9bdf9e2c7e93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb82bbb94d14f16793b9579acc0a45bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb82bbb94d14f16793b9579acc0a45bf"></a>
+<a class="el" href="struct_a_z_1_1_json_deserializer_settings.html">JsonDeserializerSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_deserializationSettings</b></td></tr>
+<tr class="separator:adb82bbb94d14f16793b9579acc0a45bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a63ac2cc464dcc0fafbfaf216b15efb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_impl.html#a9a63ac2cc464dcc0fafbfaf216b15efb">m_mergeOperationNotify</a> {}</td></tr>
+<tr class="separator:a9a63ac2cc464dcc0fafbfaf216b15efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4735cb19e94491074fed1f84efc52894"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4735cb19e94491074fed1f84efc52894"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_impl.html#a4735cb19e94491074fed1f84efc52894">m_useFileIo</a> {}</td></tr>
+<tr class="memdesc:a4735cb19e94491074fed1f84efc52894"><td class="mdescLeft">&#160;</td><td class="mdescRight">When true use the Registered FileIOBase for file open operations. <br/></td></tr>
+<tr class="separator:a4735cb19e94491074fed1f84efc52894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e578b9729b0800d15ad01430bc64505"><td class="memItemLeft" align="right" valign="top">AZStd::stack<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_impl.html#a1e578b9729b0800d15ad01430bc64505">m_mergeFilePathStack</a></td></tr>
+<tr class="separator:a1e578b9729b0800d15ad01430bc64505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a211c688989b4357a1aab4d31ba7578d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a211c688989b4357a1aab4d31ba7578d8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_visitDepth</b> = 0</td></tr>
+<tr class="separator:a211c688989b4357a1aab4d31ba7578d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -552,6 +644,54 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VisitorCallback</b> 
 <dl class="section return"><dt>Returns</dt><dd>Whether or not the value was stored. An invalid path will return false; </dd></dl>
 
 <p>Implements <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a6ff0366b9a519bb42324b6292d351260">AZ::SettingsRegistryInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af850b7cec592cf78213b89eceab4fa6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt;<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&gt; AZ::SettingsRegistryImpl::LockForReading </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For symmetry with the above, locks with intent to only read data. This can be done even during iteration/visiting. </p>
+
+</div>
+</div>
+<a class="anchor" id="a890e9a9122899a0b6d411dc06e5c8246"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt;<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&gt; AZ::SettingsRegistryImpl::LockForWriting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Locks the m_settingMutex but also checks to make sure that someone is not currently visiting/iterating over the registry, which is invalid if you're about to modify it </p>
 
 </div>
 </div>
@@ -1463,13 +1603,77 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VisitorCallback</b> 
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a1e578b9729b0800d15ad01430bc64505"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::stack&lt;<a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a>&gt; AZ::SettingsRegistryImpl::m_mergeFilePathStack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stack tracking the files currently being merged This is protected by m_settingsMutex </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a63ac2cc464dcc0fafbfaf216b15efb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::SettingsRegistryImpl::m_mergeOperationNotify {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If set to true, then the JSON Patch/JSON Merge Patch operations also result in the signaling of a notification event </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf6fed28c750c5c9a6013263fa333577"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a> AZ::SettingsRegistryImpl::m_signalMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>NOTE: During SignalNotifier, the registered notify event handlers are moved to a local NotifyEvent Therefore setting a value within the registry during signaling will queue future SignalNotifier calls These calls will then be invoked after the current signaling has completed This is done to avoid deadlock if another thread attempts to access register a notifier or signal one </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Settings/SettingsRegistryImpl.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -51,6 +51,10 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_eliding_label-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::ElidingLabel Class Reference</div>  </div>
@@ -144,6 +148,66 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memitem:a16efb429f90f1a4be85c7a968466aa1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16efb429f90f1a4be85c7a968466aa1b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>handleElision</b> ()</td></tr>
 <tr class="separator:a16efb429f90f1a4be85c7a968466aa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae83b0ff29a070221d839a17e0649145b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae83b0ff29a070221d839a17e0649145b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
+<tr class="separator:ae83b0ff29a070221d839a17e0649145b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87edc11585e90dfaccce4f003b74147"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac87edc11585e90dfaccce4f003b74147"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
+<tr class="separator:ac87edc11585e90dfaccce4f003b74147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaeb39f3ac4a55c2067066c41e236f7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaeb39f3ac4a55c2067066c41e236f7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTimerEvent *event) override</td></tr>
+<tr class="separator:aaaeb39f3ac4a55c2067066c41e236f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d6153719df2bdefcfb327aebc93fac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7d6153719df2bdefcfb327aebc93fac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestElide</b> (bool updateGeometry)</td></tr>
+<tr class="separator:ac7d6153719df2bdefcfb327aebc93fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a59e832519f36c522eda2ed4b9504d160"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59e832519f36c522eda2ed4b9504d160"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterString</b></td></tr>
+<tr class="separator:a59e832519f36c522eda2ed4b9504d160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6944543cf0f9134bf7e64c24bb7ec4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f6944543cf0f9134bf7e64c24bb7ec4"></a>
+QRegExp&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterRegex</b></td></tr>
+<tr class="separator:a2f6944543cf0f9134bf7e64c24bb7ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac8621b0a993dc33997cd7483a3cab6df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8621b0a993dc33997cd7483a3cab6df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>elide</b> ()</td></tr>
+<tr class="separator:ac8621b0a993dc33997cd7483a3cab6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ef270d3ab4f72d4472956f29985be4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30ef270d3ab4f72d4472956f29985be4"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>TextRect</b> ()</td></tr>
+<tr class="separator:a30ef270d3ab4f72d4472956f29985be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3116eafd809f6dbe410d6f9af00376f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3116eafd809f6dbe410d6f9af00376f4"></a>
+const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>backgroundColor</b> { &quot;#707070&quot; }</td></tr>
+<tr class="separator:a3116eafd809f6dbe410d6f9af00376f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada66765b8d71bfe9d1ac62ac9f1c8051"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada66765b8d71bfe9d1ac62ac9f1c8051"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_text</b></td></tr>
+<tr class="separator:ada66765b8d71bfe9d1ac62ac9f1c8051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6664106082aa8831bd258e136b216930"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6664106082aa8831bd258e136b216930"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_elidedText</b></td></tr>
+<tr class="separator:a6664106082aa8831bd258e136b216930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf5903f9384c1d2111b9ab803f4e098"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cf5903f9384c1d2111b9ab803f4e098"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b></td></tr>
+<tr class="separator:a2cf5903f9384c1d2111b9ab803f4e098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047a30d63a887d655a382b0dee57b8b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a047a30d63a887d655a382b0dee57b8b6"></a>
+Qt::TextElideMode&#160;</td><td class="memItemRight" valign="bottom"><b>m_elideMode</b></td></tr>
+<tr class="separator:a047a30d63a887d655a382b0dee57b8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af316b56ce5bd997c9fce92fe8c966acc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af316b56ce5bd997c9fce92fe8c966acc"></a>
+QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_metricsLabel</b></td></tr>
+<tr class="separator:af316b56ce5bd997c9fce92fe8c966acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7d830caafb9faf210375fcd8f31d30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed7d830caafb9faf210375fcd8f31d30"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_elideTimerId</b> = 0</td></tr>
+<tr class="separator:aed7d830caafb9faf210375fcd8f31d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8ecde9dd35b25892bfd17aa55cac268"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8ecde9dd35b25892bfd17aa55cac268"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_updateGeomentry</b> = false</td></tr>
+<tr class="separator:ad8ecde9dd35b25892bfd17aa55cac268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extends the QLabel widget to automatically elide the label text with an ellipsis (...) if it doesn't fit within the width of the widget. On hover, a tooltip will show the full label text, plus an optional description. </p>
@@ -188,7 +252,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>handleElision</b> ()<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

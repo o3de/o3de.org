@@ -56,6 +56,7 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="class_a_z_std_1_1forward__list-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::forward_list&lt; T, Allocator &gt; Class Template Reference</div>  </div>
@@ -150,6 +151,33 @@ size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 allocator_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1forward__list.html#a0019a995fa2fa5be511322386f0d0881">m_allocator</a></td></tr>
 <tr class="memdesc:a0019a995fa2fa5be511322386f0d0881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of the allocator. <br/></td></tr>
 <tr class="separator:a0019a995fa2fa5be511322386f0d0881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ab97ef46bfbb71dde444e030aa8586e9f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CONTAINER_VERSION</b> = 1
+ }</td></tr>
+<tr class="separator:ab97ef46bfbb71dde444e030aa8586e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601d31696708a7a89539b80f9b479733"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a601d31696708a7a89539b80f9b479733"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b> = <a class="el" href="class_a_z_std_1_1forward__list.html">forward_list</a>&lt; T, Allocator &gt;</td></tr>
+<tr class="separator:a601d31696708a7a89539b80f9b479733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e735d2c035105ce4d8b5faf144519a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e735d2c035105ce4d8b5faf144519a0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = Internal::forward_list_node&lt; T &gt;</td></tr>
+<tr class="separator:a8e735d2c035105ce4d8b5faf144519a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f28dd468225fcb19488a0d0b84f992c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f28dd468225fcb19488a0d0b84f992c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>node_ptr_type</b> = node_type *</td></tr>
+<tr class="separator:a5f28dd468225fcb19488a0d0b84f992c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3d6774827d405fadc05f6dee6f9a96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea3d6774827d405fadc05f6dee6f9a96"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>base_node_type</b> = Internal::forward_list_node_base</td></tr>
+<tr class="separator:aea3d6774827d405fadc05f6dee6f9a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74939888455cdddbadd30ddebb65bcb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74939888455cdddbadd30ddebb65bcb5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>base_node_ptr_type</b> = base_node_type *</td></tr>
+<tr class="separator:a74939888455cdddbadd30ddebb65bcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa121c46941092ee972b87071f0183819"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa121c46941092ee972b87071f0183819"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_impl</b> = <a class="el" href="class_a_z_std_1_1forward__list__iterator.html">forward_list_iterator</a>&lt; T &gt;</td></tr>
+<tr class="separator:aa121c46941092ee972b87071f0183819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0eb5da5ac9f44f7160211d23fe8a85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c0eb5da5ac9f44f7160211d23fe8a85"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator_impl</b> = <a class="el" href="class_a_z_std_1_1basic__const__iterator.html">basic_const_iterator</a>&lt; <a class="el" href="class_a_z_std_1_1forward__list__iterator.html">iterator_impl</a> &gt;</td></tr>
+<tr class="separator:a0c0eb5da5ac9f44f7160211d23fe8a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T, class Allocator&gt;<br/>
@@ -164,7 +192,7 @@ class AZStd::forward_list&lt; T, Allocator &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:43 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:02 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

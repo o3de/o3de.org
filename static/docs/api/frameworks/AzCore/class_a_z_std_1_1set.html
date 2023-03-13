@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1set-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::set&lt; Key, Compare, Allocator &gt; Class Template Reference</div>  </div>
@@ -362,6 +364,24 @@ AZ_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_ite
 <tr class="separator:a090c92f9d734cbd3e1573e8a47b46c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa09cc7a9ee592d50732f6cc0ed480264"><td class="memItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1set.html#aa09cc7a9ee592d50732f6cc0ed480264">leak_and_reset</a> ()</td></tr>
 <tr class="separator:aa09cc7a9ee592d50732f6cc0ed480264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a267642fcd3c1f5ec2e55536594afa756"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CONTAINER_VERSION</b> = 1
+ }</td></tr>
+<tr class="separator:a267642fcd3c1f5ec2e55536594afa756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42f402fab42e8728c6510a5ecea893e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad42f402fab42e8728c6510a5ecea893e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b> = <a class="el" href="class_a_z_std_1_1set.html">set</a>&lt; Key, Compare, Allocator &gt;</td></tr>
+<tr class="separator:ad42f402fab42e8728c6510a5ecea893e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727f5750d9866d0fee75b499c55d92bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a727f5750d9866d0fee75b499c55d92bb"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tree_type</b> = <a class="el" href="class_a_z_std_1_1rbtree.html">rbtree</a>&lt; Internal::OrderedSetRbTreeTraits&lt; Key, Compare, Allocator &gt;&gt;</td></tr>
+<tr class="separator:a727f5750d9866d0fee75b499c55d92bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab8af3e122ecd3003596d9fc4c10c820f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8af3e122ecd3003596d9fc4c10c820f"></a>
+<a class="el" href="class_a_z_std_1_1rbtree.html">tree_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_tree</b></td></tr>
+<tr class="separator:ab8af3e122ecd3003596d9fc4c10c820f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Key, class Compare, class Allocator&gt;<br/>
@@ -404,7 +424,7 @@ template&lt;class Key, class Compare, class Allocator&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:52 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:10 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

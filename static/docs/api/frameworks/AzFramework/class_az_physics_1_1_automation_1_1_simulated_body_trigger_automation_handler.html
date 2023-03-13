@@ -56,6 +56,9 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_physics_1_1_automation_1_1_simulated_body_trigger_automation_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzPhysics::Automation::SimulatedBodyTriggerAutomationHandler Class Reference</div>  </div>
@@ -89,6 +92,56 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a355ac6d2b29d2d8252977768354c18f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a355ac6d2b29d2d8252977768354c18f7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR_DECL</b></td></tr>
 <tr class="separator:a355ac6d2b29d2d8252977768354c18f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a84f30252291f79ade66daf084c9833e0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>FN_OnTriggerEnter</b>, 
+<b>FN_OnTriggerExit</b>, 
+<b>FN_MAX</b>
+ }</td></tr>
+<tr class="separator:a84f30252291f79ade66daf084c9833e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a41a5f36c204f74d4acd901f37cb278f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41a5f36c204f74d4acd901f37cb278f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTriggerEnter</b> ([[maybe_unused]] AZ::EntityId entityId) override</td></tr>
+<tr class="separator:a41a5f36c204f74d4acd901f37cb278f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79be15b34a07f64f38edeeabc1f71671"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79be15b34a07f64f38edeeabc1f71671"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTriggerExit</b> ([[maybe_unused]] AZ::EntityId entityId) override</td></tr>
+<tr class="separator:a79be15b34a07f64f38edeeabc1f71671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4005bc5e26bf6624f65ed9a836b85cef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4005bc5e26bf6624f65ed9a836b85cef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Disconnect</b> (AZ::BehaviorArgument *id=nullptr) override</td></tr>
+<tr class="separator:a4005bc5e26bf6624f65ed9a836b85cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f6c80bbb8c1ce4cea73afa645db7c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22f6c80bbb8c1ce4cea73afa645db7c7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (AZ::BehaviorArgument *id=nullptr) override</td></tr>
+<tr class="separator:a22f6c80bbb8c1ce4cea73afa645db7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148fd3f833f0be3703e04dd1ff2b2f31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a148fd3f833f0be3703e04dd1ff2b2f31"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnected</b> () override</td></tr>
+<tr class="separator:a148fd3f833f0be3703e04dd1ff2b2f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9029cde31f56832fecb12e838e9856be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9029cde31f56832fecb12e838e9856be"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectedId</b> (AZ::BehaviorArgument *id) override</td></tr>
+<tr class="separator:a9029cde31f56832fecb12e838e9856be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719aa6e6efeb77cac20368baf33fbdf5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a719aa6e6efeb77cac20368baf33fbdf5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunctionIndex</b> (const char *functionName) const override</td></tr>
+<tr class="separator:a719aa6e6efeb77cac20368baf33fbdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8502df66ea6f832ed654704abd32884"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8502df66ea6f832ed654704abd32884"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTriggerEnterEvent</b> (const <a class="el" href="struct_az_physics_1_1_trigger_event.html">TriggerEvent</a> &amp;event)</td></tr>
+<tr class="separator:ae8502df66ea6f832ed654704abd32884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f9186727e5c940723c7f226f0d45f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28f9186727e5c940723c7f226f0d45f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTriggerExitEvent</b> (const <a class="el" href="struct_az_physics_1_1_trigger_event.html">TriggerEvent</a> &amp;event)</td></tr>
+<tr class="separator:a28f9186727e5c940723c7f226f0d45f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab958a1bcb393579634849742033492a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab958a1bcb393579634849742033492a5"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectedEntityId</b></td></tr>
+<tr class="separator:ab958a1bcb393579634849742033492a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d8c0930b26d1b058dc8a5e2d1a77d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00d8c0930b26d1b058dc8a5e2d1a77d4"></a>
+SimulatedBodyEvents::OnTriggerEnter::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_triggerEnterHandler</b></td></tr>
+<tr class="separator:a00d8c0930b26d1b058dc8a5e2d1a77d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b8002df6a60fccc2b38b6f70a2d911"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02b8002df6a60fccc2b38b6f70a2d911"></a>
+SimulatedBodyEvents::OnTriggerExit::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_triggerExitHandler</b></td></tr>
+<tr class="separator:a02b8002df6a60fccc2b38b6f70a2d911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Trigger Event Handler for Automation </p>
@@ -99,7 +152,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

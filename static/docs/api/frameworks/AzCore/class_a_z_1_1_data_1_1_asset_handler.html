@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_data_1_1_asset_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,6 +115,18 @@ virtual <br class="typebreak"/>
 <tr class="memitem:ad871b0964cf8476ed6b6754a862883c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad871b0964cf8476ed6b6754a862883c2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultAssetLoadPriority</b> ([[maybe_unused]] <a class="el" href="struct_a_z_1_1_uuid.html">AssetType</a> type, IO::IStreamerTypes::Deadline &amp;defaultDeadline, AZ::IO::IStreamerTypes::Priority &amp;defaultPriority) const </td></tr>
 <tr class="separator:ad871b0964cf8476ed6b6754a862883c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af80f0c75bed246d5ec55090ff9c380a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af80f0c75bed246d5ec55090ff9c380a9"></a>
+virtual <a class="el" href="class_a_z_1_1_data_1_1_asset_handler.html#a5b6a1f03d24903b33a05883a16b91a4f">LoadResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadAssetData</b> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">AssetData</a> &gt; &amp;asset, <a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data_stream.html">AssetDataStream</a> &gt; stream, const <a class="el" href="class_a_z_std_1_1function.html">AZ::Data::AssetFilterCB</a> &amp;assetLoadFilterCB)=0</td></tr>
+<tr class="separator:af80f0c75bed246d5ec55090ff9c380a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac2a865a48d993d1ff8f53b246859fa33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2a865a48d993d1ff8f53b246859fa33"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nHandledTypes</b></td></tr>
+<tr class="separator:ac2a865a48d993d1ff8f53b246859fa33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -211,7 +225,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>AssetData</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

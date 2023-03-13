@@ -54,6 +54,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_task_graph_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::TaskGraphSystemComponent Class Reference</div>  </div>
@@ -103,14 +106,121 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTaskGraphActive</b>
 <tr class="memitem:ac851a9345c3b88f83f5993705aa38ec4 inherit pub_methods_class_a_z_1_1_task_graph_active_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac851a9345c3b88f83f5993705aa38ec4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_task_graph_active_interface.html">TaskGraphActiveInterface</a>,&quot;{08118074-B139-4EF9-B8FD-29F1D6DC9233}&quot;)</td></tr>
 <tr class="separator:ac851a9345c3b88f83f5993705aa38ec4 inherit pub_methods_class_a_z_1_1_task_graph_active_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a699f47b0207f4a71b74e82a92dc71644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_system_component.html#a699f47b0207f4a71b74e82a92dc71644">Activate</a> () override</td></tr>
+<tr class="separator:a699f47b0207f4a71b74e82a92dc71644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796d62884b1403a9471b177a801d4991"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_system_component.html#a796d62884b1403a9471b177a801d4991">Deactivate</a> () override</td></tr>
+<tr class="separator:a796d62884b1403a9471b177a801d4991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a764a985aec463e8276f2d455274043d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a764a985aec463e8276f2d455274043d6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_system_component.html#a764a985aec463e8276f2d455274043d6">GetProvidedServices</a> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;provided)</td></tr>
+<tr class="memdesc:a764a985aec463e8276f2d455274043d6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_component_descriptor.html#a24ddcbcb1c3c60aaf359043fcca73ec8">ComponentDescriptor::GetProvidedServices</a> <br/></td></tr>
+<tr class="separator:a764a985aec463e8276f2d455274043d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b1d8d97ced0b57983852d03dfd6e6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b1d8d97ced0b57983852d03dfd6e6b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_system_component.html#a34b1d8d97ced0b57983852d03dfd6e6b">GetIncompatibleServices</a> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;incompatible)</td></tr>
+<tr class="memdesc:a34b1d8d97ced0b57983852d03dfd6e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_component_descriptor.html#af8e3e2f0510cc509d58031cb245dac0f">ComponentDescriptor::GetIncompatibleServices</a> <br/></td></tr>
+<tr class="separator:a34b1d8d97ced0b57983852d03dfd6e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5662674c0ba657226c6116f4b55f45a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5662674c0ba657226c6116f4b55f45a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_system_component.html#ab5662674c0ba657226c6116f4b55f45a">GetDependentServices</a> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;dependent)</td></tr>
+<tr class="memdesc:ab5662674c0ba657226c6116f4b55f45a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_component_descriptor.html#a74bf48a18f84411fd4d46296c2770951">ComponentDescriptor::GetDependentServices</a> <br/></td></tr>
+<tr class="separator:ab5662674c0ba657226c6116f4b55f45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae90a6ef40df701dbe025f9ae95b68e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ae90a6ef40df701dbe025f9ae95b68e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_task_graph_system_component.html#a8ae90a6ef40df701dbe025f9ae95b68e">Reflect</a> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> *reflection)</td></tr>
+<tr class="memdesc:a8ae90a6ef40df701dbe025f9ae95b68e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_component_descriptor.html#a3722af0fb6275969cc052289bdc50c19">ComponentDescriptor::Reflect</a> <br/></td></tr>
+<tr class="separator:a8ae90a6ef40df701dbe025f9ae95b68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a56eeda0d62cf9597a804c97833ba3f6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56eeda0d62cf9597a804c97833ba3f6d"></a>
+<a class="el" href="class_a_z_1_1_task_executor.html">AZ::TaskExecutor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_taskExecutor</b> = nullptr</td></tr>
+<tr class="separator:a56eeda0d62cf9597a804c97833ba3f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a></td></tr>
+<tr class="memitem:a2263e3e84666abc20ad3ccd142544989 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a2263e3e84666abc20ad3ccd142544989">Init</a> ()</td></tr>
+<tr class="separator:a2263e3e84666abc20ad3ccd142544989 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c8e8ec971ef5e09fc0f325f2636a22 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a67c8e8ec971ef5e09fc0f325f2636a22">ReadInConfig</a> (const <a class="el" href="class_a_z_1_1_component_config.html">ComponentConfig</a> *baseConfig)</td></tr>
+<tr class="separator:a67c8e8ec971ef5e09fc0f325f2636a22 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae041b36bf62b87c310f433f3632c59c2 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#ae041b36bf62b87c310f433f3632c59c2">WriteOutConfig</a> (<a class="el" href="class_a_z_1_1_component_config.html">ComponentConfig</a> *outBaseConfig) const </td></tr>
+<tr class="separator:ae041b36bf62b87c310f433f3632c59c2 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae655511334c685bcfd918584e9a1683c inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#ae655511334c685bcfd918584e9a1683c">SetEntity</a> (<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *entity)</td></tr>
+<tr class="separator:ae655511334c685bcfd918584e9a1683c inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a></td></tr>
+<tr class="memitem:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3e2d5415247e5cf67d7572aaa733693"></a>
+<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#aa3e2d5415247e5cf67d7572aaa733693">m_entity</a></td></tr>
+<tr class="memdesc:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the entity that owns the component. The value is null if the component is not attached to an entity. <br/></td></tr>
+<tr class="separator:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a738455cb4649e6d7acd8c5b970530c04"></a>
+ComponentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a738455cb4649e6d7acd8c5b970530c04">m_id</a></td></tr>
+<tr class="memdesc:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">A component ID that is unique for an entity. This component ID is not unique across all entities. <br/></td></tr>
+<tr class="separator:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a699f47b0207f4a71b74e82a92dc71644"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::TaskGraphSystemComponent::Activate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puts the component into an active state. The system calls this function once during activation of each entity that owns the component. You must override this function. The system calls a component's <a class="el" href="class_a_z_1_1_task_graph_system_component.html#a699f47b0207f4a71b74e82a92dc71644">Activate()</a> function only if all services and components that the component depends on are present and active. Use GetProvidedServices and GetDependentServices to specify these dependencies. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_component.html#a3e3e21c0cb8c2a8cb6dc42c83c94a8fe">AZ::Component</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a796d62884b1403a9471b177a801d4991"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::TaskGraphSystemComponent::Deactivate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Deactivates the component. The system calls this function when the owning entity is being deactivated. You must override this function. As a best practice, ensure that this function returns the component to a minimal footprint. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on.</p>
+<p>The system always calls the component's <a class="el" href="class_a_z_1_1_task_graph_system_component.html#a796d62884b1403a9471b177a801d4991">Deactivate()</a> function before destroying the component. However, deactivation is not always followed by the destruction of the component. An entity and its components can be deactivated and reactivated without being destroyed. Ensure that your <a class="el" href="class_a_z_1_1_task_graph_system_component.html#a796d62884b1403a9471b177a801d4991">Deactivate()</a> implementation can handle this scenario. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_component.html#a7b78b890df9b149722d8703da05c79ac">AZ::Component</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Task/TaskGraphSystemComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

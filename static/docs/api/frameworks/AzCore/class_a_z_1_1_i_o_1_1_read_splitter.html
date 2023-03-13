@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_read_splitter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::ReadSplitter Class Reference</div>  </div>
@@ -63,6 +65,13 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">AZ::IO::StreamStackEntry</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_read_splitter_1_1_buffer_copy_information.html">BufferCopyInformation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_read_splitter_1_1_pending_read.html">PendingRead</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ef63d64cac2ea5998069f4ec0f99717"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ef63d64cac2ea5998069f4ec0f99717"></a>
@@ -98,6 +107,90 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetContext</b
 <tr class="separator:a6292292cf868569df827b4ef3907ea20 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd1900209c97840ae43d19cdce667f7 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#addd1900209c97840ae43d19cdce667f7">UpdateCompletionEstimates</a> (AZStd::chrono::steady_clock::time_point now, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> * &gt; &amp;internalPending, <a class="el" href="class_a_z_std_1_1deque__iterator__impl.html">StreamerContext::PreparedQueue::iterator</a> pendingBegin, <a class="el" href="class_a_z_std_1_1deque__iterator__impl.html">StreamerContext::PreparedQueue::iterator</a> pendingEnd)</td></tr>
 <tr class="separator:addd1900209c97840ae43d19cdce667f7 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3355b38845916d2607e9a39341a7895a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3355b38845916d2607e9a39341a7895a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueAlignedRead</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request)</td></tr>
+<tr class="separator:a3355b38845916d2607e9a39341a7895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a441265afc759fdfa1bc3a7e03da58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10a441265afc759fdfa1bc3a7e03da58"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueueAlignedRead</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_read_splitter_1_1_pending_read.html">PendingRead</a> &amp;pending)</td></tr>
+<tr class="separator:a10a441265afc759fdfa1bc3a7e03da58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9a29d336386dc224e06a6712fc1933"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c9a29d336386dc224e06a6712fc1933"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueBufferedRead</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request)</td></tr>
+<tr class="separator:a6c9a29d336386dc224e06a6712fc1933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405c5524d66377f40ea0e0a251867d99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a405c5524d66377f40ea0e0a251867d99"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueueBufferedRead</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_read_splitter_1_1_pending_read.html">PendingRead</a> &amp;pending)</td></tr>
+<tr class="separator:a405c5524d66377f40ea0e0a251867d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30505954b792db3f6e1db721063212a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab30505954b792db3f6e1db721063212a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueuePendingRequest</b> ()</td></tr>
+<tr class="separator:ab30505954b792db3f6e1db721063212a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4742bbe07e42eed5def4af0291f6655b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4742bbe07e42eed5def4af0291f6655b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeBuffer</b> ()</td></tr>
+<tr class="separator:a4742bbe07e42eed5def4af0291f6655b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af564d84d34df3d43e62ad82119289458"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af564d84d34df3d43e62ad82119289458"></a>
+u8 *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBufferSlot</b> (size_t index)</td></tr>
+<tr class="separator:af564d84d34df3d43e62ad82119289458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f286e62828e10ae4c4ded61538ddcb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f286e62828e10ae4c4ded61538ddcb1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Report</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_report_data.html">Requests::ReportData</a> &amp;data) const </td></tr>
+<tr class="separator:a2f286e62828e10ae4c4ded61538ddcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a315453e1e088ba5943c8b9ac10cf69f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a315453e1e088ba5943c8b9ac10cf69f1"></a>
+<a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html">AZ::Statistics::RunningStatistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_averageNumSubReadsStat</b></td></tr>
+<tr class="separator:a315453e1e088ba5943c8b9ac10cf69f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4197052a8e1175036de7e16a4b8f0673"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4197052a8e1175036de7e16a4b8f0673"></a>
+<a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html">AZ::Statistics::RunningStatistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_alignedReadsStat</b></td></tr>
+<tr class="separator:a4197052a8e1175036de7e16a4b8f0673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0626dd8f5ccdb43ec81aadce2c5cbe82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0626dd8f5ccdb43ec81aadce2c5cbe82"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_read_splitter_1_1_buffer_copy_information.html">BufferCopyInformation</a>[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferCopyInformation</b></td></tr>
+<tr class="separator:a0626dd8f5ccdb43ec81aadce2c5cbe82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb194e3ae4a4d8efa535ac081dd131d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bb194e3ae4a4d8efa535ac081dd131d"></a>
+<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_read_splitter_1_1_pending_read.html">PendingRead</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingReads</b></td></tr>
+<tr class="separator:a5bb194e3ae4a4d8efa535ac081dd131d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892cf8840dc25b32d9c3555c3919e9a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a892cf8840dc25b32d9c3555c3919e9a2"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; u32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_availableBufferSlots</b></td></tr>
+<tr class="separator:a892cf8840dc25b32d9c3555c3919e9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77b43938b90b25fe93b47fa52988031"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa77b43938b90b25fe93b47fa52988031"></a>
+u8 *&#160;</td><td class="memItemRight" valign="bottom"><b>m_buffer</b></td></tr>
+<tr class="separator:aa77b43938b90b25fe93b47fa52988031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73f8d464bb3e94fba537c917d834999"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae73f8d464bb3e94fba537c917d834999"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferSize</b></td></tr>
+<tr class="separator:ae73f8d464bb3e94fba537c917d834999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf97110b8af237c77311a536fe9170b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf97110b8af237c77311a536fe9170b5"></a>
+u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxReadSize</b></td></tr>
+<tr class="separator:aaf97110b8af237c77311a536fe9170b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbed013c4487fc94277a2a44d8be8538"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbed013c4487fc94277a2a44d8be8538"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_memoryAlignment</b></td></tr>
+<tr class="separator:afbed013c4487fc94277a2a44d8be8538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4a9e7b62dde18c6775cd482f2a3f8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b4a9e7b62dde18c6775cd482f2a3f8d"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_sizeAlignment</b></td></tr>
+<tr class="separator:a5b4a9e7b62dde18c6775cd482f2a3f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb76ca5dba5c6027028d8683db96f70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdb76ca5dba5c6027028d8683db96f70"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_adjustOffset</b></td></tr>
+<tr class="separator:abdb76ca5dba5c6027028d8683db96f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8116a1d1b4ff6c1dd557468d695a1107"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8116a1d1b4ff6c1dd557468d695a1107"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_splitAlignedRequests</b></td></tr>
+<tr class="separator:a8116a1d1b4ff6c1dd557468d695a1107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">AZ::IO::StreamStackEntry</a></td></tr>
+<tr class="memitem:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b380a8ce0080b376ffc8c7dc03641ac"></a>
+<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a1b380a8ce0080b376ffc8c7dc03641ac">m_name</a></td></tr>
+<tr class="memdesc:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name that uniquely identifies this entry. <br/></td></tr>
+<tr class="separator:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfeb135e5629127cdc15a346d51aa2dd"></a>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">StreamStackEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#adfeb135e5629127cdc15a346d51aa2dd">m_next</a></td></tr>
+<tr class="memdesc:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next entry in the stack. <br/></td></tr>
+<tr class="separator:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a174d09b6e0ceba3059c234ab15801853"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a174d09b6e0ceba3059c234ab15801853">m_context</a></td></tr>
+<tr class="memdesc:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context information for the entire streaming stack. <br/></td></tr>
+<tr class="separator:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad92a3535a326451a9c11181e4bc7f004"></a>
@@ -160,7 +253,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetContext</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_d_p_e_debug_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::DPEDebugModel Class Reference</div>  </div>
@@ -84,6 +86,65 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaxColumns</b> (in
 <tr class="memitem:ae3cb8bbb3d4f7ba9dbbe2dc7d7d9ca7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3cb8bbb3d4f7ba9dbbe2dc7d7d9ca7b"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxColumns</b> () const </td></tr>
 <tr class="separator:ae3cb8bbb3d4f7ba9dbbe2dc7d7d9ca7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:adcb1bdf4641826f1c25313506398481a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcb1bdf4641826f1c25313506398481a"></a>
+<a class="el" href="class_az_tools_framework_1_1_d_p_e_model_node.html">DPEModelNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeFromIndex</b> (const QModelIndex &amp;theIndex) const </td></tr>
+<tr class="separator:adcb1bdf4641826f1c25313506398481a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4722cd8f300e4738a217d37de8309266"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4722cd8f300e4738a217d37de8309266"></a>
+<a class="el" href="class_az_tools_framework_1_1_d_p_e_model_node.html">DPEModelNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeFromPath</b> (const AZ::Dom::Path &amp;thePath) const </td></tr>
+<tr class="separator:a4722cd8f300e4738a217d37de8309266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037c60b452853aeee6ef6344e8ced68d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a037c60b452853aeee6ef6344e8ced68d"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (const QModelIndex &amp;index, int role=Qt::DisplayRole) const override</td></tr>
+<tr class="separator:a037c60b452853aeee6ef6344e8ced68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8e1e57dee3f5744a77c6a986df4f5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b8e1e57dee3f5744a77c6a986df4f5c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setData</b> (const QModelIndex &amp;index, const QVariant &amp;value, int role=Qt::EditRole) override</td></tr>
+<tr class="separator:a8b8e1e57dee3f5744a77c6a986df4f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b619f049e8c727f9bb8ddc81869b985"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b619f049e8c727f9bb8ddc81869b985"></a>
+Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> (const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a4b619f049e8c727f9bb8ddc81869b985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07178103c277be83d0fc35a8091184a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07178103c277be83d0fc35a8091184a0"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>index</b> (int row, int column, const QModelIndex &amp;parent=QModelIndex()) const override</td></tr>
+<tr class="separator:a07178103c277be83d0fc35a8091184a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6217c0fc4a04d0bffc41582770199f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6217c0fc4a04d0bffc41582770199f1"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> (const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:ae6217c0fc4a04d0bffc41582770199f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3126d397492fb2e6ae7d78b2929302"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe3126d397492fb2e6ae7d78b2929302"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const QModelIndex &amp;) const override</td></tr>
+<tr class="separator:afe3126d397492fb2e6ae7d78b2929302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac402b6d676e54bbaa05cf1b2de0641a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac402b6d676e54bbaa05cf1b2de0641a8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rowCount</b> (const QModelIndex &amp;parent=QModelIndex()) const override</td></tr>
+<tr class="separator:ac402b6d676e54bbaa05cf1b2de0641a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca56cf5350677254d5cb61bc1c406c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca56cf5350677254d5cb61bc1c406c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleReset</b> ()</td></tr>
+<tr class="separator:a6ca56cf5350677254d5cb61bc1c406c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9da183e6ee20a22d86d9d28abce3a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e9da183e6ee20a22d86d9d28abce3a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDomChange</b> (const AZ::Dom::Patch &amp;patch)</td></tr>
+<tr class="separator:a9e9da183e6ee20a22d86d9d28abce3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6ca8c479550bc1b87b4b8ee7a8b0c222"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca8c479550bc1b87b4b8ee7a8b0c222"></a>
+AZ::DocumentPropertyEditor::DocumentAdapterPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_adapter</b></td></tr>
+<tr class="separator:a6ca8c479550bc1b87b4b8ee7a8b0c222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43dc76095b5e3fd6d5d8553b12003c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac43dc76095b5e3fd6d5d8553b12003c5"></a>
+<a class="el" href="class_az_tools_framework_1_1_d_p_e_model_node.html">DPEModelNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootNode</b> = nullptr</td></tr>
+<tr class="separator:ac43dc76095b5e3fd6d5d8553b12003c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a886e30ad8b2526d38d93987300df2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a886e30ad8b2526d38d93987300df2e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxColumns</b> = 1</td></tr>
+<tr class="separator:a9a886e30ad8b2526d38d93987300df2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accea478cc90e3d30913931090c4aea1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accea478cc90e3d30913931090c4aea1e"></a>
+AZ::Dom::JsonBackend<br class="typebreak"/>
+&lt; AZ::Dom::Json::ParseFlags::ParseComments, <br class="typebreak"/>
+AZ::Dom::Json::OutputFormatting::MinifiedJson &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_jsonBackend</b></td></tr>
+<tr class="separator:accea478cc90e3d30913931090c4aea1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea54d3cf656d010be7661053ce8fa46e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea54d3cf656d010be7661053ce8fa46e"></a>
+AZ::DocumentPropertyEditor::DocumentAdapter::ResetEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_resetHandler</b></td></tr>
+<tr class="separator:aea54d3cf656d010be7661053ce8fa46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a5c4a81033ff9d02cd01168516f565"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94a5c4a81033ff9d02cd01168516f565"></a>
+AZ::DocumentPropertyEditor::DocumentAdapter::ChangedEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_changedHandler</b></td></tr>
+<tr class="separator:a94a5c4a81033ff9d02cd01168516f565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/DPEDebugViewer/DPEDebugModel.h</li>
@@ -91,7 +152,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaxColumns</b> () c
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

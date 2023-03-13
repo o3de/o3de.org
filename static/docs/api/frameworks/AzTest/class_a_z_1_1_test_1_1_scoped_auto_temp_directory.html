@@ -50,6 +50,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_test_1_1_scoped_auto_temp_directory-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Test::ScopedAutoTempDirectory Class Reference</div>  </div>
@@ -72,6 +73,12 @@ AZ::IO::FixedMaxPath&#160;</td><td class="memItemRight" valign="bottom"><b>GetDi
 <tr class="memitem:a298b37b23c41d7740b589a6a9b601ab0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a298b37b23c41d7740b589a6a9b601ab0"></a>
 AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>Resolve</b> (const char *path) const </td></tr>
 <tr class="separator:a298b37b23c41d7740b589a6a9b601ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a224b482e2372c77268fd32805488758e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a224b482e2372c77268fd32805488758e"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>m_tempDirectory</b> [AZ::IO::MaxPathLength] = { '\0' }</td></tr>
+<tr class="separator:a224b482e2372c77268fd32805488758e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides a scoped object that will create a temporary operating-system specific folder on creation, and delete it and its contents on destruction. This class is only available on host platforms (Windows, Mac, and Linux) </p>
@@ -81,7 +88,7 @@ AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>Resolve</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzTest API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzTest API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

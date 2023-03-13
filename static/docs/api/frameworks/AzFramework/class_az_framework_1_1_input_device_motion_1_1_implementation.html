@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_motion_1_1_implementation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceMotion::Implementation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -92,6 +94,28 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af23337431c2bc9cbfd0cebd249caa52d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html">Implementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html#af23337431c2bc9cbfd0cebd249caa52d">Create</a> (<a class="el" href="class_az_framework_1_1_input_device_motion.html">InputDeviceMotion</a> &amp;inputDevice)</td></tr>
 <tr class="separator:af23337431c2bc9cbfd0cebd249caa52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5ee08edf393042ca00cbd24cbb79ff5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html#a5ee08edf393042ca00cbd24cbb79ff5b">ProcessAccelerationData</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;channelId, const AZ::Vector3 &amp;data)</td></tr>
+<tr class="separator:a5ee08edf393042ca00cbd24cbb79ff5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7d9b2b16008410b11e6384ae4aacf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html#abe7d9b2b16008410b11e6384ae4aacf1">ProcessRotationRateData</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;channelId, const AZ::Vector3 &amp;data)</td></tr>
+<tr class="separator:abe7d9b2b16008410b11e6384ae4aacf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad0729a6c3441fce8e86e8d99bef77a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html#afad0729a6c3441fce8e86e8d99bef77a">ProcessMagneticFieldData</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;channelId, const AZ::Vector3 &amp;data)</td></tr>
+<tr class="separator:afad0729a6c3441fce8e86e8d99bef77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace31865dbfc46723e4bf057188b28fdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html#ace31865dbfc46723e4bf057188b28fdf">ProcessOrientationData</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;channelId, const AZ::Quaternion &amp;data)</td></tr>
+<tr class="separator:ace31865dbfc46723e4bf057188b28fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76eb2df84ada3c04cf45933670a109a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76eb2df84ada3c04cf45933670a109a8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html#a76eb2df84ada3c04cf45933670a109a8">ResetInputChannelStates</a> ()</td></tr>
+<tr class="memdesc:a76eb2df84ada3c04cf45933670a109a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
+<tr class="separator:a76eb2df84ada3c04cf45933670a109a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a306247facce253b5b3f6dbb50f09d9be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a306247facce253b5b3f6dbb50f09d9be"></a>
+<a class="el" href="class_az_framework_1_1_input_device_motion.html">InputDeviceMotion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html#a306247facce253b5b3f6dbb50f09d9be">m_inputDevice</a></td></tr>
+<tr class="memdesc:a306247facce253b5b3f6dbb50f09d9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the input device. <br/></td></tr>
+<tr class="separator:a306247facce253b5b3f6dbb50f09d9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for platform specific implementations of motion input devices. </p>
@@ -176,6 +200,174 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5ee08edf393042ca00cbd24cbb79ff5b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::InputDeviceMotion::Implementation::ProcessAccelerationData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;&#160;</td>
+          <td class="paramname"><em>channelId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Process raw motion sensor data that has been obtained during since the last frame This function is not thread safe, and so should only be called from the main thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelId</td><td>The input channel id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw motion sensor data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afad0729a6c3441fce8e86e8d99bef77a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::InputDeviceMotion::Implementation::ProcessMagneticFieldData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;&#160;</td>
+          <td class="paramname"><em>channelId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Process raw motion sensor data that has been obtained during since the last frame This function is not thread safe, and so should only be called from the main thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelId</td><td>The input channel id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw motion sensor data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ace31865dbfc46723e4bf057188b28fdf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::InputDeviceMotion::Implementation::ProcessOrientationData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;&#160;</td>
+          <td class="paramname"><em>channelId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Quaternion &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Process raw motion sensor data that has been obtained during since the last frame This function is not thread safe, and so should only be called from the main thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelId</td><td>The input channel id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw motion sensor data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abe7d9b2b16008410b11e6384ae4aacf1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::InputDeviceMotion::Implementation::ProcessRotationRateData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;&#160;</td>
+          <td class="paramname"><em>channelId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Process raw motion sensor data that has been obtained during since the last frame This function is not thread safe, and so should only be called from the main thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">channelId</td><td>The input channel id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The raw motion sensor data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a1d758423f7fa7ef8e1d5c0feb5069469"></a>
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +405,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -54,6 +54,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_functional_script_property-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::FunctionalScriptProperty Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -118,6 +120,29 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryRead</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryUpdate</b> (const <a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a> *scriptProperty)</td></tr>
 <tr class="separator:a6f5810708b576227969dfc38d1de1ea1 inherit pub_methods_class_a_z_1_1_script_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae11f3514d959faa47a6707e2753e8912"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae11f3514d959faa47a6707e2753e8912"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWatcherAdded</b> (<a class="el" href="class_a_z_1_1_script_property_watcher.html">AZ::ScriptPropertyWatcher</a> *scriptPropertyWatcher)</td></tr>
+<tr class="separator:ae11f3514d959faa47a6707e2753e8912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88969ef5e2951d299a2b41e5b2994ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af88969ef5e2951d299a2b41e5b2994ef"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWatcherRemoved</b> (<a class="el" href="class_a_z_1_1_script_property_watcher.html">AZ::ScriptPropertyWatcher</a> *scriptPropertyWatcher)</td></tr>
+<tr class="separator:af88969ef5e2951d299a2b41e5b2994ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf38dc912a031815412c5c4e5904acfd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf38dc912a031815412c5c4e5904acfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalPropertyChanged</b> ()</td></tr>
+<tr class="separator:adf38dc912a031815412c5c4e5904acfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_script_property"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_script_property')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a></td></tr>
+<tr class="memitem:a4e4610b3f86209ea0597b2587146c17b inherit pro_methods_class_a_z_1_1_script_property"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e4610b3f86209ea0597b2587146c17b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CloneDataFrom</b> (const <a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a> *scriptProperty)=0</td></tr>
+<tr class="separator:a4e4610b3f86209ea0597b2587146c17b inherit pro_methods_class_a_z_1_1_script_property"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a7873317ef0db0e8945f9b9c7e8579981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7873317ef0db0e8945f9b9c7e8579981"></a>
+<a class="el" href="class_a_z_std_1_1set.html">AZStd::set</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_script_property_watcher.html">AZ::ScriptPropertyWatcher</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_watchers</b></td></tr>
+<tr class="separator:a7873317ef0db0e8945f9b9c7e8579981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_a_z_1_1_script_property"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_z_1_1_script_property')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_z_1_1_script_property.html">AZ::ScriptProperty</a></td></tr>
@@ -141,7 +166,7 @@ AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_id</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

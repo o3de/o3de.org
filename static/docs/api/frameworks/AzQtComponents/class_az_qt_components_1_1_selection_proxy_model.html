@@ -51,6 +51,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_selection_proxy_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::SelectionProxyModel Class Reference</div>  </div>
@@ -84,6 +87,47 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> () override
 <tr class="memitem:a6a8d52a2695fff385a2c7cbbdab8139f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a8d52a2695fff385a2c7cbbdab8139f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clearCurrentIndex</b> () override</td></tr>
 <tr class="separator:a6a8d52a2695fff385a2c7cbbdab8139f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a270f54e23c8b215c8d5ad733ee0a1722"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a270f54e23c8b215c8d5ad733ee0a1722"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSourceSelectionChanged</b> (const QItemSelection &amp;selected, const QItemSelection &amp;deselected)</td></tr>
+<tr class="separator:a270f54e23c8b215c8d5ad733ee0a1722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0dda91a22f3790abfd3b270df01054"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc0dda91a22f3790abfd3b270df01054"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSourceSelectionCurrentChanged</b> (const QModelIndex &amp;current, const QModelIndex &amp;previous)</td></tr>
+<tr class="separator:afc0dda91a22f3790abfd3b270df01054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad30258ccce0af94d4ac70ed455b82d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ad30258ccce0af94d4ac70ed455b82d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnProxySelectionChanged</b> (const QItemSelection &amp;selected, const QItemSelection &amp;deselected)</td></tr>
+<tr class="separator:a4ad30258ccce0af94d4ac70ed455b82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e07dc0dd46a4886a3354d4b8d48d1cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e07dc0dd46a4886a3354d4b8d48d1cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnProxyModelRowsInserted</b> (const QModelIndex &amp;parent, int first, int last)</td></tr>
+<tr class="separator:a5e07dc0dd46a4886a3354d4b8d48d1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6be7e50798b0d2f72c14b2c3e0499d87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6be7e50798b0d2f72c14b2c3e0499d87"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>mapFromSource</b> (const QModelIndex &amp;sourceIndex)</td></tr>
+<tr class="separator:a6be7e50798b0d2f72c14b2c3e0499d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf266672db0765771429df28e1e8dd5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf266672db0765771429df28e1e8dd5d"></a>
+QItemSelection&#160;</td><td class="memItemRight" valign="bottom"><b>mapFromSource</b> (const QItemSelection &amp;sourceSelection)</td></tr>
+<tr class="separator:acf266672db0765771429df28e1e8dd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015644852b2391e693a5472c238c9fa8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a015644852b2391e693a5472c238c9fa8"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>mapToSource</b> (const QModelIndex &amp;targetIndex)</td></tr>
+<tr class="separator:a015644852b2391e693a5472c238c9fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e7577c3b827ddb440612f42988a65e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56e7577c3b827ddb440612f42988a65e"></a>
+QItemSelection&#160;</td><td class="memItemRight" valign="bottom"><b>mapToSource</b> (const QItemSelection &amp;targetSelection)</td></tr>
+<tr class="separator:a56e7577c3b827ddb440612f42988a65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a12f2cc1684e29dbba366fed821da47f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12f2cc1684e29dbba366fed821da47f4"></a>
+AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+QVector&lt; QAbstractProxyModel * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_proxyModels</b></td></tr>
+<tr class="separator:a12f2cc1684e29dbba366fed821da47f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa413b27f2e241901d16ccac9e356ec31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa413b27f2e241901d16ccac9e356ec31"></a>
+AZ_POP_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+QItemSelectionModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sourceSelectionModel</b></td></tr>
+<tr class="separator:aa413b27f2e241901d16ccac9e356ec31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is a QItemSelectionModel that syncs through proxy models and maintains selection. In Qt we can have a model being filtered/sorted by proxy models. If the selection model is connected to the original model, the view needs a new selection model that understands the filtering. This class does that conversion. : this class does not support changing proxy models (anywhere in the chain). The class will have to be recreated with the new proxy model. </p>
@@ -93,7 +137,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clearCurrentIndex</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

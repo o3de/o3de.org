@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_search_asset_type_selector_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::SearchAssetTypeSelectorWidget Class Reference</div>  </div>
@@ -85,6 +87,38 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab6f74ce5cb08d468e35e87c01d39d5a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6f74ce5cb08d468e35e87c01d39d5a4"></a>
 public&#160;</td><td class="memItemRight" valign="bottom"><b>Q_SIGNAL</b>: void ClearAll() const</td></tr>
 <tr class="separator:ab6f74ce5cb08d468e35e87c01d39d5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7690550218ef257fe6ab92b64389e08f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7690550218ef257fe6ab92b64389e08f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAssetTypeGroup</b> (QMenu *menu, const QString &amp;group)</td></tr>
+<tr class="separator:a7690550218ef257fe6ab92b64389e08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f72a51d3eed3e6a4bd04eb98af72a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77f72a51d3eed3e6a4bd04eb98af72a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAllAction</b> (QMenu *menu)</td></tr>
+<tr class="separator:a77f72a51d3eed3e6a4bd04eb98af72a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a54553f32d1eef97c763c79c83f41ee8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54553f32d1eef97c763c79c83f41ee8d"></a>
+QScopedPointer<br class="typebreak"/>
+&lt; Ui::SearchAssetTypeSelectorWidgetClass &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ui</b></td></tr>
+<tr class="separator:a54553f32d1eef97c763c79c83f41ee8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b446993f4a0bd48bd948075e395dca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b446993f4a0bd48bd948075e395dca2"></a>
+QSharedPointer&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_composite_filter.html">CompositeFilter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_filter</b></td></tr>
+<tr class="separator:a8b446993f4a0bd48bd948075e395dca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300697966c3132527ece19fff6372960"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a300697966c3132527ece19fff6372960"></a>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_filter_by_widget.html">FilterByWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterByWidget</b></td></tr>
+<tr class="separator:a300697966c3132527ece19fff6372960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55293d0647fa310275abb80364886b25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55293d0647fa310275abb80364886b25"></a>
+AZStd::vector&lt; QCheckBox * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetTypeCheckboxes</b></td></tr>
+<tr class="separator:a55293d0647fa310275abb80364886b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1de5c5748a5e0484bf1c39542c9f34a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1de5c5748a5e0484bf1c39542c9f34a"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; QCheckBox *, FilterConstType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionFiltersMapping</b></td></tr>
+<tr class="separator:ac1de5c5748a5e0484bf1c39542c9f34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92076131a82e892269d607d5022a070f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92076131a82e892269d607d5022a070f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_locked</b></td></tr>
+<tr class="separator:a92076131a82e892269d607d5022a070f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/AssetBrowser/Search/SearchAssetTypeSelectorWidget.h</li>
@@ -92,7 +126,7 @@ public&#160;</td><td class="memItemRight" valign="bottom"><b>Q_SIGNAL</b>: void 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

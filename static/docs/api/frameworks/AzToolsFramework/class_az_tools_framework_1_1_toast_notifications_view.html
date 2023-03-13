@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_toast_notifications_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ToastNotificationsView Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -104,6 +106,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMaxQueuedNotificat
 <tr class="memitem:a372596c95b1bb50eed8f13a8f968fb77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a372596c95b1bb50eed8f13a8f968fb77"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRejectDuplicates</b> (bool rejectDuplicates)</td></tr>
 <tr class="separator:a372596c95b1bb50eed8f13a8f968fb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a15aeb31cf6c3b2f995920f86321ac54f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15aeb31cf6c3b2f995920f86321ac54f"></a>
+ToastId&#160;</td><td class="memItemRight" valign="bottom"><b>CreateToastNotification</b> (const AzQtComponents::ToastConfiguration &amp;toastConfiguration)</td></tr>
+<tr class="separator:a15aeb31cf6c3b2f995920f86321ac54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7489fd6678fea70d445db3b1a3119d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7489fd6678fea70d445db3b1a3119d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayQueuedNotification</b> ()</td></tr>
+<tr class="separator:af7489fd6678fea70d445db3b1a3119d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13bbda9b5231f3f10ffebf67fe08d56d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13bbda9b5231f3f10ffebf67fe08d56d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>DuplicateNotificationInQueue</b> (const AzQtComponents::ToastConfiguration &amp;toastConfiguration)</td></tr>
+<tr class="separator:a13bbda9b5231f3f10ffebf67fe08d56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914885c72a5fdc0cc374fcb5fb0583fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a914885c72a5fdc0cc374fcb5fb0583fd"></a>
+QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>GetGlobalPoint</b> ()</td></tr>
+<tr class="separator:a914885c72a5fdc0cc374fcb5fb0583fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac429bbeee7c242eb77d539bd686942f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac429bbeee7c242eb77d539bd686942f5"></a>
+ToastId&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeNotification</b></td></tr>
+<tr class="separator:ac429bbeee7c242eb77d539bd686942f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad179ee6ec77cde953b1043025196c4df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad179ee6ec77cde953b1043025196c4df"></a>
+AZStd::unordered_map&lt; ToastId, <br class="typebreak"/>
+AzQtComponents::ToastNotification * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_notifications</b></td></tr>
+<tr class="separator:ad179ee6ec77cde953b1043025196c4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eea5e001605a26dbbb0c52cb188e939"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eea5e001605a26dbbb0c52cb188e939"></a>
+AZStd::vector&lt; ToastId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_queuedNotifications</b></td></tr>
+<tr class="separator:a6eea5e001605a26dbbb0c52cb188e939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3562684b419e7e251b686bc9a9de417"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3562684b419e7e251b686bc9a9de417"></a>
+QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>m_offset</b> = QPoint(10, 10)</td></tr>
+<tr class="separator:ab3562684b419e7e251b686bc9a9de417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3be1135a5b74907c2768d5c9010e139"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3be1135a5b74907c2768d5c9010e139"></a>
+QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>m_anchorPoint</b> = QPointF(1, 0)</td></tr>
+<tr class="separator:ac3be1135a5b74907c2768d5c9010e139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482ca2e1b054c2a6057d504bdc50df96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a482ca2e1b054c2a6057d504bdc50df96"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxQueuedNotifications</b> = 5</td></tr>
+<tr class="separator:a482ca2e1b054c2a6057d504bdc50df96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9f11734d818ee30ca565b519eccd19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d9f11734d818ee30ca565b519eccd19"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_rejectDuplicates</b> = true</td></tr>
+<tr class="separator:a2d9f11734d818ee30ca565b519eccd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A QWidget that displays and manages a queue of toast notifications. </p>
@@ -114,7 +156,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRejectDuplicates</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

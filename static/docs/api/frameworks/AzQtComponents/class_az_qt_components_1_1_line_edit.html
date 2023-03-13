@@ -52,6 +52,9 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_line_edit-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -108,6 +111,49 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_line_edit.html#a4ebaa74d3af617481a51b3d0b11eebe5">setEnableClearButtonWhenReadOnly</a> (QLineEdit *lineEdit, bool enabled)</td></tr>
 <tr class="memdesc:a4ebaa74d3af617481a51b3d0b11eebe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the clear button to be displayed on read-only LineEdits. Default value is false. <br/></td></tr>
 <tr class="separator:a4ebaa74d3af617481a51b3d0b11eebe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae12c534a6a239e1f4aaff9fc8defb84c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae12c534a6a239e1f4aaff9fc8defb84c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) static QPointer&lt; LineEditWatcher &gt; s_lineEditWatcher</td></tr>
+<tr class="separator:ae12c534a6a239e1f4aaff9fc8defb84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a5176b8d90689eb94dc131e8e687feaa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5176b8d90689eb94dc131e8e687feaa5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeWatcher</b> ()</td></tr>
+<tr class="separator:a5176b8d90689eb94dc131e8e687feaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a020e356f8ca9919f8db00808e8b8eeac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a020e356f8ca9919f8db00808e8b8eeac"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>uninitializeWatcher</b> ()</td></tr>
+<tr class="separator:a020e356f8ca9919f8db00808e8b8eeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b13edaea31ef5421aa573c5d3a4e72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7b13edaea31ef5421aa573c5d3a4e72"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawFrame</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOption *option, QPainter *painter, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:af7b13edaea31ef5421aa573c5d3a4e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d2af8c8b9d8d62bafa76c6d04b9009"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80d2af8c8b9d8d62bafa76c6d04b9009"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>polish</b> (QProxyStyle *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a80d2af8c8b9d8d62bafa76c6d04b9009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d24dc3f5c8451b1d9a0a833fb8828b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d24dc3f5c8451b1d9a0a833fb8828b0"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>unpolish</b> (QProxyStyle *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a0d24dc3f5c8451b1d9a0a833fb8828b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd8d8958d9eade156a60107b3af3295"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacd8d8958d9eade156a60107b3af3295"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>applyErrorStyle</b> (QLineEdit *lineEdit, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:aacd8d8958d9eade156a60107b3af3295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18f278e95ead5c219d5565ce81e6cc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa18f278e95ead5c219d5565ce81e6cc8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>removeErrorStyle</b> (QLineEdit *lineEdit)</td></tr>
+<tr class="separator:aa18f278e95ead5c219d5565ce81e6cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa2d9765a340f067d758688eaf015c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaa2d9765a340f067d758688eaf015c0"></a>
+static QIcon&#160;</td><td class="memItemRight" valign="bottom"><b>clearButtonIcon</b> (const QStyleOption *option, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:afaa2d9765a340f067d758688eaf015c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b667e983c8ba054d41e424bf5939fd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b667e983c8ba054d41e424bf5939fd7"></a>
+static QRect&#160;</td><td class="memItemRight" valign="bottom"><b>lineEditContentsRect</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QStyle::SubElement element, const QStyleOption *option, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_line_edit_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a3b667e983c8ba054d41e424bf5939fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a343fbdf70f981bf6426d17cf2f2b7664"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a343fbdf70f981bf6426d17cf2f2b7664"></a>
+static AZ_POP_DISABLE_WARNING <br class="typebreak"/>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>s_watcherReferenceCount</b></td></tr>
+<tr class="separator:a343fbdf70f981bf6426d17cf2f2b7664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -330,7 +376,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Style</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1condition__variable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::condition_variable Class Reference</div>  </div>
@@ -124,6 +126,21 @@ template&lt;class Rep , class Period &gt; </td></tr>
 template&lt;class Rep , class Period , class Predicate &gt; </td></tr>
 <tr class="memitem:aceb4c4545cea6227d456cadd0cc5aeee"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wait_for</b> (<a class="el" href="class_a_z_std_1_1unique__lock.html">unique_lock</a>&lt; <a class="el" href="class_a_z_std_1_1mutex.html">mutex</a> &gt; &amp;lock, const chrono::duration&lt; Rep, Period &gt; &amp;rel_time, Predicate pred)</td></tr>
 <tr class="separator:aceb4c4545cea6227d456cadd0cc5aeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a63f86deefebdd7db2cc48b5d0e463366"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63f86deefebdd7db2cc48b5d0e463366"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>condition_variable</b> (const <a class="el" href="class_a_z_std_1_1condition__variable.html">condition_variable</a> &amp;)</td></tr>
+<tr class="separator:a63f86deefebdd7db2cc48b5d0e463366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a6d60bb61578fccbb86344f6062d96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88a6d60bb61578fccbb86344f6062d96"></a>
+<a class="el" href="class_a_z_std_1_1condition__variable.html">condition_variable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1condition__variable.html">condition_variable</a> &amp;)</td></tr>
+<tr class="separator:a88a6d60bb61578fccbb86344f6062d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac2f9e73e4dc872c4f4cf6012066eb963"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2f9e73e4dc872c4f4cf6012066eb963"></a>
+native_cond_var_data_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_cond_var</b></td></tr>
+<tr class="separator:ac2f9e73e4dc872c4f4cf6012066eb963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/std/parallel/condition_variable.h</li>
@@ -133,7 +150,7 @@ template&lt;class Rep , class Period , class Predicate &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_logging_1_1_log_line-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Logging::LogLine Class Reference</div>  </div>
@@ -137,6 +139,39 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseLine</b> 
 <tr class="memitem:a0e50658f59f473f0dd292fb5322db6e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e50658f59f473f0dd292fb5322db6e0"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseContextLogLine</b> (const <a class="el" href="class_az_tools_framework_1_1_logging_1_1_log_line.html">LogLine</a> &amp;line, std::pair&lt; QString, QString &gt; &amp;result)</td></tr>
 <tr class="separator:a0e50658f59f473f0dd292fb5322db6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac2011b0a591c537351ca4a7715cd773a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2011b0a591c537351ca4a7715cd773a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Process</b> ()</td></tr>
+<tr class="separator:ac2011b0a591c537351ca4a7715cd773a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af909b8fa7b01331713746610dd834fdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af909b8fa7b01331713746610dd834fdf"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_message</b></td></tr>
+<tr class="separator:af909b8fa7b01331713746610dd834fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa379d4a7233ab6439dbfcb3c0d86bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fa379d4a7233ab6439dbfcb3c0d86bf"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_window</b></td></tr>
+<tr class="separator:a8fa379d4a7233ab6439dbfcb3c0d86bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c662ebf728dd8eb26c38bb4a3a83c2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c662ebf728dd8eb26c38bb4a3a83c2d"></a>
+AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_messageTime</b> = 0</td></tr>
+<tr class="separator:a9c662ebf728dd8eb26c38bb4a3a83c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7684fa48a767cf6763b16141419855"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f7684fa48a767cf6763b16141419855"></a>
+LogType&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b> = TYPE_MESSAGE</td></tr>
+<tr class="separator:a9f7684fa48a767cf6763b16141419855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4098a03b065dd2bce870b961eecf64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e4098a03b065dd2bce870b961eecf64"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isRichText</b> = false</td></tr>
+<tr class="separator:a2e4098a03b065dd2bce870b961eecf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6703c8ecf974a8378106d4cd097cb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e6703c8ecf974a8378106d4cd097cb5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_processed</b> = false</td></tr>
+<tr class="separator:a7e6703c8ecf974a8378106d4cd097cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6dcd8150ea27e0a92409403bbec447d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6dcd8150ea27e0a92409403bbec447d"></a>
+uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadId</b> = 0</td></tr>
+<tr class="separator:ab6dcd8150ea27e0a92409403bbec447d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488afb6a246774326703237cfbaac419"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a488afb6a246774326703237cfbaac419"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_userData</b> = nullptr</td></tr>
+<tr class="separator:a488afb6a246774326703237cfbaac419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_logging_1_1_log_line.html">LogLine</a> is a structured version of raw text logged with our various logging mechanisms. It is meant to be just a blind data holder, so you can change its fields directly before submitting it to a model, or just create it via the constructor. Its only not a struct because it has some functions on it to help. </p>
@@ -189,7 +224,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseContextLo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

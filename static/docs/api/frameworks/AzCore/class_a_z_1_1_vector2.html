@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_vector2-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Vector2 Class Reference</div>  </div>
@@ -412,6 +413,25 @@ static <a class="el" href="class_a_z_1_1_vector2.html">Vector2</a>&#160;</td><td
 static <a class="el" href="class_a_z_1_1_vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_vector2.html#a3ba99a77019a630518c48362c5779641">CreateSelectCmpGreater</a> (const <a class="el" href="class_a_z_1_1_vector2.html">Vector2</a> &amp;cmp1, const <a class="el" href="class_a_z_1_1_vector2.html">Vector2</a> &amp;cmp2, const <a class="el" href="class_a_z_1_1_vector2.html">Vector2</a> &amp;vA, const <a class="el" href="class_a_z_1_1_vector2.html">Vector2</a> &amp;vB)</td></tr>
 <tr class="memdesc:a3ba99a77019a630518c48362c5779641"><td class="mdescLeft">&#160;</td><td class="mdescRight">operation ( r.x = (cmp1.x &gt; cmp2.x) ? vA.x : vB.x ) per component. <br/></td></tr>
 <tr class="separator:a3ba99a77019a630518c48362c5779641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6a27fbb178dfe25812eb8624df2b4cf7"><td class="memItemLeft" ><a class="anchor" id="a6a27fbb178dfe25812eb8624df2b4cf7"></a>
+union {</td></tr>
+<tr class="memitem:a6be8614c58dedc5cff0d8f372644965b"><td class="memItemLeft" >&#160;&#160;&#160;Simd::Vec2::FloatType&#160;&#160;&#160;<b>m_value</b></td></tr>
+<tr class="separator:a6be8614c58dedc5cff0d8f372644965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5969c7324647dd7b96e5a0033dcc6ff5"><td class="memItemLeft" >&#160;&#160;&#160;float&#160;&#160;&#160;<b>m_values</b> [2]</td></tr>
+<tr class="separator:a5969c7324647dd7b96e5a0033dcc6ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070f634b3d7230f96afb51677299b3ee"><td class="memItemLeft" ><a class="anchor" id="a070f634b3d7230f96afb51677299b3ee"></a>
+&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a3b632ef389810af17ff067e6a62ecf8c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<b>m_x</b></td></tr>
+<tr class="separator:a3b632ef389810af17ff067e6a62ecf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca43b899aaa76af5e8c3b43ae2801d3f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<b>m_y</b></td></tr>
+<tr class="separator:aca43b899aaa76af5e8c3b43ae2801d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070f634b3d7230f96afb51677299b3ee"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a070f634b3d7230f96afb51677299b3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a27fbb178dfe25812eb8624df2b4cf7"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a6a27fbb178dfe25812eb8624df2b4cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>2-dimensional vector class. </p>
@@ -798,7 +818,7 @@ static <a class="el" href="class_a_z_1_1_vector2.html">Vector2</a>&#160;</td><td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

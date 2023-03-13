@@ -55,6 +55,9 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_script_1_1_lua_symbols_reporter_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,6 +107,62 @@ Static Public Attributes</h2></td></tr>
 static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><b>LogName</b> [] = &quot;LuaSymbolsReporter&quot;</td></tr>
 <tr class="separator:a132e25866dad09b6952f22889dd50fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a03f1707a16de19323e1e7f743ee07e46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03f1707a16de19323e1e7f743ee07e46"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () override</td></tr>
+<tr class="separator:a03f1707a16de19323e1e7f743ee07e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4298e7aa5b62b53d40704922fb7f83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f4298e7aa5b62b53d40704922fb7f83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
+<tr class="separator:a8f4298e7aa5b62b53d40704922fb7f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2ebdb5045788ee5d71a93616aff225"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc2ebdb5045788ee5d71a93616aff225"></a>
+AZ::ScriptContext *&#160;</td><td class="memItemRight" valign="bottom"><b>InitScriptContext</b> ()</td></tr>
+<tr class="separator:abc2ebdb5045788ee5d71a93616aff225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbcc1d63a3ed6c79ba03fd84106e5c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cbcc1d63a3ed6c79ba03fd84106e5c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadGlobalSymbols</b> ()</td></tr>
+<tr class="separator:a1cbcc1d63a3ed6c79ba03fd84106e5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a1fb7ad4700085c38c660a63de84de00e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fb7ad4700085c38c660a63de84de00e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
+<tr class="separator:a1fb7ad4700085c38c660a63de84de00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fd7d00c3a3c53fd7a6f30f24bb8873"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71fd7d00c3a3c53fd7a6f30f24bb8873"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
+<tr class="separator:a71fd7d00c3a3c53fd7a6f30f24bb8873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5da8d82a86e50cbff6781ba3411657d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5da8d82a86e50cbff6781ba3411657d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;required)</td></tr>
+<tr class="separator:ab5da8d82a86e50cbff6781ba3411657d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e44381a6e79b21528ecba74ee328921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e44381a6e79b21528ecba74ee328921"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;dependent)</td></tr>
+<tr class="separator:a9e44381a6e79b21528ecba74ee328921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6a21a2a0e3d3d5ff060877f59de6b093"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a21a2a0e3d3d5ff060877f59de6b093"></a>
+AZ::ScriptContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_scriptContext</b> = nullptr</td></tr>
+<tr class="separator:a6a21a2a0e3d3d5ff060877f59de6b093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650d07d4d96f545a583e715fc09a7dcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a650d07d4d96f545a583e715fc09a7dcb"></a>
+AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_script_1_1_lua_class_symbol.html">LuaClassSymbol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedClassSymbols</b></td></tr>
+<tr class="separator:a650d07d4d96f545a583e715fc09a7dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ace7675d9abb9c17bd6871604284f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68ace7675d9abb9c17bd6871604284f7"></a>
+AZStd::unordered_map&lt; AZ::Uuid, <br class="typebreak"/>
+size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_classUuidToIndexMap</b></td></tr>
+<tr class="separator:a68ace7675d9abb9c17bd6871604284f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f3d7abbf3da53ed1b03f51489651e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21f3d7abbf3da53ed1b03f51489651e2"></a>
+AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_script_1_1_lua_property_symbol.html">LuaPropertySymbol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedGlobalPropertySymbols</b></td></tr>
+<tr class="separator:a21f3d7abbf3da53ed1b03f51489651e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369009b9bba079568104f5f98296f4a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a369009b9bba079568104f5f98296f4a7"></a>
+AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_script_1_1_lua_method_symbol.html">LuaMethodSymbol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedGlobalFunctionSymbols</b></td></tr>
+<tr class="separator:a369009b9bba079568104f5f98296f4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c9b5914b1bb66439d9e5c81df32555"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76c9b5914b1bb66439d9e5c81df32555"></a>
+AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_script_1_1_lua_e_bus_symbol.html">LuaEBusSymbol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedEbusSymbols</b></td></tr>
+<tr class="separator:a76c9b5914b1bb66439d9e5c81df32555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0333d05db9214e01e5b300a2d3f28c1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0333d05db9214e01e5b300a2d3f28c1b"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZStd::string, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ebusNameToIndexMap</b></td></tr>
+<tr class="separator:a0333d05db9214e01e5b300a2d3f28c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ac47a52758195ba7ffa28a8309bc69178"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac47a52758195ba7ffa28a8309bc69178"></a>
@@ -118,7 +177,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>IntrusiveHelper</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

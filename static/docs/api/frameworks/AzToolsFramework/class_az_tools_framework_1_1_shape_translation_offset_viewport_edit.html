@@ -53,6 +53,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_shape_translation_offset_viewport_edit-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ShapeTranslationOffsetViewportEdit Class Reference</div>  </div>
@@ -112,6 +113,78 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallSetTranslation
 <tr class="memitem:a66a6b82329e14f789e0d50fad1107cc9 inherit pub_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66a6b82329e14f789e0d50fad1107cc9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallEndEditing</b> (AZStd::function&lt; void()&gt; endEditing)</td></tr>
 <tr class="separator:a66a6b82329e14f789e0d50fad1107cc9 inherit pub_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9ed0521d66006c774d7762ac24fe0f27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ed0521d66006c774d7762ac24fe0f27"></a>
+AZStd::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_translation_manipulators.html">TranslationManipulators</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_shape_translation_offset_viewport_edit.html#a9ed0521d66006c774d7762ac24fe0f27">m_translationManipulators</a></td></tr>
+<tr class="memdesc:a9ed0521d66006c774d7762ac24fe0f27"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_tools_framework_1_1_manipulators.html">Manipulators</a> for editing shape offset. <br/></td></tr>
+<tr class="separator:a9ed0521d66006c774d7762ac24fe0f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_base_shape_viewport_edit.html">AzToolsFramework::BaseShapeViewportEdit</a></td></tr>
+<tr class="memitem:a188b56ecbb2ef2f95a8f92cd2f1b616b inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a188b56ecbb2ef2f95a8f92cd2f1b616b"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetManipulatorSpace</b> () const </td></tr>
+<tr class="separator:a188b56ecbb2ef2f95a8f92cd2f1b616b inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8467a86a44c3a20662307f50cfaef77 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8467a86a44c3a20662307f50cfaef77"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetNonUniformScale</b> () const </td></tr>
+<tr class="separator:ab8467a86a44c3a20662307f50cfaef77 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7b2eaeb1638a00889e40e188e51468 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f7b2eaeb1638a00889e40e188e51468"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetTranslationOffset</b> () const </td></tr>
+<tr class="separator:a3f7b2eaeb1638a00889e40e188e51468 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae021e4619a787c4946bd9873a9f8a6c1 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae021e4619a787c4946bd9873a9f8a6c1"></a>
+AZ::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><b>GetRotationOffset</b> () const </td></tr>
+<tr class="separator:ae021e4619a787c4946bd9873a9f8a6c1 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52085b838244b11651c3d928b24ce7d inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac52085b838244b11651c3d928b24ce7d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTranslationOffset</b> (const AZ::Vector3 &amp;translationOffset)</td></tr>
+<tr class="separator:ac52085b838244b11651c3d928b24ce7d inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32925b4d2cd78c6abc35876e0bfa7bf6 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32925b4d2cd78c6abc35876e0bfa7bf6"></a>
+AZ::Transform&#160;</td><td class="memItemRight" valign="bottom"><b>GetLocalTransform</b> () const </td></tr>
+<tr class="separator:a32925b4d2cd78c6abc35876e0bfa7bf6 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10cc96f744ea9855d076c2e2cd4c78f9 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10cc96f744ea9855d076c2e2cd4c78f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginEditing</b> ()</td></tr>
+<tr class="separator:a10cc96f744ea9855d076c2e2cd4c78f9 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379349587988630d868b939ae1832c3b inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a379349587988630d868b939ae1832c3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndEditing</b> ()</td></tr>
+<tr class="separator:a379349587988630d868b939ae1832c3b inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3fdc69c8c409ee4e539115c1ade053 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea3fdc69c8c409ee4e539115c1ade053"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginUndoBatch</b> (const char *label)</td></tr>
+<tr class="separator:aea3fdc69c8c409ee4e539115c1ade053 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adabae2c7e3a6f1d9cdaeba8644540ea5 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adabae2c7e3a6f1d9cdaeba8644540ea5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndUndoBatch</b> ()</td></tr>
+<tr class="separator:adabae2c7e3a6f1d9cdaeba8644540ea5 inherit pro_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_az_tools_framework_1_1_base_shape_viewport_edit.html">AzToolsFramework::BaseShapeViewportEdit</a></td></tr>
+<tr class="memitem:a95a22b7dc62323f9676b531157764fd1 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95a22b7dc62323f9676b531157764fd1"></a>
+AZStd::function&lt; AZ::Transform()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getManipulatorSpace</b></td></tr>
+<tr class="separator:a95a22b7dc62323f9676b531157764fd1 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ee6a2c2acb8ce38fe3a2fd12e74edf inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9ee6a2c2acb8ce38fe3a2fd12e74edf"></a>
+AZStd::function&lt; AZ::Vector3()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getNonUniformScale</b></td></tr>
+<tr class="separator:ad9ee6a2c2acb8ce38fe3a2fd12e74edf inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b1f99f2e2797631b359fe0f588c0b1 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44b1f99f2e2797631b359fe0f588c0b1"></a>
+AZStd::function&lt; AZ::Vector3()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getTranslationOffset</b></td></tr>
+<tr class="separator:a44b1f99f2e2797631b359fe0f588c0b1 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7276456bd4c290adb7fa3f9b4b3e3f9a inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7276456bd4c290adb7fa3f9b4b3e3f9a"></a>
+AZStd::function&lt; AZ::Quaternion()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getRotationOffset</b></td></tr>
+<tr class="separator:a7276456bd4c290adb7fa3f9b4b3e3f9a inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad955df0bc05c400445c1f0d7b28bde58 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad955df0bc05c400445c1f0d7b28bde58"></a>
+AZStd::function&lt; void(const <br class="typebreak"/>
+AZ::Vector3 &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_setTranslationOffset</b></td></tr>
+<tr class="separator:ad955df0bc05c400445c1f0d7b28bde58 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5129823ae5c600bd1b5cdd35fdf575 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d5129823ae5c600bd1b5cdd35fdf575"></a>
+AZStd::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_beginEditing</b></td></tr>
+<tr class="separator:a1d5129823ae5c600bd1b5cdd35fdf575 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c81f1c6ce1f560a771546dab06098b2 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c81f1c6ce1f560a771546dab06098b2"></a>
+AZStd::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_endEditing</b></td></tr>
+<tr class="separator:a4c81f1c6ce1f560a771546dab06098b2 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569895356930aacc53ebcec83b779bb9 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a569895356930aacc53ebcec83b779bb9"></a>
+AZStd::unordered_set<br class="typebreak"/>
+&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityIds</b></td></tr>
+<tr class="separator:a569895356930aacc53ebcec83b779bb9 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5175f80ddba3f7cdb5a0fe78859ff8 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf5175f80ddba3f7cdb5a0fe78859ff8"></a>
+<a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoBatch</b> = nullptr</td></tr>
+<tr class="separator:aaf5175f80ddba3f7cdb5a0fe78859ff8 inherit pro_attribs_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wraps translation manipulators for editing shape translation offsets. </p>
@@ -149,7 +222,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallEndEditing</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

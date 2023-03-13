@@ -57,6 +57,11 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_slice_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -358,6 +363,191 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a90fbb6cedc03979a90d57f1bd7343f4e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a90fbb6cedc03979a90d57f1bd7343f4e">GetMappingBetweenSubsliceAndSourceInstanceEntityIds</a> (const <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceComponent::SliceInstance</a> *sourceSliceInstance, const <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance_address.html">AZ::SliceComponent::SliceInstanceAddress</a> &gt; &amp;sourceSubsliceInstanceAncestry, const <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance_address.html">AZ::SliceComponent::SliceInstanceAddress</a> &amp;sourceSubsliceInstanceAddress, <a class="el" href="class_a_z_std_1_1unordered__map.html">AZ::SliceComponent::EntityIdToEntityIdMap</a> &amp;subsliceToLiveMappingResult, bool flipMapping=false)</td></tr>
 <tr class="separator:a90fbb6cedc03979a90d57f1bd7343f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a05a7fb6c06794451fdb1a056d353768b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05a7fb6c06794451fdb1a056d353768b"></a>
+typedef <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AssetIdVector</b></td></tr>
+<tr class="separator:a05a7fb6c06794451fdb1a056d353768b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af2dcdca9466721dd481d8e498fb2aa99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#af2dcdca9466721dd481d8e498fb2aa99">Activate</a> () override</td></tr>
+<tr class="separator:af2dcdca9466721dd481d8e498fb2aa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea49eeeb4d45e54b30d7dd4efee7fa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#aeea49eeeb4d45e54b30d7dd4efee7fa4">Deactivate</a> () override</td></tr>
+<tr class="separator:aeea49eeeb4d45e54b30d7dd4efee7fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67617c35f6727059bc14545a46b820c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67617c35f6727059bc14545a46b820c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloaded</b> (<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_data_1_1_asset_data.html">Data::AssetData</a> &gt; asset) override</td></tr>
+<tr class="separator:a67617c35f6727059bc14545a46b820c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ce94e7644f8f705342018133c26513"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34ce94e7644f8f705342018133c26513"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a34ce94e7644f8f705342018133c26513">PrepareSave</a> ()</td></tr>
+<tr class="memdesc:a34ce94e7644f8f705342018133c26513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare component entity for save, if this is a leaf entity, data patch will be build. <br/></td></tr>
+<tr class="separator:a34ce94e7644f8f705342018133c26513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3687776632e4ab3806a45b73aef3152"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3687776632e4ab3806a45b73aef3152"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#ac3687776632e4ab3806a45b73aef3152">BuildEntityInfoMap</a> ()</td></tr>
+<tr class="memdesc:ac3687776632e4ab3806a45b73aef3152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate the entity info map. This will re-populate it even if already populated. <br/></td></tr>
+<tr class="separator:ac3687776632e4ab3806a45b73aef3152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc31d993a59588e35776f5a077cf33e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc31d993a59588e35776f5a077cf33e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#adc31d993a59588e35776f5a077cf33e5">RebuildEntityInfoMapIfNecessary</a> ()</td></tr>
+<tr class="memdesc:adc31d993a59588e35776f5a077cf33e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repopulate the entity info map if it was already populated. <br/></td></tr>
+<tr class="separator:adc31d993a59588e35776f5a077cf33e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a253f2cc089ad12cb3757a1592a705f12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a253f2cc089ad12cb3757a1592a705f12"></a>
+<a class="el" href="class_a_z_1_1_slice_component_1_1_data_flags_per_entity.html">DataFlagsPerEntity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a253f2cc089ad12cb3757a1592a705f12">GetCorrectBundleOfDataFlags</a> (<a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> entityId)</td></tr>
+<tr class="memdesc:a253f2cc089ad12cb3757a1592a705f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the appropriate <a class="el" href="class_a_z_1_1_slice_component_1_1_data_flags_per_entity.html">DataFlagsPerEntity</a> collection containing this entity's data flags. <br/></td></tr>
+<tr class="separator:a253f2cc089ad12cb3757a1592a705f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b523b974fd17ca78c09659a933a7116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b523b974fd17ca78c09659a933a7116"></a>
+const <a class="el" href="class_a_z_1_1_slice_component_1_1_data_flags_per_entity.html">DataFlagsPerEntity</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCorrectBundleOfDataFlags</b> (<a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> entityId) const </td></tr>
+<tr class="separator:a4b523b974fd17ca78c09659a933a7116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ad1e60623410c7372de4bee457cc3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72ad1e60623410c7372de4bee457cc3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildDataFlagsForInstances</b> ()</td></tr>
+<tr class="separator:a72ad1e60623410c7372de4bee457cc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54429dcf04f5a4e2fb7666a41d4914d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a54429dcf04f5a4e2fb7666a41d4914d3">CleanMetadataAssociations</a> ()</td></tr>
+<tr class="separator:a54429dcf04f5a4e2fb7666a41d4914d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed40a4af6a9b47bdbc20ba0203acf11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaed40a4af6a9b47bdbc20ba0203acf11"></a>
+const <a class="el" href="class_a_z_std_1_1unordered__map.html">EntityInfoMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#aaed40a4af6a9b47bdbc20ba0203acf11">GetEntityInfoMap</a> () const </td></tr>
+<tr class="memdesc:aaed40a4af6a9b47bdbc20ba0203acf11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the entity info map (and builds it if necessary). <br/></td></tr>
+<tr class="separator:aaed40a4af6a9b47bdbc20ba0203acf11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c9de3e55fa08f51f0f4bb6dc7e9612"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49c9de3e55fa08f51f0f4bb6dc7e9612"></a>
+<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html">SliceReference</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a49c9de3e55fa08f51f0f4bb6dc7e9612">AddOrGetSliceReference</a> (const <a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_slice_asset.html">SliceAsset</a> &gt; &amp;sliceAsset)</td></tr>
+<tr class="memdesc:a49c9de3e55fa08f51f0f4bb6dc7e9612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reference associated with the specified asset Id. If none is present, one will be created. <br/></td></tr>
+<tr class="separator:a49c9de3e55fa08f51f0f4bb6dc7e9612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae67ba52cb81e6cf0cfed1a2b4997b454"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae67ba52cb81e6cf0cfed1a2b4997b454"></a>
+<a class="el" href="class_a_z_std_1_1list__iterator.html">SliceComponent::SliceList::iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#ae67ba52cb81e6cf0cfed1a2b4997b454">RemoveSliceReference</a> (<a class="el" href="class_a_z_std_1_1list__iterator.html">SliceComponent::SliceList::iterator</a> sliceReferenceIt)</td></tr>
+<tr class="memdesc:ae67ba52cb81e6cf0cfed1a2b4997b454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a slice reference (and all instances) by iterator. <br/></td></tr>
+<tr class="separator:ae67ba52cb81e6cf0cfed1a2b4997b454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9ba24ecda29e7e68406ea1fa8a8624"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b9ba24ecda29e7e68406ea1fa8a8624"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a4b9ba24ecda29e7e68406ea1fa8a8624">PushInstantiateCycle</a> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;assetId)</td></tr>
+<tr class="memdesc:a4b9ba24ecda29e7e68406ea1fa8a8624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to add an assetId to the cycle checker vector. <br/></td></tr>
+<tr class="separator:a4b9ba24ecda29e7e68406ea1fa8a8624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dd731e9d4c535bfe8bf4140112538f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#af6dd731e9d4c535bfe8bf4140112538f">CheckContainsInstantiateCycle</a> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;assetId)</td></tr>
+<tr class="separator:af6dd731e9d4c535bfe8bf4140112538f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177a7eb9cb1dcfd33eec9f6d901b2b8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a177a7eb9cb1dcfd33eec9f6d901b2b8f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a177a7eb9cb1dcfd33eec9f6d901b2b8f">PopInstantiateCycle</a> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;assetId)</td></tr>
+<tr class="memdesc:a177a7eb9cb1dcfd33eec9f6d901b2b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to pop an assetId to the cycle checker vector (also checks to make sure its at the tail of it and clears it) <br/></td></tr>
+<tr class="separator:a177a7eb9cb1dcfd33eec9f6d901b2b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a></td></tr>
+<tr class="memitem:a2263e3e84666abc20ad3ccd142544989 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a2263e3e84666abc20ad3ccd142544989">Init</a> ()</td></tr>
+<tr class="separator:a2263e3e84666abc20ad3ccd142544989 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c8e8ec971ef5e09fc0f325f2636a22 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a67c8e8ec971ef5e09fc0f325f2636a22">ReadInConfig</a> (const <a class="el" href="class_a_z_1_1_component_config.html">ComponentConfig</a> *baseConfig)</td></tr>
+<tr class="separator:a67c8e8ec971ef5e09fc0f325f2636a22 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae041b36bf62b87c310f433f3632c59c2 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#ae041b36bf62b87c310f433f3632c59c2">WriteOutConfig</a> (<a class="el" href="class_a_z_1_1_component_config.html">ComponentConfig</a> *outBaseConfig) const </td></tr>
+<tr class="separator:ae041b36bf62b87c310f433f3632c59c2 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae655511334c685bcfd918584e9a1683c inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#ae655511334c685bcfd918584e9a1683c">SetEntity</a> (<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *entity)</td></tr>
+<tr class="separator:ae655511334c685bcfd918584e9a1683c inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac63232a2169818840827c5f93346fe70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac63232a2169818840827c5f93346fe70"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#ac63232a2169818840827c5f93346fe70">GetProvidedServices</a> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;provided)</td></tr>
+<tr class="memdesc:ac63232a2169818840827c5f93346fe70"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_component_descriptor.html#a24ddcbcb1c3c60aaf359043fcca73ec8">ComponentDescriptor::GetProvidedServices</a> <br/></td></tr>
+<tr class="separator:ac63232a2169818840827c5f93346fe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebefa0aa49d61007c541206f979a95c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebefa0aa49d61007c541206f979a95c9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#aebefa0aa49d61007c541206f979a95c9">GetDependentServices</a> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;dependent)</td></tr>
+<tr class="memdesc:aebefa0aa49d61007c541206f979a95c9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_component_descriptor.html#a74bf48a18f84411fd4d46296c2770951">ComponentDescriptor::GetDependentServices</a> <br/></td></tr>
+<tr class="separator:aebefa0aa49d61007c541206f979a95c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ba4a91fb49e0b14a1b1efdccbac878"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36ba4a91fb49e0b14a1b1efdccbac878"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a36ba4a91fb49e0b14a1b1efdccbac878">Reflect</a> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> *reflection)</td></tr>
+<tr class="memdesc:a36ba4a91fb49e0b14a1b1efdccbac878"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_component_descriptor.html#a3722af0fb6275969cc052289bdc50c19">ComponentDescriptor::Reflect</a> <br/></td></tr>
+<tr class="separator:a36ba4a91fb49e0b14a1b1efdccbac878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707ecc36c97ed96a5e9e243aec9bf4be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a707ecc36c97ed96a5e9e243aec9bf4be"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a707ecc36c97ed96a5e9e243aec9bf4be">ApplyEntityMapId</a> (<a class="el" href="class_a_z_std_1_1unordered__map.html">EntityIdToEntityIdMap</a> &amp;destination, const <a class="el" href="class_a_z_std_1_1unordered__map.html">EntityIdToEntityIdMap</a> &amp;mapping)</td></tr>
+<tr class="memdesc:a707ecc36c97ed96a5e9e243aec9bf4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to apply a EntityIdToEntityIdMap to a EntityIdToEntityIdMap (the mapping will override values in the destination) <br/></td></tr>
+<tr class="separator:a707ecc36c97ed96a5e9e243aec9bf4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:abd5a149859adeeb1117f3cc482bec98c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd5a149859adeeb1117f3cc482bec98c"></a>
+<a class="el" href="class_a_z_1_1_slice_asset.html">SliceAsset</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#abd5a149859adeeb1117f3cc482bec98c">m_myAsset</a></td></tr>
+<tr class="memdesc:abd5a149859adeeb1117f3cc482bec98c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the asset we belong to, note this is just a reference stored by the handler, we don't need Asset&lt;SliceAsset&gt; as it's not a reference to another asset. <br/></td></tr>
+<tr class="separator:abd5a149859adeeb1117f3cc482bec98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6e1bdef5e03883396df02f2ac6a4f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e6e1bdef5e03883396df02f2ac6a4f1"></a>
+<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b></td></tr>
+<tr class="separator:a7e6e1bdef5e03883396df02f2ac6a4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad69bb4243d05880e9734e8c4eb06985"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad69bb4243d05880e9734e8c4eb06985"></a>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">EntityInfoMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#aad69bb4243d05880e9734e8c4eb06985">m_entityInfoMap</a></td></tr>
+<tr class="memdesc:aad69bb4243d05880e9734e8c4eb06985"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cached mapping built for quick lookups between an <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> and its owning <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a>. <br/></td></tr>
+<tr class="separator:aad69bb4243d05880e9734e8c4eb06985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099c0d40411b09096a64bcfee7b062be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a099c0d40411b09096a64bcfee7b062be"></a>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">EntityInfoMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a099c0d40411b09096a64bcfee7b062be">m_metaDataEntityInfoMap</a></td></tr>
+<tr class="memdesc:a099c0d40411b09096a64bcfee7b062be"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cached mapping built for quick lookups between a MetaDataEntityId and its owning <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a>. <br/></td></tr>
+<tr class="separator:a099c0d40411b09096a64bcfee7b062be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97ecf1f22cd25151989e4fbf87da91a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af97ecf1f22cd25151989e4fbf87da91a"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">EntityList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#af97ecf1f22cd25151989e4fbf87da91a">m_entities</a></td></tr>
+<tr class="memdesc:af97ecf1f22cd25151989e4fbf87da91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entities that are new (not based on a slice). <br/></td></tr>
+<tr class="separator:af97ecf1f22cd25151989e4fbf87da91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9bcbb0dded6b8fc2c60f1f6f6c2fff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade9bcbb0dded6b8fc2c60f1f6f6c2fff"></a>
+<a class="el" href="class_a_z_std_1_1list.html">SliceList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#ade9bcbb0dded6b8fc2c60f1f6f6c2fff">m_slices</a></td></tr>
+<tr class="memdesc:ade9bcbb0dded6b8fc2c60f1f6f6c2fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of base slices and their instances in the world. <br/></td></tr>
+<tr class="separator:ade9bcbb0dded6b8fc2c60f1f6f6c2fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06bc2d9b5750db8385b64cadb72db44b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06bc2d9b5750db8385b64cadb72db44b"></a>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">SliceAssetToSliceInstances</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a06bc2d9b5750db8385b64cadb72db44b">m_cachedSliceInstances</a></td></tr>
+<tr class="memdesc:a06bc2d9b5750db8385b64cadb72db44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slice instances saved in layers on the root slice are cached here during the serialization process. <br/></td></tr>
+<tr class="separator:a06bc2d9b5750db8385b64cadb72db44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfba8a604534f9b2273fedde7da9c348"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfba8a604534f9b2273fedde7da9c348"></a>
+<a class="el" href="class_a_z_std_1_1list.html">SliceList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#acfba8a604534f9b2273fedde7da9c348">m_cachedSliceReferences</a></td></tr>
+<tr class="memdesc:acfba8a604534f9b2273fedde7da9c348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slice references saved in layers on the root slice are cached here during the serialization process. <br/></td></tr>
+<tr class="separator:acfba8a604534f9b2273fedde7da9c348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3556013f665f196f1427143d238087"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c3556013f665f196f1427143d238087"></a>
+<a class="el" href="class_a_z_std_1_1list.html">SliceList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a6c3556013f665f196f1427143d238087">m_invalidSlices</a></td></tr>
+<tr class="memdesc:a6c3556013f665f196f1427143d238087"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of slice references that did not load correctly. <br/></td></tr>
+<tr class="separator:a6c3556013f665f196f1427143d238087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17a78d66a9177cf207818e7f3b3348c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa17a78d66a9177cf207818e7f3b3348c"></a>
+<a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#aa17a78d66a9177cf207818e7f3b3348c">m_metadataEntity</a></td></tr>
+<tr class="memdesc:aa17a78d66a9177cf207818e7f3b3348c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_entity.html">Entity</a> for attaching slice metadata components. <br/></td></tr>
+<tr class="separator:aa17a78d66a9177cf207818e7f3b3348c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c50700a2829a93c13299c279d27db1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09c50700a2829a93c13299c279d27db1"></a>
+<a class="el" href="class_a_z_1_1_slice_component_1_1_data_flags_per_entity.html">DataFlagsPerEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a09c50700a2829a93c13299c279d27db1">m_dataFlagsForNewEntities</a></td></tr>
+<tr class="memdesc:a09c50700a2829a93c13299c279d27db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">DataFlags for new entities (DataFlags for entities based on a slice are stored within the <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a>) <br/></td></tr>
+<tr class="separator:a09c50700a2829a93c13299c279d27db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e67251d350597982e91db186d4cce3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5e67251d350597982e91db186d4cce3"></a>
+<a class="el" href="class_a_z_1_1_slice_component_1_1_data_flags_per_entity.html">DataFlagsPerEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#ae5e67251d350597982e91db186d4cce3">m_cachedDataFlagsForInstances</a></td></tr>
+<tr class="memdesc:ae5e67251d350597982e91db186d4cce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached DataFlags to be used when instantiating instances of this slice. <br/></td></tr>
+<tr class="separator:ae5e67251d350597982e91db186d4cce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad9dd1fe46b4d18ad30dd9e52f29cb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ad9dd1fe46b4d18ad30dd9e52f29cb6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a6ad9dd1fe46b4d18ad30dd9e52f29cb6">m_hasGeneratedCachedDataFlags</a></td></tr>
+<tr class="memdesc:a6ad9dd1fe46b4d18ad30dd9e52f29cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the cached DataFlags have been generated yet. <br/></td></tr>
+<tr class="separator:a6ad9dd1fe46b4d18ad30dd9e52f29cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f84469220fc5c2308b3f33f029d911"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23f84469220fc5c2308b3f33f029d911"></a>
+AZStd::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a23f84469220fc5c2308b3f33f029d911">m_slicesAreInstantiated</a></td></tr>
+<tr class="memdesc:a23f84469220fc5c2308b3f33f029d911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate state of the base slices (they should be instantiated or not) <br/></td></tr>
+<tr class="separator:a23f84469220fc5c2308b3f33f029d911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7418c537addaf9c2d5d295dc3b8ae90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7418c537addaf9c2d5d295dc3b8ae90"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#ab7418c537addaf9c2d5d295dc3b8ae90">m_allowPartialInstantiation</a></td></tr>
+<tr class="memdesc:ab7418c537addaf9c2d5d295dc3b8ae90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiation is still allowed even if dependencies are missing. <br/></td></tr>
+<tr class="separator:ab7418c537addaf9c2d5d295dc3b8ae90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1586f39c90345652c78034ca74c00f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1586f39c90345652c78034ca74c00f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#ab1586f39c90345652c78034ca74c00f3">m_isDynamic</a></td></tr>
+<tr class="memdesc:ab1586f39c90345652c78034ca74c00f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic slices are available for instantiation at runtime. <br/></td></tr>
+<tr class="separator:ab1586f39c90345652c78034ca74c00f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba42c4a72fdc89380be407bba402124c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba42c4a72fdc89380be407bba402124c"></a>
+<a class="el" href="class_a_z_std_1_1function.html">AZ::Data::AssetFilterCB</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#aba42c4a72fdc89380be407bba402124c">m_assetLoadFilterCB</a></td></tr>
+<tr class="memdesc:aba42c4a72fdc89380be407bba402124c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asset load filter callback to apply for internal loads during data patching. <br/></td></tr>
+<tr class="separator:aba42c4a72fdc89380be407bba402124c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324c996b2567bde28642660606bf21cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a324c996b2567bde28642660606bf21cd"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a324c996b2567bde28642660606bf21cd">m_filterFlags</a></td></tr>
+<tr class="memdesc:a324c996b2567bde28642660606bf21cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asset load filter flags to apply for internal loads during data patching. <br/></td></tr>
+<tr class="separator:a324c996b2567bde28642660606bf21cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80e9d669133d47fa793c9cbf5516966"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae80e9d669133d47fa793c9cbf5516966"></a>
+<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#ae80e9d669133d47fa793c9cbf5516966">m_instantiateMutex</a></td></tr>
+<tr class="memdesc:ae80e9d669133d47fa793c9cbf5516966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to prevent multiple threads from trying to instantiate the slices at once. <br/></td></tr>
+<tr class="separator:ae80e9d669133d47fa793c9cbf5516966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a></td></tr>
+<tr class="memitem:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3e2d5415247e5cf67d7572aaa733693"></a>
+<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#aa3e2d5415247e5cf67d7572aaa733693">m_entity</a></td></tr>
+<tr class="memdesc:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the entity that owns the component. The value is null if the component is not attached to an entity. <br/></td></tr>
+<tr class="separator:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a738455cb4649e6d7acd8c5b970530c04"></a>
+ComponentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a738455cb4649e6d7acd8c5b970530c04">m_id</a></td></tr>
+<tr class="memdesc:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">A component ID that is unique for an entity. This component ID is not unique across all entities. <br/></td></tr>
+<tr class="separator:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a96afecf9dc8c64f806be9e6839ba356a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96afecf9dc8c64f806be9e6839ba356a"></a>
+static <a class="el" href="class_a_z_std_1_1vector.html">AssetIdVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component.html#a96afecf9dc8c64f806be9e6839ba356a">m_instantiateCycleChecker</a></td></tr>
+<tr class="memdesc:a96afecf9dc8c64f806be9e6839ba356a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to prevent cyclic dependencies. <br/></td></tr>
+<tr class="separator:a96afecf9dc8c64f806be9e6839ba356a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a017cf5e61a9dc2ffd75eed1e9ab16f44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a017cf5e61a9dc2ffd75eed1e9ab16f44"></a>
@@ -423,6 +613,32 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceAssetHandler</b
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af2dcdca9466721dd481d8e498fb2aa99"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::SliceComponent::Activate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puts the component into an active state. The system calls this function once during activation of each entity that owns the component. You must override this function. The system calls a component's <a class="el" href="class_a_z_1_1_slice_component.html#af2dcdca9466721dd481d8e498fb2aa99">Activate()</a> function only if all services and components that the component depends on are present and active. Use GetProvidedServices and GetDependentServices to specify these dependencies. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_component.html#a3e3e21c0cb8c2a8cb6dc42c83c94a8fe">AZ::Component</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a2be5946c7cadab7be358218d0d589ed1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -582,6 +798,55 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceAssetHandler</b
 
 </div>
 </div>
+<a class="anchor" id="af6dd731e9d4c535bfe8bf4140112538f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::SliceComponent::CheckContainsInstantiateCycle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_data_1_1_asset_id.html">AZ::Data::AssetId</a> &amp;&#160;</td>
+          <td class="paramname"><em>assetId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Utility function to check if the given assetId would cause an instantiation cycle, and if so output the chain of slices that causes the cycle. </p>
+
+</div>
+</div>
+<a class="anchor" id="a54429dcf04f5a4e2fb7666a41d4914d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::SliceComponent::CleanMetadataAssociations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>During instance instantiation, entities from root slices may be removed by data patches. We need to remove these from the metadata associations in our newly cloned instance metadata entities. </p>
+
+</div>
+</div>
 <a class="anchor" id="ab4123b515ae2531c5e3aaf4b7766613b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -670,6 +935,33 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceAssetHandler</b
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The address of the newly created clone-instance. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeea49eeeb4d45e54b30d7dd4efee7fa4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::SliceComponent::Deactivate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Deactivates the component. The system calls this function when the owning entity is being deactivated. You must override this function. As a best practice, ensure that this function returns the component to a minimal footprint. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on.</p>
+<p>The system always calls the component's <a class="el" href="class_a_z_1_1_slice_component.html#aeea49eeeb4d45e54b30d7dd4efee7fa4">Deactivate()</a> function before destroying the component. However, deactivation is not always followed by the destruction of the component. An entity and its components can be deactivated and reactivated without being destroyed. Ensure that your <a class="el" href="class_a_z_1_1_slice_component.html#aeea49eeeb4d45e54b30d7dd4efee7fa4">Deactivate()</a> implementation can handle this scenario. </p>
+
+<p>Implements <a class="el" href="class_a_z_1_1_component.html#a7b78b890df9b149722d8703da05c79ac">AZ::Component</a>.</p>
 
 </div>
 </div>
@@ -1570,7 +1862,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceAssetHandler</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

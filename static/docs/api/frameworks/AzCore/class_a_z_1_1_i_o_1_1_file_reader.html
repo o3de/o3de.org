@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_file_reader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::FileReader Class Reference</div>  </div>
@@ -109,6 +111,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a50736ebdc0764ae6691ed81b51819685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae0bec1cc0aec64dbb5eca5cb2c7b82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_reader.html#a3ae0bec1cc0aec64dbb5eca5cb2c7b82">GetFilePath</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">AZ::IO::FixedMaxPath</a> &amp;filePath) const </td></tr>
 <tr class="separator:a3ae0bec1cc0aec64dbb5eca5cb2c7b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aa6e6fa9efc756a25747f45d481a6093a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6e6fa9efc756a25747f45d481a6093a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>HandleType</b> = AZ::u32</td></tr>
+<tr class="separator:aa6e6fa9efc756a25747f45d481a6093a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6af4204be10c466bae60c250f9667c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6af4204be10c466bae60c250f9667c8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FileHandleType</b> = <a class="el" href="class_a_z_std_1_1variant.html">AZStd::variant</a>&lt; <a class="el" href="struct_a_z_std_1_1monostate.html">AZStd::monostate</a>, <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html">AZ::IO::SystemFile</a>, HandleType &gt;</td></tr>
+<tr class="separator:ab6af4204be10c466bae60c250f9667c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ace37c34cd63088cd7f70693acc926805"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace37c34cd63088cd7f70693acc926805"></a>
+<a class="el" href="class_a_z_std_1_1variant.html">FileHandleType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_file</b></td></tr>
+<tr class="separator:ace37c34cd63088cd7f70693acc926805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44709690a89d06d158f63048d10e89b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44709690a89d06d158f63048d10e89b7"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html">AZ::IO::FileIOBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileIoBase</b> {}</td></tr>
+<tr class="separator:a44709690a89d06d158f63048d10e89b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure which encapsulates delegates File Read operations to either the <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html" title="The base class for file IO stack classes. ">FileIOBase</a> or <a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html">SystemFile</a> classes based if a FileIOBase* instance has been supplied to the FileSystemReader class the SettingsRegistry option to use FileIO </p>
@@ -311,7 +331,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

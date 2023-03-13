@@ -53,6 +53,9 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_styled_busy_label-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -116,6 +119,48 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTo</b> (QPainter 
 QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>GetPixmap</b> (QSize size)</td></tr>
 <tr class="separator:ae6116c2ffd736f58e4b157390de83a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a633c71334366aaedf8233dafe513c317"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a633c71334366aaedf8233dafe513c317"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateMovie</b> ()</td></tr>
+<tr class="separator:a633c71334366aaedf8233dafe513c317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d02f1b0fb20330e0bf8eea5e412525b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d02f1b0fb20330e0bf8eea5e412525b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadDefaultIcon</b> ()</td></tr>
+<tr class="separator:a0d02f1b0fb20330e0bf8eea5e412525b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a796ba2938508de36406fcea92cf4ece2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a796ba2938508de36406fcea92cf4ece2"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>polish</b> (<a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QWidget *widget)</td></tr>
+<tr class="separator:a796ba2938508de36406fcea92cf4ece2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42271a1b27b39bca74fbcf1a1e687d67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42271a1b27b39bca74fbcf1a1e687d67"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>unpolish</b> (<a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QWidget *widget)</td></tr>
+<tr class="separator:a42271a1b27b39bca74fbcf1a1e687d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4cc4d615372603a1fbb51fc97094d184"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cc4d615372603a1fbb51fc97094d184"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isBusy</b> = false</td></tr>
+<tr class="separator:a4cc4d615372603a1fbb51fc97094d184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8884f365d5b137cf1af284563d69367"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8884f365d5b137cf1af284563d69367"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_busyIconSize</b> = 32</td></tr>
+<tr class="separator:ac8884f365d5b137cf1af284563d69367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc52befe29ae94a6c71514b54044c39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dc52befe29ae94a6c71514b54044c39"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileName</b></td></tr>
+<tr class="separator:a3dc52befe29ae94a6c71514b54044c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b906c8e810b99a65e70301d54471bb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b906c8e810b99a65e70301d54471bb1"></a>
+QSvgWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_busyIcon</b> = nullptr</td></tr>
+<tr class="separator:a7b906c8e810b99a65e70301d54471bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0f243bcca9d2ff113149369c5dfa7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d0f243bcca9d2ff113149369c5dfa7a"></a>
+QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_oldBusyIcon</b> = nullptr</td></tr>
+<tr class="separator:a3d0f243bcca9d2ff113149369c5dfa7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92df634a87d86d45f2e21827a93a366b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92df634a87d86d45f2e21827a93a366b"></a>
+QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_text</b></td></tr>
+<tr class="separator:a92df634a87d86d45f2e21827a93a366b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45924460b00bf107a1ea9e3a71270ac1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45924460b00bf107a1ea9e3a71270ac1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_useNewWidget</b> = false</td></tr>
+<tr class="separator:a45924460b00bf107a1ea9e3a71270ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:acf788547283b20e9c18be19919f98295"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf788547283b20e9c18be19919f98295"></a>
@@ -128,7 +173,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Style</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

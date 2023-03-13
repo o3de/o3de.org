@@ -54,6 +54,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_statistics_1_1_running_statistic-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Statistics::RunningStatistic Class Reference</div>  </div>
@@ -97,6 +98,36 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetSum</b> () const
 <tr class="separator:ab87ad3f33af1aa79d5cce63851f7cb25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e479714ffc7288bfdb39b8af601e865"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html#a6e479714ffc7288bfdb39b8af601e865">GetStdev</a> (VarianceType varianceType=VarianceType::S) const </td></tr>
 <tr class="separator:a6e479714ffc7288bfdb39b8af601e865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a35a426421d798d0cd0d08bc33f5cfb30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35a426421d798d0cd0d08bc33f5cfb30"></a>
+AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_numSamples</b></td></tr>
+<tr class="separator:a35a426421d798d0cd0d08bc33f5cfb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48fc980b9892f0e2f84d2edd4f2f2f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af48fc980b9892f0e2f84d2edd4f2f2f9"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html#af48fc980b9892f0e2f84d2edd4f2f2f9">m_mostRecentSample</a></td></tr>
+<tr class="memdesc:af48fc980b9892f0e2f84d2edd4f2f2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many times the method PushSample() has been called. <br/></td></tr>
+<tr class="separator:af48fc980b9892f0e2f84d2edd4f2f2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c30be05565d2dd5fe78c94bc458dda8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c30be05565d2dd5fe78c94bc458dda8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html#a9c30be05565d2dd5fe78c94bc458dda8">m_minimum</a></td></tr>
+<tr class="memdesc:a9c30be05565d2dd5fe78c94bc458dda8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always returns the most recently pushed sample value. <br/></td></tr>
+<tr class="separator:a9c30be05565d2dd5fe78c94bc458dda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1c821aba5c2d1b1c5eb5cf976f00d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b1c821aba5c2d1b1c5eb5cf976f00d4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html#a3b1c821aba5c2d1b1c5eb5cf976f00d4">m_maximum</a></td></tr>
+<tr class="memdesc:a3b1c821aba5c2d1b1c5eb5cf976f00d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum value of all samples pushed (since Reset). <br/></td></tr>
+<tr class="separator:a3b1c821aba5c2d1b1c5eb5cf976f00d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0fb0d6e06ebc14aa87574a8faae097c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0fb0d6e06ebc14aa87574a8faae097c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html#aa0fb0d6e06ebc14aa87574a8faae097c">m_sum</a></td></tr>
+<tr class="memdesc:aa0fb0d6e06ebc14aa87574a8faae097c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of all samples pushed (since Reset). <br/></td></tr>
+<tr class="separator:aa0fb0d6e06ebc14aa87574a8faae097c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab056efbd48db33be8b46a908a61b11ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab056efbd48db33be8b46a908a61b11ca"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html#ab056efbd48db33be8b46a908a61b11ca">m_average</a></td></tr>
+<tr class="memdesc:ab056efbd48db33be8b46a908a61b11ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sum toal of all sample values pushed (since Reset). <br/></td></tr>
+<tr class="separator:ab056efbd48db33be8b46a908a61b11ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c06b28713a65bb67067a6bcbbb51f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16c06b28713a65bb67067a6bcbbb51f2"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html#a16c06b28713a65bb67067a6bcbbb51f2">m_varianceTracking</a></td></tr>
+<tr class="memdesc:a16c06b28713a65bb67067a6bcbbb51f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The running average of all sample values pushed (since Reset). <br/></td></tr>
+<tr class="separator:a16c06b28713a65bb67067a6bcbbb51f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Keeps track of the running statistics of a given value. </p>
@@ -142,7 +173,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>GetSum</b> () const
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1static__buffer__allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::static_buffer_allocator&lt; Size, Alignment &gt; Class Template Reference</div>  </div>
@@ -104,6 +106,27 @@ AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>reset
 <tr class="memitem:a862115d7a5ad26eedc6339b78e9ba14c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a862115d7a5ad26eedc6339b78e9ba14c"></a>
 AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>inrange</b> (void *address) const </td></tr>
 <tr class="separator:a862115d7a5ad26eedc6339b78e9ba14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:abfc90975a9735b7aa82b068e8d4b97e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfc90975a9735b7aa82b068e8d4b97e3"></a>
+typedef <br class="typebreak"/>
+<a class="el" href="class_a_z_std_1_1static__buffer__allocator.html">static_buffer_allocator</a>&lt; Size, <br class="typebreak"/>
+Alignment &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
+<tr class="separator:abfc90975a9735b7aa82b068e8d4b97e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1fc0025eb649234e1e31d8058bd42463"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fc0025eb649234e1e31d8058bd42463"></a>
+aligned_storage&lt; Size, <br class="typebreak"/>
+Alignment &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="separator:a1fc0025eb649234e1e31d8058bd42463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5578559851009c17a25e2a303f535756"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5578559851009c17a25e2a303f535756"></a>
+char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_freeData</b></td></tr>
+<tr class="separator:a5578559851009c17a25e2a303f535756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97c8c957a8ce1795195ca710174a175"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af97c8c957a8ce1795195ca710174a175"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastAllocation</b></td></tr>
+<tr class="separator:af97c8c957a8ce1795195ca710174a175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;AZStd::size_t Size, AZStd::size_t Alignment&gt;<br/>
@@ -116,7 +139,7 @@ class AZStd::static_buffer_allocator&lt; Size, Alignment &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:54 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:13 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

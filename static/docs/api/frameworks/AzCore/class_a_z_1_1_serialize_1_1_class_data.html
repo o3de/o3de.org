@@ -56,6 +56,9 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_serialize_1_1_class_data-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Serialize::ClassData Class Reference</div>  </div>
@@ -162,6 +165,27 @@ IDataSerializerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="
 &lt; <a class="el" href="struct_a_z_std_1_1pair.html">AttributeSharedPair</a>, <br class="typebreak"/>
 <a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html">AZStdFunctorAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_attributes</b> { <a class="el" href="class_a_z_1_1_a_z_std_functor_allocator.html">AZStdFunctorAllocator</a>(&amp;GetSystemAllocator) }</td></tr>
 <tr class="separator:a7a358c187084bc9d718191ad1ae9e781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a63d129dca85d2106e7522cb818d7c840"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63d129dca85d2106e7522cb818d7c840"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ClassElementArray</b> = <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_serialize_1_1_class_element.html">ClassElement</a> &gt;</td></tr>
+<tr class="separator:a63d129dca85d2106e7522cb818d7c840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a0acd7c86f3b9c2209a2bb15873c99de0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0acd7c86f3b9c2209a2bb15873c99de0"></a>
+static <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">ClassData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateImpl</b> (const char *name, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;typeUuid, <a class="el" href="class_a_z_1_1_serialize_1_1_i_object_factory.html">IObjectFactory</a> *factory, <a class="el" href="class_a_z_1_1_serialize_1_1_i_data_serializer.html">IDataSerializer</a> *serializer, <a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container.html">IDataContainer</a> *container, <a class="el" href="class_a_z_1_1_i_rtti_helper.html">IRttiHelper</a> *rttiHelper)</td></tr>
+<tr class="separator:a0acd7c86f3b9c2209a2bb15873c99de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf34e9cb2a54b831dfa65da1cee73d9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf34e9cb2a54b831dfa65da1cee73d9d"></a>
+static <a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSystemAllocator</b> ()</td></tr>
+<tr class="separator:adf34e9cb2a54b831dfa65da1cee73d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3e1c0bab30cbbd540e08283ab79af517"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e1c0bab30cbbd540e08283ab79af517"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeContext</b></td></tr>
+<tr class="separator:a3e1c0bab30cbbd540e08283ab79af517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class Data contains the data/info for each registered class all if it members (their offsets, etc.), creator, version converts, etc. </p>
@@ -264,7 +288,7 @@ IDataSerializerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

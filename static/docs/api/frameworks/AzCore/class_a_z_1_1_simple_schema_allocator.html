@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_simple_schema_allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::SimpleSchemaAllocator&lt; Schema, ProfileAllocations, ReportOutOfMemory &gt; Class Template Reference</div>  </div>
@@ -127,7 +129,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a4f0a8e0d1826e5d68de7c48a54127c74 inherit pub_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c706a1394df8e06a4ec118da0946fe inherit pub_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8c706a1394df8e06a4ec118da0946fe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#ab8c706a1394df8e06a4ec118da0946fe">PreDestroy</a> () final</td></tr>
-<tr class="memdesc:ab8c706a1394df8e06a4ec118da0946fe inherit pub_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">All conforming allocators must call <a class="el" href="class_a_z_1_1_allocator_base.html#ab8c706a1394df8e06a4ec118da0946fe" title="All conforming allocators must call PreDestroy() before their custom Destroy() method in order to be ...">PreDestroy()</a> before their custom Destroy() method in order to be properly deregistered. <br/></td></tr>
+<tr class="memdesc:ab8c706a1394df8e06a4ec118da0946fe inherit pub_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">All conforming allocators must call <a class="el" href="class_a_z_1_1_allocator_base.html#ab8c706a1394df8e06a4ec118da0946fe" title="All conforming allocators must call PreDestroy() before their custom Destroy() method in order to be ...">PreDestroy()</a> before their custom <a class="el" href="class_a_z_1_1_i_allocator.html#ac4cc6df15cdc178f7580001468910cd6" title="All allocators must provide their deinitialization routine here. ">Destroy()</a> method in order to be properly deregistered. <br/></td></tr>
 <tr class="separator:ab8c706a1394df8e06a4ec118da0946fe inherit pub_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b5066e11564d2204e6cda0fe77a88d inherit pub_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4b5066e11564d2204e6cda0fe77a88d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetProfilingActive</b> (bool active) final</td></tr>
@@ -206,11 +208,61 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a1d2f379298439a78b5f7bbc86ec22392 inherit pub_methods_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_allocator.html#a1d2f379298439a78b5f7bbc86ec22392">SetProfilingActive</a> ([[maybe_unused]] bool active)</td></tr>
 <tr class="separator:a1d2f379298439a78b5f7bbc86ec22392 inherit pub_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab34e248124444a9bffc12a216698c4f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab34e248124444a9bffc12a216698c4f4"></a>
+<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_schema</b> {}</td></tr>
+<tr class="separator:ab34e248124444a9bffc12a216698c4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:add7a07d689d4a1b460c1754cf15b5519"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add7a07d689d4a1b460c1754cf15b5519"></a>
+AZStd::aligned_storage&lt; sizeof(Schema), <br class="typebreak"/>
+AZStd::alignment_of&lt; Schema &gt;<br class="typebreak"/>
+::value &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>m_schemaStorage</b></td></tr>
+<tr class="separator:add7a07d689d4a1b460c1754cf15b5519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_a_z_1_1_i_allocator"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_a_z_1_1_i_allocator')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_a_z_1_1_i_allocator.html">AZ::IAllocator</a></td></tr>
 <tr class="memitem:afb8272c4f82bd349ff6131c4123c4490 inherit pub_attribs_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top">size_type&#160;</td><td class="memItemRight" valign="bottom"><b>newSize</b></td></tr>
 <tr class="separator:afb8272c4f82bd349ff6131c4123c4490 inherit pub_attribs_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_allocator_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_allocator_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_allocator_base.html">AZ::AllocatorBase</a></td></tr>
+<tr class="memitem:ab9d0d65f75a80662343332d1074f3bc6 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9d0d65f75a80662343332d1074f3bc6"></a>
+AZ_FORCE_INLINE size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#ab9d0d65f75a80662343332d1074f3bc6">MemorySizeAdjustedUp</a> (size_t byteSize) const </td></tr>
+<tr class="memdesc:ab9d0d65f75a80662343332d1074f3bc6 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of a memory allocation after adjusting for tracking. <br/></td></tr>
+<tr class="separator:ab9d0d65f75a80662343332d1074f3bc6 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35c01a2149b8a5adcb5f13b48cf8239 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af35c01a2149b8a5adcb5f13b48cf8239"></a>
+AZ_FORCE_INLINE size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#af35c01a2149b8a5adcb5f13b48cf8239">MemorySizeAdjustedDown</a> (size_t byteSize) const </td></tr>
+<tr class="memdesc:af35c01a2149b8a5adcb5f13b48cf8239 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of a memory allocation, removing any tracking overhead. <br/></td></tr>
+<tr class="separator:af35c01a2149b8a5adcb5f13b48cf8239 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db7f2fedbda2663e5b12434ab5b09a1 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#a9db7f2fedbda2663e5b12434ab5b09a1">DisableRegistration</a> ()</td></tr>
+<tr class="separator:a9db7f2fedbda2663e5b12434ab5b09a1 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2126ddc7b66b84488f088c3ff1b89846 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2126ddc7b66b84488f088c3ff1b89846"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#a2126ddc7b66b84488f088c3ff1b89846">ProfileAllocation</a> (void *ptr, size_t byteSize, size_t alignment, int suppressStackRecord)</td></tr>
+<tr class="memdesc:a2126ddc7b66b84488f088c3ff1b89846 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records an allocation for profiling. <br/></td></tr>
+<tr class="separator:a2126ddc7b66b84488f088c3ff1b89846 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ad18ec2ce4cadbbc40979392a7a719 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01ad18ec2ce4cadbbc40979392a7a719"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#a01ad18ec2ce4cadbbc40979392a7a719">ProfileDeallocation</a> (void *ptr, size_t byteSize, size_t alignment, <a class="el" href="struct_a_z_1_1_debug_1_1_allocation_info.html">Debug::AllocationInfo</a> *info)</td></tr>
+<tr class="memdesc:a01ad18ec2ce4cadbbc40979392a7a719 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a deallocation for profiling. <br/></td></tr>
+<tr class="separator:a01ad18ec2ce4cadbbc40979392a7a719 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cde659f584df96b281b961cdb54566 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8cde659f584df96b281b961cdb54566"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#ab8cde659f584df96b281b961cdb54566">ProfileReallocation</a> (void *ptr, void *newPtr, size_t newSize, size_t newAlignment)</td></tr>
+<tr class="memdesc:ab8cde659f584df96b281b961cdb54566 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a reallocation for profiling. <br/></td></tr>
+<tr class="separator:ab8cde659f584df96b281b961cdb54566 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9160e4e32dec84dee39e2421e1f7954 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9160e4e32dec84dee39e2421e1f7954"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#ac9160e4e32dec84dee39e2421e1f7954">ProfileResize</a> (void *ptr, size_t newSize)</td></tr>
+<tr class="memdesc:ac9160e4e32dec84dee39e2421e1f7954 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records a resize for profiling. <br/></td></tr>
+<tr class="separator:ac9160e4e32dec84dee39e2421e1f7954 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a9849b3ac0c40574c11434f0492873 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12a9849b3ac0c40574c11434f0492873"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_allocator_base.html#a12a9849b3ac0c40574c11434f0492873">OnOutOfMemory</a> (size_t byteSize, size_t alignment)</td></tr>
+<tr class="memdesc:a12a9849b3ac0c40574c11434f0492873 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">User allocator should call this function when they run out of memory! <br/></td></tr>
+<tr class="separator:a12a9849b3ac0c40574c11434f0492873 inherit pro_methods_class_a_z_1_1_allocator_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_i_allocator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_i_allocator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_i_allocator.html">AZ::IAllocator</a></td></tr>
+<tr class="memitem:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4cc6df15cdc178f7580001468910cd6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_allocator.html#ac4cc6df15cdc178f7580001468910cd6">Destroy</a> ()</td></tr>
+<tr class="memdesc:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="mdescLeft">&#160;</td><td class="mdescRight">All allocators must provide their deinitialization routine here. <br/></td></tr>
+<tr class="separator:ac4cc6df15cdc178f7580001468910cd6 inherit pro_methods_class_a_z_1_1_i_allocator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Schema, bool ProfileAllocations = true, bool ReportOutOfMemory = true&gt;<br/>
@@ -223,7 +275,7 @@ class AZ::SimpleSchemaAllocator&lt; Schema, ProfileAllocations, ReportOutOfMemor
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

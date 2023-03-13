@@ -55,6 +55,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_physics_1_1_cooked_mesh_shape_configuration-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Physics::CookedMeshShapeConfiguration Class Reference</div>  </div>
@@ -125,6 +127,25 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a037db5f80dc7e5cfb60b0ddc9d82f8ae inherit pub_static_methods_class_physics_1_1_shape_configuration"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4cac64057e5cf7b7b0888477810960ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cac64057e5cf7b7b0888477810960ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseCachedNativeMesh</b> ()</td></tr>
+<tr class="separator:a4cac64057e5cf7b7b0888477810960ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2d27a90a0e0b53def37fa20f24b88c80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d27a90a0e0b53def37fa20f24b88c80"></a>
+AZStd::vector&lt; AZ::u8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cookedData</b></td></tr>
+<tr class="separator:a2d27a90a0e0b53def37fa20f24b88c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa09722565e504f0ee580c10419b2f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acaa09722565e504f0ee580c10419b2f7"></a>
+MeshType&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b> = MeshType::TriangleMesh</td></tr>
+<tr class="separator:acaa09722565e504f0ee580c10419b2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6d29d14333ea188397f24f7190c6517"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6d29d14333ea188397f24f7190c6517"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_cooked_mesh_shape_configuration.html#aa6d29d14333ea188397f24f7190c6517">m_cachedNativeMesh</a> = nullptr</td></tr>
+<tr class="memdesc:aa6d29d14333ea188397f24f7190c6517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached native mesh object (e.g. PxConvexMesh or PxTriangleMesh). This data is not serialized. <br/></td></tr>
+<tr class="separator:aa6d29d14333ea188397f24f7190c6517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_physics_1_1_shape_configuration"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_physics_1_1_shape_configuration')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_physics_1_1_shape_configuration.html">Physics::ShapeConfiguration</a></td></tr>
@@ -172,7 +193,7 @@ AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>m_scale</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

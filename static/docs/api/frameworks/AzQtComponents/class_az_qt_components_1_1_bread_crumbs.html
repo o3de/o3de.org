@@ -55,7 +55,12 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_bread_crumbs-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -178,11 +183,119 @@ static <a class="el" href="struct_az_qt_components_1_1_bread_crumbs_1_1_config.h
 <tr class="memdesc:ae1acb05b0cda58cf5d9ff0a6a6e05f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default Breadcrumbs style configuration. <br/></td></tr>
 <tr class="separator:ae1acb05b0cda58cf5d9ff0a6a6e05f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a69a377f03c81a60b762debd0089c1676"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69a377f03c81a60b762debd0089c1676"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
+<tr class="separator:a69a377f03c81a60b762debd0089c1676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1228f2bb1df504c2f1b13e05b221d84c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1228f2bb1df504c2f1b13e05b221d84c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changeEvent</b> (QEvent *event) override</td></tr>
+<tr class="separator:a1228f2bb1df504c2f1b13e05b221d84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0625e9289dc1a8b7a2c875a4cbd0ce25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0625e9289dc1a8b7a2c875a4cbd0ce25"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *obj, QEvent *ev) override</td></tr>
+<tr class="separator:a0625e9289dc1a8b7a2c875a4cbd0ce25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a9e06a0e4bd493159388dec85ddda7372"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e06a0e4bd493159388dec85ddda7372"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>editable</b></td></tr>
 <tr class="separator:a9e06a0e4bd493159388dec85ddda7372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:ac84b495c0f59e79add017174df3471c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac84b495c0f59e79add017174df3471c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onLinkActivated</b> (const QString &amp;link)</td></tr>
+<tr class="separator:ac84b495c0f59e79add017174df3471c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c1ee848db40cfba2e96e263264a0cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37c1ee848db40cfba2e96e263264a0cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>confirmEdit</b> ()</td></tr>
+<tr class="separator:a37c1ee848db40cfba2e96e263264a0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0911f8ea29ceacfb7daf75df9ba5a732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0911f8ea29ceacfb7daf75df9ba5a732"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cancelEdit</b> ()</td></tr>
+<tr class="separator:a0911f8ea29ceacfb7daf75df9ba5a732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a05ba321b7f597b1abcc6ff786a59ed88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05ba321b7f597b1abcc6ff786a59ed88"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>generateIconHtml</b> (int index)</td></tr>
+<tr class="separator:a05ba321b7f597b1abcc6ff786a59ed88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bcb9e4076f7e228bbdf9aed274392fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bcb9e4076f7e228bbdf9aed274392fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fillLabel</b> ()</td></tr>
+<tr class="separator:a6bcb9e4076f7e228bbdf9aed274392fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c39547c50b5757f84871a76ad52996"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32c39547c50b5757f84871a76ad52996"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>changePath</b> (const QString &amp;newPath)</td></tr>
+<tr class="separator:a32c39547c50b5757f84871a76ad52996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfbcee3490d2538063e640fe086cfcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dfbcee3490d2538063e640fe086cfcd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>getButtonStates</b> (BreadCrumbButtonStates buttonStates)</td></tr>
+<tr class="separator:a4dfbcee3490d2538063e640fe086cfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c30d8a8843b9beac3f6ea8924e4eb9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c30d8a8843b9beac3f6ea8924e4eb9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>emitButtonSignals</b> (BreadCrumbButtonStates previousButtonStates)</td></tr>
+<tr class="separator:a3c30d8a8843b9beac3f6ea8924e4eb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ec7546ec70a4f13269dd66cf1acfc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01ec7546ec70a4f13269dd66cf1acfc7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>showTruncatedPathsMenu</b> ()</td></tr>
+<tr class="separator:a01ec7546ec70a4f13269dd66cf1acfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d5fa7aa141bac80ac9dd1fb01de5cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26d5fa7aa141bac80ac9dd1fb01de5cc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEditing</b> () const </td></tr>
+<tr class="separator:a26d5fa7aa141bac80ac9dd1fb01de5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd10d6441bf51c1d277a07fbfa1b4a63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd10d6441bf51c1d277a07fbfa1b4a63"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) QStack&lt; QString &gt; m_backPaths</td></tr>
+<tr class="separator:afd10d6441bf51c1d277a07fbfa1b4a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf917a2dd5b05f6686cfb14f8e70fdaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf917a2dd5b05f6686cfb14f8e70fdaf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) QVector&lt; QString &gt; m_currentPathIcons</td></tr>
+<tr class="separator:adf917a2dd5b05f6686cfb14f8e70fdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a651d7af9046dc5dcfb81474bc99934fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a651d7af9046dc5dcfb81474bc99934fe"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>buildPathFromList</b> (const QStringList &amp;<a class="el" href="class_az_qt_components_1_1_bread_crumbs.html#aa93ba1720f1d9ba9f986052981ebeeba">fullPath</a>, int pos)</td></tr>
+<tr class="separator:a651d7af9046dc5dcfb81474bc99934fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddcfa5bab9b2f8364d252f09207d55b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ddcfa5bab9b2f8364d252f09207d55b"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>polish</b> (<a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_bread_crumbs_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a5ddcfa5bab9b2f8364d252f09207d55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:adb85b7e65527c2f0937a7923f00245a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb85b7e65527c2f0937a7923f00245a0"></a>
+QLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_label</b> = nullptr</td></tr>
+<tr class="separator:adb85b7e65527c2f0937a7923f00245a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708b4dc368d0bd442858be482c8068b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a708b4dc368d0bd442858be482c8068b5"></a>
+QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><b>m_lineEdit</b> = nullptr</td></tr>
+<tr class="separator:a708b4dc368d0bd442858be482c8068b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab992d5bba8b7e577cf7fa981a03e2dc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab992d5bba8b7e577cf7fa981a03e2dc9"></a>
+QToolButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuButton</b> = nullptr</td></tr>
+<tr class="separator:ab992d5bba8b7e577cf7fa981a03e2dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae863123bec4128ff53a3d612dc978da3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae863123bec4128ff53a3d612dc978da3"></a>
+QStackedWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_labelEditStack</b> = nullptr</td></tr>
+<tr class="separator:ae863123bec4128ff53a3d612dc978da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a951806c09e5b5521d60291050341bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a951806c09e5b5521d60291050341bd"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentPath</b></td></tr>
+<tr class="separator:a6a951806c09e5b5521d60291050341bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa454c2c81520c87f9613945283398dc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa454c2c81520c87f9613945283398dc2"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_fullPath</b></td></tr>
+<tr class="separator:aa454c2c81520c87f9613945283398dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779474eb685064562175f5a33839a53b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a779474eb685064562175f5a33839a53b"></a>
+QStack&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_forwardPaths</b></td></tr>
+<tr class="separator:a779474eb685064562175f5a33839a53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe33157fa082b6de5bc3eb4afc87cfad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe33157fa082b6de5bc3eb4afc87cfad"></a>
+<a class="el" href="struct_az_qt_components_1_1_bread_crumbs_1_1_config.html">Config</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_config</b></td></tr>
+<tr class="separator:abe33157fa082b6de5bc3eb4afc87cfad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715103d9dd6a10e511230d7257f331ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a715103d9dd6a10e511230d7257f331ff"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>m_truncatedPaths</b></td></tr>
+<tr class="separator:a715103d9dd6a10e511230d7257f331ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d543c639f6231e39c3d7505b54da077"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d543c639f6231e39c3d7505b54da077"></a>
+QPointer&lt; QMenu &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_contextMenu</b> = nullptr</td></tr>
+<tr class="separator:a2d543c639f6231e39c3d7505b54da077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed47a5e2f414e33e4513cdfc5a51bf0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeed47a5e2f414e33e4513cdfc5a51bf0"></a>
+AZ_POP_DISABLE_WARNING bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_pushPathOnLinkActivation</b> = true</td></tr>
+<tr class="separator:aeed47a5e2f414e33e4513cdfc5a51bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452757f104e577b7862830ea62794e78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a452757f104e577b7862830ea62794e78"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_editable</b> = false</td></tr>
+<tr class="separator:a452757f104e577b7862830ea62794e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb97dcc41fabfbece9ff769054edf77f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb97dcc41fabfbece9ff769054edf77f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentPathSize</b> = 0</td></tr>
+<tr class="separator:adb97dcc41fabfbece9ff769054edf77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56dd67c457a508394616ea64007a4156"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56dd67c457a508394616ea64007a4156"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultIcon</b></td></tr>
+<tr class="separator:a56dd67c457a508394616ea64007a4156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -530,7 +643,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Style</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_debug_1_1_budget_tracker-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Debug::BudgetTracker Class Reference</div>  </div>
@@ -81,6 +82,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a8d3e634fc0346f42a1eb11f1fba1cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a8d3e634fc0346f42a1eb11f1fba1cd"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetBudgetFromEnvironment</b> (<a class="el" href="class_a_z_1_1_debug_1_1_budget.html">Budget</a> *&amp;extBudgetRef, const char *budgetName, uint32_t crc)</td></tr>
 <tr class="separator:a5a8d3e634fc0346f42a1eb11f1fba1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aca3ea3ae06b3115ebb92a17b0cc4bb07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca3ea3ae06b3115ebb92a17b0cc4bb07"></a>
+<a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="separator:aca3ea3ae06b3115ebb92a17b0cc4bb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eeced6a0f1e36dec22e190f7fb42227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1eeced6a0f1e36dec22e190f7fb42227"></a>
+BudgetTrackerImpl *&#160;</td><td class="memItemRight" valign="bottom"><b>m_impl</b> = nullptr</td></tr>
+<tr class="separator:a1eeced6a0f1e36dec22e190f7fb42227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Debug/BudgetTracker.h</li>
@@ -88,7 +98,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetBudgetFromE
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

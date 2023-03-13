@@ -55,6 +55,9 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_prefab_save_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Prefab::PrefabSaveHandler Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -148,16 +151,116 @@ static PrefabSaveResult&#160;</td><td class="memItemRight" valign="bottom"><b>Is
 <tr class="memitem:accb9436d5302888e31ea28094287b9c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accb9436d5302888e31ea28094287b9c0"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateSuggestedPrefabPath</b> (const AZStd::string &amp;prefabName, const AZStd::string &amp;targetDirectory, AZStd::string &amp;suggestedFullPath)</td></tr>
 <tr class="separator:accb9436d5302888e31ea28094287b9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af39511ba01360ef9e40038102360b71a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af39511ba01360ef9e40038102360b71a"></a>
+AZStd::shared_ptr&lt; QDialog &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructClosePrefabDialog</b> (TemplateId templateId)</td></tr>
+<tr class="separator:af39511ba01360ef9e40038102360b71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b366f3cd726897c78930a6359141557"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b366f3cd726897c78930a6359141557"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; AzQtComponents::Card &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructUnsavedPrefabsCard</b> (TemplateId templateId)</td></tr>
+<tr class="separator:a1b366f3cd726897c78930a6359141557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdea3f49d9ae815a9c90b34b6021640c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdea3f49d9ae815a9c90b34b6021640c"></a>
+AZStd::unique_ptr&lt; QDialog &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructSavePrefabDialog</b> (TemplateId templateId, bool useSaveAllPrefabsPreference)</td></tr>
+<tr class="separator:afdea3f49d9ae815a9c90b34b6021640c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4141cc9f9c1b75947f3c77b9d8f2f1f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4141cc9f9c1b75947f3c77b9d8f2f1f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SavePrefabsInDialog</b> (QDialog *unsavedPrefabsDialog)</td></tr>
+<tr class="separator:a4141cc9f9c1b75947f3c77b9d8f2f1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb7511ed4c0416b63f2ce2b117beba4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5eb7511ed4c0416b63f2ce2b117beba4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanDragAndDropData</b> (const QMimeData *data, AZStd::vector&lt; AZStd::string &gt; *prefabsToInstantiate=nullptr, AZStd::vector&lt; AZStd::string &gt; *prefabsToDetach=nullptr) const </td></tr>
+<tr class="separator:a5eb7511ed4c0416b63f2ce2b117beba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88dc5ea533019572bbab4be22f56324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad88dc5ea533019572bbab4be22f56324"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DoDragAndDropData</b> (const AZ::Vector3 &amp;instantiateLocation, const AZ::EntityId &amp;parentEntity, const AZStd::vector&lt; AZStd::string &gt; &amp;prefabsToInstantiate, const AZStd::vector&lt; AZStd::string &gt; &amp;prefabsToDetach)</td></tr>
+<tr class="separator:ad88dc5ea533019572bbab4be22f56324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a4b166b4ba70b95b13718a57b7d91fabc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_save_handler.html#a4b166b4ba70b95b13718a57b7d91fabc">SourceFileRemoved</a> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid sourceUUID) override</td></tr>
+<tr class="separator:a4b166b4ba70b95b13718a57b7d91fabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4049a45863490b38e828ab02d43967d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4049a45863490b38e828ab02d43967d4"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_toast_notifications_view.html">AzToolsFramework::ToastNotificationsView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabToastNotificationsView</b></td></tr>
+<tr class="separator:a4049a45863490b38e828ab02d43967d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e15393e4ece49e89944029ec22b3e00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e15393e4ece49e89944029ec22b3e00"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_entity_mapper_interface.html">InstanceEntityMapperInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceEntityMapperInterface</b> = nullptr</td></tr>
+<tr class="separator:a8e15393e4ece49e89944029ec22b3e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4696bba151ad055ba63c3066ce302636"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4696bba151ad055ba63c3066ce302636"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template_instance_mapper_interface.html">TemplateInstanceMapperInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_templateInstanceMapperInterface</b> = nullptr</td></tr>
+<tr class="separator:a4696bba151ad055ba63c3066ce302636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aa6f51e6a830ffb7e90f46b99cd62e77a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6f51e6a830ffb7e90f46b99cd62e77a"></a>
+static const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>s_prefabFileExtension</b></td></tr>
+<tr class="separator:aa6f51e6a830ffb7e90f46b99cd62e77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee9fc8fd0ffff1d2dfaed1301171da9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeee9fc8fd0ffff1d2dfaed1301171da9"></a>
+static const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>s_procPrefabFileExtension</b></td></tr>
+<tr class="separator:aeee9fc8fd0ffff1d2dfaed1301171da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba1bae323e9fa4fe37de37050db5f6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaba1bae323e9fa4fe37de37050db5f6a"></a>
+static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html">PrefabLoaderInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_prefabLoaderInterface</b></td></tr>
+<tr class="separator:aaba1bae323e9fa4fe37de37050db5f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8155dd315332ca67064c12d7439766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e8155dd315332ca67064c12d7439766"></a>
+static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">PrefabPublicInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_prefabPublicInterface</b></td></tr>
+<tr class="separator:a8e8155dd315332ca67064c12d7439766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395cf01987e2f78d175d80deadc6f054"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a395cf01987e2f78d175d80deadc6f054"></a>
+static <br class="typebreak"/>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">PrefabSystemComponentInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_prefabSystemComponentInterface</b></td></tr>
+<tr class="separator:a395cf01987e2f78d175d80deadc6f054"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to handle dialogs and windows related to prefab save operations. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4b166b4ba70b95b13718a57b7d91fabc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::PrefabSaveHandler::SourceFileRemoved </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::string&#160;</td>
+          <td class="paramname"><em>relativePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::string&#160;</td>
+          <td class="paramname"><em>scanFolder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::Uuid&#160;</td>
+          <td class="paramname"><em>sourceUUID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>AssetSystemBus notification handlers</p>
+<p>Called by the AssetProcessor when the source file has been removed. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/Prefab/PrefabSaveLoadHandler.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

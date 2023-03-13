@@ -55,6 +55,8 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_bundle_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBundleComponent Class Reference</div>  </div>
@@ -95,8 +97,177 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a098610736076f97ac4332935d4c48741"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a098610736076f97ac4332935d4c48741"></a>
 static const char&#160;</td><td class="memItemRight" valign="bottom"><b>DeltaCatalogName</b> []</td></tr>
 <tr class="separator:a098610736076f97ac4332935d4c48741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a649add29ccc588562bdad54260d2af8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a649add29ccc588562bdad54260d2af8f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDeltaCatalog</b> (const AZStd::string &amp;sourcePak, bool regenerate) override</td></tr>
+<tr class="separator:a649add29ccc588562bdad54260d2af8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af663069155c65413c971c70c4b502085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af663069155c65413c971c70c4b502085"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAssetBundle</b> (const <a class="el" href="class_az_tools_framework_1_1_asset_bundle_settings.html">AssetBundleSettings</a> &amp;assetBundleSettings) override</td></tr>
+<tr class="separator:af663069155c65413c971c70c4b502085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d7ed0345ad30c18c0f65ae4b9d070f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93d7ed0345ad30c18c0f65ae4b9d070f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAssetBundleFromList</b> (const <a class="el" href="class_az_tools_framework_1_1_asset_bundle_settings.html">AssetBundleSettings</a> &amp;assetBundleSettings, const <a class="el" href="class_az_tools_framework_1_1_asset_file_info_list.html">AssetFileInfoList</a> &amp;assetFileInfoList) override</td></tr>
+<tr class="separator:a93d7ed0345ad30c18c0f65ae4b9d070f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0ac87c26ebdcda6ebd2732ea017e85"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_bundle_component.html#a8e0ac87c26ebdcda6ebd2732ea017e85">CreateAssetBundleFileName</a> (const AZStd::string &amp;assetBundleFilePath, int bundleIndex)</td></tr>
+<tr class="separator:a8e0ac87c26ebdcda6ebd2732ea017e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449cfb8c25422ffb2149cfa0359e72f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a449cfb8c25422ffb2149cfa0359e72f6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_bundle_component.html#a449cfb8c25422ffb2149cfa0359e72f6">DeleteBundleFiles</a> (const AZStd::string &amp;assetBundleFilePath)</td></tr>
+<tr class="memdesc:a449cfb8c25422ffb2149cfa0359e72f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will delete both the parent bundle as well as all the dependent bundles mentioned in the manifest file of the parent bundle. <br/></td></tr>
+<tr class="separator:a449cfb8c25422ffb2149cfa0359e72f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669a56a9ffe22ac3be31079020d74783"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_bundle_component.html#a669a56a9ffe22ac3be31079020d74783">AddManifestFileToBundles</a> (const AZStd::vector&lt; AZStd::pair&lt; AZStd::string, AZStd::string &gt;&gt; &amp;bundlePathDeltaCatalogPair, const AZStd::vector&lt; AZStd::string &gt; &amp;dependentBundleNames, const AZStd::string &amp;bundleFolder, const <a class="el" href="class_az_tools_framework_1_1_asset_bundle_settings.html">AzToolsFramework::AssetBundleSettings</a> &amp;assetBundleSettings, const AZStd::vector&lt; AZ::IO::Path &gt; &amp;levelDirs)</td></tr>
+<tr class="separator:a669a56a9ffe22ac3be31079020d74783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9a7d3c9c7d7b8408c2f058744c0b40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_bundle_component.html#a6e9a7d3c9c7d7b8408c2f058744c0b40">AddCatalogAndFilesToBundle</a> (const AZStd::vector&lt; AZStd::string &gt; &amp;deltaCatalogEntries, const AZStd::vector&lt; AZStd::string &gt; &amp;fileEntries, const AZStd::string &amp;bundleFilePath, const char *assetAlias, const AzFramework::PlatformId &amp;platformId)</td></tr>
+<tr class="separator:a6e9a7d3c9c7d7b8408c2f058744c0b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a6ac20f2cb974806f924a68498109a695"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ac20f2cb974806f924a68498109a695"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
+<tr class="separator:a6ac20f2cb974806f924a68498109a695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a6e9a7d3c9c7d7b8408c2f058744c0b40"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::AssetBundleComponent::AddCatalogAndFilesToBundle </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::vector&lt; AZStd::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>deltaCatalogEntries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::vector&lt; AZStd::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fileEntries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>bundleFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>assetAlias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AzFramework::PlatformId &amp;&#160;</td>
+          <td class="paramname"><em>platformId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds the delta catalog and any remaining files to the bundle We only create the delta catalog once we are sure about what all the files that will go in it. </p>
+
+</div>
+</div>
+<a class="anchor" id="a669a56a9ffe22ac3be31079020d74783"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::AssetBundleComponent::AddManifestFileToBundles </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::vector&lt; AZStd::pair&lt; AZStd::string, AZStd::string &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>bundlePathDeltaCatalogPair</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::vector&lt; AZStd::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dependentBundleNames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>bundleFolder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_az_tools_framework_1_1_asset_bundle_settings.html">AzToolsFramework::AssetBundleSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>assetBundleSettings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::vector&lt; AZ::IO::Path &gt; &amp;&#160;</td>
+          <td class="paramname"><em>levelDirs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds the manifest file to all the bundles The parent bundle manifest file is special since it will contain information of all dependent bundles names. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e0ac87c26ebdcda6ebd2732ea017e85"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::string AzToolsFramework::AssetBundleComponent::CreateAssetBundleFileName </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>assetBundleFilePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bundleIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given an asset bundle file path and an index creates a unique bundle filename this will be use to save dependent bundle files. </p>
+
+</div>
+</div>
 <a class="anchor" id="a7a51e8c44e293ccc508de3d0c64900ac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +457,7 @@ static const char&#160;</td><td class="memItemRight" valign="bottom"><b>DeltaCat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

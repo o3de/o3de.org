@@ -55,6 +55,9 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_instance_data_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -225,6 +228,63 @@ Static Public Attributes</h2></td></tr>
 static const <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html#af6a4a3f5353d92becdc6d797d4f0ace0">Identifier</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidIdentifier</b> = static_cast&lt;<a class="el" href="class_az_tools_framework_1_1_instance_data_node.html#af6a4a3f5353d92becdc6d797d4f0ace0">Identifier</a>&gt;(~0)</td></tr>
 <tr class="separator:a39f6dde2c250a52f60e3b6fd857f4a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a03bc86d3987677d4e9c9e5db613abfd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03bc86d3987677d4e9c9e5db613abfd2"></a>
+typedef AZStd::vector&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceArray</b></td></tr>
+<tr class="separator:a03bc86d3987677d4e9c9e5db613abfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac9bec1d171de703d07d388603c6d0a7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9bec1d171de703d07d388603c6d0a7d"></a>
+InstanceArray&#160;</td><td class="memItemRight" valign="bottom"><b>m_instances</b></td></tr>
+<tr class="separator:ac9bec1d171de703d07d388603c6d0a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e97ded0f911e3c5cbb5e1ecc9513aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77e97ded0f911e3c5cbb5e1ecc9513aa"></a>
+<a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b></td></tr>
+<tr class="separator:a77e97ded0f911e3c5cbb5e1ecc9513aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadea1fb25dc3191510bbb2dcb3918615"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadea1fb25dc3191510bbb2dcb3918615"></a>
+<a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_root</b></td></tr>
+<tr class="separator:aadea1fb25dc3191510bbb2dcb3918615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95414a08587486d0a8d755295788dbbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95414a08587486d0a8d755295788dbbe"></a>
+NodeContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_children</b></td></tr>
+<tr class="separator:a95414a08587486d0a8d755295788dbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5fb86c2d9c5160c06b7cea9d3a4d51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd5fb86c2d9c5160c06b7cea9d3a4d51"></a>
+const <br class="typebreak"/>
+AZ::SerializeContext::ClassData *&#160;</td><td class="memItemRight" valign="bottom"><b>m_classData</b></td></tr>
+<tr class="separator:acd5fb86c2d9c5160c06b7cea9d3a4d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984e47d09c7149d4dbcec1a0a979b5ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a984e47d09c7149d4dbcec1a0a979b5ca"></a>
+const <br class="typebreak"/>
+AZ::SerializeContext::ClassElement *&#160;</td><td class="memItemRight" valign="bottom"><b>m_classElement</b></td></tr>
+<tr class="separator:a984e47d09c7149d4dbcec1a0a979b5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eab6f19d25c33853d2573db9b927fa4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2eab6f19d25c33853d2573db9b927fa4"></a>
+const AZ::Edit::ElementData *&#160;</td><td class="memItemRight" valign="bottom"><b>m_elementEditData</b></td></tr>
+<tr class="separator:a2eab6f19d25c33853d2573db9b927fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d8eeff9a62df967611cad0b9d8d24b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85d8eeff9a62df967611cad0b9d8d24b"></a>
+AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
+<tr class="separator:a85d8eeff9a62df967611cad0b9d8d24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b7a932bf33fc5c73fb48888a411d987"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b7a932bf33fc5c73fb48888a411d987"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_comparisonFlags</b></td></tr>
+<tr class="separator:a1b7a932bf33fc5c73fb48888a411d987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad109e5466e590c9d4e22e4d25212e6ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad109e5466e590c9d4e22e4d25212e6ee"></a>
+const <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_comparisonNode</b></td></tr>
+<tr class="separator:ad109e5466e590c9d4e22e4d25212e6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9c21f8edf9818a97a0c7d5575ccb00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac9c21f8edf9818a97a0c7d5575ccb00"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_matched</b></td></tr>
+<tr class="separator:aac9c21f8edf9818a97a0c7d5575ccb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954f71869759ae0368b43c761b90fb9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a954f71869759ae0368b43c761b90fb9f"></a>
+<a class="el" href="class_az_tools_framework_1_1_instance_data_node.html#af6a4a3f5353d92becdc6d797d4f0ace0">Identifier</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_identifier</b></td></tr>
+<tr class="separator:a954f71869759ae0368b43c761b90fb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c2471bb932d536951ac3c823c27132"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61c2471bb932d536951ac3c823c27132"></a>
+const AZ::Edit::ElementData *&#160;</td><td class="memItemRight" valign="bottom"><b>m_groupElementData</b></td></tr>
+<tr class="separator:a61c2471bb932d536951ac3c823c27132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aad3408e43fe70ba63099c9b9f792d914"><td class="memTemplParams" colspan="2"><a class="anchor" id="aad3408e43fe70ba63099c9b9f792d914"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:aad3408e43fe70ba63099c9b9f792d914"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CheckCast</b> (const T *castType)</td></tr>
+<tr class="separator:aad3408e43fe70ba63099c9b9f792d914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a9364a1fa2085a545498d155572d042ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9364a1fa2085a545498d155572d042ff"></a>
@@ -309,7 +369,7 @@ template&lt;typename WrappedType &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

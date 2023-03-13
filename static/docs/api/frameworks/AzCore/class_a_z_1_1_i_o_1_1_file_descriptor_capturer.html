@@ -56,6 +56,9 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_file_descriptor_capturer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::FileDescriptorCapturer Class Reference</div>  </div>
@@ -94,6 +97,36 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a3bb6dd9a6513a03ceb56ac2fe005db52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bb6dd9a6513a03ceb56ac2fe005db52"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultPipeSize</b> = (1 &lt;&lt; 16)</td></tr>
 <tr class="separator:a3bb6dd9a6513a03ceb56ac2fe005db52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a05b0649018d2ad5d03476ac3a92458bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05b0649018d2ad5d03476ac3a92458bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
+<tr class="separator:a05b0649018d2ad5d03476ac3a92458bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0945d50a8c69abbb9cf8c786be13cd81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0945d50a8c69abbb9cf8c786be13cd81"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_sourceDescriptor</b> = -1</td></tr>
+<tr class="separator:a0945d50a8c69abbb9cf8c786be13cd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa611a529ef92e2d69b322440695e34a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa611a529ef92e2d69b322440695e34a0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_dupSourceDescriptor</b> = -1</td></tr>
+<tr class="separator:aa611a529ef92e2d69b322440695e34a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976f9cdb027a9938d056d1cf743a71c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a976f9cdb027a9938d056d1cf743a71c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_pipe</b> [2] { -1, -1 }</td></tr>
+<tr class="separator:a976f9cdb027a9938d056d1cf743a71c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d5263d83a5206ba17fa185e9ed38a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3d5263d83a5206ba17fa185e9ed38a3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_redirectToPipe</b> {}</td></tr>
+<tr class="separator:ae3d5263d83a5206ba17fa185e9ed38a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a063b54a52b99ec20640e41bf3f04e5bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a063b54a52b99ec20640e41bf3f04e5bd"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>ReadEnd</b> = 0</td></tr>
+<tr class="separator:a063b54a52b99ec20640e41bf3f04e5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19d500cf8a312d42b599f4d09d22e02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab19d500cf8a312d42b599f4d09d22e02"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>WriteEnd</b> = 1</td></tr>
+<tr class="separator:ab19d500cf8a312d42b599f4d09d22e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class for capturing the output of file descriptor redirection using with RAII behavior. Example:</p>
@@ -118,7 +151,7 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Defau
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

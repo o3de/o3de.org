@@ -55,6 +55,10 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_full_file_decompressor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::FullFileDecompressor Class Reference</div>  </div>
@@ -65,6 +69,11 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">AZ::IO::StreamStackEntry</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_full_file_decompressor_1_1_decompression_information.html">DecompressionInformation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a211586bbb267eea37427e4cc823c201d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a211586bbb267eea37427e4cc823c201d"></a>
@@ -100,6 +109,139 @@ virtual const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::st
 <tr class="memitem:aee6fdc1ce65576fbd3dd01a766d9fc13 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee6fdc1ce65576fbd3dd01a766d9fc13"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetContext</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> &amp;context)</td></tr>
 <tr class="separator:aee6fdc1ce65576fbd3dd01a766d9fc13 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ac9d4cedbe4230d2bab8399e1ab87409d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ReadBufferStatus</b> : uint8_t { <b>Unused</b>, 
+<b>ReadInFlight</b>, 
+<b>PendingDecompression</b>
+ }</td></tr>
+<tr class="separator:ac9d4cedbe4230d2bab8399e1ab87409d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0702ab0dcb59bff5bc57efb8cf5f99c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0702ab0dcb59bff5bc57efb8cf5f99c0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Buffer</b> = u8 *</td></tr>
+<tr class="separator:a0702ab0dcb59bff5bc57efb8cf5f99c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a0e5b6ef02eb8daab21a95b0b348f2454"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e5b6ef02eb8daab21a95b0b348f2454"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsIdle</b> () const </td></tr>
+<tr class="separator:a0e5b6ef02eb8daab21a95b0b348f2454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55504c01b9ef4c2bfa01269b3eaaf6fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55504c01b9ef4c2bfa01269b3eaaf6fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareReadRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_read_request_data.html">Requests::ReadRequestData</a> &amp;data)</td></tr>
+<tr class="separator:a55504c01b9ef4c2bfa01269b3eaaf6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4ed0439fff9b82bd0d8285e20f4594"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb4ed0439fff9b82bd0d8285e20f4594"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareDedicatedCache</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;path)</td></tr>
+<tr class="separator:acb4ed0439fff9b82bd0d8285e20f4594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2589882960b2cd6be3e25e7de92515c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2589882960b2cd6be3e25e7de92515c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FileExistsCheck</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *checkRequest)</td></tr>
+<tr class="separator:ae2589882960b2cd6be3e25e7de92515c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40faffa2b966ea99f7d24b114976a81c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40faffa2b966ea99f7d24b114976a81c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EstimateCompressedReadRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, AZStd::chrono::microseconds &amp;cumulativeDelay, AZStd::chrono::microseconds decompressionDelay, double totalDecompressionDurationUs, double totalBytesDecompressed) const </td></tr>
+<tr class="separator:a40faffa2b966ea99f7d24b114976a81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf488ce81eeb4d98c427819de82434e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf488ce81eeb4d98c427819de82434e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartArchiveRead</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *compressedReadRequest)</td></tr>
+<tr class="separator:abf488ce81eeb4d98c427819de82434e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4339e4879fc6f6fd4b559780a9e7f7dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4339e4879fc6f6fd4b559780a9e7f7dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FinishArchiveRead</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *readRequest, u32 readSlot)</td></tr>
+<tr class="separator:a4339e4879fc6f6fd4b559780a9e7f7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3ca4bad9d43ddbbe5cffed18bd0e39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a3ca4bad9d43ddbbe5cffed18bd0e39"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>StartDecompressions</b> ()</td></tr>
+<tr class="separator:a2a3ca4bad9d43ddbbe5cffed18bd0e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41739a4712177d15ff1922da12d5414"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae41739a4712177d15ff1922da12d5414"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FinishDecompression</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *waitRequest, u32 jobSlot)</td></tr>
+<tr class="separator:ae41739a4712177d15ff1922da12d5414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac369219fe5e941384130967d8ce0a7cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac369219fe5e941384130967d8ce0a7cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Report</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_report_data.html">Requests::ReportData</a> &amp;data) const </td></tr>
+<tr class="separator:ac369219fe5e941384130967d8ce0a7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a689b1cb80d6f33c3c6d0d111557794de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a689b1cb80d6f33c3c6d0d111557794de"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>FullDecompression</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> *context, <a class="el" href="struct_a_z_1_1_i_o_1_1_full_file_decompressor_1_1_decompression_information.html">DecompressionInformation</a> &amp;info)</td></tr>
+<tr class="separator:a689b1cb80d6f33c3c6d0d111557794de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e43c0e98f945db19afebbb2bdc50d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03e43c0e98f945db19afebbb2bdc50d5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PartialDecompression</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> *context, <a class="el" href="struct_a_z_1_1_i_o_1_1_full_file_decompressor_1_1_decompression_information.html">DecompressionInformation</a> &amp;info)</td></tr>
+<tr class="separator:a03e43c0e98f945db19afebbb2bdc50d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a343707257321e7d3c990db597875439a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a343707257321e7d3c990db597875439a"></a>
+<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingReads</b></td></tr>
+<tr class="separator:a343707257321e7d3c990db597875439a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea61fce4982cfa041cb94d398c2c7fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ea61fce4982cfa041cb94d398c2c7fe"></a>
+<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingFileExistChecks</b></td></tr>
+<tr class="separator:a3ea61fce4982cfa041cb94d398c2c7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70af2f1b9d72f6388347a4cb65029a6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70af2f1b9d72f6388347a4cb65029a6c"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_average_window.html">AverageWindow</a>&lt; size_t, double, <br class="typebreak"/>
+<a class="el" href="namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53">s_statisticsWindowSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressionJobDelayMicroSec</b></td></tr>
+<tr class="separator:a70af2f1b9d72f6388347a4cb65029a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99222a85e11ed3052cd91db24d925294"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99222a85e11ed3052cd91db24d925294"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_average_window.html">AverageWindow</a>&lt; size_t, double, <br class="typebreak"/>
+<a class="el" href="namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53">s_statisticsWindowSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressionDurationMicroSec</b></td></tr>
+<tr class="separator:a99222a85e11ed3052cd91db24d925294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff18a210d33ef4f40bb39fa43cc00a2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff18a210d33ef4f40bb39fa43cc00a2f"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_average_window.html">AverageWindow</a>&lt; size_t, double, <br class="typebreak"/>
+<a class="el" href="namespace_a_z_1_1_i_o.html#addcfaa8bb87ad5c446694045637abb53">s_statisticsWindowSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_bytesDecompressed</b></td></tr>
+<tr class="separator:aff18a210d33ef4f40bb39fa43cc00a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8416e76f07c32aaf74bb37c561ae85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b8416e76f07c32aaf74bb37c561ae85"></a>
+AZStd::unique_ptr&lt; Buffer[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readBuffers</b></td></tr>
+<tr class="separator:a4b8416e76f07c32aaf74bb37c561ae85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec04b5cec4dfc2315c7fa1ba5aa9063"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ec04b5cec4dfc2315c7fa1ba5aa9063"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readRequests</b></td></tr>
+<tr class="separator:a4ec04b5cec4dfc2315c7fa1ba5aa9063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17cfca6623ebee6bf8f0ac6e2266bc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad17cfca6623ebee6bf8f0ac6e2266bc2"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; ReadBufferStatus[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readBufferStatus</b></td></tr>
+<tr class="separator:ad17cfca6623ebee6bf8f0ac6e2266bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666ce647a4af67b51b8469348fbae33d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a666ce647a4af67b51b8469348fbae33d"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_full_file_decompressor_1_1_decompression_information.html">DecompressionInformation</a>[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_processingJobs</b></td></tr>
+<tr class="separator:a666ce647a4af67b51b8469348fbae33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdfc79c7a81560c1cd34749c2b302fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accdfc79c7a81560c1cd34749c2b302fe"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_job_manager.html">JobManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressionJobManager</b></td></tr>
+<tr class="separator:accdfc79c7a81560c1cd34749c2b302fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04de9a08457f42275593b136eedea049"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04de9a08457f42275593b136eedea049"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_job_context.html">JobContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_decompressionjobContext</b></td></tr>
+<tr class="separator:a04de9a08457f42275593b136eedea049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0059950d62752e5b549678f507b2919d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0059950d62752e5b549678f507b2919d"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_full_file_decompressor.html#a0059950d62752e5b549678f507b2919d">m_memoryUsage</a> { 0 }</td></tr>
+<tr class="memdesc:a0059950d62752e5b549678f507b2919d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of memory used for buffers by the decompressor. <br/></td></tr>
+<tr class="separator:a0059950d62752e5b549678f507b2919d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651f6a2bc7d161b6975f37f3f4956ea1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a651f6a2bc7d161b6975f37f3f4956ea1"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxNumReads</b> { 2 }</td></tr>
+<tr class="separator:a651f6a2bc7d161b6975f37f3f4956ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a933179b81432952070217d6d2adbd9d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a933179b81432952070217d6d2adbd9d8"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_numInFlightReads</b> { 0 }</td></tr>
+<tr class="separator:a933179b81432952070217d6d2adbd9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3845d09739c37044be8c1758dee293"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd3845d09739c37044be8c1758dee293"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_numPendingDecompression</b> { 0 }</td></tr>
+<tr class="separator:acd3845d09739c37044be8c1758dee293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c08c0630aecb00c0498981018005034"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c08c0630aecb00c0498981018005034"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxNumJobs</b> { 1 }</td></tr>
+<tr class="separator:a7c08c0630aecb00c0498981018005034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3700525b748cefe6284e82d89ca124"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e3700525b748cefe6284e82d89ca124"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_numRunningJobs</b> { 0 }</td></tr>
+<tr class="separator:a9e3700525b748cefe6284e82d89ca124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0fc687748cf21506542471fbb69da8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b0fc687748cf21506542471fbb69da8"></a>
+u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_alignment</b> { 0 }</td></tr>
+<tr class="separator:a4b0fc687748cf21506542471fbb69da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">AZ::IO::StreamStackEntry</a></td></tr>
+<tr class="memitem:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b380a8ce0080b376ffc8c7dc03641ac"></a>
+<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a1b380a8ce0080b376ffc8c7dc03641ac">m_name</a></td></tr>
+<tr class="memdesc:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name that uniquely identifies this entry. <br/></td></tr>
+<tr class="separator:a1b380a8ce0080b376ffc8c7dc03641ac inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfeb135e5629127cdc15a346d51aa2dd"></a>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">StreamStackEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#adfeb135e5629127cdc15a346d51aa2dd">m_next</a></td></tr>
+<tr class="memdesc:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next entry in the stack. <br/></td></tr>
+<tr class="separator:adfeb135e5629127cdc15a346d51aa2dd inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a174d09b6e0ceba3059c234ab15801853"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a174d09b6e0ceba3059c234ab15801853">m_context</a></td></tr>
+<tr class="memdesc:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context information for the entire streaming stack. <br/></td></tr>
+<tr class="separator:a174d09b6e0ceba3059c234ab15801853 inherit pro_attribs_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Entry in the streaming stack that decompresses files from an archive that are stored as single files and without equally distributed seek points. Because the target archive has compressed the entire file, it needs to be decompressed completely, so even if the file is partially read, it needs to be fully loaded. This also means that there's no upper limit to the memory so every decompression job will need to allocate memory as a temporary buffer (in-place decompression is not supported). Finally, the lack of an upper limit also means that the duration of the decompression job can vary largely so a dedicated job system is used to decompress on to avoid blocking the main job system from working. </p>
@@ -276,7 +418,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetContext</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

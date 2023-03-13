@@ -53,6 +53,9 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_json_serializer-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -60,6 +63,89 @@
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a7191e3391b894e7757a0b9022695a431"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>StoreTypeId</b> : bool { <b>No</b>, 
+<b>Yes</b>
+ }</td></tr>
+<tr class="separator:a7191e3391b894e7757a0b9022695a431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8faab89897e085d932463daa8ca16f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>UseTypeSerializer</b> : bool { <b>No</b>, 
+<b>Yes</b>
+ }</td></tr>
+<tr class="separator:a4b8faab89897e085d932463daa8ca16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8feda60e231cc3234362371daa3702d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ResolvePointerResult</b> { <b>FullyProcessed</b>, 
+<b>WriteNull</b>, 
+<b>ContinueProcessing</b>
+ }</td></tr>
+<tr class="separator:ae8feda60e231cc3234362371daa3702d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a17b84581e431d7804a020ec1e93467f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17b84581e431d7804a020ec1e93467f6"></a>
+<a class="el" href="class_a_z_1_1_json_serializer.html">JsonSerializer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_json_serializer.html">JsonSerializer</a> &amp;rhs)=delete</td></tr>
+<tr class="separator:a17b84581e431d7804a020ec1e93467f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4ad971615953e470cb13f4f5854377"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf4ad971615953e470cb13f4f5854377"></a>
+<a class="el" href="class_a_z_1_1_json_serializer.html">JsonSerializer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_a_z_1_1_json_serializer.html">JsonSerializer</a> &amp;&amp;rhs)=delete</td></tr>
+<tr class="separator:adf4ad971615953e470cb13f4f5854377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c34e1e9ee116d149fedf650b2a7af48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c34e1e9ee116d149fedf650b2a7af48"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>JsonSerializer</b> (const <a class="el" href="class_a_z_1_1_json_serializer.html">JsonSerializer</a> &amp;rhs)=delete</td></tr>
+<tr class="separator:a4c34e1e9ee116d149fedf650b2a7af48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3d06030089b364eb87a0ffebc519f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e3d06030089b364eb87a0ffebc519f1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>JsonSerializer</b> (<a class="el" href="class_a_z_1_1_json_serializer.html">JsonSerializer</a> &amp;&amp;rhs)=delete</td></tr>
+<tr class="separator:a2e3d06030089b364eb87a0ffebc519f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a08b43b8f608448b8eb4134b32ea1c0c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08b43b8f608448b8eb4134b32ea1c0c2"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Store</b> (rapidjson::Value &amp;output, const void *object, const void *defaultObject, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;typeId, UseTypeSerializer useCustom, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:a08b43b8f608448b8eb4134b32ea1c0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09dae014e272dbe83061160ac2042dff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09dae014e272dbe83061160ac2042dff"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StoreFromPointer</b> (rapidjson::Value &amp;output, const void *object, const void *defaultObject, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;typeId, UseTypeSerializer custom, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:a09dae014e272dbe83061160ac2042dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af351ddce9d97815d24b8fbc9291a4763"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af351ddce9d97815d24b8fbc9291a4763"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StoreWithClassData</b> (rapidjson::Value &amp;node, const void *object, const void *defaultObject, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> &amp;classData, StoreTypeId storeTypeId, UseTypeSerializer custom, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:af351ddce9d97815d24b8fbc9291a4763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc179d2ac1006981f6bd6f2357ab8f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedc179d2ac1006981f6bd6f2357ab8f3"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StoreWithClassDataFromPointer</b> (rapidjson::Value &amp;output, const void *object, const void *defaultObject, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> &amp;classData, UseTypeSerializer custom, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:aedc179d2ac1006981f6bd6f2357ab8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95eef8346f4eafef9a8c4e963ebc448b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95eef8346f4eafef9a8c4e963ebc448b"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StoreWithClassElement</b> (rapidjson::Value &amp;parentNode, const void *object, const void *defaultObject, const <a class="el" href="struct_a_z_1_1_serialize_1_1_class_element.html">SerializeContext::ClassElement</a> &amp;classElement, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:a95eef8346f4eafef9a8c4e963ebc448b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631c83b316b101e366589ac496d3c2e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a631c83b316b101e366589ac496d3c2e5"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StoreClass</b> (rapidjson::Value &amp;output, const void *object, const void *defaultObject, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> &amp;classData, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:a631c83b316b101e366589ac496d3c2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70ed9eac81dca048091ffb691295163"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac70ed9eac81dca048091ffb691295163"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StoreEnum</b> (rapidjson::Value &amp;output, const void *object, const void *defaultObject, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> &amp;classData, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:ac70ed9eac81dca048091ffb691295163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2f6bbf83aa57310b5d8f8306d1506d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5b2f6bbf83aa57310b5d8f8306d1506d"></a>
+template&lt;typename UnderlyingType &gt; </td></tr>
+<tr class="memitem:a5b2f6bbf83aa57310b5d8f8306d1506d"><td class="memTemplItemLeft" align="right" valign="top">static <br class="typebreak"/>
+<a class="el" href="class_a_z_1_1_json_serialization_result_1_1_result.html">JsonSerializationResult::Result</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>StoreUnderlyingEnumType</b> (rapidjson::Value &amp;outputValue, const UnderlyingType *value, const UnderlyingType *defaultValue, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> &amp;classData, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:a5b2f6bbf83aa57310b5d8f8306d1506d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3416e7bd73baaa830c21f5ef4bdc0ec1"><td class="memItemLeft" align="right" valign="top">static ResolvePointerResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_serializer.html#a3416e7bd73baaa830c21f5ef4bdc0ec1">ResolvePointer</a> (<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a> &amp;status, StoreTypeId &amp;storeTypeId, const void *&amp;object, const void *&amp;defaultObject, <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> &amp;defaultObjectStorage, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> *&amp;elementClassData, const <a class="el" href="class_a_z_1_1_i_rtti_helper.html">AZ::IRttiHelper</a> &amp;rtti, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:a3416e7bd73baaa830c21f5ef4bdc0ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f9e2578301c225d9bf89f0f035f828"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0f9e2578301c225d9bf89f0f035f828"></a>
+static rapidjson::Value&#160;</td><td class="memItemRight" valign="bottom"><b>StoreTypeName</b> (const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> &amp;classData, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;typeId, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:aa0f9e2578301c225d9bf89f0f035f828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698c83a8af248f629f2c6d5d903ddf00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a698c83a8af248f629f2c6d5d903ddf00"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StoreTypeName</b> (rapidjson::Value &amp;output, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;typeId, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:a698c83a8af248f629f2c6d5d903ddf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcdbd22a3ca308eaa74fb83dcbec408b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcdbd22a3ca308eaa74fb83dcbec408b"></a>
+static <br class="typebreak"/>
+<a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InsertTypeId</b> (rapidjson::Value &amp;output, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> &amp;classData, <a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;context)</td></tr>
+<tr class="separator:adcdbd22a3ca308eaa74fb83dcbec408b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0717675b3a526f4778d8d0ad92b3977"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0717675b3a526f4778d8d0ad92b3977"></a>
+static rapidjson::Value&#160;</td><td class="memItemRight" valign="bottom"><b>GetExplicitDefault</b> ()</td></tr>
+<tr class="separator:ae0717675b3a526f4778d8d0ad92b3977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a2e20cd7a49039184e99f94b655fdb62d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e20cd7a49039184e99f94b655fdb62d"></a>
@@ -69,13 +155,85 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>JsonSerialization</b
 class&#160;</td><td class="memItemRight" valign="bottom"><b>BaseJsonSerializer</b></td></tr>
 <tr class="separator:a796a35bd553352c6dd83fd8631eb6b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3416e7bd73baaa830c21f5ef4bdc0ec1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ResolvePointerResult AZ::JsonSerializer::ResolvePointer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="union_a_z_1_1_json_serialization_result_1_1_result_code.html">JsonSerializationResult::ResultCode</a> &amp;&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">StoreTypeId &amp;&#160;</td>
+          <td class="paramname"><em>storeTypeId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&amp;&#160;</td>
+          <td class="paramname"><em>defaultObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> &amp;&#160;</td>
+          <td class="paramname"><em>defaultObjectStorage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> *&amp;&#160;</td>
+          <td class="paramname"><em>elementClassData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_i_rtti_helper.html">AZ::IRttiHelper</a> &amp;&#160;</td>
+          <td class="paramname"><em>rtti</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_json_serializer_context.html">JsonSerializerContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Extracts information on the provided pointer and moves it to the content of the pointer. If FullyProcessed is returned there's no more information to process and if ContinueProcessing is returned the elementClassData will be updated to the element the pointer was pointing to and storeTypeId will indicate if the type needs to be explicitly written. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Serialization/Json/JsonSerializer.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

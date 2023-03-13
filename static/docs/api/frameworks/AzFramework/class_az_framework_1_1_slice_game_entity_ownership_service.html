@@ -55,6 +55,9 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_slice_game_entity_ownership_service-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::SliceGameEntityOwnershipService Class Reference</div>  </div>
@@ -63,6 +66,11 @@
 
 <p>Inherits <a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html">AzFramework::SliceEntityOwnershipService</a>, Handler, and MultiHandler.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_slice_game_entity_ownership_service_1_1_instantiating_dynamic_slice_info.html">InstantiatingDynamicSliceInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a97c68ea3f4a642bd618fd73fd5d6a11e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97c68ea3f4a642bd618fd73fd5d6a11e"></a>
@@ -165,6 +173,80 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a79eed1048ccb73e0c1c20081015dfc53 inherit pub_static_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af651a205cfc54b0950d88e2f0367ea03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af651a205cfc54b0950d88e2f0367ea03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRootSlice</b> () override</td></tr>
+<tr class="separator:af651a205cfc54b0950d88e2f0367ea03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_slice_entity_ownership_service')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html">AzFramework::SliceEntityOwnershipService</a></td></tr>
+<tr class="memitem:a77f5300467832a4789bfd33d607f36e1 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77f5300467832a4789bfd33d607f36e1"></a>
+AZ::SliceComponent::SliceInstanceAddress&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwningSlice</b> () override</td></tr>
+<tr class="separator:a77f5300467832a4789bfd33d607f36e1 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7a76e17ff635abac5d79848f1d9b40 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f7a76e17ff635abac5d79848f1d9b40"></a>
+AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentlyInstantiatingSlice</b> () override</td></tr>
+<tr class="separator:a5f7a76e17ff635abac5d79848f1d9b40 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b1cdccdf0f01c4e96a661a59a521e4 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48b1cdccdf0f01c4e96a661a59a521e4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRootEntityReloadedFromStream</b> (AZ::Entity *rootEntity, bool remapIds, AZ::SliceComponent::EntityIdToEntityIdMap *idRemapTable=nullptr) override</td></tr>
+<tr class="separator:a48b1cdccdf0f01c4e96a661a59a521e4 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeca83e352d19a14abdbafa9c0e05996 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeca83e352d19a14abdbafa9c0e05996"></a>
+AZ::SliceComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootSlice</b> () override</td></tr>
+<tr class="separator:aeeca83e352d19a14abdbafa9c0e05996 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54f1f98ed95a46fd656a7f43ff293db inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae54f1f98ed95a46fd656a7f43ff293db"></a>
+const <br class="typebreak"/>
+AZ::SliceComponent::EntityIdToEntityIdMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadedEntityIdMap</b> () override</td></tr>
+<tr class="separator:ae54f1f98ed95a46fd656a7f43ff293db inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74c8ecc354670a8ce1c8763005021aa inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad74c8ecc354670a8ce1c8763005021aa"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>FindLoadedEntityIdMapping</b> (const AZ::EntityId &amp;staticId) const override</td></tr>
+<tr class="separator:ad74c8ecc354670a8ce1c8763005021aa inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071b8c5dd080b0f4f31034cc25ebac1c inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a071b8c5dd080b0f4f31034cc25ebac1c"></a>
+<a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html">SliceInstantiationTicket</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiateSlice</b> (const AZ::Data::Asset&lt; AZ::Data::AssetData &gt; &amp;asset, const AZ::IdUtils::Remapper&lt; AZ::EntityId &gt;::IdMapper &amp;customIdMapper=nullptr, const AZ::Data::AssetFilterCB &amp;assetLoadFilter=nullptr) override</td></tr>
+<tr class="separator:a071b8c5dd080b0f4f31034cc25ebac1c inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e297a2babf5b2047e61c42b9f5f69d inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2e297a2babf5b2047e61c42b9f5f69d"></a>
+AZ::SliceComponent::SliceInstanceAddress&#160;</td><td class="memItemRight" valign="bottom"><b>CloneSliceInstance</b> (AZ::SliceComponent::SliceInstanceAddress sourceInstance, AZ::SliceComponent::EntityIdToEntityIdMap &amp;sourceToCloneEntityIdMap) override</td></tr>
+<tr class="separator:ae2e297a2babf5b2047e61c42b9f5f69d inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851577cbe7fad88bb9392bc19fe42e45 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a851577cbe7fad88bb9392bc19fe42e45"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelSliceInstantiation</b> (const <a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html">SliceInstantiationTicket</a> &amp;ticket) override</td></tr>
+<tr class="separator:a851577cbe7fad88bb9392bc19fe42e45 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b9bf8e0e405e021b78a5c363a6a040 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68b9bf8e0e405e021b78a5c363a6a040"></a>
+<a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html">SliceInstantiationTicket</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateSliceInstantiationTicket</b> () override</td></tr>
+<tr class="separator:a68b9bf8e0e405e021b78a5c363a6a040 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dbc55e765d08a6393227a8975eaa4b inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51dbc55e765d08a6393227a8975eaa4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetIsDynamic</b> (bool isDynamic) override</td></tr>
+<tr class="separator:a51dbc55e765d08a6393227a8975eaa4b inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c3ab5f3799ec68b11d5aec3794bfe1 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95c3ab5f3799ec68b11d5aec3794bfe1"></a>
+const RootSliceAsset &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootAsset</b> () const override</td></tr>
+<tr class="separator:a95c3ab5f3799ec68b11d5aec3794bfe1 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac743d13ef48933e0a36aff4729b2031 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac743d13ef48933e0a36aff4729b2031"></a>
+AZ::SliceComponent::SliceInstanceAddress&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwningSlice</b> (AZ::EntityId entityId)</td></tr>
+<tr class="separator:aac743d13ef48933e0a36aff4729b2031 inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6da876b4581e20d0c0c5068e948493b inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6da876b4581e20d0c0c5068e948493b"></a>
+AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSerializeContext</b> ()</td></tr>
+<tr class="separator:ab6da876b4581e20d0c0c5068e948493b inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86519a89b1e5b54de6242d4c6be9874a inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86519a89b1e5b54de6242d4c6be9874a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRootSlice</b> (AZ::SliceAsset *rootSliceAsset)</td></tr>
+<tr class="separator:a86519a89b1e5b54de6242d4c6be9874a inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d4e91d36f1ba35ffea6fbd09968d1a inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a06d4e91d36f1ba35ffea6fbd09968d1a">HandleNewMetadataEntitiesCreated</a> (AZ::SliceComponent &amp;)</td></tr>
+<tr class="separator:a06d4e91d36f1ba35ffea6fbd09968d1a inherit pro_methods_class_az_framework_1_1_slice_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae377d8c0154ddc29ee66065b24a98ca0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae377d8c0154ddc29ee66065b24a98ca0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushDynamicSliceDeletionList</b> ()</td></tr>
+<tr class="separator:ae377d8c0154ddc29ee66065b24a98ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05cab7887cc09fcce0813c9081debbba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_slice_game_entity_ownership_service.html#a05cab7887cc09fcce0813c9081debbba">MarkEntityForNoActivation</a> (AZ::EntityId entityId)</td></tr>
+<tr class="separator:a05cab7887cc09fcce0813c9081debbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a92f3ff2e859c62034857f2e19fa18807"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92f3ff2e859c62034857f2e19fa18807"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html">SliceInstantiationTicket</a>, <br class="typebreak"/>
+<a class="el" href="struct_az_framework_1_1_slice_game_entity_ownership_service_1_1_instantiating_dynamic_slice_info.html">InstantiatingDynamicSliceInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instantiatingDynamicSlices</b></td></tr>
+<tr class="separator:a92f3ff2e859c62034857f2e19fa18807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5424533e91bb8c76456faf7f8d2c08a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5424533e91bb8c76456faf7f8d2c08a1"></a>
+SliceInstanceUnorderedSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_dynamicSlicesToDestroy</b></td></tr>
+<tr class="separator:a5424533e91bb8c76456faf7f8d2c08a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_az_framework_1_1_entity_ownership_service"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_framework_1_1_entity_ownership_service')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_framework_1_1_entity_ownership_service.html">AzFramework::EntityOwnershipService</a></td></tr>
@@ -175,14 +257,56 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>EntityIdToEntityIdMa
 <tr class="memitem:a32445c0a8e7a86dcc2f0a765bce3919c inherit pub_attribs_class_az_framework_1_1_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32445c0a8e7a86dcc2f0a765bce3919c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_shouldAssertForLegacySlicesUsage</b> = false</td></tr>
 <tr class="separator:a32445c0a8e7a86dcc2f0a765bce3919c inherit pub_attribs_class_az_framework_1_1_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_az_framework_1_1_entity_ownership_service"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_az_framework_1_1_entity_ownership_service')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_az_framework_1_1_entity_ownership_service.html">AzFramework::EntityOwnershipService</a></td></tr>
+<tr class="memitem:a4fd283744c7a980bc101317f9a45183b inherit pro_attribs_class_az_framework_1_1_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fd283744c7a980bc101317f9a45183b"></a>
+OnEntitiesAddedCallback&#160;</td><td class="memItemRight" valign="bottom"><b>m_entitiesAddedCallback</b></td></tr>
+<tr class="separator:a4fd283744c7a980bc101317f9a45183b inherit pro_attribs_class_az_framework_1_1_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0937f9f8b5d4cca416b073f67ca0508 inherit pro_attribs_class_az_framework_1_1_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0937f9f8b5d4cca416b073f67ca0508"></a>
+OnEntitiesRemovedCallback&#160;</td><td class="memItemRight" valign="bottom"><b>m_entitiesRemovedCallback</b></td></tr>
+<tr class="separator:ac0937f9f8b5d4cca416b073f67ca0508 inherit pro_attribs_class_az_framework_1_1_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbdadbadf4dbae590b12c3d5585317eb inherit pro_attribs_class_az_framework_1_1_entity_ownership_service"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbdadbadf4dbae590b12c3d5585317eb"></a>
+ValidateEntitiesCallback&#160;</td><td class="memItemRight" valign="bottom"><b>m_validateEntitiesCallback</b></td></tr>
+<tr class="separator:abbdadbadf4dbae590b12c3d5585317eb inherit pro_attribs_class_az_framework_1_1_entity_ownership_service"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a05cab7887cc09fcce0813c9081debbba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::SliceGameEntityOwnershipService::MarkEntityForNoActivation </td>
+          <td>(</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Specifies that a given entity should not be activated by default after it is created. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityId</td><td>The entity that should not be activated by default. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Entity/SliceGameEntityOwnershipService.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

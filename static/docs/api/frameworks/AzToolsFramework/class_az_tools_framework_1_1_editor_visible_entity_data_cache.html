@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_visible_entity_data_cache-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorVisibleEntityDataCache Class Reference</div>  </div>
@@ -126,6 +128,47 @@ AZStd::optional&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="botto
 <tr class="memitem:a3fa597ee366122d8586b2b39b365ee0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fa597ee366122d8586b2b39b365ee0a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityIds</b> (const EntityIdList &amp;entityIds)</td></tr>
 <tr class="separator:a3fa597ee366122d8586b2b39b365ee0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aae81853e901439a3b56ca96990ba817e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae81853e901439a3b56ca96990ba817e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AfterUndoRedo</b> () override</td></tr>
+<tr class="separator:aae81853e901439a3b56ca96990ba817e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14589ea4c2d1a1733c8613b02eb38c8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14589ea4c2d1a1733c8613b02eb38c8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityVisibilityChanged</b> (bool visibility) override</td></tr>
+<tr class="separator:a14589ea4c2d1a1733c8613b02eb38c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2de61c39f25498c8e1653d6fee8921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb2de61c39f25498c8e1653d6fee8921"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityLockChanged</b> (bool locked) override</td></tr>
+<tr class="separator:adb2de61c39f25498c8e1653d6fee8921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3303eb4d5397a0344a5863df3e4f6670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3303eb4d5397a0344a5863df3e4f6670"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTransformChanged</b> (const AZ::Transform &amp;local, const AZ::Transform &amp;world) override</td></tr>
+<tr class="separator:a3303eb4d5397a0344a5863df3e4f6670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4760956fdb38d5cccab83d76b2ea84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b4760956fdb38d5cccab83d76b2ea84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAccentTypeChanged</b> (EntityAccentType accent) override</td></tr>
+<tr class="separator:a1b4760956fdb38d5cccab83d76b2ea84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b2711dda5b57c52dd158f50dd283fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1b2711dda5b57c52dd158f50dd283fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSelected</b> () override</td></tr>
+<tr class="separator:ac1b2711dda5b57c52dd158f50dd283fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bae032e2816d7b8035b6685ac906df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bae032e2816d7b8035b6685ac906df9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDeselected</b> () override</td></tr>
+<tr class="separator:a7bae032e2816d7b8035b6685ac906df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be31d341aa2faee09cc9bd6cf0504c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1be31d341aa2faee09cc9bd6cf0504c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityIconChanged</b> (const AZ::Data::AssetId &amp;entityIconAssetId) override</td></tr>
+<tr class="separator:a1be31d341aa2faee09cc9bd6cf0504c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c00e6398a4049032624b03bd19c153"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48c00e6398a4049032624b03bd19c153"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnContainerEntityStatusChanged</b> (AZ::EntityId entityId, bool open) override</td></tr>
+<tr class="separator:a48c00e6398a4049032624b03bd19c153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce4b74e37438e8d20edf858d9514683"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afce4b74e37438e8d20edf858d9514683"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditorFocusChanged</b> (AZ::EntityId previousFocusEntityId, AZ::EntityId newFocusEntityId) override</td></tr>
+<tr class="separator:afce4b74e37438e8d20edf858d9514683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a700f51a3215213238b37b33e875c18cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a700f51a3215213238b37b33e875c18cb"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; EditorVisibleEntityDataCacheImpl &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html#a700f51a3215213238b37b33e875c18cb">m_impl</a></td></tr>
+<tr class="memdesc:a700f51a3215213238b37b33e875c18cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal representation of entity data cache. <br/></td></tr>
+<tr class="separator:a700f51a3215213238b37b33e875c18cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A cache of packed EntityData that can be iterated over efficiently without the need to make individual EBus calls </p>
@@ -164,7 +207,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityIds</b> (con
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

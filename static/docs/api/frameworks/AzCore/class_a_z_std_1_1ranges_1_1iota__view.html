@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1ranges_1_1iota__view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::ranges::iota_view&lt; W, Bound, class &gt; Class Template Reference</div>  </div>
@@ -102,6 +103,15 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () 
 template&lt;bool Enable = (same_as&lt;W, Bound&gt; &amp;&amp; Internal::advanceable&lt;W&gt;) || (::AZStd::Internal::is_integer_like&lt;W&gt; &amp;&amp; ::AZStd::Internal::is_integer_like&lt;Bound&gt;) || sized_sentinel_for&lt;Bound, W&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
 <tr class="memitem:a0253e156c2daaef4ff1a5318a19b9f62"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () const </td></tr>
 <tr class="separator:a0253e156c2daaef4ff1a5318a19b9f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae5376519b82c90556a10ebed9a4a7dc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5376519b82c90556a10ebed9a4a7dc8"></a>
+W&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b> {}</td></tr>
+<tr class="separator:ae5376519b82c90556a10ebed9a4a7dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480174630fad1a53c29ce81ab1f5be59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a480174630fad1a53c29ce81ab1f5be59"></a>
+Bound&#160;</td><td class="memItemRight" valign="bottom"><b>m_bound</b> {}</td></tr>
+<tr class="separator:a480174630fad1a53c29ce81ab1f5be59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class W, class Bound = unreachable_sentinel_t, class = enable_if_t&lt;conjunction_v&lt;        bool_constant&lt;weakly_incrementable&lt;W&gt;&gt;,        bool_constant&lt;semiregular&lt;Bound&gt;&gt;,        bool_constant&lt;::AZStd::Internal::weakly_equality_comparable_with&lt;W, Bound&gt;&gt;,        bool_constant&lt;copyable&lt;W&gt;&gt;    &gt; &gt;&gt;<br/>
@@ -148,7 +158,7 @@ template&lt;bool , class &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

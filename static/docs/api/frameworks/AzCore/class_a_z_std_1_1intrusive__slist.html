@@ -56,6 +56,9 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="class_a_z_std_1_1intrusive__slist-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::intrusive_slist&lt; T, Hook &gt; Class Template Reference</div>  </div>
@@ -293,6 +296,51 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_iterator</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__slist.html#a9b2f4e119b2d961f9b19d6ee1a562c56">leak_and_reset</a> ()</td></tr>
 <tr class="memdesc:a9b2f4e119b2d961f9b19d6ee1a562c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the container without going to unhook any elements. <br/></td></tr>
 <tr class="separator:a9b2f4e119b2d961f9b19d6ee1a562c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6f1d8e723e719a0be6b4a6051980d4cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f1d8e723e719a0be6b4a6051980d4cc"></a>
+AZ_FORCE_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>intrusive_slist</b> (const <a class="el" href="class_a_z_std_1_1intrusive__slist.html">this_type</a> &amp;rhs)</td></tr>
+<tr class="separator:a6f1d8e723e719a0be6b4a6051980d4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9157e201699fc2463741313507383128"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9157e201699fc2463741313507383128"></a>
+AZ_FORCE_INLINE <a class="el" href="class_a_z_std_1_1intrusive__slist.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1intrusive__slist.html">this_type</a> &amp;rhs)</td></tr>
+<tr class="separator:a9157e201699fc2463741313507383128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1aa2e868744ff25fd21b71a9fac5b55"><td class="memItemLeft" align="right" valign="top">node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__slist.html#ab1aa2e868744ff25fd21b71a9fac5b55">previous</a> (node_ptr_type iNode)</td></tr>
+<tr class="separator:ab1aa2e868744ff25fd21b71a9fac5b55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8525f251a99761a9164e8cac949472c8"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8525f251a99761a9164e8cac949472c8"></a>
+template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a8525f251a99761a9164e8cac949472c8"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_after_iter</b> (<a class="el" href="class_a_z_std_1_1intrusive__slist_1_1iterator__impl.html">iterator</a> insertPos, const InputIterator &amp;first, const InputIterator &amp;last, const true_type &amp;)</td></tr>
+<tr class="separator:a8525f251a99761a9164e8cac949472c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d00a0e7eccbe63b467dcfa5cb7fe00"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa7d00a0e7eccbe63b467dcfa5cb7fe00"></a>
+template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:aa7d00a0e7eccbe63b467dcfa5cb7fe00"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_after_iter</b> (<a class="el" href="class_a_z_std_1_1intrusive__slist_1_1iterator__impl.html">iterator</a> insertPos, const InputIterator &amp;first, const InputIterator &amp;last, const false_type &amp;)</td></tr>
+<tr class="separator:aa7d00a0e7eccbe63b467dcfa5cb7fe00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4874e4e9855f35a794f141d29826488"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4874e4e9855f35a794f141d29826488"></a>
+node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_head</b> ()</td></tr>
+<tr class="separator:af4874e4e9855f35a794f141d29826488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:abd68eef5b9f77b865bbc475f120561be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd68eef5b9f77b865bbc475f120561be"></a>
+node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__slist.html#abd68eef5b9f77b865bbc475f120561be">m_lastNode</a></td></tr>
+<tr class="memdesc:abd68eef5b9f77b865bbc475f120561be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached last valid node. <br/></td></tr>
+<tr class="separator:abd68eef5b9f77b865bbc475f120561be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4153a87558e857477340f09716f74d7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4153a87558e857477340f09716f74d7f"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_numElements</b></td></tr>
+<tr class="separator:a4153a87558e857477340f09716f74d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefebb5050940a5b3d4d1ac684ff4809"><td class="memItemLeft" align="right" valign="top">aligned_storage&lt; sizeof(node_type), <br class="typebreak"/>
+alignment_of&lt; node_type &gt;<br class="typebreak"/>
+::value &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1intrusive__slist.html#acefebb5050940a5b3d4d1ac684ff4809">m_root</a></td></tr>
+<tr class="separator:acefebb5050940a5b3d4d1ac684ff4809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a49c4c6866a9d90e0daaf0e900908b49e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CONTAINER_VERSION</b> = 1
+ }</td></tr>
+<tr class="separator:a49c4c6866a9d90e0daaf0e900908b49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8310f7a95de5f299ab4760ca233c97b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8310f7a95de5f299ab4760ca233c97b8"></a>
+typedef <a class="el" href="class_a_z_std_1_1intrusive__slist.html">intrusive_slist</a>&lt; T, Hook &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
+<tr class="separator:a8310f7a95de5f299ab4760ca233c97b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T, class Hook&gt;<br/>
@@ -300,13 +348,69 @@ class AZStd::intrusive_slist&lt; T, Hook &gt;</h3>
 
 <p>Intrusive <a class="el" href="class_a_z_std_1_1forward__list.html">forward_list</a> is a <a class="el" href="namespace_a_z_std.html" title="AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...">AZStd</a> extension container. </p>
 <dl class="section user"><dt></dt><dd>It uses the <a class="el" href="struct_a_z_std_1_1intrusive__slist__node.html">intrusive_slist_node</a> contained in the provided user type T. You have 2 choices you can make your T type to either inherit from <a class="el" href="struct_a_z_std_1_1intrusive__slist__node.html">intrusive_slist_node</a> or just have <a class="el" href="struct_a_z_std_1_1intrusive__slist__node.html">intrusive_slist_node</a> as a <b>public</b> member. Based on which option you prefer you should use the appropriate hook type. Hook parameter should be <a class="el" href="struct_a_z_std_1_1slist__base__hook.html">slist_base_hook</a> (if you inherit the <a class="el" href="struct_a_z_std_1_1intrusive__slist__node.html">intrusive_slist_node</a>) or <a class="el" href="struct_a_z_std_1_1slist__member__hook.html">slist_member_hook</a> if you have it as a public member. Intrusive list never allocate any memory, destroy or create any objects. Just used the provided nodes to store it's information. Generally speaking intrusive containers are better for the cache. You can see examples of all that AZStdExamples. </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab1aa2e868744ff25fd21b71a9fac5b55"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class Hook &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">node_ptr_type <a class="el" href="class_a_z_std_1_1intrusive__slist.html">AZStd::intrusive_slist</a>&lt; T, Hook &gt;::previous </td>
+          <td>(</td>
+          <td class="paramtype">node_ptr_type&#160;</td>
+          <td class="paramname"><em>iNode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The iterator to the element before i in the list. Returns the end-iterator, if either i is the begin-iterator or the list empty. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="acefebb5050940a5b3d4d1ac684ff4809"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class Hook &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">aligned_storage&lt;sizeof(node_type), alignment_of&lt;node_type&gt;::value&gt;::type <a class="el" href="class_a_z_std_1_1intrusive__slist.html">AZStd::intrusive_slist</a>&lt; T, Hook &gt;::m_root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>OK we face different problems when we implement intrusive list. We choose to create fake node_type as a root node! Why ? There are 2 general ways to solve this issue:</p>
+<ol type="1">
+<li>Store the head and tail pointer here and store pointer to the list in the iterator. This makes iterator 2 size, plus operators &ndash; and ++ include an if. This is the case because we need end iterator (which will be NULL). And we can't move it.</li>
+<li>We can store the base class in the iterator, and every time we need the value we compute the hook offset and recast the pointer. all of this is fine, but we need to have a "simple" way to debug our containers" in a easy way. So at this stage we consider the wasting a memory for a fake root node as the best solution, while we can debug the container. This can change internally at any moment if needed, no interface change will occur. </li>
+</ol>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/containers/intrusive_slist.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:04 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

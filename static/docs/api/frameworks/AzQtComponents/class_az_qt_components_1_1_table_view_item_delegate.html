@@ -51,6 +51,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_table_view_item_delegate-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -72,6 +75,39 @@ virtual QRect&#160;</td><td class="memItemRight" valign="bottom"><b>itemViewItem
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>geometriesUpdating</b> (<a class="el" href="class_az_qt_components_1_1_table_view.html">TableView</a> *tableView)</td></tr>
 <tr class="separator:a96e18ddb68bad7963a1613a93ec8a842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab287cbbd4916b1139d85ea1c417129af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab287cbbd4916b1139d85ea1c417129af"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>clearCachedValues</b> ()</td></tr>
+<tr class="separator:ab287cbbd4916b1139d85ea1c417129af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff03aa27bbc56fb9000f68aeb45bafea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff03aa27bbc56fb9000f68aeb45bafea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initStyleOption</b> (QStyleOptionViewItem *option, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:aff03aa27bbc56fb9000f68aeb45bafea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0739079ff939744f777e5cf0ea5edb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d0739079ff939744f777e5cf0ea5edb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>unexpandedRowHeight</b> (const QModelIndex &amp;index, const QWidget *view) const </td></tr>
+<tr class="separator:a5d0739079ff939744f777e5cf0ea5edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b2fbe50a40e86aba9af2c20300c473"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21b2fbe50a40e86aba9af2c20300c473"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHintForSelectedIndex</b> (const QModelIndex &amp;mappedIndex, const <a class="el" href="class_az_qt_components_1_1_table_view.html">TableView</a> *view) const </td></tr>
+<tr class="separator:a21b2fbe50a40e86aba9af2c20300c473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2929a00e4e034b1a18405017e1c2746"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2929a00e4e034b1a18405017e1c2746"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSelected</b> (const QModelIndex &amp;unmappedIndex) const </td></tr>
+<tr class="separator:ae2929a00e4e034b1a18405017e1c2746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a54e29825c00cfdff804703053de50ee0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54e29825c00cfdff804703053de50ee0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHintForSelectedRow</b> (const QModelIndex &amp;mappedIndex, const <a class="el" href="class_az_qt_components_1_1_table_view.html">TableView</a> *view) const </td></tr>
+<tr class="separator:a54e29825c00cfdff804703053de50ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1530874812c8d5a22659852a9bf3d81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1530874812c8d5a22659852a9bf3d81"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) QPointer&lt; <a class="el" href="class_az_qt_components_1_1_table_view.html">TableView</a> &gt; m_parentView</td></tr>
+<tr class="separator:ab1530874812c8d5a22659852a9bf3d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a020e8040a53066002c47e242d5fd55c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a020e8040a53066002c47e242d5fd55c3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_unexpandedRowHeight</b> = -1</td></tr>
+<tr class="separator:a020e8040a53066002c47e242d5fd55c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:adbc09e2732976a11262cbd5f4eb883c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbc09e2732976a11262cbd5f4eb883c0"></a>
@@ -84,7 +120,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TableView</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

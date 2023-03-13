@@ -51,6 +51,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_logical_tab_ordering_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::LogicalTabOrderingWidget&lt; WidgetType &gt; Class Template Reference</div>  </div>
@@ -72,6 +74,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>focusNextPrevChild</b
 <tr class="memitem:a84910d59b6154d19fb08b4c3c132910c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84910d59b6154d19fb08b4c3c132910c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>markToRecalculateTabKeyOrdering</b> ()</td></tr>
 <tr class="separator:a84910d59b6154d19fb08b4c3c132910c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abafb8f4587408bdf64edbfd534e9780d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abafb8f4587408bdf64edbfd534e9780d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>recalculate</b> ()</td></tr>
+<tr class="separator:abafb8f4587408bdf64edbfd534e9780d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475293a434d8482994728eac57771f85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a475293a434d8482994728eac57771f85"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) QMap&lt; QObject *</td></tr>
+<tr class="separator:a475293a434d8482994728eac57771f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a00a1fcd31673c9b4f499bfde731a4172"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00a1fcd31673c9b4f499bfde731a4172"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_dirty</b> = true</td></tr>
+<tr class="separator:a00a1fcd31673c9b4f499bfde731a4172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06685e4e2a44e6cd82a62e9a498ab317"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06685e4e2a44e6cd82a62e9a498ab317"></a>
+LogicalTabOrderingInternal::TabKeyEntry&#160;</td><td class="memItemRight" valign="bottom"><b>m_entries</b></td></tr>
+<tr class="separator:a06685e4e2a44e6cd82a62e9a498ab317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4e338b194f833d3f06ee91de89bbca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f4e338b194f833d3f06ee91de89bbca"></a>
+AZ_POP_DISABLE_WARNING QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_first</b></td></tr>
+<tr class="separator:a2f4e338b194f833d3f06ee91de89bbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac4d4ad3e1fa64767cdc189d6b2d831e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac4d4ad3e1fa64767cdc189d6b2d831e"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_last</b></td></tr>
+<tr class="separator:aac4d4ad3e1fa64767cdc189d6b2d831e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename WidgetType&gt;<br/>
@@ -85,7 +111,7 @@ class AzQtComponents::LogicalTabOrderingWidget&lt; WidgetType &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

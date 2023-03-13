@@ -52,6 +52,11 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_style_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::StyleManager Class Reference</div>  </div>
@@ -102,6 +107,64 @@ static QStyle *&#160;</td><td class="memItemRight" valign="bottom"><b>baseStyle<
 <tr class="memitem:a675ae093000d0a4e405ce581f343d834"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a675ae093000d0a4e405ce581f343d834"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>repolishStyleSheet</b> (QWidget *widget)</td></tr>
 <tr class="separator:a675ae093000d0a4e405ce581f343d834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a6e43cf05fa576b87e288755c5780f7bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e43cf05fa576b87e288755c5780f7bf"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>WidgetToStyleSheetMap</b> = QHash&lt; QWidget *, QString &gt;</td></tr>
+<tr class="separator:a6e43cf05fa576b87e288755c5780f7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a99a50fa55c33497e79f323ac72bf3fab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99a50fa55c33497e79f323ac72bf3fab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanupStyles</b> ()</td></tr>
+<tr class="separator:a99a50fa55c33497e79f323ac72bf3fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76411a9c38bbdd4e13950779cc2e5428"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76411a9c38bbdd4e13950779cc2e5428"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stopTrackingWidget</b> (QObject *object)</td></tr>
+<tr class="separator:a76411a9c38bbdd4e13950779cc2e5428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2c7a37ac753f33036fe0964f40cd97ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c7a37ac753f33036fe0964f40cd97ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeFonts</b> ()</td></tr>
+<tr class="separator:a2c7a37ac753f33036fe0964f40cd97ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6bdd3e6e3a700d7669577c86452842"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c6bdd3e6e3a700d7669577c86452842"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeSearchPaths</b> (QApplication *application, const AZ::IO::PathView &amp;engineRootPath)</td></tr>
+<tr class="separator:a4c6bdd3e6e3a700d7669577c86452842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa295e1ae49be6602c2e0f3ce0085f6a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa295e1ae49be6602c2e0f3ce0085f6a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetWidgetSheets</b> ()</td></tr>
+<tr class="separator:aa295e1ae49be6602c2e0f3ce0085f6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea5e34a96bba7cd408db836794cdd54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acea5e34a96bba7cd408db836794cdd54"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) WidgetToStyleSheetMap m_widgetToStyleSheetMap</td></tr>
+<tr class="separator:acea5e34a96bba7cd408db836794cdd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0a6e0bedd73baf5ee11f6540d55030a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a6e0bedd73baf5ee11f6540d55030a6"></a>
+<a class="el" href="class_az_qt_components_1_1_stylesheet_preprocessor.html">StylesheetPreprocessor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_stylesheetPreprocessor</b> = nullptr</td></tr>
+<tr class="separator:a0a6e0bedd73baf5ee11f6540d55030a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81cc5b81d14ed316101804194f6768a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab81cc5b81d14ed316101804194f6768a"></a>
+<a class="el" href="class_az_qt_components_1_1_style_sheet_cache.html">StyleSheetCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_stylesheetCache</b> = nullptr</td></tr>
+<tr class="separator:ab81cc5b81d14ed316101804194f6768a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57912bbc96a9ac93c7bcc5d4b86f0405"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57912bbc96a9ac93c7bcc5d4b86f0405"></a>
+<a class="el" href="class_az_qt_components_1_1_title_bar_overdraw_handler.html">TitleBarOverdrawHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_titleBarOverdrawHandler</b> = nullptr</td></tr>
+<tr class="separator:a57912bbc96a9ac93c7bcc5d4b86f0405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f27e3daee6e2d3472e891446ee40a24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f27e3daee6e2d3472e891446ee40a24"></a>
+QStyleSheetStyle *&#160;</td><td class="memItemRight" valign="bottom"><b>m_styleSheetStyle</b> = nullptr</td></tr>
+<tr class="separator:a3f27e3daee6e2d3472e891446ee40a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565a6d0143d0e652e59cfc53a0fcbf95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a565a6d0143d0e652e59cfc53a0fcbf95"></a>
+QPointer&lt; QStyle &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_style</b></td></tr>
+<tr class="separator:a565a6d0143d0e652e59cfc53a0fcbf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c831d79190b5512411dce977e81699"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43c831d79190b5512411dce977e81699"></a>
+AZ_POP_DISABLE_WARNING <br class="typebreak"/>
+<a class="el" href="class_az_qt_components_1_1_auto_custom_window_decorations.html">AutoCustomWindowDecorations</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_autoCustomWindowDecorations</b> = nullptr</td></tr>
+<tr class="separator:a43c831d79190b5512411dce977e81699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ad788cf4973f8bb38c99bfdbdcc718303"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad788cf4973f8bb38c99bfdbdcc718303"></a>
+static <a class="el" href="class_az_qt_components_1_1_style_manager.html">StyleManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_instance</b></td></tr>
+<tr class="separator:ad788cf4973f8bb38c99bfdbdcc718303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper around classes dealing with Open 3D Engine style.</p>
@@ -175,7 +238,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>repolishStyleS
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

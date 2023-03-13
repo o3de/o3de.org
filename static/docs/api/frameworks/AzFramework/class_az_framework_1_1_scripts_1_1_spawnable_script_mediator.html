@@ -56,6 +56,9 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_scripts_1_1_spawnable_script_mediator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::Scripts::SpawnableScriptMediator Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -66,6 +69,15 @@
 
 <p>Inherits Handler.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_scripts_1_1_spawnable_script_mediator_1_1_callback_sentinel.html">CallbackSentinel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_scripts_1_1_spawnable_script_mediator_1_1_despawn_result.html">DespawnResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_scripts_1_1_spawnable_script_mediator_1_1_spawn_result.html">SpawnResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a70d0c5d14701ad0ebea92e68104828fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70d0c5d14701ad0ebea92e68104828fa"></a>
@@ -108,6 +120,38 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ac44279103bfcff4a43c15198c22ccd36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac44279103bfcff4a43c15198c22ccd36"></a>
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>RootSpawnableRegistryKey</b> = &quot;/Amazon/AzCore/Bootstrap/RootSpawnable&quot;</td></tr>
 <tr class="separator:ac44279103bfcff4a43c15198c22ccd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aa7e25b8ad0f3e800d7dd635df2b442cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7e25b8ad0f3e800d7dd635df2b442cc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ResultCommand</b> = AZStd::variant&lt; <a class="el" href="struct_az_framework_1_1_scripts_1_1_spawnable_script_mediator_1_1_spawn_result.html">SpawnResult</a>, <a class="el" href="struct_az_framework_1_1_scripts_1_1_spawnable_script_mediator_1_1_despawn_result.html">DespawnResult</a> &gt;</td></tr>
+<tr class="separator:aa7e25b8ad0f3e800d7dd635df2b442cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5dfc020d8bca683e77aff93856704836"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dfc020d8bca683e77aff93856704836"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueProcessResult</b> (const ResultCommand &amp;resultCommand)</td></tr>
+<tr class="separator:a5dfc020d8bca683e77aff93856704836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d15e8b29aa776da429f19a26be1307"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62d15e8b29aa776da429f19a26be1307"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessResults</b> ()</td></tr>
+<tr class="separator:a62d15e8b29aa776da429f19a26be1307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae97d0e574914425049787e61497bf37b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae97d0e574914425049787e61497bf37b"></a>
+AZStd::vector&lt; ResultCommand &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_resultCommands</b></td></tr>
+<tr class="separator:ae97d0e574914425049787e61497bf37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475d88a1f82a487797ae6723f528a179"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a475d88a1f82a487797ae6723f528a179"></a>
+AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="separator:a475d88a1f82a487797ae6723f528a179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf0e1b1a5988e927c1bc0efcc3a17f53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf0e1b1a5988e927c1bc0efcc3a17f53"></a>
+AZStd::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="struct_az_framework_1_1_scripts_1_1_spawnable_script_mediator_1_1_callback_sentinel.html">CallbackSentinel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sentinel</b></td></tr>
+<tr class="separator:aaf0e1b1a5988e927c1bc0efcc3a17f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f039661b822bbf0f1967a2bab13b05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8f039661b822bbf0f1967a2bab13b05"></a>
+AZStd::unordered_set<br class="typebreak"/>
+&lt; <a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedSpawnTickets</b></td></tr>
+<tr class="separator:ac8f039661b822bbf0f1967a2bab13b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A helper class for direct calls to SpawnableEntitiesInterface that is reflected with BehaviorContext for interfacing with Lua API </p>
@@ -163,7 +207,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

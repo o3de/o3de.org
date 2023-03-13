@@ -51,6 +51,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_fancy_docking_drop_zone_state-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::FancyDockingDropZoneState Class Reference</div>  </div>
@@ -135,6 +137,52 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>registerListener</b> 
 <tr class="memitem:aed73f2ae50fc0fe702f1f835037ce2ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed73f2ae50fc0fe702f1f835037ce2ef"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterListener</b> (QWidget *listener)</td></tr>
 <tr class="separator:aed73f2ae50fc0fe702f1f835037ce2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3202261db1bc40e8e13a8168e9fdb331"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3202261db1bc40e8e13a8168e9fdb331"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>repaintDropZoneWidgets</b> ()</td></tr>
+<tr class="separator:a3202261db1bc40e8e13a8168e9fdb331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab868d509cd1d1768d6f4aa815572fede"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab868d509cd1d1768d6f4aa815572fede"></a>
+QMap&lt; Qt::DockWidgetArea, <br class="typebreak"/>
+QPolygon &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dropZones</b></td></tr>
+<tr class="separator:ab868d509cd1d1768d6f4aa815572fede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2f96d647834d20a3d4c384c4e44248"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc2f96d647834d20a3d4c384c4e44248"></a>
+QPointer&lt; QWidget &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dropOnto</b></td></tr>
+<tr class="separator:abc2f96d647834d20a3d4c384c4e44248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5c5ad230d7d735106221335b912ff7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c5c5ad230d7d735106221335b912ff7"></a>
+Qt::DockWidgetArea&#160;</td><td class="memItemRight" valign="bottom"><b>m_dropArea</b></td></tr>
+<tr class="separator:a6c5c5ad230d7d735106221335b912ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a1a09718a3f16cfaada24aab07716d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20a1a09718a3f16cfaada24aab07716d"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_dropZoneHoverOpacity</b> = 0.0f</td></tr>
+<tr class="separator:a20a1a09718a3f16cfaada24aab07716d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103aaa46a1b33a0a66146016fedc84bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a103aaa46a1b33a0a66146016fedc84bd"></a>
+QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_dropZoneColorOnHover</b></td></tr>
+<tr class="separator:a103aaa46a1b33a0a66146016fedc84bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b85033fd3f4434b791b2f94e5580d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0b85033fd3f4434b791b2f94e5580d1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_onAbsoluteDropZone</b> = false</td></tr>
+<tr class="separator:ad0b85033fd3f4434b791b2f94e5580d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cba477424b2f25deace4c8b0f6b46e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cba477424b2f25deace4c8b0f6b46e5"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>m_absoluteDropZoneRect</b></td></tr>
+<tr class="separator:a8cba477424b2f25deace4c8b0f6b46e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae306c86ac1b7ea94c37760573708afb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae306c86ac1b7ea94c37760573708afb0"></a>
+Qt::DockWidgetArea&#160;</td><td class="memItemRight" valign="bottom"><b>m_absoluteDropZoneArea</b></td></tr>
+<tr class="separator:ae306c86ac1b7ea94c37760573708afb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad61df171f6e6ea9dcee4640afeca27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ad61df171f6e6ea9dcee4640afeca27"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>m_dockDropZoneRect</b></td></tr>
+<tr class="separator:a6ad61df171f6e6ea9dcee4640afeca27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb047db3dcfecf1114d4d3a9504a1600"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb047db3dcfecf1114d4d3a9504a1600"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>m_innerDropZoneRect</b></td></tr>
+<tr class="separator:afb047db3dcfecf1114d4d3a9504a1600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492bae1002d082a1696164e6a91b66f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a492bae1002d082a1696164e6a91b66f5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_dragging</b> = false</td></tr>
+<tr class="separator:a492bae1002d082a1696164e6a91b66f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60d39e30b7241e7d3ee87ac4e53040be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60d39e30b7241e7d3ee87ac4e53040be"></a>
+QVector&lt; QWidget * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_listeners</b></td></tr>
+<tr class="separator:a60d39e30b7241e7d3ee87ac4e53040be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/FancyDockingDropZoneWidget.h</li>
@@ -142,7 +190,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterListener</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

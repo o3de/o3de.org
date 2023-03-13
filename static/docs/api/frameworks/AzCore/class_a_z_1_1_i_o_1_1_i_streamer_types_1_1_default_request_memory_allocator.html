@@ -54,6 +54,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_i_streamer_types_1_1_default_request_memory_allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::IStreamerTypes::DefaultRequestMemoryAllocator Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -86,6 +87,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab6dbf3857e76f817d8da6bca899e3811"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6dbf3857e76f817d8da6bca899e3811"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumLocks</b> () const </td></tr>
 <tr class="separator:ab6dbf3857e76f817d8da6bca899e3811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a330eb0c3f74992e5ecf85153692bdf92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a330eb0c3f74992e5ecf85153692bdf92"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_lockCounter</b> { 0 }</td></tr>
+<tr class="separator:a330eb0c3f74992e5ecf85153692bdf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b67a72fb0e139e4828dd28e7aa0faac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b67a72fb0e139e4828dd28e7aa0faac"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocationCounter</b> { 0 }</td></tr>
+<tr class="separator:a4b67a72fb0e139e4828dd28e7aa0faac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6617577649c8adbf2d6e3e94847cb0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6617577649c8adbf2d6e3e94847cb0a"></a>
+<a class="el" href="class_a_z_1_1_i_allocator.html">AZ::IAllocator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocator</b></td></tr>
+<tr class="separator:aa6617577649c8adbf2d6e3e94847cb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default memory allocator for file requests. This allocator is a wrapper around the standard memory allocator and can be used if only delayed memory allocations are needed but no special memory requirements. </p>
@@ -207,7 +220,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumLocks</b> () con
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

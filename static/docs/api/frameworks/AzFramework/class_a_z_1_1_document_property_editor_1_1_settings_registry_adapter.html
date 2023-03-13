@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_document_property_editor_1_1_settings_registry_adapter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DocumentPropertyEditor::SettingsRegistryAdapter Class Reference</div>  </div>
@@ -64,6 +66,8 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_document_property_editor_1_1_settings_registry_adapter_1_1_settings_notification_handler.html">SettingsNotificationHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_document_property_editor_1_1_settings_registry_adapter_1_1_settings_registry_dom_data.html">SettingsRegistryDomData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -120,6 +124,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>BuildString</b> (AZSt
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> ()</td></tr>
 <tr class="separator:a5c6abac344d54aab85a8f77a8d9a45be inherit pub_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a32663bb9441038bd6ff26854c1acabc5"><td class="memItemLeft" align="right" valign="top">Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_settings_registry_adapter.html#a32663bb9441038bd6ff26854c1acabc5">GenerateContents</a> () override</td></tr>
+<tr class="separator:a32663bb9441038bd6ff26854c1acabc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed9d3a9dd61e5215e783208924f2c5d"><td class="memItemLeft" align="right" valign="top">Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_settings_registry_adapter.html#a6ed9d3a9dd61e5215e783208924f2c5d">HandleMessage</a> (const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html">AdapterMessage</a> &amp;message) override</td></tr>
+<tr class="separator:a6ed9d3a9dd61e5215e783208924f2c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">AZ::DocumentPropertyEditor::DocumentAdapter</a></td></tr>
+<tr class="memitem:ab1cb4e7f1eb6b98224d5c9f3ec367d5e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ab1cb4e7f1eb6b98224d5c9f3ec367d5e">NotifyResetDocument</a> (<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">DocumentResetType</a> resetType=<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a109e0d0bf2b42091e997ddc4d49bab8d">DocumentResetType::SoftReset</a>)</td></tr>
+<tr class="separator:ab1cb4e7f1eb6b98224d5c9f3ec367d5e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac356f0634ebfbbd553c5899c5320025e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ac356f0634ebfbbd553c5899c5320025e">NotifyContentsChanged</a> (const Dom::Patch &amp;patch)</td></tr>
+<tr class="separator:ac356f0634ebfbbd553c5899c5320025e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6fe9d9a1b7c42459277cdba8948e3d68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fe9d9a1b7c42459277cdba8948e3d68"></a>
+<a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html">AdapterBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_builder</b></td></tr>
+<tr class="separator:a6fe9d9a1b7c42459277cdba8948e3d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c28064b0e47a7d7b66d898e46d79ebf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c28064b0e47a7d7b66d898e46d79ebf"></a>
+AZ::SettingsRegistryOriginTracker *&#160;</td><td class="memItemRight" valign="bottom"><b>m_originTracker</b> = nullptr</td></tr>
+<tr class="separator:a9c28064b0e47a7d7b66d898e46d79ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f67d68e3601eef31f0a946abba2ab32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f67d68e3601eef31f0a946abba2ab32"></a>
+AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_notifyHandler</b></td></tr>
+<tr class="separator:a9f67d68e3601eef31f0a946abba2ab32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548307fb45c810cd665e58ecbcda96c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a548307fb45c810cd665e58ecbcda96c1"></a>
+AZ::Dom::DomPrefixTree<br class="typebreak"/>
+&lt; <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_settings_registry_adapter_1_1_settings_registry_dom_data.html">SettingsRegistryDomData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_fieldCallbackPrefixTree</b></td></tr>
+<tr class="separator:a548307fb45c810cd665e58ecbcda96c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca02983fad12eedf86f9a99d179a0e48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca02983fad12eedf86f9a99d179a0e48"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_inEdit</b> = false</td></tr>
+<tr class="separator:aca02983fad12eedf86f9a99d179a0e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_document_property_editor_1_1_document_adapter')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">AZ::DocumentPropertyEditor::DocumentAdapter</a></td></tr>
@@ -137,6 +172,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>MessageEvent</b> = E
 <tr class="separator:a492fc2718dd1cbcedca3d7746be82f82 inherit pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4220bad42997ad1aedc6ec70e16f3414 inherit pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#a4220bad42997ad1aedc6ec70e16f3414">SetDebugModeEnabled</a> (bool enableDebugMode)</td></tr>
 <tr class="separator:a4220bad42997ad1aedc6ec70e16f3414 inherit pub_static_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_a_z_1_1_document_property_editor_1_1_document_adapter')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">AZ::DocumentPropertyEditor::DocumentAdapter</a></td></tr>
+<tr class="memitem:ae353ffbe7bb82ff8df94d736577fc6a7 inherit pro_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">DocumentResetType</a> { <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a109e0d0bf2b42091e997ddc4d49bab8d">DocumentResetType::SoftReset</a>, 
+<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7a9d31379a0302def25480e5a19522c67d">DocumentResetType::HardReset</a>
+ }</td></tr>
+<tr class="memdesc:ae353ffbe7bb82ff8df94d736577fc6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the type of reset operation triggered in NotifyResetDocument.  <a href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ae353ffbe7bb82ff8df94d736577fc6a7">More...</a><br/></td></tr>
+<tr class="separator:ae353ffbe7bb82ff8df94d736577fc6a7 inherit pro_types_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a784b7c8cef9ac12ac7c2a05d8c096188"></a>
@@ -155,13 +196,68 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>MessageEvent</b> = E
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a32663bb9441038bd6ff26854c1acabc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dom::Value AZ::DocumentPropertyEditor::SettingsRegistryAdapter::GenerateContents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generates the contents of this adapter. This must be an Adapter DOM node. These contents will be cached - to notify clients of changes to the structure, NotifyResetDocument or NotifyContentsChanged must be used. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html">AdapterBuilder</a> for building out this DOM structure. </dd></dl>
+
+<p>Implements <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aee629f63b82b281c69e6caf059ed45fa">AZ::DocumentPropertyEditor::DocumentAdapter</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ed9d3a9dd61e5215e783208924f2c5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dom::Value AZ::DocumentPropertyEditor::SettingsRegistryAdapter::HandleMessage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_adapter_message.html">AdapterMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called by SendAdapterMessage before the view is notified. This may be overridden to handle BoundAdapterMessages on fields. </p>
+
+<p>Reimplemented from <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#aac00fd27e2315ce374e4abe2ff72f43c">AZ::DocumentPropertyEditor::DocumentAdapter</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/DocumentPropertyEditor/SettingsRegistryAdapter.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

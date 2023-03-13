@@ -56,6 +56,8 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1lock__free__stamped__stack-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::lock_free_stamped_stack&lt; T, Allocator &gt; Class Template Reference</div>  </div>
@@ -64,6 +66,11 @@
 
 <p><code>#include &lt;lock_free_stamped_stack.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1lock__free__stamped__stack_1_1stamped__node__ptr.html">stamped_node_ptr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a8f98585c72f28e58693e95edde6e44a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f98585c72f28e58693e95edde6e44a3"></a>
@@ -111,6 +118,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1lock__free__stamped__stack.html#a3dac83cbe5e217b44240f72fe6085a09">empty</a> () const </td></tr>
 <tr class="memdesc:a3dac83cbe5e217b44240f72fe6085a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the stack is empty, limited utility for a concurrent container. <br/></td></tr>
 <tr class="separator:a3dac83cbe5e217b44240f72fe6085a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa815fadebcd9ab5f790f9da741d45944"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa815fadebcd9ab5f790f9da741d45944"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lock_free_stamped_stack</b> (const <a class="el" href="class_a_z_std_1_1lock__free__stamped__stack.html">lock_free_stamped_stack</a> &amp;)</td></tr>
+<tr class="separator:aa815fadebcd9ab5f790f9da741d45944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea24f7e13e1e4dd2222dec41331a3ef1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea24f7e13e1e4dd2222dec41331a3ef1"></a>
+<a class="el" href="class_a_z_std_1_1lock__free__stamped__stack.html">lock_free_stamped_stack</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1lock__free__stamped__stack.html">lock_free_stamped_stack</a> &amp;)</td></tr>
+<tr class="separator:aea24f7e13e1e4dd2222dec41331a3ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bfbe8c2fc5291ef8ef516d6394fef8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bfbe8c2fc5291ef8ef516d6394fef8e"></a>
+node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>create_node</b> ()</td></tr>
+<tr class="separator:a7bfbe8c2fc5291ef8ef516d6394fef8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e2af80ce5590a4205210c81baf6019"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32e2af80ce5590a4205210c81baf6019"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy_node</b> (node_ptr_type node)</td></tr>
+<tr class="separator:a32e2af80ce5590a4205210c81baf6019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae96f914cd1077ec82a77dbca097fcee4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae96f914cd1077ec82a77dbca097fcee4"></a>
+atomic&lt; <a class="el" href="struct_a_z_std_1_1lock__free__stamped__stack_1_1stamped__node__ptr.html">stamped_node_ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_top</b></td></tr>
+<tr class="separator:ae96f914cd1077ec82a77dbca097fcee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a437c6c69d3cc9ae5f49827ddb8ca1fbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a437c6c69d3cc9ae5f49827ddb8ca1fbd"></a>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocator</b></td></tr>
+<tr class="separator:a437c6c69d3cc9ae5f49827ddb8ca1fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T, typename Allocator&gt;<br/>
@@ -151,7 +182,7 @@ template&lt;typename T , typename Allocator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

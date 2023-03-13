@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_d_p_e_model_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::DPEModelNode Class Reference</div>  </div>
@@ -124,6 +126,39 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetDomValueIndex</b
 <tr class="memitem:a5158ab5e93e1b4352ab7b6af5ed42adc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5158ab5e93e1b4352ab7b6af5ed42adc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsColumn</b> () const </td></tr>
 <tr class="separator:a5158ab5e93e1b4352ab7b6af5ed42adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a0145e3d51fd34190331119a6ff3310a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0145e3d51fd34190331119a6ff3310a7"></a>
+<a class="el" href="class_az_tools_framework_1_1_d_p_e_debug_model.html">DPEDebugModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetModel</b> () const </td></tr>
+<tr class="separator:a0145e3d51fd34190331119a6ff3310a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9456fd52c0744c12594ecd357f08c1d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9456fd52c0744c12594ecd357f08c1d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddChild</b> (<a class="el" href="class_az_tools_framework_1_1_d_p_e_model_node.html">DPEModelNode</a> *childNode, size_t domValueIndex)</td></tr>
+<tr class="separator:a9456fd52c0744c12594ecd357f08c1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9cb39cad0b6195c6291af9c5679ae5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c9cb39cad0b6195c6291af9c5679ae5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearChildren</b> ()</td></tr>
+<tr class="separator:a0c9cb39cad0b6195c6291af9c5679ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a364bb0b8fe45856f06e727f4e9930016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a364bb0b8fe45856f06e727f4e9930016"></a>
+NodeType&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b> = NodeType::RootNode</td></tr>
+<tr class="separator:a364bb0b8fe45856f06e727f4e9930016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92d0313c5cb1e6e0b0c953dd0551685"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae92d0313c5cb1e6e0b0c953dd0551685"></a>
+<a class="el" href="class_az_tools_framework_1_1_d_p_e_model_node.html">DPEModelNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b> = nullptr</td></tr>
+<tr class="separator:ae92d0313c5cb1e6e0b0c953dd0551685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaad5fcfd2207e79f6cfc4c3cddf5056"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaad5fcfd2207e79f6cfc4c3cddf5056"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_domValueIndex</b> = 0</td></tr>
+<tr class="separator:aeaad5fcfd2207e79f6cfc4c3cddf5056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2730c47e2dee5f25e0fcd4b248ad42d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2730c47e2dee5f25e0fcd4b248ad42d"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_displayString</b></td></tr>
+<tr class="separator:af2730c47e2dee5f25e0fcd4b248ad42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb54253557fd0408e76ded79e122d34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cb54253557fd0408e76ded79e122d34"></a>
+QVector&lt; <a class="el" href="class_az_tools_framework_1_1_d_p_e_model_node.html">DPEModelNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rowChildren</b></td></tr>
+<tr class="separator:a0cb54253557fd0408e76ded79e122d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b53d4bc78fbe0c5aba822ef41c569c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06b53d4bc78fbe0c5aba822ef41c569c"></a>
+QVector&lt; <a class="el" href="class_az_tools_framework_1_1_d_p_e_model_node.html">DPEModelNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_columnChildren</b></td></tr>
+<tr class="separator:a06b53d4bc78fbe0c5aba822ef41c569c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/DPEDebugViewer/DPEDebugModel.h</li>
@@ -131,7 +166,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsColumn</b> () const
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

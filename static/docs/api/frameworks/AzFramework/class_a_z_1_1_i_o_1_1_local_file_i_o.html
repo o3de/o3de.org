@@ -53,6 +53,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_local_file_i_o-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::LocalFileIO Class Reference</div>  </div>
@@ -165,6 +168,57 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilename</b> (Hand
 <tr class="memitem:aabf5d3290504ca02d2cd40679cd08d48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabf5d3290504ca02d2cd40679cd08d48"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAbsolutePath</b> (const char *path, char *absolutePath, AZ::u64 maxLength) const </td></tr>
 <tr class="separator:aabf5d3290504ca02d2cd40679cd08d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:abd97b97d2497cea1f53fcac247e7bdc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd97b97d2497cea1f53fcac247e7bdc8"></a>
+SystemFile *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilePointerFromHandle</b> (HandleType fileHandle)</td></tr>
+<tr class="separator:abd97b97d2497cea1f53fcac247e7bdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad288278d690a54f909f50b6b2ed643d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad288278d690a54f909f50b6b2ed643d2"></a>
+HandleType&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextHandle</b> ()</td></tr>
+<tr class="separator:ad288278d690a54f909f50b6b2ed643d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8f57e3b291f6ac96ad14f70eba3c98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e8f57e3b291f6ac96ad14f70eba3c98"></a>
+AZStd::optional&lt; AZ::u64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAliasBuffer</b> (char *outBuffer, AZ::u64 outBufferLength, AZStd::string_view inBuffer) const </td></tr>
+<tr class="separator:a3e8f57e3b291f6ac96ad14f70eba3c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d386ac0e92cb1c138e705f4d11931d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7d386ac0e92cb1c138e705f4d11931d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveAliases</b> (const char *path, char *resolvedPath, AZ::u64 resolvedPathSize) const </td></tr>
+<tr class="separator:ab7d386ac0e92cb1c138e705f4d11931d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40fefea4e295beffe9c37f658a649b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa40fefea4e295beffe9c37f658a649b9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LowerIfBeginsWith</b> (char *inOutBuffer, AZ::u64 bufferLen, const char *alias) const </td></tr>
+<tr class="separator:aa40fefea4e295beffe9c37f658a649b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaafc1d7f2708bd31cba322aaee36b081"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaafc1d7f2708bd31cba322aaee36b081"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckInvalidWrite</b> (const char *path)</td></tr>
+<tr class="separator:aaafc1d7f2708bd31cba322aaee36b081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ae7d23ff4b78ed29ff2b07b24b74417d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7d23ff4b78ed29ff2b07b24b74417d5"></a>
+static AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTrailingSlash</b> (const AZStd::string &amp;pathStr)</td></tr>
+<tr class="separator:ae7d23ff4b78ed29ff2b07b24b74417d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbad6b4a0020c2e1874a9030db58119d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbad6b4a0020c2e1874a9030db58119d"></a>
+static AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>CheckForTrailingSlash</b> (const AZStd::string &amp;pathStr)</td></tr>
+<tr class="separator:acbad6b4a0020c2e1874a9030db58119d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac53d7c0d52e95b1975ca8056ded466d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac53d7c0d52e95b1975ca8056ded466d7"></a>
+AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_openFileGuard</b></td></tr>
+<tr class="separator:ac53d7c0d52e95b1975ca8056ded466d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa386de2e3d4b1381e5f3b5a25ece90b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa386de2e3d4b1381e5f3b5a25ece90b2"></a>
+AZStd::atomic&lt; HandleType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_nextHandle</b></td></tr>
+<tr class="separator:aa386de2e3d4b1381e5f3b5a25ece90b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334efc5613828b3f793955a330f368e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a334efc5613828b3f793955a330f368e4"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; HandleType, SystemFile &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_openFiles</b></td></tr>
+<tr class="separator:a334efc5613828b3f793955a330f368e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c8ba48a968a32e7b5bbe67ced606869"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c8ba48a968a32e7b5bbe67ced606869"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZStd::string, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_aliases</b></td></tr>
+<tr class="separator:a8c8ba48a968a32e7b5bbe67ced606869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c63621d01ee9d10501f99bd964195aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c63621d01ee9d10501f99bd964195aa"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZStd::string, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_deprecatedAliases</b></td></tr>
+<tr class="separator:a7c63621d01ee9d10501f99bd964195aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/IO/LocalFileIO.h</li>
@@ -172,7 +226,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToAbsolutePath
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -54,6 +54,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1rbtree__node__destructor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::rbtree_node_destructor&lt; Allocator, NodeType &gt; Class Template Reference</div>  </div>
@@ -68,6 +71,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d8b1b88dfbef2fd36b13ed4e72f2f8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d8b1b88dfbef2fd36b13ed4e72f2f8f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (NodeType *nodePtr)</td></tr>
 <tr class="separator:a1d8b1b88dfbef2fd36b13ed4e72f2f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a24be4d3fefa675991304282d1cc2860b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24be4d3fefa675991304282d1cc2860b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_type</b> = typename <a class="el" href="struct_a_z_std_1_1allocator__traits.html">AZStd::allocator_traits</a>&lt; Allocator &gt;::template rebind_alloc&lt; NodeType &gt;</td></tr>
+<tr class="separator:a24be4d3fefa675991304282d1cc2860b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0a3a19dbf6f6fbc13a3915df6fafbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a0a3a19dbf6f6fbc13a3915df6fafbc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>allocator_traits</b> = <a class="el" href="struct_a_z_std_1_1allocator__traits.html">AZStd::allocator_traits</a>&lt; allocator_type &gt;</td></tr>
+<tr class="separator:a8a0a3a19dbf6f6fbc13a3915df6fafbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8b23006c03572a74c6461de256eb4edd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b23006c03572a74c6461de256eb4edd"></a>
+<a class="el" href="class_a_z_std_1_1rbtree__node__destructor.html">rbtree_node_destructor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1rbtree__node__destructor.html">rbtree_node_destructor</a> &amp;)=delete</td></tr>
+<tr class="separator:a8b23006c03572a74c6461de256eb4edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67813c8d96a88296145ad8e8d31ab1f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67813c8d96a88296145ad8e8d31ab1f9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>rbtree_node_destructor</b> (const <a class="el" href="class_a_z_std_1_1rbtree__node__destructor.html">rbtree_node_destructor</a> &amp;)=delete</td></tr>
+<tr class="separator:a67813c8d96a88296145ad8e8d31ab1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4453ffa100ad10e529325a5a7d29b504"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4453ffa100ad10e529325a5a7d29b504"></a>
+allocator_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocator</b></td></tr>
+<tr class="separator:a4453ffa100ad10e529325a5a7d29b504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/containers/rbtree.h</li>
@@ -75,7 +102,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (NodeT
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

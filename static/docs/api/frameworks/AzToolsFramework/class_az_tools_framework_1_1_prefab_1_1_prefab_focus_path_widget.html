@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_path_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Prefab::PrefabFocusPathWidget Class Reference</div>  </div>
@@ -69,6 +71,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabFocusChanged<
 <tr class="memitem:a905818cadee74f4e46a118781ee23e38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a905818cadee74f4e46a118781ee23e38"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabFocusRefreshed</b> () override</td></tr>
 <tr class="separator:a905818cadee74f4e46a118781ee23e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aee3c57ef56c4265ef56d97e56ca1dc48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee3c57ef56c4265ef56d97e56ca1dc48"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditorModeActivated</b> (const <a class="el" href="class_az_tools_framework_1_1_viewport_editor_modes_interface.html">ViewportEditorModesInterface</a> &amp;editorModeState, ViewportEditorMode mode) override</td></tr>
+<tr class="separator:aee3c57ef56c4265ef56d97e56ca1dc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3222dd0a6b5b124e26e88abc65e5088e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3222dd0a6b5b124e26e88abc65e5088e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditorModeDeactivated</b> (const <a class="el" href="class_az_tools_framework_1_1_viewport_editor_modes_interface.html">ViewportEditorModesInterface</a> &amp;editorModeState, ViewportEditorMode mode) override</td></tr>
+<tr class="separator:a3222dd0a6b5b124e26e88abc65e5088e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97984301d69dad114d6dab0232747ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae97984301d69dad114d6dab0232747ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Refresh</b> ()</td></tr>
+<tr class="separator:ae97984301d69dad114d6dab0232747ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad01bbc6851468532ef63520fea057fd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad01bbc6851468532ef63520fea057fd6"></a>
+AzFramework::EntityContextId&#160;</td><td class="memItemRight" valign="bottom"><b>m_editorEntityContextId</b> = AzFramework::EntityContextId::CreateNull()</td></tr>
+<tr class="separator:ad01bbc6851468532ef63520fea057fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6207be17a7b4b15cec3364959e2123a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6207be17a7b4b15cec3364959e2123a7"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html">PrefabFocusPublicInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabFocusPublicInterface</b> = nullptr</td></tr>
+<tr class="separator:a6207be17a7b4b15cec3364959e2123a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/Prefab/PrefabViewportFocusPathHandler.h</li>
@@ -76,7 +99,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabFocusRefreshe
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_slice_component_1_1_slice_reference-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -130,6 +132,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ac26b786b0ac9c7137f2bc132d7f1fd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute data patch for an individual instance. <br/></td></tr>
 <tr class="separator:ac26b786b0ac9c7137f2bc132d7f1fd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a088891c31de75296ae553bfb62baffe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a088891c31de75296ae553bfb62baffe3">ComputeDataPatchForInstanceKnownToReference</a> (<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> &amp;instance, <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *serializeContext, <a class="el" href="struct_a_z_1_1_slice_component_1_1_instantiated_container.html">InstantiatedContainer</a> &amp;sourceContainer)</td></tr>
+<tr class="separator:a088891c31de75296ae553bfb62baffe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7950ecaf2f26b30e1d54cbc3b6962a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7950ecaf2f26b30e1d54cbc3b6962a9"></a>
+<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#ac7950ecaf2f26b30e1d54cbc3b6962a9">CreateEmptyInstance</a> (const <a class="el" href="struct_a_z_1_1_uuid.html">SliceInstanceId</a> &amp;instanceId=SliceInstanceId::CreateRandom())</td></tr>
+<tr class="memdesc:ac7950ecaf2f26b30e1d54cbc3b6962a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new Id'd instance slot internally, but does not instantiate it. <br/></td></tr>
+<tr class="separator:ac7950ecaf2f26b30e1d54cbc3b6962a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8c7828bf5d42599c0b70ab619a3610"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#acb8c7828bf5d42599c0b70ab619a3610">PrepareCreateInstance</a> (const <a class="el" href="struct_a_z_1_1_uuid.html">SliceInstanceId</a> &amp;sliceInstanceId, bool allowUninstantiated)</td></tr>
+<tr class="separator:acb8c7828bf5d42599c0b70ab619a3610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2303c355efcdd5170d9924f5212eaa0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2303c355efcdd5170d9924f5212eaa0"></a>
+<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#ac2303c355efcdd5170d9924f5212eaa0">FinalizeCreateInstance</a> (<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> &amp;instance, void *remapContainer, const <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a> &amp;classUuid, <a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> *serializeContext, const <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html">AZ::IdUtils::Remapper</a>&lt; <a class="el" href="class_a_z_1_1_entity_id.html">AZ::EntityId</a> &gt;::IdMapper &amp;customMapper=nullptr)</td></tr>
+<tr class="memdesc:ac2303c355efcdd5170d9924f5212eaa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper that performs EntityID remaps, registers the instance in the <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html">SliceReference</a>'s EntityInfoMap and fixes up MetaDataEntities. <br/></td></tr>
+<tr class="separator:ac2303c355efcdd5170d9924f5212eaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bdf36a040eb76bd00fd8b0a3e25fc67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bdf36a040eb76bd00fd8b0a3e25fc67"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a4bdf36a040eb76bd00fd8b0a3e25fc67">Instantiate</a> (const <a class="el" href="struct_a_z_1_1_object_stream_1_1_filter_descriptor.html">AZ::ObjectStream::FilterDescriptor</a> &amp;filterDesc)</td></tr>
+<tr class="memdesc:a4bdf36a040eb76bd00fd8b0a3e25fc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate all instances (by default we just hold the deltas - data patch), the Slice component controls the instantiate state. <br/></td></tr>
+<tr class="separator:a4bdf36a040eb76bd00fd8b0a3e25fc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74882966ab28515b39a0919898e97a5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74882966ab28515b39a0919898e97a5c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnInstantiate</b> ()</td></tr>
+<tr class="separator:a74882966ab28515b39a0919898e97a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e027ffe65fab2039d5adeb593c4b1f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e027ffe65fab2039d5adeb593c4b1f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiateInstance</b> (<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> &amp;instance, const <a class="el" href="struct_a_z_1_1_object_stream_1_1_filter_descriptor.html">AZ::ObjectStream::FilterDescriptor</a> &amp;filterDesc)</td></tr>
+<tr class="separator:a6e027ffe65fab2039d5adeb593c4b1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42374fa4f8ac11a246b81ea376965370"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42374fa4f8ac11a246b81ea376965370"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddInstanceToEntityInfoMap</b> (<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> &amp;instance)</td></tr>
+<tr class="separator:a42374fa4f8ac11a246b81ea376965370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0025d09f8630bd2d657d8067f4d1d3ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0025d09f8630bd2d657d8067f4d1d3ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveInstanceFromEntityInfoMap</b> (<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> &amp;instance)</td></tr>
+<tr class="separator:a0025d09f8630bd2d657d8067f4d1d3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4be04a09f1b347edb1e63001fe127f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a4be04a09f1b347edb1e63001fe127f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FixUpMetadataEntityForSliceInstance</b> (<a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> *sliceInstance)</td></tr>
+<tr class="separator:a0a4be04a09f1b347edb1e63001fe127f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a675664925fe572072579a84c54127c9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a675664925fe572072579a84c54127c9e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isInstantiated</b></td></tr>
+<tr class="separator:a675664925fe572072579a84c54127c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae171439618de090517119f26cee7d474"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae171439618de090517119f26cee7d474"></a>
+<a class="el" href="class_a_z_1_1_slice_component.html">SliceComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_component</b> = nullptr</td></tr>
+<tr class="separator:ae171439618de090517119f26cee7d474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bf285e5106ccdc0d38c5c56b5329c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82bf285e5106ccdc0d38c5c56b5329c4"></a>
+<a class="el" href="class_a_z_std_1_1unordered__set.html">SliceInstances</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a82bf285e5106ccdc0d38c5c56b5329c4">m_instances</a></td></tr>
+<tr class="memdesc:a82bf285e5106ccdc0d38c5c56b5329c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instances of the slice in our slice reference. <br/></td></tr>
+<tr class="separator:a82bf285e5106ccdc0d38c5c56b5329c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b73905e0720194cb8d084c08f999141"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b73905e0720194cb8d084c08f999141"></a>
+<a class="el" href="class_a_z_1_1_data_1_1_asset.html">Data::Asset</a>&lt; <a class="el" href="class_a_z_1_1_slice_asset.html">SliceAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a0b73905e0720194cb8d084c08f999141">m_asset</a> { Data::AssetLoadBehavior::PreLoad }</td></tr>
+<tr class="memdesc:a0b73905e0720194cb8d084c08f999141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asset reference to a dependent slice reference. <br/></td></tr>
+<tr class="separator:a0b73905e0720194cb8d084c08f999141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:abc3da5a4d76adaede6d5c2e947b56e80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc3da5a4d76adaede6d5c2e947b56e80"></a>
@@ -185,6 +238,47 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceComponent</b></
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A clone of instance </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a088891c31de75296ae553bfb62baffe3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::SliceComponent::SliceReference::ComputeDataPatchForInstanceKnownToReference </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a> &amp;&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *&#160;</td>
+          <td class="paramname"><em>serializeContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_slice_component_1_1_instantiated_container.html">InstantiatedContainer</a> &amp;&#160;</td>
+          <td class="paramname"><em>sourceContainer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Internal only function that computes the data patch for the given instance. This assumes that the instance has already been verified to be related to this slice. </p>
 
 </div>
 </div>
@@ -306,6 +400,41 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceComponent</b></
 
 </div>
 </div>
+<a class="anchor" id="acb8c7828bf5d42599c0b70ab619a3610"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a>* AZ::SliceComponent::SliceReference::PrepareCreateInstance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_uuid.html">SliceInstanceId</a> &amp;&#160;</td>
+          <td class="paramname"><em>sliceInstanceId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allowUninstantiated</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Helper that returns a valid empty instance if the slice reference is able to make instances at time of call Otherwise returns a null slice instance </p>
+
+</div>
+</div>
 <a class="anchor" id="a2d82f077afc22a8c99ff359d6b9406d8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +488,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SliceComponent</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

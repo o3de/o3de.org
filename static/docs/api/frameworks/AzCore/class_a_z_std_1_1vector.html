@@ -56,6 +56,9 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_a_z_std_1_1vector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::vector&lt; T, Allocator &gt; Class Template Reference</div>  </div>
@@ -361,7 +364,7 @@ AZ_FORCE_INLINE int&#160;</td><td class="memItemRight" valign="bottom"><b>valida
 Public Attributes</h2></td></tr>
 <tr class="memitem:a995e5991c39213fd5a67999a899c1c68"><td class="memTemplParams" colspan="2"><a class="anchor" id="a995e5991c39213fd5a67999a899c1c68"></a>
 template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:a995e5991c39213fd5a67999a899c1c68"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>__pad0__</b>: m_allocator(<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>) { construct_iter(first</td></tr>
+<tr class="memitem:a995e5991c39213fd5a67999a899c1c68"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>__pad0__</b>: <a class="el" href="class_a_z_std_1_1vector.html#a34b8cfa195046912546706c858cc083a">m_allocator</a>(<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>) { construct_iter(first</td></tr>
 <tr class="separator:a995e5991c39213fd5a67999a899c1c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4b7140be1316a120d43401317dea159"><td class="memTemplParams" colspan="2"><a class="anchor" id="af4b7140be1316a120d43401317dea159"></a>
 template&lt;class InputIterator &gt; </td></tr>
@@ -369,13 +372,75 @@ template&lt;class InputIterator &gt; </td></tr>
 <tr class="separator:af4b7140be1316a120d43401317dea159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e9ec56b7f23c715e1f96eb237b75d2d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7e9ec56b7f23c715e1f96eb237b75d2d"></a>
 template&lt;class R , class  = enable_if_t&lt;Internal::container_compatible_range&lt;R, value_type&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a7e9ec56b7f23c715e1f96eb237b75d2d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>__pad1__</b>: m_allocator(alloc) { assign_range(AZStd::forward&lt;R&gt;(rg))</td></tr>
+<tr class="memitem:a7e9ec56b7f23c715e1f96eb237b75d2d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>__pad1__</b>: <a class="el" href="class_a_z_std_1_1vector.html#a34b8cfa195046912546706c858cc083a">m_allocator</a>(alloc) { assign_range(AZStd::forward&lt;R&gt;(rg))</td></tr>
 <tr class="separator:a7e9ec56b7f23c715e1f96eb237b75d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf2cef09ebb04a93ae278f339062763"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cf2cef09ebb04a93ae278f339062763"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>__pad2__</b>: <a class="el" href="class_a_z_std_1_1vector.html">vector</a>(ilist.begin()</td></tr>
 <tr class="separator:a5cf2cef09ebb04a93ae278f339062763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4898a7277bf420e1c7079698cbf1b96"><td class="memItemLeft" align="right" valign="top">ilist&#160;</td><td class="memItemRight" valign="bottom"><b>allocator</b></td></tr>
 <tr class="separator:ac4898a7277bf420e1c7079698cbf1b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa8c7c0fbf71a4ba2b3466281a245fefa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8c7c0fbf71a4ba2b3466281a245fefa"></a>
+pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1vector.html#aa8c7c0fbf71a4ba2b3466281a245fefa">m_start</a> {}</td></tr>
+<tr class="memdesc:aa8c7c0fbf71a4ba2b3466281a245fefa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the first allocated element of the array. <br/></td></tr>
+<tr class="separator:aa8c7c0fbf71a4ba2b3466281a245fefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30c12efd1c7060e574a32cbc0299b1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa30c12efd1c7060e574a32cbc0299b1b"></a>
+pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1vector.html#aa30c12efd1c7060e574a32cbc0299b1b">m_last</a> {}</td></tr>
+<tr class="memdesc:aa30c12efd1c7060e574a32cbc0299b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer after the last used element. <br/></td></tr>
+<tr class="separator:aa30c12efd1c7060e574a32cbc0299b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9cda007f803b041ae387322a645fa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf9cda007f803b041ae387322a645fa2"></a>
+pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1vector.html#adf9cda007f803b041ae387322a645fa2">m_end</a> {}</td></tr>
+<tr class="memdesc:adf9cda007f803b041ae387322a645fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer after the last allocated element. <br/></td></tr>
+<tr class="separator:adf9cda007f803b041ae387322a645fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b8cfa195046912546706c858cc083a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b8cfa195046912546706c858cc083a"></a>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1vector.html#a34b8cfa195046912546706c858cc083a">m_allocator</a></td></tr>
+<tr class="memdesc:a34b8cfa195046912546706c858cc083a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of the allocator. <br/></td></tr>
+<tr class="separator:a34b8cfa195046912546706c858cc083a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ae89c47e6aefc1981172d4a9e3115f592"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CONTAINER_VERSION</b> = 1
+ }</td></tr>
+<tr class="separator:ae89c47e6aefc1981172d4a9e3115f592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4a6497dc145c7d27104550fbcb285e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe4a6497dc145c7d27104550fbcb285e"></a>
+typedef <a class="el" href="class_a_z_std_1_1vector.html">vector</a>&lt; T, Allocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
+<tr class="separator:abe4a6497dc145c7d27104550fbcb285e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a38dd7fe1765e9c87161985e1cc711b5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38dd7fe1765e9c87161985e1cc711b5a"></a>
+AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>deallocate_memory</b> (size_type expandedSize)</td></tr>
+<tr class="separator:a38dd7fe1765e9c87161985e1cc711b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e710b58414db0183deabc89527a05bd"><td class="memTemplParams" colspan="2"><a class="anchor" id="a3e710b58414db0183deabc89527a05bd"></a>
+template&lt;class Iterator &gt; </td></tr>
+<tr class="memitem:a3e710b58414db0183deabc89527a05bd"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_impl</b> (const_iterator insertPos, const Iterator &amp;first, const Iterator &amp;last, const true_type &amp;)</td></tr>
+<tr class="separator:a3e710b58414db0183deabc89527a05bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268c6f5b3e9d204332900033e45b4530"><td class="memTemplParams" colspan="2"><a class="anchor" id="a268c6f5b3e9d204332900033e45b4530"></a>
+template&lt;class Iterator &gt; </td></tr>
+<tr class="memitem:a268c6f5b3e9d204332900033e45b4530"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_impl</b> (const_iterator insertPos, const Iterator &amp;first, const Iterator &amp;last, const false_type &amp;)</td></tr>
+<tr class="separator:a268c6f5b3e9d204332900033e45b4530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13aa84385a1a1219d0f4884815c6c9fd"><td class="memTemplParams" colspan="2"><a class="anchor" id="a13aa84385a1a1219d0f4884815c6c9fd"></a>
+template&lt;class Iterator &gt; </td></tr>
+<tr class="memitem:a13aa84385a1a1219d0f4884815c6c9fd"><td class="memTemplItemLeft" align="right" valign="top">iterator&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_iter</b> (const_iterator insertPos, Iterator first, Iterator last)</td></tr>
+<tr class="separator:a13aa84385a1a1219d0f4884815c6c9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6000382cec6d5fcd8b5134e890affea"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad6000382cec6d5fcd8b5134e890affea"></a>
+template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:ad6000382cec6d5fcd8b5134e890affea"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>construct_iter</b> (const InputIterator &amp;first, const InputIterator &amp;last, const true_type &amp;)</td></tr>
+<tr class="separator:ad6000382cec6d5fcd8b5134e890affea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c1b07fc56decb3fc5a46dd5eb2b3ad"><td class="memTemplParams" colspan="2"><a class="anchor" id="a56c1b07fc56decb3fc5a46dd5eb2b3ad"></a>
+template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a56c1b07fc56decb3fc5a46dd5eb2b3ad"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>construct_iter</b> (const InputIterator &amp;first, const InputIterator &amp;last, const false_type &amp;)</td></tr>
+<tr class="separator:a56c1b07fc56decb3fc5a46dd5eb2b3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad150ebe518d8331e42741efbad22450d"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad150ebe518d8331e42741efbad22450d"></a>
+template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:ad150ebe518d8331e42741efbad22450d"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign_iter</b> (const InputIterator &amp;numElements, const InputIterator &amp;value, const true_type &amp;)</td></tr>
+<tr class="separator:ad150ebe518d8331e42741efbad22450d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f3ffa697f3d40596f629dcccba072a3"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7f3ffa697f3d40596f629dcccba072a3"></a>
+template&lt;class InputIterator &gt; </td></tr>
+<tr class="memitem:a7f3ffa697f3d40596f629dcccba072a3"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign_iter</b> (const InputIterator &amp;first, const InputIterator &amp;last, const false_type &amp;)</td></tr>
+<tr class="separator:a7f3ffa697f3d40596f629dcccba072a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T, class Allocator&gt;<br/>
@@ -481,24 +546,24 @@ template&lt;class T, class Allocator&gt; </div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="class_a_z_std_1_1vector.html#a843e6826e7e90bbd91d08469ba8556ef">vector</a>(<span class="keyword">const</span> this_type&amp; rhs)</div>
-<div class="line">            : m_allocator(rhs.m_allocator)</div>
+<div class="line">            : <a class="code" href="class_a_z_std_1_1vector.html#a34b8cfa195046912546706c858cc083a">m_allocator</a>(rhs.<a class="code" href="class_a_z_std_1_1vector.html#a34b8cfa195046912546706c858cc083a">m_allocator</a>)</div>
 <div class="line">        {</div>
 <div class="line">            size_type byteSize = <span class="keyword">sizeof</span>(<a class="code" href="class_a_z_std_1_1vector.html#aff112f83ca769e2e80897653d8937cc1">node_type</a>) * (rhs.m_last - rhs.m_start);</div>
 <div class="line">            <span class="keywordflow">if</span> (byteSize)</div>
 <div class="line">            {</div>
-<div class="line">                m_start = <span class="keyword">reinterpret_cast&lt;</span>pointer<span class="keyword">&gt;</span>(m_allocator.allocate(byteSize, alignment_of&lt;node_type&gt;::value));</div>
-<div class="line">                m_last  = <a class="code" href="namespace_a_z_std.html#ae681cdf9b5ec7a33561e01275b65fd4c">AZStd::uninitialized_copy</a>(rhs.m_start, rhs.m_last, m_start, is_trivially_copy_constructible&lt;value_type&gt;());</div>
+<div class="line">                <a class="code" href="class_a_z_std_1_1vector.html#aa8c7c0fbf71a4ba2b3466281a245fefa">m_start</a> = <span class="keyword">reinterpret_cast&lt;</span>pointer<span class="keyword">&gt;</span>(<a class="code" href="class_a_z_std_1_1vector.html#a34b8cfa195046912546706c858cc083a">m_allocator</a>.allocate(byteSize, alignment_of&lt;node_type&gt;::value));</div>
+<div class="line">                <a class="code" href="class_a_z_std_1_1vector.html#aa30c12efd1c7060e574a32cbc0299b1b">m_last</a>  = <a class="code" href="namespace_a_z_std.html#ae681cdf9b5ec7a33561e01275b65fd4c">AZStd::uninitialized_copy</a>(rhs.m_start, rhs.m_last, <a class="code" href="class_a_z_std_1_1vector.html#aa8c7c0fbf71a4ba2b3466281a245fefa">m_start</a>, is_trivially_copy_constructible&lt;value_type&gt;());</div>
 <div class="line">            }</div>
 <div class="line">            <span class="keywordflow">else</span></div>
 <div class="line">            {</div>
-<div class="line">                m_start = 0;</div>
-<div class="line">                m_last = 0;</div>
+<div class="line">                <a class="code" href="class_a_z_std_1_1vector.html#aa8c7c0fbf71a4ba2b3466281a245fefa">m_start</a> = 0;</div>
+<div class="line">                <a class="code" href="class_a_z_std_1_1vector.html#aa30c12efd1c7060e574a32cbc0299b1b">m_last</a> = 0;</div>
 <div class="line">            }</div>
-<div class="line">            m_end   = m_last;</div>
+<div class="line">            <a class="code" href="class_a_z_std_1_1vector.html#adf9cda007f803b041ae387322a645fa2">m_end</a>   = <a class="code" href="class_a_z_std_1_1vector.html#aa30c12efd1c7060e574a32cbc0299b1b">m_last</a>;</div>
 <div class="line">        }</div>
 <div class="line"></div>
 <div class="line">        <a class="code" href="class_a_z_std_1_1vector.html#a843e6826e7e90bbd91d08469ba8556ef">vector</a>(this_type&amp;&amp; rhs)</div>
-<div class="line">            : m_start(0)</div>
+<div class="line">            : <a class="code" href="class_a_z_std_1_1vector.html#aa8c7c0fbf71a4ba2b3466281a245fefa">m_start</a>(0)</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -509,7 +574,7 @@ template&lt;class T, class Allocator&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

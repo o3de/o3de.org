@@ -56,6 +56,9 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -65,6 +68,13 @@
 
 <p><code>#include &lt;SliceTransaction.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction_1_1_entity_to_push.html">EntityToPush</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction_1_1_slice_instance_to_push.html">SliceInstanceToPush</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:abc2f2853a0fe49da4005a779e88e26d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#abc2f2853a0fe49da4005a779e88e26d4">SliceCreationFlags</a> { <b>CreateAsDynamic</b> = (1&lt;&lt;0)
@@ -151,6 +161,93 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a6f1c0dfd55a1063476a13472d1472b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4ba413cf22885d09000490582e2e93f"><td class="memItemLeft" align="right" valign="top">static TransactionPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#ac4ba413cf22885d09000490582e2e93f">BeginSlicePush</a> (const SliceAssetPtr &amp;asset, AZ::SerializeContext *serializeContext=nullptr, AZ::u32 slicePushFlags=0)</td></tr>
 <tr class="separator:ac4ba413cf22885d09000490582e2e93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a31a7c3d0b3bc363181e6647545873206"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>TransactionType</b> { <b>None</b>, 
+<b>NewSlice</b>, 
+<b>UpdateSlice</b>, 
+<b>OverwriteSlice</b>
+ }</td></tr>
+<tr class="separator:a31a7c3d0b3bc363181e6647545873206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6811376859f2a165584abe6bb68a6226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6811376859f2a165584abe6bb68a6226"></a>
+typedef AZStd::unordered_map<br class="typebreak"/>
+&lt; AZ::SliceComponent::SliceInstanceAddress, <br class="typebreak"/>
+<a class="el" href="struct_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction_1_1_slice_instance_to_push.html">SliceInstanceToPush</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SliceInstancesToPushMap</b></td></tr>
+<tr class="separator:a6811376859f2a165584abe6bb68a6226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aaa6fc9954ecb0ddd9b43397b1dda6b69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa6fc9954ecb0ddd9b43397b1dda6b69"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SliceTransaction</b> (AZ::SerializeContext *serializeContext=nullptr)</td></tr>
+<tr class="separator:aaa6fc9954ecb0ddd9b43397b1dda6b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59adf33a7a9c95d9ba08d2a1eba152db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59adf33a7a9c95d9ba08d2a1eba152db"></a>
+SliceAssetPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a59adf33a7a9c95d9ba08d2a1eba152db">CloneAssetForSave</a> ()</td></tr>
+<tr class="memdesc:a59adf33a7a9c95d9ba08d2a1eba152db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone asset in preparation for final write. PreSave operations will be applied to the clone. <br/></td></tr>
+<tr class="separator:a59adf33a7a9c95d9ba08d2a1eba152db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef33a28bf303a46b5240e0b16744dd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ef33a28bf303a46b5240e0b16744dd9"></a>
+Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a4ef33a28bf303a46b5240e0b16744dd9">PreSave</a> (const char *fullPath, SliceAssetPtr &amp;asset, PreSaveCallback preSaveCallback, AZ::u32 sliceCommitFlags)</td></tr>
+<tr class="memdesc:a4ef33a28bf303a46b5240e0b16744dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies enabled pre-save behavior, and invokes user pre-save callback. <br/></td></tr>
+<tr class="separator:a4ef33a28bf303a46b5240e0b16744dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0c0e1c9ce0bfe8c1c18af62e211d4e"><td class="memItemLeft" align="right" valign="top">AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a3d0c0e1c9ce0bfe8c1c18af62e211d4e">FindTargetAncestorAndUpdateInstanceIdMap</a> (AZ::EntityId id, AZ::SliceComponent::EntityIdToEntityIdMap &amp;idMap, const AZ::SliceComponent::SliceInstanceAddress *ignoreSliceInstance=nullptr) const </td></tr>
+<tr class="separator:a3d0c0e1c9ce0bfe8c1c18af62e211d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754925619857828d41972ca369423065"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a754925619857828d41972ca369423065"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a754925619857828d41972ca369423065">Reset</a> ()</td></tr>
+<tr class="memdesc:a754925619857828d41972ca369423065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the transaction. <br/></td></tr>
+<tr class="separator:a754925619857828d41972ca369423065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953c6684bf5550b06efdad949d8ff303"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a953c6684bf5550b06efdad949d8ff303"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a953c6684bf5550b06efdad949d8ff303">add_ref</a> ()</td></tr>
+<tr class="memdesc:a953c6684bf5550b06efdad949d8ff303"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive_ptr <br/></td></tr>
+<tr class="separator:a953c6684bf5550b06efdad949d8ff303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61cc4d8cb13a2acfa0996b724c54bbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad61cc4d8cb13a2acfa0996b724c54bbd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
+<tr class="separator:ad61cc4d8cb13a2acfa0996b724c54bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4086f3761320701caad79ba4c5ec63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a4086f3761320701caad79ba4c5ec63"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SliceTransaction</b> (const <a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html">SliceTransaction</a> &amp;)=delete</td></tr>
+<tr class="separator:a7a4086f3761320701caad79ba4c5ec63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6859e10401be2be244fc558b18579adb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6859e10401be2be244fc558b18579adb"></a>
+<a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html">SliceTransaction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html">SliceTransaction</a> &amp;)=delete</td></tr>
+<tr class="separator:a6859e10401be2be244fc558b18579adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa276329e0c7bf450b80086fb578c19e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa276329e0c7bf450b80086fb578c19e3"></a>
+TransactionType&#160;</td><td class="memItemRight" valign="bottom"><b>m_transactionType</b></td></tr>
+<tr class="separator:aa276329e0c7bf450b80086fb578c19e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32625e920e7942909bc8ccf745f4334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa32625e920e7942909bc8ccf745f4334"></a>
+AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b></td></tr>
+<tr class="separator:aa32625e920e7942909bc8ccf745f4334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153e0f5af39c723fe7f019b1c5e7f0cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a153e0f5af39c723fe7f019b1c5e7f0cf"></a>
+SliceAssetPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a153e0f5af39c723fe7f019b1c5e7f0cf">m_originalTargetAsset</a></td></tr>
+<tr class="memdesc:a153e0f5af39c723fe7f019b1c5e7f0cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">For Slice Pushes, the original in-memory asset passed to BeginSlicePush. <br/></td></tr>
+<tr class="separator:a153e0f5af39c723fe7f019b1c5e7f0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7eb3301e86c09e756738c7113278c68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7eb3301e86c09e756738c7113278c68"></a>
+SliceAssetPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#ab7eb3301e86c09e756738c7113278c68">m_targetAsset</a></td></tr>
+<tr class="memdesc:ab7eb3301e86c09e756738c7113278c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">The asset in-memory that the transaction is making changes to (for creation, new one, for pushes, clone of assetToReplace) <br/></td></tr>
+<tr class="separator:ab7eb3301e86c09e756738c7113278c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8b54b6f290b752b7dabb275f7c4412"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac8b54b6f290b752b7dabb275f7c4412"></a>
+SliceInstancesToPushMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_addedSliceInstances</b></td></tr>
+<tr class="separator:aac8b54b6f290b752b7dabb275f7c4412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16dc13c1364a3a154b6f79e56e691f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af16dc13c1364a3a154b6f79e56e691f0"></a>
+AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction_1_1_entity_to_push.html">EntityToPush</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entitiesToPush</b></td></tr>
+<tr class="separator:af16dc13c1364a3a154b6f79e56e691f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380d637b33540c725bd4811dcbe886b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a380d637b33540c725bd4811dcbe886b0"></a>
+AZStd::vector&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entitiesToRemove</b></td></tr>
+<tr class="separator:a380d637b33540c725bd4811dcbe886b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176601e5211f7e5c71aac0d31967755d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a176601e5211f7e5c71aac0d31967755d"></a>
+AZ::SliceComponent::EntityIdToEntityIdMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_liveToAssetIdMap</b></td></tr>
+<tr class="separator:a176601e5211f7e5c71aac0d31967755d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51aa55c1265c3b7b5d67051cbf182f17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51aa55c1265c3b7b5d67051cbf182f17"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_slice_utilities_1_1_slice_transaction.html#a51aa55c1265c3b7b5d67051cbf182f17">m_hasEntityAdds</a> = false</td></tr>
+<tr class="memdesc:a51aa55c1265c3b7b5d67051cbf182f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether entities have been added as part of this transaction. <br/></td></tr>
+<tr class="separator:a51aa55c1265c3b7b5d67051cbf182f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa471a63e77c3cf49710dc348a8bfb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fa471a63e77c3cf49710dc348a8bfb8"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZ::EntityId, AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_addedEntityIdRemaps</b></td></tr>
+<tr class="separator:a7fa471a63e77c3cf49710dc348a8bfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f9edf436e1e6ac942823b1ab110f74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42f9edf436e1e6ac942823b1ab110f74"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_refCount</b></td></tr>
+<tr class="separator:a42f9edf436e1e6ac942823b1ab110f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -567,6 +664,47 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>AZStd::IntrusivePtr
 
 </div>
 </div>
+<a class="anchor" id="a3d0c0e1c9ce0bfe8c1c18af62e211d4e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::EntityId AzToolsFramework::SliceUtilities::SliceTransaction::FindTargetAncestorAndUpdateInstanceIdMap </td>
+          <td>(</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::SliceComponent::EntityIdToEntityIdMap &amp;&#160;</td>
+          <td class="paramname"><em>idMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::SliceComponent::SliceInstanceAddress *&#160;</td>
+          <td class="paramname"><em>ignoreSliceInstance</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Locate an entity's corresponding ancestor in the transaction's target slice. If the ancestor is found, the corresponding Id entry is added to the provided idMap. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5eed6c9c76d71504056ffd343407d751"></a>
 <div class="memitem">
 <div class="memproto">
@@ -803,7 +941,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>AZStd::IntrusivePtr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

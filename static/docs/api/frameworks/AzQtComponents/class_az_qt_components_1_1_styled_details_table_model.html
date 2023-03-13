@@ -53,6 +53,9 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_styled_details_table_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::StyledDetailsTableModel Class Reference</div>  </div>
@@ -63,6 +66,10 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_qt_components_1_1_styled_details_table_model_1_1_column.html">Column</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><b>InternalTableData</b></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_styled_details_table_model_1_1_table_entry.html">TableEntry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -136,6 +143,62 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>removeRows</b> (int r
 <tr class="memitem:a307f732df05707c350be5020e0f2a178"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a307f732df05707c350be5020e0f2a178"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterStatusIcon</b> (int statusType, const QPixmap &amp;icon)</td></tr>
 <tr class="separator:a307f732df05707c350be5020e0f2a178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ab4713a155334782b7062f0e93240ed96"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>EntryType</b> { <b>Prioritized</b>, 
+<b>Normal</b>, 
+<b>Deprioritized</b>
+ }</td></tr>
+<tr class="separator:ab4713a155334782b7062f0e93240ed96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af027031ab91252e0e82ff93fd0976afd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af027031ab91252e0e82ff93fd0976afd"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>GetColumnName</b> (int colIndex) const </td></tr>
+<tr class="separator:af027031ab91252e0e82ff93fd0976afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad21f4791c9dafbde833b28be43a13a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ad21f4791c9dafbde833b28be43a13a"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntryData</b> (const InternalTableEntry *entry, const QString &amp;column) const </td></tr>
+<tr class="separator:a1ad21f4791c9dafbde833b28be43a13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d0dd24e5c780047926cedc4eded8a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49d0dd24e5c780047926cedc4eded8a7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AppearsAbove</b> (const InternalTableEntry *lhs, const InternalTableEntry *rhs, const QString &amp;column, Qt::SortOrder) const </td></tr>
+<tr class="separator:a49d0dd24e5c780047926cedc4eded8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75dd0232668c58a78dc755aa7665fae3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75dd0232668c58a78dc755aa7665fae3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DetailsUpdated</b> ()</td></tr>
+<tr class="separator:a75dd0232668c58a78dc755aa7665fae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1032e1dc1b2f52fc17a5736be3b2db6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1032e1dc1b2f52fc17a5736be3b2db6d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4251,&quot;-Wunknown-warning-option&quot;) QHash&lt; QString</td></tr>
+<tr class="separator:a1032e1dc1b2f52fc17a5736be3b2db6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aaa63814bcdb341e7eeefbdb1305d02e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa63814bcdb341e7eeefbdb1305d02e4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_sortColumn</b> = -1</td></tr>
+<tr class="separator:aaa63814bcdb341e7eeefbdb1305d02e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ff7e211dba9527a6716d69ef3b3be7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00ff7e211dba9527a6716d69ef3b3be7"></a>
+Qt::SortOrder&#160;</td><td class="memItemRight" valign="bottom"><b>m_sortOrder</b> = Qt::AscendingOrder</td></tr>
+<tr class="separator:a00ff7e211dba9527a6716d69ef3b3be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9982a80ed8b022c008f08f5c95efce5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9982a80ed8b022c008f08f5c95efce5"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_columnAliases</b></td></tr>
+<tr class="separator:ab9982a80ed8b022c008f08f5c95efce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea26f3673ebd7f3bfcd014db8b6a5234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea26f3673ebd7f3bfcd014db8b6a5234"></a>
+QVector&lt; <a class="el" href="struct_az_qt_components_1_1_styled_details_table_model_1_1_column.html">Column</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_columns</b></td></tr>
+<tr class="separator:aea26f3673ebd7f3bfcd014db8b6a5234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea1e1416ce28f6caf4ba2a64762db329"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea1e1416ce28f6caf4ba2a64762db329"></a>
+QVector&lt; InternalTableEntry * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entries</b></td></tr>
+<tr class="separator:aea1e1416ce28f6caf4ba2a64762db329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579c5ba2f89cf454b726a2a4138a113d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a579c5ba2f89cf454b726a2a4138a113d"></a>
+QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_prioritizedKeys</b></td></tr>
+<tr class="separator:a579c5ba2f89cf454b726a2a4138a113d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2fc5556c167f2256d830f62e7c7d9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f2fc5556c167f2256d830f62e7c7d9f"></a>
+QVector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_deprioritizedKeys</b></td></tr>
+<tr class="separator:a4f2fc5556c167f2256d830f62e7c7d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea145d333c6db40244e942211edcf98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ea145d333c6db40244e942211edcf98"></a>
+QMap&lt; int, QPixmap &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_statusIcons</b></td></tr>
+<tr class="separator:a1ea145d333c6db40244e942211edcf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10b8a6196c3586323b6df1cf8c2ce13f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10b8a6196c3586323b6df1cf8c2ce13f"></a>
+QVector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_detailsChangedRoleVector</b></td></tr>
+<tr class="separator:a10b8a6196c3586323b6df1cf8c2ce13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a0a6bf1a3c33afc89ec120a3eaa2316b6"></a>
@@ -164,7 +227,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterStatusIcon</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,9 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_compressor_z_lib-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::CompressorZLib Class Reference</div>  </div>
@@ -117,6 +120,62 @@ static AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <tr class="memdesc:a4c7b0cf49fdd736dfac2cd547bdcf418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return compressor type id. <br/></td></tr>
 <tr class="separator:a4c7b0cf49fdd736dfac2cd547bdcf418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8025655d2e33101c0ca2dc1bbc44c431"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8025655d2e33101c0ca2dc1bbc44c431"></a>
+SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a8025655d2e33101c0ca2dc1bbc44c431">FillFromDecompressCache</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib_data.html">CompressorZLibData</a> *zlibData, void *&amp;buffer, SizeType &amp;byteSize, SizeType &amp;offset)</td></tr>
+<tr class="memdesc:a8025655d2e33101c0ca2dc1bbc44c431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read as much data as possible and adjust the parameters. <br/></td></tr>
+<tr class="separator:a8025655d2e33101c0ca2dc1bbc44c431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea7dbc22c7819d11be1592cc37b6b5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ea7dbc22c7819d11be1592cc37b6b5c"></a>
+SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a8ea7dbc22c7819d11be1592cc37b6b5c">FillCompressedBuffer</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream)</td></tr>
+<tr class="memdesc:a8ea7dbc22c7819d11be1592cc37b6b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from stream into the compression buffer. <br/></td></tr>
+<tr class="separator:a8ea7dbc22c7819d11be1592cc37b6b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97aabfb599d5e4bccb8485fbdf471608"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97aabfb599d5e4bccb8485fbdf471608"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a97aabfb599d5e4bccb8485fbdf471608">AcquireDataBuffer</a> ()</td></tr>
+<tr class="memdesc:a97aabfb599d5e4bccb8485fbdf471608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire data buffer resource (if not created it will be allocated) and increment m_dataBufferUseCount. <br/></td></tr>
+<tr class="separator:a97aabfb599d5e4bccb8485fbdf471608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3331d4d26d8c1e5d72e0cabf39d22408"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3331d4d26d8c1e5d72e0cabf39d22408"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a3331d4d26d8c1e5d72e0cabf39d22408">ReleaseDataBuffer</a> ()</td></tr>
+<tr class="memdesc:a3331d4d26d8c1e5d72e0cabf39d22408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release data buffer resource, if m_dataBufferUseCount == 0 all memory will be freed. <br/></td></tr>
+<tr class="separator:a3331d4d26d8c1e5d72e0cabf39d22408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aab6a0be240167da38a7dcb55cecb27cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab6a0be240167da38a7dcb55cecb27cf"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#aab6a0be240167da38a7dcb55cecb27cf">m_lastReadStream</a></td></tr>
+<tr class="memdesc:aab6a0be240167da38a7dcb55cecb27cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached last stream we read data into the m_dataBuffer. <br/></td></tr>
+<tr class="separator:aab6a0be240167da38a7dcb55cecb27cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f822f0150213d3f7996325efa81158"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7f822f0150213d3f7996325efa81158"></a>
+SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#aa7f822f0150213d3f7996325efa81158">m_lastReadStreamOffset</a></td></tr>
+<tr class="memdesc:aa7f822f0150213d3f7996325efa81158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset of the last read (in the m_dataBuffer) in the compressed stream. <br/></td></tr>
+<tr class="separator:aa7f822f0150213d3f7996325efa81158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b6e5580c40de9793a1d5e1dcfed82e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93b6e5580c40de9793a1d5e1dcfed82e"></a>
+SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a93b6e5580c40de9793a1d5e1dcfed82e">m_lastReadStreamSize</a></td></tr>
+<tr class="memdesc:a93b6e5580c40de9793a1d5e1dcfed82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the data in m_dataBuffer of the last read. <br/></td></tr>
+<tr class="separator:a93b6e5580c40de9793a1d5e1dcfed82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9232040cea4be76872294b0be96d79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb9232040cea4be76872294b0be96d79"></a>
+unsigned char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#adb9232040cea4be76872294b0be96d79">m_compressedDataBuffer</a></td></tr>
+<tr class="memdesc:adb9232040cea4be76872294b0be96d79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data buffer used to read/write compressed data. <br/></td></tr>
+<tr class="separator:adb9232040cea4be76872294b0be96d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d04416355b8edcb22a2b2f1eb6ad94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23d04416355b8edcb22a2b2f1eb6ad94"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a23d04416355b8edcb22a2b2f1eb6ad94">m_compressedDataBufferSize</a></td></tr>
+<tr class="memdesc:a23d04416355b8edcb22a2b2f1eb6ad94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data buffer size (stored so we can lazy allocate m_dataBuffer as we need). <br/></td></tr>
+<tr class="separator:a23d04416355b8edcb22a2b2f1eb6ad94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad673cba918fb286275a58bac31696556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad673cba918fb286275a58bac31696556"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#ad673cba918fb286275a58bac31696556">m_compressedDataBufferUseCount</a></td></tr>
+<tr class="memdesc:ad673cba918fb286275a58bac31696556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data buffer use count. <br/></td></tr>
+<tr class="separator:ad673cba918fb286275a58bac31696556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e0f4bb2b3bd586167e56c1f8f64dba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86e0f4bb2b3bd586167e56c1f8f64dba"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a86e0f4bb2b3bd586167e56c1f8f64dba">m_decompressionCachePerStream</a></td></tr>
+<tr class="memdesc:a86e0f4bb2b3bd586167e56c1f8f64dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache per stream for each compressed stream stream in bytes. <br/></td></tr>
+<tr class="separator:a86e0f4bb2b3bd586167e56c1f8f64dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ab45ba880f2f1f697ddd9940bcf44b374"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab45ba880f2f1f697ddd9940bcf44b374"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_CompressedDataBufferAlignment</b> = 16</td></tr>
+<tr class="separator:ab45ba880f2f1f697ddd9940bcf44b374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_i_o_1_1_compressor"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_i_o_1_1_compressor')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html">AZ::IO::Compressor</a></td></tr>
@@ -170,7 +229,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxHead
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

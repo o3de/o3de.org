@@ -51,6 +51,9 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1lru__cache-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::lru_cache&lt; KeyType, MappedType, Hasher, EqualKey, Allocator &gt; Class Template Reference</div>  </div>
@@ -143,13 +146,69 @@ reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> 
 <tr class="memitem:aeef8e3e7711476a7351142d8e08b4c87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeef8e3e7711476a7351142d8e08b4c87"></a>
 const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const </td></tr>
 <tr class="separator:aeef8e3e7711476a7351142d8e08b4c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a633424fb9c88d674f5c05b89c0e50daf"><td class="memItemLeft" align="right" valign="top">typedef AZStd::unordered_map<br class="typebreak"/>
+&lt; key_type, iterator, Hasher, <br class="typebreak"/>
+EqualKey, Allocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1lru__cache.html#a633424fb9c88d674f5c05b89c0e50daf">map_type</a></td></tr>
+<tr class="separator:a633424fb9c88d674f5c05b89c0e50daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a842495a0d693cef7bf9a61a1e8af4a9c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a842495a0d693cef7bf9a61a1e8af4a9c"></a>
+template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a842495a0d693cef7bf9a61a1e8af4a9c"><td class="memTemplItemLeft" align="right" valign="top">pair_iter_bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert_impl</b> (const key_type &amp;key, Args &amp;&amp;...arguments)</td></tr>
+<tr class="separator:a842495a0d693cef7bf9a61a1e8af4a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb9474c2e049d61c1e8d5277afa0194"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cb9474c2e049d61c1e8d5277afa0194"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>trim_to_fit</b> ()</td></tr>
+<tr class="separator:a4cb9474c2e049d61c1e8d5277afa0194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa9eabe36b58482448491855a951c488c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9eabe36b58482448491855a951c488c"></a>
+list_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1lru__cache.html#aa9eabe36b58482448491855a951c488c">m_cacheList</a></td></tr>
+<tr class="memdesc:aa9eabe36b58482448491855a951c488c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the flat LRU list, sorted from most used to least recently used. <br/></td></tr>
+<tr class="separator:aa9eabe36b58482448491855a951c488c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c766c5900d4c8c8a3e047da97cb3177"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c766c5900d4c8c8a3e047da97cb3177"></a>
+<a class="el" href="class_a_z_std_1_1lru__cache.html#a633424fb9c88d674f5c05b89c0e50daf">map_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1lru__cache.html#a0c766c5900d4c8c8a3e047da97cb3177">m_cacheMap</a></td></tr>
+<tr class="memdesc:a0c766c5900d4c8c8a3e047da97cb3177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the key -&gt; list iterator association. <br/></td></tr>
+<tr class="separator:a0c766c5900d4c8c8a3e047da97cb3177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5feb559b304d76553a5ef8cde93c6b5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5feb559b304d76553a5ef8cde93c6b5d"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1lru__cache.html#a5feb559b304d76553a5ef8cde93c6b5d">m_capacity</a> = 0</td></tr>
+<tr class="memdesc:a5feb559b304d76553a5ef8cde93c6b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old elements will be evicted if the capacity is exceeded. <br/></td></tr>
+<tr class="separator:a5feb559b304d76553a5ef8cde93c6b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename KeyType, typename MappedType, class Hasher = AZStd::hash&lt;KeyType&gt;, class EqualKey = AZStd::equal_to&lt;KeyType&gt;, class Allocator = AZStd::allocator&gt;<br/>
 class AZStd::lru_cache&lt; KeyType, MappedType, Hasher, EqualKey, Allocator &gt;</h3>
 
 <p>This class is a simple map which keeps an least-recently-used list of elements. If the capacity of the map is exceeded with a new insertion, the oldest element is evicted. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a633424fb9c88d674f5c05b89c0e50daf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename KeyType , typename MappedType , class Hasher  = AZStd::hash&lt;KeyType&gt;, class EqualKey  = AZStd::equal_to&lt;KeyType&gt;, class Allocator  = AZStd::allocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef AZStd::unordered_map&lt;key_type, iterator, Hasher, EqualKey, Allocator&gt; <a class="el" href="class_a_z_std_1_1lru__cache.html">AZStd::lru_cache</a>&lt; KeyType, MappedType, Hasher, EqualKey, Allocator &gt;::<a class="el" href="class_a_z_std_1_1lru__cache.html#a633424fb9c88d674f5c05b89c0e50daf">map_type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The map holds an iterator into the list. The list is ordered by most-to-least recently used, and holds the key / value pair values. This allows us to expose the list iterator externally for easy traversal. The downside is that this does require one more indirection at look-up time, however the list iterator is going to be promoted to the front of the list on access anyway. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a52a79b703d59bd7e380faec5081727da"></a>
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +372,7 @@ template&lt;typename KeyType , typename MappedType , class Hasher  = AZStd::hash
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:34 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:51 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

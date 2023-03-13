@@ -50,6 +50,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_data_1_1_instance_data-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -70,6 +72,36 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abb41db774ec74b688cc7fe77e1346bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7de780bc221e1cd202ec619f62502b0"><td class="memItemLeft" align="right" valign="top">const AssetType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_data.html#af7de780bc221e1cd202ec619f62502b0">GetAssetType</a> () const </td></tr>
 <tr class="separator:af7de780bc221e1cd202ec619f62502b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6f63c49d3ff9be68c48886581646a447"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f63c49d3ff9be68c48886581646a447"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> ()</td></tr>
+<tr class="separator:a6f63c49d3ff9be68c48886581646a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4adbc264819f96214ae9147ab0fa0583"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4adbc264819f96214ae9147ab0fa0583"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
+<tr class="separator:a4adbc264819f96214ae9147ab0fa0583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a074a0fb69d89b6823900b9759b575af4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a074a0fb69d89b6823900b9759b575af4"></a>
+<a class="el" href="class_a_z_1_1_data_1_1_instance_database_interface.html">InstanceDatabaseInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentDatabase</b> = nullptr</td></tr>
+<tr class="separator:a074a0fb69d89b6823900b9759b575af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7028287a8f1bdd3bb881eca91e54e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a7028287a8f1bdd3bb881eca91e54e1"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCount</b> = {0}</td></tr>
+<tr class="separator:a6a7028287a8f1bdd3bb881eca91e54e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42f69fc50a6df9dbac520adf774fa46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa42f69fc50a6df9dbac520adf774fa46"></a>
+<a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_id</b></td></tr>
+<tr class="separator:aa42f69fc50a6df9dbac520adf774fa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2920446c93c1bd63dccfe7afa22f959b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2920446c93c1bd63dccfe7afa22f959b"></a>
+AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetId</b></td></tr>
+<tr class="separator:a2920446c93c1bd63dccfe7afa22f959b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaeb5ee23c25eeb1190a3521ce702797"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaeb5ee23c25eeb1190a3521ce702797"></a>
+AssetType&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetType</b></td></tr>
+<tr class="separator:aaaeb5ee23c25eeb1190a3521ce702797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b9a5b63b62541e9976a368ef2dadc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1b9a5b63b62541e9976a368ef2dadc0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isOrphaned</b> = false</td></tr>
+<tr class="separator:ac1b9a5b63b62541e9976a368ef2dadc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -142,7 +174,7 @@ template&lt;typename Type &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:34 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:51 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

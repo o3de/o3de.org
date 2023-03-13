@@ -49,6 +49,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_process_communicator_trace_printer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ProcessCommunicatorTracePrinter Class Reference</div>  </div>
@@ -73,6 +74,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_communicator_trace_printer.html#a75206faf4d1db64b791285516d059337">WriteCurrentString</a> (bool isFromStdError)</td></tr>
 <tr class="memdesc:a75206faf4d1db64b791285516d059337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the current buffer to AZ_Error or AZ_TracePrintf so that it can be picked up by AZ::Debug::Trace. <br/></td></tr>
 <tr class="separator:a75206faf4d1db64b791285516d059337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aae22f2f7d8ca76cc40f52b9d6b6fb46d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae22f2f7d8ca76cc40f52b9d6b6fb46d"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_window</b></td></tr>
+<tr class="separator:aae22f2f7d8ca76cc40f52b9d6b6fb46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d8f16dd1e4c498c950c26f98b5146f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41d8f16dd1e4c498c950c26f98b5146f"></a>
+<a class="el" href="class_az_framework_1_1_process_communicator.html">AzFramework::ProcessCommunicator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_communicator</b></td></tr>
+<tr class="separator:a41d8f16dd1e4c498c950c26f98b5146f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf373491075ba8c725291d0e7d96239"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdf373491075ba8c725291d0e7d96239"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>m_streamBuffer</b> [128]</td></tr>
+<tr class="separator:afdf373491075ba8c725291d0e7d96239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5606ca066a7e600d78b7ca2c3b5e74c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5606ca066a7e600d78b7ca2c3b5e74c6"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_stringBeingConcatenated</b></td></tr>
+<tr class="separator:a5606ca066a7e600d78b7ca2c3b5e74c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe1d8edac27b5156b6972c0494e49521"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe1d8edac27b5156b6972c0494e49521"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_errorStringBeingConcatenated</b></td></tr>
+<tr class="separator:abe1d8edac27b5156b6972c0494e49521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_process_communicator_trace_printer.html">ProcessCommunicatorTracePrinter</a> listens to stderr and stdout of a running process and writes its output to the AZ_Trace system Importantly, it does not do any blocking operations. </p>
@@ -110,7 +129,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

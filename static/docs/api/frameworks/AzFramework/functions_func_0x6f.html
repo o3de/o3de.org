@@ -91,6 +91,9 @@
 <li>OnActiveViewChanged()
 : <a class="el" href="class_camera_1_1_camera_notifications.html#a38d0eeb228b528ca4e3689d8f4cc4abb">Camera::CameraNotifications</a>
 </li>
+<li>OnApplicationConstrained()
+: <a class="el" href="class_az_framework_1_1_input_device.html#aad5835545cd2fafd567ef40a8397e17a">AzFramework::InputDevice</a>
+</li>
 <li>OnApplicationResumed()
 : <a class="el" href="class_az_framework_1_1_input_device_motion.html#a777d3a6f0c838e97f3a73bafa790358b">AzFramework::InputDeviceMotion</a>
 </li>
@@ -134,7 +137,8 @@
 : <a class="el" href="class_az_framework_1_1_streaming_install_1_1_streaming_install_chunk_notifications.html#a78e2e171178c35544aa8466a0ecba0c9">AzFramework::StreamingInstall::StreamingInstallChunkNotifications</a>
 </li>
 <li>OnContextEntitiesAdded()
-: <a class="el" href="class_az_framework_1_1_game_entity_context_component.html#a570c7fa8cc6f825d66ab2f6048eabd52">AzFramework::GameEntityContextComponent</a>
+: <a class="el" href="class_az_framework_1_1_entity_context.html#a4e2fcc9d4b547b30d524ccd7623b8fd1">AzFramework::EntityContext</a>
+, <a class="el" href="class_az_framework_1_1_game_entity_context_component.html#a570c7fa8cc6f825d66ab2f6048eabd52">AzFramework::GameEntityContextComponent</a>
 </li>
 <li>OnDespawn()
 : <a class="el" href="class_az_framework_1_1_scripts_1_1_spawnable_script_notifications.html#a8eb63bd9f4193392518e553c0cf43783">AzFramework::Scripts::SpawnableScriptNotifications</a>
@@ -148,6 +152,9 @@
 <li>OnEntitiesReloadedFromStream()
 : <a class="el" href="class_az_framework_1_1_entity_ownership_service_notifications.html#a4c6f245e0c8363c7fa7d324d1f210e61">AzFramework::EntityOwnershipServiceNotifications</a>
 </li>
+<li>OnEntityActivated()
+: <a class="el" href="class_az_framework_1_1_transform_component.html#a80b8c76a19e093ae1276147934f3e3a1">AzFramework::TransformComponent</a>
+</li>
 <li>OnEntityContextCreateEntity()
 : <a class="el" href="class_az_framework_1_1_entity_context_events.html#af5e4f24064d59cbb00b4440c35d056f5">AzFramework::EntityContextEvents</a>
 </li>
@@ -159,6 +166,9 @@
 </li>
 <li>OnEntityContextReset()
 : <a class="el" href="class_az_framework_1_1_entity_context_events.html#a52a30346c848158fffbf438b41f538cd">AzFramework::EntityContextEvents</a>
+</li>
+<li>OnEntityDeactivated()
+: <a class="el" href="class_az_framework_1_1_transform_component.html#a69f0f1c34522db98202b85ddf03b4eda">AzFramework::TransformComponent</a>
 </li>
 <li>OnEntityOwnershipServiceReset()
 : <a class="el" href="class_az_framework_1_1_entity_ownership_service_notifications.html#a91410ab4c0a25d0b2617a01cf246c337">AzFramework::EntityOwnershipServiceNotifications</a>
@@ -198,6 +208,12 @@
 </li>
 <li>OnInputChannelEvent()
 : <a class="el" href="class_az_framework_1_1_input_channel_notifications.html#a4c35f63b4139b3fcbc77d48832bf3345">AzFramework::InputChannelNotifications</a>
+, <a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#a800fe9f8e450e5ab0567f54677885782">AzFramework::InputChannelEventListener</a>
+, <a class="el" href="class_az_framework_1_1_input_channel_event_sink.html#a5d48fcf31a58a3df6622f5263175f79f">AzFramework::InputChannelEventSink</a>
+</li>
+<li>OnInputChannelEventFiltered()
+: <a class="el" href="class_az_framework_1_1_input_context.html#a0d34c38de8c93df744bac5139fd410e7">AzFramework::InputContext</a>
+, <a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#ab0dbab15e19a6429639eaa54c7ec5522">AzFramework::InputChannelEventListener</a>
 </li>
 <li>OnInputDeviceConnectedEvent()
 : <a class="el" href="class_az_framework_1_1_input_device_notifications.html#acffd9b9c41487fb54c2e3f1025b37a0e">AzFramework::InputDeviceNotifications</a>
@@ -205,8 +221,15 @@
 <li>OnInputDeviceDisconnectedEvent()
 : <a class="el" href="class_az_framework_1_1_input_device_notifications.html#ad8ecc56580422a95dfaab3a0cd7f443d">AzFramework::InputDeviceNotifications</a>
 </li>
+<li>OnInputDeviceTypeSelected()
+: <a class="el" href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html#a671c069a5bf590df9b188de86bd98501">AzFramework::InputMapping::InputChannelNameFilteredByDeviceType</a>
+</li>
 <li>OnInputTextEvent()
 : <a class="el" href="class_az_framework_1_1_input_text_notifications.html#a63b2a81f87cdd72534de0a293955da2f">AzFramework::InputTextNotifications</a>
+, <a class="el" href="class_az_framework_1_1_input_text_event_listener.html#a74dffd53acb6b31295daf97b1f198eb1">AzFramework::InputTextEventListener</a>
+</li>
+<li>OnInputTextEventFiltered()
+: <a class="el" href="class_az_framework_1_1_input_text_event_listener.html#adf9a6164e7cd3b3e938003a632ddaebb">AzFramework::InputTextEventListener</a>
 </li>
 <li>OnPackageProgressChanged()
 : <a class="el" href="class_az_framework_1_1_streaming_install_1_1_streaming_install_package_notifications.html#a98cbbf9856918f0af1a525da5772d49f">AzFramework::StreamingInstall::StreamingInstallPackageNotifications</a>
@@ -239,8 +262,8 @@
 : <a class="el" href="class_az_framework_1_1_raw_input_notifications_windows.html#ac4eb29d46bef932c6f33dc3c2ca9e4dd">AzFramework::RawInputNotificationsWindows</a>
 </li>
 <li>OnRawInputEvent()
-: <a class="el" href="class_az_framework_1_1_raw_input_notifications_android.html#a50b293d7706358db645854a894d54251">AzFramework::RawInputNotificationsAndroid</a>
-, <a class="el" href="class_az_framework_1_1_raw_input_notifications_windows.html#a031d6988daf133a9e3bb9aca2e106ca9">AzFramework::RawInputNotificationsWindows</a>
+: <a class="el" href="class_az_framework_1_1_raw_input_notifications_windows.html#a031d6988daf133a9e3bb9aca2e106ca9">AzFramework::RawInputNotificationsWindows</a>
+, <a class="el" href="class_az_framework_1_1_raw_input_notifications_android.html#a50b293d7706358db645854a894d54251">AzFramework::RawInputNotificationsAndroid</a>
 </li>
 <li>OnRawInputTextEvent()
 : <a class="el" href="class_az_framework_1_1_raw_input_notifications_android.html#a27322e9d37223e1065438f2728165bea">AzFramework::RawInputNotificationsAndroid</a>
@@ -263,13 +286,16 @@
 <li>OnRootSpawnableReleased()
 : <a class="el" href="class_az_framework_1_1_root_spawnable_notifications.html#af35710e5b82ee986b85e37b607c6a837">AzFramework::RootSpawnableNotifications</a>
 </li>
+<li>OnSizeRangeChanged()
+: <a class="el" href="class_az_framework_1_1_paint_brush_settings.html#a8d3e09d3136b74d000fcc6386d535f76">AzFramework::PaintBrushSettings</a>
+</li>
 <li>OnSliceInstantiated()
-: <a class="el" href="class_az_framework_1_1_slice_instantiation_results.html#a84237decf6f3883296e97c8b599a376f">AzFramework::SliceInstantiationResults</a>
-, <a class="el" href="class_az_framework_1_1_slice_game_entity_ownership_service_notifications.html#a2c0936e36442e0731fea4c7ee08747dc">AzFramework::SliceGameEntityOwnershipServiceNotifications</a>
+: <a class="el" href="class_az_framework_1_1_slice_game_entity_ownership_service_notifications.html#a2c0936e36442e0731fea4c7ee08747dc">AzFramework::SliceGameEntityOwnershipServiceNotifications</a>
+, <a class="el" href="class_az_framework_1_1_slice_instantiation_results.html#a84237decf6f3883296e97c8b599a376f">AzFramework::SliceInstantiationResults</a>
 </li>
 <li>OnSliceInstantiationFailed()
-: <a class="el" href="class_az_framework_1_1_slice_game_entity_ownership_service_notifications.html#ab723e44275607d0dc1da14a22c2c1378">AzFramework::SliceGameEntityOwnershipServiceNotifications</a>
-, <a class="el" href="class_az_framework_1_1_slice_instantiation_results.html#a69c170a4af0b4b7ba2e7f5880421a540">AzFramework::SliceInstantiationResults</a>
+: <a class="el" href="class_az_framework_1_1_slice_instantiation_results.html#a69c170a4af0b4b7ba2e7f5880421a540">AzFramework::SliceInstantiationResults</a>
+, <a class="el" href="class_az_framework_1_1_slice_game_entity_ownership_service_notifications.html#ab723e44275607d0dc1da14a22c2c1378">AzFramework::SliceGameEntityOwnershipServiceNotifications</a>
 </li>
 <li>OnSliceInstantiationFailedOrCanceled()
 : <a class="el" href="class_az_framework_1_1_slice_instantiation_results.html#a1164d9359c56f7ca49cd4ed4ab071a3d">AzFramework::SliceInstantiationResults</a>
@@ -280,11 +306,33 @@
 <li>OnSmooth()
 : <a class="el" href="class_az_framework_1_1_paint_brush_notifications.html#a3bd8bc0c3073fa41976f87b005902756">AzFramework::PaintBrushNotifications</a>
 </li>
+<li>OnSourceInputEvent()
+: <a class="el" href="class_az_framework_1_1_input_mapping.html#a577b6a382b3f697ebcc70b5649e1ec46">AzFramework::InputMapping</a>
+, <a class="el" href="class_az_framework_1_1_input_mapping_and.html#a200f0343779d772a614586542f7bde30">AzFramework::InputMappingAnd</a>
+, <a class="el" href="class_az_framework_1_1_input_mapping_or.html#a14b5df546207d4f81c5ca639f81a221e">AzFramework::InputMappingOr</a>
+</li>
 <li>OnSpawn()
 : <a class="el" href="class_az_framework_1_1_scripts_1_1_spawnable_script_notifications.html#aeee3f33e1e1415c1a6f79544f188dd8e">AzFramework::Scripts::SpawnableScriptNotifications</a>
 </li>
+<li>OnSpawnableIssue()
+: <a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a69a459a5536c7e70018da27a91f79bec">AzFramework::SpawnableMonitor</a>
+</li>
+<li>OnSpawnableLoaded()
+: <a class="el" href="class_az_framework_1_1_spawnable_monitor.html#ac18e73f1a0e208756aa124462c29b974">AzFramework::SpawnableMonitor</a>
+</li>
+<li>OnSpawnableReloaded()
+: <a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a5050621aca2e52f33abcaa2d45f801ab">AzFramework::SpawnableMonitor</a>
+, <a class="el" href="class_az_framework_1_1_spawnable_entities_container_1_1_monitor.html#a7a8b0c24223518e8de772fc0f0752b38">AzFramework::SpawnableEntitiesContainer::Monitor</a>
+</li>
+<li>OnSpawnableUnloaded()
+: <a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a7d49f4bdc98eba744f6a806144069f88">AzFramework::SpawnableMonitor</a>
+</li>
 <li>OnTick()
-: <a class="el" href="class_az_framework_1_1_input_mapping.html#ae30025b358dfb25ccab51f46b7c69ad5">AzFramework::InputMapping</a>
+: <a class="el" href="class_az_framework_1_1_input_system_component.html#a8dd4ecc757f7658f9295b0d956ff579d">AzFramework::InputSystemComponent</a>
+, <a class="el" href="class_az_framework_1_1_input_mapping.html#ae30025b358dfb25ccab51f46b7c69ad5">AzFramework::InputMapping</a>
+</li>
+<li>OnTransformChanged()
+: <a class="el" href="class_az_framework_1_1_transform_component.html#a96a00f6eb0645e7998be5199ac52f366">AzFramework::TransformComponent</a>
 </li>
 <li>OnTransformUpdated()
 : <a class="el" href="class_az_framework_1_1_i_entity_bounds_union.html#a000ef43e09dd2c5758a6de3b3d06c11e">AzFramework::IEntityBoundsUnion</a>
@@ -308,10 +356,10 @@
 : <a class="el" href="class_az_framework_1_1_input_channel_requests_1_1_bus_id_type.html#a75679aeca31a6666ff981a084519f262">AzFramework::InputChannelRequests::BusIdType</a>
 </li>
 <li>operator!=()
-: <a class="el" href="class_az_framework_1_1_input_channel_id.html#a2d43623b522b60c99604ac719e8de120">AzFramework::InputChannelId</a>
+: <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#a2c91673585a1643a5f414840b321e549">AzFramework::SurfaceData::SurfaceTagWeight</a>
 , <a class="el" href="class_az_framework_1_1_input_device_id.html#ac0062babeae6c7c7fc91b308b5718f31">AzFramework::InputDeviceId</a>
-, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#a2c91673585a1643a5f414840b321e549">AzFramework::SurfaceData::SurfaceTagWeight</a>
 , <a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html#a50bd0eac34fc09e9b87f3ed603bd6019">AzFramework::SliceInstantiationTicket</a>
+, <a class="el" href="class_az_framework_1_1_input_channel_id.html#a2d43623b522b60c99604ac719e8de120">AzFramework::InputChannelId</a>
 </li>
 <li>operator&lt;()
 : <a class="el" href="class_az_framework_1_1_input_device_id.html#addd20946a9d505cf67ce032a72cd160f">AzFramework::InputDeviceId</a>
@@ -320,11 +368,14 @@
 : <a class="el" href="class_physics_1_1_material_property_value.html#a18a7a30aec9d6856e78066416d1f3e8f">Physics::MaterialPropertyValue</a>
 </li>
 <li>operator==()
-: <a class="el" href="class_az_framework_1_1_input_channel_id.html#a3f81deb76a465c40feb6e47575cf1927">AzFramework::InputChannelId</a>
-, <a class="el" href="class_az_framework_1_1_input_device_id.html#ad2c33027f5192f3025980ff5c25177e7">AzFramework::InputDeviceId</a>
-, <a class="el" href="class_az_framework_1_1_input_channel_requests_1_1_bus_id_type.html#adf06568020e7952d885004ac6ad11fde">AzFramework::InputChannelRequests::BusIdType</a>
-, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#a14ca1e75495d9752ea02fb1454d5294d">AzFramework::SurfaceData::SurfaceTagWeight</a>
+: <a class="el" href="class_az_framework_1_1_input_channel_requests_1_1_bus_id_type.html#adf06568020e7952d885004ac6ad11fde">AzFramework::InputChannelRequests::BusIdType</a>
 , <a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html#a2e44b876b0f522106cf97211e58f977e">AzFramework::SliceInstantiationTicket</a>
+, <a class="el" href="class_az_framework_1_1_input_device_id.html#ad2c33027f5192f3025980ff5c25177e7">AzFramework::InputDeviceId</a>
+, <a class="el" href="struct_az_framework_1_1_surface_data_1_1_surface_tag_weight.html#a14ca1e75495d9752ea02fb1454d5294d">AzFramework::SurfaceData::SurfaceTagWeight</a>
+, <a class="el" href="class_az_framework_1_1_input_channel_id.html#a3f81deb76a465c40feb6e47575cf1927">AzFramework::InputChannelId</a>
+</li>
+<li>OptionallyAdjustTo2D()
+: <a class="el" href="class_az_framework_1_1_paint_brush.html#adc967049d5d405f43b5381d9c0147237">AzFramework::PaintBrush</a>
 </li>
 <li>OverrideTimeNowFn()
 : <a class="el" href="class_az_framework_1_1_click_detector.html#aba8687a1983d4bc0db0ece775c07443e">AzFramework::ClickDetector</a>
@@ -333,7 +384,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputMapping::InputChannelNameFilteredByDeviceType Struct Reference</div>  </div>
@@ -91,6 +93,30 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a597cb9cb05c5ef27d00eebebc402c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a597cb9cb05c5ef27d00eebebc402c3"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a1a597cb9cb05c5ef27d00eebebc402c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a671c069a5bf590df9b188de86bd98501"><td class="memItemLeft" align="right" valign="top">virtual AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html#a671c069a5bf590df9b188de86bd98501">OnInputDeviceTypeSelected</a> ()</td></tr>
+<tr class="separator:a671c069a5bf590df9b188de86bd98501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eadebc3b1dc33a3d605c5abb56749f2"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html#a8eadebc3b1dc33a3d605c5abb56749f2">GetNameLabelOverride</a> () const </td></tr>
+<tr class="separator:a8eadebc3b1dc33a3d605c5abb56749f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61046a5da4adc1141e62c8c2f6a869f7"><td class="memItemLeft" align="right" valign="top">virtual AZStd::vector<br class="typebreak"/>
+&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html#a61046a5da4adc1141e62c8c2f6a869f7">GetValidInputDeviceTypes</a> () const </td></tr>
+<tr class="separator:a61046a5da4adc1141e62c8c2f6a869f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561be3e340dbe5b25257f6a554cea393"><td class="memItemLeft" align="right" valign="top">virtual AZStd::vector<br class="typebreak"/>
+&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html#a561be3e340dbe5b25257f6a554cea393">GetValidInputChannelNamesBySelectedDevice</a> () const </td></tr>
+<tr class="separator:a561be3e340dbe5b25257f6a554cea393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a24ca45013e4051be2907dd66b8ba454b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24ca45013e4051be2907dd66b8ba454b"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html#a24ca45013e4051be2907dd66b8ba454b">m_inputDeviceType</a></td></tr>
+<tr class="memdesc:a24ca45013e4051be2907dd66b8ba454b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently selected input device type. <br/></td></tr>
+<tr class="separator:a24ca45013e4051be2907dd66b8ba454b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b88fea869c2468baeb33189238f413"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7b88fea869c2468baeb33189238f413"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_mapping_1_1_input_channel_name_filtered_by_device_type.html#aa7b88fea869c2468baeb33189238f413">m_inputChannelName</a></td></tr>
+<tr class="memdesc:aa7b88fea869c2468baeb33189238f413"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently selected input channel name. <br/></td></tr>
+<tr class="separator:aa7b88fea869c2468baeb33189238f413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Convenience class that allows for selection of an input channel name filtered by device. </p>
@@ -145,13 +171,113 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 
 </div>
 </div>
+<a class="anchor" id="a8eadebc3b1dc33a3d605c5abb56749f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::string AzFramework::InputMapping::InputChannelNameFilteredByDeviceType::GetNameLabelOverride </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the name label override to display. </p>
+<dl class="section return"><dt>Returns</dt><dd>Name label override to display. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a561be3e340dbe5b25257f6a554cea393"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::vector&lt;AZStd::string&gt; AzFramework::InputMapping::InputChannelNameFilteredByDeviceType::GetValidInputChannelNamesBySelectedDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the valid input channel names for this input mapping given the selected device type. </p>
+<dl class="section return"><dt>Returns</dt><dd>Valid input channel names for this input mapping given the selected device type. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a61046a5da4adc1141e62c8c2f6a869f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::vector&lt;AZStd::string&gt; AzFramework::InputMapping::InputChannelNameFilteredByDeviceType::GetValidInputDeviceTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the valid input device types for this input mapping. </p>
+<dl class="section return"><dt>Returns</dt><dd>Valid input device types for this input mapping. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a671c069a5bf590df9b188de86bd98501"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::Crc32 AzFramework::InputMapping::InputChannelNameFilteredByDeviceType::OnInputDeviceTypeSelected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called when an input device type is selected. </p>
+<dl class="section return"><dt>Returns</dt><dd>The AZ::Edit::PropertyRefreshLevels to apply to the property tree view. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Input/Mappings/InputMapping.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

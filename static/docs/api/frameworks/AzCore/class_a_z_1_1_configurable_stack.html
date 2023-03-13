@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_configurable_stack-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ConfigurableStack&lt; StackBaseType &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -107,6 +109,29 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const <
 <tr class="memitem:a7838d18b413f4230073787db109575ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7838d18b413f4230073787db109575ae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="separator:a7838d18b413f4230073787db109575ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a201ebb8a3adcbcc77025e07d8e33251d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a201ebb8a3adcbcc77025e07d8e33251d"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>AddNode</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> name) override</td></tr>
+<tr class="separator:a201ebb8a3adcbcc77025e07d8e33251d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abe9fb4472c7c7f12d695945cedcd73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0abe9fb4472c7c7f12d695945cedcd73"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>AddNode</b> (<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> name, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> target, InsertPosition position) override</td></tr>
+<tr class="separator:a0abe9fb4472c7c7f12d695945cedcd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a30dcdf8d5bb77906aab447531f7e9f35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30dcdf8d5bb77906aab447531f7e9f35"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">NodeContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_nodes</b></td></tr>
+<tr class="separator:a30dcdf8d5bb77906aab447531f7e9f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_class_a_z_1_1_configurable_stack_interface"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_a_z_1_1_configurable_stack_interface')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_a_z_1_1_configurable_stack_interface.html">AZ::ConfigurableStackInterface</a></td></tr>
+<tr class="memitem:ab2465daa73ad5171b91f3c79d8749c0f inherit pro_types_class_a_z_1_1_configurable_stack_interface"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>InsertPosition</b> { <b>Before</b>, 
+<b>After</b>
+ }</td></tr>
+<tr class="separator:ab2465daa73ad5171b91f3c79d8749c0f inherit pro_types_class_a_z_1_1_configurable_stack_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/Settings/ConfigurableStack.h</li>
@@ -115,7 +140,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

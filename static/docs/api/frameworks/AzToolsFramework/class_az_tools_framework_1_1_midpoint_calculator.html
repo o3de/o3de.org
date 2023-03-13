@@ -53,6 +53,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_midpoint_calculator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::MidpointCalculator Class Reference</div>  </div>
@@ -75,6 +76,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_midpoint_calculator.html#a94c0befaf6646f5e14bbc840bd5e4827">CalculateMidpoint</a> () const </td></tr>
 <tr class="memdesc:a94c0befaf6646f5e14bbc840bd5e4827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Once all positions have been added, call this to return the midpoint. <br/></td></tr>
 <tr class="separator:a94c0befaf6646f5e14bbc840bd5e4827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a772bba6066c48c1fc962a19e498eda5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a772bba6066c48c1fc962a19e498eda5d"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>m_minPosition</b> = AZ::Vector3(std::numeric_limits&lt;float&gt;::max())</td></tr>
+<tr class="separator:a772bba6066c48c1fc962a19e498eda5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe899cbddfe28712802b5eee5d1dd3a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe899cbddfe28712802b5eee5d1dd3a1"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxPosition</b> = AZ::Vector3(-std::numeric_limits&lt;float&gt;::max())</td></tr>
+<tr class="separator:afe899cbddfe28712802b5eee5d1dd3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A utility to return the center of several points. Take several positions and store the min and max of each in turn - when all points have been added return the center/midpoint. </p>
@@ -84,7 +94,7 @@ AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

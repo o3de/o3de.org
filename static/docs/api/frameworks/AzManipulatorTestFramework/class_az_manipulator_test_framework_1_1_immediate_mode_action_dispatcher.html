@@ -50,6 +50,10 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_manipulator_test_framework_1_1_immediate_mode_action_dispatcher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzManipulatorTestFramework::ImmediateModeActionDispatcher Class Reference</div>  </div>
@@ -195,6 +199,112 @@ AZStd::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><
 <a class="el" href="class_az_manipulator_test_framework_1_1_immediate_mode_action_dispatcher.html">ImmediateModeActionDispatcher</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html#ac4e524b40270c1dabbff9e8ed8847485">DebugBreak</a> ()</td></tr>
 <tr class="memdesc:ac4e524b40270c1dabbff9e8ed8847485 inherit pub_methods_class_az_manipulator_test_framework_1_1_action_dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Break out to the debugger mid action sequence (note: do not leave uses in production code). <br/></td></tr>
 <tr class="separator:ac4e524b40270c1dabbff9e8ed8847485 inherit pub_methods_class_az_manipulator_test_framework_1_1_action_dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad883a8be27c4c894c58eb609d634ef79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad883a8be27c4c894c58eb609d634ef79"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSnapToGridImpl</b> (bool enabled) override</td></tr>
+<tr class="separator:ad883a8be27c4c894c58eb609d634ef79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234edadd97a5745d2b6fa3708d8ede53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a234edadd97a5745d2b6fa3708d8ede53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStickySelectImpl</b> (bool enabled) override</td></tr>
+<tr class="separator:a234edadd97a5745d2b6fa3708d8ede53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4618078f44a14ac51138577324c31c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4618078f44a14ac51138577324c31c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GridSizeImpl</b> (float size) override</td></tr>
+<tr class="separator:af4618078f44a14ac51138577324c31c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7971fcd760b9ea84bbbe263a770f4f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7971fcd760b9ea84bbbe263a770f4f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CameraStateImpl</b> (const AzFramework::CameraState &amp;cameraState) override</td></tr>
+<tr class="separator:ac7971fcd760b9ea84bbbe263a770f4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab292396c77e4c64ab9d5dfcb1f85f63a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab292396c77e4c64ab9d5dfcb1f85f63a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseLButtonDownImpl</b> () override</td></tr>
+<tr class="separator:ab292396c77e4c64ab9d5dfcb1f85f63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea30b62e4b578c22fe21840cae346ef9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea30b62e4b578c22fe21840cae346ef9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseLButtonUpImpl</b> () override</td></tr>
+<tr class="separator:aea30b62e4b578c22fe21840cae346ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ea576674c046dcc38fbcd490253645"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73ea576674c046dcc38fbcd490253645"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseMButtonDownImpl</b> () override</td></tr>
+<tr class="separator:a73ea576674c046dcc38fbcd490253645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2a479d398d863bc107eda4d1f9a457"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d2a479d398d863bc107eda4d1f9a457"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseMButtonUpImpl</b> () override</td></tr>
+<tr class="separator:a2d2a479d398d863bc107eda4d1f9a457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd3681eeec335934c180b02daaf11d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fd3681eeec335934c180b02daaf11d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseLButtonDoubleClickImpl</b> () override</td></tr>
+<tr class="separator:a9fd3681eeec335934c180b02daaf11d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f546f86ef0839e62c58590a669fd39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49f546f86ef0839e62c58590a669fd39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MousePositionImpl</b> (const AzFramework::ScreenPoint &amp;position) override</td></tr>
+<tr class="separator:a49f546f86ef0839e62c58590a669fd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f65bb10424fc889099cbbf24784a18a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f65bb10424fc889099cbbf24784a18a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>KeyboardModifierDownImpl</b> (KeyboardModifier keyModifier) override</td></tr>
+<tr class="separator:a3f65bb10424fc889099cbbf24784a18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf854bd626ddf7a99915481a7dd11d28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf854bd626ddf7a99915481a7dd11d28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>KeyboardModifierUpImpl</b> (KeyboardModifier keyModifier) override</td></tr>
+<tr class="separator:acf854bd626ddf7a99915481a7dd11d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae368fea3cbaa0c63c5cab0008582d686"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae368fea3cbaa0c63c5cab0008582d686"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpectManipulatorBeingInteractedImpl</b> () override</td></tr>
+<tr class="separator:ae368fea3cbaa0c63c5cab0008582d686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4583dba2fdb8e60540cba4543e28ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e4583dba2fdb8e60540cba4543e28ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpectManipulatorNotBeingInteractedImpl</b> () override</td></tr>
+<tr class="separator:a3e4583dba2fdb8e60540cba4543e28ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8f22cf2760f68af8c0b61da9cb6eb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba8f22cf2760f68af8c0b61da9cb6eb9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEntityWorldTransformImpl</b> (AZ::EntityId entityId, const AZ::Transform &amp;transform) override</td></tr>
+<tr class="separator:aba8f22cf2760f68af8c0b61da9cb6eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b48650951c2d7b780a8945ab213808"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3b48650951c2d7b780a8945ab213808"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelectedEntityImpl</b> (AZ::EntityId entity) override</td></tr>
+<tr class="separator:ae3b48650951c2d7b780a8945ab213808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e41caedefc91f4026c7da901407e40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49e41caedefc91f4026c7da901407e40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelectedEntitiesImpl</b> (const AzToolsFramework::EntityIdList &amp;entities) override</td></tr>
+<tr class="separator:a49e41caedefc91f4026c7da901407e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6361461a2e367371adae3808dbdcc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c6361461a2e367371adae3808dbdcc4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnterComponentModeImpl</b> (const AZ::Uuid &amp;uuid) override</td></tr>
+<tr class="separator:a4c6361461a2e367371adae3808dbdcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_manipulator_test_framework_1_1_action_dispatcher"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_manipulator_test_framework_1_1_action_dispatcher')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html">AzManipulatorTestFramework::ActionDispatcher&lt; ImmediateModeActionDispatcher &gt;</a></td></tr>
+<tr class="memitem:a649932abe2ce148f2cd71d439cefdf2b inherit pro_methods_class_az_manipulator_test_framework_1_1_action_dispatcher"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a649932abe2ce148f2cd71d439cefdf2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b> (const char *format, const Args &amp;...args)</td></tr>
+<tr class="separator:a649932abe2ce148f2cd71d439cefdf2b inherit pro_methods_class_az_manipulator_test_framework_1_1_action_dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aef6685170db4ba2e01145904c1aaebf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef6685170db4ba2e01145904c1aaebf7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>KeyboardModifier</b> = AzToolsFramework::ViewportInteraction::KeyboardModifier</td></tr>
+<tr class="separator:aef6685170db4ba2e01145904c1aaebf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a676bbf9e7e8b81ce6bfb3b9b8f5669"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a676bbf9e7e8b81ce6bfb3b9b8f5669"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>KeyboardModifiers</b> = AzToolsFramework::ViewportInteraction::KeyboardModifiers</td></tr>
+<tr class="separator:a4a676bbf9e7e8b81ce6bfb3b9b8f5669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ee4453b8dd3ccd8a93be3648f45cb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2ee4453b8dd3ccd8a93be3648f45cb7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MouseInteractionEvent</b> = AzToolsFramework::ViewportInteraction::MouseInteractionEvent</td></tr>
+<tr class="separator:aa2ee4453b8dd3ccd8a93be3648f45cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae0ee2712ca91043c992eafaf33de837b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0ee2712ca91043c992eafaf33de837b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MouseMoveAfterButton</b> ()</td></tr>
+<tr class="separator:ae0ee2712ca91043c992eafaf33de837b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac70ebcde93be70133d6bc423711faa3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac70ebcde93be70133d6bc423711faa3"></a>
+MouseInteractionEvent *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMouseInteractionEvent</b> ()</td></tr>
+<tr class="separator:aac70ebcde93be70133d6bc423711faa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1454f91cbc3e5782146940332143c297"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1454f91cbc3e5782146940332143c297"></a>
+const MouseInteractionEvent *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMouseInteractionEvent</b> () const </td></tr>
+<tr class="separator:a1454f91cbc3e5782146940332143c297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab3bd2ef46ea32d83c2d9329d397ab0a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3bd2ef46ea32d83c2d9329d397ab0a0"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; MouseInteractionEvent &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_event</b></td></tr>
+<tr class="separator:ab3bd2ef46ea32d83c2d9329d397ab0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8619c897c54fe86a92ef84fe7515893c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8619c897c54fe86a92ef84fe7515893c"></a>
+<a class="el" href="class_az_manipulator_test_framework_1_1_manipulator_viewport_interaction.html">ManipulatorViewportInteraction</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_manipulatorViewportInteraction</b></td></tr>
+<tr class="separator:a8619c897c54fe86a92ef84fe7515893c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c221183c2f414bab54d046417ed5f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8c221183c2f414bab54d046417ed5f2"></a>
+AZStd::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_manipulator_test_framework_1_1_immediate_mode_action_dispatcher.html#ad8c221183c2f414bab54d046417ed5f2">m_timeNow</a> = AZStd::chrono::milliseconds(0)</td></tr>
+<tr class="memdesc:ad8c221183c2f414bab54d046417ed5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current time that ticks up after each call to EditorViewportInputTimeNow. <br/></td></tr>
+<tr class="separator:ad8c221183c2f414bab54d046417ed5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_az_manipulator_test_framework_1_1_action_dispatcher"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_az_manipulator_test_framework_1_1_action_dispatcher')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_az_manipulator_test_framework_1_1_action_dispatcher.html">AzManipulatorTestFramework::ActionDispatcher&lt; ImmediateModeActionDispatcher &gt;</a></td></tr>
+<tr class="memitem:a8e26b898716a090ea5f5b1b06d34a39b inherit pro_attribs_class_az_manipulator_test_framework_1_1_action_dispatcher"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e26b898716a090ea5f5b1b06d34a39b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_logging</b></td></tr>
+<tr class="separator:a8e26b898716a090ea5f5b1b06d34a39b inherit pro_attribs_class_az_manipulator_test_framework_1_1_action_dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dispatches actions immediately to the manipulators. </p>
@@ -231,7 +341,7 @@ AZStd::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzManipulatorTestFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzManipulatorTestFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

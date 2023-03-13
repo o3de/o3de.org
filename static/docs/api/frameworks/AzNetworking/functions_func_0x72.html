@@ -59,6 +59,7 @@
       <li><a href="functions_func_0x65.html#index_e"><span>e</span></a></li>
       <li><a href="functions_func_0x66.html#index_f"><span>f</span></a></li>
       <li><a href="functions_func_0x67.html#index_g"><span>g</span></a></li>
+      <li><a href="functions_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_0x69.html#index_i"><span>i</span></a></li>
       <li><a href="functions_func_0x6a.html#index_j"><span>j</span></a></li>
       <li><a href="functions_func_0x6c.html#index_l"><span>l</span></a></li>
@@ -93,21 +94,28 @@
 <li>RegisterSocket()
 : <a class="el" href="class_az_networking_1_1_udp_reader_thread.html#a6f58b8b2b4d43e214efa73cf4043403a">AzNetworking::UdpReaderThread</a>
 </li>
+<li>RegisterWithTimeoutQueue()
+: <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a37eb2cf0a6940133fd3d346bc2e9a5cf">AzNetworking::UdpNetworkInterface</a>
+</li>
 <li>RemoveItem()
 : <a class="el" href="class_az_networking_1_1_timeout_queue.html#a0d4ae4f240f546734096c8d8ecedc1ed">AzNetworking::TimeoutQueue</a>
+</li>
+<li>RequestDisconnect()
+: <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a937fa3bf901f808ddfe5cbc08f18b6c2">AzNetworking::TcpNetworkInterface</a>
+, <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a61ed57e365e02c5359d33e7a8017120e">AzNetworking::UdpNetworkInterface</a>
 </li>
 <li>ReserveBlockForWrite()
 : <a class="el" href="class_az_networking_1_1_tcp_ring_buffer.html#a3e0003536287c860cc3d90162a81e408">AzNetworking::TcpRingBuffer&lt; SIZE &gt;</a>
 , <a class="el" href="class_az_networking_1_1_tcp_ring_buffer_impl.html#ac583540894d737b992cf058545541eba">AzNetworking::TcpRingBufferImpl</a>
 </li>
 <li>Reset()
-: <a class="el" href="class_az_networking_1_1_timeout_queue.html#a9e3d07f860af8785a9454d3c6747333c">AzNetworking::TimeoutQueue</a>
-, <a class="el" href="class_az_networking_1_1_sequence_generator.html#a21706aa58b8028007aa1cdf6599d9d01">AzNetworking::SequenceGenerator</a>
+: <a class="el" href="class_az_networking_1_1_sequence_generator.html#a21706aa58b8028007aa1cdf6599d9d01">AzNetworking::SequenceGenerator</a>
+, <a class="el" href="class_az_networking_1_1_udp_fragment_queue.html#ae9913dc07e7a7970d45a2e57f87f4f5f">AzNetworking::UdpFragmentQueue</a>
+, <a class="el" href="class_az_networking_1_1_timeout_queue.html#a9e3d07f860af8785a9454d3c6747333c">AzNetworking::TimeoutQueue</a>
+, <a class="el" href="class_az_networking_1_1_udp_packet_id_window.html#aa20f7b72f102c383fea62c6bcc71917d">AzNetworking::UdpPacketIdWindow</a>
+, <a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html#ac473456305b4d439dde17228adf25f42">AzNetworking::RingbufferBitset&lt; SIZE &gt;</a>
 , <a class="el" href="class_az_networking_1_1_udp_packet_tracker.html#a8b5244b90c18030952543ea9991b2bca">AzNetworking::UdpPacketTracker</a>
 , <a class="el" href="struct_az_networking_1_1_connection_metrics.html#a78eac3952da44479423032d617b54e03">AzNetworking::ConnectionMetrics</a>
-, <a class="el" href="class_az_networking_1_1_udp_packet_id_window.html#aa20f7b72f102c383fea62c6bcc71917d">AzNetworking::UdpPacketIdWindow</a>
-, <a class="el" href="class_az_networking_1_1_udp_fragment_queue.html#ae9913dc07e7a7970d45a2e57f87f4f5f">AzNetworking::UdpFragmentQueue</a>
-, <a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html#ac473456305b4d439dde17228adf25f42">AzNetworking::RingbufferBitset&lt; SIZE &gt;</a>
 </li>
 <li>Resize()
 : <a class="el" href="class_az_networking_1_1_byte_buffer.html#aca2aa4dfabcde3b24a84ab77dca5b903">AzNetworking::ByteBuffer&lt; SIZE &gt;</a>
@@ -116,14 +124,14 @@
 : <a class="el" href="class_az_networking_1_1_timeout_queue.html#aadf106fcd7db7d6356dadea7e67cb532">AzNetworking::TimeoutQueue</a>
 </li>
 <li>RetrieveNetworkInterface()
-: <a class="el" href="class_az_networking_1_1_networking_system_component.html#a84132161368a3719b59961669398d92a">AzNetworking::NetworkingSystemComponent</a>
-, <a class="el" href="class_az_networking_1_1_i_networking.html#a62c6ddea1bf5ee6741db8702300fb9aa">AzNetworking::INetworking</a>
+: <a class="el" href="class_az_networking_1_1_i_networking.html#a62c6ddea1bf5ee6741db8702300fb9aa">AzNetworking::INetworking</a>
+, <a class="el" href="class_az_networking_1_1_networking_system_component.html#a84132161368a3719b59961669398d92a">AzNetworking::NetworkingSystemComponent</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

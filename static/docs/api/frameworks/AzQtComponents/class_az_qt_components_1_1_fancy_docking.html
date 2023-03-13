@@ -52,6 +52,11 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_fancy_docking-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::FancyDocking Class Reference</div>  </div>
@@ -64,6 +69,8 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_qt_components_1_1_fancy_docking_1_1_drag_state.html">DragState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_qt_components_1_1_fancy_docking_1_1_tab_container_type.html">TabContainerType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_qt_components_1_1_fancy_docking_1_1_widget_grab.html">WidgetGrab</a></td></tr>
@@ -106,6 +113,249 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDockWidgetBeingDrag
 <tr class="memitem:a3a89ac496cf61951745d2141428cfd86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a89ac496cf61951745d2141428cfd86"></a>
 <a class="el" href="class_az_qt_components_1_1_dock_tab_widget.html">DockTabWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>createTabWidget</b> (QMainWindow *mainWindow, QDockWidget *widgetToReplace, QString name=QString())</td></tr>
 <tr class="separator:a3a89ac496cf61951745d2141428cfd86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a13954773a9c6cb26af07db60a6b5cf54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13954773a9c6cb26af07db60a6b5cf54"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="separator:a13954773a9c6cb26af07db60a6b5cf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aef234c0625deb60c30b462f7cf531a88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>VersionMarker</b> = 5005
+ }</td></tr>
+<tr class="separator:aef234c0625deb60c30b462f7cf531a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff1a470572c75c692fb1efa73cf4043"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SnappedSide</b> { <b>SnapLeft</b> = 0x1, 
+<b>SnapRight</b> = 0x2, 
+<b>SnapTop</b> = 0x4, 
+<b>SnapBottom</b> = 0x8
+ }</td></tr>
+<tr class="separator:a4ff1a470572c75c692fb1efa73cf4043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00d0075db19406d220bede021e513f98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00d0075db19406d220bede021e513f98"></a>
+typedef QMap&lt; QString, QPair<br class="typebreak"/>
+&lt; QStringList, QByteArray &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SerializedMapType</b></td></tr>
+<tr class="separator:a00d0075db19406d220bede021e513f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1049e50d61ed2f9fc875674800623f1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1049e50d61ed2f9fc875674800623f1d"></a>
+typedef QMap&lt; QString, <br class="typebreak"/>
+<a class="el" href="struct_az_qt_components_1_1_fancy_docking_1_1_tab_container_type.html">TabContainerType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SerializedTabType</b></td></tr>
+<tr class="separator:a1049e50d61ed2f9fc875674800623f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a2a198c143af28d3ecf74f5a3c9199c2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a198c143af28d3ecf74f5a3c9199c2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onTabIndexPressed</b> (int index)</td></tr>
+<tr class="separator:a2a198c143af28d3ecf74f5a3c9199c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd846e326b1937f2a2b369335bc5fef8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd846e326b1937f2a2b369335bc5fef8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onTabCountChanged</b> (int count)</td></tr>
+<tr class="separator:afd846e326b1937f2a2b369335bc5fef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7916c8d3e7232c3568e7e136ed2e922"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7916c8d3e7232c3568e7e136ed2e922"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onCurrentTabIndexChanged</b> (int index)</td></tr>
+<tr class="separator:ab7916c8d3e7232c3568e7e136ed2e922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23eff654b042340d200320eed603463"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad23eff654b042340d200320eed603463"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onTabWidgetInserted</b> (QWidget *widget)</td></tr>
+<tr class="separator:ad23eff654b042340d200320eed603463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa983696acb938892d9a4fb7c479f874d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa983696acb938892d9a4fb7c479f874d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onUndockTab</b> (int index)</td></tr>
+<tr class="separator:aa983696acb938892d9a4fb7c479f874d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45826b88937ef3b4e56742ce83c6efc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45826b88937ef3b4e56742ce83c6efc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onTabBarDoubleClicked</b> ()</td></tr>
+<tr class="separator:a45826b88937ef3b4e56742ce83c6efc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59913d714372c1cb3a4a5292a346c58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad59913d714372c1cb3a4a5292a346c58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onUndockDockWidget</b> ()</td></tr>
+<tr class="separator:ad59913d714372c1cb3a4a5292a346c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a5281058c83a1f7d11bd32bd6e5eef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5a5281058c83a1f7d11bd32bd6e5eef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateDockingGeometry</b> ()</td></tr>
+<tr class="separator:ac5a5281058c83a1f7d11bd32bd6e5eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c468a08f9c85ed2807e4a273b18eea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90c468a08f9c85ed2807e4a273b18eea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleScreenAdded</b> (QScreen *screen)</td></tr>
+<tr class="separator:a90c468a08f9c85ed2807e4a273b18eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddc4a1834e329feda5ed4c38f48f1d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ddc4a1834e329feda5ed4c38f48f1d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleScreenRemoved</b> (QScreen *screen)</td></tr>
+<tr class="separator:a0ddc4a1834e329feda5ed4c38f48f1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc0b1dad02982eab05dbcf0c9e29970"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cc0b1dad02982eab05dbcf0c9e29970"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onDropZoneHoverFadeInUpdate</b> ()</td></tr>
+<tr class="separator:a0cc0b1dad02982eab05dbcf0c9e29970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa3404294d0376f7db48ca9360244dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fa3404294d0376f7db48ca9360244dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateFloatingPixmap</b> ()</td></tr>
+<tr class="separator:a6fa3404294d0376f7db48ca9360244dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a11c627c4a5ad208d16ba2b1bba5447f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11c627c4a5ad208d16ba2b1bba5447f1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dockMousePressEvent</b> (QDockWidget *dock, QMouseEvent *event)</td></tr>
+<tr class="separator:a11c627c4a5ad208d16ba2b1bba5447f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f39bb5b7b7d707be69cb65ae379ab3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f39bb5b7b7d707be69cb65ae379ab3e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dockMouseMoveEvent</b> (QDockWidget *dock, QMouseEvent *event)</td></tr>
+<tr class="separator:a8f39bb5b7b7d707be69cb65ae379ab3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa668c06a2da00e675cb38b3d7c868ac1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa668c06a2da00e675cb38b3d7c868ac1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dockMouseReleaseEvent</b> (QDockWidget *dock, QMouseEvent *event)</td></tr>
+<tr class="separator:aa668c06a2da00e675cb38b3d7c868ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c2cc744721000df1e643c35a4c16b3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c2cc744721000df1e643c35a4c16b3f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canDragDockWidget</b> (QDockWidget *dock, QPoint mousePos)</td></tr>
+<tr class="separator:a0c2cc744721000df1e643c35a4c16b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e7842ec90d0c6c915419ede7dc5752"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20e7842ec90d0c6c915419ede7dc5752"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startDraggingWidget</b> (QDockWidget *dock, const QPoint &amp;pressPos, int tabIndex=-1)</td></tr>
+<tr class="separator:a20e7842ec90d0c6c915419ede7dc5752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2474a09e0ab3bbcddb7c3907e22c7d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2474a09e0ab3bbcddb7c3907e22c7d1"></a>
+Qt::DockWidgetArea&#160;</td><td class="memItemRight" valign="bottom"><b>dockAreaForPos</b> (const QPoint &amp;globalPos)</td></tr>
+<tr class="separator:aa2474a09e0ab3bbcddb7c3907e22c7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78eb4f7b614856ada4111c5cf0bfd88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab78eb4f7b614856ada4111c5cf0bfd88"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>dropTargetForWidget</b> (QWidget *widget, const QPoint &amp;globalPos, QWidget *exclude) const </td></tr>
+<tr class="separator:ab78eb4f7b614856ada4111c5cf0bfd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada796fae4eed10a592cd24b8066321e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada796fae4eed10a592cd24b8066321e9"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>dropWidgetUnderMouse</b> (const QPoint &amp;globalPos, QWidget *exclude) const </td></tr>
+<tr class="separator:ada796fae4eed10a592cd24b8066321e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09cb657c04bcc9f943feaca5db6cac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09cb657c04bcc9f943feaca5db6cac8"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>getAbsoluteDropZone</b> (QWidget *dock, Qt::DockWidgetArea &amp;area, const QPoint &amp;globalPos=QPoint())</td></tr>
+<tr class="separator:ac09cb657c04bcc9f943feaca5db6cac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab85969ea178cfd231f1a6047dbe129"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ab85969ea178cfd231f1a6047dbe129"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setupDropZones</b> (QWidget *dock, const QPoint &amp;globalPos=QPoint())</td></tr>
+<tr class="separator:a4ab85969ea178cfd231f1a6047dbe129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef6c002d64f62571ec9021d45ad28c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ef6c002d64f62571ec9021d45ad28c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>raiseDockWidgets</b> ()</td></tr>
+<tr class="separator:a9ef6c002d64f62571ec9021d45ad28c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c53ac6cae7f1c3b1e07b75630e6e5c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c53ac6cae7f1c3b1e07b75630e6e5c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dropDockWidget</b> (QDockWidget *dock, QWidget *onto, Qt::DockWidgetArea area)</td></tr>
+<tr class="separator:a7c53ac6cae7f1c3b1e07b75630e6e5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8b62c4b6a70a3b1e4a185b31d3560d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a8b62c4b6a70a3b1e4a185b31d3560d"></a>
+QMainWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>createFloatingMainWindow</b> (const QString &amp;name, const QRect &amp;geometry, bool skipTitleBarDrawing=false)</td></tr>
+<tr class="separator:a5a8b62c4b6a70a3b1e4a185b31d3560d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804335c8f6a3b9c26db95500546337b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a804335c8f6a3b9c26db95500546337b8"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>getUniqueDockWidgetName</b> (const QString &amp;prefix)</td></tr>
+<tr class="separator:a804335c8f6a3b9c26db95500546337b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa79e32140c74130be97afda6ffcaf92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa79e32140c74130be97afda6ffcaf92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyIfUseless</b> (QMainWindow *mw)</td></tr>
+<tr class="separator:aaa79e32140c74130be97afda6ffcaf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9990cdc81506526b84344ee649922d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a9990cdc81506526b84344ee649922d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearDraggingState</b> ()</td></tr>
+<tr class="separator:a9a9990cdc81506526b84344ee649922d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580b743d0ee0be2e0b09b5cc51b29b52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a580b743d0ee0be2e0b09b5cc51b29b52"></a>
+QDockWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>getTabWidgetContainer</b> (QObject *obj)</td></tr>
+<tr class="separator:a580b743d0ee0be2e0b09b5cc51b29b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3320392235f2ba84d418a72918fd6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d3320392235f2ba84d418a72918fd6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>undockDockWidget</b> (QDockWidget *dockWidget, QDockWidget *placeholder=nullptr)</td></tr>
+<tr class="separator:a0d3320392235f2ba84d418a72918fd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56483ca9a181ac952668df3212133873"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56483ca9a181ac952668df3212133873"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDragOrDockOnFloatingMainWindow</b> (QMainWindow *mainWindow)</td></tr>
+<tr class="separator:a56483ca9a181ac952668df3212133873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac289b63390f37c82bb4bca658dde1318"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac289b63390f37c82bb4bca658dde1318"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>NumVisibleDockWidgets</b> (QMainWindow *mainWindow)</td></tr>
+<tr class="separator:ac289b63390f37c82bb4bca658dde1318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903cdf252d9b734970b02245ffddff2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a903cdf252d9b734970b02245ffddff2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueUpdateFloatingWindowTitle</b> (QMainWindow *mainWindow)</td></tr>
+<tr class="separator:a903cdf252d9b734970b02245ffddff2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5c18109b0708bae8baeed5e99a4e19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e5c18109b0708bae8baeed5e99a4e19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTitleBarButtons</b> (<a class="el" href="class_az_qt_components_1_1_dock_tab_widget.html">AzQtComponents::DockTabWidget</a> *tabWidget, <a class="el" href="class_az_qt_components_1_1_title_bar.html">AzQtComponents::TitleBar</a> *titleBar)</td></tr>
+<tr class="separator:a0e5c18109b0708bae8baeed5e99a4e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead3b9354b3d1a9a58d2718f9dc151c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aead3b9354b3d1a9a58d2718f9dc151c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTitleBarButtons</b> (<a class="el" href="class_az_qt_components_1_1_dock_tab_widget.html">AzQtComponents::DockTabWidget</a> *tabWidget, <a class="el" href="class_az_qt_components_1_1_title_bar.html">AzQtComponents::TitleBar</a> *titleBar=nullptr)</td></tr>
+<tr class="separator:aead3b9354b3d1a9a58d2718f9dc151c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00f983c8a3851d9d31354b4359a79d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab00f983c8a3851d9d31354b4359a79d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTitleBars</b> (QMainWindow *mainWindow)</td></tr>
+<tr class="separator:ab00f983c8a3851d9d31354b4359a79d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e5b1f7414dc7b006f6964292888644"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7e5b1f7414dc7b006f6964292888644"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFloatingDockWidget</b> (QDockWidget *dockWidget)</td></tr>
+<tr class="separator:ac7e5b1f7414dc7b006f6964292888644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9ad4078f14ab732b517e9c5d29a556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe9ad4078f14ab732b517e9c5d29a556"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartDropZone</b> (QWidget *dropZoneContainer, const QPoint &amp;globalPos)</td></tr>
+<tr class="separator:abe9ad4078f14ab732b517e9c5d29a556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70f8fd8d3067730f363f79949352714"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae70f8fd8d3067730f363f79949352714"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StopDropZone</b> ()</td></tr>
+<tr class="separator:ae70f8fd8d3067730f363f79949352714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0023a1e89fd974512cb0e56b1bd0006"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0023a1e89fd974512cb0e56b1bd0006"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ForceTabbedDocksEnabled</b> () const </td></tr>
+<tr class="separator:ad0023a1e89fd974512cb0e56b1bd0006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeef2cce1a7202d7dcf64df20f4d8976"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeef2cce1a7202d7dcf64df20f4d8976"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RepaintFloatingIndicators</b> ()</td></tr>
+<tr class="separator:adeef2cce1a7202d7dcf64df20f4d8976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66adaafa72ee465eab428e7d2332a7eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66adaafa72ee465eab428e7d2332a7eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFloatingPixmapClipping</b> (QWidget *dropOnto, Qt::DockWidgetArea area)</td></tr>
+<tr class="separator:a66adaafa72ee465eab428e7d2332a7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1a9d124d906c5d06d16f96caf34a6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b1a9d124d906c5d06d16f96caf34a6e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustForSnapping</b> (QRect &amp;rect, QScreen *cursorScreen)</td></tr>
+<tr class="separator:a7b1a9d124d906c5d06d16f96caf34a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025ea4daaf7506a33469201480ef5913"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a025ea4daaf7506a33469201480ef5913"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustForSnappingToScreenEdges</b> (QRect &amp;rect, QScreen *cursorScreen)</td></tr>
+<tr class="separator:a025ea4daaf7506a33469201480ef5913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7bd200872ce9452a8b0cf9cebb96aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b7bd200872ce9452a8b0cf9cebb96aa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustForSnappingToFloatingWindow</b> (QRect &amp;rect, const QRect &amp;floatingRect)</td></tr>
+<tr class="separator:a7b7bd200872ce9452a8b0cf9cebb96aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f84cdd285637d0e102fafb3c825944"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99f84cdd285637d0e102fafb3c825944"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AnyDockWidgetsExist</b> (QStringList names)</td></tr>
+<tr class="separator:a99f84cdd285637d0e102fafb3c825944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfe74396eb3643ba2525ed17c54c0ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bfe74396eb3643ba2525ed17c54c0ef"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>titleBarOffset</b> (const QDockWidget *dockWidget) const </td></tr>
+<tr class="separator:a6bfe74396eb3643ba2525ed17c54c0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f53ecec0a4bf879334c33c0da1aa36e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f53ecec0a4bf879334c33c0da1aa36e"></a>
+QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>multiscreenMapFromGlobal</b> (const QPoint &amp;point) const </td></tr>
+<tr class="separator:a4f53ecec0a4bf879334c33c0da1aa36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05580f289878a5309fc2e80d30aa5a81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05580f289878a5309fc2e80d30aa5a81"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WidgetContainsPoint</b> (QWidget *widget, const QPoint &amp;pos) const </td></tr>
+<tr class="separator:a05580f289878a5309fc2e80d30aa5a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa9a23c0bf8ff1af5ac5c481e17d574c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9a23c0bf8ff1af5ac5c481e17d574c6"></a>
+QMainWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainWindow</b></td></tr>
+<tr class="separator:aa9a23c0bf8ff1af5ac5c481e17d574c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86eeefa70528ee9cafcbbddfd741803f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86eeefa70528ee9cafcbbddfd741803f"></a>
+AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+QList&lt; QScreen * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_desktopScreens</b></td></tr>
+<tr class="separator:a86eeefa70528ee9cafcbbddfd741803f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ebfb96d0da934f846537dec88212743"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ebfb96d0da934f846537dec88212743"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_emptyWidget</b></td></tr>
+<tr class="separator:a6ebfb96d0da934f846537dec88212743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa902d97b9ac4fd3d9707afa4ccfb88cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa902d97b9ac4fd3d9707afa4ccfb88cf"></a>
+<a class="el" href="class_az_qt_components_1_1_fancy_docking_drop_zone_state.html">FancyDockingDropZoneState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dropZoneState</b></td></tr>
+<tr class="separator:aa902d97b9ac4fd3d9707afa4ccfb88cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae7b3d17e1e2fe2b37781242c116fdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeae7b3d17e1e2fe2b37781242c116fdf"></a>
+AZ_POP_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+QTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_dropZoneHoverFadeInTimer</b></td></tr>
+<tr class="separator:aeae7b3d17e1e2fe2b37781242c116fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc0908d8dc75914afa95ad98278ee1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dc0908d8dc75914afa95ad98278ee1d"></a>
+struct <br class="typebreak"/>
+<a class="el" href="struct_az_qt_components_1_1_fancy_docking_1_1_drag_state.html">AzQtComponents::FancyDocking::DragState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_state</b></td></tr>
+<tr class="separator:a6dc0908d8dc75914afa95ad98278ee1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada452024e8161b37816cc5c52e8e89f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada452024e8161b37816cc5c52e8e89f1"></a>
+AZ_POP_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+QMap&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_placeholders</b></td></tr>
+<tr class="separator:ada452024e8161b37816cc5c52e8e89f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6058e914f4d72deacf8a48c2000b1853"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6058e914f4d72deacf8a48c2000b1853"></a>
+QMap&lt; QString, QPair<br class="typebreak"/>
+&lt; QByteArray, QRect &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_restoreFloatings</b></td></tr>
+<tr class="separator:a6058e914f4d72deacf8a48c2000b1853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725d4d83db1938f732b4b7a7dde42f72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a725d4d83db1938f732b4b7a7dde42f72"></a>
+QMap&lt; QString, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastTabContainerForDockWidget</b></td></tr>
+<tr class="separator:a725d4d83db1938f732b4b7a7dde42f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1e89a8ffeb8d453e80e1424238b6a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b1e89a8ffeb8d453e80e1424238b6a5"></a>
+QMap&lt; QString, <a class="el" href="struct_az_qt_components_1_1_fancy_docking_1_1_widget_grab.html">WidgetGrab</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastFloatingScreenGrab</b></td></tr>
+<tr class="separator:a3b1e89a8ffeb8d453e80e1424238b6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed0a4ea2d9dbed2a3602801c89305c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ed0a4ea2d9dbed2a3602801c89305c0"></a>
+QScopedPointer<br class="typebreak"/>
+&lt; <a class="el" href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html">FancyDockingGhostWidget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ghostWidget</b></td></tr>
+<tr class="separator:a3ed0a4ea2d9dbed2a3602801c89305c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1edb144481e9f875987eb2ba3124fc92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1edb144481e9f875987eb2ba3124fc92"></a>
+QMap&lt; QScreen <br class="typebreak"/>
+*, <a class="el" href="class_az_qt_components_1_1_fancy_docking_drop_zone_widget.html">FancyDockingDropZoneWidget</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dropZoneWidgets</b></td></tr>
+<tr class="separator:a1edb144481e9f875987eb2ba3124fc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5e526341275d757f27481fd118ad35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b5e526341275d757f27481fd118ad35"></a>
+QList<br class="typebreak"/>
+&lt; <a class="el" href="class_az_qt_components_1_1_fancy_docking_drop_zone_widget.html">FancyDockingDropZoneWidget</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeDropZoneWidgets</b></td></tr>
+<tr class="separator:a4b5e526341275d757f27481fd118ad35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030fe33b8a6e171217c3c7be08f26cf1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a030fe33b8a6e171217c3c7be08f26cf1"></a>
+QList&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_orderedFloatingDockWidgetNames</b></td></tr>
+<tr class="separator:a030fe33b8a6e171217c3c7be08f26cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4538bde4750db21911d612007e41b79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4538bde4750db21911d612007e41b79"></a>
+AZ_POP_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_floatingWindowIdentifierPrefix</b></td></tr>
+<tr class="separator:ac4538bde4750db21911d612007e41b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3a6204509ad3e00fd5424f0906a328"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed3a6204509ad3e00fd5424f0906a328"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabContainerIdentifierPrefix</b></td></tr>
+<tr class="separator:aed3a6204509ad3e00fd5424f0906a328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f9f0de045d2f3215d134b1baa3f497"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8f9f0de045d2f3215d134b1baa3f497"></a>
+QCursor&#160;</td><td class="memItemRight" valign="bottom"><b>m_dragCursor</b></td></tr>
+<tr class="separator:ac8f9f0de045d2f3215d134b1baa3f497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class implements the Visual Studio docking style for a QMainWindow. To use is, just create an instance of this class and give the QMainWindow as a parent.</p>
@@ -151,7 +401,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDockWidgetBeingDrag
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

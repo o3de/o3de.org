@@ -54,6 +54,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_multiple_dependent_job-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::MultipleDependentJob Class Reference</div>  </div>
@@ -120,6 +122,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementDependentCou
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DecrementDependentCount</b> ()</td></tr>
 <tr class="separator:a8476d5a99988eb0fa182eabacbaf7a90 inherit pub_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aceef6f3c85a1683693921066a6c300a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceef6f3c85a1683693921066a6c300a1"></a>
+typedef <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_job.html">Job</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DependentList</b></td></tr>
+<tr class="separator:aceef6f3c85a1683693921066a6c300a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acd8ab6caf043440a295b3d03e7b7b21d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd8ab6caf043440a295b3d03e7b7b21d"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">DependentList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependents</b></td></tr>
+<tr class="separator:acd8ab6caf043440a295b3d03e7b7b21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_job')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a></td></tr>
@@ -133,6 +147,35 @@ Additional Inherited Members</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:a290c8712cd2ae16d6506b0616695a25c inherit pub_types_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a></td></tr>
+<tr class="memitem:afa201bd36df483c17d618f091ac95998 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa201bd36df483c17d618f091ac95998"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StoreDependent</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *job)</td></tr>
+<tr class="separator:afa201bd36df483c17d618f091ac95998 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1e05fb1cd2b0f9974e36374cff4d55 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa1e05fb1cd2b0f9974e36374cff4d55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDependentChild</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *dependent)</td></tr>
+<tr class="separator:afa1e05fb1cd2b0f9974e36374cff4d55 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90bfa93fcc94bf71ffc82f87a9d9775 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af90bfa93fcc94bf71ffc82f87a9d9775"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementDependentCountAndSetChildFlag</b> ()</td></tr>
+<tr class="separator:af90bfa93fcc94bf71ffc82f87a9d9775 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a38b26c6d4dae66ef188833985fa0e inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3a38b26c6d4dae66ef188833985fa0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDependentCountAndFlags</b> (unsigned int countAndFlags)</td></tr>
+<tr class="separator:ae3a38b26c6d4dae66ef188833985fa0e inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d61cc2c624b3c718c2e305be07c783 inherit pro_methods_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8d61cc2c624b3c718c2e305be07c783"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentCountAndFlags</b> () const </td></tr>
+<tr class="separator:ae8d61cc2c624b3c718c2e305be07c783 inherit pro_methods_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_job"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_job')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a></td></tr>
+<tr class="memitem:aef3ea768ec0276fb23becd81edd123c9 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef3ea768ec0276fb23becd81edd123c9"></a>
+<a class="el" href="class_a_z_1_1_job_context.html">JobContext</a> *volatile&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
+<tr class="separator:aef3ea768ec0276fb23becd81edd123c9 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bccfddce5120d5f45124d0742b09466 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bccfddce5120d5f45124d0742b09466"></a>
+AZStd::atomic&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependentCountAndFlags</b></td></tr>
+<tr class="separator:a1bccfddce5120d5f45124d0742b09466 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e223188312d37c27e0e1dadced4f73 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6e223188312d37c27e0e1dadced4f73"></a>
+AZStd::atomic&lt; <a class="el" href="class_a_z_1_1_job.html">Job</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependent</b></td></tr>
+<tr class="separator:ab6e223188312d37c27e0e1dadced4f73 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad717202a1d9f76d564a8a0d16266d172 inherit pro_attribs_class_a_z_1_1_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad717202a1d9f76d564a8a0d16266d172"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_state</b></td></tr>
+<tr class="separator:ad717202a1d9f76d564a8a0d16266d172 inherit pro_attribs_class_a_z_1_1_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A job which maintains a list of dependent jobs, for the situations where having a single dependent or forking new jobs is not sufficient. Note that these situations should be rare, for example a many-to-many dependency tree. This class may be used stand-alone or derived from, if it is derived from make sure the derived Process function calls <a class="el" href="class_a_z_1_1_multiple_dependent_job.html#ac181c70702240e27320bdd8612206afe">MultipleDependentJob::Process</a> when it finishes. </p>
@@ -184,7 +227,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Make sure to call this at the end of a derived Process function! </p>
 
-<p>Implements <a class="el" href="class_a_z_1_1_job.html">AZ::Job</a>.</p>
+<p>Implements <a class="el" href="class_a_z_1_1_job.html#aa7993868b9399aee00521e4738352357">AZ::Job</a>.</p>
 
 </div>
 </div>
@@ -221,7 +264,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

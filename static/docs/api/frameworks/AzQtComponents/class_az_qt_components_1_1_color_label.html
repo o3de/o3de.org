@@ -53,6 +53,9 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_color_label-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::ColorLabel Class Reference</div>  </div>
@@ -95,6 +98,37 @@ AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>color</b> () con
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_color_label.html#ac4a2f556d3522ff6a951a1034b6c0a6f">setTextInputVisible</a> (bool visible)</td></tr>
 <tr class="memdesc:ac4a2f556d3522ff6a951a1034b6c0a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the visibility of the <a class="el" href="class_az_qt_components_1_1_line_edit.html" title="Class to handle styling and painting of QLineEdit widgets. ">LineEdit</a> showing the hex value for the color. <br/></td></tr>
 <tr class="separator:ac4a2f556d3522ff6a951a1034b6c0a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a1cfb08e9452010394ce0cccd38ce6ef0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cfb08e9452010394ce0cccd38ce6ef0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *object, QEvent *event) override</td></tr>
+<tr class="separator:a1cfb08e9452010394ce0cccd38ce6ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a8c9e43bcbb3b270a8f551c79799b0295"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c9e43bcbb3b270a8f551c79799b0295"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onHexEditColorChanged</b> ()</td></tr>
+<tr class="separator:a8c9e43bcbb3b270a8f551c79799b0295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ed19f070ee161aa14244405ed67682"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5ed19f070ee161aa14244405ed67682"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSwatchColor</b> ()</td></tr>
+<tr class="separator:ab5ed19f070ee161aa14244405ed67682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54ec1de6cd5f8f46e10f3eadfa01f25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab54ec1de6cd5f8f46e10f3eadfa01f25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateHexColor</b> ()</td></tr>
+<tr class="separator:ab54ec1de6cd5f8f46e10f3eadfa01f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a54290a8e2b9fc1a2411fdb95b1b0fb38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54290a8e2b9fc1a2411fdb95b1b0fb38"></a>
+<a class="el" href="class_az_qt_components_1_1_swatch.html">Swatch</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_swatch</b></td></tr>
+<tr class="separator:a54290a8e2b9fc1a2411fdb95b1b0fb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5789c88630cc607a8eda0b6da0feedad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5789c88630cc607a8eda0b6da0feedad"></a>
+<a class="el" href="class_az_qt_components_1_1_color_hex_edit.html">ColorHexEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_hexEdit</b></td></tr>
+<tr class="separator:a5789c88630cc607a8eda0b6da0feedad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15972f88b9278901d780c564f89a959"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa15972f88b9278901d780c564f89a959"></a>
+AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>m_color</b></td></tr>
+<tr class="separator:aa15972f88b9278901d780c564f89a959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A control to select color properties via a ColorPicker dialog. </p>
@@ -104,7 +138,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

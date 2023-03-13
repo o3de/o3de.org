@@ -53,6 +53,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_udp_reader_thread-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::UdpReaderThread Class Reference</div>  </div>
@@ -63,7 +65,11 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_udp_reader_thread_1_1_reader_buffer.html">ReaderBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_udp_reader_thread_1_1_received_packet.html">ReceivedPacket</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_udp_reader_thread_1_1_socket_entry.html">SocketEntry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -115,6 +121,47 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a7df65e053e040c365b47be6c63be9969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7df65e053e040c365b47be6c63be9969"></a>
 static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxUdpReceiveBufferSize</b> = MaxUdpReceivePacketCount * MaxUdpTransmissionUnit</td></tr>
 <tr class="separator:a7df65e053e040c365b47be6c63be9969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a896b259a46c6aa830bfc98f772c5464c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a896b259a46c6aa830bfc98f772c5464c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_reader_thread.html#a896b259a46c6aa830bfc98f772c5464c">SocketExists</a> (<a class="el" href="class_az_networking_1_1_udp_socket.html">UdpSocket</a> *socket) const </td></tr>
+<tr class="memdesc:a896b259a46c6aa830bfc98f772c5464c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to determine if a given socket is monitored by this reader thread instance. <br/></td></tr>
+<tr class="separator:a896b259a46c6aa830bfc98f772c5464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5f3685f13234c013834ac034e5fb85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5f3685f13234c013834ac034e5fb85"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_reader_thread.html#a2d5f3685f13234c013834ac034e5fb85">OnStart</a> () override</td></tr>
+<tr class="memdesc:a2d5f3685f13234c013834ac034e5fb85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked on thread start. <br/></td></tr>
+<tr class="separator:a2d5f3685f13234c013834ac034e5fb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9df2427d81dd9a63354f32f6e213bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a9df2427d81dd9a63354f32f6e213bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_reader_thread.html#a1a9df2427d81dd9a63354f32f6e213bd">OnStop</a> () override</td></tr>
+<tr class="memdesc:a1a9df2427d81dd9a63354f32f6e213bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked on thread stop. <br/></td></tr>
+<tr class="separator:a1a9df2427d81dd9a63354f32f6e213bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10a8e66aa72c3f7d4e209d58a6c132d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_reader_thread.html#ac10a8e66aa72c3f7d4e209d58a6c132d">OnUpdate</a> (AZ::TimeMs updateRateMs) override</td></tr>
+<tr class="separator:ac10a8e66aa72c3f7d4e209d58a6c132d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8b8894e2a2285c3379f5f4b9f84312"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab8b8894e2a2285c3379f5f4b9f84312"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a>)</td></tr>
+<tr class="separator:aab8b8894e2a2285c3379f5f4b9f84312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a26760511d5d6cd90c40c73ec68b04c50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26760511d5d6cd90c40c73ec68b04c50"></a>
+AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="separator:a26760511d5d6cd90c40c73ec68b04c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85079cdc76623e18b896855d2caa3da2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85079cdc76623e18b896855d2caa3da2"></a>
+int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_backIndex</b> = 0</td></tr>
+<tr class="separator:a85079cdc76623e18b896855d2caa3da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330559f8676a653a81b9a74fd9cd75d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a330559f8676a653a81b9a74fd9cd75d9"></a>
+AZStd::array&lt; <a class="el" href="struct_az_networking_1_1_udp_reader_thread_1_1_reader_buffer.html">ReaderBuffer</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readerBuffers</b></td></tr>
+<tr class="separator:a330559f8676a653a81b9a74fd9cd75d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6eab2a93e3cb30c9f219297b4af1cdb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6eab2a93e3cb30c9f219297b4af1cdb"></a>
+AZStd::vector&lt; <a class="el" href="class_az_networking_1_1_udp_socket.html">UdpSocket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingAdds</b></td></tr>
+<tr class="separator:af6eab2a93e3cb30c9f219297b4af1cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428cb664abad206444477169dcf78bff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a428cb664abad206444477169dcf78bff"></a>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_updateTimeMs</b> = AZ::Time::ZeroTimeMs</td></tr>
+<tr class="separator:a428cb664abad206444477169dcf78bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a074776a64e1b07f2359f38065ecc68d7"></a>
@@ -166,6 +213,39 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><div class="memdoc">
 <p>Gets the total elapsed time spent updating the background thread in milliseconds </p>
 <dl class="section return"><dt>Returns</dt><dd>the total elapsed time spent updating the background thread in milliseconds </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac10a8e66aa72c3f7d4e209d58a6c132d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzNetworking::UdpReaderThread::OnUpdate </td>
+          <td>(</td>
+          <td class="paramtype">AZ::TimeMs&#160;</td>
+          <td class="paramname"><em>updateRateMs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Invoked on thread update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">updateRateMs</td><td>The amount of time the thread can spend in OnUpdate in ms </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_timed_thread.html#a3fb5b5868e42aa808fc76ddddb0e4486">AzNetworking::TimedThread</a>.</p>
 
 </div>
 </div>
@@ -222,7 +302,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

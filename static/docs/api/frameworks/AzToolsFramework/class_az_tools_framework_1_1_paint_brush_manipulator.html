@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_paint_brush_manipulator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::PaintBrushManipulator Class Reference</div>  </div>
@@ -212,6 +214,57 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a058a182655be76a26cc40e34f45c2775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts the paintbrush hardness percent. <br/></td></tr>
 <tr class="separator:a058a182655be76a26cc40e34f45c2775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af628a00c193788d5c4af16e97ba12a7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af628a00c193788d5c4af16e97ba12a7e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html#af628a00c193788d5c4af16e97ba12a7e">PaintBrushManipulator</a> (const AZ::Transform &amp;worldFromLocal, const AZ::EntityComponentIdPair &amp;entityComponentIdPair, PaintBrushColorMode colorMode)</td></tr>
+<tr class="memdesc:af628a00c193788d5c4af16e97ba12a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor. <br/></td></tr>
+<tr class="separator:af628a00c193788d5c4af16e97ba12a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9dcd69177e74010b3a27076dbca634f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9dcd69177e74010b3a27076dbca634f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityPickModeStarted</b> () override</td></tr>
+<tr class="separator:ac9dcd69177e74010b3a27076dbca634f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b52ce01f2b91e3bd861871ea836c73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1b52ce01f2b91e3bd861871ea836c73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityPickModeStopped</b> () override</td></tr>
+<tr class="separator:aa1b52ce01f2b91e3bd861871ea836c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af89f880a91d2a2d2adf07920750ae6fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af89f880a91d2a2d2adf07920750ae6fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html#af89f880a91d2a2d2adf07920750ae6fd">InvalidateImpl</a> () override</td></tr>
+<tr class="memdesc:af89f880a91d2a2d2adf07920750ae6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for Invalidate. <br/></td></tr>
+<tr class="separator:af89f880a91d2a2d2adf07920750ae6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07da283be167136d7d6fe2bdef46cb93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07da283be167136d7d6fe2bdef46cb93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html#a07da283be167136d7d6fe2bdef46cb93">SetView</a> (AZStd::shared_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_manipulator_view_projected_circle.html">ManipulatorViewProjectedCircle</a> &gt; innerCircle, AZStd::shared_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_manipulator_view_projected_circle.html">ManipulatorViewProjectedCircle</a> &gt; outerCircle)</td></tr>
+<tr class="memdesc:a07da283be167136d7d6fe2bdef46cb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the manipulator view(s) for the paintbrush. <br/></td></tr>
+<tr class="separator:a07da283be167136d7d6fe2bdef46cb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecbed11bc015bf7e8ecfe130af19852f"><td class="memItemLeft" align="right" valign="top">AZStd::pair&lt; float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html#aecbed11bc015bf7e8ecfe130af19852f">GetBrushRadii</a> (const <a class="el" href="class_az_tools_framework_1_1_global_paint_brush_settings.html">GlobalPaintBrushSettings</a> &amp;settings) const </td></tr>
+<tr class="separator:aecbed11bc015bf7e8ecfe130af19852f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4306a7c13437028c56370ca7c0dbfff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4306a7c13437028c56370ca7c0dbfff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html#ac4306a7c13437028c56370ca7c0dbfff">OnSettingsChanged</a> (const <a class="el" href="class_az_tools_framework_1_1_global_paint_brush_settings.html">GlobalPaintBrushSettings</a> &amp;newSettings) override</td></tr>
+<tr class="memdesc:ac4306a7c13437028c56370ca7c0dbfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">GlobalPaintBrushSettingsNotificationBus overrides... <br/></td></tr>
+<tr class="separator:ac4306a7c13437028c56370ca7c0dbfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a73fb9361b433227177e19e2418ab5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html#a88a73fb9361b433227177e19e2418ab5">MovePaintBrush</a> (int viewportId, const AzFramework::ScreenPoint &amp;screenCoordinates)</td></tr>
+<tr class="separator:a88a73fb9361b433227177e19e2418ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a242253bdf9f2bf7d32c4200ffbbababf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a242253bdf9f2bf7d32c4200ffbbababf"></a>
+AZStd::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_manipulator_view_projected_circle.html">ManipulatorViewProjectedCircle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_innerCircle</b></td></tr>
+<tr class="separator:a242253bdf9f2bf7d32c4200ffbbababf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace868f056579cbcc2e42671d80a15b2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace868f056579cbcc2e42671d80a15b2c"></a>
+AZStd::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_manipulator_view_projected_circle.html">ManipulatorViewProjectedCircle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_outerCircle</b></td></tr>
+<tr class="separator:ace868f056579cbcc2e42671d80a15b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97f66b566af0e0457f9fb2584c3fdb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac97f66b566af0e0457f9fb2584c3fdb2"></a>
+AZ::EntityComponentIdPair&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html#ac97f66b566af0e0457f9fb2584c3fdb2">m_ownerEntityComponentId</a></td></tr>
+<tr class="memdesc:ac97f66b566af0e0457f9fb2584c3fdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The entity/component that owns this paintbrush. <br/></td></tr>
+<tr class="separator:ac97f66b566af0e0457f9fb2584c3fdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcca5336c6a964e6d075fe68ccb425d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcca5336c6a964e6d075fe68ccb425d8"></a>
+AzFramework::PaintBrush&#160;</td><td class="memItemRight" valign="bottom"><b>m_paintBrush</b></td></tr>
+<tr class="separator:afcca5336c6a964e6d075fe68ccb425d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94e4cb44594e9372277364a60ecadb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa94e4cb44594e9372277364a60ecadb8"></a>
+AZStd::optional<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_editor_pick_entity_selection_helper.html">EditorPickEntitySelectionHelper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pickEntitySelectionMode</b></td></tr>
+<tr class="separator:aa94e4cb44594e9372277364a60ecadb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_az_tools_framework_1_1_base_manipulator"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_tools_framework_1_1_base_manipulator')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html">AzToolsFramework::BaseManipulator</a></td></tr>
@@ -225,16 +278,134 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>UniqueEntityComponen
 <tr class="memitem:a12da19035d239d12e1b1518423e320e8 inherit pub_static_attribs_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12da19035d239d12e1b1518423e320e8"></a>
 static const AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>s_defaultMouseOverColor</b></td></tr>
 <tr class="separator:a12da19035d239d12e1b1518423e320e8 inherit pub_static_attribs_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_tools_framework_1_1_base_manipulator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_tools_framework_1_1_base_manipulator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html">AzToolsFramework::BaseManipulator</a></td></tr>
+<tr class="memitem:a730c7fb5886d6dd3e78c200ccc07efc5 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a730c7fb5886d6dd3e78c200ccc07efc5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a730c7fb5886d6dd3e78c200ccc07efc5">BaseManipulator</a> ()=default</td></tr>
+<tr class="memdesc:a730c7fb5886d6dd3e78c200ccc07efc5 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protected constructor. <br/></td></tr>
+<tr class="separator:a730c7fb5886d6dd3e78c200ccc07efc5 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95740e919de13b61d9239755a9ab9037 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95740e919de13b61d9239755a9ab9037"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a95740e919de13b61d9239755a9ab9037">Invalidate</a> ()</td></tr>
+<tr class="memdesc:a95740e919de13b61d9239755a9ab9037 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when unregistering - users of manipulators should not call it directly. <br/></td></tr>
+<tr class="separator:a95740e919de13b61d9239755a9ab9037 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10384e0b6f660de85dc8e3d814ae388a inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a10384e0b6f660de85dc8e3d814ae388a">OnLeftMouseDownImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;, float)</td></tr>
+<tr class="separator:a10384e0b6f660de85dc8e3d814ae388a inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c969ec581e50b4fea8be5edb405c823 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c969ec581e50b4fea8be5edb405c823"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AttachLeftMouseDownImpl</b> ()</td></tr>
+<tr class="separator:a8c969ec581e50b4fea8be5edb405c823 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754509981cf8f356764c5064a63c1efb inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a754509981cf8f356764c5064a63c1efb">OnRightMouseDownImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;, float)</td></tr>
+<tr class="separator:a754509981cf8f356764c5064a63c1efb inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c9825f2070ba30ce0d84b3e56273c7 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87c9825f2070ba30ce0d84b3e56273c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AttachRightMouseDownImpl</b> ()</td></tr>
+<tr class="separator:a87c9825f2070ba30ce0d84b3e56273c7 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abf96209eaa17c84ed6c8450fc8956b inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0abf96209eaa17c84ed6c8450fc8956b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a0abf96209eaa17c84ed6c8450fc8956b">OnLeftMouseUpImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;)</td></tr>
+<tr class="memdesc:a0abf96209eaa17c84ed6c8450fc8956b inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for OnLeftMouseUp. <br/></td></tr>
+<tr class="separator:a0abf96209eaa17c84ed6c8450fc8956b inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6642f98d110bcaf18311afd04fd3c807 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6642f98d110bcaf18311afd04fd3c807"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a6642f98d110bcaf18311afd04fd3c807">OnRightMouseUpImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;)</td></tr>
+<tr class="memdesc:a6642f98d110bcaf18311afd04fd3c807 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for OnRightMouseUp. <br/></td></tr>
+<tr class="separator:a6642f98d110bcaf18311afd04fd3c807 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab437355774314527f874652c9e3e8f21 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab437355774314527f874652c9e3e8f21"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#ab437355774314527f874652c9e3e8f21">OnMouseMoveImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;)</td></tr>
+<tr class="memdesc:ab437355774314527f874652c9e3e8f21 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for OnMouseMove. <br/></td></tr>
+<tr class="separator:ab437355774314527f874652c9e3e8f21 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b745feeaa7720cc609dec299e6d223 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00b745feeaa7720cc609dec299e6d223"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a00b745feeaa7720cc609dec299e6d223">OnMouseOverImpl</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ManipulatorId</a>, const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;)</td></tr>
+<tr class="memdesc:a00b745feeaa7720cc609dec299e6d223 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for OnMouseOver. <br/></td></tr>
+<tr class="separator:a00b745feeaa7720cc609dec299e6d223 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75db6a0ee44ae53420b85e9a9f148da9 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75db6a0ee44ae53420b85e9a9f148da9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a75db6a0ee44ae53420b85e9a9f148da9">OnMouseWheelImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;)</td></tr>
+<tr class="memdesc:a75db6a0ee44ae53420b85e9a9f148da9 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for OnMouseWheel. <br/></td></tr>
+<tr class="separator:a75db6a0ee44ae53420b85e9a9f148da9 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049c0d0040ff0ad91312d27c65c4c987 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a049c0d0040ff0ad91312d27c65c4c987"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a049c0d0040ff0ad91312d27c65c4c987">SetBoundsDirtyImpl</a> ()</td></tr>
+<tr class="memdesc:a049c0d0040ff0ad91312d27c65c4c987 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for SetBoundsDirty. <br/></td></tr>
+<tr class="separator:a049c0d0040ff0ad91312d27c65c4c987 inherit pro_methods_class_az_tools_framework_1_1_base_manipulator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html">PaintBrushManipulator</a> contains the core logic for managing the paintbrush in the Editor. It uses the global paintbrush settings for painting and provides logic for converting mouse events into paintbrush actions. It also draws the paintbrush circles in the viewport and provides the UX for switching paint modes. The <a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html">PaintBrushManipulator</a> relies on a PaintBrush instance to do the actual painting logic and on a component-specific Component Mode to manage the usage of the <a class="el" href="class_az_tools_framework_1_1_paint_brush_manipulator.html">PaintBrushManipulator</a> (and PaintBrush) to apply the painted values to a specific data source and to save the data appropriately. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aecbed11bc015bf7e8ecfe130af19852f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::pair&lt;float, float&gt; AzToolsFramework::PaintBrushManipulator::GetBrushRadii </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_tools_framework_1_1_global_paint_brush_settings.html">GlobalPaintBrushSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate the radius for the inner and out circles for the paintbrush manipulator views based on the given brush settings. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>The paint brush settings to use for calculating the two radii </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The inner radius and the outer radius for the brush manipulator views </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a88a73fb9361b433227177e19e2418ab5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::PaintBrushManipulator::MovePaintBrush </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>viewportId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AzFramework::ScreenPoint &amp;&#160;</td>
+          <td class="paramname"><em>screenCoordinates</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Move the paint brush and perform any appropriate brush actions if in the middle of a brush stroke. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewportId</td><td>The viewport to move the paint brush in. </td></tr>
+    <tr><td class="paramname">screenCoordinates</td><td>The screen coordinates of the current mouse location. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Manipulators/PaintBrushManipulator.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

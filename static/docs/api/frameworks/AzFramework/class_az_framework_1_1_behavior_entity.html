@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_behavior_entity-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::BehaviorEntity Class Reference</div>  </div>
@@ -120,6 +122,21 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a39c27062c01036c47808c7ba705400fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39c27062c01036c47808c7ba705400fe"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a39c27062c01036c47808c7ba705400fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:adaac6668e65941ce6a0abf631544110e"><td class="memItemLeft" align="right" valign="top">AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_behavior_entity.html#adaac6668e65941ce6a0abf631544110e">GetRawEntityPtr</a> ()</td></tr>
+<tr class="separator:adaac6668e65941ce6a0abf631544110e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a994040812ee92b0c339d2e70d4dd09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_behavior_entity.html#a9a994040812ee92b0c339d2e70d4dd09">GetValidEntity</a> (AZ::Entity **outEntity, <a class="el" href="namespace_az_framework.html#a1a3f4ee1f65bca5c5030b67d2ca8cb0c">EntityContextId</a> *outContextId, AZStd::string *outErrorMessage) const </td></tr>
+<tr class="separator:a9a994040812ee92b0c339d2e70d4dd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558dbc1ef433e1e676479f05bfac4f8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_behavior_entity.html#a558dbc1ef433e1e676479f05bfac4f8c">GetValidComponent</a> (<a class="el" href="class_az_framework_1_1_behavior_component_id.html">BehaviorComponentId</a> componentId, AZ::Component **outComponent, AZStd::string *outErrorMessage) const </td></tr>
+<tr class="separator:a558dbc1ef433e1e676479f05bfac4f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1ec9d1de6b956d00b67ea5db72d0e59a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ec9d1de6b956d00b67ea5db72d0e59a"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityId</b></td></tr>
+<tr class="separator:a1ec9d1de6b956d00b67ea5db72d0e59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper around calls to AZ::Entity, for use within the BehaviorContext. It is always safe to call functions on this class even if the entity it represents has been deleted from memory. </p>
@@ -530,6 +547,131 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 
 </div>
 </div>
+<a class="anchor" id="adaac6668e65941ce6a0abf631544110e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::Entity* AzFramework::BehaviorEntity::GetRawEntityPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get a pointer to the entity. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return a pointer to the entity if it exists. Otherwise, nullptr. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a558dbc1ef433e1e676479f05bfac4f8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::BehaviorEntity::GetValidComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_behavior_component_id.html">BehaviorComponentId</a>&#160;</td>
+          <td class="paramname"><em>componentId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::Component **&#160;</td>
+          <td class="paramname"><em>outComponent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::string *&#160;</td>
+          <td class="paramname"><em>outErrorMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Attempt to retrieve a valid component. If anything is invalid, an error message describes the issue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">componentId</td><td>component ID to retrieve </td></tr>
+    <tr><td class="paramname">outComponent</td><td>(Optional On success, the valid component pointer. </td></tr>
+    <tr><td class="paramname">outErrorMessage</td><td>(Optional) On failure, an error message describing what went wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful and component was valid. Otherwise, false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a994040812ee92b0c339d2e70d4dd09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::BehaviorEntity::GetValidEntity </td>
+          <td>(</td>
+          <td class="paramtype">AZ::Entity **&#160;</td>
+          <td class="paramname"><em>outEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_az_framework.html#a1a3f4ee1f65bca5c5030b67d2ca8cb0c">EntityContextId</a> *&#160;</td>
+          <td class="paramname"><em>outContextId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::string *&#160;</td>
+          <td class="paramname"><em>outErrorMessage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Attempts to retrieve valid entity values. If anything is invalid, an error message describes the issue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">outEntity</td><td>(Optional) On success, the valid entity pointer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outEntityContextId</td><td>(Optional) On success, the valid entity context ID. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outErrorMessage</td><td>(Optional) On failure, an error message describing what went wrong. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful and all values are valid. Otherwise, false. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ab8bc896f10ec58086058473f10a338a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -631,7 +773,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

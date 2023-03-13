@@ -57,6 +57,8 @@
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_document_property_editor_settings-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::DocumentPropertyEditorSettings Class Reference</div>  </div>
@@ -132,6 +134,43 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_document_property_editor_settings.html#ad531101ca3fa74dddc3add1b72a1281d">RootSettingsRegistryPath</a> = &quot;/O3DE/<a class="el" href="class_az_tools_framework_1_1_document_property_editor.html">DocumentPropertyEditor</a>&quot;</td></tr>
 <tr class="memdesc:ad531101ca3fa74dddc3add1b72a1281d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Root SettingsRegistry path where DPE settings are stored. <br/></td></tr>
 <tr class="separator:ad531101ca3fa74dddc3add1b72a1281d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2a3d197cd3bb0d104ed6e0809e8d71d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a3d197cd3bb0d104ed6e0809e8d71d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveExpanderStates</b> ()</td></tr>
+<tr class="separator:a2a3d197cd3bb0d104ed6e0809e8d71d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fba6cb534217a28e981dae9025c824"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30fba6cb534217a28e981dae9025c824"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadExpanderStates</b> ()</td></tr>
+<tr class="separator:a30fba6cb534217a28e981dae9025c824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e639aef18841b37188931d028f6df5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e639aef18841b37188931d028f6df5b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAndCleanExpanderStates</b> ()</td></tr>
+<tr class="separator:a3e639aef18841b37188931d028f6df5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3dd1bb537817338d4d443542f3f65cac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dd1bb537817338d4d443542f3f65cac"></a>
+CleanExpanderStateCallback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_document_property_editor_settings.html#a3dd1bb537817338d4d443542f3f65cac">m_cleanExpanderStateCallback</a></td></tr>
+<tr class="memdesc:a3dd1bb537817338d4d443542f3f65cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional callback to clean locally stored state before saving. <br/></td></tr>
+<tr class="separator:a3dd1bb537817338d4d443542f3f65cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf903a5b546dfa267917fe32ea14c229"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf903a5b546dfa267917fe32ea14c229"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_wereSettingsLoaded</b> = false</td></tr>
+<tr class="separator:abf903a5b546dfa267917fe32ea14c229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a9c66dda8e8bea9633b01b23dc349b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a9c66dda8e8bea9633b01b23dc349b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_shouldSettingsPersist</b> = false</td></tr>
+<tr class="separator:ad8a9c66dda8e8bea9633b01b23dc349b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9556fc69a60add14d5894b7dbca864"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d9556fc69a60add14d5894b7dbca864"></a>
+<a class="el" href="class_az_tools_framework_1_1_settings_registrar.html">SettingsRegistrar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsRegistrar</b></td></tr>
+<tr class="separator:a8d9556fc69a60add14d5894b7dbca864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a0fe6e26df8a439abde7d2a76e66b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28a0fe6e26df8a439abde7d2a76e66b6"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsFilepath</b></td></tr>
+<tr class="separator:a28a0fe6e26df8a439abde7d2a76e66b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c41f793e963247ce8cc306fd734a9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13c41f793e963247ce8cc306fd734a9d"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_fullSettingsRegistryPath</b></td></tr>
+<tr class="separator:a13c41f793e963247ce8cc306fd734a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e1b9a7566fde53fc5fdf57a4471204"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49e1b9a7566fde53fc5fdf57a4471204"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsRegistryBasePath</b></td></tr>
+<tr class="separator:a49e1b9a7566fde53fc5fdf57a4471204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This serializable class stores and loads the <a class="el" href="class_az_tools_framework_1_1_document_property_editor.html">DocumentPropertyEditor</a> settings such as tree node expansion state. </p>
@@ -141,7 +180,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

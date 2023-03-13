@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1_parser-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::Parser&lt; ForwardIterator, Element, RegExTraits &gt; Class Template Reference</div>  </div>
@@ -79,6 +81,136 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2d66c23f3f656541baecd5d32ea4d1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2d66c23f3f656541baecd5d32ea4d1a"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>MarkCount</b> () const </td></tr>
 <tr class="separator:ad2d66c23f3f656541baecd5d32ea4d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab8965cc69a566205fe2a176985467733"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8965cc69a566205fe2a176985467733"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b> (regex_constants::error_type)</td></tr>
+<tr class="separator:ab8965cc69a566205fe2a176985467733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040ba0a83429466671582498c0c343f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a040ba0a83429466671582498c0c343f4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEsc</b> () const </td></tr>
+<tr class="separator:a040ba0a83429466671582498c0c343f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a73a33c80518041e98cde73bd64871"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24a73a33c80518041e98cde73bd64871"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Trans</b> ()</td></tr>
+<tr class="separator:a24a73a33c80518041e98cde73bd64871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf3b817e8246f622bd250473fc0763e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bf3b817e8246f622bd250473fc0763e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Next</b> ()</td></tr>
+<tr class="separator:a4bf3b817e8246f622bd250473fc0763e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f65aaaff351bba45b543a3b1c7e656"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12f65aaaff351bba45b543a3b1c7e656"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Expect</b> (MetaType, regex_constants::error_type)</td></tr>
+<tr class="separator:a12f65aaaff351bba45b543a3b1c7e656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46508870a1e8e761643ef520da4eaff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac46508870a1e8e761643ef520da4eaff"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>DoDigits</b> (int base, int count)</td></tr>
+<tr class="separator:ac46508870a1e8e761643ef520da4eaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ef47e54a8d0efc604403f6f1f39257"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73ef47e54a8d0efc604403f6f1f39257"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>DecimalDigits</b> ()</td></tr>
+<tr class="separator:a73ef47e54a8d0efc604403f6f1f39257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eee676451c0bca1f7aaaeb778556c20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eee676451c0bca1f7aaaeb778556c20"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HexDigits</b> (int)</td></tr>
+<tr class="separator:a4eee676451c0bca1f7aaaeb778556c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e3e78104c32b0cad3b74abb4495419"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0e3e78104c32b0cad3b74abb4495419"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_OctalDigits</b> ()</td></tr>
+<tr class="separator:aa0e3e78104c32b0cad3b74abb4495419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd04f72916e91e7d1c26d1881c55d8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bd04f72916e91e7d1c26d1881c55d8e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_Do_ex_class</b> (MetaType)</td></tr>
+<tr class="separator:a8bd04f72916e91e7d1c26d1881c55d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcb28482c3d2ae1cf7b4d3283a46557"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fcb28482c3d2ae1cf7b4d3283a46557"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CharacterClassEscape</b> (bool)</td></tr>
+<tr class="separator:a7fcb28482c3d2ae1cf7b4d3283a46557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bac7bbadf264ec5072a6fd13e4fb1e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bac7bbadf264ec5072a6fd13e4fb1e9"></a>
+ParserClass&#160;</td><td class="memItemRight" valign="bottom"><b>_ClassEscape</b> (bool)</td></tr>
+<tr class="separator:a9bac7bbadf264ec5072a6fd13e4fb1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167852eb36bdac0da3d145d89749bb63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a167852eb36bdac0da3d145d89749bb63"></a>
+ParserClass&#160;</td><td class="memItemRight" valign="bottom"><b>_ClassAtom</b> ()</td></tr>
+<tr class="separator:a167852eb36bdac0da3d145d89749bb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee47fb7beaee26707a5ea19aabde79ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee47fb7beaee26707a5ea19aabde79ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_ClassRanges</b> ()</td></tr>
+<tr class="separator:aee47fb7beaee26707a5ea19aabde79ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9dafba5e047c841604fd54f0b252a0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9dafba5e047c841604fd54f0b252a0f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_CharacterClass</b> ()</td></tr>
+<tr class="separator:af9dafba5e047c841604fd54f0b252a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcfb3d6723507d60788911ec75e51e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affcfb3d6723507d60788911ec75e51e2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_IdentityEscape</b> ()</td></tr>
+<tr class="separator:affcfb3d6723507d60788911ec75e51e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c47f3cee836571c940c47d0d6202ed1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c47f3cee836571c940c47d0d6202ed1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_Do_ffn</b> (Element)</td></tr>
+<tr class="separator:a6c47f3cee836571c940c47d0d6202ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e47114595bdb3d88d22f14ad99af35c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e47114595bdb3d88d22f14ad99af35c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_Do_ffnx</b> (Element)</td></tr>
+<tr class="separator:a6e47114595bdb3d88d22f14ad99af35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a105dde8d2c4af563bff4d500393a3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a105dde8d2c4af563bff4d500393a3e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_CharacterEscape</b> ()</td></tr>
+<tr class="separator:a0a105dde8d2c4af563bff4d500393a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d18e6aa76486938f9ffd0e3ef7bdd54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d18e6aa76486938f9ffd0e3ef7bdd54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_AtomEscape</b> ()</td></tr>
+<tr class="separator:a0d18e6aa76486938f9ffd0e3ef7bdd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e27ddaacadf0372719ec37173dc98f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73e27ddaacadf0372719ec37173dc98f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_Do_capture_group</b> ()</td></tr>
+<tr class="separator:a73e27ddaacadf0372719ec37173dc98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7d5b1dcfa312becc7f8b687bcc81c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb7d5b1dcfa312becc7f8b687bcc81c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_Do_noncapture_group</b> ()</td></tr>
+<tr class="separator:aeb7d5b1dcfa312becc7f8b687bcc81c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a62ba32be7fab1e39757f4e32ebb24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72a62ba32be7fab1e39757f4e32ebb24"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_Do_assert_group</b> (bool)</td></tr>
+<tr class="separator:a72a62ba32be7fab1e39757f4e32ebb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ecef05b88cd05a3e93765fab2cf1173"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ecef05b88cd05a3e93765fab2cf1173"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_Wrapped_disjunction</b> ()</td></tr>
+<tr class="separator:a7ecef05b88cd05a3e93765fab2cf1173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70aaccd70221768f1782f99d68a032f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac70aaccd70221768f1782f99d68a032f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_Quantifier</b> ()</td></tr>
+<tr class="separator:ac70aaccd70221768f1782f99d68a032f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632d2362b6042fe6b555be042b87d1ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a632d2362b6042fe6b555be042b87d1ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_Alternative</b> ()</td></tr>
+<tr class="separator:a632d2362b6042fe6b555be042b87d1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730b7adab03e6fbe5e8da4cb4918bb8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a730b7adab03e6fbe5e8da4cb4918bb8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_Disjunction</b> ()</td></tr>
+<tr class="separator:a730b7adab03e6fbe5e8da4cb4918bb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0db9bc1fee10d7473c30e6cd0d962f39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0db9bc1fee10d7473c30e6cd0d962f39"></a>
+ForwardIterator&#160;</td><td class="memItemRight" valign="bottom"><b>m_pat</b></td></tr>
+<tr class="separator:a0db9bc1fee10d7473c30e6cd0d962f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7202579abf85115606b0f50303c45298"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7202579abf85115606b0f50303c45298"></a>
+ForwardIterator&#160;</td><td class="memItemRight" valign="bottom"><b>m_begin</b></td></tr>
+<tr class="separator:a7202579abf85115606b0f50303c45298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae16644b7703e6900c199ee07cebd8671"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae16644b7703e6900c199ee07cebd8671"></a>
+ForwardIterator&#160;</td><td class="memItemRight" valign="bottom"><b>m_end</b></td></tr>
+<tr class="separator:ae16644b7703e6900c199ee07cebd8671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2427e7dbe8322a7425267bb04d07dfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2427e7dbe8322a7425267bb04d07dfe"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_groupIndex</b></td></tr>
+<tr class="separator:aa2427e7dbe8322a7425267bb04d07dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbacdbca7d25f5b80d30228484785a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dbacdbca7d25f5b80d30228484785a4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_disjointIndex</b></td></tr>
+<tr class="separator:a7dbacdbca7d25f5b80d30228484785a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a16269832ecf0e156a0c652f93afeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87a16269832ecf0e156a0c652f93afeb"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">vector</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_finishedGroups</b></td></tr>
+<tr class="separator:a87a16269832ecf0e156a0c652f93afeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2fab254447c4eec6ec7c74b8f63ff6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b2fab254447c4eec6ec7c74b8f63ff6"></a>
+<a class="el" href="class_a_z_std_1_1_builder.html">Builder</a>&lt; ForwardIterator, <br class="typebreak"/>
+Element, RegExTraits &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_builder</b></td></tr>
+<tr class="separator:a7b2fab254447c4eec6ec7c74b8f63ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88bdd63fe1293ebf48b35b2fee9d011"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae88bdd63fe1293ebf48b35b2fee9d011"></a>
+const RegExTraits &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_traits</b></td></tr>
+<tr class="separator:ae88bdd63fe1293ebf48b35b2fee9d011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dbe698606711fec941ae8d12002a2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58dbe698606711fec941ae8d12002a2c"></a>
+regex_constants::syntax_option_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_flags</b></td></tr>
+<tr class="separator:a58dbe698606711fec941ae8d12002a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d92660161bba0c36c06cc34d7f2b3d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d92660161bba0c36c06cc34d7f2b3d7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b></td></tr>
+<tr class="separator:a0d92660161bba0c36c06cc34d7f2b3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7d560067ad0ecf6b487139a36cc44c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb7d560067ad0ecf6b487139a36cc44c"></a>
+Element&#160;</td><td class="memItemRight" valign="bottom"><b>m_char</b></td></tr>
+<tr class="separator:acb7d560067ad0ecf6b487139a36cc44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564bc1f760d5b19e84ae625f5be1cd39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a564bc1f760d5b19e84ae625f5be1cd39"></a>
+MetaType&#160;</td><td class="memItemRight" valign="bottom"><b>m_metaChar</b></td></tr>
+<tr class="separator:a564bc1f760d5b19e84ae625f5be1cd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07553214bfe40c59bbcbb31373ffb83e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07553214bfe40c59bbcbb31373ffb83e"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_lflags</b></td></tr>
+<tr class="separator:a07553214bfe40c59bbcbb31373ffb83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ea16628f1d6ddb626794e95908dc1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72ea16628f1d6ddb626794e95908dc1b"></a>
+Internal::ErrorSink *&#160;</td><td class="memItemRight" valign="bottom"><b>m_errors</b></td></tr>
+<tr class="separator:a72ea16628f1d6ddb626794e95908dc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/string/regex.h</li>
@@ -86,7 +218,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>MarkCount</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -57,6 +57,7 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_z_1_1_serialize_1_1_i_data_container-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Serialize::IDataContainer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -182,6 +183,13 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class=
 static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container.html#ab2658cb113b3d555ca476011d0307053">GetDefaultElementNameCrc</a> ()</td></tr>
 <tr class="memdesc:ab2658cb113b3d555ca476011d0307053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return default element generic name crc (used by most containers). <br/></td></tr>
 <tr class="separator:ab2658cb113b3d555ca476011d0307053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3744c191c5eeba3940a0f7bdad0aa074"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3744c191c5eeba3940a0f7bdad0aa074"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_1_1_i_data_container.html#a3744c191c5eeba3940a0f7bdad0aa074">DeletePointerData</a> (<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *context, const <a class="el" href="struct_a_z_1_1_serialize_1_1_class_element.html">ClassElement</a> *classElement, const void *element)</td></tr>
+<tr class="memdesc:a3744c191c5eeba3940a0f7bdad0aa074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free element data (when the class elements are pointers). <br/></td></tr>
+<tr class="separator:a3744c191c5eeba3940a0f7bdad0aa074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_interface.html">Interface</a> for a data container. This might be an <a class="el" href="namespace_a_z_std.html" title="AZ namespace needs to be closed in order to specialize the AZStd::hash struct for AddressTypeElement ...">AZStd</a> container or just a class with elements defined in some template manner (usually with templates :) ) </p>
@@ -239,7 +247,7 @@ static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="class_a_z_std_1_1concurrent__unordered__multimap-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::concurrent_unordered_multimap&lt; Key, MappedType, NumLocks, Hasher, EqualKey, Allocator &gt; Class Template Reference</div>  </div>
@@ -140,6 +141,26 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const key_t
 <tr class="memitem:af06e261629c337b65a5c6c92fb92a060"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af06e261629c337b65a5c6c92fb92a060"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const key_type &amp;keyValue, mapped_type *mappedOut) const </td></tr>
 <tr class="separator:af06e261629c337b65a5c6c92fb92a060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aa7f91cfb565992d31896fda7e19e5845"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CONTAINER_VERSION</b> = 1
+ }</td></tr>
+<tr class="separator:aa7f91cfb565992d31896fda7e19e5845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a01a5d56e79d50b777b5c62299ea7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3a01a5d56e79d50b777b5c62299ea7f"></a>
+typedef <br class="typebreak"/>
+<a class="el" href="class_a_z_std_1_1concurrent__unordered__multimap.html">concurrent_unordered_multimap</a><br class="typebreak"/>
+&lt; Key, MappedType, NumLocks, <br class="typebreak"/>
+Hasher, EqualKey, Allocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
+<tr class="separator:ae3a01a5d56e79d50b777b5c62299ea7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33cc38df6e134068edf43283e4fa4de1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33cc38df6e134068edf43283e4fa4de1"></a>
+typedef <br class="typebreak"/>
+Internal::concurrent_hash_table<br class="typebreak"/>
+&lt; Internal::ConcurrentUnorderedMapTableTraits<br class="typebreak"/>
+&lt; Key, MappedType, Hasher, <br class="typebreak"/>
+EqualKey, Allocator, true, <br class="typebreak"/>
+NumLocks &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base_type</b></td></tr>
+<tr class="separator:a33cc38df6e134068edf43283e4fa4de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Key, class MappedType, AZStd::size_t NumLocks = 8, class Hasher = AZStd::hash&lt;Key&gt;, class EqualKey = AZStd::equal_to&lt;Key&gt;, class Allocator = AZStd::allocator&gt;<br/>
@@ -152,7 +173,7 @@ class AZStd::concurrent_unordered_multimap&lt; Key, MappedType, NumLocks, Hasher
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:15 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:33 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

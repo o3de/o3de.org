@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_asset_system_1_1_asset_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::AssetSystem::AssetSystemComponent Class Reference</div>  </div>
@@ -116,11 +118,216 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 <tr class="memitem:aff32bd78533f7c7c7f3852b6c8ced0ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff32bd78533f7c7c7f3852b6c8ced0ab"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
 <tr class="separator:aff32bd78533f7c7c7f3852b6c8ced0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8160cc1673222ec457330c8fb33fa275"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8160cc1673222ec457330c8fb33fa275"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AssetSystemComponent</b> (const <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html">AssetSystemComponent</a> &amp;)=delete</td></tr>
+<tr class="separator:a8160cc1673222ec457330c8fb33fa275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7a84bf83fe927f69375ea380134a92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d7a84bf83fe927f69375ea380134a92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableSocketConnection</b> ()</td></tr>
+<tr class="separator:a4d7a84bf83fe927f69375ea380134a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e6e1a81e41729a8ee11861c37d50b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83e6e1a81e41729a8ee11861c37d50b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSocketConnection</b> ()</td></tr>
+<tr class="separator:a83e6e1a81e41729a8ee11861c37d50b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34cc0fe3d4b3945405d90417203cdc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#af34cc0fe3d4b3945405d90417203cdc9">SetAssetProcessorIP</a> (AZStd::string_view ip)</td></tr>
+<tr class="separator:af34cc0fe3d4b3945405d90417203cdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b88ed8a6f38cfd05409fef8b7c87db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#ab6b88ed8a6f38cfd05409fef8b7c87db">SetAssetProcessorPort</a> (AZ::u16 port)</td></tr>
+<tr class="separator:ab6b88ed8a6f38cfd05409fef8b7c87db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe648ac588f9bee8ed876adcec63c64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fe648ac588f9bee8ed876adcec63c64"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#a7fe648ac588f9bee8ed876adcec63c64">SetAssetProcessorBranchToken</a> (AZStd::string_view branchtoken)</td></tr>
+<tr class="memdesc:a7fe648ac588f9bee8ed876adcec63c64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the branchtoken that will be used for negotiating with the AssetProcessor. <br/></td></tr>
+<tr class="separator:a7fe648ac588f9bee8ed876adcec63c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32885889e55cabaf6bdf3d1d18ddcfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae32885889e55cabaf6bdf3d1d18ddcfe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#ae32885889e55cabaf6bdf3d1d18ddcfe">SetAssetProcessorProjectName</a> (AZStd::string_view projectName)</td></tr>
+<tr class="memdesc:ae32885889e55cabaf6bdf3d1d18ddcfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the (game) project name that will be used for negotiating with the AssetProcessor. <br/></td></tr>
+<tr class="separator:ae32885889e55cabaf6bdf3d1d18ddcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c5c91b27e414e24996e73504c7538a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23c5c91b27e414e24996e73504c7538a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#a23c5c91b27e414e24996e73504c7538a">SetAssetProcessorPlatform</a> (AZStd::string_view platform)</td></tr>
+<tr class="memdesc:a23c5c91b27e414e24996e73504c7538a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the platform that will be used for negotiating with the AssetProcessor. <br/></td></tr>
+<tr class="separator:a23c5c91b27e414e24996e73504c7538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e2f3d00c623ee43bae63de32f7089b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0e2f3d00c623ee43bae63de32f7089b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#ac0e2f3d00c623ee43bae63de32f7089b">SetAssetProcessorIdentifier</a> (AZStd::string_view identifier)</td></tr>
+<tr class="memdesc:ac0e2f3d00c623ee43bae63de32f7089b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the identifier that will be used for negotiating with the AssetProcessor. <br/></td></tr>
+<tr class="separator:ac0e2f3d00c623ee43bae63de32f7089b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c322f181737136f6a38011d494fac0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#a20c322f181737136f6a38011d494fac0">ConfigureSocketConnection</a> ()</td></tr>
+<tr class="separator:a20c322f181737136f6a38011d494fac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af719874df431bc26e5ad228ce5c08c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#a2af719874df431bc26e5ad228ce5c08c">StartConnectToAssetProcessor</a> ()</td></tr>
+<tr class="separator:a2af719874df431bc26e5ad228ce5c08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f056fed06b7f28f1130481799e14fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#af2f056fed06b7f28f1130481799e14fb">ConnectToAssetProcessor</a> (const <a class="el" href="struct_az_framework_1_1_asset_system_1_1_connection_settings.html">ConnectionSettings</a> &amp;connectionSettings)</td></tr>
+<tr class="separator:af2f056fed06b7f28f1130481799e14fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b39f871bc753b251d30d731bc22b3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#a20b39f871bc753b251d30d731bc22b3a">StartConnectFromAssetProcessor</a> ()</td></tr>
+<tr class="separator:a20b39f871bc753b251d30d731bc22b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99c67f69d8fdb29190af975a845e664"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_component.html#ab99c67f69d8fdb29190af975a845e664">ConnectFromAssetProcessor</a> (const <a class="el" href="struct_az_framework_1_1_asset_system_1_1_connection_settings.html">ConnectionSettings</a> &amp;connectionSettings)</td></tr>
+<tr class="separator:ab99c67f69d8fdb29190af975a845e664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1876a9394c476b1686a81ca55480b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf1876a9394c476b1686a81ca55480b5"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>CompileAssetSync</b> (const AZStd::string &amp;assetPath) override</td></tr>
+<tr class="separator:abf1876a9394c476b1686a81ca55480b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9efae66182fab04fccde3e1a4ba229"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a9efae66182fab04fccde3e1a4ba229"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>CompileAssetSync_FlushIO</b> (const AZStd::string &amp;assetPath) override</td></tr>
+<tr class="separator:a0a9efae66182fab04fccde3e1a4ba229"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5554815280b4b86b6a236b054d8c12d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5554815280b4b86b6a236b054d8c12d"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>CompileAssetSyncById</b> (const AZ::Data::AssetId &amp;assetId) override</td></tr>
+<tr class="separator:ad5554815280b4b86b6a236b054d8c12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a04abe7a1d77d32d99e3298b24f1b01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a04abe7a1d77d32d99e3298b24f1b01"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>CompileAssetSyncById_FlushIO</b> (const AZ::Data::AssetId &amp;assetId) override</td></tr>
+<tr class="separator:a4a04abe7a1d77d32d99e3298b24f1b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad15c560c14aa5d12b27e819bef60d25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad15c560c14aa5d12b27e819bef60d25"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetStatusSearchType</b> (const AZStd::string &amp;assetPath, int searchType) override</td></tr>
+<tr class="separator:aad15c560c14aa5d12b27e819bef60d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0302153e5a7f37442792a3567511748d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0302153e5a7f37442792a3567511748d"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetStatusSearchType_FlushIO</b> (const AZStd::string &amp;searchTerm, int searchType) override</td></tr>
+<tr class="separator:a0302153e5a7f37442792a3567511748d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cb9ccd1dc5074c10d500eba04c9c87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81cb9ccd1dc5074c10d500eba04c9c87"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetStatusById</b> (const AZ::Data::AssetId &amp;assetId) override</td></tr>
+<tr class="separator:a81cb9ccd1dc5074c10d500eba04c9c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7010231ccc48baa2658dcb77f38f3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c7010231ccc48baa2658dcb77f38f3f"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetStatusById_FlushIO</b> (const AZ::Data::AssetId &amp;assetId) override</td></tr>
+<tr class="separator:a5c7010231ccc48baa2658dcb77f38f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146af1e09c6e8a88a1ef384ee8d7396f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a146af1e09c6e8a88a1ef384ee8d7396f"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetStatus</b> (const AZStd::string &amp;assetPath) override</td></tr>
+<tr class="separator:a146af1e09c6e8a88a1ef384ee8d7396f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0512f89170052e64fe1c189874e926"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e0512f89170052e64fe1c189874e926"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetStatus_FlushIO</b> (const AZStd::string &amp;assetPath) override</td></tr>
+<tr class="separator:a7e0512f89170052e64fe1c189874e926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a5014bc0176f778707f613f626d5c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4a5014bc0176f778707f613f626d5c1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>EscalateAssetByUuid</b> (const AZ::Uuid &amp;assetUuid) override</td></tr>
+<tr class="separator:ad4a5014bc0176f778707f613f626d5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8c1d6c3858d89f376facfe16d9a120"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe8c1d6c3858d89f376facfe16d9a120"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>EscalateAssetBySearchTerm</b> (AZStd::string_view searchTerm) override</td></tr>
+<tr class="separator:abe8c1d6c3858d89f376facfe16d9a120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3d049787aa70272143d02dbf7bf8bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba3d049787aa70272143d02dbf7bf8bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowAssetProcessor</b> () override</td></tr>
+<tr class="separator:aba3d049787aa70272143d02dbf7bf8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6749a96ad76b6019d28b40067e018a99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6749a96ad76b6019d28b40067e018a99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowInAssetProcessor</b> (const AZStd::string &amp;assetPath) override</td></tr>
+<tr class="separator:a6749a96ad76b6019d28b40067e018a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468d935c6d4eeb45043c28a8389a67d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a468d935c6d4eeb45043c28a8389a67d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetUnresolvedProductReferences</b> (AZ::Data::AssetId assetId, AZ::u32 &amp;unresolvedAssetIdReferences, AZ::u32 &amp;unresolvedPathReferences) override</td></tr>
+<tr class="separator:a468d935c6d4eeb45043c28a8389a67d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1f05bd2dce1dd92fb5fdd5d41f947c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a1f05bd2dce1dd92fb5fdd5d41f947c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetProcessorPingTimeMilliseconds</b> () override</td></tr>
+<tr class="separator:a2a1f05bd2dce1dd92fb5fdd5d41f947c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50f14f970685b799f8b82ed52f2e9d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac50f14f970685b799f8b82ed52f2e9d2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveCatalog</b> () override</td></tr>
+<tr class="separator:ac50f14f970685b799f8b82ed52f2e9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8124c4ee799127224c53862e721ca6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b8124c4ee799127224c53862e721ca6"></a>
+AssetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>SendAssetStatusRequest</b> (const <a class="el" href="class_az_framework_1_1_asset_system_1_1_request_asset_status.html">RequestAssetStatus</a> &amp;request)</td></tr>
+<tr class="separator:a5b8124c4ee799127224c53862e721ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a40a2d66324b789332375a33ed8aa78ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40a2d66324b789332375a33ed8aa78ad"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_az_framework_1_1_socket_connection.html">SocketConnection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_socketConn</b> = nullptr</td></tr>
+<tr class="separator:a40a2d66324b789332375a33ed8aa78ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcce89ca4e21fe7de1ae904e20cfcd19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcce89ca4e21fe7de1ae904e20cfcd19"></a>
+SocketConnection::TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_cbHandle</b> = 0</td></tr>
+<tr class="separator:afcce89ca4e21fe7de1ae904e20cfcd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad5a097b1399542d41f1cb1e3e6c9d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ad5a097b1399542d41f1cb1e3e6c9d7"></a>
+SocketConnection::TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_bulkMessageHandle</b> = 0</td></tr>
+<tr class="separator:a6ad5a097b1399542d41f1cb1e3e6c9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199c5732edf93792b0566b283a150953"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a199c5732edf93792b0566b283a150953"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetProcessorBranchToken</b></td></tr>
+<tr class="separator:a199c5732edf93792b0566b283a150953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad9acf1e2607368d0024881f73a7b4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ad9acf1e2607368d0024881f73a7b4b"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetProcessorProjectName</b></td></tr>
+<tr class="separator:a2ad9acf1e2607368d0024881f73a7b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37d1f5d4c9cc76d7a82121924821e8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab37d1f5d4c9cc76d7a82121924821e8f"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetProcessorPlatform</b></td></tr>
+<tr class="separator:ab37d1f5d4c9cc76d7a82121924821e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163262234f6c41a5d84eebc08db892b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a163262234f6c41a5d84eebc08db892b0"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetProcessorIdentifier</b></td></tr>
+<tr class="separator:a163262234f6c41a5d84eebc08db892b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d897a7f10500be92280e2efbd2f6fd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d897a7f10500be92280e2efbd2f6fd2"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetProcessorIP</b></td></tr>
+<tr class="separator:a0d897a7f10500be92280e2efbd2f6fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45db5a1eb8ac643b207388d83a9d36f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45db5a1eb8ac643b207388d83a9d36f4"></a>
+AZ::u16&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetProcessorPort</b> = 45643</td></tr>
+<tr class="separator:a45db5a1eb8ac643b207388d83a9d36f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff25416bf6329a3f3fbe31959f6db9a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff25416bf6329a3f3fbe31959f6db9a8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_configured</b> = false</td></tr>
+<tr class="separator:aff25416bf6329a3f3fbe31959f6db9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A game level component for interacting with the asset processor</p>
 <p>Currently used to request synchronous asset compilation, provide notifications when assets are updated, and to query asset status </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a20c322f181737136f6a38011d494fac0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::AssetSystem::AssetSystemComponent::ConfigureSocketConnection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configure the underlying socket connection </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether the ip was set, can fail if already connected </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab99c67f69d8fdb29190af975a845e664"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::AssetSystem::AssetSystemComponent::ConnectFromAssetProcessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_asset_system_1_1_connection_settings.html">ConnectionSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>connectionSettings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convenience function that calls StartConnectToAssetProcessor and then waits for timeout seconds for a connection, if not connected before timeout, StartDiconnectingAssetProcessor is called to stop the connection thread. A timeout of 0 means wait forever until connected, this is not recommended as you will have more control by doing that yourself in the calling code. returns true if successfully connected, false if not </p>
+
+</div>
+</div>
+<a class="anchor" id="af2f056fed06b7f28f1130481799e14fb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::AssetSystem::AssetSystemComponent::ConnectToAssetProcessor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_asset_system_1_1_connection_settings.html">ConnectionSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>connectionSettings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convenience function that calls StartConnectToAssetProcessor and then waits for timeout seconds for a connection, if not connected before timeout, StartDiconnectingAssetProcessor is called to stop the connection thread. A timeout of 0 means wait forever until connected, this is not recommended as you will have more control by doing that yourself in the calling code. returns true if successfully connected, false if not </p>
+
+</div>
+</div>
 <a class="anchor" id="a29a2585e6a02268a5d2614797dc155c6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -146,13 +353,115 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 
 </div>
 </div>
+<a class="anchor" id="af34cc0fe3d4b3945405d90417203cdc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::AssetSystem::AssetSystemComponent::SetAssetProcessorIP </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>ip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the asset processor IP to use when connecting </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether the ip was set, can fail if already connected </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6b88ed8a6f38cfd05409fef8b7c87db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::AssetSystem::AssetSystemComponent::SetAssetProcessorPort </td>
+          <td>(</td>
+          <td class="paramtype">AZ::u16&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the asset processor port to use when connecting </p>
+<dl class="section return"><dt>Returns</dt><dd>Whether the port was set, can fail if already connected </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a20b39f871bc753b251d30d731bc22b3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::AssetSystem::AssetSystemComponent::StartConnectFromAssetProcessor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start the connection thread that will try to listen for an Asset Processor to initiate a connection to us. Once successfully called, the connection thread starts listening for an asset processor to initiate a connection to us and will keep trying to initiate a connection, until Disconnect is called </p>
+<dl class="section return"><dt>Returns</dt><dd>True if listen was called, NOT that it connected, so true means the connection thread was started. False means listen was not called and therefore the connection thread was not started. It can fail if already connected or the connection was not configured prior to this call </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2af719874df431bc26e5ad228ce5c08c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzFramework::AssetSystem::AssetSystemComponent::StartConnectToAssetProcessor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start the connection thread that will try to initiate a connection to the Asset Processor. Once successfully called, the connection thread will starts trying to connect to the ap and will keep trying to initiate a connection, until StartDiconnectingAssetProcessor is called return of true does NOT mean it connected, only that it successfully started the connection thread. You have to keep checking and/or wait is desired </p>
+<dl class="section return"><dt>Returns</dt><dd>True if connect was called, NOT that it connected, so true means the connection thread was started. False means connect was not called and therefore the connection thread was not started. It can fail if already connected or the connection was not configured prior to this call </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Asset/AssetSystemComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

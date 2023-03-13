@@ -55,6 +55,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_orbit_camera_input-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::OrbitCameraInput Class Reference</div>  </div>
@@ -145,6 +147,27 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_az_framework_1_1_cameras.html">Cameras</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_orbit_camera_input.html#a117bda9679338948b80ce0cbe615108a">m_orbitCameras</a></td></tr>
 <tr class="memdesc:a117bda9679338948b80ce0cbe615108a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera inputs to run when this camera input is active (only these will run as it is exclusive). <br/></td></tr>
 <tr class="separator:a117bda9679338948b80ce0cbe615108a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a87e874570e0c092f8ae7f534e4eccf88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87e874570e0c092f8ae7f534e4eccf88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_orbit_camera_input.html#a87e874570e0c092f8ae7f534e4eccf88">ResetImpl</a> () override</td></tr>
+<tr class="memdesc:a87e874570e0c092f8ae7f534e4eccf88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle any state reset that may be required for the camera input (optional). <br/></td></tr>
+<tr class="separator:a87e874570e0c092f8ae7f534e4eccf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0d5ea520f4196bce5487d51f37775f20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d5ea520f4196bce5487d51f37775f20"></a>
+<a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_orbit_camera_input.html#a0d5ea520f4196bce5487d51f37775f20">m_orbitChannelId</a></td></tr>
+<tr class="memdesc:a0d5ea520f4196bce5487d51f37775f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input channel to begin the orbit camera input (note: A modifier key is preferred). <br/></td></tr>
+<tr class="separator:a0d5ea520f4196bce5487d51f37775f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867af2614a65424dbc49ede6abc96e21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a867af2614a65424dbc49ede6abc96e21"></a>
+PivotFn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_orbit_camera_input.html#a867af2614a65424dbc49ede6abc96e21">m_pivotFn</a></td></tr>
+<tr class="memdesc:a867af2614a65424dbc49ede6abc96e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pivot position to use for this orbit camera (how is the pivot point calculated/retrieved). <br/></td></tr>
+<tr class="separator:a867af2614a65424dbc49ede6abc96e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A camera input that doubles as its own set of camera inputs. It is 'exclusive', so does not overlap with other sibling camera inputs - it runs its own set of camera inputs as 'children'. </p>
@@ -231,7 +254,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

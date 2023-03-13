@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_channel_event_listener-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputChannelEventListener Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -125,6 +127,27 @@ static AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority
 <tr class="memitem:a19c10892c860e54f2da5b2320c14328b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19c10892c860e54f2da5b2320c14328b"></a>
 static AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriorityLast</b> ()</td></tr>
 <tr class="separator:a19c10892c860e54f2da5b2320c14328b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a800fe9f8e450e5ab0567f54677885782"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a800fe9f8e450e5ab0567f54677885782"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#a800fe9f8e450e5ab0567f54677885782">OnInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel, bool &amp;o_hasBeenConsumed) final</td></tr>
+<tr class="memdesc:a800fe9f8e450e5ab0567f54677885782"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_channel_notifications.html#a4c35f63b4139b3fcbc77d48832bf3345">AzFramework::InputChannelNotifications::OnInputChannelEvent</a> <br/></td></tr>
+<tr class="separator:a800fe9f8e450e5ab0567f54677885782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0dbab15e19a6429639eaa54c7ec5522"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#ab0dbab15e19a6429639eaa54c7ec5522">OnInputChannelEventFiltered</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel)=0</td></tr>
+<tr class="separator:ab0dbab15e19a6429639eaa54c7ec5522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a06ad0ff5eecdcf79ea0aa6f81386f610"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06ad0ff5eecdcf79ea0aa6f81386f610"></a>
+AZStd::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_az_framework_1_1_input_channel_event_filter.html">InputChannelEventFilter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#a06ad0ff5eecdcf79ea0aa6f81386f610">m_filter</a></td></tr>
+<tr class="memdesc:a06ad0ff5eecdcf79ea0aa6f81386f610"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared input event filter. <br/></td></tr>
+<tr class="separator:a06ad0ff5eecdcf79ea0aa6f81386f610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af121c7ee08add1f71ff863d7b44f2f9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af121c7ee08add1f71ff863d7b44f2f9f"></a>
+AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel_event_listener.html#af121c7ee08add1f71ff863d7b44f2f9f">m_priority</a></td></tr>
+<tr class="memdesc:af121c7ee08add1f71ff863d7b44f2f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The priority used for sorting. <br/></td></tr>
+<tr class="separator:af121c7ee08add1f71ff863d7b44f2f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that handles input notifications by priority, and that allows events to be filtered by their channel name, device name, device index (local player) or any combination of the three. </p>
@@ -380,6 +403,40 @@ static AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority
 
 </div>
 </div>
+<a class="anchor" id="ab0dbab15e19a6429639eaa54c7ec5522"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzFramework::InputChannelEventListener::OnInputChannelEventFiltered </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;&#160;</td>
+          <td class="paramname"><em>inputChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Override to be notified when an input channel is active or its state or value is updated, unless the event was consumed by a higher priority listener, or did not pass the filter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputChannel</td><td>The input channel that is active or whose state or value updated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the input event has been consumed, false otherwise </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_framework_1_1_input_context.html#a0d34c38de8c93df744bac5139fd410e7">AzFramework::InputContext</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aaa4f2492b137bde935343d62fde3b353"></a>
 <div class="memitem">
 <div class="memproto">
@@ -409,7 +466,7 @@ static AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

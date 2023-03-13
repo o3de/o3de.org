@@ -51,6 +51,7 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_udp_connection_set-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::UdpConnectionSet Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -98,6 +99,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac35bd97dc6f8a687b1df72285689162c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b8dd372beab2ac10752ca433cafad9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_connection_set.html#aa9b8dd372beab2ac10752ca433cafad9">GetActiveConnectionCount</a> () const override</td></tr>
 <tr class="separator:aa9b8dd372beab2ac10752ca433cafad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a408cfd7a5826b256e5e0b026c238d078"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a408cfd7a5826b256e5e0b026c238d078"></a>
+ConnectionId&#160;</td><td class="memItemRight" valign="bottom"><b>m_nextConnectionId</b> = InvalidConnectionId</td></tr>
+<tr class="separator:a408cfd7a5826b256e5e0b026c238d078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c57a25704b048b1f3272fbc84076d53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c57a25704b048b1f3272fbc84076d53"></a>
+ConnectionIdMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionIdMap</b></td></tr>
+<tr class="separator:a9c57a25704b048b1f3272fbc84076d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa322735e42e2e1fdfec57a6dd627d962"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa322735e42e2e1fdfec57a6dd627d962"></a>
+RemoteAddressMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_remoteAddressMap</b></td></tr>
+<tr class="separator:aa322735e42e2e1fdfec57a6dd627d962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tracks current UDP endpoints and allows fast lookups by connection identifier and remote address. </p>
@@ -356,7 +369,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

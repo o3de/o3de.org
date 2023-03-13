@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_menu_bar-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorMenuBar Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -92,6 +94,26 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b>
 <tr class="memitem:a7769cbc1139aeb287e89d9d4b5415bcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7769cbc1139aeb287e89d9d4b5415bcc"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a7769cbc1139aeb287e89d9d4b5415bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a72907af2b3b4c8b30e295d416ab90311"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72907af2b3b4c8b30e295d416ab90311"></a>
+QMainWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainWindow</b> = nullptr</td></tr>
+<tr class="separator:a72907af2b3b4c8b30e295d416ab90311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ada7d9ef89edec7dc087238fc7956b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3ada7d9ef89edec7dc087238fc7956b"></a>
+AZStd::map&lt; int, AZStd::vector<br class="typebreak"/>
+&lt; AZStd::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_menus</b></td></tr>
+<tr class="separator:ac3ada7d9ef89edec7dc087238fc7956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea33a7433f3b0528e6b78add6a9ff8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ea33a7433f3b0528e6b78add6a9ff8e"></a>
+AZStd::unordered_map<br class="typebreak"/>
+&lt; AZStd::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuToSortKeyMap</b></td></tr>
+<tr class="separator:a5ea33a7433f3b0528e6b78add6a9ff8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aacf1a15e8eb8208ef2ea659754785d91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacf1a15e8eb8208ef2ea659754785d91"></a>
+static <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html">MenuManagerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuManagerInterface</b> = nullptr</td></tr>
+<tr class="separator:aacf1a15e8eb8208ef2ea659754785d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ActionManager/Menu/EditorMenuBar.h</li>
@@ -99,7 +121,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

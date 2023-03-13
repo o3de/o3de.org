@@ -54,6 +54,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_native_window_1_1_implementation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::NativeWindow::Implementation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -114,6 +115,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1dcd13e0ccd7cb371674225d9807a701"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dcd13e0ccd7cb371674225d9807a701"></a>
 static <a class="el" href="class_az_framework_1_1_native_window_1_1_implementation.html">Implementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> ()</td></tr>
 <tr class="separator:a1dcd13e0ccd7cb371674225d9807a701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a14be696b75d8328ebd6fc6172663c664"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14be696b75d8328ebd6fc6172663c664"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_width</b> = 0</td></tr>
+<tr class="separator:a14be696b75d8328ebd6fc6172663c664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2115bcf407f480665c942c3a62b4ada"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2115bcf407f480665c942c3a62b4ada"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_height</b> = 0</td></tr>
+<tr class="separator:ab2115bcf407f480665c942c3a62b4ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee5056a8679ec110122bae374c7bfb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adee5056a8679ec110122bae374c7bfb0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_activated</b> = false</td></tr>
+<tr class="separator:adee5056a8679ec110122bae374c7bfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_az_framework_1_1_native_window.html">NativeWindow</a> implementation. Extend this to provide windowing capabilities per platform. It's expected that only one Implementation::Create method will be available per-platform. </p>
@@ -123,7 +136,7 @@ static <a class="el" href="class_az_framework_1_1_native_window_1_1_implementati
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_job_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -94,6 +96,30 @@ AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ae8dfc6b4f1bab5351aee0d8448bb642e"><td class="memItemLeft" align="right" valign="top">static const AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_job_manager.html#ae8dfc6b4f1bab5351aee0d8448bb642e">InvalidWorkerThreadId</a> = Internal::JobManagerBase::InvalidWorkerThreadId</td></tr>
 <tr class="separator:ae8dfc6b4f1bab5351aee0d8448bb642e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aac4ec2abd7aba7313667dbb5b1fb7834"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac4ec2abd7aba7313667dbb5b1fb7834"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>JobManager</b> (const <a class="el" href="class_a_z_1_1_job_manager.html">JobManager</a> &amp;manager)</td></tr>
+<tr class="separator:aac4ec2abd7aba7313667dbb5b1fb7834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10dc781ae9e65790964bd368a56b58c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad10dc781ae9e65790964bd368a56b58c"></a>
+<a class="el" href="class_a_z_1_1_job_manager.html">JobManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_job_manager.html">JobManager</a> &amp;manager)</td></tr>
+<tr class="separator:ad10dc781ae9e65790964bd368a56b58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c8c866f2606c543078ce91e3a3ef6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7c8c866f2606c543078ce91e3a3ef6a"></a>
+AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPendingJob</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *job)</td></tr>
+<tr class="separator:ad7c8c866f2606c543078ce91e3a3ef6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db3cbfdb9cd3a9a08e73d4c601f2aeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2db3cbfdb9cd3a9a08e73d4c601f2aeb"></a>
+AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>SuspendJobUntilReady</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *job)</td></tr>
+<tr class="separator:a2db3cbfdb9cd3a9a08e73d4c601f2aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909e676fa9363c0f6ff54169400048a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a909e676fa9363c0f6ff54169400048a7"></a>
+AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>StartJobAndAssistUntilComplete</b> (<a class="el" href="class_a_z_1_1_job.html">Job</a> *job)</td></tr>
+<tr class="separator:a909e676fa9363c0f6ff54169400048a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a25fcedd54a9fce6758720156cc1dd28b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25fcedd54a9fce6758720156cc1dd28b"></a>
+Internal::JobManagerWorkStealing&#160;</td><td class="memItemRight" valign="bottom"><b>m_impl</b></td></tr>
+<tr class="separator:a25fcedd54a9fce6758720156cc1dd28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -229,7 +255,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Job</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

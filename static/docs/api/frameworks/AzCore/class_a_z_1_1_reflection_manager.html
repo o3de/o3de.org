@@ -55,6 +55,10 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="class_a_z_1_1_reflection_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ReflectionManager Class Reference</div>  </div>
@@ -63,6 +67,11 @@
 
 <p><code>#include &lt;ReflectionManager.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_reflection_manager_1_1_entry_point.html">EntryPoint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ec5120df7ce39ae31867a1f936d6c6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ec5120df7ce39ae31867a1f936d6c6d"></a>
@@ -103,6 +112,51 @@ template&lt;typename ReflectContextT , typename  = IsReflectContextT&lt;ReflectC
 <tr class="memitem:acb4347c9f0cd7ee6a1377b1d8979a113"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_reflection_manager.html#acb4347c9f0cd7ee6a1377b1d8979a113">RemoveReflectContext</a> ()</td></tr>
 <tr class="memdesc:acb4347c9f0cd7ee6a1377b1d8979a113"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a reflect context (unreflects all entry points) <br/></td></tr>
 <tr class="separator:acb4347c9f0cd7ee6a1377b1d8979a113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:af41ae5626a1a009bb74bc91a3a0f8707"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af41ae5626a1a009bb74bc91a3a0f8707"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>EntryPointList</b> = <a class="el" href="class_a_z_std_1_1list.html">AZStd::list</a>&lt; <a class="el" href="struct_a_z_1_1_reflection_manager_1_1_entry_point.html">EntryPoint</a> &gt;</td></tr>
+<tr class="separator:af41ae5626a1a009bb74bc91a3a0f8707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:adcbfc308d1fc48d829221b7eb306fdcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcbfc308d1fc48d829221b7eb306fdcb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddReflectContext</b> (AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> &gt; &amp;&amp;context)</td></tr>
+<tr class="separator:adcbfc308d1fc48d829221b7eb306fdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d211b200e528b575f735a4be7d168d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d211b200e528b575f735a4be7d168d1"></a>
+<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetReflectContext</b> (<a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> contextTypeId)</td></tr>
+<tr class="separator:a7d211b200e528b575f735a4be7d168d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cc83bf0746ecc50798bf0330385039"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65cc83bf0746ecc50798bf0330385039"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveReflectContext</b> (<a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> contextTypeId)</td></tr>
+<tr class="separator:a65cc83bf0746ecc50798bf0330385039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a5d4367a8daf5bda5166a460f8527199a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d4367a8daf5bda5166a460f8527199a"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_contexts</b></td></tr>
+<tr class="separator:a5d4367a8daf5bda5166a460f8527199a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37308ded31c642711789d83a23dbd114"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37308ded31c642711789d83a23dbd114"></a>
+<a class="el" href="class_a_z_std_1_1list.html">EntryPointList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entryPoints</b></td></tr>
+<tr class="separator:a37308ded31c642711789d83a23dbd114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b64f7487e795a1eb9d781c8b892df54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b64f7487e795a1eb9d781c8b892df54"></a>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a>&lt; <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a>, <br class="typebreak"/>
+<a class="el" href="class_a_z_std_1_1list__iterator.html">EntryPointList::iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_typedEntryPoints</b></td></tr>
+<tr class="separator:a6b64f7487e795a1eb9d781c8b892df54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3877aaec6a666e64d2747b55562b16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada3877aaec6a666e64d2747b55562b16"></a>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a><br class="typebreak"/>
+&lt; <a class="el" href="namespace_a_z.html#a6332cfe277dbb34b8392a0f0015a0947">StaticReflectionFunctionPtr</a>, <br class="typebreak"/>
+<a class="el" href="class_a_z_std_1_1list__iterator.html">EntryPointList::iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_nonTypedEntryPoints</b></td></tr>
+<tr class="separator:ada3877aaec6a666e64d2747b55562b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a10adb1d3de206ef06b0de8c8c97b8386"><td class="memTemplParams" colspan="2"><a class="anchor" id="a10adb1d3de206ef06b0de8c8c97b8386"></a>
+template&lt;typename ReflectContextT &gt; </td></tr>
+<tr class="memitem:a10adb1d3de206ef06b0de8c8c97b8386"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IsReflectContextT</b> = AZStd::enable_if_t&lt; AZStd::is_base_of&lt; <a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a>, ReflectContextT &gt;::value &gt;</td></tr>
+<tr class="separator:a10adb1d3de206ef06b0de8c8c97b8386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that manages all ReflectContexts and all reflection entry point functions </p>
@@ -112,7 +166,7 @@ template&lt;typename ReflectContextT , typename  = IsReflectContextT&lt;ReflectC
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

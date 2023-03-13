@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1lock__free__queue-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::lock_free_queue&lt; T, Allocator &gt; Class Template Reference</div>  </div>
@@ -110,6 +112,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1lock__free__queue.html#a9fa5abcd0e8bef98e503f7e49d0c0e14">empty</a> () const </td></tr>
 <tr class="memdesc:a9fa5abcd0e8bef98e503f7e49d0c0e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests if the queue is empty, limited utility for a concurrent container. <br/></td></tr>
 <tr class="separator:a9fa5abcd0e8bef98e503f7e49d0c0e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a24b939bab9f8df29501c434fe9759bae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24b939bab9f8df29501c434fe9759bae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lock_free_queue</b> (const <a class="el" href="class_a_z_std_1_1lock__free__queue.html">lock_free_queue</a> &amp;)</td></tr>
+<tr class="separator:a24b939bab9f8df29501c434fe9759bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa014f86d0c66a0172c56a404bdeb0469"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa014f86d0c66a0172c56a404bdeb0469"></a>
+<a class="el" href="class_a_z_std_1_1lock__free__queue.html">lock_free_queue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1lock__free__queue.html">lock_free_queue</a> &amp;)</td></tr>
+<tr class="separator:aa014f86d0c66a0172c56a404bdeb0469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d4a8e053b30edbc7a295a1f7c21707"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92d4a8e053b30edbc7a295a1f7c21707"></a>
+node_ptr_type&#160;</td><td class="memItemRight" valign="bottom"><b>create_node</b> ()</td></tr>
+<tr class="separator:a92d4a8e053b30edbc7a295a1f7c21707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84506842b694436b243434a04fe0c80e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84506842b694436b243434a04fe0c80e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy_node</b> (node_ptr_type node)</td></tr>
+<tr class="separator:a84506842b694436b243434a04fe0c80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3e1c315b6f124c535f11f16be8b07d7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e1c315b6f124c535f11f16be8b07d7e"></a>
+atomic&lt; node_type * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_head</b></td></tr>
+<tr class="separator:a3e1c315b6f124c535f11f16be8b07d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25056fe1154ce31439a674c8409edde2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25056fe1154ce31439a674c8409edde2"></a>
+atomic&lt; node_type * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_tail</b></td></tr>
+<tr class="separator:a25056fe1154ce31439a674c8409edde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d70e6804d377cbfb0ad6e7151b7f63d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d70e6804d377cbfb0ad6e7151b7f63d"></a>
+allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocator</b></td></tr>
+<tr class="separator:a3d70e6804d377cbfb0ad6e7151b7f63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T, typename Allocator&gt;<br/>
@@ -150,7 +179,7 @@ template&lt;typename T , typename Allocator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

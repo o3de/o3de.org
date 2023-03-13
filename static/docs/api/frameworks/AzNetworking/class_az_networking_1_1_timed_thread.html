@@ -50,6 +50,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_timed_thread-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::TimedThread Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -82,6 +85,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a3756bf34ec37c70381f5e15b4db530e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3756bf34ec37c70381f5e15b4db530e5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TimedThread</b> (const char *name, AZ::TimeMs updateRate)</td></tr>
 <tr class="separator:a3756bf34ec37c70381f5e15b4db530e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af6b725e85a476768b24bba1ba7e5b4f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6b725e85a476768b24bba1ba7e5b4f0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_timed_thread.html#af6b725e85a476768b24bba1ba7e5b4f0">OnStart</a> ()=0</td></tr>
+<tr class="memdesc:af6b725e85a476768b24bba1ba7e5b4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked on thread start. <br/></td></tr>
+<tr class="separator:af6b725e85a476768b24bba1ba7e5b4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15adb7b152f33666dd20c745c1cd3c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab15adb7b152f33666dd20c745c1cd3c4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_timed_thread.html#ab15adb7b152f33666dd20c745c1cd3c4">OnStop</a> ()=0</td></tr>
+<tr class="memdesc:ab15adb7b152f33666dd20c745c1cd3c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked on thread stop. <br/></td></tr>
+<tr class="separator:ab15adb7b152f33666dd20c745c1cd3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fb5b5868e42aa808fc76ddddb0e4486"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_timed_thread.html#a3fb5b5868e42aa808fc76ddddb0e4486">OnUpdate</a> (AZ::TimeMs updateRateMs)=0</td></tr>
+<tr class="separator:a3fb5b5868e42aa808fc76ddddb0e4486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a9b19a386b87bee05d4446e392159af44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b19a386b87bee05d4446e392159af44"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_networking_1_1_timed_thread.html">TimedThread</a>)</td></tr>
+<tr class="separator:a9b19a386b87bee05d4446e392159af44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6be339a7133cd7c55d315785a4b7fdae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6be339a7133cd7c55d315785a4b7fdae"></a>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_updateRate</b></td></tr>
+<tr class="separator:a6be339a7133cd7c55d315785a4b7fdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533819a8126fcd5cb598819313ad1ca1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a533819a8126fcd5cb598819313ad1ca1"></a>
+AZStd::thread_desc&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadDesc</b></td></tr>
+<tr class="separator:a533819a8126fcd5cb598819313ad1ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fcf52219f5b5c755da07bad9b1d8f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73fcf52219f5b5c755da07bad9b1d8f3"></a>
+AZStd::thread&#160;</td><td class="memItemRight" valign="bottom"><b>m_thread</b></td></tr>
+<tr class="separator:a73fcf52219f5b5c755da07bad9b1d8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d68b1b2fdbb4f974d9f745844fa022"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94d68b1b2fdbb4f974d9f745844fa022"></a>
+AZStd::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_joinable</b> = false</td></tr>
+<tr class="separator:a94d68b1b2fdbb4f974d9f745844fa022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5630a8844b8dfbc106c1c323a972e0de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5630a8844b8dfbc106c1c323a972e0de"></a>
+AZStd::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_running</b> = false</td></tr>
+<tr class="separator:a5630a8844b8dfbc106c1c323a972e0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A thread wrapper class that makes it easy to have a time throttled thread. </p>
@@ -103,13 +143,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a3fb5b5868e42aa808fc76ddddb0e4486"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzNetworking::TimedThread::OnUpdate </td>
+          <td>(</td>
+          <td class="paramtype">AZ::TimeMs&#160;</td>
+          <td class="paramname"><em>updateRateMs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Invoked on thread update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">updateRateMs</td><td>The amount of time the thread can spend in OnUpdate in ms </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_reader_thread.html#ac10a8e66aa72c3f7d4e209d58a6c132d">AzNetworking::UdpReaderThread</a>, and <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#a05b7403903eeebd190660113a5e448c7">AzNetworking::TcpListenThread</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzNetworking/AzNetworking/Utilities/TimedThread.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

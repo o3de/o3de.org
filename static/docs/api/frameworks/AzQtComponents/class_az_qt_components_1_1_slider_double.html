@@ -52,7 +52,9 @@
   <div class="summary">
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_slider_double-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::SliderDouble Class Reference</div>  </div>
@@ -222,6 +224,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:acb34ff783cf34fea1f968aa7df5d886e inherit pub_methods_class_az_qt_components_1_1_slider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the hasTracking function from the underlying <a class="el" href="class_az_qt_components_1_1_slider.html" title="Base class for Slider components. Wraps a CustomSlider to provide additional styling options and func...">Slider</a>. <br/></td></tr>
 <tr class="separator:acb34ff783cf34fea1f968aa7df5d886e inherit pub_methods_class_az_qt_components_1_1_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a49b15e73bf5b21f9c86953bae4b3f810"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49b15e73bf5b21f9c86953bae4b3f810"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>hoverValueText</b> (int sliderValue) const override</td></tr>
+<tr class="separator:a49b15e73bf5b21f9c86953bae4b3f810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac5fb80d25631f542bf9539f3801d69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ac5fb80d25631f542bf9539f3801d69"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>calculateRealSliderValue</b> (int <a class="el" href="class_az_qt_components_1_1_slider_double.html#a420f426f63791b51988364d2a80cd445">value</a>) const </td></tr>
+<tr class="separator:a7ac5fb80d25631f542bf9539f3801d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b53c1c07c8d5f369c7e69703160748"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5b53c1c07c8d5f369c7e69703160748"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>convertToSliderValue</b> (double <a class="el" href="class_az_qt_components_1_1_slider_double.html#a420f426f63791b51988364d2a80cd445">value</a>) const </td></tr>
+<tr class="separator:ae5b53c1c07c8d5f369c7e69703160748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e93335c9b62e1e73bafe967229bc44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7e93335c9b62e1e73bafe967229bc44"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>convertFromSliderValue</b> (double <a class="el" href="class_az_qt_components_1_1_slider_double.html#a420f426f63791b51988364d2a80cd445">value</a>) const </td></tr>
+<tr class="separator:ad7e93335c9b62e1e73bafe967229bc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2bea34b0eb54d41d030e15af2d1dc4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2bea34b0eb54d41d030e15af2d1dc4c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>convertPowerCurveValue</b> (double <a class="el" href="class_az_qt_components_1_1_slider_double.html#a420f426f63791b51988364d2a80cd445">value</a>, bool fromSlider) const </td></tr>
+<tr class="separator:aa2bea34b0eb54d41d030e15af2d1dc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_qt_components_1_1_slider"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_qt_components_1_1_slider')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_qt_components_1_1_slider.html">AzQtComponents::Slider</a></td></tr>
+<tr class="memitem:a0a84cf9f42d56f18d4e801aa60185bf9 inherit pro_methods_class_az_qt_components_1_1_slider"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a84cf9f42d56f18d4e801aa60185bf9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="separator:a0a84cf9f42d56f18d4e801aa60185bf9 inherit pro_methods_class_az_qt_components_1_1_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2256d4a39dc84acfe231549e38ee9e inherit pro_methods_class_az_qt_components_1_1_slider"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c2256d4a39dc84acfe231549e38ee9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowValueToolTip</b> (int sliderPos)</td></tr>
+<tr class="separator:a6c2256d4a39dc84acfe231549e38ee9e inherit pro_methods_class_az_qt_components_1_1_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a7e46ad843bbfa3f6165aadea18295584"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e46ad843bbfa3f6165aadea18295584"></a>
@@ -260,6 +287,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:ad3ec698835b62b251c09e5b99998fbec inherit properties_class_az_qt_components_1_1_slider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical offset for the tooltip displaying the value on hover, in pixels. <br/></td></tr>
 <tr class="separator:ad3ec698835b62b251c09e5b99998fbec inherit properties_class_az_qt_components_1_1_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5b6eed00143ef919c7f1a231f2bbad47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b6eed00143ef919c7f1a231f2bbad47"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimum</b> = 0.0</td></tr>
+<tr class="separator:a5b6eed00143ef919c7f1a231f2bbad47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b34ec71523161b4f1c1bd92e3a9c76a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b34ec71523161b4f1c1bd92e3a9c76a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_maximum</b> = 1.0</td></tr>
+<tr class="separator:a0b34ec71523161b4f1c1bd92e3a9c76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7302a736a58f4b176e50d0cfbf33092"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7302a736a58f4b176e50d0cfbf33092"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numSteps</b> = 100</td></tr>
+<tr class="separator:ab7302a736a58f4b176e50d0cfbf33092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce99004db3af5fe441e97d0df98263f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ce99004db3af5fe441e97d0df98263f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_decimals</b></td></tr>
+<tr class="separator:a5ce99004db3af5fe441e97d0df98263f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e39a82221591bc539bc40bb1284f39b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e39a82221591bc539bc40bb1284f39b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_curveMidpoint</b> = 0.5</td></tr>
+<tr class="separator:a4e39a82221591bc539bc40bb1284f39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_az_qt_components_1_1_slider"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_az_qt_components_1_1_slider')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_az_qt_components_1_1_slider.html">AzQtComponents::Slider</a></td></tr>
@@ -281,6 +326,16 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 static <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_slider.html#a4b809835da30cc6ed9ae4c3aae79e51b">defaultConfig</a> ()</td></tr>
 <tr class="memdesc:a4b809835da30cc6ed9ae4c3aae79e51b inherit pub_static_methods_class_az_qt_components_1_1_slider"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default <a class="el" href="class_az_qt_components_1_1_slider.html" title="Base class for Slider components. Wraps a CustomSlider to provide additional styling options and func...">Slider</a> style configuration. <br/></td></tr>
 <tr class="separator:a4b809835da30cc6ed9ae4c3aae79e51b inherit pub_static_methods_class_az_qt_components_1_1_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_az_qt_components_1_1_slider"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_az_qt_components_1_1_slider')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_az_qt_components_1_1_slider.html">AzQtComponents::Slider</a></td></tr>
+<tr class="memitem:a904be0756770173f16864ce6d8023ea2 inherit pro_attribs_class_az_qt_components_1_1_slider"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a904be0756770173f16864ce6d8023ea2"></a>
+<a class="el" href="class_az_qt_components_1_1_custom_slider.html">CustomSlider</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_slider</b> = nullptr</td></tr>
+<tr class="separator:a904be0756770173f16864ce6d8023ea2 inherit pro_attribs_class_az_qt_components_1_1_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ed80e017e3c215c28b743353f8cf29 inherit pro_attribs_class_az_qt_components_1_1_slider"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74ed80e017e3c215c28b743353f8cf29"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolTipPrefix</b></td></tr>
+<tr class="separator:a74ed80e017e3c215c28b743353f8cf29 inherit pro_attribs_class_az_qt_components_1_1_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e5392a2423364aa70a9f77f4d223ed inherit pro_attribs_class_az_qt_components_1_1_slider"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86e5392a2423364aa70a9f77f4d223ed"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolTipPostfix</b></td></tr>
+<tr class="separator:a86e5392a2423364aa70a9f77f4d223ed inherit pro_attribs_class_az_qt_components_1_1_slider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Control to display a slider for double value input. </p>
@@ -355,7 +410,7 @@ static <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">C
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -56,6 +56,11 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -192,6 +197,75 @@ Static Public Attributes</h2></td></tr>
 static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_columnNames</b> [static_cast&lt; int &gt;(Column::Count)]</td></tr>
 <tr class="separator:a4b3dc7b99622bbde3185e883e478bed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:a36d5ab2b0292b0641b686f6b8eeb03f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36d5ab2b0292b0641b686f6b8eeb03f3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ThumbnailUpdated</b> ()</td></tr>
+<tr class="separator:a36d5ab2b0292b0641b686f6b8eeb03f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a222f0005feb4d80db8444590573b392e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a222f0005feb4d80db8444590573b392e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddChild</b> (<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> *child)</td></tr>
+<tr class="separator:a222f0005feb4d80db8444590573b392e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f89f672526d7592411e3b11b9b43f77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f89f672526d7592411e3b11b9b43f77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveChild</b> (<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> *child)</td></tr>
+<tr class="separator:a6f89f672526d7592411e3b11b9b43f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca700bb22e2faf34aef118abf66238e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ca700bb22e2faf34aef118abf66238e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveChildren</b> ()</td></tr>
+<tr class="separator:a4ca700bb22e2faf34aef118abf66238e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72134c97f0b5b38bf9ba50473c0260fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72134c97f0b5b38bf9ba50473c0260fb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a72134c97f0b5b38bf9ba50473c0260fb">UpdateChildPaths</a> (<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> *child) const </td></tr>
+<tr class="memdesc:a72134c97f0b5b38bf9ba50473c0260fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">When child is added, its paths are updated relative to this entry. <br/></td></tr>
+<tr class="separator:a72134c97f0b5b38bf9ba50473c0260fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74025d1e34b4a45152708a5be8e90384"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74025d1e34b4a45152708a5be8e90384"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PathsUpdated</b> ()</td></tr>
+<tr class="separator:a74025d1e34b4a45152708a5be8e90384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa764eae3722370be2aeecbc37ebe5662"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa764eae3722370be2aeecbc37ebe5662"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:aa764eae3722370be2aeecbc37ebe5662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e25e150ce4fd0a503f3ac9302ff3b7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e25e150ce4fd0a503f3ac9302ff3b7d"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_displayName</b></td></tr>
+<tr class="separator:a2e25e150ce4fd0a503f3ac9302ff3b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4ac6f5f88ad5b7e66783c3146d7d4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b4ac6f5f88ad5b7e66783c3146d7d4a"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_displayPath</b></td></tr>
+<tr class="separator:a4b4ac6f5f88ad5b7e66783c3146d7d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13dfb75578e50275ecc7077e1c5c5fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab13dfb75578e50275ecc7077e1c5c5fc"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_relativePath</b></td></tr>
+<tr class="separator:ab13dfb75578e50275ecc7077e1c5c5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18005cec151802742c5bb2935bd59bc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18005cec151802742c5bb2935bd59bc9"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_visiblePath</b></td></tr>
+<tr class="separator:a18005cec151802742c5bb2935bd59bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8615d791543007c9b8a6c586a139358c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8615d791543007c9b8a6c586a139358c"></a>
+AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_fullPath</b></td></tr>
+<tr class="separator:a8615d791543007c9b8a6c586a139358c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e9344249662e25a621bfefaa6d19b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52e9344249662e25a621bfefaa6d19b8"></a>
+AZStd::vector<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_children</b></td></tr>
+<tr class="separator:a52e9344249662e25a621bfefaa6d19b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6361cad189c2b84505273473c9e57c41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6361cad189c2b84505273473c9e57c41"></a>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentAssetEntry</b> = nullptr</td></tr>
+<tr class="separator:a6361cad189c2b84505273473c9e57c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5a1d3be918b4dafd3312a21ba00ea09c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a1d3be918b4dafd3312a21ba00ea09c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html">AssetBrowserEntry</a>)</td></tr>
+<tr class="separator:a5a1d3be918b4dafd3312a21ba00ea09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac035ae8ebe6d8c7180eb7d4866a4b9c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac035ae8ebe6d8c7180eb7d4866a4b9c4"></a>
+SharedThumbnailKey&#160;</td><td class="memItemRight" valign="bottom"><b>m_thumbnailKey</b></td></tr>
+<tr class="separator:ac035ae8ebe6d8c7180eb7d4866a4b9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac167d1d7e252e2eafff0bb52e6f3c1e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac167d1d7e252e2eafff0bb52e6f3c1e8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#ac167d1d7e252e2eafff0bb52e6f3c1e8">m_row</a> = 0</td></tr>
+<tr class="memdesc:ac167d1d7e252e2eafff0bb52e6f3c1e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">index in its parent's m_children list <br/></td></tr>
+<tr class="separator:ac167d1d7e252e2eafff0bb52e6f3c1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a663658e8223e4a649282a92ecde9384f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663658e8223e4a649282a92ecde9384f"></a>
@@ -290,7 +364,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ProductAssetBrowserE
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

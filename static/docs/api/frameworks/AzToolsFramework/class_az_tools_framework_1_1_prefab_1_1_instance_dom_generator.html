@@ -53,6 +53,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Prefab::InstanceDomGenerator Class Reference</div>  </div>
@@ -83,8 +86,119 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceDom
 <tr class="memitem:a78d7bc9d8bb35524bba1e867ecfe1061 inherit pub_methods_class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78d7bc9d8bb35524bba1e867ecfe1061"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator_interface.html">InstanceDomGeneratorInterface</a>,&quot;{269DE807-64B2-4157-93B0-BEDA4133C9A0}&quot;)</td></tr>
 <tr class="separator:a78d7bc9d8bb35524bba1e867ecfe1061 inherit pub_methods_class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a37364be7a6afd2c262e6ff7fdb4189b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator.html#a37364be7a6afd2c262e6ff7fdb4189b4">UpdateContainerEntityInDomFromHighestAncestor</a> (PrefabDom &amp;instanceDom, const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;instance) const </td></tr>
+<tr class="separator:a37364be7a6afd2c262e6ff7fdb4189b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ecd4921f52fab7718b9254eb3ca57f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator.html#a2ecd4921f52fab7718b9254eb3ca57f4">GenerateContainerEntityDomFromHighestAncestorOrSelf</a> (PrefabDom &amp;containerEntityDom, const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;instance) const </td></tr>
+<tr class="separator:a2ecd4921f52fab7718b9254eb3ca57f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20846d3e2fa5ea66a986e5e19039c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator.html#aa20846d3e2fa5ea66a986e5e19039c33">GenerateContainerEntityDomFromClimbUpResult</a> (PrefabDom &amp;containerEntityDom, const <a class="el" href="struct_az_tools_framework_1_1_prefab_1_1_instance_climb_up_result.html">InstanceClimbUpResult</a> &amp;climbUpResult) const </td></tr>
+<tr class="separator:aa20846d3e2fa5ea66a986e5e19039c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:adeac42c0c6e465ca25e4d3bdfb14067b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeac42c0c6e465ca25e4d3bdfb14067b"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_entity_mapper_interface.html">InstanceEntityMapperInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceEntityMapperInterface</b> = nullptr</td></tr>
+<tr class="separator:adeac42c0c6e465ca25e4d3bdfb14067b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278924b0aa70095b76be716b60f21ff3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a278924b0aa70095b76be716b60f21ff3"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html">InstanceToTemplateInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceToTemplateInterface</b> = nullptr</td></tr>
+<tr class="separator:a278924b0aa70095b76be716b60f21ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdbcc6d5650f82f410d8df82a6275bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbdbcc6d5650f82f410d8df82a6275bf"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">PrefabSystemComponentInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabSystemComponentInterface</b> = nullptr</td></tr>
+<tr class="separator:adbdbcc6d5650f82f410d8df82a6275bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a17c042a93d2446070bd871bf8085f8cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17c042a93d2446070bd871bf8085f8cb"></a>
+static AzFramework::EntityContextId&#160;</td><td class="memItemRight" valign="bottom"><b>s_editorEntityContextId</b></td></tr>
+<tr class="separator:a17c042a93d2446070bd871bf8085f8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa20846d3e2fa5ea66a986e5e19039c33"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::InstanceDomGenerator::GenerateContainerEntityDomFromClimbUpResult </td>
+          <td>(</td>
+          <td class="paramtype">PrefabDom &amp;&#160;</td>
+          <td class="paramname"><em>containerEntityDom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_az_tools_framework_1_1_prefab_1_1_instance_climb_up_result.html">InstanceClimbUpResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>climbUpResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given a climb-up path and a provided DOM, populates the DOM with the container entity DOM as seen from the template DOM of the highest ancestor that contains the data, or from the instance if it's the root. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">containerEntityDom</td><td>The DOM of the container entity as seen from the highest ancestor or root. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">climbUpResult</td><td>The given climb-up object that contains the root and a path from an instance to the root. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ecd4921f52fab7718b9254eb3ca57f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::InstanceDomGenerator::GenerateContainerEntityDomFromHighestAncestorOrSelf </td>
+          <td>(</td>
+          <td class="paramtype">PrefabDom &amp;&#160;</td>
+          <td class="paramname"><em>containerEntityDom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>instance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given an instance and a provided DOM, populates the DOM with the container entity DOM as seen from the template DOM of the highest ancestor that contains the data, or from the instance if it's the root. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">containerEntityDom</td><td>The DOM of the container entity as seen from the highest ancestor or root. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">instance</td><td>The given instance object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="afdf7904c252d7f22c37d651f5bb2d033"></a>
 <div class="memitem">
 <div class="memproto">
@@ -173,13 +287,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterInstanceDom
 
 </div>
 </div>
+<a class="anchor" id="a37364be7a6afd2c262e6ff7fdb4189b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::InstanceDomGenerator::UpdateContainerEntityInDomFromHighestAncestor </td>
+          <td>(</td>
+          <td class="paramtype">PrefabDom &amp;&#160;</td>
+          <td class="paramname"><em>instanceDom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>instance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given an instance and its DOM, updates the container entity in the DOM with the one seen from the highest ancestor template DOM that contains the data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">instanceDom</td><td>The DOM of the instance that will be modified. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">instance</td><td>The given instance object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/Instance/InstanceDomGenerator.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

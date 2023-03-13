@@ -54,7 +54,12 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_slider-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -199,6 +204,30 @@ static <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">C
 <tr class="memdesc:a4b809835da30cc6ed9ae4c3aae79e51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default <a class="el" href="class_az_qt_components_1_1_slider.html" title="Base class for Slider components. Wraps a CustomSlider to provide additional styling options and func...">Slider</a> style configuration. <br/></td></tr>
 <tr class="separator:a4b809835da30cc6ed9ae4c3aae79e51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae321628bc879454b173539f28b81f26f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae321628bc879454b173539f28b81f26f"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>hoverValueText</b> (int sliderValue) const =0</td></tr>
+<tr class="separator:ae321628bc879454b173539f28b81f26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a84cf9f42d56f18d4e801aa60185bf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a84cf9f42d56f18d4e801aa60185bf9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="separator:a0a84cf9f42d56f18d4e801aa60185bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2256d4a39dc84acfe231549e38ee9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c2256d4a39dc84acfe231549e38ee9e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowValueToolTip</b> (int sliderPos)</td></tr>
+<tr class="separator:a6c2256d4a39dc84acfe231549e38ee9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a904be0756770173f16864ce6d8023ea2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a904be0756770173f16864ce6d8023ea2"></a>
+<a class="el" href="class_az_qt_components_1_1_custom_slider.html">CustomSlider</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_slider</b> = nullptr</td></tr>
+<tr class="separator:a904be0756770173f16864ce6d8023ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ed80e017e3c215c28b743353f8cf29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74ed80e017e3c215c28b743353f8cf29"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolTipPrefix</b></td></tr>
+<tr class="separator:a74ed80e017e3c215c28b743353f8cf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e5392a2423364aa70a9f77f4d223ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86e5392a2423364aa70a9f77f4d223ed"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolTipPostfix</b></td></tr>
+<tr class="separator:a86e5392a2423364aa70a9f77f4d223ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a971792bf157b1f03465f7b598648161d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a971792bf157b1f03465f7b598648161d"></a>
@@ -213,6 +242,75 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_slider.html#ad3ec698835b62b251c09e5b99998fbec">toolTipOffsetY</a></td></tr>
 <tr class="memdesc:ad3ec698835b62b251c09e5b99998fbec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical offset for the tooltip displaying the value on hover, in pixels. <br/></td></tr>
 <tr class="separator:ad3ec698835b62b251c09e5b99998fbec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a854d06209854875159f916205fd9f0a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a854d06209854875159f916205fd9f0a7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>valueFromPos</b> (const QPoint &amp;pos) const </td></tr>
+<tr class="separator:a854d06209854875159f916205fd9f0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95dd28e136ed03c4f9c0da88bd99d256"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95dd28e136ed03c4f9c0da88bd99d256"></a>
+QRect&#160;</td><td class="memItemRight" valign="bottom"><b>getVisibleGrooveRect</b> () const </td></tr>
+<tr class="separator:a95dd28e136ed03c4f9c0da88bd99d256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc4c7a53a9be0c7d6bca6752f774df1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc4c7a53a9be0c7d6bca6752f774df1d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getVisibleGrooveLength</b> () const </td></tr>
+<tr class="separator:abc4c7a53a9be0c7d6bca6752f774df1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebfd640ee2448b5e1d3caedc3d6c8a3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebfd640ee2448b5e1d3caedc3d6c8a3b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getVisibleGrooveStart</b> () const </td></tr>
+<tr class="separator:aebfd640ee2448b5e1d3caedc3d6c8a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f9caebeea701e20adfd539e9908d3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45f9caebeea701e20adfd539e9908d3c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getDistanceFromVisibleGrooveStart</b> (const QPoint &amp;point) const </td></tr>
+<tr class="separator:a45f9caebeea701e20adfd539e9908d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97fa7a35c6a9c64f70c87973ca1c162"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae97fa7a35c6a9c64f70c87973ca1c162"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isPointInVisibleGrooveArea</b> (const QPoint &amp;point) const </td></tr>
+<tr class="separator:ae97fa7a35c6a9c64f70c87973ca1c162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ada20e64001bf005c77d8f5076c6c081b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada20e64001bf005c77d8f5076c6c081b"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>sliderThickness</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOption *option, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:ada20e64001bf005c77d8f5076c6c081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec7c3ee636a10d0d9f281aa180a1db4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ec7c3ee636a10d0d9f281aa180a1db4"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>sliderLength</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOption *option, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a6ec7c3ee636a10d0d9f281aa180a1db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d395bde52e378fd80f621133774610"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3d395bde52e378fd80f621133774610"></a>
+static QRect&#160;</td><td class="memItemRight" valign="bottom"><b>sliderHandleRect</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOptionSlider *option, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config, bool isHovered=true)</td></tr>
+<tr class="separator:ae3d395bde52e378fd80f621133774610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d754cab069f41b7712a97cf03c48b30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d754cab069f41b7712a97cf03c48b30"></a>
+static QRect&#160;</td><td class="memItemRight" valign="bottom"><b>sliderGrooveRect</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOptionSlider *option, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a8d754cab069f41b7712a97cf03c48b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a388dfe413a9f9440cd04d74d34b9b8e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a388dfe413a9f9440cd04d74d34b9b8e8"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>polish</b> (<a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a388dfe413a9f9440cd04d74d34b9b8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78825673dccf778774f38c7b54339d31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78825673dccf778774f38c7b54339d31"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawSlider</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOption *option, QPainter *painter, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config)</td></tr>
+<tr class="separator:a78825673dccf778774f38c7b54339d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13c52ccacee5a697c802266729d52fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af13c52ccacee5a697c802266729d52fe"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>drawMidPointMarker</b> (QPainter *painter, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config, Qt::Orientation <a class="el" href="class_az_qt_components_1_1_slider.html#a971792bf157b1f03465f7b598648161d">orientation</a>, const QRect &amp;grooveRect, const QColor &amp;midMarkerColor)</td></tr>
+<tr class="separator:af13c52ccacee5a697c802266729d52fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae983f40d04aa9e70102adebe4e6c7844"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae983f40d04aa9e70102adebe4e6c7844"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>drawMidPointGrooveHighlights</b> (QPainter *painter, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config, const QRect &amp;grooveRect, const QRect &amp;handleRect, const QPoint &amp;mousePos, Qt::Orientation <a class="el" href="class_az_qt_components_1_1_slider.html#a971792bf157b1f03465f7b598648161d">orientation</a>)</td></tr>
+<tr class="separator:ae983f40d04aa9e70102adebe4e6c7844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c852eed741b2f6dd954e67d7c5e1ef1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c852eed741b2f6dd954e67d7c5e1ef1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>drawGrooveHighlights</b> (QPainter *painter, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Slider::Config</a> &amp;config, const QRect &amp;grooveRect, const QRect &amp;handleRect, const QPoint &amp;mousePos, Qt::Orientation <a class="el" href="class_az_qt_components_1_1_slider.html#a971792bf157b1f03465f7b598648161d">orientation</a>)</td></tr>
+<tr class="separator:a0c852eed741b2f6dd954e67d7c5e1ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bc7eca2fb97b8cf6c0d1b48fddd765"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09bc7eca2fb97b8cf6c0d1b48fddd765"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>drawHandle</b> (const QStyleOption *option, QPainter *painter, const <a class="el" href="struct_az_qt_components_1_1_slider_1_1_config.html">Config</a> &amp;config, const QRect &amp;handleRect, const QColor &amp;handleColor)</td></tr>
+<tr class="separator:a09bc7eca2fb97b8cf6c0d1b48fddd765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e28e6873e5a9b1959d8e1b1afff6b77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e28e6873e5a9b1959d8e1b1afff6b77"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>styleHintAbsoluteSetButtons</b> ()</td></tr>
+<tr class="separator:a2e28e6873e5a9b1959d8e1b1afff6b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a895d239b3ce09ae4a2314fb9e1ce1a34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a895d239b3ce09ae4a2314fb9e1ce1a34"></a>
+QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>m_mousePos</b></td></tr>
+<tr class="separator:a895d239b3ce09ae4a2314fb9e1ce1a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4918fe4efbcb7639d83f1febb503152"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4918fe4efbcb7639d83f1febb503152"></a>
+QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolTipOffset</b></td></tr>
+<tr class="separator:ac4918fe4efbcb7639d83f1febb503152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492eb085b067eba16f393f2f43bf138d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a492eb085b067eba16f393f2f43bf138d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_moveSlider</b> = false</td></tr>
+<tr class="separator:a492eb085b067eba16f393f2f43bf138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -387,7 +485,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Style</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

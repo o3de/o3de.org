@@ -57,6 +57,9 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_virtual_keyboard-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceVirtualKeyboard Class Reference</div>  </div>
@@ -174,6 +177,56 @@ Static Public Attributes</h2></td></tr>
 static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html">InputDeviceId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a0127a6c66996bf1117015dd3a4252029">Id</a> {&quot;virtual_keyboard&quot;}</td></tr>
 <tr class="memdesc:a0127a6c66996bf1117015dd3a4252029"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id used to identify the primary virtual keyboard input device. <br/></td></tr>
 <tr class="separator:a0127a6c66996bf1117015dd3a4252029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:afbc5829ba00ac4a7b8e87f7010cc087d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbc5829ba00ac4a7b8e87f7010cc087d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#afbc5829ba00ac4a7b8e87f7010cc087d">CommandChannelByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> * &gt;</td></tr>
+<tr class="memdesc:afbc5829ba00ac4a7b8e87f7010cc087d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for verbose container class. <br/></td></tr>
+<tr class="separator:afbc5829ba00ac4a7b8e87f7010cc087d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a67c22a234912812cc788e17e2045807a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67c22a234912812cc788e17e2045807a"></a>
+InputChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a67c22a234912812cc788e17e2045807a">m_allChannelsById</a></td></tr>
+<tr class="memdesc:a67c22a234912812cc788e17e2045807a"><td class="mdescLeft">&#160;</td><td class="mdescRight">All virtual keyboard channels by id. <br/></td></tr>
+<tr class="separator:a67c22a234912812cc788e17e2045807a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58a7fac1f64923c2f4e690b94a25564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad58a7fac1f64923c2f4e690b94a25564"></a>
+<a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#afbc5829ba00ac4a7b8e87f7010cc087d">CommandChannelByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#ad58a7fac1f64923c2f4e690b94a25564">m_commandChannelsById</a></td></tr>
+<tr class="memdesc:ad58a7fac1f64923c2f4e690b94a25564"><td class="mdescLeft">&#160;</td><td class="mdescRight">All virtual command channels by id. <br/></td></tr>
+<tr class="separator:ad58a7fac1f64923c2f4e690b94a25564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a63db3425c57f187d18287abd300059bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63db3425c57f187d18287abd300059bb"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html">Implementation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a63db3425c57f187d18287abd300059bb">m_pimpl</a></td></tr>
+<tr class="memdesc:a63db3425c57f187d18287abd300059bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private pointer to the platform specific implementation. <br/></td></tr>
+<tr class="separator:a63db3425c57f187d18287abd300059bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2de93bc31a890a50fc650052bc1d28bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2de93bc31a890a50fc650052bc1d28bd"></a>
+<a class="el" href="class_az_framework_1_1_input_device_implementation_request_handler.html">InputDeviceImplementationRequestHandler</a><br class="typebreak"/>
+&lt; <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html">InputDeviceVirtualKeyboard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#a2de93bc31a890a50fc650052bc1d28bd">m_implementationRequestHandler</a></td></tr>
+<tr class="memdesc:a2de93bc31a890a50fc650052bc1d28bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class that handles requests to create a custom implementation for this device. <br/></td></tr>
+<tr class="separator:a2de93bc31a890a50fc650052bc1d28bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_az_framework_1_1_input_device"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_input_device')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_input_device.html">AzFramework::InputDevice</a></td></tr>
+<tr class="memitem:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a20c49755e8fc367afe62e1c1788e8b8b">BroadcastInputChannelEvent</a> (const <a class="el" href="class_az_framework_1_1_input_channel.html">InputChannel</a> &amp;inputChannel) const </td></tr>
+<tr class="separator:a20c49755e8fc367afe62e1c1788e8b8b inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a47e7fba32002cef9260f72d49079c2b2">BroadcastInputTextEvent</a> (const AZStd::string &amp;textUTF8) const </td></tr>
+<tr class="separator:a47e7fba32002cef9260f72d49079c2b2 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b3f1cf8533f960eb86d73d9c0b09dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a83b3f1cf8533f960eb86d73d9c0b09dd">BroadcastInputDeviceConnectedEvent</a> () const </td></tr>
+<tr class="memdesc:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device connects to the system. <br/></td></tr>
+<tr class="separator:a83b3f1cf8533f960eb86d73d9c0b09dd inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8db0be32df8eeec193f83be08cce6fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#ae8db0be32df8eeec193f83be08cce6fb">BroadcastInputDeviceDisconnectedEvent</a> () const </td></tr>
+<tr class="memdesc:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast an event when the input device disconnects from the system. <br/></td></tr>
+<tr class="separator:ae8db0be32df8eeec193f83be08cce6fb inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7610e16b07bb6c9e5806709d8d142a81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device.html#a7610e16b07bb6c9e5806709d8d142a81">ResetInputChannelStates</a> ()</td></tr>
+<tr class="memdesc:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
+<tr class="separator:a7610e16b07bb6c9e5806709d8d142a81 inherit pro_methods_class_az_framework_1_1_input_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a generic virtual keyboard device. Platform specific implementations are defined as private implementations so that creating an instance of this generic class will work on any platform that supports a virtual keyboard. </p>
@@ -290,7 +343,7 @@ static constexpr <a class="el" href="class_az_framework_1_1_input_device_id.html
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

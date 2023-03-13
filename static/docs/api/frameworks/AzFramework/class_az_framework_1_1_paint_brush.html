@@ -53,6 +53,10 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_paint_brush-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::PaintBrush Class Reference</div>  </div>
@@ -106,6 +110,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:abac7e626417d017815a78e7049322cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bbcce7c3b5f877891e09474813d61dd"><td class="memItemLeft" align="right" valign="top">AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#a1bbcce7c3b5f877891e09474813d61dd">UseEyedropper</a> (const AZ::Vector3 &amp;brushCenter)</td></tr>
 <tr class="separator:a1bbcce7c3b5f877891e09474813d61dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac327e3c798af088a0732586d95da4aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#ac327e3c798af088a0732586d95da4aae">CalculateBrushStampCentersAndStrokeRegion</a> (const AZ::Vector3 &amp;brushCenter, const <a class="el" href="class_az_framework_1_1_paint_brush_settings.html">PaintBrushSettings</a> &amp;brushSettings, AZStd::vector&lt; AZ::Vector3 &gt; &amp;brushStampCenters, AZ::Aabb &amp;strokeRegion)</td></tr>
+<tr class="separator:ac327e3c798af088a0732586d95da4aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:adc967049d5d405f43b5381d9c0147237"><td class="memItemLeft" align="right" valign="top">static AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#adc967049d5d405f43b5381d9c0147237">OptionallyAdjustTo2D</a> (const AZ::Vector3 &amp;location)</td></tr>
+<tr class="separator:adc967049d5d405f43b5381d9c0147237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa6202241fe79f83bd1b9b98c2f5d35"><td class="memItemLeft" align="right" valign="top">static <br class="typebreak"/>
+<a class="el" href="class_az_framework_1_1_paint_brush_notifications.html#ad3342c1b878c291a4ed11c6474f1ef7f">PaintBrushNotifications::BlendFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#a1aa6202241fe79f83bd1b9b98c2f5d35">GetBlendFunction</a> (const PaintBrushBlendMode &amp;blendMode)</td></tr>
+<tr class="separator:a1aa6202241fe79f83bd1b9b98c2f5d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec94cc55885401e6bb4a44186beb10d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec94cc55885401e6bb4a44186beb10d9"></a>
+static AZStd::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#aec94cc55885401e6bb4a44186beb10d9">CalculateGaussianWeights</a> (size_t smoothingRadius)</td></tr>
+<tr class="memdesc:aec94cc55885401e6bb4a44186beb10d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the Gaussian weights to use for combining all the sampled pixels for the smoothing function. <br/></td></tr>
+<tr class="separator:aec94cc55885401e6bb4a44186beb10d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b547e57f9693699c78540779a023b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#a49b547e57f9693699c78540779a023b2">CalculatePointsInBrush</a> (const <a class="el" href="class_az_framework_1_1_paint_brush_settings.html">PaintBrushSettings</a> &amp;brushSettings, const AZStd::vector&lt; AZ::Vector3 &gt; &amp;brushStampCenters, AZStd::span&lt; const AZ::Vector3 &gt; points, AZStd::vector&lt; AZ::Vector3 &gt; &amp;validPoints, AZStd::vector&lt; float &gt; &amp;opacities)</td></tr>
+<tr class="separator:a49b547e57f9693699c78540779a023b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a76a77e9dc1440390f8012c0ce4f93a24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76a77e9dc1440390f8012c0ce4f93a24"></a>
+AZ::EntityComponentIdPair&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#a76a77e9dc1440390f8012c0ce4f93a24">m_ownerEntityComponentId</a></td></tr>
+<tr class="memdesc:a76a77e9dc1440390f8012c0ce4f93a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">The entity/component that owns this paintbrush. <br/></td></tr>
+<tr class="separator:a76a77e9dc1440390f8012c0ce4f93a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6070e15d069c0df6aabf1b07c84ecc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a6070e15d069c0df6aabf1b07c84ecc"></a>
+AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#a8a6070e15d069c0df6aabf1b07c84ecc">m_lastBrushCenter</a></td></tr>
+<tr class="memdesc:a8a6070e15d069c0df6aabf1b07c84ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location of the last mouse point that we processed while painting. <br/></td></tr>
+<tr class="separator:a8a6070e15d069c0df6aabf1b07c84ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa21d0ec710a9e587c69e66e1b9d9ce8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa21d0ec710a9e587c69e66e1b9d9ce8"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#aaa21d0ec710a9e587c69e66e1b9d9ce8">m_distanceSinceLastDraw</a> = 0.0f</td></tr>
+<tr class="memdesc:aaa21d0ec710a9e587c69e66e1b9d9ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance that the mouse has traveled since the last time we drew a paint stamp. <br/></td></tr>
+<tr class="separator:aaa21d0ec710a9e587c69e66e1b9d9ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4b07807fe32ea90a1223853dce037f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a4b07807fe32ea90a1223853dce037f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#a8a4b07807fe32ea90a1223853dce037f">m_isInPaintMode</a> = false</td></tr>
+<tr class="memdesc:a8a4b07807fe32ea90a1223853dce037f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Track whether or not the paintbrush is currently active. <br/></td></tr>
+<tr class="separator:a8a4b07807fe32ea90a1223853dce037f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af192ea1524fcdd86e0ed13e02f66a2c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af192ea1524fcdd86e0ed13e02f66a2c5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#af192ea1524fcdd86e0ed13e02f66a2c5">m_isInBrushStroke</a> = false</td></tr>
+<tr class="memdesc:af192ea1524fcdd86e0ed13e02f66a2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Track when a brush stroke is active. <br/></td></tr>
+<tr class="separator:af192ea1524fcdd86e0ed13e02f66a2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837aee5cca48eba2b55c9c80baf8b689"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a837aee5cca48eba2b55c9c80baf8b689"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#a837aee5cca48eba2b55c9c80baf8b689">m_isFirstPointInBrushStrokeMovement</a> = false</td></tr>
+<tr class="memdesc:a837aee5cca48eba2b55c9c80baf8b689"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first point in a brush stroke movement starts the stroke, and subsequent points continue from the previous location. <br/></td></tr>
+<tr class="separator:a837aee5cca48eba2b55c9c80baf8b689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a6e4921b489079687c31126517f0332ef"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_paint_brush.html#a6e4921b489079687c31126517f0332ef">PaintIn2D</a> = true</td></tr>
+<tr class="separator:a6e4921b489079687c31126517f0332ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_framework_1_1_paint_brush.html">PaintBrush</a> contains the core logic for painting functionality. It handles all of the specific calculations for determining the correct values to paint or smooth as a brush moves across the world in a generic way. It relies on a listener to the PaintBrushNotificationBus to provide the other half of the logic for fetching and applying the values themselves.</p>
@@ -116,6 +171,156 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <li>The paintbrush responds with the specific painted values for each of those positions based on the brush shape and settings. This back-and-forth is needed so that we can keep a clean separation between the paintbrush and the listener. The paintbrush doesn't have knowledge of which points in the world (or at which resolution) the listener needs, and the listener doesn't have knowledge of the exact shape, size, and hardness of the paintbrush. The separation allows the paintbrush to add features over time without having to change the listeners, and it enables more systems to use the paintbrush without requiring specialized logic inside the paintbrush itself. </li>
 </ol>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac327e3c798af088a0732586d95da4aae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::PaintBrush::CalculateBrushStampCentersAndStrokeRegion </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>brushCenter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_paint_brush_settings.html">PaintBrushSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>brushSettings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::vector&lt; AZ::Vector3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>brushStampCenters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::Aabb &amp;&#160;</td>
+          <td class="paramname"><em>strokeRegion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generates a list of brush stamp centers and an AABB around the brush stamps for the current brush stroke movement. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brushCenter</td><td>The current center of the paintbrush. </td></tr>
+    <tr><td class="paramname">brushSettings</td><td>The current paintbrush settings. </td></tr>
+    <tr><td class="paramname">brushStampCenters</td><td>[out] The list of brush centers to use for this brush stroke movement. </td></tr>
+    <tr><td class="paramname">strokeRegion</td><td>[out] The AABB around the brush stamps in the brushStampCenters list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a49b547e57f9693699c78540779a023b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AzFramework::PaintBrush::CalculatePointsInBrush </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_az_framework_1_1_paint_brush_settings.html">PaintBrushSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>brushSettings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::vector&lt; AZ::Vector3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>brushStampCenters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::span&lt; const AZ::Vector3 &gt;&#160;</td>
+          <td class="paramname"><em>points</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::vector&lt; AZ::Vector3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>validPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>opacities</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Determine which of the passed-in points are within our current brush stroke, and calculate the opacity at each point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brushSettings</td><td>The current paintbrush settings. </td></tr>
+    <tr><td class="paramname">brushStampCenters</td><td>The list of brush centers for each stamp in our current brush stroke </td></tr>
+    <tr><td class="paramname">points</td><td>The list of points to calculate values for within our brush stroke </td></tr>
+    <tr><td class="paramname">validPoints</td><td>[out] The subset of the input points that are within the brush stroke </td></tr>
+    <tr><td class="paramname">opacities</td><td>[out] For each point in validPoints, the opacity of the brush at that point </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1aa6202241fe79f83bd1b9b98c2f5d35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_az_framework_1_1_paint_brush_notifications.html#ad3342c1b878c291a4ed11c6474f1ef7f">PaintBrushNotifications::BlendFn</a> AzFramework::PaintBrush::GetBlendFunction </td>
+          <td>(</td>
+          <td class="paramtype">const PaintBrushBlendMode &amp;&#160;</td>
+          <td class="paramname"><em>blendMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get an appropriate blend function for the requested blend mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blendMode</td><td>The blend mode to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a664c2d5c90aefbb319064f25d7d9de54"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +352,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <p>Returns whether or not the paint mode is currently active. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if paint mode is active, false if it isn't. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc967049d5d405f43b5381d9c0147237"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static AZ::Vector3 AzFramework::PaintBrush::OptionallyAdjustTo2D </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>location</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adjust the given location to either remain in 3D or get "flattened" to 2D with a Z value of 0 depending on the value of PaintIn2D. </p>
 
 </div>
 </div>
@@ -257,13 +487,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6e4921b489079687c31126517f0332ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool AzFramework::PaintBrush::PaintIn2D = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For now, the paintbrush will perform all of its calculations in 2D space. This could eventually get exposed as a paintbrush setting if we add a paintbrush consumer that needs to paint in 3D space. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/PaintBrush/PaintBrush.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

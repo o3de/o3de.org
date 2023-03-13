@@ -55,6 +55,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_framework_1_1_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -165,6 +167,39 @@ static constexpr AZStd::string_view&#160;</td><td class="memItemRight" valign="b
 static constexpr AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>EditorMainSceneName</b> = &quot;Editor&quot;</td></tr>
 <tr class="separator:af8c6e82b535043bc39659d21575676b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac5773a228e84e6bea9d198cc08089a76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5773a228e84e6bea9d198cc08089a76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkForDestruction</b> ()</td></tr>
+<tr class="separator:ac5773a228e84e6bea9d198cc08089a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e36474b7ca497f200fe4ef01bb3a14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96e36474b7ca497f200fe4ef01bb3a14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSubsystem</b> (size_t index, const AZ::TypeId &amp;subsystemType)</td></tr>
+<tr class="separator:a96e36474b7ca497f200fe4ef01bb3a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a41c6e52799d0fa3fe517b412dbe66386"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41c6e52799d0fa3fe517b412dbe66386"></a>
+RemovalEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_removalEvent</b></td></tr>
+<tr class="separator:a41c6e52799d0fa3fe517b412dbe66386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05fa20a6b174a4cf71178c0e85dd164f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05fa20a6b174a4cf71178c0e85dd164f"></a>
+SubsystemEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_subsystemEvent</b></td></tr>
+<tr class="separator:a05fa20a6b174a4cf71178c0e85dd164f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412db3850df8888db25733032e7cfae9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a412db3850df8888db25733032e7cfae9"></a>
+AZStd::vector&lt; AZ::TypeId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_systemKeys</b></td></tr>
+<tr class="separator:a412db3850df8888db25733032e7cfae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909483a136dff799294c97685a98e497"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a909483a136dff799294c97685a98e497"></a>
+AZStd::vector&lt; AZStd::any &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_systemObjects</b></td></tr>
+<tr class="separator:a909483a136dff799294c97685a98e497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b7d8bfdd385aeffd6d6d4f89be93d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83b7d8bfdd385aeffd6d6d4f89be93d1"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:a83b7d8bfdd385aeffd6d6d4f89be93d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3fc93e74890c33c1e2ec43408627ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e3fc93e74890c33c1e2ec43408627ea"></a>
+AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_scene.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b></td></tr>
+<tr class="separator:a8e3fc93e74890c33c1e2ec43408627ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8103e416654e8d6c07190b4647d37da6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8103e416654e8d6c07190b4647d37da6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isAlive</b> { true }</td></tr>
+<tr class="separator:a8103e416654e8d6c07190b4647d37da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:aeea257e03c11fc9b4c208d6ad691bc4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeea257e03c11fc9b4c208d6ad691bc4f"></a>
@@ -178,7 +213,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ISceneSystem</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

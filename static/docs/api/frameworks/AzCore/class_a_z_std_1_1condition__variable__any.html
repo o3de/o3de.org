@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1condition__variable__any-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::condition_variable_any Class Reference</div>  </div>
@@ -131,6 +133,24 @@ template&lt;class Lock , class Rep , class Period &gt; </td></tr>
 template&lt;class Lock , class Rep , class Period , class Predicate &gt; </td></tr>
 <tr class="memitem:aad30881936534314af70367709336974"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wait_for</b> (Lock &amp;lock, const chrono::duration&lt; Rep, Period &gt; &amp;rel_time, Predicate pred)</td></tr>
 <tr class="separator:aad30881936534314af70367709336974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1fdac6c452fb3d12d25721718cac8c39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fdac6c452fb3d12d25721718cac8c39"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>condition_variable_any</b> (const <a class="el" href="class_a_z_std_1_1condition__variable__any.html">condition_variable_any</a> &amp;)</td></tr>
+<tr class="separator:a1fdac6c452fb3d12d25721718cac8c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f277f25256e5f2fbc5e122528b578f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f277f25256e5f2fbc5e122528b578f2"></a>
+<a class="el" href="class_a_z_std_1_1condition__variable__any.html">condition_variable_any</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1condition__variable__any.html">condition_variable_any</a> &amp;)</td></tr>
+<tr class="separator:a9f277f25256e5f2fbc5e122528b578f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9fd26223a42d5550aa3923b06f977cc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fd26223a42d5550aa3923b06f977cc3"></a>
+native_cond_var_data_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_cond_var</b></td></tr>
+<tr class="separator:a9fd26223a42d5550aa3923b06f977cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0818577e0f187cf35dfb1adf63acaf4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0818577e0f187cf35dfb1adf63acaf4f"></a>
+native_mutex_data_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="separator:a0818577e0f187cf35dfb1adf63acaf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Lock type shall meet the requirements for a Mutex type, except that try_lock is not required. </p>
@@ -143,7 +163,7 @@ template&lt;class Lock , class Rep , class Period , class Predicate &gt; </td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

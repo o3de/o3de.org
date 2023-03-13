@@ -54,6 +54,9 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_entity_context_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorEntityContextComponent Class Reference</div>  </div>
@@ -177,17 +180,108 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <tr class="memitem:a50b437445e6c4a0fc6a9729bd5bea200"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50b437445e6c4a0fc6a9729bd5bea200"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;dependent)</td></tr>
 <tr class="separator:a50b437445e6c4a0fc6a9729bd5bea200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae871bb3be87f7acf7005810bdbd169df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae871bb3be87f7acf7005810bdbd169df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnContextEntitiesAdded</b> (const EntityList &amp;entities) override</td></tr>
+<tr class="separator:ae871bb3be87f7acf7005810bdbd169df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47203096b8e5813f3e4a56c4d700d6d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47203096b8e5813f3e4a56c4d700d6d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnContextEntityRemoved</b> (const AZ::EntityId &amp;id) override</td></tr>
+<tr class="separator:a47203096b8e5813f3e4a56c4d700d6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7133ca4ea0b3b84b64e039a6f60eb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc7133ca4ea0b3b84b64e039a6f60eb5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupEditorEntity</b> (AZ::Entity *entity)</td></tr>
+<tr class="separator:acc7133ca4ea0b3b84b64e039a6f60eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88907656f143ff7605982fc58237ad66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88907656f143ff7605982fc58237ad66"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupEditorEntities</b> (const EntityList &amp;entities)</td></tr>
+<tr class="separator:a88907656f143ff7605982fc58237ad66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef51de088f797407f01b186be7af7e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afef51de088f797407f01b186be7af7e5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFromStreamComplete</b> (bool loadedSuccessfully)</td></tr>
+<tr class="separator:afef51de088f797407f01b186be7af7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ae928847743ec146114f0fb75adb8c1c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae928847743ec146114f0fb75adb8c1c1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EditorEntityContextComponent</b> (const <a class="el" href="class_az_tools_framework_1_1_editor_entity_context_component.html">EditorEntityContextComponent</a> &amp;)=delete</td></tr>
+<tr class="separator:ae928847743ec146114f0fb75adb8c1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773accf8cd3787fb13c7c9ef3f44b7c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a773accf8cd3787fb13c7c9ef3f44b7c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveStreamForGameBegin</b> (AZ::IO::GenericStream &amp;gameStream, AZ::DataStream::StreamType streamType, AZStd::vector&lt; AZStd::unique_ptr&lt; AZ::Entity &gt;&gt; &amp;levelEntities) override</td></tr>
+<tr class="separator:a773accf8cd3787fb13c7c9ef3f44b7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b11712b5263740e7a25e77109d1a155"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b11712b5263740e7a25e77109d1a155"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveStreamForGameSuccess</b> (AZ::IO::GenericStream &amp;gameStream) override</td></tr>
+<tr class="separator:a5b11712b5263740e7a25e77109d1a155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7de4bb2d974ad2319c2856aaedde55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a7de4bb2d974ad2319c2856aaedde55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveStreamForGameFailure</b> (AZStd::string_view failureString) override</td></tr>
+<tr class="separator:a0a7de4bb2d974ad2319c2856aaedde55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8d4fba997c5658f2e1d82ee91cd6c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc8d4fba997c5658f2e1d82ee91cd6c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStartGameModeRequest</b> () override</td></tr>
+<tr class="separator:adc8d4fba997c5658f2e1d82ee91cd6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a845b8e452b627bf286ce2e8397b06e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a845b8e452b627bf286ce2e8397b06e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStopGameModeRequest</b> () override</td></tr>
+<tr class="separator:a5a845b8e452b627bf286ce2e8397b06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0630adc1bae6705efccb034bd3eec3d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0630adc1bae6705efccb034bd3eec3d0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_context_component.html#a0630adc1bae6705efccb034bd3eec3d0">m_isRunningGame</a></td></tr>
+<tr class="memdesc:a0630adc1bae6705efccb034bd3eec3d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the editor is simulating the game. <br/></td></tr>
+<tr class="separator:a0630adc1bae6705efccb034bd3eec3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd132731d78399528f61e85c1c636b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8dd132731d78399528f61e85c1c636b1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_context_component.html#a8dd132731d78399528f61e85c1c636b1">m_isRequestingGame</a> = false</td></tr>
+<tr class="memdesc:a8dd132731d78399528f61e85c1c636b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether or not the editor has been requested to move to game mode. <br/></td></tr>
+<tr class="separator:a8dd132731d78399528f61e85c1c636b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5149fa4ca83b8ef18f07df6a33a037aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5149fa4ca83b8ef18f07df6a33a037aa"></a>
+EntityIdList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_context_component.html#a5149fa4ca83b8ef18f07df6a33a037aa">m_selectedBeforeStartingGame</a></td></tr>
+<tr class="memdesc:a5149fa4ca83b8ef18f07df6a33a037aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of selected entities prior to entering game. <br/></td></tr>
+<tr class="separator:a5149fa4ca83b8ef18f07df6a33a037aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b305e6256a7218787c926e9f94be1be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b305e6256a7218787c926e9f94be1be"></a>
+EntityIdToEntityIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_context_component.html#a8b305e6256a7218787c926e9f94be1be">m_editorToRuntimeIdMap</a></td></tr>
+<tr class="memdesc:a8b305e6256a7218787c926e9f94be1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bidirectional mapping of runtime entity Ids to their editor counterparts (relevant during in-editor simulation). <br/></td></tr>
+<tr class="separator:a8b305e6256a7218787c926e9f94be1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8925c02717063a5da61dbc2c61f0eb1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8925c02717063a5da61dbc2c61f0eb1a"></a>
+EntityIdToEntityIdMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_runtimeToEditorIdMap</b></td></tr>
+<tr class="separator:a8925c02717063a5da61dbc2c61f0eb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeaa2a7490aa86e5827054ac5fb3012d"><td class="memItemLeft" align="right" valign="top">AZ::ComponentTypeList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_context_component.html#abeaa2a7490aa86e5827054ac5fb3012d">m_requiredEditorComponentTypes</a></td></tr>
+<tr class="separator:abeaa2a7490aa86e5827054ac5fb3012d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6f80e299f6ee3b23bec4455e0dfc95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b6f80e299f6ee3b23bec4455e0dfc95"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isLegacySliceService</b></td></tr>
+<tr class="separator:a8b6f80e299f6ee3b23bec4455e0dfc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4953d30cbbb2059be1c9f78babc4ca86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4953d30cbbb2059be1c9f78babc4ca86"></a>
+<a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_undo_cache_interface.html">UndoSystem::UndoCacheInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoCacheInterface</b> = nullptr</td></tr>
+<tr class="separator:a4953d30cbbb2059be1c9f78babc4ca86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>System component responsible for owning the edit-time entity context.</p>
 <p>The editor entity context owns entities in the world, within the editor. These entities typically own components inheriting from EditorComponentBase. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="abeaa2a7490aa86e5827054ac5fb3012d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::ComponentTypeList AzToolsFramework::EditorEntityContextComponent::m_requiredEditorComponentTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Array of types of required components added to all Editor entities with EditorEntityContextRequestBus::Events::AddRequiredComponents() </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Entity/EditorEntityContextComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_logging_1_1_log_table_item_delegate-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Logging::LogTableItemDelegate Class Reference</div>  </div>
@@ -72,6 +74,21 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> (const 
 <tr class="memitem:a8ba0d02cad2b24b2cbfc4cd9a11eba3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ba0d02cad2b24b2cbfc4cd9a11eba3a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>geometriesUpdating</b> (AzQtComponents::TableView *tableView) override</td></tr>
 <tr class="separator:a8ba0d02cad2b24b2cbfc4cd9a11eba3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8156f837421223da79eaf33a99e03447"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8156f837421223da79eaf33a99e03447"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initStyleOption</b> (QStyleOptionViewItem *option, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:a8156f837421223da79eaf33a99e03447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90c785f91cd6004377142ea9575c5bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa90c785f91cd6004377142ea9575c5bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearCachedValues</b> () override</td></tr>
+<tr class="separator:aa90c785f91cd6004377142ea9575c5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a740b1c99490fa73a2a745d17dcb4c0e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a740b1c99490fa73a2a745d17dcb4c0e1"></a>
+AZStd::unordered_map&lt; int, QSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedSizes</b></td></tr>
+<tr class="separator:a740b1c99490fa73a2a745d17dcb4c0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/Logging/LogTableItemDelegate.h</li>
@@ -79,7 +96,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>geometriesUpdating</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

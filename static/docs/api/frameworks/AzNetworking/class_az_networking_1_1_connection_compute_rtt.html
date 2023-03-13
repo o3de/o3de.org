@@ -50,6 +50,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_connection_compute_rtt-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::ConnectionComputeRtt Class Reference</div>  </div>
@@ -71,6 +73,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab1bd4ef1eaa944ccd630795f04d3c172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a3c0a5c8bd612d323adc08c5b51d020"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_connection_compute_rtt.html#a8a3c0a5c8bd612d323adc08c5b51d020">GetRoundTripTimeSeconds</a> () const </td></tr>
 <tr class="separator:a8a3c0a5c8bd612d323adc08c5b51d020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3e05588e513f2d040a0357cf7bca1419"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e05588e513f2d040a0357cf7bca1419"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_roundTripTime</b> = InitialRoundTripTime</td></tr>
+<tr class="separator:a3e05588e513f2d040a0357cf7bca1419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d3c586e94e6fb07b9fb07a5f16a4d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5d3c586e94e6fb07b9fb07a5f16a4d0"></a>
+<a class="el" href="struct_az_networking_1_1_connection_packet_entry.html">ConnectionPacketEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entries</b> [MaxTrackableEntries]</td></tr>
+<tr class="separator:ae5d3c586e94e6fb07b9fb07a5f16a4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ad8f3c2ded5f292bda9bd5ad55c73e6c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8f3c2ded5f292bda9bd5ad55c73e6c4"></a>
+static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxTrackableEntries</b> = 8</td></tr>
+<tr class="separator:ad8f3c2ded5f292bda9bd5ad55c73e6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad2c93c67995ab854932aea318df2a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ad2c93c67995ab854932aea318df2a9"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>InitialRoundTripTime</b> = 0.1f</td></tr>
+<tr class="separator:a3ad2c93c67995ab854932aea318df2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>helper class used to compute round trip time to an connection. </p>
@@ -198,7 +218,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

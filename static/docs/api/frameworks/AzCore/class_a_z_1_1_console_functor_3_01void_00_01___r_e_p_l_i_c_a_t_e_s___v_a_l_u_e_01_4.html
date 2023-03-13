@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_console_functor_3_01void_00_01___r_e_p_l_i_c_a_t_e_s___v_a_l_u_e_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ConsoleFunctor&lt; void, _REPLICATES_VALUE &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -114,6 +116,18 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:a4bed55bc5f96d35d478b5a416b02e8d9 inherit pub_methods_class_a_z_1_1_console_functor_base"><td class="memTemplItemLeft" align="right" valign="top">GetValueResult&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#a4bed55bc5f96d35d478b5a416b02e8d9">GetValue</a> (RETURN_TYPE &amp;outResult) const </td></tr>
 <tr class="separator:a4bed55bc5f96d35d478b5a416b02e8d9 inherit pub_methods_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad601e2ba47e82349704b371a941729f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad601e2ba47e82349704b371a941729f0"></a>
+GetValueResult&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueAsString</b> ([[maybe_unused]] <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">CVarFixedString</a> &amp;outString) const override</td></tr>
+<tr class="separator:ad601e2ba47e82349704b371a941729f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6b7a1ffe042f9d24b38d0592840e24ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b7a1ffe042f9d24b38d0592840e24ab"></a>
+FunctorSignature&#160;</td><td class="memItemRight" valign="bottom"><b>m_function</b></td></tr>
+<tr class="separator:a6b7a1ffe042f9d24b38d0592840e24ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_a_z_1_1_console_functor_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_a_z_1_1_console_functor_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_a_z_1_1_console_functor_base.html">AZ::ConsoleFunctorBase</a></td></tr>
@@ -121,6 +135,48 @@ Additional Inherited Members</h2></td></tr>
 static <a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console_functor_base.html#ab90b805170d565aa4ea108cb6cb26069">GetDeferredHead</a> ()</td></tr>
 <tr class="memdesc:ab90b805170d565aa4ea108cb6cb26069 inherit pub_static_methods_class_a_z_1_1_console_functor_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to link cvars and functors from various modules to the console as they are loaded. <br/></td></tr>
 <tr class="separator:ab90b805170d565aa4ea108cb6cb26069 inherit pub_static_methods_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_console_functor_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_console_functor_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_console_functor_base.html">AZ::ConsoleFunctorBase</a></td></tr>
+<tr class="memitem:a94004e5ef6f2de70bad1b71466c70315 inherit pro_methods_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94004e5ef6f2de70bad1b71466c70315"></a>
+virtual GetValueResult&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueAsString</b> (<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">CVarFixedString</a> &amp;outString) const </td></tr>
+<tr class="separator:a94004e5ef6f2de70bad1b71466c70315 inherit pro_methods_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977859b82a381ad249d0537191907fa0 inherit pro_methods_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a977859b82a381ad249d0537191907fa0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Link</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;head)</td></tr>
+<tr class="separator:a977859b82a381ad249d0537191907fa0 inherit pro_methods_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2b44e1d2b925e495bc884e4f86c5b9 inherit pro_methods_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc2b44e1d2b925e495bc884e4f86c5b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Unlink</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;head)</td></tr>
+<tr class="separator:abc2b44e1d2b925e495bc884e4f86c5b9 inherit pro_methods_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_console_functor_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_console_functor_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_console_functor_base.html">AZ::ConsoleFunctorBase</a></td></tr>
+<tr class="memitem:a15592633e800f19b0d1097653a6700f7 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15592633e800f19b0d1097653a6700f7"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b> = &quot;&quot;</td></tr>
+<tr class="separator:a15592633e800f19b0d1097653a6700f7 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde9132db1dbd6363651a40015bbbbb5 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acde9132db1dbd6363651a40015bbbbb5"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_desc</b> = &quot;&quot;</td></tr>
+<tr class="separator:acde9132db1dbd6363651a40015bbbbb5 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedec608eaeb49cd228ca2ca6cdbe50c inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaedec608eaeb49cd228ca2ca6cdbe50c"></a>
+ConsoleFunctorFlags&#160;</td><td class="memItemRight" valign="bottom"><b>m_flags</b> = ConsoleFunctorFlags::Null</td></tr>
+<tr class="separator:aaedec608eaeb49cd228ca2ca6cdbe50c inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9aebc6b462f6694e0536a0772f3002 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade9aebc6b462f6694e0536a0772f3002"></a>
+<a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_typeId</b></td></tr>
+<tr class="separator:ade9aebc6b462f6694e0536a0772f3002 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63211686cc6e647e2edd56bf90fab51 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af63211686cc6e647e2edd56bf90fab51"></a>
+<a class="el" href="class_a_z_1_1_i_console.html">IConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_console</b> = nullptr</td></tr>
+<tr class="separator:af63211686cc6e647e2edd56bf90fab51 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7828573c28e8b0bef1013fbde6e0d0 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad7828573c28e8b0bef1013fbde6e0d0"></a>
+<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prev</b> = nullptr</td></tr>
+<tr class="separator:aad7828573c28e8b0bef1013fbde6e0d0 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553850f32da29c04dbdcce39a4e746e3 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a553850f32da29c04dbdcce39a4e746e3"></a>
+<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_next</b> = nullptr</td></tr>
+<tr class="separator:a553850f32da29c04dbdcce39a4e746e3 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21e497bb882189d674bf7891bdd6517 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad21e497bb882189d674bf7891bdd6517"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isDeferred</b> = true</td></tr>
+<tr class="separator:ad21e497bb882189d674bf7891bdd6517 inherit pro_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_class_a_z_1_1_console_functor_base"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_a_z_1_1_console_functor_base')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_a_z_1_1_console_functor_base.html">AZ::ConsoleFunctorBase</a></td></tr>
+<tr class="memitem:aca956ef23ea47db54a0ca88f49c300a2 inherit pro_static_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca956ef23ea47db54a0ca88f49c300a2"></a>
+static <a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_deferredHead</b></td></tr>
+<tr class="separator:aca956ef23ea47db54a0ca88f49c300a2 inherit pro_static_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf04376e2420532054e9815afcf4d800 inherit pro_static_attribs_class_a_z_1_1_console_functor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf04376e2420532054e9815afcf4d800"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>s_deferredHeadInvoked</b></td></tr>
+<tr class="separator:abf04376e2420532054e9815afcf4d800 inherit pro_static_attribs_class_a_z_1_1_console_functor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a8605d056a0a2f9f8c4a2ff25b9e1834a"></a>
@@ -195,7 +251,7 @@ template&lt;bool _REPLICATES_VALUE&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

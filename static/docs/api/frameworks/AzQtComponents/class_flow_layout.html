@@ -47,6 +47,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_flow_layout-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">FlowLayout Class Reference</div>  </div>
@@ -99,6 +101,27 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () cons
 <tr class="memitem:a3f106cc1ddb4459c9c819680780c951f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f106cc1ddb4459c9c819680780c951f"></a>
 QLayoutItem *&#160;</td><td class="memItemRight" valign="bottom"><b>takeAt</b> (int index) Q_DECL_OVERRIDE</td></tr>
 <tr class="separator:a3f106cc1ddb4459c9c819680780c951f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2a2a9fba22a112465ac0ae090aeca28d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a2a9fba22a112465ac0ae090aeca28d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>doLayout</b> (const QRect &amp;rect, bool testOnly) const </td></tr>
+<tr class="separator:a2a2a9fba22a112465ac0ae090aeca28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5587a685db946a053451293d7493a523"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5587a685db946a053451293d7493a523"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>smartSpacing</b> (QStyle::PixelMetric pm) const </td></tr>
+<tr class="separator:a5587a685db946a053451293d7493a523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a140db2eb29b4815982ccab3199ae86fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a140db2eb29b4815982ccab3199ae86fc"></a>
+QList&lt; QLayoutItem * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>itemList</b></td></tr>
+<tr class="separator:a140db2eb29b4815982ccab3199ae86fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6467ca5f110344718fedd66894fe69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d6467ca5f110344718fedd66894fe69"></a>
+AZ_POP_DISABLE_WARNING int&#160;</td><td class="memItemRight" valign="bottom"><b>m_hSpace</b></td></tr>
+<tr class="separator:a3d6467ca5f110344718fedd66894fe69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24b23dbcc261472940b3755ba63a4c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab24b23dbcc261472940b3755ba63a4c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_vSpace</b></td></tr>
+<tr class="separator:ab24b23dbcc261472940b3755ba63a4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/FlowLayout.h</li>
@@ -106,7 +129,7 @@ QLayoutItem *&#160;</td><td class="memItemRight" valign="bottom"><b>takeAt</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

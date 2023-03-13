@@ -54,6 +54,9 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode Class Reference</div>  </div>
@@ -91,6 +94,49 @@ static AZ_CLASS_ALLOCATOR_DECL void&#160;</td><td class="memItemRight" valign="b
 <tr class="separator:a4ef1182dba2a382630d45a120fd32363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009943fd64db9be7f0a8190ea875ea57"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#a009943fd64db9be7f0a8190ea875ea57">BindActionsToMenus</a> ()</td></tr>
 <tr class="separator:a009943fd64db9be7f0a8190ea875ea57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:adcee841b7da6c3843b4c5e77cbd0fe78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcee841b7da6c3843b4c5e77cbd0fe78"></a>
+AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#adcee841b7da6c3843b4c5e77cbd0fe78">GetEntityId</a> () const </td></tr>
+<tr class="memdesc:adcee841b7da6c3843b4c5e77cbd0fe78"><td class="mdescLeft">&#160;</td><td class="mdescRight">The EntityId this <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> instance is associated with. <br/></td></tr>
+<tr class="separator:adcee841b7da6c3843b4c5e77cbd0fe78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cfa8d65889665d44c3e2ab4967ebe1"><td class="memItemLeft" align="right" valign="top">AZ::EntityComponentIdPair&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#a71cfa8d65889665d44c3e2ab4967ebe1">GetEntityComponentIdPair</a> () const </td></tr>
+<tr class="separator:a71cfa8d65889665d44c3e2ab4967ebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9671503fd372563b25c496100383af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff9671503fd372563b25c496100383af"></a>
+AZ::ComponentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#aff9671503fd372563b25c496100383af">GetComponentId</a> () const final</td></tr>
+<tr class="memdesc:aff9671503fd372563b25c496100383af"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ComponentId this <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> instance is associated with. <br/></td></tr>
+<tr class="separator:aff9671503fd372563b25c496100383af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e0a238f730da12ab8afcccc5f98d9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3e0a238f730da12ab8afcccc5f98d9c"></a>
+AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#ad3e0a238f730da12ab8afcccc5f98d9c">GetComponentType</a> () const final</td></tr>
+<tr class="memdesc:ad3e0a238f730da12ab8afcccc5f98d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying Component type for this <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a>. <br/></td></tr>
+<tr class="separator:ad3e0a238f730da12ab8afcccc5f98d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2da5c0babde689be5b5102c03b2aae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b2da5c0babde689be5b5102c03b2aae"></a>
+AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponentModeType</b> () const </td></tr>
+<tr class="separator:a8b2da5c0babde689be5b5102c03b2aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859ed0777d68e6cdf6c11b2ce3a185b5"><td class="memItemLeft" align="right" valign="top">virtual AZStd::vector<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ViewportUi::ClusterId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#a859ed0777d68e6cdf6c11b2ce3a185b5">PopulateViewportUiImpl</a> ()</td></tr>
+<tr class="separator:a859ed0777d68e6cdf6c11b2ce3a185b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5f505e2245a111e24de16a5479eebe7f"><td class="memItemLeft" align="right" valign="top">virtual AZStd::vector<br class="typebreak"/>
+&lt; <a class="el" href="struct_az_tools_framework_1_1_action_override.html">ActionOverride</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#a5f505e2245a111e24de16a5479eebe7f">PopulateActionsImpl</a> ()</td></tr>
+<tr class="separator:a5f505e2245a111e24de16a5479eebe7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5fc8a42bbb679ff4918b4e7ae2c804"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a5fc8a42bbb679ff4918b4e7ae2c804"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabInstancePropagationEnd</b> () override</td></tr>
+<tr class="separator:a5a5fc8a42bbb679ff4918b4e7ae2c804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2dbba30128f2f5cbf7b8dc1b4d0f26e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dbba30128f2f5cbf7b8dc1b4d0f26e8"></a>
+AZ::EntityComponentIdPair&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#a2dbba30128f2f5cbf7b8dc1b4d0f26e8">m_entityComponentIdPair</a></td></tr>
+<tr class="memdesc:a2dbba30128f2f5cbf7b8dc1b4d0f26e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity and Component Id associated with this <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a>. <br/></td></tr>
+<tr class="separator:a2dbba30128f2f5cbf7b8dc1b4d0f26e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4aff06fdf779d83fe3457f8197b73fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4aff06fdf779d83fe3457f8197b73fc"></a>
+AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html#ad4aff06fdf779d83fe3457f8197b73fc">m_componentType</a></td></tr>
+<tr class="memdesc:ad4aff06fdf779d83fe3457f8197b73fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying type of the Component this <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> is for. <br/></td></tr>
+<tr class="separator:ad4aff06fdf779d83fe3457f8197b73fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract class to be inherited from by concrete ComponentModes. Exposes <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> interface and handles some useful common functionality all ComponentModes require. </p>
@@ -143,6 +189,30 @@ static AZ_CLASS_ALLOCATOR_DECL void&#160;</td><td class="memItemRight" valign="b
 
 </div>
 </div>
+<a class="anchor" id="a71cfa8d65889665d44c3e2ab4967ebe1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::EntityComponentIdPair AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode::GetEntityComponentIdPair </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The combined Entity and Component Id to uniquely identify a specific Component on a given Entity. Note: This is required when more than one Component of the same type can exists on an Entity at a time. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac12995c357ba23c1315a7a4be1d10edc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -165,6 +235,58 @@ static AZ_CLASS_ALLOCATOR_DECL void&#160;</td><td class="memItemRight" valign="b
 </div><div class="memdoc">
 <p><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> interface - populate actions for this <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a>. When PopulateActions is called, if a second action override is found with the same key, it should override the existing action if one already exists. (e.g. The 'escape' key will first deselect a vertex, then leave <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> if an action is added to deselect a vertex when one is selected) </p>
 <dl class="section attention"><dt>Attention</dt><dd>More specific actions come later in the ordering when they are added. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f505e2245a111e24de16a5479eebe7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::vector&lt;<a class="el" href="struct_az_tools_framework_1_1_action_override.html">ActionOverride</a>&gt; AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode::PopulateActionsImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html">EditorBaseComponentMode</a> interface </p>
+<dl class="section see"><dt>See Also</dt><dd>To be overridden by derived ComponentModes </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_az_tools_framework_1_1_base_shape_component_mode.html#a2c0d542f380d29e7813ac7e78074c6f2">AzToolsFramework::BaseShapeComponentMode</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a859ed0777d68e6cdf6c11b2ce3a185b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::vector&lt;<a class="el" href="class_az_tools_framework_1_1_id_type.html">ViewportUi::ClusterId</a>&gt; AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode::PopulateViewportUiImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_editor_base_component_mode.html">EditorBaseComponentMode</a> interface </p>
+<dl class="section see"><dt>See Also</dt><dd>To be overridden by derived ComponentModes </dd></dl>
 
 </div>
 </div>
@@ -198,7 +320,7 @@ static AZ_CLASS_ALLOCATOR_DECL void&#160;</td><td class="memItemRight" valign="b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

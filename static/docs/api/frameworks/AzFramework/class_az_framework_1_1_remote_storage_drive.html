@@ -53,6 +53,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_remote_storage_drive-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::RemoteStorageDrive Class Reference</div>  </div>
@@ -84,6 +87,87 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateCompletionEstim
 <tr class="memitem:a9f3ff9cef7ff44182f87b25e3308b0e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f3ff9cef7ff44182f87b25e3308b0e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CollectStatistics</b> (AZStd::vector&lt; AZ::IO::Statistic &gt; &amp;statistics) const override</td></tr>
 <tr class="separator:a9f3ff9cef7ff44182f87b25e3308b0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a531c79eb9d44f92343dbb991fec30e8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a531c79eb9d44f92343dbb991fec30e8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFile</b> (AZ::IO::FileRequest *request)</td></tr>
+<tr class="separator:a531c79eb9d44f92343dbb991fec30e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d201fed6f4ae9eed42cf131355a9bc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d201fed6f4ae9eed42cf131355a9bc9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CancelRequest</b> (AZ::IO::FileRequest *cancelRequest, AZ::IO::FileRequestPtr &amp;target)</td></tr>
+<tr class="separator:a9d201fed6f4ae9eed42cf131355a9bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61298131c41cd645917364e98d256835"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61298131c41cd645917364e98d256835"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FileExistsRequest</b> (AZ::IO::FileRequest *request)</td></tr>
+<tr class="separator:a61298131c41cd645917364e98d256835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0bd60b26c457afe615f7af0e0da919"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d0bd60b26c457afe615f7af0e0da919"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FileMetaDataRetrievalRequest</b> (AZ::IO::FileRequest *request)</td></tr>
+<tr class="separator:a2d0bd60b26c457afe615f7af0e0da919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced836a3a6d5ed05296207426d3297b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aced836a3a6d5ed05296207426d3297b5"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>FindFileInCache</b> (const AZ::IO::RequestPath &amp;filePath) const </td></tr>
+<tr class="separator:aced836a3a6d5ed05296207426d3297b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a8cbd165ada7a25befd9ca7060a2cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52a8cbd165ada7a25befd9ca7060a2cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EstimateCompletionTimeForRequest</b> (AZ::IO::FileRequest *request, AZStd::chrono::steady_clock::time_point &amp;startTime, const AZ::IO::RequestPath *&amp;activeFile) const </td></tr>
+<tr class="separator:a52a8cbd165ada7a25befd9ca7060a2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ae7c97f8793778abfe4089f96b9aca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44ae7c97f8793778abfe4089f96b9aca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushCache</b> (const AZ::IO::RequestPath &amp;filePath)</td></tr>
+<tr class="separator:a44ae7c97f8793778abfe4089f96b9aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10a434ac1c323decf7390f1efe33051"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac10a434ac1c323decf7390f1efe33051"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushEntireCache</b> ()</td></tr>
+<tr class="separator:ac10a434ac1c323decf7390f1efe33051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469b2e21c1ff1f15a350c4b67f67dc55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a469b2e21c1ff1f15a350c4b67f67dc55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Report</b> (const AZ::IO::Requests::ReportData &amp;data) const </td></tr>
+<tr class="separator:a469b2e21c1ff1f15a350c4b67f67dc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a122b144433b63ed139312b9c9136688d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a122b144433b63ed139312b9c9136688d"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_remote_file_i_o.html">AZ::IO::RemoteFileIO</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileIO</b></td></tr>
+<tr class="separator:a122b144433b63ed139312b9c9136688d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52686e46745a21c59224fe466790ef85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52686e46745a21c59224fe466790ef85"></a>
+AZ::IO::TimedAverageWindow<br class="typebreak"/>
+&lt; AZ::IO::s_statisticsWindowSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileOpenCloseTimeAverage</b></td></tr>
+<tr class="separator:a52686e46745a21c59224fe466790ef85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b6e81bb692e6730ada651ff64f1283"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5b6e81bb692e6730ada651ff64f1283"></a>
+AZ::IO::TimedAverageWindow<br class="typebreak"/>
+&lt; AZ::IO::s_statisticsWindowSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getFileExistsTimeAverage</b></td></tr>
+<tr class="separator:ae5b6e81bb692e6730ada651ff64f1283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f858ba63067c2057318287b4af2979"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45f858ba63067c2057318287b4af2979"></a>
+AZ::IO::TimedAverageWindow<br class="typebreak"/>
+&lt; AZ::IO::s_statisticsWindowSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getFileMetaDataTimeAverage</b></td></tr>
+<tr class="separator:a45f858ba63067c2057318287b4af2979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0241b00f89adc4efde4231230ef72fbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0241b00f89adc4efde4231230ef72fbb"></a>
+AZ::IO::TimedAverageWindow<br class="typebreak"/>
+&lt; AZ::IO::s_statisticsWindowSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readTimeAverage</b></td></tr>
+<tr class="separator:a0241b00f89adc4efde4231230ef72fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7478a3f73fe8925530cb993312d5f4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7478a3f73fe8925530cb993312d5f4f"></a>
+AZ::IO::AverageWindow&lt; AZ::u64, <br class="typebreak"/>
+float, <br class="typebreak"/>
+AZ::IO::s_statisticsWindowSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_readSizeAverage</b></td></tr>
+<tr class="separator:ad7478a3f73fe8925530cb993312d5f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2624687492ffcb943fb2f50a7e3781db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2624687492ffcb943fb2f50a7e3781db"></a>
+AZStd::deque<br class="typebreak"/>
+&lt; AZ::IO::FileRequest * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingRequests</b></td></tr>
+<tr class="separator:a2624687492ffcb943fb2f50a7e3781db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b91ee1cbf1f131eeba0f6a969d7d58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3b91ee1cbf1f131eeba0f6a969d7d58"></a>
+AZStd::vector<br class="typebreak"/>
+&lt; AZStd::chrono::steady_clock::time_point &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileLastUsed</b></td></tr>
+<tr class="separator:aa3b91ee1cbf1f131eeba0f6a969d7d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efd9b132dda1cf56c42426cc6ae41e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5efd9b132dda1cf56c42426cc6ae41e3"></a>
+AZStd::vector<br class="typebreak"/>
+&lt; AZ::IO::RequestPath &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_filePaths</b></td></tr>
+<tr class="separator:a5efd9b132dda1cf56c42426cc6ae41e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3e8231227647c3e31bd0be66492f8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c3e8231227647c3e31bd0be66492f8c"></a>
+AZStd::vector&lt; AZ::IO::HandleType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileHandles</b></td></tr>
+<tr class="separator:a4c3e8231227647c3e31bd0be66492f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab288b9436aa52eb9031e75b45e210be1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab288b9436aa52eb9031e75b45e210be1"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeCacheSlot</b> = AZ::IO::s_fileNotFound</td></tr>
+<tr class="separator:ab288b9436aa52eb9031e75b45e210be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a3c04a89adda5cb28a6f9ad95f1f419c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c04a89adda5cb28a6f9ad95f1f419c7"></a>
+static constexpr AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>s_maxRequests</b> = 1</td></tr>
+<tr class="separator:a3c04a89adda5cb28a6f9ad95f1f419c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/IO/RemoteStorageDrive.h</li>
@@ -91,7 +175,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CollectStatistics</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,9 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_z_lib-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ZLib Class Reference</div>  </div>
@@ -121,6 +124,33 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a80aba38e8f1e3c2e2165d298798b09ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80aba38e8f1e3c2e2165d298798b09ce"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Decompress</b> (const void *compressedData, unsigned int compressedDataSize, void *data, unsigned int &amp;dataSize, FlushType flushType=FT_NO_FLUSH)</td></tr>
 <tr class="separator:a80aba38e8f1e3c2e2165d298798b09ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7c093e7d25dc0cac87bcb02c5704f124"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c093e7d25dc0cac87bcb02c5704f124"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupDecompressHeader</b> (<a class="el" href="class_a_z_1_1_z_lib.html#aad8b7dd7d7437dce36497d64cd5372b1">Header</a> header)</td></tr>
+<tr class="separator:a7c093e7d25dc0cac87bcb02c5704f124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:af0e0aac9cb52396c906a77adc9bff7ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0e0aac9cb52396c906a77adc9bff7ee"></a>
+static void *&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateMem</b> (void *userData, unsigned int items, unsigned int size)</td></tr>
+<tr class="separator:af0e0aac9cb52396c906a77adc9bff7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69307cf43fa710e7181b797f3650ab75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69307cf43fa710e7181b797f3650ab75"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>FreeMem</b> (void *userData, void *address)</td></tr>
+<tr class="separator:a69307cf43fa710e7181b797f3650ab75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac81af16d50dca76f6b890bc3f834193c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac81af16d50dca76f6b890bc3f834193c"></a>
+z_stream_s *&#160;</td><td class="memItemRight" valign="bottom"><b>m_strDeflate</b></td></tr>
+<tr class="separator:ac81af16d50dca76f6b890bc3f834193c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9171dd4a65ebf00480c9e89bddcdf3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae9171dd4a65ebf00480c9e89bddcdf3"></a>
+z_stream_s *&#160;</td><td class="memItemRight" valign="bottom"><b>m_strInflate</b></td></tr>
+<tr class="separator:aae9171dd4a65ebf00480c9e89bddcdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8a742800121f73c4e4e571aee48ff8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8a742800121f73c4e4e571aee48ff8c"></a>
+<a class="el" href="class_a_z_1_1_i_allocator.html">IAllocator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_workMemoryAllocator</b></td></tr>
+<tr class="separator:ae8a742800121f73c4e4e571aee48ff8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The most well known and used compression algorithm. It gives the best compression ratios even on level 1, the speed and memory usage can be an issue. If you want detailed control over the compressed stream, include "AzCore/compression/zlib/zlib.h" and do it yourself! </p>
@@ -194,7 +224,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Decompress</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

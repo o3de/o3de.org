@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1regex__token__iterator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::regex_token_iterator&lt; BidirectionalIterator, Element, RegExTraits &gt; Class Template Reference</div>  </div>
@@ -130,6 +132,36 @@ const <a class="el" href="class_a_z_std_1_1sub__match.html">value_type</a> &amp;
 <tr class="memitem:a020c9fd50de0e73bd77644eb8924c7c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a020c9fd50de0e73bd77644eb8924c7c0"></a>
 <a class="el" href="class_a_z_std_1_1regex__token__iterator.html">this_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
 <tr class="separator:a020c9fd50de0e73bd77644eb8924c7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4034cc1ebdbb097424812af080348495"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4034cc1ebdbb097424812af080348495"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_Has_suffix</b> () const </td></tr>
+<tr class="separator:a4034cc1ebdbb097424812af080348495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd8cc7602c1d1303d12fcbd52d7bd0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fd8cc7602c1d1303d12fcbd52d7bd0b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>_Init</b> (BidirectionalIterator first, BidirectionalIterator last)</td></tr>
+<tr class="separator:a2fd8cc7602c1d1303d12fcbd52d7bd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbfe0682e71a6e286455858e39bafd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bbfe0682e71a6e286455858e39bafd1"></a>
+const <a class="el" href="class_a_z_std_1_1sub__match.html">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Current</b> () const </td></tr>
+<tr class="separator:a7bbfe0682e71a6e286455858e39bafd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a379e2c10428752e9fd182e721af01fd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a379e2c10428752e9fd182e721af01fd2"></a>
+<a class="el" href="class_a_z_std_1_1regex__iterator.html">PositionType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_position</b></td></tr>
+<tr class="separator:a379e2c10428752e9fd182e721af01fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b5cfd7a7e9b99e9239b62f17517925"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9b5cfd7a7e9b99e9239b62f17517925"></a>
+const <a class="el" href="class_a_z_std_1_1sub__match.html">value_type</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_result</b></td></tr>
+<tr class="separator:ad9b5cfd7a7e9b99e9239b62f17517925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba8fb4f277b3bdcbfa54558474635f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ba8fb4f277b3bdcbfa54558474635f2"></a>
+<a class="el" href="class_a_z_std_1_1sub__match.html">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_suffix</b></td></tr>
+<tr class="separator:a2ba8fb4f277b3bdcbfa54558474635f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d97c11c0c4975f9531026f4dbfbf95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5d97c11c0c4975f9531026f4dbfbf95"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_current</b></td></tr>
+<tr class="separator:ab5d97c11c0c4975f9531026f4dbfbf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3167c755fef248f4ff23281873aedb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3167c755fef248f4ff23281873aedb2"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_subs</b></td></tr>
+<tr class="separator:ad3167c755fef248f4ff23281873aedb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/string/regex.h</li>
@@ -137,7 +169,7 @@ const <a class="el" href="class_a_z_std_1_1sub__match.html">value_type</a> &amp;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

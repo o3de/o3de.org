@@ -50,6 +50,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_networking_1_1_tls_socket-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::TlsSocket Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -95,6 +96,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a0bd14ce0dbf1c9390b8d8bc8cfaa5b84 inherit pub_methods_class_az_networking_1_1_tcp_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0e01539c7551544439780276400ed0b inherit pub_methods_class_az_networking_1_1_tcp_socket"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_socket.html#ab0e01539c7551544439780276400ed0b">Receive</a> (uint8_t *outData, uint32_t size) const </td></tr>
 <tr class="separator:ab0e01539c7551544439780276400ed0b inherit pub_methods_class_az_networking_1_1_tcp_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a76bd1e24ef23513f7069fb9c92ce9449"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76bd1e24ef23513f7069fb9c92ce9449"></a>
+SSL_CTX *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sslContext</b></td></tr>
+<tr class="separator:a76bd1e24ef23513f7069fb9c92ce9449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74c6943ccfb1d9bbc1c65ec98245dd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad74c6943ccfb1d9bbc1c65ec98245dd6"></a>
+SSL *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sslSocket</b></td></tr>
+<tr class="separator:ad74c6943ccfb1d9bbc1c65ec98245dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93d960b9796033fcefe4850385ad35b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad93d960b9796033fcefe4850385ad35b"></a>
+TrustZone&#160;</td><td class="memItemRight" valign="bottom"><b>m_trustZone</b></td></tr>
+<tr class="separator:ad93d960b9796033fcefe4850385ad35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_az_networking_1_1_tcp_socket"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_az_networking_1_1_tcp_socket')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_az_networking_1_1_tcp_socket.html">AzNetworking::TcpSocket</a></td></tr>
+<tr class="memitem:ab8c4413e7b8baad3b7e7c0264ca933db inherit pro_attribs_class_az_networking_1_1_tcp_socket"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8c4413e7b8baad3b7e7c0264ca933db"></a>
+SocketFd&#160;</td><td class="memItemRight" valign="bottom"><b>m_socketFd</b></td></tr>
+<tr class="separator:ab8c4413e7b8baad3b7e7c0264ca933db inherit pro_attribs_class_az_networking_1_1_tcp_socket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>wrapper class for managing encrypted Tcp sockets. </p>
@@ -273,7 +290,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -56,6 +56,9 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1delegate_3_01_r_07_08_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::delegate&lt; R() &gt; Class Template Reference</div>  </div>
@@ -140,6 +143,44 @@ const <a class="el" href="class_a_z_std_1_1delegate__memento.html">delegate_meme
 <tr class="memitem:ac0f36460674c6f5eec77ea14b3324edc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0f36460674c6f5eec77ea14b3324edc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMemento</b> (const <a class="el" href="class_a_z_std_1_1delegate__memento.html">delegate_memento</a> &amp;<a class="el" href="class_a_z_std_1_1any.html">any</a>)</td></tr>
 <tr class="separator:ac0f36460674c6f5eec77ea14b3324edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a92e9fbb60ae9f8d699ca3478c96719bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92e9fbb60ae9f8d699ca3478c96719bf"></a>
+typedef R(*&#160;</td><td class="memItemRight" valign="bottom"><b>StaticFunctionPtr</b> )()</td></tr>
+<tr class="separator:a92e9fbb60ae9f8d699ca3478c96719bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa8788dc961a7c38a1c1311cb642409"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaa8788dc961a7c38a1c1311cb642409"></a>
+typedef R(*&#160;</td><td class="memItemRight" valign="bottom"><b>UnvoidStaticFunctionPtr</b> )()</td></tr>
+<tr class="separator:afaa8788dc961a7c38a1c1311cb642409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68f210e23a5e25afe34b458251f826f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af68f210e23a5e25afe34b458251f826f"></a>
+typedef R(Internal::GenericClass::*&#160;</td><td class="memItemRight" valign="bottom"><b>GenericMemFn</b> )()</td></tr>
+<tr class="separator:af68f210e23a5e25afe34b458251f826f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eacbf0087e6153abfcd858463c9fcda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eacbf0087e6153abfcd858463c9fcda"></a>
+typedef Internal::ClosurePtr<br class="typebreak"/>
+&lt; GenericMemFn, <br class="typebreak"/>
+StaticFunctionPtr, <br class="typebreak"/>
+UnvoidStaticFunctionPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ClosureType</b></td></tr>
+<tr class="separator:a4eacbf0087e6153abfcd858463c9fcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ee9e937bf5d653a21ad20c4c3c6b84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64ee9e937bf5d653a21ad20c4c3c6b84"></a>
+typedef struct <a class="el" href="class_a_z_std_1_1delegate.html">AZStd::delegate</a><br class="typebreak"/>
+&lt; R() &gt;::SafeBoolStruct&#160;</td><td class="memItemRight" valign="bottom"><b>UselessTypedef</b></td></tr>
+<tr class="separator:a64ee9e937bf5d653a21ad20c4c3c6b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f1a108b43d3d67e59249d030ceef8b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f1a108b43d3d67e59249d030ceef8b0"></a>
+typedef StaticFunctionPtr <br class="typebreak"/>
+SafeBoolStruct::*&#160;</td><td class="memItemRight" valign="bottom"><b>unspecified_bool_type</b></td></tr>
+<tr class="separator:a2f1a108b43d3d67e59249d030ceef8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad5df8d29cd192ea91662580edb5a9a63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5df8d29cd192ea91662580edb5a9a63"></a>
+R&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeStaticFunction</b> () const </td></tr>
+<tr class="separator:ad5df8d29cd192ea91662580edb5a9a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:accb657e75f3dbee95cdaa53883fde3d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accb657e75f3dbee95cdaa53883fde3d2"></a>
+ClosureType&#160;</td><td class="memItemRight" valign="bottom"><b>m_Closure</b></td></tr>
+<tr class="separator:accb657e75f3dbee95cdaa53883fde3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/delegate/delegate.h</li>
@@ -147,7 +188,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMemento</b> (const
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

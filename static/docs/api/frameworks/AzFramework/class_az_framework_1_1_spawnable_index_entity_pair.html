@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_framework_1_1_spawnable_index_entity_pair-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -72,6 +74,33 @@ const AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnti
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndex</b> () const </td></tr>
 <tr class="separator:ae3c69c9c850416678d4eb516967ae5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af6b2fd4560b00b24ee487df3be0d20f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6b2fd4560b00b24ee487df3be0d20f0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnableIndexEntityPair</b> (const <a class="el" href="class_az_framework_1_1_spawnable_index_entity_pair.html">SpawnableIndexEntityPair</a> &amp;)=default</td></tr>
+<tr class="separator:af6b2fd4560b00b24ee487df3be0d20f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e6e814a3c452043047c7dddbd384b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8e6e814a3c452043047c7dddbd384b2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnableIndexEntityPair</b> (<a class="el" href="class_az_framework_1_1_spawnable_index_entity_pair.html">SpawnableIndexEntityPair</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:aa8e6e814a3c452043047c7dddbd384b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddcaab2cbba8a37a1e652852856d681"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adddcaab2cbba8a37a1e652852856d681"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnableIndexEntityPair</b> (AZ::Entity **entityIterator, uint32_t *indexIterator)</td></tr>
+<tr class="separator:adddcaab2cbba8a37a1e652852856d681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af688c4b37ac8c5909cd11e82c7036372"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af688c4b37ac8c5909cd11e82c7036372"></a>
+<a class="el" href="class_az_framework_1_1_spawnable_index_entity_pair.html">SpawnableIndexEntityPair</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_az_framework_1_1_spawnable_index_entity_pair.html">SpawnableIndexEntityPair</a> &amp;)=default</td></tr>
+<tr class="separator:af688c4b37ac8c5909cd11e82c7036372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02da228515aaf765213966b4eca5a0db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02da228515aaf765213966b4eca5a0db"></a>
+<a class="el" href="class_az_framework_1_1_spawnable_index_entity_pair.html">SpawnableIndexEntityPair</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_az_framework_1_1_spawnable_index_entity_pair.html">SpawnableIndexEntityPair</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a02da228515aaf765213966b4eca5a0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a28d96d1520c6d8ad56f08b4a11a85260"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28d96d1520c6d8ad56f08b4a11a85260"></a>
+AZ::Entity **&#160;</td><td class="memItemRight" valign="bottom"><b>m_entity</b> { nullptr }</td></tr>
+<tr class="separator:a28d96d1520c6d8ad56f08b4a11a85260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44faa3cf92320bfcdd11f2525bb700db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44faa3cf92320bfcdd11f2525bb700db"></a>
+uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><b>m_index</b> { nullptr }</td></tr>
+<tr class="separator:a44faa3cf92320bfcdd11f2525bb700db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ae21ed8f0871f9ff66d5511e627e0699c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae21ed8f0871f9ff66d5511e627e0699c"></a>
@@ -84,7 +113,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnableIndexEntity
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

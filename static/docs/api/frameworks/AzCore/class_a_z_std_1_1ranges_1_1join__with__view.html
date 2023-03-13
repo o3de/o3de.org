@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1ranges_1_1join__with__view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::ranges::join_with_view&lt; View, Pattern, class &gt; Class Template Reference</div>  </div>
@@ -63,6 +65,15 @@
 
 <p>Inherits <a class="el" href="class_a_z_std_1_1ranges_1_1view__interface.html">AZStd::ranges::view_interface&lt; join_with_view&lt; View, Pattern &gt; &gt;</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1join__with__view_1_1_inner_range_is_reference.html">InnerRangeIsReference</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1join__with__view_1_1iterator.html">iterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1join__with__view_1_1sentinel.html">sentinel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a49c4ea29218d49148873a83d8db2e86a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49c4ea29218d49148873a83d8db2e86a"></a>
@@ -93,6 +104,27 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()<
 template&lt;class ConstView  = const View, class  = enable_if_t&lt;input_range&lt;ConstView&gt; &amp;&amp; is_reference_v&lt;range_reference_t&lt;ConstView&gt;&gt;            &amp;&amp; forward_range&lt;const Pattern&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a134304f8d778b7fe430cb25ca5b71025"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>end</b> () const </td></tr>
 <tr class="separator:a134304f8d778b7fe430cb25ca5b71025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ae3ba03a70bebcd33d639c538458855c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3ba03a70bebcd33d639c538458855c9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>InnerRange</b> = range_reference_t&lt; View &gt;</td></tr>
+<tr class="separator:ae3ba03a70bebcd33d639c538458855c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8a4f45f6ed6b50acf95106b9805464"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac8a4f45f6ed6b50acf95106b9805464"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>InnerRange_t</b> = conditional_t&lt; is_reference_v&lt; InnerRange &gt;, <a class="el" href="struct_a_z_std_1_1ranges_1_1join__with__view_1_1_inner_range_is_reference.html">InnerRangeIsReference</a>, Internal::non_propagating_cache&lt; remove_cv_t&lt; InnerRange &gt;&gt;&gt;</td></tr>
+<tr class="separator:aac8a4f45f6ed6b50acf95106b9805464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a257aa6922132a5e65bd846c716cbc073"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a257aa6922132a5e65bd846c716cbc073"></a>
+View&#160;</td><td class="memItemRight" valign="bottom"><b>m_base</b> {}</td></tr>
+<tr class="separator:a257aa6922132a5e65bd846c716cbc073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61cfb5f4ebc503a5a25a56a281ba59ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61cfb5f4ebc503a5a25a56a281ba59ac"></a>
+Pattern&#160;</td><td class="memItemRight" valign="bottom"><b>m_pattern</b> {}</td></tr>
+<tr class="separator:a61cfb5f4ebc503a5a25a56a281ba59ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86eb27d72f63c7029b4b1321a728362b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86eb27d72f63c7029b4b1321a728362b"></a>
+AZ_NO_UNIQUE_ADDRESS InnerRange_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_innerRef</b> {}</td></tr>
+<tr class="separator:a86eb27d72f63c7029b4b1321a728362b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/join_with_view.h</li>
@@ -100,7 +132,7 @@ template&lt;class ConstView  = const View, class  = enable_if_t&lt;input_range&l
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

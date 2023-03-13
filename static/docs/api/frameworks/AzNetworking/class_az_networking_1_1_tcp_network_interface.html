@@ -51,6 +51,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_networking_1_1_tcp_network_interface-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -69,6 +71,8 @@
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_tcp_network_interface_1_1_pending_connection.html">PendingConnection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper structure for transferring new pending connections from the listen thread to network interface.  <a href="struct_az_networking_1_1_tcp_network_interface_1_1_pending_connection.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_tcp_network_interface_1_1_pending_remove.html">PendingRemove</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -124,6 +128,62 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a0580964809e5ee84acb05b12299123a6 inherit pub_methods_class_az_networking_1_1_i_network_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a959b6130ad3d34c2f3fc7aae7e0d78 inherit pub_methods_class_az_networking_1_1_i_network_interface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html">NetworkInterfaceMetrics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#a4a959b6130ad3d34c2f3fc7aae7e0d78">GetMetrics</a> ()</td></tr>
 <tr class="separator:a4a959b6130ad3d34c2f3fc7aae7e0d78 inherit pub_methods_class_az_networking_1_1_i_network_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a774a076e773543a07d0f7daf26cd0a92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a774a076e773543a07d0f7daf26cd0a92">HandleConnectionRecv</a> (SocketFd socketFd, AZ::TimeMs currentTimeMs)</td></tr>
+<tr class="separator:a774a076e773543a07d0f7daf26cd0a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac381fd2d5e6ba5baea0e10c152bb6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_network_interface.html#afac381fd2d5e6ba5baea0e10c152bb6b">HandleConnectionSend</a> (SocketFd socketFd)</td></tr>
+<tr class="separator:afac381fd2d5e6ba5baea0e10c152bb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937fa3bf901f808ddfe5cbc08f18b6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a937fa3bf901f808ddfe5cbc08f18b6c2">RequestDisconnect</a> (<a class="el" href="class_az_networking_1_1_tcp_connection.html">TcpConnection</a> *connection, DisconnectReason reason)</td></tr>
+<tr class="separator:a937fa3bf901f808ddfe5cbc08f18b6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe4092270d3905884e0f0c27526f359"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfe4092270d3905884e0f0c27526f359"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_network_interface.html#adfe4092270d3905884e0f0c27526f359">AcceptNewConnections</a> ()</td></tr>
+<tr class="memdesc:adfe4092270d3905884e0f0c27526f359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal method to activate all pending connections. <br/></td></tr>
+<tr class="separator:adfe4092270d3905884e0f0c27526f359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18b6c88ebdb1a405e66bc4d45e73d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_network_interface.html#af18b6c88ebdb1a405e66bc4d45e73d35">AddConnectionHelper</a> (ConnectionId connectionId, const <a class="el" href="class_az_networking_1_1_ip_address.html">IpAddress</a> &amp;remoteAddress, <a class="el" href="class_az_networking_1_1_tcp_socket.html">TcpSocket</a> &amp;tcpSocket)</td></tr>
+<tr class="separator:af18b6c88ebdb1a405e66bc4d45e73d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a984563b17c1aa64d4a99fcdc469b17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a984563b17c1aa64d4a99fcdc469b17"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a9a984563b17c1aa64d4a99fcdc469b17">FlushQueuedRemoves</a> ()</td></tr>
+<tr class="memdesc:a9a984563b17c1aa64d4a99fcdc469b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all connections queued for removal from the network interface. <br/></td></tr>
+<tr class="separator:a9a984563b17c1aa64d4a99fcdc469b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829ccc13ba25f8c2704b5e17a1149be9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a829ccc13ba25f8c2704b5e17a1149be9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_networking_1_1_tcp_network_interface.html">TcpNetworkInterface</a>)</td></tr>
+<tr class="separator:a829ccc13ba25f8c2704b5e17a1149be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a602f915dcf464701903ffbd08652c703"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a602f915dcf464701903ffbd08652c703"></a>
+AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:a602f915dcf464701903ffbd08652c703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d763749613d27fb26ef56505d3023d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66d763749613d27fb26ef56505d3023d"></a>
+TrustZone&#160;</td><td class="memItemRight" valign="bottom"><b>m_trustZone</b></td></tr>
+<tr class="separator:a66d763749613d27fb26ef56505d3023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2a36d00f83c2b746bb6993a92bb375"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf2a36d00f83c2b746bb6993a92bb375"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_port</b> = 0</td></tr>
+<tr class="separator:adf2a36d00f83c2b746bb6993a92bb375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7717d5e9f35f3f2d02730772bf8f66bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7717d5e9f35f3f2d02730772bf8f66bf"></a>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeoutMs</b> = AZ::Time::ZeroTimeMs</td></tr>
+<tr class="separator:a7717d5e9f35f3f2d02730772bf8f66bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428f241d61866422558f1397070375c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a428f241d61866422558f1397070375c3"></a>
+<a class="el" href="class_az_networking_1_1_i_connection_listener.html">IConnectionListener</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionListener</b></td></tr>
+<tr class="separator:a428f241d61866422558f1397070375c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ca908a0c8de1be05b4e4ece9ea3138"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6ca908a0c8de1be05b4e4ece9ea3138"></a>
+<a class="el" href="class_az_networking_1_1_tcp_connection_set.html">TcpConnectionSet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionSet</b></td></tr>
+<tr class="separator:ad6ca908a0c8de1be05b4e4ece9ea3138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332dbcdaaa0c1925f08fa67f567c483d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a332dbcdaaa0c1925f08fa67f567c483d"></a>
+<a class="el" href="class_az_networking_1_1_tcp_socket_manager.html">TcpSocketManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_tcpSocketManager</b></td></tr>
+<tr class="separator:a332dbcdaaa0c1925f08fa67f567c483d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecdd4797b4235664eb0bf5bdd8abed72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecdd4797b4235664eb0bf5bdd8abed72"></a>
+AZ::ThreadSafeDeque<br class="typebreak"/>
+&lt; <a class="el" href="struct_az_networking_1_1_tcp_network_interface_1_1_pending_connection.html">PendingConnection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingConnections</b></td></tr>
+<tr class="separator:aecdd4797b4235664eb0bf5bdd8abed72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee597be450e5eff74df23df56df280f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afee597be450e5eff74df23df56df280f"></a>
+AZStd::vector&lt; <a class="el" href="struct_az_networking_1_1_tcp_network_interface_1_1_pending_remove.html">PendingRemove</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingRemoves</b></td></tr>
+<tr class="separator:afee597be450e5eff74df23df56df280f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5603535b42197624d73eafb41f8dab9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5603535b42197624d73eafb41f8dab9c"></a>
+<a class="el" href="class_az_networking_1_1_tcp_listen_thread.html">TcpListenThread</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_listenThread</b></td></tr>
+<tr class="separator:a5603535b42197624d73eafb41f8dab9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -199,6 +259,55 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TcpConnection</b></t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af18b6c88ebdb1a405e66bc4d45e73d35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzNetworking::TcpNetworkInterface::AddConnectionHelper </td>
+          <td>(</td>
+          <td class="paramtype">ConnectionId&#160;</td>
+          <td class="paramname"><em>connectionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_az_networking_1_1_ip_address.html">IpAddress</a> &amp;&#160;</td>
+          <td class="paramname"><em>remoteAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_az_networking_1_1_tcp_socket.html">TcpSocket</a> &amp;&#160;</td>
+          <td class="paramname"><em>tcpSocket</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method that correctly adds a new connection to the network interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connectionId</td><td>connection id of the new connection </td></tr>
+    <tr><td class="paramname">remoteAddress</td><td>address of the remote endpoint </td></tr>
+    <tr><td class="paramname">tcpSocket</td><td>underlying TCP socket connected to the remote endpoint </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a15c444d5600b36a10b0708c285c588a5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -477,6 +586,79 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TcpConnection</b></t
 
 </div>
 </div>
+<a class="anchor" id="a774a076e773543a07d0f7daf26cd0a92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzNetworking::TcpNetworkInterface::HandleConnectionRecv </td>
+          <td>(</td>
+          <td class="paramtype">SocketFd&#160;</td>
+          <td class="paramname"><em>socketFd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::TimeMs&#160;</td>
+          <td class="paramname"><em>currentTimeMs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Performs connection receive updates for a single socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socketFd</td><td>socket descriptor with new incoming data </td></tr>
+    <tr><td class="paramname">currentTimeMs</td><td>current time in milliseconds for metrics management </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afac381fd2d5e6ba5baea0e10c152bb6b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzNetworking::TcpNetworkInterface::HandleConnectionSend </td>
+          <td>(</td>
+          <td class="paramtype">SocketFd&#160;</td>
+          <td class="paramname"><em>socketFd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Performs connection send updates for a single socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socketFd</td><td>socket descriptor to send data to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="af8f3ce9dc8c862ceef4ea694655fcf35"></a>
 <div class="memitem">
 <div class="memproto">
@@ -582,6 +764,48 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TcpConnection</b></t
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pendingConnection</td><td>info on the new incoming connection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a937fa3bf901f808ddfe5cbc08f18b6c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzNetworking::TcpNetworkInterface::RequestDisconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_networking_1_1_tcp_connection.html">TcpConnection</a> *&#160;</td>
+          <td class="paramname"><em>connection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DisconnectReason&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Internal helper to cleanly remove a connection from the network interface. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connection</td><td>pointer to the connection to disconnect </td></tr>
+    <tr><td class="paramname">reason</td><td>reason for the disconnect </td></tr>
   </table>
   </dd>
 </dl>
@@ -789,7 +1013,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TcpConnection</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_xml_schema_attribute-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::XmlSchemaAttribute Class Reference</div>  </div>
@@ -113,6 +115,45 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a837bd936292ba741aad2e4301d7bb403"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a837bd936292ba741aad2e4301d7bb403"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a837bd936292ba741aad2e4301d7bb403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a55c28630958c1eec8081dc4967788fee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55c28630958c1eec8081dc4967788fee"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisibilityProperty</b> () const </td></tr>
+<tr class="separator:a55c28630958c1eec8081dc4967788fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1fdece02e2ab3a08a8d0463a11d4085f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fdece02e2ab3a08a8d0463a11d4085f"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:a1fdece02e2ab3a08a8d0463a11d4085f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d075708d7b814f2f895ea8804f4398"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85d075708d7b814f2f895ea8804f4398"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_expectedExtension</b></td></tr>
+<tr class="separator:a85d075708d7b814f2f895ea8804f4398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f1a1b269ec112e45c3c6bf0905ca11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4f1a1b269ec112e45c3c6bf0905ca11"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_matchPattern</b></td></tr>
+<tr class="separator:af4f1a1b269ec112e45c3c6bf0905ca11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab214dde83fdabe86dfd3c2f188f7b54b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab214dde83fdabe86dfd3c2f188f7b54b"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_findPattern</b></td></tr>
+<tr class="separator:ab214dde83fdabe86dfd3c2f188f7b54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cdc3395a1ef12238e2fb78964f9c813"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6cdc3395a1ef12238e2fb78964f9c813"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_replacePattern</b></td></tr>
+<tr class="separator:a6cdc3395a1ef12238e2fb78964f9c813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9368f5f05a916146a00ad0f667b8dc5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9368f5f05a916146a00ad0f667b8dc5a"></a>
+AttributeType&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b></td></tr>
+<tr class="separator:a9368f5f05a916146a00ad0f667b8dc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b1c0c72aa182cfe04e0b478c243d460"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b1c0c72aa182cfe04e0b478c243d460"></a>
+AttributePathDependencyType&#160;</td><td class="memItemRight" valign="bottom"><b>m_pathDependencyType</b></td></tr>
+<tr class="separator:a9b1c0c72aa182cfe04e0b478c243d460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66acd33921ced3dbecfdbdec4fcbbe5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66acd33921ced3dbecfdbdec4fcbbe5f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_relativeToSourceAssetFolder</b></td></tr>
+<tr class="separator:a66acd33921ced3dbecfdbdec4fcbbe5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124015aa1bd32eec05289c0f1c5e2a69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a124015aa1bd32eec05289c0f1c5e2a69"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_optional</b></td></tr>
+<tr class="separator:a124015aa1bd32eec05289c0f1c5e2a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf26f0d955050bb5b196acdeba31dd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadf26f0d955050bb5b196acdeba31dd1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_cacheRelativePath</b></td></tr>
+<tr class="separator:aadf26f0d955050bb5b196acdeba31dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Asset/XmlSchemaAsset.h</li>
@@ -120,7 +161,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

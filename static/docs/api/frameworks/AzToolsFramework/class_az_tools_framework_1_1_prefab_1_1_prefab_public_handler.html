@@ -53,6 +53,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Prefab::PrefabPublicHandler Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -115,8 +118,149 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 <tr class="memitem:a7d9f98e55bad84f6cf34bdcad1992e28 inherit pub_methods_class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d9f98e55bad84f6cf34bdcad1992e28"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">PrefabPublicInterface</a>,&quot;{931AAE9D-C775-4818-9070-A2DA69489CBE}&quot;)</td></tr>
 <tr class="separator:a7d9f98e55bad84f6cf34bdcad1992e28 inherit pub_methods_class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a982c8316cdd160a45790d336253e6065"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a982c8316cdd160a45790d336253e6065"></a>
+PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteFromInstance</b> (const EntityIdList &amp;entityIds)</td></tr>
+<tr class="separator:a982c8316cdd160a45790d336253e6065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096a6abb91193b231171d66ce13e4409"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a096a6abb91193b231171d66ce13e4409"></a>
+PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveAndSortPrefabEntitiesAndInstances</b> (const EntityList &amp;inputEntities, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;commonRootEntityOwningInstance, EntityList &amp;outEntities, AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> * &gt; &amp;outInstances) const </td></tr>
+<tr class="separator:a096a6abb91193b231171d66ce13e4409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb76cd3c802511aa3e36e7f1e61c968d"><td class="memItemLeft" align="right" valign="top">EntityIdList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#acb76cd3c802511aa3e36e7f1e61c968d">SanitizeEntityIdList</a> (const EntityIdList &amp;entityIds) const </td></tr>
+<tr class="separator:acb76cd3c802511aa3e36e7f1e61c968d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd7ddecb9ff61b038db882420a7653eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd7ddecb9ff61b038db882420a7653eb"></a>
+InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><b>GetOwnerInstanceByEntityId</b> (AZ::EntityId entityId) const </td></tr>
+<tr class="separator:acd7ddecb9ff61b038db882420a7653eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e77e9c315f8bbb0e7dd44769d56350"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5e77e9c315f8bbb0e7dd44769d56350"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddNewEntityToSortOrder</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;owningInstance, PrefabDom &amp;domToAddEntityUnder, const EntityAlias &amp;parentEntityAlias, const EntityAlias &amp;entityToAddAlias)</td></tr>
+<tr class="separator:aa5e77e9c315f8bbb0e7dd44769d56350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a662b560af473c475f12cda6b017a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#ae6a662b560af473c475f12cda6b017a4">DuplicateNestedEntitiesInInstance</a> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;commonOwningInstance, const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, PrefabDom &amp;domToAddDuplicatedEntitiesUnder, EntityIdList &amp;duplicatedEntityIds, AZStd::unordered_map&lt; EntityAlias, EntityAlias &gt; &amp;oldAliasToNewAliasMap)</td></tr>
+<tr class="separator:ae6a662b560af473c475f12cda6b017a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa5a2e72226cfaafcd43b5e46c8c669c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aaa5a2e72226cfaafcd43b5e46c8c669c">DuplicateNestedInstancesInInstance</a> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;commonOwningInstance, const AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> * &gt; &amp;instances, PrefabDom &amp;domToAddDuplicatedInstancesUnder, EntityIdList &amp;duplicatedEntityIds, AZStd::unordered_map&lt; InstanceAlias, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> * &gt; &amp;newInstanceAliasToOldInstanceMap)</td></tr>
+<tr class="separator:aaa5a2e72226cfaafcd43b5e46c8c669c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75ab0721510015ae04053aec121d05f"><td class="memItemLeft" align="right" valign="top">PrefabDom&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#af75ab0721510015ae04053aec121d05f">ApplyContainerTransformAndGeneratePatch</a> (AZ::EntityId containerEntityId, AZ::EntityId parentEntityId, const AZ::Vector3 &amp;translation, const AZ::Quaternion &amp;rotation)</td></tr>
+<tr class="separator:af75ab0721510015ae04053aec121d05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494c6cd124ab5e325cb25c5109f1e762"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a494c6cd124ab5e325cb25c5109f1e762">CreateLink</a> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;sourceInstance, TemplateId targetTemplateId, <a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *undoBatch, PrefabDom patch, const bool isUndoRedoSupportNeeded=true)</td></tr>
+<tr class="separator:a494c6cd124ab5e325cb25c5109f1e762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28683e475e64751728c7f4514c95d667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a28683e475e64751728c7f4514c95d667">RemoveLink</a> (AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; &amp;sourceInstance, TemplateId targetTemplateId, <a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *undoBatch)</td></tr>
+<tr class="separator:a28683e475e64751728c7f4514c95d667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff36aa6d37256e0a2a891b294cf05d5e"><td class="memItemLeft" align="right" valign="top">PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aff36aa6d37256e0a2a891b294cf05d5e">FindCommonRootOwningInstance</a> (const AZStd::vector&lt; AZ::EntityId &gt; &amp;entityIds, EntityList &amp;inputEntityList, EntityList &amp;topLevelEntities, AZ::EntityId &amp;commonRootEntityId, InstanceOptionalReference &amp;commonRootEntityOwningInstance)</td></tr>
+<tr class="separator:aff36aa6d37256e0a2a891b294cf05d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559a7f8deaadcbb31f1ce2311fc2beb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a559a7f8deaadcbb31f1ce2311fc2beb7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCyclicalDependencyFound</b> (InstanceOptionalConstReference instance, const AZStd::unordered_set&lt; AZ::IO::Path &gt; &amp;templateSourcePaths)</td></tr>
+<tr class="separator:a559a7f8deaadcbb31f1ce2311fc2beb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b09905dc97e528f3203640837592b7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b09905dc97e528f3203640837592b7c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateLinkPatchesWithNewEntityAliases</b> (PrefabDom &amp;linkPatch, const AZStd::unordered_map&lt; AZ::EntityId, AZStd::string &gt; &amp;oldEntityAliases, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;newParent)</td></tr>
+<tr class="separator:a6b09905dc97e528f3203640837592b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3b5946ae5165ea5bd9f0bf121ed47970"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b5946ae5165ea5bd9f0bf121ed47970"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ReplaceOldAliases</b> (QString &amp;stringToReplace, AZStd::string_view oldAlias, AZStd::string_view newAlias)</td></tr>
+<tr class="separator:a3b5946ae5165ea5bd9f0bf121ed47970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309306fb2f6fcc3a64afd78eb3570399"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a309306fb2f6fcc3a64afd78eb3570399"></a>
+static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParentInstance</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *instance)</td></tr>
+<tr class="separator:a309306fb2f6fcc3a64afd78eb3570399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90beb4c4516cd0a1ba83b4a2b9dccee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af90beb4c4516cd0a1ba83b4a2b9dccee"></a>
+static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAncestorOfInstanceThatIsChildOfRoot</b> (const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *ancestor, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *descendant)</td></tr>
+<tr class="separator:af90beb4c4516cd0a1ba83b4a2b9dccee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b835d2f9dcb0fcfff9114312bd4adce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a4b835d2f9dcb0fcfff9114312bd4adce">GenerateContainerEntityTransform</a> (const EntityList &amp;topLevelEntities, AZ::Vector3 &amp;translation, AZ::Quaternion &amp;rotation)</td></tr>
+<tr class="separator:a4b835d2f9dcb0fcfff9114312bd4adce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1be605493a9b4126c2588066fe978302"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1be605493a9b4126c2588066fe978302"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_entity_mapper_interface.html">InstanceEntityMapperInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceEntityMapperInterface</b> = nullptr</td></tr>
+<tr class="separator:a1be605493a9b4126c2588066fe978302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51691cf528eb789362636fca7472610"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad51691cf528eb789362636fca7472610"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html">InstanceToTemplateInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceToTemplateInterface</b> = nullptr</td></tr>
+<tr class="separator:ad51691cf528eb789362636fca7472610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbdc99bdc1a521b251e374df872e398"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bbdc99bdc1a521b251e374df872e398"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_dom_generator_interface.html">InstanceDomGeneratorInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceDomGeneratorInterface</b> = nullptr</td></tr>
+<tr class="separator:a7bbdc99bdc1a521b251e374df872e398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74cea200693886e242ba04072022c2b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74cea200693886e242ba04072022c2b9"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html">PrefabFocusInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabFocusInterface</b> = nullptr</td></tr>
+<tr class="separator:a74cea200693886e242ba04072022c2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0784fa722359501c8312f22ee480f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade0784fa722359501c8312f22ee480f2"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html">PrefabFocusPublicInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabFocusPublicInterface</b> = nullptr</td></tr>
+<tr class="separator:ade0784fa722359501c8312f22ee480f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab546ab37e2496499a938091a4c16a0b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab546ab37e2496499a938091a4c16a0b2"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html">PrefabLoaderInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabLoaderInterface</b> = nullptr</td></tr>
+<tr class="separator:ab546ab37e2496499a938091a4c16a0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ef2a89c1e0f0d6cb0796de5f8bfcef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49ef2a89c1e0f0d6cb0796de5f8bfcef"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">PrefabSystemComponentInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabSystemComponentInterface</b> = nullptr</td></tr>
+<tr class="separator:a49ef2a89c1e0f0d6cb0796de5f8bfcef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed55c9d997282b8e4a27199ab74e5e07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed55c9d997282b8e4a27199ab74e5e07"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_undo_cache.html">PrefabUndoCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aed55c9d997282b8e4a27199ab74e5e07">m_prefabUndoCache</a></td></tr>
+<tr class="memdesc:aed55c9d997282b8e4a27199ab74e5e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches entity states for undo/redo purposes. <br/></td></tr>
+<tr class="separator:aed55c9d997282b8e4a27199ab74e5e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54f9ca1a0d08827fe0c967238d87b96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa54f9ca1a0d08827fe0c967238d87b96"></a>
+<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_handler.html">PrefabFocusHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aa54f9ca1a0d08827fe0c967238d87b96">m_prefabFocusHandler</a></td></tr>
+<tr class="memdesc:aa54f9ca1a0d08827fe0c967238d87b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the Prefab Focus API that determines what prefab is being edited. <br/></td></tr>
+<tr class="separator:aa54f9ca1a0d08827fe0c967238d87b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509ee8544cbe573dda5f3da23ae92692"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a509ee8544cbe573dda5f3da23ae92692"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_newEntityCounter</b> = 1</td></tr>
+<tr class="separator:a509ee8544cbe573dda5f3da23ae92692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af75ab0721510015ae04053aec121d05f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PrefabDom AzToolsFramework::Prefab::PrefabPublicHandler::ApplyContainerTransformAndGeneratePatch </td>
+          <td>(</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>containerEntityId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>parentEntityId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>translation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Quaternion &amp;&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Applies the correct transform to the container entity, and returns an appropriate patch. This helper function won't support undo/redo, update the templates or create any links. All that needs to be done by the caller.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">containerEntityId</td><td>The container to apply the changes to. </td></tr>
+    <tr><td class="paramname">parentEntityId</td><td>The id of the entity the container should be parented to. </td></tr>
+    <tr><td class="paramname">translation</td><td>New translation for the container entity. </td></tr>
+    <tr><td class="paramname">rotation</td><td>New rotation for the container entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The PrefabDom containing the patches that should be stored in the parent link. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a742cfb08b34bce17cd2518d345259232"></a>
 <div class="memitem">
 <div class="memproto">
@@ -159,6 +303,69 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 <dl class="section return"><dt>Returns</dt><dd>Returns the entityId of the newly created entity, or an error message if the operation failed. </dd></dl>
 
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#ae905468dc2ae176e5762e9595ce5f74f">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a494c6cd124ab5e325cb25c5109f1e762"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::PrefabPublicHandler::CreateLink </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>sourceInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TemplateId&#160;</td>
+          <td class="paramname"><em>targetTemplateId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *&#160;</td>
+          <td class="paramname"><em>undoBatch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PrefabDom&#160;</td>
+          <td class="paramname"><em>patch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>isUndoRedoSupportNeeded</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a link between the templates of an instance and its parent.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceInstance</td><td>The instance that corresponds to the source template of the link (child). </td></tr>
+    <tr><td class="paramname">targetInstance</td><td>The id of the target template (parent). </td></tr>
+    <tr><td class="paramname">undoBatch</td><td>The undo batch to set as parent for this create link action. </td></tr>
+    <tr><td class="paramname">patch</td><td>The patch to store in the newly created link dom. </td></tr>
+    <tr><td class="paramname">isUndoRedoSupportNeeded</td><td>The flag indicating whether the link should be created with undo/redo support or not. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -391,6 +598,130 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 
 </div>
 </div>
+<a class="anchor" id="ae6a662b560af473c475f12cda6b017a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::PrefabPublicHandler::DuplicateNestedEntitiesInInstance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>commonOwningInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::vector&lt; AZ::Entity * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PrefabDom &amp;&#160;</td>
+          <td class="paramname"><em>domToAddDuplicatedEntitiesUnder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EntityIdList &amp;&#160;</td>
+          <td class="paramname"><em>duplicatedEntityIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::unordered_map&lt; EntityAlias, EntityAlias &gt; &amp;&#160;</td>
+          <td class="paramname"><em>oldAliasToNewAliasMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Duplicate a list of entities owned by a common owning instance by directly copying/modifying their entries in the instance DOM</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commonOwningInstance</td><td>The common owning instance of all the entities being duplicated. </td></tr>
+    <tr><td class="paramname">entities</td><td>The list of Entities that will be duplicated. </td></tr>
+    <tr><td class="paramname">domToAddDuplicatedEntitiesUnder</td><td>The DOM of the common owning instance where the duplicated entity DOM values will be added to. </td></tr>
+    <tr><td class="paramname">duplicatedEntityIds</td><td>A list of EntityIds corresponding to the entities that were duplicated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaa5a2e72226cfaafcd43b5e46c8c669c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::PrefabPublicHandler::DuplicateNestedInstancesInInstance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;&#160;</td>
+          <td class="paramname"><em>commonOwningInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>instances</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PrefabDom &amp;&#160;</td>
+          <td class="paramname"><em>domToAddDuplicatedInstancesUnder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EntityIdList &amp;&#160;</td>
+          <td class="paramname"><em>duplicatedEntityIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::unordered_map&lt; InstanceAlias, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>newInstanceAliasToOldInstanceMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Duplicate a list of instances owned by a common owning instance by directly copying/modifying their entries in the instance DOM</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commonOwningInstance</td><td>The common owning instance of all the instances being duplicated. </td></tr>
+    <tr><td class="paramname">entities</td><td>The list of Instances that will be duplicated. </td></tr>
+    <tr><td class="paramname">domToAddDuplicatedInstancesUnder</td><td>The DOM of the common owning instance where the duplicated instance DOM values will be added to. </td></tr>
+    <tr><td class="paramname">duplicatedEntityIds</td><td>A list of EntityIds corresponding to the instances that were duplicated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="aafd2c1594e12103cc388b64f70599436"></a>
 <div class="memitem">
 <div class="memproto">
@@ -422,6 +753,119 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 <dl class="section return"><dt>Returns</dt><dd>True if all entities in the list have the same instance, false otherwise. </dd></dl>
 
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a4d47507aaa4c0f5df5bcaf9d3a4be9dc">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff36aa6d37256e0a2a891b294cf05d5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PrefabOperationResult AzToolsFramework::Prefab::PrefabPublicHandler::FindCommonRootOwningInstance </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::vector&lt; AZ::EntityId &gt; &amp;&#160;</td>
+          <td class="paramname"><em>entityIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EntityList &amp;&#160;</td>
+          <td class="paramname"><em>inputEntityList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EntityList &amp;&#160;</td>
+          <td class="paramname"><em>topLevelEntities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"><em>commonRootEntityId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InstanceOptionalReference &amp;&#160;</td>
+          <td class="paramname"><em>commonRootEntityOwningInstance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given a list of entityIds, finds the prefab instance that owns the common root entity of the entityIds.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityIds</td><td>The list of entity ids. </td></tr>
+    <tr><td class="paramname">inputEntityList</td><td>The list of entities corresponding to the entity ids. </td></tr>
+    <tr><td class="paramname">topLevelEntities</td><td>The list of entities that are immediate children of the common root entity. </td></tr>
+    <tr><td class="paramname">commonRootEntityId</td><td>The entity id of the common root entity of all the entityIds. </td></tr>
+    <tr><td class="paramname">commonRootEntityOwningInstance</td><td>The owning instance of the common root entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>PrefabOperationResult indicating whether the action was successful or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b835d2f9dcb0fcfff9114312bd4adce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AzToolsFramework::Prefab::PrefabPublicHandler::GenerateContainerEntityTransform </td>
+          <td>(</td>
+          <td class="paramtype">const EntityList &amp;&#160;</td>
+          <td class="paramname"><em>topLevelEntities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>translation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::Quaternion &amp;&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generates the transform based on the input list of entities. The transform will be based on the average transform of the direct children. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">topLevelEntities</td><td>The direct children entities provided to calculate the average transform. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">translation</td><td>The output translation. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rotation</td><td>The output rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -753,6 +1197,80 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 
 </div>
 </div>
+<a class="anchor" id="a28683e475e64751728c7f4514c95d667"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzToolsFramework::Prefab::PrefabPublicHandler::RemoveLink </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sourceInstance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TemplateId&#160;</td>
+          <td class="paramname"><em>targetTemplateId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">UndoSystem::URSequencePoint</a> *&#160;</td>
+          <td class="paramname"><em>undoBatch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes the link between template of the sourceInstance and the template corresponding to targetTemplateId.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sourceInstance</td><td>The instance corresponding to the source template of the link to be removed. </td></tr>
+    <tr><td class="paramname">targetTemplateId</td><td>The id of the target template of the link to be removed. </td></tr>
+    <tr><td class="paramname">undoBatch</td><td>The undo batch to set as parent for this remove link action. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acb76cd3c802511aa3e36e7f1e61c968d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EntityIdList AzToolsFramework::Prefab::PrefabPublicHandler::SanitizeEntityIdList </td>
+          <td>(</td>
+          <td class="paramtype">const EntityIdList &amp;&#160;</td>
+          <td class="paramname"><em>entityIds</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sanitizes an EntityIdList to remove entities that should not be affected by prefab operations. It will identify and exclude the container entity of the root prefab instance, and all read-only entities. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa62eafa9d157e2013f22fc895398651d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -793,7 +1311,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

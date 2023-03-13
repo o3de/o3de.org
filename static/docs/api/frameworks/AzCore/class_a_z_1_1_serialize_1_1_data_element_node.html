@@ -55,6 +55,9 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_serialize_1_1_data_element_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -64,6 +67,11 @@
 
 <p><code>#include &lt;SerializeContext.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_serialize_1_1_data_element_node_1_1_data_element_instance_data.html">DataElementInstanceData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3e763a5b8269c5a7cc335e4344b773a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -165,6 +173,46 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ReplaceElement</b> (<a
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aafe643c1f3ca85afb9ecbc7889831f9b"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReplaceElement</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> &amp;sc, int index, const char *name)</td></tr>
 <tr class="separator:aafe643c1f3ca85afb9ecbc7889831f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a3a1aca24a76f1b6ad2c6fc57a186a029"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a1aca24a76f1b6ad2c6fc57a186a029"></a>
+typedef <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_serialize_1_1_data_element_node.html">DataElementNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>NodeArray</b></td></tr>
+<tr class="separator:a3a1aca24a76f1b6ad2c6fc57a186a029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7431bf83b74100a5b53b940f2dda37be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7431bf83b74100a5b53b940f2dda37be"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NodeStack</b> = <a class="el" href="class_a_z_std_1_1list.html">AZStd::list</a>&lt; <a class="el" href="struct_a_z_1_1_serialize_1_1_data_element_node_1_1_data_element_instance_data.html">DataElementInstanceData</a> &gt;</td></tr>
+<tr class="separator:a7431bf83b74100a5b53b940f2dda37be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a11b73e8ef830ec8d2181e116822f22ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11b73e8ef830ec8d2181e116822f22ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetDataHierarchy</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> &amp;sc, const void *objectPtr, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;classId, <a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html">SerializeContext::ErrorHandler</a> *errorHandler=nullptr, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">ClassData</a> *classData=nullptr)</td></tr>
+<tr class="separator:a11b73e8ef830ec8d2181e116822f22ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab46d1415ca3a6f3dbf73a3a6c9fb275"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab46d1415ca3a6f3dbf73a3a6c9fb275"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataHierarchy</b> (void *objectPtr, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;classId, <a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html">SerializeContext::ErrorHandler</a> *errorHandler=nullptr)</td></tr>
+<tr class="separator:aab46d1415ca3a6f3dbf73a3a6c9fb275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268b02cfa3f0e07bb39c386293dd5ad0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a268b02cfa3f0e07bb39c386293dd5ad0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataHierarchyEnumerate</b> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html">SerializeContext::ErrorHandler</a> *errorHandler, <a class="el" href="class_a_z_std_1_1list.html">NodeStack</a> &amp;nodeStack)</td></tr>
+<tr class="separator:a268b02cfa3f0e07bb39c386293dd5ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8381e91d7ccd9b1973c4dd788f6530b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8381e91d7ccd9b1973c4dd788f6530b4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetClassElement</b> (<a class="el" href="struct_a_z_1_1_serialize_1_1_class_element.html">ClassElement</a> &amp;classElement, const <a class="el" href="class_a_z_1_1_serialize_1_1_data_element_node.html">DataElementNode</a> &amp;parentDataElement, <a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html">SerializeContext::ErrorHandler</a> *errorHandler) const </td></tr>
+<tr class="separator:a8381e91d7ccd9b1973c4dd788f6530b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad1504f847302a4ded00c9ead81e44631"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1504f847302a4ded00c9ead81e44631"></a>
+<a class="el" href="struct_a_z_1_1_serialize_1_1_data_element.html">DataElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_1_1_data_element_node.html#ad1504f847302a4ded00c9ead81e44631">m_element</a></td></tr>
+<tr class="memdesc:ad1504f847302a4ded00c9ead81e44631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialization data for this element. <br/></td></tr>
+<tr class="separator:ad1504f847302a4ded00c9ead81e44631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af222a230f36ab6f14581885af81cfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3af222a230f36ab6f14581885af81cfb"></a>
+const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">ClassData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_1_1_data_element_node.html#a3af222a230f36ab6f14581885af81cfb">m_classData</a></td></tr>
+<tr class="memdesc:a3af222a230f36ab6f14581885af81cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflected <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">ClassData</a> for this element. <br/></td></tr>
+<tr class="separator:a3af222a230f36ab6f14581885af81cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3bf75f90061d482c12ce3e6c14834e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed3bf75f90061d482c12ce3e6c14834e"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">NodeArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_1_1_data_element_node.html#aed3bf75f90061d482c12ce3e6c14834e">m_subElements</a></td></tr>
+<tr class="memdesc:aed3bf75f90061d482c12ce3e6c14834e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nodes of sub elements. <br/></td></tr>
+<tr class="separator:aed3bf75f90061d482c12ce3e6c14834e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -313,7 +361,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

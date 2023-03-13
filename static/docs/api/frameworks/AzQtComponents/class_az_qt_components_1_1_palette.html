@@ -51,6 +51,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_palette-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -127,6 +128,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 const QVector&lt; AZ::Color &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>colors</b> () const </td></tr>
 <tr class="separator:ab9b8603c59c8b8ecc9a254590703a0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad50dbfa319eaa156f664ac54930e54f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_palette.html#ad50dbfa319eaa156f664ac54930e54f2">insertColorsIgnoringDuplicates</a> (int index, QVector&lt; AZ::Color &gt;::const_iterator first, QVector&lt; AZ::Color &gt;::const_iterator last)</td></tr>
+<tr class="separator:ad50dbfa319eaa156f664ac54930e54f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ade0f7b66ec40df556b57124fd4acee7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade0f7b66ec40df556b57124fd4acee7b"></a>
@@ -142,6 +148,47 @@ QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A collection of colors and associated information. Duplicate colors are not permitted within a palette, with comparison between colors being defined by AZ::Color::IsClose. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad50dbfa319eaa156f664ac54930e54f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzQtComponents::Palette::insertColorsIgnoringDuplicates </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; AZ::Color &gt;::const_iterator&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; AZ::Color &gt;::const_iterator&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Used by PaletteModel to insert potentially duplicate colors during drag &amp; drop operations The reason is that the model sees two changes for an internal drag that repositions items: The first is a removal of the moved items and the second is the insertion of them in their new location. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa1fe8a10f94b9e67b42dbab45c22efed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -339,7 +386,7 @@ QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

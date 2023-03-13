@@ -56,6 +56,9 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_1_1_command_line-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::CommandLine Class Reference</div>  </div>
@@ -150,6 +153,31 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> () const -&g
 <tr class="memitem:a822b1a8ee149b40772a04fdb026d5d5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a822b1a8ee149b40772a04fdb026d5d5a"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>crend</b> () const -&gt; ArgumentVector::const_reverse_iterator</td></tr>
 <tr class="separator:a822b1a8ee149b40772a04fdb026d5d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4704005131b4cc51a68dcdcfa79bee2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4704005131b4cc51a68dcdcfa79bee2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddArgument</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> currentArg, <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &amp;currentSwitch)</td></tr>
+<tr class="separator:a4704005131b4cc51a68dcdcfa79bee2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09f526ee1a371247abd9cf7486087dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09f526ee1a371247abd9cf7486087dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseOptionArgument</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> newOption, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> newValue, <a class="el" href="struct_a_z_1_1_command_line_1_1_command_argument.html">CommandArgument</a> *inProgressArgument)</td></tr>
+<tr class="separator:ac09f526ee1a371247abd9cf7486087dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a90f632e8cc685a7f7670a79f731af174"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90f632e8cc685a7f7670a79f731af174"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">ArgumentVector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_allValues</b></td></tr>
+<tr class="separator:a90f632e8cc685a7f7670a79f731af174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f81c6dca7cff2b75e3a5b1b40593924"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f81c6dca7cff2b75e3a5b1b40593924"></a>
+<a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a><br class="typebreak"/>
+&lt; MaxCommandOptionPrefixes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_commandLineOptionPrefix</b></td></tr>
+<tr class="separator:a1f81c6dca7cff2b75e3a5b1b40593924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a98d1ffab838f38d561e7555e110d9237"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98d1ffab838f38d561e7555e110d9237"></a>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxCommandOptionPrefixes</b> = 8</td></tr>
+<tr class="separator:a98d1ffab838f38d561e7555e110d9237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Given a commandline, this allows uniform parsing of it into parameter values and extra values. When parsed, the commandline becomes a series of "switches" or "extra values" For example, a switch may be specified as either /switchName=value1[,value2...] /switchname value[,value2...] &ndash;switchname value[,value2...] or other combinations of the above You may NOT use a colon as a switch separator since file names may easily contain them. any additional parameters which are not associated with any switch are considered "misc values" </p>
@@ -334,7 +362,7 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>crend</b> () const -&
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

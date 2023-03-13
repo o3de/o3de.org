@@ -55,6 +55,10 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="struct_a_z_1_1_settings_registry_visitor_utils_1_1_field_visitor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::SettingsRegistryVisitorUtils::FieldVisitor Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -100,6 +104,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Visit</b> ([[
 <tr class="memitem:a6d234fd47b8eeb76d2bd4bacff7609f6 inherit pub_methods_class_a_z_1_1_settings_registry_interface_1_1_visitor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d234fd47b8eeb76d2bd4bacff7609f6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Visit</b> ([[maybe_unused]] const <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_visit_args.html">VisitArgs</a> &amp;visitArgs, [[maybe_unused]] <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> value)</td></tr>
 <tr class="separator:a6d234fd47b8eeb76d2bd4bacff7609f6 inherit pub_methods_class_a_z_1_1_settings_registry_interface_1_1_visitor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a7f789324a2fff371139b3d5504934d76"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>VisitFieldType</b> { <b>Array</b>, 
+<b>Object</b>, 
+<b>ArrayOrObject</b>
+ }</td></tr>
+<tr class="separator:a7f789324a2fff371139b3d5504934d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6abb42366f92cd481ecdf3a659b80fe7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6abb42366f92cd481ecdf3a659b80fe7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FieldVisitor</b> (const VisitFieldType visitFieldType)</td></tr>
+<tr class="separator:a6abb42366f92cd481ecdf3a659b80fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab39ad79786fd55d5d23022c70c982d1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab39ad79786fd55d5d23022c70c982d1d"></a>
+<a class="el" href="class_a_z_1_1_settings_registry_interface.html#a5945696e175a8981c9983c3cad42dbee">VisitResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Traverse</b> (const <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_visit_args.html">AZ::SettingsRegistryInterface::VisitArgs</a> &amp;visitArgs, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a2d2adea113efbc113820337142ed0f48">VisitAction</a> action) override</td></tr>
+<tr class="separator:ab39ad79786fd55d5d23022c70c982d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a13b0e5a2255b393bf0d41d65b7b4de5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13b0e5a2255b393bf0d41d65b7b4de5c"></a>
+VisitFieldType&#160;</td><td class="memItemRight" valign="bottom"><b>m_visitFieldType</b> { VisitFieldType::ArrayOrObject }</td></tr>
+<tr class="separator:a13b0e5a2255b393bf0d41d65b7b4de5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f990be2e073fb2067cddb7e224df27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13f990be2e073fb2067cddb7e224df27"></a>
+AZStd::optional<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a631442168a48e36e2e03462b077dc4ad">AZ::SettingsRegistryInterface::FixedValueString</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootPath</b></td></tr>
+<tr class="separator:a13f990be2e073fb2067cddb7e224df27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_interface.html">Interface</a> for visiting the fields of an array or object To access the values, use the <a class="el" href="class_a_z_1_1_settings_registry_interface.html">SettingsRegistryInterface</a> Get/GetObject methods </p>
@@ -135,7 +169,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Visit</b> ([[
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

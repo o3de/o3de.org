@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_platform_1_1_streamer_context_thread_sync-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Platform::StreamerContextThreadSync Class Reference</div>  </div>
@@ -93,6 +94,25 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a5fcd3e6a62f758fc0821b89ef7f5d425"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fcd3e6a62f758fc0821b89ef7f5d425"></a>
 static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxIoEvents</b> = MAXIMUM_WAIT_OBJECTS - 1</td></tr>
 <tr class="separator:a5fcd3e6a62f758fc0821b89ef7f5d425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8b4b303f02dd8ea91db7234a9f5204ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b4b303f02dd8ea91db7234a9f5204ef"></a>
+<a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadSleepLock</b></td></tr>
+<tr class="separator:a8b4b303f02dd8ea91db7234a9f5204ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab027c1bf711d50d41506c0e1b8f0c98a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab027c1bf711d50d41506c0e1b8f0c98a"></a>
+AZStd::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_platform_1_1_streamer_context_thread_sync.html#ab027c1bf711d50d41506c0e1b8f0c98a">m_threadWakeUpQueued</a> { false }</td></tr>
+<tr class="memdesc:ab027c1bf711d50d41506c0e1b8f0c98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not there's a wake up call queued. <br/></td></tr>
+<tr class="separator:ab027c1bf711d50d41506c0e1b8f0c98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923321a6221fbe569c9d5c5ff567a611"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a923321a6221fbe569c9d5c5ff567a611"></a>
+<a class="el" href="class_a_z_std_1_1condition__variable.html">AZStd::condition_variable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadSleepCondition</b></td></tr>
+<tr class="separator:a923321a6221fbe569c9d5c5ff567a611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f576f8f51c4e815d8e866e0d1362a21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f576f8f51c4e815d8e866e0d1362a21"></a>
+HANDLE&#160;</td><td class="memItemRight" valign="bottom"><b>m_events</b> [MAXIMUM_WAIT_OBJECTS] {}</td></tr>
+<tr class="separator:a8f576f8f51c4e815d8e866e0d1362a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a868547e5702cc29286c1959ae169066b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a868547e5702cc29286c1959ae169066b"></a>
+DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>m_handleCount</b> { 1 }</td></tr>
+<tr class="separator:a868547e5702cc29286c1959ae169066b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/Platform/Common/Default/AzCore/IO/Streamer/StreamerContext_Default.h</li>
@@ -101,7 +121,7 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Ma
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

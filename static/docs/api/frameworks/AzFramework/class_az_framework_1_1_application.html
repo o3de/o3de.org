@@ -55,6 +55,8 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_application-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::Application Class Reference</div>  </div>
@@ -172,6 +174,84 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a00997bdb34ca9ab67c3c38dcc149a3f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00997bdb34ca9ab67c3c38dcc149a3f6"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Exit</b> (int errorCode)</td></tr>
 <tr class="separator:a00997bdb34ca9ab67c3c38dcc149a3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:afe3c34968e511b851c275fd0687a31f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#afe3c34968e511b851c275fd0687a31f3">StartCommon</a> (AZ::Entity *systemEntity)</td></tr>
+<tr class="separator:afe3c34968e511b851c275fd0687a31f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a6d20ff9a8910268057cd7d13f60a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#ae9a6d20ff9a8910268057cd7d13f60a8">SetFileIOAliases</a> ()</td></tr>
+<tr class="separator:ae9a6d20ff9a8910268057cd7d13f60a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92ce9db5ec6bde815a4f9c000c50029"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab92ce9db5ec6bde815a4f9c000c50029"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#ab92ce9db5ec6bde815a4f9c000c50029">RegisterCoreComponents</a> () override</td></tr>
+<tr class="memdesc:ab92ce9db5ec6bde815a4f9c000c50029"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::ComponentApplication. <br/></td></tr>
+<tr class="separator:ab92ce9db5ec6bde815a4f9c000c50029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04c0efce887f426559721d083765aaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab04c0efce887f426559721d083765aaa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context) override</td></tr>
+<tr class="separator:ab04c0efce887f426559721d083765aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700248ec65e525085cefc3935cad1913"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a700248ec65e525085cefc3935cad1913"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#a700248ec65e525085cefc3935cad1913">ResolveFilePath</a> (AZ::u32 providerId) override</td></tr>
+<tr class="memdesc:a700248ec65e525085cefc3935cad1913"><td class="mdescLeft">&#160;</td><td class="mdescRight">UserSettingsFileLocatorBus. <br/></td></tr>
+<tr class="separator:a700248ec65e525085cefc3935cad1913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe325bee2db4831acb1e84429c7ce725"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe325bee2db4831acb1e84429c7ce725"></a>
+AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureComponentAdded</b> (AZ::Entity *systemEntity, const AZ::Uuid &amp;typeId)</td></tr>
+<tr class="separator:afe325bee2db4831acb1e84429c7ce725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88848a038df990e6788e4401f11ee68b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a88848a038df990e6788e4401f11ee68b"></a>
+template&lt;typename ComponentType &gt; </td></tr>
+<tr class="memitem:a88848a038df990e6788e4401f11ee68b"><td class="memTemplItemLeft" align="right" valign="top">AZ::Component *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EnsureComponentAdded</b> (AZ::Entity *systemEntity)</td></tr>
+<tr class="separator:a88848a038df990e6788e4401f11ee68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98d804bde00cb5fff7c8684ef23e1cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad98d804bde00cb5fff7c8684ef23e1cb"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentConfigurationName</b> () const </td></tr>
+<tr class="separator:ad98d804bde00cb5fff7c8684ef23e1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416e5c7d6b14014b2a2aba90a23ac21a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a416e5c7d6b14014b2a2aba90a23ac21a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateReflectionManager</b> () override</td></tr>
+<tr class="separator:a416e5c7d6b14014b2a2aba90a23ac21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a57a724e5bdab0e3ba15fb0a56ae86adb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57a724e5bdab0e3ba15fb0a56ae86adb"></a>
+AZ::StringFunc::Path::FixedString&#160;</td><td class="memItemRight" valign="bottom"><b>m_configFilePath</b></td></tr>
+<tr class="separator:a57a724e5bdab0e3ba15fb0a56ae86adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56234db92c65562bec0b0be73ae24b41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56234db92c65562bec0b0be73ae24b41"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_local_file_i_o.html">AZ::IO::LocalFileIO</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_directFileIO</b></td></tr>
+<tr class="separator:a56234db92c65562bec0b0be73ae24b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06db9f6dda7025520b9b1d02ce7a2cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac06db9f6dda7025520b9b1d02ce7a2cd"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; AZ::IO::FileIOBase &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#ac06db9f6dda7025520b9b1d02ce7a2cd">m_archiveFileIO</a></td></tr>
+<tr class="memdesc:ac06db9f6dda7025520b9b1d02ce7a2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><blockquote class="doxtable">
+<p>The Direct file IO instance is a LocalFileIO. </p>
+</blockquote>
+<br/></td></tr>
+<tr class="separator:ac06db9f6dda7025520b9b1d02ce7a2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71afb1d46cf869dfcd9933774e225708"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71afb1d46cf869dfcd9933774e225708"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_archive.html">AZ::IO::Archive</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#a71afb1d46cf869dfcd9933774e225708">m_archive</a></td></tr>
+<tr class="memdesc:a71afb1d46cf869dfcd9933774e225708"><td class="mdescLeft">&#160;</td><td class="mdescRight"><blockquote class="doxtable">
+<p>The Default file IO instance is a ArchiveFileIO. </p>
+</blockquote>
+<br/></td></tr>
+<tr class="separator:a71afb1d46cf869dfcd9933774e225708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7124043455bce8e8f4764be07eb222ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7124043455bce8e8f4764be07eb222ff"></a>
+AZStd::unique_ptr&lt; <a class="el" href="class_az_framework_1_1_application_1_1_implementation.html">Implementation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#a7124043455bce8e8f4764be07eb222ff">m_pimpl</a></td></tr>
+<tr class="memdesc:a7124043455bce8e8f4764be07eb222ff"><td class="mdescLeft">&#160;</td><td class="mdescRight"><blockquote class="doxtable">
+<p>The AZ::IO::Instance </p>
+</blockquote>
+<br/></td></tr>
+<tr class="separator:a7124043455bce8e8f4764be07eb222ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ecd3b90d84d138e7e98d545c1ea0eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56ecd3b90d84d138e7e98d545c1ea0eb"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; AZ::NativeUI::NativeUIRequests &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_nativeUI</b></td></tr>
+<tr class="separator:a56ecd3b90d84d138e7e98d545c1ea0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f812db2df3a57f66c160a5e0958d41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4f812db2df3a57f66c160a5e0958d41"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; AZ::InstancePoolManager &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_poolManager</b></td></tr>
+<tr class="separator:ad4f812db2df3a57f66c160a5e0958d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5665bdcf77e5fbee9d68b405e892f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a5665bdcf77e5fbee9d68b405e892f5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_ownsConsole</b> = false</td></tr>
+<tr class="separator:a2a5665bdcf77e5fbee9d68b405e892f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2480d0cc488b58040b92dea144ca93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd2480d0cc488b58040b92dea144ca93"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_exitMainLoopRequested</b> = false</td></tr>
+<tr class="separator:abd2480d0cc488b58040b92dea144ca93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5785042817c90a849ede5605f395b3c0"></a>
@@ -204,6 +284,30 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Exit</b> (int 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae9a6d20ff9a8910268057cd7d13f60a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::Application::SetFileIOAliases </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>set the LocalFileIO and ArchiveFileIO instances file aliases if the FileIOBase environment variable is pointing to the instances owned by the application </p>
+
+</div>
+</div>
 <a class="anchor" id="aa9b3659960ed503d86c823f4b06a9cc8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -239,6 +343,31 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Exit</b> (int 
 
 </div>
 </div>
+<a class="anchor" id="afe3c34968e511b851c275fd0687a31f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzFramework::Application::StartCommon </td>
+          <td>(</td>
+          <td class="paramtype">AZ::Entity *&#160;</td>
+          <td class="paramname"><em>systemEntity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called by Start method. Override to add custom startup logic. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae0503ceb57ddad8ffe2f867e296b5503"></a>
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +398,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Exit</b> (int 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

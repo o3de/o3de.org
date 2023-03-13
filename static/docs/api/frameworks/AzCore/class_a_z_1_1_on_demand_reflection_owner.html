@@ -54,6 +54,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_on_demand_reflection_owner-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::OnDemandReflectionOwner Class Reference</div>  </div>
@@ -82,6 +84,25 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_on_demand_reflection_owner.html#a0766f793a5a3de19e3ef1fe25c1cd64a">AddReflectFunction</a> (<a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a> typeId, <a class="el" href="namespace_a_z.html#a6332cfe277dbb34b8392a0f0015a0947">StaticReflectionFunctionPtr</a> reflectFunction)</td></tr>
 <tr class="memdesc:a0766f793a5a3de19e3ef1fe25c1cd64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an <a class="el" href="struct_a_z_1_1_on_demand_reflection.html">OnDemandReflection</a> function. <br/></td></tr>
 <tr class="separator:a0766f793a5a3de19e3ef1fe25c1cd64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9ed459a7c988ecd1655d9c6c85c5a9a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ed459a7c988ecd1655d9c6c85c5a9a6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_on_demand_reflection_owner.html#a9ed459a7c988ecd1655d9c6c85c5a9a6">OnDemandReflectionOwner</a> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a9ed459a7c988ecd1655d9c6c85c5a9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor to be called by child class. <br/></td></tr>
+<tr class="separator:a9ed459a7c988ecd1655d9c6c85c5a9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa9c54ce665d574075fdfefe08c7e9e53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9c54ce665d574075fdfefe08c7e9e53"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a><br class="typebreak"/>
+&lt; Internal::ReflectionFunctionRef &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_on_demand_reflection_owner.html#aa9c54ce665d574075fdfefe08c7e9e53">m_reflectFunctions</a></td></tr>
+<tr class="memdesc:aa9c54ce665d574075fdfefe08c7e9e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflection functions this instance owns references to. <br/></td></tr>
+<tr class="separator:aa9c54ce665d574075fdfefe08c7e9e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bac0b3fe4f97d445b4dce3765939f13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bac0b3fe4f97d445b4dce3765939f13"></a>
+<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_reflectContext</b></td></tr>
+<tr class="separator:a2bac0b3fe4f97d445b4dce3765939f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base classes for structures that store references to <a class="el" href="struct_a_z_1_1_on_demand_reflection.html">OnDemandReflection</a> instantiations. <a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> will own weak pointers to the function, so that we may look up already registered types. </p>
@@ -91,7 +112,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

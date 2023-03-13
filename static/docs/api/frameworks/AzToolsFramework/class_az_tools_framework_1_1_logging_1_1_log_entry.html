@@ -57,6 +57,8 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_logging_1_1_log_entry-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Logging::LogEntry Class Reference</div>  </div>
@@ -141,6 +143,27 @@ static AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>s_windowF
 <tr class="memitem:a15424e9d1f99bd50063f9cb3096ac4db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15424e9d1f99bd50063f9cb3096ac4db"></a>
 static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>s_windowFieldName</b></td></tr>
 <tr class="separator:a15424e9d1f99bd50063f9cb3096ac4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a2ba8db42b5f312eb10687cc497377f10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ba8db42b5f312eb10687cc497377f10"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseContext</b> (FieldStorage &amp;fields, const AZStd::string &amp;line)</td></tr>
+<tr class="separator:a2ba8db42b5f312eb10687cc497377f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8171ab6e6178e0f28c07256e40a9bae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8171ab6e6178e0f28c07256e40a9bae"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CopyLineInformation</b> (<a class="el" href="class_az_tools_framework_1_1_logging_1_1_log_entry.html">LogEntry</a> &amp;target, const <a class="el" href="class_az_tools_framework_1_1_logging_1_1_log_line.html">LogLine</a> &amp;source)</td></tr>
+<tr class="separator:ae8171ab6e6178e0f28c07256e40a9bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ad16ffee822e6dbfd7a03dab81398a835"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad16ffee822e6dbfd7a03dab81398a835"></a>
+FieldStorage&#160;</td><td class="memItemRight" valign="bottom"><b>m_fields</b></td></tr>
+<tr class="separator:ad16ffee822e6dbfd7a03dab81398a835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09441cb90e05817b79d6750df0c79c44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09441cb90e05817b79d6750df0c79c44"></a>
+AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_recordedTime</b> = 0</td></tr>
+<tr class="separator:a09441cb90e05817b79d6750df0c79c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca2018a8af610f4ed2e8a014ad27fa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ca2018a8af610f4ed2e8a014ad27fa2"></a>
+Severity&#160;</td><td class="memItemRight" valign="bottom"><b>m_severity</b> = Severity::Message</td></tr>
+<tr class="separator:a9ca2018a8af610f4ed2e8a014ad27fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/Logging/LogEntry.h</li>
@@ -148,7 +171,7 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>s_wind
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

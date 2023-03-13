@@ -54,6 +54,10 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_legacy_framework_1_1_i_p_c_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">LegacyFramework::IPCComponent Class Reference</div>  </div>
@@ -62,6 +66,13 @@
 
 <p>Inherits Component, and Handler.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_legacy_framework_1_1_i_p_c_component_1_1_registered_i_p_c_handler.html">RegisteredIPCHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_legacy_framework_1_1_i_p_c_component_1_1_waiting_i_p_c_command.html">WaitingIPCCommand</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:affdeea85040f6b8c6c8ae16def6cd3c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affdeea85040f6b8c6c8ae16def6cd3c0"></a>
@@ -73,6 +84,72 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> 
 <tr class="memitem:aeb5a1358ce7107513ad38bbd45cc1715"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb5a1358ce7107513ad38bbd45cc1715"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> ()</td></tr>
 <tr class="separator:aeb5a1358ce7107513ad38bbd45cc1715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a3b53574e8dded6be47eceebbc31cf919"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b53574e8dded6be47eceebbc31cf919"></a>
+typedef AZStd::vector<br class="typebreak"/>
+&lt; <a class="el" href="struct_legacy_framework_1_1_i_p_c_component_1_1_waiting_i_p_c_command.html">WaitingIPCCommand</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CommandContainer</b></td></tr>
+<tr class="separator:a3b53574e8dded6be47eceebbc31cf919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce17f609fa7caf4cba1f17365fa989e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ce17f609fa7caf4cba1f17365fa989e"></a>
+typedef AZStd::unordered_map<br class="typebreak"/>
+&lt; IPCHandleType, <br class="typebreak"/>
+<a class="el" href="class_legacy_framework_1_1_i_p_c_component_1_1_registered_i_p_c_handler.html">RegisteredIPCHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>IPCHandlerContainer</b></td></tr>
+<tr class="separator:a5ce17f609fa7caf4cba1f17365fa989e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad2ae0745a4137f13108bf90298e04765"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2ae0745a4137f13108bf90298e04765"></a>
+virtual IPCHandleType&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterIPCHandler</b> (const char *commandName, IPCCommandHandler handlerFn)</td></tr>
+<tr class="separator:ad2ae0745a4137f13108bf90298e04765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb98b518a8ba24640c058dcdc43924ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb98b518a8ba24640c058dcdc43924ae"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterIPCHandler</b> (IPCHandleType handle)</td></tr>
+<tr class="separator:acb98b518a8ba24640c058dcdc43924ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9babd8fb578d5b60f7ffc4f8829536f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9babd8fb578d5b60f7ffc4f8829536f4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteIPCHandlers</b> ()</td></tr>
+<tr class="separator:a9babd8fb578d5b60f7ffc4f8829536f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471035d958b465847c6b718403d30ac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a471035d958b465847c6b718403d30ac8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SendIPCCommand</b> (const char *commandName, const char *params)</td></tr>
+<tr class="separator:a471035d958b465847c6b718403d30ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddbf8a71d7240a94bf5fecc64b70d6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaddbf8a71d7240a94bf5fecc64b70d6a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessThread</b> ()</td></tr>
+<tr class="separator:aaddbf8a71d7240a94bf5fecc64b70d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a9365c6ba42cba613b95f7436fbc75406"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9365c6ba42cba613b95f7436fbc75406"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *reflection)</td></tr>
+<tr class="separator:a9365c6ba42cba613b95f7436fbc75406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac27920495d9e47dcbfcb97e1466df947"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac27920495d9e47dcbfcb97e1466df947"></a>
+IPCHandlerContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_RegisteredIPCHandlers</b></td></tr>
+<tr class="separator:ac27920495d9e47dcbfcb97e1466df947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89391488d9d7e39f58b2e6088a7e7606"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89391488d9d7e39f58b2e6088a7e7606"></a>
+CommandContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_CommandsWaitingToExecute</b></td></tr>
+<tr class="separator:a89391488d9d7e39f58b2e6088a7e7606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f7721fdd0b371ef198c86b1dd2f480"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96f7721fdd0b371ef198c86b1dd2f480"></a>
+AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_CommandListMutex</b></td></tr>
+<tr class="separator:a96f7721fdd0b371ef198c86b1dd2f480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2e9e597870d469aadc931e796f2dcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed2e9e597870d469aadc931e796f2dcc"></a>
+AZStd::thread&#160;</td><td class="memItemRight" valign="bottom"><b>m_ProcessThread</b></td></tr>
+<tr class="separator:aed2e9e597870d469aadc931e796f2dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e703719a87dba15071bd013a8f4cec7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e703719a87dba15071bd013a8f4cec7"></a>
+AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_ShutdownThread</b></td></tr>
+<tr class="separator:a3e703719a87dba15071bd013a8f4cec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80544f37d78d8ed9e8e368149290a9c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80544f37d78d8ed9e8e368149290a9c6"></a>
+IPCHandleType&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastAssignedHandle</b></td></tr>
+<tr class="separator:a80544f37d78d8ed9e8e368149290a9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09e5fb5a8dee448eda5ffbd76845f2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad09e5fb5a8dee448eda5ffbd76845f2c"></a>
+AZ::SharedMemoryRingBuffer&#160;</td><td class="memItemRight" valign="bottom"><b>m_IPCBuffer</b></td></tr>
+<tr class="separator:ad09e5fb5a8dee448eda5ffbd76845f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af818d375419dfd13b7d4df7bc6461eab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af818d375419dfd13b7d4df7bc6461eab"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isPrimary</b></td></tr>
+<tr class="separator:af818d375419dfd13b7d4df7bc6461eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072bb1bd9d0b317808b2af543425b5ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a072bb1bd9d0b317808b2af543425b5ed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_success</b></td></tr>
+<tr class="separator:a072bb1bd9d0b317808b2af543425b5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/LegacyFramework/Core/IPCComponent.h</li>
@@ -80,7 +157,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,10 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_log_panel_1_1_styled_log_panel-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::LogPanel::StyledLogPanel Class Reference</div>  </div>
@@ -101,6 +105,58 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aabe75d7c94520dd15293fe6a7058ce8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabe75d7c94520dd15293fe6a7058ce8c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *reflection)</td></tr>
 <tr class="separator:aabe75d7c94520dd15293fe6a7058ce8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a986c52b48279a6026c1a722ceac83a2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a986c52b48279a6026c1a722ceac83a2e"></a>
+virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTab</b> (const <a class="el" href="struct_az_tools_framework_1_1_log_panel_1_1_tab_settings.html">TabSettings</a> &amp;settings)</td></tr>
+<tr class="separator:a986c52b48279a6026c1a722ceac83a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1367ecf0a85eefe51af31e2162de2fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1367ecf0a85eefe51af31e2162de2fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabInserted</b> (int index) override</td></tr>
+<tr class="separator:af1367ecf0a85eefe51af31e2162de2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:a861a385679208d7b2d98e8c7f03e0acc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a861a385679208d7b2d98e8c7f03e0acc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onTabCloseButtonPressed</b> (int whichTab)</td></tr>
+<tr class="separator:a861a385679208d7b2d98e8c7f03e0acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354847cc2cde26edd6b372291b1e3c4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a354847cc2cde26edd6b372291b1e3c4d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onAddTriggered</b> (bool checked)</td></tr>
+<tr class="separator:a354847cc2cde26edd6b372291b1e3c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811a084c7878b67ff60ee2c231213415"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a811a084c7878b67ff60ee2c231213415"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onResetTriggered</b> (bool checked)</td></tr>
+<tr class="separator:a811a084c7878b67ff60ee2c231213415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc86588a7897517bc62a9b6197441cdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc86588a7897517bc62a9b6197441cdc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onCopyAllTriggered</b> ()</td></tr>
+<tr class="separator:afc86588a7897517bc62a9b6197441cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af230f2084757f5670fda57f99f511baf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af230f2084757f5670fda57f99f511baf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabDestroyed</b> (QObject *tabObject)</td></tr>
+<tr class="separator:af230f2084757f5670fda57f99f511baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa570db971ffd149d3d4ad8a4626b56d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa570db971ffd149d3d4ad8a4626b56d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closeTab</b> (int whichTab)</td></tr>
+<tr class="separator:aa570db971ffd149d3d4ad8a4626b56d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa11c8d3e0addd7431e51f4a3535a4eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa11c8d3e0addd7431e51f4a3535a4eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeBlankTab</b> ()</td></tr>
+<tr class="separator:afa11c8d3e0addd7431e51f4a3535a4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95e81a4becde7424012f2b7f3399932"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac95e81a4becde7424012f2b7f3399932"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>insertBlankTabIfNeeded</b> ()</td></tr>
+<tr class="separator:ac95e81a4becde7424012f2b7f3399932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a22c9ec2743348d0d6d09894342101544"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22c9ec2743348d0d6d09894342101544"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_storageID</b> = 0</td></tr>
+<tr class="separator:a22c9ec2743348d0d6d09894342101544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e3504a688ef2a8763292ff0d53baa0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84e3504a688ef2a8763292ff0d53baa0"></a>
+AZStd::unordered_map&lt; QObject <br class="typebreak"/>
+*, <a class="el" href="struct_az_tools_framework_1_1_log_panel_1_1_tab_settings.html">TabSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsForTabs</b></td></tr>
+<tr class="separator:a84e3504a688ef2a8763292ff0d53baa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f61d5adb87177d43296f93c07699785"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f61d5adb87177d43296f93c07699785"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_noTabsWidget</b> = nullptr</td></tr>
+<tr class="separator:a2f61d5adb87177d43296f93c07699785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a32a13ff6561286e83cf103dc84cf3339"></a>
@@ -126,7 +182,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

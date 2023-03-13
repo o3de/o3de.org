@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_layer_ui_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::LayerUiHandler Class Reference</div>  </div>
@@ -128,6 +130,67 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#afaaecec1a395badc93df4911af5254c0">OnOutlinerItemCollapse</a> (const QModelIndex &amp;index) const </td></tr>
 <tr class="memdesc:afaaecec1a395badc93df4911af5254c0 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when an entity's children are collapsed in the Outliner. <br/></td></tr>
 <tr class="separator:afaaecec1a395badc93df4911af5254c0 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a9fbe7e6213ad340ecda5431acd9dcce7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fbe7e6213ad340ecda5431acd9dcce7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>PaintLayerStripeAndBorder</b> (QPainter *painter, int stripeX, int top, int bottom, QColor layerBorderColor, QColor layerColor)</td></tr>
+<tr class="separator:a9fbe7e6213ad340ecda5431acd9dcce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe32a8ed1fa8f4a082bb11cde123906d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe32a8ed1fa8f4a082bb11cde123906d"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLastVisibleChild</b> (const QModelIndex &amp;parent, const QModelIndex &amp;child)</td></tr>
+<tr class="separator:afe32a8ed1fa8f4a082bb11cde123906d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3afa251f2f134874ef0cecf4753390"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b3afa251f2f134874ef0cecf4753390"></a>
+static QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastVisibleChild</b> (const QModelIndex &amp;parent)</td></tr>
+<tr class="separator:a0b3afa251f2f134874ef0cecf4753390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a0fe387e313bea973946230255d675e00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fe387e313bea973946230255d675e00"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerSquareSize</b> = 22</td></tr>
+<tr class="separator:a0fe387e313bea973946230255d675e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656f7491cb2705c1aa31829a586e7aac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a656f7491cb2705c1aa31829a586e7aac"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerStripeWidth</b> = 1</td></tr>
+<tr class="separator:a656f7491cb2705c1aa31829a586e7aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f36ddb0f23264ee5e2704214e6b342d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f36ddb0f23264ee5e2704214e6b342d"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerDividerLineHeight</b> = 1</td></tr>
+<tr class="separator:a4f36ddb0f23264ee5e2704214e6b342d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b56462b8cddc1bb1eb12d77fd25792a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b56462b8cddc1bb1eb12d77fd25792a"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastEntityInLayerDividerLineHeight</b> = 1</td></tr>
+<tr class="separator:a3b56462b8cddc1bb1eb12d77fd25792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa36db5ed78fa826f9e7f55eaefe42357"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa36db5ed78fa826f9e7f55eaefe42357"></a>
+static const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerBackgroundColor</b></td></tr>
+<tr class="separator:aa36db5ed78fa826f9e7f55eaefe42357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6869ab332048835a951afb3d92e80969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6869ab332048835a951afb3d92e80969"></a>
+static const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerBackgroundHoveredColor</b></td></tr>
+<tr class="separator:a6869ab332048835a951afb3d92e80969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accba4bfa1906593793070c83cbf1150d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accba4bfa1906593793070c83cbf1150d"></a>
+static const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerBackgroundSelectedColor</b></td></tr>
+<tr class="separator:accba4bfa1906593793070c83cbf1150d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1814c0c92a4c7a670bfa6c755794952"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1814c0c92a4c7a670bfa6c755794952"></a>
+static const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerDescendantBackgroundColor</b></td></tr>
+<tr class="separator:af1814c0c92a4c7a670bfa6c755794952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91fae1046db2151834059925c4f1f966"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91fae1046db2151834059925c4f1f966"></a>
+static const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerDescendantBackgroundHoveredColor</b></td></tr>
+<tr class="separator:a91fae1046db2151834059925c4f1f966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c74686ef918c1bf0a6160af883dd0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45c74686ef918c1bf0a6160af883dd0a"></a>
+static const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerDescendantBackgroundSelectedColor</b></td></tr>
+<tr class="separator:a45c74686ef918c1bf0a6160af883dd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278ed5d764dc39770f4cfe7009be5795"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a278ed5d764dc39770f4cfe7009be5795"></a>
+static const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerBorderTopColor</b></td></tr>
+<tr class="separator:a278ed5d764dc39770f4cfe7009be5795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a99321a91bcb76e49370226777fe728"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a99321a91bcb76e49370226777fe728"></a>
+static const QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerBorderBottomColor</b></td></tr>
+<tr class="separator:a9a99321a91bcb76e49370226777fe728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724765274b3b369a1eb80e49ea50af51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a724765274b3b369a1eb80e49ea50af51"></a>
+static const QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_layerIconPath</b></td></tr>
+<tr class="separator:a724765274b3b369a1eb80e49ea50af51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_static_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html">AzToolsFramework::EditorEntityUiHandlerBase</a></td></tr>
+<tr class="memitem:aa07f587ece5705f697d279d8503c3fb7 inherit pro_static_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa07f587ece5705f697d279d8503c3fb7"></a>
+static AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntityIdFromIndex</b> (const QModelIndex &amp;index)</td></tr>
+<tr class="separator:aa07f587ece5705f697d279d8503c3fb7 inherit pro_static_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/Layer/LayerUiHandler.h</li>
@@ -135,7 +198,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -51,6 +51,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_test_1_1_gem_test_environment-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Test::GemTestEnvironment Class Reference</div>  </div>
@@ -64,6 +66,13 @@
 
 <p>Inherits TraceBusHook.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_test_1_1_gem_test_environment_1_1_gem_test_entity.html">GemTestEntity</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_test_1_1_gem_test_environment_1_1_parameters.html">Parameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afeaf8565b7b1505a7341faeccc4f8aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_test_1_1_gem_test_environment.html#afeaf8565b7b1505a7341faeccc4f8aab">AddDynamicModulePaths</a> (const AZStd::vector&lt; AZStd::string &gt; &amp;dynamicModulePaths)</td></tr>
@@ -100,6 +109,30 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual AZ::ComponentApplication *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_test_1_1_gem_test_environment.html#a5085021ed1e1fe17b8a080c431f57f2d">CreateApplicationInstance</a> ()</td></tr>
 <tr class="memdesc:a5085021ed1e1fe17b8a080c431f57f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows derived environments to create a desired instance of the application (for example ToolsApplication). <br/></td></tr>
 <tr class="separator:a5085021ed1e1fe17b8a080c431f57f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa9a8f7bba2eac3146a1ee9fe3dce442d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9a8f7bba2eac3146a1ee9fe3dce442d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupEnvironment</b> () override</td></tr>
+<tr class="separator:aa9a8f7bba2eac3146a1ee9fe3dce442d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3147363d79282ff4f282fa5e3ea577c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3147363d79282ff4f282fa5e3ea577c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TeardownEnvironment</b> () override</td></tr>
+<tr class="separator:aa3147363d79282ff4f282fa5e3ea577c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9b743dcfdd69a710f91b65be2a93691c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b743dcfdd69a710f91b65be2a93691c"></a>
+AZ::ComponentApplication *&#160;</td><td class="memItemRight" valign="bottom"><b>m_application</b></td></tr>
+<tr class="separator:a9b743dcfdd69a710f91b65be2a93691c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b7578c9af3c98feac22cf69768c035"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51b7578c9af3c98feac22cf69768c035"></a>
+AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><b>m_systemEntity</b></td></tr>
+<tr class="separator:a51b7578c9af3c98feac22cf69768c035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69bde90af257ec55794319489a80b25b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69bde90af257ec55794319489a80b25b"></a>
+<a class="el" href="class_a_z_1_1_test_1_1_gem_test_environment_1_1_gem_test_entity.html">GemTestEntity</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_gemEntity</b></td></tr>
+<tr class="separator:a69bde90af257ec55794319489a80b25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06335ea114a57e79174e8fff3eb2ca11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06335ea114a57e79174e8fff3eb2ca11"></a>
+<a class="el" href="class_a_z_1_1_test_1_1_gem_test_environment_1_1_parameters.html">Parameters</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parameters</b></td></tr>
+<tr class="separator:a06335ea114a57e79174e8fff3eb2ca11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A test environment which is intended to facilitate writing unit tests which require components from a gem. </p>
@@ -179,7 +212,7 @@ virtual AZ::ComponentApplication *&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzTest API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzTest API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

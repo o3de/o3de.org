@@ -56,6 +56,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_gamepad_1_1_implementation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceGamepad::Implementation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -67,6 +69,12 @@
 
 <p><code>#include &lt;InputDeviceGamepad.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html">RawGamepadState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform agnostic representation of a raw game-pad state.  <a href="struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a78fb595bff94d335eda20adefb5e01f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78fb595bff94d335eda20adefb5e01f0"></a>
@@ -123,6 +131,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a95d23876aa6acb7f174ae2a28a6040cd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html">Implementation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html#a95d23876aa6acb7f174ae2a28a6040cd">Create</a> (<a class="el" href="class_az_framework_1_1_input_device_gamepad.html">InputDeviceGamepad</a> &amp;inputDevice)</td></tr>
 <tr class="separator:a95d23876aa6acb7f174ae2a28a6040cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a65ff1bd13cd006b0e0f4be26fd6a0599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html#a65ff1bd13cd006b0e0f4be26fd6a0599">ProcessRawGamepadState</a> (const <a class="el" href="struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html">RawGamepadState</a> &amp;rawGamepadState)</td></tr>
+<tr class="separator:a65ff1bd13cd006b0e0f4be26fd6a0599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8874df30102316679a8eb369d5bdcbd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8874df30102316679a8eb369d5bdcbd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html#a8874df30102316679a8eb369d5bdcbd3">ResetInputChannelStates</a> ()</td></tr>
+<tr class="memdesc:a8874df30102316679a8eb369d5bdcbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
+<tr class="separator:a8874df30102316679a8eb369d5bdcbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b81b9af891c63b28c2aa4bb59b56f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00b81b9af891c63b28c2aa4bb59b56f8"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html#a00b81b9af891c63b28c2aa4bb59b56f8">GetInputDeviceIndex</a> () const </td></tr>
+<tr class="memdesc:a00b81b9af891c63b28c2aa4bb59b56f8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_device_id.html#af27fec44afcb94ba0951a90a6c2c0bfb">AzFramework::InputDeviceId::GetIndex</a> <br/></td></tr>
+<tr class="separator:a00b81b9af891c63b28c2aa4bb59b56f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0c6127c2b54b8322f9e7256b5c26c6e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c6127c2b54b8322f9e7256b5c26c6e2"></a>
+<a class="el" href="class_az_framework_1_1_input_device_gamepad.html">InputDeviceGamepad</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_gamepad_1_1_implementation.html#a0c6127c2b54b8322f9e7256b5c26c6e2">m_inputDevice</a></td></tr>
+<tr class="memdesc:a0c6127c2b54b8322f9e7256b5c26c6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the input device. <br/></td></tr>
+<tr class="separator:a0c6127c2b54b8322f9e7256b5c26c6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for platform specific implementations of game-pad input devices. </p>
@@ -275,6 +303,37 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a65ff1bd13cd006b0e0f4be26fd6a0599"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::InputDeviceGamepad::Implementation::ProcessRawGamepadState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html">RawGamepadState</a> &amp;&#160;</td>
+          <td class="paramname"><em>rawGamepadState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Process a game-pad state that has been obtained since the last call to this function. This function is not thread safe, and so should only be called from the main thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rawGamepadState</td><td>The raw game-pad state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ad8603614a34c5a146ba0fc474a3529f8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -354,7 +413,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

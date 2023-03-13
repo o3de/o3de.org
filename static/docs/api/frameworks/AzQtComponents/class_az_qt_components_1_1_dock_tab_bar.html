@@ -53,7 +53,10 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_dock_tab_bar-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::DockTabBar Class Reference</div>  </div>
@@ -129,11 +132,96 @@ Static Public Member Functions</h2></td></tr>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>closeButtonOffsetForIndex</b> (const QStyleOptionTab *option)</td></tr>
 <tr class="separator:a5951bc28e27d2d0abebd19788eb1397a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:adf62855df7bb2705bc07606462f9a146"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf62855df7bb2705bc07606462f9a146"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>currentIndexChanged</b> (int current)</td></tr>
+<tr class="separator:adf62855df7bb2705bc07606462f9a146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bb051be177943868c14a3fcc553800"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76bb051be177943868c14a3fcc553800"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closeTabGroup</b> ()</td></tr>
+<tr class="separator:a76bb051be177943868c14a3fcc553800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a730ddcb3fbff58eda135c7fd2135af59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a730ddcb3fbff58eda135c7fd2135af59"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a730ddcb3fbff58eda135c7fd2135af59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138bfae6d2fdc662948942e490e1244e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a138bfae6d2fdc662948942e490e1244e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabLayoutChange</b> () override</td></tr>
+<tr class="separator:a138bfae6d2fdc662948942e490e1244e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d622685e03d2ea3ee5da8fe0acc98d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72d622685e03d2ea3ee5da8fe0acc98d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabInserted</b> (int index) override</td></tr>
+<tr class="separator:a72d622685e03d2ea3ee5da8fe0acc98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_qt_components_1_1_tab_bar"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_qt_components_1_1_tab_bar')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_qt_components_1_1_tab_bar.html">AzQtComponents::TabBar</a></td></tr>
+<tr class="memitem:a892fb6c5b6c3e00016473f42de13a311 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a892fb6c5b6c3e00016473f42de13a311"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>TabBar</b> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a892fb6c5b6c3e00016473f42de13a311 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1910abb35e4152c18f069a2ecc03f7 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba1910abb35e4152c18f069a2ecc03f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enterEvent</b> (QEvent *event) override</td></tr>
+<tr class="separator:aba1910abb35e4152c18f069a2ecc03f7 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6588cda5f66c792947f1f1705390b498 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6588cda5f66c792947f1f1705390b498"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>leaveEvent</b> (QEvent *event) override</td></tr>
+<tr class="separator:a6588cda5f66c792947f1f1705390b498 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792824b96f26ae9283f86fd7524b9c56 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a792824b96f26ae9283f86fd7524b9c56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *mouseEvent) override</td></tr>
+<tr class="separator:a792824b96f26ae9283f86fd7524b9c56 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc63aca0f811478d59ffc466687ace8 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbc63aca0f811478d59ffc466687ace8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *mouseEvent) override</td></tr>
+<tr class="separator:afbc63aca0f811478d59ffc466687ace8 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206b84086bdc88d6dc1c53e81316c631 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a206b84086bdc88d6dc1c53e81316c631"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *mouseEvent) override</td></tr>
+<tr class="separator:a206b84086bdc88d6dc1c53e81316c631 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b8b640bc28e06a148a42521c040d9ff inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b8b640bc28e06a148a42521c040d9ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *paintEvent) override</td></tr>
+<tr class="separator:a2b8b640bc28e06a148a42521c040d9ff inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258610e09009d444c64d51aac23d469c inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a258610e09009d444c64d51aac23d469c"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>minimumSizeHint</b> () const override</td></tr>
+<tr class="separator:a258610e09009d444c64d51aac23d469c inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9391d577bacd3338d28bc1d99f7a78 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf9391d577bacd3338d28bc1d99f7a78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUseMaxWidth</b> (bool use)</td></tr>
+<tr class="separator:adf9391d577bacd3338d28bc1d99f7a78 inherit pro_methods_class_az_qt_components_1_1_tab_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a399c4627289389b608e5a1301bdd9ccc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a399c4627289389b608e5a1301bdd9ccc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>singleTabFillsWidth</b></td></tr>
 <tr class="separator:a399c4627289389b608e5a1301bdd9ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a435040c98c283d5b590c4e5f7e6d937d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a435040c98c283d5b590c4e5f7e6d937d"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabIndicatorUnderlay</b></td></tr>
+<tr class="separator:a435040c98c283d5b590c4e5f7e6d937d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0561af0d08122c5aa1e1f5624c06c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b0561af0d08122c5aa1e1f5624c06c0"></a>
+QToolButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_leftButton</b></td></tr>
+<tr class="separator:a9b0561af0d08122c5aa1e1f5624c06c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac99c94e8e6d26b8acdbf27a0fddfb122"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac99c94e8e6d26b8acdbf27a0fddfb122"></a>
+QToolButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rightButton</b></td></tr>
+<tr class="separator:ac99c94e8e6d26b8acdbf27a0fddfb122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a250c70d3b31c5de7125fb058972da7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a250c70d3b31c5de7125fb058972da7"></a>
+QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_contextMenu</b></td></tr>
+<tr class="separator:a8a250c70d3b31c5de7125fb058972da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb0c7049d707cf80fd00323526785c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cb0c7049d707cf80fd00323526785c1"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_closeTabMenuAction</b></td></tr>
+<tr class="separator:a3cb0c7049d707cf80fd00323526785c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace24ba3ec138035d1ab728b5739b9af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aace24ba3ec138035d1ab728b5739b9af"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_closeTabGroupMenuAction</b></td></tr>
+<tr class="separator:aace24ba3ec138035d1ab728b5739b9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d621d8b9d79685950727e141b7d609b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d621d8b9d79685950727e141b7d609b"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_undockTabMenuAction</b></td></tr>
+<tr class="separator:a2d621d8b9d79685950727e141b7d609b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ee96953ee622625bcd5aa05a6ac4a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80ee96953ee622625bcd5aa05a6ac4a9"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_undockTabGroupMenuAction</b></td></tr>
+<tr class="separator:a80ee96953ee622625bcd5aa05a6ac4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ae42a90de302dd609488a3db93e0ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8ae42a90de302dd609488a3db93e0ea"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuActionTabIndex</b></td></tr>
+<tr class="separator:ac8ae42a90de302dd609488a3db93e0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37284545b26b51974572e276f900b5fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37284545b26b51974572e276f900b5fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_singleTabFillsWidth</b></td></tr>
+<tr class="separator:a37284545b26b51974572e276f900b5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23bc5caaadb2e8a9e9f691aae1b2816"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa23bc5caaadb2e8a9e9f691aae1b2816"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isShowingWindowControls</b> = false</td></tr>
+<tr class="separator:aa23bc5caaadb2e8a9e9f691aae1b2816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/DockTabBar.h</li>
@@ -141,7 +229,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>singleTabFillsWidth</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

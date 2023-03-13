@@ -55,6 +55,9 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_metrics_1_1_event_logger_factory_impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Metrics::EventLoggerFactoryImpl Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -66,6 +69,8 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_logger_factory_impl_1_1_event_logger_deleter.html">EventLoggerDeleter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_logger_factory_impl_1_1_id_to_event_logger_entry.html">IdToEventLoggerEntry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -100,6 +105,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a78621deaa5ca9be1d638649214b0ef7b inherit pub_methods_class_a_z_1_1_metrics_1_1_i_event_logger_factory"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78621deaa5ca9be1d638649214b0ef7b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_metrics_1_1_i_event_logger_factory.html">IEventLoggerFactory</a>,&quot;{3E98C565-3A1E-460E-B692-4FAE783952CC}&quot;)</td></tr>
 <tr class="separator:a78621deaa5ca9be1d638649214b0ef7b inherit pub_methods_class_a_z_1_1_metrics_1_1_i_event_logger_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a3f0a922fccbfb41a65eb0d0c5dfde2c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f0a922fccbfb41a65eb0d0c5dfde2c2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>EventLoggerPtr</b> = AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_metrics_1_1_i_event_logger.html">IEventLogger</a>, <a class="el" href="struct_a_z_1_1_metrics_1_1_event_logger_factory_impl_1_1_event_logger_deleter.html">EventLoggerDeleter</a> &gt;</td></tr>
+<tr class="separator:a3f0a922fccbfb41a65eb0d0c5dfde2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892f7889ad16d9531b0652555b7144b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a892f7889ad16d9531b0652555b7144b7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>IdToEventLoggerMap</b> = <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_metrics_1_1_event_logger_factory_impl_1_1_id_to_event_logger_entry.html">IdToEventLoggerEntry</a> &gt;</td></tr>
+<tr class="separator:a892f7889ad16d9531b0652555b7144b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ab9e570decd4b08466fa42e7cd17e4e6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_outcome.html">AZ::Outcome</a>&lt; void, EventLoggerPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_event_logger_factory_impl.html#ab9e570decd4b08466fa42e7cd17e4e6e">RegisterEventLoggerImpl</a> (EventLoggerId loggerId, EventLoggerPtr eventlogger)</td></tr>
+<tr class="separator:ab9e570decd4b08466fa42e7cd17e4e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b2599736aeab80ccfb808a94390794"><td class="memItemLeft" align="right" valign="top">IdToEventLoggerMap::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_event_logger_factory_impl.html#af1b2599736aeab80ccfb808a94390794">FindEventLoggerImpl</a> (EventLoggerId) const </td></tr>
+<tr class="separator:af1b2599736aeab80ccfb808a94390794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3b76854d25cdbbc3cedb29c46badfefb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1vector.html">IdToEventLoggerMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_event_logger_factory_impl.html#a3b76854d25cdbbc3cedb29c46badfefb">m_eventLoggers</a></td></tr>
+<tr class="separator:a3b76854d25cdbbc3cedb29c46badfefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45837355eb4bc22fe64376d5963762d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_event_logger_factory_impl.html#a45837355eb4bc22fe64376d5963762d1">m_eventLoggerMutex</a></td></tr>
+<tr class="separator:a45837355eb4bc22fe64376d5963762d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -142,6 +170,38 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af1b2599736aeab80ccfb808a94390794"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IdToEventLoggerMap::const_iterator AZ::Metrics::EventLoggerFactoryImpl::FindEventLoggerImpl </td>
+          <td>(</td>
+          <td class="paramtype">EventLoggerId&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Searches within the event logger array for the event logger registered with the specified id </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loggerId</td><td>Unique Id of event logger to locate </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>iterator pointing the event logger registered with the specified EventLoggerId NOTE: It is responsibility of the caller to lock the <a class="el" href="class_a_z_1_1_event.html">Event</a> Logger Mutex to protect the search </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a5a08fabc8b65603c429d01c65a042028"></a>
 <div class="memitem">
 <div class="memproto">
@@ -173,6 +233,49 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>bool indicating if there is an event logger with the id registered </dd></dl>
 
 <p>Implements <a class="el" href="class_a_z_1_1_metrics_1_1_i_event_logger_factory.html#a68a14010ea06a1290adc35cdb36efcbc">AZ::Metrics::IEventLoggerFactory</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9e570decd4b08466fa42e7cd17e4e6e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_1_1_outcome.html">AZ::Outcome</a>&lt;void, EventLoggerPtr&gt; AZ::Metrics::EventLoggerFactoryImpl::RegisterEventLoggerImpl </td>
+          <td>(</td>
+          <td class="paramtype">EventLoggerId&#160;</td>
+          <td class="paramname"><em>loggerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventLoggerPtr&#160;</td>
+          <td class="paramname"><em>eventlogger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Helper function that is used to register an event logger into the event logger array while taking into account whether the event logger should be owned by this factory </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loggerId</td><td>Unique Id of the event logger to register with this factory </td></tr>
+    <tr><td class="paramname">eventLogger</td><td>unique_ptr to event logger to register </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>outcome which indicates whether the event logger was registered with the event logger array On success an empty Success outcome is returned On failure, the supplied event logger parameter is returned back to the caller </dd></dl>
 
 </div>
 </div>
@@ -210,13 +313,56 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a45837355eb4bc22fe64376d5963762d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a> AZ::Metrics::EventLoggerFactoryImpl::m_eventLoggerMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Protects modifications to the m_eventLoggers range Doesn't need to be recursive as now inner calls attempts to lock the mutex </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b76854d25cdbbc3cedb29c46badfefb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_a_z_std_1_1vector.html">IdToEventLoggerMap</a> AZ::Metrics::EventLoggerFactoryImpl::m_eventLoggers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Contains the registered event loggers Sorted to provide O(Log N) search </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Metrics/EventLoggerFactoryImpl.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

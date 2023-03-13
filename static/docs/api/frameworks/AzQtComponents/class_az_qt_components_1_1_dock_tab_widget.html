@@ -53,6 +53,9 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_dock_tab_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::DockTabWidget Class Reference</div>  </div>
@@ -165,6 +168,54 @@ static <a class="el" href="struct_az_qt_components_1_1_tab_widget_1_1_config.htm
 <tr class="memdesc:aa27f1740d08467a9637460cdb500bb4e inherit pub_static_methods_class_az_qt_components_1_1_tab_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default tab widget style configuration. <br/></td></tr>
 <tr class="separator:aa27f1740d08467a9637460cdb500bb4e inherit pub_static_methods_class_az_qt_components_1_1_tab_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:a602411f974605cea4eb22ce7c14c5436"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a602411f974605cea4eb22ce7c14c5436"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>handleTabCloseRequested</b> (int index)</td></tr>
+<tr class="separator:a602411f974605cea4eb22ce7c14c5436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a6a718059b565c696f2c3ce6e9c117"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4a6a718059b565c696f2c3ce6e9c117"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleTabAboutToClose</b> ()</td></tr>
+<tr class="separator:ac4a6a718059b565c696f2c3ce6e9c117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41edf1e17d03f683cf7d11f868132ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa41edf1e17d03f683cf7d11f868132ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>handleTabIndexPressed</b> (int index)</td></tr>
+<tr class="separator:aa41edf1e17d03f683cf7d11f868132ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aeb8c7f3cf63617a074a9992800ac7bb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb8c7f3cf63617a074a9992800ac7bb8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *event) override</td></tr>
+<tr class="separator:aeb8c7f3cf63617a074a9992800ac7bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea26c1f9297f8a99ca3d0c3171b8220"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abea26c1f9297f8a99ca3d0c3171b8220"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuEvent</b> (QContextMenuEvent *event) override</td></tr>
+<tr class="separator:abea26c1f9297f8a99ca3d0c3171b8220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9029970cfd18ecabd4e4279238c2e4cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9029970cfd18ecabd4e4279238c2e4cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabInserted</b> (int index) override</td></tr>
+<tr class="separator:a9029970cfd18ecabd4e4279238c2e4cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9777ec7acea65bc34f237e3fc54ad66"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9777ec7acea65bc34f237e3fc54ad66"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabRemoved</b> (int index) override</td></tr>
+<tr class="separator:ae9777ec7acea65bc34f237e3fc54ad66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_qt_components_1_1_tab_widget"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_qt_components_1_1_tab_widget')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_qt_components_1_1_tab_widget.html">AzQtComponents::TabWidget</a></td></tr>
+<tr class="memitem:af9a28c22b0d7d2f172686dcd71ddc838 inherit pro_methods_class_az_qt_components_1_1_tab_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9a28c22b0d7d2f172686dcd71ddc838"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabInserted</b> (int index) override</td></tr>
+<tr class="separator:af9a28c22b0d7d2f172686dcd71ddc838 inherit pro_methods_class_az_qt_components_1_1_tab_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef1ecf72cefcf3a63fef76fd9494ab4 inherit pro_methods_class_az_qt_components_1_1_tab_widget"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeef1ecf72cefcf3a63fef76fd9494ab4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabRemoved</b> (int index) override</td></tr>
+<tr class="separator:aeef1ecf72cefcf3a63fef76fd9494ab4 inherit pro_methods_class_az_qt_components_1_1_tab_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a01daeac66c0a0d04bbc84ed41b083891"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01daeac66c0a0d04bbc84ed41b083891"></a>
+<a class="el" href="class_az_qt_components_1_1_dock_tab_bar.html">DockTabBar</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabBar</b></td></tr>
+<tr class="separator:a01daeac66c0a0d04bbc84ed41b083891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcda80835178a55c4b4d19ff0d73f3cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcda80835178a55c4b4d19ff0d73f3cf"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainEditorWindow</b></td></tr>
+<tr class="separator:afcda80835178a55c4b4d19ff0d73f3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8244a35f8517db83c1162a1b5db538"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d8244a35f8517db83c1162a1b5db538"></a>
+AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+QMap&lt; QDockWidget <br class="typebreak"/>
+*, QMetaObject::Connection &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_titleBarChangedConnections</b></td></tr>
+<tr class="separator:a8d8244a35f8517db83c1162a1b5db538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_class_az_qt_components_1_1_tab_widget"><td colspan="2" onclick="javascript:toggleInherit('properties_class_az_qt_components_1_1_tab_widget')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_az_qt_components_1_1_tab_widget.html">AzQtComponents::TabWidget</a></td></tr>
@@ -179,7 +230,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,6 +55,9 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_edit_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::EditContext Class Reference</div>  </div>
@@ -99,6 +102,38 @@ const <a class="el" href="struct_a_z_1_1_edit_1_1_element_data.html">Edit::Eleme
 <tr class="memitem:ae9205fa2f0f1b36fe9656ae9110a408a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9205fa2f0f1b36fe9656ae9110a408a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateInstance</b> (<a class="el" href="struct_a_z_1_1_edit_context_1_1_enumerate_instance_call_context.html">EnumerateInstanceCallContext</a> *callContext, void *ptr, const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;classId, const <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> *classData, const <a class="el" href="struct_a_z_1_1_serialize_1_1_class_element.html">SerializeContext::ClassElement</a> *classElement) const </td></tr>
 <tr class="separator:ae9205fa2f0f1b36fe9656ae9110a408a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a77821ab49e965c93377f20479a638247"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77821ab49e965c93377f20479a638247"></a>
+typedef <a class="el" href="class_a_z_std_1_1list.html">AZStd::list</a><br class="typebreak"/>
+&lt; <a class="el" href="struct_a_z_1_1_edit_1_1_class_data.html">Edit::ClassData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ClassDataListType</b></td></tr>
+<tr class="separator:a77821ab49e965c93377f20479a638247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691948dc5f3e0902a98be042378fb81a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a691948dc5f3e0902a98be042378fb81a"></a>
+typedef <a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a><br class="typebreak"/>
+&lt; <a class="el" href="struct_a_z_1_1_uuid.html">AZ::Uuid</a>, <a class="el" href="struct_a_z_1_1_edit_1_1_element_data.html">Edit::ElementData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumDataMapType</b></td></tr>
+<tr class="separator:a691948dc5f3e0902a98be042378fb81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a95586cb314690d8fbbf19e65f16b7170"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95586cb314690d8fbbf19e65f16b7170"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EditContext</b> (const <a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a> &amp;)</td></tr>
+<tr class="separator:a95586cb314690d8fbbf19e65f16b7170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a9c729929792c87dea3fcba392399c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70a9c729929792c87dea3fcba392399c"></a>
+<a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a> &amp;)</td></tr>
+<tr class="separator:a70a9c729929792c87dea3fcba392399c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a384075ce40407f786115f8a51c9b56bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a384075ce40407f786115f8a51c9b56bd"></a>
+<a class="el" href="class_a_z_std_1_1list.html">ClassDataListType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_classData</b></td></tr>
+<tr class="separator:a384075ce40407f786115f8a51c9b56bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4cfc359369fb32c2a5d75eb8bea81c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c4cfc359369fb32c2a5d75eb8bea81c"></a>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">EnumDataMapType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_enumData</b></td></tr>
+<tr class="separator:a8c4cfc359369fb32c2a5d75eb8bea81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083a13386114062b67db9b21d6fab2d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a083a13386114062b67db9b21d6fab2d5"></a>
+<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b></td></tr>
+<tr class="separator:a083a13386114062b67db9b21d6fab2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a> is bound to serialize context. It uses it for data manipulation. It's role is to be an abstract way to generate and describe how a class should be edited. It doesn't rely on any edit/editor/etc. code and it should not as it's ABSTRACT. Please refer to your editor/edit tools to check what are the "id" for the uiElements and their respective properties "id" and values. </p>
@@ -185,7 +220,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateInstance</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

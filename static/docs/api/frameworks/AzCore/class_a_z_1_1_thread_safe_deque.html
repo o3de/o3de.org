@@ -55,6 +55,7 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_thread_safe_deque-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::ThreadSafeDeque&lt; TYPE &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -91,6 +92,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:acf4c19d13d3629204382bb510eb23d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabc71ed4f5cbc3d64d6066cce4241cdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_thread_safe_deque.html#aabc71ed4f5cbc3d64d6066cce4241cdb">VisitDeque</a> (const <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void(<a class="el" href="class_a_z_std_1_1deque.html">DequeType</a> &amp;)&gt; &amp;visitor)</td></tr>
 <tr class="separator:aabc71ed4f5cbc3d64d6066cce4241cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a84ffe5ca30944ed429ab1ffbd2db972d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84ffe5ca30944ed429ab1ffbd2db972d"></a>
+<a class="el" href="class_a_z_std_1_1recursive__mutex.html">AZStd::recursive_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="separator:a84ffe5ca30944ed429ab1ffbd2db972d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825d7ba2774f2cc8eda0cc72b92f7f26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a825d7ba2774f2cc8eda0cc72b92f7f26"></a>
+<a class="el" href="class_a_z_std_1_1deque.html">DequeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_deque</b></td></tr>
+<tr class="separator:a825d7ba2774f2cc8eda0cc72b92f7f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="acf8b40c9c0ca1bdb7c159fcee475a504"></a>
@@ -364,7 +374,7 @@ template&lt;typename TYPE &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

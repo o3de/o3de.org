@@ -53,6 +53,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_s_q_lite_1_1_connection-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::SQLite::Connection Class Reference</div>  </div>
@@ -119,6 +121,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_connection.html#a0bffdc44f2587d619a28519e278af351">DoesTableExist</a> (const char *name)</td></tr>
 <tr class="memdesc:a0bffdc44f2587d619a28519e278af351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the given table name exists in the database. <br/></td></tr>
 <tr class="separator:a0bffdc44f2587d619a28519e278af351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a1aa7ce5978fbbb43f11d8c61005c317d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1aa7ce5978fbbb43f11d8c61005c317d"></a>
+typedef AZStd::unordered_map<br class="typebreak"/>
+&lt; AZStd::string, <br class="typebreak"/>
+StatementPrototype * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StatementContainer</b></td></tr>
+<tr class="separator:a1aa7ce5978fbbb43f11d8c61005c317d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af16f82c0f68d798f5fe250300d442c16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af16f82c0f68d798f5fe250300d442c16"></a>
+sqlite3 *&#160;</td><td class="memItemRight" valign="bottom"><b>m_db</b></td></tr>
+<tr class="separator:af16f82c0f68d798f5fe250300d442c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae658041eb814be1854e20b9b3c4b26c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae658041eb814be1854e20b9b3c4b26c1"></a>
+StatementContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_statementPrototypes</b></td></tr>
+<tr class="separator:ae658041eb814be1854e20b9b3c4b26c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_connection.html">AzToolsFramework::SQLite::Connection</a> represents a barebones, single-threaded connection to a SQLite database </p>
@@ -195,7 +214,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

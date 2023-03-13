@@ -55,6 +55,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::UndoSystem::URSequencePoint Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -131,6 +133,33 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aedb33d4c9e03042deb2d6a61bf8b2f84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedb33d4c9e03042deb2d6a61bf8b2f84"></a>
 friend&#160;</td><td class="memItemRight" valign="bottom"><b>UndoStack</b></td></tr>
 <tr class="separator:aedb33d4c9e03042deb2d6a61bf8b2f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7dfac6a4206bc0407c8c12415bb47f11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dfac6a4206bc0407c8c12415bb47f11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddChild</b> (<a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">URSequencePoint</a> *)</td></tr>
+<tr class="separator:a7dfac6a4206bc0407c8c12415bb47f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5eb94b7bd6304ff3ca7557e5107d8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e5eb94b7bd6304ff3ca7557e5107d8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveChild</b> (<a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">URSequencePoint</a> *)</td></tr>
+<tr class="separator:a1e5eb94b7bd6304ff3ca7557e5107d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac9cd763617023e481f85fc59d230c594"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9cd763617023e481f85fc59d230c594"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_friendlyName</b></td></tr>
+<tr class="separator:ac9cd763617023e481f85fc59d230c594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaef7aa5c06e21904afe86886485a836"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afaef7aa5c06e21904afe86886485a836"></a>
+URCommandID&#160;</td><td class="memItemRight" valign="bottom"><b>m_id</b></td></tr>
+<tr class="separator:afaef7aa5c06e21904afe86886485a836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed52945c0982aac2eac162d6773b7338"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed52945c0982aac2eac162d6773b7338"></a>
+ChildVec&#160;</td><td class="memItemRight" valign="bottom"><b>m_children</b></td></tr>
+<tr class="separator:aed52945c0982aac2eac162d6773b7338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ff1e904a0d37943bcc0541298da60f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3ff1e904a0d37943bcc0541298da60f"></a>
+<a class="el" href="class_az_tools_framework_1_1_undo_system_1_1_u_r_sequence_point.html">URSequencePoint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b></td></tr>
+<tr class="separator:ad3ff1e904a0d37943bcc0541298da60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62ab5adcc41726a30466ab4b3db929a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab62ab5adcc41726a30466ab4b3db929a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isPosted</b></td></tr>
+<tr class="separator:ab62ab5adcc41726a30466ab4b3db929a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a608ac44e8c0a95b285ee324742fc5f5c"></a>
@@ -319,7 +348,7 @@ friend&#160;</td><td class="memItemRight" valign="bottom"><b>UndoStack</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

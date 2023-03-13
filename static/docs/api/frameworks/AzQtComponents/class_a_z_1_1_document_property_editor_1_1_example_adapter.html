@@ -51,6 +51,9 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_document_property_editor_1_1_example_adapter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DocumentPropertyEditor::ExampleAdapter Class Reference</div>  </div>
@@ -58,13 +61,53 @@
 <div class="contents">
 
 <p>Inherits DocumentAdapter.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_document_property_editor_1_1_example_adapter_1_1_color_tree_node.html">ColorTreeNode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7c4e526ca490181cf70edcd0fc72b347"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c4e526ca490181cf70edcd0fc72b347"></a>
+Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateContents</b> () override</td></tr>
+<tr class="separator:a7c4e526ca490181cf70edcd0fc72b347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5fdd2b787ba0ea67c3f60fc8af1cd066"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fdd2b787ba0ea67c3f60fc8af1cd066"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetMatrixValue</b> (int i, int j) const </td></tr>
+<tr class="separator:a5fdd2b787ba0ea67c3f60fc8af1cd066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4fcb92582b3ed534934ac5753e8116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f4fcb92582b3ed534934ac5753e8116"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMatrixValue</b> (int i, int j, int value)</td></tr>
+<tr class="separator:a1f4fcb92582b3ed534934ac5753e8116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b53f930aeb795b497dd943ec0cab9f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b53f930aeb795b497dd943ec0cab9f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResizeMatrix</b> ()</td></tr>
+<tr class="separator:a4b53f930aeb795b497dd943ec0cab9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2b39ee33845bcdd2dbd87f89ea1c2352"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b39ee33845bcdd2dbd87f89ea1c2352"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_rowCount</b> = 0</td></tr>
+<tr class="separator:a2b39ee33845bcdd2dbd87f89ea1c2352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1517cae0557c22e7f0aea72e1dcbce25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1517cae0557c22e7f0aea72e1dcbce25"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_columnCount</b> = 0</td></tr>
+<tr class="separator:a1517cae0557c22e7f0aea72e1dcbce25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79a6c5f2f94039abbf11c4aa05384ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab79a6c5f2f94039abbf11c4aa05384ec"></a>
+AZStd::vector&lt; AZStd::vector<br class="typebreak"/>
+&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_matrix</b></td></tr>
+<tr class="separator:ab79a6c5f2f94039abbf11c4aa05384ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7f5be56009b8fc9d9788a966ae0734"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e7f5be56009b8fc9d9788a966ae0734"></a>
+<a class="el" href="struct_a_z_1_1_document_property_editor_1_1_example_adapter_1_1_color_tree_node.html">ColorTreeNode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_colorTreeRoot</b></td></tr>
+<tr class="separator:a2e7f5be56009b8fc9d9788a966ae0734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/DPEDebugViewStandalone/ExampleAdapter.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

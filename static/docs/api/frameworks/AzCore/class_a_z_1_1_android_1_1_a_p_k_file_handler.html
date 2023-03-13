@@ -56,6 +56,11 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_1_1_android_1_1_a_p_k_file_handler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Android::APKFileHandler Class Reference</div>  </div>
@@ -117,6 +122,87 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#a7fa7656dbf2efdf01eb3f911485c96ea">SetLoadFilesToMemory</a> (const char *fileNames)</td></tr>
 <tr class="memdesc:a7fa7656dbf2efdf01eb3f911485c96ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the names of the files that should be loaded to memory. <br/></td></tr>
 <tr class="separator:a7fa7656dbf2efdf01eb3f911485c96ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a52a7aae3719c9a7f4649b2301e3c0686"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52a7aae3719c9a7f4649b2301e3c0686"></a>
+typedef JNI::Internal::Object<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_o_s_allocator.html">AZ::OSAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>JniObject</b></td></tr>
+<tr class="separator:a52a7aae3719c9a7f4649b2301e3c0686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32e8015a93aac16b34d095a06f861d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa32e8015a93aac16b34d095a06f861d4"></a>
+typedef <a class="el" href="class_a_z_1_1_a_z_std_alloc.html">AZ::OSStdAllocator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StdAllocatorType</b></td></tr>
+<tr class="separator:aa32e8015a93aac16b34d095a06f861d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf871f8222f88da3d58b613eed047bd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf871f8222f88da3d58b613eed047bd0"></a>
+typedef <a class="el" href="class_a_z_std_1_1basic__string.html">AZ::OSString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StringType</b></td></tr>
+<tr class="separator:abf871f8222f88da3d58b613eed047bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0dc81db36cfb29a86185c6f851eb36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d0dc81db36cfb29a86185c6f851eb36"></a>
+typedef <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">StringType</a>, <a class="el" href="class_a_z_1_1_a_z_std_alloc.html">StdAllocatorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StringVector</b></td></tr>
+<tr class="separator:a1d0dc81db36cfb29a86185c6f851eb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd0081b5fdd08d0ab653e3405ad292b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fd0081b5fdd08d0ab653e3405ad292b"></a>
+typedef <a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">StringType</a>, <a class="el" href="class_a_z_std_1_1vector.html">StringVector</a>, <br class="typebreak"/>
+<a class="el" href="struct_a_z_std_1_1hash.html">AZStd::hash</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">StringType</a> &gt;<br class="typebreak"/>
+, <a class="el" href="struct_a_z_std_1_1equal__to.html">AZStd::equal_to</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">StringType</a> &gt;<br class="typebreak"/>
+, <a class="el" href="class_a_z_1_1_a_z_std_alloc.html">StdAllocatorType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DirectoryCache</b></td></tr>
+<tr class="separator:a9fd0081b5fdd08d0ab653e3405ad292b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aed29e99f69befafaa507383bbdf8e716"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed29e99f69befafaa507383bbdf8e716"></a>
+<a class="el" href="struct_a_z_1_1_android_1_1_memory_buffer.html">MemoryBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetInMemoryFileBuffer</b> (void *asset)</td></tr>
+<tr class="separator:aed29e99f69befafaa507383bbdf8e716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3f5de52f1a4fd67960960317ee7635"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c3f5de52f1a4fd67960960317ee7635"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveInMemoryFileBuffer</b> (void *asset)</td></tr>
+<tr class="separator:a0c3f5de52f1a4fd67960960317ee7635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5b00bb15700b458ec16b833d5dbb8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f5b00bb15700b458ec16b833d5dbb8e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldLoadFileToMemory</b> (const char *filePath)</td></tr>
+<tr class="separator:a6f5b00bb15700b458ec16b833d5dbb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733eb791b038d1850b8670753f143f1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a733eb791b038d1850b8670753f143f1a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html">APKFileHandler</a>)</td></tr>
+<tr class="separator:a733eb791b038d1850b8670753f143f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8ad236668edcac72ae9ec4fd229100"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e8ad236668edcac72ae9ec4fd229100"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="separator:a3e8ad236668edcac72ae9ec4fd229100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081f8ed2dae5cc3f1f8a72c9aaee18e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a081f8ed2dae5cc3f1f8a72c9aaee18e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> () const </td></tr>
+<tr class="separator:a081f8ed2dae5cc3f1f8a72c9aaee18e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a50afb38d3879657792eb20d1a1574a79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50afb38d3879657792eb20d1a1574a79"></a>
+static <a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html">APKFileHandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#a50afb38d3879657792eb20d1a1574a79">Get</a> ()</td></tr>
+<tr class="memdesc:a50afb38d3879657792eb20d1a1574a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal accessor to the global <a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html">APKFileHandler</a> instance. <br/></td></tr>
+<tr class="separator:a50afb38d3879657792eb20d1a1574a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a2df27625bdd1eb3b7cbd02a0a85b222f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2df27625bdd1eb3b7cbd02a0a85b222f"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="struct_a_z_1_1_android_1_1_memory_buffer.html">MemoryBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_memFileBuffers</b></td></tr>
+<tr class="separator:a2df27625bdd1eb3b7cbd02a0a85b222f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46251789488642cc09654de0caf1073c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46251789488642cc09654de0caf1073c"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_memFileNames</b></td></tr>
+<tr class="separator:a46251789488642cc09654de0caf1073c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fd5643fab6d743c4afb41c35fa2b91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37fd5643fab6d743c4afb41c35fa2b91"></a>
+AZStd::unique_ptr&lt; JniObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#a37fd5643fab6d743c4afb41c35fa2b91">m_javaInstance</a></td></tr>
+<tr class="memdesc:a37fd5643fab6d743c4afb41c35fa2b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">JNI instance of the com.amazon.lumberyard.io.APKHandler Java object. <br/></td></tr>
+<tr class="separator:a37fd5643fab6d743c4afb41c35fa2b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db95e46f14e28420664878fef1dbb93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7db95e46f14e28420664878fef1dbb93"></a>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">DirectoryCache</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#a7db95e46f14e28420664878fef1dbb93">m_cachedDirectories</a></td></tr>
+<tr class="memdesc:a7db95e46f14e28420664878fef1dbb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache of directories and their respective files already found through previous JNI calls. <br/></td></tr>
+<tr class="separator:a7db95e46f14e28420664878fef1dbb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c37b52e0cbf336e93d51e5393ccd3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61c37b52e0cbf336e93d51e5393ccd3c"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#a61c37b52e0cbf336e93d51e5393ccd3c">m_numBytesToRead</a></td></tr>
+<tr class="memdesc:a61c37b52e0cbf336e93d51e5393ccd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temp cache of the correct number of bytes to read when fread is called on an asset. <br/></td></tr>
+<tr class="separator:a61c37b52e0cbf336e93d51e5393ccd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:ae732155e386e0ded362309abc90a7c5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae732155e386e0ded362309abc90a7c5f"></a>
+static <a class="el" href="class_a_z_1_1_environment_variable.html">AZ::EnvironmentVariable</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html">APKFileHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_a_p_k_file_handler.html#ae732155e386e0ded362309abc90a7c5f">s_instance</a></td></tr>
+<tr class="memdesc:ae732155e386e0ded362309abc90a7c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the global APK file handler object, created in the <a class="el" href="class_a_z_1_1_android_1_1_android_env.html">AndroidEnv</a>. <br/></td></tr>
+<tr class="separator:ae732155e386e0ded362309abc90a7c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af6420ae97945c000be6bd486688eeb7d"></a>
@@ -368,7 +454,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

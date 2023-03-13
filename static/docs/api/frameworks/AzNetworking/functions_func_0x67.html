@@ -59,6 +59,7 @@
       <li><a href="functions_func_0x65.html#index_e"><span>e</span></a></li>
       <li><a href="functions_func_0x66.html#index_f"><span>f</span></a></li>
       <li class="current"><a href="functions_func_0x67.html#index_g"><span>g</span></a></li>
+      <li><a href="functions_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_0x69.html#index_i"><span>i</span></a></li>
       <li><a href="functions_func_0x6a.html#index_j"><span>j</span></a></li>
       <li><a href="functions_func_0x6c.html#index_l"><span>l</span></a></li>
@@ -126,6 +127,9 @@
 , <a class="el" href="class_az_networking_1_1_network_output_serializer.html#a3f344d0bcaf036ca27bae52a6e46318b">AzNetworking::NetworkOutputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ad2ebf74b92edb3706f71bd0cd5dfa1a7">AzNetworking::StringifySerializer</a>
 </li>
+<li>GetChunkIndexHelper()
+: <a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html#a7da5dfc554096f527db9871448522bd2">AzNetworking::RingbufferBitset&lt; SIZE &gt;</a>
+</li>
 <li>GetConnection()
 : <a class="el" href="class_az_networking_1_1_i_connection_set.html#abe5b177810386e2da64559ec09b6bd65">AzNetworking::IConnectionSet</a>
 , <a class="el" href="class_az_networking_1_1_tcp_connection_set.html#a5b71bdf1853f0d0140bbc2310e0a893d">AzNetworking::TcpConnectionSet</a>
@@ -175,6 +179,9 @@
 </li>
 <li>GetFactoryName()
 : <a class="el" href="class_az_networking_1_1_i_compressor_factory.html#ac66052582f3d21c7d5d0a1e6f36738ae">AzNetworking::ICompressorFactory</a>
+</li>
+<li>GetFreeBytes()
+: <a class="el" href="class_az_networking_1_1_tcp_ring_buffer_impl.html#ac9ee748e72c6f042f76a7c8226323dba">AzNetworking::TcpRingBufferImpl</a>
 </li>
 <li>GetHeadSequenceId()
 : <a class="el" href="class_az_networking_1_1_udp_packet_id_window.html#ad06a554a1f0bf94f9257d1a7ecdf5330">AzNetworking::UdpPacketIdWindow</a>
@@ -256,16 +263,16 @@
 : <a class="el" href="class_az_networking_1_1_udp_connection.html#a083e8ece39c3d93fb1a5cc1715041c1c">AzNetworking::UdpConnection</a>
 </li>
 <li>GetPacketType()
-: <a class="el" href="class_az_networking_1_1_i_packet.html#a3197fad5431ad5b6204352f1712d1cfe">AzNetworking::IPacket</a>
+: <a class="el" href="class_az_networking_1_1_udp_packet_header.html#aebed8db051024a1d474771edff712cf0">AzNetworking::UdpPacketHeader</a>
+, <a class="el" href="class_az_networking_1_1_i_packet.html#a3197fad5431ad5b6204352f1712d1cfe">AzNetworking::IPacket</a>
 , <a class="el" href="class_az_networking_1_1_i_packet_header.html#a6ba52f6a8b513ddef55596b9b47fde43">AzNetworking::IPacketHeader</a>
 , <a class="el" href="class_az_networking_1_1_tcp_packet_header.html#af6c2dda7f4c736189a0072f1c52b6fcd">AzNetworking::TcpPacketHeader</a>
-, <a class="el" href="class_az_networking_1_1_udp_packet_header.html#aebed8db051024a1d474771edff712cf0">AzNetworking::UdpPacketHeader</a>
 </li>
 <li>GetPort()
-: <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a525f1d7b413fe747526aa170c4b020d1">AzNetworking::TcpNetworkInterface</a>
+: <a class="el" href="class_az_networking_1_1_ip_address.html#a1da216cae4aa957351460d9a1d4435a1">AzNetworking::IpAddress</a>
 , <a class="el" href="class_az_networking_1_1_i_network_interface.html#aa8b27b7f298948abeb1929befd7a1ee8">AzNetworking::INetworkInterface</a>
+, <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a525f1d7b413fe747526aa170c4b020d1">AzNetworking::TcpNetworkInterface</a>
 , <a class="el" href="class_az_networking_1_1_udp_network_interface.html#ade2919f4f0f4ce0bf31d341cc17e4898">AzNetworking::UdpNetworkInterface</a>
-, <a class="el" href="class_az_networking_1_1_ip_address.html#a1da216cae4aa957351460d9a1d4435a1">AzNetworking::IpAddress</a>
 </li>
 <li>GetQuadA()
 : <a class="el" href="class_az_networking_1_1_ip_address.html#a7e08b88f6a82f87009cbfabe2d4422f1">AzNetworking::IpAddress</a>
@@ -342,30 +349,30 @@
 : <a class="el" href="class_az_networking_1_1_udp_packet_tracker.html#aa65ba2710fc58238c9d82083299c8d57">AzNetworking::UdpPacketTracker</a>
 </li>
 <li>GetSequenceRolloverCount()
-: <a class="el" href="class_az_networking_1_1_udp_packet_header.html#acbd882537b63f54ed3da6426bb59059d">AzNetworking::UdpPacketHeader</a>
-, <a class="el" href="class_az_networking_1_1_udp_packet_id_window.html#abaefb3b0daab63a1ee923d60893b41fd">AzNetworking::UdpPacketIdWindow</a>
+: <a class="el" href="class_az_networking_1_1_udp_packet_id_window.html#abaefb3b0daab63a1ee923d60893b41fd">AzNetworking::UdpPacketIdWindow</a>
+, <a class="el" href="class_az_networking_1_1_udp_packet_header.html#acbd882537b63f54ed3da6426bb59059d">AzNetworking::UdpPacketHeader</a>
 </li>
 <li>GetSequenceWindow()
 : <a class="el" href="class_az_networking_1_1_udp_packet_header.html#ae47b261dcffff5b9117c20752bf07695">AzNetworking::UdpPacketHeader</a>
 </li>
 <li>GetSerializerMode()
-: <a class="el" href="class_az_networking_1_1_i_serializer.html#a7e67dccef6742012b84423d8957107d9">AzNetworking::ISerializer</a>
-, <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#a6baf34734658c081b523e782b7252072">AzNetworking::DeltaSerializerApply</a>
-, <a class="el" href="class_az_networking_1_1_network_output_serializer.html#ac460473f10d915e6ca6b80c8218d317f">AzNetworking::NetworkOutputSerializer</a>
+: <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#a6baf34734658c081b523e782b7252072">AzNetworking::DeltaSerializerApply</a>
+, <a class="el" href="class_az_networking_1_1_i_serializer.html#a7e67dccef6742012b84423d8957107d9">AzNetworking::ISerializer</a>
 , <a class="el" href="class_az_networking_1_1_hash_serializer.html#a947c81f125a017c7bcc1f0a5d77d6ccb">AzNetworking::HashSerializer</a>
-, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ab80f9c31b51027d456356fe5ba9b38ca">AzNetworking::StringifySerializer</a>
-, <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a0e875ee80a3b0d8c21a423c603b522b5">AzNetworking::NetworkInputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_delta_serializer_create.html#aec1885d4ad08515cccfcf1c13645d5e4">AzNetworking::DeltaSerializerCreate</a>
+, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ab80f9c31b51027d456356fe5ba9b38ca">AzNetworking::StringifySerializer</a>
+, <a class="el" href="class_az_networking_1_1_network_output_serializer.html#ac460473f10d915e6ca6b80c8218d317f">AzNetworking::NetworkOutputSerializer</a>
+, <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a0e875ee80a3b0d8c21a423c603b522b5">AzNetworking::NetworkInputSerializer</a>
 </li>
 <li>GetSize()
-: <a class="el" href="class_az_networking_1_1_i_serializer.html#aa4d81153f462c6a239930c4f5ece7cc2">AzNetworking::ISerializer</a>
-, <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#a79213cea83aea2c967a381c61054d780">AzNetworking::DeltaSerializerApply</a>
+: <a class="el" href="class_az_networking_1_1_byte_buffer.html#af49ab6b64aec7285cc505334927e84d8">AzNetworking::ByteBuffer&lt; SIZE &gt;</a>
+, <a class="el" href="class_az_networking_1_1_delta_serializer_create.html#a9e313763ffbde48c50ab9eecf7cfd5d1">AzNetworking::DeltaSerializerCreate</a>
+, <a class="el" href="class_az_networking_1_1_i_serializer.html#aa4d81153f462c6a239930c4f5ece7cc2">AzNetworking::ISerializer</a>
 , <a class="el" href="class_az_networking_1_1_hash_serializer.html#a4c14d6135b3116eb897fc68fd9531e4b">AzNetworking::HashSerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_output_serializer.html#aced4c256404a31760ab5c6a198d88114">AzNetworking::NetworkOutputSerializer</a>
-, <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a35b550ed7f93ed0fe473acac39ec4228">AzNetworking::NetworkInputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_stringify_serializer.html#a2d09ad320e25b9bce432f76531b6d719">AzNetworking::StringifySerializer</a>
-, <a class="el" href="class_az_networking_1_1_byte_buffer.html#af49ab6b64aec7285cc505334927e84d8">AzNetworking::ByteBuffer&lt; SIZE &gt;</a>
-, <a class="el" href="class_az_networking_1_1_delta_serializer_create.html#a9e313763ffbde48c50ab9eecf7cfd5d1">AzNetworking::DeltaSerializerCreate</a>
+, <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a35b550ed7f93ed0fe473acac39ec4228">AzNetworking::NetworkInputSerializer</a>
+, <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#a79213cea83aea2c967a381c61054d780">AzNetworking::DeltaSerializerApply</a>
 </li>
 <li>GetSocketCount()
 : <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#a05006906d545f17a83821a398d0e60d4">AzNetworking::TcpListenThread</a>
@@ -386,8 +393,8 @@
 , <a class="el" href="class_az_networking_1_1_networking_system_component.html#a7a07450de63e6a6028fa46b9090b08cd">AzNetworking::NetworkingSystemComponent</a>
 </li>
 <li>GetTcpListenThreadUpdateTime()
-: <a class="el" href="class_az_networking_1_1_i_networking.html#a61600117fcdfb4ec03e222c2e2da2946">AzNetworking::INetworking</a>
-, <a class="el" href="class_az_networking_1_1_networking_system_component.html#a8fd442c1712f8a237f88402d3dd095be">AzNetworking::NetworkingSystemComponent</a>
+: <a class="el" href="class_az_networking_1_1_networking_system_component.html#a8fd442c1712f8a237f88402d3dd095be">AzNetworking::NetworkingSystemComponent</a>
+, <a class="el" href="class_az_networking_1_1_i_networking.html#a61600117fcdfb4ec03e222c2e2da2946">AzNetworking::INetworking</a>
 </li>
 <li>GetTcpSocket()
 : <a class="el" href="class_az_networking_1_1_tcp_connection.html#a61a69ae236b782bb8117e695a6c5cb0d">AzNetworking::TcpConnection</a>
@@ -397,27 +404,27 @@
 </li>
 <li>GetTimeoutMs()
 : <a class="el" href="class_az_networking_1_1_udp_network_interface.html#acdab58b0a002ed979daa82d0ff7444c5">AzNetworking::UdpNetworkInterface</a>
-, <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a703767fd1caa661962e50cc31690d1dd">AzNetworking::TcpNetworkInterface</a>
 , <a class="el" href="class_az_networking_1_1_i_network_interface.html#a2c7a84c5b3b75a0b2464dcca12b0e947">AzNetworking::INetworkInterface</a>
+, <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a703767fd1caa661962e50cc31690d1dd">AzNetworking::TcpNetworkInterface</a>
 </li>
 <li>GetTrackedChangesFlag()
-: <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#a38ad6c4998c7477de043c86fadf844dc">AzNetworking::DeltaSerializerApply</a>
+: <a class="el" href="class_az_networking_1_1_i_serializer.html#a9b1787cdf55b22c8e9e4600e0cac853b">AzNetworking::ISerializer</a>
 , <a class="el" href="class_az_networking_1_1_delta_serializer_create.html#a3b3dbc6c8863a8c8745768653764d1e8">AzNetworking::DeltaSerializerCreate</a>
 , <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a94743ddabaa005d058f10ac66c08c443">AzNetworking::NetworkInputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_output_serializer.html#a2ec7b41b380019c58570c758a6ae0e9b">AzNetworking::NetworkOutputSerializer</a>
-, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ae4c0cb7101f9f4384237ef6682acff2a">AzNetworking::StringifySerializer</a>
-, <a class="el" href="class_az_networking_1_1_i_serializer.html#a9b1787cdf55b22c8e9e4600e0cac853b">AzNetworking::ISerializer</a>
+, <a class="el" href="class_az_networking_1_1_delta_serializer_apply.html#a38ad6c4998c7477de043c86fadf844dc">AzNetworking::DeltaSerializerApply</a>
 , <a class="el" href="class_az_networking_1_1_hash_serializer.html#a47e6261339bb74ee72128bb2f1799f60">AzNetworking::HashSerializer</a>
+, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ae4c0cb7101f9f4384237ef6682acff2a">AzNetworking::StringifySerializer</a>
 </li>
 <li>GetTrustZone()
-: <a class="el" href="class_az_networking_1_1_i_network_interface.html#a4bfe19e0d4f9d9cca9c44f3fd05d71c8">AzNetworking::INetworkInterface</a>
-, <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#aa7afe36aae78c31a9c5f62777fac5957">AzNetworking::TcpNetworkInterface</a>
+: <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#aa7afe36aae78c31a9c5f62777fac5957">AzNetworking::TcpNetworkInterface</a>
+, <a class="el" href="class_az_networking_1_1_i_network_interface.html#a4bfe19e0d4f9d9cca9c44f3fd05d71c8">AzNetworking::INetworkInterface</a>
 , <a class="el" href="class_az_networking_1_1_udp_network_interface.html#affd446250d821c8aa9984270d30c8fb8">AzNetworking::UdpNetworkInterface</a>
 </li>
 <li>GetType()
-: <a class="el" href="class_az_networking_1_1_i_compressor.html#aa57a48a843488333aee3e0d4d22bfd55">AzNetworking::ICompressor</a>
+: <a class="el" href="class_az_networking_1_1_i_network_interface.html#a19ecbd94c4114b464a9d9a265b57d761">AzNetworking::INetworkInterface</a>
+, <a class="el" href="class_az_networking_1_1_i_compressor.html#aa57a48a843488333aee3e0d4d22bfd55">AzNetworking::ICompressor</a>
 , <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a0c897c2b78de2de705dc0a513d88c112">AzNetworking::TcpNetworkInterface</a>
-, <a class="el" href="class_az_networking_1_1_i_network_interface.html#a19ecbd94c4114b464a9d9a265b57d761">AzNetworking::INetworkInterface</a>
 , <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a53d5e61b3a7d10fe677aa5c969c21a4b">AzNetworking::UdpNetworkInterface</a>
 </li>
 <li>GetUdpReaderThreadSocketCount()
@@ -425,8 +432,8 @@
 , <a class="el" href="class_az_networking_1_1_i_networking.html#a85677fe6a3633bae432c6f31956363c5">AzNetworking::INetworking</a>
 </li>
 <li>GetUdpReaderThreadUpdateTime()
-: <a class="el" href="class_az_networking_1_1_i_networking.html#ab3a474cb65907ec4f4a3b8064e9fb7a2">AzNetworking::INetworking</a>
-, <a class="el" href="class_az_networking_1_1_networking_system_component.html#a12d509d9c7591474c5b791abc8658073">AzNetworking::NetworkingSystemComponent</a>
+: <a class="el" href="class_az_networking_1_1_networking_system_component.html#a12d509d9c7591474c5b791abc8658073">AzNetworking::NetworkingSystemComponent</a>
+, <a class="el" href="class_az_networking_1_1_i_networking.html#ab3a474cb65907ec4f4a3b8064e9fb7a2">AzNetworking::INetworking</a>
 </li>
 <li>GetUnreadData()
 : <a class="el" href="class_az_networking_1_1_network_output_serializer.html#a221cf789c8b5e9df6298adabc2347cb7">AzNetworking::NetworkOutputSerializer</a>
@@ -438,18 +445,21 @@
 : <a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html#a0fad820f80da94158ff103a0ffbefd14">AzNetworking::RingbufferBitset&lt; SIZE &gt;</a>
 </li>
 <li>GetUpdateTimeMs()
-: <a class="el" href="class_az_networking_1_1_udp_reader_thread.html#a23cf1f2a402df260f98d31afef7ec0d8">AzNetworking::UdpReaderThread</a>
-, <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#a100c105a1e09db3561890a092ca65846">AzNetworking::TcpListenThread</a>
+: <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#a100c105a1e09db3561890a092ca65846">AzNetworking::TcpListenThread</a>
+, <a class="el" href="class_az_networking_1_1_udp_reader_thread.html#a23cf1f2a402df260f98d31afef7ec0d8">AzNetworking::UdpReaderThread</a>
+</li>
+<li>GetUsedBytes()
+: <a class="el" href="class_az_networking_1_1_tcp_ring_buffer_impl.html#a420682db0d78374ac243c9afc7af5f82">AzNetworking::TcpRingBufferImpl</a>
 </li>
 <li>GetUserData()
 : <a class="el" href="class_az_networking_1_1_i_connection.html#ab6e7a137195dffd2b2a48a0720c55878">AzNetworking::IConnection</a>
 </li>
 <li>GetValidBitCount()
-: <a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html#a34790af45d0bec613e85fe605b42739f">AzNetworking::RingbufferBitset&lt; SIZE &gt;</a>
-, <a class="el" href="class_az_networking_1_1_fixed_size_bitset_view.html#af66848bf926ce4cd066a6c6f267c9ed2">AzNetworking::FixedSizeBitsetView</a>
-, <a class="el" href="class_az_networking_1_1_fixed_size_bitset.html#a2be29f1ae06ae03476b75eaa956cb7d1">AzNetworking::FixedSizeBitset&lt; SIZE, ElementType &gt;</a>
+: <a class="el" href="class_az_networking_1_1_fixed_size_bitset_view.html#af66848bf926ce4cd066a6c6f267c9ed2">AzNetworking::FixedSizeBitsetView</a>
 , <a class="el" href="class_az_networking_1_1_fixed_size_vector_bitset.html#a0b983db859585927ee8d6b713cb59637">AzNetworking::FixedSizeVectorBitset&lt; CAPACITY, ElementType &gt;</a>
 , <a class="el" href="class_az_networking_1_1_i_bitset.html#a00948e3733584cdec80637780f3c4ce7">AzNetworking::IBitset</a>
+, <a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html#a34790af45d0bec613e85fe605b42739f">AzNetworking::RingbufferBitset&lt; SIZE &gt;</a>
+, <a class="el" href="class_az_networking_1_1_fixed_size_bitset.html#a2be29f1ae06ae03476b75eaa956cb7d1">AzNetworking::FixedSizeBitset&lt; SIZE, ElementType &gt;</a>
 </li>
 <li>GetValueMap()
 : <a class="el" href="class_az_networking_1_1_stringify_serializer.html#a488bd28b5d55f1cbd22b4dbf8c80b6f6">AzNetworking::StringifySerializer</a>
@@ -458,7 +468,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

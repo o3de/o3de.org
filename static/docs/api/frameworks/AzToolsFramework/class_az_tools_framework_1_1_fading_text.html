@@ -53,6 +53,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_fading_text-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::FadingText Class Reference</div>  </div>
@@ -82,6 +83,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_fading_text.html#a11ac1955fba71c7bc09ab4dac08d2cab">Display</a> (const AzFramework::ViewportInfo &amp;viewportInfo, AzFramework::DebugDisplayRequests &amp;debugDisplay) override</td></tr>
 <tr class="memdesc:a11ac1955fba71c7bc09ab4dac08d2cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the click feedback in the viewport. <br/></td></tr>
 <tr class="separator:a11ac1955fba71c7bc09ab4dac08d2cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:acc148bf1ce79e4cf745e7c4d4f7fd814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc148bf1ce79e4cf745e7c4d4f7fd814"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_fading_text.html#acc148bf1ce79e4cf745e7c4d4f7fd814">m_message</a></td></tr>
+<tr class="memdesc:acc148bf1ce79e4cf745e7c4d4f7fd814"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message to display for fading text. <br/></td></tr>
+<tr class="separator:acc148bf1ce79e4cf745e7c4d4f7fd814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d4cb364d659e980f9a968e636474db"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_fading_text.html#a07d4cb364d659e980f9a968e636474db">m_opacity</a> = 0.0f</td></tr>
+<tr class="separator:a07d4cb364d659e980f9a968e636474db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2934315ee2b9cdcaf3c63add715addae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2934315ee2b9cdcaf3c63add715addae"></a>
+AzFramework::ScreenPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_fading_text.html#a2934315ee2b9cdcaf3c63add715addae">m_invalidClickPosition</a> = AzFramework::ScreenPoint(0, 0)</td></tr>
+<tr class="memdesc:a2934315ee2b9cdcaf3c63add715addae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position to display the invalid click message. <br/></td></tr>
+<tr class="separator:a2934315ee2b9cdcaf3c63add715addae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Display fading text where an invalid click happened. </p>
@@ -120,13 +134,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a07d4cb364d659e980f9a968e636474db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AzToolsFramework::FadingText::m_opacity = 0.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The opacity of the invalid click message. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ViewportSelection/InvalidClicks.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

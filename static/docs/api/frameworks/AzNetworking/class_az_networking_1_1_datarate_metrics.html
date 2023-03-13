@@ -50,6 +50,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_datarate_metrics-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::DatarateMetrics Class Reference</div>  </div>
@@ -75,6 +78,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a06d47c407d230f9571c71b70267fe77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d7a3df28a102d6e469f0350104a69d2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_datarate_metrics.html#a8d7a3df28a102d6e469f0350104a69d2">GetLossRatePercent</a> () const </td></tr>
 <tr class="separator:a8d7a3df28a102d6e469f0350104a69d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1fd8e3e3ebb51abb7375fce855a3c98e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fd8e3e3ebb51abb7375fce855a3c98e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_datarate_metrics.html#a1fd8e3e3ebb51abb7375fce855a3c98e">SwapBuffers</a> ()</td></tr>
+<tr class="memdesc:a1fd8e3e3ebb51abb7375fce855a3c98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to swap buffers used for metric gathering. <br/></td></tr>
+<tr class="separator:a1fd8e3e3ebb51abb7375fce855a3c98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aeef4fd9e104f2ddd6b438ab7c2599df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeef4fd9e104f2ddd6b438ab7c2599df9"></a>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxSampleTimeMs</b> = MaxSampleTimeMs</td></tr>
+<tr class="separator:aeef4fd9e104f2ddd6b438ab7c2599df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dd7a51525f90f5b6fe722f94c2808f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18dd7a51525f90f5b6fe722f94c2808f"></a>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastLoggedTimeMs</b> = MaxSampleTimeMs</td></tr>
+<tr class="separator:a18dd7a51525f90f5b6fe722f94c2808f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d2d6abae0ebe2af844c909cd619449"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19d2d6abae0ebe2af844c909cd619449"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_activeAtom</b> = 0</td></tr>
+<tr class="separator:a19d2d6abae0ebe2af844c909cd619449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3850d197cd3d3f03c6dc4785ad5ff8db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3850d197cd3d3f03c6dc4785ad5ff8db"></a>
+<a class="el" href="struct_az_networking_1_1_datarate_atom.html">DatarateAtom</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_atoms</b> [2]</td></tr>
+<tr class="separator:a3850d197cd3d3f03c6dc4785ad5ff8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a1e8ae7cada82c00ea1da36b05e1c931b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e8ae7cada82c00ea1da36b05e1c931b"></a>
+static constexpr AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>MaxSampleTimeMs</b> = AZ::TimeMs{ 2000 }</td></tr>
+<tr class="separator:a1e8ae7cada82c00ea1da36b05e1c931b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>used to track datarate related metrics for a given connection with respect to time. </p>
@@ -186,7 +217,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

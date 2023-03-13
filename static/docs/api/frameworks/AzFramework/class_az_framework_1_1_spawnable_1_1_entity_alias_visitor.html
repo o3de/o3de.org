@@ -54,13 +54,14 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_spawnable_1_1_entity_alias_visitor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::Spawnable::EntityAliasVisitor Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits AzFramework::Spawnable::EntityAliasVisitorBase.</p>
+<p>Inherits <a class="el" href="class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base.html">AzFramework::Spawnable::EntityAliasVisitorBase</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -134,6 +135,53 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAliasType</b> (
 <tr class="memitem:a2d2e1d2cb6c886f8c808cb1fab6431bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d2e1d2cb6c886f8c808cb1fab6431bb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Optimize</b> ()</td></tr>
 <tr class="separator:a2d2e1d2cb6c886f8c808cb1fab6431bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aa85c06d5fe86ef0f2aefd49aa163c7a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa85c06d5fe86ef0f2aefd49aa163c7a5"></a>
+<a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_owner</b></td></tr>
+<tr class="separator:aa85c06d5fe86ef0f2aefd49aa163c7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d6dfacd97392e52a9f858ce697f94f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3d6dfacd97392e52a9f858ce697f94f"></a>
+EntityAliasList *&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityAliasList</b> { nullptr }</td></tr>
+<tr class="separator:aa3d6dfacd97392e52a9f858ce697f94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1bdf9edfd7b71df8bddc3e23deb7f1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1bdf9edfd7b71df8bddc3e23deb7f1d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_dirty</b> { false }</td></tr>
+<tr class="separator:ad1bdf9edfd7b71df8bddc3e23deb7f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_types_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base.html">AzFramework::Spawnable::EntityAliasVisitorBase</a></td></tr>
+<tr class="memitem:aa87d86cc554907fe95903ebe6a2e6b01 inherit pro_types_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa87d86cc554907fe95903ebe6a2e6b01"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ListTargetSpawanblesCallback</b> = AZStd::function&lt; void(const AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;targetSpawnable)&gt;</td></tr>
+<tr class="separator:aa87d86cc554907fe95903ebe6a2e6b01 inherit pro_types_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base.html">AzFramework::Spawnable::EntityAliasVisitorBase</a></td></tr>
+<tr class="memitem:a00fe055bf05f8b3008dc8256725a2082 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00fe055bf05f8b3008dc8256725a2082"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> (const EntityAliasList *aliases) const </td></tr>
+<tr class="separator:a00fe055bf05f8b3008dc8256725a2082 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ac3cff1a7fe8080d2b5abcc4297072 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4ac3cff1a7fe8080d2b5abcc4297072"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAliases</b> (const EntityAliasList *aliases) const </td></tr>
+<tr class="separator:af4ac3cff1a7fe8080d2b5abcc4297072 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bd36afb0bc181fd76c52e11a0e82e8 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00bd36afb0bc181fd76c52e11a0e82e8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>AreAllSpawnablesReady</b> (const EntityAliasList *aliases) const </td></tr>
+<tr class="separator:a00bd36afb0bc181fd76c52e11a0e82e8 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61d6d65553d3b5483961b1b51613595 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af61d6d65553d3b5483961b1b51613595"></a>
+EntityAliasList::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> (const EntityAliasList *aliases) const </td></tr>
+<tr class="separator:af61d6d65553d3b5483961b1b51613595 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14205cadcb08b9d03768f5b4578be67c inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14205cadcb08b9d03768f5b4578be67c"></a>
+EntityAliasList::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> (const EntityAliasList *aliases) const </td></tr>
+<tr class="separator:a14205cadcb08b9d03768f5b4578be67c inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83414e72722f8f0a8967a429a40b6c4 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af83414e72722f8f0a8967a429a40b6c4"></a>
+EntityAliasList::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>cbegin</b> (const EntityAliasList *aliases) const </td></tr>
+<tr class="separator:af83414e72722f8f0a8967a429a40b6c4 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3b7e3dc77bf25e1df05a490381d255 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b3b7e3dc77bf25e1df05a490381d255"></a>
+EntityAliasList::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>cend</b> (const EntityAliasList *aliases) const </td></tr>
+<tr class="separator:a6b3b7e3dc77bf25e1df05a490381d255 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d41442bd19aa7ed9dbaaa1ccbec9224 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d41442bd19aa7ed9dbaaa1ccbec9224"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ListTargetSpawnables</b> (const EntityAliasList *aliases, const ListTargetSpawanblesCallback &amp;callback) const </td></tr>
+<tr class="separator:a8d41442bd19aa7ed9dbaaa1ccbec9224 inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5c887c130dea41c1000add765cb1bd inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e5c887c130dea41c1000add765cb1bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ListTargetSpawnables</b> (const EntityAliasList *aliases, AZ::Crc32 tag, const ListTargetSpawanblesCallback &amp;callback) const </td></tr>
+<tr class="separator:a9e5c887c130dea41c1000add765cb1bd inherit pro_methods_class_az_framework_1_1_spawnable_1_1_entity_alias_visitor_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Spawnable/Spawnable.h</li>
@@ -141,7 +189,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Optimize</b> ()</td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:20 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

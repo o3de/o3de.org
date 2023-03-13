@@ -55,6 +55,9 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetEditor::AssetEditorWidget Class Reference</div>  </div>
@@ -163,6 +166,119 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidAssetType</b> 
 <tr class="memitem:ac5ce08e4a1b82e9e7728ea7b982030f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5ce08e4a1b82e9e7728ea7b982030f1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAsset</b> (AZ::Data::AssetType assetType)</td></tr>
 <tr class="separator:ac5ce08e4a1b82e9e7728ea7b982030f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8c27912a3e434281369612fb1df4961e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c27912a3e434281369612fb1df4961e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRecentFileListState</b> ()</td></tr>
+<tr class="separator:a8c27912a3e434281369612fb1df4961e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afe38469741772494894f558bfad0ab8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe38469741772494894f558bfad0ab8c"></a>
+<a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_tab.html">AssetEditorTab</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>MakeNewTab</b> (const QString &amp;name)</td></tr>
+<tr class="separator:afe38469741772494894f558bfad0ab8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415f7e70f0a607beefa0b10c029b92d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a415f7e70f0a607beefa0b10c029b92d7"></a>
+<a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_tab.html">AssetEditorTab</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindTabForAsset</b> (const AZ::Data::AssetId &amp;assetId) const </td></tr>
+<tr class="separator:a415f7e70f0a607beefa0b10c029b92d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033f65f55ba7f30d66b8152d0a4a5ef6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a033f65f55ba7f30d66b8152d0a4a5ef6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowAddAssetMenu</b> (const QToolButton *menuButton)</td></tr>
+<tr class="separator:a033f65f55ba7f30d66b8152d0a4a5ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd3ac10ff91df1aa8dc27ea410bacb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cd3ac10ff91df1aa8dc27ea410bacb7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PopulateRecentMenu</b> ()</td></tr>
+<tr class="separator:a2cd3ac10ff91df1aa8dc27ea410bacb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaba69dc4dae240ab6a7196efabc851a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acaba69dc4dae240ab6a7196efabc851a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () override</td></tr>
+<tr class="separator:acaba69dc4dae240ab6a7196efabc851a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73bd6e79a8faac1fcd0c3064af3a292c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73bd6e79a8faac1fcd0c3064af3a292c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseOnNextTick</b> ()</td></tr>
+<tr class="separator:a73bd6e79a8faac1fcd0c3064af3a292c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a276c55ed3ec2d9cb2a736d47283413a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a276c55ed3ec2d9cb2a736d47283413a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PopulateGenericAssetTypes</b> ()</td></tr>
+<tr class="separator:a276c55ed3ec2d9cb2a736d47283413a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afcffc9c677ce45fcdc10c513eb5d2a0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcffc9c677ce45fcdc10c513eb5d2a0b"></a>
+AzQtComponents::TabWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_tabs</b></td></tr>
+<tr class="separator:afcffc9c677ce45fcdc10c513eb5d2a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c45dbdbd408f6020e48bb5171851ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59c45dbdbd408f6020e48bb5171851ab"></a>
+AZStd::vector<br class="typebreak"/>
+&lt; AZ::Data::AssetType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_genericAssetTypes</b></td></tr>
+<tr class="separator:a59c45dbdbd408f6020e48bb5171851ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8779afef8dfb276827febbde52a27972"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8779afef8dfb276827febbde52a27972"></a>
+AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>m_sourceAssetId</b></td></tr>
+<tr class="separator:a8779afef8dfb276827febbde52a27972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27248ee223281417d61a18db8376791d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27248ee223281417d61a18db8376791d"></a>
+AZ::Data::Asset<br class="typebreak"/>
+&lt; AZ::Data::AssetData &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_inMemoryAsset</b></td></tr>
+<tr class="separator:a27248ee223281417d61a18db8376791d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d7cc5abbc66604a6a981287c68d48e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5d7cc5abbc66604a6a981287c68d48e"></a>
+Ui::AssetEditorHeader *&#160;</td><td class="memItemRight" valign="bottom"><b>m_header</b> = nullptr</td></tr>
+<tr class="separator:ae5d7cc5abbc66604a6a981287c68d48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc5cead464c941f9daaa20f527c1d38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdc5cead464c941f9daaa20f527c1d38"></a>
+ReflectedPropertyEditor *&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertyEditor</b> = nullptr</td></tr>
+<tr class="separator:abdc5cead464c941f9daaa20f527c1d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22607560a9bc82e3073bb1d9cf0c871c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22607560a9bc82e3073bb1d9cf0c871c"></a>
+AZStd::shared_ptr<br class="typebreak"/>
+&lt; AZ::DocumentPropertyEditor::ReflectionAdapter &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_adapter</b></td></tr>
+<tr class="separator:a22607560a9bc82e3073bb1d9cf0c871c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3453ac8efc464296d2d3e68c7ee7a9e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3453ac8efc464296d2d3e68c7ee7a9e9"></a>
+<a class="el" href="class_az_tools_framework_1_1_filtered_d_p_e.html">FilteredDPE</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_filteredWidget</b> = nullptr</td></tr>
+<tr class="separator:a3453ac8efc464296d2d3e68c7ee7a9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af195edd2625af1ad4b069965c5feb9a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af195edd2625af1ad4b069965c5feb9a3"></a>
+<a class="el" href="class_az_tools_framework_1_1_document_property_editor.html">DocumentPropertyEditor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_dpe</b> = nullptr</td></tr>
+<tr class="separator:af195edd2625af1ad4b069965c5feb9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23a0af7aedb118c6bb2dd2fc3ca8e82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab23a0af7aedb118c6bb2dd2fc3ca8e82"></a>
+AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b> = nullptr</td></tr>
+<tr class="separator:ab23a0af7aedb118c6bb2dd2fc3ca8e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fdffa591575aa8fe9aa71a2531d42f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fdffa591575aa8fe9aa71a2531d42f1"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_expectedAddedAssetPath</b></td></tr>
+<tr class="separator:a0fdffa591575aa8fe9aa71a2531d42f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7c382fbff6ece6659f456ad9150d7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e7c382fbff6ece6659f456ad9150d7c"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_recentlyAddedAssetPath</b></td></tr>
+<tr class="separator:a9e7c382fbff6ece6659f456ad9150d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39ddd05732ec157108bde234288d468"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af39ddd05732ec157108bde234288d468"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_dirty</b> = false</td></tr>
+<tr class="separator:af39ddd05732ec157108bde234288d468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198e03b814c8ff6b11b9678e98afc663"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a198e03b814c8ff6b11b9678e98afc663"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_useDPE</b> = false</td></tr>
+<tr class="separator:a198e03b814c8ff6b11b9678e98afc663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5ce0b53c687c6f0503001fa1d4124e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace5ce0b53c687c6f0503001fa1d4124e"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentAsset</b></td></tr>
+<tr class="separator:ace5ce0b53c687c6f0503001fa1d4124e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf52fb7e549ab7d1e36969d7d685df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdf52fb7e549ab7d1e36969d7d685df9"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_saveAssetAction</b></td></tr>
+<tr class="separator:afdf52fb7e549ab7d1e36969d7d685df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae17a286a62b9731d3923f93741b8242"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae17a286a62b9731d3923f93741b8242"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_saveAsAssetAction</b></td></tr>
+<tr class="separator:aae17a286a62b9731d3923f93741b8242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9e2a48f67fafbca782def41054d66f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9e2a48f67fafbca782def41054d66f8"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_saveAllAssetsAction</b></td></tr>
+<tr class="separator:af9e2a48f67fafbca782def41054d66f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1831f2c47473998571ab06fe48235082"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1831f2c47473998571ab06fe48235082"></a>
+QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_recentFileMenu</b></td></tr>
+<tr class="separator:a1831f2c47473998571ab06fe48235082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3926914ef290f359c178296bd7dc5481"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3926914ef290f359c178296bd7dc5481"></a>
+QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>m_newAssetMenu</b> = nullptr</td></tr>
+<tr class="separator:a3926914ef290f359c178296bd7dc5481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11d389334042c2f79cbfbea7652469b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac11d389334042c2f79cbfbea7652469b"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nextNewAssetIndex</b> = 1</td></tr>
+<tr class="separator:ac11d389334042c2f79cbfbea7652469b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9756cda5c3f43346fecab48668c8a78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9756cda5c3f43346fecab48668c8a78"></a>
+AZStd::intrusive_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_az_tools_framework_1_1_asset_editor_1_1_asset_editor_widget_user_settings.html">AssetEditorWidgetUserSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_userSettings</b></td></tr>
+<tr class="separator:ac9756cda5c3f43346fecab48668c8a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559842f55f723e4d86b5d35e5fdb0317"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a559842f55f723e4d86b5d35e5fdb0317"></a>
+AZStd::unique_ptr<br class="typebreak"/>
+&lt; Ui::AssetEditorStatusBar &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_statusBar</b></td></tr>
+<tr class="separator:a559842f55f723e4d86b5d35e5fdb0317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa7a8d5c9aa364348afd6d1dfc348b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaa7a8d5c9aa364348afd6d1dfc348b4"></a>
+AZ::DocumentPropertyEditor::ReflectionAdapter::PropertyChangeEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertyChangeHandler</b></td></tr>
+<tr class="separator:adaa7a8d5c9aa364348afd6d1dfc348b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf902d32ffec08ca2d196e05b4180b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bf902d32ffec08ca2d196e05b4180b6"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_savedStateKey</b></td></tr>
+<tr class="separator:a5bf902d32ffec08ca2d196e05b4180b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides ability to create, edit, and save reflected assets. </p>
@@ -172,7 +288,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateAsset</b> (AZ::
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

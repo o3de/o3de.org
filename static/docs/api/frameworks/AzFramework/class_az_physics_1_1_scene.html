@@ -55,6 +55,9 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_physics_1_1_scene-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzPhysics::Scene Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -165,6 +168,54 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:afb60839f9ae759b65379d4ef71dbf8ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb60839f9ae759b65379d4ef71dbf8ce"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR_DECL</b></td></tr>
 <tr class="separator:afb60839f9ae759b65379d4ef71dbf8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a690ff1485224d04265b4c9de5ed5f003"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a690ff1485224d04265b4c9de5ed5f003"></a>
+SceneEvents::OnSceneConfigurationChanged&#160;</td><td class="memItemRight" valign="bottom"><b>m_configChangeEvent</b></td></tr>
+<tr class="separator:a690ff1485224d04265b4c9de5ed5f003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f56f12b2d73d038e6d624c07d6bc76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77f56f12b2d73d038e6d624c07d6bc76"></a>
+SceneEvents::OnSimulationBodyAdded&#160;</td><td class="memItemRight" valign="bottom"><b>m_simulatedBodyAddedEvent</b></td></tr>
+<tr class="separator:a77f56f12b2d73d038e6d624c07d6bc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ade192dbacc1a128a579833b86ce710"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ade192dbacc1a128a579833b86ce710"></a>
+SceneEvents::OnSimulationBodyRemoved&#160;</td><td class="memItemRight" valign="bottom"><b>m_simulatedBodyRemovedEvent</b></td></tr>
+<tr class="separator:a3ade192dbacc1a128a579833b86ce710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5fc16f2bb50641933559111c830023"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f5fc16f2bb50641933559111c830023"></a>
+SceneEvents::OnSimulationBodySimulationEnabled&#160;</td><td class="memItemRight" valign="bottom"><b>m_simulatedBodySimulationEnabledEvent</b></td></tr>
+<tr class="separator:a4f5fc16f2bb50641933559111c830023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e29f2e4849ba5a961b3b2ecdba2bf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2e29f2e4849ba5a961b3b2ecdba2bf7"></a>
+SceneEvents::OnSimulationBodySimulationDisabled&#160;</td><td class="memItemRight" valign="bottom"><b>m_simulatedBodySimulationDisabledEvent</b></td></tr>
+<tr class="separator:af2e29f2e4849ba5a961b3b2ecdba2bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6417d58736c6f3790f6cf2df346ed8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace6417d58736c6f3790f6cf2df346ed8"></a>
+SceneEvents::OnSceneSimulationStartEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_sceneSimulationStartEvent</b></td></tr>
+<tr class="separator:ace6417d58736c6f3790f6cf2df346ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef166ea7c3a4d1cee4792d2c3da58b6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef166ea7c3a4d1cee4792d2c3da58b6f"></a>
+SceneEvents::OnSceneSimulationFinishEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_sceneSimulationFinishEvent</b></td></tr>
+<tr class="separator:aef166ea7c3a4d1cee4792d2c3da58b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca167c847ce01d553880dc0f9aac50f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ca167c847ce01d553880dc0f9aac50f"></a>
+SceneEvents::OnSceneActiveSimulatedBodiesEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_sceneActiveSimulatedBodies</b></td></tr>
+<tr class="separator:a3ca167c847ce01d553880dc0f9aac50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20547cd75062e01f1303afb6dc51b033"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20547cd75062e01f1303afb6dc51b033"></a>
+SceneEvents::OnSceneCollisionsEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_sceneCollisionEvent</b></td></tr>
+<tr class="separator:a20547cd75062e01f1303afb6dc51b033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d70deab4699f563edec825d6f81d675"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d70deab4699f563edec825d6f81d675"></a>
+SceneEvents::OnSceneTriggersEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_sceneTriggerEvent</b></td></tr>
+<tr class="separator:a7d70deab4699f563edec825d6f81d675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d2195ddcd9a60cfb4ac848e9d614cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1d2195ddcd9a60cfb4ac848e9d614cd"></a>
+SceneEvents::OnSceneGravityChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_sceneGravityChangedEvent</b></td></tr>
+<tr class="separator:aa1d2195ddcd9a60cfb4ac848e9d614cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ac726e9023e4ef9c25cc7638559fc1b3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac726e9023e4ef9c25cc7638559fc1b3e"></a>
+SceneEvents::OnSceneGravityChangedEvent *&#160;</td><td class="memItemRight" valign="bottom"><b>GetOnGravityChangedEvent</b> ()</td></tr>
+<tr class="separator:ac726e9023e4ef9c25cc7638559fc1b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abf732ab614c17a40bce4555587387448"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf732ab614c17a40bce4555587387448"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_id</b></td></tr>
+<tr class="separator:abf732ab614c17a40bce4555587387448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface of a Physics <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene. ">Scene</a>. </p>
@@ -1403,7 +1454,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

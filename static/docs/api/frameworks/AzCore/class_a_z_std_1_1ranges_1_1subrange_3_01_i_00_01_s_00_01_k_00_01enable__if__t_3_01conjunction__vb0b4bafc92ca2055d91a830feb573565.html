@@ -55,6 +55,9 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1ranges_1_1subrange_3_01_i_00_01_s_00_01_k_00_01enable__if__t_3_01conjunction__v688f3b19292ace51d5f311583aea6af4.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::ranges::subrange&lt; I, S, K, enable_if_t&lt; conjunction_v&lt; bool_constant&lt; input_or_output_iterator&lt; I &gt; &gt;, bool_constant&lt; sentinel_for&lt; S, I &gt; &gt;, bool_constant&lt;(K==subrange_kind::sized||!sized_sentinel_for&lt; S, I &gt;)&gt; &gt; &gt; &gt; Class Template Reference</div>  </div>
@@ -63,6 +66,11 @@
 
 <p>Inherits <a class="el" href="class_a_z_std_1_1ranges_1_1view__interface.html">AZStd::ranges::view_interface&lt; subrange&lt; I, S, K &gt; &gt;</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1subrange_3_01_i_00_01_s_00_01_k_00_01enable__if__t_3_01conjunction__30b7462c24233af3f6b72d7848695a48.html">SizeNotStored</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4736886771c6676e4ec68ff7e6037fcd"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4736886771c6676e4ec68ff7e6037fcd"></a>
@@ -118,6 +126,30 @@ template&lt;bool Enable = bidirectional_iterator&lt;I&gt;, class  = enable_if_t&
 <tr class="memitem:ae39eb51512aecb3afe3cdd74c9909fc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae39eb51512aecb3afe3cdd74c9909fc2"></a>
 constexpr <a class="el" href="class_a_z_std_1_1ranges_1_1subrange.html">subrange</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>advance</b> (iter_difference_t&lt; <a class="el" href="namespace_a_z_std.html#a4ff0f2d9845fd270d52d4dca024b8675">I</a> &gt; n)</td></tr>
 <tr class="separator:ae39eb51512aecb3afe3cdd74c9909fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a459f50a9eb709253cb34e579456f226e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a459f50a9eb709253cb34e579456f226e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = AZStd::conditional_t&lt; StoreSize, make_unsigned_t&lt; iter_difference_t&lt; <a class="el" href="namespace_a_z_std.html#a4ff0f2d9845fd270d52d4dca024b8675">I</a> &gt;&gt;, SizeNotStored &gt;</td></tr>
+<tr class="separator:a459f50a9eb709253cb34e579456f226e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a0f9c4c5c3dd40db6d7fb34a97e370b84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f9c4c5c3dd40db6d7fb34a97e370b84"></a>
+<a class="el" href="namespace_a_z_std.html#a4ff0f2d9845fd270d52d4dca024b8675">I</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_begin</b> {}</td></tr>
+<tr class="separator:a0f9c4c5c3dd40db6d7fb34a97e370b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9adc36215e8f54ab3073c5f618f685d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9adc36215e8f54ab3073c5f618f685d"></a>
+S&#160;</td><td class="memItemRight" valign="bottom"><b>m_end</b> {}</td></tr>
+<tr class="separator:ab9adc36215e8f54ab3073c5f618f685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc0c17b34904c57b2945e68cc306543"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bc0c17b34904c57b2945e68cc306543"></a>
+AZ_NO_UNIQUE_ADDRESS size_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b> {}</td></tr>
+<tr class="separator:a5bc0c17b34904c57b2945e68cc306543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:af858febd722e471a6eeb37c758f63939"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af858febd722e471a6eeb37c758f63939"></a>
+static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>StoreSize</b> = K == subrange_kind::sized &amp;&amp; !sized_sentinel_for&lt;S, <a class="el" href="namespace_a_z_std.html#a4ff0f2d9845fd270d52d4dca024b8675">I</a>&gt;</td></tr>
+<tr class="separator:af858febd722e471a6eeb37c758f63939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/subrange.h</li>
@@ -125,7 +157,7 @@ constexpr <a class="el" href="class_a_z_std_1_1ranges_1_1subrange.html">subrange
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

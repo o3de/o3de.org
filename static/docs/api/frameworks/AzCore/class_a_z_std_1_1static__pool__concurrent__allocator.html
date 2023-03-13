@@ -56,6 +56,9 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1static__pool__concurrent__allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::static_pool_concurrent_allocator&lt; Node, NumNodes &gt; Class Template Reference</div>  </div>
@@ -64,6 +67,11 @@
 
 <p><code>#include &lt;allocator_concurrent_static.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_a_z_std_1_1static__pool__concurrent__allocator_1_1pool__node.html">pool_node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa3c084fd816c814ad4559eb79dfa9064"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3c084fd816c814ad4559eb79dfa9064"></a>
@@ -132,6 +140,40 @@ AZ_FORCE_INLINE void *&#160;</td><td class="memItemRight" valign="bottom"><b>dat
 <tr class="memitem:a1db48e5594982239d47c76321cdcc364"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1db48e5594982239d47c76321cdcc364"></a>
 AZ_FORCE_INLINE constexpr size_type&#160;</td><td class="memItemRight" valign="bottom"><b>data_size</b> () const </td></tr>
 <tr class="separator:a1db48e5594982239d47c76321cdcc364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a87449e1e056ee5d6b344e916a40de089"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87449e1e056ee5d6b344e916a40de089"></a>
+typedef <br class="typebreak"/>
+<a class="el" href="class_a_z_std_1_1static__pool__concurrent__allocator.html">static_pool_concurrent_allocator</a><br class="typebreak"/>
+&lt; Node, NumNodes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
+<tr class="separator:a87449e1e056ee5d6b344e916a40de089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c3c8ba9d01e6d935d8942b3ec2ff2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49c3c8ba9d01e6d935d8942b3ec2ff2f"></a>
+typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>index_type</b></td></tr>
+<tr class="separator:a49c3c8ba9d01e6d935d8942b3ec2ff2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9b2f54ae7b6368f42a90da9bff9828b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b2f54ae7b6368f42a90da9bff9828b0"></a>
+aligned_storage&lt; sizeof(Node)*NumNodes, <br class="typebreak"/>
+AZStd::alignment_of&lt; Node &gt;<br class="typebreak"/>
+::value &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="separator:a9b2f54ae7b6368f42a90da9bff9828b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57664e74083aa78505f130c5d7dedb5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57664e74083aa78505f130c5d7dedb5e"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:a57664e74083aa78505f130c5d7dedb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811f12a4f985a84d4852085595f1028c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a811f12a4f985a84d4852085595f1028c"></a>
+atomic&lt; index_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_firstFreeNode</b></td></tr>
+<tr class="separator:a811f12a4f985a84d4852085595f1028c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ecca2d9d92f3183282bd6534e70a7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78ecca2d9d92f3183282bd6534e70a7d"></a>
+atomic&lt; size_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_numOfAllocatedNodes</b></td></tr>
+<tr class="separator:a78ecca2d9d92f3183282bd6534e70a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:aea2c4129a4fd73978bdbc35dd6197957"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea2c4129a4fd73978bdbc35dd6197957"></a>
+static constexpr index_type&#160;</td><td class="memItemRight" valign="bottom"><b>invalid_index</b> = index_type(-1)</td></tr>
+<tr class="separator:aea2c4129a4fd73978bdbc35dd6197957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Node, AZStd::size_t NumNodes&gt;<br/>
@@ -147,7 +189,7 @@ be careful if you use this on the stack, since many platforms do NOT support ali
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

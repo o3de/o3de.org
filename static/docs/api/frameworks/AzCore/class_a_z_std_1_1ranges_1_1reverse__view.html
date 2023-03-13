@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1ranges_1_1reverse__view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::ranges::reverse_view&lt; View, class &gt; Class Template Reference</div>  </div>
@@ -63,6 +65,11 @@
 
 <p>Inherits <a class="el" href="class_a_z_std_1_1ranges_1_1view__interface.html">AZStd::ranges::view_interface&lt; reverse_view&lt; View &gt; &gt;</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1ranges_1_1reverse__view_1_1_empty.html">Empty</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6981bd844b2851dd968ec1ace8cfb3fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6981bd844b2851dd968ec1ace8cfb3fe"></a>
@@ -97,6 +104,21 @@ template&lt;bool Enable = sized_range&lt;View&gt;, class  = enable_if_t&lt;Enabl
 template&lt;bool Enable = sized_range&lt;const View&gt;, class  = enable_if_t&lt;Enable&gt;&gt; </td></tr>
 <tr class="memitem:a9babcc9f3ebfab19b88a988e5c4c7385"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>size</b> () const </td></tr>
 <tr class="separator:a9babcc9f3ebfab19b88a988e5c4c7385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ac82ca36b08b9960b0b69c4554671d9a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac82ca36b08b9960b0b69c4554671d9a6"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CachedIter</b> = conditional_t&lt; common_range&lt; View &gt;, reverse_iterator&lt; iterator_t&lt; View &gt;&gt;, <a class="el" href="struct_a_z_std_1_1ranges_1_1reverse__view_1_1_empty.html">Empty</a> &gt;</td></tr>
+<tr class="separator:ac82ca36b08b9960b0b69c4554671d9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ace32c4ad543333082057fb1a518a1a44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace32c4ad543333082057fb1a518a1a44"></a>
+View&#160;</td><td class="memItemRight" valign="bottom"><b>m_base</b> {}</td></tr>
+<tr class="separator:ace32c4ad543333082057fb1a518a1a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ca71c8c6fc3d94524866e5d5b7b335"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93ca71c8c6fc3d94524866e5d5b7b335"></a>
+AZ_NO_UNIQUE_ADDRESS CachedIter&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedIter</b> {}</td></tr>
+<tr class="separator:a93ca71c8c6fc3d94524866e5d5b7b335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/ranges/reverse_view.h</li>
@@ -104,7 +126,7 @@ template&lt;bool Enable = sized_range&lt;const View&gt;, class  = enable_if_t&lt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:18 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

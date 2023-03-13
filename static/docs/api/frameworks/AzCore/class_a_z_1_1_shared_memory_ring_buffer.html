@@ -54,6 +54,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_shared_memory_ring_buffer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::SharedMemoryRingBuffer Class Reference</div>  </div>
@@ -149,6 +151,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a06599901cd065896d365217e01bf1547 inherit pub_methods_class_a_z_1_1_shared_memory"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all data (if mapped to 0) <br/></td></tr>
 <tr class="separator:a06599901cd065896d365217e01bf1547 inherit pub_methods_class_a_z_1_1_shared_memory"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af2a01865b71a6ce4e6d458a4def3850d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2a01865b71a6ce4e6d458a4def3850d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SharedMemoryRingBuffer</b> (const <a class="el" href="class_a_z_1_1_shared_memory_ring_buffer.html">SharedMemoryRingBuffer</a> &amp;rhs)</td></tr>
+<tr class="separator:af2a01865b71a6ce4e6d458a4def3850d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7041e9b1e2c4a7f584627a7521807162"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7041e9b1e2c4a7f584627a7521807162"></a>
+<a class="el" href="class_a_z_1_1_shared_memory_ring_buffer.html">SharedMemoryRingBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_shared_memory_ring_buffer.html">SharedMemoryRingBuffer</a> &amp;)</td></tr>
+<tr class="separator:a7041e9b1e2c4a7f584627a7521807162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8260665b01728b522116ebc6d00cdb96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8260665b01728b522116ebc6d00cdb96"></a>
+Internal::RingData *&#160;</td><td class="memItemRight" valign="bottom"><b>m_info</b></td></tr>
+<tr class="separator:a8260665b01728b522116ebc6d00cdb96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a630d704fab2c72df3724dc509e8639"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a630d704fab2c72df3724dc509e8639"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isSetup</b></td></tr>
+<tr class="separator:a9a630d704fab2c72df3724dc509e8639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_shared_memory"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_shared_memory')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_shared_memory.html">AZ::SharedMemory</a></td></tr>
@@ -166,6 +186,76 @@ typedef <a class="el" href="class_a_z_std_1_1lock__guard.html">AZStd::lock_guard
 <b>CreatedExisting</b>
  }</td></tr>
 <tr class="separator:af6d461118674ee9e95f26099ad073bc0 inherit pub_types_class_a_z_1_1_shared_memory___common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_a_z_1_1_shared_memory"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_a_z_1_1_shared_memory')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_a_z_1_1_shared_memory.html">AZ::SharedMemory</a></td></tr>
+<tr class="memitem:a6644ffe3775ee589c6fab44832cfebd1 inherit pro_types_class_a_z_1_1_shared_memory"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6644ffe3775ee589c6fab44832cfebd1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Platform</b> = <a class="el" href="class_a_z_1_1_shared_memory___unimplemented.html">SharedMemory_Platform</a></td></tr>
+<tr class="separator:a6644ffe3775ee589c6fab44832cfebd1 inherit pro_types_class_a_z_1_1_shared_memory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_shared_memory"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_shared_memory')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_shared_memory.html">AZ::SharedMemory</a></td></tr>
+<tr class="memitem:ae016790c5aa3fcc95bec4d082cdc5aa9 inherit pro_methods_class_a_z_1_1_shared_memory"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae016790c5aa3fcc95bec4d082cdc5aa9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SharedMemory</b> (const <a class="el" href="class_a_z_1_1_shared_memory.html">SharedMemory</a> &amp;)</td></tr>
+<tr class="separator:ae016790c5aa3fcc95bec4d082cdc5aa9 inherit pro_methods_class_a_z_1_1_shared_memory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5ba267b0b9d737b7a7fcddc84367d8 inherit pro_methods_class_a_z_1_1_shared_memory"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c5ba267b0b9d737b7a7fcddc84367d8"></a>
+<a class="el" href="class_a_z_1_1_shared_memory.html">SharedMemory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_shared_memory.html">SharedMemory</a> &amp;)</td></tr>
+<tr class="separator:a4c5ba267b0b9d737b7a7fcddc84367d8 inherit pro_methods_class_a_z_1_1_shared_memory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_shared_memory___unimplemented')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_shared_memory___unimplemented.html">AZ::SharedMemory_Unimplemented</a></td></tr>
+<tr class="memitem:af0a48b114d4299afdaeaf89c9e2070ca inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0a48b114d4299afdaeaf89c9e2070ca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> () const </td></tr>
+<tr class="separator:af0a48b114d4299afdaeaf89c9e2070ca inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0edb3863de7faf7843db4f186506415 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0edb3863de7faf7843db4f186506415"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsMapHandleValid</b> () const </td></tr>
+<tr class="separator:ae0edb3863de7faf7843db4f186506415 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b2aa02b9325407aff718fbecdbd706 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2b2aa02b9325407aff718fbecdbd706"></a>
+CreateResult&#160;</td><td class="memItemRight" valign="bottom"><b>Create</b> (const char *name, unsigned int size, bool openIfCreated)</td></tr>
+<tr class="separator:ad2b2aa02b9325407aff718fbecdbd706 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd602e5736d07169594063292337dc87 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd602e5736d07169594063292337dc87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> (const char *name)</td></tr>
+<tr class="separator:afd602e5736d07169594063292337dc87 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7669dafe9d62ebee4299fd4c969af9 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f7669dafe9d62ebee4299fd4c969af9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Close</b> ()</td></tr>
+<tr class="separator:a9f7669dafe9d62ebee4299fd4c969af9 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d98834261060920c3587337f6afee48 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d98834261060920c3587337f6afee48"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Map</b> (AccessMode mode, unsigned int size)</td></tr>
+<tr class="separator:a1d98834261060920c3587337f6afee48 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ee00a6fe010cbcb5493d4aebf5ec6f inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68ee00a6fe010cbcb5493d4aebf5ec6f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>UnMap</b> ()</td></tr>
+<tr class="separator:a68ee00a6fe010cbcb5493d4aebf5ec6f inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335e948a52f8d54e03ff5adcf7c9f839 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a335e948a52f8d54e03ff5adcf7c9f839"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>lock</b> ()</td></tr>
+<tr class="separator:a335e948a52f8d54e03ff5adcf7c9f839 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c4b87faaca392204916bf6b6d873ec inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71c4b87faaca392204916bf6b6d873ec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>try_lock</b> ()</td></tr>
+<tr class="separator:a71c4b87faaca392204916bf6b6d873ec inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c6006e9171946fbe28565df6bb3a8e inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67c6006e9171946fbe28565df6bb3a8e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>unlock</b> ()</td></tr>
+<tr class="separator:a67c6006e9171946fbe28565df6bb3a8e inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4818a36c0d42a6c1c934f7a6ee7c973 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4818a36c0d42a6c1c934f7a6ee7c973"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLockAbandoned</b> ()</td></tr>
+<tr class="separator:ae4818a36c0d42a6c1c934f7a6ee7c973 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e6a5a2199ab976d861c7d1431bd7f0 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8e6a5a2199ab976d861c7d1431bd7f0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsWaitFailed</b> () const </td></tr>
+<tr class="separator:ae8e6a5a2199ab976d861c7d1431bd7f0 inherit pro_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_class_a_z_1_1_shared_memory___unimplemented"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_a_z_1_1_shared_memory___unimplemented')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_shared_memory___unimplemented.html">AZ::SharedMemory_Unimplemented</a></td></tr>
+<tr class="memitem:af8192dc6bff7744c756ade90cc2ada50 inherit pro_static_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8192dc6bff7744c756ade90cc2ada50"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastError</b> ()</td></tr>
+<tr class="separator:af8192dc6bff7744c756ade90cc2ada50 inherit pro_static_methods_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_shared_memory"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_shared_memory')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_shared_memory.html">AZ::SharedMemory</a></td></tr>
+<tr class="memitem:a4c79a6e58591907da23034443a0e1f08 inherit pro_attribs_class_a_z_1_1_shared_memory"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c79a6e58591907da23034443a0e1f08"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="separator:a4c79a6e58591907da23034443a0e1f08 inherit pro_attribs_class_a_z_1_1_shared_memory"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_shared_memory___unimplemented"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_shared_memory___unimplemented')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_shared_memory___unimplemented.html">AZ::SharedMemory_Unimplemented</a></td></tr>
+<tr class="memitem:a09a09dabff014777530c989a892d39fb inherit pro_attribs_class_a_z_1_1_shared_memory___unimplemented"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09a09dabff014777530c989a892d39fb"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_globalMutex</b> = nullptr</td></tr>
+<tr class="separator:a09a09dabff014777530c989a892d39fb inherit pro_attribs_class_a_z_1_1_shared_memory___unimplemented"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_shared_memory___common"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_shared_memory___common')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_shared_memory___common.html">AZ::SharedMemory_Common</a></td></tr>
+<tr class="memitem:ad9c84e96b28dbd01492199ace6fba61c inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9c84e96b28dbd01492199ace6fba61c"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b> [128]</td></tr>
+<tr class="separator:ad9c84e96b28dbd01492199ace6fba61c inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac368b0b0257671e4adb31758b960c25d inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac368b0b0257671e4adb31758b960c25d"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mappedBase</b></td></tr>
+<tr class="separator:ac368b0b0257671e4adb31758b960c25d inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba34438f7f35b41ae86d86e61c918f6 inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ba34438f7f35b41ae86d86e61c918f6"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataSize</b></td></tr>
+<tr class="separator:a9ba34438f7f35b41ae86d86e61c918f6 inherit pro_attribs_class_a_z_1_1_shared_memory___common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Shared memory with read and write pointers. </p>
@@ -205,7 +295,7 @@ typedef <a class="el" href="class_a_z_std_1_1lock__guard.html">AZStd::lock_guard
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

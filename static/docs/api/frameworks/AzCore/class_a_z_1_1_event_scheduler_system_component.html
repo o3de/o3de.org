@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_event_scheduler_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::EventSchedulerSystemComponent Class Reference</div>  </div>
@@ -146,6 +148,74 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 <tr class="memitem:a0b4155bd856eb25f6db724cec8fcd5af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b4155bd856eb25f6db724cec8fcd5af"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;incompatible)</td></tr>
 <tr class="separator:a0b4155bd856eb25f6db724cec8fcd5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8f49539ee88496a9ca87cb5f83ca9ae9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f49539ee88496a9ca87cb5f83ca9ae9"></a>
+<a class="el" href="class_a_z_1_1_scheduled_event_handle.html">ScheduledEventHandle</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateHandle</b> ()</td></tr>
+<tr class="separator:a8f49539ee88496a9ca87cb5f83ca9ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8397e84130af01f6a324eca7355eadc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8397e84130af01f6a324eca7355eadc2"></a>
+<a class="el" href="class_a_z_1_1_scheduled_event.html">ScheduledEvent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_event_scheduler_system_component.html#a8397e84130af01f6a324eca7355eadc2">AllocateManagedEvent</a> (const <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; void()&gt; &amp;callback, const <a class="el" href="class_a_z_1_1_name.html">Name</a> &amp;eventName)</td></tr>
+<tr class="memdesc:a8397e84130af01f6a324eca7355eadc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a single use event to capture the passed in callback. <a class="el" href="class_a_z_1_1_event.html">Event</a> is cleaned up on completion. <br/></td></tr>
+<tr class="separator:a8397e84130af01f6a324eca7355eadc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f7718420fcbde873af88aeb80c7732"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65f7718420fcbde873af88aeb80c7732"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FreeHandle</b> (<a class="el" href="class_a_z_1_1_scheduled_event_handle.html">ScheduledEventHandle</a> *handle)</td></tr>
+<tr class="separator:a65f7718420fcbde873af88aeb80c7732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c4065585ebdc473826d7cc9f0ac03f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3c4065585ebdc473826d7cc9f0ac03f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CONSOLEFUNC</b> (<a class="el" href="class_a_z_1_1_event_scheduler_system_component.html">EventSchedulerSystemComponent</a>, DumpStats, AZ::ConsoleFunctorFlags::Null,&quot;Dump <a class="el" href="class_a_z_1_1_event_scheduler_system_component.html">EventSchedulerSystemComponent</a> stats to the console window&quot;)</td></tr>
+<tr class="separator:aa3c4065585ebdc473826d7cc9f0ac03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a91fffe7aed011b5db0598d722c28b720"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91fffe7aed011b5db0598d722c28b720"></a>
+AZStd::priority_queue<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_scheduled_event_handle.html">ScheduledEventHandle</a> <br class="typebreak"/>
+*, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_scheduled_event_handle.html">ScheduledEventHandle</a> * &gt;<br class="typebreak"/>
+, <a class="el" href="struct_a_z_1_1_compare_scheduled_event_ptrs.html">CompareScheduledEventPtrs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_queue</b></td></tr>
+<tr class="separator:a91fffe7aed011b5db0598d722c28b720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac853c8e5315cc83424cf9e29ce33488c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac853c8e5315cc83424cf9e29ce33488c"></a>
+AZStd::priority_queue<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_scheduled_event_handle.html">ScheduledEventHandle</a> <br class="typebreak"/>
+*, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_scheduled_event_handle.html">ScheduledEventHandle</a> * &gt;<br class="typebreak"/>
+, <a class="el" href="struct_a_z_1_1_prioritize_scheduled_event_ptrs.html">PrioritizeScheduledEventPtrs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingQueue</b></td></tr>
+<tr class="separator:ac853c8e5315cc83424cf9e29ce33488c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682449b441c381bb061e6edcfb59dc4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a682449b441c381bb061e6edcfb59dc4d"></a>
+<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="class_a_z_1_1_scheduled_event.html">ScheduledEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ownedEvents</b></td></tr>
+<tr class="separator:a682449b441c381bb061e6edcfb59dc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d7ae84935cad538b3e8dfdfde425fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53d7ae84935cad538b3e8dfdfde425fa"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_scheduled_event.html">ScheduledEvent</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_freeEvents</b></td></tr>
+<tr class="separator:a53d7ae84935cad538b3e8dfdfde425fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae79991cf84d6a4a7f7826d767709983d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae79991cf84d6a4a7f7826d767709983d"></a>
+<a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_scheduled_event_handle.html">ScheduledEventHandle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_handles</b></td></tr>
+<tr class="separator:ae79991cf84d6a4a7f7826d767709983d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ca2dd28619ac48467631a3d72ede44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02ca2dd28619ac48467631a3d72ede44"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_scheduled_event_handle.html">ScheduledEventHandle</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_freeHandles</b></td></tr>
+<tr class="separator:a02ca2dd28619ac48467631a3d72ede44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a></td></tr>
+<tr class="memitem:a2263e3e84666abc20ad3ccd142544989 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a2263e3e84666abc20ad3ccd142544989">Init</a> ()</td></tr>
+<tr class="separator:a2263e3e84666abc20ad3ccd142544989 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c8e8ec971ef5e09fc0f325f2636a22 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a67c8e8ec971ef5e09fc0f325f2636a22">ReadInConfig</a> (const <a class="el" href="class_a_z_1_1_component_config.html">ComponentConfig</a> *baseConfig)</td></tr>
+<tr class="separator:a67c8e8ec971ef5e09fc0f325f2636a22 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae041b36bf62b87c310f433f3632c59c2 inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#ae041b36bf62b87c310f433f3632c59c2">WriteOutConfig</a> (<a class="el" href="class_a_z_1_1_component_config.html">ComponentConfig</a> *outBaseConfig) const </td></tr>
+<tr class="separator:ae041b36bf62b87c310f433f3632c59c2 inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae655511334c685bcfd918584e9a1683c inherit pro_methods_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#ae655511334c685bcfd918584e9a1683c">SetEntity</a> (<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *entity)</td></tr>
+<tr class="separator:ae655511334c685bcfd918584e9a1683c inherit pro_methods_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_component')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a></td></tr>
+<tr class="memitem:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3e2d5415247e5cf67d7572aaa733693"></a>
+<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#aa3e2d5415247e5cf67d7572aaa733693">m_entity</a></td></tr>
+<tr class="memdesc:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the entity that owns the component. The value is null if the component is not attached to an entity. <br/></td></tr>
+<tr class="separator:aa3e2d5415247e5cf67d7572aaa733693 inherit pro_attribs_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a738455cb4649e6d7acd8c5b970530c04"></a>
+ComponentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component.html#a738455cb4649e6d7acd8c5b970530c04">m_id</a></td></tr>
+<tr class="memdesc:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">A component ID that is unique for an entity. This component ID is not unique across all entities. <br/></td></tr>
+<tr class="separator:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is scheduled event queue class to run all scheduled events at appropriate intervals. </p>
@@ -172,7 +242,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 </div><div class="memdoc">
 <p><a class="el" href="class_a_z_1_1_component.html">AZ::Component</a> overrides. </p>
 
-<p>Implements <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a>.</p>
+<p>Implements <a class="el" href="class_a_z_1_1_component.html#a3e3e21c0cb8c2a8cb6dc42c83c94a8fe">AZ::Component</a>.</p>
 
 </div>
 </div>
@@ -234,7 +304,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <p>Deactivates the component. The system calls this function when the owning entity is being deactivated. You must override this function. As a best practice, ensure that this function returns the component to a minimal footprint. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on.</p>
 <p>The system always calls the component's <a class="el" href="class_a_z_1_1_event_scheduler_system_component.html#a7f9bb41141d0adc1e2cf95a243d753d5">Deactivate()</a> function before destroying the component. However, deactivation is not always followed by the destruction of the component. An entity and its components can be deactivated and reactivated without being destroyed. Ensure that your <a class="el" href="class_a_z_1_1_event_scheduler_system_component.html#a7f9bb41141d0adc1e2cf95a243d753d5">Deactivate()</a> implementation can handle this scenario. </p>
 
-<p>Implements <a class="el" href="class_a_z_1_1_component.html">AZ::Component</a>.</p>
+<p>Implements <a class="el" href="class_a_z_1_1_component.html#a7b78b890df9b149722d8703da05c79ac">AZ::Component</a>.</p>
 
 </div>
 </div>
@@ -295,7 +365,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:40 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

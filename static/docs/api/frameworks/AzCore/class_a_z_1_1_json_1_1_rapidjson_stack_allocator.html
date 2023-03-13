@@ -56,6 +56,7 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_json_1_1_rapidjson_stack_allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Json::RapidjsonStackAllocator&lt; SizeN, AlignN &gt; Class Template Reference</div>  </div>
@@ -85,6 +86,15 @@ Static Public Attributes</h2></td></tr>
 static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_json_1_1_rapidjson_stack_allocator.html#a84f8662f42082372ea2fc63a2a6feb55">kNeedFree</a> = false</td></tr>
 <tr class="memdesc:a84f8662f42082372ea2fc63a2a6feb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack allocator doesn't support freeing allocated memory at all. <br/></td></tr>
 <tr class="separator:a84f8662f42082372ea2fc63a2a6feb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a21b03655cd2e56bf8208db74d36749b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21b03655cd2e56bf8208db74d36749b5"></a>
+<a class="el" href="class_a_z_std_1_1array.html">AZStd::array</a>&lt; AZStd::byte, SizeN &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_buffer</b></td></tr>
+<tr class="separator:a21b03655cd2e56bf8208db74d36749b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b3ce3953fa0517ef48e4b5aae9b0b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3b3ce3953fa0517ef48e4b5aae9b0b1"></a>
+AZStd::byte *&#160;</td><td class="memItemRight" valign="bottom"><b>m_freeOffset</b> {}</td></tr>
+<tr class="separator:ab3b3ce3953fa0517ef48e4b5aae9b0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;size_t SizeN, size_t AlignN = alignof(AZStd::byte)&gt;<br/>
@@ -97,7 +107,7 @@ class AZ::Json::RapidjsonStackAllocator&lt; SizeN, AlignN &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

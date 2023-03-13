@@ -54,6 +54,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_task_graph_event-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -73,6 +75,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSignaled</b> ()</td
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Wait</b> ()</td></tr>
 <tr class="separator:a9f990367b5ab97a0513e914644863b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4c813f1d1a14aa9d240079c0c678c6bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c813f1d1a14aa9d240079c0c678c6bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncWaitCount</b> ()</td></tr>
+<tr class="separator:a4c813f1d1a14aa9d240079c0c678c6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af827879aa632f75b4f60576c3a08a57c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af827879aa632f75b4f60576c3a08a57c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Signal</b> ()</td></tr>
+<tr class="separator:af827879aa632f75b4f60576c3a08a57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4622f4e3b308b16b1a254c26ca3c6d2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4622f4e3b308b16b1a254c26ca3c6d2c"></a>
+<a class="el" href="class_a_z_std_1_1binary__semaphore.html">AZStd::binary_semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_semaphore</b></td></tr>
+<tr class="separator:a4622f4e3b308b16b1a254c26ca3c6d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344e6b818a0ed9e812c00e694c9217e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a344e6b818a0ed9e812c00e694c9217e3"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_waitCount</b> = 0</td></tr>
+<tr class="separator:a344e6b818a0ed9e812c00e694c9217e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48466787d7579f5047f5272a5e680b8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48466787d7579f5047f5272a5e680b8b"></a>
+<a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_executor</b> = nullptr</td></tr>
+<tr class="separator:a48466787d7579f5047f5272a5e680b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878b6533f8b890b65c47ca3e1d8edc1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a878b6533f8b890b65c47ca3e1d8edc1a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_label</b></td></tr>
+<tr class="separator:a878b6533f8b890b65c47ca3e1d8edc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a77eb4e04900b9ae67d00ef7a589cb623"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77eb4e04900b9ae67d00ef7a589cb623"></a>
@@ -89,7 +115,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskExecutor</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

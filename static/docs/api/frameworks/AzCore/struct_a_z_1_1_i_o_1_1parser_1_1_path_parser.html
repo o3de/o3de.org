@@ -56,6 +56,7 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="struct_a_z_1_1_i_o_1_1parser_1_1_path_parser-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::parser::PathParser Struct Reference</div>  </div>
@@ -127,6 +128,25 @@ ParserState&#160;</td><td class="memItemRight" valign="bottom"><b>m_parser_state
 <tr class="memitem:ad3050847c37838f9c985a5d9017dfc53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3050847c37838f9c985a5d9017dfc53"></a>
 const char&#160;</td><td class="memItemRight" valign="bottom"><b>m_preferred_separator</b> { AZ_TRAIT_OS_PATH_SEPARATOR }</td></tr>
 <tr class="separator:ad3050847c37838f9c985a5d9017dfc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:ad44f994a854d8034613bfdbd1a96ca2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad44f994a854d8034613bfdbd1a96ca2a"></a>
+constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeState</b> (ParserState newState, typename AZStd::string_view::iterator start, typename AZStd::string_view::iterator end) noexcept</td></tr>
+<tr class="separator:ad44f994a854d8034613bfdbd1a96ca2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b92cadf4263b84e3264348074af55b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53b92cadf4263b84e3264348074af55b"></a>
+constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeState</b> (ParserState newState) noexcept</td></tr>
+<tr class="separator:a53b92cadf4263b84e3264348074af55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233635d4c690b2bddbfe366a5311d255"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a233635d4c690b2bddbfe366a5311d255"></a>
+constexpr <br class="typebreak"/>
+AZStd::string_view::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1parser_1_1_path_parser.html#a233635d4c690b2bddbfe366a5311d255">getNextTokenStartPos</a> () const noexcept</td></tr>
+<tr class="memdesc:a233635d4c690b2bddbfe366a5311d255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the first character after the currently lexed element. <br/></td></tr>
+<tr class="separator:a233635d4c690b2bddbfe366a5311d255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabad6c3518a842c8adcbc5a683084803"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabad6c3518a842c8adcbc5a683084803"></a>
+constexpr <br class="typebreak"/>
+AZStd::string_view::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1parser_1_1_path_parser.html#aabad6c3518a842c8adcbc5a683084803">getCurrentTokenStartPos</a> () const noexcept</td></tr>
+<tr class="memdesc:aabad6c3518a842c8adcbc5a683084803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the first character in the currently lexed element. <br/></td></tr>
+<tr class="separator:aabad6c3518a842c8adcbc5a683084803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a41aeee177ca776093b8fc4eea121fa66"></a>
@@ -159,7 +179,7 @@ const char&#160;</td><td class="memItemRight" valign="bottom"><b>m_preferred_sep
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:42 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

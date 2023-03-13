@@ -54,6 +54,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_data_patch_upgrade_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DataPatchUpgradeManager Class Reference</div>  </div>
@@ -65,6 +67,45 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a455762fd706e8ae7009f20161e5e15d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a455762fd706e8ae7009f20161e5e15d6"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpgradeDataPatch</b> (<a class="el" href="class_a_z_1_1_serialize_context.html">AZ::SerializeContext</a> *context, <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> targetClassID, unsigned int targetClassVersion, DataPatch::AddressType &amp;address, <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> &amp;data)</td></tr>
 <tr class="separator:a455762fd706e8ae7009f20161e5e15d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5416c7e3c78d342c27da9d6cecef3e50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5416c7e3c78d342c27da9d6cecef3e50"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataPatchUpgradeManager</b> (const <a class="el" href="class_a_z_std_1_1unordered__map.html">AZ::SerializeContext::DataPatchFieldUpgrades</a> &amp;upgrades, int startingVersion)</td></tr>
+<tr class="separator:a5416c7e3c78d342c27da9d6cecef3e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe6344986f61aae9f05604b25307322"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affe6344986f61aae9f05604b25307322"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyUpgrades</b> (<a class="el" href="class_a_z_1_1_data_patch.html#a8a780be087b06b5755b4d11264f18a02">AZ::DataPatch::AddressTypeElement</a> &amp;addressElement, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">AZ::SerializeContext::DataPatchUpgrade</a> * &gt; upgrades=<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">AZ::SerializeContext::DataPatchUpgrade</a> * &gt;()) const </td></tr>
+<tr class="separator:affe6344986f61aae9f05604b25307322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49f07ef0bad95578b5600b91a214d38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af49f07ef0bad95578b5600b91a214d38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyUpgrades</b> (<a class="el" href="class_a_z_1_1_data_patch.html#a8a780be087b06b5755b4d11264f18a02">AZ::DataPatch::AddressTypeElement</a> &amp;addressElement, <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> &amp;value) const </td></tr>
+<tr class="separator:af49f07ef0bad95578b5600b91a214d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf3249b6bb16d8b6a3df1a25f0d1e70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acaf3249b6bb16d8b6a3df1a25f0d1e70"></a>
+<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">AZ::SerializeContext::DataPatchUpgrade</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplicableUpgrades</b> (const <a class="el" href="class_a_z_1_1_data_patch.html#a8a780be087b06b5755b4d11264f18a02">DataPatch::AddressTypeElement</a> &amp;address) const </td></tr>
+<tr class="separator:acaf3249b6bb16d8b6a3df1a25f0d1e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1e3e6cac9e79d3d8bb065528212eb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe1e3e6cac9e79d3d8bb065528212eb8"></a>
+const <br class="typebreak"/>
+<a class="el" href="class_a_z_std_1_1map.html">AZ::SerializeContext::DataPatchUpgradeMap</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPotentialUpgrades</b> (const <a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> &amp;fieldNameCRC) const </td></tr>
+<tr class="separator:afe1e3e6cac9e79d3d8bb065528212eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fddc09c0f5f6fb95c3b485c5bfd758e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fddc09c0f5f6fb95c3b485c5bfd758e"></a>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">AZ::SerializeContext::DataPatchUpgrade</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextUpgrade</b> (unsigned int currentTypeVersion, unsigned int currentNameVersion, <a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> currentFieldNameCRC) const </td></tr>
+<tr class="separator:a2fddc09c0f5f6fb95c3b485c5bfd758e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b3e844b884e11a46e71f7bfa165a77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b3e844b884e11a46e71f7bfa165a77"></a>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">AZ::SerializeContext::DataPatchUpgrade</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextTypeUpgrade</b> (<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> currentFieldNameCRC, unsigned int currentTypeVersion) const </td></tr>
+<tr class="separator:a34b3e844b884e11a46e71f7bfa165a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7cc7c64f7d0fc2eaafb7757df4f3a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc7cc7c64f7d0fc2eaafb7757df4f3a3"></a>
+<a class="el" href="class_a_z_1_1_serialize_context_1_1_data_patch_upgrade.html">AZ::SerializeContext::DataPatchUpgrade</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextNameUpgrade</b> (<a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> currentFieldNameCRC, unsigned int currentNameVersion) const </td></tr>
+<tr class="separator:abc7cc7c64f7d0fc2eaafb7757df4f3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:abd3f54bd1e25b296d79a5ee7879cda3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd3f54bd1e25b296d79a5ee7879cda3a"></a>
+const <br class="typebreak"/>
+<a class="el" href="class_a_z_std_1_1unordered__map.html">AZ::SerializeContext::DataPatchFieldUpgrades</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_upgrades</b></td></tr>
+<tr class="separator:abd3f54bd1e25b296d79a5ee7879cda3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc38008f5f4af100296948264bdc205c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc38008f5f4af100296948264bdc205c"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_startingVersion</b></td></tr>
+<tr class="separator:acc38008f5f4af100296948264bdc205c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Serialization/DataPatchUpgradeManager.h</li>
@@ -72,7 +113,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpgradeDataPat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:40:41 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

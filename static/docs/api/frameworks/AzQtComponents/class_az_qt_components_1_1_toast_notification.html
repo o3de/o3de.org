@@ -53,6 +53,7 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_toast_notification-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::ToastNotification Class Reference</div>  </div>
@@ -111,6 +112,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObj
 <tr class="memitem:a63c1d9f20fa43ddee71a979f46e7e073"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63c1d9f20fa43ddee71a979f46e7e073"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
 <tr class="separator:a63c1d9f20fa43ddee71a979f46e7e073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a15585d8423ac73872c463e993b2f85a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15585d8423ac73872c463e993b2f85a7"></a>
+QPropertyAnimation *&#160;</td><td class="memItemRight" valign="bottom"><b>m_fadeAnimation</b></td></tr>
+<tr class="separator:a15585d8423ac73872c463e993b2f85a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69af73b38bbaa35ba097e487bdbd60da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69af73b38bbaa35ba097e487bdbd60da"></a>
+<a class="el" href="class_az_qt_components_1_1_toast_configuration.html">ToastConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_configuration</b></td></tr>
+<tr class="separator:a69af73b38bbaa35ba097e487bdbd60da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a19702272f4bb0e7c3c20447814e63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56a19702272f4bb0e7c3c20447814e63"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_closeOnClick</b></td></tr>
+<tr class="separator:a56a19702272f4bb0e7c3c20447814e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2851e6ef1046d3b247918612709b20ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2851e6ef1046d3b247918612709b20ed"></a>
+QTimer&#160;</td><td class="memItemRight" valign="bottom"><b>m_lifeSpan</b></td></tr>
+<tr class="separator:a2851e6ef1046d3b247918612709b20ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a8ebed780376523505007b7777440a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62a8ebed780376523505007b7777440a"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_borderRadius</b> = 0</td></tr>
+<tr class="separator:a62a8ebed780376523505007b7777440a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90512c60e4be84deeadf1aae19f2bb9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90512c60e4be84deeadf1aae19f2bb9f"></a>
+AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
+AZStd::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><b>m_fadeDuration</b></td></tr>
+<tr class="separator:a90512c60e4be84deeadf1aae19f2bb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01c5729619059898a17baf2efede4749"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01c5729619059898a17baf2efede4749"></a>
+QScopedPointer<br class="typebreak"/>
+&lt; Ui::ToastNotification &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ui</b></td></tr>
+<tr class="separator:a01c5729619059898a17baf2efede4749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/ToastNotification.h</li>
@@ -118,7 +145,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPain
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:22 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

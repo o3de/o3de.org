@@ -54,6 +54,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_debug_1_1_trace_context_stack-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Debug::TraceContextStack Class Reference</div>  </div>
@@ -62,6 +64,11 @@
 
 <p>Inherits <a class="el" href="class_az_tools_framework_1_1_debug_1_1_trace_context_stack_interface.html">AzToolsFramework::Debug::TraceContextStackInterface</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_debug_1_1_trace_context_stack_1_1_entry_info.html">EntryInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac589115ed3b004e29e40d6a9c06555f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac589115ed3b004e29e40d6a9c06555f8"></a>
@@ -119,6 +126,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PushUuidEntry</b> (co
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PopEntry</b> ()</td></tr>
 <tr class="separator:a58602e389467240e4a96d4037777c60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aeb5510b3b937f04a2032c380f9064e9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb5510b3b937f04a2032c380f9064e9d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidRequest</b> (size_t index, ContentType type) const </td></tr>
+<tr class="separator:aeb5510b3b937f04a2032c380f9064e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a0bec12f63a5efe0ca2e1a49b5f0c1bc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bec12f63a5efe0ca2e1a49b5f0c1bc0"></a>
+AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_stringStack</b></td></tr>
+<tr class="separator:a0bec12f63a5efe0ca2e1a49b5f0c1bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afc4c31437d9c16343799990c680ce2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3afc4c31437d9c16343799990c680ce2"></a>
+AZStd::vector&lt; AZ::Uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_uuidStack</b></td></tr>
+<tr class="separator:a3afc4c31437d9c16343799990c680ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f92422e75d7e2cb66abb4c2f748938"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23f92422e75d7e2cb66abb4c2f748938"></a>
+AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_debug_1_1_trace_context_stack_1_1_entry_info.html">EntryInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entries</b></td></tr>
+<tr class="separator:a23f92422e75d7e2cb66abb4c2f748938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_az_tools_framework_1_1_debug_1_1_trace_context_stack_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_tools_framework_1_1_debug_1_1_trace_context_stack_interface')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_tools_framework_1_1_debug_1_1_trace_context_stack_interface.html">AzToolsFramework::Debug::TraceContextStackInterface</a></td></tr>
@@ -142,7 +167,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

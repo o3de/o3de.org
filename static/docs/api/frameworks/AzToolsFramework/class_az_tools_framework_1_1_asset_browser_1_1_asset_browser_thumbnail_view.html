@@ -55,6 +55,8 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_thumbnail_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetBrowserThumbnailView Class Reference</div>  </div>
@@ -141,6 +143,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelectionMode</b> 
 <tr class="memitem:a5eddb7674c28877d782d4e8cac6254e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5eddb7674c28877d782d4e8cac6254e5"></a>
 QAbstractItemView::SelectionMode&#160;</td><td class="memItemRight" valign="bottom"><b>selectionMode</b> () const </td></tr>
 <tr class="separator:a5eddb7674c28877d782d4e8cac6254e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:adcb9896862389552102784bd6b14425c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcb9896862389552102784bd6b14425c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleTreeViewSelectionChanged</b> (const QItemSelection &amp;selected, const QItemSelection &amp;deselected)</td></tr>
+<tr class="separator:adcb9896862389552102784bd6b14425c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991aeae47f2add6898a001c2c919fcf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a991aeae47f2add6898a001c2c919fcf9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFilterInLocalFilterModel</b> ()</td></tr>
+<tr class="separator:a991aeae47f2add6898a001c2c919fcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5e9abfdb9e867ec28b352a1dff8123dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e9abfdb9e867ec28b352a1dff8123dd"></a>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view.html">AssetBrowserTreeView</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetTreeView</b> = nullptr</td></tr>
+<tr class="separator:a5e9abfdb9e867ec28b352a1dff8123dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a242ab269a75fb402d5d79a14ecd79a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a242ab269a75fb402d5d79a14ecd79a"></a>
+AzQtComponents::AssetFolderThumbnailView *&#160;</td><td class="memItemRight" valign="bottom"><b>m_thumbnailViewWidget</b> = nullptr</td></tr>
+<tr class="separator:a9a242ab269a75fb402d5d79a14ecd79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802aabe7b399364532b3d61ebb1b87a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a802aabe7b399364532b3d61ebb1b87a0"></a>
+<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_thumbnail_view_proxy_model.html">AssetBrowserThumbnailViewProxyModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_thumbnailViewProxyModel</b> = nullptr</td></tr>
+<tr class="separator:a802aabe7b399364532b3d61ebb1b87a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73176d90051e69fe9d04462ff46d412e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73176d90051e69fe9d04462ff46d412e"></a>
+AssetBrowserFilterModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetFilterModel</b> = nullptr</td></tr>
+<tr class="separator:a73176d90051e69fe9d04462ff46d412e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fff9c5238b731c5dc9dccb616d95896"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fff9c5238b731c5dc9dccb616d95896"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:a8fff9c5238b731c5dc9dccb616d95896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44050896c6a9d010dc99a1cc03b003bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44050896c6a9d010dc99a1cc03b003bb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isActiveView</b> = false</td></tr>
+<tr class="separator:a44050896c6a9d010dc99a1cc03b003bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/AssetBrowser/Views/AssetBrowserThumbnailView.h</li>
@@ -148,7 +180,7 @@ QAbstractItemView::SelectionMode&#160;</td><td class="memItemRight" valign="bott
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

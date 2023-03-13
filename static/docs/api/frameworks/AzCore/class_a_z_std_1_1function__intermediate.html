@@ -55,6 +55,8 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_a_z_std_1_1function__intermediate-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::function_intermediate&lt; R, Args &gt; Class Template Reference</div>  </div>
@@ -144,6 +146,41 @@ template&lt;typename Functor &gt; </td></tr>
 template&lt;typename F &gt; </td></tr>
 <tr class="memitem:af3b1acfe73a3357dbb91bff488ef32ea inherit pub_methods_class_a_z_std_1_1function__base"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>contains</b> (const F &amp;f) const </td></tr>
 <tr class="separator:af3b1acfe73a3357dbb91bff488ef32ea inherit pub_methods_class_a_z_std_1_1function__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aafa9408ef55dd75284d254384456acf1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafa9408ef55dd75284d254384456acf1"></a>
+typedef <br class="typebreak"/>
+AZStd::Internal::function_util::basic_vtable<br class="typebreak"/>
+&lt; R, Args...&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vtable_type</b></td></tr>
+<tr class="separator:aafa9408ef55dd75284d254384456acf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8f67578f72910cadfba60c975b6f1aa8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f67578f72910cadfba60c975b6f1aa8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>assign_to_own</b> (const <a class="el" href="class_a_z_std_1_1function__intermediate.html">function_intermediate</a> &amp;f)</td></tr>
+<tr class="separator:a8f67578f72910cadfba60c975b6f1aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65792e632da9ceeadf794dae1f8f8a59"><td class="memTemplParams" colspan="2"><a class="anchor" id="a65792e632da9ceeadf794dae1f8f8a59"></a>
+template&lt;typename Functor &gt; </td></tr>
+<tr class="memitem:a65792e632da9ceeadf794dae1f8f8a59"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign_to</b> (Functor &amp;&amp;f)</td></tr>
+<tr class="separator:a65792e632da9ceeadf794dae1f8f8a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1203c412a49d45d2f98542f387951e0e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1203c412a49d45d2f98542f387951e0e"></a>
+template&lt;typename Functor , typename Allocator &gt; </td></tr>
+<tr class="memitem:a1203c412a49d45d2f98542f387951e0e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign_to_a</b> (Functor &amp;&amp;f, const Allocator &amp;a)</td></tr>
+<tr class="separator:a1203c412a49d45d2f98542f387951e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cc2eb8ae51dd4e5cdfe6e0f228c29f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98cc2eb8ae51dd4e5cdfe6e0f228c29f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>move_assign</b> (<a class="el" href="class_a_z_std_1_1function__intermediate.html">function_intermediate</a> &amp;f)</td></tr>
+<tr class="separator:a98cc2eb8ae51dd4e5cdfe6e0f228c29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_std_1_1function__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_std_1_1function__base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_std_1_1function__base.html">AZStd::function_base</a></td></tr>
+<tr class="memitem:a627bc194d07b98e4fbf77d2202a7c5e8 inherit pro_attribs_class_a_z_std_1_1function__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a627bc194d07b98e4fbf77d2202a7c5e8"></a>
+Internal::function_util::vtable_base *&#160;</td><td class="memItemRight" valign="bottom"><b>vtable</b></td></tr>
+<tr class="separator:a627bc194d07b98e4fbf77d2202a7c5e8 inherit pro_attribs_class_a_z_std_1_1function__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad321fab942b7325ef50aa026f2971fe6 inherit pro_attribs_class_a_z_std_1_1function__base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad321fab942b7325ef50aa026f2971fe6"></a>
+Internal::function_util::function_buffer&#160;</td><td class="memItemRight" valign="bottom"><b>functor</b></td></tr>
+<tr class="separator:ad321fab942b7325ef50aa026f2971fe6 inherit pro_attribs_class_a_z_std_1_1function__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/function/function_template.h</li>
@@ -151,7 +188,7 @@ template&lt;typename F &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -54,6 +54,10 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_script_1_1_lua_editor_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Script::LuaEditorSystemComponent Class Reference</div>  </div>
@@ -86,14 +90,92 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 static AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_script_1_1_lua_editor_system_component.html#a8f4256f8aaa9d91c679552eefcdd25d9">GenerateLuaComponentBoilerplate</a> (const AZStd::string &amp;componentName)</td></tr>
 <tr class="memdesc:a8f4256f8aaa9d91c679552eefcdd25d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates boilerplate for a basic Lua component script which has the given component name. <br/></td></tr>
 <tr class="separator:a8f4256f8aaa9d91c679552eefcdd25d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9719a8d9b043906438ccfd7a2a03e36d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9719a8d9b043906438ccfd7a2a03e36d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () override</td></tr>
+<tr class="separator:a9719a8d9b043906438ccfd7a2a03e36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02d2545e66c23c619c001799232b866"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa02d2545e66c23c619c001799232b866"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
+<tr class="separator:aa02d2545e66c23c619c001799232b866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8aac8f6e11449e6e2f2bb10e055deb02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aac8f6e11449e6e2f2bb10e055deb02"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;services)</td></tr>
+<tr class="separator:a8aac8f6e11449e6e2f2bb10e055deb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495cac48fa031b7b8d4f756cf6eef030"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a495cac48fa031b7b8d4f756cf6eef030"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;required)</td></tr>
+<tr class="separator:a495cac48fa031b7b8d4f756cf6eef030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73cd320b1d6b6cb9541d087708a33ee8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73cd320b1d6b6cb9541d087708a33ee8"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
+<tr class="separator:a73cd320b1d6b6cb9541d087708a33ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a206c54d18bebe155d159c4cba113a377"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a206c54d18bebe155d159c4cba113a377"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_script_1_1_lua_editor_system_component.html#a206c54d18bebe155d159c4cba113a377">MakeFilenameUnique</a> (const AZStd::string &amp;directoryPath, const AZStd::string &amp;filename, AZStd::string &amp;outFullFilepath) const </td></tr>
+<tr class="memdesc:a206c54d18bebe155d159c4cba113a377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the next available digit to the filename if the filename is already taken. <br/></td></tr>
+<tr class="separator:a206c54d18bebe155d159c4cba113a377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70eb13f5dd96a06d729d1d7dcc9170e"><td class="memItemLeft" align="right" valign="top">AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_script_1_1_lua_editor_system_component.html#aa70eb13f5dd96a06d729d1d7dcc9170e">SaveLuaScriptFile</a> (const AZStd::string &amp;fullFilepath, const AZStd::string &amp;fileContents) const </td></tr>
+<tr class="separator:aa70eb13f5dd96a06d729d1d7dcc9170e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:abcecb5890671ad54a8c9a59143826413"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcecb5890671ad54a8c9a59143826413"></a>
+static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><b>LuaExtension</b> [] = &quot;.lua&quot;</td></tr>
+<tr class="separator:abcecb5890671ad54a8c9a59143826413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114e7a318fdd41403c7bf20079d92bf6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a114e7a318fdd41403c7bf20079d92bf6"></a>
+static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><b>LogName</b> [] = &quot;LuaEditorSystemComponent&quot;</td></tr>
+<tr class="separator:a114e7a318fdd41403c7bf20079d92bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a185772f090936d4d9b0abe982569d644"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a185772f090936d4d9b0abe982569d644"></a>
+static constexpr AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>LuaComponentScriptBusId</b> = AZ::Crc32(&quot;LuaComponentScriptRenameHandler&quot;)</td></tr>
+<tr class="separator:a185772f090936d4d9b0abe982569d644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa70eb13f5dd96a06d729d1d7dcc9170e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::Outcome&lt;void, AZStd::string&gt; AzToolsFramework::Script::LuaEditorSystemComponent::SaveLuaScriptFile </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>fullFilepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>fileContents</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Saves the given contents to a Lua script on disk. The file is created if it does not exist, otherwise the file contents will be overwritten. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Script/LuaEditorSystemComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:25 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
