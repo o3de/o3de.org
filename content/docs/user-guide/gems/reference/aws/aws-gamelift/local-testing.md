@@ -31,7 +31,31 @@ $ java -jar GameLiftLocal.jar -p 9080
 
 ```
 
-## 2. Start Server
+## 2. Set `sv_useGameLiftServer` to `true`
+
+To prevent the server from trying to reach out to Amazon GameLift while running locally, the AWS GameLift gem server manager will not initialize unless you opt-in to using it by setting the `sv_useGameLiftServer` CVAR to `true`. You can set this value by creating a settings registry file named **commands.MYPROJECT_serverlauncher.setreg** in the **YourProject/Registry** folder with the following contents:
+
+```json
+{
+    "Amazon":
+    {
+        "AzCore":
+        {
+            "Runtime":
+            {
+                "ConsoleCommands":
+                {
+                    "sv_useGameLiftServer": "true"
+                } 
+            } 
+        } 
+    } 
+}
+```
+
+This will let your game server use GameLift local when running in the Editor with `ctrl` + `g` or when running the server launcher directly (see next step).
+
+## 3. Start Server
 
 Make sure you have a cmake build target for your server, like YourProject.ServerLauncher. and build the application for your local testing.
 
@@ -43,7 +67,7 @@ $ bin\profile\YourProject.ServerLauncher.exe
 
 ```
 
-## 3. Start Game
+## 4. Start Game
 
 Make sure you have a cmake build target for your game, like YourProject.GameLauncher, and build the application for your local testing.
 
@@ -57,7 +81,7 @@ $ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "http://lo
 
 ```
 
-## 4. Test Game and Server
+## 5. Test Game and Server
 
 Testing steps and instructions really depend on your own project, but please make sure your testing can cover CreateSession, JoinSession, LeaveSession and DestroySession use case.
 
