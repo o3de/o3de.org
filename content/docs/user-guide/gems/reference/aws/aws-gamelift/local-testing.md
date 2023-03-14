@@ -33,7 +33,9 @@ $ java -jar GameLiftLocal.jar -p 9080
 
 ## 2. Set `sv_useGameLiftServer` to `true`
 
-To prevent the server from trying to reach out to Amazon GameLift while running locally, the AWS GameLift gem server manager will not initialize unless you opt-in to using it by setting the `sv_useGameLiftServer` CVAR to `true`. You can set this value by creating a settings registry file named **commands.MYPROJECT_serverlauncher.setreg** in the **YourProject/Registry** folder with the following contents:
+When you are ready to test with GameLift, opt-in by setting the `sv_useGameLiftServer` CVAR to `true`. This CVAR is off by default to facilitate local testing prior to the integration of the GameLift Server SDK into your game server.
+
+You can set this value by creating a settings registry file named **commands.MYPROJECT_serverlauncher.setreg** in the **YourProject/Registry** folder with the following contents:
 
 ```json
 {
@@ -53,7 +55,7 @@ To prevent the server from trying to reach out to Amazon GameLift while running 
 }
 ```
 
-This will let your game server use GameLift local when running in the Editor with `ctrl` + `g` or when running the server launcher directly (see next step).
+This will let your game server use GameLift local when running game or simulation mode in the Editor, or when running the server launcher directly (see next step).
 
 ## 3. Start Server
 
