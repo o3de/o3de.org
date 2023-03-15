@@ -30,7 +30,7 @@ The following applications support Settings Registry command line options:
 * **${project}.GameLauncher**
 * **${project}.ServerLauncher**
 * **SerializeContextTools**
-* **SharedManagementConsole**
+* **ShaderManagementConsole**
 * **PythonBindingsExample**
 
 Settings Registry supports the following command line options.
