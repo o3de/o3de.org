@@ -55,7 +55,7 @@ You can set this value by creating a settings registry file named **commands.MYP
 }
 ```
 
-This will let your game server use GameLift local when running game or simulation mode in the Editor, or when running the server launcher directly (see next step).
+This lets your game server use GameLift local when running game or simulation mode in the Editor, or when running the server launcher directly (see next step).
 
 ## 3. Start Server
 
