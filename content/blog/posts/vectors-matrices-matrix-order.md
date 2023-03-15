@@ -1,6 +1,6 @@
 ---
 title: "Vectors, Matrices & Matrix Order"
-date: 2023-02-22
+date: 2023-03-01
 slug: vectors-matrices-matrix-order
 author: John Coimbra Walsh
 blog_img: "/images/blog/dev-series.JPG"
