@@ -35,7 +35,7 @@ $ java -jar GameLiftLocal.jar -p 9080
 
 When you are ready to test with GameLift, opt-in by setting the `sv_useGameLiftServer` CVAR to `true`. This CVAR is off by default to facilitate local testing prior to the integration of the GameLift Server SDK into your game server.
 
-You can set this value by creating a settings registry file named **commands.MYPROJECT_serverlauncher.setreg** in the **YourProject/Registry** folder with the following contents:
+You can set this value by creating a settings registry file named `commands.MyProject_serverlauncher.setreg` in the `MyProject/Registry` folder with the following contents:
 
 ```json
 {
