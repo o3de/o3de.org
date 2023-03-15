@@ -1,6 +1,6 @@
 ---
 linkTitle: The Inspector
-title: Introduction the the Kythera AI Inspector
+title: Introduction the Kythera AI Inspector
 description: Overview of the browser-based debugger and behavior tree authoring tool, the Kythera AI Inspector
 weight: 700
 toc: true

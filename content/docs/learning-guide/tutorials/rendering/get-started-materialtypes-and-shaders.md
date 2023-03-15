@@ -273,7 +273,7 @@ Linking to shaders in a `.materialtype` defines which shader(s) the material typ
 
 For this tutorial, the MyUnlitColor material type links to a few shaders:
 
-- `MyUnlitColor.shader`: This is the the shader you created earlier in this tutorial. The color property is connected to the variable `m_unlitColor`, which is defined inside `MyUnlitColor.azsl` and referenced by the `MyUnlitColor.shader` file. 
+- `MyUnlitColor.shader`: This is the shader you created earlier in this tutorial. The color property is connected to the variable `m_unlitColor`, which is defined inside `MyUnlitColor.azsl` and referenced by the `MyUnlitColor.shader` file. 
 - `DepthPass.shader`: This shader is needed to write to the depth buffer.
 - `Shadowmap.shader`: This shader enables the object to cast a shadow.
 

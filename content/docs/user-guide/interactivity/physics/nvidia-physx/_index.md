@@ -10,6 +10,7 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 
 **Topics**
 + [PhysX Gems](#physx-gems)
++ [PhysX version support](#physx-version-support)
 + [PhysX Components](#physx-components)
 + [PhysX Configuration](#physx-configuration)
 + [Physics Materials](#physics-materials)
