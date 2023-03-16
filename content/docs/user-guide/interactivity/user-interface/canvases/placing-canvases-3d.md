@@ -23,7 +23,7 @@ You can use any material on an entity to display a texture rendered by a UI canv
 
 1. Add a **Mesh** component to the entity and select a **Model Asset**.
 
-1. Add a **Material** component to the entity and select a material to display the canvas on. Edit the material instance by clicking on the arrow next to the **Model Materials** property. Select **Edit Material Instance...**. In the Material Property Inspector, update the **Base Color** texture to the same Attachment Image asset as the UI canvas' **Render Target**.
+1. Add a **Material** component to the entity and select a material to display the canvas on. Edit the material instance by clicking on the arrow next to the **Model Materials** property. Select **Open Material Instance Editor...**. In the Material Instance Editor, update the **Base Color** texture to the same Attachment Image asset as the UI canvas' **Render Target**.
 
 1. (For interactable canvases) Add a **UI Canvas on Mesh** component to the entity. If you want to load multiple instances of the UI canvas on different entities and have them display different states, select the Attachment Image asset in the **Render target override** property. Otherwise, leave this property blank.
 
