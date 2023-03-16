@@ -71,8 +71,8 @@ Parameters of the model are exposed to the user via `AckermannVehicleModelCompon
 
 ### Manual control
 
-The `VehicleModel` will handle input events with names "steering" and "accelerate". This means you can add an [InputComponent](/docs/user-guide/components/reference/gameplay/input/) to the same entity and define an input map for your input devices (such as keyboard or a game pad) to control the vehicle manually.
+The `VehicleModel` will handle input events with names "steering" and "accelerate". This means you can add an [InputComponent](/docs/user-guide/components/reference/gameplay/input/) to the same entity and define an input map for your input devices (such as a keyboard or a gamepad) to control the vehicle manually.
 
 You can use tools such as [rqt_robot_steering](https://index.ros.org/p/rqt_robot_steering/) to move your robot with Twist messages. `RobotControl` is suitable to use with [ROS 2 navigation stack](https://navigation.ros.org/).
 
-It is possible to implement your own control mechanisms with this Component.
+It is possible to implement your own control mechanisms with this component.

@@ -56,7 +56,7 @@ See the [class diagram](/docs/user-guide/interactivity/robotics/class-diagram/) 
 
 ### Frames
 
-`ROS2FrameComponent` is a representation of an interesting physical part of the robot. It handles spatio-temporal relationship between this part and other frames of reference. It also encapsulates namespaces, which help to distinguish between different robots and different parts of the robot, such in the case of multiple identical sensors on one robot.
+`ROS2FrameComponent` is a representation of an interesting physical part of the robot. It handles the spatio-temporal relationship between this part and other frames of reference. It also encapsulates namespaces, which help to distinguish between different robots and different parts of the robot, such as in the case of multiple identical sensors on one robot.
 
 All Sensors and the Robot Control component require `ROS2FrameComponent`.
 
@@ -70,8 +70,8 @@ Sensors are components deriving from `ROS2SensorComponent`. They acquire data fr
 
 If you intend to add your own sensor, it might be useful to look at how sensors already provided within the O3DE ROS2 Gem are implemented.
 
-Sensors can be fall into one of two categories:
-- sensors which replicate real devices to some degree of realism.
+Sensors fall into one of two categories:
+- sensors that replicate real devices to some degree of realism.
 - ground truth "sensors", which can be useful for development and machine learning.
 
 ### Robot Control
@@ -80,9 +80,9 @@ The Gem comes with `ROS2RobotControlComponent`, which you can use to move your r
 
 - [Twist](https://github.com/ros2/common_interfaces/blob/master/geometry_msgs/msg/Twist.msg) messages.
 - [AckermannDrive](https://github.com/ros-drivers/ackermann_msgs/blob/master/msg/AckermannDrive.msg)
-  The component subscribes to these command messages on a configured topic. The topic is "cmd_vel" by default, in a namespace as dictated by ROS2Frame.
+  The component subscribes to these command messages on a configured topic. The topic is `cmd_vel` by default, in a namespace as dictated by __ROS2Frame__.
 
-To make use of received command messages, use either `AckermannControlComponent`, `RigidBodyTwistControlComponent` or `SkidSteeringControlComponent` , depending on steering type. You can also implement your own control component or use LUA scripting to handle these commands. Unless scripting is used, control components should translate ROS 2 commands to events on `VehicleInputControlBus`. These events will be handled by a [`VehicleModelComponent`](#vehicle-model) if it is present. You can use tools such as [rqt_robot_steering](https://index.ros.org/p/rqt_robot_steering/) to move your robot with Twist messages. `RobotControl` is suitable to use with [ROS 2 navigation stack](https://navigation.ros.org/). It is possible to implement your own control mechanisms with this Component.
+To make use of received command messages, use either `AckermannControlComponent`, `RigidBodyTwistControlComponent`, or `SkidSteeringControlComponent`, depending on the steering type. You can also implement your own control component or use LUA scripting to handle these commands. Unless scripting is used, control components should translate ROS 2 commands to events on `VehicleInputControlBus`. These events will be handled by a [`VehicleModelComponent`](#vehicle-model) if it is present. You can use tools such as [rqt_robot_steering](https://index.ros.org/p/rqt_robot_steering/) to move your robot with Twist messages. `RobotControl` is suitable to use with [ROS 2 navigation stack](https://navigation.ros.org/). It is possible to implement your own control mechanisms with this component.
 
 ### Vehicle Model
 

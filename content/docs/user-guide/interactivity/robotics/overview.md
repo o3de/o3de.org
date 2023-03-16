@@ -7,13 +7,13 @@ description: An overview of concepts, Gems, templates and demos for robotics in 
 The ROS 2 Gem helps to build robotic simulations with [ROS 2 / Robot Operating System](https://www.ros.org/).
 
 The ROS 2 Gem contains a number of components to build robotic simulations, such as sensors,
-control of different type of drives, manipulator arms, and dynamic spawning of robots. It also comes with plenty of utilities.
+controllers of different types of drives, manipulator arms, and dynamic spawning of robots. It also comes with plenty of utilities.
 
 ## Gems
 
 There are several Gems to power robotic simulations with **Open 3D Engine (O3DE)**.
 - [ROS 2 Gem](/docs/user-guide/gems/reference/robotics/ros2), the central and the most important one. It provides most features and other robotics Gems depend on it. 
-- Project Templates for Robotics and connected Asset Gems. These provide good starting point for simulation development and a set of assets to use.
+- Project Templates for Robotics and connected Asset Gems. These provide a good starting point for simulation development and a set of assets to use.
 - 3rd party Gems: 
   - [Robotec GPU Lidar (RGL) Gem](https://github.com/RobotecAI/o3de-rgl-gem) - GPU accelerated LIDAR simulation in O3DE using CUDA.
 
