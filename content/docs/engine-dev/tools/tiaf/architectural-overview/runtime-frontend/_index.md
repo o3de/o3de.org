@@ -4,6 +4,10 @@ title: Runtime & Front End
 description: Information about the TIAF Runtime and Front End.
 ---
 
+The runtime and front end work together to present a unified interface to the user for selecting, prioritizing and running tests before presenting a report of the test results to the user. The runtime is responsible for performing the heavy lifting whereas the front end communicates the desired actions to the runtime and presents the results to the user.
+
+Below is a simplified diagram of the ssubsystems that make up the runtime and front end, and how they interact with one another:
+
 ```mermaid
 flowchart TD
     FrontEnd -->|Test sequence to run| Runtime

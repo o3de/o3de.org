@@ -4,6 +4,8 @@ title: Architectural Overview
 description: Architectural overview of the TIAF runtime, front end and Automated Review integration.
 ---
 
+The architecture of the TIAF is broadly broken down into two areas: the [Automated Review Integration](./ar-integration), which concerns the integration of the TIAF runtime binaries into O3DE's automated review pipeline, and the [Runtime & Front End](./runtime-frontend), which concerns the architecture of the runtime and front end binaries that run the tests and present the results to the user.
+
 ## Topics
 
 | Name | Description |
