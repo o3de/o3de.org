@@ -2,6 +2,7 @@
 linkTitle: Startup and Screen Management Classes
 title: Startup and Screen Management Classes
 description: Classes that facilitate Project Manager startup, and screen transition logic
+weight: 100
 ---
 
 {{< note >}}

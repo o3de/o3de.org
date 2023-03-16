@@ -2,6 +2,7 @@
 linkTitle: Data Classes
 title: Data Classes
 description: Classes that describe various data maintained in Project Manager
+weight: 200
 ---
 
 {{< note >}}
@@ -52,11 +53,11 @@ All of these functions are pure virtual functions, which require implementation 
 The [`Settings`](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/Settings.h) class [inherits](https://github.com/o3de/o3de/blob/69dbcd08a56539315bfb0472984daf0f46e7a966/Code/Tools/ProjectManager/Source/Settings.h#L23-L24) `SettingsInterface` which uses [`AZ::SettingsRegistryInterface`](https://github.com/o3de/o3de/blob/b79bd3df1fe5d4c2a639d3921a29bd0d95712f6c/Code/Tools/ProjectManager/Source/Settings.h#L48) under the hood to interact with the O3DE Settings Registry.
 
 This mirrors JSON so that values can be retrieved by key paths. For example, take a .setreg like:
-```
+```json
 {
-    key:{
-        subkey:{
-            subsubkey:"value"
+    "key":{
+        "subkey":{
+            "subsubkey":"value"
         }
     }
 }
