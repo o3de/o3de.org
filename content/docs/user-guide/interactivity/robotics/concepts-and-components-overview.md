@@ -28,29 +28,29 @@ Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/
 ## Components overview
 
 - __Central Singleton__
-  - ROS2SystemComponent
+  - `ROS2SystemComponent`
 - __Core abstractions__
-  - ROS2FrameComponent
-  - ROS2SensorComponent
+  - `ROS2FrameComponent`
+  - `ROS2SensorComponent`
 - __Sensors__
-  - ROS2CameraSensorComponent
-  - ROS2GNSSSensorComponent
-  - ROS2IMUSensorComponent
-  - ROS2LidarSensorComponent
-  - ROS2OdometrySensorComponent
+  - `ROS2CameraSensorComponent`
+  - `ROS2GNSSSensorComponent`
+  - `ROS2IMUSensorComponent`
+  - `ROS2LidarSensorComponent`
+  - `ROS2OdometrySensorComponent`
 - __Robot control__
-  - AckermannControlComponent
-  - RigidBodyTwistControlComponent
-  - SkidSteeringControlComponent
+  - `AckermannControlComponent`
+  - `RigidBodyTwistControlComponent`
+  - `SkidSteeringControlComponent`
 - __Spawner__
-  - ROS2SpawnerComponent
-  - ROS2SpawnPointComponent
+  - `ROS2SpawnerComponent`
+  - `ROS2SpawnPointComponent`
 - __Vehicle dynamics__
-  - AckermannVehicleModelComponent
-  - SkidSteeringModelComponent
-  - WheelControllerComponent
+  - `AckermannVehicleModelComponent`
+  - `SkidSteeringModelComponent`
+  - `WheelControllerComponent`
 - __Robot Import (URDF) system component__
-  - ROS2RobotImporterSystemComponent
+  - `ROS2RobotImporterSystemComponent`
 
 See the [class diagram](/docs/user-guide/interactivity/robotics/class-diagram/) to understand how components are connected.
 
@@ -69,10 +69,6 @@ Sensors are components deriving from `ROS2SensorComponent`. They acquire data fr
 - Some sensors can be visualized.
 
 If you intend to add your own sensor, it might be useful to look at how sensors already provided within the O3DE ROS2 Gem are implemented.
-
-Sensors fall into one of two categories:
-- sensors that replicate real devices to some degree of realism.
-- ground truth "sensors", which can be useful for development and machine learning.
 
 ### Robot Control
 
@@ -94,7 +90,7 @@ See the [Vehicle Dynamics](vehicle-dynamics.md) section.
 
 ### Spawner
 
-`ROS2SpawnerComponent` handles spawning entities during simulation. Available spawnables have to be set up as the component's field before the simulation. User is able to define named spawn points inside the Editor. This can be done by adding `ROS2SpawnPointComponent` to a child entity of an entity with `ROS2SpawnerComponent`. During the simulation user can access names of available spawnables and request spawning using ros2 services. The names of services are `/get_available_spawnable_names` and `/spawn_entity` respectivly. GetWorldProperties.srv and SpawnEntity.srv types are used to handle these features. In order to request defined spawn points names user can use `/get_spawn_points_names` service with GetWorldProperties.srv type. Detailed information about specific spawn point (e.g. pose) can be accessed using `/get_spawn_point_info` service with GetModelState.srv type. All used services types are defined in gazebo_msgs package.
+`ROS2SpawnerComponent` handles spawning entities during simulation. Available spawnables have to be set up as the component's field before the simulation. User is able to define named spawn points inside the Editor. This can be done by adding `ROS2SpawnPointComponent` to a child entity of an entity with `ROS2SpawnerComponent`. During the simulation user can access names of available spawnables and request spawning using ros2 services. The names of services are `/get_available_spawnable_names` and `/spawn_entity` respectivly. GetWorldProperties.srv and SpawnEntity.srv types are used to handle these features. In order to request defined spawn points names user can use `/get_spawn_points_names` service with `GetWorldProperties.srv` type. Detailed information about specific spawn point (e.g. pose) can be accessed using `/get_spawn_point_info` service with `GetModelState.srv` type. All used services types are defined in gazebo_msgs package.
 
 - **Spawning**: The spawnable name must be passed in `request.name` and the position of entity in `request.initial_pose`.
   - Example call: 

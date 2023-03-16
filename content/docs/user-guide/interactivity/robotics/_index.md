@@ -6,7 +6,7 @@ description: Learn how to create robotics simulation in Open 3D Engine (O3DE) wi
 
 O3DE supports simulation for robotics through a dedicated ROS 2 Gem (as well as additional Gems extending it).
 
-There are components for simulation of sensors, robot control and steering, manipulator arms, and importing robots from common format.
+There are components for simulation of sensors, robot control and steering, manipulator arms, and importing robots from common formats.
   
 | Topic                                                                                                                      | Description                                                    |
 |----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
