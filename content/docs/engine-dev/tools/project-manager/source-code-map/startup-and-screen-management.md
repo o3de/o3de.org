@@ -1,7 +1,8 @@
 ---
-linkTitle: Source Code Map
-title: Source Code Map
-description: Summaries of classes and code files in Project Manager
+linkTitle: Startup and Screen Management Classes
+title: Startup and Screen Management Classes
+description: Classes that facilitate Project Manager startup, and screen transition logic
+weight: 100
 ---
 
 {{< note >}}
@@ -12,9 +13,7 @@ This information is for developers of the **Project Manager** tool. If you're a 
 This contains brief summaries of various class's functionality and role. If available, there are additional links in the table of contents, either with expanded information, or github links. All documentation reflects code as of commit [(b79bd3df1f)](https://github.com/o3de/o3de/tree/b79bd3df1fe5d4c2a639d3921a29bd0d95712f6c) 
 {{< /note >}}
 
-## Startup and Screen Management
-
-### Overview
+## Overview
 
 | Class | Source Code | Description |
 | - | - | - |
@@ -25,6 +24,7 @@ This contains brief summaries of various class's functionality and role. If avai
 |ScreenFactory | [header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenFactory.h) [cpp file](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenFactory.cpp) | Helper class for `ScreensCtrl` that routes `ProjectManagerScreen` enums to appropriate `ScreenWidget` constructor, invokes that constructor, and returns an instance of a given screen for the Project Manager's business logic.
 |ScreenDefs | [header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenDefs.h) | Contains definitions for `ProjectManagerScreen` enum, which describes all possible types of screens in Project Manager. It also defines a hash function, and a mapping to appropriate string equivalents for each enum.|
 |[ScreenWidget](#screenwidget) | [header](https://github.com/o3de/o3de/blob/development/Code/Tools/ProjectManager/Source/ScreenWidget.h) | The parent class to all screens in Project Manager. It contains all necessary stubs for screen management and transition. `ScreensCtrl` is defined in terms of `ScreenWidget`, so that all transition logic is polymorphic.|
+
 
 ### Application
 
@@ -50,7 +50,7 @@ The two primary functions to keep track of are `Init` and `Run`. [`TearDown`](ht
 * Shows the MainWindow.
 * Run the QApplication's main loop.
 
-[Back to Top](#overview)
+[Back to Overview](#overview)
 
 
 
@@ -67,7 +67,7 @@ All logic unique to the Project Manager occurs at the constructor, which is summ
     * If `startScreen` is set, first force load the main Projects screen, then transition to the desired screen. If not set, the Projects screen is the default.
     * If `projectPath` is set, notify the `ScreensCtrl` instance of the currently highlighted project path.
 
-[Back to Top](#overview)
+[Back to Overview](#overview)
 
 
 
@@ -120,7 +120,7 @@ All functions are summarized as follows:
 * Update `m_screenMap` with pointer to the new screen.
 * Connect slots for transition functions for new screen.
 
-[Back to Top](#overview)
+[Back to Overview](#overview)
 
 
 ### ScreenWidget
@@ -139,4 +139,4 @@ If you were to check the header file, it would only contain stub functions. In t
 
 `ScreenWidget` also defines various Qt [`signals`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreenWidget.h#L65-L70) that are used to facilitate transitions by connecting to Qt [`slots`](https://github.com/o3de/o3de/blob/99f713702e5e0a8949e38c7b92bf00682c2633ca/Code/Tools/ProjectManager/Source/ScreensCtrl.cpp#L201-L205) as defined in `ScreensCtrl::ResetScreen`.
 
-[Back to Top](#overview)
+[Back to Overview](#overview)
