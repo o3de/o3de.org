@@ -21,8 +21,8 @@ The following instructions assume that you have:
 5.  CMake {{< versions/cmake >}} or newer is installed and on the system path
 6.  Ninja build system is installed and on the system path
 7.  Git is installed
-8.  [O3DE](https://github.com/o3de/o3de.git) has been cloned locally on the system (to `D:\\github\\o3de`)
-9.  [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) has been cloned locally on the system (to `D:\\github\\o3de-atom-sampleviewer`)
+8.  [O3DE](https://github.com/o3de/o3de.git) has been cloned locally on the system (to `D:\github\o3de`)
+9.  [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) has been cloned locally on the system (to `D:\github\o3de-atom-sampleviewer`)
 
 {{< note >}}
 This example workflow represents the 'Source Engine' workflow when setting up [O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github)
