@@ -159,7 +159,7 @@ Skeleton LODs can be automatically created using the [Skeleton optimization](/do
 
 ## Set actor LOD distances
 
-Actor LOD distances are set using the [Simple LOD distance](/docs/user-guide/components/reference/animation/simple-lod-distance) component. To set actor LOD distances, do the following:
+Actor LOD distances are set using the [Simple LOD Distance](/docs/user-guide/components/reference/animation/simple-lod-distance) component. To set actor LOD distances, do the following:
 
 1. Ensure your actor asset has mesh LODs (and skeleton LODs if required) created through the processes in the preceding sections.
 
