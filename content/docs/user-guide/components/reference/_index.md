@@ -36,13 +36,13 @@ The following components are grouped by type as they appear in the O3DE Editor.
 
 
 ### Animation
-| Component | Description | 
+| Component | Description |
 | - | - |
-| [Actor](/docs/user-guide/components/reference/animation/actor/) | Creates and manages a controllable character. |
-| [Anim Graph](/docs/user-guide/components/reference/animation/animgraph/) | Manages a set of assets that are built in the Animation Editor, including the animation graph, default parameter settings, and assigned motion set for the associated Actor. |
-| [Attachment](/docs/user-guide/components/reference/animation/attachment/) | Allows an entity to attach to a bone on the skeleton of another entity. |
-| Simple LOD Distance | Changes the actor skeleton LOD based on camera distance. |
-| [Simple Motion](/docs/user-guide/components/reference/animation/simple-motion/) | Assigns a single motion to the associated Actor. This is a simpler alterative to the Anim Graph component.  |
+| [Actor](./animation/actor) | Adds a mesh group bound to a skeleton that can be driven by animation data from Anim Graph or Simple Motion components. |
+| [Anim Graph](./animation/animgraph/) | Manages a set of assets that are built in the Animation Editor, including the animation graph, default parameter settings, and assigned motion set for the associated Actor. |
+| [Attachment](./animation/attachment/) | Allows an entity to attach to a bone on the skeleton of another entity. |
+| [Simple LOD Distance](./animation/simple-lod-distance) | Sets the distance from the camera for each level of detail (LOD) of an Actor. |
+| [Simple Motion](./animation/simple-motion/) | Assigns a single motion to the associated Actor. This is a simpler alterative to the Anim Graph component.  |
 
 
 ### Atom Renderer
