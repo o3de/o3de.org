@@ -84,7 +84,7 @@ When you've assigned all the meshes and bones to the appropriate LODs, choose **
 
 LodGroups are created in a digital content creation (DCC) application such as Maya or Blender by arranging the meshes and skeletons for each LOD in a hierarchy of groups. LodGroups are automatically processed and don't require additional configuration in Scene Settings.
 
-An LodGroup node specifies that its child groups each contain an LOD. Maya has a special LOD Group tool that can be accessed from the edit menu to create LodGroups. In other applications, such as Blender, you can create LodGroups by doing the following:
+An LodGroup node specifies that its child groups each contain an LOD. Maya has a special LOD Group tool that can be accessed from the edit menu to create LodGroups. In other applications, such as [Blender](https://www.blender.org/), you can create LodGroups by doing the following:
 
 1. In Blender, create an empty (transform) node. Name the node `LodGroup`.
 
