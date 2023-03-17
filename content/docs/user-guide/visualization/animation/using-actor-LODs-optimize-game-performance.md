@@ -37,7 +37,7 @@ LODs can be used in a few different contexts in O3DE. The following guidelines a
 
 * LODs can use the same skelton or have an optimized skeleton for each LOD.
 * The only allowed optimization for skeleton LODs is to remove *leaf* bones, which are the bones at the end of a chain. Bones can't be removed from within the skeleton hierarchy. For example, a character might have fewer finger bones, and fewer fingers, as the skeleton is optimized for each successive LOD. To remove leaf bones for optimization, start from the outermost leaf bones, and work back up the skeleton hierarchy.
-* Each skeleton LOD must have the same bone names and hierarchy, excluding leaf bones removed for optimization,.
+* Each skeleton LOD must have the same bone names and hierarchy, excluding leaf bones removed for optimization.
 * If you choose to create skeleton LODs in a digital content creation (DCC) application, you must assign them to LODs through LodGroups in the source file, or manually assign LODs in Scene Settings.
 
 ### Materials and textures
