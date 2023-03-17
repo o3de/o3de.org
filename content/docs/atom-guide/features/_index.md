@@ -43,13 +43,13 @@ Clustered Forward Shading
 Diffuse Probe Grid  
 : A volume of light probes that provides diffuse global illumination in a specified area. Each probe in the volume uses ray tracing to capture its diffuse lighting environment, known as irradiance.
 
-*Related to: [Diffuse Probe Grid component](/docs/user-guide/components/reference/atom/diffuse-probe-grid/), [Diffuse Probe Grid Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_diffuse_probe_grid_feature_processor_interface.html)*
+*Related to: [Diffuse Probe Grid component](/docs/user-guide/components/reference/atom/diffuse-probe-grid/), [Diffuse Probe Grid Feature Processor API](/docs/api/gems/diffuseprobegrid/class_a_z_1_1_render_1_1_diffuse_probe_grid_feature_processor_interface.html)*
 
 
 Reflection Probes  
 : A system that provides specular reflections for the environment around capture points, known as probes.  A probe stores its environment as a cubemap and applies the cubemap to meshes that are located inside the probe's volume. With the reflection probes system, the mesh can display environment reflections that match the surroundings at its location.
 
-*Related to: [Reflection Probe component](/docs/user-guide/components/reference/atom/reflection-probe/), [Reflection Probe Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html)*
+*Related to: [Reflection Probe component](/docs/user-guide/components/reference/atom/reflection-probe/), [Reflection Probe Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_reflection_probe_feature_processor_interface.html)*
 
 
  Subsurface Scattering   
@@ -93,7 +93,7 @@ Atom has a unified mesh format with support for several mesh types:
 + **Skinned** meshes that are bound to a skeleton with per vertex bone weights and animated through transforms applied to the bones of the skeleton. Skinned meshes can't be included in light maps or reflection maps.
 + **Cloth** meshes that dynamically simulate the physical properties of cloth-like objects. Cloth meshes can't be included in light maps or reflection maps.
 
-*Related to: [Mesh component](/docs/user-guide/components/reference/atom/mesh), [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html)*  
+*Related to: [Mesh component](/docs/user-guide/components/reference/atom/mesh), [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [Skinned Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html)*  
 
 
 ## Post-processing effects (PostFX)
