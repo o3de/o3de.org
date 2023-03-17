@@ -47,7 +47,7 @@ LODs can be used in a few different contexts in O3DE. The following guidelines a
 
 ## Manual LOD setup with Scene Settings
 
-Mesh and skeleton LODs can be configured manually in Scene Settings. Manual setup can be challenging with complex actors, however, so using LodGroups to automatically generate actor LODs is recommended. To set up actor LODS manually, do the following:
+Mesh and skeleton LODs can be configured manually in Scene Settings. Manual setup can be challenging with complex actors, however, so using LodGroups to automatically generate actor LODs is recommended. To set up actor LODs manually, do the following:
 
 ### Manually set mesh LODs
 
