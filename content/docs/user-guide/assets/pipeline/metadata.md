@@ -49,7 +49,7 @@ To enable a file type, create a .setreg file with the following settings:
 ```
 EnabledTypes is simply an array of strings of file extension to enable.  For example, `".txt", ".png"`
 
-It is highly recommened that this setreg file be placed in a central location which is shared with other users of the project to ensure everyone is generating the same metadata files.  For a game project, it should be placed in the project directory; for gem development, it should be placed in the gem directory.
+It is highly recommened that this setreg file be placed in a central location which is shared with other users of the project to ensure everyone is generating the same metadata files.  For a game project, it should be placed in the project directory; for gem development, it should be placed in the gem directory.  Keep in mind this is an Asset Processor wide setting, it will apply to all files the AP processes, not just the ones in the project/gem where the setting exists.
 
 Once a metadata file is generated for an asset and the asset is relocated or any references are saved using the newly generated UUID, the metadata file must be kept alongside the asset.  Not doing so could break references to the file.
 
