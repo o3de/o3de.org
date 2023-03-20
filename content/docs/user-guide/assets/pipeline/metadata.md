@@ -49,6 +49,8 @@ To enable a file type, create a .setreg file with the following settings:
 ```
 EnabledTypes is simply an array of strings of file extension to enable.  For example, `".txt", ".png"`
 
+It is highly recommened that this setreg file be placed in a central location which is shared with other users of the project to ensure everyone is generating the same metadata files.  For a game project, it should be placed in the project directory; for gem development, it should be placed in the gem directory.
+
 Once a metadata file is generated for an asset and the asset is relocated or any references are saved using the newly generated UUID, the metadata file must be kept alongside the asset.  Not doing so could break references to the file.
 
 Note that AP will continue to use existing metadata files for assets which have them regardless of the above settings.
@@ -72,9 +74,12 @@ By default, renaming assets manually while Asset Processor is running can prove 
     }
 }
 ```
-The value specified is the milliseconds to wait.  The above example config will wait 5 seconds before processing an asset.
+The value specified is the milliseconds to wait.  The above example config will wait 5 seconds before processing an asset.  Note that this setting can be user-specific and does not need to be shared across users if not desired.
 
 This setting is mainly useful to help allow manual renaming of assets, but can help in some situations of slow file updates on disk, such as copying a large number of files or fetching latest from source control.  These operations can sometimes be ordered in a way that requires a very high delay setting, such as a Git LFS fetch which may fetch files in groups by type, possibly resulting in metadata files being created on disk long after the source asset was created.  In these situations, it is recommended to close AP first to avoid conflicts caused by AP creating metadata files which already exist in source control.
 
 ## Asset Processor Batch
 Since Asset Processor Batch is intended for use with automated processes, it will not create metadata files and will not use the meta creation delay, regardless of what settings are configured.  It will make use of any existing metadata files however.
+
+## Limitations
+Metadata relocation currently only supports UUID-based references.  That means references from code (C++, Lua, AZSL, etc) which typically reference files by path will not support moving/renaming.  For an asset type to be fully supported for metadata renaming/relocation, *all* systems that reference the type must do so via UUID.
