@@ -2,6 +2,7 @@
 linkTitle: Overview
 title: Robotics Overview
 description: An overview of concepts, Gems, templates and demos for robotics in Open 3D Engine (O3DE).
+weight: 100
 ---
 
 The ROS 2 Gem helps to build robotic simulations with [ROS 2 / Robot Operating System](https://www.ros.org/).

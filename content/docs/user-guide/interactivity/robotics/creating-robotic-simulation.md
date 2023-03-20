@@ -2,6 +2,7 @@
 linkTitle: Creating a Robotic Simulation
 title: Creating a Robotic Simulation
 description: A step-by-step process on how to create a robotic simulation using the ROS 2 Gem in Open 3D Engine (O3DE).
+weight: 400
 toc: true
 ---
 
