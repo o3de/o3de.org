@@ -139,3 +139,13 @@ All used services types are defined in the **gazebo_msgs** package.
     ```
     ros2 service call /get_spawn_point_info gazebo_msgs/srv/GetModelState '{model_name: 'spawn_spot'}'
     ```
+
+## Related topics
+
+| Topic                                         | Description                      |
+|-----------------------------------------------|----------------------------------|
+| [ROS 2 Gem class diagram](class-diagram.md)   | Class diagram for the ROS 2 Gem. |
+
+
+
+
