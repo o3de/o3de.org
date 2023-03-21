@@ -13,7 +13,8 @@ By default, the metadata system is currently disabled because not all file types
 
 
 ## How to use
-Moving/renaming assets can be done either in the editor via the asset browser or using any file management tool of your choosing.
+Moving or renaming assets can be done either in the editor via the asset browser or using any file management tool of your choosing, such as the File Explorer in Windows.
+
 
 There is only one requirement when **moving/renaming an asset: the metadata file must be moved/renamed as well**.
 
