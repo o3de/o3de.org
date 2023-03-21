@@ -85,7 +85,10 @@ In a .setreg file, add the following setting:
     }
 }
 ```
-The value specified is the milliseconds to wait.  The above example config will wait 5 seconds before processing an asset.  Note that this setting can be user-specific and does not need to be shared across users if not desired.
+The value specified is the milliseconds to wait.  The above example config will wait 5 seconds before processing an asset.  
+
+>  This setting can be user-specific and does not need to be shared across users if not desired.
+
 
 This setting is mainly useful to help allow manual renaming of assets, but can help in some situations of slow file updates on disk, such as copying a large number of files or fetching latest from source control.  These operations can sometimes be ordered in a way that requires a very high delay setting, such as a Git LFS fetch which may fetch files in groups by type, possibly resulting in metadata files being created on disk long after the source asset was created.  In these situations, it is recommended to close AP first to avoid conflicts caused by AP creating metadata files which already exist in source control.
 
