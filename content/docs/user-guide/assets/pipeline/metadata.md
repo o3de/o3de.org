@@ -6,7 +6,8 @@ weight: 600
 toc: true
 ---
 
-Metadata Asset Relocation allows files to be moved and renamed freely without breaking existing references by storing a UUID in a side-car file (.meta).  See here for technical details on how the system works: https://github.com/o3de/sig-content/blob/main/rfcs/rfc-77-metadata-asset-relocation.md
+Metadata Asset Relocation allows files to be moved and renamed freely without breaking existing references by storing a UUID in a side-car file (.meta).  See the [Asset Metadata Relocation RFC](https://github.com/o3de/sig-content/blob/main/rfcs/rfc-77-metadata-asset-relocation.md) for technical details on how the system works
+
 
 By default, the system is currently disabled as not all file types are currently able to be relocated without issue.  File types must be enabled individually.  Once a type is enabled, the Asset Processor will generate metadata files for every file of the given type on startup.  Any file which has a metadata associated with it can then be moved/renamed.  The Asset Processor does not need to be running when moving/renaming files and there are no special tools required to do so.
 
