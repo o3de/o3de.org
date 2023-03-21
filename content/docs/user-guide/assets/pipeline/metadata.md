@@ -62,7 +62,12 @@ Once a metadata file is generated for an asset and the asset is relocated or any
 Note that AP will continue to use existing metadata files for assets which have them regardless of the above settings.
 
 ## Renaming while AP is running
-By default, renaming assets manually while Asset Processor is running can prove difficult as AP will try to immediately create a new metadata file for the renamed asset.  To prevent this, AP can be configured to wait for a specified time before it attempts to process a "new" asset, which avoids the automatic creation of an unwanted, new metadata file.  Note that this delay will affect all newly created assets for metadata-enabled types, which is why this is off by default.  The longer the delay time, the longer it will take AP to start processing any newly created metadata-enabled file type.  In a .setreg file, add the following setting:
+By default, renaming assets manually while Asset Processor is running can prove difficult as AP will try to immediately create a new metadata file for the renamed asset.  To prevent this, AP can be configured to wait for a specified time before it attempts to process a "new" asset, which avoids the automatic creation of an unwanted, new metadata file.  
+
+> This delay will affect all newly created assets for metadata-enabled types and is off by default.  The longer the delay time, the longer it will take AP to start processing any newly created metadata-enabled file type.
+
+In a .setreg file, add the following setting:
+
 ```json
 {
     "O3DE":
