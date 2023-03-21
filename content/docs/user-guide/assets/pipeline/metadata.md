@@ -60,7 +60,8 @@ It is highly recommended that this setreg file be placed in a central location, 
 
 Once a metadata file is generated for an asset and the asset is relocated or any references are saved using the newly generated UUID, the metadata file must be kept alongside the asset.  Not doing so could break references to the file.
 
-Note that AP will continue to use existing metadata files for assets which have them regardless of the above settings.
+> AssetProcessor will continue to use existing metadata files for assets which have them, regardless of the above settings.
+
 
 ## Renaming while AP is running
 By default, renaming assets manually while Asset Processor is running can prove difficult as AP will try to immediately create a new metadata file for the renamed asset.  To prevent this, AP can be configured to wait for a specified time before it attempts to process a "new" asset, which avoids the automatic creation of an unwanted, new metadata file.  
