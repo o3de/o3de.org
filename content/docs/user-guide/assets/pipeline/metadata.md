@@ -19,7 +19,8 @@ Moving or renaming assets can be done either in the editor via the asset browser
 There is only one requirement when moving or renaming an asset, which is **the metadata file must be moved or renamed as well**.
 
 
-Folders can be moved/renamed without having to touch metadata files, but note that all files within a folder must have a metadata file to ensure existing references do not break.
+Folders can be moved or renamed without having to touch metadata files, but all files within a folder **must have a metadata file** to ensure existing references do not break.
+
 
 Examples:
 
