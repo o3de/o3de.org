@@ -55,8 +55,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputContext Class Reference</div>  </div>
@@ -214,26 +212,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a800fe9f8e450e5ab0567f54677885782 inherit pro_methods_class_az_framework_1_1_input_channel_event_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_framework_1_1_input_channel_notifications.html#a4c35f63b4139b3fcbc77d48832bf3345">AzFramework::InputChannelNotifications::OnInputChannelEvent</a> <br/></td></tr>
 <tr class="separator:a800fe9f8e450e5ab0567f54677885782 inherit pro_methods_class_az_framework_1_1_input_channel_event_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a572e45a7c5c3a3306a83f61152c5f729"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a572e45a7c5c3a3306a83f61152c5f729"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#a572e45a7c5c3a3306a83f61152c5f729">InputMappingsByIdMap</a> = AZStd::unordered_map&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_input_mapping.html">InputMapping</a> &gt;&gt;</td></tr>
-<tr class="memdesc:a572e45a7c5c3a3306a83f61152c5f729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for verbose container class. <br/></td></tr>
-<tr class="separator:a572e45a7c5c3a3306a83f61152c5f729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aa5d642020b6d9b092d9ef2b9ec329c04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5d642020b6d9b092d9ef2b9ec329c04"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#aa5d642020b6d9b092d9ef2b9ec329c04">m_consumesProcessedInput</a> = false</td></tr>
-<tr class="memdesc:aa5d642020b6d9b092d9ef2b9ec329c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should this input context consume input that is processed by any of its input mappings? <br/></td></tr>
-<tr class="separator:aa5d642020b6d9b092d9ef2b9ec329c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a83e33fc6d3329d404a49cd250dea03a4"><td class="memItemLeft" align="right" valign="top">InputChannelByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context.html#a83e33fc6d3329d404a49cd250dea03a4">m_inputChannelsById</a></td></tr>
-<tr class="separator:a83e33fc6d3329d404a49cd250dea03a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3989ac50358ee45f439f4b6723a76172"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3989ac50358ee45f439f4b6723a76172"></a>
-<a class="el" href="class_az_framework_1_1_input_context.html#a572e45a7c5c3a3306a83f61152c5f729">InputMappingsByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_inputMappingsById</b></td></tr>
-<tr class="separator:a3989ac50358ee45f439f4b6723a76172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_az_framework_1_1_input_device"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_az_framework_1_1_input_device')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_az_framework_1_1_input_device.html">AzFramework::InputDevice</a></td></tr>
@@ -376,35 +354,13 @@ static AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>GetPriority
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a83e33fc6d3329d404a49cd250dea03a4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">InputChannelByIdMap AzFramework::InputContext::m_inputChannelsById</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>All input channels/mappings owned by this input context. We need to store two separate containers so that we can return the correct type from GetInputChannelsById while also maintaining shared ownership of input mappings added via the AddInputMapping function. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Input/Contexts/InputContext.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

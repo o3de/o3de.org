@@ -53,10 +53,6 @@
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_tab_bar-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -129,74 +125,6 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>minimumSizeHint</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUseMaxWidth</b> (bool use)</td></tr>
 <tr class="separator:adf9391d577bacd3338d28bc1d99f7a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a79d54c30f7cc8d48ce0ea3821dfbf945"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>Overflow</b> { <b>OverflowUnchecked</b>, 
-<b>NotOverflowing</b>, 
-<b>Overflowing</b>
- }</td></tr>
-<tr class="separator:a79d54c30f7cc8d48ce0ea3821dfbf945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a334f04b3c0836d8cd9af041a9a699a17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a334f04b3c0836d8cd9af041a9a699a17"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resetOverflow</b> ()</td></tr>
-<tr class="separator:a334f04b3c0836d8cd9af041a9a699a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da78a4c3d30f411f1d0e96f06e1cfcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1da78a4c3d30f411f1d0e96f06e1cfcd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>overflowIfNeeded</b> ()</td></tr>
-<tr class="separator:a1da78a4c3d30f411f1d0e96f06e1cfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa30eb360a61af43367833d9ddd517251"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa30eb360a61af43367833d9ddd517251"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showCloseButtonAt</b> (int index)</td></tr>
-<tr class="separator:aa30eb360a61af43367833d9ddd517251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e9df9c480bb18d968728791a586504"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32e9df9c480bb18d968728791a586504"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setToolTipIfNeeded</b> (int index)</td></tr>
-<tr class="separator:a32e9df9c480bb18d968728791a586504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:af47b887d7a12f62fb9be4c604362d852"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af47b887d7a12f62fb9be4c604362d852"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>polish</b> (<a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_tab_widget_1_1_config.html">TabWidget::Config</a> &amp;config)</td></tr>
-<tr class="separator:af47b887d7a12f62fb9be4c604362d852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7667e142e28cc068ea50391bbfc91eb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7667e142e28cc068ea50391bbfc91eb8"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>unpolish</b> (<a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_tab_widget_1_1_config.html">TabWidget::Config</a> &amp;config)</td></tr>
-<tr class="separator:a7667e142e28cc068ea50391bbfc91eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492297f2e45aef9faaa066a35a3a6007"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a492297f2e45aef9faaa066a35a3a6007"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>closeButtonSize</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOption *option, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_tab_widget_1_1_config.html">TabWidget::Config</a> &amp;config)</td></tr>
-<tr class="separator:a492297f2e45aef9faaa066a35a3a6007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55c057dec866e1f7298bc325b4958c37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55c057dec866e1f7298bc325b4958c37"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawTabBarTabLabel</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, const QStyleOption *option, QPainter *painter, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_tab_widget_1_1_config.html">TabWidget::Config</a> &amp;config)</td></tr>
-<tr class="separator:a55c057dec866e1f7298bc325b4958c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a410c3e49d2f71d68cff67ea6fc9872a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a410c3e49d2f71d68cff67ea6fc9872a5"></a>
-static QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeFromContents</b> (const <a class="el" href="class_az_qt_components_1_1_style.html">Style</a> *style, QStyle::ContentsType type, const QStyleOption *option, const QSize &amp;contentsSize, const QWidget *widget, const <a class="el" href="struct_az_qt_components_1_1_tab_widget_1_1_config.html">TabWidget::Config</a> &amp;config)</td></tr>
-<tr class="separator:a410c3e49d2f71d68cff67ea6fc9872a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae1d677150588e266d943ce806397666c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1d677150588e266d943ce806397666c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_handleOverflow</b> = true</td></tr>
-<tr class="separator:ae1d677150588e266d943ce806397666c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d415d7150fb27ec89ca2c303660b2c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d415d7150fb27ec89ca2c303660b2c1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_useMaxWidth</b> = false</td></tr>
-<tr class="separator:a1d415d7150fb27ec89ca2c303660b2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae162e734f7c3f022adbdab2dc74f1c82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae162e734f7c3f022adbdab2dc74f1c82"></a>
-Overflow&#160;</td><td class="memItemRight" valign="bottom"><b>m_overflowing</b> = OverflowUnchecked</td></tr>
-<tr class="separator:ae162e734f7c3f022adbdab2dc74f1c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a732ad5fd2514f9caca34b32e62b14aea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a732ad5fd2514f9caca34b32e62b14aea"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_hoveredTab</b> = -1</td></tr>
-<tr class="separator:a732ad5fd2514f9caca34b32e62b14aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a298e461f649a5f8e749fbcbaa4bca855"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a298e461f649a5f8e749fbcbaa4bca855"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_movingTab</b> = false</td></tr>
-<tr class="separator:a298e461f649a5f8e749fbcbaa4bca855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38aa3fc9734dd3627995c89a9fdee080"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38aa3fc9734dd3627995c89a9fdee080"></a>
-QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastMousePress</b></td></tr>
-<tr class="separator:a38aa3fc9734dd3627995c89a9fdee080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b6f36042bf807ef41bad10eefb7a9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8b6f36042bf807ef41bad10eefb7a9f"></a>
-QCursor&#160;</td><td class="memItemRight" valign="bottom"><b>m_dragCursor</b></td></tr>
-<tr class="separator:ad8b6f36042bf807ef41bad10eefb7a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a909ece38c475328658824e5b4ce07190"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a909ece38c475328658824e5b4ce07190"></a>
-QCursor&#160;</td><td class="memItemRight" valign="bottom"><b>m_hoverCursor</b></td></tr>
-<tr class="separator:a909ece38c475328658824e5b4ce07190"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:acf788547283b20e9c18be19919f98295"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf788547283b20e9c18be19919f98295"></a>
@@ -214,7 +142,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TabWidget</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:02 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

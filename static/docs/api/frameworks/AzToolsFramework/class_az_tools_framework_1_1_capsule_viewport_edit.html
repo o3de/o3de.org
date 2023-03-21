@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_capsule_viewport_edit-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::CapsuleViewportEdit Class Reference</div>  </div>
@@ -130,75 +128,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallSetTranslation
 <tr class="memitem:a66a6b82329e14f789e0d50fad1107cc9 inherit pub_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66a6b82329e14f789e0d50fad1107cc9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallEndEditing</b> (AZStd::function&lt; void()&gt; endEditing)</td></tr>
 <tr class="separator:a66a6b82329e14f789e0d50fad1107cc9 inherit pub_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a47ce2a15e3793bb7c7f8d868e582df27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47ce2a15e3793bb7c7f8d868e582df27"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetCapsuleRadius</b> () const </td></tr>
-<tr class="separator:a47ce2a15e3793bb7c7f8d868e582df27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb31ce14e8bab3516c5be897d5fb9ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fb31ce14e8bab3516c5be897d5fb9ce"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetCapsuleHeight</b> () const </td></tr>
-<tr class="separator:a7fb31ce14e8bab3516c5be897d5fb9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dfb87c0ceaaa8465f28a71ebc05c3af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dfb87c0ceaaa8465f28a71ebc05c3af"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCapsuleRadius</b> (float radius)</td></tr>
-<tr class="separator:a5dfb87c0ceaaa8465f28a71ebc05c3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d7a095f87bb39065f67d161182c142"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47d7a095f87bb39065f67d161182c142"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCapsuleHeight</b> (float height)</td></tr>
-<tr class="separator:a47d7a095f87bb39065f67d161182c142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9efd59c80816135eca0c160bdb17110"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9efd59c80816135eca0c160bdb17110"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupRadiusManipulator</b> (const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ManipulatorManagerId</a> manipulatorManagerId, const AZ::Transform &amp;worldTransform, const AZ::Transform &amp;localTransform, const AZ::Vector3 &amp;nonUniformScale)</td></tr>
-<tr class="separator:af9efd59c80816135eca0c160bdb17110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2aa24aab2ce6c8164dd8b2a5b4c5aaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2aa24aab2ce6c8164dd8b2a5b4c5aaa"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_linear_manipulator.html">LinearManipulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SetupHeightManipulator</b> (const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ManipulatorManagerId</a> manipulatorManagerId, const AZ::Transform &amp;worldTransform, const AZ::Transform &amp;localTransform, const AZ::Vector3 &amp;nonUniformScale, float axisDirection)</td></tr>
-<tr class="separator:af2aa24aab2ce6c8164dd8b2a5b4c5aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d188effd8bd3731e4a259a58ded690"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40d188effd8bd3731e4a259a58ded690"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRadiusManipulatorMoved</b> (const <a class="el" href="struct_az_tools_framework_1_1_linear_manipulator_1_1_action.html">LinearManipulator::Action</a> &amp;action)</td></tr>
-<tr class="separator:a40d188effd8bd3731e4a259a58ded690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46f5f1c6d40be2397ed3dafb2041116a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46f5f1c6d40be2397ed3dafb2041116a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHeightManipulatorMoved</b> (const <a class="el" href="struct_az_tools_framework_1_1_linear_manipulator_1_1_action.html">LinearManipulator::Action</a> &amp;action)</td></tr>
-<tr class="separator:a46f5f1c6d40be2397ed3dafb2041116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac449ae76b1b41f88ca765775bf95b507"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac449ae76b1b41f88ca765775bf95b507"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustRadiusManipulator</b> (const float capsuleHeight)</td></tr>
-<tr class="separator:ac449ae76b1b41f88ca765775bf95b507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c62c3a27d499fdbf12674b8aa24c29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83c62c3a27d499fdbf12674b8aa24c29"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AdjustHeightManipulators</b> (const float capsuleRadius)</td></tr>
-<tr class="separator:a83c62c3a27d499fdbf12674b8aa24c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae1cd4161afea82fa1d0323175e555bc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1cd4161afea82fa1d0323175e555bc4"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_linear_manipulator.html">LinearManipulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_radiusManipulator</b></td></tr>
-<tr class="separator:ae1cd4161afea82fa1d0323175e555bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed9044a5513111ef69d0afee9aa86ac0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed9044a5513111ef69d0afee9aa86ac0"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_linear_manipulator.html">LinearManipulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_topManipulator</b></td></tr>
-<tr class="separator:aed9044a5513111ef69d0afee9aa86ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a801c1c2b079819bc4d7619cb7686bb09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a801c1c2b079819bc4d7619cb7686bb09"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_linear_manipulator.html">LinearManipulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_bottomManipulator</b></td></tr>
-<tr class="separator:a801c1c2b079819bc4d7619cb7686bb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a987b59be99b73e6ae35da952c20b98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a987b59be99b73e6ae35da952c20b98"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_capsule_viewport_edit.html#a7a987b59be99b73e6ae35da952c20b98">m_allowAsymmetricalEditing</a> = false</td></tr>
-<tr class="memdesc:a7a987b59be99b73e6ae35da952c20b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether moving the ends of the capsule independently is allowed. <br/></td></tr>
-<tr class="separator:a7a987b59be99b73e6ae35da952c20b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e59394353f52a7f2ec262821cd0c5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79e59394353f52a7f2ec262821cd0c5f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_capsule_viewport_edit.html#a79e59394353f52a7f2ec262821cd0c5f">m_ensureHeightExceedsTwiceRadius</a> = true</td></tr>
-<tr class="memdesc:a79e59394353f52a7f2ec262821cd0c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to force height to exceed twice the radius when editing. <br/></td></tr>
-<tr class="separator:a79e59394353f52a7f2ec262821cd0c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af81bb1c6bc4ad93e1002687ea7ae562e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af81bb1c6bc4ad93e1002687ea7ae562e"></a>
-AZStd::function&lt; float()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getCapsuleRadius</b></td></tr>
-<tr class="separator:af81bb1c6bc4ad93e1002687ea7ae562e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa89f0bb088c95172efd347c38d24fb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa89f0bb088c95172efd347c38d24fb4"></a>
-AZStd::function&lt; float()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getCapsuleHeight</b></td></tr>
-<tr class="separator:aaa89f0bb088c95172efd347c38d24fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce353a27f0fac06416aeca4c009b5e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ce353a27f0fac06416aeca4c009b5e1"></a>
-AZStd::function&lt; void(float)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_setCapsuleRadius</b></td></tr>
-<tr class="separator:a7ce353a27f0fac06416aeca4c009b5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc7ea1615f882f097f55e0a5ad759a41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc7ea1615f882f097f55e0a5ad759a41"></a>
-AZStd::function&lt; void(float)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_setCapsuleHeight</b></td></tr>
-<tr class="separator:acc7ea1615f882f097f55e0a5ad759a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -327,7 +256,7 @@ AZStd::unordered_set<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

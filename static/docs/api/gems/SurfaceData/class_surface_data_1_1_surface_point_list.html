@@ -50,6 +50,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_surface_data_1_1_surface_point_list-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SurfaceData::SurfacePointList Class Reference</div>  </div>
@@ -100,6 +102,60 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a2036c188da013aebb1b71642f5e1bf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a2f1e55eb4637f469ffd9d6b292964"><td class="memItemLeft" align="right" valign="top">AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_surface_data_1_1_surface_point_list.html#ac1a2f1e55eb4637f469ffd9d6b292964">GetSurfacePointAabb</a> () const </td></tr>
 <tr class="separator:ac1a2f1e55eb4637f469ffd9d6b292964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a240a684bf280aa1cf44ee480ddc40a38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a240a684bf280aa1cf44ee480ddc40a38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FilterPoints</b> (AZStd::span&lt; const <a class="el" href="class_surface_data_1_1_surface_tag.html">SurfaceTag</a> &gt; desiredTags)</td></tr>
+<tr class="separator:a240a684bf280aa1cf44ee480ddc40a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b5d767bb29ec4f0f83b846ac3210cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17b5d767bb29ec4f0f83b846ac3210cc"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetInPositionIndexFromPosition</b> (const AZ::Vector3 &amp;inPosition) const </td></tr>
+<tr class="separator:a17b5d767bb29ec4f0f83b846ac3210cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbbb375c511ebdb47e4ad3d735a3464"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cbbb375c511ebdb47e4ad3d735a3464"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePointStartIndexFromInPositionIndex</b> (size_t inPositionIndex) const </td></tr>
+<tr class="separator:a3cbbb375c511ebdb47e4ad3d735a3464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a19431aada7cd4ab6f4bd297d5ac790c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19431aada7cd4ab6f4bd297d5ac790c1"></a>
+AZStd::span&lt; const <a class="el" href="class_surface_data_1_1_surface_tag.html">SurfaceTag</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterTags</b></td></tr>
+<tr class="separator:a19431aada7cd4ab6f4bd297d5ac790c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31803f21dac2f8a541293b10702ad38d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31803f21dac2f8a541293b10702ad38d"></a>
+AZStd::span&lt; const AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_inputPositions</b></td></tr>
+<tr class="separator:a31803f21dac2f8a541293b10702ad38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55f6ff045531f3f6a9982df23ecc9f8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55f6ff045531f3f6a9982df23ecc9f8f"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_inputPositionSize</b> = 0</td></tr>
+<tr class="separator:a55f6ff045531f3f6a9982df23ecc9f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505282eafafc670fd4b6131b82902953"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a505282eafafc670fd4b6131b82902953"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastInputPositionIndex</b> = 0</td></tr>
+<tr class="separator:a505282eafafc670fd4b6131b82902953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360fec9083667d5f6bc5b7f7f2c61c6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a360fec9083667d5f6bc5b7f7f2c61c6a"></a>
+AZStd::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_numSurfacePointsPerInput</b></td></tr>
+<tr class="separator:a360fec9083667d5f6bc5b7f7f2c61c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8192f5c65b878bccfaacaf6d5311dd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8192f5c65b878bccfaacaf6d5311dd8"></a>
+AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><b>m_surfacePointBounds</b> = AZ::Aabb::CreateNull()</td></tr>
+<tr class="separator:ac8192f5c65b878bccfaacaf6d5311dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7821604d9fc9461c6e1f5d0e76318e60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7821604d9fc9461c6e1f5d0e76318e60"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxSurfacePointsPerInput</b> = 0</td></tr>
+<tr class="separator:a7821604d9fc9461c6e1f5d0e76318e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c0c3810ce63eb5820f258cd3ecc41c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21c0c3810ce63eb5820f258cd3ecc41c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_listIsBeingConstructed</b> = false</td></tr>
+<tr class="separator:a21c0c3810ce63eb5820f258cd3ecc41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15665f09fa6636c71ca609609d0196d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15665f09fa6636c71ca609609d0196d7"></a>
+AZStd::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sortedSurfacePointIndices</b></td></tr>
+<tr class="separator:a15665f09fa6636c71ca609609d0196d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118db9750f6c1476b0284dc77279cd04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a118db9750f6c1476b0284dc77279cd04"></a>
+AZStd::vector&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_surfacePositionList</b></td></tr>
+<tr class="separator:a118db9750f6c1476b0284dc77279cd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c0678a124eac930308b9012e2babc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5c0678a124eac930308b9012e2babc2"></a>
+AZStd::vector&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_surfaceNormalList</b></td></tr>
+<tr class="separator:ac5c0678a124eac930308b9012e2babc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d13d041d8b4f30e0eb9cf84c7408bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94d13d041d8b4f30e0eb9cf84c7408bd"></a>
+AZStd::vector&lt; <a class="el" href="class_surface_data_1_1_surface_tag_weights.html">SurfaceTagWeights</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_surfaceWeightsList</b></td></tr>
+<tr class="separator:a94d13d041d8b4f30e0eb9cf84c7408bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8024a48b693061451e7ee2c71f6c75f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8024a48b693061451e7ee2c71f6c75f"></a>
+AZStd::vector&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_surfaceCreatorIdList</b></td></tr>
+<tr class="separator:aa8024a48b693061451e7ee2c71f6c75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> stores a collection of surface point data, which consists of positions, normals, and surface tag weights. This class is specifically designed to be used in the following ways.</p>
@@ -496,7 +552,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:47 for Open 3D Engine SurfaceData Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:28 for Open 3D Engine SurfaceData Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

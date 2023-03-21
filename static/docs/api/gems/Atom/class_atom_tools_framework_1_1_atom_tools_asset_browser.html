@@ -52,6 +52,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_atom_tools_framework_1_1_atom_tools_asset_browser-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AtomToolsFramework::AtomToolsAssetBrowser Class Reference</div>  </div>
@@ -82,6 +84,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectEntries</b> (co
 <tr class="memitem:a5d40c95e5ea1fc5e777b804470d45626"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d40c95e5ea1fc5e777b804470d45626"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenSelectedEntries</b> ()</td></tr>
 <tr class="separator:a5d40c95e5ea1fc5e777b804470d45626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a37d54cceec64ec14e8e833fc212a2a84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37d54cceec64ec14e8e833fc212a2a84"></a>
+AzToolsFramework::AssetBrowser::FilterConstType&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFilter</b> () const </td></tr>
+<tr class="separator:a37d54cceec64ec14e8e833fc212a2a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ecc678d4bae7e0fd0f9ccd5f175126d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ecc678d4bae7e0fd0f9ccd5f175126d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFilter</b> ()</td></tr>
+<tr class="separator:a5ecc678d4bae7e0fd0f9ccd5f175126d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f7bf24013922fad6daffb17a7f3fc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51f7bf24013922fad6daffb17a7f3fc1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePreview</b> ()</td></tr>
+<tr class="separator:a51f7bf24013922fad6daffb17a7f3fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ed8e58f5baf9443ef7167426ada8c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8ed8e58f5baf9443ef7167426ada8c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TogglePreview</b> ()</td></tr>
+<tr class="separator:ac8ed8e58f5baf9443ef7167426ada8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a8df43f8ef38d515acc9838252d106"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2a8df43f8ef38d515acc9838252d106"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () override</td></tr>
+<tr class="separator:ac2a8df43f8ef38d515acc9838252d106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a4595ef9df08dab42629e219673569d71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4595ef9df08dab42629e219673569d71"></a>
+QScopedPointer<br class="typebreak"/>
+&lt; Ui::AtomToolsAssetBrowser &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ui</b></td></tr>
+<tr class="separator:a4595ef9df08dab42629e219673569d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f22ef396a837228de43850d527a33a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f22ef396a837228de43850d527a33a"></a>
+AzToolsFramework::AssetBrowser::AssetBrowserFilterModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterModel</b> = nullptr</td></tr>
+<tr class="separator:a72f22ef396a837228de43850d527a33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eeceeb36c9da79258434d8bf3d14f65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0eeceeb36c9da79258434d8bf3d14f65"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_asset_browser.html#a0eeceeb36c9da79258434d8bf3d14f65">m_pathToSelect</a></td></tr>
+<tr class="memdesc:a0eeceeb36c9da79258434d8bf3d14f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">If an asset is opened with this path it will automatically be selected. <br/></td></tr>
+<tr class="separator:a0eeceeb36c9da79258434d8bf3d14f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045b608c9dfeb11e50becfb5fa39fd2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a045b608c9dfeb11e50becfb5fa39fd2a"></a>
+QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>m_browserState</b></td></tr>
+<tr class="separator:a045b608c9dfeb11e50becfb5fa39fd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022db8fdc3b2eba620204fa5be73ed1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a022db8fdc3b2eba620204fa5be73ed1d"></a>
+AZStd::function&lt; void(const <br class="typebreak"/>
+AZStd::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_openHandler</b></td></tr>
+<tr class="separator:a022db8fdc3b2eba620204fa5be73ed1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extends the standard asset browser with custom filters and multiselect behavior. </p>
@@ -91,7 +132,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenSelectedEntries</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

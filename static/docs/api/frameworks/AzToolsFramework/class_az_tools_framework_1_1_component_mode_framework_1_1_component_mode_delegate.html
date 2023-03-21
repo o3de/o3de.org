@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ComponentModeFramework::ComponentModeDelegate Class Reference</div>  </div>
@@ -87,65 +85,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#aacfb40ff70619e31d8f80f6331aba57f">IsConnected</a> () const </td></tr>
 <tr class="memdesc:aacfb40ff70619e31d8f80f6331aba57f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the EntityComponentIdPair connected to the <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html">ComponentModeDelegate</a>. <br/></td></tr>
 <tr class="separator:aacfb40ff70619e31d8f80f6331aba57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a2af1f9f88473db0a8bc8e055d6d40df9"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2af1f9f88473db0a8bc8e055d6d40df9"></a>
-template&lt;typename EditorComponentType , typename EditorComponentModeType , typename... Params&gt; </td></tr>
-<tr class="memitem:a2af1f9f88473db0a8bc8e055d6d40df9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#a2af1f9f88473db0a8bc8e055d6d40df9">IndividualComponentMode</a> (Params &amp;&amp;...params)</td></tr>
-<tr class="memdesc:a2af1f9f88473db0a8bc8e055d6d40df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for the common case of creating a single <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> for a Component. <br/></td></tr>
-<tr class="separator:a2af1f9f88473db0a8bc8e055d6d40df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38e5e318d757de163e06ee547f9b33a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38e5e318d757de163e06ee547f9b33a1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddComponentMode</b> ()</td></tr>
-<tr class="separator:a38e5e318d757de163e06ee547f9b33a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a4a5e333cec739ce151379c5d96110"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27a4a5e333cec739ce151379c5d96110"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSelected</b> () override</td></tr>
-<tr class="separator:a27a4a5e333cec739ce151379c5d96110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a075d39fb984816531b278beb4bc7f58f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a075d39fb984816531b278beb4bc7f58f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDeselected</b> () override</td></tr>
-<tr class="separator:a075d39fb984816531b278beb4bc7f58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa02c9b42d1641f26a4565aee24654f7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa02c9b42d1641f26a4565aee24654f7b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>DetectEnterComponentModeInteraction</b> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction_event.html">ViewportInteraction::MouseInteractionEvent</a> &amp;mouseInteraction) override</td></tr>
-<tr class="separator:aa02c9b42d1641f26a4565aee24654f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95be9cfd5251c1ee9c23676d46b0febe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95be9cfd5251c1ee9c23676d46b0febe"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>DetectLeaveComponentModeInteraction</b> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction_event.html">ViewportInteraction::MouseInteractionEvent</a> &amp;mouseInteraction) override</td></tr>
-<tr class="separator:a95be9cfd5251c1ee9c23676d46b0febe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cea18efbc28a2d412e031bfa86493d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cea18efbc28a2d412e031bfa86493d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddComponentModeOfType</b> (AZ::Uuid componentType) override</td></tr>
-<tr class="separator:a0cea18efbc28a2d412e031bfa86493d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0b40278bfe669f7ab75e24c43471363"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0b40278bfe669f7ab75e24c43471363"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityVisibilityChanged</b> (bool visibility) override</td></tr>
-<tr class="separator:ac0b40278bfe669f7ab75e24c43471363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4daedc83cceb96f7a99f31dc4fc97b57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4daedc83cceb96f7a99f31dc4fc97b57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityLockChanged</b> (bool locked) override</td></tr>
-<tr class="separator:a4daedc83cceb96f7a99f31dc4fc97b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace22d7e35217202b3d906c463a212df8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#ace22d7e35217202b3d906c463a212df8">ComponentModeButtonInactive</a> () const </td></tr>
-<tr class="separator:ace22d7e35217202b3d906c463a212df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc4a9defd365df7b38a689ab18607c78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc4a9defd365df7b38a689ab18607c78"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#abc4a9defd365df7b38a689ab18607c78">OnComponentModeEnterButtonPressed</a> ()</td></tr>
-<tr class="memdesc:abc4a9defd365df7b38a689ab18607c78"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> Button. <br/></td></tr>
-<tr class="separator:abc4a9defd365df7b38a689ab18607c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59257152506ddd5705ed9e5ba1ab0a3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59257152506ddd5705ed9e5ba1ab0a3d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnComponentModeLeaveButtonPressed</b> ()</td></tr>
-<tr class="separator:a59257152506ddd5705ed9e5ba1ab0a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a82be5f2c5cc0634c812131d63a2385ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82be5f2c5cc0634c812131d63a2385ca"></a>
-AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#a82be5f2c5cc0634c812131d63a2385ca">m_componentType</a></td></tr>
-<tr class="memdesc:a82be5f2c5cc0634c812131d63a2385ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of component entering <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a>. <br/></td></tr>
-<tr class="separator:a82be5f2c5cc0634c812131d63a2385ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9845e8b60c40d43d3f1906eef493872"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9845e8b60c40d43d3f1906eef493872"></a>
-AZ::EntityComponentIdPair&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#af9845e8b60c40d43d3f1906eef493872">m_entityComponentIdPair</a></td></tr>
-<tr class="memdesc:af9845e8b60c40d43d3f1906eef493872"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Entity and Component Id this <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> is bound to. <br/></td></tr>
-<tr class="separator:af9845e8b60c40d43d3f1906eef493872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce8eae99e1efd014f16575aab0d07e1"><td class="memItemLeft" align="right" valign="top">EditorComponentSelectionRequestsBus::Handler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#a1ce8eae99e1efd014f16575aab0d07e1">m_handler</a> = nullptr</td></tr>
-<tr class="separator:a1ce8eae99e1efd014f16575aab0d07e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa634352b6b8eac977a2a7d2e68e68e4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa634352b6b8eac977a2a7d2e68e68e4c"></a>
-AZStd::function&lt; void(const <br class="typebreak"/>
-AZ::EntityComponentIdPair &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html#aa634352b6b8eac977a2a7d2e68e68e4c">m_addComponentMode</a></td></tr>
-<tr class="memdesc:aa634352b6b8eac977a2a7d2e68e68e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to add <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> for this component. <br/></td></tr>
-<tr class="separator:aa634352b6b8eac977a2a7d2e68e68e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper to provide <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> button in the Entity Inspector and double click handling in the viewport for entering/exiting <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a>. </p>
@@ -163,30 +102,6 @@ AZ::EntityComponentIdPair &amp;)&gt;&#160;</td><td class="memItemRight" valign="
       </table>
 </div><div class="memdoc">
 <p>Has this specific <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html">ComponentModeDelegate</a> (for a specific Entity and Component) been added to <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a>. </p>
-
-</div>
-</div>
-<a class="anchor" id="ace22d7e35217202b3d906c463a212df8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzToolsFramework::ComponentModeFramework::ComponentModeDelegate::ComponentModeButtonInactive </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Is the <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a> button active/operational. It will not be if the entity with this component is either locked or hidden. It will also not be active if the Entity is pinned but not selected. </p>
 
 </div>
 </div>
@@ -270,35 +185,13 @@ template&lt;typename EditorComponentType , typename EditorComponentModeType , ty
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1ce8eae99e1efd014f16575aab0d07e1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">EditorComponentSelectionRequestsBus::Handler* AzToolsFramework::ComponentModeFramework::ComponentModeDelegate::m_handler = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Selection handler (used for double clicking on a component to enter <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode.html">ComponentMode</a>). </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ComponentMode/ComponentModeDelegate.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

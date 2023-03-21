@@ -55,8 +55,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_task_executor-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -91,36 +89,6 @@ static <a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> &a
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInstance</b> (<a class="el" href="class_a_z_1_1_task_executor.html">TaskExecutor</a> *executor)</td></tr>
 <tr class="separator:ada585f9f4a7a61eb57dc41dfd6f10db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af461fe65ffc65636dad758b321a82f13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af461fe65ffc65636dad758b321a82f13"></a>
-Internal::TaskWorker *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTaskWorker</b> ()</td></tr>
-<tr class="separator:af461fe65ffc65636dad758b321a82f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9917112aed63ba49e14364505e8da265"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9917112aed63ba49e14364505e8da265"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseGraph</b> ()</td></tr>
-<tr class="separator:a9917112aed63ba49e14364505e8da265"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1332f38dd1fe20f3a6f3f0d35e6d72b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1332f38dd1fe20f3a6f3f0d35e6d72b1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReactivateTaskWorker</b> ()</td></tr>
-<tr class="separator:a1332f38dd1fe20f3a6f3f0d35e6d72b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a230c4e10a137fb8c8ee13063bf24641a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a230c4e10a137fb8c8ee13063bf24641a"></a>
-Internal::TaskWorker *&#160;</td><td class="memItemRight" valign="bottom"><b>m_workers</b></td></tr>
-<tr class="separator:a230c4e10a137fb8c8ee13063bf24641a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0af19f50b776930cabc13e6c973230b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0af19f50b776930cabc13e6c973230b"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadCount</b> = 0</td></tr>
-<tr class="separator:ae0af19f50b776930cabc13e6c973230b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b708129355ea2f0eea446c6a34db8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2b708129355ea2f0eea446c6a34db8d"></a>
-AZStd::atomic&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastSubmission</b></td></tr>
-<tr class="separator:ae2b708129355ea2f0eea446c6a34db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a644dd609a696500d41e7ee8114210330"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a644dd609a696500d41e7ee8114210330"></a>
-AZStd::atomic&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_graphsRemaining</b></td></tr>
-<tr class="separator:a644dd609a696500d41e7ee8114210330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b949994cf9311f6c3b3da3599ba47a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b949994cf9311f6c3b3da3599ba47a6"></a>
-Internal::CompiledTaskGraphTracker&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventTracker</b></td></tr>
-<tr class="separator:a5b949994cf9311f6c3b3da3599ba47a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:abe5e473f8a0cd841597340ca829ba5f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe5e473f8a0cd841597340ca829ba5f7"></a>
@@ -133,7 +101,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TaskGraphEvent</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

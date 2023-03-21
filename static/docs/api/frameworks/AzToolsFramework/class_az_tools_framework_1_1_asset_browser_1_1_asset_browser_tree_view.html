@@ -57,9 +57,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-slots">Protected Slots</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-slots">Private Slots</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetBrowserTreeView Class Reference</div>  </div>
@@ -183,54 +180,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a27c459747820e9df4046e6592cde70c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27c459747820e9df4046e6592cde70c4"></a>
 QModelIndexList&#160;</td><td class="memItemRight" valign="bottom"><b>selectedIndexes</b> () const override</td></tr>
 <tr class="separator:a27c459747820e9df4046e6592cde70c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
-Private Slots</h2></td></tr>
-<tr class="memitem:a2cfa87ab413c3c6819ad03a03ca4fb99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cfa87ab413c3c6819ad03a03ca4fb99"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view.html#a2cfa87ab413c3c6819ad03a03ca4fb99">OnUpdateSCThumbnailsList</a> ()</td></tr>
-<tr class="memdesc:a2cfa87ab413c3c6819ad03a03ca4fb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all visible source entries and place them in a queue to update their source control status. <br/></td></tr>
-<tr class="separator:a2cfa87ab413c3c6819ad03a03ca4fb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad6644c38815e381977125444531fb025"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6644c38815e381977125444531fb025"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SelectProduct</b> (const QModelIndex &amp;idxParent, AZ::Data::AssetId assetID)</td></tr>
-<tr class="separator:ad6644c38815e381977125444531fb025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ec8f02d65d466cd2b17f521c62cdfcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ec8f02d65d466cd2b17f521c62cdfcd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SelectEntry</b> (const QModelIndex &amp;idxParent, const AZStd::vector&lt; AZStd::string &gt; &amp;entryPathTokens, const uint32_t entryPathIndex=0, bool useDisplayName=false)</td></tr>
-<tr class="separator:a0ec8f02d65d466cd2b17f521c62cdfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716df1d2f4bc47320f7c37a65ee456b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a716df1d2f4bc47320f7c37a65ee456b4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view.html#a716df1d2f4bc47320f7c37a65ee456b4">UpdateSCThumbnails</a> ()</td></tr>
-<tr class="memdesc:a716df1d2f4bc47320f7c37a65ee456b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grab one entry from the source thumbnail list and update it. <br/></td></tr>
-<tr class="separator:a716df1d2f4bc47320f7c37a65ee456b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdc2d4e01b3aee1d14290a7656c13efa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdc2d4e01b3aee1d14290a7656c13efa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_tree_view.html#abdc2d4e01b3aee1d14290a7656c13efa">AddSourceFileCreators</a> (const char *fullSourceFolderName, const AZ::Uuid &amp;sourceUUID, AzToolsFramework::AssetBrowser::SourceFileCreatorList &amp;creators) override</td></tr>
-<tr class="memdesc:abdc2d4e01b3aee1d14290a7656c13efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">AssetBrowserInteractionNotificationBus::Handler overrides... <br/></td></tr>
-<tr class="separator:abdc2d4e01b3aee1d14290a7656c13efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae450658b56b735f9977687b3d330af04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae450658b56b735f9977687b3d330af04"></a>
-QPointer&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_model.html">AssetBrowserModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetBrowserModel</b></td></tr>
-<tr class="separator:ae450658b56b735f9977687b3d330af04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3f62a074e56ce8a731031cf14f503d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada3f62a074e56ce8a731031cf14f503d"></a>
-QPointer&lt; AssetBrowserFilterModel &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetBrowserSortFilterProxyModel</b></td></tr>
-<tr class="separator:ada3f62a074e56ce8a731031cf14f503d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1099f6714336e99527ca076dbdaf28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f1099f6714336e99527ca076dbdaf28"></a>
-<a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_entry_delegate.html">EntryDelegate</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_delegate</b> = nullptr</td></tr>
-<tr class="separator:a0f1099f6714336e99527ca076dbdaf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1984448c4fa9b9a89da5895a2b97c3c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1984448c4fa9b9a89da5895a2b97c3c4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_expandToEntriesByDefault</b> = false</td></tr>
-<tr class="separator:a1984448c4fa9b9a89da5895a2b97c3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c55ecc97db20fc09e287bdcb9c65bee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c55ecc97db20fc09e287bdcb9c65bee"></a>
-QTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_scTimer</b> = nullptr</td></tr>
-<tr class="separator:a4c55ecc97db20fc09e287bdcb9c65bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c9ed1dd8b7aa06a933570ef99c6a9b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c9ed1dd8b7aa06a933570ef99c6a9b8"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_scUpdateInterval</b> = 100</td></tr>
-<tr class="separator:a4c9ed1dd8b7aa06a933570ef99c6a9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b860529ea894bf87a58fd3a09224bc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b860529ea894bf87a58fd3a09224bc0"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
-<tr class="separator:a0b860529ea894bf87a58fd3a09224bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aa0fb488e74c117112cc3e4fa12b0c615"></a>
@@ -256,7 +205,7 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

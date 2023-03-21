@@ -53,9 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_octree_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::OctreeNode Class Reference</div>  </div>
@@ -117,46 +114,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Enumerate</b> (const 
 <tr class="memitem:a21dcc7b7380a505b56c4ed75d0de071d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21dcc7b7380a505b56c4ed75d0de071d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Enumerate</b> (const AZ::Frustum &amp;frustum, const IVisibilityScene::EnumerateCallback &amp;callback) const </td></tr>
 <tr class="separator:a21dcc7b7380a505b56c4ed75d0de071d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aa6d7d26462be4af3a4de810a0874a670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6d7d26462be4af3a4de810a0874a670"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TryMerge</b> (<a class="el" href="class_az_framework_1_1_octree_scene.html">OctreeScene</a> &amp;octreeScene)</td></tr>
-<tr class="separator:aa6d7d26462be4af3a4de810a0874a670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a180fa699ba00ae1f7aaf0743c7bc4c93"><td class="memTemplParams" colspan="2"><a class="anchor" id="a180fa699ba00ae1f7aaf0743c7bc4c93"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a180fa699ba00ae1f7aaf0743c7bc4c93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EnumerateHelper</b> (const T &amp;boundingVolume, const IVisibilityScene::EnumerateCallback &amp;callback) const </td></tr>
-<tr class="separator:a180fa699ba00ae1f7aaf0743c7bc4c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af40ee2455ab4774912bcf6b880cd1cd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af40ee2455ab4774912bcf6b880cd1cd8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Split</b> (<a class="el" href="class_az_framework_1_1_octree_scene.html">OctreeScene</a> &amp;octreeScene)</td></tr>
-<tr class="separator:af40ee2455ab4774912bcf6b880cd1cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb094c1230777349bf8e519377977655"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb094c1230777349bf8e519377977655"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Merge</b> (<a class="el" href="class_az_framework_1_1_octree_scene.html">OctreeScene</a> &amp;octreeScene)</td></tr>
-<tr class="separator:adb094c1230777349bf8e519377977655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a92092c802d8c6e8fa3df40dc3ef7b637"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92092c802d8c6e8fa3df40dc3ef7b637"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_childNodeIndex</b> = InvalidChildNodeIndex</td></tr>
-<tr class="separator:a92092c802d8c6e8fa3df40dc3ef7b637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dd020b63ceff2ad54f4d24957fbe4a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dd020b63ceff2ad54f4d24957fbe4a1"></a>
-AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><b>m_bounds</b></td></tr>
-<tr class="separator:a6dd020b63ceff2ad54f4d24957fbe4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9fd34531bc34be331ecf20f80ae1b41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9fd34531bc34be331ecf20f80ae1b41"></a>
-<a class="el" href="class_az_framework_1_1_octree_node.html">OctreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b> = nullptr</td></tr>
-<tr class="separator:ab9fd34531bc34be331ecf20f80ae1b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a939b179708c798671d6685b8d84737cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a939b179708c798671d6685b8d84737cc"></a>
-<a class="el" href="class_az_framework_1_1_octree_node.html">OctreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_children</b> = nullptr</td></tr>
-<tr class="separator:a939b179708c798671d6685b8d84737cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6fcfc536e72fe65df7782a80bc44823"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6fcfc536e72fe65df7782a80bc44823"></a>
-AZStd::vector&lt; <a class="el" href="struct_az_framework_1_1_visibility_entry.html">VisibilityEntry</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entries</b></td></tr>
-<tr class="separator:ab6fcfc536e72fe65df7782a80bc44823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:adaf00050ffdfce8576d6797b9dc9c85d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaf00050ffdfce8576d6797b9dc9c85d"></a>
-static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidChildNodeIndex</b> = 0xFFFFFFFF</td></tr>
-<tr class="separator:adaf00050ffdfce8576d6797b9dc9c85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An internal node within the tree. It contains all objects that are <em>fully contained</em> by the node, if an object spans multiple child nodes that object will be stored in the parent. </p>
@@ -248,7 +205,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

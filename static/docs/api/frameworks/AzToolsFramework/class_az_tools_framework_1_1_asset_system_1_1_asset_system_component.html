@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_system_1_1_asset_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetSystem::AssetSystemComponent Class Reference</div>  </div>
@@ -92,101 +90,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <tr class="memitem:aa306db91f3ab167a5df5f91fea03f981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa306db91f3ab167a5df5f91fea03f981"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;required)</td></tr>
 <tr class="separator:aa306db91f3ab167a5df5f91fea03f981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a87ce2a9be76b6a7659423d667d07c9e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87ce2a9be76b6a7659423d667d07c9e0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAbsoluteAssetDatabaseLocation</b> (AZStd::string &amp;result) override</td></tr>
-<tr class="separator:a87ce2a9be76b6a7659423d667d07c9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d7328968179b5f7aa5ae2cce00b210"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27d7328968179b5f7aa5ae2cce00b210"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelativeProductPathFromFullSourceOrProductPath</b> (const AZStd::string &amp;fullPath, AZStd::string &amp;outputPath) override</td></tr>
-<tr class="separator:a27d7328968179b5f7aa5ae2cce00b210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf490ba77234800254177e7db06345a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaf490ba77234800254177e7db06345a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateRelativeSourcePath</b> (const AZStd::string &amp;sourcePath, AZStd::string &amp;outputPath, AZStd::string &amp;watchFolder) override</td></tr>
-<tr class="separator:aeaf490ba77234800254177e7db06345a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640e301e07b564808f7ee9fe9c3258bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a640e301e07b564808f7ee9fe9c3258bd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullSourcePathFromRelativeProductPath</b> (const AZStd::string &amp;relPath, AZStd::string &amp;fullPath) override</td></tr>
-<tr class="separator:a640e301e07b564808f7ee9fe9c3258bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca79e84e2fe634655e4b2d120a92901e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca79e84e2fe634655e4b2d120a92901e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetInfoById</b> (const AZ::Data::AssetId &amp;assetId, const AZ::Data::AssetType &amp;assetType, const AZStd::string &amp;platformName, AZ::Data::AssetInfo &amp;assetInfo, AZStd::string &amp;rootFilePath) override</td></tr>
-<tr class="separator:aca79e84e2fe634655e4b2d120a92901e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a988acfab2f7487569e75719dbd75bd2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a988acfab2f7487569e75719dbd75bd2a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourceInfoBySourcePath</b> (const char *sourcePath, AZ::Data::AssetInfo &amp;assetInfo, AZStd::string &amp;watchFolder) override</td></tr>
-<tr class="separator:a988acfab2f7487569e75719dbd75bd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce096a558916841391aa346618d953d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ce096a558916841391aa346618d953d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourceInfoBySourceUUID</b> (const AZ::Uuid &amp;sourceUuid, AZ::Data::AssetInfo &amp;assetInfo, AZStd::string &amp;watchFolder) override</td></tr>
-<tr class="separator:a2ce096a558916841391aa346618d953d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae89636dd29320a00c753cd5c2a7ca011"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae89636dd29320a00c753cd5c2a7ca011"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetScanFolders</b> (AZStd::vector&lt; AZStd::string &gt; &amp;scanFolders) override</td></tr>
-<tr class="separator:ae89636dd29320a00c753cd5c2a7ca011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae469573d0cd96e6c61f1ceb35395c7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae469573d0cd96e6c61f1ceb35395c7c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetSafeFolders</b> (AZStd::vector&lt; AZStd::string &gt; &amp;assetSafeFolders) override</td></tr>
-<tr class="separator:aae469573d0cd96e6c61f1ceb35395c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e6fff800708f7cbd46898300ea43a0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e6fff800708f7cbd46898300ea43a0c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAssetPlatformEnabled</b> (const char *platform) override</td></tr>
-<tr class="separator:a1e6fff800708f7cbd46898300ea43a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13803831de09449947efaf94285c217"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad13803831de09449947efaf94285c217"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetPendingAssetsForPlatform</b> (const char *platform) override</td></tr>
-<tr class="separator:ad13803831de09449947efaf94285c217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac52ef6367b58d7c48e16cb9df6185aaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac52ef6367b58d7c48e16cb9df6185aaf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetsProducedBySourceUUID</b> (const AZ::Uuid &amp;sourceUuid, AZStd::vector&lt; AZ::Data::AssetInfo &gt; &amp;productsAssetInfo) override</td></tr>
-<tr class="separator:ac52ef6367b58d7c48e16cb9df6185aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73288a45c136f17bb0efb0d6f01e6c01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73288a45c136f17bb0efb0d6f01e6c01"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ClearFingerprintForAsset</b> (const AZStd::string &amp;sourcePath) override</td></tr>
-<tr class="separator:a73288a45c136f17bb0efb0d6f01e6c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad41c7f1e31cedf404e16e6903ef562e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad41c7f1e31cedf404e16e6903ef562e"></a>
-virtual AZ::Outcome<br class="typebreak"/>
-&lt; AssetSystem::JobInfoContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetJobsInfo</b> (const AZStd::string &amp;path, const bool escalateJobs) override</td></tr>
-<tr class="separator:aad41c7f1e31cedf404e16e6903ef562e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafb7bcb0e1e74dad22a1f8d87f6218d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafb7bcb0e1e74dad22a1f8d87f6218d3"></a>
-virtual AZ::Outcome<br class="typebreak"/>
-&lt; JobInfoContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetJobsInfoByAssetID</b> (const AZ::Data::AssetId &amp;assetId, const bool escalateJobs, bool requireFencing) override</td></tr>
-<tr class="separator:aafb7bcb0e1e74dad22a1f8d87f6218d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16f6f728e40b1c4768626da4560487d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac16f6f728e40b1c4768626da4560487d"></a>
-virtual AZ::Outcome<br class="typebreak"/>
-&lt; JobInfoContainer &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetJobsInfoByJobKey</b> (const AZStd::string &amp;jobKey, const bool escalateJobs) override</td></tr>
-<tr class="separator:ac16f6f728e40b1c4768626da4560487d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774feb5aaa65c3b8a3cb720c8c1344a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a774feb5aaa65c3b8a3cb720c8c1344a3"></a>
-virtual AZ::Outcome&lt; JobStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetJobsStatusByJobKey</b> (const AZStd::string &amp;jobKey, const bool escalateJobs) override</td></tr>
-<tr class="separator:a774feb5aaa65c3b8a3cb720c8c1344a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ab12f98c77bfa0382dd7e6968ebda2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70ab12f98c77bfa0382dd7e6968ebda2"></a>
-virtual AZ::Outcome<br class="typebreak"/>
-&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetJobLog</b> (AZ::u64 jobrunkey) override</td></tr>
-<tr class="separator:a70ab12f98c77bfa0382dd7e6968ebda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81cfd2b82f2383a6deffa6a1ac217939"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81cfd2b82f2383a6deffa6a1ac217939"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileChanged</b> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid sourceUUID) override</td></tr>
-<tr class="separator:a81cfd2b82f2383a6deffa6a1ac217939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6050e0f38f35d02f5e0a93e3df97bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf6050e0f38f35d02f5e0a93e3df97bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileRemoved</b> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid sourceUUID) override</td></tr>
-<tr class="separator:aaf6050e0f38f35d02f5e0a93e3df97bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b7c5faec8dbf33593d47b918f8a1f05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b7c5faec8dbf33593d47b918f8a1f05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileFailed</b> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid sourceUUID) override</td></tr>
-<tr class="separator:a8b7c5faec8dbf33593d47b918f8a1f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c875bea6586c44a5d9f84e0eceb852"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67c875bea6586c44a5d9f84e0eceb852"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSourceAssetType</b> (const AZ::Data::AssetType &amp;assetType, const char *assetFileFilter) override</td></tr>
-<tr class="separator:a67c875bea6586c44a5d9f84e0eceb852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a915e89791f6ba17eee13f7645e2fd6a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a915e89791f6ba17eee13f7645e2fd6a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterSourceAssetType</b> (const AZ::Data::AssetType &amp;assetType) override</td></tr>
-<tr class="separator:a915e89791f6ba17eee13f7645e2fd6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d45239f797bcd3cfd186a79ffaca2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1d45239f797bcd3cfd186a79ffaca2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () override</td></tr>
-<tr class="separator:af1d45239f797bcd3cfd186a79ffaca2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a26664997aa88576a130a1bb13d1bc477"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26664997aa88576a130a1bb13d1bc477"></a>
-AzFramework::SocketConnection::TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_cbHandle</b> = 0</td></tr>
-<tr class="separator:a26664997aa88576a130a1bb13d1bc477"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0eba6da7071c2b950bb4163bbc17618"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0eba6da7071c2b950bb4163bbc17618"></a>
-AzFramework::SocketConnection::TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_showAssetBrowserCBHandle</b> = 0</td></tr>
-<tr class="separator:ab0eba6da7071c2b950bb4163bbc17618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a2832b8eaaf7d3b8063e9a40808a4c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a2832b8eaaf7d3b8063e9a40808a4c7"></a>
-AzFramework::SocketConnection::TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_wantShowAssetBrowserCBHandle</b> = 0</td></tr>
-<tr class="separator:a5a2832b8eaaf7d3b8063e9a40808a4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae11a02b49670645388d0429fb28ee355"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae11a02b49670645388d0429fb28ee355"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; AZStd::string, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetSourceRelativePathToFullPathCache</b></td></tr>
-<tr class="separator:ae11a02b49670645388d0429fb28ee355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A tools level component for interacting with the asset processor</p>
@@ -197,7 +100,7 @@ AZStd::unordered_map<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

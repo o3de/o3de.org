@@ -55,9 +55,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1stack__allocator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::stack_allocator Class Reference</div>  </div>
@@ -107,60 +104,6 @@ AZ_FORCE_INLINE size_type&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a9eaaedf20251d1c178cd79185af40fbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9eaaedf20251d1c178cd79185af40fbf"></a>
 AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="separator:a9eaaedf20251d1c178cd79185af40fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a03a9cb248d5782f55e43b97bd873f6f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03a9cb248d5782f55e43b97bd873f6f1"></a>
-typedef <a class="el" href="class_a_z_std_1_1stack__allocator.html">stack_allocator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
-<tr class="separator:a03a9cb248d5782f55e43b97bd873f6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a92c2da2177743dfb2b026e83bff10234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92c2da2177743dfb2b026e83bff10234"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>operator new</b> (std::size_t size, const AZ::Internal::AllocatorDummy *)</td></tr>
-<tr class="separator:a92c2da2177743dfb2b026e83bff10234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cdc3ca303e8421d195f840c933f9037"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cdc3ca303e8421d195f840c933f9037"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator delete</b> (void *ptr, const AZ::Internal::AllocatorDummy *)</td></tr>
-<tr class="separator:a4cdc3ca303e8421d195f840c933f9037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796f92086d1c43271ad73d0e778384f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a796f92086d1c43271ad73d0e778384f4"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>operator new[]</b> (std::size_t size, const AZ::Internal::AllocatorDummy *)</td></tr>
-<tr class="separator:a796f92086d1c43271ad73d0e778384f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22eb1ef6c73c3665e0203406f9f11dae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22eb1ef6c73c3665e0203406f9f11dae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator delete[]</b> (void *ptr, const AZ::Internal::AllocatorDummy *)</td></tr>
-<tr class="separator:a22eb1ef6c73c3665e0203406f9f11dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8533bda577baa0211a1fa2c1e35f927d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8533bda577baa0211a1fa2c1e35f927d"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>operator new</b> (size_t)</td></tr>
-<tr class="separator:a8533bda577baa0211a1fa2c1e35f927d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362bb87c08c0b753b35f67d9a30d3761"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a362bb87c08c0b753b35f67d9a30d3761"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>operator new[]</b> (size_t)</td></tr>
-<tr class="separator:a362bb87c08c0b753b35f67d9a30d3761"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e9d4bfbf25f06467ce6cfde035cc69f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e9d4bfbf25f06467ce6cfde035cc69f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator delete</b> (void *)</td></tr>
-<tr class="separator:a1e9d4bfbf25f06467ce6cfde035cc69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15265422e84f77f1e69b51dfe7164eb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15265422e84f77f1e69b51dfe7164eb2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator delete[]</b> (void *)</td></tr>
-<tr class="separator:a15265422e84f77f1e69b51dfe7164eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6fea0fbe8b62a514d7db08e321cd49b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6fea0fbe8b62a514d7db08e321cd49b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>stack_allocator</b> (const <a class="el" href="class_a_z_std_1_1stack__allocator.html">this_type</a> &amp;rhs)</td></tr>
-<tr class="separator:af6fea0fbe8b62a514d7db08e321cd49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0627062e38c3b64aab7411a7d8100e15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0627062e38c3b64aab7411a7d8100e15"></a>
-<a class="el" href="class_a_z_std_1_1stack__allocator.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1stack__allocator.html">this_type</a> &amp;rhs)</td></tr>
-<tr class="separator:a0627062e38c3b64aab7411a7d8100e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2aeb7db69a9d2b3e3b2bb3908599eaaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aeb7db69a9d2b3e3b2bb3908599eaaa"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
-<tr class="separator:a2aeb7db69a9d2b3e3b2bb3908599eaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a84f7f8440c98481dd558973f801e70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a84f7f8440c98481dd558973f801e70"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
-<tr class="separator:a9a84f7f8440c98481dd558973f801e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72079128b2f2b8324447aee46414e67d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72079128b2f2b8324447aee46414e67d"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_freeData</b></td></tr>
-<tr class="separator:a72079128b2f2b8324447aee46414e67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace125c7cc97cca1818e2780cce3f0dbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace125c7cc97cca1818e2780cce3f0dbf"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b></td></tr>
-<tr class="separator:ace125c7cc97cca1818e2780cce3f0dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Allocator that allocates memory from the stack (which you provide) The memory chunk is grabbed on construction, you CAN'T new this object. The memory will be alive only while the object exist. DON'T USE this allocator unless you are SURE you know what you are doing, it's dangerous and tricky to manage. How to use: void MyFunction() { <a class="el" href="class_a_z_std_1_1stack__allocator.html">stack_allocator</a> myAllocator(AZ_ALLOCA(size),size,"Name"); // ... // NO reference to any memory after myAllocator goes out of scope. } </p>
@@ -170,7 +113,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b></td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:13 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:35 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

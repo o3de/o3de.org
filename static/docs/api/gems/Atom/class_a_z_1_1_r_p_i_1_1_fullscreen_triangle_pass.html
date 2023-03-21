@@ -53,6 +53,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_fullscreen_triangle_pass-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RPI::FullscreenTrianglePass Class Reference</div>  </div>
@@ -334,22 +336,341 @@ static Ptr<br class="typebreak"/>
 <tr class="memdesc:a45c29d7abf4f08dc865140ccd5f16a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_a_z_1_1_r_p_i_1_1_fullscreen_triangle_pass.html">FullscreenTrianglePass</a>. <br/></td></tr>
 <tr class="separator:a45c29d7abf4f08dc865140ccd5f16a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:abf703cfbe2a1c4d48348ef50cfb23094"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf703cfbe2a1c4d48348ef50cfb23094"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FullscreenTrianglePass</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html">PassDescriptor</a> &amp;descriptor)</td></tr>
+<tr class="separator:abf703cfbe2a1c4d48348ef50cfb23094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664bce0aa21d525b7f0ea59a6bac18c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_fullscreen_triangle_pass.html#a664bce0aa21d525b7f0ea59a6bac18c9">SetupFrameGraphDependencies</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html">RHI::FrameGraphInterface</a> frameGraph) override</td></tr>
+<tr class="separator:a664bce0aa21d525b7f0ea59a6bac18c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95f9b53ab142337de93c872d2008a56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_fullscreen_triangle_pass.html#ad95f9b53ab142337de93c872d2008a56">CompileResources</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html">RHI::FrameGraphCompileContext</a> &amp;context) override</td></tr>
+<tr class="separator:ad95f9b53ab142337de93c872d2008a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pass.html">AZ::RPI::RenderPass</a></td></tr>
+<tr class="memitem:af317483861749b130b806182b05fe78c inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af317483861749b130b806182b05fe78c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RenderPass</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html">PassDescriptor</a> &amp;descriptor)</td></tr>
+<tr class="separator:af317483861749b130b806182b05fe78c inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c0557436a0e156e158e0e4223aea07 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pass.html#a44c0557436a0e156e158e0e4223aea07">SetupFrameGraphDependencies</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html">RHI::FrameGraphInterface</a> frameGraph) override</td></tr>
+<tr class="separator:a44c0557436a0e156e158e0e4223aea07 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc59664ab907f3e30ff71a460c756edf inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pass.html#adc59664ab907f3e30ff71a460c756edf">BuildCommandList</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_execute_context.html">RHI::FrameGraphExecuteContext</a> &amp;context) final</td></tr>
+<tr class="separator:adc59664ab907f3e30ff71a460c756edf inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa091e39d19ba391c5363f14784f282ac inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa091e39d19ba391c5363f14784f282ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeclareAttachmentsToFrameGraph</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html">RHI::FrameGraphInterface</a> frameGraph) const </td></tr>
+<tr class="separator:aa091e39d19ba391c5363f14784f282ac inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae035f0e993744b4903002d1b156e103b inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae035f0e993744b4903002d1b156e103b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeclarePassDependenciesToFrameGraph</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html">RHI::FrameGraphInterface</a> frameGraph) const </td></tr>
+<tr class="separator:ae035f0e993744b4903002d1b156e103b inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe44b5eb0760fe72b40c7b4e5608565e inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe44b5eb0760fe72b40c7b4e5608565e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BindPassSrg</b> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html">RHI::FrameGraphCompileContext</a> &amp;context, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt; &amp;shaderResourceGroup)</td></tr>
+<tr class="separator:afe44b5eb0760fe72b40c7b4e5608565e inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236a66a0c5f479e4e7b460d578697cc6 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a236a66a0c5f479e4e7b460d578697cc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CollectSrgs</b> ()</td></tr>
+<tr class="separator:a236a66a0c5f479e4e7b460d578697cc6 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880aa05f9b2a9f26ab32d44d0db43540 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a880aa05f9b2a9f26ab32d44d0db43540"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetSrgs</b> ()</td></tr>
+<tr class="separator:a880aa05f9b2a9f26ab32d44d0db43540 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a25d59485b61dd82e8c2945c4b3c4c inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53a25d59485b61dd82e8c2945c4b3c4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSrgsForDraw</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">RHI::CommandList</a> *commandList)</td></tr>
+<tr class="separator:a53a25d59485b61dd82e8c2945c4b3c4c inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba12a1c602b97f13aa1c56928c847211 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba12a1c602b97f13aa1c56928c847211"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSrgsForDispatch</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_command_list.html">RHI::CommandList</a> *commandList)</td></tr>
+<tr class="separator:aba12a1c602b97f13aa1c56928c847211 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab326c1b6fc298ab5a78fa439aa2883a1 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab326c1b6fc298ab5a78fa439aa2883a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPipelineViewTag</b> (const PipelineViewTag &amp;viewTag)</td></tr>
+<tr class="separator:ab326c1b6fc298ab5a78fa439aa2883a1 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9567af8b91881c926b6a1905a55bf18 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9567af8b91881c926b6a1905a55bf18"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddScopeQueryToFrameGraph</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html">RHI::FrameGraphInterface</a> frameGraph)</td></tr>
+<tr class="separator:ac9567af8b91881c926b6a1905a55bf18 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_p_i_1_1_pass')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">AZ::RPI::Pass</a></td></tr>
+<tr class="memitem:a592d32b79a3c764a4c59ab0eb81b3a59 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a592d32b79a3c764a4c59ab0eb81b3a59"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Pass</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html">PassDescriptor</a> &amp;descriptor)</td></tr>
+<tr class="separator:a592d32b79a3c764a4c59ab0eb81b3a59 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9dc4d0b7b205f4bc1c3c76180a9167d inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9dc4d0b7b205f4bc1c3c76180a9167d"></a>
+<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html">PassDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPassDescriptor</b> () const </td></tr>
+<tr class="separator:af9dc4d0b7b205f4bc1c3c76180a9167d inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f57101c334dcb0be32fec2ecad91a73 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f57101c334dcb0be32fec2ecad91a73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ImportAttachments</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_interface.html">RHI::FrameGraphAttachmentInterface</a> attachmentDatabase)</td></tr>
+<tr class="separator:a5f57101c334dcb0be32fec2ecad91a73 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c3f2c58c33aa456a4cbd811b4387da inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51c3f2c58c33aa456a4cbd811b4387da"></a>
+Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindAdjacentPass</b> (const Name &amp;passName)</td></tr>
+<tr class="separator:a51c3f2c58c33aa456a4cbd811b4387da inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b987c084b0222de743b4041dbb1dd3b inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b987c084b0222de743b4041dbb1dd3b"></a>
+const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html">PassAttachmentBinding</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindAttachmentBinding</b> (const Name &amp;slotName) const </td></tr>
+<tr class="separator:a3b987c084b0222de743b4041dbb1dd3b inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c75c222e7f9de946b7eaf5b1f55877a inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c75c222e7f9de946b7eaf5b1f55877a"></a>
+Ptr&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html">PassAttachment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindOwnedAttachment</b> (const Name &amp;attachmentName) const </td></tr>
+<tr class="separator:a3c75c222e7f9de946b7eaf5b1f55877a inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebff1a1a20de5b92c03a56eb4b0dbd76 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebff1a1a20de5b92c03a56eb4b0dbd76"></a>
+Ptr&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html">PassAttachment</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindAttachment</b> (const Name &amp;slotName) const </td></tr>
+<tr class="separator:aebff1a1a20de5b92c03a56eb4b0dbd76 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78277b3a7106b208fc24b85ec92347db inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78277b3a7106b208fc24b85ec92347db"></a>
+const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html">PassAttachmentBinding</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindAdjacentBinding</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_ref.html">PassAttachmentRef</a> &amp;attachmentRef, const char *attachmentSourceTypeDebugName=&quot;attachment&quot;)</td></tr>
+<tr class="separator:a78277b3a7106b208fc24b85ec92347db inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a57d78e9d3f4a37fb56935652dcecd6 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a57d78e9d3f4a37fb56935652dcecd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessConnection</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_connection.html">PassConnection</a> &amp;connection, uint32_t slotTypeMask=0xFFFFFFFF)</td></tr>
+<tr class="separator:a9a57d78e9d3f4a37fb56935652dcecd6 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16b8ba2a1988c38a9c444025a9c22c1 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad16b8ba2a1988c38a9c444025a9c22c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LogError</b> (AZStd::string &amp;&amp;message)</td></tr>
+<tr class="separator:ad16b8ba2a1988c38a9c444025a9c22c1 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad083e10e7529669cb2231a93df090810 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad083e10e7529669cb2231a93df090810"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LogWarning</b> (AZStd::string &amp;&amp;message)</td></tr>
+<tr class="separator:ad083e10e7529669cb2231a93df090810 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f88f655f5116f4595ae61cd079ca670 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f88f655f5116f4595ae61cd079ca670"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
+<tr class="separator:a7f88f655f5116f4595ae61cd079ca670 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1715b46d6ccf818f8c46679065bffaae inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1715b46d6ccf818f8c46679065bffaae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Build</b> (bool calledFromPassSystem=false)</td></tr>
+<tr class="separator:a1715b46d6ccf818f8c46679065bffaae inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffdd72d29d2e65beac4e9fadcb26e9d inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acffdd72d29d2e65beac4e9fadcb26e9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="separator:acffdd72d29d2e65beac4e9fadcb26e9d inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00716a5496f53d316b73042a8fa0f1ec inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00716a5496f53d316b73042a8fa0f1ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInitializationFinished</b> ()</td></tr>
+<tr class="separator:a00716a5496f53d316b73042a8fa0f1ec inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8219d047ec789bb1c2e0a86ea7b5a4 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c8219d047ec789bb1c2e0a86ea7b5a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FrameBegin</b> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_1_1_frame_prepare_params.html">FramePrepareParams</a> params)</td></tr>
+<tr class="separator:a4c8219d047ec789bb1c2e0a86ea7b5a4 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add38a9e3ac0d55b7dd3b4358de644e2b inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add38a9e3ac0d55b7dd3b4358de644e2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FrameEnd</b> ()</td></tr>
+<tr class="separator:add38a9e3ac0d55b7dd3b4358de644e2b inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56112fc14a2009c7cd18feed26ce5875 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56112fc14a2009c7cd18feed26ce5875"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateReadbackAttachment</b> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_1_1_frame_prepare_params.html">FramePrepareParams</a> params, bool beforeAddScopes)</td></tr>
+<tr class="separator:a56112fc14a2009c7cd18feed26ce5875 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363a79d17b36df6187e89e1f33490176 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a363a79d17b36df6187e89e1f33490176"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAttachmentCopy</b> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_1_1_frame_prepare_params.html">FramePrepareParams</a> params)</td></tr>
+<tr class="separator:a363a79d17b36df6187e89e1f33490176 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html">AZ::RHI::ScopeProducer</a></td></tr>
+<tr class="memitem:aa9baf156d938f81797608012f54dd298 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#aa9baf156d938f81797608012f54dd298">ScopeProducer</a> ()</td></tr>
+<tr class="separator:aa9baf156d938f81797608012f54dd298 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7123c4f881abccef3a85cde2728ac7 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#aee7123c4f881abccef3a85cde2728ac7">SetHardwareQueueClass</a> (HardwareQueueClass hardwareQueueClass)</td></tr>
+<tr class="separator:aee7123c4f881abccef3a85cde2728ac7 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fb5aede089ff9c06e61b0926c30c26 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#a01fb5aede089ff9c06e61b0926c30c26">SetScopeId</a> (const ScopeId &amp;scopeId)</td></tr>
+<tr class="separator:a01fb5aede089ff9c06e61b0926c30c26 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8b287d3ce654a87b356eb6bef4a443 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#a3b8b287d3ce654a87b356eb6bef4a443">InitScope</a> (const ScopeId &amp;scopeId, HardwareQueueClass hardwareQueueClass=HardwareQueueClass::Graphics)</td></tr>
+<tr class="separator:a3b8b287d3ce654a87b356eb6bef4a443 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_scope_producer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a2459ab484384014922cee7a235fc2c6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2459ab484384014922cee7a235fc2c6f"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_viewport.html">RHI::Viewport</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_viewportState</b></td></tr>
+<tr class="separator:a2459ab484384014922cee7a235fc2c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a7faebfd81d3f1e70b9e68cef73798b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a7faebfd81d3f1e70b9e68cef73798b"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_scissor.html">RHI::Scissor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_scissorState</b></td></tr>
+<tr class="separator:a9a7faebfd81d3f1e70b9e68cef73798b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611735195ed062a522e73860e43a3a08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a611735195ed062a522e73860e43a3a08"></a>
+Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_shader</b></td></tr>
+<tr class="separator:a611735195ed062a522e73860e43a3a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e65f6b191dfceb2772a99ad53603f2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e65f6b191dfceb2772a99ad53603f2d"></a>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_pipeline_state_for_draw.html">PipelineStateForDraw</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_pipelineStateForDraw</b></td></tr>
+<tr class="separator:a3e65f6b191dfceb2772a99ad53603f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e900cbcaf90e7abc96419c6ccef74b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e900cbcaf90e7abc96419c6ccef74b0"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item.html">RHI::DrawItem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_item</b></td></tr>
+<tr class="separator:a5e900cbcaf90e7abc96419c6ccef74b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cac91c8f7704b2b58da94dcfcb7866"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91cac91c8f7704b2b58da94dcfcb7866"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_stencilRef</b></td></tr>
+<tr class="separator:a91cac91c8f7704b2b58da94dcfcb7866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ed7a4257eeafdc013c35a749213e89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33ed7a4257eeafdc013c35a749213e89"></a>
+Data::Instance<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawShaderResourceGroup</b></td></tr>
+<tr class="separator:a33ed7a4257eeafdc013c35a749213e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pass.html">AZ::RPI::RenderPass</a></td></tr>
+<tr class="memitem:ae980eded54bc6d86874469ee0d082e1d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae980eded54bc6d86874469ee0d082e1d"></a>
+Data::Instance<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaderResourceGroup</b> = nullptr</td></tr>
+<tr class="separator:ae980eded54bc6d86874469ee0d082e1d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8248f56162982daccc56c896ab8f949e inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8248f56162982daccc56c896ab8f949e"></a>
+RHI::HardwareQueueClass&#160;</td><td class="memItemRight" valign="bottom"><b>m_hardwareQueueClass</b> = RHI::HardwareQueueClass::Graphics</td></tr>
+<tr class="separator:a8248f56162982daccc56c896ab8f949e inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_p_i_1_1_pass')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">AZ::RPI::Pass</a></td></tr>
+<tr class="memitem:aaa092f0d6b2708e4581b9840cb245af6 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa092f0d6b2708e4581b9840cb245af6"></a>
+const Name&#160;</td><td class="memItemRight" valign="bottom"><b>PassNameThis</b> {&quot;This&quot;}</td></tr>
+<tr class="separator:aaa092f0d6b2708e4581b9840cb245af6 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64bf2ab737eceacb9ff3f80157a7533d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64bf2ab737eceacb9ff3f80157a7533d"></a>
+const Name&#160;</td><td class="memItemRight" valign="bottom"><b>PassNameParent</b> {&quot;Parent&quot;}</td></tr>
+<tr class="separator:a64bf2ab737eceacb9ff3f80157a7533d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb90fa59ed40b4a0ef6639fc697acf5b inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb90fa59ed40b4a0ef6639fc697acf5b"></a>
+const Name&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineKeyword</b> {&quot;Pipeline&quot;}</td></tr>
+<tr class="separator:aeb90fa59ed40b4a0ef6639fc697acf5b inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9846c1c566eb384695768d494cc990 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d9846c1c566eb384695768d494cc990"></a>
+const Name&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineGlobalKeyword</b> {&quot;PipelineGlobal&quot;}</td></tr>
+<tr class="separator:a2d9846c1c566eb384695768d494cc990 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56d654f395c8614deca9cf5646cc144 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa56d654f395c8614deca9cf5646cc144"></a>
+AZStd::fixed_vector<br class="typebreak"/>
+&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html">PassAttachmentBinding</a>, <br class="typebreak"/>
+PassAttachmentBindingCountMax &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_attachmentBindings</b></td></tr>
+<tr class="separator:aa56d654f395c8614deca9cf5646cc144 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030ba33cb7681ef9d7d9cac83c3019a2 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a030ba33cb7681ef9d7d9cac83c3019a2"></a>
+AZStd::vector&lt; Ptr<br class="typebreak"/>
+&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment.html">PassAttachment</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ownedAttachments</b></td></tr>
+<tr class="separator:a030ba33cb7681ef9d7d9cac83c3019a2 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2247ef1044622d55e16da00cb0197c93 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2247ef1044622d55e16da00cb0197c93"></a>
+AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_executeBeforePasses</b></td></tr>
+<tr class="separator:a2247ef1044622d55e16da00cb0197c93 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8c3e781cd69d160827b4ef6f34547f inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f8c3e781cd69d160827b4ef6f34547f"></a>
+AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_executeAfterPasses</b></td></tr>
+<tr class="separator:a2f8c3e781cd69d160827b4ef6f34547f inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58fc53123ad830141aafadea70417201 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58fc53123ad830141aafadea70417201"></a>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pipeline</b> = nullptr</td></tr>
+<tr class="separator:a58fc53123ad830141aafadea70417201 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03708b5253860e650c33f053dfc441ac inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03708b5253860e650c33f053dfc441ac"></a>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; const <br class="typebreak"/>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_template.html">PassTemplate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_template</b> = nullptr</td></tr>
+<tr class="separator:a03708b5253860e650c33f053dfc441ac inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ac98c060bf08f2a567c3db6a993eca inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68ac98c060bf08f2a567c3db6a993eca"></a>
+<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_request.html">PassRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_request</b></td></tr>
+<tr class="separator:a68ac98c060bf08f2a567c3db6a993eca inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430ec03076f381c438eab24b9246cc88 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a430ec03076f381c438eab24b9246cc88"></a>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_parent_pass.html">ParentPass</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b> = nullptr</td></tr>
+<tr class="separator:a430ec03076f381c438eab24b9246cc88 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7367ab72e9d875f0199b937062af1b5 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" ><a class="anchor" id="ac7367ab72e9d875f0199b937062af1b5"></a>
+struct {</td></tr>
+<tr class="memitem:aab85e35417bc3f9fc873d08b3dfd5bd0 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" ><a class="anchor" id="aab85e35417bc3f9fc873d08b3dfd5bd0"></a>
+&#160;&#160;&#160;union {</td></tr>
+<tr class="memitem:a16a3ca97201ab722fb634db0b125e3e8 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" ><a class="anchor" id="a16a3ca97201ab722fb634db0b125e3e8"></a>
+&#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ab052de7aee4a2d13f6a9022748ef136e inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_createdByPassRequest</b>: 1</td></tr>
+<tr class="separator:ab052de7aee4a2d13f6a9022748ef136e inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc63e128b09d109422ef62c830d76e8f inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_enabled</b>: 1</td></tr>
+<tr class="separator:acc63e128b09d109422ef62c830d76e8f inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fbc98df4589a67a0767729a23c6ad77 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_parentEnabled</b>: 1</td></tr>
+<tr class="separator:a9fbc98df4589a67a0767729a23c6ad77 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8aea6380ef24c959a65f39bd37903b5 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_alreadyCreatedChildren</b>: 1</td></tr>
+<tr class="separator:ad8aea6380ef24c959a65f39bd37903b5 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a051bfb56db79016cecb4db967538f226 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_createChildren</b>: 1</td></tr>
+<tr class="separator:a051bfb56db79016cecb4db967538f226 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48351b73c2ad76946054a2815cb4ea5d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_partOfHierarchy</b>: 1</td></tr>
+<tr class="separator:a48351b73c2ad76946054a2815cb4ea5d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d010d7b72509631cfe76ee2f307476c inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_hasDrawListTag</b>: 1</td></tr>
+<tr class="separator:a8d010d7b72509631cfe76ee2f307476c inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c1360fe617d214d42afc46185a59fb inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_hasPipelineViewTag</b>: 1</td></tr>
+<tr class="separator:ae4c1360fe617d214d42afc46185a59fb inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dced08a89fa543071c1fd0c460cb6c5 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_timestampQueryEnabled</b>: 1</td></tr>
+<tr class="separator:a0dced08a89fa543071c1fd0c460cb6c5 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33437ed3e1337c9eb0085d492f9b0d64 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_pipelineStatisticsQueryEnabled</b>: 1</td></tr>
+<tr class="separator:a33437ed3e1337c9eb0085d492f9b0d64 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66d889d77145fd581a00525656cbce07 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_isPipelineRoot</b>: 1</td></tr>
+<tr class="separator:a66d889d77145fd581a00525656cbce07 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcd909e6214f486deaaed49b192b10b inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_containsGlobalReference</b>: 1</td></tr>
+<tr class="separator:a3fcd909e6214f486deaaed49b192b10b inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a3ca97201ab722fb634db0b125e3e8 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a16a3ca97201ab722fb634db0b125e3e8 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac000ab800caa08088ab0bbcf2811656a inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint64_t&#160;&#160;&#160;<b>m_allFlags</b> = 0</td></tr>
+<tr class="separator:ac000ab800caa08088ab0bbcf2811656a inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab85e35417bc3f9fc873d08b3dfd5bd0 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aab85e35417bc3f9fc873d08b3dfd5bd0 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7367ab72e9d875f0199b937062af1b5 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>m_flags</b></td></tr>
+<tr class="separator:ac7367ab72e9d875f0199b937062af1b5 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4d107fa1579cc47ee17a4d3737703b inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d4d107fa1579cc47ee17a4d3737703b"></a>
+AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_errorMessages</b></td></tr>
+<tr class="separator:a8d4d107fa1579cc47ee17a4d3737703b inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b4cea98845676dbb9729fc8e4b4322 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8b4cea98845676dbb9729fc8e4b4322"></a>
+AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_warningMessages</b></td></tr>
+<tr class="separator:aa8b4cea98845676dbb9729fc8e4b4322 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1aa9fe5a3bfd6231978bd0da4c707e inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b1aa9fe5a3bfd6231978bd0da4c707e"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_errors</b> = 0</td></tr>
+<tr class="separator:a6b1aa9fe5a3bfd6231978bd0da4c707e inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a468ccbbba42a6dcf7e2420617798357e inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a468ccbbba42a6dcf7e2420617798357e"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_warnings</b> = 0</td></tr>
+<tr class="separator:a468ccbbba42a6dcf7e2420617798357e inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574d74f3a0b61ce9af8fbab3e29104b6 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a574d74f3a0b61ce9af8fbab3e29104b6"></a>
+RHI::DrawListSortType&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawListSortType</b> = RHI::DrawListSortType::KeyThenDepth</td></tr>
+<tr class="separator:a574d74f3a0b61ce9af8fbab3e29104b6 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca2e2d090214c5108e9a3280ff61cd7 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adca2e2d090214c5108e9a3280ff61cd7"></a>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a><br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_readback.html">AttachmentReadback</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_attachmentReadback</b></td></tr>
+<tr class="separator:adca2e2d090214c5108e9a3280ff61cd7 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d68ecd8c0d83f6c55fba8c93ccf855 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18d68ecd8c0d83f6c55fba8c93ccf855"></a>
+PassAttachmentReadbackOption&#160;</td><td class="memItemRight" valign="bottom"><b>m_readbackOption</b></td></tr>
+<tr class="separator:a18d68ecd8c0d83f6c55fba8c93ccf855 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683eae05f9b66815c4f17fa10628010d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a683eae05f9b66815c4f17fa10628010d"></a>
+AZStd::weak_ptr<br class="typebreak"/>
+&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_attachment_copy.html">ImageAttachmentCopy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_attachmentCopy</b></td></tr>
+<tr class="separator:a683eae05f9b66815c4f17fa10628010d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d38bed111584bc3bbd549a30e3473f inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69d38bed111584bc3bbd549a30e3473f"></a>
+<a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a>&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_data.html">PassData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a69d38bed111584bc3bbd549a30e3473f">m_passData</a> = nullptr</td></tr>
+<tr class="memdesc:a69d38bed111584bc3bbd549a30e3473f inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional data used during pass initialization. <br/></td></tr>
+<tr class="separator:a69d38bed111584bc3bbd549a30e3473f inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_a_z_1_1_r_p_i_1_1_pass"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_a_z_1_1_r_p_i_1_1_pass')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">AZ::RPI::Pass</a></td></tr>
 <tr class="memitem:a23b462307d9178f646d416c706b679c7 inherit pub_types_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23b462307d9178f646d416c706b679c7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ChildPassIndex</b> = <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::Handle</a>&lt; uint32_t, class ChildPass &gt;</td></tr>
 <tr class="separator:a23b462307d9178f646d416c706b679c7 inherit pub_types_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_a_z_1_1_r_p_i_1_1_pass')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">AZ::RPI::Pass</a></td></tr>
+<tr class="memitem:a0a4355f1d35336214808c24d8c5979bb inherit pro_static_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a4355f1d35336214808c24d8c5979bb"></a>
+static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>MessageLogLimit</b> = 256</td></tr>
+<tr class="separator:a0a4355f1d35336214808c24d8c5979bb inherit pro_static_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A pass that renders to the entire screen using a single triangle. This pass is designed to work without any dedicated geometry buffers and instead issues a 3-vertex draw and relies on the vertex shader to generate a fullscreen triangle from the vertex ids. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad95f9b53ab142337de93c872d2008a56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::FullscreenTrianglePass::CompileResources </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html">RHI::FrameGraphCompileContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function is called after compilation of the frame graph, but before execution. The provided FrameGraphAttachmentContext allows you to access RHI views associated with attachment ids. This is the method to build ShaderResourceGroups from transient attachment views. </p>
+
+<p>Reimplemented from <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html">AZ::RHI::ScopeProducer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a664bce0aa21d525b7f0ea59a6bac18c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::FullscreenTrianglePass::SetupFrameGraphDependencies </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html">RHI::FrameGraphInterface</a>&#160;</td>
+          <td class="paramname"><em>frameGraph</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function is called during the schedule setup phase. The client is expected to declare attachments using the provided </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frameGraph.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html">AZ::RHI::ScopeProducer</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/Pass/FullscreenTrianglePass.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

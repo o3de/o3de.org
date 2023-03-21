@@ -54,6 +54,7 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_graph_model_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -234,17 +235,35 @@ Static Public Attributes</h2></td></tr>
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>INVALID_NODE_ID</b> = 0</td></tr>
 <tr class="separator:a5d9e1d27aba2b3fa633be0d4cf6577ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a2bebb66a1fe6dd527991e4f580b6f967"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a2bebb66a1fe6dd527991e4f580b6f967">CanExtendSlot</a> (SlotDefinitionPtr slotDefinition) const </td></tr>
+<tr class="separator:a2bebb66a1fe6dd527991e4f580b6f967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30addfafe05036b8a73f8c07c0b17ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#ae30addfafe05036b8a73f8c07c0b17ce">RegisterSlot</a> (SlotDefinitionPtr slotDefinition)</td></tr>
+<tr class="separator:ae30addfafe05036b8a73f8c07c0b17ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563a4e8e48ea19085db20f40d63cddb2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a563a4e8e48ea19085db20f40d63cddb2">RegisterSlots</a> ()</td></tr>
+<tr class="separator:a563a4e8e48ea19085db20f40d63cddb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afabe2733778453b3c3b7434aace100b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#afabe2733778453b3c3b7434aace100b9">CreateSlotData</a> ()</td></tr>
+<tr class="separator:afabe2733778453b3c3b7434aace100b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:afab89afd724f1b07b1aaad6bdc61c47a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afab89afd724f1b07b1aaad6bdc61c47a"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 <tr class="separator:afab89afd724f1b07b1aaad6bdc61c47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_graph_model_1_1_graph_element"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_graph_model_1_1_graph_element')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_graph_model_1_1_graph_element.html">GraphModel::GraphElement</a></td></tr>
+<tr class="memitem:a5a3cf1e8691d01ba0bb947a8e4d58ed5 inherit pro_attribs_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a3cf1e8691d01ba0bb947a8e4d58ed5"></a>
+AZStd::weak_ptr&lt; <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_graph</b></td></tr>
+<tr class="separator:a5a3cf1e8691d01ba0bb947a8e4d58ed5 inherit pro_attribs_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The abstract base class for every type of node in a <a class="el" href="class_graph_model_1_1_graph.html">Graph</a>. It consists primarily of a set of Slots. There is no functionality here beyond managing the Slots and finding Connections. Any useful functionality must be provided by subclasses in the client context where the GraphModel framework is used.</p>
 <p>Slots are divided into two main objects: a <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a> and the actual <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a>. The <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a> contains the predefined description of each slot that the <a class="el" href="class_graph_model_1_1_node.html">Node</a> contains. This information is not saved with the <a class="el" href="class_graph_model_1_1_node.html">Node</a> data in the <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> because it is provided by the <a class="el" href="class_graph_model_1_1_node.html">Node</a> subclass itself (either hard-coded or reflected from some other source). The <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a> is the functional part, and contains any data related to specific instance of the <a class="el" href="class_graph_model_1_1_node.html">Node</a> (for example, the default value of an Input Data <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a>). This data is serialized with the <a class="el" href="class_graph_model_1_1_node.html">Node</a>. Whenever a <a class="el" href="class_graph_model_1_1_node.html">Node</a> is created, either directly or by serializing in, the <a class="el" href="class_graph_model_1_1_node.html">Node</a> class ensures that Slots are created for each <a class="el" href="class_graph_model_1_1_slot_definition.html">SlotDefinition</a> defined by the <a class="el" href="class_graph_model_1_1_node.html">Node</a> subclass.</p>
 <p>Every <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a> in the <a class="el" href="class_graph_model_1_1_node.html">Node</a> has a <a class="el" href="struct_graph_model_1_1_slot_id.html">SlotId</a>, which is unique within the context of the <a class="el" href="class_graph_model_1_1_node.html">Node</a>. A specific <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a> in a spectific <a class="el" href="class_graph_model_1_1_node.html">Node</a> is called an Endpoint and is identified by a pairing of NodeId and <a class="el" href="struct_graph_model_1_1_slot_id.html">SlotId</a>.</p>
-<p>Subclasses must call RegisterSlot() to define the <a class="el" href="class_graph_model_1_1_node.html">Node</a>'s inputs and outputs, but it shouldn't need to serialize any of its own data. This base class's <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a> lists are reflected for serialization, and that's all that should be needed in most cases. </p>
+<p>Subclasses must call <a class="el" href="class_graph_model_1_1_node.html#ae30addfafe05036b8a73f8c07c0b17ce">RegisterSlot()</a> to define the <a class="el" href="class_graph_model_1_1_node.html">Node</a>'s inputs and outputs, but it shouldn't need to serialize any of its own data. This base class's <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a> lists are reflected for serialization, and that's all that should be needed in most cases. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8f561fc5fa9be7a29696f838e48a921c"></a>
 <div class="memitem">
@@ -333,6 +352,55 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 <li>The slot must be extendable</li>
 <li>Deleting the slot can't reduce the number of extendable slots below the configured minimum number of allowed slots for this definition This method is also virtual so the client can impose any custom limitations as needed. This method does nothing if the slot is not extendable. </li>
 </ul>
+
+</div>
+</div>
+<a class="anchor" id="a2bebb66a1fe6dd527991e4f580b6f967"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool GraphModel::Node::CanExtendSlot </td>
+          <td>(</td>
+          <td class="paramtype">SlotDefinitionPtr&#160;</td>
+          <td class="paramname"><em>slotDefinition</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default implementation will prevent slots from being extended past the maximum allowed configuration, but the client could override this to impose additional restrictions </p>
+
+</div>
+</div>
+<a class="anchor" id="afabe2733778453b3c3b7434aace100b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GraphModel::Node::CreateSlotData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Once a subclass is done calling <a class="el" href="class_graph_model_1_1_node.html#ae30addfafe05036b8a73f8c07c0b17ce">RegisterSlot()</a>, it can call this function to instantiate all the slot data. This should only be done when creating a new <a class="el" href="class_graph_model_1_1_node.html">Node</a>, not when loading a <a class="el" href="class_graph_model_1_1_node.html">Node</a> from serialize data (in that case <a class="el" href="class_graph_model_1_1_slot.html" title="!! Start in Graph.h for high level GraphModel documentation !!! ">Slot</a> creation will be handled automatically by <a class="el" href="class_graph_model_1_1_node.html#a62dd1b0acd65d875a283d4d867b55089">PostLoadSetup()</a>). </p>
 
 </div>
 </div>
@@ -488,13 +556,64 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae30addfafe05036b8a73f8c07c0b17ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GraphModel::Node::RegisterSlot </td>
+          <td>(</td>
+          <td class="paramtype">SlotDefinitionPtr&#160;</td>
+          <td class="paramname"><em>slotDefinition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Subclasses should call this function during construction to define its slots. The slot's name must be unique among all slots in this node. </p>
+
+</div>
+</div>
+<a class="anchor" id="a563a4e8e48ea19085db20f40d63cddb2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GraphModel::Node::RegisterSlots </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overridden by specific nodes to register their necessary slots This is called automatically by this <a class="el" href="class_graph_model_1_1_node.html">Node</a> base class when PostLoadSetup is called, which occurs after a <a class="el" href="class_graph_model_1_1_node.html">Node</a> has been deserialized. The derived classes are stil in charge of calling it in their <a class="el" href="class_graph_model_1_1_node.html#a8f561fc5fa9be7a29696f838e48a921c">Node(GraphPtr graph)</a> constructor, since their overrides aren't accessible from the base class during construction. </p>
+
+<p>Reimplemented in <a class="el" href="class_graph_model_1_1_graph_output_node.html#a3ee57913cf48fc20839d2cd1e9bc1316">GraphModel::GraphOutputNode</a>, <a class="el" href="class_graph_model_1_1_graph_input_node.html#ac152b5784d308d2beb3f5e7dc0ab37c4">GraphModel::GraphInputNode</a>, and <a class="el" href="class_graph_model_1_1_module_node.html#a0230d0b279a87dd8d5ecf6cd30600793">GraphModel::ModuleNode</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/GraphModel/Code/Include/GraphModel/Model/Node.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:21 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

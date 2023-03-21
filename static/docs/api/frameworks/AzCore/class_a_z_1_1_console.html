@@ -55,9 +55,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_console-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -69,11 +66,6 @@
 
 <p>Inherits <a class="el" href="class_a_z_1_1_i_console.html">AZ::IConsole</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_console_1_1_deferred_command.html">DeferredCommand</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a849c5350554ec884c7427d4f26e0d3d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a849c5350554ec884c7427d4f26e0d3d0"></a>
@@ -138,41 +130,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a1db985a82b5fd47e290d9d9143afc3b1 inherit pub_methods_class_a_z_1_1_i_console"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1db985a82b5fd47e290d9d9143afc3b1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_a_z_1_1_i_console.html">IConsole</a>)</td></tr>
 <tr class="separator:a1db985a82b5fd47e290d9d9143afc3b1 inherit pub_methods_class_a_z_1_1_i_console"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a9b0a8fb149e6d0547f9ea4225a1b8376"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b0a8fb149e6d0547f9ea4225a1b8376"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>CommandMap</b> = <a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a>&lt; <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">CVarFixedString</a>, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> * &gt;&gt;</td></tr>
-<tr class="separator:a9b0a8fb149e6d0547f9ea4225a1b8376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab16db5db139f5db1af73201f023a726d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab16db5db139f5db1af73201f023a726d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>DeferredCommandQueue</b> = <a class="el" href="class_a_z_std_1_1deque.html">AZStd::deque</a>&lt; <a class="el" href="struct_a_z_1_1_console_1_1_deferred_command.html">DeferredCommand</a> &gt;</td></tr>
-<tr class="separator:ab16db5db139f5db1af73201f023a726d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a957bee64715743ac3a051a090635ffa3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a957bee64715743ac3a051a090635ffa3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveFunctorsToDeferredHead</b> (<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&amp;deferredHead)</td></tr>
-<tr class="separator:a957bee64715743ac3a051a090635ffa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7cccd50d50a973303791687e39b97c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_console.html#acf7cccd50d50a973303791687e39b97c">DispatchCommand</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> command, const <a class="el" href="class_a_z_std_1_1fixed__vector.html">ConsoleCommandContainer</a> &amp;inputs, ConsoleSilentMode silentMode, ConsoleInvokedFrom invokedFrom, ConsoleFunctorFlags requiredSet, ConsoleFunctorFlags requiredClear)</td></tr>
-<tr class="separator:acf7cccd50d50a973303791687e39b97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18926f42a8f51afc89229f345369583e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18926f42a8f51afc89229f345369583e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_a_z_1_1_console.html">Console</a>)</td></tr>
-<tr class="separator:a18926f42a8f51afc89229f345369583e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a4c5827b5b93c53378b0ef3d1acb40a16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c5827b5b93c53378b0ef3d1acb40a16"></a>
-<a class="el" href="class_a_z_1_1_console_functor_base.html">ConsoleFunctorBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_head</b></td></tr>
-<tr class="separator:a4c5827b5b93c53378b0ef3d1acb40a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42b8f57d823527d9050e288b85e9c80a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42b8f57d823527d9050e288b85e9c80a"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">CommandMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_commands</b></td></tr>
-<tr class="separator:a42b8f57d823527d9050e288b85e9c80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8c058d3d6937164171614f4bcc66ee2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8c058d3d6937164171614f4bcc66ee2"></a>
-AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_consoleCommandKeyHandler</b></td></tr>
-<tr class="separator:ab8c058d3d6937164171614f4bcc66ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa630081fad87ca71094eeb359b5e0066"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa630081fad87ca71094eeb359b5e0066"></a>
-<a class="el" href="class_a_z_std_1_1deque.html">DeferredCommandQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_deferredCommands</b></td></tr>
-<tr class="separator:aa630081fad87ca71094eeb359b5e0066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -282,77 +239,6 @@ static constexpr <a class="el" href="class_a_z_std_1_1basic__string__view.html">
 <dl class="section return"><dt>Returns</dt><dd>The longest matching substring prefix the results have in common. </dd></dl>
 
 <p>Implements <a class="el" href="class_a_z_1_1_i_console.html#aaccf318765d2f47c48df682db51136e4">AZ::IConsole</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acf7cccd50d50a973303791687e39b97c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AZ::Console::DispatchCommand </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td>
-          <td class="paramname"><em>command</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_a_z_std_1_1fixed__vector.html">ConsoleCommandContainer</a> &amp;&#160;</td>
-          <td class="paramname"><em>inputs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConsoleSilentMode&#160;</td>
-          <td class="paramname"><em>silentMode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConsoleInvokedFrom&#160;</td>
-          <td class="paramname"><em>invokedFrom</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConsoleFunctorFlags&#160;</td>
-          <td class="paramname"><em>requiredSet</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConsoleFunctorFlags&#160;</td>
-          <td class="paramname"><em>requiredClear</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Invokes a single console command, optionally returning the command output. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">command</td><td>the function to invoke </td></tr>
-    <tr><td class="paramname">inputs</td><td>the set of inputs to provide the function </td></tr>
-    <tr><td class="paramname">silentMode</td><td>if true, logs will be suppressed during command execution </td></tr>
-    <tr><td class="paramname">invokedFrom</td><td>the source point that initiated console invocation </td></tr>
-    <tr><td class="paramname">requiredSet</td><td>a set of flags that must be set on the functor for it to execute </td></tr>
-    <tr><td class="paramname">requiredClear</td><td>a set of flags that must <em>NOT</em> be set on the functor for it to execute </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true on success, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -902,7 +788,7 @@ static constexpr <a class="el" href="class_a_z_std_1_1basic__string__view.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:20 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

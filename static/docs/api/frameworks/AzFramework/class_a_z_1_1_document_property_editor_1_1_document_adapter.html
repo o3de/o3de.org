@@ -57,7 +57,6 @@
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_document_property_editor_1_1_document_adapter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DocumentPropertyEditor::DocumentAdapter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -126,21 +125,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ab1cb4e7f1eb6b98224d5c9f3ec367d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac356f0634ebfbbd553c5899c5320025e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ac356f0634ebfbbd553c5899c5320025e">NotifyContentsChanged</a> (const Dom::Patch &amp;patch)</td></tr>
 <tr class="separator:ac356f0634ebfbbd553c5899c5320025e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a4cbdc6095ee95144329a81de04d57c8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cbdc6095ee95144329a81de04d57c8d"></a>
-ResetEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_resetEvent</b></td></tr>
-<tr class="separator:a4cbdc6095ee95144329a81de04d57c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac352c745735bf582d388174287836df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac352c745735bf582d388174287836df"></a>
-ChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_changedEvent</b></td></tr>
-<tr class="separator:aac352c745735bf582d388174287836df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a76b1d76919a749155acfb79dd20167"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a76b1d76919a749155acfb79dd20167"></a>
-MessageEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_messageEvent</b></td></tr>
-<tr class="separator:a2a76b1d76919a749155acfb79dd20167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06ca4f8364062ba61192cac1d20bde2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af06ca4f8364062ba61192cac1d20bde2"></a>
-Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedContents</b></td></tr>
-<tr class="separator:af06ca4f8364062ba61192cac1d20bde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">DocumentAdapter</a> provides an interface for transforming data from an arbitrary source into a DOM hierarchy that can be viewed and edited by a DocumentPropertyView.</p>
@@ -257,7 +241,7 @@ Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedContent
 <p>Generates the contents of this adapter. This must be an Adapter DOM node. These contents will be cached - to notify clients of changes to the structure, NotifyResetDocument or NotifyContentsChanged must be used. </p>
 <dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_a_z_1_1_document_property_editor_1_1_adapter_builder.html">AdapterBuilder</a> for building out this DOM structure. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter.html#ab041db94e5376682b3e5413155663abd">AZ::DocumentPropertyEditor::RowFilterAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_reflection_adapter.html#aa3dfec51982b3012970fd13cce33321b">AZ::DocumentPropertyEditor::ReflectionAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_settings_registry_adapter.html#a32663bb9441038bd6ff26854c1acabc5">AZ::DocumentPropertyEditor::SettingsRegistryAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_sort_adapter.html#aa2aaf4d1ef9095b1c33a93bf4ea6f6c5">AZ::DocumentPropertyEditor::RowSortAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_cvar_adapter.html#a3f53fe4289935c1723dc78d0731365cd">AZ::DocumentPropertyEditor::CvarAdapter</a>, and <a class="el" href="class_a_z_1_1_document_property_editor_1_1_basic_adapter.html#a1d92ffb0597ce0cf4d2933ca6efc5637">AZ::DocumentPropertyEditor::BasicAdapter</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_filter_adapter.html#ab041db94e5376682b3e5413155663abd">AZ::DocumentPropertyEditor::RowFilterAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_reflection_adapter.html#aa3dfec51982b3012970fd13cce33321b">AZ::DocumentPropertyEditor::ReflectionAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_settings_registry_adapter.html#a32663bb9441038bd6ff26854c1acabc5">AZ::DocumentPropertyEditor::SettingsRegistryAdapter</a>, <a class="el" href="class_a_z_1_1_document_property_editor_1_1_row_sort_adapter.html#aa2aaf4d1ef9095b1c33a93bf4ea6f6c5">AZ::DocumentPropertyEditor::RowSortAdapter</a>, and <a class="el" href="class_a_z_1_1_document_property_editor_1_1_cvar_adapter.html#a3f53fe4289935c1723dc78d0731365cd">AZ::DocumentPropertyEditor::CvarAdapter</a>.</p>
 
 </div>
 </div>
@@ -465,7 +449,7 @@ Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedContent
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

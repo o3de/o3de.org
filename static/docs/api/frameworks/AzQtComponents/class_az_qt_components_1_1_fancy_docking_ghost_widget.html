@@ -52,9 +52,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_fancy_docking_ghost_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::FancyDockingGhostWidget Class Reference</div>  </div>
@@ -92,81 +89,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QClos
 <tr class="memitem:a58649be141989dc61763520303058a67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58649be141989dc61763520303058a67"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *ev) override</td></tr>
 <tr class="separator:a58649be141989dc61763520303058a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a2202961283e13ce2cb01351cfe22f026"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html#a2202961283e13ce2cb01351cfe22f026">PaintMode</a> { <a class="el" href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html#a2202961283e13ce2cb01351cfe22f026aba7de5bc6888294e5884b024a4c894f1">PaintMode::FULL</a> = 0, 
-<a class="el" href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html#a2202961283e13ce2cb01351cfe22f026a58357ae4912d9521749cbf762e8fb1cf">PaintMode::BOTTOMLEFT</a>, 
-<a class="el" href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html#a2202961283e13ce2cb01351cfe22f026a584cd46a84f23e701ff4179887bc18a4">PaintMode::BOTTOMRIGHT</a>
- }</td></tr>
-<tr class="memdesc:a2202961283e13ce2cb01351cfe22f026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the way the ghost widget pixmap should be painted on the widget.  <a href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html#a2202961283e13ce2cb01351cfe22f026">More...</a><br/></td></tr>
-<tr class="separator:a2202961283e13ce2cb01351cfe22f026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:abc2b6ac92e2a8099108aa05981a9ef3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc2b6ac92e2a8099108aa05981a9ef3f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPixmapVisible</b> (bool)</td></tr>
-<tr class="separator:abc2b6ac92e2a8099108aa05981a9ef3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2b4a432bcdd8de862dda100dee32da36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b4a432bcdd8de862dda100dee32da36"></a>
-QMainWindow *const&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainWindow</b></td></tr>
-<tr class="separator:a2b4a432bcdd8de862dda100dee32da36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f61a12b5aaf20c28681e4360c22ae5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f61a12b5aaf20c28681e4360c22ae5b"></a>
-QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>m_pixmap</b></td></tr>
-<tr class="separator:a2f61a12b5aaf20c28681e4360c22ae5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c2b032340814ca9e0419f9acddb968e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c2b032340814ca9e0419f9acddb968e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_visible</b> = false</td></tr>
-<tr class="separator:a3c2b032340814ca9e0419f9acddb968e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87722a9cf6b1ba1c8b2127d623283666"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87722a9cf6b1ba1c8b2127d623283666"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clipToWidgets</b> = false</td></tr>
-<tr class="separator:a87722a9cf6b1ba1c8b2127d623283666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e7f4fcade50ad65b2d4627a26deac8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3e7f4fcade50ad65b2d4627a26deac8"></a>
-<a class="el" href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html#a2202961283e13ce2cb01351cfe22f026">PaintMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_paintMode</b> = <a class="el" href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html#a2202961283e13ce2cb01351cfe22f026aba7de5bc6888294e5884b024a4c894f1">PaintMode::FULL</a></td></tr>
-<tr class="separator:ab3e7f4fcade50ad65b2d4627a26deac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a2202961283e13ce2cb01351cfe22f026"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_az_qt_components_1_1_fancy_docking_ghost_widget.html#a2202961283e13ce2cb01351cfe22f026">AzQtComponents::FancyDockingGhostWidget::PaintMode</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determines the way the ghost widget pixmap should be painted on the widget. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a2202961283e13ce2cb01351cfe22f026aba7de5bc6888294e5884b024a4c894f1"></a>FULL</em>&nbsp;</td><td class="fielddoc">
-<p>Paint the pixmap on the full widget. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a2202961283e13ce2cb01351cfe22f026a58357ae4912d9521749cbf762e8fb1cf"></a>BOTTOMLEFT</em>&nbsp;</td><td class="fielddoc">
-<p>Paint the pixmap on the bottom left quarter of the widget, halving its size. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a2202961283e13ce2cb01351cfe22f026a584cd46a84f23e701ff4179887bc18a4"></a>BOTTOMRIGHT</em>&nbsp;</td><td class="fielddoc">
-<p>Paint the pixmap on the bottom right quarter of the widget, halving its size. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/FancyDockingGhostWidget.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

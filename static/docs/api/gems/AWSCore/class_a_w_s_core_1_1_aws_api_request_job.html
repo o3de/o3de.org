@@ -54,6 +54,8 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_w_s_core_1_1_aws_api_request_job-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AWSCore::AwsApiRequestJob&lt; RequestTraits &gt; Class Template Reference</div>  </div>
@@ -176,13 +178,89 @@ ResultType&#160;</td><td class="memItemRight" valign="bottom"><b>result</b></td>
 <tr class="memitem:a64280068dd1d81dec7a71b7e12198e28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64280068dd1d81dec7a71b7e12198e28"></a>
 ErrorType&#160;</td><td class="memItemRight" valign="bottom"><b>error</b></td></tr>
 <tr class="separator:a64280068dd1d81dec7a71b7e12198e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a58f35015ed44ab75d5342b8ab4931361"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58f35015ed44ab75d5342b8ab4931361"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Process</b> () override</td></tr>
+<tr class="separator:a58f35015ed44ab75d5342b8ab4931361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a76316d090a910b5417e0283dacb668"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html#a9a76316d090a910b5417e0283dacb668">PrepareRequest</a> ()</td></tr>
+<tr class="separator:a9a76316d090a910b5417e0283dacb668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273f58e80a34a51969f239a12bff5763"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a273f58e80a34a51969f239a12bff5763"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html#a273f58e80a34a51969f239a12bff5763">OnSuccess</a> ()</td></tr>
+<tr class="memdesc:a273f58e80a34a51969f239a12bff5763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when request has completed successfully. <br/></td></tr>
+<tr class="separator:a273f58e80a34a51969f239a12bff5763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c020a347bb94c36c71d50fa71412c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00c020a347bb94c36c71d50fa71412c1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html#a00c020a347bb94c36c71d50fa71412c1">OnFailure</a> ()</td></tr>
+<tr class="memdesc:a00c020a347bb94c36c71d50fa71412c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the request fails. <br/></td></tr>
+<tr class="separator:a00c020a347bb94c36c71d50fa71412c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4554e290f7ee35751091a3881ad779be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4554e290f7ee35751091a3881ad779be"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html#a4554e290f7ee35751091a3881ad779be">DoCleanup</a> ()</td></tr>
+<tr class="memdesc:a4554e290f7ee35751091a3881ad779be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when request can't process and still requires cleanup (Specifically for the derived class AwsApiRequestJob&lt;RequestTraits&gt;::Function which does not use auto delete) <br/></td></tr>
+<tr class="separator:a4554e290f7ee35751091a3881ad779be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_w_s_core_1_1_aws_api_job"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_w_s_core_1_1_aws_api_job')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_w_s_core_1_1_aws_api_job.html">AWSCore::AwsApiJob</a></td></tr>
+<tr class="memitem:a9573d1d5d72cae1345da7fad9495202a inherit pro_methods_class_a_w_s_core_1_1_aws_api_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9573d1d5d72cae1345da7fad9495202a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AwsApiJob</b> (bool isAutoDelete, <a class="el" href="class_a_w_s_core_1_1_i_aws_api_job_config.html">IConfig</a> *config=GetDefaultConfig())</td></tr>
+<tr class="separator:a9573d1d5d72cae1345da7fad9495202a inherit pro_methods_class_a_w_s_core_1_1_aws_api_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad369c372ca8860797d5ec330ced4d577"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad369c372ca8860797d5ec330ced4d577"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_wasSuccess</b> { false }</td></tr>
+<tr class="separator:ad369c372ca8860797d5ec330ced4d577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_w_s_core_1_1_aws_api_client_job"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_w_s_core_1_1_aws_api_client_job')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_w_s_core_1_1_aws_api_client_job.html">AWSCore::AwsApiClientJob&lt; RequestTraits::ClientType &gt;</a></td></tr>
+<tr class="memitem:acd23e9542dfee245b0e390588da9e093 inherit pro_attribs_class_a_w_s_core_1_1_aws_api_client_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd23e9542dfee245b0e390588da9e093"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__pad0__</b></td></tr>
+<tr class="separator:acd23e9542dfee245b0e390588da9e093 inherit pro_attribs_class_a_w_s_core_1_1_aws_api_client_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae92450128680477309f128cbce2089f inherit pro_attribs_class_a_w_s_core_1_1_aws_api_client_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae92450128680477309f128cbce2089f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>config</b></td></tr>
+<tr class="separator:aae92450128680477309f128cbce2089f inherit pro_attribs_class_a_w_s_core_1_1_aws_api_client_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9911c49204390677b7496f156c79ca inherit pro_attribs_class_a_w_s_core_1_1_aws_api_client_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb9911c49204390677b7496f156c79ca"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>m_client</b></td></tr>
+<tr class="separator:afb9911c49204390677b7496f156c79ca inherit pro_attribs_class_a_w_s_core_1_1_aws_api_client_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_static_attribs_class_a_w_s_core_1_1_aws_api_job"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_a_w_s_core_1_1_aws_api_job')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_a_w_s_core_1_1_aws_api_job.html">AWSCore::AwsApiJob</a></td></tr>
+<tr class="memitem:a4f3c1191a5a1fca62820838f7ef586a7 inherit pro_static_attribs_class_a_w_s_core_1_1_aws_api_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f3c1191a5a1fca62820838f7ef586a7"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_job.html#a4f3c1191a5a1fca62820838f7ef586a7">COMPONENT_DISPLAY_NAME</a></td></tr>
+<tr class="memdesc:a4f3c1191a5a1fca62820838f7ef586a7 inherit pro_static_attribs_class_a_w_s_core_1_1_aws_api_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for error messages. <br/></td></tr>
+<tr class="separator:a4f3c1191a5a1fca62820838f7ef586a7 inherit pro_static_attribs_class_a_w_s_core_1_1_aws_api_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class RequestTraits&gt;<br/>
 class AWSCore::AwsApiRequestJob&lt; RequestTraits &gt;</h3>
 
 <p>An Az::Job that that executes a specific AWS request. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9a76316d090a910b5417e0283dacb668"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class RequestTraits &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="class_a_w_s_core_1_1_aws_api_request_job.html">AWSCore::AwsApiRequestJob</a>&lt; RequestTraits &gt;::PrepareRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called by Process to prepare the request. By default no changes are made to the request object. Override to defer the preparation of request data until your running on the job's worker thread, instead of setting the request data before calling Start.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the request should be made. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a95f3ce487b7abd35f347deb482b0b3cf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +301,7 @@ template&lt;class RequestTraits &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:39 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:19 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -56,9 +56,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_system_file-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::SystemFile Class Reference</div>  </div>
@@ -225,30 +222,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_system_file.html#ae89b21fd9f695131c9e64b521427df27">GetNullFilename</a> ()</td></tr>
 <tr class="memdesc:ae89b21fd9f695131c9e64b521427df27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves platform specific Null device path (ex: "/dev/null") <br/></td></tr>
 <tr class="separator:ae89b21fd9f695131c9e64b521427df27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a39b6f92d69715b01ce4542a49dbac89f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39b6f92d69715b01ce4542a49dbac89f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformOpen</b> (int mode, int platformFlags)</td></tr>
-<tr class="separator:a39b6f92d69715b01ce4542a49dbac89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54c1943f88dba96d4003dd35d3d8badd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54c1943f88dba96d4003dd35d3d8badd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformClose</b> ()</td></tr>
-<tr class="separator:a54c1943f88dba96d4003dd35d3d8badd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a7dea527cf69fa61d8651094d8a971e49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dea527cf69fa61d8651094d8a971e49"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePath</b> (const char *fileName)</td></tr>
-<tr class="separator:a7dea527cf69fa61d8651094d8a971e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a4bb4db0ac72c085d624027a39aaca7d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bb4db0ac72c085d624027a39aaca7d8"></a>
-FileHandleType&#160;</td><td class="memItemRight" valign="bottom"><b>m_handle</b></td></tr>
-<tr class="separator:a4bb4db0ac72c085d624027a39aaca7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35ba49e4c71c198703f1d94e9ef592d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac35ba49e4c71c198703f1d94e9ef592d"></a>
-<a class="el" href="namespace_a_z_1_1_i_o.html#a5ddbcc991821148574f0a4605cffe1a8">AZ::IO::FixedMaxPathString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileName</b></td></tr>
-<tr class="separator:ac35ba49e4c71c198703f1d94e9ef592d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Platform independent wrapper for system file. </p>
@@ -331,7 +304,7 @@ FileHandleType&#160;</td><td class="memItemRight" valign="bottom"><b>m_handle</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

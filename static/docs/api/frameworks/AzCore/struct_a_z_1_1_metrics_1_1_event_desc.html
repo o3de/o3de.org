@@ -54,7 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="struct_a_z_1_1_metrics_1_1_event_desc-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Metrics::EventDesc Struct Reference</div>  </div>
@@ -133,117 +132,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetExtraParams</b> (<
 <tr class="memitem:a3864f088d9bbe6c5d68fe3d1558f4269"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3864f088d9bbe6c5d68fe3d1558f4269"></a>
 <a class="el" href="class_a_z_std_1_1span.html">AZStd::span</a>&lt; <a class="el" href="struct_a_z_1_1_metrics_1_1_event_field.html">EventField</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetExtraParams</b> () const </td></tr>
 <tr class="separator:a3864f088d9bbe6c5d68fe3d1558f4269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a0155d33c30401e3f2de926f54cd122c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0155d33c30401e3f2de926f54cd122c8"></a>
-<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#a0155d33c30401e3f2de926f54cd122c8">m_name</a></td></tr>
-<tr class="memdesc:a0155d33c30401e3f2de926f54cd122c8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_name.html">Name</a> of the <a class="el" href="class_a_z_1_1_event.html">Event</a>. <br/></td></tr>
-<tr class="separator:a0155d33c30401e3f2de926f54cd122c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1527ec82cf987bbf96c93ffc17e1a651"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1527ec82cf987bbf96c93ffc17e1a651"></a>
-<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#a1527ec82cf987bbf96c93ffc17e1a651">m_cat</a></td></tr>
-<tr class="memdesc:a1527ec82cf987bbf96c93ffc17e1a651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comma separated list of categories associated with the event. <br/></td></tr>
-<tr class="separator:a1527ec82cf987bbf96c93ffc17e1a651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bae6bc8f7cd79564f109fb2accbeb55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bae6bc8f7cd79564f109fb2accbeb55"></a>
-AZStd::optional<br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#a9bae6bc8f7cd79564f109fb2accbeb55">m_id</a></td></tr>
-<tr class="memdesc:a9bae6bc8f7cd79564f109fb2accbeb55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id to associate with the event. <br/></td></tr>
-<tr class="separator:a9bae6bc8f7cd79564f109fb2accbeb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89bd65df69231ac7033fa5fa9eac6ab7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89bd65df69231ac7033fa5fa9eac6ab7"></a>
-AZStd::chrono::microseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#a89bd65df69231ac7033fa5fa9eac6ab7">m_ts</a></td></tr>
-<tr class="memdesc:a89bd65df69231ac7033fa5fa9eac6ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp in microseconds when event occurs. <br/></td></tr>
-<tr class="separator:a89bd65df69231ac7033fa5fa9eac6ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ea2db7c2d6b44ae1f47718eb0c308b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ea2db7c2d6b44ae1f47718eb0c308b7"></a>
-AZStd::optional<br class="typebreak"/>
-&lt; AZStd::chrono::microseconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#a6ea2db7c2d6b44ae1f47718eb0c308b7">m_tts</a></td></tr>
-<tr class="memdesc:a6ea2db7c2d6b44ae1f47718eb0c308b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread timestamp of the event. <br/></td></tr>
-<tr class="separator:a6ea2db7c2d6b44ae1f47718eb0c308b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0011398dcb5bcbb42ed1f36f0bae37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca0011398dcb5bcbb42ed1f36f0bae37"></a>
-AZ::Platform::ProcessId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#aca0011398dcb5bcbb42ed1f36f0bae37">m_pid</a></td></tr>
-<tr class="memdesc:aca0011398dcb5bcbb42ed1f36f0bae37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process Id of application. <br/></td></tr>
-<tr class="separator:aca0011398dcb5bcbb42ed1f36f0bae37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94721c9c3e2e528754df5d4a859afdb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94721c9c3e2e528754df5d4a859afdb7"></a>
-<a class="el" href="struct_a_z_std_1_1thread__id.html">AZStd::thread::id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#a94721c9c3e2e528754df5d4a859afdb7">m_tid</a></td></tr>
-<tr class="memdesc:a94721c9c3e2e528754df5d4a859afdb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread Id of thread which recorded the event. <br/></td></tr>
-<tr class="separator:a94721c9c3e2e528754df5d4a859afdb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ac56b5f37cf4e09db61f11aa3d7fd84"><td class="memItemLeft" align="right" valign="top">EventPhase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#a3ac56b5f37cf4e09db61f11aa3d7fd84">m_phase</a> { EventPhase::Complete }</td></tr>
-<tr class="separator:a3ac56b5f37cf4e09db61f11aa3d7fd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae245008b0ffff06002db2be54abb5e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_field.html">EventField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#ae245008b0ffff06002db2be54abb5e9e">m_argsField</a></td></tr>
-<tr class="separator:ae245008b0ffff06002db2be54abb5e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a591901df9b52dbb7d68f111d3fa04d00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1span.html">AZStd::span</a>&lt; <a class="el" href="struct_a_z_1_1_metrics_1_1_event_field.html">EventField</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_desc.html#a591901df9b52dbb7d68f111d3fa04d00">m_extraParams</a></td></tr>
-<tr class="separator:a591901df9b52dbb7d68f111d3fa04d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ae245008b0ffff06002db2be54abb5e9e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_field.html">EventField</a> AZ::Metrics::EventDesc::m_argsField</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>fields that will be written to the "args" JSON object when the event data is recorded. It defaults to a JSON object with no fields </p>
-
-</div>
-</div>
-<a class="anchor" id="a591901df9b52dbb7d68f111d3fa04d00"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_z_std_1_1span.html">AZStd::span</a>&lt;<a class="el" href="struct_a_z_1_1_metrics_1_1_event_field.html">EventField</a>&gt; AZ::Metrics::EventDesc::m_extraParams</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A span of event parameters that is custom to the event being logged For example the complete event supports an additional "dur" and "tdur" field Which is populated with the tracing clock duration in microseconds and thread tracing clock duration </p>
-
-</div>
-</div>
-<a class="anchor" id="a3ac56b5f37cf4e09db61f11aa3d7fd84"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">EventPhase AZ::Metrics::EventDesc::m_phase { EventPhase::Complete }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Default value of an <a class="el" href="class_a_z_1_1_event.html">Event</a> Header is a phase event This will be populated by the EventLogger </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Metrics/IEventLogger.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

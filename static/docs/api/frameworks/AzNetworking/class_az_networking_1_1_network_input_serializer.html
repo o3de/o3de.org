@@ -50,8 +50,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_network_input_serializer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::NetworkInputSerializer Class Reference</div>  </div>
@@ -123,36 +121,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a3c5b69d63f6177b5d5d1edd45671591d inherit pub_methods_class_az_networking_1_1_i_serializer"><td class="memTemplParams" colspan="2">template&lt;typename TYPE &gt; </td></tr>
 <tr class="memitem:a3c5b69d63f6177b5d5d1edd45671591d inherit pub_methods_class_az_networking_1_1_i_serializer"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_serializer.html#a3c5b69d63f6177b5d5d1edd45671591d">Serialize</a> (TYPE &amp;value, const char *name)</td></tr>
 <tr class="separator:a3c5b69d63f6177b5d5d1edd45671591d inherit pub_methods_class_az_networking_1_1_i_serializer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a551bd7a84ef8fc564d60c85aea3bc86c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a551bd7a84ef8fc564d60c85aea3bc86c"></a>
-<a class="el" href="class_az_networking_1_1_network_input_serializer.html">NetworkInputSerializer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_network_input_serializer.html#a551bd7a84ef8fc564d60c85aea3bc86c">operator=</a> (const <a class="el" href="class_az_networking_1_1_network_input_serializer.html">NetworkInputSerializer</a> &amp;)=delete</td></tr>
-<tr class="memdesc:a551bd7a84ef8fc564d60c85aea3bc86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private copy operator, do not allow copying instances. <br/></td></tr>
-<tr class="separator:a551bd7a84ef8fc564d60c85aea3bc86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec43aaf12f617e6874b8ed0ed7ab586"><td class="memTemplParams" colspan="2"><a class="anchor" id="acec43aaf12f617e6874b8ed0ed7ab586"></a>
-template&lt;typename ORIGINAL_TYPE &gt; </td></tr>
-<tr class="memitem:acec43aaf12f617e6874b8ed0ed7ab586"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SerializeBoundedValue</b> (ORIGINAL_TYPE minValue, ORIGINAL_TYPE maxValue, ORIGINAL_TYPE inputValue)</td></tr>
-<tr class="separator:acec43aaf12f617e6874b8ed0ed7ab586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b328d46a82e28474037619309812ff4"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0b328d46a82e28474037619309812ff4"></a>
-template&lt;typename SERIALIZE_TYPE &gt; </td></tr>
-<tr class="memitem:a0b328d46a82e28474037619309812ff4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SerializeBoundedValueHelper</b> (SERIALIZE_TYPE serializeValue)</td></tr>
-<tr class="separator:a0b328d46a82e28474037619309812ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc9e3ff0bf43687e50031f793bf99f89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc9e3ff0bf43687e50031f793bf99f89"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeBytes</b> (const uint8_t *data, uint32_t count)</td></tr>
-<tr class="separator:abc9e3ff0bf43687e50031f793bf99f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a140c738c8314aa4c6bae4d20fb75302c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a140c738c8314aa4c6bae4d20fb75302c"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferSize</b> = 0</td></tr>
-<tr class="separator:a140c738c8314aa4c6bae4d20fb75302c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a5efacb45d3862560beb81c6bf73c2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a5efacb45d3862560beb81c6bf73c2d"></a>
-const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferCapacity</b></td></tr>
-<tr class="separator:a3a5efacb45d3862560beb81c6bf73c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4610754ffe1450048737236886d243"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f4610754ffe1450048737236886d243"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>m_buffer</b></td></tr>
-<tr class="separator:a0f4610754ffe1450048737236886d243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -1249,7 +1217,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializerValid</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

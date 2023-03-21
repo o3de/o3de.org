@@ -53,10 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_components_1_1_property_manager_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -81,70 +77,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () ove
 <a class="el" href="class_az_tools_framework_1_1_property_handler_base.html">PropertyHandlerBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ResolvePropertyHandler</b> (AZ::u32 handlerName, const AZ::Uuid &amp;handlerType) override</td></tr>
 <tr class="separator:aab24b6cf85c152673c2c5032688a8d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a90e8a89c97cc084ea72f35967fcbc61d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90e8a89c97cc084ea72f35967fcbc61d"></a>
-typedef <br class="typebreak"/>
-AZStd::unordered_multimap<br class="typebreak"/>
-&lt; AZ::u32, <a class="el" href="class_az_tools_framework_1_1_property_handler_base.html">PropertyHandlerBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerMap</b></td></tr>
-<tr class="separator:a90e8a89c97cc084ea72f35967fcbc61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ce5dbe7632cfeca64c958c70933870"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62ce5dbe7632cfeca64c958c70933870"></a>
-typedef <br class="typebreak"/>
-AZStd::unordered_multimap<br class="typebreak"/>
-&lt; AZ::Uuid, <br class="typebreak"/>
-<a class="el" href="class_az_tools_framework_1_1_property_handler_base.html">PropertyHandlerBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultHandlerMap</b></td></tr>
-<tr class="separator:a62ce5dbe7632cfeca64c958c70933870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:adaec614ec1c963a7486c39fd8664a123"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaec614ec1c963a7486c39fd8664a123"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterPropertyType</b> (<a class="el" href="class_az_tools_framework_1_1_property_handler_base.html">PropertyHandlerBase</a> *pHandler) override</td></tr>
-<tr class="separator:adaec614ec1c963a7486c39fd8664a123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb86cb3732e6de3b1eba52abdbe7f9ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb86cb3732e6de3b1eba52abdbe7f9ce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPropertyType</b> (<a class="el" href="class_az_tools_framework_1_1_property_handler_base.html">PropertyHandlerBase</a> *pHandler) override</td></tr>
-<tr class="separator:abb86cb3732e6de3b1eba52abdbe7f9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77843e475869a03c30882b52efd8971"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad77843e475869a03c30882b52efd8971"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestWrite</b> (QWidget *editorGUI) override</td></tr>
-<tr class="separator:ad77843e475869a03c30882b52efd8971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505469b476e8d3dff18a92904e0dae73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a505469b476e8d3dff18a92904e0dae73"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditingFinished</b> (QWidget *editorGUI) override</td></tr>
-<tr class="separator:a505469b476e8d3dff18a92904e0dae73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63a0e263daf958d3a09a9fda90ee516"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab63a0e263daf958d3a09a9fda90ee516"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestPropertyNotify</b> (QWidget *editorGUI) override</td></tr>
-<tr class="separator:ab63a0e263daf958d3a09a9fda90ee516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe735b7998fb77dbcf047dbf30a20c87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe735b7998fb77dbcf047dbf30a20c87"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateBuiltInHandlers</b> ()</td></tr>
-<tr class="separator:afe735b7998fb77dbcf047dbf30a20c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ac1be51c2275b64a1b58a260b675c9c08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1be51c2275b64a1b58a260b675c9c08"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
-<tr class="separator:ac1be51c2275b64a1b58a260b675c9c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a997d3ab2e5a9fd9e0612d189f2a3f467"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a997d3ab2e5a9fd9e0612d189f2a3f467"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
-<tr class="separator:a997d3ab2e5a9fd9e0612d189f2a3f467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe53a413c7af22a63be5c0db37bf283e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe53a413c7af22a63be5c0db37bf283e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
-<tr class="separator:abe53a413c7af22a63be5c0db37bf283e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ad222d37af4529418b02305ad4e6a576c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad222d37af4529418b02305ad4e6a576c"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_property_editor_tools_system.html">PropertyEditorToolsSystem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dpeSystem</b></td></tr>
-<tr class="separator:ad222d37af4529418b02305ad4e6a576c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70d187350dde376e3ce13f069129cc3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70d187350dde376e3ce13f069129cc3e"></a>
-HandlerMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_Handlers</b></td></tr>
-<tr class="separator:a70d187350dde376e3ce13f069129cc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addbeb47a66d8eb3423e4af01a4c7cfe2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addbeb47a66d8eb3423e4af01a4c7cfe2"></a>
-DefaultHandlerMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_DefaultHandlers</b></td></tr>
-<tr class="separator:addbeb47a66d8eb3423e4af01a4c7cfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c54f2bdf36ee68996ba326b9dad9d5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c54f2bdf36ee68996ba326b9dad9d5a"></a>
-AZStd::vector<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_property_handler_base.html">PropertyHandlerBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_builtInHandlers</b></td></tr>
-<tr class="separator:a7c54f2bdf36ee68996ba326b9dad9d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:adb4ee0767ae0c6e6b413efa1a7e970a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb4ee0767ae0c6e6b413efa1a7e970a2"></a>
@@ -157,7 +89,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PropertyManagerCompo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -51,6 +51,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_graph_model_1_1_graph_output_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GraphModel::GraphOutputNode Class Reference</div>  </div>
@@ -234,6 +235,25 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a43d7c5b276b8c7caa29d8e6bf3d28857 inherit pub_static_methods_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3ee57913cf48fc20839d2cd1e9bc1316"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ee57913cf48fc20839d2cd1e9bc1316"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_graph_output_node.html#a3ee57913cf48fc20839d2cd1e9bc1316">RegisterSlots</a> () override</td></tr>
+<tr class="memdesc:a3ee57913cf48fc20839d2cd1e9bc1316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers SlotDescriptors for each of this node's slots. <br/></td></tr>
+<tr class="separator:a3ee57913cf48fc20839d2cd1e9bc1316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_graph_model_1_1_base_input_output_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_graph_model_1_1_base_input_output_node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_graph_model_1_1_base_input_output_node.html">GraphModel::BaseInputOutputNode</a></td></tr>
+<tr class="memitem:a4c79b632e4f47f9628d6b781a99be87b inherit pro_methods_class_graph_model_1_1_base_input_output_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c79b632e4f47f9628d6b781a99be87b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_base_input_output_node.html#a4c79b632e4f47f9628d6b781a99be87b">RegisterCommonSlots</a> (AZStd::string_view directionName)</td></tr>
+<tr class="memdesc:a4c79b632e4f47f9628d6b781a99be87b inherit pro_methods_class_graph_model_1_1_base_input_output_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers metadata slots that are common for inputs and outputs, like name, displayName, and description. <br/></td></tr>
+<tr class="separator:a4c79b632e4f47f9628d6b781a99be87b inherit pro_methods_class_graph_model_1_1_base_input_output_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_graph_model_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_graph_model_1_1_node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_graph_model_1_1_node.html">GraphModel::Node</a></td></tr>
+<tr class="memitem:a2bebb66a1fe6dd527991e4f580b6f967 inherit pro_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#a2bebb66a1fe6dd527991e4f580b6f967">CanExtendSlot</a> (SlotDefinitionPtr slotDefinition) const </td></tr>
+<tr class="separator:a2bebb66a1fe6dd527991e4f580b6f967 inherit pro_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae30addfafe05036b8a73f8c07c0b17ce inherit pro_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#ae30addfafe05036b8a73f8c07c0b17ce">RegisterSlot</a> (SlotDefinitionPtr slotDefinition)</td></tr>
+<tr class="separator:ae30addfafe05036b8a73f8c07c0b17ce inherit pro_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afabe2733778453b3c3b7434aace100b9 inherit pro_methods_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_1_1_node.html#afabe2733778453b3c3b7434aace100b9">CreateSlotData</a> ()</td></tr>
+<tr class="separator:afabe2733778453b3c3b7434aace100b9 inherit pro_methods_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_graph_model_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_graph_model_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_graph_model_1_1_node.html">GraphModel::Node</a></td></tr>
@@ -256,6 +276,17 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ExtendableSlotMap</b
 <tr class="memitem:a5d9e1d27aba2b3fa633be0d4cf6577ea inherit pub_static_attribs_class_graph_model_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d9e1d27aba2b3fa633be0d4cf6577ea"></a>
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>INVALID_NODE_ID</b> = 0</td></tr>
 <tr class="separator:a5d9e1d27aba2b3fa633be0d4cf6577ea inherit pub_static_attribs_class_graph_model_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_graph_model_1_1_base_input_output_node"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_graph_model_1_1_base_input_output_node')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_graph_model_1_1_base_input_output_node.html">GraphModel::BaseInputOutputNode</a></td></tr>
+<tr class="memitem:ab2e467f1565fdac6fe20ae65bcbfdc57 inherit pro_attribs_class_graph_model_1_1_base_input_output_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2e467f1565fdac6fe20ae65bcbfdc57"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_title</b></td></tr>
+<tr class="separator:ab2e467f1565fdac6fe20ae65bcbfdc57 inherit pro_attribs_class_graph_model_1_1_base_input_output_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819611c8900655b1b5e9318ac47be1fa inherit pro_attribs_class_graph_model_1_1_base_input_output_node"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a819611c8900655b1b5e9318ac47be1fa"></a>
+AZStd::shared_ptr&lt; <a class="el" href="class_graph_model_1_1_data_type.html">DataType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataType</b></td></tr>
+<tr class="separator:a819611c8900655b1b5e9318ac47be1fa inherit pro_attribs_class_graph_model_1_1_base_input_output_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_graph_model_1_1_graph_element"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_graph_model_1_1_graph_element')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_graph_model_1_1_graph_element.html">GraphModel::GraphElement</a></td></tr>
+<tr class="memitem:a5a3cf1e8691d01ba0bb947a8e4d58ed5 inherit pro_attribs_class_graph_model_1_1_graph_element"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a3cf1e8691d01ba0bb947a8e4d58ed5"></a>
+AZStd::weak_ptr&lt; <a class="el" href="class_graph_model_1_1_graph.html">Graph</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_graph</b></td></tr>
+<tr class="separator:a5a3cf1e8691d01ba0bb947a8e4d58ed5 inherit pro_attribs_class_graph_model_1_1_graph_element"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides an node that serves as a data output from a node graph. </p>
@@ -338,7 +369,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>INVALID_N
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:21 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

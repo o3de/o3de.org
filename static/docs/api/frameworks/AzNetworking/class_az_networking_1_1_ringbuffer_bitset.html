@@ -52,8 +52,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_ringbuffer_bitset-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::RingbufferBitset&lt; SIZE &gt; Class Template Reference</div>  </div>
@@ -93,27 +91,6 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a4ec1f0071f102fee1ce5c3070a8ba3e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ec1f0071f102fee1ce5c3070a8ba3e2"></a>
 static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>RingbufferContainerSize</b> = SIZE / NumBitsetChunkedBits</td></tr>
 <tr class="separator:a4ec1f0071f102fee1ce5c3070a8ba3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7da5dfc554096f527db9871448522bd2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html#a7da5dfc554096f527db9871448522bd2">GetChunkIndexHelper</a> (uint32_t absoluteIndex) const </td></tr>
-<tr class="separator:a7da5dfc554096f527db9871448522bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab574ece7e26a5e085e5381cdf8629ff0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab574ece7e26a5e085e5381cdf8629ff0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html#ab574ece7e26a5e085e5381cdf8629ff0">IncrementHead</a> ()</td></tr>
-<tr class="memdesc:ab574ece7e26a5e085e5381cdf8629ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the internal head index. <br/></td></tr>
-<tr class="separator:ab574ece7e26a5e085e5381cdf8629ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ad4ded60060a36783399945d7954e65a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4ded60060a36783399945d7954e65a7"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_headElementOffset</b> = 0</td></tr>
-<tr class="separator:ad4ded60060a36783399945d7954e65a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3627f5a40efb86bb3d3b84eb779ee332"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3627f5a40efb86bb3d3b84eb779ee332"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_unusedHeadBits</b> = NumBitsetChunkedBits</td></tr>
-<tr class="separator:a3627f5a40efb86bb3d3b84eb779ee332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee6261e6317add0f9fc97abee8f0cfc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee6261e6317add0f9fc97abee8f0cfc2"></a>
-RingbufferContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_container</b></td></tr>
-<tr class="separator:aee6261e6317add0f9fc97abee8f0cfc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a93f8ab456a7684d978c661d345fd240a"></a>
@@ -181,40 +158,6 @@ template&lt;uint32_t SIZE&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the requested bitset element </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7da5dfc554096f527db9871448522bd2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uint32_t SIZE&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t <a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html">AzNetworking::RingbufferBitset</a>&lt; SIZE &gt;::GetChunkIndexHelper </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>absoluteIndex</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Converts the provided absolute index into a internal ring buffer element index. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">absoluteIndex</td><td>the absolute index value to convert to a ring-buffer index </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the converted ring-buffer index </dd></dl>
 
 </div>
 </div>
@@ -356,7 +299,7 @@ template&lt;uint32_t SIZE&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

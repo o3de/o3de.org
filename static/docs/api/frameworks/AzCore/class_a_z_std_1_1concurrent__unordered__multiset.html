@@ -55,7 +55,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
 <a href="class_a_z_std_1_1concurrent__unordered__multiset-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::concurrent_unordered_multiset&lt; Key, NumLocks, Hasher, EqualKey, Allocator &gt; Class Template Reference</div>  </div>
@@ -129,25 +128,6 @@ template&lt;class Iterator &gt; </td></tr>
 template&lt;class Iterator &gt; </td></tr>
 <tr class="memitem:a9b18176e1c97e1cbbde029fe537c0c1f"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE&#160;</td><td class="memTemplItemRight" valign="bottom"><b>concurrent_unordered_multiset</b> (Iterator first, Iterator last, size_type numBuckets, const hasher &amp;<a class="el" href="struct_a_z_std_1_1hash.html">hash</a>, const key_equal &amp;keyEqual, const allocator_type &amp;<a class="el" href="class_a_z_std_1_1allocator.html">allocator</a>)</td></tr>
 <tr class="separator:a9b18176e1c97e1cbbde029fe537c0c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a36b57993e5e82c68d9a932e41abf3087"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CONTAINER_VERSION</b> = 1
- }</td></tr>
-<tr class="separator:a36b57993e5e82c68d9a932e41abf3087"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2efe38e0f680c3c17980c60eef4866"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2efe38e0f680c3c17980c60eef4866"></a>
-typedef <br class="typebreak"/>
-<a class="el" href="class_a_z_std_1_1concurrent__unordered__multiset.html">concurrent_unordered_multiset</a><br class="typebreak"/>
-&lt; Key, NumLocks, Hasher, <br class="typebreak"/>
-EqualKey, Allocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
-<tr class="separator:a5e2efe38e0f680c3c17980c60eef4866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac663a41d67ff1827e60a33b7a3cc5a30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac663a41d67ff1827e60a33b7a3cc5a30"></a>
-typedef <br class="typebreak"/>
-Internal::concurrent_hash_table<br class="typebreak"/>
-&lt; Internal::ConcurrentUnorderedSetTableTraits<br class="typebreak"/>
-&lt; Key, Hasher, EqualKey, <br class="typebreak"/>
-Allocator, true, NumLocks &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>base_type</b></td></tr>
-<tr class="separator:ac663a41d67ff1827e60a33b7a3cc5a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Key, AZStd::size_t NumLocks = 8, class Hasher = AZStd::hash&lt;Key&gt;, class EqualKey = AZStd::equal_to&lt;Key&gt;, class Allocator = AZStd::allocator&gt;<br/>
@@ -160,7 +140,7 @@ class AZStd::concurrent_unordered_multiset&lt; Key, NumLocks, Hasher, EqualKey, 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:57 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

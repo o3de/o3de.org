@@ -60,6 +60,7 @@
       <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
@@ -110,13 +111,16 @@
 <li>CanDeleteSlot()
 : <a class="el" href="class_graph_model_1_1_node.html#a2a32fd9b9c95e5f79635042cb2d16629">GraphModel::Node</a>
 </li>
+<li>CanExtendSlot()
+: <a class="el" href="class_graph_model_1_1_node.html#a2bebb66a1fe6dd527991e4f580b6f967">GraphModel::Node</a>
+</li>
 <li>CenterOnNodes()
 : <a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#a36e11e3641a6f857b387d4a00a2d0758">GraphModelIntegration::GraphControllerRequests</a>
 </li>
 <li>ClearCachedData()
-: <a class="el" href="class_graph_model_1_1_node.html#ac84e90f50787ddafa1622cc1251762eb">GraphModel::Node</a>
+: <a class="el" href="class_graph_model_1_1_graph.html#aa289ab25a3c4f48bc85955dee7470d12">GraphModel::Graph</a>
+, <a class="el" href="class_graph_model_1_1_node.html#ac84e90f50787ddafa1622cc1251762eb">GraphModel::Node</a>
 , <a class="el" href="class_graph_model_1_1_slot.html#aac7a02e8c3b55e72666440bc9163afa3">GraphModel::Slot</a>
-, <a class="el" href="class_graph_model_1_1_graph.html#aa289ab25a3c4f48bc85955dee7470d12">GraphModel::Graph</a>
 </li>
 <li>ClearSelection()
 : <a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#aebdbfe1a1fa652e7f6b4d6c525349cd8">GraphModelIntegration::GraphControllerRequests</a>
@@ -135,6 +139,9 @@
 </li>
 <li>CreateScene()
 : <a class="el" href="class_graph_model_integration_1_1_graph_manager_requests.html#a5c311172512d5dbd1cb1ddc642af9352">GraphModelIntegration::GraphManagerRequests</a>
+</li>
+<li>CreateSlotData()
+: <a class="el" href="class_graph_model_1_1_node.html#afabe2733778453b3c3b7434aace100b9">GraphModel::Node</a>
 </li>
 </ul>
 
@@ -230,8 +237,15 @@
 : <a class="el" href="class_graph_model_integration_1_1_graph_manager_requests.html#a27cdc33c83e4577ef0f7935b70198e03">GraphModelIntegration::GraphManagerRequests</a>
 , <a class="el" href="class_graph_model_1_1_graph_element.html#ad1616979e2ddcb37835b45a3827ad53b">GraphModel::GraphElement</a>
 </li>
+<li>GetGraphById()
+: <a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#afff71f9ccc6423704b3c93b08bb17f61">GraphModelIntegration::EditorMainWindow</a>
+</li>
 <li>GetGraphContext()
 : <a class="el" href="class_graph_model_1_1_graph_element.html#a361ccc27637b638eb08cf3992a6eccba">GraphModel::GraphElement</a>
+, <a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#aab49952587d4e68b3199be028a43709b">GraphModelIntegration::EditorMainWindow</a>
+</li>
+<li>GetGraphId()
+: <a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#a56e99ff4fbb98d4ce6e0de38c3da51ff">GraphModelIntegration::EditorMainWindow</a>
 </li>
 <li>GetId()
 : <a class="el" href="class_graph_model_1_1_node.html#adf95855fd0e2c3d0ba23023a771e40a8">GraphModel::Node</a>
@@ -277,9 +291,9 @@
 : <a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#ab2d7e9fb4f08995ce66b161f3a4a2c66">GraphModelIntegration::GraphControllerRequests</a>
 </li>
 <li>GetNodes()
-: <a class="el" href="class_graph_model_1_1_graph.html#a47b15c519cb3a7b06a3399604c9032a8">GraphModel::Graph</a>
+: <a class="el" href="class_graph_model_1_1_graph.html#ac04bc6ef28837570702a09c6cc038ede">GraphModel::Graph</a>
 , <a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#ae5254f8af7c8b3c3d957f763d7d07a4e">GraphModelIntegration::GraphControllerRequests</a>
-, <a class="el" href="class_graph_model_1_1_graph.html#ac04bc6ef28837570702a09c6cc038ede">GraphModel::Graph</a>
+, <a class="el" href="class_graph_model_1_1_graph.html#a47b15c519cb3a7b06a3399604c9032a8">GraphModel::Graph</a>
 </li>
 <li>GetNodesFromGraphNodeIds()
 : <a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#afd70da6013232980f68ad3313bdc07e8">GraphModelIntegration::GraphControllerRequests</a>
@@ -303,7 +317,7 @@
 : <a class="el" href="class_graph_model_integration_1_1_graph_manager_requests.html#ad29760ad0766a2cff12c945a7907b1c3">GraphModelIntegration::GraphManagerRequests</a>
 </li>
 <li>GetSlot()
-: <a class="el" href="class_graph_model_1_1_node.html#a487873f5d98ac46831b6351287bd958a">GraphModel::Node</a>
+: <a class="el" href="class_graph_model_1_1_node.html#a0dc5c17b41046653603a51aaaf41f1f4">GraphModel::Node</a>
 </li>
 <li>GetSlotDefinitions()
 : <a class="el" href="class_graph_model_1_1_node.html#a27ef0248503d6eba4a7fde9a0f59a829">GraphModel::Node</a>
@@ -322,8 +336,8 @@
 , <a class="el" href="class_graph_model_1_1_slot.html#aa61bb7c30657165a7ac3ae43321c5458">GraphModel::Slot</a>
 </li>
 <li>GetSystemName()
-: <a class="el" href="class_graph_model_1_1_graph.html#a0f1f1d4490426abb3fc32ae85bd27a9a">GraphModel::Graph</a>
-, <a class="el" href="class_graph_model_1_1_graph_context.html#a6acda1d2307937efad8177cc07d883ad">GraphModel::GraphContext</a>
+: <a class="el" href="class_graph_model_1_1_graph_context.html#a6acda1d2307937efad8177cc07d883ad">GraphModel::GraphContext</a>
+, <a class="el" href="class_graph_model_1_1_graph.html#a0f1f1d4490426abb3fc32ae85bd27a9a">GraphModel::Graph</a>
 </li>
 <li>GetTitle()
 : <a class="el" href="class_graph_model_1_1_node.html#aeb7dc00e5e8d1fb66e2293b4c01420f8">GraphModel::Node</a>
@@ -343,7 +357,7 @@
 : <a class="el" href="class_graph_model_1_1_data_type.html#a685d31dcab0810679e609aa60769dd04">GraphModel::DataType</a>
 </li>
 <li>GetValue()
-: <a class="el" href="class_graph_model_1_1_slot.html#af7f7881093daa6b6a30f8ab1bfff5025">GraphModel::Slot</a>
+: <a class="el" href="class_graph_model_1_1_slot.html#a6eba8f3fa9f9cfd84450e8cdb43862cf">GraphModel::Slot</a>
 </li>
 <li>Graph()
 : <a class="el" href="class_graph_model_1_1_graph.html#a4d86e0862d4103dd35ad04fc7aa389a7">GraphModel::Graph</a>
@@ -358,6 +372,9 @@
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>HandleWrapperNodeActionWidgetClicked()
+: <a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#abb9ca2d81a5657785be9494a3c0c8dbe">GraphModelIntegration::EditorMainWindow</a>
+</li>
 <li>HasConnections()
 : <a class="el" href="class_graph_model_1_1_node.html#a067ec0fcdbb27d3b6fb8a821c1ae67f5">GraphModel::Node</a>
 </li>
@@ -405,6 +422,16 @@
 </li>
 <li>IsVisibleOnNode()
 : <a class="el" href="class_graph_model_1_1_slot_definition.html#af234a2d22f7196961519110a142553ce">GraphModel::SlotDefinition</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>LoadGraph()
+: <a class="el" href="class_graph_model_1_1_module_graph_manager.html#a74f17ba9885907fc0fb1eac896d1e929">GraphModel::ModuleGraphManager</a>
+</li>
+<li>LoadModuleGraph()
+: <a class="el" href="class_graph_model_1_1_module_node.html#ad58d30237fcdb18e9216ef60f7987b56">GraphModel::ModuleNode</a>
 </li>
 </ul>
 
@@ -487,9 +514,21 @@
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>RegisterCommonSlots()
+: <a class="el" href="class_graph_model_1_1_base_input_output_node.html#a4c79b632e4f47f9628d6b781a99be87b">GraphModel::BaseInputOutputNode</a>
+</li>
+<li>RegisterSlot()
+: <a class="el" href="class_graph_model_1_1_node.html#ae30addfafe05036b8a73f8c07c0b17ce">GraphModel::Node</a>
+</li>
+<li>RegisterSlots()
+: <a class="el" href="class_graph_model_1_1_graph_output_node.html#a3ee57913cf48fc20839d2cd1e9bc1316">GraphModel::GraphOutputNode</a>
+, <a class="el" href="class_graph_model_1_1_module_node.html#a0230d0b279a87dd8d5ecf6cd30600793">GraphModel::ModuleNode</a>
+, <a class="el" href="class_graph_model_1_1_graph_input_node.html#ac152b5784d308d2beb3f5e7dc0ab37c4">GraphModel::GraphInputNode</a>
+, <a class="el" href="class_graph_model_1_1_node.html#a563a4e8e48ea19085db20f40d63cddb2">GraphModel::Node</a>
+</li>
 <li>RemoveConnection()
-: <a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#ac1562cbdcc20478350aab07c47551807">GraphModelIntegration::GraphControllerRequests</a>
-, <a class="el" href="class_graph_model_1_1_graph.html#ab02a63d4942003cc7e87e3af081769b3">GraphModel::Graph</a>
+: <a class="el" href="class_graph_model_1_1_graph.html#ab02a63d4942003cc7e87e3af081769b3">GraphModel::Graph</a>
+, <a class="el" href="class_graph_model_integration_1_1_graph_controller_requests.html#ac1562cbdcc20478350aab07c47551807">GraphModelIntegration::GraphControllerRequests</a>
 </li>
 <li>RemoveNode()
 : <a class="el" href="class_graph_model_1_1_graph.html#a16c661c0c0f14a9508b95d3a13b0b4f4">GraphModel::Graph</a>
@@ -535,6 +574,9 @@
 <li>Slot()
 : <a class="el" href="class_graph_model_1_1_slot.html#a79a5fc084fef8c9905037c68adcae51f">GraphModel::Slot</a>
 </li>
+<li>SourceFileChanged()
+: <a class="el" href="class_graph_model_1_1_module_graph_manager.html#a112ab93aafef776cd72fcf97e97f5ebd">GraphModel::ModuleGraphManager</a>
+</li>
 <li>StandardNodePaletteItem()
 : <a class="el" href="class_graph_model_integration_1_1_standard_node_palette_item.html#abf14252a04233e6fb60580c56e6354de">GraphModelIntegration::StandardNodePaletteItem&lt; NodeType &gt;</a>
 </li>
@@ -573,7 +615,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:21 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

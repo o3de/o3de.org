@@ -55,22 +55,12 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="struct_a_z_std_1_1variant__detail_1_1visitor_1_1impl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::variant_detail::visitor::impl Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1variant__detail_1_1visitor_1_1impl_1_1dispatcher.html">dispatcher</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1variant__detail_1_1visitor_1_1impl_1_1is__variant__size__equal.html">is_variant_size_equal</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1variant__detail_1_1visitor_1_1impl_1_1vs2017__index__sequence__error__3528__workaround.html">vs2017_index_sequence_error_3528_workaround</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa81ff098cb43c31394dbdda525cd6c05"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa81ff098cb43c31394dbdda525cd6c05"></a>
@@ -81,91 +71,14 @@ template&lt;class Visitor , class... Variants&gt; </td></tr>
 template&lt;class Visitor , class... Variants&gt; </td></tr>
 <tr class="memitem:a64964c202c59f045a282e2730e5936b8"><td class="memTemplItemLeft" align="right" valign="top">static decltype(auto) constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>visit_alt</b> (Visitor &amp;&amp;visitor, Variants &amp;&amp;...variants)</td></tr>
 <tr class="separator:a64964c202c59f045a282e2730e5936b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:af7deea51b62e76604d02c65daf29ec66"><td class="memTemplParams" colspan="2"><a class="anchor" id="af7deea51b62e76604d02c65daf29ec66"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:af7deea51b62e76604d02c65daf29ec66"><td class="memTemplItemLeft" align="right" valign="top">static constexpr const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>at</b> (const T &amp;elem)</td></tr>
-<tr class="separator:af7deea51b62e76604d02c65daf29ec66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a416b99ad7d91be4c09269668f60233b6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a416b99ad7d91be4c09269668f60233b6"></a>
-template&lt;class T , size_t N, class... Indices&gt; </td></tr>
-<tr class="memitem:a416b99ad7d91be4c09269668f60233b6"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto &amp;&amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>at</b> (const <a class="el" href="class_a_z_std_1_1array.html">array</a>&lt; T, N &gt; &amp;elems, size_t index, Indices...indices)</td></tr>
-<tr class="separator:a416b99ad7d91be4c09269668f60233b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a54d62a448f20426d7bd3514477b31"><td class="memTemplParams" colspan="2"><a class="anchor" id="a80a54d62a448f20426d7bd3514477b31"></a>
-template&lt;class DispatchFunc1 , class... DispatchFuncs&gt; </td></tr>
-<tr class="memitem:a80a54d62a448f20426d7bd3514477b31"><td class="memTemplItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>visitor_return_type_check</b> ()</td></tr>
-<tr class="separator:a80a54d62a448f20426d7bd3514477b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c88b7a16e1f0b9354e70fab6ba8e9f6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8c88b7a16e1f0b9354e70fab6ba8e9f6"></a>
-template&lt;class... DispatchFuncs&gt; </td></tr>
-<tr class="memitem:a8c88b7a16e1f0b9354e70fab6ba8e9f6"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_dispatcher_array</b> (DispatchFuncs &amp;&amp;...dispatchFuncs)</td></tr>
-<tr class="separator:a8c88b7a16e1f0b9354e70fab6ba8e9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9226850a72b54d2019539736a2fae7"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7c9226850a72b54d2019539736a2fae7"></a>
-template&lt;class Visitor , class... Variants, size_t... Indices&gt; </td></tr>
-<tr class="memitem:a7c9226850a72b54d2019539736a2fae7"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_dispatch</b> (index_sequence&lt; Indices...&gt;)</td></tr>
-<tr class="separator:a7c9226850a72b54d2019539736a2fae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c9c22d90cba57ff3b68a3626be22c19"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1c9c22d90cba57ff3b68a3626be22c19"></a>
-template&lt;size_t Index, typename Variant &gt; </td></tr>
-<tr class="memitem:a1c9c22d90cba57ff3b68a3626be22c19"><td class="memTemplItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>expand_pack_to_index</b> ()</td></tr>
-<tr class="separator:a1c9c22d90cba57ff3b68a3626be22c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6989d09312f2cf9e7d0ba6770fb2d498"><td class="memTemplParams" colspan="2"><a class="anchor" id="a6989d09312f2cf9e7d0ba6770fb2d498"></a>
-template&lt;size_t Index, class Visitor , class... Variants&gt; </td></tr>
-<tr class="memitem:a6989d09312f2cf9e7d0ba6770fb2d498"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_dispatch_for_index_impl</b> ()</td></tr>
-<tr class="separator:a6989d09312f2cf9e7d0ba6770fb2d498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f8cdb5a9c460d1cccd70783bbba3309"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4f8cdb5a9c460d1cccd70783bbba3309"></a>
-template&lt;class Visitor , class... Variants, size_t... Indices&gt; </td></tr>
-<tr class="memitem:a4f8cdb5a9c460d1cccd70783bbba3309"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_dispatch_for_index_impl</b> (index_sequence&lt; Indices...&gt;)</td></tr>
-<tr class="separator:a4f8cdb5a9c460d1cccd70783bbba3309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed5c8e22fb49f12883ca3cde33dab77f"><td class="memTemplParams" colspan="2"><a class="anchor" id="aed5c8e22fb49f12883ca3cde33dab77f"></a>
-template&lt;class Visitor , class Variant1 , class... Variants&gt; </td></tr>
-<tr class="memitem:aed5c8e22fb49f12883ca3cde33dab77f"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_dispatch_for_index</b> ()</td></tr>
-<tr class="separator:aed5c8e22fb49f12883ca3cde33dab77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fa3606901765f6bd50157a82e8d3e07"><td class="memTemplParams" colspan="2"><a class="anchor" id="a1fa3606901765f6bd50157a82e8d3e07"></a>
-template&lt;class Visitor , class... Variants, size_t... Indices&gt; </td></tr>
-<tr class="memitem:a1fa3606901765f6bd50157a82e8d3e07"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_dispatch_for_all_impl</b> (index_sequence&lt; Indices...&gt; sequence)</td></tr>
-<tr class="separator:a1fa3606901765f6bd50157a82e8d3e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7935a96804edb1d710d29a2d9b9ec8da"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7935a96804edb1d710d29a2d9b9ec8da"></a>
-template&lt;class Visitor , class... Variants, size_t... Indices1, size_t... Indices2, class... IndiceSequences&gt; </td></tr>
-<tr class="memitem:a7935a96804edb1d710d29a2d9b9ec8da"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_dispatch_for_all_impl</b> (index_sequence&lt; Indices1...&gt;, index_sequence&lt; Indices2...&gt;, IndiceSequences...sequences)</td></tr>
-<tr class="separator:a7935a96804edb1d710d29a2d9b9ec8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465a9aaddcb9517ad8249a228cbdf6e1"><td class="memTemplParams" colspan="2">template&lt;class Visitor , class... Variants&gt; </td></tr>
-<tr class="memitem:a465a9aaddcb9517ad8249a228cbdf6e1"><td class="memTemplItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1variant__detail_1_1visitor_1_1impl.html#a465a9aaddcb9517ad8249a228cbdf6e1">make_dispatch_for_all</a> ()</td></tr>
-<tr class="separator:a465a9aaddcb9517ad8249a228cbdf6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a465a9aaddcb9517ad8249a228cbdf6e1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Visitor , class... Variants&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto AZStd::variant_detail::visitor::impl::make_dispatch_for_all </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>This function makes (m^n) visitor functions where m is the number of variants and n is the number of alternatives per variant This tree of visitors can invoke the visitor for any combination of alternatives. For three variants with three alternatives 27 functions are generated For two variants with three alternatives 9 functions are generated For three variants with two alternatives each 8 functions are generated </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/containers/variant_impl.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:37 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:57 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

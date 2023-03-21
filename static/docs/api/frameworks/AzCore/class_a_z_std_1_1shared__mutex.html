@@ -54,9 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1shared__mutex-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::shared_mutex Class Reference</div>  </div>
@@ -85,24 +82,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unlock</b> ()</td></t
 <tr class="memitem:a7e681aaa09662962ca5da77c56c97dbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e681aaa09662962ca5da77c56c97dbc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>try_lock</b> ()</td></tr>
 <tr class="separator:a7e681aaa09662962ca5da77c56c97dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1a210ed3c3548951f72d6a7c30047310"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a210ed3c3548951f72d6a7c30047310"></a>
-<a class="el" href="class_a_z_std_1_1shared__mutex.html">shared_mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_std_1_1shared__mutex.html">shared_mutex</a> &amp;)=delete</td></tr>
-<tr class="separator:a1a210ed3c3548951f72d6a7c30047310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a146ec61303611a7ef1ba2dc468b4c274"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a146ec61303611a7ef1ba2dc468b4c274"></a>
-AZStd::atomic&lt; AZ::u32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b></td></tr>
-<tr class="separator:a146ec61303611a7ef1ba2dc468b4c274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:acc259611ea7c8b696fe42eedf5d4103b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc259611ea7c8b696fe42eedf5d4103b"></a>
-static const AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_exclusiveLockBit</b> = 0x80000000</td></tr>
-<tr class="separator:acc259611ea7c8b696fe42eedf5d4103b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Light weight Read Write spin lock (based on C++17 standard std::shared_mutex) TODO: Since this mode uses relaxed more if we care about debug performance we can handcraft using the intrinsics here instead of the function overhead that atomics have. </p>
@@ -112,7 +91,7 @@ static const AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_exc
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:57 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

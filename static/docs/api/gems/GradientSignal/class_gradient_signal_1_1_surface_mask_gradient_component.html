@@ -51,6 +51,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_gradient_signal_1_1_surface_mask_gradient_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -101,6 +102,24 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:af8ef3a891d21a9e2213cdc2a347a3a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae398da1b971c9869171f891f508ff4f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae398da1b971c9869171f891f508ff4f2"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumTags</b> () const override</td></tr>
+<tr class="separator:ae398da1b971c9869171f891f508ff4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf48d0b02043a5b884d6502c2d55c84b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf48d0b02043a5b884d6502c2d55c84b"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetTag</b> (int tagIndex) const override</td></tr>
+<tr class="separator:abf48d0b02043a5b884d6502c2d55c84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a8eac8e51fdd9f9df8d1193b0b366f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2a8eac8e51fdd9f9df8d1193b0b366f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTag</b> (int tagIndex) override</td></tr>
+<tr class="separator:ac2a8eac8e51fdd9f9df8d1193b0b366f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4dc994c5ef2f5d00976d1c91935a78d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4dc994c5ef2f5d00976d1c91935a78d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTag</b> (AZStd::string tag) override</td></tr>
+<tr class="separator:ab4dc994c5ef2f5d00976d1c91935a78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab536d4d3212255d05f4862167382345"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab536d4d3212255d05f4862167382345"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSurfaceChanged</b> (const AZ::EntityId &amp;entityId, const AZ::Aabb &amp;oldBounds, const AZ::Aabb &amp;newBounds, const SurfaceData::SurfaceTagSet &amp;changedSurfaceTags) override</td></tr>
+<tr class="separator:aab536d4d3212255d05f4862167382345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a8651d636606ce59e62700bd4eadda534"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8651d636606ce59e62700bd4eadda534"></a>
@@ -116,7 +135,7 @@ template&lt;typename , typename &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:40 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:21 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

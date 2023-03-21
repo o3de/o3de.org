@@ -52,6 +52,7 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_script_canvas_editor_1_1_i_state-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -80,6 +81,36 @@ Static Public Attributes</h2></td></tr>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>EXIT_STATE_ID</b> = (-1)</td></tr>
 <tr class="separator:a5a2666632979cc422eb13d8a164e74c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a23a65cc38a164573d9d1f3833f69f927"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23a65cc38a164573d9d1f3833f69f927"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetStateId</b> () const =0</td></tr>
+<tr class="separator:a23a65cc38a164573d9d1f3833f69f927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e7599d80723397c934bb2b87fdb938"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28e7599d80723397c934bb2b87fdb938"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Enter</b> ()</td></tr>
+<tr class="separator:a28e7599d80723397c934bb2b87fdb938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b2b4455ed8bb5fd0a3c96ee98b48e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7b2b4455ed8bb5fd0a3c96ee98b48e9"></a>
+virtual ExitStatus&#160;</td><td class="memItemRight" valign="bottom"><b>Exit</b> ()</td></tr>
+<tr class="separator:aa7b2b4455ed8bb5fd0a3c96ee98b48e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1964ee442cc9cedfd5a2b740cdc0b740"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1964ee442cc9cedfd5a2b740cdc0b740"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnter</b> ()</td></tr>
+<tr class="separator:a1964ee442cc9cedfd5a2b740cdc0b740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092f0f2e2e40f3c2439fafef81cf9aa2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a092f0f2e2e40f3c2439fafef81cf9aa2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Run</b> ()</td></tr>
+<tr class="separator:a092f0f2e2e40f3c2439fafef81cf9aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a1509bfb0e19587a30d7b70d330e2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59a1509bfb0e19587a30d7b70d330e2d"></a>
+virtual ExitStatus&#160;</td><td class="memItemRight" valign="bottom"><b>OnExit</b> ()</td></tr>
+<tr class="separator:a59a1509bfb0e19587a30d7b70d330e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46f518540f997409fda488e739e9fa1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab46f518540f997409fda488e739e9fa1"></a>
+virtual <a class="el" href="class_script_canvas_editor_1_1_state_machine.html">StateMachine</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStateMachine</b> ()</td></tr>
+<tr class="separator:ab46f518540f997409fda488e739e9fa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa10e26134716ba1e97aba9cb76723aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa10e26134716ba1e97aba9cb76723aa"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>EvaluateTransition</b> ()</td></tr>
+<tr class="separator:aaa10e26134716ba1e97aba9cb76723aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007f7b4144cb129234bd213dfca6c553"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a007f7b4144cb129234bd213dfca6c553"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const </td></tr>
+<tr class="separator:a007f7b4144cb129234bd213dfca6c553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a97c30032fa6c28eaf8a40b6df6ea97ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97c30032fa6c28eaf8a40b6df6ea97ed"></a>
@@ -94,7 +125,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>StateMachine</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:46 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:27 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

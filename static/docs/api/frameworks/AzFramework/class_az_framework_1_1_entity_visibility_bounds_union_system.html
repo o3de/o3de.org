@@ -54,9 +54,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_entity_visibility_bounds_union_system-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::EntityVisibilityBoundsUnionSystem Class Reference</div>  </div>
@@ -70,11 +67,6 @@
 
 <p>Inherits Handler, and Handler.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_entity_visibility_bounds_union_system_1_1_entity_visibility_bounds_union_instance.html">EntityVisibilityBoundsUnionInstance</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad41233372f9952ea66e411f02207886f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad41233372f9952ea66e411f02207886f"></a>
@@ -98,45 +90,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessEntityBoundsUn
 <tr class="memitem:a593d21eee37bfca1e7bb75eba6dbf6df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a593d21eee37bfca1e7bb75eba6dbf6df"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTransformUpdated</b> (AZ::Entity *entity) override</td></tr>
 <tr class="separator:a593d21eee37bfca1e7bb75eba6dbf6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:aa7c2b9f81a682ce318f7f45289a1bb03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7c2b9f81a682ce318f7f45289a1bb03"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>UniqueEntities</b> = AZStd::set&lt; AZ::Entity * &gt;</td></tr>
-<tr class="separator:aa7c2b9f81a682ce318f7f45289a1bb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36beb564d8c66635e919beaabf71544b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36beb564d8c66635e919beaabf71544b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>EntityVisibilityBoundsUnionInstanceMapping</b> = AZStd::unordered_map&lt; AZ::Entity *, <a class="el" href="struct_az_framework_1_1_entity_visibility_bounds_union_system_1_1_entity_visibility_bounds_union_instance.html">EntityVisibilityBoundsUnionInstance</a> &gt;</td></tr>
-<tr class="separator:a36beb564d8c66635e919beaabf71544b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ac862be0341841fac2a732899bfa6c847"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac862be0341841fac2a732899bfa6c847"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityActivated</b> (AZ::Entity *entity)</td></tr>
-<tr class="separator:ac862be0341841fac2a732899bfa6c847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d740acc72375ca980f6c45c6b66fc7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d740acc72375ca980f6c45c6b66fc7f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDeactivated</b> (AZ::Entity *entity)</td></tr>
-<tr class="separator:a5d740acc72375ca980f6c45c6b66fc7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e0eaff825b968e0ac891b5fabf51b05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e0eaff825b968e0ac891b5fabf51b05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, AZ::ScriptTimePoint time) override</td></tr>
-<tr class="separator:a1e0eaff825b968e0ac891b5fabf51b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a22b842f8557834b5cc5852be6de3d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a22b842f8557834b5cc5852be6de3d3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateVisibilitySystem</b> (AZ::Entity *entity, <a class="el" href="struct_az_framework_1_1_entity_visibility_bounds_union_system_1_1_entity_visibility_bounds_union_instance.html">EntityVisibilityBoundsUnionInstance</a> &amp;instance)</td></tr>
-<tr class="separator:a4a22b842f8557834b5cc5852be6de3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a27e5d4a4cc180919486a732b8e98dd91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27e5d4a4cc180919486a732b8e98dd91"></a>
-EntityVisibilityBoundsUnionInstanceMapping&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityVisibilityBoundsUnionInstanceMapping</b></td></tr>
-<tr class="separator:a27e5d4a4cc180919486a732b8e98dd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cf6d2a38027b1278eed5b2586eeb7f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cf6d2a38027b1278eed5b2586eeb7f7"></a>
-UniqueEntities&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityBoundsDirty</b></td></tr>
-<tr class="separator:a4cf6d2a38027b1278eed5b2586eeb7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc74033a795f0fde02fa70663b7ad18e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc74033a795f0fde02fa70663b7ad18e"></a>
-AZ::EntityActivatedEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityActivatedEventHandler</b></td></tr>
-<tr class="separator:acc74033a795f0fde02fa70663b7ad18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f41e6d12f115beeba436c7a2b2e1de0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f41e6d12f115beeba436c7a2b2e1de0"></a>
-AZ::EntityDeactivatedEvent::Handler&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityDeactivatedEventHandler</b></td></tr>
-<tr class="separator:a2f41e6d12f115beeba436c7a2b2e1de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provide a unified hook between entities and the visibility system. </p>
@@ -146,7 +99,7 @@ AZ::EntityDeactivatedEvent::Handler&#160;</td><td class="memItemRight" valign="b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

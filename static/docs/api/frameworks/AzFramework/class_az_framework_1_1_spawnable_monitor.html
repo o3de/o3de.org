@@ -55,8 +55,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_spawnable_monitor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::SpawnableMonitor Class Reference</div>  </div>
@@ -67,7 +65,7 @@
 
 <p>Inherits MultiHandler.</p>
 
-<p>Inherited by <a class="el" href="class_az_framework_1_1_spawnable_entities_container_1_1_monitor.html">AzFramework::SpawnableEntitiesContainer::Monitor</a>.</p>
+<p>Inherited by AzFramework::SpawnableEntitiesContainer::Monitor.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -116,36 +114,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a69a459a5536c7e70018da27a91f79bec">OnSpawnableIssue</a> (IssueType issueType, AZStd::string_view message)</td></tr>
 <tr class="memdesc:a69a459a5536c7e70018da27a91f79bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an error occurred while the Asset Manager did an operation on the spawnable. <br/></td></tr>
 <tr class="separator:a69a459a5536c7e70018da27a91f79bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ab39cf626fb63475782e273a700271032"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab39cf626fb63475782e273a700271032"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReady</b> (AZ::Data::Asset&lt; AZ::Data::AssetData &gt; asset) override</td></tr>
-<tr class="separator:ab39cf626fb63475782e273a700271032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8464aa87ea8b204c145cbf259a2f6fd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8464aa87ea8b204c145cbf259a2f6fd0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloaded</b> (AZ::Data::Asset&lt; AZ::Data::AssetData &gt; asset) override</td></tr>
-<tr class="separator:a8464aa87ea8b204c145cbf259a2f6fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315ef952cdb2574b4534817575b34199"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a315ef952cdb2574b4534817575b34199"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetUnloaded</b> (const AZ::Data::AssetId assetId, const AZ::Data::AssetType assetType) override</td></tr>
-<tr class="separator:a315ef952cdb2574b4534817575b34199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade922f7a74dd06639a69b85b5efe2f59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade922f7a74dd06639a69b85b5efe2f59"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetError</b> (AZ::Data::Asset&lt; AZ::Data::AssetData &gt; asset) override</td></tr>
-<tr class="separator:ade922f7a74dd06639a69b85b5efe2f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a416097074495054559c94b889eee8566"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a416097074495054559c94b889eee8566"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetCanceled</b> (AZ::Data::AssetId assetId) override</td></tr>
-<tr class="separator:a416097074495054559c94b889eee8566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01af627f256d2e14e16f7bd5da865a18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01af627f256d2e14e16f7bd5da865a18"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloadError</b> (AZ::Data::Asset&lt; AZ::Data::AssetData &gt; asset) override</td></tr>
-<tr class="separator:a01af627f256d2e14e16f7bd5da865a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2329de9308204a17c4cf8180d6827776"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2329de9308204a17c4cf8180d6827776"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isConnected</b> { false }</td></tr>
-<tr class="separator:a2329de9308204a17c4cf8180d6827776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0375e25ca0c5e06a37f6651e075ca472"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0375e25ca0c5e06a37f6651e075ca472"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isLoaded</b> { false }</td></tr>
-<tr class="separator:a0375e25ca0c5e06a37f6651e075ca472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A utility class to make it easier to work with individual spawnables. This class will monitor a spawnable for changes and provides a simplified interface to respond to. </p>
@@ -224,8 +192,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isLoaded</b> { fals
 </div><div class="memdoc">
 <p>Called when a spawnable has been reloaded. Note that if the replacement isn't used to replace the original spawnable then the replacement asset will eventually run out of references and send an OnSpawnableUnloaded event. </p>
 
-<p>Reimplemented in <a class="el" href="class_az_framework_1_1_spawnable_entities_container_1_1_monitor.html#a7a8b0c24223518e8de772fc0f0752b38">AzFramework::SpawnableEntitiesContainer::Monitor</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -234,7 +200,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isLoaded</b> { fals
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

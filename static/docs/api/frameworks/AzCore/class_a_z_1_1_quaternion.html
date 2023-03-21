@@ -55,8 +55,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_quaternion-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Quaternion Class Reference</div>  </div>
@@ -380,36 +378,6 @@ static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</
 <tr class="memitem:ae051f8ff177f753e844dc72dc3e1f53a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae051f8ff177f753e844dc72dc3e1f53a"></a>
 static <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRotationZ</b> (float angleInRadians)</td></tr>
 <tr class="separator:ae051f8ff177f753e844dc72dc3e1f53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ac671519ff26a09a22de9226cf6328e35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac671519ff26a09a22de9226cf6328e35"></a>
-<a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_quaternion.html#ac671519ff26a09a22de9226cf6328e35">GetAbs</a> () const </td></tr>
-<tr class="memdesc:ac671519ff26a09a22de9226cf6328e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes the absolute value of each component of the quaternion. <br/></td></tr>
-<tr class="separator:ac671519ff26a09a22de9226cf6328e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aa2aa1bd956621581aebe113d6bf58981"><td class="memItemLeft" ><a class="anchor" id="aa2aa1bd956621581aebe113d6bf58981"></a>
-union {</td></tr>
-<tr class="memitem:a85d98ddeecb5f6a863108105fac602db"><td class="memItemLeft" >&#160;&#160;&#160;Simd::Vec4::FloatType&#160;&#160;&#160;<b>m_value</b></td></tr>
-<tr class="separator:a85d98ddeecb5f6a863108105fac602db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c991a5d50835b155024ca89e4c67cb7"><td class="memItemLeft" >&#160;&#160;&#160;float&#160;&#160;&#160;<b>m_values</b> [4]</td></tr>
-<tr class="separator:a3c991a5d50835b155024ca89e4c67cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2038c0523ac5c4a63d14e0daf8a0d2c6"><td class="memItemLeft" ><a class="anchor" id="a2038c0523ac5c4a63d14e0daf8a0d2c6"></a>
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a7b378ac9c9497309183723166f06acf5"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<b>m_x</b></td></tr>
-<tr class="separator:a7b378ac9c9497309183723166f06acf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61dcbd74d181008f4e8e0307cbc029e5"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<b>m_y</b></td></tr>
-<tr class="separator:a61dcbd74d181008f4e8e0307cbc029e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd6c2644b30aaa14e393a955924d6c2"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<b>m_z</b></td></tr>
-<tr class="separator:a9bd6c2644b30aaa14e393a955924d6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951f04672901033651bad03b86e831ab"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float&#160;&#160;&#160;<b>m_w</b></td></tr>
-<tr class="separator:a951f04672901033651bad03b86e831ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2038c0523ac5c4a63d14e0daf8a0d2c6"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a2038c0523ac5c4a63d14e0daf8a0d2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2aa1bd956621581aebe113d6bf58981"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aa2aa1bd956621581aebe113d6bf58981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab667084cc56cce5713d41b32f270ff3d"></a>
@@ -848,7 +816,7 @@ union {</td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

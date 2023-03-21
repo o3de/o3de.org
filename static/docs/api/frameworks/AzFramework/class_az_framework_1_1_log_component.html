@@ -54,9 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_log_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::LogComponent Class Reference</div>  </div>
@@ -117,41 +114,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c814ba2e298be56fea5c464c1c85e4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c814ba2e298be56fea5c464c1c85e4d"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a4c814ba2e298be56fea5c464c1c85e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af7bbfd0d8160ec0cece15f07f36dedda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7bbfd0d8160ec0cece15f07f36dedda"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateLogFile</b> ()</td></tr>
-<tr class="separator:af7bbfd0d8160ec0cece15f07f36dedda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92c03b97126ebdc129fe6567b06d6684"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92c03b97126ebdc129fe6567b06d6684"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DeactivateLogFile</b> ()</td></tr>
-<tr class="separator:a92c03b97126ebdc129fe6567b06d6684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ae5938d364fb7e2822f697e3a349a7f3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5938d364fb7e2822f697e3a349a7f3c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_log_component.html#ae5938d364fb7e2822f697e3a349a7f3c">GetProvidedServices</a> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
-<tr class="memdesc:ae5938d364fb7e2822f697e3a349a7f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::ComponentDescriptor::GetProvidedServices <br/></td></tr>
-<tr class="separator:ae5938d364fb7e2822f697e3a349a7f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f8b33e48615c0a37015c87c3ff6f11e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f8b33e48615c0a37015c87c3ff6f11e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_log_component.html#a4f8b33e48615c0a37015c87c3ff6f11e">GetIncompatibleServices</a> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
-<tr class="memdesc:a4f8b33e48615c0a37015c87c3ff6f11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::ComponentDescriptor::GetIncompatibleServices <br/></td></tr>
-<tr class="separator:a4f8b33e48615c0a37015c87c3ff6f11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a42b244353111499f3f8f03d5b3eba7c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42b244353111499f3f8f03d5b3eba7c7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_machineReadable</b> = true</td></tr>
-<tr class="separator:a42b244353111499f3f8f03d5b3eba7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef6c091b49d4c46f33eb6d3f07c2ddb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acef6c091b49d4c46f33eb6d3f07c2ddb"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_logFileBaseName</b></td></tr>
-<tr class="separator:acef6c091b49d4c46f33eb6d3f07c2ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee5adc239f63d0427c614847b1d26f2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee5adc239f63d0427c614847b1d26f2e"></a>
-AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_rolloverLength</b></td></tr>
-<tr class="separator:aee5adc239f63d0427c614847b1d26f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02549c32af199489692786e1758c6958"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02549c32af199489692786e1758c6958"></a>
-<a class="el" href="class_az_framework_1_1_log_file.html">LogFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_logFile</b></td></tr>
-<tr class="separator:a02549c32af199489692786e1758c6958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_framework_1_1_log_component.html">LogComponent</a> <a class="el" href="class_az_framework_1_1_log_component.html">LogComponent</a> listens to AZ trace messages and forwards them to a log file </p>
@@ -161,7 +123,7 @@ AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_rolloverLength</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

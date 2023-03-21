@@ -51,6 +51,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_gradient_signal_1_1_surface_slope_gradient_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,6 +105,57 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSer
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a49321fae553e2b725752c03fde76c841"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4fde6fab8885ea39e21ec3d931836775"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fde6fab8885ea39e21ec3d931836775"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlopeMin</b> () const override</td></tr>
+<tr class="separator:a4fde6fab8885ea39e21ec3d931836775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aa03f225be0001d7b3f73cd48379e28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aa03f225be0001d7b3f73cd48379e28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSlopeMin</b> (float slopeMin) override</td></tr>
+<tr class="separator:a2aa03f225be0001d7b3f73cd48379e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e46a8d4bef3abac8a10e54f5f3783eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e46a8d4bef3abac8a10e54f5f3783eb"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetSlopeMax</b> () const override</td></tr>
+<tr class="separator:a1e46a8d4bef3abac8a10e54f5f3783eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16a2cbfa62cd7637f6c7dcb349c328a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac16a2cbfa62cd7637f6c7dcb349c328a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSlopeMax</b> (float slopeMax) override</td></tr>
+<tr class="separator:ac16a2cbfa62cd7637f6c7dcb349c328a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe207089e939ee7733d57ba00443ee6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe207089e939ee7733d57ba00443ee6e"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumTags</b> () const override</td></tr>
+<tr class="separator:afe207089e939ee7733d57ba00443ee6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1181938856c135d45f304cf125d28765"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1181938856c135d45f304cf125d28765"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetTag</b> (int tagIndex) const override</td></tr>
+<tr class="separator:a1181938856c135d45f304cf125d28765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc81270c14267f3c211e50a47fdaee8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adbc81270c14267f3c211e50a47fdaee8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTag</b> (int tagIndex) override</td></tr>
+<tr class="separator:adbc81270c14267f3c211e50a47fdaee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ca8a8554af12add03c9af6350c021fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ca8a8554af12add03c9af6350c021fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTag</b> (AZStd::string tag) override</td></tr>
+<tr class="separator:a0ca8a8554af12add03c9af6350c021fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac085775f0debb33cc1c586319aff2d30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac085775f0debb33cc1c586319aff2d30"></a>
+AZ::u8&#160;</td><td class="memItemRight" valign="bottom"><b>GetRampType</b> () const override</td></tr>
+<tr class="separator:ac085775f0debb33cc1c586319aff2d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8528dabbc74ec0d5eb9e47a85d6888"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d8528dabbc74ec0d5eb9e47a85d6888"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRampType</b> (AZ::u8 rampType) override</td></tr>
+<tr class="separator:a4d8528dabbc74ec0d5eb9e47a85d6888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0fdd13088f31e1efa630bf1e4cda54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade0fdd13088f31e1efa630bf1e4cda54"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetFallOffRange</b> () const override</td></tr>
+<tr class="separator:ade0fdd13088f31e1efa630bf1e4cda54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa474788bb73c34eb2377a5701c3e66b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa474788bb73c34eb2377a5701c3e66b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFallOffRange</b> (float range) override</td></tr>
+<tr class="separator:afa474788bb73c34eb2377a5701c3e66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6187d0bbb6ac3c653018d7fa64a56e5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6187d0bbb6ac3c653018d7fa64a56e5b"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetFallOffStrength</b> () const override</td></tr>
+<tr class="separator:a6187d0bbb6ac3c653018d7fa64a56e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36458e4f2fffebea33d2343086d2e166"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36458e4f2fffebea33d2343086d2e166"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFallOffStrength</b> (float strength) override</td></tr>
+<tr class="separator:a36458e4f2fffebea33d2343086d2e166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892084fa6267bb088ff4d5ba0be6a1db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a892084fa6267bb088ff4d5ba0be6a1db"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetFallOffMidpoint</b> () const override</td></tr>
+<tr class="separator:a892084fa6267bb088ff4d5ba0be6a1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5e6353576eb0cb9a7bd4850c857b19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd5e6353576eb0cb9a7bd4850c857b19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFallOffMidpoint</b> (float midpoint) override</td></tr>
+<tr class="separator:acd5e6353576eb0cb9a7bd4850c857b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a8651d636606ce59e62700bd4eadda534"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8651d636606ce59e62700bd4eadda534"></a>
@@ -119,7 +171,7 @@ template&lt;typename , typename &gt; </td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:40 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:21 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

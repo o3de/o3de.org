@@ -55,8 +55,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_property_tree_editor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::PropertyTreeEditor Class Reference</div>  </div>
@@ -65,17 +63,6 @@
 
 <p><code>#include &lt;PropertyTreeEditor.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_associate_pair_info.html">AssociatePairInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_change_notification.html">ChangeNotification</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_container_data.html">ContainerData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_property_tree_editor_node.html">PropertyTreeEditorNode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:af9e596948a1e47a96ff7dacfdc3f022f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9e596948a1e47a96ff7dacfdc3f022f"></a>
@@ -145,121 +132,16 @@ PropertyAccessOutcome&#160;</td><td class="memItemRight" valign="bottom"><b>GetC
 <tr class="memitem:a9f96707eb7a267ed7b23c6a8af3b6470"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f96707eb7a267ed7b23c6a8af3b6470"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasAttribute</b> (AZStd::string_view propertyPath, AZStd::string_view attribute) const </td></tr>
 <tr class="separator:a9f96707eb7a267ed7b23c6a8af3b6470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a5a749a1209006d3e6d75ffc1d125101d"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_property_tree_editor.html#a5a749a1209006d3e6d75ffc1d125101d">HandleTypeConversion</a> (AZ::TypeId fromType, AZ::TypeId toType, const void *sourceValuePtr, AZStd::any &amp;convertedValue)</td></tr>
-<tr class="separator:a5a749a1209006d3e6d75ffc1d125101d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abef0fd969cefd8d7e8b6c957119b4216"><td class="memTemplParams" colspan="2"><a class="anchor" id="abef0fd969cefd8d7e8b6c957119b4216"></a>
-template&lt;typename V &gt; </td></tr>
-<tr class="memitem:abef0fd969cefd8d7e8b6c957119b4216"><td class="memTemplItemLeft" align="right" valign="top">const void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_property_tree_editor.html#abef0fd969cefd8d7e8b6c957119b4216">HandleTypeConversion</a> (V fromValue, AZ::TypeId toType, AZStd::any &amp;convertedValue)</td></tr>
-<tr class="memdesc:abef0fd969cefd8d7e8b6c957119b4216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always returns a pointer to  if successful. Otherwise returns nullptr. <br/></td></tr>
-<tr class="separator:abef0fd969cefd8d7e8b6c957119b4216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae0b2d39909dafabd97b14d94413ef3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae0b2d39909dafabd97b14d94413ef3f"></a>
-AZStd::optional<br class="typebreak"/>
-&lt; <a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_property_tree_editor_node.html">PropertyTreeEditorNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FetchPropertyTreeEditorNode</b> (AZStd::string_view propertyPath)</td></tr>
-<tr class="separator:aae0b2d39909dafabd97b14d94413ef3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06df4f411ad68016614f02c51a7d118b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06df4f411ad68016614f02c51a7d118b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPropertyTreeEditorNodeHidden</b> (const <a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_property_tree_editor_node.html">PropertyTreeEditorNode</a> &amp;propertyTreeEditorNode) const </td></tr>
-<tr class="separator:a06df4f411ad68016614f02c51a7d118b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0498175c771c1e07554ad7d6f5ae4a44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0498175c771c1e07554ad7d6f5ae4a44"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetSimpleAssetPath</b> (const AZ::Data::AssetId &amp;assetId, const <a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_property_tree_editor_node.html">PropertyTreeEditorNode</a> &amp;pteNode)</td></tr>
-<tr class="separator:a0498175c771c1e07554ad7d6f5ae4a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9059a327e5fd0166bd05f34ac85bcd14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9059a327e5fd0166bd05f34ac85bcd14"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetAssetData</b> (const AZ::Data::AssetId &amp;assetId, const <a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_property_tree_editor_node.html">PropertyTreeEditorNode</a> &amp;pteNode)</td></tr>
-<tr class="separator:a9059a327e5fd0166bd05f34ac85bcd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f31a1ea4b90f35e7161d07c50d046da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f31a1ea4b90f35e7161d07c50d046da"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleChangeNotifyAttribute</b> (PropertyAttributeReader &amp;reader, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node, AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_change_notification.html">ChangeNotification</a> &gt; &amp;notifier)</td></tr>
-<tr class="separator:a1f31a1ea4b90f35e7161d07c50d046da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14fa2c480d479657f85348dfe95a2d79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14fa2c480d479657f85348dfe95a2d79"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PopulateNodeMap</b> (AZStd::list&lt; <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> &gt; &amp;nodeList, const AZStd::string_view &amp;previousPath=&quot;&quot;)</td></tr>
-<tr class="separator:a14fa2c480d479657f85348dfe95a2d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae25da245bb7a9889576d53b405003647"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae25da245bb7a9889576d53b405003647"></a>
-PropertyModificationRefreshLevel&#160;</td><td class="memItemRight" valign="bottom"><b>PropertyNotify</b> (const <a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_property_tree_editor_node.html">PropertyTreeEditorNode</a> *node, size_t optionalIndex=0)</td></tr>
-<tr class="separator:ae25da245bb7a9889576d53b405003647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73ebbd6cd473ced527556cc1213a937"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa73ebbd6cd473ced527556cc1213a937"></a>
-AZStd::optional&lt; <a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_container_data.html">ContainerData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FetchContainerData</b> (AZStd::string_view propertyPath) const </td></tr>
-<tr class="separator:aa73ebbd6cd473ced527556cc1213a937"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b83a9f0f400ab20250b44e52c86e91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74b83a9f0f400ab20250b44e52c86e91"></a>
-AZStd::optional<br class="typebreak"/>
-&lt; <a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_associate_pair_info.html">AssociatePairInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MakeAssociatePair</b> (const AZ::SerializeContext::ClassElement *containerElement) const </td></tr>
-<tr class="separator:a74b83a9f0f400ab20250b44e52c86e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aa4ad05c113f172e66ff23950eea63bc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4ad05c113f172e66ff23950eea63bc3"></a>
-AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b> = nullptr</td></tr>
-<tr class="separator:aa4ad05c113f172e66ff23950eea63bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ce7e19c73a31fd71066bf0fc71496e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57ce7e19c73a31fd71066bf0fc71496e"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_instance_data_hierarchy.html">InstanceDataHierarchy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceDataHierarchy</b></td></tr>
-<tr class="separator:a57ce7e19c73a31fd71066bf0fc71496e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9aa566dbcd8dad9b6e50d2bf3a5910e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9aa566dbcd8dad9b6e50d2bf3a5910e"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; AZStd::string, <br class="typebreak"/>
-<a class="el" href="struct_az_tools_framework_1_1_property_tree_editor_1_1_property_tree_editor_node.html">PropertyTreeEditorNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_nodeMap</b></td></tr>
-<tr class="separator:ae9aa566dbcd8dad9b6e50d2bf3a5910e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ebc41dcf83f556c256ff00064cb7a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5ebc41dcf83f556c256ff00064cb7a7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_enforceVisiblity</b> = false</td></tr>
-<tr class="separator:ab5ebc41dcf83f556c256ff00064cb7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to easily access, enumerate and alter Edit Context properties of an object. The constructor automatically builds the <a class="el" href="class_az_tools_framework_1_1_instance_data_hierarchy.html">InstanceDataHierarchy</a> for the object provided and maps the property paths to the respective <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> for easy access. Used to allow editor scripts to access and edit properties of Components, CryMaterials and more. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5a749a1209006d3e6d75ffc1d125101d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const void* AzToolsFramework::PropertyTreeEditor::HandleTypeConversion </td>
-          <td>(</td>
-          <td class="paramtype">AZ::TypeId&#160;</td>
-          <td class="paramname"><em>fromType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::TypeId&#160;</td>
-          <td class="paramname"><em>toType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>sourceValuePtr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZStd::any &amp;&#160;</td>
-          <td class="paramname"><em>convertedValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Given a source () and destination () rtti types it converts the value pointed by  if the rtti types are different, otherwise returns . When  !=  then the converted value is placed in  and the address to  is returned. If the conversion is not supported it returns nullptr. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/PropertyTreeEditor/PropertyTreeEditor.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -51,6 +51,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_script_canvas_1_1_translation_1_1_graph_to_x-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::Translation::GraphToX Class Reference</div>  </div>
@@ -64,6 +66,91 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3da0cded8013be41068216622e83eb8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3da0cded8013be41068216622e83eb8d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSuccessfull</b> () const </td></tr>
 <tr class="separator:a3da0cded8013be41068216622e83eb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a679a5b205567f5671eda03995a069510"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a679a5b205567f5671eda03995a069510"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GraphToX</b> (const <a class="el" href="struct_script_canvas_1_1_translation_1_1_configuration.html">Configuration</a> &amp;configuration, const <a class="el" href="class_script_canvas_1_1_grammar_1_1_abstract_code_model.html">Grammar::AbstractCodeModel</a> &amp;model)</td></tr>
+<tr class="separator:a679a5b205567f5671eda03995a069510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67fbeee955e25a480499484b520bdee0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67fbeee955e25a480499484b520bdee0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddError</b> (Grammar::ExecutionTreeConstPtr execution, ValidationConstPtr error)</td></tr>
+<tr class="separator:a67fbeee955e25a480499484b520bdee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e67e2555b7d9754a2ad261908b9dca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1e67e2555b7d9754a2ad261908b9dca"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>AddMultiReturnName</b> ()</td></tr>
+<tr class="separator:aa1e67e2555b7d9754a2ad261908b9dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00c67a42dfb6079b9d8c2f1ff83aad1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab00c67a42dfb6079b9d8c2f1ff83aad1"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetMultiReturnName</b> () const </td></tr>
+<tr class="separator:ab00c67a42dfb6079b9d8c2f1ff83aad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac2c7792c9eb6ec181d0753c0011710"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adac2c7792c9eb6ec181d0753c0011710"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseBlockComment</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:adac2c7792c9eb6ec181d0753c0011710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e26ea4d017c4f2369255b9ddd3afde1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e26ea4d017c4f2369255b9ddd3afde1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseFunctionBlock</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:a7e26ea4d017c4f2369255b9ddd3afde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acd58b2e3a199aaeadef14586f90215"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8acd58b2e3a199aaeadef14586f90215"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseScope</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:a8acd58b2e3a199aaeadef14586f90215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9afd1a87e6a32689ba4ea0ed68d2fd6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9afd1a87e6a32689ba4ea0ed68d2fd6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseNamespace</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer, AZStd::string_view ns)</td></tr>
+<tr class="separator:a9afd1a87e6a32689ba4ea0ed68d2fd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b69bdd21b471cf9d07ecbcec5e8685c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b69bdd21b471cf9d07ecbcec5e8685c"></a>
+AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphName</b> () const </td></tr>
+<tr class="separator:a1b69bdd21b471cf9d07ecbcec5e8685c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb873ea339f166fae1f0d881306eda6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb873ea339f166fae1f0d881306eda6a"></a>
+AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullPath</b> () const </td></tr>
+<tr class="separator:aeb873ea339f166fae1f0d881306eda6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426f4eb37f123aaeb0148009356269b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a426f4eb37f123aaeb0148009356269b3"></a>
+AZStd::sys_time_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetTranslationDuration</b> () const </td></tr>
+<tr class="separator:a426f4eb37f123aaeb0148009356269b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15bf03995dc6ea988c7d50c9764fbc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac15bf03995dc6ea988c7d50c9764fbc1"></a>
+AZStd::vector<br class="typebreak"/>
+&lt; ValidationConstPtr &gt; &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>MoveErrors</b> ()</td></tr>
+<tr class="separator:ac15bf03995dc6ea988c7d50c9764fbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615910e2f491186d2bbdc7208a55acbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a615910e2f491186d2bbdc7208a55acbf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenBlockComment</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:a615910e2f491186d2bbdc7208a55acbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c03362c189c79c03339d5678afb3ebc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c03362c189c79c03339d5678afb3ebc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenFunctionBlock</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:a9c03362c189c79c03339d5678afb3ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984e9a80e8fa87b168d0a152bb809f32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a984e9a80e8fa87b168d0a152bb809f32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenNamespace</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer, AZStd::string_view ns)</td></tr>
+<tr class="separator:a984e9a80e8fa87b168d0a152bb809f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1694bed2ca8c3dd3b97217054e9228f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1694bed2ca8c3dd3b97217054e9228f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenScope</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:a1694bed2ca8c3dd3b97217054e9228f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35aeca7ce69fd11a7ed1aad66f15312f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35aeca7ce69fd11a7ed1aad66f15312f"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveScope</b> (const AZStd::vector&lt; AZStd::string &gt; &amp;namespaces)</td></tr>
+<tr class="separator:a35aeca7ce69fd11a7ed1aad66f15312f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0af3a3c5e49247624466e0163bf1d78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0af3a3c5e49247624466e0163bf1d78"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SingleLineComment</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:af0af3a3c5e49247624466e0163bf1d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc688c99be83893cc888157b1cf04a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecc688c99be83893cc888157b1cf04a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteCopyright</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:aecc688c99be83893cc888157b1cf04a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28c363bcd9200ff0bf1ff78e647a3272"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28c363bcd9200ff0bf1ff78e647a3272"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteDoNotModify</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:a28c363bcd9200ff0bf1ff78e647a3272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da568b9631387dca31940d67c7ff6a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0da568b9631387dca31940d67c7ff6a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteLastWritten</b> (<a class="el" href="class_script_canvas_1_1_translation_1_1_writer.html">Writer</a> &amp;writer)</td></tr>
+<tr class="separator:a0da568b9631387dca31940d67c7ff6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3f9d43119ac215290e8dc9cf6b50b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a3f9d43119ac215290e8dc9cf6b50b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkTranslationStart</b> ()</td></tr>
+<tr class="separator:a5a3f9d43119ac215290e8dc9cf6b50b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5916e224a04c1a884b94fba5928a40b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5916e224a04c1a884b94fba5928a40b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkTranslationStop</b> ()</td></tr>
+<tr class="separator:a5916e224a04c1a884b94fba5928a40b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:adaf1b4ea4aa3c9ab647506a66fe91f7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaf1b4ea4aa3c9ab647506a66fe91f7a"></a>
+const <a class="el" href="class_script_canvas_1_1_grammar_1_1_abstract_code_model.html">Grammar::AbstractCodeModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_model</b></td></tr>
+<tr class="separator:adaf1b4ea4aa3c9ab647506a66fe91f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a1be1ce81d4c18841e419b56a227ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3a1be1ce81d4c18841e419b56a227ba"></a>
+const <a class="el" href="struct_script_canvas_1_1_translation_1_1_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_configuration</b></td></tr>
+<tr class="separator:ac3a1be1ce81d4c18841e419b56a227ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac727d4333c8e4243c633c9bfce15c885"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac727d4333c8e4243c633c9bfce15c885"></a>
+AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>m_multiReturnCount</b> = 0</td></tr>
+<tr class="separator:ac727d4333c8e4243c633c9bfce15c885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Translation/GraphToX.h</li>
@@ -71,7 +158,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSuccessfull</b> () 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:46 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:27 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -56,9 +56,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_slice_entity_ownership_service-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::SliceEntityOwnershipService Class Reference</div>  </div>
@@ -71,12 +68,6 @@
 
 <p>Inherited by <a class="el" href="class_az_framework_1_1_slice_game_entity_ownership_service.html">AzFramework::SliceGameEntityOwnershipService</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_slice_entity_ownership_service_1_1_instantiating_slice_info.html">InstantiatingSliceInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracking of pending slice instantiations, each being the requested asset and the associated request's ticket.  <a href="struct_az_framework_1_1_slice_entity_ownership_service_1_1_instantiating_slice_info.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adef0fc062580c0e1be011784dd3ab7ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adef0fc062580c0e1be011784dd3ab7ae"></a>
@@ -203,46 +194,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRootSlice</b> (
 <tr class="separator:a86519a89b1e5b54de6242d4c6be9874a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d4e91d36f1ba35ffea6fbd09968d1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a06d4e91d36f1ba35ffea6fbd09968d1a">HandleNewMetadataEntitiesCreated</a> (AZ::SliceComponent &amp;)</td></tr>
 <tr class="separator:a06d4e91d36f1ba35ffea6fbd09968d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad40341daf31959339ae0f7d9f0727a50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad40341daf31959339ae0f7d9f0727a50"></a>
-EntityList&#160;</td><td class="memItemRight" valign="bottom"><b>GetRootSliceEntities</b> ()</td></tr>
-<tr class="separator:ad40341daf31959339ae0f7d9f0727a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a2271eec057ef710e39015b85beb982ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2271eec057ef710e39015b85beb982ed"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a2271eec057ef710e39015b85beb982ed">DispatchOnSliceInstantiationFailed</a> (const <a class="el" href="class_az_framework_1_1_slice_instantiation_ticket.html">SliceInstantiationTicket</a> &amp;ticket, const AZ::Data::AssetId &amp;assetId, bool canceled)</td></tr>
-<tr class="memdesc:a2271eec057ef710e39015b85beb982ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to send OnSliceInstantiationFailed events. <br/></td></tr>
-<tr class="separator:a2271eec057ef710e39015b85beb982ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a02d6ba858ec57884273cc8062f904b9e"><td class="memItemLeft" align="right" valign="top">AZStd::list<br class="typebreak"/>
-&lt; <a class="el" href="struct_az_framework_1_1_slice_entity_ownership_service_1_1_instantiating_slice_info.html">InstantiatingSliceInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a02d6ba858ec57884273cc8062f904b9e">m_queuedSliceInstantiations</a></td></tr>
-<tr class="separator:a02d6ba858ec57884273cc8062f904b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f8d89cb78a13e5fd89714099e37019"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95f8d89cb78a13e5fd89714099e37019"></a>
-RootSliceAsset&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootAsset</b></td></tr>
-<tr class="separator:a95f8d89cb78a13e5fd89714099e37019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7907742da72598bb7ba02e4a0920bcc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7907742da72598bb7ba02e4a0920bcc9"></a>
-<a class="el" href="namespace_az_framework.html#a1a3f4ee1f65bca5c5030b67d2ca8cb0c">EntityContextId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityContextId</b></td></tr>
-<tr class="separator:a7907742da72598bb7ba02e4a0920bcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a676b99297d164969b643584da1cdb66e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a676b99297d164969b643584da1cdb66e"></a>
-AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a676b99297d164969b643584da1cdb66e">m_nextSliceTicketId</a></td></tr>
-<tr class="memdesc:a676b99297d164969b643584da1cdb66e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monotic tickets for slice instantiation requests. <br/></td></tr>
-<tr class="separator:a676b99297d164969b643584da1cdb66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39626df93ab9d48021440f856fb23e1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39626df93ab9d48021440f856fb23e1c"></a>
-AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a39626df93ab9d48021440f856fb23e1c">m_instantiatingAssetId</a></td></tr>
-<tr class="memdesc:a39626df93ab9d48021440f856fb23e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a slice is instantiating, the associated asset ID is cached here. <br/></td></tr>
-<tr class="separator:a39626df93ab9d48021440f856fb23e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97396ab81824fbd3228a03024b56b21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad97396ab81824fbd3228a03024b56b21"></a>
-AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b></td></tr>
-<tr class="separator:ad97396ab81824fbd3228a03024b56b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a389fab0281b7edc8b539ff76b0e495"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a389fab0281b7edc8b539ff76b0e495"></a>
-AZ::SliceComponent::EntityIdToEntityIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a9a389fab0281b7edc8b539ff76b0e495">m_loadedEntityIdMap</a></td></tr>
-<tr class="memdesc:a9a389fab0281b7edc8b539ff76b0e495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores map from entity Ids loaded from stream, to remapped entity Ids, if remapping was performed. <br/></td></tr>
-<tr class="separator:a9a389fab0281b7edc8b539ff76b0e495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -590,35 +541,13 @@ ValidateEntitiesCallback&#160;</td><td class="memItemRight" valign="bottom"><b>m
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a02d6ba858ec57884273cc8062f904b9e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::list&lt;<a class="el" href="struct_az_framework_1_1_slice_entity_ownership_service_1_1_instantiating_slice_info.html">InstantiatingSliceInfo</a>&gt; AzFramework::SliceEntityOwnershipService::m_queuedSliceInstantiations</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Slices queued for instantation. AZStd::list is used for its stable iterators since elements are deleted during traversal in SliceEntityOwnershipService::OnAssetReady </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Entity/SliceEntityOwnershipService.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

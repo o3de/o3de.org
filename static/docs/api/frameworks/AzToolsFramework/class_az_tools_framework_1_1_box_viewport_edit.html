@@ -53,9 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_box_viewport_edit-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::BoxViewportEdit Class Reference</div>  </div>
@@ -121,39 +118,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallSetTranslation
 <tr class="memitem:a66a6b82329e14f789e0d50fad1107cc9 inherit pub_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66a6b82329e14f789e0d50fad1107cc9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InstallEndEditing</b> (AZStd::function&lt; void()&gt; endEditing)</td></tr>
 <tr class="separator:a66a6b82329e14f789e0d50fad1107cc9 inherit pub_methods_class_az_tools_framework_1_1_base_shape_viewport_edit"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a96c5d7d634fcab626e0f19cbe478c51d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96c5d7d634fcab626e0f19cbe478c51d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>BoxManipulators</b> = AZStd::array&lt; AZStd::shared_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_linear_manipulator.html">LinearManipulator</a> &gt;, 6 &gt;</td></tr>
-<tr class="separator:a96c5d7d634fcab626e0f19cbe478c51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ab52b354e972d4cb85612644e47baa58b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab52b354e972d4cb85612644e47baa58b"></a>
-AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetBoxDimensions</b> () const </td></tr>
-<tr class="separator:ab52b354e972d4cb85612644e47baa58b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9842e6d335f8106be91971401668834b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9842e6d335f8106be91971401668834b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBoxDimensions</b> (const AZ::Vector3 &amp;boxDimensions)</td></tr>
-<tr class="separator:a9842e6d335f8106be91971401668834b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ab9f20ad4ad61a35a4bf50c16d94ca189"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9f20ad4ad61a35a4bf50c16d94ca189"></a>
-BoxManipulators&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_box_viewport_edit.html#ab9f20ad4ad61a35a4bf50c16d94ca189">m_linearManipulators</a></td></tr>
-<tr class="memdesc:ab9f20ad4ad61a35a4bf50c16d94ca189"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_az_tools_framework_1_1_manipulators.html">Manipulators</a> for editing box size. <br/></td></tr>
-<tr class="separator:ab9f20ad4ad61a35a4bf50c16d94ca189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a027fbdb2397897b73ed251ee97c1b215"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a027fbdb2397897b73ed251ee97c1b215"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_box_viewport_edit.html#a027fbdb2397897b73ed251ee97c1b215">m_allowAsymmetricalEditing</a> = false</td></tr>
-<tr class="memdesc:a027fbdb2397897b73ed251ee97c1b215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether moving individual faces independently is allowed. <br/></td></tr>
-<tr class="separator:a027fbdb2397897b73ed251ee97c1b215"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79afe4136ef68426fe25ececb80d5c98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79afe4136ef68426fe25ececb80d5c98"></a>
-AZStd::function&lt; AZ::Vector3()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_getBoxDimensions</b></td></tr>
-<tr class="separator:a79afe4136ef68426fe25ececb80d5c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bf01619dc4b6276334d23009e9c870f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bf01619dc4b6276334d23009e9c870f"></a>
-AZStd::function&lt; void(const <br class="typebreak"/>
-AZ::Vector3 &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_setBoxDimensions</b></td></tr>
-<tr class="separator:a2bf01619dc4b6276334d23009e9c870f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -255,7 +219,7 @@ AZStd::unordered_set<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -53,9 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_xcb_input_device_keyboard-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::XcbInputDeviceKeyboard Class Reference</div>  </div>
@@ -110,48 +107,6 @@ virtual <a class="el" href="namespace_az_framework.html#a68f1ef85c956c9a787e8681
 <tr class="separator:adf95d15422195925f0b34bcb7d93b57a inherit pub_methods_class_az_framework_1_1_input_device_keyboard_1_1_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4e177480e2ccee5e7aedb60f03afb2 inherit pub_methods_class_az_framework_1_1_input_device_keyboard_1_1_implementation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_keyboard_1_1_implementation.html#afd4e177480e2ccee5e7aedb60f03afb2">GetPhysicalKeyOrButtonText</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;, AZStd::string &amp;) const </td></tr>
 <tr class="separator:afd4e177480e2ccee5e7aedb60f03afb2 inherit pub_methods_class_az_framework_1_1_input_device_keyboard_1_1_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ab097eeabba6ec0dff11cbc53acccb575"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab097eeabba6ec0dff11cbc53acccb575"></a>
-const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>InputChannelFromKeyEvent</b> (xcb_keycode_t code) const </td></tr>
-<tr class="separator:ab097eeabba6ec0dff11cbc53acccb575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f162519d6d97e2131ae145326dbf754"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f162519d6d97e2131ae145326dbf754"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateState</b> (const xcb_xkb_state_notify_event_t *state)</td></tr>
-<tr class="separator:a1f162519d6d97e2131ae145326dbf754"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a2193041b28a4b15f8a2b153163e6511f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2193041b28a4b15f8a2b153163e6511f"></a>
-static AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>TextFromKeycode</b> (xkb_state *state, xkb_keycode_t code)</td></tr>
-<tr class="separator:a2193041b28a4b15f8a2b153163e6511f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:af19777ecc98cff33da5ecb886080879a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af19777ecc98cff33da5ecb886080879a"></a>
-XcbUniquePtr&lt; xkb_context, <br class="typebreak"/>
-xkb_context_unref &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_xkbContext</b></td></tr>
-<tr class="separator:af19777ecc98cff33da5ecb886080879a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a531d3a2fb96fb2b92189ef41963dd004"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a531d3a2fb96fb2b92189ef41963dd004"></a>
-XcbUniquePtr&lt; xkb_keymap, <br class="typebreak"/>
-xkb_keymap_unref &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_xkbKeymap</b></td></tr>
-<tr class="separator:a531d3a2fb96fb2b92189ef41963dd004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96f2087859a367f07410792902f6e8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac96f2087859a367f07410792902f6e8d"></a>
-XcbUniquePtr&lt; xkb_state, <br class="typebreak"/>
-xkb_state_unref &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_xkbState</b></td></tr>
-<tr class="separator:ac96f2087859a367f07410792902f6e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a013b8655b7df2944528ce61a08c229be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a013b8655b7df2944528ce61a08c229be"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_coreDeviceId</b> {-1}</td></tr>
-<tr class="separator:a013b8655b7df2944528ce61a08c229be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a172db2646e1baec60142ad035ba8f2f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a172db2646e1baec60142ad035ba8f2f8"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_xkbEventCode</b> {0}</td></tr>
-<tr class="separator:a172db2646e1baec60142ad035ba8f2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199057f60285930868edbc8c0c4c57fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a199057f60285930868edbc8c0c4c57fe"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_initialized</b> {false}</td></tr>
-<tr class="separator:a199057f60285930868edbc8c0c4c57fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6243811ff5accb3e54f83b9a7e6b840"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6243811ff5accb3e54f83b9a7e6b840"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_hasTextEntryStarted</b> {false}</td></tr>
-<tr class="separator:ad6243811ff5accb3e54f83b9a7e6b840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -249,7 +204,7 @@ AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -55,9 +55,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_instance-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -299,96 +296,6 @@ Static Public Member Functions</h2></td></tr>
 static InstanceAlias&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateInstanceAlias</b> ()</td></tr>
 <tr class="separator:a4dcf33321ac1437146545ef14f0c0ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad398f048fee74441866ee76ec1301e1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad398f048fee74441866ee76ec1301e1c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#ad398f048fee74441866ee76ec1301e1c">Instance</a> (AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity, InstanceOptionalReference parent, InstanceAlias alias, EntityIdInstanceRelationship entityIdInstanceRelationship=DefaultEntityIdInstanceRelationship)</td></tr>
-<tr class="memdesc:ad398f048fee74441866ee76ec1301e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor called by public constructor. <br/></td></tr>
-<tr class="separator:ad398f048fee74441866ee76ec1301e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af155a07c3e2df9231151c9c2dac4c4b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af155a07c3e2df9231151c9c2dac4c4b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#af155a07c3e2df9231151c9c2dac4c4b7">ClearEntities</a> ()</td></tr>
-<tr class="memdesc:af155a07c3e2df9231151c9c2dac4c4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters and erases all entities owned by this instance. <br/></td></tr>
-<tr class="separator:af155a07c3e2df9231151c9c2dac4c4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf3b829cb17cedb6b0bc4fb7bd99420e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf3b829cb17cedb6b0bc4fb7bd99420e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#abf3b829cb17cedb6b0bc4fb7bd99420e">RemoveEntities</a> (const AZStd::function&lt; bool(const AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;filter)</td></tr>
-<tr class="memdesc:abf3b829cb17cedb6b0bc4fb7bd99420e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches entities based on a user provided filter. Returns true to detach. <br/></td></tr>
-<tr class="separator:abf3b829cb17cedb6b0bc4fb7bd99420e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33469d7b2bcac8785f95448776ea2264"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a33469d7b2bcac8785f95448776ea2264">RegisterEntity</a> (const AZ::EntityId &amp;entityId, const EntityAlias &amp;entityAlias)</td></tr>
-<tr class="separator:a33469d7b2bcac8785f95448776ea2264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff8fe916edf0d7ddd5794f999682ad31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#aff8fe916edf0d7ddd5794f999682ad31">UnregisterEntity</a> (AZ::EntityId entityId)</td></tr>
-<tr class="separator:aff8fe916edf0d7ddd5794f999682ad31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a387b2e673142ee81cab24cc8c9b6a013"><td class="memItemLeft" align="right" valign="top">AZStd::unique_ptr&lt; AZ::Entity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a387b2e673142ee81cab24cc8c9b6a013">DetachEntityHelper</a> (const EntityAlias &amp;entityAlias)</td></tr>
-<tr class="separator:a387b2e673142ee81cab24cc8c9b6a013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ab29d5dd9ff20a8e76683346012339b7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#ab29d5dd9ff20a8e76683346012339b7a">GetEntities_Impl</a> (const AZStd::function&lt; bool(AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;callback)</td></tr>
-<tr class="separator:ab29d5dd9ff20a8e76683346012339b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b3452f12275c5fbdb7ea04cd4e6c234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b3452f12275c5fbdb7ea04cd4e6c234"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetConstEntities_Impl</b> (const AZStd::function&lt; bool(const AZ::Entity &amp;)&gt; &amp;callback) const </td></tr>
-<tr class="separator:a1b3452f12275c5fbdb7ea04cd4e6c234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac814e6e86d36b6d733d82fb6a2ac2e92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac814e6e86d36b6d733d82fb6a2ac2e92"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllEntitiesInHierarchy_Impl</b> (const AZStd::function&lt; bool(AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;callback)</td></tr>
-<tr class="separator:ac814e6e86d36b6d733d82fb6a2ac2e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abac8cb539fe8c746a3e5fdc1b4777119"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abac8cb539fe8c746a3e5fdc1b4777119"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllEntitiesInHierarchyConst_Impl</b> (const AZStd::function&lt; bool(const AZ::Entity &amp;)&gt; &amp;callback) const </td></tr>
-<tr class="separator:abac8cb539fe8c746a3e5fdc1b4777119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a4fa76d180be44a64ef2046a97afd137e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fa76d180be44a64ef2046a97afd137e"></a>
-AliasToEntityMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_entities</b></td></tr>
-<tr class="separator:a4fa76d180be44a64ef2046a97afd137e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a424d2f0ad0440322803ebca298aee676"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a424d2f0ad0440322803ebca298aee676"></a>
-AliasToInstanceMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_nestedInstances</b></td></tr>
-<tr class="separator:a424d2f0ad0440322803ebca298aee676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a07dd6642686a06b50dfdcae9663c4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a07dd6642686a06b50dfdcae9663c4e"></a>
-AZStd::unique_ptr&lt; AZ::Entity &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_containerEntity</b></td></tr>
-<tr class="separator:a1a07dd6642686a06b50dfdcae9663c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a369e726ede673b3f1fad44b48666dbb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a369e726ede673b3f1fad44b48666dbb8"></a>
-LinkId&#160;</td><td class="memItemRight" valign="bottom"><b>m_linkId</b> = InvalidLinkId</td></tr>
-<tr class="separator:a369e726ede673b3f1fad44b48666dbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2519310f2b580bf5403dba881ee9e3bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2519310f2b580bf5403dba881ee9e3bf"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; EntityAlias, AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_templateToInstanceEntityIdMap</b></td></tr>
-<tr class="separator:a2519310f2b580bf5403dba881ee9e3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12563bfc7e7bb12b9f00fe493bdf01b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12563bfc7e7bb12b9f00fe493bdf01b9"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; AZ::EntityId, EntityAlias &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceToTemplateEntityIdMap</b></td></tr>
-<tr class="separator:a12563bfc7e7bb12b9f00fe493bdf01b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3af8c46e7aa21c2a3709271c6da60629"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3af8c46e7aa21c2a3709271c6da60629"></a>
-InstanceAlias&#160;</td><td class="memItemRight" valign="bottom"><b>m_alias</b></td></tr>
-<tr class="separator:a3af8c46e7aa21c2a3709271c6da60629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37f80556fc26e9107134e6f219c7a580"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37f80556fc26e9107134e6f219c7a580"></a>
-AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_templateSourcePath</b></td></tr>
-<tr class="separator:a37f80556fc26e9107134e6f219c7a580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79bb6caf7180e8f70bc9f8083e6ffcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad79bb6caf7180e8f70bc9f8083e6ffcd"></a>
-PrefabDom&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedInstanceDom</b></td></tr>
-<tr class="separator:ad79bb6caf7180e8f70bc9f8083e6ffcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d169ec28c7d9249015a3aa6abc90bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23d169ec28c7d9249015a3aa6abc90bf"></a>
-TemplateId&#160;</td><td class="memItemRight" valign="bottom"><b>m_templateId</b> = InvalidTemplateId</td></tr>
-<tr class="separator:a23d169ec28c7d9249015a3aa6abc90bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4499e7688ff6f090cd01919b8f4576e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4499e7688ff6f090cd01919b8f4576e1"></a>
-<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b> = nullptr</td></tr>
-<tr class="separator:a4499e7688ff6f090cd01919b8f4576e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2745640943991f7f5e49823d8bf3847"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2745640943991f7f5e49823d8bf3847"></a>
-<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_entity_mapper_interface.html">InstanceEntityMapperInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceEntityMapper</b> = nullptr</td></tr>
-<tr class="separator:af2745640943991f7f5e49823d8bf3847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2590ccf56411d28214b2b8fdfbad8c41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2590ccf56411d28214b2b8fdfbad8c41"></a>
-<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template_instance_mapper_interface.html">TemplateInstanceMapperInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_templateInstanceMapper</b> = nullptr</td></tr>
-<tr class="separator:a2590ccf56411d28214b2b8fdfbad8c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4462bf8963ea209bcacd2719a9aae103"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4462bf8963ea209bcacd2719a9aae103"></a>
-EntityIdInstanceRelationship&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityIdInstanceRelationship</b> = DefaultEntityIdInstanceRelationship</td></tr>
-<tr class="separator:a4462bf8963ea209bcacd2719a9aae103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:aae4beab57a54f951b7a737d3a583fcbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae4beab57a54f951b7a737d3a583fcbe"></a>
-static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>s_aliasPathSeparator</b> = '/'</td></tr>
-<tr class="separator:aae4beab57a54f951b7a737d3a583fcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56aa305a7399142f1f918f4d540efe47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56aa305a7399142f1f918f4d540efe47"></a>
-static constexpr <br class="typebreak"/>
-EntityIdInstanceRelationship&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultEntityIdInstanceRelationship</b> = EntityIdInstanceRelationship::OneToOne</td></tr>
-<tr class="separator:a56aa305a7399142f1f918f4d540efe47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:abfd2330769f3f925507e2e305c2ef0ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfd2330769f3f925507e2e305c2ef0ee"></a>
@@ -615,38 +522,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceEntityIdMapp
 
 </div>
 </div>
-<a class="anchor" id="a387b2e673142ee81cab24cc8c9b6a013"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::unique_ptr&lt;AZ::Entity&gt; AzToolsFramework::Prefab::Instance::DetachEntityHelper </td>
-          <td>(</td>
-          <td class="paramtype">const EntityAlias &amp;&#160;</td>
-          <td class="paramname"><em>entityAlias</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Helper function for detaching entity. It removes an entity from map and returns entity pointer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entityAlias</td><td>The entity alias to be erased. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Unique pointer to the entity. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a99b64c8fd97fdf5d380fa4794de09d32"></a>
 <div class="memitem">
 <div class="memproto">
@@ -839,31 +714,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceEntityIdMapp
       </table>
 </div><div class="memdoc">
 <p>Query, getter and setter functions for container entity. </p>
-
-</div>
-</div>
-<a class="anchor" id="ab29d5dd9ff20a8e76683346012339b7a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzToolsFramework::Prefab::Instance::GetEntities_Impl </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::function&lt; bool(AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>callback</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Functions for get-entity implementation. </p>
 
 </div>
 </div>
@@ -1179,49 +1029,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceEntityIdMapp
 
 </div>
 </div>
-<a class="anchor" id="a33469d7b2bcac8785f95448776ea2264"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzToolsFramework::Prefab::Instance::RegisterEntity </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::EntityId &amp;&#160;</td>
-          <td class="paramname"><em>entityId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const EntityAlias &amp;&#160;</td>
-          <td class="paramname"><em>entityAlias</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Registers an entity for the instance. It generates mapping from entity id to entity alias, and vice versa. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entityId</td><td>The entity id to be registered. </td></tr>
-    <tr><td class="paramname">entityAlias</td><td>The entity alias to be registered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if the registration succeeds. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a7c75dd1e723a77ce3d9bc68fab388289"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1388,46 +1195,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceEntityIdMapp
 
 </div>
 </div>
-<a class="anchor" id="aff8fe916edf0d7ddd5794f999682ad31"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzToolsFramework::Prefab::Instance::UnregisterEntity </td>
-          <td>(</td>
-          <td class="paramtype">AZ::EntityId&#160;</td>
-          <td class="paramname"><em>entityId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Unregisters an entity for the instance. It erases mapping from entity id to entity alias, and vice versa. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entityId</td><td>The entity id to be unregistered. </td></tr>
-    <tr><td class="paramname">entityAlias</td><td>The entity alias to be unregistered. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if the unregistration succeeds. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/Instance/Instance.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

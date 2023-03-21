@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_components_1_1_editor_pending_composition_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Components::EditorPendingCompositionComponent Class Reference</div>  </div>
@@ -120,114 +118,16 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <tr class="inherit_header pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html">AzToolsFramework::Components::EditorComponentBase</a></td></tr>
 <tr class="memitem:a663b83c55b0f573c41840c2e7a79aba4 inherit pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a663b83c55b0f573c41840c2e7a79aba4">Reflect</a> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a663b83c55b0f573c41840c2e7a79aba4 inherit pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a2da986a568a43f24370029f059a7d4f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_pending_composition_component.html#a2da986a568a43f24370029f059a7d4f0">Init</a> () override</td></tr>
-<tr class="separator:a2da986a568a43f24370029f059a7d4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb96fe6e8af8211b6508f35d64460cbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_pending_composition_component.html#aeb96fe6e8af8211b6508f35d64460cbb">Activate</a> () override</td></tr>
-<tr class="separator:aeb96fe6e8af8211b6508f35d64460cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3296c5bcbc66bfb9fe4f2bc5500494d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_pending_composition_component.html#a3296c5bcbc66bfb9fe4f2bc5500494d8">Deactivate</a> () override</td></tr>
-<tr class="separator:a3296c5bcbc66bfb9fe4f2bc5500494d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:af4ad2e92fd9bdf224c36373befda7d5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4ad2e92fd9bdf224c36373befda7d5c"></a>
-AZStd::vector&lt; AZ::Component * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingComponents</b></td></tr>
-<tr class="separator:af4ad2e92fd9bdf224c36373befda7d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains pending components to be added to the entity we are attached to. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aeb96fe6e8af8211b6508f35d64460cbb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::Components::EditorPendingCompositionComponent::Activate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Gets the transform component and selection component of the entity that the component belongs to, if the entity has them. Overrides AZ::Component::Activate().</p>
-<p><b>Important:</b> Components derived from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html">EditorComponentBase</a> must call the <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_pending_composition_component.html#aeb96fe6e8af8211b6508f35d64460cbb">Activate()</a> function of the base class. </p>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a7df8b021550930d5b3a3ea110c2848ed">AzToolsFramework::Components::EditorComponentBase</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3296c5bcbc66bfb9fe4f2bc5500494d8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::Components::EditorPendingCompositionComponent::Deactivate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the component's pointers to the transform component and selection component to null. Overrides AZ::Component::Deactivate().</p>
-<p><b>Important:</b> Components derived from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html">EditorComponentBase</a> must call the <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_pending_composition_component.html#a3296c5bcbc66bfb9fe4f2bc5500494d8">Deactivate()</a> function of the base class. </p>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a6bffcffe0fba83213a41476d61432e55">AzToolsFramework::Components::EditorComponentBase</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2da986a568a43f24370029f059a7d4f0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::Components::EditorPendingCompositionComponent::Init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Initializes the component's resources. Overrides AZ::Component::Init().</p>
-<p><b>Important:</b> Components derived from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html">EditorComponentBase</a> must call the <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_pending_composition_component.html#a2da986a568a43f24370029f059a7d4f0">Init()</a> function of the base class.</p>
-<p>(Optional) You can override this function to initialize resources that the component needs. </p>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a693b2c6426a04b255b5640899db80356">AzToolsFramework::Components::EditorComponentBase</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ToolsComponents/EditorPendingCompositionComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

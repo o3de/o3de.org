@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_s_q_lite_1_1_statement-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::SQLite::Statement Class Reference</div>  </div>
@@ -147,28 +145,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a83d72335b472bcab459e21ebe7fa37a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83d72335b472bcab459e21ebe7fa37a3"></a>
 const StatementPrototype *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParentPrototype</b> () const </td></tr>
 <tr class="separator:a83d72335b472bcab459e21ebe7fa37a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a15ca33ddc68958348a28e1b948530920"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15ca33ddc68958348a28e1b948530920"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Statement</b> (const <a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_statement.html">Statement</a> &amp;other)=delete</td></tr>
-<tr class="separator:a15ca33ddc68958348a28e1b948530920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d1ac6edad59c2c4d6df4b70055f3aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89d1ac6edad59c2c4d6df4b70055f3aa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Statement</b> (const <a class="el" href="class_az_tools_framework_1_1_s_q_lite_1_1_statement.html">Statement</a> &amp;&amp;other)=delete</td></tr>
-<tr class="separator:a89d1ac6edad59c2c4d6df4b70055f3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:afb6a55877d40bd7fe65c79e63697a3e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb6a55877d40bd7fe65c79e63697a3e4"></a>
-sqlite3_stmt *&#160;</td><td class="memItemRight" valign="bottom"><b>m_statement</b></td></tr>
-<tr class="separator:afb6a55877d40bd7fe65c79e63697a3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8e2fee4c20fefa5dcecd48f8022c1c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8e2fee4c20fefa5dcecd48f8022c1c4"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; AZStd::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedColumnNames</b></td></tr>
-<tr class="separator:ab8e2fee4c20fefa5dcecd48f8022c1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdbdf3e780ea6eb268b9d108a4705dd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdbdf3e780ea6eb268b9d108a4705dd0"></a>
-StatementPrototype *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentPrototype</b></td></tr>
-<tr class="separator:acdbdf3e780ea6eb268b9d108a4705dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A statement is a live, working-right now statement (or a cached one) which you are currently executing. All binding is by reference, so you must not destroy the bound objects before executing the statement. </p>
@@ -178,7 +154,7 @@ StatementPrototype *&#160;</td><td class="memItemRight" valign="bottom"><b>m_par
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:05 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

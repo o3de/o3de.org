@@ -53,6 +53,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_a_p_i_1_1_configure_shaders-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RPI::LuaMaterialFunctorAPI::ConfigureShaders Class Reference</div>  </div>
@@ -81,16 +82,79 @@ Static Public Member Functions</h2></td></tr>
 template&lt;typename LuaApiClass &gt; </td></tr>
 <tr class="memitem:a94f9f173fd4ead6bbedb4187ef9de8d2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReflectSubclass</b> (BehaviorContext::ClassBuilder&lt; LuaApiClass &gt; *subclassBuilder)</td></tr>
 <tr class="separator:a94f9f173fd4ead6bbedb4187ef9de8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0d0cde1eceba83351fe3022d55ec03f8"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
+<tr class="memitem:a0d0cde1eceba83351fe3022d55ec03f8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_a_p_i_1_1_configure_shaders.html#a0d0cde1eceba83351fe3022d55ec03f8">SetShaderOptionValue</a> (const char *name, Type value)</td></tr>
+<tr class="separator:a0d0cde1eceba83351fe3022d55ec03f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab467c1ea676a375beb4d531f26ee8557"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab467c1ea676a375beb4d531f26ee8557"></a>
+AZStd::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderCount</b> () const </td></tr>
+<tr class="separator:ab467c1ea676a375beb4d531f26ee8557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095dcf45606daf4c01760ecd73c13fa6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a095dcf45606daf4c01760ecd73c13fa6"></a>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_a_p_i_1_1_shader_item.html">LuaMaterialFunctorAPI::ShaderItem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetShader</b> (AZStd::size_t index)</td></tr>
+<tr class="separator:a095dcf45606daf4c01760ecd73c13fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb24f32da03315623389e23f2b550887"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb24f32da03315623389e23f2b550887"></a>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor_a_p_i_1_1_shader_item.html">LuaMaterialFunctorAPI::ShaderItem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderByTag</b> (const char *shaderTag)</td></tr>
+<tr class="separator:acb24f32da03315623389e23f2b550887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9ba48c5a59a1587bd4d9d4b1c69640"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b9ba48c5a59a1587bd4d9d4b1c69640"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasShaderWithTag</b> (const char *shaderTag)</td></tr>
+<tr class="separator:a5b9ba48c5a59a1587bd4d9d4b1c69640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wraps <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_functor_a_p_i_1_1_configure_shaders.html" title="Provides commonly used functions for configuring shaders. ">MaterialFunctorAPI::ConfigureShaders</a> for <a class="el" href="class_a_z_1_1_r_p_i_1_1_lua_material_functor.html" title="Materials can use this functor to create custom scripted operations. ">LuaMaterialFunctor</a> access. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a0d0cde1eceba83351fe3022d55ec03f8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::RPI::LuaMaterialFunctorAPI::ConfigureShaders::SetShaderOptionValue </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Type&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the value of a shader option. Applies to any shader that has an option with this name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the shader option to set </td></tr>
+    <tr><td class="paramname">value</td><td>the new value for the shader option </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Reflect/Material/LuaMaterialFunctor.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

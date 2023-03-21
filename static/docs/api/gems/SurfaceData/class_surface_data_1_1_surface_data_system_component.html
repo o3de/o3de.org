@@ -51,6 +51,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_surface_data_1_1_surface_data_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SurfaceData::SurfaceDataSystemComponent Class Reference</div>  </div>
@@ -82,6 +83,54 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSer
 <tr class="memitem:af8d39ada1642d38ebc7e866022ac961c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8d39ada1642d38ebc7e866022ac961c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;dependent)</td></tr>
 <tr class="separator:af8d39ada1642d38ebc7e866022ac961c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aebc0a3ad2b0e1668c4310ae598fe3f56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebc0a3ad2b0e1668c4310ae598fe3f56"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> () override</td></tr>
+<tr class="separator:aebc0a3ad2b0e1668c4310ae598fe3f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21676b36dbf1c2d1391b65b3263d8508"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21676b36dbf1c2d1391b65b3263d8508"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () override</td></tr>
+<tr class="separator:a21676b36dbf1c2d1391b65b3263d8508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1ca55eb5ed4630945b625d4f02fdfa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c1ca55eb5ed4630945b625d4f02fdfa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
+<tr class="separator:a2c1ca55eb5ed4630945b625d4f02fdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9431697ce27bb5930b55f11b9707932"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9431697ce27bb5930b55f11b9707932"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePoints</b> (const AZ::Vector3 &amp;inPosition, const SurfaceTagVector &amp;desiredTags, <a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> &amp;surfacePointList) const override</td></tr>
+<tr class="separator:aa9431697ce27bb5930b55f11b9707932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b31f99a14c142291d76bd1fbf9130d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80b31f99a14c142291d76bd1fbf9130d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePointsFromRegion</b> (const AZ::Aabb &amp;inRegion, const AZ::Vector2 stepSize, const SurfaceTagVector &amp;desiredTags, <a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> &amp;surfacePointListPerPosition) const override</td></tr>
+<tr class="separator:a80b31f99a14c142291d76bd1fbf9130d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd9c26498db475be30b534ff1c5af31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecd9c26498db475be30b534ff1c5af31"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfacePointsFromList</b> (AZStd::span&lt; const AZ::Vector3 &gt; inPositions, const SurfaceTagVector &amp;desiredTags, <a class="el" href="class_surface_data_1_1_surface_point_list.html">SurfacePointList</a> &amp;surfacePointLists) const override</td></tr>
+<tr class="separator:aecd9c26498db475be30b534ff1c5af31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28475c0c100999015f22c8b35eb143df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28475c0c100999015f22c8b35eb143df"></a>
+SurfaceDataRegistryHandle&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSurfaceDataProvider</b> (const <a class="el" href="struct_surface_data_1_1_surface_data_registry_entry.html">SurfaceDataRegistryEntry</a> &amp;entry) override</td></tr>
+<tr class="separator:a28475c0c100999015f22c8b35eb143df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af6c58baed8defc74f070823a5e8492"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1af6c58baed8defc74f070823a5e8492"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterSurfaceDataProvider</b> (const SurfaceDataRegistryHandle &amp;handle) override</td></tr>
+<tr class="separator:a1af6c58baed8defc74f070823a5e8492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee76ab86f33f8f23793267a51eb119da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee76ab86f33f8f23793267a51eb119da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSurfaceDataProvider</b> (const SurfaceDataRegistryHandle &amp;handle, const <a class="el" href="struct_surface_data_1_1_surface_data_registry_entry.html">SurfaceDataRegistryEntry</a> &amp;entry) override</td></tr>
+<tr class="separator:aee76ab86f33f8f23793267a51eb119da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800dc980b8f6bb86e072491c084e30c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a800dc980b8f6bb86e072491c084e30c9"></a>
+SurfaceDataRegistryHandle&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSurfaceDataModifier</b> (const <a class="el" href="struct_surface_data_1_1_surface_data_registry_entry.html">SurfaceDataRegistryEntry</a> &amp;entry) override</td></tr>
+<tr class="separator:a800dc980b8f6bb86e072491c084e30c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9bef2bac40d6735b00e06ac934d51f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9bef2bac40d6735b00e06ac934d51f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterSurfaceDataModifier</b> (const SurfaceDataRegistryHandle &amp;handle) override</td></tr>
+<tr class="separator:af9bef2bac40d6735b00e06ac934d51f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014e404bb5dfe57349b063c3e87f1018"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a014e404bb5dfe57349b063c3e87f1018"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSurfaceDataModifier</b> (const SurfaceDataRegistryHandle &amp;handle, const <a class="el" href="struct_surface_data_1_1_surface_data_registry_entry.html">SurfaceDataRegistryEntry</a> &amp;entry) override</td></tr>
+<tr class="separator:a014e404bb5dfe57349b063c3e87f1018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b86ee22c3c2c9505de55c561c24270d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b86ee22c3c2c9505de55c561c24270d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshSurfaceData</b> (const SurfaceDataRegistryHandle &amp;providerHandle, const AZ::Aabb &amp;dirtyArea) override</td></tr>
+<tr class="separator:a3b86ee22c3c2c9505de55c561c24270d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247cd336b4ca297e51ce3410aa959efa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a247cd336b4ca297e51ce3410aa959efa"></a>
+SurfaceDataRegistryHandle&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceDataProviderHandle</b> (const AZ::EntityId &amp;providerEntityId) override</td></tr>
+<tr class="separator:a247cd336b4ca297e51ce3410aa959efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c59c9d45ded4604c6d300b7cc05e4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5c59c9d45ded4604c6d300b7cc05e4f"></a>
+SurfaceDataRegistryHandle&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceDataModifierHandle</b> (const AZ::EntityId &amp;modifierEntityId) override</td></tr>
+<tr class="separator:ae5c59c9d45ded4604c6d300b7cc05e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/SurfaceData/Code/Include/SurfaceData/Components/SurfaceDataSystemComponent.h</li>
@@ -89,7 +138,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentSe
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:47 for Open 3D Engine SurfaceData Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:28 for Open 3D Engine SurfaceData Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

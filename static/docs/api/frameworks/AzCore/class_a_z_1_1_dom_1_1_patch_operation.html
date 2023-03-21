@@ -57,9 +57,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_dom_1_1_patch_operation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Dom::PatchOperation Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -68,11 +65,6 @@
 
 <p><code>#include &lt;DomPatch.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_dom_1_1_patch_operation_1_1_path_context.html">PathContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a373c619165d71ac7eefd7ca090ff9263"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_dom_1_1_patch_operation.html#a373c619165d71ac7eefd7ca090ff9263">Type</a> { <br/>
@@ -198,51 +190,6 @@ static <a class="el" href="class_a_z_1_1_outcome.html">AZ::Outcome</a><br class=
 &lt; <a class="el" href="class_a_z_1_1_dom_1_1_patch_operation.html">PatchOperation</a>, <br class="typebreak"/>
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromDomRepresentation</b> (<a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a> domValue)</td></tr>
 <tr class="separator:aa74fceb9b31d3673d8f6e782bd69688a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aeb2f22daedab3bbd94a5610193df12a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb2f22daedab3bbd94a5610193df12a4"></a>
-<a class="el" href="class_a_z_1_1_outcome.html">PatchOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyAdd</b> (<a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a> &amp;rootElement) const </td></tr>
-<tr class="separator:aeb2f22daedab3bbd94a5610193df12a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a544c716c948635c8943a45a765d21696"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a544c716c948635c8943a45a765d21696"></a>
-<a class="el" href="class_a_z_1_1_outcome.html">PatchOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyRemove</b> (<a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a> &amp;rootElement) const </td></tr>
-<tr class="separator:a544c716c948635c8943a45a765d21696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08857d38ce53036ab64d0ac1672cd5ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08857d38ce53036ab64d0ac1672cd5ec"></a>
-<a class="el" href="class_a_z_1_1_outcome.html">PatchOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyReplace</b> (<a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a> &amp;rootElement) const </td></tr>
-<tr class="separator:a08857d38ce53036ab64d0ac1672cd5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f24c5276d4d3a43546f09281fe69de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64f24c5276d4d3a43546f09281fe69de"></a>
-<a class="el" href="class_a_z_1_1_outcome.html">PatchOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyCopy</b> (<a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a> &amp;rootElement) const </td></tr>
-<tr class="separator:a64f24c5276d4d3a43546f09281fe69de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc070f69561d7245c9543bbb81b2ad79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc070f69561d7245c9543bbb81b2ad79"></a>
-<a class="el" href="class_a_z_1_1_outcome.html">PatchOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyMove</b> (<a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a> &amp;rootElement) const </td></tr>
-<tr class="separator:afc070f69561d7245c9543bbb81b2ad79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e1a1a30e094a985787b9cf9cbb0fa8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e1a1a30e094a985787b9cf9cbb0fa8f"></a>
-<a class="el" href="class_a_z_1_1_outcome.html">PatchOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyTest</b> (<a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a> &amp;rootElement) const </td></tr>
-<tr class="separator:a0e1a1a30e094a985787b9cf9cbb0fa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a2671ec6342730a63fd298a44b805fc2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2671ec6342730a63fd298a44b805fc2a"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>DenormalizePath</b> (<a class="el" href="class_a_z_1_1_dom_1_1_path.html">Dom::Path</a> &amp;path, const <a class="el" href="class_a_z_1_1_dom_1_1_value.html">Dom::Value</a> &amp;sourceValue)</td></tr>
-<tr class="separator:a2671ec6342730a63fd298a44b805fc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0926937d02f6f44647235eed543dd9f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0926937d02f6f44647235eed543dd9f4"></a>
-static <a class="el" href="class_a_z_1_1_outcome.html">AZ::Outcome</a><br class="typebreak"/>
-&lt; <a class="el" href="struct_a_z_1_1_dom_1_1_patch_operation_1_1_path_context.html">PathContext</a>, <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LookupPath</b> (<a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a> &amp;rootElement, const <a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &amp;path, ExistenceCheckFlags existenceCheckFlags=ExistenceCheckFlags::DefaultExistenceCheck)</td></tr>
-<tr class="separator:a0926937d02f6f44647235eed543dd9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a93655e9cf0bec19f82125b7e83a2b251"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93655e9cf0bec19f82125b7e83a2b251"></a>
-<a class="el" href="class_a_z_std_1_1variant.html">AZStd::variant</a><br class="typebreak"/>
-&lt; <a class="el" href="struct_a_z_std_1_1monostate.html">AZStd::monostate</a>, <a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a>, <br class="typebreak"/>
-<a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b></td></tr>
-<tr class="separator:a93655e9cf0bec19f82125b7e83a2b251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301a48e77eac0e7fa94990af85405fb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a301a48e77eac0e7fa94990af85405fb1"></a>
-<a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_domPath</b></td></tr>
-<tr class="separator:a301a48e77eac0e7fa94990af85405fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a892bc30e840727cabe80561bcc3fdb6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a892bc30e840727cabe80561bcc3fdb6a"></a>
-<a class="el" href="class_a_z_1_1_dom_1_1_patch_operation.html#a373c619165d71ac7eefd7ca090ff9263">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b></td></tr>
-<tr class="separator:a892bc30e840727cabe80561bcc3fdb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A patch operation that represents an atomic operation for mutating or validating a <a class="el" href="class_a_z_1_1_dom_1_1_value.html">Value</a>. PatchOperations can be created with helper methods in <a class="el" href="class_a_z_1_1_dom_1_1_patch.html">Patch</a>. /see <a class="el" href="class_a_z_1_1_dom_1_1_patch.html">Patch</a> </p>
@@ -312,7 +259,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

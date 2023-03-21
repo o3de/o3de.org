@@ -187,6 +187,20 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>StreamingImageAssetT
 <tr class="memitem:a09c5929712e47e8f2ecd3abcfb0e0aa8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09c5929712e47e8f2ecd3abcfb0e0aa8"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>StreamingImageAssetHandler</b></td></tr>
 <tr class="separator:a09c5929712e47e8f2ecd3abcfb0e0aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_p_i_1_1_image_asset"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_p_i_1_1_image_asset')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">AZ::RPI::ImageAsset</a></td></tr>
+<tr class="memitem:a362b1078a133baa2ee876a0e15f8594f inherit pro_methods_class_a_z_1_1_r_p_i_1_1_image_asset"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a362b1078a133baa2ee876a0e15f8594f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReady</b> ()</td></tr>
+<tr class="separator:a362b1078a133baa2ee876a0e15f8594f inherit pro_methods_class_a_z_1_1_r_p_i_1_1_image_asset"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_r_p_i_1_1_image_asset"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_p_i_1_1_image_asset')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_asset.html">AZ::RPI::ImageAsset</a></td></tr>
+<tr class="memitem:a966149765ed7b62668b8b9ca7ef0c68b inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_image_asset"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a966149765ed7b62668b8b9ca7ef0c68b"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_descriptor.html">RHI::ImageDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageDescriptor</b></td></tr>
+<tr class="separator:a966149765ed7b62668b8b9ca7ef0c68b inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_image_asset"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481378b1cb9b850df2712bde62366d81 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_image_asset"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a481378b1cb9b850df2712bde62366d81"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html">RHI::ImageViewDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageViewDescriptor</b></td></tr>
+<tr class="separator:a481378b1cb9b850df2712bde62366d81 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_image_asset"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Flat data associated with a streaming image. A streaming image contains a flat list of image mip chains. The first (0 index) mip chain in the list is called the 'Head'. This is the most detailed set of mips. The last index in the list is called the 'Tail'. Each streaming image defines its own list of mip chains, which are then atomic units of streaming. This is done to allow both the platform and individual image asset to control streaming granularity. On modern GPU hardware, the last N mips in the GPU mip chain are 'packed' into a single hardware page. The recommended pattern is to group the lowest detail mips into their own mip chain asset, up to the page size. Other approaches may include grouping mips into 'Head', 'Middle', and 'Tail' sets; this is because the amount of memory gained by dropping the first mip is so much higher than all the other mips combined. The design of the streaming image asset allows you to combine mips ideally for your platform, allowing the streaming controller to fetch optimized batches of data. Each streaming image is directly associated with a streaming image pool asset, which defines its own budget and streaming controller. This is an immutable, serialized asset. It can be either serialized-in or created dynamically using <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html">StreamingImageAssetCreator</a>. See <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image.html">RPI::StreamingImage</a> for runtime features based on this asset. </p>
@@ -196,7 +210,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>StreamingImageAssetH
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

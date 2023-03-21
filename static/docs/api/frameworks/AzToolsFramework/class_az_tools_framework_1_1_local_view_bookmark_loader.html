@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_local_view_bookmark_loader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::LocalViewBookmarkLoader Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -110,43 +108,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a1f894a05feb7b228f464d7d8dcffedad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f894a05feb7b228f464d7d8dcffedad"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultViewBookmarkCount</b> = 12</td></tr>
 <tr class="separator:a1f894a05feb7b228f464d7d8dcffedad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:afbb300718e8dfd616ad7f21b95161d47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbb300718e8dfd616ad7f21b95161d47"></a>
-<a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_component.html">LocalViewBookmarkComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindOrCreateLocalViewBookmarkComponent</b> ()</td></tr>
-<tr class="separator:afbb300718e8dfd616ad7f21b95161d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3555a33e78bd5826d64d035b3f0fe91b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3555a33e78bd5826d64d035b3f0fe91b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteViewBookmarksSettingsRegistryToFile</b> (const AZ::IO::PathView &amp;localBookmarksFileName)</td></tr>
-<tr class="separator:a3555a33e78bd5826d64d035b3f0fe91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11fb5bccb73b82bdea33c62d6dff7866"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11fb5bccb73b82bdea33c62d6dff7866"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadViewBookmarksSettingsRegistryFromFile</b> (const AZ::IO::PathView &amp;localBookmarksFileName)</td></tr>
-<tr class="separator:a11fb5bccb73b82bdea33c62d6dff7866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2c6f3d377b25c87ef35489fb36bc6bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2c6f3d377b25c87ef35489fb36bc6bf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html#ac2c6f3d377b25c87ef35489fb36bc6bf">Write</a> (AZ::IO::GenericStream &amp;genericStream, AZStd::string_view stringBuffer)</td></tr>
-<tr class="memdesc:ac2c6f3d377b25c87ef35489fb36bc6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the content of the string buffer to the stream. <br/></td></tr>
-<tr class="separator:ac2c6f3d377b25c87ef35489fb36bc6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:adae782a87518b016a1ba5348994a1441"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adae782a87518b016a1ba5348994a1441"></a>
-AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_localBookmarks</b></td></tr>
-<tr class="separator:adae782a87518b016a1ba5348994a1441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca4b9efd17125e9ac666e7a2233e9990"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca4b9efd17125e9ac666e7a2233e9990"></a>
-AZStd::optional&lt; <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html">ViewBookmark</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastKnownLocation</b></td></tr>
-<tr class="separator:aca4b9efd17125e9ac666e7a2233e9990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba09c563b3dddfdfae71b585861adab7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba09c563b3dddfdfae71b585861adab7"></a>
-<a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#a049523a8ce2d3d47f9883b98000c9aa9">StreamWriteFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html#aba09c563b3dddfdfae71b585861adab7">m_streamWriteFn</a></td></tr>
-<tr class="memdesc:aba09c563b3dddfdfae71b585861adab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function to use to write out the <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html" title="struct that store viewport camera properties that can be serialized and loaded ">ViewBookmark</a> SettingsRegistry values. <br/></td></tr>
-<tr class="separator:aba09c563b3dddfdfae71b585861adab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3216b4e240eec1742a5e176f347c3eed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3216b4e240eec1742a5e176f347c3eed"></a>
-<a class="el" href="class_az_tools_framework_1_1_view_bookmark_persist_interface.html#ae66b7d807b14aad20cc6b06b481730b6">StreamReadFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html#a3216b4e240eec1742a5e176f347c3eed">m_streamReadFn</a></td></tr>
-<tr class="memdesc:a3216b4e240eec1742a5e176f347c3eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function to use to read in the <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html" title="struct that store viewport camera properties that can be serialized and loaded ">ViewBookmark</a> SettingsRegistry values. <br/></td></tr>
-<tr class="separator:a3216b4e240eec1742a5e176f347c3eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af569659696a12104610a18431eb20e76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af569659696a12104610a18431eb20e76"></a>
-FileExistsFn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_local_view_bookmark_loader.html#af569659696a12104610a18431eb20e76">m_fileExistsFn</a></td></tr>
-<tr class="memdesc:af569659696a12104610a18431eb20e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function used to check if the <a class="el" href="struct_az_tools_framework_1_1_view_bookmark.html" title="struct that store viewport camera properties that can be serialized and loaded ">ViewBookmark</a> SettingsRegistry file for the level already exists. <br/></td></tr>
-<tr class="separator:af569659696a12104610a18431eb20e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -252,7 +213,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>FileExistsFn</b> = A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

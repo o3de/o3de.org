@@ -56,7 +56,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_channel-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputChannel Class Reference</div>  </div>
@@ -157,21 +156,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acd7e1320092e196a500318d6a1f9bdbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd7e1320092e196a500318d6a1f9bdbe"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:acd7e1320092e196a500318d6a1f9bdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a88bd2470442a8d3b3d16067d76d94890"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88bd2470442a8d3b3d16067d76d94890"></a>
-const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel.html#a88bd2470442a8d3b3d16067d76d94890">m_inputChannelId</a></td></tr>
-<tr class="memdesc:a88bd2470442a8d3b3d16067d76d94890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the input channel. <br/></td></tr>
-<tr class="separator:a88bd2470442a8d3b3d16067d76d94890"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd20f02c5198225a1bc511062ad754c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bd20f02c5198225a1bc511062ad754c"></a>
-const <a class="el" href="class_az_framework_1_1_input_device.html">InputDevice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel.html#a8bd20f02c5198225a1bc511062ad754c">m_inputDevice</a></td></tr>
-<tr class="memdesc:a8bd20f02c5198225a1bc511062ad754c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input device that owns the input channel. <br/></td></tr>
-<tr class="separator:a8bd20f02c5198225a1bc511062ad754c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7b5be22375404883258828cd3a5523"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff7b5be22375404883258828cd3a5523"></a>
-<a class="el" href="class_az_framework_1_1_input_channel.html#a8e25715b5f74ca8b308b4bb4b3d43438">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_channel.html#aff7b5be22375404883258828cd3a5523">m_state</a></td></tr>
-<tr class="memdesc:aff7b5be22375404883258828cd3a5523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of the input channel. <br/></td></tr>
-<tr class="separator:aff7b5be22375404883258828cd3a5523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all input channels that represent the current state of a single input source. Derived classes should provide additional functions that allow their parent input devices to update the state and value(s) of the input channel as raw input is received from the system, and they can (optionally) override the virtual GetCustomData function to return custom data. </p>
@@ -469,7 +453,7 @@ template&lt;class CustomDataType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

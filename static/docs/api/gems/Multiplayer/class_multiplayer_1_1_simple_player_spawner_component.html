@@ -52,6 +52,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_multiplayer_1_1_simple_player_spawner_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -104,6 +105,19 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 <tr class="memitem:aea5163179e2f2080a254ec6685381707"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5163179e2f2080a254ec6685381707"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
 <tr class="separator:aea5163179e2f2080a254ec6685381707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0426823333a25af541a7b0223797e18a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0426823333a25af541a7b0223797e18a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> () override</td></tr>
+<tr class="separator:a0426823333a25af541a7b0223797e18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2af8217862420e680a3603024a8f9eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2af8217862420e680a3603024a8f9eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () override</td></tr>
+<tr class="separator:aa2af8217862420e680a3603024a8f9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fddad312224985f3f0756cb05aa7b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_multiplayer_1_1_network_entity_handle.html">NetworkEntityHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_simple_player_spawner_component.html#ad4fddad312224985f3f0756cb05aa7b2">OnPlayerJoin</a> (uint64_t userId, const <a class="el" href="struct_multiplayer_1_1_multiplayer_agent_datum.html">MultiplayerAgentDatum</a> &amp;agentDatum) override</td></tr>
+<tr class="separator:ad4fddad312224985f3f0756cb05aa7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e41b72268b2d1683181f52b3747bb5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_simple_player_spawner_component.html#a7e41b72268b2d1683181f52b3747bb5e">OnPlayerLeave</a> (<a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> entityHandle, const ReplicationSet &amp;replicationSet, AzNetworking::DisconnectReason reason) override</td></tr>
+<tr class="separator:a7e41b72268b2d1683181f52b3747bb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -222,13 +236,109 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SimplePlayerSpawnerT
 
 </div>
 </div>
+<a class="anchor" id="ad4fddad312224985f3f0756cb05aa7b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_multiplayer_1_1_network_entity_handle.html">NetworkEntityHandle</a> Multiplayer::SimplePlayerSpawnerComponent::OnPlayerJoin </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>userId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_multiplayer_1_1_multiplayer_agent_datum.html">MultiplayerAgentDatum</a> &amp;&#160;</td>
+          <td class="paramname"><em>agentDatum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Invoked when a Client connects/ClientHost starts a session to determine what autonomous Prefab should be spawned where </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>User ID of joining player </td></tr>
+    <tr><td class="paramname">agentDatum</td><td>Datum containing connection data that can be used to inform join logic </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_multiplayer_1_1_network_entity_handle.html">NetworkEntityHandle</a> of the entity the player will have autonomy over </dd></dl>
+
+<p>Implements <a class="el" href="class_multiplayer_1_1_i_multiplayer_spawner.html#a66c8b2aa17691c5aeee4d751cf886517">Multiplayer::IMultiplayerSpawner</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e41b72268b2d1683181f52b3747bb5e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Multiplayer::SimplePlayerSpawnerComponent::OnPlayerLeave </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a>&#160;</td>
+          <td class="paramname"><em>entityHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ReplicationSet &amp;&#160;</td>
+          <td class="paramname"><em>replicationSet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AzNetworking::DisconnectReason&#160;</td>
+          <td class="paramname"><em>reason</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Invoked when a Client disconnects from the session to determine how the autonomous prefab should be cleaned up </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityHandle</td><td>The entity handle to consider on leaving, generally the connection's primary player entity </td></tr>
+    <tr><td class="paramname">replicationSet</td><td>The replication set of the related connection </td></tr>
+    <tr><td class="paramname">reason</td><td>The cause of disconnection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_multiplayer_1_1_i_multiplayer_spawner.html#a2144481dc67d6f90b2749409465e32c3">Multiplayer::IMultiplayerSpawner</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Multiplayer/Code/Include/Multiplayer/Components/SimplePlayerSpawnerComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:42 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:23 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

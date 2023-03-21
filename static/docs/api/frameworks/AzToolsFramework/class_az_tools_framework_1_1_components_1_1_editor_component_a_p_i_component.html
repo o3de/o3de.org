@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_components_1_1_editor_component_a_p_i_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Components::EditorComponentAPIComponent Class Reference</div>  </div>
@@ -150,30 +148,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2cb79c0e1ce155fec00213556954b32e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cb79c0e1ce155fec00213556954b32e"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a2cb79c0e1ce155fec00213556954b32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af860a9e7d58487026ead5ad4f72ae408"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af860a9e7d58487026ead5ad4f72ae408"></a>
-AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><b>FindEntity</b> (AZ::EntityId entityId)</td></tr>
-<tr class="separator:af860a9e7d58487026ead5ad4f72ae408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbe5144529928f5e1e3d6cb27086e13a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbe5144529928f5e1e3d6cb27086e13a"></a>
-AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><b>FindComponent</b> (AZ::EntityId entityId, AZ::ComponentId componentId)</td></tr>
-<tr class="separator:abbe5144529928f5e1e3d6cb27086e13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17a116f2501e918dd775a377dbc80b22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17a116f2501e918dd775a377dbc80b22"></a>
-AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><b>FindComponent</b> (AZ::EntityId entityId, AZ::Uuid componentType)</td></tr>
-<tr class="separator:a17a116f2501e918dd775a377dbc80b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40ae753a58b73491734d0f6f3ff5e0e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40ae753a58b73491734d0f6f3ff5e0e6"></a>
-AZStd::vector&lt; AZ::Component * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindComponents</b> (AZ::EntityId entityId, AZ::Uuid componentType)</td></tr>
-<tr class="separator:a40ae753a58b73491734d0f6f3ff5e0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a6e9748708c238be9f56f0e11b016f345"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e9748708c238be9f56f0e11b016f345"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_usePropertyVisibility</b> = false</td></tr>
-<tr class="separator:a6e9748708c238be9f56f0e11b016f345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9ca613582a9fa5eb107e8dc1ea3f59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c9ca613582a9fa5eb107e8dc1ea3f59"></a>
-AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_serializeContext</b> = nullptr</td></tr>
-<tr class="separator:a7c9ca613582a9fa5eb107e8dc1ea3f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A System Component to reflect Editor operations on Components to Behavior Context. </p>
@@ -183,7 +157,7 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_s
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

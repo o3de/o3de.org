@@ -55,8 +55,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_std_1_1expected-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -267,28 +265,6 @@ constexpr E &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>err
 template&lt;class U &gt; </td></tr>
 <tr class="memitem:aed5a8b7378b5ea3d7a89057382dc497b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>value_or</b> (U &amp;&amp;)&amp;&amp;-&gt; enable_if_t&lt; Internal::sfinae_trigger_v&lt; U &gt; &amp;&amp;!is_void_v&lt; T &gt;, T &gt;</td></tr>
 <tr class="separator:aed5a8b7378b5ea3d7a89057382dc497b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:ace3b19cabaf6487198b6a2b93916220c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace3b19cabaf6487198b6a2b93916220c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>base_type</b> = Internal::expected_storage_move_assignment&lt; T, E &gt;</td></tr>
-<tr class="separator:ace3b19cabaf6487198b6a2b93916220c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af08d5183df255d212d615772da5c826e"><td class="memTemplParams" colspan="2"><a class="anchor" id="af08d5183df255d212d615772da5c826e"></a>
-template&lt;class T2 , class E2 &gt; </td></tr>
-<tr class="memitem:af08d5183df255d212d615772da5c826e"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1expected.html#af08d5183df255d212d615772da5c826e">compare_equal_internal</a> (const <a class="el" href="class_a_z_std_1_1expected.html">expected</a>&lt; T2, E2 &gt; &amp;) const </td></tr>
-<tr class="memdesc:af08d5183df255d212d615772da5c826e"><td class="mdescLeft">&#160;</td><td class="mdescRight">expected operator== internal implementations <br/></td></tr>
-<tr class="separator:af08d5183df255d212d615772da5c826e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc0238d2e04c9c504e66b6b13653e751"><td class="memTemplParams" colspan="2"><a class="anchor" id="abc0238d2e04c9c504e66b6b13653e751"></a>
-template&lt;class T2 &gt; </td></tr>
-<tr class="memitem:abc0238d2e04c9c504e66b6b13653e751"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>compare_equal_internal</b> (const T2 &amp;) const </td></tr>
-<tr class="separator:abc0238d2e04c9c504e66b6b13653e751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3fe0a4394753544fed2fff0da259d91"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa3fe0a4394753544fed2fff0da259d91"></a>
-template&lt;class E2 &gt; </td></tr>
-<tr class="memitem:aa3fe0a4394753544fed2fff0da259d91"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>compare_equal_internal</b> (const <a class="el" href="class_a_z_std_1_1unexpected.html">unexpected</a>&lt; E2 &gt; &amp;) const </td></tr>
-<tr class="separator:aa3fe0a4394753544fed2fff0da259d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -518,7 +494,7 @@ template&lt;class U &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:57 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -56,20 +56,12 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1delegate_3_01_r_07_param1_08_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::delegate&lt; R(Param1) &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_std_1_1delegate_3_01_r_07_param1_08_01_4_1_1_safe_bool_struct.html">SafeBoolStruct</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a1dab78fe68cb9470eeef691d16846f86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dab78fe68cb9470eeef691d16846f86"></a>
@@ -148,44 +140,6 @@ const <a class="el" href="class_a_z_std_1_1delegate__memento.html">delegate_meme
 <tr class="memitem:ad7926a4b7e732e96fafaf509db8561d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7926a4b7e732e96fafaf509db8561d8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMemento</b> (const <a class="el" href="class_a_z_std_1_1delegate__memento.html">delegate_memento</a> &amp;<a class="el" href="class_a_z_std_1_1any.html">any</a>)</td></tr>
 <tr class="separator:ad7926a4b7e732e96fafaf509db8561d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a19ab476092b230bc91a7dbb274b979cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19ab476092b230bc91a7dbb274b979cd"></a>
-typedef R(*&#160;</td><td class="memItemRight" valign="bottom"><b>StaticFunctionPtr</b> )(Param1 p1)</td></tr>
-<tr class="separator:a19ab476092b230bc91a7dbb274b979cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab432202f120e69354ee560e8c7d83983"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab432202f120e69354ee560e8c7d83983"></a>
-typedef R(*&#160;</td><td class="memItemRight" valign="bottom"><b>UnvoidStaticFunctionPtr</b> )(Param1 p1)</td></tr>
-<tr class="separator:ab432202f120e69354ee560e8c7d83983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec54858092fd2b795b211a2ad5a413ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec54858092fd2b795b211a2ad5a413ca"></a>
-typedef R(Internal::GenericClass::*&#160;</td><td class="memItemRight" valign="bottom"><b>GenericMemFn</b> )(Param1 p1)</td></tr>
-<tr class="separator:aec54858092fd2b795b211a2ad5a413ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0315f6a2aaed99525c2347d474fcc7e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0315f6a2aaed99525c2347d474fcc7e7"></a>
-typedef Internal::ClosurePtr<br class="typebreak"/>
-&lt; GenericMemFn, <br class="typebreak"/>
-StaticFunctionPtr, <br class="typebreak"/>
-UnvoidStaticFunctionPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ClosureType</b></td></tr>
-<tr class="separator:a0315f6a2aaed99525c2347d474fcc7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbf3c78179af2d00f1447f30fa5048d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafbf3c78179af2d00f1447f30fa5048d"></a>
-typedef struct <a class="el" href="class_a_z_std_1_1delegate.html">AZStd::delegate</a><br class="typebreak"/>
-&lt; R(Param1) &gt;::SafeBoolStruct&#160;</td><td class="memItemRight" valign="bottom"><b>UselessTypedef</b></td></tr>
-<tr class="separator:aafbf3c78179af2d00f1447f30fa5048d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8699bb9c1c9384ffe81b3b743cc9d65f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8699bb9c1c9384ffe81b3b743cc9d65f"></a>
-typedef StaticFunctionPtr <br class="typebreak"/>
-SafeBoolStruct::*&#160;</td><td class="memItemRight" valign="bottom"><b>unspecified_bool_type</b></td></tr>
-<tr class="separator:a8699bb9c1c9384ffe81b3b743cc9d65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a9928b9307d2c1df088ae88a0b790317e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9928b9307d2c1df088ae88a0b790317e"></a>
-R&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeStaticFunction</b> (Param1 p1) const </td></tr>
-<tr class="separator:a9928b9307d2c1df088ae88a0b790317e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ad8ee93c033d8dada81f803a1adf11cb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8ee93c033d8dada81f803a1adf11cb0"></a>
-ClosureType&#160;</td><td class="memItemRight" valign="bottom"><b>m_Closure</b></td></tr>
-<tr class="separator:ad8ee93c033d8dada81f803a1adf11cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/delegate/delegate.h</li>
@@ -193,7 +147,7 @@ ClosureType&#160;</td><td class="memItemRight" valign="bottom"><b>m_Closure</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

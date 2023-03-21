@@ -54,8 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="struct_a_z_1_1_data_1_1_asset_catalog_requests_1_1_thread_dispatch_lock_guard-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Data::AssetCatalogRequests::ThreadDispatchLockGuard&lt; DispatchMutex &gt; Struct Template Reference</div>  </div>
@@ -76,21 +74,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7406bcc87cee8aaef08a8fd85fd96630"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7406bcc87cee8aaef08a8fd85fd96630"></a>
 <a class="el" href="struct_a_z_1_1_data_1_1_asset_catalog_requests_1_1_thread_dispatch_lock_guard.html">ThreadDispatchLockGuard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_asset_catalog_requests_1_1_thread_dispatch_lock_guard.html">ThreadDispatchLockGuard</a> &amp;)=delete</td></tr>
 <tr class="separator:a7406bcc87cee8aaef08a8fd85fd96630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a1ad71ac6d2e0191587175f5f069e3add"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ad71ac6d2e0191587175f5f069e3add"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>LockType</b> = AZStd::conditional_t&lt; <a class="el" href="struct_a_z_1_1_e_bus_traits.html#a8a3213277ff6f61b1476e0f67ec95622">LocklessDispatch</a>, AZ::Internal::NullLockGuard&lt; DispatchMutex &gt;, <a class="el" href="class_a_z_std_1_1scoped__lock.html">AZStd::scoped_lock</a>&lt; DispatchMutex &gt;&gt;</td></tr>
-<tr class="separator:a1ad71ac6d2e0191587175f5f069e3add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac7d4113d656c180dfda04143049de911"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7d4113d656c180dfda04143049de911"></a>
-<a class="el" href="struct_a_z_1_1_data_1_1_asset_catalog_requests_1_1_post_thread_dispatch_invoker.html">PostThreadDispatchInvoker</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadPolicyInvoker</b></td></tr>
-<tr class="separator:ac7d4113d656c180dfda04143049de911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95d906b423d957bbf7c08f1fd82568bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95d906b423d957bbf7c08f1fd82568bf"></a>
-LockType&#160;</td><td class="memItemRight" valign="bottom"><b>m_lock</b></td></tr>
-<tr class="separator:a95d906b423d957bbf7c08f1fd82568bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Asset/AssetManagerBus.h</li>
@@ -98,7 +81,7 @@ LockType&#160;</td><td class="memItemRight" valign="bottom"><b>m_lock</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

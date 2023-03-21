@@ -55,8 +55,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_sha1-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Sha1 Class Reference</div>  </div>
@@ -86,65 +84,14 @@ constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessByte
 <tr class="memitem:af92e4247adaff6ccbf0ba78714172041"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af92e4247adaff6ccbf0ba78714172041"></a>
 constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDigest</b> (DigestType digest)</td></tr>
 <tr class="separator:af92e4247adaff6ccbf0ba78714172041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad1a90ddd72ebc1dcb71b4d13720f168c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1a90ddd72ebc1dcb71b4d13720f168c"></a>
-constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessBlock</b> ()</td></tr>
-<tr class="separator:ad1a90ddd72ebc1dcb71b4d13720f168c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45a92e654b14160529107f007c9db6ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45a92e654b14160529107f007c9db6ad"></a>
-AZ_FORCE_INLINE constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>LeftRotate</b> (AZ::u32 x, size_t n)</td></tr>
-<tr class="separator:a45a92e654b14160529107f007c9db6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac770863e44876278240e08f6958ff8d3"><td class="memItemLeft" align="right" valign="top">AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_h</b> [5]</td></tr>
-<tr class="separator:ac770863e44876278240e08f6958ff8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a178cd1249d7566e651c64709408c57e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a178cd1249d7566e651c64709408c57e5"></a>
-AZStd::byte&#160;</td><td class="memItemRight" valign="bottom"><b>m_block</b> [64] { AZStd::byte{} }</td></tr>
-<tr class="separator:a178cd1249d7566e651c64709408c57e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af89aa8e24181417d0ca69f317fcf95f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af89aa8e24181417d0ca69f317fcf95f8"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_blockByteIndex</b> {}</td></tr>
-<tr class="separator:af89aa8e24181417d0ca69f317fcf95f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35e4437dbda29913e1995c3ad5d2658"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac35e4437dbda29913e1995c3ad5d2658"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_byteCount</b> {}</td></tr>
-<tr class="separator:ac35e4437dbda29913e1995c3ad5d2658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ac770863e44876278240e08f6958ff8d3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZ::u32 AZ::Sha1::m_h[5]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">            0x67452301,</div>
-<div class="line">            0xEFCDAB89,</div>
-<div class="line">            0x98BADCFE,</div>
-<div class="line">            0x10325476,</div>
-<div class="line">            0xC3D2E1F0</div>
-<div class="line">        }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Math/Sha1.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -53,6 +53,7 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_w_s_core_1_1_http_request_job-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AWSCore::HttpRequestJob Class Reference</div>  </div>
@@ -61,7 +62,7 @@
 
 <p>Inherits <a class="el" href="class_a_w_s_core_1_1_aws_api_job.html">AWSCore::AwsApiJob</a>.</p>
 
-<p>Inherited by <a class="el" href="class_a_w_s_core_1_1_service_job.html">AWSCore::ServiceJob</a><code> [private]</code>.</p>
+<p>Inherited by <a class="el" href="class_a_w_s_core_1_1_service_job.html">AWSCore::ServiceJob</a><code> [protected]</code>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -241,8 +242,104 @@ static AZStd::optional<br class="typebreak"/>
 <tr class="memitem:abd5061cadcb05f982c13011d1882567e inherit pub_static_methods_class_a_w_s_core_1_1_aws_api_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd5061cadcb05f982c13011d1882567e"></a>
 static <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html">Config</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultConfig</b> ()</td></tr>
 <tr class="separator:abd5061cadcb05f982c13011d1882567e inherit pub_static_methods_class_a_w_s_core_1_1_aws_api_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9208b6b11afdfa32d017a6f1222affeb"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr<br class="typebreak"/>
+&lt; Aws::Http::HttpRequest &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_http_request_job.html#a9208b6b11afdfa32d017a6f1222affeb">InitializeRequest</a> ()</td></tr>
+<tr class="separator:a9208b6b11afdfa32d017a6f1222affeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4431cda7afb17e5b4dd747ffd6f61fff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_http_request_job.html#a4431cda7afb17e5b4dd747ffd6f61fff">CustomizeRequest</a> (const std::shared_ptr&lt; Aws::Http::HttpRequest &gt; &amp;request)</td></tr>
+<tr class="separator:a4431cda7afb17e5b4dd747ffd6f61fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aafef8aad23f73a0d6fc75756443ecf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_http_request_job.html#a7aafef8aad23f73a0d6fc75756443ecf">ProcessResponse</a> (const std::shared_ptr&lt; Aws::Http::HttpResponse &gt; &amp;response)</td></tr>
+<tr class="separator:a7aafef8aad23f73a0d6fc75756443ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_w_s_core_1_1_aws_api_job"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_w_s_core_1_1_aws_api_job')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_w_s_core_1_1_aws_api_job.html">AWSCore::AwsApiJob</a></td></tr>
+<tr class="memitem:a9573d1d5d72cae1345da7fad9495202a inherit pro_methods_class_a_w_s_core_1_1_aws_api_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9573d1d5d72cae1345da7fad9495202a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AwsApiJob</b> (bool isAutoDelete, <a class="el" href="class_a_w_s_core_1_1_i_aws_api_job_config.html">IConfig</a> *config=GetDefaultConfig())</td></tr>
+<tr class="separator:a9573d1d5d72cae1345da7fad9495202a inherit pro_methods_class_a_w_s_core_1_1_aws_api_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_static_attribs_class_a_w_s_core_1_1_aws_api_job"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_a_w_s_core_1_1_aws_api_job')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_a_w_s_core_1_1_aws_api_job.html">AWSCore::AwsApiJob</a></td></tr>
+<tr class="memitem:a4f3c1191a5a1fca62820838f7ef586a7 inherit pro_static_attribs_class_a_w_s_core_1_1_aws_api_job"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f3c1191a5a1fca62820838f7ef586a7"></a>
+static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_job.html#a4f3c1191a5a1fca62820838f7ef586a7">COMPONENT_DISPLAY_NAME</a></td></tr>
+<tr class="memdesc:a4f3c1191a5a1fca62820838f7ef586a7 inherit pro_static_attribs_class_a_w_s_core_1_1_aws_api_job"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for error messages. <br/></td></tr>
+<tr class="separator:a4f3c1191a5a1fca62820838f7ef586a7 inherit pro_static_attribs_class_a_w_s_core_1_1_aws_api_job"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4431cda7afb17e5b4dd747ffd6f61fff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AWSCore::HttpRequestJob::CustomizeRequest </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; Aws::Http::HttpRequest &gt; &amp;&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Override to customize HTTP request right before it is sent. Configuration specified in this class will already have been configured in the request. WARNING: This gets called on the job's thread, so observe thread safety precautions. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9208b6b11afdfa32d017a6f1222affeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::shared_ptr&lt;Aws::Http::HttpRequest&gt; AWSCore::HttpRequestJob::InitializeRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Override to provide a custom instantiation of the HttpRequest. The default implementation uses the URL and method specified in this class. This is required mainly because Aws::Http::HttpRequest demands that these parameters be configured at the time of construction. You can also use this opportunity to set properties of the <a class="el" href="class_a_w_s_core_1_1_http_request_job.html">HttpRequestJob</a> you want reflected in the request. WARNING: This gets called on the job's thread, so observe thread safety precautions. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7aafef8aad23f73a0d6fc75756443ecf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AWSCore::HttpRequestJob::ProcessResponse </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; Aws::Http::HttpResponse &gt; &amp;&#160;</td>
+          <td class="paramname"><em>response</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Override to process the response to the HTTP request before callbacks are fired. WARNING: This gets called on the job's thread, so observe thread safety precautions. </p>
+
+</div>
+</div>
 <a class="anchor" id="a03ea43041ca931fb04b2a16adfb5f0c6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -276,7 +373,7 @@ static <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html">Config<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:39 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:19 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

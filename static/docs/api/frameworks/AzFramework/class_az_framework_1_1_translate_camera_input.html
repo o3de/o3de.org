@@ -54,9 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_framework_1_1_translate_camera_input-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -141,74 +138,28 @@ AZStd::function&lt; float()&gt;&#160;</td><td class="memItemRight" valign="botto
 AZStd::function&lt; float()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_boostMultiplierFn</b></td></tr>
 <tr class="separator:ac1dcd59c328ba8084dee65541afce716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:aac5d28d2b0705392fec1a7795010e2d3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> { <br/>
-&#160;&#160;<b>Nil</b> = 0, 
-<b>Forward</b> = 1 &lt;&lt; 0, 
-<b>Backward</b> = 1 &lt;&lt; 1, 
-<b>Left</b> = 1 &lt;&lt; 2, 
-<br/>
-&#160;&#160;<b>Right</b> = 1 &lt;&lt; 3, 
-<b>Up</b> = 1 &lt;&lt; 4, 
-<b>Down</b> = 1 &lt;&lt; 5
-<br/>
- }</td></tr>
-<tr class="memdesc:aac5d28d2b0705392fec1a7795010e2d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of translation the camera input is performing (multiple may be active at once). <br/></td></tr>
-<tr class="separator:aac5d28d2b0705392fec1a7795010e2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a866fdcda1564bea206da5dbfc82df8b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a866fdcda1564bea206da5dbfc82df8b7"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_translate_camera_input.html#a866fdcda1564bea206da5dbfc82df8b7">TranslationFromKey</a> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> &amp;channelId, const <a class="el" href="struct_az_framework_1_1_translate_camera_input_channel_ids.html">TranslateCameraInputChannelIds</a> &amp;translateCameraInputChannelIds)</td></tr>
-<tr class="memdesc:a866fdcda1564bea206da5dbfc82df8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts from a generic input channel id to a concrete translation type (based on the user's key mappings). <br/></td></tr>
-<tr class="separator:a866fdcda1564bea206da5dbfc82df8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ad3829c4dd104f64f2445dac1ee1f3ce3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3829c4dd104f64f2445dac1ee1f3ce3"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_translate_camera_input.html#ad3829c4dd104f64f2445dac1ee1f3ce3">m_translation</a> = TranslationType::Nil</td></tr>
-<tr class="memdesc:ad3829c4dd104f64f2445dac1ee1f3ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of translation the camera input is under. <br/></td></tr>
-<tr class="separator:ad3829c4dd104f64f2445dac1ee1f3ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a447d723282751388ab79e4f544948118"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a447d723282751388ab79e4f544948118"></a>
-<a class="el" href="namespace_az_framework.html#a8b048b2d713dcc98cc39d9cf024700a3">TranslationAxesFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_translate_camera_input.html#a447d723282751388ab79e4f544948118">m_translationAxesFn</a></td></tr>
-<tr class="memdesc:a447d723282751388ab79e4f544948118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builder for translation axes. <br/></td></tr>
-<tr class="separator:a447d723282751388ab79e4f544948118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b857a412ba093db06e5331f896514e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6b857a412ba093db06e5331f896514e"></a>
-<a class="el" href="namespace_az_framework.html#aae7f48ec6d9760fed21aafc96213ff91">TranslationDeltaFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_translate_camera_input.html#aa6b857a412ba093db06e5331f896514e">m_translateDeltaFn</a></td></tr>
-<tr class="memdesc:aa6b857a412ba093db06e5331f896514e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How to apply the translation delta to the camera offset or pivot. <br/></td></tr>
-<tr class="separator:aa6b857a412ba093db06e5331f896514e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac501a51d9573f6618ccb4735d1ac424d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac501a51d9573f6618ccb4735d1ac424d"></a>
-<a class="el" href="struct_az_framework_1_1_translate_camera_input_channel_ids.html">TranslateCameraInputChannelIds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_translate_camera_input.html#ac501a51d9573f6618ccb4735d1ac424d">m_translateCameraInputChannelIds</a></td></tr>
-<tr class="memdesc:ac501a51d9573f6618ccb4735d1ac424d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input channel ids that map to internal translation types. <br/></td></tr>
-<tr class="separator:ac501a51d9573f6618ccb4735d1ac424d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a609523063bc9526071f5cb8bfa0c12a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a609523063bc9526071f5cb8bfa0c12a3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_translate_camera_input.html#a609523063bc9526071f5cb8bfa0c12a3">m_boost</a> = false</td></tr>
-<tr class="memdesc:a609523063bc9526071f5cb8bfa0c12a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the translation speed currently being multiplied/scaled upwards. <br/></td></tr>
-<tr class="separator:a609523063bc9526071f5cb8bfa0c12a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a9522ca66b1d6bbd6e22aabf40012543e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9522ca66b1d6bbd6e22aabf40012543e"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator|</b> (const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> lhs, const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> rhs)</td></tr>
+TranslationType&#160;</td><td class="memItemRight" valign="bottom"><b>operator|</b> (const TranslationType lhs, const TranslationType rhs)</td></tr>
 <tr class="separator:a9522ca66b1d6bbd6e22aabf40012543e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad50152eb636857e4399bc922e2111c29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad50152eb636857e4399bc922e2111c29"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator|=</b> (<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> &amp;lhs, const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> rhs)</td></tr>
+TranslationType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator|=</b> (TranslationType &amp;lhs, const TranslationType rhs)</td></tr>
 <tr class="separator:ad50152eb636857e4399bc922e2111c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38e910635ca497ead52e78c00ffe6755"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38e910635ca497ead52e78c00ffe6755"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator^</b> (const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> lhs, const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> rhs)</td></tr>
+TranslationType&#160;</td><td class="memItemRight" valign="bottom"><b>operator^</b> (const TranslationType lhs, const TranslationType rhs)</td></tr>
 <tr class="separator:a38e910635ca497ead52e78c00ffe6755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add571c2df6b59800c63d3cc252e1f40a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add571c2df6b59800c63d3cc252e1f40a"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator^=</b> (<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> &amp;lhs, const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> rhs)</td></tr>
+TranslationType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator^=</b> (TranslationType &amp;lhs, const TranslationType rhs)</td></tr>
 <tr class="separator:add571c2df6b59800c63d3cc252e1f40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe65d5a5decf6b64d5c1bb32e63cf7d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe65d5a5decf6b64d5c1bb32e63cf7d5"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&amp;</b> (const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> lhs, const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> rhs)</td></tr>
+TranslationType&#160;</td><td class="memItemRight" valign="bottom"><b>operator&amp;</b> (const TranslationType lhs, const TranslationType rhs)</td></tr>
 <tr class="separator:abe65d5a5decf6b64d5c1bb32e63cf7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8c1c0e336e03135a3af7ded406262fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8c1c0e336e03135a3af7ded406262fb"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&amp;=</b> (<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> &amp;lhs, const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> rhs)</td></tr>
+TranslationType &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&amp;=</b> (TranslationType &amp;lhs, const TranslationType rhs)</td></tr>
 <tr class="separator:aa8c1c0e336e03135a3af7ded406262fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3395a72eb20e421b77838472ad98b80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3395a72eb20e421b77838472ad98b80"></a>
-<a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator~</b> (const <a class="el" href="class_az_framework_1_1_translate_camera_input.html#aac5d28d2b0705392fec1a7795010e2d3">TranslationType</a> lhs)</td></tr>
+TranslationType&#160;</td><td class="memItemRight" valign="bottom"><b>operator~</b> (const TranslationType lhs)</td></tr>
 <tr class="separator:aa3395a72eb20e421b77838472ad98b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -283,7 +234,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateChangeFn</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

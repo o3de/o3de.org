@@ -56,8 +56,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1basic__regex-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::basic_regex&lt; Element, RegExTraits &gt; Class Template Reference</div>  </div>
@@ -208,38 +206,6 @@ static const flag_type&#160;</td><td class="memItemRight" valign="bottom"><b>gre
 <tr class="memitem:a9a499b68ec5ce52ee8599aa04f0f8289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a499b68ec5ce52ee8599aa04f0f8289"></a>
 static const flag_type&#160;</td><td class="memItemRight" valign="bottom"><b>egrep</b> = regex_constants::egrep</td></tr>
 <tr class="separator:a9a499b68ec5ce52ee8599aa04f0f8289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a4988a01affc2c3d5d44c18dd29a5036e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4988a01affc2c3d5d44c18dd29a5036e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
-<tr class="separator:a4988a01affc2c3d5d44c18dd29a5036e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade40b810d9134a3583a5168fe82ba02a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade40b810d9134a3583a5168fe82ba02a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegexError</b> (regex_constants::error_type code) override</td></tr>
-<tr class="separator:ade40b810d9134a3583a5168fe82ba02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e4471c1ef9e2b3856088014327a2b5"><td class="memTemplParams" colspan="2"><a class="anchor" id="a85e4471c1ef9e2b3856088014327a2b5"></a>
-template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:a85e4471c1ef9e2b3856088014327a2b5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Reset</b> (InputIterator first, InputIterator last, flag_type flags, <a class="el" href="namespace_a_z_std.html#aaede4ccc507e5540ce3e4055dcd4e3a7">input_iterator_tag</a>)</td></tr>
-<tr class="separator:a85e4471c1ef9e2b3856088014327a2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563c299990c7d10a2fbbaaba1a55177a"><td class="memTemplParams" colspan="2"><a class="anchor" id="a563c299990c7d10a2fbbaaba1a55177a"></a>
-template&lt;class ForwardIterator &gt; </td></tr>
-<tr class="memitem:a563c299990c7d10a2fbbaaba1a55177a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Reset</b> (ForwardIterator first, ForwardIterator last, flag_type flags, <a class="el" href="namespace_a_z_std.html#a741b98c631cecf9dd42464f20710b2e7">forward_iterator_tag</a>)</td></tr>
-<tr class="separator:a563c299990c7d10a2fbbaaba1a55177a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a32944f178399c0b2217c11edda8e21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a32944f178399c0b2217c11edda8e21"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> (<a class="el" href="class_a_z_std_1_1_root_node.html">RootNode</a> *rootNode)</td></tr>
-<tr class="separator:a1a32944f178399c0b2217c11edda8e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a0e8328ddc06a55b5063f118ee8d097cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e8328ddc06a55b5063f118ee8d097cb"></a>
-<a class="el" href="class_a_z_std_1_1_root_node.html">RootNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootNode</b></td></tr>
-<tr class="separator:a0e8328ddc06a55b5063f118ee8d097cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10c18c37e3d6192248b9767c3fb39e0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10c18c37e3d6192248b9767c3fb39e0a"></a>
-RegExTraits&#160;</td><td class="memItemRight" valign="bottom"><b>m_traits</b></td></tr>
-<tr class="separator:a10c18c37e3d6192248b9767c3fb39e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae10df8c4dee1e2db75a87661c451c182"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae10df8c4dee1e2db75a87661c451c182"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_error</b></td></tr>
-<tr class="separator:ae10df8c4dee1e2db75a87661c451c182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/std/string/regex.h</li>
@@ -247,7 +213,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_error</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:57 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

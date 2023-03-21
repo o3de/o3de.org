@@ -52,6 +52,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_script_canvas_1_1_overload_contract-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::OverloadContract Class Reference</div>  </div>
@@ -94,6 +96,27 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="memitem:a58edb8f3b9f65b2d183fc214217a3528 inherit pub_static_methods_class_script_canvas_1_1_contract"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58edb8f3b9f65b2d183fc214217a3528"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *reflection)</td></tr>
 <tr class="separator:a58edb8f3b9f65b2d183fc214217a3528 inherit pub_static_methods_class_script_canvas_1_1_contract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a839879781dae6495d37d4eafbf5dbca4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a839879781dae6495d37d4eafbf5dbca4"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnEvaluate</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;sourceSlot, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;targetSlot) const override</td></tr>
+<tr class="separator:a839879781dae6495d37d4eafbf5dbca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a30e2f76bf16522945a392964ed546"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1a30e2f76bf16522945a392964ed546"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnEvaluateForType</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;dataType) const override</td></tr>
+<tr class="separator:ad1a30e2f76bf16522945a392964ed546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab98103c6ec72e5caafbae97c4568f28f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab98103c6ec72e5caafbae97c4568f28f"></a>
+<a class="el" href="class_script_canvas_1_1_overload_contract_interface.html">OverloadContractInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_overloadInterface</b> = nullptr</td></tr>
+<tr class="separator:ab98103c6ec72e5caafbae97c4568f28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425687abd4e073a6f215b183b9f3fa8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a425687abd4e073a6f215b183b9f3fa8b"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_methodIndex</b> = 0</td></tr>
+<tr class="separator:a425687abd4e073a6f215b183b9f3fa8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaaaa90793d8bb475cfc4168d82ccdaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaaaa90793d8bb475cfc4168d82ccdaf"></a>
+ConnectionType&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionType</b> = ConnectionType::Input</td></tr>
+<tr class="separator:adaaaa90793d8bb475cfc4168d82ccdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Core/Contracts/MethodOverloadContract.h</li>
@@ -101,7 +124,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:45 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:25 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

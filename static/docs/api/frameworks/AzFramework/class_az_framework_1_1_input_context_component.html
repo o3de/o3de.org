@@ -55,8 +55,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_context_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputContextComponent Class Reference</div>  </div>
@@ -109,175 +107,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:acaa0d8b68330494563d4a033a63655bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acaa0d8b68330494563d4a033a63655bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLocalUserId</b> (<a class="el" href="namespace_az_framework.html#a68f1ef85c956c9a787e8681e2669599e">LocalUserId</a> localUserId) override</td></tr>
 <tr class="separator:acaa0d8b68330494563d4a033a63655bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a04f15dd52da6b92867a642bd115ce4de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04f15dd52da6b92867a642bd115ce4de"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#a04f15dd52da6b92867a642bd115ce4de">CreateInputContext</a> ()</td></tr>
-<tr class="memdesc:a04f15dd52da6b92867a642bd115ce4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the input context. <br/></td></tr>
-<tr class="separator:a04f15dd52da6b92867a642bd115ce4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ad331b33e3d2e6d517e911a19d1440f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ad331b33e3d2e6d517e911a19d1440f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#a6ad331b33e3d2e6d517e911a19d1440f">ResetInputContext</a> ()</td></tr>
-<tr class="memdesc:a6ad331b33e3d2e6d517e911a19d1440f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the input context. <br/></td></tr>
-<tr class="separator:a6ad331b33e3d2e6d517e911a19d1440f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aed8cd5af3ee3a5d33fc0988f12a716a7"><td class="memItemLeft" align="right" valign="top">AZStd::vector<br class="typebreak"/>
-&lt; <a class="el" href="class_az_framework_1_1_input_mapping_1_1_config_base.html">InputMapping::ConfigBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#aed8cd5af3ee3a5d33fc0988f12a716a7">m_inputMappings</a></td></tr>
-<tr class="separator:aed8cd5af3ee3a5d33fc0988f12a716a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17a6bec580f290d109651d401c68a880"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#a17a6bec580f290d109651d401c68a880">m_uniqueName</a></td></tr>
-<tr class="separator:a17a6bec580f290d109651d401c68a880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abee9b9c1b099a4ae389046624e869429"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abee9b9c1b099a4ae389046624e869429"></a>
-AZStd::unique_ptr&lt; <a class="el" href="class_az_framework_1_1_input_context.html">InputContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#abee9b9c1b099a4ae389046624e869429">m_inputContext</a></td></tr>
-<tr class="memdesc:abee9b9c1b099a4ae389046624e869429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input context that is created and owned by this component. Not reflected to EditContext. <br/></td></tr>
-<tr class="separator:abee9b9c1b099a4ae389046624e869429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9ff379697faf3e1832b9bba2ff66c5c"><td class="memItemLeft" align="right" valign="top">AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_framework_1_1_input_channel_event_filter_inclusion_list.html">InputChannelEventFilterInclusionList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#ad9ff379697faf3e1832b9bba2ff66c5c">m_localUserIdFilter</a></td></tr>
-<tr class="separator:ad9ff379697faf3e1832b9bba2ff66c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd51a82942ab8cb37b8e492dd0a048ef"><td class="memItemLeft" align="right" valign="top">AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#abd51a82942ab8cb37b8e492dd0a048ef">m_localPlayerIndex</a> = -1</td></tr>
-<tr class="separator:abd51a82942ab8cb37b8e492dd0a048ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf64ec2d519401ef66a924913917745a"><td class="memItemLeft" align="right" valign="top">AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#adf64ec2d519401ef66a924913917745a">m_inputListenerPriority</a> = InputChannelEventListener::GetPriorityDefault()</td></tr>
-<tr class="separator:adf64ec2d519401ef66a924913917745a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad772c88811091d619f13fa6dc5580d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_context_component.html#aad772c88811091d619f13fa6dc5580d1">m_consumesProcessedInput</a> = false</td></tr>
-<tr class="separator:aad772c88811091d619f13fa6dc5580d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a class="el" href="class_az_framework_1_1_input_context_component.html">InputContextComponent</a> is used to configure (at edit time) the data necessary to create an <a class="el" href="class_az_framework_1_1_input_context.html">InputContext</a> (at run time). The life cycle of any <a class="el" href="class_az_framework_1_1_input_context_component.html">InputContextComponent</a> is controlled by the AZ::Entity it is attached to, adhering to the same rules as any other AZ::Component, and the <a class="el" href="class_az_framework_1_1_input_context.html">InputContext</a> which it owns is created/destroyed when the component is activated/deactivated. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aad772c88811091d619f13fa6dc5580d1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzFramework::InputContextComponent::m_consumesProcessedInput = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Should the input context consume input that is processed by any of its input mappings? Reflected to EditContext, then used to create the unique input context class in Activate. </p>
-
-</div>
-</div>
-<a class="anchor" id="adf64ec2d519401ef66a924913917745a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZ::s32 AzFramework::InputContextComponent::m_inputListenerPriority = InputChannelEventListener::GetPriorityDefault()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The priority used to sort the input context relative to all other input event listeners. Reflected to EditContext, then used to create the unique input context class in Activate. </p>
-
-</div>
-</div>
-<a class="anchor" id="aed8cd5af3ee3a5d33fc0988f12a716a7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::vector&lt;<a class="el" href="class_az_framework_1_1_input_mapping_1_1_config_base.html">InputMapping::ConfigBase</a>*&gt; AzFramework::InputContextComponent::m_inputMappings</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The list of all input mappings that will be created when the input context is activated. Reflected to EditContext, then used to create and add input mapping classes in Activate. </p>
-
-</div>
-</div>
-<a class="anchor" id="abd51a82942ab8cb37b8e492dd0a048ef"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZ::s32 AzFramework::InputContextComponent::m_localPlayerIndex = -1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The local player index that this component will receive input from (0 base, -1 wildcard). Will only work on platforms where the local user id corresponds to the local player index. For other platforms, SetLocalUserId must be called at runtime with id of a logged in user. Reflected to EditContext, then used if needed to create the local user id filter in Init. </p>
-
-</div>
-</div>
-<a class="anchor" id="ad9ff379697faf3e1832b9bba2ff66c5c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::shared_ptr&lt;<a class="el" href="class_az_framework_1_1_input_channel_event_filter_inclusion_list.html">InputChannelEventFilterInclusionList</a>&gt; AzFramework::InputContextComponent::m_localUserIdFilter</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Filter used to determine whether an input event should be handled by this input context. Not reflected, but created inside SetLocalUserId if needed to fliter by a local user id. </p>
-
-</div>
-</div>
-<a class="anchor" id="a17a6bec580f290d109651d401c68a880"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::string AzFramework::InputContextComponent::m_uniqueName</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The name of the input context, unique among all active input contexts and input devices. This will be truncated if its length exceeds that of InputDeviceId::MAX_NAME_LENGTH = 64 Reflected to EditContext, then used to create the unique input context class in Activate. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Input/Contexts/InputContextComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

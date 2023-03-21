@@ -54,8 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_e_bus_shared_dispatch_mutex-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::EBusSharedDispatchMutex Class Reference</div>  </div>
@@ -84,24 +82,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EventMutexLockShared<
 <tr class="memitem:a4b4602c493bb2e7553c5aefd6bd83a70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b4602c493bb2e7553c5aefd6bd83a70"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EventMutexUnlockShared</b> ()</td></tr>
 <tr class="separator:a4b4602c493bb2e7553c5aefd6bd83a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad20b526aefa8bddfe3d349fe09e744ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad20b526aefa8bddfe3d349fe09e744ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>lock</b> ()</td></tr>
-<tr class="separator:ad20b526aefa8bddfe3d349fe09e744ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dcc421b14432c7a866fd291b69ac564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dcc421b14432c7a866fd291b69ac564"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unlock</b> ()</td></tr>
-<tr class="separator:a3dcc421b14432c7a866fd291b69ac564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ad7e5c4b4e095382392117c95172a5442"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7e5c4b4e095382392117c95172a5442"></a>
-<a class="el" href="class_a_z_std_1_1shared__mutex.html">AZStd::shared_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventMutex</b></td></tr>
-<tr class="separator:ad7e5c4b4e095382392117c95172a5442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf5706e344e2e4953ca5b4e0c098ed9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf5706e344e2e4953ca5b4e0c098ed9c"></a>
-<a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_callstackMutex</b></td></tr>
-<tr class="separator:abf5706e344e2e4953ca5b4e0c098ed9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="struct_a_z_1_1_e_bus_shared_dispatch_traits.html">EBusSharedDispatchTraits</a> is a custom mutex type and lock guards that can be used with an <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> to allow for parallel dispatch calls, but still prevents connects / disconnects during a dispatch.</p>
@@ -127,7 +107,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:20 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

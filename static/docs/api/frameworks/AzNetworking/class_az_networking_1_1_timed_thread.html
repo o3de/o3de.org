@@ -51,8 +51,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_timed_thread-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::TimedThread Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -98,30 +96,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:ab15adb7b152f33666dd20c745c1cd3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb5b5868e42aa808fc76ddddb0e4486"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_timed_thread.html#a3fb5b5868e42aa808fc76ddddb0e4486">OnUpdate</a> (AZ::TimeMs updateRateMs)=0</td></tr>
 <tr class="separator:a3fb5b5868e42aa808fc76ddddb0e4486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a9b19a386b87bee05d4446e392159af44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b19a386b87bee05d4446e392159af44"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_networking_1_1_timed_thread.html">TimedThread</a>)</td></tr>
-<tr class="separator:a9b19a386b87bee05d4446e392159af44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a6be339a7133cd7c55d315785a4b7fdae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6be339a7133cd7c55d315785a4b7fdae"></a>
-AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_updateRate</b></td></tr>
-<tr class="separator:a6be339a7133cd7c55d315785a4b7fdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a533819a8126fcd5cb598819313ad1ca1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a533819a8126fcd5cb598819313ad1ca1"></a>
-AZStd::thread_desc&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadDesc</b></td></tr>
-<tr class="separator:a533819a8126fcd5cb598819313ad1ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73fcf52219f5b5c755da07bad9b1d8f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73fcf52219f5b5c755da07bad9b1d8f3"></a>
-AZStd::thread&#160;</td><td class="memItemRight" valign="bottom"><b>m_thread</b></td></tr>
-<tr class="separator:a73fcf52219f5b5c755da07bad9b1d8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d68b1b2fdbb4f974d9f745844fa022"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94d68b1b2fdbb4f974d9f745844fa022"></a>
-AZStd::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_joinable</b> = false</td></tr>
-<tr class="separator:a94d68b1b2fdbb4f974d9f745844fa022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5630a8844b8dfbc106c1c323a972e0de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5630a8844b8dfbc106c1c323a972e0de"></a>
-AZStd::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_running</b> = false</td></tr>
-<tr class="separator:a5630a8844b8dfbc106c1c323a972e0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A thread wrapper class that makes it easy to have a time throttled thread. </p>
@@ -172,8 +146,6 @@ AZStd::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_reader_thread.html#ac10a8e66aa72c3f7d4e209d58a6c132d">AzNetworking::UdpReaderThread</a>, and <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#a05b7403903eeebd190660113a5e448c7">AzNetworking::TcpListenThread</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -182,7 +154,7 @@ AZStd::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

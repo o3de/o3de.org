@@ -56,8 +56,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_spline_selection_manipulator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::SplineSelectionManipulator Class Reference</div>  </div>
@@ -221,48 +219,6 @@ static AZStd::shared_ptr<br class="typebreak"/>
 <tr class="memdesc:a32bd2dc7b8296a0a26a7f921be46bcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Manipulator must only be created and managed through a shared_ptr. <br/></td></tr>
 <tr class="separator:a32bd2dc7b8296a0a26a7f921be46bcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a707fec32ec4eae891f545a63fb020c6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a707fec32ec4eae891f545a63fb020c6e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#a707fec32ec4eae891f545a63fb020c6e">SplineSelectionManipulator</a> ()</td></tr>
-<tr class="memdesc:a707fec32ec4eae891f545a63fb020c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor. <br/></td></tr>
-<tr class="separator:a707fec32ec4eae891f545a63fb020c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db5fa76addb0121fe0c7103c951c07d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#a7db5fa76addb0121fe0c7103c951c07d">OnLeftMouseDownImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;interaction, float rayIntersectionDistance) override</td></tr>
-<tr class="separator:a7db5fa76addb0121fe0c7103c951c07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0394622cf68fa3d61c41896b79d98e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0394622cf68fa3d61c41896b79d98e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#ad0394622cf68fa3d61c41896b79d98e6">OnLeftMouseUpImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;interaction) override</td></tr>
-<tr class="memdesc:ad0394622cf68fa3d61c41896b79d98e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for OnLeftMouseUp. <br/></td></tr>
-<tr class="separator:ad0394622cf68fa3d61c41896b79d98e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86619758a5ef78381c6b79ca5ace421f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86619758a5ef78381c6b79ca5ace421f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#a86619758a5ef78381c6b79ca5ace421f">InvalidateImpl</a> () override</td></tr>
-<tr class="memdesc:a86619758a5ef78381c6b79ca5ace421f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for Invalidate. <br/></td></tr>
-<tr class="separator:a86619758a5ef78381c6b79ca5ace421f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92671a09edcb120d0fa33492e754ad9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92671a09edcb120d0fa33492e754ad9f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#a92671a09edcb120d0fa33492e754ad9f">SetBoundsDirtyImpl</a> () override</td></tr>
-<tr class="memdesc:a92671a09edcb120d0fa33492e754ad9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for SetBoundsDirty. <br/></td></tr>
-<tr class="separator:a92671a09edcb120d0fa33492e754ad9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a448f3bf4a4e32790b5271636f0d1ed83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a448f3bf4a4e32790b5271636f0d1ed83"></a>
-AZStd::weak_ptr&lt; const AZ::Spline &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_spline</b></td></tr>
-<tr class="separator:a448f3bf4a4e32790b5271636f0d1ed83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a439e8de30691f2442ceabbff0a8a94fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a439e8de30691f2442ceabbff0a8a94fa"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_manipulator_view.html">ManipulatorView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#a439e8de30691f2442ceabbff0a8a94fa">m_manipulatorView</a> = nullptr</td></tr>
-<tr class="memdesc:a439e8de30691f2442ceabbff0a8a94fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look of manipulator and bounds for interaction. <br/></td></tr>
-<tr class="separator:a439e8de30691f2442ceabbff0a8a94fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6baa8e1450b9d76f34aecfee5f48cb6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6baa8e1450b9d76f34aecfee5f48cb6a"></a>
-MouseActionCallback&#160;</td><td class="memItemRight" valign="bottom"><b>m_onLeftMouseDownCallback</b> = nullptr</td></tr>
-<tr class="separator:a6baa8e1450b9d76f34aecfee5f48cb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6382c3549560013b5d640425f686998"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6382c3549560013b5d640425f686998"></a>
-MouseActionCallback&#160;</td><td class="memItemRight" valign="bottom"><b>m_onLeftMouseUpCallback</b> = nullptr</td></tr>
-<tr class="separator:ab6382c3549560013b5d640425f686998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ceee6f47795b0418a0d48ef1bfe6c62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ceee6f47795b0418a0d48ef1bfe6c62"></a>
-<a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_keyboard_modifiers.html">ViewportInteraction::KeyboardModifiers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#a5ceee6f47795b0418a0d48ef1bfe6c62">m_keyboardModifiers</a></td></tr>
-<tr class="memdesc:a5ceee6f47795b0418a0d48ef1bfe6c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">What modifier keys are pressed when interacting with this manipulator. <br/></td></tr>
-<tr class="separator:a5ceee6f47795b0418a0d48ef1bfe6c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_class_az_tools_framework_1_1_base_manipulator"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_az_tools_framework_1_1_base_manipulator')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html">AzToolsFramework::BaseManipulator</a></td></tr>
@@ -305,51 +261,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A manipulator to represent selection of a spline. Underlying spline data is used to test mouse picking ray against to preview closest point on spline. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a7db5fa76addb0121fe0c7103c951c07d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::SplineSelectionManipulator::OnLeftMouseDownImpl </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The implementation to override in a derived class for OnLeftMouseDown. Note: When implementing this function you must also call AttachLeftMouseDownImpl to ensure m_onLeftMouseDownImpl is set to OnLeftMouseDownImpl, otherwise it will not be called </p>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a10384e0b6f660de85dc8e3d814ae388a">AzToolsFramework::BaseManipulator</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Manipulators/SplineSelectionManipulator.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

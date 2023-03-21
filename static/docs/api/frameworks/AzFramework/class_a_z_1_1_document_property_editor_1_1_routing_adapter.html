@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_document_property_editor_1_1_routing_adapter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DocumentPropertyEditor::RoutingAdapter Class Reference</div>  </div>
@@ -68,11 +66,6 @@
 
 <p>Inherited by <a class="el" href="class_a_z_1_1_document_property_editor_1_1_reflection_adapter.html">AZ::DocumentPropertyEditor::ReflectionAdapter</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_document_property_editor_1_1_routing_adapter_1_1_route_entry.html">RouteEntry</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad91a2ca75e25800b5c1837751d01a47b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_routing_adapter.html#ad91a2ca75e25800b5c1837751d01a47b">ClearRoutes</a> ()</td></tr>
@@ -94,31 +87,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ab1cb4e7f1eb6b98224d5c9f3ec367d5e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac356f0634ebfbbd553c5899c5320025e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html#ac356f0634ebfbbd553c5899c5320025e">NotifyContentsChanged</a> (const Dom::Patch &amp;patch)</td></tr>
 <tr class="separator:ac356f0634ebfbbd553c5899c5320025e inherit pro_methods_class_a_z_1_1_document_property_editor_1_1_document_adapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aeee5c390b63618188291b8e086909df2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeee5c390b63618188291b8e086909df2"></a>
-Dom::Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_routing_adapter.html#aeee5c390b63618188291b8e086909df2">MapPathToRoute</a> (const Dom::Path &amp;path, const Dom::Path &amp;route)</td></tr>
-<tr class="memdesc:aeee5c390b63618188291b8e086909df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a path provided from a nested adapter and maps it back to the absolute path inside this router. <br/></td></tr>
-<tr class="separator:aeee5c390b63618188291b8e086909df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd29765e144180ba585fc1c8b859de5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedd29765e144180ba585fc1c8b859de5"></a>
-Dom::Patch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_document_property_editor_1_1_routing_adapter.html#aedd29765e144180ba585fc1c8b859de5">MapPatchToRoute</a> (const Dom::Patch &amp;patch, const Dom::Path &amp;route)</td></tr>
-<tr class="memdesc:aedd29765e144180ba585fc1c8b859de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps all paths in a patch to absolute paths in this router. <br/></td></tr>
-<tr class="separator:aedd29765e144180ba585fc1c8b859de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7675956b4050f96c70d7e756a2eb84bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7675956b4050f96c70d7e756a2eb84bc"></a>
-Dom::DomPrefixTree<br class="typebreak"/>
-&lt; AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="struct_a_z_1_1_document_property_editor_1_1_routing_adapter_1_1_route_entry.html">RouteEntry</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_routes</b></td></tr>
-<tr class="separator:a7675956b4050f96c70d7e756a2eb84bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bac23fb6584c91edb3c5024412acbe4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2bac23fb6584c91edb3c5024412acbe4"></a>
-<a class="el" href="class_a_z_1_1_document_property_editor_1_1_routing_adapter.html">RoutingAdapter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootRouter</b> = nullptr</td></tr>
-<tr class="separator:a2bac23fb6584c91edb3c5024412acbe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b720a136c812c1e694e4c96a9128020"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b720a136c812c1e694e4c96a9128020"></a>
-Dom::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_relativeRoutingPath</b></td></tr>
-<tr class="separator:a2b720a136c812c1e694e4c96a9128020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -266,7 +234,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b> ()</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

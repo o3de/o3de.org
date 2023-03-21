@@ -55,10 +55,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_tool_bar-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorToolBar Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -67,11 +63,6 @@
 
 <p><code>#include &lt;EditorToolBar.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_editor_tool_bar_1_1_tool_bar_item.html">ToolBarItem</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a23459c1bf28509db1bcc9cb7fe14aa4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23459c1bf28509db1bcc9cb7fe14aa4d"></a>
@@ -125,57 +116,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b>
 <tr class="memitem:a6591572fcea0c8e6714c9d6bb18bf4e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6591572fcea0c8e6714c9d6bb18bf4e1"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a6591572fcea0c8e6714c9d6bb18bf4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a3ffa8d9d6faa43d7ac067b903a529266"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>ToolBarItemType</b> { <b>Action</b> = 0, 
-<b>ActionAndSubMenu</b>, 
-<b>Widget</b>, 
-<b>Separator</b>
- }</td></tr>
-<tr class="separator:a3ffa8d9d6faa43d7ac067b903a529266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a857764536e3d947490580fef582f2157"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a857764536e3d947490580fef582f2157"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateToolBars</b> (AZStd::function&lt; bool(QToolBar *)&gt; handler)</td></tr>
-<tr class="separator:a857764536e3d947490580fef582f2157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a048d376e1738188576813df866cc3b23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a048d376e1738188576813df866cc3b23"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
-<tr class="separator:a048d376e1738188576813df866cc3b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34fc5f44fea59b4e8d7f45d0b96610b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34fc5f44fea59b4e8d7f45d0b96610b4"></a>
-AZStd::unordered_set&lt; QToolBar * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolBars</b></td></tr>
-<tr class="separator:a34fc5f44fea59b4e8d7f45d0b96610b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe7346780293979cfd8951f031816310"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe7346780293979cfd8951f031816310"></a>
-AZStd::map&lt; int, AZStd::vector<br class="typebreak"/>
-&lt; <a class="el" href="struct_az_tools_framework_1_1_editor_tool_bar_1_1_tool_bar_item.html">ToolBarItem</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolBarItems</b></td></tr>
-<tr class="separator:afe7346780293979cfd8951f031816310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5a8682b337419dccf28afaf474eff31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5a8682b337419dccf28afaf474eff31"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; AZStd::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionToSortKeyMap</b></td></tr>
-<tr class="separator:ae5a8682b337419dccf28afaf474eff31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6975f8b9076bc491d85bac392cf0fe0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6975f8b9076bc491d85bac392cf0fe0"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; AZStd::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_widgetToSortKeyMap</b></td></tr>
-<tr class="separator:aa6975f8b9076bc491d85bac392cf0fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a643de85acaffe4b7324b3cd2cfd9fc60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a643de85acaffe4b7324b3cd2cfd9fc60"></a>
-static QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>s_defaultParentWidget</b> = nullptr</td></tr>
-<tr class="separator:a643de85acaffe4b7324b3cd2cfd9fc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a222ceba27d24341bd9cd18ddb1d2201f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a222ceba27d24341bd9cd18ddb1d2201f"></a>
-static <a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html">ActionManagerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_actionManagerInterface</b> = nullptr</td></tr>
-<tr class="separator:a222ceba27d24341bd9cd18ddb1d2201f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c1ddf8ea70c8d357f8298a145ebe193"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c1ddf8ea70c8d357f8298a145ebe193"></a>
-static <a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html">MenuManagerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_menuManagerInterface</b> = nullptr</td></tr>
-<tr class="separator:a6c1ddf8ea70c8d357f8298a145ebe193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f40a5743ebdd99cbec8342404e6c75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63f40a5743ebdd99cbec8342404e6c75"></a>
-static <a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html">ToolBarManagerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_toolBarManagerInterface</b> = nullptr</td></tr>
-<tr class="separator:a63f40a5743ebdd99cbec8342404e6c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Editor ToolBar class definitions. Wraps a QToolBar and provides additional functionality to handle and sort its items. </p>
@@ -185,7 +125,7 @@ static <a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interfa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:03 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

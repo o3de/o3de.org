@@ -53,6 +53,8 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_script_canvas_1_1_nodeables_1_1_time_1_1_base_timer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::Nodeables::Time::BaseTimer Class Reference</div>  </div>
@@ -138,12 +140,76 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa3e7ac7afa2b1bb81efb7683d8176bc7"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>s_timeUnitNames</b> []</td></tr>
 <tr class="separator:aa3e7ac7afa2b1bb81efb7683d8176bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:acd0535706742c8f8d7363b76001edcee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd0535706742c8f8d7363b76001edcee"></a>
+AZStd::vector&lt; AZStd::pair<br class="typebreak"/>
+&lt; int, AZStd::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeUnitList</b> () const </td></tr>
+<tr class="separator:acd0535706742c8f8d7363b76001edcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3426f48bf27ac8f1c4fe574bfd5e6e6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3426f48bf27ac8f1c4fe574bfd5e6e6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimeUnitsChanged</b> (const int &amp;delayUnits)</td></tr>
+<tr class="separator:a3426f48bf27ac8f1c4fe574bfd5e6e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393cb16c8e1b3916de946b026848367e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a393cb16c8e1b3916de946b026848367e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTimeName</b> ()</td></tr>
+<tr class="separator:a393cb16c8e1b3916de946b026848367e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ffe94fb6ab9a12bc7f2f66cb26cb2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0ffe94fb6ab9a12bc7f2f66cb26cb2b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>AllowInstantResponse</b> () const </td></tr>
+<tr class="separator:ad0ffe94fb6ab9a12bc7f2f66cb26cb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825d291a203296f7057e21c095e7302e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a825d291a203296f7057e21c095e7302e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDeactivate</b> () override</td></tr>
+<tr class="separator:a825d291a203296f7057e21c095e7302e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361c165205a6039314e83c51bde84c22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a361c165205a6039314e83c51bde84c22"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimeElapsed</b> ()</td></tr>
+<tr class="separator:a361c165205a6039314e83c51bde84c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_script_canvas_1_1_nodeable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_script_canvas_1_1_nodeable')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_script_canvas_1_1_nodeable.html">ScriptCanvas::Nodeable</a></td></tr>
+<tr class="memitem:a40db5199cb69afd8d264550ae3dbfa6b inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40db5199cb69afd8d264550ae3dbfa6b"></a>
+<a class="el" href="class_script_canvas_1_1_execution_state.html">ExecutionStateWeakConstPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetExecutionState</b> () const </td></tr>
+<tr class="separator:a40db5199cb69afd8d264550ae3dbfa6b inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64e8cbc957a88d270704e898f502f74 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab64e8cbc957a88d270704e898f502f74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeExecutionOutByRequiredCount</b> ()</td></tr>
+<tr class="separator:ab64e8cbc957a88d270704e898f502f74 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab77af97c59a7629cdd68d2285e36f134 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab77af97c59a7629cdd68d2285e36f134"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeExecutionState</b> (<a class="el" href="class_script_canvas_1_1_execution_state.html">ExecutionState</a> *executionState)</td></tr>
+<tr class="separator:ab77af97c59a7629cdd68d2285e36f134 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8bf656a133bdfe3bd3313a3a402553 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade8bf656a133bdfe3bd3313a3a402553"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInitializeExecutionState</b> ()</td></tr>
+<tr class="separator:ade8bf656a133bdfe3bd3313a3a402553 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed680594ecff6ec492b183941f2fc31 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ed680594ecff6ec492b183941f2fc31"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredOutCount</b> () const </td></tr>
+<tr class="separator:a5ed680594ecff6ec492b183941f2fc31 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d64769071d0026907b2fb4a3dc1d02 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memTemplParams" colspan="2"><a class="anchor" id="a59d64769071d0026907b2fb4a3dc1d02"></a>
+template&lt;typename... t_Args&gt; </td></tr>
+<tr class="memitem:a59d64769071d0026907b2fb4a3dc1d02 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ExecutionOut</b> (size_t index, t_Args &amp;&amp;...args) const </td></tr>
+<tr class="separator:a59d64769071d0026907b2fb4a3dc1d02 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59360e6e2b20a4e8f433761e68438ad4 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59360e6e2b20a4e8f433761e68438ad4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionOut</b> (size_t index) const </td></tr>
+<tr class="separator:a59360e6e2b20a4e8f433761e68438ad4 inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c7322553636db435936ca12a8aa9fc inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memTemplParams" colspan="2"><a class="anchor" id="a20c7322553636db435936ca12a8aa9fc"></a>
+template&lt;typename t_Return &gt; </td></tr>
+<tr class="memitem:a20c7322553636db435936ca12a8aa9fc inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ExecutionOutResult</b> (size_t index, t_Return &amp;result) const </td></tr>
+<tr class="separator:a20c7322553636db435936ca12a8aa9fc inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8007e334713c81fd9fd38bd3ca7bc2fb inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8007e334713c81fd9fd38bd3ca7bc2fb"></a>
+template&lt;typename t_Return , typename... t_Args&gt; </td></tr>
+<tr class="memitem:a8007e334713c81fd9fd38bd3ca7bc2fb inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ExecutionOutResult</b> (size_t index, t_Return &amp;result, t_Args &amp;&amp;...args) const </td></tr>
+<tr class="separator:a8007e334713c81fd9fd38bd3ca7bc2fb inherit pro_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae5d04f8b8af7239758380e342838f0a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5d04f8b8af7239758380e342838f0a3"></a>
+<a class="el" href="class_script_canvas_1_1_enum_combo_box_node_property_interface.html">ScriptCanvas::EnumComboBoxNodePropertyInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeUnitsInterface</b></td></tr>
+<tr class="separator:ae5d04f8b8af7239758380e342838f0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_script_canvas_1_1_nodeable"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_script_canvas_1_1_nodeable')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_script_canvas_1_1_nodeable.html">ScriptCanvas::Nodeable</a></td></tr>
 <tr class="memitem:a69e6d4156c8c662be8f3b1bc6cad63c2 inherit pub_static_methods_class_script_canvas_1_1_nodeable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69e6d4156c8c662be8f3b1bc6cad63c2"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *reflectContext)</td></tr>
 <tr class="separator:a69e6d4156c8c662be8f3b1bc6cad63c2 inherit pub_static_methods_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_script_canvas_1_1_nodeable"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_script_canvas_1_1_nodeable')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="class_script_canvas_1_1_nodeable.html">ScriptCanvas::Nodeable</a></td></tr>
+<tr class="memitem:ae01bcb2351b3ba5b08e128dea55ff0ea inherit pro_types_class_script_canvas_1_1_nodeable"><td class="memTemplParams" colspan="2"><a class="anchor" id="ae01bcb2351b3ba5b08e128dea55ff0ea"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae01bcb2351b3ba5b08e128dea55ff0ea inherit pro_types_class_script_canvas_1_1_nodeable"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>decay_array</b> = AZStd::conditional_t&lt; AZStd::is_array_v&lt; AZStd::remove_reference_t&lt; T &gt;&gt;, std::remove_extent_t&lt; AZStd::remove_reference_t&lt; T &gt;&gt; *, T &amp;&amp; &gt;</td></tr>
+<tr class="separator:ae01bcb2351b3ba5b08e128dea55ff0ea inherit pro_types_class_script_canvas_1_1_nodeable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="aa3e7ac7afa2b1bb81efb7683d8176bc7"></a>
@@ -178,7 +244,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:45 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:26 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

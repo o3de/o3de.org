@@ -54,8 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1structured__task__group-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::structured_task_group Class Reference</div>  </div>
@@ -85,30 +83,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0f9f9a22aceff31a9e4cc91319d18eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae310c57cbcf195ca2dfb162ae96bd59f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1structured__task__group.html#ae310c57cbcf195ca2dfb162ae96bd59f">is_canceling</a> () const </td></tr>
 <tr class="separator:ae310c57cbcf195ca2dfb162ae96bd59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1b52cffd6adc662e6fa7842bb6426945"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b52cffd6adc662e6fa7842bb6426945"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>structured_task_group</b> (const <a class="el" href="class_a_z_1_1structured__task__group.html">structured_task_group</a> &amp;)</td></tr>
-<tr class="separator:a1b52cffd6adc662e6fa7842bb6426945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ca8a4eeed4873b261192f2135e817b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3ca8a4eeed4873b261192f2135e817b"></a>
-<a class="el" href="class_a_z_1_1structured__task__group.html">structured_task_group</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1structured__task__group.html">structured_task_group</a> &amp;)</td></tr>
-<tr class="separator:ac3ca8a4eeed4873b261192f2135e817b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7c5f5cc44de768653e688c2a3b48de7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c5f5cc44de768653e688c2a3b48de7d"></a>
-<a class="el" href="class_a_z_1_1_job_context.html">JobContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_parentContext</b></td></tr>
-<tr class="separator:a7c5f5cc44de768653e688c2a3b48de7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e85547a2541be1bfd019e074ca337f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86e85547a2541be1bfd019e074ca337f"></a>
-<a class="el" href="class_a_z_1_1_job_cancel_group.html">JobCancelGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_cancelGroup</b></td></tr>
-<tr class="separator:a86e85547a2541be1bfd019e074ca337f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e56a0a015eb5c36a43cf81e7c1d506f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e56a0a015eb5c36a43cf81e7c1d506f"></a>
-<a class="el" href="class_a_z_1_1_job_context.html">JobContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
-<tr class="separator:a3e56a0a015eb5c36a43cf81e7c1d506f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb06aa57614bcbfb801920a6200b387"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fb06aa57614bcbfb801920a6200b387"></a>
-<a class="el" href="class_a_z_1_1_job_empty.html">JobEmpty</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_empty</b></td></tr>
-<tr class="separator:a5fb06aa57614bcbfb801920a6200b387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the new pseudo-standard interface for running jobs, can be found in VS2010 and Intel's Threading Building Blocks. It is reasonably efficient, but it uses child jobs to implement the <a class="el" href="class_a_z_1_1structured__task__group.html#acc90d3bfbcc685097f4a2527269b8c06">wait()</a> function, which are usually less efficient than explicit dependencies, and can have stack depth issues. </p>
@@ -295,7 +269,7 @@ template&lt;typename F &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:20 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -53,6 +53,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_transient_attachment_pool-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RHI::TransientAttachmentPool Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -145,6 +147,36 @@ Static Public Member Functions</h2></td></tr>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_transient_attachment_pool.html#a9a958e96e0306b1d41f2fcc7a500cb85">NeedsTransientAttachmentPool</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_pool_descriptor.html">TransientAttachmentPoolDescriptor</a> &amp;descriptor)</td></tr>
 <tr class="memdesc:a9a958e96e0306b1d41f2fcc7a500cb85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a Transient Attachment Pool is needed according to the supplied descriptor. <br/></td></tr>
 <tr class="separator:a9a958e96e0306b1d41f2fcc7a500cb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3612560a0dbd5a2a12bf2c3461ff389e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3612560a0dbd5a2a12bf2c3461ff389e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CollectHeapStats</b> (AliasedResourceTypeFlags typeMask, AZStd::span&lt; const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics_1_1_heap.html">TransientAttachmentStatistics::Heap</a> &gt; heapStats)</td></tr>
+<tr class="separator:a3612560a0dbd5a2a12bf2c3461ff389e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_device_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html">AZ::RHI::DeviceObject</a></td></tr>
+<tr class="memitem:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80ab91a69f8f962f519c29f6529cac51"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html#a80ab91a69f8f962f519c29f6529cac51">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device)</td></tr>
+<tr class="memdesc:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derived class should call this method to assign the device. <br/></td></tr>
+<tr class="separator:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
+<tr class="memitem:a955994ad257e9d52191e1a52afe61a62 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a955994ad257e9d52191e1a52afe61a62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const </td></tr>
+<tr class="separator:a955994ad257e9d52191e1a52afe61a62 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79593e4d781972fa270f4940cead50f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#af79593e4d781972fa270f4940cead50f">release</a> () const </td></tr>
+<tr class="separator:af79593e4d781972fa270f4940cead50f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:af02e0b47548acc9186a118e366902acd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af02e0b47548acc9186a118e366902acd"></a>
+<a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html">Scope</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentScope</b> = nullptr</td></tr>
+<tr class="separator:af02e0b47548acc9186a118e366902acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e093e530b4260a0e8586322d73e074"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2e093e530b4260a0e8586322d73e074"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics.html">RHI::TransientAttachmentStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_statistics</b></td></tr>
+<tr class="separator:ad2e093e530b4260a0e8586322d73e074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
+<tr class="memitem:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2285f323a24b84e7b5ad2249438059b8"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCount</b> = 0</td></tr>
+<tr class="separator:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The transient attachment pool interface is used by the frame scheduler to compile the working set of transient attachments for the frame. Each scope is iterated topologically and transient resources are allocated and de-allocated. This is all done from within the compile phase. Therefore, an allocation may create a resource, but a de-allocation does not destroy resources! All de-allocation does is inform the pool that a resource can be re-used within a subsequent scope. The final result of this process is a set of image / buffer attachments that are backed by guaranteed memory valid <em>only</em> for the scope in which they attached. </p>
@@ -282,7 +314,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

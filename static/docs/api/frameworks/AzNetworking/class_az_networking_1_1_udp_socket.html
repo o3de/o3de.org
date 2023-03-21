@@ -53,7 +53,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_udp_socket-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::UdpSocket Class Reference</div>  </div>
@@ -67,11 +66,6 @@
 
 <p>Inherited by <a class="el" href="class_az_networking_1_1_dtls_socket.html">AzNetworking::DtlsSocket</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_udp_socket_1_1_deferred_data.html">DeferredData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a963662b9ae9c0d489aa2ab3b659f575e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>CanAcceptConnections</b> { <b>False</b>, 
@@ -122,27 +116,6 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_sentPacketsEncr
 <tr class="memitem:a337458095e374a6ca2e99ddc87beb152"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a337458095e374a6ca2e99ddc87beb152"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_sentBytesEncryptionInflation</b> = 0</td></tr>
 <tr class="separator:a337458095e374a6ca2e99ddc87beb152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a1c1863ab63e585acc3953d7de085aaea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c1863ab63e585acc3953d7de085aaea"></a>
-SocketFd&#160;</td><td class="memItemRight" valign="bottom"><b>m_socketFd</b> = InvalidSocketFd</td></tr>
-<tr class="separator:a1c1863ab63e585acc3953d7de085aaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a702138160cf1a26af33b3b352313baf5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a702138160cf1a26af33b3b352313baf5"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_sentPackets</b> = 0</td></tr>
-<tr class="separator:a702138160cf1a26af33b3b352313baf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0331880171ea20135be9db13ea6d7a13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0331880171ea20135be9db13ea6d7a13"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_sentBytes</b> = 0</td></tr>
-<tr class="separator:a0331880171ea20135be9db13ea6d7a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d513ccb82e2334e724457393dc4895"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23d513ccb82e2334e724457393dc4895"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_recvPackets</b> = 0</td></tr>
-<tr class="separator:a23d513ccb82e2334e724457393dc4895"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5858081fb47a2dce61d1b151c3c9d1e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5858081fb47a2dce61d1b151c3c9d1e2"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_recvBytes</b> = 0</td></tr>
-<tr class="separator:a5858081fb47a2dce61d1b151c3c9d1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac39350f3c8cb287ad4738a0e0be85ffb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac39350f3c8cb287ad4738a0e0be85ffb"></a>
-AZ::SimpleLcgRandom&#160;</td><td class="memItemRight" valign="bottom"><b>m_random</b></td></tr>
-<tr class="separator:ac39350f3c8cb287ad4738a0e0be85ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>wrapper class for managing UDP sockets. </p>
@@ -635,7 +608,7 @@ AZ::SimpleLcgRandom&#160;</td><td class="memItemRight" valign="bottom"><b>m_rand
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -51,9 +51,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_title_bar_overdraw_handler_windows-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -85,55 +82,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addTitleBarOverdrawWi
 &#160;</td><td class="memItemRight" valign="bottom"><b>TitleBarOverdrawHandler</b> (QObject *parent)</td></tr>
 <tr class="separator:aef67f7027305fc4cf2221a147e914c05 inherit pub_methods_class_az_qt_components_1_1_title_bar_overdraw_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a3ae6baeade3822786e9075758029fc6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ae6baeade3822786e9075758029fc6a"></a>
-typedef DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>dwStyle</b></td></tr>
-<tr class="separator:a3ae6baeade3822786e9075758029fc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc3401ea236a3288fbd5a641f69a46f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc3401ea236a3288fbd5a641f69a46f2"></a>
-typedef DWORD BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>bMenu</b></td></tr>
-<tr class="separator:abc3401ea236a3288fbd5a641f69a46f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dc3c47768997b3a6504a1ff7a95960b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dc3c47768997b3a6504a1ff7a95960b"></a>
-typedef DWORD BOOL DWORD&#160;</td><td class="memItemRight" valign="bottom"><b>dwExStyle</b></td></tr>
-<tr class="separator:a2dc3c47768997b3a6504a1ff7a95960b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaa6871240148351f7fc4993781f8f8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeaa6871240148351f7fc4993781f8f8c"></a>
-typedef DWORD BOOL DWORD UINT&#160;</td><td class="memItemRight" valign="bottom"><b>dpi</b></td></tr>
-<tr class="separator:aeaa6871240148351f7fc4993781f8f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a9a9c3e32d971c86f8bf3360af02851ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a9c3e32d971c86f8bf3360af02851ec"></a>
-QPlatformWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>overdrawWindow</b> (const QVector&lt; QWidget * &gt; &amp;overdrawWidgets, HWND hWnd)</td></tr>
-<tr class="separator:a9a9c3e32d971c86f8bf3360af02851ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7ce6d03a8b28e877dd01720627c54c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7ce6d03a8b28e877dd01720627c54c4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>applyOverdrawMargins</b> (QPlatformWindow *window, HWND hWnd, bool maximized)</td></tr>
-<tr class="separator:ab7ce6d03a8b28e877dd01720627c54c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f7fa442baf3a08333bc9692c00aa709"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f7fa442baf3a08333bc9692c00aa709"></a>
-typedef&#160;</td><td class="memItemRight" valign="bottom"><b>UINT</b> (WINAPI *PFNGetDpiForWindow)(HWND hwnd)</td></tr>
-<tr class="separator:a8f7fa442baf3a08333bc9692c00aa709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8a19b99b5ebbfd3072a71404d457a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca8a19b99b5ebbfd3072a71404d457a6"></a>
-typedef&#160;</td><td class="memItemRight" valign="bottom"><b>BOOL</b> (WINAPI *PFNAdjustWindowRectExForDpi)(LPRECT lpRect</td></tr>
-<tr class="separator:aca8a19b99b5ebbfd3072a71404d457a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a01ac5a3d7abb6ccc17dae8dff66866d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01ac5a3d7abb6ccc17dae8dff66866d8"></a>
-QVector&lt; QWidget * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_overdrawWidgets</b></td></tr>
-<tr class="separator:a01ac5a3d7abb6ccc17dae8dff66866d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05dbea1bd6774d727b935fc184dedc47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05dbea1bd6774d727b935fc184dedc47"></a>
-QVector<br class="typebreak"/>
-&lt; <a class="el" href="class_az_qt_components_1_1_title_bar_overdraw_screen_handler.html">TitleBarOverdrawScreenHandler</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_screenHandlers</b></td></tr>
-<tr class="separator:a05dbea1bd6774d727b935fc184dedc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28df5aa8adbc395f9ce53354eee9ac83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28df5aa8adbc395f9ce53354eee9ac83"></a>
-HMODULE&#160;</td><td class="memItemRight" valign="bottom"><b>m_user32Module</b></td></tr>
-<tr class="separator:a28df5aa8adbc395f9ce53354eee9ac83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b4ed7a403ec634742222c76deb80a85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b4ed7a403ec634742222c76deb80a85"></a>
-PFNGetDpiForWindow&#160;</td><td class="memItemRight" valign="bottom"><b>m_getDpiForWindowFn</b> { nullptr }</td></tr>
-<tr class="separator:a0b4ed7a403ec634742222c76deb80a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab331d950a4310c1474af6b5e7e5ff441"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab331d950a4310c1474af6b5e7e5ff441"></a>
-PFNAdjustWindowRectExForDpi&#160;</td><td class="memItemRight" valign="bottom"><b>m_adjustWindowRectExForDpiFn</b> { nullptr }</td></tr>
-<tr class="separator:ab331d950a4310c1474af6b5e7e5ff441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:aaef19792cf8efea525bc719c3c6c8e5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaef19792cf8efea525bc719c3c6c8e5c"></a>
@@ -156,7 +104,7 @@ static <a class="el" href="class_az_qt_components_1_1_title_bar_overdraw_handler
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

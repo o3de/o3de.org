@@ -51,8 +51,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_tcp_listen_thread-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::TcpListenThread Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -66,11 +64,6 @@
 
 <p>Inherits <a class="el" href="class_az_networking_1_1_timed_thread.html">AzNetworking::TimedThread</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_networking_1_1_tcp_listen_thread_1_1_listen_port.html">ListenPort</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a31cf54345d3dfc72bc5f4c350ad537ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#a31cf54345d3dfc72bc5f4c350ad537ab">Listen</a> (<a class="el" href="class_az_networking_1_1_tcp_network_interface.html">TcpNetworkInterface</a> &amp;tcpNetworkInterface)</td></tr>
@@ -99,43 +92,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a3756bf34ec37c70381f5e15b4db530e5 inherit pub_methods_class_az_networking_1_1_timed_thread"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3756bf34ec37c70381f5e15b4db530e5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>TimedThread</b> (const char *name, AZ::TimeMs updateRate)</td></tr>
 <tr class="separator:a3756bf34ec37c70381f5e15b4db530e5 inherit pub_methods_class_az_networking_1_1_timed_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ae556776fa2ff88939eaa04e7f4282e26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae556776fa2ff88939eaa04e7f4282e26"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_networking_1_1_tcp_listen_thread.html">TcpListenThread</a>)</td></tr>
-<tr class="separator:ae556776fa2ff88939eaa04e7f4282e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca1a4e2c400209a8764e72f05245b81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ca1a4e2c400209a8764e72f05245b81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#a0ca1a4e2c400209a8764e72f05245b81">OnStart</a> () override</td></tr>
-<tr class="memdesc:a0ca1a4e2c400209a8764e72f05245b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked on thread start. <br/></td></tr>
-<tr class="separator:a0ca1a4e2c400209a8764e72f05245b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af45665c6df10599577066634cc6f0752"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af45665c6df10599577066634cc6f0752"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#af45665c6df10599577066634cc6f0752">OnStop</a> () override</td></tr>
-<tr class="memdesc:af45665c6df10599577066634cc6f0752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked on thread stop. <br/></td></tr>
-<tr class="separator:af45665c6df10599577066634cc6f0752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05b7403903eeebd190660113a5e448c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#a05b7403903eeebd190660113a5e448c7">OnUpdate</a> (AZ::TimeMs updateRateMs) override</td></tr>
-<tr class="separator:a05b7403903eeebd190660113a5e448c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9167867317e5475af5987c5147ab173f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9167867317e5475af5987c5147ab173f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureSocketState</b> ()</td></tr>
-<tr class="separator:a9167867317e5475af5987c5147ab173f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2bf89128929b1c94084d5802d96971f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2bf89128929b1c94084d5802d96971f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSocketAccept</b> (void *newConnection, int32_t newConnectionLength, <a class="el" href="struct_az_networking_1_1_tcp_listen_thread_1_1_listen_port.html">ListenPort</a> &amp;listenPort)</td></tr>
-<tr class="separator:ab2bf89128929b1c94084d5802d96971f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ab6af5d424c88e7ee5a5aeba9ac90eeaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6af5d424c88e7ee5a5aeba9ac90eeaf"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_listenPortCount</b> = 0</td></tr>
-<tr class="separator:ab6af5d424c88e7ee5a5aeba9ac90eeaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a46c3d9474725f3bcd4f033303dbbe9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a46c3d9474725f3bcd4f033303dbbe9"></a>
-<a class="el" href="class_az_networking_1_1_tcp_socket_manager.html">TcpSocketManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_tcpSocketManager</b></td></tr>
-<tr class="separator:a2a46c3d9474725f3bcd4f033303dbbe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aff28d539b1d727de1b5c4f5773cd2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5aff28d539b1d727de1b5c4f5773cd2d"></a>
-AZ::ThreadSafeDeque&lt; <a class="el" href="struct_az_networking_1_1_tcp_listen_thread_1_1_listen_port.html">ListenPort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_listenPorts</b></td></tr>
-<tr class="separator:a5aff28d539b1d727de1b5c4f5773cd2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd584bca7184eb9c6f2a7cfbf79b323e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd584bca7184eb9c6f2a7cfbf79b323e"></a>
-AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_updateTimeMs</b> = AZ::Time::ZeroTimeMs</td></tr>
-<tr class="separator:acd584bca7184eb9c6f2a7cfbf79b323e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -201,39 +157,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a05b7403903eeebd190660113a5e448c7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzNetworking::TcpListenThread::OnUpdate </td>
-          <td>(</td>
-          <td class="paramtype">AZ::TimeMs&#160;</td>
-          <td class="paramname"><em>updateRateMs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Invoked on thread update. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">updateRateMs</td><td>The amount of time the thread can spend in OnUpdate in ms </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="class_az_networking_1_1_timed_thread.html#a3fb5b5868e42aa808fc76ddddb0e4486">AzNetworking::TimedThread</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a19aa4fa6f82cc3f874ae6327f3ea6f75"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +187,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

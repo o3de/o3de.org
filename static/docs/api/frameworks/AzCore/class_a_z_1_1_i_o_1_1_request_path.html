@@ -54,9 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_request_path-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::RequestPath Class Reference</div>  </div>
@@ -112,36 +109,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRelativePa
 <tr class="memitem:a93089852e2d354a22e8445ce2eb256dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93089852e2d354a22e8445ce2eb256dc"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetHash</b> () const </td></tr>
 <tr class="separator:a93089852e2d354a22e8445ce2eb256dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7683a3ec02367761a2f5022c1210dd32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7683a3ec02367761a2f5022c1210dd32"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResolvePath</b> () const </td></tr>
-<tr class="separator:a7683a3ec02367761a2f5022c1210dd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8404b01a194f176796db6267918af5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8404b01a194f176796db6267918af5c"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>FindAliasOffset</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path) const </td></tr>
-<tr class="separator:ac8404b01a194f176796db6267918af5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a40ca1a93dfd1b18a0d39c9544fde5f8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40ca1a93dfd1b18a0d39c9544fde5f8f"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html">FixedMaxPath</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_path</b></td></tr>
-<tr class="separator:a40ca1a93dfd1b18a0d39c9544fde5f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd543fe63b9be4a4d9e70b3f96a820d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cd543fe63b9be4a4d9e70b3f96a820d"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_absolutePathHash</b> = s_emptyPathHash</td></tr>
-<tr class="separator:a4cd543fe63b9be4a4d9e70b3f96a820d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849eabf6bfdc4f560f5e661b6d9029b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a849eabf6bfdc4f560f5e661b6d9029b7"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_relativePathOffset</b> = 0</td></tr>
-<tr class="separator:a849eabf6bfdc4f560f5e661b6d9029b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a9e2852ac0a7ae33226b61b80939d0690"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e2852ac0a7ae33226b61b80939d0690"></a>
-static constexpr const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>s_invalidPathHash</b> = std::numeric_limits&lt;size_t&gt;::max()</td></tr>
-<tr class="separator:a9e2852ac0a7ae33226b61b80939d0690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03262da94be0a870557f36a0c19702e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03262da94be0a870557f36a0c19702e5"></a>
-static constexpr const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>s_emptyPathHash</b> = std::numeric_limits&lt;size_t&gt;::min()</td></tr>
-<tr class="separator:a03262da94be0a870557f36a0c19702e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The path to the file used by a request. <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> uses lazy evaluation so the relative path is not resolved to an absolute path until the path is requested or a check is done for validity. </p>
@@ -151,7 +118,7 @@ static constexpr const size_t&#160;</td><td class="memItemRight" valign="bottom"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

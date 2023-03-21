@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetBrowserComponent Class Reference</div>  </div>
@@ -137,66 +135,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSer
 <tr class="memitem:a77c1f840bcef28364a3ad8baf81c9166"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77c1f840bcef28364a3ad8baf81c9166"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
 <tr class="separator:a77c1f840bcef28364a3ad8baf81c9166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a8a38c6dddcd72c036d998019c8008a6a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a38c6dddcd72c036d998019c8008a6a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_component.html#a8a38c6dddcd72c036d998019c8008a6a">NotifyUpdateThread</a> ()</td></tr>
-<tr class="memdesc:a8a38c6dddcd72c036d998019c8008a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify to start the query thread. <br/></td></tr>
-<tr class="separator:a8a38c6dddcd72c036d998019c8008a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af07a3fc3f71d498867065ee57df06e9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af07a3fc3f71d498867065ee57df06e9e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleFileInfoNotification</b> (const void *buffer, unsigned int bufferSize)</td></tr>
-<tr class="separator:af07a3fc3f71d498867065ee57df06e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bdebdef396116fcef9082a8f8e67986"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bdebdef396116fcef9082a8f8e67986"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleAssetCreatedInEditor</b> (const AZStd::string_view assetPath, const AZ::Crc32 &amp;creatorBusId, const bool initialFilenameChange) override</td></tr>
-<tr class="separator:a5bdebdef396116fcef9082a8f8e67986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae669c28b6d1416658c1408efa484887c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae669c28b6d1416658c1408efa484887c"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html">AssetDatabase::AssetDatabaseConnection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_databaseConnection</b></td></tr>
-<tr class="separator:ae669c28b6d1416658c1408efa484887c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7028eb8f06be6559abdef492880bc421"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7028eb8f06be6559abdef492880bc421"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_root_asset_browser_entry.html">RootAssetBrowserEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootEntry</b></td></tr>
-<tr class="separator:a7028eb8f06be6559abdef492880bc421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dfd7f184605aae131ecc2f9099f6bb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dfd7f184605aae131ecc2f9099f6bb4"></a>
-AZStd::binary_semaphore&#160;</td><td class="memItemRight" valign="bottom"><b>m_updateWait</b></td></tr>
-<tr class="separator:a3dfd7f184605aae131ecc2f9099f6bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf97ded211adffe1288f1c7a0a08f7dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf97ded211adffe1288f1c7a0a08f7dc"></a>
-AZStd::thread&#160;</td><td class="memItemRight" valign="bottom"><b>m_thread</b></td></tr>
-<tr class="separator:abf97ded211adffe1288f1c7a0a08f7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6ba0006c25a17479c83dd4633ca6896"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6ba0006c25a17479c83dd4633ca6896"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_component.html#ad6ba0006c25a17479c83dd4633ca6896">m_dbReady</a></td></tr>
-<tr class="memdesc:ad6ba0006c25a17479c83dd4633ca6896"><td class="mdescLeft">&#160;</td><td class="mdescRight">wait until database is ready <br/></td></tr>
-<tr class="separator:ad6ba0006c25a17479c83dd4633ca6896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc9e78b807c2c6d8f2616518e4533d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc9e78b807c2c6d8f2616518e4533d4b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_component.html#adc9e78b807c2c6d8f2616518e4533d4b">m_entriesReady</a> = false</td></tr>
-<tr class="memdesc:adc9e78b807c2c6d8f2616518e4533d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">have entries been populated yet <br/></td></tr>
-<tr class="separator:adc9e78b807c2c6d8f2616518e4533d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ce08c08e4bcefca018ff7f7f5d789b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ce08c08e4bcefca018ff7f7f5d789b0"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_component.html#a6ce08c08e4bcefca018ff7f7f5d789b0">m_waitingForMore</a></td></tr>
-<tr class="memdesc:a6ce08c08e4bcefca018ff7f7f5d789b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">is query waiting for more update requests <br/></td></tr>
-<tr class="separator:a6ce08c08e4bcefca018ff7f7f5d789b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e6c73fa6da63a8e86b9be59257c996"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39e6c73fa6da63a8e86b9be59257c996"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_component.html#a39e6c73fa6da63a8e86b9be59257c996">m_disposed</a></td></tr>
-<tr class="memdesc:a39e6c73fa6da63a8e86b9be59257c996"><td class="mdescLeft">&#160;</td><td class="mdescRight">should the query thread stop <br/></td></tr>
-<tr class="separator:a39e6c73fa6da63a8e86b9be59257c996"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3143351726fdc2ea239152f481c54de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3143351726fdc2ea239152f481c54de"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_model.html">AssetBrowserModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetBrowserModel</b></td></tr>
-<tr class="separator:ab3143351726fdc2ea239152f481c54de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66183fa5950fe4f5e19fe2652de0eaed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66183fa5950fe4f5e19fe2652de0eaed"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_entry_changeset.html">AssetEntryChangeset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_changeset</b></td></tr>
-<tr class="separator:a66183fa5950fe4f5e19fe2652de0eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85707fd408c37a7682fe59c28624c23a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85707fd408c37a7682fe59c28624c23a"></a>
-AzFramework::SocketConnection::TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_cbHandle</b> = 0</td></tr>
-<tr class="separator:a85707fd408c37a7682fe59c28624c23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55865c35bad6a599e36f0af64221b122"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55865c35bad6a599e36f0af64221b122"></a>
-AzQtComponents::StyledBusyLabel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_styledBusyLabel</b></td></tr>
-<tr class="separator:a55865c35bad6a599e36f0af64221b122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_component.html" title="AssetBrowserComponent caches database entries. ">AssetBrowserComponent</a> caches database entries. </p>
@@ -207,7 +145,7 @@ AzQtComponents::StyledBusyLabel *&#160;</td><td class="memItemRight" valign="bot
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

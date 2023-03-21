@@ -56,9 +56,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_std_1_1ring__buffer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZStd::ring_buffer&lt; T, Allocator &gt; Class Template Reference</div>  </div>
@@ -324,138 +321,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:aa2f1b68b25477f77d8fa49b24725165e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2f1b68b25477f77d8fa49b24725165e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>validate_iterator</b> (const <a class="el" href="class_a_z_std_1_1ring__buffer_1_1const__iterator__impl.html">const_iterator</a> &amp;iter) const </td></tr>
 <tr class="separator:aa2f1b68b25477f77d8fa49b24725165e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a16210bfff2d5c7d2c6b8e3996d47ba99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>CONTAINER_VERSION</b> = 1
- }</td></tr>
-<tr class="separator:a16210bfff2d5c7d2c6b8e3996d47ba99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df49383f0b9b4773c4e7bcf0afaf541"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2df49383f0b9b4773c4e7bcf0afaf541"></a>
-typedef <a class="el" href="class_a_z_std_1_1ring__buffer.html">ring_buffer</a>&lt; T, Allocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>this_type</b></td></tr>
-<tr class="separator:a2df49383f0b9b4773c4e7bcf0afaf541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:abeb4f3c81d8817392e47ceba7ddc3286"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeb4f3c81d8817392e47ceba7ddc3286"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>deallocate_memory</b> ()</td></tr>
-<tr class="separator:abeb4f3c81d8817392e47ceba7ddc3286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ea340a3f0d565c8e94c4341840f470"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21ea340a3f0d565c8e94c4341840f470"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>increment</b> (pointer &amp;p) const </td></tr>
-<tr class="separator:a21ea340a3f0d565c8e94c4341840f470"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adff121c5228b9f6c4cad89a62a924504"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adff121c5228b9f6c4cad89a62a924504"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>decrement</b> (pointer &amp;p) const </td></tr>
-<tr class="separator:adff121c5228b9f6c4cad89a62a924504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b2f977db0cd9318e360899723fc31e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b2f977db0cd9318e360899723fc31e8"></a>
-AZ_FORCE_INLINE pointer&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (pointer p, difference_type n) const </td></tr>
-<tr class="separator:a7b2f977db0cd9318e360899723fc31e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbdc66f39329b16706f1d2939edc9105"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbdc66f39329b16706f1d2939edc9105"></a>
-AZ_FORCE_INLINE pointer&#160;</td><td class="memItemRight" valign="bottom"><b>sub</b> (pointer p, difference_type n) const </td></tr>
-<tr class="separator:abbdc66f39329b16706f1d2939edc9105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab358e682facec6a08964f4397642466d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab358e682facec6a08964f4397642466d"></a>
-AZ_FORCE_INLINE pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#ab358e682facec6a08964f4397642466d">map_pointer</a> (pointer p) const </td></tr>
-<tr class="memdesc:ab358e682facec6a08964f4397642466d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map the null pointer to virtual end of circular buffer. <br/></td></tr>
-<tr class="separator:ab358e682facec6a08964f4397642466d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab716c1a49e5d9847b50647bc45b9b019"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab716c1a49e5d9847b50647bc45b9b019"></a>
-AZ_FORCE_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#ab716c1a49e5d9847b50647bc45b9b019">is_uninitialized</a> (const_pointer p) const </td></tr>
-<tr class="memdesc:ab716c1a49e5d9847b50647bc45b9b019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the pointer point to the uninitialized memory? <br/></td></tr>
-<tr class="separator:ab716c1a49e5d9847b50647bc45b9b019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30abca378235f81e85114ecf26e16a27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30abca378235f81e85114ecf26e16a27"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>replace</b> (pointer pos, const_reference value)</td></tr>
-<tr class="separator:a30abca378235f81e85114ecf26e16a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf937a62ca2cd7e86014506c3da4e230"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf937a62ca2cd7e86014506c3da4e230"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#adf937a62ca2cd7e86014506c3da4e230">construct_or_replace</a> (bool construct, pointer pos, const_reference value)</td></tr>
-<tr class="memdesc:adf937a62ca2cd7e86014506c3da4e230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct or replace an element. <br/></td></tr>
-<tr class="separator:adf937a62ca2cd7e86014506c3da4e230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c06fc2d15ddb30bac6ff68150151ec7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c06fc2d15ddb30bac6ff68150151ec7"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#a0c06fc2d15ddb30bac6ff68150151ec7">destroy_item</a> (pointer p)</td></tr>
-<tr class="memdesc:a0c06fc2d15ddb30bac6ff68150151ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an item. <br/></td></tr>
-<tr class="separator:a0c06fc2d15ddb30bac6ff68150151ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07c94e0974c5b24b217aead27867a5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab07c94e0974c5b24b217aead27867a5b"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize_buffer</b> (size_type capacity)</td></tr>
-<tr class="separator:ab07c94e0974c5b24b217aead27867a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48a79f47c543463c1fb42ffe4b49bd02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48a79f47c543463c1fb42ffe4b49bd02"></a>
-AZ_FORCE_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize_buffer</b> (size_type capacity, const_reference value)</td></tr>
-<tr class="separator:a48a79f47c543463c1fb42ffe4b49bd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66cdd6788454b18a259d2ae58cfbc21e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a66cdd6788454b18a259d2ae58cfbc21e"></a>
-template&lt;class IntegralType &gt; </td></tr>
-<tr class="memitem:a66cdd6788454b18a259d2ae58cfbc21e"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>initialize</b> (IntegralType n, IntegralType item, const true_type &amp;)</td></tr>
-<tr class="separator:a66cdd6788454b18a259d2ae58cfbc21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af446754bb22809794f58a706c8b64d9e"><td class="memTemplParams" colspan="2"><a class="anchor" id="af446754bb22809794f58a706c8b64d9e"></a>
-template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:af446754bb22809794f58a706c8b64d9e"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>initialize</b> (Iterator first, Iterator last, const false_type &amp;)</td></tr>
-<tr class="separator:af446754bb22809794f58a706c8b64d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0a1086c7cc357a23da0a53f244109c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2b0a1086c7cc357a23da0a53f244109c"></a>
-template&lt;class ForwardIterator &gt; </td></tr>
-<tr class="memitem:a2b0a1086c7cc357a23da0a53f244109c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>initialize</b> (ForwardIterator first, ForwardIterator last, const <a class="el" href="namespace_a_z_std.html#a741b98c631cecf9dd42464f20710b2e7">AZStd::forward_iterator_tag</a> &amp;)</td></tr>
-<tr class="separator:a2b0a1086c7cc357a23da0a53f244109c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a219d3208558f74c612bff4344f6cc972"><td class="memTemplParams" colspan="2"><a class="anchor" id="a219d3208558f74c612bff4344f6cc972"></a>
-template&lt;class IntegralType &gt; </td></tr>
-<tr class="memitem:a219d3208558f74c612bff4344f6cc972"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>initialize</b> (size_type capacity, IntegralType size, IntegralType value, const true_type &amp;)</td></tr>
-<tr class="separator:a219d3208558f74c612bff4344f6cc972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf5fe1518418bcac684ad7531124f0a4"><td class="memTemplParams" colspan="2"><a class="anchor" id="abf5fe1518418bcac684ad7531124f0a4"></a>
-template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:abf5fe1518418bcac684ad7531124f0a4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>initialize</b> (size_type capacity, Iterator first, Iterator last, const false_type &amp;)</td></tr>
-<tr class="separator:abf5fe1518418bcac684ad7531124f0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bac11f03c90ef25455372193ef4574c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0bac11f03c90ef25455372193ef4574c"></a>
-template&lt;class ForwardIterator &gt; </td></tr>
-<tr class="memitem:a0bac11f03c90ef25455372193ef4574c"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>initialize</b> (size_type capacity, ForwardIterator first, ForwardIterator last, const <a class="el" href="namespace_a_z_std.html#a741b98c631cecf9dd42464f20710b2e7">AZStd::forward_iterator_tag</a> &amp;)</td></tr>
-<tr class="separator:a0bac11f03c90ef25455372193ef4574c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36112412c4a2c2091c0bc0914005a0e4"><td class="memTemplParams" colspan="2"><a class="anchor" id="a36112412c4a2c2091c0bc0914005a0e4"></a>
-template&lt;class ForwardIterator &gt; </td></tr>
-<tr class="memitem:a36112412c4a2c2091c0bc0914005a0e4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#a36112412c4a2c2091c0bc0914005a0e4">initialize</a> (size_type capacity, ForwardIterator first, ForwardIterator last, size_type distance)</td></tr>
-<tr class="memdesc:a36112412c4a2c2091c0bc0914005a0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the circular buffer. <br/></td></tr>
-<tr class="separator:a36112412c4a2c2091c0bc0914005a0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39bb26ea115f529a505ebd372d440bcc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39bb26ea115f529a505ebd372d440bcc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>leak_and_reset</b> ()</td></tr>
-<tr class="separator:a39bb26ea115f529a505ebd372d440bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf2b7ff43029a5eb4f551d86ddf0145"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bf2b7ff43029a5eb4f551d86ddf0145"></a>
-<a class="el" href="class_a_z_std_1_1ring__buffer_1_1iterator__impl.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#a0bf2b7ff43029a5eb4f551d86ddf0145">insert_item</a> (const <a class="el" href="class_a_z_std_1_1ring__buffer_1_1iterator__impl.html">iterator</a> &amp;pos, const_reference value)</td></tr>
-<tr class="memdesc:a0bf2b7ff43029a5eb4f551d86ddf0145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized assign method. <br/></td></tr>
-<tr class="separator:a0bf2b7ff43029a5eb4f551d86ddf0145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e67b23de2d853abfcbf749c17216dfe"><td class="memTemplParams" colspan="2"><a class="anchor" id="a8e67b23de2d853abfcbf749c17216dfe"></a>
-template&lt;class IntegralType &gt; </td></tr>
-<tr class="memitem:a8e67b23de2d853abfcbf749c17216dfe"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (const <a class="el" href="class_a_z_std_1_1ring__buffer_1_1iterator__impl.html">iterator</a> &amp;pos, IntegralType n, IntegralType item, const true_type &amp;)</td></tr>
-<tr class="separator:a8e67b23de2d853abfcbf749c17216dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac1660eb13f0660051d796ef5640c82c"><td class="memTemplParams" colspan="2"><a class="anchor" id="aac1660eb13f0660051d796ef5640c82c"></a>
-template&lt;class Iterator &gt; </td></tr>
-<tr class="memitem:aac1660eb13f0660051d796ef5640c82c"><td class="memTemplItemLeft" align="right" valign="top">AZ_FORCE_INLINE void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (const <a class="el" href="class_a_z_std_1_1ring__buffer_1_1iterator__impl.html">iterator</a> &amp;pos, Iterator first, Iterator last, const false_type &amp;)</td></tr>
-<tr class="separator:aac1660eb13f0660051d796ef5640c82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450b392905f4383fa16d0cf93ceecd62"><td class="memTemplParams" colspan="2"><a class="anchor" id="a450b392905f4383fa16d0cf93ceecd62"></a>
-template&lt;class ForwardIterator &gt; </td></tr>
-<tr class="memitem:a450b392905f4383fa16d0cf93ceecd62"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (const <a class="el" href="class_a_z_std_1_1ring__buffer_1_1iterator__impl.html">iterator</a> &amp;pos, ForwardIterator first, ForwardIterator last, const <a class="el" href="namespace_a_z_std.html#a741b98c631cecf9dd42464f20710b2e7">AZStd::forward_iterator_tag</a> &amp;)</td></tr>
-<tr class="separator:a450b392905f4383fa16d0cf93ceecd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b7d1e44a0fdb82bc5669cab175aff97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b7d1e44a0fdb82bc5669cab175aff97"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insert_n</b> (const <a class="el" href="class_a_z_std_1_1ring__buffer_1_1iterator__impl.html">iterator</a> &amp;pos, size_type size, <a class="el" href="class_a_z_std_1_1ring__buffer_1_1iterator__impl.html">iterator</a> first)</td></tr>
-<tr class="separator:a7b7d1e44a0fdb82bc5669cab175aff97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc2a53ac20266367b9fbc13edcec4067"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc2a53ac20266367b9fbc13edcec4067"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insert_n</b> (const <a class="el" href="class_a_z_std_1_1ring__buffer_1_1iterator__impl.html">iterator</a> &amp;pos, size_type size, const_reference value)</td></tr>
-<tr class="separator:afc2a53ac20266367b9fbc13edcec4067"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:af9e5ee237269a291a343be9bd56083bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9e5ee237269a291a343be9bd56083bd"></a>
-pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#af9e5ee237269a291a343be9bd56083bd">m_buff</a></td></tr>
-<tr class="memdesc:af9e5ee237269a291a343be9bd56083bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal buffer used for storing elements in the circular buffer. <br/></td></tr>
-<tr class="separator:af9e5ee237269a291a343be9bd56083bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af030ac0aef524809a48b223286139e8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af030ac0aef524809a48b223286139e8e"></a>
-pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#af030ac0aef524809a48b223286139e8e">m_end</a></td></tr>
-<tr class="memdesc:af030ac0aef524809a48b223286139e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal buffer's end (end of the storage space). <br/></td></tr>
-<tr class="separator:af030ac0aef524809a48b223286139e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c63e218f519dfd3088ac6aba028f41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27c63e218f519dfd3088ac6aba028f41"></a>
-pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#a27c63e218f519dfd3088ac6aba028f41">m_first</a></td></tr>
-<tr class="memdesc:a27c63e218f519dfd3088ac6aba028f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual beginning of the circular buffer. <br/></td></tr>
-<tr class="separator:a27c63e218f519dfd3088ac6aba028f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9401e8574c0d66c76cadea01d13e101"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9401e8574c0d66c76cadea01d13e101"></a>
-pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#ad9401e8574c0d66c76cadea01d13e101">m_last</a></td></tr>
-<tr class="memdesc:ad9401e8574c0d66c76cadea01d13e101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual end of the circular buffer (one behind the last element). <br/></td></tr>
-<tr class="separator:ad9401e8574c0d66c76cadea01d13e101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec7cd7d4af22334cbcda8f8e0c6dcd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ec7cd7d4af22334cbcda8f8e0c6dcd8"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_std_1_1ring__buffer.html#a9ec7cd7d4af22334cbcda8f8e0c6dcd8">m_size</a></td></tr>
-<tr class="memdesc:a9ec7cd7d4af22334cbcda8f8e0c6dcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of items currently stored in the circular buffer. <br/></td></tr>
-<tr class="separator:a9ec7cd7d4af22334cbcda8f8e0c6dcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33688f91f8867366a50aed42bb056d98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33688f91f8867366a50aed42bb056d98"></a>
-allocator_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_allocator</b></td></tr>
-<tr class="separator:a33688f91f8867366a50aed42bb056d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T, class Allocator = AZStd::allocator&gt;<br/>
@@ -468,7 +333,7 @@ class AZStd::ring_buffer&lt; T, Allocator &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:24 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

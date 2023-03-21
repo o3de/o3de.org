@@ -54,7 +54,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_log_panel_1_1_ring_buffer_log_data_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::LogPanel::RingBufferLogDataModel Class Reference</div>  </div>
@@ -103,22 +102,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr
 <tr class="memitem:aded70c00f7155eb3a2069555e97def61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aded70c00f7155eb3a2069555e97def61"></a>
 const <a class="el" href="class_az_tools_framework_1_1_logging_1_1_log_line.html">Logging::LogLine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLineFromIndex</b> (const QModelIndex &amp;index)</td></tr>
 <tr class="separator:aded70c00f7155eb3a2069555e97def61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a20b1ba93cd1ac7d6c01489b3de71db9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20b1ba93cd1ac7d6c01489b3de71db9e"></a>
-AZStd::ring_buffer<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_logging_1_1_log_line.html">Logging::LogLine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lines</b></td></tr>
-<tr class="separator:a20b1ba93cd1ac7d6c01489b3de71db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3af5951bc619b02c5a40291223b09ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3af5951bc619b02c5a40291223b09ba"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_startLineAdd</b></td></tr>
-<tr class="separator:ab3af5951bc619b02c5a40291223b09ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d45b38f3a2fa77430037e8654e3b81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60d45b38f3a2fa77430037e8654e3b81"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numLinesAdded</b></td></tr>
-<tr class="separator:a60d45b38f3a2fa77430037e8654e3b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ae3ea074ef41d025760d093e3399f32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ae3ea074ef41d025760d093e3399f32"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numLinesRemoved</b></td></tr>
-<tr class="separator:a3ae3ea074ef41d025760d093e3399f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>this is a ringbuffer-based log panel model meant for the AZ::TraceBus, but could be used by any data source that can construct LogLine structures and feed them to AppendLine. Since its a ring buffer, it can be set to have a maximum number of lines, which will cause the older lines to drop off when they accumulate too deeply it is primarily used for incoming data streams that are constantly filling, not static sources such as files. of particular interest here is how it implements the required rowCount, columnCount, data, and flags functions </p>
@@ -128,7 +111,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_numLinesRemoved</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

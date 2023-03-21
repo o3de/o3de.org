@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_document_property_editor_1_1_adapter_builder-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::DocumentPropertyEditor::AdapterBuilder Class Reference</div>  </div>
@@ -161,30 +159,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Attribute</b> (const 
 template&lt;class CallbackType &gt; </td></tr>
 <tr class="memitem:accf57cefb3a84cd6e8bf5d0a217c7041"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AddMessageHandler</b> (<a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">DocumentAdapter</a> *adapter, const <a class="el" href="class_a_z_1_1_document_property_editor_1_1_callback_attribute_definition.html">CallbackAttributeDefinition</a>&lt; CallbackType &gt; &amp;callback, const Dom::Value &amp;contextData={})</td></tr>
 <tr class="separator:accf57cefb3a84cd6e8bf5d0a217c7041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a27644f2401e9575035a19508127fb41e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27644f2401e9575035a19508127fb41e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b> (AZStd::string_view message)</td></tr>
-<tr class="separator:a27644f2401e9575035a19508127fb41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177fa36d04f0791bd37fbf2a8c7ec9ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a177fa36d04f0791bd37fbf2a8c7ec9ab"></a>
-Dom::Value &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentNode</b> ()</td></tr>
-<tr class="separator:a177fa36d04f0791bd37fbf2a8c7ec9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:abe06bd2e71b439633c01a30963cddca4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe06bd2e71b439633c01a30963cddca4"></a>
-Dom::Value&#160;</td><td class="memItemRight" valign="bottom"><b>m_value</b></td></tr>
-<tr class="separator:abe06bd2e71b439633c01a30963cddca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bfdc7480f2bff5fd16b0fee78489562"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bfdc7480f2bff5fd16b0fee78489562"></a>
-Dom::Path&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentPath</b></td></tr>
-<tr class="separator:a0bfdc7480f2bff5fd16b0fee78489562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af95102e3151a9735b5b400362f0eb3c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af95102e3151a9735b5b400362f0eb3c4"></a>
-AZStd::stack&lt; Dom::Value &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_entries</b></td></tr>
-<tr class="separator:af95102e3151a9735b5b400362f0eb3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57c7330ac16d6da90308e272512c4f2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57c7330ac16d6da90308e272512c4f2a"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_error</b></td></tr>
-<tr class="separator:a57c7330ac16d6da90308e272512c4f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper class that builds a DOM suitable for usage in a <a class="el" href="class_a_z_1_1_document_property_editor_1_1_document_adapter.html">DocumentAdapter</a>. Uses a visitor pattern to establish node elements. </p>
@@ -358,7 +332,7 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_error</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:38 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

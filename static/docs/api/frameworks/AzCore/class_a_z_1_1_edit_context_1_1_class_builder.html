@@ -54,8 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_edit_context_1_1_class_builder-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::EditContext::ClassBuilder Class Reference</div>  </div>
@@ -159,48 +157,6 @@ template&lt;class T &gt; </td></tr>
 template&lt;class T &gt; </td></tr>
 <tr class="memitem:a41d82912c6510ea62951812c106fd9d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_edit_context_1_1_class_builder.html">EditContext::ClassBuilder</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ElementAttribute</b> (<a class="el" href="class_a_z_1_1_crc32.html">Crc32</a> idCrc, T value)</td></tr>
 <tr class="separator:a41d82912c6510ea62951812c106fd9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a5b6bccd3d4d9cec9cd7c0e1de8dad6ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b6bccd3d4d9cec9cd7c0e1de8dad6ad"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ClassBuilder</b> (<a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a> *context, <a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> *classData, <a class="el" href="struct_a_z_1_1_edit_1_1_class_data.html">Edit::ClassData</a> *classElement)</td></tr>
-<tr class="separator:a5b6bccd3d4d9cec9cd7c0e1de8dad6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a5ea1b79f11a214cdd86b1cf67c3f2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a5ea1b79f11a214cdd86b1cf67c3f2f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const </td></tr>
-<tr class="separator:a0a5ea1b79f11a214cdd86b1cf67c3f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28171e5291280e8255fdc75dcd557991"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28171e5291280e8255fdc75dcd557991"></a>
-<a class="el" href="struct_a_z_1_1_edit_1_1_class_data.html">Edit::ClassData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindClassData</b> (const <a class="el" href="struct_a_z_1_1_uuid.html">Uuid</a> &amp;typeId)</td></tr>
-<tr class="separator:a28171e5291280e8255fdc75dcd557991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab300d87ce0ec273d8d9b30045578773b"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab300d87ce0ec273d8d9b30045578773b"></a>
-template&lt;class E &gt; </td></tr>
-<tr class="memitem:ab300d87ce0ec273d8d9b30045578773b"><td class="memTemplItemLeft" align="right" valign="top">AZStd::enable_if<br class="typebreak"/>
-&lt; <a class="el" href="namespace_a_z.html#a1a6ca60ba16a5bf1067b2e161e7debd5a9089dc29c80940ab48d40c3df4a4ea32">AZStd::is_enum</a>&lt; E &gt;::value &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyEnumValues</b> (<a class="el" href="struct_a_z_1_1_edit_1_1_element_data.html">Edit::ElementData</a> *ed)</td></tr>
-<tr class="separator:ab300d87ce0ec273d8d9b30045578773b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05dbaf0175b13c272025b0e837f577e4"><td class="memTemplParams" colspan="2"><a class="anchor" id="a05dbaf0175b13c272025b0e837f577e4"></a>
-template&lt;class E &gt; </td></tr>
-<tr class="memitem:a05dbaf0175b13c272025b0e837f577e4"><td class="memTemplItemLeft" align="right" valign="top">AZStd::enable_if<br class="typebreak"/>
-&lt;!<a class="el" href="namespace_a_z.html#a1a6ca60ba16a5bf1067b2e161e7debd5a9089dc29c80940ab48d40c3df4a4ea32">AZStd::is_enum</a>&lt; E &gt;::value &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CopyEnumValues</b> (<a class="el" href="struct_a_z_1_1_edit_1_1_element_data.html">Edit::ElementData</a> *)</td></tr>
-<tr class="separator:a05dbaf0175b13c272025b0e837f577e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a204c93bee75c480d54d9c409f68e91ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a204c93bee75c480d54d9c409f68e91ef"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>EditContext</b></td></tr>
-<tr class="separator:a204c93bee75c480d54d9c409f68e91ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6f0c1a8d181233ac76faab8b93bc0ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6f0c1a8d181233ac76faab8b93bc0ad"></a>
-<a class="el" href="class_a_z_1_1_edit_context.html">EditContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
-<tr class="separator:ac6f0c1a8d181233ac76faab8b93bc0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5868885edad26b381158e3fb84e49636"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5868885edad26b381158e3fb84e49636"></a>
-<a class="el" href="class_a_z_1_1_serialize_1_1_class_data.html">SerializeContext::ClassData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_classData</b></td></tr>
-<tr class="separator:a5868885edad26b381158e3fb84e49636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dbe13867b8829527a05b8c9dee06a29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dbe13867b8829527a05b8c9dee06a29"></a>
-<a class="el" href="struct_a_z_1_1_edit_1_1_class_data.html">Edit::ClassData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_classElement</b></td></tr>
-<tr class="separator:a7dbe13867b8829527a05b8c9dee06a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbc400d437d573884d098dd09b57bac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafbc400d437d573884d098dd09b57bac"></a>
-<a class="el" href="struct_a_z_1_1_edit_1_1_element_data.html">Edit::ElementData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_editElement</b></td></tr>
-<tr class="separator:aafbc400d437d573884d098dd09b57bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal structure to maintain class information while we are describing a class. User should call variety of functions to describe class features and data. example: struct MyStruct { int m_data };</p>
@@ -806,7 +762,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

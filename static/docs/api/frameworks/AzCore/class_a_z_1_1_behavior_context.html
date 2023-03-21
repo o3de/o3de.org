@@ -57,8 +57,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_a_z_1_1_behavior_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::BehaviorContext Class Reference</div>  </div>
@@ -72,12 +70,6 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html">ClassBuilder</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_default_allocator.html">DefaultAllocator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper struct to call the default class allocator AZ_CLASS_ALLOCATOR.  <a href="struct_a_z_1_1_behavior_context_1_1_default_allocator.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_default_system_allocator.html">DefaultSystemAllocator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper struct to pipe allocation to the system allocator.  <a href="struct_a_z_1_1_behavior_context_1_1_default_system_allocator.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html">EBusBuilder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal structure to maintain <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> information while describing it.  <a href="struct_a_z_1_1_behavior_context_1_1_e_bus_builder.html#details">More...</a><br/></td></tr>
@@ -253,105 +245,6 @@ Public Attributes</h2></td></tr>
 &lt; const <a class="el" href="class_a_z_1_1_behavior_method.html">BehaviorMethod</a> <br class="typebreak"/>
 *, const <a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_checksByOperations</b></td></tr>
 <tr class="separator:a7153a8275549b1314a607f73140db9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a88e8b640956c8dd15980e5d42bdd9173"><td class="memTemplParams" colspan="2"><a class="anchor" id="a88e8b640956c8dd15980e5d42bdd9173"></a>
-template&lt;class Bus , typename AZStd::enable_if&lt;!AZStd::is_same&lt; typename Bus::BusIdType, AZ::NullBusId &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
-<tr class="memitem:a88e8b640956c8dd15980e5d42bdd9173"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EBusSetIdFeatures</b> (<a class="el" href="class_a_z_1_1_behavior_e_bus.html">BehaviorEBus</a> *ebus)</td></tr>
-<tr class="separator:a88e8b640956c8dd15980e5d42bdd9173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa96b88a862d4570b8ad84547bdc134de"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa96b88a862d4570b8ad84547bdc134de"></a>
-template&lt;class Bus , typename AZStd::enable_if&lt; AZStd::is_same&lt; typename Bus::BusIdType, AZ::NullBusId &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
-<tr class="memitem:aa96b88a862d4570b8ad84547bdc134de"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EBusSetIdFeatures</b> (<a class="el" href="class_a_z_1_1_behavior_e_bus.html">BehaviorEBus</a> *)</td></tr>
-<tr class="separator:aa96b88a862d4570b8ad84547bdc134de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f2ac191630b1e578613627c84659fab"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2f2ac191630b1e578613627c84659fab"></a>
-template&lt;class Bus , typename AZStd::enable_if&lt; Bus::Traits::EnableEventQueue &gt;::type *  = nullptr&gt; </td></tr>
-<tr class="memitem:a2f2ac191630b1e578613627c84659fab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_behavior_method.html">BehaviorMethod</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>QueueFunctionMethod</b> ()</td></tr>
-<tr class="separator:a2f2ac191630b1e578613627c84659fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f2ac191630b1e578613627c84659fab"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2f2ac191630b1e578613627c84659fab"></a>
-template&lt;class Bus , typename AZStd::enable_if&lt;!Bus::Traits::EnableEventQueue &gt;::type *  = nullptr&gt; </td></tr>
-<tr class="memitem:a2f2ac191630b1e578613627c84659fab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_behavior_method.html">BehaviorMethod</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>QueueFunctionMethod</b> ()</td></tr>
-<tr class="separator:a2f2ac191630b1e578613627c84659fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a616496a6db288f229dd674101c3d70e9"><td class="memTemplParams" colspan="2"><a class="anchor" id="a616496a6db288f229dd674101c3d70e9"></a>
-template&lt;class Bus &gt; </td></tr>
-<tr class="memitem:a616496a6db288f229dd674101c3d70e9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>QueueFunction</b> (BehaviorEBus::QueueFunctionType f, void *userData1, void *userData2)</td></tr>
-<tr class="separator:a616496a6db288f229dd674101c3d70e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad472719119776c187630a89aad17aae0"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad472719119776c187630a89aad17aae0"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad472719119776c187630a89aad17aae0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_context.html#ad472719119776c187630a89aad17aae0">DefaultConstruct</a> (void *address, void *userData)</td></tr>
-<tr class="memdesc:ad472719119776c187630a89aad17aae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to call default constructor. <br/></td></tr>
-<tr class="separator:ad472719119776c187630a89aad17aae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81aac1ee60c365c5a86d2f02008e55ea"><td class="memTemplParams" colspan="2"><a class="anchor" id="a81aac1ee60c365c5a86d2f02008e55ea"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a81aac1ee60c365c5a86d2f02008e55ea"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_context.html#a81aac1ee60c365c5a86d2f02008e55ea">DefaultDestruct</a> (void *object, void *userData)</td></tr>
-<tr class="memdesc:a81aac1ee60c365c5a86d2f02008e55ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to destroy an object. <br/></td></tr>
-<tr class="separator:a81aac1ee60c365c5a86d2f02008e55ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a363bbd5e6c4287e57ad12ea46b4a4d7c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a363bbd5e6c4287e57ad12ea46b4a4d7c"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a363bbd5e6c4287e57ad12ea46b4a4d7c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_context.html#a363bbd5e6c4287e57ad12ea46b4a4d7c">DefaultCopyConstruct</a> (void *address, const void *sourceObject, void *userData)</td></tr>
-<tr class="memdesc:a363bbd5e6c4287e57ad12ea46b4a4d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper functor to default copy construct. <br/></td></tr>
-<tr class="separator:a363bbd5e6c4287e57ad12ea46b4a4d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76437bf10bb520ebaa8b957993497b68"><td class="memTemplParams" colspan="2"><a class="anchor" id="a76437bf10bb520ebaa8b957993497b68"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a76437bf10bb520ebaa8b957993497b68"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_context.html#a76437bf10bb520ebaa8b957993497b68">DefaultEqualityComparer</a> (const void *lhs, const void *rhs, void *userData)</td></tr>
-<tr class="memdesc:a76437bf10bb520ebaa8b957993497b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper functor to default copy construct. <br/></td></tr>
-<tr class="separator:a76437bf10bb520ebaa8b957993497b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e4663abbea5f004660542b8efcfb389"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4e4663abbea5f004660542b8efcfb389"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a4e4663abbea5f004660542b8efcfb389"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_behavior_context.html#a4e4663abbea5f004660542b8efcfb389">DefaultMoveConstruct</a> (void *address, void *sourceObject, void *userData)</td></tr>
-<tr class="memdesc:a4e4663abbea5f004660542b8efcfb389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper functor to default move construct. <br/></td></tr>
-<tr class="separator:a4e4663abbea5f004660542b8efcfb389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a414312fa4b07314e7298622fa0ea3e7d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a414312fa4b07314e7298622fa0ea3e7d"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a414312fa4b07314e7298622fa0ea3e7d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultAllocator</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::false_type &amp;)</td></tr>
-<tr class="separator:a414312fa4b07314e7298622fa0ea3e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8d88f0155df1d46c626bb94dc3cea36"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa8d88f0155df1d46c626bb94dc3cea36"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa8d88f0155df1d46c626bb94dc3cea36"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultConstructor</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::false_type &amp;)</td></tr>
-<tr class="separator:aa8d88f0155df1d46c626bb94dc3cea36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5078087f41c1dcd08792b8e00c10e4c0"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5078087f41c1dcd08792b8e00c10e4c0"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a5078087f41c1dcd08792b8e00c10e4c0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultDestructor</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::false_type &amp;)</td></tr>
-<tr class="separator:a5078087f41c1dcd08792b8e00c10e4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36a372b4922c4b3e1b7d5f4438fbe60e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a36a372b4922c4b3e1b7d5f4438fbe60e"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a36a372b4922c4b3e1b7d5f4438fbe60e"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultCopyConstructor</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::false_type &amp;)</td></tr>
-<tr class="separator:a36a372b4922c4b3e1b7d5f4438fbe60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1de79d1b6556245216c9e428b1bccf0"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa1de79d1b6556245216c9e428b1bccf0"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa1de79d1b6556245216c9e428b1bccf0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultMoveConstructor</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::false_type &amp;)</td></tr>
-<tr class="separator:aa1de79d1b6556245216c9e428b1bccf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27ff2876bdab97250baab2cdbbe471b"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad27ff2876bdab97250baab2cdbbe471b"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad27ff2876bdab97250baab2cdbbe471b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultAllocator</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::true_type &amp;)</td></tr>
-<tr class="separator:ad27ff2876bdab97250baab2cdbbe471b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb39f72985a0d90e84e9dbc9e42b25a0"><td class="memTemplParams" colspan="2"><a class="anchor" id="adb39f72985a0d90e84e9dbc9e42b25a0"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:adb39f72985a0d90e84e9dbc9e42b25a0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassHasher</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass)</td></tr>
-<tr class="separator:adb39f72985a0d90e84e9dbc9e42b25a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9658a86ca9e7a6e8f57ea47411717cd"><td class="memTemplParams" colspan="2"><a class="anchor" id="aa9658a86ca9e7a6e8f57ea47411717cd"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:aa9658a86ca9e7a6e8f57ea47411717cd"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultConstructor</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::true_type &amp;)</td></tr>
-<tr class="separator:aa9658a86ca9e7a6e8f57ea47411717cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7030284a2967b1b91bae6ffbaf329bf"><td class="memTemplParams" colspan="2"><a class="anchor" id="af7030284a2967b1b91bae6ffbaf329bf"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:af7030284a2967b1b91bae6ffbaf329bf"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultDestructor</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::true_type &amp;)</td></tr>
-<tr class="separator:af7030284a2967b1b91bae6ffbaf329bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a099e09c52dbed15f035f27ad2960d9de"><td class="memTemplParams" colspan="2"><a class="anchor" id="a099e09c52dbed15f035f27ad2960d9de"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a099e09c52dbed15f035f27ad2960d9de"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultCopyConstructor</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::true_type &amp;)</td></tr>
-<tr class="separator:a099e09c52dbed15f035f27ad2960d9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61fe4b7867f800621e3a82edc468de2b"><td class="memTemplParams" colspan="2"><a class="anchor" id="a61fe4b7867f800621e3a82edc468de2b"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a61fe4b7867f800621e3a82edc468de2b"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassEqualityComparer</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const T *)</td></tr>
-<tr class="separator:a61fe4b7867f800621e3a82edc468de2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7c0f7fcb9e844b2ab395300b8a48c27"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab7c0f7fcb9e844b2ab395300b8a48c27"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:ab7c0f7fcb9e844b2ab395300b8a48c27"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetClassDefaultMoveConstructor</b> (<a class="el" href="class_a_z_1_1_behavior_class.html">BehaviorClass</a> *behaviorClass, const AZStd::true_type &amp;)</td></tr>
-<tr class="separator:ab7c0f7fcb9e844b2ab395300b8a48c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -593,7 +486,7 @@ template&lt;class Function &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

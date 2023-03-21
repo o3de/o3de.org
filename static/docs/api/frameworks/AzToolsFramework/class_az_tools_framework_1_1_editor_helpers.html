@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_helpers-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorHelpers Class Reference</div>  </div>
@@ -83,31 +81,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a4acb4c939efafe0141e481e2762dcd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f8b4fd68e6f8f77802703064f0a21d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_helpers.html#ad7f8b4fd68e6f8f77802703064f0a21d">IsSelectableInViewport</a> (AZ::EntityId entityId) const </td></tr>
 <tr class="separator:ad7f8b4fd68e6f8f77802703064f0a21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1e30c931d322b6d4a842ce7f6e2cd32e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_helpers.html#a1e30c931d322b6d4a842ce7f6e2cd32e">IsSelectableAccordingToFocusMode</a> (AZ::EntityId entityId) const </td></tr>
-<tr class="separator:a1e30c931d322b6d4a842ce7f6e2cd32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8bc1ae0423596ac104d5e2017342bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_helpers.html#a4e8bc1ae0423596ac104d5e2017342bb">IsSelectableAccordingToContainerEntities</a> (AZ::EntityId entityId) const </td></tr>
-<tr class="separator:a4e8bc1ae0423596ac104d5e2017342bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeb0419573fbc31c91c02eacbdffff84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_helpers.html#adeb0419573fbc31c91c02eacbdffff84">IsSelectableInViewport</a> (size_t entityCacheIndex) const </td></tr>
-<tr class="separator:adeb0419573fbc31c91c02eacbdffff84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a6bd06d1ec55b3be02014a4ec41438d31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bd06d1ec55b3be02014a4ec41438d31"></a>
-AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_invalid_clicks.html">InvalidClicks</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_helpers.html#a6bd06d1ec55b3be02014a4ec41438d31">m_invalidClicks</a></td></tr>
-<tr class="memdesc:a6bd06d1ec55b3be02014a4ec41438d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display for invalid click behavior. <br/></td></tr>
-<tr class="separator:a6bd06d1ec55b3be02014a4ec41438d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31badf261714e0d05ba6d348149c2375"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31badf261714e0d05ba6d348149c2375"></a>
-const <br class="typebreak"/>
-<a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache_interface.html">EditorVisibleEntityDataCacheInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_helpers.html#a31badf261714e0d05ba6d348149c2375">m_entityDataCache</a> = nullptr</td></tr>
-<tr class="memdesc:a31badf261714e0d05ba6d348149c2375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity Data queried by the <a class="el" href="class_az_tools_framework_1_1_editor_helpers.html">EditorHelpers</a>. <br/></td></tr>
-<tr class="separator:a31badf261714e0d05ba6d348149c2375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdf934e731844dfb91f1ec1dd0068f51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdf934e731844dfb91f1ec1dd0068f51"></a>
-const <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html">FocusModeInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_helpers.html#afdf934e731844dfb91f1ec1dd0068f51">m_focusModeInterface</a> = nullptr</td></tr>
-<tr class="memdesc:afdf934e731844dfb91f1ec1dd0068f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">API to interact with focus mode functionality. <br/></td></tr>
-<tr class="separator:afdf934e731844dfb91f1ec1dd0068f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_editor_helpers.html">EditorHelpers</a> are the visualizations that appear for entities when 'Display Helpers' is toggled on inside the editor. These include but are not limited to entity icons and shape visualizations. </p>
@@ -210,56 +183,6 @@ const <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html
 
 </div>
 </div>
-<a class="anchor" id="a4e8bc1ae0423596ac104d5e2017342bb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzToolsFramework::EditorHelpers::IsSelectableAccordingToContainerEntities </td>
-          <td>(</td>
-          <td class="paramtype">AZ::EntityId&#160;</td>
-          <td class="paramname"><em>entityId</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns whether the entityId can be selected in the viewport according to the current Container Entity setup. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1e30c931d322b6d4a842ce7f6e2cd32e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzToolsFramework::EditorHelpers::IsSelectableAccordingToFocusMode </td>
-          <td>(</td>
-          <td class="paramtype">AZ::EntityId&#160;</td>
-          <td class="paramname"><em>entityId</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns whether the entityId can be selected in the viewport according to the current Editor Focus Mode setup. </p>
-
-</div>
-</div>
 <a class="anchor" id="ad7f8b4fd68e6f8f77802703064f0a21d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -277,38 +200,13 @@ const <a class="el" href="class_az_tools_framework_1_1_focus_mode_interface.html
 
 </div>
 </div>
-<a class="anchor" id="adeb0419573fbc31c91c02eacbdffff84"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool AzToolsFramework::EditorHelpers::IsSelectableInViewport </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>entityCacheIndex</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns whether the entityCacheIndex can be selected in the viewport according to the current Editor Focus Mode and Container Entity setup. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ViewportSelection/EditorHelpers.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

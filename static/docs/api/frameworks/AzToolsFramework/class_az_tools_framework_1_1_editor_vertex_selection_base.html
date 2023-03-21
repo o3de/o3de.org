@@ -56,8 +56,6 @@
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_vertex_selection_base-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -195,62 +193,6 @@ AZStd::array&lt; AZStd::vector<br class="typebreak"/>
 &lt; <a class="el" href="struct_az_tools_framework_1_1_action_override.html">ActionOverride</a> &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#afe5ee6df94405d1dfac7777bef96ce2c">m_actionOverrides</a></td></tr>
 <tr class="memdesc:afe5ee6df94405d1dfac7777bef96ce2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available actions corresponding to each mode. <br/></td></tr>
 <tr class="separator:afe5ee6df94405d1dfac7777bef96ce2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a94f0b195b8a9832297fa5107a0e6c569"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94f0b195b8a9832297fa5107a0e6c569"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayEntityViewport</b> (const AzFramework::ViewportInfo &amp;viewportInfo, AzFramework::DebugDisplayRequests &amp;debugDisplay) override</td></tr>
-<tr class="separator:a94f0b195b8a9832297fa5107a0e6c569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dd6b2df19ba364c99e247b42d7edb71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dd6b2df19ba364c99e247b42d7edb71"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayViewport2d</b> (const AzFramework::ViewportInfo &amp;viewportInfo, AzFramework::DebugDisplayRequests &amp;debugDisplay) override</td></tr>
-<tr class="separator:a1dd6b2df19ba364c99e247b42d7edb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9609e0880564cc0517e2dc64dc44a9e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9609e0880564cc0517e2dc64dc44a9e0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a9609e0880564cc0517e2dc64dc44a9e0">UpdateManipulatorsAndVerticesFromOffset</a> (<a class="el" href="struct_az_tools_framework_1_1_indexed_translation_manipulator.html">IndexedTranslationManipulator</a>&lt; Vertex &gt; &amp;translationManipulator, const AZ::Vector3 &amp;localManipulatorStartPosition, const AZ::Vector3 &amp;localManipulatorOffset)</td></tr>
-<tr class="memdesc:a9609e0880564cc0517e2dc64dc44a9e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set selected manipulator and vertices position from offset from starting position when pressed. <br/></td></tr>
-<tr class="separator:a9609e0880564cc0517e2dc64dc44a9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317b7aecf4fe363fe2b22f82e689f31e"><td class="memTemplParams" colspan="2"><a class="anchor" id="a317b7aecf4fe363fe2b22f82e689f31e"></a>
-template&lt;typename V , typename AZStd::enable_if&lt; AZStd::is_same&lt; V, AZ::Vector3 &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
-<tr class="memitem:a317b7aecf4fe363fe2b22f82e689f31e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>UpdateManipulatorSpace</b> (const AzFramework::ViewportInfo &amp;viewportInfo)</td></tr>
-<tr class="separator:a317b7aecf4fe363fe2b22f82e689f31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87847301cf37302de515d2595c58e4d6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a87847301cf37302de515d2595c58e4d6"></a>
-template&lt;typename V , typename AZStd::enable_if&lt; AZStd::is_same&lt; V, AZ::Vector2 &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
-<tr class="memitem:a87847301cf37302de515d2595c58e4d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>UpdateManipulatorSpace</b> (const AzFramework::ViewportInfo &amp;viewportInfo) const </td></tr>
-<tr class="separator:a87847301cf37302de515d2595c58e4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aa2eb6021fffe49ee5fa73bb18e855889"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2eb6021fffe49ee5fa73bb18e855889"></a>
-<a class="el" href="class_az_tools_framework_1_1_editor_box_select.html">EditorBoxSelect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#aa2eb6021fffe49ee5fa73bb18e855889">m_editorBoxSelect</a></td></tr>
-<tr class="memdesc:aa2eb6021fffe49ee5fa73bb18e855889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide box select support for vertex selection. <br/></td></tr>
-<tr class="separator:aa2eb6021fffe49ee5fa73bb18e855889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951baa9b79e64eff9fd3d66b57e9f792"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a951baa9b79e64eff9fd3d66b57e9f792"></a>
-AZ::EntityComponentIdPair&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a951baa9b79e64eff9fd3d66b57e9f792">m_entityComponentIdPair</a></td></tr>
-<tr class="memdesc:a951baa9b79e64eff9fd3d66b57e9f792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the Entity and Component this editor vertex selection was created on. <br/></td></tr>
-<tr class="separator:a951baa9b79e64eff9fd3d66b57e9f792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1f79cfdf096484d3aedf83ab5167fbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1f79cfdf096484d3aedf83ab5167fbc"></a>
-<a class="el" href="class_az_tools_framework_1_1_id_type.html">ManipulatorManagerId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#ae1f79cfdf096484d3aedf83ab5167fbc">m_manipulatorManagerId</a></td></tr>
-<tr class="memdesc:ae1f79cfdf096484d3aedf83ab5167fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the manager manipulators created from this type will be associated with. <br/></td></tr>
-<tr class="separator:ae1f79cfdf096484d3aedf83ab5167fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8e437eeb2db1298837e905af6161b02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_az_tools_framework_1_1_translation_manipulators.html#a933bb883f5f446c3783c6c6bf7249c73">TranslationManipulators::Dimensions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#aa8e437eeb2db1298837e905af6161b02">m_dimensions</a></td></tr>
-<tr class="memdesc:aa8e437eeb2db1298837e905af6161b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dimensions this vertex selection was created with.  <a href="#aa8e437eeb2db1298837e905af6161b02">More...</a><br/></td></tr>
-<tr class="separator:aa8e437eeb2db1298837e905af6161b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d1ead4dcaef97344becf769a772f3c3"><td class="memItemLeft" align="right" valign="top">TranslationManipulatorConfiguratorFn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a8d1ead4dcaef97344becf769a772f3c3">m_manipulatorConfiguratorFn</a></td></tr>
-<tr class="memdesc:a8d1ead4dcaef97344becf769a772f3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer set on Create to decide look and functionality of translation manipulator.  <a href="#a8d1ead4dcaef97344becf769a772f3c3">More...</a><br/></td></tr>
-<tr class="separator:a8d1ead4dcaef97344becf769a772f3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba5647413623dad9cedd562f9f19a82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba5647413623dad9cedd562f9f19a82"></a>
-AZStd::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a6ba5647413623dad9cedd562f9f19a82">m_onVertexPositionsUpdated</a> = nullptr</td></tr>
-<tr class="memdesc:a6ba5647413623dad9cedd562f9f19a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for when vertex positions are changed. <br/></td></tr>
-<tr class="separator:a6ba5647413623dad9cedd562f9f19a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b775e8866a0f12b6f24985aea2ba4a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b775e8866a0f12b6f24985aea2ba4a5"></a>
-<a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#ae7efab4606ec48298f4bad10e7acdbf3">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a6b775e8866a0f12b6f24985aea2ba4a5">m_state</a> = State::Selecting</td></tr>
-<tr class="memdesc:a6b775e8866a0f12b6f24985aea2ba4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different states VertexSelection can be in. <br/></td></tr>
-<tr class="separator:a6b775e8866a0f12b6f24985aea2ba4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29d3151159468b69fc8722d33f7052a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af29d3151159468b69fc8722d33f7052a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#af29d3151159468b69fc8722d33f7052a">m_worldSpace</a> = false</td></tr>
-<tr class="memdesc:af29d3151159468b69fc8722d33f7052a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are the manipulators being used in local or world space. <br/></td></tr>
-<tr class="separator:af29d3151159468b69fc8722d33f7052a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c15661ed9edc23869e8454769559ee2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a2c15661ed9edc23869e8454769559ee2">m_batchMovementInProgress</a> = false</td></tr>
-<tr class="separator:a2c15661ed9edc23869e8454769559ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename Vertex&gt;<br/>
@@ -350,55 +292,6 @@ template&lt;typename Vertex &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2c15661ed9edc23869e8454769559ee2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Vertex &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html">AzToolsFramework::EditorVertexSelectionBase</a>&lt; Vertex &gt;::m_batchMovementInProgress = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>If a batch movement operation is in progress we do not want to refresh the VertexSelection during it for performance reasons. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa8e437eeb2db1298837e905af6161b02"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Vertex &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_az_tools_framework_1_1_translation_manipulators.html#a933bb883f5f446c3783c6c6bf7249c73">TranslationManipulators::Dimensions</a> <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html">AzToolsFramework::EditorVertexSelectionBase</a>&lt; Vertex &gt;::m_dimensions</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            TranslationManipulators::Dimensions::Three</div>
-</div><!-- fragment -->
-<p>The dimensions this vertex selection was created with. </p>
-
-</div>
-</div>
 <a class="anchor" id="a6e3e7142ab7ce464315fb7ae8f8efd5a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -422,32 +315,6 @@ template&lt;typename Vertex &gt; </div>
 <div class="line">            <span class="keyword">nullptr</span></div>
 </div><!-- fragment -->
 <p>Interface to hover selection, representing bounds that can be selected. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8d1ead4dcaef97344becf769a772f3c3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Vertex &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">TranslationManipulatorConfiguratorFn <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html">AzToolsFramework::EditorVertexSelectionBase</a>&lt; Vertex &gt;::m_manipulatorConfiguratorFn</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <span class="keyword">nullptr</span></div>
-</div><!-- fragment -->
-<p>Function pointer set on Create to decide look and functionality of translation manipulator. </p>
 
 </div>
 </div>
@@ -483,7 +350,7 @@ template&lt;typename Vertex &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

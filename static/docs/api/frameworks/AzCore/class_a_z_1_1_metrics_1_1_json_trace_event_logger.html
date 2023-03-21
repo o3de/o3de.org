@@ -58,7 +58,6 @@
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_a_z_1_1_metrics_1_1_json_trace_event_logger-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Metrics::JsonTraceEventLogger Class Reference</div>  </div>
@@ -168,7 +167,7 @@ AZStd::unique_ptr<br class="typebreak"/>
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a130196e1e065b615385f40579bc43005">m_name</a></td></tr>
 <tr class="memdesc:a130196e1e065b615385f40579bc43005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a user friendly name for the event logger. <br/></td></tr>
 <tr class="separator:a130196e1e065b615385f40579bc43005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c01ebcca169239551cec491c53e95c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a21c01ebcca169239551cec491c53e95c">m_active</a> { <a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a04fa300b21e2b4237812ffcf6755c23c">GetDefaultActiveState</a>() }</td></tr>
+<tr class="memitem:a21c01ebcca169239551cec491c53e95c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a21c01ebcca169239551cec491c53e95c">m_active</a> { GetDefaultActiveState() }</td></tr>
 <tr class="separator:a21c01ebcca169239551cec491c53e95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6493c875b41639d898ec2c1bf22be908"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_settings_registry_interface.html">AZ::SettingsRegistryInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a6493c875b41639d898ec2c1bf22be908">m_settingsRegistry</a> {}</td></tr>
 <tr class="separator:a6493c875b41639d898ec2c1bf22be908"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,37 +180,8 @@ AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRi
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a8f33559509f9db5987802d42270f9e69">m_eventCount</a> {}</td></tr>
 <tr class="memdesc:a8f33559509f9db5987802d42270f9e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks the number of events written so far. <br/></td></tr>
 <tr class="separator:a8f33559509f9db5987802d42270f9e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a04fa300b21e2b4237812ffcf6755c23c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a04fa300b21e2b4237812ffcf6755c23c">GetDefaultActiveState</a> ()</td></tr>
-<tr class="separator:a04fa300b21e2b4237812ffcf6755c23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a04fa300b21e2b4237812ffcf6755c23c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool AZ::Metrics::JsonTraceEventLogger::GetDefaultActiveState </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the default value for the m_active member, which determines if the event logger should record events to the stream member In non-release configurations, the event logger defaults to active. In release configurations, the event logger defaults to inactive This can be overrided through the settings registry </p>
-
-</div>
-</div>
 <a class="anchor" id="a23a3e742df602d91e17d601a5a9fd8c4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -461,7 +431,7 @@ Static Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool AZ::Metrics::JsonTraceEventLogger::m_active { <a class="el" href="class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a04fa300b21e2b4237812ffcf6755c23c">GetDefaultActiveState</a>() }</td>
+          <td class="memname">bool AZ::Metrics::JsonTraceEventLogger::m_active { GetDefaultActiveState() }</td>
         </tr>
       </table>
   </td>
@@ -522,7 +492,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

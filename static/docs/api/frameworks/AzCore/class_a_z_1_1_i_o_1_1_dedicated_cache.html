@@ -54,8 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_dedicated_cache-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::DedicatedCache Class Reference</div>  </div>
@@ -99,65 +97,6 @@ virtual const <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::st
 <tr class="memitem:a5a18ac8ce7fcd3b06217d14ae1e004f9 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_std_1_1shared__ptr.html">AZStd::shared_ptr</a><br class="typebreak"/>
 &lt; <a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html">StreamStackEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_stream_stack_entry.html#a5a18ac8ce7fcd3b06217d14ae1e004f9">GetNext</a> () const </td></tr>
 <tr class="separator:a5a18ac8ce7fcd3b06217d14ae1e004f9 inherit pub_methods_class_a_z_1_1_i_o_1_1_stream_stack_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af55ac295e9a019cbd6125055a1289715"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af55ac295e9a019cbd6125055a1289715"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDedicatedCache</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_create_dedicated_cache_data.html">Requests::CreateDedicatedCacheData</a> &amp;data)</td></tr>
-<tr class="separator:af55ac295e9a019cbd6125055a1289715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9a420a76d796d0c65f167f584ca6c3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9a420a76d796d0c65f167f584ca6c3d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyDedicatedCache</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_destroy_dedicated_cache_data.html">Requests::DestroyDedicatedCacheData</a> &amp;data)</td></tr>
-<tr class="separator:ab9a420a76d796d0c65f167f584ca6c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add6a618b4dcc05b9ec3753098ff6b670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add6a618b4dcc05b9ec3753098ff6b670"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFile</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_read_data.html">Requests::ReadData</a> &amp;data)</td></tr>
-<tr class="separator:add6a618b4dcc05b9ec3753098ff6b670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a445dd50d5047ed0706dc21214771c01c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a445dd50d5047ed0706dc21214771c01c"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>FindCache</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;filename, <a class="el" href="class_a_z_1_1_i_o_1_1_file_range.html">FileRange</a> range)</td></tr>
-<tr class="separator:a445dd50d5047ed0706dc21214771c01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a61a6c947007edf68b55aab587d0001"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a61a6c947007edf68b55aab587d0001"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>FindCache</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;filename, u64 offset)</td></tr>
-<tr class="separator:a7a61a6c947007edf68b55aab587d0001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b24360bfa951d7b01fc08d420f291f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b24360bfa951d7b01fc08d420f291f0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushCache</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &amp;filePath)</td></tr>
-<tr class="separator:a8b24360bfa951d7b01fc08d420f291f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ef2f8b50682dbdf30ae1507a3375f7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ef2f8b50682dbdf30ae1507a3375f7c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushEntireCache</b> ()</td></tr>
-<tr class="separator:a1ef2f8b50682dbdf30ae1507a3375f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f0fd802b6a34e9ed0b44285a981f20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6f0fd802b6a34e9ed0b44285a981f20"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Report</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_report_data.html">Requests::ReportData</a> &amp;data) const </td></tr>
-<tr class="separator:ae6f0fd802b6a34e9ed0b44285a981f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a94f8e61b545de8d299ccb3603d193d76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94f8e61b545de8d299ccb3603d193d76"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_request_path.html">RequestPath</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedFileNames</b></td></tr>
-<tr class="separator:a94f8e61b545de8d299ccb3603d193d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a2fce6eeee11455db5c64bf3c546730"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a2fce6eeee11455db5c64bf3c546730"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_file_range.html">FileRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedFileRanges</b></td></tr>
-<tr class="separator:a6a2fce6eeee11455db5c64bf3c546730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0890c4d013c2d26127457b0eb32a868f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0890c4d013c2d26127457b0eb32a868f"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a><br class="typebreak"/>
-&lt; AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_block_cache.html">BlockCache</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedFileCaches</b></td></tr>
-<tr class="separator:a0890c4d013c2d26127457b0eb32a868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d409c248b9676d8c4072c2e7f02cd70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d409c248b9676d8c4072c2e7f02cd70"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedFileRefCounts</b></td></tr>
-<tr class="separator:a2d409c248b9676d8c4072c2e7f02cd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4aa86a60dcc28248ed717c50552cc8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4aa86a60dcc28248ed717c50552cc8e"></a>
-<a class="el" href="class_a_z_1_1_statistics_1_1_running_statistic.html">AZ::Statistics::RunningStatistic</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_usagePercentageStat</b></td></tr>
-<tr class="separator:ab4aa86a60dcc28248ed717c50552cc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86db0a3b212440fb729e8e165eeeaf6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86db0a3b212440fb729e8e165eeeaf6e"></a>
-u64&#160;</td><td class="memItemRight" valign="bottom"><b>m_cacheSize</b></td></tr>
-<tr class="separator:a86db0a3b212440fb729e8e165eeeaf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69689f13a0a6fdcf23923f7e3e104404"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69689f13a0a6fdcf23923f7e3e104404"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_alignment</b></td></tr>
-<tr class="separator:a69689f13a0a6fdcf23923f7e3e104404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62c2eff7f2fdc2fc62efe903a8acd232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62c2eff7f2fdc2fc62efe903a8acd232"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><b>m_blockSize</b></td></tr>
-<tr class="separator:a62c2eff7f2fdc2fc62efe903a8acd232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08befd1dc514c7156bfb5bbf71a5d93a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08befd1dc514c7156bfb5bbf71a5d93a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_onlyEpilogWrites</b></td></tr>
-<tr class="separator:a08befd1dc514c7156bfb5bbf71a5d93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -376,7 +315,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

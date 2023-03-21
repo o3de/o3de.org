@@ -56,8 +56,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_polygon_prism-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::PolygonPrism Class Reference</div>  </div>
@@ -103,36 +101,6 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_a_z_1_1_vertex_container.html">VertexContainer</a>&lt; <a class="el" href="class_a_z_1_1_vector2.html">Vector2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_polygon_prism.html#a3aa2d1480d51c49daac118285154fd91">m_vertexContainer</a></td></tr>
 <tr class="memdesc:a3aa2d1480d51c49daac118285154fd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to underlying vertex data. <br/></td></tr>
 <tr class="separator:a3aa2d1480d51c49daac118285154fd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7dc30ef9594345c07d403441c9567f4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7dc30ef9594345c07d403441c9567f4e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_polygon_prism.html#a7dc30ef9594345c07d403441c9567f4e">OnChangeHeight</a> ()</td></tr>
-<tr class="memdesc:a7dc30ef9594345c07d403441c9567f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internally used to call OnChangeCallback when height values are modified in the property grid. <br/></td></tr>
-<tr class="separator:a7dc30ef9594345c07d403441c9567f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97cb2629011abff4857e295b5f3f1094"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97cb2629011abff4857e295b5f3f1094"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_polygon_prism.html#a97cb2629011abff4857e295b5f3f1094">OnChangeNonUniformScale</a> ()</td></tr>
-<tr class="memdesc:a97cb2629011abff4857e295b5f3f1094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internally used to call OnChangeCallback when non-uniform scale values are modified. <br/></td></tr>
-<tr class="separator:a97cb2629011abff4857e295b5f3f1094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aeb68481998fc967dc6114960650cc95a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb68481998fc967dc6114960650cc95a"></a>
-<a class="el" href="class_a_z_std_1_1function.html">VoidFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_polygon_prism.html#aeb68481998fc967dc6114960650cc95a">m_onChangeHeightCallback</a> = nullptr</td></tr>
-<tr class="memdesc:aeb68481998fc967dc6114960650cc95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for when height is changed. <br/></td></tr>
-<tr class="separator:aeb68481998fc967dc6114960650cc95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b020410153caae055f42bcbec37f88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48b020410153caae055f42bcbec37f88"></a>
-<a class="el" href="class_a_z_std_1_1function.html">VoidFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_polygon_prism.html#a48b020410153caae055f42bcbec37f88">m_onChangeNonUniformScaleCallback</a> = nullptr</td></tr>
-<tr class="memdesc:a48b020410153caae055f42bcbec37f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for when non-uniform scale is changed. <br/></td></tr>
-<tr class="separator:a48b020410153caae055f42bcbec37f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa46a50f9757d908304016df59a4b6a41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa46a50f9757d908304016df59a4b6a41"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_polygon_prism.html#aa46a50f9757d908304016df59a4b6a41">m_height</a> = 1.0f</td></tr>
-<tr class="memdesc:aa46a50f9757d908304016df59a4b6a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of polygon prism (about local Z) - default to 1m. <br/></td></tr>
-<tr class="separator:aa46a50f9757d908304016df59a4b6a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a466ebf2dff3ecae1346bfef6e2c930a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a466ebf2dff3ecae1346bfef6e2c930a0"></a>
-<a class="el" href="class_a_z_1_1_vector3.html">AZ::Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_polygon_prism.html#a466ebf2dff3ecae1346bfef6e2c930a0">m_nonUniformScale</a> = <a class="el" href="class_a_z_1_1_vector3.html#a05689e9127984770ee1406bea4558429">AZ::Vector3::CreateOne</a>()</td></tr>
-<tr class="memdesc:a466ebf2dff3ecae1346bfef6e2c930a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows non-uniform scale to be applied to the prism. <br/></td></tr>
-<tr class="separator:a466ebf2dff3ecae1346bfef6e2c930a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Formal Definition: A (right) polygonal prism is a 3-dimensional prism made from two translated polygons connected by rectangles. Parallelogram sides are not allowed. Here the representation is defined by one polygon (internally represented as a vertex container - list of vertices) and a height (extrusion) property. All vertices lie on the local plane Z = 0. </p>
@@ -200,7 +168,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

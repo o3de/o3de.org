@@ -56,8 +56,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_dom_1_1_dom_prefix_tree-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Dom::DomPrefixTree&lt; T &gt; Class Template Reference</div>  </div>
@@ -69,11 +67,6 @@
 
 <p><code>#include &lt;DomPrefixTree.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a1a44796555e50e975ea3ef4ea228ec05"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html#a1a44796555e50e975ea3ef4ea228ec05">VisitorFunction</a> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; bool(const <a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &amp;, T &amp;)&gt;</td></tr>
@@ -148,29 +141,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html#ad0e7fb1236f6ddcc0e19797eb3b4fe02">IsEmpty</a> () const </td></tr>
 <tr class="memdesc:ad0e7fb1236f6ddcc0e19797eb3b4fe02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the root node is empty. <br/></td></tr>
 <tr class="separator:ad0e7fb1236f6ddcc0e19797eb3b4fe02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a291274d12f66c1b09b74368a175f3cdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a291274d12f66c1b09b74368a175f3cdc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html#a291274d12f66c1b09b74368a175f3cdc">DomPrefixTree</a> (<a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a> &amp;&amp;node)</td></tr>
-<tr class="memdesc:a291274d12f66c1b09b74368a175f3cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Since <a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a> is an internal private struct in this class, this constructor that uses <a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a> is also private. <br/></td></tr>
-<tr class="separator:a291274d12f66c1b09b74368a175f3cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa554b2ea9ce14b7e65cc53fd85e0d61d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa554b2ea9ce14b7e65cc53fd85e0d61d"></a>
-<a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeForPath</b> (const <a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &amp;path)</td></tr>
-<tr class="separator:aa554b2ea9ce14b7e65cc53fd85e0d61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a6894faef99fd2e075571c9c55de11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8a6894faef99fd2e075571c9c55de11"></a>
-const <a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeForPath</b> (const <a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &amp;path) const </td></tr>
-<tr class="separator:ab8a6894faef99fd2e075571c9c55de11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac811e3148adef4aa5ce806c25635e0ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html#ac811e3148adef4aa5ce806c25635e0ac">DetachNodeAtPath</a> (const <a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &amp;path)</td></tr>
-<tr class="separator:ac811e3148adef4aa5ce806c25635e0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dfb92f621462cfc018b11b565a409a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html#a9dfb92f621462cfc018b11b565a409a6">OverwritePath</a> (const <a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &amp;path, <a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a> &amp;&amp;newNode, bool shouldCreateNodes=true)</td></tr>
-<tr class="separator:a9dfb92f621462cfc018b11b565a409a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:acf4027ad0a6471a034e9ed098b7bf2ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf4027ad0a6471a034e9ed098b7bf2ca"></a>
-<a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootNode</b></td></tr>
-<tr class="separator:acf4027ad0a6471a034e9ed098b7bf2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br/>
@@ -194,40 +164,6 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac811e3148adef4aa5ce806c25635e0ac"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html">AZ::Dom::DomPrefixTree</a>&lt; T &gt;::DetachNodeAtPath </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &amp;&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Detaches the node that matches the provided path. The detach operation removes the node and its children from the existing tree. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>The path at which the node should be detached. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a> that is detached. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="abc0a1ac9aa8f0f295057452017fae675"></a>
 <div class="memitem">
 <div class="memproto">
@@ -318,58 +254,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9dfb92f621462cfc018b11b565a409a6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html">AZ::Dom::DomPrefixTree</a>&lt; T &gt;::OverwritePath </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_a_z_1_1_dom_1_1_path.html">Path</a> &amp;&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_a_z_1_1_dom_1_1_dom_prefix_tree_1_1_node.html">Node</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>newNode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>shouldCreateNodes</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Overwrites the node at the path and replaces it with the given node. Old node and its children at the path would be destroyed. New nodes will be moved to the path. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>The path which corresponds to the root node to be overwritten. </td></tr>
-    <tr><td class="paramname">newNode</td><td>The new node to move to the provided path. </td></tr>
-    <tr><td class="paramname">shouldCreateNodes</td><td>Create nodes for the provided path if they are missing. Default to true. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the node was overwritten successfully, false if shouldCreateNodes is off and no target path exists. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a5d691f4cf6ca59a5c4869d912790e629"></a>
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +290,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

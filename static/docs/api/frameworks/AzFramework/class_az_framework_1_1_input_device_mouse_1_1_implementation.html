@@ -55,7 +55,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_input_device_mouse_1_1_implementation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::InputDeviceMouse::Implementation Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -126,29 +125,6 @@ Protected Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a535139d40c2f4d8519568d34811d041e">ResetInputChannelStates</a> ()</td></tr>
 <tr class="memdesc:a535139d40c2f4d8519568d34811d041e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of all this input device's associated input channels. <br/></td></tr>
 <tr class="separator:a535139d40c2f4d8519568d34811d041e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a74d07ae4257a702672de2ac31061fd0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74d07ae4257a702672de2ac31061fd0a"></a>
-<a class="el" href="class_az_framework_1_1_input_device_mouse.html">InputDeviceMouse</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a74d07ae4257a702672de2ac31061fd0a">m_inputDevice</a></td></tr>
-<tr class="memdesc:a74d07ae4257a702672de2ac31061fd0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the device. <br/></td></tr>
-<tr class="separator:a74d07ae4257a702672de2ac31061fd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ef03e7f5fa1b03964d4f0612707b45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12ef03e7f5fa1b03964d4f0612707b45"></a>
-AZStd::sys_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a12ef03e7f5fa1b03964d4f0612707b45">m_rawMovementSampleRate</a></td></tr>
-<tr class="memdesc:a12ef03e7f5fa1b03964d4f0612707b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw movement sample rate. <br/></td></tr>
-<tr class="separator:a12ef03e7f5fa1b03964d4f0612707b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefcad4f5edc8e6f98eb5b9a9f54c9d85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefcad4f5edc8e6f98eb5b9a9f54c9d85"></a>
-<a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#a24a31c4873949dc84764006277bd8d95">RawButtonEventQueueByIdMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#aefcad4f5edc8e6f98eb5b9a9f54c9d85">m_rawButtonEventQueuesById</a></td></tr>
-<tr class="memdesc:aefcad4f5edc8e6f98eb5b9a9f54c9d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw button events by id. <br/></td></tr>
-<tr class="separator:aefcad4f5edc8e6f98eb5b9a9f54c9d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33700be148757811e61375e9ecc7f34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa33700be148757811e61375e9ecc7f34"></a>
-RawMovementEventQueueByIdMap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#aa33700be148757811e61375e9ecc7f34">m_rawMovementEventQueuesById</a></td></tr>
-<tr class="memdesc:aa33700be148757811e61375e9ecc7f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw movement events by id. <br/></td></tr>
-<tr class="separator:aa33700be148757811e61375e9ecc7f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc733354acba0729793b6b0c75040278"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc733354acba0729793b6b0c75040278"></a>
-AZStd::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_input_device_mouse_1_1_implementation.html#acc733354acba0729793b6b0c75040278">m_timeOfLastRawMovementSample</a></td></tr>
-<tr class="memdesc:acc733354acba0729793b6b0c75040278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time of the last raw movement sample. <br/></td></tr>
-<tr class="separator:acc733354acba0729793b6b0c75040278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for platform specific implementations of mouse input devices. </p>
@@ -514,7 +490,7 @@ AZStd::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valig
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:59 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

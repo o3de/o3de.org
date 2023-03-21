@@ -53,6 +53,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RHI::RayTracingBufferPools Class Reference</div>  </div>
@@ -116,6 +117,46 @@ Static Public Member Functions</h2></td></tr>
 static RHI::Ptr<br class="typebreak"/>
 &lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RHI::RayTracingBufferPools</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRHIRayTracingBufferPools</b> ()</td></tr>
 <tr class="separator:a1989ad7b8e8ab648f4096fa290eb053d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a708c2d6380ea3c533ffd200791306b52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a708c2d6380ea3c533ffd200791306b52"></a>
+virtual RHI::BufferBindFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetShaderTableBufferBindFlags</b> () const </td></tr>
+<tr class="separator:a708c2d6380ea3c533ffd200791306b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d00ad7c66e017e02aafa20b9869db95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d00ad7c66e017e02aafa20b9869db95"></a>
+virtual RHI::BufferBindFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetScratchBufferBindFlags</b> () const </td></tr>
+<tr class="separator:a4d00ad7c66e017e02aafa20b9869db95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c637fa0df3302e0875493146bfa2ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69c637fa0df3302e0875493146bfa2ac"></a>
+virtual RHI::BufferBindFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetBlasBufferBindFlags</b> () const </td></tr>
+<tr class="separator:a69c637fa0df3302e0875493146bfa2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6a964033c91e76187f3e003de37883"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d6a964033c91e76187f3e003de37883"></a>
+virtual RHI::BufferBindFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetTlasInstancesBufferBindFlags</b> () const </td></tr>
+<tr class="separator:a1d6a964033c91e76187f3e003de37883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f2ac36ec726c4623bfedd49cd7b47f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f2ac36ec726c4623bfedd49cd7b47f7"></a>
+virtual RHI::BufferBindFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetTlasBufferBindFlags</b> () const </td></tr>
+<tr class="separator:a4f2ac36ec726c4623bfedd49cd7b47f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_device_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html">AZ::RHI::DeviceObject</a></td></tr>
+<tr class="memitem:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80ab91a69f8f962f519c29f6529cac51"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html#a80ab91a69f8f962f519c29f6529cac51">Init</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">Device</a> &amp;device)</td></tr>
+<tr class="memdesc:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derived class should call this method to assign the device. <br/></td></tr>
+<tr class="separator:a80ab91a69f8f962f519c29f6529cac51 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17aeed35d0a736d001927174bdb987e inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af17aeed35d0a736d001927174bdb987e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html#af17aeed35d0a736d001927174bdb987e">Shutdown</a> () override</td></tr>
+<tr class="memdesc:af17aeed35d0a736d001927174bdb987e inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the current bound device to null. <br/></td></tr>
+<tr class="separator:af17aeed35d0a736d001927174bdb987e inherit pro_methods_class_a_z_1_1_r_h_i_1_1_device_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
+<tr class="memitem:a955994ad257e9d52191e1a52afe61a62 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a955994ad257e9d52191e1a52afe61a62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const </td></tr>
+<tr class="separator:a955994ad257e9d52191e1a52afe61a62 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79593e4d781972fa270f4940cead50f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#af79593e4d781972fa270f4940cead50f">release</a> () const </td></tr>
+<tr class="separator:af79593e4d781972fa270f4940cead50f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
+<tr class="memitem:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2285f323a24b84e7b5ad2249438059b8"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCount</b> = 0</td></tr>
+<tr class="separator:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_buffer_pools.html">RayTracingBufferPools</a></p>
@@ -126,7 +167,7 @@ static RHI::Ptr<br class="typebreak"/>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

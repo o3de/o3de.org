@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -74,10 +81,13 @@ EventLoggerPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_logger</b
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Metrics</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_metrics_1_1_event_logger_factory_impl.html">EventLoggerFactoryImpl</a></li><li class="navelem"><a class="el" href="struct_a_z_1_1_metrics_1_1_event_logger_factory_impl_1_1_id_to_event_logger_entry.html">IdToEventLoggerEntry</a></li>
+    <li class="footer">Generated on Mon Mar 20 2023 23:36:33 for Open 3D Engine AzCore API Reference by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
 </body>
 </html>

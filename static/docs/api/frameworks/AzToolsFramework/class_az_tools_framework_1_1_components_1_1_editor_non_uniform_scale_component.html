@@ -54,9 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_components_1_1_editor_non_uniform_scale_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Components::EditorNonUniformScaleComponent Class Reference</div>  </div>
@@ -122,39 +119,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="inherit_header pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html">AzToolsFramework::Components::EditorComponentBase</a></td></tr>
 <tr class="memitem:a663b83c55b0f573c41840c2e7a79aba4 inherit pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a663b83c55b0f573c41840c2e7a79aba4">Reflect</a> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a663b83c55b0f573c41840c2e7a79aba4 inherit pub_static_methods_class_az_tools_framework_1_1_components_1_1_editor_component_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7a4f86cb55055dff57120b0fab35a8d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a4f86cb55055dff57120b0fab35a8d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnScaleChanged</b> ()</td></tr>
-<tr class="separator:a7a4f86cb55055dff57120b0fab35a8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f5a4a3ccb7522a135718b969ffaa113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_non_uniform_scale_component.html#a0f5a4a3ccb7522a135718b969ffaa113">BuildGameEntity</a> (AZ::Entity *gameEntity) override</td></tr>
-<tr class="separator:a0f5a4a3ccb7522a135718b969ffaa113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a43e1b9200f9c798ee180ef5de13bbf35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43e1b9200f9c798ee180ef5de13bbf35"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;dependent)</td></tr>
-<tr class="separator:a43e1b9200f9c798ee180ef5de13bbf35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c5e6b56c15f1fb56ffc15403c6fcb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91c5e6b56c15f1fb56ffc15403c6fcb4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
-<tr class="separator:a91c5e6b56c15f1fb56ffc15403c6fcb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef776c4fbec641d3915ce3210e2fe4a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef776c4fbec641d3915ce3210e2fe4a4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
-<tr class="separator:aef776c4fbec641d3915ce3210e2fe4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a7cae1f63438be74c2e448fbf99c4bdf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cae1f63438be74c2e448fbf99c4bdf9"></a>
-AZ::Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>m_scale</b> = AZ::Vector3::CreateOne()</td></tr>
-<tr class="separator:a7cae1f63438be74c2e448fbf99c4bdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad476c2d6cb2a863a8ab07fac694c85e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad476c2d6cb2a863a8ab07fac694c85e5"></a>
-AZ::NonUniformScaleChangedEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_scaleChangedEvent</b></td></tr>
-<tr class="separator:ad476c2d6cb2a863a8ab07fac694c85e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09760c738659ba4516b74774545b7d9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09760c738659ba4516b74774545b7d9d"></a>
-<a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate.html">AzToolsFramework::ComponentModeFramework::ComponentModeDelegate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_non_uniform_scale_component.html#a09760c738659ba4516b74774545b7d9d">m_componentModeDelegate</a></td></tr>
-<tr class="memdesc:a09760c738659ba4516b74774545b7d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible for detecting ComponentMode activation and creating a concrete ComponentMode. <br/></td></tr>
-<tr class="separator:a09760c738659ba4516b74774545b7d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Allows working with non-uniform scale in the editor. </p>
@@ -183,41 +147,6 @@ AZ::NonUniformScaleChangedEvent&#160;</td><td class="memItemRight" valign="botto
 <p><b>Important:</b> Components derived from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html">EditorComponentBase</a> must call the <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_non_uniform_scale_component.html#a8db3ff7eaf5368d95ff3dad0a714ede2">Activate()</a> function of the base class. </p>
 
 <p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a7df8b021550930d5b3a3ea110c2848ed">AzToolsFramework::Components::EditorComponentBase</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0f5a4a3ccb7522a135718b969ffaa113"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::Components::EditorNonUniformScaleComponent::BuildGameEntity </td>
-          <td>(</td>
-          <td class="paramtype">AZ::Entity *&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Override this function to create one or more game components to represent your editor component in runtime.</p>
-<p><b>Important:</b> If your entity has a game component, you must implement this function.</p>
-<p>This function is called by the slice builder. Any game components that you create should be attached to the game entity that is provided to this function. If you do not need to create a game component, you do not need to override this function. The provided component to the gameEntity is dynamically generated and owned by the gameEntity and should be deallocated appropriately. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gameEntity</td><td>A pointer to the game entity. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_component_base.html#aa409e70732f9b85069ab6124a26b5863">AzToolsFramework::Components::EditorComponentBase</a>.</p>
 
 </div>
 </div>
@@ -254,7 +183,7 @@ AZ::NonUniformScaleChangedEvent&#160;</td><td class="memItemRight" valign="botto
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

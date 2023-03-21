@@ -54,9 +54,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_streamer_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::StreamerComponent Class Reference</div>  </div>
@@ -71,60 +68,6 @@ Static Public Member Functions</h2></td></tr>
 static AZStd::unique_ptr<br class="typebreak"/>
 &lt; <a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html">AZ::IO::Scheduler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStreamerStack</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> profile={})</td></tr>
 <tr class="separator:a4383a93b454360e263bbc2ae30dc6621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a248450f42d64d99212af1a99d3f12490"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_streamer_component.html#a248450f42d64d99212af1a99d3f12490">Activate</a> () override</td></tr>
-<tr class="separator:a248450f42d64d99212af1a99d3f12490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b101b667ffd6ce17aa8a4d1d12afec6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_streamer_component.html#a7b101b667ffd6ce17aa8a4d1d12afec6">Deactivate</a> () override</td></tr>
-<tr class="separator:a7b101b667ffd6ce17aa8a4d1d12afec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5653eb2ed34b45d7e6a7592d8314f325"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5653eb2ed34b45d7e6a7592d8314f325"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, <a class="el" href="class_a_z_1_1_script_time_point.html">AZ::ScriptTimePoint</a> time) override</td></tr>
-<tr class="separator:a5653eb2ed34b45d7e6a7592d8314f325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716b0ad6c09a6b804a998b11efa587fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a716b0ad6c09a6b804a998b11efa587fd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportFileLocks</b> (const <a class="el" href="class_a_z_std_1_1fixed__vector.html">AZ::ConsoleCommandContainer</a> &amp;someStrings)</td></tr>
-<tr class="separator:a716b0ad6c09a6b804a998b11efa587fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51667d7427f257f8dec28c198a7e3908"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51667d7427f257f8dec28c198a7e3908"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushCaches</b> (const <a class="el" href="class_a_z_std_1_1fixed__vector.html">AZ::ConsoleCommandContainer</a> &amp;someStrings)</td></tr>
-<tr class="separator:a51667d7427f257f8dec28c198a7e3908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa97c2934fb247c403c9d1a0cd0bf19ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa97c2934fb247c403c9d1a0cd0bf19ca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CONSOLEFUNC</b> (<a class="el" href="class_a_z_1_1_streamer_component.html">StreamerComponent</a>, ReportFileLocks, AZ::ConsoleFunctorFlags::Null,&quot;Reports the files currently locked by <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">AZ::IO::Streamer</a>&quot;)</td></tr>
-<tr class="separator:aa97c2934fb247c403c9d1a0cd0bf19ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a87ab1c6004173ccf9b3ee102a5bb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0a87ab1c6004173ccf9b3ee102a5bb6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CONSOLEFUNC</b> (<a class="el" href="class_a_z_1_1_streamer_component.html">StreamerComponent</a>, FlushCaches, AZ::ConsoleFunctorFlags::Null,&quot;Flushes all caches used inside <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">AZ::IO::Streamer</a>&quot;)</td></tr>
-<tr class="separator:ae0a87ab1c6004173ccf9b3ee102a5bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a9fdb62817d5db6c50dddc542da244d33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fdb62817d5db6c50dddc542da244d33"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;provided)</td></tr>
-<tr class="separator:a9fdb62817d5db6c50dddc542da244d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0322977e3b64f05c9667df573974b1a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0322977e3b64f05c9667df573974b1a7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;incompatible)</td></tr>
-<tr class="separator:a0322977e3b64f05c9667df573974b1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc32b79256478b2fdbc9af51723daa7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dc32b79256478b2fdbc9af51723daa7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentServices</b> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">ComponentDescriptor::DependencyArrayType</a> &amp;dependent)</td></tr>
-<tr class="separator:a0dc32b79256478b2fdbc9af51723daa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9569ad157a1020e6f3cf28a320dad309"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9569ad157a1020e6f3cf28a320dad309"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (<a class="el" href="class_a_z_1_1_reflect_context.html">ReflectContext</a> *reflection)</td></tr>
-<tr class="separator:a9569ad157a1020e6f3cf28a320dad309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1cbedc6a284c409d958c546c03b48ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1cbedc6a284c409d958c546c03b48ae"></a>
-static AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html">AZ::IO::Scheduler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSimpleStreamerStack</b> ()</td></tr>
-<tr class="separator:ad1cbedc6a284c409d958c546c03b48ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ab6ad3ac239d382dcf2db048e96d8d513"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6ad3ac239d382dcf2db048e96d8d513"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">AZ::IO::Streamer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_streamer</b></td></tr>
-<tr class="separator:ab6ad3ac239d382dcf2db048e96d8d513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae670dc29bc5802e39656030d3201cc28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae670dc29bc5802e39656030d3201cc28"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_deviceThreadCpuId</b></td></tr>
-<tr class="separator:ae670dc29bc5802e39656030d3201cc28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5124ba358a44dbe13de1f05378af7eb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5124ba358a44dbe13de1f05378af7eb2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_deviceThreadPriority</b></td></tr>
-<tr class="separator:a5124ba358a44dbe13de1f05378af7eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -179,67 +122,13 @@ ComponentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">A component ID that is unique for an entity. This component ID is not unique across all entities. <br/></td></tr>
 <tr class="separator:a738455cb4649e6d7acd8c5b970530c04 inherit pro_attribs_class_a_z_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a248450f42d64d99212af1a99d3f12490"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::StreamerComponent::Activate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Puts the component into an active state. The system calls this function once during activation of each entity that owns the component. You must override this function. The system calls a component's <a class="el" href="class_a_z_1_1_streamer_component.html#a248450f42d64d99212af1a99d3f12490">Activate()</a> function only if all services and components that the component depends on are present and active. Use GetProvidedServices and GetDependentServices to specify these dependencies. </p>
-
-<p>Implements <a class="el" href="class_a_z_1_1_component.html#a3e3e21c0cb8c2a8cb6dc42c83c94a8fe">AZ::Component</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7b101b667ffd6ce17aa8a4d1d12afec6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::StreamerComponent::Deactivate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Deactivates the component. The system calls this function when the owning entity is being deactivated. You must override this function. As a best practice, ensure that this function returns the component to a minimal footprint. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on.</p>
-<p>The system always calls the component's <a class="el" href="class_a_z_1_1_streamer_component.html#a7b101b667ffd6ce17aa8a4d1d12afec6">Deactivate()</a> function before destroying the component. However, deactivation is not always followed by the destruction of the component. An entity and its components can be deactivated and reactivated without being destroyed. Ensure that your <a class="el" href="class_a_z_1_1_streamer_component.html#a7b101b667ffd6ce17aa8a4d1d12afec6">Deactivate()</a> implementation can handle this scenario. </p>
-
-<p>Implements <a class="el" href="class_a_z_1_1_component.html#a7b78b890df9b149722d8703da05c79ac">AZ::Component</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/IO/Streamer/StreamerComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:20 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

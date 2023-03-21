@@ -52,6 +52,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_object-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -81,6 +83,20 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <tr class="memdesc:a40cab6a10612d7fdf473957d9f5b8d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current use count of the object. <br/></td></tr>
 <tr class="separator:a40cab6a10612d7fdf473957d9f5b8d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a955994ad257e9d52191e1a52afe61a62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a955994ad257e9d52191e1a52afe61a62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const </td></tr>
+<tr class="separator:a955994ad257e9d52191e1a52afe61a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79593e4d781972fa270f4940cead50f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#af79593e4d781972fa270f4940cead50f">release</a> () const </td></tr>
+<tr class="separator:af79593e4d781972fa270f4940cead50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a2285f323a24b84e7b5ad2249438059b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2285f323a24b84e7b5ad2249438059b8"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCount</b> = 0</td></tr>
+<tr class="separator:a2285f323a24b84e7b5ad2249438059b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a0391770bbe0b2798fb59abd6fb58916f"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0391770bbe0b2798fb59abd6fb58916f"></a>
@@ -90,13 +106,39 @@ template&lt;typename Type &gt; </td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for any persistent resource in the RHI library. Provides a name, reference counting, and a common RTTI base class for all objects in the RHI. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af79593e4d781972fa270f4940cead50f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::Object::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>All objects have an explicit Init / Shutdown path in addition to creation / deletion. The user is expected to Init the derived variant in order to use it. This extension allows the user to forgo shutdown explicitly and depend on the Ptr ref-counting if necessary.</p>
+<p>This requires that Shutdown properly account for being called multiple times. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI/Object.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

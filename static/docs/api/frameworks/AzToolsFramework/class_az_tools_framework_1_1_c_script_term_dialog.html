@@ -55,9 +55,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-slots">Private Slots</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_c_script_term_dialog-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::CScriptTermDialog Class Reference</div>  </div>
@@ -100,61 +97,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnExceptionMessage</b
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_c_script_term_dialog.html#a48bd364b18266a140535ec8b65087ed3">OnEditorPreferencesChanged</a> () override</td></tr>
 <tr class="memdesc:a48bd364b18266a140535ec8b65087ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">EditorPreferencesNotificationBus. <br/></td></tr>
 <tr class="separator:a48bd364b18266a140535ec8b65087ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
-Private Slots</h2></td></tr>
-<tr class="memitem:a0d761bdc5cd9b66de29531336f809c22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d761bdc5cd9b66de29531336f809c22"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnScriptHelp</b> ()</td></tr>
-<tr class="separator:a0d761bdc5cd9b66de29531336f809c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9400f0104e470b5d7d3d50d63525b51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9400f0104e470b5d7d3d50d63525b51"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnOK</b> ()</td></tr>
-<tr class="separator:ae9400f0104e470b5d7d3d50d63525b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa85271287b336e2356e1c6a06c2a25b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa85271287b336e2356e1c6a06c2a25b0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnScriptInputTextChanged</b> (const QString &amp;text)</td></tr>
-<tr class="separator:aa85271287b336e2356e1c6a06c2a25b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1b577e5a22292a17431c5dc31a809a55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b577e5a22292a17431c5dc31a809a55"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshStyle</b> ()</td></tr>
-<tr class="separator:a1b577e5a22292a17431c5dc31a809a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f5584dfd808160113cbf5c9a8441c93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f5584dfd808160113cbf5c9a8441c93"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InitCompleter</b> ()</td></tr>
-<tr class="separator:a9f5584dfd808160113cbf5c9a8441c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef08c9434714edd788897841bca00697"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef08c9434714edd788897841bca00697"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ExecuteAndPrint</b> (const char *cmd)</td></tr>
-<tr class="separator:aef08c9434714edd788897841bca00697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9daefe3a6250d21426e48de0f4cb4b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9daefe3a6250d21426e48de0f4cb4b0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendToConsole</b> (const QString &amp;string, const QColor &amp;color, bool bold=false)</td></tr>
-<tr class="separator:ac9daefe3a6250d21426e48de0f4cb4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae1b6e0c1437ded1e8a8c7479e31c5fee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1b6e0c1437ded1e8a8c7479e31c5fee"></a>
-QScopedPointer<br class="typebreak"/>
-&lt; Ui::CScriptTermDialog &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b></td></tr>
-<tr class="separator:ae1b6e0c1437ded1e8a8c7479e31c5fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab428a45e967973f51d0e6b9d1941b993"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab428a45e967973f51d0e6b9d1941b993"></a>
-QStringListModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_completionModel</b></td></tr>
-<tr class="separator:ab428a45e967973f51d0e6b9d1941b993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77021bad2f4599af0de3cdf242f0984b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77021bad2f4599af0de3cdf242f0984b"></a>
-QStringListModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastCommandModel</b></td></tr>
-<tr class="separator:a77021bad2f4599af0de3cdf242f0984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bdd7a8c2b95cd18ec856be325eb55d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bdd7a8c2b95cd18ec856be325eb55d0"></a>
-QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastCommands</b></td></tr>
-<tr class="separator:a6bdd7a8c2b95cd18ec856be325eb55d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b260234b5b130dcb417bfc949e162d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b260234b5b130dcb417bfc949e162d3"></a>
-QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_textColor</b></td></tr>
-<tr class="separator:a7b260234b5b130dcb417bfc949e162d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa132086da35a42c1dfb91c67c61d8bd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa132086da35a42c1dfb91c67c61d8bd2"></a>
-QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_warningColor</b></td></tr>
-<tr class="separator:aa132086da35a42c1dfb91c67c61d8bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b9f5ed2e09b644f4057322a26cf77b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b9f5ed2e09b644f4057322a26cf77b8"></a>
-QColor&#160;</td><td class="memItemRight" valign="bottom"><b>m_errorColor</b></td></tr>
-<tr class="separator:a1b9f5ed2e09b644f4057322a26cf77b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acba2082568f1bafb9a532aff65ddb206"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acba2082568f1bafb9a532aff65ddb206"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_upArrowLastCommandIndex</b> = -1</td></tr>
-<tr class="separator:acba2082568f1bafb9a532aff65ddb206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/PythonTerminal/ScriptTermDialog.h</li>
@@ -162,7 +104,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_upArrowLastCommandIn
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -51,6 +51,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_gradient_signal_1_1_image_gradient_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -158,6 +159,92 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentSe
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:ab1bffccee9bb09939d59fad0d684f34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4c3f6187c8b6add3e96d464b37bed46a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c3f6187c8b6add3e96d464b37bed46a"></a>
+AZ::Data::Asset<br class="typebreak"/>
+&lt; AZ::RPI::StreamingImageAsset &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageAsset</b> () const </td></tr>
+<tr class="separator:a4c3f6187c8b6add3e96d464b37bed46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241a0af7b6b8e704e8ef5da897638727"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a241a0af7b6b8e704e8ef5da897638727"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageAsset</b> (const AZ::Data::Asset&lt; AZ::RPI::StreamingImageAsset &gt; &amp;asset)</td></tr>
+<tr class="separator:a241a0af7b6b8e704e8ef5da897638727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b5147754469aef81531705acc4f6ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78b5147754469aef81531705acc4f6ec"></a>
+AZStd::vector&lt; float &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageModificationBuffer</b> ()</td></tr>
+<tr class="separator:a78b5147754469aef81531705acc4f6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db54a747f74bedbb83354a02e273e92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2db54a747f74bedbb83354a02e273e92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPaintModeBegin</b> () override</td></tr>
+<tr class="separator:a2db54a747f74bedbb83354a02e273e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f3398fa12f79371f7c2e14ca050243"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58f3398fa12f79371f7c2e14ca050243"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPaintModeEnd</b> () override</td></tr>
+<tr class="separator:a58f3398fa12f79371f7c2e14ca050243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633d32266a3d8535d66c60015e2c8b22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a633d32266a3d8535d66c60015e2c8b22"></a>
+AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>OnGetColor</b> (const AZ::Vector3 &amp;brushCenter) const override</td></tr>
+<tr class="separator:a633d32266a3d8535d66c60015e2c8b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546d79a5291011c72473cb955e88beed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a546d79a5291011c72473cb955e88beed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGradientTransformChanged</b> (const <a class="el" href="class_gradient_signal_1_1_gradient_transform.html">GradientTransform</a> &amp;newTransform) override</td></tr>
+<tr class="separator:a546d79a5291011c72473cb955e88beed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12aea2f7e4dd3ab9bcb372d4497b7528"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12aea2f7e4dd3ab9bcb372d4497b7528"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateImageModificationBuffer</b> ()</td></tr>
+<tr class="separator:a12aea2f7e4dd3ab9bcb372d4497b7528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e69bf4c402c29f4f99f425d1c6862b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0e69bf4c402c29f4f99f425d1c6862b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearImageModificationBuffer</b> ()</td></tr>
+<tr class="separator:ac0e69bf4c402c29f4f99f425d1c6862b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133984fffbfbf5963bd745b1d0ca2514"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a133984fffbfbf5963bd745b1d0ca2514"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ModificationBufferIsActive</b> () const </td></tr>
+<tr class="separator:a133984fffbfbf5963bd745b1d0ca2514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08e4063d2678bdf4ebb88accc5dc71c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae08e4063d2678bdf4ebb88accc5dc71c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateCachedImageBufferData</b> (const AZ::RHI::ImageDescriptor &amp;imageDescriptor, AZStd::span&lt; const uint8_t &gt; imageData)</td></tr>
+<tr class="separator:ae08e4063d2678bdf4ebb88accc5dc71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c881e0d417169a68d6710ed38a0736f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c881e0d417169a68d6710ed38a0736f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSubImageData</b> ()</td></tr>
+<tr class="separator:a1c881e0d417169a68d6710ed38a0736f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0c3ddd6dd08aae59f42d0f60fafe67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a0c3ddd6dd08aae59f42d0f60fafe67"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueFromImageData</b> (SamplingType samplingType, const AZ::Vector3 &amp;uvw, float defaultValue) const </td></tr>
+<tr class="separator:a8a0c3ddd6dd08aae59f42d0f60fafe67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af405f908a8f79eb98e889e3cd3a579a5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_component.html#af405f908a8f79eb98e889e3cd3a579a5">GetPixelValue</a> (AZ::u32 x, AZ::u32 y) const </td></tr>
+<tr class="separator:af405f908a8f79eb98e889e3cd3a579a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfec87175da78163755b88bb13abef2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gradient_signal_1_1_image_gradient_component.html#a7cfec87175da78163755b88bb13abef2">InvertYAndGetPixelValue</a> (AZ::u32 x, AZ::u32 invertedY) const </td></tr>
+<tr class="separator:a7cfec87175da78163755b88bb13abef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d30366752880c06dff8e3575d860f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7d30366752880c06dff8e3575d860f9"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrariumPixelValue</b> (AZ::u32 x, AZ::u32 y) const </td></tr>
+<tr class="separator:af7d30366752880c06dff8e3575d860f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0238f7e7a83519687210d0ee2f2a551"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0238f7e7a83519687210d0ee2f2a551"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupMultiplierAndOffset</b> (float min, float max)</td></tr>
+<tr class="separator:ac0238f7e7a83519687210d0ee2f2a551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ee9fa313b009c08a3acacfc492895b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1ee9fa313b009c08a3acacfc492895b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupDefaultMultiplierAndOffset</b> ()</td></tr>
+<tr class="separator:aa1ee9fa313b009c08a3acacfc492895b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b01c3ece20bf721c9d82a39ea72551a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b01c3ece20bf721c9d82a39ea72551a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupAutoScaleMultiplierAndOffset</b> ()</td></tr>
+<tr class="separator:a1b01c3ece20bf721c9d82a39ea72551a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956d1fc5da4cae86983f32d57f858f28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a956d1fc5da4cae86983f32d57f858f28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupManualScaleMultiplierAndOffset</b> ()</td></tr>
+<tr class="separator:a956d1fc5da4cae86983f32d57f858f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc5b95dc7a0791bec17cfddb1b3964f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dc5b95dc7a0791bec17cfddb1b3964f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Get4x4Neighborhood</b> (uint32_t x, uint32_t y, AZStd::array&lt; AZStd::array&lt; float, 4 &gt;, 4 &gt; &amp;values) const </td></tr>
+<tr class="separator:a2dc5b95dc7a0791bec17cfddb1b3964f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197d9739657fe5431c8278db1c763fa9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a197d9739657fe5431c8278db1c763fa9"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetClampedValue</b> (int32_t x, int32_t y) const </td></tr>
+<tr class="separator:a197d9739657fe5431c8278db1c763fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426be0031836ad60c3e265c8c0ae5121"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a426be0031836ad60c3e265c8c0ae5121"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetValueForSamplingType</b> (SamplingType samplingType, AZ::u32 x0, AZ::u32 y0, float pixelX, float pixelY) const </td></tr>
+<tr class="separator:a426be0031836ad60c3e265c8c0ae5121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094f2c6e6c7b165f89ac4671564ecd01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a094f2c6e6c7b165f89ac4671564ecd01"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTilingX</b> () const override</td></tr>
+<tr class="separator:a094f2c6e6c7b165f89ac4671564ecd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7daaaee736a5475e8738ca6d9fc5156a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7daaaee736a5475e8738ca6d9fc5156a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTilingX</b> (float tilingX) override</td></tr>
+<tr class="separator:a7daaaee736a5475e8738ca6d9fc5156a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bc2a490524c37c16d9c3047ddbd8e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90bc2a490524c37c16d9c3047ddbd8e0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetTilingY</b> () const override</td></tr>
+<tr class="separator:a90bc2a490524c37c16d9c3047ddbd8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440b0da3ee70395e414ffb5dbbc17132"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a440b0da3ee70395e414ffb5dbbc17132"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTilingY</b> (float tilingY) override</td></tr>
+<tr class="separator:a440b0da3ee70395e414ffb5dbbc17132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4812ffc005e5ed3ef5223cc7f7a2f95f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4812ffc005e5ed3ef5223cc7f7a2f95f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>PixelIndexIsValid</b> (const PixelIndex &amp;pixelIndex) const </td></tr>
+<tr class="separator:a4812ffc005e5ed3ef5223cc7f7a2f95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a0789ec1e26487d1e0129751ac5164cb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0789ec1e26487d1e0129751ac5164cb3"></a>
@@ -166,13 +253,98 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EditorImageGradientC
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>calculates a gradient value based on image data </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af405f908a8f79eb98e889e3cd3a579a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GradientSignal::ImageGradientComponent::GetPixelValue </td>
+          <td>(</td>
+          <td class="paramtype">AZ::u32&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::u32&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Read the pixel from our image data at the given XY coordinates. This will read from image modification buffer if it exists or else from the image asset, using the component's mip and channel settings. Note that image space Y is inverted from world space because in images, 0 is the top corner and +Y goes down, but in world space we want 0 to be the bottom, and +Y goes up. If you want to get the pixel value using a Y calculated from world space, call <a class="el" href="class_gradient_signal_1_1_image_gradient_component.html#a7cfec87175da78163755b88bb13abef2">InvertYAndGetPixelValue()</a> instead. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The X coordinate in image space. </td></tr>
+    <tr><td class="paramname">y</td><td>The Y coordinate in image space. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7cfec87175da78163755b88bb13abef2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GradientSignal::ImageGradientComponent::InvertYAndGetPixelValue </td>
+          <td>(</td>
+          <td class="paramtype">AZ::u32&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::u32&#160;</td>
+          <td class="paramname"><em>invertedY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Read the pixel from our image data at the given X coordinate and an inverted Y coordinate. This will read from image modification buffer if it exists or else from the image asset, using the component's mip and channel settings. This is a convenience method that will invert our Y coordinate before calling <a class="el" href="class_gradient_signal_1_1_image_gradient_component.html#af405f908a8f79eb98e889e3cd3a579a5">GetPixelValue()</a> so that we can take a Y coordinate that was calculated from world space axes and invert it into image space as a part of doing the pixel lookup. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The X coordinate in image space. </td></tr>
+    <tr><td class="paramname">invertedY</td><td>The inverted Y coordinate in image space. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/GradientSignal/Code/Include/GradientSignal/Components/ImageGradientComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:40 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:21 for Open 3D Engine GradientSignal Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -50,9 +50,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_udp_fragment_queue-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::UdpFragmentQueue Class Reference</div>  </div>
@@ -80,40 +77,6 @@ SequenceId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <tr class="separator:a240ff093c488f948aec9c6df332ca15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9517055f02ad8b9f47ac0132ccffc62f"><td class="memItemLeft" align="right" valign="top">PacketDispatchResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_udp_fragment_queue.html#a9517055f02ad8b9f47ac0132ccffc62f">ProcessReceivedChunk</a> (<a class="el" href="class_az_networking_1_1_udp_connection.html">UdpConnection</a> *connection, <a class="el" href="class_az_networking_1_1_i_connection_listener.html">IConnectionListener</a> &amp;connectionListener, <a class="el" href="class_az_networking_1_1_udp_packet_header.html">UdpPacketHeader</a> &amp;header, <a class="el" href="class_az_networking_1_1_i_serializer.html">ISerializer</a> &amp;serializer)</td></tr>
 <tr class="separator:a9517055f02ad8b9f47ac0132ccffc62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:acf0141b3a59b8328e02c163dc6dfd833"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf0141b3a59b8328e02c163dc6dfd833"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PacketFragments</b> = AZStd::vector&lt; AZStd::unique_ptr&lt; CorePackets::FragmentedPacket &gt;&gt;</td></tr>
-<tr class="separator:acf0141b3a59b8328e02c163dc6dfd833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2265f7df0b8890acf7777a006ae4fd18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2265f7df0b8890acf7777a006ae4fd18"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PacketAckContainer</b> = <a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html">RingbufferBitset</a>&lt; PacketWindowAckCount &gt;</td></tr>
-<tr class="separator:a2265f7df0b8890acf7777a006ae4fd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a857447dce87e655c2bc302932862d18b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a857447dce87e655c2bc302932862d18b"></a>
-<a class="el" href="class_az_networking_1_1_timeout_queue.html">TimeoutQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeoutQueue</b></td></tr>
-<tr class="separator:a857447dce87e655c2bc302932862d18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7785376908d4f98129ceab4749fbccc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7785376908d4f98129ceab4749fbccc"></a>
-<a class="el" href="class_az_networking_1_1_sequence_generator.html">SequenceGenerator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sequenceGenerator</b></td></tr>
-<tr class="separator:af7785376908d4f98129ceab4749fbccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db797c11b572db3e81c2bb2483cdae6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3db797c11b572db3e81c2bb2483cdae6"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; SequenceId, PacketFragments &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_packetFragments</b></td></tr>
-<tr class="separator:a3db797c11b572db3e81c2bb2483cdae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a6d1eabfe060c2b1c4de119c5246d12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a6d1eabfe060c2b1c4de119c5246d12"></a>
-SequenceId&#160;</td><td class="memItemRight" valign="bottom"><b>m_latestReceivedFragmentSequence</b> = InvalidSequenceId</td></tr>
-<tr class="separator:a8a6d1eabfe060c2b1c4de119c5246d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d6b43a29f668700f7d95ef4874be3e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d6b43a29f668700f7d95ef4874be3e2"></a>
-<a class="el" href="class_az_networking_1_1_ringbuffer_bitset.html">PacketAckContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_deliveredFragments</b></td></tr>
-<tr class="separator:a6d6b43a29f668700f7d95ef4874be3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a2470bd253131d00abb050fe012f05c13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2470bd253131d00abb050fe012f05c13"></a>
-static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>PacketWindowAckCount</b> = 16384</td></tr>
-<tr class="separator:a2470bd253131d00abb050fe012f05c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for reconstructing packet chunks into the original unsegmented packet. </p>
@@ -173,7 +136,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

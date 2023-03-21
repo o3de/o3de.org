@@ -50,6 +50,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_graph_model_integration_1_1_editor_main_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GraphModelIntegration::EditorMainWindow Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -65,16 +67,141 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd6b80705a85466a0b2b904b1c850db7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd6b80705a85466a0b2b904b1c850db7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EditorMainWindow</b> (GraphCanvas::AssetEditorWindowConfig *config, QWidget *parent=nullptr)</td></tr>
 <tr class="separator:abd6b80705a85466a0b2b904b1c850db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aab49952587d4e68b3199be028a43709b"><td class="memItemLeft" align="right" valign="top">virtual GraphModel::GraphContextPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#aab49952587d4e68b3199be028a43709b">GetGraphContext</a> () const =0</td></tr>
+<tr class="separator:aab49952587d4e68b3199be028a43709b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afff71f9ccc6423704b3c93b08bb17f61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afff71f9ccc6423704b3c93b08bb17f61"></a>
+GraphModel::GraphPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#afff71f9ccc6423704b3c93b08bb17f61">GetGraphById</a> (GraphCanvas::GraphId graphId) const </td></tr>
+<tr class="memdesc:afff71f9ccc6423704b3c93b08bb17f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method for retrieving the graph associated with a graphId. <br/></td></tr>
+<tr class="separator:afff71f9ccc6423704b3c93b08bb17f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e99ff4fbb98d4ce6e0de38c3da51ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56e99ff4fbb98d4ce6e0de38c3da51ff"></a>
+GraphCanvas::GraphId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#a56e99ff4fbb98d4ce6e0de38c3da51ff">GetGraphId</a> (GraphModel::GraphPtr graph) const </td></tr>
+<tr class="memdesc:a56e99ff4fbb98d4ce6e0de38c3da51ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method for retrieving the graphId associated with a graph. <br/></td></tr>
+<tr class="separator:a56e99ff4fbb98d4ce6e0de38c3da51ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56710f979209658e1d06ba39d3b4a1bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56710f979209658e1d06ba39d3b4a1bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditorOpened</b> (GraphCanvas::EditorDockWidget *dockWidget) override</td></tr>
+<tr class="separator:a56710f979209658e1d06ba39d3b4a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399d188cd1ff839317b7ac671474ea74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a399d188cd1ff839317b7ac671474ea74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditorClosing</b> (GraphCanvas::EditorDockWidget *dockWidget) override</td></tr>
+<tr class="separator:a399d188cd1ff839317b7ac671474ea74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb955164a79b94b7e6664e63ad168972"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb955164a79b94b7e6664e63ad168972"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWrapperNodeActionWidgetClicked</b> (const AZ::EntityId &amp;wrapperNode, const QRect &amp;actionWidgetBoundingRect, const QPointF &amp;scenePoint, const QPoint &amp;screenPoint) override</td></tr>
+<tr class="separator:aeb955164a79b94b7e6664e63ad168972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9ca2d81a5657785be9494a3c0c8dbe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#abb9ca2d81a5657785be9494a3c0c8dbe">HandleWrapperNodeActionWidgetClicked</a> (GraphModel::NodePtr wrapperNode, [[maybe_unused]] const QRect &amp;actionWidgetBoundingRect, [[maybe_unused]] const QPointF &amp;scenePoint, [[maybe_unused]] const QPoint &amp;screenPoint)</td></tr>
+<tr class="separator:abb9ca2d81a5657785be9494a3c0c8dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a4bc96c6cdf98aa00d7786bd224d175b3"><td class="memItemLeft" align="right" valign="top">AZStd::unordered_map<br class="typebreak"/>
+&lt; GraphCanvas::GraphId, <br class="typebreak"/>
+GraphModel::GraphPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph_model_integration_1_1_editor_main_window.html#a4bc96c6cdf98aa00d7786bd224d175b3">m_graphs</a></td></tr>
+<tr class="separator:a4bc96c6cdf98aa00d7786bd224d175b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class extends the base GraphCanvas windowing framework to integrate GraphModel functionality into the generic windowing framework. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aab49952587d4e68b3199be028a43709b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual GraphModel::GraphContextPtr GraphModelIntegration::EditorMainWindow::GetGraphContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Subclasses must implement this method so that this class can create graphs on their behalf. </p>
+
+</div>
+</div>
+<a class="anchor" id="abb9ca2d81a5657785be9494a3c0c8dbe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void GraphModelIntegration::EditorMainWindow::HandleWrapperNodeActionWidgetClicked </td>
+          <td>(</td>
+          <td class="paramtype">GraphModel::NodePtr&#160;</td>
+          <td class="paramname"><em>wrapperNode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const QRect &amp;&#160;</td>
+          <td class="paramname"><em>actionWidgetBoundingRect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const QPointF &amp;&#160;</td>
+          <td class="paramname"><em>scenePoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const QPoint &amp;&#160;</td>
+          <td class="paramname"><em>screenPoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Client can override this to handle click events on a wrapper node's action widget using a GraphModel::NodePtr instead of the lower-level GraphCanvas::NodeId </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a4bc96c6cdf98aa00d7786bd224d175b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::unordered_map&lt;GraphCanvas::GraphId, GraphModel::GraphPtr&gt; GraphModelIntegration::EditorMainWindow::m_graphs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Keep track of the graphs we create on behalf of the client when new editor dock widgets are created. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/GraphModel/Code/Include/GraphModel/Integration/EditorMainWindow.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:41 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:21 for Open 3D Engine GraphModel Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

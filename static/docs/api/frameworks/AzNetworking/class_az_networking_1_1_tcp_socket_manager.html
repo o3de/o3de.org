@@ -51,8 +51,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_networking_1_1_tcp_socket_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzNetworking::TcpSocketManager Class Reference</div>  </div>
@@ -78,22 +76,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae321d6d00c4763b52ba8512fff587cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff047e1e2bf8f2de182760e60b440cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_socket_manager.html#a5ff047e1e2bf8f2de182760e60b440cc">ProcessEvents</a> (AZ::TimeMs maxBlockMs, const SocketEventCallback &amp;readCallback, const SocketEventCallback &amp;writeCallback)</td></tr>
 <tr class="separator:a5ff047e1e2bf8f2de182760e60b440cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a5d05564919867e259a81a76865d2b586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_socket_manager.html#a5d05564919867e259a81a76865d2b586">AddSocketHelper</a> (SocketFd socketFd)</td></tr>
-<tr class="separator:a5d05564919867e259a81a76865d2b586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84f5dd34b78b581bdf80654a427efab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_socket_manager.html#a84f5dd34b78b581bdf80654a427efab8">ClearSocketHelper</a> (SocketFd socketFd)</td></tr>
-<tr class="separator:a84f5dd34b78b581bdf80654a427efab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86634b2882c547039dfd184470a1ab8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86634b2882c547039dfd184470a1ab8a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_DISABLE_COPY_MOVE</b> (<a class="el" href="class_az_networking_1_1_tcp_socket_manager.html">TcpSocketManager</a>)</td></tr>
-<tr class="separator:a86634b2882c547039dfd184470a1ab8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a86809e7a074700284e76abfba2c4976d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86809e7a074700284e76abfba2c4976d"></a>
-AZStd::vector&lt; SocketFd &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_socketFds</b></td></tr>
-<tr class="separator:a86809e7a074700284e76abfba2c4976d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>internal helper implementation that manages basic details related to handling large numbers of TCP sockets efficiently. </p>
@@ -122,37 +104,6 @@ AZStd::vector&lt; SocketFd &gt;&#160;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
-<a class="anchor" id="a5d05564919867e259a81a76865d2b586"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzNetworking::TcpSocketManager::AddSocketHelper </td>
-          <td>(</td>
-          <td class="paramtype">SocketFd&#160;</td>
-          <td class="paramname"><em>socketFd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Internal helper for adding a socketFd to the socket manager </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">socketFd</td><td>the socket file descriptor to add </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="ae321d6d00c4763b52ba8512fff587cda"></a>
 <div class="memitem">
 <div class="memproto">
@@ -174,37 +125,6 @@ AZStd::vector&lt; SocketFd &gt;&#160;</td><td class="memItemRight" valign="botto
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true on success, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a84f5dd34b78b581bdf80654a427efab8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzNetworking::TcpSocketManager::ClearSocketHelper </td>
-          <td>(</td>
-          <td class="paramtype">SocketFd&#160;</td>
-          <td class="paramname"><em>socketFd</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Internal helper for removing a socketFd from the socket manager </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">socketFd</td><td>the socket file descriptor to remove </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -255,7 +175,7 @@ AZStd::vector&lt; SocketFd &gt;&#160;</td><td class="memItemRight" valign="botto
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:40 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

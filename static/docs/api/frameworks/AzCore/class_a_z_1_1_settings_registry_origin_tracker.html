@@ -56,9 +56,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_settings_registry_origin_tracker-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::SettingsRegistryOriginTracker Class Reference</div>  </div>
@@ -67,8 +64,6 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_origin_tracker_1_1_settings_notification_handler.html">SettingsNotificationHandler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_origin_tracker_1_1_settings_registry_origin.html">SettingsRegistryOrigin</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -106,38 +101,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ae8737c81f37b3706765e0408159e70d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5197c8e817d42c4802709ae91837e2de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#a5197c8e817d42c4802709ae91837e2de">VisitOrigins</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> key, const <a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#af8c9dd5ebd33cb2078e236a0580f94aa">OriginVisitorCallback</a> &amp;visitCallback) const </td></tr>
 <tr class="separator:a5197c8e817d42c4802709ae91837e2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:ac7af5762d3a0bcb4b9ebdc0a140b928e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7af5762d3a0bcb4b9ebdc0a140b928e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>SettingsRegistryOriginPrefixTree</b> = <a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html">AZ::Dom::DomPrefixTree</a>&lt; <a class="el" href="class_a_z_std_1_1deque.html">SettingsRegistryOriginStack</a> &gt;</td></tr>
-<tr class="separator:ac7af5762d3a0bcb4b9ebdc0a140b928e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a03018d18abb4d6c3c3eb95a22cb2b82e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03018d18abb4d6c3c3eb95a22cb2b82e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#a03018d18abb4d6c3c3eb95a22cb2b82e">AddOrigin</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> key, <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> originPath)</td></tr>
-<tr class="memdesc:a03018d18abb4d6c3c3eb95a22cb2b82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Afterwards push a new entry into the Origin Stack PrefixTree for the origin path. <br/></td></tr>
-<tr class="separator:a03018d18abb4d6c3c3eb95a22cb2b82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec38a413d18ede6992a5261db7d6c218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#aec38a413d18ede6992a5261db7d6c218">RemoveOrigin</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> key, <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a> originPath, bool recurseChildren=false)</td></tr>
-<tr class="separator:aec38a413d18ede6992a5261db7d6c218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2884d9c9234e8b9ce35dd421821087ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2884d9c9234e8b9ce35dd421821087ae"></a>
-<a class="el" href="class_a_z_1_1_settings_registry_interface.html">AZ::SettingsRegistryInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingsRegistry</b></td></tr>
-<tr class="separator:a2884d9c9234e8b9ce35dd421821087ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9001dbb44837b1ac6a6641f5174b7cba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9001dbb44837b1ac6a6641f5174b7cba"></a>
-AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRight" valign="bottom"><b>m_notifyHandler</b></td></tr>
-<tr class="separator:a9001dbb44837b1ac6a6641f5174b7cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa74b19c672ab3306901a1745ec27156a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa74b19c672ab3306901a1745ec27156a"></a>
-<a class="el" href="class_a_z_1_1_dom_1_1_dom_prefix_tree.html">SettingsRegistryOriginPrefixTree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#aa74b19c672ab3306901a1745ec27156a">m_settingsOriginPrefixTree</a></td></tr>
-<tr class="memdesc:aa74b19c672ab3306901a1745ec27156a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a DOM path for the setting to a stack of entries which contain the source file where the setting originates from and a patch that recreate the value within that file. <br/></td></tr>
-<tr class="separator:aa74b19c672ab3306901a1745ec27156a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a458438e27d11645ac137fc9286cf5f93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a458438e27d11645ac137fc9286cf5f93"></a>
-<a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#ae89fa87b36c65811ee307705aff303f1">TrackingFilterCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_origin_tracker.html#a458438e27d11645ac137fc9286cf5f93">m_trackingFilter</a></td></tr>
-<tr class="memdesc:a458438e27d11645ac137fc9286cf5f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack containing vectors of keys being added or modified while a file is being merged. <br/></td></tr>
-<tr class="separator:a458438e27d11645ac137fc9286cf5f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="af8c9dd5ebd33cb2078e236a0580f94aa"></a>
@@ -175,53 +138,6 @@ AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRi
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aec38a413d18ede6992a5261db7d6c218"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::SettingsRegistryOriginTracker::RemoveOrigin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">AZ::IO::PathView</a>&#160;</td>
-          <td class="paramname"><em>originPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>recurseChildren</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Looks up the settings key in the Origin Stack Prefix Tree dict and removes an entry with the origin path If after this opration the Origin Stack is empty, then prefix tree entry is removed </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">recurseChildren,If</td><td>true children entries from the key in the Prefix Tree will also be visited. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a27e0ce4205b4f65b5177df9564e17efe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +188,7 @@ AZ::SettingsRegistryInterface::NotifyEventHandler&#160;</td><td class="memItemRi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

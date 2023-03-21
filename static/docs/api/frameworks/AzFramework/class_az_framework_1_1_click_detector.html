@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_click_detector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::ClickDetector Class Reference</div>  </div>
@@ -97,46 +95,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a21d246bd98e66d00d558ebdce936138a">SetClickDownEventFn</a> (AZStd::function&lt; void()&gt; downEventFn)</td></tr>
 <tr class="memdesc:a21d246bd98e66d00d558ebdce936138a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customization point for when a potential click first begins. <br/></td></tr>
 <tr class="separator:a21d246bd98e66d00d558ebdce936138a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a563c92ab43190167f117ac2bb0434942"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a563c92ab43190167f117ac2bb0434942">DetectionState</a> { <a class="el" href="class_az_framework_1_1_click_detector.html#a563c92ab43190167f117ac2bb0434942a4da8b7eb2c3f2007cf8238334401ef51">DetectionState::Nil</a>, 
-<b>WaitingForMove</b>, 
-<a class="el" href="class_az_framework_1_1_click_detector.html#a563c92ab43190167f117ac2bb0434942a95bfdefaaf01553cbf21ccd942855c69">DetectionState::Moved</a>
- }</td></tr>
-<tr class="memdesc:a563c92ab43190167f117ac2bb0434942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal state of <a class="el" href="class_az_framework_1_1_click_detector.html">ClickDetector</a> based on incoming events.  <a href="class_az_framework_1_1_click_detector.html#a563c92ab43190167f117ac2bb0434942">More...</a><br/></td></tr>
-<tr class="separator:a563c92ab43190167f117ac2bb0434942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a272ad46a934fc7c0027215aa2642ecbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a272ad46a934fc7c0027215aa2642ecbd"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a272ad46a934fc7c0027215aa2642ecbd">m_moveAccumulator</a> = 0.0f</td></tr>
-<tr class="memdesc:a272ad46a934fc7c0027215aa2642ecbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">How far the mouse has moved after mouse down. <br/></td></tr>
-<tr class="separator:a272ad46a934fc7c0027215aa2642ecbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ca422b0ec06b42708bb2249a097e18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22ca422b0ec06b42708bb2249a097e18"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a22ca422b0ec06b42708bb2249a097e18">m_deadZone</a> = <a class="el" href="namespace_az_framework.html#a7b2540b3fbd36480122fcdb2fd6d8698">DefaultMouseMoveDeadZone</a></td></tr>
-<tr class="memdesc:a22ca422b0ec06b42708bb2249a097e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">How far to move before a click is cancelled (when Move will fire). <br/></td></tr>
-<tr class="separator:a22ca422b0ec06b42708bb2249a097e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d988c9bf3196d7abca923ae4238a07a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d988c9bf3196d7abca923ae4238a07a"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a4d988c9bf3196d7abca923ae4238a07a">m_doubleClickInterval</a> = 0.4f</td></tr>
-<tr class="memdesc:a4d988c9bf3196d7abca923ae4238a07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default double click interval, can be overridden. <br/></td></tr>
-<tr class="separator:a4d988c9bf3196d7abca923ae4238a07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a446ef76c28d884deb7fb123981e4b257"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_az_framework_1_1_click_detector.html#a563c92ab43190167f117ac2bb0434942">DetectionState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a446ef76c28d884deb7fb123981e4b257">m_detectionState</a></td></tr>
-<tr class="separator:a446ef76c28d884deb7fb123981e4b257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699585046cf7542307c800cc14fd04d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a699585046cf7542307c800cc14fd04d2"></a>
-AZStd::optional<br class="typebreak"/>
-&lt; AZStd::chrono::milliseconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a699585046cf7542307c800cc14fd04d2">m_tryBeginTime</a></td></tr>
-<tr class="memdesc:a699585046cf7542307c800cc14fd04d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mouse down time (happens each mouse down, helps with double click handling). <br/></td></tr>
-<tr class="separator:a699585046cf7542307c800cc14fd04d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c35b8e88db293d90a5118170f42a72b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c35b8e88db293d90a5118170f42a72b"></a>
-AZStd::function<br class="typebreak"/>
-&lt; AZStd::chrono::milliseconds()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a8c35b8e88db293d90a5118170f42a72b">m_timeNowFn</a></td></tr>
-<tr class="memdesc:a8c35b8e88db293d90a5118170f42a72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to query the current time. <br/></td></tr>
-<tr class="separator:a8c35b8e88db293d90a5118170f42a72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b7e508e5f9657b472d76f3ff27d398"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48b7e508e5f9657b472d76f3ff27d398"></a>
-AZStd::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a48b7e508e5f9657b472d76f3ff27d398">m_downEventFn</a></td></tr>
-<tr class="memdesc:a48b7e508e5f9657b472d76f3ff27d398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to fire when an initial click down event happens. <br/></td></tr>
-<tr class="separator:a48b7e508e5f9657b472d76f3ff27d398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class to help detect different types of mouse click (mouse down and up with no movement), mouse move (down and initial move after some threshold) and mouse release (mouse down with movement and then mouse up). </p>
@@ -198,37 +156,6 @@ AZStd::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom
 
 </div>
 </div>
-<a class="anchor" id="a563c92ab43190167f117ac2bb0434942"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_az_framework_1_1_click_detector.html#a563c92ab43190167f117ac2bb0434942">AzFramework::ClickDetector::DetectionState</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Internal state of <a class="el" href="class_az_framework_1_1_click_detector.html">ClickDetector</a> based on incoming events. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a563c92ab43190167f117ac2bb0434942a4da8b7eb2c3f2007cf8238334401ef51"></a>Nil</em>&nbsp;</td><td class="fielddoc">
-<p>Initial state. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a563c92ab43190167f117ac2bb0434942a95bfdefaaf01553cbf21ccd942855c69"></a>Moved</em>&nbsp;</td><td class="fielddoc">
-<p>Mouse down has happened but mouse hasn't yet moved. </p>
-<p>Mouse has moved, no longer will be counted as a click. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aba8687a1983d4bc0db0ece775c07443e"></a>
 <div class="memitem">
@@ -273,35 +200,13 @@ AZStd::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a446ef76c28d884deb7fb123981e4b257"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_az_framework_1_1_click_detector.html#a563c92ab43190167f117ac2bb0434942">DetectionState</a> AzFramework::ClickDetector::m_detectionState</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Internal state of <a class="el" href="class_az_framework_1_1_click_detector.html">ClickDetector</a>. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Viewport/ClickDetector.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

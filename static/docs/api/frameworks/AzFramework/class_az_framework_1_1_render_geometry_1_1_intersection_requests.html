@@ -56,7 +56,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_az_framework_1_1_render_geometry_1_1_intersection_requests-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::RenderGeometry::IntersectionRequests Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -67,16 +66,11 @@
 
 <p>Inherits EBusTraits.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_render_geometry_1_1_intersection_requests_1_1_intersection_requests_connection_policy.html">IntersectionRequestsConnectionPolicy</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a25b527a9a0e1fd39d84c01038606bb92"><td class="memTemplParams" colspan="2"><a class="anchor" id="a25b527a9a0e1fd39d84c01038606bb92"></a>
 template&lt;typename Bus &gt; </td></tr>
-<tr class="memitem:a25b527a9a0e1fd39d84c01038606bb92"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ConnectionPolicy</b> = <a class="el" href="struct_az_framework_1_1_render_geometry_1_1_intersection_requests_1_1_intersection_requests_connection_policy.html">IntersectionRequestsConnectionPolicy</a>&lt; Bus &gt;</td></tr>
+<tr class="memitem:a25b527a9a0e1fd39d84c01038606bb92"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ConnectionPolicy</b> = IntersectionRequestsConnectionPolicy&lt; Bus &gt;</td></tr>
 <tr class="separator:a25b527a9a0e1fd39d84c01038606bb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aac7ba5943e269d83d2528b815a8170"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5aac7ba5943e269d83d2528b815a8170"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>BusIdType</b> = <a class="el" href="struct_az_framework_1_1_render_geometry_1_1_entity_id_and_context.html">EntityIdAndContext</a></td></tr>
@@ -93,15 +87,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a9f6411d7a3a55c1b86fb059d2e04c2d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f6411d7a3a55c1b86fb059d2e04c2d7"></a>
 static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::ById</td></tr>
 <tr class="separator:a9f6411d7a3a55c1b86fb059d2e04c2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a6a9ca54f3ad716e095e0de4c729f645d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a9ca54f3ad716e095e0de4c729f645d"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>OnConnect</b> (const <a class="el" href="struct_az_framework_1_1_render_geometry_1_1_entity_id_and_context.html">EntityIdAndContext</a> &amp;entityAndContext)</td></tr>
-<tr class="separator:a6a9ca54f3ad716e095e0de4c729f645d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38866e0277c4d0a3839b5f566f3f615"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af38866e0277c4d0a3839b5f566f3f615"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDisconnect</b> (const <a class="el" href="struct_az_framework_1_1_render_geometry_1_1_entity_id_and_context.html">EntityIdAndContext</a> &amp;entityAndContext)</td></tr>
-<tr class="separator:af38866e0277c4d0a3839b5f566f3f615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for intersection requests. Implement this interface to make your component 'intersectable'. </p>
@@ -111,7 +96,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDisconnect</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

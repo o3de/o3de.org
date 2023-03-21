@@ -51,6 +51,8 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_gestures_1_1_i_recognizer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Gestures::IRecognizer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -66,6 +68,11 @@
 
 <p>Inherited by <a class="el" href="class_gestures_1_1_recognizer_continuous.html">Gestures::RecognizerContinuous</a>, and <a class="el" href="class_gestures_1_1_recognizer_discrete.html">Gestures::RecognizerDiscrete</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gestures_1_1_i_recognizer_1_1_screen_position.html">ScreenPosition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af320607b68699d1794cff8b834cf6678"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af320607b68699d1794cff8b834cf6678"></a>
@@ -96,10 +103,55 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ae572c5831479e3a483bebb75aca18196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88898ade3cdbc7bf96e8fc3ebcddad2e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gestures_1_1_i_recognizer.html#a88898ade3cdbc7bf96e8fc3ebcddad2e">OnReleasedEvent</a> (const AZ::Vector2 &amp;screenPositionPixels, uint32_t pointerIndex)=0</td></tr>
 <tr class="separator:a88898ade3cdbc7bf96e8fc3ebcddad2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad71cd908531d9794c05409bd2cf55b22"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gestures_1_1_i_recognizer.html#ad71cd908531d9794c05409bd2cf55b22">GetGesturePointerIndex</a> (const AzFramework::InputChannel &amp;inputChannel)</td></tr>
+<tr class="separator:ad71cd908531d9794c05409bd2cf55b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc57ed8ec5070ac622ca9b7508f0aca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gestures_1_1_i_recognizer.html#a2cc57ed8ec5070ac622ca9b7508f0aca">UpdateNormalizedPositionAndDeltaFromScreenPosition</a> (const AZ::Vector2 &amp;screenPositionPixels)</td></tr>
+<tr class="separator:a2cc57ed8ec5070ac622ca9b7508f0aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a0d3d0fe675b1a2c5366844c8c7deef5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d3d0fe675b1a2c5366844c8c7deef5b"></a>
+const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>INVALID_GESTURE_POINTER_INDEX</b> = static_cast&lt;uint32_t&gt;(-1)</td></tr>
+<tr class="separator:a0d3d0fe675b1a2c5366844c8c7deef5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all gesture recognizers. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad71cd908531d9794c05409bd2cf55b22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Gestures::IRecognizer::GetGesturePointerIndex </td>
+          <td>(</td>
+          <td class="paramtype">const AzFramework::InputChannel &amp;&#160;</td>
+          <td class="paramname"><em>inputChannel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the gesture pointer index associated with an input channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">inputChannel</td><td>The input channel to find the pointer index for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The gesture pointer index of the input channel, or INVALID_GESTURE_POINTER_INDEX. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ae572c5831479e3a483bebb75aca18196"></a>
 <div class="memitem">
 <div class="memproto">
@@ -235,13 +287,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a class="anchor" id="a2cc57ed8ec5070ac622ca9b7508f0aca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gestures::IRecognizer::UpdateNormalizedPositionAndDeltaFromScreenPosition </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector2 &amp;&#160;</td>
+          <td class="paramname"><em>screenPositionPixels</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Convenience function that converts back to a normalized position before calling through to the base AzFramework::InputChannel::PositionData2D::UpdateNormalizedPositionAndDelta </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">screenPositionPixels</td><td>The screen position (in pixels) of the input event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Gestures/Code/Include/Gestures/IGestureRecognizer.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:40 for Open 3D Engine Gestures Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:21 for Open 3D Engine Gestures Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

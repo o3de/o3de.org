@@ -54,8 +54,6 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_editor_default_selection-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::EditorDefaultSelection Class Reference</div>  </div>
@@ -69,227 +67,14 @@
 
 <p>Inherits AzToolsFramework::ViewportInteraction::InternalViewportSelectionRequests, Handler, and Handler.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_tools_framework_1_1_editor_default_selection_1_1_action_override_mapping.html">ActionOverrideMapping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mapping between passed <a class="el" href="struct_az_tools_framework_1_1_action_override.html">ActionOverride</a> (AddActionOverride) and allocated QAction.  <a href="struct_az_tools_framework_1_1_editor_default_selection_1_1_action_override_mapping.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acabdf09abe5b297f95ed3e5840fcf1ca"><td class="memItemLeft" align="right" valign="top">AZ_CLASS_ALLOCATOR_DECL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#acabdf09abe5b297f95ed3e5840fcf1ca">SetOverridePhantomWidget</a> (QWidget *phantomOverrideWidget)</td></tr>
 <tr class="separator:acabdf09abe5b297f95ed3e5840fcf1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a148645e16fa47048a5bc7299f542f9b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a148645e16fa47048a5bc7299f542f9b9">DisplayViewportSelection</a> (const AzFramework::ViewportInfo &amp;viewportInfo, AzFramework::DebugDisplayRequests &amp;debugDisplay) override</td></tr>
-<tr class="separator:a148645e16fa47048a5bc7299f542f9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3229f3f32187d074f29eff860c0d2e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#ac3229f3f32187d074f29eff860c0d2e4">DisplayViewportSelection2d</a> (const AzFramework::ViewportInfo &amp;viewportInfo, AzFramework::DebugDisplayRequests &amp;debugDisplay) override</td></tr>
-<tr class="separator:ac3229f3f32187d074f29eff860c0d2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67baff451cceae23c046b9bab91136cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67baff451cceae23c046b9bab91136cb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupActionOverrideHandler</b> (QWidget *parent) override</td></tr>
-<tr class="separator:a67baff451cceae23c046b9bab91136cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c330923a741f98c260815da2c56037f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c330923a741f98c260815da2c56037f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TeardownActionOverrideHandler</b> () override</td></tr>
-<tr class="separator:a7c330923a741f98c260815da2c56037f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a64bb9095045d0b89a1be1e646dbdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3a64bb9095045d0b89a1be1e646dbdf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddActionOverride</b> (const <a class="el" href="struct_az_tools_framework_1_1_action_override.html">ActionOverride</a> &amp;actionOverride) override</td></tr>
-<tr class="separator:ad3a64bb9095045d0b89a1be1e646dbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa80db13265d6b313eefb5229f1f03c9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa80db13265d6b313eefb5229f1f03c9e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveActionOverride</b> (AZ::Crc32 actionOverrideUri) override</td></tr>
-<tr class="separator:aa80db13265d6b313eefb5229f1f03c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a18191f9bb47015c9c3128fbe1f54f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a18191f9bb47015c9c3128fbe1f54f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearActionOverrides</b> () override</td></tr>
-<tr class="separator:a9a18191f9bb47015c9c3128fbe1f54f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a659cf8943e3791a78757aba7b35f5871"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a659cf8943e3791a78757aba7b35f5871"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginComponentMode</b> (const AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_component_mode_framework_1_1_entity_and_component_mode_builders.html">ComponentModeFramework::EntityAndComponentModeBuilders</a> &gt; &amp;entityAndComponentModeBuilders) override</td></tr>
-<tr class="separator:a659cf8943e3791a78757aba7b35f5871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93770bb02c58a241038023ca225e18e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93770bb02c58a241038023ca225e18e0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddComponentModes</b> (const <a class="el" href="struct_az_tools_framework_1_1_component_mode_framework_1_1_entity_and_component_mode_builders.html">ComponentModeFramework::EntityAndComponentModeBuilders</a> &amp;entityAndComponentModeBuilders) override</td></tr>
-<tr class="separator:a93770bb02c58a241038023ca225e18e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a71b75fcc3e0f8bd1823641c18504a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82a71b75fcc3e0f8bd1823641c18504a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EndComponentMode</b> () override</td></tr>
-<tr class="separator:a82a71b75fcc3e0f8bd1823641c18504a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b6c8d330ddddb834dc9443050fc1b34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b6c8d330ddddb834dc9443050fc1b34"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>InComponentMode</b> () override</td></tr>
-<tr class="separator:a3b6c8d330ddddb834dc9443050fc1b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63d3165211241d00384f4f6e3970b835"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63d3165211241d00384f4f6e3970b835"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Refresh</b> (const AZ::EntityComponentIdPair &amp;entityComponentIdPair) override</td></tr>
-<tr class="separator:a63d3165211241d00384f4f6e3970b835"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6eed5d119aca6dcabc8354ba8ce287"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef6eed5d119aca6dcabc8354ba8ce287"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddedToComponentMode</b> (const AZ::EntityComponentIdPair &amp;entityComponentIdPair, const AZ::Uuid &amp;componentType) override</td></tr>
-<tr class="separator:aef6eed5d119aca6dcabc8354ba8ce287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c94f5e6362ee94865a3615d8fcfbdaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c94f5e6362ee94865a3615d8fcfbdaa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddSelectedComponentModesOfType</b> (const AZ::Uuid &amp;componentType) override</td></tr>
-<tr class="separator:a6c94f5e6362ee94865a3615d8fcfbdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a026be92e7d99eff26817ce34373ae622"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a026be92e7d99eff26817ce34373ae622"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeComponentMode</b> (const AZ::Uuid &amp;componentType) override</td></tr>
-<tr class="separator:a026be92e7d99eff26817ce34373ae622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb14827f789aec9ee59fd677b860bbcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb14827f789aec9ee59fd677b860bbcf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SelectNextActiveComponentMode</b> () override</td></tr>
-<tr class="separator:aeb14827f789aec9ee59fd677b860bbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59f7cb21d5d8220aa30c2a92e443a4e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59f7cb21d5d8220aa30c2a92e443a4e2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SelectPreviousActiveComponentMode</b> () override</td></tr>
-<tr class="separator:a59f7cb21d5d8220aa30c2a92e443a4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3238f347c7256fb5fd16ac2001c2bcaa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3238f347c7256fb5fd16ac2001c2bcaa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SelectActiveComponentMode</b> (const AZ::Uuid &amp;componentType) override</td></tr>
-<tr class="separator:a3238f347c7256fb5fd16ac2001c2bcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d0a397a59a292ab92f18eec7c48da8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d0a397a59a292ab92f18eec7c48da8e"></a>
-AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveComponentMode</b> () override</td></tr>
-<tr class="separator:a2d0a397a59a292ab92f18eec7c48da8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452cb995ce21157f6f3caa2dc50df990"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a452cb995ce21157f6f3caa2dc50df990"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentModeInstantiated</b> (const AZ::EntityComponentIdPair &amp;entityComponentIdPair) override</td></tr>
-<tr class="separator:a452cb995ce21157f6f3caa2dc50df990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d817ce8e31ebe5e9b78b8a1e46ab8ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d817ce8e31ebe5e9b78b8a1e46ab8ef"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasMultipleComponentTypes</b> () override</td></tr>
-<tr class="separator:a0d817ce8e31ebe5e9b78b8a1e46ab8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa91751cf4ae22d0e03345ccf55d0e48b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa91751cf4ae22d0e03345ccf55d0e48b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshActions</b> () override</td></tr>
-<tr class="separator:aa91751cf4ae22d0e03345ccf55d0e48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb4421558026c0e3c13eb43c9e4eed75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb4421558026c0e3c13eb43c9e4eed75"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#acb4421558026c0e3c13eb43c9e4eed75">TransitionToComponentMode</a> ()</td></tr>
-<tr class="memdesc:acb4421558026c0e3c13eb43c9e4eed75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helpers to deal with moving in and out of ComponentMode. <br/></td></tr>
-<tr class="separator:acb4421558026c0e3c13eb43c9e4eed75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33f93467e54b1e9aaa2217c9c8acb9e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33f93467e54b1e9aaa2217c9c8acb9e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionFromComponentMode</b> ()</td></tr>
-<tr class="separator:a33f93467e54b1e9aaa2217c9c8acb9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d180fb9dc0d7481d235a278b05889df"><td class="memItemLeft" align="right" valign="top">QWidget &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a1d180fb9dc0d7481d235a278b05889df">PhantomWidget</a> ()</td></tr>
-<tr class="separator:a1d180fb9dc0d7481d235a278b05889df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a277cb60aae62e4cc6c1c91a4b2c42029"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a277cb60aae62e4cc6c1c91a4b2c42029"></a>
-QWidget&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a277cb60aae62e4cc6c1c91a4b2c42029">m_phantomWidget</a></td></tr>
-<tr class="memdesc:a277cb60aae62e4cc6c1c91a4b2c42029"><td class="mdescLeft">&#160;</td><td class="mdescRight">The phantom widget responsible for holding QActions while in ComponentMode. <br/></td></tr>
-<tr class="separator:a277cb60aae62e4cc6c1c91a4b2c42029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5469e8f54dec7daad0184e08746e2257"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5469e8f54dec7daad0184e08746e2257"></a>
-QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a5469e8f54dec7daad0184e08746e2257">m_phantomOverrideWidget</a> = nullptr</td></tr>
-<tr class="memdesc:a5469e8f54dec7daad0184e08746e2257"><td class="mdescLeft">&#160;</td><td class="mdescRight">It's possible to override the phantom widget in special circumstances (eg testing). <br/></td></tr>
-<tr class="separator:a5469e8f54dec7daad0184e08746e2257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3eb4c8aef05114720f9b2f4167879b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_collection.html">ComponentModeFramework::ComponentModeCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a6e3eb4c8aef05114720f9b2f4167879b">m_componentModeCollection</a></td></tr>
-<tr class="separator:a6e3eb4c8aef05114720f9b2f4167879b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada695ca0b1bbb881ba5f012b88dac84a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada695ca0b1bbb881ba5f012b88dac84a"></a>
-AZStd::unique_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection.html">EditorTransformComponentSelection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#ada695ca0b1bbb881ba5f012b88dac84a">m_transformComponentSelection</a> = nullptr</td></tr>
-<tr class="memdesc:ada695ca0b1bbb881ba5f012b88dac84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewport selection (responsible for manipulators and transform modifications). <br/></td></tr>
-<tr class="separator:ada695ca0b1bbb881ba5f012b88dac84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed4ebeb5106fc8a7929599b217b81e90"><td class="memItemLeft" align="right" valign="top">AZStd::vector<br class="typebreak"/>
-&lt; AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="struct_az_tools_framework_1_1_editor_default_selection_1_1_action_override_mapping.html">ActionOverrideMapping</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#aed4ebeb5106fc8a7929599b217b81e90">m_actions</a></td></tr>
-<tr class="separator:aed4ebeb5106fc8a7929599b217b81e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5649c262941af1d8cf7ad64022c39850"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5649c262941af1d8cf7ad64022c39850"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_manipulator_manager.html">AzToolsFramework::ManipulatorManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a5649c262941af1d8cf7ad64022c39850">m_manipulatorManager</a></td></tr>
-<tr class="memdesc:a5649c262941af1d8cf7ad64022c39850"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default manipulator manager. <br/></td></tr>
-<tr class="separator:a5649c262941af1d8cf7ad64022c39850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc07ae9b64e056c5fde0614cd18a3e56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#adc07ae9b64e056c5fde0614cd18a3e56">m_currentInteraction</a></td></tr>
-<tr class="separator:adc07ae9b64e056c5fde0614cd18a3e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a046a04775e40d8810f604ed4b3aaaf92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a046a04775e40d8810f604ed4b3aaaf92"></a>
-<a class="el" href="class_az_tools_framework_1_1_viewport_editor_mode_tracker_interface.html">ViewportEditorModeTrackerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a046a04775e40d8810f604ed4b3aaaf92">m_viewportEditorModeTracker</a> = nullptr</td></tr>
-<tr class="memdesc:a046a04775e40d8810f604ed4b3aaaf92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracker for activating/deactivating viewport editor modes. <br/></td></tr>
-<tr class="separator:a046a04775e40d8810f604ed4b3aaaf92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The default selection/input handler for the editor (includes handling ComponentMode). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a148645e16fa47048a5bc7299f542f9b9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::EditorDefaultSelection::DisplayViewportSelection </td>
-          <td>(</td>
-          <td class="paramtype">const AzFramework::ViewportInfo &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AzFramework::DebugDisplayRequests &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Display drawing in world space. <a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a148645e16fa47048a5bc7299f542f9b9">DisplayViewportSelection</a> is called from EditorInteractionSystemComponent::DisplayViewport. DisplayViewport exists on the AzFramework::ViewportDebugDisplayEventBus and is called from CRenderViewport. <a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a148645e16fa47048a5bc7299f542f9b9">DisplayViewportSelection</a> is called after CalculateVisibleEntityDatas on the <a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html">EditorVisibleEntityDataCache</a>, this ensures usage of the entity cache will be up to date (do not implement AzFramework::ViewportDebugDisplayEventBus directly if wishing to use the <a class="el" href="class_az_tools_framework_1_1_editor_visible_entity_data_cache.html">EditorVisibleEntityDataCache</a>). </p>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_display_notifications.html#a498bae195a882447d9656e15f709bbdc">AzToolsFramework::ViewportInteraction::ViewportDisplayNotifications</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac3229f3f32187d074f29eff860c0d2e4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::EditorDefaultSelection::DisplayViewportSelection2d </td>
-          <td>(</td>
-          <td class="paramtype">const AzFramework::ViewportInfo &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AzFramework::DebugDisplayRequests &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Display drawing in screen space. <a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#ac3229f3f32187d074f29eff860c0d2e4">DisplayViewportSelection2d</a> is called after <a class="el" href="class_az_tools_framework_1_1_editor_default_selection.html#a148645e16fa47048a5bc7299f542f9b9">DisplayViewportSelection</a> when the viewport has been configured to be orthographic in CRenderViewport. All screen space drawing can be performed here. </p>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_display_notifications.html#a51b4d01443bdb09a722dbf47a56a8828">AzToolsFramework::ViewportInteraction::ViewportDisplayNotifications</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1d180fb9dc0d7481d235a278b05889df"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QWidget&amp; AzToolsFramework::EditorDefaultSelection::PhantomWidget </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accessor used internally to refer to the phantom widget. This will either be the default widget or the override if non-null. </p>
-
-</div>
-</div>
 <a class="anchor" id="acabdf09abe5b297f95ed3e5840fcf1ca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -308,77 +93,13 @@ AZStd::shared_ptr<br class="typebreak"/>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aed4ebeb5106fc8a7929599b217b81e90"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::vector&lt;AZStd::shared_ptr&lt;<a class="el" href="struct_az_tools_framework_1_1_editor_default_selection_1_1_action_override_mapping.html">ActionOverrideMapping</a>&gt; &gt; AzToolsFramework::EditorDefaultSelection::m_actions</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Currently bound actions (corresponding to those set on the override widget). </p>
-
-</div>
-</div>
-<a class="anchor" id="a6e3eb4c8aef05114720f9b2f4167879b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_collection.html">ComponentModeFramework::ComponentModeCollection</a> AzToolsFramework::EditorDefaultSelection::m_componentModeCollection</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Handles all active ComponentMode types. </p>
-
-</div>
-</div>
-<a class="anchor" id="adc07ae9b64e056c5fde0614cd18a3e56"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> AzToolsFramework::EditorDefaultSelection::m_currentInteraction</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Current mouse interaction to be used for drawing manipulators. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ViewportSelection/EditorDefaultSelection.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

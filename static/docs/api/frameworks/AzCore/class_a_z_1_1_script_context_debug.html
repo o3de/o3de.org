@@ -58,9 +58,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_script_context_debug-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -208,77 +205,6 @@ Protected Attributes</h2></td></tr>
 friend&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptContextImpl</b></td></tr>
 <tr class="separator:ade92cfad3e8bfcf755b86ef212c19edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a99d1aca2d270008a6783407c2f2bf759"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99d1aca2d270008a6783407c2f2bf759"></a>
-typedef <a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a><br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">BreakpointId</a>, <a class="el" href="struct_a_z_1_1_script_context_debug_1_1_breakpoint.html">Breakpoint</a>, <br class="typebreak"/>
-<a class="el" href="struct_a_z_std_1_1hash.html">AZStd::hash</a>&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">BreakpointId</a> &gt;<br class="typebreak"/>
-, <a class="el" href="struct_a_z_std_1_1equal__to.html">AZStd::equal_to</a><br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_std_1_1basic__string.html">BreakpointId</a> &gt;<br class="typebreak"/>
-, <a class="el" href="class_a_z_1_1_a_z_std_alloc.html">OSStdAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BreakpointsMap</b></td></tr>
-<tr class="separator:a99d1aca2d270008a6783407c2f2bf759"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa41c00bfacfe8b9fb71ddd0a74681b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa41c00bfacfe8b9fb71ddd0a74681b8"></a>
-typedef <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; const <br class="typebreak"/>
-void *, <a class="el" href="class_a_z_1_1_a_z_std_alloc.html">OSStdAllocator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>VoidPtrArray</b></td></tr>
-<tr class="separator:aaa41c00bfacfe8b9fb71ddd0a74681b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ab69743fd8018be4dcbb8aec922f45635"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab69743fd8018be4dcbb8aec922f45635"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptContextDebug</b> (const <a class="el" href="class_a_z_1_1_script_context_debug.html">ScriptContextDebug</a> &amp;)</td></tr>
-<tr class="separator:ab69743fd8018be4dcbb8aec922f45635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af159c5ca69544012d889f9725c162fdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af159c5ca69544012d889f9725c162fdd"></a>
-<a class="el" href="class_a_z_1_1_script_context_debug.html">ScriptContextDebug</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_a_z_1_1_script_context_debug.html">ScriptContextDebug</a> &amp;)</td></tr>
-<tr class="separator:af159c5ca69544012d889f9725c162fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7d90568e6ff55395d1efcd5b2a209ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7d90568e6ff55395d1efcd5b2a209ea"></a>
-<a class="el" href="class_a_z_std_1_1basic__string.html">OSString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_script_context_debug.html#af7d90568e6ff55395d1efcd5b2a209ea">DbgValueToString</a> (int valueIndex)</td></tr>
-<tr class="memdesc:af7d90568e6ff55395d1efcd5b2a209ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a value (in the current value list - LUA stack in lua's case). <br/></td></tr>
-<tr class="separator:af7d90568e6ff55395d1efcd5b2a209ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e0a7ee5e0024ac90d894c2d681eb873"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e0a7ee5e0024ac90d894c2d681eb873"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReadValue</b> (<a class="el" href="struct_a_z_1_1_script_context_debug_1_1_debug_value.html">DebugValue</a> &amp;value, <a class="el" href="class_a_z_std_1_1vector.html">VoidPtrArray</a> &amp;tablesVisited, bool isReadOnly=false)</td></tr>
-<tr class="separator:a0e0a7ee5e0024ac90d894c2d681eb873"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ba5cc04a95b6834b5b313ba98b4071"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37ba5cc04a95b6834b5b313ba98b4071"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteValue</b> (const <a class="el" href="struct_a_z_1_1_script_context_debug_1_1_debug_value.html">DebugValue</a> &amp;value, const char *valueName, int localIndex, int tableIndex, int userDataStackIndex)</td></tr>
-<tr class="separator:a37ba5cc04a95b6834b5b313ba98b4071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae9174277250ce99858dad76bd69cfed0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9174277250ce99858dad76bd69cfed0"></a>
-lua_Debug *&#160;</td><td class="memItemRight" valign="bottom"><b>m_luaDebug</b></td></tr>
-<tr class="separator:ae9174277250ce99858dad76bd69cfed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82487f01e7145b15db8ec420b29673f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82487f01e7145b15db8ec420b29673f7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_script_context_debug.html#a82487f01e7145b15db8ec420b29673f7">m_currentStackLevel</a></td></tr>
-<tr class="memdesc:a82487f01e7145b15db8ec420b29673f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current stack level 0..N. <br/></td></tr>
-<tr class="separator:a82487f01e7145b15db8ec420b29673f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f5424dbaede82590d5147647c7c2fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4f5424dbaede82590d5147647c7c2fd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_script_context_debug.html#ae4f5424dbaede82590d5147647c7c2fd">m_stepStackLevel</a></td></tr>
-<tr class="memdesc:ae4f5424dbaede82590d5147647c7c2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">-1 if no step event, otherwise a stack level where we should stop. <br/></td></tr>
-<tr class="separator:ae4f5424dbaede82590d5147647c7c2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5882112d3a50024dace7978c0a3701"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae5882112d3a50024dace7978c0a3701"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">BreakpointsMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_breakpoints</b></td></tr>
-<tr class="separator:aae5882112d3a50024dace7978c0a3701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18006170e5f5dfdc8c878dff062ebfe2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18006170e5f5dfdc8c878dff062ebfe2"></a>
-<a class="el" href="class_a_z_std_1_1function.html">BreakpointCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_breakCallback</b></td></tr>
-<tr class="separator:a18006170e5f5dfdc8c878dff062ebfe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4078ae8ae7cfebd191ccf4a3841ee34a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4078ae8ae7cfebd191ccf4a3841ee34a"></a>
-<a class="el" href="class_a_z_std_1_1function.html">ProcessDebugCmdCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_processDebugCmdCallback</b></td></tr>
-<tr class="separator:a4078ae8ae7cfebd191ccf4a3841ee34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a087bd8b793d90528e9b8ceddcc1ffd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a087bd8b793d90528e9b8ceddcc1ffd"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">CallstackInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_callstack</b></td></tr>
-<tr class="separator:a0a087bd8b793d90528e9b8ceddcc1ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53a9bbbc4a4f149181c08fd872976e8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53a9bbbc4a4f149181c08fd872976e8f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_script_context_debug.html#a53a9bbbc4a4f149181c08fd872976e8f">m_isRecordCallstack</a></td></tr>
-<tr class="memdesc:a53a9bbbc4a4f149181c08fd872976e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we want to record the detailed callstack, otherwise false. <br/></td></tr>
-<tr class="separator:a53a9bbbc4a4f149181c08fd872976e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a942bfb2a5e86b5dced0ff9d18d59c0e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a942bfb2a5e86b5dced0ff9d18d59c0e5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_script_context_debug.html#a942bfb2a5e86b5dced0ff9d18d59c0e5">m_isRecordCodeCallstack</a></td></tr>
-<tr class="memdesc:a942bfb2a5e86b5dced0ff9d18d59c0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if we want to record the code callstack, otherwise false. (default is false as it can be slow on many platforms) <br/></td></tr>
-<tr class="separator:a942bfb2a5e86b5dced0ff9d18d59c0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1758770ce24d01332d02fcd7e7b2312b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1758770ce24d01332d02fcd7e7b2312b"></a>
-<a class="el" href="class_a_z_1_1_script_context.html">ScriptContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
-<tr class="separator:a1758770ce24d01332d02fcd7e7b2312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ad9910524c0d5c78d6c333d57bf03b2d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9910524c0d5c78d6c333d57bf03b2d0"></a>
@@ -361,7 +287,7 @@ const <a class="el" href="class_a_z_std_1_1vector.html">CallstackInfo</a> &amp;&
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

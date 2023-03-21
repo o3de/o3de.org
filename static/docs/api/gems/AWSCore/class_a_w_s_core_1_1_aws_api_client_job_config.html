@@ -51,6 +51,7 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_a_w_s_core_1_1_aws_api_client_job_config-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AWSCore::AwsApiClientJobConfig&lt; ClientType &gt; Class Template Reference</div>  </div>
@@ -102,6 +103,26 @@ AZ::JobContext *&#160;</td><td class="memItemRight" valign="bottom"><b>GetJobCon
 <tr class="separator:a1af590f28a1af268108a070a9a2067d3 inherit pub_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1184516938339f137895955187c1b3c inherit pub_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memItemLeft" align="right" valign="top">Aws::Client::ClientConfiguration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#aa1184516938339f137895955187c1b3c">GetClientConfiguration</a> () const </td></tr>
 <tr class="separator:aa1184516938339f137895955187c1b3c inherit pub_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab95fc979ce076dcfdde23504a502d96c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab95fc979ce076dcfdde23504a502d96c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_client_job_config.html#ab95fc979ce076dcfdde23504a502d96c">ApplySettings</a> () override</td></tr>
+<tr class="memdesc:ab95fc979ce076dcfdde23504a502d96c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies settings changes made after first use. <br/></td></tr>
+<tr class="separator:ab95fc979ce076dcfdde23504a502d96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b3271a570e63467e0b8a20f07d8951"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; ClientType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_client_job_config.html#a35b3271a570e63467e0b8a20f07d8951">CreateClient</a> () const </td></tr>
+<tr class="separator:a35b3271a570e63467e0b8a20f07d8951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_w_s_core_1_1_aws_api_job_config')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html">AWSCore::AwsApiJobConfig</a></td></tr>
+<tr class="memitem:a2b7c371559bdac6c710387d625e98819 inherit pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b7c371559bdac6c710387d625e98819"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#a2b7c371559bdac6c710387d625e98819">EnsureSettingsApplied</a> ()</td></tr>
+<tr class="memdesc:a2b7c371559bdac6c710387d625e98819 inherit pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that ApplySettings has been called. <br/></td></tr>
+<tr class="separator:a2b7c371559bdac6c710387d625e98819 inherit pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00fbae05364f15d47fbaf3882eb0ec37 inherit pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memTemplParams" colspan="2">template&lt;class ConfigType &gt; </td></tr>
+<tr class="memitem:a00fbae05364f15d47fbaf3882eb0ec37 inherit pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#a00fbae05364f15d47fbaf3882eb0ec37">Visit</a> (AZStd::function&lt; void(const ConfigType &amp;)&gt; visitor) const </td></tr>
+<tr class="separator:a00fbae05364f15d47fbaf3882eb0ec37 inherit pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f92e2fea70927187966bf81d6af940 inherit pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
+&lt; Aws::Auth::AWSCredentialsProvider &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#ae5f92e2fea70927187966bf81d6af940">GetCredentialsProvider</a> () const </td></tr>
+<tr class="separator:ae5f92e2fea70927187966bf81d6af940 inherit pro_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,6 +196,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a1f1086274d926cc2b247a24c932747e4 inherit pub_attribs_class_a_w_s_core_1_1_aws_api_job_config"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f1086274d926cc2b247a24c932747e4"></a>
 <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#acabc52a5ed9a47af20ad4344d762a640">Override</a>&lt; Aws::String &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>caFile</b></td></tr>
 <tr class="separator:a1f1086274d926cc2b247a24c932747e4 inherit pub_attribs_class_a_w_s_core_1_1_aws_api_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_class_a_w_s_core_1_1_aws_api_job_config"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_a_w_s_core_1_1_aws_api_job_config')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html">AWSCore::AwsApiJobConfig</a></td></tr>
+<tr class="memitem:a146ccddd3e441ddc28bf7247f6ba3353 inherit pro_static_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memTemplParams" colspan="2"><a class="anchor" id="a146ccddd3e441ddc28bf7247f6ba3353"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a146ccddd3e441ddc28bf7247f6ba3353 inherit pro_static_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#a146ccddd3e441ddc28bf7247f6ba3353">CheckAndSet</a> (const <a class="el" href="class_a_w_s_core_1_1_aws_api_job_config.html#acabc52a5ed9a47af20ad4344d762a640">Override</a>&lt; T &gt; &amp;src, T &amp;dst)</td></tr>
+<tr class="memdesc:a146ccddd3e441ddc28bf7247f6ba3353 inherit pro_static_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for applying Override typed members. <br/></td></tr>
+<tr class="separator:a146ccddd3e441ddc28bf7247f6ba3353 inherit pro_static_methods_class_a_w_s_core_1_1_aws_api_job_config"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class ClientType&gt;<br/>
@@ -227,6 +254,32 @@ template&lt;class ClientType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a35b3271a570e63467e0b8a20f07d8951"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ClientType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;ClientType&gt; <a class="el" href="class_a_w_s_core_1_1_aws_api_client_job_config.html">AWSCore::AwsApiClientJobConfig</a>&lt; ClientType &gt;::CreateClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a client configured using this object's settings. ClientType can be any of the AWS API service clients (e.g. LambdaClient, etc.). </p>
+
+</div>
+</div>
 <a class="anchor" id="a6656a25cecae581abd3d2fd49a4592ed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +314,7 @@ template&lt;class ClientType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:39 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:19 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

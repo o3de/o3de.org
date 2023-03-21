@@ -52,6 +52,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_script_canvas_1_1_contract-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::Contract Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -80,6 +81,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a58edb8f3b9f65b2d183fc214217a3528"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58edb8f3b9f65b2d183fc214217a3528"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *reflection)</td></tr>
 <tr class="separator:a58edb8f3b9f65b2d183fc214217a3528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a77ce0376f15cd02d878b4ca748c69082"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77ce0376f15cd02d878b4ca748c69082"></a>
+virtual AZ::Outcome&lt; void, <br class="typebreak"/>
+AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnEvaluate</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;sourceSlot, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;targetSlot) const =0</td></tr>
+<tr class="separator:a77ce0376f15cd02d878b4ca748c69082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1b16e486aa93b850d14a8bfbd1385e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d1b16e486aa93b850d14a8bfbd1385e"></a>
+virtual AZ::Outcome&lt; void, <br class="typebreak"/>
+AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnEvaluateForType</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;dataType) const </td></tr>
+<tr class="separator:a6d1b16e486aa93b850d14a8bfbd1385e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Core/Contract.h</li>
@@ -87,7 +99,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:45 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:25 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

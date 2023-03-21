@@ -55,8 +55,6 @@
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_selection_manipulator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::SelectionManipulator Class Reference</div>  </div>
@@ -233,55 +231,6 @@ static AZStd::shared_ptr<br class="typebreak"/>
 <tr class="memdesc:a5ecdf0052dd4e4bc6314628d38090f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Manipulator must only be created and managed through a shared_ptr. <br/></td></tr>
 <tr class="separator:a5ecdf0052dd4e4bc6314628d38090f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:abaf984500bb577874da65be53150f2e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaf984500bb577874da65be53150f2e8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#abaf984500bb577874da65be53150f2e8">SelectionManipulator</a> (const AZ::Transform &amp;worldFromLocal, const AZ::Vector3 &amp;nonUniformScale=AZ::Vector3::CreateOne())</td></tr>
-<tr class="memdesc:abaf984500bb577874da65be53150f2e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private constructor. <br/></td></tr>
-<tr class="separator:abaf984500bb577874da65be53150f2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad302fc2c83c31ff4e799a08764c143c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#ad302fc2c83c31ff4e799a08764c143c8">OnLeftMouseDownImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;interaction, float rayIntersectionDistance) override</td></tr>
-<tr class="separator:ad302fc2c83c31ff4e799a08764c143c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c00fbadc616174dfa544f2c3c0e8920"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c00fbadc616174dfa544f2c3c0e8920"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#a4c00fbadc616174dfa544f2c3c0e8920">OnLeftMouseUpImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;interaction) override</td></tr>
-<tr class="memdesc:a4c00fbadc616174dfa544f2c3c0e8920"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for OnLeftMouseUp. <br/></td></tr>
-<tr class="separator:a4c00fbadc616174dfa544f2c3c0e8920"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0ba4bd1ced9ec0606149c9d4d245b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#aa0ba4bd1ced9ec0606149c9d4d245b57">OnRightMouseDownImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;interaction, float rayIntersectionDistance) override</td></tr>
-<tr class="separator:aa0ba4bd1ced9ec0606149c9d4d245b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa23bf8a45b23033e37c0bf6c04fc396b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa23bf8a45b23033e37c0bf6c04fc396b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#aa23bf8a45b23033e37c0bf6c04fc396b">OnRightMouseUpImpl</a> (const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;interaction) override</td></tr>
-<tr class="memdesc:aa23bf8a45b23033e37c0bf6c04fc396b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for OnRightMouseUp. <br/></td></tr>
-<tr class="separator:aa23bf8a45b23033e37c0bf6c04fc396b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6bfe5ce0bcf6d1904a9d4c6a832234c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6bfe5ce0bcf6d1904a9d4c6a832234c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#ad6bfe5ce0bcf6d1904a9d4c6a832234c">InvalidateImpl</a> () override</td></tr>
-<tr class="memdesc:ad6bfe5ce0bcf6d1904a9d4c6a832234c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for Invalidate. <br/></td></tr>
-<tr class="separator:ad6bfe5ce0bcf6d1904a9d4c6a832234c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a948126fa74c19ad318c99c74e5a4f234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a948126fa74c19ad318c99c74e5a4f234"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#a948126fa74c19ad318c99c74e5a4f234">SetBoundsDirtyImpl</a> () override</td></tr>
-<tr class="memdesc:a948126fa74c19ad318c99c74e5a4f234"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation to override in a derived class for SetBoundsDirty. <br/></td></tr>
-<tr class="separator:a948126fa74c19ad318c99c74e5a4f234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a5a0578c594700f47ada9dd672b8ef49d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a0578c594700f47ada9dd672b8ef49d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_selected</b> = false</td></tr>
-<tr class="separator:a5a0578c594700f47ada9dd672b8ef49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2deac8f877424b9c6510d5f0f3539f57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2deac8f877424b9c6510d5f0f3539f57"></a>
-<a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#a3a63dddda75d1a60260f6849ed28292a">MouseActionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_onLeftMouseDownCallback</b> = nullptr</td></tr>
-<tr class="separator:a2deac8f877424b9c6510d5f0f3539f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa613be18e66b633eb33f967475a6e7fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa613be18e66b633eb33f967475a6e7fd"></a>
-<a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#a3a63dddda75d1a60260f6849ed28292a">MouseActionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_onLeftMouseUpCallback</b> = nullptr</td></tr>
-<tr class="separator:aa613be18e66b633eb33f967475a6e7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae471dcfaa17054826a0e5e3298e154f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae471dcfaa17054826a0e5e3298e154f6"></a>
-<a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#a3a63dddda75d1a60260f6849ed28292a">MouseActionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_onRightMouseDownCallback</b> = nullptr</td></tr>
-<tr class="separator:ae471dcfaa17054826a0e5e3298e154f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53cd632c09121bfeea86aeedc47724ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53cd632c09121bfeea86aeedc47724ac"></a>
-<a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#a3a63dddda75d1a60260f6849ed28292a">MouseActionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_onRightMouseUpCallback</b> = nullptr</td></tr>
-<tr class="separator:a53cd632c09121bfeea86aeedc47724ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9772fd9e77680ea0d08836855046151e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9772fd9e77680ea0d08836855046151e"></a>
-ManipulatorViews&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_selection_manipulator.html#a9772fd9e77680ea0d08836855046151e">m_manipulatorViews</a></td></tr>
-<tr class="memdesc:a9772fd9e77680ea0d08836855046151e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look of manipulator. <br/></td></tr>
-<tr class="separator:a9772fd9e77680ea0d08836855046151e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_class_az_tools_framework_1_1_base_manipulator"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_az_tools_framework_1_1_base_manipulator')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html">AzToolsFramework::BaseManipulator</a></td></tr>
@@ -332,88 +281,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad302fc2c83c31ff4e799a08764c143c8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::SelectionManipulator::OnLeftMouseDownImpl </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The implementation to override in a derived class for OnLeftMouseDown. Note: When implementing this function you must also call AttachLeftMouseDownImpl to ensure m_onLeftMouseDownImpl is set to OnLeftMouseDownImpl, otherwise it will not be called </p>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a10384e0b6f660de85dc8e3d814ae388a">AzToolsFramework::BaseManipulator</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa0ba4bd1ced9ec0606149c9d4d245b57"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::SelectionManipulator::OnRightMouseDownImpl </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The implementation to override in a derived class for OnRightMouseDown. Note: When implementing this function you must also call AttachRightMouseDownImpl to ensure m_onRightMouseDownImpl is set to OnRightMouseDownImpl, otherwise it will not be called </p>
-
-<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#a754509981cf8f356764c5064a63c1efb">AzToolsFramework::BaseManipulator</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Manipulators/SelectionManipulator.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

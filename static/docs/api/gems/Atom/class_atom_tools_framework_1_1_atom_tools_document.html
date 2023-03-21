@@ -53,6 +53,9 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_atom_tools_framework_1_1_atom_tools_document-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AtomToolsFramework::AtomToolsDocument Class Reference</div>  </div>
@@ -145,16 +148,165 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a540f91a0387a2b8564b7378f14f49685"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a540f91a0387a2b8564b7378f14f49685"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a540f91a0387a2b8564b7378f14f49685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a028032fb70ef2591693c1c042c6e44ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a028032fb70ef2591693c1c042c6e44ff"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>UndoRedoFunction</b> = AZStd::function&lt; void()&gt;</td></tr>
+<tr class="separator:a028032fb70ef2591693c1c042c6e44ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2145e10d824aae7f4b3a2e875b450f6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2145e10d824aae7f4b3a2e875b450f6c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>UndoRedoFunctionPair</b> = AZStd::pair&lt; UndoRedoFunction, UndoRedoFunction &gt;</td></tr>
+<tr class="separator:a2145e10d824aae7f4b3a2e875b450f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a41737af7c6cab647c1cc06f6f64925"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a41737af7c6cab647c1cc06f6f64925"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>UndoRedoHistory</b> = AZStd::vector&lt; UndoRedoFunctionPair &gt;</td></tr>
+<tr class="separator:a5a41737af7c6cab647c1cc06f6f64925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a87f3eb546eac718212b74bfa6c2dabf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87f3eb546eac718212b74bfa6c2dabf4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenSucceeded</b> ()</td></tr>
+<tr class="separator:a87f3eb546eac718212b74bfa6c2dabf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2c60f847d89d1677e16588b47b8062"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca2c60f847d89d1677e16588b47b8062"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>OpenFailed</b> ()</td></tr>
+<tr class="separator:aca2c60f847d89d1677e16588b47b8062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46db2d93533f0d0252e61e4ed8cee09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab46db2d93533f0d0252e61e4ed8cee09"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveSucceeded</b> ()</td></tr>
+<tr class="separator:ab46db2d93533f0d0252e61e4ed8cee09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf06c4ca3d4e798069dbbd893ddb03f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bf06c4ca3d4e798069dbbd893ddb03f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFailed</b> ()</td></tr>
+<tr class="separator:a1bf06c4ca3d4e798069dbbd893ddb03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae549f17e8a6f55d9c4f64a78fc521c3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#aae549f17e8a6f55d9c4f64a78fc521c3">ReopenRecordState</a> ()</td></tr>
+<tr class="separator:aae549f17e8a6f55d9c4f64a78fc521c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78829ca92b3d70489d0dff3216e665c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#ae78829ca92b3d70489d0dff3216e665c">ReopenRestoreState</a> ()</td></tr>
+<tr class="separator:ae78829ca92b3d70489d0dff3216e665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac313fcf249b2cfbbc8af104026532332"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac313fcf249b2cfbbc8af104026532332"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#ac313fcf249b2cfbbc8af104026532332">AddUndoRedoHistory</a> (const UndoRedoFunction &amp;undoCommand, const UndoRedoFunction &amp;redoCommand)</td></tr>
+<tr class="memdesc:ac313fcf249b2cfbbc8af104026532332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new undo redo command functions at the current position in the undo history. <br/></td></tr>
+<tr class="separator:ac313fcf249b2cfbbc8af104026532332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa23ed8dc66753974074b950ce1e9ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4aa23ed8dc66753974074b950ce1e9ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SourceFileChanged</b> (AZStd::string relativePath, AZStd::string scanFolder, AZ::Uuid sourceUUID) override</td></tr>
+<tr class="separator:a4aa23ed8dc66753974074b950ce1e9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae7b426b700b34c0a613a47c6c3f2628a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7b426b700b34c0a613a47c6c3f2628a"></a>
+const AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolId</b> = {}</td></tr>
+<tr class="separator:ae7b426b700b34c0a613a47c6c3f2628a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e386333895417fb82364800c18c01a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50e386333895417fb82364800c18c01a"></a>
+const <a class="el" href="struct_atom_tools_framework_1_1_document_type_info.html">DocumentTypeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_documentTypeInfo</b> = {}</td></tr>
+<tr class="separator:a50e386333895417fb82364800c18c01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7a0d08051aec243d9414a6f440851c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c7a0d08051aec243d9414a6f440851c"></a>
+const AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#a0c7a0d08051aec243d9414a6f440851c">m_id</a> = AZ::Uuid::CreateRandom()</td></tr>
+<tr class="memdesc:a0c7a0d08051aec243d9414a6f440851c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The unique id of this document, used for all bus notifications and requests. <br/></td></tr>
+<tr class="separator:a0c7a0d08051aec243d9414a6f440851c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2792d7aa6849f4731e27d47fef8b069"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2792d7aa6849f4731e27d47fef8b069"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#ae2792d7aa6849f4731e27d47fef8b069">m_absolutePath</a></td></tr>
+<tr class="memdesc:ae2792d7aa6849f4731e27d47fef8b069"><td class="mdescLeft">&#160;</td><td class="mdescRight">The absolute path to the document source file. <br/></td></tr>
+<tr class="separator:ae2792d7aa6849f4731e27d47fef8b069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04027ea1e2842b560f71ca8189ba8ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af04027ea1e2842b560f71ca8189ba8ae"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#af04027ea1e2842b560f71ca8189ba8ae">m_savePathNormalized</a></td></tr>
+<tr class="memdesc:af04027ea1e2842b560f71ca8189ba8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The normalized, absolute path where the document will be saved. <br/></td></tr>
+<tr class="separator:af04027ea1e2842b560f71ca8189ba8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b728a21151de99c87210db0eaaf90a"><td class="memItemLeft" align="right" valign="top">AZStd::unordered_set<br class="typebreak"/>
+&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#a58b728a21151de99c87210db0eaaf90a">m_sourceDependencies</a></td></tr>
+<tr class="separator:a58b728a21151de99c87210db0eaaf90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bfafe6608f05822d870ed2659c75dae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bfafe6608f05822d870ed2659c75dae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html#a6bfafe6608f05822d870ed2659c75dae">m_ignoreSourceFileChangeToSelf</a> = false</td></tr>
+<tr class="memdesc:a6bfafe6608f05822d870ed2659c75dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this flag is true then the next source file change notification for this document will be ignored. <br/></td></tr>
+<tr class="separator:a6bfafe6608f05822d870ed2659c75dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb0d957501a0bca14cf6c23d776fff2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7eb0d957501a0bca14cf6c23d776fff2"></a>
+UndoRedoHistory&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoHistory</b></td></tr>
+<tr class="separator:a7eb0d957501a0bca14cf6c23d776fff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccedcf9946ed6121923850dbdf6d009"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ccedcf9946ed6121923850dbdf6d009"></a>
+UndoRedoHistory&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoHistoryBeforeReopen</b></td></tr>
+<tr class="separator:a3ccedcf9946ed6121923850dbdf6d009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b73e041aab2f29725d751a2c7e12c34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b73e041aab2f29725d751a2c7e12c34"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoHistoryIndex</b> = {}</td></tr>
+<tr class="separator:a4b73e041aab2f29725d751a2c7e12c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1e4bf31f3b5aa5083e4eb7f6b6d928"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d1e4bf31f3b5aa5083e4eb7f6b6d928"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoHistoryIndexBeforeReopen</b> = {}</td></tr>
+<tr class="separator:a8d1e4bf31f3b5aa5083e4eb7f6b6d928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_atom_tools_framework_1_1_atom_tools_document.html">AtomToolsDocument</a> is intended to be used as a base class for a tools' concrete document types. It implements most of the basic functionality expected by AtomToolsDocumentRequestBus, validating file paths, file types, providing support for undo, redo, and other operations. A derived class should override functions to build document type info, populate object info, load, save, track undo and redo data specific to that document type. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aae549f17e8a6f55d9c4f64a78fc521c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AtomToolsFramework::AtomToolsDocument::ReopenRecordState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Record state that needs to be restored after a document is reopened. This can be overridden to record additional data. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae78829ca92b3d70489d0dff3216e665c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AtomToolsFramework::AtomToolsDocument::ReopenRestoreState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Restore state that was recorded prior to document being reloaded. This can be overridden to restore additional data. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a58b728a21151de99c87210db0eaaf90a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::unordered_set&lt;AZStd::string&gt; AtomToolsFramework::AtomToolsDocument::m_sourceDependencies</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This contains absolute paths of other source files that affect this document. If any of the source files in this container are modified, the document system is notified to reload this document. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/Tools/AtomToolsFramework/Code/Include/AtomToolsFramework/Document/AtomToolsDocument.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

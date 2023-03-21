@@ -54,10 +54,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Prefab::PrefabIntegrationManager Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -134,151 +130,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac4a301d46dea579878f227f43f6e801b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4a301d46dea579878f227f43f6e801b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:ac4a301d46dea579878f227f43f6e801b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a468d8d2fd1f62f3863fb39df64f4f6e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a468d8d2fd1f62f3863fb39df64f4f6e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRootPrefabInstanceLoaded</b> () override</td></tr>
-<tr class="separator:a468d8d2fd1f62f3863fb39df64f4f6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0299041414882da768c970b3bccc9c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0299041414882da768c970b3bccc9c4f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabTemplateDirtyFlagUpdated</b> (TemplateId templateId, bool status) override</td></tr>
-<tr class="separator:a0299041414882da768c970b3bccc9c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9f9ad800cf2b06cff929ebeccfccbe5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9f9ad800cf2b06cff929ebeccfccbe5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPrefabInstancePropagationEnd</b> () override</td></tr>
-<tr class="separator:ae9f9ad800cf2b06cff929ebeccfccbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a887b5358c25792855a43d80f735cf037"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a887b5358c25792855a43d80f735cf037"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanCreatePrefabWithCurrentSelection</b> (const AzToolsFramework::EntityIdList &amp;selectedEntities)</td></tr>
-<tr class="separator:a887b5358c25792855a43d80f735cf037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a322829644e841b73718036b638f08167"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a322829644e841b73718036b638f08167"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanDetachPrefabWithCurrentSelection</b> (const AzToolsFramework::EntityIdList &amp;selectedEntities)</td></tr>
-<tr class="separator:a322829644e841b73718036b638f08167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3da10e2f5e416f2a44e85f3e1b5c0143"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3da10e2f5e416f2a44e85f3e1b5c0143"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanInstantiatePrefabWithCurrentSelection</b> (const AzToolsFramework::EntityIdList &amp;selectedEntities)</td></tr>
-<tr class="separator:a3da10e2f5e416f2a44e85f3e1b5c0143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f812feac2d4d452f5691a8d549c008"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0f812feac2d4d452f5691a8d549c008"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanSaveUnsavedPrefabChangedInCurrentSelection</b> (const AzToolsFramework::EntityIdList &amp;selectedEntities)</td></tr>
-<tr class="separator:ae0f812feac2d4d452f5691a8d549c008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af943cefe4b82c93baa31b82febfb3581"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af943cefe4b82c93baa31b82febfb3581"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_CreatePrefab</b> (AzToolsFramework::EntityIdList selectedEntities)</td></tr>
-<tr class="separator:af943cefe4b82c93baa31b82febfb3581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade032bc6e1024902b341dd1b9fc883d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade032bc6e1024902b341dd1b9fc883d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_InstantiatePrefab</b> ()</td></tr>
-<tr class="separator:ade032bc6e1024902b341dd1b9fc883d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc01ed3cac20b60b4316b88ccff2b198"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc01ed3cac20b60b4316b88ccff2b198"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_InstantiateProceduralPrefab</b> ()</td></tr>
-<tr class="separator:afc01ed3cac20b60b4316b88ccff2b198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a944d7b349b51dac5d5b93895c0e9d4e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a944d7b349b51dac5d5b93895c0e9d4e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_ClosePrefab</b> ()</td></tr>
-<tr class="separator:a944d7b349b51dac5d5b93895c0e9d4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a2b87a08beec8a60656ac04f3901ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93a2b87a08beec8a60656ac04f3901ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_EditPrefab</b> (AZ::EntityId containerEntity)</td></tr>
-<tr class="separator:a93a2b87a08beec8a60656ac04f3901ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab674fe3097e90d8c6f7b4289b7e5fe9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab674fe3097e90d8c6f7b4289b7e5fe9f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_SavePrefab</b> (AZ::EntityId containerEntity)</td></tr>
-<tr class="separator:ab674fe3097e90d8c6f7b4289b7e5fe9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a179cc26bde2547446d9af84f98a49cfc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a179cc26bde2547446d9af84f98a49cfc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_ClosePrefabInstance</b> (AZ::EntityId containerEntity)</td></tr>
-<tr class="separator:a179cc26bde2547446d9af84f98a49cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef21937b8d27954d242fa4cf83588eb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef21937b8d27954d242fa4cf83588eb8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_OpenPrefabInstance</b> (AZ::EntityId containerEntity)</td></tr>
-<tr class="separator:aef21937b8d27954d242fa4cf83588eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75ab75d6891049bc875b6c0d48d52641"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75ab75d6891049bc875b6c0d48d52641"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_Duplicate</b> ()</td></tr>
-<tr class="separator:a75ab75d6891049bc875b6c0d48d52641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0834419f14d8be69df427f3ac72470e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0834419f14d8be69df427f3ac72470e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_DeleteSelected</b> ()</td></tr>
-<tr class="separator:a0834419f14d8be69df427f3ac72470e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f692989e8edbf27d09b585660439ba0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f692989e8edbf27d09b585660439ba0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_DetachPrefab</b> (AZ::EntityId containerEntity)</td></tr>
-<tr class="separator:a1f692989e8edbf27d09b585660439ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae20440ea19680678c5256db71e28dd90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae20440ea19680678c5256db71e28dd90"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ContextMenu_RevertOverrides</b> (AZ::EntityId entityId)</td></tr>
-<tr class="separator:ae20440ea19680678c5256db71e28dd90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae781fba34181becc24914acba02cd8ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae781fba34181becc24914acba02cd8ce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeShortcuts</b> ()</td></tr>
-<tr class="separator:ae781fba34181becc24914acba02cd8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a919cc2e8382b8d9579ac02c5278738ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a919cc2e8382b8d9579ac02c5278738ad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UninitializeShortcuts</b> ()</td></tr>
-<tr class="separator:a919cc2e8382b8d9579ac02c5278738ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a3a1821f9f000987885d00f81d8d978ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a1821f9f000987885d00f81d8d978ed"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GatherAllReferencedEntitiesAndCompare</b> (const EntityIdSet &amp;entities, EntityIdSet &amp;entitiesAndReferencedEntities, bool &amp;hasExternalReferences)</td></tr>
-<tr class="separator:a3a1821f9f000987885d00f81d8d978ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe4c7116b9a6c5f127640d25bdf77e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fe4c7116b9a6c5f127640d25bdf77e2"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GatherAllReferencedEntities</b> (EntityIdSet &amp;entitiesWithReferences, AZ::SerializeContext &amp;serializeContext)</td></tr>
-<tr class="separator:a0fe4c7116b9a6c5f127640d25bdf77e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bce803a08066949251fe5a8007b2708"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bce803a08066949251fe5a8007b2708"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>QueryAndPruneMissingExternalReferences</b> (EntityIdSet &amp;entities, EntityIdSet &amp;selectedAndReferencedEntities, bool &amp;useReferencedEntities, bool defaultMoveExternalRefs=false)</td></tr>
-<tr class="separator:a0bce803a08066949251fe5a8007b2708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a6d10f8bc2c360568c7f49144a2697"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63a6d10f8bc2c360568c7f49144a2697"></a>
-static AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetSliceFlags</b> (const AZ::Edit::ElementData *editData, const AZ::Edit::ClassData *classData)</td></tr>
-<tr class="separator:a63a6d10f8bc2c360568c7f49144a2697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aaa0da48876abcb81ce7eb9bf00809c30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa0da48876abcb81ce7eb9bf00809c30"></a>
-<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_save_handler.html">PrefabSaveHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabSaveHandler</b></td></tr>
-<tr class="separator:aaa0da48876abcb81ce7eb9bf00809c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f61a96ee967c413f0e93823c60c4ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4f61a96ee967c413f0e93823c60c4ae"></a>
-<a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html">LevelRootUiHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_levelRootUiHandler</b></td></tr>
-<tr class="separator:ac4f61a96ee967c413f0e93823c60c4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a428828a3d31f5c714b7062e6e5e38862"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a428828a3d31f5c714b7062e6e5e38862"></a>
-<a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html">PrefabUiHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabUiHandler</b></td></tr>
-<tr class="separator:a428828a3d31f5c714b7062e6e5e38862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9ddb743935973ea27d7d4010a61ab32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9ddb743935973ea27d7d4010a61ab32"></a>
-<a class="el" href="class_az_tools_framework_1_1_procedural_prefab_ui_handler.html">ProceduralPrefabUiHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_proceduralPrefabUiHandler</b></td></tr>
-<tr class="separator:ad9ddb743935973ea27d7d4010a61ab32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3118a332dac0301d1641f714137758"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb3118a332dac0301d1641f714137758"></a>
-<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_procedural_prefab_read_only_handler.html">ProceduralPrefabReadOnlyHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_proceduralPrefabReadOnlyHandler</b></td></tr>
-<tr class="separator:acb3118a332dac0301d1641f714137758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d31032a839647d051d5d621281e986c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d31032a839647d051d5d621281e986c"></a>
-AZStd::vector<br class="typebreak"/>
-&lt; AZStd::unique_ptr&lt; QAction &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_actions</b></td></tr>
-<tr class="separator:a3d31032a839647d051d5d621281e986c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca4f492f8298f4688ae54759f9c54d7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca4f492f8298f4688ae54759f9c54d7c"></a>
-<a class="el" href="class_az_tools_framework_1_1_action_manager_interface.html">ActionManagerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_actionManagerInterface</b> = nullptr</td></tr>
-<tr class="separator:aca4f492f8298f4688ae54759f9c54d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd09591f9544f58953cbd52a32b4711a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd09591f9544f58953cbd52a32b4711a"></a>
-<a class="el" href="class_az_tools_framework_1_1_menu_manager_interface.html">MenuManagerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_menuManagerInterface</b> = nullptr</td></tr>
-<tr class="separator:afd09591f9544f58953cbd52a32b4711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f6757acc942dd47f5f0ab19a5467d28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f6757acc942dd47f5f0ab19a5467d28"></a>
-<a class="el" href="class_az_tools_framework_1_1_hot_key_manager_interface.html">HotKeyManagerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_hotKeyManagerInterface</b> = nullptr</td></tr>
-<tr class="separator:a5f6757acc942dd47f5f0ab19a5467d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa03d5beda9dc6c074bb2e442bf618493"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa03d5beda9dc6c074bb2e442bf618493"></a>
-<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_override_public_interface.html">PrefabOverridePublicInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_prefabOverridePublicInterface</b> = nullptr</td></tr>
-<tr class="separator:aa03d5beda9dc6c074bb2e442bf618493"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11b81e591f834dd6a5c8f31be7aed742"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11b81e591f834dd6a5c8f31be7aed742"></a>
-<a class="el" href="class_az_tools_framework_1_1_read_only_entity_public_interface.html">ReadOnlyEntityPublicInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_readOnlyEntityPublicInterface</b> = nullptr</td></tr>
-<tr class="separator:a11b81e591f834dd6a5c8f31be7aed742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcf309230f307f599e8d3eb666625490"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcf309230f307f599e8d3eb666625490"></a>
-<a class="el" href="class_az_tools_framework_1_1_tool_bar_manager_interface.html">ToolBarManagerInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolBarManagerInterface</b> = nullptr</td></tr>
-<tr class="separator:adcf309230f307f599e8d3eb666625490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:aafb45e0dc10618d709dd276220a1261d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafb45e0dc10618d709dd276220a1261d"></a>
-static AzFramework::EntityContextId&#160;</td><td class="memItemRight" valign="bottom"><b>s_editorEntityContextId</b></td></tr>
-<tr class="separator:aafb45e0dc10618d709dd276220a1261d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b4da90a578daaf86395dc84626c9b9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b4da90a578daaf86395dc84626c9b9d"></a>
-static <a class="el" href="class_az_tools_framework_1_1_container_entity_interface.html">ContainerEntityInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_containerEntityInterface</b></td></tr>
-<tr class="separator:a1b4da90a578daaf86395dc84626c9b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1862e036d8c602a686b220e15a92a01e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1862e036d8c602a686b220e15a92a01e"></a>
-static <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_interface.html">EditorEntityUiInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_editorEntityUiInterface</b></td></tr>
-<tr class="separator:a1862e036d8c602a686b220e15a92a01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d776c8a9105e0a2a1167b1f4fdebb8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d776c8a9105e0a2a1167b1f4fdebb8d"></a>
-static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html">PrefabFocusInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_prefabFocusInterface</b></td></tr>
-<tr class="separator:a0d776c8a9105e0a2a1167b1f4fdebb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a740c4f61cb2c3b6a4e8a5b4f9c49ae64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a740c4f61cb2c3b6a4e8a5b4f9c49ae64"></a>
-static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_focus_public_interface.html">PrefabFocusPublicInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_prefabFocusPublicInterface</b></td></tr>
-<tr class="separator:a740c4f61cb2c3b6a4e8a5b4f9c49ae64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e4e11e9ba6e54b7845691c60dc71d96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e4e11e9ba6e54b7845691c60dc71d96"></a>
-static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html">PrefabLoaderInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_prefabLoaderInterface</b></td></tr>
-<tr class="separator:a6e4e11e9ba6e54b7845691c60dc71d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af90c8a75cd7d5057c105adb78841c398"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af90c8a75cd7d5057c105adb78841c398"></a>
-static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">PrefabPublicInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_prefabPublicInterface</b></td></tr>
-<tr class="separator:af90c8a75cd7d5057c105adb78841c398"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a57579e1a39569be34e13fef76c73aa08"></a>
@@ -365,7 +216,7 @@ static <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:05 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

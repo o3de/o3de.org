@@ -53,8 +53,6 @@
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_qt_components_1_1_palette_card_collection-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::PaletteCardCollection Class Reference</div>  </div>
@@ -134,47 +132,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>canMoveDown</b> (QSha
 <tr class="memitem:ae89811f24f3ef72e4738ff37d38facdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae89811f24f3ef72e4738ff37d38facdd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setCardContentMargins</b> (const QMargins &amp;margins)</td></tr>
 <tr class="separator:ae89811f24f3ef72e4738ff37d38facdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aaaf4bb265d177a3e5caf251f57a8cfe1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaf4bb265d177a3e5caf251f57a8cfe1"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>uniquePaletteName</b> (QSharedPointer&lt; <a class="el" href="class_az_qt_components_1_1_palette_card.html">PaletteCard</a> &gt; card, const QString &amp;name) const </td></tr>
-<tr class="separator:aaaf4bb265d177a3e5caf251f57a8cfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e227a1fcdefdd2d68c06c8e83be4d56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e227a1fcdefdd2d68c06c8e83be4d56"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paletteCardDestroyed</b> (QObject *obj)</td></tr>
-<tr class="separator:a1e227a1fcdefdd2d68c06c8e83be4d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a3bc7664a9fcdb71ed5a9ba7cec666207"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bc7664a9fcdb71ed5a9ba7cec666207"></a>
-Internal::ColorController *&#160;</td><td class="memItemRight" valign="bottom"><b>m_colorController</b></td></tr>
-<tr class="separator:a3bc7664a9fcdb71ed5a9ba7cec666207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aa026c18416dbc5eac40c9ddfa446b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aa026c18416dbc5eac40c9ddfa446b6"></a>
-QUndoStack *&#160;</td><td class="memItemRight" valign="bottom"><b>m_undoStack</b></td></tr>
-<tr class="separator:a0aa026c18416dbc5eac40c9ddfa446b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8bd1bef5b0728eb88610ba3fbb1e1f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8bd1bef5b0728eb88610ba3fbb1e1f7"></a>
-QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>m_layout</b></td></tr>
-<tr class="separator:aa8bd1bef5b0728eb88610ba3fbb1e1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa225847ca6722da16307b3c34aab651d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa225847ca6722da16307b3c34aab651d"></a>
-AZ_PUSH_DISABLE_DLL_EXPORT_MEMBER_WARNING <br class="typebreak"/>
-QVector&lt; QSharedPointer<br class="typebreak"/>
-&lt; <a class="el" href="class_az_qt_components_1_1_palette_card.html">PaletteCard</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_paletteCards</b></td></tr>
-<tr class="separator:aa225847ca6722da16307b3c34aab651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3082836f3b0e37bc7a1f7a27bc558c45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3082836f3b0e37bc7a1f7a27bc558c45"></a>
-QSize&#160;</td><td class="memItemRight" valign="bottom"><b>m_swatchSize</b></td></tr>
-<tr class="separator:a3082836f3b0e37bc7a1f7a27bc558c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62781e8cba6be07e7d6bf9827bf90ada"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62781e8cba6be07e7d6bf9827bf90ada"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_gammaEnabled</b> = false</td></tr>
-<tr class="separator:a62781e8cba6be07e7d6bf9827bf90ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1239dd72045658a4fd267dd4056bee6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1239dd72045658a4fd267dd4056bee6f"></a>
-qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_gamma</b> = 1.0</td></tr>
-<tr class="separator:a1239dd72045658a4fd267dd4056bee6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2c408c51dc6a46128ee6433e70cff43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2c408c51dc6a46128ee6433e70cff43"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_paletteWidth</b> = 276</td></tr>
-<tr class="separator:ad2c408c51dc6a46128ee6433e70cff43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a46f5430928f9d8a5b30cdb795195ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a46f5430928f9d8a5b30cdb795195ec"></a>
-QSet&lt; QObject * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_registeredPaletteCards</b></td></tr>
-<tr class="separator:a0a46f5430928f9d8a5b30cdb795195ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets/ColorPicker/PaletteCardCollection.h</li>
@@ -182,7 +139,7 @@ QSet&lt; QObject * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:01 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

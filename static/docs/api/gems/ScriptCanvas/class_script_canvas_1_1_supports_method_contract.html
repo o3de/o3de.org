@@ -52,6 +52,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_script_canvas_1_1_supports_method_contract-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::SupportsMethodContract Class Reference</div>  </div>
@@ -96,6 +98,21 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 <tr class="memitem:a58edb8f3b9f65b2d183fc214217a3528 inherit pub_static_methods_class_script_canvas_1_1_contract"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58edb8f3b9f65b2d183fc214217a3528"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *reflection)</td></tr>
 <tr class="separator:a58edb8f3b9f65b2d183fc214217a3528 inherit pub_static_methods_class_script_canvas_1_1_contract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8c5f56ad567ed79d99ea8a6b15bff48d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c5f56ad567ed79d99ea8a6b15bff48d"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnEvaluate</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;sourceSlot, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;targetSlot) const override</td></tr>
+<tr class="separator:a8c5f56ad567ed79d99ea8a6b15bff48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeef6ed0588582dad68de89f05df7d7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeef6ed0588582dad68de89f05df7d7a"></a>
+AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnEvaluateForType</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;dataType) const override</td></tr>
+<tr class="separator:afeef6ed0588582dad68de89f05df7d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a5415db8cf004eb4ab8300f1910064dbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5415db8cf004eb4ab8300f1910064dbd"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_methodName</b></td></tr>
+<tr class="separator:a5415db8cf004eb4ab8300f1910064dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contracts that verifies if the specified BehaviorContext method name is supported by a data type. This can be used to only allow slot connections if the underlying type is able to call the specified method. For example, container types may support the "Insert" method, while most native or BC types would not. </p>
@@ -105,7 +122,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:45 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:25 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

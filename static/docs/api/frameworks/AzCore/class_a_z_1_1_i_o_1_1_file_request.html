@@ -57,9 +57,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_file_request-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -201,56 +198,6 @@ static constexpr <br class="typebreak"/>
 AZStd::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>s_noDeadlineTime</b> = AZStd::chrono::steady_clock::time_point::max()</td></tr>
 <tr class="separator:a46c77c125d7d82418e85078180b2d6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aa70e79c90e54c853368352155bd9a3ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa70e79c90e54c853368352155bd9a3ee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FileRequest</b> (Usage usage=Usage::Internal)</td></tr>
-<tr class="separator:aa70e79c90e54c853368352155bd9a3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aa98eeeec76d49600f1923558113f42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aa98eeeec76d49600f1923558113f42"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
-<tr class="separator:a2aa98eeeec76d49600f1923558113f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d0a46381cb8c08e9380a358167e417"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23d0a46381cb8c08e9380a358167e417"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOptionalParent</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *parent)</td></tr>
-<tr class="separator:a23d0a46381cb8c08e9380a358167e417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a6a943b9e31802e37fd50e95371b2767a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a943b9e31802e37fd50e95371b2767a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCompletionPlaceholder</b> (const <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> &amp;)</td></tr>
-<tr class="separator:a6a943b9e31802e37fd50e95371b2767a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a5197344fd38c825c032d6b9bd172e8fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5197344fd38c825c032d6b9bd172e8fd"></a>
-<a class="el" href="class_a_z_std_1_1variant.html">CommandVariant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#a5197344fd38c825c032d6b9bd172e8fd">m_command</a></td></tr>
-<tr class="memdesc:a5197344fd38c825c032d6b9bd172e8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command and parameters for the request. <br/></td></tr>
-<tr class="separator:a5197344fd38c825c032d6b9bd172e8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeffe33accacb4cf7a22db82628e6eb88"><td class="memItemLeft" align="right" valign="top">AZStd::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#aeffe33accacb4cf7a22db82628e6eb88">m_estimatedCompletion</a></td></tr>
-<tr class="separator:aeffe33accacb4cf7a22db82628e6eb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5382c260a7486e1ebdb59df02492f629"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#a5382c260a7486e1ebdb59df02492f629">m_parent</a> { nullptr }</td></tr>
-<tr class="separator:a5382c260a7486e1ebdb59df02492f629"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a837a1eb1fea381e4075047dbf1a86d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a837a1eb1fea381e4075047dbf1a86d"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#a5a837a1eb1fea381e4075047dbf1a86d">m_pendingId</a> { 0 }</td></tr>
-<tr class="memdesc:a5a837a1eb1fea381e4075047dbf1a86d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id assigned when the request is added to the pending queue. <br/></td></tr>
-<tr class="separator:a5a837a1eb1fea381e4075047dbf1a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abae0552436424fca21675593786683d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_std_1_1function.html">OnCompletionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#abae0552436424fca21675593786683d2">m_onCompletion</a></td></tr>
-<tr class="separator:abae0552436424fca21675593786683d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54375b8bc268630c5300cc2a872b085c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54375b8bc268630c5300cc2a872b085c"></a>
-AZStd::atomic<br class="typebreak"/>
-&lt; IStreamerTypes::RequestStatus &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#a54375b8bc268630c5300cc2a872b085c">m_status</a> { IStreamerTypes::RequestStatus::Pending }</td></tr>
-<tr class="memdesc:a54375b8bc268630c5300cc2a872b085c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of the request. <br/></td></tr>
-<tr class="separator:a54375b8bc268630c5300cc2a872b085c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf602ee72b3134d192ef00352c579782"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf602ee72b3134d192ef00352c579782"></a>
-u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#acf602ee72b3134d192ef00352c579782">m_dependencies</a> { 0 }</td></tr>
-<tr class="memdesc:acf602ee72b3134d192ef00352c579782"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of dependent file request that need to complete before this one is done. <br/></td></tr>
-<tr class="separator:acf602ee72b3134d192ef00352c579782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91f7c269ee68835e3ed15af7c73dd709"><td class="memItemLeft" align="right" valign="top">Usage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#a91f7c269ee68835e3ed15af7c73dd709">m_usage</a> { Usage::Internal }</td></tr>
-<tr class="separator:a91f7c269ee68835e3ed15af7c73dd709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d06899ef1f7cd4bea9e6871ba6cedf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7d06899ef1f7cd4bea9e6871ba6cedf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html#aa7d06899ef1f7cd4bea9e6871ba6cedf">m_inRecycleBin</a> { false }</td></tr>
-<tr class="memdesc:aa7d06899ef1f7cd4bea9e6871ba6cedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this request is currently in a recycle bin. This allows detecting double deletes. <br/></td></tr>
-<tr class="separator:aa7d06899ef1f7cd4bea9e6871ba6cedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a446505c33e2d44b6d9f34fbff840e6ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a446505c33e2d44b6d9f34fbff840e6ce"></a>
@@ -294,91 +241,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalFileRequest<
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aeffe33accacb4cf7a22db82628e6eb88"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZStd::chrono::steady_clock::time_point AZ::IO::FileRequest::m_estimatedCompletion</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Estimated time this request will complete. This is an estimation and depends on many factors which can cause it to change drastically from moment to moment. </p>
-
-</div>
-</div>
-<a class="anchor" id="abae0552436424fca21675593786683d2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_z_std_1_1function.html">OnCompletionCallback</a> AZ::IO::FileRequest::m_onCompletion</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Called once the request has completed. This will always be called from the <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">Streamer</a> thread and thread safety is the responsibility of called function. When assigning a lambda avoid capturing a FileRequestPtr by value as this will cause a circular reference which causes the FileRequestPtr to never be released and causes a memory leak. This call will block the main <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html">Streamer</a> thread until it returns so callbacks should be kept short. If a longer running task is needed consider using a job to do the work. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5382c260a7486e1ebdb59df02492f629"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a>* AZ::IO::FileRequest::m_parent { nullptr }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The file request that has a dependency on this one. This can be null if there are no other request depending on this one to complete. </p>
-
-</div>
-</div>
-<a class="anchor" id="a91f7c269ee68835e3ed15af7c73dd709"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Usage AZ::IO::FileRequest::m_usage { Usage::Internal }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Internal request. If this is true the request is created inside the streaming stack and never leaves it. If true it will automatically be maintained by the scheduler, if false than it's up to the owner to recycle this request. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/Framework/AzCore/AzCore/IO/Streamer/FileRequest.h</li>
 <li>Code/Framework/AzCore/AzCore/IO/Streamer/FileRequest.inl</li>
@@ -386,7 +248,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ExternalFileRequest<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

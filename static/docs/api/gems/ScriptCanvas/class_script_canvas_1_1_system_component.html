@@ -52,6 +52,7 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_script_canvas_1_1_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::SystemComponent Class Reference</div>  </div>
@@ -105,6 +106,56 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredSer
 <tr class="memitem:a08dda77bd1f98c3e30867a0d245ab174"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08dda77bd1f98c3e30867a0d245ab174"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;dependent)</td></tr>
 <tr class="separator:a08dda77bd1f98c3e30867a0d245ab174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a89f145cfd499d0c41ba3c5dffa0a81f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89f145cfd499d0c41ba3c5dffa0a81f3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAnyScriptInterpreted</b> () const </td></tr>
+<tr class="separator:a89f145cfd499d0c41ba3c5dffa0a81f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d85701e2bfb9806676e33cc9714818"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2d85701e2bfb9806676e33cc9714818"></a>
+AZStd::pair<br class="typebreak"/>
+&lt; DataRegistry::Createability, <br class="typebreak"/>
+<a class="el" href="struct_script_canvas_1_1_type_properties.html">TypeProperties</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCreatibility</b> (AZ::SerializeContext *serializeContext, AZ::BehaviorClass *behaviorClass)</td></tr>
+<tr class="separator:ac2d85701e2bfb9806676e33cc9714818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658309989b20abfca64683eb02d64cc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a658309989b20abfca64683eb02d64cc5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsScriptUnitTestingInProgress</b> () override</td></tr>
+<tr class="separator:a658309989b20abfca64683eb02d64cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113de081f7c8dd17abfa15c205803485"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a113de081f7c8dd17abfa15c205803485"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkScriptUnitTestBegin</b> () override</td></tr>
+<tr class="separator:a113de081f7c8dd17abfa15c205803485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8f941239c4f4b1220dedd7e7c2f525"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd8f941239c4f4b1220dedd7e7c2f525"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkScriptUnitTestEnd</b> () override</td></tr>
+<tr class="separator:afd8f941239c4f4b1220dedd7e7c2f525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9378508b4e7d6292aa1763756dd92597"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9378508b4e7d6292aa1763756dd92597"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEngineComponentsOnEntity</b> (AZ::Entity *entity) override</td></tr>
+<tr class="separator:a9378508b4e7d6292aa1763756dd92597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3ee97daec8192ef5deb88e1fbae54d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a3ee97daec8192ef5deb88e1fbae54d"></a>
+<a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGraphOnEntity</b> (AZ::Entity *entity) override</td></tr>
+<tr class="separator:a9a3ee97daec8192ef5deb88e1fbae54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be8b0e059c4d50024488e1442c41fc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1be8b0e059c4d50024488e1442c41fc3"></a>
+<a class="el" href="class_script_canvas_1_1_graph.html">ScriptCanvas::Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>MakeGraph</b> () override</td></tr>
+<tr class="separator:a1be8b0e059c4d50024488e1442c41fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a6bdfd000b3555f071e8aa76ca91e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7a6bdfd000b3555f071e8aa76ca91e6"></a>
+ScriptCanvasId&#160;</td><td class="memItemRight" valign="bottom"><b>FindScriptCanvasId</b> (AZ::Entity *graphEntity) override</td></tr>
+<tr class="separator:ae7a6bdfd000b3555f071e8aa76ca91e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60cb41277f1e80ec846632a2f351f8a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60cb41277f1e80ec846632a2f351f8a0"></a>
+<a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNode</b> (const AZ::EntityId &amp;, const AZ::Uuid &amp;) override</td></tr>
+<tr class="separator:a60cb41277f1e80ec846632a2f351f8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9884b5df0751caad49f805e47253abe8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9884b5df0751caad49f805e47253abe8"></a>
+<a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNodeOnEntity</b> (const AZ::EntityId &amp;entityId, ScriptCanvasId scriptCanvasId, const AZ::Uuid &amp;nodeType) override</td></tr>
+<tr class="separator:a9884b5df0751caad49f805e47253abe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cac3ac57f095b45d76542be58f18bd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cac3ac57f095b45d76542be58f18bd4"></a>
+<a class="el" href="struct_script_canvas_1_1_system_component_configuration.html">SystemComponentConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSystemComponentConfiguration</b> () override</td></tr>
+<tr class="separator:a8cac3ac57f095b45d76542be58f18bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb4de2f090cd421798f727f6b15ded0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cb4de2f090cd421798f727f6b15ded0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInterpretedBuildConfiguration</b> (BuildConfiguration config) override</td></tr>
+<tr class="separator:a5cb4de2f090cd421798f727f6b15ded0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47725721a2f761a525813ec1b6881f4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47725721a2f761a525813ec1b6881f4e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAddClass</b> (const char *className, AZ::BehaviorClass *behaviorClass) override</td></tr>
+<tr class="separator:a47725721a2f761a525813ec1b6881f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afb6a4068a00d38bf22f438efd9e73f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4afb6a4068a00d38bf22f438efd9e73f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRemoveClass</b> (const char *className, AZ::BehaviorClass *behaviorClass) override</td></tr>
+<tr class="separator:a4afb6a4068a00d38bf22f438efd9e73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/SystemComponent.h</li>
@@ -112,7 +163,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentSe
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:45 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:25 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

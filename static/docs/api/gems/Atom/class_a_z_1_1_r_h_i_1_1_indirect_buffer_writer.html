@@ -52,6 +52,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RHI::IndirectBufferWriter Class Reference</div>  </div>
@@ -115,6 +117,40 @@ const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#a40cab6a10612d7fdf473957d9f5b8d9d">use_count</a> ()</td></tr>
 <tr class="memdesc:a40cab6a10612d7fdf473957d9f5b8d9d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current use count of the object. <br/></td></tr>
 <tr class="separator:a40cab6a10612d7fdf473957d9f5b8d9d inherit pub_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0649ba68eb532208fa9e511441ca85ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0649ba68eb532208fa9e511441ca85ba"></a>
+uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTargetMemory</b> () const </td></tr>
+<tr class="separator:a0649ba68eb532208fa9e511441ca85ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
+<tr class="memitem:a955994ad257e9d52191e1a52afe61a62 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a955994ad257e9d52191e1a52afe61a62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ref</b> () const </td></tr>
+<tr class="separator:a955994ad257e9d52191e1a52afe61a62 inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79593e4d781972fa270f4940cead50f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#af79593e4d781972fa270f4940cead50f">release</a> () const </td></tr>
+<tr class="separator:af79593e4d781972fa270f4940cead50f inherit pro_methods_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9df67f9736f8f23d46bff799d9d7df55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9df67f9736f8f23d46bff799d9d7df55"></a>
+<a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html">Buffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_buffer</b> = 0</td></tr>
+<tr class="separator:a9df67f9736f8f23d46bff799d9d7df55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76acd61f9e4b139a0816e058feba2dc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76acd61f9e4b139a0816e058feba2dc3"></a>
+const <a class="el" href="class_a_z_1_1_r_h_i_1_1_indirect_buffer_signature.html">IndirectBufferSignature</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_signature</b> = nullptr</td></tr>
+<tr class="separator:a76acd61f9e4b139a0816e058feba2dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4363af8c40a576e7629b4676e992e232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4363af8c40a576e7629b4676e992e232"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxSequences</b> = 0</td></tr>
+<tr class="separator:a4363af8c40a576e7629b4676e992e232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4291c40b712dbfde10bbcb16b341023d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4291c40b712dbfde10bbcb16b341023d"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_sequenceStride</b> = 0</td></tr>
+<tr class="separator:a4291c40b712dbfde10bbcb16b341023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5154113391e252744893ccac08d5ea6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5154113391e252744893ccac08d5ea6f"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_bufferOffset</b> = 0</td></tr>
+<tr class="separator:a5154113391e252744893ccac08d5ea6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_h_i_1_1_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html">AZ::RHI::Object</a></td></tr>
+<tr class="memitem:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2285f323a24b84e7b5ad2249438059b8"></a>
+AZStd::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>m_useCount</b> = 0</td></tr>
+<tr class="separator:a2285f323a24b84e7b5ad2249438059b8 inherit pro_attribs_class_a_z_1_1_r_h_i_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html">IndirectBufferWriter</a> is a helper class to write indirect commands to a buffer or a memory location in a platform independent way. Different APIs may have different layouts for the arguments of an indirect command. This class provides a secure and simple way to write the commands without worrying about API differences.</p>
@@ -464,7 +500,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:37 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:17 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

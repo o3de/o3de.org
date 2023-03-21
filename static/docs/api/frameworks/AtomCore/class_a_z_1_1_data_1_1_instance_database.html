@@ -51,10 +51,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_1_1_data_1_1_instance_database-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Data::InstanceDatabase&lt; Type &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -98,56 +94,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> ()
 <tr class="memitem:a187d6bbcd92857188ca33e0bc41d8d3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a187d6bbcd92857188ca33e0bc41d8d3b"></a>
 static <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">InstanceDatabase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
 <tr class="separator:a187d6bbcd92857188ca33e0bc41d8d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a988b2ef2bb94f349c321410d031a632c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a988b2ef2bb94f349c321410d031a632c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceDatabase</b> (const AssetType &amp;assetType)</td></tr>
-<tr class="separator:a988b2ef2bb94f349c321410d031a632c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a5f7e16fc0f755e0c3017287546a74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20a5f7e16fc0f755e0c3017287546a74"></a>
-Data::Asset&lt; Data::AssetData &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadAsset</b> (const Data::Asset&lt; AssetData &gt; &amp;asset) const </td></tr>
-<tr class="separator:a20a5f7e16fc0f755e0c3017287546a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b6772aa915a1103d86845b9fb00fa9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b6772aa915a1103d86845b9fb00fa9b"></a>
-Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EmplaceInstance</b> (const <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> &amp;id, const Data::Asset&lt; AssetData &gt; &amp;asset, const AZStd::any *param)</td></tr>
-<tr class="separator:a7b6772aa915a1103d86845b9fb00fa9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae37b2471601ef689c4e64980a5a6197e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae37b2471601ef689c4e64980a5a6197e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseInstance</b> (<a class="el" href="class_a_z_1_1_data_1_1_instance_data.html">InstanceData</a> *instance, const <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> &amp;instanceId) override</td></tr>
-<tr class="separator:ae37b2471601ef689c4e64980a5a6197e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3d7018bd8ec85a527ea7f554cfcc17a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3d7018bd8ec85a527ea7f554cfcc17a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateSameAsset</b> (<a class="el" href="class_a_z_1_1_data_1_1_instance_data.html">InstanceData</a> *instance, const Data::Asset&lt; AssetData &gt; &amp;asset) const </td></tr>
-<tr class="separator:af3d7018bd8ec85a527ea7f554cfcc17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a083a58adc3a502acfbc7e7030a8db9a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a083a58adc3a502acfbc7e7030a8db9a0"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnvironmentName</b> ()</td></tr>
-<tr class="separator:a083a58adc3a502acfbc7e7030a8db9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a56d16d44c5edfbfb90a1fdf079afda98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56d16d44c5edfbfb90a1fdf079afda98"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_checkAssetIds</b> = true</td></tr>
-<tr class="separator:a56d16d44c5edfbfb90a1fdf079afda98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea724ddd126a85bfc2e7aaa03e3dffd4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea724ddd126a85bfc2e7aaa03e3dffd4"></a>
-<a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_instanceHandler</b></td></tr>
-<tr class="separator:aea724ddd126a85bfc2e7aaa03e3dffd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58d75ffeea63b9e1f1105a760128ef58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58d75ffeea63b9e1f1105a760128ef58"></a>
-AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_databaseMutex</b></td></tr>
-<tr class="separator:a58d75ffeea63b9e1f1105a760128ef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301ba0fc0bd9589ea5e2935c1a5e721a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a301ba0fc0bd9589ea5e2935c1a5e721a"></a>
-AZStd::unordered_map<br class="typebreak"/>
-&lt; <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a>, Type * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_database</b></td></tr>
-<tr class="separator:a301ba0fc0bd9589ea5e2935c1a5e721a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5072e96ff7d7dff30fa954719c9d4f6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5072e96ff7d7dff30fa954719c9d4f6c"></a>
-AssetType&#160;</td><td class="memItemRight" valign="bottom"><b>m_baseAssetType</b></td></tr>
-<tr class="separator:a5072e96ff7d7dff30fa954719c9d4f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a228a502fbc99bb8256fa64750e787a3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a228a502fbc99bb8256fa64750e787a3a"></a>
-static EnvironmentVariable<br class="typebreak"/>
-&lt; <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">InstanceDatabase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ms_instance</b> = nullptr</td></tr>
-<tr class="separator:a228a502fbc99bb8256fa64750e787a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -355,7 +301,7 @@ template&lt;typename Type &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:51 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:14 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

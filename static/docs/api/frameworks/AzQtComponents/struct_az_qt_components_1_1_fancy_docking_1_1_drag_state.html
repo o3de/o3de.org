@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -118,10 +125,13 @@ QRect&#160;</td><td class="memItemRight" valign="bottom"><b>m_placeholder</b></t
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:41 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_az_qt_components.html">AzQtComponents</a></li><li class="navelem"><a class="el" href="class_az_qt_components_1_1_fancy_docking.html">FancyDocking</a></li><li class="navelem"><a class="el" href="struct_az_qt_components_1_1_fancy_docking_1_1_drag_state.html">DragState</a></li>
+    <li class="footer">Generated on Mon Mar 20 2023 23:37:13 for Open 3D Engine AzQtComponents API Reference by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
 </body>
 </html>

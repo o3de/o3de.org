@@ -55,9 +55,6 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_1_1_logger_system_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::LoggerSystemComponent Class Reference</div>  </div>
@@ -158,57 +155,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 <tr class="memitem:a1962d7e7d3ec65a44e594ff0f1571aec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1962d7e7d3ec65a44e594ff0f1571aec"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (<a class="el" href="class_a_z_1_1_component_descriptor.html#a95be5e6648ced486647d532279b054c8">AZ::ComponentDescriptor::DependencyArrayType</a> &amp;incompatible)</td></tr>
 <tr class="separator:a1962d7e7d3ec65a44e594ff0f1571aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:acc92e6e8fca0d1a5aa7b882c6da8eb30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc92e6e8fca0d1a5aa7b882c6da8eb30"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableLogHelper</b> (AZ::HashValue32 a_HashValue)</td></tr>
-<tr class="separator:acc92e6e8fca0d1a5aa7b882c6da8eb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494e324551c09c172079b21b6f8e3acf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a494e324551c09c172079b21b6f8e3acf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableLogHelper</b> (AZ::HashValue32 a_HashValue)</td></tr>
-<tr class="separator:a494e324551c09c172079b21b6f8e3acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e37cdff89668e8bc42a2b6365cd18f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e37cdff89668e8bc42a2b6365cd18f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsTagEnabledHelper</b> (AZ::HashValue32 a_HashValue)</td></tr>
-<tr class="separator:ab5e37cdff89668e8bc42a2b6365cd18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6433be8ffeacbce7b7e53b7bd3755be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6433be8ffeacbce7b7e53b7bd3755be"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CONSOLEFUNC</b> (<a class="el" href="class_a_z_1_1_logger_system_component.html">LoggerSystemComponent</a>, <a class="el" href="class_a_z_1_1_logger_system_component.html#afe6fc1639f4a2e6f7f3d96eb2ac5b71f">SetLevel</a>, AZ::ConsoleFunctorFlags::Null,&quot;Sets the Logger log level&quot;)</td></tr>
-<tr class="separator:ac6433be8ffeacbce7b7e53b7bd3755be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a488dd575ce2c7a2c04400d3dc7cdad6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a488dd575ce2c7a2c04400d3dc7cdad6b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CONSOLEFUNC</b> (<a class="el" href="class_a_z_1_1_logger_system_component.html">LoggerSystemComponent</a>, EnableLog, AZ::ConsoleFunctorFlags::Null,&quot;Enables conditional logs with the provided tag&quot;)</td></tr>
-<tr class="separator:a488dd575ce2c7a2c04400d3dc7cdad6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada35990e7107fa36fec7cea24979b6db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada35990e7107fa36fec7cea24979b6db"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CONSOLEFUNC</b> (<a class="el" href="class_a_z_1_1_logger_system_component.html">LoggerSystemComponent</a>, DisableLog, AZ::ConsoleFunctorFlags::Null,&quot;Disables conditional logs with the provided tag&quot;)</td></tr>
-<tr class="separator:ada35990e7107fa36fec7cea24979b6db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abafff7ba6aed71c7fa2cb38fd9b1bb58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abafff7ba6aed71c7fa2cb38fd9b1bb58"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CONSOLEFUNC</b> (<a class="el" href="class_a_z_1_1_logger_system_component.html">LoggerSystemComponent</a>, ToggleLog, AZ::ConsoleFunctorFlags::Null,&quot;Toggles conditional logs with the provided tag&quot;)</td></tr>
-<tr class="separator:abafff7ba6aed71c7fa2cb38fd9b1bb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a876445a1aa4f4a2a94e7f23c7b79b156"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a876445a1aa4f4a2a94e7f23c7b79b156"></a>
-<a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_logName</b></td></tr>
-<tr class="separator:a876445a1aa4f4a2a94e7f23c7b79b156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8320c0c654f19998be6011c60553e6a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8320c0c654f19998be6011c60553e6a5"></a>
-<a class="el" href="namespace_a_z.html#ad5ac339a1199350350d069e8e936c09b">LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_logLevel</b> = LogLevel::Info</td></tr>
-<tr class="separator:a8320c0c654f19998be6011c60553e6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af703087273a0588dba8547c4a700f999"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af703087273a0588dba8547c4a700f999"></a>
-LogEvent&#160;</td><td class="memItemRight" valign="bottom"><b>m_logEvent</b></td></tr>
-<tr class="separator:af703087273a0588dba8547c4a700f999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0689d1dbbf050466bb63ddca77b574b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0689d1dbbf050466bb63ddca77b574b6"></a>
-<a class="el" href="class_a_z_std_1_1bitset.html">AZStd::bitset</a>&lt; BitsetSize &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_quickHash</b></td></tr>
-<tr class="separator:a0689d1dbbf050466bb63ddca77b574b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b50eddccafa5ade3bb77a429fbf0b98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b50eddccafa5ade3bb77a429fbf0b98"></a>
-<a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_enabledTagsMutex</b></td></tr>
-<tr class="separator:a3b50eddccafa5ade3bb77a429fbf0b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e0746a0334e52462fda3f5505788700"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e0746a0334e52462fda3f5505788700"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; AZ::HashValue32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_enabledTags</b></td></tr>
-<tr class="separator:a2e0746a0334e52462fda3f5505788700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a5f93fe7dfdce5c413c793b5489504a4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f93fe7dfdce5c413c793b5489504a4f"></a>
-static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>BitsetSize</b> = 1024</td></tr>
-<tr class="separator:a5f93fe7dfdce5c413c793b5489504a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -335,7 +281,7 @@ ComponentId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:58 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:20 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

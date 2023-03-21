@@ -55,8 +55,6 @@
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::Android::JNI::scoped_ref&lt; JniType &gt; Class Template Reference</div>  </div>
@@ -87,31 +85,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5b3f7133ee2becaea88e6f775e266868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adddd4870c58e345a7b136dbc952c4a35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#adddd4870c58e345a7b136dbc952c4a35">reset</a> (JniType javaObject=nullptr)</td></tr>
 <tr class="separator:adddd4870c58e345a7b136dbc952c4a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a4d5d0f0241067d8db4fa595b6fd5884d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d5d0f0241067d8db4fa595b6fd5884d"></a>
-typedef <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html">scoped_ref</a>&lt; JniType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ThisType</b></td></tr>
-<tr class="separator:a4d5d0f0241067d8db4fa595b6fd5884d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a293764d02ed03f5a7b0d0ed71955e3cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#a293764d02ed03f5a7b0d0ed71955e3cd">AZ_DISABLE_COPY_MOVE</a> (<a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html">scoped_ref</a>)</td></tr>
-<tr class="separator:a293764d02ed03f5a7b0d0ed71955e3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:aa7c8251fe70fe6895a524be684632b94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#aa7c8251fe70fe6895a524be684632b94">operator==</a> (<a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html">scoped_ref</a> const &amp;) const </td></tr>
-<tr class="separator:aa7c8251fe70fe6895a524be684632b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e54957057298a1351835b02d345f183"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e54957057298a1351835b02d345f183"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html">scoped_ref</a> const &amp;) const </td></tr>
-<tr class="separator:a1e54957057298a1351835b02d345f183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2e0158d8e69911d96d0a839a7bdb0555"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e0158d8e69911d96d0a839a7bdb0555"></a>
-JniType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#a2e0158d8e69911d96d0a839a7bdb0555">m_javaObject</a></td></tr>
-<tr class="memdesc:a2e0158d8e69911d96d0a839a7bdb0555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raw pointer of the java object reference (e.g. jobject, jarray, etc.) <br/></td></tr>
-<tr class="separator:a2e0158d8e69911d96d0a839a7bdb0555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename JniType&gt;<br/>
@@ -179,33 +152,6 @@ template&lt;typename JniType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a293764d02ed03f5a7b0d0ed71955e3cd"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename JniType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html">AZ::Android::JNI::scoped_ref</a>&lt; JniType &gt;::AZ_DISABLE_COPY_MOVE </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html">scoped_ref</a>&lt; JniType &gt;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Disable copy/move </p>
-
-</div>
-</div>
 <a class="anchor" id="aa4b9bced3a3a709b6766f0bf6d046bb2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -286,33 +232,6 @@ template&lt;typename JniType &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa7c8251fe70fe6895a524be684632b94"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename JniType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html">AZ::Android::JNI::scoped_ref</a>&lt; JniType &gt;::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html">scoped_ref</a>&lt; JniType &gt; const &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Disable direct comparisons of other scoped_refs </p>
-
-</div>
-</div>
 <a class="anchor" id="adddd4870c58e345a7b136dbc952c4a35"></a>
 <div class="memitem">
 <div class="memproto">
@@ -385,7 +304,7 @@ template&lt;typename JniType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

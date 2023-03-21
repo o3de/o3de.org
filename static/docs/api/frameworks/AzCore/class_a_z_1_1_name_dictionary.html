@@ -56,8 +56,6 @@
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_z_1_1_name_dictionary-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::NameDictionary Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -66,11 +64,6 @@
 
 <p><code>#include &lt;NameDictionary.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_name_dictionary_1_1_scoped_name_data_wrapper.html">ScopedNameDataWrapper</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f6311d92ba60c97735c1bc7e48a3788"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f6311d92ba60c97735c1bc7e48a3788"></a>
@@ -102,49 +95,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReady</b> ()
 <tr class="memitem:a65baac451c05963bbb2920ca0b870e81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65baac451c05963bbb2920ca0b870e81"></a>
 static <a class="el" href="class_a_z_1_1_name_dictionary.html">NameDictionary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b> ()</td></tr>
 <tr class="separator:a65baac451c05963bbb2920ca0b870e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ae542f64a294ea22778ee10c6b20260c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae542f64a294ea22778ee10c6b20260c4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportStats</b> () const </td></tr>
-<tr class="separator:ae542f64a294ea22778ee10c6b20260c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d7dbab2425cdb585a0a00fb90cc8b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04d7dbab2425cdb585a0a00fb90cc8b9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TryReleaseName</b> (Name::Hash hash)</td></tr>
-<tr class="separator:a04d7dbab2425cdb585a0a00fb90cc8b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad30699f309ccf18b9bbf23baa3f3f47a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad30699f309ccf18b9bbf23baa3f3f47a"></a>
-Name::Hash&#160;</td><td class="memItemRight" valign="bottom"><b>CalcHash</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name)</td></tr>
-<tr class="separator:ad30699f309ccf18b9bbf23baa3f3f47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0045b12126794b4c67648dd55369c907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0045b12126794b4c67648dd55369c907"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_dictionary.html#a0045b12126794b4c67648dd55369c907">LoadLiteral</a> (<a class="el" href="class_a_z_1_1_name.html">Name</a> &amp;name)</td></tr>
-<tr class="memdesc:a0045b12126794b4c67648dd55369c907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the NameData for a given name literal (a <a class="el" href="class_a_z_1_1_name.html">Name</a> created with <a class="el" href="class_a_z_1_1_name.html#a70994ed0618e300ec746971556f2a653">Name::FromStringLiteral</a>) <br/></td></tr>
-<tr class="separator:a0045b12126794b4c67648dd55369c907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba97d75d9d4ce0cd860ef7100951bb94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_dictionary.html#aba97d75d9d4ce0cd860ef7100951bb94">LoadDeferredName</a> (<a class="el" href="class_a_z_1_1_name.html">Name</a> &amp;deferredName)</td></tr>
-<tr class="separator:aba97d75d9d4ce0cd860ef7100951bb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a683159d30aa17f115b1297abb29957eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a683159d30aa17f115b1297abb29957eb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_dictionary.html#a683159d30aa17f115b1297abb29957eb">UnloadDeferredNames</a> ()</td></tr>
-<tr class="memdesc:a683159d30aa17f115b1297abb29957eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unloads the data with all deferred names registered using LoadDeferredName. <br/></td></tr>
-<tr class="separator:a683159d30aa17f115b1297abb29957eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a923cb7ab4ea9c15142431b2fde29ea72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a923cb7ab4ea9c15142431b2fde29ea72"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>Module</b></td></tr>
-<tr class="separator:a923cb7ab4ea9c15142431b2fde29ea72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e01a5ffb8bc6ab0fd28c7fbac735f1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e01a5ffb8bc6ab0fd28c7fbac735f1b"></a>
-friend&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b></td></tr>
-<tr class="separator:a0e01a5ffb8bc6ab0fd28c7fbac735f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13b873955c54ebeea3890be78c3c8c08"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13b873955c54ebeea3890be78c3c8c08"></a>
-<a class="el" href="class_a_z_std_1_1unordered__map.html">AZStd::unordered_map</a><br class="typebreak"/>
-&lt; Name::Hash, <br class="typebreak"/>
-<a class="el" href="struct_a_z_1_1_name_dictionary_1_1_scoped_name_data_wrapper.html">ScopedNameDataWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_dictionary</b></td></tr>
-<tr class="separator:a13b873955c54ebeea3890be78c3c8c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfaa206a1a5e787622b23518e061b533"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfaa206a1a5e787622b23518e061b533"></a>
-<a class="el" href="class_a_z_std_1_1shared__mutex.html">AZStd::shared_mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sharedMutex</b></td></tr>
-<tr class="separator:acfaa206a1a5e787622b23518e061b533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab46948608b97d8c113093b6e84a53e50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_name.html">Name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_dictionary.html#ab46948608b97d8c113093b6e84a53e50">m_deferredHead</a></td></tr>
-<tr class="separator:ab46948608b97d8c113093b6e84a53e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e9b3b16ca0b9b2bb4e7211512de481"><td class="memItemLeft" align="right" valign="top">const AZ::u64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_name_dictionary.html#a61e9b3b16ca0b9b2bb4e7211512de481">m_maxHashSlots</a> { static_cast&lt;AZ::u64&gt;(AZStd::numeric_limits&lt;Name::Hash&gt;::max()) + 1 }</td></tr>
-<tr class="separator:a61e9b3b16ca0b9b2bb4e7211512de481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Maintains a list of unique strings for <a class="el" href="class_a_z_1_1_name.html">Name</a> objects. The main benefit of the <a class="el" href="class_a_z_1_1_name.html">Name</a> system is very fast string equality comparison, because every unique name has a unique ID. The <a class="el" href="class_a_z_1_1_name_dictionary.html">NameDictionary</a>'s purpose is to guarantee name IDs do not collide. It also saves memory by removing duplicate strings.</p>
@@ -206,31 +156,6 @@ friend&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aba97d75d9d4ce0cd860ef7100951bb94"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::NameDictionary::LoadDeferredName </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_name.html">Name</a> &amp;&#160;</td>
-          <td class="paramname"><em>deferredName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Loads a name that was potentially created before this dictionary, ensuring its name data is loaded and that it is linked into our list of deferred load names to be released later. </p>
-
-</div>
-</div>
 <a class="anchor" id="a3ace7ae3ec5ac8a314953231bd334c86"></a>
 <div class="memitem">
 <div class="memproto">
@@ -272,56 +197,13 @@ friend&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ab46948608b97d8c113093b6e84a53e50"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_name.html">Name</a> AZ::NameDictionary::m_deferredHead</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>A fixed <a class="el" href="class_a_z_1_1_name.html">Name</a> used as the head of a linked list of <a class="el" href="class_a_z_1_1_name.html">Name</a> literals. These literals can be static and have lifecycles not coupled to the name dictionary, so we keep track of them here to ensure their name data gets correctly cleaned up when this dictionary is shut down. </p>
-
-</div>
-</div>
-<a class="anchor" id="a61e9b3b16ca0b9b2bb4e7211512de481"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const AZ::u64 AZ::NameDictionary::m_maxHashSlots { static_cast&lt;AZ::u64&gt;(AZStd::numeric_limits&lt;Name::Hash&gt;::max()) + 1 }</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the maximum number of hash slots to 2^32 hash values will be mapped between [0, m_maxHashSlots) Can only be configured at construction time and cannot change value cannot be 0 </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzCore/AzCore/Name/NameDictionary.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:56:59 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:21 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

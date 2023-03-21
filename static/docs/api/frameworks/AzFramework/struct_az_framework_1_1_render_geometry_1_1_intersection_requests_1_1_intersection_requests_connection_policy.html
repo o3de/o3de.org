@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -97,10 +104,13 @@ struct AzFramework::RenderGeometry::IntersectionRequests::IntersectionRequestsCo
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.5
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_az_framework.html">AzFramework</a></li><li class="navelem"><b>RenderGeometry</b></li><li class="navelem"><a class="el" href="class_az_framework_1_1_render_geometry_1_1_intersection_requests.html">IntersectionRequests</a></li><li class="navelem"><a class="el" href="struct_az_framework_1_1_render_geometry_1_1_intersection_requests_1_1_intersection_requests_connection_policy.html">IntersectionRequestsConnectionPolicy</a></li>
+    <li class="footer">Generated on Mon Mar 20 2023 23:37:12 for Open 3D Engine AzFramework API Reference by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
+  </ul>
+</div>
 </body>
 </html>

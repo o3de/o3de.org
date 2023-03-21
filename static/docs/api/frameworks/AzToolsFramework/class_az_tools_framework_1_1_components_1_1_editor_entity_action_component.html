@@ -53,9 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="class_az_tools_framework_1_1_components_1_1_editor_entity_action_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::Components::EditorEntityActionComponent Class Reference</div>  </div>
@@ -116,71 +113,17 @@ PendingComponentInfo&#160;</td><td class="memItemRight" valign="bottom"><b>GetPe
 <tr class="memitem:a12b3bc78f9c9f6b30d71977fe21812c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12b3bc78f9c9f6b30d71977fe21812c2"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetComponentName</b> (const AZ::Component *component) override</td></tr>
 <tr class="separator:a12b3bc78f9c9f6b30d71977fe21812c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:ae8d464ecce7c1c7f4af30c0253c0f6d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_entity_action_component.html#ae8d464ecce7c1c7f4af30c0253c0f6d2">AddPendingComponentsOutcome</a> = AZ::Outcome&lt; AZ::Entity::ComponentArrayType, AZStd::string &gt;</td></tr>
-<tr class="separator:ae8d464ecce7c1c7f4af30c0253c0f6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a9060a3224663d15abafdc38bf299dd54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9060a3224663d15abafdc38bf299dd54"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveComponentFromEntityAndContainers</b> (AZ::Entity *entity, AZ::Component *componentToRemove)</td></tr>
-<tr class="separator:a9060a3224663d15abafdc38bf299dd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e333eaa286916eaa25125433803b82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1e333eaa286916eaa25125433803b82"></a>
-ScrubEntityResults&#160;</td><td class="memItemRight" valign="bottom"><b>ScrubEntity</b> (AZ::Entity *entity)</td></tr>
-<tr class="separator:ac1e333eaa286916eaa25125433803b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e1f346d2046c9d7206be02bc0239862"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e1f346d2046c9d7206be02bc0239862"></a>
-<a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_entity_action_component.html#ae8d464ecce7c1c7f4af30c0253c0f6d2">AddPendingComponentsOutcome</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddPendingComponentsToEntity</b> (AZ::Entity *entity)</td></tr>
-<tr class="separator:a3e1f346d2046c9d7206be02bc0239862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a53f3f9bd1d44742c6c9115c8b14ce0e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53f3f9bd1d44742c6c9115c8b14ce0e6"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
-<tr class="separator:a53f3f9bd1d44742c6c9115c8b14ce0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb5059fce7a58bf50994ee9a57f12d36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb5059fce7a58bf50994ee9a57f12d36"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;provided)</td></tr>
-<tr class="separator:acb5059fce7a58bf50994ee9a57f12d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec5a2275c0393f74a7bf46f59250b3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ec5a2275c0393f74a7bf46f59250b3b"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibleServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;incompatible)</td></tr>
-<tr class="separator:a9ec5a2275c0393f74a7bf46f59250b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeba7f3273ab891e782f6979fe948494"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeba7f3273ab891e782f6979fe948494"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequiredServices</b> (AZ::ComponentDescriptor::DependencyArrayType &amp;required)</td></tr>
-<tr class="separator:aeeba7f3273ab891e782f6979fe948494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A system component for handling component-related actions on entities</p>
 <p>Used to perform things such as add/remove components, cut/copy/paste, etc. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ae8d464ecce7c1c7f4af30c0253c0f6d2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="class_az_tools_framework_1_1_components_1_1_editor_entity_action_component.html#ae8d464ecce7c1c7f4af30c0253c0f6d2">AzToolsFramework::Components::EditorEntityActionComponent::AddPendingComponentsOutcome</a> =  AZ::Outcome&lt;AZ::Entity::ComponentArrayType, AZStd::string&gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Result of add component operations Can either succeed and return a vector of the new components added or fail with a string containing the reason for failure </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Entity/EditorEntityActionComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

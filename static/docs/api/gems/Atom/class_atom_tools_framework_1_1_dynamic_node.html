@@ -53,6 +53,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_atom_tools_framework_1_1_dynamic_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AtomToolsFramework::DynamicNode Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -95,6 +97,24 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a366c2778f4433b923853a58bef522a88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a366c2778f4433b923853a58bef522a88"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a366c2778f4433b923853a58bef522a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a85a3827e721a3699728a44dcfd9180e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85a3827e721a3699728a44dcfd9180e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSlots</b> () override</td></tr>
+<tr class="separator:a85a3827e721a3699728a44dcfd9180e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac3d796f1c29967aac0d3d07c0856d2e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3d796f1c29967aac0d3d07c0856d2e2"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>m_toolId</b> = {}</td></tr>
+<tr class="separator:ac3d796f1c29967aac0d3d07c0856d2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439a39f87495f3978295b779145eff76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a439a39f87495f3978295b779145eff76"></a>
+AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>m_configId</b> = AZ::Uuid::CreateNull()</td></tr>
+<tr class="separator:a439a39f87495f3978295b779145eff76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3b02074abd36496710d93f211f94d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c3b02074abd36496710d93f211f94d0"></a>
+<a class="el" href="struct_atom_tools_framework_1_1_dynamic_node_config.html">DynamicNodeConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_config</b></td></tr>
+<tr class="separator:a5c3b02074abd36496710d93f211f94d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Graph Model node that generates its appearance and slots based on an external data driven configuration. The node looks up the config via DynamicNodeManagerRequestBus, using a tool ID and a config ID. Serializing these IDs instead of the config object saves considerable space in the serialized graph. </p>
@@ -104,7 +124,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 22:41:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

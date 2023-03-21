@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::ComponentModeFramework::ComponentModeSwitcher Class Reference</div>  </div>
@@ -79,129 +77,16 @@ const AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><b>GetA
 <tr class="memitem:adfda8ae344eec497a97eb80df89c94fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfda8ae344eec497a97eb80df89c94fb"></a>
 <a class="el" href="class_az_tools_framework_1_1_id_type.html">ViewportUi::SwitcherId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSwitcherId</b> () const </td></tr>
 <tr class="separator:adfda8ae344eec497a97eb80df89c94fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a2b0fb8afea554564997c478f138cb063"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b0fb8afea554564997c478f138cb063"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#a2b0fb8afea554564997c478f138cb063">AddSwitcherButton</a> (<a class="el" href="struct_az_tools_framework_1_1_component_mode_framework_1_1_component_data.html">ComponentData</a> &amp;componentData)</td></tr>
-<tr class="memdesc:a2b0fb8afea554564997c478f138cb063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls ViewportUiRequestBus to create switcher button, helper for AddComponentButton. <br/></td></tr>
-<tr class="separator:a2b0fb8afea554564997c478f138cb063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea112a74c646127041aeb66b74b243cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea112a74c646127041aeb66b74b243cb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#aea112a74c646127041aeb66b74b243cb">AddComponentButton</a> (const AZ::EntityComponentIdPair pairId)</td></tr>
-<tr class="memdesc:aea112a74c646127041aeb66b74b243cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds component button to switcher. <br/></td></tr>
-<tr class="separator:aea112a74c646127041aeb66b74b243cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaebd6b0408e7b3e958f19a0e51ea3480"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaebd6b0408e7b3e958f19a0e51ea3480"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#aaebd6b0408e7b3e958f19a0e51ea3480">RemoveComponentButton</a> (const AZ::EntityComponentIdPair pairId)</td></tr>
-<tr class="memdesc:aaebd6b0408e7b3e958f19a0e51ea3480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes component button from switcher. <br/></td></tr>
-<tr class="separator:aaebd6b0408e7b3e958f19a0e51ea3480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfcf66793f409b2de1a99ed039263325"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfcf66793f409b2de1a99ed039263325"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#adfcf66793f409b2de1a99ed039263325">UpdateSwitcher</a> (const EntityIdList &amp;newlyselectedEntityIds, const EntityIdList &amp;newlydeselectedEntityIds)</td></tr>
-<tr class="memdesc:adfcf66793f409b2de1a99ed039263325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add or remove component buttons to/from the switcher based on entities selected. <br/></td></tr>
-<tr class="separator:adfcf66793f409b2de1a99ed039263325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ad866d8581b0b7e93a88cb280b3305"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70ad866d8581b0b7e93a88cb280b3305"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#a70ad866d8581b0b7e93a88cb280b3305">ClearSwitcher</a> ()</td></tr>
-<tr class="memdesc:a70ad866d8581b0b7e93a88cb280b3305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all buttons from switcher. <br/></td></tr>
-<tr class="separator:a70ad866d8581b0b7e93a88cb280b3305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8d3f4850809692405b202ba2dbe4e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf8d3f4850809692405b202ba2dbe4e8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#acf8d3f4850809692405b202ba2dbe4e8">RemoveNonCommonComponents</a> (const AZ::Entity &amp;entity)</td></tr>
-<tr class="memdesc:acf8d3f4850809692405b202ba2dbe4e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all components from the switcher that don't exist on all entities. <br/></td></tr>
-<tr class="separator:acf8d3f4850809692405b202ba2dbe4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae901ae229d0da03192f8076a56b30372"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae901ae229d0da03192f8076a56b30372"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateComponentMode</b> (const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ViewportUi::ButtonId</a> buttonId)</td></tr>
-<tr class="separator:ae901ae229d0da03192f8076a56b30372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d73198f990e06bdfc9e5d2ba4a529ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d73198f990e06bdfc9e5d2ba4a529ad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditorModeActivated</b> ([[maybe_unused]] const <a class="el" href="class_az_tools_framework_1_1_viewport_editor_modes_interface.html">ViewportEditorModesInterface</a> &amp;editorModeState, ViewportEditorMode mode) override</td></tr>
-<tr class="separator:a8d73198f990e06bdfc9e5d2ba4a529ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3f51f01d7444b17f7ef2604fe6d5993"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3f51f01d7444b17f7ef2604fe6d5993"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEditorModeDeactivated</b> ([[maybe_unused]] const <a class="el" href="class_az_tools_framework_1_1_viewport_editor_modes_interface.html">ViewportEditorModesInterface</a> &amp;editorModeState, ViewportEditorMode mode) override</td></tr>
-<tr class="separator:ad3f51f01d7444b17f7ef2604fe6d5993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a042215f4dee653a8a0d2ffbf7fb08946"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a042215f4dee653a8a0d2ffbf7fb08946"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AfterEntitySelectionChanged</b> (const EntityIdList &amp;newlySelectedEntities, const EntityIdList &amp;newlyDeselectedEntities) override</td></tr>
-<tr class="separator:a042215f4dee653a8a0d2ffbf7fb08946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05d6f11c0fec898218cef70503f029e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae05d6f11c0fec898218cef70503f029e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImGuiDropDownShown</b> () override</td></tr>
-<tr class="separator:ae05d6f11c0fec898218cef70503f029e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ed725bb9e91a913b9413f0a2761e6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16ed725bb9e91a913b9413f0a2761e6b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImGuiDropDownHidden</b> () override</td></tr>
-<tr class="separator:a16ed725bb9e91a913b9413f0a2761e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ba5bd864133e2a06f5b797435326ce4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ba5bd864133e2a06f5b797435326ce4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImGuiActivated</b> () override</td></tr>
-<tr class="separator:a7ba5bd864133e2a06f5b797435326ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c4aecb47b6692cd943a7fad8c749ab0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c4aecb47b6692cd943a7fad8c749ab0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImGuiDeactivated</b> () override</td></tr>
-<tr class="separator:a2c4aecb47b6692cd943a7fad8c749ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb33ef2a4158c59aad03adc816a3436e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb33ef2a4158c59aad03adc816a3436e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnComponentModeDelegateConnect</b> (const AZ::EntityComponentIdPair &amp;pairId) override</td></tr>
-<tr class="separator:abb33ef2a4158c59aad03adc816a3436e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30865e378c600ce9194618e7e0d7812f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30865e378c600ce9194618e7e0d7812f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnComponentModeDelegateDisconnect</b> (const AZ::EntityComponentIdPair &amp;pairId) override</td></tr>
-<tr class="separator:a30865e378c600ce9194618e7e0d7812f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3edc6f581cf0acf7bfb509c8640aacf5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3edc6f581cf0acf7bfb509c8640aacf5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ActiveComponentModeChanged</b> (const AZ::Uuid &amp;componentType) override</td></tr>
-<tr class="separator:a3edc6f581cf0acf7bfb509c8640aacf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae7dce9d2b452939522b5f99da434d3ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7dce9d2b452939522b5f99da434d3ad"></a>
-const AZ::Component *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#ae7dce9d2b452939522b5f99da434d3ad">m_activeSwitcherComponent</a> = nullptr</td></tr>
-<tr class="memdesc:ae7dce9d2b452939522b5f99da434d3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The component that is currently in component mode. <br/></td></tr>
-<tr class="separator:ae7dce9d2b452939522b5f99da434d3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a369b3c6fc7cfa59edf489592e67309fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a369b3c6fc7cfa59edf489592e67309fa"></a>
-AZStd::vector&lt; <a class="el" href="struct_az_tools_framework_1_1_component_mode_framework_1_1_component_data.html">ComponentData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#a369b3c6fc7cfa59edf489592e67309fa">m_addedComponents</a></td></tr>
-<tr class="memdesc:a369b3c6fc7cfa59edf489592e67309fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of <a class="el" href="struct_az_tools_framework_1_1_component_mode_framework_1_1_component_data.html" title="Struct containing relevant information about component for the switcher. ">ComponentData</a> elements.. <br/></td></tr>
-<tr class="separator:a369b3c6fc7cfa59edf489592e67309fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1256b8419c2fa990466a35963c1d1798"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1256b8419c2fa990466a35963c1d1798"></a>
-<a class="el" href="class_az_tools_framework_1_1_id_type.html">ViewportUi::ButtonId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#a1256b8419c2fa990466a35963c1d1798">m_transformButtonId</a></td></tr>
-<tr class="memdesc:a1256b8419c2fa990466a35963c1d1798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the default button of the switcher, used to exit component mode. <br/></td></tr>
-<tr class="separator:a1256b8419c2fa990466a35963c1d1798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa78b678e42d851105731cf36aca539c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa78b678e42d851105731cf36aca539c5"></a>
-AZ::Event<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ViewportUi::ButtonId</a> &gt;<br class="typebreak"/>
-::Handler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#aa78b678e42d851105731cf36aca539c5">m_handler</a></td></tr>
-<tr class="memdesc:aa78b678e42d851105731cf36aca539c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler for onclick of switcher buttons, activates component mode. <br/></td></tr>
-<tr class="separator:aa78b678e42d851105731cf36aca539c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7596dbb2ee0aadb17cad3f7792464e80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7596dbb2ee0aadb17cad3f7792464e80"></a>
-<a class="el" href="class_az_tools_framework_1_1_id_type.html">ViewportUi::SwitcherId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#a7596dbb2ee0aadb17cad3f7792464e80">m_switcherId</a></td></tr>
-<tr class="memdesc:a7596dbb2ee0aadb17cad3f7792464e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of linked switcher. <br/></td></tr>
-<tr class="separator:a7596dbb2ee0aadb17cad3f7792464e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708bb08638647fb256f8f48e8ae75b51"><td class="memItemLeft" align="right" valign="top">AZ::EntityComponentIdPair&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#a708bb08638647fb256f8f48e8ae75b51">m_componentModePair</a></td></tr>
-<tr class="separator:a708bb08638647fb256f8f48e8ae75b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a01910fe2c90a7d6ff500538d588093"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a01910fe2c90a7d6ff500538d588093"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_switcher.html#a5a01910fe2c90a7d6ff500538d588093">m_hiddenByImGui</a> = false</td></tr>
-<tr class="memdesc:a5a01910fe2c90a7d6ff500538d588093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Protects the switcher from being opened by OnImGuiDropDownShown if it has been hidden elsewhere. <br/></td></tr>
-<tr class="separator:a5a01910fe2c90a7d6ff500538d588093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles all aspects of the ViewportUi Switcher related to Component Mode. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a708bb08638647fb256f8f48e8ae75b51"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZ::EntityComponentIdPair AzToolsFramework::ComponentModeFramework::ComponentModeSwitcher::m_componentModePair</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>The component mode pair in onEntityCompositionChanged. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/ComponentMode/ComponentModeSwitcher.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:44 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

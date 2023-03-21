@@ -56,9 +56,6 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_asset_system_1_1_asset_processor_connection-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::AssetSystem::AssetProcessorConnection Class Reference</div>  </div>
@@ -69,11 +66,6 @@
 
 <p>Inherits <a class="el" href="class_az_framework_1_1_socket_connection.html">AzFramework::SocketConnection</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_asset_system_1_1_asset_processor_connection_1_1_thread_state.html">ThreadState</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad46d72599188b274cd6f8f78ccb9574f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad46d72599188b274cd6f8f78ccb9574f"></a>
@@ -151,10 +143,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>NegotiateWithServer</
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>NegotiateWithClient</b> ()</td></tr>
 <tr class="separator:a228bfea16bb722b2eab007c9090febf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed20fb8c495fd561e7b748a2ec9f7296"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed20fb8c495fd561e7b748a2ec9f7296"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StartThread</b> (<a class="el" href="struct_az_framework_1_1_asset_system_1_1_asset_processor_connection_1_1_thread_state.html">ThreadState</a> &amp;thread)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartThread</b> (ThreadState &amp;thread)</td></tr>
 <tr class="separator:aed20fb8c495fd561e7b748a2ec9f7296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814b5c0b747040866c00241ff91ecca2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a814b5c0b747040866c00241ff91ecca2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>JoinThread</b> (<a class="el" href="struct_az_framework_1_1_asset_system_1_1_asset_processor_connection_1_1_thread_state.html">ThreadState</a> &amp;thread, AZStd::condition_variable *wakeUpCondition=nullptr)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>JoinThread</b> (ThreadState &amp;thread, AZStd::condition_variable *wakeUpCondition=nullptr)</td></tr>
 <tr class="separator:a814b5c0b747040866c00241ff91ecca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace30ac12bb9d8771e351441f84f6ea4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace30ac12bb9d8771e351441f84f6ea4f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StartSendRecvThreads</b> ()</td></tr>
@@ -207,142 +199,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugMessage</b> (con
 <tr class="memitem:ab3671de754704e8dce5d5fe7626c01c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3671de754704e8dce5d5fe7626c01c0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushResponseHandlers</b> ()</td></tr>
 <tr class="separator:ab3671de754704e8dce5d5fe7626c01c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a575d59222957074b6cd8ffbf94e5f9da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a575d59222957074b6cd8ffbf94e5f9da"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>TMessageCallbacks</b> = AZStd::multimap&lt; AZ::u32, AZStd::pair&lt; SocketConnection::TMessageCallbackHandle, <a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">SocketConnection::TMessageCallback</a> &gt;, AZStd::less&lt; AZ::u32 &gt;, AZ::OSStdAllocator &gt;</td></tr>
-<tr class="separator:a575d59222957074b6cd8ffbf94e5f9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afef487b6ddead502f06e814c52367ea9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afef487b6ddead502f06e814c52367ea9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>TResponseCallbacks</b> = AZStd::map&lt; AZStd::pair&lt; AZ::u32, AZ::u32 &gt;, <a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">SocketConnection::TMessageCallback</a>, AZStd::less&lt; AZStd::pair&lt; AZ::u32, AZ::u32 &gt; &gt;, AZ::OSStdAllocator &gt;</td></tr>
-<tr class="separator:afef487b6ddead502f06e814c52367ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fd727f102636183298bc6f27025a1d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fd727f102636183298bc6f27025a1d4"></a>
-typedef AZStd::vector&lt; char, <br class="typebreak"/>
-AZ::OSStdAllocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MessageBuffer</b></td></tr>
-<tr class="separator:a6fd727f102636183298bc6f27025a1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7908267b12f5e6f3fac9ac7f8c81c167"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7908267b12f5e6f3fac9ac7f8c81c167"></a>
-typedef AZStd::deque<br class="typebreak"/>
-&lt; MessageBuffer, <br class="typebreak"/>
-AZ::OSStdAllocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SendQueueType</b></td></tr>
-<tr class="separator:a7908267b12f5e6f3fac9ac7f8c81c167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a1565fa4fcb7fe9cb993a7b69064ea80b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1565fa4fcb7fe9cb993a7b69064ea80b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StartDisconnecting</b> ()</td></tr>
-<tr class="separator:a1565fa4fcb7fe9cb993a7b69064ea80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a55508ada7d0cd7b3d88264585be9504c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55508ada7d0cd7b3d88264585be9504c"></a>
-AZSOCKET&#160;</td><td class="memItemRight" valign="bottom"><b>m_socket</b></td></tr>
-<tr class="separator:a55508ada7d0cd7b3d88264585be9504c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f4f63dc2ebf6af521de5cb9ad020da9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f4f63dc2ebf6af521de5cb9ad020da9"></a>
-AZStd::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_sendQueueMutex</b></td></tr>
-<tr class="separator:a2f4f63dc2ebf6af521de5cb9ad020da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab35c5629894c6dfe7843ff1078a12ced"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab35c5629894c6dfe7843ff1078a12ced"></a>
-AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_responseHandlerMutex</b></td></tr>
-<tr class="separator:ab35c5629894c6dfe7843ff1078a12ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70defb5fd2105516bc1f97f51cb3d844"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70defb5fd2105516bc1f97f51cb3d844"></a>
-AZStd::atomic&lt; EConnectionState &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectionState</b></td></tr>
-<tr class="separator:a70defb5fd2105516bc1f97f51cb3d844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af58a2970b414a6ea1aa0e38fb42c7e0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af58a2970b414a6ea1aa0e38fb42c7e0c"></a>
-AZStd::atomic_uint&#160;</td><td class="memItemRight" valign="bottom"><b>m_requestSerial</b></td></tr>
-<tr class="separator:af58a2970b414a6ea1aa0e38fb42c7e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267f345c45b8b7cf24909624b99e1d6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a267f345c45b8b7cf24909624b99e1d6e"></a>
-AZStd::atomic<br class="typebreak"/>
-&lt; SocketConnection::TMessageCallbackHandle &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_nextHandlerId</b></td></tr>
-<tr class="separator:a267f345c45b8b7cf24909624b99e1d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af680c1670e59946c344f5ededc3a34bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af680c1670e59946c344f5ededc3a34bb"></a>
-AZ::OSString&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectAddr</b></td></tr>
-<tr class="separator:af680c1670e59946c344f5ededc3a34bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf73d3744bcdccd7876d28baa7d67f7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf73d3744bcdccd7876d28baa7d67f7f"></a>
-AZ::u16&#160;</td><td class="memItemRight" valign="bottom"><b>m_port</b></td></tr>
-<tr class="separator:abf73d3744bcdccd7876d28baa7d67f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c56c30e96a2ae0f5c9685122bd64564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c56c30e96a2ae0f5c9685122bd64564"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_branchToken</b></td></tr>
-<tr class="separator:a9c56c30e96a2ae0f5c9685122bd64564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a333ffef50bebb51caefd61dd1938e769"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a333ffef50bebb51caefd61dd1938e769"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_projectName</b></td></tr>
-<tr class="separator:a333ffef50bebb51caefd61dd1938e769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf608fcab426dd56027c689b913ec017"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf608fcab426dd56027c689b913ec017"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetPlatform</b></td></tr>
-<tr class="separator:aaf608fcab426dd56027c689b913ec017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6d1ee5e772fa9c0b5593428434a0507"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6d1ee5e772fa9c0b5593428434a0507"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_identifier</b></td></tr>
-<tr class="separator:aa6d1ee5e772fa9c0b5593428434a0507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab11b83228bf5bbc7f701a375f4c0d3f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab11b83228bf5bbc7f701a375f4c0d3f3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_negotiationFailed</b> = false</td></tr>
-<tr class="separator:ab11b83228bf5bbc7f701a375f4c0d3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306f5e84f06bce33bc7bb9f535945e4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a306f5e84f06bce33bc7bb9f535945e4a"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_retryAfterDisconnect</b></td></tr>
-<tr class="separator:a306f5e84f06bce33bc7bb9f535945e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d2f368c1644d543a7886184d9d44cdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d2f368c1644d543a7886184d9d44cdd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_listening</b> = false</td></tr>
-<tr class="separator:a2d2f368c1644d543a7886184d9d44cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a984ae977cd581b36079ee7859f2a9a76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a984ae977cd581b36079ee7859f2a9a76"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_shouldQueueHandlerChanges</b></td></tr>
-<tr class="separator:a984ae977cd581b36079ee7859f2a9a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8074e131bd40e62e5ac34d286357c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d8074e131bd40e62e5ac34d286357c0"></a>
-TMessageCallbacks&#160;</td><td class="memItemRight" valign="bottom"><b>m_messageHandlers</b></td></tr>
-<tr class="separator:a5d8074e131bd40e62e5ac34d286357c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fee0bfd3ce6f7d62c3fae6683d1b9fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fee0bfd3ce6f7d62c3fae6683d1b9fa"></a>
-AZStd::vector<br class="typebreak"/>
-&lt; SocketConnection::TMessageCallbackHandle, <br class="typebreak"/>
-AZ::OSStdAllocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_messageHandlersToRemove</b></td></tr>
-<tr class="separator:a5fee0bfd3ce6f7d62c3fae6683d1b9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a547e6b486d8b3f02186eff2699f0320d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a547e6b486d8b3f02186eff2699f0320d"></a>
-AZStd::vector&lt; AZStd::pair<br class="typebreak"/>
-&lt; AZ::u32, AZStd::pair<br class="typebreak"/>
-&lt; SocketConnection::TMessageCallbackHandle, <br class="typebreak"/>
-<a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">SocketConnection::TMessageCallback</a> &gt;<br class="typebreak"/>
- &gt;, AZ::OSStdAllocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_messageHandlersToAdd</b></td></tr>
-<tr class="separator:a547e6b486d8b3f02186eff2699f0320d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af175da33ac5dbae7df2fbf4f27d112a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af175da33ac5dbae7df2fbf4f27d112a6"></a>
-TResponseCallbacks&#160;</td><td class="memItemRight" valign="bottom"><b>m_responseHandlers</b></td></tr>
-<tr class="separator:af175da33ac5dbae7df2fbf4f27d112a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a174cffac57121d7daa2cedec80fe33ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a174cffac57121d7daa2cedec80fe33ed"></a>
-AZStd::vector&lt; AZStd::pair<br class="typebreak"/>
-&lt; AZStd::pair&lt; AZ::u32, <br class="typebreak"/>
-AZ::u32 &gt;<br class="typebreak"/>
-, <a class="el" href="class_az_framework_1_1_socket_connection.html#a4c5138cabb52d70d734ab002ae7d8bb6">SocketConnection::TMessageCallback</a> &gt;<br class="typebreak"/>
-, AZ::OSStdAllocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_responseHandlersToAdd</b></td></tr>
-<tr class="separator:a174cffac57121d7daa2cedec80fe33ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae30eb58b8d61a3d0997661505241a2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae30eb58b8d61a3d0997661505241a2c"></a>
-AZStd::vector&lt; AZStd::pair<br class="typebreak"/>
-&lt; AZ::u32, AZ::u32 &gt;<br class="typebreak"/>
-, AZ::OSStdAllocator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_responseHandlersToRemove</b></td></tr>
-<tr class="separator:aae30eb58b8d61a3d0997661505241a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57427faf061aec2518175c78084ec81c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57427faf061aec2518175c78084ec81c"></a>
-SendQueueType&#160;</td><td class="memItemRight" valign="bottom"><b>m_sendQueue</b></td></tr>
-<tr class="separator:a57427faf061aec2518175c78084ec81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18b9a8b7cc054265b476e40a60883ea9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18b9a8b7cc054265b476e40a60883ea9"></a>
-AZStd::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><b>m_sendEventNotEmpty</b></td></tr>
-<tr class="separator:a18b9a8b7cc054265b476e40a60883ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af216f21380d7cbbc9b7dabd935e71255"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af216f21380d7cbbc9b7dabd935e71255"></a>
-<a class="el" href="struct_az_framework_1_1_asset_system_1_1_asset_processor_connection_1_1_thread_state.html">ThreadState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sendThread</b></td></tr>
-<tr class="separator:af216f21380d7cbbc9b7dabd935e71255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5394191202913729567135a6b5b72784"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5394191202913729567135a6b5b72784"></a>
-<a class="el" href="struct_az_framework_1_1_asset_system_1_1_asset_processor_connection_1_1_thread_state.html">ThreadState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_recvThread</b></td></tr>
-<tr class="separator:a5394191202913729567135a6b5b72784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab01ae1e9a3e327fd2e84cf4ccdbc57d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab01ae1e9a3e327fd2e84cf4ccdbc57d5"></a>
-<a class="el" href="struct_az_framework_1_1_asset_system_1_1_asset_processor_connection_1_1_thread_state.html">ThreadState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_listenThread</b></td></tr>
-<tr class="separator:ab01ae1e9a3e327fd2e84cf4ccdbc57d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ff35836819e468d453d82e261b8a1d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ff35836819e468d453d82e261b8a1d7"></a>
-<a class="el" href="struct_az_framework_1_1_asset_system_1_1_asset_processor_connection_1_1_thread_state.html">ThreadState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_connectThread</b></td></tr>
-<tr class="separator:a4ff35836819e468d453d82e261b8a1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9683adc229daef9819b2b63051a28d1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9683adc229daef9819b2b63051a28d1f"></a>
-<a class="el" href="struct_az_framework_1_1_asset_system_1_1_asset_processor_connection_1_1_thread_state.html">ThreadState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_disconnectThread</b></td></tr>
-<tr class="separator:a9683adc229daef9819b2b63051a28d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5918ac0ae32c973f73bd2b8ba3da9704"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5918ac0ae32c973f73bd2b8ba3da9704"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isBusyDisconnecting</b></td></tr>
-<tr class="separator:a5918ac0ae32c973f73bd2b8ba3da9704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564741ff9fb5ef4afe3c968ed65f00da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a564741ff9fb5ef4afe3c968ed65f00da"></a>
-AZ::s32&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastErrorResult</b> = 0</td></tr>
-<tr class="separator:a564741ff9fb5ef4afe3c968ed65f00da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa851e54e986f0ab95e0b7fbfb04a19c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa851e54e986f0ab95e0b7fbfb04a19c2"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastErrorMessage</b></td></tr>
-<tr class="separator:aa851e54e986f0ab95e0b7fbfb04a19c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -456,7 +312,7 @@ static const TMessageCallbackHandle&#160;</td><td class="memItemRight" valign="b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

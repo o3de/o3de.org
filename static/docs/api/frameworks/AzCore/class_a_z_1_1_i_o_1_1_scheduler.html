@@ -55,21 +55,12 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-types">Private Types</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_a_z_1_1_i_o_1_1_scheduler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::IO::Scheduler Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_scheduler_1_1_thread_data.html">ThreadData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a12c7d12f77583186261ef21512e4af3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12c7d12f77583186261ef21512e4af3b"></a>
@@ -111,118 +102,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ab5bf4a326112faa61b3d3e092865cfb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5bf4a326112faa61b3d3e092865cfb2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecommendations</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_i_streamer_types_1_1_recommendations.html">IStreamerTypes::Recommendations</a> &amp;recommendations) const </td></tr>
 <tr class="separator:ab5bf4a326112faa61b3d3e092865cfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Private Types</h2></td></tr>
-<tr class="memitem:a4eee74a148efcdbb088e93c47b98d601"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#a4eee74a148efcdbb088e93c47b98d601">Order</a> { <a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#a4eee74a148efcdbb088e93c47b98d601aadbb2e98a86f8fb74b4d969f3aa2b1c4">Order::FirstRequest</a>, 
-<a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#a4eee74a148efcdbb088e93c47b98d601acfdf92346e29fa5b5731c2f0c752064b">Order::SecondRequest</a>, 
-<a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#a4eee74a148efcdbb088e93c47b98d601af5f286e73bda105e538310b3190f75c5">Order::Equal</a>
- }</td></tr>
-<tr class="separator:a4eee74a148efcdbb088e93c47b98d601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a38e3e91d0aad078bd21b1b84a78abb52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38e3e91d0aad078bd21b1b84a78abb52"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Thread_MainLoop</b> ()</td></tr>
-<tr class="separator:a38e3e91d0aad078bd21b1b84a78abb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad77c372a37cddca119ee45c92db50958"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad77c372a37cddca119ee45c92db50958"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Thread_QueueNextRequest</b> ()</td></tr>
-<tr class="separator:ad77c372a37cddca119ee45c92db50958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace4e82a0abf3e314a1f1db19b08659a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aace4e82a0abf3e314a1f1db19b08659a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Thread_ExecuteRequests</b> ()</td></tr>
-<tr class="separator:aace4e82a0abf3e314a1f1db19b08659a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac28dafdd4541ef7a7ecb38761cc68909"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac28dafdd4541ef7a7ecb38761cc68909"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Thread_PrepareRequests</b> (<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">FileRequestPtr</a> &gt; &amp;outstandingRequests)</td></tr>
-<tr class="separator:ac28dafdd4541ef7a7ecb38761cc68909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c85ed3a4a0888d107cc9e2bfd813a20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c85ed3a4a0888d107cc9e2bfd813a20"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Thread_ProcessTillIdle</b> ()</td></tr>
-<tr class="separator:a2c85ed3a4a0888d107cc9e2bfd813a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6695faaf6c3ea4daf9f08d3074b94a89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6695faaf6c3ea4daf9f08d3074b94a89"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Thread_ProcessCancelRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_cancel_data.html">Requests::CancelData</a> &amp;data)</td></tr>
-<tr class="separator:a6695faaf6c3ea4daf9f08d3074b94a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e29f56579aaf841e7e4034e119ba1cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e29f56579aaf841e7e4034e119ba1cf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Thread_ProcessRescheduleRequest</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *request, <a class="el" href="struct_a_z_1_1_i_o_1_1_requests_1_1_reschedule_data.html">Requests::RescheduleData</a> &amp;data)</td></tr>
-<tr class="separator:a9e29f56579aaf841e7e4034e119ba1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8534f0595a273ac4d94bc5231f0a29ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8534f0595a273ac4d94bc5231f0a29ce"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#a4eee74a148efcdbb088e93c47b98d601">Order</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#a8534f0595a273ac4d94bc5231f0a29ce">Thread_PrioritizeRequests</a> (const <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *first, const <a class="el" href="class_a_z_1_1_i_o_1_1_file_request.html">FileRequest</a> *second) const </td></tr>
-<tr class="memdesc:a8534f0595a273ac4d94bc5231f0a29ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine which of the two provided requests is more important to process next. <br/></td></tr>
-<tr class="separator:a8534f0595a273ac4d94bc5231f0a29ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46b86e52cea5fb31a8ca9649cbb029c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46b86e52cea5fb31a8ca9649cbb029c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Thread_ScheduleRequests</b> ()</td></tr>
-<tr class="separator:a46b86e52cea5fb31a8ca9649cbb029c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae5d6253837c7d7c96aff37a1e598e756"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5d6253837c7d7c96aff37a1e598e756"></a>
-<a class="el" href="struct_a_z_1_1_i_o_1_1_scheduler_1_1_thread_data.html">ThreadData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadData</b></td></tr>
-<tr class="separator:ae5d6253837c7d7c96aff37a1e598e756"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7532c9a691167db16b6d17b24e9667d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7532c9a691167db16b6d17b24e9667d"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html">StreamerContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
-<tr class="separator:ab7532c9a691167db16b6d17b24e9667d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f5e3d1622a42378b80585b48a428faf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f5e3d1622a42378b80585b48a428faf"></a>
-<a class="el" href="struct_a_z_1_1_i_o_1_1_i_streamer_types_1_1_recommendations.html">IStreamerTypes::Recommendations</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_recommendations</b></td></tr>
-<tr class="separator:a6f5e3d1622a42378b80585b48a428faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805fc63aafc41f2bfa03b346f610c757"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a805fc63aafc41f2bfa03b346f610c757"></a>
-<a class="el" href="struct_a_z_1_1_i_o_1_1_stream_stack_entry_1_1_status.html">StreamStackEntry::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_stackStatus</b></td></tr>
-<tr class="separator:a805fc63aafc41f2bfa03b346f610c757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a303986ff0ee36d79021bab6da5153b65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a303986ff0ee36d79021bab6da5153b65"></a>
-<a class="el" href="class_a_z_std_1_1mutex.html">AZStd::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingRequestsLock</b></td></tr>
-<tr class="separator:a303986ff0ee36d79021bab6da5153b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c88acabdd8d17b92964c99a73e7b53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41c88acabdd8d17b92964c99a73e7b53"></a>
-<a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; <a class="el" href="class_a_z_std_1_1intrusive__ptr.html">FileRequestPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingRequests</b></td></tr>
-<tr class="separator:a41c88acabdd8d17b92964c99a73e7b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab938920c34fabca378c0d71f4d449df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab938920c34fabca378c0d71f4d449df9"></a>
-<a class="el" href="class_a_z_std_1_1thread.html">AZStd::thread</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainLoop</b></td></tr>
-<tr class="separator:ab938920c34fabca378c0d71f4d449df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5154576bb2bc25291325e8d3f37f5a48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5154576bb2bc25291325e8d3f37f5a48"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isRunning</b> { false }</td></tr>
-<tr class="separator:a5154576bb2bc25291325e8d3f37f5a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b32c88468621870abae97720a9e3b14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b32c88468621870abae97720a9e3b14"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isSuspended</b> { false }</td></tr>
-<tr class="separator:a3b32c88468621870abae97720a9e3b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac311d9ffe7fee2b9ddf022dc943634fa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac311d9ffe7fee2b9ddf022dc943634fa"></a>
-<a class="el" href="struct_a_z_std_1_1thread__desc.html">AZStd::thread_desc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mainLoopDesc</b></td></tr>
-<tr class="separator:ac311d9ffe7fee2b9ddf022dc943634fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a9270e6a2002bbc701c4072cd3adabde8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9270e6a2002bbc701c4072cd3adabde8"></a>
-static constexpr u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#a9270e6a2002bbc701c4072cd3adabde8">ProfilerColor</a> = 0x0080ffff</td></tr>
-<tr class="memdesc:a9270e6a2002bbc701c4072cd3adabde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A lite shade of blue. (See <a href="https://www.color-hex.com/color/0080ff">https://www.color-hex.com/color/0080ff</a>). <br/></td></tr>
-<tr class="separator:a9270e6a2002bbc701c4072cd3adabde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a4eee74a148efcdbb088e93c47b98d601"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_a_z_1_1_i_o_1_1_scheduler.html#a4eee74a148efcdbb088e93c47b98d601">AZ::IO::Scheduler::Order</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a4eee74a148efcdbb088e93c47b98d601aadbb2e98a86f8fb74b4d969f3aa2b1c4"></a>FirstRequest</em>&nbsp;</td><td class="fielddoc">
-<p>The first request is the most important to process next. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a4eee74a148efcdbb088e93c47b98d601acfdf92346e29fa5b5731c2f0c752064b"></a>SecondRequest</em>&nbsp;</td><td class="fielddoc">
-<p>The second request is the most important to process next. </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a4eee74a148efcdbb088e93c47b98d601af5f286e73bda105e538310b3190f75c5"></a>Equal</em>&nbsp;</td><td class="fielddoc">
-<p>Both requests are equally important. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a2d90d32c0203ccc547f47024850476e3"></a>
 <div class="memitem">
@@ -263,7 +143,7 @@ static constexpr u32&#160;</td><td class="memItemRight" valign="bottom"><a class
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:00 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:18:22 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

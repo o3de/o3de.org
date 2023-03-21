@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_framework_1_1_xcb_native_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::XcbNativeWindow Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
@@ -115,93 +113,6 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanToggleFull
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDpiScaleFactor</b> () const </td></tr>
 <tr class="separator:a5456a546c77363425872658641e4fd0a inherit pub_methods_class_az_framework_1_1_native_window_1_1_implementation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ae8bfa02bca519e24c166d9d49743c1c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8bfa02bca519e24c166d9d49743c1c8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateXcbResult</b> (xcb_void_cookie_t cookie)</td></tr>
-<tr class="separator:ae8bfa02bca519e24c166d9d49743c1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08680eb600be159eb60ba669cc7c5a0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08680eb600be159eb60ba669cc7c5a0c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>WindowSizeChanged</b> (const uint32_t width, const uint32_t height)</td></tr>
-<tr class="separator:a08680eb600be159eb60ba669cc7c5a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3de55822a891c99a4bc95fee7b98826"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3de55822a891c99a4bc95fee7b98826"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>SetAtom</b> (xcb_window_t window, xcb_atom_t atom, xcb_atom_t type, size_t len, void *data)</td></tr>
-<tr class="separator:ac3de55822a891c99a4bc95fee7b98826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b402c89e2ed9d7d38531704b63add41"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b402c89e2ed9d7d38531704b63add41"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetAtom</b> (const char *atomName)</td></tr>
-<tr class="separator:a9b402c89e2ed9d7d38531704b63add41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e34143e788dead03f1c3a0fa4c15d5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e34143e788dead03f1c3a0fa4c15d5b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeAtoms</b> ()</td></tr>
-<tr class="separator:a0e34143e788dead03f1c3a0fa4c15d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc86d925f3bc88f7e39afc4918ebdee2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc86d925f3bc88f7e39afc4918ebdee2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetWMStates</b> ()</td></tr>
-<tr class="separator:afc86d925f3bc88f7e39afc4918ebdee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a9b958e330d557014ebcde63bfbbcc38c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b958e330d557014ebcde63bfbbcc38c"></a>
-xcb_connection_t *&#160;</td><td class="memItemRight" valign="bottom"><b>m_xcbConnection</b> = nullptr</td></tr>
-<tr class="separator:a9b958e330d557014ebcde63bfbbcc38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e6a62a4a8d4bfeb792c7c58804a9cc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e6a62a4a8d4bfeb792c7c58804a9cc3"></a>
-xcb_screen_t *&#160;</td><td class="memItemRight" valign="bottom"><b>m_xcbRootScreen</b> = nullptr</td></tr>
-<tr class="separator:a2e6a62a4a8d4bfeb792c7c58804a9cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf15894c1a35aaf1268b83f643c8b78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaf15894c1a35aaf1268b83f643c8b78"></a>
-xcb_window_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_xcbWindow</b> = 0</td></tr>
-<tr class="separator:aaaf15894c1a35aaf1268b83f643c8b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f332fc3d0731b178d005fa26c046538"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f332fc3d0731b178d005fa26c046538"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_posX</b></td></tr>
-<tr class="separator:a7f332fc3d0731b178d005fa26c046538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0263cd45484f014bf6114107d494d31a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0263cd45484f014bf6114107d494d31a"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_posY</b></td></tr>
-<tr class="separator:a0263cd45484f014bf6114107d494d31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c26918d90007453eb8e28fc17654766"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c26918d90007453eb8e28fc17654766"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_fullscreenState</b> = false</td></tr>
-<tr class="separator:a5c26918d90007453eb8e28fc17654766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09973b4eef6087e4030e900c609b7489"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09973b4eef6087e4030e900c609b7489"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_horizontalyMaximized</b> = false</td></tr>
-<tr class="separator:a09973b4eef6087e4030e900c609b7489"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb0741580b68255ca70e9b28d5d85af2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb0741580b68255ca70e9b28d5d85af2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_verticallyMaximized</b> = false</td></tr>
-<tr class="separator:abb0741580b68255ca70e9b28d5d85af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88bfe455a9c957bb3e65ea7027509d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad88bfe455a9c957bb3e65ea7027509d4"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>WM_PROTOCOLS</b></td></tr>
-<tr class="separator:ad88bfe455a9c957bb3e65ea7027509d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf8008a6922216099d639eb982b5367a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf8008a6922216099d639eb982b5367a"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>WM_DELETE_WINDOW</b></td></tr>
-<tr class="separator:aaf8008a6922216099d639eb982b5367a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4998141d3e251d6e9aab76b970a6515b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4998141d3e251d6e9aab76b970a6515b"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_ACTIVE_WINDOW</b></td></tr>
-<tr class="separator:a4998141d3e251d6e9aab76b970a6515b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc9f03ab01f8e5083e9b9065d4acd2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fc9f03ab01f8e5083e9b9065d4acd2e"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_WM_BYPASS_COMPOSITOR</b></td></tr>
-<tr class="separator:a9fc9f03ab01f8e5083e9b9065d4acd2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15a896462fa0a36b5e9cfcaa949d690e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15a896462fa0a36b5e9cfcaa949d690e"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_WM_STATE</b></td></tr>
-<tr class="separator:a15a896462fa0a36b5e9cfcaa949d690e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8105ca94b9d704208ee75441921a59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f8105ca94b9d704208ee75441921a59"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_WM_STATE_FULLSCREEN</b></td></tr>
-<tr class="separator:a0f8105ca94b9d704208ee75441921a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9789b72d01d50c07955b7fd296204dec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9789b72d01d50c07955b7fd296204dec"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_WM_STATE_MAXIMIZED_VERT</b></td></tr>
-<tr class="separator:a9789b72d01d50c07955b7fd296204dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8050435f8a278ab88e6e09fc8c1444a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8050435f8a278ab88e6e09fc8c1444a6"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_WM_STATE_MAXIMIZED_HORZ</b></td></tr>
-<tr class="separator:a8050435f8a278ab88e6e09fc8c1444a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa766cf209ba38ff085966cb061aa89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affa766cf209ba38ff085966cb061aa89"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_MOVERESIZE_WINDOW</b></td></tr>
-<tr class="separator:affa766cf209ba38ff085966cb061aa89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95cec32bbfa25a140fd243011f73ee4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95cec32bbfa25a140fd243011f73ee4e"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_REQUEST_FRAME_EXTENTS</b></td></tr>
-<tr class="separator:a95cec32bbfa25a140fd243011f73ee4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e4d68c73fc18243c7e689a5d934664b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e4d68c73fc18243c7e689a5d934664b"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_FRAME_EXTENTS</b></td></tr>
-<tr class="separator:a5e4d68c73fc18243c7e689a5d934664b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcaea57ab923d120ca8d61fbc329f606"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcaea57ab923d120ca8d61fbc329f606"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_WM_PID</b></td></tr>
-<tr class="separator:adcaea57ab923d120ca8d61fbc329f606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0926771c5a07f58a627b1a426f79c0c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0926771c5a07f58a627b1a426f79c0c4"></a>
-xcb_atom_t&#160;</td><td class="memItemRight" valign="bottom"><b>_NET_WM_PING</b></td></tr>
-<tr class="separator:a0926771c5a07f58a627b1a426f79c0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_class_az_framework_1_1_native_window_1_1_implementation"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_az_framework_1_1_native_window_1_1_implementation')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_az_framework_1_1_native_window_1_1_implementation.html">AzFramework::NativeWindow::Implementation</a></td></tr>
@@ -225,7 +136,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_activated</b> = fal
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:39 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:00 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

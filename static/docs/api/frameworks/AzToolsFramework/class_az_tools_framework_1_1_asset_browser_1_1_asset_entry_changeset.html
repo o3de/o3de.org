@@ -53,8 +53,6 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_az_tools_framework_1_1_asset_browser_1_1_asset_entry_changeset-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzToolsFramework::AssetBrowser::AssetEntryChangeset Class Reference</div>  </div>
@@ -93,51 +91,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddProduct</b> (const
 <tr class="memitem:a1657a6962a76d526e4707c4a5060eb05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1657a6962a76d526e4707c4a5060eb05"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveProduct</b> (const AZ::Data::AssetId &amp;assetId)</td></tr>
 <tr class="separator:a1657a6962a76d526e4707c4a5060eb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a749139732323fe5f736a9c8f47d5f297"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a749139732323fe5f736a9c8f47d5f297"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>QueryEntireDatabase</b> ()</td></tr>
-<tr class="separator:a749139732323fe5f736a9c8f47d5f297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a542544ad21339601804a12d27aacec55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a542544ad21339601804a12d27aacec55"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>QueryChangeset</b> ()</td></tr>
-<tr class="separator:a542544ad21339601804a12d27aacec55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ae8535dd15839e5cc05396a57bf2dfe84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8535dd15839e5cc05396a57bf2dfe84"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_asset_database_1_1_asset_database_connection.html">AssetDatabase::AssetDatabaseConnection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_databaseConnection</b></td></tr>
-<tr class="separator:ae8535dd15839e5cc05396a57bf2dfe84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75115f61743e1636165e313877b2d7aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75115f61743e1636165e313877b2d7aa"></a>
-AZStd::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_root_asset_browser_entry.html">RootAssetBrowserEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootEntry</b></td></tr>
-<tr class="separator:a75115f61743e1636165e313877b2d7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ecadfdc0ab1753dac341b49f04501e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07ecadfdc0ab1753dac341b49f04501e"></a>
-AZStd::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_entry_changeset.html#a07ecadfdc0ab1753dac341b49f04501e">m_mutex</a></td></tr>
-<tr class="memdesc:a07ecadfdc0ab1753dac341b49f04501e"><td class="mdescLeft">&#160;</td><td class="mdescRight">protects read/write to m_entries <br/></td></tr>
-<tr class="separator:a07ecadfdc0ab1753dac341b49f04501e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4594037c2150b8e36f9973842729b6de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4594037c2150b8e36f9973842729b6de"></a>
-AZStd::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_fullUpdate</b></td></tr>
-<tr class="separator:a4594037c2150b8e36f9973842729b6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f7ffedbdef985b3758843693769f875"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f7ffedbdef985b3758843693769f875"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_updated</b></td></tr>
-<tr class="separator:a0f7ffedbdef985b3758843693769f875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc112bde27f3da5415bb7b21fb73f751"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc112bde27f3da5415bb7b21fb73f751"></a>
-AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_entry_change.html">AssetEntryChange</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_changes</b></td></tr>
-<tr class="separator:afc112bde27f3da5415bb7b21fb73f751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc1267dd6430cc4f4f5aab29df3d6a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cc1267dd6430cc4f4f5aab29df3d6a2"></a>
-AZStd::vector&lt; AZ::s64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileIdsToAdd</b></td></tr>
-<tr class="separator:a0cc1267dd6430cc4f4f5aab29df3d6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86066b2f2cc4bacec47612010c6b5ad3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86066b2f2cc4bacec47612010c6b5ad3"></a>
-AZStd::vector&lt; AZ::Uuid &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sourceUuidsToAdd</b></td></tr>
-<tr class="separator:a86066b2f2cc4bacec47612010c6b5ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad83fabcd73e5c135c534a34c40a52485"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad83fabcd73e5c135c534a34c40a52485"></a>
-AZStd::vector&lt; AZ::Data::AssetId &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_productAssetIdsToAdd</b></td></tr>
-<tr class="separator:ad83fabcd73e5c135c534a34c40a52485"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92bd997267174b9380c19d0b2b731492"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92bd997267174b9380c19d0b2b731492"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_relativePath</b></td></tr>
-<tr class="separator:a92bd997267174b9380c19d0b2b731492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/AssetBrowser/AssetEntryChangeset.h</li>
@@ -145,7 +98,7 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_relativePa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2023 22:57:43 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2023 00:19:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
