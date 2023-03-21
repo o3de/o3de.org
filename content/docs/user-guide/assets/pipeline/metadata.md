@@ -99,4 +99,4 @@ This setting is mainly useful to help allow manual renaming of assets, but can h
 Since Asset Processor Batch is intended for use with automated processes, it will not create metadata files and will not use the meta creation delay, regardless of what settings are configured.  It will make use of any existing metadata files however.
 
 ## Limitations
-Metadata relocation currently only supports UUID-based references.  That means references from code (C++, Lua, AZSL, etc) which typically reference files by path will break when a file is moved/renamed and will need to be updated through some other means.  This also applies in the case of a file type being enabled when there are still other files which may reference it by path.
+Metadata relocation currently only supports UUID-based references.  That means references from code (C++, Lua, AZSL, etc) which typically reference files by path will break when a file is moved or renamed and will need to be updated through some other means.  This also applies in the case of a file type being enabled when there are still other files which may reference it by path.
