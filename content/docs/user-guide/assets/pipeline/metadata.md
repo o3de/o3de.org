@@ -28,7 +28,8 @@ Examples:
 * If textures/hat.png is moved to character/hat.png, the metadata file must be moved to character/hat.png.meta.
 
 
-If using source control, metadata files **must** be checked in along with the source asset and updated with any move/rename changes.
+If using source control, metadata files **must be checked in** along with the source asset and updated to match any move or rename changes to those assets.
+
 
 There is one exception to the above, which is Intermediate Asset metadata files.  These metadata files follow the same rules as Intermediate Assets: they should not be modified or checked into source control.
 
