@@ -13,6 +13,12 @@ Design Doc: https://github.com/o3de/sig-content/blob/main/rfcs/rfc-77-metadata-a
 
 User Doc: **TBD**
 
+## Why it's needed
+Content creators often want to rename and move files, to improve project organization, and to fix typos. However, there are challenges with renaming and moving files: content tends to reference other content, and renaming or moving one file can potentially break incoming references to that file, from other files. Metadata relocation allows for the stabilization of asset identification via a UUID that remains the same as a file is moved and renamed, so that the file references can automatically handle that file operation.
+
+## Why use sidecar files
+Asset ID stabilization via sidecar files provides a low friction workflow for asset relocation that can be done outside of O3DE tools, including with the source control tools that teams are probably already using. Other solutions either involve leaving bread crumb files or bread crumb information that can become a long term maintenance headache, or attempting to do a reference fix up every time a file is relocated or renamed, requiring custom tools to manage that reference fix up. In both cases, content creators may still move a file without using those systems, breaking references. Sidecar files are visible and discoverable, so content creators are more likely to move assets with the sidecar files, keeping references between assets in a project more stable long term.
+
 ## High level design
 
 ### Key pieces of the system:
@@ -48,6 +54,8 @@ There are serveral unit tests for each system.  Most can be found in these locat
 Below is a rough list of most filetypes supported by the engine categorized by relocatability based on analysis of their dependencies.  Testing and deeper analysis may reveal some of these types require more work to be fully supported.
 
 ### Files which may already work
+All references to these files appear to be done via AssetID.  The sub IDs generated for product assets of these source assets appear to be stable and not based on the source asset names. 
+
 * animgraph
 * azasset
 * dat
@@ -75,6 +83,8 @@ Below is a rough list of most filetypes supported by the engine categorized by r
 * setreg
 
 ### Files which require some work to support
+Fully supporting asset relocation for assets in this category will require some improvements to the usage of these assets. Work to support files in this category can include: Stabilizing product asset sub ID, so that when a file is renamed, the sub IDs of product assets don't change, and changing references to these assets (or their product assets) from other assets to use asset IDs instead of relative paths.
+
 * azshadervariant
 * shader, materialpipeline, template
 * material
@@ -86,6 +96,7 @@ Below is a rough list of most filetypes supported by the engine categorized by r
 * texture file types (jpg, png, dds, tif, etc)
 
 ### Unknown
+These are files which need further analysis to determine if support is useful or feasible and how much work, if any, is required to fully support them
 * materialtype - referenced by FBX files - suspect this is a code based dependency
 * shader, attimage - referenced by binary pass file and shadervariantlist
 * tfxbone, tfxmesh - referenced by binary tfx file
@@ -93,12 +104,14 @@ Below is a rough list of most filetypes supported by the engine categorized by r
 * shadervariantlist - referenced by shadervariantlist.  There is a relative path to a shader file, JSON format
 
 ### Too generic
+These file extensions tend to be used by a variety of different types of content, which means that a file extension based approach to supporting relocation won't work as cleanly here. XML files, for example, can describe multiple different types of content, some of which will handle asset relocation easier than others. The easiest path forward to supporting relocation for this kind of content is to get content types to use specific file extensions instead of these generic ones. For example, even though prefab files are in the json format, they do not have the json extension.
 * xml - referenced by uicanvas
 * json - referenced by materialtype
 * txt - no existing references
 * ini - no existing references, but may be referenced by code
 
 ### Not suggested to support
+These are files where users generally want to use path based references between files, and sidecar meta files would be seen more as clutter than a useful tool to stabilize these paths. Code files like Python, for example, already have an established pattern for referencing other Python files, so it does not make sense to try and use meta files to stabilize the references here.
 * lua - source code file with text references to other lua files
 * py - source code (also referenced by FBX files)
 * azsl, azsli, srgi - referenced by shader files as a rel path string in a simple JSON data file
