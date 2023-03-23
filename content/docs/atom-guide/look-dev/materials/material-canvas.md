@@ -4,9 +4,11 @@ description: Learn how to use the Material Canvas to create material types and s
 toc: true
 ---
 
-**Material Canvas** is a tool that allows you to create and preview custom material types and shaders by assembling node-based material graphs instead of manually managing and hand-editing multiple JSON files or writing shader code in AZSL. 
+**Material Canvas** is a tool that allows you to create and preview custom material types and shaders by assembling node-based material graphs. Drag, drop, connect, and configure nodes instead of hand-editing and managing multiple JSON files or writing shader code. 
 
-Material Canvas is built on top of the same foundations as established tools like Script Canvas and Material Editor. It provides many of the same familiar features and workflows.
+Material Canvas is built on top of the same foundations as established tools like Script Canvas and Material Editor. It provides many of the same, familiar features, windows, and workflows as those and other related tools. You can open and edit multiple documents at once, undo or redo most actions, rearrange and dock all of the various window panels, create and save custom layouts, extend and automate with C++, Python, and PyQt, and much more.
+
+The library of available material graph nodes can also be extended by creating new nodes in C++, JSON, or Python. All of the current nodes are created with basic JSON config files, located in the Material Canvas assets folder. The material graph node files can also be created and edited from within Material Canvas. The files are simple enough that sometimes it might be faster to copy an existing material graph node config file, give it a unique UUID, and customize it by hand.
 
 This section introduces Material Canvas and describes the editor layout and its individual panels.
 
@@ -24,7 +26,7 @@ You can launch Material Canvas from the **Open 3D Engine (O3DE)** Editor, or as 
 
 - As a standalone application, launch the executable `<build>\bin\profile\MaterialCanvas.exe`.
   
-  - This requires you to specify your project path as a command line argument.
+  - This requires you to specify your --project-path as a command line argument.
 
 #### Create or edit a material graph
 You can create a new material graph or open an existing material graph from the File menu in Material Canvas, or from the Context menu in the Asset Browser: 
@@ -37,7 +39,7 @@ You can create a new material graph or open an existing material graph from the 
   
   - You may also use the **Open Recent** menu option to select a previously opened document.
   
-    - Material Canvas supports editing Other document types like Material graph node config files and shader source data config files. These will also appear in the recent files list.
+    - Material Canvas supports editing other document types like Material Graph Node Config and Shader Source Data config files. These will also appear in the recent files list.
 
 - From the Context menu in the Asset Browser:
   
@@ -72,7 +74,7 @@ The File menu contains options to manage the Material Canvas and material files.
 | Exit |  | Close the Material Canvas. |
 
 ### Edit Menu
-The Edit menu contains options that are useful while editing the selected, open document. 
+The Edit menu contains options that are useful while editing the selected, open document. The available menu actions may change based on the type of open document.
 
 | Menu item | Hotkey | Function |
 | - | - | - |
@@ -80,7 +82,7 @@ The Edit menu contains options that are useful while editing the selected, open 
 | Redo | **Ctrl+Y** | Redo the most recent action that was undone.  |
 
 ### View Menu
-The view menu lets you switch between document tabs and manage layouts within Material Canvas.
+The view menu lets you switch between document tabs and manage layouts within Material Canvas. The available menu actions may change based on the type of open document.
 
 | Menu item | Hotkey | Function |
 | - | - | - |
@@ -114,22 +116,28 @@ The Help menu provides support and resources for the Material Canvas.
 Material Canvas and other Atom Tools support opening and editing multiple document types, documents, and views. The main views and content for each document will be displayed as part of the central window.
 
 ### Document Tabs
-The top of the central window has a tab bar that displays a tab for each open document. The tab bar highlights the tab for the active document. You can switch between open documents by clicking on their title in the tab bar. You can close each document by clicking the X on its tab and perform other actions made available by right clicking on the tab. Tabs can be dragged and reordered but they cannot be undocked. Switching tabs will also update the inspector to display properties for the newly selected document.
+The top of the central window displays tabs for each open document. The tab bar highlights the tab for the active document. You can switch between open documents by clicking on their title in the tab bar. You can close each document by clicking the X on its tab and perform other actions made available by right clicking on the tab. Tabs can be dragged and reordered but they cannot be undocked. Switching tabs will also update the inspector to display properties for the newly selected document.
 
 ### Graph View
-The main document type in Material Canvas is the material graph. Each material graph document tab displays a gridded, graph view as the main workspace for displaying and manipulating graph nodes and connections.
+The main document type in Material Canvas is the material graph. Each material graph document tab displays a gridded, graph view as the main workspace for viewing and editing graph nodes and connections.
 
 ## Node Palette 
-The node palette displays a tree containing items for all of the nodes that can be dragged into and created on the graph. Dragging a node from the node palette onto the graph view will create the corresponding node on the graph. 
+The node palette displays a tree of items for all of the nodes that can be dragged on to the graph. Dragging a node from the node palette on to the graph view will create the corresponding node at the drop position. 
 
 ## Bookmarks
-Use the bookmarks window to manage a list of bookmarks that have been added to the graph. Bookmarks can be added to the graph by right clicking and using the context menu in the graph view. Double clicking on a bookmark in the bookmark window will move the graph view to that position on the graph. 
+Use the bookmarks window to manage a list of bookmarks that have been added to the graph. Bookmarks can be added to the graph by right clicking and using the context menu in the graph view. Double clicking on a bookmark in the bookmark window will move the graph view its position. 
 
 ## Mini Map 
 Use the minimap window to view and navigate a zoomed out version of the graph view. 
 
 ## Inspector
-In the **Inspector**, you can configure the properties for the active material. The **Details** group shows the material's material type and optional parent material properties. All other property groups depend on the material type and are defined in the `.materialtype` file. See the [Material Type Reference](/docs/atom-guide/look-dev/materials/material-type-file-spec/) for all the material types in Atom and the property groups in each. 
+In the **Inspector**, you can configure the properties for the active document. Each document type will show relevant groups of editable properties in the inspector. 
+
+ - Material graph documents will display properties for each selected node.
+
+ - Material graph node config documents will display editable properties for the node and each of its slots.
+
+ - Shader graph source data documents will display all of the available settings 4 shader source data, render states, compilation settings, and so on.
 
 ## Asset Browser
 The **Asset Browser** allows you to search for assets across O3DE, Gems, and other project folders. In the Material Canvas, the Asset Browser is automatically filtered to show image and material assets. You can display more assets by changing the filter. When an asset is selected, a preview of the asset is shown on the side. 
