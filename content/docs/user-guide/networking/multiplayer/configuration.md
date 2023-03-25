@@ -11,7 +11,7 @@ If your O3DE project is already in development and you want to add multiplayer s
 
 ## Creating a multiplayer project from the multiplayer template {#creating-project-from-template}
 
-To create a multiplayer project from the multiplayer template, you will need O3DE version 22.10 or later. You must first add the template from the [O3DE Extras GitHub repo](https://github.com/o3de/o3de-extras) to your library of O3DE templates using **Project Manager**. Then you will be able to create a new project from the template.
+To create a multiplayer project from the O3DE multiplayer template, you will need O3DE version 22.10 or later. You must first add the template from the [O3DE Extras GitHub repo](https://github.com/o3de/o3de-extras) to your library of O3DE templates using **Project Manager**. Then you will be able to create a new project from the template.
 
 1. In Project Manager, choose **New Project**, then **Create New Project**.
 
