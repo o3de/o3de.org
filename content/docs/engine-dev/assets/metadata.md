@@ -1,7 +1,8 @@
 ---
 linkTitle: Metadata Relocation
 title: Metadata Relocation
-description: Classes that facilitate metadata relocation system
+description: Describes the classes that facilitate the Open 3D Engine (O3DE) metadata relocation system, which enables asset files to be moved or renamed without breaking references.
+
 weight: 100
 ---
 
@@ -96,15 +97,18 @@ Fully supporting asset relocation for assets in this category will require some 
 * texture file types (jpg, png, dds, tif, etc)
 
 ### Unknown
-These are files which need further analysis to determine if support is useful or feasible and how much work, if any, is required to fully support them
+These are files which need further analysis to determine if support is useful or feasible and how much work, if any, is required to fully support them.
+
 * materialtype - referenced by FBX files - suspect this is a code based dependency
 * shader, attimage - referenced by binary pass file and shadervariantlist
-* tfxbone, tfxmesh - referenced by binary tfx file
+* tfxbone, tfxmesh - referenced by binary TFX file
+
 * pak - may be referenced by code? legacy asset
 * shadervariantlist - referenced by shadervariantlist.  There is a relative path to a shader file, JSON format
 
 ### Too generic
-These file extensions tend to be used by a variety of different types of content, which means that a file extension based approach to supporting relocation won't work as cleanly here. XML files, for example, can describe multiple different types of content, some of which will handle asset relocation easier than others. The easiest path forward to supporting relocation for this kind of content is to get content types to use specific file extensions instead of these generic ones. For example, even though prefab files are in the json format, they do not have the json extension.
+These file extensions tend to be used by a variety of different types of content, which means that a file extension based approach to supporting relocation won't work as cleanly here. XML files, for example, can describe multiple different types of content, some of which will handle asset relocation easier than others. The easiest path forward to supporting relocation for this kind of content is to get content types to use specific file extensions instead of these generic ones. For example, even though prefab files are in the JSON format, they do not have the JSON extension.
+
 * xml - referenced by uicanvas
 * json - referenced by materialtype
 * txt - no existing references
@@ -112,6 +116,7 @@ These file extensions tend to be used by a variety of different types of content
 
 ### Not suggested to support
 These are files where users generally want to use path based references between files, and sidecar meta files would be seen more as clutter than a useful tool to stabilize these paths. Code files like Python, for example, already have an established pattern for referencing other Python files, so it does not make sense to try and use meta files to stabilize the references here.
-* lua - source code file with text references to other lua files
+* lua - source code file with text references to other Lua files
+
 * py - source code (also referenced by FBX files)
-* azsl, azsli, srgi - referenced by shader files as a rel path string in a simple JSON data file
+* azsl, azsli, srgi - referenced by shader files as a relative path string in a simple JSON data file

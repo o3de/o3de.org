@@ -11,4 +11,4 @@ weight: 400
 
 | Name | Description |
 |-|-|
-| [Metadata Relocation](./metadata) | Learn about how the Metadata Relocation system functions, where the code is, and which file types may or may not be supported |
+| [Metadata Relocation](./metadata) | Learn about how the Metadata Relocation system functions, where the code is, and which file types may or may not be supported. |
