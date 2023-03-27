@@ -45,7 +45,7 @@ To enable the AWS GameLift Gem in your project:
 
 You must include the AWS GameLift Gem static library in your project's CMake build target.
 
-1. **(Required)** You must include **Gem::AWSGameLift.Server.Static** as one of the **BUILD_DEPENDENCIES** for your project's server target. For an example of a networked project configured with distinct server and client targets, see the [O3DE Multiplayer project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Multiplayer) or the [O3DE Multiplayer Sample project](https://github.com/o3de/o3de-multiplayersample).
+1. **(Required)** You must include **Gem::AWSGameLift.Server.Static** as one of the **BUILD_DEPENDENCIES** for your project's server target. For an example of a networked project configured with distinct server and client targets, see the [O3DE Multiplayer project template](https://github.com/o3de/o3de-extras/blob/development/Templates/Multiplayer/Template/Gem/Code/CMakeLists.txt) or the [O3DE Multiplayer Sample project](https://github.com/o3de/o3de-multiplayersample/blob/development/Gem/Code/CMakeLists.txt).
 
     ```cpp
     ly_add_target(
