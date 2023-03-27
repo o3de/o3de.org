@@ -59,7 +59,7 @@ O3DE asset system is a key part of managing and loading assets in a project. Thi
 
 | Name | Description |
 |-|-|
-| [Metadata Relocation](./metadata) | Learn about how the Metadata Relocation system functions, where the code is, and which file types may or may not be supported. |
+| [Metadata Relocation](./assets/metadata) | Learn about how the Metadata Relocation system functions, where the code is, and which file types may or may not be supported. |
 
 ## Included Tools
 
