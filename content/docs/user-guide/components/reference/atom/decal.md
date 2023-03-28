@@ -7,18 +7,18 @@ toc: true
 
 The **Decal** component enables an entity to project a material onto a mesh. A large number of overlapping decals can be applied to a single mesh.
 
-There are currently a few limitations with the decal component.
-- Only 5 total different decal sizes are currently supported. All decals used should be one of 5 arbitrary sizes.
-- All decal materials should specify both a base color and normal map. If any decal material is missing a normal map, then no decals will use a normal map.
-- The base color and normal textures must be the same size.
-
 ## Provider ##
 
 [Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
+## Limitations ##
+
+There are currently a few limitations with the decal component:
+- Only 5 total different decal sizes are currently supported. All decals used should be one of 5 arbitrary sizes.
+- All decal materials should specify both a base color and normal map. If any decal material is missing a normal map, then no decals will use a normal map.
+- The base color and normal textures must be the same size.
 
 ## Properties
-
 
 ![Decal component UI](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-ui-01.png)
  
