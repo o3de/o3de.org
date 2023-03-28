@@ -174,6 +174,7 @@ The following components are grouped by type as they appear in the O3DE Editor.
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
 | [PhysX Mesh Collider](./physx/mesh-collider/) | Allows you to specify PhysX mesh assets to calculate collisions between entities. |
 | [PhysX Primitive Collider](./physx/collider/) | Allows you to specify primitive shapes to calculate collisions between entities. |
+| [PhysX Prismatic Joint](/docs/user-guide/components/reference/physx/prismatic-joint/) | Creates a dynamic prismatic joint that constrains an entity to the joint keeping the same rotation but allowing to move freely along one axis.|
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
 | [PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) | Defines the entity as a non-movable rigid object that is solid and can collide with other PhysX entities. |
 | [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/) | Creates a geometric collider based on the **Shape** component. |

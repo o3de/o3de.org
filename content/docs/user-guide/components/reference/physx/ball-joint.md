@@ -32,7 +32,7 @@ When **Breakable** is enabled, specify the maximum force the joint can sustain b
 When **Breakable** is enabled, specify the maximum torque the joint can sustain before breaking. Valid values range from **0.01** to **Infinity**.
 
 **Display Setup in Viewport**
-When enabled, a cone that represents the orientation and limits of the ball joint and a line that represents the connection between the joint and its leader are displayed. The shape of the cone is defined by the **Y axis angular limit** and the **Z axis angular limit**.
+When enabled, a cone that represents the orientation and limits of the ball joint and a line that represents the connection between the joint and its follower are displayed. The shape of the cone is defined by the **Y axis angular limit** and the **Z axis angular limit**.
 
 **Select Lead on Snap**
 When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.
