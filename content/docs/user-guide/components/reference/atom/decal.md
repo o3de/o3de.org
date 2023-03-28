@@ -13,9 +13,9 @@ The **Decal** component enables an entity to project a material onto a mesh. A l
 
 ## Limitations ##
 
-There are currently a few limitations with the decal component:
-- Only 5 total different decal sizes are currently supported. All decals used should be one of 5 arbitrary sizes.
-- All decal materials should specify both a base color and normal map. If any decal material is missing a normal map, then no decals will use a normal map.
+There are a few limitations with the Decal component:
+- While decal textures can be any arbitrary resolution, the decal system only supports up to 5 unique texture resolutions. You can create additional decal textures, but the texture resolution must be one of the 5 sizes already in use.
+- All decal materials must specify both a base color and normal map. If any decal material is missing a normal map, then no decals will use a normal map.
 - The base color and normal textures must be the same size.
 
 ## Properties
