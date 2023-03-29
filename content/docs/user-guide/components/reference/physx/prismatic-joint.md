@@ -6,7 +6,7 @@ title: PhysX Prismatic Joint Component
 
 
 
-With the **PhysX Prismatic Joint** component, you can create a dynamic prismatic joint that constrains an entity to the joint keeping the same rotation but allowing to move freely along one axis.
+With the **PhysX Prismatic Joint** component, you can create a dynamic prismatic joint that constrains an entity to the joint, keeping the same rotation but allowing it to move freely along one axis.
 
 ## PhysX Prismatic Joint component properties 
 
@@ -19,7 +19,7 @@ Specify the position of the joint relative to the entity transform.
 Specify the rotation of the joint relative to the entity transform.
 
 **Lead Entity**
-Specify the parent entity that will drive the joint.
+Specify the lead (parent) entity that will drive the joint.
 
 **Breakable**
 When enabled, the joint will break if sufficient force is applied. Enabling **Breakable** exposes the **Maximum Force** and **Maximum Torque** properties.

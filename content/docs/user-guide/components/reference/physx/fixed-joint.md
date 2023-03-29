@@ -19,7 +19,7 @@ Specify the position of the joint relative to the entity transform.
 Specify the rotation of the joint relative to the entity transform.
 
 **Lead Entity**
-Specify the parent entity that will drive the joint.
+Specify the lead (parent) entity that will drive the joint.
 
 **Breakable**
 When enabled, the joint will break if sufficient force is applied. Enabling **Breakable** exposes the **Maximum Force** and **Maximum Torque** properties.
