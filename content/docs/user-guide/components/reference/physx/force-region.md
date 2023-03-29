@@ -165,7 +165,7 @@ You can create a force region so that force applies to another entity that enter
 
 1. To collide an entity with the force region, create a dynamic entity named *Sphere* and attach the **PhysX Primitive Collider** and **PhysX Dynamic Rigid Body** components. These components enable the entity to interact with other PhysX entities.
 
-1. (Optional) Add a **Mesh** component and, for **Mesh asset**, select a mesh asset, such as a `primitive_sphere.cgf`.
+1. (Optional) Add a **Mesh** component and, for **Mesh asset**, select a mesh asset, such as a `_sphere_1x1.fbx`.
 
 1. Select and drag the **Sphere** entity so that it's above the force region.
 
