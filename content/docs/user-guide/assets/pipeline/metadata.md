@@ -6,7 +6,8 @@ weight: 600
 toc: true
 ---
 
-Metadata Asset Relocation allows files to be moved and renamed freely without breaking existing references by storing a UUID in a side-car file (.meta).  See the [Asset Metadata Relocation RFC](https://github.com/o3de/sig-content/blob/main/rfcs/rfc-77-metadata-asset-relocation.md) for technical details on how the system works
+Metadata Asset Relocation is an experimental feature that allows files to be moved and renamed freely without breaking existing references by storing a UUID in a side-car file (.meta).  See the [Asset Metadata Relocation RFC](https://github.com/o3de/sig-content/blob/main/rfcs/rfc-77-metadata-asset-relocation.md) for technical details on how the system works
+
 
 By default, the metadata system is currently disabled because not all file types can be relocated without issue currently.  Each asset file type must be enabled individually in the settings.  Once an asset file type is enabled, the Asset Processor will generate a metadata file for every file of the given type on startup.  Any file which has a metadata associated with it can then be moved or renamed.  The Asset Processor does not need to be running when moving or renaming files and there are no special tools required to do so.
 
@@ -56,7 +57,8 @@ Once a metadata file is generated for an asset and the asset is relocated or any
 
 > AssetProcessor will continue to use existing metadata files for assets which have them, regardless of the above settings.
 
-## Renaming while AP is running
+## Renaming while Asset Processor is running
+
 By default, renaming assets manually while Asset Processor is running can prove difficult as AP will try to immediately create a new metadata file for the renamed asset.  To prevent this, AP can be configured to wait for a specified time before it attempts to process a "new" asset, which avoids the automatic creation of an unwanted, new metadata file.  
 
 > This delay will affect all newly created assets for metadata-enabled types and is off by default.  The longer the delay time, the longer it will take AP to start processing any newly created metadata-enabled file type.
