@@ -53,6 +53,14 @@ This section is currently incomplete, with a stub example for the ScriptCanvas G
 |-|-|
 | [Script Canvas](./gems/scriptcanvas) | Learn about the internals of the Script Canvas system, including how Script Canvas handles types and generates bindings from C++ source code. |
 
+## Assets
+
+O3DE asset system is a key part of managing and loading assets in a project. This section of the Engine Developer Guide provides details on various asset related systems to help developers extend or modify the systems for their needs.
+
+| Name | Description |
+|-|-|
+| [Metadata Relocation](./assets/metadata) | Learn about how the Metadata Relocation system functions, where the code is, and which file types may or may not be supported. |
+
 ## Included Tools
 
 O3DE includes a handful of tools to support project development. Examples include **Asset Processor** (`AssetProcessor.exe`) and **Project Manager** (`o3de.exe`). This section of the Engine Developer Guide is for tools like these that are not part of any Gem. In these pages you will find detailed information and diagrams describing their architecture, for the benefit of developers who want to modify them.
