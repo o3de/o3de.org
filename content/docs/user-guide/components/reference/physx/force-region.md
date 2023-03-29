@@ -143,7 +143,9 @@ You can create a force region so that force applies to another entity that enter
 
 1. In the **Entity Inspector**, choose **Add Component** and select a **PhysX Force Region** component.
 
-1. Choose **Add Required Component** and select the **PhysX Primitive Collider** component.
+1. In the **PhysX Force Region** component, choose **Add Required Component** and select the **PhysX Primitive Collider** component.
+
+1. In the **PhysX Primitive Collider** component, choose **Add Required Component** and select the **PhysX Static Rigid Body** component.
 
 1. For the **PhysX Primitive Collider** component, do the following.
 
