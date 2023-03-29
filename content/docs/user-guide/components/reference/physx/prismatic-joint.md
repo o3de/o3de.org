@@ -35,7 +35,7 @@ When **Breakable** is enabled, specify the maximum torque the joint can sustain 
 When enabled, two planes are displayed showing the limits of the joint. Red and green planes show the **Lower linear limit** and **Upper linear limit**. A line displays the connection between the joint and the **Follower Entity**.
 
 **Select Lead on Snap**
-When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.
+When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation. **Note:** PhysX Prismatic Joint component does not support component mode at the moment.
 
 **Lead-Follower Collide**
 When enabled, the lead entity and follower entity (the entity containing the joint component) will collide.
