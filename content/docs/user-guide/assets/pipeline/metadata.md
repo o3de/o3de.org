@@ -93,3 +93,5 @@ Since Asset Processor Batch is intended for use with automated processes, it wil
 
 ## Limitations
 Metadata relocation currently only supports UUID-based references.  That means references from code (C++, Lua, AZSL, etc) which typically reference files by path will break when a file is moved or renamed and will need to be updated through some other means.  This also applies in the case of a file type being enabled when there are still other files which may reference it by path.
+
+As this feature is still experimental, see the [engine contributors documentation](../../../../engine-dev/assets/metadata) for more information on the current state of file type support.

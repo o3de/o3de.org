@@ -15,5 +15,6 @@ The **Open 3D Engine (O3DE)** Asset Pipeline is the end-to-end process that gene
 | [Scan Directories](scan-directories) | Scan directories are monitored for new and updated source assets. |
 | [Asset Builders](asset-builders) | Asset Builders provide information for process jobs and generate product assets. |
 | [Intermediate Assets](intermediate-assets) | Intermediate assets allow builders to be chained together and re-used. |
+| [Metadata Asset Relocation (Experimental)](metadata) | Metadata Asset Relocation allows files to be moved and renamed freely without breaking existing references by storing a UUID in a side-car file (.meta). |
 | [Asset Dependencies and Identifiers](asset-dependencies-and-identifiers) | Asset dependencies and identifiers ensure that asset references can be met when assets are processed, loaded, and packaged. |
 | [Asset Cache](asset-cache) | The Asset Cache stores the runtime optimized product assets and the information **Asset Processor** needs to track assets and keep them up to date. |
