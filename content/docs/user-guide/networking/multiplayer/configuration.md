@@ -49,7 +49,7 @@ To set up the multiplayer template without using Project Manager, you will need 
 
     ```cmd
     // Example using downloaded and unzipped release version.
-    scripts\o3de.bat register -tp C:/downloads/template_multiplayer
+    scripts\o3de.bat register -tp C:/Users/<YourUserName>/Downloads/template_multiplayer
 
     // Example using cloned o3de-extras repo.
     scripts\o3de.bat register -tp C:/o3de-extras/Templates/Multiplayer
