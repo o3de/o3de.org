@@ -1,6 +1,6 @@
 ---
 linkTitle: PhysX Prismatic Joint
-description: ' Lean to use the Open 3D Engine PhysX Prismatic Joint component. '
+description: The Open 3D Engine PhysX Prismatic Joint component.
 title: PhysX Prismatic Joint Component
 ---
 

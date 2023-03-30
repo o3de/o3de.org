@@ -1,6 +1,6 @@
 ---
 linkTitle: PhysX Fixed Joint
-description: ' The Open 3D Engine PhysX Fixed Joint component. '
+description: The Open 3D Engine PhysX Fixed Joint component.
 title: PhysX Fixed Joint Component
 ---
 
