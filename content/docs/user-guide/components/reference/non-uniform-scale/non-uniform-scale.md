@@ -36,6 +36,7 @@ The following components are **incompatible** with the **Non-uniform Scale** com
 + **[PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/)**
 + **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/)**
 + **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/)**
++ **[PhysX Prismatic Joint](/docs/user-guide/components/reference/physx/prismatic-joint/)**
 + **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)**
 + **[PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/)**
 + **PhysX Character Gameplay**

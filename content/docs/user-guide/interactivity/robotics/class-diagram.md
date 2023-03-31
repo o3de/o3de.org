@@ -1,7 +1,7 @@
 ---
 linkTitle: Class Diagram
-title: O3DE ROS 2 Gem Details
-description: User guide to develop ROS 2 enabled simulation
+title: ROS 2 Gem Details
+description: Class Diagram for ROS 2 Gem in Open 3D Engine (O3DE).
 toc: true
 ---
 

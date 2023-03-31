@@ -1,16 +1,16 @@
 ---
-linkTitle: PhysX Hinge Joint
-description: The Open 3D Engine PhysX Hinge Joint component.
-title: PhysX Hinge Joint Component
+linkTitle: PhysX Prismatic Joint
+description: The Open 3D Engine PhysX Prismatic Joint component.
+title: PhysX Prismatic Joint Component
 ---
 
 
 
-With the **PhysX Hinge Joint** component, you can create a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.
+With the **PhysX Prismatic Joint** component, you can create a dynamic prismatic joint that constrains an entity to the joint, keeping the same rotation but allowing it to move freely along one axis.
 
-## PhysX Hinge Joint component properties 
+## PhysX Prismatic Joint component properties 
 
-![Properties of the PhysX Hinge Joint component](/images/user-guide/physx/physx/ui-physx-hinge-joint-component.png)
+![Properties of the PhysX Prismatic Joint component](/images/user-guide/physx/physx/ui-physx-prismatic-joint-component.png)
 
 **Local Position**
 Specify the position of the joint relative to the entity transform.
@@ -32,10 +32,10 @@ When **Breakable** is enabled, specify the maximum force the joint can sustain b
 When **Breakable** is enabled, specify the maximum torque the joint can sustain before breaking. Valid values range from **0.01** to **Infinity**.
 
 **Display Setup in Viewport**
-When enabled, three planes are displayed showing the orientation and limits of the joint. Red and green planes show the **Positive angular limit** and **Negative angular limit**. The white plane shows the 0 degree rotation of the joint. The shared edge of the three planes is the x-axis of the hinge joint. A line displays the connection between the joint and the **Follower Entity**.
+When enabled, two planes are displayed showing the limits of the joint. Red and green planes show the **Lower linear limit** and **Upper linear limit**. A line displays the connection between the joint and the **Follower Entity**.
 
 **Select Lead on Snap**
-When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.
+When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation. **Note:** PhysX Prismatic Joint component does not support component mode at the moment.
 
 **Lead-Follower Collide**
 When enabled, the lead entity and follower entity (the entity containing the joint component) will collide.
@@ -52,11 +52,14 @@ When **Soft Limit** is enabled, the spring's drive relative to the velocity of t
 **Stiffness**
 When **Soft Limit** is enabled, the spring's drive relative to the position of the follower when outside the rotation limit. Valid values range from **0.001** to **1000000.0**.
 
-**Positive angular limit**
-When **Limit** is enabled, the positive rotation limit around the joint's axis. Valid values range from **0.1** to **360.0**.
+**Lower linear limit**
+When **Limit** is enabled, the lower limit of linear motion of the joint. Valid values range from **-1000** to **1000**.
 
-**Negative angular limit**
-When **Limit** is enabled, the negative rotation limit around the joint's axis. Valid values range from **0.1** to **360.0**.
+**Upper linear limit**
+When **Limit** is enabled, the upper limit of linear motion of the joint. Valid values range from **-1000** to **1000**.
 
-**Edit**
-When clicked, component edit mode is enabled. In component edit mode, all components are locked except for the **PhysX Ball Joint** component. The properties of the **PhysX Ball Joint** component can be edited in **Perspective**. Press **Tab** to cycle through the component edit modes. Click **Done** to exit component mode.
+**Use Motor**
+When enabled, it uses the motor of the joint.
+
+**Force Limit Value**
+When **Use Motor** is enabled, the force limit value of the joint. Valid values range from **-Infinity** to **Infinity**.
