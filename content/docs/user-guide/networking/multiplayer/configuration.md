@@ -11,19 +11,19 @@ If your O3DE project is already in development and you want to add multiplayer s
 
 ## Creating a multiplayer project from the multiplayer template {#creating-project-from-template}
 
-To create a multiplayer project from the O3DE multiplayer template, you will need O3DE version 22.10 or later. You must first add the template from the [O3DE Extras GitHub repo](https://github.com/o3de/o3de-extras) to your library of O3DE templates using **Project Manager**. Then you will be able to create a new project from the template.
+To create a multiplayer project from the O3DE multiplayer template, you need O3DE version 22.10 or later. You must first add the template from the [O3DE Extras GitHub repo](https://github.com/o3de/o3de-extras) to your library of O3DE templates using **Project Manager**. Then you will be able to create a new project from the template.
 
 1. In Project Manager, choose **New Project**, then **Create New Project**.
 
 1. Choose **Add remote template**.
 
-1. In the **Add a remote template** dialog box, enter `https://github.com/o3de/o3de-extras.git` as the Remote URL. Then choose **Add**. This registers the GitHub repo as a remote source.
+1. In the **Add a remote template** dialog box, enter `https://github.com/o3de/o3de-extras.git` as the **Remote URL**. Then choose **Add**. This registers the GitHub repo as a remote source.
 
 1. Select the new template named **Multiplayer**. This selects the template for the new project.
 
 1. Choose **Download Template** (in the bottom right of the New Project window), then choose the location where the template will be downloaded. Choose **Download**.
 
-1. With the template downloaded, you can configure your project with additional Gems. Choose **Create Project** when ready to create the new project.
+1. With the template downloaded, you can configure your project with additional Gems. Choose **Create Project** when you're ready to create the new project.
 
 1. Choose **Build Project - Build Now** from the project's icon box to build the project.
 
