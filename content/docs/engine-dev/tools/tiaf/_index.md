@@ -19,5 +19,4 @@ The **Test Impact Analysis Framework** (TIAF) is the implementation of change-ba
 | Name | Description |
 |-|-|
 | [Architectural Overview](./architectural-overview) | Learn about the architecture of the TIAF and its various subsystems.|
-| [Extending TIAF](./extending-tiaf) | This contains the information for extending the TIAF.|
 | [Maintaining TIAF](./maintaining-tiaf) | This contains the information necessary for maintaining the TIAF.|
