@@ -23,4 +23,4 @@ Visit the [Contributor Guide for Open 3D Engine](/docs/contributing/) for all th
 
 ## Roadmaps
 
-Check out the [SIG Roadmaps](/docs/contributing/roadmaps) for the latest news about what we're working! Participate in discussions, develop new features or resolve some issues, and influence the overall direction of O3DE.
+Check out the [SIG Roadmaps](/docs/contributing/roadmaps) for the latest news about what we're working on! Participate in discussions, develop new features or resolve some issues, and influence the overall direction of O3DE.
