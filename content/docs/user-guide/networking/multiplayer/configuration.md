@@ -13,11 +13,13 @@ If your O3DE project is already in development and you want to add multiplayer s
 
 To create a multiplayer project from the O3DE multiplayer template, you need O3DE version 22.10 or later. You must first add the template from the [O3DE Extras GitHub repo](https://github.com/o3de/o3de-extras) to your library of O3DE templates using **Project Manager**. Then you will be able to create a new project from the template.
 
-1. In Project Manager, choose **New Project**, then **Create New Project**.
+1. In Project Manager, choose **New Project**, then **Create New Project**. For help with using Project Manager to create projects, refer to [Creating projects using Project Manager](/docs/user-guide/project-config/project-manager/#creating-projects-using-project-manager).
 
 1. Choose **Add remote template**.
 
 1. In the **Add a remote template** dialog box, enter `https://github.com/o3de/o3de-extras.git` as the **Remote URL**. Then choose **Add**. This registers the GitHub repo as a remote source.
+
+    {{< image-width src="/images/user-guide/networking/multiplayer/add_extra_templates.png" width="700" alt="Enter O3DE Extras repo URL in Add Remote Template dialog box." >}}
 
 1. Select the new template named **Multiplayer**. This selects the template for the new project.
 
