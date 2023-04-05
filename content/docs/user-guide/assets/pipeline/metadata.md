@@ -1,36 +1,37 @@
 ---
-linkTitle: Metadata Asset Relocation
-title: Metadata Asset Relocation
-description: In Open 3D Engine (O3DE), Metadata Asset Relocation allows files to be moved and renamed freely without breaking existing references by storing a UUID in a side-car file (.meta).
+linkTitle: Moving/Renaming Assets
+title: Moving/Renaming Assets
+description: In Open 3D Engine (O3DE), files can be moved and renamed freely without breaking existing references by storing a UUID in a side-car file (.meta).
 weight: 600
 toc: true
 ---
 
-Metadata Asset Relocation is an experimental feature that allows files to be moved and renamed freely without breaking existing references by storing a UUID in a side-car file (.meta).  See the [Asset Metadata Relocation RFC](https://github.com/o3de/sig-content/blob/main/rfcs/rfc-77-metadata-asset-relocation.md) for technical details on how the system works
+Moving/renaming files freely without breaking existing references is possible through the experimental metadata feature which stores a UUID in a side-car file (.meta).  See the [Asset Metadata Relocation RFC](https://github.com/o3de/sig-content/blob/main/rfcs/rfc-77-metadata-asset-relocation.md) for technical details on how the system works
 
+By default, the metadata system is disabled because not all file types can be relocated without issue currently.  Each asset file type must be enabled individually in the settings.  Once an asset file type is enabled, the Asset Processor will generate a metadata file for every file of the given type on startup.  Any file which has a metadata associated with it can then be moved or renamed.  The Asset Processor does not need to be running when moving or renaming files and there are no special tools required to do so.
 
-By default, the metadata system is currently disabled because not all file types can be relocated without issue currently.  Each asset file type must be enabled individually in the settings.  Once an asset file type is enabled, the Asset Processor will generate a metadata file for every file of the given type on startup.  Any file which has a metadata associated with it can then be moved or renamed.  The Asset Processor does not need to be running when moving or renaming files and there are no special tools required to do so.
+Example metadata file:
+```json
+{
+    "FileVersion": 1,
+    "UUID": {
+        "uuid": "{931ADFA6-0578-4932-9C39-EA4A921A30DE}",
+        "legacyUuids": [
+            "{2336F175-E6FD-5A11-87B4-04B00088CADD}",
+            "{45F2B574-8C8B-5D2B-8833-E99CEBD18F14}"
+        ],
+        "originalPath": "ScriptCanvas/ForceDebug.scriptcanvas",
+        "creationUnixEpochMS": 1679507888552,
+        "__version": 0
+    }
+}
+```
+Example of metadata files in a source directory:
 
-## How to use
-Moving or renaming assets can be done either in the editor via the asset browser or using any file management tool of your choosing, such as the File Explorer in Windows.
-
-There is only one requirement when moving or renaming an asset, which is **the metadata file must be moved or renamed as well**.
-
-Folders can be moved or renamed without having to touch metadata files, but all files within a folder **must have a metadata file** to ensure existing references do not break.
-
-Examples:
-
-* If blue.png is renamed to red.png, the metadata file blue.png.meta must be renamed to red.png.meta.
-* If textures/hat.png is moved to character/hat.png, the metadata file must be moved to character/hat.png.meta.
-
-If using source control, metadata files **must be checked in** along with the source asset and updated to match any move or rename changes to those assets.
-
-There is one exception to the above, which is Intermediate Asset metadata files.  These metadata files follow the same rules as Intermediate Assets: they should not be modified or checked into source control.
-
-When relocating an asset, the asset's ID will remain stable, so existing references will continue to work.  Assets are typically referenced using the `Asset<T>` type which includes an asset hint, which is a human readable string containing the last known location of the referenced file.  If a file is moved or renamed, the next time a file referencing it is saved, this may show up as a change which wasn't expected.  For example: File1.ext references File2.ext, and stores the asset reference to File2.ext. This contains both the asset ID, and the human readable asset hint that contains the file name File2.ext. When File2.ext is renamed to FileB.ext, the asset ID will remain the same. The next time File1.ext is saved, the data will change because the asset hint has changed.
+![Metadata files in directory](/images/user-guide/assets/pipeline/metadata.png)
 
 ## How to Enable
-To enable a file type, create a .setreg file with the following settings:
+To enable metadata generation for a set of file types, create a .setreg file (`<project or gem directory>/Registry` is suggested) with the following settings:
 ```json
 {
     "O3DE":
@@ -56,6 +57,24 @@ It is highly recommended that this setreg file be placed in a central location, 
 Once a metadata file is generated for an asset and the asset is relocated or any references are saved using the newly generated UUID, the metadata file must be kept alongside the asset.  Not doing so could break references to the file.
 
 > AssetProcessor will continue to use existing metadata files for assets which have them, regardless of the above settings.
+
+## How to use
+Moving or renaming assets can be done either in the editor via the asset browser or using any file management tool of your choosing, such as the File Explorer in Windows.
+
+There is only one requirement when moving or renaming an asset, which is **the metadata file must be moved or renamed as well**.
+
+Folders can be moved or renamed without having to touch metadata files, but all files within a folder **must have a metadata file** to ensure existing references do not break.
+
+Examples:
+
+* If blue.png is renamed to red.png, the metadata file blue.png.meta must be renamed to red.png.meta.
+* If textures/hat.png is moved to character/hat.png, the metadata file must be moved to character/hat.png.meta.
+
+If using source control, metadata files **must be checked in** along with the source asset and updated to match any move or rename changes to those assets.
+
+There is one exception to the above, which is Intermediate Asset metadata files.  These metadata files follow the same rules as Intermediate Assets: they should not be modified or checked into source control.
+
+When relocating an asset, the asset's ID will remain stable, so existing references will continue to work.  Assets are typically referenced using the `Asset<T>` type which includes an asset hint, which is a human readable string containing the last known location of the referenced file.  If a file is moved or renamed, the next time a file referencing it is saved, this may show up as a change which wasn't expected.  For example: File1.ext references File2.ext, and stores the asset reference to File2.ext. This contains both the asset ID, and the human readable asset hint that contains the file name File2.ext. When File2.ext is renamed to FileB.ext, the asset ID will remain the same. The next time File1.ext is saved, the data will change because the asset hint has changed.
 
 ## Renaming while Asset Processor is running
 
