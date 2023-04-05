@@ -7,7 +7,7 @@ blog_img: "/images/blog/mps-sample/image01.png"
 full_img: "/images/blog/mps-sample/image01.png"
 ---
 
-We are happy to announce the release of the O3DE Multiplayer Sample Game (MPS). The MPS is a fully open source mini game where players battle one another for dominance in a multi-tiered, under-construction, Starbase. This new sample game is intended to serve as an example for the O3DE community to use in the creation of other games as well as to demonstrate a number of features in O3DE, including networking, material canvas, asset creation best practices, and the setup of visual effects setup using the [PopcornFX gem](https://github.com/PopcornFX/O3DEPopcornFXPlugin), and audio effects using the [WWise gem](https://github.com/o3de/o3de/tree/development/Gems/AudioEngineWwise). 
+We are happy to announce the release of the O3DE Multiplayer Sample Game (MPS). The MPS is a fully open source mini-game where players battle one another for dominance in a multi-tiered, under-construction, Starbase. This new sample game is intended to serve as an example for the O3DE community to use in the creation of other games as well as to demonstrate a number of features in O3DE, including networking, material canvas, asset creation best practices, and the setup of visual effects setup using the [PopcornFX gem](https://github.com/PopcornFX/O3DEPopcornFXPlugin), and audio effects using the [WWise gem](https://github.com/o3de/o3de/tree/development/Gems/AudioEngineWwise). 
 
 The design intent of the MPS was to create something that would be fun to play, feature exciting exploration that rewarded player mastery, have clear risk vs. reward elements, and feature both player vs. environment, and player vs. player gameplay. We also wanted it to be highly configurable and expandable so that the O3DE community continue to iterate and add to it. From a technical angle, we also wanted a multi-faceted game that would provide a platform to test against when adding new systems to O3DE.
 
@@ -25,13 +25,13 @@ This sample was created through a partnership between AWS Gametech, Adobe, KitBa
 In order to setup and build the MPS you will need to get follow the setup instructions for these two repositories:
 
 1. [Multiplayer Sample Assets](https://github.com/o3de/o3de-multiplayersample-assets#readme)
-2. [Multiplater Sample Assets Development](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md)
+2. [Multiplayer Sample Assets Development](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md)
 
 
 
 ## Multiplayer Sample Game Design
 
-{{< image-width src="/images/blog/mps-sample/image02.png" width="100%" alt="MPS Game Design." >}} The MPS is a combination of player vs. player and collection gameplay. You and other players compete to earn as many points as you can before the match ends. Points are earned by picking up the gems that spawn around the level. Additionally, you and the rest of the players have an energy shield that protects you. When you shoot other players and when they shoot you, your shield is damaged. Once your shields are depleted, you will respawn, but at the cost of some of your accumulated points.
+{{< image-width src="/images/blog/mps-sample/image02.png" width="100%" alt="MPS Game Design." >}} The MPS is a combination of player vs. player and player vs. environment. You and other players compete to earn as many points as you can before the match ends. Points are earned by picking up the gems that spawn around the level. Additionally, you and the rest of the players have an energy shield that protects you. When you shoot other players and when they shoot you, your shield is damaged. Once your shields are depleted, you will respawn, but at the cost of some of your accumulated points. If you cause another player to respawn, they will drop some of their gems for you to collect.
 
 ### Gems & Rounds
 
