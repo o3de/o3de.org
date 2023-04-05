@@ -71,7 +71,9 @@ You must include the AWS GameLift Gem static library in your project's CMake bui
     }
    ```
 
-3. **(Optional)**  Clients do not need to include the following library to join a game session.  Generally, clients do not make requests directly to GameLift, instead, they connect to game platform servers that make all GameLift service requests as well as provide account sign-in, identity management, updates, and information about game modes. However, if you need to make GameLift service requests in C++ directly from the client, then you must include **Gem::AWSGameLift.Client.Static** as **BUILD_DEPENDENCIES** for your client target. Refer to [GameLift service API Reference](https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-awssdk.html) for more information on the Amazon GameLift service API.
+3. **(Optional)**  Clients do not need to include the GameLift client library to join a game session.  It is [recommended that clients do not make requests directly to GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift_quickstart_customservers_designbackend.html), instead, they connect to game platform servers that make all GameLift service requests on behalf of players, as well as provide account sign-in, identity management, updates, and information about game modes. 
+
+However, if you need to make GameLift service requests in C++ directly from the client during development or for testing, then you must include **Gem::AWSGameLift.Client.Static** as **BUILD_DEPENDENCIES** for your client target. Refer to [GameLift service API Reference](https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-awssdk.html) for more information on the Amazon GameLift service API.
     ```cpp
     ly_add_target(
         NAME YourProject.Client.Static STATIC
