@@ -506,3 +506,18 @@ Below is the CRUD rule rubrik for the `PythonTestSelectorAndPrioritizor` that is
 |        | Yes               | Yes                   | Irrelevant            | Irrelevant    | 1. The existing file has been deleted.                                                                          | 1. Log *source to target mapping* and *Source Covering Test List integrity compromised* error. |
 |        |                   |                       |                       |               | 2. This file still exists in one or more source to target mapping artifacts.                                    | 2. Throw exception.                                                                        |
 |        |                   |                       |                       |               | 3. There exists coverage data for this file in the Source Covering Test List.                                   |                                                                                            |
+
+## Runtime return codes
+
+Below is the table of the return codes returned by either runtime and their meaning.
+
+| Return Code | Meaning                                                                                               |
+|-------------|-------------------------------------------------------------------------------------------------------|
+| 0           | The instigated operation(s) returned without error.                                                   |
+| 1           | The specified command line arguments were incorrect.                                                  |
+| 2           | The specified change list could not parsed or was malformed.                                          |
+| 3           | The runtime encountered an error that it could not recover from.                                      |
+| 4           | The framework encountered an error that it anticipated but did not handle and could not recover from. |
+| 5           | An error of unknown origin was encountered that the console or runtime could not recover from.        |
+| 6           | The test sequence had one or more test failures.                                                      |
+| 7           | The test sequence runtime exceeded the global timeout value.                                          |
