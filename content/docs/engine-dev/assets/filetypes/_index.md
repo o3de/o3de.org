@@ -13,3 +13,4 @@ weight: 400
 |-|-|
 | [Scene Files](./fbx-support) | Overview of what work is required for scene files (FBX, etc). |
 | [Texture Files](./texture-support) | Overview of what work is required for texture files (PNG, JPG, etc). |
+| [Prefab Files](./prefab-support) | Overview of what work is required for prefab files. |
