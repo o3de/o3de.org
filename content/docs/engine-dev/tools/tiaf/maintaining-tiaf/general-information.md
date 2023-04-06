@@ -40,7 +40,7 @@ It is advised that you place your `LABELS` after the test target name and before
 
 # How do I enrol a native test for test sharding optimization?
 
-Test sharding is an optional optimization that can greatly boost the speed at which test targets are run (see XXX for more information). As the question implies, the test sharding optimization is only available for native tests. In order to opt a test target into test sharding, simply add either  `TIAF_shard_test` or `TIAF_shard_fixture` label when registering the test, like so:
+Test sharding is an optional optimization that can greatly boost the speed at which test targets are run (see [`NativeInstrumentedTestRunner`](../architectural-overview/runtime-frontend/#native-sharded-test-runners) for more information). As the question implies, the test sharding optimization is only available for native tests. In order to opt a test target into test sharding, simply add either  `TIAF_shard_test` or `TIAF_shard_fixture` label when registering the test, like so:
 
 ```
 ly_add_googletest(
