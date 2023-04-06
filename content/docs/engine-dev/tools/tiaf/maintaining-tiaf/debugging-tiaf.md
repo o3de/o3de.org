@@ -94,7 +94,7 @@ In the log above, we can extract all of the information about the AR run and run
 To reproduce this particular AR run, we would perform the following steps:
 
 1. Check out the commit `59e24a62859ce8a932e338f36432e3228621c1ec`.
-2. Use the [storage query tool]() to retrieve the relevant historic data for this run.
+2. Use the [storage query tool](./storage-query-tool.md) to retrieve the relevant historic data for this run.
 3. Build the commit.
 4. Place the historic data in the local historic data folder (see the historic workspace entry in any of the tiaf.json files in the TestImpactFramework folder in your build directory).
 5. Run the TIAF AR script with the the following arguments (omitting the S3 bucket so that local persistent storage is used):
@@ -106,7 +106,7 @@ To reproduce this particular AR run, we would perform the following steps:
 Alternatively, the runtime itself may be explicitly invoked (and a debugger attached) using the following steps:
 
 1. Check out the commit `59e24a62859ce8a932e338f36432e3228621c1ec`.
-2. Use the [storage query tool]() to retrieve the relevant historic data for this run.
+2. Use the [storage query tool](./storage-query-tool.md) to retrieve the relevant historic data for this run.
 3. Build the commit.
 4. Place the historic data in the local historic data folder (see the historic workspace entry in any of the tiaf.json files in the TestImpactFramework folder in your build directory).
 5. Run the Python runtime with the same arguments as the TIAF run that failed:

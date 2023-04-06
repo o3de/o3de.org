@@ -4,7 +4,7 @@ title: Architectural Overview
 description: Architectural overview of the TIAF runtime, front-end and Automated Review integration.
 ---
 
-The architecture of the test impact analysis framework (TIAF) is broadly broken down into two areas: the [Automated Review Integration](./ar-integration), which concerns the integration of the TIAF runtime binaries into O3DE's automated review pipeline, and the [Runtime and Front-End](./runtime-frontend), which concerns the architecture of the runtime and front-end binaries that run the tests and present the results to the user.
+The architecture of the test impact analysis framework (TIAF) is broadly broken down into two areas: the [Automated Review Integration](./ar-integration.md), which concerns the integration of the TIAF runtime binaries into O3DE's automated review pipeline, and the [Runtime and Front-End](./runtime-frontend), which concerns the architecture of the runtime and front-end binaries that run the tests and present the results to the user.
 
 ## Topics
 

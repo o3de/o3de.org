@@ -1,5 +1,5 @@
 ---
-linkTitle: Maintaining
+linkTitle: Maintaining the Test Impact Analysis Framework
 title: Maintaining the Test Impact Analysis Framework
 description: Information as to how to maintain the test impact analysis framework (TIAF).
 ---
@@ -18,18 +18,18 @@ description: Information as to how to maintain the test impact analysis framewor
 
 ## Debugging the TIAF
 
-[How do I configure and install OpenCppCoverage?](./debuffing-tiaf/#how-do-i-configure-and-install-opencppcoverage)
+[How do I configure and install OpenCppCoverage?](./debugging-tiaf/#how-do-i-configure-and-install-opencppcoverage)
 
-[How do I reproduce a TIAF AR run locally?]()
+[How do I reproduce a TIAF AR run locally?](./debugging-tiaf/#how-do-i-reproduce-a-tiaf-ar-run-locally)
 
-[How do I kill a local test run of the TIAF?]()
+[How do I kill a local test run of the TIAF?](./debugging-tiaf/#how-do-i-kill-a-local-test-run-of-the-tiaf)
 
-[How do I debug a flaky sharded test target?]()
+[How do I debug a flaky sharded test target?](./debugging-tiaf/#how-do-i-debug-a-flaky-sharded-test-target)
 
-[How do I fix regressions with the TIAF Python unit tests?]()
+[How do I fix regressions with the TIAF Python unit tests?](./debugging-tiaf/#how-do-i-fix-regressions-with-the-tiaf-python-unit-tests)
 
-[How do I disable a problematic test target from being run by the TIAF?]()
+[How do I disable a problematic test target from being run by the TIAF?](./debugging-tiaf/#how-do-i-disable-a-problematic-test-target-from-being-run-by-the-tiaf)
 
 ## Storage Query Tool
 
-[Overview of the storage query tool]()
+[Overview of the storage query tool](./storage-query-tool.md)
