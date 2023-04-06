@@ -5,7 +5,7 @@ description: Learn about the Amazon Shading Language Compiler (AZSLc) for Atom R
 weight: 100
 ---
 
-**Amazon Shading Language Compiler (AZSLc)** is the front end compiler of the Atom Renderer shader build pipeline. AZSLc is open source, and supports Windows, macOS, and Linux. The source code for AZSLc is available on GitHub here: [Amazon Shading Language Compiler](https://github.com/o3de/o3de-azslc).
+**Amazon Shading Language Compiler (AZSLc)** is the front-end compiler of the Atom Renderer shader build pipeline. AZSLc is open source, and supports Windows, macOS, and Linux. The source code for AZSLc is available on GitHub here: [Amazon Shading Language Compiler](https://github.com/o3de/o3de-azslc).
 
 ## Shader build pipeline
 

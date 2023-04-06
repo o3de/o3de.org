@@ -1,14 +1,14 @@
 ---
-linkTitle: Runtime & Front End
-title: Runtime & Front End
-description: Information about the TIAF Runtime and Front End.
+linkTitle: Runtime and Front-End
+title: Runtime and Front-End
+description: Information about the test impact analysis framework (TIAF) runtime and front-end architecture.
 ---
 
-The runtime and front end work together to present a unified interface to the user for selecting, prioritizing and running tests before presenting a report of the test results to the user. The runtime is responsible for performing the heavy lifting whereas the front end communicates the desired actions to the runtime and presents the results to the user.
+The runtime and front-end work together to present a unified interface to the user for selecting, prioritizing and running tests before presenting a report of the test results to the user. The runtime is responsible for performing the heavy lifting, whereas the front-end communicates the desired actions to the runtime and presents the results to the user.
 
 ## Simplified system diagram
 
-Below is a simplified diagram of the subsystems that make up the runtime and front end, and how they interact with one another (the native and Python specializations have been omitted for clarity):
+Below is a simplified diagram of the subsystems that make up the runtime and front-end, and how they interact with one another (the native and Python specializations have been omitted for clarity):
 
 ```mermaid
 flowchart TD
@@ -40,7 +40,7 @@ flowchart TD
 
 ## Artifacts
 
-The artifacts are the "plain old data structures" (PODs) that are passed to and from the runtime. These artifacts come in two flavors: *static* artifacts, and *dynamic* artifacts. These artifacts are PODs to allow them to be passed to and from the runtime without the producers and consumers of these artifacts needing to be aware of how the runtime itself models the behavior of these artifacts. These artifacts are then used to instantiated more complex types that are used by directly by the runtime via the various artifact *factories*.
+The artifacts are the "plain old data structures" (PODs) that are passed to and from the runtime. These artifacts come in two flavors: *static* artifacts, and *dynamic* artifacts. These artifacts are PODs to allow them to be passed to and from the runtime without the producers and consumers of these artifacts needing to be aware of how the runtime itself models the behavior of these artifacts. These artifacts are then used to instantiated more complex types that are used directly by the runtime via the various artifact *factories*. The location of these artifacts can be found [here](https://github.com/o3de/o3de/tree/development/Code/Tools/TestImpactFramework/Runtime/Common/Code/Include/Static/Artifact).
 
 ### Static Artifacts
 
@@ -56,7 +56,7 @@ The artifact factories take these raw POD artifacts and produce the types used i
 
 ## Test runner stack
 
-Below is a diagram that demonstrates the test runner stack. It's something between a class diagram and an omnidirectional data flow diagram but so it's best not to take the diagram too literally. Rather, you can use it as the jumping off point for a given test runner and how you will need to drill down in the code to reach the constituent classes that make up that test runner.
+Below is a diagram that demonstrates the test runner stack. It's something between a class diagram and an omnidirectional data flow diagram but so it's best not to take the diagram too literally. Rather, you can use it as the jumping off point for a given test runner and see how you will need to drill down in the code to reach the constituent classes that make up that test runner.
 
 ```mermaid
 flowchart TD
@@ -76,7 +76,7 @@ flowchart TD
     style OS fill:#fff
 ```
 
-The following is a brief overview of each part of the stack (in inverse depth order) along with its function within the stack.
+The following is a brief overview of each part of the stack (in bottom-up order) along with its function within the stack.
 
 ### ProcessScheduler
 
@@ -84,11 +84,11 @@ The `ProcessScheduler` handles the launching and lifecycle management of process
 
 #### Inputs
 
-The `ProcessScheduler` accepts a list of processes to launch in the form of `ProcessInfos` and how many should be in flight concurrently at any given time, along with optional timeout limits for how long processes may be in flight and optional callbacks for the client to listen to process state changes. Each `ProcessInfo` contains a uniquely identifier provided by the client so that the client can determine which process is being referred to in the `ProcessScheduler`'s callbacks, along with details about how standard output/error produced from the process should be routed. The invocation of a process is specified by a command string to be executed by the operating system.
+The `ProcessScheduler` accepts a list of processes to launch in the form of `ProcessInfos` and how many should be in flight concurrently at any given time, along with optional timeout limits for how long processes may be in flight and optional callbacks for the client to listen to process state changes. Each `ProcessInfo` contains a unique identifier provided by the client so that the client can determine which process is being referred to in the `ProcessScheduler`'s callbacks, along with details about how standard output/error produced from the process should be routed. The invocation of a process is specified by a command string to be executed by the operating system.
 
 #### Process
 
-The `ProcessScheduler` manages the entire lifecycle of the processes requested to be launched, including all communication with the operating system to invoke, track and terminate processes (as needed). As the state of each process changes, the appropriate callback is called (if provided by the client) with the final end of life callback containing any accumulated standard output/error if the process was instructed to route it to the client. The client returns a value to the ProcessScheduler to determine whether it should continue operating or shutdown.
+The `ProcessScheduler` manages the entire lifecycle of the processes requested to be launched, including all communication with the operating system to invoke, track and terminate processes (as needed). As the state of each process changes, the appropriate callback is called (if provided by the client) with the final end of life callback containing any accumulated standard output/error if the process was instructed to route it to the client. The client returns a value to the `ProcessScheduler` to determine whether it should continue operating or shutdown.
 
 #### Outputs
 
@@ -106,11 +106,11 @@ In order to support new platforms, you need to override the `Process` class and 
 
 ### JobRunner
 
-The `JobRunner` presents a simplified, stateful interface to the `ProcessScheduler`. Like the `ProcessScheduler`, it provides optional callbacks for the client to capture realtime standard output/error produced by processes, but instead it only provides a single lifecycle event callback upon the successful/unsuccessful process end of life event. Importantly, the JobRunner operates on the premise of each process performing work, whereupon the result of that work is a payload produced by the job. These payloads are specified in the form of an additional data structure that contains the meta-data about that payload. This is leveraged by the test runners whereupon the payloads produced are test and coverage artifacts in the form of files written to the disk by the test framework and coverage tool.
+The `JobRunner` presents a simplified, stateful interface to the `ProcessScheduler`. Like the `ProcessScheduler`, it provides optional callbacks for the client to capture realtime standard output/error produced by processes, but instead it only provides a single lifecycle event callback upon the successful/unsuccessful process end of life event. Importantly, the `JobRunner` operates on the premise of each process performing work, whereupon the result of that work is a payload produced by the job. These payloads are specified in the form of an additional data structure that contains the meta-data about that payload. This is leveraged by the test runners whereupon the payloads produced are test and coverage artifacts in the form of files written to the disk by the test framework and coverage tool.
 
 #### Inputs
 
-The `JobRunner` accepts a set of list of `JobInfos` that specify the command string, payload meta-data and unique identifier for each job, as well as the job completion callback and optional timeout limits for each job. Additionally, a `PayloadMapProducer` function is provided by the client that is invoked for each successfully completed job once all of the jobs have completed. This `PayloadMapProducer` allows the client to take the payload meta-data for each job and consume the resulting payload artifacts. For the test runners, these `PayloadMapProducers` are the necessary deserialization functions for the test framework and coverage tool to consumer their respective payload artifacts produced by each job.
+The `JobRunner` accepts a set of list of `JobInfos` that specify the command string, payload meta-data and unique identifier for each job, as well as the job completion callback and optional timeout limits for each job. Additionally, a `PayloadMapProducer` function is provided by the client that is invoked for each successfully completed job once all of the jobs have completed. This `PayloadMapProducer` allows the client to take the payload meta-data for each job and consume the resulting payload artifacts. For the test runners, these `PayloadMapProducers` are the necessary deserialization functions for the test framework and coverage tool to consume their respective payload artifacts produced by each job.
 
 {{< note >}}
 The `JobInfos` to be run by the `JobRunner` are generated by a given runner's `JobInfoGenerator` higher up in the test runner stack. These generators have been omitted from the diagram above for clarity.
@@ -118,11 +118,11 @@ The `JobInfos` to be run by the `JobRunner` are generated by a given runner's `J
 
 #### Process
 
-The JobRunner hooks into the `ProcessScheduler` and tracks the state of each process before presenting a summary of each job to the client. This summary contains information about the start time, duration, job result, return code, etc. so that the test runners can interpret the result of a given test run. Once all jobs have completed, the JobRunner invokes the client-provided `PayloadMapProducer` for each job to generate the in-memory models of the work produced by each job.
+The `JobRunner` hooks into the `ProcessScheduler` and tracks the state of each process before presenting a summary of each job to the client. This summary contains information about the start time, duration, job result, return code, etc. so that the test runners can interpret the result of a given test run. Once all jobs have completed, the `JobRunner` invokes the client-provided `PayloadMapProducer` for each job to generate the in-memory models of the work produced by each job.
 
 #### Outputs
 
-The JobRunner returns a `ProcessSchedulerResult` for the client to determine under what conditions the scheduler terminated as well as the job produced by each process invoked. These jobs contain the meta-data about the job (duration, return code, etc.) as well as the in-memory payload data structures produced by each job.
+The `JobRunner` returns a `ProcessSchedulerResult` for the client to determine under what conditions the scheduler terminated as well as the job produced by each process invoked. These jobs contain the meta-data about the job (duration, return code, etc.) as well as the in-memory payload data structures produced by each job.
 
 #### FAQ
 
@@ -148,25 +148,25 @@ The `TestJobRunner` is an intermediary base class for the `TestEnumerator` and `
 
 ### TestEnumerator
 
-The `TestEnumerator` is the base class derived from the TestJobRunner class template and partially specializes it for test frameworks that support the enumeration of tests from the command line. Once enumerated, the results may optionally be cached on the disk and re-read by future enumerations instead of invoking the test framework enumeration from the command line. Enumerated tests are stored in-memory in `TestEnumeration` data structures that contain the fixtures and tests that belong to those fixtures, as well as information about whether those tests/fixtures are enabled or disabled in the test framework.
+The `TestEnumerator` is the base class derived from the `TestJobRunner` class template and partially specializes it for test frameworks that support the enumeration of tests from the command line. Once enumerated, the results may optionally be cached on the disk and re-read by future enumerations instead of invoking the test framework enumeration from the command line. Enumerated tests are stored in-memory in `TestEnumeration` data structures that contain the fixtures and tests that belong to those fixtures, as well as information about whether those tests/fixtures are enabled or disabled in the test framework.
 
 #### Inputs
 
-The `TestEnumerator` accepts the same inputs as the JobRunner.
+The `TestEnumerator` accepts the same inputs as the `JobRunner`.
 
 #### Process
 
-The `TestEnumerator` wraps around the JobRunner's call to run the jobs and injecting its `PayloadMapProducer` and `PayloadExtractor`. Optionally, it may either attempt to read enumerations from a cache file (specified by the client) and/or store the enumerations in said cache once enumerated.
+The `TestEnumerator` wraps around the `JobRunner`'s call to run the jobs and injecting its `PayloadMapProducer` and `PayloadExtractor`. Optionally, it may either attempt to read enumerations from a cache file (specified by the client) and/or store the enumerations in said cache once enumerated.
 
 #### Outputs
 
-The `TestEnumerator` returns the same outputs as the JobRunner.
+The `TestEnumerator` returns the same outputs as the `JobRunner`.
 
 #### FAQ
 
 ##### You seem to have used the term `TestSuite` throughout the test and enumeration data structures instead of `TestFixture`. Why is this?
 
-This was a regrettable oversight from the early development days when the nomenclature borrowed from GTest's naming conventions. These will be renamed `TestFixture" in a future PR as we also have the concept of actual test suites and the current name conflict can lead to confusion.
+This was a regrettable oversight from the early development days when the nomenclature borrowed from GTest's naming conventions. These will be renamed `TestFixture` in a future PR as we also have the concept of actual test suites and the current name conflict can lead to confusion.
 
 ##### My test framework doesn't support test enumeration. Can I still implement a test enumerator?
 
@@ -186,7 +186,7 @@ The `NativeTestEnumerator` extracts enumeration payloads from GTest XML file enu
 
 #### Outputs
 
-The `NativeTestEnumerator` returns the same outputs as the TestEnumerator.
+The `NativeTestEnumerator` returns the same outputs as the `TestEnumerator`.
 
 #### FAQ
 
@@ -200,15 +200,15 @@ At the time of writing, it is not possible to arbitrarily run Python tests in pa
 
 ### TestRunnerBase
 
-The `TestRunnerBase` is the first level of the test runner stack to have awareness of the concept of running tests. It is an abstract class that wraps around the `TestJobRunner` to present an interface for running tests, with virtual and pure virtual methods for test runners to implement the PayloadMapProducers to extract their respective payloads from the completed jobs. Higher up in the stack, the `TestRunner` and `TestRunnerWithCoverage` specialize this class to implement their regular and instrumented test run behavior.
+The `TestRunnerBase` is the first level of the test runner stack to have awareness of the concept of running tests. It is an abstract class that wraps around the `TestJobRunner` to present an interface for running tests, with virtual and pure virtual methods for test runners to implement the `PayloadMapProducer`s to extract their respective payloads from the completed jobs. Higher up in the stack, the `TestRunner` and `TestRunnerWithCoverage` specialize this class to implement their regular and instrumented test run behavior.
 
 #### Inputs
 
-The TestRunnerBase accepts the same inputs as the `JobRunner`.
+The `TestRunnerBase` accepts the same inputs as the `JobRunner`.
 
 #### Process
 
-The TestRunnerBase wraps around the `JobRunner`'s call to run the jobs and injecting its `PayloadMapProducer` and `PayloadExtractor`, with the latter being implemented by the derived classes.
+The `TestRunnerBase` wraps around the `JobRunner`'s call to run the jobs and injecting its `PayloadMapProducer` and `PayloadExtractor`, with the latter being implemented by the derived classes.
 
 #### Outputs
 
@@ -254,7 +254,7 @@ The `NativeRegularTestRunner` extracts test run payloads from GTest XML files.
 
 #### Outputs
 
-The `NativeRegularTestRunner` returns the same outputs as the `TestRunner.
+The `NativeRegularTestRunner` returns the same outputs as the `TestRunner`.
 
 #### FAQ
 
@@ -313,23 +313,23 @@ The `NativeInstrumentedTestRunner` returns the same outputs as the `TestRunnerWi
 
 ### Native sharded test runners
 
-The `NativeShardedRegularTestRunner` and `NativeShardedInstrumentedTestRunner` are an optimization that split opted in test targets into shards to distribute over the available hardware cores for increased performance. They do this transparently by presenting a similar interface to the standard test runners. They do this by feeding the sharded test target `JobInfos` to said standard `NativeRegularTestRunner` and `NativeInstrumentedTestRunner` test runners (where there will potentially be multiple `JobInfos` per test target) before consolidating the output of said standard test runners into one `Job` per test target. Both of the sharded test runners derive from `NativeShardedTestRunnerBase` (not shown in the diagram above) and implement the `ConsolidateSubJobs` function. 
+The `NativeShardedRegularTestRunner` and `NativeShardedInstrumentedTestRunner` are an optimization that split opted-in test targets into shards to distribute over the available hardware cores for increased performance. They do this transparently by presenting a similar interface to the standard test runners. They do this by feeding the sharded test target `JobInfos` to said standard `NativeRegularTestRunner` and `NativeInstrumentedTestRunner` test runners (where there will potentially be multiple `JobInfos` per test target) before consolidating the output of said standard test runners into one `Job` per test target. Both of the sharded test runners derive from `NativeShardedTestRunnerBase` (not shown in the diagram above) and implement the `ConsolidateSubJobs` function. 
 
 
 #### Inputs
 
-The native sharded test runners accepts `ShardedTestJobInfos` as their input where each `ShardedTestJobInfo` contains information about the parent job that is presented to the user and the sharded sub jobs that are fed to the standard test runners.
+The native sharded test runners accept `ShardedTestJobInfos` as their input where each `ShardedTestJobInfo` contains information about the parent job that is presented to the user and the sharded sub-jobs that are fed to the standard test runners.
 
 #### Process
 
-The native sharded test runners wait until the sharded sub jobs of a given parent job are complete before presenting the appropriate notification to the user. Once all sharded sub jobs are complete, the native sharded test runners consolidate the sharded sub jobs back into the parent job and present these parent jobs to the user, as if the sharding never occured.
+The native sharded test runners wait until the sharded sub-jobs of a given parent job are complete before presenting the appropriate notification to the user. Once all sharded sub-jobs are complete, the native sharded test runners consolidate the sharded sub-jobs back into the parent job and present these parent jobs to the user, as if the sharding never occurred.
 
 #### Outputs
 
-The native sharded test runners returns the same outputs as the  `NativeRegularTestRunner` and `NativeInstrumentedTestRunner`.
+The native sharded test runners return the same outputs as the  `NativeRegularTestRunner` and `NativeInstrumentedTestRunner`.
 
 #### FAQ
 
 ##### Why are there no Python sharded test runners like the native shardedtest runner counterparts?
 
-As the python tests cannot be arbitrarily executed in parallel at the test level, there is no need for sharded Python test runners.S
+As the python tests cannot be arbitrarily executed in parallel at the test level, there is no need for sharded Python test runners.

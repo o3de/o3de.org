@@ -10,7 +10,7 @@ The user can provide a number of arguments to specify what action the tool shoul
 
 ### Differences between S3 and Local Storage Mode
 
-In S3 mode, all data is as a zipped up JSON file inside the bucket. Locally, data will be stored as a .json file. When downloading from the bucket, the SQT will decompress the files so they are readable.
+In S3 mode, all data is stored as a zipped up JSON file inside the bucket. Locally, data will be stored as a .json file. When downloading from the bucket, the SQT will decompress the files so they are readable.
 
 In Local Mode, the `read` action will open up file explorer at the provided address if the file exists, whereas in S3 mode it will download the file and save it at the user specified location.
 
@@ -73,7 +73,7 @@ tiaf_tools.py --s3-bucket "tiaf" --action "read" --full-address "RootDir/Branch/
 
 #### Update
 
-This will replace the file at the desired location with the file at `--file-in`. If no file is in bucket, do nothing.
+This will replace the file at the desired location with the file at `--file-in`. If no file is in the bucket, do nothing.
 
 ```
 tiaf_tools.py --s3-bucket "tiaf" --action "update" --full-address "RootDir/Branch/Build/TestSuite/historic_data.json.zip --file-in "C:/o3de/test.txt" --file-type="json" 

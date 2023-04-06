@@ -1,20 +1,20 @@
 ---
-linkTitle: Debugging Issues
+linkTitle: Debugging TIAF Issues
 title: Debugging Information
 description: Information as to how to debug the TIAF.
 ---
 
 # How do I configure and install OpenCppCoverage?
 
-The TIAF uses a fork of [OpenCppCoverage](https://github.com/OpenCppCoverage/OpenCppCoverage) as the instrumentation for native test targets on the Windows platform. In order to build the forked version of OpenCppCoverage, clone the [fork](https://github.com/jonawals/OpenCppCoverage.git) and checkout the branch `SourceLevelCoverage`. Form here, you can follow the [standard instructions](https://github.com/OpenCppCoverage/OpenCppCoverage/wiki) for building OpenCppCoverage.
+The TIAF uses a fork of [OpenCppCoverage](https://github.com/OpenCppCoverage/OpenCppCoverage) as the instrumentation for native test targets on the Windows platform. In order to build the forked version of OpenCppCoverage, clone the [fork](https://github.com/jonawals/OpenCppCoverage.git) and checkout the branch `SourceLevelCoverage`. From here, you can follow the [standard instructions](https://github.com/OpenCppCoverage/OpenCppCoverage/wiki) for building OpenCppCoverage.
 
 # How do I reproduce a TIAF AR run locally?
 
 {{< note >}}
-Prior to running TIAF locally, you must [clone and build the OpenCppCoverage fork](./debuffing-tiaf/#how-do-i-configure-and-install-opencppcoverage) and [enable TIAF at the CMake level](./general-information/#how-do-i-turn-the-tiaf-onoff-in-automated-review). 
+Prior to running TIAF locally, you must [clone and build the OpenCppCoverage fork](./debuffing-tiaf/#how-do-i-configure-and-install-opencppcoverage) and [enable the TIAF at the CMake level](./general-information/#how-do-i-turn-the-tiaf-onoff-in-automated-review). 
 {{< /note >}}
 
-In order to reproduce a TIAF run locally we must first obtain all of the environmental information about the run. We can do this by navigating to the appropriate Jenkins build anc clicking on either the `test_impact_analysis_profile_native` or `test_impact_analysis_profile_python` stages to retrieve the console output. At the very top of the console output, we will see the output of the TIAF AR scripts prior to the invocation of the appropriate runtime, like so:
+In order to reproduce a TIAF run locally we must first obtain all of the environmental information about the run. We can do this by navigating to the appropriate Jenkins build and clicking on either the `test_impact_analysis_profile_native` or `test_impact_analysis_profile_python` stages to retrieve the console output. At the very top of the console output, we will see the output of the TIAF AR scripts prior to the invocation of the appropriate runtime, like so:
 
 ```
 [2023-03-30T09:42:22.809Z] D:\workspace\o3de>python\python.cmd -u scripts\build\ci_build.py --platform Windows --type test_impact_analysis_profile_python 
@@ -74,7 +74,7 @@ In the log above, we can extract all of the information about the AR run and run
 
 2. The source branch was `stabilization/2305`.
 3. The destination branch was empty, indicating a branch build as opposed to a PR build.
-4. As this is a branch build, it is considered a source of truth for persistent storage.
+4. As this is a branch built, it is considered a source of truth for persistent storage.
 5. The commit being build was `59e24a62859ce8a932e338f36432e3228621c1ec`.
 6. Test impact analysis had been enabled and thus will attempt to perform selective test runs using the historic coverage data.
 7. The bucket used for the persistent storage was `o3de-tiaf` and the location of this branch's historic data is `o3de/o3de/python/stabilization/2305/profile/main-smoke/historic_data.json.zip`.
@@ -83,7 +83,7 @@ In the log above, we can extract all of the information about the AR run and run
 10. A change list was constructed for the changes between the above two commits, resulting in `0` created files, `4` updated files and `0` deleted files.
 11. The test failure policy was set to `continue` and the test suites that tests would be selected from were `main` and `smoke`.
 12. Any test targets with the label `REQUIRES_gpu` were excluded from test selection.
-13. The test target output was routed to the Jenkins concole output.
+13. The test target output was routed to the Jenkins console output.
 14. The live Python test runner was used (this feature is deprecated).
 15. The arguments used to invoke the Python runtime were a follows:
 
@@ -94,19 +94,19 @@ In the log above, we can extract all of the information about the AR run and run
 To reproduce this particular AR run, we would perform the following steps:
 
 1. Check out the commit `59e24a62859ce8a932e338f36432e3228621c1ec`.
-2. Use the [storage query tool]() to retrieve the relevant historic data fot this run.
+2. Use the [storage query tool]() to retrieve the relevant historic data for this run.
 3. Build the commit.
 4. Place the historic data in the local historic data folder (see the historic workspace entry in any of the tiaf.json files in the TestImpactFramework folder in your build directory).
-5. Run the TIAF AR script with the the following arguements (omitting the S3 bucket so that local persistent storage is used):
+5. Run the TIAF AR script with the the following arguments (omitting the S3 bucket so that local persistent storage is used):
 
 ```
 --config=<path to your config file> --src-branch=stabilization/2305 --dst-branch= --commit=59e24a62859ce8a932e338f36432e3228621c1ec --mars-index-prefix=o3de-tiaf --build-number=<pick any number> --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=python --testrunner=live --target-output=stdout
 ```
 
-Alternatively, the runtime itself may be explicitely invoked (and a debugger attached) using the following steps:
+Alternatively, the runtime itself may be explicitly invoked (and a debugger attached) using the following steps:
 
 1. Check out the commit `59e24a62859ce8a932e338f36432e3228621c1ec`.
-2. Use the [storage query tool]() to retrieve the relevant historic data fot this run.
+2. Use the [storage query tool]() to retrieve the relevant historic data for this run.
 3. Build the commit.
 4. Place the historic data in the local historic data folder (see the historic workspace entry in any of the tiaf.json files in the TestImpactFramework folder in your build directory).
 5. Run the Python runtime with the same arguments as the TIAF run that failed:
@@ -131,17 +131,17 @@ To terminate the instrumentation processes, use the following command:
 taskkill /f /im OpenCppCoverage.exe
 ```
 
-# How do I debug a flakey sharded test target?
+# How do I debug a flaky sharded test target?
 
-A flakey sharded test is a sharded test target of which one or more of the target's shards have crashed due to race conditions with other shards. As each shard is its own separate processes, the race conditions are not be due to memory corruption in the same address space as per typical mutlithreaded race conditions but instead are due to one or more of the shard processes attempting to access and mutate a common resource such as a file. Although it cannot be stated with absolute certainty that all shard race conditions are due to conflicting file accesses, all of the race conditions detected and fixed during the sharded test optimization development process were due to this. Thus, as a first point of call, if you have a flakey, sharded test target, check for file race conditions first.
+A flaky sharded test is a sharded test target of which one or more of the target's shards have crashed due to race conditions with other shards. As each shard is its own separate process, the race conditions are not due to memory corruption in the same address space as per typical mutlithreaded race conditions but instead are due to one or more of the shard processes attempting to access and mutate a common resource such as a file. Although it cannot be stated with absolute certainty that all shard race conditions are due to conflicting file accesses, all of the race conditions detected and fixed during the sharded test optimization development process were due to this. Thus, as a first point of call, if you have a flaky, sharded test target, check for file race conditions first.
 
 ## Case Study: `AzFramework.Tests` Race Conditions
 
-In order to demonstrate the best practices for troubleshooting and fixing flakey sharded test targets, we will troubleshoot and fix a real world example of such a flakey test target: `AzFramework.Tests`. As this test target has already been fixed, you can instead checkout commit `66c894f9fe15ce4cc1c1afe5ca9dbac30fde63fa` for reference which definitely does not have the fix in question.
+In order to demonstrate the best practices for troubleshooting and fixing flaky sharded test targets, we will troubleshoot and fix a real world example of such a flaky test target: `AzFramework.Tests`. As this test target has already been fixed, you can instead checkout commit `66c894f9fe15ce4cc1c1afe5ca9dbac30fde63fa` for reference which definitely does not have the fix in question.
 
 ### Diagnosing the offending test
 
-Prior to the fix in place, when this test target was opted in to TIAF and opted in to test sharding optimization, it would frequently crash due to the sharding. In order to identify the likely suspect test(s) causing the race conditions, we can search the log for the string `Possible file race condition detected for test target`, whereupon we find the following warning message:
+Prior to having the fix in place, when this test target was opted-in to TIAF and opted-in to test sharding optimization, it would frequently crash due to the sharding. In order to identify the likely suspect test(s) causing the race conditions, we can search the log for the string `Possible file race condition detected for test target`, whereupon we find the following warning message:
 
 ```
 Shard:
@@ -157,7 +157,7 @@ C:\dev\o3de-tiaf-feature-python\Code\Framework\AzCore\AzCore/std/smart_ptr/intru
 Shard: ==================================================================
 ```
 
-The above warning prints out the last 500 characters of standard output produced by that shard's process. Critically, we can see that the Google Test log ends abruptly with the line `error: You can't dereference a null pointer` rather than the usual test summary of a Google Test target that terminated gracefully. This is the smoking gun we need, as it clearly show the test `ArchiveCompression/ArchiveCompressionTestFixture.TestArchivePacking_CompressionWithOverridenArchiveData_PackIsValid/5` crashing. If we were to look at the source code for that test and we see any sort of file access, we can be almost certain that this is the race condition between the shards causing the crash:
+The above warning prints out the last 500 characters of standard output produced by that shard's process. Critically, we can see that the Google Test log ends abruptly with the line `error: You can't dereference a null pointer` rather than the usual test summary of a Google Test target that terminated gracefully. This is the smoking gun we need, as it clearly shows the test `ArchiveCompression/ArchiveCompressionTestFixture.TestArchivePacking_CompressionWithOverridenArchiveData_PackIsValid/5` crashing. If we were to look at the source code for that test and we see any sort of file access, we can be almost certain that this is the race condition between the shards causing the crash:
 
 ```c++
 TEST_P(ArchiveCompressionTestFixture, TestArchivePacking_CompressionWithOverridenArchiveData_PackIsValid)
@@ -213,7 +213,7 @@ ArchiveCompressionTestFixture()
 }
 ```
 
-What this does is alias `@usercache@` to a fodler with a unique name in the OS temp folder that will be cleaned up after the test target has completed. With this fix in place, we can now use `AzFramework.Tests` with the sharding optimization enabled without any further crashes due to file race conditions.
+What this does is alias `@usercache@` to a folder with a unique name in the OS temp folder that will be cleaned up after the test target has completed. With this fix in place, we can now use `AzFramework.Tests` with the sharding optimization enabled without any further crashes due to file race conditions.
 
 # How do I fix regressions with the TIAF Python unit tests?
 
@@ -221,20 +221,18 @@ If any tests starting with the name `TestTiaf` or as part of `test_tiaf_unit_tes
 
 ### Configuring the environment
 
-
-
 ----
 
-If you find  start failing, you must look to the test suite in `scripts/build/TestImpactAnalysis/Testing`
+If you find tests start failing, you must look to the test suite in `scripts/build/TestImpactAnalysis/Testing`:
 
-test_tiaf_tools.py  contains the relevant tests for the Storage Query Tool, and
+`test_tiaf_tools.py` contains the relevant tests for the Storage Query Tool.
 
-test_tiaf_unit_tests.py  contains the relevant tests for the TIAF python scripts
+`test_tiaf_unit_tests.py`  contains the relevant tests for the TIAF python scripts.
 
-conftest.py contains the fixtures that are used by both test scripts, and is a good place to start when updating tests with new features and command arguments.
+`conftest.py` contains the fixtures that are used by both test scripts, and is a good place to start when updating tests with new features and command arguments.
 
 
-This example config snippet will allow you to run TIAF pytests locally in vscode. Just copy and paste it into your existing settings.json(or create it if need be)
+This example config snippet will allow you to run TIAF pytests locally in vscode. Just copy and paste it into your existing `settings.json` (or create it if need be):
 
 ```json
 {
