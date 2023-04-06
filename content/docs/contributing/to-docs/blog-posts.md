@@ -10,4 +10,4 @@ Blog posts are an important and semi-formal way to deliver announcements, insigh
 
 ## Submit a blog
 
-If you're interested in writing or contributing to blogs about the Open 3D Engine, you can find a wealth of resources, including a detailed guide, templates, examples, and more, by visiting the [Blog Process](https://github.com/o3de/community/process-docs-and-markdown/blog-process.md) guide.
+If you're interested in writing or contributing to blogs about the Open 3D Engine, you can find a wealth of resources, including a detailed guide, templates, examples, and more, by visiting the [Blog Process](https://github.com/o3de/community/tree/main/process-docs-and-markdown/blog-process.md) guide.
