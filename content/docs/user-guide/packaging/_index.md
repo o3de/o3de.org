@@ -2,7 +2,7 @@
 linkTitle: Packaging and Release
 title: Packaging and Release
 weight: 1600
-description: Learn how to create release and content update packages your Open 3D Engine (O3DE) project.
+description: Learn how to create release and content update packages for your Open 3D Engine (O3DE) project.
 ---
 
 The topics in this section provide information about how to prepare and package your **Open 3D Engine (O3DE)** project for release, and create content patch packages for post release updates.
