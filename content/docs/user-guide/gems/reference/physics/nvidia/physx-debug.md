@@ -9,7 +9,7 @@ The PhysX Debug Gem provides features to debug visualizations for your PhysX sce
 
 When you enter console variables or the use the **ImGui** tool, you can view the PhysX debug lines in editor and game modes. This Gem uses data directly from PhysX to show a culled (limited by proximity to the camera) view of the simulated world in real time.
 
-In editor mode, this Gem displays PhysX shapes within a given distance of the viewport camera. In game mode, this Gem uses the currently active camera to visualize a culled view of the the PhysX scene.
+In editor mode, this Gem displays PhysX shapes within a given distance of the viewport camera. In game mode, this Gem uses the currently active camera to visualize a culled view of the PhysX scene.
 
 This Gem includes the following features:
 + Visualize debug rendering of physics geometry, such as collision primitives, terrain, shapes, and forces.

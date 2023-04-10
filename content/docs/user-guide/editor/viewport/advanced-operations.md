@@ -51,7 +51,7 @@ You can use the ditto feature for a group of entities. This makes it easier for 
 
 1. In the viewport, select a group of entities.
 
-1. Press and hold **Ctrl** and press the **middle mouse button** as you hover over a target entity to match the the group's transform data to the target's data.
+1. Press and hold **Ctrl** and press the **middle mouse button** as you hover over a target entity to match the group's transform data to the target's data.
 
    In the following example, a group selection of tires use the ditto feature to match a target entity, the car.
 

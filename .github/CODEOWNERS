@@ -3,7 +3,7 @@
 * @o3de/sig-docs-community-maintainers
 
 # Ownership owners
-/.github/CODEOWNERS @o3de/sig-chairs
+/.github/CODEOWNERS @o3de/sig-docs-community-maintainers
 
 # Default owner directories
 # These directories have default owners and also exceptions that will be specified in later groups.
@@ -21,6 +21,7 @@
 /package.json @o3de/sig-docs-community-site-reviewers
 
 # Community content
+/content/blog/ @o3de/sig-docs-community-reviewers
 /content/community/ @o3de/sig-docs-community-reviewers 
 /content/contribute/ @o3de/sig-docs-community-reviewers 
 /layouts/blog/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers 
@@ -31,8 +32,15 @@
 /layouts/partials/contribute/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/blog-display.html @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/css.html @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
+/static/images/blog/ @o3de/sig-docs-community-reviewers 
 /static/images/community/ @o3de/sig-docs-community-reviewers 
 /static/images/contribute/ @o3de/sig-docs-community-reviewers 
+/CONTRIBUTING.md @o3de/sig-docs-community-reviewers
+/README.md @o3de/sig-docs-community-reviewers
+
+# Release content
+/content/docs/release-notes/ @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
+/static/images/release-notes/ @o3de/sig-docs-community-maintainers @o3de/sig-release-maintainers
 
 # Docs content
 /content/smoketest.md @o3de/sig-docs-community-reviewers
@@ -43,9 +51,13 @@
 /layouts/docs/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/docs @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 
+# Tech sig content
+/content/docs/engine-dev/ @o3de/Reviewers
+/static/images/engine-dev/ @o3de/Reviewers
+
 # Shared community and docs content
 /content/docs/contributing/ @o3de/sig-docs-community-reviewers
-/content/docs/contributing/to-code/ @o3de/sig-docs-community-reviewers @o3de/reviewers
+/content/docs/contributing/to-code/ @o3de/sig-docs-community-reviewers @o3de/Reviewers
 /static/images/contributing/ @o3de/sig-docs-community-reviewers 
 
 # Foundation-owned materials
@@ -59,11 +71,3 @@
 /static/video/ @o3de/lf
 /static/apple-touch-icon*.png @o3de/lf
 /static/favicon.ico @o3de/lf
-
-# Should not be modified in development
-/content/docs/release-notes/ @o3de/sig-chairs
-/static/images/release-notes/ @o3de/sig-chairs
-/content/blog/ @o3de/sig-chairs
-/static/images/blog/ @o3de/sig-chairs
-/CONTRIBUTING.md @o3de/sig-chairs
-/README.md @o3de/sig-chairs

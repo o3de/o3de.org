@@ -97,7 +97,7 @@ The final function graph should look like this:
 
    c. **Result** will appear in the list of variables under the Variable Manager. Drag it onto the canvas and select **Set Result** from the menu that appears.
    
-   d. Drag the new setter node between the the **Add** node and the output execution nodeling.
+   d. Drag the new setter node between the **Add** node and the output execution nodeling.
 
 1. Drag a connection from the **Add** node output to the **Result** node **In** connector. Drag the **Add** node's Result pin to the **Result** node's number value.
 
