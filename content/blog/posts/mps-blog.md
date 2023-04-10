@@ -85,7 +85,7 @@ td > div {
 
 ### PvE and Additional Content for the MPS
 
-The original concept of the MPS included traps that the player needed to avoid, as well as other gameplay enhancing items such as a second weapon, a teleporter platform and powerups. Ultimately some of these were not implemented for the initial release. We did, however, create all of the assets needed to add these items to the game. We’ve created GitHub Issues for each of these items and we encourage the O3DE community to make use of these assets to expand the MPS.
+The original concept of the MPS included traps that the player needed to avoid, as well as other gameplay enhancing items such as a second weapon. Ultimately some of these were not implemented for the initial release. We did, however, create all of the assets needed to add these items to the game. We’ve created GitHub Issues for each of these items and we encourage the O3DE community to make use of these assets to expand the MPS.
 
 * [MPS Expansion: Implement the Bubble Gun](https://github.com/o3de/o3de-multiplayersample/issues/228) 
 * [MPS Expansion: Implement the Energy Collector](https://github.com/o3de/o3de-multiplayersample/issues/225) 
