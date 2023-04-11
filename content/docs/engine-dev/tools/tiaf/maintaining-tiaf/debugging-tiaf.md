@@ -223,7 +223,7 @@ ArchiveCompressionTestFixture()
 
 This code aliases `@usercache@` to a folder with a unique name in the OS temp folder that will be cleaned up after the test target has completed. With this fix in place, you can now use `AzFramework.Tests` with the sharding optimization enabled without any further crashes due to file race conditions.
 
-# How do I fix regressions with the TIAF Python unit tests?
+## How do I fix regressions with the TIAF Python unit tests?
 
 If any tests starting with the name `TestTiaf` or as part of `test_tiaf_unit_tests.py` start failing you will need to configure your environment to run the TIAF Python unit tests. Conveniently, this process is largely the same as running any O3DE Python test so you can use the following tests to debug any failing Python test that is run in AR.
 
