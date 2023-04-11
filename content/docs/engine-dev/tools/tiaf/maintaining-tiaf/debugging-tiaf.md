@@ -64,32 +64,31 @@ In order to reproduce a TIAF run locally we must first obtain all of the environ
 [2023-03-30T09:42:24.147Z] [2023-03-30 09:42:23,906][TIAF][INFO] Args: --sequence=tia --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --changelist=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\changelist.76aeff41529f498297bf8194d38d5414.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\Reports\report.76aeff41529f498297bf8194d38d5414.json --targetout=stdout --testrunner=live
 ```
 
-In the log above, we can extract all of the information about the AR run and runtime invocation as follows:
+In the log above, you can extract the following information about the AR run and runtime invocation:
 
-1. The arguments used to invoke the AR script were as follows:
+- The arguments used to invoke the AR script are as follows:
 
-```
---config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json" --src-branch=%BRANCH_NAME% --dst-branch=%CHANGE_TARGET% --commit=%CHANGE_ID% --s3-bucket=%TEST_IMPACT_S3_BUCKET% --mars-index-prefix=o3de-tiaf --s3-top-level-dir=%REPOSITORY_NAME% --build-number=%BUILD_NUMBER% --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=python --testrunner=live --target-output=stdout
-```
+    ```
+    --config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json" --src-branch=%BRANCH_NAME% --dst-branch=%CHANGE_TARGET% --commit=%CHANGE_ID% --s3-bucket=%TEST_IMPACT_S3_BUCKET% --mars-index-prefix=o3de-tiaf --s3-top-level-dir=%REPOSITORY_NAME% --build-number=%BUILD_NUMBER% --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=python --testrunner=live --target-output=stdout
+    ```
 
-2. The source branch was `stabilization/2305`.
-3. The destination branch was empty, indicating a branch build as opposed to a PR build.
-4. As this is a branch built, it is considered a source of truth for persistent storage.
-5. The commit being build was `59e24a62859ce8a932e338f36432e3228621c1ec`.
-6. Test impact analysis had been enabled and thus will attempt to perform selective test runs using the historic coverage data.
-7. The bucket used for the persistent storage was `o3de-tiaf` and the location of this branch's historic data is `o3de/o3de/python/stabilization/2305/profile/main-smoke/historic_data.json.zip`.
-8. Historic data was successfully retrieved from the above location.
-9. The last AR run for this branch was for commit `26273c22ff71950eb68d137fed25125ebbaa12d6`, which is 1 commit away from `59e24a62859ce8a932e338f36432e3228621c1ec`.
-10. A change list was constructed for the changes between the above two commits, resulting in `0` created files, `4` updated files and `0` deleted files.
-11. The test failure policy was set to `continue` and the test suites that tests would be selected from were `main` and `smoke`.
-12. Any test targets with the label `REQUIRES_gpu` were excluded from test selection.
-13. The test target output was routed to the Jenkins console output.
-14. The live Python test runner was used (this feature is deprecated).
-15. The arguments used to invoke the Python runtime were a follows:
+- The source branch was `stabilization/2305`.
+- The destination branch was empty, indicating a branch build as opposed to a PR build. A branch build is considered a source of truth for persistent storage.
+- The commit built was `59e24a62859ce8a932e338f36432e3228621c1ec`.
+- Test impact analysis had been enabled and thus will attempt to perform selective test runs using the historic coverage data.
+- The bucket used for the persistent storage was `o3de-tiaf` and the location of this branch's historic data is `o3de/o3de/python/stabilization/2305/profile/main-smoke/historic_data.json.zip`.
+- Historic data was successfully retrieved from the above location.
+- The last AR run for this branch was for commit `26273c22ff71950eb68d137fed25125ebbaa12d6`, which is 1 commit prior from the commit built, `59e24a62859ce8a932e338f36432e3228621c1ec`.
+- A change list was constructed for the changes between the above two commits, resulting in `0` created files, `4` updated files and `0` deleted files.
+- The test failure policy was set to `continue`, and the test suites that tests would be selected from were `main` and `smoke`.
+- Any test targets with the label `REQUIRES_gpu` were excluded from test selection.
+- The test target output was routed to the Jenkins console output.
+- The live Python test runner was used (this feature is deprecated).
+- The arguments used to invoke the Python runtime were as follows:
 
-```
---sequence=tia --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --changelist=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\changelist.76aeff41529f498297bf8194d38d5414.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\Reports\report.76aeff41529f498297bf8194d38d5414.json --targetout=stdout --testrunner=live
-```
+    ```
+    --sequence=tia --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --changelist=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\changelist.76aeff41529f498297bf8194d38d5414.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\Reports\report.76aeff41529f498297bf8194d38d5414.json --targetout=stdout --testrunner=live
+    ```
 
 To reproduce this particular AR run, we would perform the following steps:
 
