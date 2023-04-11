@@ -11,5 +11,5 @@ Scene files and the scene pipeline are important to most **Open 3D Engine (O3DE)
 
 | Name | Description |
 |-|-|
-| [Open Asset Importer Library](./openassetimporter) | Learn about the integration of the external library, Open Asset Importer. |
+| [Open Asset Importer Library](./openassetimporter) | Learn about the integration of the external Open Asset Importer library. |
 | [Adding New Scene File Formats](./addingscenefiles) | Learn about extending the engine to support additional scene file formats. |

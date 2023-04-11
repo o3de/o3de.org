@@ -30,7 +30,7 @@ Engine customers are encouraged to extend this settings registry key at the proj
 
 Enabling the format in this workflow is a data change so far. No code needs to be recompiled, so the Asset Processor can be re-launched to make sure it has loaded the latest settings registry file. You can verify you've enabled the format by going to the `Builders` tab of the Asset Processor, selecting the `Scene Builder` from the list, and checking that the new extension is added to the pattern list.
 
-### Testing
+### Testing the new file format
 
 Once the format is enabled, you will want to test this change. This workflow generally starts with some manual tests by adding files to a local project in the new format.
 
