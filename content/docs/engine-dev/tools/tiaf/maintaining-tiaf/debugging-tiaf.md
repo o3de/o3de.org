@@ -140,7 +140,7 @@ In order to demonstrate the best practices for troubleshooting and fixing flaky 
 
 #### Diagnosing the offending test
 
-Prior to having the fix in place, when this test target was opted-in to TIAF and opted-in to test sharding optimization, it would frequently crash due to the sharding. In order to identify the likely suspect test(s) causing the race conditions, we can search the log for the string `Possible file race condition detected for test target`, whereupon we find the following warning message:
+Prior to resolving the sharding issue, when this test target was opted-in to TIAF and opted-in to test sharding optimization, it frequently crashed due to the sharding. To identify the likely suspect test(s) causing the race conditions, you can search the log for the string `Possible file race condition detected for test target`, whereupon you find the following warning message:
 
 ```
 Shard:
