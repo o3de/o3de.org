@@ -10,6 +10,8 @@ toc: true
 
 Many of the content processing rules that **Asset Processor** uses for your project are controlled by settings registry values. You can view the default values in [`Registry/AssetProcessorPlatformConfig.setreg`](https://github.com/o3de/o3de/blob/development/Registry/AssetProcessorPlatformConfig.setreg). This file is well commented, and full of examples you can use to customize configuration for your project's asset pipeline.
 
+Some additional settings also exist in [Registry/bootstrap.setreg](https://github.com/o3de/o3de/blob/development/Registry/bootstrap.setreg).
+
 {{< todo issue="https://github.com/o3de/o3de.org/issues/706" >}}
 To add project-specific or user-specific overrides, you can use the same pattern you would follow with other settings registry overrides. The linked issue covers documenting the setttings registry override functionality.
 {{</todo>}}
@@ -17,6 +19,10 @@ To add project-specific or user-specific overrides, you can use the same pattern
 ### Processing Assets for Multiple Platforms
 
 To process assets for a non-host platform, you can enable additional platforms under the settings registry path `Amazon/AssetProcessor/Settings/Platforms`. Note that this is only one step in enabling a platform for your project. See the [platforms](/docs/user-guide/platforms/) section of the documentation for how to set up and deploy to additional platforms.
+
+### Running Multiple Instances of Asset Processor
+
+In order to run multiple instances of Asset Processor, each instance must be configured to use a different server port by changing the `Amazon/AzCore/Bootstrap/remote_port` setting (in `bootstrap.setreg` by default).
 
 ### Asset Job Management
 
