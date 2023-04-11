@@ -138,7 +138,7 @@ A flaky sharded test is a sharded test target of which one or more of the target
 
 In order to demonstrate the best practices for troubleshooting and fixing flaky sharded test targets, we will troubleshoot and fix a real world example of such a flaky test target: `AzFramework.Tests`. As this test target has already been fixed, you can instead checkout commit `66c894f9fe15ce4cc1c1afe5ca9dbac30fde63fa` for reference which definitely does not have the fix in question.
 
-### Diagnosing the offending test
+#### Diagnosing the offending test
 
 Prior to having the fix in place, when this test target was opted-in to TIAF and opted-in to test sharding optimization, it would frequently crash due to the sharding. In order to identify the likely suspect test(s) causing the race conditions, we can search the log for the string `Possible file race condition detected for test target`, whereupon we find the following warning message:
 
