@@ -102,7 +102,7 @@ To reproduce this particular AR run, perform the following steps:
   --config=<path to your config file> --src-branch=stabilization/2305 --dst-branch= --commit=59e24a62859ce8a932e338f36432e3228621c1ec --mars-index-prefix=o3de-tiaf --build-number=<pick any number> --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=python --testrunner=live --target-output=stdout
   ```
 
-Alternatively, the runtime itself may be explicitly invoked (and a debugger attached) using the following steps:
+Alternatively, you can explicitly invoke the runtime itself (and a debugger attached) using the following steps:
 
 1. Check out the commit `59e24a62859ce8a932e338f36432e3228621c1ec`.
 2. Use the [storage query tool](./storage-query-tool.md) to retrieve the relevant historic data for this run.
