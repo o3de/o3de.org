@@ -22,7 +22,20 @@ To process assets for a non-host platform, you can enable additional platforms u
 
 ### Running Multiple Instances of Asset Processor
 
-In order to run multiple instances of Asset Processor, each instance must be configured to use a different server port by changing the `Amazon/AzCore/Bootstrap/remote_port` setting (in `bootstrap.setreg` by default).
+In order to run multiple instances of Asset Processor, each instance must be configured to use a different server port by changing the `Amazon/AzCore/Bootstrap/remote_port` setting (in `bootstrap.setreg` by default).  This can be useful for having multiple projects open at once.
+
+Example:
+```json
+{
+    "Amazon": {
+        "AzCore": {
+            "Bootstrap": {
+                "remote_port": 12345,
+            }
+        }
+    }
+}
+```
 
 ### Asset Job Management
 
