@@ -233,11 +233,11 @@ If any tests starting with the name `TestTiaf` or as part of `test_tiaf_unit_tes
 
 If you find tests start failing, you must look to the test suite in `scripts/build/TestImpactAnalysis/Testing`:
 
-`test_tiaf_tools.py` contains the relevant tests for the Storage Query Tool.
+- `test_tiaf_tools.py` contains the relevant tests for the Storage Query Tool.
 
-`test_tiaf_unit_tests.py`  contains the relevant tests for the TIAF python scripts.
+- `test_tiaf_unit_tests.py`  contains the relevant tests for the TIAF python scripts.
 
-`conftest.py` contains the fixtures that are used by both test scripts, and is a good place to start when updating tests with new features and command arguments.
+- `conftest.py` contains the fixtures that are used by both test scripts, and is a good place to start when updating tests with new features and command arguments.
 
 
 This example config snippet allows you to run TIAF pytests locally in VS Code. Simply copy and paste it into your existing `settings.json` (or create it if needed):
