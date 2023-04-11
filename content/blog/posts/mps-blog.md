@@ -1,6 +1,6 @@
 ---
 title: "Explore Multiplayer Gaming with the O3DE Multiplayer Sample - Now Available!"
-date: 2055-04-19
+date: 2055-05-03
 slug: mps-sample 
 Author: Darrin McPherson
 blog_img: "/images/blog/mps-sample/splashscreen.png"
