@@ -116,7 +116,7 @@ Alternatively, you can explicitly invoke the runtime itself (and a debugger atta
 
 ## How do I kill a local test run of the TIAF?
 
-Often, when a run of TIAF is aborted by the user, there are still test target processes invoked by TIAF lingering around. In order to terinate all processes, we must terminate both the test runner processes and the instrumentation processes.
+Often, when a run of TIAF is aborted by the user, there are still test target processes invoked by TIAF lingering around. In order to terminate all processes, you must terminate both the test runner processes and the instrumentation processes.
 
 To terminate the test runner processes, use the following command:
 
