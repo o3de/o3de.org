@@ -6,7 +6,12 @@ description: Information as to how to debug the TIAF.
 
 ## How do I configure and install OpenCppCoverage?
 
-The TIAF uses a fork of [OpenCppCoverage](https://github.com/OpenCppCoverage/OpenCppCoverage) as the instrumentation for native test targets on the Windows platform. In order to build the forked version of OpenCppCoverage, clone the [fork](https://github.com/jonawals/OpenCppCoverage.git) and checkout the branch `SourceLevelCoverage`. From here, you can follow the [standard instructions](https://github.com/OpenCppCoverage/OpenCppCoverage/wiki) for building OpenCppCoverage.
+The test impact analysis framework (TIAF) uses a fork of [OpenCppCoverage](https://github.com/OpenCppCoverage/OpenCppCoverage) as the instrumentation for native test targets on the Windows platform. 
+
+To build the forked version of OpenCppCoverage:
+1. Clone the [fork](https://github.com/jonawals/OpenCppCoverage.git)
+2. Checkout the branch `SourceLevelCoverage`. 
+3. Follow the build instructions in [OpenCppCoverage Wiki](https://github.com/OpenCppCoverage/OpenCppCoverage/wiki).
 
 # How do I reproduce a TIAF AR run locally?
 
