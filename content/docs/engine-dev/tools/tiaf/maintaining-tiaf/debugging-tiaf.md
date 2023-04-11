@@ -259,7 +259,7 @@ ly_add_googletest(
 )
 ```
 
-In order to opt this test out of the TIAF, we remove the pertinent label, like so:
+To opt this test out of the TIAF, remove the pertinent label, like so:
 
 ```
 ly_add_googletest(
