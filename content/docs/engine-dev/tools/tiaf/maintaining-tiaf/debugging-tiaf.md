@@ -98,9 +98,9 @@ To reproduce this particular AR run, perform the following steps:
 4. Place the historic data in the local historic data folder (see the historic workspace entry in any of the `tiaf.json` files in the TestImpactFramework folder in your build directory).
 5. Run the TIAF AR script with the the following arguments (omitting the S3 bucket so that local persistent storage is used):
 
-```
---config=<path to your config file> --src-branch=stabilization/2305 --dst-branch= --commit=59e24a62859ce8a932e338f36432e3228621c1ec --mars-index-prefix=o3de-tiaf --build-number=<pick any number> --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=python --testrunner=live --target-output=stdout
-```
+  ```
+  --config=<path to your config file> --src-branch=stabilization/2305 --dst-branch= --commit=59e24a62859ce8a932e338f36432e3228621c1ec --mars-index-prefix=o3de-tiaf --build-number=<pick any number> --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=python --testrunner=live --target-output=stdout
+  ```
 
 Alternatively, the runtime itself may be explicitly invoked (and a debugger attached) using the following steps:
 
