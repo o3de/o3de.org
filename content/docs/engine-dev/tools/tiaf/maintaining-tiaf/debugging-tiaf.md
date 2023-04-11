@@ -194,7 +194,7 @@ TEST_P(ArchiveCompressionTestFixture, TestArchivePacking_CompressionWithOverride
     }
 ```
 
-At the top of the test we can see this test (and all permutations of this test) reading and writing to the file `@usercache@/archivetest.pak`. Searching for this string throughout this file we can find four other tests using this file that will also need to be fixed. The approach to fixing race conditions between processes is different from fixing race conditions between threads. Firstly, we cannot simply wrap the resource in a mutex as the processes do not share the same address space, nor can we use static state to increment a file counter for each test for the same reason. Instead, we must create a unique identifier at runtime for each test without sharing any state between the tests.
+At the top, notice that this test (and all permutations of this test) read and write to the file `@usercache@/archivetest.pak`. Searching for this string throughout this file, you can find four other tests using this file that will also need to be fixed. The approach to fixing race conditions between processes is different from fixing race conditions between threads. First, you cannot simply wrap the resource in a mutex as the processes do not share the same address space, nor can you use static state to increment a file counter for each test for the same reason. Instead, you must create a unique identifier at runtime for each test without sharing any state between the tests.
 
 ### Implementing a process-safe fix for the race condition
 
