@@ -13,7 +13,7 @@ To build the forked version of OpenCppCoverage:
 2. Checkout the branch `SourceLevelCoverage`. 
 3. Follow the build instructions in [OpenCppCoverage Wiki](https://github.com/OpenCppCoverage/OpenCppCoverage/wiki).
 
-# How do I reproduce a TIAF AR run locally?
+## How do I reproduce a TIAF AR run locally?
 
 {{< note >}}
 Prior to running TIAF locally, you must [clone and build the OpenCppCoverage fork](./debuffing-tiaf/#how-do-i-configure-and-install-opencppcoverage) and [enable the TIAF at the CMake level](./general-information/#how-do-i-turn-the-tiaf-onoff-in-automated-review). 
