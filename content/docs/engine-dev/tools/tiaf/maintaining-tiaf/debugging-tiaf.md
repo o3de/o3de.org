@@ -134,7 +134,7 @@ taskkill /f /im OpenCppCoverage.exe
 
 A flaky sharded test is a sharded test target of which one or more of the target's shards have crashed due to race conditions with other shards. As each shard is its own separate process, the race conditions are not due to memory corruption in the same address space as per typical mutlithreaded race conditions but instead are due to one or more of the shard processes attempting to access and mutate a common resource such as a file. Although it cannot be stated with absolute certainty that all shard race conditions are due to conflicting file accesses, all of the race conditions detected and fixed during the sharded test optimization development process were due to this. Thus, as a first point of call, if you have a flaky, sharded test target, check for file race conditions first.
 
-## Case Study: `AzFramework.Tests` Race Conditions
+### Case Study: `AzFramework.Tests` race conditions
 
 In order to demonstrate the best practices for troubleshooting and fixing flaky sharded test targets, we will troubleshoot and fix a real world example of such a flaky test target: `AzFramework.Tests`. As this test target has already been fixed, you can instead checkout commit `66c894f9fe15ce4cc1c1afe5ca9dbac30fde63fa` for reference which definitely does not have the fix in question.
 
