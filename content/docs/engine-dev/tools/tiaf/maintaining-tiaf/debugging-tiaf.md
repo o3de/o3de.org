@@ -114,7 +114,7 @@ Alternatively, you can explicitly invoke the runtime itself (and a debugger atta
   --sequence=tia --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --changelist=<path to your build folder>\bin\TestImpactFramework\profile\Temp\Python\changelist.76aeff41529f498297bf8194d38d5414.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\Reports\report.76aeff41529f498297bf8194d38d5414.json --targetout=stdout --testrunner=live
   ```
 
-# How do I kill a local test run of the TIAF?
+## How do I kill a local test run of the TIAF?
 
 Often, when a run of TIAF is aborted by the user, there are still test target processes invoked by TIAF lingering around. In order to terinate all processes, we must terminate both the test runner processes and the instrumentation processes.
 
