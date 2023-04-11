@@ -130,7 +130,7 @@ To terminate the instrumentation processes, use the following command:
 taskkill /f /im OpenCppCoverage.exe
 ```
 
-# How do I debug a flaky sharded test target?
+## How do I debug a flaky sharded test target?
 
 A flaky sharded test is a sharded test target of which one or more of the target's shards have crashed due to race conditions with other shards. As each shard is its own separate process, the race conditions are not due to memory corruption in the same address space as per typical mutlithreaded race conditions but instead are due to one or more of the shard processes attempting to access and mutate a common resource such as a file. Although it cannot be stated with absolute certainty that all shard race conditions are due to conflicting file accesses, all of the race conditions detected and fixed during the sharded test optimization development process were due to this. Thus, as a first point of call, if you have a flaky, sharded test target, check for file race conditions first.
 
