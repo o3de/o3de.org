@@ -156,7 +156,8 @@ C:\dev\o3de-tiaf-feature-python\Code\Framework\AzCore\AzCore/std/smart_ptr/intru
 Shard: ==================================================================
 ```
 
-The above warning prints out the last 500 characters of standard output produced by that shard's process. Critically, we can see that the Google Test log ends abruptly with the line `error: You can't dereference a null pointer` rather than the usual test summary of a Google Test target that terminated gracefully. This is the smoking gun we need, as it clearly shows the test `ArchiveCompression/ArchiveCompressionTestFixture.TestArchivePacking_CompressionWithOverridenArchiveData_PackIsValid/5` crashing. If we were to look at the source code for that test and we see any sort of file access, we can be almost certain that this is the race condition between the shards causing the crash:
+The above warning prints out the last 500 characters of standard output produced by that shard's process. You can see that the Google Test log ends abruptly with the line `error: You can't dereference a null pointer`, rather than the usual test summary of a Google Test target that terminated gracefully. This is key evidence, as it clearly shows that the crashing test is `ArchiveCompression/ArchiveCompressionTestFixture.TestArchivePacking_CompressionWithOverridenArchiveData_PackIsValid/5`. If you look at the source code for that test and you see anything regarding file access, it's very likely that this is the race condition between the shards causing the crash.
+
 
 ```c++
 TEST_P(ArchiveCompressionTestFixture, TestArchivePacking_CompressionWithOverridenArchiveData_PackIsValid)
