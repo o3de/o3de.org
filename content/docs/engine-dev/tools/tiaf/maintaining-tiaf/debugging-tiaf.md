@@ -197,7 +197,7 @@ At the top of the test we can see this test (and all permutations of this test) 
 
 ### Implementing a process-safe fix for the race condition
 
-In order to create a unique file name for each process, we can either use `AZ::Uuid::Create()` as the random component for our filename, however in this particular instance there is an even simpler fix using `AZ::Test::ScopedAutoTempDirectory`.
+To create a unique file name for each process, you can either use `AZ::Uuid::Create()` as the random component for your filename, or do a simpler fix using `AZ::Test::ScopedAutoTempDirectory`.
 
 Firstly, we add a member of type `AZ::Test::ScopedAutoTempDirectory` called `m_tempDirectory` to `ArchiveCompressionTestFixture`. Then, in the constructor body, we add the following:
 
