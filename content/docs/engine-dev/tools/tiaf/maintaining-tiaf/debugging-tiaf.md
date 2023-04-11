@@ -90,7 +90,7 @@ In the log above, you can extract the following information about the AR run and
     --sequence=tia --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --changelist=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\changelist.76aeff41529f498297bf8194d38d5414.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\Reports\report.76aeff41529f498297bf8194d38d5414.json --targetout=stdout --testrunner=live
     ```
 
-To reproduce this particular AR run, we would perform the following steps:
+To reproduce this particular AR run, perform the following steps:
 
 1. Check out the commit `59e24a62859ce8a932e338f36432e3228621c1ec`.
 2. Use the [storage query tool](./storage-query-tool.md) to retrieve the relevant historic data for this run.
