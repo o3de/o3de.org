@@ -163,6 +163,7 @@ Shard: ==================================================================
 
 The above warning prints out the last 500 characters of standard output produced by that shard's process. You can see that the Google Test log ends abruptly with the line `error: You can't dereference a null pointer`, rather than the usual test summary of a Google Test target that terminated gracefully. This is key evidence, as it clearly shows that the crashing test is `ArchiveCompression/ArchiveCompressionTestFixture.TestArchivePacking_CompressionWithOverridenArchiveData_PackIsValid/5`. If you look at the source code for that test and you see anything regarding file access, it's very likely that this is the race condition between the shards causing the crash.
 
+Here is the source code for the crashing test:
 
 ```c++
 TEST_P(ArchiveCompressionTestFixture, TestArchivePacking_CompressionWithOverridenArchiveData_PackIsValid)
