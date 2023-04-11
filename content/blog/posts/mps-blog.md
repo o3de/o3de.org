@@ -3,8 +3,8 @@ title: "Explore Multiplayer Gaming with the O3DE Multiplayer Sample - Now Availa
 date: 2055-04-19
 slug: mps-sample 
 Author: Darrin McPherson
-blog_img: "/images/blog/mps-sample/image01.png"
-full_img: "/images/blog/mps-sample/image01.png"
+blog_img: "/images/blog/mps-sample/splashscreen.png"
+full_img: "/images/blog/mps-sample/splashscreen.png"
 ---
 
 We are happy to announce the release of the O3DE Multiplayer Sample Game (MPS). The MPS is a fully open source mini-game where players battle one another for dominance in a multi-tiered, under-construction, Starbase. This new sample game is intended to serve as an example for the O3DE community to use in the creation of other games as well as to demonstrate a number of features in O3DE, including networking, material canvas, asset creation best practices, and the setup of visual effects setup using the [PopcornFX gem](https://github.com/PopcornFX/O3DEPopcornFXPlugin), and audio effects using the [WWise gem](https://github.com/o3de/o3de/tree/development/Gems/AudioEngineWwise). 
