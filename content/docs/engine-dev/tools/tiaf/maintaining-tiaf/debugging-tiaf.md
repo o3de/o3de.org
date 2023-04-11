@@ -206,7 +206,9 @@ At the top, notice that this test (and all permutations of this test) read and w
 
 To create a unique file name for each process, you can either use `AZ::Uuid::Create()` as the random component for your filename, or do a simpler fix using `AZ::Test::ScopedAutoTempDirectory`.
 
-Firstly, we add a member of type `AZ::Test::ScopedAutoTempDirectory` called `m_tempDirectory` to `ArchiveCompressionTestFixture`. Then, in the constructor body, we add the following:
+To create unique file names using `AZ::Test::ScopedAutoTempDirectory`:
+1. Add a member of type `AZ::Test::ScopedAutoTempDirectory` called `m_tempDirectory` to `ArchiveCompressionTestFixture`. 
+2. In the constructor body, add the following:
 
 ```c++
 ArchiveCompressionTestFixture()
