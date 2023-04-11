@@ -5,7 +5,9 @@ description: Overview of the work required for texture files to fully support th
 
 weight: 100
 ---
+
 ## Overview
+
 
 This page is an investigation into answering the question: "How can we safely support meta data file based asset relocation for image (texture) files?"
 
@@ -49,7 +51,9 @@ There are other potential concerns that are lower priority, and can be worked ar
 * Material Types reference images
 
 ## Asset Relocation Challenges
+
 ### Materials authored in the material editor have path based references to images
+
 
 Materials generally come from two places right now: Material product assets (azmaterials) generated from scene files, and materials authored in the material editor.
 
@@ -68,33 +72,45 @@ Forcing the material to reprocess causes an error to be emitted.
 It means that, when someone renames an image file referenced via material source assets, all of those jobs will fail until each of those material files are individually updated, even with a stable asset ID. So in this case, when renaming `curtain_metallic.png`, all 3 materials that reference `curtain_metallic.png` by relative path will need to be individually updated. I now have to modify 3 additional source assets:
 
 Instead, if the image was referenced via UUID or asset ID then this rename event would mean that the materials could remain unchanged and would limit the scope of work to just that individual image being renamed, and not the incoming dependencies.
+
 #### What can we do to address this?
+
 
 * Update materials to reference images via source asset UUID, or product asset asset ID.
 * Build a migration tool that users can run that will update all existing materials on their project to the new material format, so they don't have to manually re-open and re-save all materials.
 * In the guidance for enabling meta sidecar files for images, explain this situation to users, and ask them to run this tool before enabling meta files for image types.
 
 This will mean that material references to images will be stable across image renaming, because materials will use stable IDs.
+
 ### Scene file source assets do not emit job dependencies on images reference by path
+
 
 In the previous section, authored material source assets had relative path references to image source assets, and they emitted job dependencies on those images. This meant that if the image was renamed with ID stabilization, the job dependency would be the same and the job would re-run, causing the product asset reference to instantly become an error. This is good because it doesn't hide an error for later.
 
 FBX and other scene files also reference source image assets via path, and there's nothing we can do about that. It's a known limitation.
 
 However, the gotcha here is on cache consistency: Right now, without a job dependency, when renaming an image like in the previous section, the FBX file referencing the image will not reprocess. The product asset azmaterial of the FBX file references the product asset via asset ID, but the source asset FBX referenced via path. So now with the rename, the stale azmaterial product asset of the FBX file has a valid asset ID referencing the relocated asset. This means that an asset relocation of an image file may appear to work immediately: rename `CarBody.png` to `CarBody1.png`, and the `Car.azmaterial` product asset of `Car.fbx` appears to render correctly with the asset ID based reference to `CarBody1.streamingimage`. Then, later on someone makes a change to cause `Car.fbx` to reprocess and now the image can't be found and there is an error or warning processing `Car.fbx`. If a user then panics and tries to roll back this change to `Car.fbx`, it will still appear broken, because they had previously been in an unstable state.
+
 #### Why is this concern?
 
+
 Cache consistency is very important. Situations like this can break user trust in asset processing, create situations where projects work differently on different team members machines, and the time between causing the issue (renaming the texture) and discovering the bug (the reference is broken, the scene builder can't find the texture and the azmaterial product asset no longer has a valid texture) may take a long time. If everyone on the team is working with iterative caches day to day, and someone finally clears their cache or sets up a new project several weeks after the rename, that's a lot of other changes that could have caused the problem.
+
 #### What can we do to address this?
+
 
 * Update scene files to emit job dependencies on referenced source asset image files.
 * Make sure job dependencies are using asset IDs instead of paths before being recorded into the asset database, so that renaming an image file will cause the dependency job for the new name to match the old dependency, and cause the scene files to reprocess.
 
 This will mean that renaming an image referenced by an FBX file will cause that FBX file to reprocess, due to the job dependency. This will maintain cache consistency for a team, and make it easy to quickly find issues when an image was referenced by an FBX file, so the team can go upstream to adjust the Blender, Maya, or other working asset to point at the new image, and re-export the FBX with the new path.
+
 ### Scene file source assets have path based references to images
 
+
 This is a known issue with scene files referencing images, users tend to expect this.
+
 ### UI references to images via simple asset reference
+
 
 UI components tend to use SimpleAssetReference to reference files, instead of actual asset references. This is because the UI system and components were built before proper asset referencing was available.
 
@@ -103,10 +119,14 @@ This includes the texture atlas system, because it's primarily used by UI.
 #### Why is this not a major problem?
 
 The UI system predates a lot of current systems and ideally it will be overhauled to use modern solutions (asset references instead of simple asset references, prefabs instead of slices, etc), which would automatically handle this problem.
+
 #### Why is this still a concern?
 
+
 Content will break, if someone relocates an image file referenced from a UI component.
+
 ### Material Types reference images via relative path, and not asset ID
+
 
 Material type files are hand authored and are sort of code-adjacent, they reference a lot of other content and files via relative path instead of asset IDs, because it's expected that people will type these by hand instead of using a tool to build the material type file: https://www.o3de.org/docs/atom-guide/look-dev/materials/material-type-file-spec/
 
