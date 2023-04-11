@@ -8,7 +8,7 @@ The integration of the TIAF native and Python runtimes into O3DE's Automated Rev
 
 ## AR Integration Diagram
 
-Below is a simplified diagram of the TIAF AR scripts and how they integrate into AR. As can be seen, form the perspective of Jenkins, the TIAF driver script is invoked and a return code returned (`0` for success, otherwise failures). Output regarding test failures, failures to launch test targets, and any other failures is outputted to the console. For more information about the return codes returned by the runtimes, see the section [Runtime return codes ](../../architectural-overview/runtime-frontend/#runtime-return-codes).
+Below is a simplified diagram of the TIAF AR scripts and how they integrate into AR. As you can see, Jenkins invokes the TIAF driver script and returns a return code (`0` for success, otherwise failures). Output regarding test failures, failures to launch test targets, and any other failures is outputted to the console. For more information about the return codes returned by the runtimes, see the section [Runtime return codes](/docs/engine-dev/tools/tiaf/architectural-overview/runtime-frontend#runtime-return-codes).
 
 ```mermaid
 flowchart TD
