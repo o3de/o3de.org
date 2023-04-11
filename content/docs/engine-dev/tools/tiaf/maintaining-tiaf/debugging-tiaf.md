@@ -221,7 +221,7 @@ ArchiveCompressionTestFixture()
 }
 ```
 
-What this does is alias `@usercache@` to a folder with a unique name in the OS temp folder that will be cleaned up after the test target has completed. With this fix in place, we can now use `AzFramework.Tests` with the sharding optimization enabled without any further crashes due to file race conditions.
+This code aliases `@usercache@` to a folder with a unique name in the OS temp folder that will be cleaned up after the test target has completed. With this fix in place, you can now use `AzFramework.Tests` with the sharding optimization enabled without any further crashes due to file race conditions.
 
 # How do I fix regressions with the TIAF Python unit tests?
 
