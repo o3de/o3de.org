@@ -110,9 +110,9 @@ Alternatively, you can explicitly invoke the runtime itself (and a debugger atta
 4. Place the historic data in the local historic data folder (see the historic workspace entry in any of the tiaf.json files in the TestImpactFramework folder in your build directory).
 5. Run the Python runtime with the same arguments as the TIAF run that failed:
 
-```
---sequence=tia --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --changelist=<path to your build folder>\bin\TestImpactFramework\profile\Temp\Python\changelist.76aeff41529f498297bf8194d38d5414.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\Reports\report.76aeff41529f498297bf8194d38d5414.json --targetout=stdout --testrunner=live
-```
+  ```
+  --sequence=tia --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --changelist=<path to your build folder>\bin\TestImpactFramework\profile\Temp\Python\changelist.76aeff41529f498297bf8194d38d5414.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Python\Reports\report.76aeff41529f498297bf8194d38d5414.json --targetout=stdout --testrunner=live
+  ```
 
 # How do I kill a local test run of the TIAF?
 
