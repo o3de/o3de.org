@@ -231,7 +231,7 @@ If you find tests start failing, you must look to the test suite in `scripts/bui
 `conftest.py` contains the fixtures that are used by both test scripts, and is a good place to start when updating tests with new features and command arguments.
 
 
-This example config snippet will allow you to run TIAF pytests locally in vscode. Just copy and paste it into your existing `settings.json` (or create it if need be):
+This example config snippet allows you to run TIAF pytests locally in VS Code. Simply copy and paste it into your existing `settings.json` (or create it if needed):
 
 ```json
 {
