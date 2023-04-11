@@ -225,7 +225,7 @@ This code aliases `@usercache@` to a folder with a unique name in the OS temp fo
 
 ## How do I fix regressions with the TIAF Python unit tests?
 
-If any tests starting with the name `TestTiaf` or as part of `test_tiaf_unit_tests.py` start failing you will need to configure your environment to run the TIAF Python unit tests. Conveniently, this process is largely the same as running any O3DE Python test so you can use the following tests to debug any failing Python test that is run in AR.
+If any tests starting with the name `TestTiaf` or as part of `test_tiaf_unit_tests.py` start to fail, you must configure your environment to run the TIAF Python unit tests. Conveniently, this process is similar as running any O3DE Python test, so you can use the following tests to debug any failing Python test that is run in AR.
 
 ### Configuring the environment
 
