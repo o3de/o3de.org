@@ -246,7 +246,7 @@ This example config snippet allows you to run TIAF pytests locally in VS Code. S
 }
 ```
 
-# How do I disable a problematic test target from being run by the TIAF?
+## How do I disable a problematic test target from being run by the TIAF?
 
 If for whatever reason you need to disable a problematic test from running in the TIAF (and thus moving it back over to CTest), simply locate the offending test target's registration in CMake and remove the `REQUIRES_tiaf` label.
 
