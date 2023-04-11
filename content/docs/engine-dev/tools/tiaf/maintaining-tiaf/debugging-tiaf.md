@@ -229,7 +229,6 @@ If any tests starting with the name `TestTiaf` or as part of `test_tiaf_unit_tes
 
 ### Configuring the environment
 
-----
 
 If you find tests start failing, you must look to the test suite in `scripts/build/TestImpactAnalysis/Testing`:
 
