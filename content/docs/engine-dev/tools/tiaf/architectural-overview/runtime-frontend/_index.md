@@ -40,7 +40,7 @@ flowchart TD
 
 ## Artifacts
 
-The artifacts are the "plain old data structures" (PODs) that are passed to and from the runtime. These artifacts come in two flavors: *static* artifacts, and *dynamic* artifacts. These artifacts are PODs to allow them to be passed to and from the runtime without the producers and consumers of these artifacts needing to be aware of how the runtime itself models the behavior of these artifacts. These artifacts are then used to instantiated more complex types that are used directly by the runtime via the various artifact *factories*. The location of these artifacts can be found [here](https://github.com/o3de/o3de/tree/development/Code/Tools/TestImpactFramework/Runtime/Common/Code/Include/Static/Artifact).
+The artifacts are the "plain old data structures" (PODs) that are passed to and from the runtime. These artifacts come in two flavors: *static* artifacts, and *dynamic* artifacts. These artifacts are PODs to allow them to be passed to and from the runtime without the producers and consumers of these artifacts needing to be aware of how the runtime itself models the behavior of these artifacts. These artifacts are then used to instantiate more complex types that are used directly by the runtime via the various artifact *factories*. The location of these artifacts can be found [here](https://github.com/o3de/o3de/tree/development/Code/Tools/TestImpactFramework/Runtime/Common/Code/Include/Static/Artifact).
 
 ### Static Artifacts
 
@@ -56,7 +56,7 @@ The artifact factories take these raw POD artifacts and produce the types used i
 
 ## Test runner stack
 
-Below is a diagram that demonstrates the test runner stack. It's something between a class diagram and an omnidirectional data flow diagram but so it's best not to take the diagram too literally. Rather, you can use it as the jumping off point for a given test runner and see how you will need to drill down in the code to reach the constituent classes that make up that test runner.
+The following diagram demonstrates the test runner stack. Because the diagram is a combination of a class diagram and an omnidirectional data flow diagram, it's best not to take the diagram too literally. Rather, you can use it as the jumping off point for a given test runner and see how you will need to drill down in the code to reach the constituent classes that make up that test runner.
 
 ```mermaid
 flowchart TD
@@ -80,7 +80,7 @@ The following is a brief overview of each part of the stack (in bottom-up order)
 
 ### ProcessScheduler
 
-The `ProcessScheduler` handles the launching and lifecycle management of processes. The call to the scheduler to schedule its processes is blocking, although the client may optionally provide callbacks to listen to process state changes. It has no concept of higher level constructs such as build targets, test targets, tests etc. as it only handles the management of processes, whatever those processes may be. Although internally it manages the state of processes (either to be launched, in-flight, completed, etc.), it is stateless from the client's perspective and thus does not present the tracked state to the client. Rather, it has a number of callbacks for each process lifecycle event that the client can hook into and track as it sees fit.
+The `ProcessScheduler` handles the launching and lifecycle management of processes. The call to the scheduler to schedule its processes is blocking, although the client may optionally provide callbacks to listen to process state changes. It has no concept of higher level constructs such as build targets, test targets, tests, and so on, as it only handles the management of processes, whatever those processes may be. Although internally it manages the state of processes (either to be launched, in-flight, completed, and so on), it is stateless from the client's perspective and thus does not present the tracked state to the client. Rather, it has a number of callbacks for each process lifecycle event that the client can hook into and track as it sees fit.
 
 #### Inputs
 
@@ -88,7 +88,7 @@ The `ProcessScheduler` accepts a list of processes to launch in the form of `Pro
 
 #### Process
 
-The `ProcessScheduler` manages the entire lifecycle of the processes requested to be launched, including all communication with the operating system to invoke, track and terminate processes (as needed). As the state of each process changes, the appropriate callback is called (if provided by the client) with the final end of life callback containing any accumulated standard output/error if the process was instructed to route it to the client. The client returns a value to the `ProcessScheduler` to determine whether it should continue operating or shutdown.
+The `ProcessScheduler` manages the entire lifecycle of the processes requested to be launched, including all communication with the operating system to invoke, track and terminate processes (as needed). As the state of each process changes, the appropriate callback is called (if provided by the client) with the final end of life callback containing any accumulated standard output/error if the process was instructed to route it to the client. The client returns a value to the `ProcessScheduler` to determine whether it should continue operating or shut down.
 
 #### Outputs
 
@@ -98,7 +98,7 @@ The `ProcessSchedulerResult` returns a `ProcessSchedulerResult` for the client t
 
 ##### If the ProcessScheduler is blocking, will it lock up the thread its running on?
 
-The `ProcessScheduler` yields control back to the client upon process state changes, as well as providing a tick callback (of a frequency determined by the client) to allow the client to not stall between process state changes. An interface is provided to the client to send messages to the `ProcessScheduler` to terminate specific processes, as well as returning a value to the `ProcessScheduler` to determine whether it should continue operating or shutdown.
+The `ProcessScheduler` yields control back to the client upon process state changes, as well as providing a tick callback (of a frequency determined by the client) to allow the client to not stall between process state changes. An interface is provided to the client to send messages to the `ProcessScheduler` to terminate specific processes, as well as return a value to the `ProcessScheduler` to determine whether it should continue operating or shutdown.
 
 #### I wish to support another platform, is the ProcessScheduler platform-specific?
 
@@ -118,11 +118,11 @@ The `JobInfos` to be run by the `JobRunner` are generated by a given runner's `J
 
 #### Process
 
-The `JobRunner` hooks into the `ProcessScheduler` and tracks the state of each process before presenting a summary of each job to the client. This summary contains information about the start time, duration, job result, return code, etc. so that the test runners can interpret the result of a given test run. Once all jobs have completed, the `JobRunner` invokes the client-provided `PayloadMapProducer` for each job to generate the in-memory models of the work produced by each job.
+The `JobRunner` hooks into the `ProcessScheduler` and tracks the state of each process before presenting a summary of each job to the client. This summary contains information about the start time, duration, job result, return code, and so on, so that the test runners can interpret the result of a given test run. Once all jobs have completed, the `JobRunner` invokes the client-provided `PayloadMapProducer` for each job to generate the in-memory models of the work produced by each job.
 
 #### Outputs
 
-The `JobRunner` returns a `ProcessSchedulerResult` for the client to determine under what conditions the scheduler terminated as well as the job produced by each process invoked. These jobs contain the meta-data about the job (duration, return code, etc.) as well as the in-memory payload data structures produced by each job.
+The `JobRunner` returns a `ProcessSchedulerResult` for the client to determine under what conditions the scheduler terminated as well as the job produced by each process invoked. These jobs contain the meta-data about the job (duration, return code, and so on) as well as the in-memory payload data structures produced by each job.
 
 #### FAQ
 
@@ -130,7 +130,7 @@ The `JobRunner` returns a `ProcessSchedulerResult` for the client to determine u
 
 No, it is not assumed. As the information about the payload produced by jobs is provided by the client, it is up to you to determine what these payloads are and how they should be consumed.
 
-##### Can I consume in-memory content (e.g. standard output/error)?
+##### Can I consume in-memory content (for example, standard output/error)?
 
 Yes, see above. As you can route the process output to the client, how you correlate that output and consume it is up to you.
 
@@ -140,7 +140,7 @@ Yes, in fact the Python instrumented test runner does this. All you need to do i
 
 ##### The JobInfos contain the id and command string, yet the JobInfos themselves are template specialization, thus said ids and command strings are not interchangeable between different JobInfo types. Is this intentional?
 
-Yes. Although under the hood the `ProcessScheduler` understands the same ids and command strings, the JobInfos are not interchangeable nor convertible between specializations in order enforce the idea that a given job id or command string is only valid for that job type and not to be accidentally mixed up with another job type (e.g. if attempting to use the same job callback for different job types).
+Yes. Although under the hood the `ProcessScheduler` understands the same ids and command strings, the JobInfos are not interchangeable nor convertible between specializations in order enforce the idea that a given job id or command string is only valid for that job type and not to be accidentally mixed up with another job type (for example, if attempting to use the same job callback for different job types).
 
 ### TestJobRunner
 
