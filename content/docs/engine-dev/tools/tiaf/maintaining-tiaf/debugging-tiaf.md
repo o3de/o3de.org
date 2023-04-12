@@ -16,7 +16,7 @@ To build the forked version of OpenCppCoverage:
 ## How do I reproduce a TIAF AR run locally?
 
 {{< note >}}
-Prior to running TIAF locally, you must [clone and build the OpenCppCoverage fork](./debuffing-tiaf/#how-do-i-configure-and-install-opencppcoverage) and [enable the TIAF at the CMake level](./general-information/#how-do-i-turn-the-tiaf-onoff-in-automated-review). 
+Prior to running TIAF locally, you must [clone and build the OpenCppCoverage fork](./debugging-tiaf/#how-do-i-configure-and-install-opencppcoverage) and [enable the TIAF at the CMake level](./general-information/#how-do-i-turn-the-tiaf-onoff-in-automated-review). 
 {{< /note >}}
 
 To reproduce a TIAF run locally, you must first obtain all of the environmental information about the run. You can do this by navigating to the appropriate Jenkins build and clicking on either the `test_impact_analysis_profile_native` or `test_impact_analysis_profile_python` stages to retrieve the console output. At the very top of the console output, you will see the output of the TIAF AR scripts prior to the invocation of the appropriate runtime, like so:
