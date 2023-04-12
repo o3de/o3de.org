@@ -236,6 +236,8 @@ AZ::u32 MyComponent::OnStringFieldChanged()
 + `None` -- Specifies that the properties that are displayed in the UI should not be refreshed.
 + `ValuesOnly` -- Refreshes only the values of the properties that are displayed in the UI. The property grid updates the GUI to reflect changes to underlying data that might have occurred in the change callback.
 
+## ComboBox UIHandler
+
 The following more complex example binds a list of strings as options for a combo box. The list of strings is attached to a string field *Property A*. Suppose you want to modify the options available in the combo box for Property A with the values from another *Property B*. In that case you can bind the combo box `AZ::Edit::Attributes::StringList` attribute to a member function that computes and returns the list of options. In the `AZ::Edit::Attributes::ChangeNotify` attribute for Property B, you tell the system to reevaluate attributes, which in turn reinvokes the function that computes the list of options.
 
 ```cpp
@@ -268,4 +270,64 @@ AZStd::vector<AZStd::string> MyComponent::GetEnabledOptions()
 
     return options;
 }
+```
+
+It is also possible to bind the list of strings to values of another data type. One example is setting the component's fields to programmer-friendly values by using user-friendly names. To do so, set the `GenericValueList` attribute on the field's `DataElement` to a value that returns `AZStd::vector<AZStd::pair<T, AZStd::string>>`. The first parameter, `T`, in the `AZStd::pair` holds the programmer-friendly type and value, while the second holds the user-friendly string:
+
+```cpp
+...
+
+->Attribute(AZ::Edit::Attributes::GenericValueList, &MyComponent::GetEnabledOptions)
+
+//...
+AZStd::vector<AZStd::pair<AZ::Crc32, AZStd::string>> GetEnemyTypes()
+{
+    AZStd::vector<AZStd::pair<AZ::Crc32, AZStd::string>> options;
+    options.reserve(16);
+    options.push_back({AZ_CRC_CE("Basic"), AZStd::string("Basic option")});
+    options.push_back({AZ_CRC_CE("Basic2"), AZStd::string("Another basic option")});
+
+    if (m_enableAdvancedOptions)
+    {
+        options.push_back({AZ_CRC_CE("Advanced"), AZStd::string("Advanced option")});
+        options.push_back({AZ_CRC_CE("Advanced2"), AZStd::string("Another advanced option")});
+    }
+
+    return options;
+}
+```
+
+Within the O3DE editor, combo boxes work by default with the following field data types:
++ Numeric (`int`, `float`, etc.)
++ `AZStd::string`
++ Enums [reflected](#editing) to the `EditContext`. 
+
+To use the ComboBox with other types, it is necessary to register a combo box handler for the desired field type by calling `AzToolsFramework::RegisterGenericComboBoxHandler<T>()`, where `T` is the field type. Since the function lives in the `AzToolsFramework`, the call should be made within a target that links to the Editor, ideally in a gem's `EditorSystemComponent::Activate` function.
+
+```cpp
+...
+
+AZ::Uuid m_actorTypeId;
+
+...
+
+class Humanoid;
+class Quadruped;
+
+...
+
+->DataElement(AZ::Edit::UIHandlers::ComboBox, &MyComponent::m_actorTypeId, "Actor Type", "The type of enemy to spawn.")
+->Attribute(AZ::Edit::Attributes::GenericValueList, &MyComponent::GetActorTypes);
+
+...
+
+AZStd::vector<AZStd::pair<AZ::Uuid, AZStd::string>> GetEnemyTypes()
+{
+    return  
+    { 
+        {AZ::AzTypeInfo<Humanoid>::Uuid(),  AZStd::string("Silly Human")},
+        {AZ::AzTypeInfo<Quadruped>::Uuid(), AZStd::string("Four Legs")};
+    }
+}
+
 ```
