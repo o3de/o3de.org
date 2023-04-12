@@ -302,7 +302,7 @@ Within the O3DE editor, combo boxes work by default with the following field dat
 + `AZStd::string`
 + Enums [reflected](#editing) to the `EditContext`. 
 
-To use the ComboBox with other types, it is necessary to register a combo box handler for the desired field type by calling `AzToolsFramework::RegisterGenericComboBoxHandler<T>()`, where `T` is the field type. Since the function lives in the `AzToolsFramework`, the call should be made within a target that links to the Editor, ideally in a gem's `EditorSystemComponent::Activate` function.
+To use the ComboBox with other types, register a combo box handler for the desired field type by calling `AzToolsFramework::RegisterGenericComboBoxHandler<T>()`, where `T` is the field type. Since the function lives in the `AzToolsFramework` namespace, make the call within a target that links to the Editor, such as a gem's `EditorSystemComponent::Activate` function.
 
 ```cpp
 ...
