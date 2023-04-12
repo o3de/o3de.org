@@ -64,7 +64,7 @@ Use this helpful command to install:
 sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-toolbox ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs
 ```
 
-### Clone this repository
+### Clone the Gem repository
 
 The ROS 2 Gem lives in the [`o3de/o3de-extras`](https://github.com/o3de/o3de-extras) repository. Clone the GitHub repository to your machine:
 
