@@ -1,7 +1,7 @@
 ---
 linkTitle: Menus
 title: Menus
-description:
+description: An overview of the Action Manager Menu API.
 weight: 102
 ---
 
@@ -14,8 +14,12 @@ The Menu Manager system provides interfaces to register and extend menus for use
 
 A new menu can be registered by just providing its string identifier.
 
-```
+The menu properties structure can also specify additional information:
 
+* A **name** string, which is meant to be a human-readable description to show in UI (currently unused);
+
+
+```
 AzToolsFramework::MenuProperties menuProperties;
 menuProperties.m_name = "Menu Name";
 
@@ -26,26 +30,19 @@ menuManagerInterface->RegisterMenu(
 
 ```
 
-The menu properties structure can also specify additional information:
-
-* A **name** string, which is meant to be a human-readable description to show in UI (currently unused);
-
 
 ### Displaying the Menu
 
-Once a menu is registered, it is possible to retrieve their `QMenu*` and display them in the interface.
+Once a menu is registered, it is possible to display it in the interface.
 
 ```
+// Display a menu at a specific screen position.
+menuManagerInternalInterface->DisplayMenuAtScreenPosition("o3de.menu.identifier", screenPosition);
 
-menuManagerInternalInterface->GetMenu("o3de.menu.identifier");
-
-// Show the menu at position
-QPoint position;
-menu.exec(position);
+// Display a menu under the cursor.
+menuManagerInternalInterface->DisplayMenuUnderCursor("o3de.menu.identifier");
 
 ```
-
-Note that the Menu Manager system will automatically clear and re-populate the menu whenever an action is added to it, or the enabled state of the actions added to the menus changes. As such, the `QMenu*` should only be used to display the menu and not to edit its structure since any change will be lost at the next update.
 
 
 ### Adding Actions
@@ -53,7 +50,6 @@ Note that the Menu Manager system will automatically clear and re-populate the m
 It is possible to add actions to a menu via this API call:
 
 ```
-
 int sortKey = 100;
 
 menuManagerInterface->AddActionToMenu(
@@ -64,7 +60,7 @@ menuManagerInterface->AddActionToMenu(
 
 ```
 
-See the Sort Keys section for more information about menu item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
 
 
 ### Adding Separators
@@ -72,7 +68,6 @@ See the Sort Keys section for more information about menu item ordering.
 To divide a menu into sections, it is possible to add separators.
 
 ```
-
 int sortKey = 100;
 
 menuManagerInterface->AddSeparatorToMenu(
@@ -82,7 +77,7 @@ menuManagerInterface->AddSeparatorToMenu(
 
 ```
 
-See the Sort Keys section for more information about menu item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
 
 If multiple separators are added one after the other in order, or at the beginning or end of the menu, they may be collapsed into one or just not displayed at all (default Qt behavior).
 
@@ -92,7 +87,6 @@ If multiple separators are added one after the other in order, or at the beginni
 It is possible to add existing menus as sub-menus via the following API call.
 
 ```
-
 int sortKey = 100;
 
 menuManagerInterface->AddSubMenuToMenu(
@@ -103,7 +97,7 @@ menuManagerInterface->AddSubMenuToMenu(
 
 ```
 
-See the Sort Keys section for more information about menu item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
 
 Note that the function call will fail if a user tries to add a menu to itself, or if the operation would cause the creating of a circular dependency that could stall the Editor.
 
@@ -113,7 +107,6 @@ Note that the function call will fail if a user tries to add a menu to itself, o
 Widgets can also be added to menus as follows:
 
 ```
-
 int sortKey = 100;
 
 menuManagerInterface->AddWidgetToMenu(
@@ -124,7 +117,7 @@ menuManagerInterface->AddWidgetToMenu(
 
 ```
 
-See the Sort Keys section for more information about menu item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
 
 
 ## Menu Bar
@@ -132,7 +125,6 @@ See the Sort Keys section for more information about menu item ordering.
 It is possible to register a MainWindow's menu bar region to the Menu Manager, so that is can be accessed via the Menu Manager APIs.
 
 ```
-
 // Retrieve an existing Main Window
 QMainWindow* mainWindow;
 
@@ -151,7 +143,6 @@ Once the menu bar is registered, external Gems can add new menus to the menu bar
 Adding menus to a menu bar works the same as adding sub-menus to menus.
 
 ```
-
 int sortKey = 100;
 
 menuManagerInterface->AddMenuToMenuBar(
@@ -162,4 +153,4 @@ menuManagerInterface->AddMenuToMenuBar(
     
 ```
 
-See the Sort Keys section for more information about menu item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.

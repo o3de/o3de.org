@@ -1,7 +1,7 @@
 ---
 linkTitle: ToolBars
-title: Settings Registry Developer Guide
-description: Explains the Settings Registry feature of O3DE and how developers can interact with it.
+title: ToolBars
+description: An overview of the Action Manager Menu API.
 weight: 103
 ---
 
@@ -63,7 +63,7 @@ toolBarManagerInterface->AddActionToToolBar(
 
 ```
 
-See the Sort Keys section for more information about toolbar item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about toolbar item ordering.
 
 
 ### Adding Separators
@@ -81,7 +81,7 @@ toolBarManagerInterface->AddSeparatorToToolBar(
 
 ```
 
-See the Sort Keys section for more information about toolbar item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about toolbar item ordering.
 
 If multiple separators are added one after the other in order, or at the beginning or end of the toolbar, they may be collapsed into one or just not displayed at all (default Qt behavior).
 
@@ -102,7 +102,7 @@ toolBarManagerInterface->AddActionWithSubMenuToToolBar(
 );
 ```
 
-See the Sort Keys section for more information about toolbar item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about toolbar item ordering.
 
 
 ### Adding Widget Actions
@@ -121,7 +121,7 @@ toolBarManagerInterface->AddWidgetToToolBar(
 
 ```
 
-See the Sort Keys section for more information about toolbar item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about toolbar item ordering.
 
 
 ## ToolBar Area
@@ -158,4 +158,4 @@ menuManagerInterface->AddMenuToMenuBar(
 
 ```
 
-See the Sort Keys section for more information about menu item ordering.
+See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about toolbar item ordering.
