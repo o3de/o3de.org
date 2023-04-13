@@ -38,7 +38,7 @@ If your simulation is running, you should see both ROS node(s) and topics.
   
 #### ROS 2 troubleshooting guide
 
-See the [ROS 2 troubleshooting guide](https://docs.ros.org/en/rolling/How-To-Guides/Installation-Troubleshooting.html) for solutions.
+For additional solution, refer to ROS 2's [Installation troubleshooting](https://docs.ros.org/en/rolling/How-To-Guides/Installation-Troubleshooting.html) page.
 
 ## It is a Gem or O3DE issue
 
