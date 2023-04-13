@@ -40,7 +40,7 @@ If your simulation is running, you should see both ROS node(s) and topics.
 
 For additional solution, refer to ROS 2's [Installation troubleshooting](https://docs.ros.org/en/rolling/How-To-Guides/Installation-Troubleshooting.html) page.
 
-## It is a Gem or O3DE issue
+## Is it a Gem or O3DE issue?
 
 If your debugging confirmed that the issue is either with the ROS 2 Gem or O3DE, please help the community by raising an issue.
 
