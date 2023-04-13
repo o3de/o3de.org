@@ -2,7 +2,7 @@
 linkTitle: Versioning Terminology
 title: Open 3D Engine Versioning and Release Terminology
 description: Read this topic to understand O3DE's versioning model and release terminology
-weight: 200
+weight: 500
 ---
 
 ## Open 3D Engine (O3DE) Version Numbering

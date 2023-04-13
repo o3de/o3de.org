@@ -7,7 +7,7 @@ description: |
 weight: 700
 toc: true
 menu_uuid: engine
-guide_img: "/images/engine-dev-guide/guide_img.png"
+guide_img: "/images/engine-dev/guide_img.png"
 primary: true
 ---
 
@@ -52,6 +52,14 @@ This section is currently incomplete, with a stub example for the ScriptCanvas G
 | Name | Description |
 |-|-|
 | [Script Canvas](./gems/scriptcanvas) | Learn about the internals of the Script Canvas system, including how Script Canvas handles types and generates bindings from C++ source code. |
+
+## Assets
+
+O3DE asset system is a key part of managing and loading assets in a project. This section of the Engine Developer Guide provides details on various asset related systems to help developers extend or modify the systems for their needs.
+
+| Name | Description |
+|-|-|
+| [Metadata Relocation](./assets/metadata) | Learn about how the Metadata Relocation system functions, where the code is, and which file types may or may not be supported. |
 
 ## Included Tools
 

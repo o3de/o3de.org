@@ -7,10 +7,6 @@ HUGO_VERSION = "0.105.0"
 GO_VERSION = "1.18"
 
 [context.deploy-preview]
-[[headers]]
-  for = "/*"
-[headers.values]
-  X-Robots-Tag = "none"
 command = "make preview-build"
 
 [context.branch-deploy]

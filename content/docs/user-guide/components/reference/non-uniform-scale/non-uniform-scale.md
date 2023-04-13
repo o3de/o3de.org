@@ -15,7 +15,8 @@ The following components are **compatible** with **Non-uniform Scale**:
 + **[Box Shape](/docs/user-guide/components/reference/shape/box-shape/)**
 + **[Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)**
 + **[Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)**
-+ **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component.
++ **[PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/) component.
++ **[PhysX Mesh Collider](/docs/user-guide/components/reference/physx/mesh-collider/)**
 + **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)**
 + **[PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/)**
 + **[PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)**
@@ -35,6 +36,7 @@ The following components are **incompatible** with the **Non-uniform Scale** com
 + **[PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/)**
 + **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/)**
 + **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/)**
++ **[PhysX Prismatic Joint](/docs/user-guide/components/reference/physx/prismatic-joint/)**
 + **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)**
 + **[PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/)**
 + **PhysX Character Gameplay**
@@ -58,7 +60,7 @@ The following components are currently **incompatible** because they are not yet
 ## EBus Request Bus Interface
 **NonUniformScaleRequestBus** is the request bus for the **Non-uniform Scale** component.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/).
 
 Use the following request functions with the EBus interface to communicate with other components.
 
@@ -86,7 +88,7 @@ None
 
 ### RegisterScaleChangedEvent
 
-Registers a handler for the **[AZ::Event](/docs/user-guide/programming/az-event/)** raised when the entity's non-uniform scale is changed.
+Registers a handler for the **[AZ::Event](/docs/user-guide/programming/messaging/az-event/)** raised when the entity's non-uniform scale is changed.
 
 **Parameters**
 Handler for non-uniform scale change events.

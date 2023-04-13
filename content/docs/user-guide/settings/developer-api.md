@@ -81,7 +81,7 @@ The following example demonstrates using the visitor API to gather active gem in
 
 ```c++
 // Queries the Settings Registry to get the list active gems targets and source paths
-auto GemSettingsVisitor = [&settingsRegistry, &gemInfoList](const AZ::SettingsRegistryInterface::VisitArgs& gemVisitArgs)
+auto GemSettingsVisitor = [&gemInfoList](const AZ::SettingsRegistryInterface::VisitArgs& gemVisitArgs)
 {
     auto FindGemInfoByName = [&gemVisitArgs](const GemInfo& gemInfo)
     {
@@ -97,13 +97,13 @@ auto GemSettingsVisitor = [&settingsRegistry, &gemInfoList](const AZ::SettingsRe
         gemInfo.m_gemTargetNames.emplace_back(visitArgs.m_fieldName);
         return AZ::SettingsRegistryInterface::VisitResponse::Skip;
     };
-    AZ::SettingsRegistryVisitorUtils::VisitObject(settingsRegistry, VisitGemTargets,
+    AZ::SettingsRegistryVisitorUtils::VisitObject(gemVisitArgs.m_registry, VisitGemTargets,
         FixedValueString::format("%.*s/Targets", AZ_STRING_ARG(gemVisitArgs.m_jsonKeyPath)));
 
     // Visit the "SourcePath" array fields of the gem to populate the Gem Absolute Source Paths array
     const auto gemPathKey = FixedValueString::format("%s/%.*s/Path",
         AZ::SettingsRegistryMergeUtils::ManifestGemsRootKey, AZ_STRING_ARG(gemVisitArgs.m_fieldName));
-    if (AZ::IO::Path gemRootPath; settingsRegistry.Get(gemRootPath.Native(), gemPathKey))
+    if (AZ::IO::Path gemRootPath; gemVisitArgs.m_registry.Get(gemRootPath.Native(), gemPathKey))
     {
         gemInfo.m_absoluteSourcePaths.emplace_back(gemRootPath);
     }
@@ -138,22 +138,19 @@ The fields of the array can be visited using the `SettingsRegistryVisitorUtils` 
 struct AppendArrayVisitor
     : AZ::SettingsRegistryVisitorUtils::ArrayVisitor
 {
-    CustomArrayVisitor(AZ::SettingsRegistryInterface& registry)
-        : m_registry(registry)
-    {}
+    CustomArrayVisitor() = default;
 
-    void Visit(const AZ::SettingsRegistryInterface::VisitArgs& visitArgs)
+    AZ::SettingsRegistryInterface::VisitResponse Visit(const AZ::SettingsRegistryInterface::VisitArgs& visitArgs)
     {
-        if (int value; registry.Get(value, visitArgs.m_jsonKeyPath))
+        if (int value; visitArgs.m_registry.Get(value, visitArgs.m_jsonKeyPath))
         {
             m_array.push_back(value);
         }
+
+        return AZ::SettingsRegistryInterface::VisitResponse::Skip;
     }
 
     AZStd::vector<int> m_array;
-private:
-    AZ::SettingsRegistryInterface& m_registry;
-
 };
 // ...
 settingsRegistry->Visit(AppendArrayVisitor, "/O3DE/Array");
@@ -178,13 +175,20 @@ You can use the helper visitor callback function, as in the following example:
 AZStd::unordered_map<AZStd::string, int> fieldToIntMap;
 auto AppendObjectFields = [&fieldToIntMap](const AZ::SettingsRegistryInterface::VisitArgs& visitArgs)
 {
-    if (int value{}; registry.Get(value, visitArgs.m_jsonKeyPath))
+    if (int value{}; visitArgs.m_registry.Get(value, visitArgs.m_jsonKeyPath))
     {
         fieldToIntMap.emplace(visitArgs.m_fieldName, value);
     }
+
+    return AZ::SettingsRegistryInterface::VisitResponse::Skip;
 };
 // ...
-AZ::SettingsRegistryVisitorUtils::VisitObject(*settingsRegistry, AppendObjectFields);
+
+if (AZ::SettingsRegistryInterface* settingsRegistry = AZ::SettingsRegistry::Get();
+    settingsRegistry != nullptr)
+{
+    AZ::SettingsRegistryVisitorUtils::VisitObject(*settingsRegistry, AppendObjectFields, "/O3DE/Object");
+}
 ```
 
 ## Value setter API

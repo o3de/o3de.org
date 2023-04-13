@@ -17,7 +17,7 @@ The Game State Gem manages a stack (or [pushdown automaton](https://en.wikipedia
 
 * `IGameState` - Abstract interface that all concrete game state classes must be derived from.
 
-* `GameStateRequests` - [EBus](/docs/user-guide/programming/ebus/) interface that other systems use to submit requests related to the game state.
+* `GameStateRequests` - [EBus](/docs/user-guide/programming/messaging/ebus/) interface that other systems use to submit requests related to the game state.
 
 * `GameStateNotifications` - EBus interface that other systems use to listen for events related to the game state.
 

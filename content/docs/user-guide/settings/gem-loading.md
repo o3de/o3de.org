@@ -328,7 +328,7 @@ The Settings Registry supports configuring settings for Asset Processor. The `As
 
 ### Gem asset scan folders
 
-To add additional Scan Folders for an active Gem, a `.setreg` file can add a "ScanFolder \<name>" under the the "/Amazon/AssetProcessor/Settings" field. The "\<name>" portion can be anything as long as it doesn't collide with another scan folder entry.
+To add additional Scan Folders for an active Gem, a `.setreg` file can add a "ScanFolder \<name>" under the "/Amazon/AssetProcessor/Settings" field. The "\<name>" portion can be anything as long as it doesn't collide with another scan folder entry.
 
 The following example adds the `<Blast Gem Root>/Editor/Scripts` folder as a Scan Folder for the Asset Processor:
 

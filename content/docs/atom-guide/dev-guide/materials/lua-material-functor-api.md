@@ -22,7 +22,7 @@ For details about how the name context may be specified, search "prefix" in the 
 
 ## Main functions
 
-The material system expects the the following functions to be defined at the global scope in the Lua script.
+The material system expects the following functions to be defined at the global scope in the Lua script.
 
 #### Process(`context`)
 

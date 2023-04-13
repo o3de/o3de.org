@@ -16,7 +16,7 @@ To include custom components in cinematic cut scenes and movies rendered to disk
 
 ## Exposing a Custom Component: Example
 
-The following example assumes that a custom component called `ImaginaryTargetComponent` has been created. The component has a `Vector3` property called `ImaginaryPosition` that you want to animate in **Track View**. A request bus called `ImaginaryTargetComponentBus` has also been created for the component. This example assumes that you are familiar with programming event buses and component handlers for them. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/) and [Creating a Component](/docs/user-guide/programming/components/create-component/).
+The following example assumes that a custom component called `ImaginaryTargetComponent` has been created. The component has a `Vector3` property called `ImaginaryPosition` that you want to animate in **Track View**. A request bus called `ImaginaryTargetComponentBus` has also been created for the component. This example assumes that you are familiar with programming event buses and component handlers for them. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/) and [Creating a Component](/docs/user-guide/programming/components/create-component/).
 
 **To expose a custom component to Track View**
 

@@ -14,7 +14,7 @@ The video and written instructions in this section guide you through the followi
 * Build the O3DE engine.
 * Register the engine.
 
-{{< youtube-width id="CIw9UoMMeX8" title="Setting up O3DE from GitHub" >}}
+{{< youtube-width id="GZF_6SkAXPw" title="Setting up O3DE from GitHub" >}}
 
 ## Prerequisites
 

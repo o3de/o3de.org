@@ -8,7 +8,7 @@ weight: 600
 
 The **Open 3D Engine (O3DE)** documentation website uses the [Hugo](https://gohugo.io/) static site generator and deploys using [Netlify](https://netlify.com).
 
-See the [GitHub repository](https://github.com/o3de/o3de.org) for build instructions and prerequisites, and [the Git workflow](git-workflow.md) for more information on how the project works.
+Refer to the o3de.org [README.md](https://github.com/o3de/o3de.org#readme) for build instructions and prerequisites, and [the Git workflow](git-workflow.md) for more information on how the project works.
 
 ## Adding new pages 
 
@@ -157,13 +157,13 @@ Within a layout directory, Hugo looks for one of 4 basic types:
 * `baseof.html`: The "base" template. Do not override this unless you know what you're doing!
 * `section.html`: The template for `_index.md` files, or section homepages. 
 * `single.html`: The template for files in a directory which are _not_ `_index.md` files – i.e., regular pages.
-* `list.html`: The templae for lists of subpages. As this gets a bit confusing with `section.html`, only use this layout for blog sections.
+* `list.html`: The template for lists of subpages. As this gets a bit confusing with `section.html`, only use this layout for blog sections.
 
 Most of the top level pages in the O3DE site are `section.html` pages with no subpages.
 
-#### Understanding Hugo layout inheirtance
+#### Understanding Hugo layout inheritance
 
-As described above, Hugo looks for progressively more specific layouts and applies the most specific one it can find. However, it also does this _within_ layout files by allowing you to overide a section called `main`.
+As described above, Hugo looks for progressively more specific layouts and applies the most specific one it can find. However, it also does this _within_ layout files by allowing you to override a section called `main`.
 
 For example, let's look at `/layouts/_default/baseof.html`:
 

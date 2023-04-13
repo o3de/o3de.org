@@ -43,13 +43,13 @@ Clustered Forward Shading
 Diffuse Probe Grid  
 : A volume of light probes that provides diffuse global illumination in a specified area. Each probe in the volume uses ray tracing to capture its diffuse lighting environment, known as irradiance.
 
-*Related to: [Diffuse Probe Grid component](/docs/user-guide/components/reference/atom/diffuse-probe-grid/), [Diffuse Probe Grid Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_diffuse_probe_grid_feature_processor_interface.html)*
+*Related to: [Diffuse Probe Grid component](/docs/user-guide/components/reference/atom/diffuse-probe-grid/), [Diffuse Probe Grid Feature Processor API](/docs/api/gems/diffuseprobegrid/class_a_z_1_1_render_1_1_diffuse_probe_grid_feature_processor_interface.html)*
 
 
 Reflection Probes  
 : A system that provides specular reflections for the environment around capture points, known as probes.  A probe stores its environment as a cubemap and applies the cubemap to meshes that are located inside the probe's volume. With the reflection probes system, the mesh can display environment reflections that match the surroundings at its location.
 
-*Related to: [Reflection Probe component](/docs/user-guide/components/reference/atom/reflection-probe/), [Reflection Probe Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html)*
+*Related to: [Reflection Probe component](/docs/user-guide/components/reference/atom/reflection-probe/), [Reflection Probe Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_reflection_probe_feature_processor_interface.html)*
 
 
  Subsurface Scattering   
@@ -93,7 +93,7 @@ Atom has a unified mesh format with support for several mesh types:
 + **Skinned** meshes that are bound to a skeleton with per vertex bone weights and animated through transforms applied to the bones of the skeleton. Skinned meshes can't be included in light maps or reflection maps.
 + **Cloth** meshes that dynamically simulate the physical properties of cloth-like objects. Cloth meshes can't be included in light maps or reflection maps.
 
-*Related to: [Mesh component](/docs/user-guide/components/reference/atom/mesh), [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html)*  
+*Related to: [Mesh component](/docs/user-guide/components/reference/atom/mesh), [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [Skinned Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html)*  
 
 
 ## Post-processing effects (PostFX)
@@ -104,7 +104,7 @@ Tonemapping
 
 Atom's default tonemapping is [ACES](https://acescentral.com/), which simplifies and standardizes color management by maintaining artistic integrity and fidelity. It allows the best reproduction of color from the renderer to the display and across many modern DCC applications that support ACES. 
 
-*Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples/#tonemapping)*
+*Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/)*
 
 
 Color Grading  
@@ -121,7 +121,7 @@ Post-processing Volumes
 
 - A **PostFX Gradient Weight Modifier** component sets up a more complex blend by using a gradient signal as a masking operation.
  
-*Related to: PostFX components [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [PostFX Radius Weight Modifier](/docs/user-guide/components/reference/atom/postfx-radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)*
+*Related to: PostFX components ([PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [PostFX Radius Weight Modifier](/docs/user-guide/components/reference/atom/postfx-radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)*
 
 
 Bloom  
@@ -160,10 +160,5 @@ Motion Vectors
 Multi-scene   
 : Support for rendering to multiple scenes. An example of this implementation can be found in the Atom Sample Viewer. 
 
-*Related to: [Multi-scene RPI Sample (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/rpi-samples#multi-scene)* 
-
-
 Multi-render Pipeline   
 : Support for using multiple render pipelines in a scene. Multiple render pipelines allow you to switch render pipelines at runtime. An example of this implementation can be found in the Atom Sample Viewer.
-
-*Related to: [Multi-render RPI Sample (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/rpi-samples/#multi-render-pipeline)* 

@@ -31,6 +31,7 @@ See the linked component reference below for information on the three PhysX join
 + [ PhysX Ball Joint component reference ](/docs/user-guide/components/reference/physx/ball-joint/) - The **PhysX Ball Joint** component allows freedom of rotation of the follower rigid body in two axes.
 + [ PhysX Fixed Joint component reference ](/docs/user-guide/components/reference/physx/fixed-joint/) - The **PhysX Fixed Joint** component does not allow freedom of rotation of the follower rigid body in any axis.
 + [ PhysX Hinge Joint component reference ](/docs/user-guide/components/reference/physx/hinge-joint/) - The **PhysX Hinge Joint** component allows freedom of rotation of the follower rigid body in one axis.
++ [ PhysX Prismatic Joint component reference ](/docs/user-guide/components/reference/physx/prismatic-joint/) - The **PhysX Prismatic Joint** component keeps the same rotation, but allows the follower rigid body to move freely along one axis.
 
 ## PhysX joint setup 
 
@@ -42,7 +43,7 @@ The setup for each joint type is the same.
 
    1. Add a **PhysX Static Rigid Body** or a **PhysX Dynamic Rigid Body** (type *kinematic* or *simulated*) component depending if you want the leader to move or not.
 
-   1. Add a **PhysX Collider** component to the entity.
+   1. Add a PhysX collider to the entity.
 
 1. Create an entity for the **follower** rigid body and the joint.
 
@@ -50,12 +51,13 @@ The setup for each joint type is the same.
 
    1. Add a **PhysX Dynamic Rigid Body** (type *simulated*) component to the entity.
 
-   1. Add a **PhysX Collider** component to the entity. This is required for angle limits to work correctly. Joints still work without a PhysX Collider component but angle limits and might not be enforced. This is also true when using trigger colliders.
+   1. Add a PhysX collider to the entity. This is required for angle limits to work correctly. Joints still work without a PhysX collider but angle limits and might not be enforced. This is also true when using trigger colliders.
 
    1. Add one of the PhysX joint components:
       + **PhysX Ball Joint**
       + **PhysX Fixed Joint**
       + **PhysX Hinge Joint**
+      + **PhysX Prismatic Joint**
 
    1. Assign the leader entity to the PhysX joint by clicking the **Target** button to the right of the **Lead Entity** property and select the leader entity in **Perspective**.
 
@@ -71,7 +73,7 @@ Joint components have an **Edit** button that enables component edit mode. In co
 
 ### Position mode 
 
-**Applies to:** All Joints
+**Applies to:** Ball Joint, Fixed Joint and Hinge Joint
 
 ![PhysX joint position mode](/images/user-guide/physx/physx/ui-physx-joint-position-mode.png)
 
@@ -79,7 +81,7 @@ Position mode displays a translate gizmo that you can click and drag to adjust t
 
 ### Rotation mode 
 
-**Applies to:** All Joints
+**Applies to:** Ball Joint, Fixed Joint and Hinge Joint
 
 ![PhysX joint rotation mode](/images/user-guide/physx/physx/ui-physx-joint-rotation-mode.png)
 
@@ -103,7 +105,7 @@ Snap rotation mode displays a highlight bounding box and target when you hover o
 
 ### Maximum Force and Maximum Torque modes 
 
-**Applies to:** All Joints
+**Applies to:** Ball Joint, Fixed Joint and Hinge Joint
 
 ![PhysX joint maximum force and maximum torque modes](/images/user-guide/physx/physx/ui-physx-joint-breakable-properties-mode.png)
 

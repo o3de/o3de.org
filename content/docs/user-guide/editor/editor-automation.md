@@ -17,7 +17,7 @@ weight: 600
 
  You can also access a set of available scripts, including some samples for common tasks in the editor, by selecting **Tools** > **Other** > **Python Scripts**. These scripts are stored in a directory depending on their scope. Scripts only for your project are stored in the `Editor\Scripts` directory, and scripts meant to be used along with a gem are stored at `Gems\<name>\Editor\Scripts`.
 
- Editor automation is driven primarily through the event bus (EBus) system. Before working with the editor bindings, you should become familiar with the basics of EBus from [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus/). To learn about some of the specific buses used by the editor automation system, take a look at the [Python Editor Bindings Gem examples](#python-editor-bindings-gem-examples).
+ Editor automation is driven primarily through the event bus (EBus) system. Before working with the editor bindings, you should become familiar with the basics of EBus from [Working with the Event Bus (EBus) system](/docs/user-guide/programming/messaging/ebus/). To learn about some of the specific buses used by the editor automation system, take a look at the [Python Editor Bindings Gem examples](#python-editor-bindings-gem-examples).
 
 ## Python Editor Bindings Gem Examples
 
@@ -552,7 +552,7 @@ weight: 600
  # the path to the 'Extended Tags' property
  tagListPropertyPath = 'm_template|Extended Tags'
  
- # get current item count of the the container
+ # get current item count of the container
  outcome = pte.get_container_count(path)
  if(outcome.IsSuccess()):
    count = outcome.GetValue()
