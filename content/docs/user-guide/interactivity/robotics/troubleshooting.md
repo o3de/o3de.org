@@ -8,7 +8,7 @@ weight: 500
 In this section, you will learn helpful hints and what to check when your robotics simulation in Open 3D Engine (O3DE) is not working as expected.
 You will also find solutions for some of the most commonly occurring problems.
 
-## A quick checklist
+## Is it a ROS 2 issue?
 
 ### Look into error messages and logs
 
