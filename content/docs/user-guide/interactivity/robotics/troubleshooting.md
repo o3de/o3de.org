@@ -36,7 +36,7 @@ If your simulation is running, you should see both ROS node(s) and topics.
 
 - Is there traffic on ROS 2 topics? When your simulation is running, messages should be published.
   - Check `ros2 topic hz` or `ros2 topic echo`. If you are seeing no traffic it could be caused by a firewall, disabled multicast or issues with your docker (if running from a docker).
-  - Please refer to the [Troubleshooting guide](#troubleshooting-guide).
+  - Please refer to the [Troubleshooting guide](#ros2-2-troubleshooting-guide).
   
 #### ROS 2 troubleshooting guide
 
