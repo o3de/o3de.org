@@ -8,6 +8,8 @@ weight: 500
 In this section, you will learn helpful hints and what to check when your robotics simulation in Open 3D Engine (O3DE) is not working as expected.
 You will also find solutions for some of the most commonly occurring problems.
 
+If you don't find your problem covered here, try searching the issues and discussions in [`o3de-extras`](https://github.com/o3de/o3de-extras) repo or asking in the `#sig-simulation` channel of the [O3DE Discord](https://{{< links/o3de-discord >}}).
+
 ## Is it a ROS 2 issue?
 
 ### Look into error messages and logs
