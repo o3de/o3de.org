@@ -72,3 +72,4 @@ This section is currently incomplete, with a stub example for Project Manager. A
 | Name | Description |
 |-|-|
 | [Project Manager](./tools/project-manager) | Learn about the internals of **Project Manager**, including an overview of the major classes and data structures that work together to create the UI and implement the project management and Gem library features of this tool. |
+| [Test Impact Analysis Framework](./tools/tiaf) | Learn about the Test Impact Analysis Framework, including an overview of the architectural design and how to maintain and extend the framework for new use cases. |
