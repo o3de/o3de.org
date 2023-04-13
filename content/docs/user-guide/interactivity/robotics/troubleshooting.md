@@ -36,7 +36,7 @@ If your simulation is running, you should see both ROS node(s) and topics.
   - Check `ros2 topic hz` or `ros2 topic echo`. If you are seeing no traffic it could be caused by a firewall, disabled multicast or issues with your docker (if running from a docker).
   - Please refer to the [Troubleshooting guide](#troubleshooting-guide).
   
-#### Troubleshooting guide
+#### ROS 2 troubleshooting guide
 
 See the [ROS 2 troubleshooting guide](https://docs.ros.org/en/rolling/How-To-Guides/Installation-Troubleshooting.html) for solutions.
 
