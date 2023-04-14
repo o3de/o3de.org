@@ -297,7 +297,7 @@ AZStd::vector<AZStd::pair<AZ::Crc32, AZStd::string>> GetEnemyTypes()
 }
 ```
 
-Within the O3DE editor, combo boxes work by default with the following field data types:
+Within O3DE Editor, combo boxes work by default with the following field data types:
 + Numeric (`int`, `float`, etc.)
 + `AZStd::string`
 + Enums [reflected](#editing) to the `EditContext`. 
