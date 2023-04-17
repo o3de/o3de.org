@@ -174,6 +174,23 @@ The Skin Modifier sets limits for processing skin weights for meshes that are bo
 The tangents modifier either imports tangents and bitangents from the source asset, or generates them during asset processing. Tangents and bitangents are vertex attributes that are used in various shading calculations. Tangents and bitangents are particularly important for skinned meshes and for normal and relief maps.
 
 | Property | Description |
-| - | - | - |
+| - | - |
 | **Generation Method** | Tangents and bitangents can be either imported from the source asset (`From Source Scene`), or automatically generated using the `MikkT` algorithm.  |
 | **TSpace Method** | The `TSpaceBasic` method generates tangents and bitangents at the vertex or pixel level with a unit length magnitude that are perpendicular to the normal. The `TSpaceBasic` method is suitable for normal mapping. The `TSpace` method calculates tangents and bitangents with their true magnitude. The resulting tangents and bitangents might not be perpendicular to the normal, but are perpendicular to each other. The `TSpace` method is suitable for relief mapping. |
+
+## UVs
+
+![The Scene Settings Meshes tab UVs modifier.](/images/user-guide/assets/scene-settings/uvs-modifier.png)
+
+The UVs modifier either imports a UV Map from the source asset, or generates them during asset processing. UVs are vertex attributes that control where texture maps are sampled from for a given area in a mesh. UVs are required in order for tangent and bitangent generation to function correctly. 
+
+Note that most DCC tools generate far better UV sets than can be generated with this setting, but it may be useful in situations where the source data
+has no UVs defined in it and you would like to get something to render without having to open the data in a DCC tool to modify it and supply UVs.
+
+When no UV modifier is present, nothing is done by default to the source scene, regardless of whether or not the meshes have UVs.
+
+| Property | Description |
+| - | - |
+| **Generation Method** | UVs can be either imported from the source asset (`From Source Scene`), or automatically generated using spherical positional projection (`Spherical Projection`).
+| **Replace Existing UVs** | If this option is off, the UVs Modifier will only generate UVs for meshes that are actually missing UVs, and do nothing otherwise.  If this option is on, the Generation Method will apply even if the mesh in the scene already has normals from the DCC tool. |
+

@@ -107,7 +107,7 @@ The AZ::SceneAPI::SceneCore::GenerationComponent event contexts:
 * PreGenerateEventContext -- Signals the scene generation step is about to happen
 * GenerateEventContext -- Signals that new data such as procedurally generated objects should be added to the Scene
 * GenerateLODEventContext -- Signals that new LODs should be added to the Scene
-* GenerateAdditionEventContext -- Signals that any new data, such as tangents and bitangents, should be added to the Scene
+* GenerateAdditionEventContext -- Signals that any new data, such as UVs, tangents and bitangents, should be added to the Scene
 * GenerateSimplificationEventContext -- Signals that data simplification / complexity reduction should be run
 * PostGenerateEventContext -- Signals that the generation step is complete
 
