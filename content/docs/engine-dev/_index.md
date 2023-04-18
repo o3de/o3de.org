@@ -67,7 +67,7 @@ Content in scene files, like `fbx` format files, are core to most O3DE projects.
 
 | Name | Description |
 |-|-|
-| [Open Asset Importer Library](./scenepipeline/openassetimporter) | Learn about the integration of the external library, Open Asset Importer. |
+| [Open Asset Importer Library](./scenepipeline/openassetimporter) | Learn about the integration of the external library, Open Asset Importer. This library is used to load content from standard formats like `fbx`. |
 | [Adding New Scene File Formats](./scenepipeline/addingscenefiles) | Learn about extending the engine to support additional scene file formats. |
 
 ## Included Tools

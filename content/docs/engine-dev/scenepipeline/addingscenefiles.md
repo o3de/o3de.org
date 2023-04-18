@@ -20,19 +20,19 @@ There is a lot of variance in what information scene files of different formats 
 
 Understanding what the format you are enabling supports and what the scene pipeline supports will help you figure out your approach to enabling the format, especially in relation to testing, both manual and automated, that will be done before finishing this work. You can read more about the scene pipeline in the [Scene Pipeline](../../user-guide/assets/scene-pipeline) and [Scene Settings](../../user-guide/assets/scene-settings) documentation for O3DE.
 
-Finally, you'll want to understand the current support level for the format you are enabling, in the [Open Asset Importer Library](./openassetimporter) itself. Scene files often have many sub versions, for example `fbx` is not a single static file format, but it has been extended and changed throughout the years, and [Open Asset Importer Library](./openassetimporter) best supports 2011, 2012, and 2013 versions of the `fbx` file format.
+Finally, you'll want to understand the current support level for the format you are enabling, in the [Open Asset Importer Library](./openassetimporter) itself. Scene files often have many sub versions, for example `fbx` is not a single static file format, but it has been extended and changed throughout the years, and [Open Asset Importer Library](./openassetimporter) officially supports 2011, 2012, and 2013 versions of the `fbx` file format, but by default will attempt to import other versions of `fbx` files.
 
 ### Enable the format for importing
 
 As covered in the [Scene Format Support](../../user-guide/assets/scene-settings/scene-format-support) documentation, the list of enabled scene file formats are managed via the settings registry key `O3DE/SceneAPI/AssetImporter/SupportedFileTypeExtensions`. The first step in enabling a new format is to add that file format to the list here.
 
-Engine customers are encouraged to extend this settings registry key at the project level, and not this global settings level, so they can enable it just for their project. This documentation is for engine contributors, people who want to enable a new scene file format for all O3DE users.
+O3DE users are encouraged to extend this settings registry key at the project level, and not this global settings level, so they can enable it just for their project. This documentation is for engine contributors, people who want to enable a new scene file format for all O3DE users.
 
-Enabling the format in this workflow is a data change so far. No code needs to be recompiled, so the Asset Processor can be re-launched to make sure it has loaded the latest settings registry file. You can verify you've enabled the format by going to the `Builders` tab of the Asset Processor, selecting the `Scene Builder` from the list, and checking that the new extension is added to the pattern list.
+Enabling the format in this workflow is a data change, no code needs to be recompiled. The Asset Processor should be re-launched to make sure it has loaded the latest settings registry file. You can verify you've enabled your chosen format by going to the `Builders` tab of the Asset Processor, selecting the `Scene Builder` from the list, and checking that the new extensions is added to the pattern list.
 
 ### Testing the new file format
 
-Once the format is enabled, you will want to test this change. This workflow generally starts with some manual tests by adding files to a local project in the new format.
+Once the format is enabled, you will want to test this change. Its recommended that you start with manual testing by adding example files, in the new format, to a local test project.
 
 After you've done a few rounds of manual inspection of scene files in this new format, adding automated tests will help with maintaining support of the new format. Automated tests allow others to extend and change the scene pipeline, as well as update the [Open Asset Importer Library](./openassetimporter) safely around the file format added.
 
