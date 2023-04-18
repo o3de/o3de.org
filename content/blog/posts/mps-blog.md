@@ -126,9 +126,9 @@ In this component you can setup the gem types, gem point values, and set which g
 **Gem Spawn Points**
 Gem Spawn Points should be created wherever you want a gem to appear in the level.
 
-* **Transform** - The location the gem will appear in the level.
-* **Tag** - Here you will enter the tags that correspond with the gems you want to spawn in this location. Entry [0] should be the Gem Spawn tag (set above in the Gem Spawn Tables Per Round component). Additional entries correspond with the gem(s) type you want to spawn in this location.. You can add more than one gem type here. When this happens, the Gem Weight will influence which gem spawns each time. e.g. If you add yellow and green gems and give each a weight of 1, there will be an even chance of either to spawn. If one is set to greater than 1, that gem is more likely to spawn.
-* **Script Canvas & Mesh & Material components** - By default, gem spawn points have no visual indicator in the editor as gems only appear in those positions when the game is running. To allow you to visualize gem spawn points in the editor we add the mesh component and assign the gem model and a material that matches the gem that will appear in game. Then, when the game starts, we hide the placeholder gem models using the script canvas component
+* **Transform** - The location of the gem spawn point.
+* **Tag** - The tag(s) that correspond with the gem(s) you want to spawn from this spawn point. You can add more than one gem type to the spawn point by adding entries and entering tag values from the Gem Spawnables table. When more than one gem spawnable tag is referenced, the **Gem Weight** value influences which gem spawns. For example, if you add yellow and green gem sapwnables and give each a weight of 1, there is an even chance of either to spawn. If one is set to greater than 1, that gem is more likely to spawn.
+* **Script Canvas & Mesh & Material components** - By default, gem spawn points have no visual indicator in the editor as gems only appear when the game runs. To visualize gem spawn points in the editor, the Mesh and Material components assign the gem model and a material that matches the gem that appears in game. When the game runs, the script canvas component hides the gem visualization mesh.
 
 ## **Setting Up Teleporters**
 
