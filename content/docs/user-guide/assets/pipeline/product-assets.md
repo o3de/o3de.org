@@ -12,13 +12,13 @@ The [Asset Processor](/docs/user-guide/assets/assets/asset-processor/) uses [Ass
 
 This page covers best practices for generating product assets from an asset builder.
 
-# Determistic Generation
+# Determistic generation
 
 It's best practice to make product asset generation deterministic. The same source asset, with the same version of the asset builder for that source asset, should generate the exact same product asset each time it is generated. Both locally for the same contributor, and for all contributors on an O3DE project. This should be done for several reasons.
 
-* It's easier to debug issues with product assets if they are identical for all contributors on a project.
-* Job dependencies that are declared with a sub ID to match to a specific product will cause the job to re-process each time the product changes. This system was built to save time spent re-running jobs, to only run jobs when they need to be run. Product assets that change each time the job is run circumvent this system.
-* [Asset bundling](docs/user-guide/packaging/asset-bundler/) is a step in the process of generating distributable release builds. A key feature of asset bundling is the use of product asset hashes to track which product assets have changed since the last published release build. If product assets change each time they are generated, that will results in asset bundling on patches including content that may not have been meaningfully modified since the last release.
+* Asset reference stability - It's easier to debug issues with product assets if they are identical for all contributors on a project.
+* Time spent re-processing assets - Job dependencies that are declared with a sub ID to match to a specific product will cause the job to re-process each time the product changes. This system was built to save time spent re-running jobs, to only run jobs when they need to be run. Product assets that change each time the job is run circumvent this system.
+* Minimizing asset bundle sizes - [Asset bundling](docs/user-guide/packaging/asset-bundler/) is a step in the process of generating distributable release builds. A key feature of asset bundling is the use of product asset hashes to track which product assets have changed since the last published release build. If product assets change each time they are generated, that will results in asset bundling on patches including content that may not have been meaningfully modified since the last release.
 
 # Emit product dependencies
 
