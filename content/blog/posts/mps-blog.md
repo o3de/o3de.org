@@ -111,14 +111,15 @@ With this component, you can set the length of the match and the point penalty a
 **Gem Spawner**
 In this component you can setup the gem types, gem point values, and set which gems spawn in each round.
 
-* **Gem Spawnables -** Here you will assign a tag, select an asset for the gem, and set the number of points that are awarded when the gem is picked up.
-    * **Tag** - Gem Tag is determines the gem type to spawn. Gem tags are used in per round spawn tables as well as individual gem spawn points.
-    * **Asset** - Here you will assign the asset to use for the gem.
-    * **Score** - Here you will set the point value for each gem.
-* **Spawn Tables Per Round** - Here you will use Gem Tags from the gem spawnables table to setup gem spawns for each game round. Starting with round [1] you can set the type of gems that spawn during that round. You can use all gem types, or a subset. Note: Spawn Table [0] is not used.
-    * **Gem Tag Type** - Using the Gem Tag this specifies the gem that spawns
-    * **Gem Weight** - In the event the the spawn point (see below) calls two or more different Gem Tags, this value will influence which of those gems spawn. 
-* **Gem Spawn Tag** - This is used in Gem Spawn Points, see below.
+
+* **Gem Spawnables -** In this property group, you can create gem spawnables and set a tag, asset reference, and point value for each one.
+    * **Tag** - This value is referenced in the per round spawn tables as well as individual gem spawn points to spawn this gem spawnable.
+    * **Asset** - Sets the asset to use for this gem spawnable.
+    * **Score** - Sets the point value for this gem spawnable.
+* **Spawn Tables Per Round** - Here you will use the Tags from the gem spawnables table to setup gem spawns for each game round. Starting with round [1] you can set the type of gems that spawn during that round. A round can include any or all of the available gem spawnables. Note: Spawn Table [0] is not used.
+    * **Gem Tag Type** - Specifies the gem spawnable to spawn by referencing its tag.
+    * **Gem Weight** - If a  spawn point (see below) calls two or more different gem spawnable tags, this value influences which of those gems spawn. 
+* **Gem Spawn Tag** - Used in Gem Spawn Points to reference this Gem Spawner (see below).
 
 {{< image-width src="/images/blog/mps-sample/image07.png" alt="Gem Spawn Tag" >}}
 
