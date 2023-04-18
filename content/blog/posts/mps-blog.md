@@ -102,9 +102,9 @@ There are a number of new components that are part of the MPS Setup. Within thes
 **Network Match**
 With this component, you can set the length of the match and the point penalty applied to each character that is forced to respawn during the round.
 
-* **Round Duration** - Here you will set the duration of each round. 
-* **Total Rounds** - Here you will set the number of rounds. When all rounds are completed, the match ends, so this serves to dictate the length of each match as well.
-* **Respawn Penalty Percentage** - This sets the percentage of the player’s accrued points that are lost when they are forced to respawn, either by losing all of their shields or falling out of the level. This number can be set to 0 if desired, eliminating any respawn penalty.
+* **Round Duration** - Set the duration of each round. 
+* **Total Rounds** - Set the number of rounds. When all rounds are completed, the match ends, so this serves to dictate the length of each match as well.
+* **Respawn Penalty Percentage** - Set the percentage of the player’s accrued points that are lost when they are forced to respawn, either by losing all of their shields or falling out of the level. This number can be set to 0 if desired, eliminating any respawn penalty.
 
 {{< image-width src="/images/blog/mps-sample/image06.png" alt="Gem Spawner." >}}
 
