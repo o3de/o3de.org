@@ -84,8 +84,6 @@ td > div {
 </table> 
 
 
-
-
 ## Multiplayer Sample Configuration
 
 There are a number of new components that are part of the MPS Setup. Within these components you can adjust many aspects of the game, including length of match, respawn penalties, and how and when certain gems spawn.
