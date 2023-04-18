@@ -35,7 +35,7 @@ In order to setup and build the MPS you will need to get follow the setup instru
 
 ### Gems & Rounds
 
-{{< image-width src="/images/blog/mps-sample/image03.png" width="100%" alt="MPS Game Design.Gems & Rounds." >}} around the arena are floating gems of various colors. Picking these gems up, by walking through them, will award you points. The amount of points earned depends on the color of the gem. There are 5 gem types: Yellow (1 Point), Blue (3 Points), Green (7 points), Red (10 points), White (20 Points). These values are tunable from within the match controller component. Some of the more valuable gems can be found in hard-to-reach areas or areas where it is easy to fall out of the level, or both! We encourage you to explore the level and find all of the gems.
+{{< image-width src="/images/blog/mps-sample/image03.png" width="100%" alt="MPS Game Design.Gems & Rounds." >}} Floating gems of various colors are scattered around the starbase. Players earn points by walking though the gems to pick them up. The value of a gem is determined by its color. There are 5 gem types: Yellow (1 Point), Blue (3 Points), Green (7 points), Red (10 points), White (20 Points). These values are tunable from within the match controller component. Some of the more valuable gems can be found in hard-to-reach areas or areas where it is easy to fall out of the level, or both! We encourage you to explore the level and find all of the gems.
 
 Each match is comprised of multiple rounds that last 2 minutes each (defaults to 3). The number and duration of rounds is easily configurable in the match controller component. Gems respawn between rounds and each round can spawn different types of gems. By default, the per round gem spawn tables look like this:
  
