@@ -31,7 +31,7 @@ In order to setup and build the MPS you will need to get follow the setup instru
 
 ## Multiplayer Sample Game Design
 
-{{< image-width src="/images/blog/mps-sample/image02.png" width="100%" alt="MPS Game Design." >}} The MPS is a combination of player vs. player and player vs. environment. You and other players compete to earn as many points as you can before the match ends. Points are earned by picking up the gems that spawn around the level. Additionally, you and the rest of the players have an energy shield that protects you. When you shoot other players and when they shoot you, your shield is damaged. Once your shields are depleted, you will respawn, but at the cost of some of your accumulated points. If you cause another player to respawn, they will drop some of their gems for you to collect.
+{{< image-width src="/images/blog/mps-sample/image02.png" width="100%" alt="MPS Game Design." >}} MPS features player vs. player combat in a challenging environment. Players compete to collect gems and earn as many points as they can before the match ends. Players are protected by energy shields. When a player is shot, their shield takes damage. Once a player's shield is depleted, they drop some of their gems for other players to collect and respawn at the cost of some of their accumulated points.
 
 ### Gems & Rounds
 
