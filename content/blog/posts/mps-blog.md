@@ -17,8 +17,8 @@ It is best to think of the MPS as a starting point and a toolbox of new features
 
 This sample was created through a partnership between AWS Gametech, Adobe, KitBash3D and the O3DF. 
 
-* The use of the Y-bot character model as well as the animations contained in character_mps gem are subject to the license terms found here:  https://github.com/o3de/o3de-multiplayersample-assets/tree/main/Gems/character_mps
-* The use of Kitbash3D High Tech Streets Kit are subject to the license terms found [here](https://github.com/o3de/o3de-multiplayersample-assets/tree/main/Gems/kb3d_mps)
+* The use of the Y-bot character model as well as the animations contained in character_mps gem are subject to the [license terms](https://github.com/o3de/o3de-multiplayersample-assets/tree/main/Gems/character_mps) included in the **character_mps** Gem.
+* The use of Kitbash3D High Tech Streets Kit are subject to the [license terms](https://github.com/o3de/o3de-multiplayersample-assets/tree/main/Gems/kb3d_mps) included in the **kb3d_mps** Gem.
 
 ## Installing and Running the O3DE Multiplayer Sample Game
 
