@@ -100,7 +100,7 @@ There are a number of new components that are part of the MPS Setup. Within thes
 </div> 
 
 **Network Match**
-In this component you will set the length of the match and the point penalty applied to each character that is forced to respawn during the round.
+With this component, you can set the length of the match and the point penalty applied to each character that is forced to respawn during the round.
 
 * **Round Duration** - Here you will set the duration of each round. 
 * **Total Rounds** - Here you will set the number of rounds. When all rounds are completed, the match ends, so this serves to dictate the length of each match as well.
