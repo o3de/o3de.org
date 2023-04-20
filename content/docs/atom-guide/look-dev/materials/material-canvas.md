@@ -131,40 +131,51 @@ The Help menu provides support and resources for the Material Canvas.
 | Help...  | | Launches the Material Canvas Help window and displays a list of controls in the Material Canvas. |
 | About... | | Displays information about the Material Canvas. |
 
-## Central Window
-Material Canvas and other Atom Tools support opening and editing multiple document types, documents, and views. The main views and content for each document will be displayed as part of the central window.
+## Navigating Material Canvas
+After Material Canvas has opened and initialized it will display the main window, as shown below.
 
-### Document Tabs
-The top of the central window displays tabs for each open document. The tab bar highlights the tab for the active document. You can switch between open documents by clicking on their title in the tab bar. You can close each document by clicking the X on its tab and perform other actions made available by right clicking on the tab. Tabs can be dragged and reordered but they cannot be undocked. Switching tabs will also update the inspector to display properties for the newly selected document.
+### Multiple Documents, Types, and Views
+Material Canvas and the main window operate using a multiple document and view Interface. A document is any file with a registered type that can be opened and edited in the tool. Material Canvas supports multiple document types.  This allows one application to support editing multiple types of data.
 
-### Graph View
-The main document type in Material Canvas is the material graph. Each material graph document tab displays a gridded, graph view as the main workspace for viewing and editing graph nodes and connections.
+Multiple documents can be opened and edited simultaneously. Each document will be represented and accessible using a tab at the top of the main window. Each document tab contains an associated view that is usually the main workspace for viewing and editing the document.  Selecting a tab will activate the corresponding document, switch to its views, and update other windows, such as the inspector, with content from the current document.
 
-## Inspector
+#### Material Graph Documents
+In Material Canvas, the main document type is the material graph. Each open material graph has a corresponding, two dimensional, gridded, graph view, where most editing will take place. All of the data related to nodes, connections, slot values, positioning, selection, and any other metadata about the graph will be stored in the material graph document.
+
+#### Material Graph Node Documents
+Material Graph Node documents are JSON files defining each type of node that can be created in Material Canvas. They contain settings for a unique ID, unique names, display names, descriptions, data types, and default values for the node and its slots.  Additionally, they declare fragments of AZSL shader code and other metadata that Material Canvas uses to assemble complete shaders.  All of the current Material Canvas nodes are specified using material graph node configuration files.  Nodes can also be created and registered programmatically using C++ or Python.
+
+#### Shader Source Data Config Documents
+This document type is for editing ".shader" configuration files. All of the supporting data types have been reflected so that shader source data files can be edited in the inspector or using Python. All of the options are enumerated and populated in the UI. This is useful for editing shader source data files and creating new templates for material graph output nodes, described later.
+
+### Docked Windows
+Several other windows are docked around the main window. This includes, but is not limited to, the Inspector, Node Palette, Bookmarks, Mini Map, Asset Browser, Logging Window, Python Terminal, Viewport, and Viewport Settings.
+
+#### Inspector
 The Inspector displays context sensitive, editable properties of the active document. For material graph documents, the inspector displays properties of each selected node in the graph view.  Changing properties in the inspector will update the graph and regenerate files.
 
-## Node Palette
+#### Node Palette
 The node palette contains a tree of all available material graph nodes, and other utility nodes, that can be added to a graph. The nodes are organized by category and color coded by type. Hovering the mouse cursor over each node in the tree will display a tool tip describing its purpose. Drag nodes from the palette into the active graph view to create an instance of that node at the drop position on the graph.
 
-## Bookmarks
+#### Bookmarks
 Use the bookmarks panel to manage all of the bookmarks on the active graph. Place bookmarks on the graph, like pins on a map, as a point of reference for any important positions. Double clicking on a bookmark will center the graph view on that position. Bookmark descriptions and colors are configurable in the bookmarks panel and inspector.
 
-## Mini Map
+#### Mini Map
 The mini map window displays a zoomed-out overview of the nodes and graph. Quickly navigate to different parts of the graph by clicking and dragging the mini map.
 
-## Asset Browser
+#### Asset Browser
 Use the Asset Browser panel to explore and manage assets in the active project and gems. Set up filters, select, create, rename, move, delete, and perform other operations on assets. The Asset Browser automatically selects the file corresponding to the most recently opened or activated document. This will only happen if the filters are set up to display the document type. Assets can be dragged from the Asset Browser into asset properties in the inspector and other windows supporting the dropped file types.
 
-## Logging
+#### Logging
 The logging window displays a list of trace, warning, and error messages emitted since the application was launched.
 
-## Python Terminal
+#### Python Terminal
 Use the Python terminal to invoke script commands directly from within the application. It will also display the output, warnings, and errors from any Python code executed during the session.  Other views display available script commands and buses.
 
-## Viewport
+#### Viewport
 The viewport renders a scene containing a model, with the current material applied to it, under configurable lighting conditions. The viewport window has a toolbar with controls for setting different options related to the grid, shadow catcher, and tone mapping mode. There are also drop downs for selecting the viewport model, lighting preset, and render pipeline. Lighting presets contain all the settings for the skybox, image-based lighting, directional lights, and other settings used in the viewport. Since the introduction of the material pipeline system, render pipelines can also be changed at runtime.
 
-## Viewport Settings
+#### Viewport Settings
 Use the viewport settings panel to edit the active lighting preset. The changes will be reflected in the viewport. Lighting presets can be selected, created, and saved from this panel. Model presets, which are sidecar files for identifying which models are available in the viewport, can also be managed from this panel. The viewport settings panel does not currently support undo/redo.
 
 ### Interacting with the Viewport
