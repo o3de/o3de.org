@@ -12,8 +12,8 @@ For more technical details, see [Atom Developer Guide - Material System](/docs/a
 | Topic                        | Description |
 |--------------------------------------|---------|
 | [Material System Overview](material-system/) | An overview of the material system. |
-| [Material Canvas](material-canvas/) | An overview of the Material Canvas, the tool to visually create and edit directed graphs that generate custom material types and shaders. |
 | [Material Editor](material-editor/) | An overview of the Material Editor, the tool to create and edit materials. |
+| [Material Canvas](material-canvas/) | An overview of the Material Canvas, the tool to create new material types and shaders using visual scripting workflows and material graphs. |
 | [PBR Materials](pbr/) | The basic concepts of physically based rendering and how it applies to Atom's PBR shading model. |
 | [Material File Specification](material-file-spec/) | JSON reference for material data. |
 | [Material Type File Specification](material-type-file-spec/) | JSON reference for material type data. |
