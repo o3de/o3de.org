@@ -16,7 +16,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"struct_a_w_s_game_lift_1_1_a_w_s_game_lift_player.html#ad3762421c1e6807b3b916da12fd89f99"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

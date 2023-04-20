@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -61,12 +61,14 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_render_1_1_skinned_mesh_
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html" title="SkinnedMeshFeatureProcessorInterface provides an interface to acquire and release a SkinnedMeshRender...">SkinnedMeshFeatureProcessorInterface</a> provides an interface to acquire and release a SkinnedMeshRenderProxy from the underlying SkinnedMeshFeatureProcessor.  
+<p><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html" title="SkinnedMeshFeatureProcessorInterface provides an interface to acquire and release a SkinnedMeshRender...">SkinnedMeshFeatureProcessorInterface</a> provides an interface to acquire and release a <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_render_proxy.html">SkinnedMeshRenderProxy</a> from the underlying <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html">SkinnedMeshFeatureProcessor</a>.  
  <a href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html#details">More...</a></p>
 
 <p><code>#include &lt;SkinnedMeshFeatureProcessorInterface.h&gt;</code></p>
 
 <p>Inherits <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">AZ::RPI::FeatureProcessor</a>.</p>
+
+<p>Inherited by <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html">AZ::Render::SkinnedMeshFeatureProcessor</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -76,7 +78,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aec652949243c69d8d4705c5d90a5f7e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec652949243c69d8d4705c5d90a5f7e8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>SkinnedMeshHandle</b> = <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">StableDynamicArrayHandle</a>&lt; SkinnedMeshRenderProxy &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SkinnedMeshHandle</b> = <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">StableDynamicArrayHandle</a>&lt; <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_render_proxy.html">SkinnedMeshRenderProxy</a> &gt;</td></tr>
 <tr class="separator:aec652949243c69d8d4705c5d90a5f7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -148,7 +150,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <tr class="separator:a81d7925d975d56eb9ce78b03d5bc04c9 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html" title="SkinnedMeshFeatureProcessorInterface provides an interface to acquire and release a SkinnedMeshRender...">SkinnedMeshFeatureProcessorInterface</a> provides an interface to acquire and release a SkinnedMeshRenderProxy from the underlying SkinnedMeshFeatureProcessor. </p>
+<div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html" title="SkinnedMeshFeatureProcessorInterface provides an interface to acquire and release a SkinnedMeshRender...">SkinnedMeshFeatureProcessorInterface</a> provides an interface to acquire and release a <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_render_proxy.html">SkinnedMeshRenderProxy</a> from the underlying <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html">SkinnedMeshFeatureProcessor</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a934b1b1c00a0c480bd49df47de3fa1d5"></a>
 <div class="memitem">
@@ -189,6 +191,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><div class="memdoc">
 <p>Updates the morph target weights for all meshes of a given lod of a skinned mesh handle The weights should be in the order that the morph targets were initially added to the <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_input_buffers.html" title="Container for all the buffers and views needed for per-source model input to both the skinning shader...">SkinnedMeshInputBuffers</a> for the handle </p>
 
+<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#ad524f9d8a90157e7be11a0ccba8fad98">AZ::Render::SkinnedMeshFeatureProcessor</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -200,7 +204,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html">SkinnedMeshFeatureProcessorInterface</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:41 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:03 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

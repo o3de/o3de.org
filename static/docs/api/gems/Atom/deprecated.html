@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,23 +56,23 @@ $(document).ready(function(){initNavTree('deprecated.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_deprecated000009"></a>Member <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#a01fb5aede089ff9c06e61b0926c30c26">AZ::RHI::ScopeProducer::SetScopeId</a>  (const ScopeId &amp;scopeId)</dt>
+<dt><a class="anchor" id="_deprecated000001"></a>Member <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope_producer.html#a01fb5aede089ff9c06e61b0926c30c26">AZ::RHI::ScopeProducer::SetScopeId</a>  (const ScopeId &amp;scopeId)</dt>
 <dd>Use InitScope instead  </dd>
-<dt><a class="anchor" id="_deprecated000008"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_asset_creator.html#aaea9ae700b6c1c8d5e81aa3d22aac279">AZ::RPI::AttachmentImageAssetCreator::SetAssetHint</a>  (AZStd::string_view hint)</dt>
+<dt><a class="anchor" id="_deprecated000009"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_image_asset_creator.html#aaea9ae700b6c1c8d5e81aa3d22aac279">AZ::RPI::AttachmentImageAssetCreator::SetAssetHint</a>  (AZStd::string_view hint)</dt>
 <dd>. Deprecated, use SetName() instead Set a string to asset's hint. This info is only kept for runtime generated asset. For asset on disc, the asset system will assign asset path to asset hint  </dd>
-<dt><a class="anchor" id="_deprecated000003"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#aef811438a0a1a5b2040e080256619310">AZ::RPI::FeatureProcessor::ApplyRenderPipelineChange</a>  ([[maybe_unused]] RenderPipeline *pipeline)</dt>
+<dt><a class="anchor" id="_deprecated000004"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#aef811438a0a1a5b2040e080256619310">AZ::RPI::FeatureProcessor::ApplyRenderPipelineChange</a>  ([[maybe_unused]] RenderPipeline *pipeline)</dt>
 <dd>use AddRenderPasses(RenderPipeline*) Apply changes and add additional render passes to the render pipeline from the feature processors  </dd>
-<dt><a class="anchor" id="_deprecated000004"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_system_interface.html#aa6acb88848ee9dc5b87aeb974c43da67">AZ::RPI::ImageSystemInterface::GetStreamingPool</a>  () const =0</dt>
+<dt><a class="anchor" id="_deprecated000005"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_system_interface.html#aa6acb88848ee9dc5b87aeb974c43da67">AZ::RPI::ImageSystemInterface::GetStreamingPool</a>  () const =0</dt>
 <dd>use GetSystemStreamingPool()  </dd>
-<dt><a class="anchor" id="_deprecated000001"></a>Member <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#a0a7013784091bbe3d8a356a6c543f940">AZ::RPI::MaterialTypeSourceData::PropertyLayout::m_groupsOld</a>  </dt>
+<dt><a class="anchor" id="_deprecated000002"></a>Member <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#a0a7013784091bbe3d8a356a6c543f940">AZ::RPI::MaterialTypeSourceData::PropertyLayout::m_groupsOld</a>  </dt>
 <dd>: Use m_propertyGroups instead List of groups that will contain the available properties  </dd>
-<dt><a class="anchor" id="_deprecated000002"></a>Member <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#a5b81cfd6b741e05f1935ddfe7a5d3451">AZ::RPI::MaterialTypeSourceData::PropertyLayout::m_propertiesOld</a>  </dt>
+<dt><a class="anchor" id="_deprecated000003"></a>Member <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_layout.html#a5b81cfd6b741e05f1935ddfe7a5d3451">AZ::RPI::MaterialTypeSourceData::PropertyLayout::m_propertiesOld</a>  </dt>
 <dd>: Use m_propertyGroups instead  </dd>
-<dt><a class="anchor" id="_deprecated000005"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#aebaeaa5cc461ef71fbfaf7110525e441">AZ::RPI::SceneNotification::OnRenderPipelineAdded</a>  (RenderPipelinePtr pipeline)</dt>
+<dt><a class="anchor" id="_deprecated000006"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#aebaeaa5cc461ef71fbfaf7110525e441">AZ::RPI::SceneNotification::OnRenderPipelineAdded</a>  (RenderPipelinePtr pipeline)</dt>
 <dd>use OnRenderPipelineChanged(RenderPipeline*, RenderPipelineChangeType::Added) Notifies when a render pipeline is added to this scene.  </dd>
-<dt><a class="anchor" id="_deprecated000006"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a575a9b49a5705a05f43b243cb399db1a">AZ::RPI::SceneNotification::OnRenderPipelinePassesChanged</a>  ([[maybe_unused]] RenderPipeline *renderPipeline)</dt>
+<dt><a class="anchor" id="_deprecated000007"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a575a9b49a5705a05f43b243cb399db1a">AZ::RPI::SceneNotification::OnRenderPipelinePassesChanged</a>  ([[maybe_unused]] RenderPipeline *renderPipeline)</dt>
 <dd>use OnRenderPipelineChanged(RenderPipeline*, RenderPipelineChangeType::PassChanged) Notifies when any passes of this render pipeline are modified before a render tick This includes adding a pass, removing a pass, or if pass data changed (such as attachments, draw list tags, etc.) Feature processors may need to use it to update their cached pipeline states  </dd>
-<dt><a class="anchor" id="_deprecated000007"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a4688fdd5439bb1715da9c442baf586a0">AZ::RPI::SceneNotification::OnRenderPipelineRemoved</a>  ([[maybe_unused]] RenderPipeline *pipeline)</dt>
+<dt><a class="anchor" id="_deprecated000008"></a>Member <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a4688fdd5439bb1715da9c442baf586a0">AZ::RPI::SceneNotification::OnRenderPipelineRemoved</a>  ([[maybe_unused]] RenderPipeline *pipeline)</dt>
 <dd>use OnRenderPipelineChanged(RenderPipeline*, RenderPipelineChangeType::Removed) Notifies when a render pipeline is removed from this scene. </dd>
 </dl>
 </div></div><!-- contents -->
@@ -80,7 +80,7 @@ $(document).ready(function(){initNavTree('deprecated.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:41 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:02 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

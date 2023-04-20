@@ -1,8 +1,14 @@
 var hierarchy =
 [
+    [ "Component", null, [
+      [ "Twitch::TwitchSystemComponent", "class_twitch_1_1_twitch_system_component.html", null ]
+    ] ],
     [ "EBusTraits", null, [
       [ "Twitch::TwitchNotifications", "class_twitch_1_1_twitch_notifications.html", null ],
       [ "Twitch::TwitchRequests", "class_twitch_1_1_twitch_requests.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Twitch::TwitchSystemComponent", "class_twitch_1_1_twitch_system_component.html", null ]
     ] ],
     [ "Twitch::ChannelInfo", "struct_twitch_1_1_channel_info.html", null ],
     [ "Twitch::ChannelUpdateInfo", "struct_twitch_1_1_channel_update_info.html", null ],
@@ -17,6 +23,9 @@ var hierarchy =
     [ "Twitch::FriendRequestResult", "struct_twitch_1_1_friend_request_result.html", null ],
     [ "Twitch::FriendStatus", "struct_twitch_1_1_friend_status.html", null ],
     [ "Twitch::GetFriendReturn", "struct_twitch_1_1_get_friend_return.html", null ],
+    [ "Twitch::ITwitchREST", "class_twitch_1_1_i_twitch_r_e_s_t.html", [
+      [ "Twitch::TwitchREST", "class_twitch_1_1_twitch_r_e_s_t.html", null ]
+    ] ],
     [ "Twitch::PresenceSettings", "struct_twitch_1_1_presence_settings.html", null ],
     [ "Twitch::PresenceStatus", "struct_twitch_1_1_presence_status.html", null ],
     [ "Twitch::PreviewInfo", "struct_twitch_1_1_preview_info.html", null ],
@@ -34,5 +43,8 @@ var hierarchy =
     [ "Twitch::UserNotifications", "struct_twitch_1_1_user_notifications.html", null ],
     [ "Twitch::VideoChannelInfo", "struct_twitch_1_1_video_channel_info.html", null ],
     [ "Twitch::VideoInfo", "struct_twitch_1_1_video_info.html", null ],
-    [ "Twitch::VideoReturn", "struct_twitch_1_1_video_return.html", null ]
+    [ "Twitch::VideoReturn", "struct_twitch_1_1_video_return.html", null ],
+    [ "Handler", null, [
+      [ "Twitch::TwitchSystemComponent", "class_twitch_1_1_twitch_system_component.html", null ]
+    ] ]
 ];

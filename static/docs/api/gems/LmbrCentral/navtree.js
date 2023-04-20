@@ -1,11 +1,44 @@
 var NAVTREE =
 [
-  [ "Open 3D Engine LmbrCentral Gem API Reference", "index.html", ]
+  [ "Open 3D Engine LmbrCentral Gem API Reference", "index.html", [
+    [ "Deprecated List", "deprecated.html", null ],
+    [ "Namespaces", null, [
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", null, [
+      [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ]
+      ] ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+".html",
+"class_lmbr_central_1_1_audio_preload_component_requests.html#a4ee78883e322829e4c059779ec7fe4b5",
+"class_lmbr_central_1_1_capsule_shape.html#a362569805b74cc022dd086aa635ac1b1",
+"class_lmbr_central_1_1_editor_audio_preload_component.html#ae4e6f19d6e5eb368f84be215e2246433",
+"class_lmbr_central_1_1_editor_spline_component_mode.html#a60069782de5e0c8349a547f58089856a",
+"class_lmbr_central_1_1_prefabs_library_asset_type_info.html#aaf95196937df93c62ef923be0bf8bbca",
+"class_lmbr_central_1_1_spawner_component_requests.html",
+"class_lmbr_central_1_1_tube_shape_component_requests.html#aa38d66306069fb4e66fb62c63c50259d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

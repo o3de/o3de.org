@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,6 +56,7 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>ObjectCollectionNotify()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#a46302031a5914074cd62166960165a21">AZ::RHI::Device</a>
+, <a class="el" href="class_a_z_1_1_metal_1_1_device.html#a66acee6d35d1604d89db68663eb364b2">AZ::Metal::Device</a>
 </li>
 <li>ObjectCollectorType
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_pool.html#a06defd8b8301e51e055be0835b5c32d5">AZ::RHI::ObjectPool&lt; Traits &gt;</a>
@@ -71,8 +72,8 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics.html#a2ae348a62f047d601b05aa9b4dec5a04a1b61bc7d07f184f23a891e1a6e451da3">AZ::RHI::TransientAttachmentStatistics</a>
 </li>
 <li>ObjectType
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_pool.html#a4476620facc8549b80fec90d025b8993">AZ::RHI::ObjectPool&lt; Traits &gt;</a>
-, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_object_collector_traits.html#ad0769100363734eca0d3adbc026d574f">AZ::RHI::ObjectCollectorTraits</a>
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_object_collector_traits.html#ad0769100363734eca0d3adbc026d574f">AZ::RHI::ObjectCollectorTraits</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_pool.html#a4476620facc8549b80fec90d025b8993">AZ::RHI::ObjectPool&lt; Traits &gt;</a>
 </li>
 <li>OnAddToRenderPipeline()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a508d18b042b6f966b26a58bf75763b1b">AZ::RPI::View</a>
@@ -110,6 +111,8 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 </li>
 <li>OnConfigChanged()
 : <a class="el" href="class_a_z_1_1_render_1_1_post_process_settings_interface.html#a51c90ebcb9beb3a2c8927e5e6a5ef8dd">AZ::Render::PostProcessSettingsInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_look_modification_settings.html#a7087f297b8c88e427dbb96ceaa83c275">AZ::Render::LookModificationSettings</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_post_process_settings.html#ae64b9da6a14657c9248c52ab2a18c98a">AZ::Render::PostProcessSettings</a>
 </li>
 <li>OnControllerDisabled()
 : <a class="el" href="class_a_z_1_1_debug_1_1_camera_controller_notifications.html#a462558a743fafd33a88dd1b938bcd72c">AZ::Debug::CameraControllerNotifications</a>
@@ -181,23 +184,32 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 </li>
 <li>OnPostProcessSettingsChanged()
 : <a class="el" href="class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html#a85e0f289bd6fe3848d01e4d235f58b68">AZ::Render::PostProcessFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_post_process_feature_processor.html#adfce583b63e0002733e043d51c499a0a">AZ::Render::PostProcessFeatureProcessor</a>
+</li>
+<li>OnQueryEnd()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_query_pool.html#ab7db0fb7740941a206b0304e6e28d95a">AZ::DX12::QueryPool</a>
 </li>
 <li>OnRenderDebugComponentAdded()
 : <a class="el" href="class_a_z_1_1_render_1_1_render_debug_feature_processor_interface.html#a8a2ae781fdc989deec9e3e93bdf6ac94">AZ::Render::RenderDebugFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_render_debug_feature_processor.html#a95b48d3fdd415207042872bfc5e0678e">AZ::Render::RenderDebugFeatureProcessor</a>
 </li>
 <li>OnRenderDebugComponentRemoved()
-: <a class="el" href="class_a_z_1_1_render_1_1_render_debug_feature_processor_interface.html#a769d93d7b21923d98f8baea23e9a923e">AZ::Render::RenderDebugFeatureProcessorInterface</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_render_debug_feature_processor.html#aa203172809d5d518231da8f1309d0da5">AZ::Render::RenderDebugFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_render_debug_feature_processor_interface.html#a769d93d7b21923d98f8baea23e9a923e">AZ::Render::RenderDebugFeatureProcessorInterface</a>
 </li>
 <li>OnRenderEnd()
-: <a class="el" href="class_a_z_1_1_render_1_1_aux_geom_feature_processor.html#af00a4cdb932f1b723f298ed80e598454">AZ::Render::AuxGeomFeatureProcessor</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a6b8cf025ff8ad2f9f9fe9fc228e2f7e7">AZ::Render::SkinnedMeshFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_aux_geom_feature_processor.html#af00a4cdb932f1b723f298ed80e598454">AZ::Render::AuxGeomFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_cube_map_capture_feature_processor.html#aa2ad65eff253e0d2e1d8a96669da5bd1">AZ::Render::CubeMapCaptureFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html#a33ef6ad5106272eee71b1b458afd2047">AZ::Render::ReflectionProbeFeatureProcessor</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#ae3d2fbe2dafaf3b035addb9048121bc9">AZ::RPI::FeatureProcessor</a>
 </li>
 <li>OnRenderPipelineAdded()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#aebaeaa5cc461ef71fbfaf7110525e441">AZ::RPI::SceneNotification</a>
 </li>
 <li>OnRenderPipelineChanged()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#ad4b2e1e469a780f24566acc7e8d91b40">AZ::RPI::SceneNotification</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a551d43a7b134ceeedb769dadedd5fe8f">AZ::RPI::ViewportContext</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a551d43a7b134ceeedb769dadedd5fe8f">AZ::RPI::ViewportContext</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#ad4b2e1e469a780f24566acc7e8d91b40">AZ::RPI::SceneNotification</a>
 </li>
 <li>OnRenderPipelinePassesChanged()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene_notification.html#a575a9b49a5705a05f43b243cb399db1a">AZ::RPI::SceneNotification</a>
@@ -214,6 +226,13 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 <li>OnResourceInvalidate()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource_event_interface.html#afc7e056cb4b58c76a41d9018723607a3">AZ::RHI::ResourceEventInterface</a>
 </li>
+<li>OnResourceShutdown()
+: <a class="el" href="class_a_z_1_1_metal_1_1_image_pool_resolver.html#a27311070425fedc9b20f607d262059ae">AZ::Metal::ImagePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_d_x12_1_1_resource_pool_resolver.html#a156ee4aec8b02516f4a3d221df504117">AZ::DX12::ResourcePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_metal_1_1_buffer_pool_resolver.html#a0d5c4808aa8c78fa8ee16e7ca327a571">AZ::Metal::BufferPoolResolver</a>
+, <a class="el" href="class_a_z_1_1_metal_1_1_resource_pool_resolver.html#ac24f6b7c60c19186c198e30d7ec17d38">AZ::Metal::ResourcePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_resource_pool_resolver.html#a665f31caaeef4891d23ec73f1a4ca30a">AZ::Vulkan::ResourcePoolResolver</a>
+</li>
 <li>OnSetTargetMip()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_controller.html#aa5364cad741b06898e42e275fa1cff11">AZ::RPI::StreamingImageController</a>
 </li>
@@ -228,6 +247,9 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 </li>
 <li>OnSkinnedMeshOutputStreamMemoryAvailable()
 : <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_output_stream_notifications.html#a660dda120bf41f8b12078259f3c58089">AZ::Render::SkinnedMeshOutputStreamNotifications</a>
+</li>
+<li>OnTick()
+: <a class="el" href="class_a_z_1_1_render_1_1_splash_screen_pass.html#a8ed8aebeff4f2d28bd72e96e5d6176f1">AZ::Render::SplashScreenPass</a>
 </li>
 <li>OnViewportDefaultViewChanged()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#ac287a2dd905a7e6139787412aba7656f">AZ::RPI::ViewportContextNotifications</a>
@@ -248,7 +270,9 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#a278cba5394119a9667f5661d178d4a6d">AZ::RPI::AuxGeomDraw</a>
 </li>
 <li>Open()
-: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a2fc035a07a4501cc40fd6203766b6b91">AtomToolsFramework::AtomToolsDocumentRequests</a>
+: <a class="el" href="class_a_z_1_1_metal_1_1_command_list_base.html#a1cc861d2119b55bb8e7c478b86da15f3">AZ::Metal::CommandListBase</a>
+, <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a2fc035a07a4501cc40fd6203766b6b91">AtomToolsFramework::AtomToolsDocumentRequests</a>
+, <a class="el" href="class_a_z_1_1_metal_1_1_command_list_base.html#a05537a6a21c50021a7e073ab247c1a9d">AZ::Metal::CommandListBase</a>
 </li>
 <li>OpenDocument()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ad41a44da41b7efce1391869df434493a">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
@@ -264,11 +288,11 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 </li>
 <li>operator=()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#a3a38f58b4562ac361b67bad6678c966a">AZ::RPI::MaterialPropertyValue</a>
-, <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html#af5aa2270d4eb3e65d5ee02a14b84eaae">AZ::StableDynamicArrayHandle&lt; ValueType &gt;</a>
+, <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html#abde5cd00b8c051fb1ff477dab9337bb7">AZ::StableDynamicArrayHandle&lt; ValueType &gt;</a>
 </li>
 <li>operator==()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#afd13932ad81f23e5b46b927a414e451c">AZ::RPI::MaterialPropertyValue</a>
-, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_range.html#a4d98557a306cf5fe7806c3165393ce96">AZ::RHI::ImageSubresourceRange</a>
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_range.html#a4d98557a306cf5fe7806c3165393ce96">AZ::RHI::ImageSubresourceRange</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#afd13932ad81f23e5b46b927a414e451c">AZ::RPI::MaterialPropertyValue</a>
 </li>
 <li>Orphan()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html#aaebd44a321b1372b1d11fe79abc37df0">AZ::RPI::Buffer</a>
@@ -279,13 +303,19 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 <li>OrphanBuffer()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_pool.html#adfe4cb52dcf67ceffec2d1522a1d03ab">AZ::RHI::BufferPool</a>
 </li>
+<li>OutputTypeHandling
+: <a class="el" href="class_image_processing_atom_1_1_preset_settings.html#a28007c5ffdd648821607d083df3195f6">ImageProcessingAtom::PresetSettings</a>
+</li>
+<li>OverrideResource()
+: <a class="el" href="class_a_z_1_1_metal_1_1_metal_resource.html#a89f95b5d83c989d0e824371db6300f13">AZ::Metal::MetalResource</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:43 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:06 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

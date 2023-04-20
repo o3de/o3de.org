@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine LyShine Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,6 +59,12 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 </li>
 <li>OnAction()
 : <a class="el" href="class_ui_canvas_action_notification.html#a78b9c1cd4b9a848d5ca5bd1d3fae88ef">UiCanvasActionNotification</a>
+</li>
+<li>OnActiveCanvasChanged()
+: <a class="el" href="class_ui_editor_anim_listener_interface.html#aac5beca035d81bff5e5381096e0d6dca">UiEditorAnimListenerInterface</a>
+</li>
+<li>OnAlignmentChange()
+: <a class="el" href="class_ui_text_component.html#ab2d3e0ee369657bd72f9fd45177c0c17">UiTextComponent</a>
 </li>
 <li>OnAnimationStarted()
 : <a class="el" href="class_ui_flipbook_animation_notifications.html#afa4e0e7b707ad0eb7584ed77186866c4">UiFlipbookAnimationNotifications</a>
@@ -126,14 +132,24 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <li>OnCanvasUnloaded()
 : <a class="el" href="class_ui_canvas_manager_notification.html#ab000156eba5e7451752a5ce05b8a1b8a">UiCanvasManagerNotification</a>
 </li>
+<li>OnCharSpacingChange()
+: <a class="el" href="class_ui_text_component.html#a06aaf18e053b88f33dacdf9347ecd334">UiTextComponent</a>
+</li>
 <li>OnCheckboxStateChange()
 : <a class="el" href="class_ui_checkbox_notifications.html#ad31e18898becf7ea37cbf30d1a12da96">UiCheckboxNotifications</a>
 </li>
 <li>OnClickableTextChanged()
 : <a class="el" href="class_ui_clickable_text_notifications.html#a12f893b2cb2058df69b5e55f62a1fb33">UiClickableTextNotifications</a>
 </li>
+<li>OnColorChange()
+: <a class="el" href="class_ui_text_component.html#a6784f0eb492c5751e0760d7d018a70e3">UiTextComponent</a>
+</li>
+<li>OnComboBoxIndexChanged()
+: <a class="el" href="class_canvas_size_toolbar_section.html#a7ec2cfdba07ef96e7b239c90518ceac1">CanvasSizeToolbarSection</a>
+</li>
 <li>OnContextReset()
-: <a class="el" href="class_ui_entity_context_notification.html#a164ade9b947b0cb599449a3467f77119">UiEntityContextNotification</a>
+: <a class="el" href="class_ui_editor_entity_context_notification.html#a6bd0283d099816688e0dd0df07e7a8a9">UiEditorEntityContextNotification</a>
+, <a class="el" href="class_ui_entity_context_notification.html#a164ade9b947b0cb599449a3467f77119">UiEntityContextNotification</a>
 </li>
 <li>OnDrag()
 : <a class="el" href="class_ui_draggable_notifications.html#a7ec10824ab220b9f754d0c9535ca91d1">UiDraggableNotifications</a>
@@ -177,6 +193,9 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <li>OnElementInSectionBecomingVisible()
 : <a class="el" href="class_ui_dynamic_scroll_box_element_notifications.html#adbb5413320c96bfd7df2a00ef3863a87">UiDynamicScrollBoxElementNotifications</a>
 </li>
+<li>OnEndFrameChange()
+: <a class="el" href="class_ui_flipbook_animation_component.html#a88034e35a308c5a9d6ed3ba371f4524b">UiFlipbookAnimationComponent</a>
+</li>
 <li>OnEntitiesSpawned()
 : <a class="el" href="class_ui_spawner_notifications.html#a7a1a87a891a794c61db6ad0adfca5020">UiSpawnerNotifications</a>
 </li>
@@ -207,6 +226,21 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <li>OnFaderDestroyed()
 : <a class="el" href="class_ui_fader_notifications.html#ab663ad51fd3e79434fb0295f11898612">UiFaderNotifications</a>
 </li>
+<li>OnFadeValueChanged()
+: <a class="el" href="class_ui_fader_component.html#adec334e4994d09b769f8024e3f2c092c">UiFaderComponent</a>
+</li>
+<li>OnFontEffectChange()
+: <a class="el" href="class_ui_text_component.html#a65c3f4eb7fa34130c125b153b6473f72">UiTextComponent</a>
+</li>
+<li>OnFontPathnameChange()
+: <a class="el" href="class_ui_text_component.html#a5843f8d3cc775b9b3dcd9f80281b396f">UiTextComponent</a>
+</li>
+<li>OnFontSizeChange()
+: <a class="el" href="class_ui_text_component.html#af95dd9eff9dd5dd03f71fab47f312038">UiTextComponent</a>
+</li>
+<li>OnFramerateUnitChange()
+: <a class="el" href="class_ui_flipbook_animation_component.html#a9e8d7f01e05111d982c07f864fa7a5bc">UiFlipbookAnimationComponent</a>
+</li>
 <li>OnHoverEnd()
 : <a class="el" href="class_ui_interactable_notifications.html#a30ff4a064700d7da2f4a4ac4e5489ddd">UiInteractableNotifications</a>
 </li>
@@ -215,15 +249,36 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 </li>
 <li>OnLevelUnload()
 : <a class="el" href="class_i_ly_shine.html#a48be8041d4ff183693aa742e29cf36b0">ILyShine</a>
+, <a class="el" href="class_c_ly_shine.html#af39c7733db353d1945242a1a116132a3">CLyShine</a>
+</li>
+<li>OnLineSpacingChange()
+: <a class="el" href="class_ui_text_component.html#a433ba055a53f0407faa8196f114063e0">UiTextComponent</a>
+</li>
+<li>OnLinkColorChanged()
+: <a class="el" href="class_ui_markup_button_component.html#abc92ab0965a8149004d7f4afa069debf">UiMarkupButtonComponent</a>
+</li>
+<li>OnLinkHoverColorChanged()
+: <a class="el" href="class_ui_markup_button_component.html#aaddebe48e6b372d62d1efcce717b1352">UiMarkupButtonComponent</a>
 </li>
 <li>OnLoadScreenUnloaded()
 : <a class="el" href="class_i_ly_shine.html#a5add62fe218f5c0576e22670b3bc2f86">ILyShine</a>
+, <a class="el" href="class_c_ly_shine.html#a8bc525a9cd528958bc1bf8c8129abbf7">CLyShine</a>
 </li>
 <li>OnLoop()
 : <a class="el" href="struct_i_ui_anim_sequence.html#a4b5a571bf9c15113f761ba1f6b5d246c">IUiAnimSequence</a>
+, <a class="el" href="class_c_ui_anim_sequence.html#afd2325f907c26fca5b7de889acf7d25c">CUiAnimSequence</a>
 </li>
 <li>OnLoopSequenceCompleted()
 : <a class="el" href="class_ui_flipbook_animation_notifications.html#a8f3ece9060f3618cfd1078fa447eb284">UiFlipbookAnimationNotifications</a>
+</li>
+<li>OnMarkupEnabledChange()
+: <a class="el" href="class_ui_text_component.html#a1b9204d2d346f4addfa0d56184ef77de">UiTextComponent</a>
+</li>
+<li>OnMinShrinkScaleChange()
+: <a class="el" href="class_ui_text_component.html#a1bd83278f8c190b4f6ad34230c8b71c0">UiTextComponent</a>
+</li>
+<li>OnOverflowChange()
+: <a class="el" href="class_ui_text_component.html#a3ea6fbca01803ece22ac473979df9c08">UiTextComponent</a>
 </li>
 <li>OnPrepareElementForSizeCalculation()
 : <a class="el" href="class_ui_dynamic_scroll_box_element_notifications.html#a09ab5893b0386007f373a300d1d8c648">UiDynamicScrollBoxElementNotifications</a>
@@ -252,6 +307,9 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <li>OnReleased()
 : <a class="el" href="class_ui_interactable_notifications.html#a8575c5221f0393435ed321062a76368a">UiInteractableNotifications</a>
 </li>
+<li>OnRenderTargetChange()
+: <a class="el" href="class_ui_fader_component.html#abdf07796adffce294fa45cdc91a84d9b">UiFaderComponent</a>
+</li>
 <li>OnScrollableParentToContentRatioChanged()
 : <a class="el" href="class_ui_scrollable_to_scroller_notifications.html#a6edd1a8cb153ef38fa97999eb7b2becd">UiScrollableToScrollerNotifications</a>
 </li>
@@ -279,12 +337,17 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <li>OnShowing()
 : <a class="el" href="class_ui_tooltip_display_notifications.html#aa79ab9611b6ea614f6494a0c7af23aed">UiTooltipDisplayNotifications</a>
 </li>
+<li>OnShrinkToFitChange()
+: <a class="el" href="class_ui_text_component.html#a6c36d32229e11d9ac165de06ec546cd0">UiTextComponent</a>
+</li>
 <li>OnSliceInstantiated()
-: <a class="el" href="class_ui_entity_context_notification.html#a1021f00eecf11655aacbada9b37a5253">UiEntityContextNotification</a>
-, <a class="el" href="class_ui_game_entity_context_notifications.html#a23c3ced23e1d18610a3ef84cc48b116e">UiGameEntityContextNotifications</a>
+: <a class="el" href="class_ui_game_entity_context_notifications.html#a23c3ced23e1d18610a3ef84cc48b116e">UiGameEntityContextNotifications</a>
+, <a class="el" href="class_ui_entity_context_notification.html#a1021f00eecf11655aacbada9b37a5253">UiEntityContextNotification</a>
+, <a class="el" href="class_ui_editor_entity_context_notification.html#a2178b19ceb7deb258c2aa45a0db705df">UiEditorEntityContextNotification</a>
 </li>
 <li>OnSliceInstantiationFailed()
-: <a class="el" href="class_ui_game_entity_context_notifications.html#ac722188fbddb9ca3a4b65e505bf97f46">UiGameEntityContextNotifications</a>
+: <a class="el" href="class_ui_editor_entity_context_notification.html#a9d851dfaefe122dcf0cd98ab66306254">UiEditorEntityContextNotification</a>
+, <a class="el" href="class_ui_game_entity_context_notifications.html#ac722188fbddb9ca3a4b65e505bf97f46">UiGameEntityContextNotifications</a>
 , <a class="el" href="class_ui_entity_context_notification.html#a97a969942e456683444852a51c5bb47d">UiEntityContextNotification</a>
 </li>
 <li>OnSliderValueChanged()
@@ -308,6 +371,12 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <li>OnSpriteSourceChanged()
 : <a class="el" href="class_ui_sprite_source_notification_interface.html#a3547af9c826c9a161cecc09a14e6ab10">UiSpriteSourceNotificationInterface</a>
 </li>
+<li>OnStartFrameChange()
+: <a class="el" href="class_ui_flipbook_animation_component.html#a63a6bb55852cff88de122f174ada25d2">UiFlipbookAnimationComponent</a>
+</li>
+<li>OnTextChange()
+: <a class="el" href="class_ui_text_component.html#ae9f712220b93dc4e9473689175b874ca">UiTextComponent</a>
+</li>
 <li>OnTextInputChange()
 : <a class="el" href="class_ui_text_input_notifications.html#a5e70f77e0e3713c4b5272c0bd494bec3">UiTextInputNotifications</a>
 </li>
@@ -317,15 +386,23 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <li>OnTextInputEnter()
 : <a class="el" href="class_ui_text_input_notifications.html#a741ec94e2505b9a567c5e6a3aab608e0">UiTextInputNotifications</a>
 </li>
+<li>OnTextWidthPropertyChanged()
+: <a class="el" href="class_ui_text_component.html#ade9f18bc12737589fe41ead9dc3a865d">UiTextComponent</a>
+</li>
 <li>OnTopLevelEntitiesSpawned()
 : <a class="el" href="class_ui_spawner_notifications.html#ac3de596fde5209f98e8f6cc92de006e2">UiSpawnerNotifications</a>
+</li>
+<li>OnTransformPropertyChanged()
+: <a class="el" href="class_ui_transform2d_component.html#ac7a35dc42b6050dd21ef2770b32bfad7">UiTransform2dComponent</a>
 </li>
 <li>OnTransformToViewportChanged()
 : <a class="el" href="class_ui_transform_change_notification.html#a054c8527c127e9ba3fed581057c90ab1">UiTransformChangeNotification</a>
 </li>
 <li>OnUiAnimationEvent()
-: <a class="el" href="class_ui_animation_notifications.html#a47448beb8c11494408c3a409ae789dfd">UiAnimationNotifications</a>
-, <a class="el" href="struct_i_ui_animation_listener.html#a0132c7d8b4501d053b42150e80e09d6e">IUiAnimationListener</a>
+: <a class="el" href="struct_i_ui_animation_listener.html#a0132c7d8b4501d053b42150e80e09d6e">IUiAnimationListener</a>
+, <a class="el" href="class_ui_animation_notifications.html#a47448beb8c11494408c3a409ae789dfd">UiAnimationNotifications</a>
+, <a class="el" href="class_ui_canvas_component.html#a3fa69ddbcf1013fb8390732b4e6763cf">UiCanvasComponent</a>
+, <a class="el" href="class_ui_tooltip_display_component.html#a933d2b97420a4d567d6c7f3cad11a264">UiTooltipDisplayComponent</a>
 </li>
 <li>OnUiElementAndAncestorsEnabledChanged()
 : <a class="el" href="class_ui_element_notifications.html#a72034ff0af70e189bf6f52605be5fc17">UiElementNotifications</a>
@@ -338,6 +415,9 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 </li>
 <li>OnUiElementFixup()
 : <a class="el" href="class_ui_element_notifications.html#a675d6214ba3730b370887061c3a7aadb">UiElementNotifications</a>
+</li>
+<li>OnUiElementsDeletedOrReAdded()
+: <a class="el" href="class_ui_editor_anim_listener_interface.html#aad733fde8700237aa8ae7adc1e0343e4">UiEditorAnimListenerInterface</a>
 </li>
 <li>OnUiTrackEvent()
 : <a class="el" href="class_ui_animation_notifications.html#abcd296b8e2634c195eab2c1d6f48c736">UiAnimationNotifications</a>
@@ -354,6 +434,9 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <li>OnValueChangingByScroller()
 : <a class="el" href="class_ui_scroller_to_scrollable_notifications.html#a6b3f58b0a679327460dff7d9e6493c0c">UiScrollerToScrollableNotifications</a>
 </li>
+<li>OnWrapTextSettingChange()
+: <a class="el" href="class_ui_text_component.html#a64467208e5733b5bf64d6c051c107f36">UiTextComponent</a>
+</li>
 <li>OpenSourceCanvasFile()
 : <a class="el" href="class_ui_editor_d_l_l_interface.html#a5fa0ca82d421ac80e3612d7a0de4b9c6">UiEditorDLLInterface</a>
 </li>
@@ -363,7 +446,7 @@ $(document).ready(function(){initNavTree('functions_func_0x6f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:47 for Open 3D Engine LyShine Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:20 for Open 3D Engine LyShine Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

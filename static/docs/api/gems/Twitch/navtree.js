@@ -12,7 +12,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"struct_twitch_1_1_team_info.html#ab29dbe570d2b67fd5f410ba497b1ad0c"
+"struct_twitch_1_1_community_info_return.html#af0ae60408815d2ccad3589e6633f7e74"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

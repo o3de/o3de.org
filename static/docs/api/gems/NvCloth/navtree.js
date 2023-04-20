@@ -4,6 +4,7 @@ var NAVTREE =
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
@@ -16,7 +17,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"class_nv_cloth_1_1_i_cloth_configurator.html#a90ebacef0b5edff1fddc7c5eb626324c",
+"struct_nv_cloth_1_1_cloth_configuration.html#af901a0adb86dca8e2859626c27f67047"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

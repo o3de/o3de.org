@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -59,6 +59,8 @@ $(document).ready(function(){initNavTree('class_image_processing_atom_1_1_i_imag
 <div class="title">ImageProcessingAtom::IImageObject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Inherited by <a class="el" href="class_image_processing_atom_1_1_c_image_object.html">ImageProcessingAtom::CImageObject</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -117,7 +119,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ScaleAndBiasC
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClampChannels</b> (AZ::u32 firstMip, AZ::u32 maxMipCount, const AZ::Vector4 &amp;min, const AZ::Vector4 &amp;max)=0</td></tr>
 <tr class="separator:ad89f6c1d98bfcd438a54ad60b4de3584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54967dad180bbf8393498bb2e6ae75ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54967dad180bbf8393498bb2e6ae75ea"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>TransferAlphaCoverage</b> (const TextureSettings *textureSetting, const <a class="el" href="class_a_z_std_1_1shared__ptr.html">IImageObjectPtr</a> srcImg)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>TransferAlphaCoverage</b> (const <a class="el" href="class_image_processing_atom_1_1_texture_settings.html">TextureSettings</a> *textureSetting, const <a class="el" href="class_a_z_std_1_1shared__ptr.html">IImageObjectPtr</a> srcImg)=0</td></tr>
 <tr class="separator:a54967dad180bbf8393498bb2e6ae75ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b264bbd4189de5b7b2b18dc209bff4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03b264bbd4189de5b7b2b18dc209bff4"></a>
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeAlphaCoverageScaleFactor</b> (AZ::u32 mip, float fDesiredCoverage, float fAlphaRef) const =0</td></tr>
@@ -189,7 +191,7 @@ static <a class="el" href="class_image_processing_atom_1_1_i_image_object.html">
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ImageProcessingAtom</b></li><li class="navelem"><a class="el" href="class_image_processing_atom_1_1_i_image_object.html">IImageObject</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:42 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:05 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -88,16 +88,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:aa244f2b47de3ea7ed1c7d6af8067713b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables all ImGui passes. <br/></td></tr>
 <tr class="separator:aa244f2b47de3ea7ed1c7d6af8067713b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a430f87a0ffbf20f751d6a5dd145a8936"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a430f87a0ffbf20f751d6a5dd145a8936"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#a430f87a0ffbf20f751d6a5dd145a8936">PushDefaultImGuiPass</a> (ImGuiPass *imguiPass)=0</td></tr>
-<tr class="memdesc:a430f87a0ffbf20f751d6a5dd145a8936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the provided ImGuiPass as the default pass. This is usually called by an ImGuiPass to mark itself as default. <br/></td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#a430f87a0ffbf20f751d6a5dd145a8936">PushDefaultImGuiPass</a> (<a class="el" href="class_a_z_1_1_render_1_1_im_gui_pass.html">ImGuiPass</a> *imguiPass)=0</td></tr>
+<tr class="memdesc:a430f87a0ffbf20f751d6a5dd145a8936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the provided <a class="el" href="class_a_z_1_1_render_1_1_im_gui_pass.html" title="This pass owns and manages activation of an Imgui context. ">ImGuiPass</a> as the default pass. This is usually called by an <a class="el" href="class_a_z_1_1_render_1_1_im_gui_pass.html" title="This pass owns and manages activation of an Imgui context. ">ImGuiPass</a> to mark itself as default. <br/></td></tr>
 <tr class="separator:a430f87a0ffbf20f751d6a5dd145a8936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441b364d65fb037214dbe4b9e3c6a318"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a441b364d65fb037214dbe4b9e3c6a318"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#a441b364d65fb037214dbe4b9e3c6a318">RemoveDefaultImGuiPass</a> (ImGuiPass *imguiPass)=0</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#a441b364d65fb037214dbe4b9e3c6a318">RemoveDefaultImGuiPass</a> (<a class="el" href="class_a_z_1_1_render_1_1_im_gui_pass.html">ImGuiPass</a> *imguiPass)=0</td></tr>
 <tr class="memdesc:a441b364d65fb037214dbe4b9e3c6a318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a default imgui pass from the stack. If the removed pass context is currently active, is is deactivated and the next pass on the stack is activated. <br/></td></tr>
 <tr class="separator:a441b364d65fb037214dbe4b9e3c6a318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7af8ab2e04b427d3d49410072ab68261"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7af8ab2e04b427d3d49410072ab68261"></a>
-virtual ImGuiPass *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#a7af8ab2e04b427d3d49410072ab68261">GetDefaultImGuiPass</a> ()=0</td></tr>
-<tr class="memdesc:a7af8ab2e04b427d3d49410072ab68261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the ImGuiPass currently set as the default pass. Will return nullptr if no default pass is set. <br/></td></tr>
+virtual <a class="el" href="class_a_z_1_1_render_1_1_im_gui_pass.html">ImGuiPass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#a7af8ab2e04b427d3d49410072ab68261">GetDefaultImGuiPass</a> ()=0</td></tr>
+<tr class="memdesc:a7af8ab2e04b427d3d49410072ab68261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="class_a_z_1_1_render_1_1_im_gui_pass.html" title="This pass owns and manages activation of an Imgui context. ">ImGuiPass</a> currently set as the default pass. Will return nullptr if no default pass is set. <br/></td></tr>
 <tr class="separator:a7af8ab2e04b427d3d49410072ab68261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabf948847781e13bb7bb827d5f5a32e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabf948847781e13bb7bb827d5f5a32e1"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#aabf948847781e13bb7bb827d5f5a32e1">PushActiveContextFromDefaultPass</a> ()=0</td></tr>
@@ -135,7 +135,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html">ImGuiSystemRequests</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:41 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:03 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
