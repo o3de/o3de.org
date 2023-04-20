@@ -9,7 +9,7 @@ The O3DE edit context is a utility context that relies on the [serialization con
 
 The following code shows an `EditContext` definition:
 
-```
+```cpp
 AZ::EditContext* editContext = serializeContext->GetEditContext();
 if (editContext)
 {
@@ -19,8 +19,9 @@ if (editContext)
 ```
 
 An `EditContext` consists of `ClassElements` and `DataElements`.
-+ `ClassElements` - Specify attributes of the class that was reflected through the `SerializeContext::Class`. You can use this to group common elements.
-+ `DataElements` - Specify the display, behavior, and visualization of the fields that were serialized through `SerializeContext::Field`.
++ `ClassElement` - Specify attributes of the class that was reflected through the `SerializeContext::Class`. You can use this to group common elements.
++ `DataElement` - Specify the display, behavior, and visualization of the fields that were serialized through `SerializeContext::Field`.
++ `UIElement` - Specify the display, behavior, and visualization of a `UIHandler`, but without tying it to a `SerializeContext::Field`.
 
 ## Attributes 
 
@@ -28,7 +29,7 @@ You can use the `EditContext` to add arbitrary attributes to class and data elem
 
 Attributes are template based. As such, they can be of any type, including functions, as in the following example.
 
-```
+```cpp
 editContext->Class<EditorLightComponent>(
 	"Light", "Attach lighting to an entity.")
 	->ClassElement(AZ::Edit::ClassElements::EditorData, "")

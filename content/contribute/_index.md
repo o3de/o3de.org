@@ -3,7 +3,7 @@ title: "Contribute to Open 3D Engine"
 ---
 ## Get Involved
 
-Interested in contributing to O3DE? We're always looking for developers, technical writers, reviewers, content contributors, and more.
+Interested in contributing to O3DE? We're always looking for developers, technical writers, and content creators. There are additional ways to contribute in advocacy, program management, community management, and more.
 {{< partial "contribute/contribute.html" >}}  
 
 ## Join a Special Interest Group
@@ -20,6 +20,7 @@ SIGs are the way work gets done in an open-source community. Choose the SIGs for
 Before you start participating in and contributing to O3DE, review our [code of conduct](https://o3de.org/docs/contributing/code-of-conduct/). Contributing guidelines for our projects are hosted in their GitHub repositories, within the root directory in a `CONTRIBUTING.md` file.
 
 Visit the [Contributor Guide for Open 3D Engine](/docs/contributing/) for all the details about contributing to code or documentation, including GitHub workflows, coding standards, and documentation style standards.
+
 
 ## Roadmaps
 
