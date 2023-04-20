@@ -5,7 +5,67 @@ description: Learn how to add multiplayer support to an Open 3D Engine (O3DE) pr
 weight: 200
 ---
 
-Adding the full functionality of the **Multiplayer Gem** to an **Open 3D Engine (O3DE)** project requires making edits to the CMake scripts and source code. These changes enable:
+When you need multiplayer support in your **Open 3D Engine (O3DE)** project, the easiest way to set it up is to create the project from the O3DE multiplayer template using the instructions that follow.
+
+If your O3DE project is already in development and you want to add multiplayer support to it, the instructions on [Manual project configuration](#manual-project-configuration) will help you add the **Multiplayer Gem** to an existing project.
+
+## Creating a multiplayer project from the multiplayer template {#creating-project-from-template}
+
+To create a multiplayer project from the O3DE multiplayer template, you need O3DE version 22.10 or later. You must first add the template from the [O3DE Extras GitHub repo](https://github.com/o3de/o3de-extras) to your library of O3DE templates using **Project Manager**. Then you will be able to create a new project from the template.
+
+1. In Project Manager, choose **New Project**, then **Create New Project**. For help with using Project Manager to create projects, refer to [Creating projects using Project Manager](/docs/user-guide/project-config/project-manager/#creating-projects-using-project-manager).
+
+1. Choose **Add remote template**.
+
+1. In the **Add a remote template** dialog box, enter `https://github.com/o3de/o3de-extras.git` as the **Remote URL**. Then choose **Add**. This registers the GitHub repo as a remote source.
+
+    {{< image-width src="/images/user-guide/networking/multiplayer/add_extra_templates.png" width="700" alt="Enter O3DE Extras repo URL in Add Remote Template dialog box." >}}
+
+1. Select the new template named **Multiplayer**. This selects the template for the new project.
+
+1. Choose **Download Template** (in the bottom right of the New Project window), then choose the location where the template will be downloaded. Choose **Download**.
+
+1. With the template downloaded, you can configure your project with additional Gems. Choose **Create Project** when you're ready to create the new project.
+
+1. Choose **Build Project - Build Now** from the project's icon box to build the project.
+
+1. When the build completes, your project will be ready to use. You can choose **Open Editor** to open it in **O3DE Editor**.
+
+1. The project comes with a `Demo` level which you can open from the Editor and play with using **Ctrl+G**.
+
+### Alternative ways to set up the multiplayer template
+
+To set up the multiplayer template without using Project Manager, you will need to download the template from the [O3DE Extras GitHub repo](https://github.com/o3de/o3de-extras) and then register the template from a command line.
+
+1. When obtaining the template from the O3DE Extras GitHub repo, you can choose to download a tagged release version or use `git clone` to get the latest prerelease code from the `development` branch. Do _one_ of the following:
+
+    a. To download a release version from the repo, open the [O3DE Extras tags page](https://github.com/o3de/o3de-extras/tags). Select a version, then choose the zip file that begins with the name `Template_Multiplayer` to download. Unzip the contents to a directory of your choice.
+
+    b. To download the latest prerelease code from the `development` branch, open a command line window on your computer and use `git clone` to get the contents of the repo:
+
+    ```cmd
+    git clone https://github.com/o3de/o3de-extras.git
+    ```
+
+1. Open a command line window to your O3DE engine directory and use the `o3de register` command to register the multiplayer template.
+
+    ```cmd
+    // Example using downloaded and unzipped release version.
+    scripts\o3de.bat register -tp C:/Users/<YourUserName>/Downloads/template_multiplayer
+
+    // Example using cloned o3de-extras repo.
+    scripts\o3de.bat register -tp C:/o3de-extras/Templates/Multiplayer
+    ```
+
+1. You can now create a project from this template, using either Project Manager or the `o3de create-project` command, as in the following example:
+
+    ```cmd
+    scripts\o3de.bat create-project -pp C:/o3de-projects/my-multiplayer-game -tn Multiplayer
+    ```
+
+## Manual project configuration
+
+Adding the full functionality of the Multiplayer Gem to an O3DE project requires making edits to the CMake scripts and source code. These changes enable:
 
 * Linking against the correct core libraries and Gems.
 * Building [auto-components](./autocomponents).
@@ -15,8 +75,6 @@ Adding the full functionality of the **Multiplayer Gem** to an **Open 3D Engine 
 {{< note >}}
 Because both O3DE Gems and projects use the same CMake build functions, you can use these instructions to create a new Gem that extends the behavior of the Multiplayer Gem.
 {{< /note >}}
-
-## Build setup
 
 ### Enable the Multiplayer Gem
 
@@ -154,11 +212,9 @@ If you've enabled multiplayer auto-components but you haven't created any auto-c
 
 To learn more about multiplayer auto-components, refer to [Multiplayer Auto-components](../autocomponents) or follow the introductory [multiplayer tutorial](/docs/learning-guide/tutorials/multiplayer/first-multiplayer-component/).{{< /note >}}
 
-## Module and system component setup
+### Make Module.cpp changes
 
-To use multiplayer functionality, you must make small changes to the source code to generate descriptors for multiplayer components. Then, you must register these components with the Multiplayer Gem.
-
-### Module.cpp changes
+To use multiplayer functionality, you must make small changes to your project's source code to generate descriptors for multiplayer components.
 
 Make the following changes to your project's `Code/Source/<ProjectName>Module.cpp`:
 1. Include `AutoComponentTypes.h` at the top of the file.
@@ -166,19 +222,21 @@ Make the following changes to your project's `Code/Source/<ProjectName>Module.cp
     #include <Source/AutoGen/AutoComponentTypes.h>
     ```
 
-1. Edit the `<ProjectName>Module` constructor to create the component descriptors, which allows Multiplayer components to be registered.
+1. Edit the `<ProjectName>Module` constructor to create the component descriptors, which allows multiplayer components to be registered.
     ```cpp
     MultiplayerSampleModule()
         : AZ::Module()
     {
         ...
-        CreateComponentDescriptors(m_descriptors); //< Add this line to register your projects multiplayer components
+        CreateComponentDescriptors(m_descriptors); //< Add this line to register your project's multiplayer components
     }
     ```
     {{< important >}}Make sure the call to `CreateComponentDescriptors()` is the *last* line of the constructor.
     {{< /important >}}
 
-### SystemComponent.cpp changes
+### Make SystemComponent.cpp changes
+
+Finally, after adding code to generate descriptors, you must register the multiplayer components with the Multiplayer Gem.
 
 Make the following changes to your project's `Code/Source/<ProjectName>SystemComponent.cpp` file.
 1. Include `AutoComponentTypes.h` at the top of the file.
@@ -192,9 +250,10 @@ Make the following changes to your project's `Code/Source/<ProjectName>SystemCom
     void <ProjectName>SystemComponent::Activate()
     {
         ...
-        RegisterMultiplayerComponents(); //< Register our gems multiplayer components to assign NetComponentIds
+        RegisterMultiplayerComponents(); //< Register our project's multiplayer components to assign NetComponentIds
     }
     ```
 
-## Rebuild the project
+### Rebuild the project
+
 Configuring and building is always required after editing CMake and C++ files. You can use the [Project Manager](/docs/user-guide/project-config/project-manager/) to rebuild, or configure and build via the [command-line interface (CLI)](/docs/user-guide/build/configure-and-build/).

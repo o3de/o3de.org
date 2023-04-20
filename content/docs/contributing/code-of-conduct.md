@@ -2,7 +2,7 @@
 linkTitle: Code of Conduct
 title: Open 3D Engine Code of Conduct
 description: Before you join the O3DE project, make sure you understand the conduct the community expects.
-weight: 300
+weight: 600
 ---
 
 ## CNCF Community Code of Conduct v1.0

@@ -29,7 +29,6 @@ AWSGameLift::AWSGameLiftRequestBus::Broadcast(
 );
 ```
 
-
 ### Session APIs
 
 ### `CreateSession`
@@ -176,7 +175,7 @@ After the game session has been created, notifications are broadcast through `Mu
 
 ### `OnCreateSessionBegin`
 
-When the session begins to create on the server, the `Multiplayer::SessionNotificationBus::Events::OnCreateSessionBegin()` notification is broadcast on the server side. During this step, it's recommended to load the level on the server side. 
+When the session begins to create on the server, the `Multiplayer::SessionNotificationBus::Events::OnCreateSessionBegin()` notification is broadcast on the server side. When GameLift requests a game session it will supply the releveant runtime configuration, which includes key game session information, such as maximum players. It can also include game data and player data.  Set game session-specific properties and load the appropriate level on the server side during this step. 
 
 ```cpp
 bool OnCreateSessionBegin(const Multiplayer::SessionConfig& sessionConfig)

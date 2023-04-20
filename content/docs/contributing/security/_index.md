@@ -1,8 +1,9 @@
 ---
-linktitle: Security
-title: "Contributing to O3DE: Security"
+linktitle: To Security
+title: "Contributing to O3DE Security"
+description: Learn about how you can keep Open 3D Engine (O3DE) secure.
 toc: true
-weight: 100
+weight: 300
 ---
 
 ## Open 3D Engine: Security
