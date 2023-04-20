@@ -31,5 +31,5 @@ For minimum hardware requirements for development on host platforms, refer to [S
 | iOS | Support for iOS as a target platform is in an experimental stage. Ask on [Discord](https://{{< links/o3de-discord >}}) in #sig-platform for development support. |
 
 {{< tip >}}
-For information on the state of a feature for a platform, search for the feature in the snapshot of the *feature grid* for the version of O3DE that you have installed. The feature grid snapshot can be found in a subtopic of the Release Notes. (For example: [22.10.0 Feature Grid](/docs/release-notes/22-10-0/feature-state).)
+For information on the state of a feature for a platform, search for the feature in the snapshot of the *feature grid* for the version of O3DE that you have installed. The feature grid snapshot can be found in a subtopic of the Release Notes. (For example: [23.05.0 Feature Grid](/docs/release-notes/23-05-0/feature-state).)
 {{< /tip >}}
