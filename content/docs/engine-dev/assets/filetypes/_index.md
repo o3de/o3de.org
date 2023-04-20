@@ -12,3 +12,4 @@ weight: 400
 | Name | Description |
 |-|-|
 | [Scene Files](./fbx-support) | Overview of what work is required for scene files (FBX, etc). |
+| [Texture Files](./texture-support) | Overview of what work is required for texture files (PNG, JPG, etc). |
