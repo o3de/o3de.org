@@ -4,29 +4,34 @@ description: Learn how to use the Material Canvas to create material types and s
 toc: true
 ---
 
-**Material Canvas** is a tool that allows you to create and preview custom material types and shaders by assembling node-based material graphs. Drag, drop, connect, and configure nodes instead of hand-editing and managing multiple JSON files or writing shader code. 
+**Material Canvas** drastically simplifies, accelerates, and automates creating custom shaders and material types by providing a visual scripting editor with familiar tools, workflows, status reporting, and live previews.
 
-Material Canvas is built on top of the same foundations as established tools like Script Canvas and Material Editor. It provides many of the same, familiar features, windows, and workflows as those and other related tools. You can open and edit multiple documents at once, undo or redo most actions, rearrange and dock all of the various window panels, create and save custom layouts, extend and automate with C++, Python, and PyQt, and much more.
+Drag, drop, connect, and configure nodes to construct material graphs that will automatically be transformed into standard source files for shaders, material types, and materials.  The generated source files will be recognized by the Asset Processor, processed, and usable in any systems or components that consume materials.  With the default settings, Material Canvas regenerates and overwrites files whenever a graph is opened, edited, or saved. The viewport updates to display the results as quickly as changes are made and processed.
 
-The library of available material graph nodes can also be extended by creating new nodes in C++, JSON, or Python. All of the current nodes are created with basic JSON config files, located in the Material Canvas assets folder. The material graph node files can also be created and edited from within Material Canvas. The files are simple enough that sometimes it might be faster to copy an existing material graph node config file, give it a unique UUID, and customize it by hand.
+Material Canvas is built on top of the same foundations as established tools like Script Canvas and Material Editor.  It is data-driven, customizable, extensible, and scriptable through the settings registry, Python, and C++. All of the current material graph nodes are defined in JSON files that contain snippets of AZSL. These files can be edited, and new ones created, from within Material Canvas.
 
 This section introduces Material Canvas and describes the editor layout and its individual panels.
 
 ## Quick Start
 To get started, launch Material Canvas to open or create a new material graph. 
 
-#### Launch Material Canvas
-You can launch Material Canvas from the **Open 3D Engine (O3DE)** Editor, or as a standalone application:   
+#### Launching Material Canvas
 
-- From the O3DE Editor, you can launch Material Canvas in two ways.
-  
-  - Select **Main Menu > Tools > Material Canvas**.
-  
-  - From a Material component in the Inspector, select **Open Material Canvas...** in the hamburger menu of a material slot.
+There are multiple ways to launch Material Canvas.
 
-- As a standalone application, launch the executable `<build>\bin\profile\MaterialCanvas.exe`.
-  
-  - This requires you to specify your --project-path as a command line argument.
+- From **Open 3D Engine (O3DE)** Editor select **Main Menu > Tools > Material Canvas**
+
+- From the Material Component context menu, select **Open Material Canvas...**
+
+- From the Asset Browser, double click on a material graph or other Material Canvas compatible file type.
+
+- From the Asset Browser, right click on a material graph or other Material Canvas compatible file type, then select **Open in Material Canvas...** 
+
+- Material Canvas is also a standalone executable that can be launched directly from a file browser or command console.
+
+  - Launch the executable `<build>\bin\profile\MaterialCanvas.exe`
+
+    - This requires passing the —project-path, followed by the path your project, as a command line argument.
 
 #### Create or edit a material graph
 You can create a new material graph or open an existing material graph from the File menu in Material Canvas, or from the Context menu in the Asset Browser: 
