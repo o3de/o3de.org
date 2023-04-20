@@ -13,16 +13,15 @@ The **Asset Browser** shows all the assets in your project and engine. You can v
 
 1. In the Asset Browser, you can create, rename, delete, duplicate, move, select, open, search, and filter for assets.
 
-   *pic*
+     ![Asset Browser startup view.](/images/user-guide/assetbrowser/asset-browser-welcome.png)
 
    You can select multiple assets by doing the following in the **Asset Browser**:
 
 - Use **Ctrl + Left Mouse Button** to select multiple entities one at a time to be part of a multi-selection.
 
-1. You can open multiple Asset Browser windows by doing one of the following:
+   You can open multiple **Asset Browser windows** by doing the following in the **Asset Browser**:
 
-- Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Open in another Asset Browser**.
-- Using the **Tools Menu**, choose **Open another Asset Browser**.
+- Use **Right Mouse Button** on an asset to bring up the **context menu**, choose **Open in another Asset Browser**.
 
 ## Viewing Assets
 
@@ -30,58 +29,61 @@ When viewing assets in the **Asset Browser**, you can switch between **List View
 
 1. To switch to **List View**, click the **List View Button**.
 
-     *pic*
+     ![Asset Browser List View Button.](/images/user-guide/assetbrowser/list-view-button.png)
      
-     This is a single column view that is the simplest of the three views. It is a flat, long scrollable list that displays all folders and the assets inside of them.
+     This is a single column view that is the simplest of the three views. It is a flat, long scrollable list that displays all assets.
 
-     *pic*
+     ![Asset Browser List View.](/images/user-guide/assetbrowser/list-view.png)
 
-1. To switch to **Thumbnail View**, click the **Thumbnail View** button**.
+1. To switch to **Thumbnail View**, click the **Thumbnail View** button.
 
-    *pic*
+    ![Asset Browser Thumbnail View Button.](/images/user-guide/assetbrowser/thumbnail-view-button.png)
 
-    This is a two column view that displays asset thumbnails. The first column is a list that only displays folders for easy directory navigation, and the second column displays thumbnails to quickly view asset previews. In this column, clicking on an asset's toggleable arrow will expand it to show thumbnails of all its children.
+    This is a two column view that displays asset thumbnails. The first column is a list that only displays folders for easy directory navigation, and the second column displays thumbnails to quickly view asset previews. Click on an asset's toggleable arrow to expand it and show its children.
 
-    *pic*
+    ![Asset Browser Thumbnail View.](/images/user-guide/assetbrowser/thumbnail-view.png)
 
-1. To switch to **Table View**, click the **Table View** button**.
+1. To switch to **Table View**, click the **Table View** button.
     
-    *pic*
+    ![Asset Browser Table View Button.](/images/user-guide/assetbrowser/table-view-button.png)
 
     This is a two column view that displays assets in a table grid. The first column is a list that only displays folders for easy directory navigation, and the second column displays a table grid with more information about your assets. In this column, you can view the **Name**, **Type**, **Disk Size**, **Vertices**, and **Approximate World Size** of an asset.
 
-    *pic*
+    ![Asset Browser Table View.](/images/user-guide/assetbrowser/table-view.png)
 
 ## Managing Assets
 
 In the **Asset Browser**, you can create, rename, delete, duplicate, move, open, drag and drop assets.
 
 1. You can **create** new assets by doing one of the following in the **Asset Browser**:
+    
+    - Use **Right Mouse Button** on a folder in any of the views to bring up the **context menu**, choose **Create**.
 
-- Use **Right Mouse Button** on a folder in any of the views to bring up the **context menu**, choose **Create**.
-- Select a folder in the first column of any view and click the **Create New Button (+)**.
+    - Select a folder in the first column of any view and click the **Create New Button (+)**.
+
+    ![Asset Browser Folder Management.](/images/user-guide/assetbrowser/folder-context-menu.png)
 
 1. You can **delete** assets by doing one of the following in the **Asset Browser**:
 
-- Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Delete Asset**. 
-- Select an asset in any of the views and use the **Del** keyboard shortcut.
+    - Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Delete Asset**. 
+    - Select an asset in any of the views and use the **Del** keyboard shortcut.
 
 1. You can **rename** assets by doing one of the following in the **Asset Browser**:
 
-- Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Rename Asset**. 
-- Select an asset in any of the views and use the **F2** keyboard shortcut.
+    - Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Rename Asset**. 
+    - Select an asset in any of the views and use the **F2** keyboard shortcut.
 
 1. You can **duplicate** assets by doing one of the following in the **Asset Browser**:
 
-- Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Duplicate Asset**. 
-- Select an asset in any of the views and use the **Ctrl + D** keyboard shortcut.
+    - Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Duplicate Asset**. 
+    - Select an asset in any of the views and use the **Ctrl + D** keyboard shortcut.
 
 1. You can **move** assets by doing one of the following in the **Asset Browser**:
 
-- Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Move To**. 
-- Use the drag and drop functionality to drag an asset to the location of your choice.
+    - Use **Right Mouse Button** on an asset in any of the views to bring up the **context menu**, choose **Move To**. 
+    - Use the drag and drop functionality to drag an asset to the location of your choice.
 
-     *pic*
+    ![Asset Browser Asset Management.](/images/user-guide/assetbrowser/asset-management.png)
 
 ## Navigating Directories
 
@@ -91,9 +93,9 @@ In the **Asset Browser**, you can navigate directories using the **Breadcrumbs N
 
 - **Previous** and **Foward** navigation arrows that allow you to navigate through previously selected directories.
 - Clickable breadcrumbs to navigate through parent directories.
-- URL bar that includes the ability to edit, cut, copy, and paste file locations.
-
-     *pic*
+     ![Asset Browser Click Navigate.](/images/user-guide/assetbrowser/breadcrumbs-click-navigate.png)
+- Clicking empty space in the **Breadcrumbs Navigation Bar** converts it to a **URL Bar** that includes the ability to edit, cut, copy, and paste file locations
+     ![Asset Browser Edit.](/images/user-guide/assetbrowser/breadcrumbs-edit.png)
 
 ## Opening Assets
 
@@ -103,9 +105,7 @@ In the **Asset Browser**, you can navigate directories using the **Breadcrumbs N
 - To open your asset with an associated application, use **Right Mouse Button** on an asset to bring up the **context menu**, choose **Open with associated application...**
 - To view your asset in your operating system's **File Explorer**, use **Right Mouse Button** to bring up the **context menu** and choose **Open in Explorer**.
 
-     *pic*
-
-## Search, Sort and Filter Assets
+## Search and Filter Assets
 
 For projects that have many assets, you can search and filter for the assets that you want. Enter text in the search filter box to find specific assets.
 
@@ -119,36 +119,25 @@ For projects that have many assets, you can search and filter for the assets tha
 
      The assets that appear are either **Material** assets or **Physics Material** assets.
 
-     *pic*
+     ![Asset Browser Asset Type Filter.](/images/user-guide/assetbrowser/asset-type-filter.png)
 
 1. To clear search results, click **Clear**.
 
-**To sort assets**
-
-You can also sort assets so that they appear in the order that you want in the **Asset Browser**.
-
-1. In the **Asset Browser**, use **Right Mouse Click** to bring up the **context menu**, choose **Sort By**
-
-     *pic*
-
-1. Choose the following options:
-
-     - **Sort: Name** - Sort assets by alphabetical name.
-     - **Sort: Type** - Sort assets by alphabetical type.
-     - **Sort: Last Modified** - Sort assets by time they were last modified.
-     - **Sort: Size** - Sort assets by disk size.
-
 **Advanced asset filter options**
 
-1. In the **Asset Browser**, open the **Tools Menu**
+1. In the **Asset Browser**, open the **Asset Browser Menu**
 
-- Uncheck **Hide Engine Folders** to display all assets outside of your project.
-- Uncheck **Hide Unusable Product Assets** to display assets that are unusable by the editor.
+     ![Asset Browser Advanced Filter Options.](/images/user-guide/assetbrowser/advanced-filter-options.png)
 
-     *pic*
-     You can add or remove **Unusable Product Assets** by creating a JSON with a `.setreg` extension, which will use the ![Settings Registry System.](././settings)
+- Uncheck **Hide Engine Folders** to display assets that are not inside of your project folder.
+     
+     In the current release, this must be unchecked to view any external directories that have been added, including **Asset Gems**.
 
-     In your new JSON file, use the following JSON path: `/O3DE/AssetBrowser/AssetTypeUuidExcludes`. **Example**
+- Uncheck **Hide Unusable Product Assets** to display assets that are not usable by the editor.
+
+     You can add or remove **Unusable Product Assets** using the  [Settings Registry System](/docs/user-guide/settings) by creating a JSON with a `.setreg` extension.
+
+     In your new JSON file, specify the desired **Product Asset** along with its **Uuid**, and use the following JSON path: `/O3DE/AssetBrowser/AssetTypeUuidExcludes`. **Example**
 
      ```
      {
