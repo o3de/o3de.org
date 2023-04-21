@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -97,7 +97,13 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 : <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a3f433edbf8207a04ef2ff73f10994253">Multiplayer::MultiplayerEditorServerNotifications</a>
 </li>
 <li>OnEntityActivated()
-: <a class="el" href="class_multiplayer_1_1_entity_replicator.html#af16807f00157d38b5872a8bf46a8d1f6">Multiplayer::EntityReplicator</a>
+: <a class="el" href="class_multiplayer_1_1_multiplayer_debug_hierarchy_reporter.html#adeb7de9c45a145ebd7e2597eda043f1d">Multiplayer::MultiplayerDebugHierarchyReporter</a>
+, <a class="el" href="class_multiplayer_1_1_entity_replicator.html#af16807f00157d38b5872a8bf46a8d1f6">Multiplayer::EntityReplicator</a>
+</li>
+<li>OnImGuiUpdate()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_debug_audit_trail.html#a9d71b528f13088bf2952b2252b4c2518">Multiplayer::MultiplayerDebugAuditTrail</a>
+, <a class="el" href="class_multiplayer_1_1_multiplayer_debug_hierarchy_reporter.html#af1972a5724324c3d30f24c13f0dbed93">Multiplayer::MultiplayerDebugHierarchyReporter</a>
+, <a class="el" href="class_multiplayer_1_1_multiplayer_debug_per_entity_reporter.html#a679b6a374a9c7fe6f3f53d3fc0ec8480">Multiplayer::MultiplayerDebugPerEntityReporter</a>
 </li>
 <li>OnInit()
 : <a class="el" href="class_multiplayer_1_1_network_hierarchy_child_component.html#ab9d14804c9bcab085d47c9f6ef1795d0">Multiplayer::NetworkHierarchyChildComponent</a>
@@ -129,14 +135,26 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 , <a class="el" href="class_multiplayer_1_1_i_multiplayer_spawner.html#a66c8b2aa17691c5aeee4d751cf886517">Multiplayer::IMultiplayerSpawner</a>
 </li>
 <li>OnPlayerLeave()
-: <a class="el" href="class_multiplayer_1_1_simple_player_spawner_component.html#a7e41b72268b2d1683181f52b3747bb5e">Multiplayer::SimplePlayerSpawnerComponent</a>
-, <a class="el" href="class_multiplayer_1_1_i_multiplayer_spawner.html#a2144481dc67d6f90b2749409465e32c3">Multiplayer::IMultiplayerSpawner</a>
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer_spawner.html#a2144481dc67d6f90b2749409465e32c3">Multiplayer::IMultiplayerSpawner</a>
+, <a class="el" href="class_multiplayer_1_1_simple_player_spawner_component.html#a7e41b72268b2d1683181f52b3747bb5e">Multiplayer::SimplePlayerSpawnerComponent</a>
 </li>
 <li>OnPlayModeEnd()
 : <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a92e3a415f4ba73e2c0985d6bf68ecd39">Multiplayer::MultiplayerEditorServerNotifications</a>
 </li>
+<li>OnResolveAliases()
+: <a class="el" href="class_multiplayer_1_1_network_entity_manager.html#a2f77902b1f6a32bfac83a028dd56a628">Multiplayer::NetworkEntityManager</a>
+</li>
+<li>OnRootSpawnableAssigned()
+: <a class="el" href="class_multiplayer_1_1_network_entity_manager.html#a9a2e01f01e0cc17c39a41fb39461332a">Multiplayer::NetworkEntityManager</a>
+</li>
+<li>OnRootSpawnableReady()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_system_component.html#a3639629cfaf71f4336c435164eca23e7">Multiplayer::MultiplayerSystemComponent</a>
+</li>
 <li>OnSearchSessionsAsyncComplete()
 : <a class="el" href="class_multiplayer_1_1_session_async_request_notifications.html#a21d523be181d5b1f528e69f01e50438a">Multiplayer::SessionAsyncRequestNotifications</a>
+</li>
+<li>OnServerAcceptanceReceived()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_editor_system_component.html#a3d53bcd123a7e91bedb8a913b10038f6">Multiplayer::MultiplayerEditorSystemComponent</a>
 </li>
 <li>OnServerLaunched()
 : <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#a2e3e3a4c7f528238e9949c3912d27d38">Multiplayer::MultiplayerEditorServerNotifications</a>
@@ -145,13 +163,17 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 : <a class="el" href="class_multiplayer_1_1_multiplayer_editor_server_notifications.html#ab3c10e75210f5281cbcdc050d498da0d">Multiplayer::MultiplayerEditorServerNotifications</a>
 </li>
 <li>OnSessionHealthCheck()
-: <a class="el" href="class_multiplayer_1_1_session_notifications.html#af5ae1dd08d78d1be0186bf27ca282300">Multiplayer::SessionNotifications</a>
+: <a class="el" href="class_multiplayer_1_1_multiplayer_system_component.html#a0c683a19747a600c36744ae9a86e2d4a">Multiplayer::MultiplayerSystemComponent</a>
+, <a class="el" href="class_multiplayer_1_1_session_notifications.html#af5ae1dd08d78d1be0186bf27ca282300">Multiplayer::SessionNotifications</a>
 </li>
 <li>OnStartMatchmakingAsyncComplete()
 : <a class="el" href="class_multiplayer_1_1_matchmaking_async_request_notifications.html#affd2ee44e7f40af552a70b10cb657128">Multiplayer::MatchmakingAsyncRequestNotifications</a>
 </li>
 <li>OnStopMatchmakingAsyncComplete()
 : <a class="el" href="class_multiplayer_1_1_matchmaking_async_request_notifications.html#a92fc98cbcde26c0a47a78dce4211573c">Multiplayer::MatchmakingAsyncRequestNotifications</a>
+</li>
+<li>OnTick()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_system_component.html#a1a7b8ecdd36531b2e55afafe2a4677f8">Multiplayer::MultiplayerSystemComponent</a>
 </li>
 <li>OnUpdateSessionBegin()
 : <a class="el" href="class_multiplayer_1_1_session_notifications.html#a7e40511ba54bdc46d47c4827e9e70523">Multiplayer::SessionNotifications</a>
@@ -163,18 +185,17 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 : <a class="el" href="class_multiplayer_1_1_rewindable_object.html#a60b7a14e3cfd1e4497e443888b7e8ae1">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
 </li>
 <li>operator!=()
-: <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a0d467045a1be83302e129f5af299d7d5">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
-, <a class="el" href="class_multiplayer_1_1_rewindable_object.html#ac02a3410ccdc32d47ab78cc16817b4cc">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
+: <a class="el" href="class_multiplayer_1_1_rewindable_object.html#ac02a3410ccdc32d47ab78cc16817b4cc">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
+, <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a0d467045a1be83302e129f5af299d7d5">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
 </li>
 <li>operator=()
-: <a class="el" href="class_multiplayer_1_1_rewindable_object.html#a74a9c03565b95de7dbfa58e0997da4fd">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
+: <a class="el" href="class_multiplayer_1_1_rewindable_object.html#a3b8543126d58bac30a006a1f8336b23f">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
 , <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#aebc40a702cef7026f6785557f6863c0d">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
-, <a class="el" href="class_multiplayer_1_1_rewindable_object.html#a3b8543126d58bac30a006a1f8336b23f">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
 </li>
 <li>operator==()
-: <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html#ae7f9764297f75d41ec39dfa022e82d59">Multiplayer::ConstNetworkEntityHandle</a>
+: <a class="el" href="class_multiplayer_1_1_rewindable_object.html#a83b5285b283307c3c58323b5cf929870">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
 , <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a57157bdaccc3a9f368251dea19a3ede0">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
-, <a class="el" href="class_multiplayer_1_1_rewindable_object.html#a83b5285b283307c3c58323b5cf929870">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
+, <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html#ae7f9764297f75d41ec39dfa022e82d59">Multiplayer::ConstNetworkEntityHandle</a>
 </li>
 <li>operator[]()
 : <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a9327406cacbdea1359db88e610b54dbc">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
@@ -185,7 +206,7 @@ $(document).ready(function(){initNavTree('functions_0x6f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:48 for Open 3D Engine Multiplayer Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:22 for Open 3D Engine Multiplayer Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

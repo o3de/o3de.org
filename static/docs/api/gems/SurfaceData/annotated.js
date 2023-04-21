@@ -20,6 +20,13 @@ var annotated =
       [ "SurfaceTagWeights", "class_surface_data_1_1_surface_tag_weights.html", "class_surface_data_1_1_surface_tag_weights" ],
       [ "SurfaceDataRegistryEntry", "struct_surface_data_1_1_surface_data_registry_entry.html", "struct_surface_data_1_1_surface_data_registry_entry" ],
       [ "SurfacePointList", "class_surface_data_1_1_surface_point_list.html", "class_surface_data_1_1_surface_point_list" ],
-      [ "SurfaceTag", "class_surface_data_1_1_surface_tag.html", "class_surface_data_1_1_surface_tag" ]
+      [ "SurfaceTag", "class_surface_data_1_1_surface_tag.html", "class_surface_data_1_1_surface_tag" ],
+      [ "EditorSurfaceDataColliderComponent", "class_surface_data_1_1_editor_surface_data_collider_component.html", "class_surface_data_1_1_editor_surface_data_collider_component" ],
+      [ "EditorSurfaceDataShapeComponent", "class_surface_data_1_1_editor_surface_data_shape_component.html", "class_surface_data_1_1_editor_surface_data_shape_component" ],
+      [ "EditorSurfaceDataSystemConfig", "class_surface_data_1_1_editor_surface_data_system_config.html", "class_surface_data_1_1_editor_surface_data_system_config" ],
+      [ "EditorSurfaceDataSystemComponent", "class_surface_data_1_1_editor_surface_data_system_component.html", "class_surface_data_1_1_editor_surface_data_system_component" ],
+      [ "EditorSurfaceTagListAsset", "class_surface_data_1_1_editor_surface_tag_list_asset.html", "class_surface_data_1_1_editor_surface_tag_list_asset" ],
+      [ "SurfaceDataEditorModule", "class_surface_data_1_1_surface_data_editor_module.html", "class_surface_data_1_1_surface_data_editor_module" ],
+      [ "SurfaceDataModule", "class_surface_data_1_1_surface_data_module.html", "class_surface_data_1_1_surface_data_module" ]
     ] ]
 ];

@@ -18,10 +18,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_gradient_signal_1_1_gradient_sampler.html#abef0a5f7cfefe4ebc8afafbab1be61d4",
-"class_gradient_signal_1_1_image_gradient_component.html#a15fa1fdd5c39e46dc9f8e94aad432dee",
-"class_gradient_signal_1_1_perlin_gradient_component.html",
-"class_gradient_signal_1_1_surface_altitude_gradient_component.html#a3e0bf78a4da5b2baba3b403a49580e80"
+"class_gradient_signal_1_1_editor_invert_gradient_component.html",
+"class_gradient_signal_1_1_gradient_sampler.html#a415f55efc44a18b6ac55de9e7cca3ba5",
+"class_gradient_signal_1_1_image_creator_utils_1_1_paintable_image_asset_helper_base.html#a328a0bbb58a958256da236b19331e1b9",
+"class_gradient_signal_1_1_mixed_gradient_component.html#ade088d5d5fdd1924d2b781bbe4f33a25",
+"class_gradient_signal_1_1_smooth_step_gradient_component.html#a8651d636606ce59e62700bd4eadda534",
+"struct_gradient_signal_1_1_gradient_transform_notifications_1_1_connection_policy.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

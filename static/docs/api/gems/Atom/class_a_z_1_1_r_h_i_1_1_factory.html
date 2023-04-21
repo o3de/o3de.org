@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -61,6 +61,8 @@ $(document).ready(function(){initNavTree('class_a_z_1_1_r_h_i_1_1_factory.html',
 <div class="contents">
 
 <p><code>#include &lt;Factory.h&gt;</code></p>
+
+<p>Inherited by <a class="el" href="class_a_z_1_1_d_x12_1_1_system_component.html">AZ::DX12::SystemComponent</a>, <a class="el" href="class_a_z_1_1_metal_1_1_system_component.html">AZ::Metal::SystemComponent</a>, <a class="el" href="class_a_z_1_1_null_1_1_system_component.html">AZ::Null::SystemComponent</a>, and <a class="el" href="class_a_z_1_1_vulkan_1_1_system_component.html">AZ::Vulkan::SystemComponent</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -251,6 +253,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <p><a class="el" href="class_a_z_1_1_r_h_i_1_1_factory.html">Factory</a> Creation Methods:</p>
 <p>Returns the platform-specific derived variant of the RHI type. All instances are created in an uninitialized state; the operation simply allocates the memory for the appropriate platform type and returns the pointer. </p>
 
+<p>Implemented in <a class="el" href="class_a_z_1_1_d_x12_1_1_system_component.html#a7916dc3a00fb33f19003c0976d0e5509">AZ::DX12::SystemComponent</a>, <a class="el" href="class_a_z_1_1_metal_1_1_system_component.html#a62d8f8648cae2575e3d6bdcd270e7340">AZ::Metal::SystemComponent</a>, <a class="el" href="class_a_z_1_1_null_1_1_system_component.html#a076ac27c52c4b255869c874dcc3f6f31">AZ::Null::SystemComponent</a>, and <a class="el" href="class_a_z_1_1_vulkan_1_1_system_component.html#a87d1b371a9c651c1c2e63feb4e294117">AZ::Vulkan::SystemComponent</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a40fca3644da6d1cc864898acf808c79d"></a>
@@ -274,6 +278,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 <p>Collects the set of physical devices on the system and returns a list of them. Physical devices represent the hardware attached to the system. Physical devices can be grouped into nodes for linked setups (e.g. SLI / Crossfire). They can also represent software reference implementations. Check the PhysicalDeviceType on the descriptor to inspect this information. </p>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_d_x12_1_1_system_component.html#a1d2701202a58b76c9358de186c8da3a3">AZ::DX12::SystemComponent</a>, <a class="el" href="class_a_z_1_1_metal_1_1_system_component.html#aa2bbb8472b74e4e335e5e55739e7e098">AZ::Metal::SystemComponent</a>, <a class="el" href="class_a_z_1_1_null_1_1_system_component.html#ab17c431ad7e4a51c556a873686ba3a2d">AZ::Null::SystemComponent</a>, and <a class="el" href="class_a_z_1_1_vulkan_1_1_system_component.html#aaf77329f61b428444f25301ac789f036">AZ::Vulkan::SystemComponent</a>.</p>
 
 </div>
 </div>
@@ -299,6 +305,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div><div class="memdoc">
 <p>Purpose: The API Unique Index will be encoded in the 2 Most Significant Bits of a ShaderVariantAsset ProductSubId (a 32bits integer). Returns a number in the range [0..3]. In theory any given AssetBuilderSdk::PlatformInfo can support several RHI::APITypes. In reality "pc" only supports DX12 &amp; Vulkan. "ios" supports only Metal. "mac" supports only Metal. "android" supports only Vulkan. So, for all practical purposes, a single PlatformInfo won't support more than 2 ShaderPlatformInterfaces, but for the sake of hedging our bets into the future We assume no more than 4 ShaderPlatformInterfaces will ever be supported for any given PlatformInfo. REMARK: It is the responsibility of the <a class="el" href="class_a_z_1_1_r_h_i_1_1_factory.html">Factory</a> subclass to return a unique number between 0...3. For example DX12 can return 0, while Vulkan should return 1 (Satisfies "pc", "android" and "linux"). Metal can return 0 because it is the only <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html">ShaderPlatformInterface</a> for "ios", "mac" and "appletv". See AZ::RHI::Limits::APIType::PerPlatformApiUniqueIndexMax. </p>
 
+<p>Implemented in <a class="el" href="class_a_z_1_1_d_x12_1_1_system_component.html#a81b01819cd31b3f483aa5d762511a784">AZ::DX12::SystemComponent</a>, <a class="el" href="class_a_z_1_1_metal_1_1_system_component.html#a4921e35ccdb5693cf1cec384c6f1a263">AZ::Metal::SystemComponent</a>, <a class="el" href="class_a_z_1_1_null_1_1_system_component.html#a841f9320ae02abccfe1ead77219192d0">AZ::Null::SystemComponent</a>, and <a class="el" href="class_a_z_1_1_vulkan_1_1_system_component.html#a4dfc491f7a66af0b427617c29448fab4">AZ::Vulkan::SystemComponent</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -310,7 +318,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RHI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_h_i_1_1_factory.html">Factory</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:41 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:04 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

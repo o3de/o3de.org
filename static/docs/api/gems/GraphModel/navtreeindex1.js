@@ -1,5 +1,15 @@
 var NAVTREEINDEX1 =
 {
+"class_graph_model_1_1_slot.html#af366bb8d1ac6911183266782efc2ce6b":[0,0,1,13,12],
+"class_graph_model_1_1_slot.html#af7f7881093daa6b6a30f8ab1bfff5025":[0,0,1,13,24],
+"class_graph_model_1_1_slot.html#afa2ca3e1998b788244fe41d8c031825e":[0,0,1,13,18],
+"class_graph_model_1_1_slot_definition.html":[0,0,1,12],
+"class_graph_model_1_1_slot_definition.html#a059d8e10795378801c2aab21db001715":[0,0,1,12,5],
+"class_graph_model_1_1_slot_definition.html#a161e0597d6235eee488ab6a7c0d6402e":[0,0,1,12,10],
+"class_graph_model_1_1_slot_definition.html#a2ae53a4b92d636b0023a84e96f6167c2":[0,0,1,12,7],
+"class_graph_model_1_1_slot_definition.html#a2caa4d0bbccb875f9f05d8d8af55a6ef":[0,0,1,12,8],
+"class_graph_model_1_1_slot_definition.html#a2d9b68837879ca989e34e732bb3fbd64":[0,0,1,12,13],
+"class_graph_model_1_1_slot_definition.html#a306d67dac4aab6e2bd2760ee4ff52ed4":[0,0,1,12,15],
 "class_graph_model_1_1_slot_definition.html#a362812da814c2cbe47e3c818134bd47c":[0,0,1,12,1],
 "class_graph_model_1_1_slot_definition.html#a426af195033b325620341b5dabfc0a82":[0,0,1,12,4],
 "class_graph_model_1_1_slot_definition.html#a52ce1fc335261b8c598a372c91ba16a4":[0,0,1,12,9],
@@ -239,15 +249,5 @@ var NAVTREEINDEX1 =
 "class_graph_model_integration_1_1_module_node_palette_item.html#acc2cd7a9ac77d3d302be52bf32ef31bf":[0,0,2,22,0],
 "class_graph_model_integration_1_1_module_node_palette_item.html#ad98dfa0bdd5af5f17804e8bc9f66e413":[0,0,2,22,4],
 "class_graph_model_integration_1_1_module_node_palette_item.html#ae4e49604c634893ebf0b424002f5159a":[0,0,2,22,5],
-"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html":[0,0,2,18],
-"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html#a065d64ceeeabfcffd60cbfff688f7d34":[0,0,2,18,2],
-"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html#a86418b3a2194b129f79de22fb78997f4":[0,0,2,18,0],
-"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html#aba5423d2738b3371953236cb612bfdf5":[0,0,2,18,1],
-"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html#ad94eb77f93864ee1c2c4bbfef741ba84":[0,0,2,18,3],
-"class_graph_model_integration_1_1_read_only_data_interface.html":[0,0,2,25],
-"class_graph_model_integration_1_1_read_only_data_interface.html#a2e5c97acc5d3555257db2cf3697dd20d":[0,0,2,25,1],
-"class_graph_model_integration_1_1_read_only_data_interface.html#a336dc01430eaf78558e3940f710f57dc":[0,0,2,25,3],
-"class_graph_model_integration_1_1_read_only_data_interface.html#a3a77e217b6c73bdbcaa2dfa902aea14b":[0,0,2,25,0],
-"class_graph_model_integration_1_1_read_only_data_interface.html#acf8f5ca7bd392d10a7b8e5b22b7a44d3":[0,0,2,25,2],
-"class_graph_model_integration_1_1_standard_node_palette_item.html":[0,0,2,24]
+"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html":[0,0,2,18]
 };

@@ -8,7 +8,8 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ]
       ] ]
     ] ]
   ] ]
@@ -16,7 +17,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"class_white_box_1_1_manipulator_view_edge.html#a81c358d18752d5fdf5ff3bb419e8673f",
+"struct_white_box_1_1_intersection_and_render_data.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

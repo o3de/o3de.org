@@ -1,11 +1,22 @@
 var hierarchy =
 [
+    [ "Handler", null, [
+      [ "ScriptCanvasBuilder::Worker", "class_script_canvas_builder_1_1_worker.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
     [ "MultiHandler", null, [
       [ "ScriptCanvas::AssetRegistry", "class_script_canvas_1_1_asset_registry.html", null ]
     ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
     [ "AZ::AnyTypeInfoConcept< ValueType, typename >", "struct_a_z_1_1_any_type_info_concept.html", null ],
     [ "MultiHandler", null, [
-      [ "ScriptCanvas::RuntimeAssetHandler", "class_script_canvas_1_1_runtime_asset_handler.html", null ],
+      [ "ScriptCanvas::RuntimeAssetHandler", "class_script_canvas_1_1_runtime_asset_handler.html", [
+        [ "ScriptCanvasBuilder::JobDependencyVerificationHandler", "class_script_canvas_builder_1_1_job_dependency_verification_handler.html", null ]
+      ] ],
       [ "ScriptCanvas::SubgraphInterfaceAssetHandler", "class_script_canvas_1_1_subgraph_interface_asset_handler.html", null ]
     ] ],
     [ "Handler", null, [
@@ -144,8 +155,40 @@ var hierarchy =
         [ "ScriptCanvas::Nodes::UnitTesting::ExpectTrue", "class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_true.html", null ],
         [ "ScriptCanvas::Nodes::UnitTesting::MarkComplete", "class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_mark_complete.html", null ]
       ] ],
+      [ "ScriptCanvas::RuntimeAssetSystemComponent", "class_script_canvas_1_1_runtime_asset_system_component.html", null ],
       [ "ScriptCanvas::RuntimeComponent", "class_script_canvas_1_1_runtime_component.html", null ],
-      [ "ScriptCanvas::SystemComponent", "class_script_canvas_1_1_system_component.html", null ]
+      [ "ScriptCanvas::SystemComponent", "class_script_canvas_1_1_system_component.html", null ],
+      [ "ScriptCanvasBuilder::PluginComponent", "class_script_canvas_builder_1_1_plugin_component.html", null ],
+      [ "ScriptCanvasEditor::DynamicSlotComponent", "class_script_canvas_editor_1_1_dynamic_slot_component.html", [
+        [ "ScriptCanvasEditor::DynamicOrderingDynamicSlotComponent", "class_script_canvas_editor_1_1_dynamic_ordering_dynamic_slot_component.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::EditorAssetSystemComponent", "class_script_canvas_editor_1_1_editor_asset_system_component.html", null ],
+      [ "ScriptCanvasEditor::EntityMimeDataHandler", "class_script_canvas_editor_1_1_entity_mime_data_handler.html", null ],
+      [ "ScriptCanvasEditor::IconComponent", "class_script_canvas_editor_1_1_icon_component.html", null ],
+      [ "ScriptCanvasEditor::NodeDescriptorComponent", "class_script_canvas_editor_1_1_node_descriptor_component.html", [
+        [ "ScriptCanvasEditor::AzEventHandlerNodeDescriptorComponent", "class_script_canvas_editor_1_1_az_event_handler_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::ClassMethodNodeDescriptorComponent", "class_script_canvas_editor_1_1_class_method_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::EBusHandlerEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_event_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::EBusSenderNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_sender_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::FunctionNodeDescriptorComponent", "class_script_canvas_editor_1_1_function_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::NodelingDescriptorComponent", "class_script_canvas_editor_1_1_nodeling_descriptor_component.html", [
+          [ "ScriptCanvasEditor::FunctionDefinitionNodeDescriptorComponent", "class_script_canvas_editor_1_1_function_definition_node_descriptor_component.html", null ]
+        ] ],
+        [ "ScriptCanvasEditor::ScriptEventReceiverEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_event_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::ScriptEventSenderNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_sender_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::UserDefinedNodeDescriptorComponent", "class_script_canvas_editor_1_1_user_defined_node_descriptor_component.html", null ],
+        [ "ScriptCanvasEditor::VariableNodeDescriptorComponent", "class_script_canvas_editor_1_1_variable_node_descriptor_component.html", [
+          [ "ScriptCanvasEditor::GetVariableNodeDescriptorComponent", "class_script_canvas_editor_1_1_get_variable_node_descriptor_component.html", null ],
+          [ "ScriptCanvasEditor::SetVariableNodeDescriptorComponent", "class_script_canvas_editor_1_1_set_variable_node_descriptor_component.html", null ]
+        ] ]
+      ] ],
+      [ "ScriptCanvasEditor::ReflectComponent", "class_script_canvas_editor_1_1_reflect_component.html", null ],
+      [ "ScriptCanvasEditor::SceneMemberMappingComponent", "class_script_canvas_editor_1_1_scene_member_mapping_component.html", null ],
+      [ "ScriptCanvasEditor::SlotMappingComponent", "class_script_canvas_editor_1_1_slot_mapping_component.html", null ],
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ],
+      [ "ScriptCanvasEditor::TraceMessageComponent", "class_script_canvas_editor_1_1_trace_message_component.html", null ]
     ] ],
     [ "ComponentBus", null, [
       [ "ScriptCanvas::GraphConfigurationNotifications", "class_script_canvas_1_1_graph_configuration_notifications.html", null ],
@@ -154,7 +197,21 @@ var hierarchy =
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Nodes::Core::FunctionCallNode", "class_script_canvas_1_1_nodes_1_1_core_1_1_function_call_node.html", null ],
-      [ "ScriptCanvas::Nodes::Core::Internal::ScriptEventBase", null, null ]
+      [ "ScriptCanvas::Nodes::Core::Internal::ScriptEventBase", null, null ],
+      [ "ScriptCanvasEditor::FunctionNodeDescriptorComponent", "class_script_canvas_editor_1_1_function_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasAssetNodeUsageTreeItem", "class_script_canvas_editor_1_1_script_canvas_asset_node_usage_tree_item.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasAssetNodeUsageTreeItemRoot", "class_script_canvas_editor_1_1_script_canvas_asset_node_usage_tree_item_root.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventSenderNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_sender_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventsPaletteTreeItem", "class_script_canvas_editor_1_1_script_events_palette_tree_item.html", null ]
+    ] ],
+    [ "MultiHandler", null, [
+      [ "ScriptCanvasBuilder::DataSystem", "class_script_canvas_builder_1_1_data_system.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasAssetNodeUsageTreeItemRoot", "class_script_canvas_editor_1_1_script_canvas_asset_node_usage_tree_item_root.html", null ],
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ],
+      [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::Widget::ScriptCanvasRootPaletteTreeItem", "class_script_canvas_editor_1_1_widget_1_1_script_canvas_root_palette_tree_item.html", null ]
     ] ],
     [ "AssetData", null, [
       [ "ScriptCanvas::ExecutionLogAsset", "class_script_canvas_1_1_execution_log_asset.html", null ],
@@ -165,6 +222,10 @@ var hierarchy =
     [ "AssetHandler", null, [
       [ "ScriptCanvas::RuntimeAssetHandler", "class_script_canvas_1_1_runtime_asset_handler.html", null ],
       [ "ScriptCanvas::SubgraphInterfaceAssetHandler", "class_script_canvas_1_1_subgraph_interface_asset_handler.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::TraceMessageComponent", "class_script_canvas_editor_1_1_trace_message_component.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::Log", "class_script_canvas_editor_1_1_version_explorer_1_1_log.html", null ]
     ] ],
     [ "EBusTraits", null, [
       [ "ScriptCanvas::AssetRegistryRequests", "class_script_canvas_1_1_asset_registry_requests.html", null ],
@@ -201,6 +262,11 @@ var hierarchy =
       [ "ScriptCanvas::VariableNodeNotifications", "class_script_canvas_1_1_variable_node_notifications.html", null ],
       [ "ScriptCanvas::VariableNotifications", "class_script_canvas_1_1_variable_notifications.html", null ],
       [ "ScriptCanvas::VariableRequests", "class_script_canvas_1_1_variable_requests.html", null ],
+      [ "ScriptCanvasBuilder::DataSystemAssetNotifications", "class_script_canvas_builder_1_1_data_system_asset_notifications.html", null ],
+      [ "ScriptCanvasBuilder::DataSystemAssetRequests", "class_script_canvas_builder_1_1_data_system_asset_requests.html", null ],
+      [ "ScriptCanvasBuilder::DataSystemSourceNotifications", "class_script_canvas_builder_1_1_data_system_source_notifications.html", null ],
+      [ "ScriptCanvasBuilder::DataSystemSourceRequests", "class_script_canvas_builder_1_1_data_system_source_requests.html", null ],
+      [ "ScriptCanvasEditor::AssetGraphScene", "class_script_canvas_editor_1_1_asset_graph_scene.html", null ],
       [ "ScriptCanvasEditor::AutomationRequests", "class_script_canvas_editor_1_1_automation_requests.html", null ],
       [ "ScriptCanvasEditor::Deprecated::GetVariableNodeDescriptorRequests", "class_script_canvas_editor_1_1_deprecated_1_1_get_variable_node_descriptor_requests.html", null ],
       [ "ScriptCanvasEditor::Deprecated::SetVariableNodeDescriptorRequests", "class_script_canvas_editor_1_1_deprecated_1_1_set_variable_node_descriptor_requests.html", null ],
@@ -209,6 +275,7 @@ var hierarchy =
       [ "ScriptCanvasEditor::DynamicSlotRequests", "class_script_canvas_editor_1_1_dynamic_slot_requests.html", null ],
       [ "ScriptCanvasEditor::EBusHandlerEventNodeDescriptorRequests", "class_script_canvas_editor_1_1_e_bus_handler_event_node_descriptor_requests.html", null ],
       [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorRequests", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_requests.html", null ],
+      [ "ScriptCanvasEditor::EditorAssetConversionBusTraits", "class_script_canvas_editor_1_1_editor_asset_conversion_bus_traits.html", null ],
       [ "ScriptCanvasEditor::EditorGraphNotifications", "class_script_canvas_editor_1_1_editor_graph_notifications.html", null ],
       [ "ScriptCanvasEditor::EditorGraphRequests", "class_script_canvas_editor_1_1_editor_graph_requests.html", null ],
       [ "ScriptCanvasEditor::EditorLoggingComponentNotifications", "class_script_canvas_editor_1_1_editor_logging_component_notifications.html", null ],
@@ -220,10 +287,16 @@ var hierarchy =
       [ "ScriptCanvasEditor::GeneralEditorNotifications", "class_script_canvas_editor_1_1_general_editor_notifications.html", null ],
       [ "ScriptCanvasEditor::GeneralGraphEvents", "class_script_canvas_editor_1_1_general_graph_events.html", null ],
       [ "ScriptCanvasEditor::GeneralRequests", "class_script_canvas_editor_1_1_general_requests.html", null ],
+      [ "ScriptCanvasEditor::GraphItemCommandNotifications", "class_script_canvas_editor_1_1_graph_item_command_notifications.html", null ],
+      [ "ScriptCanvasEditor::GraphValidatorDockWidgetNotifications", "class_script_canvas_editor_1_1_graph_validator_dock_widget_notifications.html", null ],
       [ "ScriptCanvasEditor::IconRequests", "class_script_canvas_editor_1_1_icon_requests.html", null ],
+      [ "ScriptCanvasEditor::LoggingDataNotifications", "class_script_canvas_editor_1_1_logging_data_notifications.html", null ],
+      [ "ScriptCanvasEditor::LoggingDataRequests", "class_script_canvas_editor_1_1_logging_data_requests.html", null ],
       [ "ScriptCanvasEditor::NodeCreationNotifications", "class_script_canvas_editor_1_1_node_creation_notifications.html", null ],
       [ "ScriptCanvasEditor::NodeDescriptorRequests", "class_script_canvas_editor_1_1_node_descriptor_requests.html", null ],
+      [ "ScriptCanvasEditor::NodePaletteModelNotifications", "class_script_canvas_editor_1_1_node_palette_model_notifications.html", null ],
       [ "ScriptCanvasEditor::NodeReplacementRequests", "class_script_canvas_editor_1_1_node_replacement_requests.html", null ],
+      [ "ScriptCanvasEditor::PropertyGridRequests", "class_script_canvas_editor_1_1_property_grid_requests.html", null ],
       [ "ScriptCanvasEditor::SceneCounterRequests", "class_script_canvas_editor_1_1_scene_counter_requests.html", null ],
       [ "ScriptCanvasEditor::SceneMemberMappingConfigurationRequests", "class_script_canvas_editor_1_1_scene_member_mapping_configuration_requests.html", null ],
       [ "ScriptCanvasEditor::SceneMemberMappingRequests", "class_script_canvas_editor_1_1_scene_member_mapping_requests.html", null ],
@@ -234,6 +307,7 @@ var hierarchy =
       [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorRequests", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_requests.html", null ],
       [ "ScriptCanvasEditor::SlotMappingRequests", "class_script_canvas_editor_1_1_slot_mapping_requests.html", null ],
       [ "ScriptCanvasEditor::SystemRequests", "class_script_canvas_editor_1_1_system_requests.html", null ],
+      [ "ScriptCanvasEditor::TraceSuppressionRequests", "class_script_canvas_editor_1_1_trace_suppression_requests.html", null ],
       [ "ScriptCanvasEditor::UINotifications", "class_script_canvas_editor_1_1_u_i_notifications.html", null ],
       [ "ScriptCanvasEditor::UIRequests", "class_script_canvas_editor_1_1_u_i_requests.html", null ],
       [ "ScriptCanvasEditor::UndoNotifications", "class_script_canvas_editor_1_1_undo_notifications.html", null ],
@@ -243,11 +317,17 @@ var hierarchy =
       [ "ScriptCanvasEditor::UpgradeNotifications", "class_script_canvas_editor_1_1_upgrade_notifications.html", null ],
       [ "ScriptCanvasEditor::VariableAutomationRequests", "class_script_canvas_editor_1_1_variable_automation_requests.html", null ],
       [ "ScriptCanvasEditor::VariableNodeDescriptorRequests", "class_script_canvas_editor_1_1_variable_node_descriptor_requests.html", null ],
-      [ "ScriptCanvasEditor::VariablePaletteRequests", "class_script_canvas_editor_1_1_variable_palette_requests.html", null ]
+      [ "ScriptCanvasEditor::VariablePaletteRequests", "class_script_canvas_editor_1_1_variable_palette_requests.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::LogTraits", "class_script_canvas_editor_1_1_version_explorer_1_1_log_traits.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::ModelNotificationsTraits", "class_script_canvas_editor_1_1_version_explorer_1_1_model_notifications_traits.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::ModelRequestsTraits", "class_script_canvas_editor_1_1_version_explorer_1_1_model_requests_traits.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::ModificationNotificationsTraits", "class_script_canvas_editor_1_1_version_explorer_1_1_modification_notifications_traits.html", null ],
+      [ "ScriptCanvasEditor::Widget::ScriptCanvasCommandLineRequests", "struct_script_canvas_editor_1_1_widget_1_1_script_canvas_command_line_requests.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Graph", "class_script_canvas_1_1_graph.html", null ],
-      [ "ScriptCanvas::RuntimeComponent", "class_script_canvas_1_1_runtime_component.html", null ]
+      [ "ScriptCanvas::RuntimeComponent", "class_script_canvas_1_1_runtime_component.html", null ],
+      [ "ScriptCanvasEditor::Reporter", "class_script_canvas_editor_1_1_reporter.html", null ]
     ] ],
     [ "Module", null, [
       [ "ScriptCanvas::ScriptCanvasModuleCommon", "class_script_canvas_1_1_script_canvas_module_common.html", [
@@ -265,16 +345,44 @@ var hierarchy =
         [ "ScriptCanvas::Nodeables::Time::TimerNodeable", "class_script_canvas_1_1_nodeables_1_1_time_1_1_timer_nodeable.html", null ]
       ] ],
       [ "ScriptCanvas::Nodes::LerpBetweenNodeable< t_Operand >", "class_script_canvas_1_1_nodes_1_1_lerp_between_nodeable.html", null ],
+      [ "ScriptCanvasEditor::DynamicOrderingDynamicSlotComponent", "class_script_canvas_editor_1_1_dynamic_ordering_dynamic_slot_component.html", null ],
       [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ],
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasGraphScopedVariableDataInterface", "class_script_canvas_editor_1_1_script_canvas_graph_scoped_variable_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasVariableReferenceDataInterface", "class_script_canvas_editor_1_1_script_canvas_variable_reference_data_interface.html", null ],
       [ "ScriptCanvasEditor::StateMachine", "class_script_canvas_editor_1_1_state_machine.html", [
         [ "ScriptCanvasEditor::EditorGraphUpgradeMachine", "class_script_canvas_editor_1_1_editor_graph_upgrade_machine.html", null ]
-      ] ]
+      ] ],
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ],
+      [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::Modifier", "class_script_canvas_editor_1_1_version_explorer_1_1_modifier.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::Scanner", "class_script_canvas_editor_1_1_version_explorer_1_1_scanner.html", null ],
+      [ "ScriptCanvasEditor::Widget::ScriptCanvasRootPaletteTreeItem", "class_script_canvas_editor_1_1_widget_1_1_script_canvas_root_palette_tree_item.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Nodeables::Time::BaseTimer", "class_script_canvas_1_1_nodeables_1_1_time_1_1_base_timer.html", null ],
       [ "ScriptCanvas::Nodeables::Time::DelayNodeable", "class_script_canvas_1_1_nodeables_1_1_time_1_1_delay_nodeable.html", null ],
       [ "ScriptCanvas::Nodeables::Time::DurationNodeable", "class_script_canvas_1_1_nodeables_1_1_time_1_1_duration_nodeable.html", null ],
       [ "ScriptCanvas::Nodes::LerpBetweenNodeable< t_Operand >", "class_script_canvas_1_1_nodes_1_1_lerp_between_nodeable.html", null ]
+    ] ],
+    [ "UserSettings", null, [
+      [ "ScriptCanvasEditor::EditorSettings::EditorWorkspace", "class_script_canvas_editor_1_1_editor_settings_1_1_editor_workspace.html", null ],
+      [ "ScriptCanvasEditor::EditorSettings::ScriptCanvasEditorSettings", "class_script_canvas_editor_1_1_editor_settings_1_1_script_canvas_editor_settings.html", null ],
+      [ "ScriptCanvasEditor::LiveLoggingUserSettings", "class_script_canvas_editor_1_1_live_logging_user_settings.html", null ],
+      [ "ScriptCanvasEditor::Settings", "class_script_canvas_editor_1_1_settings.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasBuilder::DataSystem", "class_script_canvas_builder_1_1_data_system.html", null ],
+      [ "ScriptCanvasEditor::Configuration", "class_script_canvas_editor_1_1_configuration.html", null ],
+      [ "ScriptCanvasEditor::StatisticsDialog", "class_script_canvas_editor_1_1_statistics_dialog.html", null ],
+      [ "ScriptCanvasEditor::Widget::ScriptCanvasRootPaletteTreeItem", "class_script_canvas_editor_1_1_widget_1_1_script_canvas_root_palette_tree_item.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasBuilder::DataSystem", "class_script_canvas_builder_1_1_data_system.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::Modifier", "class_script_canvas_editor_1_1_version_explorer_1_1_modifier.html", null ]
     ] ],
     [ "RemoteToolsMessage", null, [
       [ "ScriptCanvas::Debugger::Message::Notification", "class_script_canvas_1_1_debugger_1_1_message_1_1_notification.html", [
@@ -303,6 +411,23 @@ var hierarchy =
     [ "MultiHandler", null, [
       [ "ScriptCanvas::Nodeables::Spawning::DespawnNodeable", "class_script_canvas_1_1_nodeables_1_1_spawning_1_1_despawn_nodeable.html", null ],
       [ "ScriptCanvas::Nodeables::Spawning::SpawnNodeable", "class_script_canvas_1_1_nodeables_1_1_spawning_1_1_spawn_nodeable.html", null ]
+    ] ],
+    [ "StyledDialog", null, [
+      [ "ScriptCanvasEditor::InterpreterWidget", "class_script_canvas_editor_1_1_interpreter_widget.html", null ],
+      [ "ScriptCanvasEditor::UpgradeHelper", "class_script_canvas_editor_1_1_upgrade_helper.html", null ],
+      [ "ScriptCanvasEditor::VariableConfigurationWidget", "class_script_canvas_editor_1_1_variable_configuration_widget.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::Controller", "class_script_canvas_editor_1_1_version_explorer_1_1_controller.html", null ]
+    ] ],
+    [ "StyledDockWidget", null, [
+      [ "ScriptCanvasEditor::GraphValidationDockWidget", "class_script_canvas_editor_1_1_graph_validation_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::LoggingWindow", "class_script_canvas_editor_1_1_logging_window.html", null ],
+      [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::VariableDockWidget", "class_script_canvas_editor_1_1_variable_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::Widget::LogPanelWidget", "class_script_canvas_editor_1_1_widget_1_1_log_panel_widget.html", null ],
+      [ "ScriptCanvasEditor::Widget::PropertyGrid", "class_script_canvas_editor_1_1_widget_1_1_property_grid.html", null ]
+    ] ],
+    [ "TabBar", null, [
+      [ "ScriptCanvasEditor::Widget::GraphTabBar", "class_script_canvas_editor_1_1_widget_1_1_graph_tab_bar.html", null ]
     ] ],
     [ "enable_shared_from_this", null, [
       [ "ScriptCanvas::Grammar::AbstractCodeModel", "class_script_canvas_1_1_grammar_1_1_abstract_code_model.html", null ],
@@ -370,20 +495,85 @@ var hierarchy =
         [ "ScriptCanvas::UnusedNodeEvent", "class_script_canvas_1_1_unused_node_event.html", null ]
       ] ]
     ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
+    ] ],
+    [ "AssetBrowserFilterModel", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasAssetBrowserModel", "class_script_canvas_editor_1_1_script_canvas_asset_browser_model.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasBuilder::DataSystem", "class_script_canvas_builder_1_1_data_system.html", null ],
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ],
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
+    ] ],
     [ "EditorComponentBase", null, [
       [ "ScriptCanvasEditor::EditorScriptCanvasComponent", "class_script_canvas_editor_1_1_editor_script_canvas_component.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvasEditor::EditorScriptCanvasComponent", "class_script_canvas_editor_1_1_editor_script_canvas_component.html", null ]
+      [ "ScriptCanvasEditor::EditorScriptCanvasComponent", "class_script_canvas_editor_1_1_editor_script_canvas_component.html", null ],
+      [ "ScriptCanvasEditor::LiveLoggingWindowSession", "class_script_canvas_editor_1_1_live_logging_window_session.html", null ],
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ],
+      [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::VariableConfigurationWidget", "class_script_canvas_editor_1_1_variable_configuration_widget.html", null ],
+      [ "ScriptCanvasEditor::VariableDockWidget", "class_script_canvas_editor_1_1_variable_dock_widget.html", null ]
+    ] ],
+    [ "IPropertyEditorNotify", null, [
+      [ "ScriptCanvasEditor::InterpreterWidget", "class_script_canvas_editor_1_1_interpreter_widget.html", null ],
+      [ "ScriptCanvasEditor::Widget::PropertyGrid", "class_script_canvas_editor_1_1_widget_1_1_property_grid.html", null ]
+    ] ],
+    [ "BaseLogPanel", null, [
+      [ "ScriptCanvasEditor::Widget::LogPanel", "class_script_canvas_editor_1_1_widget_1_1_log_panel.html", null ]
+    ] ],
+    [ "BaseLogView", null, [
+      [ "ScriptCanvasEditor::Widget::LogTab", "class_script_canvas_editor_1_1_widget_1_1_log_tab.html", null ]
+    ] ],
+    [ "PropertyAssetCtrl", null, [
+      [ "ScriptCanvasEditor::SourceHandlePropertyAssetCtrl", "class_script_canvas_editor_1_1_source_handle_property_asset_ctrl.html", null ]
+    ] ],
+    [ "PropertyHandler", null, [
+      [ "ScriptCanvasEditor::SourceHandlePropertyHandler", "class_script_canvas_editor_1_1_source_handle_property_handler.html", null ]
+    ] ],
+    [ "QTreeViewWithStateSaving", null, [
+      [ "ScriptCanvasEditor::UnitTestTreeView", "class_script_canvas_editor_1_1_unit_test_tree_view.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::GraphValidationDockWidget", "class_script_canvas_editor_1_1_graph_validation_dock_widget.html", null ]
     ] ],
     [ "MultiHandler", null, [
-      [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
+      [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ],
+      [ "ScriptCanvasEditor::ValidationData", "class_script_canvas_editor_1_1_validation_data.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "IUndoNotify", null, [
+      [ "ScriptCanvasEditor::UndoHelper", "class_script_canvas_editor_1_1_undo_helper.html", null ]
+    ] ],
+    [ "URSequencePoint", null, [
+      [ "ScriptCanvasEditor::GraphItemCommand", "class_script_canvas_editor_1_1_graph_item_command.html", [
+        [ "ScriptCanvasEditor::GraphItemChangeCommand", "class_script_canvas_editor_1_1_graph_item_change_command.html", [
+          [ "ScriptCanvasEditor::GraphItemAddCommand", "class_script_canvas_editor_1_1_graph_item_add_command.html", null ],
+          [ "ScriptCanvasEditor::GraphItemRemovalCommand", "class_script_canvas_editor_1_1_graph_item_removal_command.html", null ]
+        ] ]
+      ] ]
     ] ],
     [ "BaseJsonSerializer", null, [
       [ "AZ::BehaviorContextObjectSerializer", "class_a_z_1_1_behavior_context_object_serializer.html", null ],
       [ "AZ::DatumSerializer", "class_a_z_1_1_datum_serializer.html", null ],
       [ "AZ::EditorScriptCanvasComponentSerializer", "class_a_z_1_1_editor_script_canvas_component_serializer.html", null ],
       [ "AZ::RuntimeVariableSerializer", "class_a_z_1_1_runtime_variable_serializer.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::Reporter", "class_script_canvas_editor_1_1_reporter.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Debugger::ClientTransceiver", "class_script_canvas_1_1_debugger_1_1_client_transceiver.html", null ]
@@ -400,23 +590,51 @@ var hierarchy =
     [ "ContainerTypeReflection::HashContainerReflector< t_Type >", "struct_container_type_reflection_1_1_hash_container_reflector.html", null ],
     [ "ContainerTypeReflection::TraitsReflector< t_Type >", "struct_container_type_reflection_1_1_traits_reflector.html", null ],
     [ "Handler", null, [
+      [ "ScriptCanvasBuilder::DataSystem", "class_script_canvas_builder_1_1_data_system.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasBuilder::DataSystem", "class_script_canvas_builder_1_1_data_system.html", null ]
+    ] ],
+    [ "Handler", null, [
       [ "ScriptCanvas::GraphVariable", "class_script_canvas_1_1_graph_variable.html", null ],
       [ "ScriptCanvas::Node", "class_script_canvas_1_1_node.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::DynamicSlotComponent", "class_script_canvas_editor_1_1_dynamic_slot_component.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::UnitTesting::Auxiliary::EBusHandler", "class_script_canvas_1_1_unit_testing_1_1_auxiliary_1_1_e_bus_handler.html", null ]
     ] ],
     [ "Handler", null, [
+      [ "ScriptCanvasEditor::EBusHandlerEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_event_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_event_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
       [ "ScriptCanvas::Nodes::Core::EBusEventHandler", "class_script_canvas_1_1_nodes_1_1_core_1_1_e_bus_event_handler.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EditorAssetSystemComponent", "class_script_canvas_editor_1_1_editor_asset_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::ExecutionLogTreeItem", "class_script_canvas_editor_1_1_execution_log_tree_item.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvasEditor::EditorGraphVariableManagerComponent", "class_script_canvas_editor_1_1_editor_graph_variable_manager_component.html", null ]
+      [ "ScriptCanvasEditor::LiveLoggingDataAggregator", "class_script_canvas_editor_1_1_live_logging_data_aggregator.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvas::Nodes::Core::ForEach", "class_script_canvas_1_1_nodes_1_1_core_1_1_for_each.html", null ]
+      [ "ScriptCanvasEditor::FunctionNodeDescriptorComponent", "class_script_canvas_editor_1_1_function_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventSenderNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_sender_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EditorGraphVariableManagerComponent", "class_script_canvas_editor_1_1_editor_graph_variable_manager_component.html", null ]
     ] ],
     [ "MultiHandler", null, [
       [ "ScriptCanvas::Node", "class_script_canvas_1_1_node.html", null ]
@@ -428,29 +646,325 @@ var hierarchy =
       [ "ScriptCanvas::Debugger::ServiceComponent", "class_script_canvas_1_1_debugger_1_1_service_component.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
+      [ "ScriptCanvasEditor::ExecutionLogTreeItem", "class_script_canvas_editor_1_1_execution_log_tree_item.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ],
+      [ "ScriptCanvasEditor::VariableComboBoxDataModel", "class_script_canvas_editor_1_1_variable_combo_box_data_model.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::GraphValidationDockWidget", "class_script_canvas_editor_1_1_graph_validation_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::LocalVariablesListNodePaletteTreeItem", "class_script_canvas_editor_1_1_local_variables_list_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::LoggingWindowSession", "class_script_canvas_editor_1_1_logging_window_session.html", [
+        [ "ScriptCanvasEditor::LiveLoggingWindowSession", "class_script_canvas_editor_1_1_live_logging_window_session.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::VariableDockWidget", "class_script_canvas_editor_1_1_variable_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::Widget::NodePaletteDockWidget", "class_script_canvas_editor_1_1_widget_1_1_node_palette_dock_widget.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EditorSettings::ScriptCanvasEditorSettings", "class_script_canvas_editor_1_1_editor_settings_1_1_script_canvas_editor_settings.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "AssetIdDataInterface", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::AssetIdDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasAssetIdDataInterface", "class_script_canvas_editor_1_1_script_canvas_asset_id_data_interface.html", null ]
+      ] ]
+    ] ],
+    [ "BooleanDataInterface", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::BooleanDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasBoolDataInterface", "class_script_canvas_editor_1_1_script_canvas_bool_data_interface.html", null ]
+      ] ]
+    ] ],
+    [ "CategorizerInterface", null, [
+      [ "ScriptCanvasEditor::GraphPivotTreeRoot", "class_script_canvas_editor_1_1_graph_pivot_tree_root.html", null ],
+      [ "ScriptCanvasEditor::NodePaletteModel", "class_script_canvas_editor_1_1_node_palette_model.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasAssetNodeUsageTreeItemRoot", "class_script_canvas_editor_1_1_script_canvas_asset_node_usage_tree_item_root.html", null ]
+    ] ],
+    [ "ComboBoxDataInterface", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::ComboBoxDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasGraphScopedVariableDataInterface", "class_script_canvas_editor_1_1_script_canvas_graph_scoped_variable_data_interface.html", null ],
+        [ "ScriptCanvasEditor::ScriptCanvasVariableReferenceDataInterface", "class_script_canvas_editor_1_1_script_canvas_variable_reference_data_interface.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasComboBoxPropertyDataInterface< DataType >", "class_script_canvas_editor_1_1_script_canvas_combo_box_property_data_interface.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, int >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasComboBoxPropertyDataInterface< int >", "class_script_canvas_editor_1_1_script_canvas_combo_box_property_data_interface.html", [
+          [ "ScriptCanvasEditor::ScriptCanvasEnumComboBoxPropertyDataInterface", "class_script_canvas_editor_1_1_script_canvas_enum_combo_box_property_data_interface.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "ComponentSaveData", null, [
+      [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent::EBusHandlerNodeDescriptorSaveData", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component_1_1_e_bus_handler_node_descriptor_save_data.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent::ScriptEventReceiverHandlerNodeDescriptorSaveData", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component_1_1_script_event_0dc736d3a1289582cf897fdeb56156cc.html", null ]
+    ] ],
+    [ "ConnectionContextMenu", null, [
+      [ "ScriptCanvasEditor::ConnectionContextMenu", "class_script_canvas_editor_1_1_connection_context_menu.html", null ]
+    ] ],
+    [ "ContextMenuAction", null, [
+      [ "ScriptCanvasEditor::ConvertVariableNodeToReferenceAction", "class_script_canvas_editor_1_1_convert_variable_node_to_reference_action.html", null ],
+      [ "ScriptCanvasEditor::SlotManipulationMenuAction", "class_script_canvas_editor_1_1_slot_manipulation_menu_action.html", [
+        [ "ScriptCanvasEditor::ConvertReferenceToVariableNodeAction", "class_script_canvas_editor_1_1_convert_reference_to_variable_node_action.html", null ]
+      ] ]
+    ] ],
+    [ "CreateSplicingNodeMimeEvent", null, [
+      [ "ScriptCanvasEditor::CreateNodeMimeEvent", "class_script_canvas_editor_1_1_create_node_mime_event.html", [
+        [ "ScriptCanvasEditor::CreateClassMethodMimeEvent", "class_script_canvas_editor_1_1_create_class_method_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateCustomNodeMimeEvent", "class_script_canvas_editor_1_1_create_custom_node_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateDataDrivenNodeMimeEvent", "class_script_canvas_editor_1_1_create_data_driven_node_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateEBusHandlerMimeEvent", "class_script_canvas_editor_1_1_create_e_bus_handler_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateEBusSenderMimeEvent", "class_script_canvas_editor_1_1_create_e_bus_sender_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateFunctionMimeEvent", "class_script_canvas_editor_1_1_create_function_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateGetVariableNodeMimeEvent", "class_script_canvas_editor_1_1_create_get_variable_node_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateGlobalMethodMimeEvent", "class_script_canvas_editor_1_1_create_global_method_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateScriptEventsSenderMimeEvent", "class_script_canvas_editor_1_1_create_script_events_sender_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateSetVariableNodeMimeEvent", "class_script_canvas_editor_1_1_create_set_variable_node_mime_event.html", null ]
+      ] ]
+    ] ],
+    [ "DraggableNodePaletteTreeItem", null, [
+      [ "ScriptCanvasEditor::ClassMethodEventPaletteTreeItem", "class_script_canvas_editor_1_1_class_method_event_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::CommentNodePaletteTreeItem", "class_script_canvas_editor_1_1_comment_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::CustomNodePaletteTreeItem", "class_script_canvas_editor_1_1_custom_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::DataDrivenNodePaletteTreeItem", "class_script_canvas_editor_1_1_data_driven_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::EBusHandleEventPaletteTreeItem", "class_script_canvas_editor_1_1_e_bus_handle_event_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::EBusSendEventPaletteTreeItem", "class_script_canvas_editor_1_1_e_bus_send_event_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::FunctionPaletteTreeItem", "class_script_canvas_editor_1_1_function_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::GetVariableNodePaletteTreeItem", "class_script_canvas_editor_1_1_get_variable_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::GlobalMethodEventPaletteTreeItem", "class_script_canvas_editor_1_1_global_method_event_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::NodeGroupNodePaletteTreeItem", "class_script_canvas_editor_1_1_node_group_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventsEventNodePaletteTreeItem", "class_script_canvas_editor_1_1_script_events_event_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventsHandlerEventPaletteTreeItem", "class_script_canvas_editor_1_1_script_events_handler_event_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventsSenderPaletteTreeItem", "class_script_canvas_editor_1_1_script_events_sender_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::SetVariableNodePaletteTreeItem", "class_script_canvas_editor_1_1_set_variable_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::VariableChangedNodePaletteTreeItem", "class_script_canvas_editor_1_1_variable_changed_node_palette_tree_item.html", null ]
+    ] ],
+    [ "EditorConstructPresets", null, [
+      [ "ScriptCanvasEditor::EditorSettings::ScriptCanvasConstructPresets", "class_script_canvas_editor_1_1_editor_settings_1_1_script_canvas_construct_presets.html", null ]
+    ] ],
+    [ "EntityIdDataInterface", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::EntityIdDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasEntityIdDataInterface", "class_script_canvas_editor_1_1_script_canvas_entity_id_data_interface.html", null ]
+      ] ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EBusHandlerEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_event_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_event_node_descriptor_component.html", null ]
+    ] ],
+    [ "GraphCanvasListComboBoxModel", null, [
+      [ "ScriptCanvasEditor::VariableComboBoxDataModel", "class_script_canvas_editor_1_1_variable_combo_box_data_model.html", null ]
+    ] ],
+    [ "GraphCanvasMimeEvent", null, [
+      [ "ScriptCanvasEditor::CreateScriptEventsHandlerMimeEvent", "class_script_canvas_editor_1_1_create_script_events_handler_mime_event.html", null ],
+      [ "ScriptCanvasEditor::SpecializedCreateNodeMimeEvent", "class_script_canvas_editor_1_1_specialized_create_node_mime_event.html", [
+        [ "ScriptCanvasEditor::CreateCommentNodeMimeEvent", "class_script_canvas_editor_1_1_create_comment_node_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateEBusHandlerEventMimeEvent", "class_script_canvas_editor_1_1_create_e_bus_handler_event_mime_event.html", [
+          [ "ScriptCanvasEditor::CreateVariableChangedNodeMimeEvent", "class_script_canvas_editor_1_1_create_variable_changed_node_mime_event.html", null ]
+        ] ],
+        [ "ScriptCanvasEditor::CreateNodeGroupMimeEvent", "class_script_canvas_editor_1_1_create_node_group_mime_event.html", null ],
+        [ "ScriptCanvasEditor::CreateScriptEventsReceiverMimeEvent", "class_script_canvas_editor_1_1_create_script_events_receiver_mime_event.html", null ],
+        [ "ScriptCanvasEditor::MultiCreateNodeMimeEvent", "class_script_canvas_editor_1_1_multi_create_node_mime_event.html", [
+          [ "ScriptCanvasEditor::CreateSendOrReceiveScriptEventsMimeEvent", "class_script_canvas_editor_1_1_create_send_or_receive_script_events_mime_event.html", null ],
+          [ "ScriptCanvasEditor::CreateVariableSpecificNodeMimeEvent", "class_script_canvas_editor_1_1_create_variable_specific_node_mime_event.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "GraphCanvasPropertyBusHandler", null, [
+      [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ]
+    ] ],
+    [ "GraphCanvasPropertyComponent", null, [
+      [ "ScriptCanvasEditor::UnitTestComponent", "class_script_canvas_editor_1_1_unit_test_component.html", null ],
+      [ "ScriptCanvasEditor::VariablePropertiesComponent", "class_script_canvas_editor_1_1_variable_properties_component.html", null ]
+    ] ],
+    [ "MultiHandler", null, [
+      [ "ScriptCanvasEditor::Widget::PropertyGrid", "class_script_canvas_editor_1_1_widget_1_1_property_grid.html", null ]
+    ] ],
+    [ "GraphCanvasSortFilterComboBoxProxyModel", null, [
+      [ "ScriptCanvasEditor::VariableTypeComboBoxFilterModel", "class_script_canvas_editor_1_1_variable_type_combo_box_filter_model.html", null ]
+    ] ],
+    [ "GraphCanvasTreeItem", null, [
+      [ "ScriptCanvasEditor::DebugLogTreeItem", "class_script_canvas_editor_1_1_debug_log_tree_item.html", [
+        [ "ScriptCanvasEditor::DataLogTreeItem", "class_script_canvas_editor_1_1_data_log_tree_item.html", null ],
+        [ "ScriptCanvasEditor::DebugLogRootItem", "class_script_canvas_editor_1_1_debug_log_root_item.html", null ],
+        [ "ScriptCanvasEditor::ExecutionLogTreeItem", "class_script_canvas_editor_1_1_execution_log_tree_item.html", null ],
+        [ "ScriptCanvasEditor::NodeAnnotationTreeItem", "class_script_canvas_editor_1_1_node_annotation_tree_item.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::PivotTreeItem", "class_script_canvas_editor_1_1_pivot_tree_item.html", [
+        [ "ScriptCanvasEditor::GraphPivotTreeFolder", "class_script_canvas_editor_1_1_graph_pivot_tree_folder.html", null ],
+        [ "ScriptCanvasEditor::PivotTreeEntityItem", "class_script_canvas_editor_1_1_pivot_tree_entity_item.html", [
+          [ "ScriptCanvasEditor::EntityPivotTreeEntityItem", "class_script_canvas_editor_1_1_entity_pivot_tree_entity_item.html", null ],
+          [ "ScriptCanvasEditor::GraphPivotTreeEntityItem", "class_script_canvas_editor_1_1_graph_pivot_tree_entity_item.html", null ]
+        ] ],
+        [ "ScriptCanvasEditor::PivotTreeGraphItem", "class_script_canvas_editor_1_1_pivot_tree_graph_item.html", [
+          [ "ScriptCanvasEditor::EntityPivotTreeGraphItem", "class_script_canvas_editor_1_1_entity_pivot_tree_graph_item.html", null ],
+          [ "ScriptCanvasEditor::GraphPivotTreeGraphItem", "class_script_canvas_editor_1_1_graph_pivot_tree_graph_item.html", null ]
+        ] ],
+        [ "ScriptCanvasEditor::PivotTreeRoot", "class_script_canvas_editor_1_1_pivot_tree_root.html", [
+          [ "ScriptCanvasEditor::EntityPivotTreeRoot", "class_script_canvas_editor_1_1_entity_pivot_tree_root.html", null ],
+          [ "ScriptCanvasEditor::GraphPivotTreeRoot", "class_script_canvas_editor_1_1_graph_pivot_tree_root.html", null ]
+        ] ]
+      ] ],
+      [ "ScriptCanvasEditor::ScriptCanvasAssetNodeUsageTreeItem", "class_script_canvas_editor_1_1_script_canvas_asset_node_usage_tree_item.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
     ] ],
+    [ "IconDecoratedNodePaletteTreeItem", null, [
+      [ "ScriptCanvasEditor::NodePaletteNodeUsagePaletteItem", "class_script_canvas_editor_1_1_node_palette_node_usage_palette_item.html", null ]
+    ] ],
+    [ "NodeContextMenuAction", null, [
+      [ "ScriptCanvasEditor::RenameFunctionDefinitionNodeAction", "class_script_canvas_editor_1_1_rename_function_definition_node_action.html", null ]
+    ] ],
     [ "Handler", null, [
-      [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
+      [ "ScriptCanvasEditor::NodeDescriptorComponent", "class_script_canvas_editor_1_1_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::SceneMemberMappingComponent", "class_script_canvas_editor_1_1_scene_member_mapping_component.html", null ],
+      [ "ScriptCanvasEditor::SlotMappingComponent", "class_script_canvas_editor_1_1_slot_mapping_component.html", null ]
+    ] ],
+    [ "NodePaletteConfig", null, [
+      [ "ScriptCanvasEditor::Widget::ScriptCanvasNodePaletteConfig", "class_script_canvas_editor_1_1_widget_1_1_script_canvas_node_palette_config.html", null ]
+    ] ],
+    [ "NodePaletteDockWidget", null, [
+      [ "ScriptCanvasEditor::Widget::NodePaletteDockWidget", "class_script_canvas_editor_1_1_widget_1_1_node_palette_dock_widget.html", null ]
+    ] ],
+    [ "NodePaletteTreeItem", null, [
+      [ "ScriptCanvasEditor::LocalVariableNodePaletteTreeItem", "class_script_canvas_editor_1_1_local_variable_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::LocalVariablesListNodePaletteTreeItem", "class_script_canvas_editor_1_1_local_variables_list_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::NodePaletteNodeUsageRootItem", "class_script_canvas_editor_1_1_node_palette_node_usage_root_item.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventsPaletteTreeItem", "class_script_canvas_editor_1_1_script_events_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::VariableCategoryNodePaletteTreeItem", "class_script_canvas_editor_1_1_variable_category_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::Widget::ScriptCanvasRootPaletteTreeItem", "class_script_canvas_editor_1_1_widget_1_1_script_canvas_root_palette_tree_item.html", null ]
+    ] ],
+    [ "NumericDataInterface", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::NumericDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasNumericDataInterface", "class_script_canvas_editor_1_1_script_canvas_numeric_data_interface.html", null ]
+      ] ]
+    ] ],
+    [ "SceneContextMenu", null, [
+      [ "ScriptCanvasEditor::SceneContextMenu", "class_script_canvas_editor_1_1_scene_context_menu.html", null ]
+    ] ],
+    [ "SceneContextMenuAction", null, [
+      [ "ScriptCanvasEditor::RemoveUnusedVariablesMenuAction", "class_script_canvas_editor_1_1_remove_unused_variables_menu_action.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::DynamicSlotComponent", "class_script_canvas_editor_1_1_dynamic_slot_component.html", null ],
+      [ "ScriptCanvasEditor::EBusHandlerEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_event_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_event_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::VariableNodeDescriptorComponent", "class_script_canvas_editor_1_1_variable_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EntityMimeDataHandler", "class_script_canvas_editor_1_1_entity_mime_data_handler.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ],
+      [ "ScriptCanvasEditor::GraphValidationDockWidget", "class_script_canvas_editor_1_1_graph_validation_dock_widget.html", null ],
+      [ "ScriptCanvasEditor::GraphVariablesTableView", "class_script_canvas_editor_1_1_graph_variables_table_view.html", null ],
+      [ "ScriptCanvasEditor::LoggingWindowSession", "class_script_canvas_editor_1_1_logging_window_session.html", null ],
+      [ "ScriptCanvasEditor::Widget::NodePaletteDockWidget", "class_script_canvas_editor_1_1_widget_1_1_node_palette_dock_widget.html", null ]
+    ] ],
+    [ "MultiHandler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "SlotContextMenuAction", null, [
+      [ "ScriptCanvasEditor::CreateAzEventHandlerSlotMenuAction", "class_script_canvas_editor_1_1_create_az_event_handler_slot_menu_action.html", null ],
+      [ "ScriptCanvasEditor::ExposeSlotMenuAction", "class_script_canvas_editor_1_1_expose_slot_menu_action.html", null ],
+      [ "ScriptCanvasEditor::SetDataSlotTypeMenuAction", "class_script_canvas_editor_1_1_set_data_slot_type_menu_action.html", null ]
+    ] ],
+    [ "StringDataInterface", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::StringDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasCRCDataInterface", "class_script_canvas_editor_1_1_script_canvas_c_r_c_data_interface.html", null ],
+        [ "ScriptCanvasEditor::ScriptCanvasStringDataInterface", "class_script_canvas_editor_1_1_script_canvas_string_data_interface.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::StringDataInterface, ScriptCanvas::Data::StringType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasStringPropertyDataInterface", "class_script_canvas_editor_1_1_script_canvas_string_property_data_interface.html", null ]
+      ] ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::ExecutionLogTreeItem", "class_script_canvas_editor_1_1_execution_log_tree_item.html", null ]
+    ] ],
+    [ "VectorDataInterface", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::VectorDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasColorDataInterface", "class_script_canvas_editor_1_1_script_canvas_color_data_interface.html", null ],
+        [ "ScriptCanvasEditor::ScriptCanvasQuaternionDataInterface", "class_script_canvas_editor_1_1_script_canvas_quaternion_data_interface.html", null ],
+        [ "ScriptCanvasEditor::ScriptCanvasVectorizedDataInterface< Type, ElementCount >", "class_script_canvas_editor_1_1_script_canvas_vectorized_data_interface.html", [
+          [ "ScriptCanvasEditor::ScriptCanvasVectorDataInterface< Type, ElementCount >", "class_script_canvas_editor_1_1_script_canvas_vector_data_interface.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::FunctionDefinitionNodeDescriptorComponent", "class_script_canvas_editor_1_1_function_definition_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::FunctionNodeDescriptorComponent", "class_script_canvas_editor_1_1_function_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::GraphVariableManagerComponent", "class_script_canvas_1_1_graph_variable_manager_component.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
-    ] ],
-    [ "Handler", null, [
-      [ "ScriptCanvas::Connection", "class_script_canvas_1_1_connection.html", null ]
+      [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ],
+      [ "ScriptCanvasEditor::LocalVariablesListNodePaletteTreeItem", "class_script_canvas_editor_1_1_local_variables_list_node_palette_tree_item.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Graph", "class_script_canvas_1_1_graph.html", null ]
     ] ],
     [ "ScriptCanvas::GraphScopedIdentifier< VariableId >", "class_script_canvas_1_1_graph_scoped_identifier.html", null ],
     [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindowStatusWidget", "class_script_canvas_editor_1_1_main_window_status_widget.html", null ]
+    ] ],
+    [ "Handler", null, [
       [ "ScriptCanvas::GraphVariableManagerComponent", "class_script_canvas_1_1_graph_variable_manager_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::IconComponent", "class_script_canvas_editor_1_1_icon_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::VersionExplorer::Log", "class_script_canvas_editor_1_1_version_explorer_1_1_log.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::EntityPivotTreeEntityItem", "class_script_canvas_editor_1_1_entity_pivot_tree_entity_item.html", null ],
+      [ "ScriptCanvasEditor::EntityPivotTreeRoot", "class_script_canvas_editor_1_1_entity_pivot_tree_root.html", null ],
+      [ "ScriptCanvasEditor::GraphPivotTreeGraphItem", "class_script_canvas_editor_1_1_graph_pivot_tree_graph_item.html", null ],
+      [ "ScriptCanvasEditor::GraphPivotTreeRoot", "class_script_canvas_editor_1_1_graph_pivot_tree_root.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::LoggingDataAggregator", "class_script_canvas_editor_1_1_logging_data_aggregator.html", [
+        [ "ScriptCanvasEditor::LiveLoggingDataAggregator", "class_script_canvas_editor_1_1_live_logging_data_aggregator.html", null ]
+      ] ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::VersionExplorer::Controller", "class_script_canvas_editor_1_1_version_explorer_1_1_controller.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::VersionExplorer::Model", "class_script_canvas_editor_1_1_version_explorer_1_1_model.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::VersionExplorer::Modifier", "class_script_canvas_editor_1_1_version_explorer_1_1_modifier.html", null ]
     ] ],
     [ "ScriptCanvas::Internal::MultipleOutputHelper< t_Func, function, t_Traits, 1 >", null, [
       [ "ScriptCanvas::Internal::MultipleOutputInvokeHelper< t_Func, function, t_Traits, AZStd::decay_t< AZStd::function_traits_get_result_t< t_Func > > >", null, [
@@ -461,10 +975,13 @@ var hierarchy =
       [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
     ] ],
     [ "Handler", null, [
+      [ "ScriptCanvasEditor::NodeDescriptorComponent", "class_script_canvas_editor_1_1_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
       [ "ScriptCanvas::Nodes::Core::Internal::Nodeling", null, null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvas::Nodes::NodeableNodeOverloaded", "class_script_canvas_1_1_nodes_1_1_nodeable_node_overloaded.html", null ]
+      [ "ScriptCanvasEditor::StatisticsDialog", "class_script_canvas_editor_1_1_statistics_dialog.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvasEditor::NodeReplacementSystem", "class_script_canvas_editor_1_1_node_replacement_system.html", null ]
@@ -475,11 +992,87 @@ var hierarchy =
     [ "Handler", null, [
       [ "ScriptCanvas::Execution::PerformanceStatistician", "class_script_canvas_1_1_execution_1_1_performance_statistician.html", null ]
     ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::Widget::PropertyGrid", "class_script_canvas_editor_1_1_widget_1_1_property_grid.html", null ]
+    ] ],
     [ "QAbstractItemModel", null, [
-      [ "ScriptCanvasEditor::EditorGraphVariableItemModel", "class_script_canvas_editor_1_1_editor_graph_variable_item_model.html", null ]
+      [ "ScriptCanvasEditor::EditorGraphVariableItemModel", "class_script_canvas_editor_1_1_editor_graph_variable_item_model.html", null ],
+      [ "ScriptCanvasEditor::GraphValidationModel", "class_script_canvas_editor_1_1_graph_validation_model.html", null ]
+    ] ],
+    [ "QAbstractListModel", null, [
+      [ "ScriptCanvasEditor::EBusHandlerActionSourceModel", "class_script_canvas_editor_1_1_e_bus_handler_action_source_model.html", null ],
+      [ "ScriptCanvasEditor::TargetManagerModel", "class_script_canvas_editor_1_1_target_manager_model.html", null ]
+    ] ],
+    [ "QAbstractTableModel", null, [
+      [ "ScriptCanvasEditor::DataTypePaletteModel", "class_script_canvas_editor_1_1_data_type_palette_model.html", null ],
+      [ "ScriptCanvasEditor::GraphVariablesModel", "class_script_canvas_editor_1_1_graph_variables_model.html", null ],
+      [ "ScriptCanvasEditor::Widget::CommandListDataModel", "class_script_canvas_editor_1_1_widget_1_1_command_list_data_model.html", null ]
+    ] ],
+    [ "QAction", null, [
+      [ "ScriptCanvasEditor::EndpointSelectionAction", "class_script_canvas_editor_1_1_endpoint_selection_action.html", null ]
+    ] ],
+    [ "QDialog", null, [
+      [ "ScriptCanvasEditor::ContainerTypeMenu", "class_script_canvas_editor_1_1_container_type_menu.html", null ],
+      [ "ScriptCanvasEditor::ContainerWizard", "class_script_canvas_editor_1_1_container_wizard.html", null ],
+      [ "ScriptCanvasEditor::SettingsDialog", "class_script_canvas_editor_1_1_settings_dialog.html", null ],
+      [ "ScriptCanvasEditor::StatisticsDialog", "class_script_canvas_editor_1_1_statistics_dialog.html", null ],
+      [ "ScriptCanvasEditor::UnsavedChangesDialog", "class_script_canvas_editor_1_1_unsaved_changes_dialog.html", null ]
+    ] ],
+    [ "QLineEdit", null, [
+      [ "ScriptCanvasEditor::Widget::CommandLineEdit", "class_script_canvas_editor_1_1_widget_1_1_command_line_edit.html", null ]
+    ] ],
+    [ "QMainWindow", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "QMenu", null, [
+      [ "ScriptCanvasEditor::EBusHandlerActionMenu", "class_script_canvas_editor_1_1_e_bus_handler_action_menu.html", null ],
+      [ "ScriptCanvasEditor::UnitTestContextMenu", "class_script_canvas_editor_1_1_unit_test_context_menu.html", null ],
+      [ "ScriptCanvasEditor::VariablePanelContextMenu", "class_script_canvas_editor_1_1_variable_panel_context_menu.html", null ],
+      [ "ScriptCanvasEditor::Widget::PropertyGridContextMenu", "class_script_canvas_editor_1_1_widget_1_1_property_grid_context_menu.html", null ]
+    ] ],
+    [ "QObject", null, [
+      [ "ScriptCanvasEditor::GraphPivotTreeRoot", "class_script_canvas_editor_1_1_graph_pivot_tree_root.html", null ],
+      [ "ScriptCanvasEditor::SourceHandlePropertyHandler", "class_script_canvas_editor_1_1_source_handle_property_handler.html", null ]
+    ] ],
+    [ "QSortFilterProxyModel", null, [
+      [ "ScriptCanvasEditor::DataTypePaletteSortFilterProxyModel", "class_script_canvas_editor_1_1_data_type_palette_sort_filter_proxy_model.html", null ],
+      [ "ScriptCanvasEditor::EBusHandlerActionFilterProxyModel", "class_script_canvas_editor_1_1_e_bus_handler_action_filter_proxy_model.html", null ],
+      [ "ScriptCanvasEditor::GraphValidationSortFilterProxyModel", "class_script_canvas_editor_1_1_graph_validation_sort_filter_proxy_model.html", null ],
+      [ "ScriptCanvasEditor::GraphVariablesModelSortFilterProxyModel", "class_script_canvas_editor_1_1_graph_variables_model_sort_filter_proxy_model.html", null ],
+      [ "ScriptCanvasEditor::LoggingWindowFilterModel", "class_script_canvas_editor_1_1_logging_window_filter_model.html", null ],
+      [ "ScriptCanvasEditor::PivotTreeSortProxyModel", "class_script_canvas_editor_1_1_pivot_tree_sort_proxy_model.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasAssetNodeUsageFilterModel", "class_script_canvas_editor_1_1_script_canvas_asset_node_usage_filter_model.html", null ],
+      [ "ScriptCanvasEditor::Widget::CommandListDataProxyModel", "class_script_canvas_editor_1_1_widget_1_1_command_list_data_proxy_model.html", null ]
+    ] ],
+    [ "QStyledItemDelegate", null, [
+      [ "ScriptCanvasEditor::ItemButtonsDelegate", "class_script_canvas_editor_1_1_item_buttons_delegate.html", null ]
+    ] ],
+    [ "QTableView", null, [
+      [ "ScriptCanvasEditor::GraphVariablesTableView", "class_script_canvas_editor_1_1_graph_variables_table_view.html", null ],
+      [ "ScriptCanvasEditor::VariablePaletteTableView", "class_script_canvas_editor_1_1_variable_palette_table_view.html", null ],
+      [ "ScriptCanvasEditor::Widget::CommandLineList", "class_script_canvas_editor_1_1_widget_1_1_command_line_list.html", null ]
+    ] ],
+    [ "QWidget", null, [
+      [ "ScriptCanvasEditor::ContainerTypeLineEdit", "class_script_canvas_editor_1_1_container_type_line_edit.html", null ],
+      [ "ScriptCanvasEditor::LoggingWindowSession", "class_script_canvas_editor_1_1_logging_window_session.html", null ],
+      [ "ScriptCanvasEditor::MainWindowStatusWidget", "class_script_canvas_editor_1_1_main_window_status_widget.html", null ],
+      [ "ScriptCanvasEditor::PivotTreeWidget", "class_script_canvas_editor_1_1_pivot_tree_widget.html", [
+        [ "ScriptCanvasEditor::EntityPivotTreeWidget", "class_script_canvas_editor_1_1_entity_pivot_tree_widget.html", null ],
+        [ "ScriptCanvasEditor::GraphPivotTreeWidget", "class_script_canvas_editor_1_1_graph_pivot_tree_widget.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::Widget::CanvasWidget", "class_script_canvas_editor_1_1_widget_1_1_canvas_widget.html", null ],
+      [ "ScriptCanvasEditor::Widget::CommandLine", "class_script_canvas_editor_1_1_widget_1_1_command_line.html", null ],
+      [ "ScriptCanvasEditor::Widget::ScriptCanvasNodePaletteToolbar", "class_script_canvas_editor_1_1_widget_1_1_script_canvas_node_palette_toolbar.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::SceneMemberMappingComponent", "class_script_canvas_editor_1_1_scene_member_mapping_component.html", null ],
+      [ "ScriptCanvasEditor::SlotMappingComponent", "class_script_canvas_editor_1_1_slot_mapping_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::SceneMemberMappingComponent", "class_script_canvas_editor_1_1_scene_member_mapping_component.html", null ]
     ] ],
     [ "ScriptCanvas::ActiveEntityStatus", "struct_script_canvas_1_1_active_entity_status.html", null ],
     [ "ScriptCanvas::ActiveGraphStatus", "struct_script_canvas_1_1_active_graph_status.html", null ],
@@ -489,6 +1082,9 @@ var hierarchy =
       [ "ScriptCanvas::SubgraphInterfaceAssetDescription", "class_script_canvas_1_1_subgraph_interface_asset_description.html", null ]
     ] ],
     [ "ScriptCanvas::AutoGenRegistryManager", "class_script_canvas_1_1_auto_gen_registry_manager.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
     [ "ScriptCanvas::BehaviorContextObject", "class_script_canvas_1_1_behavior_context_object.html", null ],
     [ "ScriptCanvas::BehaviorContextResultTag", "struct_script_canvas_1_1_behavior_context_result_tag.html", null ],
     [ "ScriptCanvas::BehaviorContextUtils", "class_script_canvas_1_1_behavior_context_utils.html", null ],
@@ -550,6 +1146,9 @@ var hierarchy =
       [ "ScriptCanvas::TaggedDataValue< t_Tag >", "struct_script_canvas_1_1_tagged_data_value.html", null ],
       [ "ScriptCanvas::TaggedDataValue< VariableChangeTag >", "struct_script_canvas_1_1_tagged_data_value.html", null ]
     ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::LiveLoggingDataAggregator", "class_script_canvas_editor_1_1_live_logging_data_aggregator.html", null ]
+    ] ],
     [ "ScriptCanvas::Debugger::Message::NotificationVisitor", "class_script_canvas_1_1_debugger_1_1_message_1_1_notification_visitor.html", [
       [ "ScriptCanvas::Debugger::ClientTransceiver", "class_script_canvas_1_1_debugger_1_1_client_transceiver.html", null ]
     ] ],
@@ -557,6 +1156,11 @@ var hierarchy =
       [ "ScriptCanvas::Debugger::ServiceComponent", "class_script_canvas_1_1_debugger_1_1_service_component.html", null ]
     ] ],
     [ "ScriptCanvas::Debugger::ScriptTarget", "struct_script_canvas_1_1_debugger_1_1_script_target.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvas::Debugger::Logger", "class_script_canvas_1_1_debugger_1_1_logger.html", null ],
+      [ "ScriptCanvasEditor::LiveLoggingDataAggregator", "class_script_canvas_editor_1_1_live_logging_data_aggregator.html", null ],
+      [ "ScriptCanvasEditor::LiveLoggingWindowSession", "class_script_canvas_editor_1_1_live_logging_window_session.html", null ]
+    ] ],
     [ "ScriptCanvas::Debugger::Target", "struct_script_canvas_1_1_debugger_1_1_target.html", null ],
     [ "ScriptCanvas::Debugger::VariableChangeBreakpoint", "struct_script_canvas_1_1_debugger_1_1_variable_change_breakpoint.html", null ],
     [ "ScriptCanvas::DependencyReport", "struct_script_canvas_1_1_dependency_report.html", null ],
@@ -571,6 +1175,13 @@ var hierarchy =
     [ "ScriptCanvas::EditableVariableData", "class_script_canvas_1_1_editable_variable_data.html", null ],
     [ "ScriptCanvas::Endpoint", "class_script_canvas_1_1_endpoint.html", [
       [ "ScriptCanvas::NamedEndpoint", "class_script_canvas_1_1_named_endpoint.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvas::Nodes::Core::ForEach", "class_script_canvas_1_1_nodes_1_1_core_1_1_for_each.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasVariableReferenceDataInterface", "class_script_canvas_editor_1_1_script_canvas_variable_reference_data_interface.html", null ]
+    ] ],
+    [ "MultiHandler", null, [
+      [ "ScriptCanvasEditor::Widget::PropertyGrid", "class_script_canvas_editor_1_1_widget_1_1_property_grid.html", null ]
     ] ],
     [ "ScriptCanvas::Entity::RotateMethod", "class_script_canvas_1_1_entity_1_1_rotate_method.html", null ],
     [ "ScriptCanvas::Execution::ActivationData", "struct_script_canvas_1_1_execution_1_1_activation_data.html", null ],
@@ -594,6 +1205,9 @@ var hierarchy =
     [ "ScriptCanvas::Execution::StateStorage", "struct_script_canvas_1_1_execution_1_1_state_storage.html", null ],
     [ "ScriptCanvas::Execution::TypeErasedReference", "class_script_canvas_1_1_execution_1_1_type_erased_reference.html", null ],
     [ "ScriptCanvas::ExecutionLogData", "struct_script_canvas_1_1_execution_log_data.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::Reporter", "class_script_canvas_editor_1_1_reporter.html", null ]
+    ] ],
     [ "ScriptCanvas::ExecutionState", "class_script_canvas_1_1_execution_state.html", [
       [ "ScriptCanvas::ExecutionStateInterpreted", "class_script_canvas_1_1_execution_state_interpreted.html", [
         [ "ScriptCanvas::ExecutionStateInterpretedPerActivation", "class_script_canvas_1_1_execution_state_interpreted_per_activation.html", [
@@ -682,12 +1296,19 @@ var hierarchy =
       [ "ScriptCanvas::TaggedDataValue< t_Tag >", "struct_script_canvas_1_1_tagged_data_value.html", null ],
       [ "ScriptCanvas::TaggedDataValue< VariableChangeTag >", "struct_script_canvas_1_1_tagged_data_value.html", null ]
     ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvas::Connection", "class_script_canvas_1_1_connection.html", null ],
+      [ "ScriptCanvasEditor::NodelingDescriptorComponent", "class_script_canvas_editor_1_1_nodeling_descriptor_component.html", null ]
+    ] ],
     [ "ScriptCanvas::GraphScopedIdentifier< T >", "class_script_canvas_1_1_graph_scoped_identifier.html", null ],
     [ "ScriptCanvas::GraphUpdateReport", "struct_script_canvas_1_1_graph_update_report.html", null ],
     [ "ScriptCanvas::GraphVariable::Comparator", "class_script_canvas_1_1_graph_variable_1_1_comparator.html", null ],
     [ "Handler", null, [
       [ "ScriptCanvasEditor::EditorGraphVariableItemModel", "class_script_canvas_editor_1_1_editor_graph_variable_item_model.html", null ],
-      [ "ScriptCanvasEditor::EditorGraphVariableManagerComponent", "class_script_canvas_editor_1_1_editor_graph_variable_manager_component.html", null ]
+      [ "ScriptCanvasEditor::EditorGraphVariableManagerComponent", "class_script_canvas_editor_1_1_editor_graph_variable_manager_component.html", null ],
+      [ "ScriptCanvasEditor::GraphVariablesModel", "class_script_canvas_editor_1_1_graph_variables_model.html", null ],
+      [ "ScriptCanvasEditor::LocalVariablesListNodePaletteTreeItem", "class_script_canvas_editor_1_1_local_variables_list_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::VariableComboBoxDataModel", "class_script_canvas_editor_1_1_variable_combo_box_data_model.html", null ]
     ] ],
     [ "ScriptCanvas::GreyOutNodeEffect", "class_script_canvas_1_1_grey_out_node_effect.html", [
       [ "ScriptCanvas::UnusedNodeEvent", "class_script_canvas_1_1_unused_node_event.html", null ]
@@ -719,6 +1340,9 @@ var hierarchy =
       [ "ScriptCanvas::TaggedParent< OutputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ]
     ] ],
     [ "ScriptCanvas::LoggableEventVisitor", "class_script_canvas_1_1_loggable_event_visitor.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::Widget::LogTab", "class_script_canvas_editor_1_1_widget_1_1_log_tab.html", null ]
+    ] ],
     [ "ScriptCanvas::MethodConfiguration", "struct_script_canvas_1_1_method_configuration.html", null ],
     [ "ScriptCanvas::MethodOutputConfig", "struct_script_canvas_1_1_method_output_config.html", null ],
     [ "ScriptCanvas::ModifiableDatumView", "class_script_canvas_1_1_modifiable_datum_view.html", null ],
@@ -733,20 +1357,45 @@ var hierarchy =
       [ "ScriptCanvas::Nodeables::Time::DurationNodeable", "class_script_canvas_1_1_nodeables_1_1_time_1_1_duration_nodeable.html", null ],
       [ "ScriptCanvas::Nodes::LerpBetweenNodeable< t_Operand >", "class_script_canvas_1_1_nodes_1_1_lerp_between_nodeable.html", null ]
     ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::NodelingDescriptorComponent", "class_script_canvas_editor_1_1_nodeling_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvas::Nodes::NodeableNodeOverloaded", "class_script_canvas_1_1_nodes_1_1_nodeable_node_overloaded.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::AssetIdDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::BooleanDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::ComboBoxDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::EntityIdDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::NumericDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::StringDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::VectorDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::DynamicSlotComponent", "class_script_canvas_editor_1_1_dynamic_slot_component.html", null ],
+      [ "ScriptCanvasEditor::NodeDescriptorComponent", "class_script_canvas_editor_1_1_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< InterfaceType >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::SlotMappingComponent", "class_script_canvas_editor_1_1_slot_mapping_component.html", null ]
+    ] ],
+    [ "MultiHandler", null, [
+      [ "ScriptCanvasEditor::Widget::PropertyGrid", "class_script_canvas_editor_1_1_widget_1_1_property_grid.html", null ]
+    ] ],
     [ "ScriptCanvas::NodePropertyInterface", "class_script_canvas_1_1_node_property_interface.html", [
       [ "ScriptCanvas::TypedNodePropertyInterface< DataType >", "class_script_canvas_1_1_typed_node_property_interface.html", [
         [ "ScriptCanvas::TypedComboBoxNodePropertyInterface< DataType >", "class_script_canvas_1_1_typed_combo_box_node_property_interface.html", null ]
       ] ],
       [ "ScriptCanvas::TypedNodePropertyInterface< int >", "class_script_canvas_1_1_typed_node_property_interface.html", [
         [ "ScriptCanvas::TypedComboBoxNodePropertyInterface< int >", "class_script_canvas_1_1_typed_combo_box_node_property_interface.html", null ]
-      ] ]
+      ] ],
+      [ "ScriptCanvas::TypedNodePropertyInterface< ScriptCanvas::Data::StringType >", "class_script_canvas_1_1_typed_node_property_interface.html", null ]
     ] ],
     [ "ScriptCanvas::NodePropertyInterfaceListener", "class_script_canvas_1_1_node_property_interface_listener.html", [
       [ "ScriptCanvas::Nodeables::Time::BaseTimer", "class_script_canvas_1_1_nodeables_1_1_time_1_1_base_timer.html", null ],
       [ "ScriptCanvas::Nodes::Core::Internal::Nodeling", null, null ],
       [ "ScriptCanvas::Nodes::Internal::BaseTimerNode", null, null ],
       [ "ScriptCanvas::Nodes::Internal::ExpressionNodeBase", null, null ],
-      [ "ScriptCanvas::Nodes::Internal::StringFormatted", null, null ]
+      [ "ScriptCanvas::Nodes::Internal::StringFormatted", null, null ],
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< InterfaceType, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, int >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::StringDataInterface, ScriptCanvas::Data::StringType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ]
     ] ],
     [ "ScriptCanvas::NodeRegistry", "struct_script_canvas_1_1_node_registry.html", null ],
     [ "ScriptCanvas::NodeReplacementConfiguration", "struct_script_canvas_1_1_node_replacement_configuration.html", null ],
@@ -779,6 +1428,9 @@ var hierarchy =
     [ "ScriptCanvas::ScopedAuxiliaryEntityHandler", "class_script_canvas_1_1_scoped_auxiliary_entity_handler.html", null ],
     [ "ScriptCanvas::ScopedBatchOperation", "class_script_canvas_1_1_scoped_batch_operation.html", null ],
     [ "ScriptCanvas::ScriptCanvasRegistry", "class_script_canvas_1_1_script_canvas_registry.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
     [ "ScriptCanvas::ScriptEventGrammar::FunctionNodeToScriptEventResult", "struct_script_canvas_1_1_script_event_grammar_1_1_function_node_to_script_event_result.html", null ],
     [ "ScriptCanvas::ScriptEventGrammar::GraphToScriptEventsResult", "struct_script_canvas_1_1_script_event_grammar_1_1_graph_to_script_events_result.html", null ],
     [ "Handler", null, [
@@ -829,6 +1481,9 @@ var hierarchy =
     [ "ScriptCanvas::SourceDescription", "class_script_canvas_1_1_source_description.html", null ],
     [ "ScriptCanvas::SourceHandle", "class_script_canvas_1_1_source_handle.html", null ],
     [ "ScriptCanvas::SourceTree", "class_script_canvas_1_1_source_tree.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::ValidationData", "class_script_canvas_editor_1_1_validation_data.html", null ]
+    ] ],
     [ "ScriptCanvas::StepOverTag", "struct_script_canvas_1_1_step_over_tag.html", null ],
     [ "ScriptCanvas::StringMethods", "class_script_canvas_1_1_string_methods.html", null ],
     [ "ScriptCanvas::SubgraphInterfaceData", "struct_script_canvas_1_1_subgraph_interface_data.html", null ],
@@ -854,44 +1509,160 @@ var hierarchy =
     [ "ScriptCanvas::VariableData", "class_script_canvas_1_1_variable_data.html", null ],
     [ "ScriptCanvas::VariableId", "struct_script_canvas_1_1_variable_id.html", null ],
     [ "ScriptCanvas::VariableIdentifier", "struct_script_canvas_1_1_variable_identifier.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::VariableNodeDescriptorComponent", "class_script_canvas_editor_1_1_variable_node_descriptor_component.html", null ]
+    ] ],
     [ "ScriptCanvas::VariableNodeRequests", "class_script_canvas_1_1_variable_node_requests.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvas::Nodes::Core::GetVariableNode", "class_script_canvas_1_1_nodes_1_1_core_1_1_get_variable_node.html", null ],
+      [ "ScriptCanvas::Nodes::Core::SetVariableNode", "class_script_canvas_1_1_nodes_1_1_core_1_1_set_variable_node.html", null ],
+      [ "ScriptCanvas::Slot", "class_script_canvas_1_1_slot.html", null ],
+      [ "ScriptCanvasEditor::GetVariableNodePaletteTreeItem", "class_script_canvas_editor_1_1_get_variable_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::LocalVariableNodePaletteTreeItem", "class_script_canvas_editor_1_1_local_variable_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasGraphScopedVariableDataInterface", "class_script_canvas_editor_1_1_script_canvas_graph_scoped_variable_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasVariableReferenceDataInterface", "class_script_canvas_editor_1_1_script_canvas_variable_reference_data_interface.html", null ],
+      [ "ScriptCanvasEditor::SetVariableNodePaletteTreeItem", "class_script_canvas_editor_1_1_set_variable_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::VariableChangedNodePaletteTreeItem", "class_script_canvas_editor_1_1_variable_changed_node_palette_tree_item.html", null ],
+      [ "ScriptCanvasEditor::VariableNodeDescriptorComponent", "class_script_canvas_editor_1_1_variable_node_descriptor_component.html", null ],
+      [ "ScriptCanvasEditor::VariablePropertiesComponent", "class_script_canvas_editor_1_1_variable_properties_component.html", null ]
+    ] ],
+    [ "MultiHandler", null, [
+      [ "ScriptCanvasEditor::GraphVariablesModel", "class_script_canvas_editor_1_1_graph_variables_model.html", null ]
+    ] ],
     [ "ScriptCanvas::VersionConverters", "class_script_canvas_1_1_version_converters.html", null ],
     [ "ScriptCanvas::VersionData", "struct_script_canvas_1_1_version_data.html", null ],
     [ "ScriptCanvas::VersioningUtils", "class_script_canvas_1_1_versioning_utils.html", null ],
     [ "ScriptCanvas::VisualExtensionSlotConfiguration", "struct_script_canvas_1_1_visual_extension_slot_configuration.html", null ],
+    [ "ScriptCanvasBuilder::AssetHandlers", "struct_script_canvas_builder_1_1_asset_handlers.html", null ],
+    [ "ScriptCanvasBuilder::BuilderAssetResult", "struct_script_canvas_builder_1_1_builder_asset_result.html", null ],
+    [ "ScriptCanvasBuilder::BuilderSourceResult", "struct_script_canvas_builder_1_1_builder_source_result.html", null ],
+    [ "ScriptCanvasBuilder::BuildVariableOverrides", "class_script_canvas_builder_1_1_build_variable_overrides.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::Interpreter", "class_script_canvas_editor_1_1_interpreter.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::Configuration", "class_script_canvas_editor_1_1_configuration.html", null ]
+    ] ],
+    [ "ScriptCanvasBuilder::ProcessTranslationJobInput", "struct_script_canvas_builder_1_1_process_translation_job_input.html", null ],
+    [ "ScriptCanvasBuilder::SharedHandlers", "struct_script_canvas_builder_1_1_shared_handlers.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::Widget::CommandListDataModel", "class_script_canvas_editor_1_1_widget_1_1_command_list_data_model.html", null ]
+    ] ],
+    [ "ScriptCanvasEditor::CategoryInformation", "struct_script_canvas_editor_1_1_category_information.html", null ],
     [ "ScriptCanvasEditor::CreateNodeResult", "struct_script_canvas_editor_1_1_create_node_result.html", null ],
+    [ "ScriptCanvasEditor::DebugLogFilter", "class_script_canvas_editor_1_1_debug_log_filter.html", null ],
     [ "ScriptCanvasEditor::Deprecated::EditorScriptCanvasComponentVersionConverter", "class_script_canvas_editor_1_1_deprecated_1_1_editor_script_canvas_component_version_converter.html", null ],
     [ "ScriptCanvasEditor::Deprecated::ScriptCanvasAssetHolder", "class_script_canvas_editor_1_1_deprecated_1_1_script_canvas_asset_holder.html", null ],
+    [ "ScriptCanvasEditor::DurationSpec", "struct_script_canvas_editor_1_1_duration_spec.html", null ],
+    [ "ScriptCanvasEditor::EBusHandlerActionItem", "struct_script_canvas_editor_1_1_e_bus_handler_action_item.html", null ],
     [ "ScriptCanvasEditor::EditorGraph::LiveSlotInfo", "struct_script_canvas_editor_1_1_editor_graph_1_1_live_slot_info.html", null ],
     [ "ScriptCanvasEditor::EditorGraph::ReplacementInfo", "struct_script_canvas_editor_1_1_editor_graph_1_1_replacement_info.html", null ],
+    [ "ScriptCanvasEditor::EditorSettings::AutoSaveSettings", "class_script_canvas_editor_1_1_editor_settings_1_1_auto_save_settings.html", null ],
+    [ "ScriptCanvasEditor::EditorSettings::EdgePanningSettings", "class_script_canvas_editor_1_1_editor_settings_1_1_edge_panning_settings.html", null ],
+    [ "ScriptCanvasEditor::EditorSettings::EditorWorkspace::WorkspaceAssetSaveData", "struct_script_canvas_editor_1_1_editor_settings_1_1_editor_workspace_1_1_workspace_asset_save_data.html", null ],
+    [ "ScriptCanvasEditor::EditorSettings::ExperimentalSettings", "class_script_canvas_editor_1_1_editor_settings_1_1_experimental_settings.html", null ],
+    [ "ScriptCanvasEditor::EditorSettings::ShakeToDespliceSettings", "class_script_canvas_editor_1_1_editor_settings_1_1_shake_to_desplice_settings.html", null ],
+    [ "ScriptCanvasEditor::EditorSettings::StylingSettings", "class_script_canvas_editor_1_1_editor_settings_1_1_styling_settings.html", null ],
+    [ "ScriptCanvasEditor::EditorSettings::ToggleableConfiguration", "class_script_canvas_editor_1_1_editor_settings_1_1_toggleable_configuration.html", null ],
+    [ "ScriptCanvasEditor::EditorSettings::ZoomSettings", "class_script_canvas_editor_1_1_editor_settings_1_1_zoom_settings.html", null ],
+    [ "ScriptCanvasEditor::ExecutionIdentifier", "struct_script_canvas_editor_1_1_execution_identifier.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::Widget::LogPanel", "class_script_canvas_editor_1_1_widget_1_1_log_panel.html", null ]
+    ] ],
     [ "ScriptCanvasEditor::GraphStatisticsHelper", "class_script_canvas_editor_1_1_graph_statistics_helper.html", null ],
     [ "ScriptCanvasEditor::HandlerEventConfiguration", "struct_script_canvas_editor_1_1_handler_event_configuration.html", null ],
     [ "ScriptCanvasEditor::INodeReplacementRequests", "class_script_canvas_editor_1_1_i_node_replacement_requests.html", null ],
     [ "ScriptCanvasEditor::IState", "class_script_canvas_editor_1_1_i_state.html", [
       [ "ScriptCanvasEditor::State< Traits >", "class_script_canvas_editor_1_1_state.html", null ]
     ] ],
+    [ "ScriptCanvasEditor::LoadedInterpretedDependency", "struct_script_canvas_editor_1_1_loaded_interpreted_dependency.html", null ],
+    [ "ScriptCanvasEditor::LoadTestGraphResult", "struct_script_canvas_editor_1_1_load_test_graph_result.html", null ],
     [ "ScriptCanvasEditor::NodeIdentifierFactory", "class_script_canvas_editor_1_1_node_identifier_factory.html", null ],
     [ "ScriptCanvasEditor::NodeIdPair", "struct_script_canvas_editor_1_1_node_id_pair.html", null ],
+    [ "ScriptCanvasEditor::NodePaletteModelInformation", "struct_script_canvas_editor_1_1_node_palette_model_information.html", [
+      [ "ScriptCanvasEditor::CustomNodeModelInformation", "struct_script_canvas_editor_1_1_custom_node_model_information.html", null ],
+      [ "ScriptCanvasEditor::DataDrivenNodeModelInformation", "struct_script_canvas_editor_1_1_data_driven_node_model_information.html", null ],
+      [ "ScriptCanvasEditor::EBusHandlerNodeModelInformation", "struct_script_canvas_editor_1_1_e_bus_handler_node_model_information.html", [
+        [ "ScriptCanvasEditor::ScriptEventHandlerNodeModelInformation", "struct_script_canvas_editor_1_1_script_event_handler_node_model_information.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::EBusSenderNodeModelInformation", "struct_script_canvas_editor_1_1_e_bus_sender_node_model_information.html", [
+        [ "ScriptCanvasEditor::ScriptEventSenderNodeModelInformation", "struct_script_canvas_editor_1_1_script_event_sender_node_model_information.html", null ]
+      ] ],
+      [ "ScriptCanvasEditor::FunctionNodeModelInformation", "struct_script_canvas_editor_1_1_function_node_model_information.html", null ],
+      [ "ScriptCanvasEditor::GlobalMethodNodeModelInformation", "struct_script_canvas_editor_1_1_global_method_node_model_information.html", null ],
+      [ "ScriptCanvasEditor::MethodNodeModelInformation", "struct_script_canvas_editor_1_1_method_node_model_information.html", null ]
+    ] ],
+    [ "ScriptCanvasEditor::Nodes::DataDrivenNodeCreationData", "struct_script_canvas_editor_1_1_nodes_1_1_data_driven_node_creation_data.html", null ],
+    [ "ScriptCanvasEditor::Nodes::NodeReplacementConfiguration", "struct_script_canvas_editor_1_1_nodes_1_1_node_replacement_configuration.html", null ],
+    [ "ScriptCanvasEditor::Nodes::StyleConfiguration", "struct_script_canvas_editor_1_1_nodes_1_1_style_configuration.html", null ],
+    [ "ScriptCanvasEditor::OnSaveToast", "class_script_canvas_editor_1_1_on_save_toast.html", null ],
+    [ "ScriptCanvasEditor::RunGraphSpec", "struct_script_canvas_editor_1_1_run_graph_spec.html", null ],
+    [ "ScriptCanvasEditor::RunSpec", "struct_script_canvas_editor_1_1_run_spec.html", null ],
+    [ "ScriptCanvasEditor::SceneUndoState", "class_script_canvas_editor_1_1_scene_undo_state.html", null ],
+    [ "ScriptCanvasEditor::ScopedOutputSuppression", "struct_script_canvas_editor_1_1_scoped_output_suppression.html", null ],
+    [ "ScriptCanvasEditor::ScopedUndoBatch", "class_script_canvas_editor_1_1_scoped_undo_batch.html", null ],
     [ "ScriptCanvasEditor::StateTraits< Id >", "struct_script_canvas_editor_1_1_state_traits.html", null ],
+    [ "ScriptCanvasEditor::UndoCache", "class_script_canvas_editor_1_1_undo_cache.html", null ],
     [ "ScriptCanvasEditor::UndoData", "struct_script_canvas_editor_1_1_undo_data.html", null ],
     [ "ScriptCanvasEditor::UnitTestResult", "struct_script_canvas_editor_1_1_unit_test_result.html", null ],
     [ "ScriptCanvasEditor::UpgradeGraphConfig", "struct_script_canvas_editor_1_1_upgrade_graph_config.html", null ],
+    [ "ScriptCanvasEditor::ValidationEffect", "class_script_canvas_editor_1_1_validation_effect.html", [
+      [ "ScriptCanvasEditor::HighlightElementValidationEffect", "class_script_canvas_editor_1_1_highlight_element_validation_effect.html", null ],
+      [ "ScriptCanvasEditor::UnusedNodeValidationEffect", "class_script_canvas_editor_1_1_unused_node_validation_effect.html", null ]
+    ] ],
     [ "ScriptCanvasEditor::VariablePaletteRequests::VariableConfigurationInput", "struct_script_canvas_editor_1_1_variable_palette_requests_1_1_variable_configuration_input.html", null ],
     [ "ScriptCanvasEditor::VariablePaletteRequests::VariableConfigurationOutput", "struct_script_canvas_editor_1_1_variable_palette_requests_1_1_variable_configuration_output.html", null ],
+    [ "ScriptCanvasEditor::VersionExplorer::EditorKeepAlive", "class_script_canvas_editor_1_1_version_explorer_1_1_editor_keep_alive.html", null ],
+    [ "ScriptCanvasEditor::VersionExplorer::FileSaver", "class_script_canvas_editor_1_1_version_explorer_1_1_file_saver.html", null ],
+    [ "ScriptCanvasEditor::VersionExplorer::FileSaveResult", "struct_script_canvas_editor_1_1_version_explorer_1_1_file_save_result.html", null ],
+    [ "ScriptCanvasEditor::VersionExplorer::ModificationResult", "struct_script_canvas_editor_1_1_version_explorer_1_1_modification_result.html", null ],
+    [ "ScriptCanvasEditor::VersionExplorer::ModificationResults", "struct_script_canvas_editor_1_1_version_explorer_1_1_modification_results.html", null ],
+    [ "ScriptCanvasEditor::VersionExplorer::ModifyConfiguration", "struct_script_canvas_editor_1_1_version_explorer_1_1_modify_configuration.html", null ],
+    [ "ScriptCanvasEditor::VersionExplorer::ScanConfiguration", "struct_script_canvas_editor_1_1_version_explorer_1_1_scan_configuration.html", null ],
+    [ "ScriptCanvasEditor::VersionExplorer::ScanResult", "struct_script_canvas_editor_1_1_version_explorer_1_1_scan_result.html", null ],
+    [ "ScriptCanvasEditor::Widget::Command", "class_script_canvas_editor_1_1_widget_1_1_command.html", null ],
+    [ "ScriptCanvasEditor::Widget::CommandListDataModel::Entry", "struct_script_canvas_editor_1_1_widget_1_1_command_list_data_model_1_1_entry.html", null ],
+    [ "ScriptCanvasEditor::Widget::GraphTabMetadata", "struct_script_canvas_editor_1_1_widget_1_1_graph_tab_metadata.html", null ],
+    [ "ScriptCanvasEditor::Widget::NodePaletteWidget", "struct_script_canvas_editor_1_1_widget_1_1_node_palette_widget.html", null ],
+    [ "ScriptCanvasEditor::Widget::PropertyGrid::InstancesToDisplay", "struct_script_canvas_editor_1_1_widget_1_1_property_grid_1_1_instances_to_display.html", null ],
+    [ "ScriptCanvasEditor::Workspace", "class_script_canvas_editor_1_1_workspace.html", null ],
+    [ "ScriptCanvasEditorTools::Argument", "struct_script_canvas_editor_tools_1_1_argument.html", null ],
+    [ "ScriptCanvasEditorTools::Entry", "struct_script_canvas_editor_tools_1_1_entry.html", null ],
+    [ "ScriptCanvasEditorTools::EntryDetails", "struct_script_canvas_editor_tools_1_1_entry_details.html", null ],
+    [ "ScriptCanvasEditorTools::Method", "struct_script_canvas_editor_tools_1_1_method.html", null ],
+    [ "ScriptCanvasEditorTools::Slot", "struct_script_canvas_editor_tools_1_1_slot.html", null ],
+    [ "ScriptCanvasEditorTools::TranslationFormat", "struct_script_canvas_editor_tools_1_1_translation_format.html", null ],
+    [ "ScriptCanvasEditorTools::TranslationGeneration", "class_script_canvas_editor_tools_1_1_translation_generation.html", null ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::ScriptEventReceiverEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_event_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::ScriptEventReceiverEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_event_node_descriptor_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::ScriptEventReceiverNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component.html", null ]
+    ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Nodes::Core::SendScriptEvent", "class_script_canvas_1_1_nodes_1_1_core_1_1_send_script_event.html", null ]
     ] ],
-    [ "Handler", null, [
-      [ "ScriptCanvas::Debugger::Logger", "class_script_canvas_1_1_debugger_1_1_logger.html", null ]
+    [ "MultiHandler", null, [
+      [ "ScriptCanvasEditor::SlotMappingComponent", "class_script_canvas_editor_1_1_slot_mapping_component.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Graph", "class_script_canvas_1_1_graph.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvas::SystemComponent", "class_script_canvas_1_1_system_component.html", null ]
+      [ "ScriptCanvas::SystemComponent", "class_script_canvas_1_1_system_component.html", null ],
+      [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
     ] ],
     [ "t_Id", null, [
       [ "ScriptCanvas::NamedId< t_Id >", "class_script_canvas_1_1_named_id.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::TraceMessageComponent", "class_script_canvas_editor_1_1_trace_message_component.html", null ]
     ] ],
     [ "ScriptCanvas::Data::TraitsBase< AABBType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
       [ "ScriptCanvas::Data::Traits< AABBType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_a_a_b_b_type_01_4.html", [
@@ -986,16 +1757,38 @@ var hierarchy =
       ] ]
     ] ],
     [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::UndoHelper", "class_script_canvas_editor_1_1_undo_helper.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::NodePaletteModel", "class_script_canvas_editor_1_1_node_palette_model.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasAssetBrowserModel", "class_script_canvas_editor_1_1_script_canvas_asset_browser_model.html", null ],
+      [ "ScriptCanvasEditor::VersionExplorer::Controller", "class_script_canvas_editor_1_1_version_explorer_1_1_controller.html", null ],
+      [ "ScriptCanvasEditor::Widget::ScriptCanvasRootPaletteTreeItem", "class_script_canvas_editor_1_1_widget_1_1_script_canvas_root_palette_tree_item.html", null ]
+    ] ],
+    [ "Handler", null, [
       [ "ScriptCanvas::Graph", "class_script_canvas_1_1_graph.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::VariableDockWidget", "class_script_canvas_editor_1_1_variable_dock_widget.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvasEditor::VariableNodeDescriptorComponent", "class_script_canvas_editor_1_1_variable_node_descriptor_component.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Nodes::Core::GetVariableNode", "class_script_canvas_1_1_nodes_1_1_core_1_1_get_variable_node.html", null ],
       [ "ScriptCanvas::Nodes::Core::SetVariableNode", "class_script_canvas_1_1_nodes_1_1_core_1_1_set_variable_node.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvas::Nodes::Core::GetVariableNode", "class_script_canvas_1_1_nodes_1_1_core_1_1_get_variable_node.html", null ],
-      [ "ScriptCanvas::Nodes::Core::SetVariableNode", "class_script_canvas_1_1_nodes_1_1_core_1_1_set_variable_node.html", null ],
-      [ "ScriptCanvas::Slot", "class_script_canvas_1_1_slot.html", null ]
+      [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
     ] ],
     [ "MultiHandler", null, [
       [ "ScriptCanvas::GraphVariableManagerComponent", "class_script_canvas_1_1_graph_variable_manager_component.html", null ]
@@ -1014,5 +1807,9 @@ var hierarchy =
     ] ],
     [ "t_Parent", null, [
       [ "ScriptCanvas::TaggedParent< t_Tag, t_Parent >", "struct_script_canvas_1_1_tagged_parent.html", null ]
+    ] ],
+    [ "InterfaceType", null, [
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< InterfaceType >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< InterfaceType, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ]
     ] ]
 ];

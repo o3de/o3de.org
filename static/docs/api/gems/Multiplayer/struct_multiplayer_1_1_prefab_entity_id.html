@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -84,6 +84,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <tr class="memitem:ab82fa9e783eb86fa26b46caee5075583"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab82fa9e783eb86fa26b46caee5075583"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> (AzNetworking::ISerializer &amp;serializer)</td></tr>
 <tr class="separator:ab82fa9e783eb86fa26b46caee5075583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae96fdd93c8dcdf7d4f2abe89eeb1cb5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae96fdd93c8dcdf7d4f2abe89eeb1cb5d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a>,&quot;{EFD37465-CCAC-4E87-A825-41B4010A2C75}&quot;)</td></tr>
+<tr class="separator:ae96fdd93c8dcdf7d4f2abe89eeb1cb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1e547574c81ed7ee3d08cf0b623b65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e1e547574c81ed7ee3d08cf0b623b65"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PrefabEntityId</b> (AZ::Name name, uint32_t entityOffset=AllIndices)</td></tr>
+<tr class="separator:a9e1e547574c81ed7ee3d08cf0b623b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4d007eebba7afe9bce8ab1db54411f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b4d007eebba7afe9bce8ab1db54411f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;rhs) const </td></tr>
+<tr class="separator:a9b4d007eebba7afe9bce8ab1db54411f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49000d4b7167c65660cc39bac9c474d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae49000d4b7167c65660cc39bac9c474d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;rhs) const </td></tr>
+<tr class="separator:ae49000d4b7167c65660cc39bac9c474d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82fa9e783eb86fa26b46caee5075583"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab82fa9e783eb86fa26b46caee5075583"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> (AzNetworking::ISerializer &amp;serializer)</td></tr>
+<tr class="separator:ab82fa9e783eb86fa26b46caee5075583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -102,14 +117,15 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityOffset</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5a8956a30aede9c301a78daa03d37b5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a8956a30aede9c301a78daa03d37b5e"></a>
+<tr class="memitem:a4235be52c650919cd3fc526854805c06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4235be52c650919cd3fc526854805c06"></a>
 static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>AllIndices</b> = AZStd::numeric_limits&lt;uint32_t&gt;::max()</td></tr>
-<tr class="separator:a5a8956a30aede9c301a78daa03d37b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4235be52c650919cd3fc526854805c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure for identifying a specific entity within a spawnable. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following files:<ul>
 <li>Gems/Multiplayer/Code/Include/Multiplayer/MultiplayerTypes.h</li>
+<li>Gems/Multiplayer/Code/Source/MultiplayerTypes.h</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -117,7 +133,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Multiplayer</b></li><li class="navelem"><a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:48 for Open 3D Engine Multiplayer Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:22 for Open 3D Engine Multiplayer Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

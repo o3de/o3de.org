@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -93,7 +93,7 @@ Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::
 <tr class="memitem:a78d17cb8caf5c180c50c42a466712717"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78d17cb8caf5c180c50c42a466712717"></a>
 AZStd::vector&lt; AZStd::vector<br class="typebreak"/>
 &lt; SkinnedMeshOutputVertexOffsets &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a78d17cb8caf5c180c50c42a466712717">m_outputStreamOffsetsInBytes</a></td></tr>
-<tr class="memdesc:a78d17cb8caf5c180c50c42a466712717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets into the skinned vertex data which are used by SkinnedMeshDispatchItem to target the correct location to store the skinning results. <br/></td></tr>
+<tr class="memdesc:a78d17cb8caf5c180c50c42a466712717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offsets into the skinned vertex data which are used by <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_dispatch_item.html" title="Holds and manages an RHI DispatchItem for a specific skinned mesh, and the resources that are needed ...">SkinnedMeshDispatchItem</a> to target the correct location to store the skinning results. <br/></td></tr>
 <tr class="separator:a78d17cb8caf5c180c50c42a466712717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f4f681581bc3d36e976f6b25f3e721d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f4f681581bc3d36e976f6b25f3e721d"></a>
 AZStd::vector&lt; AZStd::vector<br class="typebreak"/>
@@ -114,7 +114,7 @@ AZStd::vector&lt; AZStd::vector<br class="typebreak"/>
 <tr class="separator:a55cd0edc29cf51ebc411cd7175317db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> contains the data that is needed to represent the output from skinning a single instance of a skinned mesh. It does not contain the actual skinned vertex data, but rather views into the buffers that do contain the data, which are owned by the SkinnedMeshOutputStreamManager </p>
+<div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> contains the data that is needed to represent the output from skinning a single instance of a skinned mesh. It does not contain the actual skinned vertex data, but rather views into the buffers that do contain the data, which are owned by the <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_output_stream_manager.html">SkinnedMeshOutputStreamManager</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a0317a708b7abbbd0b4ac4bbb636f818a"></a>
 <div class="memitem">
@@ -128,7 +128,7 @@ AZStd::vector&lt; AZStd::vector<br class="typebreak"/>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Typically, when a <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> goes out of scope and the memory is freed, the SkinnedMeshOutputStreamManager will signal an event indicating more memory is available If the creation of a <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> fails part way through after some memory has already been allocated, calling SupressSignalOnDeallocate before releasing the <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> will prevent this event since there is not really any new memory available that wasn't available before </p>
+<p>Typically, when a <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> goes out of scope and the memory is freed, the <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_output_stream_manager.html">SkinnedMeshOutputStreamManager</a> will signal an event indicating more memory is available If the creation of a <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> fails part way through after some memory has already been allocated, calling SupressSignalOnDeallocate before releasing the <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a> will prevent this event since there is not really any new memory available that wasn't available before </p>
 
 </div>
 </div>
@@ -142,7 +142,7 @@ AZStd::vector&lt; AZStd::vector<br class="typebreak"/>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Virtual addresses that represent the location of the data within the skinned mesh output stream. When they are released, they automatically mark the memory as freed so the SkinnedMeshOutputStreamManager can re-purpose the memory </p>
+<p>Virtual addresses that represent the location of the data within the skinned mesh output stream. When they are released, they automatically mark the memory as freed so the <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_output_stream_manager.html">SkinnedMeshOutputStreamManager</a> can re-purpose the memory </p>
 
 </div>
 </div>
@@ -168,7 +168,7 @@ AZStd::vector&lt; AZStd::vector<br class="typebreak"/>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>Render</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html">SkinnedMeshInstance</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:41 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:03 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

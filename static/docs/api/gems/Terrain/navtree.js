@@ -7,7 +7,9 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ]
       ] ]
     ] ]
   ] ]
@@ -15,7 +17,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"class_terrain_1_1_terrain_clipmap_manager.html#a69417b0be7a36adb5fe9d930e58db595",
+"class_terrain_1_1_terrain_physics_collider_component.html#a5d1de97e57b71cb12ca18d27d52ad6c3",
+"class_terrain_1_1_vector2i.html#a0c618b6a9f8afbb5e16770e107dcb87f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

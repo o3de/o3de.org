@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine LyShine Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -63,6 +63,8 @@ $(document).ready(function(){initNavTree('class_i_ly_shine.html','');});
  <a href="class_i_ly_shine.html#details">More...</a></p>
 
 <p><code>#include &lt;ILyShine.h&gt;</code></p>
+
+<p>Inherited by <a class="el" href="class_c_ly_shine.html">CLyShine</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -180,6 +182,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Create an empty UI Canvas (in game) </p>
 <p>The system keeps track of all the loaded canvases and unloads them on game exit. </p>
 
+<p>Implemented in <a class="el" href="class_c_ly_shine.html#a0f93c5e01c4a1eb55246ecd67714f011">CLyShine</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0918d855bd606f336f016e57e02db21f"></a>
@@ -207,6 +211,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Create an empty UI Canvas (for the UI editor) </p>
 <p>The editor keeps track of the canvases it has open. </p>
 
+<p>Implemented in <a class="el" href="class_c_ly_shine.html#a38ad724c2b7bca904ae89735206a2c9c">CLyShine</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6d56ebff032e01978d9cbe4b4efabe14"></a>
@@ -231,6 +237,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Get a loaded canvas by CanvasId NOTE: this only searches canvases loaded in the game (not the editor) </p>
+
+<p>Implemented in <a class="el" href="class_c_ly_shine.html#ad5e458dacef95077bd8ffee69f23e9b9">CLyShine</a>.</p>
 
 </div>
 </div>
@@ -257,6 +265,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Get a loaded canvas by path name NOTE: this only searches canvases loaded in the game (not the editor) </p>
 
+<p>Implemented in <a class="el" href="class_c_ly_shine.html#ad10602cdce7d9d90595f2594d858dfc5">CLyShine</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5add62fe218f5c0576e22670b3bc2f86"></a>
@@ -280,6 +290,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Called when a load screen is finished displaying (when a level load is complete). Used to mark all render graphs dirty in case the loaded canvases were already rendered before their textures were done loading. This happens when a load screen is being rendered during a level load. When other canvases associated with the level are loaded, they also get rendered by the UiLoadScreenComponent, but their texture loading is delayed until further down the level load process. Once a canvas is rendered, its render graph's dirty flag is cleared, so the render graph needs to be marked dirty again after the textures are loaded </p>
+
+<p>Implemented in <a class="el" href="class_c_ly_shine.html#a8bc525a9cd528958bc1bf8c8129abbf7">CLyShine</a>.</p>
 
 </div>
 </div>
@@ -312,6 +324,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="class_c_ly_shine.html#a82182b1591d0b1a694f08746442a47e0">CLyShine</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -323,7 +337,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_i_ly_shine.html">ILyShine</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:47 for Open 3D Engine LyShine Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:20 for Open 3D Engine LyShine Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

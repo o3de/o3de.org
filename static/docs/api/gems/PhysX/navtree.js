@@ -16,8 +16,8 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
@@ -30,7 +30,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_phys_x_1_1_pipeline_1_1_mesh_asset.html#a85105e7c2a033b78439ece4c63472051"
+"class_phys_x_1_1_character_controller_component.html#a3d53fb841e7c9653cdaa6e539d2fbaaa",
+"class_phys_x_1_1_default_world_component.html#ac189a30a3a88190268b6699773459fbd",
+"class_phys_x_1_1_editor_joint_config.html#a6d78cf92269f686a838d380303b2132b",
+"class_phys_x_1_1_force_local_space_requests.html#afc9761463ce69b808ce6c8c1af1183a9",
+"class_phys_x_1_1_joints_sub_component_mode_linear_float.html#a9545853126f981b939d53a4282377e41",
+"class_phys_x_1_1_phys_x_settings_registry_manager.html",
+"class_phys_x_1_1_pipeline_1_1_triangle_mesh_asset_params.html#aba0ba8201e90d811528e1e74087a43c4",
+"class_phys_x_1_1_scene_simulation_event_callback.html#a5c0a2b675318cebcdb97b8aa20c7bc94",
+"struct_numerical_methods_1_1_eigenanalysis_1_1_eigenpair.html#a0e778b35d7af7d211e93c8ab597b2241",
+"struct_phys_x_1_1_joint_limit_properties.html#a0a8856b74e83585683dd2b7edd02b914"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

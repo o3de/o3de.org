@@ -8,6 +8,7 @@ var hierarchy =
       [ "ScriptCanvas::Developer::Nodes::MockNodeConfig", "struct_script_canvas_1_1_developer_1_1_nodes_1_1_mock_node_config.html", null ]
     ] ],
     [ "EBusTraits", null, [
+      [ "ScriptCanvas::Developer::EditorAutomationTestDialogRequests", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog_requests.html", null ],
       [ "ScriptCanvas::Developer::Nodes::MockDescriptorNotifications", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock_descriptor_notifications.html", null ],
       [ "ScriptCanvas::Developer::Nodes::MockDescriptorRequests", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock_descriptor_requests.html", null ]
     ] ],
@@ -15,7 +16,36 @@ var hierarchy =
       [ "ScriptCanvas::Developer::ScriptCanvasDeveloperModule", "class_script_canvas_1_1_developer_1_1_script_canvas_developer_module.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "ScriptCanvas::Developer::EditorAutomationTest", "class_script_canvas_1_1_developer_1_1_editor_automation_test.html", null ]
+      [ "ScriptCanvas::Developer::EditorAutomationTest", "class_script_canvas_1_1_developer_1_1_editor_automation_test.html", [
+        [ "ScriptCanvas::Developer::AltClickDeleteTest", "class_script_canvas_1_1_developer_1_1_alt_click_delete_test.html", null ],
+        [ "ScriptCanvas::Developer::CreateCategoryTest", "class_script_canvas_1_1_developer_1_1_create_category_test.html", null ],
+        [ "ScriptCanvas::Developer::CreateDragDropExecutionSpliceNodeTest", "class_script_canvas_1_1_developer_1_1_create_drag_drop_execution_splice_node_test.html", null ],
+        [ "ScriptCanvas::Developer::CreateExecutionSplicedNodeTest", "class_script_canvas_1_1_developer_1_1_create_execution_spliced_node_test.html", null ],
+        [ "ScriptCanvas::Developer::CreateFunctionTest", "class_script_canvas_1_1_developer_1_1_create_function_test.html", null ],
+        [ "ScriptCanvas::Developer::CreateGraphTest", "class_script_canvas_1_1_developer_1_1_create_graph_test.html", null ],
+        [ "ScriptCanvas::Developer::CreateGroupTest", "class_script_canvas_1_1_developer_1_1_create_group_test.html", null ],
+        [ "ScriptCanvas::Developer::CreateHelloWorldFromContextMenu", "class_script_canvas_1_1_developer_1_1_create_hello_world_from_context_menu.html", null ],
+        [ "ScriptCanvas::Developer::CreateHelloWorldFromPalette", "class_script_canvas_1_1_developer_1_1_create_hello_world_from_palette.html", null ],
+        [ "ScriptCanvas::Developer::CreateNodeFromContextMenuTest", "class_script_canvas_1_1_developer_1_1_create_node_from_context_menu_test.html", null ],
+        [ "ScriptCanvas::Developer::CreateNodeFromPaletteTest", "class_script_canvas_1_1_developer_1_1_create_node_from_palette_test.html", null ],
+        [ "ScriptCanvas::Developer::CutCopyPasteDuplicateTest", "class_script_canvas_1_1_developer_1_1_cut_copy_paste_duplicate_test.html", null ],
+        [ "ScriptCanvas::Developer::DuplicateVariableNameTest", "class_script_canvas_1_1_developer_1_1_duplicate_variable_name_test.html", null ],
+        [ "ScriptCanvas::Developer::GroupManipulationTest", "class_script_canvas_1_1_developer_1_1_group_manipulation_test.html", null ],
+        [ "ScriptCanvas::Developer::ManuallyCreateVariableTest", "class_script_canvas_1_1_developer_1_1_manually_create_variable_test.html", [
+          [ "ScriptCanvas::Developer::CreateNamedVariableTest", "class_script_canvas_1_1_developer_1_1_create_named_variable_test.html", null ]
+        ] ],
+        [ "ScriptCanvas::Developer::ModifyNumericInputTest", "class_script_canvas_1_1_developer_1_1_modify_numeric_input_test.html", null ],
+        [ "ScriptCanvas::Developer::ModifyStringInputTest", "class_script_canvas_1_1_developer_1_1_modify_string_input_test.html", null ],
+        [ "ScriptCanvas::Developer::OpenMenuTest", "class_script_canvas_1_1_developer_1_1_open_menu_test.html", null ],
+        [ "ScriptCanvas::Developer::RapidVariableCreationDeletionTest", "class_script_canvas_1_1_developer_1_1_rapid_variable_creation_deletion_test.html", null ],
+        [ "ScriptCanvas::Developer::ToggleBoolInputTest", "class_script_canvas_1_1_developer_1_1_toggle_bool_input_test.html", null ],
+        [ "ScriptCanvas::Developer::VariableLifeCycleTest", "class_script_canvas_1_1_developer_1_1_variable_life_cycle_test.html", null ],
+        [ "ScriptCanvas::Developer::WriteTextToInput", "class_script_canvas_1_1_developer_1_1_write_text_to_input.html", null ]
+      ] ],
+      [ "ScriptCanvas::Developer::EditorAutomationTestDialog", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "ScriptCanvas::Developer::EditorAutomationTestDialog", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog.html", null ]
     ] ],
     [ "Handler", null, [
       [ "ScriptCanvas::Developer::WaitForNewGraphAction", "class_script_canvas_1_1_developer_1_1_wait_for_new_graph_action.html", null ]
@@ -29,6 +59,7 @@ var hierarchy =
       [ "ScriptCanvas::Developer::Nodes::Mock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock.html", null ]
     ] ],
     [ "Handler", null, [
+      [ "ScriptCanvas::Developer::AltClickDeleteTest", "class_script_canvas_1_1_developer_1_1_alt_click_delete_test.html", null ],
       [ "ScriptCanvas::Developer::AltClickSceneElementAction", "class_script_canvas_1_1_developer_1_1_alt_click_scene_element_action.html", null ],
       [ "ScriptCanvas::Developer::CoupleNodesAction", "class_script_canvas_1_1_developer_1_1_couple_nodes_action.html", null ],
       [ "ScriptCanvas::Developer::CreateCategoryFromNodePaletteAction", "class_script_canvas_1_1_developer_1_1_create_category_from_node_palette_action.html", null ],
@@ -37,6 +68,7 @@ var hierarchy =
       [ "ScriptCanvas::Developer::CreateNodeFromPaletteAction", "class_script_canvas_1_1_developer_1_1_create_node_from_palette_action.html", null ],
       [ "ScriptCanvas::Developer::CreateNodeFromProposalAction", "class_script_canvas_1_1_developer_1_1_create_node_from_proposal_action.html", null ],
       [ "ScriptCanvas::Developer::CreateVariableNodeFromGraphPalette", "class_script_canvas_1_1_developer_1_1_create_variable_node_from_graph_palette.html", null ],
+      [ "ScriptCanvas::Developer::CutCopyPasteDuplicateTest", "class_script_canvas_1_1_developer_1_1_cut_copy_paste_duplicate_test.html", null ],
       [ "ScriptCanvas::Developer::Nodes::WrapperMock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock.html", null ]
     ] ],
     [ "MultiHandler", null, [
@@ -47,6 +79,12 @@ var hierarchy =
     ] ],
     [ "Node", null, [
       [ "ScriptCanvas::Developer::Nodes::Mock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock.html", null ]
+    ] ],
+    [ "QAbstractItemModel", null, [
+      [ "ScriptCanvas::Developer::TestListModel", "class_script_canvas_1_1_developer_1_1_test_list_model.html", null ]
+    ] ],
+    [ "QDialog", null, [
+      [ "ScriptCanvas::Developer::EditorAutomationTestDialog", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog.html", null ]
     ] ],
     [ "ScriptCanvas::Developer::EditorAutomationAction", "class_script_canvas_1_1_developer_1_1_editor_automation_action.html", [
       [ "ScriptCanvas::Developer::CenterOnScenePointAction", "class_script_canvas_1_1_developer_1_1_center_on_scene_point_action.html", null ],
@@ -116,6 +154,8 @@ var hierarchy =
           [ "ScriptCanvas::Developer::GetLastConnection", "class_script_canvas_1_1_developer_1_1_get_last_connection.html", null ]
         ] ],
         [ "ScriptCanvas::Developer::DeleteVariableRowFromPaletteState", "class_script_canvas_1_1_developer_1_1_delete_variable_row_from_palette_state.html", null ],
+        [ "ScriptCanvas::Developer::EditStringLike::ValueInNodeState", "class_script_canvas_1_1_developer_1_1_edit_string_like_1_1_value_in_node_state.html", null ],
+        [ "ScriptCanvas::Developer::EditStringLike::VariableInPaletteState", "class_script_canvas_1_1_developer_1_1_edit_string_like_1_1_variable_in_palette_state.html", null ],
         [ "ScriptCanvas::Developer::MouseToNodePropertyEditorState", "class_script_canvas_1_1_developer_1_1_mouse_to_node_property_editor_state.html", null ],
         [ "ScriptCanvas::Developer::SceneMouseDragState", "class_script_canvas_1_1_developer_1_1_scene_mouse_drag_state.html", null ],
         [ "ScriptCanvas::Developer::SceneMouseMoveState", "class_script_canvas_1_1_developer_1_1_scene_mouse_move_state.html", null ],
@@ -126,11 +166,16 @@ var hierarchy =
       [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateFunctionGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
         [ "ScriptCanvas::Developer::CreateFunctionGraphState", "class_script_canvas_1_1_developer_1_1_create_function_graph_state.html", null ]
       ] ],
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateGraphTest_CreateGraphHotKeyStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", null ],
       [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateRuntimeGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
         [ "ScriptCanvas::Developer::CreateRuntimeGraphState", "class_script_canvas_1_1_developer_1_1_create_runtime_graph_state.html", null ]
       ] ],
       [ "ScriptCanvas::Developer::StaticIdAutomationState< ForceCloseActiveGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
         [ "ScriptCanvas::Developer::ForceCloseActiveGraphState", "class_script_canvas_1_1_developer_1_1_force_close_active_graph_state.html", null ]
+      ] ],
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< OpenMenuTest_OpenMenuStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", null ],
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< WriteToLineEditStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
+        [ "ScriptCanvas::Developer::WriteToLineEditState", "class_script_canvas_1_1_developer_1_1_write_to_line_edit_state.html", null ]
       ] ]
     ] ],
     [ "ScriptCanvas::Developer::FindPositionOffsets", "struct_script_canvas_1_1_developer_1_1_find_position_offsets.html", null ],

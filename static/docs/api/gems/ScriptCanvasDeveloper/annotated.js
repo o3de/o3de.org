@@ -2,6 +2,10 @@ var annotated =
 [
     [ "ScriptCanvas", null, [
       [ "Developer", null, [
+        [ "EditStringLike", null, [
+          [ "VariableInPaletteState", "class_script_canvas_1_1_developer_1_1_edit_string_like_1_1_variable_in_palette_state.html", "class_script_canvas_1_1_developer_1_1_edit_string_like_1_1_variable_in_palette_state" ],
+          [ "ValueInNodeState", "class_script_canvas_1_1_developer_1_1_edit_string_like_1_1_value_in_node_state.html", "class_script_canvas_1_1_developer_1_1_edit_string_like_1_1_value_in_node_state" ]
+        ] ],
         [ "Nodes", null, [
           [ "SlotConfig", "struct_script_canvas_1_1_developer_1_1_nodes_1_1_slot_config.html", "struct_script_canvas_1_1_developer_1_1_nodes_1_1_slot_config" ],
           [ "MockNodeConfig", "struct_script_canvas_1_1_developer_1_1_nodes_1_1_mock_node_config.html", "struct_script_canvas_1_1_developer_1_1_nodes_1_1_mock_node_config" ],
@@ -10,8 +14,6 @@ var annotated =
           [ "MockDescriptorNotifications", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock_descriptor_notifications.html", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock_descriptor_notifications" ],
           [ "WrapperMock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock.html", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock" ]
         ] ],
-        [ "SystemComponent", "class_script_canvas_1_1_developer_1_1_system_component.html", "class_script_canvas_1_1_developer_1_1_system_component" ],
-        [ "ScriptCanvasDeveloperModule", "class_script_canvas_1_1_developer_1_1_script_canvas_developer_module.html", "class_script_canvas_1_1_developer_1_1_script_canvas_developer_module" ],
         [ "EditorAutomationAction", "class_script_canvas_1_1_developer_1_1_editor_automation_action.html", "class_script_canvas_1_1_developer_1_1_editor_automation_action" ],
         [ "SimulateKeyAction", "class_script_canvas_1_1_developer_1_1_simulate_key_action.html", "class_script_canvas_1_1_developer_1_1_simulate_key_action" ],
         [ "KeyPressAction", "class_script_canvas_1_1_developer_1_1_key_press_action.html", "class_script_canvas_1_1_developer_1_1_key_press_action" ],
@@ -84,7 +86,36 @@ var annotated =
         [ "StaticIdAutomationState", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", "class_script_canvas_1_1_developer_1_1_static_id_automation_state" ],
         [ "NamedAutomationState", "class_script_canvas_1_1_developer_1_1_named_automation_state.html", "class_script_canvas_1_1_developer_1_1_named_automation_state" ],
         [ "CustomActionState", "class_script_canvas_1_1_developer_1_1_custom_action_state.html", "class_script_canvas_1_1_developer_1_1_custom_action_state" ],
-        [ "EditorAutomationTest", "class_script_canvas_1_1_developer_1_1_editor_automation_test.html", "class_script_canvas_1_1_developer_1_1_editor_automation_test" ]
+        [ "EditorAutomationTest", "class_script_canvas_1_1_developer_1_1_editor_automation_test.html", "class_script_canvas_1_1_developer_1_1_editor_automation_test" ],
+        [ "EditorAutomationTestDialogRequests", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog_requests.html", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog_requests" ],
+        [ "TestListModel", "class_script_canvas_1_1_developer_1_1_test_list_model.html", "class_script_canvas_1_1_developer_1_1_test_list_model" ],
+        [ "EditorAutomationTestDialog", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog.html", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog" ],
+        [ "OpenMenuTest", "class_script_canvas_1_1_developer_1_1_open_menu_test.html", "class_script_canvas_1_1_developer_1_1_open_menu_test" ],
+        [ "WriteToLineEditState", "class_script_canvas_1_1_developer_1_1_write_to_line_edit_state.html", "class_script_canvas_1_1_developer_1_1_write_to_line_edit_state" ],
+        [ "WriteTextToInput", "class_script_canvas_1_1_developer_1_1_write_text_to_input.html", "class_script_canvas_1_1_developer_1_1_write_text_to_input" ],
+        [ "CreateGraphTest", "class_script_canvas_1_1_developer_1_1_create_graph_test.html", "class_script_canvas_1_1_developer_1_1_create_graph_test" ],
+        [ "CreateFunctionTest", "class_script_canvas_1_1_developer_1_1_create_function_test.html", "class_script_canvas_1_1_developer_1_1_create_function_test" ],
+        [ "CreateGroupTest", "class_script_canvas_1_1_developer_1_1_create_group_test.html", "class_script_canvas_1_1_developer_1_1_create_group_test" ],
+        [ "GroupManipulationTest", "class_script_canvas_1_1_developer_1_1_group_manipulation_test.html", "class_script_canvas_1_1_developer_1_1_group_manipulation_test" ],
+        [ "AltClickDeleteTest", "class_script_canvas_1_1_developer_1_1_alt_click_delete_test.html", "class_script_canvas_1_1_developer_1_1_alt_click_delete_test" ],
+        [ "CutCopyPasteDuplicateTest", "class_script_canvas_1_1_developer_1_1_cut_copy_paste_duplicate_test.html", "class_script_canvas_1_1_developer_1_1_cut_copy_paste_duplicate_test" ],
+        [ "CreateNodeFromPaletteTest", "class_script_canvas_1_1_developer_1_1_create_node_from_palette_test.html", "class_script_canvas_1_1_developer_1_1_create_node_from_palette_test" ],
+        [ "CreateNodeFromContextMenuTest", "class_script_canvas_1_1_developer_1_1_create_node_from_context_menu_test.html", "class_script_canvas_1_1_developer_1_1_create_node_from_context_menu_test" ],
+        [ "CreateHelloWorldFromPalette", "class_script_canvas_1_1_developer_1_1_create_hello_world_from_palette.html", "class_script_canvas_1_1_developer_1_1_create_hello_world_from_palette" ],
+        [ "CreateHelloWorldFromContextMenu", "class_script_canvas_1_1_developer_1_1_create_hello_world_from_context_menu.html", "class_script_canvas_1_1_developer_1_1_create_hello_world_from_context_menu" ],
+        [ "CreateCategoryTest", "class_script_canvas_1_1_developer_1_1_create_category_test.html", "class_script_canvas_1_1_developer_1_1_create_category_test" ],
+        [ "CreateExecutionSplicedNodeTest", "class_script_canvas_1_1_developer_1_1_create_execution_spliced_node_test.html", "class_script_canvas_1_1_developer_1_1_create_execution_spliced_node_test" ],
+        [ "CreateDragDropExecutionSpliceNodeTest", "class_script_canvas_1_1_developer_1_1_create_drag_drop_execution_splice_node_test.html", "class_script_canvas_1_1_developer_1_1_create_drag_drop_execution_splice_node_test" ],
+        [ "ManuallyCreateVariableTest", "class_script_canvas_1_1_developer_1_1_manually_create_variable_test.html", "class_script_canvas_1_1_developer_1_1_manually_create_variable_test" ],
+        [ "CreateNamedVariableTest", "class_script_canvas_1_1_developer_1_1_create_named_variable_test.html", "class_script_canvas_1_1_developer_1_1_create_named_variable_test" ],
+        [ "DuplicateVariableNameTest", "class_script_canvas_1_1_developer_1_1_duplicate_variable_name_test.html", "class_script_canvas_1_1_developer_1_1_duplicate_variable_name_test" ],
+        [ "ModifyNumericInputTest", "class_script_canvas_1_1_developer_1_1_modify_numeric_input_test.html", "class_script_canvas_1_1_developer_1_1_modify_numeric_input_test" ],
+        [ "ModifyStringInputTest", "class_script_canvas_1_1_developer_1_1_modify_string_input_test.html", "class_script_canvas_1_1_developer_1_1_modify_string_input_test" ],
+        [ "ToggleBoolInputTest", "class_script_canvas_1_1_developer_1_1_toggle_bool_input_test.html", "class_script_canvas_1_1_developer_1_1_toggle_bool_input_test" ],
+        [ "VariableLifeCycleTest", "class_script_canvas_1_1_developer_1_1_variable_life_cycle_test.html", "class_script_canvas_1_1_developer_1_1_variable_life_cycle_test" ],
+        [ "RapidVariableCreationDeletionTest", "class_script_canvas_1_1_developer_1_1_rapid_variable_creation_deletion_test.html", "class_script_canvas_1_1_developer_1_1_rapid_variable_creation_deletion_test" ],
+        [ "SystemComponent", "class_script_canvas_1_1_developer_1_1_system_component.html", "class_script_canvas_1_1_developer_1_1_system_component" ],
+        [ "ScriptCanvasDeveloperModule", "class_script_canvas_1_1_developer_1_1_script_canvas_developer_module.html", "class_script_canvas_1_1_developer_1_1_script_canvas_developer_module" ]
       ] ]
     ] ],
     [ "ScriptCanvasDeveloperEditor", null, [

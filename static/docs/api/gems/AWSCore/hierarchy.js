@@ -1,6 +1,9 @@
 var hierarchy =
 [
+    [ "AWSCore::AttributionMetric", "class_a_w_s_core_1_1_attribution_metric.html", null ],
     [ "AWSCore::AwsApiRequestTraits", "struct_a_w_s_core_1_1_aws_api_request_traits.html", null ],
+    [ "AWSCore::AWSCoreEditorMenu", "class_a_w_s_core_1_1_a_w_s_core_editor_menu.html", null ],
+    [ "AWSCore::AWSCredentialManager", "class_a_w_s_core_1_1_a_w_s_credential_manager.html", null ],
     [ "AWSCore::AWSCredentialRequests::BusHandlerOrderCompare", "struct_a_w_s_core_1_1_a_w_s_credential_requests_1_1_bus_handler_order_compare.html", null ],
     [ "AWSCore::AWSCredentialResult", "struct_a_w_s_core_1_1_a_w_s_credential_result.html", null ],
     [ "AWSCore::AWSScriptBehaviorDynamoDB", "class_a_w_s_core_1_1_a_w_s_script_behavior_dynamo_d_b.html", null ],
@@ -41,12 +44,32 @@ var hierarchy =
     [ "AWSCore::JsonOutputStream", "class_a_w_s_core_1_1_json_output_stream.html", null ],
     [ "AWSCore::JsonReader", "class_a_w_s_core_1_1_json_reader.html", null ],
     [ "AWSCore::RequestBuilder", "class_a_w_s_core_1_1_request_builder.html", null ],
-    [ "AWSCore::ServiceRequest", "class_a_w_s_core_1_1_service_request.html", null ],
+    [ "AWSCore::ServiceAPI::AWSAtrributionSuccessResponse", "struct_a_w_s_core_1_1_service_a_p_i_1_1_a_w_s_atrribution_success_response.html", null ],
+    [ "AWSCore::ServiceAPI::AWSAttributionRequest::Parameters", "struct_a_w_s_core_1_1_service_a_p_i_1_1_a_w_s_attribution_request_1_1_parameters.html", null ],
+    [ "AWSCore::ServiceRequest", "class_a_w_s_core_1_1_service_request.html", [
+      [ "AWSCore::ServiceAPI::AWSAttributionRequest", "class_a_w_s_core_1_1_service_a_p_i_1_1_a_w_s_attribution_request.html", null ]
+    ] ],
     [ "AWSCore::ServiceRequest::EmptyResult", "struct_a_w_s_core_1_1_service_request_1_1_empty_result.html", null ],
     [ "AWSCore::ServiceRequest::NoParameters", "struct_a_w_s_core_1_1_service_request_1_1_no_parameters.html", null ],
     [ "AWSCore::ServiceTraits< ServiceTraitsType >", "class_a_w_s_core_1_1_service_traits.html", null ],
     [ "Handler", null, [
+      [ "AWSCore::AWSCoreEditorSystemComponent", "class_a_w_s_core_1_1_a_w_s_core_editor_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "AWSCore::AWSCoreConfiguration", "class_a_w_s_core_1_1_a_w_s_core_configuration.html", null ]
+    ] ],
+    [ "Handler", null, [
       [ "AWSCore::AwsApiJobConfigHolder< ConfigType >", "class_a_w_s_core_1_1_aws_api_job_config_holder.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "AWSCore::AWSCoreSystemComponent", "class_a_w_s_core_1_1_a_w_s_core_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "AWSCore::AWSCVarCredentialHandler", "class_a_w_s_core_1_1_a_w_s_c_var_credential_handler.html", null ],
+      [ "AWSCore::AWSDefaultCredentialHandler", "class_a_w_s_core_1_1_a_w_s_default_credential_handler.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "AWSCore::AWSResourceMappingManager", "class_a_w_s_core_1_1_a_w_s_resource_mapping_manager.html", null ]
     ] ],
     [ "Handler", null, [
       [ "AWSCore::AWSScriptBehaviorDynamoDBNotificationBusHandler", "class_a_w_s_core_1_1_a_w_s_script_behavior_dynamo_d_b_notification_bus_handler.html", null ]
@@ -63,6 +86,9 @@ var hierarchy =
       [ "AWSCore::AWSScriptBehaviorS3NotificationBusHandler", "class_a_w_s_core_1_1_a_w_s_script_behavior_s3_notification_bus_handler.html", null ]
     ] ],
     [ "Component", null, [
+      [ "AWSCore::AWSAttributionSystemComponent", "class_a_w_s_core_1_1_a_w_s_attribution_system_component.html", null ],
+      [ "AWSCore::AWSCoreEditorSystemComponent", "class_a_w_s_core_1_1_a_w_s_core_editor_system_component.html", null ],
+      [ "AWSCore::AWSCoreSystemComponent", "class_a_w_s_core_1_1_a_w_s_core_system_component.html", null ],
       [ "AWSCore::AWSScriptBehaviorsComponent", "class_a_w_s_core_1_1_a_w_s_script_behaviors_component.html", null ]
     ] ],
     [ "EBusTraits", null, [
@@ -94,6 +120,22 @@ var hierarchy =
           ] ]
         ] ]
       ] ]
+    ] ],
+    [ "Module", null, [
+      [ "AWSCore::AWSCoreEditorModule", "class_a_w_s_core_1_1_a_w_s_core_editor_module.html", null ],
+      [ "AWSCore::AWSCoreModule", "class_a_w_s_core_1_1_a_w_s_core_module.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "AWSCore::AWSCoreEditorSystemComponent", "class_a_w_s_core_1_1_a_w_s_core_editor_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "AWSCore::AWSAttributionManager", "class_a_w_s_core_1_1_a_w_s_attribution_manager.html", null ]
+    ] ],
+    [ "QAction", null, [
+      [ "AWSCore::AWSCoreResourceMappingToolAction", "class_a_w_s_core_1_1_a_w_s_core_resource_mapping_tool_action.html", null ]
+    ] ],
+    [ "QMessageBox", null, [
+      [ "AWSCore::AWSCoreAttributionConsentDialog", "class_a_w_s_core_1_1_a_w_s_core_attribution_consent_dialog.html", null ]
     ] ],
     [ "Writer", null, [
       [ "AWSCore::JsonWriter", "class_a_w_s_core_1_1_json_writer.html", null ]

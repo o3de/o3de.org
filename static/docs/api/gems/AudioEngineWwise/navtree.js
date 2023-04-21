@@ -1,11 +1,23 @@
 var NAVTREE =
 [
-  [ "Open 3D Engine AudioEngineWwise Gem API Reference", "index.html", ]
+  [ "Open 3D Engine AudioEngineWwise Gem API Reference", "index.html", [
+    [ "Classes", null, [
+      [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+".html",
+"class_audio_engine_wwise_gem_1_1_audio_engine_wwise_gem_system_component.html#a8db9c5860dfd59a8667fb8fc83e06f36"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

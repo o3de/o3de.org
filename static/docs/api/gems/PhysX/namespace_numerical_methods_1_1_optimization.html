@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine PhysX Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,7 +54,8 @@ $(document).ready(function(){initNavTree('namespace_numerical_methods_1_1_optimi
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">NumericalMethods::Optimization Namespace Reference</div>  </div>
 </div><!--header-->
@@ -65,6 +66,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_solver_result.html">SolverResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_line_search_result.html">LineSearchResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to bundle together the numerical results of a line search and a qualitative indicator of search success.  <a href="struct_numerical_methods_1_1_optimization_1_1_line_search_result.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -84,11 +88,64 @@ Enumerations</h2></td></tr>
 <tr class="memitem:af74a560c9f735689fd6a780ca34cc6de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#af74a560c9f735689fd6a780ca34cc6de">FunctionOutcome</a> { <a class="el" href="namespace_numerical_methods_1_1_optimization.html#af74a560c9f735689fd6a780ca34cc6dead8f78ca9a692a9411afbc7584b69d043">FunctionOutcome::InvalidInput</a>
  }</td></tr>
 <tr class="separator:af74a560c9f735689fd6a780ca34cc6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf606ee10aa0c427ed34366082a1be4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#aadf606ee10aa0c427ed34366082a1be4">LineSearchOutcome</a> { <a class="el" href="namespace_numerical_methods_1_1_optimization.html#aadf606ee10aa0c427ed34366082a1be4a505a83f220c02df2f85c3810cd9ceb38">LineSearchOutcome::Success</a>, 
+<a class="el" href="namespace_numerical_methods_1_1_optimization.html#aadf606ee10aa0c427ed34366082a1be4ab4ee632ee2b420e4c4954189eafa9230">LineSearchOutcome::BestEffort</a>, 
+<a class="el" href="namespace_numerical_methods_1_1_optimization.html#aadf606ee10aa0c427ed34366082a1be4a87a41c411037ca2a909a04f4dbcf02fe">LineSearchOutcome::FailureExceededIterations</a>
+ }</td></tr>
+<tr class="memdesc:aadf606ee10aa0c427ed34366082a1be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to indicated if a line search was successful or give details of failure reasons.  <a href="namespace_numerical_methods_1_1_optimization.html#aadf606ee10aa0c427ed34366082a1be4">More...</a><br/></td></tr>
+<tr class="separator:aadf606ee10aa0c427ed34366082a1be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a671c919132c5a0776e13dd3791620f9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_solver_result.html">SolverResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#a671c919132c5a0776e13dd3791620f9a">SolverBFGS</a> (const <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a> &amp;function, const AZStd::vector&lt; double &gt; &amp;initialGuess)</td></tr>
 <tr class="separator:a671c919132c5a0776e13dd3791620f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09530482736705f7fd1f7a8013a806df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09530482736705f7fd1f7a8013a806df"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#a09530482736705f7fd1f7a8013a806df">IsFailure</a> (const <a class="el" href="struct_numerical_methods_1_1_optimization_1_1_line_search_result.html">LineSearchResult</a> &amp;result)</td></tr>
+<tr class="memdesc:a09530482736705f7fd1f7a8013a806df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to check whether a <a class="el" href="struct_numerical_methods_1_1_optimization_1_1_line_search_result.html" title="Struct to bundle together the numerical results of a line search and a qualitative indicator of searc...">LineSearchResult</a> should be considered a failure. <br/></td></tr>
+<tr class="separator:a09530482736705f7fd1f7a8013a806df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46dcf54689b9103f6607413493995f8"><td class="memItemLeft" align="right" valign="top">ScalarVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#ab46dcf54689b9103f6607413493995f8">CubicMinimum</a> (const double a, const double f_a, const double df_a, const double b, const double f_b, const double c, const double f_c)</td></tr>
+<tr class="separator:ab46dcf54689b9103f6607413493995f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e06bf7df3b37550b69d16468bc69603"><td class="memItemLeft" align="right" valign="top">ScalarVariable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#a9e06bf7df3b37550b69d16468bc69603">QuadraticMinimum</a> (const double a, const double f_a, const double df_a, const double b, const double f_b)</td></tr>
+<tr class="separator:a9e06bf7df3b37550b69d16468bc69603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6b44b215e317cb2fa4f90c9aa513b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#a4f6b44b215e317cb2fa4f90c9aa513b0">ValidateStepSize</a> (const ScalarVariable alphaNew, const double alpha0, const double alpha1, const double edgeThreshold)</td></tr>
+<tr class="separator:a4f6b44b215e317cb2fa4f90c9aa513b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac073834b334086fb0b955b19c1a2e7ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_line_search_result.html">LineSearchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#ac073834b334086fb0b955b19c1a2e7ee">SelectStepSizeFromInterval</a> (double alpha0, double alpha1, double f_alpha0, double f_alpha1, double df_alpha0, const <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a> &amp;f, const <a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a> &amp;x0, const <a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a> &amp;searchDirection, const double f_x0, const double df_x0, const double c1, const double c2)</td></tr>
+<tr class="separator:ac073834b334086fb0b955b19c1a2e7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11235bf25d899395436d8675e9e266c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_line_search_result.html">LineSearchResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#a11235bf25d899395436d8675e9e266c4">LineSearchWolfe</a> (const <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a> &amp;f, const <a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a> &amp;x0, double f_x0, const <a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a> &amp;searchDirection)</td></tr>
+<tr class="separator:a11235bf25d899395436d8675e9e266c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0997d99c46f0626ed2ec84110cafc022"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_solver_result.html">SolverResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#a0997d99c46f0626ed2ec84110cafc022">MinimizeBFGS</a> (const <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a> &amp;f, const AZStd::vector&lt; double &gt; &amp;xInitial)</td></tr>
+<tr class="separator:a0997d99c46f0626ed2ec84110cafc022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed751f183eb9819d67989b49c797abf8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed751f183eb9819d67989b49c797abf8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#aed751f183eb9819d67989b49c797abf8">FunctionValue</a> (const <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a> &amp;function, const <a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a> &amp;point)</td></tr>
+<tr class="memdesc:aed751f183eb9819d67989b49c797abf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for evaluating a function at a point. <br/></td></tr>
+<tr class="separator:aed751f183eb9819d67989b49c797abf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735582b1199e504b2be96a54de214fcb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#a735582b1199e504b2be96a54de214fcb">DirectionalDerivative</a> (const <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a> &amp;function, const <a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a> &amp;point, const <a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a> &amp;direction)</td></tr>
+<tr class="separator:a735582b1199e504b2be96a54de214fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a87a1d340f24510f82afd45241c5569"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a87a1d340f24510f82afd45241c5569"></a>
+<a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_numerical_methods_1_1_optimization.html#a8a87a1d340f24510f82afd45241c5569">Gradient</a> (const <a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a> &amp;function, const <a class="el" href="class_numerical_methods_1_1_vector_variable.html">VectorVariable</a> &amp;point)</td></tr>
+<tr class="memdesc:a8a87a1d340f24510f82afd45241c5569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of derivatives with respect to each of the independent variables of a function, evaluated at the specified point. <br/></td></tr>
+<tr class="separator:a8a87a1d340f24510f82afd45241c5569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a8edc5493eed65668edaa3c54af90c1df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8edc5493eed65668edaa3c54af90c1df"></a>
+const AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>lineSearchIterations</b> = 100</td></tr>
+<tr class="separator:a8edc5493eed65668edaa3c54af90c1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5b3a6e8da12e0d0a403cc40695203b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d5b3a6e8da12e0d0a403cc40695203b"></a>
+const AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>solverIterations</b> = 500</td></tr>
+<tr class="separator:a3d5b3a6e8da12e0d0a403cc40695203b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8698f309fdf642598f61ae3d2096ca0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8698f309fdf642598f61ae3d2096ca0"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>gradientTolerance</b> = 1e-6</td></tr>
+<tr class="separator:ae8698f309fdf642598f61ae3d2096ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c736f58d9356ec8f34706322cfa0532"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c736f58d9356ec8f34706322cfa0532"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>epsilon</b> = 1e-7</td></tr>
+<tr class="separator:a7c736f58d9356ec8f34706322cfa0532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ccf3cc04e762a19f0791323808d2e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08ccf3cc04e762a19f0791323808d2e4"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>WolfeConditionsC1</b> = 1e-4</td></tr>
+<tr class="separator:a08ccf3cc04e762a19f0791323808d2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1e55ea6195e1649a586990e22e8240"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e1e55ea6195e1649a586990e22e8240"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>WolfeConditionsC2</b> = 0.9</td></tr>
+<tr class="separator:a6e1e55ea6195e1649a586990e22e8240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Namespace for methods for finding the values of function parameters which correspond to a (possibly local) optimum function value. For more information on optimization methods, see Numerical <a class="el" href="namespace_numerical_methods_1_1_optimization.html">Optimization</a> by Nocedal and Wright (ISBN 978-0387303031). </p>
@@ -114,6 +171,39 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af74a560c9f735689fd6a780ca34cc6dead8f78ca9a692a9411afbc7584b69d043"></a>InvalidInput</em>&nbsp;</td><td class="fielddoc">
 <p>The number of parameters provided did not match the expected dimension. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aadf606ee10aa0c427ed34366082a1be4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_numerical_methods_1_1_optimization.html#aadf606ee10aa0c427ed34366082a1be4">NumericalMethods::Optimization::LineSearchOutcome</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to indicated if a line search was successful or give details of failure reasons. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aadf606ee10aa0c427ed34366082a1be4a505a83f220c02df2f85c3810cd9ceb38"></a>Success</em>&nbsp;</td><td class="fielddoc">
+<p>A result which completely satisfies the line search requirements. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aadf606ee10aa0c427ed34366082a1be4ab4ee632ee2b420e4c4954189eafa9230"></a>BestEffort</em>&nbsp;</td><td class="fielddoc">
+<p>A result which is not optimal but should still be usable. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="aadf606ee10aa0c427ed34366082a1be4a87a41c411037ca2a909a04f4dbcf02fe"></a>FailureExceededIterations</em>&nbsp;</td><td class="fielddoc">
+<p>Failed because the iteration limit was reached and the value is not usable. </p>
 </td></tr>
 </table>
 
@@ -162,6 +252,302 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ab46dcf54689b9103f6607413493995f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScalarVariable NumericalMethods::Optimization::CubicMinimum </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>f_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>df_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>f_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>f_c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Finds the value of x which minimizes the cubic polynomial which interpolates the provided points. Finds the cubic polynomial P(x) which satisfies P(a) = f_a P'(a) = df_a P(b) = f_b P(c) = f_c and returns the value of x which minimizes P. </p>
+
+</div>
+</div>
+<a class="anchor" id="a735582b1199e504b2be96a54de214fcb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NumericalMethods::Optimization::DirectionalDerivative </td>
+          <td>(</td>
+          <td class="paramtype">const Function &amp;&#160;</td>
+          <td class="paramname"><em>function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorVariable &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorVariable &amp;&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The 1-dimensional rate of change of a function with respect to changing the independent variables along the specified direction. Note that some textbooks / authors define the directional derivative with respect to a normalized direction, but that convention is not used here. </p>
+
+</div>
+</div>
+<a class="anchor" id="a11235bf25d899395436d8675e9e266c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_line_search_result.html">LineSearchResult</a> NumericalMethods::Optimization::LineSearchWolfe </td>
+          <td>(</td>
+          <td class="paramtype">const Function &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorVariable &amp;&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>f_x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorVariable &amp;&#160;</td>
+          <td class="paramname"><em>searchDirection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Searches for a step size satisfying the Wolfe conditions for solution improvement. Given a search direction, attempts to find a step size in that direction which satisfies the Wolfe conditions ( conditions for solution improvement which have nice properties for algorithms which rely on the line search). The first wolfe condition requires that the function value at the new point is sufficiently improved relative to the previous iteration. The second condition requires that the directional derivative at the new point is sufficient to indicate that significantly more progress could not have been made by choosing a larger step. The search proceeds in two phases - first an interval containing a suitable point is found, then a point within that interval is narrowed down using the SelectStepSizeFromInterval function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0997d99c46f0626ed2ec84110cafc022"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_solver_result.html">SolverResult</a> NumericalMethods::Optimization::MinimizeBFGS </td>
+          <td>(</td>
+          <td class="paramtype">const Function &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>xInitial</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Minimizes the supplied function using the Broyden-Fletcher-Goldfarb-Shanno algorithm (see Nocedal and Wright). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td><a class="el" href="class_numerical_methods_1_1_optimization_1_1_function.html">Function</a> to be minimized. </td></tr>
+    <tr><td class="paramname">xInitial</td><td>Initial guess for the independent variable. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value of the independent variable which minimizes f. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e06bf7df3b37550b69d16468bc69603"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScalarVariable NumericalMethods::Optimization::QuadraticMinimum </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>f_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>df_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>f_b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Finds the value of x which minimizes the quadratic which interpolates the provided points. Finds the quadratic Q(x) which satisfies Q(a) = f_a Q'(a) = df_a Q(b) = f_b and returns the value of value which minimizes Q. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac073834b334086fb0b955b19c1a2e7ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_numerical_methods_1_1_optimization_1_1_line_search_result.html">LineSearchResult</a> NumericalMethods::Optimization::SelectStepSizeFromInterval </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>f_alpha0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>f_alpha1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>df_alpha0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Function &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorVariable &amp;&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const VectorVariable &amp;&#160;</td>
+          <td class="paramname"><em>searchDirection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>f_x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>df_x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>c1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>c2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used in LineSearchWolfe to narrow down a step size once a bracketing interval has been found. This corresponds to the zoom function in Nocedal and Wright. </p>
+
+</div>
+</div>
 <a class="anchor" id="a671c919132c5a0776e13dd3791620f9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -197,13 +583,61 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4f6b44b215e317cb2fa4f90c9aa513b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NumericalMethods::Optimization::ValidateStepSize </td>
+          <td>(</td>
+          <td class="paramtype">const ScalarVariable&#160;</td>
+          <td class="paramname"><em>alphaNew</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>alpha0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>alpha1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>edgeThreshold</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks that the result of an interpolation is satisfactory. Checks that the result of an interpolation is valid, inside the expected interval, and sufficiently far from interval boundaries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alphaNew</td><td>The new step size to be checked. </td></tr>
+    <tr><td class="paramname">alpha0</td><td>One boundary of the current step size interval. </td></tr>
+    <tr><td class="paramname">alpha1</td><td>The other boundary of the current interval. </td></tr>
+    <tr><td class="paramname">edgeThreshold</td><td>Defines how close to the edges of current interval the new step size is allowed to be. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>NumericalMethods</b></li><li class="navelem"><a class="el" href="namespace_numerical_methods_1_1_optimization.html">Optimization</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:48 for Open 3D Engine PhysX Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:23 for Open 3D Engine PhysX Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

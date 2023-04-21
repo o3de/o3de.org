@@ -16,7 +16,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"class_landscape_canvas_1_1_fast_noise_gradient_node.html#ab3915bcc8a7df366422d174582432d2b",
+"class_landscape_canvas_1_1_slope_gradient_node.html#ae1f6492e278726c49375ffd755a16384"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

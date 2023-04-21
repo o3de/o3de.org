@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine BarrierInput Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -99,9 +99,9 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:a21376d48e295b99b4d9e3bd0677c503e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>EBus interface used to listen for raw Barrier input as broadcast by the BarrierClient.</p>
+<div class="textblock"><p>EBus interface used to listen for raw Barrier input as broadcast by the <a class="el" href="class_barrier_input_1_1_barrier_client.html" title="Barrier client that manages a connection with a Barrier server. ">BarrierClient</a>.</p>
 <p>It's possible to receive multiple events per button/key per frame, and it's very likely that Barrier input events will not be dispatched from the main thread, so care should be taken to ensure thread safety when implementing event handlers that connect to this Barrier event bus.</p>
-<p>This EBus is intended primarily for the BarrierClient to send raw input to Barrier devices. Most systems that need to process input should use the generic AzFramework input interfaces, but if necessary it is perfectly valid to connect directly to this EBus for Barrier events. </p>
+<p>This EBus is intended primarily for the <a class="el" href="class_barrier_input_1_1_barrier_client.html" title="Barrier client that manages a connection with a Barrier server. ">BarrierClient</a> to send raw input to Barrier devices. Most systems that need to process input should use the generic AzFramework input interfaces, but if necessary it is perfectly valid to connect directly to this EBus for Barrier events. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="abe6e669d7fd23e653d2a7dd6b3ddc812"></a>
 <div class="memitem">
@@ -415,7 +415,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>BarrierInput</b></li><li class="navelem"><a class="el" href="class_barrier_input_1_1_raw_input_notifications_barrier.html">RawInputNotificationsBarrier</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:44 for Open 3D Engine BarrierInput Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:09 for Open 3D Engine BarrierInput Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
