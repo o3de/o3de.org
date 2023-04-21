@@ -191,5 +191,5 @@ When no UV modifier is present, nothing is done by default to the source scene, 
 | Property | Description |
 | - | - |
 | **Generation Method** | UVs can be either imported from the source asset (`From Source Scene`), or automatically generated using spherical positional projection (`Spherical Projection`).
-| **Replace Existing UVs** | If this option is off, the UVs Modifier will only generate UVs for meshes that are actually missing UVs, and do nothing otherwise.  If this option is on, the Generation Method will apply even if the mesh in the scene already has normals from the DCC tool. |
+| **Replace Existing UVs** | If this option is off, the UVs Modifier will only generate UVs for meshes that are actually missing UVs, and do nothing otherwise.  If this option is on, the **Generation Method** will apply even if the mesh in the scene already has normals from the DCC tool. |
 
