@@ -5,7 +5,6 @@ toc: true
 ---
 
 ## Overview
-
 Creating material types and shaders in O3DE ordinarily requires familiarity with the engine, renderer, AZSL shading language, data types, file formats, and how everything fits together. It involves hand editing and manually managing multiple files, writing AZSL shader code, editing JSON, launching the Asset Processor to compile them, addressing any reported errors, then using the O3DE Editor or Material Editor to preview and customize assets.
 
 **Material Canvas** drastically simplifies, accelerates, and automates creating custom shaders and material types by providing a visual scripting editor with familiar tools, workflows, status reporting, and live previews.
@@ -185,7 +184,6 @@ The viewport renders a scene containing a model, with the current material appli
 Use the viewport settings panel to edit the active lighting preset. The changes will be reflected in the viewport. Lighting presets can be selected, created, and saved from this panel. Model presets, which are sidecar files for identifying which models are available in the viewport, can also be managed from this panel. The viewport settings panel does not currently support undo/redo.
 
 ## Editing Material Graphs
-
 ### Node Creation and Placement
 Nodes are the building blocks of every material graph.  Every node serves a purpose, providing data or a distinct piece of functionality that can be added to the graph.  Drag nodes from the node palette onto the material graph view.  Nodes can also be created by right clicking on the graph view and choosing a node from the embedded node palette. Doing either of these will cause the node to appear at the drop or click position.  The node will be selected and its properties will be displayed in the inspector for editing.
 
