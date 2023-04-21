@@ -15,34 +15,62 @@ Drag, drop, connect, and configure nodes to construct material graphs that will 
 Material Canvas is built on top of the same foundations as established tools like Script Canvas and Material Editor. It is data-driven, customizable, extensible, and scriptable through the settings registry, Python, and C++. All of the current material graph nodes are defined in JSON files that contain snippets of AZSL. These files can be edited, and new ones created, from within Material Canvas.
 
 ## Quick Start
+### Launch Material Canvas
 To get started, launch Material Canvas from
 - the **Open 3D Engine (O3DE)** Editor by selecting **Main Menu > Tools > Material Canvas**.
 - the Material Component context menu, select **Open Material Canvas...**.
 - or using one of the other methods described in the “Launching Material Canvas” section.
 
-### Creating Material Graphs
-You can create a new material graph or open an existing material graph from the File menu in Material Canvas, or from the Context menu in the Asset Browser: 
+### Create/Open a Material Graph
+You have multiple options to start editing a material graph.
+- By default, Material Canvas starts with an untitled, blank material graph document that is ready for immediate use.
+  - Until you save the graph, generated files will be output to your project Assets/Materials/Generated folder.
+  - If you save the graph, generated files will be output to the same folder as the graph.  
+- Create a new material graph from a template.
+  - Select **Main Menu > File > New > New Material Graph Document...**.
+    - This opens the "Create Material Graph Document" dialog.
+  - Select a template as the basis for your new material graph.
+    - Templates are material graphs saved with a special ".materialgraphtemplate" extension that designates them as a starting point for new graphs.
+  - Select a path and file name for the new material graph.
+- Open an existing material graph
+  - Select **Main Menu > File > Open > Open Material Graph Document...**.
+  - You can also open a material graph from the Asset Browser.
 
-- From the File menu in Material Canvas:
-  
-  - To create a new material graph, select **Main Menu > File > New > New Material Graph Document...**. Then select a template as the starting point for your new material graph.
-  
-  - To open an existing material, choose **Open...**, Open Material Graph Document. Then select the material graph file from the browser.
-  
-  - You may also use the **Open Recent** menu option to select a previously opened document.
-  
-    - Material Canvas supports editing other document types like Material Graph Node Config and Shader Source Data config files. These will also appear in the recent files list.
+### Create Nodes
+You can create nodes by dragging them from the node palette to the graph view or using the graph view context menu.
+- Start by dragging one of the output nodes, like Base PBR, from the node palette to the graph view.
+  - You can start with any nodes but no processing will take place without an output node to drive it.
+- You will see the status bar indicate files are being generated and processed after this node is added to the graph.
+- You will see the viewport update to show the generated material on the model after files have finished processing.
 
-- From the Context menu in the Asset Browser:
-  
-  1. Select a `.materialgraph` file.
- 
-  2. Then, right-click the `.materialgraph` file to open the context menu.
-  
-  3. Choose **Open in Material Canvas...** to open the material in Material Canvas.
+### Configure Nodes
+If you chose Base PBR or Standard PBR as your output node the material will initially be white.
+- You can change node properties directly on the node in the graph view or in the inspector.
+- For example, change the base color to red (1, 0, 0, 1).
+- You will see the status bar indicate the files are being regenerated and reprocessed.
+- You will see the viewport update again, after changing this, or any other, property.
+- The material and model in the viewport should now be red.
+
+### Connect Nodes
+You can create connections that cause output values from one node to be assigned to input values on another.
+- Create additional nodes on the graph, like Constant or Input.
+  - It can be any node with output slots but these are used as variables that can be connected as inputs to one or more other nodes on the graph.
+  - Constant nodes generate immutable variables declared inline in shader code.
+  - Input nodes generate named, Material SRG variables that are connected to configurable material properties.
+    - These will show up and can be set in the Material Editor and Material Component.
+- For example, create an Float4 or Color Input node anywhere on the graph.
+  - These are interchangeable but represent the value with different controls in the UI.
+- Click and hold the output slot for the value.
+- Drag and drop the connection wire from that output slot to the base color slot on the output node.
+- Once the connection is made, the editable value will disappear from the node and be grayed out in the inspector.
+- You will see the graph reprocess and the viewport update.
+- The viewport model will change from red to the color from the connected node.
+- You can change the property values of the input node to see the colors changing in the viewport.
+- if this was an input node, you should also be able to open the generated material or material type in the Material Editor to see the property can be configured from there as well.
+
+More interesting and advanced graphs can be created by adding and nesting connections between function, texture sampling, time, transformations, and other nodes. Several examples can be found in the Material Canvas assets folder.
 
 ## Launching Material Canvas
-
 There are multiple ways to launch Material Canvas.
 - From **Open 3D Engine (O3DE)** Editor select **Main Menu > Tools > Material Canvas**
 - From the Material Component context menu, select **Open Material Canvas...**
@@ -53,7 +81,6 @@ There are multiple ways to launch Material Canvas.
   - This requires passing the —project-path, followed by the path your project, as a command line argument.
 
 ### Asset Processor
-
 Material Canvas automatically launches the Asset Processor if it is not already running.  Some graphics related assets must be processed before the main window opens.
 
 The shader compilation process is expensive, complex, and currently managed by the Shader Asset Builder.  Material Canvas relies on the Asset Processor and Shader Asset Builder to process, validate, and preview content generated by material graphs. The Asset Processor reports status, error messages, and other notifications as shader and material assets are built. The viewport updates with shader and material previews as quickly as those assets can be processed.
@@ -61,7 +88,6 @@ The shader compilation process is expensive, complex, and currently managed by t
 Building shader assets takes more time on Windows than Linux, or other platforms.  This is partially because Windows builds shaders for the null renderer, DX12, and Vulkan by default.  Registry settings can be configured to disable unused targets and vastly improve shader compilation and preview times.  Use the Material Canvas settings dialog to override these settings.
 
 ### Gem Initialization
-
 Material Canvas normally initializes all of the gems enabled by the active project. In order to reduce start times and system resource utilization, Material Canvas, and the other atom tools, includes registry setting files that forcibly disable several standard O3DE gems that are not likely to be needed within the tool.
 
 If Material Canvas, or Material Editor, fails to launch then it may be because of dependency issues with gems in the active project. Check the Material Canvas, or corresponding, log file for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Canvas project registry folder.
@@ -176,7 +202,6 @@ The viewport renders a scene containing a model, with the current material appli
 Use the viewport settings panel to edit the active lighting preset. The changes will be reflected in the viewport. Lighting presets can be selected, created, and saved from this panel. Model presets, which are sidecar files for identifying which models are available in the viewport, can also be managed from this panel. The viewport settings panel does not currently support undo/redo.
 
 ## Editing Material Graphs
-By default, Material Canvas launches with a blank, untitled material graph document.  You can start editing directly on this untitled material graph.  Until this graph has been saved, generated files will be output to an assets/materials/generated folder underneath your project.  Once the graph has been saved, the files will be output to the same folder as the graph.  
 
 ### Node Creation and Placement
 Nodes are the building blocks of every material graph.  Every node serves a purpose, providing data or a distinct piece of functionality that can be added to the graph.  Drag nodes from the node palette onto the material graph view.  Nodes can also be created by right clicking on the graph view and choosing a node from the embedded node palette. Doing either of these will cause the node to appear at the drop or click position.  The node will be selected and its properties will be displayed in the inspector for editing.
