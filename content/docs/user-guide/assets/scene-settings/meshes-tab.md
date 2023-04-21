@@ -184,8 +184,7 @@ The tangents modifier either imports tangents and bitangents from the source ass
 
 The UVs modifier either imports a UV Map from the source asset, or generates them during asset processing. UVs are vertex attributes that control where texture maps are sampled from for a given area in a mesh. UVs are required in order for tangent and bitangent generation to function correctly. 
 
-Note that most DCC tools generate far better UV sets than can be generated with this setting, but it may be useful in situations where the source data
-has no UVs defined in it and you would like to get something to render without having to open the data in a DCC tool to modify it and supply UVs.
+Note that most DCC tools generate far better UV sets than can be generated with this setting, but it may be useful in situations where the source data has no UVs defined in it and you would like to get something to render without having to open the data in a DCC tool to modify it and supply UVs.
 
 When no UV modifier is present, nothing is done by default to the source scene, regardless of whether or not the meshes have UVs.
 
