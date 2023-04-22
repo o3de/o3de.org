@@ -13,7 +13,7 @@ Drag, drop, connect, and configure nodes to construct material graphs that will 
 
 Material Canvas is built on top of the same foundations as established tools like Script Canvas and Material Editor. It is data-driven, customizable, extensible, and scriptable through the settings registry, Python, and C++. All of the current material graph nodes are defined in JSON files that contain snippets of AZSL. These files can be edited, and new ones created, from within Material Canvas.
 
-For more information about the common features, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
+For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
 ## Quick Start
 ### Launching Material Canvas
@@ -39,7 +39,7 @@ You have multiple options to start editing a material graph.
   - Select a path and file name for the new material graph.
 - Open an existing material graph
   - Select **Main Menu > File > Open > Open Material Graph Document...**.
-  - You can also open a material graph from the Asset Browser.
+- Open or create a material graph from the Asset Browser.
 
 ### Creating Nodes
 You can create nodes by dragging them from the node palette to the graph view or using the graph view context menu.
@@ -81,33 +81,10 @@ After Material Canvas has opened and initialized it will display the main window
 
 ![Material Canvas](/images/atom-guide/tools/material-canvas.jpg)
 
-For more information about the common features, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
+For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
-### Edit Menu
-The edit menu contains all the basic actions actions common to all Atom tools as well as actions specific to Material Canvas.
-
-When a material graph document is open and active, several options will be added to manage the graph and its elements.
-
-These are mostly the same options available in Script Canvas and Landscape Canvas, to control node selection, alignment, deletion, duplication, cutting, copying, and pasting.
-
-### View Menu
-The view menu contains all the basic actions actions common to all Atom tools. Material Canvas adds options for navigating and managing the graph view as well as opening an editor for configuring comment node and node group presets.
-
-### Tools Menu
-The tools menu contains all the basic actions actions common to all Atom tools. Material Canvas adds actions for toggling its additional dockable windows. 
-
-| Menu item | Hotkey | Function |
-| - | - | - |
-| Viewport | | Toggles the Viewport window. |
-| Viewport Settings | | Toggles the Viewport Settings window. |
-| Bookmarks l | | Toggles the Bookmarks window. |
-| Mini map | | Toggles the mini map window. |
-| Node palette  | | Toggles the nude palette window. |
-
-### Multiple Documents, Types, and Views
-Material Canvas and the main window operate using a multiple document and view Interface. A document is any file with a registered type that can be opened and edited in the tool. Material Canvas supports multiple document types. This allows one application to support editing multiple types of data.
-
-Multiple documents can be opened and edited simultaneously. Each document will be represented and accessible using a tab at the top of the main window. Each document tab contains an associated view that is usually the main workspace for viewing and editing the document. Selecting a tab will activate the corresponding document, switch to its views, and update other windows, such as the inspector, with content from the current document.
+### Document Types and Views
+Material Canvas supports creating, opening, and editing multiple types of documents.
 
 #### Material Graph Documents
 Material Graph Documents ".materialgraph" are the main documents type in Material Canvas. Each open material graph has a corresponding, two dimensional, gridded, graph view, where most editing will take place. All of the data related to nodes, connections, slot values, positioning, selection, and any other metadata about the graph will be stored in the material graph document.
@@ -118,8 +95,24 @@ Material Graph Node Documents ".materialgraphnode" are JSON files defining each 
 #### Shader Source Data Config Documents
 Shader Source Data Config Documents ".shader" are for editing shader configuration files. All of the supporting data types have been reflected so that shader source data files can be edited in the inspector or using Python. All of the options are enumerated and populated in the UI. This is useful for editing shader source data files and creating new templates for material graph output nodes, described later.
 
+## Main Menu
+The main menu contains all of the submenus and actions common to all Atom tools as well as Material Canvas specific actions. 
+
+For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
+
+### Edit Menu
+When a material graph document is open and active, several options will be added to manage the graph and its elements.
+
+These are the same options available in Script Canvas and Landscape Canvas, to control node selection, alignment, deletion, duplication, cutting, copying, and pasting.
+
+### View Menu
+Material Canvas adds options for navigating and managing the graph view as well as opening an editor for configuring comment node and node group presets.
+
+### Tools Menu
+Material Canvas adds actions for toggling its additional dockable windows. 
+
 ### Docked Windows
-Several other windows are docked around the main window. This includes, but is not limited to, the Inspector, Node Palette, Bookmarks, Mini Map, Asset Browser, Logging Window, Python Terminal, Viewport, and Viewport Settings.
+Material Canvas provides several additional windows related to working with graphs. Unlike Material Editor, the viewport is also dockable. 
 
 #### Node Palette
 The node palette contains a tree of all available material graph nodes, and other utility nodes, that can be added to a graph. The nodes are organized by category and color coded by type. Hovering the mouse cursor over each node in the tree will display a tool tip describing its purpose. Drag nodes from the palette into the active graph view to create an instance of that node at the drop position on the graph.
@@ -301,4 +294,4 @@ Building shader assets takes more time on Windows than Linux, or other platforms
 ### Material Canvas Fails To Launch
 Material Canvas normally initializes all of the gems enabled by the active project. In order to reduce start times and system resource utilization, Material Canvas, and the other atom tools, includes registry setting files that forcibly disable several standard O3DE gems that are not likely to be needed within the tool.
 
-If Material Canvas, or Material Editor, fails to launch then it may be because of dependency issues with gems in the active project. Check MaterialCanvas.log, or the log file for the tool failing to launch, for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Canvas project registry folder.
+If Material Canvas fails to launch then it may be because of dependency issues with gems in the active project. Check MaterialCanvas.log for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Canvas project registry folder.
