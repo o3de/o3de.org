@@ -17,7 +17,7 @@ A view is usually a window or other UI that allows you to visualize, inspect, or
 Tools can register and support any number of document types and views to enable editing different types of data and visualizing it in different ways. For example,
 - Material Editor currently only supports one document type for editing ".material" and viewing ".materialtype" files
 - Material Canvas supports multiple document types for ".materialgraph", ".materialgraphnode", and ".shader" files. 
-- Shader Management Console supports one document types for ".shadervariantlist" files. 
+- Shader Management Console supports one document type for ".shadervariantlist" files. 
 
 Multiple documents can be opened and edited at the same time.
 - Each document will be represented and accessible using a tab at the top of the central window.

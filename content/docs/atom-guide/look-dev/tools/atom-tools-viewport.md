@@ -12,7 +12,7 @@ The viewport contains and has options to configure:
 - A model placed at the origin of the scene with a material applied to it. 
 - A lighting preset that provides a skybox, image based lighting, directional lights, tone mapping, and other configurable lighting conditions.  
 - An optional grid at the origin of the viewport.  
-- An optional shadow catcher at the origin of the scene that renders A planar shadow of the viewport model. 
+- An optional shadow catcher at the origin of the scene that renders a planar shadow of the viewport model. 
 - A toolbar for toggling features and selecting the current model, lighting preset, and render pipeline.
 
 ![Viewport](/images/atom-guide/tools/viewport.png)
@@ -58,7 +58,7 @@ The Viewport Toolbar contains the following set of functions to configure the Vi
 | **Render Pipeline** | Select the render pipeline that will be used to render the scene in the viewport. |  |  |
 
 ## Viewport Settings
-The Viewport Settings window displays options to configure the Viewport properties. These properties control how the Viewport appears and which features are active. You can also create or edit configuration presets for the viewport model and the lighting environments. 
+The Viewport Settings window displays options to configure the Viewport properties. These properties control how the Viewport appears and which features are active. You can also create or edit presets for the viewport model and the lighting environments. 
 
 ![Viewport Settings](/images/atom-guide/tools/viewport-settings.png)
 
