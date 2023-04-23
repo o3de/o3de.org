@@ -7,7 +7,9 @@ toc: true
 ## Overview
 The tools included with Atom are built upon a common foundation. They share the same core concepts, features, workflows, and user experience.
 
-## Multiple Documents, Types, and Views
+![Basic Tool](/images/atom-guide/tools/empty-tool.jpg)
+
+## The Document System
 All of the Atom tools utilize a multi-document, multi-view system. This allows all of the tools to follow the same patterns, share the same features, UI, and basic interactions, regardless of the type of data being edited.
 
 A document is the representation of a file or other data that can be created, opened, and edited from within a tool. At a minimum, all document types support actions to open, save, undo, redo, and provide a list of properties that can be edited in an inspector, 
@@ -25,8 +27,15 @@ Multiple documents can be opened and edited at the same time.
 - Right clicking on a tab will open a context menu with document-centric actions.
 - Selecting a tab will activate the corresponding document, display any associated views, and update other windows, like the inspector, with content from the document.
 
-## Python Automation and Extension
-Many aspects of all tools built on this foundation have extensive bindings to support automation and extension using Python. Scripts can be run from the file menu, Asset Browser context menu, or passed in as command line arguments. 
+## Single Instance
+By default, the tools are set up to only allow a single instance to be run at a time. Attempting to relaunch a tool that is already running will bring focus to the existing instance. If a tool is running and you attempt to open an associated file type from the O3DE editor or file browser then it will open in the same tool in a new tab. 
+
+## Python Scripting
+All tools built on this foundation have common APIs for scripting, automation, and extension with Python. While there are some differences from the main O3DE Editor API, you should have access to everything bound from by gems and projects.
+- The document system are fully scriptable.
+- Several utility functions used in C++ that are also available in Python.
+- Use PyQt for controlling and extending the UI. 
+- Scripts can be run from the file menu, Asset Browser context menu, or passed in as command line arguments. 
 
 ## Main Window
 The main window is the hub and owns all of the user interface for a tool.
@@ -105,3 +114,8 @@ The help menu includes actions for opening the help and about dialogs.
 | - | - | - |
 | Help... | | Opens the help dialog with information about how to use the tool. |
 | About... | | Opens the about dialog with information about the tool. |
+
+## Settings
+Tools can be customized and configured through the settings registry. The settings dialog in each tool provides access to several common and application specific settings. Values for all modified settings will be saved between sessions. 
+
+![Settings Dialog](/images/atom-guide/tools/settings-dialog.png)
