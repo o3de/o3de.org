@@ -8,21 +8,27 @@ toc: true
 
 ## Highlights for 23.05.0
 
-Here are some highlights of 23.05.0, followed by a detailed list of features broken down by SIG.
+Here are some highlights of **Open 3D Engine (O3DE)** 23.05.0, followed by a detailed list of features broken down by SIG.
 
 1.	New and Improved Authoring Experiences: 
 Material Canvas is a new intuitive, easy to use, node based, visual scripting interface that allows users to create new, custom shaders and materials. It is built upon the combined foundations of script canvas and Material Editor that O3DE users are already familiar with. For more information, refer to [sig-graphics-audio#51](https://github.com/o3de/sig-graphics-audio/issues/51).
 O3DE now has a Material Pipeline, a layer of abstraction between lighting and materials which utilizes new builders and new features from the asset system to build unique shaders for each render pipeline. This provides modularity and extensibility to the Atom Renderer, allowing easier customization of the render pipeline.
-Physics & animations improvements including support for PhysX 5.1 and improvements in multiple PhysX authoring workflows. Users will notice an update to the Animation Editor experience, which is now more consistent with other O3DE tools. The Animation Asset Import process is now more robust and straightforward, and the Animation Editor AnimGraph now has a Performance Visualizer to help users profiling and optimizing their Animgraphs.
+Physics & animations improvements including support for PhysX 5.1 and improvements in multiple PhysX authoring workflows. Users will notice an update to the Animation Editor experience, which is now more consistent with other O3DE tools. The Animation Asset Import process is now more robust and straightforward, and the Animation Editor AnimGraph now has a Performance Visualizer to help users profiling and optimizing their AnimGraphs.
 Terrain System now provides users a paintbrush tool so they may paint inside the viewport to create or modify terrain.
 
-2.	Multiplayer Sample Game: The repository O3DE-MultiplayerSample is home to O3DE’s newest project, a networked player vs. player vs. environment game supporting 1 to 15 players. In this sample, players compete for the highest score to win. Over a series of rounds, players race around the starbase to collect gems and rack up points. Each player is armed with a laser pistol and protected by a shield. Taking damage from laser blasts depletes the player's shield. When the shield is depleted, the player respawns at the cost of some of their collected gems. Do you risk it all to win? Players Read more at https://github.com/o3de/o3de-multiplayersample#readme
+2.	Multiplayer Sample Game: The [`o3de-multiplayersample` repository](https://github.com/o3de/o3de-multiplayersample) is home to O3DE's newest project, a networked, player versus player versus environment game that supports 1 to 15 players. In this game, players compete for the highest score to win. Over a series of rounds, players race around the starbase to collect gems and rack up points. Each player is armed with a laser pistol and protected by a shield. Taking damage from laser blasts depletes the player's shield. When the shield is depleted, the player respawns at the cost of some of their collected gems. Do you risk it all to win? Players Read more at https://github.com/o3de/o3de-multiplayersample#readme
 
 3.	New Asset Browser: O3DE now has a new Asset Browser Experience within the Editor that provides users with multiple layout options, file operations, an asset inspector panel, and other operations to manage their assets.
 
 4. 	Installation and Gem Improvements: Multiple versions of O3DE can now be installed on the same drive, and projects are aware of which O3DE version they were created in and last used with. In addition Gems creators can now specify compatible platforms, which can be filtered against in the gem catalog.
 
 5.	Additional VR/XR support: Support for stereoscopic rendering (i.e VR support) via OpenXR within O3DE.
+
+
+## Feature grid
+
+The feature grid represents the current state of development for each feature in O3DE. Review the [live feature grid](https://o3de.github.io/community/features/form.html) and select a SIG to see their latest feature statuses. 
+
 
 ## Features and bug fixes
 
@@ -52,6 +58,9 @@ Terrain System now provides users a paintbrush tool so they may paint inside the
 * Viewport UI Switcher Improvements ([#13108](https://github.com/o3de/o3de/pull/13108), [#13036](https://github.com/o3de/o3de/pull/13036))
 * Multiple fixes and improvements to Editor's "Be this camera" functionality ([#14269](https://github.com/o3de/o3de/pull/14269), [#15119](https://github.com/o3de/o3de/pull/15119))
 * Several small improvements to viewport camera behavior ([#12882](https://github.com/o3de/o3de/pull/12882), [#13408](https://github.com/o3de/o3de/pull/13408), [#13433](https://github.com/o3de/o3de/pull/13433), [#13590](https://github.com/o3de/o3de/pull/13590), [#13626](https://github.com/o3de/o3de/pull/13626), [#13628](https://github.com/o3de/o3de/pull/13628), [#13669](https://github.com/o3de/o3de/pull/13669))
+* Improved Editor extensibility with the introduction of a new Action Manager API that allows adding menus, hotkeys, and, contextual actions from Gems and/or Python scripts. Learn more about this feature at https://www.o3de.org/docs/user-guide/action-manager/index.md
+
+
 
 ### sig-core
 
