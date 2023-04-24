@@ -46,7 +46,7 @@ The following are generally only relevant during project development, when asset
 
 ### Critical Assets
 
-Critical assets are assets which are required to start the engine and must be processed by the Asset Processor before start-up can complete.  Critical assets are prioritized by Asset Processor before any other type of asset.  They are declared by Asset Builders as part of the [Job Descriptor](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Tools/AssetProcessor/AssetBuilderSDK/AssetBuilderSDK/AssetBuilderSDK.h#L446).  The exception to this is if a critical asset has a Job Dependency on a non-critical asset, the non-critical asset will be processed first.  It is recommended to keep these type of assets to a minimum as they can considerably impact the time taken to start the engine.
+Critical assets are assets which are required to start the engine and must be processed by the Asset Processor before start-up can complete.  Critical assets are prioritized by Asset Processor before any other type of asset.  They are declared by Asset Builders as part of the [Job Descriptor](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Tools/AssetProcessor/AssetBuilderSDK/AssetBuilderSDK/AssetBuilderSDK.h#L446).  The exception to this is if a critical asset has a Job Dependency on a non-critical asset, the critical asset will wait until the non-critical asset has been processed before proceeding.  This can result in the critical asset waiting until all the other critical assets have finished first before its dependencies can even start processing.  It is recommended to keep these type of assets to a minimum as they can considerably impact the time taken to start the engine.
 
 ### Asset Job Escalation
 
