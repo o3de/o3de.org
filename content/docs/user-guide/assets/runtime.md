@@ -8,17 +8,20 @@ toc: true
 
 ## Asset References
 
-The [AZ::Data::Asset](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L293) class is used to reference an `AssetData` object (an asset) and is essentially a smart pointer.  When all references to a given asset are released, the asset is unloaded.  When an `Asset<T>` type is saved to disk, it is saved as an AssetId that can be used to load the asset again later.
+The [AZ::Data::Asset](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L293) class is used to reference an `AssetData` object (an asset) and is essentially a smart pointer.  When all references to a given asset are released, the asset is unloaded.  When an `Asset<T>` type is saved to disk, it is saved as an AssetId that can be used to load the asset again later.
+
 
 ## Loading Assets at Runtime
 
-The [AZ::Data::AssetManager](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Framework/AzCore/AzCore/Asset/AssetManager.h#L136) system is responsible for loading and managing assets at runtime.
+The [AZ::Data::AssetManager](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Asset/AssetManager.h#L136) system is responsible for loading and managing assets at runtime.
+
 
 `GetAsset` is the primary API used to load an existing asset.  It returns an `Asset<T>` reference.  Only one copy of an asset is loaded in memory at a time, so if an asset is already loaded or currently loading, no new load requests will be made; the `Asset<T>` returned will point to the same `AssetData` and will be ready when the load is finished (if it hasn't already finished).  `GetAsset` is a non-blocking asychronous API, meaning the asset data may not be available immediately after the call completes.
 
 There are two ways to handle waiting for an asset load to complete: the blocking way is to call [BlockUntilLoadComplete](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L387) on the `Asset<T>` reference.  This will block the current thread until loading of the asset is completed.  The other (and recommended) option is to connect to the [AssetBus](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L527) and handle the `OnAssetReady`/`OnAssetReloaded` events for your asset.
 
-Note that the engine does not currently support load cancelling (cancelling a load request before completion), making it possible to call GetAsset and then discard the result while waiting for `OnAssetReady` to be called.  This is highly discouraged as it would stop functioning if/when load cancelling support is added.
+Note that the engine does not currently support load cancelling (cancelling a load request before completion), making it possible to call `GetAsset` and then discard the result while waiting for `OnAssetReady` to be called.  This is highly discouraged, as it would stop functioning if/when load cancelling support is added.
+
 
 ### Dependency Loading
 
