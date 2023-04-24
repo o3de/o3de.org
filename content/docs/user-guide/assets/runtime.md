@@ -6,6 +6,8 @@ weight: 700
 toc: true
 ---
 
+The runtime asset system is responsible for loading and managing assets in the editor/launcher of O3DE.  An asset corresponds to a single file that has been proccessed by the Asset Processor into a Product Asset.  Each asset is given a unique ID called an AssetId which is composed of the UUID of the Source Asset along with the SubId of the Product Asset.
+
 ## Asset References
 
 The [AZ::Data::Asset](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L293) class is used to reference an `AssetData` object (an asset) and is essentially a smart pointer.  When all references to a given asset are released, the asset is unloaded.  When an `Asset<T>` type is saved to disk, it is saved as an AssetId that can be used to load the asset again later.
@@ -20,7 +22,7 @@ The [AZ::Data::AssetManager](https://github.com/o3de/o3de/blob/development/Code/
 
 There are two ways to handle waiting for an asset load to complete: the blocking way is to call [BlockUntilLoadComplete](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L387) on the `Asset<T>` reference.  This will block the current thread until loading of the asset is completed.  The other (and recommended) option is to connect to the [AssetBus](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L527) and handle the `OnAssetReady`/`OnAssetReloaded` events for your asset.
 
-Note that the engine does not currently support load cancelling (cancelling a load request before completion), making it possible to call `GetAsset` and then discard the result while waiting for `OnAssetReady` to be called.  This is highly discouraged, as it would stop functioning if/when load cancelling support is added.
+Note that the engine does not currently support load cancelling (cancelling a load request before completion), making it possible to call `GetAsset` and then discard the result while waiting for `OnAssetReady` to be called.  It is best to avoid relying on this as it is not an intended feature.  Asset references should always be stored for as long as the asset is expected to be loaded (generally when the asset is in use).
 
 
 ### Dependency Loading
@@ -34,7 +36,9 @@ Keep in mind that regardless of the settings, AssetManager makes no guarantees o
 
 ### Hot-Reloading
 
-The Asset System provides support for hot-reloading, which is the updating of loaded, in-memory assets when the on-disk asset changes.  When the Asset Processor finishes processing an asset, a notification is sent out to the engine; if the asset in question is already loaded or loading, a reload request is queued and the Asset Manager starts loading the newly updated asset.  Each system utilizing the Asset System must implement support for this individually by handling the [OnAssetReloaded](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L603) event.
+The Asset System provides support for hot-reloading, which is the updating of loaded, in-memory assets when the on-disk asset changes.  Hot-reloading allows content creators to quickly iterate on assets and see the changes update live without needing to restart the engine.  When the Asset Processor finishes processing an asset, a notification is sent out to the engine; if the asset in question is already loaded or loading, a reload request is queued and the Asset Manager starts loading the newly updated asset.  Each system utilizing the Asset System must implement support for this individually by handling the [OnAssetReloaded](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Framework/AzCore/AzCore/Asset/AssetCommon.h#L603) event.
+
+Often, projects copy data out of loaded assets to perform additional processing. A common error around asset reloading is to not refresh any copied data. For example, if your project is a game that uses an XML file to define the player's movement speed, and when this XML file is loaded, the information is copied to a component on the player entity, then when a reload event occurs, it's important to also re-copy the information over to the player entity. Otherwise, the player will continue to move at the old movement speed, even if the XML file is updated to change it.
 
 ## Asset Processing Prioritization
 
@@ -42,7 +46,7 @@ The following are generally only relevant during project development, when asset
 
 ### Critical Assets
 
-Critical assets are assets which are required to start the engine and must be processed by the Asset Processor before start-up can complete.  Critical assets are prioritized by Asset Processor before any other type of asset.  They are declared by Asset Builders as part of the [Job Descriptor](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Tools/AssetProcessor/AssetBuilderSDK/AssetBuilderSDK/AssetBuilderSDK.h#L446).  It is recommended to keep these type of assets to a minimum as they can considerably impact the time taken to start the engine.
+Critical assets are assets which are required to start the engine and must be processed by the Asset Processor before start-up can complete.  Critical assets are prioritized by Asset Processor before any other type of asset.  They are declared by Asset Builders as part of the [Job Descriptor](https://github.com/o3de/o3de/blob/18205539abf1b1d2eb3959c0a1c42a3eea16a455/Code/Tools/AssetProcessor/AssetBuilderSDK/AssetBuilderSDK/AssetBuilderSDK.h#L446).  The exception to this is if a critical asset has a Job Dependency on a non-critical asset, the non-critical asset will be processed first.  It is recommended to keep these type of assets to a minimum as they can considerably impact the time taken to start the engine.
 
 ### Asset Job Escalation
 
