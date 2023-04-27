@@ -11,7 +11,10 @@ toc: true
 
 URDF and XACRO are robot description standards used widely in the ROS ecosystem. [Unified Robotics Description Format (URDF)](http://wiki.ros.org/urdf) is a file format used in robotics to describe the physical characteristics of a robot in a structured and standardized way. It is based on XML and includes information about the robot's joints, links, sensors, and other components, as well as their properties such as mass, inertia, and geometry. [XML Macros (XACRO)](http://wiki.ros.org/xacro) is a macro language that is used to simplify the creation and maintenance of URDF files. It is a way to generate URDF files using XML macros that can be expanded and reused across multiple robot models. Xacro allows the user to define parameters and include files, which can be used to make changes to the robot model quickly and easily.
 
-URDF/XACRO files can contain complete robot descriptions and links to geometry files, but not the geometry as such. Thus typically robot models are made available in packages with additional files containing visualizations and collision shapes. Typical formats of mesh files in robotics are [Collada DAE](https://en.wikipedia.org/wiki/COLLADA) and [STL](https://en.wikipedia.org/wiki/STL_(file_format)). It is also a common practice to make available such robot packages as ROS workspaces, which make them easier to use in ROS applications.
+URDF/XACRO files contain complete robot descriptions, including references to external geometry files. While primitive geometries can be defined directly within the URDF/XACRO file, it is common practice to use external mesh files in formats such as Collada DAE or STL to represent the visual and collision shapes of the robot.
+Robot models are typically made available in packages that include the URDF/XACRO file and additional files containing visualizations and collision shapes, whether those shapes are primitive geometries or external mesh files. These packages may be distributed as ROS workspaces, which makes them easier to use in ROS applications. ROS is a popular open-source framework for building robot software and includes many tools and libraries for working with URDF/XACRO files and robot models.
+
+ Thus typically robot models are made available in packages with additional files containing visualizations and collision shapes. Typical formats of mesh files in robotics are [Collada DAE](https://en.wikipedia.org/wiki/COLLADA) and [STL](https://en.wikipedia.org/wiki/STL_(file_format)). It is also a common practice to make available such robot packages as ROS workspaces, which make them easier to use in ROS applications.
 
 ### URDF/XACRO importer - general description
 
@@ -20,7 +23,7 @@ Both URDF and XACRO files can be imported into the O3DE using the importer inclu
 - The importer can read both: URDF, as well as XACRO files.
 - The importer takes into account all features of the XACRO format, such as includes and variables.
 - Mesh files can be copied automatically to the asset folder of the O3DE project.
-- The importer creates a multi-body structure using articulations or classic rigid bodies and joints models.
+- The importer creates a multi-body structure using articulations or classic rigid bodies and joints components.
 
 ### Importing URDF/XACRO - step-by-step
 
@@ -28,7 +31,7 @@ Both URDF and XACRO files can be imported into the O3DE using the importer inclu
 
 > 1. Importing URDF/XACRO files requires ROS-ready project with a ROS Gem enabled. Please refer to the [Project Configuration section](project-configuration.md) for details.
 > 2. In this section it is assumed, you have already created a O3DE project. Additional information on creating a robotic project can be found in the [Creating a Robotic Simulation section](creating-robotic-simulation.md)
-> 3. When using a XACRO files which are a part of a ROS workspace, it may be required to build the workspace first. Otherwise, the importer may fail to find all required files. Please refer to the documentation of the workspace for building instructions (typically you have to place it in the `src` folder of your ROS workspace and perform `colcon build`).
+> 3. When using a XACRO files which are a part of a ROS workspace, it may be required to build the workspace first. Otherwise, the importer may fail to find all required files. Please refer to the documentation of the robot's description package for building instructions (typically you have to place it in the `src` folder of your ROS workspace and perform `colcon build`).
 
 #### Parsing URDF/XACRO file
 
@@ -56,7 +59,7 @@ Both URDF and XACRO files can be imported into the O3DE using the importer inclu
 
 > Note: which parameters must be set for succesful import strictly depends on the XACRO project you are importing. Please refer to its documentation for more information.
 
-If import fails you will see a message with the output of the ROS XACRO converter.
+If import fails you will see a message with the output of the ROS 2 XACRO executable.
 
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_fail.png)
 
@@ -65,9 +68,9 @@ If import fails you will see a message with the output of the ROS XACRO converte
 6. If the XACRO or URDF file is loaded correctly you will see a table with a list of all mesh files (assets) used in the model. Each row of the table describes one asset, with information divided into the following columns:
 
 - **URDF mesh path** - path extracted from the URDF
-- **Resolved mesh from URDF** - file path of the mesh located in the filesystem
-- **Product asset** - location of the asset description (`*.azmodel` or `*.pxmesh`) in the O3DE project assets folder
-- **Source asset** - location of the asset mesh file in the O3DE project assets folder
+- **Resolved mesh from URDF** - file path of the mesh located in user's filesystem
+- **Product asset** - location of the generated asset (`*.azmodel` or `*.pxmesh`) in the O3DE project assets directory
+- **Source asset** - location of the asset mesh file in the O3DE project assets directory
 - **Type** - the type of the asset, which can be `visual` or `collider`
 
 Besides this information, there is an indication if the asset was imported correctly (green) or if the import failed (red).
@@ -79,7 +82,8 @@ Click **Next** when finished.
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_mesh_list.png)
 
 **What to do if there are problems with importing assets?**
-
+If the Source asset field is marked as failed, it is caused by a URDF importer failure to find a reference to the mesh file in the file system. In such a situation, double-check whether the robot's description package was built and sourced correctly.
+If the Product asset field is marked as failed, it is caused by the Asset Builder failing to build the product asset. Refer to the Asset Processor output to resolve the issue.
 You can do either:
 
 - click **Back**, resolve problems with mesh files and click **Next** to retry import, or
