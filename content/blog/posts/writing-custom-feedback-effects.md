@@ -1,6 +1,6 @@
 ---
 title: "Writing Custom Effects for the Editor Mode Visual Feedback System"
-date: 2023-04-01
+date: 2023-05-07
 slug: writing-custom-effects-emvf
 author: John Coimbra Walsh
 blog_img: "/images/blog/dev-series.JPG"
