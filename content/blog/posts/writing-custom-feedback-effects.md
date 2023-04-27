@@ -111,7 +111,7 @@ void EditorModeFeatureProcessor::Activate()
 }
 ```
 
-The result of adding this state is to apply the tint effect pass to everything in the viewport. This state is always on and so not particularly useful, and the result is not terribly exciting:
+The result of adding this state is to apply the tint effect pass to everything in the viewport. This state is always on but in further steps we will implement the logic to be more selective with what we shade:
 
 {{< image-width src="/images/blog/writing-custom-effects-emvf/image1.png" width="100%" alt="Step 1: Tint Pass" >}}
 
@@ -141,7 +141,7 @@ ExampleEditorState::ExampleEditorState()
 }
 ```
 
-Again, the result isn’t terribly exciting. We can see that the skybox has been desaturated in comparison to the previous output:
+The result isn't so different from the previous output but we can see that the skybox has been desaturated in comparison:
 
 {{< image-width src="/images/blog/writing-custom-effects-emvf/image2.png" width="100%" alt="Step 2: Multi Pass" >}}
 
@@ -306,7 +306,7 @@ ExampleEditorState::ExampleEditorState()
 }
 ```
 
-The output may not be the most exciting effect but we now have the foundation to implement any manner of cool and interesting effects for this editor state:
+We now have the foundation to implement any manner of cool and interesting effects for this editor state:
 
 {{< image-width src="/images/blog/writing-custom-effects-emvf/image3.png" width="100%" alt="Step 3: Custom Shader" >}}
 
@@ -535,7 +535,7 @@ PSOutput MainPS(VSOutput IN)
 }
 ```
 
-The output isn’t any more useful than the previous examples but we can at least see a non-trivial effect being applied to entities in a real-world situation. Here, the entity selection is rendered as normal whereas everything else in the viewport has the custom effect applied to it:
+The output more visually interesting than the previous examples as we can see a non-trivial effect being applied to entities in a real-world situation. Here, the entity selection is rendered as normal whereas everything else in the viewport has the custom effect applied to it:
 
 {{< image-width src="/images/blog/writing-custom-effects-emvf/image8.png" width="100%" alt="Step 5: Bokeh Blur" >}}
 
