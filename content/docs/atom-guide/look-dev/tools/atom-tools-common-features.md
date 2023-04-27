@@ -22,10 +22,10 @@ Each tool is designed specifically for a set of document types:
 - Shader Management Console supports one document type for ".shadervariantlist" files. 
 
 You can open and edit multiple documents at the same time.
-- Each document will be represented and accessible using a tab at the top of the central window.
+- Access each document using a tab at the top of the central window. 
 - Each document tab displays the file name of the document.
-- Right clicking on a tab will open a context menu with document-centric actions.
-- Selecting a tab will activate the corresponding document, display any associated views, and update other windows, like the inspector, with content from the document.
+- **Right-click** on a tab to open a context menu with document-centric actions.
+- Select a tab to activate the corresponding document, display any associated views, and update other windows, like the inspector, with content from the document.
 
 ## Single Instance
 By default, the tools are set up to only allow a single instance to be run at a time. Attempting to relaunch a tool that is already running will bring focus to the existing instance. If a tool is running and you attempt to open an associated file type from the O3DE editor or file browser then it will open in the same tool in a new tab. 
