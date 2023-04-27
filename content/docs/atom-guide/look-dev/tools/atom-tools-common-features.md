@@ -21,7 +21,7 @@ Each tool is designed specifically for a set of document types:
 - Material Canvas supports multiple document types for ".materialgraph", ".materialgraphnode", and ".shader" files. 
 - Shader Management Console supports one document type for ".shadervariantlist" files. 
 
-Multiple documents can be opened and edited at the same time.
+You can open and edit multiple documents at the same time.
 - Each document will be represented and accessible using a tab at the top of the central window.
 - Each document tab displays the file name of the document.
 - Right clicking on a tab will open a context menu with document-centric actions.
