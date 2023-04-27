@@ -16,7 +16,7 @@ A _document_ is the representation of a file or other data that you can create, 
 
 A _view_ is usually a window or other UI that allows you to visualize, inspect, or interact with a document.
 
-Tools can register and support any number of document types and views to enable editing different types of data and visualizing it in different ways. For example,
+Each tool is designed specifically for a set of document types:
 - Material Editor currently only supports one document type for editing ".material" and viewing ".materialtype" files
 - Material Canvas supports multiple document types for ".materialgraph", ".materialgraphnode", and ".shader" files. 
 - Shader Management Console supports one document type for ".shadervariantlist" files. 
