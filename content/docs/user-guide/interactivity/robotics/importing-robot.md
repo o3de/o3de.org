@@ -99,7 +99,7 @@ Click **Create Prefab** when finished.
 
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_prefab_creation.png)
 
-> Note: the decision whether to use articulations highly depends on the robot structure and simulation requirements. In general, articulations are more stable and computational efficient, but have some limitations. The 2 main limtation are:
+> Note: the decision whether to use articulations highly depends on the robot structure and simulation requirements. In general, articulations are more stable and computational efficient, but have some limitations. The 2 main limtations are:
 >
 >- Articulations are only available in PhysX 5. By default O3DE is build with PhysX 4.
 >- Articulations natively only support tree-structures - closed loops are not allowed.
