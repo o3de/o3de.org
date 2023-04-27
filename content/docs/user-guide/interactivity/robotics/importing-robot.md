@@ -51,7 +51,7 @@ Both URDF and XACRO files can be imported into the O3DE using the importer inclu
 
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_load_file.png)
 
-> Note: if you leave the **Import meshes...** checkbox unchecked, the importer will try to find matching meshes in the project asset library.
+> Note: if you leave the **Import meshes...** checkbox unchecked, the importer will try to find matching meshes in the project asset library. Verification of identity of meshes is done by CRC comparison.
 
 5. If you are importing a XACRO file that features parameters to be set, you will be asked to do so on the next page. Parameters can be edited by double-clicking on the value. Click **Next** when finished.
 
