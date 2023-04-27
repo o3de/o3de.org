@@ -14,7 +14,7 @@ All of the Atom tools use a multi-document, multi-view system. This allows all o
 
 A _document_ is the representation of a file or other data that you can create, open, and edit from within a tool. At a minimum, all document types support actions to open, save, undo, redo, and provide a list of properties that you can edit in an inspector, 
 
-A view is usually a window or other UI that allows you to visualize, inspect, or interact with a document.
+A _view_ is usually a window or other UI that allows you to visualize, inspect, or interact with a document.
 
 Tools can register and support any number of document types and views to enable editing different types of data and visualizing it in different ways. For example,
 - Material Editor currently only supports one document type for editing ".material" and viewing ".materialtype" files
