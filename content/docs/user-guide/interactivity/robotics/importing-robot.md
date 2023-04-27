@@ -99,7 +99,12 @@ Click **Create Prefab** when finished.
 
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_prefab_creation.png)
 
-> Note: the decision whether to use articulations highly depends on the robot structure and simulation requirements. In general, articulations are more stable and computational efficient, but have some limitations. The most important limtation is that articulations natively only support tree-structures - closed loops are not allowed. The "rule of thumb" would be to use articulations in robotic simulation whenever it is possible. However please refer to [this documentation](https://nvidia-omniverse.github.io/PhysX/physx/5.1.3/docs/Articulations.html) for more details.
+> Note: the decision whether to use articulations highly depends on the robot structure and simulation requirements. In general, articulations are more stable and computational efficient, but have some limitations. The 2 main limtation are:
+>
+>- Articulations are only available in PhysX 5. By default O3DE is build with PhysX 4.
+>- Articulations natively only support tree-structures - closed loops are not allowed.
+>
+>The "rule of thumb" would be to use articulations in robotic simulation whenever it is possible. However please refer to [this documentation](https://nvidia-omniverse.github.io/PhysX/physx/5.1.3/docs/Articulations.html) for more details.
 
 8. The last page of the wizard shows a summary of entities.
 
