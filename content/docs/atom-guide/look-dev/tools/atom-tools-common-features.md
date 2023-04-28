@@ -26,7 +26,7 @@ You can open and edit multiple documents at the same time.
 - **Right-click** on a tab to open a context menu with document-centric actions.
 - Select a tab to activate the corresponding document, display any associated views, and update other windows, like the inspector, with content from the document.
 
-## Single Instance
+## Single instance
 By default, the tools are set up to only allow a single instance to run at a time. If you attempt to relaunch a tool that is already running, it instead focuses on the existing instance. If a tool is running and you attempt to open an associated file type from the O3DE Editor or file browser, then it opens in the same tool in a new tab. 
 
 ## Python Scripting
