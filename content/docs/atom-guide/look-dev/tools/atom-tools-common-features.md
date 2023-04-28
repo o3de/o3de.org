@@ -31,7 +31,7 @@ You can open and edit multiple documents at the same time.
 By default, the tools are set up to only allow a single instance to run at a time. If you attempt to relaunch a tool that is already running, it instead focuses on the existing instance. If a tool is running and you attempt to open an associated file type from the O3DE Editor or file browser, then it opens in the same tool in a new tab. 
 
 ## Python Scripting
-All tools built on this foundation have common APIs for scripting, automation, and extension with Python. While there are differences from the main O3DE Editor environment and scripting API, you should have access to all other scripting features from your project and enabled gems.
+All tools built on this foundation have common APIs for scripting, automation, and extension with Python. While there are differences from the main O3DE Editor environment and scripting API, you should have access to all other scripting features from your project and enabled Gems.
 - The document system are fully scriptable.
 - Several utility functions used in C++ that are also available in Python.
 - Use PyQt for controlling and extending the UI. 
