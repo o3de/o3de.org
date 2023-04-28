@@ -63,7 +63,7 @@ Use the Logging window to review all of the trace, warning, and error messages r
 #### Python Terminal
 Use the Python terminal to invoke script commands directly from within the tool. It will also display the output, warnings, and errors from any Python code executed during the session. There are other buttons to display available script commands and buses.
 
-## Main Menus
+## Main menus
 The main menu bar in every tool contains a common set of options but can be customized by each tool. 
 
 ### File Menu
