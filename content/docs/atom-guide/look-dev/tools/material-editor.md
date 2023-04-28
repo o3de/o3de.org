@@ -24,12 +24,11 @@ There are multiple ways to launch Material Editor.
 ### Creating materials
 You have multiple options to start editing a material.
 - Create a new material from a material type.
-  - Select **Main Menu > File > New...**.
-    - This opens the "Create Material Document" dialog.
-  - Select a material type as the basis for your new material.
-  - Select a path and file name for the new material.
-- Open an existing material
-  - Select **Main Menu > File > Open...**.
+  1. Select **Main Menu > File > New...**. This opens the **Create Material Document** dialog.
+  2. Select a material type as the basis for your new material.
+  3. Select a path and file name for the new material.
+- Open an existing material,
+  1. Select **Main Menu > File > Open...**.
 - Open or create a material from the Asset Browser.
 
 ### Editing Materials
