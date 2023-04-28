@@ -100,8 +100,8 @@ Similar to Script Canvas and Landscape Canvas, you can select, align, delete, du
 ### View menu
 In addition to options common to Atom tools, there are also options to navigate and manage the graph view, as well as open an editor to configure comment nodes and node group presets.
 
-### Tools Menu
-Material Canvas adds actions for toggling its additional dockable windows. 
+### Tools menu
+From the Tools menu, you can toggle dockable windows that are specific to Material Canvas.
 
 ### Docked Windows
 Material Canvas provides several additional windows related to working with graphs. Unlike Material Editor, the viewport is also dockable. 
