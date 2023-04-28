@@ -81,7 +81,7 @@ The Viewport Settings panel displays options to configure the Viewport propertie
 For more information about the viewport settings, see [Atom Tools Viewport](/docs/atom-guide/look-dev/tools/atom-tools-viewport/).
 
 ## Troubleshooting
-### Material Editor Fails To Launch
+### Material Editor fails to launch
 Material Editor normally initializes all of the gems enabled by the active project. In order to reduce start times and system resource utilization, Material Editor, and the other atom tools, includes registry setting files that forcibly disable several standard O3DE gems that are not likely to be needed within the tool.
 
 If Material Editor fails to launch then it may be because of dependency issues with gems in the active project. Check MaterialEditor.log for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Editor project registry folder.
