@@ -32,10 +32,10 @@ By default, the tools are set up to only allow a single instance to run at a tim
 
 ## Python Scripting
 All tools built on this foundation have common APIs for scripting, automation, and extension with Python. While there are differences from the main O3DE Editor environment and scripting API, you should have access to all other scripting features from your project and enabled Gems.
-- The document system are fully scriptable.
-- Several utility functions used in C++ that are also available in Python.
+- The document system is fully scriptable.
+- Several utility functions used in C++ are also available in Python.
 - Use PyQt for controlling and extending the UI. 
-- Scripts can be run from the file menu, Asset Browser context menu, or passed in as command line arguments. 
+- Run scripts from the file menu, Asset Browser context menu, or passed in as command line arguments. 
 
 ## Main Window
 The main window is the hub and owns all of the user interface for a tool.
