@@ -1,13 +1,11 @@
 ---
 linkTitle: Prefab System 
-title: Developer guide to the Prefab system in O3DE
+title: Developer guide to the Prefab System in O3DE
 description: Learn about the prefab system, which is the default scene authoring system in O3DE.
 weight: 100
 ---
 
 ## Glossary
-<!-- <a name="glossary"> -->
-
 | Name            | Description |
 | :-              | :-          |
 | Entity          | A collection of components that define the properties and behavior of the entity. |
@@ -24,7 +22,7 @@ weight: 100
 ## Overview
 <!-- <a name="overview"> -->
 
-To get an understanding of what prefabs are, we first need to understand what entities are. Entities are the foundational game objects that encapsulate logic required to build game worlds. An entity is made up of components that define its properties. More information about entities and components can be found in [Guide to Component Development](https://www.o3de.org/docs/user-guide/programming/components/). 
+To get an understanding of what prefabs are, we first need to understand what entities are. Entities are the foundational game objects that encapsulate logic required to build game worlds. An entity is made up of components that define its properties. More information about entities and components can be found in [Guide to Component Development](/docs/user-guide/programming/components). 
 
 Prefabs serve the purpose of easily building and modifying large and complex worlds for games. Creating large worlds often requires duplicating a lot of entities in the world. While this can be done by simply creating a bunch of entities and duplicating them in the editor, modifying them becomes a pain point since you would have to go into each of those entities and make the same changes. You would also have to come up with custom tracking mechanisms to identify which entities to modify in which areas of the world. In addition, you may also want some entities to retain their old properties and not to change along with other entities. All of these problems are resolved by prefabs.
 
@@ -38,7 +36,7 @@ Prefab files use JSON format. A prefab file has the following fields.
 
 <dl>
   <dt>Container Entity</dt>
-  <dd>A wrapper entity, which is the parent of all other entities and nested prefabs contained within a prefab. This is also used to distinguish prefabs from regular entities in the <a href="https://www.o3de.org/docs/user-guide/editor/entity-outliner/"><b>Entity Outliner</b></a>. A prefab must have a single container entity.</dd>
+  <dd>A wrapper entity, which is the parent of all other entities and nested prefabs contained within a prefab. This is also used to distinguish prefabs from regular entities in the <a href="/docs/user-guide/editor/entity-outliner/"><b>Entity Outliner</b></a>. A prefab must have a single container entity.</dd>
 
   <dt>Entities</dt>
   <dd>A container for entities owned by a prefab. A prefab may contain zero or more nested entities.</dd>
@@ -201,7 +199,7 @@ For example, this is a prefab that contains a single entity and a single nested 
 ```
 </details>
 
-To see what prefabs and entities look like in the Entity Outliner, see [Entity and Prefab Basics](https://www.o3de.org/docs/learning-guide/tutorials/entities-and-prefabs/entity-and-prefab-basics/).
+To see what prefabs and entities look like in the Entity Outliner, see [Entity and Prefab Basics](/docs/learning-guide/tutorials/entities-and-prefabs/entity-and-prefab-basics/).
 
 ### Prefab template
 <!-- <a name="prefab-template"> -->
