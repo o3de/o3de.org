@@ -106,8 +106,12 @@ From the Tools menu, you can toggle dockable windows that are specific to Materi
 ### Docked windows
 Material Canvas provides several additional windows related to working with graphs. Unlike Material Editor, the viewport is also dockable. 
 
-#### Node Palette
-The node palette contains a tree of all available material graph nodes, and other utility nodes, that can be added to a graph. The nodes are organized by category and color coded by type. Hovering the mouse cursor over each node in the tree will display a tool tip describing its purpose. Drag nodes from the palette into the active graph view to create an instance of that node at the drop position on the graph.
+#### Node palette
+The node palette contains a tree of all available material graph nodes and other utility nodes, that you can add to a graph. The nodes are organized by category and color-coded by type. 
+
+You can do the following actions: 
+- **Hover** over each node in the tree to read details about the node. 
+- **Drag** nodes from the palette into the active graph view to create an instance of that node at the drop position on the graph.
 
 #### Bookmarks
 Use the bookmarks panel to manage all of the bookmarks on the active graph. Place bookmarks on the graph, like pins on a map, as a point of reference for any important positions. Double clicking on a bookmark will center the graph view on that position. Bookmark descriptions and colors are configurable in the bookmarks panel and inspector.
