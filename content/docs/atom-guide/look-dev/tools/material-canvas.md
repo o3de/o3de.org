@@ -29,14 +29,14 @@ There are multiple ways to launch Material Canvas.
 
 ### Creating material graphs
 You have multiple options to start editing a material graph.
-- By default, Material Canvas starts with an untitled, blank material graph document that is ready for immediate use.
-  - Until you save the graph, generated files will be output to your project Assets/Materials/Generated folder.
-  - If you save the graph, generated files will be output to the same folder as the graph. 
+- By default, Material Canvas starts with an untitled, blank material graph document, which you can use to create a new material graph.
+    {{< note >}}
+    Until you save the graph, generated files are temporarily output to the `Assets/Materials/Generated` folder in your project. When you save the graph, the generated files output to the same folder as the graph. 
+    {{< /note >}}
 - Create a new material graph from a template.
-  - Select **Main Menu > File > New > New Material Graph Document...**.
-    - This opens the "Create Material Graph Document" dialog.
+  - Select **Main Menu > File > New > New Material Graph Document...**. This opens the **Create Material Graph Document** dialog.
   - Select a template as the basis for your new material graph.
-    - Templates are material graphs saved with a special ".materialgraphtemplate" extension that designates them as a starting point for new graphs.
+    - Templates are material graphs saved with a special `.materialgraphtemplate` extension that designates them as a starting point for new graphs.
   - Select a path and file name for the new material graph.
 - Open an existing material graph
   - Select **Main Menu > File > Open > Open Material Graph Document...**.
