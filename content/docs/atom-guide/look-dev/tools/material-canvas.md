@@ -144,7 +144,7 @@ When you create a node, the node appears at the drop or click position. The node
 
 Depending on system constraints, this process can be repeated to add any number of nodes to a graph. Some operations may take longer to perform based on the number of nodes on a graph or the number of selected nodes.
 
-After nodes are added to the graph they can be moved and reorganized by dragging them to new positions. There are actions on the toolbar and in the Edit Menu for changing the placement and alignment of selected nodes.
+After nodes are added to the graph, you can move and reorganize them by dragging them to new positions. Access actions in the toolbar and in the Edit Menu to change the placement and alignment of selected nodes.
 
 ### Node Slots and Connections
 Every Material Canvas node will have some number of slots. Slots define properties, inputs, and outputs for a node.
