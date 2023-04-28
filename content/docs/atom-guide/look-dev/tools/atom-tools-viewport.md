@@ -132,5 +132,5 @@ The **Lighting Preset Browser** window opens when the **Select** button is press
 ![Lighting Preset Browser](/images/atom-guide/tools/lighting-preset-browser.png)
 
 {{< note >}}  
-Lighting and model presets can be stored in any valid source asset folder in your project or gems. They will automatically be discovered and selectable from the Viewport Toolbar or Viewport Settings Panel. 
+Lighting and model presets can be stored in any valid source asset folder in your project or Gems. They will automatically be discovered, and you can select them from the Viewport Toolbar or Viewport Settings Panel. 
 {{< /note >}}  
