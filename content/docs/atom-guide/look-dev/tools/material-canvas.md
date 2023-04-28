@@ -182,7 +182,7 @@ The function node category contains several math related and utility function no
 #### Texturing nodes
 This category contains nodes related to texture sampling. Note that some texture sampling nodes sample from a constant vector by default. You may require input from a UV node or other varying vertex attribute node to sample using texture coordinates covering a surface or model.
 
-#### Scene Nodes
+#### Scene nodes
 This category is intended to contain nodes for elements of the Scene SRG. At this time, the only exposed node is Time.
 
 #### Utility nodes
