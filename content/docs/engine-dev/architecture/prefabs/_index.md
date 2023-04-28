@@ -210,7 +210,7 @@ Each template has a unique identifier `TemplateId`, which is an unsigned integer
 
 For example, if there is one prefab file called `Bike.prefab`, there will be only one template associated with it. A template will only be created if a prefab is loaded into the editor.
 
-![Template-file relationship](./images/PrefabTemplate.png)
+![Template-file relationship](images/PrefabTemplate.png)
 
 | Code | Description |
 | :-   | :-          |
@@ -225,7 +225,7 @@ A *prefab instance* defines a prefab object that represents the DOM stored in th
 
 For example, if there is a Car prefab on file, there will be one Car template defined. Many instances can be generated using that single car template. Prefab instances can be populated by deserializing DOM into instance objects using `InstanceSerializer::Load()` method. Prefab instances can also be built from the ground up by adding entities to them directly. Similar to templates, prefab instances can be converted into DOM format by using `InstanceSerializer::Store()` method. Prefab serialization and deserialization will be discussed in detail in a following section.
 
-![Prefab-Instance Relationship](./images/PrefabInstance.png)
+![Prefab-Instance Relationship](images/PrefabInstance.png)
 
 | Code | Description |
 | :-   | :-          |
@@ -250,7 +250,7 @@ One of the key members of a link object is the link DOM, which contains a file p
 > **Note**
 > In the latest development branch, a link maintains a `PrefabOverridePrefixTree` rather than a link DOM. The link DOM will be generated from the tree on the fly. This supports the new **Prefab Override** feature.
 
-![Link creation](./images/PrefabLink.png)
+![Link creation](images/PrefabLink.png)
 
 | Code | Description |
 | :-   | :-          |
@@ -320,7 +320,7 @@ The default behavior of the JSON serializer will exclude default values of types
 
 To prevent this from happening, you can define custom serializers to indicate what default values a certain field should take while loading. However, we cannot expect all components and types to have one custom serializer defined for sure. Therefore, during loading we add a sanitization phase where we temporarily serialize the same file with default values written out in place so that we can read from them. The opposite is done during saving where we temporarily serialize the file to strip out default values.
 
-![Prefab Sanitization](./images/PrefabSanitization.png)
+![Prefab Sanitization](images/PrefabSanitization.png)
 
 | Code | Description |
 | :-   | :-          |
@@ -364,7 +364,7 @@ The process of loading and saving a level follows what we have described above a
 
 One of the key mechanisms prefabs support is propagation. It means modifying one prefab instance and easily replicating the same changes to all the other prefab instances. For example, modifying the color of one wheel instance and replicating the change to all the wheels in the level. There can be different types of changes we may want to propagate such as modifying entities, removing components, adding nested prefabs, etc. But no matter what the type is, the flow of a propagation event looks like something below:
 
-![High-level propagation workflow](./images/PrefabPropagation.png)
+![High-level propagation workflow](images/PrefabPropagation.png)
 
 
 Propagation is an important mechanism that keeps templates, instances and links in sync after changes are applied. We start by making changes to an instance, then bringing the changes to the template it belongs to, and finally propagating the changes to all instances registered by the template. The flow of changes can be divided into three parts:
@@ -394,7 +394,7 @@ The objective here is to generate a patch and there are multiple ways to do that
 1. Serialize the instance after applying changes to generate **after-state instance DOM**.
 1. Compare both states and generate patches.
 
-![Patch generation by serializing the instance objects twice](./images/PrefabPatchGeneration1.png)
+![Patch generation by serializing the instance objects twice](images/PrefabPatchGeneration1.png)
 
 
 #### By serializing relevant entities only
@@ -411,7 +411,7 @@ The above approach works but has the downside of taking a lot of time to convert
 > **Note**
 > To be able to do this way though, we need to know that we would be only modifying a single entity or a group of entities. So this is used only for changes like entity updates.
 
-![Patch generation by serializing relevant entities only](./images/PrefabPatchGeneration2.png)
+![Patch generation by serializing relevant entities only](images/PrefabPatchGeneration2.png)
 
 
 #### By using template DOM as before state
@@ -462,7 +462,7 @@ Level
 
 For example, if we have a level like above and we update the DOM of the Wheel prefab instance's template. This is what the template-template propagation process would look like:
 
-![Template-template propagation](./images/PrefabTemplatePropagation.png)
+![Template-template propagation](images/PrefabTemplatePropagation.png)
 
 | Code | Description |
 | :-   | :-          |
@@ -477,7 +477,7 @@ As seen above, when a template gets updated, it will trigger the updates for dep
 
 Based on the same example above of the level having two Bike prefabs, this is what the template-instance propagation would look like:
 
-![Template-instance propagation](./images/PrefabInstancePropagation.png)
+![Template-instance propagation](images/PrefabInstancePropagation.png)
 
 The instance DOM used for deserialization corresponds to the instance as seen from the topmost template (level) in the hierarchy since it accounts for all possible overrides that may be applied to the instance. When the prefab being edited is not the level but some nested prefab within the level, then that prefab will become the topmost template and the DOM used will be the DOM as seen from that template.
 
@@ -508,7 +508,7 @@ The above sections cover core API features of prefabs and give an idea of how th
 
 In general, all of these below workflows follow this pattern:
 
-![Prefab editor workflow](./images/PrefabGenericEditorWorkflow.png)
+![Prefab editor workflow](images/PrefabGenericEditorWorkflow.png)
 
 > **Note**
 > The only exceptions to this are the duplicate workflows where instead of updating the prefab instances first, we take a DOM authoritative approach where we let propagation create the duplicate objects.
@@ -527,7 +527,7 @@ You can create a new entity owned by a prefab. The prefab is called the owning p
 
 The following diagram demonstrates how a new Engine entity is added to a Car prefab instance:
 
-![Editor workflow - Create entity](./images/PrefabCreateEntityWorkflow.png)
+![Editor workflow - Create entity](images/PrefabCreateEntityWorkflow.png)
 
 
 ### Create prefab
@@ -544,7 +544,7 @@ RaceTrack    (RaceTrack.prefab)
 
 In the above example, if you want to select the Wheel prefab and Engine entity and make a prefab out of them, this is what the workflow would look like:
 
-![Editor workflow - Create prefab](./images/PrefabCreatePrefabWorkflow.png)
+![Editor workflow - Create prefab](images/PrefabCreatePrefabWorkflow.png)
 
 When a template is removed from another template, we need to remove the link between the two templates too. It means deleting the `Link` object held in `PrefabSystemComponent`. The link between Wheel prefab and RaceTrack is deleted in the process of the above example.
 
@@ -560,7 +560,7 @@ Unlike **Create entity**, this workflow includes extra work on creating a link b
 
 The following diagram demonstrates how a Wheel prefab is instantiated and added to a Car prefab as a nested instance:
 
-![Editor workflow - Instantiate prefab](./images/PrefabInstantiatePrefabWorkflow.png)
+![Editor workflow - Instantiate prefab](images/PrefabInstantiatePrefabWorkflow.png)
 
 
 ### Delete entities and nested prefabs
@@ -584,7 +584,7 @@ In the above example, if you select Engine entity and Seat prefab, two lists wil
 
 The following diagram demonstrates what the workflow looks like:
 
-![Editor workflow - Delete entities and nested prefabs](./images/PrefabDeleteWorkflow.png)
+![Editor workflow - Delete entities and nested prefabs](images/PrefabDeleteWorkflow.png)
 
 
 ### Detach prefab
@@ -610,7 +610,7 @@ Wheel     (Wheel.prefab)
 
 In the above example, if you select the Wheel prefab under the Car prefab and detach it, all descendants of Wheel prefab will be put under a new Wheel entity under Car prefab instance. The following diagram demonstrates what the workflow looks like:
 
-![Editor workflow - Detach prefab](./images/PrefabDetachWorkflow.png)
+![Editor workflow - Detach prefab](images/PrefabDetachWorkflow.png)
 
 
 ### Duplicate entities and prefabs
@@ -637,7 +637,7 @@ In the above example, if you select the Brooms entity and the Car prefab and dup
 
 The following diagram demonstrates what the workflow looks like.
 
-![Editor workflow - Duplicate entities and prefabs](./images/PrefabDuplicateWorkflow.png)
+![Editor workflow - Duplicate entities and prefabs](images/PrefabDuplicateWorkflow.png)
 
 > **Note**
 > The second step is surrounded with dot lines. As we mentioned above, for this particular operation, we currently generate patches and apply the patches directly on the template DOM. It is a template DOM authoritative approach. The prefab instance object will be updated during propagation.
