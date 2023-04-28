@@ -36,7 +36,7 @@ These controls adjust the model and lighting within the current camera view.
 | **Ctrl+LMB+Drag** | Tumble the model. |
 | **Shift+LMB+Drag** | Rotate the lighting environment horizontally around the model. |
 
-#### Industry-standard Controls
+#### Industry-standard controls
 Industry-standard controls to orbit, zoom, and pan in the Viewport. 
 | Control | Action |
 | - | - |
