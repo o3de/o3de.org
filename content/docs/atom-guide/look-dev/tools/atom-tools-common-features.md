@@ -49,7 +49,7 @@ The position, size, and state of the main window and any child windows save and 
 ### Docked Windows
 The main window contains several child windows for different features that you can dock, float, stack, or rearrange into custom layouts.
 
-All of the tools come with a common set of basic panels but additional panels can be added based on the needs of each tool. 
+All of the tools come with a common set of basic panels but you can add more panels based on the needs of each tool. 
 
 #### Inspector
 The Inspector displays context sensitive, editable properties for the active document.
