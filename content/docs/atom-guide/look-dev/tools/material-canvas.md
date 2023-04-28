@@ -66,7 +66,7 @@ The following instruction demonstrates a common scenario for connecting nodes:
 
 For **Input** nodes, you can also open the generated material or material type in the Material Editor and configure the properties from there as well.
 
-More interesting and advanced graphs can be created by adding and nesting connections between function, texture sampling, time, transformations, and other nodes. Several examples can be found in the Material Canvas assets folder.
+You can create more interesting and advanced graphs by adding and nesting connections between function, texture sampling, time, transformations, and other nodes. Find several examples in the `Gems/Atom/Tools/MaterialCanvas/Assets/MaterialCanvas` folder.
 
 ## Navigating Material Canvas
 When you launch Material Canvas, you will see the following main window.
