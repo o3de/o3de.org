@@ -85,7 +85,7 @@ Material Graph documents, `.materialgraph` are the main documents type in Materi
 Material Graph Node documents, `.materialgraphnode`, are JSON files that define each type of node that you can create in Material Canvas. They contain settings for a unique ID, unique name, display name, description, data type, and default values for the node and its slots. Additionally, they declare fragments of AZSL shader code and other metadata that Material Canvas uses to assemble complete shaders. All of the current Material Canvas nodes are specified using material graph node configuration files. Nodes can also be created and registered programmatically using C++ or Python.
 
 #### Shader Source Data Config Documents
-Shader Source Data Config Documents ".shader" are for editing shader configuration files. All of the supporting data types have been reflected so that shader source data files can be edited in the inspector or using Python. All of the options are enumerated and populated in the UI. This is useful for editing shader source data files and creating new templates for material graph output nodes, described later.
+Shader Source Data Config Documents, `.shader`, are for editing shader configuration files. All of the supporting data types are reflected so you can edit shader source data files in the Inspector or using Python. In the Inspector, all of the options are listed. This is useful to edit shader source data files and creating new templates for material graph output nodes.
 
 ## Main Menu
 The main menu contains all of the submenus and actions common to all Atom tools as well as Material Canvas specific actions. 
