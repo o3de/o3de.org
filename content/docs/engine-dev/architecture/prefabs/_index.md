@@ -245,8 +245,9 @@ In the above example of link between Bike and Wheel templates, the target templa
 
 One of the key members of a link object is the link DOM, which contains a file path to the source template and a list of patches to be applied on the source template. A link DOM may or may not contain patches in it. In the case where there are no patches, the target template would simply fetch the template DOM of the source template.
 
-> **Note**
-> In the latest development branch, a link maintains a `PrefabOverridePrefixTree` rather than a link DOM. The link DOM will be generated from the tree on the fly. This supports the new **Prefab Override** feature.
+{{< note >}}
+In the latest development branch, a link maintains a `PrefabOverridePrefixTree` rather than a link DOM. The link DOM will be generated from the tree on the fly. This supports the new **Prefab Override** feature.
+{{< /note >}}
 
 ![Link creation](images/PrefabLink.png)
 
@@ -406,8 +407,9 @@ The above approach works but has the downside of taking a lot of time to convert
 1. Add required path prefix(s) to make the patches valid.
     * For example, the patches would be generated with paths like `ComponentA/...` but we also need to add the entity path prefix to it to know which entity within the prefab we are referring to. The path with prefix would become `/Entities/Entity1/Components/ComponentA/...`.
 
-> **Note**
-> To be able to do this way though, we need to know that we would be only modifying a single entity or a group of entities. So this is used only for changes like entity updates.
+{{< note >}}
+To be able to do this way though, we need to know that we would be only modifying a single entity or a group of entities. So this is used only for changes like entity updates.
+{{< /note >}}
 
 ![Patch generation by serializing relevant entities only](images/PrefabPatchGeneration2.png)
 
@@ -429,8 +431,9 @@ If we know what operation the you want to do like adding or removing an entity, 
 
 Based on the operation, we create a patch that has **op**, **path** and **value** fields to match the JSON patch standards.
 
-> **Note**
-> This only works for simple operations like adding or removing an entity but may not work for more complex use cases like modifying a particular component. With **Document Property Editor (DPE)** patches, this can change in the future though.
+{{< note >}}
+This only works for simple operations like adding or removing an entity but may not work for more complex use cases like modifying a particular component. With **Document Property Editor (DPE)** patches, this can change in the future though.
+{{< /note >}}
 
 
 #### Best effort patching
@@ -508,8 +511,9 @@ In general, all of these below workflows follow this pattern:
 
 ![Prefab editor workflow](images/PrefabGenericEditorWorkflow.png)
 
-> **Note**
-> The only exceptions to this are the duplicate workflows where instead of updating the prefab instances first, we take a DOM authoritative approach where we let propagation create the duplicate objects.
+{{< note >}}
+The only exceptions to this are the duplicate workflows where instead of updating the prefab instances first, we take a DOM authoritative approach where we let propagation create the duplicate objects.
+{{< /note >}}
 
 | Code | Description |
 | :-   | :-          |
@@ -594,8 +598,9 @@ You can select a prefab instance and detach it in Entity Outliner. By detaching,
 1. Putting all entities and nested prefab instances (owned by the selected prefab) under the entity.
 It is an opposite operation of **Create prefab**.
 
-> **Note**
-> You can detach only one prefab at a time. If multiple prefabs are selected, the **Detach Prefab...** option would not appear in the context menu.
+{{< note >}}
+You can detach only one prefab at a time. If multiple prefabs are selected, the **Detach Prefab...** option would not appear in the context menu.
+{{< /note >}}
 
 ```
 Car       (Car.prefab)
@@ -616,8 +621,9 @@ In the above example, if you select the Wheel prefab under the Car prefab and de
 
 You can select a number of entities and prefabs and duplicate them in Entity Outliner. All selected should be owned by the same prefab instance, otherwise the operation would not succeed.
 
-> **Note**
-> Duplication of an entity will duplicate all its descendants.
+{{< note >}}
+Duplication of an entity will duplicate all its descendants.
+{{< /note >}}
 
 ```
 Garage_Small
@@ -637,5 +643,6 @@ The following diagram demonstrates what the workflow looks like.
 
 ![Editor workflow - Duplicate entities and prefabs](images/PrefabDuplicateWorkflow.png)
 
-> **Note**
-> The second step is surrounded with dot lines. As we mentioned above, for this particular operation, we currently generate patches and apply the patches directly on the template DOM. It is a template DOM authoritative approach. The prefab instance object will be updated during propagation.
+{{< note >}}
+The second step is surrounded with dot lines. As we mentioned above, for this particular operation, we currently generate patches and apply the patches directly on the template DOM. It is a template DOM authoritative approach. The prefab instance object will be updated during propagation.
+{{< /note >}}
