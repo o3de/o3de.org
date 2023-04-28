@@ -155,7 +155,7 @@ _Input slots_ have default values that are consumed by and assigned to variables
 
 _Output slots_ represent return values from some operation performed by the node. Output slots can have connections to multiple input slots on other nodes. When an output slot is connected to an input slot on another node, the output slot value replaces the input slot value.
 
-Connections are made between input slots and output slots by dragging a connection wire between them. Material Canvas will prevent invalid, recursive or cyclic, connections between nodes.
+Connections are made between input slots and output slots by dragging a connection wire between them. Material Canvas prevents invalid, recursive or cyclic, connections between nodes.
 
 ### Node Types
 Material Canvas has different node types that are broken into logical groups and color coded based on the function of the node.
