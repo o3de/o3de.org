@@ -157,8 +157,8 @@ _Output slots_ represent return values from some operation performed by the node
 
 Connections are made between input slots and output slots by dragging a connection wire between them. Material Canvas prevents invalid, recursive or cyclic, connections between nodes.
 
-### Node Types
-Material Canvas has different node types that are broken into logical groups and color coded based on the function of the node.
+### Node types
+Material Canvas has different node types that are categorized into logical groups and color-coded based on the function of the node.
 
 #### Output Nodes (Main Nodes)
 The most important node type for a material graph is the main, output node. These nodes provide all of the templates and meta data that instruct Material Canvas on what to generate. Material Canvas will begin generating data once an output node, with properly configured template data, has been added to a material graph.
