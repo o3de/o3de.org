@@ -29,7 +29,7 @@ These controls adjust the camera view.
 | **MMB+Drag** | Track the camera left, right, up, and down in the direction of mouse movement. |
 | **Z** | Reset camera view. |
 
-#### Model and Lighting Controls
+#### Model and lighting controls
 These controls adjust the model and lighting within the current camera view. 
 | Control | Action |
 | - | - |
