@@ -69,7 +69,7 @@ For **Input** nodes, you can also open the generated material or material type i
 More interesting and advanced graphs can be created by adding and nesting connections between function, texture sampling, time, transformations, and other nodes. Several examples can be found in the Material Canvas assets folder.
 
 ## Navigating Material Canvas
-After Material Canvas has opened and initialized it will display the main window, as shown below.
+When you launch Material Canvas, you will see the following main window.
 
 ![Material Canvas](/images/atom-guide/tools/material-canvas.jpg)
 
