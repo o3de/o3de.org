@@ -95,7 +95,7 @@ The following are properties you can configure for the selected model preset.
 | **Preview Image Asset** | Assign an image as the preview icon for this preset. The image appears in the Viewport Model drop-down list in the Model Preset Browser. |  |  |
 
 #### Model Preset Browser
-The **Model Preset Browser** window opens when the **Select** button is pressed. The Model Preset Browser window is a separate window that cannot be docked.
+The **Model Preset Browser** window opens when you press the **Select** button. The Model Preset Browser window is a separate window that cannot be docked.
 
 ![Model Preset Browser](/images/atom-guide/tools/model-preset-browser.png)
 
