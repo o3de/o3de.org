@@ -18,7 +18,7 @@ For more information about features common to Atom tools, menus, dockable panels
 ## Quick Start
 ### Launching Material Canvas
 There are multiple ways to launch Material Canvas.
-- From **Open 3D Engine (O3DE)** Editor select **Main Menu > Tools > Material Canvas**
+- From O3DE Editor, select **Main Menu > Tools > Material Canvas**
 - From the Material Component context menu, select **Open Material Canvas...**
 - From the Asset Browser, double click on a material graph or other Material Canvas compatible file type.
 - From the Asset Browser, right click on a material graph or other Material Canvas compatible file type, then select **Open in Material Canvas...** 
