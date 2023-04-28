@@ -1,12 +1,12 @@
 ---
 title: Identifiers
 linktitle: Identifiers
-description: Unique strings used to address all of the individual elements of the system.
+description: Unique strings used to address the elements of the Action Manager system.
 weight: 203
 ---
 
-In the Action Manager architecture, Items are addressed via string identifiers.
-These are used to refer to actions, menus, toolbars... (etc) so that they are accessible from anywhere, regardless of what system defined them. We use strings for this purpose as they are easier to read, discover and share between different environments (C++, Python) rather than IDs or other obfuscated methods.
+In the Action Manager architecture, items are addressed via string identifiers.
+These are used to refer to actions, menus, toolbars and other items so that they are accessible from anywhere, regardless of what system defined them. String identifiers are used for this purpose as they are easier to read, discover and share between different environments (C++, Python) rather than numerical IDs or other obfuscated methods.
 
 Identifiers need to be unique per item type in the architecture, but don’t need to be for different types.
 For example, it is possible to register an Action and a Menu with the same identifier string, as the APIs expect a specific identifier type and there is no possible misdirection.
@@ -36,6 +36,7 @@ where
 
 
 Categories can be used to group items that are related, like part of a subsystem or specific mode of the main system or Gem.
+Identifier portions are in lowerCamelCase.
 
 
 ## Identifier Headers

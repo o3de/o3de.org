@@ -20,7 +20,6 @@ The Action Manager system relies on a series of fundamental elements that can be
 
 | Topic | Description |
 | - | - |
-| [API](./architecture/api) | Technical details about the style of the action manager's APIs. |
 | [Registration](./architecture/registration) | Best practices and specifics on the Action Manager registration API mechanism. |
 | [Identifiers](./architecture/identifiers) | Unique strings used to address all of the individual elements of the system. |
 | [Sort Keys](./architecture/sort-keys) | Integers to determine the ordering of items in an extensible framework.  |

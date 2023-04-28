@@ -5,8 +5,6 @@ description: An overview of the Action Manager Menu API.
 weight: 102
 ---
 
-## Menu
-
 The Menu Manager system provides interfaces to register and extend menus for use in the O3DE Editor UI.
 
 
@@ -27,7 +25,6 @@ menuManagerInterface->RegisterMenu(
     "o3de.menu.identifier",
     menuProperties
 );
-
 ```
 
 
@@ -41,7 +38,6 @@ menuManagerInternalInterface->DisplayMenuAtScreenPosition("o3de.menu.identifier"
 
 // Display a menu under the cursor.
 menuManagerInternalInterface->DisplayMenuUnderCursor("o3de.menu.identifier");
-
 ```
 
 
@@ -57,7 +53,6 @@ menuManagerInterface->AddActionToMenu(
     "o3de.action.identifier", 
     sortKey 
 );
-
 ```
 
 See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
@@ -74,7 +69,6 @@ menuManagerInterface->AddSeparatorToMenu(
     "o3de.menu.identifier",
     sortKey 
 );
-
 ```
 
 See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
@@ -94,7 +88,6 @@ menuManagerInterface->AddSubMenuToMenu(
     "o3de.subMenu.identifier",
     sortKey 
 );
-
 ```
 
 See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
@@ -114,7 +107,6 @@ menuManagerInterface->AddWidgetToMenu(
     "o3de.widgetAction.identifier", 
     sortKey
 );
-
 ```
 
 See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
@@ -132,7 +124,6 @@ menuManagerInterface->RegisterMenuBar(
     "o3de.menuBar.identifier", 
     mainWindow
 );
-
 ```
 
 Once the menu bar is registered, external Gems can add new menus to the menu bar via the string identifier.
@@ -150,7 +141,6 @@ menuManagerInterface->AddMenuToMenuBar(
     "o3de.menu.identifier", 
     100
 );
-    
 ```
 
 See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
