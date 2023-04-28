@@ -4,7 +4,6 @@ description: Learn how to use the Material Editor to create materials in Atom.
 toc: true
 ---
 
-## Overview
 The **Material Editor** is a standalone application that allows artists to view, edit, and create new materials. This section introduces the Material Editor and describes the editor layout and its individual panels.
 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
