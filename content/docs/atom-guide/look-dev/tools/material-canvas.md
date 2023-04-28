@@ -178,7 +178,7 @@ The utility node category contains standard comment and group nodes used by all 
 ## Creating new material graph nodes
 Material Canvas nodes, with the exception of utility nodes, are completely defined in JSON configuration files. As mentioned earlier, these files describe the nodes UUID, name, description, category, as well as the layout and details for each slot on the node. Node configurations may have additional settings or meta data to drive the code and data generation process.
 
-The material graph node document inspector supports creating unique node UUIDs, adding and removing slots, selecting data types, configuring default values, and managing custom settings for nodes and slots. The inspector also has custom controls for making selections and editing AZSL.
+The inspector for material graph node documents allow you to create unique node UUIDs, add and remove slots, select data types, configure default values, and manage custom settings for nodes and slots. The inspector also has custom controls for making selections and editing AZSL.
 
 It is possible to create nodes from scratch using tooling provided by Material Canvas. However, some of the nodes are simple enough that it might be easier and faster to copy an existing material graph node file, update the UUID, and make changes using the tool or directly in JSON. Future revisions to the material graph node inspector could further simplify this process.
 
