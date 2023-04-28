@@ -42,12 +42,11 @@ You have multiple options to start editing a material graph.
   - Select **Main Menu > File > Open > Open Material Graph Document...**.
 - Open or create a material graph from the Asset Browser.
 
-### Creating Nodes
+### Creating nodes
 You can create nodes by dragging them from the node palette to the graph view or using the graph view context menu.
-- Start by dragging one of the output nodes, like Base PBR, from the node palette to the graph view.
-  - You can start with any nodes but no processing will take place without an output node to drive it.
-- You will see the status bar indicate files are being generated and processed after this node is added to the graph.
-- You will see the viewport update to show the generated material on the model after files have finished processing.
+1. Drag one of the output nodes, like Base PBR, from the node palette to the graph view. You can start with any nodes but no processing takes place without an output node to drive it.
+2. Notice that the status bar indicates files are being generated and processed.
+3. Notice the viewport update to show the generated material on the model.
 
 ### Configuring nodes
 You can change node properties directly on the node in the graph view or in the inspector. If you chose Base PBR or Standard PBR as your output node the material is initially white.
