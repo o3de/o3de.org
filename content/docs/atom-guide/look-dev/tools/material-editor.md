@@ -15,8 +15,8 @@ To get started, launch the Material Editor and create or edit a material.
 There are multiple ways to launch Material Editor.
 - From **Open 3D Engine (O3DE)** Editor select **Main Menu > Tools > Material Editor**
 - From the Material Component context menu, select **Open Material Editor...**
-- From the Asset Browser, double click on a ".material" or ".materialtype".
-- From the Asset Browser, right click on a ".material" or ".materialtype", then select **Open in Material Editor...** 
+- From the Asset Browser, double click on a `.material` or `.materialtype` file.
+- From the Asset Browser, right click on a `.material` or `.materialtype`, and select **Open in Material Editor...** 
 - Material Editor is also a standalone executable that can be launched directly from a file browser or command console.
   - Launch the executable `<build>\bin\profile\MaterialEditor.exe`
   - This requires passing the —project-path, followed by the path your project, as a command line argument.
