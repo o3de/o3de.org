@@ -97,8 +97,8 @@ The view menu includes actions to switch between documents. Other tools may have
 | Previous Tab | **Ctrl+Shift+Tab** | Switches to the previously opened tab. |
 | Next Tab | **Ctrl+Tab** | Switches to the next opened tab. |
 
-### Tools Menu
-The tools menu includes actions for toggling visibility of dockable panels and opening the settings dialog. Other actions may be added by tools for specific document types. 
+### Tools menu
+The tools menu includes actions to toggle visibility of dockable panels and open the settings dialog. Other tools may have additional actions depending on the document types they support. 
 
 | Menu item | Hotkey | Function |
 | - | - | - |
