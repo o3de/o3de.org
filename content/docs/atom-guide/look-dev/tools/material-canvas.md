@@ -22,8 +22,10 @@ There are multiple ways to launch Material Canvas.
 - From the Asset Browser, **double-click** on a material graph or other file type compatible with Material Canvas.
 - From the Asset Browser, **right-click** on a material graph or other file type compatible with Material Canvas. Then select **Open in Material Canvas...** 
 - Material Canvas is also a standalone executable that you can launch directly from a file browser or command console.
-  - Launch the executable `<build>\bin\profile\MaterialCanvas.exe`
-  - This requires passing the —project-path, followed by the path your project, as a command line argument.
+    - Launch the executable `<build>\bin\profile\MaterialCanvas.exe`. Specify the `--project-path`, followed by the path your project, as a command line argument. For example: 
+  ```shell
+   .\<build>\bin\profile\MaterialCanvas.exe --project-path MyProject
+  ```
 
 ### Creating Material Graphs
 You have multiple options to start editing a material graph.
