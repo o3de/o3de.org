@@ -83,7 +83,7 @@ The file menu contains all of the common actions for creating, opening, closing,
 | Exit | | Closes the application. |
 
 ### Edit menu
-The edit menu has actions to undo and redo changes on the active document. Other actions may be added by tools for specific document types. 
+The edit menu has common actions to undo and redo changes on the active document. Other tools may have additional actions depending on the document types they support. 
 | Menu item | Hotkey | Function |
 | - | - | - |
 | Undo | **Ctrl+Z** | Undo the most recent action. |
