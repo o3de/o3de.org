@@ -36,7 +36,7 @@ All tools built on this foundation have common APIs for scripting, automation, a
 - Use PyQt for controlling and extending the UI. 
 - Run scripts from the file menu, Asset Browser context menu, or passed in as command line arguments. 
 
-## Main Window
+## Main window
 The main window is the hub and owns all of the user interface for a tool.
 
 ### Title bar
