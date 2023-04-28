@@ -180,7 +180,7 @@ Material Canvas nodes, with the exception of utility nodes, are completely defin
 
 The inspector for material graph node documents allow you to create unique node UUIDs, add and remove slots, select data types, configure default values, and manage custom settings for nodes and slots. The inspector also has custom controls for making selections and editing AZSL.
 
-It is possible to create nodes from scratch using tooling provided by Material Canvas. However, some of the nodes are simple enough that it might be easier and faster to copy an existing material graph node file, update the UUID, and make changes using the tool or directly in JSON. Future revisions to the material graph node inspector could further simplify this process.
+It is possible to create nodes from scratch using tools provided by Material Canvas. However, some of the nodes are simple enough that it might be more convenient to copy an existing material graph node file, update the UUID, and make changes using the tool or directly in JSON.
 
 ### Material Graph Node Configuration Example
 Below is a material graph node configuration for a floating-point constant node with one property and one output slot.
