@@ -27,7 +27,7 @@ There are multiple ways to launch Material Canvas.
    .\<build>\bin\profile\MaterialCanvas.exe --project-path MyProject
   ```
 
-### Creating Material Graphs
+### Creating material graphs
 You have multiple options to start editing a material graph.
 - By default, Material Canvas starts with an untitled, blank material graph document that is ready for immediate use.
   - Until you save the graph, generated files will be output to your project Assets/Materials/Generated folder.
