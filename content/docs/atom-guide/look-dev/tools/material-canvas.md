@@ -129,7 +129,7 @@ The viewport renders a scene containing a model, with the current material appli
 For more information about the viewport and how to interact with it, see [Atom Tools Viewport](/docs/atom-guide/look-dev/tools/atom-tools-viewport/). 
 
 #### Viewport Settings
-Use the viewport settings panel to edit the active lighting preset. The changes will be reflected in the viewport. Lighting presets can be selected, created, and saved from this panel. Model presets, which are sidecar files for identifying which models are available in the viewport, can also be managed from this panel. The viewport settings panel does not currently support undo/redo.
+Use the viewport settings panel to edit the active lighting preset. The changes are reflected in the viewport. Select, create, and save lighting presets from this panel. You can also manage model presets, which are sidecar files for identifying which models are available in the viewport. The viewport settings panel does not currently support undo and redo.
 
 For more information about the viewport settings, see [Atom Tools Viewport](/docs/atom-guide/look-dev/tools/atom-tools-viewport/). 
 
