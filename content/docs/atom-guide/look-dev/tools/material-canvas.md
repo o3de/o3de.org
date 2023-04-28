@@ -49,13 +49,13 @@ You can create nodes by dragging them from the node palette to the graph view or
 - You will see the status bar indicate files are being generated and processed after this node is added to the graph.
 - You will see the viewport update to show the generated material on the model after files have finished processing.
 
-### Configuring Nodes
-If you chose Base PBR or Standard PBR as your output node the material will initially be white.
-- You can change node properties directly on the node in the graph view or in the inspector.
-- For example, change the base color to red (1, 0, 0, 1).
-- You will see the status bar indicate the files are being regenerated and reprocessed.
-- You will see the viewport update again, after changing this, or any other, property.
-- The material and model in the viewport should now be red.
+### Configuring nodes
+You can change node properties directly on the node in the graph view or in the inspector. If you chose Base PBR or Standard PBR as your output node the material is initially white.
+
+For example, to change the material's color:
+1. Change the base color to red (1, 0, 0, 1).
+2. Notice that the status bar indicates the files are being regenerated and reprocessed.
+3. Notice that the viewport updates such that the material and model are not red.
 
 ### Connecting nodes
 Connections are a link between one node's output values to another node's input values.
