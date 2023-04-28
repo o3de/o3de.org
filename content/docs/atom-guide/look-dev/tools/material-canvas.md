@@ -179,7 +179,7 @@ The vertex node category contains nodes that correspond to different vertex attr
 #### Function nodes
 The function node category contains several math related and utility function nodes that process property and input values and return a result. Currently, the majority of the function nodes are wrappers for AZSL intrinsic functions.
 
-#### Texturing Nodes
+#### Texturing nodes
 This category contains nodes related to texture sampling. Note that some texture sampling nodes sample from a constant vector by default. You may require input from a UV node or other varying vertex attribute node to sample using texture coordinates covering a surface or model.
 
 #### Scene Nodes
