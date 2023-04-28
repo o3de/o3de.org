@@ -66,8 +66,8 @@ Use the Python terminal to invoke script commands directly from within the tool.
 ## Main menus
 The main menu bar in every tool contains a common set of options but can be customized by each tool. 
 
-### File Menu
-The file menu contains all of the common actions for creating, opening, closing, and saving documents. There are also actions for running Python scripts.
+### File menu
+The file menu contains all of the common actions to create, open, close, and save documents. There are also actions to run Python scripts.
 | Menu item | Hotkey | Function |
 | - | - | - |
 | New... | **Ctrl+N** | Opens a dialog to create a new document. If the tool supports multiple document types, this first displays a sub menu that lists them. |
