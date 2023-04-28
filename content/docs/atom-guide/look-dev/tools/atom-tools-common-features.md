@@ -44,7 +44,7 @@ The main window is the hub and owns all of the user interface for a tool.
 The title bar at the top of the main window displays the name of the application and the active RHI, rendering back end (DX12 or Vulkan).
 
 ### Layouts
-The position, size, and state of the main window and any child windows will be saved and restored each time the tool is opened. You can save, restore, and manage custom layouts from the view menu.
+The position, size, and state of the main window and any child windows save and restore each time you open the tool. You can save, restore, and manage custom layouts from the view menu.
 
 ### Docked Windows
 The main window contains several child windows for different features that you can dock, float, stack, or rearrange into custom layouts.
