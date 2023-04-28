@@ -7,7 +7,7 @@ toc: true
 ## Overview
 Creating material types and shaders in O3DE ordinarily requires familiarity with the engine, renderer, AZSL shading language, data types, file formats, and how everything fits together. It involves hand editing and manually managing multiple files, writing AZSL shader code, editing JSON, launching the Asset Processor to compile them, addressing any reported errors, then using the O3DE Editor or Material Editor to preview and customize assets.
 
-**Material Canvas** drastically simplifies, accelerates, and automates creating custom shaders and material types by providing a visual scripting editor with familiar tools, workflows, status reporting, and live previews.
+**Material Canvas** drastically simplifies, accelerates, and automates the creation of custom shaders and material types by providing a visual scripting editor with familiar tools, workflows, status reporting, and live previews.
 
 Drag, drop, connect, and configure nodes to construct material graphs that will automatically be transformed into standard source files for shaders, material types, and materials. The generated source files will be recognized by the Asset Processor, processed, and usable in any systems or components that consume materials. With the default settings, Material Canvas regenerates and overwrites files whenever a graph is opened, edited, or saved. The viewport updates to display the results as quickly as changes are made and processed.
 
