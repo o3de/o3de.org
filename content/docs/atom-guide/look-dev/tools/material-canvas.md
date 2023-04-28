@@ -163,7 +163,7 @@ Material Canvas has different node types that are categorized into logical group
 #### Output nodes (main nodes)
 The most important node type for a material graph is the main output node. These nodes provide all of the templates and meta data that instruct Material Canvas on what to generate. Material Canvas begins to generate data once an output node, with properly configured template data, is added to a material graph.
 
-At this time, Material Canvas has two output nodes. The Base PBR and Standard PBR nodes contain input slots, options, and templates that can be used to create custom shaders and materials with lighting models and features similar to the core material type counterpart. Not all features have been exposed to the Standard PBR node.
+At this time, Material Canvas has two output nodes. The Base PBR and Standard PBR nodes contain input slots, options, and templates that you can use to create custom shaders and materials with lighting models and features similar to the core material type counterpart. Not all features have been exposed to the Standard PBR node.
 
 Experiment by dragging one of these nodes onto a material graph. If the automatic graph compilation settings are enabled, which they are by default, several shader files, the material type, and the default material will be generated in the folder containing the material graph file.
 
