@@ -74,7 +74,7 @@ When you launch Material Canvas, you will see the following main window.
 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
-### Document Types and Views
+### Document types and views
 Material Canvas supports creating, opening, and editing multiple types of documents.
 
 #### Material Graph Documents
