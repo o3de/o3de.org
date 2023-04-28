@@ -52,7 +52,7 @@ The main window contains several child windows for different features that you c
 All of the tools come with a common set of basic panels but you can add more panels based on the needs of each tool. 
 
 #### Inspector
-The Inspector displays context sensitive, editable properties for the active document.
+The Inspector displays context-sensitive, editable properties for the active document.
 
 #### Asset Browser
 Use the Asset Browser panel to explore and manage assets in the active project and gems. Set up filters, select, create, rename, move, delete, and perform other operations on assets. The Asset Browser automatically selects the file corresponding to the most recently opened or activated document. This will only happen if the filters are set up to display the document type. Assets can be dragged from the Asset Browser into asset properties in the inspector and other windows supporting the dropped file types.
