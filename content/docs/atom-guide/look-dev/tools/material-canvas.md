@@ -56,23 +56,15 @@ If you chose Base PBR or Standard PBR as your output node the material will init
 - You will see the viewport update again, after changing this, or any other, property.
 - The material and model in the viewport should now be red.
 
-### Connecting Nodes
-You can create connections that cause output values from one node to be assigned to input values on another.
-- Create additional nodes on the graph, like Constant or Material Input.
-  - It can be any node with output slots but these are used as variables that can be connected as inputs to one or more other nodes on the graph.
-  - Constant nodes generate immutable variables declared inline in shader code.
-  - Material Input nodes generate named, Material SRG variables that are connected to configurable material properties.
-    - You can configure the name, description, and other attributes for Material Input nodes 
-    - Properties created from Material Input nodes can be edited in the Material Editor and Material Component.
-- For example, create an Float4 or Color Input node anywhere on the graph.
-  - These are interchangeable but represent the value with different controls in the UI.
-- Click and hold the output slot for the value.
-- Drag and drop the connection wire from that output slot to the base color slot on the output node.
-- Once the connection is made, the editable value will disappear from the node and be grayed out in the inspector.
-- You will see the graph reprocess and the viewport update.
-- The viewport model will change from red to the color from the connected node.
-- You can change the property values of the input node to see the colors changing in the viewport.
-- if this was an input node, you should also be able to open the generated material or material type in the Material Editor to see the property can be configured from there as well.
+### Connecting nodes
+Connections are a link between one node's output values to another node's input values.
+
+The following instruction demonstrates a common scenario for connecting nodes:
+1. Create a Float4 or Color Input node anywhere on the graph. These are interchangeable but represent the value with different controls in the UI.
+2. **Drag-and-drop** the connection wire from that output slot to the base color slot on the output node. When the connection is made, the editable value disappears from the node and is grayed out in the Inspector.
+3. Notice that the viewport model changes from it's previous color to the color of the input node. Change the property values of the input node and notice the colors update in the viewport.
+
+For **Input** nodes, you can also open the generated material or material type in the Material Editor and configure the properties from there as well.
 
 More interesting and advanced graphs can be created by adding and nesting connections between function, texture sampling, time, transformations, and other nodes. Several examples can be found in the Material Canvas assets folder.
 
