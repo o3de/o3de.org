@@ -176,7 +176,7 @@ Input nodes represent named variables that will be added to the Material SRG str
 #### Vertex nodes
 The vertex node category contains nodes that correspond to different vertex attributes like positions, normals, texture coordinates, and so on. There are nodes for the same attribute in local and world space.
 
-#### Function Nodes
+#### Function nodes
 The function node category contains several math related and utility function nodes that process property and input values and return a result. Currently, the majority of the function nodes are wrappers for AZSL intrinsic functions.
 
 #### Texturing Nodes
