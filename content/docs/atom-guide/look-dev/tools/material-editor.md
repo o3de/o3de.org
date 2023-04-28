@@ -48,7 +48,7 @@ To create child materials, open an existing material and select **Main Menu > Fi
 - Enabling the autosave in Material Editor settings dialog will causes updates to be continuously mirrored in the O3DE Editor.
 
 ## Navigating Material Editor
-After Material Editor has opened and initialized it will display the main window, as shown below.
+When you launch Material Editor, you will see the following main window.
 
 ![Material Editor](/images/atom-guide/tools/material-editor.jpg)
 
