@@ -153,7 +153,7 @@ _Properties slots_ have no incoming or outgoing connections. They are often used
 
 _Input slots_ have default values that are consumed by and assigned to variables used inside the node. Input slots can only have one incoming connection.
 
-Output slots represent return values from some operation performed by the node. Output slots can have connections to multiple input slots on other nodes. When an output slot is connected to an input slot on another node, the output slot value replaces the input slot value.
+_Output slots_ represent return values from some operation performed by the node. Output slots can have connections to multiple input slots on other nodes. When an output slot is connected to an input slot on another node, the output slot value replaces the input slot value.
 
 Connections are made between input slots and output slots by dragging a connection wire between them. Material Canvas will prevent invalid, recursive or cyclic, connections between nodes.
 
