@@ -170,7 +170,7 @@ Experiment by dragging one of these nodes onto a material graph. If the automati
 #### Constant nodes
 Constant nodes represent constant variables defined in line in shader code. There are several constant nodes corresponding to different data types supported by the AZSL. These nodes should be used to setup any variables that do not need to be exposed to outside of the shader or configurable through materials.
 
-#### Input Nodes
+#### Input nodes
 Input nodes represent named variables that will be added to the Material SRG structure with properties and connections exposed in the material type. These properties will be displayed and configurable in the material editor and material component. They can also be controlled through script. Input nodes have additional property slots for you to specify their name, description, and other data to make them easily identifiable. As with constant nodes, there are several different nodes corresponding to data types supported by AZSL and the material system.
 
 #### Vertex Nodes
