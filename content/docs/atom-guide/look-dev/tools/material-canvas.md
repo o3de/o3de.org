@@ -103,7 +103,7 @@ In addition to options common to Atom tools, there are also options to navigate 
 ### Tools menu
 From the Tools menu, you can toggle dockable windows that are specific to Material Canvas.
 
-### Docked Windows
+### Docked windows
 Material Canvas provides several additional windows related to working with graphs. Unlike Material Editor, the viewport is also dockable. 
 
 #### Node Palette
