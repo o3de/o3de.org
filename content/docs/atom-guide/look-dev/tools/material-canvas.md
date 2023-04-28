@@ -97,8 +97,8 @@ In addition to options common to Atom tools, when a material graph document is o
 
 Similar to Script Canvas and Landscape Canvas, you can select, align, delete, duplicate, cut, copy, and paste nodes.
 
-### View Menu
-Material Canvas adds options for navigating and managing the graph view as well as opening an editor for configuring comment node and node group presets.
+### View menu
+In addition to options common to Atom tools, there are also options to navigate and manage the graph view, as well as open an editor to configure comment nodes and node group presets.
 
 ### Tools Menu
 Material Canvas adds actions for toggling its additional dockable windows. 
