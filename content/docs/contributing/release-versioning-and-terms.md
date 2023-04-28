@@ -7,20 +7,24 @@ weight: 500
 
 ## Open 3D Engine (O3DE) Version Numbering
 
-O3DE uses `MAJOR.MINOR.PATCH` [semantic versioning](https://semver.org/) for all the `version` fields in `engine.json`, `gem.json` and `project.json` files.  
+O3DE uses `MAJOR.MINOR.PATCH` [semantic versioning](https://semver.org/) for all the `version` fields in `engine.json`, `gem.json` and `project.json` files to indicate API and other important changes. 
 
 - `MAJOR` is for API-breaking changes
 - `MINOR` is for non-API-breaking changes that add new APIs or change them in a non-breaking way
 - `PATCH` is for all other non-API-breaking changes, usually important fixes
 
-Example: If a breaking API change is made to a gem at version `2.0.1` the `MAJOR` version is incremented and the `MINOR` and `PATCH` are reset to `0` resulting the new version being `3.0.0`.  See the [semantic versioning](https://semver.org/) page for more examples. 
+The engine display version uses `YY.MM.PATCH` and is only used in the O3DE SDK. By using a date-oriented scheme for the SDK display version users can easily tell how recently an engine SDK was released, but it does not provide any information about compatibility or the kinds of changes made.
 
-## O3DE Version Specifiers 
+| | Engine display version | Engine version |
+|---------------------|------------------------|------------------------|
+| Stable SDK release | 23.05.0   | 1.2.0              | 
+| Development SDK or source | 00.00 | 2.0.0                  | 
 
-Lists of compatible engines and dependencies use the `<name><version specifier>` format based on [PEP 440](https://peps.python.org/pep-0440/#version-specifiers).
+## O3DE Release Terminology
 
-Example: A gem that is known to be compatible with the an engine named `o3de-sdk` version `2.0.1` would include `o3de-sdk==2.0.1` in the `compatible_engines` field in `gem.json`
-
+* **Stable**: This feature is ready for users to actively develop using it. APIs and functionality can be considered stable and any significant new work will be captured in an RFC before changes are made.
+* **Preview**: This feature is almost done and is stable. May still go through small changes.
+* **Experimental**: This feature is a work-in-progress. Don't depend on it yet; it may go through significant changes.
 
 ## Engine Version Information In `engine.json` 
 
@@ -30,19 +34,13 @@ O3DE engine version information is stored inside the `engine.json` file at the r
 | Field | Description |  CMake Global Properties |
 |---------------------|------------------------|------------------------|
 | engine_name | The name of the engine which is set to `o3de-sdk` when the SDK is created and is `o3de` in the O3DE GitHub repository source code. | | 
-| display_version | The `YY.MM.PATCH` year and month version displayed in the SDK installer and Project Manager. This value is only set when creating the SDK and is `00.00` in the O3DE GitHub repository source code. By using a date-oriented scheme for the SDK display version users can easily tell how recently an engine SDK was released, however this scheme is not useful for conveying compatibility which is why we have a separate `version` field.  | `O3DE_DISPLAY_VERSION_STRING` |
-| version | The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) that is updated as changes are made to the APIs in the engine and can be used for general engine compatibility. Developers may use the `compatible_engines` field in their `gem.json` or `project.json` files to indicate which engine version their gem or project is known to be compatible with. | `O3DE_VERSION_STRING` `O3DE_VERSION_MAJOR` `O3DE_VERSION_MINOR` `O3DE_VERSION_PATCH`|
+| display_version | The `YY.MM.PATCH` year and month version displayed in the SDK installer and Project Manager. This value is only set when creating the SDK and is `00.00` in the O3DE GitHub repository source code.  | `O3DE_DISPLAY_VERSION_STRING` |
+| version | The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) that is updated in the GitHub repository source code as changes are made to the APIs in the engine and can be used for general engine compatibility. Developers may use the `compatible_engines` field in their `gem.json` or `project.json` files to indicate which engine version their gem or project is known to be compatible with. | `O3DE_VERSION_STRING` `O3DE_VERSION_MAJOR` `O3DE_VERSION_MINOR` `O3DE_VERSION_PATCH`|
 | api_versions | The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) for frameworks and tools included in the engine that are common dependencies. Developers may use the `engine_api_dependencies` field in their `gem.json` or `project.json` files to indicate which engine API versions their gem or project is known to be compatible with. | |
 | build | The incremental SDK build number that is only set when the SDK is created and is `0` in the O3DE GitHub repository source code. | `O3DE_BUILD_VERSION` |
 | O3DEVersion | Deprecated version field that has been replaced with `display_version`. |
 | O3DEBuildNumber | Deprecated build field that has been replaced with `build`. |
 
-
-
-| Engine display version | Engine version |  |
-|---------------------|------------------------|------------------------|
-| 23.05.0   | 1.2.0              | Stable SDK release |
-| 00.00 | 2.0.0                  | Development SDK or source |
 
 Example:
 
@@ -80,9 +78,3 @@ A developer that creates a gem that includes an Editor tool, may update their `g
     ]
 }
 ```
-
-## O3DE Release Terminology
-
-* **Stable**: This feature is ready for users to actively develop using it. APIs and functionality can be considered stable and any significant new work will be captured in an RFC before changes are made.
-* **Preview**: This feature is almost done and is stable. May still go through small changes.
-* **Experimental**: This feature is a work-in-progress. Don't depend on it yet; it may go through significant changes.
