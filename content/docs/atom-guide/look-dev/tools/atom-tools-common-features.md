@@ -70,17 +70,17 @@ The main menu bar in every tool contains a common set of options but can be cust
 The file menu contains all of the common actions for creating, opening, closing, and saving documents. There are also actions for running Python scripts.
 | Menu item | Hotkey | Function |
 | - | - | - |
-| New... | **Ctrl+N** | Opens a dialog to create a new document. If the tool supports multiple document types this will first display a sub menu listing them. |
-| Open... | **Ctrl+O** | Opens a dialog to open an existing document. If the tool supports multiple document types this will first display a sub menu listing them. |
-| Save | **Ctrl+S** | Save the active document. |
-| Save As... | | Save the active document to the specified folder and file name. |
-| Save As Child... | | Save a new child document of the current document. This option originated with the Naterial Editor is not relevant to all tools. |
-| Save All | | Save the edits in all open documents. |
-| Close | **Ctrl+F4** | Close the active document. |
-| Close All | | Close all of the open documents. |
-| Close Others | | Close all of the documents except the active one. |
+| New... | **Ctrl+N** | Opens a dialog to create a new document. If the tool supports multiple document types, this first displays a sub menu that lists them. |
+| Open... | **Ctrl+O** | Opens a dialog to open an existing document. If the tool supports multiple document types, this first displays a sub menu listing them. |
+| Save | **Ctrl+S** | Saves the active document. |
+| Save As... | | Saves the active document to the specified folder and file name. |
+| Save As Child... | | Saves a new child document of the current document. Only Material Canvas and Material Editor has this action. |
+| Save All | | Saves the edits in all open documents. |
+| Close | **Ctrl+F4** | Closes the active document. |
+| Close All | | Closes all of the open documents. |
+| Close Others | | Closes all of the documents except the active one. |
 | Run Python... | | Opens a dialog to select and run a Python script. |
-| Exit | | Closest the application. |
+| Exit | | Closes the application. |
 
 ### Edit Menu
 The edit menu has actions to undo and redo changes on the active document. Other actions may be added by tools for specific document types. 
