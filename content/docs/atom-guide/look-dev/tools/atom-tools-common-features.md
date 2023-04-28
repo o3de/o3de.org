@@ -108,7 +108,7 @@ The tools menu includes actions to toggle visibility of dockable panels and open
 | Python Terminal | | Toggles the Python Terminal window. |
 
 ### Help Menu
-The help menu includes actions for opening the help and about dialogs.
+The help menu includes actions to open the help and about dialogs.
 
 | Menu item | Hotkey | Function |
 | - | - | - |
