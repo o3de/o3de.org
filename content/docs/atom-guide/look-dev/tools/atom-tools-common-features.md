@@ -55,7 +55,7 @@ All of the tools come with a common set of basic panels but you can add more pan
 The Inspector displays context-sensitive, editable properties for the active document.
 
 #### Asset Browser
-Use the Asset Browser panel to explore and manage assets in the active project and gems. Set up filters, select, create, rename, move, delete, and perform other operations on assets. The Asset Browser automatically selects the file corresponding to the most recently opened or activated document. This will only happen if the filters are set up to display the document type. Assets can be dragged from the Asset Browser into asset properties in the inspector and other windows supporting the dropped file types.
+Use the Asset Browser panel to explore and manage assets in the active project and Gems. Set up filters, select, create, rename, move, delete, and perform other operations on assets. The Asset Browser automatically selects the file corresponding to the most recently opened or activated document. This only happens if the filters are set up to display the document type. Drag assets from the Asset Browser into asset properties in the Inspector and other windows supporting the dropped file types.
 
 #### Logging
 Use the Logging window to review all of the trace, warning, and error messages reported since the tool was launched.
