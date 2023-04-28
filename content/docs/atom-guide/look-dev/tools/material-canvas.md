@@ -121,7 +121,7 @@ You can do the following actions:
 - **Double-click** on a bookmark to center the graph view on that position.
 
 #### Mini Map
-The mini map window displays a zoomed-out overview of the nodes and graph. Quickly navigate to different parts of the graph by clicking and dragging the mini map.
+The mini map window displays a zoomed-out overview of the nodes and graph. **Click-and-drag** the mini map to quickly navigate to different parts of the graph.
 
 #### Viewport
 The viewport renders a scene containing a model, with the current material applied to it, under configurable lighting conditions. The viewport window has a toolbar with controls for setting different options related to the grid, shadow catcher, and tone mapping mode. There are also drop downs for selecting the viewport model, lighting preset, and render pipeline. Lighting presets contain all the settings for the skybox, image-based lighting, directional lights, and other settings used in the viewport. Since the introduction of the material pipeline system, render pipelines can also be changed at runtime.
