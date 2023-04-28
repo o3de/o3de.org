@@ -100,7 +100,7 @@ The **Model Preset Browser** window opens when you press the **Select** button. 
 ![Model Preset Browser](/images/atom-guide/tools/model-preset-browser.png)
 
 ### Lighting
-The Lighting property group allows you to manage the list of available lighting presets, and configure their properties. Lighting presets are useful for previewing materials in a variety of lighting conditions. Atom includes a collection of lighting presets, and you can create additional presets with a custom skymap image and lighting properties. Lighting presets are stored in JSON files (`*.lightingpreset.azasset`), and can be configured in the Viewport Settings. 
+The Lighting property group allows you to manage the list of available lighting presets and configure their properties. Lighting presets are useful for previewing materials in a variety of lighting conditions. Atom includes a collection of lighting presets, and you can create additional presets with a custom skymap image and lighting properties. Lighting presets are stored in JSON files (`*.lightingpreset.azasset`), which you can configure in the Viewport Settings. 
 
 #### Buttons  
 These controls are used to create, edit, save, or reset a specific lighting preset.  
