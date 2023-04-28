@@ -134,8 +134,13 @@ Use the viewport settings panel to edit the active lighting preset. The changes 
 For more information about the viewport settings, see [Atom Tools Viewport](/docs/atom-guide/look-dev/tools/atom-tools-viewport/). 
 
 ## Editing Material Graphs
-### Node Creation and Placement
-Nodes are the building blocks of every material graph. Every node serves a purpose, providing data or a distinct piece of functionality that can be added to the graph. Drag nodes from the node palette onto the material graph view. Nodes can also be created by right clicking on the graph view and choosing a node from the embedded node palette. Doing either of these will cause the node to appear at the drop or click position. The node will be selected and its properties will be displayed in the inspector for editing.
+### Node creation and placement
+Nodes are the building blocks of every material graph. Every node serves a purpose, providing data or a distinct piece of functionality that you can add to the graph. 
+
+To create and place nodes, do either one of the following:
+- Drag nodes from the node palette onto the material graph view. 
+- Right-click on the graph view and choose a node from the embedded node palette. 
+When you create a node, the node appears at the drop or click position. The node is selected and its properties display in the Inspector for editing.
 
 Depending on system constraints, this process can be repeated to add any number of nodes to a graph. Some operations may take longer to perform based on the number of nodes on a graph or the number of selected nodes.
 
