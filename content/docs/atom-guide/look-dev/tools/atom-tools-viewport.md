@@ -20,7 +20,7 @@ The viewport contains the following features and configurable options:
 ### Interacting with the viewport
 You can view the model or other content in the viewport at different perspectives by controlling the camera, model, or environment.
 
-#### Camera Controls
+#### Camera controls
 These controls adjust the camera view.
 | Control | Action |
 | - | - |
