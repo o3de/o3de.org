@@ -7,10 +7,27 @@ weight: 500
 
 ## Open 3D Engine (O3DE) Version Numbering
 
+O3DE uses `MAJOR.MINOR.PATCH` [semantic versioning](https://semver.org/) for all the `version` fields in `engine.json`, `gem.json` and `project.json` files.  
+
+- `MAJOR` is for API-breaking changes
+- `MINOR` is for non-API-breaking changes that add new APIs or change them in a non-breaking way
+- `PATCH` is for all other non-API-breaking changes, usually important fixes
+
+Example: If a breaking API change is made to a gem at version `2.0.1` the `MAJOR` version is incremented and the `MINOR` and `PATCH` are reset to `0` resulting the new version being `3.0.0`.  See the [semantic versioning](https://semver.org/) page for more examples. 
+
+## O3DE Version Specifiers 
+
+Lists of compatible engines and dependencies use the `<name><version specifier>` format based on [PEP 440](https://peps.python.org/pep-0440/#version-specifiers).
+
+Example: A gem that is known to be compatible with the an engine named `o3de-sdk` version `2.0.1` would include `o3de-sdk==2.0.1` in the `compatible_engines` field in `gem.json`
+
+
+## Engine Version Information In `engine.json` 
+
 O3DE engine version information is stored inside the `engine.json` file at the root of the engine.   
 
 
-| Field | Description |  Global CMake Properties |
+| Field | Description |  CMake Global Properties |
 |---------------------|------------------------|------------------------|
 | engine_name | The name of the engine which is set to `o3de-sdk` when the SDK is created and is `o3de` in the O3DE GitHub repository source code. | | 
 | display_version | The `YY.MM.PATCH` year and month version displayed in the SDK installer and Project Manager. This value is only set when creating the SDK and is `00.00` in the O3DE GitHub repository source code. By using a date-oriented scheme for the SDK display version users can easily tell how recently an engine SDK was released, however this scheme is not useful for conveying compatibility which is why we have a separate `version` field.  | `O3DE_DISPLAY_VERSION_STRING` |
@@ -43,7 +60,7 @@ A developer may use the `compatible_engines` field in their `gem.json` to indica
 
 ### Engine APIs
 
-The API versions specified in the `api_versions` field in `engine.json` are currently based on the general content inside the engine's `Code` folder and are general in an effort to provide a simple but useful way for developers to indicate compatibility when they expect their gem or tool to be compatibile with multiple engine versions unless breaking changes are made to APIs inside the engine's `Code` folder.
+The API versions specified in the `api_versions` field in `engine.json` are currently based on the content inside the engine's `Code` folder and are provided as simple but useful way for developers to indicate compatibility when they expect their gem or tool to be compatibile with multiple engine versions unless breaking changes are made to APIs inside the engine's `Code` folder.
 
 | Engine API Field| Source Path |
 |---------------------|------------------------|
