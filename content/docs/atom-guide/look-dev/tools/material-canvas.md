@@ -4,8 +4,7 @@ description: Learn how to use the Material Canvas to create material types and s
 toc: true
 ---
 
-## Overview
-Creating material types and shaders in O3DE ordinarily requires familiarity with the engine, renderer, AZSL shading language, data types, file formats, and how everything fits together. It involves hand editing and manually managing multiple files, writing AZSL shader code, editing JSON, launching the Asset Processor to compile them, addressing any reported errors, then using the O3DE Editor or Material Editor to preview and customize assets.
+Creating material types and shaders in **Open 3D Engine (O3DE)** is ordinarily a time-consuming process that requires familiarity with the engine, renderer, shaders, data types, file formats, and how everything fits together. It involves manually editing and managing multiple files, writing **Amazon Shading Language (AZSL)** shader code, editing in JSON, launching the Asset Processor to compile them, addressing any reported errors, then using the O3DE Editor or Material Editor to preview and customize assets.
 
 **Material Canvas** drastically simplifies, accelerates, and automates the creation of custom shaders and material types by providing a visual scripting editor with familiar tools, workflows, status reporting, and live previews.
 
