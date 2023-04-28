@@ -34,22 +34,20 @@ Simply put, a prefab is a collection of entities and nested prefabs. The further
 
 Prefab files use JSON format. A prefab file has the following fields.
 
-<dl>
-  <dt>Container Entity</dt>
-  <dd>A wrapper entity, which is the parent of all other entities and nested prefabs contained within a prefab. This is also used to distinguish prefabs from regular entities in the <a href="/docs/user-guide/editor/entity-outliner/"><b>Entity Outliner</b></a>. A prefab must have a single container entity.</dd>
+Container Entity  
+: A wrapper entity, which is the parent of all other entities and nested prefabs contained within a prefab. This is also used to distinguish prefabs from regular entities in the <a href="/docs/user-guide/editor/entity-outliner/">Entity Outliner</a>. A prefab must have a single container entity.
 
-  <dt>Entities</dt>
-  <dd>A container for entities owned by a prefab. A prefab may contain zero or more nested entities.</dd>
+Entities
+: A container for entities owned by a prefab. A prefab may contain zero or more nested entities.
 
-  <dt>Instances</dt>
-  <dd>A container for nested prefabs owned by a prefab. A prefab may contain zero or more nested prefabs.</dd>
+Instances
+: A container for nested prefabs owned by a prefab. A prefab may contain zero or more nested prefabs.
 
-  <dt>Source</dt>
-  <dd>The relative path to the prefab file that the nested prefab needs to load from.</dd>
+Source
+: The relative path to the prefab file that the nested prefab needs to load from.
 
-  <dt>Patches</dt>
-  <dd>A list of changes that get applied on top of the nested prefab.</dd>
-</dl>
+Patches
+: A list of changes that get applied on top of the nested prefab.
 
 For example, this is a prefab that contains a single entity and a single nested prefab:
 
