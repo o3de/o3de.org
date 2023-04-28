@@ -149,7 +149,7 @@ After nodes are added to the graph, you can move and reorganize them by dragging
 ### Node Slots and Connections
 Every Material Canvas node has some number of slots. _Slots_ define properties, inputs, and outputs for a node.
 
-Properties are slots that have no incoming or outgoing connections. They are often used as constant values or to describe other details about the node.
+_Properties slots_ have no incoming or outgoing connections. They are often used as constant values or to describe other details about the node.
 
 Input slots have default values that are consumed by and assigned to variables used inside the node. Input slots can only have one incoming connection.
 
