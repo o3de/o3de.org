@@ -31,9 +31,8 @@ You have multiple options to start editing a material.
   1. Select **Main Menu > File > Open...**.
 - Open or create a material from the Asset Browser.
 
-### Editing Materials
-- All material editing is done by changing properties in the Material Editor inspector.
-- Changes are recorded as properties are edited and can be undone and redone. 
+### Editing materials
+To edit materials, change the material's properties in the Material Editor Inspector. The system records any changes you make, so you can always undo and redo them.
 
 ### Child materials
 Materials can reference a parent material to inherit and override its properties. Changes to the parent or another ancestor automatically reflect in the child material, unless the child overrides those properties.
