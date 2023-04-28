@@ -116,6 +116,6 @@ The help menu includes actions to open the help and about dialogs.
 | About... | | Opens the about dialog with information about the tool. |
 
 ## Settings
-Tools can be customized and configured through the settings registry. The settings dialog in each tool provides access to several common and application specific settings. Values for all modified settings will be saved between sessions. 
+Customize and configure tools through the [settings registry](https://www.o3de.org/docs/user-guide/settings/). The settings dialog in each tool provides access to several common and application-specific settings. Values for all modified settings save between sessions. 
 
 ![Settings Dialog](/images/atom-guide/tools/settings-dialog.png)
