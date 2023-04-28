@@ -4,7 +4,6 @@ description: Learn how to navigate and use the common features of Atom tools suc
 toc: true
 ---
 
-## Overview
 The tools included with Atom are built upon a common foundation. They share the same core concepts, features, workflows, and user experience.
 
 ![Basic Tool](/images/atom-guide/tools/empty-tool.jpg)
