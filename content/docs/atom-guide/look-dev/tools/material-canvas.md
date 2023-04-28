@@ -172,7 +172,7 @@ This category contains nodes related to texture sampling. Note that some texture
 #### Scene Nodes
 This category is intended to contain nodes for elements of the Scene SRG. At this time, the only exposed node is Time.
 
-#### Utility Nodes
+#### Utility nodes
 The utility node category contains standard comment and group nodes used by all of the O3DE, graph editing tools. Comment nodes can be placed throughout the graph to leave notes and descriptions about a particular part of the graph. Group nodes can be used as a container for other nodes on the graph. Groups containing other nodes can then be expanded, collapsed, and treated as a single node.
 
 ## Creating New Material Graph Nodes
