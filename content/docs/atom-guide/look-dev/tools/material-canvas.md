@@ -147,7 +147,7 @@ Depending on system constraints, this process can be repeated to add any number 
 After nodes are added to the graph, you can move and reorganize them by dragging them to new positions. Access actions in the toolbar and in the Edit Menu to change the placement and alignment of selected nodes.
 
 ### Node Slots and Connections
-Every Material Canvas node will have some number of slots. Slots define properties, inputs, and outputs for a node.
+Every Material Canvas node has some number of slots. _Slots_ define properties, inputs, and outputs for a node.
 
 Properties are slots that have no incoming or outgoing connections. They are often used as constant values or to describe other details about the node.
 
