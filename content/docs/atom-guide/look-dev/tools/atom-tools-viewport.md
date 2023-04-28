@@ -107,7 +107,7 @@ These controls are used to create, edit, save, or reset a specific lighting pres
 
 | Button | Description |
 | - | - |
-| **Add** | Create a new lighting preset and select a save file location. Lighting presets can be saved anywhere in your project folder.  |  |  |
+| **Add** | Create a new lighting preset and select a save file location. You can save lighting presets anywhere in your project folder.  |  |  |
 | **Select** | Open the **Lighting Preset Browser**, browse, and select from the list of available lighting presets. |  |  |
 | **Save** | Save changes made to the selected lighting preset. |  |  |
 
