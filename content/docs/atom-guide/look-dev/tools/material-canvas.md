@@ -78,8 +78,8 @@ For more information about features common to Atom tools, menus, dockable panels
 ### Document types and views
 Material Canvas supports creating, opening, and editing multiple types of documents.
 
-#### Material Graph Documents
-Material Graph Documents ".materialgraph" are the main documents type in Material Canvas. Each open material graph has a corresponding, two dimensional, gridded, graph view, where most editing will take place. All of the data related to nodes, connections, slot values, positioning, selection, and any other metadata about the graph will be stored in the material graph document.
+#### Material Graph documents
+Material Graph documents, `.materialgraph` are the main documents type in Material Canvas. Each open material graph has a corresponding, two dimensional, gridded, graph view, where most editing takes place. All of the data related to nodes, connections, slot values, positioning, selection, and any other metadata about the graph is stored in the material graph document.
 
 #### Material Graph Node Documents
 Material Graph Node Documents ".materialgraphnode" are JSON files defining each type of node that can be created in Material Canvas. They contain settings for a unique ID, unique names, display names, descriptions, data types, and default values for the node and its slots. Additionally, they declare fragments of AZSL shader code and other metadata that Material Canvas uses to assemble complete shaders. All of the current Material Canvas nodes are specified using material graph node configuration files. Nodes can also be created and registered programmatically using C++ or Python.
