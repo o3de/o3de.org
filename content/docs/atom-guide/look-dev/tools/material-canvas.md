@@ -173,7 +173,7 @@ This category contains nodes related to texture sampling. Note that some texture
 This category is intended to contain nodes for elements of the Scene SRG. At this time, the only exposed node is Time.
 
 #### Utility nodes
-The utility node category contains standard comment and group nodes used by all of the O3DE, graph editing tools. Comment nodes can be placed throughout the graph to leave notes and descriptions about a particular part of the graph. Group nodes can be used as a container for other nodes on the graph. Groups containing other nodes can then be expanded, collapsed, and treated as a single node.
+The utility node category contains standard comment and group nodes used by all of the O3DE, graph editing tools. Comment nodes can be placed throughout the graph to leave notes and descriptions about a particular part of the graph. You can use group nodes as a container for other nodes on the graph. For groups that contain other nodes, you can expand, collapse, and treat them as a single node.
 
 ## Creating new material graph nodes
 Material Canvas nodes, with the exception of utility nodes, are completely defined in JSON configuration files. As mentioned earlier, these files describe the nodes UUID, name, description, category, as well as the layout and details for each slot on the node. Node configurations may have additional settings or meta data to drive the code and data generation process.
