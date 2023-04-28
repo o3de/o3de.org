@@ -4,7 +4,7 @@ description: Learn about the viewport, settings, and interactions shared by many
 toc: true
 ---
 
-## The Viewport
+## Viewport
 The Atom Tools Viewport is shared by multiple tools like Material Editor and Material Canvas.
 
 The viewport contains and has options to configure:
