@@ -114,7 +114,11 @@ You can do the following actions:
 - **Drag** nodes from the palette into the active graph view to create an instance of that node at the drop position on the graph.
 
 #### Bookmarks
-Use the bookmarks panel to manage all of the bookmarks on the active graph. Place bookmarks on the graph, like pins on a map, as a point of reference for any important positions. Double clicking on a bookmark will center the graph view on that position. Bookmark descriptions and colors are configurable in the bookmarks panel and inspector.
+Use the bookmarks panel to manage all of the bookmarks on the active graph. You can configure bookmark descriptions and colors bookmarks panel and Inspector.
+
+You can do the following actions: 
+- Place bookmarks on the graph, like pins on a map, as a point of reference for any important positions. 
+- **Double-click** on a bookmark to center the graph view on that position.
 
 #### Mini Map
 The mini map window displays a zoomed-out overview of the nodes and graph. Quickly navigate to different parts of the graph by clicking and dragging the mini map.
