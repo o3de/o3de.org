@@ -20,7 +20,7 @@ There are multiple ways to launch Material Editor.
 - From the Asset Browser, right click on a ".material" or ".materialtype", then select **Open in Material Editor...** 
 - Material Editor is also a standalone executable that can be launched directly from a file browser or command console.
   - Launch the executable `<build>\bin\profile\MaterialEditor.exe`
-  - This requires passing the —project-path, followed by the path your project, as a command line argument.
+  - This requires passing the â€”project-path, followed by the path your project, as a command line argument.
 
 ### Creating Materials
 You have multiple options to start editing a material.
@@ -37,10 +37,10 @@ You have multiple options to start editing a material.
 - All material editing is done by changing properties in the Material Editor inspector.
 - Changes are recorded as properties are edited and can be undone and redone. 
 
-### Child Materials
-- Materials can reference a parent material to inherit and override its properties.
-- Changes made to the parent, or another ancestor, are automatically reflected in the child material unless the child is overriding those properties.
-- Child materials can be created opening an existing material and selecting **Main Menu > File > Save As Child...**. 
+### Child materials
+Materials can reference a parent material to inherit and override its properties. Changes to the parent or another ancestor automatically reflect in the child material, unless the child overrides those properties.
+
+To create child materials, open an existing material and select **Main Menu > File > Save As Child...**. 
 
 ### Mirroring Changes in The O3DE Editor
 - Materials saved in the Material Editor will be processed by the Asset Processor.
