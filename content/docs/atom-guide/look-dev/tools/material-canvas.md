@@ -11,7 +11,7 @@ Creating material types and shaders in O3DE ordinarily requires familiarity with
 
 Drag-and-drop, connect, and configure nodes to construct material graphs that automatically transform into standard source files for shaders, material types, and materials. The Asset Processor automatically recognizes and processes the generated source files, so other O3DE systems and compoments can use the materials. By default, Material Canvas regenerates and overwrites files whenever you open, edit, and save a graph. The viewport updates to display the results as quickly as changes are made and processed.
 
-Material Canvas is built on top of the same foundations as established tools like Script Canvas and Material Editor. It is data-driven, customizable, extensible, and scriptable through the settings registry, Python, and C++. All of the current material graph nodes are defined in JSON files that contain snippets of AZSL. These files can be edited, and new ones created, from within Material Canvas.
+Material Canvas is built on top of the same foundations as other O3DE tools like Script Canvas and Material Editor. It is data-driven, customizable, extensible, and scriptable through the settings registry, Python, and C++. All of the current material graph nodes are defined in JSON files that contain snippets of AZSL. You can edit and create new material graph nodes from within Material Canvas.
 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
