@@ -61,12 +61,12 @@ You can create, open, and edit `.material files`.  You can also open `.materialt
 
 The material that you're currently editing displays on the model in the viewport. As you edit the material through the inspector or script, the material shown in the viewport automatically updates to reflect the changes.
 
-## Main Menu
+### Main Menu
 The main menu contains all of the submenus and actions common to all Atom tools. 
 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
-## Viewport
+### Viewport
 Use the **Viewport** panel to preview materials applied to models under different lighting conditions.
 
 {{< note >}}
@@ -75,7 +75,7 @@ The Viewport cannot be closed entirely. If all the tabs are closed, the Viewport
 
 For more information about the viewport and how to interact with it, see [Atom Tools Viewport](/docs/atom-guide/look-dev/tools/atom-tools-viewport/).  
 
-## Viewport Settings
+### Viewport Settings
 The Viewport Settings panel displays options to configure the Viewport properties. These properties control how the Viewport appears and which features are active. You can also create or edit configuration presets for the viewport model and the lighting environments. 
 
 For more information about the viewport settings, see [Atom Tools Viewport](/docs/atom-guide/look-dev/tools/atom-tools-viewport/).
