@@ -89,8 +89,8 @@ The edit menu has common actions to undo and redo changes on the active document
 | Undo | **Ctrl+Z** | Undo the most recent action. |
 | Redo | **Ctrl+Y** | Redo the most recent action that was undone. |
 
-### View Menu
-The view menu includes actions for switching between documents. Other actions may be added by tools for specific document types. 
+### View menu
+The view menu includes actions to switch between documents. Other tools may have additional actions depending on the document types they support. 
 
 | Menu item | Hotkey | Function |
 | - | - | - |
