@@ -21,7 +21,7 @@ There are multiple ways to launch Material Editor.
   - Launch the executable `<build>\bin\profile\MaterialEditor.exe`
   - This requires passing the —project-path, followed by the path your project, as a command line argument.
 
-### Creating Materials
+### Creating materials
 You have multiple options to start editing a material.
 - Create a new material from a material type.
   - Select **Main Menu > File > New...**.
