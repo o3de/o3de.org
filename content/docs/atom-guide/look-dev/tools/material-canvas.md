@@ -87,12 +87,12 @@ Material Graph Node documents, `.materialgraphnode`, are JSON files that define 
 #### Shader Source Data Config Documents
 Shader Source Data Config Documents, `.shader`, are for editing shader configuration files. All of the supporting data types are reflected so you can edit shader source data files in the Inspector or using Python. In the Inspector, all of the options are listed. This is useful to edit shader source data files and creating new templates for material graph output nodes.
 
-### Main Menu
+### Main menu
 The main menu contains all of the submenus and actions common to all Atom tools as well as Material Canvas specific actions. 
 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
-### Edit Menu
+### Edit menu
 In addition to options common to Atom tools, when a material graph document is open and active, there are also options to manage the graph and its elements. 
 
 Similar to Script Canvas and Landscape Canvas, you can select, align, delete, duplicate, cut, copy, and paste nodes.
@@ -133,20 +133,20 @@ Use the viewport settings panel to edit the active lighting preset. The changes 
 
 For more information about the viewport settings, see [Atom Tools Viewport](/docs/atom-guide/look-dev/tools/atom-tools-viewport/). 
 
-## Editing Material Graphs
+## Editing material graphs
 ### Node creation and placement
 Nodes are the building blocks of every material graph. Every node serves a purpose, providing data or a distinct piece of functionality that you can add to the graph. 
 
 To create and place nodes, do either one of the following:
-- Drag nodes from the node palette onto the material graph view. 
-- Right-click on the graph view and choose a node from the embedded node palette. 
+- **Drag** nodes from the node palette onto the material graph view. 
+- **Right-click** on the graph view and choose a node from the embedded node palette. 
 When you create a node, the node appears at the drop or click position. The node is selected and its properties display in the Inspector for editing.
 
-Depending on system constraints, this process can be repeated to add any number of nodes to a graph. Some operations may take longer to perform based on the number of nodes on a graph or the number of selected nodes.
+Depending on system constraints, you can repeat this process add more nodes to a graph. Some operations may take longer to perform based on the number of nodes on a graph or the number of selected nodes.
 
-After nodes are added to the graph, you can move and reorganize them by dragging them to new positions. Access actions in the toolbar and in the Edit Menu to change the placement and alignment of selected nodes.
+After you add nodes, move and reorganize them by dragging them to new positions. Access actions in the toolbar and in the Edit menu to change the placement and alignment of the selected nodes.
 
-### Node Slots and Connections
+### Node slots and connections
 Every Material Canvas node has some number of slots. _Slots_ define properties, inputs, and outputs for a node.
 
 _Properties slots_ have no incoming or outgoing connections. They are often used as constant values or to describe other details about the node.
@@ -191,11 +191,11 @@ The utility node category contains standard comment and group nodes used by all 
 ## Creating new material graph nodes
 Material Canvas nodes, with the exception of utility nodes, are completely defined in JSON configuration files. As mentioned earlier, these files describe the nodes UUID, name, description, category, as well as the layout and details for each slot on the node. Node configurations may have additional settings or meta data to drive the code and data generation process.
 
-The inspector for material graph node documents allow you to create unique node UUIDs, add and remove slots, select data types, configure default values, and manage custom settings for nodes and slots. The inspector also has custom controls for making selections and editing AZSL.
+The inspector for material graph node documents allows you to create unique node UUIDs, add and remove slots, select data types, configure default values, and manage custom settings for nodes and slots. The inspector also has custom controls for making selections and editing AZSL.
 
 It is possible to create nodes from scratch using tools provided by Material Canvas. However, some of the nodes are simple enough that it might be more convenient to copy an existing material graph node file, update the UUID, and make changes using the tool or directly in JSON.
 
-### Material Graph Node Configuration Example
+### Material graph node configuration example
 Below is a material graph node configuration for a floating-point constant node with one property and one output slot.
 
 ```
@@ -244,59 +244,59 @@ Below is a material graph node configuration for a floating-point constant node 
 }
 ```
 
-#### Material Graph Node Configuration Attributes
+#### Material graph node configuration attributes
 Every node configuration must have a unique ID. This ensures that they are uniquely identifiable, regardless of location on disk, project, name collisions, or other factors.
 
-The node category determines how nodes will be grouped together in the node palette tree.
+The node category determines how nodes are grouped together in the node palette tree.
 
-The node title is the name displayed in the node palette and on the top of the node in the graph view. It will also be used to help create unique symbol names and variable names in shader code.
+The node title is the name displayed in the node palette and on the top of the node in the graph view. It's also used to create unique symbol names and variable names in shader code.
 
 The node title palette name is an optional field specifying which style sheet palette to use for the title bar on the node. Style sheets configure styling, coloring, fonts, and other attributes that control how elements in the node palette and graph view are displayed. Style sheets are defined in a separate, application wide file.
 
-The node description is an optional field that will be presented as a tool tip when hovering over a node in the palette.
+The node description is an optional field that's presented as a tool tip when you hover over a node in the palette.
 
 Slot data type groups contains a delimited list of slots names. The Material Canvas graph traversal and code generation process will enforce that all slot names listed in this field are promoted to the same data type, if they are compatible. Currently, if all of the listed slots reference scalar or vector values than all of the slot values will be promoted to the largest data type. For example, if all of the slots on the node are scalar values but an incoming connection is a three-dimensional vector then all of the other slots will be up converted to three dimensional vectors. This is necessary, in addition to other forms of casting, so that variables generated from different incoming types will be compatible with code and function calls defined in the node.
 
-#### Material Graph Node Slot Configuration Attributes
-Every slot configuration must have a unique name with respect to the node. The slot name is used to uniquely identify and address the slot, setup connections between slots, and is used to create a unique variable name in generated shader code and other files. The name will also be used as the display name in the UI if there is no specific display name specified. Changing the name will break connections and lose any data associated with the slot.
+#### Material graph node slot configuration attributes
+Every slot configuration must have a unique name with respect to the node. The slot name is used to identify and address the slot, set up connections between slots, and create a unique variable name in generated shader code and other files. The name is also used as the display name in the UI, if there is no display name specified. Avoid changing the name because it breaks connections and loses any data associated with the slot.
 
-The display name can be specified as a more user-friendly name to present in the UI. If no note display name is assigned then one will be inferred from the slot name.
+For display name, specify a more user-friendly name to present in the UI. If no display name is provide, then a name inferred from the slot name.
 
-The description provides more detail about what slots do or represent. These will be presented as tool tips when hovering the mouse cursor over the node and slot in the graph view.
+The description provides more detail about what slots do or represent. This is presented as tool tips when you hover over the node and slot in the graph view.
 
-The supporting data types regular expression field is used to acquire which data types are compatible with a slot. The regular expression makes it easier to match several data types with a single expression instead of listing them all individually. However, individual data types can be listed using vertical bar separators between them.
+The supporting data types' regular expression field is used to acquire which data types are compatible with a slot. With [regular expressions](https://en.m.wikipedia.org/wiki/Regular_expression), you can query multiple data types that match a specific pattern, or list the data types individually. 
 
 The default value field is used to set a specific default value for a slot. This is optional because the system specifies a standard default value when registering all the data types. No explicit default value is assigned in the node configuration then the registered default value will be used.
 
-#### Material Graph Node Settings
-Material Graph Nodes and slots provide a field for arbitrary settings. Material graph nodes use the settings for data like blocks of AZSL instructions, template file lists, include file lists, and other entries used for material inputs and shader options.
+#### Material graph node settings
+Material graph nodes and slots provide a field for arbitrary settings. Material graph nodes use the settings for data like blocks of AZSL instructions, template file lists, include file lists, and other entries used for material inputs and shader options.
 
 In the previous example, the settings are used to add AZSL instruction blocks and code snippets to create a variable from a property slot and return its value on an output slot.
 
-#### Material Graph Node Settings for AZSL Instructions
+#### Material graph node settings for AZSL instructions
 Material graph node and slot configurations can both contain settings for AZSL instruction blocks. These instructions settings are simply lines of AZSL code that create variables, assign values, call functions, and anything else that can be done in AZSL.
 
 In the above example, unique instruction sets are added to each input and output slot. The input slots have instructions for creating variables with the slot type and value assigned. The output slot instructions create another variable to hold the result of the multiplication.
 
-During the code generation process, the entire graph will be traversed in depth order, and instructions will be stitched together from each node to fill in the shader program. For each node, instructions will be added in the following order: property slot instructions, input slot instructions, node instructions, output slot instructions. This gives a deterministic flow of data from inputs to outputs. In the final shader code, each variable name is prefixed with a unique identifier for the contributing node.
+During the code generation process, the entire graph is traversed in depth order, and instructions are stitched together from each node to fill in the shader program. For each node, instructions are added in the following order: property slot instructions, input slot instructions, node instructions, output slot instructions. This gives a deterministic flow of data from inputs to outputs. In the final shader code, each variable name is prefixed with a unique identifier for the contributing node.
 
-Various macros are available to insert details about the node or slot in instruction settings.
--	SLOTTYPE will be substituted with the AZSL data type for the current slot.
--	SLOTTYPE(name) will be substituted with the AZSL data type for the slot with the specified name.
--	SLOTNAME will be substituted with the unique, decorated variable name for the current slot.
--	SLOTNAME(name) will be substituted with the unique, decorated variable name for the slot with the specified name.
--	SLOTVALUE will be substituted with the value for the current slot unless it has an incoming connection. If there is an incoming connection, it will be replaced with the unique variable name for that connection.
--	SLOTVALUE(name) will be substituted with the value for the slot with the specified name unless it has an incoming connection. If there is an incoming connection, it will be replaced with the unique variable name for that connection.
+Use the following macros to insert details about the node or slot in instruction settings.
+-	SLOTTYPE is substituted with the AZSL data type for the current slot.
+-	SLOTTYPE(name) is substituted with the AZSL data type for the slot with the specified name.
+-	SLOTNAME is substituted with the unique, decorated variable name for the current slot.
+-	SLOTNAME(name) is substituted with the unique, decorated variable name for the slot with the specified name.
+-	SLOTVALUE is substituted with the value for the current slot unless it has an incoming connection. If there is an incoming connection, it is replaced with the unique variable name for that connection.
+-	SLOTVALUE(name) is substituted with the value for the slot with the specified name unless it has an incoming connection. If there is an incoming connection, it is replaced with the unique variable name for that connection.
 
 ## Troubleshooting
-### Material Canvas Viewport Does Not Update Immediately After Editing Graph
-Material Canvas automatically launches the Asset Processor if it is not already running. Some graphics related assets must be processed before the main window opens.
+### Material Canvas viewport does not update immediately after editing graph
+Material Canvas automatically launches the Asset Processor if it is not already running. Some graphics related assets must be processed before the main window opens. Wait until Asset Processor is done processing all assets.
 
 The shader compilation process is expensive, complex, and currently managed by the Shader Asset Builder. Material Canvas relies on the Asset Processor and Shader Asset Builder to process, validate, and preview content generated by material graphs. The Asset Processor reports status, error messages, and other notifications as shader and material assets are built. The viewport updates with shader and material previews as quickly as those assets can be processed.
 
 Building shader assets takes more time on Windows than Linux, or other platforms. This is partially because Windows builds shaders for the null renderer, DX12, and Vulkan by default. Registry settings can be configured to disable unused targets and vastly improve shader compilation and preview times. Use the Material Canvas settings dialog to override these settings.
 
-### Material Canvas Fails To Launch
+### Material Canvas fails to launch
 Material Canvas normally initializes all of the gems enabled by the active project. In order to reduce start times and system resource utilization, Material Canvas, and the other atom tools, includes registry setting files that forcibly disable several standard O3DE gems that are not likely to be needed within the tool.
 
 If Material Canvas fails to launch then it may be because of dependency issues with gems in the active project. Check MaterialCanvas.log for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Canvas project registry folder.
