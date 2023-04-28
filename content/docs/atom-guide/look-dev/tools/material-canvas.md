@@ -87,7 +87,7 @@ Material Graph Node documents, `.materialgraphnode`, are JSON files that define 
 #### Shader Source Data Config Documents
 Shader Source Data Config Documents, `.shader`, are for editing shader configuration files. All of the supporting data types are reflected so you can edit shader source data files in the Inspector or using Python. In the Inspector, all of the options are listed. This is useful to edit shader source data files and creating new templates for material graph output nodes.
 
-## Main Menu
+### Main Menu
 The main menu contains all of the submenus and actions common to all Atom tools as well as Material Canvas specific actions. 
 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
