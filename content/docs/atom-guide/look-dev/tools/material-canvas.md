@@ -167,7 +167,7 @@ At this time, Material Canvas has two output nodes. The Base PBR and Standard PB
 
 Experiment by dragging one of these nodes onto a material graph. If the automatic graph compilation settings are enabled, which they are by default, several shader files, the material type, and the default material will be generated in the folder containing the material graph file.
 
-#### Constant Nodes
+#### Constant nodes
 Constant nodes represent constant variables defined in line in shader code. There are several constant nodes corresponding to different data types supported by the AZSL. These nodes should be used to setup any variables that do not need to be exposed to outside of the shader or configurable through materials.
 
 #### Input Nodes
