@@ -8,7 +8,7 @@ The **Material Editor** is a standalone application that allows artists to view,
 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
-## Quick Start
+## Quick start
 To get started, launch the Material Editor and create or edit a material. 
 
 ### Launching Material Editor
