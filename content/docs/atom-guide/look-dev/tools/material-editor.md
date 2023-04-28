@@ -41,7 +41,7 @@ Materials can reference a parent material to inherit and override its properties
 
 To create child materials, open an existing material and select **Main Menu > File > Save As Child...**. 
 
-### Mirroring Changes in The O3DE Editor
+### Mirroring changes to O3DE Editor
 - Materials saved in the Material Editor will be processed by the Asset Processor.
 - If the O3DE Editor is open and the saved material is assigned to a Material Component or terrain it will automatically not reload to reflect the changes.
 - Enabling the autosave in Material Editor settings dialog will causes updates to be continuously mirrored in the O3DE Editor.
