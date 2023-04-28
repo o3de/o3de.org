@@ -127,7 +127,7 @@ The following are properties you can configure for the selected lighting preset.
 | **Lights** | Manage a list of lights for the active lighting preset. |  |  |
 
 #### Lighting Preset Browser  
-The **Lighting Preset Browser** window opens when the **Select** button is pressed. The Lighting Preset Browser window is a separate window that cannot be docked.
+The **Lighting Preset Browser** window opens when you press the **Select** button. The Lighting Preset Browser window is a separate window that cannot be docked.
 
 ![Lighting Preset Browser](/images/atom-guide/tools/lighting-preset-browser.png)
 
