@@ -118,7 +118,7 @@ The Snap package is experimental and may run into issues on some distros. This h
 
 1. If the snap package has been downloaded from the O3DE page, use this command to install the package
    ```shell
-   snap install --classic <o3de snap package filename>.snap
+   snap install --classic --dangerous <o3de snap package filename>.snap
    ```
    The following output will be displayed if successful:
    ```shell
