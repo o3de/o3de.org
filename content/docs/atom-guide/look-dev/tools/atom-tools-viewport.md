@@ -8,7 +8,7 @@ toc: true
 The Atom Tools Viewport is shared by multiple tools like Material Editor and Material Canvas.
 
 The viewport contains the following features and configurable options:
-- An interactive camera that can be moved and oriented in the viewport.
+- An interactive camera that you can move and orient in the viewport.
 - A model placed at the origin of the scene with a material applied to it. 
 - A lighting preset that provides a skybox, image based lighting, directional lights, tone mapping, and other configurable lighting conditions.  
 - An optional grid at the origin of the viewport.  
