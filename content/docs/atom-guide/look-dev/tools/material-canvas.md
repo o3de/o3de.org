@@ -93,9 +93,9 @@ The main menu contains all of the submenus and actions common to all Atom tools 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
 ### Edit Menu
-When a material graph document is open and active, several options will be added to manage the graph and its elements.
+In addition to options common to Atom tools, when a material graph document is open and active, there are also options to manage the graph and its elements. 
 
-These are the same options available in Script Canvas and Landscape Canvas, to control node selection, alignment, deletion, duplication, cutting, copying, and pasting.
+Similar to Script Canvas and Landscape Canvas, you can select, align, delete, duplicate, cut, copy, and paste nodes.
 
 ### View Menu
 Material Canvas adds options for navigating and managing the graph view as well as opening an editor for configuring comment node and node group presets.
