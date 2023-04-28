@@ -82,7 +82,7 @@ The file menu contains all of the common actions for creating, opening, closing,
 | Run Python... | | Opens a dialog to select and run a Python script. |
 | Exit | | Closes the application. |
 
-### Edit Menu
+### Edit menu
 The edit menu has actions to undo and redo changes on the active document. Other actions may be added by tools for specific document types. 
 | Menu item | Hotkey | Function |
 | - | - | - |
