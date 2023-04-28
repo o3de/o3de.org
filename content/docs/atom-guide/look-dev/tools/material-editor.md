@@ -54,15 +54,13 @@ When you launch Material Editor, you will see the following main window.
 
 For more information about features common to Atom tools, menus, dockable panels, and working with documents, see [Atom Tools Common Features](/docs/atom-guide/look-dev/tools/atom-tools-common-features/). 
 
-### Document Types and Views
-Material Editor supports creating, opening, and editing one type of document.
+### Document types and views
+Material Editor supports material documents, `.material` and `.materialtype`. 
 
 #### Material Documents
-Material Documents are the main documents type in Material Editor.
-- ".material" files can be opened and edited.
-- ".materialtype" files can be opened but cannot be saved.
-- The material being edited by the active material document will be displayed on the model in the viewport. 
-- As changes are made to the material through the inspector or script, the material shown in the viewport will automatically updated to reflect the changes.
+You can create, open, and edit `.material files`.  You can also open `.materialtype` files to view it's properties, but you cannot edit them in the Material Editor. 
+
+The material that you're currently editing displays on the model in the viewport. As you edit the material through the inspector or script, the material shown in the viewport automatically updates to reflect the changes.
 
 ## Main Menu
 The main menu contains all of the submenus and actions common to all Atom tools. 
