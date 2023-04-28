@@ -8,7 +8,7 @@ The tools included with Atom are built upon a common foundation. They share the 
 
 ![Basic Tool](/images/atom-guide/tools/empty-tool.jpg)
 
-## The Document System
+## Document system
 All of the Atom tools use a multi-document, multi-view system. This allows all of the tools to follow the same patterns, so they share the same features, UI, and basic interactions. You'll have a familiar experience across the tools, regardless of the type of data you edit.
 
 A _document_ is the representation of a file or other data that you can create, open, and edit from within a tool. At a minimum, all document types support actions to open, save, undo, redo, and provide a list of properties that you can edit in an inspector, 
