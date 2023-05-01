@@ -114,41 +114,55 @@ The feature grid represents the current state of development for each feature in
 
 ### sig-graphics-audio
 
-* Updated DccScriptingInterface Gem to configure and bootstrap DCC tools like Maya and Blender from the Editor, and to provide workflow utilities like a streamlined "Scene Exporter" to get cleaner content to O3DE projects.
-* Added RHI bindless support which allows RHI to manage bindless heap for all image and buffer views across all backends. It caches view descriptors on the GPU memory and provides access to the index in the unbounded array to RPI at runtime. This index can be used by features to indirectly access image or buffer views on the GPU within the shader. Instead of managing your own custom unbounded arrays for buffer and image views features can now simply use the one managed by RHI. As a result RHI bindless support is now being used by Terrain and Ray Tracing.
-* Added Material Canvas ([sig-graphics-audio#51](https://github.com/o3de/sig-graphics-audio/issues/51))<br>Material Canvas is now available for users to create new, custom shaders and materials. Material Canvas is built upon the combined foundations of script canvas and Material Editor, offering most of the same features and UX as both. Users are able to visually edit, drag, drop, connect, and configure graphical nodes that are automatically transformed into all of the required source files that would otherwise need to be hand created and manually managed.
+* DccScriptingInterface Gem has been updated to configure and bootstrap DCC tools like Maya and Blender from the Editor, and to provide workflow utilities like a streamlined "Scene Exporter" to get cleaner content to O3DE projects.
+
+* Added RHI bindless support which allows RHI to manage bindless heap for all image and buffer views across all backends. It caches view descriptors on the GPU memory and provides access to the index in the unbounded array to RPI at runtime. This index can be used by features to indirectly access image or buffer views on the GPU within the shader. Instead of managing your own custom unbounded arrays for buffer and image views, features can now simply use the one managed by RHI. RHI bindless support is now used by Terrain and Ray Tracing.
+
+* Material Canvas has been added ([sig-graphics-audio#51](https://github.com/o3de/sig-graphics-audio/issues/51)).<br>Material Canvas is now available for users to create new, custom shaders and materials. Material Canvas is built upon the combined foundations of script canvas and Material Editor, offering many of the same features and UX. Users are able to visually edit, drag, drop, connect, and configure graphical nodes that are automatically transformed into all of the required source files that would otherwise need to be manually created and managed.
+
 	* Typically, the generated source files include shader configurations, AZSL source, material types, and a default material. As these files are generated, they are automatically recognized and processed by the AP, displayed in the Viewport, and made available for use in the Material Editor, material component, and other aspects of the engine that use shaders and materials.  
-	* Approximately 150 nodes are provided out-of-the-box. Most of those represent AZSL intrinsic functions, constant values, input values, output nodes, and other types. Material output nodes are the main notes for any material graph. They define a template that encapsulates all of the data and dependencies to tell Material Canvas what to generate when it compiles the graph. When a material output node has been added to the graph, users will begin to refer to files generating, assets building, in the viewport updating with subsequent changes.  
+	* Approximately 150 nodes are provided out-of-the-box. Most of those represent AZSL intrinsic functions, constant values, input values, output nodes, and other types. Material output nodes are the main nodes for any material graph. They define a template that encapsulates all of the data and dependencies to tell Material Canvas what to generate when it compiles the graph. When a material output node has been added to the graph, users will begin to refer to files generating, assets building, in the viewport updating with subsequent changes.  
 	* All current material graph nodes are implemented as simple JSON configuration files, listing all of the input and output slots, data types, default values, snippets of shader code, and other metadata. The new library is fully extensible and customizable by simply adding new JSON files.  
 	* Material Canvas can also open and provide tools for creating and editing the material graph node files. These can live in any Gems or projects but they must have a unique UUID in every file. There are several examples for all of the existing nodes in the Material Canvas project.  
 	* Like Material Editor, most or all aspects of the tool are also exposed through behavior context reflection for Python automation.  
-	* Additional testing and documentation are in progress.   
-* Improved CPU performance such that an 8 core CPU with an NVIDIA 2080 can handle 9000 static and 1000 dynamic entities at greater than 30fps at 1080p
-* Added support for Terrain nodes in Landscape Canvas. For more information, refer to [Create Terrain from Images](https://www.o3de.org/docs/learning-guide/tutorials/environments/create-terrain-from-images/).
-* Added a generic paintbrush workflow and implemented the ability to paint both heights and color directly in the Editor Viewport for the Terrain System.
-  
-  The paint brush workflow also includes runtime scripting support for real-time modifications of the terrain using a painting API.  
-	* Generalized Paint Brush documentation: https://www.o3de.org/docs/user-guide/components/reference/paintbrush/paintbrush/  
-	* Image Gradient Component with Paint Brush support: https://www.o3de.org/docs/user-guide/components/reference/gradients/image-gradient/  
-	* Terrain Macro Material Component with Paint Brush support: https://www.o3de.org/docs/user-guide/components/reference/terrain/terrain-macro-material/  
-* Added the Terrain Developer Guide that explains how developers can use and extend the terrain system: [Terrain Developer Guide](https://www.o3de.org/docs/user-guide/visualization/environments/terrain/terrain-developer-guide/).
-* Updated Sphere and disk lights to support shadow caching, which is accessible as a checkbox on the light component. This makes it so shadows do not re-render when nothing in their field of view has changed, and can greatly accelerate shadows on mostly static scenes. Models that have vertex animation in the shader can toggle on "Always moving" in the mesh component to ensure that they will always trigger updates when in the view of a cached shadow.
-* Added support for stereoscopic rendering (such as VR support) via OpenXR within O3DE. This support was added through the Vulkan backend and it has been extensively tested using Quest 2. As part of this effort we are able to support Link mode where the rendering is done on PC and can be viewed on a stereoscopic display or the app can be run on the device natively. A special optimized VR pipeline has been added to Atom to help support running the app natively on the device.
-* Expanded the texture streaming support to Vulkan backend. Now we have image streaming control which can load or evict texture mips automatically at runtime based on the streaming image pool's budget.
-* Created the Material Pipeline, a layer of abstraction between lighting and materials. This involves updates to the shader library, material system, and builders. It uses new builders and new features from the asset system to build unique shaders for each render pipeline. Material types can provide custom data structures and evaluator functions for vertex, pixel, geometry, and lighting stages. The builder inserts any of the custom include files with overridden data types and functions as it builds all of the combinations of shaders listed in the material pipeline.  
-	* The result of this is a concrete material type referencing all of the different combinations of shaders for each pipeline, with the customization stitched in. All of this is saved to the intermediate assets folder and processed by the AP to generate Final product material types and shaders. The material pipeline also includes a Lua script that will be invoked whatever material properties or the active render pipeline changes to enable or disable shaders based on the current state.  
-	* All of the physically based rendering materials, as well as other shaders and material types included with Atom have been converted to the system.  
-	* All of the Atom Sample Viewer (ASV) samples and tests have also been updated to use this system. ASV also includes different experimental render and material pipelines to demonstrate how existing materials that use this system can be applied to a standard, deferred rendering pipeline.
-* Updated the temporal anti-aliasing (TAA) pass by splitting it into two passes, which allows the TAA's history buffer to be copied and separated from the TAA algorithm itself. This required a change to `PostProcessParent.pass` to reference `TaaParentTemplate` instead of `TaaTemplate`. If your project overrides `PostProcessParent.pass` and uses TAA, then it will need to be updated to point to the new TAA parent pass.
 
+* CPU performance has been improved. An 8 core CPU with an NVIDIA 2080 can handle 9000 static and 1000 dynamic entities at greater than 30 FPS at 1080p resolution.
+
+* Terrain nodes are now supported in Landscape Canvas. For more information, refer to [Create Terrain from Images](https://www.o3de.org/docs/learning-guide/tutorials/environments/create-terrain-from-images/).
+
+* A paintbrush workflow has been added so that both heights and color can be painted directly in the Editor Viewport for the Terrain System.
+
+  The paint brush workflow also includes runtime scripting support for real-time modifications of the terrain using a painting API. See the following topics for more information:
+
+	* General Paint Brush documentation: https://www.o3de.org/docs/user-guide/components/reference/paintbrush/paintbrush/  
+	* Image Gradient Component with Paint Brush support: https://www.o3de.org/docs/user-guide/components/reference/gradients/image-gradient/  
+	* Terrain Macro Material Component with Paint Brush support: https://www.o3de.org/docs/user-guide/components/reference/terrain/terrain-macro-material/
+  
+* The new Terrain Developer Guide explains how developers can use and extend the terrain system: [Terrain Developer Guide](https://www.o3de.org/docs/user-guide/visualization/environments/terrain/terrain-developer-guide/).
+
+* Sphere and disk lights now support shadow caching, which is accessible as a checkbox on the light component. This makes it so that shadows do not re-render when nothing has changed in their field of view. This update can greatly accelerate shadows on mostly static scenes. Models that have vertex animation in the shader can enable the **Always moving** toggle in the mesh component to ensure that they always trigger updates when in the view of a cached shadow.
+
+* Stereoscopic rendering (such as VR support) via OpenXR within O3DE has been added. This support was added through the Vulkan backend, and it has been extensively tested using Quest 2. Link mode (where rendering is done on a PC and viewed on a stereoscopic display) and native device display are supported. An optimized VR pipeline has been added to Atom to help support apps that run natively on the device.
+
+* Texture streaming support has been expanded to the Vulkan backend. Image streaming control which can load or evict texture mips automatically at runtime based on the streaming image pool's budget has been added.
+
+* The Material Pipeline, which is a layer of abstraction between lighting and materials, has been added. This includes updates to the shader library, material system, and builders. It uses new builders and new features from the asset system to build unique shaders for each render pipeline. Material types can provide custom data structures and evaluator functions for vertex, pixel, geometry, and lighting stages. The builder inserts any of the custom include files with overridden data types and functions as it builds all of the combinations of shaders listed in the material pipeline.
+
+	* The result of this is a concrete material type referencing all of the different combinations of shaders for each pipeline, with the customization stitched in. All of this is saved to the intermediate assets folder and processed by the AP to generate Final product material types and shaders. The Material Pipeline also includes a Lua script that is invoked whenever material properties or the active render pipeline changes to enable or disable shaders based on the current state.  
+	* All of the physically based rendering materials, as well as other shaders and material types included with Atom have been converted to this system.  
+	* All of the Atom Sample Viewer (ASV) samples and tests have also been updated to use this system. ASV also includes different experimental render and material pipelines to demonstrate how existing materials that use this system can be applied to a standard, deferred rendering pipeline.
+
+* Temporal anti-aliasing (TAA) pass has been split into two passes, which allow the TAA's history buffer to be copied and separated from the TAA algorithm itself. This required a change to `PostProcessParent.pass` to reference `TaaParentTemplate` instead of `TaaTemplate`. If your project overrides `PostProcessParent.pass` and uses TAA, then it needs to be updated to point to the new TAA parent pass.
 
 ### sig-network
 
-* Made a major update to the [Multiplayer Sample game](https://github.com/o3de/o3de-multiplayersample) that provides a feature rich game experience with UX, audio, VFX, player versus player and player versus environment elements.
-* Provided a new simple player spawner component that avoids the needs to write custom spawn logic ([#13871](https://github.com/o3de/o3de/pull/13871))
-* Added new warnings when client and server have differences in networked code or properties, to aid debugging of these issues.
-* Provided method for code separation between client and server side code to prevent any exposure of server side logic to clients. Provided a new Unified Launcher target to aid local testing.
+* The [Multiplayer Sample game](https://github.com/o3de/o3de-multiplayersample) that provides a feature rich game experience with UX, audio, VFX, player versus player and player versus environment elements.
 
+* The Simple Network Player Spawner component mitigates the need to write custom spawn logic ([#13871](https://github.com/o3de/o3de/pull/13871))
+
+* New warnings when client and server have differences in networked code or properties have been added to aid debugging of these issues.
+
+* A method for code separation between client and server side code is provided to prevent any exposure of server side logic to clients. A new Unified Launcher target to aid local testing has been provided.
 
 ### sig-platform
 
