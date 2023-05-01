@@ -128,7 +128,7 @@ The Snap package is experimental and may run into issues on some distros. This h
 
 O3DE will be installed in the default location: `/snap/o3de/x1/<version>`, where `<version>` is the version of the installer. Example: `23.05.0`.
 
-When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`. `snapd` will add this to your shell environment's path.
+When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`. `snapd` will add this `Default` directory to your shell environment's path.
 
 Example of launching Project Manager from the shell:
 ```shell
