@@ -177,43 +177,56 @@ The feature grid represents the current state of development for each feature in
 
 ### sig-simulation
 
-* Added support for PhysX 5.1 ([#13624](https://github.com/o3de/o3de/issues/13624)).
-	* O3DE now comes with optional support for PhysX 5.1 (PhysX 5.1 is off by default but may be enabled with `-DAZ_USE_PHYSX5=ON` when building O3DE). PhysX 5.1 brings a host of performance improvements as well as several new features.
-	* PhysX 5.1 shows a 15% increase in simulation performance compared with PhysX 4.
-	* With PhysX 5.1, mobile assets now use the more optimal structure eBVH34.
-* Added support for compliant contacts ([#14852](https://github.com/o3de/o3de/issues/14852) - PhysX 5.1 only)
-	* By using compliant contacts rigid bodies are able to model the way materials compress under collision. This is particularly important in fields such as robotics.
-* Streamlined PhysX UX workflow ([#10668](https://github.com/o3de/o3de/issues/10668))
-	* To upgrade, refer to steps in ([#10668](https://github.com/o3de/o3de/issues/10668#issuecomment-1476180502))
-	* Several changes were made to clarify various PhysX authoring workflows. These included:
-		* Make it easier for customers to understand the difference between static dynamic rigid bodies ([#14418](https://github.com/o3de/o3de/pull/14418))
-			* Introduced a new Static Rigid Body Component to make a clearer distinction between dynamic and static colliders. New terminology was also introduced to distinguish kinematic or simulated dynamic rigid bodies.
-		* Make it easier to author PhysX colliders ([#14850](https://github.com/o3de/o3de/pull/14850), [#14926](https://github.com/o3de/o3de/pull/14926), [#14907](https://github.com/o3de/o3de/issues/14907), [#14997](https://github.com/o3de/o3de/pull/14997))
-			* Split the existing PhysX Collider in to PhysX Primitive Collider and PhysX Mesh Collider. This made creating simple colliders faster (for example, box, sphere, capsule, and so on) and separated the more complex case that requires a PhysX Mesh Asset (.pxmesh product) to be created in FBX Settings.
-			* PhysX Mesh Collider component card shows the collider shape type of the PhysX Mesh Asset.
-			* Fixed Asset Scale in PhysX Mesh Collider component when asset used is exported as primitives.
-		* Improved UX for rigid body component card ([#14024](https://github.com/o3de/o3de/pull/14024), [#13890](https://github.com/o3de/o3de/pull/13890), [#13557](https://github.com/o3de/o3de/pull/13557))
-			* Made several small quality of life improvements to make the rigid body component card easier to use and understand.
-		* Added support for 'Coordinate System Change' modifier to PhysX tab in Scene Settings. ([#14649](https://github.com/o3de/o3de/issues/14649))
-* Added shape offset support ([#12370](https://github.com/o3de/o3de/issues/12370))
-	* A significant change to how several (box, capsule and sphere) shape components define their dimensions. A new 'offset' property has been introduced to provide support for asymmetrical editing (e.g. Moving one side of a box does not also change the other). This dramatically improves the authoring experience of manipulating shapes. Component Modes supporting manipulators and 3D viewport editing have also been added.
-* Improved Animation Asset Import ([#12387](https://github.com/o3de/o3de/issues/12387))
-	* Made several quality of life improvements to the animation import process to make the overall experience more robust and straightforward.
-* Added Animation Editor Unified Inspector Window ([#10666](https://github.com/o3de/o3de/issues/10666))
-	*  A significant overhaul was made to the O3DE Animation Editor UI to bring it more inline with other O3DE tools. Numerous panels were either combined or removed to improve usability and consistency.
-* Added Animation Editor AnimGraph Performance Visualizer ([#13490](https://github.com/o3de/o3de/pull/13490))
-	* Added an option to display timing information for nodes in an AnimGraph to give real-time information on how long each node is taking to process. This gives invaluable information when profiling or optimizing an AnimGraph. _A big thank you to our friends at FragLab for contributing this feature back to O3DE_.
-* Improved character performance in several character systems. ([#13920](https://github.com/o3de/o3de/pull/13920), [#14461](https://github.com/o3de/o3de/pull/14461))
-* Improved Physics profiling and performance ([#13169](https://github.com/o3de/o3de/pull/13169), [#13258](https://github.com/o3de/o3de/pull/13258), [#13061](https://github.com/o3de/o3de/pull/13061), [#13021](https://github.com/o3de/o3de/pull/13021), [#14666](https://github.com/o3de/o3de/pull/14666), [#14350](https://github.com/o3de/o3de/pull/14350))
-* Improved Physics Viewport ([#14199](https://github.com/o3de/o3de/pull/14199))
-	* Physics colliders can now be clicked and selected in the 3D viewport
-* Added support for reduced coordinate articulations ([#14851](https://github.com/o3de/o3de/issues/14851) - PhysX 5.1 only)
-	* Reduced coordinate articulations are incredibly important for both robust and accurate simulation of joints. They are used extensively in robotics simulations when simulating devices such as a robotic arm.
-	* This feature is in an early experimental state and must be enabled in the Settings Registry option: `/Amazon/Physics/EnableReducedCoordinateArticulations`
-* Updated PhysX simulation to run on multiple threads on Linux. ([#14075](https://github.com/o3de/o3de/pull/14075))
-* Removed deprecated Physics and Blast legacy materials. ([#9840](https://github.com/o3de/o3de/issues/9840), [#9839](https://github.com/o3de/o3de/issues/9839))
-* Moved Blast Gem to experimental branch in `o3de-extras`. ([#13584](https://github.com/o3de/o3de/pull/13584))
+* PhysX 5.1 support has been added ([#13624](https://github.com/o3de/o3de/issues/13624)).
+	
+    * PhysX 5.1 is disabled by default. To enable it, use the command line option  `-DAZ_USE_PHYSX5=ON` when building O3DE.
+    * PhysX 5.1 brings a host of performance improvements as well as several new features including a 15% increase in simulation performance when compared with PhysX 4.
+	* With PhysX 5.1, mobile assets use the more optimal structure eBVH34.
+    * Compliant contact support has been added ([#14852](https://github.com/o3de/o3de/issues/14852) - PhysX 5.1 only). By using compliant contacts, rigid bodies are able to model the way materials compress under collision. This is particularly important in fields such as robotics.
 
+* PhysX UX workflow has been streamlined ([#10668](https://github.com/o3de/o3de/issues/10668)).
+
+	* To upgrade existing projects, refer to steps in ([#10668](https://github.com/o3de/o3de/issues/10668#issuecomment-1476180502)).
+
+	* Several changes clarify various PhysX authoring workflows. These include:
+
+		* Improve the understanding of the difference between static dynamic rigid bodies ([#14418](https://github.com/o3de/o3de/pull/14418)).
+		* The Static Rigid Body component makes a clearer distinction between dynamic and static colliders. New terminology also distinguishes between kinematic and simulated dynamic rigid bodies.
+		* PhysX collider authoring has been improved ([#14850](https://github.com/o3de/o3de/pull/14850), [#14926](https://github.com/o3de/o3de/pull/14926), [#14907](https://github.com/o3de/o3de/issues/14907), [#14997](https://github.com/o3de/o3de/pull/14997)).
+		* The PhysX Collider component has been split into separate PhysX Primitive Collider and PhysX Mesh Collider components. This makes creating simple colliders faster (for example, box, sphere, capsule, and so on) using the PhysX Primitive Collider component. The more complex case that requires a PhysX Mesh Asset (.pxmesh product) created in FBX Settings, uses the PhysX Mesh Collider component.
+		* PhysX Mesh Collider component interface shows the collider shape type of the PhysX Mesh Asset.
+		* Fixed Asset Scale in PhysX Mesh Collider component when asset used is exported as primitives.
+		* Rigid Body component interface UX has been improved ([#14024](https://github.com/o3de/o3de/pull/14024), [#13890](https://github.com/o3de/o3de/pull/13890), [#13557](https://github.com/o3de/o3de/pull/13557)).
+		* Several small quality of life improvements make the Rigid Body component card easier to use and understand.
+		* Support for the Coordinate System Change modifier has been added to the PhysX tab in Scene Settings. ([#14649](https://github.com/o3de/o3de/issues/14649)).
+
+* Shape offset support has been added ([#12370](https://github.com/o3de/o3de/issues/12370)).
+	* This is a significant change to how several shape components (box, capsule and sphere) define their dimensions. A new **Offset** property has been introduced to provide support for asymmetrical editing (for example, moving one side of a box does not also change the other). This dramatically improves the authoring experience of manipulating shapes. Component Modes supporting manipulators and 3D viewport editing have also been added.
+
+* Animation asset import has been improved ([#12387](https://github.com/o3de/o3de/issues/12387)).
+	* Several quality of life improvements to the animation import process make the overall experience more robust and straightforward.
+
+* Animation Editor Unified Inspector window has been added ([#10666](https://github.com/o3de/o3de/issues/10666)).
+	*  A significant overhaul to the O3DE Animation Editor UI brings it more in line with other O3DE tools. Numerous panels were either combined or removed to improve usability and consistency with other tools.
+  
+* Animation Editor AnimGraph Performance Visualizer has been added ([#13490](https://github.com/o3de/o3de/pull/13490)).
+	* An option to display timing information for nodes in an AnimGraph to give real-time information on how long each node is taking to process has been added. This gives invaluable information when profiling or optimizing an AnimGraph. _A big thank you to our friends at **FragLab** for contributing this feature back to O3DE._
+
+* Several character systems have improved performance ([#13920](https://github.com/o3de/o3de/pull/13920), [#14461](https://github.com/o3de/o3de/pull/14461))
+* Improved Physics profiling and performance ([#13169](https://github.com/o3de/o3de/pull/13169), [#13258](https://github.com/o3de/o3de/pull/13258), [#13061](https://github.com/o3de/o3de/pull/13061), [#13021](https://github.com/o3de/o3de/pull/13021), [#14666](https://github.com/o3de/o3de/pull/14666), [#14350](https://github.com/o3de/o3de/pull/14350)).
+
+* Physics Viewport has been improved ([#14199](https://github.com/o3de/o3de/pull/14199)).
+	* Physics colliders can now be clicked and selected in the 3D viewport.
+
+* Reduced coordinate articulations are now supported ([#14851](https://github.com/o3de/o3de/issues/14851) - PhysX 5.1 only).
+	* Reduced coordinate articulations are incredibly important for both robust and accurate simulation of joints. They are used extensively in robotics simulations when simulating devices such as a robotic arm.
+	* This feature is in an early experimental state and must be enabled in the Settings Registry option `/Amazon/Physics/EnableReducedCoordinateArticulations`.
+
+* PhysX simulation is now multithreaded on Linux ([#14075](https://github.com/o3de/o3de/pull/14075)).
+
+* Deprecated Physics and Blast legacy materials have been removed ([#9840](https://github.com/o3de/o3de/issues/9840), [#9839](https://github.com/o3de/o3de/issues/9839)).
+
+* Blast Gem has been moved to the experimental branch in `o3de-extras` ([#13584](https://github.com/o3de/o3de/pull/13584)).
 
 ## Known issues
 
