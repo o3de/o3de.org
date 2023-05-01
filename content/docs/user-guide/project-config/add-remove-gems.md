@@ -8,7 +8,7 @@ weight: 120
 
 This tutorial shows you how to add and remove Gems in your project by using the **Project Manager** or the command line interface (CLI) in **Open 3D Engine (O3DE)**. Gems provide features and assets to your project. For more details on Gems and what Gems are available with O3DE, refer to the [Gems](/docs/user-guide/gems) section.
 
-O3DE includes many Gems that you can add to your project. You can also use Gems from *external* sources. External Gems must be registered to your project before you can enable them. Refer to [Registering Gems](/docs/user-guide/project-config/register-gems/) for instructions on how to register additional Gems.
+O3DE includes many Gems that you can add to your project. You can also use Gems from *external* sources. External Gems must be registered to your project before you can activate them. Refer to [Registering Gems](/docs/user-guide/project-config/register-gems/) for instructions on how to register additional Gems.
 
 ## Overview
 
@@ -16,9 +16,9 @@ The basic steps to configure Gems for your project are as follows:
 
 1. (Optional) Register the Gem if it is from an external source.
 
-1. Locate the Gem you want to enable or disable.
+1. Locate the Gem you want to activate or deactivate.
 
-1. Enable or disable the Gem.
+1. Activate or deactivate the Gem.
 
 1. (Optional) Selecting a Gem version.
 
@@ -36,7 +36,7 @@ The basic steps to configure Gems for your project are as follows:
 
     ![For a project, go to the menu and select 'Edit Project Settings'. ](/images/user-guide/project-config/add-remove-gems/quick-start-1.png)
 
-1. In the **Configure Gems** screen, you can filter or search for available Gems. Scroll through the resulting list to find the Gem you want to enable or disable for your project.
+1. In the **Configure Gems** screen, you can filter or search for available Gems. Scroll through the resulting list to find the Gem you want to activate or deactivate for your project.
 
     ![Configure Gems screen.](/images/user-guide/project-config/add-remove-gems/configure-gems-screen.png)
 
@@ -51,7 +51,7 @@ Filter the Gem catalog to help you find a particular set of Gems.
 You can filter by the following groups: 
 | Criteria | Description |
 | - | - |
-| Status | Displays Gems that are already either selected or unselected for your project.  |
+| Status | Displays Gems that are already either active or inactive, and the Gems that are currently selected or unselected for your project as well as Gems that are missing.  |
 | Versions | Displays Gems that are compatible with your project or have version updates.  |
 | Provider | Displays Gems based on their provider. `Open 3D Engine` displays Gems that are built with O3DE source. `Local` displays local Gems that are provided by other sources. `Remote` displays Gems that are provided by remote sources. |
 | Type | Displays Gems based on the type of Gem. `Asset` displays Gems that add assets to your project. `Code` displays Gems that extend functionality in your project. `Tool` displays Gems that provide a tool you can use in O3DE. |
@@ -80,15 +80,15 @@ When an update is availble for an active gem a yellow notification icon will app
 
 ![Gem update available](/images/user-guide/project-config/add-remove-gems/ui-gem-update-available.png)
 
-### Enabling or disabling Gems
+### Activating or deactivating Gems
 
-Enable or disable Gems in your project by toggling the switch under the **Selected** column for a given Gem.
+Activate or deactivate Gems in your project by toggling the switch under the **Selected** column for a given Gem.
 
-![Gems to enable or disable during configuration.](/images/user-guide/project-config/add-remove-gems/ui-enable-disable-gem.png)
+![Gems to activate or deactivate during configuration.](/images/user-guide/project-config/add-remove-gems/ui-enable-disable-gem.png)
 
-You can enable or disable multiple Gems at once. The changes that will be made to the project are summarized in the top right corner of the window. Select the Gem bag icon to view the Gems to enable or disable. These changes will take effect after you've saved and (depending on the Gem requirements) rebuilt your project.
+You can activate or deactivate multiple Gems at once. The changes that will be made to the project are summarized in the top right corner of the window. Select the Gem bag icon to view the Gems to activate or deactivate. These changes will take effect after you've saved and (depending on the Gem requirements) rebuilt your project.
 
-![Gems to enable or disable during Gem configuration.](/images/user-guide/project-config/add-remove-gems/ui-gem-changes.png)
+![Gems to activate or deactivate during Gem configuration.](/images/user-guide/project-config/add-remove-gems/ui-gem-changes.png)
 
 ### Selecting a Gem version
 
@@ -118,15 +118,15 @@ You can also configure Gems using the CLI. Refer to [CLI Reference](/docs/user-g
 
 1. Open a command prompt to the folder where your engine is located.
 
-1. Use the following commands to enable or disable a Gem for a project.
+1. Use the following commands to activate/enable or deactivate/disable a Gem for a project.
 
-    **Enable**
+    **Activate/Enable**
 
     ```cmd
     scripts/o3de enable-gem -gp <gem-path> -pp <project-path>
     ```
 
-    **Disable**
+    **Deactivate/Disable**
 
     ```cmd
     scripts/o3de disable-gem -gp <gem-path> -pp <project-path>
