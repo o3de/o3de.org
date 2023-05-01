@@ -232,7 +232,7 @@ The feature grid represents the current state of development for each feature in
 
 * Levels and prefabs containing Polygon Prism components need to be re-saved when switching from PhysX 4 to PhysX 5.1 and vice versa.
 * Material Canvas
-  *  Load times need to be improved for graphs that contain thousands of nodes.  
+  * Load times need to be improved for graphs that contain thousands of nodes.  
   * Undo redo performance needs to be improved for graphs containing thousands of nodes.  
   * Undo redo currently selects all nodes in a graph.  
   * More advanced or artist friendly nodes need to be created to extend the node library.  
