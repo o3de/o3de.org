@@ -136,7 +136,7 @@ The quickest way is to run the following commands (adjust `PROJECT_NAME`, `PROJE
 
 ```shell
 export PROJECT_NAME=MySimulationProject
-export PROJECT_PATH= ${HOME}/projects/${PROJECT_NAME}
+export PROJECT_PATH=${HOME}/projects/${PROJECT_NAME}
 ${O3DE_HOME}/scripts/o3de.sh create-project --project-path $PROJECT_PATH --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate 
 ```
 
