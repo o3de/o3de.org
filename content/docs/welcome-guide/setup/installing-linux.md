@@ -137,7 +137,7 @@ o3de
 
 ## Removing O3DE installed from a Snap package
 
-1. Run `snap` to remove o3de:
+1. Run `snap` to remove O3DE:
    ```shell
    snap remove o3de
    ```
