@@ -13,25 +13,33 @@ toc: true
 
 Here are some highlights of O3DE 23.05.0, followed by a detailed list of features broken down by Special Interest Group (SIG).
 
-1.	New and Improved Authoring Experiences:
-Material Canvas is a new intuitive, easy to use, node based, visual scripting interface that allows users to create new, custom shaders and materials. It is built upon the combined foundations of Script Canvas and Material Editor that O3DE users are already familiar with. For more information, refer to [sig-graphics-audio#51](https://github.com/o3de/sig-graphics-audio/issues/51).
-O3DE now has a Material Pipeline, a layer of abstraction between lighting and materials which utilizes new builders and new features from the asset system to build unique shaders for each render pipeline. This provides modularity and extensibility to the Atom Renderer, allowing easier customization of the render pipeline.
-We have improved the Editor extensibility with the introduction of a new [Action Manager API](https://www.o3de.org/docs/user-guide/action-manager/) that allows adding menus, hotkeys, and, contextual actions from Gems and Python scripts.
-Physics & animations improvements including support for PhysX 5.1 and improvements in multiple PhysX authoring workflows. Users will notice an update to the Animation Editor experience, which is now more consistent with other O3DE tools. The Animation Asset Import process is now more robust and straightforward, and the Animation Editor AnimGraph now has a Performance Visualizer to help users profiling and optimizing their AnimGraphs.
-Finally, our Terrain System now provides users a paintbrush tool so they may paint inside the viewport to create or modify terrain.
+* **Material Canvas** is a new intuitive, easy to use, node based, visual scripting interface that allows users to create new, custom shaders and materials. It is built upon the familiar foundations of Script Canvas and Material Editor. For more information, refer to [sig-graphics-audio#51](https://github.com/o3de/sig-graphics-audio/issues/51).
 
-2. New Multiplayer Sample Game (MPS): The [`o3de-multiplayersample` repository](https://github.com/o3de/o3de-multiplayersample) is home to O3DE's newest project, a networked, player versus player versus environment game that supports 1 to 10 players. The game delivers significant examples of  integrations with major O3DE systems including: terrain, sky/atmosphere/stars, lighting, multiplayer, audio, scripting and VFX. Additionally, the game makes extensive use of the Atom Renderer's advanced feature set including global illumination, cascade shadows, emissive surfaces, bounce lighting, temporal anti-aliasing and hybrid reflections (screen space & ray tracing) amongst others to achieve its visual goals.
+* O3DE now has a **Material Pipeline**, a layer of abstraction between lighting and materials which utilizes new builders and new features from the asset system to build unique shaders for each render pipeline. This provides modularity and extensibility to the Atom Renderer, allowing easier customization of the render pipeline.
 
-The project also delivers a rich set of open source assets to the community, for use outside of the game. All told this work demonstrates O3DE's ability to deliver a compelling, feature rich game, while providing significant opportunities for the O3DE community to expand and contribute to the game. (MPS  utilizes all of O3DE's key systems, flushing out bugs and expanding feature sets, so everything works better together at a scale and visual polish beyond existing sample games.)
+* **O3DE Editor** extensibility is improved with the introduction of a new [Action Manager API](https://www.o3de.org/docs/user-guide/action-manager/) that allows adding menus, hotkeys, and, contextual actions from Gems and Python scripts.
 
-In this game, players compete for the highest score to win. Over a series of rounds, players race around the starbase to collect gems and rack up points. Each player is armed with a laser pistol and protected by a shield. Taking damage from laser blasts or from the environmental hazards depletes the player's shield. When the shield is depleted, the player respawns at the cost of some of their collected gems. Do you risk it all to win? For more information, refer to the [Multiplayer Sample Project README](https://github.com/o3de/o3de-multiplayersample#readme).
+* **PhysX 5.1** is supported and multiple PhysX authoring workflows have been improved.
 
-3. New Asset Browser: O3DE now has a new Asset Browser experience within the Editor that provides users with multiple layout options, file operations, an asset inspector panel, and other operations to manage their assets.
+* The updated **Animation Editor** experience is now more consistent with other O3DE tools. The Animation Asset Import process is now more robust and straightforward, and the Animation Editor AnimGraph now has a performance visualizer to help users profile and optimize their AnimGraphs.
 
-4. Installation and Gem Improvements: Multiple versions of O3DE can now be installed on the same drive, and projects are aware of which O3DE version they were created in and last used with. In addition, Gems creators can now specify compatible platforms, which can be filtered against in the Gem Catalog.
+* The **Terrain System** now provides users a paintbrush tool so they may paint inside the viewport to create or modify terrain.
 
-5. Additional VR/XR support and mobile performance improvements: Support for stereoscopic rendering (such as VR support) via OpenXR within O3DE. Improved performance on mobile devices by adding half-float support for Atom.
+* The new **Multiplayer Sample Game (MPS)** Gem provides a sample networked multiplayer game project. The [o3de-multiplayersample repository](https://github.com/o3de/o3de-multiplayersample) is home to O3DE's newest project, a networked, player versus player versus environment game that supports 1 to 10 players. The game delivers significant examples of integrations with major O3DE systems including: terrain, sky/atmosphere/stars, lighting, multiplayer, audio, scripting and VFX. Additionally, the game makes extensive use of the Atom Renderer's advanced feature set including global illumination, cascade shadows, emissive surfaces, bounce lighting, temporal anti-aliasing and hybrid reflections (screen space & ray tracing) amongst others to achieve its visual goals.
 
+    MPS also delivers a rich set of open source assets for use outside of the game. This project demonstrates O3DE's ability to deliver a compelling, feature rich game, while providing significant opportunities for the O3DE community to expand and contribute to the game. MPS  utilizes all of O3DE's key systems, flushing out bugs and expanding feature sets, so that everything works better together at a scale and visual polish beyond existing sample games.
+
+    For more information, refer to the [Multiplayer Sample Project README](https://github.com/o3de/o3de-multiplayersample#readme).
+
+* A new **Asset Browser** experience provides multiple layout options, file operations, an asset inspector panel, and other operations for asset management.
+
+* **O3DE version support** has been improved. Multiple O3DE versions can be installed on the same drive, and projects are linked to the O3DE version they were created and last used with.
+
+* **Gem platform compatibility** can be specified for each Gem. The Gem Catalog can now be filtered by platform compatibility.
+
+* **OpenXR** Support for stereoscopic rendering has been added.
+
+* **Mobile** device performance has been improved with the addition of half-float support for Atom.
 ## Feature grid
 
 The feature grid represents the current state of development for each feature in O3DE. Review the [live feature grid](https://o3de.github.io/community/features/form.html) and select a SIG to see their latest feature statuses. 
