@@ -112,7 +112,7 @@ Example of launching Project Manager from the shell:
 The Snap package is experimental and may run into issues on some distros. This has been tested on Ubuntu 20.04 and 22.04 LTS
 {{< /note >}}
 
-1. Download the snap package from the [O3DE download](https://o3de.org/download/#linux) page or the [Snap store](https://snapcraft.io/o3de)
+1. Download the Snap package from the [O3DE download](https://o3de.org/download/#linux) page or the [Snap store](https://snapcraft.io/o3de).
 
 1. Depending on disto, you will need to install `snapd` in order to install the snap package. [Refer to this guide for instructions specific to your distro](https://snapcraft.io/docs/installing-snapd)
 
