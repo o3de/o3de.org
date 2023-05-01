@@ -124,7 +124,7 @@ The Snap package is experimental and may run into issues on some distros. These 
    ```shell
    o3de <version> installed
    ```
-   Where `<version>` is the version of the installer. Example: `23.05.0`
+   Where `<version>` is the version of the installer. Example: `23.05.0`.
 
 O3DE will be installed in the default location: `/snap/o3de/x1/<version>`, where `<version>` is the version of the installer. Example: `23.05.0`.
 
