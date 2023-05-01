@@ -106,7 +106,7 @@ Example of launching Project Manager from the shell:
     Removing o3de (0.0.0.0) ...
     ```
 
-## Installing O3DE for Linux from a Snap package
+## Installing O3DE from a Snap package
 
 {{< note >}}
 The Snap package is experimental and may run into issues on some distros. This has been tested on Ubuntu 20.04 and 22.04 LTS
