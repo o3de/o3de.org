@@ -56,27 +56,40 @@ The feature grid represents the current state of development for each feature in
 
 ### sig-content
 
-* Added support for global Python scripts per asset type to simplify customizations in the scene pipeline.
-* Added a new Asset Browser experience that is turned on by default. The new Asset Browser experience includes three new layout modes (table view, thumbnail view, list view), file operations (add, delete, edit, rename, move), asset drag-and-drop support, URL bar for easy sharing and editing, breadcrumb and navigation bar, new detached Asset Browser inspector panel, filter options to hide unusable Editor or engine assets, and all new asset icons.
-	* To disable the new Asset Browser, disable the `ed_useWIPAssetBrowserDesign` console variable from the **Tools** menu.
-	* If the new Asset Browser layout is not properly set, restore the default layout from the **View** -> **Layouts** menu option.
-	* Searching is disabled in the table view while this feature is being developed, please use the thumbnail or list view to search for assets.
-	* Check out all the work done in the [Asset Browser project](https://github.com/orgs/o3de/projects/16) page.
-* Made changes that allows Gem creators can now specify compatible platforms, which can be filtered in the Gem catalog.
-* Made changes that allow users to edit existing Gems `.json` files via the **Create a Gem** wizard or command line interface (CLI).
-* Exposed O3DE utility widgets in the AzQtComponents library to Python and PySide. This allows Python-based developers of tools and Gems to use or extend AzQtComponents for tools, plugins, or automation.
-* Provided the ability to manage and visualize prefab overrides from O3DE Editor's Entity Outliner. Users can now override prefabs by adding or removing entities, nested prefabs, and components or changing component properties. For more information, please refer to the [Override a Prefab](https://www.o3de.org/docs/learning-guide/tutorials/entities-and-prefabs/override-a-prefab/) page.
-* Added Versioning Framework, which allows the engine to understand what version it is and adds the ability for feature, Gem, template, and project creators to specify versions that the engine can compare and potentially validate against.
-* Added ability to install multiple versions of O3DE on the same drive. Projects are aware of which O3DE version they were created in and last used with. UX adjustments to better communicate engine version to the user.
-* Added ability to download an O3DE Linux Snap package from the Snap Store and from O3DE.org binaries. Snap packaging improves installation time and reduces or eliminates the need to download dependencies.
-* Added an optional mode to improve Asset Processor (AP) start-up time when users are only making code changes.
-* Updated the 3D Viewport documentation ([#2062](https://github.com/o3de/o3de.org/pull/2062))
-	* The 3D Viewport documentation has been completely overhauled to make it much easier to follow. Many new viewport features are now also documented.
-* Improved Viewport UI Switcher ([#13108](https://github.com/o3de/o3de/pull/13108), [#13036](https://github.com/o3de/o3de/pull/13036))
-* Made several small improvements to Viewport camera behavior ([#12882](https://github.com/o3de/o3de/pull/12882), [#13408](https://github.com/o3de/o3de/pull/13408), [#13433](https://github.com/o3de/o3de/pull/13433), [#13590](https://github.com/o3de/o3de/pull/13590), [#13626](https://github.com/o3de/o3de/pull/13626), [#13628](https://github.com/o3de/o3de/pull/13628), [#13669](https://github.com/o3de/o3de/pull/13669))
-* Several small improvements to viewport camera behavior ([#12882](https://github.com/o3de/o3de/pull/12882), [#13408](https://github.com/o3de/o3de/pull/13408), [#13433](https://github.com/o3de/o3de/pull/13433), [#13590](https://github.com/o3de/o3de/pull/13590), [#13626](https://github.com/o3de/o3de/pull/13626), [#13628](https://github.com/o3de/o3de/pull/13628), [#13669](https://github.com/o3de/o3de/pull/13669))
-* Improved Editor extensibility with the introduction of a new [Action Manager API](https://www.o3de.org/docs/user-guide/action-manager/) that allows adding menus, hotkeys, and, contextual actions from Gems and Python scripts.
+* Support for global Python scripts per asset type has been added. This simplifies customization of the scene pipeline.
 
+* Asset Browser has a new user experience that is enabled by default. The new Asset Browser experience includes three new layout modes (table view, thumbnail view, list view), file operations (add, delete, edit, rename, move), asset drag-and-drop support, a URL bar for easy sharing and editing, breadcrumb and navigation bar, new detached Asset Browser inspector panel, filter options to hide unusable Editor or engine assets, and all new asset icons.
+
+	* To disable the new Asset Browser, disable the `ed_useWIPAssetBrowserDesign` console variable from the **Tools** menu.
+	* If the new Asset Browser layout is not properly set, restore the default layout from the **View -> Layouts** menu option.
+	* Search is disabled in the table view while this feature is being developed. Instead, use the thumbnail or list view to search for assets.
+	* For additional information, refer to the [Asset Browser project](https://github.com/orgs/o3de/projects/16).
+
+* Gem creators can now specify compatible platforms, which can be filtered in the Gem catalog.
+
+* Users can now edit existing Gems `.json` files with the **Create a Gem** wizard or command line interface (CLI).
+
+* O3DE utility widgets in the AzQtComponents library are now exposed to Python and PySide. This allows Python-based developers of tools and Gems to use or extend AzQtComponents for tools, plugins, or automation.
+
+* Prefab overrides can now be managed and visualized from Entity Outliner. Users can override prefabs by adding or removing entities, nested prefabs, and components, or by changing component properties. For more information, refer to the [Override a Prefab](https://www.o3de.org/docs/learning-guide/tutorials/entities-and-prefabs/override-a-prefab/) topic.
+
+* The new Versioning Framework links the engine to it's version and adds the ability for feature, Gem, template, and project creators to specify engine versions that are supported.
+
+* Multiple O3DE version installations are now supported. Projects are linked to the O3DE engine versions they were created and last used with. UX improvements help communicate engine version information to the user.
+
+* An O3DE Linux Snap package can now be downloaded from the Snap Store and from O3DE.org binaries. Snap packaging improves installation time and reduces or eliminates the need to download dependencies.
+
+* Asset Processor now has an optional mode that improves start-up time when users are only making code changes ([#15716](https://github.com/o3de/o3de/pull/15716)).
+
+* 3D Viewport documentation ([#2062](https://github.com/o3de/o3de.org/pull/2062)) has been overhauled. The new documentation is easier to follow and many new viewport features are now documented.
+
+* Viewport UI Switcher has been improved ([#13108](https://github.com/o3de/o3de/pull/13108) and [#13036](https://github.com/o3de/o3de/pull/13036)).
+
+* Viewport camera behavior has had several improvements ([#12882](https://github.com/o3de/o3de/pull/12882), [#13408](https://github.com/o3de/o3de/pull/13408), [#13433](https://github.com/o3de/o3de/pull/13433), [#13590](https://github.com/o3de/o3de/pull/13590), [#13626](https://github.com/o3de/o3de/pull/13626), [#13628](https://github.com/o3de/o3de/pull/13628), and [#13669](https://github.com/o3de/o3de/pull/13669)).
+
+* Several small improvements to viewport camera behavior ([#12882](https://github.com/o3de/o3de/pull/12882), [#13408](https://github.com/o3de/o3de/pull/13408), [#13433](https://github.com/o3de/o3de/pull/13433), [#13590](https://github.com/o3de/o3de/pull/13590), [#13626](https://github.com/o3de/o3de/pull/13626), [#13628](https://github.com/o3de/o3de/pull/13628), [#13669](https://github.com/o3de/o3de/pull/13669))
+
+* Editor extensibility has been improved with the introduction of a new [Action Manager API](https://www.o3de.org/docs/user-guide/action-manager/) that allows adding menus, hotkeys, and, contextual actions from Gems and Python scripts.
 
 ### sig-core
 
