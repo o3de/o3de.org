@@ -166,14 +166,14 @@ The feature grid represents the current state of development for each feature in
 
 ### sig-platform
 
-* Added new XR and OpenXRVk Gems that add VR support for OpenXR compatible devices. ([#12372](https://github.com/o3de/o3de/issues/12372))
-	* Added support for Meta Quest 2 using a new multi-view render pipeline with simplified render passes for VR devices.
-	* O3DE levels run on Meta Quest 2 in two ways: natively on device or from PC transmitting to device via Link cable.  
-	* O3DE Editor's game mode runs on Meta Quest 2 (Link cable only), allowing to immediately experience in VR the changes done to your levels.  
-	* New 'XR Camera Movement' component provides head-tracking camera movement and basic VR controller input to navigate through a level.  
-	* Added OpenXRTest project with test levels (DefaultLevel and XR_Office) ready to run on Meta Quest 2.
-	* Documented how to [build and run OpenXR in O3DE](https://github.com/o3de/o3de-extras/wiki/Build-and-Run-OpenXR-in-O3DE), how to use [profiling tools for Meta Quest 2](https://github.com/o3de/o3de-extras/wiki/Profiling-tools-for-Meta-Quest-2), and how to do [advanced GPU profiling on Meta Quest 2](https://github.com/o3de/o3de-extras/wiki/Advanced-GPU-profiling-tools-for-Meta-Quest-2).
+* New XR and OpenXRVk Gems that add VR support for OpenXR compatible devices have been added ([#12372](https://github.com/o3de/o3de/issues/12372)).
 
+	* Meta Quest 2 support has been added, using a new multi-view render pipeline with simplified render passes for VR devices.
+	* O3DE levels run on Meta Quest 2 in two ways: natively on device or from PC transmitting to device via Link cable.  
+	* O3DE Editor's game mode runs on Meta Quest 2 (Link cable only), allowing to immediately experience the changes to your levels in VR.  
+	* New 'XR Camera Movement' component provides head-tracking camera movement and basic VR controller input to navigate through a level.  
+	* OpenXRTest project with test levels (DefaultLevel and XR_Office) ready to run on Meta Quest 2 has been added.
+	* Documented how to [build and run OpenXR in O3DE](https://github.com/o3de/o3de-extras/wiki/Build-and-Run-OpenXR-in-O3DE), how to use [profiling tools for Meta Quest 2](https://github.com/o3de/o3de-extras/wiki/Profiling-tools-for-Meta-Quest-2), and how to do [advanced GPU profiling on Meta Quest 2](https://github.com/o3de/o3de-extras/wiki/Advanced-GPU-profiling-tools-for-Meta-Quest-2).
 
 ### sig-simulation
 
