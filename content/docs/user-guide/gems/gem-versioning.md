@@ -43,6 +43,7 @@ Gem version, dependency and compatibility information is stored in the  `gem.jso
 | compatible_engines | A list of engine names and version specifiers that this gem is known to be compatible with. If empty, the gem is assumed compatible with all engines if they meet all the requirements in the `engine_api_dependencies` and `dependencies` fields. | [ ] | [<br />  "o3de-sdk==1.2.0",<br />  "o3de>=2.0.0"<br />] | This gem is compatible with an engine named `o3de-sdk` version `1.2.0`, or any engine named `o3de` version `2.0.0` or greater. |
 | engine_api_dependencies | A list of engine API dependencies.  If empty, the gem is assumed compatible with all versions of any engine APIs. | [ ] | ["editor>=1.0.0"] | This gem depends on the `editor` API version `1.0.0` or greater. |
 | dependencies | An optional list of gem dependencies. | [ ] | [<br />  "Atom>=1.0.0",<br />  "PhysX==2.0.0"<br />] | This gem depends on a gem named `Atom` version `1.0.0` or greater and `PhysX` version `2.0.0`. |
+| platform | A list of compatible platforms. | [ ] | [<br />  "Windows", "Linux",<br />  "Android"<br />] | This gem is known to be compatible with `Windows`, `Linux` and `Android`. |
 
 
 ## Choosing Which Version Field To Use
