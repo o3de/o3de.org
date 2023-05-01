@@ -61,7 +61,7 @@ The feature grid represents the current state of development for each feature in
 * Asset Browser has a new user experience that is enabled by default. The new Asset Browser experience includes three new layout modes (table view, thumbnail view, list view), file operations (add, delete, edit, rename, move), asset drag-and-drop support, a URL bar for easy sharing and editing, breadcrumb and navigation bar, new detached Asset Browser inspector panel, filter options to hide unusable Editor or engine assets, and all new asset icons.
 
 	* To disable the new Asset Browser, disable the `ed_useWIPAssetBrowserDesign` console variable from the **Tools** menu.
-	* If the new Asset Browser layout is not properly set, restore the default layout from the **View -> Layouts** menu option.
+	* If the new Asset Browser layout is not properly set, restore the default layout from the **View > Layouts** menu option.
 	* Search is disabled in the table view while this feature is being developed. Instead, use the thumbnail or list view to search for assets.
 	* For additional information, refer to the [Asset Browser project](https://github.com/orgs/o3de/projects/16).
 
