@@ -682,8 +682,8 @@ Registers O3DE objects to the `o3de_manifest.json` file.
 ```cmd
 register [-h]
                         (--this-engine | -ep ENGINE_PATH | -pp PROJECT_PATH | -gp GEM_PATH | -es EXTERNAL_SUBDIRECTORY | -tp TEMPLATE_PATH | -rp RESTRICTED_PATH | -ru REPO_URI | -aep ALL_ENGINES_PATH | -app ALL_PROJECTS_PATH | -agp ALL_GEMS_PATH | -atp ALL_TEMPLATES_PATH | -arp ALL_RESTRICTED_PATH | -aru ALL_REPO_URI | -def DEFAULT_ENGINES_FOLDER | -dpf DEFAULT_PROJECTS_FOLDER | -dgf DEFAULT_GEMS_FOLDER | -dtf DEFAULT_TEMPLATES_FOLDER | -drf DEFAULT_RESTRICTED_FOLDER | -dtpf DEFAULT_THIRD_PARTY_FOLDER | -u)
-                        [-ohf OVERRIDE_HOME_FOLDER] [-r] [-f]
-                        [-esep EXTERNAL_SUBDIRECTORY_ENGINE_PATH | -espp EXTERNAL_SUBDIRECTORY_PROJECT_PATH]
+                        [-r] [-f | -dry]
+                        [-esep EXTERNAL_SUBDIRECTORY_ENGINE_PATH | -espp EXTERNAL_SUBDIRECTORY_PROJECT_PATH | -esgp EXTERNAL_SUBDIRECTORY_GEM_PATH | -frwom]
 ```
 
 
@@ -977,10 +977,6 @@ o3de.bat register --update
 
   Refreshes the repository cache.
 
-- **`-ohf OVERRIDE_HOME_FOLDER, --override-home-folder OVERRIDE_HOME_FOLDER`**
-
-  Overrides the default home folder with the specified folder. By default, the home folder is the user folder. 
-  
 - **`-r, --remove`**
 
   Deregisters the specified entry.
@@ -988,6 +984,10 @@ o3de.bat register --update
 - **`-f, --force`**
 
   Forces the registration information to update, if you made any modifications.
+
+- **`-dry, --dry-run`**
+
+  Performs a dry run, reporting the result, but does not actually change anything. 
 
  
 **external-subdirectory:**  
@@ -1001,6 +1001,13 @@ Use the following parameters with the `--external-subdirectory` option.
 
   If supplied, registers the external subdirectory with the `project.json` file at the specified project path. 
 
+- **`-esgp EXTERNAL_SUBDIRECTORY_GEM_PATH, --external-subdirectory-gem-path EXTERNAL_SUBDIRECTORY_GEM_PATH`**
+
+  If supplied, registers the external subdirectory with the `gem.json` at the gem-path location. 
+
+- **`-frwom, --force-register-with-o3de-manifest`**
+
+  When set, forces the registration of the external subdirectory with the `~/.o3de/o3de_manifest.json`.
 
 <!-------------------------------------------------------------->
 
@@ -1425,9 +1432,9 @@ Enables the specified Gem in your project, so that you can use the assets or cod
 ### Format
 
 ```cmd
-enable-gem [-h] (-pp PROJECT_PATH | -pn PROJECT_NAME)
-                          (-gp GEM_PATH | -gn GEM_NAME)
-                          [-egf ENABLED_GEM_FILE] [-ohf OVERRIDE_HOME_FOLDER]
+enable-gem [-h] [-v] (-pp PROJECT_PATH | -pn PROJECT_NAME)
+                          (-gp GEM_PATH | -gn GEM_NAME | -agp [ALL_GEM_PATHS ...]) [-f | -dry]   
+                          [-o]
 ```
 
 ### Usage
@@ -1441,6 +1448,10 @@ o3de.bat enable-gem -gp GEM_PATH -pp PROJECT_PATH
 - **`-h, --help`**
 
   Shows the help message.
+
+- **`-v`**
+
+  Additional logging verbosity, can be -v or -vv
 
 - **`-pp PROJECT_PATH, --project-path PROJECT_PATH`**
 
@@ -1456,15 +1467,23 @@ o3de.bat enable-gem -gp GEM_PATH -pp PROJECT_PATH
 
 - **`-gn GEM_NAME, --gem-name GEM_NAME`**
 
-  The name of the Gem.
+  The name of the Gem (e.g. "atom"). May also include a version specifier, e.g. "atom>=1.2.3"
 
-- **`-egf ENABLED_GEM_FILE, --enabled-gem-file ENABLED_GEM_FILE`**
+- **`agp [ALL_GEM_PATHS ...], --all-gem-paths [ALL_GEM_PATHS ...]`**
 
-  The CMake file that manages the list of enabled Gems. When disabling a Gem, this command removes the Gem from the specified file. If not specified, this command uses the `Code/enabled_gem.cmake` file.
+  Explicitly activates all gems in the path recursively.
 
-- **`-ohf OVERRIDE_HOME_FOLDER, --override-home-folder OVERRIDE_HOME_FOLDER`**
+- **`-f, --force`**
 
-  Overrides the default home folder with the specified folder. By default, the home folder is the user folder. 
+  Bypass version compatibility checks
+
+- **`-dry, --dry-run`**
+
+  Performs a dry run, reporting the result without changing anything.      
+
+- **`-o, --optional`**
+
+  Marks the gem as optional so a project can still be configured if not found.
 
 
 <!-------------------------------------------------------------->
@@ -1476,9 +1495,9 @@ Disables the specified Gem in your project. When you disable a Gem, this command
 ### Format
 
 ```cmd
-disable-gem [-h] (-pp PROJECT_PATH | -pn PROJECT_NAME)
-                (-gp GEM_PATH | -gn GEM_NAME)
-                [-egf ENABLED_GEM_FILE] [-ohf OVERRIDE_HOME_FOLDER]
+disable-gem [-h] [-v] (-pp PROJECT_PATH | -pn PROJECT_NAME)
+            (-gp GEM_PATH | -gn GEM_NAME | -agp [ALL_GEM_PATHS ...])
+            [-egf ENABLED_GEM_FILE]
 ```
 
 ### Usage
@@ -1509,13 +1528,13 @@ o3de.bat disable-gem -gp GEM_PATH -pp PROJECT_PATH
 
   The name of the Gem.
 
+- **`-agp [ALL_GEM_PATHS ...], --all-gem-paths [ALL_GEM_PATHS ...]`**
+
+  Removes explicit activation of all gems in the path recursively.
+
 - **`-egf ENABLED_GEM_FILE, --enabled-gem-file ENABLED_GEM_FILE`**
 
   The CMake file that manages the list of enabled Gems. When disabling a Gem, this command removes it from the specified file. If not specified, this command uses the `Code/enabled_gem.cmake` file.
-
-- **`-ohf OVERRIDE_HOME_FOLDER, --override-home-folder OVERRIDE_HOME_FOLDER`**
-
-  Overrides the default home folder with the specified folder. By default, the home folder is the user folder. 
 
 
 <!-------------------------------------------------------------->
@@ -1527,9 +1546,14 @@ Edits the specified engine's properties by modifying the `engine.json` file.
 ### Format
 
 ```cmd
-edit-engine-properties [-h] (-ep ENGINE_PATH | -en ENGINE_NAME)
-                        [-enn ENGINE_NEW_NAME]
-                        [-ev ENGINE_VERSION]
+edit-engine-properties [-h] 
+                        [-ep ENGINE_PATH | -en ENGINE_NAME]
+                        [-enn ENGINE_NEW_NAME] [-ev ENGINE_VERSION]
+                        [-edv ENGINE_DISPLAY_VERSION] [-agn [ADD_GEM_NAMES ...] |
+                        -dgn [DELETE_GEM_NAMES ...] | -rgn
+                        [REPLACE_GEM_NAMES ...]] [-aav [ADD_API_VERSIONS ...] |  
+                        -dav [DELETE_API_VERSIONS ...] | -rav
+                        [REPLACE_API_VERSIONS ...]]
 ```
 
 ### Usage
@@ -1560,6 +1584,33 @@ o3de.bat edit-engine-properties --engine-name ENGINE_NAME --engine-new-name ENGI
 
   The name of the engine.
 
+- **`-agn [ADD_GEM_NAMES ...], --add-gem-names [ADD_GEM_NAMES ...]`**
+
+  Adds gem name(s) to gem_names field. Space delimited list, for example: -agn A B C`
+
+- **`-dgn [DELETE_GEM_NAMES ...], --delete-gem-names [DELETE_GEM_NAMES ...]`**
+
+  Removes gem name(s) from the gem_names field. Space delimited list, for example: `-dgn A B C`
+
+- **`-rgn [REPLACE_GEM_NAMES ...], --replace-gem-names [REPLACE_GEM_NAMES ...]`**
+
+  Replace entirety of `gem_names` field with space delimited list of values  
+
+- **`-aav [ADD_API_VERSIONS ...], --add-api-versions [ADD_API_VERSIONS ...]`**
+
+  Adds api verion(s) to the api_versions field, replacing existing
+  version if the api entry already exists. Space delimited list of
+  key=value pairs, for example: `-aav framework=1.2.3`
+
+- **`-dav [DELETE_API_VERSIONS ...], --delete-api-versions [DELETE_API_VERSIONS ...]`**
+
+  Removes api entries from the api_versions field. Space delimited list, for example: `-dav framework`
+
+- **`-rav [REPLACE_API_VERSIONS ...], --replace-api-versions [REPLACE_API_VERSIONS ...]`**
+
+  Replace entirety of api_versions field with space delimited list of      
+  key=value pairs, for example: `-rav framework=1.2.3`
+
 
 **Engine properties:**
 
@@ -1573,6 +1624,10 @@ The following parameters modify the specified engine's properties.
 
   Sets the engine's version.
 
+- **`-edv ENGINE_DISPLAY_VERSION, --engine-display-version ENGINE_DISPLAY_VERSION`**
+
+  Sets the display version for the engine.
+
 
 <!-------------------------------------------------------------->
 
@@ -1583,16 +1638,22 @@ Edits the specified project's properties by modifying the `project.json` file.
 ### Format 
 
 ```cmd
-edit-project-properties [-h]
+edit-project-properties [-h] 
                         (-pp PROJECT_PATH | -pn PROJECT_NAME)
-                        [-pnn PROJECT_NEW_NAME]
-                        [-po PROJECT_ORIGIN]
-                        [-pd PROJECT_DISPLAY]
-                        [-ps PROJECT_SUMMARY]
-                        [-pi PROJECT_ICON]
-                        [-at [ADD_TAGS [ADD_TAGS ...]] | -dt
-                        [DELETE_TAGS [DELETE_TAGS ...]] | -rt
-                        [REPLACE_TAGS [REPLACE_TAGS ...]]]
+                        [-pv PROJECT_VERSION] [-pnn PROJECT_NEW_NAME]
+                        [-pid PROJECT_ID] [-en ENGINE_NAME]
+                        [-efcp ENGINE_FINDER_CMAKE_PATH] [-ep ENGINE_PATH]    
+                        [-po PROJECT_ORIGIN] [-pd PROJECT_DISPLAY]
+                        [-ps PROJECT_SUMMARY] [-pi PROJECT_ICON] [--user]     
+                        [-at [ADD_TAGS ...] | -dt [DELETE_TAGS ...] | -rt     
+                        [REPLACE_TAGS ...]] [-agn [ADD_GEM_NAMES ...] | -dgn  
+                        [DELETE_GEM_NAMES ...] | -rgn [REPLACE_GEM_NAMES ...]]
+                        [-aev [ADD_COMPATIBLE_ENGINES ...] | 
+                        -dev [DELETE_COMPATIBLE_ENGINES ...] | 
+                        -rev [REPLACE_COMPATIBLE_ENGINES ...]]
+                        [-aav [ADD_ENGINE_API_DEPENDENCIES ...] | 
+                        -dav [DELETE_ENGINE_API_DEPENDENCIES ...] | 
+                        -rav [REPLACE_ENGINE_API_DEPENDENCIES ...]]
 ```
 
 ### Usage
@@ -1630,10 +1691,100 @@ o3de.bat edit-project-properties --project-name PROJECT_NAME --project-new-name 
 
   Replaces the `user_tags` property with the specified space-delimited list of values.
 
+- **`-agn [ADD_GEM_NAMES ...], --add-gem-names [ADD_GEM_NAMES ...]`**
+
+  Adds gem name(s) to gem_names field. Space delimited list, for example: `-agn A B C`
+
+- **`-dgn [DELETE_GEM_NAMES ...], --delete-gem-names [DELETE_GEM_NAMES ...]`**
+
+  Removes gem name(s) from the gem_names field. Space delimited list, for example: `-dgn A B C`
+
+- **`-rgn [REPLACE_GEM_NAMES ...], --replace-gem-names [REPLACE_GEM_NAMES ...]`**
+
+  Replace entirety of gem_names field with space delimited list of values  
+
+- **`-aev [ADD_COMPATIBLE_ENGINES ...], --add-compatible-engines [ADD_COMPATIBLE_ENGINES ...]`**       
+
+  Add engine version(s) this project is compatible with. Space delimited   
+  list, for example: `-aev o3de>=1.2.3 o3de-sdk~=2.3`.
+
+- **`-dev [DELETE_COMPATIBLE_ENGINES ...], --delete-compatible-engines [DELETE_COMPATIBLE_ENGINES ...]`**
+
+  Removes engine version(s) from the compatible_engines property. Space    
+  delimited list, for example: `-dev o3de>=1.2.3 o3de-sdk~=2.3`.
+
+- **`-rev [REPLACE_COMPATIBLE_ENGINES ...], --replace-compatible-engines [REPLACE_COMPATIBLE_ENGINES ...]`**
+
+  Replace entirety of compatible_engines field with space delimited list   
+  of values.
+
+- **`-aav [ADD_ENGINE_API_DEPENDENCIES ...], --add-engine-api-dependencies [ADD_ENGINE_API_DEPENDENCIES ...]`**
+
+  Add engine api dependencies this gem is compatible with. Can be
+  specified multiple times.
+
+- **`-dav [DELETE_ENGINE_API_DEPENDENCIES ...], --delete-engine-api-dependencies [DELETE_ENGINE_API_DEPENDENCIES ...]`**
+
+  Removes engine api dependencies from the compatible_engines property.    
+  Can be specified multiple times.
+
+- **`-rav [REPLACE_ENGINE_API_DEPENDENCIES ...], --replace-engine-api-dependencies [REPLACE_ENGINE_API_DEPENDENCIES ...]`**
+
+  Replace engine api dependencies in the compatible_engines property. Can  
+  be specified multiple times.
 
 **Project properties:**
 
 The following parameters modify the specified project's properties.
+
+- **`-pv PROJECT_VERSION, --project-version PROJECT_VERSION`**
+
+  Sets the project version.
+
+- **`-pnn PROJECT_NEW_NAME, --project-new-name PROJECT_NEW_NAME`**
+
+  Sets the name for the project.
+
+- **`-pid PROJECT_ID, --project-id PROJECT_ID`**
+
+  Sets the ID for the project.
+
+- **`-en ENGINE_NAME, --engine-name ENGINE_NAME`**
+
+  Sets the engine name for the project.
+
+- **`-efcp ENGINE_FINDER_CMAKE_PATH, --engine-finder-cmake-path ENGINE_FINDER_CMAKE_PATH`**
+
+  Sets the path to the engine finder cmake file for this project.
+
+- **`-ep ENGINE_PATH, --engine-path ENGINE_PATH`**
+
+  Sets the engine path for the project. 
+{{< note >}}
+  This setting is only allowed with  the `--user` argument to avoid adding local paths to the shared `project.json`
+{{< /note >}}
+
+- **`-po PROJECT_ORIGIN, --project-origin PROJECT_ORIGIN`**
+
+  Sets description or url for project origin (such as project host,        
+  repository, owner...etc).
+
+- **`-pd PROJECT_DISPLAY, --project-display PROJECT_DISPLAY`**
+
+  Sets the project display name.
+
+- **`-ps PROJECT_SUMMARY, --project-summary PROJECT_SUMMARY`**
+
+  Sets the summary description of the project.
+
+- **`-pi PROJECT_ICON, --project-icon PROJECT_ICON`**
+
+  Sets the path to the projects icon resource.
+
+- **`--user`**
+
+  Make changes to the `<project>/user/project.json` only. This is useful to  
+  locally override settings in `<project>/project.json` which are shared. 
 
 - **`-pnn PROJECT_NEW_NAME, --project-new-name PROJECT_NEW_NAME`**
 
@@ -1664,14 +1815,20 @@ Edits the specified Gem's properties by modifying the `gem.json` file.
 ### Format
 
 ```cmd
-edit-gem-properties [-h] (-gp GEM_PATH | -gn GEM_NAME)
-                        [-gnn GEM_NEW_NAME] [-gd GEM_DISPLAY]
-                        [-go GEM_ORIGIN] [-gt {Code,Tool,Asset}]
-                        [-gs GEM_SUMMARY] [-gi GEM_ICON]
-                        [-gr GEM_REQUIREMENTS]
-                        [-at [ADD_TAGS [ADD_TAGS ...]] | -dt
-                        [REMOVE_TAGS [REMOVE_TAGS ...]] | -rt
-                        [REPLACE_TAGS [REPLACE_TAGS ...]]]
+edit-gem-properties [-h] 
+                    (-gp GEM_PATH | -gn GEM_NAME) [-gnn GEM_NEW_NAME]        
+                    [-gd GEM_DISPLAY] [-go GEM_ORIGIN] [-gt {Code,Tool,Asset}]    
+                    [-gs GEM_SUMMARY] [-gi GEM_ICON] [-gr GEM_REQUIREMENTS]       
+                    [-gdu GEM_DOCUMENTATION_URL] [-gl GEM_LICENSE]
+                    [-glu GEM_LICENSE_URL] [-gv GEM_VERSION]
+                    [-aev [ADD_COMPATIBLE_ENGINES ...] | 
+                    -dev [REMOVE_COMPATIBLE_ENGINES ...] | 
+                    -rev [REPLACE_COMPATIBLE_ENGINES ...]]
+                    [-aav [ADD_ENGINE_API_DEPENDENCIES ...] | 
+                    -dav [REMOVE_ENGINE_API_DEPENDENCIES ...] | 
+                    -rav [REPLACE_ENGINE_API_DEPENDENCIES ...]] 
+                    [-at [ADD_TAGS ...] | -dt [REMOVE_TAGS ...] | -rt [REPLACE_TAGS ...] | 
+                    -apl [ADD_PLATFORMS ...] | -dpl [REMOVE_PLATFORMS ...] | -rpl [REPLACE_PLATFORMS ...]]
 ```
 
 ### Usage
@@ -1700,6 +1857,36 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 
   The name of the Gem.
 
+- **`-aev [ADD_COMPATIBLE_ENGINES ...], --add-compatible-engines [ADD_COMPATIBLE_ENGINES ...]`**
+
+  Add engine version(s) this gem is compatible with. Can be specified      
+  multiple times.
+
+- **`  -dev [REMOVE_COMPATIBLE_ENGINES ...], --remove-compatible-engines [REMOVE_COMPATIBLE_ENGINES ...]`**
+
+  Removes engine version(s) from the compatible_engines property. Can be   
+  specified multiple times.
+
+- **`  -rev [REPLACE_COMPATIBLE_ENGINES ...], --replace-compatible-engines [REPLACE_COMPATIBLE_ENGINES ...]`**
+
+  Replace engine version(s) in the compatible_engines property. Can be     
+  specified multiple times.
+
+- **`  -aav [ADD_ENGINE_API_DEPENDENCIES ...], --add-engine-api-dependencies [ADD_ENGINE_API_DEPENDENCIES ...]`**
+
+  Add engine api dependency version(s) this gem is compatible with. Can    
+  be specified multiple times.
+
+- **`  -dav [REMOVE_ENGINE_API_DEPENDENCIES ...], --remove-engine-api-dependencies [REMOVE_ENGINE_API_DEPENDENCIES ...]`**
+
+  Removes engine api dependency version(s) from the compatible_engines     
+  property. Can be specified multiple times.
+
+- **`  -rav [REPLACE_ENGINE_API_DEPENDENCIES ...], --replace-engine-api-dependencies [REPLACE_ENGINE_API_DEPENDENCIES ...]`**
+
+  Replace engine api dependency(s) in the compatible_engines property.     
+  Can be specified multiple times.
+
 - **`-at [ADD_TAGS [ADD_TAGS ...]], --add-tags [ADD_TAGS [ADD_TAGS ...]]`**
 
   Adds tags to the `user_tags` property. To add multiple tags, use a space-delimited list. For example: `-at A B C`.
@@ -1712,6 +1899,20 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
   
   Replaces the `user_tags` property with the specified space-delimited list of values.
 
+- **`-apl [ADD_PLATFORMS ...], --add-platforms [ADD_PLATFORMS ...]`**
+
+  Adds platform(s) to platforms property. Can be specified multiple        
+  times.
+
+- **`-dpl [REMOVE_PLATFORMS ...], --remove-platforms [REMOVE_PLATFORMS ...]`**
+
+  Removes platform(s) from the platforms property. Can be specified        
+  multiple times.
+
+- **`-rpl [REPLACE_PLATFORMS ...], --replace-platforms [REPLACE_PLATFORMS ...]`**
+
+  Replace platform(s) in platforms property. Can be specified multiple     
+  times.
 
 **Gem properties:**
 
@@ -1745,6 +1946,22 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 
   Sets the description of the requirements that are needed to use the Gem.
 
+- **`-gdu GEM_DOCUMENTATION_URL, --gem-documentation-url GEM_DOCUMENTATION_URL`**
+
+  Sets the url for documentation of the gem.
+
+- **`-gl GEM_LICENSE, --gem-license GEM_LICENSE`**
+
+  Sets the name for the license of the gem.
+
+- **`-glu GEM_LICENSE_URL, --gem-license-url GEM_LICENSE_URL`**
+
+  Sets the url for the license of the gem.
+
+- **`-gv GEM_VERSION, --gem-version GEM_VERSION`**
+
+  Sets the version of the gem.
+
 <!-------------------------------------------------------------->
 
 ## `download`
@@ -1766,7 +1983,7 @@ o3de.py download [-h]
 o3de.bat download --project-name "CustomProject" --dest-path "C:/projects"
 ```
 Will result in `CustomProject` being downloaded to `C:/projects/CustomProject`. 
-If dest-path not provided, will download to default object type folder.
+If `--dest-path` is not provided, `CustomProject` will download to default project folder.
 
 ```cmd
 o3de.bat download --gem-name "CustomGem==2.0.0"
