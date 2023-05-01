@@ -99,11 +99,13 @@ The `o3de` Python script contains the following commands, with further details i
 | [`register`](#register) | Registers an O3DE object. |
 | [`register-show`](#register-show) | Shows the registered O3DE objects. |
 | [`get-registered`](#get-registered) | Shows the path to the registered O3DE object with the specified name. |
-| [`enable-gem`](#enable-gem) | Enables the Gem in your project. |
-| [`disable-gem`](#disable-gem) | Disables the Gem in your project. |
+| [`enable-gem`](#enable-gem) | Enables/Activates the Gem in your project. |
+| [`disable-gem`](#disable-gem) | Disables/Deactivates the Gem in your project. |
 | [`edit-engine-properties`](#edit-engine-properties) | Edits the engine's properties. |
 | [`edit-project-properties`](#edit-project-properties) | Edits the project's properties. |
 | [`edit-gem-properties`](#edit-gem-properties) | Edits the Gem's properties. |
+| [`download`](#download) | Download content from remote repositories. |
+| [`repo`](#repo) | Activate and deactivate remote repositories and update metadata. |
 | [`sha256`](#sha256) | Creates a hash value for an O3DE object using SHA-256 (Secure Hash Algorithm 256). |
 
 
@@ -1742,6 +1744,121 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 - **`-gr GEM_REQUIREMENTS, --gem-requirements GEM_REQUIREMENTS`**
 
   Sets the description of the requirements that are needed to use the Gem.
+
+<!-------------------------------------------------------------->
+
+## `download`
+
+Downloads engines, projects, gems or templates from remote repositories.
+
+### Format
+
+```cmd
+o3de.py download [-h]
+              (--engine-name ENGINE_NAME | --project-name PROJECT_NAME | --gem-name GEM_NAME | --template-name TEMPLATE_NAME)
+              [--dest-path DEST_PATH] [--skip-auto-register] [--force]
+              [--use-source-control]
+```
+
+### Usage
+
+```cmd
+o3de.bat download --project-name "CustomProject" --dest-path "C:/projects"
+```
+Will result in `CustomProject` being downloaded to `C:/projects/CustomProject`. 
+If dest-path not provided, will download to default object type folder.
+
+```cmd
+o3de.bat download --gem-name "CustomGem==2.0.0"
+```
+Will download the Gem named `CustomGem` version `2.0.0` if available.
+If only the gem name is provided, the highest version available will be downloaded.
+
+### Optional parameters
+
+- **`-h, --help`**
+
+  Show help message and exit
+
+- **`--engine-name ENGINE_NAME, -e ENGINE_NAME`**
+
+  Downloadable engine name.
+
+- **`--project-name PROJECT_NAME, -p PROJECT_NAME`**
+
+  Downloadable project name with optional version specifier e.g.
+  `project==1.2.3` If no version specifier is provided, the most recent      
+  version will be downloaded.
+
+- **`--gem-name GEM_NAME, -g GEM_NAME`**
+
+  Downloadable gem name with optional version specifier e.g. `gem==1.2.3`
+  If no version specifier is provided, the most recent version will be downloaded.
+
+- **` --template-name TEMPLATE_NAME, -t TEMPLATE_NAME`**
+
+  Downloadable template name with optional version specifier e.g.
+  `template==1.2.3` If no version specifier is provided, the most recent version will be downloaded.
+
+- **` --dest-path DEST_PATH, -dp DEST_PATH`**
+
+  Optional destination folder to download into.
+
+- **` --skip-auto-register, -sar`**
+
+  Skip the automatic registration of new object download
+
+- **` --force, -f`**
+
+  Force overwrite the current object
+
+- **` --use-source-control, --src`**
+
+  Acquire from source control instead of downloading a `.zip` archive.       
+  Requires that the object has a valid `source_control_uri`.
+
+<!-------------------------------------------------------------->
+## `repo`
+
+Updates metadata, activates and deactivates remote repositories.
+
+### Format
+
+```cmd
+repo [-h] [-ar ACTIVATE_REPO | -dr DEACTIVATE_REPO | -r REFRESH_REPO | -ra] 
+```
+
+### Usage
+
+```cmd
+o3de.bat repo --refresh-all-repos
+```
+Updates the metadata from all known remote repositories.
+
+```cmd
+o3de.bat repo --deactivate-repo https://github.com/o3de/example
+```
+Deactivates the `https://github.com/o3de/example` remote repository so that its content no longer appears in searches and is no longer available for download.
+
+### Optional parameters
+
+- **`-ar ACTIVATE_REPO, --activate-repo ACTIVATE_REPO`**
+
+  Activate the specified remote repository, allowing searching and   
+  downloading of objects from it.
+                        
+- **`-dr DEACTIVATE_REPO, --deactivate-repo DEACTIVATE_REPO`**
+
+  Deactivate the specified remote repository, preventing searching or
+  downloading any objects from it.
+
+- **`-r REFRESH_REPO, --refresh-repo REFRESH_REPO`**
+
+  Fetch the latest metadata for the specified remote repository.
+
+- **`-ra, --refresh-all-repos`**
+
+  Fetch the latest metadata from all known remote repository.
 
 <!-------------------------------------------------------------->
 
