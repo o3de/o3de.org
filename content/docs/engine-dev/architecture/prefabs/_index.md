@@ -34,20 +34,15 @@ Simply put, a prefab is a collection of entities and nested prefabs. The further
 
 Prefab files use JSON format. A prefab file has the following fields.
 
-Container Entity  
-: A wrapper entity, which is the parent of all other entities and nested prefabs contained within a prefab. This is also used to distinguish prefabs from regular entities in the <a href="/docs/user-guide/editor/entity-outliner/">Entity Outliner</a>. A prefab must have a single container entity.
+- **Container Entity**  : A wrapper entity, which is the parent of all other entities and nested prefabs contained within a prefab. This is also used to distinguish prefabs from regular entities in the <a href="/docs/user-guide/editor/entity-outliner/">Entity Outliner</a>. A prefab must have a single container entity.
 
-Entities
-: A container for entities owned by a prefab. A prefab may contain zero or more nested entities.
+- **Entities** : A container for entities owned by a prefab. A prefab may contain zero or more nested entities.
 
-Instances
-: A container for nested prefabs owned by a prefab. A prefab may contain zero or more nested prefabs.
+- **Instances** : A container for nested prefabs owned by a prefab. A prefab may contain zero or more nested prefabs.
 
-Source
-: The relative path to the prefab file that the nested prefab needs to load from.
+    - **Source** : The relative path to the prefab file that the nested prefab needs to load from.
 
-Patches
-: A list of changes that get applied on top of the nested prefab.
+    - **Patches** : A list of changes that get applied on top of the nested prefab.
 
 For example, this is a prefab that contains a single entity and a single nested prefab:
 
