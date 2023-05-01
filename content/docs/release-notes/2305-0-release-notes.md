@@ -93,18 +93,24 @@ The feature grid represents the current state of development for each feature in
 
 ### sig-core
 
-* Added a new performance metrics logging API to AzCore. ([#12252](https://github.com/o3de/o3de/pull/12252), [#12476](https://github.com/o3de/o3de/pull/12476), [#12483](https://github.com/o3de/o3de/pull/12483), [#13202](https://github.com/o3de/o3de/pull/13202), [#13596](https://github.com/o3de/o3de/pull/13596))
-- The API provides the following pairs of classes to output JSON recorded metrics: `AZ::Metrics::IEventLogger` and `AZ::Metrics::JsonTraceEventLogger`, and `AZ::Metrics::IEventFactory` and `AZ::Metrics::EventFactoryImpl`.
-	- The `AZ::Metrics::JsonTraceEventLogger` implements the `AZ::Metrics::IEventLogger` interface which allows logging metrics to the [Google Trace Event Format](https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview#).
-	- The `AZ::Metrics::EventFactoryImpl` implements the `AZ::Metrics::IEventFactory` API and provides a registrar for mapping a numeric identifier to `AZ::Metrics::IEventLogger` implementations.  
-	- Metrics files should ideally be output to an active projects `<project-root>/user/Metrics` directory.  
-	- The metrics are loadable in a chromium-based browser `about::tracing` page or via [chromium's standalone trace viewer application](https://google.github.io/trace-viewer/).  For more examples of how to use the performance metrics logging API refer to the examples usages in the [Performances Metrics Gathering API document](https://o3de.org/docs/user-guide/programming/metrics/). 
-* Updated AZ Allocators so they are now created on-demand, instead of requiring explicit `Create` and `Destroy` calls. This allows `AZStd` containers, which use AZ Allocators, to be used anywhere, including in global static variables. Developers who subclass the `PoolAllocator`, would need to change their code to ensure all their construction happens in the constructor instead of in the `Create()` method.
-* Improved the Scene Settings UX to remove points of friction and confusion, with a focus on default prefabs, level-of-detail (LOD) and character-based workflows.
-* Updated the Open Asset Import Library to version 5.2.5 to support asset pipeline improvements. Brings a large number of important bug fixes for compression, out-of-bounds errors, crashes, memory allocation and import issues.
-* Upgraded Google Benchmark library ([#13630](https://github.com/o3de/o3de/pull/13630))
-* Fixed Math unit tests on Android and enabled NEON instructions by default ([#13739](https://github.com/o3de/o3de/pull/13739), [#13783](https://github.com/o3de/o3de/pull/13783), [#13792](https://github.com/o3de/o3de/pull/13792))
+* AzCore has a new performance metrics logging API ([#12252](https://github.com/o3de/o3de/pull/12252), [#12476](https://github.com/o3de/o3de/pull/12476), [#12483](https://github.com/o3de/o3de/pull/12483), [#13202](https://github.com/o3de/o3de/pull/13202), [#13596](https://github.com/o3de/o3de/pull/13596)).
 
+* This API provides the following pairs of classes to output JSON recorded metrics: `AZ::Metrics::IEventLogger` and `AZ::Metrics::JsonTraceEventLogger`, and `AZ::Metrics::IEventFactory` and `AZ::Metrics::EventFactoryImpl`.
+
+    * The `AZ::Metrics::JsonTraceEventLogger` implements the `AZ::Metrics::IEventLogger` interface which allows logging metrics to the [Google Trace Event Format](https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview#).
+	* The `AZ::Metrics::EventFactoryImpl` implements the `AZ::Metrics::IEventFactory` API and provides a registrar for mapping a numeric identifier to `AZ::Metrics::IEventLogger` implementations.  
+	* Metrics files should be output to an active project `<project-root>/user/Metrics` directory.  
+	* The metrics are loadable in a chromium-based browser `about::tracing` page or via [chromium's standalone trace viewer application](https://google.github.io/trace-viewer/). For more examples of how to use the performance metrics logging API refer to the examples usages in the [Performances Metrics Gathering API document](https://o3de.org/docs/user-guide/programming/metrics/).
+
+* AZ Allocators have been updated so that they're created on-demand instead of requiring explicit `Create` and `Destroy` calls. This allows `AZStd` containers, which use AZ Allocators, to be used anywhere, including in global static variables. Developers who subclass the `PoolAllocator`, need to change their code to ensure all their construction happens in the constructor instead of in the `Create()` method.
+
+* Scene Settings UX improvements remove points of friction and confusion, with a focus on default prefabs, level-of-detail (LOD), and character-based workflows.
+
+* Open Asset Import Library has been updated to version 5.2.5 to support asset pipeline improvements. This update brings a large number of important bug fixes for compression, out-of-bounds errors, crashes, memory allocation, and import issues.
+
+* Google Benchmark library has been updated ([#13630](https://github.com/o3de/o3de/pull/13630)).
+
+* Fixed Math unit tests on Android and enabled NEON instructions by default ([#13739](https://github.com/o3de/o3de/pull/13739), [#13783](https://github.com/o3de/o3de/pull/13783), [#13792](https://github.com/o3de/o3de/pull/13792)).
 
 ### sig-graphics-audio
 
