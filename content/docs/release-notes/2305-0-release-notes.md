@@ -7,7 +7,7 @@ toc: true
 ---
 
 
-**Open 3D Engine (O3DE)** 23.05 release levels up the authoring experience for game creators and robotics simulation developers. In addition to improvements to the core engine, robotics users in O3DE now have the ROS2 Gem, a Gem that provides integration with the [Robot Operating System (ROS2)](https://www.ros.org/), which provides drivers, state-of-the-art algorithms, and developer tools for developing robotics simulations. Game developers in O3DE now have the [Multiplayer Sample game](https://github.com/o3de/o3de-multiplayersample) available to them - a ready-to-use game that's not only fun to play, but provides developers with example implementations of common game elements to help start their own projects.
+**Open 3D Engine (O3DE)** 23.05 release levels up the authoring experience for game creators and robotics simulation developers. This release includes significant improvements to the core engine and the ROS2 Gem which integrates the [Robot Operating System (ROS2)](https://www.ros.org/) into O3DE. The ROS2 Gem provides drivers, state-of-the-art algorithms, and developer tools for developing robotics simulations. Game developers in O3DE now have the [Multiplayer Sample game](https://github.com/o3de/o3de-multiplayersample) available to them - a ready-to-use game that's not only fun to play, but provides developers with example implementations of common game elements to help start their own projects.
 
 ## Highlights
 
