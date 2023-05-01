@@ -114,7 +114,7 @@ The Snap package is experimental and may run into issues on some distros. This h
 
 1. Download the Snap package from the [O3DE download](https://o3de.org/download/#linux) page or the [Snap store](https://snapcraft.io/o3de).
 
-1. Depending on disto, you will need to install `snapd` in order to install the snap package. [Refer to this guide for instructions specific to your distro](https://snapcraft.io/docs/installing-snapd)
+1. Depending on the distro, you will need to install `snapd` in order to install the Snap package. [Refer to this guide for instructions specific to your distro](https://snapcraft.io/docs/installing-snapd).
 
 1. If the snap package has been downloaded from the O3DE page, use this command to install the package
    ```shell
