@@ -102,7 +102,7 @@ When you activate the gem, the selected version will be used.  If the Gem is alr
 
 ### Saving and rebuilding
 
-1. Select the **Save** button when you are finished adding and removing Gems from your project.  If any compatibility issue are found with the added gems, a popup will appear with information and ask if you want to continue adding those gems or cancel.
+1. Select the **Save** button when you are finished adding and removing Gems from your project.  If any compatibility issues are found with the added gems, a popup appears with information, and asks if you want to continue adding those gems or cancel.
 
 1. Asset-only Gems do not typically require a rebuild of your project, however Gems that include code do. When you save changes to your project configuration, a warning message will appear if you need to rebuild.
 
