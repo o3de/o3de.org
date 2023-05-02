@@ -90,24 +90,24 @@ ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ROS2
 
 ### Registering robotic project templates
 
-Robot project templates can help you quickly start your simulation project. We recommend that you register the following project template Gems and their Asset Gems. 
+Robotics project templates can help you quickly start your simulation project. We recommend that you register the robotics project template Gems and their Asset Gems, which you downloaded with the `o3de-extras` repository.
+
 To register robotic templates and assets:
-
-```bash
-${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ProteusRobot
-${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/RosRobotSample
-${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseAssets
-${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseSample
-${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2FleetRobotTemplate
-${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate
-```
-
-You will also want to make sure that you enable LFS (Large File Storage) which is used for Assets in `o3de-extras`:
-```bash
-cd ${O3DE_EXTRAS_HOME}
-git lfs install && git lfs pull
-```
-
+1. Enable Git Large File Storage (LFS), if you haven't already.  Asset Gems use LFS to store large files.
+    ```bash
+    cd ${O3DE_EXTRAS_HOME}
+    git lfs install && git lfs pull
+    ```
+2. Register the following robotic templates and assets.
+    ```bash
+    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ProteusRobot
+    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/RosRobotSample
+    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseAssets
+    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseSample
+    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2FleetRobotTemplate
+    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate
+    ```
+   
 For more information, refer to [Adding and Removing Gems](/docs/user-guide/project-config/add-remove-gems/) and [Registering Gems](/docs/user-guide/project-config/register-gems/).
 
 ### Creating a new robotic simulation project 
