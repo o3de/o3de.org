@@ -90,8 +90,8 @@ ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ROS2
 
 ### Registering robotic project templates
 
-We also recommend that you register robotic project templates and their Asset Gems so that you can quickly start with your simulation project.
-If you would like to use templates, register them as well as their Asset Gems:
+Robot project templates can help you quickly start your simulation project. We recommend that you register the following project template Gems and their Asset Gems. 
+To register robotic templates and assets:
 
 ```bash
 ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ProteusRobot
