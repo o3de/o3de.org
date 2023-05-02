@@ -160,7 +160,7 @@ For a deeper understanding on how O3DE projects are built, please refer to [Conf
 
 ### Launching your project in O3DE Editor
 
-Once your project is build, run the following command to start the Editor:
+Once your project is built, run the following command to start the Editor:
 
 ```shell
 ${PROJECT_PATH}/build/linux/bin/profile/Editor
