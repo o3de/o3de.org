@@ -53,8 +53,8 @@ You can filter by the following groups:
 | - | - |
 | Status | Displays Gems that are already either active or inactive, and the Gems that are currently selected or unselected for your project as well as Gems that are missing.  |
 | Versions | Displays Gems that are compatible with your project or have version updates.  |
-| Provider | Displays Gems based on their provider. `Open 3D Engine` displays Gems that are built with O3DE source. `Local` displays local Gems that are provided by other sources. `Remote` displays Gems that are provided by remote sources. |
-| Type | Displays Gems based on the type of Gem. `Asset` displays Gems that add assets to your project. `Code` displays Gems that extend functionality in your project. `Tool` displays Gems that provide a tool you can use in O3DE. |
+| Provider | Displays Gems based on their provider. O3DE displays Gems that are built with O3DE source. **Local** displays local Gems that are provided by other sources. **Remote** displays Gems that are provided by remote sources. |
+| Type | Displays Gems based on the type of Gem. **Asset** displays Gems that add assets to your project. **Code** displays Gems that extend functionality in your project. **Tool** displays Gems that provide a tool you can use in O3DE. |
 | Supported Platforms | Displays Gems based on the platforms that support it. |
 | Features | Displays Gems based on its provided features. |
 
@@ -96,13 +96,13 @@ If multiple versions of a Gem are available, a drop-down box will be visible in 
 
 ![Gem version details.](/images/user-guide/project-config/add-remove-gems/ui-gem-version-details.png)
 
-When you activate the gem, the selected version will be used.  If the Gem is already active, a `Use Version` button will appear in the Gem details panel when the Gem version is changed.
+When you activate the gem, the selected version will be used.  If the Gem is already active, a **Use Version** button will appear in the Gem details panel when the Gem version is changed.
 
 ![Use Gem version button.](/images/user-guide/project-config/add-remove-gems/ui-use-version-button.png)
 
 ### Saving and rebuilding
 
-1. Select the **Save** button when you are finished adding and removing Gems from your project.  If any compatibility issue are found with the added gems, a popup will appear with information and ask if you want to continue adding those gems or cancel.
+1. Select the **Save** button when you are finished adding and removing Gems from your project.  If any compatibility issues are found with the added gems, a popup appears with information, and asks if you want to continue adding those gems or cancel.
 
 1. Asset-only Gems do not typically require a rebuild of your project, however Gems that include code do. When you save changes to your project configuration, a warning message will appear if you need to rebuild.
 
