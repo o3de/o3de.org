@@ -96,7 +96,7 @@ If multiple versions of a Gem are available, a drop-down box will be visible in 
 
 ![Gem version details.](/images/user-guide/project-config/add-remove-gems/ui-gem-version-details.png)
 
-When you activate the gem, the selected version will be used.  If the Gem is already active, a `Use Version` button will appear in the Gem details panel when the Gem version is changed.
+When you activate the gem, the selected version will be used.  If the Gem is already active, a **Use Version** button will appear in the Gem details panel when the Gem version is changed.
 
 ![Use Gem version button.](/images/user-guide/project-config/add-remove-gems/ui-use-version-button.png)
 
