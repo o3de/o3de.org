@@ -6,110 +6,122 @@ weight: 450
 toc: true
 ---
 
-ROS 2 Gem for O3DE includes a Robot Importer tool, which works with URDF and XACRO formats that are typically used to describe robots.
+[ROS 2 Gem](/docs/user-guide/gems/reference/robotics/ros2/) for **Open 3D Engine (O3DE)** includes a **Robot Importer** tool that imports URDF and XACRO formats, robot descriptions, to the ROS 2 ecosystem.
 
 ## About URDF and XACRO formats
 
-URDF and XACRO are robot description standards used widely in the ROS ecosystem. [Unified Robot Description Format (URDF)](http://wiki.ros.org/urdf) is a file format used in robotics to describe the physical characteristics of a robot in a structured and standardized way. It is based on XML and includes information about the robot's joints, links, sensors, and other components, as well as their properties such as mass, inertia, and geometry. 
+URDF and XACRO are robot description standards used widely in the ROS ecosystem. 
 
-[XML Macros (XACRO)](http://wiki.ros.org/xacro) is a macro language that is used to simplify the creation and maintenance of URDF files. It is a way to generate URDF files using XML macros that can be expanded and reused across multiple robot models. XACRO allows the user to define parameters and include files, which can be used to make changes to the robot model quickly and easily.
+[Unified Robot Description Format (URDF)](http://wiki.ros.org/urdf) is an XML-based file format that describes the physical characteristics of a robot in a structured and standardized way. It includes information about the robot's joints, links, sensors, and other components, as well as their properties such as mass, inertia, and geometry. 
 
-URDF/XACRO files contain complete robot descriptions, including references to external geometry files. While primitive geometries can be defined directly within the URDF/XACRO file, it is common practice to use external mesh files in formats such as DAE (Collada) or STL to represent the visual and collision shapes of the robot.
-Robot models are typically made available in packages that include the URDF/XACRO file and additional files containing visualizations and collision shapes, whether those shapes are primitive geometries or external mesh files. These packages may be distributed as ROS workspaces, which makes them easier to use in ROS applications. 
+[XML Macros (XACRO)](http://wiki.ros.org/xacro) is a macro language that simplifies the creation and maintenance of URDF files. XACRO allows you to generate URDF files using XML macros. In XACRO, you can define parameters and include files, which is useful to change and iterate on robot models. You can also expand and reuse XACRO across multiple robot models. 
+
+URDF/XACRO files contain complete robot descriptions, including references to external geometry files. While you can define primitive geometries directly within the URDF/XACRO file, it's common practice to use external mesh files, in formats such as DAE (Collada) or STL, to represent the visual and collision shapes of the robot.
+Robot models are typically available in packages that include the URDF/XACRO file and additional geometry files that contain visualizations and collision shapes, either as primitive geometries or external mesh files. These packages may be distributed as ROS workspaces, which are more straightforward to use in ROS applications. 
 
 
 ## Introduction to Robot Importer
 
-Robots can be imported into O3DE simulation project with the importer tool included in the ROS 2 Gem. It has the following features:
+Import robots into your O3DE simulation project using the Robot Importer that's included in the ROS 2 Gem. Robot Importer has the following features:
 
 - Guides you through the import process step by step.
 - Reads URDF and XACRO files.
-- It copies all required mesh files to the asset folder of your O3DE project.
-- It creates a prefab with a multi-body structure using articulations or classic rigid bodies and joints components.
+- Copies all required mesh files to the `Assets` folder of your O3DE project.
+- Creates a prefab with a multi-body structure using articulations or classic rigid bodies and joints components.
 
 ## Importing a robot into your simulation project
 
 
-When using robot definition files that are a part of a ROS package, you will often need to build a workspace with such package and its dependencies first. Otherwise, the importer may fail to find all required files. Please refer to the documentation of your robot description package, which is often included in its GitHub README file. Building typically involves creating a workspace and buidling it with `colcon build`.
+### Prerequisite
+
+Before you can use robot description files in a ROS package, you must first build a workspace with the package and its dependencies. This ensures that Robot Importer can find all the required files. 
+
+To build, create a workspace and run `colcon build`. 
+
+For more information, refer to the robot description package's documentation, which is often included in the GitHub repository's README file. 
 
 ### Loading the robot definition file with Robot Importer
 
-1. Load your project and select a level.
+1. Load your project and select a level in O3DE Editor.
 
-2. Launch URDF/XACRO import wizard. This can be done by selecting **Main Menu > Tools > Robot Importer** or by clicking the **Robot Importer** icon in the toolbar.
+2. Launch Robot Importer from the Editor by doing either of the following:
+   - Select **Main Menu > Tools > Robot Importer**
+   - Select the **Robot Importer** icon in the toolbar 
   
-![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_button.png)
+        ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_button.png)
 
-3. Click **Next** on the information page
+3. Read the information page in the Robot Importer. Then select **Next**.
 
-4. On the next page:
+4. Load a URDF file by doing the following:
 
-- Select a URDF or XACRO file to be imported by clicking on the **[...]** button
-- Select (using the checkbox) if the importer should copy meshes into the O3DE project assets folder or not
-- Click **Next**
+   - Select a URDF or XACRO file to import by clicking on the **[...]** button.
+   - (Optional) Enable the checkbox if you want the importer to copy meshes into the O3DE project `Assets` folder. If disabled, the importer tries to find matching meshes in the project asset library. CRC comparison verifies the identity of meshes.
+   - Click **Next**.
 
-![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_load_file.png)
+   ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_load_file.png)
 
-> Note: if you leave the **Import meshes...** checkbox unchecked, the importer will try to find matching meshes in the project asset library. Verification of identity of meshes is done by CRC comparison.
+5. (Optional) If the selected XACRO file contains parameters, set the parameters' values. To edit parameters, **double-click** on the value. When you're finished, click **Next**.
 
-5. If you are importing a XACRO file that features parameters to be set, you will be asked to do so on the next page. Parameters can be edited by double-clicking on the value. Click **Next** when finished.
+    ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_XACRO_parameters.png)
 
-![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_XACRO_parameters.png)
+    {{< note >}}
+How you set the parameters depends on the XACRO project that you are importing. For a successful import, refer to the XACRO project's documentation.
 
-> Note: which parameters must be set for succesful import strictly depends on the XACRO project you are importing. Please refer to its documentation for more information.
-
-If import fails you will see a message with the output of the ROS 2 XACRO executable.
+If your XACRO project fails to import, you will see a message with the output of the ROS 2 XACRO executable, similar to the following.
 
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_fail.png)
+    {{< /note >}}
 
 ### Processing robot assets
 
-6. If the XACRO or URDF file is loaded correctly you will see a table with a list of all mesh files (assets) used in the model. Each row of the table describes one asset, with information divided into the following columns:
+After the the XACRO and URDF file loads, Robot Importer displays a table with a list of all the mesh files (assets) used in the model. Each row of the table describes one asset, with information divided into the following columns:
 
-- **URDF mesh path** - path extracted from the URDF
-- **Resolved mesh from URDF** - file path of the mesh located in user's filesystem
-- **Product asset** - location of the generated asset (`*.azmodel` or `*.pxmesh`) in the O3DE project assets directory
-- **Source asset** - location of the asset mesh file in the O3DE project assets directory
-- **Type** - the type of the asset, which can be `visual` or `collider`
+- **URDF mesh path** - Relative file path of the mesh, as defined in the URDF file.
+- **Resolved mesh from URDF** - Absolute file path of the mesh located in your filesystem.
+- **Product asset** - Relative file path of the generated product asset (`*.azmodel` or `*.pxmesh`) in your O3DE project's `Cache` directory.
+- **Source asset** - Relative file path of the source asset in your O3DE project's `Assets` directory.
+- **Type** - The type of the asset, either `visual` or `collider`.
 
-Besides this information, there is an indication if the asset was imported correctly (green) or if the import failed (red).
+    Assets that loaded successfully have a green checkmark, whereas assets that failed to load are marked red. 
 
-Additional information about each asset can be obtained by double-clicking its row. This will open the O3DE Asset Processor showing import details. This information may be especially helpful in case of assets that were not imported correctly.
+To see additional information about each asset, **double-click** its row. This opens the O3DE Asset Processor, which shows import details. This information is especially helpful to troubleshoot assets that failed to import.
 
 Click **Next** when finished.
 
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_mesh_list.png)
 
 **What to do if there are problems with importing assets?**
-If the Source asset field is marked as failed, it is caused by a URDF importer failure to find a reference to the mesh file in the file system. In such a situation, double-check whether the robot's description package was built and sourced correctly.
-If the Product asset field is marked as failed, it is caused by the Asset Builder failing to build the product asset. Refer to the Asset Processor output to resolve the issue.
-You can do either:
 
-- click **Back**, resolve problems with mesh files and click **Next** to retry import, or
-- proceed by clicking **Next** and finish URDF import. Missing meshes can be added afterward in the O3DE editor.
+If the **Source asset** field is marked as failed, then Robot Importer could not find a reference to the mesh file in the file system. In such a situation, ensure that the robot's description package is built and sourced correctly.
+
+If the **Product asset** field is marked as failed, then the Asset Builder could not build the product asset. Refer to the Asset Processor output or the log files in the `/user/log` directory
+
+You can either resolve the issues now or after you finish using Robot Importer: 
+- To resolve, click **Back** and resolve problems with the mesh files. Then click **Next** to retry import.
+- To resolve later, click **Next** and finish URDF import. Then add the missing meshes in the O3DE Editor.
 
 ### Creating a robot prefab
 
-7. On the next page:
+1. Create a prefab by doing the following:
 
-- Choose a prefab name
-- Indicate (using the checkbox) if robot physics should be based on articulations or classic rigid bodies and joints structure.
+   - Enter a prefab name.
+   - (Optional) Enable the checkbox if you want to base the robot physics on articulations or classic rigid bodies and joints structure.
+    - Click **Create Prefab**.
 
-Click **Create Prefab** when finished.
+    ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_prefab_creation.png)
 
-![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_prefab_creation.png)
+    {{< note >}}
+**Use articulation for joints and rigid bodies** depends on the robot structure and simulation requirements. In general, articulations are more stable and computational efficient, but have some limitations. The 2 main limtations are:
+- Articulations are only available in PhysX 5. By default, O3DE is built with PhysX 4.
+- Articulations only support tree-structures natively. Closed loops are not allowed.
 
-> Note: the decision whether to use articulations highly depends on the robot structure and simulation requirements. In general, articulations are more stable and computational efficient, but have some limitations. The 2 main limtations are:
->
->- Articulations are only available in PhysX 5. By default O3DE is build with PhysX 4.
->- Articulations natively only support tree-structures - closed loops are not allowed.
->
->The "rule of thumb" would be to use articulations in robotic simulation whenever it is possible. However please refer to [this documentation](https://nvidia-omniverse.github.io/PhysX/physx/5.1.3/docs/Articulations.html) for more details.
+We recommend to use articulations in robotic simulation whenever possible. For more details, refer to [Articulations](https://nvidia-omniverse.github.io/PhysX/physx/5.1.3/docs/Articulations.html) in NVIDIA PhysX 5 documentation.
+    {{< /note >}}
 
-8. The last page of the wizard shows a summary of entities.
+1. After creating a prefab, review a summary of the generated entities.
 
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_summary.png)
 
 ### Re-importing robots
 
-- The URDF importer can be used to import URDF files that were already imported. In such cases, however, assets (mesh files) are not updated if they were previously imported correctly. If you intend to perform re-import of assets, you should delete them from O3DE project. This can be done by using the Asset Browser.
+Use the Robot Importer to re-import URDF files. In some cases, assets (mesh files) don't update if they were previously imported correctly. To work around this and do a complete re-import, delete the assets from your project by using the Asset Browser or in the directory.
