@@ -37,14 +37,96 @@ A gem that is known to be compatible with the an engine named `o3de-sdk` version
 Gem version, dependency and compatibility information is stored in the  `gem.json` file at the root of each gem. If the `gem.json` has no compatibility or dependency information in it, or the fields are empty, the gem is assumed to be compatible with all engines and have no gem dependencies. 
 
 
-| Field | Description |  Default |  Example | |
-|---------------------|---------------------|------------------------|------------------------|------------------------|
-| version | The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) that is updated as changes are made to the gem. Developers may use the `dependencies` field in `gem.json` to indicate other gem dependencies and the version ranges they are compatible with.| 1.0.0 | 1.2.3 | |
-| compatible_engines | A list of engine names and version specifiers that this gem is known to be compatible with. If empty, the gem is assumed compatible with all engines if they meet all the requirements in the `engine_api_dependencies` and `dependencies` fields. | [ ] | [<br />  "o3de-sdk==1.2.0",<br />  "o3de>=2.0.0"<br />] | This gem is compatible with an engine named `o3de-sdk` version `1.2.0`, or any engine named `o3de` version `2.0.0` or greater. |
-| engine_api_dependencies | A list of engine API dependencies.  If empty, the gem is assumed compatible with all versions of any engine APIs. | [ ] | ["editor>=1.0.0"] | This gem depends on the `editor` API version `1.0.0` or greater. |
-| dependencies | An optional list of gem dependencies. | [ ] | [<br />  "Atom>=1.0.0",<br />  "PhysX==2.0.0"<br />] | This gem depends on a gem named `Atom` version `1.0.0` or greater and `PhysX` version `2.0.0`. |
-| platform | A list of compatible platforms. | [ ] | [<br />  "Windows", "Linux",<br />  "Android"<br />] | This gem is known to be compatible with `Windows`, `Linux` and `Android`. |
+<table class="fixed-table wrapped"><colgroup><col style="" /><col style="" /><col style="" /><col style="" /></colgroup>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+<th>Default</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) that is updated as changes are made to the gem. Developers may use the `dependencies` field in `gem.json` to indicate other gem dependencies and the version ranges they are compatible with.</td>
+<td>1.0.0</td>
+<td>1.2.3</td>
+</tr>
+<tr>
+<td>compatible_engines</td>
+<td>A list of engine names and version specifiers that this gem is known to be compatible with. If empty, the gem is assumed compatible with all engines if they meet all the requirements in the `engine_api_dependencies` and `dependencies` fields.</td>
+<td>[ ]</td>
+<td>
 
+```json
+{
+    "compatible_engines":[
+        "o3de-sdk==1.2.0",
+        "o3de>=2.0.0"
+    ]
+}
+```
+
+This gem is compatible with an engine named `o3de-sdk` version `1.2.0`, or any engine named `o3de` version `2.0.0` or greater.
+
+</td>
+</tr>
+<tr>
+<td>engine_api_dependencies</td>
+<td>A list of engine API dependencies.  If empty, the gem is assumed compatible with all versions of any engine APIs.</td>
+<td>[ ]</td>
+<td>
+
+```json
+{
+    "engine_api_dependencies":[
+        "editor>=1.0.0"
+    ]
+}
+```
+
+This gem depends on the `editor` API version `1.0.0` or greater.
+</td>
+</tr>
+<tr>
+<td>dependencies</td>
+<td>An optional list of gem dependencies.</td>
+<td>[ ]</td>
+<td>
+
+```json
+{
+    "dependencies":[
+        "Atom>=1.0.0",
+        "PhysX==2.0.0"
+    ]
+}
+```
+This gem depends on a gem named `Atom` version `1.0.0` or greater and `PhysX` version `2.0.0`.
+</td>
+</tr>
+<tr>
+<td>platform</td>
+<td>A list of compatible platforms.</td>
+<td>[ ]</td>
+<td>
+
+```json
+{
+    "platforms":[
+        "Windows",
+        "Linux",
+        "Android",
+        "MacOS"
+    ]
+}
+```
+ This gem is known to be compatible with `Windows`, `Linux`, `Android` and `MacOS`
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Choosing Which Version Field To Use
 

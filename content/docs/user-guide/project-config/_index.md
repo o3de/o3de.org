@@ -31,25 +31,35 @@ Each project's root directory contains a project manifest file named `project.js
 
 To change any of the properties in this file, you can either edit the file manually using a text editor, or edit individual properties using the `edit-project-properties` [O3DE CLI](./cli-reference) command. Additionally, you can edit the `display_name` property in Project Manager.
 
-The following table describes each of the properties in `project.json`. The default value for many of the properties contains the project name given when you created the project. We indicate this project name as "<PROJECT_NAME>".
+The following table describes each of the properties in `project.json`. The default value for many of the properties contains the project name given when you created the project. We indicate this project name as "`<PROJECT_NAME>`".
+
+The "`<USER>`" placeholder below refers to the user's home directory based on the operation system being used. For example, if your user name is "Foo" and you are using a Windows machine, the `<USER>` directory would be `C:\Users\Foo`.
+
+| Operating System | Home Directory Path |
+| --- | --- |
+| Windows | `C:\Users\<YourUserName>` |
+| Linux | `/home/<YourUserName>` |
+| MacOs | `/Users/<YourUserName>` |
+
+
 
 | Property | Required | Description | Default |
 | --- | --- | --- | --- |
-| **project_name** | **Required** | The name of the project. The `--project-name` O3DE CLI parameter uses this name to identify the project. | "<PROJECT_NAME>" |
-| **display_name** | **Required** | The display name of the project in Project Manager. | "<PROJECT_NAME>" |
+| **project_name** | **Required** | The name of the project. The `--project-name` O3DE CLI parameter uses this name to identify the project. | "`<PROJECT_NAME>`" |
+| **display_name** | **Required** | The display name of the project in Project Manager. | "`<PROJECT_NAME>`" |
 | **engine** | Optional | The name of the engine and optional version specifier this project uses. Register engines in your O3DE manifest, located at `<USER>/.o3de/o3de_manifest.json`. | "o3de" |
 | **engine_api_dependencies** | Optional | A list of engine API dependencies.  If empty, the project is assumed compatible with all versions of any engine APIs. | "" |
 | **external_subdirectories** | Optional | The path to one or more directories to include in the project build. You can use any directory with a `CMakeLists.txt` file. When you register Gems to the project using the `register --external-subdirectory-project-path` O3DE CLI command, O3DE adds their paths here. | [ ] |
 | **canonical_tags** | **Required** | A standard field in O3DE manifests used to identify an O3DE object's type. Examples: "Gem", "Project". Projects should use the "Project" tag. | [ "Project" ] |
 | **compatible_engines** | Optional | A list of engine names and optional version specifiers that this project is known to be compatible with: i.e. `o3de>=2.0.0`, `o3de-sdk==1.2.0`, `o3de-custom` etc. If empty, the project is assumed compatible with all engines if they meet all the requirements in the `engine_api_dependencies` and `gem_names` fields. | [ ] |
-| **gem_names** | Optional | A list of gem names and optional version specifiers that this project uses, including the Gem included in the project: i.e. `Atom`, `PopcornFX==1.2.0` etc. | [ "<PROJECT_NAME>" ] |
-| **icon_path** | Optional | The path and filename of the project icon. Project Manager uses this icon. The file must be located in the project root directory, and the filename must be `preview.png`. <br><br> WARNING: Do not change the path or filename. | "preview.png" |
-| **license** | **Required** | The license that the project uses, and any copyright information that you want to include. Consider providing the URL for the license. This field is intended for Project Manager to use. | "What license <PROJECT_NAME> uses goes here: i.e. https://opensource.org/licenses/MIT" |
-| **origin** | Optional | A URL for the project, such as the repository URL or project website. This field is intended for Project Manager to use. | "The primary repo for <PROJECT_NAME> goes here: i.e. http://www.mydomain.com" |
+| **gem_names** | Optional | A list of gem names and optional version specifiers that this project uses, including the Gem included in the project: i.e. `Atom`, `PopcornFX==1.2.0` etc. | [ "`<PROJECT_NAME>`" ] |
+| **icon_path** | Optional | The path and filename of the project icon. Project Manager uses this icon. The file must be located in the project root directory. The current recommended size is 210px wide and 280px high. | "preview.png" |
+| **license** | **Required** | The license that the project uses, and any copyright information that you want to include. Consider providing the URL for the license. This field is intended for Project Manager to use. | "What license `<PROJECT_NAME>` uses goes here: i.e. https://opensource.org/licenses/MIT" |
+| **origin** | Optional | A URL for the project, such as the repository URL or project website. This field is intended for Project Manager to use. | "The primary repo for `<PROJECT_NAME>` goes here: i.e. http://www.mydomain.com" |
 | **project_id** | Optional | A UUID that is generated when the project is created. | "< UUID >" |
-| **restricted_name** | Optional | The name of a restricted folder to associate with the project. | "<PROJECT_NAME>" |
-| **summary** | Optional | A short description of the project. This field is intended for Project Manager to use. | "A short description of <PROJECT_NAME>." |
-| **user_tags** | Optional | Any keyword tags that you want to associate with the project. Examples: "Physics", "Assets", "AWS". For examples of the standard set of tags that Gems use, refer to the Project Manager **Gem Catalog**. Project Manager uses these tags for documentation, search, and filtering. | [ "<PROJECT_NAME>" ] |
+| **restricted_name** | Optional | The name of a restricted folder to associate with the project. | "`<PROJECT_NAME>`" |
+| **summary** | Optional | A short description of the project. This field is intended for Project Manager to use. | "A short description of `<PROJECT_NAME>`." |
+| **user_tags** | Optional | Any keyword tags that you want to associate with the project. Examples: "Physics", "Assets", "AWS". For examples of the standard set of tags that Gems use, refer to the Project Manager **Gem Catalog**. Project Manager uses these tags for documentation, search, and filtering. | [ "`<PROJECT_NAME>`" ] |
 | **version** | Optional | The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) that is updated as changes are made to the project. | "1.0.0" |
 
 ## Local `project.json` Overrides {#user-project-json}

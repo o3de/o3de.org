@@ -736,11 +736,28 @@ o3de.bat register --all-projects-path ALL_PROJECTS_PATH
 
 **Registering Gems**
 
-Registers the Gem to the `o3de_manifest.json` file. Before registering the Gem, this command verifies that the Gem has a valid `gem.json` file. Then, it adds the Gem's path to the `external_subdirectories` list in the `o3de_manifest.json` file.
+Registers the Gem to the nearest o3de object manifest file above the location where the Gem is. Before registering the Gem, this command verifies that the Gem has a valid `gem.json` file. Then, it adds the Gem’s path to the `external_subdirectories` list in nearest o3de object manifest file above the Gem location.
 
 ```cmd
 o3de.bat register --gem-path GEM_PATH
 ```
+
+For example given the following filesystem layout of using o3de, the manifest file where the Gem will be registered changes based on the location of the Gem being registered."
+```
+/home/user/.o3de
+    /o3de_manifest.json
+/home/user/repo1
+    /o3de <-- engine source code
+    /project  <-- project
+    /anothergem <-- A random gem
+```
+
+* If `GemToRegister` is inside `anothergem` at `/home/user/repo1/anothergem/GemToRegister`, then it will be registered in the `/home/user/repo1/anothergem/gem.json` manifest.
+* If `GemToRegister` is inside the project's `Gems` folder at `/home/user/repo1/project/Gems/GemToRegister`, then it will be registered in the `/home/user/repo1/project/project.json` manifest.
+* If `GemToRegister` is inside the engine `Gems` folder at `/home/user/repo1/o3de/Gems/GemToRegister`, then it will be registered in the `/home/user/repo1/o3de/engine.json` manifest.
+* Finally, if `GemToRegister` is outside of any engine, project or any other gem directory then it will be registered with the `o3de_manifest.json`. i.e `/home/user/MyGems/GemToRegister` will register the gem in `/home/user/.o3de/o3de_manifest.json`
+
+
 
 Registers the Gem to the project's `project.json` file. Before registering the Gem, this command verifies that the Gem has a valid `gem.json` file. Then, it adds the Gem's path to the `external_subdirectories` list in the `project.json` file. This adds the Gem to the project's build solution, so the project can recognize the Gem.
 
