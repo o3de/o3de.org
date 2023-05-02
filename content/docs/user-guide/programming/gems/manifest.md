@@ -17,14 +17,15 @@ The `gem.json` manifest provides data about a Gem. Each Gem must have a `gem.jso
 | dependencies | Optional | The names of any other Gems, your Gem directly depends on with optional version specifiers: i.e. `Atom>=1.0.0`, `PhysX==2.0.0`, `ScriptCanvas` etc. See [Gem Versioning](../../../user-guide/gems/gem-versioning.md) for details. |
 | documentation_url | Optional | The URL of the documentation for your gem: i.e. https://www.mydomain.com/docs. |
 | download_source_uri | Optional | The URI of the `.zip` file containing the Gem archive.  This is a direct download to the Gem's `.zip` archive: i.e. https://github.com/o3de/o3de-extras/releases/download/1.0/Example-2.0.zip  |
-| engine_api_dependencies | Optional | A list of engine API dependencies.  If empty, the gem is assumed compatible with all versions of any engine APIs. See [Gem Versioning](../../../user-guide/gems/gem-versioning.md) for details. |
+| engine_api_dependencies | Optional | A list of engine API dependencies.  If empty, the Gem is assumed compatible with all versions of any engine APIs. See [Gem Versioning](../../../user-guide/gems/gem-versioning.md) for details. |
 | icon_path | Optional | The relative path to the filename of the icon image file, usually `preview.png`. |
 | last_updated | Optional | The date this file or Gem was last updated in `YYYY-MM-DD`, `YYYY-MM-DD HH:MM:SS`, or `YYYY-MM-DDTHH:MM:SS` format. |
-| license | **Required** | The license this gem uses: i.e. Apache-2.0 or MIT. |
+| license | **Required** | The license this Gem uses: i.e. Apache-2.0 or MIT. |
 | license_url | **Required** | The URL for the license website: i.e. https://opensource.org/licenses/Apache-2.0 Or https://opensource.org/licenses/MIT. |
-| origin | **Required** |The name of the originator for this gem: i.e. XYZ Inc. |
+| origin | **Required** |The name of the originator for this Gem: i.e. XYZ Inc. |
 | origin_uri | Optional | Deprecated and replaced by `download_source_uri`. |
 | origin_url | Optional | The URL of the originator for this gem: i.e. https://www.mydomain.com. |
+| platforms | Optional | A list of platforms this Gem is known compatible with: i.e. "Windows","Linux","Android","iOS","MacOS" etc. |
 | repo_uri | Optional | The URI for the Gem repository containing this Gem. |
 | requirements | Optional | Notice of any requirements your Gem has: i.e. This Gem requires you install X from https://www.mydomain.com. |
 | sha256 | Optional | The SHA-256 digest of the `.zip` archive that the `origin_uri` field points to.  You can omit this field for testing, but we highly recommend including it. |
