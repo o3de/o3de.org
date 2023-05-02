@@ -120,7 +120,7 @@ We recommend to use articulations in robotic simulation whenever possible. For m
 
 1. After creating a prefab, review a summary of the generated entities.
 
-![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_summary.png)
+    ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_summary.png)
 
 ### Re-importing robots
 
