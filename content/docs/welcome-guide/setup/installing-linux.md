@@ -1,7 +1,7 @@
 ---
 linktitle: Installing O3DE for Linux
-title: Installing O3DE for Linux from a deb package
-description: Learn how to install and set up Open 3D Engine (O3DE) for Linux using a deb package.
+title: Installing O3DE for Linux
+description: Learn how to install and set up Open 3D Engine (O3DE) for Linux.
 weight: 200
 ---
 
@@ -11,7 +11,7 @@ To get started quickly with O3DE in Linux, download and install the deb package.
 
 The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](../requirements).
 
-## Installing O3DE
+## Installing O3DE from a deb package
 
 1. Get the latest version of the deb package from the [O3DE download](https://o3de.org/download/#linux) page.
 
@@ -71,7 +71,7 @@ This is a bug in apt that has already been fixed. The warning should go away onc
     Unpacking o3de (2305_0) over (2305_0) ...
     Setting up o3de (2305_0) ...
     ```
-
+    
 When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`.
 
 Example of launching Project Manager from the shell:
@@ -79,7 +79,7 @@ Example of launching Project Manager from the shell:
 /opt/O3DE/2305_0/bin/Linux/profile/Default/o3de
 ```
 
-## Removing O3DE
+## Removing O3DE installed from a deb package
 
 1. Run apt to remove o3de:
     ```shell
@@ -105,3 +105,43 @@ Example of launching Project Manager from the shell:
     (Reading database ... 66411 files and directories currently installed.)
     Removing o3de (0.0.0.0) ...
     ```
+
+## Installing O3DE from a Snap package
+
+{{< note >}}
+The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 20.04 and 22.04 LTS.
+{{< /note >}}
+
+1. Download the Snap package from the [O3DE download](https://o3de.org/download/#linux) page or the [Snap store](https://snapcraft.io/o3de).
+
+1. Depending on the distro, you will need to install `snapd` in order to install the Snap package. [Refer to this guide for instructions specific to your distro](https://snapcraft.io/docs/installing-snapd).
+
+1. If you downloaded the Snap package from the O3DE download page, use the following command to install the package:
+   ```shell
+   snap install --classic --dangerous <o3de snap package filename>.snap
+   ```
+   The following output will be displayed if successful:
+   ```shell
+   o3de <version> installed
+   ```
+   Where `<version>` is the version of the installer. Example: `23.05.0`.
+
+O3DE will be installed in the default location: `/snap/o3de/x1/<version>`, where `<version>` is the version of the installer. Example: `23.05.0`.
+
+When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`. `snapd` will add this `Default` directory to your shell environment's path.
+
+Example of launching Project Manager from the shell:
+```shell
+o3de
+```
+
+## Removing O3DE installed from a Snap package
+
+1. Run `snap` to remove O3DE:
+   ```shell
+   snap remove o3de
+   ```
+   The following output will be displayed if successful:
+   ```shell
+   o3de removed
+   ```
