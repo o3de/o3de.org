@@ -60,7 +60,7 @@ It is recommended to add your `editorpreferences.setreg` file to the `<project-p
 {{< /note >}}
 
 {{< note >}}
-In the latest version, prefab override management in Entity Outliner is enabled by default.
+Starting in 23.05 release, prefab override management in Entity Outliner is enabled by default.
 {{< /note >}}
 
 You can apply the following types of overrides to prefabs:
@@ -107,7 +107,7 @@ Once an override has been registered, it will exist until explicitly removed. To
 
 The above sections describe how you can manage prefab overrides in Entity Outliner, however the visualization support is limited to the entity level. This section further demonstrates prefab override functionality in Entity Inspector.
 
-Prefab override management in Entity Inspector is developed based on the new *Document Property Editor (DPE)*, which aims to replace the old *Reflected Property Editor (RPE)*.
+Prefab override management in Entity Inspector is developed based on the new *[Document Property Editor (DPE)](https://github.com/o3de/sig-content/issues/11)*, which aims to replace the old *Reflected Property Editor (RPE)*.
 
 ### Enable prefab overrides in Entity Inspector
 
@@ -157,7 +157,7 @@ When you make an override edit in the inspector, you will notice that a blue cir
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-component-property.png" width="500" alt="Overriding a component property." >}}
 
-If a component is added as an override, a different blue circle with a plus sign appears instead.
+If a component is added as an override, a different blue circle with a plus sign appears next to the component name instead.
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-add-component-override.png" width="500" alt="Adding a component as an override." >}}
 
