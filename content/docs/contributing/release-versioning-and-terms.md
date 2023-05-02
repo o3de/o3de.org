@@ -33,7 +33,7 @@ O3DE engine version information is stored inside the `engine.json` file at the r
 
 | Field | Description |  CMake Global Properties |
 |---------------------|------------------------|------------------------|
-| engine_name | The name of the engine which is set to `o3de-sdk` when the SDK is created and is `o3de` in the O3DE GitHub repository source code. | | 
+| engine_name | The name of the engine which is set to `o3de-sdk` when the SDK is created and is `o3de` in the O3DE GitHub repository source code. Used as an identifier of the engine by tools. | | 
 | display_version | The `YY.MM.PATCH` year and month version displayed in the SDK installer and Project Manager. This value is only set when creating the SDK and is `00.00` in the O3DE GitHub repository source code.  | `O3DE_DISPLAY_VERSION_STRING` |
 | version | The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) that is updated in the GitHub repository source code as changes are made to the APIs in the engine and can be used for general engine compatibility. Developers may use the `compatible_engines` field in their `gem.json` or `project.json` files to indicate which engine version their gem or project is known to be compatible with. | `O3DE_VERSION_STRING` `O3DE_VERSION_MAJOR` `O3DE_VERSION_MINOR` `O3DE_VERSION_PATCH`|
 | api_versions | The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) for frameworks and tools included in the engine that are common dependencies. Developers may use the `engine_api_dependencies` field in their `gem.json` or `project.json` files to indicate which engine API versions their gem or project is known to be compatible with. | |
@@ -58,7 +58,7 @@ A developer may use the `compatible_engines` field in their `gem.json` to indica
 
 ### Engine APIs
 
-The API versions specified in the `api_versions` field in `engine.json` are currently based on the content inside the engine's `Code` folder and are provided as simple but useful way for developers to indicate compatibility when they expect their gem or tool to be compatibile with multiple engine versions unless breaking changes are made to APIs inside the engine's `Code` folder.
+The API versions specified in the `api_versions` field in `engine.json` are currently based on the content inside the engine's `Code` folder and are provided as simple but useful way for developers to indicate compatibility when they expect their gem or tool to be compatible with multiple engine versions unless breaking changes are made to APIs inside the engine's `Code` folder.
 
 | Engine API Field| Source Path |
 |---------------------|------------------------|
@@ -69,7 +69,7 @@ The API versions specified in the `api_versions` field in `engine.json` are curr
 
 Example:
 
-A developer that creates a gem that includes an Editor tool, may update their `gem.json` file to indicate the gem is known to be compatibile with any non-breaking version of the Editor APIs.
+A developer that creates a gem that includes an Editor tool, may update their `gem.json` file to indicate the gem is known to be compatible with any non-breaking version of the Editor APIs.
 ```json
 {
     "gem_name":"EditorToolGem",
