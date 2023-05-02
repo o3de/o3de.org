@@ -100,9 +100,13 @@ To delete an entity or a nested prefab instance as an override:
 1. In Entity Outliner, **right-click** on an entity or a nested prefab instance and choose **Delete** from the context menu.
 1. Notice that a blue circle appears on the parent entity's icon in Entity Outliner. This indicates that a child has been deleted as an override.
 
-{{ <note> }}
-Currently, you cannot see the deleted entity or prefab instance in Entity Outliner and you cannot revert the deletion by reverting overrides on the parent entity. See the GitHub issue [#13437](https://github.com/o3de/o3de/issues/13437) for more details.
-{{ </note> }}
+{{< note >}}
+In Entity Outliner, there is no visual indication of an entity or a prefab instance being deleted as an override at this time. The only way of getting rid of that type of overrides is through manual edit in `.prefab` file of the prefab instance being edited.
+{{< /note >}}
+
+{{< note >}}
+You cannot revert the deletion by reverting overrides on the parent entity. See the GitHub issue [#13437](https://github.com/o3de/o3de/issues/13437) for more details.
+{{< /note >}}
 
 ## Revert an override
 
