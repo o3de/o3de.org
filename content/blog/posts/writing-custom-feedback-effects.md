@@ -28,6 +28,7 @@ o3de
       │  ├─Shaders
       │    ├─ExampleEffect.azsl (new)
       │    ├─ExampleEffect.shader (new)
+      │    ├─EditorModeCommon.azsli (modify)
       │
       ├─Code
         ├─Source
@@ -324,10 +325,71 @@ The Editor Mode Visual Feedback system has a toolkit to perform the heavy liftin
 In addition to these resources, there is a library to help with:
 
 * Converting the logarithmic depth values into linear values
-* Reconstructing the position and normal in view space and world space
 * Calculating the final blend amounts based on distance, mask values etc.
 
-We won’t have space to explore all of the tools in the toolkit (but feel free to check out the existing effect passes to see how they’re used) so instead in this step we’ll explore the normal and depth resources. Let’s see how we can reconstruct the normals in view space. All we need to do is add the following lines to our shader:
+We won’t have space to explore all of the tools in the toolkit (but feel free to check out the existing effect passes to see how they’re used) so instead in this step we’ll explore how to expand the toolkit and the existing depth resources. Let’s see how we can reconstruct the normals in view space. This code is based on the `ComputeWorldNormalAndPosition` function in [`FullScreenShadow.azsl`](https://github.com/o3de/o3de/blob/main/Gems/Atom/Feature/Common/Assets/Shaders/Shadow/FullscreenShadow.azsl). Add the following code to the bottom [`EditorModeCommon.azsli`](https://github.com/o3de/o3de/blob/main/Gems/AtomLyIntegration/EditorModeFeedback/Assets/Shaders/EditorModeCommon.azsli) so it will be accessible to all shaders used by the Editor Mode Visual Feedback system:
+
+**`EditorModeCommon.azsl`**
+```c++
+//! Calculates the view position and normal from the fragment position.
+void ComputeViewNormalAndPosition(VSOutput IN, out float3 outPositionWS, out float3 outNormalWS)
+{
+    const float2 pixelSize = PassSrg::m_maskDimensions.zw;  // How big a pixel is in screen UV space
+    const float2 halfPixel = pixelSize * 0.5f;
+    const int2   screenPos = IN.m_position.xy;              // The coordinates of the screen pixel being shaded
+    const float2 screenUV  = IN.m_texCoord.xy;              // The UV value [0, 1] of the screen pixel
+
+    // Do 2 depth gather ops to get 5 depth values (cross centered on pixel being shaded). Reminder that gather is laid out like so:
+    //  W Z
+    //  X Y
+    float4 depthUpLeft = PassSrg::m_depth.Gather(PassSrg::PointSampler, screenUV - halfPixel);
+    float4 depthBottomRight = PassSrg::m_depth.Gather(PassSrg::PointSampler, screenUV + halfPixel);
+
+    depthUpLeft = CalculateLinearDepth(depthUpLeft);
+    depthBottomRight = CalculateLinearDepth(depthBottomRight);
+
+    float3 positionVS = ViewSrg::GetViewSpacePosition(screenUV, depthUpLeft.y);
+
+    float3 diffX;
+    {
+        float3 positionLeft  = ViewSrg::GetViewSpacePosition( float2(screenUV.x - pixelSize.x, screenUV.y), depthUpLeft.x);
+        float3 positionRight = ViewSrg::GetViewSpacePosition( float2(screenUV.x + pixelSize.x, screenUV.y), depthBottomRight.z);
+        float3 diffLeft = positionVS - positionLeft;
+        float3 diffRight = positionRight - positionVS;
+        diffX = (abs(diffLeft.z) < abs(diffRight.z)) ? diffLeft : diffRight;
+    }
+    float3 diffY;
+    {
+        float3 positionUp   = ViewSrg::GetViewSpacePosition( float2(screenUV.x, screenUV.y - pixelSize.y), depthUpLeft.z);
+        float3 positionDown = ViewSrg::GetViewSpacePosition( float2(screenUV.x, screenUV.y + pixelSize.y), depthBottomRight.x);
+        float3 diffUp = positionVS - positionUp;
+        float3 diffDown = positionDown - positionVS;
+        diffY = (abs(diffUp.z) < abs(diffDown.z)) ? diffUp : diffDown;
+    }
+
+    float3 normalVS = normalize( cross(diffX, diffY) );
+    
+    positionVS.z = -positionVS.z;
+    normalVS.z = -normalVS.z;
+
+    outPositionWS = positionVS;
+    outNormalWS = normalVS;
+}
+
+//! Returns the world position from the view position.
+float3 ComputeWorldPositionFromViewPosition(in float3 positionVS)
+{
+    return mul(ViewSrg::m_viewMatrixInverse, float4(positionVS, 1) ).xyz;
+}
+
+//! Returns the world normal from the view normal.
+float3 ComputeWorldNormalFromViewNormal(in float3 normalVS)
+{
+    return mul(ViewSrg::m_viewMatrixInverse, float4(normalVS, 0) ).xyz;
+}
+```
+
+All we need to do now is add the following lines to our shader:
 
 **`ExampleEffect.azsl`**
 ```c++
