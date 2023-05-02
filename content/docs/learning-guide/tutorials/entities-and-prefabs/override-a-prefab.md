@@ -191,7 +191,7 @@ In addition, you are able to revert all property overrides that are owned by a c
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-revert-component-override.png" width="450" alt="Reverting a component added as an override." >}}
 
-For a component added as an override, it can be reverted in the same way mentioned above. Alternatively, you can delete the component with either of the following methods:
+For a component added as an override, you can revert the addition in the same way mentioned above. Alternatively, you can delete the component with either of the following methods:
 
 1. In Entity Inspector, **right-click** a component and choose **Delete component** from the context menu.
 1. With a component selected, press **DEL**.
