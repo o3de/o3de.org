@@ -39,7 +39,7 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 
 ## Enable prefab overrides
 
-To enable prefab overrides in Entity Outliner, create a settings registry file called `editorpreferences.setreg` with the following contents:
+To enable prefab overrides in Entity Outliner, create a settings registry file with the following contents:
 
 ```JSON
 {
@@ -115,7 +115,7 @@ First, you need to enable the new DPE feature:
 1. In **O3DE Editor**, from the **Tools** menu, choose **Console Variables**.
 1. In Console Variables editor, set the `ed_enableDPE` flag to true.
 
-Alternatively, if you want the flag to be automatically enabled when O3DE Editor starts, you can create a settings registry file called `dpe.editor.setreg` with the following contents:
+Alternatively, if you want the flag to be automatically enabled when O3DE Editor starts, you can create a settings registry file with the following contents:
 
 ```json
 {
@@ -130,10 +130,10 @@ Alternatively, if you want the flag to be automatically enabled when O3DE Editor
 ```
 
 {{< note >}}
-If you manually enable or disable the DPE through the Console Variables editor, you might need to close and reopen the Entity Inspector.
+If you manually enable or disable the DPE through the Console Variables editor, you might need to close and reopen the Entity Inspector to take effect.
 {{< /note >}}
 
-Second, to enable prefab overrides in inspector, you can create a settings registry file called `editorpreferences.setreg` with the following contents:
+Second, to enable prefab overrides in inspector, you can append to the settings registry file with the following contents:
 
 ```json
 {
@@ -148,7 +148,7 @@ Second, to enable prefab overrides in inspector, you can create a settings regis
 ```
 
 {{< note >}}
-You can reuse the existing settings registry file `editorpreferences.setreg` if you have already created.
+You can create a new settings registry file or reuse existing settings registry files that you have already created.
 {{< /note >}}
 
 ### Override visualization
