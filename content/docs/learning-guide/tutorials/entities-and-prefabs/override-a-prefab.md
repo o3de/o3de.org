@@ -94,6 +94,16 @@ In the below image, an Antenna entity has been added to the first Car prefab ins
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-add.png" width="800" alt="Adding an entity as an override." >}}
 
+## Delete an entity or a nested prefab as an override
+
+To delete an entity or a nested prefab instance as an override:
+1. In Entity Outliner, **right-click** on an entity or a nested prefab instance and choose **Delete** from the context menu.
+1. Notice that a blue circle appears on the parent entity's icon in Entity Outliner. This indicates that a child has been deleted as an override.
+
+{{ <note> }}
+Once deleted as an override, there is only one way of reverting this operation, which is through an edit undo. Currently, you cannot revert on the parent entity. See the GitHub issue [#13437](https://github.com/o3de/o3de/issues/13437) for more details.
+{{ </note> }}
+
 ## Revert an override
 
 Once an override has been registered, it will exist until explicitly removed. To revert overrides on an entity:
@@ -185,6 +195,8 @@ For a component added as an override, it can be reverted in the same way mention
 
 1. In Entity Inspector, **right-click** a component and choose **Delete component** from the context menu.
 1. With a component selected, press **DEL**.
+
+For a component deleted as an override, you can revert the deletion by an edit undo. Alternatively, you can achieve that by reverting all overrides on the selected entity, but be aware that it would also remove other overrides if they are present.
 
 ## Conclusion and next steps
 
