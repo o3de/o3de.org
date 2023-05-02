@@ -80,6 +80,6 @@ For more information about the viewport settings, see [Atom Tools Viewport](/doc
 
 ## Troubleshooting
 ### Material Editor fails to launch
-Material Editor normally initializes all of the gems enabled by the active project. In order to reduce start times and system resource utilization, Material Editor, and the other atom tools, includes registry setting files that forcibly disable several standard O3DE gems that are not likely to be needed within the tool.
+Material Editor initializes a set of Gems that allow it to either function properly or discover material assets. The set of Gems includes all of the Gems enabled by the active project, except the standard O3DE Gems that are certainly not needed within the tool. This optimization helps reduce start times and system resource utilization.
 
-If Material Editor fails to launch then it may be because of dependency issues with gems in the active project. Check MaterialEditor.log for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Editor project registry folder.
+If Material Editor fails to launch, then it may be because of dependency issues with Gems in the active project. Check `MaterialEditor.log` for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Editor project registry folder.
