@@ -297,6 +297,6 @@ The shader compilation process is expensive, complex, and currently managed by t
 Building shader assets takes more time on Windows than Linux, or other platforms. This is partially because Windows builds shaders for the null renderer, DX12, and Vulkan by default. Registry settings can be configured to disable unused targets and vastly improve shader compilation and preview times. Use the Material Canvas settings dialog to override these settings.
 
 ### Material Canvas fails to launch
-Material Canvas normally initializes all of the gems enabled by the active project. In order to reduce start times and system resource utilization, Material Canvas, and the other atom tools, includes registry setting files that forcibly disable several standard O3DE gems that are not likely to be needed within the tool.
+Material Canvas initialize all of the O3DE Gems enabled by your game project to access the same rendering features and assets. To reduce start times and system resource utilization, Material Canvas and the other Atom tools include registry setting files that forcibly disable several standard O3DE Gems that are not needed within the tool.
 
-If Material Canvas fails to launch then it may be because of dependency issues with gems in the active project. Check MaterialCanvas.log for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Canvas project registry folder.
+If Material Canvas fails to launch, then it may be because of dependency issues with Gems in the active project. Check `MaterialCanvas.log` for any system entity or module initialization errors. If necessary, change or delete the custom registry settings from the Material Canvas project registry folder.
