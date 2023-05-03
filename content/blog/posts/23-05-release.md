@@ -31,12 +31,12 @@ Adam Dabrowski, VP of Robotics and Simulation at Robotec.ai, said this about the
 
 This latest release makes it even easier for developers to harness O3DE for a multitude of 3D projects:
 
-●	**Craft your own unique shaders and materials** using [Material Canvas](https://github.com/o3de/sig-graphics-audio/issues/51), a fresh, easy-to-use visual scripting interface that blends the power of Script Canvas and the Material Editor. 
-●	**Customize the render pipeline more easily than ever** with a Material Pipeline.
-●	**Manage assets like a boss** using the Asset Browser, with different layout options, file operations, an asset inspector panel, and other operations.
-●	**Install multiple versions of O3DE on the same drive**, with projects aware of which O3DE version they were created in and last used with.
-●	**Specify compatible platforms for gems you create**, which can be filtered in the Gem Catalog.
-●	**Add menus, hotkeys and contextual actions from Gems and Python scripts** with enhanced extensibility of the Editor though a new [Action Manager API](https://www.o3de.org/docs/user-guide/action-manager/).
+*	**Craft your own unique shaders and materials** using [Material Canvas](https://github.com/o3de/sig-graphics-audio/issues/51), a fresh, easy-to-use visual scripting interface that blends the power of Script Canvas and the Material Editor. 
+*	**Customize the render pipeline more easily than ever** with a Material Pipeline.
+*	**Manage assets like a boss** using the Asset Browser, with different layout options, file operations, an asset inspector panel, and other operations.
+*	**Install multiple versions of O3DE on the same drive**, with projects aware of which O3DE version they were created in and last used with.
+*	**Specify compatible platforms for gems you create**, which can be filtered in the Gem Catalog.
+*	**Add menus, hotkeys and contextual actions from Gems and Python scripts** with enhanced extensibility of the Editor though a new [Action Manager API](https://www.o3de.org/docs/user-guide/action-manager/).
 
 {{< image-width src="/images/blog/23-05-release/image03.png" width="100%" alt="Material Canvas" >}}
 
