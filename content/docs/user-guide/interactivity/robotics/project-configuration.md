@@ -8,14 +8,13 @@ toc: true
 
 ## Requirements
 
-* Ubuntu 22.04 or 20.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2.
+* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble.
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
 * [O3DE built from source on Linux](/docs/welcome-guide/setup/setup-from-github/building-linux).
-* The [latest released version](https://docs.ros.org/en/rolling/Releases.html#list-of-distributions ) of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. The O3DE ROS 2 has been tested with:
-  * [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) with Ubuntu 22.04.
-  * [ROS 2 Galactic](https://docs.ros.org/en/galactic/Installation.html) with Ubuntu 20.04.
+* The [latest released version](https://docs.ros.org/en/rolling/Releases.html#list-of-distributions ) of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. 
+  * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) with Ubuntu 22.04.
 
 ## Setting up
 
@@ -27,7 +26,7 @@ To build or run projects using ROS 2 Gem, you must [source your ROS 2 workspace]
 ```
 source /opt/ros/<distro>/setup.bash
 ```
-Replace `<distro>` with the ROS 2 distribution name (`humble`, `galactic`, and so on).
+Replace `<distro>` with the ROS 2 distribution name (such as `humble`).
 Then, you must log out and log in from Ubuntu for the change to take effect.
 
 #### Custom packages
@@ -72,16 +71,97 @@ The ROS 2 Gem lives in the [`o3de/o3de-extras`](https://github.com/o3de/o3de-ext
 git clone https://github.com/o3de/o3de-extras
 ```
 
-### Adding Gem to your project
+### Registering the Gem
 
-To use the ROS 2 Gem in your O3DE project, you need to register the Gem with O3DE. Then, you can enable the Gem in your project. Run the following commands from the O3DE folder:
-```
-scripts/o3de.sh register --gem-path <PATH_TO_CLONED_O3DE_EXTRAS>/Gems/ROS2
-scripts/o3de.sh enable-gem -gn ROS2 -pp <PATH_TO_YOUR_PROJECT>
+To use the ROS 2 Gem in any O3DE project, you need to register it with O3DE.
+
+For convenience, set a couple of environment variables: `O3DE_HOME` to where your O3DE is located and `O3DE_EXTRAS_HOME`
+to the path of your cloned o3de-extras repository, for example:
+
+```shell
+export O3DE_HOME=${HOME}/o3de
+export O3DE_EXTRAS_HOME=${HOME}/o3de-extras
 ```
 
+Run the following command to register the ROS 2 Gem:
+```bash
+${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ROS2
+```
+
+### Registering robotic project templates
+
+Robotics project templates can help you quickly start your simulation project. We recommend that you register the robotics project template Gems and their Asset Gems, which you downloaded with the `o3de-extras` repository.
+
+To register robotic templates and assets:
+1. Enable Git Large File Storage (LFS), if you haven't already.  Asset Gems use LFS to store large files.
+    ```bash
+    cd ${O3DE_EXTRAS_HOME}
+    git lfs install && git lfs pull
+    ```
+2. Register the following robotic templates and assets.
+    ```bash
+    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ProteusRobot
+    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/RosRobotSample
+    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseAssets
+    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseSample
+    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2FleetRobotTemplate
+    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate
+    ```
+   
 For more information, refer to [Adding and Removing Gems](/docs/user-guide/project-config/add-remove-gems/) and [Registering Gems](/docs/user-guide/project-config/register-gems/).
+
+### Creating a new robotic simulation project 
+
+#### Robotic Project Templates
+
+Project templates are useful tools to shape your initial project.
+When created with a template, a new project can start with a specific configuration. include certain enabled Gems and starting levels.
+
+Robotic project templates are designed to help you to quickly start simulating robots in O3DE with ROS 2.
+
+#### ROS 2 Project Templates
+
+There are two templates for robotics:
+- [ROS 2 project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate):
+  - A versatile, lightweight template that is good for a starting project and includes a robot with differential drive.
+- [Warehouse project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2FleetRobotTemplate):
+  - A photorealistic warehouse with a Proteus robot, easy to customize and scale up (multi-robot).
+
+:bulb: The template repositories also include examples that you can try out by following their README files.
+
+#### Create a new project with a template
+
+To create a project with a template, you may use GUI or command line.
+The quickest way is to run the following commands (adjust `PROJECT_NAME`, `PROJECT_PATH` and the template as you wish):
+
+```shell
+export PROJECT_NAME=MySimulationProject
+export PROJECT_PATH=${HOME}/projects/${PROJECT_NAME}
+${O3DE_HOME}/scripts/o3de.sh create-project --project-path $PROJECT_PATH --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate 
+```
+
+For more information, refer to [Project Creation](/docs/welcome-guide/create/)
 
 ### Building
 
-The ROS 2 Gem is built when you build an O3DE project and enable the ROS 2 Gem. For more information, refer to [Project Creation](/docs/welcome-guide/create/) and [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/). Make sure to [source your ROS 2 workspace](#source-your-ros-2-workspace) before building.
+The ROS 2 Gem is built when you build an O3DE project with the ROS 2 Gem enabled. 
+
+Make sure to [source your ROS 2 workspace](#source-your-ros-2-workspace) before building.
+
+For convenience, here is an example of parametrized CMake calls:
+
+```shell
+cd $PROJECT_PATH
+cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON
+cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets 
+```
+
+For a deeper understanding on how O3DE projects are built, please refer to [Configure and Build](/docs/user-guide/build/configure-and-build).
+
+### Launching your project in O3DE Editor
+
+Once your project is built, run the following command to start the Editor:
+
+```shell
+${PROJECT_PATH}/build/linux/bin/profile/Editor
+```
