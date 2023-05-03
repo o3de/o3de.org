@@ -6,24 +6,11 @@ weight: 200
 toc: true
 ---
 
-This tutorial introduces entities and prefabs, and explains how to create, modify, and save them for your **Open 3D Engine (O3DE)** projects.
+Entities and prefabs provide the foundation for building projects in **Open 3D Engine (O3DE)**. An entity is a collection of any combination of components that define an object. The only required component for an entity is a **Transform** component that places the entity in the level. An entity is an abstract concept, though, and only exists within the context of a level or a prefab. Saving an entity to disk requires saving the level that contains it, or creating a prefab from the entity.
 
-| O3DE Experience | Time to Complete | Feature Focus | Last Updated |
-| --- | --- | --- | --- |
-| Beginner | 25 Minutes | Creating, modifying, and saving entities and prefabs. | January 11, 2023 |
+A prefab is a container that can have one or more child entities or prefab instances. Prefabs are files saved to disk that are instantiated during edit-time or spawned at runtime. It's important to understand, that prefabs that exist in a level are *instances* of a prefab. Changes made to a prefab that has been opened in **O3DE Editor** automatically propagate to the instances of that prefab.
 
-## Prerequisites
-
-* Basic knowledge of working with [O3DE Editor](/docs/user-guide/editor).
-* A project built from the standard project template or one that contains the Gems in the standard template.
-
-## What are entities and prefabs?
-
-Entities and prefabs provide the foundation for building projects in O3DE. An entity is a collection of any combination of components that define an object. The only required component for an entity is a [**Transform**](/docs/user-guide/components/reference/transform) component that places the entity in the level. An entity is an abstract concept, though, and only exists within the context of a level or a prefab. Saving an entity to disk requires saving the level that contains it, or creating a prefab from the entity.
-
-A prefab is a container that can have one or more child entities or prefab instances. Prefabs are files saved to disk that can be instantiated at edit-time or spawned at runtime. Prefabs that exist in a level are *instances* of a file prefab. Changes made to a prefab that is open for editing in **O3DE Editor** automatically propagate to the instances of that prefab.
-
-The entities and prefab instances placed in a level are shown in **Entity Outliner**. Entities are indicated by a {{< icon "entity.svg" >}} white cube icon. Prefab instances are indicated by a {{< icon "prefab.svg" >}} white container icon with a dark gray background. Prefab instances also display the prefab file name on the right.
+The entities and prefab instances placed in a level are shown in **Entity Outliner**. Entities are indicated by a {{< icon "entity.svg" >}} white cube icon. Prefab instances are indicated by a {{< icon "prefab.svg" >}} blue container icon. Prefab instances also display the prefab file name in parentheses.
 
 ![An entity and a prefab in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/entity-outliner.png)
 
@@ -34,7 +21,7 @@ The sections in this topic demonstrate the basics of working with entities, pref
 You can create an entity with either of the following methods:
 
 * In Entity Outliner or the viewport, **right-click** and choose **Create entity** from the context menu.
-* With Entity Outliner focused, press **Ctrl+Alt+N**.
+* With Entity Outliner focused, press **CTRL+ALT+N**.
 
 ![Creating a new entity in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/create-entity.png)
 
@@ -51,7 +38,7 @@ Prefabs are saved to disk and allow you to easily reuse objects by instantiating
 
 ![Creating a prefab from an entity in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/create-prefab.png)
 
-The prefab file is saved to disk and an instance of the prefab replaces the entity in O3DE Editor. The prefab instance displays the name of the instance on the left next to the {{< icon "prefab.svg" >}} prefab icon. The name of the prefab file is displayed on the right. In the following image, notice that the level itself is a prefab.
+The prefab file is saved to disk and an instance of the prefab replaces the entity in **O3DE Editor**. The prefab instance displays the name of the instance on the left next to the {{< icon "prefab.svg" >}} prefab icon. The name of the prefab file is displayed on the right in parenthesis. In the following image, notice that the level itself is a prefab.
 
 ![A new prefab instance in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/prefab-instanced.png)
 
@@ -63,9 +50,9 @@ Complex prefabs might require multiple entities and prefab instances. You can cr
 1. In Entity Outliner, **right-click** one of the selected entities or prefab instances and choose **Create Prefab...** from the context menu.
 1. In the **Save As…** window, choose a directory in your project, such as the `Prefabs` directory, supply a name for the prefab, and choose **Save**.
 
-In the following video, a prefab instance and an entity with a hierarchy are selected for a new prefab. When the new prefab instance is opened in [Prefab Edit Mode](#edit-a-prefab), it displays that the hierarchy is maintained in the new prefab.
+In the following video, a prefab instance and an entity with a hierarchy are selected for a new prefab. When the new prefab instance is opened in [Focus Mode](#edit-a-prefab), it displays that the hierarchy is maintained in the new prefab.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/multiple-entity-prefab.mp4" info="Creating a prefab from a collection of entities and prefabs." autoplay="true" loop="true" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/multiple-entity-prefab.mp4" info="Creating a prefab from a collection of entities and prefabs." autoplay="true" loop="true" width="450" >}}
 
 ## Instantiate a prefab
 
@@ -121,74 +108,75 @@ To focus the viewport on a particular entity or prefab instance, use either of t
 Entities and prefabs can have nested hierarchies. To create a hierarchy beneath an entity or within a prefab, **drag** an entity or prefab instance onto the root entity or prefab instance in Entity Outliner. As you drag a prefab or entity, a pale blue highlight marks where it will be placed in the hierarchy.
 
 {{< note >}}
-Editing the hierarchy of a prefab requires that the prefab is open for edit in [Prefab Edit Mode](#edit-a-prefab).
+Editing the hierarchy of a prefab requires that the prefab is open for edit in [Focus Mode](#edit-a-prefab).
 {{< /note >}}
 
 In the following video, an entity and a prefab instance are added as children of an entity.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-entities.mp4" info="Nesting entities." autoplay="true" loop="true" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-entities.mp4" info="Nesting entities." autoplay="true" loop="true" width="450" >}}
 
 Entities and prefabs can have multiple levels of nesting. You can drag and drop the nested entities and prefabs to change the hierarchy as demonstrated in the following video. 
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/multiple-nested.mp4" info="Rearranging a nested entity hierarchy." autoplay="true" loop="true" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/multiple-nested.mp4" info="Rearranging a nested entity hierarchy." autoplay="true" loop="true" width="450" >}}
 
 
 ## Edit an entity
 
 A basic entity has a collection of components that define an object. You can add components to a selected entity by choosing **Add Component** in Entity Inspector and selecting a component from the list. In the following video, a **Material** component is added to an entity that contains a **Mesh** component.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/basic-entity.mp4" info="Adding a component to an entity." autoplay="true" loop="true" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/basic-entity.mp4" info="Adding a component to an entity." autoplay="true" loop="true" width="450" >}}
 
 ## Edit a prefab
 
-To make changes to a prefab it must be open for editing by entering **Prefab Edit Mode**.
+To make changes to a prefab it must be open for editing by entering **Focus Mode**.
 
-### Enter Prefab Edit Mode
+### Enter Focus Mode
 
-Use any of the following methods to enter Prefab Edit Mode:
+Use any of the following methods to enter Focus Mode:
 
 * **Double-click** the prefab instance in Entity Outliner or in the viewport.
 * **Right-click** the prefab instance in Entity Outliner or in the viewport and choose **Open/Edit Prefab** from the context menu.
 * With the prefab instance selected, press **+**.
 
-![Edit a prefab in Prefab Edit Mode.](/images/learning-guide/tutorials/entities-and-prefabs/edit-prefab.png)
+![Edit a prefab in focus mode.](/images/learning-guide/tutorials/entities-and-prefabs/edit-prefab.png)
 
-In Prefab Edit Mode, the prefab's contents are exposed in Entity Outliner within a blue frame. The viewport shifts to a monochromatic mode with the opened prefab rendered in full color. The toolbar above the viewport shows the path to the prefab that is open for edit. From the toolbar you can choose the **Prefab Edit Mode** list to switch the viewport render mode from monochromatic to color. When you select an entity contained in the prefab, the entity's components are displayed in Entity Inspector.
+When Focus mode is active, the prefab's contents are exposed in Entity Outliner within a blue frame. The viewport also displays a blue frame. When you select an entity contained in the prefab, the entity's components are displayed in Entity Inspector.
 
-{{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/prefab-focus-mode.png" "1200" "A prefab opened for editing in Prefab Edit Mode" >}}
+{{< image-width "/images/learning-guide/tutorials/entities-and-prefabs/prefab-focus-mode.png" "900" "A prefab opened for editing in focus mode" >}}
 
-### Edit a prefab in Prefab Edit Mode
+### Edit a prefab in Focus Mode
 
-When Prefab Edit Mode is active, you can use any entity and prefab editing actions within the context of the prefab. You can create, duplicate, remove, and rename entities and prefab instances, edit entities, create and instantiate prefabs, and create hierarchies of entities and prefab instances using the methods described in this topic. The results of any modifications happen within the context of the prefab that is in Prefab Edit Mode.
+When Focus Mode is active, you can use any entity and prefab editing actions within the context of the prefab. You can create, duplicate, remove, and rename entities and prefab instances, edit entities, create and instantiate prefabs, and create hierarchies of entities and prefab instances using the methods described in this topic. The results of any modifications happen within the context of the prefab that is in Focus Mode.
 
-In the following video example, an `.azmodel` is dragged from Asset Browser into the viewport while a prefab is in Prefab Edit Mode. A new entity is created for the `.azmodel` within the prefab.
+In the following video example, an `.azmodel` is dragged from Asset Browser into the viewport while an prefab is in focus mode. A new entity is created for the `.azmodel` within the prefab.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/create-entity-focus-mode.mp4" info="Creating an entity within a prefab in Prefab Edit Mode." autoplay="true" loop="true" width="1060" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/create-entity-focus-mode.mp4" info="Creating an entity within a prefab in focus mode." autoplay="true" loop="true" width="900" >}}
 
 When a prefab has unsaved changes, an **\*** appears next to the prefab file name. [Save the prefab](#saving-entities-and-prefabs) to write the changes to disk.
 
-### Exit Prefab Edit Mode
+### Exit Focus Mode
 
-Use any of the following methods to exit Prefab Edit Mode:
+Use any of the following methods to exit Focus Mode:
 
 * **Double-click** the prefab in Entity Outliner.
 * **Right-click** the prefab in Entity Outliner and choose **Close Prefab** from the context menu.
 * Press **-**.
+* **Click** the **X** icon in the upper-right corner of the blue Focus Mode frame that surrounds the viewport.
 
-### Prefab Edit Mode and nested prefabs
+### Focus Mode and nested prefabs
 
-You can edit a nested prefab by opening the nested prefab in Prefab Edit Mode. In the following video, the nested prefab is opened for editing, and a new entity is created within the context of the nested prefab.
+You can edit a nested prefab by opening the nested prefab in Focus Mode. In the following video, the nested prefab becomes the focus and a new entity is created within the context of the nested prefab.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-focus-mode.mp4" info="Open a nested prefab for edit in Prefab Edit Mode." autoplay="true" loop="true" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-focus-mode.mp4" info="Open a nested prefab for edit in focus mode." autoplay="true" loop="true" width="450" >}}
 
 ## Detach a prefab instance
 
 When a prefab instance is detached, its link to the prefab file is broken and the prefab instance is converted to an entity. The hierarchy of the prefab is maintained by the new entity. To detach a prefab instance, **right-click** the prefab instance and select **Detach Prefab...** from the context menu, as demonstrated in the following video.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/detach-prefab.mp4" info="Detach a prefab instance." autoplay="true" loop="true" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/detach-prefab.mp4" info="Detach a prefab instance." autoplay="true" loop="true" width="450" >}}
 
 {{< note >}}
-A prefab instance cannot be detached when it is in Prefab Edit Mode.
+A prefab instance cannot be detached when it is in Focus Mode.
 {{< /note >}}
 
 ## Duplicate an entity or a prefab instance
@@ -202,11 +190,11 @@ The duplicate appears below the source entity or prefab instance with a name tha
 
 When multiple entities and prefabs are selected, they all are duplicated along with their hierarchies, as demonstrated in the following video.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/multiple-duplicates.mp4" info="Duplicating multiple entities and prefab instances." autoplay="true" loop="true" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/multiple-duplicates.mp4" info="Duplicating multiple entities and prefab instances." autoplay="true" loop="true" width="450" >}}
 
-In the following video, a nested entity and a prefab instance are duplicated in place within the hierarchy of a prefab.
+In the following video, nested entities and prefab instances are duplicated in place within the hierarchy.
 
-{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-duplicate.mp4" info="Duplicating nested entities and prefab instances." autoplay="true" loop="true" >}}
+{{< video src="/images/learning-guide/tutorials/entities-and-prefabs/nested-duplicate.mp4" info="Duplicating nested entities and prefab instances." autoplay="true" loop="true" width="450" >}}
 
 ## Delete entities and prefab instances
 
@@ -225,4 +213,4 @@ Deleting a prefab instance has no effect on the prefab file that has been used t
 
 ## Conclusion and next steps
 
-Now that you understand the basics of creating and working with prefabs, you can learn how to apply an override to a single prefab instance. Learn to [Override a Prefab](override-a-prefab) in the next tutorial.
+Now that you understand the differences between an entities, prefabs, and prefab instances, and the basics of creating and working with them, you can put it into practice. Learn to [Spawn and Despawn a Prefab](spawn-a-prefab) in the next tutorial. 

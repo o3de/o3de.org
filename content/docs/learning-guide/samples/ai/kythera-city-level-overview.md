@@ -175,7 +175,7 @@ The `KytSpaceship` entity has the following components, which are required for 3
 *   `PhysX Collider`, set to the convex shape of the ship
 *   `Agent`, set to use the profile `GoToRandomEntityProfile`
 *   `FlightMovementController`, which you can configure to change the speed and acceleration of the ships
-*   `PhysX Dynamic Rigid Body` (required by the movement controller)
+*   `PhysX Rigid Body` (required by the movement controller)
 
 You can find the profile `GoToRandomEntityProfile` in `KytheraAIDemo/Scripts/Profiles.xml`.
 ```xml
@@ -203,7 +203,7 @@ The `KytSpaceship_Splines` entity has the following components, which are requir
 *   `PhysX Collider`, set to the convex shape of the ship
 *   `Agent`, set to use the profile `PathToNearestSplineStart`
 *   `FlightMovementController`, which you can configure to change the speed and acceleration of the ships
-*   `PhysX Dynamic Rigid Body` (required by the movement controller)
+*   `PhysX Rigid Body` (required by the movement controller)
 
 The `KytDrone_Splines` entity is set up in almost exactly the same way as the `KytSpaceshp_Splines`, except that its `Agent` component is set to use the profile `PathToNearestSplinePoint`.
 

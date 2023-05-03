@@ -5,8 +5,7 @@ weight: 300
 ---
 
 `AzPhysics::SimulatedBody` is a base type from which many PhysX components inherit:
-+ **[PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/)**
-+ **[PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)**
++ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)**
 + **[PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/)**
 + **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)**
 

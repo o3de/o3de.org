@@ -29,7 +29,7 @@ Complete the following set up steps to use the AWS Client Auth Gem in your proje
 
 ### 1. Enable the AWS Client Auth Gem
 
-If you haven't already added and built the **AWS Client Auth Gem** into your project, follow the instructions to [Add a Gem to a Project](/docs/user-guide/project-config/add-remove-gems/).
+If you haven't already added and built the **AWS Client Auth Gem** in your project, do so now using the instructions in [Enabling the AWS Client Auth Gem](./).
 
 ### 2. Configure authentication providers
 
@@ -45,7 +45,7 @@ When setting constants for deploy, the AWS Client Auth Gem supports the followin
 
 **`LOGIN_WITH_AMAZON_APP_CLIENT_ID`**: **Login with Amazon** (LWA) app client ID to enable LWA-authenticated authorization in Amazon Cognito identity pool.
 
-You can use [deployment scripts](https://docs.aws.amazon.com/cdk/v2/guide/environments.html) to set these environment variables.
+You can use [deployment scripts](https://docs.aws.amazon.com/cdk/latest/guide/environments.html) to set these environment variables.
 
 After a successful deployment, the following resources are provisioned.
 

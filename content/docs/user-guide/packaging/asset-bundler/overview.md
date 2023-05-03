@@ -26,7 +26,7 @@ By using the Asset Bundler, because you have smaller release packages, less risk
 
 Generating a platform-specific asset bundle using the Asset Bundler follows these steps:
 
-1. **Define your seeds**. A *seed* is generally a top-level asset, such as a `.spawnable` file that contains an entire game level. You must have one or more seeds defined in a seed list. A seed list is a file with the suffix `.seed`.
+1. **Define your seeds**. A *seed* is generally a top-level asset, such as a `.pak` file that contains an entire game or game level. You must have one or more seeds defined in a seed list. A seed list is a file with the suffix `.seed`.
 
 1. **Generate your asset lists**. The Asset Bundler evaluates each seed defined in your seed list. It then recursively evaluates each dependent asset for inclusion in a complete asset list. Generated asset lists have the suffix `.assetlist`.
 
@@ -38,7 +38,7 @@ Generating a platform-specific asset bundle using the Asset Bundler follows thes
 
 ![The steps used in the general process for bundling assets with O3DE.](/images/user-guide/assetbundler/asset-bundler-overview.png)
 
-In this example, the seeds are the assets Level1.spawnable and Level2.spawnable. These `.spawnable` files reference O3DE prefab product asset files and in this context represent game levels, which reference the entity meshes they contain, which in turn reference the material and texture files for those entities.
+In this example, the seeds are the assets Level1.pak and Level2.pak. These `.pak` files reference O3DE slice files, which reference the entity meshes they contain, which in turn reference the material and texture files for those entities.
 
 With those product dependency relationships in place, the Asset Bundler examines the hierarchies of each seed and generates an asset list. Asset lists, along with the bundle settings file that you create, are used to assemble the final bundle as a `.pak` file with all of the dependent assets. Any assets not associated with a seed are not included in the final release bundle.
 

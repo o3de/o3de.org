@@ -24,7 +24,6 @@ What are the ideal traits for O3DE docs?
 - [Quick Reference](./quick-reference) - A quick reference of common style guide rules.
 - [Writing Guidelines](./guidance) - Guidance on our documentation style, tone, and how to write in an accessible manner.
 - [Formatting Guidelines](./format) - Specific rules regarding formatting and typesetting our documentation, such as how to format executable names, file paths, and code blocks. Covers the features available in the variant of Markdown that the O3DE docs site uses.
-- [Formatting Tools](./tools) - A list of the tools that can assist with the specialized formatting needs of some O3DE documentation.
 - [Metadata](./metadata) - Details on the available (and required) Hugo front matter metadata to use in the [YAML](https://yaml.org/) headers of Markdown files.
 - [Shortcodes](./shortcodes) - The Hugo shortcodes that we use for the O3DE docs. Includes call-out boxes, version numbers, static paths that O3DE uses, and other useful tidbits.
 - [Submitting Media](./media) - Guidelines for submitting media (images, video, audio, or assets) to the docs.

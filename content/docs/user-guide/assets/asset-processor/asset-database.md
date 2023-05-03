@@ -2,7 +2,7 @@
 linkTitle: Asset Database
 title: Asset Database
 description: The Asset Database is used by the Asset Processor to track the work it has completed.
-weight: 950
+weight: 400
 toc: true
 ---
 

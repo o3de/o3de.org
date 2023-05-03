@@ -5,9 +5,9 @@ title: Dynamic joints with PhysX
 weight: 400
 ---
 
-PhysX joint components constrain the position and orientation of one PhysX Dynamic Rigid Body called the *follower*, relative to another rigid body, called the *leader*. The follower rigid body will have rotational freedom in zero, one, or two axes around the joint, depending on the type of PhysX joint.
+PhysX joint components constrain the position and orientation of one PhysX rigid body called the *follower*, relative to another PhysX rigid body, called the *leader*. The leader rigid body will have rotational freedom in zero, one, or two axes around the joint, depending on the type of PhysX joint.
 
-The example image below is a simple demonstration of the different joint types. In each example, the blue sphere is the lead rigid body. The red sphere is the follower rigid body, which must always be a simulated rigid body. The joint component is always part of the follower entity. Once the joint is added to the follower, it needs to be configured to be placed around the leader (using the **Local Position** and **Local Rotation** properties of the joint component). In this example, the ball and hinge leaders are static rigid bodies, but they could be kinematic or simulated rigid bodies too.
+The example image below is a simple demonstration of the three joint types. In each example, the blue sphere is the follower rigid body. The joints are centered on their respective follower rigid bodies. The red sphere is the leader rigid body. For clarity, the ball joint and hinge joint follower rigid bodies are set to fixed positions, but they can be dynamic rigid bodies like the fixed joint example. Also note that the joints can be offset from the follower rigid body using the **Local Position** and **Local Rotation** properties of the joint component.
 
 ![PhysX Joints example](/images/user-guide/physx/physx/anim-joints-example.gif)
 
@@ -28,15 +28,15 @@ The example image below is a simple demonstration of the different joint types. 
 ## PhysX joint types 
 
 See the linked component reference below for information on the three PhysX joint types:
-+ [ PhysX Ball Joint component reference ](/docs/user-guide/components/reference/physx/ball-joint/) - The **PhysX Ball Joint** component allows freedom of rotation of the follower rigid body in two axes.
-+ [ PhysX Fixed Joint component reference ](/docs/user-guide/components/reference/physx/fixed-joint/) - The **PhysX Fixed Joint** component does not allow freedom of rotation of the follower rigid body in any axis.
-+ [ PhysX Hinge Joint component reference ](/docs/user-guide/components/reference/physx/hinge-joint/) - The **PhysX Hinge Joint** component allows freedom of rotation of the follower rigid body in one axis.
++ [ PhysX Ball Joint component reference ](/docs/user-guide/components/reference/physx/ball-joint/) - The **PhysX Ball Joint** component allows freedom of rotation of the leader rigid body in two axes.
++ [ PhysX Fixed Joint component reference ](/docs/user-guide/components/reference/physx/fixed-joint/) - The **PhysX Fixed Joint** component does not allow freedom of rotation of the leader rigid body in any axis.
++ [ PhysX Hinge Joint component reference ](/docs/user-guide/components/reference/physx/hinge-joint/) - The **PhysX Hinge Joint** component allows freedom of rotation of the leader rigid body in one axis.
 
 ## PhysX joint setup 
 
 The setup for each joint type is the same.
 
-1. Create an entity for the **leader** rigid body.
+**To set up a PhysX joint**
 
    1. Create a new entity. Right click in **Perspective** and choose **Create enity** from the context menu.
 
@@ -44,28 +44,34 @@ The setup for each joint type is the same.
 
    1. Add a PhysX collider to the entity.
 
-1. Create an entity for the **follower** rigid body and the joint.
+   1. Create a new entity. Right click in **Perspective** and choose **Create enity** from the context menu.
 
-   1. Create a new entity.
-
-   1. Add a **PhysX Dynamic Rigid Body** (type *simulated*) component to the entity.
+   1. Add a **PhysX Rigid Body** component to the entity.
 
    1. Add a PhysX collider to the entity. This is required for angle limits to work correctly. Joints still work without a PhysX collider but angle limits and might not be enforced. This is also true when using trigger colliders.
 
-   1. Add one of the PhysX joint components:
+   1.  Add one of the PhysX joint components:
       + **PhysX Ball Joint**
       + **PhysX Fixed Joint**
       + **PhysX Hinge Joint**
 
-   1. Assign the leader entity to the PhysX joint by clicking the **Target** button to the right of the **Lead Entity** property and select the leader entity in **Perspective**.
+   1. The joint's position and orientation are expressed as an offset from the follower. Adjust the position and orientation of the joint by changing the **Local Position** and **Local Rotation** fields in the PhysX joint component.
 
-   1. Adjust the position and orientation of the joint to move it to the leader's location. Use the **Local Position** and **Local Rotation** fields in the PhysX joint component. You can enter component mode by clicking the **Edit** button and configure the joint in **Perspective**.
+1. Create an entity for the leader rigid body.
 
-{{< note >}}
-It is not required for a follower rigid body to have an leader rigid body. When a follower doesn't have a leader it will be constrained on global position.
-{{< /note >}}
+   1. Create a new entity.
 
-## PhysX Joint configuration using component edit mode
+   1. Add a **PhysX Rigid Body** component to the entity.
+
+   1. Add a **PhysX Collider** component to the entity.
+
+1. Assign the leader entity to the **Lead Entity** property of the PhysX joint.
+
+   1. In the Joint component, click the **Target** button to the right of the **Lead Entity** property to start entity selection.
+
+   1. In **Perspective**, click on the leader entity to select it and assign it to the **Lead Entity** property.
+
+## PhysX Joint configuration 
 
 Joint components have an **Edit** button that enables component edit mode. In component edit mode, you can edit the properties of the joint in **Perspective**. You can use one of several edit contexts in component edit mode. Press the **Tab** key to cycle through the edit mode contexts. The current context is displayed at the bottom of the **Perspective** pane.
 
