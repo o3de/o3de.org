@@ -17,7 +17,7 @@ The **Asset Browser** shows all the assets in Open 3D Engine (O3DE) and your O3D
 
     - To select multiple assets, press **Ctrl+LMB** on one asset at a time to be part of a multi-selection.
 
-    - To open multiple **Asset Browser windows**, **right-click** on an asset to bring up the **context menu**, and choose **Open in another Asset Browser**.
+    - To open multiple **Asset Browser windows**, **right-click** on an asset to bring up the context menu, and choose **Open in another Asset Browser**.
 
 ## Viewing assets
 
@@ -103,8 +103,11 @@ The breadcrumbs navigation bar includes the following useful features:
 
 - Previous {{< icon "arrow_left-default.svg" >}} and foward {{< icon "arrow_right-default.svg" >}} navigation arrows to navigate through recently selected directories.
 - Breadcrumbs to navigate through parent directories.
+
     ![Asset Browser Click Navigate.](/images/user-guide/assetbrowser/breadcrumbs-click-navigate.png)
+
 - An address bar to specify file locations
+
     ![Asset Browser Edit.](/images/user-guide/assetbrowser/breadcrumbs-edit.png)
 
 ## Opening Assets
