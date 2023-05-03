@@ -36,13 +36,13 @@ The following components are grouped by type as they appear in the O3DE Editor.
 
 
 ### Animation
-| Component | Description | 
+| Component | Description |
 | - | - |
-| [Actor](/docs/user-guide/components/reference/animation/actor/) | Creates and manages a controllable character. |
-| [Anim Graph](/docs/user-guide/components/reference/animation/animgraph/) | Manages a set of assets that are built in the Animation Editor, including the animation graph, default parameter settings, and assigned motion set for the associated Actor. |
-| [Attachment](/docs/user-guide/components/reference/animation/attachment/) | Allows an entity to attach to a bone on the skeleton of another entity. |
-| Simple LOD Distance | Changes the actor skeleton LOD based on camera distance. |
-| [Simple Motion](/docs/user-guide/components/reference/animation/simple-motion/) | Assigns a single motion to the associated Actor. This is a simpler alterative to the Anim Graph component.  |
+| [Actor](./animation/actor) | Adds a mesh group bound to a skeleton that can be driven by animation data from Anim Graph or Simple Motion components. |
+| [Anim Graph](./animation/animgraph/) | Manages a set of assets that are built in the Animation Editor, including the animation graph, default parameter settings, and assigned motion set for the associated Actor. |
+| [Attachment](./animation/attachment/) | Allows an entity to attach to a bone on the skeleton of another entity. |
+| [Simple LOD Distance](./animation/simple-lod-distance) | Sets the distance from the camera for each level of detail (LOD) of an Actor. |
+| [Simple Motion](./animation/simple-motion/) | Assigns a single motion to the associated Actor. This is a simpler alterative to the Anim Graph component.  |
 
 
 ### Atom Renderer
@@ -174,6 +174,7 @@ The following components are grouped by type as they appear in the O3DE Editor.
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
 | [PhysX Mesh Collider](./physx/mesh-collider/) | Allows you to specify PhysX mesh assets to calculate collisions between entities. |
 | [PhysX Primitive Collider](./physx/collider/) | Allows you to specify primitive shapes to calculate collisions between entities. |
+| [PhysX Prismatic Joint](/docs/user-guide/components/reference/physx/prismatic-joint/) | Creates a dynamic prismatic joint that constrains an entity to the joint, keeping the same rotation but allowing it to move freely along one axis.|
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
 | [PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) | Defines the entity as a non-movable rigid object that is solid and can collide with other PhysX entities. |
 | [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/) | Creates a geometric collider based on the **Shape** component. |

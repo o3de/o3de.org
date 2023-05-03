@@ -49,6 +49,7 @@ The **PhysX** gem has the following components, which you can [add](/docs/user-g
 + **[PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/)** - Creates a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.
 + **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/)** - Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis.
 + **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/)** - Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.
++ **[PhysX Prismatic Joint](/docs/user-guide/components/reference/physx/prismatic-joint/)** - Creates a dynamic prismatic joint that constrains an entity to the joint, keeping the same rotation but allowing it to move freely along one axis.
 
 ## PhysX Configuration 
 
