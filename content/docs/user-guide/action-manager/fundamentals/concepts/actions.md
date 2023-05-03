@@ -1,26 +1,26 @@
 ---
 title: Actions
 linkTitle: Actions
-description: 
+description: Actions are an element of the Action Manager that allow users to register and trigger editor behaviors in Open 3D Engine (O3DE).
 weight: 101
 ---
 
-The Action Manager system provides interfaces to register actions and related frameworks to interact with the O3DE Editor.
+The [Action Manager](/docs/user-guide/action-manager) system provides interfaces to register actions and related frameworks to interact with the **Open 3D Engine (O3DE)** Editor.
 
 
-## Action Context
+## Action context
 
-An Action Context is an object that owns a collection of Actions.
+An action context is an object that owns a collection of actions.
 
-An Action Context is comprised of:
+An action context is comprised of:
 
 * A string **identifier** that makes it possible to reference it in API calls;
-* A **name** string, which is meant to be a human-readable description to show in UI (currently unused);
+* A **name** string, which is a human-readable description to show in UI;
 
 
 ### Registration
 
-It is possible to register a new Action Context via the following API call:
+It is possible to register a new action context via the following API call:
 
 ```
 AzToolsFramework::ActionContextProperties contextProperties;
@@ -33,21 +33,21 @@ actionManagerInterface->RegisterActionContext(
     
 ```
 
-### Associating Widgets
+### Associating widgets
 
-The purspose of Action Contexts is to bind the group of actions it owns to a widget in the Editor so that they can be accessed via keyboard shortcuts contextually to the user focus.
-See the [Hotkeys]() page for more information.
+The purpose of action contexts is to bind the group of actions it owns to a widget in the Editor so that they can be accessed via keyboard shortcuts contextually to what part of the Editor the user is interacting with.
+See the [Hotkeys](./hotkeys) page for more information.
 
 
 ## Action
 
-An Action is an abstraction of a re-usable Editor interaction. It is not accessible upon creation, but becomes available to the user once it's added to a menu or toolbar, or if a hotkey is assigned to it.
+An action is an abstraction of a re-usable Editor interaction. It is not accessible upon creation, but becomes available to the user once it's added to a menu or toolbar, or if a hotkey is assigned to it.
 
-An Action is comprised of
+An action is comprised of
 
 * A string **identifier** that makes it possible to reference it in API calls;
-* A string **context identifier** that defines the Action Context that owns this Action;
-* A behavior in the form of a function to be called whenever the Action is triggered.
+* A string **context identifier** that defines the action context that owns this action;
+* A behavior in the form of a function to be called whenever the action is triggered.
 
 
 ### Registration
@@ -68,12 +68,12 @@ actionManagerInterface->RegisterAction(
 
 The behavior can either be provided as a lambda or a function reference.
 
-Additional descriptors and decorators can be added as Action Properties:
+Additional descriptors and decorators can be added as action properties:
 
-* A **name** string, which succinctly describes the effect of the action and is used in UI like Menus or ToolBars;
+* A **name** string, which succinctly describes the effect of the action and is used in UI like menus or toolbars;
 * A **description** string, which can be used to provide additional information to the user, usually shown in a tooltip when hovering over the action in a UI;
-* A **category** string, which is meant to be used to categorize similar strings in the UI (currently unused);
-* An **icon path** pointing to an svg image that will be used to represent the action in Menus and ToolBars. It needs to be a Qt path for an svg file defined in a qrc resource file.
+* A **category** string, which is meant to be used to categorize similar strings in the UI;
+* An **icon path** pointing to an svg image that will be used to represent the action in menus and toolbars. It needs to be a Qt path for an svg file defined in a qrc resource file.
 
 ```
 AzToolsFramework::ActionProperties actionProperties;
@@ -94,11 +94,11 @@ actionManagerInterface->RegisterAction(
 ```
 
 
-### Enabled State Callbacks
+### Enabled state callbacks
 
 An action’s enabled state can be changed based on the state of the Editor; for example, some actions may only be enabled when the entity selection is not empty.
 
-To do that, it is possible to install an Enabled State Callback on actions which will return what the enabled state should be based on an arbitrary criteria.
+To do that, it is possible to install an enabled state callback on actions which will return what the enabled state should be based on an arbitrary criteria.
 
 ```
 actionManagerInterface->InstallEnabledStateCallback(
@@ -116,16 +116,18 @@ Note that the state of actions won’t be updated periodically, and there needs 
 
 It is possible to install multiple enabled state callbacks on an action. When that happens, the result of all callbacks will be computed and resolved as an AND chain, meaning that the action will only be enabled if all callbacks return true.
 
-Also note, the action may get deactivated from the Action Context Mode system even if it’s deemed enabled after computing the callbacks. Check the [Action Context Modes section](/docs/user-guide/action-manager/fundamentals/concepts/actions/#action-context-mode-switching) for more information.
+Also note, the action may get deactivated from the action context mode system even if it’s deemed enabled after computing the callbacks. For more information, refer to the [action context mode switching](/docs/user-guide/action-manager/fundamentals/concepts/actions/#action-context-mode-switching) section.
 
 
-### Checkable Actions
+### Checkable actions
 
-Actions that implement a toggle for Editor behavior can be registered as Checkable Actions. These will make use of the QAction’s `checked` state to visualize the state of the underlying feature to the user in the UI.
+Actions that implement a toggle for Editor behavior can be registered as checkable actions. These will make use of the QAction’s `checked` state to visualize the state of the underlying feature to the user in the UI.
 
-**Note:** The value of the Checkable Action can be queried and updated, but not set directly. Checkable Actions should be used to visualize an underlying setting, not to store or query its value.
+{{< note >}}
+The value of the checkable action can be queried and updated, but not set directly. Use checkable actions to visualize an underlying setting, not to store or query its value.
+{{< /note >}}
 
-To register a Checkable Action, a separate registration call is provided:
+To register a checkable action, a separate registration call is provided:
 
 ```
 actionManagerInterface->RegisterCheckableAction(
@@ -145,7 +147,7 @@ actionManagerInterface->RegisterCheckableAction(
 );
 ```
 
-The checked state callback will automatically be called on registration, and the returned value will be used to set the checked state. To refresh the value over time, check the **Updating Actions** section.
+The checked state callback will automatically be called on registration, and the returned value will be used to set the checked state. To refresh the value over time, refer to the [Updating Actions](#updating-actions) section.
 
 A checkable action's state is visualized in different ways based on the UI element it appears in:
 - If added to a menu, a checked checkable action will display a small checkmark to the left of the action's name;
@@ -159,21 +161,21 @@ The `ActionProperties` structure includes settings to provide visibility behavio
 * `m_menuVisibility` can be used to determine whether the action is displayed in menus;
 * `m_toolBarVisibility` can be used to determine whether the action is displayed in toolbars.
 
-More information can be found at [this page](/docs/user-guide/action-manager/fundamentals/architecture/visibility/).
+For more information, refer to [Action Visibility](/docs/user-guide/action-manager/fundamentals/architecture/visibility/).
 
 
-## Updating Actions
+## Updating actions
 
 An action has two states that need to be kept up to date: the enabled state, which determines whether the action can be triggered, and the checked state, which is used in UI to visualize the state of an internal setting. As described earlier, both of these states are driven by the corresponding callbacks attached to the action; nonetheless, to optimize performance, the system does not refresh the state of the actions automatically . Instead, it relies on the owning system to keep its actions up to date whenever an event that could potentially trigger either state to change.
 
 To streamline operations but still allow for more customized solutions, the architecture provides two different ways of refreshing actions when needed.
 
 
-### Action Updaters
+### Action updaters
 
 As the Action Manager architecture is built to support modularity and extensibility, it strives to allow Gems to easily hook onto Editor-defined events to drive the state of their custom actions without having to directly include their definitions or repeat a lot of boilerplate code.
 
-Action Updaters were devised to help achieve this. An Action Updater is essentially a list of action identifiers grouped under a label, the updater identifier. A system that implements an event that will trigger UI changes to actions can define an action updater with the following API call:
+Action updaters were devised to help achieve this. An action updater is essentially a list of action identifiers grouped under a label, the updater identifier. A system that implements an event that will trigger UI changes to actions can define an action updater with the following API call:
 
 ```
 actionManagerInterface->RegisterActionUpdater("o3de.updater.identifier");
@@ -185,7 +187,7 @@ Whenever the event fires, the system then has to trigger the updater:
 actionManagerInterface->TriggerActionUpdater("o3de.updater.identifier");
 ```
 
-Once that is set, any system can opt-in their actions to be added to the updater with the following call:
+When that is set, any system can opt-in their actions to be added to the updater with the following call:
 
 ```
 actionManagerInterface->AddActionToUpdater(
@@ -195,10 +197,12 @@ actionManagerInterface->AddActionToUpdater(
 This way, whenever the event fires, all actions that were added to the updater will be refreshed.
 Actions can be added to as many updaters as needed with no limitation.
 
-Note: The expectation is that the system that registers an updater will also take care of triggering it when appropriate.
+{{< note >}}
+The system that registers an updater must also trigger it when appropriate.
+{{< /note >}}
 
 
-### Manual Updates
+### Manual updates
 
 In very specific cases, it may be necessary to trigger an update for a single action manually. This is not the recommended implementation, as it hinders extensibility, but may be helpful in specific cases especially when working with legacy code.
 
@@ -206,13 +210,13 @@ In very specific cases, it may be necessary to trigger an update for a single ac
 actionManagerInterface->UpdateAction("o3de.action.identifier");
 ```
 
-## Action Context Mode Switching
+## Action context mode switching
 
 The O3DE Editor is a complex tool that supports multiple workflows; these sometimes require a set of actions to be enabled or disabled in bulk as some interactions become unsupported.
 
 To streamline this process, the Action Manager architecture integrated a mechanism called Action Context Modes.
 
-### Register a new Mode
+### Register a new mode
 
 It is possible to register a new mode to an action context as follows:
 
@@ -223,12 +227,12 @@ actionManagerInterface->RegisterActionContextMode(
 );
 ```
 
-Each Action Context will have its own set of modes.
+Each action context will have its own set of modes.
 
 
-### Adding Actions to a Mode
+### Adding actions to a mode
 
-Once a mode has been registered, it is possible to assign actions to it. This works similarly to adding actions to an updater.
+When a mode has been registered, it is possible to assign actions to it. This works similarly to adding actions to an updater.
 
 ```
 actionManagerInterface->AssignModeToAction(
@@ -241,10 +245,10 @@ An action can be assigned to any number of modes. The mode needs to have been re
 
 Actions assigned to no modes (which is the default state after registration) will appear in all modes. If an action is only assigned to modes that are different from the active action context mode, the action will be deactivated until the active mode is changed.
 
-For more info about the visibility of deactivated actions in menus and ToolBars, see the [Visibility](/docs/user-guide/action-manager/fundamentals/architecture/visibility/) section.
+For more info about the visibility of deactivated actions in menus and toolbars, see the [Action Visibility](/docs/user-guide/action-manager/fundamentals/architecture/visibility/) section.
 
 
-### Switching between Modes
+### Switching between modes
 
 To change the currently active action context mode, this API function can be called.
 
@@ -262,7 +266,7 @@ When the active action context mode changes, all actions that were not assigned 
 
 Each Action Context is initialized with a default Action Context Mode whose identifier is just `default`. It is possible to assign an action to the default mode to ensure that it gets deactivated for any other mode that is defined elsewhere (unless it gets assigned to the new mode as well).
 
-By default, actions are assigned to no modes. This means that they will appear in every registered mode. Once a mode is assigned, then the behavior switches to only appearing in modes it was assigned to.
+By default, actions are assigned to no modes. This means that they appear in every registered mode. When a mode is assigned, then the behavior switches to only appearing in modes it was assigned to.
 
 
 ## Widget Actions
@@ -292,4 +296,6 @@ auto outcome = m_actionManagerInterface->RegisterWidgetAction(
 );
 ```
 
-Note that the widget created via the factory will be parented to the interface that requests it, be it a menu or a toolbar, which will take control of it and guarantee it is deallocated correctly when no longer needed.
+{{< note >}}
+The widget created via the factory will be parented to the interface that requests it, be it a menu or a toolbar, which will take control of it and guarantee it is deallocated correctly when no longer needed.
+{{< /note >}}

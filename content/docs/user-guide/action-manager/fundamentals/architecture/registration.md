@@ -8,53 +8,65 @@ weight: 202
 The Action Manager architecture requires items to be registered before they can be used. This measure allows the system to provide error messages if an API is called with unknown identifiers, especially if due to a typo.
 A second limitation, although it’s not enforced, is to register all items at Editor startup. Since the system has been designed for extensibility and customization, registering all elements at a defined time makes them available for use from other system while still enforcing a strict ownership.
 
-To simplify the registration process, the Action Manager architecture provides a set of notification hooks that are triggered on Editor startup. These notifications are split by item type; this allows systems to be certain that an item they require, but is defined elsewhere, has already been registered by the time the hook corresponding to a different item type that has a dependency on it is called. For example, the Action Context registration hook is called first, so by the time the Action registration hook is triggered we can assume all Action Contexts have been registered already and are available.
+To simplify the registration process, the Action Manager architecture provides a set of notification hooks that are triggered on Editor startup. These notifications are split by item type; this allows systems to be certain that an item they require, but is defined elsewhere, has already been registered by the time the hook corresponding to a different item type that has a dependency on it is called. For example, the action context registration hook is called first, so by the time the action registration hook is triggered we can assume all action contexts have been registered already and are available.
 
 ## Registration Hooks
 
-#### OnActionContextRegistrationHook
+#### `OnActionContextRegistrationHook`
+
 Synchronization signal to register Action Contexts.
 
-#### OnActionContextModeRegistrationHook
+#### `OnActionContextModeRegistrationHook`
+
 Synchronization signal to register Action Context Modes.
 It can be assumed that Action Contexts have already been registered when this is called.
 
-#### OnActionUpdaterRegistrationHook
+#### `OnActionUpdaterRegistrationHook`
+
 Synchronization signal to register Action Updaters.
 
-#### OnMenuBarRegistrationHook
+#### `OnMenuBarRegistrationHook`
+
 Synchronization signal to register Menu Bars.
 
-#### OnMenuRegistrationHook
+#### `OnMenuRegistrationHook`
+
 Synchronization signal to register Menus.
 
-#### OnToolBarAreaRegistrationHook
+#### `OnToolBarAreaRegistrationHook`
+
 Synchronization signal to register ToolBar Areas.
 
-#### OnToolBarRegistrationHook
+#### `OnToolBarRegistrationHook`
 
 Synchronization signal to register ToolBars.
 
-#### OnActionRegistrationHook
+#### `OnActionRegistrationHook`
+
 Synchronization signal to register Actions.
 It can be assumed that Action Contexts and Action Updaters have already been registered when this is called.
 
-#### OnWidgetActionRegistrationHook
-Synchronization signal to register Widget Actions.
+#### `OnWidgetActionRegistrationHook`
 
-#### OnActionContextModeBindingHook
+Synchronization signal to register Widget Actions.
+`
+#### `OnActionContextModeBindingHook`
+
 Synchronization signal to bind Actions to Action Context Modes.
 It can be assumed that Action Contexts Modes have already been registered when this is called.
 
-#### OnMenuBindingHook
+#### `OnMenuBindingHook`
+
 Synchronization signal to add actions/widgets to Menus, and Menus to Menu Bars.
 It can be assumed that Action, Widget Actions, Menus and Menu Bars have already been registered when this is called.
 
-#### OnToolBarBindingHook
+#### `OnToolBarBindingHook`
+
 Synchronization signal to add actions/widgets/menus to ToolBars, and ToolBars to ToolBar Areas.
 It can be assumed that Action, Widget Actions, Menus, ToolBars and ToolBar Areas have already been registered when this is called.
 
-#### OnPostActionManagerRegistrationHook
+#### `OnPostActionManagerRegistrationHook`
+
 Synchronization signal for any post-registration activity.
 This is mostly to future-proof the system, but other hooks should be used as appropriate if possible before resorting to this.
 

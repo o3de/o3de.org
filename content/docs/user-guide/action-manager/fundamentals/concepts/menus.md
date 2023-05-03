@@ -5,16 +5,16 @@ description: An overview of the Action Manager Menu API.
 weight: 102
 ---
 
-The Menu Manager system provides interfaces to register and extend menus for use in the O3DE Editor UI.
+The menu manager system provides interfaces to register and extend menus for use in the Open 3D Engine (O3DE) Editor UI.
 
 
-### Registration
+## Registration
 
-A new menu can be registered by just providing its string identifier.
+A new menu can be registered by providing its string identifier.
 
 The menu properties structure can also specify additional information:
 
-* A **name** string, which is meant to be a human-readable description to show in UI (currently unused);
+* A **name** string, which is meant to be a human-readable description to show in UI;
 
 
 ```
@@ -28,9 +28,9 @@ menuManagerInterface->RegisterMenu(
 ```
 
 
-### Displaying the Menu
+## Displaying the menu
 
-Once a menu is registered, it is possible to display it in the interface.
+When a menu is registered, it is possible to display it in the interface.
 
 ```
 // Display a menu at a specific screen position.
@@ -41,7 +41,7 @@ menuManagerInternalInterface->DisplayMenuUnderCursor("o3de.menu.identifier");
 ```
 
 
-### Adding Actions
+## Adding actions
 
 It is possible to add actions to a menu via this API call:
 
@@ -55,10 +55,10 @@ menuManagerInterface->AddActionToMenu(
 );
 ```
 
-See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
+See the [Sort Keys](/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
 
 
-### Adding Separators
+## Adding separators
 
 To divide a menu into sections, it is possible to add separators.
 
@@ -71,12 +71,12 @@ menuManagerInterface->AddSeparatorToMenu(
 );
 ```
 
-See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
+See the [Sort Keys](/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
 
-If multiple separators are added one after the other in order, or at the beginning or end of the menu, they may be collapsed into one or just not displayed at all (default Qt behavior).
+If multiple separators are added one after the other in order, or at the beginning or end of the menu, they may be collapsed into one or not displayed at all (default Qt behavior).
 
 
-### Adding Sub-Menus
+## Adding sub-menus
 
 It is possible to add existing menus as sub-menus via the following API call.
 
@@ -90,12 +90,12 @@ menuManagerInterface->AddSubMenuToMenu(
 );
 ```
 
-See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
+See the [Sort Keys](/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
 
 Note that the function call will fail if a user tries to add a menu to itself, or if the operation would cause the creating of a circular dependency that could stall the Editor.
 
 
-### Adding Widget Actions
+## Adding widget actions
 
 Widgets can also be added to menus as follows:
 
@@ -109,10 +109,10 @@ menuManagerInterface->AddWidgetToMenu(
 );
 ```
 
-See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
+See the [Sort Keys](/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
 
 
-## Menu Bar
+# Menu bar
 
 It is possible to register a MainWindow's menu bar region to the Menu Manager, so that is can be accessed via the Menu Manager APIs.
 
@@ -126,10 +126,10 @@ menuManagerInterface->RegisterMenuBar(
 );
 ```
 
-Once the menu bar is registered, external Gems can add new menus to the menu bar via the string identifier.
+When the menu bar is registered, external Gems can add new menus to the menu bar via the string identifier.
 
 
-### Adding Menus
+## Adding menus
 
 Adding menus to a menu bar works the same as adding sub-menus to menus.
 
@@ -143,4 +143,4 @@ menuManagerInterface->AddMenuToMenuBar(
 );
 ```
 
-See the [`Sort Keys`](https://o3de.org/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.
+See the [Sort Keys](/docs/user-guide/action-manager/fundamentals/architecture/sort-keys/) section for more information about menu item ordering.

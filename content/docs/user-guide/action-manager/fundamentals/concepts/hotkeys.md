@@ -1,16 +1,16 @@
 ---
-linkTitle: HotKeys
-title: HotKeys
-description:
+linkTitle: Hotkeys
+title: Hotkeys
+description: An overview of the Action Manager HotKey API.
 weight: 104
 ---
 
-The HotKey Manager system provides interfaces to bind HotKeys to actions so that they can be triggered via keyboard shortcuts in the O3DE Editor UI.
+The hotkey manager system provides interfaces to bind hotkeys to actions so that they can be triggered via keyboard shortcuts in the Open 3D Engine (O3DE) Editor UI.
 
 
-### Assigning a Widget to a Context
+## Assigning a widget to a context
 
-To determine which hotkeys are accessible from which part of the Editor, it is possible to assign a widget to an Action Context with the following call:
+To determine which hotkeys are accessible from which part of the Editor, it is possible to assign a widget to an action context with the following call:
 
 ```
 QWidget* widget = new QWidget();
@@ -22,9 +22,9 @@ Whenever the user inputs a keyboard shortcut, the event will be triggered on the
 
 It is possible to assign multiple widgets to the same Action Context. Multiple shortcuts can be triggered with the same key press if multiple actions on the same Action Context were set to the same HotKey.
 
-## Setting an HotKey to an Action
+## Setting an hotkey to an action
 
-Setting a HotKey to an Action is just a matter of defining which input combination should trigger the action's behavior like so:
+Setting a hotkey to an action is a matter of defining which input combination triggers the action's behavior like so:
 
 ```
 hotKeyManagerInterface->SetActionHotKey(

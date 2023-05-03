@@ -12,7 +12,7 @@ Identifiers need to be unique per item type in the architecture, but don’t nee
 For example, it is possible to register an Action and a Menu with the same identifier string, as the APIs expect a specific identifier type and there is no possible misdirection.
 Trying to register two different items of the same type to the same identifier will instead result in a failure.
 
-## Identifier Standard
+## Identifier standard
 
 The system does not enforce a specific structure for the identifier string, so any string can be used. To prevent collisions, though, we define a recommended standard to make these identifiers easier to recognize, readable, and prevent repetitions.
 
@@ -39,6 +39,6 @@ Categories can be used to group items that are related, like part of a subsystem
 Identifier portions are in lowerCamelCase.
 
 
-## Identifier Headers
+## Identifier headers
 
 To streamline development in the O3DE C++ codebase, some common identifiers are defined as constants in specific headers to easily reference them in multiple files. Nonetheless, there is no requirement for Gems to include a file from the main Editor for the system to work, and just using the same identifier string will work as expected. By the same principle, identifiers can be used from different languages seamlessly (for example, Python).
