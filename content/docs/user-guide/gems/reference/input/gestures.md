@@ -16,23 +16,11 @@ You can use the Gestures Gem to recognize common gesture-based input, including 
 
 Single-touch gestures (such as tap, drag, hold, and swipe) can be detected with touch or mouse input. However, multiple-touch gestures (such as pinch and rotate) can only be recognized on multi-touch enabled devices such as iOS or Android. You can extend the underlying C++ gesture recognition framework to support your custom gesture recognizers.
 
-## Configuring Gesture Recognizers
+Enable the Gem in your project to automatically start receiving gesture input events that you can respond to.
 
-You can configure gesture recognizers with C++ and the **Gestures** system component in the **System Entity Editor**.
-
-To configure gesture recognizers:
-
-1. In the **System Entity Editor**, click **Add Component**, and then expand **Gestures**.
-
-2. For each gesture recognizer, specify your preferred values. For example, if you want to change the **Min Clicks or Taps** for a double press gesture, specify a new value.
-
-    ![Use the System Entity Editor to manage the gesture settings.](/images/user-guide/gems/gestures-system-entity-editor-settings.png)
-
-    {{< note >}}
-    Pause on the gesture recognizer to see a description and the valid values.
-    {{< /note >}}
-
-3. Make your changes and then click **Save**.
+{{< note >}}
+Gesture recognizers can only be configured in the Gem's source at the moment. There is no UI available to modify them.
+{{< /note >}}
 
 ## Responding to Gesture Input
 

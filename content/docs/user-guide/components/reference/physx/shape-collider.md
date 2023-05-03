@@ -28,17 +28,17 @@ The PhysX Shape Collider requires one of the following Shape components:
 
 ## Use cases
 
-Although the PhysX Shape Collider is similar to the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component, you might prefer to use the PhysX Shape Collider in these scenarios:
+Although the PhysX Shape Collider is similar to the [PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/) component, you might prefer to use the PhysX Shape Collider in these scenarios:
 
 * The shape information defined by the Shape component is used elsewhere in code or script. For example, the shape defines another volume, such as an audio volume, and you want to keep the collider geometry and volume synchronized.
-* You want to use a Shape component such as Polygon Prism Shape that is not provided by PhysX Collider.
-* You have existing Shape components and don't want to migrate them to use PhysX Collider components.
+* You want to use a Shape component such as Polygon Prism Shape that is not provided by PhysX Primitive Collider.
+* You have existing Shape components and don't want to migrate them to use PhysX Primitive Collider components.
 
 ## Limitations
 
-The PhysX Shape Collider component has some limitations compared to the PhysX Collider component:
+The PhysX Shape Collider component has some limitations compared to the PhysX Primitive Collider component:
 
-* Only one Shape component can be used per entity, and so only one PhysX Shape Collider component is supported per entity. Any number of PhysX Collider components can also be used on the same entity, however.
+* Only one Shape component can be used per entity, and so only one PhysX Shape Collider component is supported per entity. Any number of PhysX Primitive Collider components can also be used on the same entity, however.
 * The position and rotation of the PhysX Shape Collider component can't be offset relative to the entity position.
 
 ## Properties 

@@ -10,13 +10,13 @@ You can use the **PhysX Force Region** component to specify a region that applie
 
 To create a force region, you must do the following:
 + Enable the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem for your game project
-+ Add a **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** component to the same entity
-+ For the **PhysX Collider** component, you must select the **Trigger** property for the force region to work
++ Add a **[PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/)** component to the same entity
++ For the **PhysX Primitive Collider** component, you must select the **Trigger** property for the force region to work
 
-The **PhysX Collider** component's shape, size, and orientation represent the region that applies force to incoming entities.
+The **PhysX Primitive Collider** component's shape, size, and orientation represent the region that applies force to incoming entities.
 
 {{< note >}}
-For the **Shape** property, if you select **PhysicsAsset**, you must select a **PxMesh** asset file. If the asset isn't a convex mesh (for example, it's a triangle mesh), the collider won't work as a trigger for collisions.
+A **PhysX Mesh Collider** component can also be used, which requires a **PxMesh** asset. But if the collider inside the asset isn't a convex mesh (for example, it's a triangle mesh), the collider won't work as a trigger for collisions.
 {{< /note >}}
 
 **Topics**
@@ -143,9 +143,11 @@ You can create a force region so that force applies to another entity that enter
 
 1. In the **Entity Inspector**, choose **Add Component** and select a **PhysX Force Region** component.
 
-1. Choose **Add Required Component** and select the **PhysX Collider** component.
+1. In the **PhysX Force Region** component, choose **Add Required Component** and select the **PhysX Primitive Collider** component.
 
-1. For the **PhysX Collider** component, do the following.
+1. In the **PhysX Primitive Collider** component, choose **Add Required Component** and select the **PhysX Static Rigid Body** component.
+
+1. For the **PhysX Primitive Collider** component, do the following.
 
    1. Select the **Trigger** property.
 
@@ -163,9 +165,9 @@ You can create a force region so that force applies to another entity that enter
 
       ![Direction of the PhysX Force Region.](/images/user-guide/component/physx/force-region-component-local-force.png)
 
-1. To collide an entity with the force region, create a dynamic entity named *Sphere* and attach the **PhysX Collider** and **PhysX Rigid Body Physics** components. These components enable the entity to interact with other PhysX entities.
+1. To collide an entity with the force region, create a dynamic entity named *Sphere* and attach the **PhysX Primitive Collider** and **PhysX Dynamic Rigid Body** components. These components enable the entity to interact with other PhysX entities.
 
-1. (Optional) Add a **Mesh** component and, for **Mesh asset**, select a mesh asset, such as a `primitive_sphere.cgf`.
+1. (Optional) Add a **Mesh** component and, for **Mesh asset**, select a mesh asset, such as a `_sphere_1x1.fbx`.
 
 1. Select and drag the **Sphere** entity so that it's above the force region.
 

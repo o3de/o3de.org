@@ -31,7 +31,33 @@ $ java -jar GameLiftLocal.jar -p 9080
 
 ```
 
-## 2. Start Server
+## 2. Set `sv_gameLiftEnabled` to `true`
+
+When you are ready to test with GameLift, opt-in by setting the `sv_gameLiftEnabled` CVAR to `true`. This CVAR is off by default to facilitate local testing prior to the integration of the GameLift Server SDK into your game server.
+
+You can set this value by creating a settings registry file named `commands.MyProject_serverlauncher.setreg` in the `MyProject/Registry` folder with the following contents:
+
+```json
+{
+    "Amazon":
+    {
+        "AzCore":
+        {
+            "Runtime":
+            {
+                "ConsoleCommands":
+                {
+                    "sv_gameLiftEnabled": "true"
+                } 
+            } 
+        } 
+    } 
+}
+```
+
+This lets your game server use GameLift local when running game or simulation mode in the Editor, or when running the server launcher directly (see next step).
+
+## 3. Start Server
 
 Make sure you have a cmake build target for your server, like YourProject.ServerLauncher. and build the application for your local testing.
 
@@ -43,7 +69,7 @@ $ bin\profile\YourProject.ServerLauncher.exe
 
 ```
 
-## 3. Start Game
+## 4. Start Game
 
 Make sure you have a cmake build target for your game, like YourProject.GameLauncher, and build the application for your local testing.
 
@@ -57,7 +83,7 @@ $ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "http://lo
 
 ```
 
-## 4. Test Game and Server
+## 5. Test Game and Server
 
 Testing steps and instructions really depend on your own project, but please make sure your testing can cover CreateSession, JoinSession, LeaveSession and DestroySession use case.
 

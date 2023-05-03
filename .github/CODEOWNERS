@@ -21,7 +21,7 @@
 /package.json @o3de/sig-docs-community-site-reviewers
 
 # Community content
-/content/blog/ @o3de/sig-docs-community-reviewers 
+/content/blog/ @o3de/sig-docs-community-reviewers
 /content/community/ @o3de/sig-docs-community-reviewers 
 /content/contribute/ @o3de/sig-docs-community-reviewers 
 /layouts/blog/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers 
@@ -51,9 +51,13 @@
 /layouts/docs/ @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 /layouts/partials/docs @o3de/sig-docs-community-reviewers @o3de/sig-docs-community-site-reviewers
 
+# Tech sig content
+/content/docs/engine-dev/ @o3de/Reviewers
+/static/images/engine-dev/ @o3de/Reviewers
+
 # Shared community and docs content
 /content/docs/contributing/ @o3de/sig-docs-community-reviewers
-/content/docs/contributing/to-code/ @o3de/sig-docs-community-reviewers @o3de/reviewers
+/content/docs/contributing/to-code/ @o3de/sig-docs-community-reviewers @o3de/Reviewers
 /static/images/contributing/ @o3de/sig-docs-community-reviewers 
 
 # Foundation-owned materials

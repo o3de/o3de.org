@@ -85,7 +85,7 @@ You can use character controller collider with the following shapes:
 + Capsule
 + Box
 
-Use the **Shape** property in the **Entity Inspector** to choose the desired shape. When you do so, the relevant dimensions are displayed for editing. The dimension settings are identical to the capsule and box options for the **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** component.
+Use the **Shape** property in the **Entity Inspector** to choose the desired shape. When you do so, the relevant dimensions are displayed for editing. The dimension settings are identical to the capsule and box options for the **[PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/)** component.
 
 ## Differences Between PhysX and Legacy Character Physics Components 
 

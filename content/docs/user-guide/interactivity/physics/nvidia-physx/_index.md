@@ -9,6 +9,7 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 
 **Topics**
 + [PhysX Gems](#physx-gems)
++ [PhysX version support](#physx-version-support)
 + [PhysX Components](#physx-components)
 + [PhysX Configuration](#physx-configuration)
 + [Physics Materials](#physics-materials)
@@ -37,8 +38,9 @@ The PhysX system uses the following Gems, which you can enable in **Project Mana
 ## PhysX Components 
 
 The **PhysX** gem has the following components, which you can [add](/docs/user-guide/components/reference/#adding-components-to-an-entity) to entities by using the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector/):
-+ **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** - Enables physics objects to collide with other physics objects. An entity that does not have a **PhysX Rigid Body Physics** component is a **static** collider, while an entity with the component is a **dynamic** collider.
-+ **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)** - Enables physics objects to collide with other physics objects, using geometry defined by a **[Shape component](/docs/user-guide/components/reference/shape/)**. An entity that does not have a **PhysX Rigid Body Physics** component is a **static** collider, while an entity with the component is a **dynamic** collider.
++ **[PhysX Primitive Collider](/docs/user-guide/components/reference/physx/collider/)** - Enables physics objects to collide with other physics objects, using primitive shapes.
++ **[PhysX Mesh Collider](/docs/user-guide/components/reference/physx/mesh-collider/)** - Enables physics objects to collide with other physics objects, using shapes defined by a PhysX asset.
++ **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)** - Enables physics objects to collide with other physics objects, using geometry defined by a **[Shape component](/docs/user-guide/components/reference/shape/)**.
 + **[PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/)** - Enables an entity to specify a region that applies physical force to entities. For each physics simulation frame, the component applies force to entities that are in the bounds of the region.
 + **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)** - Enables an entity to be simulated by physics. Rigid body mode can be **kinematic** or **dynamic**. Dynamic rigid bodies respond to collision events with other rigid bodies. Kinematic rigid bodies are not affected by outside forces and gravity; their motion is driven by scripting.
 + **[PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/)** - Implements basic character interactions with the physical world. For example, it can control interactions with slopes and steps, manage interactions with other characters, and prevent characters from walking through walls or passing through terrain.
@@ -47,6 +49,7 @@ The **PhysX** gem has the following components, which you can [add](/docs/user-g
 + **[PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/)** - Creates a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.
 + **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/)** - Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis.
 + **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/)** - Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.
++ **[PhysX Prismatic Joint](/docs/user-guide/components/reference/physx/prismatic-joint/)** - Creates a dynamic prismatic joint that constrains an entity to the joint, keeping the same rotation but allowing it to move freely along one axis.
 
 ## PhysX Configuration 
 

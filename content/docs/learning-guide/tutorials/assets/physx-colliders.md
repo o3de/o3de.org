@@ -118,9 +118,9 @@ To automatically assign meshes in the source asset to a PhysX mesh group, add th
 
     When you drag the asset into the viewport, O3DE automatically creates an entity with a **Mesh** component that references the mesh product asset. If the source asset contains materials that have been processed, the materials are automatically applied to the mesh. Note that in Asset Browser, the `.pxmesh` product asset has been generated and appears beneath the source asset.
 
-1. Add a PhysX Collider component to the entity. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Collider** from the component list. The component automatically detects the `.pxmesh` asset. The component's **Shape** property is set to `PhysicsAsset`, and the **PhysX Mesh** property automatically references the `.pxmesh` product asset.
+    When you drag the asset into the viewport, O3DE automatically creates an entity with a **Mesh** component that references the mesh product asset. If the source asset contains materials that have been processed, the materials are automatically applied to the mesh. Note that in Asset Browser, the `.pxmesh` product asset has been generated and appears beneath the source asset.
 
-    With just a PhysX Collider component, this is currently a static entity. PhysX objects can collide with this entity, but the entity doesn't move or react to PhysX collisions or forces.
+1. Add a PhysX Mesh Collider component to the entity. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Mesh Collider** from the component list. The component automatically detects the `.pxmesh` asset and assigns it to the **PhysX Mesh** property.
 
 1. Depending on the type of entity that you want, do one of the following:
 

@@ -14,7 +14,8 @@ Add the **PhysX Collider Surface Tag Emitter** component to an entity to enable 
 
 When applying PhysX Collider Surface Tag Emitter to an entity, the entity is required to have one of the following components:
 
-- [PhysX Collider](../physx/collider)
+- [PhysX Primitive Collider](../physx/collider)
+- [PhysX Mesh Collider](../physx/mesh-collider)
 - [PhysX Heightfield Collider](../physx/heightfield-collider)
 - [PhysX Shape Collider](../physx/shape-collider)
 

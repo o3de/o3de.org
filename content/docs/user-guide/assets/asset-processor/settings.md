@@ -25,7 +25,7 @@ When manually launching Asset Processor or Asset Processor Batch you can set the
 
 
 ## Advanced settings
-You can also control the behavior using the following command line options:
+You can also control the behavior using the following command line options.  See also [configuration](configuration.md) for details on Asset Processor configuration settings.
 
 | Setting                         | Description                                                                                                                                                                                                 | Default value                                                                                   |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|

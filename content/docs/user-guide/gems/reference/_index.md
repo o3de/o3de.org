@@ -151,6 +151,12 @@ toc: true
 | [Starting Point Camera](./rendering/starting-point-camera) | The Starting Point Camera Gem provides the behaviors used with the Camera Framework Gem to define a camera rig. |
 | [Video Playback Framework](./rendering/video-playback-framework) | The Video Playback Framework Gem provides the interface to play back video. |
 
+## Robotics
+
+| Gem | Description |
+| - | - |
+| [ROS&nbsp;2](./robotics/ros2.md) | The ROS 2 Gem provides integration with the [Robot Operating System (ROS) 2](https://docs.ros.org/en/rolling/index.html) library and enables the design of the simulation of robotics systems. |
+
 ## Script
 
 | Gem | Description |
