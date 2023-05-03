@@ -1,16 +1,52 @@
 var hierarchy =
 [
     [ "Handler", null, [
-      [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ]
+      [ "Vegetation::AreaBlenderComponent", "class_vegetation_1_1_area_blender_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::AreaDebugComponent", "class_vegetation_1_1_area_debug_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", [
+        [ "Vegetation::AreaBlenderComponent", "class_vegetation_1_1_area_blender_component.html", null ],
+        [ "Vegetation::BlockerComponent", "class_vegetation_1_1_blocker_component.html", null ],
+        [ "Vegetation::MeshBlockerComponent", "class_vegetation_1_1_mesh_blocker_component.html", null ],
+        [ "Vegetation::SpawnerComponent", "class_vegetation_1_1_spawner_component.html", null ]
+      ] ]
     ] ],
     [ "Handler", null, [
       [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ]
     ] ],
     [ "Handler", null, [
       [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ]
     ] ],
     [ "Component", null, [
-      [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ]
+      [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ],
+      [ "Vegetation::AreaDebugComponent", "class_vegetation_1_1_area_debug_component.html", null ],
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ],
+      [ "Vegetation::DebugComponent", "class_vegetation_1_1_debug_component.html", null ],
+      [ "Vegetation::DebugSystemComponent", "class_vegetation_1_1_debug_system_component.html", null ],
+      [ "Vegetation::DescriptorListCombinerComponent", "class_vegetation_1_1_descriptor_list_combiner_component.html", null ],
+      [ "Vegetation::DescriptorListComponent", "class_vegetation_1_1_descriptor_list_component.html", null ],
+      [ "Vegetation::DescriptorWeightSelectorComponent", "class_vegetation_1_1_descriptor_weight_selector_component.html", null ],
+      [ "Vegetation::DistanceBetweenFilterComponent", "class_vegetation_1_1_distance_between_filter_component.html", null ],
+      [ "Vegetation::DistributionFilterComponent", "class_vegetation_1_1_distribution_filter_component.html", null ],
+      [ "Vegetation::EditorVegetationSystemComponent", "class_vegetation_1_1_editor_vegetation_system_component.html", null ],
+      [ "Vegetation::InstanceSystemComponent", "class_vegetation_1_1_instance_system_component.html", null ],
+      [ "Vegetation::LevelSettingsComponent", "class_vegetation_1_1_level_settings_component.html", null ],
+      [ "Vegetation::PositionModifierComponent", "class_vegetation_1_1_position_modifier_component.html", null ],
+      [ "Vegetation::RotationModifierComponent", "class_vegetation_1_1_rotation_modifier_component.html", null ],
+      [ "Vegetation::ScaleModifierComponent", "class_vegetation_1_1_scale_modifier_component.html", null ],
+      [ "Vegetation::ShapeIntersectionFilterComponent", "class_vegetation_1_1_shape_intersection_filter_component.html", null ],
+      [ "Vegetation::SlopeAlignmentModifierComponent", "class_vegetation_1_1_slope_alignment_modifier_component.html", null ],
+      [ "Vegetation::SurfaceAltitudeFilterComponent", "class_vegetation_1_1_surface_altitude_filter_component.html", null ],
+      [ "Vegetation::SurfaceMaskDepthFilterComponent", "class_vegetation_1_1_surface_mask_depth_filter_component.html", null ],
+      [ "Vegetation::SurfaceMaskFilterComponent", "class_vegetation_1_1_surface_mask_filter_component.html", null ],
+      [ "Vegetation::SurfaceSlopeFilterComponent", "class_vegetation_1_1_surface_slope_filter_component.html", null ],
+      [ "Vegetation::VegetationSystemComponent", "class_vegetation_1_1_vegetation_system_component.html", null ]
     ] ],
     [ "ComponentBus", null, [
       [ "Vegetation::AreaConfigRequests", "class_vegetation_1_1_area_config_requests.html", [
@@ -44,9 +80,34 @@ var hierarchy =
       [ "Vegetation::SurfaceSlopeFilterRequests", "class_vegetation_1_1_surface_slope_filter_requests.html", null ]
     ] ],
     [ "ComponentConfig", null, [
-      [ "Vegetation::AreaConfig", "class_vegetation_1_1_area_config.html", null ]
+      [ "Vegetation::AreaConfig", "class_vegetation_1_1_area_config.html", [
+        [ "Vegetation::AreaBlenderConfig", "class_vegetation_1_1_area_blender_config.html", null ],
+        [ "Vegetation::BlockerConfig", "class_vegetation_1_1_blocker_config.html", null ],
+        [ "Vegetation::MeshBlockerConfig", "class_vegetation_1_1_mesh_blocker_config.html", null ],
+        [ "Vegetation::SpawnerConfig", "class_vegetation_1_1_spawner_config.html", null ]
+      ] ],
+      [ "Vegetation::AreaDebugConfig", "class_vegetation_1_1_area_debug_config.html", null ],
+      [ "Vegetation::AreaSystemConfig", "class_vegetation_1_1_area_system_config.html", null ],
+      [ "Vegetation::DebugConfig", "class_vegetation_1_1_debug_config.html", null ],
+      [ "Vegetation::DescriptorListCombinerConfig", "class_vegetation_1_1_descriptor_list_combiner_config.html", null ],
+      [ "Vegetation::DescriptorListConfig", "class_vegetation_1_1_descriptor_list_config.html", null ],
+      [ "Vegetation::DescriptorWeightSelectorConfig", "class_vegetation_1_1_descriptor_weight_selector_config.html", null ],
+      [ "Vegetation::DistanceBetweenFilterConfig", "class_vegetation_1_1_distance_between_filter_config.html", null ],
+      [ "Vegetation::DistributionFilterConfig", "class_vegetation_1_1_distribution_filter_config.html", null ],
+      [ "Vegetation::InstanceSystemConfig", "class_vegetation_1_1_instance_system_config.html", null ],
+      [ "Vegetation::LevelSettingsConfig", "class_vegetation_1_1_level_settings_config.html", null ],
+      [ "Vegetation::PositionModifierConfig", "class_vegetation_1_1_position_modifier_config.html", null ],
+      [ "Vegetation::RotationModifierConfig", "class_vegetation_1_1_rotation_modifier_config.html", null ],
+      [ "Vegetation::ScaleModifierConfig", "class_vegetation_1_1_scale_modifier_config.html", null ],
+      [ "Vegetation::ShapeIntersectionFilterConfig", "class_vegetation_1_1_shape_intersection_filter_config.html", null ],
+      [ "Vegetation::SlopeAlignmentModifierConfig", "class_vegetation_1_1_slope_alignment_modifier_config.html", null ],
+      [ "Vegetation::SurfaceAltitudeFilterConfig", "class_vegetation_1_1_surface_altitude_filter_config.html", null ],
+      [ "Vegetation::SurfaceMaskDepthFilterConfig", "class_vegetation_1_1_surface_mask_depth_filter_config.html", null ],
+      [ "Vegetation::SurfaceMaskFilterConfig", "class_vegetation_1_1_surface_mask_filter_config.html", null ],
+      [ "Vegetation::SurfaceSlopeFilterConfig", "class_vegetation_1_1_surface_slope_filter_config.html", null ]
     ] ],
     [ "MultiHandler", null, [
+      [ "Vegetation::DescriptorListComponent", "class_vegetation_1_1_descriptor_list_component.html", null ],
       [ "Vegetation::PrefabInstanceSpawner", "class_vegetation_1_1_prefab_instance_spawner.html", null ]
     ] ],
     [ "AssetData", null, [
@@ -62,26 +123,290 @@ var hierarchy =
       [ "Vegetation::InstanceSystemStatsRequests", "class_vegetation_1_1_instance_system_stats_requests.html", null ],
       [ "Vegetation::SystemConfigurationRequests", "class_vegetation_1_1_system_configuration_requests.html", null ]
     ] ],
+    [ "Module", null, [
+      [ "Vegetation::VegetationModule", "class_vegetation_1_1_vegetation_module.html", [
+        [ "Vegetation::VegetationEditorModule", "class_vegetation_1_1_vegetation_editor_module.html", null ]
+      ] ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::MeshBlockerComponent", "class_vegetation_1_1_mesh_blocker_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ],
+      [ "Vegetation::InstanceSystemComponent", "class_vegetation_1_1_instance_system_component.html", null ],
+      [ "Vegetation::MeshBlockerComponent", "class_vegetation_1_1_mesh_blocker_component.html", null ]
+    ] ],
     [ "Handler", null, [
       [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ]
     ] ],
     [ "Handler", null, [
+      [ "Vegetation::DebugComponent", "class_vegetation_1_1_debug_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DebugComponent", "class_vegetation_1_1_debug_component.html", null ],
+      [ "Vegetation::EditorMeshBlockerComponent", "class_vegetation_1_1_editor_mesh_blocker_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::EditorAreaComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_area_component_base.html", [
+        [ "Vegetation::EditorAreaBlenderComponent", "class_vegetation_1_1_editor_area_blender_component.html", null ]
+      ] ],
+      [ "Vegetation::EditorAreaComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", [
+        [ "Vegetation::EditorBlockerComponent", "class_vegetation_1_1_editor_blocker_component.html", null ]
+      ] ],
+      [ "Vegetation::EditorAreaComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", [
+        [ "Vegetation::EditorMeshBlockerComponent", "class_vegetation_1_1_editor_mesh_blocker_component.html", null ]
+      ] ],
+      [ "Vegetation::EditorAreaComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_area_component_base.html", [
+        [ "Vegetation::EditorSpawnerComponent", "class_vegetation_1_1_editor_spawner_component.html", null ]
+      ] ],
       [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      [ "Vegetation::BlockerComponent", "class_vegetation_1_1_blocker_component.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ],
-      [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ]
     ] ],
-    [ "EditorWrappedComponentBase", null, [
+    [ "Handler", null, [
+      [ "Vegetation::DebugComponent", "class_vegetation_1_1_debug_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DebugComponent", "class_vegetation_1_1_debug_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DebugSystemComponent", "class_vegetation_1_1_debug_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DescriptorListCombinerComponent", "class_vegetation_1_1_descriptor_list_combiner_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DescriptorListComponent", "class_vegetation_1_1_descriptor_list_component.html", null ]
+    ] ],
+    [ "MultiHandler", null, [
+      [ "Vegetation::DescriptorListComponent", "class_vegetation_1_1_descriptor_list_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DescriptorListCombinerComponent", "class_vegetation_1_1_descriptor_list_combiner_component.html", null ],
+      [ "Vegetation::DescriptorListComponent", "class_vegetation_1_1_descriptor_list_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DescriptorWeightSelectorComponent", "class_vegetation_1_1_descriptor_weight_selector_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DescriptorWeightSelectorComponent", "class_vegetation_1_1_descriptor_weight_selector_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DistanceBetweenFilterComponent", "class_vegetation_1_1_distance_between_filter_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DistributionFilterComponent", "class_vegetation_1_1_distribution_filter_component.html", null ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< AreaDebugComponent, AreaDebugConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< AreaDebugComponent, AreaDebugConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaDebugComponent", "class_vegetation_1_1_editor_area_debug_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< BlockerComponent, BlockerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DebugComponent, DebugConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< DebugComponent, DebugConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorDebugComponent", "class_vegetation_1_1_editor_debug_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorListCombinerComponent, DescriptorListCombinerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< DescriptorListCombinerComponent, DescriptorListCombinerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorDescriptorListCombinerComponent", "class_vegetation_1_1_editor_descriptor_list_combiner_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorListComponent, DescriptorListConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< DescriptorListComponent, DescriptorListConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorDescriptorListComponent", "class_vegetation_1_1_editor_descriptor_list_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorWeightSelectorComponent, DescriptorWeightSelectorConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< DescriptorWeightSelectorComponent, DescriptorWeightSelectorConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorDescriptorWeightSelectorComponent", "class_vegetation_1_1_editor_descriptor_weight_selector_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DistanceBetweenFilterComponent, DistanceBetweenFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< DistanceBetweenFilterComponent, DistanceBetweenFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorDistanceBetweenFilterComponent", "class_vegetation_1_1_editor_distance_between_filter_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DistributionFilterComponent, DistributionFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< DistributionFilterComponent, DistributionFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorDistributionFilterComponent", "class_vegetation_1_1_editor_distribution_filter_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< LevelSettingsComponent, LevelSettingsConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorLevelSettingsComponent", "class_vegetation_1_1_editor_level_settings_component.html", null ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< PositionModifierComponent, PositionModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< PositionModifierComponent, PositionModifierConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorPositionModifierComponent", "class_vegetation_1_1_editor_position_modifier_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< RotationModifierComponent, RotationModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< RotationModifierComponent, RotationModifierConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorRotationModifierComponent", "class_vegetation_1_1_editor_rotation_modifier_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< ScaleModifierComponent, ScaleModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< ScaleModifierComponent, ScaleModifierConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorScaleModifierComponent", "class_vegetation_1_1_editor_scale_modifier_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< ShapeIntersectionFilterComponent, ShapeIntersectionFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< ShapeIntersectionFilterComponent, ShapeIntersectionFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorShapeIntersectionFilterComponent", "class_vegetation_1_1_editor_shape_intersection_filter_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SlopeAlignmentModifierComponent, SlopeAlignmentModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< SlopeAlignmentModifierComponent, SlopeAlignmentModifierConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorSlopeAlignmentModifierComponent", "class_vegetation_1_1_editor_slope_alignment_modifier_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SpawnerComponent, SpawnerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceAltitudeFilterComponent, SurfaceAltitudeFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< SurfaceAltitudeFilterComponent, SurfaceAltitudeFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorSurfaceAltitudeFilterComponent", "class_vegetation_1_1_editor_surface_altitude_filter_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceMaskDepthFilterComponent, SurfaceMaskDepthFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< SurfaceMaskDepthFilterComponent, SurfaceMaskDepthFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorSurfaceMaskDepthFilterComponent", "class_vegetation_1_1_editor_surface_mask_depth_filter_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceMaskFilterComponent, SurfaceMaskFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< SurfaceMaskFilterComponent, SurfaceMaskFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorSurfaceMaskFilterComponent", "class_vegetation_1_1_editor_surface_mask_filter_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceSlopeFilterComponent, SurfaceSlopeFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< SurfaceSlopeFilterComponent, SurfaceSlopeFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorSurfaceSlopeFilterComponent", "class_vegetation_1_1_editor_surface_slope_filter_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
       ] ]
     ] ],
     [ "Handler", null, [
+      [ "Vegetation::DistanceBetweenFilterComponent", "class_vegetation_1_1_distance_between_filter_component.html", null ],
+      [ "Vegetation::DistributionFilterComponent", "class_vegetation_1_1_distribution_filter_component.html", null ],
+      [ "Vegetation::ShapeIntersectionFilterComponent", "class_vegetation_1_1_shape_intersection_filter_component.html", null ],
+      [ "Vegetation::SurfaceAltitudeFilterComponent", "class_vegetation_1_1_surface_altitude_filter_component.html", null ],
+      [ "Vegetation::SurfaceMaskDepthFilterComponent", "class_vegetation_1_1_surface_mask_depth_filter_component.html", null ],
+      [ "Vegetation::SurfaceMaskFilterComponent", "class_vegetation_1_1_surface_mask_filter_component.html", null ],
+      [ "Vegetation::SurfaceSlopeFilterComponent", "class_vegetation_1_1_surface_slope_filter_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::EditorAreaComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
+      [ "Vegetation::EditorAreaComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
+      [ "Vegetation::EditorAreaComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
+      [ "Vegetation::EditorAreaComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
+      [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::InstanceSystemComponent", "class_vegetation_1_1_instance_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::InstanceSystemComponent", "class_vegetation_1_1_instance_system_component.html", null ]
+    ] ],
+    [ "ISystemEventListener", null, [
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::LevelSettingsComponent", "class_vegetation_1_1_level_settings_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::EditorAreaComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
+      [ "Vegetation::EditorAreaComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
+      [ "Vegetation::EditorAreaComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
+      [ "Vegetation::EditorAreaComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
+      [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ],
+      [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
+    [ "Handler", null, [
       [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::MeshBlockerComponent", "class_vegetation_1_1_mesh_blocker_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::PositionModifierComponent", "class_vegetation_1_1_position_modifier_component.html", null ],
+      [ "Vegetation::RotationModifierComponent", "class_vegetation_1_1_rotation_modifier_component.html", null ],
+      [ "Vegetation::ScaleModifierComponent", "class_vegetation_1_1_scale_modifier_component.html", null ],
+      [ "Vegetation::SlopeAlignmentModifierComponent", "class_vegetation_1_1_slope_alignment_modifier_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::PositionModifierComponent", "class_vegetation_1_1_position_modifier_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::RotationModifierComponent", "class_vegetation_1_1_rotation_modifier_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::ScaleModifierComponent", "class_vegetation_1_1_scale_modifier_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::ShapeIntersectionFilterComponent", "class_vegetation_1_1_shape_intersection_filter_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::SlopeAlignmentModifierComponent", "class_vegetation_1_1_slope_alignment_modifier_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::SpawnerComponent", "class_vegetation_1_1_spawner_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::SurfaceAltitudeFilterComponent", "class_vegetation_1_1_surface_altitude_filter_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ],
+      [ "Vegetation::MeshBlockerComponent", "class_vegetation_1_1_mesh_blocker_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::DescriptorListCombinerComponent", "class_vegetation_1_1_descriptor_list_combiner_component.html", null ],
+      [ "Vegetation::DescriptorListComponent", "class_vegetation_1_1_descriptor_list_component.html", null ],
+      [ "Vegetation::SurfaceMaskFilterComponent", "class_vegetation_1_1_surface_mask_filter_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::SurfaceMaskDepthFilterComponent", "class_vegetation_1_1_surface_mask_depth_filter_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::SurfaceMaskFilterComponent", "class_vegetation_1_1_surface_mask_filter_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::SurfaceSlopeFilterComponent", "class_vegetation_1_1_surface_slope_filter_component.html", null ]
+    ] ],
+    [ "Handler", null, [
+      [ "Vegetation::AreaSystemComponent", "class_vegetation_1_1_area_system_component.html", null ],
+      [ "Vegetation::DebugComponent", "class_vegetation_1_1_debug_component.html", null ],
+      [ "Vegetation::InstanceSystemComponent", "class_vegetation_1_1_instance_system_component.html", null ]
     ] ],
     [ "Vegetation::AreaDebugDisplayData", "struct_vegetation_1_1_area_debug_display_data.html", null ],
     [ "Vegetation::ClaimContext", "struct_vegetation_1_1_claim_context.html", null ],

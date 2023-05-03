@@ -6,8 +6,9 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ]
   ] ]
@@ -15,7 +16,28 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"class_graph_canvas_1_1_asset_editor_settings_requests.html#ae89934f08d2b50b5a54307dc885ec93c",
+"class_graph_canvas_1_1_boolean_node_property_display.html#a30608a1fcfbb4384ea899c517263404a",
+"class_graph_canvas_1_1_comment_requests.html",
+"class_graph_canvas_1_1_connection_requests.html#acba42d4a7741329507cd7463dac543c8",
+"class_graph_canvas_1_1_data_slot_component.html#a6adab74edce70d22168fcf7c740f8fb5",
+"class_graph_canvas_1_1_editor_context_menu.html#ae6e5d3123191ba0a61bcade6eb426b8f",
+"class_graph_canvas_1_1_general_node_title_component.html#a3f156e797b57d4edb7daff237a9ec1aa",
+"class_graph_canvas_1_1_graph_canvas_combo_box_filter_proxy_model.html#a6bbc52b0473908b0994db140f91983dc",
+"class_graph_canvas_1_1_graph_canvas_requests.html#a469ed38c2549f8c4723990dc7c2b547a",
+"class_graph_canvas_1_1_graph_utils.html#a5bedc8682d1c69a17199ab54142e8db3ab1ca34f82e83c52b010f86955f264e05",
+"class_graph_canvas_1_1_mini_map_graphics_view.html#ad286f51155dc4d573a347980266c8e14",
+"class_graph_canvas_1_1_node_group_frame_component.html#aef3150ef194aeccb84c0ab6ca211f36e",
+"class_graph_canvas_1_1_node_palette_tree_item.html#a2353ab5ee1a86fee05514cfdce988857",
+"class_graph_canvas_1_1_particle_configuration.html#a0fa93c2b2951e98aff06f2bb2cb20c84",
+"class_graph_canvas_1_1_root_graphics_item.html#aed9959023490bdd637ca89d289124b90",
+"class_graph_canvas_1_1_scene_member_requests.html#a8de8c65d10c02672fa7be44ec10d9e3a",
+"class_graph_canvas_1_1_slot_component.html#ac2edbe76c8cc5f982821f605701d1c26",
+"class_graph_canvas_1_1_style_manager.html#a7a0e3bbc969c4caf348be6d20e2038f4",
+"class_graph_canvas_1_1_styling_component.html#a48eff022abc27a7cb9c012de3c7c3e81",
+"class_graph_canvas_1_1_wrapper_node_layout_component.html#a8e690f4b0ec806e1cd447b70f0e0fe78",
+"struct_graph_canvas_1_1_slot_group_configuration.html#a42de9e805cb1771a476abb04488a6e17"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

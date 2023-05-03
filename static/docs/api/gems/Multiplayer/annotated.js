@@ -2,6 +2,9 @@ var annotated =
 [
     [ "AZStd", "namespace_a_z_std.html", "namespace_a_z_std" ],
     [ "Multiplayer", null, [
+      [ "Automation", null, [
+        [ "MultiplayerEditorAutomationHandler", "class_multiplayer_1_1_automation_1_1_multiplayer_editor_automation_handler.html", "class_multiplayer_1_1_automation_1_1_multiplayer_editor_automation_handler" ]
+      ] ],
       [ "ISimplePlayerSpawner", "class_multiplayer_1_1_i_simple_player_spawner.html", "class_multiplayer_1_1_i_simple_player_spawner" ],
       [ "LocalPredictionPlayerInputComponent", "class_multiplayer_1_1_local_prediction_player_input_component.html", "class_multiplayer_1_1_local_prediction_player_input_component" ],
       [ "LocalPredictionPlayerInputComponentController", "class_multiplayer_1_1_local_prediction_player_input_component_controller.html", "class_multiplayer_1_1_local_prediction_player_input_component_controller" ],
@@ -91,6 +94,47 @@ var annotated =
       [ "CreateSessionRequest", "struct_multiplayer_1_1_create_session_request.html", "struct_multiplayer_1_1_create_session_request" ],
       [ "SearchSessionsRequest", "struct_multiplayer_1_1_search_sessions_request.html", "struct_multiplayer_1_1_search_sessions_request" ],
       [ "SearchSessionsResponse", "struct_multiplayer_1_1_search_sessions_response.html", "struct_multiplayer_1_1_search_sessions_response" ],
-      [ "JoinSessionRequest", "struct_multiplayer_1_1_join_session_request.html", "struct_multiplayer_1_1_join_session_request" ]
+      [ "JoinSessionRequest", "struct_multiplayer_1_1_join_session_request.html", "struct_multiplayer_1_1_join_session_request" ],
+      [ "ClientToServerConnectionData", "class_multiplayer_1_1_client_to_server_connection_data.html", "class_multiplayer_1_1_client_to_server_connection_data" ],
+      [ "ServerToClientConnectionData", "class_multiplayer_1_1_server_to_client_connection_data.html", "class_multiplayer_1_1_server_to_client_connection_data" ],
+      [ "MultiplayerConnectionViewportMessageSystemComponent", "class_multiplayer_1_1_multiplayer_connection_viewport_message_system_component.html", "class_multiplayer_1_1_multiplayer_connection_viewport_message_system_component" ],
+      [ "AuditTrailInput", "struct_multiplayer_1_1_audit_trail_input.html", "struct_multiplayer_1_1_audit_trail_input" ],
+      [ "MultiplayerDebugAuditTrail", "class_multiplayer_1_1_multiplayer_debug_audit_trail.html", "class_multiplayer_1_1_multiplayer_debug_audit_trail" ],
+      [ "MultiplayerDebugByteReporter", "class_multiplayer_1_1_multiplayer_debug_byte_reporter.html", "class_multiplayer_1_1_multiplayer_debug_byte_reporter" ],
+      [ "MultiplayerDebugComponentReporter", "class_multiplayer_1_1_multiplayer_debug_component_reporter.html", "class_multiplayer_1_1_multiplayer_debug_component_reporter" ],
+      [ "MultiplayerDebugEntityReporter", "class_multiplayer_1_1_multiplayer_debug_entity_reporter.html", "class_multiplayer_1_1_multiplayer_debug_entity_reporter" ],
+      [ "MultiplayerDebugHierarchyReporter", "class_multiplayer_1_1_multiplayer_debug_hierarchy_reporter.html", "class_multiplayer_1_1_multiplayer_debug_hierarchy_reporter" ],
+      [ "MultiplayerDebugModule", "class_multiplayer_1_1_multiplayer_debug_module.html", "class_multiplayer_1_1_multiplayer_debug_module" ],
+      [ "MultiplayerDebugMultiplayerMetrics", "class_multiplayer_1_1_multiplayer_debug_multiplayer_metrics.html", "class_multiplayer_1_1_multiplayer_debug_multiplayer_metrics" ],
+      [ "MultiplayerDebugNetworkMetrics", "class_multiplayer_1_1_multiplayer_debug_network_metrics.html", null ],
+      [ "MultiplayerDebugPerEntityReporter", "class_multiplayer_1_1_multiplayer_debug_per_entity_reporter.html", "class_multiplayer_1_1_multiplayer_debug_per_entity_reporter" ],
+      [ "MultiplayerDebugSystemComponent", "class_multiplayer_1_1_multiplayer_debug_system_component.html", "class_multiplayer_1_1_multiplayer_debug_system_component" ],
+      [ "MultiplayerEditorConnection", "class_multiplayer_1_1_multiplayer_editor_connection.html", "class_multiplayer_1_1_multiplayer_editor_connection" ],
+      [ "MultiplayerEditorModule", "class_multiplayer_1_1_multiplayer_editor_module.html", "class_multiplayer_1_1_multiplayer_editor_module" ],
+      [ "PythonEditorFuncs", "class_multiplayer_1_1_python_editor_funcs.html", "class_multiplayer_1_1_python_editor_funcs" ],
+      [ "MultiplayerEditorSystemComponent", "class_multiplayer_1_1_multiplayer_editor_system_component.html", "class_multiplayer_1_1_multiplayer_editor_system_component" ],
+      [ "FullOwnershipEntityDomain", "class_multiplayer_1_1_full_ownership_entity_domain.html", "class_multiplayer_1_1_full_ownership_entity_domain" ],
+      [ "NullEntityDomain", "class_multiplayer_1_1_null_entity_domain.html", "class_multiplayer_1_1_null_entity_domain" ],
+      [ "MultiplayerModule", "class_multiplayer_1_1_multiplayer_module.html", "class_multiplayer_1_1_multiplayer_module" ],
+      [ "MultiplayerStatSystemComponent", "class_multiplayer_1_1_multiplayer_stat_system_component.html", "class_multiplayer_1_1_multiplayer_stat_system_component" ],
+      [ "MultiplayerSystemComponent", "class_multiplayer_1_1_multiplayer_system_component.html", "class_multiplayer_1_1_multiplayer_system_component" ],
+      [ "MultiplayerToolsSystemComponent", "class_multiplayer_1_1_multiplayer_tools_system_component.html", "class_multiplayer_1_1_multiplayer_tools_system_component" ],
+      [ "PropertyPublisher", "class_multiplayer_1_1_property_publisher.html", "class_multiplayer_1_1_property_publisher" ],
+      [ "PropertySubscriber", "class_multiplayer_1_1_property_subscriber.html", "class_multiplayer_1_1_property_subscriber" ],
+      [ "NetworkEntityAuthorityTracker", "class_multiplayer_1_1_network_entity_authority_tracker.html", "class_multiplayer_1_1_network_entity_authority_tracker" ],
+      [ "NetworkEntityManager", "class_multiplayer_1_1_network_entity_manager.html", "class_multiplayer_1_1_network_entity_manager" ],
+      [ "NetworkEntityTracker", "class_multiplayer_1_1_network_entity_tracker.html", "class_multiplayer_1_1_network_entity_tracker" ],
+      [ "NetworkSpawnableLibrary", "class_multiplayer_1_1_network_spawnable_library.html", "class_multiplayer_1_1_network_spawnable_library" ],
+      [ "NetworkTime", "class_multiplayer_1_1_network_time.html", "class_multiplayer_1_1_network_time" ],
+      [ "NetworkPrefabProcessor", "class_multiplayer_1_1_network_prefab_processor.html", "class_multiplayer_1_1_network_prefab_processor" ],
+      [ "NullReplicationWindow", "class_multiplayer_1_1_null_replication_window.html", "class_multiplayer_1_1_null_replication_window" ],
+      [ "ServerToClientReplicationWindow", "class_multiplayer_1_1_server_to_client_replication_window.html", "class_multiplayer_1_1_server_to_client_replication_window" ]
+    ] ],
+    [ "ScriptCanvasMultiplayer", null, [
+      [ "GatherEntitiesByComponentAabb", "class_script_canvas_multiplayer_1_1_gather_entities_by_component_aabb.html", null ],
+      [ "GatherEntitiesByComponentSphere", "class_script_canvas_multiplayer_1_1_gather_entities_by_component_sphere.html", null ],
+      [ "IfAgentTypeNodeable", "class_script_canvas_multiplayer_1_1_if_agent_type_nodeable.html", null ],
+      [ "IfNetRoleNodeable", "class_script_canvas_multiplayer_1_1_if_net_role_nodeable.html", null ],
+      [ "ScriptCanvasMultiplayerSystemComponent", "class_script_canvas_multiplayer_1_1_script_canvas_multiplayer_system_component.html", "class_script_canvas_multiplayer_1_1_script_canvas_multiplayer_system_component" ]
     ] ]
 ];

@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -108,6 +108,13 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_system.html#ac2570e3a7d425d46a5fcea599276ec84">AZ::RPI::ImageSystem</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_system_interface.html#ac4b53a63d0dc3248161b2275a04012a7">AZ::RPI::ImageSystemInterface</a>
 </li>
+<li>RegisterBuilder()
+: <a class="el" href="class_a_z_1_1_precompiled_shader_builder.html#a04c7b6661397e0f8e8d5fa45c49516ff">AZ::PrecompiledShaderBuilder</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_builder.html#acb56f77fec3e503af3b23fcbf818d5e7">AZ::RPI::MaterialBuilder</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_builder.html#acfe893cd87bca8523fc679d047ef6941">AZ::RPI::MaterialTypeBuilder</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_builder.html#a6dd91aff9d7c9d7938a3e835699a7f20">AZ::RPI::PassBuilder</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_resource_pool_builder.html#ad5b7a8f79405b88f3e6c7eac42afbd45">AZ::RPI::ResourcePoolBuilder</a>
+</li>
 <li>RegisterConfig()
 : <a class="el" href="class_atom_tools_framework_1_1_dynamic_node_manager_requests.html#a865512af1b3b530e344fc4bfeb2334a5">AtomToolsFramework::DynamicNodeManagerRequests</a>
 </li>
@@ -161,12 +168,17 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 <li>Release()
 : <a class="el" href="class_a_z_1_1_render_1_1_multi_sparse_vector.html#ae53a7773f6585062648ee0da5e60cecb">AZ::Render::MultiSparseVector&lt; Ts &gt;</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_sparse_vector.html#ab50513effc3992cd42465b22a7cc2ad5">AZ::Render::SparseVector&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_dynamic_primitive_processor.html#a36bc7bf423e63975340dcfa32e93e716">AZ::Render::DynamicPrimitiveProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_fixed_shape_processor.html#ab1a626dcbf2f62627633c69454e1d855">AZ::Render::FixedShapeProcessor</a>
 </li>
 <li>release()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_object.html#af79593e4d781972fa270f4940cead50f">AZ::RHI::Object</a>
 </li>
 <li>ReleaseDecal()
 : <a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#ac1bc01d93a79dd64a4ff3f7ee4f59b44">AZ::Render::DecalFeatureProcessorInterface</a>
+</li>
+<li>ReleaseDescriptorTable()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_descriptor_context.html#a2888ef0cd54589472f483574df32fb5f">AZ::DX12::DescriptorContext</a>
 </li>
 <li>ReleaseDrawQueueForView()
 : <a class="el" href="class_a_z_1_1_render_1_1_aux_geom_feature_processor.html#a954fe0da1e06b3718378b83ac11dc357">AZ::Render::AuxGeomFeatureProcessor</a>
@@ -175,18 +187,29 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 <li>ReleaseEmptyPages()
 : <a class="el" href="class_a_z_1_1_stable_dynamic_array.html#ad7c4c3a6ed954b5362138530c4fe987b">AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt;</a>
 </li>
+<li>ReleaseHandle()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_descriptor_pool.html#af84dac25af555c26e22e59ae0d8a18a0">AZ::DX12::DescriptorPool</a>
+</li>
 <li>ReleaseLibrary()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#ab83879909e07ccc6f513f58ddc641823">AZ::RHI::PipelineStateCache</a>
 </li>
 <li>ReleaseLight()
-: <a class="el" href="class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html#a7057c3a674603b5c5d48b8ed6bf04037">AZ::Render::CapsuleLightFeatureProcessorInterface</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html#aa096150247fc14f4ffa427054a163af3">AZ::Render::SimplePointLightFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#ac40a45fbbfb2663d1aa3f4d141b0e9ea">AZ::Render::SimpleSpotLightFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_capsule_light_feature_processor.html#ae8ef5542f5e00d8c07eb6bfd046108b9">AZ::Render::CapsuleLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_directional_light_feature_processor.html#a2b4c7e51bec00ad609c5a7dbcdf2cafd">AZ::Render::DirectionalLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_disk_light_feature_processor.html#ad18fe92e9f756ad2cfee5e2efa564491">AZ::Render::DiskLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor.html#afe01ed52ca397e2db2714b0d79d6f668">AZ::Render::PointLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#a2c8010c1a837b1db419f26684de6ae34">AZ::Render::PolygonLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a41dd2b287b9023ed92ef1b39c9f5ee01">AZ::Render::QuadLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_simple_point_light_feature_processor.html#a68efd841f2b04cb713b640cd2cc2620f">AZ::Render::SimplePointLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_simple_spot_light_feature_processor.html#ad5dc4c92970613d06b58e22d64da9a7c">AZ::Render::SimpleSpotLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html#a7057c3a674603b5c5d48b8ed6bf04037">AZ::Render::CapsuleLightFeatureProcessorInterface</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a4dd9b8faf22bd039ccad3cc17729f457">AZ::Render::DirectionalLightFeatureProcessorInterface</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a950b816083579518261f867c7d9c19cb">AZ::Render::DiskLightFeatureProcessorInterface</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a5df87ca1a7e87dfb379409f85eb6cf04">AZ::Render::PointLightFeatureProcessorInterface</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_polygon_light_feature_processor_interface.html#af71124d59b904d61ce22cbb167bdd267">AZ::Render::PolygonLightFeatureProcessorInterface</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a95c1831136b1e98faf4a4225be2fb996">AZ::Render::QuadLightFeatureProcessorInterface</a>
-, <a class="el" href="class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html#aa096150247fc14f4ffa427054a163af3">AZ::Render::SimplePointLightFeatureProcessorInterface</a>
-, <a class="el" href="class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#ac40a45fbbfb2663d1aa3f4d141b0e9ea">AZ::Render::SimpleSpotLightFeatureProcessorInterface</a>
 </li>
 <li>ReleaseMesh()
 : <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#aeb4377c3ec4c457f7eb113cd1d5312e4">AZ::Render::MeshFeatureProcessor</a>
@@ -198,16 +221,26 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 </li>
 <li>ReleaseShadow()
 : <a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#a35499bd209563713c152b5d62d8c0736">AZ::Render::ProjectedShadowFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor.html#a09a291794f50a4e5d759cd5e9ae061f6">AZ::Render::ProjectedShadowFeatureProcessor</a>
 </li>
 <li>ReleaseSkinnedMesh()
 : <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html#aaf51052459c9e9985b5630bdb60b78c6">AZ::Render::SkinnedMeshFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#ab114fb4f67ead31824b0dd37f81975f0">AZ::Render::SkinnedMeshFeatureProcessor</a>
+</li>
+<li>ReleaseTable()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a6c8b9da560da074e344992f8dfe1d51b">AZ::DX12::DescriptorPool</a>
+, <a class="el" href="class_a_z_1_1_d_x12_1_1_descriptor_pool_shader_visible_cbv_srv_uav.html#ae1e98630c098b3cc3e8fc945411d7277">AZ::DX12::DescriptorPoolShaderVisibleCbvSrvUav</a>
 </li>
 <li>ReleaseTag()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html#a2556eac5ba6bc539dadafc3969da8840">AZ::RHI::TagRegistry&lt; IndexType, MaxTagCount &gt;</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_bit_registry.html#a6c3c831c2a62c8fa788a85f89de0eff5">AZ::RHI::TagBitRegistry&lt; IndexType &gt;</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_bit_registry.html#a6c3c831c2a62c8fa788a85f89de0eff5">AZ::RHI::TagBitRegistry&lt; IndexType &gt;</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html#a2556eac5ba6bc539dadafc3969da8840">AZ::RHI::TagRegistry&lt; IndexType, MaxTagCount &gt;</a>
 </li>
 <li>ReloadModel()
 : <a class="el" href="class_a_z_1_1_render_1_1_model_reloader_system_interface.html#ad41d8803991e4fd339305a98488a0b6e">AZ::Render::ModelReloaderSystemInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_model_reloader_system.html#abc4b4d2cc498c74265ef174c80ac84be">AZ::Render::ModelReloaderSystem</a>
+</li>
+<li>ReloadPreset()
+: <a class="el" href="class_image_processing_atom_1_1_builder_setting_manager.html#a9357e3ab180e19ff2c05cff8fb25e340">ImageProcessingAtom::BuilderSettingManager</a>
 </li>
 <li>RemoveCameras()
 : <a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#ac371b98115faeb5ece4cbd8bf334b966">AtomToolsFramework::ModularViewportCameraControllerRequests</a>
@@ -236,6 +269,9 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 <li>RemoveIndex()
 : <a class="el" href="class_a_z_1_1_render_1_1_indexed_data_vector.html#af060af92cba8a55a934acbbc26b7ef99">AZ::Render::IndexedDataVector&lt; DataType, IndexType &gt;</a>
 </li>
+<li>RemoveMesh()
+: <a class="el" href="class_a_z_1_1_render_1_1_ray_tracing_feature_processor.html#a8d50562fb742710ffb703e8af30518a7">AZ::Render::RayTracingFeatureProcessor</a>
+</li>
 <li>RemovePassFromLibrary()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_library.html#a075a5b7e4374b69143bcd480e84da1e1">AZ::RPI::PassLibrary</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a5f75ac99338292acf6296c9f26d91a69">AZ::RPI::PassSystem</a>
@@ -246,15 +282,20 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a4b6aa6edde175fa9ce7e136f922e3651">AZ::RPI::PassSystem</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#aa6ffd56ef8d513e99c85e915dbf6b616">AZ::RPI::PassSystemInterface</a>
 </li>
+<li>RemovePredefinedMacros()
+: <a class="el" href="struct_a_z_1_1_shader_builder_1_1_preprocessor_options.html#af143ae287e98e3f933872f8728cfcd28">AZ::ShaderBuilder::PreprocessorOptions</a>
+</li>
 <li>RemoveReflectionProbe()
 : <a class="el" href="class_a_z_1_1_render_1_1_reflection_probe_feature_processor_interface.html#a08bfe34c8984f4e10eb46693abad0dfb">AZ::Render::ReflectionProbeFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html#a97304c01d5c9a4200266f4f6572ebe05">AZ::Render::ReflectionProbeFeatureProcessor</a>
 </li>
 <li>RemoveRenderPipeline()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#acf4956e0a92f497a05e921c520ae30cb">AZ::RPI::PassSystem</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a67b1127a8eca5b472e54f340eeee658a">AZ::RPI::PassSystemInterface</a>
 </li>
 <li>RemoveSettingsInterface()
-: <a class="el" href="class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html#af062b9695ccfc9433dc672b2f35e20b6">AZ::Render::PostProcessFeatureProcessorInterface</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_post_process_feature_processor.html#a36d70f3bf771a5c6e8b8be3a6fd6683c">AZ::Render::PostProcessFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html#af062b9695ccfc9433dc672b2f35e20b6">AZ::Render::PostProcessFeatureProcessorInterface</a>
 </li>
 <li>RenameViewportContext()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#a65cf117e709c48f37f4e45207c5aaf6a">AZ::RPI::ViewportContextRequestsInterface</a>
@@ -262,9 +303,25 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 </li>
 <li>Render()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#abce954571fd7c4b49c35a4c355c8597d">AZ::RPI::FeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html#a53cfda5d83d925bae33f7cad6bd77e62">AZ::Render::DecalTextureArrayFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_quad_light_feature_processor.html#aab7a96c17f1f93471e791edebc1c18f2">AZ::Render::QuadLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_capsule_light_feature_processor.html#a2e8dea868ded83a3afb7ffc04bebfd1c">AZ::Render::CapsuleLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_directional_light_feature_processor.html#a6601ddbdd2d9bf8bd2c91dc2497381bc">AZ::Render::DirectionalLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_disk_light_feature_processor.html#aba8ed963e9df1fff96f2cfdb512a6b7f">AZ::Render::DiskLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_point_light_feature_processor.html#ac98fab5b6da312fa2575aeafbeece8e1">AZ::Render::PointLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#aff2e3a657d549147ba8cd2fe28312987">AZ::Render::PolygonLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_simple_point_light_feature_processor.html#aa4e3fd553163e102226f49699b763232">AZ::Render::SimplePointLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_simple_spot_light_feature_processor.html#a965265c7d23a4b11a4b431a3fe0287b7">AZ::Render::SimpleSpotLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_render_debug_feature_processor.html#ad6ae01e7f6e559a6886b427e452cfd81">AZ::Render::RenderDebugFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a75a7492a6b38dd97f683020a21413c18">AZ::Render::SMAAFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor.html#a0efa8469a0df4880870cc30674c9f198">AZ::Render::ProjectedShadowFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_sky_atmosphere_feature_processor.html#a8a172446f51b0ad3484c1691ce79dabe">AZ::Render::SkyAtmosphereFeatureProcessor</a>
 </li>
 <li>RenderImGuiBuffersToCurrentViewport()
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#aa8ab9b8acb2147293dfe6ba86cd67741">AZ::Render::ImGuiSystemRequests</a>
+</li>
+<li>RenderImguiDrawData()
+: <a class="el" href="class_a_z_1_1_render_1_1_im_gui_pass.html#a7ab1f76d8975b44cfaf4b5538c98a5dc">AZ::Render::ImGuiPass</a>
 </li>
 <li>renderScene
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface_1_1_creation_parameters.html#a01c8a21018d5f20ffb04ae94cf3a35a8">AZ::RPI::ViewportContextRequestsInterface::CreationParameters</a>
@@ -279,6 +336,14 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#aa64029a96340dc2021804338e594cc01">AZ::RPI::RPISystem</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a30745437c4472c0d659d6993191c8171">AZ::RPI::RPISystemInterface</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a2eccba83b4b8aaabe04f61efed8d5795">AZ::RPI::ViewportContext</a>
+</li>
+<li>RenderTriangles()
+: <a class="el" href="class_masked_occlusion_culling_private.html#a8d7e4a3b07720c3c8fd69c0590435d79">MaskedOcclusionCullingPrivate</a>
+, <a class="el" href="class_masked_occlusion_culling.html#a125dfdd5057dd6ae541720c63ccbd097">MaskedOcclusionCulling</a>
+</li>
+<li>RenderTrilist()
+: <a class="el" href="class_masked_occlusion_culling.html#a976bed9467e6022bed44af7e240cba5e">MaskedOcclusionCulling</a>
+, <a class="el" href="class_masked_occlusion_culling_private.html#ac0157e0f6969772f3c7184b01fcc0ca6">MaskedOcclusionCullingPrivate</a>
 </li>
 <li>RenderViewportWidget()
 : <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#aa2a85c245ac8ed1100d3bdf9474c06a3">AtomToolsFramework::RenderViewportWidget</a>
@@ -308,46 +373,46 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 : <a class="el" href="class_atom_tools_framework_1_1_preview_content.html#a34827eb74c6629793bb60b594f27d344">AtomToolsFramework::PreviewContent</a>
 </li>
 <li>ReportMemoryUsage()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_image.html#a9c49fe4784f1d36de15bc9456a470e5f">AZ::RHI::Image</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a5feb34c41b806535d6c2cec2123e59f1">AZ::RHI::ShaderResourceGroup</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html#ae609315d51ce8e33a9f413787343d2d2">AZ::RHI::Buffer</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_image.html#a9c49fe4784f1d36de15bc9456a470e5f">AZ::RHI::Image</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html#a8a5fa66c9d0246d435af70fb0a37262f">AZ::RHI::Resource</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_query.html#a1c13e63e43b5a398dcd35688654978db">AZ::RHI::Query</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer.html#ae609315d51ce8e33a9f413787343d2d2">AZ::RHI::Buffer</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a5feb34c41b806535d6c2cec2123e59f1">AZ::RHI::ShaderResourceGroup</a>
 </li>
 <li>ReportWarning()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a5ca5060b5fb3d9839eb04d1a903eab00">AZ::RPI::AssetCreator&lt; AssetDataT &gt;</a>
 </li>
 <li>Reserve()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html#a865cfb2c63398141afea933ee11d1c97">AZ::RHI::NameIdReflectionMap&lt; IndexType &gt;</a>
-, <a class="el" href="class_a_z_1_1_render_1_1_multi_sparse_vector.html#a0da943591aa827a49299840ebbc17c38">AZ::Render::MultiSparseVector&lt; Ts &gt;</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_sparse_vector.html#a2888f097e2fc5c58485e6b85504b3579">AZ::Render::SparseVector&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html#a865cfb2c63398141afea933ee11d1c97">AZ::RHI::NameIdReflectionMap&lt; IndexType &gt;</a>
 , <a class="el" href="struct_a_z_1_1_stable_dynamic_array_1_1_page.html#a15b9d110912d35c2c5751aaf4351b260">AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt;::Page</a>
-, <a class="el" href="class_a_z_1_1_render_1_1_sparse_vector.html#a2888f097e2fc5c58485e6b85504b3579">AZ::Render::SparseVector&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_multi_sparse_vector.html#a0da943591aa827a49299840ebbc17c38">AZ::Render::MultiSparseVector&lt; Ts &gt;</a>
 </li>
 <li>ReserveObjectId()
 : <a class="el" href="class_a_z_1_1_render_1_1_transform_service_feature_processor_interface.html#a9efd4dbe9e6064a92e84647fa3ddf142">AZ::Render::TransformServiceFeatureProcessorInterface</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_transform_service_feature_processor.html#ab3eec9190effa75614b5230a9d62b39a">AZ::Render::TransformServiceFeatureProcessor</a>
 </li>
 <li>Reset()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_property.html#a3d7549b2328022497827c4bc6ebc5fd3">AZ::RHI::ImageProperty&lt; T &gt;</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_property.html#a7cc004ba73856b8d7db7f629f69d0f21">AZ::RHI::BufferProperty&lt; T &gt;</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_aliasing_barrier_tracker.html#a37472f6206522189f9ee0d54b2c644b1">AZ::RHI::AliasingBarrierTracker</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_bit_registry.html#a1003118840a918d89818481610d2f7cc">AZ::RHI::TagBitRegistry&lt; IndexType &gt;</a>
-, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html#a2d0c0cc7136128ff68816ab60c5814a1">AZ::RHI::Handle&lt; T, NamespaceType &gt;</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_render_attachment_layout_builder.html#a6f97b10c6560a6cc1f4369dbf5e4dd81">AZ::RHI::RenderAttachmentLayoutBuilder</a>
-, <a class="el" href="class_atom_tools_framework_1_1_inspector_requests.html#a1f1d2f6011b579dc274e2dec1399f09e">AtomToolsFramework::InspectorRequests</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#af620506570de69470b52fe56c499db75">AZ::RHI::PipelineStateCache</a>
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html#a2d0c0cc7136128ff68816ab60c5814a1">AZ::RHI::Handle&lt; T, NamespaceType &gt;</a>
 , <a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller_interface.html#ac9e0538b4c9aa73d3a5f3fd2fc167710">AtomToolsFramework::ViewportInputBehaviorControllerInterface</a>
-, <a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#ad2a9ad50707b1716a92e6cdd0145d457">AtomToolsFramework::ViewportInputBehaviorController</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html#a9f4176a8c404a888d04324ebfae175f7">AZ::RHI::Fence</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html#a04031dbd2db14653239306a58d206522">AZ::RHI::TagRegistry&lt; IndexType, MaxTagCount &gt;</a>
-, <a class="el" href="class_a_z_1_1_render_1_1_image_based_light_feature_processor.html#ac986fe294772f7603052537b33c29943">AZ::Render::ImageBasedLightFeatureProcessor</a>
-, <a class="el" href="class_a_z_1_1_debug_1_1_camera_controller_requests.html#a267acf11f140c3aca2ee3e3b26cbb6f2">AZ::Debug::CameraControllerRequests</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_uv_stream_tangent_bitmask.html#a049c157e07eea02cbf48dc7cff5c8ebe">AZ::RPI::UvStreamTangentBitmask</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html#a95b2c34f51cae062c41c144c07ce7fe6">AZ::RHI::PipelineLayoutDescriptor</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_i_shader_variant_finder.html#ae61b2679d37182f149bf52591b059518">AZ::RPI::IShaderVariantFinder</a>
-, <a class="el" href="class_atom_tools_framework_1_1_graph_compiler.html#aed13b0c7fac0d0e0b57b9c64663d70d8">AtomToolsFramework::GraphCompiler</a>
-, <a class="el" href="class_a_z_1_1_render_1_1_image_based_light_feature_processor_interface.html#aa1f342a2475f61aa3caca418946ad3b3">AZ::Render::ImageBasedLightFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_uv_stream_tangent_bitmask.html#a049c157e07eea02cbf48dc7cff5c8ebe">AZ::RPI::UvStreamTangentBitmask</a>
 , <a class="el" href="class_a_z_1_1_render_1_1_im_gui_frame_visualizer.html#a801a132e4b810cbb1e3931ddada79fbf">AZ::Render::ImGuiFrameVisualizer</a>
+, <a class="el" href="class_atom_tools_framework_1_1_graph_compiler.html#aed13b0c7fac0d0e0b57b9c64663d70d8">AtomToolsFramework::GraphCompiler</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_bit_registry.html#a1003118840a918d89818481610d2f7cc">AZ::RHI::TagBitRegistry&lt; IndexType &gt;</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_property.html#a7cc004ba73856b8d7db7f629f69d0f21">AZ::RHI::BufferProperty&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_render_attachment_layout_builder.html#a6f97b10c6560a6cc1f4369dbf5e4dd81">AZ::RHI::RenderAttachmentLayoutBuilder</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_aliasing_barrier_tracker.html#a37472f6206522189f9ee0d54b2c644b1">AZ::RHI::AliasingBarrierTracker</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html#af620506570de69470b52fe56c499db75">AZ::RHI::PipelineStateCache</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_fence.html#a9f4176a8c404a888d04324ebfae175f7">AZ::RHI::Fence</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html#a95b2c34f51cae062c41c144c07ce7fe6">AZ::RHI::PipelineLayoutDescriptor</a>
+, <a class="el" href="class_atom_tools_framework_1_1_inspector_requests.html#a1f1d2f6011b579dc274e2dec1399f09e">AtomToolsFramework::InspectorRequests</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_image_based_light_feature_processor.html#ac986fe294772f7603052537b33c29943">AZ::Render::ImageBasedLightFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html#a04031dbd2db14653239306a58d206522">AZ::RHI::TagRegistry&lt; IndexType, MaxTagCount &gt;</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_image_based_light_feature_processor_interface.html#aa1f342a2475f61aa3caca418946ad3b3">AZ::Render::ImageBasedLightFeatureProcessorInterface</a>
+, <a class="el" href="class_a_z_1_1_debug_1_1_camera_controller_requests.html#a267acf11f140c3aca2ee3e3b26cbb6f2">AZ::Debug::CameraControllerRequests</a>
+, <a class="el" href="class_atom_tools_framework_1_1_viewport_input_behavior_controller.html#ad2a9ad50707b1716a92e6cdd0145d457">AtomToolsFramework::ViewportInputBehaviorController</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_property.html#a3d7549b2328022497827c4bc6ebc5fd3">AZ::RHI::ImageProperty&lt; T &gt;</a>
 </li>
 <li>ResetCameras()
 : <a class="el" href="class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html#ae25b7492e376d36eb89a93cd01c445a3">AtomToolsFramework::ModularViewportCameraControllerRequests</a>
@@ -357,6 +422,9 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 </li>
 <li>ResetObject()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_factory_base.html#a8fa733a450eb4c99eefec0017ceccca6">AZ::RHI::ObjectFactoryBase&lt; ObjectType &gt;</a>
+</li>
+<li>ResetQueryPools()
+: <a class="el" href="class_a_z_1_1_vulkan_1_1_scope.html#ad5ce819653defff160dc668167dba56c">AZ::Vulkan::Scope</a>
 </li>
 <li>ResetResourceTypeIteration()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html#a42510f2336f4f5cbaa49c85a3f259ecb">AZ::RHI::ShaderResourceGroup</a>
@@ -382,7 +450,15 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#a45521954bd28eeb0de06d6fa42535c6b">AtomToolsFramework::AtomToolsMainWindowRequests</a>
 </li>
 <li>Resolve()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value_source_data.html#ab4c3928a8d2ac3c2840c267aa50a4477">AZ::RPI::MaterialPropertyValueSourceData</a>
+: <a class="el" href="class_a_z_1_1_metal_1_1_image_pool_resolver.html#a3d63c53e71b752d8abc1be3aef5900ff">AZ::Metal::ImagePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_d_x12_1_1_resource_pool_resolver.html#a815244f7ce4cd5b8acccdb24fe107c28">AZ::DX12::ResourcePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_metal_1_1_resource_pool_resolver.html#ab1fb1e56cd9c693099459f3c7287e5c8">AZ::Metal::ResourcePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_image_pool_resolver.html#a44feb283bff195af1a9a494b9cd97d20">AZ::Vulkan::ImagePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_buffer_pool_resolver.html#a2e8d256c0cfde8338453f63b5800523b">AZ::Vulkan::BufferPoolResolver</a>
+, <a class="el" href="class_a_z_1_1_metal_1_1_buffer_pool_resolver.html#a7ea10e0728fb3fd2b47fe6ede2855ae5">AZ::Metal::BufferPoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_resource_pool_resolver.html#a57d0ff8590b4310a185abf4dbfb7e729">AZ::Vulkan::ResourcePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_metal_1_1_streaming_image_pool_resolver.html#a3897462eea38e5017fd1d0c00b0c5e12">AZ::Metal::StreamingImagePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value_source_data.html#ab4c3928a8d2ac3c2840c267aa50a4477">AZ::RPI::MaterialPropertyValueSourceData</a>
 </li>
 <li>ResolveAttachment()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_render_attachment_layout_builder_1_1_subpass_attachment_layout_builder.html#a8dbf689bb830a8e98c2fa43b505b1893">AZ::RHI::RenderAttachmentLayoutBuilder::SubpassAttachmentLayoutBuilder</a>
@@ -390,6 +466,9 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 <li>ResolvedOverlappingNodes()
 : <a class="el" href="class_im_gui_1_1_im_gui_frame_visualizer_window.html#a4a5e8c6aecd84e3090c31b324e155bc3">ImGui::ImGuiFrameVisualizerWindow</a>
 , <a class="el" href="class_im_gui_1_1_im_gui_frame_visualizer_node.html#ad2e7433fb97d6c4333c88f0891351be7">ImGui::ImGuiFrameVisualizerNode</a>
+</li>
+<li>ResolveMSAAAttachments()
+: <a class="el" href="class_a_z_1_1_vulkan_1_1_scope.html#ab0f9240a46743cb493760ec16c207c57">AZ::Vulkan::Scope</a>
 </li>
 <li>ResolveUvEnums()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html#a73e091a376b3fc7e2ffcf845dc8fa998">AZ::RPI::MaterialTypeSourceData</a>
@@ -406,7 +485,7 @@ $(document).ready(function(){initNavTree('functions_0x72.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:43 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:06 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

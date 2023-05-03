@@ -31,7 +31,7 @@ Masks are commonly used with a [ScrollBox prefab element](../interactive/compone
 
 1. On the parent element, in the **Properties** pane, click the folder icon next to the **Image**, **Sprite Path** to select the texture or image to use as a mask.
 
-1. Open an image file in your current project directory. The image that you use as a mask should have opaque areas (which shows the content in child elements) and transparent areas (which hides the content in child elements).
+1. Open an image file in your current project directory. The image that you use as a mask should have opaque areas (which shows the content in child elements) and transparent areas (which hides the content in child elements) and a Texture Setting of AlbedoWithGenricAlpha.
 
 1. In the **Properties** pane, under **Mask**, select **Use alpha test**.
 

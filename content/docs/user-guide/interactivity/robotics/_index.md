@@ -13,6 +13,7 @@ These Gems provide various O3DE components such as sensors, robot control and st
 | [ROS 2 Project Configuration](project-configuration.md)             | Learn how to configure, build and run a project with the ROS 2 Gem.                           |
 | [ROS 2 Concepts and Structure](concepts-and-components-overview.md) | Overview of concepts and structure of the ROS 2 Gem, including an overview of its components. |
 | [Creating robotic simulation](creating-robotic-simulation.md)       | High-level steps to create a robotic simulation with O3DE.                                    |
+| [Importing robots](importing-robot.md)                             | Learn how to import robots using URDF/XACRO importer.                                                   |
 | [Troubleshooting the simulation](troubleshooting.md)                | Helpful solutions to some of the most common issues with ROS 2.                               |
 
 

@@ -1,6 +1,10 @@
 var annotated =
 [
     [ "AWSCore", null, [
+      [ "ServiceAPI", null, [
+        [ "AWSAtrributionSuccessResponse", "struct_a_w_s_core_1_1_service_a_p_i_1_1_a_w_s_atrribution_success_response.html", "struct_a_w_s_core_1_1_service_a_p_i_1_1_a_w_s_atrribution_success_response" ],
+        [ "AWSAttributionRequest", "class_a_w_s_core_1_1_service_a_p_i_1_1_a_w_s_attribution_request.html", "class_a_w_s_core_1_1_service_a_p_i_1_1_a_w_s_attribution_request" ]
+      ] ],
       [ "AWSCoreRequests", "class_a_w_s_core_1_1_a_w_s_core_requests.html", "class_a_w_s_core_1_1_a_w_s_core_requests" ],
       [ "AWSCoreEditorRequests", "class_a_w_s_core_1_1_a_w_s_core_editor_requests.html", "class_a_w_s_core_1_1_a_w_s_core_editor_requests" ],
       [ "AWSCoreNotifications", "class_a_w_s_core_1_1_a_w_s_core_notifications.html", "class_a_w_s_core_1_1_a_w_s_core_notifications" ],
@@ -45,6 +49,21 @@ var annotated =
       [ "AWSScriptBehaviorS3Notifications", "class_a_w_s_core_1_1_a_w_s_script_behavior_s3_notifications.html", "class_a_w_s_core_1_1_a_w_s_script_behavior_s3_notifications" ],
       [ "AWSScriptBehaviorS3NotificationBusHandler", "class_a_w_s_core_1_1_a_w_s_script_behavior_s3_notification_bus_handler.html", "class_a_w_s_core_1_1_a_w_s_script_behavior_s3_notification_bus_handler" ],
       [ "AWSScriptBehaviorS3", "class_a_w_s_core_1_1_a_w_s_script_behavior_s3.html", "class_a_w_s_core_1_1_a_w_s_script_behavior_s3" ],
-      [ "AWSScriptBehaviorsComponent", "class_a_w_s_core_1_1_a_w_s_script_behaviors_component.html", "class_a_w_s_core_1_1_a_w_s_script_behaviors_component" ]
+      [ "AWSScriptBehaviorsComponent", "class_a_w_s_core_1_1_a_w_s_script_behaviors_component.html", "class_a_w_s_core_1_1_a_w_s_script_behaviors_component" ],
+      [ "AWSCoreEditorModule", "class_a_w_s_core_1_1_a_w_s_core_editor_module.html", "class_a_w_s_core_1_1_a_w_s_core_editor_module" ],
+      [ "AWSCoreEditorSystemComponent", "class_a_w_s_core_1_1_a_w_s_core_editor_system_component.html", "class_a_w_s_core_1_1_a_w_s_core_editor_system_component" ],
+      [ "AWSCoreModule", "class_a_w_s_core_1_1_a_w_s_core_module.html", "class_a_w_s_core_1_1_a_w_s_core_module" ],
+      [ "AWSCoreSystemComponent", "class_a_w_s_core_1_1_a_w_s_core_system_component.html", "class_a_w_s_core_1_1_a_w_s_core_system_component" ],
+      [ "AWSCoreConfiguration", "class_a_w_s_core_1_1_a_w_s_core_configuration.html", "class_a_w_s_core_1_1_a_w_s_core_configuration" ],
+      [ "AWSCredentialManager", "class_a_w_s_core_1_1_a_w_s_credential_manager.html", "class_a_w_s_core_1_1_a_w_s_credential_manager" ],
+      [ "AWSCVarCredentialHandler", "class_a_w_s_core_1_1_a_w_s_c_var_credential_handler.html", "class_a_w_s_core_1_1_a_w_s_c_var_credential_handler" ],
+      [ "AWSDefaultCredentialHandler", "class_a_w_s_core_1_1_a_w_s_default_credential_handler.html", "class_a_w_s_core_1_1_a_w_s_default_credential_handler" ],
+      [ "AWSCoreAttributionConsentDialog", "class_a_w_s_core_1_1_a_w_s_core_attribution_consent_dialog.html", "class_a_w_s_core_1_1_a_w_s_core_attribution_consent_dialog" ],
+      [ "AWSAttributionManager", "class_a_w_s_core_1_1_a_w_s_attribution_manager.html", "class_a_w_s_core_1_1_a_w_s_attribution_manager" ],
+      [ "AttributionMetric", "class_a_w_s_core_1_1_attribution_metric.html", "class_a_w_s_core_1_1_attribution_metric" ],
+      [ "AWSAttributionSystemComponent", "class_a_w_s_core_1_1_a_w_s_attribution_system_component.html", "class_a_w_s_core_1_1_a_w_s_attribution_system_component" ],
+      [ "AWSCoreEditorMenu", "class_a_w_s_core_1_1_a_w_s_core_editor_menu.html", "class_a_w_s_core_1_1_a_w_s_core_editor_menu" ],
+      [ "AWSCoreResourceMappingToolAction", "class_a_w_s_core_1_1_a_w_s_core_resource_mapping_tool_action.html", "class_a_w_s_core_1_1_a_w_s_core_resource_mapping_tool_action" ],
+      [ "AWSResourceMappingManager", "class_a_w_s_core_1_1_a_w_s_resource_mapping_manager.html", "class_a_w_s_core_1_1_a_w_s_resource_mapping_manager" ]
     ] ]
 ];

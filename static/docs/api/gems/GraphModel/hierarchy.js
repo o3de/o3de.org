@@ -1,5 +1,8 @@
 var hierarchy =
 [
+    [ "Component", null, [
+      [ "GraphModel::GraphModelSystemComponent", "class_graph_model_1_1_graph_model_system_component.html", null ]
+    ] ],
     [ "EBusTraits", null, [
       [ "GraphModelIntegration::GraphControllerNotifications", "class_graph_model_integration_1_1_graph_controller_notifications.html", null ],
       [ "GraphModelIntegration::GraphControllerRequests", "class_graph_model_integration_1_1_graph_controller_requests.html", null ],

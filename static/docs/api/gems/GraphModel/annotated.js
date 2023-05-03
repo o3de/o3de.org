@@ -17,7 +17,8 @@ var annotated =
       [ "Node", "class_graph_model_1_1_node.html", "class_graph_model_1_1_node" ],
       [ "SlotId", "struct_graph_model_1_1_slot_id.html", "struct_graph_model_1_1_slot_id" ],
       [ "SlotDefinition", "class_graph_model_1_1_slot_definition.html", "class_graph_model_1_1_slot_definition" ],
-      [ "Slot", "class_graph_model_1_1_slot.html", "class_graph_model_1_1_slot" ]
+      [ "Slot", "class_graph_model_1_1_slot.html", "class_graph_model_1_1_slot" ],
+      [ "GraphModelSystemComponent", "class_graph_model_1_1_graph_model_system_component.html", "class_graph_model_1_1_graph_model_system_component" ]
     ] ],
     [ "GraphModelIntegration", null, [
       [ "GraphModelSerialization", "struct_graph_model_integration_1_1_graph_model_serialization.html", "struct_graph_model_integration_1_1_graph_model_serialization" ],

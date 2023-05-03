@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine NvCloth Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -60,6 +60,8 @@ $(document).ready(function(){initNavTree('class_nv_cloth_1_1_i_cloth_configurato
 <div class="contents">
 
 <p><code>#include &lt;IClothConfigurator.h&gt;</code></p>
+
+<p>Inherited by <a class="el" href="class_nv_cloth_1_1_cloth.html">NvCloth::Cloth</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -188,6 +190,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Enables/Disables continuous collision detection. Enabling it improves collision by computing time of impact between cloth particles and colliders. </p>
 <dl class="section note"><dt>Note</dt><dd>The increase in quality comes with a cost in performance, it's recommended to use only when required. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#ac2b59ced2ea125eb0a97d6ede4237a3c">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a776c95c6bb696fe70a50ee6fb92e5bfa"></a>
@@ -213,6 +217,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Number of iterations to average delta time factor used for gravity and external acceleration. Width valid values are &gt; 0. </p>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#ae7431bd1bc616c8190a633e30b11d23c">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5550cc4ee6f85cdfffbb10ae631aacc6"></a>
@@ -237,6 +243,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Portion of angular acceleration applied to turning particles. 0.0: Particles are unaffected. 1.0: Physically correct. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#ac742bca28d8b132e036c790faea8561e">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -295,6 +303,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a55936a5618b05522dae21bef6cc59056">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a570fb9485370489c6fdb273d158dda14"></a>
@@ -320,6 +330,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Set a list of capsules to collide with cloth's particles. Each capsule is formed by 2 indices to sphere colliders.</p>
 <dl class="section note"><dt>Note</dt><dd>Each cloth can have a maximum of 32 capsule colliders. In the case that all capsules use unique spheres that maximum number would go down to 16, limited by the maximum number of spheres (32). </dd></dl>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a74418e2d1756d028f6e9a5108b014b1f">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -347,6 +359,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Set a list of capsules to collide with cloth's particles (rvalue overload). Each capsule is formed by 2 indices to sphere colliders.</p>
 <dl class="section note"><dt>Note</dt><dd>Each cloth can have a maximum of 32 capsule colliders. In the case that all capsules use unique spheres that maximum number would go down to 16, limited by the maximum number of spheres (32). </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#aaf78f84143e91acbfb84730e539d4d43">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a2b5675c390e899460afd778f9bd541ae"></a>
@@ -371,6 +385,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Portion of angular velocity applied to turning particles. 0.0: Particles are unaffected. 1.0: Physically correct. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a4f4dc57e325a92bced3ff7c1362da56f">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -397,6 +413,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Amount of friction with colliders. 0.0: No friction. Friction valid values are &gt;= 0.0. </p>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a273e83229a660ea90c3f8215699b07bf">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa0e57aa22ac04587c4e7ac4f7b413fc2"></a>
@@ -421,6 +439,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Controls how quickly mass is increased during collisions. 0.0: No mass scaling. Scale valid values are &gt;= 0.0. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#ad48710fbb920094b4d3abb7e73a5ea6a">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -447,6 +467,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Damping of particles' velocity. 0.0: Velocity is unaffected. 1.0: Velocity is zeroed. </p>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#afc15747bae91044abb0248e06bf56d88">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1a231561b8af2110f933f62e39d369a9"></a>
@@ -472,6 +494,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Portion of angular velocity applied to turning particles. 0.0: Particles is unaffected. 1.0: Damped global particle angular velocity. </p>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a0f68257ab3f7ed1e3471280714104975">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae4995413f63f31d5ead858b3716b0e39"></a>
@@ -496,6 +520,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Portion of velocity applied to particles. 0.0: Particles is unaffected. 1.0: Damped global particle velocity. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#ac59d09fe56022e1075deec9f0ba8ea7b">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -554,6 +580,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a6be2546e82d332145ed13d93dd179799">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9f872da0b172ef64740a58d0a01445a9"></a>
@@ -578,6 +606,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Portion of acceleration applied to particles. 0.0: Particles are unaffected. 1.0: Physically correct. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#adc8d3aec653d98aae0006d1de8f8f8a7">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -604,6 +634,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Mass scale applied to all particles, zero makes all particles static.</p>
 <dl class="section note"><dt>Note</dt><dd>This function results in a copy of all particle data to NvCloth and therefore it's not a fast operation. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a53a9a450c6d14383bad545aff1d515f9">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -637,6 +669,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Partial set is not allowed, the list must include one constraint per particle. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a340f4f84fe4589e87f5e89a0601b6e85">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4476f13082b58b9d1e0c3baf77d8319d"></a>
@@ -669,6 +703,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Partial set is not allowed, the list must include one constraint per particle. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a0c909364e12b74e008e38f49358a01bd">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6df08eddf9054b9232f1d8dae0fd89fd"></a>
@@ -694,6 +730,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Sets the bias to be applied to all motion constraints. The bias value will be added to the radius of all motion constraints.</p>
 <dl class="section note"><dt>Note</dt><dd>Internally clamped to avoid negative radius. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a5e7b49b0a9625994907f517ed9acbb90">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -721,6 +759,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Sets the scale to be applied to all motion constraints. The radius of all motion constraints will be multiplied by the scale.</p>
 <dl class="section note"><dt>Note</dt><dd>Internally clamped to avoid negative radius. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a8e879d97c1280ebe52f73e6bbd8a8514">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6ac13a6dd42b09d2f28478501aef9c9a"></a>
@@ -745,6 +785,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Stiffness for motion constraints. Stiffness range is [0.0, 1.0]. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#abb928fd28be089965e89077ba79bd24d">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -771,6 +813,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Meters that particles need to be separated from each other. 0.0: No self collision. Distance valid values are &gt; 0.0. </p>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#aef4d7aac2a7aca999d6b943f148c5c05">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab65811832958064fe617b83dd6c98c1c"></a>
@@ -795,6 +839,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Stiffness for the self collision constraints. 0.0: No self collision. Stiffness range is [0.0, 1.0]. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a96ec91436dcb5f5fc9f5d216ab25d437">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -828,6 +874,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Partial set is not allowed, the list must include one constraint per particle. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#aff03717af1b8a06739368f82a2ecb491">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aadf8cc2b1a82183725540a5a0d893f57"></a>
@@ -859,6 +907,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Partial set is not allowed, the list must include one constraint per particle. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#ac8f4958707bd9bd2f5424ab95b9edf0b">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -917,6 +967,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a02d673c5399ccc85b95e041e428b811e">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa00bc9b98b86110ed7aac7b601441a83"></a>
@@ -941,6 +993,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Target solver iterations per second. At least 1 iteration per frame will be solved regardless of the value set. Frequency valid values are &gt;= 0.0. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a3e1f7e8832774b110bb1fcc9a58a739b">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -968,6 +1022,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Set a list of spheres to collide with cloth's particles. x,y,z represents the position and w the radius of the sphere.</p>
 <dl class="section note"><dt>Note</dt><dd>Each cloth can have a maximum of 32 sphere colliders. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a8bc04969e5d6e6eb2183b6ab1383782b">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aea959b6cc028cdf7f24636ebfa4ce8e5"></a>
@@ -994,6 +1050,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Set a list of spheres to collide with cloth's particles (rvalue overload). x,y,z represents the position and w the radius of the sphere.</p>
 <dl class="section note"><dt>Note</dt><dd>Each cloth can have a maximum of 32 sphere colliders. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a854b079c5f9dfdc1ba0421d107e56d04">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a274751b3c41ac2b1c7999bb60a1fb593"></a>
@@ -1018,6 +1076,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Stiffness exponent per second applied to damping, damping dragging, wind dragging, wind lifting, self collision stiffness, fabric stiffness, fabric compression, fabric stretch, tether constraint stiffness and motion constraints stiffness. Stiffness frequency valid values are &gt; 0.0. </p>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a8052dd0f89b52994a2d34a2fd910913b">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -1045,6 +1105,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Tether constraints scale. Scale valid values are &gt;= 0.0. </p>
 <dl class="section note"><dt>Note</dt><dd>Applicable when cloth has tether constraints, that's when fabric data had static particles (inverse mass 0.0) when cooking. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a161d41c728ef9f08c15acaa20b8c99bf">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab0a810b05fb3f5f3f36bc89a5ff35a89"></a>
@@ -1070,6 +1132,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Stiffness for tether constraints. 0.0: No tether constraints applied. 1.0: Makes the constraints behave springy. Stiffness range is [0.0, 1.0]. </p>
 <dl class="section note"><dt>Note</dt><dd>Applicable when cloth has tether constraints, that's when fabric data had static particles (inverse mass 0.0) when cooking. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a217500ca3ed10164f0aac7bbe0f74eb5">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -1128,6 +1192,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#aba7601a15dafe5bc1645e57e8f00da6e">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac1a04562d00041d047f54b1449c8ace0"></a>
@@ -1153,6 +1219,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Amount of air drag. Wind drag range is [0.0, 1.0]. </p>
 <dl class="section note"><dt>Note</dt><dd>A combination of high values in wind properties can cause unstable results. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#aaa5b5408b782c3d6f549b51e9148a511">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -1180,6 +1248,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Density of air used for air drag and lift calculations. Fluid density valid values are &gt; 0.0. </p>
 <dl class="section note"><dt>Note</dt><dd>A combination of high values in wind properties can cause unstable results. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#af1230090f017b9688b891230c43fb735">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9b4dc9d641036bc812965fb94bbf08c6"></a>
@@ -1205,6 +1275,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Amount of air lift. Wind lift range is [0.0, 1.0]. </p>
 <dl class="section note"><dt>Note</dt><dd>A combination of high values in wind properties can cause unstable results. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#a228e24a564d6304e4352cb6261350cde">NvCloth::Cloth</a>.</p>
 
 </div>
 </div>
@@ -1232,6 +1304,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Wind in global coordinates acting on cloth's triangles. Disabled when both wind air coefficients are zero. Wind velocity range is [-50.0, 50.0]. </p>
 <dl class="section note"><dt>Note</dt><dd>A combination of high values in wind properties can cause unstable results. </dd></dl>
 
+<p>Implemented in <a class="el" href="class_nv_cloth_1_1_cloth.html#afc9fc90dfc2a84ac25eaa9b184ca1593">NvCloth::Cloth</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -1243,7 +1317,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>NvCloth</b></li><li class="navelem"><a class="el" href="class_nv_cloth_1_1_i_cloth_configurator.html">IClothConfigurator</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:48 for Open 3D Engine NvCloth Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:22 for Open 3D Engine NvCloth Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

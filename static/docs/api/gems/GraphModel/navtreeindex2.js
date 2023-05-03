@@ -1,5 +1,15 @@
 var NAVTREEINDEX2 =
 {
+"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html#a065d64ceeeabfcffd60cbfff688f7d34":[0,0,2,18,2],
+"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html#a86418b3a2194b129f79de22fb78997f4":[0,0,2,18,0],
+"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html#aba5423d2738b3371953236cb612bfdf5":[0,0,2,18,1],
+"class_graph_model_integration_1_1_node_group_node_palette_tree_item.html#ad94eb77f93864ee1c2c4bbfef741ba84":[0,0,2,18,3],
+"class_graph_model_integration_1_1_read_only_data_interface.html":[0,0,2,25],
+"class_graph_model_integration_1_1_read_only_data_interface.html#a2e5c97acc5d3555257db2cf3697dd20d":[0,0,2,25,1],
+"class_graph_model_integration_1_1_read_only_data_interface.html#a336dc01430eaf78558e3940f710f57dc":[0,0,2,25,3],
+"class_graph_model_integration_1_1_read_only_data_interface.html#a3a77e217b6c73bdbcaa2dfa902aea14b":[0,0,2,25,0],
+"class_graph_model_integration_1_1_read_only_data_interface.html#acf8f5ca7bd392d10a7b8e5b22b7a44d3":[0,0,2,25,2],
+"class_graph_model_integration_1_1_standard_node_palette_item.html":[0,0,2,24],
 "class_graph_model_integration_1_1_standard_node_palette_item.html#a17c816c6c9a880a8322267ad3696b4f1":[0,0,2,24,1],
 "class_graph_model_integration_1_1_standard_node_palette_item.html#a9c0c05eef82213527f9a2d19fd4a95f9":[0,0,2,24,2],
 "class_graph_model_integration_1_1_standard_node_palette_item.html#abf14252a04233e6fb60580c56e6354de":[0,0,2,24,0],

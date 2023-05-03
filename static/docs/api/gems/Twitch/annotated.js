@@ -32,6 +32,9 @@ var annotated =
       [ "CommunityInfo", "struct_twitch_1_1_community_info.html", "struct_twitch_1_1_community_info" ],
       [ "CommunityInfoReturn", "struct_twitch_1_1_community_info_return.html", "struct_twitch_1_1_community_info_return" ],
       [ "TwitchRequests", "class_twitch_1_1_twitch_requests.html", "class_twitch_1_1_twitch_requests" ],
-      [ "TwitchNotifications", "class_twitch_1_1_twitch_notifications.html", "class_twitch_1_1_twitch_notifications" ]
+      [ "TwitchNotifications", "class_twitch_1_1_twitch_notifications.html", "class_twitch_1_1_twitch_notifications" ],
+      [ "ITwitchREST", "class_twitch_1_1_i_twitch_r_e_s_t.html", "class_twitch_1_1_i_twitch_r_e_s_t" ],
+      [ "TwitchREST", "class_twitch_1_1_twitch_r_e_s_t.html", "class_twitch_1_1_twitch_r_e_s_t" ],
+      [ "TwitchSystemComponent", "class_twitch_1_1_twitch_system_component.html", "class_twitch_1_1_twitch_system_component" ]
     ] ]
 ];

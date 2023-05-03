@@ -1,17 +1,27 @@
 var NAVTREE =
 [
   [ "Open 3D Engine Maestro Gem API Reference", "index.html", [
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ]
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"class_c_anim_scene_node_1_1_i_scene_camera.html#a564656f663da633ee992f3f34e577907",
+"class_c_compound_spline_track.html#a8843ae747c46aa329ba8bf73d995b650",
+"class_maestro_1_1_anim_serialize_1_1_animation_data.html#ab909380dfc79af6e91b213f5c6973aca",
+"class_t_anim_track.html#a7b572d8fdad0515b801f3f314164da3e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

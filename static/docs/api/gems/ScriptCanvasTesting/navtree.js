@@ -1,11 +1,18 @@
 var NAVTREE =
 [
-  [ "Open 3D Engine ScriptCanvasTesting Gem API Reference", "index.html", ]
+  [ "Open 3D Engine ScriptCanvasTesting Gem API Reference", "index.html", [
+    [ "Classes", null, [
+      [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+".html",
+"class_script_canvas_tests_1_1_unit_test_events_handler.html#abfe4b822914c93ece4639408f4fe5f7d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

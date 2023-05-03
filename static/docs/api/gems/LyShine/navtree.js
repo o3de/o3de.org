@@ -6,6 +6,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
@@ -18,7 +19,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
@@ -29,15 +30,39 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_ui_canvas_input_notifications.html#ae95ddeb59e404d3ff7758e52cf9ecff5",
-"class_ui_dropdown_option_notifications.html",
-"class_ui_game_entity_context_slice_instantiation_results.html",
-"class_ui_layout_grid_interface.html#ac1b5b6e23bbbda48e4d65d83586ea849",
-"class_ui_radio_button_interface.html#acb8f5e566c71bd275d441346bf4cb578",
-"class_ui_text_interface.html#a3134e874f46ca685a5e07147e8af9d8f",
-"namespacemembers_eval.html",
-"struct_i_ui_anim_track.html#ac36d2cb354d8edc86b03195d015d8889"
+".html",
+"class_c_draw2d.html#a697786e4ddeb0f12b24c7ca034fd1d75",
+"class_c_ui_anim_node.html#a2432c32a32f144ebe183e4d413ba83c9",
+"class_c_ui_anim_view_curve_editor.html#a3921ab20ad77fc059e7049dbb6ab3a4b",
+"class_c_ui_anim_view_nodes_ctrl.html#a4c047b1014205c12733e744e1dc67fb2",
+"class_c_ui_animation_context.html#a34998de153eda54cb8cfc06126f5d5e4",
+"class_draw2d_helper.html#a1a6bf5d8a49b205492ff6d5721c66fe0",
+"class_i_draw2d.html#a30ceeacd7d7fddaa74a2550e74a2fa5ea60494f02d440f316319dd0fad40ad007",
+"class_ly_shine_1_1_render_graph.html#a40f30c819f57dcef5db4bb9cdcf73196",
+"class_property_handler_entity_id_combo_box.html#a58b18220836116a0fdbb7a0ccd524de3",
+"class_t_ui_anim_spline_track.html#aef78f661300100d8aee12f31d291a044",
+"class_ui_animation_system.html#a165ed5bd1de3c2329f91c2370da07389",
+"class_ui_canvas_component.html#abcf2a2d9d7efec5008a03dc23bb36195",
+"class_ui_canvas_pixel_alignment_notification.html",
+"class_ui_drop_target_component.html#a659ef27478da0daf10dcb7406c01d042",
+"class_ui_dynamic_scroll_box_component.html#abab4cc80dfcc9903918ece67bcc9c625",
+"class_ui_element_component.html#a493b894b4ede9558190a5da2ad4e38e0",
+"class_ui_flipbook_animation_component.html#ad722c4ce84aca9f0ef2714f471c53983",
+"class_ui_image_sequence_interface.html#af93ec244e2890bb394654d12d01cc581a4457d440870ad6d42bab9082d9bf9b61",
+"class_ui_interactable_state_sprite.html#ae5dd25e7af74f461a87ee4b9796e453a",
+"class_ui_layout_grid_component.html#ad98316fcc694b17645ab041f6f2f1ec5",
+"class_ui_particle_emitter_component.html#a08ee6ee935e60b6938c3b515004f114e",
+"class_ui_particle_emitter_interface.html#a0ef53c2e88104b239888ae416df0335e",
+"class_ui_renderer.html#afe36224668f0c525e11cf941ff98e4bb",
+"class_ui_slider_component.html#a095091667858563f259c8eab29b518d5",
+"class_ui_system_tools_interface.html#ad0d3e52d56acadff83e18ea40d19e697",
+"class_ui_text_interface.html#a136cfc53534b0e58f5cc1e73936d8624",
+"class_ui_transform2d_component.html#a5ad7f1bc448b5b2a5eccf9921b1f5cb4",
+"class_viewport_interaction.html#a1d4db6e5caecf0d54646b961eaee5384",
+"struct_i_draw2d_1_1_image_options.html#a63241b814e00c5e3022223ce5befdeeb",
+"struct_i_ui_anim_track.html#ad682b6f3e049f867e417c77500f6565f",
+"struct_ui_canvas_component_1_1_debug_info_num_elements.html#a40794c02850e61d872f11741cdaa0c00",
+"struct_ui_transform2d_interface_1_1_anchors.html#a467aa5dc8db219e4705bfd3ebfb74b9b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

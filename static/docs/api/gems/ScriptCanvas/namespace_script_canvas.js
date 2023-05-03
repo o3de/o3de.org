@@ -370,6 +370,8 @@ var namespace_script_canvas =
     [ "Vector2Nodes", "namespace_script_canvas_1_1_vector2_nodes.html", null ],
     [ "Vector3Nodes", "namespace_script_canvas_1_1_vector3_nodes.html", null ],
     [ "Vector4Nodes", "namespace_script_canvas_1_1_vector4_nodes.html", null ],
+    [ "RuntimeAssetSystemComponent", "class_script_canvas_1_1_runtime_asset_system_component.html", "class_script_canvas_1_1_runtime_asset_system_component" ],
+    [ "FileLoadResult", "struct_script_canvas_1_1_file_load_result.html", "struct_script_canvas_1_1_file_load_result" ],
     [ "AssetDescription", "class_script_canvas_1_1_asset_description.html", "class_script_canvas_1_1_asset_description" ],
     [ "AssetRegistry", "class_script_canvas_1_1_asset_registry.html", "class_script_canvas_1_1_asset_registry" ],
     [ "AssetRegistryRequests", "class_script_canvas_1_1_asset_registry_requests.html", "class_script_canvas_1_1_asset_registry_requests" ],
@@ -582,6 +584,5 @@ var namespace_script_canvas =
     [ "VariableId", "struct_script_canvas_1_1_variable_id.html", "struct_script_canvas_1_1_variable_id" ],
     [ "VariableData", "class_script_canvas_1_1_variable_data.html", "class_script_canvas_1_1_variable_data" ],
     [ "EditableVariableConfiguration", "struct_script_canvas_1_1_editable_variable_configuration.html", "struct_script_canvas_1_1_editable_variable_configuration" ],
-    [ "EditableVariableData", "class_script_canvas_1_1_editable_variable_data.html", "class_script_canvas_1_1_editable_variable_data" ],
-    [ "FileLoadResult", "struct_script_canvas_1_1_file_load_result.html", "struct_script_canvas_1_1_file_load_result" ]
+    [ "EditableVariableData", "class_script_canvas_1_1_editable_variable_data.html", "class_script_canvas_1_1_editable_variable_data" ]
 ];

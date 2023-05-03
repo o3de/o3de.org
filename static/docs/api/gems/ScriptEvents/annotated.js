@@ -29,6 +29,12 @@ var annotated =
       [ "ScriptEventsModule", "class_script_events_1_1_script_events_module.html", "class_script_events_1_1_script_events_module" ],
       [ "Method", "class_script_events_1_1_method.html", "class_script_events_1_1_method" ],
       [ "ScriptEventsSystemComponentImpl", "class_script_events_1_1_script_events_system_component_impl.html", "class_script_events_1_1_script_events_system_component_impl" ],
-      [ "ScriptEventModuleConfigurationRequests", "class_script_events_1_1_script_event_module_configuration_requests.html", "class_script_events_1_1_script_event_module_configuration_requests" ]
+      [ "ScriptEventModuleConfigurationRequests", "class_script_events_1_1_script_event_module_configuration_requests.html", "class_script_events_1_1_script_event_module_configuration_requests" ],
+      [ "ScriptEventsSystemComponent", "class_script_events_1_1_script_events_system_component.html", "class_script_events_1_1_script_events_system_component" ],
+      [ "ScriptEventsSystemComponentRuntimeImpl", "class_script_events_1_1_script_events_system_component_runtime_impl.html", "class_script_events_1_1_script_events_system_component_runtime_impl" ]
+    ] ],
+    [ "ScriptEventsBuilder", null, [
+      [ "ScriptEventsBuilderComponent", "class_script_events_builder_1_1_script_events_builder_component.html", "class_script_events_builder_1_1_script_events_builder_component" ],
+      [ "Worker", "class_script_events_builder_1_1_worker.html", "class_script_events_builder_1_1_worker" ]
     ] ]
 ];

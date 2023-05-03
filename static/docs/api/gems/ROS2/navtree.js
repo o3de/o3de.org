@@ -25,7 +25,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"class_r_o_s2_1_1_r_o_s2_odometry_sensor_component.html#acfda6d7f3df61640f68df0dd2de1c5e9",
+"class_r_o_s2_1_1_vehicle_dynamics_1_1_vehicle_model_component.html#abbeaa40f4e1a460762e51e47dc36ba51"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

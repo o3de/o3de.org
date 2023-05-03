@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -102,6 +102,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_runtime_asset_system_component.html">RuntimeAssetSystemComponent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_file_load_result.html">FileLoadResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_asset_description.html">AssetDescription</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_asset_registry.html">AssetRegistry</a></td></tr>
@@ -538,8 +542,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_editable_variable_configuration.html">EditableVariableConfiguration</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_editable_variable_data.html">EditableVariableData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_file_load_result.html">FileLoadResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -992,6 +994,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9029a1f05af7489cc8cfb6b332098952"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9029a1f05af7489cc8cfb6b332098952"></a>
+AZ::Outcome&lt; <a class="el" href="class_script_canvas_1_1_source_tree.html">SourceTree</a>, <br class="typebreak"/>
+AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadEditorAssetTree</b> (<a class="el" href="class_script_canvas_1_1_source_handle.html">SourceHandle</a> handle)</td></tr>
+<tr class="separator:a9029a1f05af7489cc8cfb6b332098952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bde32a0ec5213f6fc331ab4b5f0ea9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_script_canvas_1_1_file_load_result.html">FileLoadResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_script_canvas.html#a9bde32a0ec5213f6fc331ab4b5f0ea9f">LoadFromFile</a> (AZStd::string_view path, MakeInternalGraphEntitiesUnique makeEntityIdsUnique=MakeInternalGraphEntitiesUnique::Yes, LoadReferencedAssets loadReferencedAssets=LoadReferencedAssets::Yes)</td></tr>
+<tr class="separator:a9bde32a0ec5213f6fc331ab4b5f0ea9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a794edb0f54ccd458e840d3a077cb476b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a794edb0f54ccd458e840d3a077cb476b"></a>
 IsPreloadedResult&#160;</td><td class="memItemRight" valign="bottom"><b>IsPreloaded</b> (const <a class="el" href="struct_script_canvas_1_1_runtime_data_overrides.html">RuntimeDataOverrides</a> &amp;overrides)</td></tr>
 <tr class="separator:a794edb0f54ccd458e840d3a077cb476b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1178,12 +1186,6 @@ AZStd::vector&lt; AZStd::pair<br class="typebreak"/>
 <tr class="memitem:a8bd056dfd3028dfdd56bcab155ec0ed7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bd056dfd3028dfdd56bcab155ec0ed7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateConnectionStatus</b> (<a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> &amp;graph, const <a class="el" href="struct_script_canvas_1_1_graph_update_report.html">GraphUpdateReport</a> &amp;report)</td></tr>
 <tr class="separator:a8bd056dfd3028dfdd56bcab155ec0ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9029a1f05af7489cc8cfb6b332098952"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9029a1f05af7489cc8cfb6b332098952"></a>
-AZ::Outcome&lt; <a class="el" href="class_script_canvas_1_1_source_tree.html">SourceTree</a>, <br class="typebreak"/>
-AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LoadEditorAssetTree</b> (<a class="el" href="class_script_canvas_1_1_source_handle.html">SourceHandle</a> handle)</td></tr>
-<tr class="separator:a9029a1f05af7489cc8cfb6b332098952"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bde32a0ec5213f6fc331ab4b5f0ea9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_script_canvas_1_1_file_load_result.html">FileLoadResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_script_canvas.html#a9bde32a0ec5213f6fc331ab4b5f0ea9f">LoadFromFile</a> (AZStd::string_view path, MakeInternalGraphEntitiesUnique makeEntityIdsUnique=MakeInternalGraphEntitiesUnique::Yes, LoadReferencedAssets loadReferencedAssets=LoadReferencedAssets::Yes)</td></tr>
-<tr class="separator:a9bde32a0ec5213f6fc331ab4b5f0ea9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -1291,7 +1293,7 @@ static constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:50 for Open 3D Engine ScriptCanvas Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:26 for Open 3D Engine ScriptCanvas Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ROS2 Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -75,10 +75,31 @@ AZStd::chrono::duration&lt; float, <br class="typebreak"/>
 AZStd::chrono::seconds::period &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_simulation_clock.html#a68250d552d7fc79d90a2fba4435661c2">GetExpectedSimulationLoopTime</a> () const </td></tr>
 <tr class="memdesc:a68250d552d7fc79d90a2fba4435661c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an expected loop time of simulation. It is an estimation from past frames. <br/></td></tr>
 <tr class="separator:a68250d552d7fc79d90a2fba4435661c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96234733c31b080ca4c71c1ef81068d"><td class="memItemLeft" align="right" valign="top">builtin_interfaces::msg::Time&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_simulation_clock.html#ab96234733c31b080ca4c71c1ef81068d">GetROSTimestamp</a> () const </td></tr>
+<tr class="separator:ab96234733c31b080ca4c71c1ef81068d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76a2f092d84d50953267556a53e396eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_simulation_clock.html#a76a2f092d84d50953267556a53e396eb">Tick</a> ()</td></tr>
+<tr class="separator:a76a2f092d84d50953267556a53e396eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simulation clock which can tick and serve time stamps. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab96234733c31b080ca4c71c1ef81068d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">builtin_interfaces::msg::Time ROS2::SimulationClock::GetROSTimestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get simulation time as ROS2 message. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_r_o_s2_1_1_r_o_s2_requests.html#a4d48369f6056cd2da8e01d3225c16853">ROS2Requests::GetROSTimestamp()</a> for more details. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ab96234733c31b080ca4c71c1ef81068d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -112,8 +133,25 @@ AZStd::chrono::seconds::period &gt;&#160;</td><td class="memItemRight" valign="b
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a class="anchor" id="a76a2f092d84d50953267556a53e396eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ROS2::SimulationClock::Tick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update time in the ROS 2 ecosystem. This will publish current time to the ROS 2 <code>/clock</code> topic. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>Gems/ROS2/Code/Include/ROS2/Clock/SimulationClock.h</li>
+<li>Gems/ROS2/Code/Source/Clock/SimulationClock.h</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -121,7 +159,7 @@ AZStd::chrono::seconds::period &gt;&#160;</td><td class="memItemRight" valign="b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_simulation_clock.html">SimulationClock</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:49 for Open 3D Engine ROS2 Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:24 for Open 3D Engine ROS2 Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

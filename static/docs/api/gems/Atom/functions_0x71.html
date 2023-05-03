@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -54,8 +54,30 @@ $(document).ready(function(){initNavTree('functions_0x71.html','');});
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>QueueAliasingBarrier()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_command_list_base.html#ad2920ed74487cc313d0db24b5cd4bd2f">AZ::DX12::CommandListBase</a>
+, <a class="el" href="class_a_z_1_1_d_x12_1_1_scope.html#a5d264c0741ca97416f5440352a9b5cf8">AZ::DX12::Scope</a>
+</li>
+<li>QueueAttachmentBarrier()
+: <a class="el" href="class_a_z_1_1_vulkan_1_1_scope.html#a3953fb31447a6f4ecdc75bd232d3e9fe">AZ::Vulkan::Scope</a>
+</li>
+<li>QueueBarrier()
+: <a class="el" href="class_a_z_1_1_vulkan_1_1_scope.html#a72c5417ab9f127cb2d749355b5e54dca">AZ::Vulkan::Scope</a>
+</li>
 <li>QueueCompileGraph()
 : <a class="el" href="class_atom_tools_framework_1_1_graph_document_requests.html#ad4eeebf4c39340aa913f5fa9c7bf03be">AtomToolsFramework::GraphDocumentRequests</a>
+</li>
+<li>QueueDeferredRelease()
+: <a class="el" href="class_a_z_1_1_metal_1_1_device.html#ab1a1db4ecae4e5445c5ae66162c3b7ae">AZ::Metal::Device</a>
+</li>
+<li>QueueEpilogueTransition()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_scope.html#ab2c95bfa7aafb29982357b1f4b4f0a65">AZ::DX12::Scope</a>
+</li>
+<li>QueueEpilogueTransitionBarriers()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_resource_pool_resolver.html#a8222af8bb769d4c0112b7ba0be12b0f2">AZ::DX12::ResourcePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_buffer_pool_resolver.html#a2ca931e8b509d8a587e0afca35d894f4">AZ::Vulkan::BufferPoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_image_pool_resolver.html#aac8c4a779475849093b778c99f5b88a2">AZ::Vulkan::ImagePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_resource_pool_resolver.html#ae6b36890d0a4149a993d7efcd2a632d7">AZ::Vulkan::ResourcePoolResolver</a>
 </li>
 <li>QueueExpandToMipChainLevel()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image.html#a54a18a3c8098f1869e53ab34de564219">AZ::RPI::StreamingImage</a>
@@ -72,6 +94,10 @@ $(document).ready(function(){initNavTree('functions_0x71.html','');});
 <li>QueueForInitialization()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a047049ca45ac8d5640b8c355a8b961ba">AZ::RPI::Pass</a>
 </li>
+<li>QueueForRelease()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_device.html#adfa4a682595723efe8180247b31aa531">AZ::DX12::Device</a>
+, <a class="el" href="class_a_z_1_1_metal_1_1_device.html#a7669b52d4512348a9c4cabcbe5d6e9ca">AZ::Metal::Device</a>
+</li>
 <li>QueueForRemoval()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a1223f068ded8a752b15b0d149fbc82e6">AZ::RPI::Pass</a>
 </li>
@@ -85,8 +111,20 @@ $(document).ready(function(){initNavTree('functions_0x71.html','');});
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_i_shader_variant_finder.html#a7713a75ad6b5afc38280055a5c9572af">AZ::RPI::IShaderVariantFinder</a>
 </li>
 <li>QueueObjectSrgForCompile()
-: <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a3d94dba9482371d523914f21ffdd30a9">AZ::Render::MeshFeatureProcessorInterface</a>
-, <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ad8eab9890ff0491a89a71203d2f6bfe5">AZ::Render::MeshFeatureProcessor</a>
+: <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ad8eab9890ff0491a89a71203d2f6bfe5">AZ::Render::MeshFeatureProcessor</a>
+, <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a3d94dba9482371d523914f21ffdd30a9">AZ::Render::MeshFeatureProcessorInterface</a>
+</li>
+<li>QueuePreDiscardTransition()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_scope.html#ae767e33c51be772215f2771d23f9da9f">AZ::DX12::Scope</a>
+</li>
+<li>QueuePrologueTransition()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_scope.html#a423a84db99d0515cc68016c33f5f4d9a">AZ::DX12::Scope</a>
+</li>
+<li>QueuePrologueTransitionBarriers()
+: <a class="el" href="class_a_z_1_1_vulkan_1_1_buffer_pool_resolver.html#aac3f02acfe7b27e660d607ee050fbd9b">AZ::Vulkan::BufferPoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_image_pool_resolver.html#a84c12b31f95c0e6b8ff1d186bdfb63b3">AZ::Vulkan::ImagePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_vulkan_1_1_resource_pool_resolver.html#a95232ab131e05a3a281df77f44955bbd">AZ::Vulkan::ResourcePoolResolver</a>
+, <a class="el" href="class_a_z_1_1_d_x12_1_1_resource_pool_resolver.html#a6c3cf76c9c8bfbf232eefbcf983abed7">AZ::DX12::ResourcePoolResolver</a>
 </li>
 <li>QueueRayTracingShaderTableForBuild()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_scheduler.html#ad536262634de3ad354a31f1af74c01c7">AZ::RHI::FrameScheduler</a>
@@ -94,11 +132,23 @@ $(document).ready(function(){initNavTree('functions_0x71.html','');});
 <li>QueueReopenModifiedDocuments()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ae338eb34c0492f02400be543eab7593f">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
 </li>
+<li>QueueResolveTransition()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_scope.html#a175a47786b1c63b1a6a5663ee3a83eeb">AZ::DX12::Scope</a>
+</li>
+<li>QueueResourceFence()
+: <a class="el" href="class_a_z_1_1_metal_1_1_scope.html#a78d79b2177e7ac63d8e0d3fcff65b4a7">AZ::Metal::Scope</a>
+</li>
 <li>QueueResourcePoolResolves()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a6b47f0fe120087fae946934adc84934c">AZ::RHI::Scope</a>
 </li>
+<li>QueueTransitionBarrier()
+: <a class="el" href="class_a_z_1_1_d_x12_1_1_command_list_base.html#ad5245b968cab9955027ed7794808754e">AZ::DX12::CommandListBase</a>
+</li>
 <li>QueueUpdateMenus()
 : <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#ab1e67da0352985b0fd4f8e6dfe153b16">AtomToolsFramework::AtomToolsMainWindowRequests</a>
+</li>
+<li>QueueUpload()
+: <a class="el" href="class_a_z_1_1_metal_1_1_async_upload_queue.html#adb6e4d47b4ad0c4d552a5b0a96b489bf">AZ::Metal::AsyncUploadQueue</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -106,7 +156,7 @@ $(document).ready(function(){initNavTree('functions_0x71.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:43 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:06 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

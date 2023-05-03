@@ -1,11 +1,27 @@
 var NAVTREE =
 [
-  [ "Open 3D Engine AtomTressFX Gem API Reference", "index.html", ]
+  [ "Open 3D Engine AtomTressFX Gem API Reference", "index.html", [
+    [ "Classes", null, [
+      [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+".html",
+"class_a_z_1_1_render_1_1_hair_1_1_hair_asset.html#a67fac8f64311038af51459858d4aa410",
+"class_a_z_1_1_render_1_1_hair_1_1_hair_uniform_buffer.html#aee9bd0fd957394df9e55675e032d56e8",
+"class_e_i___resource.html#ab425758e20bc8a6e6555d3b20baa3ee2",
+"struct_a_m_d_1_1_tress_f_x_simulation_params.html#a6feed9553a5f60232c29f630caaea4a4",
+"struct_tress_f_x_collision_mesh_description.html#a87c37849d7efb285de18a51f4557172d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2305.0</span>
+   &#160;<span id="projectnumber">23.05.0</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -283,7 +283,7 @@ static constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>I
 <p>The .materialtype file has two slightly different formats, in most cases users will want to author content in the abstract format, which is more convenient to work with, as it hides of lot of technical details and automatically works with mulitple render pipelines. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a2aae87842ff642e36b17899bd498915bae353dbe42c8654f33588d4da0b517469"></a>Abstract</em>&nbsp;</td><td class="fielddoc">
-<p>In the abstract format, the material type provides only material-specific shader code and a lighting model reference. The MaterialTypeBuilder will automatically adapt the material type to work in any render pipeline (Forward+, Deferred, VR, etc.), by stitching it together with the available material pipelines (see <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_pipeline_source_data.html">MaterialPipelineSourceData</a>). This will produce a new intermediate material type that is not abstract, for further processing. </p>
+<p>In the abstract format, the material type provides only material-specific shader code and a lighting model reference. The <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_builder.html">MaterialTypeBuilder</a> will automatically adapt the material type to work in any render pipeline (Forward+, Deferred, VR, etc.), by stitching it together with the available material pipelines (see <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_pipeline_source_data.html">MaterialPipelineSourceData</a>). This will produce a new intermediate material type that is not abstract, for further processing. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a2aae87842ff642e36b17899bd498915bafd1dd0c603be8170f9eae0be9f2f6afb"></a>Direct</em>&nbsp;</td><td class="fielddoc">
 <p>In the direct format, the material type provides a complete list of the specific shaders that will be used for rendering. This circumvents the material pipeline system, and the author is responsible for adapting the material type to any desired render pipelines. </p>
@@ -490,7 +490,7 @@ static constexpr AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>I
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_z.html">AZ</a></li><li class="navelem"><b>RPI</b></li><li class="navelem"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html">MaterialTypeSourceData</a></li>
-    <li class="footer">Generated on Wed Apr 12 2023 20:01:42 for Open 3D Engine Atom Gem API Reference by
+    <li class="footer">Generated on Thu Apr 20 2023 21:34:04 for Open 3D Engine Atom Gem API Reference by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

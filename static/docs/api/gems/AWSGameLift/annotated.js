@@ -16,8 +16,19 @@ var annotated =
       [ "AWSGameLiftSessionRequests", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_session_requests.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_session_requests" ],
       [ "AWSGameLiftStartMatchmakingRequest", "struct_a_w_s_game_lift_1_1_a_w_s_game_lift_start_matchmaking_request.html", "struct_a_w_s_game_lift_1_1_a_w_s_game_lift_start_matchmaking_request" ],
       [ "AWSGameLiftStopMatchmakingRequest", "struct_a_w_s_game_lift_1_1_a_w_s_game_lift_stop_matchmaking_request.html", "struct_a_w_s_game_lift_1_1_a_w_s_game_lift_stop_matchmaking_request" ],
+      [ "AWSGameLiftClientEditorSystemComponent", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_client_editor_system_component.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_client_editor_system_component" ],
+      [ "AWSGameLiftClientLocalTicketTracker", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_client_local_ticket_tracker.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_client_local_ticket_tracker" ],
+      [ "AWSGameLiftMatchmakingNotificationBusHandler", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_matchmaking_notification_bus_handler.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_matchmaking_notification_bus_handler" ],
+      [ "AWSGameLiftMatchmakingAsyncRequestNotificationBusHandler", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_matchmaking_async_request_notification_bus_handler.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_matchmaking_async_request_notification_bus_handler" ],
+      [ "AWSGameLiftSessionAsyncRequestNotificationBusHandler", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_session_async_request_notification_bus_handler.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_session_async_request_notification_bus_handler" ],
+      [ "AWSGameLiftClientManager", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_client_manager.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_client_manager" ],
+      [ "AWSGameLiftClientSystemComponent", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_client_system_component.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_client_system_component" ],
       [ "AWSGameLiftPlayer", "struct_a_w_s_game_lift_1_1_a_w_s_game_lift_player.html", "struct_a_w_s_game_lift_1_1_a_w_s_game_lift_player" ],
       [ "IAWSGameLiftServerRequests", "class_a_w_s_game_lift_1_1_i_a_w_s_game_lift_server_requests.html", "class_a_w_s_game_lift_1_1_i_a_w_s_game_lift_server_requests" ],
-      [ "AWSGameLiftServerRequests", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_server_requests.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_server_requests" ]
+      [ "AWSGameLiftServerRequests", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_server_requests.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_server_requests" ],
+      [ "GameLiftServerProcessDesc", "struct_a_w_s_game_lift_1_1_game_lift_server_process_desc.html", "struct_a_w_s_game_lift_1_1_game_lift_server_process_desc" ],
+      [ "AWSGameLiftServerManager", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_server_manager.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_server_manager" ],
+      [ "AWSGameLiftServerSystemComponent", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_server_system_component.html", "class_a_w_s_game_lift_1_1_a_w_s_game_lift_server_system_component" ],
+      [ "GameLiftServerSDKWrapper", "class_a_w_s_game_lift_1_1_game_lift_server_s_d_k_wrapper.html", "class_a_w_s_game_lift_1_1_game_lift_server_s_d_k_wrapper" ]
     ] ]
 ];
