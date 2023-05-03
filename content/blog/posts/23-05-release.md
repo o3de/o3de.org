@@ -11,7 +11,7 @@ We’re excited to announce the newest release of the [Open 3D Engine (O3DE)](ht
 
 To celebrate, we’re holding our first-ever [O3DE Jam](https://o3d.foundation/blog/calling-all-open-source-3d-developers-lets-jam-in-the-wasteland/) beginning tomorrow where the community can come together to build some seriously cool 3D experiences using all the new features of this latest release.
 
-Read on for a few of the highlights, get the details in the [release notes](https://www.o3de.org/docs/release-notes/22-10-0/), and join the jam!
+Read on for a few of the highlights, get the details in the [release notes](https://www.o3de.org/docs/release-notes/2305-0-release-notes), and join the jam!
 
 **Empowering Game and Robotics Simulation Devs to Create Amazing Experiences**
 
