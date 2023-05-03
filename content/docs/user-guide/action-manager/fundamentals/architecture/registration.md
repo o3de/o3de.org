@@ -10,7 +10,7 @@ A second limitation, although it’s not enforced, is to register all items at E
 
 To simplify the registration process, the Action Manager architecture provides a set of notification hooks that are triggered on Editor startup. These notifications are split by item type; this allows systems to be certain that an item they require, but is defined elsewhere, has already been registered by the time the hook corresponding to a different item type that has a dependency on it is called. For example, the action context registration hook is called first, so by the time the action registration hook is triggered we can assume all action contexts have been registered already and are available.
 
-## Registration Hooks
+## Registration hooks
 
 #### `OnActionContextRegistrationHook`
 
