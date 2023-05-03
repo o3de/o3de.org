@@ -33,7 +33,7 @@ To change any of the properties in this file, you can either edit the file manua
 
 The following table describes each of the properties in `project.json`. The default value for many of the properties contains the project name given when you created the project. We indicate this project name as "`<PROJECT_NAME>`".
 
-The "`<USER>`" placeholder below refers to the user's home directory based on the operation system being used. For example, if your user name is "Foo" and you are using a Windows machine, the `<USER>` directory would be `C:\Users\Foo`.
+The "`<USER>`" placeholder below refers to the user's home directory based on the operating system being used. For example, if your user name is "Foo" and you are using a Windows machine, the `<USER>` directory would be `C:\Users\Foo`.
 
 | Operating System | Home Directory Path |
 | --- | --- |

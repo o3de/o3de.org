@@ -736,7 +736,7 @@ o3de.bat register --all-projects-path ALL_PROJECTS_PATH
 
 **Registering Gems**
 
-Registers the Gem to the nearest o3de object manifest file above the location where the Gem is. Before registering the Gem, this command verifies that the Gem has a valid `gem.json` file. Then, it adds the Gem’s path to the `external_subdirectories` list in nearest o3de object manifest file above the Gem location.
+Registers the Gem to the nearest o3de object manifest file above the location where the Gem is. Before registering the Gem, this command verifies that the Gem has a valid `gem.json` file. Then, it adds the Gem’s path to the `external_subdirectories` list in the nearest o3de object manifest file above the Gem location.
 
 ```cmd
 o3de.bat register --gem-path GEM_PATH
