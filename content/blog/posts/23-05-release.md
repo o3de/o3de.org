@@ -19,13 +19,13 @@ In addition to many enhancements to the core engine, the O3DE 23.05 release brin
 
 The new [Multiplayer Sample Game (MPS)](https://github.com/o3de/o3de-multiplayersample) provides client and dedicated server reference implementations of common game elements at play to help game developers jumpstart new projects. This game also delivers key examples of integrations with O3DE systems like terrain, lighting, audio, scripting, VFX and more. It also utilizes the Atom Renderer's advanced features to achieve its visual goals, including global illumination, cascade shadows, emissive surfaces, bounce lighting, temporal anti-aliasing, and hybrid reflections (screen space and ray tracing). And with support for up to 10 players, it's like a big party where everyone can join in on the fun. We can’t wait to see how the O3DE community mods, expands, and contributes to this game!
 
-{{< image-width src="/images/blog/23-05-release/image01.png" width="100%" alt="Mulitplayer Sample Game" >}}
+{{< image-width src="/images/blog/23-05-release/image01.jpg" width="100%" alt="Mulitplayer Sample Game" >}}
 
 Plus, O3DE’s integration with the Robot Operating System (ROS) via the [ROS2 Gem](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2) means robotics simulation developers can also get in on the action, with tools, components and assets to build [robotics simulations](https://development--o3deorg.netlify.app/docs/user-guide/interactivity/robotics/overview/) with O3DE. This Gem now offers increased stability and new features, from an importer, project templates and additional sensors to multi-camera and physics enhancements. And, comprehensive documentation is now available.
 
 Adam Dabrowski, VP of Robotics and Simulation at Robotec.ai, said this about the new capabilities: "With O3DE, you can actually write ROS 2 code inside your simulation project. We made use of the fact that O3DE is C++ based so it is quite easy to have a direct integration with ROS 2.”
 
-{{< image-width src="/images/blog/23-05-release/image02.png" width="100%" alt="ROS Gem" >}}
+{{< image-width src="/images/blog/23-05-release/image02.jpg" width="100%" alt="ROS Gem" >}}
 
 **Increased Usability and Performance for a Diversity of 3D Applications**
 
@@ -38,7 +38,7 @@ This latest release makes it even easier for developers to harness O3DE for a mu
 *	**Specify compatible platforms for gems you create**, which can be filtered in the Gem Catalog.
 *	**Add menus, hotkeys and contextual actions from Gems and Python scripts** with enhanced extensibility of the Editor though a new [Action Manager API](https://www.o3de.org/docs/user-guide/action-manager/).
 
-{{< image-width src="/images/blog/23-05-release/image03.png" width="100%" alt="Material Canvas" >}}
+{{< image-width src="/images/blog/23-05-release/image03.jpg" width="100%" alt="Material Canvas" >}}
 
 *Material Canvas, a new, intuitive visual scripting interface, combines the powerful, familiar capabilities of Script Canvas and the Material Editor, allowing users to create generative materials and custom shaders.*
 
@@ -65,7 +65,7 @@ O3DE picks up the pace with this latest release, boasting increased performance 
 * **Terrain System:** A new [paintbrush](https://www.o3de.org/docs/user-guide/components/reference/paintbrush/paintbrush/) tool enables users to paint inside the viewport to create or modify terrain, while a new [Terrain Developer Guide](https://www.o3de.org/docs/user-guide/visualization/environments/terrain/terrain-developer-guide/) aids developers in using and extending the terrain system.
 * **VR/XR and Mobile Support:** New [OpenXR and OpenXRVk Gems](https://github.com/o3de/o3de/issues/12372) deliver support for OpenXR-compatible devices, such as Meta Quest 2, including stereoscopic rendering, while the addition of half-float support for the Atom renderer improves the performance on mobile devices.
 
-{{< image-width src="/images/blog/23-05-release/image07.png" width="100%" alt="Paintbrush Tool" >}}
+{{< image-width src="/images/blog/23-05-release/image07.jpg" width="100%" alt="Paintbrush Tool" >}}
 
 **Users can paint inside the viewport to create or modify terrain, aided by the new paintbrush tool.** 
 
