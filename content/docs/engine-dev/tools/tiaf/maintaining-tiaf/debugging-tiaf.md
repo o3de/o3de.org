@@ -190,6 +190,7 @@ The script configuration file used for this step is as follows:
                 "--test-failure-policy", "continue",
                 "--target-output", "stdout",
                 "--runtime-type", "native" // change to "python" for Python TIAF
+               ]
         }
     ]
 }
