@@ -61,6 +61,8 @@ To obtain permalinks for specific lines of code in a file in a GitHub repo:
 
 ![Use the "Copy permalink" menu option](/images/engine-dev/creating-github-block-permalinks.png)
 
+Alternatively, you can just manually add the line number range to the end of the file's permalink URL, using the format: `#Lnnn-Lnnn`, where `nnn` represents a line number.
+
 **Example**
 
 Link: `[SettingsInterface::Get](https://github.com/o3de/o3de/blob/69dbcd08a56539315bfb0472984daf0f46e7a966/Code/Tools/ProjectManager/Source/SettingsInterface.h#L31-L44)`
