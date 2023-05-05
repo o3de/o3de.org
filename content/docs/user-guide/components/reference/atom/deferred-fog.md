@@ -45,5 +45,5 @@ At this time, Deferred Fog does not interact with lighting.
 | **Noise Texture Second Octave Velocity** | The velocity of the noise texture's movement for the second octave, measured in meters per second. | Vector2: -Infinity to Infinity | X: `0.00275`, Y: `-0.004` |
 | **Octaves Blend Factor** |The amount of blend between the first and second octaves. A value of `1` displays only the first octave, while a value of `0` displays only the second octave. | Float: 0.0 - 1.0 | `0.4` |
 | **Enable Fog Layer** | If enabled, the fog is constrained between two points along the Z-axis, from **Fog Bottom Height** to **Fog Max Height**. | Boolean | `False` |
-| **Enable Deferred Fog** | If enabled, activates the fog effect in the scene. | Boolean | `False` |
+| **Enable Deferred Fog** | If enabled, activates the fog effect in the scene. | Boolean | `True` |
 | **Enable Turbulence Properties** | If enabled, creates cloud turbulence in the fog by using **Noise Texture**. Generate variations of cloud turbulence by configuring the first and second octaves.  | Boolean  | `False`  |
