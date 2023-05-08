@@ -61,6 +61,15 @@ O3DE asset system is a key part of managing and loading assets in a project. Thi
 |-|-|
 | [Metadata Relocation](./assets/metadata) | Learn about how the Metadata Relocation system functions, where the code is, and which file types may or may not be supported. |
 
+## Scene Pipeline
+
+Content in scene files, like `fbx` format files, are core to most O3DE projects. This section of the Engine Developer Guide provides details on the scene pipeline to help developers extend or modify the system for their needs.
+
+| Name | Description |
+|-|-|
+| [Open Asset Importer Library](./scenepipeline/openassetimporter) | Learn about the integration of the external library, Open Asset Importer. This library is used to load content from standard formats like `fbx`. |
+| [Adding New Scene File Formats](./scenepipeline/addingscenefiles) | Learn about extending the engine to support additional scene file formats. |
+
 ## Included Tools
 
 O3DE includes a handful of tools to support project development. Examples include **Asset Processor** (`AssetProcessor.exe`) and **Project Manager** (`o3de.exe`). This section of the Engine Developer Guide is for tools like these that are not part of any Gem. In these pages you will find detailed information and diagrams describing their architecture, for the benefit of developers who want to modify them.
