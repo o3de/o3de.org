@@ -112,7 +112,9 @@ To reproduce this particular AR run, perform the following steps:
 
 ### Step 1: Recreate the historic data locally
 
-To recreate the historic data locally, you can either use the [storage query tool](./storage-query-tool.md) to retrieve the relevant historic data for this run from the server running AR and place the contents in the `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke` directory, or recreate the historic data from scratch. As the latter approach is the most reliable (as it does not require access to the persistent storage used by AR), this is the approach that will be described below.
+The most reliable way to recreate the historic data locally is from scratch, as it does not require access to the persistent storage used by AR. Alternatively, you can also use the [storage query tool](./storage-query-tool.md) to retrieve the relevant historic data for this run from the server running AR and place the contents in the `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke` directory. 
+
+For this set of instructions, you will recreate the historic data locally from scratch.
 
 Checkout and build the commit used by the last run (in this instance `4b65521188a2a0beb399eca7b692216d2fe3d209`). For native runs, it is recommended you build the `debug` configuration to make debugging easier but for Python runs you must build the `profile` configuration as, at the time of writing, Python tests will not execute properly with the `debug` build configuration.
 
