@@ -10,7 +10,7 @@ When a prefab is open in [Prefab Edit Mode](/docs/learning-guide/tutorials/entit
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | --- | --- | --- | --- |
-| Beginner | 10 Minutes | Using prefab overrides to make prefab instances unique. | January 13, 2023 |
+| Beginner | 15 Minutes | Using prefab overrides to make prefab instances unique. | April 27, 2023 |
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Because prefabs instances reference a file, all instances of a prefab are identi
 
 The following image shows two instances of Car prefab in a level. The Car prefabs are expanded and open for editing:
 
-![Level in Prefab Edit Mode in Entity Outliner.](/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit.png)
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit.png" width="300" alt="Level in Prefab Edit Mode in Entity Outliner." >}}
 
 Overrides applied to prefab instances are registered for that individual prefab instance and are stored in the prefab being edited that contains the prefab instances.
 
@@ -39,7 +39,7 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 
 ## Enable prefab overrides
 
-To enable prefab overrides in Entity Outliner, create a settings registry file called `editorpreferences.setreg` with the following contents:
+To enable prefab overrides in Entity Outliner, create a settings registry file with the following contents:
 
 ```JSON
 {
@@ -57,6 +57,10 @@ An example of such file exists as a project-specific override in the AutomatedTe
 
 {{< note >}}
 It is recommended to add your `editorpreferences.setreg` file to the `<project-path>/user/Registry` directory as a user-specific override. Files in the user directory are ignored by git and won't be tracked for changes.
+{{< /note >}}
+
+{{< note >}}
+Starting in 23.05 release, prefab override management in Entity Outliner is enabled by default.
 {{< /note >}}
 
 You can apply the following types of overrides to prefabs:
@@ -78,7 +82,8 @@ To override a component property of an entity under a prefab instance:
 
 In the below image, the Body entity in the first Car prefab instance has an override to change the default color of the car from red to blue:
 
-![Overriding a component property.](/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-property.png)
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-property.png" width="750" alt="Overriding a component property." >}}
+
 ## Add an entity as an override
 
 To add an entity under a prefab instance as an override:
@@ -87,7 +92,21 @@ To add an entity under a prefab instance as an override:
 
 In the below image, an Antenna entity has been added to the first Car prefab instance.
 
-![Adding an entity as an override.](/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-add.png)
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-add.png" width="750" alt="Adding an entity as an override." >}}
+
+## Delete an entity or a nested prefab as an override
+
+To delete an entity or a nested prefab instance as an override:
+1. In Entity Outliner, **right-click** on an entity or a nested prefab instance and choose **Delete** from the context menu.
+1. Notice that a blue circle appears on the parent entity's icon in Entity Outliner. This indicates that a child has been deleted as an override.
+
+{{< note >}}
+In Entity Outliner, there is no visual indication of an entity or a prefab instance being deleted as an override at this time. The only way of getting rid of that type of overrides is through manual edit in `.prefab` file of the prefab instance being edited.
+{{< /note >}}
+
+{{< note >}}
+You cannot revert the deletion by reverting overrides on the parent entity. See the GitHub issue [#13437](https://github.com/o3de/o3de/issues/13437) for more details.
+{{< /note >}}
 
 ## Revert an override
 
@@ -96,7 +115,92 @@ Once an override has been registered, it will exist until explicitly removed. To
 1. In Entity Outliner, **right-click** on an entity with overrides and choose **Revert Overrides** from the context menu.
 1. Notice that the entity no longer has any indication of having overrides.
 
-![Reverting overrides on an entity.](/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-revert.png)
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-revert.png" width="300" alt="Reverting overrides on an entity." >}}
+
+## Prefab overrides in Entity Inspector
+
+The above sections describe how you can manage prefab overrides in Entity Outliner, however the visualization support is limited to the entity level. This section further demonstrates prefab override functionality in Entity Inspector.
+
+Prefab override management in Entity Inspector is developed based on the new *[Document Property Editor (DPE)](https://github.com/o3de/sig-content/issues/11)*, which aims to replace the old *Reflected Property Editor (RPE)*.
+
+### Enable prefab overrides in Entity Inspector
+
+First, you need to enable the new DPE feature:
+1. In **O3DE Editor**, from the **Tools** menu, choose **Console Variables**.
+1. In Console Variables editor, set the `ed_enableDPE` flag to true.
+
+Alternatively, if you want the flag to be automatically enabled when O3DE Editor starts, you can create a settings registry file with the following contents:
+
+```json
+{
+    "O3DE": {
+        "Autoexec": {
+            "ConsoleCommands": {
+                "ed_enableDPE": true
+            }
+        }
+    }
+}
+```
+
+{{< note >}}
+If you manually enable or disable the DPE through the Console Variables editor, you might need to close and reopen the Entity Inspector to take effect.
+{{< /note >}}
+
+Second, to enable prefab overrides in inspector, you can append to the settings registry file with the following contents:
+
+```json
+{
+    "O3DE": {
+        "Preferences": {
+            "Prefabs": {
+                "EnableInspectorOverrideManagement": true
+            }
+        }
+    }
+}
+```
+
+{{< note >}}
+You can create a new settings registry file or reuse existing settings registry files that you have already created.
+{{< /note >}}
+
+### Override visualization
+
+When you make an override edit in the inspector, you will notice that a blue circle appears before the property label and the label text is bolded. In the component header, a blue circle is also shown near the text, which indicates that an owning property value has been overridden.
+
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-component-property.png" width="450" alt="Overriding a component property." >}}
+
+If a component is added as an override, a different blue circle with a plus sign appears next to the component name instead.
+
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-add-component-override.png" width="450" alt="Adding a component as an override." >}}
+
+### Revert property overrides
+
+With the inspector override support, you can now revert overridden property values respectively. Unlike reverting overrides on an entity, you can selectively revert the property you want:
+
+1. In Entity Inspector, **right-click** on the property label or the blue circle and choose **Revert override** from the context menu.
+1. Notice that the property no longer has any indication of having an override.
+
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-revert-component-property-override.png" width="450" alt="Reverting a component property override." >}}
+
+{{< note >}}
+Once a property value is overridden to non-default value, the override edit can only be removed by doing a revert. In other words, setting the value back to default does not remove the override edit.
+{{< /note >}}
+
+In addition, you are able to revert all property overrides that are owned by a component:
+
+1. In Entity Inspector, **right-click** on the blue circle in the component header and choose **Revert Overrides** from the context menu.
+1. Notice that all the properties no longer have any indication of having an override.
+
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-revert-component-override.png" width="450" alt="Reverting a component added as an override." >}}
+
+For a component added as an override, you can revert the addition in the same way mentioned above. Alternatively, you can delete the component with either of the following methods:
+
+1. In Entity Inspector, **right-click** a component and choose **Delete component** from the context menu.
+1. With a component selected, press **DEL**.
+
+For a component deleted as an override, you can revert the deletion by reverting all overrides on the selected entity. However, be aware that this would remove other overrides if they are present.
 
 ## Conclusion and next steps
 
