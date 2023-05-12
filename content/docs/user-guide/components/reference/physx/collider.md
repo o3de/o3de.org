@@ -105,13 +105,13 @@ Sphere resize mode has one linear manipulator that controls the **Radius** prope
 
 ### Resize (Box Shape)
 
-Box resize mode has six linear manipulators, one on each side of the box. The manipulators control the width, depth, and height **Dimensions** property.
+Box resize mode has six linear manipulators, one on each side of the box. The manipulators control the width, depth, and height aspects of the **Dimensions** property. By default, each face of the box can be separately edited. Hold **Shift** to edit opposite pairs of faces symmetrically.
 
 ![PhysX Primitive Collider component mode box resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-box.png)
 
 ### Resize (Capsule Shape)
 
-Capsule resize mode has two linear manipulators. The manipulator at the top of the capsule controls the **Height** property. The manipulator on the side controls the **Radius** property.
+Capsule resize mode has three linear manipulators. The manipulators at the top and bottom of the capsule control the **Height** property. By default, each end of the capsule can be separately edited. Hold **Shift** to edit both ends symmetrically. The manipulator on the side controls the **Radius** property.
 
 ![PhysX Primitive Collider component mode capsule resize manipulator](/images/user-guide/components/reference/physx/physx-collider-resize-capsule.png)
 

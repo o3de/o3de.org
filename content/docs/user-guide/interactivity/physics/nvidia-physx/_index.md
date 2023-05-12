@@ -5,6 +5,7 @@ title: Simulating physics behavior with the PhysX system
 weight: 100
 ---
 
+
 O3DE's PhysX system acts upon entities to create realistic physical effects such as collision detection and rigid body dynamics simulation. 
 
 **Topics**
@@ -24,6 +25,7 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 + [Determinism](#determinism)
 <!-- + [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/) -->
 
+
 ## PhysX Gems 
 
 The PhysX system uses the following Gems, which you can enable in **Project Manager**.
@@ -35,6 +37,16 @@ The PhysX system uses the following Gems, which you can enable in **Project Mana
 
   For more information, see [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/).
 
+## PhysX version support
+
+O3DE uses PhysX 4.1 by default. You can enable PhysX 5.1 by specifying `-DAZ_USE_PHYSX5=ON` as a command-line option in the configuration step when you configure and build your project or the engine. The following is an an example configuration command that enables PhysX 5.1.
+
+```cmd
+cmake -B build/windows -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DAZ_USE_PHYSX5=ON
+```
+
+For more information on configuring and building projects see the [Configure and Build](/docs/user-guide/build/configure-and-build/) topic.
+
 ## PhysX Components 
 
 The **PhysX** gem has the following components, which you can [add](/docs/user-guide/components/reference/#adding-components-to-an-entity) to entities by using the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector/):
@@ -42,7 +54,8 @@ The **PhysX** gem has the following components, which you can [add](/docs/user-g
 + **[PhysX Mesh Collider](/docs/user-guide/components/reference/physx/mesh-collider/)** - Enables physics objects to collide with other physics objects, using shapes defined by a PhysX asset.
 + **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)** - Enables physics objects to collide with other physics objects, using geometry defined by a **[Shape component](/docs/user-guide/components/reference/shape/)**.
 + **[PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/)** - Enables an entity to specify a region that applies physical force to entities. For each physics simulation frame, the component applies force to entities that are in the bounds of the region.
-+ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)** - Enables an entity to be simulated by physics. Rigid body mode can be **kinematic** or **dynamic**. Dynamic rigid bodies respond to collision events with other rigid bodies. Kinematic rigid bodies are not affected by outside forces and gravity; their motion is driven by scripting.
++ **[PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/)** - Enables a non-movable entity to be part of the physics simulation. Static rigid bodies can collide other simulated rigid bodies.
++ **[PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/)** - Enables a movable entity to be part of the physics simulation. Dynamic Rigid body type can be **kinematic** or **simulated**. Simulated rigid bodies respond to collision events with other rigid bodies. Kinematic rigid bodies are not affected by outside forces and gravity; their motion is driven by scripting.
 + **[PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/)** - Implements basic character interactions with the physical world. For example, it can control interactions with slopes and steps, manage interactions with other characters, and prevent characters from walking through walls or passing through terrain.
 + **[PhysX Character Gameplay](/docs/user-guide/components/reference/physx/character-gameplay/)** - Provides example implementations for character controller behaviors which are likely to require game-specific tweaking, such as detecting whether the character is on the ground, interacting with gravity, and behavior for interacting with kinematic bodies and other controllers. 
 + **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)** - Enables animation of certain character behaviors. The physical representation is usually a hierarchical collection of rigid bodies with simple shapes connected by joints.

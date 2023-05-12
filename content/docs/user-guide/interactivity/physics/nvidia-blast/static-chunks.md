@@ -40,6 +40,6 @@ If the specified chunk has been fractured, its descendants are also static when 
 
 1. Enable the **Static root** parameter in the **Blast Export** SOP before exporting the asset.
 
-See the result simulation in O3DE below. A large, invisible PhysX rigid body collider is dropped on the rabbit. The front half of the rabbit is destroyed. The chunks are simulated as dynamic rigid bodies while the back of the rabbit remains in place.
+See the result simulation in O3DE below. A large, invisible PhysX Dynamic Rigid Body collider is dropped on the rabbit. The front half of the rabbit is destroyed. The chunks are simulated as dynamic rigid bodies while the back of the rabbit remains in place.
 
 ![Create static chunks in Houdini for NVIDIA Blast.](/images/user-guide/physx/blast/anim-nvidia-blast-static-simulation.gif)

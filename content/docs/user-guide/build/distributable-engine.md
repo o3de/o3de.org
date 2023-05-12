@@ -27,7 +27,7 @@ These instructions use the following example paths:
 
 These instructions use the following example CMake cache values:
 
-* `LY_VERSION_ENGINE_NAME`: "MyO3DE"
+* `O3DE_INSTALL_ENGINE_NAME`: "MyO3DE"
 
 {{< note >}}
 This example uses the Visual Studio generators and Windows `cmd` syntax for command-line instructions. For Linux users, change your CMake generator to `Ninja Multi-Config`, use a different build directory for CMake, and modify CLI syntax accordingly. Make sure that distributable engines on Linux systems are hosted on an `ext*`-format filesystem for performance reasons.
@@ -92,7 +92,7 @@ Run the following step from the distributable install directory:
 
 ### Register the engine
 
-The next step in creating a distributable build of the engine tools is to register the locally installed engine. You must re-run this registration step any time you make a change to `LY_VERSION_ENGINE_NAME`.
+The next step in creating a distributable build of the engine tools is to register the locally installed engine. You must re-run this registration step any time you make a change to `O3DE_INSTALL_ENGINE_NAME`.
 
 Register the engine locally with the `o3de` script. Run the following command from your distributable install directory:
     
@@ -128,7 +128,7 @@ Use the `o3de` script to re-register your project with the install build. This w
 scripts\o3de.bat register -pp W:\MyProject
 ```
 
-The `engine` field of the `project.json` file will now be the name of the engine that was set as `LY_ENGINE_VERSION_NAME` during configuration.
+The `engine` field of the `project.json` file will now be the name of the engine that was set as `O3DE_INSTALL_ENGINE_NAME` during configuration.
 
 ## Perform a project build
 
