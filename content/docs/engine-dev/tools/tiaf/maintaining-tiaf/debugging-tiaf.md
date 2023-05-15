@@ -253,7 +253,7 @@ After the script has executed, you will see the same result as the failing AR ru
 ```
 
 {{< note >}}
-This step need only be performed once and the change list and arguments reused as needed.
+You only need to do this step once, and you can reuse the change list and arguments as needed.
 {{< /note >}}
 
 ### Step 3: Run the TIAF runtime with a debugger attached
