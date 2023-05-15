@@ -236,7 +236,7 @@ The purpose of this step is to generate the change list and arguments used by th
     ```
 
 
-    3. Run the TIAF script to generate the change list and arguments used by the TIAF runtime.     
+3. Run the TIAF script to generate the change list and arguments used by the TIAF runtime.     
 
 After the script has executed, you will see the same result as the failing AR run (in this instance, a crash) as well as the change list and arguments for the TIAF runtime. The TIAF log output states the following command line options used by the TIAF runtime:
 ```
