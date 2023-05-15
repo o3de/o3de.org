@@ -244,7 +244,10 @@ The purpose of this step is to generate the change list and arguments used by th
     }
     ```
 
-When the script has completed execution you will see the same result as the failing AR run (in this instance, a crash) as well as the change list and arguments for the runtime.
+After the script has executed, you will see the same result as the failing AR run (in this instance, a crash) as well as the change list and arguments for the TIAF runtime. The TIAF log output states the following command line options used by the TIAF runtime:
+```
+[2023-04-30 00:34:45,577][TIAF][INFO] Args: --sequence=tianowrite --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --ipolicy=continue --changelist=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\changelist.b9ad24eef8544d43a9d3fa75912532d4.json --report=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\Reports\report.b9ad24eef8544d43a9d3fa75912532d4.json --targetout=stdout
+```
 
 {{< note >}}
 This step need only be performed once and the change list and arguments reused as needed.
