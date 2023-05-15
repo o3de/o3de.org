@@ -40,7 +40,7 @@ To reproduce an AR run locally, you must first obtain all of the environmental i
 
 3. At the top of the console output, see the output of the TIAF script prior to the invocation of the appropriate runtime. For example: 
 
-```
+    ```
 [2023-04-28T22:54:36.872Z] 
 [2023-04-28T22:54:36.886Z] D:\workspace\o3de>python\python.cmd -u scripts\build\ci_build.py --platform Windows --type test_impact_analysis_profile_native 
 [2023-04-28T22:54:36.886Z] [ci_build] Executing "D:\workspace\o3de\scripts\build\Platform/Windows/python_windows.cmd"
