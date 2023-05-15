@@ -97,7 +97,7 @@ To reproduce an AR run locally, you must first obtain all of the environmental i
     script returned exit code -1
     ```
 
-In this instance, the native TIAF runtime is crashing in AR, but not crashing when running locally. This is typically because the issue is related to the historic data and the delta of changes between the last AR run and this failing AR run.
+In this instance, the native TIAF runtime crashes in the AR run, but doesn't crash when run locally. Typically, this issue relates to the historic data and the delta of changes between the last AR run and this failing AR run.
 
 In the log above, you can extract the following information about the AR run and runtime invocation:
 
