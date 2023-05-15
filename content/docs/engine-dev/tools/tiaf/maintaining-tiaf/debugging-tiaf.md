@@ -155,13 +155,13 @@ To reproduce this particular AR run, perform the following steps:
 
 The most reliable way to recreate the historic data locally is from scratch, as it does not require access to the persistent storage used by AR. Alternatively, you can also use the [storage query tool](./storage-query-tool.md) to retrieve the relevant historic data for this run from the server running AR and place the contents in the `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke` directory. 
 
-For this set of instructions, you will recreate the historic data locally from scratch.
+1. Checkout and build the commit used by the last run (in this instance `4b65521188a2a0beb399eca7b692216d2fe3d209`). 
 
-Checkout and build the commit used by the last run (in this instance `4b65521188a2a0beb399eca7b692216d2fe3d209`). For native runs, it is recommended you build the `debug` configuration to make debugging easier but for Python runs you must build the `profile` configuration as, at the time of writing, Python tests will not execute properly with the `debug` build configuration.
+    {{< note >}}
+For native runs, we recommend you build the `debug` configuration because it provides more helpful debugging information. However, for Python runs you must build the `profile` configuration because Python tests don't execute properly with the `debug` build configuration.
+{{< /note >}}
 
-Run the TIAF using the AR scripts to generate the historic data used in the failing AR run locally. To do so, run the [tiaf_driver.py](https://github.com/o3de/o3de/blob/development/scripts/build/TestImpactAnalysis/tiaf_driver.py) script and supply the arguments used in the AR run. For this demonstration, Visual Studio Code will be used. 
-
-The script configuration file used for this step is as follows:
+2. Configure the TIAF script to use the following arguments, which you obtained in the [Prerequisite](#prerequisite) step. (This example configuration file is for Visual Studio Code.)
 
 ```json
 {
