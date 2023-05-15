@@ -164,35 +164,32 @@ For native runs, we recommend you build the `debug` configuration because it pro
 2. Configure the TIAF script to use the following arguments, which you obtained in the [Prerequisite](#prerequisite) step. (This example configuration file is for Visual Studio Code.)
 
 ```json
-{
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "args": [
-                "--config", "C:/dev/o3de/build/windows_vs2019/bin/TestImpactFramework/debug/Persistent/tiaf.json", // Replace with your build path to tiaf.json
-                "--src-branch", "development", // src and dst must be same in order to write out historic data
-                "--dst-branch", "development", // Note: the src and dst branches can be any name and do not need to refer to real, existing branches
-                "--commit", "4b65521188a2a0beb399eca7b692216d2fe3d209",
-                "--mars-index-prefix", "o3de-tiaf",
-                "--build-number", "001", // The build number can be anything
-                "--suites", "smoke", "main", // The suites must match those used in AR
-                "--label-excludes", "REQUIRES_gpu", // The label exclude filters must match those used in AR
-                "--test-failure-policy", "continue",
-                "--target-output", "stdout",
-                "--runtime-type", "native" // change to "python" for Python TIAF
-            ]
-        }
-    ]
-}
+    {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "justMyCode": true,
+                "args": [
+                    "--config", "C:/dev/o3de/build/windows_vs2019/bin/TestImpactFramework/debug/Persistent/tiaf.json", // Replace with your build path to tiaf.json
+                    "--src-branch", "development", // src and dst must be same in order to write out historic data
+                    "--dst-branch", "development", // Note: the src and dst branches can be any name and do not need to refer to real, existing branches
+                    "--commit", "4b65521188a2a0beb399eca7b692216d2fe3d209",
+                    "--mars-index-prefix", "o3de-tiaf",
+                    "--build-number", "001", // The build number can be anything
+                    "--suites", "smoke", "main", // The suites must match those used in AR
+                    "--label-excludes", "REQUIRES_gpu", // The label exclude filters must match those used in AR
+                    "--test-failure-policy", "continue",
+                    "--target-output", "stdout",
+                    "--runtime-type", "native" // change to "python" for Python TIAF
+                ]
+            }
+        ]
+    }
 ```
 
 When the script has completed execution you will find the same historic data used in AR at the location `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke`.
