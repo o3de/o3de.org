@@ -99,7 +99,7 @@ To reproduce an AR run locally, you must first obtain all of the environmental i
 
 In this instance, the native TIAF runtime crashes in the AR run, but doesn't crash when run locally. Typically, this issue relates to the historic data and the delta of changes between the last AR run and this failing AR run.
 
-In the log above, you can extract the following information about the AR run and runtime invocation:
+From the output of the TIAF AR script, you can gather information about the AR run's environment and the TIAF runtime invocation. For this example, observe the following details:
 
 - The arguments used to invoke the AR script are as follows:
 
