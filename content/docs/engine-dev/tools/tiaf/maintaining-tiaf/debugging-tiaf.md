@@ -136,7 +136,13 @@ From the output of the TIAF AR script, you can gather information about the AR r
 - The arguments used to invoke the native TIAF runtime were as follows:
 
     ```
-    --sequence=tianowrite --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --ipolicy=continue --changelist=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\Reports\report.06011392e5a7456e817cda03f8f8c606.json --targetout=stdout
+    --sequence=tianowrite 
+    --fpolicy=continue 
+    --suites=main,smoke 
+    --labelexcludes=REQUIRES_gpu 
+    --ipolicy=continue --changelist=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.json 
+    --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\Reports\report.06011392e5a7456e817cda03f8f8c606.json 
+    --targetout=stdout
     ```
 
 To reproduce this particular AR run, perform the following steps:
