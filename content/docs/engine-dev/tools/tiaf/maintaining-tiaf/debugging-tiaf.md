@@ -258,12 +258,6 @@ You only need to do this step once, and you can reuse the change list and argume
 
 ### Step 3: Run the TIAF runtime with a debugger attached
 
-In the previous step, the TIAF log output states the command line options used by the runtime:
-
-```
-[2023-04-30 00:34:45,577][TIAF][INFO] Args: --sequence=tianowrite --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --ipolicy=continue --changelist=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\changelist.b9ad24eef8544d43a9d3fa75912532d4.json --report=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\Reports\report.b9ad24eef8544d43a9d3fa75912532d4.json --targetout=stdout
-```
-
 Thus, the arguments we need to supply to the runtime in your IDE are as follows:
 
 ```
