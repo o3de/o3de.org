@@ -252,31 +252,33 @@ If the cause of the AR failure is a specific test target failing or crashing, fi
 
 To manually launch a given test target from the command line as per the method used by TIAF (for example, to inspect the test run and coverage data), open up the `historic_data.json` in the `Persistent` directory and locate the test target's `command_args` field in that file. For example, the (truncated) historic data for the local run in the first step shows the command line arguments needed to invoke the `Gem_Metastream.Tests` test target from your terminal:
 
-```json
-"last_commit_hash":"4b65521188a2a0beb399eca7b692216d2fe3d209",
-   "historic_sequences":{
-      "4b65521188a2a0beb399eca7b692216d2fe3d209":null
-   },
-   "previous_test_runs":[
-      {
-         "name":"Gem_Metastream.Tests",
-         "command_args":"\"C:\\dev\\OpenCppCoverage\\x64\\Release\\OpenCppCoverage.exe\" --coverage_level source --export_type cobertura:\"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\TestImpactFramework\\debug\\Temp\\Native\\Coverage\\Metastream.Tests.xml\" --modules \"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\debug\" --excluded_modules \"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\debug\\AzTestRunner.exe\" --sources \"C:\\dev\\o3de\" -- \"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\debug\\AzTestRunner.exe\" \"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\debug\\Metastream.Tests.dll\" AzRunUnitTests --gtest_output=xml:\"C:\\dev\\o3de\\build\\windows_vs2019\\Testing\\Gtest\\Gem_Metastream.Tests.xml\" ",
-         "start_time":2257721140,
-         "end_time":2258136771,
-         "duration":415631,
-         "result":"all_tests_pass",
-         "num_passing_tests":1,
-         "num_failing_tests":0,
-         "num_disabled_tests":0,
-         "tests":[
-            {
-               "name":"MetastreamTest.ServerStartupShutdownTest_FT",
-               "result":"passed"
-            }
-         ]
-      },
-      // rest of data removed for clarity
-```
+    ```json
+    "last_commit_hash":"4b65521188a2a0beb399eca7b692216d2fe3d209",
+    "historic_sequences":{
+        "4b65521188a2a0beb399eca7b692216d2fe3d209":null
+    },
+    "previous_test_runs":[
+        {
+            "name":"Gem_Metastream.Tests",
+            "command_args":"\"C:\\dev\\OpenCppCoverage\\x64\\Release\\OpenCppCoverage.exe\" --coverage_level source --export_type cobertura:\"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\TestImpactFramework\\debug\\Temp\\Native\\Coverage\\Metastream.Tests.xml\" --modules \"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\debug\" --excluded_modules \"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\debug\\AzTestRunner.exe\" --sources \"C:\\dev\\o3de\" -- \"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\debug\\AzTestRunner.exe\" \"C:\\dev\\o3de\\build\\windows_vs2019\\bin\\debug\\Metastream.Tests.dll\" AzRunUnitTests --gtest_output=xml:\"C:\\dev\\o3de\\build\\windows_vs2019\\Testing\\Gtest\\Gem_Metastream.Tests.xml\" ",
+            "start_time":2257721140,
+            "end_time":2258136771,
+            "duration":415631,
+            "result":"all_tests_pass",
+            "num_passing_tests":1,
+            "num_failing_tests":0,
+            "num_disabled_tests":0,
+            "tests":[
+                {
+                "name":"MetastreamTest.ServerStartupShutdownTest_FT",
+                "result":"passed"
+                }
+            ]
+        }
+    
+        // rest of data removed for clarity
+    ]
+    ```
 
 To run `Gem_Metastream.Tests` test target from your terminal, use the following command, changing the paths to your build of OpenCppCoverage and O3DE accordingly:
 
