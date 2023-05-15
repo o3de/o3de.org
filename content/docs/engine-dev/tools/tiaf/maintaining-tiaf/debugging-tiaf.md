@@ -153,7 +153,7 @@ To reproduce this particular AR run, perform the following steps:
 
 ### Step 1: Recreate the historic data locally
 
-The most reliable way to recreate the historic data locally is from scratch, as it does not require access to the persistent storage used by AR. Alternatively, you can also use the [storage query tool](./storage-query-tool.md) to retrieve the relevant historic data for this run from the server running AR and place the contents in the `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke` directory. 
+The most reliable way to recreate the historic data locally is from scratch, as it does not require access to the persistent storage used by AR. Alternatively, you can also use the [storage query tool](./storage-query-tool.md), which retrieves this run's historic data from the server that's running AR and places the contents in the `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke` directory. 
 
 1. Checkout and build the commit used by the last run (in this instance `4b65521188a2a0beb399eca7b692216d2fe3d209`). 
 
