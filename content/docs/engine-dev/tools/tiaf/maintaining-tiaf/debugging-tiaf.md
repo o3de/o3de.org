@@ -246,7 +246,7 @@ For this AR run, the cause of the crash was due to an edge case where a test tar
 You will save a lot of time by reproducing issues with the TIAF itself locally rather than attempting to debug them in AR with the limited tooling available.
 {{< /tip >}}
 
-### Running failing tests
+### Running specific test targets
 
 If the cause of the AR failure is a specific test target failing or crashing, find the offending test target in your IDE and run it with your debugger attached.
 
