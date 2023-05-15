@@ -195,7 +195,10 @@ For native runs, we recommend you build the `debug` configuration because it pro
 When the script has completed execution you will find the same historic data used in AR at the location `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke`.
 
 {{< tip >}}
-Subsequent runs of CMake will delete the contents of this directory. If you wish to place the historic data in another location to preserve it between runs of CMake, copy the `tiaf.json` file from your build location to somewhere convenient and modify the `root` path in the `historic` section of the appropriate runtime of this file to this new location. Now you can change the path for `config` argument in the `tiaf_driver.py` script to that of the `tiaf.json` configuration file you modified.
+Subsequent runs of CMake will delete the contents of this directory. If you wish to preserve the historic data in between CMake runs, do the following: 
+1. In your build path, copy the `tiaf.json` file to a new location (of your choice). 
+2. In `tiaf.json`, in the `historic` section of the appropriate runtime, modify the `root` path to the new location.
+3. In `tiaf_driver.py`, change the `config` argument to the new location of `tiaf.json`.
 {{< /tip >}}
 
 ### Step 2: Build and run the commit failing in AR
