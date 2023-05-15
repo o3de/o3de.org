@@ -41,6 +41,7 @@ Symbolic links are not supported when using Asset Processor. To ensure that Asse
 | [Asset Processor Batch](asset-processor-batch) | Use Asset Processor batch to batch process the source assets for a project in an automated build system. |
 | [Configuration](configuration) | Configure Asset Processor by setting options in the `AssetProcessorPlatformConfig.setreg` configuration file. |
 | [Faster Scanning](faster-scanning) | Learn how Asset processor determines when assets should be processed and how to set Asset Processor's scanning mode. |
+| [Skip Startup Scan](skip-startup-scan) | Learn to skip startup checks for assets modified while AssetProcessor was closed. |
 | [Debugging](debugging) | Learn several methods you can use to debug Asset Processor issues. |
 | [Move Assets](move-assets) | Learn how to move assets to new directory locations in O3DE while maintaining internal references. |
 | [Asset Cache Server](asset-cache-server) | Learn how to enable the Asset Processor to cache assets in order to reduce asset processing for a team. |

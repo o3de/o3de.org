@@ -8,7 +8,7 @@ toc: true
 The **PhysX Shape Collider** component adds PhysX collider based on a **Shape** component so that the entity can be included in PhysX simulation. The PhysX Shape Collider component can also define a trigger area or a force region.
 
 {{< note >}}
-The PhysX Shape Collider component attached to an entity by itself creates a *static* (non-moving) entity. Add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component with a PhysX Shape Collider component to create a *dynamic* or a *kinematic* entity. Dynamic colliders have simulated movement in response to collisions and forces. Kinematic colliders aren't affected by collisions or forces, but are driven by scripted movement.
+Add a [PhysX Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) component with a PhysX Shape Collider component to create a *static* entity that will never move. Add a [PhysX Dynamic Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) component to create a *simulated* or a *kinematic* entity. Simulated entities move in response to collisions and forces. Kinematic entities aren't affected by collisions or forces, but are driven by scripted movement.
 {{< /note >}}
 
 ## Provider

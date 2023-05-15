@@ -130,14 +130,14 @@ The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/
 Support for Ubuntu on 64-bit ARMv8 processors is in an experimental stage.
 {{< /note >}}
 
-The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt-get` command-line utility.
+The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt` command-line utility.
 
 ### CMake {#linux-cmake}
 
 As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it with the following command.
 
 ```shell
-sudo apt-get remove cmake
+sudo apt remove cmake
 ```
 
 Install CMake using the instructions for the version of Ubuntu that you have installed:
@@ -145,16 +145,16 @@ Install CMake using the instructions for the version of Ubuntu that you have ins
 {{< tabs name="CMake install" >}}
 {{% tab name="20.04 LTS" %}}
 
-In order to get the latest version of CMake for Ubuntu 20.04 LTS, you can add the Kitware APT repository to your Ubuntu package list and run `apt-get` to install it. Refer to [Kitware APT Page](https://apt.kitware.com/) for more information.
+In order to get the latest version of CMake for Ubuntu 20.04 LTS, you can add the Kitware APT repository to your Ubuntu package list and run `apt` to install it. Refer to [Kitware APT Page](https://apt.kitware.com/) for more information.
 
 ```shell
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
 
 echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ focal main' | sudo tee /etc/apt/sources.list.d/kitware.list >/dev/null
 
-sudo apt-get update
+sudo apt update
 
-sudo apt-get install cmake
+sudo apt install cmake
 ```
 
 {{% /tab %}}
@@ -163,7 +163,7 @@ sudo apt-get install cmake
 You can install the default version of CMake for Ubuntu 22.04 LTS. For additional information, refer to the CMake [download page](https://cmake.org/download/#latest).
 
 ```shell
-sudo apt-get install cmake
+sudo apt install cmake
 ```
 
 {{% /tab %}}
@@ -187,7 +187,7 @@ Install Clang using the instructions for the version of Ubuntu that you have ins
 The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a version as part of the install command.
 
 ```shell
-sudo apt-get install clang-12 
+sudo apt install clang-12 
 ```
 
 {{% /tab %}}
@@ -196,7 +196,7 @@ sudo apt-get install clang-12
 You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14.
 
 ```shell
-sudo apt-get install clang
+sudo apt install clang
 ```
 
 {{% /tab %}}
@@ -227,7 +227,7 @@ O3DE also requires some additional library packages to be installed:
 * libunwind-dev
 * libzstd-dev
 
-You can download and install these packages through `apt-get`.
+You can download and install these packages through `apt`.
 
 ```shell
 sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev libssl-dev libunwind-dev libzstd-dev
@@ -237,10 +237,10 @@ sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-
 
 By default, CMake uses Unix Makefiles for building O3DE. O3DE supports multiple build configurations (debug, profile, and release), which you specify when building O3DE. Unix Makefiles only supports single-configuration builds, so you must determine which configuration you want to build when you generate the project. All project builds are based on that configuration. In order to change the build configuration, you need to regenerate the project with the different configuration. This process restricts O3DE's support for multiple-configuration builds and slows down building workflows.
 
-The Ninja build system is an alternative to Linux's default Unix Makefiles. The Ninja build system makes it easier to generate, configure, and build your project. With the Ninja build system, specifically [Ninja Multi-Config](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html), you can generate the project once and determine which configuration to build during build time. We recommend that you use this generator for O3DE development. You can install the Ninja build tool through `apt-get`.
+The Ninja build system is an alternative to Linux's default Unix Makefiles. The Ninja build system makes it easier to generate, configure, and build your project. With the Ninja build system, specifically [Ninja Multi-Config](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html), you can generate the project once and determine which configuration to build during build time. We recommend that you use this generator for O3DE development. You can install the Ninja build tool through `apt`.
 
 ```shell
-sudo apt-get install ninja-build
+sudo apt install ninja-build
 ```
 
 ## macOS

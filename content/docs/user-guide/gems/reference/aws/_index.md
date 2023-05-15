@@ -18,7 +18,7 @@ When you create a resource, it exists in the cloud, but you can use it and manag
 
 ## Resource groups
 
-To create an AWS-connected feature, such as a metrics reporting pipeline, AWS Gems use the [AWS Cloud Development Kit](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html) (AWS CDK) to model and deploy resources. Each AWS Gem contains an AWS CDK application that defines the AWS resources that the feature requires. Because the AWS CDK applications model resources as code, you can extend or combine AWS CDK constructs to create powerful backend services.
+To create an AWS-connected feature, such as a metrics reporting pipeline, AWS Gems use the [AWS Cloud Development Kit](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html) (AWS CDK) to model and deploy resources. Each AWS Gem contains an AWS CDK application that defines the AWS resources that the feature requires. Because the AWS CDK applications model resources as code, you can extend or combine AWS CDK constructs to create powerful backend services.
 
 ## AWS accounts
 

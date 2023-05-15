@@ -45,7 +45,7 @@ W: Repository is broken: o3de:amd64 (= 23.05.0) has no Size information
 This is a bug in apt that has already been fixed. The warning should go away once your current Linux distribution takes the fix. The issue is a warning and does not affect installing or removing.
     {{< /known-issue >}}
 
-    O3DE will be installed in the default location: `/opt/O3DE/<version>`, where `<version>` is the version of the installer. Example: `23.05.0`.
+    O3DE will be installed in the default location: `/opt/O3DE/<version>`, where `<version>` is the version of the installer. Example: `2305_0`.
 
 1. During installation, the installer downloads additional packages as needed. The process can take some time, depending on your internet connection speed and what packages were already installed. An example output looks like the following (versions and paths may not match):
     ```shell
@@ -76,7 +76,7 @@ When installation is complete, you can find **Project Manager** and other tools 
 
 Example of launching Project Manager from the shell:
 ```shell
-/opt/O3DE/23.05.0/bin/Linux/profile/Default/o3de
+/opt/O3DE/2305_0/bin/Linux/profile/Default/o3de
 ```
 
 ## Removing O3DE installed from a deb package

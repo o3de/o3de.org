@@ -12,8 +12,7 @@ toc: true
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
-* Download and install [O3DE debian package, version 2305](https://www.o3de.org/docs/welcome-guide/setup/installing-linux/)
-  * Alternatively, you can work with [O3DE built from source on Linux](/docs/welcome-guide/setup/setup-from-github/building-linux).
+* [O3DE built from source on Linux](/docs/welcome-guide/setup/setup-from-github/building-linux).
 * The [latest released version](https://docs.ros.org/en/rolling/Releases.html#list-of-distributions ) of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. 
   * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) with Ubuntu 22.04.
 
@@ -76,13 +75,11 @@ git clone https://github.com/o3de/o3de-extras
 
 To use the ROS 2 Gem in any O3DE project, you need to register it with O3DE.
 
-For convenience, set three environment variables:` O3DE_VERSION` to the version of your O3DE installer, 
-`O3DE_HOME` to where your O3DE is located and `O3DE_EXTRAS_HOME` to the path of your cloned o3de-extras repository.
-Make sure to adjust the following example:
+For convenience, set a couple of environment variables: `O3DE_HOME` to where your O3DE is located and `O3DE_EXTRAS_HOME`
+to the path of your cloned o3de-extras repository, for example:
 
 ```shell
-export O3DE_VERSION=23.05.0
-export O3DE_HOME=/opt/O3DE/${O3DE_VERSION}
+export O3DE_HOME=${HOME}/o3de
 export O3DE_EXTRAS_HOME=${HOME}/o3de-extras
 ```
 

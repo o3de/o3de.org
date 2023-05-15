@@ -26,7 +26,7 @@ This section is currently incomplete, with a stub example for application bootst
 | Name | Description |
 |-|-|
 | [Project bootstrapping](./architecture/bootstrap) | Learn about the execution flow of project launchers and how O3DE loads libraries at project runtime. |
-
+| [Prefab System](./architecture/prefabs) | Learn about the prefab system, which is the default scene authoring system in O3DE. |
 
 ## O3DE Frameworks
 
@@ -60,6 +60,15 @@ O3DE asset system is a key part of managing and loading assets in a project. Thi
 | Name | Description |
 |-|-|
 | [Metadata Relocation](./assets/metadata) | Learn about how the Metadata Relocation system functions, where the code is, and which file types may or may not be supported. |
+
+## Scene Pipeline
+
+Content in scene files, like `fbx` format files, are core to most O3DE projects. This section of the Engine Developer Guide provides details on the scene pipeline to help developers extend or modify the system for their needs.
+
+| Name | Description |
+|-|-|
+| [Open Asset Importer Library](./scenepipeline/openassetimporter) | Learn about the integration of the external library, Open Asset Importer. This library is used to load content from standard formats like `fbx`. |
+| [Adding New Scene File Formats](./scenepipeline/addingscenefiles) | Learn about extending the engine to support additional scene file formats. |
 
 ## Included Tools
 

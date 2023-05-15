@@ -48,8 +48,8 @@ Configurable settings include the following.
 
 The AWS Metrics Gem uses an [Event JSON Schema](./event-schema/) for validating the metrics events submitted from the client or sent to the Service API. Any metrics event that fails the validation will be dropped. Any custom metrics attributes that are not defined in the schema will be added to the `event_data` field of the metrics event as a flat JSON dictionary.
 
-If you want to customize the schema, update it in both `Gems\AWSMetrics\Code\Include\Public\AWSMetricsConstant.h` and `api_spec.json` inside your CDK application. You will need to rebuild your project and redeploy your CDK application after this change.
+If you want to customize the schema, update it in both `Gems\AWSMetrics\Code\Include\Public\AWSMetricsConstant.h` and `api_spec.json` inside your AWS CDK application. You will need to rebuild your project and redeploy your AWS CDK application after this change.
 
 ## Migrate to production-ready solution
 
-The sample CDK application provides a reasonable starting point to use AWS analytics services that is thoughtful with respect to security, cost, and usability. Experienced developers can also customize the CDK application or even migrate it to the production-ready solution detailed in the AWS guide on the [Game Analytics Pipeline](https://aws.amazon.com/solutions/implementations/game-analytics-pipeline/).
+The sample AWS CDK application provides a reasonable starting point to use AWS analytics services that is thoughtful with respect to security, cost, and usability. Experienced developers can also customize the AWS CDK application or even migrate it to the production-ready solution detailed in the AWS guide on the [Game Analytics Pipeline](https://aws.amazon.com/solutions/implementations/game-analytics-pipeline/).

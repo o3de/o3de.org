@@ -22,6 +22,7 @@ The **Axis Aligned Box Shape** component creates a transparent box that is alway
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
 | **Dimensions** | The size of the shape in the X, Y and Z dimensions of local space. | Vector3: -Infinity to Infinity | X:`1.0`, Y:`1.0`, Z:`1.0` |
+| **Translation Offset** | Translation offset of the shape relative to its entity. | Vector3: -Infinity to Infinity | X:`0.0`, Y:`0.0`, Z:`0.0` |
 | **Edit** | Choose the **Edit** button to enter Edit mode. In Edit mode, you can modify the dimensions of the shape in the viewport using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
 
 ## Edit mode actions
