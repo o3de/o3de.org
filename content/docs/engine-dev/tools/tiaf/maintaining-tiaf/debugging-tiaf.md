@@ -207,6 +207,8 @@ Subsequent runs of CMake will delete the contents of this directory. If you wish
 
 ### Step 2: Build and run the commit failing in AR
 
+The purpose of this step is to generate the change list and arguments used by the TIAF runtime. You will use these arguments in [Step 3: Run the TIAF runtime with a debugger attached](#step-3-run-the-tiaf-runtime-with-a-debugger-attached).
+
 Checkout the commit that is failing in AR (in this instance `85a0bd96daa4bd330d56bd817e8cdaf29d172b63`) and then run the TIAF using the AR scripts to generate the change list and arguments used by the runtime. It is important to set the `dst-branch` to the same branch used in the previous step but the `src-branch` to something different. This is for two reasons: firstly, it will ensure that we do not overwrite the historic data (as PR builds are not sources of truth and thus do not store their run data in the persistent storage) and secondly, it is required for generating change lists for unrelated previous and current commits (i.e. commits from unrelated branches).
 
 
