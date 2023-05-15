@@ -41,60 +41,61 @@ To reproduce an AR run locally, you must first obtain all of the environmental i
 3. At the top of the console output, see the output of the TIAF script prior to the invocation of the appropriate runtime. For example: 
 
     ```
-[2023-04-28T22:54:36.872Z] 
-[2023-04-28T22:54:36.886Z] D:\workspace\o3de>python\python.cmd -u scripts\build\ci_build.py --platform Windows --type test_impact_analysis_profile_native 
-[2023-04-28T22:54:36.886Z] [ci_build] Executing "D:\workspace\o3de\scripts\build\Platform/Windows/python_windows.cmd"
-[2023-04-28T22:54:36.886Z]   cwd = D:\workspace\o3de
-[2023-04-28T22:54:36.886Z]   engine_dir = D:\workspace\o3de
-[2023-04-28T22:54:36.886Z]   parameters:
-[2023-04-28T22:54:36.886Z]     OUTPUT_DIRECTORY = build/windows 
-[2023-04-28T22:54:36.886Z]     CONFIGURATION = profile 
-[2023-04-28T22:54:36.886Z]     SCRIPT_PATH = scripts/build/TestImpactAnalysis/tiaf_driver.py 
-[2023-04-28T22:54:36.886Z]     SCRIPT_PARAMETERS = --config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json" --src-branch=%BRANCH_NAME% --dst-branch=%CHANGE_TARGET% --commit=%CHANGE_ID% --s3-bucket=%TEST_IMPACT_S3_BUCKET% --mars-index-prefix=o3de-tiaf --s3-top-level-dir=%REPOSITORY_NAME% --build-number=%BUILD_NUMBER% --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=native --target-output=stdout 
-[2023-04-28T22:54:36.886Z] --------------------------------------------------------------------------------
-[2023-04-28T22:54:36.886Z] [ci_build] python/python.cmd -u scripts/build/TestImpactAnalysis/tiaf_driver.py --config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json" --src-branch=%BRANCH_NAME% --dst-branch=%CHANGE_TARGET% --commit=%CHANGE_ID% --s3-bucket=%TEST_IMPACT_S3_BUCKET% --mars-index-prefix=o3de-tiaf --s3-top-level-dir=%REPOSITORY_NAME% --build-number=%BUILD_NUMBER% --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=native --target-output=stdout
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,153][TIAF][INFO] Attempting to parse configuration file 'build/windows/bin/TestImpactFramework/profile/Persistent/tiaf.json'...
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Runtime binary found at location 'D:\workspace\o3de\build\windows\bin\profile\tiaf_native.exe'
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] The configuration file was parsed successfully.
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Source branch: 'PR-15830'.
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Destination branch: 'development'.
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Source of truth branch: 'development'.
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Is source of truth branch: 'False'.
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Commit: '85a0bd96daa4bd330d56bd817e8cdaf29d172b63'.
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Test impact analysis is enabled.
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Attempting to access persistent storage for the commit '85a0bd96daa4bd330d56bd817e8cdaf29d172b63' for suites 'main-smoke'
-[2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,307][TIAF][INFO] Attempting to retrieve historic data for branch 'development' at location 'o3de/o3de/native/development/profile/main-smoke/historic_data.json.zip' on bucket 'o3de-tiaf'...
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,445][TIAF][INFO] Historic data found for branch 'development'.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,445][TIAF][INFO] Attempting to decode historic data object...
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,449][TIAF][INFO] Decoding complete.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,455][TIAF][INFO] Last commit hash '4b65521188a2a0beb399eca7b692216d2fe3d209' found.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,455][TIAF][INFO] No prior sequence data found for commit '85a0bd96daa4bd330d56bd817e8cdaf29d172b63', this is the first sequence for this commit.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,455][TIAF][INFO] No previous test run data found.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,456][TIAF][INFO] Writing coverage data to 'D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Persistent\Native\active\main-smoke\TestImpactData.spartia'.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,464][TIAF][INFO] Writing previous test runs data to 'D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Persistent\Native\active\main-smoke\PreviousTestRunData.json'.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,464][TIAF][INFO] Historic data found.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,464][TIAF][INFO] Source '4b65521188a2a0beb399eca7b692216d2fe3d209' and destination '85a0bd96daa4bd330d56bd817e8cdaf29d172b63' will be diff'd.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,531][TIAF][INFO] Generated diff between commits '4b65521188a2a0beb399eca7b692216d2fe3d209' and '85a0bd96daa4bd330d56bd817e8cdaf29d172b63': 'D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.diff'.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Change list constructed successfully: 'D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.json'.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] 5 created files, 69 updated files and 2 deleted files.
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Sequence type is set to: tianowrite
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Test failure policy is set to: continue
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Test suites is set to: ['main', 'smoke']
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Suite label excludes is set to: ['REQUIRES_gpu']
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Integration failure policy is set to: continue
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Change list is set to: D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.json
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Sequencer report file is set to: D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\Reports\report.06011392e5a7456e817cda03f8f8c606.json
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Test target output capture is set to: stdout
-[2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Args: --sequence=tianowrite --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --ipolicy=continue --changelist=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\Reports\report.06011392e5a7456e817cda03f8f8c606.json --targetout=stdout
-[2023-04-28T22:54:37.978Z] Constructing in-memory model of source tree and test coverage for test suite main-smoke, this may take a moment...
-[2023-04-28T22:54:38.730Z] [2023-04-28 22:54:38,262][TIAF][ERROR] The test impact analysis runtime returned with error: '3221225477'.
-[2023-04-28T22:54:38.730Z] [2023-04-28 22:54:38,262][TIAF][INFO] Transmitting report to MARS...
-[2023-04-28T22:54:38.730Z] [2023-04-28 22:54:38,262][TIAF][INFO] Connecting to Filebeat on localhost:9000
-[2023-04-28T22:54:38.730Z] [2023-04-28 22:54:38,274][TIAF][INFO] Complete!
-[2023-04-28T22:54:38.736Z] --------------------------------------------------------------------------------
-[2023-04-28T22:54:38.736Z] [ci_build] FAIL: Command D:\workspace\o3de\scripts\build\Platform/Windows/python_windows.cmd returned 4294967295
-script returned exit code -1
-```
+    ```
+    [2023-04-28T22:54:36.872Z] 
+    [2023-04-28T22:54:36.886Z] D:\workspace\o3de>python\python.cmd -u scripts\build\ci_build.py --platform Windows --type test_impact_analysis_profile_native 
+    [2023-04-28T22:54:36.886Z] [ci_build] Executing "D:\workspace\o3de\scripts\build\Platform/Windows/python_windows.cmd"
+    [2023-04-28T22:54:36.886Z]   cwd = D:\workspace\o3de
+    [2023-04-28T22:54:36.886Z]   engine_dir = D:\workspace\o3de
+    [2023-04-28T22:54:36.886Z]   parameters:
+    [2023-04-28T22:54:36.886Z]     OUTPUT_DIRECTORY = build/windows 
+    [2023-04-28T22:54:36.886Z]     CONFIGURATION = profile 
+    [2023-04-28T22:54:36.886Z]     SCRIPT_PATH = scripts/build/TestImpactAnalysis/tiaf_driver.py 
+    [2023-04-28T22:54:36.886Z]     SCRIPT_PARAMETERS = --config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json" --src-branch=%BRANCH_NAME% --dst-branch=%CHANGE_TARGET% --commit=%CHANGE_ID% --s3-bucket=%TEST_IMPACT_S3_BUCKET% --mars-index-prefix=o3de-tiaf --s3-top-level-dir=%REPOSITORY_NAME% --build-number=%BUILD_NUMBER% --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=native --target-output=stdout 
+    [2023-04-28T22:54:36.886Z] --------------------------------------------------------------------------------
+    [2023-04-28T22:54:36.886Z] [ci_build] python/python.cmd -u scripts/build/TestImpactAnalysis/tiaf_driver.py --config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json" --src-branch=%BRANCH_NAME% --dst-branch=%CHANGE_TARGET% --commit=%CHANGE_ID% --s3-bucket=%TEST_IMPACT_S3_BUCKET% --mars-index-prefix=o3de-tiaf --s3-top-level-dir=%REPOSITORY_NAME% --build-number=%BUILD_NUMBER% --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=native --target-output=stdout
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,153][TIAF][INFO] Attempting to parse configuration file 'build/windows/bin/TestImpactFramework/profile/Persistent/tiaf.json'...
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Runtime binary found at location 'D:\workspace\o3de\build\windows\bin\profile\tiaf_native.exe'
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] The configuration file was parsed successfully.
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Source branch: 'PR-15830'.
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Destination branch: 'development'.
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Source of truth branch: 'development'.
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Is source of truth branch: 'False'.
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Commit: '85a0bd96daa4bd330d56bd817e8cdaf29d172b63'.
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Test impact analysis is enabled.
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,155][TIAF][INFO] Attempting to access persistent storage for the commit '85a0bd96daa4bd330d56bd817e8cdaf29d172b63' for suites 'main-smoke'
+    [2023-04-28T22:54:37.450Z] [2023-04-28 22:54:37,307][TIAF][INFO] Attempting to retrieve historic data for branch 'development' at location 'o3de/o3de/native/development/profile/main-smoke/historic_data.json.zip' on bucket 'o3de-tiaf'...
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,445][TIAF][INFO] Historic data found for branch 'development'.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,445][TIAF][INFO] Attempting to decode historic data object...
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,449][TIAF][INFO] Decoding complete.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,455][TIAF][INFO] Last commit hash '4b65521188a2a0beb399eca7b692216d2fe3d209' found.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,455][TIAF][INFO] No prior sequence data found for commit '85a0bd96daa4bd330d56bd817e8cdaf29d172b63', this is the first sequence for this commit.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,455][TIAF][INFO] No previous test run data found.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,456][TIAF][INFO] Writing coverage data to 'D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Persistent\Native\active\main-smoke\TestImpactData.spartia'.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,464][TIAF][INFO] Writing previous test runs data to 'D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Persistent\Native\active\main-smoke\PreviousTestRunData.json'.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,464][TIAF][INFO] Historic data found.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,464][TIAF][INFO] Source '4b65521188a2a0beb399eca7b692216d2fe3d209' and destination '85a0bd96daa4bd330d56bd817e8cdaf29d172b63' will be diff'd.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,531][TIAF][INFO] Generated diff between commits '4b65521188a2a0beb399eca7b692216d2fe3d209' and '85a0bd96daa4bd330d56bd817e8cdaf29d172b63': 'D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.diff'.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Change list constructed successfully: 'D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.json'.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] 5 created files, 69 updated files and 2 deleted files.
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Sequence type is set to: tianowrite
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Test failure policy is set to: continue
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Test suites is set to: ['main', 'smoke']
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Suite label excludes is set to: ['REQUIRES_gpu']
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Integration failure policy is set to: continue
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Change list is set to: D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.json
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Sequencer report file is set to: D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\Reports\report.06011392e5a7456e817cda03f8f8c606.json
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Test target output capture is set to: stdout
+    [2023-04-28T22:54:37.708Z] [2023-04-28 22:54:37,533][TIAF][INFO] Args: --sequence=tianowrite --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --ipolicy=continue --changelist=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\changelist.06011392e5a7456e817cda03f8f8c606.json --report=D:\workspace\o3de\build\windows\bin\TestImpactFramework\profile\Temp\Native\Reports\report.06011392e5a7456e817cda03f8f8c606.json --targetout=stdout
+    [2023-04-28T22:54:37.978Z] Constructing in-memory model of source tree and test coverage for test suite main-smoke, this may take a moment...
+    [2023-04-28T22:54:38.730Z] [2023-04-28 22:54:38,262][TIAF][ERROR] The test impact analysis runtime returned with error: '3221225477'.
+    [2023-04-28T22:54:38.730Z] [2023-04-28 22:54:38,262][TIAF][INFO] Transmitting report to MARS...
+    [2023-04-28T22:54:38.730Z] [2023-04-28 22:54:38,262][TIAF][INFO] Connecting to Filebeat on localhost:9000
+    [2023-04-28T22:54:38.730Z] [2023-04-28 22:54:38,274][TIAF][INFO] Complete!
+    [2023-04-28T22:54:38.736Z] --------------------------------------------------------------------------------
+    [2023-04-28T22:54:38.736Z] [ci_build] FAIL: Command D:\workspace\o3de\scripts\build\Platform/Windows/python_windows.cmd returned 4294967295
+    script returned exit code -1
+    ```
 
 In this instance, the native TIAF runtime is crashing in AR, but not crashing when running locally. This is typically because the issue is related to the historic data and the delta of changes between the last AR run and this failing AR run.
 
