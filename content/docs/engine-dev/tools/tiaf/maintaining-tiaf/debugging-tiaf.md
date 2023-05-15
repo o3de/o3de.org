@@ -240,7 +240,7 @@ Thus, the arguments we need to supply to the runtime in your IDE are as follows:
 
 In your IDE, find the appropriate console front end project for the AR run (either `TestImpact.Frontend.Console.Native` or `TestImpact.Frontend.Console.Python`) and provide the arguments above. Now run the project with your debugger attached to find and fix the issue causing the AR failure.
 
-For this AR run, the cause of the crash was determined to be a bug due to an edge case where a test target had previously been opted-in to the TIAF (whereupon its coverage data was stored in the `historic_data.json` file used by the run), only for that test target to have been subsequently opted-out at a later date, causing a `nullptr` dereference that was fixed in commit `98dbed226cdae5afa5da25fe4bf84ae6760e4ac4`.
+For this AR run, the cause of the crash was due to an edge case where a test target was opted-in to the TIAF in a previous run, but opted-out in a subsequent run. When the test target was previously opted-in, its coverage data was stored in the `historic_data.json` file used by the run. Then, when the test target was opted-out, it caused a `nullptr` dereference. For more details about how this TIAF issue was resolved, refer to pull request [#15849](https://github.com/o3de/o3de/pull/15849) in the `o3de` repo.
 
 {{< tip >}}
 You will save a lot of time by reproducing issues with the TIAF itself locally rather than attempting to debug them in AR with the limited tooling available.
