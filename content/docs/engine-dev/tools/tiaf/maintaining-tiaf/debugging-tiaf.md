@@ -258,13 +258,14 @@ You only need to do this step once, and you can reuse the change list and argume
 
 ### Step 3: Run the TIAF runtime with a debugger attached
 
-Thus, the arguments we need to supply to the runtime in your IDE are as follows:
+1. In your IDE, find the appropriate console front end project for the AR run (either `TestImpact.Frontend.Console.Native` or `TestImpact.Frontend.Console.Python`).
+2. Provide the following arguments, which you obtained in [Step 2: Build and run the commit failing in AR](#step-2-build-and-run-the-commit-failing-in-ar).
 
-```
---sequence=tianowrite --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --ipolicy=continue --changelist=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\changelist.b9ad24eef8544d43a9d3fa75912532d4.json --report=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\Reports\report.b9ad24eef8544d43a9d3fa75912532d4.json --targetout=stdout
-```
+    ```
+    --sequence=tianowrite --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --ipolicy=continue --changelist=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\changelist.b9ad24eef8544d43a9d3fa75912532d4.json --report=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\Reports\report.b9ad24eef8544d43a9d3fa75912532d4.json --targetout=stdout
+    ```
+3. Run the project with your debugger attached to find and fix the TIAF issue causing the AR failure.
 
-In your IDE, find the appropriate console front end project for the AR run (either `TestImpact.Frontend.Console.Native` or `TestImpact.Frontend.Console.Python`) and provide the arguments above. Now run the project with your debugger attached to find and fix the issue causing the AR failure.
 
 For this AR run, the cause of the crash was due to an edge case where a test target was opted-in to the TIAF in a previous run, but opted-out in a subsequent run. When the test target was previously opted-in, its coverage data was stored in the `historic_data.json` file used by the run. Then, when the test target was opted-out, it caused a `nullptr` dereference. For more details about how this TIAF issue was resolved, refer to pull request [#15849](https://github.com/o3de/o3de/pull/15849) in the `o3de` repo.
 
