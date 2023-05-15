@@ -19,7 +19,26 @@ To build the forked version of OpenCppCoverage:
 Prior to running TIAF locally, you must [clone and build the OpenCppCoverage fork](./debugging-tiaf/#how-do-i-configure-and-install-opencppcoverage) and [enable the TIAF at the CMake level](./general-information/#how-do-i-turn-the-tiaf-onoff-in-automated-review). 
 {{< /note >}}
 
-To reproduce a TIAF run locally, you must first obtain all of the environmental information about the run. You can do this by navigating to the appropriate Jenkins build and clicking on either the `test_impact_analysis_profile_native` or `test_impact_analysis_profile_python` stages to retrieve the console output. At the very top of the console output, you will see the output of the TIAF AR scripts prior to the invocation of the appropriate runtime, like so:
+When you encounter issues related to the TIAF in an automated review (AR) integration, it may be difficult to debug them in AR due to limited tools. Instead, you can debug the TIAF issue by running the TIAF runtime on your local machine and attaching a debugger. These steps help ensure that you run the TIAF runtime using the same environment as the Git commit that failed in the Jenkins AR run. For more information, refer to [Automated Review Integration](/docs/engine-dev/tools/tiaf/architectural-overview/ar-integration) in the TIAF section. 
+
+For these steps, "TIAF script" refers to the AR-integrated TIAF script, [tiaf_driver.py](https://github.com/o3de/o3de/blob/development/scripts/build/TestImpactAnalysis/tiaf_driver.py). "TIAF runtime" refers to the TIAF runtime and front-end binaries that the TIAF script invokes. For more information, refer to [Architectural Overview](/docs/engine-dev/tools/tiaf/architectural-overview) in the TIAF section.
+
+To reproduce an AR run, perform the following steps:
+
+0. Prerequisite: Obtain environment information about the AR run.
+1. Recreate the historic data locally.
+2. Build and run the commit failing in AR.
+3. Run the TIAF runtime with a debugger attached.
+
+### Prerequisite
+
+To reproduce an AR run locally, you must first obtain all of the environmental information about the AR run in Jenkins. 
+
+1. Navigate to the appropriate Jenkins build.
+
+2. Choose either the `test_impact_analysis_profile_native` or `test_impact_analysis_profile_python` stages to retrieve the console output. 
+
+3. At the top of the console output, see the output of the TIAF script prior to the invocation of the appropriate runtime. For example: 
 
 ```
 [2023-04-28T22:54:36.872Z] 
