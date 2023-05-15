@@ -192,7 +192,11 @@ For native runs, we recommend you build the `debug` configuration because it pro
     }
 ```
 
-When the script has completed execution you will find the same historic data used in AR at the location `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke`.
+Add the previously mentioned **Step 3**
+```suggestion
+3. Run the TIAF script to locally generates the historic data of the failing AR run.
+
+After the script finishes executing, you can find the AR's historic data in the folder `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke`. This local historic data is the same as the one from the Jenkins build you obtained in the [Prerequisite](#prerequisite) step.
 
 {{< tip >}}
 Subsequent runs of CMake will delete the contents of this directory. If you wish to preserve the historic data in between CMake runs, do the following: 
