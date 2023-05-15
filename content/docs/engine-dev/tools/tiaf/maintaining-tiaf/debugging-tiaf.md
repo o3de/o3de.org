@@ -250,7 +250,10 @@ You will save a lot of time by reproducing issues with the TIAF itself locally r
 
 If the cause of the AR failure is a specific test target failing or crashing, find the offending test target in your IDE and run it with your debugger attached.
 
-To manually launch a given test target from the command line as per the method used by TIAF (for example, to inspect the test run and coverage data), open up the `historic_data.json` in the `Persistent` directory and locate the test target's `command_args` field in that file. For example, the (truncated) historic data for the local run in the first step shows the command line arguments needed to invoke the `Gem_Metastream.Tests` test target from your terminal:
+To manually launch a given test target from the command line (for example, to inspect the test run and coverage data):
+1. Open the `historic_data.json` in the `Persistent` directory and locate the test target's `command_args` field. 
+
+    For example, the (truncated) historic data for the local run in the [Step 1](#step-1-recreate-the-historic-data-locally) shows the command line arguments needed to invoke the `Gem_Metastream.Tests` test target from your terminal:
 
     ```json
     "last_commit_hash":"4b65521188a2a0beb399eca7b692216d2fe3d209",
