@@ -110,7 +110,7 @@ The `ComponentApplication` global Settings Registry attempts to load Settings Re
 1. First, the `~/.o3de/Registry` directory is scanned for global user settings. It is located in the user's home directory. By default, this is `C:\Users\<user>\.o3de\Registry` on Windows, `/home/<user>/.o3de/Registry` on Linux, and `/Users/<user>/.o3de/Registry` on Mac.
 2. Command line options are merged. The command line allows setting a value within the Settings Registry through the following methods:
    * The `--regset` switch by specifying the value as `<path>=<value>`.
-   * The `--regset-file` switch allows merging of a `.setreg` file into the Settings Registry.
+   * The `--regset-file` switch allows merging of either a `.setreg` file (`--regset-file=<file>`) or `stdin` (`--regset-file=-`) into the Settings Registry.
    * The `--regremove` switch allows removal of a key in the registry.
     {{< note >}}
         The registry can be dumped to `stdout` using a JSON pointer path supplied with the `--regdump` switch. The entire Settings Registry can be dumped to `stdout` using the `--regdumpall` switch.

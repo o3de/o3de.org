@@ -1,6 +1,6 @@
 ---
 linkTitle: PhysX Hinge Joint
-description: ' Lean to use the Open 3D Engine PhysX Hinge Joint component. '
+description: The Open 3D Engine PhysX Hinge Joint component.
 title: PhysX Hinge Joint Component
 ---
 
@@ -19,7 +19,7 @@ Specify the position of the joint relative to the entity transform.
 Specify the rotation of the joint relative to the entity transform.
 
 **Lead Entity**
-Specify the parent entity that will drive the joint.
+Specify the lead (parent) entity that will drive the joint.
 
 **Breakable**
 When enabled, the joint will break if sufficient force is applied. Enabling **Breakable** exposes the **Maximum Force** and **Maximum Torque** properties.
@@ -32,7 +32,7 @@ When **Breakable** is enabled, specify the maximum force the joint can sustain b
 When **Breakable** is enabled, specify the maximum torque the joint can sustain before breaking. Valid values range from **0.01** to **Infinity**.
 
 **Display Setup in Viewport**
-When enabled, three planes are displayed showing the orientation and limits of the joint. Red and green planes show the **Positive angular limit** and **Negative angular limit**. The white plane shows the 0 degree rotation of the joint. The shared edge of the three planes is the x-axis of the hinge joint. A line displays the connection between the joint and the **Lead Entity**.
+When enabled, three planes are displayed showing the orientation and limits of the joint. Red and green planes show the **Positive angular limit** and **Negative angular limit**. The white plane shows the 0 degree rotation of the joint. The shared edge of the three planes is the x-axis of the hinge joint. A line displays the connection between the joint and the **Follower Entity**.
 
 **Select Lead on Snap**
 When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.

@@ -1,6 +1,6 @@
 ---
 title: "Vectors, Matrices & Matrix Order"
-date: 2023-02-22
+date: 2023-03-01
 slug: vectors-matrices-matrix-order
 author: John Coimbra Walsh
 blog_img: "/images/blog/dev-series.JPG"
@@ -49,7 +49,7 @@ $$
 \mathbf{M} \cdot \vec{c} 
     &{}= \begin{bmatrix} m_{11} & m_{12} \\\ m_{21} & m_{22}  \end{bmatrix} \cdot \begin{bmatrix} c_{1} \\\ c_{2} \end{bmatrix} \\\ \\\
 &{}= \begin{bmatrix} 
-m_{11}c_{1} + m_{12}c_{2} \\
+m_{11}c_{1} + m_{12}c_{2} \\\
 m_{21}c_{1} + m_{22}c_{2} \end{bmatrix}
 \end{array}
 $$

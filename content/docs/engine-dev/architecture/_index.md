@@ -16,3 +16,4 @@ This is a stub page intended to serve as an example of guide structure. Informat
 | Name | Description |
 |-|-|
 | [Project bootstrapping](./bootstrap) | Learn about the execution flow of project launchers and how O3DE loads libraries at project runtime. |
+| [Prefab System](./prefabs) | Learn about the prefab system, which is the default scene authoring system in O3DE. |

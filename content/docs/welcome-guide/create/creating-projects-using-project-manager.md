@@ -86,7 +86,7 @@ The first build may take some time to complete if the required third-party packa
     When the build completes, you can find the project binaries in your project directory under `build/<platform>/bin/profile`.
     
     {{< note >}}
-**(Development/22.10 release branch)** On Windows, if you have multiple versions of Visual Studio installed, Project Manager will build with the highest version detected. To specify the version of Visual Studio, use the CMake environment variable `CMAKE_GENERATOR_PLATFORM` with a [value from the CMake generator list](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html#visual-studio-generators).
+On Windows, if you have multiple versions of Visual Studio installed, Project Manager will build with the highest version detected. To specify the version of Visual Studio, use the CMake environment variable `CMAKE_GENERATOR_PLATFORM` with a [value from the CMake generator list](https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html#visual-studio-generators).
     {{< /note >}}
 
     {{< note >}}
