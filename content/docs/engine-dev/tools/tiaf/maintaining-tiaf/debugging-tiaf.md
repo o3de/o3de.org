@@ -142,7 +142,6 @@ From the output of the TIAF AR script, you can gather information about the AR r
     --targetout=stdout
     ```
 
-To reproduce this particular AR run, perform the following steps:
 
 
 ### Step 1: Recreate the historic data locally
@@ -203,7 +202,7 @@ The purpose of this step is to generate the change list and arguments used by th
 
 1. Checkout the commit that's failing in AR (in this instance `85a0bd96daa4bd330d56bd817e8cdaf29d172b63`).
 2. Configure the TIAF script to use the following arguments, which you obtained in the [Prerequisite](#prerequisite) step. 
-
+   - It's important to set the `dst-branch` to the same branch used in the previous step but the `src-branch` to the PR build where the AR failed. This is for two reasons: firstly, it ensures that you don't overwrite the historic data (as PR builds are not sources of truth and thus do not store their run data in the persistent storage) and secondly, it is required for generating change lists for unrelated previous and current commits (such as commits from unrelated branches).
 
     ```json
     {
@@ -236,9 +235,9 @@ The purpose of this step is to generate the change list and arguments used by th
     }
     ```
 
-        - It's important to set the `dst-branch` to the same branch used in the previous step but the `src-branch` to the PR build where the AR failed. This is for two reasons: firstly, it ensures that you don't overwrite the historic data (as PR builds are not sources of truth and thus do not store their run data in the persistent storage) and secondly, it is required for generating change lists for unrelated previous and current commits (such as commits from unrelated branches).
 
     3. Run the TIAF script to generate the change list and arguments used by the TIAF runtime.     
+
 After the script has executed, you will see the same result as the failing AR run (in this instance, a crash) as well as the change list and arguments for the TIAF runtime. The TIAF log output states the following command line options used by the TIAF runtime:
 ```
 [2023-04-30 00:34:45,577][TIAF][INFO] Args: --sequence=tianowrite --fpolicy=continue --suites=main,smoke --labelexcludes=REQUIRES_gpu --ipolicy=continue --changelist=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\changelist.b9ad24eef8544d43a9d3fa75912532d4.json --report=C:\dev\o3de\build\windows_vs2019\bin\TestImpactFramework\debug\Temp\Native\Reports\report.b9ad24eef8544d43a9d3fa75912532d4.json --targetout=stdout
@@ -302,7 +301,7 @@ To manually launch a given test target from the command line (for example, to in
     ]
     ```
 
-To run `Gem_Metastream.Tests` test target from your terminal, use the following command, changing the paths to your build of OpenCppCoverage and O3DE accordingly:
+2. To run `Gem_Metastream.Tests` test target from your terminal, use the following command, changing the paths to your build of OpenCppCoverage and O3DE accordingly:
 
 
     ```
