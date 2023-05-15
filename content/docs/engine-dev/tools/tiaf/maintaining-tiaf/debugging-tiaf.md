@@ -104,7 +104,22 @@ From the output of the TIAF AR script, you can gather information about the AR r
 - The arguments used to invoke the AR script are as follows:
 
     ```
-    --config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json" --src-branch=%BRANCH_NAME% --dst-branch=%CHANGE_TARGET% --commit=%CHANGE_ID% --s3-bucket=%TEST_IMPACT_S3_BUCKET% --mars-index-prefix=o3de-tiaf --s3-top-level-dir=%REPOSITORY_NAME% --build-number=%BUILD_NUMBER% --suites smoke main --label-excludes REQUIRES_gpu --test-failure-policy=continue --runtime-type=python --testrunner=live --target-output=stdout
+    ```
+    --config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json"
+    --src-branch=%BRANCH_NAME% 
+    --dst-branch=%CHANGE_TARGET% 
+    --commit=%CHANGE_ID% 
+    --s3-bucket=%TEST_IMPACT_S3_BUCKET% 
+    --mars-index-prefix=o3de-tiaf 
+    --s3-top-level-dir=%REPOSITORY_NAME% 
+    --build-number=%BUILD_NUMBER% 
+    --suites smoke main 
+    --label-excludes REQUIRES_gpu 
+    --test-failure-policy=continue 
+    --runtime-type=python 
+    --testrunner=live 
+    --target-output=stdout
+    ```
     ```
 
 - The source branch was `PR-15830`.
