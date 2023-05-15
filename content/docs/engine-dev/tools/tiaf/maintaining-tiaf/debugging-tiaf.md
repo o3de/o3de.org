@@ -282,9 +282,10 @@ To manually launch a given test target from the command line as per the method u
 
 To run `Gem_Metastream.Tests` test target from your terminal, use the following command, changing the paths to your build of OpenCppCoverage and O3DE accordingly:
 
-```
-C:/dev/OpenCppCoverage/x64/Release/OpenCppCoverage.exe --coverage_level source --export_type cobertura:"C:/dev/o3de/build/windows_vs2019/bin/TestImpactFramework/debug/Temp/Native/Coverage/Metastream.Tests.xml" --modules "C:/dev/o3de/build/windows_vs2019/bin/debug" --excluded_modules "C:/dev/o3de/build/windows_vs2019/bin/debug/AzTestRunner.exe" --sources "C:/dev/o3de" -- "C:/dev/o3de/build/windows_vs2019/bin/debug/AzTestRunner.exe" "C:/dev/o3de/build/windows_vs2019/bin/debug/Metastream.Tests.dll" AzRunUnitTests --gtest_output=xml:"C:/dev/o3de/build/windows_vs2019/Testing/Gtest/Gem_Metastream.Tests.xml"
-```
+
+    ```
+    C:/dev/OpenCppCoverage/x64/Release/OpenCppCoverage.exe --coverage_level source --export_type cobertura:"C:/dev/o3de/build/windows_vs2019/bin/TestImpactFramework/debug/Temp/Native/Coverage/Metastream.Tests.xml" --modules "C:/dev/o3de/build/windows_vs2019/bin/debug" --excluded_modules "C:/dev/o3de/build/windows_vs2019/bin/debug/AzTestRunner.exe" --sources "C:/dev/o3de" -- "C:/dev/o3de/build/windows_vs2019/bin/debug/AzTestRunner.exe" "C:/dev/o3de/build/windows_vs2019/bin/debug/Metastream.Tests.dll" AzRunUnitTests --gtest_output=xml:"C:/dev/o3de/build/windows_vs2019/Testing/Gtest/Gem_Metastream.Tests.xml"
+    ```
 
 ## How do I kill a local test run of the TIAF?
 
