@@ -41,7 +41,6 @@ To reproduce an AR run locally, you must first obtain all of the environmental i
 3. At the top of the console output, see the output of the TIAF script prior to the invocation of the appropriate runtime. For example: 
 
     ```
-    ```
     [2023-04-28T22:54:36.872Z] 
     [2023-04-28T22:54:36.886Z] D:\workspace\o3de>python\python.cmd -u scripts\build\ci_build.py --platform Windows --type test_impact_analysis_profile_native 
     [2023-04-28T22:54:36.886Z] [ci_build] Executing "D:\workspace\o3de\scripts\build\Platform/Windows/python_windows.cmd"
@@ -104,7 +103,6 @@ From the output of the TIAF AR script, you can gather information about the AR r
 - The arguments used to invoke the AR script are as follows:
 
     ```
-    ```
     --config="%OUTPUT_DIRECTORY%/bin/TestImpactFramework/profile/Persistent/tiaf.json"
     --src-branch=%BRANCH_NAME% 
     --dst-branch=%CHANGE_TARGET% 
@@ -119,7 +117,6 @@ From the output of the TIAF AR script, you can gather information about the AR r
     --runtime-type=python 
     --testrunner=live 
     --target-output=stdout
-    ```
     ```
 
 - The source branch was `PR-15830`.
@@ -147,9 +144,6 @@ From the output of the TIAF AR script, you can gather information about the AR r
 
 To reproduce this particular AR run, perform the following steps:
 
-1. Recreate the historic data locally.
-2. Build and run the commit failing in AR.
-3. Run the TIAF runtime with a debugger attached.
 
 ### Step 1: Recreate the historic data locally
 
@@ -192,8 +186,6 @@ For native runs, we recommend you build the `debug` configuration because it pro
     }
 ```
 
-Add the previously mentioned **Step 3**
-```suggestion
 3. Run the TIAF script to locally generates the historic data of the failing AR run.
 
 After the script finishes executing, you can find the AR's historic data in the folder `<build_path>/bin/TestImpactFramework/debug/Persistent/Native/historic/main-smoke`. This local historic data is the same as the one from the Jenkins build you obtained in the [Prerequisite](#prerequisite) step.
