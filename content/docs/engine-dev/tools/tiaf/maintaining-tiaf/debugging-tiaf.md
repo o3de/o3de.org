@@ -213,38 +213,36 @@ The purpose of this step is to generate the change list and arguments used by th
 2. Configure the TIAF script to use the following arguments, which you obtained in the [Prerequisite](#prerequisite) step. 
 
 
-The script configuration file used for this step is as follows:
-
-```json
-{
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode": true,
-            "args": [
-                "--config", "C:/dev/o3de/build/windows_vs2019/bin/TestImpactFramework/debug/Persistent/tiaf.json", // Replace with your build path
-                "--src-branch", "PR-15830", // src and dst are different as this is a PR build
-                "--dst-branch", "development",
-                "--commit", "85a0bd96daa4bd330d56bd817e8cdaf29d172b63",
-                "--build-number", "001", // The build number can be anything
-                "--suites", "smoke", "main", // The suites must match those used in AR
-                "--label-excludes", "REQUIRES_gpu", // The label exclude filters must match those used in AR
-                "--test-failure-policy", "continue",
-                "--target-output", "stdout",
-                "--runtime-type", "native" // change to "python" for Python TIAF
-               ]
-        }
-    ]
-}
-```
+    ```json
+    {
+        // Use IntelliSense to learn about possible attributes.
+        // Hover to view descriptions of existing attributes.
+        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "justMyCode": true,
+                "args": [
+                    "--config", "C:/dev/o3de/build/windows_vs2019/bin/TestImpactFramework/debug/Persistent/tiaf.json", // Replace with your build path
+                    "--src-branch", "PR-15830", // src and dst are different as this is a PR build
+                    "--dst-branch", "development",
+                    "--commit", "85a0bd96daa4bd330d56bd817e8cdaf29d172b63",
+                    "--build-number", "001", // The build number can be anything
+                    "--suites", "smoke", "main", // The suites must match those used in AR
+                    "--label-excludes", "REQUIRES_gpu", // The label exclude filters must match those used in AR
+                    "--test-failure-policy", "continue",
+                    "--target-output", "stdout",
+                    "--runtime-type", "native" // change to "python" for Python TIAF
+                ]
+            }
+        ]
+    }
+    ```
 
 When the script has completed execution you will see the same result as the failing AR run (in this instance, a crash) as well as the change list and arguments for the runtime.
 
