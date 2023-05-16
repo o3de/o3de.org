@@ -11,7 +11,7 @@ One of the great things about ImGui is that there is next to no overhead when th
 
 ## Accessing ImGui menus
 
-ImGui can be accessed by pressing the **Home** key in the editor, game or server launchers.
+ImGui can be accessed by pressing the **~** key in the editor, game or server launchers.
 
 ![ImGui Menus in Viewport](/images/user-guide/gems/reference/debug/imgui_menus.png)
 
