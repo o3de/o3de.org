@@ -8,10 +8,6 @@ blog_img: "/images/blog/announcement_thumbnail.jpg"
 full_img: "/images/blog/bjds-logo.jpg"
 ---
 
-Learn about the new UX design system for Open 3D Engine (O3DE) tools from Lee Hung Nguyen, one of the UX designers contributing to O3DE.
-
-My name is Lee Hung Nguyen, and I am one of the UX Designers in the Special Interest Group for the UI UX community (SIG-UI-UX) that helps to contribute towards the Open 3D Engine (O3DE).
-
 Today, you'll be learning about the design system that the SIG UX UI community has been working on: **the Blue Jay Design System (BJDS).**
 
 ### What is the Blue Jay Design System?

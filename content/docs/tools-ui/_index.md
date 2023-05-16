@@ -36,3 +36,4 @@ Feel like having a chat? Check out our #SIG-UX-UI channel on [Discord](https://{
 | Topic | Description |
 | --- | --- |
 | [Extend the Editor Tutorials](/docs/learning-guide/tutorials/extend-the-editor/) | Tutorials to extend the **O3DE Editor** by creating a custom tool Gem with O3DE UI components. |
+| [Blue Jay Design System (BJDS) on Figma](https://www.figma.com/community/file/1232268259207644469) | A Figma library that contains visual and functional building blocks to create consistent designs across O3DE. |
