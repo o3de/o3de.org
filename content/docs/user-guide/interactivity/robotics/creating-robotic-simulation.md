@@ -22,7 +22,7 @@ Once you are set up and familiar with the [example project](/docs/user-guide/int
 2. [Registering ROS2 Gem for your Project](/docs/user-guide/project-config/register-gems/) guide.
 3. Create or import Assets for your robots and environment.
    1. You can use formats supported by O3DE.
-   2. You can import your robot from URDF/XACRO.
+   2. You can [import your robot from URDF/XACRO](/docs/user-guide/interactivity/robotics/importing-robot).
    3. Imported models might require some adjustments to be simulation-ready.
    4. Mobilize robot with Vehicle Dynamics controllers.
 4. Determine which sensors you need to simulate.
