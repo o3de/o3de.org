@@ -14,7 +14,7 @@ Creating a dedicated server package includes the following steps:
 3.  Test the dedicated server package on your local machine.
 
 {{< note >}}  
-Debug dedicated servers are not supported as they require the debug visual studio redistributables which cannot be resdistributed. See [Distributable Code for Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/redistribution) for more details.
+Debug dedicated servers are not supported as they require the debug visual studio redistributables which cannot be redistributed. See [Distributable Code for Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/redistribution) for more details.
 {{< /note >}}
 
 ## Prerequisites
