@@ -24,7 +24,7 @@ The following conventions are used in this topic as substitutions for your own d
 * Project name and directory: `C:\MyProject`
 * Source engine build directory: `C:\MyProject\build\windows\bin\profile`
 * Game asset seed list : `game_seed_list.seed`
-* Game asset list: `game_pc.assetlist`
+* Game asset list: `game_v1.assetlist`
 
 ## Make asset changes to your project
 
@@ -34,40 +34,31 @@ Make a visual change to your project that simulates a content update. For demons
 
 There are four steps to creating an update package:
 
-* Version the old asset lists.
+* Ensure all assets are processed.
 * Generate new asset lists based on the changes.
 * Create a patched release asset bundle that contains all the game assets and updates.
 * Create a patch asset bundle that contains just the game asset updates.
 
-{{< note >}}
+## Process all project assets
+
 For most updates, only the game assets will change. When upgrading to a new version of O3DE and pushing an update, you should regenerate all of the existing content to ensure it's properly updated, including the engine assets and auxiliary content.
-{{< /note >}}
 
-### Version the asset list
-
-You must version the existing asset list so that it can be compared to the updated asset list. You can do this by simply adding a version identifier to the name of the existing asset list.
-
-1. Add a version identifier to the existing `game_pc.assetlist` in your project's `AssetBundling\AssetLists\` directory:
-
-    ```cmd
-    cd C:\MyProject\AssetBundling\AssetLists\
-    move game_pc.assetlist game_v1_pc.assetlist
-    ```
+To process the assets, run **Asset Processor** or **Asset Processor Batch** by following the steps in the [process assets](./windows-release-builds/#process-assets) section of the Windows release layout topic.
 
 ### Create a patched release asset list
 
-Create a new version of the game asset list containing all the assets that are in the original `game_v1_pc.assetlist` as well as the changes you saved to the level. This new asset list serves as the asset list for the patched release, and is used to generate a patch for existing distributions of your project in the next section.
+Create a new version of the game asset list containing all the assets that are in the original `game_v1.assetlist` as well as the changes you saved to the level. This new asset list serves as the asset list for the patched release, and is used to generate a patch for existing distributions of your project in the next section.
 
 {{< tabs name="Patched release asset list" >}}
 {{% tab name="Asset Bundler GUI" %}}
 
-2. Run `AssetBundlerBatch.exe` from the source engine build directory.
-3. In the **Seeds** tab, select the `game_seed_list` by checking the box to its left. The seeds in the list appear in the main list view.
-4. Choose **Generate Asset Lists** in the upper-right.
-5. In the **Generate Asset List Files** dialog, choose **Browse...**.
-6. In the new file dialog, enter `game_v2_pc.assetlist` for the name, and choose **Open**.
-7. In the **Generate Asset List Files** dialog, choose **pc** from the platform list.
-8. Choose **Create New File**.
+1. Run `AssetBundlerBatch.exe` from the source engine build directory.
+1. In the **Seeds** tab, select the `game_seed_list` by checking the box to its left. The seeds in the list appear in the main list view.
+1. Choose **Generate Asset Lists** in the upper-right.
+1. In the **Generate Asset List Files** dialog, choose **Browse...**.
+1. In the new file dialog, enter `game_v2.assetlist` for the name, and choose **Open**.
+1. In the **Generate Asset List Files** dialog, choose **pc** from the platform list.
+1. Choose **Create New File**.
 
 {{% /tab %}}
 {{% tab name="Asset Bundler command" %}}
@@ -76,7 +67,7 @@ Alternatively, you can run this command to generate the asset list for a patched
 
 ```cmd
 AssetBundlerBatch.exe assetLists --seedListFile game_seed_list.seed ^
-    --assetListFile game_v2_pc.assetlist
+    --assetListFile game_v2.assetlist
 ```
 
 {{% /tab %}}
@@ -102,11 +93,11 @@ The patch asset list is applied to an existing distribution and only contains ne
 13. Choose **Add Step** from the **Comparison Steps** list.
 14. Enter a name for the new step such as `Generate V1 to V2 Delta`.
 15. Set the **Comparison Type** to `Delta`.
-16. Choose **Browse...** under **Input A** and select the `game_v1_pc.assetlist`.
-17. Choose **Browse...** under **Input B** and select the `game_v2_pc.assetlist`.
+16. Choose **Browse...** under **Input A** and select the `game_v1.assetlist`.
+17. Choose **Browse...** under **Input B** and select the `game_v2.assetlist`.
 18. Choose **Run Selected Rule**.
 19. In the **Run Rule** dialog, choose **Browse...**.
-20. In the new file dialog, enter `game_v1_to_v2_patch_pc.assetlist` for the name, and choose **Open**.
+20. In the new file dialog, enter `game_v1_to_v2_patch.assetlist` for the name, and choose **Open**.
 21. In the **Generate Asset List Files** dialog, choose **pc** from the platform list.
 22. Choose **Create New File**.
 
@@ -117,8 +108,8 @@ Alternatively, you can run this command to generate the patch asset list.
 
 ```cmd
 AssetBundlerBatch.exe compare --comparisonType delta ^
-    --firstAssetFile game_v1_pc.assetlist ^
-    --secondAssetFile game_v2_pc.assetlist ^
+    --firstAssetFile game_v1.assetlist ^
+    --secondAssetFile game_v2.assetlist ^
     --output game_v1_to_v2_patch.assetlist
 ```
 
@@ -139,7 +130,7 @@ To generate the patched release asset bundle, do the following:
 23. In the **Asset Lists** tab, select the `game_v2` asset list.
 24. Choose **Generate Bundle**.
 25. In the **Generate Bundles** dialog, choose **Browse...**.
-26. In the file dialog, enter `game_v2_pc.pak` for the file name and choose **Open**.
+26. In the file dialog, enter `game_v2.pak` for the file name and choose **Open**.
 27. Choose **Generate Bundles**.
 
 To generate the patch asset bundle, do the following:
@@ -147,7 +138,7 @@ To generate the patch asset bundle, do the following:
 28. In the **Asset Lists** tab, select the `game_v1_to_v2_patch` asset list.
 29. Choose **Generate Bundle**.
 30. In the **Generate Bundles** dialog, choose **Browse...**.
-31. In the file dialog, enter `game_v1_to_v2_patch_pc.pak` for the file name and choose **Open**.
+31. In the file dialog, enter `game_v1_to_v2_patch.pak` for the file name and choose **Open**.
 32. Choose **Generate Bundles**.
 
 {{% /tab %}}
@@ -158,14 +149,14 @@ Alternatively, you you can run these commands to generate bundles from the asset
 Use the following command to generate the patched release bundle containing all the game assets:
 
 ```cmd
-AssetBundlerBatch.exe bundles --assetListFile game_v2_pc.assetlist ^
+AssetBundlerBatch.exe bundles --assetListFile game_v2.assetlist ^
     --outputBundlePath game_v2.pak
 ```
 
 Use the following command to generate the patch bundle containing only the changed assets:
 
 ```cmd
-AssetBundlerBatch.exe bundles --assetListFile game_v1_to_v2_patch_pc.assetlist ^
+AssetBundlerBatch.exe bundles --assetListFile game_v1_to_v2_patch.assetlist ^
     --outputBundlePath game_v1_to_v2_patch.pak
 ```
 
@@ -181,7 +172,7 @@ You can test the asset bundles by simulating two user scenarios.
 Because your release build currently has the original v1 asset bundle, start by testing the scenario where a user has your project installed and applies the patch asset bundle containing just the updated assets. Copy the patch asset bundle to your release asset directory.
 
 ```cmd
-copy C:\MyProject\AssetBundling\Bundles\game_v1_to_v2_patch_pc.pak ^
+copy C:\MyProject\AssetBundling\Bundles\game_v1_to_v2_patch.pak ^
     C:\MyProject\install\bin\Windows\release\Monolithic\Cache\pc\
 ```
 
@@ -198,14 +189,14 @@ Now you can simulate a user downloading a new release with the content patch alr
 Delete the patch asset bundle and the v1 asset bundle from your game release:
 
 ```cmd
-del C:\MyProject\install\bin\Windows\release\Monolithic\Cache\pc\game_v1_to_v2_patch_pc.pak
-del C:\MyProject\install\bin\Windows\release\Monolithic\Cache\pc\game_v1_pc.pak
+del C:\MyProject\install\bin\Windows\release\Monolithic\Cache\pc\game_v1_to_v2_patch.pak
+del C:\MyProject\install\bin\Windows\release\Monolithic\Cache\pc\game_v1.pak
 ```
 
 Copy the v2 asset bundle to the release:
 
 ```cmd
-copy C:\MyProject\AssetBundling\Bundles\game_v2_pc.pak ^
+copy C:\MyProject\AssetBundling\Bundles\game_v2.pak ^
     C:\MyProject\install\bin\Windows\release\Monolithic\Cache\pc\
 ```
 
