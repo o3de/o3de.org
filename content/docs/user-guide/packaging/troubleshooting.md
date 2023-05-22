@@ -2,7 +2,7 @@
 linktitle: Troubleshooting
 title: Troubleshooting Packaging in O3DE
 description: Tips, tricks, and advice for troubleshooting issues with packaging Open 3D Engine (O3DE) projects.
-weight: 1000
+weight: 500
 ---
 
 This guide can help you troubleshoot and resolve some common issues that you might encounter when packaging your **Open 3D Engine (O3DE)** projects. 
