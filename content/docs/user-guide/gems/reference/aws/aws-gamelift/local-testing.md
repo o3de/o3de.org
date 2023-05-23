@@ -1,41 +1,79 @@
 ---
 linkTitle: Local Testing
-title: AWS GameLift Gem Local Testing
+title: AWS GameLift Gem Local Testing with GameLift Anywhere
 description: "Learn how to test locally with the AWS GameLift Gem in O3DE"
 toc: true
 weight: 600
 ---
 
-In this topic, you will learn how to test and verify AWS GameLift Gem feature integrations on your local machine by using **GameLift Local**. 
+In this topic, you will learn how to test and verify AWS GameLift Gem feature integrations on your local machine by using [Amazon GameLift Anywhere](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-creating-anywhere.html). 
 
-GameLift Local is a command line tool that starts a self-contained version of the managed Amazon GameLift service. GameLift Local also provides a running event log of server process initialization, health checks, and API calls and responses. GameLift Local recognizes a subset of the AWS SDK actions for GameLift. You can make calls from the AWS CLI or from your game client. All API actions perform locally, just as they do in the GameLift web service. For more information, refer to [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-start) in the Amazon GameLift Developer Guide.
+GameLift Anywhere can be used to integrate hardware from your environment into your Amazon GameLift game hosting. Amazon GameLift Anywhere registers your hardware with Amazon GameLift in an Anywhere fleet; you can iteratively test and build your game server project using your own hardware.
 
-{{< caution >}}  
-GameLift Local does not currently support testing of FlexMatch features.
-{{< /caution >}}
-
-## 1. Start GameLift Local
-
-With GameLift Local, you can verify the following: (Refer to [Set Up GameLift Local](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-start))
+With GameLift Anywhere, you can verify the following:
 
 *   Your game server is correctly integrated with the Server SDK and is properly communicating with the GameLift service to start new game sessions, accept new players, and report health and status.
     
 *   Your game client is correctly integrated with the AWS SDK for GameLift and is able to retrieve information on existing game sessions, start new game sessions, join players to games and connect to the game session.
     
 
-After downloading GameLift Local, you should be able to start it by (please sure you are passing the same port while starting game, as GameLift client endpoint needs to use the same port)
+## 1. Create a Location
 
-```shell
+Create a location for your custom resources. A custom location labels the location of your hardware that Amazon GameLift uses to run your games in Anywhere fleets.
+When creating your custom location, the location name must start with `custom-`.
 
-$ java -jar GameLiftLocal.jar -p 9080
-
+```sh
+aws gamelift create-location --location-name custom-location-1 --region <Region>
 ```
 
-## 2. Set `sv_gameLiftEnabled` to `true`
 
-When you are ready to test with GameLift, opt-in by setting the `sv_gameLiftEnabled` CVAR to `true`. This CVAR is off by default to facilitate local testing prior to the integration of the GameLift Server SDK into your game server.
+## 2. Create an Anywhere Fleet
 
-You can set this value by creating a settings registry file named `commands.MyProject_serverlauncher.setreg` in the `MyProject/Registry` folder with the following contents:
+Creating an Anywhere fleet is a much faster process compared to creating a regular AWS fleet, which usually takes about an hour to setup.
+
+```sh
+aws gamelift create-fleet --name AnywhereFleet --compute-type ANYWHERE --locations Location=custom-location-1 --region <Region>
+```
+Record the `FleetId` for the next steps. Example: **fleet-1a23bc4d-456e-78fg-h9i0-jk1l23456789**
+
+
+## 3. Register your local machine as a Compute
+
+Register your local machine as a GameLift Anywhere Compute.
+For ease of testing, we assume the Server and Client will be run on the same machine; so we can pass localhost (`127.0.0.1`) as the IP address.
+If your machine is accessible via a public IP address, change that value as appropriate.
+
+```sh
+aws gamelift register-compute --compute-name CustomCompute1 --fleet-id <FleetId> --ip-address 127.0.0.1 --location custom-location-1 --region <Region>
+```
+
+Also retrieve the compute auth token as it will be necessary for the next steps.
+
+```sh
+aws gamelift get-compute-auth-token --fleet-id <FleedId> --compute-name CustomCompute1
+```
+
+## 4. Start an instance of the Game Server executable on your machine
+
+When you are ready to test with GameLift, opt-in by setting the `sv_gameLiftEnabled` and `sv_gameliftAnywhereEnabled` CVARs to `true`. These CVARs are off by default to facilitate local testing prior to the integration of the GameLift Server SDK into your game server.
+
+You will also need to fill in the server parameters via the following CVARs:
+- `sv_gameliftAnywhereWebSocketUrl`
+- `sv_gameliftAnywhereAuthToken`
+- `sv_gameliftAnywhereFleetId`
+- `sv_gameliftAnywhereHostId`
+- `sv_gameliftAnywhereProcessId`
+
+All of the values for these properties are retrieved in the previous steps, aside from these notes:
+- `HostId` should be filled set to the `ComputeName`.
+- `ProcessId` can be omitted. A unique default `ProcessId` will be generated out of the timestamp.
+
+To set these values, you can either pass them when starting the executable (either via command line or in your Visual Studio solution) as follows:
+
+```sh
+C:\GameLiftPackageWindows\MultiplayerSample.ServerLauncher.exe --sv_gameLiftEnabled=true --sv_gameliftAnywhereEnabled=true --sv_gameliftAnywhereWebSocketUrl="<WebSocketUrl>" --sv_gameliftAnywhereAuthToken="<AuthToken>" --sv_gameliftAnywhereFleetId="<FleetId>" --sv_gameliftAnywhereHostId="<ComputeName>" --sv_gameliftAnywhereProcessId="<ProcessId>"
+```
+Or you can set these values by creating a settings registry file named `commands.MyProject_serverlauncher.setreg` in the `MyProject/Registry` folder with the following contents:
 
 ```json
 {
@@ -47,7 +85,13 @@ You can set this value by creating a settings registry file named `commands.MyPr
             {
                 "ConsoleCommands":
                 {
-                    "sv_gameLiftEnabled": "true"
+                    "sv_gameLiftEnabled": "true",
+                    "sv_gameliftAnywhereEnabled": "true",
+                    "sv_gameliftAnywhereWebSocketUrl": "<WebSocketUrl>",
+                    "sv_gameliftAnywhereAuthToken": "<AuthToken>",
+                    "sv_gameliftAnywhereFleetId": "<FleetId>",
+                    "sv_gameliftAnywhereHostId": "<ComputeName>",
+                    "sv_gameliftAnywhereProcessId": "<ProcessId>"
                 } 
             } 
         } 
@@ -55,35 +99,16 @@ You can set this value by creating a settings registry file named `commands.MyPr
 }
 ```
 
-This lets your game server use GameLift local when running game or simulation mode in the Editor, or when running the server launcher directly (see next step).
+This way, the values will be applied regardless of how the server is built.
 
-## 3. Start Server
 
-Make sure you have a cmake build target for your server, like YourProject.ServerLauncher. and build the application for your local testing.
-
-You should be able to find application under build bin folder, and launch the server by
-
-```shell
-
-$ bin\profile\YourProject.ServerLauncher.exe
-
-```
-
-## 4. Start Game
+## 5. Start the Game
 
 Make sure you have a cmake build target for your game, like YourProject.GameLauncher, and build the application for your local testing.
+You should be able to find application under build bin folder, and launch the game.
 
-You should be able to find application under build bin folder, and launch the game by (please make sure you are passing the same port while starting GameLift Local)
 
-```cpp
-
-// Override GameLift endpoint to local host
-
-$ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "http://localhost:9080"
-
-```
-
-## 5. Test Game and Server
+## 6. Test Game and Server
 
 Testing steps and instructions really depend on your own project, but please make sure your testing can cover CreateSession, JoinSession, LeaveSession and DestroySession use case.
 
