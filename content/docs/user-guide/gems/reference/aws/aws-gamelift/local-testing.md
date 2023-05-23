@@ -34,6 +34,7 @@ Creating an Anywhere fleet is a much faster process compared to creating a regul
 ```sh
 aws gamelift create-fleet --name AnywhereFleet --compute-type ANYWHERE --locations Location=custom-location-1 --region <Region>
 ```
+Record the `FleetId` for the next steps. Example: **fleet-1a23bc4d-456e-78fg-h9i0-jk1l23456789**
 
 
 ## 3. Register your local machine as a Compute
@@ -64,7 +65,7 @@ You will also need to fill in the server parameters via the following CVARs:
 - `sv_gameliftAnywhereProcessId`
 
 All of the values for these properties are retrieved in the previous steps, aside from these notes:
-- In the `HostId` property should be filled with the `ComputeName`;
+- `HostId` should be filled set to the `ComputeName`.
 - `ProcessId` can be omitted. A unique default `ProcessId` will be generated out of the timestamp.
 
 To set these values, you can either pass them when starting the executable (either via command line or in your Visual Studio solution) as follows:
