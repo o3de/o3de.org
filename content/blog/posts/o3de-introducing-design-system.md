@@ -88,3 +88,5 @@ You can see here that the BJDS has big dreams and ambitions. At its core, it's j
 **We want Blue Jay to become the best design system that all 3D engines can depend on to set the quality benchmark for industry standards.**
 
 This is just the beginning. Let's do it together!
+
+_**Note from blog author**: My name is Lee Hung Nguyen, and I am one of the UX Designers in the Special Interest Group for the UI UX community (SIG-UI-UX) that helps to contribute towards the Open 3D Engine (O3DE)._
