@@ -35,6 +35,7 @@ The `gem.json` manifest provides data about a Gem. Each Gem must have a `gem.jso
 | type | **Required** | The type of gem which can be `Code`, `Asset` or `Tool`. This field is used as a filter in the Project Manager. |
 | user_tags | Optional | A list of user-defined tags used to categorize Gems. This list should always include the name of your Gem, and any other common tags that might help a user discover your gem: i.e. `Network`, `Rendering`, `Utility`, `Scripting` etc. |
 | version | Optional | The `MAJOR.MINOR.PATCH` [semantic version](https://semver.org/) that is updated as changes are made to the gem. Developers may use the `dependencies` field in `gem.json` to indicate other gem dependencies and the version ranges they are compatible with. See [Gem Versioning](../../../user-guide/gems/gem-versioning.md) for details. |
+| versions_data | Optional | A list of JSON dictionaries containing the changed fields for each Gem version. Usually this data is only stored in a `repo.json` file to keep track of the changes and unique download URIs for each Gem version. |
 
 
 ## `gem.json` Manifest Examples
