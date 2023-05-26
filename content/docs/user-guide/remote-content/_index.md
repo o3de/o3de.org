@@ -18,4 +18,4 @@ The official **O3DE** *Remote Repository* is https://canonical.o3de.org and is i
 | [Create an O3DE Remote Repository](create-a-remote-repository) | Learn how to create your own O3DE Remote Repository. |
 | [Repo.json Reference](repo-json-reference) | Learn about the repo.json file schema and how it is used. |
 | [Update an O3DE Remote Repository](update-a-remote-repository) | Learn how to add, remove and update content in an O3DE Remote Repository. |
-| [Submit Content to the Official O3DE Remote Repository](submit-content-to-offical-remote-repository) | Learn how to submit content to the official O3DE Remote Repository. |
+| [Submit Content to the Official O3DE Remote Repository](/docs/contributing/to-official-remote-repository) | Learn how to submit content to the official O3DE Remote Repository. |

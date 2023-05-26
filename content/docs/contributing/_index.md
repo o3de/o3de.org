@@ -19,6 +19,7 @@ This guide will help you understand the overall organization of the **Open 3D En
 | [Contribute to O3DE Code](to-code/) | Learn how to contribute to O3DE's codebase.  |
 | [Contribute to O3DE Documentation](to-docs/) | Learn how to contribute to O3DE's technical documentation. |
 | [Contribute to O3DE Security](security/) | Learn how to keep O3DE secure. |
+| [Contribute to the O3DE Official Remote Repository](to-official-remote-repository/) | Learn how to contribute to the official O3DE remote repository.  |
 | [Versioning and Release Terminology](release-versioning-and-terms) | Understand the code and binary package versioning format and release terminology. |
 | [Code of Conduct](code-of-conduct) | Learn what our expectations for community engagement are. |
 
