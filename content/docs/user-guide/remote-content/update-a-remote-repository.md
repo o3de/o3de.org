@@ -6,13 +6,14 @@ weight: 400
 toc: true
 ---
 
-DESCRIPTION HERE
+You can update the properties for an O3DE remote repository, add and manage Gems, Projects and Templates with the O3DE CLI.
 
 
-## Using the `o3de` command line tool to update an O3DE remote repository
+## Use the `o3de` command line tool to update an O3DE remote repository
 
-DESCRIPTION HERE 
+The `o3de edit-repo-properties` command lets you update remote repository properties, add new content and manage existing content.
 
+See the [`o3de edit-repo-properties` CLI Reference](/docs/user-guide/project-config/cli-reference/#edit-repo-properties) for the complete list of options.
 
 ### Update remote repository properties
 
@@ -38,7 +39,6 @@ You can use the `o3de` CLI tool to modify properties stored in the `repo.json` f
 {{% /tab %}}
 {{< /tabs >}}
 
-See the [`o3de edit-repo-properties` CLI Reference](/docs/user-guide/project-config/cli-reference/#edit-repo-properties) for the complete list of options.
 
 ### Add a new Gem or new Gem version to a remote repository
 
@@ -66,9 +66,8 @@ You can use the `o3de` CLI tool to add information from a `gem.json` file to a `
 
 After running this command, the `repo.json` file will be modified so the information inside each `gem.json` file is included and the `sha256` archive file hash is correct.
 
-If a gem with the same name already exists in the `repo.json` but the version is different, the `gem.json` data from the new version will be added to the `versions_data` field.  If a gem with the same name and version already exists an error will be printed and no changes will be made.  Use the [`--update-gems` command](#updating-gem-information-in-a-remote-repository) to update existing `gem.json` information.
+If a gem with the same name already exists in the `repo.json` but the version is different, the `gem.json` data from the new version will be added to the [`versions_data`](/docs/user-guide/programming/gems/manifest/#gemjson-manifest-contents) field.  If a gem with the same name and version already exists an error will be printed and no changes will be made.  Use the [`--update-gems` command](#updating-gem-information-in-a-remote-repository) to update existing `gem.json` information.
 
-See the [`o3de edit-repo-properties` CLI Reference](/docs/user-guide/project-config/cli-reference/#edit-repo-properties) for the complete list of options.
 
 {{< tip >}}
 After modifying remote repository contents, we recommend you [test the changes locally](#testing-o3de-remote-repository-changes) before uploading them to a public web server or GitHub.
@@ -109,7 +108,7 @@ After modifying remote repository contents, we recommend you [test the changes l
 
 ## Testing O3DE remote repository changes
 
-We recommend that you use the Project Manager and O3DE CLI to test your updated remote repository before you upload the changes to GitHub, a web server or other source control provider.
+We recommend that you use the Project Manager and O3DE CLI to test your remote repository before you upload the changes to GitHub, a web server or other source control.
 
 ### Test with Project Manager
 
