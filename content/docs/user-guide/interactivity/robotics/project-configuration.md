@@ -8,13 +8,13 @@ toc: true
 
 ## Requirements
 
-* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble.
+* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble or ROS 2 Iron.
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
 * [O3DE built from source on Linux](/docs/welcome-guide/setup/setup-from-github/building-linux).
 * The [latest released version](https://docs.ros.org/en/rolling/Releases.html#list-of-distributions ) of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. 
-  * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) with Ubuntu 22.04.
+  * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) and [ROS 2 Iron](https://docs.ros.org/en/iron/Installation.html) with Ubuntu 22.04.
 
 ## Setting up
 
@@ -22,16 +22,16 @@ toc: true
 
 #### Source your ROS 2 workspace
 
-To build or run projects using ROS 2 Gem, you must [source your ROS 2 workspace](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) in your console. The best way to ensure that ROS 2 is sourced at all times is by adding the following line to the `~/.profile` file:
+To build or run projects using ROS 2 Gem, you must [source your ROS 2 workspace](https://docs.ros.org/en/iron/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) in your console. The best way to ensure that ROS 2 is sourced at all times is by adding the following line to the `~/.profile` file:
 ```
 source /opt/ros/<distro>/setup.bash
 ```
-Replace `<distro>` with the ROS 2 distribution name (such as `humble`).
+Replace `<distro>` with the ROS 2 distribution name (such as `humble` or `iron`).
 Then, you must log out and log in from Ubuntu for the change to take effect.
 
 #### Custom packages
 
-The Gem fully supports [workspace overlaying](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay).
+The Gem fully supports [workspace overlaying](https://docs.ros.org/en/iron/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html#source-the-overlay).
 Source your workspace on top of the ROS 2 installation to include custom packages.
 
 The Gem comes with a number of ROS 2 packages already included and linked, but you might want to include additional packages in your project.
@@ -43,7 +43,7 @@ target_depends_on_ros2_packages(<your_target> <ros_package1> <ros_package2>)
 
 #### Working with multiple ROS versions
 
-If you have multiple ROS 2 versions installed, make sure you [source](https://docs.ros.org/en/humble/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) the one you would like to use. You can check which version is sourced in your console by checking the value of `ROS_DISTRO` environment variable (`echo $ROS_DISTRO`).
+If you have multiple ROS 2 versions installed, make sure you [source](https://docs.ros.org/en/iron/Tutorials/Workspace/Creating-A-Workspace.html#source-the-overlay) the one you would like to use. You can check which version is sourced in your console by checking the value of `ROS_DISTRO` environment variable (`echo $ROS_DISTRO`).
 
 > You currently need to rebuild your project if it was previously built with another ROS version.
 
