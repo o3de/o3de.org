@@ -24,8 +24,11 @@ The following are techniques you can use to help you debug any issues that you m
 In Visual Studio, you can compile with optimizations disabled and debug symbols enabled. This lets Visual Studio's debugging tools produce more helpful information that can help you debug.
 
 Make the following modifications to the `Configurations_msvc.cmake` file in the `<engine>\cmake\Platform\Common\MSVC` directory. In `ly_append_configurations_options`, under `COMPILATION _RELEASE`:
- - Change `/Od` to `/Ox`.
+ - Change `/Ox` to `/Od`.
  - Add `/Zi`.
+
+Make the following modifications under `LINK_NON_STATIC_RELEASE`:
+ - Add `/DEBUG`.
 
 After making those modifications, `ly_append_configurations_options` should look like this:
 
@@ -42,6 +45,11 @@ ly_append_configurations_options(
         /Oy             # Omit the frame pointer
         /Zi             # Generate debugging information (no Edit/Continue)
     
+    LINK_NON_STATIC_RELEASE
+        /OPT:REF # Eliminates functions and data that are never referenced
+        /OPT:ICF # Perform identical COMDAT folding. Redundant COMDATs can be removed from the linker output
+        /INCREMENTAL:NO
+        /DEBUG              # Generate pdbs
     # ... 
 ```
 
