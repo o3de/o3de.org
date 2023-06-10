@@ -1,4 +1,4 @@
-baseURL = "https://www.o3de.org"
+baseURL = "https://www.o3de.org/docs"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
