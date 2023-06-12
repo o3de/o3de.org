@@ -19,7 +19,7 @@ See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bund
 AssetBundlerBatch command --parameterWithArgs arg1,arg2 --flagParameter ...
 ```
 
- The `AssetBundlerBatch` executable is contained in the `dev/Bin64HostPlatform` folder of your project.
+ The `AssetBundlerBatch` executable is contained in the same folder as the `Editor` and `AssetProcessor` executables.  If you do not find the executable, you likely need to build `AssetBundlerBatch` by running the `cmake --build <build path>` command with `--target AssetBundlerBatch`. 
 
 The elements in this example invocation break down to:
 +  `command` - The command for the asset bundler to run. Examples include `seeds` and `assetLists`.
