@@ -256,7 +256,10 @@ Automatically include the default seed lists for the O3DE Engine, default projec
 +  **Gems** - `Gems/gem_name/Assets/gem_name_Dependencies.xml`
 +  **Project** - `project_name/project_name_Dependencies.xml`
 
-By default, the project dependencies includes pre-loaded particle libraries and game-wide audio, excluding level-specific audio.
+This flag also includes default seed list files in the the following locations:
++  **Engine** - `<engine root>/Assets/Engine/SeedAssetList.seed`
++  **Platform** - `<engine root>/Assets/Engine/Platforms/<platform>/*.seed`
++  **Gems** - `<gem name>/Assets/seedList.seed`
 
 This argument can be used along with other arguments that provide seeds.
 
