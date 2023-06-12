@@ -123,6 +123,15 @@ These settings control how the package download system functions.
   *Type*: `BOOL`
   *Default*: `OFF`
 
+* **`O3DE_BUILD_WITH_DEBUG_SYMBOLS_RELEASE`** - Generates symbol files (`.pdb`) in release configurations and turns off optimizations making it easier to troubleshoot issues in release builds.
+
+  {{< note >}}
+  Currently only supported for Windows and "Visual Studio" generators.
+  {{< /note >}}
+
+  *Type*: `BOOL`
+  *Default*: `OFF`
+
 <!-- 
   TODO: Platform-specific settings - should they go here, on the platform pages, or somewhere else entirely (like in the reference appendix?)
 -->
