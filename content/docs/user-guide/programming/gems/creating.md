@@ -39,19 +39,19 @@ Assets used by your Gem in a launcher runtime should have their source assets li
 
 ### Default `<GemName>/Assets/seedList.seed`
 
-This file contains a list of compiled asset paths and platforms that will automatically appear in the *Asset Bundler* GUI making it easy for users to find and include in their project asset bundle.
-They will also be included in a bundle when the [*AssetBundlerBatch* `--addDefaultSeedListFiles`](/docs/user-guid/packaging/asset-bundler/command-line-reference/#options) CLI option is used.
+This file contains a list of compiled asset paths and platforms that will automatically appear in the Asset Bundler GUI making it easy for users to find and include in their project asset bundle.
+They will also be included in a bundle when the [*AssetBundlerBatch* `--addDefaultSeedListFiles`](/docs/user-guide/packaging/asset-bundler/command-line-reference/#options-2) CLI option is used.
 The `seedList.seed` approach is useful when you want to provide a ready-to-use list of default compiled assets and the platforms they're used on.
 
-Refer to the [Asset Bundler documentation](/docs/user-guide/packaging/asset-bundler/) for more information on the *Asset Bundler*, `.seed` files and bundling assets,
+Refer to the [Asset Bundler documentation](/docs/user-guide/packaging/asset-bundler/) for more information on the Asset Bundler, `.seed` files, and bundling assets.
 
 {{<important>}}
-The filename `seedList.seed` is case-sensitive and must be in your Gem `Assets` folder or the seed list will not automatically appear in the *Asset Bundler* GUI.
+The filename `seedList.seed` is case-sensitive and must be in your Gem `Assets` folder or the seed list will not automatically appear in the Asset Bundler GUI.
 {{</important>}}
 
 ### Gem dependencies
 
-The Gem dependencies `.xml` file contains a list of source assets which will be used by the *Asset Processor* to create a seed list containing all the compiled asset paths and platforms.
+The Gem dependencies `.xml` file contains a list of source assets which will be used by the Asset Processor to create a seed list containing all the compiled asset paths and platforms.
 Using the Gem dependencies file is convenient for specifying source assets with glob patterns, for example when you want to include all shader variants, but does require running the Asset Processor.   
 
 Refer to [Default dependencies for O3DE projects](/docs/user-guide/packaging/asset-bundler/default-dependencies/) for instructions on creating Gem dependencies.
