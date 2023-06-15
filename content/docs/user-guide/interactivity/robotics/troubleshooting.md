@@ -21,7 +21,7 @@ If you don't find your problem covered here, try searching the issues and discus
 
 #### Correct installation
 Is your ROS 2 installed? Is it sourced properly? Was it also true when your project was built? Check `ROS_DISTRO` and `AMENT_PREFIX_PATH`.
-  - `echo $ROS_DISTRO` should show non-empty value, for example `humble` or `iron`.
+  - `echo $ROS_DISTRO` should show non-empty value, for example `humble`.
   - `echo $AMENT_PREFIX_PATH` should include your ROS 2 distribution installation path as well as any additional workspaces you have sourced (if any). 
   - If you are using ROS services in your project, make sure that the `RMW_IMPLEMENTATION` environment variable is the same on the both ends (check in each).
 

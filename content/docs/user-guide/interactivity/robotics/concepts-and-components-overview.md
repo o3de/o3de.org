@@ -11,16 +11,16 @@ You will learn about how ROS 2 and O3DE communicate, and how ROS 2 components in
 
 ## ROS 2 Concepts
 
-For a quick introduction to ROS 2 concepts, please refer to [ROS 2 Concepts documentation](https://docs.ros.org/en/iron/Concepts.html).
+For a quick introduction to ROS 2 concepts, please refer to [ROS 2 Concepts documentation](https://docs.ros.org/en/humble/Concepts.html).
 
 ## Structure and Communication
 
-The Gem creates a [ROS 2 node](https://docs.ros.org/en/iron/Tutorials/Understanding-ROS2-Nodes.html) which is directly a part of the ROS 2 ecosystem. As such, your simulation will not use any bridges to communicate and is subject to configuration through settings such as Environment Variables. It is truly a part of the ecosystem.
+The Gem creates a [ROS 2 node](https://docs.ros.org/en/humble/Tutorials/Understanding-ROS2-Nodes.html) which is directly a part of the ROS 2 ecosystem. As such, your simulation will not use any bridges to communicate and is subject to configuration through settings such as Environment Variables. It is truly a part of the ecosystem.
 
 Note that the simulation node is handled through `ROS2SystemComponent` - a singleton. However, you are free to create and use your own nodes if you need more than one.
 
 Typically, you will be creating publishers and subscriptions in order to communicate with the ROS 2 ecosystem using common topics.
-This is done through [rclcpp API](https://docs.ros.org/en/iron/p/rclcpp/generated/classrclcpp_1_1Node.html#classrclcpp_1_1Node). Example:
+This is done through [rclcpp API](https://docs.ros.org/en/humble/p/rclcpp/generated/classrclcpp_1_1Node.html#classrclcpp_1_1Node). Example:
 
 ```
 auto ros2Node = ROS2Interface::Get()->GetNode();
@@ -28,7 +28,7 @@ AZStd::string fullTopic = ROS2Names::GetNamespacedName(GetNamespace(), m_MyTopic
 m_myPublisher = ros2Node->create_publisher<sensor_msgs::msg::PointCloud2>(fullTopic.data(), QoS());
 ```
 
-Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/en/iron/p/rclcpp/generated/classrclcpp_1_1QoS.html).
+Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/en/humble/p/rclcpp/generated/classrclcpp_1_1QoS.html).
 
 ## Components overview
 
