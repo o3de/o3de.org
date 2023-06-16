@@ -7,19 +7,21 @@
 {{ $isPreview := in site.BaseURL "deploy-preview" }}
 {{ $isRelease := in site.BaseURL "www.o3de.org" }}
 
-{{ if $isDocs }}
 <div class="sticky-top" id="docs-banners">
-  <div class="main-navbar navbar navbar-dark navbar-docs" role="navigation" aria-label="main navigation">
+  <div class="main-navbar navbar navbar-light navbar-docs" role="navigation" aria-label="main navigation">
     <div class="container-fluid d-flex flex-row justify-content-between">
         <div class="navbar-brand">
-            <a class="navbar-item" href="{{ $docs }}">
-            {{ if $logo }}
-            {{ $url := printf "img/logos/%s" $logo | relURL }}
-                <img src="{{ $url }}" class="navbar-logo">
-            {{ else }}
-                {{ $title }}
-            {{ end }}
-            <span class="subTitle">LEARN</span>
+            <a class="navbar-item" href="https://o3de.org/">
+                {{ if $logo }}
+                {{ $url := printf "img/logos/%s" $logo | relURL }}
+                    <img src="{{ $url }}" class="navbar-logo" alt="O3DE logo.">
+                {{ else }}
+                    {{ $title }}
+                {{ end }}
+
+                <a href="{{ $docs }}">
+                    <span class="subTitle">LEARN</span>
+                </a>
             </a>
         </div>
 
@@ -42,7 +44,6 @@
         </div>
     </div>
   </div>
-  {{ if not .Site.IsServer }}
     {{ if $isPreview }}
         <div class="p-2 text-white bg-secondary" id="preview-info">
         {{ partial "preview-info.html" . }}
@@ -52,36 +53,4 @@
         {{ partial "version-warning.html" . }}
         </div>
     {{ end }}
-  {{ end }}
 </div>
-{{ else }}
-  <div class="main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
-    <div class="container-fluid d-flex flex-row justify-content-between">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="{{ $home }}">
-            {{ if $logo }}
-            {{ $url := printf "img/logos/%s" $logo | relURL }}
-              <img src="{{ $url }}" class="navbar-logo">
-            {{ else }}
-            {{ $title }}
-            {{ end }}
-          </a>
-        </div>
-
-        <div class="d-flex flex-row align-items-center">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="main-nav">
-            {{ partial "menu-loop.html" . }}
-          </div>  
-      
-          <div class="search">
-            {{ partial "search.html" . }}
-          </div>
-        
-        </div>  
-    </div> 
-  </div>
-{{ end }}
