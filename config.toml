@@ -34,14 +34,14 @@ sourceRepo = "https://github.com/o3de/o3de"
 # Docs version data format: ["display name", "baseURL"]
 # Note: A version that has "www.o3de.org" in its baseURL will get " (latest)" appended to its display name in the version selector.
 versions = [
-  ["23.05", "https://www.o3de.org"],
+  ["23.05", "https://docs.o3de.org"],
   ["development", "https://development--o3deorg.netlify.app"],
   ["22.10", "https://version-2210--o3deorg.netlify.app"],
   ["22.05", "https://version-2205--o3deorg.netlify.app"]
 ]
 
 [params.logos]
-navbar = "O3DE-Logo-with-color-white.svg"
+navbar = "O3DE-Logo-with-color-black.svg"
 footer = "O3DE-Logo-REV-Mono.svg"
 og_image = "O3DE-Circle-Icon.png"
 docs_footer = "O3DE-Logo-with-color.svg"
