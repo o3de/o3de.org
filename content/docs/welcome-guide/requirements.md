@@ -45,7 +45,7 @@ Creating new projects or using the advanced development features of O3DE require
 ## Microsoft Windows
 
 At this time, Microsoft Windows is the primary platform for using the O3DE
-editor and for building source. Specifically, **Windows 10 version 20H2 (10.0.19042.2251)**
+editor and for building source. Specifically, **Windows 10 version 20H2 (10.0.19042)**
 or later is required.
 
 ### Microsoft Visual Studio
@@ -56,6 +56,8 @@ The following versions of Visual Studio are supported:
 + [Microsoft Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version **17.3.x**.
 
 You can use any Microsoft Visual Studio license, including the Community edition.
+
+In addition, **Windows 10 SDK** version at **10.0.19041.0** or later is required.
 
 #### Visual Studio configuration
 
@@ -70,7 +72,7 @@ The default Visual Studio installation might not include all of the features tha
 
 1. On the **Workloads** tab:
    + Select **Game development with C++**.
-      + In the **Installation details** panel on the right, select at least one **Windows 10 SDK**.
+      + In the **Installation details** panel on the right, select a **Windows 10 SDK** version at **10.0.19041.0** or later.
    + Select **Desktop development with C++**.
 
 1. Once you've completed your changes, choose the **Install** button in the lower right hand corner, selecting your preferred download option.
