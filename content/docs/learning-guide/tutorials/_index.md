@@ -88,6 +88,12 @@ Create physics simulations in O3DE with NVIDIA's PhysX system. The tutorials in 
 | - | - |
 | [PostFX Shape Weight Modifier](postfx/use-postfx-shape-weight-modifier) | Use a **PostFX Shape Weight Modifier** component to modify exposure control in O3DE. This example demonstrates how to modify post-processing effects (PostFX) at runtime. |
 
+## Remote Repositories
+
+| Tutorial | Description |
+| - | - |
+| [Your First Remote Repository](remote-repositories/create-remote-repository) | Learn how to create an **O3DE remote repository** to share your projects, gems, and templates with the world. |
+
 ## Rendering
 
 | Tutorial | Description |
