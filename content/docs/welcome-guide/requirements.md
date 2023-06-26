@@ -45,7 +45,7 @@ Creating new projects or using the advanced development features of O3DE require
 ## Microsoft Windows
 
 At this time, Microsoft Windows is the primary platform for using the O3DE
-editor and for building source. Specifically, **Windows 10 version 20H2 (10.0.19042.2251)**
+editor and for building source. Specifically, **Windows 10 version 1809 (10.0.17763)**
 or later is required.
 
 ### Microsoft Visual Studio
@@ -219,18 +219,16 @@ O3DE also requires some additional library packages to be installed:
 * libxkbcommon-dev
 * libxkbcommon-x11-dev
 * libfontconfig1-dev
-* libcurl4-openssl-dev
-* libsdl2-dev
+* libpcre2-16-0
 * zlib1g-dev
 * mesa-common-dev
-* libssl-dev
 * libunwind-dev
 * libzstd-dev
 
 You can download and install these packages through `apt`.
 
 ```shell
-sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev libssl-dev libunwind-dev libzstd-dev
+sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libpcre2-16-0 zlib1g-dev mesa-common-dev libunwind-dev libzstd-dev
 ```
 
 ### Ninja Build System (Optional)
