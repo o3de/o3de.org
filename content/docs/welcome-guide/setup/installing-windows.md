@@ -22,7 +22,7 @@ The following instructions assume that you have:
 
 1. Run the installer from your download location.
 
-{{< note >}} To create an offline installer, use the following command: **`<installer exe> /layout`**. This will download a portable MSI and CAB files to the relative path of the installer. Execute the MSI to start an offline install. {{< /note >}}
+{{< note >}} To create an offline installer, use the following command: **`<installer exe> /layout`**. This will download a portable MSI and CAB files to the relative path of the installer. Run the MSI to start an offline install. {{< /note >}}
 
 1. During the developer preview, you might encounter the following warning from Microsoft Defender describing the program as an unrecognized app. To proceed with installation, choose **More info**, and then choose **Run anyway**.
 
