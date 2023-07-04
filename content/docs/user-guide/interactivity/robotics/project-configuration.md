@@ -8,13 +8,13 @@ toc: true
 
 ## Requirements
 
-* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble.
+* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble or ROS 2 Iron.
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
 * [O3DE built from source on Linux](/docs/welcome-guide/setup/setup-from-github/building-linux).
 * The [latest released version](https://docs.ros.org/en/rolling/Releases.html#list-of-distributions ) of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. 
-  * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) with Ubuntu 22.04.
+  * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) and [ROS 2 Iron](https://docs.ros.org/en/iron/Installation.html) with Ubuntu 22.04.
 
 ## Setting up
 
