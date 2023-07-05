@@ -104,3 +104,63 @@ Call Stack (most recent call first):
 
 * Change the value to remove the trailing `\`.
 * Change the format of your `LY_3RDPARTY_PATH` to use the platform-agnostic `/` path separator.
+
+## Long build times
+
+**Issue:** Building takes longer than expected.
+
+**Remedy:** There are several steps to troubleshooting builds that are taking a long time.
+1. Use a build command that measures the amount of time taken so you can compare build times when troubleshooting.  On Windows you can use the PowerShell `measure-command` to measure build times, and on linux `time`.
+{{< tabs name="CMake build timing example" >}}
+{{% tab name="Windows" %}}
+
+```cmd
+measure-command { cmake --build build/windows --target Editor AutomatedTesting.GameLauncher --config profile | Out-Default}
+```
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+```shell
+time cmake --build build/linux --target Editor AutomatedTesting.GameLauncher --config profile 
+```
+
+{{% /tab %}}
+{{< /tabs >}}
+1. Make sure you are only building the targets you are using.  For example, select an appropriate target like the `Editor` for building and not the `ALL_BUILD` target which will build everything and take longer.
+  Keep in mind that your first build will take the longest because all the code for the selected target and dependencies must be compiled, but subsequent builds should be much faster (minutes or seconds) especially when writing game code.
+1. Use the `profile` build configuration when developing when you don't need all the un-optimized debugging information of a `debug` build configuration.
+1. Don't build unit tests if you aren't making engine changes by configuring with the option `-DLY_DISABLE_TEST_MODULES=ON`.
+1. Deactivate Gems your project is not using using the [o3de CLI or Project Manager](/docs/user-guide/project-config/add-remove-gems/).
+1. See the [troubleshooting step for configuring compiler-specific settings](#building-causes-computer-to-freeze-or-lock-up) below which may be necessary on hardware with high CPU core counts.
+
+## Building causes computer to freeze or lock up
+
+**Issue:** On some computers, especially those with CPUs that have high core counts, the way compilation is spread across cores can lead to resource starvation and even freezing.
+
+**Remedy:** Adjust the build settings to spread out the maximum number of projects that can be built in parallel and the maximum CL processor counts allowed per project.
+
+For Visual Studio on Windows, the command might look like this to set the maximum cpu count to 16 and limit to 32 CL processor counts per project.
+```cmd
+cmake --build build/windows --target Editor --config profile -- /m:16 /p:CL_MPCount=32
+```
+Experiment with different values to find the best settings for your hardware.  
+On Windows you can measure your compile times in a PowerShell terminal with different settings with a command like this:
+
+```cmd
+measure-command { cmake --build build/windows --target Editor --config profile -- /m:8 /p:CL_MPCount=8 | Out-Default}
+```
+Example output:
+```cmd
+Days              : 0
+Hours             : 0
+Minutes           : 15
+Seconds           : 56
+Milliseconds      : 701
+Ticks             : 9567014354
+TotalDays         : 0.0110729332800926
+TotalHours        : 0.265750398722222
+TotalMinutes      : 15.9450239233333
+TotalSeconds      : 956.7014354
+TotalMilliseconds : 956701.4354
+```
