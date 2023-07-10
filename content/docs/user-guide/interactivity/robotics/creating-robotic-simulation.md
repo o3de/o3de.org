@@ -32,6 +32,6 @@ Once you are set up and familiar with the [example project](/docs/user-guide/int
    2. Use `ROS2SensorComponent` as a base class if you are implementing a new sensor. 
 5. Develop necessary sensors and their prefabs.
 7. Develop your scene and simulation scenario, placing Assets and configuring components.
-8. Run the simulation with your ROS 2 robot stack. You can build quickly one with some of many [ROS 2 packages](https://index.ros.org/packages/#iron) and projects in [ROS 2 ecosystem](https://project-awesome.org/fkromer/awesome-ros2).
+8. Run the simulation with your ROS 2 robot stack. You can build quickly one with some of many [ROS 2 packages](https://index.ros.org/packages/#humble) and projects in [ROS 2 ecosystem](https://project-awesome.org/fkromer/awesome-ros2).
 
 
