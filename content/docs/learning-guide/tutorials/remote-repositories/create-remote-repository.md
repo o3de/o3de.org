@@ -38,8 +38,9 @@ Here is an example of a Github repo uri:
 ## Create Remote Repository Configuration
 ---
 Provide the local path on your machine of your remote project `repo-path` this is where you cloned you online version control repo.<br>
-Note: `--repo-path` and `--repo-uri` are required to create remote repo.
-
+Note: `--repo-path` and `--repo-uri` are required to create remote repo. 
+<br>
+Use ./o3de.bat if you are using powershell <br>
 ```
 o3de.bat create-repo --repo-path "C:\o3de_Projects\<RemoteProjectName>" --repo-uri "https://github.com/<YourGitAccount>/<RemoteProjectName>.git"
 ```
@@ -72,7 +73,7 @@ o3de.bat create-gem --gem-path "C:\o3de_Projects\<RemoteProjectName>\Gems\MyGem"
 ```
 <ul>
 
-This step registers your gem to the O3DE engine, you will be able to find your gem under the gem tab in your project managaer. Be sure to use the `--edit-repo-properties` `--add-gem` in order to add your gem to your project in order to work with your gem.<br>
+This step registers your gem to the O3DE engine, you will be able to find your gem under the Gems tab in your project managaer. Be sure to use the `--edit-repo-properties` `--add-gem` in order to add your gem to your project in order to work with your gem.<br>
 <ul> 
 For example: Add your gem to your project when working locally:
 <ul>
@@ -122,8 +123,15 @@ To create a release archive `download prefix`, make sure you follow this pattern
 ```
 o3de.bat edit-repo-properties --repo-path "C:\o3de_Projects\<RemoteProjectName>\repo.json" --add-gem "C:\o3de_Projects\<RemoteProjectName>\Gems\MyGem" --release-archive-path "C:\o3de_Projects\<RemoteProjectName>\Gems" --download-prefix "https://github.com/<YourGitAccount>/<RemoteProjectName>/releases/download/<YouReleaseTag>"
 ```
- <ul>
+<ul>
 
+ Provide the following required information:
+ <li> --repo-path: the absolute path to your remote project's repo.json file
+ <li> --add-gem: the path to the directory to where the actual gem you want to add is located
+ <li> --release-archive-path: the path to where you want to place your .zip archive, it should be placed in the Gems folder of your remote project folder
+ <li> --download-prefix: the URI where your gem archive can be download from
+
+<br>
 1. Here is an example of where you should upload your release to Github (you can find this on your version control url):
 
 
