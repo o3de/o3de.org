@@ -130,7 +130,7 @@ time cmake --build build/linux --target Editor AutomatedTesting.GameLauncher --c
 1. Make sure you are only building the targets you are using.  For example, select an appropriate target like the `Editor` for building and not the `ALL_BUILD` target which will build everything and take longer.
   Keep in mind that your first build will take the longest because all the code for the selected target and dependencies must be compiled, but subsequent builds should be much faster (minutes or seconds) especially when writing game code.
 1. Use the `profile` build configuration when developing when you don't need all the un-optimized debugging information of a `debug` build configuration.
-1. Make sure you're using unity builds (on by default) by configuring with the option `-DLY_UNITY_BUILD=ON` build configuration when developing when you don't need all the un-optimized debugging information of a `debug` build configuration.
+1. Make sure you're using unity builds (on by default) by configuring with the option `-DLY_UNITY_BUILD=ON`.
 1. Don't build unit tests if you aren't making engine changes by configuring with the option `-DLY_DISABLE_TEST_MODULES=ON`.
 1. Deactivate Gems your project is not using using the [o3de CLI or Project Manager](/docs/user-guide/project-config/add-remove-gems/).
 1. See the [troubleshooting step for configuring compiler-specific settings](#building-causes-computer-to-freeze-or-lock-up) below which may be necessary on hardware with high CPU core counts.
