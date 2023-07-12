@@ -152,10 +152,11 @@ For convenience, here is an example of parametrized CMake calls:
 
 ```shell
 cd $PROJECT_PATH
-cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON
+cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
 cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets 
 ```
 
+These commands build O3DE with PhysX 5 (as opposed to default PhysX 4), which is better suited for robotic simulation.
 For a deeper understanding on how O3DE projects are built, please refer to [Configure and Build](/docs/user-guide/build/configure-and-build).
 
 ### Launching your project in O3DE Editor
