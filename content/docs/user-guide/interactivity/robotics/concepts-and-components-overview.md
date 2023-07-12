@@ -101,10 +101,10 @@ It is possible to implement your own control mechanisms with this component.
 
 ### Joints and Manipulators
 
-To control robotic joints systems such as manipulator arms, some integration with [MoveIt](https://github.com/ros-planning/moveit2) is in place.
+To control robotic joints systems such as manipulator arms, some integration with [MoveIt2](https://github.com/ros-planning/moveit2) is in place.
 Two kinds of simulated joint systems are supported:
 - Articulation links, which benefit from stability of reduced coordinate articulations in the physics engine.
-- Hinge joint components.
+- Hinge and prismatic joint components.
 When [importing a robot](importing-robot.md) with joints, you decide which of these systems to use.
 
 There are three interfaces to control joint systems: `JointsPositionControllerRequests`, `JointsManipulationRequests` and `JointsTrajectoryRequest`.
