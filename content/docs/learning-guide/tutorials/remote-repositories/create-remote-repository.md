@@ -1,193 +1,177 @@
 ---
-linktitle: Your First Remote Repository
-title: Your First Remote Repository
-description: Welcome to the Create Remote Repository! Building upon the foundation of Open 3D Engine (O3DE), we have created a new remote repo template, a comprehensive solution for managing and distributing projects effortlessly. You can seamlessly create, package, and share your projects remotely with Github or other version control platforms, promoting collaboration and accelerating project development.
-
+linktitle: Remote Repositories
+title: Create Your Remote Repository
+description: Learn how to use remote repository templates in Open 3D Engine (O3DE) to package and share your project remotely with GitHub or other version control platforms.
 ---
-## Add a Remote Repository with the O3DE Command Line Tool
----
-Navigate to scripts folder from the root of your **Open 3D Engine (O3DE)**.<br>
+In this tutorial you will build upon the foundation of O3DE and use the remote repository template to manage and distribute projects effortlessly. You will learn how to package and share your projects remotely with GitHub or other version control platforms, promoting collaboration and accelerating project development.
 
-```
-cd scripts
-```
 Show a list Open 3D Engine (O3DE) commands.
 ```
-cd scripts -help
+o3de.bat --help
 ```
-<strong>Note:</strong> All engine commands have their abbreviations. Use the `-help` menu for list of details.
+**NOTE:** All engine commands have their abbreviations. Use the `--help` menu for list of details.
 
-<br>
+## Create a repository
+Create a new repository for your **Remote project** and clone this repo to your local machine.
+This version control repository link is where you upload your project `repo-uri`.
 
-## Start With A Github Repository Or Other Version Control Systems
----
-<ul>
-
-Create a new repository for your **Remote project** and clone this repo to your local 
-machine.
-<br>
-This version control repository link is where you upload your project (`repo-uri`).<br>
 Here is an example of a Github repo uri:
 
 ```
 "https://github.com/<YourGitAccount>/<RemoteProjectName>.git"
 ```
-</ul>
-<br>
 
 ## Create Remote Repository Configuration
----
-Provide the local path on your machine of your remote project `repo-path` this is where you cloned you online version control repo.<br>
-Note: `--repo-path` and `--repo-uri` are required to create remote repo. 
-<br>
-Use ./o3de.bat if you are using powershell <br>
+Navigate to scripts folder from the root of your **Open 3D Engine (O3DE)**.
 ```
+cd scripts
+```
+To create a remote repository configuration, you will need to provide the following information:
+- `repo-path` - the local path of your remote project. This is where you cloned your repo.
+- `repo-uri` - the URI of your repo.
+
+{{< tabs name="O3DE CLI command" >}}
+{{% tab name="Windows" %}}
+```cmd
 o3de.bat create-repo --repo-path "C:\o3de_Projects\<RemoteProjectName>" --repo-uri "https://github.com/<YourGitAccount>/<RemoteProjectName>.git"
 ```
-<ul>
+**NOTE:** Use ./o3de.bat if you are using powershell
 
-1. A directory with your specified remote project name will appear along with a `repo.json` file in the root of the directory
-<br>
+{{% /tab %}}
+{{% tab name="Linux" %}}
+```
+./o3de.sh create-repo --repo-path "~/<RemoteProjectName>" --repo-uri "https://github.com/<YourGitAccount>/<RemoteProjectName>.git"
+```
+{{% /tab %}}
+{{< /tabs >}}
 
-2. Three folders (Gems/Projects/Templates) will automatically be created in your project folder after you use `--create-repo CLI command`. Make sure to place all asscocated objects in their correct folder type to avoid later confusion.<br> 
+The `create-repo` command performs the following actions:
+1. Creates a directory with the remote project name specified in the `repo-path`, and creates a `repo.json` file in the root of that directory.
+2. Creates three folders in your project folder: Gems, Projects, and Templates. Make sure to place all associated objects in their correct folder type to avoid later confusion.
+This will be what you remote project folder will look like after this step:
+{{<image-width src="/images/learning-guide/tutorials/remote-repositories/init.png" width="300">}}
 
-<ul><li>For example: Gems should go inside Gems folder, projects should be placed into Projects folder, and project templates should go inside Templates folder.</ul><br>
-Note: Remember to push your local changes to your version control remote repository
-</ul>
+- For example: Gems should go inside Gems folder, projects should be placed into Projects folder, and project templates should go inside Templates folder.
 
+{{< note >}}
+Remember to push your local changes to your remote version control repository.
+{{< /note >}}
 
-<br>
+## (Optional) Create a Gem Release Archive for your project
+To test your remote repo creation, you can create a Gem of your own and make it public to allow other users to download
 
-## Create Your Own Gem For Your Project (Optional)
----
-You can enjoy the freedom of creating your own gem and upload it with your remote repo.<br>
-Please look at next section **Create release archive** if you want to make your gem avaliable to the world! <br>
+To create a Gem, you will need to provide the following information:
 
-Follow the below command to call the `--create-gem` and pass in the path to where you want your gem to be stored (If you don't specify a name for your gem, O3DE will use the folder name you passed in, which is the last parameter of your provided path).
-<ul><ul><li>For example: "C:\o3de_Projects\RemoteProjectName\Gems\MyGem" Your gem name will be "MyGem" and its located in the Gems folder that was created during create-repo step</ul>
-<br>
-Note: Always put your gems in the Gems folder to avoid later confusion, Please follow the below template and pass your own gem in the path inside the Gems folder.
+Skip this step if you already have a gem in your remote repository.
 
+- `gem-path`: The path to the directory where you would want your Gem to be stored (Remember to place your Gem in the Gems folder)
+- `gem-name`: Optional parameter that specifies a name for your Gem
+   
 ```
 o3de.bat create-gem --gem-path "C:\o3de_Projects\<RemoteProjectName>\Gems\MyGem" --gem-name "SuperGem"
 ```
-<ul>
 
-This step registers your gem to the O3DE engine, you will be able to find your gem under the Gems tab in your project managaer. Be sure to use the `--edit-repo-properties` `--add-gem` in order to add your gem to your project in order to work with your gem.<br>
-<ul> 
-For example: Add your gem to your project when working locally:
-<ul>
+The `create-gem` command performs the following actions:
+1. Create a Gem for your project, specifying a path and name for the new Gem. If you don't specify a name, O3DE will use the trailing directory name from the `gem-path`.
+3. Registers your Gem to the O3DE engine. You can now find your new Gem with the Gem name under the Gems tab in Project Manager.
 
-```
-o3de.bat edit-repo-properties --repo-path "C:\o3de_Projects\<RemoteProjectName>\repo.json" --add-gem "C:\o3de_Projects\<RemoteProjectName>\Gems\MyGem"
-```
+Next, use the `edit-repo-properties` command to add your Gem to your project.
 
-</ul>
-</ul>
-<br>
+**Add your gem to your remote project**
 
-However, pushing your changes to your version control repository would not allow other user to use your gem, move on to the next step if you want to create a downloadable `release archive` for your gem to be shared with the world. Make sure  you push all your changes before moving to the next step to share your gem with the world.
-</ul>
-</ul>
+To add a Gem to your project, you will need to provide the following information:
+- `--repo-path`: The path to your repo.json file
+- `--add-gem`: The path to the directory of your Gem
 
-<br>
+    ```
+    o3de.bat edit-repo-properties --repo-path "C:\o3de_Projects\<RemoteProjectName>\repo.json" --add-gem "C:\o3de_Projects\<RemoteProjectName>\Gems\MyGem"
+    ```
+    The `edit-repo-properties` command will register your gem with your remote project's repo.json file under the gems_data field
 
-## Create Release Archive
----
-The primary purpose of a **Release archive** is to provide a well-defined and stable version of the software that can be easily shared, installed, and distributed.<br> 
+In the next step, you will create a downloadable release archive for your Gem in order to share it with the world. Make sure you push all your changes before moving to the next step.
 
-In O3DE we provide the option for users to create a release archive with .zip format.<br>
+### Create Release Archive
+The primary purpose of a _release archive_ is to provide a well-defined and stable version of the software that can be easily shared, installed, and distributed.
 
-Due to user safty, we use `sha-256` to hash our files before creating the release archive. Thus, you won't be able to modify your `repo.json` file once your archive is created. Every time you make a change to your gem, including the repo.json file, the `sha-256` hash will change.<br>
+In O3DE we provide the option for users to create a release archive with .zip format.
 
-<ul>
+For security, O3DE uses `sha-256` to hash files before creating the release archive. Every time you make a change to your Gem, including the repo.json file, the `sha-256` hash will change.
 
-Note: You must know where your zip will be created online **download path** before you actually create the release archive zip.</ul>
-<br>
-<ul>
+**Here is a Github example of how to create a release archive.**
 
-### Add A Gem To Your Remote Repository And Create A Release Archive
----
-Here is a Github example of how to create a release archive. <br><br>
-Note: `--release-archive-path` command can only be used after you call the `--add-gem` command.<br> See below example:
 
-<ul>
+- To create a release archive `download prefix`, make sure you follow this pattern for any Github repositories:
 
-<li>
+    `https://github.com/YourGitAccount/RemoteProjectName/releases/download/YouReleaseTag`
 
-To create a release archive `download prefix`, make sure you follow this pattern for any Github repositories:<br>
-<ul>
+To create a release archive, you will need to provide the following information:
+- `--repo-path`: the absolute path to your remote project's repo.json file
+- `--add-gem`: the path to the directory to where the actual gem you want to add is located
+- `--release-archive-path`: the path to where you want to place your .zip archive, it should be placed in the Gems folder of your remote project folder 
+- `--download-prefix`: the URI where your gem archive can be download from, You must know where your zip will be avaliable to download before you actually create the release archive zip.
 
- `https://github.com/YourGitAccount/RemoteProjectName/releases/download/YouReleaseTag`<br>
+{{< note >}}
+`--release-archive-path` command can only be used after you call the `--add-gem` command.See below example:
+{{< /note >}}
+
 
 ```
 o3de.bat edit-repo-properties --repo-path "C:\o3de_Projects\<RemoteProjectName>\repo.json" --add-gem "C:\o3de_Projects\<RemoteProjectName>\Gems\MyGem" --release-archive-path "C:\o3de_Projects\<RemoteProjectName>\Gems" --download-prefix "https://github.com/<YourGitAccount>/<RemoteProjectName>/releases/download/<YouReleaseTag>"
 ```
-<ul>
 
- Provide the following required information:
- <li> --repo-path: the absolute path to your remote project's repo.json file
- <li> --add-gem: the path to the directory to where the actual gem you want to add is located
- <li> --release-archive-path: the path to where you want to place your .zip archive, it should be placed in the Gems folder of your remote project folder
- <li> --download-prefix: the URI where your gem archive can be download from
-
-<br>
 1. Here is an example of where you should upload your release to Github (you can find this on your version control url):
 
+    {{<image-width src="/images/learning-guide/tutorials/remote-repositories/add_release.png" width="500">}}
 
-![tag](Media/add_release.png)
+2. Here is where you would be setting your release tag (make sure this tag is the same as the last parameter you passed for the `--download-prefix` arg):
 
-2. Here is where you would be setting your release tag (make sure this tag is the same as the last parameter you passed for the `--download-prefix` arg)
+    {{<image-width src="/images/learning-guide/tutorials/remote-repositories/release_tag.png" width="500">}}
 
-![tag](Media/release_tag.png)
+{{< important >}}
+Make sure you know where your release will be available after uploading it to GitHub. Once uploaded, you won't be able to change the `download_source_uri` in your `repo.json` file. If you input the wrong download path, you will need to repeat this step and rezip the file and upload the release to GitHub again.
+{{< /important >}}
 
- </ul>
-</ul>
+After you upload your Gem to the version control website, other users will be able to download it in their O3DE engine. It will be available in the Project Manager. Users can navigate to Remote Sources and use your remote project URL to download associated Gems based on the download path you provided in this step.
 
-WARNING: Make sure you know where your release will be available after uploading it to GitHub. Once uploaded, you won't be able to change the `download_source_uri` in your `repo.json` file. If you input the wrong download path, you will need to repeat this step and rezip the file and upload the release to Github again.
-</ul>
-After you upload your gem to the version control website, other users will be able to download it in their O3DE engine. It will be available in the Project Manager. Users can navigate to Remote Sources and use your remote project url to download associated gems based on the download path you provided in this step.<br><br>
-</ul>
 
 ## Testing Your Remote Repo locally
----
 You can test your remote repo locally before uploading to your remote repository to make sure your remote repo work as expected.
-Use python to host a `local server` for testing
+
+You can test your release archive within your local file path. Follow the above steps to create a repo and create a Gem:
+
+To create a release archive, you will need to provide the following information:
+- `--download-prefix`: use you local path to where this zip would be stored 
+
+```
+./o3de.bat edit-repo-properties --repo-path "C:\o3de_Projects\localtest\repo.json" --add-gem "C:\o3de_Projects\localtest\Gems\MylocalGem" --release-archive-path "C:\o3de_Projects\localtest\Gems" --download-prefix "C:\o3de_Projects\localtest\Gems"
+```
+
+After performing the above steps you are able to create a repo and a release archive and to be able to download from the project manager
+
+
+#### Use Python to host a `local server` for testing
 
 1. Start local python server, navigate to the root of your `repo.json` file.
-
-<ul>
-
-```
-cd RemoteProject
-``` 
-</ul>
+    ```
+    cd RemoteProject
+    ``` 
 
 2. Start a local python server on 8080.
-
-<ul>
-
-```
-python -m http.server 8080
-```
-</ul>
+    ```
+    python -m http.server 8080
+    ```
 
 3. Use this below format for your `--download-prefix`.
+    ```
+    http://localhost:8080/Gems
+    ```
 
-<ul>
+    Here is an example of where your download uri will be located:
+    ```
+    http://localhost:8080/Gems/camera-0.1.0-gem.zip
+    ```
 
-```
-http://localhost:8080/Gems
-```
 
-Here is an example of where your download uri will be located:
-```
-http://localhost:8080/Gems/camera-0.1.0-gem.zip
-```
-</ul>
+4. Open up the project manager and add a repo, when prompted use the URL for your local server which should be "http://localhost:8080/"
 
-3. Open up the project manager and add a repo, when prompted use the URL for your local server which should be "http://localhost:8080/"
-
-<ul>
-    NOTE: adding the repo may fail without the trailing slash, and the name should match the repo url in repo.json
-</ul>
+**NOTE:** adding the repo may fail without the trailing slash, and the name should match the repo url in repo.json
