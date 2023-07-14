@@ -21,7 +21,7 @@ Here is an example of a Github repo uri:
 "https://github.com/<YourGitAccount>/<RemoteProjectName>.git"
 ```
 
-## Create Remote Repository Configuration
+## Create a remote repository `repo.json` configuration file
 Navigate to scripts folder from the root of your **Open 3D Engine (O3DE)**.
 ```
 cd scripts
