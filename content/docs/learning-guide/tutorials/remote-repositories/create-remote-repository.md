@@ -12,7 +12,7 @@ o3de.bat --help
 **NOTE:** All engine commands have their abbreviations. Use the `--help` menu for list of details.
 
 ## Create a repository
-Create a new repository for your **Remote project** and clone this repo to your local machine.
+Create a new repository for your remote project and clone this repo to your local machine.
 This version control repository link is where you upload your project `repo-uri`.
 
 Here is an example of a Github repo uri:
