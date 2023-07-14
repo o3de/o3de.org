@@ -169,4 +169,6 @@ After performing the above steps you should be able to add the new remote reposi
 
 4. Open the Project Manager and add a remote repository from the Engine > Remote Sources page. When prompted, use the URL for your local server which should be "http://localhost:8080/"
 
-**NOTE:** adding the repo may fail without the trailing slash, and the name should match the `repo-uri` in repo.json
+{{< note >}}
+Adding the repo may fail without the trailing slash, and the name should match the `repo-uri` in repo.json
+{{< /note >}}
