@@ -9,7 +9,9 @@ Show a list Open 3D Engine (O3DE) commands.
 ```
 o3de.bat --help
 ```
-**NOTE:** All engine commands have their abbreviations. Use the `--help` menu for list of details.
+{{< note >}}
+All engine commands have their abbreviations. Use the `--help` menu for list of details.
+{{< /note >}}
 
 ## Create a repository
 Create a new repository for your remote project and clone this repo to your local machine.
