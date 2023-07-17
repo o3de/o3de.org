@@ -3,14 +3,16 @@ linktitle: Remote Repositories
 title: Create Your Remote Repository
 description: Learn how to use remote repository templates in Open 3D Engine (O3DE) to package and share your project remotely with GitHub or other version control platforms.
 ---
-In this tutorial you will build upon the foundation of O3DE and use the remote repository template to manage and distribute projects effortlessly. You will learn how to package and share your projects remotely with GitHub or other version control platforms, promoting collaboration and accelerating project development.
+In this tutorial you will build upon the foundation of Open 3D Engine (O3DE) and use the remote repository template to manage and distribute projects effortlessly. You will learn how to package and share your projects remotely with GitHub or other version control platforms, promoting collaboration and accelerating project development.
 
-Show a list Open 3D Engine (O3DE) commands.
+In this tutorial you will use the O3DE CLI tool from a command prompt. You can list all O3DE commands and get help on a specific command using the `--help` option:
 ```
+cd <o3de-engine-directory>/scripts
 o3de.bat --help
+o3de.bat create-gem --help
 ```
 {{< note >}}
-All engine commands have their abbreviations. Use the `--help` menu for list of details.
+All `o3de` command options have abbreviations for convenience. Use the `--help` option with a command for details.
 {{< /note >}}
 
 ## Create a repository
@@ -26,7 +28,7 @@ Here is an example of a Github repo URI:
 ## Create a remote repository `repo.json` configuration file
 Navigate to scripts folder from the root of your **Open 3D Engine (O3DE)**.
 ```
-cd scripts
+cd <o3de-engine-directory>/scripts
 ```
 To create a remote repository configuration, you will need to provide the following information:
 - `repo-path` - the local path of your remote repository, this is where you cloned your repo.
@@ -148,7 +150,7 @@ After performing the above steps you should be able to add the new remote reposi
 
 #### Use Python to host a `local server` for testing
 
-1. Start a local Python server from the same folder that contains the `repo.json` file.
+1. Open a command window and change to the local repo folder that contains the `repo.json` file.
     ```
     cd c:\remote-repo
     ``` 
