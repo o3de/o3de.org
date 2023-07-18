@@ -140,7 +140,7 @@ After you upload your Gem to the version control website, other users that have 
 ## Testing your remote repo locally
 You can test your remote repo locally before uploading to your remote repository to make sure your remote repo works as expected by using a local file path.
 
-You can test locally be creating another remote repository and Gem using the steps above and add the Gem to your new remote repository.  Next, create a release archive for the new Gem using a local path for the `download prefix`:
+You can test locally by creating another remote repository and Gem using the steps above and add the Gem to your new remote repository. Next, create a release archive for the new Gem using a local path for the `download prefix`:
 ```cmd
 o3de.bat edit-repo-properties --repo-path "C:\local-repo\repo.json" --add-gem "C:\local-repo\Gems\MyLocalGem" --release-archive-path "C:\local-repo\Gems" --download-prefix "C:\local-repo\Gems"
 ```
