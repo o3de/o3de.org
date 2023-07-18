@@ -114,7 +114,7 @@ To create a release archive, you will need to provide the following information:
 - `--download-prefix`: the URI where your gem archive can be downloaded from. You must know where your zip will be available for download before you actually create the release archive zip.
 
 {{< note >}}
-`--release-archive-path` command can only be used after you call the `--add-gem` command.See below example:
+`--release-archive-path` command can only be used after you call the `--add-gem` command. See below example:
 {{< /note >}}
 
 
