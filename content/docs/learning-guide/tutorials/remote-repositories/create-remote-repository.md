@@ -1,7 +1,7 @@
 ---
 linktitle: Remote Repositories
 title: Create Your Remote Repository
-description: Learn how to use remote repository templates in Open 3D Engine (O3DE) to package and share your project remotely with GitHub or other version control platforms.
+description: Learn how to use Open 3D Engine's (O3DE) remote repository tools to package and share your project remotely with GitHub or other version control platforms.
 ---
 In this tutorial you will build upon the foundation of Open 3D Engine (O3DE) and use the remote repository template to manage and distribute projects effortlessly. You will learn how to package and share your projects remotely with GitHub or other version control platforms, promoting collaboration and accelerating project development.
 
