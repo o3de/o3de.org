@@ -110,7 +110,7 @@ For security, O3DE uses `sha-256` to hash files before creating the release arch
 To create a release archive, you will need to provide the following information:
 - `--repo-path`: the absolute path to your remote repository's `repo.json` file
 - `--add-gem`: the path to the directory to where the actual gem you want to add is located
-- `--release-archive-path`: the path to where you want to place your .zip archive, we recommend placing it in the Gems folder inside your remote repository folder. 
+- `--release-archive-path`: the path to where you want to place your .zip archive; we recommend placing it in the Gems folder inside your remote repository folder.
 - `--download-prefix`: the URI where your gem archive can be download from, You must know where your zip will be avaliable to download before you actually create the release archive zip.
 
 {{< note >}}
