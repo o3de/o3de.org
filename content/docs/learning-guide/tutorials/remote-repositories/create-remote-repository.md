@@ -39,7 +39,7 @@ To create a remote repository configuration, you will need to provide the follow
 ```cmd
 o3de.bat create-repo --repo-path "C:\remote-repo" --repo-uri "https://github.com/<YourGitAccount>/<RemoteRepoName>.git"
 ```
-{{< note >}} Use ./o3de.bat if you are using powershell.{{< /note >}}
+{{< note >}} Use ./o3de.bat if you are using PowerShell.{{< /note >}}
 
 {{% /tab %}}
 {{% tab name="Linux" %}}
