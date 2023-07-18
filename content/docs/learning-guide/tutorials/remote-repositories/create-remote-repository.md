@@ -5,7 +5,7 @@ description: Learn how to use remote repository templates in Open 3D Engine (O3D
 ---
 In this tutorial you will build upon the foundation of Open 3D Engine (O3DE) and use the remote repository template to manage and distribute projects effortlessly. You will learn how to package and share your projects remotely with GitHub or other version control platforms, promoting collaboration and accelerating project development.
 
-In this tutorial you will use the O3DE CLI tool from a command prompt. You can list all O3DE commands and get help on a specific command using the `--help` option:
+In this tutorial you will use the O3DE command-line interface (CLI) tool from a command prompt. You can list all O3DE commands and get help on a specific command using the `--help` option:
 ```
 cd <o3de-engine-directory>/scripts
 o3de.bat --help
