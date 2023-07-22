@@ -8,13 +8,13 @@ toc: true
 
 ## Requirements
 
-* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble.
+* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble or ROS 2 Iron.
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
 * [O3DE built from source on Linux](/docs/welcome-guide/setup/setup-from-github/building-linux).
 * The [latest released version](https://docs.ros.org/en/rolling/Releases.html#list-of-distributions ) of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. 
-  * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) with Ubuntu 22.04.
+  * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) and [ROS 2 Iron](https://docs.ros.org/en/iron/Installation.html) with Ubuntu 22.04.
 
 ## Setting up
 
@@ -152,10 +152,11 @@ For convenience, here is an example of parametrized CMake calls:
 
 ```shell
 cd $PROJECT_PATH
-cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON
+cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
 cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets 
 ```
 
+These commands build O3DE with PhysX 5 (as opposed to default PhysX 4), which is better suited for robotic simulation.
 For a deeper understanding on how O3DE projects are built, please refer to [Configure and Build](/docs/user-guide/build/configure-and-build).
 
 ### Launching your project in O3DE Editor

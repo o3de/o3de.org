@@ -36,6 +36,7 @@ You can interact with the Settings Registry in O3DE through the following method
 | [Output the Settings Registry to Stream with C++](./output-settings-registry) | Output the Settings Registry to an IO stream with C++. |
 | [Settings Registry Developer Guide](./developer-documentation) | Provides detailed developer information about the Settings Registry. Settings Registry examples are provided for multiple scenarios. The interaction between the CMake Build Generation system, the Settings Registry, and the Gem Module System are described in detail. |
 | [Gem Loading and the Settings Registry](./gem-loading) | Learn how the Settings Registry is used to load Gem Modules and configure Gem settings. |
+| [Settings Registry Chaining](./import-settings-registry) | Learn how the Settings Registry can trigger imports of other Settings Registry files. |
 
 ## Related topics
 
