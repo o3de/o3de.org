@@ -5,15 +5,15 @@ description: Learn how to create custom Script Canvas Nodeable Nodes in Open 3D 
 weight: 100
 ---
 
-This topic guides you how to create custom Script Canvas Nodeable Nodes step by step.
+This topic guides you through how to create custom Script Canvas Nodeable Nodes step by step.
 
-You'll see the term _nodeable_ used throughout the O3DE source. 
+You'll see the term _nodeable_ used throughout the O3DE source code.
 A nodeable can refer to both the node that appears in the Node Palette as a result of the AzAutoGen processing,
 and the mechanism by which a compiled Script Canvas graph can invoke C++ functions.
 
 ## Step 1: Adding support for custom nodeable nodes to a Gem
 {{< note >}}
-This step is only required once for the first time custom nodeable node creation.
+This step is only required once for first time custom nodeable node creation.
 {{< /note >}}
 
 In your Gem's `Code/CMakeLists.txt`, add a section for `AUTOGEN_RULES` and declare `Gem::ScriptCanvas` as a build dependency.
@@ -21,9 +21,9 @@ In your Gem's `Code/CMakeLists.txt`, add a section for `AUTOGEN_RULES` and decla
 The precise place for this section will vary depending on how your Gem is configured. 
 However, we recommend that your Gem define a `STATIC` library to make the code available to both runtime and editor projects.
 
-As an example, here is partial definition of StartingPointInput Gem's `Code/CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
-1. `Gem::ScriptCanvas` must be declared as `BUILD_DEPENDENCIES` of `STATIC` library
-1. Add `AUTOGEN_RULES` section for custom free function under `STATIC` library
+As an example, here is partial definition of the StartingPointInput Gem's `Code/CMakeLists.txt` that supports Script Canvas custom nodes with following required changes:
+1. `Gem::ScriptCanvas` must be declared in the `BUILD_DEPENDENCIES` of the `STATIC` library
+1. Add an `AUTOGEN_RULES` section for custom free function under the `STATIC` library
    ```cmake
    AUTOGEN_RULES
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeable_Header.jinja,$path/$fileprefix.generated.h
@@ -31,7 +31,7 @@ As an example, here is partial definition of StartingPointInput Gem's `Code/CMak
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeableRegistry_Header.jinja,AutoGenNodeableRegistry.generated.h
        *.ScriptCanvasNodeable.xml,ScriptCanvasNodeableRegistry_Source.jinja,AutoGenNodeableRegistry.generated.cpp
    ```
-1. `STATIC` library must be declared directly as `BUILD_DEPENDENCIES` of Gem runtime module (and it should be included as part of editor module build dependencies hierarchy)
+1. The `STATIC` library must be declared directly in the `BUILD_DEPENDENCIES` of the Gem runtime module (and it should be included as part of editor module build dependencies hierarchy)
 1. `StartingPointInput.Static` includes two .cmake file lists. 
    * We include the common files and the platform specific files which are set in `startingpointinput_files.cmake`.
    * We include AzAutoGen ScriptCanvas free function required templates which are set in `startingpointinput_autogen_files.cmake` (We recommend to keep this file separately for clear scope)
@@ -92,15 +92,10 @@ ly_add_target(
 
 ## Step 2: Create an XML file for code generation {#create-an-xml-file}
 
+{{< note >}}
+The exact schema to follow when creating your XML files can be found here: [ScriptCanvasNodeable.xsd](https://github.com/o3de/o3de/blob/development/Templates/ScriptCanvasNode/Template/Source/AutoGen/ScriptCanvasNodeable.xsd)
+{{< /note >}}
 Prepare for code generation by creating an XML file that contains information about the node's class, input pins, output pins, and associated tooltip text. AzAutoGen uses this file to generate C++ code used by your node class when implementing your node's functionality.
-The file includes the following XML attributes:
-1. **(Required)** The name of custom nodeable class.
-1. **(Recommended)** The namespace of functions, which should match with the outer namespace of custom nodeable class.
-1. **(Required)** The fully qualified name of custom nodeable class, including namespace name.
-1. **(Required)** The sanitized nodeable node name, which will be presented in Script Canvas Editor.
-1. **(Optional)** The category of functions, if not presented, will use `Nodes` instead.
-1. It defines the latent execution output slot for custom nodeable node.
-1. It defines the execution input and output slot for custom nodeable node.
 
 We'll use the following XML, copied from the O3DE source for the **Input Handler** node<!-- , as an example to explain the important sections of this file -->.
 
@@ -126,7 +121,7 @@ File: [InputHandlerNodeable.ScriptCanvasNodeable.xml](https://github.com/o3de/o3
         </Output>
         <Input Name="Connect Event" Description="Connect to input event name as defined in an input binding asset.">    # 7
             <Parameter Name="Event Name" Type="AZStd::string" Description="Event name as defined in an input binding asset. Example 'Fireball'."/>
-        </Input>/>
+        </Input>
     </Class>
 </ScriptCanvas>
 ```
@@ -186,7 +181,7 @@ set(FILES
 
 ## Step 5: Register the new node {#register-the-new-node}
 {{< note >}}
-This step is only required once for the first time nodeable node creation.
+This step is only required once for first time nodeable node creation.
 {{< /note >}}
 
 The final step is to register the new node. To do this, you need to modify your Gem's [Gem module](/docs/user-guide/programming/gems/overview/) or [system component](/docs/user-guide/programming/components/system-components/). Use the **StartingPointInput** Gem from the O3DE source as a reference:
@@ -211,6 +206,38 @@ REGISTER_SCRIPTCANVAS_AUTOGEN_NODEABLE(StartingPointInputStatic);
 
 ## Advanced ScriptCanvasNodeable.xml usage
 This topic explores additional features that we support in the nodeable XML file.
+
+### Presets
+Presets are a way to pre configure default attributes across all XML tags for common types of nodeables. The currently implemented presets are shown below.
+
+#### Compact
+You can use the Compact preset for smaller compact style nodes that do not use execution slots.
+
+As an example, here is the XML file for the **+=** node:
+
+File: [CompactAddNodeable.ScriptCanvasNodeable.xml](https://github.com/o3de/o3de/blob/development/Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Compact/BasicOperators/CompactAddNodeable.ScriptCanvasNodeable.xml)
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScriptCanvas Include="Include/ScriptCanvas/Libraries/Compact/BasicOperators/CompactAddNodeable.h" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			  xsi:noNamespaceSchemaLocation="../../../AutoGen/ScriptCanvasNodeable.xsd">
+    <Class Name="CompactAddNodeable"
+        QualifiedName="Nodeables::CompactAddNodeable"
+        PreferredClassName="+="
+        Category="Compact/Basic Operators"
+        Namespace="ScriptCanvas"
+        Description="Adds the first input number to the second input number"
+        Preset="compact">
+
+        <Input Name="In" OutputName="Out">
+            <Parameter Name="a" Type="float"/>
+            <Parameter Name="b" Type="float"/>
+            <Return Name="Out" Type="float"/>
+        </Input>
+
+    </Class>
+</ScriptCanvas>
+```
 
 ### Base and derived nodeable node
 If you have shared logic across multiple nodeable nodes, you can create a base node and multiple derived nodes.
