@@ -108,7 +108,7 @@ To allow auto update to github you need to provide the following information:
 - `--repo-path`: the absolute path to your remote repository's `repo.json` file
 - `--add-gem`: the path to the directory to where the actual gem you want to add is located
 - `--release-archive-path`: the path to where you want to place your .zip archive; we recommend placing it in the Gems folder inside your remote repository folder.
-- `--upload-github-release-tag`: the tag_name of the release end point where your are uploading your release archive zip to.
+- `--upload-git-release-tag`: the tag_name of the release end point where your are uploading your release archive zip to.
 
 {{< note >}}
 1. `--release-archive-path` command can only be used after you call the `--add-gem` command. See below example:<br>
@@ -116,10 +116,10 @@ To allow auto update to github you need to provide the following information:
 {{< /note >}}
 
 ```
-o3de.bat edit-repo-properties --repo-path "C:\remote-repo\repo.json" --add-gem "C:\remote-repo\Gems\MyGem" --release-archive-path "C:\remote-repo\Gems" --upload-github-release-tag v1.0.0
+o3de.bat edit-repo-properties --repo-path "C:\remote-repo\repo.json" --add-gem "C:\remote-repo\Gems\MyGem" --release-archive-path "C:\remote-repo\Gems" --upload-git-release-tag v1.0.0
 ```
 
-O3DE Engine will prompt you for your Github token. If the release `tag_name` you entered already exist on Github, `--upload-github-release-tag` will upload your zip as a new release asset to the existing release. If the release tag doesn't exist, this command will create a new relesae with the `tag_name` you provided and upload your release archive zip to this new release.
+O3DE Engine will prompt you for your Github token. If the release `tag_name` you entered already exist on Github, `--upload-git-release-tag` will upload your zip as a new release asset to the existing release. If the release tag doesn't exist, this command will create a new relesae with the `tag_name` you provided and upload your release archive zip to this new release.
 
 After you upload your Gem to Github, other users that have added your remote repository will be able to download it using the Project Manager and o3de CLI. Users can navigate to Remote Sources to download associated Gems.
 
