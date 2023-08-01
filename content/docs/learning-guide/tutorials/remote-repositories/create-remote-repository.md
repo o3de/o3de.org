@@ -155,10 +155,10 @@ o3de.bat edit-repo-properties --repo-path "C:\remote-repo\repo.json" --add-gem "
     {{<image-width src="/images/learning-guide/tutorials/remote-repositories/release_tag.png" width="500">}}
 
 {{< important >}}
-Make sure you know where your release will be available after uploading it to the version control website. Once uploaded, you won't be able to change the `download_source_uri` in your `repo.json` file. If you input the wrong download path, you will need to repeat this step and re-zip the file and upload the release to version control website again.
+Make sure you know where your release will be available after uploading it to the version control platform. Once uploaded, you won't be able to change the `download_source_uri` in your `repo.json` file. If you input the wrong download path, you will need to repeat this step and re-zip the file and upload the release to version control platform again.
 {{< /important >}}
 
-After you upload your Gem to the version control website, other users that have added your remote repository will be able to download it using the Project Manager and `o3de` CLI. Users can navigate to Remote Sources and use your remote project URL to download associated Gems based on the download path you provided in this step.
+After you upload your Gem to the version control platform, other users that have added your remote repository will be able to download it using the Project Manager and `o3de` CLI. Users can navigate to Remote Sources and use your remote project URL to download associated Gems based on the download path you provided in this step.
 
 
 ## Testing your remote repo locally
