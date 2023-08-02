@@ -19,7 +19,7 @@ All `o3de` command options have abbreviations for convenience. Use the `--help` 
 Create a new repository for your remote project and clone this repo to your local machine.
 This version control repository link is where you upload your project `repo-uri`.
 
-Here is an example of a Github repo URI:
+Here is an example of a GitHub repo URI:
 
 ```
 "https://github.com/<YourGitAccount>/<RemoteProjectName>.git"
@@ -100,18 +100,42 @@ In O3DE we provide the option for users to create a release archive with .zip fo
 
 For security, O3DE uses `sha-256` to hash files before creating the release archive. Every time you make a change to your Gem, including the `repo.json` file, the `sha-256` hash will change.
 
-**Here is a Github example of how to create a release archive.**
+**Auto upload your release archive to Github**
 
+Upload your release zip to GitHub by providing a release `tag_name` and your GitHub token.
 
-- The `o3de.bat` tool expects a `download prefix` which is the URI for the folder your archive will be available in.  For a release in a Github repository, the `download prefix` looks like this:
+To allow auto update to GitHub you need to provide the following information:
+- `--repo-path`: the absolute path to your remote repository's `repo.json` file
+- `--add-gem`: the path to the directory to where the actual gem you want to add is located
+- `--release-archive-path`: the save location of generated zip. We recommend placing it outside of the repository so it isn't checked in by accident
+- `--upload-git-release-tag`: the tag_name GitHub uses when creating a release. We recommend a version number; for example "v1.0.0"
+
+{{< note >}}
+1. `--release-archive-path` command can only be use after you call the `--add-gem` command. See below example:<br>
+2. Your GitHub Token must allow repo content read and write access. Press right button on mouse to paste your GitHub token. 
+{{< /note >}}
+
+```
+o3de.bat edit-repo-properties --repo-path "C:\remote-repo\repo.json" --add-gem "C:\remote-repo\Gems\MyGem" --release-archive-path "C:\remote-repo\Gems" --upload-git-release-tag v1.0.0
+```
+
+O3DE Engine will prompt you for your GitHub token. GitHub releases need a tag. If the `tag_name` already exists on GitHub, the command will add your zip to the existing release. Otherwise, this command will publish the zip to a new release.
+
+After uploading Gem to GitHub, other users should be able to download this Gem. In Project Manager remote sources add remote repository URI to download associated Gems. Otherwise use the O3DE CLI to download associated Gem.
+
+**Create a release archive using download prefix.**
+
+To upload your release to a different version control platform other than GitHub, you can use the `--download-prefix` command.
+
+- The `o3de.bat` tool expects a `download prefix` which is the URI for the folder your archive will be available in.  For a release in a GitHub repository, the `download prefix` looks like this:
 
     `https://github.com/<YourGitAccount>/<RemoteRepoName>/releases/download/<ReleaseTag>`
 
 To create a release archive, you will need to provide the following information:
 - `--repo-path`: the absolute path to your remote repository's `repo.json` file
 - `--add-gem`: the path to the directory to where the actual gem you want to add is located
-- `--release-archive-path`: the path to where you want to place your .zip archive; we recommend placing it in the Gems folder inside your remote repository folder.
-- `--download-prefix`: the URI where your gem archive can be downloaded from. You must know where your zip will be available for download before you actually create the release archive zip.
+- `--release-archive-path`: the save location of generated zip. We recommend placing it outside of the repository so it isn't checked in by accident
+- `--download-prefix`: the URI where your gem archive can be downloaded from. You must know where your zip will be available for download before you actually create the archive zip.
 
 {{< note >}}
 `--release-archive-path` command can only be used after you call the `--add-gem` command. See below example:
@@ -122,7 +146,7 @@ To create a release archive, you will need to provide the following information:
 o3de.bat edit-repo-properties --repo-path "C:\remote-repo\repo.json" --add-gem "C:\remote-repo\Gems\MyGem" --release-archive-path "C:\remote-repo\Gems" --download-prefix "https://github.com/<YourGitAccount>/<RemoteRepoName>/releases/download/<ReleaseTag>"
 ```
 
-1. Here is an example of where you should upload your release to Github (you can find this on your version control URI):
+1. Here is an example of where you should upload your release to GitHub (you can find this on your version control URI):
 
     {{<image-width src="/images/learning-guide/tutorials/remote-repositories/add_release.png" width="500">}}
 
@@ -131,10 +155,10 @@ o3de.bat edit-repo-properties --repo-path "C:\remote-repo\repo.json" --add-gem "
     {{<image-width src="/images/learning-guide/tutorials/remote-repositories/release_tag.png" width="500">}}
 
 {{< important >}}
-Make sure you know where your release will be available after uploading it to GitHub. Once uploaded, you won't be able to change the `download_source_uri` in your `repo.json` file. If you input the wrong download path, you will need to repeat this step and re-zip the file and upload the release to GitHub again.
+Make sure you know where your release will be available after uploading it to the version control platform. Once uploaded, you won't be able to change the `download_source_uri` in your `repo.json` file. If you input the wrong download path, you will need to repeat this step and re-zip the file and upload the release to version control platform again.
 {{< /important >}}
 
-After you upload your Gem to the version control website, other users that have added your remote repository will be able to download it using the Project Manager and `o3de` CLI. Users can navigate to Remote Sources and use your remote project URL to download associated Gems based on the download path you provided in this step.
+After you upload your Gem to the version control platform, other users that have added your remote repository will be able to download it using the Project Manager and `o3de` CLI. Users can navigate to Remote Sources and use your remote project URL to download associated Gems based on the download path you provided in this step.
 
 
 ## Testing your remote repo locally
