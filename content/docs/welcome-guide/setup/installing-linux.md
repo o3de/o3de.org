@@ -5,11 +5,13 @@ description: Learn how to install and set up Open 3D Engine (O3DE) for Linux.
 weight: 200
 ---
 
-To get started quickly with O3DE in Linux, download and install the deb package. The following instructions guide you through the installation process. After a successful install, you'll have a stable, pre-built version of the engine and its Gems, and you'll be ready to create new or open existing projects with the **Project Manager** tool.
+To get started quickly with O3DE in Linux, download and install the deb or snap package. The following instructions guide you through the installation process. After a successful install, you'll have a stable, pre-built version of the engine and its Gems, and you'll be ready to create new or open existing projects with the **Project Manager** tool.
 
 ## Prerequisites
 
-The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](../requirements).
+The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](../requirements/#linux).
+
+
 
 ## Installing O3DE from a deb package
 
@@ -109,12 +111,14 @@ Example of launching Project Manager from the shell:
 ## Installing O3DE from a Snap package
 
 {{< note >}}
-The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 20.04 and 22.04 LTS.
+The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 20.04 and 22.04 LTS. The [system and software prequisites apply for this installation](../requirements/#linux).
 {{< /note >}}
 
 1. Download the Snap package from the [O3DE download](https://o3de.org/download/#linux) page or the [Snap store](https://snapcraft.io/o3de).
 
 1. Depending on the distro, you will need to install `snapd` in order to install the Snap package. [Refer to this guide for instructions specific to your distro](https://snapcraft.io/docs/installing-snapd).
+
+1. If installing from the snap store, click "Install" and follow in the instructions in the popup. You may be given the choice of using the Desktop store (if on Ubuntu) or using a `snap` command to download and install the package.
 
 1. If you downloaded the Snap package from the O3DE download page, use the following command to install the package:
    ```shell
