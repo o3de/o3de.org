@@ -5,11 +5,11 @@ description: Learn how to install and set up Open 3D Engine (O3DE) for Linux.
 weight: 200
 ---
 
-To get started quickly with O3DE in Linux, download and install the deb package. The following instructions guide you through the installation process. After a successful install, you'll have a stable, pre-built version of the engine and its Gems, and you'll be ready to create new or open existing projects with the **Project Manager** tool.
+To get started quickly with O3DE in Linux, download and install the deb or snap package. The following instructions guide you through the installation process. After a successful install, you'll have a stable, pre-built version of the engine and its Gems, and you'll be ready to create new or open existing projects with the **Project Manager** tool.
 
 ## Prerequisites
 
-The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](../requirements).
+The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](../requirements/#linux).
 
 ## Installing O3DE from a deb package
 
@@ -132,9 +132,9 @@ The Snap package is experimental and may run into issues on some distros. These 
    ```shell
    o3de <version> installed
    ```
-   Where `<version>` is the version of the installer. Example: `23.05.0`.
+   Where `<version>` is the version of the installer. Example: `23.10.1`.
 
-O3DE will be installed in the default location: `/snap/o3de/current/<version>`, where `<version>` is the version of the installer. Example: `23.05.0`.
+O3DE will be installed in the default location: `/snap/o3de/current/<version>`, where `<version>` is the version of the installer. Example: `23.10.1`.
 
 When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`. `snapd` will add this `Default` directory to your shell environment's path.
 
