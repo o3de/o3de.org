@@ -71,9 +71,9 @@ set position.
 #### Set initial positions and topic name
 
 - In the `JointsManipulationEditorComponent`, add initial positions for all joints.
-Joint names can be found in the prefabs entities inside the `ROS2FrameComponent` joint name). The initial positions are in radians.  
+Joint names can be found in the prefabs entities inside the `ROS2FrameComponent` joint name. The initial positions are in radians.  
 - In the `JointsTrajectoryComponent`, set the topic for controlling the trajectory.
-Typically, this topic name ends with ```joint_trajectory_controller```, but should be same as in you MoveIt configuration files.  
+Typically, this topic name ends with ```joint_trajectory_controller```, but should be same as in your MoveIt configuration files.  
 
 #### Start the simulation
 

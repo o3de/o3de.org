@@ -57,7 +57,7 @@ The Gripper Action Server component communicates with the Vacuum gripper or the 
 
 - Currently, both grippers work only with PhysX articulations. 
 - They can interact with rigid bodies and articulations but can be attached to articulation links only.
-- Vacuum gripper i simplify and can grip only objects with a "Grippable" tag.
+- Vacuum gripper is simple and can grip only objects with a "Grippable" tag.
 
 ## Running with MoveIt2
 
