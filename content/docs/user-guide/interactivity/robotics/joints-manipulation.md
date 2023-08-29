@@ -29,11 +29,11 @@ Manipulation components only work with single degree of freedom joints.
 
 Movement of joints is handled through a set of interfaces and components that implement them.
 
-| Interface                            | Components                                                                     | Role                                                                                  |
-|--------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| __JointsPositionControllerRequests__ | __JointsArticulationControllerComponent__<br/>__JointsPIDControllerComponent__ | Move joints towards desired positions.                                                |
-| __JointsManipulationRequests__       | __JointsManipulationComponent__                                                | Hold and publish joints state information, relay commands to controllers              |
-| __JointsTrajectoryRequests__         | __JointsTrajectoryComponent__                                                  | Host action server for trajectory commands, control trajectory through goal positions |
+| Interface                            | Components                                                                     | Role                                                                                           |
+|--------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| __JointsPositionControllerRequests__ | __JointsArticulationControllerComponent__<br/>__JointsPIDControllerComponent__ | Move joints towards desired positions.                                                         |
+| __JointsManipulationRequests__       | __JointsManipulationComponent__                                                | Hold and publish joints state information, relay commands to controllers.                      |
+| __JointsTrajectoryRequests__         | __JointsTrajectoryComponent__                                                  | Host action server for trajectory commands, control trajectory through a sequence of positions. |
 
 ## Simulating joint systems
 
