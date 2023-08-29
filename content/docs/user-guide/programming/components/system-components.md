@@ -33,9 +33,7 @@ When you create a system component as part of a Gem, follow these requirements:
 
 ## Making a component a system component
 
-After you create the code for your component, add it to your project's system entity to make it a system component.
-
-1. Use the `GetRequiredSystemComponents()` function to add your component to the system entity for your project during application startup.
+After you create the code for your component, add it to your project's system entity to make it a system component. Use the `GetRequiredSystemComponents()` function to add your component to the system entity for your project during application startup.
 
    The following example is from `HttpRequestorModule.cpp`.
 
@@ -73,48 +71,3 @@ After you create the code for your component, add it to your project's system en
    }
    ...
    ```
-
-1. (Optional) Expose the system component to the System Entity Editor. This enables game developers to configure the component's properties on a per-project basis. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`.
-
-   The following example is from `HttpRequestorSystemComponent.cpp`.
-
-   ```cpp
-   ...
-   #include "HttpRequestor_precompiled.h"
-
-   #include <AzCore/Serialization/SerializeContext.h>
-   #include <AzCore/Serialization/EditContext.h>
-
-   #include "HttpRequestorSystemComponent.h"
-
-   namespace HttpRequestor
-   {
-   ...
-       void HttpRequestorSystemComponent::Reflect(AZ::ReflectContext* context)
-       {
-           if (AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context))
-           {
-               serialize->Class<HttpRequestorSystemComponent>()
-                   ->Version(1)
-                   ;
-
-               if (AZ::EditContext* ec = serialize->GetEditContext())
-               {
-                   ec->Class<HttpRequestorSystemComponent>("HttpRequestor", "Will make HTTP Rest calls")
-                       ->ClassElement(AZ::Edit::ClassElements::EditorData, "")
-                           // ->Attribute(AZ::Edit::Attributes::Category, "") Set a category
-                           ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC("System"))
-                           ->Attribute(AZ::Edit::Attributes::AutoExpand, true)
-                       ;
-               }
-           }
-       }
-   ...
-   }
-   ```
-
-    The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list. The `Category` field specifies the group in which the component appears. In this case, no category is specified, so the group is **Miscellaneous** by default.
-
-    The following image shows the result in the System Entity Editor.
-
-    ![The HttpRequestor system component appears in the System Entity Editor Add Component menu](/images/user-guide/programming/components/component-entity-system-pg-creating-system-components-system-editor.png)

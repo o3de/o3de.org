@@ -85,7 +85,7 @@ Change the **Translation** (position), **Rotation** (orientation), and **Scale**
 
 LODs are optimized meshes with progressively lower polygon counts, fewer and smaller textures, and simplified materials. The farther an entity is from the camera, the less detail is required from the meshes that make up the entity. As the entity moves farther from the camera, it swaps to progressively simpler LOD.
 
-You can specify up to five LODs (not including the base mesh) that are numbered \[`0`\] to \[`4`\], with \[`0`\] being the *highest* level of detail. LODs are not required but are recommended because they help get the best performance and visual fidelity across a range of platforms with different hardware capabilities.
+With [Scene Settings](/docs/user-guide/assets/scene-settings/scene-settings/), you can specify up to five LODs (not including the base mesh) that are numbered \[`0`\] to \[`4`\], with \[`0`\] being the *highest* level of detail. LODs are not required but are recommended because they help get the best performance and visual fidelity across a range of platforms with different hardware capabilities.
 
 * Choose the {{< icon add.svg >}} **Add** button to add an LOD.
 
@@ -93,8 +93,41 @@ You can specify up to five LODs (not including the base mesh) that are numbered 
 
 * Choose the {{< icon browse-edit-select-files.svg >}} **Selection list** button to specify the meshes to include in the LOD.
 
+You can also define your optimized mesh names using a _soft naming convention_, which defines naming rules for automatically adding a Level of Detail modifier and assigning the meshes to the appropriate LOD slots. LODs are ordered from 0 (the *highest* level of detail), followed by progressively *lower* levels of detail to meet the O3DE application needs.
+
+For example, you may add `_lod0`, `_lod1`, `_lod2`, `_lod3`, `_lod4`, and `_lod5` as suffixes to your mesh names. `_lod0` is the base mesh with the highest resolution geometry, textures, and materials and is assigned to the base mesh group. `_lod1` is assigned to LOD slot **\[0\]**, `_lod2` is assigned to LOD slot **\[1\]**, and so on.
+
+The scene settings pipeline relies on the soft naming convention settings defined in [SoftNameSettings.setreg](https://github.com/o3de/o3de/blob/development/Gems/SceneProcessing/Registry/SoftNameSettings.setreg) for rules to identify the LOD meshes. The rules allow for various formats of name suffixes, including _LOD0, _LOD_0, Lod0, _Lod_0, _lod0, and _lod_0 (upper, lower, CamelCase, etc.).
+
+To override those default settings, please use the project user registry (`<project-root>/Registry`) or the global machine registry (typically found in the users home directory under `.o3de/Registry/`) instead of modifying [SoftNameSettings.setreg](https://github.com/o3de/o3de/blob/development/Gems/SceneProcessing/Registry/SoftNameSettings.setreg) directly. Check [Settings Registry](/docs/user-guide/settings/) for more information on providing settings and configurations for O3DE applications and tools. For example, you can add a new settings registry file like below under `<project-root>/Registry` to **exclude** children of the LOD0 nodes:
+```
+{
+    "O3DE": {
+        "AssetProcessor": {
+            "SceneBuilder": {
+                "NodeSoftNameSettings": [
+                    {
+                        "pattern": {
+                            "pattern": "^.*_[Ll][Oo][Dd]_?1(_optimized)?$",
+                            "matcher": 2
+                        },
+                        "virtualType": "LODMesh1",
+                        "includeChildren": false
+                    },
+                    ...
+                },
+                "FileSoftNameSettings": [
+                    ...
+                ]
+            }
+        }
+    }
+}
+
+```
+
 {{< note >}}
-You can add `_lod0`, `_lod1`, `_lod2`, `_lod3`, `_lod4`, and `_lod5` as suffixes to your mesh names to automatically add a Level of Detail modifier and assign the meshes to the appropriate LOD slots. `_lod0` is the base mesh with the highest resolution geometry, textures, and materials and is assigned to the base mesh group. `_lod1` is assigned to LOD slot **\[0\]**, `_lod2` is assigned to LOD slot **\[1\]**, and so on.
+You may add any number of soft naming convention settings by overriding the default settings registry, but each O3DE system has its own limit on the maximum LODs: [Atom renderer](/docs/atom-guide/) supports up to 10 LODs while each actor can have up to [six](/docs/user-guide/visualization/animation/using-actor-lods-optimize-game-performance/#using-actor-lods-in-o3de) LODs.
 {{< /note >}}
 
 ## Material
@@ -141,6 +174,22 @@ The Skin Modifier sets limits for processing skin weights for meshes that are bo
 The tangents modifier either imports tangents and bitangents from the source asset, or generates them during asset processing. Tangents and bitangents are vertex attributes that are used in various shading calculations. Tangents and bitangents are particularly important for skinned meshes and for normal and relief maps.
 
 | Property | Description |
-| - | - | - |
+| - | - |
 | **Generation Method** | Tangents and bitangents can be either imported from the source asset (`From Source Scene`), or automatically generated using the `MikkT` algorithm.  |
 | **TSpace Method** | The `TSpaceBasic` method generates tangents and bitangents at the vertex or pixel level with a unit length magnitude that are perpendicular to the normal. The `TSpaceBasic` method is suitable for normal mapping. The `TSpace` method calculates tangents and bitangents with their true magnitude. The resulting tangents and bitangents might not be perpendicular to the normal, but are perpendicular to each other. The `TSpace` method is suitable for relief mapping. |
+
+## UVs
+
+![The Scene Settings Meshes tab UVs modifier.](/images/user-guide/assets/scene-settings/uvs-modifier.png)
+
+The UVs modifier either imports a UV Map from the source asset, or generates them during asset processing. UVs are vertex attributes that control where texture maps are sampled from for a given area in a mesh. UVs are required in order for tangent and bitangent generation to function correctly. 
+
+Note that most DCC tools generate far better UV sets than can be generated with this setting, but it may be useful in situations where the source data has no UVs defined in it and you would like to get something to render without having to open the data in a DCC tool to modify it and supply UVs.
+
+When no UV modifier is present, nothing is done by default to the source scene, regardless of whether or not the meshes have UVs.
+
+| Property | Description |
+| - | - |
+| **Generation Method** | UVs can be either imported from the source asset (`From Source Scene`), or automatically generated using spherical positional projection (`Spherical Projection`).
+| **Replace Existing UVs** | If this option is off, the UVs Modifier will only generate UVs for meshes that are actually missing UVs, and do nothing otherwise.  If this option is on, the **Generation Method** will apply even if the mesh in the scene already has normals from the DCC tool. |
+

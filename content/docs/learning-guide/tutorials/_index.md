@@ -41,6 +41,7 @@ Do you have O3DE installed and you aren't sure where to start? How about creatin
 | Tutorial | Description |
 | - | - |
 | [Entity and Prefab Basics](entities-and-prefabs/entity-and-prefab-basics) | Learn the basics of creating and modifying entities and prefabs. |
+| [Override a Prefab](entities-and-prefabs/override-a-prefab) | Learn how to make changes to a single prefab instance. |
 | [Spawn and Despawn a Prefab](entities-and-prefabs/spawn-a-prefab.md) | Use **Script Canvas** to create a script that spawns and despawns a prefab. |
 
 ## Environments
@@ -86,6 +87,12 @@ Create physics simulations in O3DE with NVIDIA's PhysX system. The tutorials in 
 | Tutorial | Description |
 | - | - |
 | [PostFX Shape Weight Modifier](postfx/use-postfx-shape-weight-modifier) | Use a **PostFX Shape Weight Modifier** component to modify exposure control in O3DE. This example demonstrates how to modify post-processing effects (PostFX) at runtime. |
+
+## Remote Repositories
+
+| Tutorial | Description |
+| - | - |
+| [Your First Remote Repository](remote-repositories/create-remote-repository) | Learn how to create an **O3DE remote repository** to share your projects, gems, and templates with the world. |
 
 ## Rendering
 

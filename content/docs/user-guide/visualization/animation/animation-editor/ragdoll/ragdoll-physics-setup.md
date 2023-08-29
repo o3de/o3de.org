@@ -60,9 +60,9 @@ If a joint is added to the ragdoll, all of its ancestors are automatically added
 If your ragdoll colliders, hit detection colliders, or cloth colliders are the same size, you may need to hide the colliders that you are not working on.
 {{< /note >}}
 
-1. On the **Ragdoll** tab, you can view and modify the ragdoll properties for the selected joint. For example, the rigid body mass, sleeping threshold, and colliders.
+1. On the **Inspector** tab, you can view and modify the ragdoll properties for the selected joint. For example, the rigid body mass, sleeping threshold, and colliders.
 
-    ![View and modify ragdoll properties for a selected joint on the Ragdoll tab in the Animation Editor](/images/user-guide/actor-animation/ragdoll-skeleton-ragdoll-tab-properties.png)
+    ![View and modify ragdoll properties for a selected joint on the Inspector tab in the Animation Editor](/images/user-guide/actor-animation/ragdoll-skeleton-ragdoll-tab-properties.png)
 
 ## Step 2: Set up Ragdoll Colliders 
 
@@ -72,9 +72,9 @@ Each joint in the ragdoll can have 0, 1, or multiple ragdoll colliders, which af
 
 ![Deleting a ragdoll collider](/images/user-guide/actor-animation/ragdoll-remove-collider.png)
 
-To add a collider, in the **Animation Editor**, on the **Ragdoll** tab, click **Add ragdoll collider** and then choose **Add box**, **Add capsule**, or **Add sphere**. You can also copy colliders from the **Hit Detection**, **Cloth** or **Simulated Object** configurations, if you have already created colliders for them. 
+To add a collider, in the **Animation Editor**, on the **Inspector** tab, click **Add Property** and then under **Ragdoll Collider** section choose **Box**, **Capsule** or **Sphere**. You can also copy colliders from the **Hit Detection** or **Cloth** configurations, if you have already created colliders for them.
 
-![Add a ragdoll collider shape (box, capsule, or sphere) on the Ragdoll tab in the Animation Editor](/images/user-guide/actor-animation/add-ragdoll-collider-options.png)
+![Add a ragdoll collider shape (box, capsule, or sphere) on the Inspector tab in the Animation Editor](/images/user-guide/actor-animation/add-ragdoll-collider-options.png)
 
 **Configuring properties for colliders**
 
@@ -92,13 +92,13 @@ Currently, if a joint has more than one ragdoll collider, manipulators only supp
 
 If you have more than one ragdoll collider, or if you prefer to edit values directly, you can also configure collider properties in the property editor. 
 
-1. On the **Ragdoll** tab, do the following in the collider properties:
+1. On the **Inspector** tab, do the following in the ragdoll collider properties:
 
    1. Set the **Offset** and **Rotation** to move the collider to the correct location. The **Offset** and **Rotation** are relative to the joint transform.
 
    1. Adjust the collider dimensions (for example, set the **Height** and **Radius** for a **Capsule**) to resize the collider.
 
-   ![Set the Offset, Rotation, Height, and Radius properties for the collider on the Ragdoll tab in the Animation Editor](/images/user-guide/actor-animation/ragdoll-collider-options-offset-rotation-height-radius.png)
+   ![Set the Offset, Rotation, Height, and Radius properties for the ragdoll collider on the Inspector tab in the Animation Editor](/images/user-guide/actor-animation/ragdoll-collider-options-offset-rotation-height-radius.png)
 
 You can also set up other properties in the property editor, such as the [physics material](/docs/user-guide/interactivity/physics/nvidia-physx/materials/) and [collision filtering](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/).
 

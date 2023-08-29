@@ -21,22 +21,28 @@ Use the following [console functor (cfunc)](/docs/user-guide/programming/az-cons
 | LoadLevel              | Unloads the current level and loads a new one with the given asset name. <br> Used to setup the initial level for the game or simiulation. | *(Required)* Path to a level file.                                               | Command is not specific to network or multiplayer but used for all games and simulations. | 
 | sv_launch_local_client | Launches a local client and connects to this host server.                                                                                  |                                                                                  | Only works if currently hosting.                                                          |
 
-These console commands can be executed dynamically via the [console command line](/docs/user-guide/editor/console/) or placed within a console command configuration file, usually with the `.cfg` suffix. Commands will be executed in the order written.
+These console commands can be executed dynamically via the [console command line](/docs/user-guide/editor/console/) or placed within a console command configuration file.
 
-For a networked game or simulation, a typical server configuration file should contain:
+When using a console command configuration file, it is common practice to place the file in the project root directory. Use `.cfg`  as the filename suffix. Commands will be executed in the order written.
 
-```
+For a networked game or simulation, a typical _server_ configuration file should contain:
+
+```cmd
 host
 LoadLevel <path to Level>
 ```
 
-And the client's configuration file should contain:
+A typical _client_ configuration file should contain:
 
-```
+```cmd
 connect
 ```
 
-Console commands in configuration files can be passed to client and server launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
+Console commands in configuration files can be passed to client and server launchers using the `console-command-file` option. Example:
+
+```cmd
+MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg
+```
 
 ## Client settings
 The `cl` CVARs control client behavior.
@@ -82,6 +88,7 @@ The `sv` CVARs control server behavior.
 | sv_isDedicated          | Whether the host command creates an independent or client hosted server.        | True    |                      |
 | sv_isTransient          | Whether a dedicated server shuts down if all existing connections disconnect.   | True    ||
 | sv_serverSendRateMs     | Minimum number of milliseconds between each network update.                     | 50 ms   || 
+| sv_versionMismatch_autoDisconnect          | Determines if a mismatched connection will automatically terminate. It's recommended to keep this true; even minor differences between the version of a multiplayer component can cause unexpected behavior. | True   ||
 
 ### Server to client connection settings
 | Setting                                                | Description                                                                                                                                     | Default    | Notes |
@@ -118,6 +125,7 @@ The `editorsv` settings control how a server will be launched during the "play-i
 | editorsv_process                   | The file path to your project's ServerLauncher. If `editorsv_enabled` and `editorsv_launch` is true, the Editor will attempt to launch its own server when entering game mode. By default it looks for the ServerLauncher executable inside the same folder where Editor lives; `editorsv_process` overrides that path. | ""        |                                                                                                                                                  |
 | editorsv_rhi_override              | If `editorsv_launch` is true, the server will use the same render hardware interface (rhi) that the editor is using. For example, if the editor is using DX12, then the new server will be launched using DX12. `editorsv_rhi_override` can be used to override the rhi.                                                 | ""        | If you don't need to see the launched server's graphics then set `editorsv_rhi_override=null`, the null renderer.                                |
 | editorsv_enabled                   | If true the Editor will attempt to connect to a Multiplayer server upon entering game mode.                                                                                                                                                                                                                              | False     ||
+| editorsv_clientserver              | Whether the Editor should act as the server and a client at the same time, without launching a dedicated server process.  | False | Only applies if `editorsv_enabled` is also true. |
 | editorsv_hidden                    | If true the Editor will automatically launch a server upon entering game mode. Set `editorsv_hidden` to true if you want the launched server to be started as a background process without any visible window.                                                                                                           | False     |                                                                                                                                                  |  
 | editorsv_launch                    | If true the Editor will automatically launch its own server upon entering game mode.                                                                                                                                                                                                                                     | True      | Only applies if `editorsv_enabled` is also true. If starting your own editor-server remember to set `editorsv_isDedicated` to true on the server |
 | editorsv_connectionMessageFontSize |                                                                                                                                                                                                                                                                                                                          | 0.7       |                                                                                                                                                  |
@@ -206,6 +214,7 @@ The `net` settings control networking behavior.
 | Setting                            | Description                                                 | Default | Notes                    | 
 |------------------------------------|-------------------------------------------------------------|---------|--------------------------|
 | net_DebugCheckNetworkEntityManager | Enables extra debug checks inside the NetworkEntityManager. | False   | Requires Multiplayer Gem |
+| sv_versionMismatch_sendManifestToClient    | Determines if the server will send all its individual multiplayer component version information to the client when there's a mismatch. Upon receiving the information, the client will print which components are different to the console. It's recommended to set to false for release builds. This is to prevent clients having knowledge to any multiplayer component information that should be kept private (component names and version hashes). | True   ||
 
 ### Other useful settings
 The following settings can be passed as command line arguments to control server performance.

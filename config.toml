@@ -2,6 +2,7 @@ baseURL = "https://www.o3de.org"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
+languageCode = "en-us"
 
 [module]
   [module.hugoVersion]
@@ -23,6 +24,7 @@ unsafe = true
 
 [params]
 font_awesome_version = "5.12.0"
+mermaid_version = ["9.2.2", "sha384-W/RuUCsZGwf4MwkS0K4JdFzoA0RgiA6foiYzRo68rW5DNPfq+5Dr0uGKY1zecHEA"]
 description = "Open 3D Engine (O3DE) is a modular, open source, cross-platform 3D engine built to power anything from AAA games to cinema-quality 3D worlds to high-fidelity simulations. No fees or commercial obligations. Apache 2.0-licensed. Managed by The Linux Foundation."
 favicon = "favicon.ico"
 repositoryUrl = "https://github.com/o3de/o3de.org"

@@ -1,6 +1,6 @@
 ---
 linkTitle: PhysX Ball Joint
-description: ' The Open 3D Engine PhysX Ball Joint component. '
+description: The Open 3D Engine PhysX Ball Joint component.
 title: PhysX Ball Joint Component
 ---
 
@@ -19,11 +19,11 @@ Specify the position of the joint relative to the entity transform.
 Specify the rotation of the joint relative to the entity transform.
 
 **Lead Entity**
-Specify the parent entity that will drive the joint.
+Specify the lead (parent) entity that will drive the joint.
 
 **Breakable**
 When enabled, the joint will break if sufficient force is applied. Enabling **Breakable** exposes the **Maximum Force** and **Maximum Torque** properties.
-**PhysX Rigid Body** components that have their **Compute Mass** property enabled might have very large mass values. If the entity containing the joint component or the leader entity have their **Compute Mass** property enabled, the **Maximum Force** and **Maximum Torque** properties might require very high values to resist breaking.
+**PhysX Dynamic Rigid Body** components that have their **Compute Mass** property enabled might have very large mass values. If the entity containing the joint component or the leader entity have their **Compute Mass** property enabled, the **Maximum Force** and **Maximum Torque** properties might require very high values to resist breaking.
 
 **Maximum Force**
 When **Breakable** is enabled, specify the maximum force the joint can sustain before breaking. Valid values range from **0.01** to **Infinity**.
@@ -32,7 +32,7 @@ When **Breakable** is enabled, specify the maximum force the joint can sustain b
 When **Breakable** is enabled, specify the maximum torque the joint can sustain before breaking. Valid values range from **0.01** to **Infinity**.
 
 **Display Setup in Viewport**
-When enabled, a cone that represents the orientation and limits of the ball joint and a line that represents the connection between the joint and its leader are displayed. The shape of the cone is defined by the **Y axis angular limit** and the **Z axis angular limit**.
+When enabled, a cone that represents the orientation and limits of the ball joint and a line that represents the connection between the joint and its follower are displayed. The shape of the cone is defined by the **Y axis angular limit** and the **Z axis angular limit**.
 
 **Select Lead on Snap**
 When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.

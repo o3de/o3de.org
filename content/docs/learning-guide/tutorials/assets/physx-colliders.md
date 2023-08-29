@@ -6,9 +6,10 @@ weight: 400
 toc: true
 ---
 
-**Open 3D Engine (O3DE)** has a robust set of options for generating PhysX collider assets. There are three PhysX collider types that you can use in different simulation scenarios. This topic explains the benefits and limitations of the different collider types, as well as the basics of generating PhysX asset colliders with  [**Scene Settings**](/docs/user-guide/assets/scene-settings/scene-settings).
+**Open 3D Engine (O3DE)** has a robust set of options for generating PhysX collider assets. In [Scene Settings](/docs/user-guide/assets/scene-settings/scene-settings), you can customize PhysX collider asset generation. The generated PhysX colliders are stored in `.pxmesh` product assets. You can add the PhysX collider assets to a **PhysX Mesh Collider** component.
 
-The generated PhysX colliders are stored in `.pxmesh` product assets. You can add the PhysX collider assets to a **PhysX Collider** component by selecting **PhysicsAsset** in the component's **Shape** property.
+The generated PhysX colliders are stored in `.pxmesh` product assets. You can add the PhysX collider assets to a **PhysX Mesh Collider** component.
+
 
 {{< note >}}
 Understanding the [best practices](/docs/user-guide/assets/scene-settings/source-asset-best-practices#physx) for creating PhysX collider source assets can mitigate issues you might encounter when processing colliders for O3DE. For technical details about the data supported by colliders, refer to the [supported 3D scene data](/docs/user-guide/assets/scene-settings/scene-format-support#supported-3d-scene-data) table.
@@ -22,9 +23,9 @@ Understanding the [best practices](/docs/user-guide/assets/scene-settings/source
 
 Before you learn about collider types, you should understand the three types of entity behavior that influence the collider asset type you might choose in a given scenario:
 
-* **Static** -- Static entities can be collided with, but they don't move, and PhysX collisions and forces don't affect them. Static entities can use any collider type.
-* **Kinematic** -- Kinematic entities have a **PhysX Rigid Body** component and movement that is driven by script. Kinematic entities can be collided with, but PhysX collisions and forces don't affect them. Kinematic entities can use any collider type.
-* **Dynamic** -- Dynamic entities have a **PhysX Rigid Body** component and simulated movement that results from PhysX collisions and forces. Dynamic entities can use only primitive and convex colliders.
+* **Static** -- Static entities have a **PhysX Static Rigid Body** and can be collided with, but they don't move, and PhysX collisions and forces don't affect them. Static entities can use any collider type.
+* **Kinematic** -- Kinematic entities have a **PhysX Dynamic Rigid Body** component and movement that is driven by code or script. Kinematic entities can be collided with, but PhysX collisions and forces don't affect them. Kinematic entities can use any collider type.
+* **Simulated** -- Simulated entities have a **PhysX Dynamic Rigid Body** component and simulated movement that results from PhysX collisions and forces. Simulated entities can use only primitive and convex colliders.
 
 ## PhysX collider assets
 
@@ -46,9 +47,9 @@ Triangle mesh colliders are commonly used for immobile environment objects that 
 
 ### Primitive
 
-Primitive colliders are composed of sphere, box, or capsule primitive shapes. Because simple properties such as **Radius**, **Height**, and **Width** define the primitive shapes, primitive colliders generally offer the best simulation performance. Primitive colliders are automatically fitted to the input mesh. However, depending on the complexity of the input mesh, areas of the collider might fall within or far outside of the input mesh surface. This can result in collisions that aren't visually accurate. The **Decompose Meshes** property decomposes complex input meshes into smaller parts, and fits primitive colliders to each part. You can use primitive colliders with static, kinematic, and dynamic entities. These colliders can have only one physics material assignment.
+Primitive colliders are composed of sphere, box, or capsule primitive shapes. Because simple properties such as **Radius**, **Height**, and **Width** define the primitive shapes, primitive colliders generally offer the best simulation performance. Primitive colliders are automatically fitted to the input mesh. However, depending on the complexity of the input mesh, areas of the collider might fall within or far outside of the input mesh surface. This can result in collisions that aren't visually accurate. The **Decompose Meshes** property decomposes complex input meshes into smaller parts, and fits primitive colliders to each part. You can use primitive colliders with static, kinematic, and simulated entities. These colliders can have only one physics material assignment.
 
-Colliders occupy the same physical space as the input mesh. In the following image, a primitive collider asset is offset to the right of the input mesh asset that generated the collider so that you can clearly view the collider. The collider asset (right) is a simple box that has been automatically oriented and scaled to encompass the render mesh (left). Note that one corner of the primitive collider extends far from the input mesh and penetrates the ground plane. This demonstrates one of the drawbacks of using a primitive collider on a complex input mesh. In a scenario where this is a dynamic entity, the ground plane collision would push the asset upward, and the asset would not come to rest standing upright because of the sharp corner at the bottom of the primitive collider.
+Colliders occupy the same physical space as the input mesh. In the following image, a primitive collider asset is offset to the right of the input mesh asset that generated the collider so that you can clearly view the collider. The collider asset (right) is a simple box that has been automatically oriented and scaled to encompass the render mesh (left). Note that one corner of the primitive collider extends far from the input mesh and penetrates the ground plane. This demonstrates one of the drawbacks of using a primitive collider on a complex input mesh. In a scenario where this is a simulated entity, the ground plane collision would push the asset upward, and the asset would not come to rest standing upright because of the sharp corner at the bottom of the primitive collider.
 
 {{< image-width "/images/learning-guide/tutorials/assets/primitive-collider-example.png" "700" "An example primitive collider asset." >}}
 
@@ -56,7 +57,7 @@ Primitive colliders are commonly used when the input mesh closely resembles one 
 
 ### Convex
 
-Convex colliders are automatically generated convex hulls. A convex hull has no concave or hollow surface areas. For PhysX, the convex hull is constructed within a limited number of vertices and is fitted to the input mesh. Convex colliders can better approximate a complex input mesh than primitive colliders, but convex colliders incur a greater performance cost. To a lesser extent than primitive colliders, convex colliders might also have areas where the collider surface falls inside or outside of the input mesh, which can result in collisions that aren't visually accurate. The Decompose Meshes property decomposes complex input meshes into smaller parts, and fits convex colliders to each part. You can use convex colliders with static, kinematic, or dynamic entities. These colliders can have only one physics material assignment.
+Convex colliders are automatically generated convex hulls. A convex hull has no concave or hollow surface areas. For PhysX, the convex hull is constructed within a limited number of vertices and is fitted to the input mesh. Convex colliders can better approximate a complex input mesh than primitive colliders, but convex colliders incur a greater performance cost. To a lesser extent than primitive colliders, convex colliders might also have areas where the collider surface falls inside or outside of the input mesh, which can result in collisions that aren't visually accurate. The Decompose Meshes property decomposes complex input meshes into smaller parts, and fits convex colliders to each part. You can use convex colliders with static, kinematic, or simulated entities. These colliders can have only one physics material assignment.
 
 Colliders occupy the same physical space as the input mesh. In the following image, a convex collider asset is offset to the right of the input mesh asset that generated the collider so that you can clearly view the collider. Note that the collider asset (right) has been automatically generated to encompass and roughly approximate the silhouette shape of the render mesh (left). However, the convex collider does not include details such as the hole in the middle of the input mesh.
 
@@ -71,8 +72,8 @@ The following table summarizes the most import information about the available c
 | Type | Entity behavior | Description | Limitations |
 | - | - | - | - |
 | **Triangle mesh** | Static, Kinematic | A collider composed of triangles. Can closely approximate complex input meshes and have more than one physics material assignment. | Can be used only with static and kinematic entities. Can be more computationally expensive to simulate than other collider types. |
-| **Primitive** | Static, Kinematic, Dynamic | A collider defined by a simple primitive sphere, box, or capsule shape that is automatically fitted to the input mesh. Generally offers the best performance. | Might not closely approximate a complex input mesh. Can be fitted to input meshes, but in some scenarios, might fall within or far outside the extents of the input mesh, yielding collisions that aren't visually accurate. Can have only one physics material assignment. |
-| **Convex** | Static, Kinematic, Dynamic | An automatically generated collider that is a convex hull composed of a limited number of vertices. Convex hulls have no concave or hollow surface areas, and are automatically fitted to the input mesh. This collider can better approximate input meshes than a primitive collider, but it's more computationally expensive to simulate. | Might not approximate an input mesh as well as a triangle mesh collider, or offer the performance of a primitive collider. Might fall slightly within or outside the extents of the input mesh. Can have only one physics material assignment. |
+| **Primitive** | Static, Kinematic, Simulated | A collider defined by a simple primitive sphere, box, or capsule shape that is automatically fitted to the input mesh. Generally offers the best performance. | Might not closely approximate a complex input mesh. Can be fitted to input meshes, but in some scenarios, might fall within or far outside the extents of the input mesh, yielding collisions that aren't visually accurate. Can have only one physics material assignment. |
+| **Convex** | Static, Kinematic, Simulated | An automatically generated collider that is a convex hull composed of a limited number of vertices. Convex hulls have no concave or hollow surface areas, and are automatically fitted to the input mesh. This collider can better approximate input meshes than a primitive collider, but it's more computationally expensive to simulate. | Might not approximate an input mesh as well as a triangle mesh collider, or offer the performance of a primitive collider. Might fall slightly within or outside the extents of the input mesh. Can have only one physics material assignment. |
 
 ## Generate PhysX collider assets
 
@@ -86,7 +87,7 @@ You can follow this tutorial using any source asset that contains at least one m
 
     If your asset has already been processed, you might see a preview image of the asset and a list of product assets below the `.fbx` source asset.
 
-1. To open Scene Settings, **double-click** the `.fbx` source asset, and then choose **Edit settings...** from the context menu.
+1. To open Scene Settings, right-click the `.fbx` source asset, and then choose **Edit settings...** from the context menu.
 
     ![ Open Scene Settings from Asset Browser. ](/images/learning-guide/tutorials/assets/meshes-edit-settings.png)
 
@@ -106,7 +107,7 @@ You can follow this tutorial using any source asset that contains at least one m
 To automatically assign meshes in the source asset to a PhysX mesh group, add the suffix `_phys` to the mesh node name in your DCC application. Any meshes that have `_phys` postfixed to their node name in the source asset are excluded from the default render mesh group and are automatically added to a single PhysX mesh group in Scene Settings.
     {{< /note >}}
 
-1. Customize the PhysX mesh collider type by setting the **Export As** property to `Convex` so that you can create any type of entity (static, kinematic, or dynamic).
+1. Customize the PhysX mesh collider type by setting the **Export As** property to `Convex` so that you can create any type of entity (static, kinematic, or simulated).
 
     The customizations that you make in Scene Settings are stored in a *sidecar file* with a `.assetinfo` extension. When **Asset Processor** detects a `.assetinfo` file, it uses the settings in the file to process the related source asset. This sidecar file is treated as a source dependency for the asset. This means that if the `.assetinfo` file changes, the source asset is reprocessed, even if the source asset has not changed.
 
@@ -118,26 +119,24 @@ To automatically assign meshes in the source asset to a PhysX mesh group, add th
 
     When you drag the asset into the viewport, O3DE automatically creates an entity with a **Mesh** component that references the mesh product asset. If the source asset contains materials that have been processed, the materials are automatically applied to the mesh. Note that in Asset Browser, the `.pxmesh` product asset has been generated and appears beneath the source asset.
 
-1. Add a PhysX Collider component to the entity. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Collider** from the component list. The component automatically detects the `.pxmesh` asset. The component's **Shape** property is set to `PhysicsAsset`, and the **PhysX Mesh** property automatically references the `.pxmesh` product asset.
-
-    With just a PhysX Collider component, this is currently a static entity. PhysX objects can collide with this entity, but the entity doesn't move or react to PhysX collisions or forces.
+1. Add a PhysX Mesh Collider component to the entity. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Mesh Collider** from the component list. The component automatically detects the `.pxmesh` asset and assigns it to the **PhysX Mesh** property.
 
 1. Depending on the type of entity that you want, do one of the following:
 
-    * For a static entity, optimize your current static entity. In the **Transform** component, enable the **Static** property. This property ensures the best runtime performance for a static entity.
+    * For a static entity, , add a **PhysX Static Rigid Body** component. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Static Rigid Body** from the component list. To optimize your current static entity, in the **Transform** component, enable the **Static** property. This property ensures the best runtime performance for a static entity.
 
-    * For a dynamic entity, add a **PhysX Rigid Body** component. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Rigid Body** from the component list. If you choose the {{< icon simulate-physics.svg >}} simulation button now, the entity drops with gravity.
+    * For a simulated entity, add a **PhysX Dynamic Rigid Body** component. With the entity selected in the viewport, in **Entity Inspector**, choose **Add Component**, and then select **PhysX Dynamic Rigid Body** from the component list. If you choose the {{< icon simulate-physics.svg >}} simulation button now, the entity drops with gravity.
 
-    * For a kinematic entity, add a **PhysX Rigid Body** component, like you would for a dynamic entity. Then, in the **PhysX Rigid Body** component, enable the **Kinematic** property.
+    * For a kinematic entity, add a **PhysX Dynamic Rigid Body** component, like you would for a simulated entity. Then, in the **PhysX Dynamic Rigid Body** component, select **Kinematic** in the property Type.
 
     
     {{< caution >}}
-For a kinematic or dynamic entity, in the **Transform** component, make sure that the **Static** property is *not* enabled.
+For a kinematic or simulated entity, in the **Transform** component, make sure that the **Static** property is *not* enabled.
     {{< /caution >}}
 
 ## Decompose input meshes
 
-Assets that are composed of multiple meshes, or assets that have complex meshes, might require similarly complex PhysX collider assets. This is particularly true for kinematic entities and for dynamic entities, which can't use triangle mesh colliders. In these scenarios, you can decompose the input mesh into convex parts. You can automatically generate primitive colliders or convex colliders, fit them to each part, and process them as collider `.pxmesh` product assets.
+Assets that are composed of multiple meshes, or assets that have complex meshes, might require similarly complex PhysX collider assets. This is particularly true for kinematic entities and for simulated entities, which can't use triangle mesh colliders. In these scenarios, you can decompose the input mesh into convex parts. You can automatically generate primitive colliders or convex colliders, fit them to each part, and process them as collider `.pxmesh` product assets.
 
 Mesh decomposition is part of the process of generating and fitting collider assets, and it doesn't alter the input mesh. You can use mesh decomposition only with primitive or convex colliders.
 

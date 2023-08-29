@@ -36,6 +36,10 @@ These options are the user-supplied settings that are required to configure O3DE
 
   *Type*: `BOOL`  
   *Default*: `OFF`
+* **`LY_LINKER`** - Sets the linker program to be used during the build process. If this value is not set, a default linker is chosen based upon the available linker programs installed on the host platform. Currently only supported for the Linux x86 Clang configuration.
+
+  *Type*: `STRING`
+  *Default*: `(Empty string)`
 
 ### Asset configuration
 
@@ -118,6 +122,15 @@ These settings control how the package download system functions.
 
   {{< note >}}
   Currently only supported for Windows and "Visual Studio" generators. Documentation can be found [here](https://docs.microsoft.com/en-us/cpp/sanitizers/asan?view=msvc-160)
+  {{< /note >}}
+
+  *Type*: `BOOL`
+  *Default*: `OFF`
+
+* **`O3DE_BUILD_WITH_DEBUG_SYMBOLS_RELEASE`** - Generates symbol files (`.pdb`) in release configurations and turns off optimizations making it easier to troubleshoot issues in release builds.
+
+  {{< note >}}
+  Currently only supported for Windows and "Visual Studio" generators.
   {{< /note >}}
 
   *Type*: `BOOL`

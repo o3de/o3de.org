@@ -47,6 +47,17 @@ Define how physics material restitutions are combined between PhysX colliders wh
 ****Density****
 Define the degree of compactness of a material.
 
+****Compliant Contact Mode (available with [PhysX 5.1](/docs/user-guide/interactivity/physics/nvidia-physx/#physx-version-support) enabled only)****
+
++ ****Enable****
+When enabled the normal force of the contact is computed using an implicit spring. **Restitution properties** are not used when Compliant Contact Mode is enabled.
+
++ ****Damping****
+Higher damping values produce spongy contacts.
+
++ ****Stiffness****
+Higher stiffness values produce stiffer springs that behave more like a rigid contact. The higher the mass of the object, the higher the stiffness needs to be to reduce penetration.
+
 ****Debug Color****
 The display color of the physics material in debug view.
 
@@ -77,22 +88,22 @@ Physics materials define the physical properties of PhysX colliders.
 
 ## Assign a physics material
 
-Physics materials can be assigned to entire PhysX colliders, or on a per-face basis if the PhysX mesh is a triangle mesh.
+When using a **PhysX Primitive Collider** component, one physics material can be assigned for the entire collider.
 
-When the **Physics Asset** shape is selected in **PhysX Collider** component, and the **Physics Materials from Asset** property is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/scene-settings/physx-tab/)). To manually set the physics materials, uncheck the **Physics Materials from Asset** property and select the physics materials from the **Physics Materials** property list to assign it.
+When using a **PhysX Mesh Collider** component, physics materials can be assigned to entire collider or on a per-face basis if the PhysX asset is a triangle mesh. When the **Physics Materials from Asset** property is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/scene-settings/physx-tab/)). To manually set the physics materials in the collider, uncheck the **Physics Materials from Asset** property and select the physics materials from the **Physics Materials** property list to assign it.
 
-![PhysX Collider, setting the physics materials.](/images/user-guide/physx/physx/ui-physx-material-F.png)
+![PhysX Primitive Collider, setting the physics materials.](/images/user-guide/physx/physx/ui-physx-material-F.png)
 
 ### Assign physics materials per face
 
-Entities that have PhysX triangle mesh assets can have physics materials assigned per face. You define material placement by assigning materials to the faces of the triangle collision mesh in a content creation application. These materials are listed in both FBX Settings PhysX group and PhysX Collider component, where each material is assigned a physics material.
+Entities that have PhysX triangle mesh assets can have physics materials assigned per face. You define material placement by assigning materials to the faces of the triangle collision mesh in a content creation application. These materials are listed in both FBX Settings PhysX group and PhysX Mesh Collider component, where each material is assigned a physics material.
 
 For more information on creating PhysX mesh assets, see [FBX Settings PhysX tab](/docs/user-guide/assets/scene-settings/physx-tab/).
 
 In the example below, the PhysX mesh asset was authored with six materials in the content creation application: *Yellow*, *Red*, *Blue*, *Teal*, *Green* and *Orange*. In FBX Settings, under PhysX tab, a physics material can be assigned to each material.
 
-![PhysX Collider, per face physics materials.](/images/user-guide/physx/physx/ui-physx-material-G.png)
+![PhysX Asset, per face physics materials.](/images/user-guide/physx/physx/ui-physx-material-G.png)
 
-In PhysX Component, when **Physics Materials from Asset** property is disabled, a physics material can be manually assigned to each material. When **Physics Materials from Asset** property is enabled the physics materials assigned in FBX Settings will be used automatically.
+In **PhysX Mesh Collider Component**, when **Physics Materials from Asset** property is disabled, a physics material can be manually assigned to each material. When **Physics Materials from Asset** property is enabled the physics materials assigned in FBX Settings will be used automatically.
 
-![PhysX Collider, per face physics materials.](/images/user-guide/physx/physx/ui-physx-material-H.png)
+![PhysX Mesh Collider, per face physics materials.](/images/user-guide/physx/physx/ui-physx-material-H.png)

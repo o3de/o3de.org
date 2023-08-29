@@ -2,7 +2,7 @@
 linktitle: To Code
 title: Contributing to O3DE Code Sources
 toc: true
-weight: 50
+weight: 100
 ---
 
 Looking to contribute new or changed code to **Open 3D Engine (O3DE)**? The links below can help you get started.

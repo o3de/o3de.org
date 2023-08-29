@@ -1,5 +1,5 @@
 ---
-linktTitle: Project Game Release Layout (Windows)
+linkTitle: Windows Release Build
 title: Creating a Project Game Release Layout for Windows
 description: Learn how to create an Open 3D Engine (O3DE) project game release layout for Windows.
 toc: true
@@ -19,15 +19,15 @@ The instructions here guide you through the following steps:
 
 1. Set the starting level.
 
-1. Process your project's assets.
+2. Process your project's assets.
 
-1. Create a project game release layout.
+3. Create a project game release layout.
 
-1. Bundle your project's assets.
+4. Bundle your project's assets.
 
-1. Run your project's Game Launcher from the project game release layout.
+5. Run your project's Game Launcher from the project game release layout.
 
-1. Distribute your build.
+6. Distribute your build.
 
 
 ## Prerequisites
@@ -228,8 +228,12 @@ The most common workflow is to release your game only, in which case you should 
 
     ```cmd
     cd C:\o3de
-    cmake --preset windows-mono-default -DLY_VERSION_ENGINE_NAME=o3de-install
+    cmake --preset windows-mono-default -DO3DE_INSTALL_ENGINE_NAME=o3de-install
     ```
+
+    {{< note >}}
+Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
+    {{< /note >}}
 
 1. In your source engine, use CMake to invoke Visual Studio to append non-monolithic release artifacts to the pre-built SDK layout.
 
@@ -263,7 +267,7 @@ A pre-built SDK engine supports non-monolithic projects by default. As detailed 
 
     ```cmd
     cd C:\o3de
-    cmake --preset windows-default -DLY_VERSION_ENGINE_NAME=o3de-install
+    cmake --preset windows-default -DO3DE_INSTALL_ENGINE_NAME=o3de-install
     ```
 
     **Note:** Use `Visual Studio 16` as the generator for Visual Studio 2019, and `Visual Studio 17` for Visual Studio 2022. For a complete list of common generators for each supported platform, refer to [Configuring projects](/docs/user-guide/build/configure-and-build/#configuring-projects).
@@ -288,9 +292,9 @@ Your release build is now complete! Next, you need to [bundle your content](#bun
 
 **Asset Bundler** and the **Asset Bundler Batch** program are tools that let you create and optimize your bundled content. When you created a project game release layout earlier, you bundled all of your assets into an `engine.pak` file, which contains all of your project's and then engine's product assets. There are likely many unused assets from the engine, and your project may contain unused assets as well, so the `engine.pak` file might be much larger than it needs to be in order to run just your game. To optimize your bundled content, use Asset Bundler and configure how you want to bundle your assets.
 
-Follow the instructions in [Bundling Assets for a Project Game Release Layout](asset-bundler/bundle-assets-for-release). There, you will create two bundles: `game.pak`, for game assets, and `engine.pak`, for engine assets. Then, you will add the bundles to your project game release layout. 
+Follow the instructions in [Bundling Assets for a Project Game Release Layout](asset-bundler/bundle-assets-for-release). Create two bundles. It's strongly suggested you add an initial version number to the bundle filenames such as `game_v1.pak`, for game assets, and `engine_v1.pak`, for engine assets. You might have to create [content patch packages](./content-patch-package) in the future if you add or update your project's assets, or upgrade the engine. Adding a version number to the asset bundles simplifies the process. Then, add the bundles to your project game release layout.
 
-You should notice that both your bundled assets combined are smaller than the default `engine.pak` that was created automatically when you created a project game release layout earlier. 
+You should notice that both your bundled assets combined are smaller than the default `engine.pak` that was created automatically when you created a project game release layout earlier.
 
 ## License file generation
 License attribution files (often called the NOTICES file) can be generated during the project development process to properly attribute any code or downloadable packages that were imported. To scan project and package directories for licenses, you can run a script located in the engine's `scripts\license_scanner` subdirectory. This script will look for the `PackageInfo.json` file in order to create a summary file of all package licenses with SPDX tags for easy reference.
@@ -320,8 +324,8 @@ To distribute your build to other Windows computers:
         |   
         \---Cache
             \---pc
-            engine.pak
-                
+            engine_v1.pak
+
 1. Distribute the `.zip` file using your preferred method, such as a file storage service. 
 
 Now others can download and unpack the `.zip` file and run the Game Launcher on their Windows computers.
