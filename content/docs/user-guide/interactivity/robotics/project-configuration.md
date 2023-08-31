@@ -105,6 +105,7 @@ To register robotic templates and assets:
     ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseAssets
     ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseSample
     ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2FleetRobotTemplate
+    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2RoboticManipulationTemplate
     ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate
     ```
    
