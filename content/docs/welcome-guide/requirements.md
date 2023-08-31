@@ -224,13 +224,14 @@ O3DE also requires some additional library packages to be installed:
 * libpcre2-16-0
 * zlib1g-dev
 * mesa-common-dev
+* libstdc++-12-dev
 * libunwind-dev
 * libzstd-dev
 
 You can download and install these packages through `apt`.
 
 ```shell
-sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libpcre2-16-0 zlib1g-dev mesa-common-dev libunwind-dev libzstd-dev
+sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libpcre2-16-0 zlib1g-dev mesa-common-dev libunwind-dev libzstd-dev libstdc++-12-dev
 ```
 
 ### Ninja Build System (Optional)
