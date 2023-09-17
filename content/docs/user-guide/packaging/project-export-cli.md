@@ -35,7 +35,7 @@ The `export-project` command can run any python script that the user designates 
 
 Any script run by the command has access to the running context of the exporter, along with common APIs.
 
-## `export-project` Command
+## Export CLI Command
 The `export-project` command is accessed via the O3DE CLI that is shipped with the engine. This is found in `<engine>/scripts/o3de.bat`, or on Unix systems as `<engine>/scripts/o3de.sh`. The command has the following arguments:
 
 | Argument Name | Description | Required? |
@@ -122,7 +122,7 @@ You can study the standard export script to understand how the `export-project` 
 ### O3DE Context and Logger
 All export scripts are automatically injected with 2 global variables when the `export-project` command is run: `o3de_context`, and `o3de_logger`.
 
-`o3de_context` is an instance of the [export_project.O3DEScriptExportContext](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/o3de/export_project.py#L104) class. This context object is used to store parameter values and variables throughout the lifetime of an export script's execution. It can also be passed onto nested scripts the export script may execute, which can in turn update the context as necessary. The context stores convenient properties such as the export script's path, project path, engine path, unprocessed arguments, cmake specific arguments, and the project name from the project.json file.
+`o3de_context` is an instance of the [export_project.O3DEScriptExportContext](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/o3de/export_project.py#L104) class. This context object is used to store parameter values and variables throughout the lifetime of an export script's execution. It also stores convenient properties such as the export script's path, project path, engine path, unprocessed arguments, cmake specific arguments, and the project name from the project.json file.
 
 For any APIs of `export-project` that expect a parameter of type `O3DEScriptExportContext`, you can pass in the `o3de_context` of your running export script.
 
@@ -151,7 +151,7 @@ For users wishing to create custom export scripts, the `export-project` command 
 
 To demonstrate the basic functionality of the API, we will look at an example script using 2 functions: `execute_python_script` and `process_command`, which are the building blocks for the rest of the functionality.
 
-#### The Scripts
+#### test_export.py
 Here is an example test export script:
 ```python
 #test_export.py
@@ -180,7 +180,7 @@ o3de_logger.info(o3de_context.hello_back)
 o3de_logger.info(o3de_context.message2)
 ```
 
-First thing to notice is that at the top, users can import existing O3DE Python modules such as `export_project`, `manifest`, `utils`, `validation`, etc., just like they normally import other python modules in the standard library. All such modules can be found [here on Github](https://github.com/o3de/o3de/tree/development/scripts/o3de/o3de). This is because the `export-project` tool handles system paths behind the scenes to make both O3DE CLI code files and code files local to the export script accessible from the import system.
+First thing to notice is that at the top, users can import existing O3DE Python modules such as `export_project`, `manifest`, `utils`, `validation`, etc., just like they normally import other python modules in the standard library. All such modules can be found [here on Github](https://github.com/o3de/o3de/tree/development/scripts/o3de/o3de). This is because the `export-project` tool handles system paths behind the scenes to make the O3DE CLI folder and the export script's folder accessible from the import system.
 
 The next thing to notice is that `o3de_context` is available as a global context. Along with the standard properties, users can add their own custom values to retain over the lifetime of the script.
 
@@ -188,6 +188,7 @@ With `process_command`, users can run any terminal command that they wish. This 
 
 The function `export_python_script` does something special here. It's able to run another python script anywhere on the machine, while supplying it the same `o3de_context` the current export script is using. This can allow for very modular scripting abilities. Let us take a closer look at `hello.py` to see what it does.
 
+#### hello.py
 ```python
 #hello.py
 import o3de.export_project as exp
