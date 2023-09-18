@@ -215,7 +215,7 @@ o3de_context.message2 = "hiya!"
 Not only can it read them, but it can also overwrite an existing variable, such as with `message2`, changing it from `'____'` to `'hiya!'`, or even introduce new variables like `hello_back`, which upon completion of `hello.py` will be visible to the `test_export.py` script.
 
 #### The Results
-If you were to run the `test_export.py` script, this is what the logs would show:
+If you were to run the `test_export.py` script on Windows, this is what the logs would show:
 ```
 <engine-path>\scripts\o3de.bat export-project -es C:\workspace\projects\NewspaperDeliveryGame\export_rules\test_export.py -ll INFO
 
@@ -230,7 +230,7 @@ If you were to run the `test_export.py` script, this is what the logs would show
 [INFO] root:
 [INFO] root: Terminating process 'cmake' with PID(28996)
 [INFO] root: process 'cmake' with PID(28996) terminated with exit code 0
-[INFO] root: Begin loading script 'C:\Users\tankotha\Desktop\hello.py'...
+[INFO] root: Begin loading script 'C:\Users\O3DE_User\Desktop\hello.py'...
 hi 0:: 22
 hi 1:: 22
 hi 2:: 22
