@@ -8,7 +8,7 @@ weight: 400
 With the new `export-project` CLI command, it is now possible to automate the packaging and release of game projects.
 
 {{< note >}}
-If you wish to learn how to prepare projects manually, please consult the page [Creating a Project Game Release Layout for Windows.](/docs/user-guide/packaging/windows-release-builds)
+If you wish to learn how to prepare projects manually for Windows, please consult the page [Creating a Project Game Release Layout for Windows.](/docs/user-guide/packaging/windows-release-builds)
 {{< /note >}}
 
 ## Prerequisites
