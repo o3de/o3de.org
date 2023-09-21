@@ -5,7 +5,7 @@ description: (Experimental) Learn how to use the Project Export CLI to create an
 toc: true
 weight: 450
 ---
-In this article, we will go over the process to use project export tooling as part of the process to building and deploying games to the iOS platform. First, we will use the iOS export script to generate the necessary Xcode project file and prepare assets. Afterwards we will walk through how to ensure Xcode is setup properly to build an app for iOS.
+This guide covers how to use project export tooling to build and deploy games on iOS. First, we will use the iOS export script to generate an Xcode project and prepare assets. Afterwards we will walk through how to ensure Xcode is properly setup to build an iOS app.
 
 For this demonstration, we will use the O3DE Atom Sample Viewer project as our reference point for ensuring proper behavior. Results may vary for other projects.
 
@@ -17,35 +17,33 @@ The iOS export functionality is only available on macOS, which is currently expe
 {{< /important >}}
 
 ## Prerequisites
-First, make sure to follow the pre-requisites of the [Project Export CLI Tool page.](project-export-cli) Afterwards, ensure that the [O3DE Atom Sample Viewer project](https://github.com/o3de/o3de-atom-sampleviewer) is cloned onto your machine, and is properly registered with your copy of O3DE. You can register the project using:
+1. Complete the [Project Export CLI Tool page.](project-export-cli)  prerequisites. 
+2. Git clone [O3DE Atom Sample Viewer project](https://github.com/o3de/o3de-atom-sampleviewer) onto your machine.
+3. Register [O3DE Atom Sample Viewer project](https://github.com/o3de/o3de-atom-sampleviewer) with O3DE. You can register the project using:
 ```
-<O3DE_ENGINE>\scripts\o3de register -pp C:\path\to\o3de-atom-sampleviewer
+<O3DE_ENGINE>/scripts/o3de.sh register -pp /path/to/o3de-atom-sampleviewer
 ```
-
-You must also have a valid copy of Xcode installed on your machine, and a valid Apple Developer ID associated with that IDE. To set up such an ID, go to [developer.apple.com](https://developer.apple.com).
-
-To use your desired Apple ID, in Xcode go to `Xcode -> Settings`. In the Settings window, go to the Accounts tab and click the '+' icon at the bottom of the left panel to add your account. Select Apple ID to proceed, and follow on-screen instructions.
-
-You will also need to ensure that Xcode has the necessary SDKs installed for macOS and iOS, and that your preferred iOS test device is compatible with Xcode.
+4. Have a valid copy of Xcode installed on your machine, and a valid Apple Developer ID associated with that IDE. To set up such an ID, go to [developer.apple.com](https://developer.apple.com). To use your desired Apple ID, in Xcode go to `Xcode -> Settings`. In the Settings window, go to the Accounts tab and click the '+' icon at the bottom of the left panel to add your account. Select Apple ID to proceed, and follow on-screen instructions.
+5. You will also need to ensure that Xcode has the standard SDKs installed for macOS and iOS, and that your preferred iOS test device is compatible with Xcode. If you are not sure, you can consult [this page on installing Simulator Runtimes](https://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes).
 
 ## Quickstart
 ### Running the Export Script
 Assuming you are just following along using the O3DE Atom Sampleviewer project, this single invocation should be all you need to generate the necessary Xcode project file in the project's build folder:
 ```
-<O3DE_ENGINE>\scripts\o3de export-project -es <O3DE_ENGINE>\scripts\o3de\ExportScripts\export_source_ios_xcode.py -pp C:\path\to\o3de-atom-sampleviewer
+<O3DE_ENGINE>/scripts/o3de.sh export-project -es <O3DE_ENGINE>/scripts/o3de/ExportScripts/export_source_ios_xcode.py -pp /path/to/o3de-atom-sampleviewer
 ```
-Assuming the underlying CMake build system finds no issues with your engine or project installation, you should have the corresponding Xcode project file, which will be located at `<PROJECT>\build\game_ios`. For the Atom SampleViewer, it should be called `AtomSampleViewer.xcodeproj`.
+Assuming the underlying CMake build system finds no issues with your engine or project installation, you should have the corresponding Xcode project file, which will be located at `<PROJECT>/build/game_ios`. For the Atom SampleViewer, it should be called `AtomSampleViewer.xcodeproj`.
 
 ### Using Xcode
-First double click the file `AtomSampleViewer.xcodeproj` to open it in Xcode. This should load everything needed to build the app on an iOS device.
+Double click the file `AtomSampleViewer.xcodeproj` to open it in Xcode. This should load everything needed to build the app on an iOS device.
 
-First, make sure that you have the provisioning profile setup correctly. This will handle all code-signing of the application when deploying to your iOS device (this applies even to test builds).
+Deploying to an iOS device requires code-signing (even test builds). Make sure that you have a provisioning profile setup for code-signing.
 
-First click on the AtomSampleViewer project icon on the Explorer tree-view panel on the left hand side of the Xcode IDE to show the project configuration details. Then on the left column under the general tab, make sure to select the build configuration `AtomSampleViewer.GameLauncher`. The resulting configuration page should look like this:
+Next, we'll open the project configuration details. Click on the AtomSampleViewer project icon in the Explorer tree-view (left hand side of the Xcode IDE). On the left column under "General", select the build configuration `AtomSampleViewer.GameLauncher`. The resulting configuration page should look like this:
 
 {{< image-width "/images/user-guide/packaging/project-export-ios/atom-sampleviewer-configuration-page.png" "700">}}
 
-Then go to the signing and capabilities tab, and setup the provisioning profile to link to your AppleID, slightly customize the bundle identifier (add any string you want, for example: 'test'), and check "Automatically manage signing."
+Then go to the "signing and capabilities" tab, and setup the provisioning profile to link to your AppleID. Customize the bundle identifier (add any string you want, for example: append the phrase 'test'). Enable "Automatically manage signing."
 
 {{< image-width "/images/user-guide/packaging/project-export-ios/signing-and-capabilities-page.png" "700">}}
 
@@ -57,6 +55,12 @@ Set the desired build configuration, and in the arguments section, set the relev
 
 {{< image-width "/images/user-guide/packaging/project-export-ios/scheme-configuration-debug-build.png" "700">}}
 {{< image-width "/images/user-guide/packaging/project-export-ios/scheme-configuration-cli-params.png" "700">}}
+
+{{< note >}}
+Subsequent runs of the iOS Export script will clear any CLI configurations you provide in the Xcode project file, because the entire project file is re-generated. If you need changes to stick, you can specify the commands to run on launch for a release build via code or by using the `autoexec.client.setreg`. like so: https://docs.o3de.org/docs/user-guide/packaging/windows-release-builds/#set-the-starting-level 
+
+These launch parameters specified in the schema likely will be removed the next time you configure with CMake
+{{< /note >}}
 
 Now make sure to connect your iOS device to the computer. Xcode should recognize your device, and it should be compatible with the project. If not, follow the XCode error prompts to trouble shoot the issue. Updating may be required. Once this is all correct, press the play button to build the project. This can take some time.
 
@@ -82,3 +86,13 @@ The arguments are as follows:
 | [`--ios-build-path`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L94) | Designates where the Xcode project file for the project is generated. If not specified, default is `<o3de_project_path>/build/game_ios`. | no |
 | [`--skip-asset-processing`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L96) | For iOS building and deployment, the export script assumes that assets should be processed and built. If this behavior is not desired, use this flag to disable it. | no |
 | [`--quiet`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L98) | Suppresses logging information unless an error occurs. | no |
+
+Here is an example usage of this script:
+```
+# On Mac
+$(O3DE_ENGINE_PATH)/scripts/o3de.sh export-project \
+    --export-script $(O3DE_ENGINE_PATH)/scripts/o3de/ExportScripts/export_source_ios_xcode.py \
+    --project-path $(O3DE_PROJECT_PATH) \
+    --ios-build-path $(IOS_OUTPUT_PATH)
+```
+Where `O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `IOS_OUTPUT_PATH` are environment variables.
