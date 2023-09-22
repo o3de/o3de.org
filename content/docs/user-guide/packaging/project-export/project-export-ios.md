@@ -33,6 +33,8 @@ Assuming you are just following along using the O3DE Atom Sampleviewer project, 
 export O3DE_ENGINE_PATH=/path/to/o3de
 $(O3DE_ENGINE_PATH)/scripts/o3de.sh export-project -es $(O3DE_ENGINE_PATH)/scripts/o3de/ExportScripts/export_source_ios_xcode.py -pp /path/to/o3de-atom-sampleviewer
 ```
+Where `O3DE_ENGINE_PATH` is an environment variable that should point to the folder location of the O3DE Source engine on your machine.
+
 Assuming the underlying CMake build system finds no issues with your engine or project installation, you should have the corresponding Xcode project file, which will be located at `<PROJECT>/build/game_ios`. For the Atom SampleViewer, it should be called `AtomSampleViewer.xcodeproj`.
 
 ### Using Xcode
