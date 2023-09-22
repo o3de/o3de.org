@@ -30,7 +30,8 @@ The iOS export functionality is only available on macOS, which is currently expe
 ### Running the Export Script
 Assuming you are just following along using the O3DE Atom Sampleviewer project, this single invocation should be all you need to generate the necessary Xcode project file in the project's build folder:
 ```
-<O3DE_ENGINE>/scripts/o3de.sh export-project -es <O3DE_ENGINE>/scripts/o3de/ExportScripts/export_source_ios_xcode.py -pp /path/to/o3de-atom-sampleviewer
+export O3DE_ENGINE_PATH=/path/to/o3de
+$(O3DE_ENGINE_PATH)/scripts/o3de.sh export-project -es $(O3DE_ENGINE_PATH)/scripts/o3de/ExportScripts/export_source_ios_xcode.py -pp /path/to/o3de-atom-sampleviewer
 ```
 Assuming the underlying CMake build system finds no issues with your engine or project installation, you should have the corresponding Xcode project file, which will be located at `<PROJECT>/build/game_ios`. For the Atom SampleViewer, it should be called `AtomSampleViewer.xcodeproj`.
 
