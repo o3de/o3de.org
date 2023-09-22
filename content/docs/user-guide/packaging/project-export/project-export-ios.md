@@ -17,7 +17,7 @@ The iOS export functionality is only available on macOS, which is currently expe
 {{< /important >}}
 
 ## Prerequisites
-1. Complete the [Project Export CLI Tool page.](project-export-cli)  prerequisites. 
+1. Make sure that the [Project Export CLI Tool page.](project-export-cli) prerequisites are satisfied. 
 2. Git clone [O3DE Atom Sample Viewer project](https://github.com/o3de/o3de-atom-sampleviewer) onto your machine.
 3. Register [O3DE Atom Sample Viewer project](https://github.com/o3de/o3de-atom-sampleviewer) with O3DE. You can register the project using:
 ```
