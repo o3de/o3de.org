@@ -30,44 +30,44 @@ The iOS export functionality is only available on macOS, which is currently expe
 ### Running the Export Script
 Assuming you are just following along using the O3DE Atom Sampleviewer project, this single invocation should be all you need to generate the necessary Xcode project file in the project's build folder:
 ```
-export O3DE_ENGINE_PATH=/path/to/o3de
-$(O3DE_ENGINE_PATH)/scripts/o3de.sh export-project -es $(O3DE_ENGINE_PATH)/scripts/o3de/ExportScripts/export_source_ios_xcode.py -pp /path/to/o3de-atom-sampleviewer
+export PROJECT_PATH=/path/to/project
+$O3DE_ENGINE_PATH/scripts/o3de.sh export-project -es $O3DE_ENGINE_PATH/scripts/o3de/ExportScripts/export_source_ios_xcode.py -pp $PROJECT_PATH
 ```
-Where `O3DE_ENGINE_PATH` is an environment variable that should point to the folder location of the O3DE Source engine on your machine.
+{{< note >}}
+Make sure the `$O3DE_ENGINE_PATH` variable is set to the absolute path to the location of the O3DE source and `$PROJECT_PATH` is set to the absolute path to the location of your project folder.
+{{< /note >}}
 
-Assuming the underlying CMake build system finds no issues with your engine or project installation, you should have the corresponding Xcode project file, which will be located at `<PROJECT>/build/game_ios`. For the Atom SampleViewer, it should be called `AtomSampleViewer.xcodeproj`.
+Assuming the underlying CMake build system finds no issues with your engine or project installation, you should have the corresponding Xcode project file, which will be located at `$PROJECT_PATH/build/game_ios`. For the Atom SampleViewer, it should be called `AtomSampleViewer.xcodeproj`.
 
 ### Using Xcode
 Double click the file `AtomSampleViewer.xcodeproj` to open it in Xcode. This should load everything needed to build the app on an iOS device.
 
-Deploying to an iOS device requires code-signing (even test builds). Make sure that you have a provisioning profile setup for code-signing.
+Deploying to an iOS device requires code-signing. Make sure that you have a provisioning profile setup for code-signing.
 
-Next, we'll open the project configuration details. Click on the AtomSampleViewer project icon in the Explorer tree-view (left hand side of the Xcode IDE). On the left column under "General", select the build configuration `AtomSampleViewer.GameLauncher`. The resulting configuration page should look like this:
+Next, we'll open the project configuration details. Click on the `AtomSampleViewer` project icon in the Explorer tree-view (left hand side of the Xcode IDE). On the left column under "General", select the build configuration `AtomSampleViewer.GameLauncher`. The resulting configuration page should look like this:
 
 {{< image-width "/images/user-guide/packaging/project-export-ios/atom-sampleviewer-configuration-page.png" "700">}}
 
-Then go to the "signing and capabilities" tab, and setup the provisioning profile to link to your AppleID. Customize the bundle identifier (add any string you want, for example: append the phrase 'test'). Enable "Automatically manage signing."
+Go to the "signing and capabilities" tab and setup the provisioning profile to link to your Apple ID. Customize the bundle identifier (add any string you want, for example: append the phrase 'test'). Enable "Automatically manage signing."
 
 {{< image-width "/images/user-guide/packaging/project-export-ios/signing-and-capabilities-page.png" "700">}}
 
-Now click on the bar in the region labeled “AtomSampleViewer.GameLauncher”, and scroll through the drop down to click “Edit Scheme.”
+Click on the bar in the region labeled “AtomSampleViewer.GameLauncher” and scroll through the drop down to click “Edit Scheme.”
 
 {{< image-width "/images/user-guide/packaging/project-export-ios/edit-scheme.png" "700">}}
 
-Set the desired build configuration, and in the arguments section, set the relevant CLI parameters. An example configuration is shown below:
+Set the desired build configuration and set the relevant CLI parameters in the arguments section. An example configuration is shown below:
 
 {{< image-width "/images/user-guide/packaging/project-export-ios/scheme-configuration-debug-build.png" "700">}}
 {{< image-width "/images/user-guide/packaging/project-export-ios/scheme-configuration-cli-params.png" "700">}}
 
 {{< note >}}
-Subsequent runs of the iOS Export script will clear any CLI configurations you provide in the Xcode project file, because the entire project file is re-generated. If you need changes to stick, you can specify the commands to run on launch for a release build via code or by using the `autoexec.client.setreg`. like so: https://docs.o3de.org/docs/user-guide/packaging/windows-release-builds/#set-the-starting-level 
-
-These launch parameters specified in the schema likely will be removed the next time you configure with CMake
+ For CLI paramter settings that you would like to persist over multiple exports, you can specify the commands to run on launch for a release build via code or by using the `autoexec.client.setreg`. like so: https://docs.o3de.org/docs/user-guide/packaging/windows-release-builds/#set-the-starting-level 
 {{< /note >}}
 
-Now make sure to connect your iOS device to the computer. Xcode should recognize your device, and it should be compatible with the project. If not, follow the XCode error prompts to trouble shoot the issue. Updating may be required. Once this is all correct, press the play button to build the project. This can take some time.
+Make sure to connect your iOS device to the computer. Xcode should recognize your device, and it should be compatible with the project. If not, follow the Xcode error prompts to trouble shoot the issue and updating may be required. Once this is all correct, press the play button to build and deploy the project.
 
-Once everything is done, assuming you used the sample configuration, you should get the following on your iOS device:
+If the build and deployment successfully completes (assuming you used the sample configuration), you should get the following on your iOS device:
 
 {{< image-width "/images/user-guide/packaging/project-export-ios/o3de-atom-sampleviewer-ios-device-result.png" "700">}}
 
@@ -78,7 +78,7 @@ The export script has 2 primary sections: the function [`export_ios_xcode_projec
 
 
 ### Usage
-To use the export script, you can issue the arguments for this script at the same time that you are running the `export-project` command, so long as you are using this script as your designated export script. The arguments specific to the script will be deferred until the script begins running.
+To use the export script, you can issue the arguments at the same time that you are running the `export-project` command. The arguments specific to the script will be deferred until it begins running.
 
 The arguments are as follows:
 | Argument Name | Description | Required? |
@@ -93,9 +93,7 @@ The arguments are as follows:
 Here is an example usage of this script:
 ```
 # On Mac
-$(O3DE_ENGINE_PATH)/scripts/o3de.sh export-project \
-    --export-script $(O3DE_ENGINE_PATH)/scripts/o3de/ExportScripts/export_source_ios_xcode.py \
-    --project-path $(O3DE_PROJECT_PATH) \
-    --ios-build-path $(IOS_OUTPUT_PATH)
+export IOS_OUTPUT_PATH=/path/to/ios/build/path
+$O3DE_ENGINE_PATH/scripts/o3de.sh export-project --export-script $O3DE_ENGINE_PATH/scripts/o3de/ExportScripts/export_source_ios_xcode.py --project-path $PROJECT_PATH --ios-build-path $IOS_OUTPUT_PATH
 ```
-Where `O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `IOS_OUTPUT_PATH` are environment variables.
+Where `O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `IOS_OUTPUT_PATH` are environment variables. The `O3DE_ENGINE_PATH` and `O3DE_PROJECT_PATH` variables point to the path locations for your o3de source engine and o3de project respectively. The `IOS_OUTPUT_PATH` variable corresponds to the folder path where you would like for the generated Xcode project file to appear.
