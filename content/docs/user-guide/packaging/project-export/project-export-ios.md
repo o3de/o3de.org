@@ -17,7 +17,7 @@ The iOS export functionality is only available on macOS, which is currently expe
 {{< /important >}}
 
 ## Prerequisites
-1. Make sure that the [Project Export CLI Tool page.](project-export-cli) prerequisites are satisfied. 
+1. Make sure that the [Project Export CLI Tool page](/docs/user-guide/packaging/project-export/project-export-cli) prerequisites are satisfied. 
 2. Git clone [O3DE Atom Sample Viewer project](https://github.com/o3de/o3de-atom-sampleviewer) onto your machine.
 3. Register [O3DE Atom Sample Viewer project](https://github.com/o3de/o3de-atom-sampleviewer) with O3DE. You can register the project using:
 ```
@@ -62,7 +62,7 @@ Set the desired build configuration and set the relevant CLI parameters in the a
 {{< image-width "/images/user-guide/packaging/project-export-ios/scheme-configuration-cli-params.png" "700">}}
 
 {{< note >}}
- For CLI paramter settings that you would like to persist over multiple exports, you can specify the commands to run on launch for a release build via code or by using the `autoexec.client.setreg`. like so: https://docs.o3de.org/docs/user-guide/packaging/windows-release-builds/#set-the-starting-level 
+ For CLI paramter settings that you would like to persist over multiple exports, you can specify the commands to run on launch for a release build via code or by using the `autoexec.client.setreg`. You can find an example of this in [Set the starting level](/docs/user-guide/packaging/windows-release-builds/#set-the-starting-level).
 {{< /note >}}
 
 Make sure to connect your iOS device to the computer. Xcode should recognize your device, and it should be compatible with the project. If not, follow the Xcode error prompts to trouble shoot the issue and updating may be required. Once this is all correct, press the play button to build and deploy the project.
@@ -74,7 +74,7 @@ If the build and deployment successfully completes (assuming you used the sample
 ## iOS Export Script
 O3DE ships with an experimental [iOS Export Script](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py), capable of generating an Xcode project file to handle standard use cases of O3DE projects on iOS. This script is only designed to run from an O3DE source installation on a macOS machine.
 
-The export script has 2 primary sections: the function [`export_ios_xcode_project`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L16) and the [startup code that only runs if the script is invoked by the CLI](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L73). In depth discussion on these two sections will be made in the [Developer Guide](https://docs.o3de.org/docs/engine-dev/) in the future.
+The export script has two primary sections: the function [`export_ios_xcode_project`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L16) and the [startup code that only runs if the script is invoked by the CLI](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L73). In-depth discussion on these two sections will be made in the [Developer Guide](https://docs.o3de.org/docs/engine-dev/) in the future.
 
 
 ### Usage
@@ -84,7 +84,7 @@ The arguments are as follows:
 | Argument Name | Description | Required? |
 | - | - | - |
 | [`--script-help`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L89) | Display the help information specifically for the export script. | no |
-| [`--build-tools`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L90) | Specifies whether to build O3DE toolchain executables. This will build AssetBundlerBatch, AssetProcessorBatch. If asset tools have not been built, then assets cannot be processed. | no |
+| [`--build-tools`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L90) | Specifies whether to build O3DE toolchain executables. This will build AssetBundlerBatch and AssetProcessorBatch. If asset tools have not been built, then assets cannot be processed. | no |
 | [`--tools-build-path`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L92) | Designates where the build files for the O3DE toolchain are generated. If not specified, default is `<o3de_project_path>/build/tools`. | no |
 | [`--ios-build-path`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L94) | Designates where the Xcode project file for the project is generated. If not specified, default is `<o3de_project_path>/build/game_ios`. | no |
 | [`--skip-asset-processing`](https://github.com/o3de/o3de/blob/9b90a24479e2b191d2125d34c1984b013b2cb13f/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L96) | For iOS building and deployment, the export script assumes that assets should be processed and built. If this behavior is not desired, use this flag to disable it. | no |
@@ -96,4 +96,4 @@ Here is an example usage of this script:
 export IOS_OUTPUT_PATH=/path/to/ios/build/path
 $O3DE_ENGINE_PATH/scripts/o3de.sh export-project --export-script $O3DE_ENGINE_PATH/scripts/o3de/ExportScripts/export_source_ios_xcode.py --project-path $PROJECT_PATH --ios-build-path $IOS_OUTPUT_PATH
 ```
-Where `O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `IOS_OUTPUT_PATH` are environment variables. The `O3DE_ENGINE_PATH` and `O3DE_PROJECT_PATH` variables point to the path locations for your o3de source engine and o3de project respectively. The `IOS_OUTPUT_PATH` variable corresponds to the folder path where you would like for the generated Xcode project file to appear.
+`O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `IOS_OUTPUT_PATH` are environment variables. The `O3DE_ENGINE_PATH` and `O3DE_PROJECT_PATH` variables point to the path locations for your o3de source engine and o3de project respectively. The `IOS_OUTPUT_PATH` variable corresponds to the folder path where you would like for the generated Xcode project file to appear.
