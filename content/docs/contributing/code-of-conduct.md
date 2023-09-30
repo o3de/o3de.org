@@ -7,8 +7,6 @@ weight: 600
 
 ## Community Code of Conduct v1.0
 
-Other languages available:
-
 ### Contributor Code of Conduct
 
 As contributors and maintainers of this project, and in the interest of fostering
