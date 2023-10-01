@@ -1,6 +1,5 @@
 var struct_az_framework_1_1_input_device_touch_1_1_touch =
 [
-    [ "All", "struct_az_framework_1_1_input_device_touch_1_1_touch.html#acbdcbecb874640ff83057a1b380f13e7", null ],
     [ "Index0", "struct_az_framework_1_1_input_device_touch_1_1_touch.html#a488845e4bafbedcde142a06c2d50246d", null ],
     [ "Index1", "struct_az_framework_1_1_input_device_touch_1_1_touch.html#a500078dc140ffe22efc784e10a35e72f", null ],
     [ "Index2", "struct_az_framework_1_1_input_device_touch_1_1_touch.html#a59b6b639669cd9188175e004f0112ece", null ],
