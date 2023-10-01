@@ -1,12 +1,10 @@
 var class_a_z_1_1_render_1_1_simple_spot_light_delegate =
 [
-    [ "SimpleSpotLightDelegate", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#ab8b9e32d6b3e0caeae4017ab1746bbc0", null ],
     [ "CalculateAttenuationRadius", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#affb26cbf4896bd2d6f18717ae569a05f", null ],
     [ "DrawDebugDisplay", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#aff39517723f11bd9b06a058fd95de2a1", null ],
     [ "GetEffectiveSolidAngle", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#a90fae5082423a874088762323fe312eb", null ],
     [ "GetLocalVisualizationBounds", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#a0af18332f6ee6f144a35fe27ad8b3e9d", null ],
     [ "GetSurfaceArea", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#a6a23617799b47b31b906535254fc0c45", null ],
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#a0c7b9ea3ff8d8899e368f2efe385ffdd", null ],
-    [ "SetAffectsGIFactor", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#a87bb65b137e0ca81ab7f954c2d48566c", null ],
-    [ "SetShutterAngles", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#a5f5818cbacf6a8454588c0140fc07f2d", null ]
+    [ "SetAffectsGIFactor", "class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#a87bb65b137e0ca81ab7f954c2d48566c", null ]
 ];

@@ -1,27 +1,9 @@
 var class_a_z_1_1_r_p_i_1_1_raster_pass =
 [
-    [ "~RasterPass", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a0f6608c89f576b5151780a500efb291a", null ],
-    [ "RasterPass", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a32fcbb1ba79fa37b75591cf89e243d46", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#abda6188a8e70dddb037b976d21276161", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a74cac1cf1b13078a6956e429b106d6f0", null ],
     [ "CompileResources", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a8332430669dd475770ca5257ac29fa70", null ],
-    [ "Create", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#ab12bc31da1070da08f94d754fd99ae81", null ],
-    [ "GetDrawItemCount", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a94a3d3e6d02500a55b406bb178101279", null ],
+    [ "Create", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a520c22191502c200115c6b5b18c55b6a", null ],
     [ "GetDrawListTag", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#ad1e2ccee21af7942b84b9b86aa95b0cf", null ],
-    [ "GetShaderResourceGroup", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a25c7109afe3e93793bcf24d020e4af6d", null ],
-    [ "SetDrawListTag", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#ad15d3dadff6cb0b5e51b9c6998f487c7", null ],
-    [ "SetPipelineStateDataIndex", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a77e5a8aba121ad3fd2036350e54b69e1", null ],
+    [ "GetShaderResourceGroup", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a9e32533ff489a19bda7580b4aa1b4629", null ],
     [ "SetupFrameGraphDependencies", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#ad37711b349b4b3dd860607adae5e0a85", null ],
-    [ "SubmitDrawItems", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a886c3119c2e052c4ddbc06418c395507", null ],
-    [ "UpdateDrawList", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a81f3693ca2a62182d8234d09387cf8ea", null ],
-    [ "Validate", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a28c7a96c073da6003d632d04efd2f4ab", null ],
-    [ "m_combinedDrawList", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a1ccde048b10914e3518ee8c695931ceb", null ],
-    [ "m_drawItemCount", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#aae62628112dfff7fb03e5f9158f11340", null ],
-    [ "m_drawListTag", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#ae911a724d9f40b66d88432107329531d", null ],
-    [ "m_drawListView", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a5383ad774af184337405b1deec60b024", null ],
-    [ "m_overrideScissorSate", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a282381bebc879b481fc15366851c8223", null ],
-    [ "m_overrideViewportState", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#aca82480b797d23700d0d74d47f23c055", null ],
-    [ "m_pipelineStateDataIndex", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#af3aa911d6676a623d557b4a3df95b553", null ],
-    [ "m_scissorState", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a83adb812e970c3dfc3ff9106dc50c5d3", null ],
-    [ "m_viewportState", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a93a6ce36f87298df5879e5308b090aa9", null ]
+    [ "Validate", "class_a_z_1_1_r_p_i_1_1_raster_pass.html#a28c7a96c073da6003d632d04efd2f4ab", null ]
 ];

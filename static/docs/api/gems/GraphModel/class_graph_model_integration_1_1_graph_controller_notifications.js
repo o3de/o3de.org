@@ -1,6 +1,5 @@
 var class_graph_model_integration_1_1_graph_controller_notifications =
 [
-    [ "BusIdType", "class_graph_model_integration_1_1_graph_controller_notifications.html#add026aad54313a9e58d01dad91ea8932", null ],
     [ "OnGraphModelConnectionAdded", "class_graph_model_integration_1_1_graph_controller_notifications.html#af2189c5653f8bc9b5ac5521bdfaafd41", null ],
     [ "OnGraphModelConnectionRemoved", "class_graph_model_integration_1_1_graph_controller_notifications.html#afe5d53f7168e8766e1dee0d01be8a6af", null ],
     [ "OnGraphModelGraphModified", "class_graph_model_integration_1_1_graph_controller_notifications.html#aa4ad8634c781f4b08af53fe2a29f983c", null ],
@@ -13,6 +12,5 @@ var class_graph_model_integration_1_1_graph_controller_notifications =
     [ "OnGraphModelTriggerRedo", "class_graph_model_integration_1_1_graph_controller_notifications.html#a18d6b7170847e26e9a2ad4cac9a0af93", null ],
     [ "OnGraphModelTriggerUndo", "class_graph_model_integration_1_1_graph_controller_notifications.html#a7d28758ba3de7e021223d91cf706b145", null ],
     [ "PreOnGraphModelNodeRemoved", "class_graph_model_integration_1_1_graph_controller_notifications.html#aacedb4e1a7dafb4871fe83d6f9dfc0b9", null ],
-    [ "PreOnGraphModelNodeWrapped", "class_graph_model_integration_1_1_graph_controller_notifications.html#a0ea2f6dd27e8c830c3aea25d14265733", null ],
-    [ "AddressPolicy", "class_graph_model_integration_1_1_graph_controller_notifications.html#a218f36bf6eed44213fc63b667a4ca99e", null ]
+    [ "PreOnGraphModelNodeWrapped", "class_graph_model_integration_1_1_graph_controller_notifications.html#aeb8c5a763aa9e05c1ed92d0a693d7dac", null ]
 ];

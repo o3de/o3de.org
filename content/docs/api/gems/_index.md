@@ -4,6 +4,7 @@ description: Reference index for Gems shipped with Open 3D Engine.
 ---
 
 * [Achievements](/docs/api/gems/Achievements)
+* [Archive](/docs/api/gems/Archive)
 * [AssetValidation](/docs/api/gems/AssetValidation)
 * [Atom](/docs/api/gems/Atom)
 * [AtomContent](/docs/api/gems/AtomContent)
@@ -62,7 +63,6 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [QtForPython](/docs/api/gems/QtForPython)
 * [RecastNavigation](/docs/api/gems/RecastNavigation)
 * [RemoteTools](/docs/api/gems/RemoteTools)
-* [ROS2](/docs/api/gems/ROS2)
 * [SaveData](/docs/api/gems/SaveData)
 * [SceneLoggingExample](/docs/api/gems/SceneLoggingExample)
 * [SceneProcessing](/docs/api/gems/SceneProcessing)

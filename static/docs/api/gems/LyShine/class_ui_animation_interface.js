@@ -1,6 +1,5 @@
 var class_ui_animation_interface =
 [
-    [ "~UiAnimationInterface", "class_ui_animation_interface.html#a75bc150910b0a8a97d67c29bbe86d32f", null ],
     [ "AbortSequence", "class_ui_animation_interface.html#a917b898b6bd4aa4ac0ad055632a999ed", null ],
     [ "GetSequenceLength", "class_ui_animation_interface.html#a233e6f15aba8d638a96d91cfbb7d5d92", null ],
     [ "GetSequencePlayingSpeed", "class_ui_animation_interface.html#aade344a535973642a7378bdabc289657", null ],

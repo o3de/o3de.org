@@ -1,6 +1,5 @@
 var class_ui_dynamic_scroll_box_interface =
 [
-    [ "~UiDynamicScrollBoxInterface", "class_ui_dynamic_scroll_box_interface.html#aa050c4a3b3b4b6c631bdfbd0047ed865", null ],
     [ "AddElementsToEnd", "class_ui_dynamic_scroll_box_interface.html#abda622fd83af55cc1e18cf63879c582b", null ],
     [ "GetAutoCalculateVariableElementSize", "class_ui_dynamic_scroll_box_interface.html#aac531a3e7b66e5848b274875f74b08a4", null ],
     [ "GetAutoCalculateVariableHeaderSize", "class_ui_dynamic_scroll_box_interface.html#ad596a35e4be1081c7270cb2e2001089f", null ],

@@ -1,6 +1,5 @@
 var class_ui_layout_cell_default_interface =
 [
-    [ "~UiLayoutCellDefaultInterface", "class_ui_layout_cell_default_interface.html#aa6ff7f1ca7dbd9543259c4d000f530ee", null ],
     [ "GetExtraHeightRatio", "class_ui_layout_cell_default_interface.html#af239fcd0ac9fec230bbc09bb01fc53fb", null ],
     [ "GetExtraWidthRatio", "class_ui_layout_cell_default_interface.html#a68cc51f392284cc4d45d22e5d8cec5f8", null ],
     [ "GetMinHeight", "class_ui_layout_cell_default_interface.html#a9bb98154c0082b9679b139ae3844c1dd", null ],

@@ -7,7 +7,5 @@ var struct_i_ui_track_event_listener =
       [ "eTrackEventReason_Triggered", "struct_i_ui_track_event_listener.html#a27c8ea33c9d666e1f8ac23dddddadd0aa3166c439edf9cec5dd9a414120e1e651", null ],
       [ "eTrackEventReason_MovedUp", "struct_i_ui_track_event_listener.html#a27c8ea33c9d666e1f8ac23dddddadd0aa93b8e921caca8ddd09f1915e15c3945f", null ],
       [ "eTrackEventReason_MovedDown", "struct_i_ui_track_event_listener.html#a27c8ea33c9d666e1f8ac23dddddadd0aa4c1e0c14d5b20a2ad0e6bf4db4ba818c", null ]
-    ] ],
-    [ "~IUiTrackEventListener", "struct_i_ui_track_event_listener.html#a80976f26f66abd5f5d7a5778c812247b", null ],
-    [ "OnTrackEvent", "struct_i_ui_track_event_listener.html#a4b9326f7dad52f0e3e5f7da90b225a1c", null ]
+    ] ]
 ];

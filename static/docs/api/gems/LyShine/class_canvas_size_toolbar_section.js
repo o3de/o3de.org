@@ -1,16 +1,10 @@
 var class_canvas_size_toolbar_section =
 [
-    [ "CanvasSizePresets", "struct_canvas_size_toolbar_section_1_1_canvas_size_presets.html", "struct_canvas_size_toolbar_section_1_1_canvas_size_presets" ],
-    [ "ComboBoxOptions", "class_canvas_size_toolbar_section.html#a56032fabb1bbafe4118e074494290069", null ],
-    [ "CanvasSizeToolbarSection", "class_canvas_size_toolbar_section.html#a282f7ac46dba1d03b50d1f03004eaa90", null ],
-    [ "~CanvasSizeToolbarSection", "class_canvas_size_toolbar_section.html#a0087e8638538c32289df8e78e1325074", null ],
+    [ "CanvasSizePresets", "struct_canvas_size_toolbar_section_1_1_canvas_size_presets.html", null ],
     [ "AddSpecialPresets", "class_canvas_size_toolbar_section.html#ad376ae042eae9712eb76503e051e101a", null ],
-    [ "GetCustomSizeIndex", "class_canvas_size_toolbar_section.html#ac8fa649eeb99029839deb9d6fdd06b1a", null ],
     [ "GetPresetIndexFromSize", "class_canvas_size_toolbar_section.html#ae15f9f3a8be2b3e149f0509af00d4a37", null ],
     [ "HandleIndexChanged", "class_canvas_size_toolbar_section.html#a2fddd2cda92e99404b144817b81d0832", null ],
-    [ "IndexToString", "class_canvas_size_toolbar_section.html#a86e531de15065d6c018c1d80a68e2785", null ],
     [ "InitCanvasSizePresets", "class_canvas_size_toolbar_section.html#a7897ee8da8aac5f61f1960f7684ddab0", null ],
-    [ "InitWidgets", "class_canvas_size_toolbar_section.html#aef3045e89d103c332f7bebd536d3defa", null ],
     [ "LineEditHeightEditingFinished", "class_canvas_size_toolbar_section.html#af431e3fabbdb52f910c8aef85cdf9f7d", null ],
     [ "LineEditWidthEditingFinished", "class_canvas_size_toolbar_section.html#ae143e807efdec8e49560143893da9591", null ],
     [ "OnComboBoxIndexChanged", "class_canvas_size_toolbar_section.html#a7ec2cfdba07ef96e7b239c90518ceac1", null ],
@@ -19,18 +13,5 @@ var class_canvas_size_toolbar_section =
     [ "SetCustomCanvasSize", "class_canvas_size_toolbar_section.html#a4f45eef2de2db57f3e1ead39bd7b0dac", null ],
     [ "SetIndex", "class_canvas_size_toolbar_section.html#a1013ff534a27088941d7420c3afdf988", null ],
     [ "SetInitialResolution", "class_canvas_size_toolbar_section.html#a72b1c415d9606928924dd6637fa5eda8", null ],
-    [ "ToggleLineEditBoxes", "class_canvas_size_toolbar_section.html#a40781063fcbaeacb92f39aee67eb2add", null ],
-    [ "m_canvasDelimiterAction", "class_canvas_size_toolbar_section.html#a716683ff5d92896ab3bc03761d7714c2", null ],
-    [ "m_canvasHeightAction", "class_canvas_size_toolbar_section.html#a7fca3d8ef79fe30430a17d04bc760151", null ],
-    [ "m_canvasSizePresets", "class_canvas_size_toolbar_section.html#a9b5975041b2d1dafb336a37f213e8cf8", null ],
-    [ "m_canvasWidthAction", "class_canvas_size_toolbar_section.html#af8f247214ce60533e1c35f2c8f523c4d", null ],
-    [ "m_combobox", "class_canvas_size_toolbar_section.html#ac525269a60c03dae34e6bfe43f9702e6", null ],
-    [ "m_comboIndex", "class_canvas_size_toolbar_section.html#a3a6ce235fa0bad908668c8693fbc941d", null ],
-    [ "m_editorWindow", "class_canvas_size_toolbar_section.html#a65e70770425e439b6b3e7f271f84811d", null ],
-    [ "m_isChangeUndoable", "class_canvas_size_toolbar_section.html#abcae11955686695649193c91c29a5c73", null ],
-    [ "m_labelCustomSizeDelimiter", "class_canvas_size_toolbar_section.html#af98d5edee3e4a1443f9031a4ba96a0f8", null ],
-    [ "m_lineEditCanvasHeight", "class_canvas_size_toolbar_section.html#aefae8e1f7185f1944ad04a6e9df6f9f7", null ],
-    [ "m_lineEditCanvasHeightConnection", "class_canvas_size_toolbar_section.html#a7e9e075d4840ff28c33c3416f2f24825", null ],
-    [ "m_lineEditCanvasWidth", "class_canvas_size_toolbar_section.html#a06c9d1246002ae3401f555ecad6ce4b7", null ],
-    [ "m_lineEditCanvasWidthConnection", "class_canvas_size_toolbar_section.html#afce1a9f247cca234ae2c55fb97f714fa", null ]
+    [ "ToggleLineEditBoxes", "class_canvas_size_toolbar_section.html#a40781063fcbaeacb92f39aee67eb2add", null ]
 ];

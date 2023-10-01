@@ -1,6 +1,5 @@
 var class_a_z_1_1_render_1_1_frame_capture_requests =
 [
-    [ "~FrameCaptureRequests", "class_a_z_1_1_render_1_1_frame_capture_requests.html#aed26652b42e8849b98b1377517f26891", null ],
     [ "CanCapture", "class_a_z_1_1_render_1_1_frame_capture_requests.html#ab2c401bb5e9b5146929726970936ce6d", null ],
     [ "CapturePassAttachment", "class_a_z_1_1_render_1_1_frame_capture_requests.html#a7161dd4533ccbf7a4f1a24f0a5d8f8a4", null ],
     [ "CapturePassAttachmentWithCallback", "class_a_z_1_1_render_1_1_frame_capture_requests.html#a43e65703cc08b4fa6274959a8741f156", null ],

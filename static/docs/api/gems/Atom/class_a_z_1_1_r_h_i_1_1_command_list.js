@@ -1,6 +1,6 @@
 var class_a_z_1_1_r_h_i_1_1_command_list =
 [
-    [ "SubmitRange", "struct_a_z_1_1_r_h_i_1_1_command_list_1_1_submit_range.html", "struct_a_z_1_1_r_h_i_1_1_command_list_1_1_submit_range" ],
+    [ "SubmitRange", "struct_a_z_1_1_r_h_i_1_1_command_list_1_1_submit_range.html", null ],
     [ "BeginPredication", "class_a_z_1_1_r_h_i_1_1_command_list.html#a7755b80905c0ccbd8bb1a633188e0ffd", null ],
     [ "BuildBottomLevelAccelerationStructure", "class_a_z_1_1_r_h_i_1_1_command_list.html#aa2ac0f6d8a78de551a7b3519bb150df2", null ],
     [ "BuildTopLevelAccelerationStructure", "class_a_z_1_1_r_h_i_1_1_command_list.html#a921708706893a8c0d44e01edd6235d97", null ],
@@ -15,9 +15,9 @@ var class_a_z_1_1_r_h_i_1_1_command_list =
     [ "SetViewport", "class_a_z_1_1_r_h_i_1_1_command_list.html#a884bb22c35145fb507c5245586450ef0", null ],
     [ "SetViewports", "class_a_z_1_1_r_h_i_1_1_command_list.html#aa47cc8da38ef63e9d6704cf3a97c9e70", null ],
     [ "Submit", "class_a_z_1_1_r_h_i_1_1_command_list.html#a7c8bc76f81f048cd1eae0345acfc4723", null ],
-    [ "Submit", "class_a_z_1_1_r_h_i_1_1_command_list.html#a7f54d6b051f02f02b2cf78584a168dfa", null ],
     [ "Submit", "class_a_z_1_1_r_h_i_1_1_command_list.html#a4fc77b943d75a4f06662882ab1f3f25f", null ],
     [ "Submit", "class_a_z_1_1_r_h_i_1_1_command_list.html#a96a9a56a58a1094d0100bece72c4acf1", null ],
+    [ "Submit", "class_a_z_1_1_r_h_i_1_1_command_list.html#a7f54d6b051f02f02b2cf78584a168dfa", null ],
     [ "ValidateSubmitIndex", "class_a_z_1_1_r_h_i_1_1_command_list.html#ac3b65315ee62eac56b709094813a9e7c", null ],
     [ "ValidateTotalSubmits", "class_a_z_1_1_r_h_i_1_1_command_list.html#a71b35d9ec658fd41bcd214323d16516c", null ],
     [ "DefaultShadingRateCombinators", "class_a_z_1_1_r_h_i_1_1_command_list.html#af05407cce41629f6be1d869587377a87", null ]

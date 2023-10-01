@@ -1,28 +1,28 @@
 var hierarchy =
 [
-    [ "Handler", null, [
+    [ "AssetBuilderSDK::AssetBuilderCommandBus::Handler", null, [
       [ "PythonAssetBuilder::PythonBuilderWorker", "class_python_asset_builder_1_1_python_builder_worker.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AssetBuilderSDK::JobCommandBus::Handler", null, [
       [ "PythonAssetBuilder::PythonBuilderWorker", "class_python_asset_builder_1_1_python_builder_worker.html", null ]
     ] ],
-    [ "BehaviorEBusHandler", null, [
+    [ "AZ::BehaviorEBusHandler", null, [
       [ "PythonAssetBuilder::PythonBuilderNotificationHandler", "class_python_asset_builder_1_1_python_builder_notification_handler.html", null ]
     ] ],
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "PythonAssetBuilder::PythonAssetBuilderSystemComponent", "class_python_asset_builder_1_1_python_asset_builder_system_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "PythonAssetBuilder::PythonAssetBuilderRequests", "class_python_asset_builder_1_1_python_asset_builder_requests.html", null ],
       [ "PythonAssetBuilder::PythonBuilderNotifications", "class_python_asset_builder_1_1_python_builder_notifications.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorPythonConsoleNotificationBus::Handler", null, [
       [ "PythonAssetBuilder::PythonBuilderMessageSink", "class_python_asset_builder_1_1_python_builder_message_sink.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "PythonAssetBuilderRequestBus::Handler", null, [
       [ "PythonAssetBuilder::PythonAssetBuilderSystemComponent", "class_python_asset_builder_1_1_python_asset_builder_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "PythonBuilderNotificationBus::Handler", null, [
       [ "PythonAssetBuilder::PythonBuilderNotificationHandler", "class_python_asset_builder_1_1_python_builder_notification_handler.html", null ]
     ] ]
 ];

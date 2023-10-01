@@ -1,25 +1,10 @@
 var class_a_z_1_1_d_x12_1_1_descriptor_pool =
 [
-    [ "DescriptorPool", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a073dc7f317703cacd5c12f8b3492813b", null ],
-    [ "~DescriptorPool", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a0c9e42b5e63b7e2db09486ca4a882c94", null ],
     [ "AllocateHandle", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#abcc917bae44f17b499b1a1508919fe8d", null ],
     [ "AllocateTable", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#ad3ad9d30723b118f234400c44bf35992", null ],
-    [ "ClearAllocator", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a745e2aa77c880c8d30296445d60c1d0d", null ],
-    [ "CloneAllocator", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#aa632c023ccb480f138d8a3451c06f8b6", null ],
     [ "GarbageCollect", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a172093e9d1affed11c2cb8847751a7ee", null ],
-    [ "GetAllocator", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a20453520d21d59b440453b6928eccb44", null ],
-    [ "GetCpuPlatformHandle", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#aaecad80cdc626996d224ed4f6622950c", null ],
-    [ "GetCpuPlatformHandleForTable", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#abeadd8a19b66e25284b6f1c962a30fd4", null ],
-    [ "GetGpuPlatformHandle", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#aeef1a0d67d2c61d546961f9342c0a985", null ],
-    [ "GetGpuPlatformHandleForTable", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a11bfbaba1ea4b2b437d72cabe9d6d44e", null ],
-    [ "GetPlatformHeap", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a9147a93b78e096f0a80d76e396429f5a", null ],
     [ "Init", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a4f04cb9a52a7990aa3d767cc51656cc5", null ],
     [ "InitPooledRange", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a987291991c1d1346d73fb3e27d5e3906", null ],
     [ "ReleaseHandle", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#af84dac25af555c26e22e59ae0d8a18a0", null ],
-    [ "ReleaseTable", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a6c8b9da560da074e344992f8dfe1d51b", null ],
-    [ "m_cpuStart", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a68837d137edb5c1b7cb5af61cadb3f78", null ],
-    [ "m_desc", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a9b9d917d1fcf9d2974f89d7255ad61a1", null ],
-    [ "m_gpuStart", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a17b0a1d8bc907fe3ccf116a218d2197e", null ],
-    [ "m_mutex", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a0d4f2fb838b57220361ad1b87d76ab00", null ],
-    [ "m_stride", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a8361b77bbcaedb055eb796ce191ffe13", null ]
+    [ "ReleaseTable", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html#a6c8b9da560da074e344992f8dfe1d51b", null ]
 ];
