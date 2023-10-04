@@ -12,7 +12,7 @@ If you wish to learn how to prepare projects manually for Windows, please consul
 {{< /note >}}
 
 ## Prerequisites
-To make best use of the `export-project` command, it is recommended to have a project with at least one starting scene, and all necessary seedlist files prepared. AssetProcessor Registry file settings may need to be tweaked. To learn how to set this up, please consult the following page: [Creating a Project Game Release Layout for Windows, section: Set the Starting Level](windows-release-builds/#set-the-starting-level).
+To make best use of the `export-project` command, it is recommended to have a project with at least one starting scene, and all necessary seedlist files prepared. AssetProcessor Registry file settings may need to be tweaked. To learn how to set this up, please consult the following page: [Creating a Project Game Release Layout for Windows, section: Set the Starting Level](../windows-release-builds/#set-the-starting-level).
 
 To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/overview/).
 
