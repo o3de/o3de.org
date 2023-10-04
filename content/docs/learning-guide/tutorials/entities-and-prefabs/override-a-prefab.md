@@ -39,14 +39,21 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 
 ## Enable prefab overrides
 
-To enable prefab overrides in Entity Outliner, create a settings registry file with the following contents:
+To enable prefab overrides in Entity Outliner, you must set the `ed_enableOutlinerOverrideManagement` console variable (CVar) to "true":
+
+1. In **O3DE Editor**, from the **Tools** menu, choose **Console Variables**.
+2. In Console Variables editor, set the `ed_enableOutlinerOverrideManagement` flag to true. It can be easily found by typing `outliner` into the filter box:
+
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/outliner-prefab-prefs.png" width="700" alt="CVar settings to enable Outliner override support" >}}
+
+Alternatively, if you want the flag to be automatically enabled when O3DE Editor starts, you can create a settings registry file with the following contents:
 
 ```JSON
 {
     "O3DE": {
-        "Preferences": {
-            "Prefabs": {
-                "EnableOutlinerOverrideManagement": true
+        "Autoexec": {
+            "ConsoleCommands": {
+                "ed_enableOutlinerOverrideManagement": true
             }
         }
     }
@@ -57,10 +64,6 @@ An example of such file exists as a project-specific override in the AutomatedTe
 
 {{< note >}}
 It is recommended to add your `editorpreferences.setreg` file to the `<project-path>/user/Registry` directory as a user-specific override. Files in the user directory are ignored by git and won't be tracked for changes.
-{{< /note >}}
-
-{{< note >}}
-Starting in 23.05 release, prefab override management in Entity Outliner is enabled by default.
 {{< /note >}}
 
 You can apply the following types of overrides to prefabs:
@@ -125,9 +128,11 @@ Prefab override management in Entity Inspector is developed based on the new *[D
 
 ### Enable prefab overrides in Entity Inspector
 
-First, you need to enable the new DPE feature:
+To enable prefab override editing in the Inspector, you'll need to enable both the new DPE-based Inspector and the override management options.
 1. In **O3DE Editor**, from the **Tools** menu, choose **Console Variables**.
-1. In Console Variables editor, set the `ed_enableDPE` flag to true.
+2. In Console Variables editor, set the `ed_enableDPEInspector` and `ed_enableInspectorOverrideManagement` flags to true. They can be easily found by typing `inspector` into the filter box:
+
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/inspector-prefab-prefs.png" width="700" alt="CVar settings to enable Inspector override support" >}}
 
 Alternatively, if you want the flag to be automatically enabled when O3DE Editor starts, you can create a settings registry file with the following contents:
 
@@ -136,25 +141,8 @@ Alternatively, if you want the flag to be automatically enabled when O3DE Editor
     "O3DE": {
         "Autoexec": {
             "ConsoleCommands": {
-                "ed_enableDPE": true
-            }
-        }
-    }
-}
-```
-
-{{< note >}}
-If you manually enable or disable the DPE through the Console Variables editor, you might need to close and reopen the Entity Inspector to take effect.
-{{< /note >}}
-
-Second, to enable prefab overrides in inspector, you can append to the settings registry file with the following contents:
-
-```json
-{
-    "O3DE": {
-        "Preferences": {
-            "Prefabs": {
-                "EnableInspectorOverrideManagement": true
+                "ed_enableDPEInspector": true,
+                "ed_enableInspectorOverrideManagement": true
             }
         }
     }
