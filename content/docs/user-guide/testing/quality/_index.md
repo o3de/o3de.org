@@ -88,7 +88,7 @@ O3DE includes a single quality group `q_general` in `Registry/quality.setreg` th
 }
 ```
 
-The Atom Feature Common Gem also includes a `Registry/quality.setreg` file that defines the quality groups `q_graphics` and `q_shadows` for graphics and demonstrates how create settings that change the quality level for other groups. 
+The Atom Feature Common Gem also includes a `Registry/quality.setreg` file that defines the quality groups `q_graphics` and `q_shadows` for graphics and demonstrates how to create settings that change the quality level for other groups. 
 
 #### O3DE/Gems/Atom/Feature/Common/Registry/quality.setreg
 ```json
@@ -146,7 +146,7 @@ Quality levels within each group JSON object should be defined in the following 
         "Quality": {
             "Groups": {
                 "q_general": {
-                    "Levels": [ // quality level names
+                    "Levels": [ // quality level names should be a single word
                         "Low",
                         "Medium",
                         "High",
@@ -160,7 +160,7 @@ Quality levels within each group JSON object should be defined in the following 
 }
 ```
 
-Each group can have it's own quality levels defined with custom names and number.  Providing quality level names other than `Low`, `High`, etc. can be useful when defining levels for settings that aren't necessarily better or worse, for example you may have settings for power consumption levels like `High Performance`, `Balanced`, `Energy Efficient`. 
+Each group can have it's own quality levels defined with custom names and number.  Providing quality level names other than `Low`, `High`, etc. can be useful when defining levels for settings that aren't necessarily better or worse, for example you may have settings for power consumption levels like `HighPerformance`, `Balanced`, `EnergyEfficient`. 
 
 ## Customizing quality levels for your project
 
