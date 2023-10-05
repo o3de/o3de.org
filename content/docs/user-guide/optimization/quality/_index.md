@@ -31,10 +31,10 @@ Quality group objects should be defined at the path `O3DE/Quality/Groups` and ha
                         "High",
                         ...
                     ],
-                    "Default": 3, // default quality level index in the Levels array
+                    "Default": 2, // default quality level index in the Levels array
                     "Settings": { // console variable settings for each quality level
                         // an array can be provided with the setting value for each level
-                        "r_example":[32, 64, 128, 512],
+                        "r_example":[32, 64, 128],
                         // a single value can be provided to be used by every quality level
                         "r_example2": 2,
                         // if a setting doesn't have values defined for all quality levels,

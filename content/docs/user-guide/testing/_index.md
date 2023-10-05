@@ -1,10 +1,10 @@
 ---
-title: "Testing and optimization"
+title: "Testing"
 date: 2021-03-02T00:23:56-05:00
 weight: 1300
 ---
 
-Test automation is the process of writing small snippets of code (tests) to verify the desired functionality of Open 3D Engine extensions and tools that you create.  Optimization is the process of making code perform and use resources in the most efficient way.
+Test automation is the process of writing small snippets of code (tests) to verify the desired functionality of Open 3D Engine extensions and tools that you create.
 
 {{< important >}}
 Contributors to the O3DE Project are required to write tests for their features, following the standards set by the [Open 3D Foundation Testing Special Interest Group](https://github.com/o3de/sig-testing). If you plan to contribute, make sure that you're familiar with project test standards as well as the frameworks.
@@ -33,9 +33,3 @@ EditorPythonTestTools are a collection of test tools focused around accessing Ed
 ### LyTestTools
 
 The [LyTestTools](/docs/user-guide/testing/lytesttools/) are testing productivity tools for writing and debugging tests that across different environments. This includes (but isn't limited to) environment manipulation, creating/collecting images and logs, and starting project launchers.
-
-## Optimization
-
-### Quality Settings
-
-The [Quality system](/docs/user-guide/testing/quality/) gives you the ability to define quality levels and console variable settings to use for each quality level. Applications typically run on different hardware and need different settings to achieve the best performance on each device and accomodate user preferences.
