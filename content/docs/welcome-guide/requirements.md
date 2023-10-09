@@ -179,26 +179,26 @@ cmake --version
 
 ### Clang
 
-O3DE requires [Clang](https://clang.llvm.org/get_started.html) to compile all of the native C++ code.
+O3DE requires [Clang](https://clang.llvm.org/get_started.html) and the [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/) to compile all of the native C++ code.
 
-Install Clang using the instructions for the version of Ubuntu that you have installed:
+Install Clang and the GNU C++ Library using the instructions for the version of Ubuntu that you have installed:
 
 {{< tabs name="Clang install" >}}
 {{% tab name="20.04 LTS" %}}
 
-The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a version as part of the install command.
+The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a version as part of the install command. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
 
 ```shell
-sudo apt install clang-12 
+sudo apt install libstdc++-9-dev clang-12
 ```
 
 {{% /tab %}}
 {{% tab name="22.04 LTS" %}}
 
-You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14.
+You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
 
 ```shell
-sudo apt install clang
+sudo apt install libstdc++-12-dev clang
 ```
 
 {{% /tab %}}
@@ -231,7 +231,7 @@ O3DE also requires some additional library packages to be installed:
 You can download and install these packages through `apt`.
 
 ```shell
-sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libpcre2-16-0 zlib1g-dev mesa-common-dev libunwind-dev libzstd-dev libstdc++-12-dev
+sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libpcre2-16-0 zlib1g-dev mesa-common-dev libunwind-dev libzstd-dev
 ```
 
 ### Ninja Build System (Optional)
