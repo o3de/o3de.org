@@ -1,6 +1,7 @@
 var struct_r_o_s2_1_1_lidar_template =
 [
     [ "NoiseParameters", "struct_r_o_s2_1_1_lidar_template_1_1_noise_parameters.html", "struct_r_o_s2_1_1_lidar_template_1_1_noise_parameters" ],
+    [ "m_is2D", "struct_r_o_s2_1_1_lidar_template.html#a52243759f6e2cef3d564fb5a7219c6da", null ],
     [ "m_layers", "struct_r_o_s2_1_1_lidar_template.html#a248a1511ea1d7089c1baa07fde4cc7e7", null ],
     [ "m_maxHAngle", "struct_r_o_s2_1_1_lidar_template.html#a1998f025dc933d7c6291b100400490f6", null ],
     [ "m_maxRange", "struct_r_o_s2_1_1_lidar_template.html#a1efb49bb8efa45447c9c0dfc4912c000", null ],

@@ -65,14 +65,12 @@ $(document).ready(function(){initNavTree('class_r_o_s2_1_1_colliders_maker.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb79c6d3450845db00b7da74ba5bf9eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_colliders_maker.html#adb79c6d3450845db00b7da74ba5bf9eb">CollidersMaker</a> (const AZStd::shared_ptr&lt; Utils::UrdfAssetMap &gt; &amp;urdfAssetsMapping)</td></tr>
-<tr class="separator:adb79c6d3450845db00b7da74ba5bf9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6bb615efc2b12b46137cf9336bc4e79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_colliders_maker.html#ab6bb615efc2b12b46137cf9336bc4e79">CollidersMaker</a> (const AZStd::shared_ptr&lt; Utils::UrdfAssetMap &gt; &amp;sdfAssetsMapping)</td></tr>
+<tr class="separator:ab6bb615efc2b12b46137cf9336bc4e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7efc6073e127298a63d57c5d73856200"><td class="memItemLeft" align="right" valign="top"><a id="a7efc6073e127298a63d57c5d73856200" name="a7efc6073e127298a63d57c5d73856200"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CollidersMaker</b> (const <a class="el" href="class_r_o_s2_1_1_colliders_maker.html">CollidersMaker</a> &amp;other)=delete</td></tr>
 <tr class="memdesc:a7efc6073e127298a63d57c5d73856200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevent copying of existing <a class="el" href="class_r_o_s2_1_1_colliders_maker.html" title="Populates a given entity with all the contents of the &lt;collider&gt; tag in robot description.">CollidersMaker</a>. <br /></td></tr>
 <tr class="separator:a7efc6073e127298a63d57c5d73856200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72c3370609e8d78445695a674dbdfdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_colliders_maker.html#ad72c3370609e8d78445695a674dbdfdb">BuildColliders</a> (const sdf::Link *link)</td></tr>
-<tr class="separator:ad72c3370609e8d78445695a674dbdfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa33788cb7eaf7776d5d89b42d4cbcda1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_colliders_maker.html#aa33788cb7eaf7776d5d89b42d4cbcda1">AddColliders</a> (const sdf::Model &amp;model, const sdf::Link *link, AZ::EntityId entityId)</td></tr>
 <tr class="separator:aa33788cb7eaf7776d5d89b42d4cbcda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd47f403dadcd6f82f833b2002994393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_o_s2_1_1_colliders_maker.html#abd47f403dadcd6f82f833b2002994393">ProcessMeshes</a> (BuildReadyCallback notifyBuildReadyCb)</td></tr>
@@ -81,8 +79,8 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Populates a given entity with all the contents of the &lt;collider&gt; tag in robot description. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adb79c6d3450845db00b7da74ba5bf9eb" name="adb79c6d3450845db00b7da74ba5bf9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb79c6d3450845db00b7da74ba5bf9eb">&#9670;&#160;</a></span>CollidersMaker()</h2>
+<a id="ab6bb615efc2b12b46137cf9336bc4e79" name="ab6bb615efc2b12b46137cf9336bc4e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6bb615efc2b12b46137cf9336bc4e79">&#9670;&#160;</a></span>CollidersMaker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -91,14 +89,14 @@ Public Member Functions</h2></td></tr>
           <td class="memname">ROS2::CollidersMaker::CollidersMaker </td>
           <td>(</td>
           <td class="paramtype">const AZStd::shared_ptr&lt; Utils::UrdfAssetMap &gt; &amp;&#160;</td>
-          <td class="paramname"><em>urdfAssetsMapping</em></td><td>)</td>
+          <td class="paramname"><em>sdfAssetsMapping</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construct the class based on URDF asset mapping. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Construct the class based on SDF asset mapping. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">urdfAssetsMapping</td><td>a prepared mapping of Assets used by the source URDF. </td></tr>
+    <tr><td class="paramname">sdfAssetsMapping</td><td>a prepared mapping of Assets used by the source URDF/SDF. </td></tr>
   </table>
   </dd>
 </dl>
@@ -139,33 +137,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Add zero, one or many collider elements (depending on link content). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">model</td><td>An SDF model object provided by libsdformat from a parsed URDF </td></tr>
-    <tr><td class="paramname">link</td><td>A parsed URDF tree link node which could hold information about colliders. </td></tr>
+    <tr><td class="paramname">model</td><td>An SDF model object provided by libsdformat from a parsed URDF/SDF </td></tr>
+    <tr><td class="paramname">link</td><td>A parsed SDF tree link node which could hold information about colliders. </td></tr>
     <tr><td class="paramname">entityId</td><td>A non-active entity which will be affected. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ad72c3370609e8d78445695a674dbdfdb" name="ad72c3370609e8d78445695a674dbdfdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72c3370609e8d78445695a674dbdfdb">&#9670;&#160;</a></span>BuildColliders()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ROS2::CollidersMaker::BuildColliders </td>
-          <td>(</td>
-          <td class="paramtype">const sdf::Link *&#160;</td>
-          <td class="paramname"><em>link</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Builds .pxmeshes for every collider in link collider mesh. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">link</td><td>A parsed URDF tree link node which could hold information about colliders. </td></tr>
   </table>
   </dd>
 </dl>
@@ -205,7 +179,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="class_r_o_s2_1_1_colliders_maker.html">CollidersMaker</a></li>
-    <li class="footer">Generated on Sun Oct 1 2023 13:33:25 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Mon Oct 9 2023 13:49:35 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

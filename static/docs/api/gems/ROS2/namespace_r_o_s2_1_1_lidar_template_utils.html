@@ -64,6 +64,10 @@ $(document).ready(function(){initNavTree('namespace_r_o_s2_1_1_lidar_template_ut
 Functions</h2></td></tr>
 <tr class="memitem:ab21456dd301a4e1bdfc73f19086fde5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_r_o_s2_1_1_lidar_template.html">LidarTemplate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_lidar_template_utils.html#ab21456dd301a4e1bdfc73f19086fde5d">GetTemplate</a> (LidarTemplate::LidarModel model)</td></tr>
 <tr class="separator:ab21456dd301a4e1bdfc73f19086fde5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bfdd8926ea12e375f73b231c1b9eb7"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; LidarTemplate::LidarModel &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_lidar_template_utils.html#a55bfdd8926ea12e375f73b231c1b9eb7">Get2DModels</a> ()</td></tr>
+<tr class="separator:a55bfdd8926ea12e375f73b231c1b9eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2426159dbfeedba99f961b3029a6a0"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; LidarTemplate::LidarModel &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_lidar_template_utils.html#a1d2426159dbfeedba99f961b3029a6a0">Get3DModels</a> ()</td></tr>
+<tr class="separator:a1d2426159dbfeedba99f961b3029a6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7c9f71a1b1a584627fa28b6a70dbe70"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_lidar_template_utils.html#ad7c9f71a1b1a584627fa28b6a70dbe70">TotalPointCount</a> (const <a class="el" href="struct_r_o_s2_1_1_lidar_template.html">LidarTemplate</a> &amp;t)</td></tr>
 <tr class="separator:ad7c9f71a1b1a584627fa28b6a70dbe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae045838d3fffa31e4a4f0307fccff6b2"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_lidar_template_utils.html#ae045838d3fffa31e4a4f0307fccff6b2">PopulateRayRotations</a> (const <a class="el" href="struct_r_o_s2_1_1_lidar_template.html">LidarTemplate</a> &amp;lidarTemplate)</td></tr>
@@ -74,6 +78,42 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class for Lidar model computations. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a55bfdd8926ea12e375f73b231c1b9eb7" name="a55bfdd8926ea12e375f73b231c1b9eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55bfdd8926ea12e375f73b231c1b9eb7">&#9670;&#160;</a></span>Get2DModels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::vector&lt; LidarTemplate::LidarModel &gt; ROS2::LidarTemplateUtils::Get2DModels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get all 2D lidar models. </p><dl class="section return"><dt>Returns</dt><dd>2D lidar models. </dd></dl>
+
+</div>
+</div>
+<a id="a1d2426159dbfeedba99f961b3029a6a0" name="a1d2426159dbfeedba99f961b3029a6a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2426159dbfeedba99f961b3029a6a0">&#9670;&#160;</a></span>Get3DModels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::vector&lt; LidarTemplate::LidarModel &gt; ROS2::LidarTemplateUtils::Get3DModels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get all 3D lidar models. </p><dl class="section return"><dt>Returns</dt><dd>3D lidar models. </dd></dl>
+
+</div>
+</div>
 <a id="ab21456dd301a4e1bdfc73f19086fde5d" name="ab21456dd301a4e1bdfc73f19086fde5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab21456dd301a4e1bdfc73f19086fde5d">&#9670;&#160;</a></span>GetTemplate()</h2>
 
@@ -191,7 +231,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="namespace_r_o_s2_1_1_lidar_template_utils.html">LidarTemplateUtils</a></li>
-    <li class="footer">Generated on Sun Oct 1 2023 13:33:25 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Mon Oct 9 2023 13:49:35 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

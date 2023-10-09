@@ -74,10 +74,10 @@ Functions</h2></td></tr>
 <tr class="separator:af82d24e714864ea68040b5f921bc4704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4343a6523febb1201060ef203bc76d6b"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_prefab_maker_utils.html#a4343a6523febb1201060ef203bc76d6b">MakeEntityName</a> (const AZStd::string &amp;rootName, const AZStd::string &amp;type, size_t index=0)</td></tr>
 <tr class="separator:a4343a6523febb1201060ef203bc76d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42f29c24741dcbe5903967d1c49fec61"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; <a class="el" href="struct_r_o_s2_1_1_utils_1_1_available_asset.html">Utils::AvailableAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_prefab_maker_utils.html#a42f29c24741dcbe5903967d1c49fec61">GetAssetFromPath</a> (const Utils::UrdfAssetMap &amp;urdfAssetsMapping, const AZStd::string &amp;urdfMeshPath)</td></tr>
-<tr class="separator:a42f29c24741dcbe5903967d1c49fec61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8140c607b697f2e1fc703b05448f876"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; <a class="el" href="struct_r_o_s2_1_1_utils_1_1_available_asset.html">Utils::AvailableAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_prefab_maker_utils.html#ad8140c607b697f2e1fc703b05448f876">GetAssetFromPath</a> (const Utils::UrdfAssetMap &amp;urdfAssetsMapping, const std::string &amp;urdfMeshPath)</td></tr>
-<tr class="separator:ad8140c607b697f2e1fc703b05448f876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c37c60cd384d1aed5c83a547a980b6"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; <a class="el" href="struct_r_o_s2_1_1_utils_1_1_available_asset.html">Utils::AvailableAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_prefab_maker_utils.html#ad1c37c60cd384d1aed5c83a547a980b6">GetAssetFromPath</a> (const Utils::UrdfAssetMap &amp;sdfAssetsMapping, const AZStd::string &amp;sdfMeshPath)</td></tr>
+<tr class="separator:ad1c37c60cd384d1aed5c83a547a980b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61cf77f0dd8f7296892549ebf54dd9d8"><td class="memItemLeft" align="right" valign="top">AZStd::optional&lt; <a class="el" href="struct_r_o_s2_1_1_utils_1_1_available_asset.html">Utils::AvailableAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_o_s2_1_1_prefab_maker_utils.html#a61cf77f0dd8f7296892549ebf54dd9d8">GetAssetFromPath</a> (const Utils::UrdfAssetMap &amp;sdfAssetsMapping, const std::string &amp;sdfMeshPath)</td></tr>
+<tr class="separator:a61cf77f0dd8f7296892549ebf54dd9d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Common utils for Prefab Maker classes. </p>
@@ -142,8 +142,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a42f29c24741dcbe5903967d1c49fec61" name="a42f29c24741dcbe5903967d1c49fec61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42f29c24741dcbe5903967d1c49fec61">&#9670;&#160;</a></span>GetAssetFromPath() <span class="overload">[1/2]</span></h2>
+<a id="ad1c37c60cd384d1aed5c83a547a980b6" name="ad1c37c60cd384d1aed5c83a547a980b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c37c60cd384d1aed5c83a547a980b6">&#9670;&#160;</a></span>GetAssetFromPath() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,13 +152,13 @@ Functions</h2></td></tr>
           <td class="memname">AZStd::optional&lt; <a class="el" href="struct_r_o_s2_1_1_utils_1_1_available_asset.html">Utils::AvailableAsset</a> &gt; ROS2::PrefabMakerUtils::GetAssetFromPath </td>
           <td>(</td>
           <td class="paramtype">const Utils::UrdfAssetMap &amp;&#160;</td>
-          <td class="paramname"><em>urdfAssetsMapping</em>, </td>
+          <td class="paramname"><em>sdfAssetsMapping</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>urdfMeshPath</em>&#160;</td>
+          <td class="paramname"><em>sdfMeshPath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -169,8 +169,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Get an Asset for a specified mesh given its path and mapping. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">urdfAssetsMapping</td><td>mapping of URDF assets. </td></tr>
-    <tr><td class="paramname">urdfMeshPath</td><td>a path to the mesh for which the Asset is requested. </td></tr>
+    <tr><td class="paramname">sdfAssetsMapping</td><td>mapping of SDF assets. </td></tr>
+    <tr><td class="paramname">sdfMeshPath</td><td>a path to the mesh for which the Asset is requested. </td></tr>
   </table>
   </dd>
 </dl>
@@ -178,8 +178,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8140c607b697f2e1fc703b05448f876" name="ad8140c607b697f2e1fc703b05448f876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8140c607b697f2e1fc703b05448f876">&#9670;&#160;</a></span>GetAssetFromPath() <span class="overload">[2/2]</span></h2>
+<a id="a61cf77f0dd8f7296892549ebf54dd9d8" name="a61cf77f0dd8f7296892549ebf54dd9d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cf77f0dd8f7296892549ebf54dd9d8">&#9670;&#160;</a></span>GetAssetFromPath() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,13 +188,13 @@ Functions</h2></td></tr>
           <td class="memname">AZStd::optional&lt; <a class="el" href="struct_r_o_s2_1_1_utils_1_1_available_asset.html">Utils::AvailableAsset</a> &gt; ROS2::PrefabMakerUtils::GetAssetFromPath </td>
           <td>(</td>
           <td class="paramtype">const Utils::UrdfAssetMap &amp;&#160;</td>
-          <td class="paramname"><em>urdfAssetsMapping</em>, </td>
+          <td class="paramname"><em>sdfAssetsMapping</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>urdfMeshPath</em>&#160;</td>
+          <td class="paramname"><em>sdfMeshPath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -203,7 +203,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get Asset from path. Version for std::string. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_r_o_s2_1_1_prefab_maker_utils.html#a42f29c24741dcbe5903967d1c49fec61">GetAssetFromPath</a>. </dd></dl>
+<p>Get Asset from path. Version for std::string. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_r_o_s2_1_1_prefab_maker_utils.html#ad1c37c60cd384d1aed5c83a547a980b6">GetAssetFromPath</a>. </dd></dl>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Functions</h2></td></tr>
 <p>Create an entity name from arguments. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rootName</td><td>root of entity's name. </td></tr>
-    <tr><td class="paramname">type</td><td>type of entity, depending on corresponding URDF tag. For example, "visual". </td></tr>
+    <tr><td class="paramname">type</td><td>type of entity, depending on corresponding SDF tag. For example, "visual". </td></tr>
     <tr><td class="paramname">index</td><td>index of entity, useful when multiple visuals or colliders are present for a single link. </td></tr>
   </table>
   </dd>
@@ -351,7 +351,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="namespace_r_o_s2_1_1_prefab_maker_utils.html">PrefabMakerUtils</a></li>
-    <li class="footer">Generated on Sun Oct 1 2023 13:33:25 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Mon Oct 9 2023 13:49:35 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

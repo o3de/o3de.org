@@ -106,6 +106,8 @@ LidarModel&#160;</td><td class="memItemRight" valign="bottom"><b>m_model</b></td
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
 <tr class="memdesc:ad7450c4d2df7e1c6481b9532a71980ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of lidar template. <br /></td></tr>
 <tr class="separator:ad7450c4d2df7e1c6481b9532a71980ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52243759f6e2cef3d564fb5a7219c6da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_o_s2_1_1_lidar_template.html#a52243759f6e2cef3d564fb5a7219c6da">m_is2D</a> = false</td></tr>
+<tr class="separator:a52243759f6e2cef3d564fb5a7219c6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11c61a565a4da61c8899ce3b34bb123f"><td class="memItemLeft" align="right" valign="top"><a id="a11c61a565a4da61c8899ce3b34bb123f" name="a11c61a565a4da61c8899ce3b34bb123f"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_minHAngle</b> = 0.0f</td></tr>
 <tr class="memdesc:a11c61a565a4da61c8899ce3b34bb123f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum horizontal angle (altitude of the ray), in degrees. <br /></td></tr>
@@ -150,7 +152,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_showNoiseConfig</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration reflecting a specific Lidar model. This is meant to capture differences between different Lidars available on the market. </p><dl class="section note"><dt>Note</dt><dd>Current implementation is simplified. Rays in real lidars are often not uniformly distributed among angular range, there is noise etc. </dd></dl>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a52243759f6e2cef3d564fb5a7219c6da" name="a52243759f6e2cef3d564fb5a7219c6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52243759f6e2cef3d564fb5a7219c6da">&#9670;&#160;</a></span>m_is2D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ROS2::LidarTemplate::m_is2D = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether the template is for a 2D Lidar. This causes vertical parameters of the Lidar to be unmodifiable (m_minVAngle, m_maxVAngle, m_layers). </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/ROS2/Code/Source/Lidar/LidarTemplate.h</li>
 </ul>
 </div><!-- contents -->
@@ -159,7 +177,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_showNoiseConfig</b>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ROS2</b></li><li class="navelem"><a class="el" href="struct_r_o_s2_1_1_lidar_template.html">LidarTemplate</a></li>
-    <li class="footer">Generated on Sun Oct 1 2023 13:33:25 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Mon Oct 9 2023 13:49:35 for Open 3D Engine ROS2 Gem API Reference by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

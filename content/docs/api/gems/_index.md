@@ -95,6 +95,7 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [VideoPlaybackFramework](/docs/api/gems/VideoPlaybackFramework)
 * [VirtualGamepad](/docs/api/gems/VirtualGamepad)
 * [WarehouseAssets](/docs/api/gems/WarehouseAssets)
+* [WarehouseAutomation](/docs/api/gems/WarehouseAutomation)
 * [WarehouseSample](/docs/api/gems/WarehouseSample)
 * [WhiteBox](/docs/api/gems/WhiteBox)
 * [XR](/docs/api/gems/XR)
