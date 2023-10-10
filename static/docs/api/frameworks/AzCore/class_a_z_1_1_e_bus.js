@@ -10,7 +10,6 @@ var class_a_z_1_1_e_bus =
     [ "CallstackEntry", "class_a_z_1_1_e_bus.html#a858f8c09afd4f76a1940fb8060e5b5a1", null ],
     [ "CallstackTrackerLockGuardTemplate", "class_a_z_1_1_e_bus.html#a0ba70bbdbb32464d03e096e5f0f2db83", null ],
     [ "ConnectionPolicy", "class_a_z_1_1_e_bus.html#abec9cebf391706c4531eccd24ee07cf4", null ],
-    [ "ConnectLockGuard", "class_a_z_1_1_e_bus.html#a6a25fd37f12aef9dc73f026d8150f59f", null ],
     [ "ConnectLockGuardTemplate", "class_a_z_1_1_e_bus.html#a6f25d043cc626488d270a9c6e2ca2051", null ],
     [ "DispatchLockGuardTemplate", "class_a_z_1_1_e_bus.html#a19f7d4d10d361364e6444bf051c40b87", null ],
     [ "EventQueueMutexType", "class_a_z_1_1_e_bus.html#aeb4916cdd22a7458433645d781a6f570", null ],
@@ -36,7 +35,6 @@ var class_a_z_1_1_e_bus =
     [ "HasHandlers", "class_a_z_1_1_e_bus.html#ac7dced274d351314898c455c850a0294", null ],
     [ "HasHandlers", "class_a_z_1_1_e_bus.html#ae660e0fb2adc517c243c512caf4e5bf9", null ],
     [ "HasReentrantEBusUseThisThread", "class_a_z_1_1_e_bus.html#ab666800ef63443fc37e2179b32f7a59e", null ],
-    [ "IsInDispatch", "class_a_z_1_1_e_bus.html#add1242e239f2dcaf273b4da1f7ae2c44", null ],
     [ "IsInDispatchThisThread", "class_a_z_1_1_e_bus.html#a3f8002f85a570382d5431bf83a058a05", null ],
     [ "EnableEventQueue", "class_a_z_1_1_e_bus.html#a95b9e7e9c5b00de0356853b8be5c3649", null ],
     [ "HasId", "class_a_z_1_1_e_bus.html#a75ef215ad6098178ea063ab3d53449af", null ]

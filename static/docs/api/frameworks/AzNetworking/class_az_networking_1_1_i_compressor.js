@@ -1,6 +1,5 @@
 var class_az_networking_1_1_i_compressor =
 [
-    [ "~ICompressor", "class_az_networking_1_1_i_compressor.html#a811b2ac80f5b15a439639a622dc832bf", null ],
     [ "Compress", "class_az_networking_1_1_i_compressor.html#a6240d78f4ed81ae0cd3633daaae464ec", null ],
     [ "Decompress", "class_az_networking_1_1_i_compressor.html#a3c2c4f8d982c8c16912f847759c5d8db", null ],
     [ "GetMaxChunkSize", "class_az_networking_1_1_i_compressor.html#a81681fb11da05ffc4e3549bbb3fa98c7", null ],

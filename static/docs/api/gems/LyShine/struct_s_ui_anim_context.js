@@ -1,7 +1,5 @@
 var struct_s_ui_anim_context =
 [
-    [ "SUiAnimContext", "struct_s_ui_anim_context.html#a9ed6780f21e89e627ddac2c1d7d3743a", null ],
-    [ "Serialize", "struct_s_ui_anim_context.html#a85bbf4ca062441e4a77f7ba25c3e6115", null ],
     [ "bForcePlay", "struct_s_ui_anim_context.html#a3aa90e2140cce82e2cdc2502512380f0", null ],
     [ "bResetting", "struct_s_ui_anim_context.html#a28b948ec7eee633e63da2e7872b9d900", null ],
     [ "bSingleFrame", "struct_s_ui_anim_context.html#ad182c145cdbe26cb6bc65ae008b0d73f", null ],

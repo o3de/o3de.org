@@ -1,7 +1,5 @@
 var class_phys_x_1_1_editor_joint_limit_base =
 [
-    [ "AZ_CLASS_ALLOCATOR", "class_phys_x_1_1_editor_joint_limit_base.html#af9d56d5c63a571360ae54f736edd430a", null ],
-    [ "AZ_TYPE_INFO", "class_phys_x_1_1_editor_joint_limit_base.html#ac6837c630c82ffe814f597c4213d808b", null ],
     [ "s_springMax", "class_phys_x_1_1_editor_joint_limit_base.html#a45f567a3bd0f5b0bea8b3685797eef95", null ],
     [ "s_springMin", "class_phys_x_1_1_editor_joint_limit_base.html#a3aa7445e1fdddeeec7f864a1bae12baa", null ],
     [ "s_toleranceMax", "class_phys_x_1_1_editor_joint_limit_base.html#a3d687f1c76fa0533725b69b737ca6807", null ],

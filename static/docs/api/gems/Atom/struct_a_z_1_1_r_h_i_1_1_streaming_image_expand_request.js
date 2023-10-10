@@ -1,6 +1,5 @@
 var struct_a_z_1_1_r_h_i_1_1_streaming_image_expand_request =
 [
-    [ "StreamingImageExpandRequest", "struct_a_z_1_1_r_h_i_1_1_streaming_image_expand_request.html#a94bcc39e158f6f3068475e926c932f7d", null ],
     [ "m_completeCallback", "struct_a_z_1_1_r_h_i_1_1_streaming_image_expand_request.html#ae02ba796c520b12aa46b9aae909ad79f", null ],
     [ "m_image", "struct_a_z_1_1_r_h_i_1_1_streaming_image_expand_request.html#a1c2ec5075ff5c1c478e7cfa8c038c110", null ],
     [ "m_mipSlices", "struct_a_z_1_1_r_h_i_1_1_streaming_image_expand_request.html#ae2bc503b3f44e7ae326c933bde2c01ac", null ],

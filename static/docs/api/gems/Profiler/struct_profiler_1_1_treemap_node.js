@@ -1,6 +1,5 @@
 var struct_profiler_1_1_treemap_node =
 [
-    [ "ImGuiTreemapImpl", "struct_profiler_1_1_treemap_node.html#a13eeeb26107365a39960bcc89fe6629f", null ],
     [ "m_children", "struct_profiler_1_1_treemap_node.html#ad6393c857e8aa8312b71792a872326f5", null ],
     [ "m_group", "struct_profiler_1_1_treemap_node.html#a589d13d03af69a78c6492d8e31c4bb10", null ],
     [ "m_name", "struct_profiler_1_1_treemap_node.html#a9593f015425bfe23539a4c556ff0d77c", null ],

@@ -1,26 +1,9 @@
 var class_a_z_1_1_shared_memory =
 [
-    [ "MemoryGuard", "class_a_z_1_1_shared_memory.html#a797ec5363a09bf71c4ef5c2283b3bca4", null ],
-    [ "Platform", "class_a_z_1_1_shared_memory.html#a6644ffe3775ee589c6fab44832cfebd1", null ],
-    [ "SharedMemory", "class_a_z_1_1_shared_memory.html#ae016790c5aa3fcc95bec4d082cdc5aa9", null ],
-    [ "SharedMemory", "class_a_z_1_1_shared_memory.html#a9325c2d2369cb3f28e2dcf5e02f6d8ed", null ],
-    [ "~SharedMemory", "class_a_z_1_1_shared_memory.html#ae7d1be7fd0337f7723d65e0420147d95", null ],
     [ "Clear", "class_a_z_1_1_shared_memory.html#a06599901cd065896d365217e01bf1547", null ],
-    [ "Close", "class_a_z_1_1_shared_memory.html#a691aa0d38bb77920b1c6a34f2d40b109", null ],
     [ "Create", "class_a_z_1_1_shared_memory.html#a94b961e47ceb05b820ddbe7cda4ad27e", null ],
-    [ "Data", "class_a_z_1_1_shared_memory.html#a976f1ef3613af589d60b3891f39d4de8", null ],
-    [ "Data", "class_a_z_1_1_shared_memory.html#a979733ca85de86250c7778a9cfc3d5ec", null ],
-    [ "DataSize", "class_a_z_1_1_shared_memory.html#aa8f9d3af800a23bd8ddb4a10c9178b26", null ],
-    [ "GetName", "class_a_z_1_1_shared_memory.html#ac9fa8c0f11a9444114985935d8ddebfc", null ],
     [ "IsLockAbandoned", "class_a_z_1_1_shared_memory.html#a714dc3afae561f0e6acd2b389bce1574", null ],
-    [ "IsMapped", "class_a_z_1_1_shared_memory.html#a67ef44eae0e44bf2071ea53ffc7b3b35", null ],
-    [ "IsReady", "class_a_z_1_1_shared_memory.html#abee41704d88de47235097eae5cf38e44", null ],
     [ "lock", "class_a_z_1_1_shared_memory.html#a83d041d9965de1fa8b0753919c3581c6", null ],
     [ "Map", "class_a_z_1_1_shared_memory.html#a564aea29da01c9fb2cc7de5c3da9ada2", null ],
-    [ "Open", "class_a_z_1_1_shared_memory.html#abbaf343b5f214a69ed6f6eb65271af8c", null ],
-    [ "operator=", "class_a_z_1_1_shared_memory.html#a4c5ba267b0b9d737b7a7fcddc84367d8", null ],
-    [ "try_lock", "class_a_z_1_1_shared_memory.html#addb0dd1906aca4b3fcbaf853847ff62e", null ],
-    [ "unlock", "class_a_z_1_1_shared_memory.html#af2f0df331e5c614f051cbbdd8d7748fc", null ],
-    [ "UnMap", "class_a_z_1_1_shared_memory.html#a71400a26b55b202eefee28b2b371600f", null ],
-    [ "m_data", "class_a_z_1_1_shared_memory.html#a4c79a6e58591907da23034443a0e1f08", null ]
+    [ "Open", "class_a_z_1_1_shared_memory.html#abbaf343b5f214a69ed6f6eb65271af8c", null ]
 ];

@@ -1,6 +1,5 @@
 var class_lmbr_central_1_1_spline_component_notification =
 [
-    [ "~SplineComponentNotification", "class_lmbr_central_1_1_spline_component_notification.html#a251010a6b914127e2db5c66ef0120ddf", null ],
     [ "OnOpenCloseChanged", "class_lmbr_central_1_1_spline_component_notification.html#a1add7961105aa269c685bcbd71a994dc", null ],
     [ "OnSplineChanged", "class_lmbr_central_1_1_spline_component_notification.html#a420133b9a3f3f8756ad784ffb012ec97", null ],
     [ "OnVertexAdded", "class_lmbr_central_1_1_spline_component_notification.html#ab7828e2e82f45cab579fc99933ed70ab", null ],

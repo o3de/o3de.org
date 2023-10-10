@@ -1,16 +1,15 @@
 var class_ui_editor_canvas_interface =
 [
-    [ "~UiEditorCanvasInterface", "class_ui_editor_canvas_interface.html#acabf0e66cf4d41b6a21ddf4f09b0b4c4", null ],
     [ "AddHorizontalGuide", "class_ui_editor_canvas_interface.html#ac3c2a1d8b4c60fbbfab68ea7c8081211", null ],
     [ "AddVerticalGuide", "class_ui_editor_canvas_interface.html#a49900e59309e40ecf7199778f4bf2d8a", null ],
     [ "CheckForOrphanedElements", "class_ui_editor_canvas_interface.html#a875e265734f98b8393146f40241b3322", null ],
     [ "GetGuideColor", "class_ui_editor_canvas_interface.html#a89002dc49179e43b9687588f99763bd2", null ],
     [ "GetGuidesAreLocked", "class_ui_editor_canvas_interface.html#a740ed971952d24c72eb427f8c531138c", null ],
-    [ "GetHorizontalGuidePositions", "class_ui_editor_canvas_interface.html#ade069e5a88baaeb8783e5606f8e2d670", null ],
+    [ "GetHorizontalGuidePositions", "class_ui_editor_canvas_interface.html#a4e495fceb336413a791cf31631f5220f", null ],
     [ "GetIsSnapEnabled", "class_ui_editor_canvas_interface.html#a424c14dfb7a2aafc65195d21167270e6", null ],
     [ "GetSnapDistance", "class_ui_editor_canvas_interface.html#ae71f322299c46aed8ed319fe29ee008a", null ],
     [ "GetSnapRotationDegrees", "class_ui_editor_canvas_interface.html#ad49e64da29ea761edb00ba26a36285c3", null ],
-    [ "GetVerticalGuidePositions", "class_ui_editor_canvas_interface.html#af29d500d797e543820fb203c35b5cdc1", null ],
+    [ "GetVerticalGuidePositions", "class_ui_editor_canvas_interface.html#a0b8f237fa3eb42d69ab1a8fc164cbfd2", null ],
     [ "RecoverOrphanedElements", "class_ui_editor_canvas_interface.html#a4053ad319840ea67b2f6a8d9ce94bece", null ],
     [ "RemoveAllGuides", "class_ui_editor_canvas_interface.html#afd87f68042936d07568e947ff849742f", null ],
     [ "RemoveHorizontalGuide", "class_ui_editor_canvas_interface.html#af71e82950e27f55de33e1df5c69baf4d", null ],

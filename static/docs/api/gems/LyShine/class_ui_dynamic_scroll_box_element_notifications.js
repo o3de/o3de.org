@@ -1,10 +1,9 @@
 var class_ui_dynamic_scroll_box_element_notifications =
 [
-    [ "~UiDynamicScrollBoxElementNotifications", "class_ui_dynamic_scroll_box_element_notifications.html#ac0f2c62dac89c2f64f5ac35cacb7ba56", null ],
-    [ "OnElementBecomingVisible", "class_ui_dynamic_scroll_box_element_notifications.html#a021a30e8e4ff6ac7bdf1df6fb4c1f953", null ],
-    [ "OnElementInSectionBecomingVisible", "class_ui_dynamic_scroll_box_element_notifications.html#adbb5413320c96bfd7df2a00ef3863a87", null ],
-    [ "OnPrepareElementForSizeCalculation", "class_ui_dynamic_scroll_box_element_notifications.html#a09ab5893b0386007f373a300d1d8c648", null ],
-    [ "OnPrepareElementInSectionForSizeCalculation", "class_ui_dynamic_scroll_box_element_notifications.html#a48096e237507f56ba0f88d71267bdb57", null ],
-    [ "OnPrepareSectionHeaderForSizeCalculation", "class_ui_dynamic_scroll_box_element_notifications.html#a53ee694d5112ba5dda1bb4babea257a0", null ],
-    [ "OnSectionHeaderBecomingVisible", "class_ui_dynamic_scroll_box_element_notifications.html#a84bcaa6c9cc778251f3bcf884684859f", null ]
+    [ "OnElementBecomingVisible", "class_ui_dynamic_scroll_box_element_notifications.html#a1c9303a5ff4c8f491db1aef73097f150", null ],
+    [ "OnElementInSectionBecomingVisible", "class_ui_dynamic_scroll_box_element_notifications.html#a4211412f61bc87264dba7d7a1fda19b6", null ],
+    [ "OnPrepareElementForSizeCalculation", "class_ui_dynamic_scroll_box_element_notifications.html#a6d5811d72ff6b6f3c31e01cc5f0fc0ac", null ],
+    [ "OnPrepareElementInSectionForSizeCalculation", "class_ui_dynamic_scroll_box_element_notifications.html#a57670a0060a8f61e681e43e7149740a6", null ],
+    [ "OnPrepareSectionHeaderForSizeCalculation", "class_ui_dynamic_scroll_box_element_notifications.html#a84b664bd03746477428a176155a6b860", null ],
+    [ "OnSectionHeaderBecomingVisible", "class_ui_dynamic_scroll_box_element_notifications.html#ac7d511686a0c136b688ab3c4a5495d9f", null ]
 ];

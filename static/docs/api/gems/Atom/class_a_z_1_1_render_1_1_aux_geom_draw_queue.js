@@ -1,10 +1,6 @@
 var class_a_z_1_1_render_1_1_aux_geom_draw_queue =
 [
-    [ "AuxGeomDrawQueue", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a93fe4ed43debcd10e46330801d881ad7", null ],
-    [ "~AuxGeomDrawQueue", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#ae00be324a8d126986c268ca7a4eca3ff", null ],
-    [ "AddViewProjOverride", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a5ad5693c54dae3b6e99c258c6123b9b0", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a1446e8bbb402230605c32c0d41a879f5", null ],
-    [ "Commit", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#ad7c4a4bd31a59cf7dbc6795bb51c88cd", null ],
+    [ "Commit", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a8aa8d8ffebb1d8a927676de8f3761286", null ],
     [ "DrawAabb", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#aaaec94561e57f35347bc7d6b17801020", null ],
     [ "DrawAabb", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#aafc3e16cdca58553629027e6ee3500c8", null ],
     [ "DrawCone", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a8567640d0e8941f5ad9fda300a80cedc", null ],
@@ -13,18 +9,11 @@ var class_a_z_1_1_render_1_1_aux_geom_draw_queue =
     [ "DrawDisk", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a2a8f58e8fd4cc3c9d616f38dc8a0aa72", null ],
     [ "DrawFrustum", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a17b50dd1bc634baf0253e9a699f897ca", null ],
     [ "DrawHemisphere", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#af1d9397b97d8c574c5571771176a8e62", null ],
-    [ "DrawLines", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#add30795a9dd8ceb8918cd472db357aa9", null ],
-    [ "DrawLines", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a86424a320ef6bd6a51ef52b65bfa1341", null ],
-    [ "DrawObb", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#ac6ab2e882fe6c609951298545f681c6c", null ],
     [ "DrawObb", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a03465353723f0525e537b14d58669010", null ],
-    [ "DrawPoints", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a9f0f69efa8e8262c9cd15e41e932f0f3", null ],
+    [ "DrawObb", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#ac6ab2e882fe6c609951298545f681c6c", null ],
     [ "DrawPolylines", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a9eb04c38453cbe12de7f0b82af7847fb", null ],
     [ "DrawQuad", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a9f1ebb9e351e302870d5aeeacc3d7009", null ],
-    [ "DrawSphere", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a59ded251a70f15c6fd8dd2b786823ed4", null ],
     [ "DrawSphere", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a36a4213601125e6e1cc55223bcb0bf6b", null ],
-    [ "DrawTriangles", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a555409e5fd8aa818a38c7ba2965a3eab", null ],
-    [ "DrawTriangles", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a95dea2f6e42c7c18abb4b94343552bad", null ],
-    [ "GetOrAdd2DViewProjOverride", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a915ccdf71c100ec716916a4158177b75", null ],
-    [ "GetPointSize", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#adfd44f7bb7c3c5cce9883c56b9efb7de", null ],
-    [ "SetPointSize", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a8bfc153a6a0a804245e5329759f6601d", null ]
+    [ "DrawSphere", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a59ded251a70f15c6fd8dd2b786823ed4", null ],
+    [ "DrawTriangles", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html#a555409e5fd8aa818a38c7ba2965a3eab", null ]
 ];

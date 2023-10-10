@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "BaseJsonSerializer", null, [
+    [ "AZ::BaseJsonSerializer", null, [
       [ "Terrain::JsonTerrainWorldConfigSerializer", "class_terrain_1_1_json_terrain_world_config_serializer.html", null ]
     ] ],
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "Terrain::EditorTerrainSystemComponent", "class_terrain_1_1_editor_terrain_system_component.html", null ],
       [ "Terrain::TerrainHeightGradientListComponent", "class_terrain_1_1_terrain_height_gradient_list_component.html", null ],
       [ "Terrain::TerrainLayerSpawnerComponent", "class_terrain_1_1_terrain_layer_spawner_component.html", null ],
@@ -17,7 +17,7 @@ var hierarchy =
       [ "Terrain::TerrainWorldDebuggerComponent", "class_terrain_1_1_terrain_world_debugger_component.html", null ],
       [ "Terrain::TerrainWorldRendererComponent", "class_terrain_1_1_terrain_world_renderer_component.html", null ]
     ] ],
-    [ "ComponentBus", null, [
+    [ "AZ::ComponentBus", null, [
       [ "Terrain::TerrainAreaMaterialRequests", "class_terrain_1_1_terrain_area_material_requests.html", null ],
       [ "Terrain::TerrainAreaSurfaceRequests", "class_terrain_1_1_terrain_area_surface_requests.html", null ],
       [ "Terrain::TerrainMacroColorModificationNotifications", "class_terrain_1_1_terrain_macro_color_modification_notifications.html", null ],
@@ -25,7 +25,7 @@ var hierarchy =
       [ "Terrain::TerrainMacroMaterialRequests", "class_terrain_1_1_terrain_macro_material_requests.html", null ],
       [ "Terrain::TerrainSpawnerRequests", "class_terrain_1_1_terrain_spawner_requests.html", null ]
     ] ],
-    [ "ComponentConfig", null, [
+    [ "AZ::ComponentConfig", null, [
       [ "Terrain::TerrainHeightGradientListConfig", "class_terrain_1_1_terrain_height_gradient_list_config.html", null ],
       [ "Terrain::TerrainLayerSpawnerConfig", "class_terrain_1_1_terrain_layer_spawner_config.html", null ],
       [ "Terrain::TerrainMacroMaterialConfig", "class_terrain_1_1_terrain_macro_material_config.html", null ],
@@ -36,59 +36,56 @@ var hierarchy =
       [ "Terrain::TerrainWorldDebuggerConfig", "class_terrain_1_1_terrain_world_debugger_config.html", null ],
       [ "Terrain::TerrainWorldRendererConfig", "struct_terrain_1_1_terrain_world_renderer_config.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::Data::AssetBus::Handler", null, [
       [ "Terrain::TerrainFeatureProcessor", "class_terrain_1_1_terrain_feature_processor.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "AZ::Data::AssetBus::MultiHandler", null, [
       [ "Terrain::TerrainMacroMaterialComponent", "class_terrain_1_1_terrain_macro_material_component.html", null ],
       [ "Terrain::TerrainSurfaceMaterialsListComponent", "class_terrain_1_1_terrain_surface_materials_list_component.html", null ]
     ] ],
-    [ "EBusSharedDispatchTraits", null, [
+    [ "AZ::EBusSharedDispatchTraits", null, [
       [ "Terrain::TerrainAreaHeightRequests", "class_terrain_1_1_terrain_area_height_requests.html", null ],
       [ "Terrain::TerrainAreaSurfaceRequests", "class_terrain_1_1_terrain_area_surface_requests.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "Terrain::TerrainAreaMaterialNotifications", "class_terrain_1_1_terrain_area_material_notifications.html", null ],
       [ "Terrain::TerrainMacroMaterialNotifications", "class_terrain_1_1_terrain_macro_material_notifications.html", null ],
       [ "Terrain::TerrainSystemServiceRequests", "class_terrain_1_1_terrain_system_service_requests.html", null ]
     ] ],
-    [ "Module", null, [
+    [ "AZ::Module", null, [
       [ "Terrain::TerrainModule", "class_terrain_1_1_terrain_module.html", [
         [ "Terrain::EditorTerrainModule", "class_terrain_1_1_editor_terrain_module.html", null ]
       ] ]
     ] ],
-    [ "ComputePass", null, [
+    [ "AZ::RPI::ComputePass", null, [
       [ "Terrain::TerrainDetailClipmapGenerationPass", "class_terrain_1_1_terrain_detail_clipmap_generation_pass.html", null ],
       [ "Terrain::TerrainMacroClipmapGenerationPass", "class_terrain_1_1_terrain_macro_clipmap_generation_pass.html", null ]
     ] ],
-    [ "FeatureProcessor", null, [
+    [ "AZ::RPI::FeatureProcessor", null, [
       [ "Terrain::TerrainFeatureProcessor", "class_terrain_1_1_terrain_feature_processor.html", null ]
     ] ],
-    [ "FullscreenTrianglePass", null, [
+    [ "AZ::RPI::FullscreenTrianglePass", null, [
       [ "Terrain::TerrainClipmapDebugPass", "class_terrain_1_1_terrain_clipmap_debug_pass.html", null ]
     ] ],
-    [ "Handler", null, [
-      [ "Terrain::TerrainMeshManager", "class_terrain_1_1_terrain_mesh_manager.html", null ]
-    ] ],
-    [ "Handler", null, [
+    [ "AZ::TickBus::Handler", null, [
       [ "Terrain::TerrainSurfaceMaterialsListComponent", "class_terrain_1_1_terrain_surface_materials_list_component.html", null ],
       [ "Terrain::TerrainSystem", "class_terrain_1_1_terrain_system.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::BoundsRequestBus::Handler", null, [
       [ "Terrain::TerrainWorldDebuggerComponent", "class_terrain_1_1_terrain_world_debugger_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::EntityDebugDisplayEventBus::Handler", null, [
       [ "Terrain::TerrainWorldDebuggerComponent", "class_terrain_1_1_terrain_world_debugger_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::PaintBrushNotificationBus::Handler", null, [
       [ "Terrain::EditorTerrainMacroMaterialComponent", "class_terrain_1_1_editor_terrain_macro_material_component.html", null ],
       [ "Terrain::MacroMaterialImageModifier", "class_terrain_1_1_macro_material_image_modifier.html", null ],
       [ "Terrain::TerrainMacroMaterialComponent", "class_terrain_1_1_terrain_macro_material_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::RenderGeometry::IntersectorBus::Handler", null, [
       [ "Terrain::TerrainRaycastContext", "class_terrain_1_1_terrain_raycast_context.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::Terrain::TerrainDataNotificationBus::Handler", null, [
       [ "Terrain::TerrainClipmapManager", "class_terrain_1_1_terrain_clipmap_manager.html", null ],
       [ "Terrain::TerrainDetailMaterialManager", "class_terrain_1_1_terrain_detail_material_manager.html", null ],
       [ "Terrain::TerrainFeatureProcessor", "class_terrain_1_1_terrain_feature_processor.html", null ],
@@ -98,20 +95,20 @@ var hierarchy =
       [ "Terrain::TerrainSurfaceDataSystemComponent", "class_terrain_1_1_terrain_surface_data_system_component.html", null ],
       [ "Terrain::TerrainWorldDebuggerComponent", "class_terrain_1_1_terrain_world_debugger_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::Terrain::TerrainDataRequestBus::Handler", null, [
       [ "Terrain::TerrainSystem", "class_terrain_1_1_terrain_system.html", null ]
     ] ],
-    [ "EditorBaseComponentMode", null, [
+    [ "AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode", null, [
       [ "Terrain::EditorTerrainMacroMaterialComponentMode", "class_terrain_1_1_editor_terrain_macro_material_component_mode.html", null ]
     ] ],
-    [ "EditorComponentBase", null, [
+    [ "AzToolsFramework::Components::EditorComponentBase", null, [
       [ "Terrain::EditorTerrainMacroMaterialComponent", "class_terrain_1_1_editor_terrain_macro_material_component.html", null ],
       [ "Terrain::EditorTerrainPhysicsColliderComponent", "class_terrain_1_1_editor_terrain_physics_collider_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
       [ "Terrain::EditorTerrainSystemComponent", "class_terrain_1_1_editor_terrain_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorVisibilityNotificationBus::Handler", null, [
       [ "Terrain::EditorTerrainMacroMaterialComponent", "class_terrain_1_1_editor_terrain_macro_material_component.html", null ]
     ] ],
     [ "LmbrCentral::EditorWrappedComponentBase< TerrainHeightGradientListComponent, TerrainHeightGradientListConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
@@ -135,25 +132,25 @@ var hierarchy =
     [ "LmbrCentral::EditorWrappedComponentBase< TerrainWorldRendererComponent, TerrainWorldRendererConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Terrain::EditorTerrainWorldRendererComponent", "class_terrain_1_1_editor_terrain_world_renderer_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "LmbrCentral::DependencyNotificationBus::Handler", null, [
       [ "Terrain::EditorTerrainMacroMaterialComponent", "class_terrain_1_1_editor_terrain_macro_material_component.html", null ],
       [ "Terrain::TerrainHeightGradientListComponent", "class_terrain_1_1_terrain_height_gradient_list_component.html", null ],
       [ "Terrain::TerrainSurfaceGradientListComponent", "class_terrain_1_1_terrain_surface_gradient_list_component.html", null ]
     ] ],
     [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "Handler", null, [
+    [ "LmbrCentral::ShapeComponentNotificationsBus::Handler", null, [
       [ "Terrain::TerrainLayerSpawnerComponent", "class_terrain_1_1_terrain_layer_spawner_component.html", null ],
       [ "Terrain::TerrainMacroMaterialComponent", "class_terrain_1_1_terrain_macro_material_component.html", null ],
       [ "Terrain::TerrainPhysicsColliderComponent", "class_terrain_1_1_terrain_physics_collider_component.html", null ],
       [ "Terrain::TerrainSurfaceMaterialsListComponent", "class_terrain_1_1_terrain_surface_materials_list_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "Physics::HeightfieldProviderRequestsBus::Handler", null, [
       [ "Terrain::TerrainPhysicsColliderComponent", "class_terrain_1_1_terrain_physics_collider_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "SurfaceData::SurfaceDataProviderRequestBus::Handler", null, [
       [ "Terrain::TerrainSurfaceDataSystemComponent", "class_terrain_1_1_terrain_surface_data_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "SurfaceData::SurfaceDataTagProviderRequestBus::Handler", null, [
       [ "Terrain::TerrainSurfaceDataSystemComponent", "class_terrain_1_1_terrain_surface_data_system_component.html", null ]
     ] ],
     [ "Terrain::Aabb2i", "class_terrain_1_1_aabb2i.html", null ],
@@ -171,10 +168,10 @@ var hierarchy =
     [ "Terrain::MacroMaterialImageSizeData", "struct_terrain_1_1_macro_material_image_size_data.html", null ],
     [ "Terrain::MeshConfiguration", "struct_terrain_1_1_mesh_configuration.html", null ],
     [ "Terrain::ModifiedImageRegion", "struct_terrain_1_1_modified_image_region.html", null ],
-    [ "Handler", null, [
+    [ "Terrain::TerrainAreaHeightRequestBus::Handler", null, [
       [ "Terrain::TerrainHeightGradientListComponent", "class_terrain_1_1_terrain_height_gradient_list_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "Terrain::TerrainAreaSurfaceRequestBus::Handler", null, [
       [ "Terrain::TerrainSurfaceGradientListComponent", "class_terrain_1_1_terrain_surface_gradient_list_component.html", null ]
     ] ],
     [ "Terrain::TerrainClipmapManager::ClipmapData::ClipmapCenter", "struct_terrain_1_1_terrain_clipmap_manager_1_1_clipmap_data_1_1_clipmap_center.html", null ],
@@ -182,38 +179,37 @@ var hierarchy =
     [ "Terrain::TerrainClipmapManager::ClipmapData::ClipmapWorldCenter", "struct_terrain_1_1_terrain_clipmap_manager_1_1_clipmap_data_1_1_clipmap_world_center.html", null ],
     [ "Terrain::TerrainDebugQueryVisualizerConfig", "class_terrain_1_1_terrain_debug_query_visualizer_config.html", null ],
     [ "Terrain::TerrainLayerPriorityComparator", "struct_terrain_1_1_terrain_layer_priority_comparator.html", null ],
-    [ "Handler", null, [
-      [ "Terrain::TerrainMacroMaterialManager", "class_terrain_1_1_terrain_macro_material_manager.html", null ]
-    ] ],
+    [ "Terrain::TerrainMeshManager::RtSector::MeshGroup", "struct_terrain_1_1_terrain_mesh_manager_1_1_rt_sector_1_1_mesh_group.html", null ],
     [ "Terrain::TerrainPhysicsColliderConfig", "class_terrain_1_1_terrain_physics_collider_config.html", null ],
     [ "Terrain::TerrainPhysicsSurfaceMaterialMapping", "struct_terrain_1_1_terrain_physics_surface_material_mapping.html", null ],
-    [ "Handler", null, [
+    [ "Terrain::TerrainSpawnerRequestBus::Handler", null, [
       [ "Terrain::TerrainLayerSpawnerComponent", "class_terrain_1_1_terrain_layer_spawner_component.html", null ]
     ] ],
     [ "Terrain::TerrainSurfaceGradientMapping", "class_terrain_1_1_terrain_surface_gradient_mapping.html", null ],
     [ "Terrain::TerrainSurfaceMaterialMapping", "struct_terrain_1_1_terrain_surface_material_mapping.html", null ],
-    [ "Handler", null, [
+    [ "Terrain::TerrainSystemServiceRequestBus::Handler", null, [
       [ "Terrain::TerrainSystem", "class_terrain_1_1_terrain_system.html", null ]
     ] ],
     [ "Terrain::Vector2i", "class_terrain_1_1_vector2i.html", null ],
-    [ "Handler", null, [
+    [ "TerrainAreaMaterialNotificationBus::Handler", null, [
       [ "Terrain::TerrainClipmapManager", "class_terrain_1_1_terrain_clipmap_manager.html", null ],
       [ "Terrain::TerrainDetailMaterialManager", "class_terrain_1_1_terrain_detail_material_manager.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "TerrainAreaMaterialRequestBus::Handler", null, [
       [ "Terrain::TerrainSurfaceMaterialsListComponent", "class_terrain_1_1_terrain_surface_materials_list_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "TerrainMacroColorModificationBus::Handler", null, [
       [ "Terrain::TerrainMacroMaterialComponent", "class_terrain_1_1_terrain_macro_material_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "TerrainMacroColorModificationNotificationBus::Handler", null, [
       [ "Terrain::EditorTerrainMacroMaterialComponentMode", "class_terrain_1_1_editor_terrain_macro_material_component_mode.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "TerrainMacroMaterialNotificationBus::Handler", null, [
       [ "Terrain::EditorTerrainMacroMaterialComponent", "class_terrain_1_1_editor_terrain_macro_material_component.html", null ],
-      [ "Terrain::TerrainClipmapManager", "class_terrain_1_1_terrain_clipmap_manager.html", null ]
+      [ "Terrain::TerrainClipmapManager", "class_terrain_1_1_terrain_clipmap_manager.html", null ],
+      [ "Terrain::TerrainMacroMaterialManager", "class_terrain_1_1_terrain_macro_material_manager.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "TerrainMacroMaterialRequestBus::Handler", null, [
       [ "Terrain::TerrainMacroMaterialComponent", "class_terrain_1_1_terrain_macro_material_component.html", null ]
     ] ]
 ];
