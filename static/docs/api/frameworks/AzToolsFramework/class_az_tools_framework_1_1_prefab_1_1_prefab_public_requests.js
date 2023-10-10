@@ -1,7 +1,5 @@
 var class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests =
 [
-    [ "Bus", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a9583643a9f9853bddda9d37e03441074", null ],
-    [ "~PrefabPublicRequests", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#ae02f2bfe7a39a4d21e6955b28fbdd4a5", null ],
     [ "CreateInMemorySpawnableAsset", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aad3c1f0a04857bdbe2360ba4bbcb9057", null ],
     [ "CreatePrefabInMemory", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a8a1e3ff34ed8580d44c1530372567d81", null ],
     [ "DeleteEntitiesAndAllDescendantsInInstance", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a70a6c894f67d93a01faadd93f6b8f0af", null ],
@@ -12,6 +10,5 @@ var class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests =
     [ "HasInMemorySpawnableAsset", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#ac1937a054d271d499ac5bab8230122c1", null ],
     [ "InstantiatePrefab", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a94a49ee4d039b0e932c491c6002a00c6", null ],
     [ "RemoveAllInMemorySpawnableAssets", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a1af4480546ae4e7a977a92d137e9f103", null ],
-    [ "RemoveInMemorySpawnableAsset", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aec837e62631b0f2542029fda84c9431a", null ],
-    [ "HandlerPolicy", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a683f847ae83a2076bbc55686021f0a9d", null ]
+    [ "RemoveInMemorySpawnableAsset", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aec837e62631b0f2542029fda84c9431a", null ]
 ];

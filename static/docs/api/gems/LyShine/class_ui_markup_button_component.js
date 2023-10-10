@@ -1,26 +1,5 @@
 var class_ui_markup_button_component =
 [
-    [ "UiMarkupButtonComponent", "class_ui_markup_button_component.html#abe8c01a605eab9d5b0e5de47ff1b2e23", null ],
-    [ "~UiMarkupButtonComponent", "class_ui_markup_button_component.html#a1b6cef1aa6ecea07eaf772a1f53177d2", null ],
-    [ "Activate", "class_ui_markup_button_component.html#aa6737795a6b511eee3e8559f37e91a6e", null ],
-    [ "AZ_COMPONENT", "class_ui_markup_button_component.html#a79dc2aea788c84b72d11911ffdbaa4d5", null ],
-    [ "Deactivate", "class_ui_markup_button_component.html#a462f4510a5e7b89799191dadb5334c56", null ],
-    [ "GetIncompatibleServices", "class_ui_markup_button_component.html#a2d5ab60c0989e21663d2d718b8a42782", null ],
-    [ "GetLinkColor", "class_ui_markup_button_component.html#a9ab9bdbc3535d35450c78ba3eb4e4054", null ],
-    [ "GetLinkHoverColor", "class_ui_markup_button_component.html#a9359eac67c1d78fbc9162b975a7f4e31", null ],
-    [ "GetProvidedServices", "class_ui_markup_button_component.html#ac89724d7d6801a443550a62bab252940", null ],
-    [ "GetRequiredServices", "class_ui_markup_button_component.html#a2fe7620b2c6b48824f495a81f5cfdee4", null ],
-    [ "HandleClickableHoverEnd", "class_ui_markup_button_component.html#a4841cdce983fc4265b1da620203d96b2", null ],
-    [ "HandleClickableHoverStart", "class_ui_markup_button_component.html#a2beb51f7795edc3a7853a98aaf59881b", null ],
-    [ "HandlePressed", "class_ui_markup_button_component.html#ab4518d5e7a48d1bcf626a0fcc7214c33", null ],
-    [ "HandleReleased", "class_ui_markup_button_component.html#aecb429bd78b56f6811497d87196c6032", null ],
-    [ "OnClickableTextChanged", "class_ui_markup_button_component.html#adbb054d2c33aa6ffe56f2d403f4c88df", null ],
     [ "OnLinkColorChanged", "class_ui_markup_button_component.html#abc92ab0965a8149004d7f4afa069debf", null ],
-    [ "OnLinkHoverColorChanged", "class_ui_markup_button_component.html#aaddebe48e6b372d62d1efcce717b1352", null ],
-    [ "Reflect", "class_ui_markup_button_component.html#a6a9f90cde1905a79e2f2215842110028", null ],
-    [ "SetLinkColor", "class_ui_markup_button_component.html#af549e3d92c8eb22b5b2d9d1fdd520441", null ],
-    [ "SetLinkHoverColor", "class_ui_markup_button_component.html#a3bdb1a5268a9e0203172598fb62fe170", null ],
-    [ "UnitTest", "class_ui_markup_button_component.html#ac0a29f6b54c43fd9f9ad6eaa39974c9e", null ],
-    [ "Update", "class_ui_markup_button_component.html#a82fb29d1c45ea1985966ce31cd26a658", null ],
-    [ "UpdateHover", "class_ui_markup_button_component.html#a5ec64d077faf354b1965c159c03bd627", null ]
+    [ "OnLinkHoverColorChanged", "class_ui_markup_button_component.html#aaddebe48e6b372d62d1efcce717b1352", null ]
 ];

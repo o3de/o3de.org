@@ -1,27 +1,4 @@
 var struct_phys_x_debug_1_1_phys_x_visualization_settings =
 [
-    [ "~PhysXVisualizationSettings", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#afa10028641a1a6d8838a42f1327e3a93", null ],
-    [ "AZ_RTTI", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a2d4b0b7c14131072bc0cf6d0e8a4cf2a", null ],
-    [ "IsPhysXDebugEnabled", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a9d5497e9ecefd591d1f6700b0d1cec15", null ],
-    [ "m_actorAxes", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a8f09af9df3f36811e8f47f54adcab5f6", null ],
-    [ "m_bodyAngVelocity", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a3d651eddc01427a77e30f8f88b521d39", null ],
-    [ "m_bodyAxes", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a9813a7637e18208a3e4f7c93fd26dee6", null ],
-    [ "m_bodyLinVelocity", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#ad3bde813869fe2cefadda1bb48580af6", null ],
-    [ "m_bodyMassAxes", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#aab20ecf5d42f777a7f5d23d8952086ae", null ],
-    [ "m_collisionAabbs", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a1e1d8c66e79cceaec8539f0390466f64", null ],
-    [ "m_collisionAxes", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#acd7c277d4e677c1df0d0685785ee9390", null ],
-    [ "m_collisionCompounds", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a9c6f60264716c5f09723860ab8495442", null ],
-    [ "m_collisionDynamic", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#ad506bf05598d6cf4ac22681fb8b4ec45", null ],
-    [ "m_collisionEdges", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#ae92b1dc864f29a611f26a2ef8e347f55", null ],
-    [ "m_collisionFNormals", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a259aca809fb63da8494c3da446b3ce1a", null ],
-    [ "m_collisionShapes", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a3cfdcc00979e50a5480b7c8c647acb23", null ],
-    [ "m_collisionStatic", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#af1a81bd0b0cc731c544f846d9f7ef40e", null ],
-    [ "m_contactNormal", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a276b0f8310e31d34a12f78f325c1d64b", null ],
-    [ "m_contactPoint", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a15914aa836d0b6581b2af90fb6b00b33", null ],
-    [ "m_jointLimits", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a9a7a593a358c40c4247231382d89fd55", null ],
-    [ "m_jointLocalFrames", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#af57ff3081555131225d2e7323fb66808", null ],
-    [ "m_mbpRegions", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a5be93d46ae8bd494c113e9f875a9f5ab", null ],
-    [ "m_scale", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a603adc47aac84b19949b018f6e1657b2", null ],
-    [ "m_visualizationEnabled", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a4ee158c87fb1efe922e6dc2a2eaecac0", null ],
-    [ "m_visualizeCollidersByProximity", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a7b29d5d2b9145891b0c2fd6773a6838d", null ]
+    [ "IsPhysXDebugEnabled", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html#a9d5497e9ecefd591d1f6700b0d1cec15", null ]
 ];

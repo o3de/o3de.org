@@ -1,7 +1,5 @@
 var struct_a_z_1_1_texture_slot =
 [
-    [ "Reset", "struct_a_z_1_1_texture_slot.html#a8fc42422ae372254d0ba94500418b0be", null ],
-    [ "SetNotReusable", "struct_a_z_1_1_texture_slot.html#af699ac664a6a2cc0a2d53f9c818ea951", null ],
     [ "m_characterHeight", "struct_a_z_1_1_texture_slot.html#a41f3e5b797c5ab74095e70204ae4de6d", null ],
     [ "m_characterOffsetX", "struct_a_z_1_1_texture_slot.html#a38fd1a70b0fbbaf34136c08df40359a6", null ],
     [ "m_characterOffsetY", "struct_a_z_1_1_texture_slot.html#aa9d84c2fc5936929d0453acac6a1998b", null ],
@@ -10,6 +8,5 @@ var struct_a_z_1_1_texture_slot =
     [ "m_glyphSize", "struct_a_z_1_1_texture_slot.html#a66ed08a946558842545083e9dd15f928", null ],
     [ "m_horizontalAdvance", "struct_a_z_1_1_texture_slot.html#ab12d3ebb72e6e3203df215ace604e539", null ],
     [ "m_slotUsage", "struct_a_z_1_1_texture_slot.html#a09ff32e3abe6a2f5df88fc33aab0cded", null ],
-    [ "m_texCoords", "struct_a_z_1_1_texture_slot.html#a5fd09d004f33c4c842d6ee9086d4bd86", null ],
-    [ "m_textureSlot", "struct_a_z_1_1_texture_slot.html#a6ec68a74191daa34ca708338b71364dc", null ]
+    [ "m_texCoords", "struct_a_z_1_1_texture_slot.html#a5fd09d004f33c4c842d6ee9086d4bd86", null ]
 ];

@@ -1,10 +1,5 @@
 var struct_az_framework_1_1_asset_system_1_1_connection_settings =
 [
-    [ "LoggingCallback", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a6caaebd6d194d3e26042734c0e2f7eb6", null ],
-    [ "ConnectionDirection", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a8ba85a3789f6d464ca625ce40cd47905", [
-      [ "ListenForConnectFromAssetProcessor", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a8ba85a3789f6d464ca625ce40cd47905a315097dba1bdc3deb8f6a7132416a8f5", null ],
-      [ "ConnectToAssetProcessor", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a8ba85a3789f6d464ca625ce40cd47905a9dd550098a829a8b7c5a29a8e298534b", null ]
-    ] ],
     [ "m_assetPlatform", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a827cfab8c63c66ea3935e95e1f8248be", null ],
     [ "m_assetProcessorIp", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a327cee74299964ceef89c41e909b4bf8", null ],
     [ "m_assetProcessorPort", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a6880c20fc2ffa53bb0a30fc10f18ce6f", null ],
@@ -14,7 +9,6 @@ var struct_az_framework_1_1_asset_system_1_1_connection_settings =
     [ "m_connectTimeout", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a6cf41dc34b738734034ca972e9897137", null ],
     [ "m_launchAssetProcessorOnFailedConnection", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a9c21ea5a78d1f790bec3c8affd41c622", null ],
     [ "m_launchTimeout", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a3fef4781e7574f005bd9dd345935afca", null ],
-    [ "m_loggingCallback", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a72d0317092c0893a9c45669baef6fe1d", null ],
     [ "m_projectName", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#afca8862d1748e24484c2e59c0fca2814", null ],
     [ "m_waitForConnect", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#ae30517333d6a2e4b69960ac10720116a", null ],
     [ "m_waitForReadyTimeout", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a09da1ab3d9cb6088088924ecad3f0222", null ],

@@ -1,36 +1,4 @@
 var class_e_m_studio_1_1_e_m_studio_plugin =
 [
-    [ "EPluginType", "class_e_m_studio_1_1_e_m_studio_plugin.html#af29d7b3f226265e2f17b533e55360319", [
-      [ "PLUGINTYPE_WINDOW", "class_e_m_studio_1_1_e_m_studio_plugin.html#af29d7b3f226265e2f17b533e55360319ada5acaad39d578b71a7be19a7741db35", null ],
-      [ "PLUGINTYPE_TOOLBAR", "class_e_m_studio_1_1_e_m_studio_plugin.html#af29d7b3f226265e2f17b533e55360319a732c191ea274a805c65b810dba8b7231", null ],
-      [ "PLUGINTYPE_RENDERING", "class_e_m_studio_1_1_e_m_studio_plugin.html#af29d7b3f226265e2f17b533e55360319a12c72b389c1357cea5754b63fa7ccbd3", null ]
-    ] ],
-    [ "EMStudioPlugin", "class_e_m_studio_1_1_e_m_studio_plugin.html#aecde75cc099e62f327d8c1fc223b3efc", null ],
-    [ "~EMStudioPlugin", "class_e_m_studio_1_1_e_m_studio_plugin.html#aa13a02204b1d191e2dd189aa6353880b", null ],
-    [ "AddWindowMenuEntries", "class_e_m_studio_1_1_e_m_studio_plugin.html#a6240dc4dfb8c5304eb25aacceb760c73", null ],
-    [ "AllowMultipleInstances", "class_e_m_studio_1_1_e_m_studio_plugin.html#a2a41d02faa63efc4d35940fa061ba7ba", null ],
-    [ "Clone", "class_e_m_studio_1_1_e_m_studio_plugin.html#ac8483063e66453722de959138ad48d97", null ],
-    [ "CreateBaseInterface", "class_e_m_studio_1_1_e_m_studio_plugin.html#a345498f5b2e7c7ccc8066fb3acef0ad9", null ],
-    [ "GetClassID", "class_e_m_studio_1_1_e_m_studio_plugin.html#aa5b7f3b158aa2019c1d038f32cf7b0f5", null ],
-    [ "GetHasWindowWithObjectName", "class_e_m_studio_1_1_e_m_studio_plugin.html#a08f59e61d626cec0e794e17fb26e8a08", null ],
-    [ "GetLayoutDataVersion", "class_e_m_studio_1_1_e_m_studio_plugin.html#ad5dd17f15b7fcbead14a2cf67655923d", null ],
-    [ "GetName", "class_e_m_studio_1_1_e_m_studio_plugin.html#a9f51ef4ba983524a7b142aaf35b21494", null ],
-    [ "GetObjectName", "class_e_m_studio_1_1_e_m_studio_plugin.html#ad5e61ef1a720de34567c77383c68672d", null ],
-    [ "GetOptions", "class_e_m_studio_1_1_e_m_studio_plugin.html#a89548551c48aacae14e882bfdff4daf0", null ],
-    [ "GetPluginType", "class_e_m_studio_1_1_e_m_studio_plugin.html#a594ecbd907e68e4e47a853ed064f90a9", null ],
-    [ "GetProcessFramePriority", "class_e_m_studio_1_1_e_m_studio_plugin.html#a9d9a0591fd1846bedfc83d5bcdb23c45", null ],
-    [ "Init", "class_e_m_studio_1_1_e_m_studio_plugin.html#a5021bb1ed52d65484ef3a12eda1f8ef7", null ],
-    [ "OnAfterLoadActors", "class_e_m_studio_1_1_e_m_studio_plugin.html#ade3b4d8f5d1ce0c3449c998c330a4ccf", null ],
-    [ "OnAfterLoadLayout", "class_e_m_studio_1_1_e_m_studio_plugin.html#a1e4faf00b3d0ac510eb71c9a696116e8", null ],
-    [ "OnAfterLoadProject", "class_e_m_studio_1_1_e_m_studio_plugin.html#aec5c848085e043dccf8fad7b93ec1f3a", null ],
-    [ "OnBeforeRemovePlugin", "class_e_m_studio_1_1_e_m_studio_plugin.html#a90f6214c23122c56ff77a9d06711579d", null ],
-    [ "OnMainWindowClosed", "class_e_m_studio_1_1_e_m_studio_plugin.html#ae4806d11e9057be0ab9485c2e1f83d49", null ],
-    [ "operator<", "class_e_m_studio_1_1_e_m_studio_plugin.html#aa9e50e4bc4da0283f938361a04e7f1ea", null ],
-    [ "operator>", "class_e_m_studio_1_1_e_m_studio_plugin.html#a3651b9da3729c372df5eea2822e2fb4c", null ],
-    [ "ProcessFrame", "class_e_m_studio_1_1_e_m_studio_plugin.html#a2fe67f7cc125888aedaf3a10fc301189", null ],
-    [ "ReadLayoutSettings", "class_e_m_studio_1_1_e_m_studio_plugin.html#a39cb059510e760bba90212c08eddc16e", null ],
-    [ "Reflect", "class_e_m_studio_1_1_e_m_studio_plugin.html#aa99d6e09aefdffd870163f96a41337b8", null ],
-    [ "Render", "class_e_m_studio_1_1_e_m_studio_plugin.html#a1d7cf0cc09f9dc86d3d3de5a6944e543", null ],
-    [ "SetObjectName", "class_e_m_studio_1_1_e_m_studio_plugin.html#a96d6760d34575bb2ae6f97773252a93e", null ],
-    [ "WriteLayoutData", "class_e_m_studio_1_1_e_m_studio_plugin.html#ad77f46d63bbf5acff9673c3dee085c3f", null ]
+    [ "Render", "class_e_m_studio_1_1_e_m_studio_plugin.html#a1d7cf0cc09f9dc86d3d3de5a6944e543", null ]
 ];

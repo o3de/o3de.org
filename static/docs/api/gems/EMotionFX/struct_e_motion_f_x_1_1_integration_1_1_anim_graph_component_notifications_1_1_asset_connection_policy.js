@@ -1,4 +1,0 @@
-var struct_e_motion_f_x_1_1_integration_1_1_anim_graph_component_notifications_1_1_asset_connection_policy =
-[
-    [ "Connect", "struct_e_motion_f_x_1_1_integration_1_1_anim_graph_component_notifications_1_1_asset_connection_policy.html#ab2e3e092d131602ba3962f3e08ab8ec5", null ]
-];

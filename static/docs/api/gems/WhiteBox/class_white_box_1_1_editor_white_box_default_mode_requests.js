@@ -1,6 +1,5 @@
 var class_white_box_1_1_editor_white_box_default_mode_requests =
 [
-    [ "~EditorWhiteBoxDefaultModeRequests", "class_white_box_1_1_editor_white_box_default_mode_requests.html#abba6d4815c2e0a9204e696572e38b9a3", null ],
     [ "AssignSelectedEdgeTranslationModifier", "class_white_box_1_1_editor_white_box_default_mode_requests.html#a2da280b7ad70acc670ad111c2d0e64c1", null ],
     [ "AssignSelectedPolygonTranslationModifier", "class_white_box_1_1_editor_white_box_default_mode_requests.html#a61ed7db331eaee54753cea1b434d4024", null ],
     [ "AssignSelectedVertexSelectionModifier", "class_white_box_1_1_editor_white_box_default_mode_requests.html#a4a0fec40f938e5976c3f4870d62c8a3d", null ],

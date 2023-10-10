@@ -1,8 +1,10 @@
 var class_r_o_s2_1_1_camera_sensor =
 [
-    [ "CameraSensor", "class_r_o_s2_1_1_camera_sensor.html#afe44c92e31fcad1e30c687e285e5a964", null ],
+    [ "CameraSensor", "class_r_o_s2_1_1_camera_sensor.html#acaafede3432c655880359a0c7f93499d", null ],
     [ "~CameraSensor", "class_r_o_s2_1_1_camera_sensor.html#a85c2470220c482eae535308c8c54c04d", null ],
-    [ "GetCameraSensorDescription", "class_r_o_s2_1_1_camera_sensor.html#a9e89aaa26aaeec1eb0c35d0a00a9a29b", null ],
-    [ "RequestMessagePublication", "class_r_o_s2_1_1_camera_sensor.html#aea77aa2a5adb4c1edfbd413b59519eaf", null ],
-    [ "SetupPasses", "class_r_o_s2_1_1_camera_sensor.html#a2cd0729ef2dd706058970e2216744851", null ]
+    [ "GetCameraSensorDescription", "class_r_o_s2_1_1_camera_sensor.html#a49ca929a051b8775b6caf4617cd386ec", null ],
+    [ "RequestFrame", "class_r_o_s2_1_1_camera_sensor.html#a3ee76159cad11ffbda3a163f9bcc25fd", null ],
+    [ "RequestMessagePublication", "class_r_o_s2_1_1_camera_sensor.html#a052f22873bc1b532033ee8519d340f7d", null ],
+    [ "SetupPasses", "class_r_o_s2_1_1_camera_sensor.html#a2cd0729ef2dd706058970e2216744851", null ],
+    [ "m_cameraSensorDescription", "class_r_o_s2_1_1_camera_sensor.html#ac58374bd1acc43cbc55a7cd3c410bcc3", null ]
 ];

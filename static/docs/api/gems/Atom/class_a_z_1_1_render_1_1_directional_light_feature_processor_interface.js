@@ -1,14 +1,6 @@
 var class_a_z_1_1_render_1_1_directional_light_feature_processor_interface =
 [
-    [ "LightHandle", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#af44623aac57f5e90f11829ea2b85226f", null ],
-    [ "DebugDrawFlags", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498", [
-      [ "DebugDrawNone", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498a10331a6f2c876c9febf1a68ba97d615b", null ],
-      [ "DebugDrawColoring", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498a5e0b09acfa51ad73e2ad6cd6183b7a71", null ],
-      [ "DebugDrawBoundingBoxes", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498a7ae2d9fe18dd5a1a0bbcb4fd518c36f3", null ],
-      [ "DebugDrawAll", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498a72524839d00b027385accdc4ddee40bf", null ]
-    ] ],
     [ "AcquireLight", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a1a17b4564eeacd11ea46f7c726d23d44", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a8c22b9f01d13b2d63bfcfce2c5e9440b", null ],
     [ "CloneLight", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a7e1197dc611bbeeed7f512ea9960d078", null ],
     [ "ReleaseLight", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a4dd9b8faf22bd039ccad3cc17729f457", null ],
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a00ad03dfc00ea2eae867a05a463acf69", null ],

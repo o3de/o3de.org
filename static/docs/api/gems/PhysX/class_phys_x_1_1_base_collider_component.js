@@ -1,27 +1,5 @@
 var class_phys_x_1_1_base_collider_component =
 [
-    [ "ShapeInfoCache", "class_phys_x_1_1_base_collider_component_1_1_shape_info_cache.html", "class_phys_x_1_1_base_collider_component_1_1_shape_info_cache" ],
-    [ "BaseColliderComponent", "class_phys_x_1_1_base_collider_component.html#a756184518f4305ae2c2cae62a15983bd", null ],
-    [ "Activate", "class_phys_x_1_1_base_collider_component.html#a3320599cd168385d51023bc6709bb570", null ],
-    [ "AZ_COMPONENT", "class_phys_x_1_1_base_collider_component.html#abd27e92080de67c4f0beaa191457b335", null ],
-    [ "Deactivate", "class_phys_x_1_1_base_collider_component.html#a195edefd22f61c99b1f64235613b7fcb", null ],
-    [ "GetColliderShapeAabb", "class_phys_x_1_1_base_collider_component.html#a0a03c89a2e4a59d5d577221e605155ba", null ],
-    [ "GetCollisionGroupName", "class_phys_x_1_1_base_collider_component.html#a664b4b3ec3dc85750b3761ded563bad8", null ],
-    [ "GetCollisionLayerName", "class_phys_x_1_1_base_collider_component.html#a54955ef97b2812b94bde447d75e44477", null ],
-    [ "GetDependentServices", "class_phys_x_1_1_base_collider_component.html#aaafd21306e3debc0498f8c9fc5b6ace8", null ],
-    [ "GetIncompatibleServices", "class_phys_x_1_1_base_collider_component.html#a2eb0e28f2586c5ac0f29d249b9db1062", null ],
-    [ "GetProvidedServices", "class_phys_x_1_1_base_collider_component.html#a182618f007611d79bf0c4fc87e84f24b", null ],
-    [ "GetRequiredServices", "class_phys_x_1_1_base_collider_component.html#a8fd4faf8076c1553dfbe6aaff6abf6eb", null ],
-    [ "GetShapeConfigurations", "class_phys_x_1_1_base_collider_component.html#aafd0ecc9f4afbae19577f51cd6b6ef36", null ],
-    [ "GetShapes", "class_phys_x_1_1_base_collider_component.html#ac366b4e6d4d8acf67fe35c5f1ce5c977", null ],
-    [ "IsTrigger", "class_phys_x_1_1_base_collider_component.html#ad55f36f0cfbc7c950df2f1e6972b1ee4", null ],
-    [ "OnTransformChanged", "class_phys_x_1_1_base_collider_component.html#a10743b0a4fc31d84831ee987b41e955c", null ],
-    [ "Reflect", "class_phys_x_1_1_base_collider_component.html#acc3350d2622df5291c18699c976134fc", null ],
-    [ "SetCollisionGroup", "class_phys_x_1_1_base_collider_component.html#a5993968b213ad217a11a0384176c4bc8", null ],
-    [ "SetCollisionLayer", "class_phys_x_1_1_base_collider_component.html#a3b58b995fa5f2b029a798d020c878b4a", null ],
-    [ "SetShapeConfigurationList", "class_phys_x_1_1_base_collider_component.html#af9c053bd02463ea839cd10325e951495", null ],
-    [ "ToggleCollisionLayer", "class_phys_x_1_1_base_collider_component.html#a80f71a4d38fcf29d5ad400a02b579824", null ],
-    [ "UpdateScaleForShapeConfigs", "class_phys_x_1_1_base_collider_component.html#a16670e2eb3408ce1e2ec8702c7abacf6", null ],
-    [ "m_shapeConfigList", "class_phys_x_1_1_base_collider_component.html#a556c7fb3eb629a1e5ca7c91bb1ca0da2", null ],
-    [ "m_shapeInfoCache", "class_phys_x_1_1_base_collider_component.html#a032e2466eba79a5ac13660250db70890", null ]
+    [ "ShapeInfoCache", "class_phys_x_1_1_base_collider_component_1_1_shape_info_cache.html", null ],
+    [ "UpdateScaleForShapeConfigs", "class_phys_x_1_1_base_collider_component.html#a16670e2eb3408ce1e2ec8702c7abacf6", null ]
 ];

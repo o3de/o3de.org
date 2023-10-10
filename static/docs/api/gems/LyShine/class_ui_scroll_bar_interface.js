@@ -1,6 +1,5 @@
 var class_ui_scroll_bar_interface =
 [
-    [ "~UiScrollBarInterface", "class_ui_scroll_bar_interface.html#a9b184537d83b2ef5403e310e939677b1", null ],
     [ "GetAutoFadeDelay", "class_ui_scroll_bar_interface.html#a84372bc51848fab499fb072e06e2c719", null ],
     [ "GetAutoFadeSpeed", "class_ui_scroll_bar_interface.html#a44b84b2906b5364dc060e8864aa4ce44", null ],
     [ "GetHandleEntity", "class_ui_scroll_bar_interface.html#a8a99df4c215fbc1da421425fbb36a2ce", null ],

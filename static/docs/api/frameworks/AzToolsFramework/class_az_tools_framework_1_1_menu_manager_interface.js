@@ -1,13 +1,12 @@
 var class_az_tools_framework_1_1_menu_manager_interface =
 [
-    [ "AddActionsToMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#ad82fba48e1353ee369738f879a3e51b1", null ],
+    [ "AddActionsToMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#a09dde93f11f0b5ddaaad8b8eae326180", null ],
     [ "AddActionToMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#aee69255c1d22d9302d36d45779a21462", null ],
     [ "AddMenuToMenuBar", "class_az_tools_framework_1_1_menu_manager_interface.html#a1b16e614de970ec3109fc95421a69310", null ],
     [ "AddSeparatorToMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#a1e21afdb5cddd92db6af5062274f7910", null ],
-    [ "AddSubMenusToMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#a3a8656e368d57c2e506737feb68bcd6c", null ],
+    [ "AddSubMenusToMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#a41eeb010dc633e047f2e29fc67acaa3e", null ],
     [ "AddSubMenuToMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#a4ee0381ce508c570ea3e2cafd2342e2a", null ],
     [ "AddWidgetToMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#adf033fe5c9c55e69f2d8b06f1edaf65d", null ],
-    [ "AZ_RTTI", "class_az_tools_framework_1_1_menu_manager_interface.html#a795ea020714025b07c27d9651b330fb3", null ],
     [ "DisplayMenuAtScreenPosition", "class_az_tools_framework_1_1_menu_manager_interface.html#ade217830dcbe1cbb0e59c2d76b06c6e5", null ],
     [ "DisplayMenuUnderCursor", "class_az_tools_framework_1_1_menu_manager_interface.html#a22733ac9669160df455615cc8ab21b34", null ],
     [ "GetSortKeyOfActionInMenu", "class_az_tools_framework_1_1_menu_manager_interface.html#a1caa53a02c740ccf203fb0530989c6c5", null ],

@@ -1,30 +1,8 @@
 var class_physics_1_1_shape =
 [
-    [ "~Shape", "class_physics_1_1_shape.html#a75237f41f392960bb7451ab15960d3dc", null ],
-    [ "AttachedToActor", "class_physics_1_1_shape.html#a75bce92c1c3f39bc2cf95e557aa821c2", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_physics_1_1_shape.html#a54b53b6688234fa8bd7473d11e753c55", null ],
-    [ "AZ_RTTI", "class_physics_1_1_shape.html#a7a71d094e20aec315c8156a74bc1bd9f", null ],
-    [ "DetachedFromActor", "class_physics_1_1_shape.html#a681777cce72f459422a8faf97727b169", null ],
     [ "GetAabb", "class_physics_1_1_shape.html#a0f4e49d3d5212d1ca878536ba6dae0fa", null ],
     [ "GetAabbLocal", "class_physics_1_1_shape.html#abc5005bb9f7b09bd1fb9e26bb0e6f023", null ],
-    [ "GetCollisionGroup", "class_physics_1_1_shape.html#af3bbda0c25fbf964956dc7df7061abdb", null ],
-    [ "GetCollisionLayer", "class_physics_1_1_shape.html#a4d1c831497154933a7395d7bc166b752", null ],
-    [ "GetContactOffset", "class_physics_1_1_shape.html#affc2f37d83550d62469450c3878abec1", null ],
     [ "GetGeometry", "class_physics_1_1_shape.html#aa1d65af744c5cde837ca820e92a77ea8", null ],
-    [ "GetLocalPose", "class_physics_1_1_shape.html#a5a0d5938b9c39927ec82371d122ed78a", null ],
-    [ "GetMaterial", "class_physics_1_1_shape.html#a2d76b1c0d867a3df75c98ef2dc7f2b5e", null ],
-    [ "GetMaterialId", "class_physics_1_1_shape.html#a9ccda28e12e17daa903270728feb68c0", null ],
-    [ "GetNativePointer", "class_physics_1_1_shape.html#ae6fcf95f820dcfb234eec28a3d9c7d47", null ],
-    [ "GetNativePointer", "class_physics_1_1_shape.html#a8538d7f7c796d8d8231773955383334e", null ],
-    [ "GetRestOffset", "class_physics_1_1_shape.html#a07862a7e45a93405623d331fe33c069e", null ],
-    [ "GetTag", "class_physics_1_1_shape.html#aa7e982878c7f79141b2d1eb3ae777b8e", null ],
     [ "RayCast", "class_physics_1_1_shape.html#a3547682890fbee8af8e6cbb0c0fa593c", null ],
-    [ "RayCastLocal", "class_physics_1_1_shape.html#aac2911f98e7fcc8373b50ca17e1fc7d4", null ],
-    [ "SetCollisionGroup", "class_physics_1_1_shape.html#a1e40878125f97fa9b8959c70f9f47265", null ],
-    [ "SetCollisionLayer", "class_physics_1_1_shape.html#a840cbd4cb57f281980cdf8753d5423a9", null ],
-    [ "SetContactOffset", "class_physics_1_1_shape.html#ae6a2c14f3d5445ff33c39d3377e87c66", null ],
-    [ "SetLocalPose", "class_physics_1_1_shape.html#a58435898a88983b2a027410f2868e992", null ],
-    [ "SetMaterial", "class_physics_1_1_shape.html#a7dfa0c1b2c43da2ad87a3f3448d2f634", null ],
-    [ "SetName", "class_physics_1_1_shape.html#a822199bbe52eff0e0395d256af5deab3", null ],
-    [ "SetRestOffset", "class_physics_1_1_shape.html#aab196798dbf8a796580360d4a4f11e8d", null ]
+    [ "RayCastLocal", "class_physics_1_1_shape.html#aac2911f98e7fcc8373b50ca17e1fc7d4", null ]
 ];

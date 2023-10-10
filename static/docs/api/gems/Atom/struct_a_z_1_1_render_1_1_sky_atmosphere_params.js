@@ -1,30 +1,5 @@
 var struct_a_z_1_1_render_1_1_sky_atmosphere_params =
 [
-    [ "m_absorption", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a8fa55a36a61d35b7ad8a9ecd27679c7e", null ],
-    [ "m_aerialDepthFactor", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#af5e5564251d24dcfd0f4c07c67224222", null ],
-    [ "m_aerialPerspectiveEnabled", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a85e33c226aa3f0d62f6c16abc059393e", null ],
-    [ "m_atmosphereRadius", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a4184e87b335e3d1308fc88cee7167441", null ],
-    [ "m_fastAerialPerspectiveEnabled", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#aed4325edcf0781ec96db221206bcda9f", null ],
-    [ "m_fastSkyEnabled", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a977d7dd66a970e681879aaf5cbadb2df", null ],
-    [ "m_groundAlbedo", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#af0e01d02fd808fb4193ad0f157d19518", null ],
     [ "m_luminanceFactor", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#ab86fde9b0347ccd50dff981520713ab6", null ],
-    [ "m_maxSamples", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#ab2b0ff02b159eaa1c1297365ac234146", null ],
-    [ "m_mieAbsorption", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a2875bd92639d76f4b861fa43fc733a5d", null ],
-    [ "m_mieExpDistribution", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#ab0c12f36f2dcb320be93e1ebb76b0d2d", null ],
-    [ "m_mieScattering", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#aee1343673c6ae501c70777d59f44919d", null ],
-    [ "m_minSamples", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#ab840ef16eb1eb2614de35a289e9b48c3", null ],
-    [ "m_nearClip", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a67431e8ae6bcba5bc8ac2da5c211fc2b", null ],
-    [ "m_nearFadeDistance", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a974d206d166608c5b3488c69b4def40a", null ],
-    [ "m_planetOrigin", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a22b4be3745533f81c65165e395379f80", null ],
-    [ "m_planetRadius", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a97303aa91795ba116a9283170c57760e", null ],
-    [ "m_rayleighExpDistribution", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a90c20456e743160ea3def5f40da6a974", null ],
-    [ "m_rayleighScattering", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#ad13136bca154110653660dca110963dc", null ],
-    [ "m_shadowsEnabled", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a84316c9c56b4a953b2863d1d3475b10f", null ],
-    [ "m_sunColor", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#ace543ff4dd17037b191bc5e62f564d8c", null ],
-    [ "m_sunDirection", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a36b20669dd7b2f10e1651bd1960208cd", null ],
-    [ "m_sunEnabled", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a70677a8a1fb4793989125d5477b8a668", null ],
-    [ "m_sunFalloffFactor", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a5058fa326af00068b10d02f7512ff46b", null ],
-    [ "m_sunLimbColor", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a9b4daeb07d03040320cfa1f4eff26a6d", null ],
-    [ "m_sunRadiusFactor", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a7cd6bcbf1064bd6b600824dbde0040a0", null ],
-    [ "m_sunShadowsFarClip", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a762c9ffb925b6fcf8e25c60241302ccf", null ]
+    [ "m_planetOrigin", "struct_a_z_1_1_render_1_1_sky_atmosphere_params.html#a22b4be3745533f81c65165e395379f80", null ]
 ];

@@ -1,6 +1,5 @@
 var struct_a_z_1_1_android_1_1_android_env_1_1_descriptor =
 [
-    [ "Descriptor", "struct_a_z_1_1_android_1_1_android_env_1_1_descriptor.html#ae9a26d5fbe8ce168e1e6a9fff57a9bd5", null ],
     [ "m_activityRef", "struct_a_z_1_1_android_1_1_android_env_1_1_descriptor.html#a7a6ce6d445094117cf0c96a723aeb9fc", null ],
     [ "m_appPrivateStoragePath", "struct_a_z_1_1_android_1_1_android_env_1_1_descriptor.html#a94ec18bffbff3050a3570423029a9151", null ],
     [ "m_appPublicStoragePath", "struct_a_z_1_1_android_1_1_android_env_1_1_descriptor.html#a41a1f952fb14a93d66ce0b5a374cf272", null ],

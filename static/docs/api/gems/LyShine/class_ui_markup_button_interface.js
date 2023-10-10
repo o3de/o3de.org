@@ -1,6 +1,5 @@
 var class_ui_markup_button_interface =
 [
-    [ "~UiMarkupButtonInterface", "class_ui_markup_button_interface.html#aecb18497015439864210147a41dde38a", null ],
     [ "GetLinkColor", "class_ui_markup_button_interface.html#a342fc1b54b1dae2b0d87a84f48dff7aa", null ],
     [ "GetLinkHoverColor", "class_ui_markup_button_interface.html#a64d2271d78992e86f2f53d36648a069a", null ],
     [ "SetLinkColor", "class_ui_markup_button_interface.html#a741eb44545cc488593e82ba60e58db8e", null ],

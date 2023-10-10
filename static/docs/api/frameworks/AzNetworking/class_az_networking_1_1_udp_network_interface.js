@@ -1,11 +1,10 @@
 var class_az_networking_1_1_udp_network_interface =
 [
     [ "UdpNetworkInterface", "class_az_networking_1_1_udp_network_interface.html#a70757ce5e7a9fdcabc7e1182be40c137", null ],
-    [ "~UdpNetworkInterface", "class_az_networking_1_1_udp_network_interface.html#aeb083ad4eb572d70078ea802c2f92349", null ],
     [ "Connect", "class_az_networking_1_1_udp_network_interface.html#ab9beb6b36f8a5d053673673ca6bf80f9", null ],
     [ "Disconnect", "class_az_networking_1_1_udp_network_interface.html#a06c314ac0ef88dced460596eecebe7f0", null ],
-    [ "GetConnectionListener", "class_az_networking_1_1_udp_network_interface.html#a24d913a3be201fa8277e172f510ff652", null ],
-    [ "GetConnectionSet", "class_az_networking_1_1_udp_network_interface.html#a0eebc4a0e69faa908a703ad92ee59d4a", null ],
+    [ "GetConnectionListener", "class_az_networking_1_1_udp_network_interface.html#a4449403227403b8ceb3cd6be9749cc29", null ],
+    [ "GetConnectionSet", "class_az_networking_1_1_udp_network_interface.html#ab0e6567ae154cfda78b330772bdf8367", null ],
     [ "GetName", "class_az_networking_1_1_udp_network_interface.html#a08f0cf7417b334f17df10ced609dc4c2", null ],
     [ "GetPort", "class_az_networking_1_1_udp_network_interface.html#ade2919f4f0f4ce0bf31d341cc17e4898", null ],
     [ "GetTimeoutMs", "class_az_networking_1_1_udp_network_interface.html#acdab58b0a002ed979daa82d0ff7444c5", null ],
@@ -19,7 +18,5 @@ var class_az_networking_1_1_udp_network_interface =
     [ "SetTimeoutMs", "class_az_networking_1_1_udp_network_interface.html#a4ad85278b43a6672d34070103ca66177", null ],
     [ "StopListening", "class_az_networking_1_1_udp_network_interface.html#ad05602455af67d30adca7f8f7defbb70", null ],
     [ "Update", "class_az_networking_1_1_udp_network_interface.html#a7a3c8e056d0116329c62e01739a782ff", null ],
-    [ "WasPacketAcked", "class_az_networking_1_1_udp_network_interface.html#a962021d19f08b7d04ffa9b3dcb351df0", null ],
-    [ "UdpConnection", "class_az_networking_1_1_udp_network_interface.html#aabd25bc2f0cbbac91298c2aa63c363fd", null ],
-    [ "UdpReliableQueue", "class_az_networking_1_1_udp_network_interface.html#a68d9730ea5ffe86add7e98bd7bfe45f7", null ]
+    [ "WasPacketAcked", "class_az_networking_1_1_udp_network_interface.html#a962021d19f08b7d04ffa9b3dcb351df0", null ]
 ];

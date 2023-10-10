@@ -1,14 +1,10 @@
 var class_a_z_1_1_bezier_spline =
 [
     [ "BezierData", "struct_a_z_1_1_bezier_spline_1_1_bezier_data.html", "struct_a_z_1_1_bezier_spline_1_1_bezier_data" ],
-    [ "BezierSpline", "class_a_z_1_1_bezier_spline.html#aef156de9b650d8372dd3aee0898215f2", null ],
-    [ "BezierSpline", "class_a_z_1_1_bezier_spline.html#a48a76fb65f1727d6bd3405d976967a55", null ],
-    [ "BezierSpline", "class_a_z_1_1_bezier_spline.html#a08c365fbf730f26fb81869c7cbf83aed", null ],
-    [ "~BezierSpline", "class_a_z_1_1_bezier_spline.html#add01a1883c1cd09556b8b0cfb0be8d74", null ],
     [ "GetAabb", "class_a_z_1_1_bezier_spline.html#a300a3d695767eae00b4084f2ba49456d", null ],
     [ "GetAddressByDistance", "class_a_z_1_1_bezier_spline.html#a9c357de5b3f47005b6dab24d8ebb6e5f", null ],
     [ "GetAddressByFraction", "class_a_z_1_1_bezier_spline.html#a50c50718b41cfe35e8512e0d2af6e98b", null ],
-    [ "GetBezierData", "class_a_z_1_1_bezier_spline.html#a3acdc92adbf0b827cd764b1e511b5bbc", null ],
+    [ "GetBezierData", "class_a_z_1_1_bezier_spline.html#a91e9258ac636bf2c4ec88d4a66eab07d", null ],
     [ "GetLength", "class_a_z_1_1_bezier_spline.html#ab4641702355f9704627fa7373e8a0929", null ],
     [ "GetNearestAddressPosition", "class_a_z_1_1_bezier_spline.html#acd02c1c4f439f1f4c78057b432909220", null ],
     [ "GetNearestAddressRay", "class_a_z_1_1_bezier_spline.html#aeb3c272ce22364c5980742edc334da15", null ],
@@ -23,8 +19,5 @@ var class_a_z_1_1_bezier_spline =
     [ "OnVertexAdded", "class_a_z_1_1_bezier_spline.html#ae1e67d8081d9e078186a352c5ec224d3", null ],
     [ "OnVertexRemoved", "class_a_z_1_1_bezier_spline.html#a322c5070db509e9798452928d7271490", null ],
     [ "OnVerticesCleared", "class_a_z_1_1_bezier_spline.html#aacb384d91fb0f18f17cd64562d417642", null ],
-    [ "OnVerticesSet", "class_a_z_1_1_bezier_spline.html#ad3bd1c917378dac3b60b4b171bcd0bef", null ],
-    [ "operator=", "class_a_z_1_1_bezier_spline.html#aed89291a5b254588b980e7ce7c4a1f6c", null ],
-    [ "operator=", "class_a_z_1_1_bezier_spline.html#af2126b86b41703c4c7fdd752772f3ec2", null ],
-    [ "Reflect", "class_a_z_1_1_bezier_spline.html#a9ce6b8dc33cb7783504bf7fa02d134ee", null ]
+    [ "OnVerticesSet", "class_a_z_1_1_bezier_spline.html#ad3bd1c917378dac3b60b4b171bcd0bef", null ]
 ];

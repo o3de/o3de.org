@@ -1,5 +1,0 @@
-var struct_script_canvas_1_1_data_1_1_property_traits_3_01_data_1_1e_type_1_1_behavior_context_object_01_4 =
-[
-    [ "GetGetterWrappers", "struct_script_canvas_1_1_data_1_1_property_traits_3_01_data_1_1e_type_1_1_behavior_context_object_01_4.html#a9a07dedd952453868deeefebe75cd1bf", null ],
-    [ "GetSetterWrappers", "struct_script_canvas_1_1_data_1_1_property_traits_3_01_data_1_1e_type_1_1_behavior_context_object_01_4.html#a00dcc92a2e4ba3665925eeb0be92243c", null ]
-];

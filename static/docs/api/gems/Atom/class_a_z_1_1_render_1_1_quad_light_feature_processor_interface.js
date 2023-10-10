@@ -1,8 +1,6 @@
 var class_a_z_1_1_render_1_1_quad_light_feature_processor_interface =
 [
-    [ "LightHandle", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a28d7390cca01487ff67abf00766c36bf", null ],
     [ "AcquireLight", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#ada97692b398932c1fcb340a84d6258a7", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#ab45f9d0c851522ca21f03367f9f67e04", null ],
     [ "CloneLight", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#aa90c296d6790f37d012eeaea617dc7c3", null ],
     [ "ReleaseLight", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a95c1831136b1e98faf4a4225be2fb996", null ],
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a12237c41a9060b27b835600118ec2854", null ],
@@ -14,6 +12,5 @@ var class_a_z_1_1_render_1_1_quad_light_feature_processor_interface =
     [ "SetQuadData", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#ac2ad8ac9046228ce2cf9c2c1844d2696", null ],
     [ "SetQuadDimensions", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a1ecd8643b6b5def90f6379c917c025f4", null ],
     [ "SetRgbIntensity", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a1a4468844cbfad56fcb5a003b88821f9", null ],
-    [ "SetUseFastApproximation", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a24d56b6651c2d09895c5f81cd865200f", null ],
-    [ "PhotometricUnitType", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a4a3c332af43d80d181e2017268215fac", null ]
+    [ "SetUseFastApproximation", "class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html#a24d56b6651c2d09895c5f81cd865200f", null ]
 ];

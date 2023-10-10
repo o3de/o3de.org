@@ -1,7 +1,4 @@
 var struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_1_1_event_data_01_4_01_4 =
 [
-    [ "GenericClassSharedPtr", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_d128eab16e919d1f69b3362a44533d34.html", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_d128eab16e919d1f69b3362a44533d34" ],
-    [ "ContainerType", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_1_1_event_data_01_4_01_4.html#a46d982fea80dc3b2d5e6f0c887e565e5", null ],
-    [ "GetClassTypeId", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_1_1_event_data_01_4_01_4.html#a0d1311465d68a9038916340375b9e2e6", null ],
-    [ "GetGenericInfo", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_1_1_event_data_01_4_01_4.html#a9e4dbcc0726307f043ae870f85f97d99", null ]
+    [ "GenericClassSharedPtr", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_d128eab16e919d1f69b3362a44533d34.html", null ]
 ];
