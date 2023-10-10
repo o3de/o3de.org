@@ -9,7 +9,6 @@ var class_ui_flipbook_animation_interface =
       [ "Linear", "class_ui_flipbook_animation_interface.html#a0a0c3cafaca279a382ab0af4c02d6bf9a32a843da6ea40ab3b17a3421ccdf671b", null ],
       [ "PingPong", "class_ui_flipbook_animation_interface.html#a0a0c3cafaca279a382ab0af4c02d6bf9a99e52704462d3580db3528cad7ea9660", null ]
     ] ],
-    [ "~UiFlipbookAnimationInterface", "class_ui_flipbook_animation_interface.html#a1922887d782370442599bbac54e348dd", null ],
     [ "GetCurrentFrame", "class_ui_flipbook_animation_interface.html#aa2bb1c3f5217a28aa22e50933d43ff99", null ],
     [ "GetEndFrame", "class_ui_flipbook_animation_interface.html#a3bcdae46759d87bd28bafac576a20435", null ],
     [ "GetFramerate", "class_ui_flipbook_animation_interface.html#a432ba7ff9938b7fa016512f165348745", null ],

@@ -20,7 +20,7 @@ There are several Gems to power robotic simulations with **Open 3D Engine (O3DE)
 
 ## Templates
 
-There are two templates for robotics:
+There are three templates for robotics:
 - [ROS 2 project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate):
   - A simple interior scene with ROSBot XL robot:
   - It is the most lightweight and basic robotic project template.
@@ -29,10 +29,14 @@ There are two templates for robotics:
   - A photorealistic warehouse with a Proteus robot.
   - Easily customizable, extendable environment.
   - It is easy to add more robots using the included spawning component.
+- [Manipulation project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2RoboticManipulationTemplate):
+  - Two levels: Manipulation R&D and Palletization.
+  - Suitable for use-cases with robotic arms.
+  - Two robotic arm models, two kinds of grippers and items for manipulation are included.
 
 ## Demos
 
 There are open-source project demonstrating what can be done with the ROS 2 Gem:
 - [Robot Vacuum Sample](https://github.com/o3de/RobotVacuumSample): a robot vacuum navigating in a beautiful apartment: 
 - [Robot Harvesting Sample](https://github.com/o3de/ROSConDemo): agricultural robots orchestrated through ROS 2 to pick apples in a scenic orchard.
-
+- [Automated Fulfillment Center](https://github.com/RobotecAI/ROSCon2023Demo): robotic arms and Autonomous Mobile Robots working on palletization and intra-logistics.

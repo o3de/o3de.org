@@ -1,26 +1,14 @@
 var class_lmbr_central_1_1_spline_attribute =
 [
     [ "Interpolator", "class_lmbr_central_1_1_spline_attribute.html#adff6280dfcb6334304fb168dfea3e193", null ],
-    [ "SplineAttribute", "class_lmbr_central_1_1_spline_attribute.html#a0e51d47daae50b573a6aded2b4814e12", null ],
-    [ "SplineAttribute", "class_lmbr_central_1_1_spline_attribute.html#a0440a39bca93e73cd64cd609592f5da7", null ],
-    [ "Activate", "class_lmbr_central_1_1_spline_attribute.html#a006c109a5701090771514442601b3569", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_lmbr_central_1_1_spline_attribute.html#a2d87a8fdae8dd8289b97846d5c252854", null ],
-    [ "AZ_RTTI", "class_lmbr_central_1_1_spline_attribute.html#aed7ac365c18811f34c01d8ba74e42ad3", null ],
-    [ "Deactivate", "class_lmbr_central_1_1_spline_attribute.html#a9aff5a7d923f7970b9f885d808924968", null ],
-    [ "GetElement", "class_lmbr_central_1_1_spline_attribute.html#a2638f3e0f3ffdc862d16b0ff8c4935fb", null ],
+    [ "GetElement", "class_lmbr_central_1_1_spline_attribute.html#a09d47599acac113af6dd806c216dfd58", null ],
     [ "GetElementDynamicEditData", "class_lmbr_central_1_1_spline_attribute.html#a785a399bdd885764c81479bba82dbb2c", null ],
-    [ "GetElementEditData", "class_lmbr_central_1_1_spline_attribute.html#ab866d03d907f473a146ed3da5247ea24", null ],
-    [ "GetElementInterpolated", "class_lmbr_central_1_1_spline_attribute.html#a9bb0f856f7f2d993555ad9058af86db4", null ],
-    [ "GetElementInterpolated", "class_lmbr_central_1_1_spline_attribute.html#ad59634db98bb096873f94482ac714ad8", null ],
-    [ "OnVertexAdded", "class_lmbr_central_1_1_spline_attribute.html#adabdaf86bff8318b369a9760048e1840", null ],
-    [ "OnVertexRemoved", "class_lmbr_central_1_1_spline_attribute.html#ae7965649f206c0f0565b428f17225f00", null ],
-    [ "OnVerticesCleared", "class_lmbr_central_1_1_spline_attribute.html#af49cf9b6e3d4df2d13abeb5a946a7883", null ],
-    [ "OnVerticesSet", "class_lmbr_central_1_1_spline_attribute.html#a6bbc831e0a7e4be6c7aa2fd62bf8e0d2", null ],
-    [ "Reflect", "class_lmbr_central_1_1_spline_attribute.html#adb70deb0599737c3338ce4ab290059a4", null ],
+    [ "GetElementEditData", "class_lmbr_central_1_1_spline_attribute.html#a82e7aa082fb8f60f3c4566e596f9d257", null ],
+    [ "GetElementInterpolated", "class_lmbr_central_1_1_spline_attribute.html#aab2a36fc4d08be5a64b0988f1accadc8", null ],
+    [ "GetElementInterpolated", "class_lmbr_central_1_1_spline_attribute.html#a39210fde398107f6adc2e8e31517387f", null ],
     [ "SetElement", "class_lmbr_central_1_1_spline_attribute.html#af098b1d828463875f21671d264741e49", null ],
     [ "SetElementEditData", "class_lmbr_central_1_1_spline_attribute.html#ad4d0191b4a3c0ac22d8d5cda65d2caf3", null ],
-    [ "Size", "class_lmbr_central_1_1_spline_attribute.html#afae7e17e68595061b11af67d5c2d3f4c", null ],
+    [ "Size", "class_lmbr_central_1_1_spline_attribute.html#a54c98c03c59f14cb3837e9196d2cba63", null ],
     [ "m_elementEditData", "class_lmbr_central_1_1_spline_attribute.html#a4dfaa9f1963a66bfc9f12e92e8087e18", null ],
-    [ "m_elements", "class_lmbr_central_1_1_spline_attribute.html#a83679daefadc9dfc63a3d5747c004f17", null ],
-    [ "m_entityId", "class_lmbr_central_1_1_spline_attribute.html#a2cf4d607b0fb0d80eed0569d98908aae", null ]
+    [ "m_elements", "class_lmbr_central_1_1_spline_attribute.html#a83679daefadc9dfc63a3d5747c004f17", null ]
 ];

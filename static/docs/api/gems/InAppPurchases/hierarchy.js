@@ -1,14 +1,14 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "InAppPurchases::SystemComponent", "class_in_app_purchases_1_1_system_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "InAppPurchases::InAppPurchasesRequests", "class_in_app_purchases_1_1_in_app_purchases_requests.html", null ],
       [ "InAppPurchases::InAppPurchasesResponse", "class_in_app_purchases_1_1_in_app_purchases_response.html", null ],
       [ "InAppPurchases::InAppPurchasesResponseAccessor", "class_in_app_purchases_1_1_in_app_purchases_response_accessor.html", null ]
     ] ],
-    [ "Module", null, [
+    [ "AZ::Module", null, [
       [ "InAppPurchases::InAppPurchasesModule", "class_in_app_purchases_1_1_in_app_purchases_module.html", null ]
     ] ],
     [ "InAppPurchases::InAppPurchasesCache", "class_in_app_purchases_1_1_in_app_purchases_cache.html", null ],
@@ -24,10 +24,10 @@ var hierarchy =
       [ "InAppPurchases::PurchasedProductDetailsAndroid", "class_in_app_purchases_1_1_purchased_product_details_android.html", null ],
       [ "InAppPurchases::PurchasedProductDetailsApple", "class_in_app_purchases_1_1_purchased_product_details_apple.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "InAppPurchasesRequestBus::Handler", null, [
       [ "InAppPurchases::SystemComponent", "class_in_app_purchases_1_1_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "InAppPurchasesResponseAccessorBus::Handler", null, [
       [ "InAppPurchases::SystemComponent", "class_in_app_purchases_1_1_system_component.html", null ]
     ] ],
     [ "NSObject", null, [

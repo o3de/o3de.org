@@ -19,7 +19,7 @@ See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bund
 AssetBundlerBatch command --parameterWithArgs arg1,arg2 --flagParameter ...
 ```
 
- The `AssetBundlerBatch` executable is contained in the `dev/Bin64HostPlatform` folder of your project.
+ The `AssetBundlerBatch` executable is contained in the same folder as the `Editor` and `AssetProcessor` executables.  If you do not find the executable, you likely need to build `AssetBundlerBatch` by running the `cmake --build <build path>` command with `--target AssetBundlerBatch`. 
 
 The elements in this example invocation break down to:
 +  `command` - The command for the asset bundler to run. Examples include `seeds` and `assetLists`.
@@ -256,7 +256,10 @@ Automatically include the default seed lists for the O3DE Engine, default projec
 +  **Gems** - `Gems/gem_name/Assets/gem_name_Dependencies.xml`
 +  **Project** - `project_name/project_name_Dependencies.xml`
 
-By default, the project dependencies includes pre-loaded particle libraries and game-wide audio, excluding level-specific audio.
+This flag also includes default seed list files in the following locations:
++  **Engine** - `<engine root>/Assets/Engine/SeedAssetList.seed`
++  **Platform** - `<engine root>/Assets/Engine/Platforms/<platform>/*.seed`
++  **Gems** - `<gem name>/Assets/seedList.seed`
 
 This argument can be used along with other arguments that provide seeds.
 

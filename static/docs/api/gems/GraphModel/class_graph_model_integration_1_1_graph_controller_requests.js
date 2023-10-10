@@ -1,6 +1,5 @@
 var class_graph_model_integration_1_1_graph_controller_requests =
 [
-    [ "BusIdType", "class_graph_model_integration_1_1_graph_controller_requests.html#a133759502581d3aa207942af25e6568a", null ],
     [ "AddConnection", "class_graph_model_integration_1_1_graph_controller_requests.html#aae15e894628f58ea740f1f26995bb5b0", null ],
     [ "AddConnectionBySlotId", "class_graph_model_integration_1_1_graph_controller_requests.html#a21d78ff6c86ba05530b4bd6d1c02c9bc", null ],
     [ "AddNode", "class_graph_model_integration_1_1_graph_controller_requests.html#a9fab1e0ab81ee88f24bc333f3f5701e9", null ],
@@ -28,7 +27,5 @@ var class_graph_model_integration_1_1_graph_controller_requests =
     [ "SetWrapperNodeActionString", "class_graph_model_integration_1_1_graph_controller_requests.html#a1ff45ad1f5f735599fd3511258939702", null ],
     [ "UnwrapNode", "class_graph_model_integration_1_1_graph_controller_requests.html#a24c2076b6db84a0e5244ed45b0d13ffb", null ],
     [ "WrapNode", "class_graph_model_integration_1_1_graph_controller_requests.html#a09fe5145ef4f40dd70dac14e42cd0137", null ],
-    [ "WrapNodeOrdered", "class_graph_model_integration_1_1_graph_controller_requests.html#adb9b46c6199f80c075f9f00bae2b2538", null ],
-    [ "AddressPolicy", "class_graph_model_integration_1_1_graph_controller_requests.html#a251aeb3f55007e047c9481e49a8e0c42", null ],
-    [ "HandlerPolicy", "class_graph_model_integration_1_1_graph_controller_requests.html#a2f71edbf2c4f34b7b17dd690f04a5203", null ]
+    [ "WrapNodeOrdered", "class_graph_model_integration_1_1_graph_controller_requests.html#adb9b46c6199f80c075f9f00bae2b2538", null ]
 ];

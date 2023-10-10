@@ -21,22 +21,28 @@ Use the following [console functor (cfunc)](/docs/user-guide/programming/az-cons
 | LoadLevel              | Unloads the current level and loads a new one with the given asset name. <br> Used to setup the initial level for the game or simiulation. | *(Required)* Path to a level file.                                               | Command is not specific to network or multiplayer but used for all games and simulations. | 
 | sv_launch_local_client | Launches a local client and connects to this host server.                                                                                  |                                                                                  | Only works if currently hosting.                                                          |
 
-These console commands can be executed dynamically via the [console command line](/docs/user-guide/editor/console/) or placed within a console command configuration file, usually with the `.cfg` suffix. Commands will be executed in the order written.
+These console commands can be executed dynamically via the [console command line](/docs/user-guide/editor/console/) or placed within a console command configuration file.
 
-For a networked game or simulation, a typical server configuration file should contain:
+When using a console command configuration file, it is common practice to place the file in the project root directory. Use `.cfg`  as the filename suffix. Commands will be executed in the order written.
 
-```
+For a networked game or simulation, a typical _server_ configuration file should contain:
+
+```cmd
 host
 LoadLevel <path to Level>
 ```
 
-And the client's configuration file should contain:
+A typical _client_ configuration file should contain:
 
-```
+```cmd
 connect
 ```
 
-Console commands in configuration files can be passed to client and server launchers using the `console-command-file` option, for example `MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg`.
+Console commands in configuration files can be passed to client and server launchers using the `console-command-file` option. Example:
+
+```cmd
+MultiplayerSample.ServerLauncher.exe --console-command-file=launch_server.cfg
+```
 
 ## Client settings
 The `cl` CVARs control client behavior.

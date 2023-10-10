@@ -47,7 +47,8 @@ You can manually launch the executables for Client and Server and configure them
 
 You can manually launch the executables for Client and Server and pass a pre-defined configuration file to each for them to execute on launch. Commands in these cfgs files are executed in listed order.
 
-1. In your project directory create `launch_client.cfg` and `launch_server.cfg`.
+1. In the root of your project directory create `launch_client.cfg` and `launch_server.cfg`.
+
 2. Open `launch_server.cfg` and edit it to look like the following:
 
     ```txt

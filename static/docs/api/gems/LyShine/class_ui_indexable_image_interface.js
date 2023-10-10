@@ -1,6 +1,5 @@
 var class_ui_indexable_image_interface =
 [
-    [ "~UiIndexableImageInterface", "class_ui_indexable_image_interface.html#a217ebb9baa9b414e8e83a5ae89d45de2", null ],
     [ "GetImageIndex", "class_ui_indexable_image_interface.html#a5f18dff30db7fd493a87c116c6d1eb0a", null ],
     [ "GetImageIndexAlias", "class_ui_indexable_image_interface.html#a04727073ac01afae3636ed055f8d61c4", null ],
     [ "GetImageIndexCount", "class_ui_indexable_image_interface.html#ac8b73ea14155df6688531d2ee5dce513", null ],

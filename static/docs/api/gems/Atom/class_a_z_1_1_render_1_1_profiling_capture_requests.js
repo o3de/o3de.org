@@ -1,6 +1,5 @@
 var class_a_z_1_1_render_1_1_profiling_capture_requests =
 [
-    [ "~ProfilingCaptureRequests", "class_a_z_1_1_render_1_1_profiling_capture_requests.html#a0f452d23090dac88d5e6ad6f9da77f05", null ],
     [ "CaptureBenchmarkMetadata", "class_a_z_1_1_render_1_1_profiling_capture_requests.html#a865a04437136c29ef3e1b50317f12cde", null ],
     [ "CaptureCpuFrameTime", "class_a_z_1_1_render_1_1_profiling_capture_requests.html#ad992b8a3687aeddefb246e236fb2275e", null ],
     [ "CapturePassPipelineStatistics", "class_a_z_1_1_render_1_1_profiling_capture_requests.html#a6321690641cf87925794d9952ef6c498", null ],

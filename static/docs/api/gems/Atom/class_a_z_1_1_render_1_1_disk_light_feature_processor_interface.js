@@ -1,10 +1,8 @@
 var class_a_z_1_1_render_1_1_disk_light_feature_processor_interface =
 [
-    [ "LightHandle", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a071bbbc547fe1a44aed7d0d51156c6e3", null ],
     [ "AcquireLight", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a7074b8359cda6b17dde422fce65d013e", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a3758630c3350219b62d0d7b68b47caa7", null ],
     [ "CloneLight", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a927ae44affa0278a48b1a6b1d19ed616", null ],
-    [ "GetDiskData", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a37edd28549118154ae275f41f4325567", null ],
+    [ "GetDiskData", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a776d0f296bdf5cde103939b106c24f6f", null ],
     [ "ReleaseLight", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a950b816083579518261f867c7d9c19cb", null ],
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#ac7c32206a51f535b073a65f1d8f5bb3c", null ],
     [ "SetAffectsGIFactor", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a6d965ca2540dd647e77e5af6723ea17b", null ],
@@ -23,6 +21,5 @@ var class_a_z_1_1_render_1_1_disk_light_feature_processor_interface =
     [ "SetShadowFilterMethod", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a048612d0f5a41fdbaad6ad86ec098b79", null ],
     [ "SetShadowmapMaxResolution", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a75138f9f488dc2a0a67f7865c2750af5", null ],
     [ "SetShadowsEnabled", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a4779840f04c80f669b338048aab52ddb", null ],
-    [ "SetUseCachedShadows", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#abe03cffbb78a1341075867a8a8cb9fab", null ],
-    [ "PhotometricUnitType", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a3ec9478575e36c701db241898c878d0e", null ]
+    [ "SetUseCachedShadows", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#abe03cffbb78a1341075867a8a8cb9fab", null ]
 ];

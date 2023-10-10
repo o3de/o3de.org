@@ -1,7 +1,7 @@
 var _e_bus_8h =
 [
-    [ "EBusTraits", "struct_a_z_1_1_e_bus_traits.html", "struct_a_z_1_1_e_bus_traits" ],
-    [ "EBus", "class_a_z_1_1_e_bus.html", "class_a_z_1_1_e_bus" ],
+    [ "AZ::EBusTraits", "struct_a_z_1_1_e_bus_traits.html", "struct_a_z_1_1_e_bus_traits" ],
+    [ "AZ::EBus< Interface, BusTraits >", "class_a_z_1_1_e_bus.html", "class_a_z_1_1_e_bus" ],
     [ "DECLARE_EBUS_EXTERN", "_e_bus_8h.html#a9ebdaee057eecd6e89cd0a362d6a917d", null ],
     [ "DECLARE_EBUS_EXTERN_WITH_TRAITS", "_e_bus_8h.html#ab3b6961140b0434f5c432c2a670f0337", null ],
     [ "DECLARE_EBUS_INSTANTIATION", "_e_bus_8h.html#ab166162d56868e475d889f3b42df8c31", null ],

@@ -45,7 +45,7 @@ Creating new projects or using the advanced development features of O3DE require
 ## Microsoft Windows
 
 At this time, Microsoft Windows is the primary platform for using the O3DE
-editor and for building source. Specifically, **Windows 10 version 1809 (10.0.17763)**
+editor and for building source. Specifically, **Windows 10 version 20H2 (10.0.19042)**
 or later is required.
 
 ### Microsoft Visual Studio
@@ -56,6 +56,8 @@ The following versions of Visual Studio are supported:
 + [Microsoft Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version **17.3.x**.
 
 You can use any Microsoft Visual Studio license, including the Community edition.
+
+In addition, **Windows 10 SDK** version at **10.0.19041.0** or later is required.
 
 #### Visual Studio configuration
 
@@ -70,7 +72,7 @@ The default Visual Studio installation might not include all of the features tha
 
 1. On the **Workloads** tab:
    + Select **Game development with C++**.
-      + In the **Installation details** panel on the right, select at least one **Windows 10 SDK**.
+      + In the **Installation details** panel on the right, select a **Windows 10 SDK** version at **10.0.19041.0** or later.
    + Select **Desktop development with C++**.
 
 1. Once you've completed your changes, choose the **Install** button in the lower right hand corner, selecting your preferred download option.
@@ -177,26 +179,26 @@ cmake --version
 
 ### Clang
 
-O3DE requires [Clang](https://clang.llvm.org/get_started.html) to compile all of the native C++ code.
+O3DE requires [Clang](https://clang.llvm.org/get_started.html) and the [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/) to compile all of the native C++ code.
 
-Install Clang using the instructions for the version of Ubuntu that you have installed:
+Install Clang and the GNU C++ Library using the instructions for the version of Ubuntu that you have installed:
 
 {{< tabs name="Clang install" >}}
 {{% tab name="20.04 LTS" %}}
 
-The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a version as part of the install command.
+The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a version as part of the install command. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
 
 ```shell
-sudo apt install clang-12 
+sudo apt install libstdc++-9-dev clang-12
 ```
 
 {{% /tab %}}
 {{% tab name="22.04 LTS" %}}
 
-You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14.
+You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
 
 ```shell
-sudo apt install clang
+sudo apt install libstdc++-12-dev clang
 ```
 
 {{% /tab %}}
@@ -219,18 +221,17 @@ O3DE also requires some additional library packages to be installed:
 * libxkbcommon-dev
 * libxkbcommon-x11-dev
 * libfontconfig1-dev
-* libcurl4-openssl-dev
-* libsdl2-dev
+* libpcre2-16-0
 * zlib1g-dev
 * mesa-common-dev
-* libssl-dev
+* libstdc++-12-dev
 * libunwind-dev
 * libzstd-dev
 
 You can download and install these packages through `apt`.
 
 ```shell
-sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev libssl-dev libunwind-dev libzstd-dev
+sudo apt install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libpcre2-16-0 zlib1g-dev mesa-common-dev libunwind-dev libzstd-dev
 ```
 
 ### Ninja Build System (Optional)

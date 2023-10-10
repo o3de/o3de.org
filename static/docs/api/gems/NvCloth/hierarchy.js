@@ -1,48 +1,50 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "NvCloth::ClothComponent", "class_nv_cloth_1_1_cloth_component.html", null ],
       [ "NvCloth::EditorSystemComponent", "class_nv_cloth_1_1_editor_system_component.html", null ],
       [ "NvCloth::SystemComponent", "class_nv_cloth_1_1_system_component.html", null ]
     ] ],
-    [ "Registrar", null, [
-      [ "NvCloth::FabricCooker", "class_nv_cloth_1_1_fabric_cooker.html", null ],
+    [ "AZ::Interface::Registrar", null, [
+      [ "NvCloth::FabricCooker", "class_nv_cloth_1_1_fabric_cooker.html", null ]
+    ] ],
+    [ "AZ::Interface::Registrar", null, [
       [ "NvCloth::TangentSpaceHelper", "class_nv_cloth_1_1_tangent_space_helper.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::Render::MeshComponentNotificationBus::Handler", null, [
       [ "NvCloth::ClothComponent", "class_nv_cloth_1_1_cloth_component.html", null ],
       [ "NvCloth::EditorClothComponent", "class_nv_cloth_1_1_editor_cloth_component.html", null ]
     ] ],
-    [ "IClothRule", null, [
+    [ "AZ::SceneAPI::DataTypes::IClothRule", null, [
       [ "NvCloth::Pipeline::ClothRule", "class_nv_cloth_1_1_pipeline_1_1_cloth_rule.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::SceneAPI::Events::AssetImportRequestBus::Handler", null, [
       [ "NvCloth::Pipeline::ClothRuleBehavior", "class_nv_cloth_1_1_pipeline_1_1_cloth_rule_behavior.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::SceneAPI::Events::ManifestMetaInfoBus::Handler", null, [
       [ "NvCloth::Pipeline::ClothRuleBehavior", "class_nv_cloth_1_1_pipeline_1_1_cloth_rule_behavior.html", null ]
     ] ],
-    [ "BehaviorComponent", null, [
+    [ "AZ::SceneAPI::SceneCore::BehaviorComponent", null, [
       [ "NvCloth::Pipeline::ClothRuleBehavior", "class_nv_cloth_1_1_pipeline_1_1_cloth_rule_behavior.html", null ]
     ] ],
-    [ "SystemAllocator", null, [
+    [ "AZ::SystemAllocator", null, [
       [ "NvCloth::AzClothAllocator", "class_nv_cloth_1_1_az_cloth_allocator.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::TickBus::Handler", null, [
       [ "NvCloth::ClothComponentMesh", "class_nv_cloth_1_1_cloth_component_mesh.html", null ],
       [ "NvCloth::SystemComponent", "class_nv_cloth_1_1_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::TransformNotificationBus::Handler", null, [
       [ "NvCloth::ClothComponentMesh", "class_nv_cloth_1_1_cloth_component_mesh.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::EntityDebugDisplayEventBus::Handler", null, [
       [ "NvCloth::ClothDebugDisplay", "class_nv_cloth_1_1_cloth_debug_display.html", null ]
     ] ],
     [ "AZStd::hash< NvCloth::GenericId< Tag > >", "struct_a_z_std_1_1hash_3_01_nv_cloth_1_1_generic_id_3_01_tag_01_4_01_4.html", null ],
-    [ "EditorComponentBase", null, [
+    [ "AzToolsFramework::Components::EditorComponentBase", null, [
       [ "NvCloth::EditorClothComponent", "class_nv_cloth_1_1_editor_cloth_component.html", null ]
     ] ],
-    [ "PropertyHandler", null, [
+    [ "AzToolsFramework::PropertyHandler", null, [
       [ "NvCloth::Editor::MeshNodeHandler", "class_nv_cloth_1_1_editor_1_1_mesh_node_handler.html", null ]
     ] ],
     [ "NvCloth::GenericId< struct ClothIdTag >", "class_nv_cloth_1_1_generic_id.html", null ],
@@ -84,7 +86,7 @@ var hierarchy =
     [ "NvCloth::MeshNodeInfo::SubMesh", "struct_nv_cloth_1_1_mesh_node_info_1_1_sub_mesh.html", null ],
     [ "NvCloth::NvClothTypesDeleter", "struct_nv_cloth_1_1_nv_cloth_types_deleter.html", null ],
     [ "NvCloth::SkinningInfluence", "struct_nv_cloth_1_1_skinning_influence.html", null ],
-    [ "Handler", null, [
+    [ "Physics::WindNotificationsBus::Handler", null, [
       [ "NvCloth::ClothComponentMesh", "class_nv_cloth_1_1_cloth_component_mesh.html", null ]
     ] ],
     [ "QObject", null, [

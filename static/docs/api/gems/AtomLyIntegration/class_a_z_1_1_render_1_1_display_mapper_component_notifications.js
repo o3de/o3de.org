@@ -1,5 +1,5 @@
 var class_a_z_1_1_render_1_1_display_mapper_component_notifications =
 [
-    [ "OnAcesParameterOverridesUpdated", "class_a_z_1_1_render_1_1_display_mapper_component_notifications.html#a20e90f3f7c86271f28c4ea4013be1a71", null ],
-    [ "OnDisplayMapperOperationTypeUpdated", "class_a_z_1_1_render_1_1_display_mapper_component_notifications.html#aeff610e75d9e59db3bbb8a8709633dc4", null ]
+    [ "OnAcesParameterOverridesUpdated", "class_a_z_1_1_render_1_1_display_mapper_component_notifications.html#a77860734c1c977920298ba42abfb2dfa", null ],
+    [ "OnDisplayMapperOperationTypeUpdated", "class_a_z_1_1_render_1_1_display_mapper_component_notifications.html#ac2999a6292975d2c9f4e4068db3d726d", null ]
 ];

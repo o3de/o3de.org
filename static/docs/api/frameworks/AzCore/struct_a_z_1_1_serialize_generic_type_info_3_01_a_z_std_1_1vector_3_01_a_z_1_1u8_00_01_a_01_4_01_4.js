@@ -1,8 +1,4 @@
 var struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4 =
 [
-    [ "GenericClassByteStream", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4_1_1_generic_class_byte_stream.html", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4_1_1_generic_class_byte_stream" ],
-    [ "ClassInfoType", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4.html#a006f9650261e97ec0f0ee22e4450ebb0", null ],
-    [ "ContainerType", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4.html#a9ce98a04881bd581a3eb080a4296ea0e", null ],
-    [ "GetClassTypeId", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4.html#a03360738486916146a2061136e13cb44", null ],
-    [ "GetGenericInfo", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4.html#a1e3a61e2dd6c95df5bf6f7b5ed44f1b9", null ]
+    [ "GenericClassByteStream", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4_1_1_generic_class_byte_stream.html", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1vector_3_01_a_z_1_1u8_00_01_a_01_4_01_4_1_1_generic_class_byte_stream" ]
 ];

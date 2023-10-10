@@ -1,26 +1,5 @@
 var class_a_z_1_1_i_o_1_1_byte_container_stream =
 [
-    [ "ByteContainerStream", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#abbfc49fc6c57d84946c600be8991a14a", null ],
-    [ "~ByteContainerStream", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a38721386bebf576d8a53fc0b5f14d857", null ],
-    [ "CanRead", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a4aad164bd4ab85179c0ae6a5dd523c27", null ],
-    [ "CanSeek", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#af47be709886168d0f798f14737eecc48", null ],
-    [ "CanWrite", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#ac01b39e7e1efb4a166c4f3d5b27b4228", null ],
-    [ "GetCurPos", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a25d07cc4cceb3c15e671884a4c4b63cf", null ],
-    [ "GetData", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a74c7c1d6f85fd3ab87e29a408658fa08", null ],
-    [ "GetLength", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a337266689a5aeeb8e79f86d3cfb539bf", null ],
-    [ "IsOpen", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a970d93391803e5da8b21b2763d44fe9e", null ],
-    [ "PrepareToWrite", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#ad1233ff01b74e98cd72449d6aedd176e", null ],
-    [ "Read", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#aa3bd7eafa2de21cd02ca83320266d673", null ],
-    [ "Seek", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a1e6838240076c3346a08cc1679484925", null ],
-    [ "Truncate", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#aa9b5c0578de2b84983380cf292370561", null ],
-    [ "Write", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a4a692aeb50cf7dc6dfb95891716136ef", null ],
-    [ "Write", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a2d0217482b52cdce246bf6bb4e984d94", null ],
-    [ "Write", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a86dd837bca200cd6474a8deddfb38093", null ],
-    [ "Write", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a478905b7771973c36638de843b264603", null ],
     [ "WriteFromStream", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a7feafee25402c576dcc60dc8dea76b34", null ],
-    [ "WriteFromStream", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#af1690a56ea917e7c4be7df00bd8ed09c", null ],
-    [ "WriteFromStream", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a3566b6d8a387959253b9b38e57fda096", null ],
-    [ "m_buffer", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a002cb99147945f1ab290a4891ce411f1", null ],
-    [ "m_maxGrowSize", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#a82c35fbf12ca06abbf19f7c69ed798b8", null ],
-    [ "m_pos", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#adba6cdebe8a1ced070b8bc4f01feb2a7", null ]
+    [ "m_opened", "class_a_z_1_1_i_o_1_1_byte_container_stream.html#af18d0c1dec6ca73d60899196f34781cb", null ]
 ];

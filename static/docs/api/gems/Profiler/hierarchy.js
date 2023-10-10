@@ -1,19 +1,19 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "Profiler::ProfilerImGuiSystemComponent", "class_profiler_1_1_profiler_im_gui_system_component.html", null ],
       [ "Profiler::ProfilerSystemComponent", "class_profiler_1_1_profiler_system_component.html", null ]
     ] ],
-    [ "Profiler", null, [
+    [ "AZ::Debug::Profiler", null, [
       [ "Profiler::CpuProfiler", "class_profiler_1_1_cpu_profiler.html", null ]
     ] ],
-    [ "ProfilerRequests", null, [
+    [ "AZ::Debug::ProfilerRequests", null, [
       [ "Profiler::ProfilerSystemComponent", "class_profiler_1_1_profiler_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::SystemTickBus::Handler", null, [
       [ "Profiler::CpuProfiler", "class_profiler_1_1_cpu_profiler.html", null ]
     ] ],
-    [ "intrusive_refcount", null, [
+    [ "AZStd::intrusive_refcount", null, [
       [ "Profiler::CpuTimingLocalStorage", "class_profiler_1_1_cpu_timing_local_storage.html", null ]
     ] ],
     [ "Profiler::CachedTimeRegion", "struct_profiler_1_1_cached_time_region.html", null ],

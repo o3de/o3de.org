@@ -1,6 +1,5 @@
 var class_ui_layout_column_interface =
 [
-    [ "~UiLayoutColumnInterface", "class_ui_layout_column_interface.html#a184693fb3e3a974a9e84cde9d1bd76c9", null ],
     [ "GetOrder", "class_ui_layout_column_interface.html#aa88e0d307ce425be3aaf9db6b8a64c61", null ],
     [ "GetPadding", "class_ui_layout_column_interface.html#af187509a681210c4f8bb880e1d1375ca", null ],
     [ "GetSpacing", "class_ui_layout_column_interface.html#a5ba45737dea522aa6b4605a4aa0e53b4", null ],

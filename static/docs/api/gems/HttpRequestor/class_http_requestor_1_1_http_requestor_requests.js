@@ -6,6 +6,5 @@ var class_http_requestor_1_1_http_requestor_requests =
     [ "AddTextRequest", "class_http_requestor_1_1_http_requestor_requests.html#ab661819ea123b61836adfb3800879086", null ],
     [ "AddTextRequestWithHeaders", "class_http_requestor_1_1_http_requestor_requests.html#af6f32c4f96a3a33001aee115eb0b16b4", null ],
     [ "AddTextRequestWithHeadersAndBody", "class_http_requestor_1_1_http_requestor_requests.html#ad59a4a36529264c0ced97fd780f7c55a", null ],
-    [ "AddressPolicy", "class_http_requestor_1_1_http_requestor_requests.html#a4b443e7e94a4f0f793c6fb30dbb4b1a4", null ],
-    [ "HandlerPolicy", "class_http_requestor_1_1_http_requestor_requests.html#aa3014b7914d83557f8e21bfda1091c38", null ]
+    [ "GetLastRoundTripTime", "class_http_requestor_1_1_http_requestor_requests.html#a9de4dfe26b2093f6232cb654b96b1f54", null ]
 ];

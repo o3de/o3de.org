@@ -1,6 +1,5 @@
 var class_az_tools_framework_1_1_fading_text =
 [
-    [ "FadingText", "class_az_tools_framework_1_1_fading_text.html#a5213d1cefa5ccf5ac42b6b582c193fc4", null ],
     [ "Begin", "class_az_tools_framework_1_1_fading_text.html#a691e03ea2005cccac4ca155457764403", null ],
     [ "Display", "class_az_tools_framework_1_1_fading_text.html#a11ac1955fba71c7bc09ab4dac08d2cab", null ],
     [ "Update", "class_az_tools_framework_1_1_fading_text.html#a5d5ee7b20d6b10fe209c5482027dbcfa", null ],

@@ -2,7 +2,7 @@
 linkTitle: Troubleshooting
 title: Troubleshooting
 description: Troubleshooting common issues with Robot Operating System (ROS) and and the ROS 2 Gem in Open 3D Engine (O3DE).
-weight: 500
+weight: 600
 ---
 
 In this section, you will learn helpful hints and what to check when your robotics simulation in Open 3D Engine (O3DE) is not working as expected.

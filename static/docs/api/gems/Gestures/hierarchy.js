@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "Gestures::GesturesSystemComponent", "class_gestures_1_1_gestures_system_component.html", null ]
     ] ],
-    [ "InputChannel", null, [
+    [ "AzFramework::InputChannel", null, [
       [ "Gestures::InputChannelGesture", "class_gestures_1_1_input_channel_gesture.html", [
         [ "Gestures::InputChannelGestureClickOrTap", "class_gestures_1_1_input_channel_gesture_click_or_tap.html", null ],
         [ "Gestures::InputChannelGestureDrag", "class_gestures_1_1_input_channel_gesture_drag.html", null ],
@@ -13,7 +13,7 @@ var hierarchy =
         [ "Gestures::InputChannelGestureSwipe", "class_gestures_1_1_input_channel_gesture_swipe.html", null ]
       ] ]
     ] ],
-    [ "PositionData2D", null, [
+    [ "AzFramework::InputChannel::PositionData2D", null, [
       [ "Gestures::IRecognizer", "class_gestures_1_1_i_recognizer.html", [
         [ "Gestures::RecognizerContinuous", "class_gestures_1_1_recognizer_continuous.html", [
           [ "Gestures::RecognizerDrag", "class_gestures_1_1_recognizer_drag.html", [
@@ -39,20 +39,25 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::InputChannelNotificationBus::Handler", null, [
       [ "Gestures::IRecognizer", "class_gestures_1_1_i_recognizer.html", null ]
     ] ],
-    [ "InputDevice", null, [
+    [ "AzFramework::InputDevice", null, [
       [ "Gestures::InputDeviceGestures", "class_gestures_1_1_input_device_gestures.html", null ]
     ] ],
-    [ "Config", null, [
+    [ "Gestures::InputChannelGesture::Type", "struct_gestures_1_1_input_channel_gesture_1_1_type.html", [
       [ "Gestures::InputChannelGestureClickOrTap::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_click_or_tap_1_1_type_and_config.html", null ],
-      [ "Gestures::InputChannelGestureRotate::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_rotate_1_1_type_and_config.html", null ]
+      [ "Gestures::InputChannelGestureDrag::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_drag_1_1_type_and_config.html", null ],
+      [ "Gestures::InputChannelGestureHold::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_hold_1_1_type_and_config.html", null ],
+      [ "Gestures::InputChannelGesturePinch::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_pinch_1_1_type_and_config.html", null ],
+      [ "Gestures::InputChannelGestureRotate::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_rotate_1_1_type_and_config.html", null ],
+      [ "Gestures::InputChannelGestureSwipe::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_swipe_1_1_type_and_config.html", null ]
     ] ],
-    [ "Gestures::InputChannelGesture::Type", "struct_gestures_1_1_input_channel_gesture_1_1_type.html", null ],
     [ "Gestures::InputDeviceGestures::Gesture", "struct_gestures_1_1_input_device_gestures_1_1_gesture.html", null ],
     [ "Gestures::IRecognizer::ScreenPosition", "struct_gestures_1_1_i_recognizer_1_1_screen_position.html", null ],
-    [ "Gestures::RecognizerClickOrTap::Config", "struct_gestures_1_1_recognizer_click_or_tap_1_1_config.html", null ],
+    [ "Gestures::RecognizerClickOrTap::Config", "struct_gestures_1_1_recognizer_click_or_tap_1_1_config.html", [
+      [ "Gestures::InputChannelGestureClickOrTap::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_click_or_tap_1_1_type_and_config.html", null ]
+    ] ],
     [ "Gestures::RecognizerDrag::Config", "struct_gestures_1_1_recognizer_drag_1_1_config.html", [
       [ "Gestures::InputChannelGestureDrag::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_drag_1_1_type_and_config.html", null ]
     ] ],
@@ -62,16 +67,10 @@ var hierarchy =
     [ "Gestures::RecognizerPinch::Config", "struct_gestures_1_1_recognizer_pinch_1_1_config.html", [
       [ "Gestures::InputChannelGesturePinch::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_pinch_1_1_type_and_config.html", null ]
     ] ],
-    [ "Gestures::RecognizerRotate::Config", "struct_gestures_1_1_recognizer_rotate_1_1_config.html", null ],
-    [ "Gestures::RecognizerSwipe::Config", "struct_gestures_1_1_recognizer_swipe_1_1_config.html", [
-      [ "Gestures::InputChannelGestureSwipe::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_swipe_1_1_type_and_config.html", null ]
+    [ "Gestures::RecognizerRotate::Config", "struct_gestures_1_1_recognizer_rotate_1_1_config.html", [
+      [ "Gestures::InputChannelGestureRotate::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_rotate_1_1_type_and_config.html", null ]
     ] ],
-    [ "Type", null, [
-      [ "Gestures::InputChannelGestureClickOrTap::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_click_or_tap_1_1_type_and_config.html", null ],
-      [ "Gestures::InputChannelGestureDrag::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_drag_1_1_type_and_config.html", null ],
-      [ "Gestures::InputChannelGestureHold::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_hold_1_1_type_and_config.html", null ],
-      [ "Gestures::InputChannelGesturePinch::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_pinch_1_1_type_and_config.html", null ],
-      [ "Gestures::InputChannelGestureRotate::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_rotate_1_1_type_and_config.html", null ],
+    [ "Gestures::RecognizerSwipe::Config", "struct_gestures_1_1_recognizer_swipe_1_1_config.html", [
       [ "Gestures::InputChannelGestureSwipe::TypeAndConfig", "struct_gestures_1_1_input_channel_gesture_swipe_1_1_type_and_config.html", null ]
     ] ]
 ];

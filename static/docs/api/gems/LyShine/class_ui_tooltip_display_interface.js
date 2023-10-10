@@ -1,21 +1,11 @@
 var class_ui_tooltip_display_interface =
 [
-    [ "AutoPositionMode", "class_ui_tooltip_display_interface.html#afca2e13f9a7d7c20f20628feed1bb3de", [
-      [ "OffsetFromMouse", "class_ui_tooltip_display_interface.html#afca2e13f9a7d7c20f20628feed1bb3dead7e8c2f78f894aa0fb8d81ca554b6db5", null ],
-      [ "OffsetFromElement", "class_ui_tooltip_display_interface.html#afca2e13f9a7d7c20f20628feed1bb3deaf64d271f7dddd3a0fb7dc845dad7fc19", null ]
-    ] ],
-    [ "TriggerMode", "class_ui_tooltip_display_interface.html#af6669633c6aec54263a6c6b9d95ab410", [
-      [ "OnHover", "class_ui_tooltip_display_interface.html#af6669633c6aec54263a6c6b9d95ab410ad842f868ee98613e1827f44aa4f4763e", null ],
-      [ "OnPress", "class_ui_tooltip_display_interface.html#af6669633c6aec54263a6c6b9d95ab410a57e237c183a80c0e3944cdce396356e9", null ],
-      [ "OnClick", "class_ui_tooltip_display_interface.html#af6669633c6aec54263a6c6b9d95ab410ae372a91aa1ac611ae251daef2c56107a", null ]
-    ] ],
-    [ "~UiTooltipDisplayInterface", "class_ui_tooltip_display_interface.html#a7eb0f3554c8ee92b9b2e33bc0b04fcbc", null ],
     [ "GetAutoPosition", "class_ui_tooltip_display_interface.html#a77a2bbe3acec6aec35fc449b7fd9f53f", null ],
     [ "GetAutoPositionMode", "class_ui_tooltip_display_interface.html#a40ef5efe75d56233cb9fddd718cfacf1", null ],
     [ "GetAutoSize", "class_ui_tooltip_display_interface.html#ae6b810898e849322e755421f32d79217", null ],
     [ "GetDelayTime", "class_ui_tooltip_display_interface.html#af0ddc48f6c122008de5c9848377ebd0a", null ],
     [ "GetDisplayTime", "class_ui_tooltip_display_interface.html#a3421e50658e5744f80ce5e7262915725", null ],
-    [ "GetOffset", "class_ui_tooltip_display_interface.html#ae0e36a97e73c5cec9335fdef747914ac", null ],
+    [ "GetOffset", "class_ui_tooltip_display_interface.html#ad1c259b1d0ff61b8f22f6961593c0747", null ],
     [ "GetTextEntity", "class_ui_tooltip_display_interface.html#ad1f16169ebc51a2dd91faa14a9ac93d6", null ],
     [ "GetTriggerMode", "class_ui_tooltip_display_interface.html#a983cdb38e9e9492491fbfd9e3ac03e4a", null ],
     [ "Hide", "class_ui_tooltip_display_interface.html#a9cab5a6486b418c1e17cf341f33c934b", null ],
