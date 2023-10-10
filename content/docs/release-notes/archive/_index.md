@@ -10,6 +10,8 @@ Looking for older versions of release notes for **Open 3D Engine (O3DE)**? Look 
 
 | Version     |  Link                                           | Date of Release    |
 |-------------|-------------------------------------------------|--------------------|
+| 23.05.0     | [23.05.0 Release Notes](./2305-0-release-notes/)| 5/3/2023 |
+| 22.10.0     | [22.10.0 Release Notes](./22-10-0/)             | 10/17/2022 |
 | 22.05.0     | [22.05.0 Release Notes](./22-05-0/)             | 5/12/2022 |
 | 2111.2      | [2111.2 Release Notes](./2111-2-release-notes)  | 1/27/2022 |
 | 2111.1      | [2111.1 Release Notes](./21-11-release-notes)     | 12/2/2021          |
