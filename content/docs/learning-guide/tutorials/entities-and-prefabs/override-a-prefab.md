@@ -10,7 +10,7 @@ When a prefab is open in [Prefab Edit Mode](/docs/learning-guide/tutorials/entit
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | --- | --- | --- | --- |
-| Beginner | 15 Minutes | Using prefab overrides to make prefab instances unique. | April 27, 2023 |
+| Beginner | 15 Minutes | Using prefab overrides to make prefab instances unique. | October 11, 2023 |
 
 ## Prerequisites
 
