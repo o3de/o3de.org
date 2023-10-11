@@ -39,14 +39,8 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 
 ## Enable prefab overrides
 
-To enable prefab overrides in Entity Outliner, you must set the `ed_enableOutlinerOverrideManagement` console variable (CVar) to "true":
-
-1. In **O3DE Editor**, from the **Tools** menu, choose **Console Variables**.
-2. In Console Variables editor, set the `ed_enableOutlinerOverrideManagement` flag to true. It can be easily found by typing `outliner` into the filter box:
-
-{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/outliner-prefab-prefs.png" width="700" alt="CVar settings to enable Outliner override support" >}}
-
-Alternatively, if you want the flag to be automatically enabled when O3DE Editor starts, you can create a settings registry file with the following contents:
+To enable prefab overrides in Entity Outliner, you must set the `ed_enableOutlinerOverrideManagement` console variable (CVar) to "true". Although you *can* set this in the **Console Variables Editor**, this feature is not currently changeable
+while the Editor is running, so it must be set before the Editor starts, via a settings registry file. You should create a settings registry file with the following contents:
 
 ```JSON
 {
