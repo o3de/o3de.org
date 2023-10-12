@@ -75,7 +75,7 @@ Rotate the sun entity by setting the **Rotate** field in the **Transform compone
 Add **Bloom** and **Post FX Layer** components to the sun entity and turn the **Enable Bloom** setting on. Set the **Intensity** to `0.1`.
 
 #### Step 6. Make the sun yellow
-Adjust the **Sky Atmosphere** sun settings to get a sunset that looks more like sunset:
+Adjust the **Sky Atmosphere** sun settings to be more orange with a softer falloff:
 * Sun color: `255,235,176`
 * Sun luminance factor: `10.0`
 * Sun limb color: `215,87,12`
