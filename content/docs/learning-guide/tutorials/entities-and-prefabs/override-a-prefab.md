@@ -40,7 +40,7 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 ## Enable prefab overrides
 
 To enable prefab overrides in Entity Outliner, you must set the `ed_enableOutlinerOverrideManagement` console variable (CVar) to "true". Although you *can* set this in the **Console Variables Editor**, this feature is not currently changeable
-while the Editor is running, so it must be set before the Editor starts, via a settings registry file. You will also want to enable the `ed_enableInspectorOverrideManagement` flag, so that you can edit overrides in the Inspector. You should create a settings registry file with the following contents:
+while the Editor is running. Therefore, it must be set before the Editor starts, via a settings registry file:
 
 ```JSON
 {
@@ -58,8 +58,11 @@ while the Editor is running, so it must be set before the Editor starts, via a s
 An example of such file exists as a project-specific override in the AutomatedTesting project: [`AutomatedTesting/Registry/editorpreferences.setreg`](https://github.com/o3de/o3de/blob/development/AutomatedTesting/Registry/editorpreferences.setreg)
 
 {{< note >}}
-It is recommended to add your `editorpreferences.setreg` file to the `<project-path>/user/Registry` directory as a user-specific override. Files in the user directory are ignored by git and won't be tracked for changes.
+It is recommended to add your settings registry file to the `<project-path>/user/Registry` directory as a user-specific override. Files in the user directory are ignored by git and won't be tracked for changes.
 {{< /note >}}
+
+To enable prefab overrides in Inspector, you will also want to enable the `ed_enableInspectorOverrideManagement` flag so that you can edit overrides in the Inspector. 
+Please see the section [Prefab overrides in Entity Inspector](#prefab-overrides-in-entity-inspector) below for more info.
 
 You can apply the following types of overrides to prefabs:
 
