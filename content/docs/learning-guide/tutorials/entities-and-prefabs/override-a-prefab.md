@@ -40,14 +40,15 @@ Overrides are not limited to the level. In fact, any prefab that is open for edi
 ## Enable prefab overrides
 
 To enable prefab overrides in Entity Outliner, you must set the `ed_enableOutlinerOverrideManagement` console variable (CVar) to "true". Although you *can* set this in the **Console Variables Editor**, this feature is not currently changeable
-while the Editor is running, so it must be set before the Editor starts, via a settings registry file. You should create a settings registry file with the following contents:
+while the Editor is running. Therefore, it must be set before the Editor starts, via a settings registry file:
 
 ```JSON
 {
     "O3DE": {
         "Autoexec": {
             "ConsoleCommands": {
-                "ed_enableOutlinerOverrideManagement": true
+                "ed_enableDPEInspector": true,
+                "ed_enableInspectorOverrideManagement": true
             }
         }
     }
@@ -57,8 +58,11 @@ while the Editor is running, so it must be set before the Editor starts, via a s
 An example of such file exists as a project-specific override in the AutomatedTesting project: [`AutomatedTesting/Registry/editorpreferences.setreg`](https://github.com/o3de/o3de/blob/development/AutomatedTesting/Registry/editorpreferences.setreg)
 
 {{< note >}}
-It is recommended to add your `editorpreferences.setreg` file to the `<project-path>/user/Registry` directory as a user-specific override. Files in the user directory are ignored by git and won't be tracked for changes.
+It is recommended to add your settings registry file to the `<project-path>/user/Registry` directory as a user-specific override. Files in the user directory are ignored by git and won't be tracked for changes.
 {{< /note >}}
+
+To enable prefab overrides in Inspector, you will also want to enable the `ed_enableInspectorOverrideManagement` flag so that you can edit overrides in the Inspector. 
+Please see the section [Prefab overrides in Entity Inspector](#prefab-overrides-in-entity-inspector) below for more info.
 
 You can apply the following types of overrides to prefabs:
 
@@ -101,9 +105,16 @@ To delete an entity or a nested prefab instance as an override:
 In Entity Outliner, there is no visual indication of an entity or a prefab instance being deleted as an override at this time. The only way of getting rid of that type of overrides is through manual edit in `.prefab` file of the prefab instance being edited.
 {{< /note >}}
 
+Alternatively, You can revert a deletion by pressing CTRL+Z to go back to a previous state where you delete that object/entity. One important note, however. This undo will only work if the editor has not been closed and reopened.
+After closing the editor, your undo stack has been cleared, and you can no longer undo in this manner.
+
 {{< note >}}
 You cannot revert the deletion by reverting overrides on the parent entity. See the GitHub issue [#13437](https://github.com/o3de/o3de/issues/13437) for more details.
 {{< /note >}}
+
+## Deleting the original prefab instance (template)
+It is important to note that deleting or undoing a prefab original instance will not actually delete the actual prefab from the hard drive, which is the same when removing a prefab from your Outliner. This doesn't actually delete the prefab original instance, because prefab live as separate files on the hard drive.
+To remove a prefab permanently, you must delete the prefab file from the Asset Browser or your OS folder operation. We recommend not doing this unless you are sure that prefab does not exist in other levels or other projects that reference it.
 
 ## Revert an override
 
@@ -113,6 +124,11 @@ Once an override has been registered, it will exist until explicitly removed. To
 1. Notice that the entity no longer has any indication of having overrides.
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-revert.png" width="300" alt="Reverting overrides on an entity." >}}
+
+* Reverting an override can take place on 3 different levels of a prefab.
+    * Level 1 - on the actual property itself.
+    * Level 2 - on the entire component level -- this will Revert all multiple properties on one component of the entity.
+    * Level 3 - on the entire entity -- this affects all component cards and their individual properties.
 
 ## Prefab overrides in Entity Inspector
 
