@@ -86,7 +86,7 @@ You cannot revert the deletion by reverting overrides on the parent entity. See 
 {{< /note >}}
 
 ## Deleting the original prefab instance (template)
-It is important to note that deleting or undoing a prefab original instance will not actually delete the actual prefab from the hard drive, which is the same when removing a prefab from your Outliner. This doesn't actually delete the prefab original instance, because prefab live as separate files on the hard drive.
+It is important to note that deleting or undoing a prefab original instance will not actually delete the actual prefab from the hard drive, which is the same when removing a prefab from your Outliner. This doesn't actually delete the prefab original instance, because prefabs live as separate files on the hard drive.
 To remove a prefab permanently, you must delete the prefab file from the Asset Browser or your OS folder operation. We recommend not doing this unless you are sure that prefab does not exist in other levels or other projects that reference it.
 
 ## Revert an override
@@ -100,7 +100,7 @@ Once an override has been registered, it will exist until explicitly removed. To
 
 * Reverting an override can take place on 3 different levels of a prefab.
     * Level 1 - on the actual property itself.
-    * Level 2 - on the entire component level -- this will Revert all multiple properties on one component of the entity.
+    * Level 2 - on the entire component level -- this will revert all multiple properties on one component of the entity.
     * Level 3 - on the entire entity -- this affects all component cards and their individual properties.
 
 ## Prefab overrides in Entity Inspector
@@ -156,7 +156,8 @@ Prefab overrides are a new feature, and it's possible that you may want to ignor
         "Autoexec": {
             "ConsoleCommands": {
                 "ed_enableDPEInspector": false,
-                "ed_enableInspectorOverrideManagement": false
+                "ed_enableInspectorOverrideManagement": false,
+                "ed_enableOutlinerOverrideManagement": false
             }
         }
     }
