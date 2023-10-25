@@ -171,7 +171,7 @@ It is recommended to add your settings registry file to the `<project-path>/user
 {{< /note >}}
 
 {{< note >}}
-Starting in 23.10.1 release, prefab override management in Entity Outliner is enabled by default.
+Starting in 23.10.1 release, prefab override management is enabled by default.
 {{< /note >}}
 
 ## Conclusion and next steps
