@@ -10,7 +10,7 @@ When a prefab is open in [Prefab Edit Mode](/docs/learning-guide/tutorials/entit
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | --- | --- | --- | --- |
-| Beginner | 15 Minutes | Using prefab overrides to make prefab instances unique. | April 27, 2023 |
+| Beginner | 15 Minutes | Using prefab overrides to make prefab instances unique. | October 22, 2023 |
 
 ## Prerequisites
 
@@ -35,32 +35,6 @@ Suppose that the car's four tires are instances of a tire prefab that are nested
 A level is a prefab, and automatically enters Prefab Edit Mode when it is opened. This is indicated by the blue capsule around the level in **Entity Outliner**.
 
 Overrides are not limited to the level. In fact, any prefab that is open for editing in Prefab Edit Mode is responsible for storing the overrides made to its nested prefabs.
-{{< /note >}}
-
-## Enable prefab overrides
-
-To enable prefab overrides in Entity Outliner, create a settings registry file with the following contents:
-
-```JSON
-{
-    "O3DE": {
-        "Preferences": {
-            "Prefabs": {
-                "EnableOutlinerOverrideManagement": true
-            }
-        }
-    }
-}
-```
-
-An example of such file exists as a project-specific override in the AutomatedTesting project: [`AutomatedTesting/Registry/editorpreferences.setreg`](https://github.com/o3de/o3de/blob/development/AutomatedTesting/Registry/editorpreferences.setreg)
-
-{{< note >}}
-It is recommended to add your `editorpreferences.setreg` file to the `<project-path>/user/Registry` directory as a user-specific override. Files in the user directory are ignored by git and won't be tracked for changes.
-{{< /note >}}
-
-{{< note >}}
-Starting in 23.05 release, prefab override management in Entity Outliner is enabled by default.
 {{< /note >}}
 
 You can apply the following types of overrides to prefabs:
@@ -104,9 +78,16 @@ To delete an entity or a nested prefab instance as an override:
 In Entity Outliner, there is no visual indication of an entity or a prefab instance being deleted as an override at this time. The only way of getting rid of that type of overrides is through manual edit in `.prefab` file of the prefab instance being edited.
 {{< /note >}}
 
+Alternatively, You can revert a deletion by pressing CTRL+Z to go back to a previous state where you delete that object/entity. One important note, however. This undo will only work if the editor has not been closed and reopened.
+After closing the editor, your undo stack has been cleared, and you can no longer undo in this manner.
+
 {{< note >}}
 You cannot revert the deletion by reverting overrides on the parent entity. See the GitHub issue [#13437](https://github.com/o3de/o3de/issues/13437) for more details.
 {{< /note >}}
+
+## Deleting the original prefab instance (template)
+It is important to note that deleting or undoing a prefab original instance will not actually delete the actual prefab from the hard drive, which is the same when removing a prefab from your Outliner. This doesn't actually delete the prefab original instance, because prefabs live as separate files on the hard drive.
+To remove a prefab permanently, you must delete the prefab file from the Asset Browser or your OS folder operation. We recommend not doing this unless you are sure that prefab does not exist in other levels or other projects that reference it.
 
 ## Revert an override
 
@@ -117,53 +98,16 @@ Once an override has been registered, it will exist until explicitly removed. To
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-revert.png" width="300" alt="Reverting overrides on an entity." >}}
 
+* Reverting an override can take place on 3 different levels of a prefab.
+    * Level 1 - on the actual property itself.
+    * Level 2 - on the entire component level -- this will revert all multiple properties on one component of the entity.
+    * Level 3 - on the entire entity -- this affects all component cards and their individual properties.
+
 ## Prefab overrides in Entity Inspector
 
 The above sections describe how you can manage prefab overrides in Entity Outliner, however the visualization support is limited to the entity level. This section further demonstrates prefab override functionality in Entity Inspector.
 
 Prefab override management in Entity Inspector is developed based on the new *[Document Property Editor (DPE)](https://github.com/o3de/sig-content/issues/11)*, which aims to replace the old *Reflected Property Editor (RPE)*.
-
-### Enable prefab overrides in Entity Inspector
-
-First, you need to enable the new DPE feature:
-1. In **O3DE Editor**, from the **Tools** menu, choose **Console Variables**.
-1. In Console Variables editor, set the `ed_enableDPE` flag to true.
-
-Alternatively, if you want the flag to be automatically enabled when O3DE Editor starts, you can create a settings registry file with the following contents:
-
-```json
-{
-    "O3DE": {
-        "Autoexec": {
-            "ConsoleCommands": {
-                "ed_enableDPE": true
-            }
-        }
-    }
-}
-```
-
-{{< note >}}
-If you manually enable or disable the DPE through the Console Variables editor, you might need to close and reopen the Entity Inspector to take effect.
-{{< /note >}}
-
-Second, to enable prefab overrides in inspector, you can append to the settings registry file with the following contents:
-
-```json
-{
-    "O3DE": {
-        "Preferences": {
-            "Prefabs": {
-                "EnableInspectorOverrideManagement": true
-            }
-        }
-    }
-}
-```
-
-{{< note >}}
-You can create a new settings registry file or reuse existing settings registry files that you have already created.
-{{< /note >}}
 
 ### Override visualization
 
@@ -201,6 +145,34 @@ For a component added as an override, you can revert the addition in the same wa
 1. With a component selected, press **DEL**.
 
 For a component deleted as an override, you can revert the deletion by reverting all overrides on the selected entity. However, be aware that this would remove other overrides if they are present.
+
+## Disabling prefab overrides
+
+Prefab overrides are a new feature, and it's possible that you may want to ignore them entirely, or encounter a blocking issue with them. If you wish to disable prefab override creation and editing tools in the O3DE Editor, create a settings registry file with the following contents:
+
+```json
+{
+    "O3DE": {
+        "Autoexec": {
+            "ConsoleCommands": {
+                "ed_enableDPEInspector": false,
+                "ed_enableInspectorOverrideManagement": false,
+                "ed_enableOutlinerOverrideManagement": false
+            }
+        }
+    }
+}
+```
+
+An example of such file exists as a project-specific override in the AutomatedTesting project: [`AutomatedTesting/Registry/editorpreferences.setreg`](https://github.com/o3de/o3de/blob/c8f19bbe664a89ad92007fb7674cb8c6aa165bd9/AutomatedTesting/Registry/editorpreferences.setreg)
+
+{{< note >}}
+It is recommended to add your settings registry file to the `<project-path>/user/Registry` directory as a user-specific override. Files in the user directory are ignored by git and won't be tracked for changes.
+{{< /note >}}
+
+{{< note >}}
+Starting in 23.10.1 release, prefab override management is enabled by default.
+{{< /note >}}
 
 ## Conclusion and next steps
 
