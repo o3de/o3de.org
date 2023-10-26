@@ -32,8 +32,6 @@ The following image illustrates the dependency graph for O3DE's core modules: `A
 
 ![O3DE core module dependency graph](/images/user-guide/programming/o3de-architecture-dependency-graph.svg)
 
-For more information on O3DE's engine core, refer to the [Programming Guide](/docs/user-guide/programming/). 
-
 
 ## High-level O3DE directories
 
