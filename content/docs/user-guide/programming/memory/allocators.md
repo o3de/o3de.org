@@ -36,7 +36,7 @@ To apply an allocator to your class, use the `AZ_CLASS_ALLOCATOR` macro in your 
 
 AZCore relies on `AZ_CLASS_ALLOCATOR` to specify the default allocator for the class or on explicit `azcreate` and `azdestroy` calls that specify the allocator in their signature.
 + If your class does not implement `AZ_CLASS_ALLOCATOR` and you call `new` or `delete`, `new` or `delete` calls, the calls will use the global `operator new` or `operator delete`.
-+ If your class does not implement `AZ_CLASS_ALLOCATOR` and you call `aznew`, a compile error will trigger indicating that the operator new must be overwritten.
++ If your class does not implement `AZ_CLASS_ALLOCATOR` and you call `aznew`, a compile error will trigger indicating that the `operator new` must be overwritten.
 
 ## AZ Allocator Schemas 
 
@@ -55,6 +55,7 @@ Each allocator commonly implements the `IAllocator` interface and uses a schema 
 ## Creating an Allocator 
 
 We recommend that each O3DE gem or logical subsystem create a `ChildAllocatorSchema` to properly tag the memory that it allocates. This practice makes it easier to budget resource usage and get a holistic view of it.
+Tagged memory usage can be viewed or written to files in several ways including by running the `sys_DumpAllocators` or `sys_DumpAllocationRecordsToFile` console commands.
 
 If you choose to write your own schema, be aware that caching significant chunks of memory can be problematic. Such caching can hamper the ability of other systems to evolve to fit the content in your game. Unless you have specific requirements, we recommend that you create a `ChildAllocatorSchema` that eventually uses the `SystemAllocator`. Using a `ChildAllocatorSchema` ensures that your memory is as recoverable and reusable as possible.
 

@@ -37,7 +37,7 @@ Some memory debugging features detect memory issues when an allocation is freed,
 
 ### Enabling Overrun Detection
 
-The [AZ::AllocatorDebug::UsesMemoryGuard](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/IAllocator.h#L105-L106) can be used when configuring the allocator an allocator [GetDebugConfig()](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/SystemAllocator.cpp#L58-L65) function turn on overrun detection.  
+The [AZ::AllocatorDebug::UsesMemoryGuard](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/IAllocator.h#L105-L106) property can be used when implementing the IAllocator [GetDebugConfig()](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/SystemAllocator.cpp#L58-L65) function to turn on memory overrun detection.  
 
 ### Allocations 
 
