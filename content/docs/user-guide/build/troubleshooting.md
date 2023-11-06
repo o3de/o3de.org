@@ -110,11 +110,11 @@ Call Stack (most recent call first):
 **Issue:** Building takes longer than expected.
 
 **Remedy:** There are several steps to troubleshooting builds that are taking a long time.
-1. Use a build command that measures the amount of time taken so you can compare build times when troubleshooting.  On Windows you can use the PowerShell `measure-command` to measure build times, and on linux `time`.
+1. Use a build command that measures the amount of time taken so you can compare build times when troubleshooting.  On Windows you can use the PowerShell `measure-command` to measure build times, and on Linux you can use `time`.
 {{< tabs name="CMake build timing example" >}}
 {{% tab name="Windows" %}}
 
-```cmd
+```pwsh
 measure-command { cmake --build build/windows --target Editor AutomatedTesting.GameLauncher --config profile | Out-Default}
 ```
 
@@ -132,20 +132,20 @@ time cmake --build build/linux --target Editor AutomatedTesting.GameLauncher --c
 1. Use the `profile` build configuration when developing when you don't need all the un-optimized debugging information of a `debug` build configuration.
 1. Make sure you're using unity builds (on by default) by configuring with the option `-DLY_UNITY_BUILD=ON`.
 1. Don't build unit tests if you aren't making engine changes by configuring with the option `-DLY_DISABLE_TEST_MODULES=ON`.
-1. Deactivate Gems your project is not using using the [o3de CLI or Project Manager](/docs/user-guide/project-config/add-remove-gems/).
-1. See the [troubleshooting step for configuring compiler-specific settings](#building-causes-computer-to-freeze-or-lock-up) below which may be necessary on hardware with high CPU core counts.
+1. Deactivate Gems that your project does not need using the [O3DE CLI or Project Manager](/docs/user-guide/project-config/add-remove-gems/).
+1. See the [troubleshooting step for configuring compiler-specific settings](#building-causes-computer-to-freeze-or-reboot) below which might be necessary on hardware with high CPU core counts.
 
 ## Building causes computer to freeze, lock up or reboot
 
-**Issue:** On some computers, especially those with CPUs that have high core counts, the way compilation is spread across cores can lead to resource starvation and even freezing.  It's also possible that a build could run out of memory and cause issues including resource starvation and reboot.
+**Issue:** On some computers, especially those with CPUs that have high core counts, the way that compilation is spread across cores can lead to resource starvation and even freezing.  It's also possible that a build could run out of memory and cause issues including resource starvation and reboot.
 
-**Remedy:** Adjust the build settings to spread out the maximum number of parallel processes used and the maximum CL processor counts allowed per project if possible.
+**Remedy:** If possible, adjust the build settings to spread out the maximum number of parallel processes used and the maximum CL processor counts allowed per project.
 
 {{< tabs name="Platform Specific Settings" >}}
 {{% tab name="Windows" %}}
 
-For Visual Studio on Windows, the command might look like this to set the maximum cpu count to 16 and limit to 32 CL processor counts per project.
-```cmd
+For Visual Studio on Windows, the command might look like this to set the maximum CPU count to 16 and limit the CL processor count to 32 per project.
+```pwsh
 cmake --build build/windows --target Editor --config profile -- /m:16 /p:CL_MPCount=32
 ```
 If building or debugging in the Visual Studio IDE set the maximum number of parallel project builds in the Tools -> Options -> Projects and Solutions -> Build And Run option page:
@@ -159,7 +159,7 @@ Set the Maximum Concurrent C++ Compilations in the Tools -> Options -> Projects 
 Experiment with different values to find the best settings for your hardware.  
 On Windows you can measure your compile times in a PowerShell terminal with different settings with a command like this:
 
-```cmd
+```pwsh
 measure-command { cmake --build build/windows --target Editor --config profile -- /m:8 /p:CL_MPCount=8 | Out-Default}
 ```
 Example output:
@@ -180,7 +180,7 @@ TotalMilliseconds : 956701.4354
 {{% /tab %}}
 {{% tab name="Linux" %}}
 
-Use the [`-j/--parallel` cmake option](https://cmake.org/cmake/help/latest/manual/cmake.1.html#cmdoption-cmake-build-j) to reduce the number of parallel jobs used when building.
+Use the [`-j` or `--parallel` cmake option](https://cmake.org/cmake/help/latest/manual/cmake.1.html#cmdoption-cmake-build-j) to limit the number of parallel jobs used when building.
 
 For example, on a 12-core 32-GiB machine, you may want to reduce the number of parallel build jobs to 6 if compile processes are being killed.
 
