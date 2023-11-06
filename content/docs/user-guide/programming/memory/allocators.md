@@ -20,7 +20,7 @@ The following diagram illustrates the hierarchy of AZ memory allocators.
 
 + **`OSAllocator`** - Acts as the interface to operating system memory and should be used for direct operating system allocations on the C heap. `OSAllocator` is initialized on the first call to `AllocatorInstance<OSAllocator>::Get()`.
 
-  `OSAllocator` uses OS system calls to allocate memory. The calls are not recorded or tracked by default, but can be by following the Allocator Tagging Guide wiki [startup config](https://github.com/o3de/o3de/wiki/Allocator-Tagging-Guide#startupcfg) section. Other allocators use `OSAllocator` to obtain memory from the operating system. 
+  `OSAllocator` uses OS system calls to allocate memory. The calls are not recorded or tracked by default, but can be by following the [Allocator Tagging Guide wiki startup config](https://github.com/o3de/o3de/wiki/Allocator-Tagging-Guide#startupcfg) section. Other allocators use `OSAllocator` to obtain memory from the operating system. 
 + **`SystemAllocator`** - The system allocator is the general purpose allocator for the AZ memory library. It is initialized with the first call to `AllocatorInstance<SystemAllocator>::Get()`. All other allocators use `SystemAllocator` for internal allocations.
 + **`PoolAllocator`** - Performs extremely fast small object memory allocations. `PoolAllocator` can allocate sizes in a range specified by `m_minAllocationSize` to `m_maxPoolSize`.
 
