@@ -20,7 +20,7 @@ For information about O3DE's scheme for allocators and new allocators, see [Manu
 
 O3DE initializes its memory system via storing an instances of Allocators in an AZ Environment variables the first time a call to `AZ::AllocatorInstance<AllocatorType>::Get()` is called in [code](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Memory/AllocatorInstance.h#L73-L86).  
 To ensure that Allocators are available in static initialization and static de-initialization of the running applicaition and any dynamically loaded Gem modules, the allocator AZ Environment variables are stored in the `O3DEKernel` shared library which is a link library dependency of the [AzCore Target](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/CMakeLists.txt#L60-L98).  
-As the `AzCore` static library target is a dependency by Gems and O3DE applications, they all statically link the `O3DEKernel` target due to that dependency.  
+All Gems and O3DE applications statically link the `O3DEKernel` target because they depend on the `AzCore` static library target.
 On initial load of the application, the `O3DEKernel` library is the first shared library loaded.  
 As loading of statically linked shared libraries occur before static initialization and unloading occurs after static de-initialization of the application, this ensures that the O3DE Allocators are available for the entire duration of the application.  
 The [AZ::Environnment](https://github.com/o3de/o3de/blob/development/Code/Framework/AzCore/AzCore/Module/Environment.h#L114-L115) is accessed through the O3DEKernel via a DLL interface to enforce the only instance to be available in `O3DEKernel.dll` (Windows), `libO3DEKernel.so` (Linux/Android) or `libO3DEKernel.dylib` (MacOS/iOS).  
