@@ -11,7 +11,7 @@ To avoid performance issues, debugging features are disabled by default.
 
 **To enable HPHA memory debugging**
 
-1. In the engine source [Code/Framework/AzCore/AzCore/Memory/SystemAllocator.cpp](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/SystemAllocator.cpp#L54) file, change the HphaSchema to use the HphaSchemaBase with the debug option set to true:
+1. In the system allocator source file [SystemAllocator.cpp](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/SystemAllocator.cpp#L54) file, change the HphaSchema to use the HphaSchemaBase with the debug option set to true:
 
 ```c++
 m_subAllocator = AZStd::make_unique<HphaSchemaBase<true>>();
