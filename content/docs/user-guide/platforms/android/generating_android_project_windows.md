@@ -8,151 +8,183 @@ weight: 200
 
 In this tutorial, you will learn how to build and deploy an Android project in **Open 3D Engine (O3DE)**.
 
-The following workflow describes the steps to build and deploy the Atom Sample Viewer project to a device that runs Android 10. You can also follow these steps to build your own project on any supported Android version. 
+The following workflow describes the steps to build and deploy the Atom Sample Viewer project to a device that runs Android 20. You can also follow these steps to build your own project on any supported Android version. 
 
 ## Prerequisites
 
 The following instructions assume that you have:
 
 1.  Steps are performed in a Windows host machine.
-2.  Android Studio and Android SDK are installed
-3.  JDK development kit is installed and on the system path
-4.  Gradle is installed and on the system path (maximum version supported: 7.0.2)
-5.  CMake {{< versions/cmake >}} or newer is installed and on the system path
-6.  Ninja build system is installed and on the system path
-7.  Git is installed
-8.  [O3DE](https://github.com/o3de/o3de.git) has been cloned locally on the system (to `D:\github\o3de`)
-9.  [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) has been cloned locally on the system (to `D:\github\o3de-atom-sampleviewer`)
+1.  The software [prerequisites for Android](/docs/user-guide/platforms/android#Prerequisite software and packages) are satisfied.
+1.  Latest version of [Android Studio](https://developer.android.com/studio)
+
+1.  [O3DE](https://github.com/o3de/o3de.git) has been cloned locally on the system. Python must be initialized (through the `python\get_python.cmd` script), and the path must be [registered](/docs/welcome-guide/setup/setup-from-github/building-windows/#register-the-engine) as the engine.
+1.  [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) has been cloned locally on the system, and registered as an O3DE project through the [O3DE Command Line](docs/user-guide/project-config/cli-reference#register).
+1.  A [signing configuration keystore](/docs/user-guide/platforms/android#APK Signing) is created (Either from Android Studio or the keytool command line)
 
 {{< note >}}
 This example workflow represents the 'Source Engine' workflow when setting up [O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github)
 {{< /note >}}
 
 
-## (Optional) Set up environment variables
+## Set up environment variables
 
-The project generation steps involve passing in different paths and values to the Android Project Generation script. To simplify the paths and values, set up the following environment variables. If you skip this step, pass in the literal paths and values to the commands instead. 
+This tutorial will use the following environment variables in the example steps
 
-**Source and build directories**
+- `O3DE_ENGINE_PATH`
 
-Add the following source and build directories to your environment variables.
+  The local path where the [O3DE](https://github.com/o3de/o3de.git) repository was cloned to and registered.
 
-- `O3DE_ENGINE_PATH`: The path to the O3DE source engine.
+- `O3DE_PROJECT_PATH`
 
-- `O3DE_PROJECT_PATH`: The path to Atom Sample Viewer project.  
+  The local path where [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) repository was cloned to and registered.
 
-- `O3DE_BUILD_ROOT`: The path to build the Atom Sample Viewer project at.
-  
-```
-SET O3DE_ENGINE_PATH=C:\o3de
-SET O3DE_PROJECT_PATH=C:\o3de-projects\o3de-atom-sampleviewer
-SET O3DE_BUILD_ROOT=C:\o3de-build
-```
+- `O3DE_PROJECT_NAME`
 
-**KeyStore settings**
+  The name of the project (`AtomSampleViewer`).
 
-Add the following KeyStore settings to your environment variables.
+- `TARGET_ANDROID_PROJECT_PATH`
 
-```
-SET O3DE_ANDROID_SIGNCONFIG_FILE=%O3DE_BUILD_ROOT%\o3de.keystore
-SET O3DE_ANDROID_SIGNCONFIG_STORE_PASSWORD=o3de_android
-SET O3DE_ANDROID_SIGNCONFIG_KEY_ALIAS=o3de_key
-SET O3DE_ANDROID_SIGNCONFIG_KEY_PASSWORD=o3de_android
-SET O3DE_ANDROID_SIGNCONFIG_KEY_SIZE=2048
-SET O3DE_ANDROID_SIGNCONFIG_VALIDITY_DAYS=10000
-SET O3DE_ANDROID_DN="cn=atom-sample-viewer, ou=o3de, o=LF, c=US"
-```
+  The path write the Android Project Gradle script to.
 
-{{< note >}}
-While signing keys are required to deploy to an Android device, you don't need to configure KeyStore settings in your environment variables. Rather, you can use the values (such as store password, key password, alias, and so on) from your JKS file directly.
-{{< /note >}}
+- `ANDROID_SDK_HOME`
+
+  The path to where the Android SDK is set to. This path must have the following sub path to the sdk manager command line:
+  ```
+  %ANDROID_SDK_HOME%\cmdline-tools\latest\bin\sdkmanager.bat
+
+- `ANDROID_SIGNING_CONFIG_KEYSTORE_FILE`
+
+  The key store file location for the [signing configuration](/docs/user-guide/platforms/android#APK Signing) to use for APK signing.
+
+- `ANDROID_SIGNING_CONFIG_KEY_ALIAS`
+
+  The alias of the signing key in the key store file that will be used for the APK signing.
+
+## Step by step instructions
 
 
-**Android Project Generation Settings**
+1. **Build the tools and assets for Android for the project.**
 
-Add the following Android Project Generation settings to your environment variables.
+   Make sure that `android` assets are enabled in the [AssetProcessorPlatformConfig.setreg](https://github.com/o3de/o3de/blob/c7d07cc2ad12d2062ad21318e04669642ae753b6/Registry/AssetProcessorPlatformConfig.setreg#L66) settings file.
 
-```
-set O3DE_ANDROID_SDK_PATH=C:\Android\android-sdk
-set O3DE_ANDROID_NDK_VERSION=22.*
-set O3DE_ANDROID_SDK_API_LEVEL=29
-set O3DE_ANDROID_ASSET_MODE=LOOSE
-set O3DE_ANDROID_DEPLOY_TYPE=BOTH
-```
+   ```json
+    "Platforms": {
+                    //"pc": "enabled",
+                    "android": "enabled"
+                    //"ios": "enabled",
+                    //"mac": "enabled",
+                    //"server": "enabled"
+                },
+   ```
 
-{{< note >}}
-Set `O3DE_ANDROID_SDK_PATH` to the location where you set up your Android SDK package.
-{{< /note >}}
+   Configure and build the asset processing tools and process the assets.
 
+   ```
+   cd %O3DE_PROJECT_PATH%
 
-## (Optional) Build O3DE and Asset Processor Batch
+   cmake -S . -B build/windows -DLY_DISABLE_TEST_MODULES=ON
 
-This tutorial assumes you've built O3DE as a source engine by following the instructions in [Set up Open 3D Engine](/docs/welcome-guide/setup/setup-from-github/) for "Source engine". These instructions build the full suite of O3DE tools, including **Asset Processor Batch**. However, if you haven't built O3DE, the following describes the minimal steps you need to set up O3DE and Asset Processor Batch to process assets and build your project for Android.
+   cmake --build build/windows --config profile --target AssetProcessorBatch %O3DE_PROJECT_NAME%.Assets
 
-1. Register the project path with the O3DE engine.
+   ```
+
+1. **Make sure all the licenses are accepted for the Android SDK**
+
+   ```
+   %ANDROID_SDK_HOME%\cmdline-tools\latest\bin\sdkmanager.bat --licenses
+   ```
+   (Follow the commands to accept the licenses if necessary)
+
+1. **Configure the android environment settings**
+
+   ```
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --set-value sdk.root="%ANDROID_SDK_HOME%" --global
+
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --set-value platform.sdk.api=31 --global
+
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --set-value ndk.version=25* --global
+
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --set-value android.gradle.plugin=8.1.0 --global
+
+   ```
+
+1. **Validate the settings and environment and correct any issues that are reported**
+
+   ```
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --validate
+   ```
+
+1. **Configure the Signing Config key store and alias**
+
+   ```
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --set-value signconfig.store.file="%ANDROID_SIGNING_CONFIG_KEYSTORE_FILE%" --global
+
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --set-value signconfig.key.alias=%ANDROID_SIGNING_CONFIG_KEY_ALIAS% --global
+   ```
+
+1. **Set the Signing Config key store password**
+
+   ```
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --set-password signconfig.store.password --global
+   ```
+   Enter + confirm the password for the key store when prompted
+
+1. **Set the Signing Config signing key password**
+   ```
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-configure --set-password signconfig.key.password --global
+   ```
+   Enter + confirm the password for the key when prompted
+
+1. **Run the android project generation script**
+
+   ```
+   %O3DE_ENGINE_PATH%\scripts\o3de.bat android-generate -p %O3DE_PROJECT_NAME% -B %TARGET_ANDROID_PROJECT_PATH%
+   ```
+
+1. **Build the Android APK**
+
+   ```
+   cd %TARGET_ANDROID_PROJECT_PATH%
+
+   gradlew.bat assembleProfile
+
+   ```
+
+1. **Deploy the Android APK**
+
+   Using the [ADB](https://developer.android.com/tools/adb) tool in the Android SDK, connect and list the attached device(s)
+
+   ```
+   %ANDROID_SDK_HOME%\platform-tools\adb.exe devices
+   ```
    
-    ```
-    cd %O3DE_ENGINE_PATH%
+   You should see a list of devices (if there are any attached) and their attach status. If you don't see any attached devices, then either check the USB connection to the device, and make sure it is authorized to connect to the device (on the device itself).
 
-    scripts\o3de.bat register --project-path %O3DE_PROJECT_PATH%
-
-    ```
-
-2. Generate the Visual Studio project for the O3DE engine.
+   If you see something like the following:
    
-    ```
-    cd %O3DE_PROJECT_PATH%
+   ```
+   List of devices attached
+   XXXXXXXXXXX     unauthorized
+   ```
 
-    cmake -B %O3DE_BUILD_ROOT%\windows
-    ```
+   This means that you need to authorize debugging on the computer for the device.
 
-3. Build the **Asset Processor Batch** project in profile mode to process the assets.
-    ```
-    cmake --build %O3DE_BUILD_ROOT%\windows --target AssetProcessorBatch --config profile -- -m /nologo
-    ```
-    {{< note >}}
-This step only builds Asset Processor Batch and the necessary dependent modules.
-    {{< /note >}}
+   Once all the authorizations are complete, you should see something like:
 
-## Generating Android projects on Windows  
-The following instructions assume that you've completed the optional steps to set up environment variables and build O3DE and Asset Processor Batch.
+   ```
+   List of devices attached
+   XXXXXXXXXXX     device
+   ```
 
-1. Run Asset Processor Batch to process Android assets for the Atom Sample Viewer project.
-   
-    ```
-    %O3DE_BUILD_ROOT%\windows\bin\profile\AssetProcessorBatch.exe --platforms=android --project-path %O3DE_PROJECT_PATH%
-    ```
+   At this point, track the device ID into an environment variable
 
-2. (Optional) Generate a KeyStore to allow APK signing. If you don't set up a signing key at this time, you can also set it up through Android Studio after generating the Android project.
-   
-    ```
-    keytool -genkey -keystore %O3DE_ANDROID_SIGNCONFIG_FILE% -storepass %O3DE_ANDROID_SIGNCONFIG_STORE_PASSWORD% -alias %O3DE_ANDROID_SIGNCONFIG_KEY_ALIAS% -keypass %O3DE_ANDROID_SIGNCONFIG_KEY_PASSWORD% -keyalg RSA -keysize %O3DE_ANDROID_SIGNCONFIG_KEY_SIZE% -validity %O3DE_ANDROID_SIGNCONFIG_VALIDITY_DAYS% -dname %O3DE_ANDROID_DN%
-    ```
+   ```
+   set ANDROID_DEVICE_ID=XXXXXXXXXXX
+   ```
 
-3. Use Python to run `generate_android_project.py` and generate the Android project for Atom Sample Viewer. The following command by itself assumes you skipped step 2 and that you plan to create KeyStore settings through Android Studio after generating the project. Otherwise, if you did generate a KeyStore in step 2, then include the `--signconfig-*` options listed below and specify their values.
-   
-    ```
-    %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\generate_android_project.py --engine-root %O3DE_ENGINE_PATH% --project-path %O3DE_PROJECT_PATH% --build-dir %O3DE_BUILD_ROOT%\android --third-party-path %USERPROFILE%\.o3de\3rdParty --android-sdk-path %O3DE_ANDROID_SDK_PATH% --android-ndk-version %O3DE_ANDROID_NDK_VERSION% --android-sdk-platform %O3DE_ANDROID_SDK_API_LEVEL% --enable-unity-build --include-apk-assets --asset-mode %O3DE_ANDROID_ASSET_MODE%
-    ```
+   Once the android device is identified, and the computer is authorized to connect to the device. you will be able to install the APK
 
-4. Build the Android project.
-
-    ```
-    cd %O3DE_BUILD_ROOT%\android
-
-    gradlew assembleProfile
-    ```
-
-    {{< note >}}
-Alternatively, instead of using command line, you can open the folder `%O3DE_BUILD_ROOT%\android` directly in Android Studio and build the APK from there.
-    {{< /note >}}
-
-
-5. Deploy your project to an Android device.
-   
-    ```
-    %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\deploy_android.py --build-dir %O3DE_BUILD_ROOT%\android --configuration profile --clean -t %O3DE_ANDROID_DEPLOY_TYPE%
-    ```
-    {{< note >}}
-The deployment tool relies on Android Debug Bridge (ADB), Android's command-line tool, to perform the deployment. You must set the target device to development mode and connect it to your machine using a USB. To set this up, follow the [Android instructions](https://developer.android.com/studio/debug/dev-options). Your target device may ask you to trust the host machine, which must enable to continue the deployment process.
-    {{< /note >}}
+   ```
+   %ANDROID_SDK_HOME%\platform-tools\adb.exe install -t -r %TARGET_ANDROID_PROJECT_PATH%\app\build\outputs\apk\profile %ANDROID_DEVICE_ID%
+   ```

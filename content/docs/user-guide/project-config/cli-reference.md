@@ -107,7 +107,8 @@ The `o3de` Python script contains the following commands, with further details i
 | [`download`](#download) | Download content from remote repositories. |
 | [`repo`](#repo) | Activate and deactivate remote repositories and update metadata. |
 | [`sha256`](#sha256) | Creates a hash value for an O3DE object using SHA-256 (Secure Hash Algorithm 256). |
-
+| [`android-configure`](#android-configure) | Configures the settings for the Android Project Generation script. |
+| [`android-generate`](#android-generate) | Generate an Android Gradle project script for you project. |
 
 <!-------------------------------------------------------------->
 
@@ -2121,3 +2122,137 @@ o3de.bat sha256 --file-path FILE_PATH --json-path JSON_PATH
 - **`-j JSON_PATH, --json-path JSON_PATH`**
 
   The path to the O3DE object's JSON file that you want to add the `sha256` hash value to.
+
+<!-------------------------------------------------------------->
+
+## `android-configure`
+
+Manages the settings used by the Android Project Generation process to create an Android Gradle build script.
+
+### Format
+
+```cmd
+android-configure [-h] [--global] [-p PROJECT] [-l] [--validate] [--set-value VALUE] [--clear-value VALUE] [--set-password SETTING] [--debug]
+```
+
+### Usage
+
+```cmd
+android-configure -l
+```
+This will list the current settings that the Android Project Generation script will use.
+
+```cmd
+android-configure --validate
+```
+This will perform a dry run and validate that the minimal settings and configured and the prequisite software environments are satisfied. If not, it will report the detailed error.
+
+```cmd
+android-configure --set-value SETTING
+```
+This will set anandroid setting based on the **SETTING** equality expression. The **SETTING** format must be in the form of `<setting>=<value>`, where **\<setting\>** is the android setting to set, and **\<value\>** is the value to set the setting to. Note that password settings cannot set through this argument, `--set-password` must be used instead.
+
+```cmd
+android-configure --clear-value SETTING
+```
+This will clear the specific android setting **SETTING**. This can be used to clear password settings as well.
+
+```cmd
+android-configure --set-password SETTING
+```
+This will set a password android setting **SETTING** through a standard password set and validate prompt.
+
+### Optional parameters
+
+- **`--help`**
+
+  Show the standard usage documentation for this command, as well as the list of the android settings and their descriptions.
+
+- **`-p PROJECT`**
+
+  Attempt to locate and apply any project specific setting for the project registered as **\<project\>**. The default behavior for the **android-configure** command is to attempt to detect the project based on the current working directory.
+
+- **`--global`**
+
+  Apply the **android-configure** command against the global values. Global values are applied to all projects that do not have specific values that are applied just for that project. The default behavior is to apply the command to a local project if possible.
+
+- **`--debug`**
+
+  Enable more verbose debug messaging when running this command
+
+<!-------------------------------------------------------------->
+
+## `android-generate`
+
+Generate an Android Gradle project for your project. Specific project details are configured through the android-specific settings managed by the `android-configure` command.
+
+### Format
+
+```cmd
+android-generate [-h] -p PROJECT -B BUILD_DIR [--platform-sdk-api-level PLATFORM_SDK_API_LEVEL] [--ndk-version NDK_VERSION] [--signconfig-store-file SIGNCONFIG_STORE_FILE] [--signconfig-key-alias SIGNCONFIG_KEY_ALIAS] [--asset-mode ASSET_MODE] [--extra-cmake-args EXTRA_CMAKE_ARGS] [--custom-jvm-args CUSTOM_JVM_ARGS] [--strip-debug] [--oculus-project] [--debug]
+```
+
+### Usage
+
+```cmd
+android-generate -p <project> -B <build-dir>
+```
+This will generate an Android Gradle project for **\<project\>** in the directory **\<build-dir\>**.
+
+
+### Optional parameters
+
+- **`--help`**
+
+  Show the standard usage documentation for this command.
+
+- **`--platform-sdk-api-level PLATFORM_SDK_API_LEVEL`**
+
+  Specify a specific [Android Platform SDK API Level](https://developer.android.com/tools/releases/platforms). The default API level is controlled by the `platform.sdk.api` setting.
+
+- **`--ndk-version NDK_VERSION`**
+
+  Specify the specific [Android NDK](https://developer.android.com/ndk) to [download](https://developer.android.com/ndk/downloads) and use for building the native code. The value for **NDK_VERSION** represents the version number, not the release. Wildcards are supported so that you do not need to provide the entire version. For instance, you can use `25.*` to search for and get the latest major version for revision **r25c**. The default NDK version is controlled by the `ndk.version` setting.
+
+- **`--signconfig-store-file SIGNCONFIG_STORE_FILE`**
+
+  Specify the optional Android signing configuration key store file. If the `signconfig.store.file` is set in the settings, it will be used as the default value.
+
+- **`--signconfig-key-alias SIGNCONFIG_KEY_ALIAS`**
+
+  Specify the optional Android signing configuration key alias in the key store file. If the `signconfig.key.alias` is set in the settings, it will be used as the default value.
+
+- **`--asset-mode ASSET_MODE`**
+
+  Specify the asset deployment method to use when constructing the APK. The accepted values are :
+
+  - **LOOSE**
+     Loose assets the individual compiled asset files.
+
+  - **PAK**
+     Bundled release files are bundled assets that are compressed into release Pak files. See [Bundling Project Assets](/docs/user-guide/asset-bundler/bundle-assets-for-release/) for information on how to create bundled assets.
+
+    The `asset.mode` setting controls the default value for the asset deployment mode.
+
+- **`--extra-cmake-args EXTRA_CMAKE_ARGS`**
+
+    Optional string to set additional cmake arguments during the native project generation within the android gradle build process. This value will be appended to the **CMake** project generation command directly and can be used to control any custom O3DE cmake variables.
+
+    The `extra.cmake.args` setting controls the default value for this option.
+- **`--custom-jvm-args CUSTOM_JVM_ARGS`**
+
+    Customized jvm arguments to set when invoking gradle. This option is useful to tweak the [JVM memory](https://docs.gradle.org/current/userguide/config_gradle.html#sec:configuring_jvm_memory) setting when launching Gradle.
+
+    The `gradle.jvmargs` setting controls the default value for this option.
+
+- **`--strip-debug/--no-strip-debug`**
+
+    Flag to set the cmake native build rules to optionally strip out debug symbols from the built binaries. If the setting `strip.debug` is set to **False**, then the `--strip-debug` is available as the option to override and enable debug symbol stripping. If the setting is **True**, then the `--no-strip-debug` is available as the option  to override and disable symbol stripping.
+
+- **`--oculus-project/--no-oculus-project`**
+
+    Flag to set the enable or disable oculus specific settings in the Android Gradle project. If the setting `oculus.project` is set to **False**, then the `--oculus-project` is available to enable the oculus specific settings. If the setting is **True**, then the `--no-oculus-project` is available to disable the oculus specific settings.
+
+- **`--debug`**
+
+  Enable more verbose debug messaging when running this command
