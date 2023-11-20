@@ -26,6 +26,11 @@ In order for the generation script to automatically download the required packag
 ### Java Development Kit (JDK)
 The [Java Development Kit](https://www.java.com/releases/) (JDK) is needed to run the Android SDK command line tool, compile the android java source for the project, and create a Java Key Storage (JKS) files used to sign the APK. The version of the JDK required for Android depends on the [requirements for the Android SDK](https://developer.android.com/build/jdks). The location of the JDK installation must be set in the **JAVA_HOME** environment variable, or the location of the JDK executable must be in the **PATH** environment.
 
+{{<note>}}
+The version of the [Java Development Kit](https://www.java.com/releases/) must be compatible with the [SDK Manager](https://developer.android.com/tools/sdkmanager). However, if you wish to specify older versions of the Android Gradle Plugin, the version of the JDK that is used to run the gradle build may be different, and may require setting the `JAVA_HOME` environment to match an older versions of SDK in order to build the APK successfully.
+{{</note>}}
+
+
 ### Gradle and the Android Gradle Plugin
 [Gradle](https://gradle.org/install/) is the build system designed to build and create Android applications. The [Android Gradle Plugin](https://developer.android.com/build/releases/gradle-plugin) adds features to the Gradle build system to support Android builds. The current **Android Project Generation script** supports version 8.0 or newer of the **Android Gradle Plugin**, which in turn requires **Gradle** version 8.0 or newer. The location of the Gradle installation must be set in at least one of the three ways in order for it to be discoverable:
 
