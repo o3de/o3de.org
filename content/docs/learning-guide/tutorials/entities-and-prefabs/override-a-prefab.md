@@ -21,7 +21,7 @@ When a prefab is open in [Prefab Edit Mode](/docs/learning-guide/tutorials/entit
 
 ## What are prefab overrides?
 
-Prefab overrides are one of the major components of the prefab system. Before overrides, the only way to modify prefabs is by entering Prefab Edit Mode but changes would be applied to all instances of that prefab. With overrides, we can make prefabs stand out from the rest of their siblings, which gives content creators much more control and flexibility in building large and complex scenes. It also opens doors for easily overriding default procedural prefabs that are imported from `.fbx` files.
+Prefab overrides are one of the major components of the prefab system. Before overrides, changing a single prefab instance would affect all instances. With overrides, we can make prefabs stand out from the rest of their siblings. Overrides give content creators much more flexibility to build large and complex scenes. It also allows for overriding default procedural prefabs that are imported via `.fbx` files.
 
 The following image shows two instances of Car prefab in a level. With overrides enabled, the Car instances are expandable and can be opened for editing:
 
@@ -35,7 +35,7 @@ Overrides applied to prefab instances are registered for that individual instanc
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit.png" width="300" alt="Level in Prefab Edit Mode with Override Edit in Entity Outliner." >}}
 
-Suppose that you modify the Body entity's location as an override from the level prefab, you notice that a blue circle will appear on the entity's icon in Entity Outliner. This indicate that an override has been applied to the entity. Now, if you save the level prefab, the override will be stored.
+Modifying the Body entity's location as an override, you notice that a blue circle will appear in the Entity Outliner. This indicates an entity override. Now, if you save the level prefab, the override is also saved.
 
 {{< note >}}
 A level is a prefab, and automatically enters Prefab Edit Mode when it is opened. This is indicated by the blue capsule around the level in **Entity Outliner**.
@@ -43,7 +43,7 @@ A level is a prefab, and automatically enters Prefab Edit Mode when it is opened
 Overrides are not limited to the level. In fact, any prefab that is open for editing in Prefab Edit Mode is responsible for storing the overrides made to its nested prefabs.
 {{< /note >}}
 
-However, if you do not want to make override changes, you should follow the old Prefab Edit Mode workflow instead. In the example, you can enter the mode on the Car instance before editing the Body entity, in which any changes will be applied to all Car instances as shown in the below image.
+If you do not want to make override changes, you should follow the old Prefab Edit Mode workflow instead. In this example, you can enter Prefab Edit Mode via the Car instance in the Entity Outliner. Any changes to Car will now affect all Car instances.
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit-enter-edit-mode.png" width="300" alt="Edit Mode Entered on Car Prefab in Entity Outliner." >}}
 
@@ -79,7 +79,7 @@ To add a component of an entity under a prefab instance:
 
 1. In Entity Outliner, select an entity under an instance that is not in Prefab Edit Mode.
 1. In Inspector, **right-click** on empty area and choose **Hi** from the context menu.
-1. Notice that a blue plus icon appears on the component's icon to the left or the component name.
+1. Notice that a blue plus icon appears on the component's icon to the left of the component name.
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-add-component-override.png" width="450" alt="Adding a component as an override." >}}
 
@@ -112,7 +112,7 @@ You cannot revert the deletion by reverting overrides on the parent entity. See 
 In current workflow, it does not support adding a nested prefab instance as an override. However, you can remove a nested prefab instance as an override by following the steps mentioned above for an entity.
 
 {{< note >}}
-It is important to note that deleting or undoing a prefab instance will not actually delete the actual prefab from the hard drive, which is the same when removing a prefab from the Entity Outliner.
+Deleting or undoing a prefab instance will not delete the actual prefab off the hard drive.
 
 To remove a prefab permanently, you must delete the prefab file from the Asset Browser or your OS folder operation. We recommend not doing this unless you are sure that prefab does not exist in other levels or other projects that reference it.
 {{< /note >}}
@@ -150,7 +150,7 @@ For a component deleted as an override, you can revert the deletion by reverting
 
 ### Revert all overrides on the entity
 
-Last but not least, you can revert all overrides that is applied on an entity:
+Last but not least, you can revert all overrides applied to an entity:
 1. In Entity Outliner, **right-click** on an entity with overrides and choose **Revert Overrides** from the context menu.
 1. Notice that the entity no longer has any indication of having overrides.
 
@@ -164,7 +164,7 @@ If you see any unexpected overrides showing up, you can try the above methods to
 
 ## Disable prefab overrides
 
-Prefab overrides are a new feature. It is possible that you may encounter blocking issues that slow down your workflow. You can follow the recommendations below.
+Prefab overrides are a new feature. You may encounter issues that slow down or even block your workflow. You can follow the recommendations below to disable the feature in your project.
 
 First, we recommend that you disable the prefab overrides feature in the Inspector, which should roll back to how it already worked in the 23.05 release.
 1. Open the **Console Variables (CVar)** editor in **Tool**.
