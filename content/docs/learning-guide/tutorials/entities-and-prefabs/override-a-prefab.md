@@ -156,7 +156,6 @@ Last but not least, you can revert all overrides applied to an entity:
 
 {{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/prefab-override-revert.png" width="300" alt="Reverting overrides on an entity." >}}
 
-
 {{< note >}}
 If you see any unexpected overrides showing up, you can try the above methods to revert them. If it does not work out, you can open the prefab file that owns those overrides (under the `Instances` key) and remove the override patches you want.
 {{< /note >}}
