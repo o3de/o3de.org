@@ -43,7 +43,7 @@ This tutorial will use the following environment variables in the example steps
 
 - `O3DE_ENGINE_PATH`
 
-  The local path where the [O3DE](https:/git /github.com/o3de/o3de.git) repository was cloned to and registered.
+  The local path where the [O3DE](https://github.com/o3de/o3de.git) repository was cloned to and registered.
 
 - `O3DE_PROJECT_PATH`
 
@@ -65,7 +65,7 @@ This tutorial will use the following environment variables in the example steps
 
 - `ANDROID_SIGNING_CONFIG_KEYSTORE_FILE`
 
-  The key store file location for the [signing configuration](/docs/user-guide/platforms/android#APK Signing) to use for APK signing.
+  The key store file location for the [signing configuration](/docs/user-guide/platforms/android#APK_Signing) to use for APK signing.
 
 - `ANDROID_SIGNING_CONFIG_KEY_ALIAS`
 
