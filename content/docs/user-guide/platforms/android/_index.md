@@ -32,7 +32,7 @@ The version of the [Java Development Kit](https://www.java.com/releases/) must b
 
 
 ### Gradle and the Android Gradle Plugin
-[Gradle](https://gradle.org/install/) is the build system designed to build and create Android applications. The [Android Gradle Plugin](https://developer.android.com/build/releases/gradle-plugin) adds features to the Gradle build system to support Android builds. The current **Android Project Generation script** supports version 8.0 or newer of the **Android Gradle Plugin**, which in turn requires **Gradle** version 8.0 or newer. The location of the Gradle installation must be set in at least one of the three ways in order for it to be discoverable:
+[Gradle](https://gradle.org/install/) is the build system designed to build and create Android applications. The [Android Gradle Plugin](https://developer.android.com/build/releases/gradle-plugin) adds features to the Gradle build system to support Android builds. The current **Android Project Generation script** supports version 7.0 or newer of the **Android Gradle Plugin**, which in turn requires **Gradle** version 7.0.2 or newer. The location of the Gradle installation must be set in at least one of the three ways in order for it to be discoverable:
 
 1. Android configuration setting `gradle.home`
 2. Set in the **GRADLE_HOME** environment variable.
