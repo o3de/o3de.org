@@ -33,7 +33,7 @@ If prefab overrides are disabled, prefab instances in the level cannot be expand
 
 Overrides applied to prefab instances are registered for that individual instance and are stored in the prefab being edited that contains the instances. In the above example, the Car instances are in a level (which is a prefab), so the prefab overrides applied to the Car instances are stored in the level when you save it.
 
-{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit.png" width="300" alt="Level in Prefab Edit Mode with Override Edit in Entity Outliner." >}}
+{{< image-width src="/images/learning-guide/tutorials/entities-and-prefabs/level-prefab-edit-with-override.png" width="300" alt="Level in Prefab Edit Mode with Override Edit in Entity Outliner." >}}
 
 Modifying the Body entity's location as an override, you notice that a blue circle will appear in the Entity Outliner. This indicates an entity override. Now, if you save the level prefab, the override is also saved.
 
