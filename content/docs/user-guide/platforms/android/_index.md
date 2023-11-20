@@ -32,7 +32,12 @@ The version of the [Java Development Kit](https://www.java.com/releases/) must b
 
 
 ### Gradle and the Android Gradle Plugin
-[Gradle](https://gradle.org/install/) is the build system designed to build and create Android applications. The [Android Gradle Plugin](https://developer.android.com/build/releases/gradle-plugin) adds features to the Gradle build system to support Android builds. The current **Android Project Generation script** supports version 7.0 or newer of the **Android Gradle Plugin**, which in turn requires **Gradle** version 7.0.2 or newer. The location of the Gradle installation must be set in at least one of the three ways in order for it to be discoverable:
+[Gradle](https://gradle.org/install/) is the build system designed to build and create Android applications. The [Android Gradle Plugin](https://developer.android.com/build/releases/gradle-plugin) adds features to the Gradle build system to support Android builds. The current **Android Project Generation script** supports version 8.1 or newer of the **Android Gradle Plugin**, which in turn requires **Gradle** version 8.1 or newer. The location of the Gradle installation must be set in at least one of the three ways in order for it to be discoverable:
+
+{{<note>}}
+Older versions (4.2.0 or newer) of the Android Gradle Plugin are support, but not recommended. 
+{{</note>}}
+
 
 1. Android configuration setting `gradle.home`
 2. Set in the **GRADLE_HOME** environment variable.
@@ -61,17 +66,19 @@ Below is the list of configurable android settings.
 | sdk.root | The root path of the android sdk on this system. |
 | platform.sdk.api | The [Android Platform SDK API level](https://developer.android.com/tools/releases/platforms) |
 | ndk.version | The version of the [Android NDK](https://developer.android.com/ndk/downloads). File matching patterns can be used (i.e. 25.* will search for the most update to date major version 25) |
-| android.gradle.plugin | The version of the [Android Gradle Plugin]((https://developer.android.com/reference/tools/gradle-api) to use for Gradle. |
+| android.gradle.plugin | The version of the [Android Gradle Plugin](https://developer.android.com/reference/tools/gradle-api) to use for Gradle. |
 | gradle.home | The root path of the locally installed version of Gradle. If not set, the Gradle that is in the **PATH** environment will be used. |
 | gradle.jvmargs | Customized [jvm arguments](https://docs.gradle.org/current/userguide/config_gradle.html#sec:configuring_jvm_memory) to set when invoking gradle. |
 | cmake.home | The root path of the locally installed version of cmake. If not set, the Cmake that is in the PATH environment will be used |
-| signconfig.store.file | The key store file to use for creating a signing config. (ref https://developer.android.com/studio/publish/app-signing) |
+| signconfig.store.file | The key store file to use for creating a [signing config](ref https://developer.android.com/studio/publish/app-signing). |
 | signconfig.key.alias | The key alias withing the key store that idfentifies the signing key |
 | asset.mode | The asset mode to determine how the assets are stored in the target APK. Valid values are LOOSE and PAK. |
 | strip.debug | Option to strip the debug symbols of the built native libs before deployment to the APK |
 | oculus.project | Option to set oculus-specific build options when building the APK |
-| asset.bundle.subpath | The sub-path from the project root to specify where the bundle/pak files will be generated to. (ref https://www.docs.o3de.org/docs/user-guide/packaging/asset-bundler/) |
+| asset.bundle.subpath | The sub-path from the project root to specify where the [bundled assets](/docs/user-guide/packaging/asset-bundler/) will be generated to. |
 | extra.cmake.args | Optional string to set additional cmake arguments during the native project generation within the android gradle build process |
+
+
 
 The following android settings are passwords that can only be set with the `--set-password` argument.
 
