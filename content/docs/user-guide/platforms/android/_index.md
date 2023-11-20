@@ -13,9 +13,9 @@ weight: 200
 ### Android SDK
 The [Android SDK](https://developer.android.com/studio) contains Android libraries, packages, NDK, and other tools that are needed to build the Android application for an O3DE project.
 
-You can set up and configure the Android SDK by using [Android Studio](https://developer.android.com/studio), an IDE commonly used with Gradle to develop and build Android applications. When you launch Android Studio for the first time, follow the steps to download and install at least one SDK platform. You can also set up and configure SDKs from within Android Studio, if it's already set up. Once Android Studio studio is set up, you can locate the Android SDK Home by either click on **Tools > SDK Manager** or the **SDK Manager** icon in the toolbar. You will find the location under **Android SDK Location**.
+You can set up and configure the Android SDK by using [Android Studio](https://developer.android.com/studio), an IDE commonly used with Gradle to develop and build Android applications. When you launch Android Studio for the first time, follow the steps to download and install at least one SDK platform. You can also set up and configure additional SDKs from within Android Studio. Once Android Studio is set up, you can locate the Android SDK Home by either click on **Tools > SDK Manager** or the **SDK Manager** icon in the toolbar. You will find the location under **Android SDK Location**.
 
-Alternatively, you can download the the **Command line tools only** without the need to install the entire Android Studio. The location where the command line tools package is installed to will determine the location of the Android SDK Home. Refer to the [SDK Manager instructions](https://developer.android.com/tools/sdkmanager) for details on where to install the package.
+Alternatively, you can download the the Android SDK **Command line tools only** without the need to install the entire Android Studio. The location where the command line tools package is installed to will determine the location of the Android SDK Home. Refer to the [SDK Manager instructions](https://developer.android.com/tools/sdkmanager) for details on where to install the package.
 
 Once the Android SDK location is determined, it needs to be set in the Android configuration setting 'sdk.root'
 
