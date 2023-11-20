@@ -21,6 +21,16 @@ The following instructions assume that you have:
 1.  [O3DE](https://github.com/o3de/o3de.git) has been cloned locally on the system. Python must be initialized (through the `python\get_python.cmd` script), and the path must be [registered](/docs/welcome-guide/setup/setup-from-github/building-windows/#register-the-engine) as the engine.
 1.  [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) has been cloned locally on the system, and registered as an O3DE project through the [O3DE Command Line](docs/user-guide/project-config/cli-reference#register).
 1.  A [signing configuration keystore](/docs/user-guide/platforms/android#APK Signing) is created (Either from Android Studio or the keytool command line)
+1.  The **android** platform must be enabled in the [AssetProcessorPlatformConfig.setreg](https://github.com/o3de/o3de/blob/324c0317e9cf61428d3bec492c7ba243a08718f9/Registry/AssetProcessorPlatformConfig.setreg#L64-L70) in the engine root:
+    ```json
+    "Platforms": {
+    //"pc": "enabled",
+    "android": "enabled"
+    //"ios": "enabled",
+    //"mac": "enabled",
+    //"server": "enabled"
+    },
+    ```
 
 {{< note >}}
 This example workflow represents the 'Source Engine' workflow when setting up [O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github)
@@ -33,7 +43,7 @@ This tutorial will use the following environment variables in the example steps
 
 - `O3DE_ENGINE_PATH`
 
-  The local path where the [O3DE](https://github.com/o3de/o3de.git) repository was cloned to and registered.
+  The local path where the [O3DE](https:/git /github.com/o3de/o3de.git) repository was cloned to and registered.
 
 - `O3DE_PROJECT_PATH`
 
@@ -66,18 +76,6 @@ This tutorial will use the following environment variables in the example steps
 
 1. **Build the tools and assets for Android for the project.**
 
-   Make sure that `android` assets are enabled in the [AssetProcessorPlatformConfig.setreg](https://github.com/o3de/o3de/blob/c7d07cc2ad12d2062ad21318e04669642ae753b6/Registry/AssetProcessorPlatformConfig.setreg#L66) settings file.
-
-   ```json
-    "Platforms": {
-                    //"pc": "enabled",
-                    "android": "enabled"
-                    //"ios": "enabled",
-                    //"mac": "enabled",
-                    //"server": "enabled"
-                },
-   ```
-
    Configure and build the asset processing tools and process the assets.
 
    ```
@@ -85,7 +83,11 @@ This tutorial will use the following environment variables in the example steps
 
    cmake -S . -B build/windows -DLY_DISABLE_TEST_MODULES=ON
 
-   cmake --build build/windows --config profile --target AssetProcessorBatch %O3DE_PROJECT_NAME%.Assets
+   cmake --build build/windows --config profile --target AssetProcessorBatch
+
+   cd %O3DE_PROJECT_PATH%\build\windows
+
+   AssetProcessorBatch.exe --platform android
 
    ```
 
@@ -177,14 +179,9 @@ This tutorial will use the following environment variables in the example steps
    XXXXXXXXXXX     device
    ```
 
-   At this point, track the device ID into an environment variable
-
-   ```
-   set ANDROID_DEVICE_ID=XXXXXXXXXXX
-   ```
-
    Once the android device is identified, and the computer is authorized to connect to the device. you will be able to install the APK
 
    ```
-   %ANDROID_SDK_HOME%\platform-tools\adb.exe install -t -r %TARGET_ANDROID_PROJECT_PATH%\app\build\outputs\apk\profile %ANDROID_DEVICE_ID%
+   %ANDROID_SDK_HOME%\platform-tools\adb.exe install -t -r %TARGET_ANDROID_PROJECT_PATH%\app\build\outputs\apk\profile\app-profile.apk
    ```
+   
