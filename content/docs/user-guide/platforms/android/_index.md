@@ -11,7 +11,7 @@ weight: 200
 ## Prerequisite software and packages
 
 ### Android SDK
-The [Android SDK](https://developer.android.com/studio) contains Android libraries, packages, NDK, and other tools that are needed to build the Android application for an O3DE project.
+The [Android SDK](https://developer.android.com/studio) contains Android libraries, packages, NDKs, and other tools that are needed to build the Android application for an O3DE project.
 
 You can set up and configure the Android SDK by using [Android Studio](https://developer.android.com/studio), an IDE commonly used with Gradle to develop and build Android applications. When you launch Android Studio for the first time, follow the steps to download and install at least one SDK platform. You can also set up and configure additional SDKs from within Android Studio. Once Android Studio is set up, you can locate the Android SDK Home by either click on **Tools > SDK Manager** or the **SDK Manager** icon in the toolbar. You will find the location under **Android SDK Location**.
 
@@ -63,36 +63,25 @@ Below is the list of configurable android settings.
 
 | Setting Key                         | Description|
 | ----------------------------------- | ---------- |
-| sdk.root | The root path of the android sdk on this system. |
-| platform.sdk.api | The [Android Platform SDK API level](https://developer.android.com/tools/releases/platforms) |
-| ndk.version | The version of the [Android NDK](https://developer.android.com/ndk/downloads). File matching patterns can be used (i.e. 25.* will search for the most update to date major version 25) |
+| sdk.root | The root path of the Android SDK on the build system. |
+| platform.sdk.api | The [Android Platform SDK API level](https://developer.android.com/tools/releases/platforms). |
+| ndk.version | The version of the [Android NDK](https://developer.android.com/ndk/downloads). File matching patterns can be used (i.e. 25.* will search for the most update to date major version 25). |
 | android.gradle.plugin | The version of the [Android Gradle Plugin](https://developer.android.com/reference/tools/gradle-api) to use for Gradle. |
 | gradle.home | The root path of the locally installed version of Gradle. If not set, the Gradle that is in the **PATH** environment will be used. |
 | gradle.jvmargs | Customized [jvm arguments](https://docs.gradle.org/current/userguide/config_gradle.html#sec:configuring_jvm_memory) to set when invoking gradle. |
-| cmake.home | The root path of the locally installed version of cmake. If not set, the Cmake that is in the PATH environment will be used |
+| cmake.home | The root path of the locally installed version of cmake. If not set, the Cmake that is in the PATH environment will be used. |
 | signconfig.store.file | The key store file to use for creating a [signing config](ref https://developer.android.com/studio/publish/app-signing). |
-| signconfig.key.alias | The key alias withing the key store that idfentifies the signing key |
+| signconfig.key.alias | The key alias withing the key store that idfentifies the signing key. |
 | asset.mode | The asset mode to determine how the assets are stored in the target APK. Valid values are LOOSE and PAK. |
-| strip.debug | Option to strip the debug symbols of the built native libs before deployment to the APK |
-| oculus.project | Option to set oculus-specific build options when building the APK |
+| strip.debug | Option to strip the debug symbols of the built native libs before deployment to the APK. |
+| oculus.project | Option to set oculus-specific build options when building the APK. |
 | asset.bundle.subpath | The sub-path from the project root to specify where the [bundled assets](/docs/user-guide/packaging/asset-bundler/) will be generated to. |
-| extra.cmake.args | Optional string to set additional cmake arguments during the native project generation within the android gradle build process |
+| extra.cmake.args | Optional string to set additional cmake arguments during the native project generation within the android gradle build process. |
 
 
-
-The following android settings are passwords that can only be set with the `--set-password` argument.
-
-| Password Key                 | Description|
-| --------------------------- | ---------- |
-| signconfig.store.password | The password for the key store file |
-| signconfig.key.password | The password for the key inside the key store referenced by the key alias |
-
-{{<note>}}
-Setting the password will present you with a password input and validation prompt so that the password will not be visible and not in the command history of the terminal. You can still view the password, however, with the `android-configure --list` command.
-{{</note>}}
 
 ## APK Signing
-All APKs must be [digitally signed](https://developer.android.com/studio/publish/app-signing) before they can be installed onto an Android device. This is done by providing a signing configuration in the Android Project Gradle script. This signing configuration is meant for a debug development environment and insecure by design. You can generate the signing configuration key store, signing key, and certificate through [Android Studio](https://developer.android.com/studio/publish/app-signing#generate-key). You can also create a key store from the command line using the JDK [keytool](https://docs.oracle.com/en/java/javase/17/docs/specs/man/keytool.html) command.
+All APKs must be [digitally signed](https://developer.android.com/studio/publish/app-signing) before they can be installed onto an Android device. This is done by providing a signing configuration in the Android Project Gradle script. This signing configuration is meant for a debug development environment and is insecure by design. You can generate the signing configuration key store, signing key, and certificate through [Android Studio](https://developer.android.com/studio/publish/app-signing#generate-key). You can also create a key store from the command line using the JDK [keytool](https://docs.oracle.com/en/java/javase/17/docs/specs/man/keytool.html) command.
 
 (More details of APK signing and how to create the keystore, keys, and certificates can be found [here](https://developer.android.com/studio/publish/app-signing). )
 
@@ -114,8 +103,12 @@ During the creation of the Android Project Gradle script, if any of the `signcon
 
   The password for the signing key needed to perform the signing operation.(`signconfig.key.password`)
 
+{{<note>}}
+You cannot pass in any of the two passwords through the `android-configure` or `android-generate` commands. When you run `android-generate` but are missing any of the signing passwords, the command will present a standard password set and confirm prompt to enter to embed in the generated project. If you want to set the passwords that will be used for the signing configs without prompting for them, you will need to call `android-configure` with the argument `--set-password SETTING` where `SETTING` is either `signconfig.store.password` or `signconfig.key.password`. This will present the same standard password set and confirm prompt, but will store it in the android settings for future calls to `android-generate`.
+{{</note>}}
+
 ## Android assets
-Before you can generate an O3DE Android project, you must process and prepare the assets for Android. You can do this by using the **O3DE Editor** and the **Asset Processor** (or **Asset Processor Batch**) on your project.
+Before you can generate an O3DE Android project, you must process the assets for Android. You can do this by using the **O3DE Editor** and the **Asset Processor** (or **Asset Processor Batch**) on your project.
 
 Specifically for Android, you must configure the registry settings value so that the Asset Processor can process Android platform assets. To do this, update the `<engine-root>\Registry\AssetProcessorPlatformConfig.setreg` file.
 
@@ -136,7 +129,7 @@ In the `Amazon/AssetProcessor/Platforms` section of the file, set the `"android"
 }
 ```
 
-Alternatively, you can use `--platforms=android` when launching the Asset Processor Batch. Refer to step 3 in [Generating Android Projects on Windows](/docs/user-guide/platforms/android/generating_android_project_windows/#steps).
+You must pass in the `--platforms=android` argument when launching the Asset Processor Batch. Refer to step 3 in [Generating Android Projects on Windows](/docs/user-guide/platforms/android/generating_android_project_windows/#steps).
 
 After you've processed the assets for Android, you can proceed to generate the Android project.
 
