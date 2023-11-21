@@ -2197,7 +2197,7 @@ android-generate [-h] -p PROJECT -B BUILD_DIR [--platform-sdk-api-level PLATFORM
 ```cmd
 android-generate -p <project> -B <build-dir>
 ```
-This will generate an Android Gradle project for **\<project\>** in the directory **\<build-dir\>**.
+This will generate an Android Gradle project for **\<project\>** in the directory **\<build-dir\>**. **\<project\>** can be either the path to the O3DE project, or the name of the registered project.
 
 
 ### Optional parameters
