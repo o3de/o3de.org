@@ -20,7 +20,7 @@ Alternatively, you can download the Android SDK **command line tools only** pack
 Once the Android SDK location is determined, it needs to be set in the Android configuration setting 'sdk.root'
 
 {{<note>}}
-In order for the generation script to automatically download the required packages, you must accept the license agreements that represents those packages. This can be done either through Android Studio, or through the `sdkmanager` command line tool with the `--licenses` argument.
+In order for the generation script to automatically download the required packages, you must accept the license agreements that represent those packages. This can be done either through Android Studio, or through the `sdkmanager` command line tool with the `--licenses` argument.
 {{</note>}}
 
 ### Java Development Kit (JDK)
