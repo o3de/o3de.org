@@ -179,7 +179,7 @@ This tutorial will use the following environment variables in the example steps
    XXXXXXXXXXX     device
    ```
 
-   Once the android device is identified, and the computer is authorized to connect to the device. you will be able to install the APK
+   Once the Android device is identified, and the computer is authorized to connect to the device, you will be able to install the APK.
 
    ```
    %ANDROID_SDK_HOME%\platform-tools\adb.exe install -t -r %TARGET_ANDROID_PROJECT_PATH%\app\build\outputs\apk\profile\app-profile.apk
