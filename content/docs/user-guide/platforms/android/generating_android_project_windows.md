@@ -161,7 +161,7 @@ This tutorial will use the following environment variables in the example steps
    %ANDROID_SDK_HOME%\platform-tools\adb.exe devices
    ```
    
-   You should see a list of devices (if there are any attached) and their attach status. If you don't see any attached devices, then either check the USB connection to the device, and make sure it is authorized to connect to the device (on the device itself).
+   You should see a list of devices (if there are any attached) and their attach status. If you don't see any attached devices, then check the USB connection to the device, and make sure it is authorized to connect to the device (on the device itself).
 
    If you see something like the following:
    
