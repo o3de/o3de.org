@@ -138,7 +138,7 @@ This tutorial will use the following environment variables in the example steps
    ```
    Enter + confirm the password for the key when prompted
 
-1. **Run the android project generation script**
+1. **Run the Android project generation script**
 
    ```
    %O3DE_ENGINE_PATH%\scripts\o3de.bat android-generate -p %O3DE_PROJECT_NAME% -B %TARGET_ANDROID_PROJECT_PATH%
