@@ -11,7 +11,7 @@ weight: 200
 ## Prerequisite software and packages
 
 ### Android SDK
-The [Android SDK](https://developer.android.com/studio) contains Android libraries, packages, NDKs, and other tools that are needed to build the Android application for an O3DE project.
+The [Android SDK](https://developer.android.com/studio) contains Android libraries, packages, NDKs, and other tools needed to build the Android application for an O3DE project.
 
 You can set up and configure the Android SDK by using [Android Studio](https://developer.android.com/studio), an IDE commonly used with Gradle to develop and build Android applications. When you launch Android Studio for the first time, follow the steps to download and install at least one SDK platform. You can also set up and configure additional SDKs from within Android Studio. Once Android Studio is set up, you can locate the Android SDK Home by either click on **Tools > SDK Manager** or the **SDK Manager** icon in the toolbar. You will find the location under **Android SDK Location**.
 
@@ -24,7 +24,7 @@ In order for the generation script to automatically download the required packag
 {{</note>}}
 
 ### Java Development Kit (JDK)
-The [Java Development Kit](https://www.java.com/releases/) (JDK) is needed to run the Android SDK command line tool, compile the android java source for the project, and create a Java Key Storage (JKS) files used to sign the APK. The version of the JDK required for Android depends on the [requirements for the Android SDK](https://developer.android.com/build/jdks). The location of the JDK installation must be set in the **JAVA_HOME** environment variable, or the location of the JDK executable must be in the **PATH** environment.
+The Android SDK command line tool needs the [Java Development Kit](https://www.java.com/releases/) (JDK) to compile the Android java source for the project and create a Java Key Storage (JKS) files used to sign the APK. The version of the JDK required for Android depends on the [requirements for the Android SDK](https://developer.android.com/build/jdks). The location of the JDK installation must be set in the **JAVA_HOME** environment variable, or the location of the JDK executable must be in the **PATH** environment.
 
 {{<note>}}
 The version of the [Java Development Kit](https://www.java.com/releases/) must be compatible with the [SDK Manager](https://developer.android.com/tools/sdkmanager). However, if you wish to specify older versions of the Android Gradle Plugin, the version of the JDK that is used to run the gradle build may be different, and may require setting the `JAVA_HOME` environment to match an older versions of SDK in order to build the APK successfully.
@@ -52,11 +52,11 @@ Older versions (4.2.0 or newer) of the Android Gradle Plugin are support, but no
 
 
 ### Ninja Build System
-The [Ninja](https://ninja-build.org/) build system is used by CMake to build the underlying native C++ code for an O3DE project. **Ninja** must be set in the **PATH** environment.
+CMake uses the [Ninja](https://ninja-build.org/) build system to build the underlying native C++ code for an O3DE project. **Ninja** must be set in the **PATH** environment.
 
 
 ## Configuring the environment
-In order for the **Android Project Generation script** to generate O3DE Android Gradle scripts, it needs to be configured with the user specified settings and the locations of the prerequisite software. The android settings are managed with the `android-configure` command from the [O3DE Command Line](docs/user-guide/project-config/cli-reference#android-configure).
+The **Android Project Generation script** needs to be configured with the user specified settings and the locations of the prerequisite software in order for it to generate O3DE Android Gradle scripts. The android settings are managed with the `android-configure` command from the [O3DE Command Line](docs/user-guide/project-config/cli-reference#android-configure).
 
 Below is the list of configurable android settings.
 
