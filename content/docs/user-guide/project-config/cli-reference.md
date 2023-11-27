@@ -2145,7 +2145,7 @@ This will list the current settings that the Android Project Generation script w
 ```cmd
 android-configure --validate
 ```
-This will perform a dry run and validate that the minimal settings and configured and the prequisite software environments are satisfied. If not, it will report the detailed error.
+This will perform a dry run and validate that the minimal settings are configured and the prerequisite software environments are satisfied. If not, it will report a detailed error.
 
 ```cmd
 android-configure --set-value SETTING
