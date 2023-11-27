@@ -2150,7 +2150,7 @@ This will perform a dry run and validate that the minimal settings are configure
 ```cmd
 android-configure --set-value SETTING
 ```
-This will set anandroid setting based on the **SETTING** equality expression. The **SETTING** format must be in the form of `<setting>=<value>`, where **\<setting\>** is the android setting to set, and **\<value\>** is the value to set the setting to. Note that password settings cannot set through this argument, `--set-password` must be used instead.
+This will set an Android setting based on the **SETTING** equality expression. The **SETTING** format must be in the form of `<setting>=<value>`, where **\<setting\>** is the Android setting to set, and **\<value\>** is the value to set the setting to. Note that password settings cannot be set through this argument, `--set-password` must be used instead.
 
 ```cmd
 android-configure --clear-value SETTING
