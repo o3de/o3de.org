@@ -5,50 +5,110 @@ description: An overview of Open 3D Engine support for development for Android.
 weight: 200
 ---
 
-**Open 3D Engine (O3DE)** projects for Android rely on the Gradle build system to build the final APK that launches and runs O3DE projects. O3DE provides the **Android Project Generation script**, which generates the Gradle build scripts that you need to build your O3DE projects for Android. The Gradle build scripts use CMake to compile the native C++ code, compile and build the Android application (Java), and construct and package the final APK and project assets. 
+**Open 3D Engine (O3DE)** projects for Android rely on the Gradle build system to build the final APK that launches and runs O3DE projects. O3DE provides the **Android Project Generation script**, which generates the Gradle build scripts that you need to build your O3DE projects for Android. The Gradle build scripts use CMake to compile the native C++ code, Java to compile and build the Android application, and will construct and package the final APK and project assets.
 
 
 ## Prerequisite software and packages
 
-### Java Development Kit (JDK)
-The latest version of the Java Development Kit is needed to both compile the android java source for the project as well as to create a Java Key Storage (JKS) files used by the Android SDK to sign the APK.
-
-### Gradle
-[Gradle](https://gradle.org/install/) (version 6.7.1 or newer) is the build system designed to build and create Android applications.
-
 ### Android SDK
-The [Android SDK](https://developer.android.com/studio) contains Android libraries, packages, NDK, and other tools that are needed to build the Android application for an O3DE project. Download the latest version of Android SDK through the Android Studio or the command line tools. 
+The [Android SDK](https://developer.android.com/studio) contains Android libraries, packages, NDKs, and other tools needed to build the Android application for an O3DE project.
+
+You can set up and configure the Android SDK by using [Android Studio](https://developer.android.com/studio), an IDE commonly used with Gradle to develop and build Android applications. When you launch Android Studio for the first time, follow the steps to download and install at least one SDK platform. You can also set up and configure additional SDKs from within Android Studio. Once Android Studio is set up, you can locate the Android SDK Home by selecting **Tools > SDK Manager** or selecting the **SDK Manager** icon in the toolbar. You will find the location under **Android SDK Location**.
+
+Alternatively, you can download the Android SDK **command line tools only** package without the need to install Android Studio. The location where the command line tools package is installed to will determine the location of the Android SDK Home. Refer to the [SDK Manager instructions](https://developer.android.com/tools/sdkmanager) for details on where to install the package.
+
+Once the Android SDK location is determined, it needs to be set in the Android configuration setting 'sdk.root'
+
+{{<note>}}
+In order for the generation script to automatically download the required packages, you must accept the license agreements that represent those packages. This can be done either through Android Studio, or through the `sdkmanager` command line tool with the `--licenses` argument.
+{{</note>}}
+
+### Java Development Kit (JDK)
+The Android SDK command line tool needs the [Java Development Kit](https://www.java.com/releases/) (JDK) to compile the Android Java source for the project and create a Java Key Storage (JKS) files used to sign the APK. The version of the JDK required for Android depends on the [requirements for the Android SDK](https://developer.android.com/build/jdks). The location of the JDK installation must be set in the **JAVA_HOME** environment variable, or the location of the JDK executable must be in the **PATH** environment.
+
+{{<note>}}
+The version of the [Java Development Kit](https://www.java.com/releases/) must be compatible with the [SDK Manager](https://developer.android.com/tools/sdkmanager). However, if you wish to specify older versions of the Android Gradle Plugin, the version of the JDK that is used to run the Gradle build may be different, and may require setting the `JAVA_HOME` environment to match an older versions of SDK in order to build the APK successfully.
+{{</note>}}
+
+
+### Gradle and the Android Gradle Plugin
+[Gradle](https://gradle.org/install/) is the build system designed to build and create Android applications. The [Android Gradle Plugin](https://developer.android.com/build/releases/gradle-plugin) adds features to the Gradle build system to support Android builds. The current **Android Project Generation script** supports version 8.1 or newer of the **Android Gradle Plugin**, which in turn requires **Gradle** version 8.1 or newer. The location of the Gradle installation must be set in at least one of the three ways in order for it to be discoverable:
+
+{{<note>}}
+Older versions (4.2.0 or newer) of the Android Gradle Plugin are support, but not recommended. 
+{{</note>}}
+
+
+1. Android configuration setting `gradle.home`
+2. Set in the **GRADLE_HOME** environment variable.
+3. The location of the gradle executable script is in the **PATH** environment.
 
 ### CMake
-[CMake](https://cmake.org/download/#latest) (version {{< versions/cmake >}} or newer) is a project generator that O3DE uses for all native C++ builds, regardless of the platform. 
+[CMake](https://cmake.org/download/#latest) (version {{< versions/cmake >}} or newer) is a project generator that O3DE uses for all native C++ builds, regardless of the platform. As with the discoverability requirements for Gradle, the location of the CMake installation must be set in at least one of the three ways:
+
+1. Android configuration setting `cmake.home`
+2. Set in the **CMAKE_HOME** environment variable.
+3. The location of the cmake executable script is in the **PATH** environment.
+
 
 ### Ninja Build System
-The [Ninja](https://ninja-build.org/) build system is used by CMake to build the underlying native C++ code for an O3DE project.
+CMake uses the [Ninja](https://ninja-build.org/) build system to build the underlying native C++ code for an O3DE project. **Ninja** must be set in the **PATH** environment.
 
-## Setup Requirements
 
-### Android SDK setup
-You can set up and configure the Android SDK by using Android Studio, an IDE commonly used with Gradle to develop and build Android applications. When you launch Android Studio for the first time, follow the steps to download and install at least one SDK platform. You can also set up and configure SDKs from within Android Studio, if it's already set up.
+## Configuring the environment
+The **Android Project Generation script** needs to be configured with the user specified settings and the locations of the prerequisite software in order for it to generate O3DE Android Gradle scripts. The android settings are managed with the `android-configure` command from the [O3DE Command Line](docs/user-guide/project-config/cli-reference#android-configure).
 
-Keep track of the location where you installed the Android SDK, as you will need it later to generate an Android project for O3DE. 
+Below is the list of configurable android settings.
 
-### Prerequisite packages installation
 
-In order to simplify project generation steps, add the other prerequisites (Java, Gradle, CMake, and Ninja) to your PATH environment variable. Otherwise, you must configure the paths to each respective package by using the command line arguments for the Android Project Generation script.
+| Setting Key                         | Description|
+| ----------------------------------- | ---------- |
+| sdk.root | The root path of the Android SDK on the build system. |
+| platform.sdk.api | The [Android Platform SDK API level](https://developer.android.com/tools/releases/platforms). |
+| ndk.version | The version of the [Android NDK](https://developer.android.com/ndk/downloads). File matching patterns can be used (i.e. 25.* will search for the most update to date major version 25). |
+| android.gradle.plugin | The version of the [Android Gradle Plugin](https://developer.android.com/reference/tools/gradle-api) to use for Gradle. |
+| gradle.home | The root path of the locally installed version of Gradle. If not set, the Gradle that is in the **PATH** environment will be used. |
+| gradle.jvmargs | Customized [jvm arguments](https://docs.gradle.org/current/userguide/config_gradle.html#sec:configuring_jvm_memory) to set when invoking gradle. |
+| cmake.home | The root path of the locally installed version of cmake. If not set, the Cmake that is in the PATH environment will be used. |
+| signconfig.store.file | The key store file to use for creating a [signing config](ref https://developer.android.com/studio/publish/app-signing). |
+| signconfig.key.alias | The key alias withing the key store that idfentifies the signing key. |
+| asset.mode | The asset mode to determine how the assets are stored in the target APK. Valid values are LOOSE and PAK. |
+| strip.debug | Option to strip the debug symbols of the built native libs before deployment to the APK. |
+| oculus.project | Option to set oculus-specific build options when building the APK. |
+| asset.bundle.subpath | The sub-path from the project root to specify where the [bundled assets](/docs/user-guide/packaging/asset-bundler/) will be generated to. |
+| extra.cmake.args | Optional string to set additional cmake arguments during the native project generation within the android gradle build process. |
 
-### Android Keystore
-The Android build process creates APKs that you must sign before you can deploy them. You can configure a signed APK for your generated project after creating the project through Android Studio, or you can sign the APK during the project generation step. Android uses the JKS format so you can use the `keytool` Java command to sign your APK. 
 
-|Field Name|Keytool Argument|Description|
-| --- | --- | --- |
-| Distinguished Name ([DN](https://datatracker.ietf.org/doc/html/rfc2253)) | `dname` | Descriptive name of an entity to identify the owner of the key. |
-| Alias Name | `alias` | The identifier for the key and certificate in the KeyStore file. A KeyStore file may contain multiple keys and certificates.|
-| Key Password | `keypass` | The password to protect the individual signing key. |
-| Keystore Password | `storepass` | The password to protect the entire KeyStore file. |
-| Validity Period | `validity` | The length of time in days that the certificate is valid for, starting from the day the KeyStore was created.|
 
-### Android assets
-Before you can generate an O3DE Android project, you must process and prepare the assets for Android. You can do this by using the **O3DE Editor** and the **Asset Processor** (or **Asset Processor Batch**) on your project.
+## APK Signing
+All APKs must be [digitally signed](https://developer.android.com/studio/publish/app-signing) before they can be installed onto an Android device. This is done by providing a signing configuration in the Android Project Gradle script. This signing configuration is meant for a debug development environment and is insecure by design. You can generate the signing configuration key store, signing key, and certificate through [Android Studio](https://developer.android.com/studio/publish/app-signing#generate-key). You can also create a key store from the command line using the JDK [keytool](https://docs.oracle.com/en/java/javase/17/docs/specs/man/keytool.html) command.
+
+(More details of APK signing and how to create the keystore, keys, and certificates can be found [here](https://developer.android.com/studio/publish/app-signing). )
+
+During the creation of the Android Project Gradle script, if any of the `signconfig.*` values are set, the generation process will attempt to embed the signing configuration information with the following values:
+
+- **Key Store File**
+
+  The key store file that contains the signing key and certificate. ( `--signconfig-store-file`/`signconfig.store.file`)
+
+- **Signing Key Alias**
+
+  The alias of the signing key inside the key store file.( `--signconfig-key-alias`/`signconfig.key.alias`)
+
+- **Key Store Password**
+
+  The password for the key store file.(`signconfig.store.password`)
+
+- **Signing Key Password**
+
+  The password for the signing key needed to perform the signing operation.(`signconfig.key.password`)
+
+{{<note>}}
+You cannot pass in any of the two passwords through the `android-configure` or `android-generate` commands. When you run `android-generate` but are missing any of the signing passwords, the command will present a standard password set and confirm prompt to enter to embed in the generated project. If you want to set the passwords that will be used for the signing configs without prompting for them, you will need to call `android-configure` with the argument `--set-password SETTING` where `SETTING` is either `signconfig.store.password` or `signconfig.key.password`. This will present the same standard password set and confirm prompt, but will store it in the android settings for future calls to `android-generate`.
+{{</note>}}
+
+## Android assets
+Before you can generate an O3DE Android project, you must process the assets for Android. You can do this by using the **O3DE Editor** and the **Asset Processor** (or **Asset Processor Batch**) on your project.
 
 Specifically for Android, you must configure the registry settings value so that the Asset Processor can process Android platform assets. To do this, update the `<engine-root>\Registry\AssetProcessorPlatformConfig.setreg` file.
 
@@ -69,13 +129,13 @@ In the `Amazon/AssetProcessor/Platforms` section of the file, set the `"android"
 }
 ```
 
-Alternatively, you can use `--platforms=android` when launching the Asset Processor Batch. Refer to step 3 in [Generating Android Projects on Windows](/docs/user-guide/platforms/android/generating_android_project_windows/#steps).
+You must pass in the `--platforms=android` argument when launching the Asset Processor Batch. Refer to step 3 in [Generating Android Projects on Windows](/docs/user-guide/platforms/android/generating_android_project_windows/#steps).
 
 After you've processed the assets for Android, you can proceed to generate the Android project.
 
-## Android Project Generation Script
+## Legacy Android Project Generation Script
 
-Find the script to generate an Android project at `<engine-root>/cmake/Tools/Platform/Android/generate_android_project.py`. 
+The original android generation script can still be found at `<engine-root>/cmake/Tools/Platform/Android/generate_android_project.py`, but only supports the Android Gradle Plugn version 4.x.
 
 The `generate_android_project.py` script contains the following arguments:
 | Argument&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description | Default | Notes |
@@ -118,8 +178,6 @@ The `deploy_android.py` script contains the following arguments:
 | `--clean` | Cleans the target Android device by uninstalling any pre-existing projects before deploying. |     | Uninstalling the project also deletes all the assets deployed as well. |
 | `--kill-adb-server` |  Option to kill adb server at the end of deployment. |     |     |
 | `--debug` | Option to enable debug messages. |     |     |
-
-
 
 
 ## Additional Topics
