@@ -1,11 +1,5 @@
 var class_a_z_1_1_dom_1_1_patch_operation =
 [
-    [ "InversePatches", "class_a_z_1_1_dom_1_1_patch_operation.html#afe119a9ce7426719dddfeae9e4509644", null ],
-    [ "ExistenceCheckFlags", "class_a_z_1_1_dom_1_1_patch_operation.html#a308995e6bdce772b06c1531af1ebaac1", [
-      [ "DefaultExistenceCheck", "class_a_z_1_1_dom_1_1_patch_operation.html#a308995e6bdce772b06c1531af1ebaac1a9661ca1dada84b96c7300bd44f00372a", null ],
-      [ "VerifyFullPath", "class_a_z_1_1_dom_1_1_patch_operation.html#a308995e6bdce772b06c1531af1ebaac1a947ddac8accebfbe7db80714673333fa", null ],
-      [ "AllowEndOfArray", "class_a_z_1_1_dom_1_1_patch_operation.html#a308995e6bdce772b06c1531af1ebaac1a83f6f5ff68fe9d021e6d3fa336c823ed", null ]
-    ] ],
     [ "Type", "class_a_z_1_1_dom_1_1_patch_operation.html#a373c619165d71ac7eefd7ca090ff9263", [
       [ "Add", "class_a_z_1_1_dom_1_1_patch_operation.html#a373c619165d71ac7eefd7ca090ff9263aec211f7c20af43e742bf2570c3cb84f9", null ],
       [ "Remove", "class_a_z_1_1_dom_1_1_patch_operation.html#a373c619165d71ac7eefd7ca090ff9263a1063e38cb53d94d386f21227fcd84717", null ],
@@ -14,36 +8,5 @@ var class_a_z_1_1_dom_1_1_patch_operation =
       [ "Move", "class_a_z_1_1_dom_1_1_patch_operation.html#a373c619165d71ac7eefd7ca090ff9263a6bc362dbf494c61ea117fe3c71ca48a5", null ],
       [ "Test", "class_a_z_1_1_dom_1_1_patch_operation.html#a373c619165d71ac7eefd7ca090ff9263a0cbc6611f5540bd0809a388dc95a615b", null ]
     ] ],
-    [ "PatchOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a1140aa00e326f96d325150af16de3dcd", null ],
-    [ "PatchOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a416991a20e52f261269a278af27690fb", null ],
-    [ "PatchOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a41c0a3d05a52d06a92f124a3027134db", null ],
-    [ "PatchOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a79c50d352f75fe3d555ca70b82f67cd7", null ],
-    [ "PatchOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#aa8f2aeceed75411869b9e8ec09ff1631", null ],
-    [ "PatchOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a160bafdb734e85727624a295529d7871", null ],
-    [ "AddOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#ad69e538a7c84deaf729a807349476340", null ],
-    [ "Apply", "class_a_z_1_1_dom_1_1_patch_operation.html#a781cb4f1833d61320c006bb147ccd12f", null ],
-    [ "ApplyAndDenormalize", "class_a_z_1_1_dom_1_1_patch_operation.html#a4cf16e194f3d1caa941ae4123e7f8561", null ],
-    [ "ApplyInPlace", "class_a_z_1_1_dom_1_1_patch_operation.html#ad553ade94913ceef9aeba4e4c32fd162", null ],
-    [ "ApplyInPlaceAndDenormalize", "class_a_z_1_1_dom_1_1_patch_operation.html#a0d1718a8ec4f2ff1867251af1d49e5e2", null ],
-    [ "ContainsNormalizedEntries", "class_a_z_1_1_dom_1_1_patch_operation.html#aabdff6c17a805636ac1ed7116cb49492", null ],
-    [ "CopyOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a8b72c38193cf84fea112dc15a149556d", null ],
-    [ "CreateFromDomRepresentation", "class_a_z_1_1_dom_1_1_patch_operation.html#aa74fceb9b31d3673d8f6e782bd69688a", null ],
-    [ "GetDestinationPath", "class_a_z_1_1_dom_1_1_patch_operation.html#aeb920d69270f6901d0bb67443fccc607", null ],
-    [ "GetDomRepresentation", "class_a_z_1_1_dom_1_1_patch_operation.html#ae8dea8e2837331f2918b51d4f17a2ab3", null ],
-    [ "GetInverse", "class_a_z_1_1_dom_1_1_patch_operation.html#a72bba3b3e95647b3bbf247159296a5ea", null ],
-    [ "GetSourcePath", "class_a_z_1_1_dom_1_1_patch_operation.html#a9cfdcc22c0de9e83085ac301da15c593", null ],
-    [ "GetType", "class_a_z_1_1_dom_1_1_patch_operation.html#a6baf5417f03907e381216d43efc200c1", null ],
-    [ "GetValue", "class_a_z_1_1_dom_1_1_patch_operation.html#a31afa41073c6806b6e07023dfa145fd2", null ],
-    [ "MoveOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a4ad1752c00d314015dcbdc44c6705737", null ],
-    [ "operator!=", "class_a_z_1_1_dom_1_1_patch_operation.html#a8d5fad9e8d674a9b259c31d84e9bdcce", null ],
-    [ "operator=", "class_a_z_1_1_dom_1_1_patch_operation.html#ad6ce6282862d814b0bc065ccda0018ec", null ],
-    [ "operator=", "class_a_z_1_1_dom_1_1_patch_operation.html#a7577c22f1fcad36c68cf8271dc3b79b2", null ],
-    [ "operator==", "class_a_z_1_1_dom_1_1_patch_operation.html#a2c348a093f114345c3249780533fd8c0", null ],
-    [ "RemoveOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a0a3dcb64108b9d650206888440a5ca3d", null ],
-    [ "ReplaceOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#ab471ac82e2a05360dde3a0a18d040a8d", null ],
-    [ "SetDestinationPath", "class_a_z_1_1_dom_1_1_patch_operation.html#a6d34aca10c73326c0a97727f04f9cc59", null ],
-    [ "SetSourcePath", "class_a_z_1_1_dom_1_1_patch_operation.html#a10a5656bbe86ffbd2dbfa5dd35f7d621", null ],
-    [ "SetType", "class_a_z_1_1_dom_1_1_patch_operation.html#aa55b239ae68ea9ac2630dec1f9e38afd", null ],
-    [ "SetValue", "class_a_z_1_1_dom_1_1_patch_operation.html#ae1488d52e5f193b91870382b318626fa", null ],
-    [ "TestOperation", "class_a_z_1_1_dom_1_1_patch_operation.html#a708d3e2575e51ea6455cc39147871bdd", null ]
+    [ "ContainsNormalizedEntries", "class_a_z_1_1_dom_1_1_patch_operation.html#a97d9174d194a1e8c758daedfee2338dd", null ]
 ];

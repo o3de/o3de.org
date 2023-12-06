@@ -1,6 +1,5 @@
 var struct_az_framework_1_1_input_device_mouse_1_1_button =
 [
-    [ "All", "struct_az_framework_1_1_input_device_mouse_1_1_button.html#a79298dafdf458d28e9a392fd4487cbee", null ],
     [ "Left", "struct_az_framework_1_1_input_device_mouse_1_1_button.html#a621b7bf5f9d1181f732e6df860778848", null ],
     [ "Middle", "struct_az_framework_1_1_input_device_mouse_1_1_button.html#a853d64312094c122a30e10d05e40a9d8", null ],
     [ "Other1", "struct_az_framework_1_1_input_device_mouse_1_1_button.html#a3873f4fc35edf4f79cac5dcea97cc4e4", null ],

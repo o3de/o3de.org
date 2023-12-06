@@ -1,13 +1,7 @@
 var class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33 =
 [
-    [ "GenericClassBasicString", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#a333406f47491dfa59888300453807a22", null ],
-    [ "AZ_TYPE_INFO", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#a7e3081d0194579dbde8d7d2f78b044ee", null ],
-    [ "GetClassData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#a563568b35ea6932373f9613dc689c414", null ],
+    [ "GetClassData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#af978ae7f2f04b5c38f779c88f441e44d", null ],
     [ "GetGenericTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#a13c8309ac413c650419a0aaea89647a2", null ],
-    [ "GetNumTemplatedArguments", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#a7d9b223987118af727196875708b8312", null ],
     [ "GetSpecializedTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#aa915ece3652c56ef312ea53902020839", null ],
-    [ "GetTemplatedTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#ad41cc9d9c64436463306d18da9cff78c", null ],
-    [ "Reflect", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#af6f9360cf256f8a34b26feb2ebf6f7dd", null ],
-    [ "m_classData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#a7769f2db1fa4ee2f50e4c190bbc6523a", null ],
-    [ "m_stringSerializer", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#ac8c2184f07261dcaa692b61aa0d6dbad", null ]
+    [ "Reflect", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#af6f9360cf256f8a34b26feb2ebf6f7dd", null ]
 ];

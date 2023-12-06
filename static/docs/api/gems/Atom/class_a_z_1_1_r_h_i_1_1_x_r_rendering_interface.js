@@ -1,9 +1,5 @@
 var class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface =
 [
-    [ "XRRenderingInterface", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#aa2affa723c286aecfe1f4decb3ca2fa3", null ],
-    [ "~XRRenderingInterface", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a6da4a0c9be535521cc06dc4107aa187e", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a53db4bc746fd0dc662a82d426df92ce2", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#afc306fa8d1de9bf02823d44163772e47", null ],
     [ "BeginFrame", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a5814419035199345a0d6451f10e3cbeb", null ],
     [ "CreateDevice", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a59df3d5180f23440accb5f4e22883c65", null ],
     [ "CreateSession", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#ac5af3dbb54675a3a2e2c164307a058b9", null ],
@@ -13,7 +9,6 @@ var class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface =
     [ "GetNumPhysicalDevices", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#ae8ea3747e8b560733a79aa3a5f943bf6", null ],
     [ "GetSwapChainImage", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#aacbe13d2d9d078e660597c16a059ac14", null ],
     [ "GetXRPhysicalDevice", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a3cc82716d7c41d42e59ca3e90a6f2b3e", null ],
-    [ "InitNativeInstance", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#ac6222a086f8802c475f1a48bb594f07c", null ],
     [ "InitVariableRateShadingImageContent", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#aea007ac98a72c2262e56d1f7e5998b5d", null ],
     [ "IsDefaultRenderPipelineEnabledOnHost", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a00955ddab3b3620d0cc0e5e448c2b023", null ],
     [ "IsDefaultRenderPipelineNeeded", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a0bd7616bc7e3ca2e42d30fc84d948b89", null ],

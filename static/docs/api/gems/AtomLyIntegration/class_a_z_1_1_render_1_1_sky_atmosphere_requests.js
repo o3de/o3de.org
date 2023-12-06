@@ -1,7 +1,5 @@
 var class_a_z_1_1_render_1_1_sky_atmosphere_requests =
 [
-    [ "~SkyAtmosphereRequests", "class_a_z_1_1_render_1_1_sky_atmosphere_requests.html#a4360034d8fee4cb237fa09dea949df1d", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_sky_atmosphere_requests.html#a376edba291bafd6307a55422169b3224", null ],
     [ "GetAerialDepthFactor", "class_a_z_1_1_render_1_1_sky_atmosphere_requests.html#a2dd20e67a14ea5c49cca5ae2cc551cb7", null ],
     [ "GetAerialPerspectiveEnabled", "class_a_z_1_1_render_1_1_sky_atmosphere_requests.html#a091f9a1787d0b664e6b72b6c97d99d92", null ],
     [ "GetAtmosphereHeight", "class_a_z_1_1_render_1_1_sky_atmosphere_requests.html#a5d63a87d145d77875b2d41fcf6981b9d", null ],

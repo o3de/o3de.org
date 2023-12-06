@@ -1,8 +1,7 @@
 var struct_a_z_1_1_module_data =
 [
-    [ "~ModuleData", "struct_a_z_1_1_module_data.html#a338ea426218eaa0bc3b42c4b7fe32b4b", null ],
-    [ "GetDebugName", "struct_a_z_1_1_module_data.html#ad9d758eaa624c1bb546e80b650192091", null ],
-    [ "GetDynamicModuleHandle", "struct_a_z_1_1_module_data.html#a1fffd337055f60d098f582419c4803a3", null ],
-    [ "GetEntity", "struct_a_z_1_1_module_data.html#afcbd41c6c344db00ef1efcd654707740", null ],
-    [ "GetModule", "struct_a_z_1_1_module_data.html#a61de8681857e26b3e34eda17508140c8", null ]
+    [ "GetDebugName", "struct_a_z_1_1_module_data.html#a92eca2f313f124f2c92f9f3871ef877b", null ],
+    [ "GetDynamicModuleHandle", "struct_a_z_1_1_module_data.html#a3db8426e82846067fb9cdab80cbb6506", null ],
+    [ "GetEntity", "struct_a_z_1_1_module_data.html#a6ca1a5e049f670f32782f1f0ea1d4c4f", null ],
+    [ "GetModule", "struct_a_z_1_1_module_data.html#a8f1dab851ed3c883d6dfb7ab0d372158", null ]
 ];

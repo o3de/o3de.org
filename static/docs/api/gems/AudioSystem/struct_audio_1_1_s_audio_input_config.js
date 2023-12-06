@@ -1,10 +1,5 @@
 var struct_audio_1_1_s_audio_input_config =
 [
-    [ "SAudioInputConfig", "struct_audio_1_1_s_audio_input_config.html#aacedf509195a3da04455d7cc2ad974f1", null ],
-    [ "SAudioInputConfig", "struct_audio_1_1_s_audio_input_config.html#af35baf078bca203885ccb323d5dab384", null ],
-    [ "SAudioInputConfig", "struct_audio_1_1_s_audio_input_config.html#aa65588fc755212b3031c8d704354c016", null ],
-    [ "GetSampleCountFromBufferSize", "struct_audio_1_1_s_audio_input_config.html#a0f19a347e579a03d48ed4330df155524", null ],
-    [ "SetBufferSizeFromFrameCount", "struct_audio_1_1_s_audio_input_config.html#aaeac34adb4c1e6b02d3471060c3402bd", null ],
     [ "m_autoUnloadFile", "struct_audio_1_1_s_audio_input_config.html#ab8ca1e07527930f3d510834667ef4b05", null ],
     [ "m_bitsPerSample", "struct_audio_1_1_s_audio_input_config.html#ad579c6d5f8c452c1dfaa15cba8cf7376", null ],
     [ "m_bufferSize", "struct_audio_1_1_s_audio_input_config.html#aac54b102da5daed533b06e58d6f05e6f", null ],

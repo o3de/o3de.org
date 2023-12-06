@@ -1,15 +1,9 @@
 var class_a_z_1_1_render_1_1_quad_light_feature_processor =
 [
-    [ "QuadLightFeatureProcessor", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#af934161bda699300f46594d888fb6dc2", null ],
-    [ "~QuadLightFeatureProcessor", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#adce17eb1c2d316afb99140e62074626f", null ],
     [ "AcquireLight", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a273e9f8bf58e89e851cc3f6d7a98c314", null ],
     [ "Activate", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#ad3da963d17e9e52b2dda9a26eba0456f", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a683a10a874b4fd8e1a990f0030e120fa", null ],
     [ "CloneLight", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a6b074e9d6bc19b6aa301604fcaf58a79", null ],
     [ "Deactivate", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#adcf43e850efc344616f4450ae1dbbd2d", null ],
-    [ "GetLightBuffer", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a1d19924995562ec19da158624dae51b4", null ],
-    [ "GetLightCount", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a40c2123f22816e4b7e6ce8f464cbf16e", null ],
-    [ "Reflect", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a7c2bbec1895df5ddc26bd4fc1270f5ee", null ],
     [ "ReleaseLight", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a41dd2b287b9023ed92ef1b39c9f5ee01", null ],
     [ "Render", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#aab7a96c17f1f93471e791edebc1c18f2", null ],
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a3733b683af6136605b618e54f5b4345a", null ],

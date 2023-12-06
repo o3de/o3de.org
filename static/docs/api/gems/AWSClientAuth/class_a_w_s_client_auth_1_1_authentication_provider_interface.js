@@ -1,7 +1,5 @@
 var class_a_w_s_client_auth_1_1_authentication_provider_interface =
 [
-    [ "AuthenticationProviderInterface", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#a2d2c7a2aa744ab30abb048519dd2100e", null ],
-    [ "~AuthenticationProviderInterface", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#abc0285a8b178329fbc39ca3fd512c21c", null ],
     [ "DeviceCodeGrantConfirmSignInAsync", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#aa180b8b1cfbe8021dc57ae63cff9c6d1", null ],
     [ "DeviceCodeGrantSignInAsync", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#ad45bd301c6f4a49651d12484504bda5d", null ],
     [ "GetAuthenticationTokens", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#a140be1616784ccab3e682152f1deb9fb", null ],
@@ -10,6 +8,5 @@ var class_a_w_s_client_auth_1_1_authentication_provider_interface =
     [ "PasswordGrantMultiFactorSignInAsync", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#a283bf1b39cf7e785d3de1d97b46c25af", null ],
     [ "PasswordGrantSingleFactorSignInAsync", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#afe949e10bbccfbe4f765bba9736c9eaa", null ],
     [ "RefreshTokensAsync", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#a3ecfbbbd7e59426a607209963fbd3813", null ],
-    [ "SignOut", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#af052c05050a07a93ca7b10b4f7e2415c", null ],
-    [ "m_authenticationTokens", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#aef83cd062e810efe5ee4148c67f835d7", null ]
+    [ "SignOut", "class_a_w_s_client_auth_1_1_authentication_provider_interface.html#af052c05050a07a93ca7b10b4f7e2415c", null ]
 ];

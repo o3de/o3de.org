@@ -1,6 +1,5 @@
 var class_az_qt_components_1_1_card_notification =
 [
-    [ "CardNotification", "class_az_qt_components_1_1_card_notification.html#ac73f23f186ec4f58e9c0a52fb31acb56", null ],
-    [ "addButtonFeature", "class_az_qt_components_1_1_card_notification.html#a9958ee799b591309b22120e0455142bd", null ],
+    [ "addButtonFeature", "class_az_qt_components_1_1_card_notification.html#a7a9b73f2c616ab91ec0ad50305b7f283", null ],
     [ "addFeature", "class_az_qt_components_1_1_card_notification.html#a61e8143faf2b1a7f986371dbf3a9c2c0", null ]
 ];

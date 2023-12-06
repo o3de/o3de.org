@@ -1,36 +1,4 @@
 var class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory =
 [
-    [ "Sample", "struct_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory_1_1_sample.html", "struct_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory_1_1_sample" ],
-    [ "Axis", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a153513a61b2a90f4c1dc6136d8ab9455", [
-      [ "X", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a153513a61b2a90f4c1dc6136d8ab9455a02129bb861061d1a052c592e2dc6b383", null ],
-      [ "Y", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a153513a61b2a90f4c1dc6136d8ab9455a57cec4137b614c87cb4e24a3d003a3e0", null ],
-      [ "X_NEGATIVE", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a153513a61b2a90f4c1dc6136d8ab9455a06b78b5d6c5b0bdb00ad951b0ce1eba4", null ],
-      [ "Y_NEGATIVE", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a153513a61b2a90f4c1dc6136d8ab9455a7619e6d27f663ca96c8a863dd3595ec1", null ]
-    ] ],
-    [ "FeatureTrajectory", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#af1973ee05d06eef485286f35dd96ee14", null ],
-    [ "~FeatureTrajectory", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a7d2eb0b48fa191da029b3a3e2048f8ba", null ],
-    [ "CalculateFacingDirection", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#af13d652bb1715f71f49fc0c48fd7cc33", null ],
-    [ "CalculateFutureFrameCost", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a9592fadee083c335f5b1ec555d277079", null ],
-    [ "CalculatePastFrameCost", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a805bd38a7bb665f3a0d27a05088e2ee1", null ],
-    [ "DebugDraw", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#afa7ec7b2cf5019ca6ef133ec1b529175", null ],
-    [ "DebugDrawFacingDirection", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a8bf3bb2b03ddea94079720c9bfac82f5", null ],
-    [ "ExtractFeatureValues", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#ac9b4c3f0dcce0eff870a917b08b15736", null ],
-    [ "FillQueryVector", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a079d0bdead1cbdcaaa976d2ca55dea6e", null ],
-    [ "GetDimensionName", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#ac03d8a1ee74ad582b5e3debc064c7acb", null ],
-    [ "GetFacingAxisDir", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a2e8d2552201ae5383520298937683b7c", null ],
-    [ "GetFutureCostFactor", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a03de04b8f1b9bc75b53f1a26a4321a6f", null ],
-    [ "GetFutureTimeRange", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a1b859f6bf4644ca4178398b0e315a844", null ],
-    [ "GetNumDimensions", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a4a8e09ce6f1361686ebb6c7444cf9dde", null ],
-    [ "GetNumFutureSamples", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#aeec8557b759e65495c9728c6e23a4000", null ],
-    [ "GetNumPastSamples", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a2d9e5866395e215aa1f19457508fe81a", null ],
-    [ "GetPastCostFactor", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#afccf22d3ce25e01068fcd3fdf80dc65f", null ],
-    [ "GetPastTimeRange", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a39d67784ca5cc8a1ee791953edb9fda0", null ],
-    [ "Init", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a9e595575e3422088551ba2c2a0463d19", null ],
-    [ "Reflect", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#abb0559bb43ecaefa8d9333895f7dd64d", null ],
-    [ "SetFacingAxis", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#affc29b492d1ac22fe6bf09a01ace049c", null ],
-    [ "SetFutureTimeRange", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a441b9e8946cc7123321ebc0082126fbc", null ],
-    [ "SetNumFutureSamplesPerFrame", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a260a3d5af2d25d41e962e8fae95664af", null ],
-    [ "SetNumPastSamplesPerFrame", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#abd6cbeb4c56d1cfc6a32745a6caa0690", null ],
-    [ "SetPastTimeRange", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a0d357c179cb202518c98c0b0e08820b3", null ],
-    [ "UpdateFacingAxis", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html#a420c678093fbea0a6a66350cc60b4310", null ]
+    [ "Sample", "struct_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory_1_1_sample.html", "struct_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory_1_1_sample" ]
 ];

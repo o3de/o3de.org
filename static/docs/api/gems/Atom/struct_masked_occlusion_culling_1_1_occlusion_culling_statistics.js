@@ -5,7 +5,5 @@ var struct_masked_occlusion_culling_1_1_occlusion_culling_statistics =
     [ "mNumRasterizedTriangles", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html#a6c715d2fa8d19e68b98657721a3a51c0", null ],
     [ "mNumTilesMerged", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html#a65561e97a91f8c779a92c71ff7feaa75", null ],
     [ "mNumTilesTraversed", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html#a60832e57020de7dd585a76ba9fa1bd10", null ],
-    [ "mNumTilesUpdated", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html#afe3dd23f0f31d9df0283ddae029712f3", null ],
-    [ "mOccludees", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html#a324cf5aec5aca1bc0902dd921642a73c", null ],
-    [ "mOccluders", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html#afc70f45bfa8311e1ce27037ffc77ff27", null ]
+    [ "mNumTilesUpdated", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html#afe3dd23f0f31d9df0283ddae029712f3", null ]
 ];

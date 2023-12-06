@@ -7,7 +7,6 @@ var struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_
     ] ],
     [ "RawTouchEvent", "struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html#a7e6edee501a2224206c846bf1d4d99e5", null ],
     [ "~RawTouchEvent", "struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html#a2d590066f5386a8f9ad55ceb317ec2c9", null ],
-    [ "AZ_DEFAULT_COPY", "struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html#a3a284b76b9a4710bf148902b2ea0d175", null ],
     [ "m_index", "struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html#a9eefac0003c4027d924c674cc1bc8479", null ],
     [ "m_state", "struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html#a7bb932109f79b6ccfb2423b2f11a45f9", null ]
 ];

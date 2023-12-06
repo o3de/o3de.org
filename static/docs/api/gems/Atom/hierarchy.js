@@ -1,20 +1,21 @@
 var hierarchy =
 [
-    [ "Descriptor", null, [
+    [ "allocator_type::Descriptor", null, [
       [ "AZ::RHI::MemorySubAllocator< Traits >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_memory_sub_allocator_1_1_descriptor.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ArcBallControllerRequestBus::Handler", null, [
       [ "AZ::Debug::ArcBallControllerComponent", "class_a_z_1_1_debug_1_1_arc_ball_controller_component.html", null ]
     ] ],
     [ "AZ::Data::Asset< AssetDataT >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AttachmentImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::AnyAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::AttachmentImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::AZ::RPI::StreamingImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::BufferAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::ImageMipChainAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::MaterialAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::MaterialTypeAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::ModelAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::ModelLodAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::MorphTargetMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::PassAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< AZ::RPI::ResourcePoolAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
@@ -32,14 +33,6 @@ var hierarchy =
     [ "AZ::Data::Asset< ModelLodAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< MorphTargetMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< ResourcePoolAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< RPI::AnyAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< RPI::BufferAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< RPI::MaterialAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< RPI::ModelAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< RPI::ModelLodAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< RPI::ResourcePoolAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< RPI::ShaderAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< RPI::StreamingImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< ScriptAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< ShaderAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< ShaderVariantAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
@@ -47,7 +40,7 @@ var hierarchy =
     [ "AZ::Data::Asset< SkinMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< StreamingImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::Asset< StreamingImagePoolAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "Handler", null, [
+    [ "AssetBuilderSDK::AssetBuilderCommandBus::Handler", null, [
       [ "AZ::PrecompiledShaderBuilder", "class_a_z_1_1_precompiled_shader_builder.html", null ],
       [ "AZ::RPI::AnyAssetBuilder", "class_a_z_1_1_r_p_i_1_1_any_asset_builder.html", null ],
       [ "AZ::RPI::MaterialBuilder", "class_a_z_1_1_r_p_i_1_1_material_builder.html", null ],
@@ -104,24 +97,30 @@ var hierarchy =
     [ "AZ::RPI::AssetCreator< StreamingImagePoolAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
       [ "AZ::RPI::StreamingImagePoolAssetCreator", "class_a_z_1_1_r_p_i_1_1_streaming_image_pool_asset_creator.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AssetInitBus::Handler", null, [
       [ "AZ::RPI::MaterialAsset", "class_a_z_1_1_r_p_i_1_1_material_asset.html", null ],
       [ "AZ::RPI::MaterialTypeAsset", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html", null ],
       [ "AZ::RPI::ShaderAsset", "class_a_z_1_1_r_p_i_1_1_shader_asset.html", null ]
     ] ],
+    [ "AssetStatusReporterSystemRequestBus::Handler", null, [
+      [ "AtomToolsFramework::AssetStatusReporterSystem", "class_atom_tools_framework_1_1_asset_status_reporter_system.html", null ]
+    ] ],
     [ "AZ::Render::AsyncLoadTracker< DecalHandle >", "class_a_z_1_1_render_1_1_async_load_tracker.html", null ],
-    [ "Handler", null, [
+    [ "AtomToolsAnyDocumentRequestBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsAnyDocument", "class_atom_tools_framework_1_1_atom_tools_any_document.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AtomToolsDocumentNotificationBus::Handler", null, [
+      [ "AtomToolsFramework::AtomToolsDocumentInspector", "class_atom_tools_framework_1_1_atom_tools_document_inspector.html", null ],
       [ "AtomToolsFramework::AtomToolsDocumentMainWindow", "class_atom_tools_framework_1_1_atom_tools_document_main_window.html", [
         [ "MaterialCanvas::MaterialCanvasMainWindow", "class_material_canvas_1_1_material_canvas_main_window.html", null ],
         [ "MaterialEditor::MaterialEditorMainWindow", "class_material_editor_1_1_material_editor_main_window.html", null ],
         [ "PassCanvas::PassCanvasMainWindow", "class_pass_canvas_1_1_pass_canvas_main_window.html", null ],
         [ "ShaderManagementConsole::ShaderManagementConsoleWindow", "class_shader_management_console_1_1_shader_management_console_window.html", null ]
-      ] ]
+      ] ],
+      [ "AtomToolsFramework::AtomToolsDocumentSystem", "class_atom_tools_framework_1_1_atom_tools_document_system.html", null ],
+      [ "AtomToolsFramework::GraphDocumentView", "class_atom_tools_framework_1_1_graph_document_view.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AtomToolsDocumentRequestBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsDocument", "class_atom_tools_framework_1_1_atom_tools_document.html", [
         [ "AtomToolsFramework::AtomToolsAnyDocument", "class_atom_tools_framework_1_1_atom_tools_any_document.html", null ],
         [ "AtomToolsFramework::GraphDocument", "class_atom_tools_framework_1_1_graph_document.html", null ],
@@ -129,13 +128,12 @@ var hierarchy =
         [ "ShaderManagementConsole::ShaderManagementConsoleDocument", "class_shader_management_console_1_1_shader_management_console_document.html", null ]
       ] ]
     ] ],
-    [ "Handler", null, [
+    [ "AtomToolsDocumentSystemRequestBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsDocumentSystem", "class_atom_tools_framework_1_1_atom_tools_document_system.html", null ]
     ] ],
-    [ "Handler", null, [
-      [ "AtomToolsFramework::AtomToolsDocumentInspector", "class_atom_tools_framework_1_1_atom_tools_document_inspector.html", null ],
-      [ "AtomToolsFramework::AtomToolsDocumentSystem", "class_atom_tools_framework_1_1_atom_tools_document_system.html", null ],
-      [ "AtomToolsFramework::GraphDocumentView", "class_atom_tools_framework_1_1_graph_document_view.html", null ],
+    [ "AtomToolsFramework::AssetStatusReporter", "class_atom_tools_framework_1_1_asset_status_reporter.html", null ],
+    [ "AtomToolsFramework::AtomToolsAssetBrowser::FileTypeFilter", "struct_atom_tools_framework_1_1_atom_tools_asset_browser_1_1_file_type_filter.html", null ],
+    [ "AtomToolsFramework::AtomToolsDocumentNotificationBus::Handler", null, [
       [ "MaterialCanvas::MaterialCanvasApplication", "class_material_canvas_1_1_material_canvas_application.html", null ],
       [ "MaterialCanvas::MaterialCanvasViewportContent", "class_material_canvas_1_1_material_canvas_viewport_content.html", null ],
       [ "MaterialEditor::MaterialEditorViewportContent", "class_material_editor_1_1_material_editor_viewport_content.html", null ],
@@ -143,7 +141,7 @@ var hierarchy =
       [ "PassCanvas::PassCanvasViewportContent", "class_pass_canvas_1_1_pass_canvas_viewport_content.html", null ],
       [ "ShaderManagementConsole::ShaderManagementConsoleTableView", "class_shader_management_console_1_1_shader_management_console_table_view.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AtomToolsFramework::AtomToolsMainMenuRequestBus::Handler", null, [
       [ "AtomToolsFramework::GraphView", "class_atom_tools_framework_1_1_graph_view.html", [
         [ "AtomToolsFramework::GraphDocumentView", "class_atom_tools_framework_1_1_graph_document_view.html", null ]
       ] ]
@@ -162,7 +160,7 @@ var hierarchy =
       [ "MaterialCanvas::MaterialGraphCompiler", "class_material_canvas_1_1_material_graph_compiler.html", null ],
       [ "PassCanvas::PassGraphCompiler", "class_pass_canvas_1_1_pass_graph_compiler.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AtomToolsFramework::GraphDocumentNotificationBus::Handler", null, [
       [ "MaterialCanvas::MaterialCanvasViewportContent", "class_material_canvas_1_1_material_canvas_viewport_content.html", null ],
       [ "PassCanvas::PassCanvasViewportContent", "class_pass_canvas_1_1_pass_canvas_viewport_content.html", null ]
     ] ],
@@ -187,35 +185,40 @@ var hierarchy =
         [ "AtomToolsFramework::EntityPreviewViewportInputController", "class_atom_tools_framework_1_1_entity_preview_viewport_input_controller.html", null ]
       ] ]
     ] ],
-    [ "Handler", null, [
+    [ "AtomToolsMainMenuRequestBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsMainWindow", "class_atom_tools_framework_1_1_atom_tools_main_window.html", [
         [ "AtomToolsFramework::AtomToolsDocumentMainWindow", "class_atom_tools_framework_1_1_atom_tools_document_main_window.html", null ]
       ] ]
     ] ],
-    [ "Handler", null, [
+    [ "AtomToolsMainWindowRequestBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsMainWindow", "class_atom_tools_framework_1_1_atom_tools_main_window.html", null ]
     ] ],
     [ "AZ::AnyTypeInfoConcept< ValueType, typename >", "struct_a_z_1_1_any_type_info_concept.html", null ],
     [ "AZ::AssetCollectionAsyncLoader::AssetToLoadInfo", "struct_a_z_1_1_asset_collection_async_loader_1_1_asset_to_load_info.html", null ],
-    [ "Component", null, [
-      [ "AtomToolsFramework::AtomToolsFrameworkSystemComponent", "class_atom_tools_framework_1_1_atom_tools_framework_system_component.html", null ],
-      [ "AtomToolsFramework::AtomToolsMainWindowSystemComponent", "class_atom_tools_framework_1_1_atom_tools_main_window_system_component.html", null ],
-      [ "AtomToolsFramework::PerformanceMonitorSystemComponent", "class_atom_tools_framework_1_1_performance_monitor_system_component.html", null ],
-      [ "AtomToolsFramework::PreviewRendererSystemComponent", "class_atom_tools_framework_1_1_preview_renderer_system_component.html", null ],
+    [ "AZ::Component", null, [
+      [ "AZ::DX12::ReflectSystemComponent", "class_a_z_1_1_d_x12_1_1_reflect_system_component.html", null ],
+      [ "AZ::DX12::ShaderPlatformInterfaceSystemComponent", "class_a_z_1_1_d_x12_1_1_shader_platform_interface_system_component.html", null ],
+      [ "AZ::DX12::SystemComponent", "class_a_z_1_1_d_x12_1_1_system_component.html", null ],
       [ "AZ::Debug::CameraComponent", "class_a_z_1_1_debug_1_1_camera_component.html", null ],
       [ "AZ::Debug::CameraControllerComponent", "class_a_z_1_1_debug_1_1_camera_controller_component.html", [
         [ "AZ::Debug::ArcBallControllerComponent", "class_a_z_1_1_debug_1_1_arc_ball_controller_component.html", null ],
         [ "AZ::Debug::NoClipControllerComponent", "class_a_z_1_1_debug_1_1_no_clip_controller_component.html", null ]
       ] ],
-      [ "AZ::DX12::ReflectSystemComponent", "class_a_z_1_1_d_x12_1_1_reflect_system_component.html", null ],
-      [ "AZ::DX12::ShaderPlatformInterfaceSystemComponent", "class_a_z_1_1_d_x12_1_1_shader_platform_interface_system_component.html", null ],
-      [ "AZ::DX12::SystemComponent", "class_a_z_1_1_d_x12_1_1_system_component.html", null ],
       [ "AZ::Metal::ReflectSystemComponent", "class_a_z_1_1_metal_1_1_reflect_system_component.html", null ],
       [ "AZ::Metal::ShaderPlatformInterfaceSystemComponent", "class_a_z_1_1_metal_1_1_shader_platform_interface_system_component.html", null ],
       [ "AZ::Metal::SystemComponent", "class_a_z_1_1_metal_1_1_system_component.html", null ],
       [ "AZ::Null::ReflectSystemComponent", "class_a_z_1_1_null_1_1_reflect_system_component.html", null ],
       [ "AZ::Null::ShaderPlatformInterfaceSystemComponent", "class_a_z_1_1_null_1_1_shader_platform_interface_system_component.html", null ],
       [ "AZ::Null::SystemComponent", "class_a_z_1_1_null_1_1_system_component.html", null ],
+      [ "AZ::RHI::FactoryManagerSystemComponent", "class_a_z_1_1_r_h_i_1_1_factory_manager_system_component.html", null ],
+      [ "AZ::RHI::FactoryRegistrationFinalizerSystemComponent", "class_a_z_1_1_r_h_i_1_1_factory_registration_finalizer_system_component.html", null ],
+      [ "AZ::RHI::ReflectSystemComponent", "class_a_z_1_1_r_h_i_1_1_reflect_system_component.html", null ],
+      [ "AZ::RPI::BuilderComponent", "class_a_z_1_1_r_p_i_1_1_builder_component.html", null ],
+      [ "AZ::RPI::ImageTagSystemComponent", "class_a_z_1_1_r_p_i_1_1_image_tag_system_component.html", null ],
+      [ "AZ::RPI::MaterialAssetDependenciesComponent", "class_a_z_1_1_r_p_i_1_1_material_asset_dependencies_component.html", null ],
+      [ "AZ::RPI::ModelAssetDependenciesComponent", "class_a_z_1_1_r_p_i_1_1_model_asset_dependencies_component.html", null ],
+      [ "AZ::RPI::ModelTagSystemComponent", "class_a_z_1_1_r_p_i_1_1_model_tag_system_component.html", null ],
+      [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ],
       [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ],
       [ "AZ::Render::CommonSystemComponent", "class_a_z_1_1_render_1_1_common_system_component.html", null ],
       [ "AZ::Render::CoreLightsSystemComponent", "class_a_z_1_1_render_1_1_core_lights_system_component.html", null ],
@@ -224,47 +227,50 @@ var hierarchy =
       [ "AZ::Render::ImGuiSystemComponent", "class_a_z_1_1_render_1_1_im_gui_system_component.html", null ],
       [ "AZ::Render::MaterialConverterSystemComponent", "class_a_z_1_1_render_1_1_material_converter_system_component.html", null ],
       [ "AZ::Render::ProfilingCaptureSystemComponent", "class_a_z_1_1_render_1_1_profiling_capture_system_component.html", null ],
-      [ "AZ::RHI::FactoryManagerSystemComponent", "class_a_z_1_1_r_h_i_1_1_factory_manager_system_component.html", null ],
-      [ "AZ::RHI::FactoryRegistrationFinalizerSystemComponent", "class_a_z_1_1_r_h_i_1_1_factory_registration_finalizer_system_component.html", null ],
-      [ "AZ::RHI::ReflectSystemComponent", "class_a_z_1_1_r_h_i_1_1_reflect_system_component.html", null ],
-      [ "AZ::RPI::BuilderComponent", "class_a_z_1_1_r_p_i_1_1_builder_component.html", null ],
-      [ "AZ::RPI::MaterialAssetDependenciesComponent", "class_a_z_1_1_r_p_i_1_1_material_asset_dependencies_component.html", null ],
-      [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ],
+      [ "AZ::Render::SkinnedMeshSystemComponent", "class_a_z_1_1_render_1_1_skinned_mesh_system_component.html", null ],
       [ "AZ::ShaderBuilder::AzslShaderBuilderSystemComponent", "class_a_z_1_1_shader_builder_1_1_azsl_shader_builder_system_component.html", null ],
       [ "AZ::Vulkan::ReflectSystemComponent", "class_a_z_1_1_vulkan_1_1_reflect_system_component.html", null ],
       [ "AZ::Vulkan::ShaderPlatformInterfaceSystemComponent", "class_a_z_1_1_vulkan_1_1_shader_platform_interface_system_component.html", null ],
       [ "AZ::Vulkan::SystemComponent", "class_a_z_1_1_vulkan_1_1_system_component.html", null ],
+      [ "AtomToolsFramework::AtomToolsFrameworkSystemComponent", "class_atom_tools_framework_1_1_atom_tools_framework_system_component.html", null ],
+      [ "AtomToolsFramework::AtomToolsMainWindowSystemComponent", "class_atom_tools_framework_1_1_atom_tools_main_window_system_component.html", null ],
+      [ "AtomToolsFramework::PerformanceMonitorSystemComponent", "class_atom_tools_framework_1_1_performance_monitor_system_component.html", null ],
+      [ "AtomToolsFramework::PreviewRendererSystemComponent", "class_atom_tools_framework_1_1_preview_renderer_system_component.html", null ],
       [ "ImageProcessingAtom::BuilderPluginComponent", "class_image_processing_atom_1_1_builder_plugin_component.html", null ],
       [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ],
       [ "ImageProcessingAtom::Thumbnails::ImageThumbnailSystemComponent", "class_image_processing_atom_1_1_thumbnails_1_1_image_thumbnail_system_component.html", null ]
     ] ],
-    [ "ComponentBus", null, [
+    [ "AZ::ComponentBus", null, [
       [ "AZ::Debug::ArcBallControllerRequests", "class_a_z_1_1_debug_1_1_arc_ball_controller_requests.html", null ],
+      [ "AZ::Debug::CameraControllerNotifications", "class_a_z_1_1_debug_1_1_camera_controller_notifications.html", null ],
       [ "AZ::Debug::CameraControllerRequests", "class_a_z_1_1_debug_1_1_camera_controller_requests.html", null ],
-      [ "AZ::Debug::NoClipControllerRequests", "class_a_z_1_1_debug_1_1_no_clip_controller_requests.html", null ]
+      [ "AZ::Debug::NoClipControllerRequests", "class_a_z_1_1_debug_1_1_no_clip_controller_requests.html", null ],
+      [ "AZ::Render::SkyBoxFogRequests", "class_a_z_1_1_render_1_1_sky_box_fog_requests.html", null ]
     ] ],
     [ "AZ::Data::Asset< T >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "MultiHandler", null, [
+    [ "AZ::Data::AssetBus::MultiHandler", null, [
       [ "AZ::AssetCollectionAsyncLoader", "class_a_z_1_1_asset_collection_async_loader.html", null ],
+      [ "AZ::RPI::AssetUtils::AsyncAssetLoader", "class_a_z_1_1_r_p_i_1_1_asset_utils_1_1_async_asset_loader.html", null ],
+      [ "AZ::RPI::MaterialTypeAsset", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html", null ],
+      [ "AZ::RPI::PassLibrary", "class_a_z_1_1_r_p_i_1_1_pass_library.html", null ],
+      [ "AZ::RPI::ShaderVariantAsyncLoader", "class_a_z_1_1_r_p_i_1_1_shader_variant_async_loader.html", null ],
+      [ "AZ::RPI::StreamingImage", "class_a_z_1_1_r_p_i_1_1_streaming_image.html", null ],
+      [ "AZ::RPI::StreamingImageAssetHandler", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_handler.html", null ],
       [ "AZ::Render::DecalTextureArray", "class_a_z_1_1_render_1_1_decal_texture_array.html", null ],
       [ "AZ::Render::DecalTextureArrayFeatureProcessor", "class_a_z_1_1_render_1_1_decal_texture_array_feature_processor.html", null ],
       [ "AZ::Render::ModelReloader", "class_a_z_1_1_render_1_1_model_reloader.html", null ],
       [ "AZ::Render::OcclusionCullingPlane", "class_a_z_1_1_render_1_1_occlusion_culling_plane.html", null ],
       [ "AZ::Render::ReflectionProbe", "class_a_z_1_1_render_1_1_reflection_probe.html", null ],
-      [ "AZ::Render::ReflectionProbeFeatureProcessor", "class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html", null ],
-      [ "AZ::RPI::AssetUtils::AsyncAssetLoader", "class_a_z_1_1_r_p_i_1_1_asset_utils_1_1_async_asset_loader.html", null ],
-      [ "AZ::RPI::MaterialTypeAsset", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html", null ],
-      [ "AZ::RPI::Shader", "class_a_z_1_1_r_p_i_1_1_shader.html", null ],
-      [ "AZ::RPI::ShaderVariantAsyncLoader", "class_a_z_1_1_r_p_i_1_1_shader_variant_async_loader.html", null ],
-      [ "AZ::RPI::StreamingImage", "class_a_z_1_1_r_p_i_1_1_streaming_image.html", null ],
-      [ "AZ::RPI::StreamingImageAssetHandler", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_handler.html", null ]
+      [ "AZ::Render::ReflectionProbeFeatureProcessor", "class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html", null ]
     ] ],
-    [ "AssetData", null, [
+    [ "AZ::Data::AssetData", null, [
       [ "AZ::RPI::AnyAsset", "class_a_z_1_1_r_p_i_1_1_any_asset.html", null ],
+      [ "AZ::RPI::BufferAsset", "class_a_z_1_1_r_p_i_1_1_buffer_asset.html", null ],
       [ "AZ::RPI::ImageAsset", "class_a_z_1_1_r_p_i_1_1_image_asset.html", [
         [ "AZ::RPI::AttachmentImageAsset", "class_a_z_1_1_r_p_i_1_1_attachment_image_asset.html", null ],
         [ "AZ::RPI::StreamingImageAsset", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html", null ]
       ] ],
+      [ "AZ::RPI::ImageMipChainAsset", "class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html", null ],
       [ "AZ::RPI::MaterialAsset", "class_a_z_1_1_r_p_i_1_1_material_asset.html", null ],
       [ "AZ::RPI::MaterialTypeAsset", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html", null ],
       [ "AZ::RPI::ModelAsset", "class_a_z_1_1_r_p_i_1_1_model_asset.html", null ],
@@ -282,31 +288,22 @@ var hierarchy =
       [ "AZ::RPI::StreamingImageControllerAsset", "class_a_z_1_1_r_p_i_1_1_streaming_image_controller_asset.html", null ],
       [ "AZ::RPI::StreamingImagePoolAsset", "class_a_z_1_1_r_p_i_1_1_streaming_image_pool_asset.html", null ]
     ] ],
-    [ "InstanceData", null, [
-      [ "AZ::RPI::AttachmentImagePool", "class_a_z_1_1_r_p_i_1_1_attachment_image_pool.html", null ],
-      [ "AZ::RPI::Buffer", "class_a_z_1_1_r_p_i_1_1_buffer.html", null ],
-      [ "AZ::RPI::BufferPool", "class_a_z_1_1_r_p_i_1_1_buffer_pool.html", null ],
-      [ "AZ::RPI::Image", "class_a_z_1_1_r_p_i_1_1_image.html", [
-        [ "AZ::RPI::AttachmentImage", "class_a_z_1_1_r_p_i_1_1_attachment_image.html", null ],
-        [ "AZ::RPI::StreamingImage", "class_a_z_1_1_r_p_i_1_1_streaming_image.html", null ]
-      ] ],
-      [ "AZ::RPI::Material", "class_a_z_1_1_r_p_i_1_1_material.html", null ],
-      [ "AZ::RPI::Model", "class_a_z_1_1_r_p_i_1_1_model.html", null ],
-      [ "AZ::RPI::ModelLod", "class_a_z_1_1_r_p_i_1_1_model_lod.html", null ],
-      [ "AZ::RPI::Shader", "class_a_z_1_1_r_p_i_1_1_shader.html", null ],
+    [ "AZ::Data::InstanceData", null, [
       [ "AZ::RPI::ShaderResourceGroup", "class_a_z_1_1_r_p_i_1_1_shader_resource_group.html", null ],
-      [ "AZ::RPI::ShaderResourceGroupPool", "class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html", null ]
+      [ "AZ::RPI::ShaderResourceGroupPool", "class_a_z_1_1_r_p_i_1_1_shader_resource_group_pool.html", null ],
+      [ "AZ::RPI::StreamingImagePool", "class_a_z_1_1_r_p_i_1_1_streaming_image_pool.html", null ]
     ] ],
     [ "AZ::DdsFile", "class_a_z_1_1_dds_file.html", null ],
     [ "AZ::DdsFile::DdsFailure", "struct_a_z_1_1_dds_file_1_1_dds_failure.html", null ],
     [ "AZ::DdsFile::DdsFileData", "struct_a_z_1_1_dds_file_1_1_dds_file_data.html", null ],
     [ "AZ::Debug::NoClipControllerProperties", "struct_a_z_1_1_debug_1_1_no_clip_controller_properties.html", null ],
-    [ "Handler", null, [
-      [ "AtomToolsFramework::TraceRecorder", "class_atom_tools_framework_1_1_trace_recorder.html", null ],
-      [ "AZ::RPI::RPISystem", "class_a_z_1_1_r_p_i_1_1_r_p_i_system.html", null ]
+    [ "AZ::Debug::TraceMessageBus::Handler", null, [
+      [ "AZ::RPI::RPISystem", "class_a_z_1_1_r_p_i_1_1_r_p_i_system.html", null ],
+      [ "AtomToolsFramework::TraceRecorder", "class_atom_tools_framework_1_1_trace_recorder.html", null ]
     ] ],
     [ "AZ::DX12::AsyncUploadQueue::Descriptor", "struct_a_z_1_1_d_x12_1_1_async_upload_queue_1_1_descriptor.html", null ],
     [ "AZ::DX12::BarrierOp", "struct_a_z_1_1_d_x12_1_1_barrier_op.html", null ],
+    [ "AZ::DX12::BufferD3D12MemoryAllocator", "class_a_z_1_1_d_x12_1_1_buffer_d3_d12_memory_allocator.html", null ],
     [ "AZ::DX12::BufferMemoryAllocator", "class_a_z_1_1_d_x12_1_1_buffer_memory_allocator.html", null ],
     [ "AZ::DX12::CommandList::BufferClearRequest", "struct_a_z_1_1_d_x12_1_1_command_list_1_1_buffer_clear_request.html", null ],
     [ "AZ::DX12::CommandList::ImageClearRequest", "struct_a_z_1_1_d_x12_1_1_command_list_1_1_image_clear_request.html", null ],
@@ -316,9 +313,7 @@ var hierarchy =
     [ "AZ::DX12::CommandQueueContext", "class_a_z_1_1_d_x12_1_1_command_queue_context.html", null ],
     [ "AZ::DX12::DescriptorContext", "class_a_z_1_1_d_x12_1_1_descriptor_context.html", null ],
     [ "AZ::DX12::DescriptorHandle", "struct_a_z_1_1_d_x12_1_1_descriptor_handle.html", null ],
-    [ "AZ::DX12::DescriptorPool", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html", [
-      [ "AZ::DX12::DescriptorPoolShaderVisibleCbvSrvUav", "class_a_z_1_1_d_x12_1_1_descriptor_pool_shader_visible_cbv_srv_uav.html", null ]
-    ] ],
+    [ "AZ::DX12::DescriptorPool", "class_a_z_1_1_d_x12_1_1_descriptor_pool.html", null ],
     [ "AZ::DX12::DescriptorTable", "class_a_z_1_1_d_x12_1_1_descriptor_table.html", null ],
     [ "AZ::DX12::Fence", "class_a_z_1_1_d_x12_1_1_fence.html", null ],
     [ "AZ::DX12::FenceEvent", "class_a_z_1_1_d_x12_1_1_fence_event.html", null ],
@@ -347,7 +342,46 @@ var hierarchy =
     [ "AZ::DX12::ShaderResourceGroupVisibility", "struct_a_z_1_1_d_x12_1_1_shader_resource_group_visibility.html", null ],
     [ "AZ::DX12::StagingMemoryAllocator", "class_a_z_1_1_d_x12_1_1_staging_memory_allocator.html", null ],
     [ "AZ::DX12::StagingMemoryAllocator::Descriptor", "struct_a_z_1_1_d_x12_1_1_staging_memory_allocator_1_1_descriptor.html", null ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
+      [ "AZ::RHI::FactoryManagerNotification", "class_a_z_1_1_r_h_i_1_1_factory_manager_notification.html", null ],
+      [ "AZ::RHI::FactoryManagerRequest", "class_a_z_1_1_r_h_i_1_1_factory_manager_request.html", null ],
+      [ "AZ::RHI::RHISystemNotificiationInterface", "class_a_z_1_1_r_h_i_1_1_r_h_i_system_notificiation_interface.html", null ],
+      [ "AZ::RHI::ResourceEventInterface", "class_a_z_1_1_r_h_i_1_1_resource_event_interface.html", null ],
+      [ "AZ::RHI::ShaderPlatformInterfaceRegister", "class_a_z_1_1_r_h_i_1_1_shader_platform_interface_register.html", null ],
+      [ "AZ::RPI::AssetInitEvents", "class_a_z_1_1_r_p_i_1_1_asset_init_events.html", null ],
+      [ "AZ::RPI::AssetTagInterface< T >", "class_a_z_1_1_r_p_i_1_1_asset_tag_interface.html", null ],
+      [ "AZ::RPI::AssetTagNotification< T >", "class_a_z_1_1_r_p_i_1_1_asset_tag_notification.html", null ],
+      [ "AZ::RPI::MaterialConverterRequests", "class_a_z_1_1_r_p_i_1_1_material_converter_requests.html", null ],
+      [ "AZ::RPI::NotifyByViewportIdTraits", "class_a_z_1_1_r_p_i_1_1_notify_by_viewport_id_traits.html", null ],
+      [ "AZ::RPI::NotifyByViewportNameTraits", "class_a_z_1_1_r_p_i_1_1_notify_by_viewport_name_traits.html", null ],
+      [ "AZ::RPI::PassSystemTemplateNotifications", "class_a_z_1_1_r_p_i_1_1_pass_system_template_notifications.html", null ],
+      [ "AZ::RPI::SceneNotification", "class_a_z_1_1_r_p_i_1_1_scene_notification.html", null ],
+      [ "AZ::RPI::SceneRequest", "class_a_z_1_1_r_p_i_1_1_scene_request.html", null ],
+      [ "AZ::RPI::ShaderReloadNotifications", "class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html", null ],
+      [ "AZ::RPI::ShaderVariantFinderNotification", "class_a_z_1_1_r_p_i_1_1_shader_variant_finder_notification.html", null ],
+      [ "AZ::RPI::ViewProvider", "class_a_z_1_1_r_p_i_1_1_view_provider.html", null ],
+      [ "AZ::RPI::ViewportContextManagerNotifications", "class_a_z_1_1_r_p_i_1_1_viewport_context_manager_notifications.html", null ],
+      [ "AZ::RPI::WindowContextNotifications", "class_a_z_1_1_r_p_i_1_1_window_context_notifications.html", null ],
+      [ "AZ::Render::AtomAutomationInterface", "class_a_z_1_1_render_1_1_atom_automation_interface.html", null ],
+      [ "AZ::Render::Bootstrap::DefaultWindowInterface", "class_a_z_1_1_render_1_1_bootstrap_1_1_default_window_interface.html", null ],
+      [ "AZ::Render::Bootstrap::DefaultWindowNotification", "class_a_z_1_1_render_1_1_bootstrap_1_1_default_window_notification.html", null ],
+      [ "AZ::Render::Bootstrap::Notification", "class_a_z_1_1_render_1_1_bootstrap_1_1_notification.html", null ],
+      [ "AZ::Render::Bootstrap::Request", "class_a_z_1_1_render_1_1_bootstrap_1_1_request.html", null ],
+      [ "AZ::Render::FrameCaptureRequests", "class_a_z_1_1_render_1_1_frame_capture_requests.html", null ],
+      [ "AZ::Render::FrameCaptureTestRequests", "class_a_z_1_1_render_1_1_frame_capture_test_requests.html", null ],
+      [ "AZ::Render::ImGuiSystemNotifications", "class_a_z_1_1_render_1_1_im_gui_system_notifications.html", null ],
+      [ "AZ::Render::ImGuiSystemRequests", "class_a_z_1_1_render_1_1_im_gui_system_requests.html", null ],
+      [ "AZ::Render::ProfilingCaptureNotifications", "class_a_z_1_1_render_1_1_profiling_capture_notifications.html", null ],
+      [ "AZ::Render::ProfilingCaptureRequests", "class_a_z_1_1_render_1_1_profiling_capture_requests.html", null ],
+      [ "AZ::Render::SkinnedMeshFeatureProcessorNotifications", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_notifications.html", null ],
+      [ "AZ::Render::SkinnedMeshOutputStreamNotifications", "class_a_z_1_1_render_1_1_skinned_mesh_output_stream_notifications.html", null ],
+      [ "AZ::Render::SkinnedMeshShaderOptionNotifications", "class_a_z_1_1_render_1_1_skinned_mesh_shader_option_notifications.html", null ],
+      [ "AZ::Render::SkinnedMeshStatsRequests", "class_a_z_1_1_render_1_1_skinned_mesh_stats_requests.html", null ],
+      [ "AZ::ShaderBuilder::ShaderPlatformInterfaceRequest", "class_a_z_1_1_shader_builder_1_1_shader_platform_interface_request.html", null ],
+      [ "AZ::Vulkan::DeviceRequirementsRequest", "class_a_z_1_1_vulkan_1_1_device_requirements_request.html", null ],
+      [ "AZ::Vulkan::InstanceNotification", "class_a_z_1_1_vulkan_1_1_instance_notification.html", null ],
+      [ "AZ::Vulkan::InstanceRequirementsRequest", "class_a_z_1_1_vulkan_1_1_instance_requirements_request.html", null ],
+      [ "AtomToolsFramework::AssetStatusReporterSystemRequests", "class_atom_tools_framework_1_1_asset_status_reporter_system_requests.html", null ],
       [ "AtomToolsFramework::AtomToolsAnyDocumentNotifications", "class_atom_tools_framework_1_1_atom_tools_any_document_notifications.html", null ],
       [ "AtomToolsFramework::AtomToolsAnyDocumentRequests", "class_atom_tools_framework_1_1_atom_tools_any_document_requests.html", null ],
       [ "AtomToolsFramework::AtomToolsDocumentNotifications", "class_atom_tools_framework_1_1_atom_tools_document_notifications.html", null ],
@@ -366,57 +400,21 @@ var hierarchy =
       [ "AtomToolsFramework::InspectorRequests", "class_atom_tools_framework_1_1_inspector_requests.html", null ],
       [ "AtomToolsFramework::ModularViewportCameraControllerRequests", "class_atom_tools_framework_1_1_modular_viewport_camera_controller_requests.html", null ],
       [ "AtomToolsFramework::PerformanceMonitorRequests", "class_atom_tools_framework_1_1_performance_monitor_requests.html", null ],
-      [ "AtomToolsFramework::PreviewerFeatureProcessorProviderRequests", "class_atom_tools_framework_1_1_previewer_feature_processor_provider_requests.html", null ],
       [ "AtomToolsFramework::PreviewRendererSystemRequests", "class_atom_tools_framework_1_1_preview_renderer_system_requests.html", null ],
-      [ "AZ::Render::AtomAutomationInterface", "class_a_z_1_1_render_1_1_atom_automation_interface.html", null ],
-      [ "AZ::Render::Bootstrap::DefaultWindowInterface", "class_a_z_1_1_render_1_1_bootstrap_1_1_default_window_interface.html", null ],
-      [ "AZ::Render::Bootstrap::DefaultWindowNotification", "class_a_z_1_1_render_1_1_bootstrap_1_1_default_window_notification.html", null ],
-      [ "AZ::Render::Bootstrap::Notification", "class_a_z_1_1_render_1_1_bootstrap_1_1_notification.html", null ],
-      [ "AZ::Render::Bootstrap::Request", "class_a_z_1_1_render_1_1_bootstrap_1_1_request.html", null ],
-      [ "AZ::Render::FrameCaptureRequests", "class_a_z_1_1_render_1_1_frame_capture_requests.html", null ],
-      [ "AZ::Render::FrameCaptureTestRequests", "class_a_z_1_1_render_1_1_frame_capture_test_requests.html", null ],
-      [ "AZ::Render::ImGuiSystemNotifications", "class_a_z_1_1_render_1_1_im_gui_system_notifications.html", null ],
-      [ "AZ::Render::ImGuiSystemRequests", "class_a_z_1_1_render_1_1_im_gui_system_requests.html", null ],
-      [ "AZ::Render::ProfilingCaptureNotifications", "class_a_z_1_1_render_1_1_profiling_capture_notifications.html", null ],
-      [ "AZ::Render::ProfilingCaptureRequests", "class_a_z_1_1_render_1_1_profiling_capture_requests.html", null ],
-      [ "AZ::Render::SkinnedMeshFeatureProcessorNotifications", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_notifications.html", null ],
-      [ "AZ::Render::SkinnedMeshOutputStreamNotifications", "class_a_z_1_1_render_1_1_skinned_mesh_output_stream_notifications.html", null ],
-      [ "AZ::Render::SkinnedMeshShaderOptionNotifications", "class_a_z_1_1_render_1_1_skinned_mesh_shader_option_notifications.html", null ],
-      [ "AZ::Render::SkinnedMeshStatsRequests", "class_a_z_1_1_render_1_1_skinned_mesh_stats_requests.html", null ],
-      [ "AZ::RHI::DeviceBusTraits", "class_a_z_1_1_r_h_i_1_1_device_bus_traits.html", [
-        [ "AZ::RHI::FrameEventInterface", "class_a_z_1_1_r_h_i_1_1_frame_event_interface.html", null ],
-        [ "AZ::RHI::MemoryStatisticsEventInterface", "class_a_z_1_1_r_h_i_1_1_memory_statistics_event_interface.html", null ],
-        [ "AZ::RHI::MemoryStatisticsHeapEventInterface", "class_a_z_1_1_r_h_i_1_1_memory_statistics_heap_event_interface.html", null ]
-      ] ],
-      [ "AZ::RHI::FactoryManagerNotification", "class_a_z_1_1_r_h_i_1_1_factory_manager_notification.html", null ],
-      [ "AZ::RHI::FactoryManagerRequest", "class_a_z_1_1_r_h_i_1_1_factory_manager_request.html", null ],
-      [ "AZ::RHI::ResourceEventInterface", "class_a_z_1_1_r_h_i_1_1_resource_event_interface.html", null ],
-      [ "AZ::RHI::RHISystemNotificiationInterface", "class_a_z_1_1_r_h_i_1_1_r_h_i_system_notificiation_interface.html", null ],
-      [ "AZ::RHI::ShaderPlatformInterfaceRegister", "class_a_z_1_1_r_h_i_1_1_shader_platform_interface_register.html", null ],
-      [ "AZ::RPI::AssetInitEvents", "class_a_z_1_1_r_p_i_1_1_asset_init_events.html", null ],
-      [ "AZ::RPI::MaterialConverterRequests", "class_a_z_1_1_r_p_i_1_1_material_converter_requests.html", null ],
-      [ "AZ::RPI::NotifyByViewportIdTraits", "class_a_z_1_1_r_p_i_1_1_notify_by_viewport_id_traits.html", null ],
-      [ "AZ::RPI::NotifyByViewportNameTraits", "class_a_z_1_1_r_p_i_1_1_notify_by_viewport_name_traits.html", null ],
-      [ "AZ::RPI::SceneNotification", "class_a_z_1_1_r_p_i_1_1_scene_notification.html", null ],
-      [ "AZ::RPI::SceneRequest", "class_a_z_1_1_r_p_i_1_1_scene_request.html", null ],
-      [ "AZ::RPI::ShaderReloadNotifications", "class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html", null ],
-      [ "AZ::RPI::ShaderVariantFinderNotification", "class_a_z_1_1_r_p_i_1_1_shader_variant_finder_notification.html", null ],
-      [ "AZ::RPI::ViewportContextManagerNotifications", "class_a_z_1_1_r_p_i_1_1_viewport_context_manager_notifications.html", null ],
-      [ "AZ::RPI::ViewProvider", "class_a_z_1_1_r_p_i_1_1_view_provider.html", null ],
-      [ "AZ::RPI::WindowContextNotifications", "class_a_z_1_1_r_p_i_1_1_window_context_notifications.html", null ],
-      [ "AZ::ShaderBuilder::ShaderPlatformInterfaceRequest", "class_a_z_1_1_shader_builder_1_1_shader_platform_interface_request.html", null ],
+      [ "AtomToolsFramework::PreviewerFeatureProcessorProviderRequests", "class_atom_tools_framework_1_1_previewer_feature_processor_provider_requests.html", null ],
       [ "ImageProcessingAtom::ImageBuilderRequests", "class_image_processing_atom_1_1_image_builder_requests.html", null ],
       [ "ImageProcessingAtom::ImageProcessingRequests", "class_image_processing_atom_1_1_image_processing_requests.html", null ],
+      [ "ImageProcessingAtomEditor::ImageProcessingEditorInteralNotifications", "class_image_processing_atom_editor_1_1_image_processing_editor_interal_notifications.html", null ],
       [ "ImageProcessingAtomEditor::ImageProcessingEditorRequests", "class_image_processing_atom_editor_1_1_image_processing_editor_requests.html", null ],
       [ "MaterialEditor::MaterialDocumentRequests", "class_material_editor_1_1_material_document_requests.html", null ],
       [ "ShaderManagementConsole::ShaderManagementConsoleDocumentRequests", "class_shader_management_console_1_1_shader_management_console_document_requests.html", null ],
       [ "ShaderManagementConsole::ShaderManagementConsoleRequests", "class_shader_management_console_1_1_shader_management_console_requests.html", null ]
     ] ],
     [ "AZ::EnvironmentVariable< T >", "class_a_z_1_1_environment_variable.html", null ],
-    [ "Registrar", null, [
+    [ "AZ::Interface::Registrar", null, [
       [ "AZ::RPI::ShaderVariantAsyncLoader", "class_a_z_1_1_r_p_i_1_1_shader_variant_async_loader.html", null ]
     ] ],
-    [ "Job", null, [
+    [ "AZ::Job", null, [
       [ "ImageProcessingAtom::ImagePreviewConvertJob", "class_image_processing_atom_1_1_image_preview_convert_job.html", null ]
     ] ],
     [ "AZ::Metal::AsyncUploadQueue::Descriptor", "struct_a_z_1_1_metal_1_1_async_upload_queue_1_1_descriptor.html", null ],
@@ -442,9 +440,9 @@ var hierarchy =
     [ "AZ::Metal::RootConstantBinding", "struct_a_z_1_1_metal_1_1_root_constant_binding.html", null ],
     [ "AZ::Metal::ShaderResourceGroupCompiledData", "struct_a_z_1_1_metal_1_1_shader_resource_group_compiled_data.html", null ],
     [ "AZ::Metal::ShaderResourceGroupVisibility", "class_a_z_1_1_metal_1_1_shader_resource_group_visibility.html", null ],
-    [ "Module", null, [
-      [ "AtomToolsFramework::AtomToolsFrameworkModule", "class_atom_tools_framework_1_1_atom_tools_framework_module.html", null ],
-      [ "AZ::RPI::Module", "class_a_z_1_1_r_p_i_1_1_module.html", null ]
+    [ "AZ::Module", null, [
+      [ "AZ::RPI::Module", "class_a_z_1_1_r_p_i_1_1_module.html", null ],
+      [ "AtomToolsFramework::AtomToolsFrameworkModule", "class_atom_tools_framework_1_1_atom_tools_framework_module.html", null ]
     ] ],
     [ "AZ::Render::AcesParameterOverrides", "struct_a_z_1_1_render_1_1_aces_parameter_overrides.html", null ],
     [ "AZ::Render::AsyncLoadTracker< FeatureProcessorHandle >", "class_a_z_1_1_render_1_1_async_load_tracker.html", null ],
@@ -499,7 +497,7 @@ var hierarchy =
     [ "AZ::Render::FastDepthAwareBlurPassConstants", "struct_a_z_1_1_render_1_1_fast_depth_aware_blur_pass_constants.html", null ],
     [ "AZ::Render::FixedShapeProcessor", "class_a_z_1_1_render_1_1_fixed_shape_processor.html", null ],
     [ "AZ::Render::FrameCaptureError", "struct_a_z_1_1_render_1_1_frame_capture_error.html", null ],
-    [ "Handler", null, [
+    [ "AZ::Render::FrameCaptureNotificationBus::Handler", null, [
       [ "AtomToolsFramework::PreviewRendererCaptureState", "class_atom_tools_framework_1_1_preview_renderer_capture_state.html", null ]
     ] ],
     [ "AZ::Render::FrameCaptureOutputResult", "struct_a_z_1_1_render_1_1_frame_capture_output_result.html", null ],
@@ -539,7 +537,14 @@ var hierarchy =
     [ "AZ::Render::MathFilterDescriptor", "struct_a_z_1_1_render_1_1_math_filter_descriptor.html", null ],
     [ "AZ::Render::MeshCommon::EmptyFilter< BoundsType >", "struct_a_z_1_1_render_1_1_mesh_common_1_1_empty_filter.html", null ],
     [ "AZ::Render::MeshHandleDescriptor", "struct_a_z_1_1_render_1_1_mesh_handle_descriptor.html", null ],
+    [ "AZ::Render::MeshInstanceGroupData", "struct_a_z_1_1_render_1_1_mesh_instance_group_data.html", null ],
+    [ "AZ::Render::MeshInstanceGroupKey", "struct_a_z_1_1_render_1_1_mesh_instance_group_key.html", null ],
+    [ "AZ::Render::MeshInstanceGroupList", "class_a_z_1_1_render_1_1_mesh_instance_group_list.html", null ],
+    [ "AZ::Render::MeshInstanceGroupList::IndexMapEntry", "struct_a_z_1_1_render_1_1_mesh_instance_group_list_1_1_index_map_entry.html", null ],
+    [ "AZ::Render::MeshInstanceGroupList::InsertResult", "struct_a_z_1_1_render_1_1_mesh_instance_group_list_1_1_insert_result.html", null ],
+    [ "AZ::Render::MeshInstanceManager", "class_a_z_1_1_render_1_1_mesh_instance_manager.html", null ],
     [ "AZ::Render::ModelDataInstance", "class_a_z_1_1_render_1_1_model_data_instance.html", null ],
+    [ "AZ::Render::ModelDataInstance::PostCullingInstanceData", "struct_a_z_1_1_render_1_1_model_data_instance_1_1_post_culling_instance_data.html", null ],
     [ "AZ::Render::ModelPreset", "struct_a_z_1_1_render_1_1_model_preset.html", null ],
     [ "AZ::Render::ModelReloaderSystemInterface", "class_a_z_1_1_render_1_1_model_reloader_system_interface.html", [
       [ "AZ::Render::ModelReloaderSystem", "class_a_z_1_1_render_1_1_model_reloader_system.html", null ]
@@ -649,8 +654,11 @@ var hierarchy =
     ] ],
     [ "AZ::RHI::AsyncWorkQueue", "class_a_z_1_1_r_h_i_1_1_async_work_queue.html", null ],
     [ "AZ::RHI::AttachmentLoadStoreAction", "struct_a_z_1_1_r_h_i_1_1_attachment_load_store_action.html", null ],
+    [ "AZ::RHI::BindlessSrgDescriptor", "struct_a_z_1_1_r_h_i_1_1_bindless_srg_descriptor.html", null ],
     [ "AZ::RHI::BlendState", "struct_a_z_1_1_r_h_i_1_1_blend_state.html", null ],
-    [ "AZ::RHI::BufferDescriptor", "struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html", null ],
+    [ "AZ::RHI::BufferDescriptor", "struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html", [
+      [ "AZ::Vulkan::BufferMemory::Descriptor", "struct_a_z_1_1_vulkan_1_1_buffer_memory_1_1_descriptor.html", null ]
+    ] ],
     [ "AZ::RHI::BufferInitRequest", "struct_a_z_1_1_r_h_i_1_1_buffer_init_request.html", null ],
     [ "AZ::RHI::BufferMapRequest", "struct_a_z_1_1_r_h_i_1_1_buffer_map_request.html", null ],
     [ "AZ::RHI::BufferMapResponse", "struct_a_z_1_1_r_h_i_1_1_buffer_map_response.html", null ],
@@ -692,6 +700,8 @@ var hierarchy =
     [ "AZ::RHI::DispatchArguments", "struct_a_z_1_1_r_h_i_1_1_dispatch_arguments.html", null ],
     [ "AZ::RHI::DispatchDirect", "struct_a_z_1_1_r_h_i_1_1_dispatch_direct.html", null ],
     [ "AZ::RHI::DispatchItem", "struct_a_z_1_1_r_h_i_1_1_dispatch_item.html", null ],
+    [ "AZ::RHI::DispatchRaysArguments", "struct_a_z_1_1_r_h_i_1_1_dispatch_rays_arguments.html", null ],
+    [ "AZ::RHI::DispatchRaysDirect", "struct_a_z_1_1_r_h_i_1_1_dispatch_rays_direct.html", null ],
     [ "AZ::RHI::DispatchRaysItem", "struct_a_z_1_1_r_h_i_1_1_dispatch_rays_item.html", null ],
     [ "AZ::RHI::DrawArguments", "struct_a_z_1_1_r_h_i_1_1_draw_arguments.html", null ],
     [ "AZ::RHI::DrawIndexed", "struct_a_z_1_1_r_h_i_1_1_draw_indexed.html", null ],
@@ -714,7 +724,7 @@ var hierarchy =
       [ "AZ::Null::SystemComponent", "class_a_z_1_1_null_1_1_system_component.html", null ],
       [ "AZ::Vulkan::SystemComponent", "class_a_z_1_1_vulkan_1_1_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::RHI::FactoryManagerNotificationBus::Handler", null, [
       [ "MaterialCanvas::MaterialCanvasApplication", "class_material_canvas_1_1_material_canvas_application.html", null ]
     ] ],
     [ "AZ::RHI::FrameAttachment", "class_a_z_1_1_r_h_i_1_1_frame_attachment.html", [
@@ -770,7 +780,9 @@ var hierarchy =
     [ "AZ::RHI::ImageSubresourceLayout", "struct_a_z_1_1_r_h_i_1_1_image_subresource_layout.html", null ],
     [ "AZ::RHI::ImageSubresourceRange", "struct_a_z_1_1_r_h_i_1_1_image_subresource_range.html", null ],
     [ "AZ::RHI::ImageUpdateRequest", "struct_a_z_1_1_r_h_i_1_1_image_update_request.html", null ],
-    [ "AZ::RHI::ImageViewDescriptor", "struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html", null ],
+    [ "AZ::RHI::ImageViewDescriptor", "struct_a_z_1_1_r_h_i_1_1_image_view_descriptor.html", [
+      [ "AZ::Vulkan::ImageViewDescriptor", "class_a_z_1_1_vulkan_1_1_image_view_descriptor.html", null ]
+    ] ],
     [ "AZ::RHI::IndexBufferView", "class_a_z_1_1_r_h_i_1_1_index_buffer_view.html", null ],
     [ "AZ::RHI::IndirectArguments", "struct_a_z_1_1_r_h_i_1_1_indirect_arguments.html", null ],
     [ "AZ::RHI::IndirectBufferLayout", "struct_a_z_1_1_r_h_i_1_1_indirect_buffer_layout.html", null ],
@@ -796,6 +808,7 @@ var hierarchy =
     [ "AZ::RHI::MemorySubAllocator< Traits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
     [ "AZ::RHI::MemorySubAllocator< MemoryLinearSubAllocatorTraits< MemoryType, MemoryPageAllocatorType > >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator_3_01_memory_linear_sub_allocator_traits_3_01_memory5c0c85a4ac76d3c7c3c5ac98e39fcc31.html", null ],
     [ "AZ::RHI::MemorySubAllocatorTraits< MemoryType, MemoryPageAllocatorType, AllocatorType >", "struct_a_z_1_1_r_h_i_1_1_memory_sub_allocator_traits.html", null ],
+    [ "AZ::RHI::MultiDevicePipelineLibraryDescriptor", "struct_a_z_1_1_r_h_i_1_1_multi_device_pipeline_library_descriptor.html", null ],
     [ "AZ::RHI::MultisampleState", "struct_a_z_1_1_r_h_i_1_1_multisample_state.html", null ],
     [ "AZ::RHI::NameIdReflectionMap< IndexType >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
     [ "AZ::RHI::NullMutex", "struct_a_z_1_1_r_h_i_1_1_null_mutex.html", null ],
@@ -996,8 +1009,6 @@ var hierarchy =
         [ "AZ::Vulkan::DescriptorSetAllocator", "class_a_z_1_1_vulkan_1_1_descriptor_set_allocator.html", null ],
         [ "AZ::Vulkan::DescriptorSetLayout", "class_a_z_1_1_vulkan_1_1_descriptor_set_layout.html", null ],
         [ "AZ::Vulkan::Framebuffer", "class_a_z_1_1_vulkan_1_1_framebuffer.html", null ],
-        [ "AZ::Vulkan::Memory", "class_a_z_1_1_vulkan_1_1_memory.html", null ],
-        [ "AZ::Vulkan::MemoryTypeAllocator< SubAllocator, View >", "class_a_z_1_1_vulkan_1_1_memory_type_allocator.html", null ],
         [ "AZ::Vulkan::NullDescriptorManager", "class_a_z_1_1_vulkan_1_1_null_descriptor_manager.html", null ],
         [ "AZ::Vulkan::Pipeline", "class_a_z_1_1_vulkan_1_1_pipeline.html", [
           [ "AZ::Vulkan::ComputePipeline", "class_a_z_1_1_vulkan_1_1_compute_pipeline.html", null ],
@@ -1010,12 +1021,22 @@ var hierarchy =
         [ "AZ::Vulkan::Sampler", "class_a_z_1_1_vulkan_1_1_sampler.html", null ],
         [ "AZ::Vulkan::Semaphore", "class_a_z_1_1_vulkan_1_1_semaphore.html", null ],
         [ "AZ::Vulkan::ShaderModule", "class_a_z_1_1_vulkan_1_1_shader_module.html", null ],
-        [ "AZ::Vulkan::MemoryTypeAllocator< RHI::MemorySubAllocator< BufferMemoryFreeListSubAllocatorTraits >, BufferMemoryView >", "class_a_z_1_1_vulkan_1_1_memory_type_allocator.html", null ],
-        [ "AZ::Vulkan::MemoryTypeAllocator< RHI::MemorySubAllocator< MemoryFreeListSubAllocatorTraits >, MemoryView >", "class_a_z_1_1_vulkan_1_1_memory_type_allocator.html", null ]
+        [ "AZ::Vulkan::VulkanMemoryAllocation", "class_a_z_1_1_vulkan_1_1_vulkan_memory_allocation.html", null ]
       ] ],
       [ "AZ::RHI::IndirectBufferWriter", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html", [
         [ "AZ::DX12::IndirectBufferWriter", "class_a_z_1_1_d_x12_1_1_indirect_buffer_writer.html", null ],
         [ "AZ::Vulkan::IndirectBufferWriter", "class_a_z_1_1_vulkan_1_1_indirect_buffer_writer.html", null ]
+      ] ],
+      [ "AZ::RHI::MultiDeviceObject", "class_a_z_1_1_r_h_i_1_1_multi_device_object.html", [
+        [ "AZ::RHI::MultiDeviceFence", "class_a_z_1_1_r_h_i_1_1_multi_device_fence.html", null ],
+        [ "AZ::RHI::MultiDevicePipelineLibrary", "class_a_z_1_1_r_h_i_1_1_multi_device_pipeline_library.html", null ],
+        [ "AZ::RHI::MultiDevicePipelineState", "class_a_z_1_1_r_h_i_1_1_multi_device_pipeline_state.html", null ],
+        [ "AZ::RHI::MultiDeviceResource", "class_a_z_1_1_r_h_i_1_1_multi_device_resource.html", [
+          [ "AZ::RHI::MultiDeviceQuery", "class_a_z_1_1_r_h_i_1_1_multi_device_query.html", null ]
+        ] ],
+        [ "AZ::RHI::MultiDeviceResourcePool", "class_a_z_1_1_r_h_i_1_1_multi_device_resource_pool.html", [
+          [ "AZ::RHI::MultiDeviceQueryPool", "class_a_z_1_1_r_h_i_1_1_multi_device_query_pool.html", null ]
+        ] ]
       ] ],
       [ "AZ::RHI::PhysicalDevice", "class_a_z_1_1_r_h_i_1_1_physical_device.html", [
         [ "AZ::DX12::PhysicalDevice", "class_a_z_1_1_d_x12_1_1_physical_device.html", null ],
@@ -1038,15 +1059,14 @@ var hierarchy =
     [ "AZ::RHI::ObjectCollector< Traits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
     [ "AZ::RHI::ObjectCollector< Traits >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_object_collector_1_1_descriptor.html", null ],
     [ "AZ::RHI::ObjectCollectorTraits", "struct_a_z_1_1_r_h_i_1_1_object_collector_traits.html", [
+      [ "AZ::DX12::D3d12maReleaseQueueTraits", "class_a_z_1_1_d_x12_1_1_d3d12ma_release_queue_traits.html", null ],
       [ "AZ::DX12::ReleaseQueueTraits", "class_a_z_1_1_d_x12_1_1_release_queue_traits.html", null ],
       [ "AZ::Metal::ReleaseQueueTraits", "class_a_z_1_1_metal_1_1_release_queue_traits.html", null ],
       [ "AZ::RHI::ObjectPoolTraits", "class_a_z_1_1_r_h_i_1_1_object_pool_traits.html", [
         [ "AZ::DX12::HeapAllocatorTraits", "class_a_z_1_1_d_x12_1_1_heap_allocator_traits.html", null ],
         [ "AZ::DX12::MemoryPageAllocatorTraits", "class_a_z_1_1_d_x12_1_1_memory_page_allocator_traits.html", null ],
         [ "AZ::Metal::CommandListPoolTraits", "struct_a_z_1_1_metal_1_1_command_list_pool_traits.html", null ],
-        [ "AZ::Metal::MemoryPageAllocatorTraits", "class_a_z_1_1_metal_1_1_memory_page_allocator_traits.html", null ],
-        [ "AZ::Vulkan::BufferMemoryPageAllocatorTraits", "class_a_z_1_1_vulkan_1_1_buffer_memory_page_allocator_traits.html", null ],
-        [ "AZ::Vulkan::MemoryPageAllocatorTraits", "class_a_z_1_1_vulkan_1_1_memory_page_allocator_traits.html", null ]
+        [ "AZ::Metal::MemoryPageAllocatorTraits", "class_a_z_1_1_metal_1_1_memory_page_allocator_traits.html", null ]
       ] ],
       [ "AZ::Vulkan::ReleaseQueueTraits", "class_a_z_1_1_vulkan_1_1_release_queue_traits.html", null ]
     ] ],
@@ -1101,12 +1121,9 @@ var hierarchy =
       ] ],
       [ "AZ::RHI::BufferPoolDescriptor", "class_a_z_1_1_r_h_i_1_1_buffer_pool_descriptor.html", [
         [ "AZ::DX12::BufferPoolDescriptor", "class_a_z_1_1_d_x12_1_1_buffer_pool_descriptor.html", null ],
-        [ "AZ::Metal::BufferPoolDescriptor", "class_a_z_1_1_metal_1_1_buffer_pool_descriptor.html", null ],
-        [ "AZ::Vulkan::BufferPoolDescriptor", "class_a_z_1_1_vulkan_1_1_buffer_pool_descriptor.html", null ]
+        [ "AZ::Metal::BufferPoolDescriptor", "class_a_z_1_1_metal_1_1_buffer_pool_descriptor.html", null ]
       ] ],
-      [ "AZ::RHI::ImagePoolDescriptor", "class_a_z_1_1_r_h_i_1_1_image_pool_descriptor.html", [
-        [ "AZ::Vulkan::ImagePoolDescriptor", "class_a_z_1_1_vulkan_1_1_image_pool_descriptor.html", null ]
-      ] ],
+      [ "AZ::RHI::ImagePoolDescriptor", "class_a_z_1_1_r_h_i_1_1_image_pool_descriptor.html", null ],
       [ "AZ::RHI::QueryPoolDescriptor", "class_a_z_1_1_r_h_i_1_1_query_pool_descriptor.html", null ],
       [ "AZ::RHI::ShaderResourceGroupPoolDescriptor", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_pool_descriptor.html", null ],
       [ "AZ::RHI::StreamingImagePoolDescriptor", "class_a_z_1_1_r_h_i_1_1_streaming_image_pool_descriptor.html", null ],
@@ -1126,11 +1143,15 @@ var hierarchy =
         [ "AZ::Vulkan::ImagePoolResolver", "class_a_z_1_1_vulkan_1_1_image_pool_resolver.html", null ]
       ] ]
     ] ],
+    [ "AZ::RHI::RHIMemoryStatisticsInterface", "class_a_z_1_1_r_h_i_1_1_r_h_i_memory_statistics_interface.html", [
+      [ "AZ::RHI::RHISystem", "class_a_z_1_1_r_h_i_1_1_r_h_i_system.html", null ]
+    ] ],
     [ "AZ::RHI::RHISystemInterface", "class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface.html", [
       [ "AZ::RHI::RHISystem", "class_a_z_1_1_r_h_i_1_1_r_h_i_system.html", null ]
     ] ],
-    [ "Handler", null, [
-      [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ]
+    [ "AZ::RHI::RHISystemNotificationBus::Handler", null, [
+      [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ],
+      [ "AZ::Vulkan::Device", "class_a_z_1_1_vulkan_1_1_device.html", null ]
     ] ],
     [ "AZ::RHI::SamplePosition", "struct_a_z_1_1_r_h_i_1_1_sample_position.html", null ],
     [ "AZ::RHI::SamplerState", "class_a_z_1_1_r_h_i_1_1_sampler_state.html", null ],
@@ -1150,16 +1171,14 @@ var hierarchy =
     ] ],
     [ "AZ::RHI::ScopeAttachmentUsageAndAccess", "struct_a_z_1_1_r_h_i_1_1_scope_attachment_usage_and_access.html", null ],
     [ "AZ::RHI::ScopeProducer", "class_a_z_1_1_r_h_i_1_1_scope_producer.html", [
-      [ "AZ::Render::DepthOfFieldCopyFocusDepthToCpuPass", "class_a_z_1_1_render_1_1_depth_of_field_copy_focus_depth_to_cpu_pass.html", null ],
-      [ "AZ::Render::RayTracingAccelerationStructurePass", "class_a_z_1_1_render_1_1_ray_tracing_acceleration_structure_pass.html", null ],
       [ "AZ::RHI::ScopeProducerEmpty", "class_a_z_1_1_r_h_i_1_1_scope_producer_empty.html", null ],
       [ "AZ::RHI::ScopeProducerFunction< UserData, PrepareFunction, CompileFunction, ExecuteFunction >", "class_a_z_1_1_r_h_i_1_1_scope_producer_function.html", null ],
       [ "AZ::RPI::ImageAttachmentCopy", "class_a_z_1_1_r_p_i_1_1_image_attachment_copy.html", null ],
       [ "AZ::RPI::ImageAttachmentPreviewPass", "class_a_z_1_1_r_p_i_1_1_image_attachment_preview_pass.html", null ],
       [ "AZ::RPI::RenderPass", "class_a_z_1_1_r_p_i_1_1_render_pass.html", [
-        [ "AZ::Render::ImGuiPass", "class_a_z_1_1_render_1_1_im_gui_pass.html", null ],
-        [ "AZ::Render::RayTracingPass", "class_a_z_1_1_render_1_1_ray_tracing_pass.html", null ],
         [ "AZ::RPI::ComputePass", "class_a_z_1_1_r_p_i_1_1_compute_pass.html", [
+          [ "AZ::RPI::DownsampleSinglePassLuminancePass", "class_a_z_1_1_r_p_i_1_1_downsample_single_pass_luminance_pass.html", null ],
+          [ "AZ::RPI::SubsurfaceScatteringPass", "class_a_z_1_1_r_p_i_1_1_subsurface_scattering_pass.html", null ],
           [ "AZ::Render::BakeAcesOutputTransformLutPass", "class_a_z_1_1_render_1_1_bake_aces_output_transform_lut_pass.html", null ],
           [ "AZ::Render::BlendColorGradingLutsPass", "class_a_z_1_1_render_1_1_blend_color_grading_luts_pass.html", null ],
           [ "AZ::Render::BloomBlurChildPass", "class_a_z_1_1_render_1_1_bloom_blur_child_pass.html", null ],
@@ -1181,12 +1200,11 @@ var hierarchy =
           [ "AZ::Render::NewDepthOfFieldTileReducePass", "class_a_z_1_1_render_1_1_new_depth_of_field_tile_reduce_pass.html", null ],
           [ "AZ::Render::SkinnedMeshComputePass", "class_a_z_1_1_render_1_1_skinned_mesh_compute_pass.html", null ],
           [ "AZ::Render::SsaoComputePass", "class_a_z_1_1_render_1_1_ssao_compute_pass.html", null ],
-          [ "AZ::Render::TaaPass", "class_a_z_1_1_render_1_1_taa_pass.html", null ],
-          [ "AZ::RPI::DownsampleSinglePassLuminancePass", "class_a_z_1_1_r_p_i_1_1_downsample_single_pass_luminance_pass.html", null ],
-          [ "AZ::RPI::SubsurfaceScatteringPass", "class_a_z_1_1_r_p_i_1_1_subsurface_scattering_pass.html", null ]
+          [ "AZ::Render::TaaPass", "class_a_z_1_1_render_1_1_taa_pass.html", null ]
         ] ],
         [ "AZ::RPI::CopyPass", "class_a_z_1_1_r_p_i_1_1_copy_pass.html", null ],
         [ "AZ::RPI::FullscreenTrianglePass", "class_a_z_1_1_r_p_i_1_1_fullscreen_triangle_pass.html", [
+          [ "AZ::RPI::MSAAResolveFullScreenPass", "class_a_z_1_1_r_p_i_1_1_m_s_a_a_resolve_full_screen_pass.html", null ],
           [ "AZ::Render::DeferredFogPass", "class_a_z_1_1_render_1_1_deferred_fog_pass.html", null ],
           [ "AZ::Render::DepthOfFieldBokehBlurPass", "class_a_z_1_1_render_1_1_depth_of_field_bokeh_blur_pass.html", null ],
           [ "AZ::Render::DepthOfFieldCompositePass", "class_a_z_1_1_render_1_1_depth_of_field_composite_pass.html", null ],
@@ -1206,6 +1224,7 @@ var hierarchy =
           [ "AZ::Render::ReflectionCopyFrameBufferPass", "class_a_z_1_1_render_1_1_reflection_copy_frame_buffer_pass.html", null ],
           [ "AZ::Render::ReflectionScreenSpaceBlurChildPass", "class_a_z_1_1_render_1_1_reflection_screen_space_blur_child_pass.html", null ],
           [ "AZ::Render::ReflectionScreenSpaceCompositePass", "class_a_z_1_1_render_1_1_reflection_screen_space_composite_pass.html", null ],
+          [ "AZ::Render::ReflectionScreenSpaceDownsampleDepthLinearChildPass", "class_a_z_1_1_render_1_1_reflection_screen_space_downsample_depth_linear_child_pass.html", null ],
           [ "AZ::Render::ReflectionScreenSpaceFilterPass", "class_a_z_1_1_render_1_1_reflection_screen_space_filter_pass.html", null ],
           [ "AZ::Render::ReflectionScreenSpaceTracePass", "class_a_z_1_1_render_1_1_reflection_screen_space_trace_pass.html", null ],
           [ "AZ::Render::SMAABasePass", "class_a_z_1_1_render_1_1_s_m_a_a_base_pass.html", [
@@ -1213,16 +1232,19 @@ var hierarchy =
             [ "AZ::Render::SMAAEdgeDetectionPass", "class_a_z_1_1_render_1_1_s_m_a_a_edge_detection_pass.html", null ],
             [ "AZ::Render::SMAANeighborhoodBlendingPass", "class_a_z_1_1_render_1_1_s_m_a_a_neighborhood_blending_pass.html", null ]
           ] ],
-          [ "AZ::Render::SplashScreenPass", "class_a_z_1_1_render_1_1_splash_screen_pass.html", null ],
-          [ "AZ::RPI::MSAAResolveFullScreenPass", "class_a_z_1_1_r_p_i_1_1_m_s_a_a_resolve_full_screen_pass.html", null ]
+          [ "AZ::Render::SplashScreenPass", "class_a_z_1_1_render_1_1_splash_screen_pass.html", null ]
         ] ],
         [ "AZ::RPI::MSAAResolvePass", "class_a_z_1_1_r_p_i_1_1_m_s_a_a_resolve_pass.html", null ],
         [ "AZ::RPI::RasterPass", "class_a_z_1_1_r_p_i_1_1_raster_pass.html", [
           [ "AZ::Render::CheckerboardPass", "class_a_z_1_1_render_1_1_checkerboard_pass.html", null ],
           [ "AZ::Render::ShadowmapPass", "class_a_z_1_1_render_1_1_shadowmap_pass.html", null ]
         ] ],
-        [ "AZ::RPI::SlowClearPass", "class_a_z_1_1_r_p_i_1_1_slow_clear_pass.html", null ]
-      ] ]
+        [ "AZ::RPI::SlowClearPass", "class_a_z_1_1_r_p_i_1_1_slow_clear_pass.html", null ],
+        [ "AZ::Render::ImGuiPass", "class_a_z_1_1_render_1_1_im_gui_pass.html", null ],
+        [ "AZ::Render::RayTracingPass", "class_a_z_1_1_render_1_1_ray_tracing_pass.html", null ]
+      ] ],
+      [ "AZ::Render::DepthOfFieldCopyFocusDepthToCpuPass", "class_a_z_1_1_render_1_1_depth_of_field_copy_focus_depth_to_cpu_pass.html", null ],
+      [ "AZ::Render::RayTracingAccelerationStructurePass", "class_a_z_1_1_render_1_1_ray_tracing_acceleration_structure_pass.html", null ]
     ] ],
     [ "AZ::RHI::ShaderBuildArguments", "struct_a_z_1_1_r_h_i_1_1_shader_build_arguments.html", null ],
     [ "AZ::RHI::ShaderBuildOptions", "struct_a_z_1_1_r_h_i_1_1_shader_build_options.html", null ],
@@ -1297,7 +1319,9 @@ var hierarchy =
     [ "AZ::RPI::AssetCreator< AssetDataT >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", null ],
     [ "AZ::RPI::AssetReference", "struct_a_z_1_1_r_p_i_1_1_asset_reference.html", null ],
     [ "AZ::RPI::AttachmentReadback", "class_a_z_1_1_r_p_i_1_1_attachment_readback.html", null ],
+    [ "AZ::RPI::AttachmentReadback::MipInfo", "struct_a_z_1_1_r_p_i_1_1_attachment_readback_1_1_mip_info.html", null ],
     [ "AZ::RPI::AttachmentReadback::ReadbackResult", "struct_a_z_1_1_r_p_i_1_1_attachment_readback_1_1_readback_result.html", null ],
+    [ "AZ::RPI::AttachmentReadback::ReadbackResult::MipDataBuffer", "struct_a_z_1_1_r_p_i_1_1_attachment_readback_1_1_readback_result_1_1_mip_data_buffer.html", null ],
     [ "AZ::RPI::AuxGeomDraw", "class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html", [
       [ "AZ::Render::AuxGeomDrawQueue", "class_a_z_1_1_render_1_1_aux_geom_draw_queue.html", null ]
     ] ],
@@ -1423,6 +1447,7 @@ var hierarchy =
     [ "AZ::RPI::MeshDrawPacket::ShaderData", "struct_a_z_1_1_r_p_i_1_1_mesh_draw_packet_1_1_shader_data.html", null ],
     [ "AZ::RPI::ModelAssetBuilderComponent::ProductMeshContent", "struct_a_z_1_1_r_p_i_1_1_model_asset_builder_component_1_1_product_mesh_content.html", null ],
     [ "AZ::RPI::ModelAssetBuilderComponent::SourceMeshContent", "struct_a_z_1_1_r_p_i_1_1_model_asset_builder_component_1_1_source_mesh_content.html", null ],
+    [ "AZ::RPI::ModelAssetHelpers", "class_a_z_1_1_r_p_i_1_1_model_asset_helpers.html", null ],
     [ "AZ::RPI::ModelKdTree", "class_a_z_1_1_r_p_i_1_1_model_kd_tree.html", null ],
     [ "AZ::RPI::ModelKdTree::TriangleIndices", "struct_a_z_1_1_r_p_i_1_1_model_kd_tree_1_1_triangle_indices.html", null ],
     [ "AZ::RPI::ModelKdTreeNode", "class_a_z_1_1_r_p_i_1_1_model_kd_tree_node.html", null ],
@@ -1447,13 +1472,10 @@ var hierarchy =
     [ "AZ::RPI::PassAttachmentSizeSource", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_size_source.html", null ],
     [ "AZ::RPI::PassConnection", "struct_a_z_1_1_r_p_i_1_1_pass_connection.html", null ],
     [ "AZ::RPI::PassData", "struct_a_z_1_1_r_p_i_1_1_pass_data.html", [
-      [ "AZ::Render::DisplayMapperPassData", "struct_a_z_1_1_render_1_1_display_mapper_pass_data.html", null ],
-      [ "AZ::Render::EsmShadowmapsPassData", "struct_a_z_1_1_render_1_1_esm_shadowmaps_pass_data.html", null ],
       [ "AZ::RPI::CopyPassData", "struct_a_z_1_1_r_p_i_1_1_copy_pass_data.html", null ],
       [ "AZ::RPI::DownsampleMipChainPassData", "struct_a_z_1_1_r_p_i_1_1_downsample_mip_chain_pass_data.html", null ],
       [ "AZ::RPI::EnvironmentCubeMapPassData", "struct_a_z_1_1_r_p_i_1_1_environment_cube_map_pass_data.html", null ],
       [ "AZ::RPI::RenderPassData", "struct_a_z_1_1_r_p_i_1_1_render_pass_data.html", [
-        [ "AZ::Render::RayTracingPassData", "struct_a_z_1_1_render_1_1_ray_tracing_pass_data.html", null ],
         [ "AZ::RPI::ComputePassData", "struct_a_z_1_1_r_p_i_1_1_compute_pass_data.html", [
           [ "AZ::Render::TaaPassData", "struct_a_z_1_1_render_1_1_taa_pass_data.html", null ]
         ] ],
@@ -1461,9 +1483,12 @@ var hierarchy =
         [ "AZ::RPI::RasterPassData", "struct_a_z_1_1_r_p_i_1_1_raster_pass_data.html", [
           [ "AZ::Render::ImGuiPassData", "struct_a_z_1_1_render_1_1_im_gui_pass_data.html", null ]
         ] ],
-        [ "AZ::RPI::SlowClearPassData", "struct_a_z_1_1_r_p_i_1_1_slow_clear_pass_data.html", null ]
+        [ "AZ::RPI::SlowClearPassData", "struct_a_z_1_1_r_p_i_1_1_slow_clear_pass_data.html", null ],
+        [ "AZ::Render::RayTracingPassData", "struct_a_z_1_1_render_1_1_ray_tracing_pass_data.html", null ]
       ] ],
-      [ "AZ::RPI::RenderToTexturePassData", "struct_a_z_1_1_r_p_i_1_1_render_to_texture_pass_data.html", null ]
+      [ "AZ::RPI::RenderToTexturePassData", "struct_a_z_1_1_r_p_i_1_1_render_to_texture_pass_data.html", null ],
+      [ "AZ::Render::DisplayMapperPassData", "struct_a_z_1_1_render_1_1_display_mapper_pass_data.html", null ],
+      [ "AZ::Render::EsmShadowmapsPassData", "struct_a_z_1_1_render_1_1_esm_shadowmaps_pass_data.html", null ]
     ] ],
     [ "AZ::RPI::PassDescriptor", "struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html", null ],
     [ "AZ::RPI::PassFactory", "class_a_z_1_1_r_p_i_1_1_pass_factory.html", null ],
@@ -1535,7 +1560,7 @@ var hierarchy =
     [ "AZ::RPI::ViewGroup", "class_a_z_1_1_r_p_i_1_1_view_group.html", null ],
     [ "AZ::RPI::ViewGroup::Descriptor", "struct_a_z_1_1_r_p_i_1_1_view_group_1_1_descriptor.html", null ],
     [ "AZ::RPI::ViewGroup::ViewData", "struct_a_z_1_1_r_p_i_1_1_view_group_1_1_view_data.html", null ],
-    [ "Handler", null, [
+    [ "AZ::RPI::ViewportContextIdNotificationBus::Handler", null, [
       [ "AtomToolsFramework::ViewportInteractionImpl", "class_atom_tools_framework_1_1_viewport_interaction_impl.html", null ]
     ] ],
     [ "AZ::RPI::ViewportContextNotifications", "class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html", null ],
@@ -1543,13 +1568,16 @@ var hierarchy =
       [ "AZ::RPI::ViewportContextManager", "class_a_z_1_1_r_p_i_1_1_viewport_context_manager.html", null ]
     ] ],
     [ "AZ::RPI::ViewportContextRequestsInterface::CreationParameters", "struct_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface_1_1_creation_parameters.html", null ],
+    [ "AZ::RPI::VisibleObjectContext", "class_a_z_1_1_r_p_i_1_1_visible_object_context.html", null ],
+    [ "AZ::RPI::VisibleObjectProperties", "struct_a_z_1_1_r_p_i_1_1_visible_object_properties.html", null ],
     [ "AZ::RPI::XRRenderingInterface", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html", null ],
-    [ "ICallContext", null, [
+    [ "AZ::SceneAPI::Events::ICallContext", null, [
       [ "AZ::RPI::MaterialAssetBuilderContext", "struct_a_z_1_1_r_p_i_1_1_material_asset_builder_context.html", null ],
       [ "AZ::RPI::ModelAssetBuilderContext", "struct_a_z_1_1_r_p_i_1_1_model_asset_builder_context.html", null ]
     ] ],
-    [ "ExportingComponent", null, [
-      [ "AZ::RPI::ModelAssetBuilderComponent", "class_a_z_1_1_r_p_i_1_1_model_asset_builder_component.html", null ]
+    [ "AZ::SceneAPI::SceneCore::ExportingComponent", null, [
+      [ "AZ::RPI::ModelAssetBuilderComponent", "class_a_z_1_1_r_p_i_1_1_model_asset_builder_component.html", null ],
+      [ "AZ::RPI::ModelExporterComponent", "class_a_z_1_1_r_p_i_1_1_model_exporter_component.html", null ]
     ] ],
     [ "AZ::Serialize::InstanceFactory< T, U, A >", "struct_a_z_1_1_serialize_1_1_instance_factory.html", null ],
     [ "AZ::ShaderBuilder::ArrayItem", "struct_a_z_1_1_shader_builder_1_1_array_item.html", null ],
@@ -1585,25 +1613,28 @@ var hierarchy =
     [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::iterator", "class_a_z_1_1_stable_dynamic_array_1_1iterator.html", [
       [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::const_iterator", "class_a_z_1_1_stable_dynamic_array_1_1const__iterator.html", null ]
     ] ],
+    [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::IteratorRange", "struct_a_z_1_1_stable_dynamic_array_1_1_iterator_range.html", null ],
     [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::Page", "struct_a_z_1_1_stable_dynamic_array_1_1_page.html", null ],
     [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::pageIterator", "class_a_z_1_1_stable_dynamic_array_1_1page_iterator.html", null ],
     [ "AZ::StableDynamicArrayHandle< ValueType >", "class_a_z_1_1_stable_dynamic_array_handle.html", null ],
     [ "AZ::StableDynamicArrayMetrics", "struct_a_z_1_1_stable_dynamic_array_metrics.html", null ],
     [ "AZ::StableDynamicArrayWeakHandle< ValueType >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
-    [ "Handler", null, [
+    [ "AZ::SystemTickBus::Handler", null, [
+      [ "AZ::RPI::RPISystem", "class_a_z_1_1_r_p_i_1_1_r_p_i_system.html", null ],
+      [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ],
+      [ "AZ::Render::FrameCaptureSystemComponent", "class_a_z_1_1_render_1_1_frame_capture_system_component.html", null ],
+      [ "AZ::Render::SkinnedMeshOutputStreamManager", "class_a_z_1_1_render_1_1_skinned_mesh_output_stream_manager.html", null ],
       [ "AtomToolsFramework::AtomToolsAssetBrowser", "class_atom_tools_framework_1_1_atom_tools_asset_browser.html", null ],
       [ "AtomToolsFramework::GraphDocument", "class_atom_tools_framework_1_1_graph_document.html", null ],
       [ "AtomToolsFramework::PreviewRendererCaptureState", "class_atom_tools_framework_1_1_preview_renderer_capture_state.html", null ],
       [ "AtomToolsFramework::PreviewRendererIdleState", "class_atom_tools_framework_1_1_preview_renderer_idle_state.html", null ],
       [ "AtomToolsFramework::PreviewRendererLoadState", "class_atom_tools_framework_1_1_preview_renderer_load_state.html", null ],
-      [ "AZ::Render::FrameCaptureSystemComponent", "class_a_z_1_1_render_1_1_frame_capture_system_component.html", null ],
-      [ "AZ::Render::SkinnedMeshOutputStreamManager", "class_a_z_1_1_render_1_1_skinned_mesh_output_stream_manager.html", null ],
-      [ "AZ::RPI::RPISystem", "class_a_z_1_1_r_p_i_1_1_r_p_i_system.html", null ],
-      [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ],
       [ "ImageProcessingAtom::ImagePreviewer", "class_image_processing_atom_1_1_image_previewer.html", null ],
       [ "MaterialEditor::MaterialDocument", "class_material_editor_1_1_material_document.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::TickBus::Handler", null, [
+      [ "AZ::Render::ProfilingCaptureSystemComponent", "class_a_z_1_1_render_1_1_profiling_capture_system_component.html", null ],
+      [ "AZ::Render::SplashScreenPass", "class_a_z_1_1_render_1_1_splash_screen_pass.html", null ],
       [ "AtomToolsFramework::EntityPreviewViewportSettingsSystem", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_system.html", null ],
       [ "AtomToolsFramework::PerformanceMonitorSystemComponent", "class_atom_tools_framework_1_1_performance_monitor_system_component.html", null ],
       [ "AtomToolsFramework::RenderViewportWidget", "class_atom_tools_framework_1_1_render_viewport_widget.html", [
@@ -1617,14 +1648,9 @@ var hierarchy =
         [ "AtomToolsFramework::RotateCameraBehavior", "class_atom_tools_framework_1_1_rotate_camera_behavior.html", null ],
         [ "AtomToolsFramework::RotateEnvironmentBehavior", "class_atom_tools_framework_1_1_rotate_environment_behavior.html", null ],
         [ "AtomToolsFramework::RotateObjectBehavior", "class_atom_tools_framework_1_1_rotate_object_behavior.html", null ]
-      ] ],
-      [ "AZ::Debug::ArcBallControllerComponent", "class_a_z_1_1_debug_1_1_arc_ball_controller_component.html", null ],
-      [ "AZ::Debug::NoClipControllerComponent", "class_a_z_1_1_debug_1_1_no_clip_controller_component.html", null ],
-      [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ],
-      [ "AZ::Render::ProfilingCaptureSystemComponent", "class_a_z_1_1_render_1_1_profiling_capture_system_component.html", null ],
-      [ "AZ::Render::SplashScreenPass", "class_a_z_1_1_render_1_1_splash_screen_pass.html", null ]
+      ] ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::UserSettingsOwnerRequestBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsApplication", "class_atom_tools_framework_1_1_atom_tools_application.html", [
         [ "AtomToolsFramework::AtomToolsDocumentApplication", "class_atom_tools_framework_1_1_atom_tools_document_application.html", [
           [ "MaterialCanvas::MaterialCanvasApplication", "class_material_canvas_1_1_material_canvas_application.html", null ],
@@ -1649,6 +1675,7 @@ var hierarchy =
     [ "AZ::Vulkan::CommandPool::Descriptor", "struct_a_z_1_1_vulkan_1_1_command_pool_1_1_descriptor.html", null ],
     [ "AZ::Vulkan::CommandQueueContext", "class_a_z_1_1_vulkan_1_1_command_queue_context.html", null ],
     [ "AZ::Vulkan::CommandQueueContext::Descriptor", "struct_a_z_1_1_vulkan_1_1_command_queue_context_1_1_descriptor.html", null ],
+    [ "AZ::Vulkan::CreateInfoContainer< T >", "struct_a_z_1_1_vulkan_1_1_create_info_container.html", null ],
     [ "AZ::Vulkan::DescriptorPool::Descriptor", "struct_a_z_1_1_vulkan_1_1_descriptor_pool_1_1_descriptor.html", null ],
     [ "AZ::Vulkan::DescriptorSet::Descriptor", "struct_a_z_1_1_vulkan_1_1_descriptor_set_1_1_descriptor.html", null ],
     [ "AZ::Vulkan::DescriptorSetAllocator::Descriptor", "struct_a_z_1_1_vulkan_1_1_descriptor_set_allocator_1_1_descriptor.html", null ],
@@ -1659,13 +1686,11 @@ var hierarchy =
       [ "AZ::Vulkan::FrameGraphExecuteGroupMergedHandler", "class_a_z_1_1_vulkan_1_1_frame_graph_execute_group_merged_handler.html", null ]
     ] ],
     [ "AZ::Vulkan::FrameGraphExecuterData", "struct_a_z_1_1_vulkan_1_1_frame_graph_executer_data.html", null ],
-    [ "AZ::Vulkan::FunctionLoader", "class_a_z_1_1_vulkan_1_1_function_loader.html", null ],
+    [ "AZ::Vulkan::ImageComponentMapping", "struct_a_z_1_1_vulkan_1_1_image_component_mapping.html", null ],
     [ "AZ::Vulkan::Instance", "class_a_z_1_1_vulkan_1_1_instance.html", null ],
     [ "AZ::Vulkan::Instance::Descriptor", "struct_a_z_1_1_vulkan_1_1_instance_1_1_descriptor.html", null ],
-    [ "AZ::Vulkan::Memory::Descriptor", "struct_a_z_1_1_vulkan_1_1_memory_1_1_descriptor.html", null ],
-    [ "AZ::Vulkan::MemoryPageFactory::Descriptor", "struct_a_z_1_1_vulkan_1_1_memory_page_factory_1_1_descriptor.html", [
-      [ "AZ::Vulkan::BufferMemoryPageFactory::Descriptor", "struct_a_z_1_1_vulkan_1_1_buffer_memory_page_factory_1_1_descriptor.html", null ]
-    ] ],
+    [ "AZ::Vulkan::LoaderContext", "class_a_z_1_1_vulkan_1_1_loader_context.html", null ],
+    [ "AZ::Vulkan::LoaderContext::Descriptor", "struct_a_z_1_1_vulkan_1_1_loader_context_1_1_descriptor.html", null ],
     [ "AZ::Vulkan::MemoryTypeView< T >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", null ],
     [ "AZ::Vulkan::Pipeline::Descriptor", "struct_a_z_1_1_vulkan_1_1_pipeline_1_1_descriptor.html", null ],
     [ "AZ::Vulkan::PipelineLayout::Descriptor", "struct_a_z_1_1_vulkan_1_1_pipeline_layout_1_1_descriptor.html", null ],
@@ -1689,24 +1714,26 @@ var hierarchy =
     [ "AZ::Vulkan::SwapChain::FrameContext", "struct_a_z_1_1_vulkan_1_1_swap_chain_1_1_frame_context.html", null ],
     [ "AZ::Vulkan::VkSystemAllocator", "class_a_z_1_1_vulkan_1_1_vk_system_allocator.html", null ],
     [ "AZ::Vulkan::WSISurface::Descriptor", "struct_a_z_1_1_vulkan_1_1_w_s_i_surface_1_1_descriptor.html", null ],
+    [ "AZ::Vulkan::XRDeviceDescriptor::GraphicsBinding", "struct_a_z_1_1_vulkan_1_1_x_r_device_descriptor_1_1_graphics_binding.html", null ],
     [ "AZ::Vulkan::XRSessionDescriptor::GraphicsBinding", "struct_a_z_1_1_vulkan_1_1_x_r_session_descriptor_1_1_graphics_binding.html", null ],
-    [ "Application", null, [
+    [ "AzFramework::Application", null, [
       [ "AtomToolsFramework::AtomToolsApplication", "class_atom_tools_framework_1_1_atom_tools_application.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::ApplicationLifecycleEvents::Bus::Handler", null, [
+      [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ],
       [ "AtomToolsFramework::PreviewRendererSystemComponent", "class_atom_tools_framework_1_1_preview_renderer_system_component.html", null ],
       [ "ImageProcessingAtom::Thumbnails::ImageThumbnailSystemComponent", "class_image_processing_atom_1_1_thumbnails_1_1_image_thumbnail_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::AssetCatalogEventBus::Handler", null, [
       [ "AtomToolsFramework::AssetSelectionComboBox", "class_atom_tools_framework_1_1_asset_selection_combo_box.html", null ],
       [ "AtomToolsFramework::AssetSelectionGrid", "class_atom_tools_framework_1_1_asset_selection_grid.html", null ],
       [ "AtomToolsFramework::EntityPreviewViewportSettingsSystem", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_system.html", null ],
       [ "ImageProcessingAtom::Thumbnails::ImageThumbnail", "class_image_processing_atom_1_1_thumbnails_1_1_image_thumbnail.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::ExclusiveFullScreenRequestBus::Handler", null, [
       [ "AZ::RPI::WindowContext", "class_a_z_1_1_r_p_i_1_1_window_context.html", null ]
     ] ],
-    [ "GenericAssetHandler", null, [
+    [ "AzFramework::GenericAssetHandler", null, [
       [ "AZ::RPI::AssetHandler< AnyAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
         [ "AZ::RPI::AnyAssetHandler", "class_a_z_1_1_r_p_i_1_1_any_asset_handler.html", null ]
       ] ],
@@ -1736,57 +1763,57 @@ var hierarchy =
       ] ],
       [ "AZ::RPI::AssetHandler< AssetDataT >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", null ]
     ] ],
-    [ "InputChannelEventListener", null, [
-      [ "AtomToolsFramework::RenderViewportWidget", "class_atom_tools_framework_1_1_render_viewport_widget.html", null ],
+    [ "AzFramework::InputChannelEventListener", null, [
       [ "AZ::Debug::ArcBallControllerComponent", "class_a_z_1_1_debug_1_1_arc_ball_controller_component.html", null ],
       [ "AZ::Debug::NoClipControllerComponent", "class_a_z_1_1_debug_1_1_no_clip_controller_component.html", null ],
-      [ "AZ::Render::ImGuiPass", "class_a_z_1_1_render_1_1_im_gui_pass.html", null ]
-    ] ],
-    [ "InputTextEventListener", null, [
-      [ "AZ::Render::ImGuiPass", "class_a_z_1_1_render_1_1_im_gui_pass.html", null ]
-    ] ],
-    [ "MultiViewportController", null, [
-      [ "AtomToolsFramework::ModularViewportCameraController", "class_atom_tools_framework_1_1_modular_viewport_camera_controller.html", null ]
-    ] ],
-    [ "MultiViewportControllerInstanceInterface", null, [
-      [ "AtomToolsFramework::ModularViewportCameraControllerInstance", "class_atom_tools_framework_1_1_modular_viewport_camera_controller_instance.html", null ]
-    ] ],
-    [ "SingleViewportController", null, [
-      [ "AtomToolsFramework::ViewportInputBehaviorController", "class_atom_tools_framework_1_1_viewport_input_behavior_controller.html", null ]
-    ] ],
-    [ "Handler", null, [
-      [ "AZ::RPI::ViewportContext", "class_a_z_1_1_r_p_i_1_1_viewport_context.html", null ]
-    ] ],
-    [ "Handler", null, [
-      [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ],
-      [ "AZ::Render::DisplayMapperPass", "class_a_z_1_1_render_1_1_display_mapper_pass.html", null ],
-      [ "AZ::RPI::SwapChainPass", "class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html", null ],
-      [ "AZ::RPI::ViewportContext", "class_a_z_1_1_r_p_i_1_1_viewport_context.html", null ],
-      [ "AZ::RPI::WindowContext", "class_a_z_1_1_r_p_i_1_1_window_context.html", null ]
-    ] ],
-    [ "Handler", null, [
+      [ "AZ::Render::ImGuiPass", "class_a_z_1_1_render_1_1_im_gui_pass.html", null ],
       [ "AtomToolsFramework::RenderViewportWidget", "class_atom_tools_framework_1_1_render_viewport_widget.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::InputTextEventListener", null, [
+      [ "AZ::Render::ImGuiPass", "class_a_z_1_1_render_1_1_im_gui_pass.html", null ]
+    ] ],
+    [ "AzFramework::MultiViewportController", null, [
+      [ "AtomToolsFramework::ModularViewportCameraController", "class_atom_tools_framework_1_1_modular_viewport_camera_controller.html", null ]
+    ] ],
+    [ "AzFramework::MultiViewportControllerInstanceInterface", null, [
+      [ "AtomToolsFramework::ModularViewportCameraControllerInstance", "class_atom_tools_framework_1_1_modular_viewport_camera_controller_instance.html", null ]
+    ] ],
+    [ "AzFramework::SingleViewportController", null, [
+      [ "AtomToolsFramework::ViewportInputBehaviorController", "class_atom_tools_framework_1_1_viewport_input_behavior_controller.html", null ]
+    ] ],
+    [ "AzFramework::ViewportRequestBus::Handler", null, [
+      [ "AZ::RPI::ViewportContext", "class_a_z_1_1_r_p_i_1_1_viewport_context.html", null ]
+    ] ],
+    [ "AzFramework::WindowNotificationBus::Handler", null, [
+      [ "AZ::RPI::SwapChainPass", "class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html", null ],
+      [ "AZ::RPI::ViewportContext", "class_a_z_1_1_r_p_i_1_1_viewport_context.html", null ],
+      [ "AZ::RPI::WindowContext", "class_a_z_1_1_r_p_i_1_1_window_context.html", null ],
       [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::WindowRequestBus::Handler", null, [
+      [ "AtomToolsFramework::RenderViewportWidget", "class_atom_tools_framework_1_1_render_viewport_widget.html", null ]
+    ] ],
+    [ "AzFramework::WindowSystemNotificationBus::Handler", null, [
       [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ]
     ] ],
-    [ "AzQtApplication", null, [
+    [ "AzFramework::WindowSystemRequestBus::Handler", null, [
+      [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ]
+    ] ],
+    [ "AzQtComponents::AzQtApplication", null, [
       [ "AtomToolsFramework::AtomToolsApplication", "class_atom_tools_framework_1_1_atom_tools_application.html", null ]
     ] ],
-    [ "DockMainWindow", null, [
+    [ "AzQtComponents::DockMainWindow", null, [
       [ "AtomToolsFramework::AtomToolsMainWindow", "class_atom_tools_framework_1_1_atom_tools_main_window.html", null ]
     ] ],
-    [ "ExtendedLabel", null, [
+    [ "AzQtComponents::ExtendedLabel", null, [
       [ "AtomToolsFramework::InspectorGroupHeaderWidget", "class_atom_tools_framework_1_1_inspector_group_header_widget.html", null ]
     ] ],
-    [ "StyledDialog", null, [
+    [ "AzQtComponents::StyledDialog", null, [
       [ "ImageProcessingAtomEditor::PresetInfoPopup", "class_image_processing_atom_editor_1_1_preset_info_popup.html", null ],
       [ "ImageProcessingAtomEditor::TexturePropertyEditor", "class_image_processing_atom_editor_1_1_texture_property_editor.html", null ]
     ] ],
     [ "AZStd::hash< T >", "struct_a_z_std_1_1hash.html", null ],
+    [ "AZStd::hash< AZ::Render::MeshInstanceGroupKey >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_render_1_1_mesh_instance_group_key_01_4.html", null ],
     [ "AZStd::hash< AZ::RHI::Handle< HandleType, NamespaceType > >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_r_h_i_1_1_handle_3_01_handle_type_00_01_namespace_type_01_4_01_4.html", null ],
     [ "AZStd::hash< AZ::RHI::ShaderSemantic >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_r_h_i_1_1_shader_semantic_01_4.html", null ],
     [ "AZStd::hash< AZ::RPI::MaterialPipelineSourceData::ShaderTemplate >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_r_p_i_1_1_material_pipeline_source_data_1_1_shader_template_01_4.html", null ],
@@ -1800,11 +1827,8 @@ var hierarchy =
     [ "AZStd::hash< ImageResourceViewData >", "struct_a_z_std_1_1hash_3_01_image_resource_view_data_01_4.html", null ],
     [ "AZStd::hash< ResourceBindingData >", "struct_a_z_std_1_1hash_3_01_resource_binding_data_01_4.html", null ],
     [ "AZStd::hash< VkSubpassDependency >", "struct_a_z_std_1_1hash_3_01_vk_subpass_dependency_01_4.html", null ],
-    [ "intrusive_base", null, [
-      [ "AZ::Render::MorphTargetInputBuffers", "class_a_z_1_1_render_1_1_morph_target_input_buffers.html", null ],
-      [ "AZ::Render::SkinnedMeshInputBuffers", "class_a_z_1_1_render_1_1_skinned_mesh_input_buffers.html", null ],
-      [ "AZ::Render::SkinnedMeshInstance", "class_a_z_1_1_render_1_1_skinned_mesh_instance.html", null ],
-      [ "AZ::Render::SkinnedMeshOutputStreamAllocation", "class_a_z_1_1_render_1_1_skinned_mesh_output_stream_allocation.html", null ],
+    [ "AZStd::intrusive_base", null, [
+      [ "AZ::RHI::TagRegistry< IndexType, sizeof(IndexType) *8 >", "class_a_z_1_1_r_h_i_1_1_tag_registry.html", null ],
       [ "AZ::RHI::ConstantsLayout", "class_a_z_1_1_r_h_i_1_1_constants_layout.html", null ],
       [ "AZ::RHI::DrawPacket", "class_a_z_1_1_r_h_i_1_1_draw_packet.html", null ],
       [ "AZ::RHI::PipelineLayoutDescriptor", "class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html", [
@@ -1831,9 +1855,7 @@ var hierarchy =
       [ "AZ::RHI::XRDeviceDescriptor", "class_a_z_1_1_r_h_i_1_1_x_r_device_descriptor.html", [
         [ "AZ::Vulkan::XRDeviceDescriptor", "class_a_z_1_1_vulkan_1_1_x_r_device_descriptor.html", null ]
       ] ],
-      [ "AZ::RHI::XRInstanceDescriptor", "class_a_z_1_1_r_h_i_1_1_x_r_instance_descriptor.html", [
-        [ "AZ::Vulkan::XRInstanceDescriptor", "class_a_z_1_1_vulkan_1_1_x_r_instance_descriptor.html", null ]
-      ] ],
+      [ "AZ::RHI::XRInstanceDescriptor", "class_a_z_1_1_r_h_i_1_1_x_r_instance_descriptor.html", null ],
       [ "AZ::RHI::XRPhysicalDeviceDescriptor", "class_a_z_1_1_r_h_i_1_1_x_r_physical_device_descriptor.html", [
         [ "AZ::Vulkan::XRPhysicalDeviceDescriptor", "class_a_z_1_1_vulkan_1_1_x_r_physical_device_descriptor.html", null ]
       ] ],
@@ -1846,26 +1868,28 @@ var hierarchy =
       [ "AZ::RPI::DynamicBuffer", "class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html", null ],
       [ "AZ::RPI::DynamicDrawContext", "class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html", null ],
       [ "AZ::RPI::MaterialFunctor", "class_a_z_1_1_r_p_i_1_1_material_functor.html", [
+        [ "AZ::RPI::LuaMaterialFunctor", "class_a_z_1_1_r_p_i_1_1_lua_material_functor.html", null ],
         [ "AZ::Render::ConvertEmissiveUnitFunctor", "class_a_z_1_1_render_1_1_convert_emissive_unit_functor.html", null ],
         [ "AZ::Render::SubsurfaceTransmissionParameterFunctor", "class_a_z_1_1_render_1_1_subsurface_transmission_parameter_functor.html", null ],
         [ "AZ::Render::Transform2DFunctor", "class_a_z_1_1_render_1_1_transform2_d_functor.html", null ],
-        [ "AZ::Render::UseTextureFunctor", "class_a_z_1_1_render_1_1_use_texture_functor.html", null ],
-        [ "AZ::RPI::LuaMaterialFunctor", "class_a_z_1_1_r_p_i_1_1_lua_material_functor.html", null ]
+        [ "AZ::Render::UseTextureFunctor", "class_a_z_1_1_render_1_1_use_texture_functor.html", null ]
       ] ],
       [ "AZ::RPI::MaterialFunctorSourceData", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data.html", [
+        [ "AZ::RPI::LuaMaterialFunctorSourceData", "class_a_z_1_1_r_p_i_1_1_lua_material_functor_source_data.html", null ],
         [ "AZ::Render::ConvertEmissiveUnitFunctorSourceData", "class_a_z_1_1_render_1_1_convert_emissive_unit_functor_source_data.html", null ],
         [ "AZ::Render::SubsurfaceTransmissionParameterFunctorSourceData", "class_a_z_1_1_render_1_1_subsurface_transmission_parameter_functor_source_data.html", null ],
         [ "AZ::Render::Transform2DFunctorSourceData", "class_a_z_1_1_render_1_1_transform2_d_functor_source_data.html", null ],
-        [ "AZ::Render::UseTextureFunctorSourceData", "class_a_z_1_1_render_1_1_use_texture_functor_source_data.html", null ],
-        [ "AZ::RPI::LuaMaterialFunctorSourceData", "class_a_z_1_1_r_p_i_1_1_lua_material_functor_source_data.html", null ]
+        [ "AZ::Render::UseTextureFunctorSourceData", "class_a_z_1_1_render_1_1_use_texture_functor_source_data.html", null ]
       ] ],
       [ "AZ::RPI::MaterialFunctorSourceDataHolder", "class_a_z_1_1_r_p_i_1_1_material_functor_source_data_holder.html", null ],
       [ "AZ::RPI::MaterialPropertiesLayout", "class_a_z_1_1_r_p_i_1_1_material_properties_layout.html", null ],
       [ "AZ::RPI::Pass", "class_a_z_1_1_r_p_i_1_1_pass.html", [
-        [ "AZ::Render::DepthOfFieldCopyFocusDepthToCpuPass", "class_a_z_1_1_render_1_1_depth_of_field_copy_focus_depth_to_cpu_pass.html", null ],
-        [ "AZ::Render::RayTracingAccelerationStructurePass", "class_a_z_1_1_render_1_1_ray_tracing_acceleration_structure_pass.html", null ],
         [ "AZ::RPI::ImageAttachmentPreviewPass", "class_a_z_1_1_r_p_i_1_1_image_attachment_preview_pass.html", null ],
         [ "AZ::RPI::ParentPass", "class_a_z_1_1_r_p_i_1_1_parent_pass.html", [
+          [ "AZ::RPI::DownsampleMipChainPass", "class_a_z_1_1_r_p_i_1_1_downsample_mip_chain_pass.html", null ],
+          [ "AZ::RPI::EnvironmentCubeMapPass", "class_a_z_1_1_r_p_i_1_1_environment_cube_map_pass.html", null ],
+          [ "AZ::RPI::RenderToTexturePass", "class_a_z_1_1_r_p_i_1_1_render_to_texture_pass.html", null ],
+          [ "AZ::RPI::SwapChainPass", "class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html", null ],
           [ "AZ::Render::BloomBlurPass", "class_a_z_1_1_render_1_1_bloom_blur_pass.html", null ],
           [ "AZ::Render::BloomCompositePass", "class_a_z_1_1_render_1_1_bloom_composite_pass.html", null ],
           [ "AZ::Render::BloomParentPass", "class_a_z_1_1_render_1_1_bloom_parent_pass.html", null ],
@@ -1878,111 +1902,114 @@ var hierarchy =
           [ "AZ::Render::NewDepthOfFieldParentPass", "class_a_z_1_1_render_1_1_new_depth_of_field_parent_pass.html", null ],
           [ "AZ::Render::ProjectedShadowmapsPass", "class_a_z_1_1_render_1_1_projected_shadowmaps_pass.html", null ],
           [ "AZ::Render::ReflectionScreenSpaceBlurPass", "class_a_z_1_1_render_1_1_reflection_screen_space_blur_pass.html", null ],
+          [ "AZ::Render::ReflectionScreenSpaceDownsampleDepthLinearPass", "class_a_z_1_1_render_1_1_reflection_screen_space_downsample_depth_linear_pass.html", null ],
           [ "AZ::Render::ReflectionScreenSpacePass", "class_a_z_1_1_render_1_1_reflection_screen_space_pass.html", null ],
           [ "AZ::Render::SkyAtmosphereParentPass", "class_a_z_1_1_render_1_1_sky_atmosphere_parent_pass.html", null ],
           [ "AZ::Render::SkyAtmospherePass", "class_a_z_1_1_render_1_1_sky_atmosphere_pass.html", null ],
-          [ "AZ::Render::SsaoParentPass", "class_a_z_1_1_render_1_1_ssao_parent_pass.html", null ],
-          [ "AZ::RPI::DownsampleMipChainPass", "class_a_z_1_1_r_p_i_1_1_downsample_mip_chain_pass.html", null ],
-          [ "AZ::RPI::EnvironmentCubeMapPass", "class_a_z_1_1_r_p_i_1_1_environment_cube_map_pass.html", null ],
-          [ "AZ::RPI::RenderToTexturePass", "class_a_z_1_1_r_p_i_1_1_render_to_texture_pass.html", null ],
-          [ "AZ::RPI::SwapChainPass", "class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html", null ]
+          [ "AZ::Render::SsaoParentPass", "class_a_z_1_1_render_1_1_ssao_parent_pass.html", null ]
         ] ],
         [ "AZ::RPI::RenderPass", "class_a_z_1_1_r_p_i_1_1_render_pass.html", null ],
-        [ "AZ::RPI::SelectorPass", "class_a_z_1_1_r_p_i_1_1_selector_pass.html", null ]
+        [ "AZ::RPI::SelectorPass", "class_a_z_1_1_r_p_i_1_1_selector_pass.html", null ],
+        [ "AZ::Render::DepthOfFieldCopyFocusDepthToCpuPass", "class_a_z_1_1_render_1_1_depth_of_field_copy_focus_depth_to_cpu_pass.html", null ],
+        [ "AZ::Render::RayTracingAccelerationStructurePass", "class_a_z_1_1_render_1_1_ray_tracing_acceleration_structure_pass.html", null ]
       ] ],
       [ "AZ::RPI::PipelineStateForDraw", "class_a_z_1_1_r_p_i_1_1_pipeline_state_for_draw.html", null ],
       [ "AZ::RPI::ShaderOptionGroupLayout", "class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html", null ],
       [ "AZ::RPI::StreamingImageContext", "class_a_z_1_1_r_p_i_1_1_streaming_image_context.html", null ],
-      [ "AZ::RHI::TagRegistry< IndexType, sizeof(IndexType)*8 >", "class_a_z_1_1_r_h_i_1_1_tag_registry.html", null ]
+      [ "AZ::Render::MorphTargetInputBuffers", "class_a_z_1_1_render_1_1_morph_target_input_buffers.html", null ],
+      [ "AZ::Render::SkinnedMeshInputBuffers", "class_a_z_1_1_render_1_1_skinned_mesh_input_buffers.html", null ],
+      [ "AZ::Render::SkinnedMeshInstance", "class_a_z_1_1_render_1_1_skinned_mesh_instance.html", null ],
+      [ "AZ::Render::SkinnedMeshOutputStreamAllocation", "class_a_z_1_1_render_1_1_skinned_mesh_output_stream_allocation.html", null ]
     ] ],
-    [ "intrusive_list_node", null, [
+    [ "AZStd::intrusive_list_node", null, [
       [ "AZ::RPI::StreamingImageContext", "class_a_z_1_1_r_p_i_1_1_streaming_image_context.html", null ]
     ] ],
-    [ "intrusive_refcount", null, [
+    [ "AZStd::intrusive_refcount", null, [
       [ "AZ::RPI::PassAttachment", "struct_a_z_1_1_r_p_i_1_1_pass_attachment.html", null ],
       [ "AZ::RPI::Query", "class_a_z_1_1_r_p_i_1_1_query.html", null ]
     ] ],
     [ "AZStd::shared_ptr< T >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "Handler", null, [
-      [ "AZ::RHI::ThreadLocalContext< Storage >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
-      [ "AZ::RHI::ThreadLocalContext< AZ::RHI::MemorySubAllocator >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+    [ "AZStd::ThreadEventBus::Handler", null, [
       [ "AZ::RHI::ThreadLocalContext< AZStd::lru_cache< uint64_t, D3D12_RESOURCE_ALLOCATION_INFO > >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
-      [ "AZ::RHI::ThreadLocalContext< AZStd::lru_cache< uint64_t, VkMemoryRequirements > >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< AZ::RHI::MemorySubAllocator >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
       [ "AZ::RHI::ThreadLocalContext< DrawListsByTag >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
-      [ "AZ::RHI::ThreadLocalContext< ThreadLibrarySet >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ]
+      [ "AZ::RHI::ThreadLocalContext< ThreadLibrarySet >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< VisibleObjectList >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< AZStd::lru_cache< uint64_t, VkMemoryRequirements > >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< Storage >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::AssetBrowser::AssetBrowserInteractionNotificationBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsAssetBrowserInteractions", "class_atom_tools_framework_1_1_atom_tools_asset_browser_interactions.html", null ],
       [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ]
     ] ],
-    [ "Previewer", null, [
+    [ "AzToolsFramework::AssetBrowser::Previewer", null, [
       [ "ImageProcessingAtom::ImagePreviewer", "class_image_processing_atom_1_1_image_previewer.html", null ]
     ] ],
-    [ "PreviewerFactory", null, [
+    [ "AzToolsFramework::AssetBrowser::PreviewerFactory", null, [
       [ "ImageProcessingAtom::ImagePreviewerFactory", "class_image_processing_atom_1_1_image_previewer_factory.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::AssetBrowser::PreviewerRequestBus::Handler", null, [
       [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::AssetDatabase::AssetDatabaseRequestsBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsApplication", "class_atom_tools_framework_1_1_atom_tools_application.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::AssetSystemBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsDocument", "class_atom_tools_framework_1_1_atom_tools_document.html", null ]
     ] ],
-    [ "EditorComponentAdapter", null, [
+    [ "AzToolsFramework::Components::EditorComponentAdapter", null, [
       [ "AZ::Render::EditorRenderComponentAdapter< TController, TRuntimeComponent, TConfiguration >", "class_a_z_1_1_render_1_1_editor_render_component_adapter.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorEntityVisibilityNotificationBus::Handler", null, [
       [ "AZ::Render::EditorRenderComponentAdapter< TController, TRuntimeComponent, TConfiguration >", "class_a_z_1_1_render_1_1_editor_render_component_adapter.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorPythonConsoleNotificationBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsApplication", "class_atom_tools_framework_1_1_atom_tools_application.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorWindowRequestBus::Handler", null, [
       [ "MaterialCanvas::MaterialCanvasApplication", "class_material_canvas_1_1_material_canvas_application.html", null ],
       [ "MaterialEditor::MaterialEditorApplication", "class_material_editor_1_1_material_editor_application.html", null ],
       [ "PassCanvas::PassCanvasApplication", "class_pass_canvas_1_1_pass_canvas_application.html", null ],
       [ "ShaderManagementConsole::ShaderManagementConsoleApplication", "class_shader_management_console_1_1_shader_management_console_application.html", null ]
     ] ],
-    [ "PythonLoader", null, [
+    [ "AzToolsFramework::EmbeddedPython::PythonLoader", null, [
       [ "AtomToolsFramework::AtomToolsFrameworkModule", "class_atom_tools_framework_1_1_atom_tools_framework_module.html", null ]
     ] ],
-    [ "IPropertyEditorNotify", null, [
+    [ "AzToolsFramework::IPropertyEditorNotify", null, [
       [ "AtomToolsFramework::AtomToolsDocumentInspector", "class_atom_tools_framework_1_1_atom_tools_document_inspector.html", null ],
       [ "AtomToolsFramework::EntityPreviewViewportSettingsInspector", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_inspector.html", null ],
       [ "ImageProcessingAtomEditor::MipmapSettingWidget", "class_image_processing_atom_editor_1_1_mipmap_setting_widget.html", null ]
     ] ],
-    [ "PropertyHandler", null, [
-      [ "AtomToolsFramework::PropertyMultilineStringDialogHandler", "class_atom_tools_framework_1_1_property_multiline_string_dialog_handler.html", null ],
+    [ "AzToolsFramework::PropertyHandler", null, [
       [ "AtomToolsFramework::PropertyMultiStringSelectDelimitedHandler", "class_atom_tools_framework_1_1_property_multi_string_select_delimited_handler.html", null ],
       [ "AtomToolsFramework::PropertyMultiStringSelectSetHandler", "class_atom_tools_framework_1_1_property_multi_string_select_set_handler.html", null ],
       [ "AtomToolsFramework::PropertyMultiStringSelectVectorHandler", "class_atom_tools_framework_1_1_property_multi_string_select_vector_handler.html", null ],
+      [ "AtomToolsFramework::PropertyMultilineStringDialogHandler", "class_atom_tools_framework_1_1_property_multiline_string_dialog_handler.html", null ],
       [ "AtomToolsFramework::PropertyStringBrowseEditHandler", "class_atom_tools_framework_1_1_property_string_browse_edit_handler.html", null ],
       [ "AtomToolsFramework::PropertyStringFilePathHandler", "class_atom_tools_framework_1_1_property_string_file_path_handler.html", null ]
     ] ],
-    [ "Thumbnail", null, [
+    [ "AzToolsFramework::Thumbnailer::Thumbnail", null, [
       [ "ImageProcessingAtom::Thumbnails::ImageThumbnail", "class_image_processing_atom_1_1_thumbnails_1_1_image_thumbnail.html", null ]
     ] ],
-    [ "ThumbnailCache", null, [
+    [ "AzToolsFramework::Thumbnailer::ThumbnailCache", null, [
       [ "ImageProcessingAtom::Thumbnails::ImageThumbnailCache", "class_image_processing_atom_1_1_thumbnails_1_1_image_thumbnail_cache.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::Thumbnailer::ThumbnailerRendererNotificationBus::Handler", null, [
       [ "ImageProcessingAtom::Thumbnails::ImageThumbnail", "class_image_processing_atom_1_1_thumbnails_1_1_image_thumbnail.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::Thumbnailer::ThumbnailerRendererRequestBus::Handler", null, [
       [ "ImageProcessingAtom::Thumbnails::ImageThumbnailSystemComponent", "class_image_processing_atom_1_1_thumbnails_1_1_image_thumbnail_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::ViewportInteraction::ViewportInteractionNotificationBus::Handler", null, [
       [ "AtomToolsFramework::ModularViewportCameraControllerInstance", "class_atom_tools_framework_1_1_modular_viewport_camera_controller_instance.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::ViewportInteraction::ViewportInteractionRequestBus::Handler", null, [
       [ "AtomToolsFramework::ViewportInteractionImpl", "class_atom_tools_framework_1_1_viewport_interaction_impl.html", null ]
     ] ],
-    [ "ViewportInteractionRequests", null, [
+    [ "AzToolsFramework::ViewportInteraction::ViewportInteractionRequests", null, [
       [ "AtomToolsFramework::RenderViewportWidget", "class_atom_tools_framework_1_1_render_viewport_widget.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::ViewportInteraction::ViewportMouseCursorRequestBus::Handler", null, [
       [ "AtomToolsFramework::RenderViewportWidget", "class_atom_tools_framework_1_1_render_viewport_widget.html", null ]
     ] ],
     [ "BaseJsonSerializer", null, [
@@ -1996,58 +2023,78 @@ var hierarchy =
     ] ],
     [ "AZ::RHI::BufferProperty< QueueId >", "class_a_z_1_1_r_h_i_1_1_buffer_property.html", null ],
     [ "BufferResourceViewData", "struct_buffer_resource_view_data.html", null ],
-    [ "Handler", null, [
+    [ "Camera::CameraRequestBus::Handler", null, [
       [ "AZ::Debug::CameraComponent", "class_a_z_1_1_debug_1_1_camera_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "CameraControllerRequestBus::Handler", null, [
       [ "AZ::Debug::CameraControllerComponent", "class_a_z_1_1_debug_1_1_camera_controller_component.html", null ]
     ] ],
     [ "Color", null, [
       [ "AZ::Render::PhotometricColor< T >", "class_a_z_1_1_render_1_1_photometric_color.html", null ]
     ] ],
-    [ "Component", null, [
-      [ "AZ::Render::SkinnedMeshSystemComponent", "class_a_z_1_1_render_1_1_skinned_mesh_system_component.html", null ]
-    ] ],
-    [ "ComponentBus", null, [
-      [ "AZ::Debug::CameraControllerNotifications", "class_a_z_1_1_debug_1_1_camera_controller_notifications.html", null ],
-      [ "AZ::Render::SkyBoxFogRequests", "class_a_z_1_1_render_1_1_sky_box_fog_requests.html", null ]
-    ] ],
     [ "ComponentConfig", null, [
       [ "AZ::Debug::CameraComponentConfig", "class_a_z_1_1_debug_1_1_camera_component_config.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "D3D12MA::ALLOCATION_CALLBACKS", "struct_d3_d12_m_a_1_1_a_l_l_o_c_a_t_i_o_n___c_a_l_l_b_a_c_k_s.html", null ],
+    [ "D3D12MA::ALLOCATION_DESC", "struct_d3_d12_m_a_1_1_a_l_l_o_c_a_t_i_o_n___d_e_s_c.html", null ],
+    [ "D3D12MA::ALLOCATOR_DESC", "struct_d3_d12_m_a_1_1_a_l_l_o_c_a_t_o_r___d_e_s_c.html", null ],
+    [ "D3D12MA::Budget", "struct_d3_d12_m_a_1_1_budget.html", null ],
+    [ "D3D12MA::DEFRAGMENTATION_DESC", "struct_d3_d12_m_a_1_1_d_e_f_r_a_g_m_e_n_t_a_t_i_o_n___d_e_s_c.html", null ],
+    [ "D3D12MA::DEFRAGMENTATION_MOVE", "struct_d3_d12_m_a_1_1_d_e_f_r_a_g_m_e_n_t_a_t_i_o_n___m_o_v_e.html", null ],
+    [ "D3D12MA::DEFRAGMENTATION_PASS_MOVE_INFO", "struct_d3_d12_m_a_1_1_d_e_f_r_a_g_m_e_n_t_a_t_i_o_n___p_a_s_s___m_o_v_e___i_n_f_o.html", null ],
+    [ "D3D12MA::DEFRAGMENTATION_STATS", "struct_d3_d12_m_a_1_1_d_e_f_r_a_g_m_e_n_t_a_t_i_o_n___s_t_a_t_s.html", null ],
+    [ "D3D12MA::DetailedStatistics", "struct_d3_d12_m_a_1_1_detailed_statistics.html", null ],
+    [ "D3D12MA::POOL_DESC", "struct_d3_d12_m_a_1_1_p_o_o_l___d_e_s_c.html", null ],
+    [ "D3D12MA::Statistics", "struct_d3_d12_m_a_1_1_statistics.html", null ],
+    [ "D3D12MA::TotalStatistics", "struct_d3_d12_m_a_1_1_total_statistics.html", null ],
+    [ "D3D12MA::VIRTUAL_ALLOCATION_DESC", "struct_d3_d12_m_a_1_1_v_i_r_t_u_a_l___a_l_l_o_c_a_t_i_o_n___d_e_s_c.html", null ],
+    [ "D3D12MA::VIRTUAL_ALLOCATION_INFO", "struct_d3_d12_m_a_1_1_v_i_r_t_u_a_l___a_l_l_o_c_a_t_i_o_n___i_n_f_o.html", null ],
+    [ "D3D12MA::VIRTUAL_BLOCK_DESC", "struct_d3_d12_m_a_1_1_v_i_r_t_u_a_l___b_l_o_c_k___d_e_s_c.html", null ],
+    [ "D3D12MA::VirtualAllocation", "struct_d3_d12_m_a_1_1_virtual_allocation.html", null ],
+    [ "Data::AssetBus::Handler", null, [
       [ "AZ::RPI::ImageAttachmentPreviewPass", "class_a_z_1_1_r_p_i_1_1_image_attachment_preview_pass.html", null ],
-      [ "AZ::RPI::Material", "class_a_z_1_1_r_p_i_1_1_material.html", null ]
+      [ "AZ::RPI::Material", "class_a_z_1_1_r_p_i_1_1_material.html", null ],
+      [ "AZ::RPI::Shader", "class_a_z_1_1_r_p_i_1_1_shader.html", null ]
     ] ],
-    [ "MultiHandler", null, [
-      [ "AZ::RPI::PassLibrary", "class_a_z_1_1_r_p_i_1_1_pass_library.html", null ]
-    ] ],
-    [ "AssetData", null, [
-      [ "AZ::RPI::BufferAsset", "class_a_z_1_1_r_p_i_1_1_buffer_asset.html", null ],
-      [ "AZ::RPI::ImageMipChainAsset", "class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset.html", null ]
-    ] ],
-    [ "AssetHandler", null, [
+    [ "Data::AssetHandler", null, [
       [ "AZ::RPI::BuiltInAssetHandler", "class_a_z_1_1_r_p_i_1_1_built_in_asset_handler.html", null ]
     ] ],
-    [ "InstanceData", null, [
-      [ "AZ::RPI::StreamingImagePool", "class_a_z_1_1_r_p_i_1_1_streaming_image_pool.html", null ]
+    [ "Data::InstanceData", null, [
+      [ "AZ::RPI::AttachmentImagePool", "class_a_z_1_1_r_p_i_1_1_attachment_image_pool.html", null ],
+      [ "AZ::RPI::Buffer", "class_a_z_1_1_r_p_i_1_1_buffer.html", null ],
+      [ "AZ::RPI::BufferPool", "class_a_z_1_1_r_p_i_1_1_buffer_pool.html", null ],
+      [ "AZ::RPI::Image", "class_a_z_1_1_r_p_i_1_1_image.html", [
+        [ "AZ::RPI::AttachmentImage", "class_a_z_1_1_r_p_i_1_1_attachment_image.html", null ],
+        [ "AZ::RPI::StreamingImage", "class_a_z_1_1_r_p_i_1_1_streaming_image.html", null ]
+      ] ],
+      [ "AZ::RPI::Material", "class_a_z_1_1_r_p_i_1_1_material.html", null ],
+      [ "AZ::RPI::Model", "class_a_z_1_1_r_p_i_1_1_model.html", null ],
+      [ "AZ::RPI::ModelLod", "class_a_z_1_1_r_p_i_1_1_model_lod.html", null ],
+      [ "AZ::RPI::Shader", "class_a_z_1_1_r_p_i_1_1_shader.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "DynamicNodeManagerRequestBus::Handler", null, [
       [ "AtomToolsFramework::DynamicNodeManager", "class_atom_tools_framework_1_1_dynamic_node_manager.html", null ]
     ] ],
     [ "EBusConnectionPolicy", null, [
+      [ "AZ::RPI::SceneNotification::SceneConnectionPolicy< Bus >", "struct_a_z_1_1_r_p_i_1_1_scene_notification_1_1_scene_connection_policy.html", null ],
       [ "AZ::Render::Bootstrap::DefaultWindowNotification::DefaultWindowConnectionPolicy< Bus >", "struct_a_z_1_1_render_1_1_bootstrap_1_1_default_window_notification_1_1_default_window_connection_policy.html", null ],
-      [ "AZ::Render::Bootstrap::Notification::NotificationConnectionPolicy< Bus >", "struct_a_z_1_1_render_1_1_bootstrap_1_1_notification_1_1_notification_connection_policy.html", null ],
-      [ "AZ::RPI::SceneNotification::SceneConnectionPolicy< Bus >", "struct_a_z_1_1_r_p_i_1_1_scene_notification_1_1_scene_connection_policy.html", null ]
+      [ "AZ::Render::Bootstrap::Notification::NotificationConnectionPolicy< Bus >", "struct_a_z_1_1_render_1_1_bootstrap_1_1_notification_1_1_notification_connection_policy.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EBusTraits", null, [
+      [ "AZ::RHI::DeviceBusTraits", "class_a_z_1_1_r_h_i_1_1_device_bus_traits.html", [
+        [ "AZ::RHI::FrameEventInterface", "class_a_z_1_1_r_h_i_1_1_frame_event_interface.html", null ],
+        [ "AZ::RHI::MemoryStatisticsEventInterface", "class_a_z_1_1_r_h_i_1_1_memory_statistics_event_interface.html", null ],
+        [ "AZ::RHI::MemoryStatisticsHeapEventInterface", "class_a_z_1_1_r_h_i_1_1_memory_statistics_heap_event_interface.html", null ]
+      ] ]
+    ] ],
+    [ "EditorInternalNotificationBus::Handler", null, [
       [ "ImageProcessingAtomEditor::MipmapSettingWidget", "class_image_processing_atom_editor_1_1_mipmap_setting_widget.html", null ],
       [ "ImageProcessingAtomEditor::ResolutionSettingItemWidget", "class_image_processing_atom_editor_1_1_resolution_setting_item_widget.html", null ],
       [ "ImageProcessingAtomEditor::TexturePresetSelectionWidget", "class_image_processing_atom_editor_1_1_texture_preset_selection_widget.html", null ],
       [ "ImageProcessingAtomEditor::TexturePreviewWidget", "class_image_processing_atom_editor_1_1_texture_preview_widget.html", null ],
       [ "ImageProcessingAtomEditor::TexturePropertyEditor", "class_image_processing_atom_editor_1_1_texture_property_editor.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EntityPreviewViewportSettingsNotificationBus::Handler", null, [
       [ "AtomToolsFramework::EntityPreviewViewportContent", "class_atom_tools_framework_1_1_entity_preview_viewport_content.html", [
         [ "MaterialCanvas::MaterialCanvasViewportContent", "class_material_canvas_1_1_material_canvas_viewport_content.html", null ],
         [ "MaterialEditor::MaterialEditorViewportContent", "class_material_editor_1_1_material_editor_viewport_content.html", null ],
@@ -2057,53 +2104,53 @@ var hierarchy =
       [ "AtomToolsFramework::EntityPreviewViewportToolBar", "class_atom_tools_framework_1_1_entity_preview_viewport_tool_bar.html", null ],
       [ "AtomToolsFramework::EntityPreviewViewportWidget", "class_atom_tools_framework_1_1_entity_preview_viewport_widget.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EntityPreviewViewportSettingsRequestBus::Handler", null, [
       [ "AtomToolsFramework::EntityPreviewViewportSettingsSystem", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_system.html", null ]
     ] ],
     [ "AZ::EnvironmentVariable< ImageProcessingAtom::BuilderSettingManager * >", "class_a_z_1_1_environment_variable.html", null ],
-    [ "Handler", null, [
+    [ "FactoryManagerBus::Handler", null, [
       [ "AZ::RHI::FactoryManagerSystemComponent", "class_a_z_1_1_r_h_i_1_1_factory_manager_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "FrameCaptureRequestBus::Handler", null, [
       [ "AZ::Render::FrameCaptureSystemComponent", "class_a_z_1_1_render_1_1_frame_capture_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "FrameCaptureTestRequestBus::Handler", null, [
       [ "AZ::Render::FrameCaptureSystemComponent", "class_a_z_1_1_render_1_1_frame_capture_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "FrameEventBus::Handler", null, [
       [ "AZ::RHI::AliasedAttachmentAllocator< Heap >", "class_a_z_1_1_r_h_i_1_1_aliased_attachment_allocator.html", null ],
       [ "AZ::RHI::ResourcePool", "class_a_z_1_1_r_h_i_1_1_resource_pool.html", null ]
     ] ],
     [ "GladVulkanContext", "struct_glad_vulkan_context.html", null ],
-    [ "Handler", null, [
+    [ "GraphCanvas::AssetEditorRequestBus::Handler", null, [
       [ "AtomToolsFramework::GraphView", "class_atom_tools_framework_1_1_graph_view.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphCanvas::AssetEditorSettingsRequestBus::Handler", null, [
       [ "AtomToolsFramework::GraphViewSettings", "struct_atom_tools_framework_1_1_graph_view_settings.html", null ]
     ] ],
-    [ "DraggableNodePaletteTreeItem", null, [
+    [ "GraphCanvas::DraggableNodePaletteTreeItem", null, [
       [ "AtomToolsFramework::DynamicNodePaletteItem", "class_atom_tools_framework_1_1_dynamic_node_palette_item.html", null ]
     ] ],
-    [ "EditorConstructPresets", null, [
+    [ "GraphCanvas::EditorConstructPresets", null, [
       [ "AtomToolsFramework::GraphViewConstructPresets", "class_atom_tools_framework_1_1_graph_view_construct_presets.html", null ]
     ] ],
-    [ "GraphCanvasMimeEvent", null, [
+    [ "GraphCanvas::GraphCanvasMimeEvent", null, [
       [ "AtomToolsFramework::CreateDynamicNodeMimeEvent", "class_atom_tools_framework_1_1_create_dynamic_node_mime_event.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphCanvas::SceneNotificationBus::Handler", null, [
       [ "AtomToolsFramework::GraphDocument", "class_atom_tools_framework_1_1_graph_document.html", null ],
       [ "AtomToolsFramework::GraphView", "class_atom_tools_framework_1_1_graph_view.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphDocumentRequestBus::Handler", null, [
       [ "AtomToolsFramework::GraphDocument", "class_atom_tools_framework_1_1_graph_document.html", null ]
     ] ],
-    [ "Node", null, [
+    [ "GraphModel::Node", null, [
       [ "AtomToolsFramework::DynamicNode", "class_atom_tools_framework_1_1_dynamic_node.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphModelIntegration::GraphControllerNotificationBus::Handler", null, [
       [ "AtomToolsFramework::GraphDocument", "class_atom_tools_framework_1_1_graph_document.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphTemplateFileDataCacheRequestBus::Handler", null, [
       [ "AtomToolsFramework::GraphTemplateFileDataCache", "class_atom_tools_framework_1_1_graph_template_file_data_cache.html", null ]
     ] ],
     [ "AZ::RHI::Handle< size_t >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
@@ -2121,10 +2168,10 @@ var hierarchy =
     [ "AZ::RHI::Handle< uint64_t, class Window >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
     [ "AZ::RHI::Handle< uint8_t >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
     [ "AZStd::hash< AZ::RHI::PipelineStateCache::PipelineStateEntry >", "struct_a_z_std_1_1hash.html", null ],
-    [ "Descriptor", null, [
+    [ "Heap::Descriptor", null, [
       [ "AZ::RHI::AliasedAttachmentAllocator< Heap >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_aliased_attachment_allocator_1_1_descriptor.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ImageBuilderRequestBus::Handler", null, [
       [ "ImageProcessingAtom::BuilderPluginComponent", "class_image_processing_atom_1_1_builder_plugin_component.html", null ]
     ] ],
     [ "ImageProcessingAtom::BuilderSettings", "struct_image_processing_atom_1_1_builder_settings.html", null ],
@@ -2171,6 +2218,8 @@ var hierarchy =
     [ "ImageProcessingAtom::ImageToProcess", "class_image_processing_atom_1_1_image_to_process.html", null ],
     [ "ImageProcessingAtom::IPixelOperation", "class_image_processing_atom_1_1_i_pixel_operation.html", null ],
     [ "ImageProcessingAtom::IWindowFunction< T >", "class_image_processing_atom_1_1_i_window_function.html", [
+      [ "ImageProcessingAtom::BoxWindowFunction< double >", "class_image_processing_atom_1_1_box_window_function.html", null ],
+      [ "ImageProcessingAtom::SincWindowFunction< double >", "class_image_processing_atom_1_1_sinc_window_function.html", null ],
       [ "ImageProcessingAtom::BartlettHannWindowFunction< T >", "class_image_processing_atom_1_1_bartlett_hann_window_function.html", null ],
       [ "ImageProcessingAtom::BesselWindowFunction< T >", "class_image_processing_atom_1_1_bessel_window_function.html", null ],
       [ "ImageProcessingAtom::BlackmanHarrisWindowFunction< T >", "class_image_processing_atom_1_1_blackman_harris_window_function.html", null ],
@@ -2208,10 +2257,13 @@ var hierarchy =
     [ "ImageProcessingAtom::SThreadOptionsThread0", "struct_image_processing_atom_1_1_s_thread_options_thread0.html", null ],
     [ "ImageProcessingAtom::SThreadOptionsThread1", "struct_image_processing_atom_1_1_s_thread_options_thread1.html", null ],
     [ "ImageProcessingAtom::TextureSettings", "class_image_processing_atom_1_1_texture_settings.html", null ],
-    [ "Handler", null, [
+    [ "ImageProcessingAtomEditor::EditorHelper", "class_image_processing_atom_editor_1_1_editor_helper.html", null ],
+    [ "ImageProcessingAtomEditor::EditorTextureSetting", "struct_image_processing_atom_editor_1_1_editor_texture_setting.html", null ],
+    [ "ImageProcessingAtomEditor::ImageProcessingEditorRequestBus::Handler", null, [
       [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ImageProcessingAtomEditor::ResolutionInfo", "struct_image_processing_atom_editor_1_1_resolution_info.html", null ],
+    [ "ImageProcessingRequestBus::Handler", null, [
       [ "ImageProcessingAtom::BuilderPluginComponent", "class_image_processing_atom_1_1_builder_plugin_component.html", null ],
       [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ]
     ] ],
@@ -2219,15 +2271,18 @@ var hierarchy =
     [ "AZ::RHI::ImageProperty< QueueId >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
     [ "AZ::RHI::ImageProperty< VkImageLayout >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
     [ "ImageResourceViewData", "struct_image_resource_view_data.html", null ],
+    [ "ImageTagBus::Handler", null, [
+      [ "AZ::RPI::ImageTagSystemComponent", "class_a_z_1_1_r_p_i_1_1_image_tag_system_component.html", null ]
+    ] ],
     [ "ImGui::ImGuiFrameVisualizerField", "class_im_gui_1_1_im_gui_frame_visualizer_field.html", [
       [ "ImGui::ImGuiFrameVisualizerTextField", "class_im_gui_1_1_im_gui_frame_visualizer_text_field.html", null ]
     ] ],
     [ "ImGui::ImGuiFrameVisualizerNode", "class_im_gui_1_1_im_gui_frame_visualizer_node.html", null ],
     [ "ImGui::ImGuiFrameVisualizerWindow", "class_im_gui_1_1_im_gui_frame_visualizer_window.html", null ],
-    [ "Handler", null, [
+    [ "ImGuiSystemNotificationBus::Handler", null, [
       [ "AZ::Render::ImGuiActiveContextScope", "class_a_z_1_1_render_1_1_im_gui_active_context_scope.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ImGuiSystemRequestBus::Handler", null, [
       [ "AZ::Render::ImGuiSystemComponent", "class_a_z_1_1_render_1_1_im_gui_system_component.html", null ]
     ] ],
     [ "AZ::Render::IndexableList< AZStd::pair< AZ::RHI::Size, AZ::Render::DecalTextureArray > >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
@@ -2238,7 +2293,7 @@ var hierarchy =
     [ "AZ::Render::IndexedDataVector< AZ::Render::SimpleSpotLightData >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
     [ "AZ::Render::IndexedDataVector< ShaderData >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
     [ "AZ::Render::IndexedDataVector< ShadowProperty >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
-    [ "Handler", null, [
+    [ "InspectorRequestBus::Handler", null, [
       [ "AtomToolsFramework::InspectorWidget", "class_atom_tools_framework_1_1_inspector_widget.html", [
         [ "AtomToolsFramework::AtomToolsDocumentInspector", "class_atom_tools_framework_1_1_atom_tools_document_inspector.html", null ],
         [ "AtomToolsFramework::EntityPreviewViewportSettingsInspector", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_inspector.html", null ]
@@ -2250,6 +2305,14 @@ var hierarchy =
     [ "AZ::RHI::interval_map< uint32_t, VkImageLayout >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
     [ "AZ::RHI::interval_map< uint64_t, QueueId >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
     [ "AZ::RHI::interval_map< uint64_t, T >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
+    [ "IUnknownImpl", null, [
+      [ "D3D12MA::Allocation", "class_d3_d12_m_a_1_1_allocation.html", null ],
+      [ "D3D12MA::Allocator", "class_d3_d12_m_a_1_1_allocator.html", null ],
+      [ "D3D12MA::DefragmentationContext", "class_d3_d12_m_a_1_1_defragmentation_context.html", null ],
+      [ "D3D12MA::Pool", "class_d3_d12_m_a_1_1_pool.html", null ],
+      [ "D3D12MA::VirtualBlock", "class_d3_d12_m_a_1_1_virtual_block.html", null ]
+    ] ],
+    [ "ImageProcessingAtom::IWindowFunction< double >", "class_image_processing_atom_1_1_i_window_function.html", null ],
     [ "MaskedOcclusionCulling", "class_masked_occlusion_culling.html", [
       [ "MaskedOcclusionCullingPrivate", "class_masked_occlusion_culling_private.html", null ]
     ] ],
@@ -2258,16 +2321,13 @@ var hierarchy =
     [ "MaskedOcclusionCulling::TriList", "struct_masked_occlusion_culling_1_1_tri_list.html", null ],
     [ "MaskedOcclusionCulling::VertexLayout", "struct_masked_occlusion_culling_1_1_vertex_layout.html", null ],
     [ "MaskedOcclusionCullingPrivate::ZTile", "struct_masked_occlusion_culling_private_1_1_z_tile.html", null ],
-    [ "Handler", null, [
+    [ "MaterialDocumentRequestBus::Handler", null, [
       [ "MaterialEditor::MaterialDocument", "class_material_editor_1_1_material_document.html", null ]
     ] ],
-    [ "AZ::RHI::MemoryAllocation< BufferMemory >", "struct_a_z_1_1_r_h_i_1_1_memory_allocation.html", null ],
     [ "AZ::RHI::MemoryAllocation< Memory >", "struct_a_z_1_1_r_h_i_1_1_memory_allocation.html", null ],
-    [ "AZ::RHI::MemoryAllocation< T >", "struct_a_z_1_1_r_h_i_1_1_memory_allocation.html", null ],
-    [ "Handler", null, [
+    [ "MemoryStatisticsEventBus::Handler", null, [
       [ "AZ::RHI::ResourcePool", "class_a_z_1_1_r_h_i_1_1_resource_pool.html", null ]
     ] ],
-    [ "AZ::RHI::MemorySubAllocator< BufferMemoryFreeListSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
     [ "AZ::RHI::MemorySubAllocator< MemoryFreeListSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
     [ "AZ::RHI::MemorySubAllocator< MemoryLinearSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
     [ "AZ::RHI::MemorySubAllocator< MemoryPoolSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
@@ -2277,11 +2337,14 @@ var hierarchy =
     [ "AZ::Vulkan::MemoryTypeView< BufferMemory >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", [
       [ "AZ::Vulkan::BufferMemoryView", "class_a_z_1_1_vulkan_1_1_buffer_memory_view.html", null ]
     ] ],
-    [ "AZ::Vulkan::MemoryTypeView< Memory >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", [
+    [ "AZ::Vulkan::MemoryTypeView< VulkanMemoryAllocation >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", [
       [ "AZ::Vulkan::MemoryView", "class_a_z_1_1_vulkan_1_1_memory_view.html", null ]
     ] ],
     [ "MetalResourceHash", "struct_metal_resource_hash.html", null ],
-    [ "Handler", null, [
+    [ "ModelTagBus::Handler", null, [
+      [ "AZ::RPI::ModelTagSystemComponent", "class_a_z_1_1_r_p_i_1_1_model_tag_system_component.html", null ]
+    ] ],
+    [ "ModularViewportCameraControllerRequestBus::Handler", null, [
       [ "AtomToolsFramework::ModularViewportCameraControllerInstance", "class_atom_tools_framework_1_1_modular_viewport_camera_controller_instance.html", null ]
     ] ],
     [ "AZ::Render::MultiIndexedDataVector< AZ::Render::CapsuleLightData, AZ::Capsule >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
@@ -2292,6 +2355,7 @@ var hierarchy =
     [ "AZ::Render::MultiSparseVector< ShadowData, AZ::Render::EsmShadowmapsPass::FilterParameter, uint16_t >", "class_a_z_1_1_render_1_1_multi_sparse_vector.html", null ],
     [ "AZ::RHI::NameIdReflectionMap< AZ::RHI::Handle< uint32_t > >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
     [ "AZ::RHI::NameIdReflectionMap< MaterialPropertyIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< RHI::Handle< uint32_t > >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
     [ "AZ::RHI::NameIdReflectionMap< ShaderInputBufferIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
     [ "AZ::RHI::NameIdReflectionMap< ShaderInputBufferUnboundedArrayIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
     [ "AZ::RHI::NameIdReflectionMap< ShaderInputConstantIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
@@ -2306,27 +2370,25 @@ var hierarchy =
     [ "NativeViewType", null, [
       [ "RHIMetalView", "interface_r_h_i_metal_view.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "NoClipControllerRequestBus::Handler", null, [
       [ "AZ::Debug::NoClipControllerComponent", "class_a_z_1_1_debug_1_1_no_clip_controller_component.html", null ]
     ] ],
     [ "AZ::RHI::ObjectCache< AZ::DX12::Sampler >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
     [ "AZ::RHI::ObjectCache< AZ::RHI::BufferView >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
     [ "AZ::RHI::ObjectCache< AZ::RHI::ImageView >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
     [ "AZ::RHI::ObjectCache< AZ::RHI::Resource >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
-    [ "AZ::RHI::ObjectCache< AZ::Vulkan::MergedShaderResourceGroup, AZ::Vulkan::MergedShaderResourceGroup::ShaderResourceGroupArray >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
+    [ "AZ::RHI::ObjectCache< AZ::Vulkan::MergedShaderResourceGroup, MergedShaderResourceGroup::ShaderResourceGroupArray >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
     [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::DX12::Sampler >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
     [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::BufferView >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
     [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::ImageView >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
     [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::Resource >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
     [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::Vulkan::MergedShaderResourceGroup >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
-    [ "AZ::RHI::ObjectCollector< BufferMemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
+    [ "AZ::RHI::ObjectCollector< D3d12maReleaseQueueTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
     [ "AZ::RHI::ObjectCollector< DescriptorPoolAllocatorlTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
     [ "AZ::RHI::ObjectCollector< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
     [ "AZ::RHI::ObjectCollector< MemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
     [ "AZ::RHI::ObjectCollector< ReleaseQueueTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
-    [ "AZ::RHI::ObjectFactoryBase< BufferMemory >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
-      [ "AZ::Vulkan::BufferMemoryPageFactory", "class_a_z_1_1_vulkan_1_1_buffer_memory_page_factory.html", null ]
-    ] ],
+    [ "AZ::RHI::ObjectCollector< Traits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
     [ "AZ::RHI::ObjectFactoryBase< CommandList >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
       [ "AZ::Metal::CommandListFactory", "class_a_z_1_1_metal_1_1_command_list_factory.html", null ]
     ] ],
@@ -2338,15 +2400,11 @@ var hierarchy =
     [ "AZ::RHI::ObjectFactoryBase< ID3D12CommandAllocator >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
     [ "AZ::RHI::ObjectFactoryBase< Memory >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
       [ "AZ::DX12::MemoryPageFactory", "class_a_z_1_1_d_x12_1_1_memory_page_factory.html", null ],
-      [ "AZ::Metal::MemoryPageFactory", "class_a_z_1_1_metal_1_1_memory_page_factory.html", null ],
-      [ "AZ::Vulkan::MemoryPageFactory", "class_a_z_1_1_vulkan_1_1_memory_page_factory.html", null ]
+      [ "AZ::Metal::MemoryPageFactory", "class_a_z_1_1_metal_1_1_memory_page_factory.html", null ]
     ] ],
     [ "AZ::RHI::ObjectFactoryBase< Semaphore >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
     [ "ObjectFactoryDescriptor", null, [
       [ "AZ::RHI::ObjectPool< Traits >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_object_pool_1_1_descriptor.html", null ]
-    ] ],
-    [ "AZ::RHI::ObjectPool< BufferMemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", [
-      [ "AZ::Vulkan::BufferMemoryPageAllocator", "class_a_z_1_1_vulkan_1_1_buffer_memory_page_allocator.html", null ]
     ] ],
     [ "AZ::RHI::ObjectPool< DescriptorPoolAllocatorlTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", null ],
     [ "AZ::RHI::ObjectPool< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", [
@@ -2354,22 +2412,21 @@ var hierarchy =
     ] ],
     [ "AZ::RHI::ObjectPool< MemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", [
       [ "AZ::DX12::MemoryPageAllocator", "class_a_z_1_1_d_x12_1_1_memory_page_allocator.html", null ],
-      [ "AZ::Metal::MemoryPageAllocator", "class_a_z_1_1_metal_1_1_memory_page_allocator.html", null ],
-      [ "AZ::Vulkan::MemoryPageAllocator", "class_a_z_1_1_vulkan_1_1_memory_page_allocator.html", null ]
+      [ "AZ::Metal::MemoryPageAllocator", "class_a_z_1_1_metal_1_1_memory_page_allocator.html", null ]
     ] ],
-    [ "Registrar", null, [
+    [ "PerformanceCollectorOwner::Registrar", null, [
       [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "PerformanceMonitorRequestBus::Handler", null, [
       [ "AtomToolsFramework::PerformanceMonitorSystemComponent", "class_atom_tools_framework_1_1_performance_monitor_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "PreviewerFeatureProcessorProviderBus::Handler", null, [
       [ "AtomToolsFramework::PreviewRenderer", "class_atom_tools_framework_1_1_preview_renderer.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "PreviewRendererSystemRequestBus::Handler", null, [
       [ "AtomToolsFramework::PreviewRendererSystemComponent", "class_atom_tools_framework_1_1_preview_renderer_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ProfilingCaptureRequestBus::Handler", null, [
       [ "AZ::Render::ProfilingCaptureSystemComponent", "class_a_z_1_1_render_1_1_profiling_capture_system_component.html", null ]
     ] ],
     [ "QComboBox", null, [
@@ -2384,15 +2441,16 @@ var hierarchy =
     [ "QObject", null, [
       [ "AtomToolsFramework::LocalServer", "class_atom_tools_framework_1_1_local_server.html", null ],
       [ "AtomToolsFramework::LocalSocket", "class_atom_tools_framework_1_1_local_socket.html", null ],
-      [ "AtomToolsFramework::PropertyMultilineStringDialogHandler", "class_atom_tools_framework_1_1_property_multiline_string_dialog_handler.html", null ],
       [ "AtomToolsFramework::PropertyMultiStringSelectDelimitedHandler", "class_atom_tools_framework_1_1_property_multi_string_select_delimited_handler.html", null ],
       [ "AtomToolsFramework::PropertyMultiStringSelectSetHandler", "class_atom_tools_framework_1_1_property_multi_string_select_set_handler.html", null ],
       [ "AtomToolsFramework::PropertyMultiStringSelectVectorHandler", "class_atom_tools_framework_1_1_property_multi_string_select_vector_handler.html", null ],
+      [ "AtomToolsFramework::PropertyMultilineStringDialogHandler", "class_atom_tools_framework_1_1_property_multiline_string_dialog_handler.html", null ],
       [ "AtomToolsFramework::PropertyStringBrowseEditHandler", "class_atom_tools_framework_1_1_property_string_browse_edit_handler.html", null ],
       [ "AtomToolsFramework::PropertyStringFilePathHandler", "class_atom_tools_framework_1_1_property_string_file_path_handler.html", null ],
       [ "ImageProcessingAtom::BuilderSettingManager", "class_image_processing_atom_1_1_builder_setting_manager.html", null ]
     ] ],
     [ "QTableWidget", null, [
+      [ "ShaderManagementConsole::ShaderManagementConsoleStatisticView", "class_shader_management_console_1_1_shader_management_console_statistic_view.html", null ],
       [ "ShaderManagementConsole::ShaderManagementConsoleTableView", "class_shader_management_console_1_1_shader_management_console_table_view.html", null ]
     ] ],
     [ "QToolBar", null, [
@@ -2406,8 +2464,8 @@ var hierarchy =
       ] ],
       [ "AtomToolsFramework::InspectorWidget", "class_atom_tools_framework_1_1_inspector_widget.html", null ],
       [ "AtomToolsFramework::PropertyStringBrowseEditCtrl", "class_atom_tools_framework_1_1_property_string_browse_edit_ctrl.html", [
-        [ "AtomToolsFramework::PropertyMultilineStringDialogCtrl", "class_atom_tools_framework_1_1_property_multiline_string_dialog_ctrl.html", null ],
         [ "AtomToolsFramework::PropertyMultiStringSelectCtrl", "class_atom_tools_framework_1_1_property_multi_string_select_ctrl.html", null ],
+        [ "AtomToolsFramework::PropertyMultilineStringDialogCtrl", "class_atom_tools_framework_1_1_property_multiline_string_dialog_ctrl.html", null ],
         [ "AtomToolsFramework::PropertyStringFilePathCtrl", "class_atom_tools_framework_1_1_property_string_file_path_ctrl.html", null ]
       ] ],
       [ "AtomToolsFramework::RenderViewportWidget", "class_atom_tools_framework_1_1_render_viewport_widget.html", null ],
@@ -2420,56 +2478,59 @@ var hierarchy =
     [ "AZ::Render::RayTracingIndexList< 1 >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
     [ "AZ::Render::RayTracingIndexList< NumMaterialTexturesPerMesh >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
     [ "AZ::Render::RayTracingIndexList< NumMeshBuffersPerMesh >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
-    [ "Handler", null, [
+    [ "Render::Bootstrap::DefaultWindowBus::Handler", null, [
       [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "Render::Bootstrap::RequestBus::Handler", null, [
       [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ]
     ] ],
     [ "ResourceBindingData", "struct_resource_binding_data.html", null ],
-    [ "Handler", null, [
+    [ "ResourceInvalidateBus::Handler", null, [
       [ "AZ::RHI::ResourceView", "class_a_z_1_1_r_h_i_1_1_resource_view.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "ResourceInvalidateBus::MultiHandler", null, [
       [ "AZ::RHI::ShaderResourceGroupInvalidateRegistry", "class_a_z_1_1_r_h_i_1_1_shader_resource_group_invalidate_registry.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "RHI::FrameEventBus::Handler", null, [
       [ "AZ::Render::ImGuiFrameVisualizer", "class_a_z_1_1_render_1_1_im_gui_frame_visualizer.html", null ],
       [ "AZ::Vulkan::Scope", "class_a_z_1_1_vulkan_1_1_scope.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "RHI::ResourceInvalidateBus::MultiHandler", null, [
       [ "AZ::Vulkan::Framebuffer", "class_a_z_1_1_vulkan_1_1_framebuffer.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "RHI::ShaderPlatformInterfaceRegisterBus::Handler", null, [
       [ "AZ::ShaderBuilder::AzslShaderBuilderSystemComponent", "class_a_z_1_1_shader_builder_1_1_azsl_shader_builder_system_component.html", null ]
     ] ],
     [ "RHIMetalView(PlatformImpl)", "category_r_h_i_metal_view_07_platform_impl_08.html", null ],
     [ "RHIMetalViewController(PlatformImpl)", "category_r_h_i_metal_view_controller_07_platform_impl_08.html", null ],
-    [ "Handler", null, [
+    [ "RPI::MaterialConverterBus::Handler", null, [
       [ "AZ::Render::MaterialConverterSystemComponent", "class_a_z_1_1_render_1_1_material_converter_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "RPI::ShaderReloadNotificationBus::Handler", null, [
       [ "AZ::Render::MorphTargetDispatchItem", "class_a_z_1_1_render_1_1_morph_target_dispatch_item.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "RPI::ShaderReloadNotificationBus::MultiHandler", null, [
       [ "AZ::Render::RayTracingPass", "class_a_z_1_1_render_1_1_ray_tracing_pass.html", null ],
       [ "AZ::Render::SkyAtmospherePass", "class_a_z_1_1_render_1_1_sky_atmosphere_pass.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "RPI::ViewProviderBus::Handler", null, [
       [ "AZ::Debug::CameraComponent", "class_a_z_1_1_debug_1_1_camera_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "RPI::WindowContextNotificationBus::Handler", null, [
       [ "AZ::Debug::CameraComponent", "class_a_z_1_1_debug_1_1_camera_component.html", null ]
     ] ],
-    [ "Handler", null, [
-      [ "AZ::RPI::MaterialAssetDependenciesComponent", "class_a_z_1_1_r_p_i_1_1_material_asset_dependencies_component.html", null ]
+    [ "SceneAPI::SceneBuilderDependencyBus::Handler", null, [
+      [ "AZ::RPI::MaterialAssetDependenciesComponent", "class_a_z_1_1_r_p_i_1_1_material_asset_dependencies_component.html", null ],
+      [ "AZ::RPI::ModelAssetDependenciesComponent", "class_a_z_1_1_r_p_i_1_1_model_asset_dependencies_component.html", null ]
     ] ],
-    [ "ExportingComponent", null, [
-      [ "AZ::RPI::MaterialAssetBuilderComponent", "class_a_z_1_1_r_p_i_1_1_material_asset_builder_component.html", null ],
-      [ "AZ::RPI::ModelExporterComponent", "class_a_z_1_1_r_p_i_1_1_model_exporter_component.html", null ]
+    [ "SceneAPI::SceneCore::ExportingComponent", null, [
+      [ "AZ::RPI::MaterialAssetBuilderComponent", "class_a_z_1_1_r_p_i_1_1_material_asset_builder_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "SceneNotificationBus::Handler", null, [
       [ "AZ::RPI::FeatureProcessor", "class_a_z_1_1_r_p_i_1_1_feature_processor.html", [
+        [ "AZ::RPI::AuxGeomFeatureProcessorInterface", "class_a_z_1_1_r_p_i_1_1_aux_geom_feature_processor_interface.html", [
+          [ "AZ::Render::AuxGeomFeatureProcessor", "class_a_z_1_1_render_1_1_aux_geom_feature_processor.html", null ]
+        ] ],
         [ "AZ::Render::CapsuleLightFeatureProcessorInterface", "class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html", [
           [ "AZ::Render::CapsuleLightFeatureProcessor", "class_a_z_1_1_render_1_1_capsule_light_feature_processor.html", null ]
         ] ],
@@ -2519,6 +2580,9 @@ var hierarchy =
         [ "AZ::Render::RenderDebugFeatureProcessorInterface", "class_a_z_1_1_render_1_1_render_debug_feature_processor_interface.html", [
           [ "AZ::Render::RenderDebugFeatureProcessor", "class_a_z_1_1_render_1_1_render_debug_feature_processor.html", null ]
         ] ],
+        [ "AZ::Render::SMAAFeatureProcessorInterface", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html", [
+          [ "AZ::Render::SMAAFeatureProcessor", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html", null ]
+        ] ],
         [ "AZ::Render::SimplePointLightFeatureProcessorInterface", "class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html", [
           [ "AZ::Render::SimplePointLightFeatureProcessor", "class_a_z_1_1_render_1_1_simple_point_light_feature_processor.html", null ]
         ] ],
@@ -2534,47 +2598,43 @@ var hierarchy =
         [ "AZ::Render::SkyBoxFeatureProcessorInterface", "class_a_z_1_1_render_1_1_sky_box_feature_processor_interface.html", [
           [ "AZ::Render::SkyBoxFeatureProcessor", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html", null ]
         ] ],
-        [ "AZ::Render::SMAAFeatureProcessorInterface", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html", [
-          [ "AZ::Render::SMAAFeatureProcessor", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html", null ]
-        ] ],
         [ "AZ::Render::SpecularReflectionsFeatureProcessorInterface", "class_a_z_1_1_render_1_1_specular_reflections_feature_processor_interface.html", [
           [ "AZ::Render::SpecularReflectionsFeatureProcessor", "class_a_z_1_1_render_1_1_specular_reflections_feature_processor.html", null ]
         ] ],
         [ "AZ::Render::SplashScreenFeatureProcessor", "class_a_z_1_1_render_1_1_splash_screen_feature_processor.html", null ],
         [ "AZ::Render::TransformServiceFeatureProcessorInterface", "class_a_z_1_1_render_1_1_transform_service_feature_processor_interface.html", [
           [ "AZ::Render::TransformServiceFeatureProcessor", "class_a_z_1_1_render_1_1_transform_service_feature_processor.html", null ]
-        ] ],
-        [ "AZ::RPI::AuxGeomFeatureProcessorInterface", "class_a_z_1_1_r_p_i_1_1_aux_geom_feature_processor_interface.html", [
-          [ "AZ::Render::AuxGeomFeatureProcessor", "class_a_z_1_1_render_1_1_aux_geom_feature_processor.html", null ]
         ] ]
       ] ],
       [ "AZ::RPI::ViewportContext", "class_a_z_1_1_r_p_i_1_1_viewport_context.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "SceneRequestBus::Handler", null, [
       [ "AZ::RPI::Scene", "class_a_z_1_1_r_p_i_1_1_scene.html", null ]
     ] ],
-    [ "IEventHandler", null, [
+    [ "SerializeContext::IEventHandler", null, [
       [ "AZ::RHI::NameIdReflectionMap< IndexType >::NameIdReflectionMapSerializationEvents", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map_1_1_name_id_reflection_map_serialization_events.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ShaderManagementConsole::ShaderVariantInfo", "struct_shader_management_console_1_1_shader_variant_info.html", null ],
+    [ "ShaderManagementConsole::ShaderVariantStatisticData", "struct_shader_management_console_1_1_shader_variant_statistic_data.html", null ],
+    [ "ShaderManagementConsoleDocumentRequestBus::Handler", null, [
       [ "ShaderManagementConsole::ShaderManagementConsoleDocument", "class_shader_management_console_1_1_shader_management_console_document.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ShaderManagementConsoleRequestBus::Handler", null, [
       [ "ShaderManagementConsole::ShaderManagementConsoleApplication", "class_shader_management_console_1_1_shader_management_console_application.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ShaderPlatformInterfaceRequestBus::Handler", null, [
       [ "AZ::ShaderBuilder::AzslShaderBuilderSystemComponent", "class_a_z_1_1_shader_builder_1_1_azsl_shader_builder_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ShaderReloadNotificationBus::Handler", null, [
       [ "AZ::RPI::ComputePass", "class_a_z_1_1_r_p_i_1_1_compute_pass.html", null ],
       [ "AZ::RPI::DownsampleMipChainPass", "class_a_z_1_1_r_p_i_1_1_downsample_mip_chain_pass.html", null ],
       [ "AZ::RPI::FullscreenTrianglePass", "class_a_z_1_1_r_p_i_1_1_fullscreen_triangle_pass.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "ShaderReloadNotificationBus::MultiHandler", null, [
       [ "AZ::RPI::Material", "class_a_z_1_1_r_p_i_1_1_material.html", null ],
       [ "AZ::RPI::PipelineStateForDraw", "class_a_z_1_1_r_p_i_1_1_pipeline_state_for_draw.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ShaderVariantFinderNotificationBus::Handler", null, [
       [ "AZ::RPI::Shader", "class_a_z_1_1_r_p_i_1_1_shader.html", null ],
       [ "AZ::RPI::ShaderAsset", "class_a_z_1_1_r_p_i_1_1_shader_asset.html", null ]
     ] ],
@@ -2587,14 +2647,17 @@ var hierarchy =
     [ "AZStd::shared_ptr< AtomToolsFramework::PreviewContent >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AtomToolsFramework::ViewportInputBehavior >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AZ::DX12::DescriptorContext >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::Render::MeshFeatureProcessorInterface::MeshHandle >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::BufferViewDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::ClearValue >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::ImageViewDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AZ::RHI::RayTracingShaderTableDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::ResourcePoolDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AZ::RHI::ScopeProducer >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AZ::RPI::AttachmentReadback >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RPI::AZ::RPI::AttachmentReadback >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AZ::RPI::ImageAttachmentCopy >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AZ::RPI::PassData >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AZ::RPI::PassTemplate >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RPI::WindowContext >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AZ::ShaderBuilder::ShaderFiles >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AzFramework::EntityContext >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< AzFramework::Scene >", "class_a_z_std_1_1shared__ptr.html", null ],
@@ -2608,37 +2671,78 @@ var hierarchy =
     [ "AZStd::shared_ptr< GraphViewSettings >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< IImageObject >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< ImageProcessingAtom::ImageConvertProcessDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< MeshLoader >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< RenderPipeline >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< RHI::BufferViewDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< RHI::ClearValue >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< RHI::ImageViewDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< RHI::ResourcePoolDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< RPI::PassTemplate >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< RPI::WindowContext >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< Scene >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< StableDynamicArrayHandle< ModelDataInstance > >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< View >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< ViewGroup >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< ViewportContext >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::shared_ptr< WindowContext >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "Handler", null, [
+    [ "SkinnedMeshShaderOptionNotificationBus::Handler", null, [
       [ "AZ::Render::SkinnedMeshDispatchItem", "class_a_z_1_1_render_1_1_skinned_mesh_dispatch_item.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "SkinnedMeshStatsRequestBus::Handler", null, [
       [ "AZ::Render::SkinnedMeshStatsCollector", "class_a_z_1_1_render_1_1_skinned_mesh_stats_collector.html", null ]
     ] ],
     [ "AZ::Render::SparseVector< SkyAtmosphere >", "class_a_z_1_1_render_1_1_sparse_vector.html", null ],
     [ "AZ::StableDynamicArray< AZ::Render::ModelDataInstance >", "class_a_z_1_1_stable_dynamic_array.html", null ],
     [ "AZ::StableDynamicArray< AZ::Render::SkinnedMeshRenderProxy >", "class_a_z_1_1_stable_dynamic_array.html", null ],
+    [ "AZ::StableDynamicArray< MeshInstanceGroupData, 4096 >", "class_a_z_1_1_stable_dynamic_array.html", null ],
+    [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >", "class_a_z_1_1_stable_dynamic_array.html", null ],
+    [ "AZ::StableDynamicArrayHandle< MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_handle.html", null ],
     [ "AZ::StableDynamicArrayHandle< ModelDataInstance >", "class_a_z_1_1_stable_dynamic_array_handle.html", null ],
+    [ "AZ::StableDynamicArrayWeakHandle< AZ::Render::MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
+    [ "AZ::StableDynamicArrayWeakHandle< MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
+    [ "StdVideoDecodeH264PictureInfo", "struct_std_video_decode_h264_picture_info.html", null ],
+    [ "StdVideoDecodeH264PictureInfoFlags", "struct_std_video_decode_h264_picture_info_flags.html", null ],
+    [ "StdVideoDecodeH264ReferenceInfo", "struct_std_video_decode_h264_reference_info.html", null ],
+    [ "StdVideoDecodeH264ReferenceInfoFlags", "struct_std_video_decode_h264_reference_info_flags.html", null ],
+    [ "StdVideoDecodeH265PictureInfo", "struct_std_video_decode_h265_picture_info.html", null ],
+    [ "StdVideoDecodeH265PictureInfoFlags", "struct_std_video_decode_h265_picture_info_flags.html", null ],
+    [ "StdVideoDecodeH265ReferenceInfo", "struct_std_video_decode_h265_reference_info.html", null ],
+    [ "StdVideoDecodeH265ReferenceInfoFlags", "struct_std_video_decode_h265_reference_info_flags.html", null ],
+    [ "StdVideoH264HrdParameters", "struct_std_video_h264_hrd_parameters.html", null ],
+    [ "StdVideoH264PictureParameterSet", "struct_std_video_h264_picture_parameter_set.html", null ],
+    [ "StdVideoH264PpsFlags", "struct_std_video_h264_pps_flags.html", null ],
+    [ "StdVideoH264ScalingLists", "struct_std_video_h264_scaling_lists.html", null ],
+    [ "StdVideoH264SequenceParameterSet", "struct_std_video_h264_sequence_parameter_set.html", null ],
+    [ "StdVideoH264SequenceParameterSetVui", "struct_std_video_h264_sequence_parameter_set_vui.html", null ],
+    [ "StdVideoH264SpsFlags", "struct_std_video_h264_sps_flags.html", null ],
+    [ "StdVideoH264SpsVuiFlags", "struct_std_video_h264_sps_vui_flags.html", null ],
+    [ "StdVideoH265DecPicBufMgr", "struct_std_video_h265_dec_pic_buf_mgr.html", null ],
+    [ "StdVideoH265HrdFlags", "struct_std_video_h265_hrd_flags.html", null ],
+    [ "StdVideoH265HrdParameters", "struct_std_video_h265_hrd_parameters.html", null ],
+    [ "StdVideoH265LongTermRefPicsSps", "struct_std_video_h265_long_term_ref_pics_sps.html", null ],
+    [ "StdVideoH265PictureParameterSet", "struct_std_video_h265_picture_parameter_set.html", null ],
+    [ "StdVideoH265PpsFlags", "struct_std_video_h265_pps_flags.html", null ],
+    [ "StdVideoH265PredictorPaletteEntries", "struct_std_video_h265_predictor_palette_entries.html", null ],
+    [ "StdVideoH265ProfileTierLevel", "struct_std_video_h265_profile_tier_level.html", null ],
+    [ "StdVideoH265ProfileTierLevelFlags", "struct_std_video_h265_profile_tier_level_flags.html", null ],
+    [ "StdVideoH265ScalingLists", "struct_std_video_h265_scaling_lists.html", null ],
+    [ "StdVideoH265SequenceParameterSet", "struct_std_video_h265_sequence_parameter_set.html", null ],
+    [ "StdVideoH265SequenceParameterSetVui", "struct_std_video_h265_sequence_parameter_set_vui.html", null ],
+    [ "StdVideoH265ShortTermRefPicSet", "struct_std_video_h265_short_term_ref_pic_set.html", null ],
+    [ "StdVideoH265ShortTermRefPicSetFlags", "struct_std_video_h265_short_term_ref_pic_set_flags.html", null ],
+    [ "StdVideoH265SpsFlags", "struct_std_video_h265_sps_flags.html", null ],
+    [ "StdVideoH265SpsVuiFlags", "struct_std_video_h265_sps_vui_flags.html", null ],
+    [ "StdVideoH265SubLayerHrdParameters", "struct_std_video_h265_sub_layer_hrd_parameters.html", null ],
+    [ "StdVideoH265VideoParameterSet", "struct_std_video_h265_video_parameter_set.html", null ],
+    [ "StdVideoH265VpsFlags", "struct_std_video_h265_vps_flags.html", null ],
+    [ "TickBus::Handler", null, [
+      [ "AZ::Debug::ArcBallControllerComponent", "class_a_z_1_1_debug_1_1_arc_ball_controller_component.html", null ],
+      [ "AZ::Debug::NoClipControllerComponent", "class_a_z_1_1_debug_1_1_no_clip_controller_component.html", null ],
+      [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ]
+    ] ],
     [ "AZ::RHI::TileAllocator< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_tile_allocator.html", null ],
-    [ "AZ::RHI::TileAllocator< MemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_tile_allocator.html", null ],
-    [ "Handler", null, [
+    [ "TransformNotificationBus::Handler", null, [
       [ "AZ::Debug::CameraComponent", "class_a_z_1_1_debug_1_1_camera_component.html", null ]
     ] ],
     [ "VkAabbPositionsKHR", "struct_vk_aabb_positions_k_h_r.html", null ],
     [ "VkAccelerationStructureBuildGeometryInfoKHR", "struct_vk_acceleration_structure_build_geometry_info_k_h_r.html", null ],
     [ "VkAccelerationStructureBuildRangeInfoKHR", "struct_vk_acceleration_structure_build_range_info_k_h_r.html", null ],
     [ "VkAccelerationStructureBuildSizesInfoKHR", "struct_vk_acceleration_structure_build_sizes_info_k_h_r.html", null ],
+    [ "VkAccelerationStructureCaptureDescriptorDataInfoEXT", "struct_vk_acceleration_structure_capture_descriptor_data_info_e_x_t.html", null ],
     [ "VkAccelerationStructureCreateInfoKHR", "struct_vk_acceleration_structure_create_info_k_h_r.html", null ],
     [ "VkAccelerationStructureCreateInfoNV", "struct_vk_acceleration_structure_create_info_n_v.html", null ],
     [ "VkAccelerationStructureDeviceAddressInfoKHR", "struct_vk_acceleration_structure_device_address_info_k_h_r.html", null ],
@@ -2656,10 +2760,12 @@ var hierarchy =
     [ "VkAccelerationStructureMotionInstanceDataNV", "union_vk_acceleration_structure_motion_instance_data_n_v.html", null ],
     [ "VkAccelerationStructureMotionInstanceNV", "struct_vk_acceleration_structure_motion_instance_n_v.html", null ],
     [ "VkAccelerationStructureSRTMotionInstanceNV", "struct_vk_acceleration_structure_s_r_t_motion_instance_n_v.html", null ],
+    [ "VkAccelerationStructureTrianglesOpacityMicromapEXT", "struct_vk_acceleration_structure_triangles_opacity_micromap_e_x_t.html", null ],
     [ "VkAccelerationStructureVersionInfoKHR", "struct_vk_acceleration_structure_version_info_k_h_r.html", null ],
     [ "VkAcquireNextImageInfoKHR", "struct_vk_acquire_next_image_info_k_h_r.html", null ],
     [ "VkAcquireProfilingLockInfoKHR", "struct_vk_acquire_profiling_lock_info_k_h_r.html", null ],
     [ "VkAllocationCallbacks", "struct_vk_allocation_callbacks.html", null ],
+    [ "VkAmigoProfilingSubmitInfoSEC", "struct_vk_amigo_profiling_submit_info_s_e_c.html", null ],
     [ "VkApplicationInfo", "struct_vk_application_info.html", null ],
     [ "VkAttachmentDescription", "struct_vk_attachment_description.html", null ],
     [ "VkAttachmentDescription2", "struct_vk_attachment_description2.html", null ],
@@ -2682,7 +2788,9 @@ var hierarchy =
     [ "VkBindShaderGroupIndirectCommandNV", "struct_vk_bind_shader_group_indirect_command_n_v.html", null ],
     [ "VkBindSparseInfo", "struct_vk_bind_sparse_info.html", null ],
     [ "VkBindVertexBufferIndirectCommandNV", "struct_vk_bind_vertex_buffer_indirect_command_n_v.html", null ],
+    [ "VkBindVideoSessionMemoryInfoKHR", "struct_vk_bind_video_session_memory_info_k_h_r.html", null ],
     [ "VkBlitImageInfo2", "struct_vk_blit_image_info2.html", null ],
+    [ "VkBufferCaptureDescriptorDataInfoEXT", "struct_vk_buffer_capture_descriptor_data_info_e_x_t.html", null ],
     [ "VkBufferCopy", "struct_vk_buffer_copy.html", null ],
     [ "VkBufferCopy2", "struct_vk_buffer_copy2.html", null ],
     [ "VkBufferCreateInfo", "struct_vk_buffer_create_info.html", null ],
@@ -2705,6 +2813,8 @@ var hierarchy =
     [ "VkClearValue", "union_vk_clear_value.html", null ],
     [ "VkCoarseSampleLocationNV", "struct_vk_coarse_sample_location_n_v.html", null ],
     [ "VkCoarseSampleOrderCustomNV", "struct_vk_coarse_sample_order_custom_n_v.html", null ],
+    [ "VkColorBlendAdvancedEXT", "struct_vk_color_blend_advanced_e_x_t.html", null ],
+    [ "VkColorBlendEquationEXT", "struct_vk_color_blend_equation_e_x_t.html", null ],
     [ "VkCommandBufferAllocateInfo", "struct_vk_command_buffer_allocate_info.html", null ],
     [ "VkCommandBufferBeginInfo", "struct_vk_command_buffer_begin_info.html", null ],
     [ "VkCommandBufferInheritanceConditionalRenderingInfoEXT", "struct_vk_command_buffer_inheritance_conditional_rendering_info_e_x_t.html", null ],
@@ -2727,7 +2837,12 @@ var hierarchy =
     [ "VkCopyDescriptorSet", "struct_vk_copy_descriptor_set.html", null ],
     [ "VkCopyImageInfo2", "struct_vk_copy_image_info2.html", null ],
     [ "VkCopyImageToBufferInfo2", "struct_vk_copy_image_to_buffer_info2.html", null ],
+    [ "VkCopyMemoryIndirectCommandNV", "struct_vk_copy_memory_indirect_command_n_v.html", null ],
     [ "VkCopyMemoryToAccelerationStructureInfoKHR", "struct_vk_copy_memory_to_acceleration_structure_info_k_h_r.html", null ],
+    [ "VkCopyMemoryToImageIndirectCommandNV", "struct_vk_copy_memory_to_image_indirect_command_n_v.html", null ],
+    [ "VkCopyMemoryToMicromapInfoEXT", "struct_vk_copy_memory_to_micromap_info_e_x_t.html", null ],
+    [ "VkCopyMicromapInfoEXT", "struct_vk_copy_micromap_info_e_x_t.html", null ],
+    [ "VkCopyMicromapToMemoryInfoEXT", "struct_vk_copy_micromap_to_memory_info_e_x_t.html", null ],
     [ "VkCuFunctionCreateInfoNVX", "struct_vk_cu_function_create_info_n_v_x.html", null ],
     [ "VkCuLaunchInfoNVX", "struct_vk_cu_launch_info_n_v_x.html", null ],
     [ "VkCuModuleCreateInfoNVX", "struct_vk_cu_module_create_info_n_v_x.html", null ],
@@ -2740,29 +2855,43 @@ var hierarchy =
     [ "VkDebugUtilsMessengerCreateInfoEXT", "struct_vk_debug_utils_messenger_create_info_e_x_t.html", null ],
     [ "VkDebugUtilsObjectNameInfoEXT", "struct_vk_debug_utils_object_name_info_e_x_t.html", null ],
     [ "VkDebugUtilsObjectTagInfoEXT", "struct_vk_debug_utils_object_tag_info_e_x_t.html", null ],
+    [ "VkDecompressMemoryRegionNV", "struct_vk_decompress_memory_region_n_v.html", null ],
     [ "VkDedicatedAllocationBufferCreateInfoNV", "struct_vk_dedicated_allocation_buffer_create_info_n_v.html", null ],
     [ "VkDedicatedAllocationImageCreateInfoNV", "struct_vk_dedicated_allocation_image_create_info_n_v.html", null ],
     [ "VkDedicatedAllocationMemoryAllocateInfoNV", "struct_vk_dedicated_allocation_memory_allocate_info_n_v.html", null ],
     [ "VkDependencyInfo", "struct_vk_dependency_info.html", null ],
+    [ "VkDescriptorAddressInfoEXT", "struct_vk_descriptor_address_info_e_x_t.html", null ],
+    [ "VkDescriptorBufferBindingInfoEXT", "struct_vk_descriptor_buffer_binding_info_e_x_t.html", null ],
+    [ "VkDescriptorBufferBindingPushDescriptorBufferHandleEXT", "struct_vk_descriptor_buffer_binding_push_descriptor_buffer_handle_e_x_t.html", null ],
     [ "VkDescriptorBufferInfo", "struct_vk_descriptor_buffer_info.html", null ],
+    [ "VkDescriptorDataEXT", "union_vk_descriptor_data_e_x_t.html", null ],
+    [ "VkDescriptorGetInfoEXT", "struct_vk_descriptor_get_info_e_x_t.html", null ],
     [ "VkDescriptorImageInfo", "struct_vk_descriptor_image_info.html", null ],
     [ "VkDescriptorPoolCreateInfo", "struct_vk_descriptor_pool_create_info.html", null ],
     [ "VkDescriptorPoolInlineUniformBlockCreateInfo", "struct_vk_descriptor_pool_inline_uniform_block_create_info.html", null ],
     [ "VkDescriptorPoolSize", "struct_vk_descriptor_pool_size.html", null ],
     [ "VkDescriptorSetAllocateInfo", "struct_vk_descriptor_set_allocate_info.html", null ],
+    [ "VkDescriptorSetBindingReferenceVALVE", "struct_vk_descriptor_set_binding_reference_v_a_l_v_e.html", null ],
     [ "VkDescriptorSetLayoutBinding", "struct_vk_descriptor_set_layout_binding.html", null ],
     [ "VkDescriptorSetLayoutBindingFlagsCreateInfo", "struct_vk_descriptor_set_layout_binding_flags_create_info.html", null ],
     [ "VkDescriptorSetLayoutCreateInfo", "struct_vk_descriptor_set_layout_create_info.html", null ],
+    [ "VkDescriptorSetLayoutHostMappingInfoVALVE", "struct_vk_descriptor_set_layout_host_mapping_info_v_a_l_v_e.html", null ],
     [ "VkDescriptorSetLayoutSupport", "struct_vk_descriptor_set_layout_support.html", null ],
     [ "VkDescriptorSetVariableDescriptorCountAllocateInfo", "struct_vk_descriptor_set_variable_descriptor_count_allocate_info.html", null ],
     [ "VkDescriptorSetVariableDescriptorCountLayoutSupport", "struct_vk_descriptor_set_variable_descriptor_count_layout_support.html", null ],
     [ "VkDescriptorUpdateTemplateCreateInfo", "struct_vk_descriptor_update_template_create_info.html", null ],
     [ "VkDescriptorUpdateTemplateEntry", "struct_vk_descriptor_update_template_entry.html", null ],
+    [ "VkDeviceAddressBindingCallbackDataEXT", "struct_vk_device_address_binding_callback_data_e_x_t.html", null ],
     [ "VkDeviceBufferMemoryRequirements", "struct_vk_device_buffer_memory_requirements.html", null ],
     [ "VkDeviceCreateInfo", "struct_vk_device_create_info.html", null ],
     [ "VkDeviceDeviceMemoryReportCreateInfoEXT", "struct_vk_device_device_memory_report_create_info_e_x_t.html", null ],
     [ "VkDeviceDiagnosticsConfigCreateInfoNV", "struct_vk_device_diagnostics_config_create_info_n_v.html", null ],
     [ "VkDeviceEventInfoEXT", "struct_vk_device_event_info_e_x_t.html", null ],
+    [ "VkDeviceFaultAddressInfoEXT", "struct_vk_device_fault_address_info_e_x_t.html", null ],
+    [ "VkDeviceFaultCountsEXT", "struct_vk_device_fault_counts_e_x_t.html", null ],
+    [ "VkDeviceFaultInfoEXT", "struct_vk_device_fault_info_e_x_t.html", null ],
+    [ "VkDeviceFaultVendorBinaryHeaderVersionOneEXT", "struct_vk_device_fault_vendor_binary_header_version_one_e_x_t.html", null ],
+    [ "VkDeviceFaultVendorInfoEXT", "struct_vk_device_fault_vendor_info_e_x_t.html", null ],
     [ "VkDeviceGroupBindSparseInfo", "struct_vk_device_group_bind_sparse_info.html", null ],
     [ "VkDeviceGroupCommandBufferBeginInfo", "struct_vk_device_group_command_buffer_begin_info.html", null ],
     [ "VkDeviceGroupDeviceCreateInfo", "struct_vk_device_group_device_create_info.html", null ],
@@ -2781,6 +2910,8 @@ var hierarchy =
     [ "VkDeviceQueueCreateInfo", "struct_vk_device_queue_create_info.html", null ],
     [ "VkDeviceQueueGlobalPriorityCreateInfoKHR", "struct_vk_device_queue_global_priority_create_info_k_h_r.html", null ],
     [ "VkDeviceQueueInfo2", "struct_vk_device_queue_info2.html", null ],
+    [ "VkDirectDriverLoadingInfoLUNARG", "struct_vk_direct_driver_loading_info_l_u_n_a_r_g.html", null ],
+    [ "VkDirectDriverLoadingListLUNARG", "struct_vk_direct_driver_loading_list_l_u_n_a_r_g.html", null ],
     [ "VkDispatchIndirectCommand", "struct_vk_dispatch_indirect_command.html", null ],
     [ "VkDisplayEventInfoEXT", "struct_vk_display_event_info_e_x_t.html", null ],
     [ "VkDisplayModeCreateInfoKHR", "struct_vk_display_mode_create_info_k_h_r.html", null ],
@@ -2800,6 +2931,7 @@ var hierarchy =
     [ "VkDisplaySurfaceCreateInfoKHR", "struct_vk_display_surface_create_info_k_h_r.html", null ],
     [ "VkDrawIndexedIndirectCommand", "struct_vk_draw_indexed_indirect_command.html", null ],
     [ "VkDrawIndirectCommand", "struct_vk_draw_indirect_command.html", null ],
+    [ "VkDrawMeshTasksIndirectCommandEXT", "struct_vk_draw_mesh_tasks_indirect_command_e_x_t.html", null ],
     [ "VkDrawMeshTasksIndirectCommandNV", "struct_vk_draw_mesh_tasks_indirect_command_n_v.html", null ],
     [ "VkDrmFormatModifierProperties2EXT", "struct_vk_drm_format_modifier_properties2_e_x_t.html", null ],
     [ "VkDrmFormatModifierPropertiesEXT", "struct_vk_drm_format_modifier_properties_e_x_t.html", null ],
@@ -2840,12 +2972,16 @@ var hierarchy =
     [ "VkGeometryNV", "struct_vk_geometry_n_v.html", null ],
     [ "VkGeometryTrianglesNV", "struct_vk_geometry_triangles_n_v.html", null ],
     [ "VkGraphicsPipelineCreateInfo", "struct_vk_graphics_pipeline_create_info.html", null ],
+    [ "VkGraphicsPipelineLibraryCreateInfoEXT", "struct_vk_graphics_pipeline_library_create_info_e_x_t.html", null ],
     [ "VkGraphicsPipelineShaderGroupsCreateInfoNV", "struct_vk_graphics_pipeline_shader_groups_create_info_n_v.html", null ],
     [ "VkGraphicsShaderGroupCreateInfoNV", "struct_vk_graphics_shader_group_create_info_n_v.html", null ],
     [ "VkHdrMetadataEXT", "struct_vk_hdr_metadata_e_x_t.html", null ],
     [ "VkHeadlessSurfaceCreateInfoEXT", "struct_vk_headless_surface_create_info_e_x_t.html", null ],
     [ "VkImageBlit", "struct_vk_image_blit.html", null ],
     [ "VkImageBlit2", "struct_vk_image_blit2.html", null ],
+    [ "VkImageCaptureDescriptorDataInfoEXT", "struct_vk_image_capture_descriptor_data_info_e_x_t.html", null ],
+    [ "VkImageCompressionControlEXT", "struct_vk_image_compression_control_e_x_t.html", null ],
+    [ "VkImageCompressionPropertiesEXT", "struct_vk_image_compression_properties_e_x_t.html", null ],
     [ "VkImageCopy", "struct_vk_image_copy.html", null ],
     [ "VkImageCopy2", "struct_vk_image_copy2.html", null ],
     [ "VkImageCreateInfo", "struct_vk_image_create_info.html", null ],
@@ -2864,14 +3000,18 @@ var hierarchy =
     [ "VkImageSparseMemoryRequirementsInfo2", "struct_vk_image_sparse_memory_requirements_info2.html", null ],
     [ "VkImageStencilUsageCreateInfo", "struct_vk_image_stencil_usage_create_info.html", null ],
     [ "VkImageSubresource", "struct_vk_image_subresource.html", null ],
+    [ "VkImageSubresource2EXT", "struct_vk_image_subresource2_e_x_t.html", null ],
     [ "VkImageSubresourceLayers", "struct_vk_image_subresource_layers.html", null ],
     [ "VkImageSubresourceRange", "struct_vk_image_subresource_range.html", null ],
     [ "VkImageSwapchainCreateInfoKHR", "struct_vk_image_swapchain_create_info_k_h_r.html", null ],
     [ "VkImageViewAddressPropertiesNVX", "struct_vk_image_view_address_properties_n_v_x.html", null ],
     [ "VkImageViewASTCDecodeModeEXT", "struct_vk_image_view_a_s_t_c_decode_mode_e_x_t.html", null ],
+    [ "VkImageViewCaptureDescriptorDataInfoEXT", "struct_vk_image_view_capture_descriptor_data_info_e_x_t.html", null ],
     [ "VkImageViewCreateInfo", "struct_vk_image_view_create_info.html", null ],
     [ "VkImageViewHandleInfoNVX", "struct_vk_image_view_handle_info_n_v_x.html", null ],
     [ "VkImageViewMinLodCreateInfoEXT", "struct_vk_image_view_min_lod_create_info_e_x_t.html", null ],
+    [ "VkImageViewSampleWeightCreateInfoQCOM", "struct_vk_image_view_sample_weight_create_info_q_c_o_m.html", null ],
+    [ "VkImageViewSlicedCreateInfoEXT", "struct_vk_image_view_sliced_create_info_e_x_t.html", null ],
     [ "VkImageViewUsageCreateInfo", "struct_vk_image_view_usage_create_info.html", null ],
     [ "VkImportFenceFdInfoKHR", "struct_vk_import_fence_fd_info_k_h_r.html", null ],
     [ "VkImportMemoryFdInfoKHR", "struct_vk_import_memory_fd_info_k_h_r.html", null ],
@@ -2896,19 +3036,35 @@ var hierarchy =
     [ "VkMemoryGetRemoteAddressInfoNV", "struct_vk_memory_get_remote_address_info_n_v.html", null ],
     [ "VkMemoryHeap", "struct_vk_memory_heap.html", null ],
     [ "VkMemoryHostPointerPropertiesEXT", "struct_vk_memory_host_pointer_properties_e_x_t.html", null ],
+    [ "VkMemoryMapInfoKHR", "struct_vk_memory_map_info_k_h_r.html", null ],
     [ "VkMemoryOpaqueCaptureAddressAllocateInfo", "struct_vk_memory_opaque_capture_address_allocate_info.html", null ],
     [ "VkMemoryPriorityAllocateInfoEXT", "struct_vk_memory_priority_allocate_info_e_x_t.html", null ],
     [ "VkMemoryRequirements", "struct_vk_memory_requirements.html", null ],
     [ "VkMemoryRequirements2", "struct_vk_memory_requirements2.html", null ],
     [ "VkMemoryType", "struct_vk_memory_type.html", null ],
+    [ "VkMemoryUnmapInfoKHR", "struct_vk_memory_unmap_info_k_h_r.html", null ],
+    [ "VkMicromapBuildInfoEXT", "struct_vk_micromap_build_info_e_x_t.html", null ],
+    [ "VkMicromapBuildSizesInfoEXT", "struct_vk_micromap_build_sizes_info_e_x_t.html", null ],
+    [ "VkMicromapCreateInfoEXT", "struct_vk_micromap_create_info_e_x_t.html", null ],
+    [ "VkMicromapTriangleEXT", "struct_vk_micromap_triangle_e_x_t.html", null ],
+    [ "VkMicromapUsageEXT", "struct_vk_micromap_usage_e_x_t.html", null ],
+    [ "VkMicromapVersionInfoEXT", "struct_vk_micromap_version_info_e_x_t.html", null ],
     [ "VkMultiDrawIndexedInfoEXT", "struct_vk_multi_draw_indexed_info_e_x_t.html", null ],
     [ "VkMultiDrawInfoEXT", "struct_vk_multi_draw_info_e_x_t.html", null ],
+    [ "VkMultisampledRenderToSingleSampledInfoEXT", "struct_vk_multisampled_render_to_single_sampled_info_e_x_t.html", null ],
     [ "VkMultisamplePropertiesEXT", "struct_vk_multisample_properties_e_x_t.html", null ],
     [ "VkMultiviewPerViewAttributesInfoNVX", "struct_vk_multiview_per_view_attributes_info_n_v_x.html", null ],
-    [ "VkMutableDescriptorTypeCreateInfoVALVE", "struct_vk_mutable_descriptor_type_create_info_v_a_l_v_e.html", null ],
-    [ "VkMutableDescriptorTypeListVALVE", "struct_vk_mutable_descriptor_type_list_v_a_l_v_e.html", null ],
+    [ "VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM", "struct_vk_multiview_per_view_render_areas_render_pass_begin_info_q_c_o_m.html", null ],
+    [ "VkMutableDescriptorTypeCreateInfoEXT", "struct_vk_mutable_descriptor_type_create_info_e_x_t.html", null ],
+    [ "VkMutableDescriptorTypeListEXT", "struct_vk_mutable_descriptor_type_list_e_x_t.html", null ],
     [ "VkOffset2D", "struct_vk_offset2_d.html", null ],
     [ "VkOffset3D", "struct_vk_offset3_d.html", null ],
+    [ "VkOpaqueCaptureDescriptorDataCreateInfoEXT", "struct_vk_opaque_capture_descriptor_data_create_info_e_x_t.html", null ],
+    [ "VkOpticalFlowExecuteInfoNV", "struct_vk_optical_flow_execute_info_n_v.html", null ],
+    [ "VkOpticalFlowImageFormatInfoNV", "struct_vk_optical_flow_image_format_info_n_v.html", null ],
+    [ "VkOpticalFlowImageFormatPropertiesNV", "struct_vk_optical_flow_image_format_properties_n_v.html", null ],
+    [ "VkOpticalFlowSessionCreateInfoNV", "struct_vk_optical_flow_session_create_info_n_v.html", null ],
+    [ "VkOpticalFlowSessionCreatePrivateDataInfoNV", "struct_vk_optical_flow_session_create_private_data_info_n_v.html", null ],
     [ "VkPastPresentationTimingGOOGLE", "struct_vk_past_presentation_timing_g_o_o_g_l_e.html", null ],
     [ "VkPerformanceConfigurationAcquireInfoINTEL", "struct_vk_performance_configuration_acquire_info_i_n_t_e_l.html", null ],
     [ "VkPerformanceCounterDescriptionKHR", "struct_vk_performance_counter_description_k_h_r.html", null ],
@@ -2925,12 +3081,18 @@ var hierarchy =
     [ "VkPhysicalDevice8BitStorageFeatures", "struct_vk_physical_device8_bit_storage_features.html", null ],
     [ "VkPhysicalDeviceAccelerationStructureFeaturesKHR", "struct_vk_physical_device_acceleration_structure_features_k_h_r.html", null ],
     [ "VkPhysicalDeviceAccelerationStructurePropertiesKHR", "struct_vk_physical_device_acceleration_structure_properties_k_h_r.html", null ],
+    [ "VkPhysicalDeviceAddressBindingReportFeaturesEXT", "struct_vk_physical_device_address_binding_report_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceAmigoProfilingFeaturesSEC", "struct_vk_physical_device_amigo_profiling_features_s_e_c.html", null ],
     [ "VkPhysicalDeviceASTCDecodeFeaturesEXT", "struct_vk_physical_device_a_s_t_c_decode_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT", "struct_vk_physical_device_attachment_feedback_loop_dynamic_state_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT", "struct_vk_physical_device_attachment_feedback_loop_layout_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT", "struct_vk_physical_device_blend_operation_advanced_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT", "struct_vk_physical_device_blend_operation_advanced_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceBorderColorSwizzleFeaturesEXT", "struct_vk_physical_device_border_color_swizzle_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceBufferDeviceAddressFeatures", "struct_vk_physical_device_buffer_device_address_features.html", null ],
     [ "VkPhysicalDeviceBufferDeviceAddressFeaturesEXT", "struct_vk_physical_device_buffer_device_address_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI", "struct_vk_physical_device_cluster_culling_shader_features_h_u_a_w_e_i.html", null ],
+    [ "VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI", "struct_vk_physical_device_cluster_culling_shader_properties_h_u_a_w_e_i.html", null ],
     [ "VkPhysicalDeviceCoherentMemoryFeaturesAMD", "struct_vk_physical_device_coherent_memory_features_a_m_d.html", null ],
     [ "VkPhysicalDeviceColorWriteEnableFeaturesEXT", "struct_vk_physical_device_color_write_enable_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceComputeShaderDerivativesFeaturesNV", "struct_vk_physical_device_compute_shader_derivatives_features_n_v.html", null ],
@@ -2938,16 +3100,23 @@ var hierarchy =
     [ "VkPhysicalDeviceConservativeRasterizationPropertiesEXT", "struct_vk_physical_device_conservative_rasterization_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceCooperativeMatrixFeaturesNV", "struct_vk_physical_device_cooperative_matrix_features_n_v.html", null ],
     [ "VkPhysicalDeviceCooperativeMatrixPropertiesNV", "struct_vk_physical_device_cooperative_matrix_properties_n_v.html", null ],
+    [ "VkPhysicalDeviceCopyMemoryIndirectFeaturesNV", "struct_vk_physical_device_copy_memory_indirect_features_n_v.html", null ],
+    [ "VkPhysicalDeviceCopyMemoryIndirectPropertiesNV", "struct_vk_physical_device_copy_memory_indirect_properties_n_v.html", null ],
     [ "VkPhysicalDeviceCornerSampledImageFeaturesNV", "struct_vk_physical_device_corner_sampled_image_features_n_v.html", null ],
     [ "VkPhysicalDeviceCoverageReductionModeFeaturesNV", "struct_vk_physical_device_coverage_reduction_mode_features_n_v.html", null ],
     [ "VkPhysicalDeviceCustomBorderColorFeaturesEXT", "struct_vk_physical_device_custom_border_color_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceCustomBorderColorPropertiesEXT", "struct_vk_physical_device_custom_border_color_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV", "struct_vk_physical_device_dedicated_allocation_image_aliasing_features_n_v.html", null ],
+    [ "VkPhysicalDeviceDepthClampZeroOneFeaturesEXT", "struct_vk_physical_device_depth_clamp_zero_one_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceDepthClipControlFeaturesEXT", "struct_vk_physical_device_depth_clip_control_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceDepthClipEnableFeaturesEXT", "struct_vk_physical_device_depth_clip_enable_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceDepthStencilResolveProperties", "struct_vk_physical_device_depth_stencil_resolve_properties.html", null ],
+    [ "VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT", "struct_vk_physical_device_descriptor_buffer_density_map_properties_e_x_t.html", null ],
+    [ "VkPhysicalDeviceDescriptorBufferFeaturesEXT", "struct_vk_physical_device_descriptor_buffer_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceDescriptorBufferPropertiesEXT", "struct_vk_physical_device_descriptor_buffer_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceDescriptorIndexingFeatures", "struct_vk_physical_device_descriptor_indexing_features.html", null ],
     [ "VkPhysicalDeviceDescriptorIndexingProperties", "struct_vk_physical_device_descriptor_indexing_properties.html", null ],
+    [ "VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE", "struct_vk_physical_device_descriptor_set_host_mapping_features_v_a_l_v_e.html", null ],
     [ "VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV", "struct_vk_physical_device_device_generated_commands_features_n_v.html", null ],
     [ "VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV", "struct_vk_physical_device_device_generated_commands_properties_n_v.html", null ],
     [ "VkPhysicalDeviceDeviceMemoryReportFeaturesEXT", "struct_vk_physical_device_device_memory_report_features_e_x_t.html", null ],
@@ -2958,6 +3127,8 @@ var hierarchy =
     [ "VkPhysicalDeviceDynamicRenderingFeatures", "struct_vk_physical_device_dynamic_rendering_features.html", null ],
     [ "VkPhysicalDeviceExclusiveScissorFeaturesNV", "struct_vk_physical_device_exclusive_scissor_features_n_v.html", null ],
     [ "VkPhysicalDeviceExtendedDynamicState2FeaturesEXT", "struct_vk_physical_device_extended_dynamic_state2_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceExtendedDynamicState3FeaturesEXT", "struct_vk_physical_device_extended_dynamic_state3_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceExtendedDynamicState3PropertiesEXT", "struct_vk_physical_device_extended_dynamic_state3_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceExtendedDynamicStateFeaturesEXT", "struct_vk_physical_device_extended_dynamic_state_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceExternalBufferInfo", "struct_vk_physical_device_external_buffer_info.html", null ],
     [ "VkPhysicalDeviceExternalFenceInfo", "struct_vk_physical_device_external_fence_info.html", null ],
@@ -2965,6 +3136,7 @@ var hierarchy =
     [ "VkPhysicalDeviceExternalMemoryHostPropertiesEXT", "struct_vk_physical_device_external_memory_host_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceExternalMemoryRDMAFeaturesNV", "struct_vk_physical_device_external_memory_r_d_m_a_features_n_v.html", null ],
     [ "VkPhysicalDeviceExternalSemaphoreInfo", "struct_vk_physical_device_external_semaphore_info.html", null ],
+    [ "VkPhysicalDeviceFaultFeaturesEXT", "struct_vk_physical_device_fault_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceFeatures", "struct_vk_physical_device_features.html", null ],
     [ "VkPhysicalDeviceFeatures2", "struct_vk_physical_device_features2.html", null ],
     [ "VkPhysicalDeviceFloatControlsProperties", "struct_vk_physical_device_float_controls_properties.html", null ],
@@ -2974,7 +3146,8 @@ var hierarchy =
     [ "VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM", "struct_vk_physical_device_fragment_density_map_offset_features_q_c_o_m.html", null ],
     [ "VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM", "struct_vk_physical_device_fragment_density_map_offset_properties_q_c_o_m.html", null ],
     [ "VkPhysicalDeviceFragmentDensityMapPropertiesEXT", "struct_vk_physical_device_fragment_density_map_properties_e_x_t.html", null ],
-    [ "VkPhysicalDeviceFragmentShaderBarycentricFeaturesNV", "struct_vk_physical_device_fragment_shader_barycentric_features_n_v.html", null ],
+    [ "VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR", "struct_vk_physical_device_fragment_shader_barycentric_features_k_h_r.html", null ],
+    [ "VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR", "struct_vk_physical_device_fragment_shader_barycentric_properties_k_h_r.html", null ],
     [ "VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT", "struct_vk_physical_device_fragment_shader_interlock_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV", "struct_vk_physical_device_fragment_shading_rate_enums_features_n_v.html", null ],
     [ "VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV", "struct_vk_physical_device_fragment_shading_rate_enums_properties_n_v.html", null ],
@@ -2982,13 +3155,21 @@ var hierarchy =
     [ "VkPhysicalDeviceFragmentShadingRateKHR", "struct_vk_physical_device_fragment_shading_rate_k_h_r.html", null ],
     [ "VkPhysicalDeviceFragmentShadingRatePropertiesKHR", "struct_vk_physical_device_fragment_shading_rate_properties_k_h_r.html", null ],
     [ "VkPhysicalDeviceGlobalPriorityQueryFeaturesKHR", "struct_vk_physical_device_global_priority_query_features_k_h_r.html", null ],
+    [ "VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT", "struct_vk_physical_device_graphics_pipeline_library_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT", "struct_vk_physical_device_graphics_pipeline_library_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceGroupProperties", "struct_vk_physical_device_group_properties.html", null ],
     [ "VkPhysicalDeviceHostQueryResetFeatures", "struct_vk_physical_device_host_query_reset_features.html", null ],
     [ "VkPhysicalDeviceIDProperties", "struct_vk_physical_device_i_d_properties.html", null ],
+    [ "VkPhysicalDeviceImage2DViewOf3DFeaturesEXT", "struct_vk_physical_device_image2_d_view_of3_d_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceImageCompressionControlFeaturesEXT", "struct_vk_physical_device_image_compression_control_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT", "struct_vk_physical_device_image_compression_control_swapchain_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceImageDrmFormatModifierInfoEXT", "struct_vk_physical_device_image_drm_format_modifier_info_e_x_t.html", null ],
     [ "VkPhysicalDeviceImageFormatInfo2", "struct_vk_physical_device_image_format_info2.html", null ],
     [ "VkPhysicalDeviceImagelessFramebufferFeatures", "struct_vk_physical_device_imageless_framebuffer_features.html", null ],
+    [ "VkPhysicalDeviceImageProcessingFeaturesQCOM", "struct_vk_physical_device_image_processing_features_q_c_o_m.html", null ],
+    [ "VkPhysicalDeviceImageProcessingPropertiesQCOM", "struct_vk_physical_device_image_processing_properties_q_c_o_m.html", null ],
     [ "VkPhysicalDeviceImageRobustnessFeatures", "struct_vk_physical_device_image_robustness_features.html", null ],
+    [ "VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT", "struct_vk_physical_device_image_sliced_view_of3_d_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceImageViewImageFormatInfoEXT", "struct_vk_physical_device_image_view_image_format_info_e_x_t.html", null ],
     [ "VkPhysicalDeviceImageViewMinLodFeaturesEXT", "struct_vk_physical_device_image_view_min_lod_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceIndexTypeUint8FeaturesEXT", "struct_vk_physical_device_index_type_uint8_features_e_x_t.html", null ],
@@ -2996,6 +3177,7 @@ var hierarchy =
     [ "VkPhysicalDeviceInlineUniformBlockFeatures", "struct_vk_physical_device_inline_uniform_block_features.html", null ],
     [ "VkPhysicalDeviceInlineUniformBlockProperties", "struct_vk_physical_device_inline_uniform_block_properties.html", null ],
     [ "VkPhysicalDeviceInvocationMaskFeaturesHUAWEI", "struct_vk_physical_device_invocation_mask_features_h_u_a_w_e_i.html", null ],
+    [ "VkPhysicalDeviceLegacyDitheringFeaturesEXT", "struct_vk_physical_device_legacy_dithering_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceLimits", "struct_vk_physical_device_limits.html", null ],
     [ "VkPhysicalDeviceLinearColorAttachmentFeaturesNV", "struct_vk_physical_device_linear_color_attachment_features_n_v.html", null ],
     [ "VkPhysicalDeviceLineRasterizationFeaturesEXT", "struct_vk_physical_device_line_rasterization_features_e_x_t.html", null ],
@@ -3004,26 +3186,45 @@ var hierarchy =
     [ "VkPhysicalDeviceMaintenance4Features", "struct_vk_physical_device_maintenance4_features.html", null ],
     [ "VkPhysicalDeviceMaintenance4Properties", "struct_vk_physical_device_maintenance4_properties.html", null ],
     [ "VkPhysicalDeviceMemoryBudgetPropertiesEXT", "struct_vk_physical_device_memory_budget_properties_e_x_t.html", null ],
+    [ "VkPhysicalDeviceMemoryDecompressionFeaturesNV", "struct_vk_physical_device_memory_decompression_features_n_v.html", null ],
+    [ "VkPhysicalDeviceMemoryDecompressionPropertiesNV", "struct_vk_physical_device_memory_decompression_properties_n_v.html", null ],
     [ "VkPhysicalDeviceMemoryPriorityFeaturesEXT", "struct_vk_physical_device_memory_priority_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceMemoryProperties", "struct_vk_physical_device_memory_properties.html", null ],
     [ "VkPhysicalDeviceMemoryProperties2", "struct_vk_physical_device_memory_properties2.html", null ],
+    [ "VkPhysicalDeviceMeshShaderFeaturesEXT", "struct_vk_physical_device_mesh_shader_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceMeshShaderFeaturesNV", "struct_vk_physical_device_mesh_shader_features_n_v.html", null ],
+    [ "VkPhysicalDeviceMeshShaderPropertiesEXT", "struct_vk_physical_device_mesh_shader_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceMeshShaderPropertiesNV", "struct_vk_physical_device_mesh_shader_properties_n_v.html", null ],
     [ "VkPhysicalDeviceMultiDrawFeaturesEXT", "struct_vk_physical_device_multi_draw_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceMultiDrawPropertiesEXT", "struct_vk_physical_device_multi_draw_properties_e_x_t.html", null ],
+    [ "VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT", "struct_vk_physical_device_multisampled_render_to_single_sampled_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceMultiviewFeatures", "struct_vk_physical_device_multiview_features.html", null ],
     [ "VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX", "struct_vk_physical_device_multiview_per_view_attributes_properties_n_v_x.html", null ],
+    [ "VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM", "struct_vk_physical_device_multiview_per_view_render_areas_features_q_c_o_m.html", null ],
+    [ "VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM", "struct_vk_physical_device_multiview_per_view_viewports_features_q_c_o_m.html", null ],
     [ "VkPhysicalDeviceMultiviewProperties", "struct_vk_physical_device_multiview_properties.html", null ],
-    [ "VkPhysicalDeviceMutableDescriptorTypeFeaturesVALVE", "struct_vk_physical_device_mutable_descriptor_type_features_v_a_l_v_e.html", null ],
+    [ "VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT", "struct_vk_physical_device_mutable_descriptor_type_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT", "struct_vk_physical_device_non_seamless_cube_map_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceOpacityMicromapFeaturesEXT", "struct_vk_physical_device_opacity_micromap_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceOpacityMicromapPropertiesEXT", "struct_vk_physical_device_opacity_micromap_properties_e_x_t.html", null ],
+    [ "VkPhysicalDeviceOpticalFlowFeaturesNV", "struct_vk_physical_device_optical_flow_features_n_v.html", null ],
+    [ "VkPhysicalDeviceOpticalFlowPropertiesNV", "struct_vk_physical_device_optical_flow_properties_n_v.html", null ],
     [ "VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT", "struct_vk_physical_device_pageable_device_local_memory_features_e_x_t.html", null ],
     [ "VkPhysicalDevicePCIBusInfoPropertiesEXT", "struct_vk_physical_device_p_c_i_bus_info_properties_e_x_t.html", null ],
     [ "VkPhysicalDevicePerformanceQueryFeaturesKHR", "struct_vk_physical_device_performance_query_features_k_h_r.html", null ],
     [ "VkPhysicalDevicePerformanceQueryPropertiesKHR", "struct_vk_physical_device_performance_query_properties_k_h_r.html", null ],
     [ "VkPhysicalDevicePipelineCreationCacheControlFeatures", "struct_vk_physical_device_pipeline_creation_cache_control_features.html", null ],
     [ "VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR", "struct_vk_physical_device_pipeline_executable_properties_features_k_h_r.html", null ],
+    [ "VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT", "struct_vk_physical_device_pipeline_library_group_handles_features_e_x_t.html", null ],
+    [ "VkPhysicalDevicePipelinePropertiesFeaturesEXT", "struct_vk_physical_device_pipeline_properties_features_e_x_t.html", null ],
+    [ "VkPhysicalDevicePipelineProtectedAccessFeaturesEXT", "struct_vk_physical_device_pipeline_protected_access_features_e_x_t.html", null ],
+    [ "VkPhysicalDevicePipelineRobustnessFeaturesEXT", "struct_vk_physical_device_pipeline_robustness_features_e_x_t.html", null ],
+    [ "VkPhysicalDevicePipelineRobustnessPropertiesEXT", "struct_vk_physical_device_pipeline_robustness_properties_e_x_t.html", null ],
     [ "VkPhysicalDevicePointClippingProperties", "struct_vk_physical_device_point_clipping_properties.html", null ],
+    [ "VkPhysicalDevicePresentBarrierFeaturesNV", "struct_vk_physical_device_present_barrier_features_n_v.html", null ],
     [ "VkPhysicalDevicePresentIdFeaturesKHR", "struct_vk_physical_device_present_id_features_k_h_r.html", null ],
     [ "VkPhysicalDevicePresentWaitFeaturesKHR", "struct_vk_physical_device_present_wait_features_k_h_r.html", null ],
+    [ "VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT", "struct_vk_physical_device_primitives_generated_query_features_e_x_t.html", null ],
     [ "VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT", "struct_vk_physical_device_primitive_topology_list_restart_features_e_x_t.html", null ],
     [ "VkPhysicalDevicePrivateDataFeatures", "struct_vk_physical_device_private_data_features.html", null ],
     [ "VkPhysicalDeviceProperties", "struct_vk_physical_device_properties.html", null ],
@@ -3033,11 +3234,15 @@ var hierarchy =
     [ "VkPhysicalDeviceProvokingVertexFeaturesEXT", "struct_vk_physical_device_provoking_vertex_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceProvokingVertexPropertiesEXT", "struct_vk_physical_device_provoking_vertex_properties_e_x_t.html", null ],
     [ "VkPhysicalDevicePushDescriptorPropertiesKHR", "struct_vk_physical_device_push_descriptor_properties_k_h_r.html", null ],
-    [ "VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM", "struct_vk_physical_device_rasterization_order_attachment_access_features_a_r_m.html", null ],
+    [ "VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT", "struct_vk_physical_device_rasterization_order_attachment_access_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceRayQueryFeaturesKHR", "struct_vk_physical_device_ray_query_features_k_h_r.html", null ],
+    [ "VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV", "struct_vk_physical_device_ray_tracing_invocation_reorder_features_n_v.html", null ],
+    [ "VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV", "struct_vk_physical_device_ray_tracing_invocation_reorder_properties_n_v.html", null ],
+    [ "VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR", "struct_vk_physical_device_ray_tracing_maintenance1_features_k_h_r.html", null ],
     [ "VkPhysicalDeviceRayTracingMotionBlurFeaturesNV", "struct_vk_physical_device_ray_tracing_motion_blur_features_n_v.html", null ],
     [ "VkPhysicalDeviceRayTracingPipelineFeaturesKHR", "struct_vk_physical_device_ray_tracing_pipeline_features_k_h_r.html", null ],
     [ "VkPhysicalDeviceRayTracingPipelinePropertiesKHR", "struct_vk_physical_device_ray_tracing_pipeline_properties_k_h_r.html", null ],
+    [ "VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR", "struct_vk_physical_device_ray_tracing_position_fetch_features_k_h_r.html", null ],
     [ "VkPhysicalDeviceRayTracingPropertiesNV", "struct_vk_physical_device_ray_tracing_properties_n_v.html", null ],
     [ "VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV", "struct_vk_physical_device_representative_fragment_test_features_n_v.html", null ],
     [ "VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT", "struct_vk_physical_device_r_g_b_a10_x6_formats_features_e_x_t.html", null ],
@@ -3052,21 +3257,31 @@ var hierarchy =
     [ "VkPhysicalDeviceShaderAtomicFloatFeaturesEXT", "struct_vk_physical_device_shader_atomic_float_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceShaderAtomicInt64Features", "struct_vk_physical_device_shader_atomic_int64_features.html", null ],
     [ "VkPhysicalDeviceShaderClockFeaturesKHR", "struct_vk_physical_device_shader_clock_features_k_h_r.html", null ],
+    [ "VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM", "struct_vk_physical_device_shader_core_builtins_features_a_r_m.html", null ],
+    [ "VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM", "struct_vk_physical_device_shader_core_builtins_properties_a_r_m.html", null ],
     [ "VkPhysicalDeviceShaderCoreProperties2AMD", "struct_vk_physical_device_shader_core_properties2_a_m_d.html", null ],
     [ "VkPhysicalDeviceShaderCorePropertiesAMD", "struct_vk_physical_device_shader_core_properties_a_m_d.html", null ],
+    [ "VkPhysicalDeviceShaderCorePropertiesARM", "struct_vk_physical_device_shader_core_properties_a_r_m.html", null ],
     [ "VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures", "struct_vk_physical_device_shader_demote_to_helper_invocation_features.html", null ],
     [ "VkPhysicalDeviceShaderDrawParametersFeatures", "struct_vk_physical_device_shader_draw_parameters_features.html", null ],
+    [ "VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD", "struct_vk_physical_device_shader_early_and_late_fragment_tests_features_a_m_d.html", null ],
     [ "VkPhysicalDeviceShaderFloat16Int8Features", "struct_vk_physical_device_shader_float16_int8_features.html", null ],
     [ "VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT", "struct_vk_physical_device_shader_image_atomic_int64_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceShaderImageFootprintFeaturesNV", "struct_vk_physical_device_shader_image_footprint_features_n_v.html", null ],
     [ "VkPhysicalDeviceShaderIntegerDotProductFeatures", "struct_vk_physical_device_shader_integer_dot_product_features.html", null ],
     [ "VkPhysicalDeviceShaderIntegerDotProductProperties", "struct_vk_physical_device_shader_integer_dot_product_properties.html", null ],
     [ "VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL", "struct_vk_physical_device_shader_integer_functions2_features_i_n_t_e_l.html", null ],
+    [ "VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT", "struct_vk_physical_device_shader_module_identifier_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT", "struct_vk_physical_device_shader_module_identifier_properties_e_x_t.html", null ],
+    [ "VkPhysicalDeviceShaderObjectFeaturesEXT", "struct_vk_physical_device_shader_object_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceShaderObjectPropertiesEXT", "struct_vk_physical_device_shader_object_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceShaderSMBuiltinsFeaturesNV", "struct_vk_physical_device_shader_s_m_builtins_features_n_v.html", null ],
     [ "VkPhysicalDeviceShaderSMBuiltinsPropertiesNV", "struct_vk_physical_device_shader_s_m_builtins_properties_n_v.html", null ],
     [ "VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures", "struct_vk_physical_device_shader_subgroup_extended_types_features.html", null ],
     [ "VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR", "struct_vk_physical_device_shader_subgroup_uniform_control_flow_features_k_h_r.html", null ],
     [ "VkPhysicalDeviceShaderTerminateInvocationFeatures", "struct_vk_physical_device_shader_terminate_invocation_features.html", null ],
+    [ "VkPhysicalDeviceShaderTileImageFeaturesEXT", "struct_vk_physical_device_shader_tile_image_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceShaderTileImagePropertiesEXT", "struct_vk_physical_device_shader_tile_image_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceShadingRateImageFeaturesNV", "struct_vk_physical_device_shading_rate_image_features_n_v.html", null ],
     [ "VkPhysicalDeviceShadingRateImagePropertiesNV", "struct_vk_physical_device_shading_rate_image_properties_n_v.html", null ],
     [ "VkPhysicalDeviceSparseImageFormatInfo2", "struct_vk_physical_device_sparse_image_format_info2.html", null ],
@@ -3074,13 +3289,16 @@ var hierarchy =
     [ "VkPhysicalDeviceSubgroupProperties", "struct_vk_physical_device_subgroup_properties.html", null ],
     [ "VkPhysicalDeviceSubgroupSizeControlFeatures", "struct_vk_physical_device_subgroup_size_control_features.html", null ],
     [ "VkPhysicalDeviceSubgroupSizeControlProperties", "struct_vk_physical_device_subgroup_size_control_properties.html", null ],
+    [ "VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT", "struct_vk_physical_device_subpass_merge_feedback_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceSubpassShadingFeaturesHUAWEI", "struct_vk_physical_device_subpass_shading_features_h_u_a_w_e_i.html", null ],
     [ "VkPhysicalDeviceSubpassShadingPropertiesHUAWEI", "struct_vk_physical_device_subpass_shading_properties_h_u_a_w_e_i.html", null ],
     [ "VkPhysicalDeviceSurfaceInfo2KHR", "struct_vk_physical_device_surface_info2_k_h_r.html", null ],
+    [ "VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT", "struct_vk_physical_device_swapchain_maintenance1_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceSynchronization2Features", "struct_vk_physical_device_synchronization2_features.html", null ],
     [ "VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT", "struct_vk_physical_device_texel_buffer_alignment_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceTexelBufferAlignmentProperties", "struct_vk_physical_device_texel_buffer_alignment_properties.html", null ],
     [ "VkPhysicalDeviceTextureCompressionASTCHDRFeatures", "struct_vk_physical_device_texture_compression_a_s_t_c_h_d_r_features.html", null ],
+    [ "VkPhysicalDeviceTilePropertiesFeaturesQCOM", "struct_vk_physical_device_tile_properties_features_q_c_o_m.html", null ],
     [ "VkPhysicalDeviceTimelineSemaphoreFeatures", "struct_vk_physical_device_timeline_semaphore_features.html", null ],
     [ "VkPhysicalDeviceTimelineSemaphoreProperties", "struct_vk_physical_device_timeline_semaphore_properties.html", null ],
     [ "VkPhysicalDeviceToolProperties", "struct_vk_physical_device_tool_properties.html", null ],
@@ -3091,10 +3309,13 @@ var hierarchy =
     [ "VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT", "struct_vk_physical_device_vertex_attribute_divisor_features_e_x_t.html", null ],
     [ "VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT", "struct_vk_physical_device_vertex_attribute_divisor_properties_e_x_t.html", null ],
     [ "VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT", "struct_vk_physical_device_vertex_input_dynamic_state_features_e_x_t.html", null ],
+    [ "VkPhysicalDeviceVideoFormatInfoKHR", "struct_vk_physical_device_video_format_info_k_h_r.html", null ],
     [ "VkPhysicalDeviceVulkan11Features", "struct_vk_physical_device_vulkan11_features.html", null ],
     [ "VkPhysicalDeviceVulkan11Properties", "struct_vk_physical_device_vulkan11_properties.html", null ],
     [ "VkPhysicalDeviceVulkan12Features", "struct_vk_physical_device_vulkan12_features.html", null ],
     [ "VkPhysicalDeviceVulkan12Properties", "struct_vk_physical_device_vulkan12_properties.html", null ],
+    [ "VkPhysicalDeviceVulkan13Features", "struct_vk_physical_device_vulkan13_features.html", null ],
+    [ "VkPhysicalDeviceVulkan13Properties", "struct_vk_physical_device_vulkan13_properties.html", null ],
     [ "VkPhysicalDeviceVulkanMemoryModelFeatures", "struct_vk_physical_device_vulkan_memory_model_features.html", null ],
     [ "VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR", "struct_vk_physical_device_workgroup_memory_explicit_layout_features_k_h_r.html", null ],
     [ "VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT", "struct_vk_physical_device_ycbcr2_plane444_formats_features_e_x_t.html", null ],
@@ -3126,6 +3347,7 @@ var hierarchy =
     [ "VkPipelineLayoutCreateInfo", "struct_vk_pipeline_layout_create_info.html", null ],
     [ "VkPipelineLibraryCreateInfoKHR", "struct_vk_pipeline_library_create_info_k_h_r.html", null ],
     [ "VkPipelineMultisampleStateCreateInfo", "struct_vk_pipeline_multisample_state_create_info.html", null ],
+    [ "VkPipelinePropertiesIdentifierEXT", "struct_vk_pipeline_properties_identifier_e_x_t.html", null ],
     [ "VkPipelineRasterizationConservativeStateCreateInfoEXT", "struct_vk_pipeline_rasterization_conservative_state_create_info_e_x_t.html", null ],
     [ "VkPipelineRasterizationDepthClipStateCreateInfoEXT", "struct_vk_pipeline_rasterization_depth_clip_state_create_info_e_x_t.html", null ],
     [ "VkPipelineRasterizationLineStateCreateInfoEXT", "struct_vk_pipeline_rasterization_line_state_create_info_e_x_t.html", null ],
@@ -3135,8 +3357,10 @@ var hierarchy =
     [ "VkPipelineRasterizationStateStreamCreateInfoEXT", "struct_vk_pipeline_rasterization_state_stream_create_info_e_x_t.html", null ],
     [ "VkPipelineRenderingCreateInfo", "struct_vk_pipeline_rendering_create_info.html", null ],
     [ "VkPipelineRepresentativeFragmentTestStateCreateInfoNV", "struct_vk_pipeline_representative_fragment_test_state_create_info_n_v.html", null ],
+    [ "VkPipelineRobustnessCreateInfoEXT", "struct_vk_pipeline_robustness_create_info_e_x_t.html", null ],
     [ "VkPipelineSampleLocationsStateCreateInfoEXT", "struct_vk_pipeline_sample_locations_state_create_info_e_x_t.html", null ],
     [ "VkPipelineShaderStageCreateInfo", "struct_vk_pipeline_shader_stage_create_info.html", null ],
+    [ "VkPipelineShaderStageModuleIdentifierCreateInfoEXT", "struct_vk_pipeline_shader_stage_module_identifier_create_info_e_x_t.html", null ],
     [ "VkPipelineShaderStageRequiredSubgroupSizeCreateInfo", "struct_vk_pipeline_shader_stage_required_subgroup_size_create_info.html", null ],
     [ "VkPipelineTessellationDomainOriginStateCreateInfo", "struct_vk_pipeline_tessellation_domain_origin_state_create_info.html", null ],
     [ "VkPipelineTessellationStateCreateInfo", "struct_vk_pipeline_tessellation_state_create_info.html", null ],
@@ -3158,6 +3382,7 @@ var hierarchy =
     [ "VkPrivateDataSlotCreateInfo", "struct_vk_private_data_slot_create_info.html", null ],
     [ "VkProtectedSubmitInfo", "struct_vk_protected_submit_info.html", null ],
     [ "VkPushConstantRange", "struct_vk_push_constant_range.html", null ],
+    [ "VkQueryLowLatencySupportNV", "struct_vk_query_low_latency_support_n_v.html", null ],
     [ "VkQueryPoolCreateInfo", "struct_vk_query_pool_create_info.html", null ],
     [ "VkQueryPoolPerformanceCreateInfoKHR", "struct_vk_query_pool_performance_create_info_k_h_r.html", null ],
     [ "VkQueryPoolPerformanceQueryCreateInfoINTEL", "struct_vk_query_pool_performance_query_create_info_i_n_t_e_l.html", null ],
@@ -3166,6 +3391,8 @@ var hierarchy =
     [ "VkQueueFamilyGlobalPriorityPropertiesKHR", "struct_vk_queue_family_global_priority_properties_k_h_r.html", null ],
     [ "VkQueueFamilyProperties", "struct_vk_queue_family_properties.html", null ],
     [ "VkQueueFamilyProperties2", "struct_vk_queue_family_properties2.html", null ],
+    [ "VkQueueFamilyQueryResultStatusPropertiesKHR", "struct_vk_queue_family_query_result_status_properties_k_h_r.html", null ],
+    [ "VkQueueFamilyVideoPropertiesKHR", "struct_vk_queue_family_video_properties_k_h_r.html", null ],
     [ "VkRayTracingPipelineCreateInfoKHR", "struct_vk_ray_tracing_pipeline_create_info_k_h_r.html", null ],
     [ "VkRayTracingPipelineCreateInfoNV", "struct_vk_ray_tracing_pipeline_create_info_n_v.html", null ],
     [ "VkRayTracingPipelineInterfaceCreateInfoKHR", "struct_vk_ray_tracing_pipeline_interface_create_info_k_h_r.html", null ],
@@ -3174,6 +3401,7 @@ var hierarchy =
     [ "VkRect2D", "struct_vk_rect2_d.html", null ],
     [ "VkRectLayerKHR", "struct_vk_rect_layer_k_h_r.html", null ],
     [ "VkRefreshCycleDurationGOOGLE", "struct_vk_refresh_cycle_duration_g_o_o_g_l_e.html", null ],
+    [ "VkReleaseSwapchainImagesInfoEXT", "struct_vk_release_swapchain_images_info_e_x_t.html", null ],
     [ "VkRenderingAttachmentInfo", "struct_vk_rendering_attachment_info.html", null ],
     [ "VkRenderingFragmentDensityMapAttachmentInfoEXT", "struct_vk_rendering_fragment_density_map_attachment_info_e_x_t.html", null ],
     [ "VkRenderingFragmentShadingRateAttachmentInfoKHR", "struct_vk_rendering_fragment_shading_rate_attachment_info_k_h_r.html", null ],
@@ -3182,15 +3410,21 @@ var hierarchy =
     [ "VkRenderPassBeginInfo", "struct_vk_render_pass_begin_info.html", null ],
     [ "VkRenderPassCreateInfo", "struct_vk_render_pass_create_info.html", null ],
     [ "VkRenderPassCreateInfo2", "struct_vk_render_pass_create_info2.html", null ],
+    [ "VkRenderPassCreationControlEXT", "struct_vk_render_pass_creation_control_e_x_t.html", null ],
+    [ "VkRenderPassCreationFeedbackCreateInfoEXT", "struct_vk_render_pass_creation_feedback_create_info_e_x_t.html", null ],
+    [ "VkRenderPassCreationFeedbackInfoEXT", "struct_vk_render_pass_creation_feedback_info_e_x_t.html", null ],
     [ "VkRenderPassFragmentDensityMapCreateInfoEXT", "struct_vk_render_pass_fragment_density_map_create_info_e_x_t.html", null ],
     [ "VkRenderPassInputAttachmentAspectCreateInfo", "struct_vk_render_pass_input_attachment_aspect_create_info.html", null ],
     [ "VkRenderPassMultiviewCreateInfo", "struct_vk_render_pass_multiview_create_info.html", null ],
     [ "VkRenderPassSampleLocationsBeginInfoEXT", "struct_vk_render_pass_sample_locations_begin_info_e_x_t.html", null ],
+    [ "VkRenderPassSubpassFeedbackCreateInfoEXT", "struct_vk_render_pass_subpass_feedback_create_info_e_x_t.html", null ],
+    [ "VkRenderPassSubpassFeedbackInfoEXT", "struct_vk_render_pass_subpass_feedback_info_e_x_t.html", null ],
     [ "VkRenderPassTransformBeginInfoQCOM", "struct_vk_render_pass_transform_begin_info_q_c_o_m.html", null ],
     [ "VkResolveImageInfo2", "struct_vk_resolve_image_info2.html", null ],
     [ "VkSampleLocationEXT", "struct_vk_sample_location_e_x_t.html", null ],
     [ "VkSampleLocationsInfoEXT", "struct_vk_sample_locations_info_e_x_t.html", null ],
     [ "VkSamplerBorderColorComponentMappingCreateInfoEXT", "struct_vk_sampler_border_color_component_mapping_create_info_e_x_t.html", null ],
+    [ "VkSamplerCaptureDescriptorDataInfoEXT", "struct_vk_sampler_capture_descriptor_data_info_e_x_t.html", null ],
     [ "VkSamplerCreateInfo", "struct_vk_sampler_create_info.html", null ],
     [ "VkSamplerCustomBorderColorCreateInfoEXT", "struct_vk_sampler_custom_border_color_create_info_e_x_t.html", null ],
     [ "VkSamplerReductionModeCreateInfo", "struct_vk_sampler_reduction_mode_create_info.html", null ],
@@ -3204,7 +3438,9 @@ var hierarchy =
     [ "VkSemaphoreTypeCreateInfo", "struct_vk_semaphore_type_create_info.html", null ],
     [ "VkSemaphoreWaitInfo", "struct_vk_semaphore_wait_info.html", null ],
     [ "VkSetStateFlagsIndirectCommandNV", "struct_vk_set_state_flags_indirect_command_n_v.html", null ],
+    [ "VkShaderCreateInfoEXT", "struct_vk_shader_create_info_e_x_t.html", null ],
     [ "VkShaderModuleCreateInfo", "struct_vk_shader_module_create_info.html", null ],
+    [ "VkShaderModuleIdentifierEXT", "struct_vk_shader_module_identifier_e_x_t.html", null ],
     [ "VkShaderModuleValidationCacheCreateInfoEXT", "struct_vk_shader_module_validation_cache_create_info_e_x_t.html", null ],
     [ "VkShaderResourceUsageAMD", "struct_vk_shader_resource_usage_a_m_d.html", null ],
     [ "VkShaderStatisticsInfoAMD", "struct_vk_shader_statistics_info_a_m_d.html", null ],
@@ -3234,20 +3470,33 @@ var hierarchy =
     [ "VkSubpassDescriptionDepthStencilResolve", "struct_vk_subpass_description_depth_stencil_resolve.html", null ],
     [ "VkSubpassEndInfo", "struct_vk_subpass_end_info.html", null ],
     [ "VkSubpassFragmentDensityMapOffsetEndInfoQCOM", "struct_vk_subpass_fragment_density_map_offset_end_info_q_c_o_m.html", null ],
+    [ "VkSubpassResolvePerformanceQueryEXT", "struct_vk_subpass_resolve_performance_query_e_x_t.html", null ],
     [ "VkSubpassSampleLocationsEXT", "struct_vk_subpass_sample_locations_e_x_t.html", null ],
     [ "VkSubpassShadingPipelineCreateInfoHUAWEI", "struct_vk_subpass_shading_pipeline_create_info_h_u_a_w_e_i.html", null ],
     [ "VkSubresourceLayout", "struct_vk_subresource_layout.html", null ],
+    [ "VkSubresourceLayout2EXT", "struct_vk_subresource_layout2_e_x_t.html", null ],
     [ "VkSurfaceCapabilities2EXT", "struct_vk_surface_capabilities2_e_x_t.html", null ],
     [ "VkSurfaceCapabilities2KHR", "struct_vk_surface_capabilities2_k_h_r.html", null ],
     [ "VkSurfaceCapabilitiesKHR", "struct_vk_surface_capabilities_k_h_r.html", null ],
+    [ "VkSurfaceCapabilitiesPresentBarrierNV", "struct_vk_surface_capabilities_present_barrier_n_v.html", null ],
     [ "VkSurfaceFormat2KHR", "struct_vk_surface_format2_k_h_r.html", null ],
     [ "VkSurfaceFormatKHR", "struct_vk_surface_format_k_h_r.html", null ],
+    [ "VkSurfacePresentModeCompatibilityEXT", "struct_vk_surface_present_mode_compatibility_e_x_t.html", null ],
+    [ "VkSurfacePresentModeEXT", "struct_vk_surface_present_mode_e_x_t.html", null ],
+    [ "VkSurfacePresentScalingCapabilitiesEXT", "struct_vk_surface_present_scaling_capabilities_e_x_t.html", null ],
     [ "VkSurfaceProtectedCapabilitiesKHR", "struct_vk_surface_protected_capabilities_k_h_r.html", null ],
     [ "VkSwapchainCounterCreateInfoEXT", "struct_vk_swapchain_counter_create_info_e_x_t.html", null ],
     [ "VkSwapchainCreateInfoKHR", "struct_vk_swapchain_create_info_k_h_r.html", null ],
     [ "VkSwapchainDisplayNativeHdrCreateInfoAMD", "struct_vk_swapchain_display_native_hdr_create_info_a_m_d.html", null ],
+    [ "VkSwapchainPresentBarrierCreateInfoNV", "struct_vk_swapchain_present_barrier_create_info_n_v.html", null ],
+    [ "VkSwapchainPresentFenceInfoEXT", "struct_vk_swapchain_present_fence_info_e_x_t.html", null ],
+    [ "VkSwapchainPresentModeInfoEXT", "struct_vk_swapchain_present_mode_info_e_x_t.html", null ],
+    [ "VkSwapchainPresentModesCreateInfoEXT", "struct_vk_swapchain_present_modes_create_info_e_x_t.html", null ],
+    [ "VkSwapchainPresentScalingCreateInfoEXT", "struct_vk_swapchain_present_scaling_create_info_e_x_t.html", null ],
     [ "VkTextureLODGatherFormatPropertiesAMD", "struct_vk_texture_l_o_d_gather_format_properties_a_m_d.html", null ],
+    [ "VkTilePropertiesQCOM", "struct_vk_tile_properties_q_c_o_m.html", null ],
     [ "VkTimelineSemaphoreSubmitInfo", "struct_vk_timeline_semaphore_submit_info.html", null ],
+    [ "VkTraceRaysIndirectCommand2KHR", "struct_vk_trace_rays_indirect_command2_k_h_r.html", null ],
     [ "VkTraceRaysIndirectCommandKHR", "struct_vk_trace_rays_indirect_command_k_h_r.html", null ],
     [ "VkTransformMatrixKHR", "struct_vk_transform_matrix_k_h_r.html", null ],
     [ "VkValidationCacheCreateInfoEXT", "struct_vk_validation_cache_create_info_e_x_t.html", null ],
@@ -3258,6 +3507,34 @@ var hierarchy =
     [ "VkVertexInputBindingDescription", "struct_vk_vertex_input_binding_description.html", null ],
     [ "VkVertexInputBindingDescription2EXT", "struct_vk_vertex_input_binding_description2_e_x_t.html", null ],
     [ "VkVertexInputBindingDivisorDescriptionEXT", "struct_vk_vertex_input_binding_divisor_description_e_x_t.html", null ],
+    [ "VkVideoBeginCodingInfoKHR", "struct_vk_video_begin_coding_info_k_h_r.html", null ],
+    [ "VkVideoCapabilitiesKHR", "struct_vk_video_capabilities_k_h_r.html", null ],
+    [ "VkVideoCodingControlInfoKHR", "struct_vk_video_coding_control_info_k_h_r.html", null ],
+    [ "VkVideoDecodeCapabilitiesKHR", "struct_vk_video_decode_capabilities_k_h_r.html", null ],
+    [ "VkVideoDecodeH264CapabilitiesKHR", "struct_vk_video_decode_h264_capabilities_k_h_r.html", null ],
+    [ "VkVideoDecodeH264DpbSlotInfoKHR", "struct_vk_video_decode_h264_dpb_slot_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH264PictureInfoKHR", "struct_vk_video_decode_h264_picture_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH264ProfileInfoKHR", "struct_vk_video_decode_h264_profile_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH264SessionParametersAddInfoKHR", "struct_vk_video_decode_h264_session_parameters_add_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH264SessionParametersCreateInfoKHR", "struct_vk_video_decode_h264_session_parameters_create_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH265CapabilitiesKHR", "struct_vk_video_decode_h265_capabilities_k_h_r.html", null ],
+    [ "VkVideoDecodeH265DpbSlotInfoKHR", "struct_vk_video_decode_h265_dpb_slot_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH265PictureInfoKHR", "struct_vk_video_decode_h265_picture_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH265ProfileInfoKHR", "struct_vk_video_decode_h265_profile_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH265SessionParametersAddInfoKHR", "struct_vk_video_decode_h265_session_parameters_add_info_k_h_r.html", null ],
+    [ "VkVideoDecodeH265SessionParametersCreateInfoKHR", "struct_vk_video_decode_h265_session_parameters_create_info_k_h_r.html", null ],
+    [ "VkVideoDecodeInfoKHR", "struct_vk_video_decode_info_k_h_r.html", null ],
+    [ "VkVideoDecodeUsageInfoKHR", "struct_vk_video_decode_usage_info_k_h_r.html", null ],
+    [ "VkVideoEndCodingInfoKHR", "struct_vk_video_end_coding_info_k_h_r.html", null ],
+    [ "VkVideoFormatPropertiesKHR", "struct_vk_video_format_properties_k_h_r.html", null ],
+    [ "VkVideoPictureResourceInfoKHR", "struct_vk_video_picture_resource_info_k_h_r.html", null ],
+    [ "VkVideoProfileInfoKHR", "struct_vk_video_profile_info_k_h_r.html", null ],
+    [ "VkVideoProfileListInfoKHR", "struct_vk_video_profile_list_info_k_h_r.html", null ],
+    [ "VkVideoReferenceSlotInfoKHR", "struct_vk_video_reference_slot_info_k_h_r.html", null ],
+    [ "VkVideoSessionCreateInfoKHR", "struct_vk_video_session_create_info_k_h_r.html", null ],
+    [ "VkVideoSessionMemoryRequirementsKHR", "struct_vk_video_session_memory_requirements_k_h_r.html", null ],
+    [ "VkVideoSessionParametersCreateInfoKHR", "struct_vk_video_session_parameters_create_info_k_h_r.html", null ],
+    [ "VkVideoSessionParametersUpdateInfoKHR", "struct_vk_video_session_parameters_update_info_k_h_r.html", null ],
     [ "VkViewport", "struct_vk_viewport.html", null ],
     [ "VkViewportSwizzleNV", "struct_vk_viewport_swizzle_n_v.html", null ],
     [ "VkViewportWScalingNV", "struct_vk_viewport_w_scaling_n_v.html", null ],
@@ -3266,7 +3543,31 @@ var hierarchy =
     [ "VkWriteDescriptorSetAccelerationStructureNV", "struct_vk_write_descriptor_set_acceleration_structure_n_v.html", null ],
     [ "VkWriteDescriptorSetInlineUniformBlock", "struct_vk_write_descriptor_set_inline_uniform_block.html", null ],
     [ "VkXYColorEXT", "struct_vk_x_y_color_e_x_t.html", null ],
-    [ "Registrar", null, [
+    [ "VmaAllocation", "struct_vma_allocation.html", null ],
+    [ "VmaAllocationCreateInfo", "struct_vma_allocation_create_info.html", null ],
+    [ "VmaAllocationInfo", "struct_vma_allocation_info.html", null ],
+    [ "VmaAllocator", "struct_vma_allocator.html", null ],
+    [ "VmaAllocatorCreateInfo", "struct_vma_allocator_create_info.html", null ],
+    [ "VmaAllocatorInfo", "struct_vma_allocator_info.html", null ],
+    [ "VmaBudget", "struct_vma_budget.html", null ],
+    [ "VmaDefragmentationContext", "struct_vma_defragmentation_context.html", null ],
+    [ "VmaDefragmentationInfo", "struct_vma_defragmentation_info.html", null ],
+    [ "VmaDefragmentationMove", "struct_vma_defragmentation_move.html", null ],
+    [ "VmaDefragmentationPassMoveInfo", "struct_vma_defragmentation_pass_move_info.html", null ],
+    [ "VmaDefragmentationStats", "struct_vma_defragmentation_stats.html", null ],
+    [ "VmaDetailedStatistics", "struct_vma_detailed_statistics.html", null ],
+    [ "VmaDeviceMemoryCallbacks", "struct_vma_device_memory_callbacks.html", null ],
+    [ "VmaPool", "struct_vma_pool.html", null ],
+    [ "VmaPoolCreateInfo", "struct_vma_pool_create_info.html", null ],
+    [ "VmaStatistics", "struct_vma_statistics.html", null ],
+    [ "VmaTotalStatistics", "struct_vma_total_statistics.html", null ],
+    [ "VmaVirtualAllocation", "struct_vma_virtual_allocation.html", null ],
+    [ "VmaVirtualAllocationCreateInfo", "struct_vma_virtual_allocation_create_info.html", null ],
+    [ "VmaVirtualAllocationInfo", "struct_vma_virtual_allocation_info.html", null ],
+    [ "VmaVirtualBlock", "struct_vma_virtual_block.html", null ],
+    [ "VmaVirtualBlockCreateInfo", "struct_vma_virtual_block_create_info.html", null ],
+    [ "VmaVulkanFunctions", "struct_vma_vulkan_functions.html", null ],
+    [ "XRRegisterInterface::Registrar", null, [
       [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ]
     ] ]
 ];
