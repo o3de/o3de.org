@@ -110,6 +110,7 @@ The arguments are as follows:
 | [`--platform`](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#L237) | The expected target platform that assets will be processed and built for. If not specified, the user's host platform will be used. | no |
 | [`--engine-centric`](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#L238) | Use the engine-centric work flow to export the project. | no |
 | [`--quiet`](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#L239) | Suppresses logging information unless an error occurs. | no |
+| [`--no-monolithic-build`](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#LTBD) | Exported package will contain shared libraries (non-monolithic). Monolithic builds are desired for game distibutions since it packages all modules into a single executable, however, [monolithic exporting is not yet supported by the O3DE installer](https://github.com/o3de/o3de/issues/17203). Build O3DE from source if a monolithic package is required. | no |
 
 An example usage of the entire `export-project` command, including this script, can be seen for the O3DE MultiplayerSample project, with the following example for windows:
 
@@ -129,6 +130,11 @@ An example usage of the entire `export-project` command, including this script, 
     --seedlist %O3DE_PROJECT_PATH%\AssetBundling\SeedLists\VFXSeedList.seed 
 ```
 Where `O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `OUTPUT_PATH` are environment variables. This single invocation should be all that is needed to fully export MultiplayerSample into a release directory ready for distribution.
+
+{{< important >}}
+--no-monolithic-build and --config profile is required when building from an O3DE installer or SDK. 
+See [Installed Engine Fails to Export Monolithic Release.](https://github.com/o3de/o3de/issues/17203)
+{{< /important >}}
 
 For more information on how to export the MultiplayerSample project using the CLI, please see [these instructions](https://github.com/o3de/o3de-multiplayersample/blob/f00b3035285b695b2dbd1b1e59912973f4e1a32f/Documentation/O3DEMPSProjectExportTesting.md).
 
