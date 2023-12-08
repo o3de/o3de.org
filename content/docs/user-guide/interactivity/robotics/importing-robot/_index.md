@@ -18,26 +18,25 @@ SDFormat, URDF, and XACRO are widely used robot description standards within the
 
 [XML Macros (XACRO)](http://wiki.ros.org/xacro) is a macro language that simplifies the creation and maintenance of URDF files. XACRO allows you to generate URDF files using XML macros. In XACRO, you can define parameters and include files, which is useful to change and iterate on robot models. You can also expand and reuse XACRO across multiple robot models. 
 
-URDF/XACRO files contain complete robot descriptions, including references to external geometry files. While you can define primitive geometries directly within the URDF/XACRO file, it's common practice to use external mesh files, in formats such as DAE (Collada) or STL, to represent the visual and collision shapes of the robot.
-Robot models are typically available in packages that include the URDF/XACRO file and additional geometry files that contain visualizations and collision shapes, either as primitive geometries or external mesh files. These packages may be distributed as ROS workspaces, which are more straightforward to use in ROS applications. 
+URDF, XACRO, and SDFormat files contain complete robot descriptions, including references to external geometry files. While you can define primitive geometries directly within the robot description file, it is a common practice to use external mesh files, in formats such as DAE (Collada) or STL, to represent the visual and collision shapes of the robot.
 
+Robot models are typically available in packages that include the robot description file and additional geometry files with visualizations and collision shapes, either as primitive geometries or external mesh files. These packages may be distributed as ROS workspaces, which are more straightforward to use in ROS applications. 
 
 ## Introduction to Robot Importer
 
 Import robots into your O3DE simulation project using the Robot Importer that's included in the ROS 2 Gem. Robot Importer has the following features:
 
 - Guides you through the import process step by step.
-- Allows to change parameters of the import.
-- Reads SDF, URDF and XACRO files.
+- Allows to change parameters of the import, including search paths for assets.
+- Reads SDFormat, URDF and XACRO files.
 - Copies all required assets files to the `Assets` folder of your O3DE project.
 - Creates a prefab with a multi-body structure using articulations or classic rigid bodies and joints components.
 
 ## Importing a robot into your simulation project
 
-
 ### Prerequisite
 
-Before you can use robot description files in a ROS package, you must first build a workspace with the package and its dependencies. This ensures that Robot Importer can find all the required files. 
+Depending on a content of robot description files, you might need to build a ROS workspace with the package and its dependencies. This ensures that Robot Importer can find all the required files. In some cases, it is possible to append paths used by the Robot Importer in the Wizard instead, and to skip the build of a ROS workspace completely.
 
 To build, create a workspace and run `colcon build`. Do not forget to source ROS 2 workspace before launching the O3DE Editor. 
 
@@ -57,17 +56,16 @@ For more information, refer to the robot description package's documentation, wh
 
 4. Load a description file by doing the following:
 
-   - Select an SDF, URDF, or XACRO file to import by clicking on the **[...]** button.
+   - Select an SDFormat, URDF, or XACRO file to import by clicking on the **[...]** button.
    - A number of options are available to modify the behavior of the importer:
         * Use Articulations - Determines whether PhysX articulation components should be used for joints and rigid bodies.
         * Preserve URDF fixed joint - When set, preserves any fixed joints found when importing a URDF file. This prevents the joint reduction logic in libsdformat from merging links of those joints.
         * Fix URDF to be compatible with libsdformat - It allows you to import some URDFs or XACRO files that are not fully compatible. With this feature enabled, Robot Importer will try to adjust the URDF code to be compatible.
-        * Path Resolvers - SDF, URDF, and XACRO files are almost always referencing some other files (like meshes, and textures). This feature allows you to give a hint to Robot Importer where to find those assets.
-                           This feature can be useful, in an advanced situation like: importing legacy files, or trying to import ROS 1 packages. \
+        * Path Resolvers - SDFormat, URDF, and XACRO files are almost always referencing some other files (like meshes, and textures). This feature allows you to give a hint to Robot Importer where to find those assets.
+                           This feature can be useful, in an advanced situation like importing legacy files or trying to import ROS 1 packages. \
                            **Important** This feature does not affect the XACRO parsing, since the XACRO bundled with ROS 2 installation is used at this moment.
         * Use `AMENT_PREFIX_PATH` - Uses the [AMENT_PREFIX_PATH](https://design.ros2.org/articles/ament.html) environment variable to locate asset references. It is a default behavior for ROS 2 description packages.
-        * Prefix Replacement - This is a map that allows you to determine how prefixes to specific paths will be resolved during import.SDF, URDF, and XACRO files are almost always referencing some other files (like meshes, and textures). This feature allows you to give a hint to Robot Importer where to find those assets.
-                           **Important** This feature does not affect the XACRO parsing, since the XACRO bundled with ROS 2 installation is used at this moment.
+        * Prefix Replacement - This is a map that allows you to determine paths for the Path Resolvers, described earlier.
     - Click **Next**.
 
    ![Robot Importer](/images/user-guide/gems/ros2/URDF_importer_load_file.png)
@@ -93,7 +91,7 @@ After this automatic adjustment, you can take a look into the changes that were 
 ![Robot Importer](/images/user-guide/gems/ros2/URDF_fixing_result.png)
 
     {{< note >}}
-    Option 'Fix URDF to be compatible with libsdformat' allows you to successfully import URDF that is not compatible with simulation, but please remember to adjust the resulting prefab. 
+    Option 'Fix URDF to be compatible with libsdformat' allows you to successfully import URDF files that are not compatible with simulation, but please remember to adjust the resulting prefab. 
     {{< /note >}}
  
 ### Processing robot assets
@@ -146,10 +144,11 @@ You can either resolve the issues now or after you finish using Robot Importer:
 3. Finally, there is a prefab in the scene. You can add one or more [sensors](/docs/user-guide/interactivity/robotics/concepts-and-components-overview/#sensors) or mobilize robot with [ROS 2 Vehicle Dynamics](/docs/user-guide/interactivity/robotics/vehicle-dynamics/) or using [Joint Manipulation](/docs/user-guide/interactivity/robotics/joints-manipulation/).
 
     ![Robot Importer](/images/user-guide/gems/ros2/URDF_result.png)
+
 ### Re-importing robots
 
 Use the Robot Importer to re-import URDF files. In some cases, assets (mesh files) don't update if they were previously imported correctly. To work around this and do a complete re-import, delete the assets from your project by using the Asset Browser or in the directory.
 
 ### Details
 
-Implementation details are available in [RFC](https://github.com/o3de/sig-simulation/issues/80)
+Details about supported SDFormat sensors are available in the [SDFormat sub-page](./sdformat-sensors.md)
