@@ -19,14 +19,16 @@ The **ROS 2 Frame** component depends on Transform Service, which is provided by
 
 ## Properties
 
-![ROS 2 Frame component properties](/images/user-guide/components/reference/robotics/ros2/ros2-frame-component.png)
+![ROS 2 Frame component properties - default namespace](/images/user-guide/components/reference/robotics/ros2/ros2-frame-component-namespace-default.png)  
+![ROS 2 Frame component properties - custom namespace](/images/user-guide/components/reference/robotics/ros2/ros2-frame-component-namespace-custom.png)  
 
-| Property                    | Description                                                                                                     | Values      | Default                                                     |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------|
-| **Namespace Configuration** | Determines how to set the namespace for the component, which can be empty, custom, or derived from entity name. | Enumeration | Default (from name for top level entities, empty otherwise) |
-| **Frame Name**              | Name of the frame, which is used as `frame_id` field for published messages and broadcasted transforms.         | String      | `sensor_frame`                                              |
-| **Joint Name**              | Name of the joint for this entity, which is supplementary information required by joint control APIs.           | String      | empty                                                       |
-| **Publish Transform**       | Determines whether the transformation to this frame's parent is included in the broadcasted transforms.         | Boolean     | true                                                        |
+| Property                    | Description                                                                                                                            | Values      | Default                                                     |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------|
+| **Namespace Configuration** | Determines how to set the namespace for the component, which can be empty, custom, or derived from entity name.                        | Enumeration | Default (from name for top level entities, empty otherwise) |
+| **Frame Name**              | Name of the frame, which is used as `frame_id` field for published messages and broadcasted transforms.                                | String      | `sensor_frame`                                              |
+| **Joint Name**              | Name of the joint for this entity, which is supplementary information required by joint control APIs.                                  | String      | empty                                                       |
+| **Publish Transform**       | Determines whether the transformation to this frame's parent is included in the broadcasted transforms.                                | Boolean     | true                                                        |
+| **Effective namespace**     | Read only value providing the effective namespace of the frame. It is automatically updated and takes other frames into consideration. | String      | empty                                                       |
 
 ## Usage
 
