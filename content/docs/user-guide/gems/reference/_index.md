@@ -140,7 +140,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [Atom Common Features](./rendering/atom/atom) | The Atom Gem provides Atom Renderer and its associated tools (such as Material Editor), utilites, libraries, and interfaces. |
+| [Atom Common Features](./rendering/atom/atom) | The Atom Gem provides Atom Renderer and its associated tools (such as Material Editor), utilities, libraries, and interfaces. |
 | [Atom Content](./rendering/atom/atom-content) | The Atom Content Gem provides assets including models, textures, and materials, that  can be used to test Atom Renderer in  Open 3D Engine. |
 | [Atom O3DE Integration](./rendering/atom/atom-o3de-integration) | The Atom O3DE Integration Gem provides components, libraries, and functionality to support and integrate Atom Renderer in Open 3D Engine. |
 | [Atom TressFX](./rendering/amd/atom-tressfx) | The Atom TressFX Gem provides realistic hair and fur simulation and rendering in Atom and Open 3D Engine. |
@@ -155,7 +155,11 @@ toc: true
 
 | Gem | Description |
 | - | - |
+| [Human Worker](./robotics/humanworker.md) | The Human Worker Gem provides a collection of animated human worker assets that can be used in robotic simulations. |
+| [OTTO Robots](./robotics/otto-robots.md) | The OTTO Robots Gem provides a collection of autonomous mobile robots assets that can be used in robotic simulations. |
+| [RGL](./robotics/rgl.md) | The Robotec GPU Lidar (RGL) Gem for Open 3D Engine (O3DE) enables GPU-accelerated LiDAR simulation for robotics. |
 | [ROS&nbsp;2](./robotics/ros2.md) | The ROS 2 Gem provides integration with the [Robot Operating System (ROS) 2](https://docs.ros.org/en/rolling/index.html) library and enables the design of the simulation of robotics systems. |
+| [UR Robots](./robotics/ur-robots.md) | The UR Robots Gem provides a collection of robotic arms assets that can be used in robotic simulations. |
 
 ## Script
 
