@@ -6,3 +6,4 @@ description: Components for robot control with Robot Operating System (ROS 2) in
 
 Refer to the [Robotics](/docs/user-guide/interactivity/robotics) documentation to learn more about robotics simulation features of O3DE.
 
+-  [GeoReference Level Component](ros2-georeference.md)
