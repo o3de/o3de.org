@@ -23,7 +23,7 @@ For any project that you want to quickly export, you can do this by running the 
 
 New projects created from either the `DefaultProject` or `MinimalProject` templates will contain project export helper scripts that simplifies the process to export these projects. These scripts provide a simple base-line for the arguments and settings that are usually needed to export projects when using the O3DE `export-project` command line tool.
 
-If you need to run it from the command line, simply run the following command (assuming project has already been created and registered):
+Run it from the command line:
 
 {{< tabs name="Export Script" >}}
 
