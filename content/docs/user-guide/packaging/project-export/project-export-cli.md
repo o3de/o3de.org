@@ -17,21 +17,44 @@ To make best use of the `export-project` command, it is recommended to have a pr
 To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/overview/).
 
 ## Getting Started
-Quick Project Export
-For any project that you want to export, assuming you are using the Default Level supplied with the template as your base, you can do this by running the [`export.bat`](https://github.com/o3de/o3de/blob/480ce34ab7f3056113e17056125c89ae220bef7a/Templates/DefaultProject/Template/export.bat) script (or running the [`export.sh`](https://github.com/o3de/o3de/blob/480ce34ab7f3056113e17056125c89ae220bef7a/Templates/DefaultProject/Template/export.sh) script on Linux) in the root of your project folder.
 
-Project export functionality is available on a per-project basis. Helper export scripts are included at the root folder of every new project created with the `DefaultProject` or `MinimalProject` templates.
+### Quick Project Export
+For any project that you want to quickly export, you can do this by running the `export.bat` script (or running the `export.sh` script on Linux) in the root of your project folder.
 
-The package scripts pre-populate the relevant arguments for the given project, and then call `export-project` on the user's behalf.
+New projects created from either the `DefaultProject` or `MinimalProject` templates will contain project export helper scripts that simplifies the process to export these projects. These scripts provide a simple base-line for the arguments and settings that are usually needed to export projects when using the O3DE `export-project` command line tool.
 
 If you need to run it from the command line, simply run the following command (assuming project has already been created and registered):
-```
-# On Windows
-\path\to\project\export.bat
 
-#On Linux
-/path/to/project/export.sh
-Please note that this will only cover the most basic use cases for getting started quickly. For more info on the export-command in general, keep reading below.
+{{< tabs name="Export Script" >}}
+
+
+{{% tab name="Windows" %}}
+Assuming `%PROJECT_HOME%` is set to the root of the newly created project.
+```cmd
+%PROJECT_HOME%/export.bat
+```
+{{% /tab %}}
+
+{{% tab name="Linux" %}}
+Assuming `$PROJECT_HOME` is set to the root of the newly created project.
+```shell
+$PROJECT_HOME/export.sh
+```
+{{% /tab %}}
+
+{{< /tabs >}}
+
+{{< note >}}
+By default, the exporter packages assets required to run Levels/DefaultLevel. If your project uses more levels, sound banks, or assets custom loaded via code, you'll need to [add the asset to a seed file](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/bundle-assets-for-release/). The exporter looks for any .seed file living in the AssetBundling/SeedLists directory. Check the .command_settings file in the project root directory, and look at the `seedlist.paths` field in the `export_project` section.
+{{< /note >}}
+
+{{< note >}}
+Be sure your project is registered with the engine.
+{{< /note >}}
+
+{{< note >}}
+`export.bat` will only cover the most basic use cases for getting started. For more info on the export-command in general, keep reading below.
+{{< /note >}}
 
 ### Export Project Command
 To use the `export-project` command correctly, it is important to first understand how it works at a high level.
@@ -94,13 +117,13 @@ The arguments are as follows:
 | [`--script-help`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L238) | Display the help information specifically for the export script. | no |
 | [`--output-path`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L239) | Defines the location on the system where the release layout directory for the project should be located. For each desired launcher, a separate release folder will be prepared. | yes |
 | [`--config`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L243) | Defines the CMake build configuration when building the project's binaries, such as GameLauncher. Options are either `profile` or `release`. | no |
-| [`--tool-config`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L249) | Defines the CMake build configuration when building the project's binaries, such as GameLauncher. Options are either `profile` or `release`. | no |
+| [`--tool-config`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L249) | The CMake build configuration to use when building tool binaries. Options are either `profile` or `release`. | no |
 | [`--archive-output`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L255) | Automatically archive the output release directories as bundled archive files, such as zip files. | no |
 | [`--build-assets or --skip-build-assets`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L262-L267) | This determines processing all assets in the project according to asset processor settings, and run the asset bundler as well for specified seedlist files. Which flag shows here depends on export-project-configure defaults for `option.build.assets`. | no |
 | [`--fail-on-asset-errors or --continue-on-asset-errors`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L270-L275) | Forcibly fail the export process should errors with assets be encountered. This is not enabled by default, as asset errors are common, and usually not severe. Use this if stricter validation is required. Which flag shows here depends on export-project-configure defaults for `option.fail.on.asset.errors`.  | no |
 | [`--seedlist`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L277-L282) | Path to a seedlist file for asset bundling. Specify multiple times for each seed list | no |
 | [`--seedfile`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L284-L289) | Path to a seed file for asset bundling. Example seed files are levels or prefabs | no |
-| [`--level-name`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L291-L296) | The name of the level you want to export. This will look in `<o3de_project_path>/Cache/levels` to fetch the right level prefab | no |
+| [`--level-name`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L291-L296) | The name of the level you want to export. This will look in `<o3de_project_path>/Cache/levels` to fetch the right level prefab. Specify multiple times for each level in your game. This is not necessary if the level is already defined inside of a seed list. | no |
 | [`--project-file-pattern-to-copy`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L312-L317) | Any additional file patterns located in the project directory. File patterns will be relative to the project path. Use this for any file not traditionally associated with O3DE projects, such as custom config files, metadata, or license files. | no |
 | [`--game-project-file-pattern-to-copy`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L298-L303) | Like `--project-file-pattern-to-copy`, but for files exclusive to Game Launchers.  | no |
 | [`--server-project-file-pattern-to-copy`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L305-L310) | Like `--project-file-pattern-to-copy`, but for files exclusive to Server Launchers.  | no |
@@ -147,7 +170,7 @@ For more information on how to export the MultiplayerSample project using the CL
 
 ## Export Script Configurations
 
-For the standard export script, O3DE also provides functionality for managing your export configurations, either at a global level for all projects, or on a per-project basis. To take a look at this functionality, you can look into the help section of the `export-project-configure` command:
+The standard export script provides functionality for managing your export configurations. Configuration is set either globally (for all projects), or on a per-project basis. See the help section of the `export-project-configure` command for more details:
 ```cmd
 <O3DE_ENGINE_PATH>\scripts\o3de.bat export-project-configure -h
 ```
