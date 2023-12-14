@@ -139,9 +139,9 @@ The arguments are as follows:
 | [`--max-bundle-size`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L349) | Specify the maximum size of a given asset bundle.  | no |
 | [`--game-launcher`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L352-L357) | Option to build and package the game launcher. This option is available when the export-project-configure defaults for `option.build.game.launcher` is `False`. | no |
 | [`--no-game-launcher`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L352-L357) | This prevents building the Game Launcher. This option is available when export-project-configure defaults for `option.build.game.launcher` is `True`. | no |
-| [`--server-launcher`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L359-L364) | This builds the Server Launcher on a platform. This option is available when export-project-configure defaults for `option.build.server.launcher` is `False`. | no |
+| [`--server-launcher`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L359-L364) | Option to build and package the server launcher. This option is available when the export-project-configure default for `option.build.server.launcher` is `False`. | no |
 | [`--no-server-launcher`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L359-L364) | This prevents building the Server Launcher on a platform. This option is available when export-project-configure defaults for `option.build.server.launcher` is `True`. | no |
-| [`--unified-launcher`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L367-L372) | This builds the Unified Launcher. This option is available when export-project-configure defaults for `option.build.unified.launcher` is `False`. | no |
+| [`--unified-launcher`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L367-L372) | Option to build and package the unified launcher. This option is available when export-project-configure defaults for `option.build.unified.launcher` is `False`. | no |
 | [`--no-unified-launcher`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L367-L372) | This prevents building the Unified Launcher. This option is available when  export-project-configure defaults for `option.build.unified.launcher` is `True`. | no |
 | [`--platform`](https://github.com/o3de/o3de/blob/f0c150d75722b3302753972b28d73a8036b70b31/scripts/o3de/ExportScripts/export_source_built_project.py#L389) | The expected target platform that assets will be processed and built for. If not specified, the user's host platform will be used. | no |
 | [`--engine-centric`](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#L238) | Uses the engine-centric work flow to export the project. This option is available when export-project-configure defaults for `option.engine.centric` is `False`. | no |
@@ -182,11 +182,14 @@ The standard export script provides functionality for managing your export confi
 You can see the current list of configured settings using:
 ```cmd
 <O3DE_ENGINE_PATH>\scripts\o3de.bat export-project-configure -l
+```
 
-# To see the configured values globally across O3DE
+To see the configured values globally across O3DE
+```
 <O3DE_ENGINE_PATH>\scripts\o3de.bat export-project-configure --global -l
-
-# To see the configured values for a specific project (using the Project name registered with O3DE)
+```
+To see the configured values for a specific project (using the Project name registered with O3DE)
+```
 <O3DE_ENGINE_PATH>\scripts\o3de.bat export-project-configure -p ProjectName -l
 ```
 
@@ -215,12 +218,12 @@ O3DE Project Export settings:
   option.build.monolithic = False
 ```
 
-To update configuration values:
+To update configuration values globally:
 ```cmd
-# Update globally
 <O3DE_ENGINE_PATH>\scripts\o3de.bat export-project-configure --global --set-value project.build.config=release
-
-# Update by project
+```
+To update by project:
+```
 <O3DE_ENGINE_PATH>\scripts\o3de.bat export-project-configure -p ProjectName --set-value option.build.assets=True
 ```
 
