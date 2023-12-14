@@ -17,7 +17,7 @@ To make best use of the `export-project` command, it is recommended to have a pr
 To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/overview/).
 
 ## Getting Started
-### TL;DR
+Quick Project Export
 For any project that you want to export, assuming you are using the Default Level supplied with the template as your base, you can do this by running the [`export.bat`](https://github.com/o3de/o3de/blob/480ce34ab7f3056113e17056125c89ae220bef7a/Templates/DefaultProject/Template/export.bat) script (or running the [`export.sh`](https://github.com/o3de/o3de/blob/480ce34ab7f3056113e17056125c89ae220bef7a/Templates/DefaultProject/Template/export.sh) script on Linux) in the root of your project folder.
 
 Project export functionality is available on a per-project basis. Helper export scripts are included at the root folder of every new project created with the `DefaultProject` or `MinimalProject` templates.
