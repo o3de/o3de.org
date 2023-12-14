@@ -18,7 +18,7 @@ To learn more about the AssetBundler and Seed Files, please visit the [overview 
 
 ## Getting Started
 ### TL;DR
-For any new project that you quickly want to test with export, assuming you are using the Default Level supplied with the project as your base, you can quickly do this by double clicking on the [`export.bat`](https://github.com/o3de/o3de/blob/480ce34ab7f3056113e17056125c89ae220bef7a/Templates/DefaultProject/Template/export.bat) script (or running the [`export.sh`](https://github.com/o3de/o3de/blob/480ce34ab7f3056113e17056125c89ae220bef7a/Templates/DefaultProject/Template/export.sh) script on unix) in the root of your Project folder.
+For any new project that you quickly want to test with export, assuming you are using the Default Level supplied with the project as your base, you can quickly do this by double clicking on the [`export.bat`](https://github.com/o3de/o3de/blob/480ce34ab7f3056113e17056125c89ae220bef7a/Templates/DefaultProject/Template/export.bat) script (or running the [`export.sh`](https://github.com/o3de/o3de/blob/480ce34ab7f3056113e17056125c89ae220bef7a/Templates/DefaultProject/Template/export.sh) script on Linux) in the root of your Project folder.
 
 Project Export functionality is also available on a per-project basis. This is because there are helper export scripts that are included in the Project Templates, as can be seen with. These scripts are included at the root folder of every new Project created with the `DefaultProject` and `MinimalProject` templates.
 
