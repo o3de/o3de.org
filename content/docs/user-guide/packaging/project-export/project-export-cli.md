@@ -161,11 +161,6 @@ An example usage of the entire `export-project` command, including this script, 
 ```
 Where `O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `OUTPUT_PATH` are environment variables. This single invocation should be all that is needed to fully export MultiplayerSample into a release directory ready for distribution.
 
-{{< important >}}
---no-monolithic-build and --config profile is required when building from an O3DE installer or SDK. 
-See [Installed Engine Fails to Export Monolithic Release.](https://github.com/o3de/o3de/issues/17203)
-{{< /important >}}
-
 For more information on how to export the MultiplayerSample project using the CLI, please see [these instructions](https://github.com/o3de/o3de-multiplayersample/blob/f00b3035285b695b2dbd1b1e59912973f4e1a32f/Documentation/O3DEMPSProjectExportTesting.md).
 
 ## Export Script Configurations
