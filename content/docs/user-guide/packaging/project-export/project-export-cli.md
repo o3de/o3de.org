@@ -29,7 +29,7 @@ If you need to run it from the command line, simply run the following command (a
 # On Windows
 \path\to\project\export.bat
 
-#On Unix
+#On Linux
 \path\to\project\export.sh
 ```
 Please note that this will only cover the most basic use cases for getting started quickly. For more info on the export-command in general, keep reading below.
