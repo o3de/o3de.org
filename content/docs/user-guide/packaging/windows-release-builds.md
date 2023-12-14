@@ -6,12 +6,12 @@ toc: true
 weight: 200
 ---
 
-This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* for Windows computers. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
+This tutorial guides you through the process of creating an **Open 3D Engine (O3DE)** *project game release layout* manually for Windows computers. A project game release layout is a directory structure that contains the **Game Launcher** and the bundled assets needed to run the Game Launcher outside of the developer environment. You create a project game release layout when you build your project for release, known as a *release build*.
 
-{{< important >}}
-In order to create a game only release (monolithic), you must have O3DE set up from source, not just the installer. Refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/).
+{{< note >}}
+If you wish to use the engine from source instead of the installer, please refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/).
 Also, you must use a project-centric configuration, which is detailed further [below](#create-a-project-game-release-layout).
-{{< /important >}}
+{{< /note >}}
 
 A release build requires *bundled content*, which includes cached product assets stored in package (`.pak`) files. Cached product assets are located in the project's `Cache\pc` directory. The Game Launcher loads the bundled content that makes up a project, such as its levels, objects, environments, and gameplay logic.
 
@@ -34,7 +34,7 @@ The instructions here guide you through the following steps:
 
 The following instructions assume that you have:
 
-- Set up O3DE on your computer as either a *source engine* or *pre-built SDK engine*. For help, refer to [Building for Windows](/docs/welcome-guide/setup/setup-from-github/building-windows). If you only set up O3DE using the [Windows installer](/docs/welcome-guide/setup/installing-windows), you cannot create a project game release layout.
+- Set up O3DE on your computer as either a *source engine* or *pre-built/installed SDK engine*. For help, refer to [Building for Windows](/docs/welcome-guide/setup/setup-from-github/building-windows).
 
 - Created an O3DE project that contains at least one level. To build your project for release, you might need to resolve any errors in your project.
 
