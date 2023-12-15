@@ -76,7 +76,7 @@ When installation is complete, you can find **Project Manager** and other tools 
 
 Example of launching Project Manager from the shell:
 ```shell
-/opt/O3DE/2310_1/bin/Linux/profile/Default/o3de
+/opt/O3DE/23.10.1/bin/Linux/profile/Default/o3de
 ```
 
 ## Removing O3DE installed from a deb package
