@@ -16,6 +16,10 @@ To make best use of the `export-project` command, it is recommended to have a pr
 
 To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/overview/).
 
+{{< important >}}
+Before using *any* of the Project Export functionality for your project, make sure that you have built the project from the Project Manager, opened the project from the O3DE Editor and have allowed the Asset Processor to fully process the assets of your project at least once.
+{{< /important >}}
+
 ## Getting Started
 
 ### Quick Project Export
