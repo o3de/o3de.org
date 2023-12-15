@@ -1,21 +1,21 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "ScriptCanvas::Developer::SystemComponent", "class_script_canvas_1_1_developer_1_1_system_component.html", null ],
       [ "ScriptCanvasDeveloperEditor::SystemComponent", "class_script_canvas_developer_editor_1_1_system_component.html", null ]
     ] ],
-    [ "ComponentConfig", null, [
+    [ "AZ::ComponentConfig", null, [
       [ "ScriptCanvas::Developer::Nodes::MockNodeConfig", "struct_script_canvas_1_1_developer_1_1_nodes_1_1_mock_node_config.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "ScriptCanvas::Developer::EditorAutomationTestDialogRequests", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog_requests.html", null ],
       [ "ScriptCanvas::Developer::Nodes::MockDescriptorNotifications", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock_descriptor_notifications.html", null ],
       [ "ScriptCanvas::Developer::Nodes::MockDescriptorRequests", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock_descriptor_requests.html", null ]
     ] ],
-    [ "Module", null, [
+    [ "AZ::Module", null, [
       [ "ScriptCanvas::Developer::ScriptCanvasDeveloperModule", "class_script_canvas_1_1_developer_1_1_script_canvas_developer_module.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::SystemTickBus::Handler", null, [
       [ "ScriptCanvas::Developer::EditorAutomationTest", "class_script_canvas_1_1_developer_1_1_editor_automation_test.html", [
         [ "ScriptCanvas::Developer::AltClickDeleteTest", "class_script_canvas_1_1_developer_1_1_alt_click_delete_test.html", null ],
         [ "ScriptCanvas::Developer::CreateCategoryTest", "class_script_canvas_1_1_developer_1_1_create_category_test.html", null ],
@@ -44,21 +44,21 @@ var hierarchy =
       ] ],
       [ "ScriptCanvas::Developer::EditorAutomationTestDialog", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorAutomationTestDialogRequestBus::Handler", null, [
       [ "ScriptCanvas::Developer::EditorAutomationTestDialog", "class_script_canvas_1_1_developer_1_1_editor_automation_test_dialog.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphCanvas::AssetEditorNotificationBus::Handler", null, [
       [ "ScriptCanvas::Developer::WaitForNewGraphAction", "class_script_canvas_1_1_developer_1_1_wait_for_new_graph_action.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphCanvas::NodeNotificationBus::Handler", null, [
       [ "ScriptCanvas::Developer::Nodes::Mock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock.html", [
         [ "ScriptCanvas::Developer::Nodes::WrapperMock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock.html", null ]
       ] ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphCanvas::SceneMemberNotificationBus::Handler", null, [
       [ "ScriptCanvas::Developer::Nodes::Mock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GraphCanvas::SceneNotificationBus::Handler", null, [
       [ "ScriptCanvas::Developer::AltClickDeleteTest", "class_script_canvas_1_1_developer_1_1_alt_click_delete_test.html", null ],
       [ "ScriptCanvas::Developer::AltClickSceneElementAction", "class_script_canvas_1_1_developer_1_1_alt_click_scene_element_action.html", null ],
       [ "ScriptCanvas::Developer::CoupleNodesAction", "class_script_canvas_1_1_developer_1_1_couple_nodes_action.html", null ],
@@ -71,10 +71,10 @@ var hierarchy =
       [ "ScriptCanvas::Developer::CutCopyPasteDuplicateTest", "class_script_canvas_1_1_developer_1_1_cut_copy_paste_duplicate_test.html", null ],
       [ "ScriptCanvas::Developer::Nodes::WrapperMock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "MockDescriptorNotificationBus::MultiHandler", null, [
       [ "ScriptCanvas::Developer::Nodes::WrapperMock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "MockDescriptorRequestBus::Handler", null, [
       [ "ScriptCanvas::Developer::Nodes::Mock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock.html", null ]
     ] ],
     [ "Node", null, [
@@ -134,6 +134,20 @@ var hierarchy =
     ] ],
     [ "ScriptCanvas::Developer::EditorAutomationActionRunner", "class_script_canvas_1_1_developer_1_1_editor_automation_action_runner.html", null ],
     [ "ScriptCanvas::Developer::EditorAutomationState", "class_script_canvas_1_1_developer_1_1_editor_automation_state.html", [
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateFunctionGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
+        [ "ScriptCanvas::Developer::CreateFunctionGraphState", "class_script_canvas_1_1_developer_1_1_create_function_graph_state.html", null ]
+      ] ],
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateGraphTest_CreateGraphHotKeyStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", null ],
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateRuntimeGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
+        [ "ScriptCanvas::Developer::CreateRuntimeGraphState", "class_script_canvas_1_1_developer_1_1_create_runtime_graph_state.html", null ]
+      ] ],
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< ForceCloseActiveGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
+        [ "ScriptCanvas::Developer::ForceCloseActiveGraphState", "class_script_canvas_1_1_developer_1_1_force_close_active_graph_state.html", null ]
+      ] ],
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< OpenMenuTest_OpenMenuStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", null ],
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< WriteToLineEditStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
+        [ "ScriptCanvas::Developer::WriteToLineEditState", "class_script_canvas_1_1_developer_1_1_write_to_line_edit_state.html", null ]
+      ] ],
       [ "ScriptCanvas::Developer::NamedAutomationState", "class_script_canvas_1_1_developer_1_1_named_automation_state.html", [
         [ "ScriptCanvas::Developer::AltClickSceneElementState", "class_script_canvas_1_1_developer_1_1_alt_click_scene_element_state.html", null ],
         [ "ScriptCanvas::Developer::ConnectEndpointsState", "class_script_canvas_1_1_developer_1_1_connect_endpoints_state.html", null ],
@@ -162,21 +176,7 @@ var hierarchy =
         [ "ScriptCanvas::Developer::SelectSceneElementState", "class_script_canvas_1_1_developer_1_1_select_scene_element_state.html", null ],
         [ "ScriptCanvas::Developer::TriggerHotKey", "class_script_canvas_1_1_developer_1_1_trigger_hot_key.html", null ]
       ] ],
-      [ "ScriptCanvas::Developer::StaticIdAutomationState< Traits >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", null ],
-      [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateFunctionGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
-        [ "ScriptCanvas::Developer::CreateFunctionGraphState", "class_script_canvas_1_1_developer_1_1_create_function_graph_state.html", null ]
-      ] ],
-      [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateGraphTest_CreateGraphHotKeyStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", null ],
-      [ "ScriptCanvas::Developer::StaticIdAutomationState< CreateRuntimeGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
-        [ "ScriptCanvas::Developer::CreateRuntimeGraphState", "class_script_canvas_1_1_developer_1_1_create_runtime_graph_state.html", null ]
-      ] ],
-      [ "ScriptCanvas::Developer::StaticIdAutomationState< ForceCloseActiveGraphStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
-        [ "ScriptCanvas::Developer::ForceCloseActiveGraphState", "class_script_canvas_1_1_developer_1_1_force_close_active_graph_state.html", null ]
-      ] ],
-      [ "ScriptCanvas::Developer::StaticIdAutomationState< OpenMenuTest_OpenMenuStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", null ],
-      [ "ScriptCanvas::Developer::StaticIdAutomationState< WriteToLineEditStateId >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", [
-        [ "ScriptCanvas::Developer::WriteToLineEditState", "class_script_canvas_1_1_developer_1_1_write_to_line_edit_state.html", null ]
-      ] ]
+      [ "ScriptCanvas::Developer::StaticIdAutomationState< Traits >", "class_script_canvas_1_1_developer_1_1_static_id_automation_state.html", null ]
     ] ],
     [ "ScriptCanvas::Developer::FindPositionOffsets", "struct_script_canvas_1_1_developer_1_1_find_position_offsets.html", null ],
     [ "ScriptCanvas::Developer::Nodes::SlotConfig", "struct_script_canvas_1_1_developer_1_1_nodes_1_1_slot_config.html", null ],
@@ -184,7 +184,7 @@ var hierarchy =
       [ "ScriptCanvas::Developer::EditorAutomationTest", "class_script_canvas_1_1_developer_1_1_editor_automation_test.html", null ]
     ] ],
     [ "ScriptCanvas::Developer::StateTraits< Id >", "struct_script_canvas_1_1_developer_1_1_state_traits.html", null ],
-    [ "Handler", null, [
+    [ "ScriptCanvas::GraphVariableManagerNotificationBus::Handler", null, [
       [ "ScriptCanvas::Developer::CreateVariableAction", "class_script_canvas_1_1_developer_1_1_create_variable_action.html", null ]
     ] ],
     [ "ScriptCanvasDeveloperEditor::AutomationInterface", "class_script_canvas_developer_editor_1_1_automation_interface.html", [
@@ -193,13 +193,13 @@ var hierarchy =
     ] ],
     [ "ScriptCanvasDeveloperEditor::DeveloperUtils", "class_script_canvas_developer_editor_1_1_developer_utils.html", null ],
     [ "ScriptCanvasDeveloperEditor::DeveloperUtils::CreateConnectedChainConfig", "struct_script_canvas_developer_editor_1_1_developer_utils_1_1_create_connected_chain_config.html", null ],
-    [ "Handler", null, [
+    [ "ScriptCanvasEditor::EditorNodeNotificationBus::Handler", null, [
       [ "ScriptCanvas::Developer::Nodes::Mock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_mock.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ScriptCanvasEditor::ScriptCanvasWrapperNodeDescriptorRequestBus::Handler", null, [
       [ "ScriptCanvas::Developer::Nodes::WrapperMock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "ScriptCanvasEditor::UINotificationBus::Handler", null, [
       [ "ScriptCanvasDeveloperEditor::SystemComponent", "class_script_canvas_developer_editor_1_1_system_component.html", null ]
     ] ]
 ];

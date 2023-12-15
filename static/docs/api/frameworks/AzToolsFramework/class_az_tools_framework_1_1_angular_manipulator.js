@@ -1,25 +1,10 @@
 var class_az_tools_framework_1_1_angular_manipulator =
 [
-    [ "Action", "struct_az_tools_framework_1_1_angular_manipulator_1_1_action.html", "struct_az_tools_framework_1_1_angular_manipulator_1_1_action" ],
+    [ "Action", "struct_az_tools_framework_1_1_angular_manipulator_1_1_action.html", null ],
     [ "Current", "struct_az_tools_framework_1_1_angular_manipulator_1_1_current.html", "struct_az_tools_framework_1_1_angular_manipulator_1_1_current" ],
     [ "Fixed", "struct_az_tools_framework_1_1_angular_manipulator_1_1_fixed.html", "struct_az_tools_framework_1_1_angular_manipulator_1_1_fixed" ],
     [ "Start", "struct_az_tools_framework_1_1_angular_manipulator_1_1_start.html", "struct_az_tools_framework_1_1_angular_manipulator_1_1_start" ],
     [ "MouseActionCallback", "class_az_tools_framework_1_1_angular_manipulator.html#aab83476713b1571665c376eaa0ae6b99", null ],
-    [ "AngularManipulator", "class_az_tools_framework_1_1_angular_manipulator.html#aa43443dad045033f96c209939e67a496", null ],
-    [ "AngularManipulator", "class_az_tools_framework_1_1_angular_manipulator.html#ac16c24989cca4254c50282dc4be8fdf8", null ],
-    [ "~AngularManipulator", "class_az_tools_framework_1_1_angular_manipulator.html#a9b82657882d6a28a44d03ad1b6cd10af", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_az_tools_framework_1_1_angular_manipulator.html#a9b107f210c10f38b2c1c2312ec777ace", null ],
-    [ "AZ_RTTI", "class_az_tools_framework_1_1_angular_manipulator.html#a0dd1159200aab245d81d21e8ff250a01", null ],
-    [ "CalculateManipulatorState", "class_az_tools_framework_1_1_angular_manipulator.html#a2cf46bca6d130609176134d6f60779c2", null ],
     [ "Draw", "class_az_tools_framework_1_1_angular_manipulator.html#ac18392009899bdcfe90b47c579b8bf89", null ],
-    [ "GetAxis", "class_az_tools_framework_1_1_angular_manipulator.html#a5faf8468867623a76e3cad15fb1af941", null ],
-    [ "GetView", "class_az_tools_framework_1_1_angular_manipulator.html#a8a18e3910427521e94f8a5e6eb90cd77", null ],
-    [ "GetView", "class_az_tools_framework_1_1_angular_manipulator.html#a753078dad816d8ac340676613e3827dd", null ],
-    [ "InstallLeftMouseDownCallback", "class_az_tools_framework_1_1_angular_manipulator.html#a777a4375bb9585a2f84d26ec7d5aa40d", null ],
-    [ "InstallLeftMouseUpCallback", "class_az_tools_framework_1_1_angular_manipulator.html#a04020d85ddf5baee37e85b6cec292204", null ],
-    [ "InstallMouseMoveCallback", "class_az_tools_framework_1_1_angular_manipulator.html#a544577c7b280f57cfd59d407006e8100", null ],
-    [ "MakeShared", "class_az_tools_framework_1_1_angular_manipulator.html#ac4f9b28595a23430c8d6529b080ba25a", null ],
-    [ "operator=", "class_az_tools_framework_1_1_angular_manipulator.html#a746c4b1ef39e783e2eb3b693cf20a5ed", null ],
-    [ "SetAxis", "class_az_tools_framework_1_1_angular_manipulator.html#a522f1155d0a9f172dac80a50e51f1fbe", null ],
-    [ "SetView", "class_az_tools_framework_1_1_angular_manipulator.html#a03f75138be3af0a9c08fa7fcd07d783e", null ]
+    [ "MakeShared", "class_az_tools_framework_1_1_angular_manipulator.html#a181c0e039ece6aa412d906fee1d42f9f", null ]
 ];

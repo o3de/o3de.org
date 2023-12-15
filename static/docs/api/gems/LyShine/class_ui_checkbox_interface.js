@@ -1,13 +1,12 @@
 var class_ui_checkbox_interface =
 [
     [ "StateChangeCallback", "class_ui_checkbox_interface.html#a8d2cf3e660802c502050f105adcae006", null ],
-    [ "~UiCheckboxInterface", "class_ui_checkbox_interface.html#a7f39b7634af15ed997978f46ea510381", null ],
-    [ "GetChangedActionName", "class_ui_checkbox_interface.html#a8f9f665f62f8f8c63780a7b3e0729a1c", null ],
+    [ "GetChangedActionName", "class_ui_checkbox_interface.html#ac7f8a9fe661e4de7dd96b569b20e1c5f", null ],
     [ "GetCheckedEntity", "class_ui_checkbox_interface.html#a50058a16ac216f579b4a7de2839bcecc", null ],
     [ "GetState", "class_ui_checkbox_interface.html#af141cff1cc19155b34d73bd981ac703b", null ],
     [ "GetStateChangeCallback", "class_ui_checkbox_interface.html#a60fd9208bbb0438540dd2927e258816b", null ],
-    [ "GetTurnOffActionName", "class_ui_checkbox_interface.html#a7382869ffb11a5eb92bb0257b4a7f90b", null ],
-    [ "GetTurnOnActionName", "class_ui_checkbox_interface.html#a76dde15cc285d972bc5c4c2cd1fb98ca", null ],
+    [ "GetTurnOffActionName", "class_ui_checkbox_interface.html#a42add4790c1548bc86e3b834ab603d8a", null ],
+    [ "GetTurnOnActionName", "class_ui_checkbox_interface.html#a2e37fdac0c38af81b3ec2bb67c641719", null ],
     [ "GetUncheckedEntity", "class_ui_checkbox_interface.html#a088784e4a511a136d8b75819a6d99211", null ],
     [ "SetChangedActionName", "class_ui_checkbox_interface.html#aff5a4f064b47b0bcc7a96473d4acf29c", null ],
     [ "SetCheckedEntity", "class_ui_checkbox_interface.html#a174ea225acfe5f61c081623657e0c4ac", null ],

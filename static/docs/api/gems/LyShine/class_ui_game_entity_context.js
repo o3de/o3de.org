@@ -1,27 +1,8 @@
 var class_ui_game_entity_context =
 [
-    [ "InstantiatingDynamicSlice", "struct_ui_game_entity_context_1_1_instantiating_dynamic_slice.html", "struct_ui_game_entity_context_1_1_instantiating_dynamic_slice" ],
-    [ "UiGameEntityContext", "class_ui_game_entity_context.html#a2fd9447292abd608e7828be50796ba91", null ],
-    [ "~UiGameEntityContext", "class_ui_game_entity_context.html#a7817e017beac59c3a712d0a583c0e112", null ],
-    [ "AddUiEntities", "class_ui_game_entity_context.html#a812989ff4c5fb06ef7684edd6ee1a284", null ],
-    [ "AddUiEntity", "class_ui_game_entity_context.html#a6ff69642f5414e348f80861ac92b5aee", null ],
-    [ "CloneUiEntities", "class_ui_game_entity_context.html#a34104cc5194d91b3d92c3c0bf0a29c37", null ],
-    [ "CreateUiEntity", "class_ui_game_entity_context.html#a7d212fe2959f17bc1453e8e7544c7e42", null ],
-    [ "DestroyEntity", "class_ui_game_entity_context.html#a9cc4d5154cb9c60124b5636346d5624e", null ],
+    [ "InstantiatingDynamicSlice", "struct_ui_game_entity_context_1_1_instantiating_dynamic_slice.html", null ],
     [ "DestroyUiContext", "class_ui_game_entity_context.html#ab730f67a2d94c92d1a6afbf338b1b4bc", null ],
-    [ "DestroyUiEntity", "class_ui_game_entity_context.html#af544815dd3e2ba4b327dc1aca1753471", null ],
-    [ "HandleLoadedRootSliceEntity", "class_ui_game_entity_context.html#ab91dded22d97054dcf1585a9acd2d203", null ],
-    [ "InitializeEntities", "class_ui_game_entity_context.html#a9f14bdabece293767c7f81e966beaf15", null ],
     [ "InitUiContext", "class_ui_game_entity_context.html#a6fd56c94001242df6ee8144d4b4b47f7", null ],
-    [ "InstantiateDynamicSlice", "class_ui_game_entity_context.html#a4e64353081ecb836e1d9681faea2e38e", null ],
-    [ "OnContextEntitiesAdded", "class_ui_game_entity_context.html#af06d8850ec2885c41564fe551144ae9a", null ],
-    [ "OnSliceInstantiated", "class_ui_game_entity_context.html#aefcaf039a4d0b22fe0c5605b3ba3d3de", null ],
-    [ "OnSliceInstantiationFailed", "class_ui_game_entity_context.html#add60cc50316eefa74147c2df78b2919a", null ],
-    [ "OnSlicePreInstantiate", "class_ui_game_entity_context.html#a63fc2449547a1629dcc9feaffeedf496", null ],
     [ "SaveCanvasEntityToStreamForGame", "class_ui_game_entity_context.html#a003e8b6ac0969b31a6ae29fad5f4a126", null ],
-    [ "SaveToStreamForGame", "class_ui_game_entity_context.html#adab02c3bdae9882647964e2d72724e5e", null ],
-    [ "SetCanvasEntity", "class_ui_game_entity_context.html#af78b5f46ebde2f8bbf457e5816faee1a", null ],
-    [ "ValidateEntitiesAreValidForContext", "class_ui_game_entity_context.html#a1eb6618032ba9afc6852899e087e3b1c", null ],
-    [ "m_canvasEntityId", "class_ui_game_entity_context.html#a39625938f17a3a8ac6407429a14998bb", null ],
-    [ "m_instantiatingDynamicSlices", "class_ui_game_entity_context.html#add7d4db1a5a4dfc8dbfe0b26fcc0b5e2", null ]
+    [ "SaveToStreamForGame", "class_ui_game_entity_context.html#adab02c3bdae9882647964e2d72724e5e", null ]
 ];

@@ -1,6 +1,5 @@
 var class_a_z_1_1_serialize_1_1_i_event_handler =
 [
-    [ "~IEventHandler", "class_a_z_1_1_serialize_1_1_i_event_handler.html#ac39063789e7b52849f8a5b3cff1066e4", null ],
     [ "OnLoadedFromObjectStream", "class_a_z_1_1_serialize_1_1_i_event_handler.html#ab9c89d59e1496be9a482fc7bfac7ef7e", null ],
     [ "OnObjectCloned", "class_a_z_1_1_serialize_1_1_i_event_handler.html#a370bd4852ca9a82fd3a13eb949025c5f", null ],
     [ "OnPatchBegin", "class_a_z_1_1_serialize_1_1_i_event_handler.html#a46dd61fd42e25f07cdfca3a5842782d8", null ],

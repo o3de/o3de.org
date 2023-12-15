@@ -1,6 +1,5 @@
 var class_e_motion_f_x_1_1_joint_limit_rotation_manipulators =
 [
-    [ "JointLimitRotationManipulators", "class_e_motion_f_x_1_1_joint_limit_rotation_manipulators.html#a8626ed82fcb60591762a810795450af2", null ],
     [ "InvalidateEditorValues", "class_e_motion_f_x_1_1_joint_limit_rotation_manipulators.html#a8bfa2fd2d2d79d629d1e7255bfbce013", null ],
     [ "Refresh", "class_e_motion_f_x_1_1_joint_limit_rotation_manipulators.html#a807aa54a87d1267e79335f184a4eaee2", null ],
     [ "ResetValues", "class_e_motion_f_x_1_1_joint_limit_rotation_manipulators.html#a5f7ef57922a66487068f2c728c542126", null ],

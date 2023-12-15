@@ -1,6 +1,5 @@
 var class_phys_x_1_1_collider_offset_mode =
 [
-    [ "ColliderOffsetMode", "class_phys_x_1_1_collider_offset_mode.html#a0011a84cc1aadde4e77e9fb8aad0e7e0", null ],
     [ "Refresh", "class_phys_x_1_1_collider_offset_mode.html#aa82dfcb858b06c08741b6ac3b2c6f6b6", null ],
     [ "ResetValues", "class_phys_x_1_1_collider_offset_mode.html#a0b175d678c07db475f0359988c51fb15", null ],
     [ "Setup", "class_phys_x_1_1_collider_offset_mode.html#ad13780a8c0b264065228967bafac156d", null ],

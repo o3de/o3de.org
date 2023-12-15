@@ -1,6 +1,5 @@
 var struct_az_framework_1_1_input_device_gamepad_1_1_thumb_stick_direction =
 [
-    [ "All", "struct_az_framework_1_1_input_device_gamepad_1_1_thumb_stick_direction.html#a25b585b4172c494fdaca7935603a63e8", null ],
     [ "LD", "struct_az_framework_1_1_input_device_gamepad_1_1_thumb_stick_direction.html#ac9c8fce0da33d382761b41afb74d1c99", null ],
     [ "LL", "struct_az_framework_1_1_input_device_gamepad_1_1_thumb_stick_direction.html#abe63d9f31ec92337cf829bb5e9760ae7", null ],
     [ "LR", "struct_az_framework_1_1_input_device_gamepad_1_1_thumb_stick_direction.html#a7ebcd2a3011a1ada51883cd1ac62c266", null ],

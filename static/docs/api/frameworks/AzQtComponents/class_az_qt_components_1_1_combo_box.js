@@ -5,6 +5,5 @@ var class_az_qt_components_1_1_combo_box =
     [ "defaultConfig", "class_az_qt_components_1_1_combo_box.html#a5fb12756f2b3154a23cdae449c0ea0bc", null ],
     [ "loadConfig", "class_az_qt_components_1_1_combo_box.html#a819ff51a6768ef6bd8a907e8b03b7515", null ],
     [ "setError", "class_az_qt_components_1_1_combo_box.html#ae921fc9ee15bda4e1236cd4da1653282", null ],
-    [ "setValidator", "class_az_qt_components_1_1_combo_box.html#af5b5cee9f64fb7c50def60c9e0e6d29f", null ],
-    [ "Style", "class_az_qt_components_1_1_combo_box.html#acf788547283b20e9c18be19919f98295", null ]
+    [ "setValidator", "class_az_qt_components_1_1_combo_box.html#af5b5cee9f64fb7c50def60c9e0e6d29f", null ]
 ];

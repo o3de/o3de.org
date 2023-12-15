@@ -1,9 +1,6 @@
 var class_a_z_1_1_render_1_1_point_light_feature_processor_interface =
 [
-    [ "LightHandle", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#ad6e77656659488751d1f9b086aff77c5", null ],
     [ "AcquireLight", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#ae112cf1323b71eab3af81d892e586109", null ],
-    [ "AZ_FEATURE_PROCESSOR", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a28b70ca5e3d17eb3c262a3ac40c2440e", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a26f9bb6c1850298b766585bb14d7d946", null ],
     [ "CloneLight", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a73b03f12bc32d710330426604c4463c8", null ],
     [ "ReleaseLight", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a5df87ca1a7e87dfb379409f85eb6cf04", null ],
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a1e3ecc1d247b5379e2d41444584930ee", null ],
@@ -20,6 +17,5 @@ var class_a_z_1_1_render_1_1_point_light_feature_processor_interface =
     [ "SetShadowFilterMethod", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a324ad31538898db8320bb7465f3bbb77", null ],
     [ "SetShadowmapMaxResolution", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a6bd8a8b0f2532954cfe2c1230c814060", null ],
     [ "SetShadowsEnabled", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a81c9d92f5b8bf124a815178acf7950c7", null ],
-    [ "SetUseCachedShadows", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#acd74b55ac49efd9e0e389f8c285bc01f", null ],
-    [ "PhotometricUnitType", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a734ec68f9b29495acaf56207f99839c5", null ]
+    [ "SetUseCachedShadows", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#acd74b55ac49efd9e0e389f8c285bc01f", null ]
 ];

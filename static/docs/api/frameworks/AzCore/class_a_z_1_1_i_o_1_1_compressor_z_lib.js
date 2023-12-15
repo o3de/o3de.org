@@ -1,9 +1,7 @@
 var class_a_z_1_1_i_o_1_1_compressor_z_lib =
 [
     [ "CompressorZLib", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a46490294df551c9ddf7d6950c9502780", null ],
-    [ "~CompressorZLib", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#adf011050b970ac9ba86910f22f420738", null ],
     [ "AcquireDataBuffer", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a97aabfb599d5e4bccb8485fbdf471608", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#ab505a30faa262b10d9091cd7cf9fa6a3", null ],
     [ "Close", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a73412e79dfa314998095e8f8f65c575e", null ],
     [ "FillCompressedBuffer", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a8ea7dbc22c7819d11be1592cc37b6b5c", null ],
     [ "FillFromDecompressCache", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a8025655d2e33101c0ca2dc1bbc44c431", null ],
@@ -17,7 +15,6 @@ var class_a_z_1_1_i_o_1_1_compressor_z_lib =
     [ "WriteHeaderAndData", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a9c18af108e4ff39cd961c2cd5ebf0c8c", null ],
     [ "WriteSeekPoint", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a5611c9f76bf029311dac2d22b5574efc", null ],
     [ "m_compressedDataBuffer", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#adb9232040cea4be76872294b0be96d79", null ],
-    [ "m_CompressedDataBufferAlignment", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#ab45ba880f2f1f697ddd9940bcf44b374", null ],
     [ "m_compressedDataBufferSize", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a23d04416355b8edcb22a2b2f1eb6ad94", null ],
     [ "m_compressedDataBufferUseCount", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#ad673cba918fb286275a58bac31696556", null ],
     [ "m_decompressionCachePerStream", "class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a86e0f4bb2b3bd586167e56c1f8f64dba", null ],

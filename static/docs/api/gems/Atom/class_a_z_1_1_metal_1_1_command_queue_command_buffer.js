@@ -1,13 +1,7 @@
 var class_a_z_1_1_metal_1_1_command_queue_command_buffer =
 [
-    [ "CommandQueueCommandBuffer", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a4001177a0499abdbae25e50aebf896c6", null ],
-    [ "CommandQueueCommandBuffer", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a0c07cf1b0a91477b8b88c644567973d9", null ],
-    [ "~CommandQueueCommandBuffer", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a75a616897965b44720e5c2ac5ff8093f", null ],
-    [ "AcquireMTLCommandBuffer", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a873e4b0c7c0f7b8e1f5ff55a40168fd6", null ],
-    [ "AcquireSubRenderEncoder", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a4df5ae6a58322a035df56005bcd5cd24", null ],
+    [ "AcquireMTLCommandBuffer", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#abcbb25dc2d695730f3834c04a02ea319", null ],
+    [ "AcquireSubRenderEncoder", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a0ffb3bff7ccaf075e8d0f65b311c05d2", null ],
     [ "CommitMetalCommandBuffer", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#ac02c8050dfb2d15ab9604f0ac883ab95", null ],
-    [ "FlushParallelEncoder", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a373e76f1697368023ec5c08ab82c9059", null ],
-    [ "GetCommandBufferStatus", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a4120ef59dde0f35697bd278457670138", null ],
-    [ "GetMtlCommandBuffer", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a33eedabbc10467c535ac3941562224cb", null ],
-    [ "Init", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#aede03b10aaf0dfb55cee4d3107c9531f", null ]
+    [ "FlushParallelEncoder", "class_a_z_1_1_metal_1_1_command_queue_command_buffer.html#a373e76f1697368023ec5c08ab82c9059", null ]
 ];

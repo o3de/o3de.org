@@ -1,6 +1,5 @@
 var class_lmbr_central_1_1_capsule_shape_component_requests =
 [
-    [ "GetCapsuleConfiguration", "class_lmbr_central_1_1_capsule_shape_component_requests.html#abd29e015a763eba30079f6e30591c41d", null ],
     [ "GetCapsulePoints", "class_lmbr_central_1_1_capsule_shape_component_requests.html#a5f95db2ccd96a0c38d61aff82f5c2fe0", null ],
     [ "GetHeight", "class_lmbr_central_1_1_capsule_shape_component_requests.html#ad9431e7dd8223ba6966fa727d36c99f2", null ],
     [ "GetRadius", "class_lmbr_central_1_1_capsule_shape_component_requests.html#affefae7da8dc849ebd522f78b24f905f", null ],

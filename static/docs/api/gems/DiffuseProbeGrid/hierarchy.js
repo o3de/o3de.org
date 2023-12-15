@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "ComponentConfig", null, [
+    [ "AZ::ComponentConfig", null, [
       [ "AZ::Render::DiffuseProbeGridComponentConfig", "class_a_z_1_1_render_1_1_diffuse_probe_grid_component_config.html", null ]
     ] ],
-    [ "Module", null, [
+    [ "AZ::Module", null, [
       [ "AZ::Render::DiffuseProbeGridModule", "class_a_z_1_1_render_1_1_diffuse_probe_grid_module.html", null ]
     ] ],
     [ "AZ::Render::DiffuseGlobalIlluminationComponentController", "class_a_z_1_1_render_1_1_diffuse_global_illumination_component_controller.html", null ],
@@ -13,23 +13,23 @@ var hierarchy =
     [ "AZ::Render::DiffuseProbeGridRenderData", "struct_a_z_1_1_render_1_1_diffuse_probe_grid_render_data.html", null ],
     [ "AZ::Render::DiffuseProbeGridTexture", "struct_a_z_1_1_render_1_1_diffuse_probe_grid_texture.html", null ],
     [ "AZ::Render::DiffuseProbeGridTextureReadback", "class_a_z_1_1_render_1_1_diffuse_probe_grid_texture_readback.html", null ],
-    [ "Handler", null, [
+    [ "AZ::TickBus::Handler", null, [
       [ "AZ::Render::EditorDiffuseProbeGridComponent", "class_a_z_1_1_render_1_1_editor_diffuse_probe_grid_component.html", null ]
     ] ],
-    [ "ComponentAdapter", null, [
+    [ "AzFramework::Components::ComponentAdapter", null, [
       [ "AZ::Render::DiffuseGlobalIlluminationComponent", "class_a_z_1_1_render_1_1_diffuse_global_illumination_component.html", null ],
       [ "AZ::Render::DiffuseProbeGridComponent", "class_a_z_1_1_render_1_1_diffuse_probe_grid_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::EntityDebugDisplayEventBus::Handler", null, [
       [ "AZ::Render::EditorDiffuseProbeGridComponent", "class_a_z_1_1_render_1_1_editor_diffuse_probe_grid_component.html", null ]
     ] ],
-    [ "EditorComponentAdapter", null, [
+    [ "AzToolsFramework::Components::EditorComponentAdapter", null, [
       [ "AZ::Render::EditorDiffuseGlobalIlluminationComponent", "class_a_z_1_1_render_1_1_editor_diffuse_global_illumination_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorComponentSelectionRequestsBus::Handler", null, [
       [ "AZ::Render::EditorDiffuseProbeGridComponent", "class_a_z_1_1_render_1_1_editor_diffuse_probe_grid_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorEntityInfoNotificationBus::Handler", null, [
       [ "AZ::Render::EditorDiffuseProbeGridComponent", "class_a_z_1_1_render_1_1_editor_diffuse_probe_grid_component.html", null ]
     ] ],
     [ "Component", null, [
@@ -38,20 +38,20 @@ var hierarchy =
     [ "ComponentConfig", null, [
       [ "AZ::Render::DiffuseGlobalIlluminationComponentConfig", "class_a_z_1_1_render_1_1_diffuse_global_illumination_component_config.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "Data::AssetBus::MultiHandler", null, [
       [ "AZ::Render::DiffuseProbeGridComponentController", "class_a_z_1_1_render_1_1_diffuse_probe_grid_component_controller.html", null ],
       [ "AZ::Render::DiffuseProbeGridFeatureProcessor", "class_a_z_1_1_render_1_1_diffuse_probe_grid_feature_processor.html", null ]
     ] ],
     [ "EditorRenderComponentAdapter", null, [
       [ "AZ::Render::EditorDiffuseProbeGridComponent", "class_a_z_1_1_render_1_1_editor_diffuse_probe_grid_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "LmbrCentral::ShapeComponentNotificationsBus::Handler", null, [
       [ "AZ::Render::DiffuseProbeGridComponentController", "class_a_z_1_1_render_1_1_diffuse_probe_grid_component_controller.html", null ]
     ] ],
-    [ "ScopeProducer", null, [
+    [ "RHI::ScopeProducer", null, [
       [ "AZ::Render::DiffuseProbeGridVisualizationAccelerationStructurePass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_visualization_acceleration_structure_pass.html", null ]
     ] ],
-    [ "FeatureProcessor", null, [
+    [ "RPI::FeatureProcessor", null, [
       [ "AZ::Render::DiffuseGlobalIlluminationFeatureProcessorInterface", "class_a_z_1_1_render_1_1_diffuse_global_illumination_feature_processor_interface.html", [
         [ "AZ::Render::DiffuseGlobalIlluminationFeatureProcessor", "class_a_z_1_1_render_1_1_diffuse_global_illumination_feature_processor.html", null ]
       ] ],
@@ -59,17 +59,17 @@ var hierarchy =
         [ "AZ::Render::DiffuseProbeGridFeatureProcessor", "class_a_z_1_1_render_1_1_diffuse_probe_grid_feature_processor.html", null ]
       ] ]
     ] ],
-    [ "FullscreenTrianglePass", null, [
+    [ "RPI::FullscreenTrianglePass", null, [
       [ "AZ::Render::DiffuseProbeGridDownsamplePass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_downsample_pass.html", null ],
       [ "AZ::Render::DiffuseProbeGridVisualizationCompositePass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_visualization_composite_pass.html", null ]
     ] ],
-    [ "Pass", null, [
+    [ "RPI::Pass", null, [
       [ "AZ::Render::DiffuseProbeGridVisualizationAccelerationStructurePass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_visualization_acceleration_structure_pass.html", null ]
     ] ],
-    [ "RasterPass", null, [
+    [ "RPI::RasterPass", null, [
       [ "AZ::Render::DiffuseProbeGridRenderPass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_render_pass.html", null ]
     ] ],
-    [ "RenderPass", null, [
+    [ "RPI::RenderPass", null, [
       [ "AZ::Render::DiffuseProbeGridBlendDistancePass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_blend_distance_pass.html", null ],
       [ "AZ::Render::DiffuseProbeGridBlendIrradiancePass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_blend_irradiance_pass.html", null ],
       [ "AZ::Render::DiffuseProbeGridBorderUpdatePass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_border_update_pass.html", null ],
@@ -82,10 +82,10 @@ var hierarchy =
       [ "AZ::Render::DiffuseProbeGridVisualizationPreparePass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_visualization_prepare_pass.html", null ],
       [ "AZ::Render::DiffuseProbeGridVisualizationRayTracingPass", "class_a_z_1_1_render_1_1_diffuse_probe_grid_visualization_ray_tracing_pass.html", null ]
     ] ],
-    [ "RenderPassData", null, [
+    [ "RPI::RenderPassData", null, [
       [ "AZ::Render::DiffuseProbeGridQueryFullscreenPassData", "struct_a_z_1_1_render_1_1_diffuse_probe_grid_query_fullscreen_pass_data.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "TransformNotificationBus::Handler", null, [
       [ "AZ::Render::DiffuseProbeGridComponentController", "class_a_z_1_1_render_1_1_diffuse_probe_grid_component_controller.html", null ]
     ] ]
 ];
