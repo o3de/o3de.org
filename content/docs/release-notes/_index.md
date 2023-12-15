@@ -12,7 +12,7 @@ primary: true
 
 ## Current version of Open 3D Engine
 
-**Latest version**: 23.10.1, released on December 7, 2023.
+**Latest version**: 23.10.1, released on December 14, 2023.
 
 **Release Notes**: [O3DE 23.10.1 Release Notes](./2310-1-release-notes)
 
@@ -21,9 +21,9 @@ primary: true
 
 | Version                            | Binary download link                             |  Date of Release   |
 |------------------------------------|--------------------------------------------------|--------------------|
-| 23.10.1 \[Windows\] | [Download](https://o3debinaries.org/download/windows.html) | December 7, 2023 |
-| 23.10.1 \[Linux\] | [Download](https://o3debinaries.org/download/linux.html) | December 7, 2023 |
-| 23.10.1 \[Source code\] | [GitHub repository](https://github.com/o3de/o3de/tree/main) |  December 7, 2023 |
+| 23.10.1 \[Windows\] | [Download](https://o3debinaries.org/download/windows.html) | December 14, 2023 |
+| 23.10.1 \[Linux\] | [Download](https://o3debinaries.org/download/linux.html) | December 14, 2023 |
+| 23.10.1 \[Source code\] | [GitHub repository](https://github.com/o3de/o3de/tree/main) |  December 14, 2023 |
 
 
 ## Older versions
