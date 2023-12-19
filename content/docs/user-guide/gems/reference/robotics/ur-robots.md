@@ -7,13 +7,15 @@ toc: true
 
 <!-- # UR Robots Gem -->
 
-The **UR Robots Gem** is an assets only Gem that provides a collection of robotic arms assets that can be used in robotic simulations with [ROS&nbsp;2 Gem](./ros2.md) in **Open 3D Engine (O3DE)**. In particular, this Gem contains the simplified models of the following robots developed by [Universal Robots](https://www.universal-robots.com/):
+![O3DE showing a level with UR10 and UR20 robotic arms](/images/user-guide/gems/ur-robots-gem-demo.png)
+
+The **UR Robots Gem** provides simplified models of the following robotic arms developed by [Universal Robots](https://www.universal-robots.com/):
 - [UR10](https://www.universal-robots.com/products/ur10-robot/)
 - [UR20](https://www.universal-robots.com/products/ur20-robot/)
+  
+Thanks to the pneumatic vacuum end effector that can be attached to either of the arms (available in the Gem), you can use the assets in robotic simulations of warehouses. An example of such usage with [ROS&nbsp;2 Gem](./ros2.md) can be found in [ROSCon2023Demo](https://github.com/RobotecAI/ROSCon2023Demo). 
 
-Additionally, it contains the assets of the pneumatic vacuum end effector.
-
-An example of its use can be found in [ROSCon2023Demo](https://github.com/RobotecAI/ROSCon2023Demo) project. The Gem is available from our [Github repository](https://github.com/RobotecAI/o3de-ur-robots-gem/). For more information, refer to the _README_ file of the Gem.
+This Gem has a [Github repository](https://github.com/RobotecAI/o3de-ur-robots-gem/). For more information, refer to the _README_ file of the Gem.
 
 ## License
 
