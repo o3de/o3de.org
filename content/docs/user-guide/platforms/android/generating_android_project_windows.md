@@ -15,12 +15,12 @@ The following workflow describes the steps to build and deploy the Atom Sample V
 The following instructions assume that you have:
 
 1.  Steps are performed in a Windows host machine.
-1.  The software [prerequisites for Android](/docs/user-guide/platforms/android#Prerequisite software and packages) are satisfied.
+1.  The software [prerequisites for Android](docs/user-guide/platforms/android#prerequisite-software-and-packages) are satisfied.
 1.  Latest version of [Android Studio](https://developer.android.com/studio)
 
 1.  [O3DE](https://github.com/o3de/o3de.git) has been cloned locally on the system. Python must be initialized (through the `python\get_python.cmd` script), and the path must be [registered](/docs/welcome-guide/setup/setup-from-github/building-windows/#register-the-engine) as the engine.
 1.  [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) has been cloned locally on the system, and registered as an O3DE project through the [O3DE Command Line](docs/user-guide/project-config/cli-reference#register).
-1.  A [signing configuration keystore](/docs/user-guide/platforms/android#APK Signing) is created (Either from Android Studio or the keytool command line)
+1.  A [signing configuration keystore](/docs/user-guide/platforms/android#apk-signing) is created (Either from Android Studio or the keytool command line)
 1.  The **android** platform must be enabled in the [AssetProcessorPlatformConfig.setreg](https://github.com/o3de/o3de/blob/324c0317e9cf61428d3bec492c7ba243a08718f9/Registry/AssetProcessorPlatformConfig.setreg#L64-L70) in the engine root:
     ```json
     "Platforms": {
@@ -65,7 +65,7 @@ This tutorial will use the following environment variables in the example steps
 
 - `ANDROID_SIGNING_CONFIG_KEYSTORE_FILE`
 
-  The key store file location for the [signing configuration](/docs/user-guide/platforms/android#APK_Signing) to use for APK signing.
+  The key store file location for the [signing configuration](/docs/user-guide/platforms/android#APK_Signing) to use for APK signing. The key store file can be created with the [keytool](https://docs.oracle.com/en/java/javase/17/docs/specs/man/keytool.html) utility provided by Java. 
 
 - `ANDROID_SIGNING_CONFIG_KEY_ALIAS`
 
@@ -87,7 +87,7 @@ This tutorial will use the following environment variables in the example steps
 
    cd %O3DE_PROJECT_PATH%\build\windows
 
-   AssetProcessorBatch.exe --platform android
+   bin\profile\AssetProcessorBatch.exe --platform android
 
    ```
 
