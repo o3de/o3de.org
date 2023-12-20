@@ -65,7 +65,7 @@ This tutorial will use the following environment variables in the example steps
 
 - `ANDROID_SIGNING_CONFIG_KEYSTORE_FILE`
 
-  The key store file location for the [signing configuration](/docs/user-guide/platforms/android#APK_Signing) to use for APK signing. The user must provide this key store file.
+  The key store file location for the [signing configuration](/docs/user-guide/platforms/android#APK_Signing) to use for APK signing. The key store file can be created with the [keytool](https://docs.oracle.com/en/java/javase/17/docs/specs/man/keytool.html) utility provided by Java. 
 
 - `ANDROID_SIGNING_CONFIG_KEY_ALIAS`
 
