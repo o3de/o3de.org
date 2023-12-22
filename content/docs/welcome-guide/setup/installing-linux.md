@@ -9,7 +9,7 @@ To get started quickly with O3DE in Linux, download and install the deb package.
 
 ## Prerequisites
 
-The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](../requirements/#linux).
+The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements/#linux).
 
 ## Installing O3DE from a deb package
 
