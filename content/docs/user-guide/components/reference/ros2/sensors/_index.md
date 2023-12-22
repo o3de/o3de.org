@@ -8,3 +8,4 @@ Refer to the [Robotics](/docs/user-guide/interactivity/robotics) documentation t
 
 ROS 2 Gem components can be divided into the following categories:
 -  [Lidar Sensor component](ros2-lidar-sensor.md)
+-  [GNSS Sensor Component](ros2-gnss-sensor.md)
