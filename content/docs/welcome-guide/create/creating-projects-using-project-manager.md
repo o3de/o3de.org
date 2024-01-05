@@ -65,7 +65,7 @@ If this is the first time you've used Project Manager to create a project, then 
 
     ![Create a New Project - Project Details screen](/images/welcome-guide/project-manager-create-project.png)
 
-1. Under **Select a Project Template**, you can choose a project template with a pre-configured selection of Gems. You can modify the list of Gems enabled for your project by choosing the **Configure Gems** button. This tutorial uses the default template and its pre-configured selection of common Gems.
+1. Under **Select a Project Template**, you can choose a project template with a pre-configured selection of Gems. You can modify the list of Gems enabled for your project by choosing the **Configure Gems** button. This tutorial uses the default template and its pre-configured selection of common Gems.   Other templates are available.  For more information about templates, and which templates are available, refer to the documentation on [Templates](/content/docs/user-guide/build/templates.md) in the User Guide.
 
 1. Choose **Create Project** to create the project files in the project location you selected. This also registers your project in the O3DE manifest, located at `<user-folder>/.o3de/o3de_manifest.json`.
 
