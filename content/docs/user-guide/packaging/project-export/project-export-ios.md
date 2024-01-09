@@ -10,7 +10,7 @@ This guide covers how to use project export tooling to build and deploy games on
 For this demonstration, we will use the O3DE Atom Sample Viewer project as our reference point for ensuring proper behavior. Results may vary for other projects.
 
 {{< note >}}
-To learn more about the project export tooling, please consult the page [Project Export CLI Tool.](project-export-cli)
+To learn more about the project export tooling, please consult the page [Project Export CLI Tool.](/docs/user-guide/packaging/project-export/project-export-cli)
 {{< /note >}}
 {{< important >}}
 The iOS export functionality is only available on macOS, which is currently experimental for O3DE.
