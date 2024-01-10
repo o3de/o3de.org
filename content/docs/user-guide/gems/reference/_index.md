@@ -42,6 +42,7 @@ toc: true
 | [Audio Engine Wwise](./audio/wwise/audio-engine-wwise) | The Wwise Audio Engine Gem provides support for Audiokinetic Wave Works Interactive Sound Engine (Wwise). |
 | [Audio System](./audio/audio-system) | The Audio System Gem provides the Audio Translation Layer (ATL), which adds support for audio in your Open 3D Engine projects. |
 | [Microphone](./audio/microphone) | The Microphone Gem provides support for audio input through microphones. |
+| [MiniAudio](./audio/miniaudio/miniaudio) | The MiniAudio Gem provides support for audio playback and positioning using [MiniAudio](https://miniaud.io). |
 
 ## AWS
 

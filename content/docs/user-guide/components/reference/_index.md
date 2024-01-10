@@ -89,6 +89,8 @@ The following components are grouped by type as they appear in the O3DE Editor.
 | [Audio Switch](/docs/user-guide/components/reference/audio/switch/) | Provides basic Audio Translation Layer switch functionality to specify the state of an entity. |
 | [Audio Trigger](/docs/user-guide/components/reference/audio/trigger/) | Provides Audio Translation Layer triggers that allows you to play or stop the audio. |
 | [Multi-Position Audio](/docs/user-guide/components/reference/audio/multi-position/) | Provides the ability to broadcast sounds through multiple positions.|
+| [MiniAudio Listener](/docs/user-guide/components/reference/audio/mini-audio-listener/) | Provides the ability to set the MiniAudio listener for spatial audio playback.|
+| [MiniAudio Playback](/docs/user-guide/components/reference/audio/mini-audio-playback/) | Provides the ability to play sounds with MiniAudio.|
 
 
 ### Camera
