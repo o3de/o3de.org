@@ -25,7 +25,7 @@ See the [Script-only 'Quick Start' Projects](/docs/user-guide/build/script-only-
 ### MinimalProject
 This has as few gems active as possible, and is a bare-bones starting point.  It is not recommended to use this template as-is, but rather start with it and then activate what gems you might need for your project.   Because it activates as little as possible, and includes as few other gems as possible, it has the quickest startup time and asset compilation time.
 
-## Notable gem templates included with the engine
+## Notable Gem templates included with the engine
 These templates are for making your own custom gems that can be used to extend the engine and reused across projects.
 To create gems and other components from template, the command line utility must be used, similar to how projects are created using the CLI in [Creating Projects using CLI](/docs/welcome-guide/create/creating-projects-using-cli), but with a different command (`create-gem`) and different argument (`--gem-path`) to supply the output folder.
 
@@ -62,7 +62,7 @@ This template contains the scaffolding of a Gem that will plug into the multipla
 ### PrebuiltGem
 This template contains instructions and a starting layout for a gem that can be shipped as a pre-built library (with only header files, no source code).  It shows how to hook into existing static or shared libraries instead of shipping the source, as well as how you might structure the shippable tree of a Gem if you want it to work without compiling on the user's side.  Pre-built gems are the only way to ship gems that work with Script Only Mode.
 
-## Other template included with the engine
+## Other templates included with the engine
 These templates can be used to save time with boilerplate code, and are used by telling the CLI to inject them into existing projects or gems, as they contain a fragment of code or assets and are not functional standalone.  The CLI command `create-from-template` should be used to instantiate the template, with the `-dp` destination path supplied where to put the instantiated template and the `-tn` argument being the name of the template.
 
 linux example:
