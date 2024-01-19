@@ -151,4 +151,4 @@ Use the Robot Importer to re-import URDF files. In some cases, assets (mesh file
 
 ### Details
 
-Details about supported SDFormat sensors are available in the [SDFormat sub-page](./sdformat-sensors.md)
+Details about supported SDFormat sensors are available in the [SDFormat sensors sub-page](./sdformat-sensors.md). Additional information about SDFormat model plugins are given in the [SDFormat plugins sub-page](./sdformat-plugins.md).
