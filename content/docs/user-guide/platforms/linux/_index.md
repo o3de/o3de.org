@@ -33,9 +33,13 @@ Refer to [Creating Projects Using the Command Line Interface](/docs/welcome-guid
 
 Although CMake supports Unix Make Files on Linux, we recommend that you use Ninja as a build system to support multiple configurations in your generated builds. These instructions use "Ninja Multi-Config" as the CMake generator.
 
+{{< important >}}
+When building using the O3DE pre-build **Snap** SDK, first export the `O3DE_SNAP` environment variable so CMake does not attempt to install Python pip requirements and fail. To export the `O3DE_SNAP` environment variable, run the command `export O3DE_SNAP` from the command line before running the CMake commands below.
+{{< /important >}}
 
 ### Multiple Config Builds
 The following command generates a build folder, `build/linux`, under the root of the project folder, `$O3DE_PROJECT_PATH`, by using Ninja as the build generator and clang-12 as the compiler.
+
 
 ```shell
 
@@ -60,6 +64,10 @@ cmake -B build/linux -S . -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=$BUILD_CONFIG
 ## Building from command line
 
 Once the build folder is generated, building from command line is the same process as for other platforms.
+
+{{< important >}}
+When building using the O3DE pre-build **Snap** SDK, first export the `O3DE_SNAP` environment variable so CMake does not attempt to install Python pip requirements and fail. To export the `O3DE_SNAP` environment variable, run the command `export O3DE_SNAP` from the command line before running the CMake commands below.
+{{< /important >}}
 
 ### Multiple Config Builds
 
