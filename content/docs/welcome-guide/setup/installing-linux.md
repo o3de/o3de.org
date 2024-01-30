@@ -143,6 +143,10 @@ Example of launching Project Manager from the shell:
 o3de
 ```
 
+{{< important >}}
+When configuring or building using the O3DE pre-build **Snap** SDK from the command line, first export the `O3DE_SNAP` environment variable so CMake does not attempt to install Python pip requirements and fail. To export the `O3DE_SNAP` environment variable, run the command `export O3DE_SNAP` from the command line before running the CMake commands below.
+{{< /important >}}
+
 ## Removing O3DE installed from a Snap package
 
 1. Run `snap` to remove O3DE:
