@@ -44,7 +44,7 @@ To use profile mode instead, change the `--config` parameter in the above snippe
 
 That invocation should be all that is needed to create an IPA file for your project. To install the IPA on your phone for testing, you can do so manually via Xcode. Please check [this page for more details.](https://developer.apple.com/documentation/xcode/distributing-your-app-to-registered-devices#Install-the-app-on-user-devices)
 
-As a result of the export process, the resulting Xcodeproject file was also generated. You can find it in `$PROJECT_PATH/build/game-ios`. For regular iterative development with frequent deployments to the iOS device, it is recommended you work with Xcode directly using this project file. See the [manual export page for more details.](manual-export-atom-sampleviewer-ios#using-xcode)
+As a result of the export process, the resulting Xcode project file was also generated. You can find it in `$PROJECT_PATH/build/game-ios`. For regular iterative development with frequent deployments to the iOS device, it is recommended you work with Xcode directly using this project file. See the [manual export page for more details.](manual-export-atom-sampleviewer-ios#using-xcode)
 
 ## iOS Export Script
 O3DE ships with an [iOS Export Script](https://github.com/o3de/o3de/blob/bb3eafe30d8291f50b69924e5b7a432c8c6f53ca/scripts/o3de/ExportScripts/export_source_ios_xcode.py#L24), capable of generating an Xcode project file to handle standard use cases of O3DE projects on iOS. This script is only designed to run from an O3DE source installation on a macOS machine.
