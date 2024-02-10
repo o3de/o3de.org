@@ -37,7 +37,7 @@ keytool -genkey -keystore $KEYSTORE_FILE_PATH -storepass $STOREPASS  -alias $ALI
 ```
 //"android": "enabled", -> "android": "enabled",
 ```
-This will tell the asset processor to make sure ios assets are cached when building the project.
+This will tell the asset processor to make sure Android assets are cached when building the project.
 
 7. Make sure your project has the right configuration settings for Android. You can use the `android-configure` CLI tool to ensure this is setup. To see what is currently configured, run:
 ```
