@@ -29,7 +29,7 @@ export VALIDITY=10000
 export DNAME="cn=o3de-android-project, ou=o3de, o=LF, c=US"
 keytool -genkey -keystore $KEYSTORE_FILE_PATH -storepass $STOREPASS  -alias $ALIAS -keypass $KEYPASS -keyalg RSA -keysize $KEYSIZE -validity $VALIDITY -dname $DNAME
 ```
-5. Make sure the o3de engine bootstrap registry is enabled for android. To do so, go to your O3DE engine installation and edit the file at `$O3DE_ENGINE_PATH/Registry/bootstrap.setreg` so that the `assets` field uses `android`. Like so:
+5. Make sure the O3DE bootstrap registry is enabled for Android. To do so, go to your O3DE installation and edit the file at `$O3DE_ENGINE_PATH/Registry/bootstrap.setreg` so that the `assets` field uses `android`. Like so:
 ```
 "assets": "android",
 ```
