@@ -20,26 +20,20 @@ To learn more about how to manually export an Android project, please consult th
 3. Ensure all pre-requisites for working with Android in O3DE are satsified. You can learn about software dependencies [here](https://development--o3deorg.netlify.app/docs/user-guide/platforms/android/#prerequisite-software-and-packages) and project setup pre-requisites [here](https://development--o3deorg.netlify.app/docs/user-guide/platforms/android/generating_android_project_windows/#prerequisites). For the Android SDK, make sure to record where the root folder path is located on your hard drive, as that will be needed for setting up configuration.
 4. Ensure that you have a proper keystore file configured for signing. You can learn more [here](https://development--o3deorg.netlify.app/docs/user-guide/platforms/android/#apk-signing). Here is an example keystore file you can create to start with (you will need the JDK with `keytool`):
 ```
-export KEYSTORE_FILE_PATH=/path/to/android-key.keystore
-export STOREPASS=o3depass
-export ALIAS=o3dekey
-export KEYPASS=o3depass
-export KEYSIZE=2048
-export VALIDITY=10000
-export DNAME="cn=o3de-android-project, ou=o3de, o=LF, c=US"
-keytool -genkey -keystore $KEYSTORE_FILE_PATH -storepass $STOREPASS  -alias $ALIAS -keypass $KEYPASS -keyalg RSA -keysize $KEYSIZE -validity $VALIDITY -dname $DNAME
+set KEYSTORE_FILE_PATH=C:\path\to\android-key.keystore
+set STOREPASS=o3depass
+set ALIAS=o3dekey
+set KEYPASS=o3depass
+set KEYSIZE=2048
+set VALIDITY=10000
+set DNAME="cn=o3de-android-project, ou=o3de, o=LF, c=US"
+keytool -genkey -keystore %KEYSTORE_FILE_PATH% -storepass %STOREPASS%  -alias %ALIAS% -keypass %KEYPASS% -keyalg RSA -keysize %KEYSIZE% -validity %VALIDITY% -dname %DNAME%
 ```
-5. Make sure the O3DE bootstrap registry is enabled for Android. To do so, go to your O3DE installation and edit the file at `$O3DE_ENGINE_PATH/Registry/bootstrap.setreg` so that the `assets` field uses `android`. Like so:
+5. Make sure the O3DE bootstrap registry is enabled for Android. To do so, go to your O3DE installation and edit the file at `%O3DE_ENGINE_PATH%\Registry\bootstrap.setreg` so that the `assets` field uses `android`. Like so:
 ```
 "assets": "android",
 ```
-6. Edit the `$O3DE_ENGINE_PATH/Registry/AssetProcessorPlatformConfig.setreg` file at line 67 by uncommenting the line:
-```
-//"android": "enabled", -> "android": "enabled",
-```
-This will tell the asset processor to make sure assets are processed for Android when building the project.
-
-7. Make sure your project has the right configuration settings for Android. You can use the `android-configure` CLI tool to ensure this is setup. To see what is currently configured, run:
+6. Make sure your project has the right configuration settings for Android. You can use the `android-configure` CLI tool to ensure this is setup. To see what is currently configured, run:
 ```
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure -l
 ```
@@ -52,8 +46,8 @@ If you do not already have Android configured, or encounter issues with the vali
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value platform.sdk.api=30
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value ndk.version=25.*
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value android.gradle.plugin=8.1.0
-$O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value sdk.root=/path/to/android/sdk
-$O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value signconfig.store.file=/path/to/android-key.keystore
+$O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value sdk.root=C:/path/to/android/sdk
+$O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value signconfig.store.file=C:/path/to/android-key.keystore
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value signconfig.key.alias=o3dekey
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value asset.mode=PAK
 ```
@@ -68,17 +62,17 @@ Make sure the passwords supplied here match what you used in the keystore file, 
 ### Running the Export Script
 For building in release mode with bundled PAK files for your APK, you can use the following export command:
 ```
-export O3DE_ENGINE_PATH=/path/to/o3de
-export PROJECT_PATH=/path/to/project
-cd $PROJECT_PATH
-$O3DE_ENGINE_PATH/scripts/o3de.sh export-project -es export_source_android.py -pp . -abp build/game-android -ll INFO --config release --asset-mode PAK
+set O3DE_ENGINE_PATH=C:\path\to\o3de
+set PROJECT_PATH=C:\path\to\project
+cd %PROJECT_PATH%
+%O3DE_ENGINE_PATH%\scripts\o3de.bat export-project -es export_source_android.py -pp . -abp build\game-android -ll INFO --config release --asset-mode PAK
 ```
 
 To use profile mode instead, change the `--config` parameter in the above snippet to use `profile` instead. If you wish to set the asset mode to LOOSE, use `--asset-mode LOOSE`.
 
 That invocation should be all that is needed to create an APK file for your project. To install the APK on your phone for testing, this can be done by adding the `--deploy-to-android` flag in the export snippet above. Please note that to use this feature, you must ensure an android device is connected to your computer, and that ADB is able to properly access the device.
 
-As a result of the export process, the resulting Android Gradle project folder was also generated. You can find it in `$PROJECT_PATH/build/game-android`. You can use this project folder from inside Android Studio to tweak any specific settings, or run the Debugger.
+As a result of the export process, the resulting Android Gradle project folder was also generated. You can find it in `%PROJECT_PATH%\build\game-android`. You can use this project folder from inside Android Studio to tweak any specific settings, or run the Debugger.
 
 ## Android Export Script
 O3DE ships with an [Android Export Script](https://github.com/o3de/o3de/blob/bb3eafe30d8291f50b69924e5b7a432c8c6f53ca/scripts/o3de/ExportScripts/export_source_android.py#L28), capable of generating an Android Gradle project folder to handle standard use cases of O3DE projects on Android.
@@ -110,8 +104,7 @@ The arguments are as follows:
 
 Here is an example usage of this script:
 ```
-# On Linux
-export ANDROID_OUTPUT_PATH=/path/to/android/build/path
-$O3DE_ENGINE_PATH/scripts/o3de.sh export-project --export-script $O3DE_ENGINE_PATH/scripts/o3de/ExportScripts/export_source_android.py --project-path $PROJECT_PATH --android-build-path $ANDROID_OUTPUT_PATH
+set ANDROID_OUTPUT_PATH=C:\path\to\android\build\path
+%O3DE_ENGINE_PATH%\scripts\o3de.bat export-project --export-script %O3DE_ENGINE_PATH%\scripts\o3de\ExportScripts\export_source_android.py --project-path %PROJECT_PATH% --android-build-path %ANDROID_OUTPUT_PATH%
 ```
 `O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `ANDROID_OUTPUT_PATH` are environment variables. The `O3DE_ENGINE_PATH` and `O3DE_PROJECT_PATH` variables point to the path locations for your o3de source engine and o3de project respectively. The `ANDROID_OUTPUT_PATH` variable corresponds to the folder path where you would like for the generated Android Gradle project folder to appear.
