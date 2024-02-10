@@ -57,7 +57,7 @@ $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value signconfig.stor
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value signconfig.key.alias=o3dekey
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value asset.mode=PAK
 ```
-Note that for sdk.root and signconfig.store.file, you must already know where those things exist on your hard drive, and use those paths accordingly. To setup the keypass and storepass, you must use the following commands
+Note: you must already know where sdk.root and signconfig.store.file exist on your hard drive, and use those paths accordingly. To setup the keypass and storepass, you must use the following commands
 ```
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-password signconfig.store.password
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-password signconfig.key.password
