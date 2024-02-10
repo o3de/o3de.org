@@ -47,7 +47,7 @@ You can also validate your current configuration using:
 ```
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --validate
 ```
-If you do not already have android configured, or encounter issues with the validate command, you can run the following:
+If you do not already have Android configured, or encounter issues with the validate command, you can run the following:
 ```
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value platform.sdk.api=30
 $O3DE_ENGINE_PATH/scripts/o3de.bat android-configure --set-value ndk.version=25.*
