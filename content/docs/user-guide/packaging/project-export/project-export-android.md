@@ -5,7 +5,7 @@ description: Learn how to use the Project Export CLI to automate preparing your 
 toc: true
 weight: 410
 ---
-This guide covers how to use project export tooling to build and deploy games on Android. We will use the Android export script to generate a gradle project and prepare assets and then build the project. The end result of export should be an APK file that can be installed on your Android device, along with an additional step to auto-install on a connected phone.
+This guide covers how to use project export tooling to build and deploy games on Android. We will use the Android export script to generate a Gradle project, prepare assets, and then build the project. The end result of export should be an APK file that can be installed on your Android device, along with an additional step to auto-install on a connected phone.
 
 {{< note >}}
 To learn more about the project export tooling, please consult the page [Project Export CLI Tool.](/docs/user-guide/packaging/project-export/project-export-cli)
