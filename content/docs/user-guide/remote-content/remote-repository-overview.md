@@ -6,7 +6,7 @@ weight: 600
 toc: true
 ---
 
-**Remote Repositories** are `repo.json` files that contain information about Gems, Projects and Templates that can be downloaded or cloned with Git and information about other remote repositories that a user might need to know about to download a Gem dependency, or simply to have access to related content in a different remote repository. The `repo.json` file can be on your local computer, a web server or in a Git repository like those hosted in [GitHub](https://github.com) and the downloadable content can also be in any of those places.  Usually the `repo.json` file is in the same location as the provided content, but it doesn't have to be.
+Remote Repositories are `repo.json` files that contain information about Gems, Projects and Templates that can be downloaded or cloned with Git and information about other remote repositories that a user might need to know about to download a Gem dependency, or simply to have access to related content in a different remote repository. The `repo.json` file can be on your local computer, a web server or in a Git repository like those hosted in [GitHub](https://github.com) and the downloadable content can also be in any of those places.  Usually the `repo.json` file is in the same location as the provided content, but it doesn't have to be.
 
 ## Anatomy of an O3DE remote repository  
 

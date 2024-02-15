@@ -11,13 +11,13 @@ You can use the [Project Manager](#using-project-manager-to-access-o3de-remote-r
 ## Using Project Manager to access O3DE remote repositories
 ### Add a remote repository
 
-You can add O3DE remote repositories from the **Remote Sources** page in Project Manager which you can access from the **Engine** tab, or from the **Gem Catalog** right panel menu.
+You can add existing O3DE remote repositories from the **Remote Sources** page in Project Manager which you can access from the **Engine** tab, or from the **Gem Catalog** right panel menu.
 1. Press the **Add Repository** button. In the dialogue box that opens you can supply the URL or local path for a Gem repository. 
 
     ![Add Remote Source Dialog](/images/user-guide/remote-content/ProjectManagerAddRemoteSource.JPG)
 
 1. If you have a URL for an online Gem repository, copy and paste it into the `Repository Path` field and press the **Add** button.
-1. Alternatively, if you want to add an O3DE remote repository from your local hard drive, press the folder button to open the `Browse` dialog box, select the folder with the O3DE remote repository, press the **Select Folder** button, and finally press the **Add** button.
+1. Alternatively, if you want to add an O3DE remote repository from your local hard drive, enter a local path on your computer or press the folder button on the right side of the Repository Path field to open the `Browse` dialog box, select the folder with the O3DE remote repository, press the **Select Folder** button, and finally press the **Add** button.
 
 
 A new entry will be added to the list of remote sources, and the Gems, Projects and Templates provided by the O3DE remote repository will be available to download and use.
@@ -32,7 +32,7 @@ You can toggle the visibility of remote content from a O3DE remote repository by
 
 You can remove an O3DE remote repository URI from the **Remote Sources** page in the Project Manager so the remote content in it is no longer listed and the meta data is no longer updated.
 1. Select the O3DE remote repository you want to remove by clicking on the entry in the list of remote sources.
-2. Press the **Remove** button in the right panel.
+2. Press the **Remove** button in the right panel.  You will be asked to confirm if you want to remove the remote repository.
 
 ### Download Gems from a remote repository
 
@@ -94,7 +94,7 @@ You can use the `o3de` CLI tool to activate or deactivate O3DE remote repositori
 {{% tab name="Linux" %}}
 
 ```cmd
-<engine>/scripts/o3de.sh register -ru <O3DE remote repository URI>
+<engine>/scripts/o3de.sh repo --activate-repo <O3DE remote repository URI>
 ```
 
 {{% /tab %}}
@@ -136,7 +136,7 @@ Example which downloads the latest version of a template named `RemoteTemplate` 
 {{% tab name="Linux" %}}
 
 ```cmd
-<engine>/scripts/o3de.sh register -ru <O3DE remote repository URI>
+<engine>/scripts/o3de.sh download --gem-name <Gem name with optional version specifier>
 ```
 
 Example which downloads a gem named `RemoteGem` version `1.0.0`:

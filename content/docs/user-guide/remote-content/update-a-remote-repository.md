@@ -23,7 +23,7 @@ You can use the `o3de` CLI tool to modify properties stored in the `repo.json` f
 {{% tab name="Windows" %}}
 
 ```cmd
-<engine>\scripts\o3de.bat edit-repo-properties --repo-path <local path to repo.json> --repo-name <new repo name> --repo-uri <new repo uri>
+<engine>\scripts\o3de.bat edit-repo-properties --repo-path <local path to repo.json> --repo-name <new repo name>
 ```
 
 {{% /tab %}}
@@ -32,15 +32,14 @@ You can use the `o3de` CLI tool to modify properties stored in the `repo.json` f
 ```cmd
 <engine>/scripts/o3de.sh edit-repo-properties \
     --repo-path <local path to repo.json> \
-    --repo-name <new repo name> \
-    --repo-uri <new repo uri>
+    --repo-name <new repo name>
 ```
 
 {{% /tab %}}
 {{< /tabs >}}
 
 
-### Add a new Gem or new Gem version to a remote repository
+### Add a new Gem or new Gem version to a remote repository, or update an existing Gem
 
 You can use the `o3de` CLI tool to add information from a `gem.json` file to a `repo.json` file and make an archive that you can upload with the following command:
 
@@ -48,7 +47,7 @@ You can use the `o3de` CLI tool to add information from a `gem.json` file to a `
 {{% tab name="Windows" %}}
 
 ```cmd
-<engine>\scripts\o3de.bat edit-repo-properties --repo-path <path to repo.json> --add-gems <local gem paths> --archive-path <path where the gem archive files will go>
+<engine>\scripts\o3de.bat edit-repo-properties --repo-path <path to repo.json> --add-gems <local gem paths> --release-archive-path <path where the gem archive files will go> --download-prefix <URL prefix for where the gem archive will made available, e.g. https://github.com/o3de/o3de-extras/releases/2.0>
 ```
 
 {{% /tab %}}
@@ -58,7 +57,8 @@ You can use the `o3de` CLI tool to add information from a `gem.json` file to a `
 <engine>/scripts/o3de.sh edit-repo-properties \
     --repo-path <path to repo.json> \
     --add-gems <local gem paths> \
-    --archive-path <path where the gem archive files will go>
+    --release-archive-path <path where the gem archive files will go> \
+    --download-prefix <URL prefix for where the gem archive will made available, e.g. https://github.com/o3de/o3de-extras/releases/2.0>
 ```
 
 {{% /tab %}}
@@ -66,40 +66,7 @@ You can use the `o3de` CLI tool to add information from a `gem.json` file to a `
 
 After running this command, the `repo.json` file will be modified so the information inside each `gem.json` file is included and the `sha256` archive file hash is correct.
 
-If a gem with the same name already exists in the `repo.json` but the version is different, the `gem.json` data from the new version will be added to the [`versions_data`](/docs/user-guide/programming/gems/manifest/#gemjson-manifest-contents) field.  If a gem with the same name and version already exists an error will be printed and no changes will be made.  Use the [`--update-gems` command](#updating-gem-information-in-a-remote-repository) to update existing `gem.json` information.
-
-
-{{< tip >}}
-After modifying remote repository contents, we recommend you [test the changes locally](#testing-o3de-remote-repository-changes) before uploading them to a public web server or GitHub.
-{{< /tip >}}
-
-### Updating Gem information in a remote repository
-
-You can use the `o3de` CLI tool to update `gem.json` information for gem data already in a `repo.json` file with the following command:
-
-{{< tabs name="Update information about a gem in `repo.json`" >}}
-{{% tab name="Windows" %}}
-
-```cmd
-<engine>\scripts\o3de.bat edit-repo-properties --repo-path <path to repo.json> --update-gems <local gem paths> --archive-path <path where archives will go>
-```
-
-{{% /tab %}}
-{{% tab name="Linux" %}}
-
-```cmd
-<engine>/scripts/o3de.sh edit-repo-properties \
-   --repo-path <path to repo.json> \
-   --update-gems <local gem paths> \
-   --archive-path <path where archives will go>
-```
-
-{{% /tab %}}
-{{< /tabs >}}
-
-After running this command, the `repo.json` file will be modified so the information from each `gem.json` file is updated, updated archives are created and each `sha256` file hash is updated.
-
-See the [`o3de edit-repo-properties` CLI Reference](/docs/user-guide/project-config/cli-reference/#edit-repo-properties) for the complete list of options.
+If a gem with the same name already exists in the `repo.json` but the version is different, the `gem.json` data from the new version will be added to the [`versions_data`](/docs/user-guide/programming/gems/manifest/#gemjson-manifest-contents) field.  If a gem with the same name and version already exists the gem will be updated.  
 
 {{< tip >}}
 After modifying remote repository contents, we recommend you [test the changes locally](#testing-o3de-remote-repository-changes) before uploading them to a public web server or GitHub.
@@ -149,3 +116,5 @@ After downloading the Gem, Project or Template, you should be able to inspect th
 ## Uploading to GitHub
 
 We recommend that you use the Project Manager and O3DE CLI to test your updated remote repository before you upload the changes to GitHub, a web server or other source control provider.
+
+See the [Remote Repository Tutorial](/docs/learning-guide/tutorials/remote-repositories/create-remote-repository/) for an example of how to create a remote repository, add content and upload the release to GitHub.
