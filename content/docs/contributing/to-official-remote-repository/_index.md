@@ -6,7 +6,7 @@ weight: 500
 toc: true
 ---
 
-O3DE maintains an official remote repository for O3DE owned content and the `repo.json` for the repository is managed at https://github.com/o3de/canonical.o3de.org and any changes are made using GitHub pull requests.  
+O3DE maintains an official remote repository for O3DE owned content.  The `repo.json` for the repository is managed at https://github.com/o3de/canonical.o3de.org and any changes are made using GitHub pull requests.  
 
 {{< note >}}
 Only O3DE owned content in an O3DE owned GitHub repository can be added to the official remote repository.  Follow the [contributor guidelines](/docs/contributing/to-code/git-workflow/) to add your content to an O3DE GitHub repository such as `o3de-extras` first before submitting the content for inclusion in the official remote repository.
