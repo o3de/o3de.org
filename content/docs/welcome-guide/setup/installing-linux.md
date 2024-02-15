@@ -109,14 +109,22 @@ Example of launching Project Manager from the shell:
 ## Installing O3DE from a Snap package
 
 {{< note >}}
-The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 20.04 and 22.04 LTS.
+The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 20.04 and 22.04 LTS. You will need to install all of the dependencies listed in [Linux requirements](/docs/welcome-guide/requirements/#linux).
 {{< /note >}}
 
-1. Download the Snap package from the [O3DE download](https://o3de.org/download/#linux) page or the [Snap store](https://snapcraft.io/o3de).
+1. Download the Snap package from the [O3DE download](https://o3de.org/download/#linux) page or get instructions from the [Snap store](https://snapcraft.io/o3de).
 
 1. Depending on the distro, you will need to install `snapd` in order to install the Snap package. [Refer to this guide for instructions specific to your distro](https://snapcraft.io/docs/installing-snapd).
 
-1. If you downloaded the Snap package from the O3DE download page, use the following command to install the package:
+1. To install the snap from the Snap store, use the following command to install the package (this automatically downloads the package from the store):
+   ```shell
+   snap install --classic o3de
+   ```
+   To install the latest development or beta channels, use the following command:
+   ```shell
+   snap install --classic --<channel name> o3de
+   ```
+   If you downloaded the Snap package from the O3DE download page, use the following command to install the package:
    ```shell
    snap install --classic --dangerous <o3de snap package filename>.snap
    ```
@@ -126,7 +134,7 @@ The Snap package is experimental and may run into issues on some distros. These 
    ```
    Where `<version>` is the version of the installer. Example: `23.05.0`.
 
-O3DE will be installed in the default location: `/snap/o3de/x1/<version>`, where `<version>` is the version of the installer. Example: `23.05.0`.
+O3DE will be installed in the default location: `/snap/o3de/current/<version>`, where `<version>` is the version of the installer. Example: `23.05.0`.
 
 When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`. `snapd` will add this `Default` directory to your shell environment's path.
 
@@ -134,6 +142,10 @@ Example of launching Project Manager from the shell:
 ```shell
 o3de
 ```
+
+{{< important >}}
+When configuring or building using the O3DE pre-build **Snap** SDK from the command line, first export the `O3DE_SNAP` environment variable so CMake does not attempt to install Python pip requirements and fail. To export the `O3DE_SNAP` environment variable, run the command `export O3DE_SNAP` from the command line before running the CMake commands below.
+{{< /important >}}
 
 ## Removing O3DE installed from a Snap package
 

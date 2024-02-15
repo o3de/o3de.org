@@ -7,7 +7,7 @@ toc: true
 
 <!-- # O3DE ROS2 Gem -->
 
-The **ROS 2 Gem** uses the [Robot Operating System (ROS)](https://docs.ros.org/en/rolling/index.htmml) to enable
+The **ROS 2 Gem** uses the [Robot Operating System (ROS)](https://docs.ros.org/en/rolling/index.html) to enable
 robotic simulation in **Open 3D Engine (O3DE)**. The ROS 2 Gem has the following features:
 
 * Direct and natural support of the ROS 2 ecosystem:

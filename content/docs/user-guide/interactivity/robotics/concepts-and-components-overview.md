@@ -56,6 +56,11 @@ Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/
   - `WheelControllerComponent`
 - __Robot Import (URDF) system component__
   - `ROS2RobotImporterSystemComponent`
+- __Joints and Manipulation__
+  - `JointsManipulationComponent`
+  - `JointsTrajectoryComponent`
+  - `JointsArticulationControllerComponent`
+  - `JointsPIDControllerComponent`
 
 See the [class diagram](/docs/user-guide/interactivity/robotics/class-diagram/) to understand how components are connected.
 
@@ -93,6 +98,24 @@ These events will be handled by a [`VehicleModelComponent`](#vehicle-model) if i
 You can use tools such as [rqt_robot_steering](https://index.ros.org/p/rqt_robot_steering/) to move your robot with Twist messages.
 `RobotControl` is suitable to use with [ROS 2 navigation stack](https://navigation.ros.org/).
 It is possible to implement your own control mechanisms with this component.
+
+### Joints and Manipulators
+
+To control robotic joints systems such as manipulator arms, some integration with [MoveIt2](https://github.com/ros-planning/moveit2) is in place.
+Two kinds of simulated joint systems are supported:
+- Articulation links, which benefit from stability of reduced coordinate articulations in the physics engine.
+- Hinge and prismatic joint components.
+When [importing a robot](importing-robot.md) with joints, you decide which of these systems to use.
+
+There are three interfaces to control joint systems: `JointsPositionControllerRequests`, `JointsManipulationRequests` and `JointsTrajectoryRequest`.
+Each of these has one or more implementations within ROS 2 Gem, and it is possible to develop custom behaviors in a modular way using these interfaces.
+
+`JointManipulationComponent` allows you to set target positions for all joints. If you wish to control the movement using trajectory through 
+[FollowJointTrajectory action](https://github.com/ros-controls/control_msgs/blob/master/control_msgs/action/FollowJointTrajectory.action), use `JointsTrajectoryComponent`.
+
+#### Joint States
+
+`JointsManipulationComponent` also publishes [joint states](https://docs.ros2.org/latest/api/sensor_msgs/msg/JointState.html) by default.
 
 ### Vehicle Model
 

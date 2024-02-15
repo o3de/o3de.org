@@ -21,29 +21,8 @@ The following are techniques you can use to help you debug any issues that you m
 
 ### Compile with optimizations disabled and debug symbols enabled
 
-In Visual Studio, you can compile with optimizations disabled and debug symbols enabled. This lets Visual Studio's debugging tools produce more helpful information that can help you debug.
+In Visual Studio, you can compile with optimizations disabled and debug symbols enabled by configuring with the CMake variable `O3DE_BUILD_WITH_DEBUG_SYMBOLS_RELEASE` set to `ON`. This lets Visual Studio's debugging tools produce more helpful information that can help you debug.
 
-Make the following modifications to the `Configurations_msvc.cmake` file in the `<engine>\cmake\Platform\Common\MSVC` directory. In `ly_append_configurations_options`, under `COMPILATION _RELEASE`:
- - Change `/Od` to `/Ox`.
- - Add `/Zi`.
-
-After making those modifications, `ly_append_configurations_options` should look like this:
-
-```
-ly_append_configurations_options(
-
-    # ...
-
-    COMPILATION_RELEASE
-        /Od             # Enable debug symbols
-        /Ob2            # Inline any suitable function
-        /Ot             # Favor fast code over small code
-        /Oi             # Use Intrinsic Functions
-        /Oy             # Omit the frame pointer
-        /Zi             # Generate debugging information (no Edit/Continue)
-    
-    # ... 
-```
 
 ### Create a `profile` build
 

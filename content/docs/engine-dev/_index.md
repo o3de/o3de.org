@@ -1,6 +1,6 @@
 ---
 linkTitle: Engine Developer Guide
-menuTitle: Engine Developer Guide
+menuTitle: Developer Guide
 title: Open 3D Engine (O3DE) Engine Developer Guide
 description: |
     Learn about the inner workings of O3DE architecture, frameworks, and Gems to perform custom modifications to O3DE and contribute back to source code.
