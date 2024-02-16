@@ -11,8 +11,8 @@ You can use the [Project Manager](#using-project-manager-to-access-o3de-remote-r
 ## Using Project Manager to access O3DE remote repositories
 ### Add a remote repository
 
-You can add existing O3DE remote repositories from the **Remote Sources** page in Project Manager which you can access from the **Engine** tab, or from the **Gem Catalog** right panel menu.
-1. Press the **Add Repository** button. In the dialogue box that opens you can supply the URL or local path for a Gem repository. 
+You can add existing O3DE remote repositories using the **Remote Sources** page in Project Manager which you can access from the **Engine** tab, or from the **Gem Catalog** right panel menu.
+1. Press the **Add Repository** button. In the dialog box that opens you can supply the URL or local path for a Gem repository. 
 
     ![Add Remote Source Dialog](/images/user-guide/remote-content/ProjectManagerAddRemoteSource.JPG)
 
@@ -31,6 +31,7 @@ You can toggle the visibility of remote content from a O3DE remote repository by
 ### Remove a remote repository
 
 You can remove an O3DE remote repository URI from the **Remote Sources** page in the Project Manager so the remote content in it is no longer listed and the meta data is no longer updated.
+
 1. Select the O3DE remote repository you want to remove by clicking on the entry in the list of remote sources.
 2. Press the **Remove** button in the right panel.  You will be asked to confirm if you want to remove the remote repository.
 
@@ -48,13 +49,13 @@ You can download projects from the **Projects** tab in the Project Manager by pr
 
 ### Download templates from a remote repository
 
-You can download templates from the **Create a New Project** page in the Project Manager by selecting the project template in the list of project templates and pressing the  **Download Template** button in the right pane.  
+You can download templates from the **Create a New Project** page in the Project Manager by selecting the project template in the list of project templates and pressing the **Download Template** button in the right pane.  
 
 
 ## Using the `o3de` command line tool to access O3DE remote repositories 
 
 You can use the `o3de` command line tool to register, refresh, activate and deactivate remote repositories and download remote content.
-
+The examples below show some common commands used with remote repositories.  See the [`o3de repo` CLI Reference](/docs/user-guide/project-config/cli-reference/#repo) for the complete list of options.
 
 ### Add a remote repository with the `o3de` command line tool
 
@@ -127,9 +128,9 @@ Example which downloads the latest version of a project named `RemoteProject`:
 <engine>\scripts\o3de.bat download --project-name RemoteProject
 ```
 
-Example which downloads the latest version of a template named `RemoteTemplate` into `c:/o3de-templates/RemoteTemplate`:
+Example which downloads the latest version of a template named `RemoteTemplate` into `c:\o3de-templates\RemoteTemplate`:
 ```cmd
-<engine>\scripts\o3de.bat download --template-name RemoteTemplate  --dest-path c:/o3de-templates
+<engine>/scripts/o3de.bat download --template-name RemoteTemplate  --dest-path c:/o3de-templates
 ```
 
 {{% /tab %}}

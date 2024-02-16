@@ -34,7 +34,7 @@ Example of a gem remote repository with a single `example.fbx` asset stored on G
 
 #### Multiple Gems, Projects or Templates remote repository
 
-If you intend to have multiple Gems, Projects or Templates in your remote repository there are two approaches. 
+If you intend to have multiple Gems, Projects or Templates in your remote repository there are two approaches:
 
 #### 1. Use `Gems`, `Projects`, and `Templates` subfolders 
 

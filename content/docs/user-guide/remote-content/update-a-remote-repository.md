@@ -82,19 +82,19 @@ We recommend that you use the Project Manager and O3DE CLI to test your remote r
 You can add local remote repositories in the Project Manager and verify the contents appear as expected and downloads succeed.
 1. Add your local remote repository in Project Manager on the **Remote Sources** page on the **Engine** tab, by pressing the **Add Repository** button and then use the browse button to select the folder containing your `repo.json` file and then press the **Add** button.
 1. Select the remote repository in the list and verify the expected contents are listed in the right pane.
-1. Verify any added gems appear correctly in the **Gem Catalog**.
-1. Verify any added projects appear correctly on the **Projects** page.
-1. Verify any added templates appear correctly on the **Create a New Project** page.
+1. Verify any added Gems appear correctly in the **Gem Catalog**.
+1. Verify any added Projects appear correctly on the **Projects** page.
+1. Verify any added Templates appear correctly on the **Create a New Project** page.
 
 ### Test with the O3DE CLI 
 
-You can add local remote repositories with the O3DE CLI and verify downloads succeed.
+You can add remote repositories on your hard drive with the O3DE CLI and verify downloads succeed.
 
-{{< tabs name="Register a local repository and download a gem" >}}
+{{< tabs name="Register a repository on your hard drive and download a gem" >}}
 {{% tab name="Windows" %}}
 
 ```cmd
-<engine>\scripts\o3de.bat register -ru <local path to repo.json>
+<engine>\scripts\o3de.bat register -ru <path on disk to repo.json>
 <engine>\scripts\o3de.bat download --gem-name <name of gem> --dest-path <download path>
 <engine>\scripts\o3de.bat download --project-name <name of project> --dest-path <download path>
 ```
@@ -103,7 +103,7 @@ You can add local remote repositories with the O3DE CLI and verify downloads suc
 {{% tab name="Linux" %}}
 
 ```cmd
-<engine>/scripts/o3de.sh register -ru <local path to repo.json>
+<engine>/scripts/o3de.sh register -ru <path on disk to repo.json>
 <engine>/scripts/o3de.sh download --gem-name <name of gem> --dest-path <download path>
 <engine>/scripts/o3de.sh download --project-name <name of project> --dest-path <download path>
 ```
