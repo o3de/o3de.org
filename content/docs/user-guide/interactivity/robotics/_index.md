@@ -16,6 +16,7 @@ These Gems provide various O3DE components such as sensors, robot control and st
 | [Importing robots](importing-robot.md)                              | Learn how to import robots using URDF/XACRO importer.                                         |
 | [Grippers](grippers.md)                                             | Documentation of robotic grippers feature.                                                    |
 | [Joints Manipulation](joints-manipulation.md)                       | Joints manipulation, such as with robotic manipulator arms.                                   |
+| [Deploying simulation](deploying-simulation.md)                     | Building standalone simulation.                                                               |
 | [Troubleshooting the simulation](troubleshooting.md)                | Helpful solutions to some of the most common issues with ROS 2.                               |
 
 
