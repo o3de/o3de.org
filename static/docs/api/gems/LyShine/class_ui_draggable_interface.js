@@ -5,7 +5,6 @@ var class_ui_draggable_interface =
       [ "Valid", "class_ui_draggable_interface.html#af0d761dfcc34bc5a61b07224cb362aa9a3ac705f2acd51a4613f9188c05c91d0d", null ],
       [ "Invalid", "class_ui_draggable_interface.html#af0d761dfcc34bc5a61b07224cb362aa9a4bbb8f967da6d1a610596d7257179c2b", null ]
     ] ],
-    [ "~UiDraggableInterface", "class_ui_draggable_interface.html#a092b0704502a04364e73b3efe1f8003e", null ],
     [ "GetCanDropOnAnyCanvas", "class_ui_draggable_interface.html#a41ba880f1b69aaae3b4cd43b67e705e9", null ],
     [ "GetDragState", "class_ui_draggable_interface.html#ad199906cc25fc0d03b6cef82c41088e9", null ],
     [ "GetOriginalFromProxy", "class_ui_draggable_interface.html#ae73015d829419634083a1e9338333574", null ],

@@ -1,7 +1,5 @@
 var class_a_z_1_1_i_o_1_1_full_file_decompressor =
 [
-    [ "FullFileDecompressor", "class_a_z_1_1_i_o_1_1_full_file_decompressor.html#a211586bbb267eea37427e4cc823c201d", null ],
-    [ "~FullFileDecompressor", "class_a_z_1_1_i_o_1_1_full_file_decompressor.html#ad4b8ba94b719f64983418097a415a440", null ],
     [ "CollectStatistics", "class_a_z_1_1_i_o_1_1_full_file_decompressor.html#a3cbe287f1e0c1f46c1bac77ad4328d21", null ],
     [ "ExecuteRequests", "class_a_z_1_1_i_o_1_1_full_file_decompressor.html#a34ab3ceb208a6c1c8d96dbba6f7bbcac", null ],
     [ "PrepareRequest", "class_a_z_1_1_i_o_1_1_full_file_decompressor.html#aeedd4e4448c7ef14ef3d3e6d18ea0083", null ],

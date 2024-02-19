@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "Camera::CameraRigComponent", "class_camera_1_1_camera_rig_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::TickBus::Handler", null, [
       [ "Camera::CameraRigComponent", "class_camera_1_1_camera_rig_component.html", null ]
     ] ],
     [ "Camera::ICameraSubComponent", "class_camera_1_1_i_camera_sub_component.html", [

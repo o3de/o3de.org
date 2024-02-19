@@ -1,10 +1,10 @@
 var _masked_occlusion_culling_8h =
 [
     [ "MaskedOcclusionCulling", "class_masked_occlusion_culling.html", "class_masked_occlusion_culling" ],
-    [ "VertexLayout", "struct_masked_occlusion_culling_1_1_vertex_layout.html", "struct_masked_occlusion_culling_1_1_vertex_layout" ],
-    [ "ScissorRect", "struct_masked_occlusion_culling_1_1_scissor_rect.html", "struct_masked_occlusion_culling_1_1_scissor_rect" ],
-    [ "TriList", "struct_masked_occlusion_culling_1_1_tri_list.html", "struct_masked_occlusion_culling_1_1_tri_list" ],
-    [ "OcclusionCullingStatistics", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics" ],
+    [ "MaskedOcclusionCulling::VertexLayout", "struct_masked_occlusion_culling_1_1_vertex_layout.html", "struct_masked_occlusion_culling_1_1_vertex_layout" ],
+    [ "MaskedOcclusionCulling::ScissorRect", "struct_masked_occlusion_culling_1_1_scissor_rect.html", "struct_masked_occlusion_culling_1_1_scissor_rect" ],
+    [ "MaskedOcclusionCulling::TriList", "struct_masked_occlusion_culling_1_1_tri_list.html", "struct_masked_occlusion_culling_1_1_tri_list" ],
+    [ "MaskedOcclusionCulling::OcclusionCullingStatistics", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics.html", "struct_masked_occlusion_culling_1_1_occlusion_culling_statistics" ],
     [ "CLIPPING_PRESERVES_ORDER", "_masked_occlusion_culling_8h.html#a662cd47bd729c561e452983b4933106b", null ],
     [ "ENABLE_STATS", "_masked_occlusion_culling_8h.html#a5446852165fb3c08078b5f2b2339cc32", null ],
     [ "MOC_RECORDER_ENABLE", "_masked_occlusion_culling_8h.html#af89c3f9d86340266935e92bf0f66529e", null ],

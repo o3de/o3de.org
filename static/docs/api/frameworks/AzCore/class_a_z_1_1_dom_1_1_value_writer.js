@@ -1,6 +1,5 @@
 var class_a_z_1_1_dom_1_1_value_writer =
 [
-    [ "ValueWriter", "class_a_z_1_1_dom_1_1_value_writer.html#a8f607cd92dc91e211d64f9dda56567de", null ],
     [ "Bool", "class_a_z_1_1_dom_1_1_value_writer.html#a8409f3744ed7c545c77d169df06561ed", null ],
     [ "Double", "class_a_z_1_1_dom_1_1_value_writer.html#a28e792271eac8d15d34031a089d6bd81", null ],
     [ "EndArray", "class_a_z_1_1_dom_1_1_value_writer.html#a995dfe8b3bc0e1ea9c3b6fe17bf9da45", null ],
@@ -13,7 +12,7 @@ var class_a_z_1_1_dom_1_1_value_writer =
     [ "OpaqueValue", "class_a_z_1_1_dom_1_1_value_writer.html#a3a71c9c19c0ab0bb2ee4c699590d9c0d", null ],
     [ "RawKey", "class_a_z_1_1_dom_1_1_value_writer.html#add7d629b793313c8f963b96efc26fbd5", null ],
     [ "RawStartNode", "class_a_z_1_1_dom_1_1_value_writer.html#a1e1e3cb7bf75c4efe93a7fc62976a17d", null ],
-    [ "RefCountedString", "class_a_z_1_1_dom_1_1_value_writer.html#a0aa5b62dd528b9bbf6889055925a04af", null ],
+    [ "RefCountedString", "class_a_z_1_1_dom_1_1_value_writer.html#a1b7448d198292bd22a58385a1cd448d0", null ],
     [ "StartArray", "class_a_z_1_1_dom_1_1_value_writer.html#acec7d8f9a439a07db4d5f2660dceadad", null ],
     [ "StartNode", "class_a_z_1_1_dom_1_1_value_writer.html#af6b87367b9983660b6703ab8d6708f6c", null ],
     [ "StartObject", "class_a_z_1_1_dom_1_1_value_writer.html#af8a29868476b8668075e005ef70f310f", null ],

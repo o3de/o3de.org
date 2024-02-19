@@ -1,6 +1,5 @@
 var class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests =
 [
-    [ "BusIdType", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a20e4bdd0de5c84513c2209bf9076f420", null ],
     [ "GetAlternateSkyboxEnabled", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a3de13a01b21b1a9cb55c4f4e87a6d7c8", null ],
     [ "GetDisplayMapperOperationType", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a2dbc6c6c244079e967c133705f004a84", null ],
     [ "GetFieldOfView", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#abf443b6482fed48d60c4181a1c76bdc9", null ],
@@ -14,11 +13,11 @@ var class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests =
     [ "GetLastRenderPipelineAssetId", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#aa044958aac62555aa0a515c78ff30a16", null ],
     [ "GetLastRenderPipelinePath", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#af3927d769a80564f8f95016b7f85a988", null ],
     [ "GetLastRenderPipelinePathWithoutAlias", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a659a8ffc186cf6468cd53544310966b0", null ],
-    [ "GetLightingPreset", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#aed934d55194a451c363905acc58f015d", null ],
-    [ "GetModelPreset", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a44fb25620a01c866e1fe706144d2f611", null ],
-    [ "GetRegisteredLightingPresetPaths", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a4e936b9fb20c307fe0071790609ca354", null ],
-    [ "GetRegisteredModelPresetPaths", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#ac25dd901e1402e680e4f6384e796eb88", null ],
-    [ "GetRegisteredRenderPipelinePaths", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#afce498f128c8100c70f28f299073247d", null ],
+    [ "GetLightingPreset", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#adf7a12d0afab808af3ce5bba87081671", null ],
+    [ "GetModelPreset", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a0f91e108433902b25bdf1bb4b1f00fa5", null ],
+    [ "GetRegisteredLightingPresetPaths", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a3664b29442d07dde3b7d03f761ee6c66", null ],
+    [ "GetRegisteredModelPresetPaths", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a2964d4ca7e9a3ab0789c8726900a43bb", null ],
+    [ "GetRegisteredRenderPipelinePaths", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a8ff824219236971e6455df432ed19bb2", null ],
     [ "GetShadowCatcherEnabled", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a0e02b6143528b384d898718a1dc5cd86", null ],
     [ "LoadLightingPreset", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#afb4bbbadc524be13a300f62172d8b508", null ],
     [ "LoadLightingPresetByAssetId", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a71336258fa17bc97ee8387258d390d1c", null ],
@@ -41,7 +40,5 @@ var class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests =
     [ "SetShadowCatcherEnabled", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#af077cbea8cdf2781a5d9de27c1e6ecde", null ],
     [ "UnregisterLightingPresetPath", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#ad27a3bf4cdfc17b6c79f5aa23ccf558d", null ],
     [ "UnregisterModelPresetPath", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#ae53493b16efed00c63b5631596f696bd", null ],
-    [ "UnregisterRenderPipelinePath", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a427847f59706bff3084f29bc9299091a", null ],
-    [ "AddressPolicy", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a01fc2f5068b236b4817aa016dad13253", null ],
-    [ "HandlerPolicy", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a718b684b8f0ffd1e5bf255f9d6e61148", null ]
+    [ "UnregisterRenderPipelinePath", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_requests.html#a427847f59706bff3084f29bc9299091a", null ]
 ];

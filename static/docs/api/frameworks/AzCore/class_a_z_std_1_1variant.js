@@ -1,9 +1,6 @@
 var class_a_z_std_1_1variant =
 [
-    [ "variant", "class_a_z_std_1_1variant.html#ac7574e755011cea3e62dd7b7a16ba0bc", null ],
-    [ "variant", "class_a_z_std_1_1variant.html#ab29aa81d18fc28563cb2a13b76c85e1e", null ],
-    [ "variant", "class_a_z_std_1_1variant.html#a6c8d80185763e03d05b8b97d6fc02f4e", null ],
-    [ "variant", "class_a_z_std_1_1variant.html#ae93bab0bd78e967c22f096f0262d196a", null ],
-    [ "variant", "class_a_z_std_1_1variant.html#ada87c582b0210ed28ceceed863c6ee00", null ],
-    [ "variant", "class_a_z_std_1_1variant.html#a6425ad1386ab0e1e97e9c0f093782893", null ]
+    [ "index", "class_a_z_std_1_1variant.html#a8f7c95dc168d6b7e7a7a56a1cc85e5c0", null ],
+    [ "swap", "class_a_z_std_1_1variant.html#a2a004ae470d268b9fae89b54e2a404a2", null ],
+    [ "valueless_by_exception", "class_a_z_std_1_1variant.html#ad7d5e784df3c369130d32dc74b562bdc", null ]
 ];

@@ -1,6 +1,5 @@
 var class_e_motion_f_x_1_1_integration_1_1_actor_notifications =
 [
-    [ "MutexType", "class_e_motion_f_x_1_1_integration_1_1_actor_notifications.html#a7f87cd2f2f78030e00bc0b3e72806f8f", null ],
     [ "OnMotionEvent", "class_e_motion_f_x_1_1_integration_1_1_actor_notifications.html#a59b422f5fc89370899e57bb2fbe74cf9", null ],
     [ "OnMotionLoop", "class_e_motion_f_x_1_1_integration_1_1_actor_notifications.html#a45a413bfcb528b162ef5f611378a57d1", null ],
     [ "OnStateEntered", "class_e_motion_f_x_1_1_integration_1_1_actor_notifications.html#a1975f5e67ae398d8445e025ada303e23", null ],

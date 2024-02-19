@@ -1,8 +1,6 @@
 var class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface =
 [
-    [ "LightHandle", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a7910515247e450239eb140836fe13121", null ],
     [ "AcquireLight", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a593fa6a727bd17c168b00bf1ddbdbe31", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a538e5eda2666ec27cc7a93318d521f89", null ],
     [ "CloneLight", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a9fee1123ae41110c4bcf964bb2d63f05", null ],
     [ "ReleaseLight", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#ac40a45fbbfb2663d1aa3f4d141b0e9ea", null ],
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#ac32de660814082279893d925ad999836", null ],
@@ -11,6 +9,5 @@ var class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface =
     [ "SetConeAngles", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a06322fd1cea0e46ed65927412a5180bd", null ],
     [ "SetDirection", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a0b20142fb6a93d8a71a6af1eb8cf4c2e", null ],
     [ "SetPosition", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a639e02d50f0a379a03de2202e80c28eb", null ],
-    [ "SetRgbIntensity", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a54ff4fcea11609acde064c89ef63864d", null ],
-    [ "PhotometricUnitType", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a22552bf45790ce1f31af149c77080858", null ]
+    [ "SetRgbIntensity", "class_a_z_1_1_render_1_1_simple_spot_light_feature_processor_interface.html#a54ff4fcea11609acde064c89ef63864d", null ]
 ];

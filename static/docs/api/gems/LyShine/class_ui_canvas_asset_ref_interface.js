@@ -1,6 +1,5 @@
 var class_ui_canvas_asset_ref_interface =
 [
-    [ "~UiCanvasAssetRefInterface", "class_ui_canvas_asset_ref_interface.html#adecdc6905357cdca0c4b78bab12332d6", null ],
     [ "GetCanvasPathname", "class_ui_canvas_asset_ref_interface.html#af716e0a230c376400134b9d37eb1fb65", null ],
     [ "GetIsAutoLoad", "class_ui_canvas_asset_ref_interface.html#aeb558fa7adfa6eb010bee086544f6bbc", null ],
     [ "GetShouldLoadDisabled", "class_ui_canvas_asset_ref_interface.html#a465feee2cd040a6b1613ce94f1217678", null ],

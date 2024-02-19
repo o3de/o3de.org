@@ -1,20 +1,9 @@
 var class_a_z_1_1_i_o_1_1_storage_drive =
 [
-    [ "StorageDrive", "class_a_z_1_1_i_o_1_1_storage_drive.html#aa98210bcdf1b120319bf2f10a60c1356", null ],
-    [ "~StorageDrive", "class_a_z_1_1_i_o_1_1_storage_drive.html#a5aed04e7064ffa3782e4fa868a271542", null ],
-    [ "CancelRequest", "class_a_z_1_1_i_o_1_1_storage_drive.html#a580757ebe214e80fe6259a8b7a61f540", null ],
     [ "CollectStatistics", "class_a_z_1_1_i_o_1_1_storage_drive.html#ad53c83b5418686282b73786c1de43a45", null ],
-    [ "EstimateCompletionTimeForRequest", "class_a_z_1_1_i_o_1_1_storage_drive.html#a62c59b4781d676e8270fffdd1c989873", null ],
     [ "ExecuteRequests", "class_a_z_1_1_i_o_1_1_storage_drive.html#a454fb1dd675b43b2823ea00753b7220f", null ],
-    [ "FileExistsRequest", "class_a_z_1_1_i_o_1_1_storage_drive.html#a67537dcb184089ed79f27a929bcc8c2f", null ],
-    [ "FileMetaDataRetrievalRequest", "class_a_z_1_1_i_o_1_1_storage_drive.html#a6dc40a0391e806e3929069eaffb5764f", null ],
-    [ "FindFileInCache", "class_a_z_1_1_i_o_1_1_storage_drive.html#ac684d8c9be121cf7e321544b0ad2229a", null ],
-    [ "FlushCache", "class_a_z_1_1_i_o_1_1_storage_drive.html#a6d762c83ef7e350bf4e39bfef9410798", null ],
-    [ "FlushEntireCache", "class_a_z_1_1_i_o_1_1_storage_drive.html#a2fdb78179d6698a45776ae411e7cd16a", null ],
     [ "PrepareRequest", "class_a_z_1_1_i_o_1_1_storage_drive.html#a061b83a6314dea4a5e97419de07788d2", null ],
     [ "QueueRequest", "class_a_z_1_1_i_o_1_1_storage_drive.html#a945a8bb1c4fc54a5116c041c4e779caa", null ],
-    [ "ReadFile", "class_a_z_1_1_i_o_1_1_storage_drive.html#ad064b6878d267202d7370493ded28a4f", null ],
-    [ "Report", "class_a_z_1_1_i_o_1_1_storage_drive.html#a60baec06953bb950e3e23f5d0c45f098", null ],
     [ "SetNext", "class_a_z_1_1_i_o_1_1_storage_drive.html#ada5d8f1839375543e11e685d3f0dc492", null ],
     [ "UpdateCompletionEstimates", "class_a_z_1_1_i_o_1_1_storage_drive.html#a9614a2de60ee836dc08fddccb2c8c371", null ],
     [ "UpdateStatus", "class_a_z_1_1_i_o_1_1_storage_drive.html#af3046e004c09adc66ca10e6ed7cb63ec", null ],
@@ -22,13 +11,6 @@ var class_a_z_1_1_i_o_1_1_storage_drive =
     [ "m_activeOffset", "class_a_z_1_1_i_o_1_1_storage_drive.html#afd2a84e6fd18e4190d1d37b2e0b3b696", null ],
     [ "m_fileHandles", "class_a_z_1_1_i_o_1_1_storage_drive.html#a804225b5cbf30a14b9ab28178125271b", null ],
     [ "m_fileLastUsed", "class_a_z_1_1_i_o_1_1_storage_drive.html#a3801e41871c2296000bdc482409f54bc", null ],
-    [ "m_fileOpenCloseTimeAverage", "class_a_z_1_1_i_o_1_1_storage_drive.html#a226b31596e699ba827e8f4a7b62b0a8f", null ],
     [ "m_filePaths", "class_a_z_1_1_i_o_1_1_storage_drive.html#a3e70e06189b9dc4e1cda400284817348", null ],
-    [ "m_getFileExistsTimeAverage", "class_a_z_1_1_i_o_1_1_storage_drive.html#a5adb0518ad695fc7138d2a1b487bc044", null ],
-    [ "m_getFileMetaDataTimeAverage", "class_a_z_1_1_i_o_1_1_storage_drive.html#ae02d2a2d318a5549b7caf5e20f2b1c29", null ],
-    [ "m_pendingRequests", "class_a_z_1_1_i_o_1_1_storage_drive.html#a71152555819087b9e665fb22cfe2aae3", null ],
-    [ "m_readSizeAverage", "class_a_z_1_1_i_o_1_1_storage_drive.html#ae1cdb1e4935b3100fa66200e0eeb1654", null ],
-    [ "m_readTimeAverage", "class_a_z_1_1_i_o_1_1_storage_drive.html#ae6e015f144b27aff3c9f1489bef08a5a", null ],
-    [ "s_averageSeekTime", "class_a_z_1_1_i_o_1_1_storage_drive.html#a0a533d58969849b5762eb4b78e3464e8", null ],
-    [ "s_maxRequests", "class_a_z_1_1_i_o_1_1_storage_drive.html#aaf041f0f12f7a6ab1cbd597b7c7975f8", null ]
+    [ "m_pendingRequests", "class_a_z_1_1_i_o_1_1_storage_drive.html#a71152555819087b9e665fb22cfe2aae3", null ]
 ];

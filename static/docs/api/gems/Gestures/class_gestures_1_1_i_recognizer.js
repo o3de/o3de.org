@@ -1,8 +1,6 @@
 var class_gestures_1_1_i_recognizer =
 [
-    [ "ScreenPosition", "struct_gestures_1_1_i_recognizer_1_1_screen_position.html", "struct_gestures_1_1_i_recognizer_1_1_screen_position" ],
-    [ "AZ_CLASS_ALLOCATOR", "class_gestures_1_1_i_recognizer.html#af320607b68699d1794cff8b834cf6678", null ],
-    [ "AZ_RTTI", "class_gestures_1_1_i_recognizer.html#a4d61717bc21f6a97a63e9d76683aff7f", null ],
+    [ "ScreenPosition", "struct_gestures_1_1_i_recognizer_1_1_screen_position.html", null ],
     [ "Disable", "class_gestures_1_1_i_recognizer.html#ab586c3aa157800d1e6a45ba7fd3b4c3c", null ],
     [ "Enable", "class_gestures_1_1_i_recognizer.html#abb3f6d2c02b3c9dadee27c82d0f2cd3d", null ],
     [ "GetGesturePointerIndex", "class_gestures_1_1_i_recognizer.html#ad71cd908531d9794c05409bd2cf55b22", null ],
@@ -11,6 +9,5 @@ var class_gestures_1_1_i_recognizer =
     [ "OnInputChannelEvent", "class_gestures_1_1_i_recognizer.html#a60a9f692beeb3e54c9a3dc48c80b3cd5", null ],
     [ "OnPressedEvent", "class_gestures_1_1_i_recognizer.html#a86c5f70c69530d4e8b5e9e182600caa2", null ],
     [ "OnReleasedEvent", "class_gestures_1_1_i_recognizer.html#a88898ade3cdbc7bf96e8fc3ebcddad2e", null ],
-    [ "UpdateNormalizedPositionAndDeltaFromScreenPosition", "class_gestures_1_1_i_recognizer.html#a2cc57ed8ec5070ac622ca9b7508f0aca", null ],
-    [ "INVALID_GESTURE_POINTER_INDEX", "class_gestures_1_1_i_recognizer.html#a0d3d0fe675b1a2c5366844c8c7deef5b", null ]
+    [ "UpdateNormalizedPositionAndDeltaFromScreenPosition", "class_gestures_1_1_i_recognizer.html#a2cc57ed8ec5070ac622ca9b7508f0aca", null ]
 ];

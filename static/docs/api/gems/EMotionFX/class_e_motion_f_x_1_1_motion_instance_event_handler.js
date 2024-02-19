@@ -1,9 +1,6 @@
 var class_e_motion_f_x_1_1_motion_instance_event_handler =
 [
-    [ "MotionInstanceEventHandler", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a5f3f98bfeff20e24420a25fa417a6d32", null ],
-    [ "~MotionInstanceEventHandler", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#ab81155d9f857e494e3da77616e10ac10", null ],
-    [ "GetHandledEventTypes", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a3635c781a0097ec0922ea27d797c0e1b", null ],
-    [ "GetMotionInstance", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a5846abbfa09a01b72d1e084137644ef0", null ],
+    [ "GetHandledEventTypes", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a843b59e29649cc710d38b423a9249251", null ],
     [ "OnChangedActiveState", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a4ba8e3a6a120fa04b9ee608517e92fd7", null ],
     [ "OnChangedPauseState", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#aa39099d0da3f4a90ab53cb80d0a054f4", null ],
     [ "OnDeleteMotionInstance", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a2d4c221803199e1071da122700c714be", null ],
@@ -16,7 +13,5 @@ var class_e_motion_f_x_1_1_motion_instance_event_handler =
     [ "OnStartBlending", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a8aa3e22769ded5243a2b40180aee6af0", null ],
     [ "OnStartMotionInstance", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#ab9e08fe35bbb60d1113650be506a526b", null ],
     [ "OnStop", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a0243d4b1a71a351872a6dc3a7e58aef3", null ],
-    [ "OnStopBlending", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a1c234fe3860cb7fc3cbd752a4e960947", null ],
-    [ "SetMotionInstance", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#ae8a7be63fd15b46b943959db9dabdf06", null ],
-    [ "m_motionInstance", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a6849b7842e7d00b02b51dbe4388c9731", null ]
+    [ "OnStopBlending", "class_e_motion_f_x_1_1_motion_instance_event_handler.html#a1c234fe3860cb7fc3cbd752a4e960947", null ]
 ];

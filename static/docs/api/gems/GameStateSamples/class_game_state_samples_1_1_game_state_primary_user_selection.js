@@ -2,9 +2,6 @@ var class_game_state_samples_1_1_game_state_primary_user_selection =
 [
     [ "GameStatePrimaryUserSelection", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a67b91fd5f8f5402cd8b71c953fe5a06c", null ],
     [ "~GameStatePrimaryUserSelection", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a828af015fda079fc31424181a1e59b5e", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a83e3800c87d82666daca14ea36e7dc43", null ],
-    [ "AZ_RTTI", "class_game_state_samples_1_1_game_state_primary_user_selection.html#abe6037d4602e560484cecb1c12ac595b", null ],
-    [ "GetPrimaryUserSelectionCanvasAssetPath", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a1ff41f2abcba6a5436b4e09e4c327e92", null ],
     [ "GetPriority", "class_game_state_samples_1_1_game_state_primary_user_selection.html#af9f40dabfa0a51bdde51d5e72a3616ea", null ],
     [ "LoadPrimaryUserSelectionCanvas", "class_game_state_samples_1_1_game_state_primary_user_selection.html#aec983ad6b9f2c010f4ec2d79d4c13517", null ],
     [ "OnEnter", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a101ebf07d4dffdba580813bc951e0b2d", null ],
@@ -15,6 +12,5 @@ var class_game_state_samples_1_1_game_state_primary_user_selection =
     [ "PushMainMenuGameState", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a6e8aa543508f24c96785dd5072399558", null ],
     [ "PushPrimaryUserMonitorGameState", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a760b39a3e9c8df55fc880cc488d22548", null ],
     [ "SetPrimaryLocalUser", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a983a9cb6340ce00480ea98da76e5f85d", null ],
-    [ "UnloadPrimaryUserSelectionCanvas", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a8bedad054b9cb6ac51785c8977e619bb", null ],
     [ "m_primaryUserSelectionCanvasEntityId", "class_game_state_samples_1_1_game_state_primary_user_selection.html#a6fd3a70484a9d3f960536bfeeaf9bd2c", null ]
 ];

@@ -1,7 +1,5 @@
 var class_az_tools_framework_1_1_global_paint_brush_settings_requests =
 [
-    [ "MutexType", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a07d48989138746170f9743bc0d1009f4", null ],
-    [ "~GlobalPaintBrushSettingsRequests", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#aa25b4f8142d7a54e6e0f34716e89d1e6", null ],
     [ "GetBlendMode", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#af55088bdc7b27bb85409f3b59bed1584", null ],
     [ "GetBrushColorMode", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a252c277237914d0f6ac0ebd469cc3006", null ],
     [ "GetBrushMode", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#aea0dd40e8cbe2c077dd6e9f7fed61f2a", null ],
@@ -10,9 +8,9 @@ var class_az_tools_framework_1_1_global_paint_brush_settings_requests =
     [ "GetFlowPercent", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#aae8a4ba43036b89ae7b4574541bc2eac", null ],
     [ "GetHardnessPercent", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a0649364d1c87c6570b26074a08cae6c6", null ],
     [ "GetSettings", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a953568544c284c79dd14536c19e32fda", null ],
-    [ "GetSettingsPointerForPropertyEditor", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#ab9c0066c9d8406ea79c4b3a538fb54c4", null ],
+    [ "GetSettingsPointerForPropertyEditor", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a9843e2cb95d18550b7126069e0188d7f", null ],
     [ "GetSize", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a9e4709f69397cdce5fb897c7141f44e6", null ],
-    [ "GetSizeRange", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#aba245b5ec9a2eb2606abfb8675f19180", null ],
+    [ "GetSizeRange", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a94a0676f454671c2e25aa292b62502ba", null ],
     [ "GetSmoothingRadius", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#aca29b25079101ec335468b24bb6f22b9", null ],
     [ "GetSmoothingSpacing", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#ab517c620315c0c7b1b91d9b53b232b9f", null ],
     [ "GetSmoothMode", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#afe1930d795d7a5fa7384984363edbdd1", null ],
@@ -27,6 +25,5 @@ var class_az_tools_framework_1_1_global_paint_brush_settings_requests =
     [ "SetSizeRange", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a30be85dd51f72ecb61626da08c74a5c9", null ],
     [ "SetSmoothingRadius", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a04b2e06dc620d5debd9543c5903527d2", null ],
     [ "SetSmoothingSpacing", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a4895719b93c95a0fe17c6fe1143d4583", null ],
-    [ "SetSmoothMode", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#ae84ccac78b87427f9aed04aad1d29763", null ],
-    [ "HandlerPolicy", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#a787f6a1627da23c65c7103b63a14aa66", null ]
+    [ "SetSmoothMode", "class_az_tools_framework_1_1_global_paint_brush_settings_requests.html#ae84ccac78b87427f9aed04aad1d29763", null ]
 ];

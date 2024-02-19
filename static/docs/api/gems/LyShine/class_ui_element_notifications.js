@@ -1,6 +1,5 @@
 var class_ui_element_notifications =
 [
-    [ "~UiElementNotifications", "class_ui_element_notifications.html#aff286c78c51a7f4536b1e86eed6e77a3", null ],
     [ "OnUiElementAndAncestorsEnabledChanged", "class_ui_element_notifications.html#a72034ff0af70e189bf6f52605be5fc17", null ],
     [ "OnUiElementBeingDestroyed", "class_ui_element_notifications.html#ac022324e03a7aca0e4411f8993a2df2d", null ],
     [ "OnUiElementEnabledChanged", "class_ui_element_notifications.html#a59e9fd550fb4a7859815687a0df0610f", null ],

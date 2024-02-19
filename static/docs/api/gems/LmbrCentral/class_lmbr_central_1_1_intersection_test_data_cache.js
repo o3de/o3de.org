@@ -5,9 +5,8 @@ var class_lmbr_central_1_1_intersection_test_data_cache =
       [ "ObsoleteTransformChange", "class_lmbr_central_1_1_intersection_test_data_cache.html#a0e1c0fbdb80e6f84c7dd79962849fd9ea66ec8dc94092d5abf6e4debbf5a6e818", null ],
       [ "ObsoleteShapeChange", "class_lmbr_central_1_1_intersection_test_data_cache.html#a0e1c0fbdb80e6f84c7dd79962849fd9eaaba8f093dd130ba71de8cc2f2aac8cef", null ]
     ] ],
-    [ "~IntersectionTestDataCache", "class_lmbr_central_1_1_intersection_test_data_cache.html#a44445e9bd04fdbb5080ba74ffe116abb", null ],
-    [ "CacheStatus", "class_lmbr_central_1_1_intersection_test_data_cache.html#a6f3e7dcb1403ca22fdb45f90395e081c", null ],
+    [ "CacheStatus", "class_lmbr_central_1_1_intersection_test_data_cache.html#a15be2ea97098a8f23e4688393a661348", null ],
     [ "InvalidateCache", "class_lmbr_central_1_1_intersection_test_data_cache.html#ab05e07e6149703b896afc452a79cd370", null ],
-    [ "UpdateIntersectionParams", "class_lmbr_central_1_1_intersection_test_data_cache.html#a0a939c1ee55e40af407d2ecd72d2cf65", null ],
+    [ "UpdateIntersectionParams", "class_lmbr_central_1_1_intersection_test_data_cache.html#aba4f1a593fb553e9a06abbb4c43bf58f", null ],
     [ "UpdateIntersectionParamsImpl", "class_lmbr_central_1_1_intersection_test_data_cache.html#a8e60f8d4e182467c2b8f0626ce43e896", null ]
 ];

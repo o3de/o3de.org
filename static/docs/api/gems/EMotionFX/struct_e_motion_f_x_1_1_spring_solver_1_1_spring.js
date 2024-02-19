@@ -1,7 +1,5 @@
 var struct_e_motion_f_x_1_1_spring_solver_1_1_spring =
 [
-    [ "Spring", "struct_e_motion_f_x_1_1_spring_solver_1_1_spring.html#a7c9041bd474db75e4edd9d3802341808", null ],
-    [ "Spring", "struct_e_motion_f_x_1_1_spring_solver_1_1_spring.html#ae28b3d5a498dac23ef82a2c73f646180", null ],
     [ "m_allowStretch", "struct_e_motion_f_x_1_1_spring_solver_1_1_spring.html#a49d1b48346ccdd6866cb7503617130dc", null ],
     [ "m_isSupportSpring", "struct_e_motion_f_x_1_1_spring_solver_1_1_spring.html#a5a0571d8f96320f6fef840cf225cfcbc", null ],
     [ "m_particleA", "struct_e_motion_f_x_1_1_spring_solver_1_1_spring.html#a1fa2fe246897cb5892a829204f5daff2", null ],

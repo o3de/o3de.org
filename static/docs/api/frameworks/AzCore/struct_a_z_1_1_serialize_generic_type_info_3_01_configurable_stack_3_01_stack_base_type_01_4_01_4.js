@@ -1,8 +1,4 @@
 var struct_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4 =
 [
-    [ "GenericConfigurableStackInfo", "class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315.html", "class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315" ],
-    [ "ClassInfoType", "struct_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4.html#a198d4e27dce2db7fb899b8e1abde13c7", null ],
-    [ "ConfigurableStackType", "struct_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4.html#ae164e246fe3f4efa7b660d62474707ce", null ],
-    [ "GetClassTypeId", "struct_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4.html#a141c1c284c51895d0aed9f1387c35069", null ],
-    [ "GetGenericInfo", "struct_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4.html#a2336cf8c75e527b6c496ef62c7021a62", null ]
+    [ "GenericConfigurableStackInfo", "class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315.html", "class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315" ]
 ];

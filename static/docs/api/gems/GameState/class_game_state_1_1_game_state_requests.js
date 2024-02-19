@@ -6,7 +6,7 @@ var class_game_state_1_1_game_state_requests =
     [ "CreateNewOverridableGameStateOfType", "class_game_state_1_1_game_state_requests.html#ad8f04f7285226607324fab2a9eff658c", null ],
     [ "DoesStackContainGameStateOfType", "class_game_state_1_1_game_state_requests.html#a3720699eb1da48926e530e73aab1276b", null ],
     [ "DoesStackContainGameStateOfTypeId", "class_game_state_1_1_game_state_requests.html#aec4cc9cc5b89f31668d1524560408522", null ],
-    [ "GetActiveGameState", "class_game_state_1_1_game_state_requests.html#a63243c60de432e3a6b69708a54045d1f", null ],
+    [ "GetActiveGameState", "class_game_state_1_1_game_state_requests.html#a0883169a1365be23bc7c6427c34f893d", null ],
     [ "GetGameStateFactoryOverrideForType", "class_game_state_1_1_game_state_requests.html#a2a9a04b30648d6232f282b9197fbcbd4", null ],
     [ "GetGameStateFactoryOverrideForTypeId", "class_game_state_1_1_game_state_requests.html#ac6c8cb7f41635e259be3a1e342b4742a", null ],
     [ "IsActiveGameStateOfType", "class_game_state_1_1_game_state_requests.html#a67e03f14aed46eda39ef79420ef6feac", null ],
@@ -18,6 +18,5 @@ var class_game_state_1_1_game_state_requests =
     [ "RemoveGameStateFactoryOverrideForTypeId", "class_game_state_1_1_game_state_requests.html#ace37cb09b5e6c05dd8587ab4e28f1f08", null ],
     [ "ReplaceActiveGameState", "class_game_state_1_1_game_state_requests.html#a4e9ef814c4443bf7b614bf7d45285b92", null ],
     [ "UpdateActiveGameState", "class_game_state_1_1_game_state_requests.html#ae2f111a587732dd67fbd7fb6eeaf6470", null ],
-    [ "AddressPolicy", "class_game_state_1_1_game_state_requests.html#ae6cbd76c6b38684a7ea7fbd0b237b37d", null ],
-    [ "HandlerPolicy", "class_game_state_1_1_game_state_requests.html#a4c668972b21e587d42ff483d70539ccd", null ]
+    [ "AddressPolicy", "class_game_state_1_1_game_state_requests.html#ae6cbd76c6b38684a7ea7fbd0b237b37d", null ]
 ];

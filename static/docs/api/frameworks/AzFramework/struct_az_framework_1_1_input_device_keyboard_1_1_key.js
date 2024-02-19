@@ -1,6 +1,5 @@
 var struct_az_framework_1_1_input_device_keyboard_1_1_key =
 [
-    [ "All", "struct_az_framework_1_1_input_device_keyboard_1_1_key.html#ae21a2dc6d10bf1f903c73e8a74a34f4e", null ],
     [ "Alphanumeric0", "struct_az_framework_1_1_input_device_keyboard_1_1_key.html#a2f6d26eea0f4e3f0995dec0d347944cd", null ],
     [ "Alphanumeric1", "struct_az_framework_1_1_input_device_keyboard_1_1_key.html#a42ab480c2f2fa2b51e8b11c50b006582", null ],
     [ "Alphanumeric2", "struct_az_framework_1_1_input_device_keyboard_1_1_key.html#ab35a3fa128a3a6ab902e75a8433e330a", null ],

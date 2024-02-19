@@ -42,7 +42,9 @@ Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/
   - `ROS2GNSSSensorComponent`
   - `ROS2IMUSensorComponent`
   - `ROS2LidarSensorComponent`
+  - `ROS2Lidar2DSensorComponent`
   - `ROS2OdometrySensorComponent`
+  - `ROS2ContactSensorComponent`
 - __Robot control__
   - `AckermannControlComponent`
   - `RigidBodyTwistControlComponent`
@@ -62,8 +64,6 @@ Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/
   - `JointsArticulationControllerComponent`
   - `JointsPIDControllerComponent`
 
-See the [class diagram](/docs/user-guide/interactivity/robotics/class-diagram/) to understand how components are connected.
-
 ### Frames
 
 `ROS2FrameComponent` is a representation of an interesting physical part of the robot. It handles the spatio-temporal relationship between this part and other frames of reference. It also encapsulates namespaces, which help to distinguish between different robots and different parts of the robot, such as in the case of multiple identical sensors on one robot.
@@ -72,13 +72,13 @@ All Sensors and the Robot Control components require `ROS2FrameComponent`.
 
 ### Sensors
 
-Sensors acquire data from the simulated environment and publish it to ROS 2 domain. Sensor components derive from `ROS2SensorComponent`.
+Sensors acquire data from the simulated environment and publish it to ROS 2 domain. Sensor components derive from `ROS2SensorComponentBase`.
 
 - Each sensor has a configuration, including one or more Publishers.
-- Sensors publish at a given rate (frequency).
+- Sensors publish at a given rate (frequency), using one of two event sources: frame update or physics scene simulation events.
 - Some sensors can be visualized.
 
-If your sensor is not supported by the provided sensor components, you will most likely need to create a new component deriving from `ROS2SensorComponent`. 
+If your sensor is not supported by the provided sensor components, you will most likely need to create a new component deriving from `ROS2SensorComponentBase`. 
 When developing a new sensor, it is useful to look at how sensors that are already provided within the ROS2 Gem are implemented. 
 Consider adding your new sensor as a separate Gem. A good example of such sensor Gem is the [RGL Gem](https://github.com/RobotecAI/o3de-rgl-gem).
 
@@ -162,13 +162,3 @@ All used services types are defined in the **gazebo_msgs** package.
     ```
     ros2 service call /get_spawn_point_info gazebo_msgs/srv/GetModelState '{model_name: 'spawn_spot'}'
     ```
-
-## Related topics
-
-| Topic                                         | Description                      |
-|-----------------------------------------------|----------------------------------|
-| [ROS 2 Gem class diagram](class-diagram.md)   | Class diagram for the ROS 2 Gem. |
-
-
-
-

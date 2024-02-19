@@ -1,10 +1,6 @@
 var struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding =
 [
-    [ "PassAttachmentBinding", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#aac017ed6758416ccfcef3574528489a7", null ],
-    [ "PassAttachmentBinding", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#afea9aebb09d6b8b85bb0e51e0fd17490", null ],
-    [ "~PassAttachmentBinding", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a406aba04eb2e1e335cb4360d686b7bc4", null ],
-    [ "GetAttachment", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#ae809acaf914384215742347f7b9836ba", null ],
-    [ "GetAttachmentAccess", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a88b9933783f5afb119253a4c859c83c9", null ],
+    [ "GetAttachmentAccess", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#ad5f767b2d453dabaac0fbe64f9cd9bd8", null ],
     [ "SetAttachment", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#ae96fa644b374f71ebd384cef8938aada", null ],
     [ "SetOriginalAttachment", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a9b5ff20f337e7c6539001222dd3215cf", null ],
     [ "UpdateConnection", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a31eb657c0191b25707765d22e9a3dfcc", null ],
@@ -15,11 +11,8 @@ var struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding =
     [ "m_name", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a7693e95c2395fee0ac03f426da212f80", null ],
     [ "m_scopeAttachmentUsage", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a5773a412e983d4e579e9472b8dc4fe7d", null ],
     [ "m_shaderImageDimensionsNameIndex", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a9fb9fb8a91cc534633f87c8c47a34b01", null ],
-    [ "m_shaderInputArrayIndex", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a2b3c1fdccefabbb1e2460c869c2c09cf", null ],
     [ "m_shaderInputIndex", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a01981153e356ac24724cdee5d61a348e", null ],
     [ "m_shaderInputName", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a4fa18b2f27e34b1a7db8941e515624cf", null ],
     [ "m_slotType", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a1b8d90d97a911c0c26ec6cb154c308f2", null ],
-    [ "m_unifiedScopeDesc", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a47b2fddfca0910d334e12e45644bd3ed", null ],
-    [ "ShaderInputAutoBind", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#ab7bd8558f2831986355955ef928080fc", null ],
-    [ "ShaderInputNoBind", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#ac1c986ac4f915fb80403fac28eb1df5b", null ]
+    [ "m_unifiedScopeDesc", "struct_a_z_1_1_r_p_i_1_1_pass_attachment_binding.html#a47b2fddfca0910d334e12e45644bd3ed", null ]
 ];

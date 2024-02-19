@@ -1,26 +1,5 @@
 var struct_a_z_1_1_metrics_1_1_event_desc =
 [
-    [ "EventDesc", "struct_a_z_1_1_metrics_1_1_event_desc.html#a435cc516fc15d9e2ea8f4606cd43a78f", null ],
-    [ "GetArgs", "struct_a_z_1_1_metrics_1_1_event_desc.html#abfa5c6135f868746c628a0b71a44d47a", null ],
-    [ "GetArgs", "struct_a_z_1_1_metrics_1_1_event_desc.html#adac0db7e123dbf1c7f3982141dde963d", null ],
-    [ "GetArgs", "struct_a_z_1_1_metrics_1_1_event_desc.html#af79698e265eb4bd8f48c11c83205ab1e", null ],
-    [ "GetCategory", "struct_a_z_1_1_metrics_1_1_event_desc.html#a966d8850d34c608a063ceea556e11489", null ],
-    [ "GetEventPhase", "struct_a_z_1_1_metrics_1_1_event_desc.html#ae9e502390543b3a2c300eef860773603", null ],
-    [ "GetExtraParams", "struct_a_z_1_1_metrics_1_1_event_desc.html#a3864f088d9bbe6c5d68fe3d1558f4269", null ],
-    [ "GetId", "struct_a_z_1_1_metrics_1_1_event_desc.html#a0530bc8a0919daa6142bc7fc507e5e22", null ],
-    [ "GetName", "struct_a_z_1_1_metrics_1_1_event_desc.html#a9d8332275656572548f0a16b6aa6b338", null ],
-    [ "GetProcessId", "struct_a_z_1_1_metrics_1_1_event_desc.html#a9d01a9f15a2e7880621ce23a260bae90", null ],
-    [ "GetThreadId", "struct_a_z_1_1_metrics_1_1_event_desc.html#a550f743db00b1410038a100101348734", null ],
-    [ "GetThreadTimestamp", "struct_a_z_1_1_metrics_1_1_event_desc.html#ab50e7a4b1078f9a413793ef5b75d525e", null ],
-    [ "GetTimestamp", "struct_a_z_1_1_metrics_1_1_event_desc.html#a280393232fdc2facfff07a5e70254417", null ],
-    [ "SetArgs", "struct_a_z_1_1_metrics_1_1_event_desc.html#af7726ad4ad9a220828de7fe3ca9d3460", null ],
-    [ "SetCategory", "struct_a_z_1_1_metrics_1_1_event_desc.html#a0ed68c92de9e410cf98e9aa805944b43", null ],
-    [ "SetEventPhase", "struct_a_z_1_1_metrics_1_1_event_desc.html#aebcd55316ee1d46d372d443805d6e676", null ],
-    [ "SetExtraParams", "struct_a_z_1_1_metrics_1_1_event_desc.html#aaecc3bd5e0d8125a6685e7a696b26e82", null ],
-    [ "SetId", "struct_a_z_1_1_metrics_1_1_event_desc.html#a5d3eb77fc1ec7d4f801a464e6f68c214", null ],
-    [ "SetName", "struct_a_z_1_1_metrics_1_1_event_desc.html#ab2746e7e95e45f9ade585afb3363a379", null ],
-    [ "SetProcessId", "struct_a_z_1_1_metrics_1_1_event_desc.html#a818e8e0507f40635af5753490ecc6893", null ],
-    [ "SetThreadId", "struct_a_z_1_1_metrics_1_1_event_desc.html#a011281b36b4034da5c6f1fe1506e62a9", null ],
-    [ "SetThreadTimestamp", "struct_a_z_1_1_metrics_1_1_event_desc.html#a56dd5cebd5cc179f3d69493bce00a3f4", null ],
-    [ "SetTimestamp", "struct_a_z_1_1_metrics_1_1_event_desc.html#a9fe667c69d60413f69386662c88690e9", null ]
+    [ "GetArgs", "struct_a_z_1_1_metrics_1_1_event_desc.html#a4d4bb21cd8e6463b8cb71b950afb3750", null ],
+    [ "SetArgs", "struct_a_z_1_1_metrics_1_1_event_desc.html#af7726ad4ad9a220828de7fe3ca9d3460", null ]
 ];

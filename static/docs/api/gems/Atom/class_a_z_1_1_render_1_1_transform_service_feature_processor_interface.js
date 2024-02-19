@@ -1,7 +1,5 @@
 var class_a_z_1_1_render_1_1_transform_service_feature_processor_interface =
 [
-    [ "ObjectId", "class_a_z_1_1_render_1_1_transform_service_feature_processor_interface.html#a621e6883c6be6f100f1e87c3f7456947", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_transform_service_feature_processor_interface.html#a16d526f88f55e349c702d5c7496a77c2", null ],
     [ "GetNonUniformScaleForId", "class_a_z_1_1_render_1_1_transform_service_feature_processor_interface.html#a9926d017bf5a08998065f6d8ea6c36b9", null ],
     [ "GetTransformForId", "class_a_z_1_1_render_1_1_transform_service_feature_processor_interface.html#a97b389b3cbebdfe1775569b1ba02619f", null ],
     [ "ReleaseObjectId", "class_a_z_1_1_render_1_1_transform_service_feature_processor_interface.html#a6eb27b24c8d6c2b7054972ee6d4b130a", null ],

@@ -1,6 +1,5 @@
 var class_ui_layout_cell_interface =
 [
-    [ "~UiLayoutCellInterface", "class_ui_layout_cell_interface.html#a1b326d882cecc40b52a0d3249c4635d7", null ],
     [ "GetExtraHeightRatio", "class_ui_layout_cell_interface.html#ab986f00de310fab0e26cac4fcb1e9393", null ],
     [ "GetExtraWidthRatio", "class_ui_layout_cell_interface.html#af75ac9cb1f8369919f32ce723213a199", null ],
     [ "GetMaxHeight", "class_ui_layout_cell_interface.html#a1fb10dc42274869f8ee6f1ba4d06b509", null ],

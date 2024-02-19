@@ -4,7 +4,6 @@ var class_ui_layout_grid_interface =
       [ "HorizontalOrder", "class_ui_layout_grid_interface.html#ae72a049ef5567c61271041374fe02bb7a6c29a09eac300e5b7de49e5ecadaa660", null ],
       [ "VerticalOrder", "class_ui_layout_grid_interface.html#ae72a049ef5567c61271041374fe02bb7a779af52fb7d5d2cc27b1bb5f35473a3c", null ]
     ] ],
-    [ "~UiLayoutGridInterface", "class_ui_layout_grid_interface.html#a48947e9f6ca62aa04f99de29e5e740f0", null ],
     [ "GetCellSize", "class_ui_layout_grid_interface.html#a62c15b125be77fbde743758e6cc9f601", null ],
     [ "GetHorizontalOrder", "class_ui_layout_grid_interface.html#a3ce3fd05ae6deae2be40892587bc4d0f", null ],
     [ "GetPadding", "class_ui_layout_grid_interface.html#a9157d4c70afcae7e989b828b655aeb44", null ],

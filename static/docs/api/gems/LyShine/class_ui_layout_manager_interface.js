@@ -1,6 +1,5 @@
 var class_ui_layout_manager_interface =
 [
-    [ "~UiLayoutManagerInterface", "class_ui_layout_manager_interface.html#ae59e74f924d629a13d1bf45e197da3ef", null ],
     [ "ComputeLayoutForElementAndDescendants", "class_ui_layout_manager_interface.html#a9c954486e7f38499a4bcdf6bd0399e99", null ],
     [ "MarkToRecomputeLayout", "class_ui_layout_manager_interface.html#a9de653a42d584713a9adfa264004ee84", null ],
     [ "MarkToRecomputeLayoutsAffectedByLayoutCellChange", "class_ui_layout_manager_interface.html#a1ed41fc6823aa10b883d1290001bb263", null ],

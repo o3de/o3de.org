@@ -60,7 +60,7 @@ If a `desktop` installation of ROS 2 distro was selected, everything else should
 Use this helpful command to install:
 
 ```
-sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-toolbox ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs
+sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-toolbox ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro
 ```
 
 ### Clone the Gem repository
@@ -122,11 +122,13 @@ Robotic project templates are designed to help you to quickly start simulating r
 
 #### ROS 2 Project Templates
 
-There are two templates for robotics:
+There are three templates for robotics:
 - [ROS 2 project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate):
   - A versatile, lightweight template that is good for a starting project and includes a robot with differential drive.
 - [Warehouse project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2FleetRobotTemplate):
   - A photorealistic warehouse with a Proteus robot, easy to customize and scale up (multi-robot).
+- [Manipulation project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2RoboticManipulationTemplate):
+  - Includes two levels with robotic manipulator arms: one focused on palletization, the other one on R&D.
 
 :bulb: The template repositories also include examples that you can try out by following their README files.
 

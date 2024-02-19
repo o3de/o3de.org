@@ -1,6 +1,5 @@
 var class_ui_canvas_manager_interface =
 [
-    [ "CanvasEntityList", "class_ui_canvas_manager_interface.html#a2bcdc24cd202ec1155cd785e3e3d1606", null ],
     [ "CreateCanvas", "class_ui_canvas_manager_interface.html#a95bc7daf110fd62a7998ad6e3dea452a", null ],
     [ "FindLoadedCanvasByPathName", "class_ui_canvas_manager_interface.html#a0757273370d129b66bfad98a592b5568", null ],
     [ "GetLoadedCanvases", "class_ui_canvas_manager_interface.html#a9162d989372fb78df12b9ddd3d092b76", null ],

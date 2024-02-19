@@ -1,17 +1,11 @@
 var class_ui_interactable_states_interface =
 [
     [ "State", "class_ui_interactable_states_interface.html#a5aee58becf5ad8a83bd2ec9a75422586", null ],
-    [ "StateNormal", "class_ui_interactable_states_interface.html#abb340e47eea8f5b5b228b30cb4d7fac4a1551896bf87b153361f96aae502e7109", null ],
-    [ "StateHover", "class_ui_interactable_states_interface.html#abb340e47eea8f5b5b228b30cb4d7fac4ade446552c0b41bfdcd7bf838eead3d0a", null ],
-    [ "StatePressed", "class_ui_interactable_states_interface.html#abb340e47eea8f5b5b228b30cb4d7fac4aff0c8ae29bf8aa715fd55a06404034a4", null ],
-    [ "StateDisabled", "class_ui_interactable_states_interface.html#abb340e47eea8f5b5b228b30cb4d7fac4a91324bb38f1f65a11afd3ba28f3f4338", null ],
-    [ "NumStates", "class_ui_interactable_states_interface.html#abb340e47eea8f5b5b228b30cb4d7fac4a2caed29f302dc89f84fc09df95958272", null ],
-    [ "~UiInteractableStatesInterface", "class_ui_interactable_states_interface.html#a2d4913a8cf94cfdb34dd487a91318b2c", null ],
     [ "GetStateAlpha", "class_ui_interactable_states_interface.html#a94a8e4478edc80664be974c4da6091a6", null ],
     [ "GetStateColor", "class_ui_interactable_states_interface.html#a7275ab2bb9034d193f8a3828694fea97", null ],
     [ "GetStateFontEffectIndex", "class_ui_interactable_states_interface.html#a952215a57ea075c64fbd1d85e6ab2879", null ],
     [ "GetStateFontPathname", "class_ui_interactable_states_interface.html#ab744751ed2c43a38c46d30c8a1c345df", null ],
-    [ "GetStateSprite", "class_ui_interactable_states_interface.html#a9f78b516ca225cc8e58a5b6f6bdbdec9", null ],
+    [ "GetStateSprite", "class_ui_interactable_states_interface.html#a592bcbb1330f6c7016a804b2d2cc73f4", null ],
     [ "GetStateSpritePathname", "class_ui_interactable_states_interface.html#a02105a61ec27f5ff1ed134c7c098354a", null ],
     [ "HasStateAlpha", "class_ui_interactable_states_interface.html#adc4bb6a76744cda93640283f45e6c3c1", null ],
     [ "HasStateColor", "class_ui_interactable_states_interface.html#ad68e8ca39838a21c25d423138cbf5e6f", null ],

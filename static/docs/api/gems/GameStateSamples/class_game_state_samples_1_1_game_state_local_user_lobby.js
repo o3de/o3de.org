@@ -2,13 +2,7 @@ var class_game_state_samples_1_1_game_state_local_user_lobby =
 [
     [ "GameStateLocalUserLobby", "class_game_state_samples_1_1_game_state_local_user_lobby.html#aaa1ab5fdb63576567bfbf5d7bd37bee6", null ],
     [ "~GameStateLocalUserLobby", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a91abb8c95c6f5d71df7152f296ee78cd", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a53ec45c051505241f3191365a2f22b70", null ],
-    [ "AZ_RTTI", "class_game_state_samples_1_1_game_state_local_user_lobby.html#aeca4a87903c9feebb8a9d9940ef334a5", null ],
     [ "GetPriority", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a56a49cc86b5aeab8e524080595faed8b", null ],
-    [ "GetSignedInUserOverlayCanvasAssetPath", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a1b548316422c2c028f40aec297516bb9", null ],
-    [ "GetUiElementIdForLocalPlayerSlot", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a5bb098f43d9331489b12f208beb3160c", null ],
-    [ "IsLocalUserAssociatedWithConnectedInputDevice", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a33baee945f579dd2d44ef2b7353017b8", null ],
-    [ "IsLocalUserSignedIn", "class_game_state_samples_1_1_game_state_local_user_lobby.html#ad025e86665cfa4d9f547c9f3276a4cf6", null ],
     [ "LoadSignedInUserOverlayCanvas", "class_game_state_samples_1_1_game_state_local_user_lobby.html#af196a69d63be80a2ce48e46ee480eb52", null ],
     [ "OnApplicationUnconstrained", "class_game_state_samples_1_1_game_state_local_user_lobby.html#ace048c06afcdce8a56d8f36463d52f1c", null ],
     [ "OnEnter", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a1fc0c3acb329c116bb40db0448f98cc7", null ],
@@ -20,16 +14,5 @@ var class_game_state_samples_1_1_game_state_local_user_lobby =
     [ "OnLocalUserIdRemovedFromLocalPlayerSlot", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a42482a82199a5b6e713291eb205cc1fe", null ],
     [ "OnPopped", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a0983406158113cc6aba1111a759ab3ac", null ],
     [ "OnPushed", "class_game_state_samples_1_1_game_state_local_user_lobby.html#ab389e44906cb83a8fb67e4f29a2cf4ca", null ],
-    [ "OnUpdate", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a44e4070680ec23ac3dc9d7c3831c3453", null ],
-    [ "RefreshAllGamepadLightBarColors", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a4487e242332c1f2d50c4f88c38b54e51", null ],
-    [ "RefreshAllSignedInUserOverlays", "class_game_state_samples_1_1_game_state_local_user_lobby.html#ae6a63b47fb66b1942ac8cd5cb97a0898", null ],
-    [ "RefreshGamepadLightBarColor", "class_game_state_samples_1_1_game_state_local_user_lobby.html#aa61fb59c15f81e8a23566bc1f750bc56", null ],
-    [ "RefreshGamepadLightBarColor", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a3e17ed32811ac7b05e5a92e7eb0fcb03", null ],
-    [ "RefreshLocalPlayerSlotAssignments", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a3649b0e3e0247570bd202751934dfb84", null ],
-    [ "RefreshSignedInUserOverlay", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a2683bfccd147727f06d12dfe879c4667", null ],
-    [ "SetSignedInUserOverlayEnabled", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a6bd34ac4302054041cfb9714d9e4d228", null ],
-    [ "SetSignedInUserOverlayNameText", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a386a0cac67f2ebee57e6ba7bdf36489a", null ],
-    [ "UnloadSignedInUserOverlayCanvas", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a30b2876d1047a39a35a849016c0c69aa", null ],
-    [ "m_shouldRefreshLevelListDisplay", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a7b9036bb5ba804beab687225e697a995", null ],
-    [ "m_signedInUsersOverlayCanvasEntityId", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a9943e1c1c21f260bdf4514739ff1b851", null ]
+    [ "OnUpdate", "class_game_state_samples_1_1_game_state_local_user_lobby.html#a44e4070680ec23ac3dc9d7c3831c3453", null ]
 ];

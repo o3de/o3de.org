@@ -1,6 +1,5 @@
 var class_a_z_1_1_render_1_1_quad_light_delegate =
 [
-    [ "QuadLightDelegate", "class_a_z_1_1_render_1_1_quad_light_delegate.html#aa4ab3fd65b4a542db11bf8e3ab4122a8", null ],
     [ "CalculateAttenuationRadius", "class_a_z_1_1_render_1_1_quad_light_delegate.html#aedd92d8bd021b1c31d5a012170c7df2c", null ],
     [ "DrawDebugDisplay", "class_a_z_1_1_render_1_1_quad_light_delegate.html#af27ee8f1e8413b3462cbba35c6f77a39", null ],
     [ "GetEffectiveSolidAngle", "class_a_z_1_1_render_1_1_quad_light_delegate.html#af45482737c87ca04a07f3c17364d35dc", null ],

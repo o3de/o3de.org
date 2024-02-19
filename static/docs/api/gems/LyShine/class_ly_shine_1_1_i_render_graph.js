@@ -8,7 +8,7 @@ var class_ly_shine_1_1_i_render_graph =
     [ "EndMask", "class_ly_shine_1_1_i_render_graph.html#a63702e917124efc88ebf95de285857d0", null ],
     [ "EndRenderToTexture", "class_ly_shine_1_1_i_render_graph.html#a8b818885dd3a3052f1f620dc9bbc760f", null ],
     [ "GetAlphaFade", "class_ly_shine_1_1_i_render_graph.html#acc9d396b321b8d8957a3823a87e3cc6d", null ],
-    [ "GetDynamicQuadPrimitive", "class_ly_shine_1_1_i_render_graph.html#aec36848f5b3b4e2045ade309715dce1e", null ],
+    [ "GetDynamicQuadPrimitive", "class_ly_shine_1_1_i_render_graph.html#a60d0cd48f202668893c512bb0b679f77", null ],
     [ "IsRenderingToMask", "class_ly_shine_1_1_i_render_graph.html#abf1e282b910beac3f2bc69862087d439", null ],
     [ "PopAlphaFade", "class_ly_shine_1_1_i_render_graph.html#afab28a631cdb4e9dedc6c7601b40dca7", null ],
     [ "PushAlphaFade", "class_ly_shine_1_1_i_render_graph.html#aa000dc13c06a8e60854178866a292533", null ],

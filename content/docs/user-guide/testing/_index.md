@@ -1,5 +1,5 @@
 ---
-title: "Testing and optimization"
+title: "Testing"
 date: 2021-03-02T00:23:56-05:00
 weight: 1300
 ---
@@ -32,4 +32,4 @@ EditorPythonTestTools are a collection of test tools focused around accessing Ed
 
 ### LyTestTools
 
-The LyTestTools are testing productivity tools for writing and debugging tests that across different environments. This includes (but isn't limited to) environment manipulation, creating/collecting images and logs, and starting project launchers.
+The [LyTestTools](/docs/user-guide/testing/lytesttools/) are testing productivity tools for writing and debugging tests that across different environments. This includes (but isn't limited to) environment manipulation, creating/collecting images and logs, and starting project launchers.

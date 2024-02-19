@@ -11,10 +11,9 @@ var class_draw2d_helper =
     [ "DrawQuad", "class_draw2d_helper.html#a50e020a0681ce4a7674f7852c4937cc5", null ],
     [ "DrawRectOutlineTextured", "class_draw2d_helper.html#acd00ce79b23babf03fb6f534cca85ea4", null ],
     [ "DrawText", "class_draw2d_helper.html#a1c0e72304c74268bf510801f8cad5e6e", null ],
-    [ "GetDefaultDraw2d", "class_draw2d_helper.html#ab11ae7579c1fdca6bd2553378198f937", null ],
+    [ "GetDefaultDraw2d", "class_draw2d_helper.html#ac83e9236d42a4ee430a6eec98da41e44", null ],
     [ "GetTextSize", "class_draw2d_helper.html#afb66af9703890bb20bb73e71fe6f7d55", null ],
-    [ "InitCommon", "class_draw2d_helper.html#a65da9e6673cbe83796a3e72848691da4", null ],
-    [ "LoadTexture", "class_draw2d_helper.html#a99f0871eeb76cbd5465d01442d6d38cd", null ],
+    [ "LoadTexture", "class_draw2d_helper.html#aaa2828175e93f103a627d7407a772d0a", null ],
     [ "RoundXY", "class_draw2d_helper.html#aca2cd086757af1af6d6b68e3ec8373ee", null ],
     [ "SetImageBlendMode", "class_draw2d_helper.html#a5533146ba3a463cc58732fc23aa87777", null ],
     [ "SetImageClamp", "class_draw2d_helper.html#a77b4412a7c5b72fd75d50c7b010e158c", null ],
@@ -28,8 +27,6 @@ var class_draw2d_helper =
     [ "SetTextEffectIndex", "class_draw2d_helper.html#a1a6bf5d8a49b205492ff6d5721c66fe0", null ],
     [ "SetTextFont", "class_draw2d_helper.html#a788dcdc4caff27ed7d6011d237f42807", null ],
     [ "SetTextRotation", "class_draw2d_helper.html#a8e460bf5434c18b6ec4b58bd38330d28", null ],
-    [ "m_draw2d", "class_draw2d_helper.html#a9b4c48b65633cc0a5684497e323a1364", null ],
     [ "m_imageOptions", "class_draw2d_helper.html#adacd1693677bba10112a539f73a73eaa", null ],
-    [ "m_previousDeferCalls", "class_draw2d_helper.html#a966c7566c8647c2d18e00f2f0499cd0d", null ],
     [ "m_textOptions", "class_draw2d_helper.html#aa057d15d9df0f4953b25e8e75803f931", null ]
 ];

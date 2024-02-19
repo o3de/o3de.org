@@ -1,27 +1,5 @@
 var class_ui_canvas_asset_ref_component =
 [
-    [ "UiCanvasAssetRefComponent", "class_ui_canvas_asset_ref_component.html#a309141e4f41ec342ac2373a1b114f359", null ],
-    [ "Activate", "class_ui_canvas_asset_ref_component.html#a6c62f705e5e9980ec3d868a82c298cc8", null ],
-    [ "AZ_COMPONENT", "class_ui_canvas_asset_ref_component.html#ab750d7ffa05825430b8d9b520a5ed959", null ],
-    [ "AZ_DISABLE_COPY_MOVE", "class_ui_canvas_asset_ref_component.html#a0425eca923fac935757658251f5c5d57", null ],
-    [ "Deactivate", "class_ui_canvas_asset_ref_component.html#a26da2f8fdf63d5c9b123906a6703e96e", null ],
-    [ "GetCanvas", "class_ui_canvas_asset_ref_component.html#a5ca95d1f83dca05f358b5c07ef82aefd", null ],
-    [ "GetCanvasPathname", "class_ui_canvas_asset_ref_component.html#a32a05bc4b027d26d94b866c5f15d546f", null ],
-    [ "GetIncompatibleServices", "class_ui_canvas_asset_ref_component.html#adb16e81ec01098b5b971f1dba021f7cc", null ],
-    [ "GetIsAutoLoad", "class_ui_canvas_asset_ref_component.html#a31f61608f21496a44ce47dc6d1349561", null ],
-    [ "GetProvidedServices", "class_ui_canvas_asset_ref_component.html#a25e598ee86655ffa1991588fcdffaab5", null ],
-    [ "GetRequiredServices", "class_ui_canvas_asset_ref_component.html#a68764dd73d6d0b07b8646de62bb75784", null ],
-    [ "GetShouldLoadDisabled", "class_ui_canvas_asset_ref_component.html#aaa579f7883b276e58932cf5070df3c15", null ],
-    [ "LaunchUIEditor", "class_ui_canvas_asset_ref_component.html#a1cdb3e9703061cb740ef30bffad5e4ca", null ],
-    [ "LoadCanvas", "class_ui_canvas_asset_ref_component.html#ab7f7fe0a03038275c98e2cfe2504383e", null ],
-    [ "OnCanvasUnloaded", "class_ui_canvas_asset_ref_component.html#ace1b7c7bc7b9af71ba067726ec52e4c0", null ],
-    [ "Reflect", "class_ui_canvas_asset_ref_component.html#a414fd1cafbb153f92cced845a7841683", null ],
-    [ "SetCanvasPathname", "class_ui_canvas_asset_ref_component.html#a82c0124e1721ad88d2550ae0cb9ef8e4", null ],
-    [ "SetIsAutoLoad", "class_ui_canvas_asset_ref_component.html#a9e4496414dba15d86e3d833a64fd027f", null ],
-    [ "SetShouldLoadDisabled", "class_ui_canvas_asset_ref_component.html#a8628ae178904daf34dda2b00eb49fb8e", null ],
-    [ "UnloadCanvas", "class_ui_canvas_asset_ref_component.html#ab7e58f0bb44e94bde09bf5b1f08da1b3", null ],
     [ "m_canvasAssetRef", "class_ui_canvas_asset_ref_component.html#a21e7c8716d0e82b20e0bb0ffdf68e797", null ],
-    [ "m_canvasEntityId", "class_ui_canvas_asset_ref_component.html#a0911f1a92dc0d7825609fbc739c3b4a9", null ],
-    [ "m_isAutoLoad", "class_ui_canvas_asset_ref_component.html#a834454ea187ff8c4d70b97a4abdce0ba", null ],
-    [ "m_shouldLoadDisabled", "class_ui_canvas_asset_ref_component.html#a9c3ee1083ce11c46e21d15a92c9a56e4", null ]
+    [ "m_canvasEntityId", "class_ui_canvas_asset_ref_component.html#a0911f1a92dc0d7825609fbc739c3b4a9", null ]
 ];

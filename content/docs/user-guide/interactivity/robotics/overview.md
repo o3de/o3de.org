@@ -39,4 +39,4 @@ There are three templates for robotics:
 There are open-source project demonstrating what can be done with the ROS 2 Gem:
 - [Robot Vacuum Sample](https://github.com/o3de/RobotVacuumSample): a robot vacuum navigating in a beautiful apartment: 
 - [Robot Harvesting Sample](https://github.com/o3de/ROSConDemo): agricultural robots orchestrated through ROS 2 to pick apples in a scenic orchard.
-
+- [Automated Fulfillment Center](https://github.com/RobotecAI/ROSCon2023Demo): robotic arms and Autonomous Mobile Robots working on palletization and intra-logistics.

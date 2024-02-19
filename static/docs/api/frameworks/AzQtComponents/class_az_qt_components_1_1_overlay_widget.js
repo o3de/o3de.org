@@ -1,31 +1,4 @@
 var class_az_qt_components_1_1_overlay_widget =
 [
-    [ "LayerInfo", "struct_az_qt_components_1_1_overlay_widget_1_1_layer_info.html", "struct_az_qt_components_1_1_overlay_widget_1_1_layer_info" ],
-    [ "OverlayWidget", "class_az_qt_components_1_1_overlay_widget.html#a96753edc74e1a0130d9f2d3702c844ea", null ],
-    [ "~OverlayWidget", "class_az_qt_components_1_1_overlay_widget.html#afa054cbcc49741017835b2b67867c08e", null ],
-    [ "CanClose", "class_az_qt_components_1_1_overlay_widget.html#a1c3e049fff3052a9eba834b4841a1d6a", null ],
-    [ "GetContainingOverlay", "class_az_qt_components_1_1_overlay_widget.html#a98fd6677aa701fe4f1385692a6fa013a", null ],
-    [ "IsAtRoot", "class_az_qt_components_1_1_overlay_widget.html#a217df056aa71dff5ef4d106eed3d03b5", null ],
-    [ "LayerAdded", "class_az_qt_components_1_1_overlay_widget.html#aaf2385a6b91e52697fe727a07fcf43af", null ],
-    [ "LayerRemoved", "class_az_qt_components_1_1_overlay_widget.html#a6f922ade990c965bf1dc85720df9c213", null ],
-    [ "OnStackEntryRemoved", "class_az_qt_components_1_1_overlay_widget.html#a5e091483ba145effc7280b9774684f56", null ],
-    [ "PopAllLayers", "class_az_qt_components_1_1_overlay_widget.html#a568fd476fb32a90ef2b292f8b0b5b6d9", null ],
-    [ "PopLayer", "class_az_qt_components_1_1_overlay_widget.html#a692767965e419240e1fad0bef0f6b14b", null ],
-    [ "PopLayer", "class_az_qt_components_1_1_overlay_widget.html#a1e613045ae0ba9d2b14d313ed71923b5", null ],
-    [ "PopLayer", "class_az_qt_components_1_1_overlay_widget.html#a813bffbeb22c71271ae1b0f2d560e1ba", null ],
-    [ "PushLayer", "class_az_qt_components_1_1_overlay_widget.html#a089bdd21234d49a0e3400906c7f7ac7d", null ],
-    [ "PushLayer", "class_az_qt_components_1_1_overlay_widget.html#aba77cd259637ce52269ccd59204be4be", null ],
-    [ "PushLayer", "class_az_qt_components_1_1_overlay_widget.html#a9f0c4a9457d83bdc8d5c4c6d9a075ec4", null ],
-    [ "PushLayerToContainingOverlay", "class_az_qt_components_1_1_overlay_widget.html#af91e8553e917195453f15afcf7a3e118", null ],
-    [ "PushLayerToOverlay", "class_az_qt_components_1_1_overlay_widget.html#ae597dddffd5f29115591423b35da09e5", null ],
-    [ "RefreshAll", "class_az_qt_components_1_1_overlay_widget.html#ad9abbb80e11c0a9fed7194548a5a1c9c", null ],
-    [ "RefreshLayer", "class_az_qt_components_1_1_overlay_widget.html#ad4d4b21549661ac49cf85a15c2f712af", null ],
-    [ "SetRoot", "class_az_qt_components_1_1_overlay_widget.html#a39f85c3837a2120735d0628b10193db7", null ],
-    [ "m_layerIdCounter", "class_az_qt_components_1_1_overlay_widget.html#a4b49a3e31ffbf35a2bd5dced4d9a0f52", null ],
-    [ "m_layers", "class_az_qt_components_1_1_overlay_widget.html#a895f42e4d533a672e1203aa0f63d4694", null ],
-    [ "m_originalDockWidgetAreas", "class_az_qt_components_1_1_overlay_widget.html#a536179edbe1ef9e8e3755b2c794664cd", null ],
-    [ "m_parentDockWidget", "class_az_qt_components_1_1_overlay_widget.html#a9f92e82b2a1357b1fac73b168e5299bb", null ],
-    [ "m_rootIndex", "class_az_qt_components_1_1_overlay_widget.html#aeb035f2814390597f62fefc8fb276f1b", null ],
-    [ "m_stack", "class_az_qt_components_1_1_overlay_widget.html#a903e9c1dd7c299298f08d89c204d8df4", null ],
-    [ "s_invalidOverlayIndex", "class_az_qt_components_1_1_overlay_widget.html#acfffc024cdefec97c9290bfaaf9996f2", null ]
+    [ "LayerInfo", "struct_az_qt_components_1_1_overlay_widget_1_1_layer_info.html", null ]
 ];

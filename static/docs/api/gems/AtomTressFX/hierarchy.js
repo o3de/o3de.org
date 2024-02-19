@@ -39,21 +39,21 @@ var hierarchy =
     [ "AMD::uint3", "struct_a_m_d_1_1uint3.html", null ],
     [ "AMD::uint4", "struct_a_m_d_1_1uint4.html", null ],
     [ "AMD::Vector3", "class_a_m_d_1_1_vector3.html", null ],
-    [ "Handler", null, [
+    [ "AssetBuilderSDK::AssetBuilderCommandBus::Handler", null, [
       [ "AZ::Render::Hair::HairAssetBuilder", "class_a_z_1_1_render_1_1_hair_1_1_hair_asset_builder.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "AZ::Data::AssetBus::MultiHandler", null, [
       [ "AZ::Render::Hair::HairComponentController", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_controller.html", null ]
     ] ],
-    [ "AssetData", null, [
+    [ "AZ::Data::AssetData", null, [
       [ "AZ::Render::Hair::HairAsset", "class_a_z_1_1_render_1_1_hair_1_1_hair_asset.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "AZ::Render::Hair::HairGlobalSettingsNotifications", "class_a_z_1_1_render_1_1_hair_1_1_hair_global_settings_notifications.html", null ],
       [ "AZ::Render::Hair::HairGlobalSettingsRequests", "class_a_z_1_1_render_1_1_hair_1_1_hair_global_settings_requests.html", null ],
       [ "AZ::Render::HairSharedBufferNotifications", "class_a_z_1_1_render_1_1_hair_shared_buffer_notifications.html", null ]
     ] ],
-    [ "Module", null, [
+    [ "AZ::Module", null, [
       [ "AZ::Render::Hair::HairBuilderModule", "class_a_z_1_1_render_1_1_hair_1_1_hair_builder_module.html", null ],
       [ "AZ::Render::Hair::HairModule", "class_a_z_1_1_render_1_1_hair_1_1_hair_module.html", null ]
     ] ],
@@ -66,17 +66,17 @@ var hierarchy =
       [ "AZ::Render::SharedBuffer", "class_a_z_1_1_render_1_1_shared_buffer.html", null ]
     ] ],
     [ "AZ::Render::SrgBufferDescriptor", "struct_a_z_1_1_render_1_1_srg_buffer_descriptor.html", null ],
-    [ "Handler", null, [
+    [ "AZ::TickBus::Handler", null, [
       [ "AZ::Render::Hair::HairComponentController", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_controller.html", null ],
       [ "AZ::Render::Hair::HairFeatureProcessor", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html", null ]
     ] ],
-    [ "ComponentAdapter", null, [
+    [ "AzFramework::Components::ComponentAdapter", null, [
       [ "AZ::Render::Hair::HairComponent", "class_a_z_1_1_render_1_1_hair_1_1_hair_component.html", null ]
     ] ],
-    [ "GenericAssetHandler", null, [
+    [ "AzFramework::GenericAssetHandler", null, [
       [ "AZ::Render::Hair::HairAssetHandler", "class_a_z_1_1_render_1_1_hair_1_1_hair_asset_handler.html", null ]
     ] ],
-    [ "intrusive_base", null, [
+    [ "AZStd::intrusive_base", null, [
       [ "AZ::Render::HairSharedBufferAllocation", "class_a_z_1_1_render_1_1_hair_shared_buffer_allocation.html", null ]
     ] ],
     [ "CollisionMesh", "class_collision_mesh.html", null ],
@@ -91,7 +91,7 @@ var hierarchy =
     [ "ComponentConfig", null, [
       [ "AZ::Render::Hair::HairComponentConfig", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_config.html", null ]
     ] ],
-    [ "InstanceData", null, [
+    [ "Data::InstanceData", null, [
       [ "AZ::Render::Hair::HairDispatchItem", "class_a_z_1_1_render_1_1_hair_1_1_hair_dispatch_item.html", null ],
       [ "AZ::Render::Hair::HairRenderObject", "class_a_z_1_1_render_1_1_hair_1_1_hair_render_object.html", null ]
     ] ],
@@ -115,19 +115,19 @@ var hierarchy =
     [ "EI_ResourceDescription", "struct_e_i___resource_description.html", null ],
     [ "EI_Scene", "class_e_i___scene.html", null ],
     [ "EI_Scene::State", "struct_e_i___scene_1_1_state.html", null ],
-    [ "Handler", null, [
+    [ "EMotionFX::Integration::ActorComponentNotificationBus::Handler", null, [
       [ "AZ::Render::Hair::HairComponentController", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_controller.html", null ]
     ] ],
     [ "FrameworkWindows", null, [
       [ "TressFXSample", "class_tress_f_x_sample.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "HairGlobalSettingsNotificationBus::Handler", null, [
       [ "AZ::Render::Hair::HairComponentController", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_controller.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "HairGlobalSettingsRequestBus::Handler", null, [
       [ "AZ::Render::Hair::HairFeatureProcessor", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "HairRequestsBus::Handler", null, [
       [ "AZ::Render::Hair::HairComponentController", "class_a_z_1_1_render_1_1_hair_1_1_hair_component_controller.html", null ]
     ] ],
     [ "HairStrands", "class_hair_strands.html", null ],
@@ -135,31 +135,31 @@ var hierarchy =
     [ "AZ::Render::Hair::HairUniformBuffer< AMD::TressFXShadeParams >", "class_a_z_1_1_render_1_1_hair_1_1_hair_uniform_buffer.html", null ],
     [ "AZ::Render::Hair::HairUniformBuffer< AMD::TressFXSimulationParams >", "class_a_z_1_1_render_1_1_hair_1_1_hair_uniform_buffer.html", null ],
     [ "AZ::Render::Hair::HairUniformBuffer< AMD::TressFXStrandParams >", "class_a_z_1_1_render_1_1_hair_1_1_hair_uniform_buffer.html", null ],
-    [ "ComputePass", null, [
+    [ "RPI::ComputePass", null, [
       [ "AZ::Render::Hair::HairSkinningComputePass", "class_a_z_1_1_render_1_1_hair_1_1_hair_skinning_compute_pass.html", null ]
     ] ],
-    [ "FeatureProcessor", null, [
+    [ "RPI::FeatureProcessor", null, [
       [ "AZ::Render::Hair::HairFeatureProcessor", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html", null ]
     ] ],
-    [ "FullscreenTrianglePass", null, [
+    [ "RPI::FullscreenTrianglePass", null, [
       [ "AZ::Render::Hair::HairPPLLResolvePass", "class_a_z_1_1_render_1_1_hair_1_1_hair_p_p_l_l_resolve_pass.html", null ]
     ] ],
-    [ "ParentPass", null, [
+    [ "RPI::ParentPass", null, [
       [ "AZ::Render::HairParentPass", "class_a_z_1_1_render_1_1_hair_parent_pass.html", null ]
     ] ],
-    [ "RasterPass", null, [
+    [ "RPI::RasterPass", null, [
       [ "AZ::Render::Hair::HairGeometryRasterPass", "class_a_z_1_1_render_1_1_hair_1_1_hair_geometry_raster_pass.html", [
         [ "AZ::Render::Hair::HairPPLLRasterPass", "class_a_z_1_1_render_1_1_hair_1_1_hair_p_p_l_l_raster_pass.html", null ],
         [ "AZ::Render::Hair::HairShortCutGeometryDepthAlphaPass", "class_a_z_1_1_render_1_1_hair_1_1_hair_short_cut_geometry_depth_alpha_pass.html", null ],
         [ "AZ::Render::Hair::HairShortCutGeometryShadingPass", "class_a_z_1_1_render_1_1_hair_1_1_hair_short_cut_geometry_shading_pass.html", null ]
       ] ]
     ] ],
-    [ "Handler", null, [
+    [ "RPI::ShaderReloadNotificationBus::Handler", null, [
       [ "AZ::Render::Hair::HairGeometryRasterPass", "class_a_z_1_1_render_1_1_hair_1_1_hair_geometry_raster_pass.html", null ]
     ] ],
     [ "Simulation", "class_simulation.html", null ],
     [ "SimulationContext", "struct_simulation_context.html", null ],
-    [ "Handler", null, [
+    [ "SystemTickBus::Handler", null, [
       [ "AZ::Render::SharedBuffer", "class_a_z_1_1_render_1_1_shared_buffer.html", null ]
     ] ],
     [ "TressFXBoneSkinningUniformBuffer", "struct_tress_f_x_bone_skinning_uniform_buffer.html", null ],

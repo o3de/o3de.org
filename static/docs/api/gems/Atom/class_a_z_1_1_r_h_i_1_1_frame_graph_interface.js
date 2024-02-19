@@ -1,7 +1,5 @@
 var class_a_z_1_1_r_h_i_1_1_frame_graph_interface =
 [
-    [ "FrameGraphInterface", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a8703a4c8c88b52d7a6bc506dbcf9b1c5", null ],
-    [ "~FrameGraphInterface", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a0d4710c3ba9cd7882f23d6f714983cf5", null ],
     [ "ExecuteAfter", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a22bf8e9c94056c9abf89b6955945f5da", null ],
     [ "ExecuteBefore", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a3954434d8b1c38a6b6ae921000481d12", null ],
     [ "GetAttachmentDatabase", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#aa77f47e253990bacc3a0772d585768a8", null ],

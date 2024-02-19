@@ -1,28 +1,4 @@
 var class_graph_canvas_1_1_style_manager_requests =
 [
-    [ "BusIdType", "class_graph_canvas_1_1_style_manager_requests.html#a8440f60ec98288a1d3e159fb8fbd234b", null ],
-    [ "CachePixmap", "class_graph_canvas_1_1_style_manager_requests.html#a72fc2f04112246ce26ee7804f565ff9c", null ],
-    [ "CreateColoredPatternPixmap", "class_graph_canvas_1_1_style_manager_requests.html#a3dbdb3e02c9207b7fffe875a2043bf0a", null ],
-    [ "CreateIcon", "class_graph_canvas_1_1_style_manager_requests.html#ae7df49cd6d82ef2ed23cc80c0c2acfe3", null ],
-    [ "CreateIconFromConfiguration", "class_graph_canvas_1_1_style_manager_requests.html#afe451d357442077a0007b85fc2849eab", null ],
-    [ "CreateMultiColoredIcon", "class_graph_canvas_1_1_style_manager_requests.html#a86e91bb70ef4f0947afe0ef6156e7159", null ],
-    [ "CreatePatternPixmap", "class_graph_canvas_1_1_style_manager_requests.html#a2084886a6492ade1bd3623f833312c69", null ],
-    [ "FindColorPalette", "class_graph_canvas_1_1_style_manager_requests.html#a1ee4ca082f7427a23f4c7f9ea4e1cd26", null ],
-    [ "FindDataColorPalette", "class_graph_canvas_1_1_style_manager_requests.html#a779f14472ceaa1c3f4e0bb89f27e2319", null ],
-    [ "FindLayer", "class_graph_canvas_1_1_style_manager_requests.html#aa964a07ba7cbb0ea77de3637864a3a65", null ],
-    [ "FindPaletteIconStyleHelper", "class_graph_canvas_1_1_style_manager_requests.html#a94318fa2642124a10fb3e2e244ea2138", null ],
-    [ "FindPixmap", "class_graph_canvas_1_1_style_manager_requests.html#a5fe0640eee00f6d86614fcf6da10e252", null ],
-    [ "GetColorPaletteStyles", "class_graph_canvas_1_1_style_manager_requests.html#ae04a86c520c42f8d912b841144a5044b", null ],
-    [ "GetConfiguredPaletteIcon", "class_graph_canvas_1_1_style_manager_requests.html#a3366d9d597966b101607973747ca541b", null ],
-    [ "GetDataPaletteStyle", "class_graph_canvas_1_1_style_manager_requests.html#a1a554a1be46c432c0fddba422efa5d9b", null ],
-    [ "GetDataTypeColor", "class_graph_canvas_1_1_style_manager_requests.html#acafa823aa625d4aaccdedf7c4c5f09f8", null ],
-    [ "GetDataTypeIcon", "class_graph_canvas_1_1_style_manager_requests.html#a9006dde9d275dbc3809f0569fd606869", null ],
-    [ "GetMultiDataTypeIcon", "class_graph_canvas_1_1_style_manager_requests.html#a3b7a6493e22de28ae74d0165888498ba", null ],
-    [ "GetPaletteColor", "class_graph_canvas_1_1_style_manager_requests.html#a0a7d69bcbd4d0a42a15e1e6ab1d0d98e", null ],
-    [ "GetPaletteIcon", "class_graph_canvas_1_1_style_manager_requests.html#a25961e900fd77f5822026051925648a2", null ],
-    [ "GetSteppedHeight", "class_graph_canvas_1_1_style_manager_requests.html#ae5f00bda559a082d8c727fecde6ba6db", null ],
-    [ "GetSteppedWidth", "class_graph_canvas_1_1_style_manager_requests.html#adc40d8876abc1427191243c545263137", null ],
-    [ "RegisterDataPaletteStyle", "class_graph_canvas_1_1_style_manager_requests.html#a0e71a5bcca6c20bafc16a7b7c054db9f", null ],
-    [ "ResolveStyles", "class_graph_canvas_1_1_style_manager_requests.html#a7fced9be66a81bb04c03a9e4246ecf78", null ],
-    [ "AddressPolicy", "class_graph_canvas_1_1_style_manager_requests.html#adbfae0ba3678538339541cc6980e064c", null ]
+    [ "ResolveStyles", "class_graph_canvas_1_1_style_manager_requests.html#a7fced9be66a81bb04c03a9e4246ecf78", null ]
 ];

@@ -1,6 +1,5 @@
 var class_ui_mask_interface =
 [
-    [ "~UiMaskInterface", "class_ui_mask_interface.html#a41e96e4c2733c24f7609bd863c81a57a", null ],
     [ "GetDrawBehind", "class_ui_mask_interface.html#a7bafaea734fa6867cb2886caaffdf228", null ],
     [ "GetDrawInFront", "class_ui_mask_interface.html#a68a80698f21c3a4eeb1d8ac7bd339e6d", null ],
     [ "GetIsInteractionMaskingEnabled", "class_ui_mask_interface.html#a27bce8e881f2af4ab61e211605fac152", null ],

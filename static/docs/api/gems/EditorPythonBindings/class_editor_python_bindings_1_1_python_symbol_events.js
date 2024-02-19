@@ -6,6 +6,5 @@ var class_editor_python_bindings_1_1_python_symbol_events =
     [ "LogClassMethod", "class_editor_python_bindings_1_1_python_symbol_events.html#ab4c2abda6fb5d5e858dbcd6bee3046d6", null ],
     [ "LogClassWithName", "class_editor_python_bindings_1_1_python_symbol_events.html#a1b77b6838a415dbe275e7357e52021d7", null ],
     [ "LogGlobalMethod", "class_editor_python_bindings_1_1_python_symbol_events.html#a319f5fb655bbb8262d031b9710727ab5", null ],
-    [ "LogGlobalProperty", "class_editor_python_bindings_1_1_python_symbol_events.html#a961c9b9e98e9a0aacaf4323584c70966", null ],
-    [ "EnableEventQueue", "class_editor_python_bindings_1_1_python_symbol_events.html#a7c61884fe6809cde70643f5bab1a31b5", null ]
+    [ "LogGlobalProperty", "class_editor_python_bindings_1_1_python_symbol_events.html#a961c9b9e98e9a0aacaf4323584c70966", null ]
 ];

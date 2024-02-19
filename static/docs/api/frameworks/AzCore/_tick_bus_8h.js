@@ -1,9 +1,9 @@
 var _tick_bus_8h =
 [
-    [ "TickEvents", "class_a_z_1_1_tick_events.html", "class_a_z_1_1_tick_events" ],
-    [ "BusHandlerOrderCompare", "struct_a_z_1_1_tick_events_1_1_bus_handler_order_compare.html", "struct_a_z_1_1_tick_events_1_1_bus_handler_order_compare" ],
-    [ "TickRequests", "class_a_z_1_1_tick_requests.html", "class_a_z_1_1_tick_requests" ],
-    [ "SystemTickEvents", "class_a_z_1_1_system_tick_events.html", "class_a_z_1_1_system_tick_events" ],
+    [ "AZ::TickEvents", "class_a_z_1_1_tick_events.html", "class_a_z_1_1_tick_events" ],
+    [ "AZ::TickEvents::BusHandlerOrderCompare", "struct_a_z_1_1_tick_events_1_1_bus_handler_order_compare.html", null ],
+    [ "AZ::TickRequests", "class_a_z_1_1_tick_requests.html", "class_a_z_1_1_tick_requests" ],
+    [ "AZ::SystemTickEvents", "class_a_z_1_1_system_tick_events.html", "class_a_z_1_1_system_tick_events" ],
     [ "SystemTickBus", "_tick_bus_8h.html#ae026317ae0435b26c00cc6fb8c032302", null ],
     [ "TickBus", "_tick_bus_8h.html#a7d1883808b1ab3654f7a93e177d5bf50", null ],
     [ "TickRequestBus", "_tick_bus_8h.html#a4a978153f97e869c8113177818434aa7", null ],
@@ -20,8 +20,5 @@ var _tick_bus_8h =
       [ "TICK_DEFAULT", "_tick_bus_8h.html#a62ef7e159c578958b5ac0b9c819b3fa9a8d7b7e67448f763dee2bc9d8cc52b34a", null ],
       [ "TICK_UI", "_tick_bus_8h.html#a62ef7e159c578958b5ac0b9c819b3fa9aa139d4150ab9b571005b9507d0aaec4e", null ],
       [ "TICK_LAST", "_tick_bus_8h.html#a62ef7e159c578958b5ac0b9c819b3fa9ae4991250ef67eab5fae4992647a2dcbd", null ]
-    ] ],
-    [ "DECLARE_EBUS_EXTERN", "_tick_bus_8h.html#a0801f4e804f36cc18a0d2765fec2df26", null ],
-    [ "DECLARE_EBUS_EXTERN", "_tick_bus_8h.html#a5da2b16b6e30b891ac00f1a00206ced5", null ],
-    [ "DECLARE_EBUS_EXTERN", "_tick_bus_8h.html#aab8eae6e16047964dfef8e1970b61170", null ]
+    ] ]
 ];

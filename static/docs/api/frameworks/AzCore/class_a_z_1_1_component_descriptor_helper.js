@@ -1,8 +1,7 @@
 var class_a_z_1_1_component_descriptor_helper =
 [
     [ "ComponentDescriptorHelper", "class_a_z_1_1_component_descriptor_helper.html#a177f448f155c4bcfff42481c98db1092", null ],
-    [ "~ComponentDescriptorHelper", "class_a_z_1_1_component_descriptor_helper.html#af763fa36cbddb32932a187866bf67a1b", null ],
-    [ "CreateComponent", "class_a_z_1_1_component_descriptor_helper.html#a0db028a8d7817c3b1030d21ecb146dbe", null ],
-    [ "GetName", "class_a_z_1_1_component_descriptor_helper.html#a402e3c0a7b00c174bec67c1e1a535ed8", null ],
+    [ "CreateComponent", "class_a_z_1_1_component_descriptor_helper.html#a40d53168d167d0781b9839a2fb6f4185", null ],
+    [ "GetName", "class_a_z_1_1_component_descriptor_helper.html#afc18c87baa634c6e83b82f2d21981c1b", null ],
     [ "GetUuid", "class_a_z_1_1_component_descriptor_helper.html#a2d8b1593ee4b982363808db0efaf4775", null ]
 ];

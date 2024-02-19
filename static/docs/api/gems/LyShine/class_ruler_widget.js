@@ -1,10 +1,5 @@
 var class_ruler_widget =
 [
-    [ "Orientation", "class_ruler_widget.html#a60ee678c2d9743de2aee5b301fb0a874", [
-      [ "Horizontal", "class_ruler_widget.html#a60ee678c2d9743de2aee5b301fb0a874ac1b5fa03ecdb95d4a45dd1c40b02527f", null ],
-      [ "Vertical", "class_ruler_widget.html#a60ee678c2d9743de2aee5b301fb0a874a06ce2a25e5d12c166a36f654dbea6012", null ]
-    ] ],
-    [ "RulerWidget", "class_ruler_widget.html#a9f65958502315ee8bb43b912dc98a052", null ],
     [ "DrawCursorPos", "class_ruler_widget.html#a528bd5a1bf731d681a914bc011e71dd2", null ],
     [ "DrawForViewport", "class_ruler_widget.html#a1d7d609493c0431d8134cee4f40b15ab", null ],
     [ "DrawRulerSection", "class_ruler_widget.html#a28f69461e04438fc4a0c5fccbbabb151", null ],

@@ -1,6 +1,5 @@
 var class_e_m_studio_1_1_action_history_callback =
 [
-    [ "ActionHistoryCallback", "class_e_m_studio_1_1_action_history_callback.html#a371f636f6ebb9f19e1767e0157a8f86b", null ],
     [ "OnAddCommandToHistory", "class_e_m_studio_1_1_action_history_callback.html#a2a568836258d8e493dd1a4f129d2bfd3", null ],
     [ "OnPostExecuteCommand", "class_e_m_studio_1_1_action_history_callback.html#a5686808a6e5da7b7651ff7f7e453c774", null ],
     [ "OnPostExecuteCommandGroup", "class_e_m_studio_1_1_action_history_callback.html#a4df973451006546a1fe87419333a2fab", null ],

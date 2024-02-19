@@ -1,0 +1,45 @@
+var annotated_dup =
+[
+    [ "EMotionFX", null, [
+      [ "MotionMatching", null, [
+        [ "BestMatchingFrameWriterCsv", "class_e_motion_f_x_1_1_motion_matching_1_1_best_matching_frame_writer_csv.html", null ],
+        [ "BlendTreeMotionMatchNode", "class_e_motion_f_x_1_1_motion_matching_1_1_blend_tree_motion_match_node.html", "class_e_motion_f_x_1_1_motion_matching_1_1_blend_tree_motion_match_node" ],
+        [ "CsvWriterBase", "class_e_motion_f_x_1_1_motion_matching_1_1_csv_writer_base.html", null ],
+        [ "DebugDrawRequests", "class_e_motion_f_x_1_1_motion_matching_1_1_debug_draw_requests.html", null ],
+        [ "DefaultFeatureSchemaInitSettings", "struct_e_motion_f_x_1_1_motion_matching_1_1_default_feature_schema_init_settings.html", null ],
+        [ "DiscardFrameEventData", "class_e_motion_f_x_1_1_motion_matching_1_1_discard_frame_event_data.html", null ],
+        [ "Feature", "class_e_motion_f_x_1_1_motion_matching_1_1_feature.html", "class_e_motion_f_x_1_1_motion_matching_1_1_feature" ],
+        [ "FeatureAngularVelocity", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_angular_velocity.html", null ],
+        [ "FeatureMatrix", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_matrix.html", null ],
+        [ "FeatureMatrixTransformer", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_matrix_transformer.html", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_matrix_transformer" ],
+        [ "FeatureMatrixType", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_matrix_type.html", null ],
+        [ "FeaturePosition", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_position.html", null ],
+        [ "FeatureSchema", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_schema.html", null ],
+        [ "FeatureTrajectory", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory.html", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_trajectory" ],
+        [ "FeatureVelocity", "class_e_motion_f_x_1_1_motion_matching_1_1_feature_velocity.html", null ],
+        [ "Frame", "class_e_motion_f_x_1_1_motion_matching_1_1_frame.html", "class_e_motion_f_x_1_1_motion_matching_1_1_frame" ],
+        [ "FrameDatabase", "class_e_motion_f_x_1_1_motion_matching_1_1_frame_database.html", "class_e_motion_f_x_1_1_motion_matching_1_1_frame_database" ],
+        [ "ImGuiMonitorRequests", "class_e_motion_f_x_1_1_motion_matching_1_1_im_gui_monitor_requests.html", "class_e_motion_f_x_1_1_motion_matching_1_1_im_gui_monitor_requests" ],
+        [ "KdTree", "class_e_motion_f_x_1_1_motion_matching_1_1_kd_tree.html", "class_e_motion_f_x_1_1_motion_matching_1_1_kd_tree" ],
+        [ "MinMaxScaler", "class_e_motion_f_x_1_1_motion_matching_1_1_min_max_scaler.html", "class_e_motion_f_x_1_1_motion_matching_1_1_min_max_scaler" ],
+        [ "MotionMatchingBusTraits", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_bus_traits.html", null ],
+        [ "MotionMatchingData", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_data.html", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_data" ],
+        [ "MotionMatchingEditorRequests", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_editor_requests.html", null ],
+        [ "MotionMatchingEditorSystemComponent", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_editor_system_component.html", null ],
+        [ "MotionMatchingInstance", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_instance.html", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_instance" ],
+        [ "MotionMatchingModuleInterface", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_module_interface.html", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_module_interface" ],
+        [ "MotionMatchingRequests", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_requests.html", null ],
+        [ "MotionMatchingSystemComponent", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_system_component.html", null ],
+        [ "PoseDataJointVelocities", "class_e_motion_f_x_1_1_motion_matching_1_1_pose_data_joint_velocities.html", "class_e_motion_f_x_1_1_motion_matching_1_1_pose_data_joint_velocities" ],
+        [ "PoseReaderCsv", "class_e_motion_f_x_1_1_motion_matching_1_1_pose_reader_csv.html", "class_e_motion_f_x_1_1_motion_matching_1_1_pose_reader_csv" ],
+        [ "PoseWriterCsv", "class_e_motion_f_x_1_1_motion_matching_1_1_pose_writer_csv.html", "class_e_motion_f_x_1_1_motion_matching_1_1_pose_writer_csv" ],
+        [ "QueryVector", "class_e_motion_f_x_1_1_motion_matching_1_1_query_vector.html", null ],
+        [ "QueryVectorWriterCsv", "class_e_motion_f_x_1_1_motion_matching_1_1_query_vector_writer_csv.html", null ],
+        [ "Sample", "struct_e_motion_f_x_1_1_motion_matching_1_1_sample.html", null ],
+        [ "StandardScaler", "class_e_motion_f_x_1_1_motion_matching_1_1_standard_scaler.html", "class_e_motion_f_x_1_1_motion_matching_1_1_standard_scaler" ],
+        [ "TagEventData", "class_e_motion_f_x_1_1_motion_matching_1_1_tag_event_data.html", null ],
+        [ "TrajectoryHistory", "class_e_motion_f_x_1_1_motion_matching_1_1_trajectory_history.html", "class_e_motion_f_x_1_1_motion_matching_1_1_trajectory_history" ],
+        [ "TrajectoryQuery", "class_e_motion_f_x_1_1_motion_matching_1_1_trajectory_query.html", "class_e_motion_f_x_1_1_motion_matching_1_1_trajectory_query" ]
+      ] ]
+    ] ]
+];

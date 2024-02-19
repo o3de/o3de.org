@@ -1,8 +1,7 @@
 var class_ui_transform2d_interface =
 [
-    [ "Anchors", "struct_ui_transform2d_interface_1_1_anchors.html", "struct_ui_transform2d_interface_1_1_anchors" ],
-    [ "Offsets", "struct_ui_transform2d_interface_1_1_offsets.html", "struct_ui_transform2d_interface_1_1_offsets" ],
-    [ "~UiTransform2dInterface", "class_ui_transform2d_interface.html#ad0320a80b03ca8dc24c45d888cb9b38a", null ],
+    [ "Anchors", "struct_ui_transform2d_interface_1_1_anchors.html", null ],
+    [ "Offsets", "struct_ui_transform2d_interface_1_1_offsets.html", null ],
     [ "GetAnchors", "class_ui_transform2d_interface.html#a6f221dea8a91c9c5a3748628ed810106", null ],
     [ "GetLocalHeight", "class_ui_transform2d_interface.html#a6a64a98655fd3f22a9938d31da5b1d7f", null ],
     [ "GetLocalWidth", "class_ui_transform2d_interface.html#a97d1dbb71cedb6d3bb9a70c93b2cb4b6", null ],

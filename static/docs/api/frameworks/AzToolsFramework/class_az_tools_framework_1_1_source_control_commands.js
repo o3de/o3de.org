@@ -1,7 +1,5 @@
 var class_az_tools_framework_1_1_source_control_commands =
 [
-    [ "MutexType", "class_az_tools_framework_1_1_source_control_commands.html#a841a7aed8149b59ff4c7d14090e6b249", null ],
-    [ "~SourceControlCommands", "class_az_tools_framework_1_1_source_control_commands.html#a01299f98447c3e142f4da50d62fae15d", null ],
     [ "GetBulkFileInfo", "class_az_tools_framework_1_1_source_control_commands.html#a613cf90400be52e78245d1ec33be1f3d", null ],
     [ "GetFileInfo", "class_az_tools_framework_1_1_source_control_commands.html#a5f193320d0488ba6db2491658d4c5bed", null ],
     [ "RequestDelete", "class_az_tools_framework_1_1_source_control_commands.html#ae8fe4b55060d6f272c725f4ab6562516", null ],
@@ -15,7 +13,5 @@ var class_az_tools_framework_1_1_source_control_commands =
     [ "RequestRenameBulk", "class_az_tools_framework_1_1_source_control_commands.html#a4ffe9d2c64c57b13582d9997a2af01fb", null ],
     [ "RequestRenameBulkExtended", "class_az_tools_framework_1_1_source_control_commands.html#af5c481956bde100110ae93313d027556", null ],
     [ "RequestRenameExtended", "class_az_tools_framework_1_1_source_control_commands.html#a58b0810cc2cd60eda7681d1ab87d94de", null ],
-    [ "RequestRevert", "class_az_tools_framework_1_1_source_control_commands.html#ac74caaddbafac2a4d2eaf3d05cc6c280", null ],
-    [ "AddressPolicy", "class_az_tools_framework_1_1_source_control_commands.html#a0f24a12650a5a7b510e40f618f6b3cfb", null ],
-    [ "HandlerPolicy", "class_az_tools_framework_1_1_source_control_commands.html#a0a00ac3cbfae9dc3fe3716028141c035", null ]
+    [ "RequestRevert", "class_az_tools_framework_1_1_source_control_commands.html#ac74caaddbafac2a4d2eaf3d05cc6c280", null ]
 ];

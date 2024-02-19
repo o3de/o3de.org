@@ -1,6 +1,5 @@
 var class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator =
 [
-    [ "StreamingImageAssetCreator", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html#ad4d2bc37a7359e1f1333bc31520378e5", null ],
     [ "AddMipChainAsset", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html#a587084ded148ef1c1a1a864416e91953", null ],
     [ "Begin", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html#a370b8a70066be9dc6b388407b146ee7b", null ],
     [ "End", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html#a24cd78a818b118d55995d166e67d5a89", null ],

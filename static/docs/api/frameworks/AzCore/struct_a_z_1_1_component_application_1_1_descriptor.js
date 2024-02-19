@@ -1,8 +1,5 @@
 var struct_a_z_1_1_component_application_1_1_descriptor =
 [
-    [ "Descriptor", "struct_a_z_1_1_component_application_1_1_descriptor.html#ae1038fbe1176eafb5ce8ffbe274d2f10", null ],
-    [ "AZ_CLASS_ALLOCATOR", "struct_a_z_1_1_component_application_1_1_descriptor.html#a44f1d4162eb300776aee78d3273dc6a0", null ],
-    [ "AZ_TYPE_INFO", "struct_a_z_1_1_component_application_1_1_descriptor.html#a5217deae48fff3b53287719ab7bb75f6", null ],
     [ "Reflect", "struct_a_z_1_1_component_application_1_1_descriptor.html#af5e23d9eb2a98c2e741fb889774b7cc6", null ],
     [ "m_allocationRecordsAttemptDecodeImmediately", "struct_a_z_1_1_component_application_1_1_descriptor.html#afd32719e44897bc59cfce38a8d3bfc59", null ],
     [ "m_allocationRecordsSaveNames", "struct_a_z_1_1_component_application_1_1_descriptor.html#a387e1b9b912e0e746eea2af56dc35adf", null ],

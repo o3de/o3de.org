@@ -1,5 +1,0 @@
-var class_a_w_s_client_auth_1_1_a_w_s_client_auth_cognito_caching_authenticated_credentials_provider =
-[
-    [ "AWSClientAuthCognitoCachingAuthenticatedCredentialsProvider", "class_a_w_s_client_auth_1_1_a_w_s_client_auth_cognito_caching_authenticated_credentials_provider.html#af309a316706fe87987ba344b57e12c66", null ],
-    [ "GetCredentialsFromCognito", "class_a_w_s_client_auth_1_1_a_w_s_client_auth_cognito_caching_authenticated_credentials_provider.html#a42ff93278b560f4b7b1d948af32489b4", null ]
-];

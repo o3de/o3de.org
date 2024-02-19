@@ -1,7 +1,6 @@
 var class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface =
 [
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html#a71e0c1ec31e78aa083dcbe121691d142", null ],
-    [ "GetSettings", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html#a1fa61de5a514603f116544f9ed26cbeb", null ],
+    [ "GetSettings", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html#a9a0fbe9c50704a7cf2824e58540c7fb8", null ],
     [ "SetChromaThreshold", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html#a8093fb144084aa6e409315178d9bdd1a", null ],
     [ "SetCornerDetectionEnable", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html#acf50d15fe9b496c284f73705942900ac", null ],
     [ "SetCornerRounding", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor_interface.html#a3236907251b6dcd8e3d5fa8ac8ad070a", null ],

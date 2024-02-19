@@ -1,4 +1,0 @@
-var struct_script_canvas_1_1_nodes_1_1_operators_1_1_operator_base_1_1_operator_configuration =
-[
-    [ "m_sourceSlotConfigurations", "struct_script_canvas_1_1_nodes_1_1_operators_1_1_operator_base_1_1_operator_configuration.html#a12539239067c809cc32c84e04227a30e", null ]
-];

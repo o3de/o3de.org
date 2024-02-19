@@ -13,7 +13,7 @@ var class_m_core_1_1_log_callback =
     ] ],
     [ "LogCallback", "class_m_core_1_1_log_callback.html#a563a49e8b36f3955a02a43d9267df472", null ],
     [ "~LogCallback", "class_m_core_1_1_log_callback.html#a14c9a6a86b871212c3cdd6f7b8e0b3cf", null ],
-    [ "GetLogLevels", "class_m_core_1_1_log_callback.html#a77dd224c489b69d1de941b65d18428e4", null ],
+    [ "GetLogLevels", "class_m_core_1_1_log_callback.html#a5c5cf0968796bf58d7445937fb7d17c5", null ],
     [ "GetType", "class_m_core_1_1_log_callback.html#a406c3f16950b5a79861fa59e64bb3403", null ],
     [ "Log", "class_m_core_1_1_log_callback.html#a586762cbe88f4501726e8bdcbc09bf98", null ],
     [ "SetLogLevels", "class_m_core_1_1_log_callback.html#a0a7791d0a8d6932f287730c367080e0e", null ],

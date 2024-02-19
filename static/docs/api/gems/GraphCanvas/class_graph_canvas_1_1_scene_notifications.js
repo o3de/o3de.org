@@ -1,6 +1,5 @@
 var class_graph_canvas_1_1_scene_notifications =
 [
-    [ "BusIdType", "class_graph_canvas_1_1_scene_notifications.html#a5c09a1b0f2974a24f8e0167a457c2a60", null ],
     [ "OnConnectionAdded", "class_graph_canvas_1_1_scene_notifications.html#adb36ad7180590a20859d35ad25c9d2b4", null ],
     [ "OnConnectionDragBegin", "class_graph_canvas_1_1_scene_notifications.html#a25080cabb3288f6996982ee0e6630ea7", null ],
     [ "OnConnectionDragEnd", "class_graph_canvas_1_1_scene_notifications.html#a3b3cb04fcca50c9fa8f1d7842742c384", null ],
@@ -15,8 +14,6 @@ var class_graph_canvas_1_1_scene_notifications =
     [ "OnEntitiesDeserializationComplete", "class_graph_canvas_1_1_scene_notifications.html#a0cd8893e0ed530bec9fe75c1b0b9d2be", null ],
     [ "OnEntitiesDeserialized", "class_graph_canvas_1_1_scene_notifications.html#aae50229f4b19cd30aa405d9f06a113e8", null ],
     [ "OnEntitiesSerialized", "class_graph_canvas_1_1_scene_notifications.html#ad1bddb6d42bed01e2f43cdefc7d1ba27", null ],
-    [ "OnGraphLoadBegin", "class_graph_canvas_1_1_scene_notifications.html#a587192eeab3eb4c973a067a549b24c14", null ],
-    [ "OnGraphLoadComplete", "class_graph_canvas_1_1_scene_notifications.html#a5636888e3952b0e3515be8a0633ae99f", null ],
     [ "OnKeyPressed", "class_graph_canvas_1_1_scene_notifications.html#aa3bc5c230d88a62f0d28be3563017560", null ],
     [ "OnKeyReleased", "class_graph_canvas_1_1_scene_notifications.html#a5940ed08e66b1357f936c2a63e2b8865", null ],
     [ "OnNodeAdded", "class_graph_canvas_1_1_scene_notifications.html#a8123cc85fe9db648bccef1d333ee449a", null ],
@@ -39,7 +36,5 @@ var class_graph_canvas_1_1_scene_notifications =
     [ "OnUnknownPaste", "class_graph_canvas_1_1_scene_notifications.html#acbbe2b65dab99d7401187d1439b97b55", null ],
     [ "OnViewRegistered", "class_graph_canvas_1_1_scene_notifications.html#ad58047ff6634ea26c8e936185879be1e", null ],
     [ "PostCreationEvent", "class_graph_canvas_1_1_scene_notifications.html#a4f5bc5e287b7f2934e19d2616189b4c3", null ],
-    [ "PostDeletionEvent", "class_graph_canvas_1_1_scene_notifications.html#ac7d84b84df1c06e68b982bf139a1188c", null ],
-    [ "PostOnGraphLoadComplete", "class_graph_canvas_1_1_scene_notifications.html#a3c00395a7f211ce1c8f6ccf5f165e58d", null ],
-    [ "AddressPolicy", "class_graph_canvas_1_1_scene_notifications.html#a2e562beae47fade2075a93e3a86d2ca5", null ]
+    [ "PostDeletionEvent", "class_graph_canvas_1_1_scene_notifications.html#ac7d84b84df1c06e68b982bf139a1188c", null ]
 ];

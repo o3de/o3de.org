@@ -1,8 +1,7 @@
 var class_az_manipulator_test_framework_1_1_viewport_interaction_interface =
 [
-    [ "~ViewportInteractionInterface", "class_az_manipulator_test_framework_1_1_viewport_interaction_interface.html#aeaa8a9698a2d1b2f03b8ca1b91099908", null ],
     [ "GetCameraState", "class_az_manipulator_test_framework_1_1_viewport_interaction_interface.html#adace62acc08f7193cca5309732f92b60", null ],
-    [ "GetDebugDisplay", "class_az_manipulator_test_framework_1_1_viewport_interaction_interface.html#a86e6204188fe6661d906902148d471ec", null ],
+    [ "GetDebugDisplay", "class_az_manipulator_test_framework_1_1_viewport_interaction_interface.html#a4220eaab347a50cd5e5d386a1e7eac0e", null ],
     [ "GetViewportId", "class_az_manipulator_test_framework_1_1_viewport_interaction_interface.html#adbd807ba34b3f12e4812d737ade77d95", null ],
     [ "SetAngularSnapping", "class_az_manipulator_test_framework_1_1_viewport_interaction_interface.html#aa7a1af9d1f71e44e4ba8040e7c33c60c", null ],
     [ "SetAngularStep", "class_az_manipulator_test_framework_1_1_viewport_interaction_interface.html#aa3b814f516b1171a4be8f6c583e9b9a4", null ],

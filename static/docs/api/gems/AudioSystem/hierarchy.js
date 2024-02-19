@@ -62,7 +62,7 @@ var hierarchy =
     [ "Audio::CInstanceManager< ObjType, IDType >", "class_audio_1_1_c_instance_manager.html", null ],
     [ "Audio::CSmoothFloat", "class_audio_1_1_c_smooth_float.html", null ],
     [ "Audio::Flags< StoredType, typename >", "class_audio_1_1_flags.html", null ],
-    [ "Handler", null, [
+    [ "Audio::Gem::SystemRequestBus::Handler", null, [
       [ "AudioSystemGem::AudioSystemGemSystemComponent", "class_audio_system_gem_1_1_audio_system_gem_system_component.html", null ]
     ] ],
     [ "Audio::IATLAudioFileEntryData", "struct_audio_1_1_i_a_t_l_audio_file_entry_data.html", null ],
@@ -115,25 +115,25 @@ var hierarchy =
     [ "AudioControls::SControlScope", "struct_audio_controls_1_1_s_control_scope.html", null ],
     [ "AudioControls::SLibraryScope", "struct_audio_controls_1_1_s_library_scope.html", null ],
     [ "AudioControls::SRawConnectionData", "struct_audio_controls_1_1_s_raw_connection_data.html", null ],
-    [ "Handler", null, [
+    [ "AudioFileCacheManagerNotficationBus::Handler", null, [
       [ "Audio::CFileCacheManager", "class_audio_1_1_c_file_cache_manager.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AudioRaycastNotificationBus::Handler", null, [
       [ "Audio::CATLAudioObject", "class_audio_1_1_c_a_t_l_audio_object.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AudioRaycastRequestBus::Handler", null, [
       [ "Audio::AudioRaycastManager", "class_audio_1_1_audio_raycast_manager.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AudioSystemImplementationNotificationBus::Handler", null, [
       [ "Audio::AudioSystemImplementation", "class_audio_1_1_audio_system_implementation.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AudioSystemImplementationRequestBus::Handler", null, [
       [ "Audio::AudioSystemImplementation", "class_audio_1_1_audio_system_implementation.html", null ]
     ] ],
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "AudioSystemGem::AudioSystemGemSystemComponent", "class_audio_system_gem_1_1_audio_system_gem_system_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "Audio::AudioFileCacheManagerNotifications", "class_audio_1_1_audio_file_cache_manager_notifications.html", null ],
       [ "Audio::AudioPreloadNotifications", "class_audio_1_1_audio_preload_notifications.html", null ],
       [ "Audio::AudioRaycastNotifications", "class_audio_1_1_audio_raycast_notifications.html", null ],
@@ -149,26 +149,26 @@ var hierarchy =
       [ "Audio::MicrophoneRequests", "class_audio_1_1_microphone_requests.html", null ],
       [ "AudioControlsEditor::EditorImplPluginEvents", "class_audio_controls_editor_1_1_editor_impl_plugin_events.html", null ]
     ] ],
-    [ "Registrar", null, [
+    [ "AZ::Interface::Registrar", null, [
       [ "Audio::CAudioSystem", "class_audio_1_1_c_audio_system.html", null ],
       [ "Audio::NullAudioSystem", "class_audio_1_1_null_audio_system.html", null ]
     ] ],
-    [ "SystemAllocator", null, [
+    [ "AZ::SystemAllocator", null, [
       [ "Audio::AudioBankAllocator", "class_audio_1_1_audio_bank_allocator.html", null ],
       [ "Audio::AudioImplAllocator", "class_audio_1_1_audio_impl_allocator.html", null ],
       [ "Audio::AudioSystemAllocator", "class_audio_1_1_audio_system_allocator.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::ApplicationLifecycleEvents::Bus::Handler", null, [
       [ "AudioSystemGem::AudioSystemGemSystemComponent", "class_audio_system_gem_1_1_audio_system_gem_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::DebugDisplayEventBus::Handler", null, [
       [ "Audio::CAudioSystem", "class_audio_1_1_c_audio_system.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::LevelSystemLifecycleNotificationBus::Handler", null, [
       [ "AudioSystemGem::AudioSystemGemSystemComponent", "class_audio_system_gem_1_1_audio_system_gem_system_component.html", null ]
     ] ],
     [ "AZStd::hash< Audio::TriggerNotificationIdType >", "struct_a_z_std_1_1hash_3_01_audio_1_1_trigger_notification_id_type_01_4.html", null ],
-    [ "MultiHandler", null, [
+    [ "AzToolsFramework::AudioControlSelectorRequestBus::MultiHandler", null, [
       [ "AudioControls::AudioControlSelectorHandler", "class_audio_controls_1_1_audio_control_selector_handler.html", null ]
     ] ],
     [ "Audio::CATLEntity< TAudioControlID >", "class_audio_1_1_c_a_t_l_entity.html", [
@@ -258,19 +258,19 @@ var hierarchy =
       [ "AudioControls::QConnectionsWidget", "class_audio_controls_1_1_q_connections_widget.html", null ],
       [ "AudioControls::QFilterButton", "class_audio_controls_1_1_q_filter_button.html", null ]
     ] ],
-    [ "ATLControlsPanel", null, [
+    [ "Ui::ATLControlsPanel", null, [
       [ "AudioControls::CATLControlsPanel", "class_audio_controls_1_1_c_a_t_l_controls_panel.html", null ]
     ] ],
-    [ "AudioSystemPanel", null, [
+    [ "Ui::AudioSystemPanel", null, [
       [ "AudioControls::CAudioSystemPanel", "class_audio_controls_1_1_c_audio_system_panel.html", null ]
     ] ],
-    [ "ConnectionsWidget", null, [
+    [ "Ui::ConnectionsWidget", null, [
       [ "AudioControls::QConnectionsWidget", "class_audio_controls_1_1_q_connections_widget.html", null ]
     ] ],
-    [ "InspectorPanel", null, [
+    [ "Ui::InspectorPanel", null, [
       [ "AudioControls::CInspectorPanel", "class_audio_controls_1_1_c_inspector_panel.html", null ]
     ] ],
-    [ "MainWindow", null, [
+    [ "Ui::MainWindow", null, [
       [ "AudioControls::CAudioControlsEditorWindow", "class_audio_controls_1_1_c_audio_controls_editor_window.html", null ]
     ] ]
 ];

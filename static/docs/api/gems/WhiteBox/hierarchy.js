@@ -1,32 +1,32 @@
 var hierarchy =
 [
-    [ "Handler", null, [
+    [ "AZ::AssetTypeInfoBus::Handler", null, [
       [ "WhiteBox::Pipeline::WhiteBoxMeshAssetHandler", "class_white_box_1_1_pipeline_1_1_white_box_mesh_asset_handler.html", null ]
     ] ],
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "WhiteBox::WhiteBoxColliderComponent", "class_white_box_1_1_white_box_collider_component.html", null ],
       [ "WhiteBox::WhiteBoxComponent", "class_white_box_1_1_white_box_component.html", null ],
       [ "WhiteBox::WhiteBoxSystemComponent", "class_white_box_1_1_white_box_system_component.html", [
         [ "WhiteBox::EditorWhiteBoxSystemComponent", "class_white_box_1_1_editor_white_box_system_component.html", null ]
       ] ]
     ] ],
-    [ "ComponentBus", null, [
+    [ "AZ::ComponentBus", null, [
       [ "WhiteBox::EditorWhiteBoxColliderRequests", "class_white_box_1_1_editor_white_box_collider_requests.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::Data::AssetBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxMeshAsset", "class_white_box_1_1_editor_white_box_mesh_asset.html", null ]
     ] ],
-    [ "AssetData", null, [
+    [ "AZ::Data::AssetData", null, [
       [ "WhiteBox::Pipeline::WhiteBoxMeshAsset", "class_white_box_1_1_pipeline_1_1_white_box_mesh_asset.html", null ]
     ] ],
-    [ "AssetHandler", null, [
+    [ "AZ::Data::AssetHandler", null, [
       [ "WhiteBox::Pipeline::WhiteBoxMeshAssetHandler", "class_white_box_1_1_pipeline_1_1_white_box_mesh_asset_handler.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "WhiteBox::WhiteBoxMeshAssetNotifications", "class_white_box_1_1_white_box_mesh_asset_notifications.html", null ],
       [ "WhiteBox::WhiteBoxRequests", "class_white_box_1_1_white_box_requests.html", null ]
     ] ],
-    [ "EntityComponentBus", null, [
+    [ "AZ::EntityComponentBus", null, [
       [ "WhiteBox::EditorWhiteBoxComponentModeRequests", "class_white_box_1_1_editor_white_box_component_mode_requests.html", null ],
       [ "WhiteBox::EditorWhiteBoxComponentNotifications", "class_white_box_1_1_editor_white_box_component_notifications.html", null ],
       [ "WhiteBox::EditorWhiteBoxComponentRequests", "class_white_box_1_1_editor_white_box_component_requests.html", null ],
@@ -36,60 +36,60 @@ var hierarchy =
       [ "WhiteBox::EditorWhiteBoxTransformModeRequests", "class_white_box_1_1_editor_white_box_transform_mode_requests.html", null ],
       [ "WhiteBox::WhiteBoxComponentRequests", "class_white_box_1_1_white_box_component_requests.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::Render::MeshHandleStateRequestBus::Handler", null, [
       [ "WhiteBox::AtomRenderMesh", "class_white_box_1_1_atom_render_mesh.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::TickBus::Handler", null, [
       [ "WhiteBox::AtomRenderMesh", "class_white_box_1_1_atom_render_mesh.html", null ],
       [ "WhiteBox::EditorWhiteBoxMeshAsset", "class_white_box_1_1_editor_white_box_mesh_asset.html", null ],
       [ "WhiteBox::VertexTranslationModifier", "class_white_box_1_1_vertex_translation_modifier.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::TransformNotificationBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxColliderComponent", "class_white_box_1_1_editor_white_box_collider_component.html", null ],
       [ "WhiteBox::EditorWhiteBoxComponent", "class_white_box_1_1_editor_white_box_component.html", null ],
       [ "WhiteBox::EditorWhiteBoxComponentMode", "class_white_box_1_1_editor_white_box_component_mode.html", null ],
       [ "WhiteBox::WhiteBoxColliderComponent", "class_white_box_1_1_white_box_collider_component.html", null ],
       [ "WhiteBox::WhiteBoxComponent", "class_white_box_1_1_white_box_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::BoundsRequestBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxComponent", "class_white_box_1_1_editor_white_box_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::EntityDebugDisplayEventBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxComponent", "class_white_box_1_1_editor_white_box_component.html", null ],
       [ "WhiteBox::EditorWhiteBoxComponentMode", "class_white_box_1_1_editor_white_box_component_mode.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::ViewportDebugDisplayEventBus::Handler", null, [
       [ "WhiteBox::VertexTranslationModifier", "class_white_box_1_1_vertex_translation_modifier.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxSystemComponent", "class_white_box_1_1_editor_white_box_system_component.html", null ]
     ] ],
-    [ "EditorBaseComponentMode", null, [
+    [ "AzToolsFramework::ComponentModeFramework::EditorBaseComponentMode", null, [
       [ "WhiteBox::EditorWhiteBoxComponentMode", "class_white_box_1_1_editor_white_box_component_mode.html", null ]
     ] ],
-    [ "EditorComponentBase", null, [
+    [ "AzToolsFramework::Components::EditorComponentBase", null, [
       [ "WhiteBox::EditorWhiteBoxColliderComponent", "class_white_box_1_1_editor_white_box_collider_component.html", null ],
       [ "WhiteBox::EditorWhiteBoxComponent", "class_white_box_1_1_editor_white_box_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorComponentSelectionRequestsBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxComponent", "class_white_box_1_1_editor_white_box_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorVisibilityNotificationBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxComponent", "class_white_box_1_1_editor_white_box_component.html", null ]
     ] ],
-    [ "ManipulatorView", null, [
+    [ "AzToolsFramework::ManipulatorView", null, [
       [ "WhiteBox::ManipulatorViewEdge", "class_white_box_1_1_manipulator_view_edge.html", null ],
       [ "WhiteBox::ManipulatorViewPolygon", "class_white_box_1_1_manipulator_view_polygon.html", null ]
     ] ],
-    [ "BoundRequestShapeBase", null, [
+    [ "AzToolsFramework::Picking::BoundRequestShapeBase", null, [
       [ "WhiteBox::BoundShapeEdge", "class_white_box_1_1_bound_shape_edge.html", null ],
       [ "WhiteBox::BoundShapePolygon", "class_white_box_1_1_bound_shape_polygon.html", null ]
     ] ],
-    [ "BoundShapeInterface", null, [
+    [ "AzToolsFramework::Picking::BoundShapeInterface", null, [
       [ "WhiteBox::ManipulatorBoundEdge", "class_white_box_1_1_manipulator_bound_edge.html", null ],
       [ "WhiteBox::ManipulatorBoundPolygon", "class_white_box_1_1_manipulator_bound_polygon.html", null ]
     ] ],
-    [ "URSequencePoint", null, [
+    [ "AzToolsFramework::UndoSystem::URSequencePoint", null, [
       [ "WhiteBox::WhiteBoxMeshAssetUndoCommand", "class_white_box_1_1_white_box_mesh_asset_undo_command.html", null ]
     ] ],
     [ "CryHooksModule", null, [
@@ -97,29 +97,29 @@ var hierarchy =
         [ "WhiteBox::WhiteBoxEditorModule", "class_white_box_1_1_white_box_editor_module.html", null ]
       ] ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorWhiteBoxColliderRequestBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxColliderComponent", "class_white_box_1_1_editor_white_box_collider_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorWhiteBoxComponentModeRequestBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxComponentMode", "class_white_box_1_1_editor_white_box_component_mode.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorWhiteBoxComponentNotificationBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxComponent", "class_white_box_1_1_editor_white_box_component.html", null ],
       [ "WhiteBox::EditorWhiteBoxComponentMode", "class_white_box_1_1_editor_white_box_component_mode.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorWhiteBoxComponentRequestBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxComponent", "class_white_box_1_1_editor_white_box_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorWhiteBoxDefaultModeRequestBus::Handler", null, [
       [ "WhiteBox::DefaultMode", "class_white_box_1_1_default_mode.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorWhiteBoxEdgeModifierNotificationBus::Handler", null, [
       [ "WhiteBox::DefaultMode", "class_white_box_1_1_default_mode.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorWhiteBoxPolygonModifierNotificationBus::Handler", null, [
       [ "WhiteBox::DefaultMode", "class_white_box_1_1_default_mode.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "EditorWhiteBoxTransformModeRequestBus::Handler", null, [
       [ "WhiteBox::TransformMode", "class_white_box_1_1_transform_mode.html", null ]
     ] ],
     [ "WhiteBox::GenericHandle< struct EdgeHandleTag >", "class_white_box_1_1_generic_handle.html", null ],
@@ -176,13 +176,13 @@ var hierarchy =
     [ "WhiteBox::WhiteBoxRenderData", "struct_white_box_1_1_white_box_render_data.html", null ],
     [ "WhiteBox::WhiteBoxSaveResult", "struct_white_box_1_1_white_box_save_result.html", null ],
     [ "WhiteBox::WhiteBoxVertex", "struct_white_box_1_1_white_box_vertex.html", null ],
-    [ "Handler", null, [
+    [ "WhiteBoxComponentRequestBus::Handler", null, [
       [ "WhiteBox::WhiteBoxComponent", "class_white_box_1_1_white_box_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "WhiteBoxMeshAssetNotificationBus::Handler", null, [
       [ "WhiteBox::EditorWhiteBoxMeshAsset", "class_white_box_1_1_editor_white_box_mesh_asset.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "WhiteBoxRequestBus::Handler", null, [
       [ "WhiteBox::WhiteBoxSystemComponent", "class_white_box_1_1_white_box_system_component.html", null ]
     ] ]
 ];

@@ -9,8 +9,7 @@ var class_az_qt_components_1_1_tool_bar =
     ] ],
     [ "addMainToolBarStyle", "class_az_qt_components_1_1_tool_bar.html#a3300ef55fa5492f223958836f8560655", null ],
     [ "defaultConfig", "class_az_qt_components_1_1_tool_bar.html#aa771c8daf06f080391010e35fc71ba0d", null ],
-    [ "getToolBarExpansionButton", "class_az_qt_components_1_1_tool_bar.html#a57228fef6fbc192093cd338aff40d6e7", null ],
+    [ "getToolBarExpansionButton", "class_az_qt_components_1_1_tool_bar.html#ad91063d585822e9a0e650c106afa587a", null ],
     [ "loadConfig", "class_az_qt_components_1_1_tool_bar.html#adc30c98cd9fdca9c9e62287f75d1163e", null ],
-    [ "setToolBarIconSize", "class_az_qt_components_1_1_tool_bar.html#a5f7f91b8fbded8605ab6b3ee4861c9b1", null ],
-    [ "Style", "class_az_qt_components_1_1_tool_bar.html#acf788547283b20e9c18be19919f98295", null ]
+    [ "setToolBarIconSize", "class_az_qt_components_1_1_tool_bar.html#a5f7f91b8fbded8605ab6b3ee4861c9b1", null ]
 ];

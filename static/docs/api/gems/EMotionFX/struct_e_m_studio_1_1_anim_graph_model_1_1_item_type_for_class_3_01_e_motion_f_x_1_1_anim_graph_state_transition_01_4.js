@@ -1,4 +1,0 @@
-var struct_e_m_studio_1_1_anim_graph_model_1_1_item_type_for_class_3_01_e_motion_f_x_1_1_anim_graph_state_transition_01_4 =
-[
-    [ "itemType", "struct_e_m_studio_1_1_anim_graph_model_1_1_item_type_for_class_3_01_e_motion_f_x_1_1_anim_graph_state_transition_01_4.html#aecfbc437abc6331a6daef87506dab186", null ]
-];

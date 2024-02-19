@@ -6,26 +6,26 @@ var hierarchy =
     [ "AnimGraphNodeData", null, [
       [ "EMotionFX::MotionMatching::BlendTreeMotionMatchNode::UniqueData", "class_e_motion_f_x_1_1_motion_matching_1_1_blend_tree_motion_match_node_1_1_unique_data.html", null ]
     ] ],
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "EMotionFX::MotionMatching::MotionMatchingSystemComponent", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_system_component.html", [
         [ "EMotionFX::MotionMatching::MotionMatchingEditorSystemComponent", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_editor_system_component.html", null ]
       ] ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "EMotionFX::MotionMatching::DebugDrawRequests", "class_e_motion_f_x_1_1_motion_matching_1_1_debug_draw_requests.html", null ],
       [ "EMotionFX::MotionMatching::ImGuiMonitorRequests", "class_e_motion_f_x_1_1_motion_matching_1_1_im_gui_monitor_requests.html", null ],
       [ "EMotionFX::MotionMatching::MotionMatchingBusTraits", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_bus_traits.html", null ]
     ] ],
-    [ "Module", null, [
+    [ "AZ::Module", null, [
       [ "EMotionFX::MotionMatching::MotionMatchingModuleInterface", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_module_interface.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::TickBus::Handler", null, [
       [ "EMotionFX::MotionMatching::MotionMatchingSystemComponent", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
       [ "EMotionFX::MotionMatching::MotionMatchingEditorSystemComponent", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_editor_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "DebugDrawRequestBus::Handler", null, [
       [ "EMotionFX::MotionMatching::MotionMatchingInstance", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_instance.html", null ]
     ] ],
     [ "EMotionFX::MotionMatching::CsvWriterBase", "class_e_motion_f_x_1_1_motion_matching_1_1_csv_writer_base.html", [
@@ -78,10 +78,10 @@ var hierarchy =
       [ "EMotionFX::MotionMatching::DiscardFrameEventData", "class_e_motion_f_x_1_1_motion_matching_1_1_discard_frame_event_data.html", null ],
       [ "EMotionFX::MotionMatching::TagEventData", "class_e_motion_f_x_1_1_motion_matching_1_1_tag_event_data.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "MotionMatchingEditorRequestBus::Handler", null, [
       [ "EMotionFX::MotionMatching::MotionMatchingEditorSystemComponent", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_editor_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "MotionMatchingRequestBus::Handler", null, [
       [ "EMotionFX::MotionMatching::MotionMatchingSystemComponent", "class_e_motion_f_x_1_1_motion_matching_1_1_motion_matching_system_component.html", null ]
     ] ],
     [ "PoseData", null, [

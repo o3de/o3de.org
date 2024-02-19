@@ -1,25 +1,25 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "SliceFavorites::SliceFavoritesSystemComponent", "class_slice_favorites_1_1_slice_favorites_system_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "SliceFavorites::SliceFavoritesRequests", "class_slice_favorites_1_1_slice_favorites_requests.html", null ],
       [ "SliceFavorites::SliceFavoritesSystemComponentRequests", "class_slice_favorites_1_1_slice_favorites_system_component_requests.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::AssetCatalogEventBus::Handler", null, [
       [ "SliceFavorites::FavoriteDataModel", "class_slice_favorites_1_1_favorite_data_model.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzQtComponents::DragAndDropEventsBus::Handler", null, [
       [ "SliceFavorites::FavoriteDataModel", "class_slice_favorites_1_1_favorite_data_model.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::AssetBrowser::AssetBrowserComponentNotificationBus::Handler", null, [
       [ "SliceFavorites::FavoriteDataModel", "class_slice_favorites_1_1_favorite_data_model.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::AssetBrowser::AssetBrowserInteractionNotificationBus::Handler", null, [
       [ "SliceFavorites::FavoriteDataModel", "class_slice_favorites_1_1_favorite_data_model.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
       [ "SliceFavorites::FavoriteDataModel", "class_slice_favorites_1_1_favorite_data_model.html", null ]
     ] ],
     [ "QAbstractItemModel", null, [
@@ -35,10 +35,10 @@ var hierarchy =
       [ "SliceFavorites::SliceFavoritesWidget", "class_slice_favorites_1_1_slice_favorites_widget.html", null ]
     ] ],
     [ "SliceFavorites::FavoriteData", "class_slice_favorites_1_1_favorite_data.html", null ],
-    [ "Handler", null, [
+    [ "SliceFavoritesRequestBus::Handler", null, [
       [ "SliceFavorites::SliceFavoritesSystemComponent", "class_slice_favorites_1_1_slice_favorites_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "SliceFavoritesSystemComponentRequestBus::Handler", null, [
       [ "SliceFavorites::SliceFavoritesSystemComponent", "class_slice_favorites_1_1_slice_favorites_system_component.html", null ]
     ] ]
 ];

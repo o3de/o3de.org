@@ -1,6 +1,5 @@
 var struct_m_core_1_1_initializer_1_1_init_settings =
 [
-    [ "InitSettings", "struct_m_core_1_1_initializer_1_1_init_settings.html#a7b0d2d7e0fdd46474e64402da9567a7b", null ],
     [ "m_memAllocFunction", "struct_m_core_1_1_initializer_1_1_init_settings.html#ace7429fa1364510d1022cb047a91ad31", null ],
     [ "m_memFreeFunction", "struct_m_core_1_1_initializer_1_1_init_settings.html#ac5b2e2bdb714ab33027dc9ac7598f268", null ],
     [ "m_memReallocFunction", "struct_m_core_1_1_initializer_1_1_init_settings.html#a4cf1de7c23e61f19f2cca773f8cd1aa4", null ],

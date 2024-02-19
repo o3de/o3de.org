@@ -1,23 +1,19 @@
 var hierarchy =
 [
-    [ "Handler", null, [
+    [ "AssetBuilderSDK::AssetBuilderCommandBus::Handler", null, [
       [ "AZ::Prefab::PrefabBuilderComponent", "class_a_z_1_1_prefab_1_1_prefab_builder_component.html", null ]
     ] ],
-    [ "Component", null, [
-      [ "AZ::Prefab::PrefabBuilderComponent", "class_a_z_1_1_prefab_1_1_prefab_builder_component.html", null ],
-      [ "AZ::Render::EditorMeshComponent", "struct_a_z_1_1_render_1_1_editor_mesh_component.html", null ]
+    [ "AZ::Component", null, [
+      [ "AZ::Prefab::PrefabBuilderComponent", "class_a_z_1_1_prefab_1_1_prefab_builder_component.html", null ]
     ] ],
-    [ "ComponentDescriptorHelper", null, [
-      [ "AZ::Render::EditorMeshComponentHelper", "struct_a_z_1_1_render_1_1_editor_mesh_component_helper.html", null ]
-    ] ],
-    [ "AssetHandler", null, [
+    [ "AZ::Data::AssetHandler", null, [
       [ "AZ::Prefab::PrefabGroupAssetHandler", "class_a_z_1_1_prefab_1_1_prefab_group_asset_handler.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "AZ::SceneAPI::PrefabGroupNotifications", "class_a_z_1_1_scene_a_p_i_1_1_prefab_group_notifications.html", null ],
       [ "AZ::SceneAPI::PrefabGroupRequests", "class_a_z_1_1_scene_a_p_i_1_1_prefab_group_requests.html", null ]
     ] ],
-    [ "IRule", null, [
+    [ "AZ::SceneAPI::DataTypes::IRule", null, [
       [ "AZ::SceneAPI::SceneData::ProceduralMeshGroupRule", "class_a_z_1_1_scene_a_p_i_1_1_scene_data_1_1_procedural_mesh_group_rule.html", null ]
     ] ],
     [ "AZ::SceneAPI::DefaultProceduralPrefabGroup::NodeDataForEntity", "struct_a_z_1_1_scene_a_p_i_1_1_default_procedural_prefab_group_1_1_node_data_for_entity.html", null ],
@@ -28,10 +24,10 @@ var hierarchy =
         [ "AZ::SceneAPI::SceneData::PrefabGroup", "class_a_z_1_1_scene_a_p_i_1_1_scene_data_1_1_prefab_group.html", null ]
       ] ]
     ] ],
-    [ "Handler", null, [
+    [ "PrefabGroupEventBus::Handler", null, [
       [ "AZ::SceneAPI::DefaultProceduralPrefabGroup", "class_a_z_1_1_scene_a_p_i_1_1_default_procedural_prefab_group.html", null ]
     ] ],
-    [ "BehaviorComponent", null, [
+    [ "SceneCore::BehaviorComponent", null, [
       [ "AZ::SceneAPI::Behaviors::PrefabGroupBehavior", "class_a_z_1_1_scene_a_p_i_1_1_behaviors_1_1_prefab_group_behavior.html", null ]
     ] ]
 ];

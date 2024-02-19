@@ -1,36 +1,5 @@
 var class_az_qt_components_1_1_vector_element =
 [
-    [ "Coordinate", "class_az_qt_components_1_1_vector_element.html#a516f93774e5d3b44bff86e89d7db09f5", [
-      [ "X", "class_az_qt_components_1_1_vector_element.html#a516f93774e5d3b44bff86e89d7db09f5a02129bb861061d1a052c592e2dc6b383", null ],
-      [ "Y", "class_az_qt_components_1_1_vector_element.html#a516f93774e5d3b44bff86e89d7db09f5a57cec4137b614c87cb4e24a3d003a3e0", null ],
-      [ "Z", "class_az_qt_components_1_1_vector_element.html#a516f93774e5d3b44bff86e89d7db09f5a21c2e59531c8710156d34a3c30ac81d5", null ],
-      [ "W", "class_az_qt_components_1_1_vector_element.html#a516f93774e5d3b44bff86e89d7db09f5a61e9c06ea9a85a5088a499df6458d276", null ]
-    ] ],
-    [ "VectorElement", "class_az_qt_components_1_1_vector_element.html#aa10b3322bf3220731719863aca3cf8f0", null ],
-    [ "editFieldRect", "class_az_qt_components_1_1_vector_element.html#a4f1d381358811cc4cc0d7f03926c8ece", null ],
-    [ "editingFinished", "class_az_qt_components_1_1_vector_element.html#ad2ead002ba8ecceffef228ebb6dd7ff8", null ],
-    [ "GetLabel", "class_az_qt_components_1_1_vector_element.html#a3a8291815f3a6d70d027de2b61f40670", null ],
-    [ "getLabelWidget", "class_az_qt_components_1_1_vector_element.html#a38df1f47f71058177bbe6a6626725e06", null ],
-    [ "GetSpinBox", "class_az_qt_components_1_1_vector_element.html#a45b984c8961a6fe447cc0319d27cf4df", null ],
-    [ "getSpinBox", "class_az_qt_components_1_1_vector_element.html#a51d2169a0fd4c28a9dcd5f4df2de9d46", null ],
-    [ "GetValue", "class_az_qt_components_1_1_vector_element.html#a819fd11a1a232decd33ee9c4d0a36eee", null ],
-    [ "getValue", "class_az_qt_components_1_1_vector_element.html#a0438a1d79862ef80232fa74db0866520", null ],
-    [ "initStaticVars", "class_az_qt_components_1_1_vector_element.html#a34bed2cfcd5115c3ac70f8f28d142f33", null ],
-    [ "label", "class_az_qt_components_1_1_vector_element.html#a98a926adf3552cab5cad7f9339d31835", null ],
-    [ "layout", "class_az_qt_components_1_1_vector_element.html#a0aea210b4987e36c3fcd05caaa376754", null ],
-    [ "onSpinBoxEditingFinished", "class_az_qt_components_1_1_vector_element.html#a58f474755d0aea3c20570611ea7bbd50", null ],
-    [ "onValueChanged", "class_az_qt_components_1_1_vector_element.html#ac4ef4715ecaac2899919e12c8bc86c05", null ],
-    [ "polish", "class_az_qt_components_1_1_vector_element.html#a83e675ecf29486b73d95151a2524b400", null ],
-    [ "resizeLabel", "class_az_qt_components_1_1_vector_element.html#a00d0e8cded5129b8506fdb7387912e4b", null ],
-    [ "setCoordinate", "class_az_qt_components_1_1_vector_element.html#aef5e497cc87a6fe54b8391d74d84a731", null ],
     [ "SetLabel", "class_az_qt_components_1_1_vector_element.html#aff0db08f671ae08b72c3be27661c8afa", null ],
-    [ "setLabel", "class_az_qt_components_1_1_vector_element.html#aeff2360948c0f9fda46dd9b958e31456", null ],
-    [ "SetValue", "class_az_qt_components_1_1_vector_element.html#a84f06e43dd219f68d07a71a26af9c2c1", null ],
-    [ "setValue", "class_az_qt_components_1_1_vector_element.html#ad0fcd870e11d6ef9767b6c0982a24bf3", null ],
-    [ "sizeHint", "class_az_qt_components_1_1_vector_element.html#a35407231a94f460d0f868a280367c8a9", null ],
-    [ "unpolish", "class_az_qt_components_1_1_vector_element.html#a14ffa0539ac37ef211526a5f0c2accac", null ],
-    [ "valueChanged", "class_az_qt_components_1_1_vector_element.html#a02a34510083dc95d63d880cdd619c0ac", null ],
-    [ "WasValueEditedByUser", "class_az_qt_components_1_1_vector_element.html#a137349b975558bec0468f4d46ffd6fdc", null ],
-    [ "wasValueEditedByUser", "class_az_qt_components_1_1_vector_element.html#a67e41448dc337a6d4403ebf499ce3447", null ],
-    [ "Style", "class_az_qt_components_1_1_vector_element.html#acf788547283b20e9c18be19919f98295", null ]
+    [ "SetValue", "class_az_qt_components_1_1_vector_element.html#a84f06e43dd219f68d07a71a26af9c2c1", null ]
 ];

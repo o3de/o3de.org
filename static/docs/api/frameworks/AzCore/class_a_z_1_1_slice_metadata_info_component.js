@@ -1,32 +1,17 @@
 var class_a_z_1_1_slice_metadata_info_component =
 [
-    [ "EntityIdSet", "class_a_z_1_1_slice_metadata_info_component.html#a932616d9b45418f2136035cc9ba537bb", null ],
     [ "SliceMetadataInfoComponent", "class_a_z_1_1_slice_metadata_info_component.html#a41b7cce39a243261bc013e581d0cf5af", null ],
     [ "~SliceMetadataInfoComponent", "class_a_z_1_1_slice_metadata_info_component.html#a46db43363c67a5ce1fb7b8c7ebbfabe4", null ],
     [ "Activate", "class_a_z_1_1_slice_metadata_info_component.html#a19ab8570dd840de8cf885fc14d6d14b0", null ],
-    [ "AddAssociatedEntity", "class_a_z_1_1_slice_metadata_info_component.html#a2a7ca5de1545166e46355c9a644c7358", null ],
-    [ "AddChildMetadataEntity", "class_a_z_1_1_slice_metadata_info_component.html#ac6d71efbded585885bed91775aef4e2f", null ],
-    [ "AZ_COMPONENT", "class_a_z_1_1_slice_metadata_info_component.html#af894d47888262b80bc8d5be5e049fd8a", null ],
     [ "CheckDependencyCount", "class_a_z_1_1_slice_metadata_info_component.html#a885bdf5b2f44cb1fa3e5c335b7dae473", null ],
     [ "Deactivate", "class_a_z_1_1_slice_metadata_info_component.html#a38a26e3e79248c62ef9fd63642760642", null ],
     [ "ExportComponent", "class_a_z_1_1_slice_metadata_info_component.html#a2a52d390a5fa02d2bc1c8beae41b5636", null ],
-    [ "GetAssociatedEntities", "class_a_z_1_1_slice_metadata_info_component.html#a4154561d3c3f797874e2ee7d6906c90b", null ],
-    [ "GetAssociationCount", "class_a_z_1_1_slice_metadata_info_component.html#abaac854b75c481f3683e55fdc4b76460", null ],
-    [ "GetChildIDs", "class_a_z_1_1_slice_metadata_info_component.html#a05cfe5063c281f1d9e5da7d396f0f8a9", null ],
     [ "GetIncompatibleServices", "class_a_z_1_1_slice_metadata_info_component.html#a2edf114efd79762c0cc00ca147d70b65", null ],
-    [ "GetParentId", "class_a_z_1_1_slice_metadata_info_component.html#a23944f019bf57b8b05b6b515c79102db", null ],
     [ "GetProvidedServices", "class_a_z_1_1_slice_metadata_info_component.html#a072e33f0d9847749ecb66466cd2f304e", null ],
-    [ "IsAssociated", "class_a_z_1_1_slice_metadata_info_component.html#a9169f93d764c848e424f6427438cc918", null ],
-    [ "MarkAsPersistent", "class_a_z_1_1_slice_metadata_info_component.html#ad320383b0d9470ee74ca0f0c20db4fcb", null ],
-    [ "OnEntityDestruction", "class_a_z_1_1_slice_metadata_info_component.html#a5db5bed006ef6c92a691d38ade3896f3", null ],
     [ "Reflect", "class_a_z_1_1_slice_metadata_info_component.html#acea170cf03d451c62be992fb29907d4b", null ],
-    [ "RemoveAssociatedEntity", "class_a_z_1_1_slice_metadata_info_component.html#ae6a8ac33cf0291cf5be365ed53b0fa77", null ],
-    [ "RemoveChildMetadataEntity", "class_a_z_1_1_slice_metadata_info_component.html#a683802393f423080c1fec83a34420ad9", null ],
-    [ "SetParentMetadataEntity", "class_a_z_1_1_slice_metadata_info_component.html#ac4b117fca949c99136186488e0bd9e53", null ],
     [ "m_associatedEntities", "class_a_z_1_1_slice_metadata_info_component.html#a444a691dbdf6851978412d2628eea7fb", null ],
     [ "m_children", "class_a_z_1_1_slice_metadata_info_component.html#a18fa55f7830d9e432445127f50d71814", null ],
     [ "m_notificationBus", "class_a_z_1_1_slice_metadata_info_component.html#a5f3d0170b6d49e97b91459f5441e4f61", null ],
     [ "m_parent", "class_a_z_1_1_slice_metadata_info_component.html#a81c4ff1cc2ad3289d49bfd303764e636", null ],
-    [ "m_persistent", "class_a_z_1_1_slice_metadata_info_component.html#a35a3a18364e9491195aa7aad9a5571f0", null ],
-    [ "SliceComponent", "class_a_z_1_1_slice_metadata_info_component.html#a98e1d4611f8c1c46a9d4478d8f688b9a", null ]
+    [ "m_persistent", "class_a_z_1_1_slice_metadata_info_component.html#a35a3a18364e9491195aa7aad9a5571f0", null ]
 ];

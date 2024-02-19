@@ -6,7 +6,6 @@ var class_ui_layout_fitter_interface =
       [ "VerticalOnly", "class_ui_layout_fitter_interface.html#ac97b77f34842dd75121b22f8c0bdcbb2a73c846160979e101db7746c9257bf39c", null ],
       [ "HorizontalAndVertical", "class_ui_layout_fitter_interface.html#ac97b77f34842dd75121b22f8c0bdcbb2a8a4ec9cfaa0a4f67a270b8741f45184b", null ]
     ] ],
-    [ "~UiLayoutFitterInterface", "class_ui_layout_fitter_interface.html#a9e65832bd11f063797c731bafe58b382", null ],
     [ "GetFitType", "class_ui_layout_fitter_interface.html#a62c16fce590fcf24b908e69d356da173", null ],
     [ "GetHorizontalFit", "class_ui_layout_fitter_interface.html#a6e975325510539635be63828b3f387a2", null ],
     [ "GetVerticalFit", "class_ui_layout_fitter_interface.html#a70c9d978eecb09d77b2172e9e41b2f39", null ],

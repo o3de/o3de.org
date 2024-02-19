@@ -1,10 +1,9 @@
 var class_multiplayer_1_1_i_replication_window =
 [
-    [ "~IReplicationWindow", "class_multiplayer_1_1_i_replication_window.html#ad2b02bfede29da0547acd0432b44bfac", null ],
     [ "AddEntity", "class_multiplayer_1_1_i_replication_window.html#a95c7a58405c7505fb41ecdad67d1a359", null ],
     [ "DebugDraw", "class_multiplayer_1_1_i_replication_window.html#ac7a4f759c8958f18ddee0b122cad7528", null ],
     [ "GetMaxProxyEntityReplicatorSendCount", "class_multiplayer_1_1_i_replication_window.html#a4829ec07e8843aefb37cd64ec8d5bca5", null ],
-    [ "GetReplicationSet", "class_multiplayer_1_1_i_replication_window.html#aa610cd2dccc82c309221e453e458a0fe", null ],
+    [ "GetReplicationSet", "class_multiplayer_1_1_i_replication_window.html#acf2ebd6798a8e6ab77246e35141c6fe3", null ],
     [ "IsInWindow", "class_multiplayer_1_1_i_replication_window.html#a597744e737f04bb7c7a5cfe05be7005a", null ],
     [ "RemoveEntity", "class_multiplayer_1_1_i_replication_window.html#ae2a75634646dbc6d4aa2dc8a913781d3", null ],
     [ "ReplicationSetUpdateReady", "class_multiplayer_1_1_i_replication_window.html#a084ff215e77b7d06268b8b244035b5d3", null ],

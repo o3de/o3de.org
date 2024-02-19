@@ -1,6 +1,5 @@
 var class_a_z_1_1_vertex_container_notification_interface =
 [
-    [ "~VertexContainerNotificationInterface", "class_a_z_1_1_vertex_container_notification_interface.html#a4c7a97743e1d892dc418aeee7aae42e9", null ],
     [ "OnVertexAdded", "class_a_z_1_1_vertex_container_notification_interface.html#a5d0fab95e9357cf4c2a345a71b66922a", null ],
     [ "OnVertexRemoved", "class_a_z_1_1_vertex_container_notification_interface.html#a4e673c66143104cae39edce42c343738", null ],
     [ "OnVertexUpdated", "class_a_z_1_1_vertex_container_notification_interface.html#a168425fc2b9b51f342277eb010bc4e69", null ],

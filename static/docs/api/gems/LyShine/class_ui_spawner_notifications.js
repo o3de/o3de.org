@@ -1,6 +1,5 @@
 var class_ui_spawner_notifications =
 [
-    [ "~UiSpawnerNotifications", "class_ui_spawner_notifications.html#aa01b47b7853ea9bfa191e03fe8dba17d", null ],
     [ "OnEntitiesSpawned", "class_ui_spawner_notifications.html#a7a1a87a891a794c61db6ad0adfca5020", null ],
     [ "OnEntitySpawned", "class_ui_spawner_notifications.html#af62731fda146d013d301eba1b63cf929", null ],
     [ "OnSpawnBegin", "class_ui_spawner_notifications.html#abb649a213c446781fc81db9ce9a4ec92", null ],

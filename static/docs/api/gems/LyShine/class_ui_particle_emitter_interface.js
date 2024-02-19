@@ -1,7 +1,7 @@
 var class_ui_particle_emitter_interface =
 [
-    [ "ParticleColorKeyframe", "struct_ui_particle_emitter_interface_1_1_particle_color_keyframe.html", "struct_ui_particle_emitter_interface_1_1_particle_color_keyframe" ],
-    [ "ParticleFloatKeyframe", "struct_ui_particle_emitter_interface_1_1_particle_float_keyframe.html", "struct_ui_particle_emitter_interface_1_1_particle_float_keyframe" ],
+    [ "ParticleColorKeyframe", "struct_ui_particle_emitter_interface_1_1_particle_color_keyframe.html", null ],
+    [ "ParticleFloatKeyframe", "struct_ui_particle_emitter_interface_1_1_particle_float_keyframe.html", null ],
     [ "EmitShape", "class_ui_particle_emitter_interface.html#aa72803d1752881f33b7981e2bdd0d64e", [
       [ "Point", "class_ui_particle_emitter_interface.html#aa72803d1752881f33b7981e2bdd0d64ea2a3cd5946cfd317eb99c3d32e35e2d4c", null ],
       [ "Circle", "class_ui_particle_emitter_interface.html#aa72803d1752881f33b7981e2bdd0d64ea30954d90085f6eaaf5817917fc5fecb3", null ],
@@ -21,7 +21,6 @@ var class_ui_particle_emitter_interface =
       [ "Linear", "class_ui_particle_emitter_interface.html#a5dc8f2d7ac2a082d8423d29385d00feda32a843da6ea40ab3b17a3421ccdf671b", null ],
       [ "Step", "class_ui_particle_emitter_interface.html#a5dc8f2d7ac2a082d8423d29385d00feda48c7c41b72e1d678923ce3571aa65b2d", null ]
     ] ],
-    [ "~UiParticleEmitterInterface", "class_ui_particle_emitter_interface.html#acb4ad715fdcb901eb0fc5dbaeac19917", null ],
     [ "GetEmitAngle", "class_ui_particle_emitter_interface.html#aac83b818fca0b83f51c36ea7fbb1ed9c", null ],
     [ "GetEmitAngleVariation", "class_ui_particle_emitter_interface.html#a100953bfbdc1f1df68fa69ed2b17c432", null ],
     [ "GetEmitterLifetime", "class_ui_particle_emitter_interface.html#af62c1fd33e75d2145768858b1b7a7066", null ],
@@ -70,7 +69,7 @@ var class_ui_particle_emitter_interface =
     [ "GetParticleWidth", "class_ui_particle_emitter_interface.html#a23c0fb427b5c284dcbdb59f843f7deca", null ],
     [ "GetParticleWidthVariation", "class_ui_particle_emitter_interface.html#ab48835caeb97bb0cc1a050dfbdc0e057", null ],
     [ "GetRandomSeed", "class_ui_particle_emitter_interface.html#a6d43699e87db29bc827470330191af0a", null ],
-    [ "GetSprite", "class_ui_particle_emitter_interface.html#ab0af03c036b8baa30505ea9eb258ae49", null ],
+    [ "GetSprite", "class_ui_particle_emitter_interface.html#a00e267e528a94642a9a6f50fbb7ad212", null ],
     [ "GetSpritePathname", "class_ui_particle_emitter_interface.html#af6e265f40d23b84b163c3c201f1055a4", null ],
     [ "GetSpriteSheetCellEndIndex", "class_ui_particle_emitter_interface.html#af4c50b504e2f8f7fe04600c4e12297e8", null ],
     [ "GetSpriteSheetCellIndex", "class_ui_particle_emitter_interface.html#adcbe4a9431453b6c3218b57aac6dffbe", null ],

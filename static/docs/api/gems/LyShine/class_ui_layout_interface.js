@@ -1,6 +1,6 @@
 var class_ui_layout_interface =
 [
-    [ "Padding", "struct_ui_layout_interface_1_1_padding.html", "struct_ui_layout_interface_1_1_padding" ],
+    [ "Padding", "struct_ui_layout_interface_1_1_padding.html", null ],
     [ "HorizontalOrder", "class_ui_layout_interface.html#ac7d6b7e90bce758b2f0ccaab5a2a7478", [
       [ "LeftToRight", "class_ui_layout_interface.html#ac7d6b7e90bce758b2f0ccaab5a2a7478ad1e80c506f4c89e3c4fb1c1b4867a03c", null ],
       [ "RightToLeft", "class_ui_layout_interface.html#ac7d6b7e90bce758b2f0ccaab5a2a7478ab7b0ea3028791689ea070674776855e2", null ]
@@ -9,7 +9,6 @@ var class_ui_layout_interface =
       [ "TopToBottom", "class_ui_layout_interface.html#a6301a92292388eb56be62d612ad3add0af2b1a19a8d0f523d042f9ede79a80804", null ],
       [ "BottomToTop", "class_ui_layout_interface.html#a6301a92292388eb56be62d612ad3add0a63dc349be51108dcfd197c7ab02b486a", null ]
     ] ],
-    [ "~UiLayoutInterface", "class_ui_layout_interface.html#a9adac5eda9f5143f52b6f37ea6124e9c", null ],
     [ "GetHorizontalChildAlignment", "class_ui_layout_interface.html#a09ca6f976e4c9a0bc09ba7904b89e6e1", null ],
     [ "GetIgnoreDefaultLayoutCells", "class_ui_layout_interface.html#a9c30790352d246f40d3fbd5e9d812858", null ],
     [ "GetSizeToFitChildElements", "class_ui_layout_interface.html#af7786be302125405a5e700c69a90a15b", null ],

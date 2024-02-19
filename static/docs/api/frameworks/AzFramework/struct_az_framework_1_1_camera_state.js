@@ -1,8 +1,7 @@
 var struct_az_framework_1_1_camera_state =
 [
-    [ "Reflect", "struct_az_framework_1_1_camera_state.html#aaef63f01422072b908d268d577fcd677", null ],
-    [ "VerticalFovRadian", "struct_az_framework_1_1_camera_state.html#a71ed146db8a66329bd4ff808344e0d29", null ],
-    [ "Zoom", "struct_az_framework_1_1_camera_state.html#a261fbea52d053acc3df4b9b0ec3a60b1", null ],
+    [ "VerticalFovRadian", "struct_az_framework_1_1_camera_state.html#a1e5db8a903c3f3d7fff76981fdc13a6c", null ],
+    [ "Zoom", "struct_az_framework_1_1_camera_state.html#a0b1f3b7c587ce266ce665f49cc8d52c5", null ],
     [ "m_farClip", "struct_az_framework_1_1_camera_state.html#ab8d0e0e0a4750509328077c25b53761a", null ],
     [ "m_forward", "struct_az_framework_1_1_camera_state.html#a9f0cd8dec9e72a7990405ebeb7f18824", null ],
     [ "m_fovOrZoom", "struct_az_framework_1_1_camera_state.html#a9e40146ce226d7b630ec8287ea06c89d", null ],

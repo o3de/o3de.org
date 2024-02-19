@@ -1,6 +1,5 @@
 var class_atom_tools_framework_1_1_atom_tools_document_system_requests =
 [
-    [ "BusIdType", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a3658d8b3d2ea246d249b9f2dc6e6e7e7", null ],
     [ "AddRecentFilePath", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a4734bae58cd1e26a9363ed52174cebcf", null ],
     [ "ClearRecentFilePaths", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a06c37cacfc0ca90b7aa63675c5948eaa", null ],
     [ "CloseAllDocuments", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a1504bebbf7c24ff387ae982c123ad924", null ],
@@ -12,8 +11,8 @@ var class_atom_tools_framework_1_1_atom_tools_document_system_requests =
     [ "CreateDocumentFromTypeName", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aad7f78058cdc7837b85d52460d2209ec", null ],
     [ "DestroyDocument", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a3256dab3f1c054ddb76d4d33ca597b40", null ],
     [ "GetDocumentCount", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ae28ca4bd616a39687b73ed33487dda02", null ],
-    [ "GetRecentFilePaths", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#adccee16a31737a70c2578cca13bfbfe7", null ],
-    [ "GetRegisteredDocumentTypes", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aa8d357eb7e644409177824f873279113", null ],
+    [ "GetRecentFilePaths", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#adfc51a1e0a7fcef934584cbc5e322649", null ],
+    [ "GetRegisteredDocumentTypes", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a4297e7cc04602aead11f88f691fd11bd", null ],
     [ "IsDocumentOpen", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a6493ac8084aca8d2a98ba14297efe3dc", null ],
     [ "OpenDocument", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ad41a44da41b7efce1391869df434493a", null ],
     [ "QueueReopenModifiedDocuments", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ae338eb34c0492f02400be543eab7593f", null ],
@@ -24,7 +23,5 @@ var class_atom_tools_framework_1_1_atom_tools_document_system_requests =
     [ "SaveDocument", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ab0ed8ca10804446b9fa0feea8f035cf2", null ],
     [ "SaveDocumentAsChild", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aa2f3b1d1c7de2a29d54024a77408a6c6", null ],
     [ "SaveDocumentAsCopy", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#af5ce85ded2fcf91dd943fc9aad9d3c17", null ],
-    [ "SetRecentFilePaths", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ab4986e370376ff6c2ce47634a9258846", null ],
-    [ "AddressPolicy", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#aa7ea00de3b5cdfc6009774f8a2d9ef35", null ],
-    [ "HandlerPolicy", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a4d9eee192d9391901dbe4cbcbfe5811f", null ]
+    [ "SetRecentFilePaths", "class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#ab4986e370376ff6c2ce47634a9258846", null ]
 ];

@@ -1,32 +1,4 @@
 var class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor =
 [
-    [ "HairFeatureProcessor", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a2cf93c9a5863a8ad77d350b6af9fe87c", null ],
-    [ "~HairFeatureProcessor", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#ad19457283c91a70dfc8c52b499a1d6f9", null ],
-    [ "Activate", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a99995a3fa4217b25659ccd7057b827b6", null ],
-    [ "AddHairRenderObject", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#ad840551e920de42f2989c73165d7096e", null ],
-    [ "AddRenderPasses", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a461aab8c98cb0923c3b9796f0159876b", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a7521ac829fe31836db078addd8c4e31f", null ],
-    [ "CreatePerPassResources", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#ada209ba624fded8d7675ce000979e5e4", null ],
-    [ "Deactivate", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a058fbb59ed27514cce07865086a9dd1d", null ],
-    [ "FillHairMaterialsArray", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a0332d9c8b6fa2b0ee16d1bbded0b117d", null ],
-    [ "ForceRebuildRenderData", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a683b5bef5a127b7ea1fb0bf0f9e6b0f1", null ],
-    [ "GetGeometryRasterShader", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a84726739c4b12d6d7210979798ff97ad", null ],
-    [ "GetHairGlobalSettings", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a0d72878d5426980923aa0d64eafbbb9c", null ],
-    [ "GetHairPPLLRasterPass", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a0b27475dfe9959e0ca47e59db3cd3e2d", null ],
-    [ "GetHairSkinningComputegPass", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a1c99cc7512d574822738526412c35d20", null ],
-    [ "GetMaterialsArray", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a60596617e214dc89f08859db28cbeb7b", null ],
-    [ "GetPerPixelListBuffer", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#aa31603ca5351eb10fc7e783d7f49f1fe", null ],
-    [ "GetTickOrder", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a94a454c75c3ab91332e308c33e1b813a", null ],
-    [ "Init", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#acaf9361713352beb94789dc9b9a9d6a3", null ],
-    [ "IsInitialized", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a7c6b2e2e93cc0ac3feffc53ce04943e0", null ],
-    [ "OnRenderPipelineChanged", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a8c159032bb186d3ef539ac9f2b9a3c4f", null ],
-    [ "OnTick", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a225de085e8825b64b43f6cafddbceea4", null ],
-    [ "Reflect", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#aaa3e113965dd000014de9f8bad95896d", null ],
-    [ "RemoveHairRenderObject", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a292622a85921cf9a9906e3d4410094ea", null ],
-    [ "Render", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a77c6d96023f64aa01f98b1c4a45f7f9b", null ],
-    [ "SetAddDispatchEnable", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a2de622be8bd02d726365b0d4425a5da4", null ],
-    [ "SetEnable", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#ab896d238dab7016d24d1a5e99349fd30", null ],
-    [ "SetHairGlobalSettings", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a1145159a67656ebf6bea01fc325a1908", null ],
-    [ "Simulate", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a2cb9e63788c87ca773cb2da6d699abc3", null ],
-    [ "UpdateHairSkinning", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a0ad8a982a4aa5094f47e51d665a93238", null ]
+    [ "FillHairMaterialsArray", "class_a_z_1_1_render_1_1_hair_1_1_hair_feature_processor.html#a0332d9c8b6fa2b0ee16d1bbded0b117d", null ]
 ];

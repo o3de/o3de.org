@@ -1,6 +1,5 @@
 var class_a_z_1_1_r_p_i_1_1_viewport_context_notifications =
 [
-    [ "~ViewportContextNotifications", "class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#a6b8e23288544221adb67c1e26d44b9a2", null ],
     [ "OnRenderTick", "class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#a76236ca0a88f3bb4b4e1ee31bef51c58", null ],
     [ "OnViewportDefaultViewChanged", "class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#ac287a2dd905a7e6139787412aba7656f", null ],
     [ "OnViewportDpiScalingChanged", "class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#a42b9b4bdd61f6acdd0a96d05d1391897", null ],

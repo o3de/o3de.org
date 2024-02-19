@@ -1,25 +1,7 @@
 var class_gestures_1_1_recognizer_click_or_tap =
 [
-    [ "Config", "struct_gestures_1_1_recognizer_click_or_tap_1_1_config.html", "struct_gestures_1_1_recognizer_click_or_tap_1_1_config" ],
-    [ "RecognizerClickOrTap", "class_gestures_1_1_recognizer_click_or_tap.html#a3bc1bd58bfd2648577eabdc956ca5479", null ],
-    [ "~RecognizerClickOrTap", "class_gestures_1_1_recognizer_click_or_tap.html#a372907382a6924243483d02cf29de9ab", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_gestures_1_1_recognizer_click_or_tap.html#a83a11260cce2275495a951866c6e9a35", null ],
-    [ "AZ_RTTI", "class_gestures_1_1_recognizer_click_or_tap.html#aa6ad8c5bd5ad5f5192b4c8569105242e", null ],
-    [ "GetConfig", "class_gestures_1_1_recognizer_click_or_tap.html#acf62530c10dd48f0a12ce229ce9a3bb9", null ],
-    [ "GetConfig", "class_gestures_1_1_recognizer_click_or_tap.html#a0deeb19963f49f0999e0450db317aeb3", null ],
-    [ "GetDefaultConfig", "class_gestures_1_1_recognizer_click_or_tap.html#ad5395cfd42de793a4b032a7282143341", null ],
-    [ "GetDefaultMaxPixelsBetweenClicksOrTaps", "class_gestures_1_1_recognizer_click_or_tap.html#ade60bd6f159781be01ee516001408616", null ],
-    [ "GetDefaultMaxPixelsMoved", "class_gestures_1_1_recognizer_click_or_tap.html#a9aa6656f56e62eda5d4543c8601c8e32", null ],
-    [ "GetDefaultMaxSecondsBetweenClicksOrTaps", "class_gestures_1_1_recognizer_click_or_tap.html#a8a0f9ab6a2a5490ecfd36cd27cba0245", null ],
-    [ "GetDefaultMaxSecondsHeld", "class_gestures_1_1_recognizer_click_or_tap.html#a353628cf3ca24a38a8aebabdf6e39c7a", null ],
-    [ "GetDefaultMinClicksOrTaps", "class_gestures_1_1_recognizer_click_or_tap.html#af2916c820807e7b99a2a44ee5c2f35a9", null ],
-    [ "GetDefaultPointerIndex", "class_gestures_1_1_recognizer_click_or_tap.html#a209619b7f2e5b636b6cc128b680736eb", null ],
-    [ "GetDefaultPriority", "class_gestures_1_1_recognizer_click_or_tap.html#a782c9e1db57ec5028d3a33b22b11422c", null ],
-    [ "GetEndPosition", "class_gestures_1_1_recognizer_click_or_tap.html#a43e1a6e7078ff7f0e8551e32eb28fec8", null ],
-    [ "GetPriority", "class_gestures_1_1_recognizer_click_or_tap.html#a90f5dc696c7905c8ddd2cc74a6ba8b06", null ],
-    [ "GetStartPosition", "class_gestures_1_1_recognizer_click_or_tap.html#a294dc821d3a6c2e70d6db248f07cd3c9", null ],
+    [ "Config", "struct_gestures_1_1_recognizer_click_or_tap_1_1_config.html", null ],
     [ "OnDownEvent", "class_gestures_1_1_recognizer_click_or_tap.html#aad2c311357cd53e66ffcc534bb4a1096", null ],
     [ "OnPressedEvent", "class_gestures_1_1_recognizer_click_or_tap.html#a1621abb6213d7bca71fc8f492d066739", null ],
-    [ "OnReleasedEvent", "class_gestures_1_1_recognizer_click_or_tap.html#a75fb4f2b218f93c95fda8eaaa6b9d637", null ],
-    [ "SetConfig", "class_gestures_1_1_recognizer_click_or_tap.html#afa10d7302035ea0d567b07794e4b4605", null ]
+    [ "OnReleasedEvent", "class_gestures_1_1_recognizer_click_or_tap.html#a75fb4f2b218f93c95fda8eaaa6b9d637", null ]
 ];

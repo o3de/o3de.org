@@ -1,6 +1,5 @@
 var struct_az_framework_1_1_viewport_controller_update_event =
 [
-    [ "ViewportControllerUpdateEvent", "struct_az_framework_1_1_viewport_controller_update_event.html#af76a71469d20589e98e353df9fdc392e", null ],
     [ "m_deltaTime", "struct_az_framework_1_1_viewport_controller_update_event.html#accbc21aa045bffb89c93dcce287cad8a", null ],
     [ "m_priority", "struct_az_framework_1_1_viewport_controller_update_event.html#abab363d78cae53fcfc39664c8796160c", null ],
     [ "m_time", "struct_az_framework_1_1_viewport_controller_update_event.html#afbf248440dc41a055566faabf1aa237b", null ],

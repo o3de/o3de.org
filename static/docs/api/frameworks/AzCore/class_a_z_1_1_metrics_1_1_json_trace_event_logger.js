@@ -1,11 +1,6 @@
 var class_a_z_1_1_metrics_1_1_json_trace_event_logger =
 [
-    [ "JsonEventString", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#aec21617e483933148b83a2d45887c8aa", null ],
-    [ "JsonTraceEventLogger", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#ac8a3d7724c94fb80b1482c6d87edf225", null ],
-    [ "JsonTraceEventLogger", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a89a620c9a794a3eada1026ea5af745fe", null ],
     [ "JsonTraceEventLogger", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a11c32ebd169b1dec151f51b67d467515", null ],
-    [ "JsonTraceEventLogger", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#ae18a4f106b8b0335565ddb868c88fe2b", null ],
-    [ "~JsonTraceEventLogger", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a6ba3811b220860a476bffc27e228dbf8", null ],
     [ "Complete", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a5a5a98841b617b55b63912f7f6c0064d", null ],
     [ "Flush", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a421d109c8c40d3ec465866c43dcc1c7c", null ],
     [ "FlushRequest", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a68a64e95e12a4c25efc11a1ffa2b2533", null ],
@@ -24,11 +19,7 @@ var class_a_z_1_1_metrics_1_1_json_trace_event_logger =
     [ "Start", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#aed2c0dd35d9df370f35b71b07b6eb884", null ],
     [ "m_active", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a21c01ebcca169239551cec491c53e95c", null ],
     [ "m_eventCount", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a8f33559509f9db5987802d42270f9e69", null ],
-    [ "m_flushToStreamMutex", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#abb2273104f59dc9e1262201979454fbc", null ],
     [ "m_name", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a130196e1e065b615385f40579bc43005", null ],
     [ "m_prependComma", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a4aa129b13f6871f8a56dc7db12a43db5", null ],
-    [ "m_settingsHandler", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a9e29092dae4cc4e404f66225e13a4ff6", null ],
-    [ "m_settingsRegistry", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a6493c875b41639d898ec2c1bf22be908", null ],
-    [ "m_stream", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a0bcfe19539de11835ed7926902104262", null ],
-    [ "MaxEventJsonStringSize", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a80196e1a3f74e888c9bdf7bd8d87644d", null ]
+    [ "m_settingsRegistry", "class_a_z_1_1_metrics_1_1_json_trace_event_logger.html#a6493c875b41639d898ec2c1bf22be908", null ]
 ];

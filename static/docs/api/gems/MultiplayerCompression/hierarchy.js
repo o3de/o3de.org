@@ -1,12 +1,12 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "MultiplayerCompression::MultiplayerCompressionSystemComponent", "class_multiplayer_compression_1_1_multiplayer_compression_system_component.html", null ]
     ] ],
-    [ "ICompressor", null, [
+    [ "AzNetworking::ICompressor", null, [
       [ "MultiplayerCompression::LZ4Compressor", "class_multiplayer_compression_1_1_l_z4_compressor.html", null ]
     ] ],
-    [ "ICompressorFactory", null, [
+    [ "AzNetworking::ICompressorFactory", null, [
       [ "MultiplayerCompression::MultiplayerCompressionFactory", "class_multiplayer_compression_1_1_multiplayer_compression_factory.html", null ]
     ] ]
 ];

@@ -1,13 +1,13 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "Twitch::TwitchSystemComponent", "class_twitch_1_1_twitch_system_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "Twitch::TwitchNotifications", "class_twitch_1_1_twitch_notifications.html", null ],
       [ "Twitch::TwitchRequests", "class_twitch_1_1_twitch_requests.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::SystemTickBus::Handler", null, [
       [ "Twitch::TwitchSystemComponent", "class_twitch_1_1_twitch_system_component.html", null ]
     ] ],
     [ "Twitch::ChannelInfo", "struct_twitch_1_1_channel_info.html", null ],
@@ -44,7 +44,7 @@ var hierarchy =
     [ "Twitch::VideoChannelInfo", "struct_twitch_1_1_video_channel_info.html", null ],
     [ "Twitch::VideoInfo", "struct_twitch_1_1_video_info.html", null ],
     [ "Twitch::VideoReturn", "struct_twitch_1_1_video_return.html", null ],
-    [ "Handler", null, [
+    [ "TwitchRequestBus::Handler", null, [
       [ "Twitch::TwitchSystemComponent", "class_twitch_1_1_twitch_system_component.html", null ]
     ] ]
 ];

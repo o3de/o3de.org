@@ -4,7 +4,6 @@ var class_save_data_1_1_save_data_system_component =
     [ "SaveDataSystemComponent", "class_save_data_1_1_save_data_system_component.html#a06e223720e33eae064075e92d8c49280", null ],
     [ "~SaveDataSystemComponent", "class_save_data_1_1_save_data_system_component.html#a5df0a9d58eaadb4103f35152a0b64ac8", null ],
     [ "Activate", "class_save_data_1_1_save_data_system_component.html#ab05d4a2dede7e55fb16caccaa0199078", null ],
-    [ "AZ_COMPONENT", "class_save_data_1_1_save_data_system_component.html#ae9aeb718a06369d4b2768f720fccc8da", null ],
     [ "Deactivate", "class_save_data_1_1_save_data_system_component.html#ac63a5d5b241cca581841c23848a24e65", null ],
     [ "GetIncompatibleServices", "class_save_data_1_1_save_data_system_component.html#aed3f537e7da1902de3d7ae95a20d076f", null ],
     [ "GetProvidedServices", "class_save_data_1_1_save_data_system_component.html#a4fa9a1d806b38d69bff9f639b66c0127", null ],

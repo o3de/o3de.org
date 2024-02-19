@@ -1,31 +1,6 @@
 var class_lmbr_central_1_1_quad_shape =
 [
-    [ "QuadShape", "class_lmbr_central_1_1_quad_shape.html#a20055a02ac91d9241f8c2ec4e6d9a37e", null ],
-    [ "Activate", "class_lmbr_central_1_1_quad_shape.html#a96c9b0896f3259cb3bc7e66f994fa82b", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_lmbr_central_1_1_quad_shape.html#a458ebf5954dbcaa45b047b724390b5d8", null ],
-    [ "AZ_RTTI", "class_lmbr_central_1_1_quad_shape.html#a9403b22c6850ba5d92d36838474534a2", null ],
-    [ "Deactivate", "class_lmbr_central_1_1_quad_shape.html#aa321f869193f86fde7cf4322efdeebda", null ],
-    [ "DistanceSquaredFromPoint", "class_lmbr_central_1_1_quad_shape.html#a43d4ee4479e56fd99a34660e84ed77ab", null ],
-    [ "GetCurrentNonUniformScale", "class_lmbr_central_1_1_quad_shape.html#a44df0dc32f1b14f84e7de94b0899a864", null ],
-    [ "GetCurrentTransform", "class_lmbr_central_1_1_quad_shape.html#ad25c27db063423bcd607fd22c19ef1ec", null ],
-    [ "GetEncompassingAabb", "class_lmbr_central_1_1_quad_shape.html#a8221dcfb5f3f7ba3b11ea8c5f75dbd70", null ],
-    [ "GetLocalSpaceCorners", "class_lmbr_central_1_1_quad_shape.html#aa1aa168a9ca6486db029a3f6d9a57198", null ],
     [ "GetQuadConfiguration", "class_lmbr_central_1_1_quad_shape.html#a80f526db11bc378774b5c112c957140f", null ],
-    [ "GetQuadConfiguration", "class_lmbr_central_1_1_quad_shape.html#a96ae163b408904f326b46ebce30c838c", null ],
-    [ "GetQuadHeight", "class_lmbr_central_1_1_quad_shape.html#a108afd27313d6883b6a1fc184a752549", null ],
-    [ "GetQuadOrientation", "class_lmbr_central_1_1_quad_shape.html#af90c6316957e00f4c5f182c63eb1aca3", null ],
-    [ "GetQuadWidth", "class_lmbr_central_1_1_quad_shape.html#af5ceb8b4a52f54dc3407b21197dfc85b", null ],
     [ "GetShapeType", "class_lmbr_central_1_1_quad_shape.html#aa18ee701c1c1c83dba0c0f646b8400c4", null ],
-    [ "GetTransformAndLocalBounds", "class_lmbr_central_1_1_quad_shape.html#a96832175d305563e4cce20428a92a92c", null ],
-    [ "IntersectRay", "class_lmbr_central_1_1_quad_shape.html#a96d495062cb3f6f0cb5d828caa48ec71", null ],
-    [ "InvalidateCache", "class_lmbr_central_1_1_quad_shape.html#a503b5fe51bc0a0ec2e47f080d44424a2", null ],
-    [ "IsPointInside", "class_lmbr_central_1_1_quad_shape.html#a366bd95ff002657e3603c9c3522fca29", null ],
-    [ "ModifyShapeComponent", "class_lmbr_central_1_1_quad_shape.html#ab28f8cc500cd09fb687c8862d5260582", null ],
-    [ "OnNonUniformScaleChanged", "class_lmbr_central_1_1_quad_shape.html#a6488d9b31de77e984cd8b1b022bee0f3", null ],
-    [ "OnTransformChanged", "class_lmbr_central_1_1_quad_shape.html#ac4435443e846d0a52e73e9c652b13a09", null ],
-    [ "Reflect", "class_lmbr_central_1_1_quad_shape.html#a433c2a030d55c661c51a7b156469a3cf", null ],
-    [ "SetQuadConfiguration", "class_lmbr_central_1_1_quad_shape.html#ae3a51c6b8f94f9abf06cd22903ca2c4d", null ],
-    [ "SetQuadHeight", "class_lmbr_central_1_1_quad_shape.html#a90dc4e07fc32af15f86fb63734922883", null ],
-    [ "SetQuadWidth", "class_lmbr_central_1_1_quad_shape.html#a7efff4a1a442136c88507d987503161a", null ],
-    [ "EditorQuadShapeComponent", "class_lmbr_central_1_1_quad_shape.html#a5e16c073a0c257cd86c7919cf70f7635", null ]
+    [ "OnTransformChanged", "class_lmbr_central_1_1_quad_shape.html#ac4435443e846d0a52e73e9c652b13a09", null ]
 ];

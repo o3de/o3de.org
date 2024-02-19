@@ -1,14 +1,14 @@
 var hierarchy =
 [
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "GameStateSamples::GameOptionRequests", "class_game_state_samples_1_1_game_option_requests.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::ApplicationLifecycleEvents::Bus::Handler", null, [
       [ "GameStateSamples::GameStateLevelRunning", "class_game_state_samples_1_1_game_state_level_running.html", null ],
       [ "GameStateSamples::GameStateLocalUserLobby", "class_game_state_samples_1_1_game_state_local_user_lobby.html", null ],
       [ "GameStateSamples::GameStatePrimaryUserMonitor", "class_game_state_samples_1_1_game_state_primary_user_monitor.html", null ]
     ] ],
-    [ "InputChannelEventListener", null, [
+    [ "AzFramework::InputChannelEventListener", null, [
       [ "GameStateSamples::GameStateLevelPaused", "class_game_state_samples_1_1_game_state_level_paused.html", null ],
       [ "GameStateSamples::GameStateLevelRunning", "class_game_state_samples_1_1_game_state_level_running.html", null ],
       [ "GameStateSamples::GameStateLocalUserLobby", "class_game_state_samples_1_1_game_state_local_user_lobby.html", null ],
@@ -16,15 +16,15 @@ var hierarchy =
       [ "GameStateSamples::GameStatePrimaryUserSelection", "class_game_state_samples_1_1_game_state_primary_user_selection.html", null ],
       [ "GameStateSamples::GameStatePrimaryUserSignedOut", "class_game_state_samples_1_1_game_state_primary_user_signed_out.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::InputDeviceNotificationBus::Handler", null, [
       [ "GameStateSamples::GameStateLocalUserLobby", "class_game_state_samples_1_1_game_state_local_user_lobby.html", null ],
       [ "GameStateSamples::GameStatePrimaryControllerDisconnected", "class_game_state_samples_1_1_game_state_primary_controller_disconnected.html", null ],
       [ "GameStateSamples::GameStatePrimaryUserMonitor", "class_game_state_samples_1_1_game_state_primary_user_monitor.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GameState::GameStateNotificationBus::Handler", null, [
       [ "GameStateSamples::GameStatePrimaryUserMonitor", "class_game_state_samples_1_1_game_state_primary_user_monitor.html", null ]
     ] ],
-    [ "IGameState", null, [
+    [ "GameState::IGameState", null, [
       [ "GameStateSamples::GameStateLevelLoading", "class_game_state_samples_1_1_game_state_level_loading.html", null ],
       [ "GameStateSamples::GameStateLevelPaused", "class_game_state_samples_1_1_game_state_level_paused.html", null ],
       [ "GameStateSamples::GameStateLevelRunning", "class_game_state_samples_1_1_game_state_level_running.html", null ],
@@ -42,7 +42,7 @@ var hierarchy =
       [ "GameStateSamples::GameStateLevelRunning", "class_game_state_samples_1_1_game_state_level_running.html", null ],
       [ "GameStateSamples::GameStateMainMenu", "class_game_state_samples_1_1_game_state_main_menu.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "LocalUser::LocalUserNotificationBus::Handler", null, [
       [ "GameStateSamples::GameStateLocalUserLobby", "class_game_state_samples_1_1_game_state_local_user_lobby.html", null ],
       [ "GameStateSamples::GameStatePrimaryUserMonitor", "class_game_state_samples_1_1_game_state_primary_user_monitor.html", null ],
       [ "GameStateSamples::GameStatePrimaryUserSignedOut", "class_game_state_samples_1_1_game_state_primary_user_signed_out.html", null ]

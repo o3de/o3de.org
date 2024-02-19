@@ -7,6 +7,5 @@ var struct_a_z_1_1_render_1_1_fast_depth_aware_blur_pass_constants =
     [ "m_depthFalloffThreshold", "struct_a_z_1_1_render_1_1_fast_depth_aware_blur_pass_constants.html#a9e66541095cced85a7f438f5bc82621f", null ],
     [ "m_halfPixelSize", "struct_a_z_1_1_render_1_1_fast_depth_aware_blur_pass_constants.html#a76a835687f8b081e84deaabcb749adfa", null ],
     [ "m_outputSize", "struct_a_z_1_1_render_1_1_fast_depth_aware_blur_pass_constants.html#a0674ba13a618dc038d2c3567f99ee90f", null ],
-    [ "m_pixelSize", "struct_a_z_1_1_render_1_1_fast_depth_aware_blur_pass_constants.html#aba6213c1498be8c35f9df7cfd4caae33", null ],
-    [ "PADDING", "struct_a_z_1_1_render_1_1_fast_depth_aware_blur_pass_constants.html#ac12de46092b1eafc8e76c6ba64568961", null ]
+    [ "m_pixelSize", "struct_a_z_1_1_render_1_1_fast_depth_aware_blur_pass_constants.html#aba6213c1498be8c35f9df7cfd4caae33", null ]
 ];

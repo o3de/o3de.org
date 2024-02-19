@@ -11,7 +11,7 @@ var class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool =
     [ "DetachReadWriteBuffer", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#a09a0896a690027ce4c6ffb607f3cb15d", null ],
     [ "DetachReadWriteImage", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#a4aea4ca9c760c416ff511cf0d80721ce", null ],
     [ "GarbageCollect", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#ad0f5fe776c70cd76b81ef0f819b5acf9", null ],
+    [ "GetBindlessSrgBindingSlot", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#ac234522c2d60116d564988a1b7201ee7", null ],
     [ "GetNativeDescriptorSet", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#aa27e660263dfea92229f533999d923e5", null ],
-    [ "Init", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#ab87384195de2dd5dd371ccf18e7612d0", null ],
-    [ "Shutdown", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#a4ad208523edfb3ea1c882f96e0576b6f", null ]
+    [ "IsInitialized", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#a5d04beba59a03a2740fe23ad7b8fb190", null ]
 ];

@@ -1,26 +1,17 @@
 var class_a_z_1_1_stable_dynamic_array =
 [
-    [ "const_iterator", "class_a_z_1_1_stable_dynamic_array_1_1const__iterator.html", "class_a_z_1_1_stable_dynamic_array_1_1const__iterator" ],
+    [ "const_iterator", "class_a_z_1_1_stable_dynamic_array_1_1const__iterator.html", null ],
     [ "iterator", "class_a_z_1_1_stable_dynamic_array_1_1iterator.html", "class_a_z_1_1_stable_dynamic_array_1_1iterator" ],
+    [ "IteratorRange", "struct_a_z_1_1_stable_dynamic_array_1_1_iterator_range.html", null ],
     [ "Page", "struct_a_z_1_1_stable_dynamic_array_1_1_page.html", "struct_a_z_1_1_stable_dynamic_array_1_1_page" ],
-    [ "pageIterator", "class_a_z_1_1_stable_dynamic_array_1_1page_iterator.html", "class_a_z_1_1_stable_dynamic_array_1_1page_iterator" ],
-    [ "Handle", "class_a_z_1_1_stable_dynamic_array.html#ae36879e37ee3f2a081511cb83d247e17", null ],
-    [ "WeakHandle", "class_a_z_1_1_stable_dynamic_array.html#a373c99586060a11c4456a31ae8ff296a", null ],
-    [ "StableDynamicArray", "class_a_z_1_1_stable_dynamic_array.html#a01c207640f3c5860f70b9fc11e1be08d", null ],
-    [ "StableDynamicArray", "class_a_z_1_1_stable_dynamic_array.html#ad36e73a9e19cbaa533ce584278eef989", null ],
-    [ "~StableDynamicArray", "class_a_z_1_1_stable_dynamic_array.html#a560e590050ea2415175ff5d10fa92a42", null ],
+    [ "pageIterator", "class_a_z_1_1_stable_dynamic_array_1_1page_iterator.html", null ],
     [ "begin", "class_a_z_1_1_stable_dynamic_array.html#a10940273bbbfefa33d5bccbdd1dbeba3", null ],
-    [ "cbegin", "class_a_z_1_1_stable_dynamic_array.html#a83e52a8ea15c53ce28a9f7bdf76a6000", null ],
-    [ "cend", "class_a_z_1_1_stable_dynamic_array.html#ab2132eafcc9e171afaf48f5820522650", null ],
-    [ "DefragmentHandle", "class_a_z_1_1_stable_dynamic_array.html#ae5dfe92a53c072e4416b228112ec99f9", null ],
-    [ "emplace", "class_a_z_1_1_stable_dynamic_array.html#a569eba9840a42a75c780dcf3b01958f3", null ],
-    [ "emplace", "class_a_z_1_1_stable_dynamic_array.html#adec1dbaa5cda5bcbf8d345d886a62cfb", null ],
+    [ "emplace", "class_a_z_1_1_stable_dynamic_array.html#a14a24243d9e63b946ba68aaef00f992e", null ],
     [ "end", "class_a_z_1_1_stable_dynamic_array.html#a855040adad759d3fcb5559be63427855", null ],
     [ "erase", "class_a_z_1_1_stable_dynamic_array.html#a10d8ad8ce46674b31adb13ad948b4290", null ],
-    [ "GetMetrics", "class_a_z_1_1_stable_dynamic_array.html#a983e14f29aa38fb52b925febb735aee3", null ],
-    [ "GetParallelRanges", "class_a_z_1_1_stable_dynamic_array.html#a9f64898cd912db0b00eb201663591144", null ],
+    [ "GetPageIndex", "class_a_z_1_1_stable_dynamic_array.html#a47403e29fd5083d9a7dd6f4c7f813e52", null ],
     [ "insert", "class_a_z_1_1_stable_dynamic_array.html#a5970ba0fa7c91a8685cd03c604e7aab9", null ],
     [ "insert", "class_a_z_1_1_stable_dynamic_array.html#ab2b0ef6b1092750f4d4fe155ed746a52", null ],
     [ "ReleaseEmptyPages", "class_a_z_1_1_stable_dynamic_array.html#ad7c4c3a6ed954b5362138530c4fe987b", null ],
-    [ "size", "class_a_z_1_1_stable_dynamic_array.html#a9f6a4eb7b181ef98d38ec0b469ef2d99", null ]
+    [ "size", "class_a_z_1_1_stable_dynamic_array.html#ae2f7bbaf84e8aa5679a38b50c1fba669", null ]
 ];

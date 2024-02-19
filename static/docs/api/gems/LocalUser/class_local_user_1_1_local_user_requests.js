@@ -2,7 +2,7 @@ var class_local_user_1_1_local_user_requests =
 [
     [ "AssignLocalUserIdToLocalPlayerSlot", "class_local_user_1_1_local_user_requests.html#a589f30205e52752792cd03e314dcf7cf", null ],
     [ "ClearAllLocalUserIdToLocalPlayerSlotAssignments", "class_local_user_1_1_local_user_requests.html#a5e0f9f7bea8623869115408adad0e352", null ],
-    [ "FindLocalUserProfile", "class_local_user_1_1_local_user_requests.html#a3498588bed73e29b920aa198391dbd4d", null ],
+    [ "FindLocalUserProfile", "class_local_user_1_1_local_user_requests.html#a24a59d2463757e62ce6b2691bf27084b", null ],
     [ "GetLocalPlayerSlotOccupiedByLocalUserId", "class_local_user_1_1_local_user_requests.html#a50636246cb6e9c7cc8962fc6fdc7dc1a", null ],
     [ "GetLocalUserIdAssignedToLocalPlayerSlot", "class_local_user_1_1_local_user_requests.html#afb2e472f69bb0b2880e5877c79469c20", null ],
     [ "GetLocalUserIdAt", "class_local_user_1_1_local_user_requests.html#afa5af0f67ae39eff8cc7cc33fcf42557", null ],
@@ -14,6 +14,5 @@ var class_local_user_1_1_local_user_requests =
     [ "GetPrimaryLocalUserProfile", "class_local_user_1_1_local_user_requests.html#aba4a3fb6b84a4e6be694a5a65982b3ea", null ],
     [ "IsLocalUserSignedIn", "class_local_user_1_1_local_user_requests.html#a27fb9b5292e30a7abc4ce2b82f2fe6d6", null ],
     [ "RemoveLocalUserIdFromLocalPlayerSlot", "class_local_user_1_1_local_user_requests.html#a875cd4e6083c37e6708956cc87ac8f93", null ],
-    [ "AddressPolicy", "class_local_user_1_1_local_user_requests.html#a7124b3a7ce437713bbd5c2e517908fab", null ],
     [ "HandlerPolicy", "class_local_user_1_1_local_user_requests.html#abcc5f0c61ae5f4ba9b0a317203f80c4e", null ]
 ];

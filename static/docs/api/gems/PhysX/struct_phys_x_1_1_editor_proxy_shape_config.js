@@ -1,25 +1,5 @@
 var struct_phys_x_1_1_editor_proxy_shape_config =
 [
-    [ "EditorProxyShapeConfig", "struct_phys_x_1_1_editor_proxy_shape_config.html#a18b1c4b974028647dde4ae32efce7544", null ],
-    [ "EditorProxyShapeConfig", "struct_phys_x_1_1_editor_proxy_shape_config.html#ac9363271d5365e41ffc9ae2f4307ea27", null ],
-    [ "AZ_CLASS_ALLOCATOR", "struct_phys_x_1_1_editor_proxy_shape_config.html#a5f2dc5a6cdf38b585a1477ab1e5b1cd5", null ],
-    [ "AZ_TYPE_INFO", "struct_phys_x_1_1_editor_proxy_shape_config.html#a02ad89dba305e72ea607d4d78c7fca54", null ],
-    [ "CloneCurrent", "struct_phys_x_1_1_editor_proxy_shape_config.html#a773b4b8c74c1bfe6b2f72424b2217b0d", null ],
-    [ "GetCurrent", "struct_phys_x_1_1_editor_proxy_shape_config.html#a1c387b0474d4ce0b5b031f1d500b0acf", null ],
-    [ "GetCurrent", "struct_phys_x_1_1_editor_proxy_shape_config.html#ae3f90469fa3cc7060f6b1267158dcb48", null ],
-    [ "IsBoxConfig", "struct_phys_x_1_1_editor_proxy_shape_config.html#aa40e5f62a4bd55289e266e200568372a", null ],
-    [ "IsCapsuleConfig", "struct_phys_x_1_1_editor_proxy_shape_config.html#a2402b4a1ab762e43a96c2163404ce9c0", null ],
-    [ "IsCylinderConfig", "struct_phys_x_1_1_editor_proxy_shape_config.html#a0e387a61f069bae9c2ab684c9d391641", null ],
-    [ "IsNonUniformlyScaledPrimitive", "struct_phys_x_1_1_editor_proxy_shape_config.html#a52da7bd5beb963d40f6a933fda3bbd98", null ],
-    [ "IsSphereConfig", "struct_phys_x_1_1_editor_proxy_shape_config.html#a1cabfe7fb645e1f01998bf30d6b573a4", null ],
-    [ "Reflect", "struct_phys_x_1_1_editor_proxy_shape_config.html#a7ac1ab67f5037c3b6b453ffc155d794d", null ],
-    [ "m_box", "struct_phys_x_1_1_editor_proxy_shape_config.html#a61e3debc7f975b2ff140fbec437fb8c7", null ],
-    [ "m_capsule", "struct_phys_x_1_1_editor_proxy_shape_config.html#a889f7c85530a9be9b109553c75b61042", null ],
-    [ "m_cookedMesh", "struct_phys_x_1_1_editor_proxy_shape_config.html#a425065ecad626dc35793dd860306b9c2", null ],
-    [ "m_cylinder", "struct_phys_x_1_1_editor_proxy_shape_config.html#a29d7e76ed7814570856a89d73c74cfba", null ],
     [ "m_hasNonUniformScale", "struct_phys_x_1_1_editor_proxy_shape_config.html#abe84e91c26854fe6503e18d3cb3a30ad", null ],
-    [ "m_legacyPhysicsAsset", "struct_phys_x_1_1_editor_proxy_shape_config.html#a91e424431dacd64e1f6eb4d9d9499152", null ],
-    [ "m_shapeType", "struct_phys_x_1_1_editor_proxy_shape_config.html#a4b2207473b6b278c86a8b0623c3bd747", null ],
-    [ "m_sphere", "struct_phys_x_1_1_editor_proxy_shape_config.html#a567888b1f28731ceb53050b37df0ff3c", null ],
     [ "m_subdivisionLevel", "struct_phys_x_1_1_editor_proxy_shape_config.html#a920ae11864420c13d63fd91ee94348c8", null ]
 ];

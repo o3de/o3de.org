@@ -1,6 +1,5 @@
 var class_a_z_1_1_render_1_1_capsule_light_delegate =
 [
-    [ "CapsuleLightDelegate", "class_a_z_1_1_render_1_1_capsule_light_delegate.html#a85bf089d73892e3f5644acaaca2fc779", null ],
     [ "CalculateAttenuationRadius", "class_a_z_1_1_render_1_1_capsule_light_delegate.html#af7981c79decf2ecc0d81a706328a3c82", null ],
     [ "DrawDebugDisplay", "class_a_z_1_1_render_1_1_capsule_light_delegate.html#a6aecc45a34adf496d86781c77d167d91", null ],
     [ "GetEffectiveSolidAngle", "class_a_z_1_1_render_1_1_capsule_light_delegate.html#a9e3b11dbcd59408686bedcc83c9d4e91", null ],

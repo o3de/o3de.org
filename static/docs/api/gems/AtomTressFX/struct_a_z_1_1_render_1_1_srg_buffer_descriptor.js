@@ -1,7 +1,5 @@
 var struct_a_z_1_1_render_1_1_srg_buffer_descriptor =
 [
-    [ "SrgBufferDescriptor", "struct_a_z_1_1_render_1_1_srg_buffer_descriptor.html#a0ef71671385860f24099bd702152f8da", null ],
-    [ "SrgBufferDescriptor", "struct_a_z_1_1_render_1_1_srg_buffer_descriptor.html#a10aa4a3c4f17698c01c1112038cc6adc", null ],
     [ "m_bufferName", "struct_a_z_1_1_render_1_1_srg_buffer_descriptor.html#a93e34b2bb62e6592d89b60bfcee9094a", null ],
     [ "m_elementCount", "struct_a_z_1_1_render_1_1_srg_buffer_descriptor.html#a63b65339e4343be2f4eb2503e172e600", null ],
     [ "m_elementFormat", "struct_a_z_1_1_render_1_1_srg_buffer_descriptor.html#a3d85eca4b498ecd093d3bb13af726a0c", null ],

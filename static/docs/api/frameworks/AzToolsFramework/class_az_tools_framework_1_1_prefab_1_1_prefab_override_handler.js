@@ -1,8 +1,6 @@
 var class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler =
 [
-    [ "PrefabOverrideHandler", "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#a1cca83bda67aba6fb46f6d7415200edd", null ],
-    [ "~PrefabOverrideHandler", "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#ae783f47f1e5ad8e26866516385f21085", null ],
-    [ "AreOverridesPresent", "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#ac4e3b5b2557225ee6a2014cac5b23d17", null ],
-    [ "GetPatchType", "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#a4fffda53d00fb6b660fdb37b875ca398", null ],
-    [ "RevertOverrides", "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#a8ecfaa5715b9b29818bcf0812148ae67", null ]
+    [ "AreOverridesPresent", "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#a91f08b32973ea138201f048a4a1255cc", null ],
+    [ "GetPatchType", "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#aa353af7491a002f217b4494c15d97bb6", null ],
+    [ "RevertOverrides", "class_az_tools_framework_1_1_prefab_1_1_prefab_override_handler.html#a8bb007e61d7c367a7367971ec3e31cbe", null ]
 ];

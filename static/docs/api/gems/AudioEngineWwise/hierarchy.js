@@ -1,15 +1,15 @@
 var hierarchy =
 [
-    [ "IAkFileLocationResolver", null, [
+    [ "AK::StreamMgr::IAkFileLocationResolver", null, [
       [ "Audio::CFileIOHandler_wwise", "class_audio_1_1_c_file_i_o_handler__wwise.html", null ]
     ] ],
-    [ "IAkIOHookBlocking", null, [
+    [ "AK::StreamMgr::IAkIOHookBlocking", null, [
       [ "Audio::CBlockingDevice_wwise", "class_audio_1_1_c_blocking_device__wwise.html", null ]
     ] ],
-    [ "IAkIOHookDeferred", null, [
+    [ "AK::StreamMgr::IAkIOHookDeferred", null, [
       [ "Audio::CStreamingDevice_wwise", "class_audio_1_1_c_streaming_device__wwise.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AssetBuilderSDK::AssetBuilderCommandBus::Handler", null, [
       [ "AudioControlBuilder::AudioControlBuilderWorker", "class_audio_control_builder_1_1_audio_control_builder_worker.html", null ],
       [ "WwiseBuilder::WwiseBuilderWorker", "class_wwise_builder_1_1_wwise_builder_worker.html", null ]
     ] ],
@@ -24,20 +24,20 @@ var hierarchy =
     [ "Audio::AudioSourceManager", "class_audio_1_1_audio_source_manager.html", null ],
     [ "Audio::ChunkHeader", "struct_audio_1_1_chunk_header.html", null ],
     [ "Audio::FmtChunk", "struct_audio_1_1_fmt_chunk.html", null ],
-    [ "Handler", null, [
+    [ "Audio::Gem::EngineRequestBus::Handler", null, [
       [ "AudioEngineWwiseGem::AudioEngineWwiseGemSystemComponent", "class_audio_engine_wwise_gem_1_1_audio_engine_wwise_gem_system_component.html", null ]
     ] ],
     [ "Audio::WavHeader", "struct_audio_1_1_wav_header.html", null ],
     [ "Audio::Wwise::ConfigurationSettings", "struct_audio_1_1_wwise_1_1_configuration_settings.html", null ],
     [ "Audio::Wwise::ConfigurationSettings::PlatformMapping", "struct_audio_1_1_wwise_1_1_configuration_settings_1_1_platform_mapping.html", null ],
     [ "AudioControls::CAudioWwiseLoader", "class_audio_controls_1_1_c_audio_wwise_loader.html", null ],
-    [ "Handler", null, [
+    [ "AudioStreamingRequestBus::Handler", null, [
       [ "Audio::AudioInputStreaming", "class_audio_1_1_audio_input_streaming.html", null ]
     ] ],
     [ "AudioSystemImplementation", null, [
       [ "Audio::CAudioSystemImpl_wwise", "class_audio_1_1_c_audio_system_impl__wwise.html", null ]
     ] ],
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "AudioControlBuilder::BuilderPluginComponent", "class_audio_control_builder_1_1_builder_plugin_component.html", null ],
       [ "AudioEngineWwiseGem::AudioEngineWwiseGemSystemComponent", "class_audio_engine_wwise_gem_1_1_audio_engine_wwise_gem_system_component.html", null ],
       [ "WwiseBuilder::BuilderPluginComponent", "class_wwise_builder_1_1_builder_plugin_component.html", null ]

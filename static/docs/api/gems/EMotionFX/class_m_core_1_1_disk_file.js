@@ -1,6 +1,5 @@
 var class_m_core_1_1_disk_file =
 [
-    [ "TYPE_ID", "class_m_core_1_1_disk_file.html#a1cf623180fb5b03ce7785255fb9843eea4fca900fb3f16708ef0546877c6b72ba", null ],
     [ "EMode", "class_m_core_1_1_disk_file.html#a17ff9eed1dfc2e5356d5b827b46acff3", [
       [ "READ", "class_m_core_1_1_disk_file.html#a17ff9eed1dfc2e5356d5b827b46acff3a90eb5a9bf60d665851beae2dcf8ea17e", null ],
       [ "WRITE", "class_m_core_1_1_disk_file.html#a17ff9eed1dfc2e5356d5b827b46acff3a7ab2dbf1a078c4c29dbb203ab53840e2", null ],
@@ -14,8 +13,8 @@ var class_m_core_1_1_disk_file =
     [ "Close", "class_m_core_1_1_disk_file.html#abce55f5c4f13b3e7a0594ad8cbb45309", null ],
     [ "Flush", "class_m_core_1_1_disk_file.html#a56bdcb35afc98d872278bbdb54da92be", null ],
     [ "Forward", "class_m_core_1_1_disk_file.html#a87dff58e828add4599825ff4e2776cde", null ],
-    [ "GetFileMode", "class_m_core_1_1_disk_file.html#a3966d18fd9e35447cc476ce71d24b0f5", null ],
-    [ "GetFileName", "class_m_core_1_1_disk_file.html#afe623202331d4b90358afee33ff18083", null ],
+    [ "GetFileMode", "class_m_core_1_1_disk_file.html#a464d47882e165913b570d7b1440f32c2", null ],
+    [ "GetFileName", "class_m_core_1_1_disk_file.html#af9b45fb7c41fcf199af57a733de78952", null ],
     [ "GetFileSize", "class_m_core_1_1_disk_file.html#ac803f14849c8bb0797e02b2d51426363", null ],
     [ "GetIsEOF", "class_m_core_1_1_disk_file.html#ab28fbe13d9f8e05c65c8ccc53cffee4b", null ],
     [ "GetIsOpen", "class_m_core_1_1_disk_file.html#a96b2e0018fc5eb7361142402860ee6a0", null ],

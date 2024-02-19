@@ -1,29 +1,12 @@
 var class_a_z_1_1_render_1_1_skinned_mesh_feature_processor =
 [
-    [ "SkinnedMeshFeatureProcessor", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a0a3a447ec749baf19de1b65af76f51ca", null ],
-    [ "~SkinnedMeshFeatureProcessor", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#ad148a46104df6054d90497a3f6415468", null ],
     [ "AcquireSkinnedMesh", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a5d66d82bb6c7f02ccca1dc510f47086c", null ],
     [ "Activate", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#adb45781666e9868e15833761c93b8a13", null ],
-    [ "AZ_FEATURE_PROCESSOR", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a92f205ddeece81b68eec3977305137bf", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a993ee4e1f9d52ee007f4e0eeb5611e2f", null ],
-    [ "CreateSkinningShaderOptionGroup", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#aef5bdfc393837d2c8da57d06168453f5", null ],
     [ "Deactivate", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a8273eef28a0e1998915982432d8f040c", null ],
     [ "DisableSkinning", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#aff496e1fc6defff5be4209256c7e3aab", null ],
     [ "EnableSkinning", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a602546f8a274b968286e0a91818687a8", null ],
-    [ "GetMorphTargetShader", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a208bb5016ee42ca1e09eb354d392462f", null ],
-    [ "GetSkinningShader", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#abd5017ac3518a0c5db0f8c00ae73bb12", null ],
-    [ "OnBeginPrepareRender", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#ac9a1bb300f190315d427bbe8837f6d3b", null ],
     [ "OnRenderEnd", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a6b8cf025ff8ad2f9f9fe9fc228e2f7e7", null ],
-    [ "OnRenderPipelineChanged", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#ac2d6040b8b929fcec1876401619a0690", null ],
-    [ "OnSkinningShaderReinitialized", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a51532f210f3251ad92969503e1e5c65d", null ],
-    [ "Reflect", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a2f8bd9c8ce40ff976ccac7305b6eeec6", null ],
     [ "ReleaseSkinnedMesh", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#ab114fb4f67ead31824b0dd37f81975f0", null ],
-    [ "Render", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a3598135c9c08ed061b2869e92ef7034d", null ],
     [ "SetMorphTargetWeights", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#ad524f9d8a90157e7be11a0ccba8fad98", null ],
-    [ "SetSkinningMatrices", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a81a55d6793354e31cea298ad3c82ad11", null ],
-    [ "SetupMorphTargetScope", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a5039b3eeba054974144e9c92a93cb647", null ],
-    [ "SetupSkinningScope", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a446dc793622eb51f1c2e9d88c2cab4d7", null ],
-    [ "SubmitMorphTargetDispatchItems", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a258a998348f81cfc777a5c41bf0f44e4", null ],
-    [ "SubmitSkinningDispatchItems", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a6557bafde11d3bca6e13b9a3f1e2bf5c", null ],
-    [ "SkinnedMeshStatsCollector", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a31bae46b787ccaccd146f38b339c4398", null ]
+    [ "SetSkinningMatrices", "class_a_z_1_1_render_1_1_skinned_mesh_feature_processor.html#a81a55d6793354e31cea298ad3c82ad11", null ]
 ];

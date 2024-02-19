@@ -1,81 +1,81 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "LandscapeCanvas::LandscapeCanvasEditorSystemComponent", "class_landscape_canvas_1_1_landscape_canvas_editor_system_component.html", null ],
       [ "LandscapeCanvas::LandscapeCanvasSystemComponent", "class_landscape_canvas_1_1_landscape_canvas_system_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "LandscapeCanvas::LandscapeCanvasNodeFactoryRequests", "class_landscape_canvas_1_1_landscape_canvas_node_factory_requests.html", null ],
       [ "LandscapeCanvas::LandscapeCanvasRequests", "class_landscape_canvas_1_1_landscape_canvas_requests.html", null ],
       [ "LandscapeCanvas::LandscapeCanvasSerializationRequests", "class_landscape_canvas_1_1_landscape_canvas_serialization_requests.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AZ::EntitySystemBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "Module", null, [
+    [ "AZ::Module", null, [
       [ "LandscapeCanvas::LandscapeCanvasEditorModule", "class_landscape_canvas_1_1_landscape_canvas_editor_module.html", null ]
     ] ],
-    [ "StyledDockWidget", null, [
+    [ "AzQtComponents::StyledDockWidget", null, [
       [ "LandscapeCanvasEditor::CustomNodeInspectorDockWidget", "class_landscape_canvas_editor_1_1_custom_node_inspector_dock_widget.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler", null, [
       [ "LandscapeCanvas::LandscapeCanvasSystemComponent", "class_landscape_canvas_1_1_landscape_canvas_system_component.html", null ]
     ] ],
-    [ "EditorComponentBase", null, [
+    [ "AzToolsFramework::Components::EditorComponentBase", null, [
       [ "LandscapeCanvas::EditorLandscapeCanvasComponent", "class_landscape_canvas_1_1_editor_landscape_canvas_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorEntityContextNotificationBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
       [ "LandscapeCanvas::LandscapeCanvasSystemComponent", "class_landscape_canvas_1_1_landscape_canvas_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EditorPickModeNotificationBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::EntityCompositionNotificationBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "EntityPropertyEditor", null, [
+    [ "AzToolsFramework::EntityPropertyEditor", null, [
       [ "LandscapeCanvasEditor::CustomEntityPropertyEditor", "class_landscape_canvas_editor_1_1_custom_entity_property_editor.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::Prefab::PrefabFocusNotificationBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::Prefab::PrefabPublicNotificationBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "AzToolsFramework::PropertyEditorEntityChangeNotificationBus::MultiHandler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::ToolsApplicationNotificationBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "CrySystemEventBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "EditorGradientPreviewRenderer", null, [
+    [ "GradientSignal::EditorGradientPreviewRenderer", null, [
       [ "LandscapeCanvasEditor::GradientPreviewThumbnailItem", "class_landscape_canvas_editor_1_1_gradient_preview_thumbnail_item.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "GradientSignal::GradientPreviewRequestBus::Handler", null, [
       [ "LandscapeCanvasEditor::GradientPreviewThumbnailItem", "class_landscape_canvas_editor_1_1_gradient_preview_thumbnail_item.html", null ]
     ] ],
-    [ "AssetEditorWindowConfig", null, [
+    [ "GraphCanvas::AssetEditorWindowConfig", null, [
       [ "LandscapeCanvasEditor::LandscapeCanvasConfig", "struct_landscape_canvas_editor_1_1_landscape_canvas_config.html", null ]
     ] ],
-    [ "ContextMenuAction", null, [
+    [ "GraphCanvas::ContextMenuAction", null, [
       [ "LandscapeCanvasEditor::FindSelectedNodesAction", "class_landscape_canvas_editor_1_1_find_selected_nodes_action.html", null ]
     ] ],
-    [ "EditorContextMenu", null, [
+    [ "GraphCanvas::EditorContextMenu", null, [
       [ "LandscapeCanvasEditor::LayerExtenderContextMenu", "class_landscape_canvas_editor_1_1_layer_extender_context_menu.html", null ]
     ] ],
-    [ "NodeContextMenu", null, [
+    [ "GraphCanvas::NodeContextMenu", null, [
       [ "LandscapeCanvasEditor::NodeContextMenu", "class_landscape_canvas_editor_1_1_node_context_menu.html", null ]
     ] ],
-    [ "GraphContext", null, [
+    [ "GraphModel::GraphContext", null, [
       [ "LandscapeCanvas::GraphContext", "class_landscape_canvas_1_1_graph_context.html", null ]
     ] ],
-    [ "Node", null, [
+    [ "GraphModel::Node", null, [
       [ "LandscapeCanvas::BaseNode", "class_landscape_canvas_1_1_base_node.html", [
         [ "LandscapeCanvas::AssetWeightSelectorNode", "class_landscape_canvas_1_1_asset_weight_selector_node.html", null ],
         [ "LandscapeCanvas::BaseAreaFilterNode", "class_landscape_canvas_1_1_base_area_filter_node.html", [
@@ -141,23 +141,23 @@ var hierarchy =
         [ "LandscapeCanvas::TerrainSurfaceMaterialsListNode", "class_landscape_canvas_1_1_terrain_surface_materials_list_node.html", null ]
       ] ]
     ] ],
-    [ "EditorMainWindow", null, [
+    [ "GraphModelIntegration::EditorMainWindow", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
-    [ "ThumbnailItem", null, [
+    [ "GraphModelIntegration::ThumbnailItem", null, [
       [ "LandscapeCanvasEditor::GradientPreviewThumbnailItem", "class_landscape_canvas_editor_1_1_gradient_preview_thumbnail_item.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "LandscapeCanvas::LandscapeCanvasRequestBus::Handler", null, [
       [ "LandscapeCanvasEditor::MainWindow", "class_landscape_canvas_editor_1_1_main_window.html", null ]
     ] ],
     [ "LandscapeCanvas::LandscapeCanvasSerialization", "struct_landscape_canvas_1_1_landscape_canvas_serialization.html", null ],
-    [ "Handler", null, [
+    [ "LandscapeCanvasNodeFactoryRequestBus::Handler", null, [
       [ "LandscapeCanvas::LandscapeCanvasSystemComponent", "class_landscape_canvas_1_1_landscape_canvas_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "LandscapeCanvasSerializationRequestBus::Handler", null, [
       [ "LandscapeCanvas::LandscapeCanvasSystemComponent", "class_landscape_canvas_1_1_landscape_canvas_system_component.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "LmbrCentral::DependencyNotificationBus::Handler", null, [
       [ "LandscapeCanvasEditor::GradientPreviewThumbnailItem", "class_landscape_canvas_editor_1_1_gradient_preview_thumbnail_item.html", null ]
     ] ]
 ];

@@ -1,6 +1,5 @@
 var class_phys_x_1_1_collider_box_mode =
 [
-    [ "ColliderBoxMode", "class_phys_x_1_1_collider_box_mode.html#a7e1861de278852724057f609e5e3ca45", null ],
     [ "Refresh", "class_phys_x_1_1_collider_box_mode.html#ad12c499bda1d8eba14662b3ee8fae768", null ],
     [ "ResetValues", "class_phys_x_1_1_collider_box_mode.html#a83c103ba511107128ed9f369e7128fbb", null ],
     [ "Setup", "class_phys_x_1_1_collider_box_mode.html#a296a92b9379af82bc0f727a5340b3dd7", null ],

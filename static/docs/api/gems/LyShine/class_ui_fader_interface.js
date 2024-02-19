@@ -1,6 +1,5 @@
 var class_ui_fader_interface =
 [
-    [ "~UiFaderInterface", "class_ui_fader_interface.html#a1a0d6be5e23c559173c81d2d8313f248", null ],
     [ "Fade", "class_ui_fader_interface.html#a202a56a3d07725fa2a45792ed9d47146", null ],
     [ "GetFadeValue", "class_ui_fader_interface.html#a4a861afb9dd7dbee93ed8a74465d53a9", null ],
     [ "GetUseRenderToTexture", "class_ui_fader_interface.html#af615864f5a772980e3e4620ac986a1eb", null ],

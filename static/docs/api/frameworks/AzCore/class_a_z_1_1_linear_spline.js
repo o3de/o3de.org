@@ -1,9 +1,5 @@
 var class_a_z_1_1_linear_spline =
 [
-    [ "LinearSpline", "class_a_z_1_1_linear_spline.html#a17faf02a82ad5a64e6c0013593c554e9", null ],
-    [ "LinearSpline", "class_a_z_1_1_linear_spline.html#a1d9d19986a0e1b3ed0d6a8db6e58baf1", null ],
-    [ "LinearSpline", "class_a_z_1_1_linear_spline.html#a13fff9ea8dffe6235e7ae92f6458d6a3", null ],
-    [ "~LinearSpline", "class_a_z_1_1_linear_spline.html#ab3834b57810660469aa1ae5897202fab", null ],
     [ "GetAabb", "class_a_z_1_1_linear_spline.html#ab2e6e15aa84e5900d41f9cebcdd9a0e5", null ],
     [ "GetAddressByDistance", "class_a_z_1_1_linear_spline.html#aca0531cf3333bd2dda58ab412f70830f", null ],
     [ "GetAddressByFraction", "class_a_z_1_1_linear_spline.html#af700cea41766c624aaf8fb4c495853e9", null ],
@@ -16,8 +12,5 @@ var class_a_z_1_1_linear_spline =
     [ "GetSegmentGranularity", "class_a_z_1_1_linear_spline.html#a1fca58a651e72abc4627c509b74cd8e0", null ],
     [ "GetSegmentLength", "class_a_z_1_1_linear_spline.html#a938aaff57ad199c608dfd0c801770c36", null ],
     [ "GetSplineLength", "class_a_z_1_1_linear_spline.html#acf867d4f051f1f26f04ec37d30748558", null ],
-    [ "GetTangent", "class_a_z_1_1_linear_spline.html#a32c014400e2813048c5f8b90c2b8810d", null ],
-    [ "operator=", "class_a_z_1_1_linear_spline.html#a7acbb5da980cb579e0a976feb4c246f0", null ],
-    [ "operator=", "class_a_z_1_1_linear_spline.html#a7be2de36400190fb4cdbf177bda7da59", null ],
-    [ "Reflect", "class_a_z_1_1_linear_spline.html#a79c51811c40613a8d4411b5586d067c9", null ]
+    [ "GetTangent", "class_a_z_1_1_linear_spline.html#a32c014400e2813048c5f8b90c2b8810d", null ]
 ];

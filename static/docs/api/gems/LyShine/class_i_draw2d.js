@@ -1,10 +1,9 @@
 var class_i_draw2d =
 [
-    [ "ImageOptions", "struct_i_draw2d_1_1_image_options.html", "struct_i_draw2d_1_1_image_options" ],
-    [ "RenderState", "struct_i_draw2d_1_1_render_state.html", "struct_i_draw2d_1_1_render_state" ],
+    [ "ImageOptions", "struct_i_draw2d_1_1_image_options.html", null ],
+    [ "RenderState", "struct_i_draw2d_1_1_render_state.html", null ],
     [ "TextOptions", "struct_i_draw2d_1_1_text_options.html", "struct_i_draw2d_1_1_text_options" ],
     [ "VertexPosColUV", "struct_i_draw2d_1_1_vertex_pos_col_u_v.html", "struct_i_draw2d_1_1_vertex_pos_col_u_v" ],
-    [ "MAX_TEXT_STRING_LENGTH", "class_i_draw2d.html#ac50e4704351fa49ed9f92f64175aff80a48ef0eaeaf2a30eab5782ec5f43dc68b", null ],
     [ "HAlign", "class_i_draw2d.html#af8a4e2dbfce8ec9963471eb677e49e8c", [
       [ "Left", "class_i_draw2d.html#af8a4e2dbfce8ec9963471eb677e49e8ca945d5e233cf7d6240f6b783b36a374ff", null ],
       [ "Center", "class_i_draw2d.html#af8a4e2dbfce8ec9963471eb677e49e8ca4f1f6016fc9f3f2353c0cc7c67b292bd", null ],
@@ -29,8 +28,8 @@ var class_i_draw2d =
     [ "DrawQuad", "class_i_draw2d.html#a214f464ed509c4e55cc3aa5925130c0d", null ],
     [ "DrawRectOutlineTextured", "class_i_draw2d.html#a1fc0c12990c4400c2c50b71f3c167738", null ],
     [ "DrawText", "class_i_draw2d.html#a9da63687750935be32b7138ff8e411e1", null ],
-    [ "GetDefaultImageOptions", "class_i_draw2d.html#a78153f0b6abff2520d079975dae9666f", null ],
-    [ "GetDefaultTextOptions", "class_i_draw2d.html#a3005fa6465346c9f73703f4fff425603", null ],
+    [ "GetDefaultImageOptions", "class_i_draw2d.html#a33deee82089e321607ab3ab9aef916e5", null ],
+    [ "GetDefaultTextOptions", "class_i_draw2d.html#ac38f3636dbf3d974f6f492cd5481be97", null ],
     [ "GetDeferPrimitives", "class_i_draw2d.html#ac467298b1eda0c88695a0fa97dcbefd6", null ],
     [ "GetTextSize", "class_i_draw2d.html#a9071f239666aed8e1e65a7f4e1cb3a99", null ],
     [ "GetViewportDpiScalingFactor", "class_i_draw2d.html#a3e9e1e61a8289572628de892f23ef9e2", null ],

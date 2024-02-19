@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "CrashHandlerBase", null, [
+    [ "CrashHandler::CrashHandlerBase", null, [
       [ "CrashHandler::GameCrashHandler", "class_crash_handler_1_1_game_crash_handler.html", null ]
     ] ],
     [ "CrashUploader", null, [

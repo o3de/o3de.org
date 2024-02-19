@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "ServiceRequest", null, [
+    [ "AWSCore::ServiceRequest", null, [
       [ "AWSMetrics::ServiceAPI::PostMetricsEventsRequest", "class_a_w_s_metrics_1_1_service_a_p_i_1_1_post_metrics_events_request.html", null ]
     ] ],
     [ "AWSMetrics::AWSMetricsSystemComponent::AttributeSubmissionList", "struct_a_w_s_metrics_1_1_a_w_s_metrics_system_component_1_1_attribute_submission_list.html", null ],
@@ -18,21 +18,21 @@ var hierarchy =
     [ "AWSMetrics::ServiceAPI::PostMetricsEventsRequest::Parameters", "struct_a_w_s_metrics_1_1_service_a_p_i_1_1_post_metrics_events_request_1_1_parameters.html", null ],
     [ "AWSMetrics::ServiceAPI::PostMetricsEventsResponse", "struct_a_w_s_metrics_1_1_service_a_p_i_1_1_post_metrics_events_response.html", null ],
     [ "AWSMetrics::ServiceAPI::PostMetricsEventsResponseEntry", "struct_a_w_s_metrics_1_1_service_a_p_i_1_1_post_metrics_events_response_entry.html", null ],
-    [ "Handler", null, [
+    [ "AWSMetricsRequestBus::Handler", null, [
       [ "AWSMetrics::AWSMetricsSystemComponent", "class_a_w_s_metrics_1_1_a_w_s_metrics_system_component.html", null ]
     ] ],
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "AWSMetrics::AWSMetricsEditorSystemComponent", "class_a_w_s_metrics_1_1_a_w_s_metrics_editor_system_component.html", null ],
       [ "AWSMetrics::AWSMetricsSystemComponent", "class_a_w_s_metrics_1_1_a_w_s_metrics_system_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "AWSMetrics::AWSMetricsNotifications", "class_a_w_s_metrics_1_1_a_w_s_metrics_notifications.html", null ],
       [ "AWSMetrics::AWSMetricsRequests", "class_a_w_s_metrics_1_1_a_w_s_metrics_requests.html", null ]
     ] ],
-    [ "Module", null, [
+    [ "AZ::Module", null, [
       [ "AWSMetrics::AWSMetricsModule", "class_a_w_s_metrics_1_1_a_w_s_metrics_module.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler", null, [
       [ "AWSMetrics::AWSMetricsEditorSystemComponent", "class_a_w_s_metrics_1_1_a_w_s_metrics_editor_system_component.html", null ]
     ] ]
 ];

@@ -1,12 +1,8 @@
 var class_a_z_1_1_render_1_1_s_m_a_a_feature_processor =
 [
-    [ "SMAAFeatureProcessor", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#abb02b6fcfc68413adfd1d0397abfa7c9", null ],
-    [ "~SMAAFeatureProcessor", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a6767712828a3074a30e3911d062c5dee", null ],
     [ "Activate", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a82bce4351f49215c9abeb6a502299f6d", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a86a7c89f677a66dff7c464c52ab96fcb", null ],
     [ "Deactivate", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a95752d7d74078fcbb1f701347361b64d", null ],
-    [ "GetSettings", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a04d19182d75a717e79220c0d3444f6c0", null ],
-    [ "Reflect", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#acac7c6854ece810051f323d8cb360b39", null ],
+    [ "GetSettings", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a366622a4cf207b5eba0c6667cdd091e1", null ],
     [ "Render", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a75a7492a6b38dd97f683020a21413c18", null ],
     [ "SetChromaThreshold", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a9a5697d10a5d3161fbfae28f2626c464", null ],
     [ "SetCornerDetectionEnable", "class_a_z_1_1_render_1_1_s_m_a_a_feature_processor.html#a35c6915a811ab4c13fdd5659a5b7f89a", null ],

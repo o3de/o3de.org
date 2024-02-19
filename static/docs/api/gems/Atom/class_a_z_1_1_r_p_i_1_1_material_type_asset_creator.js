@@ -10,14 +10,11 @@ var class_a_z_1_1_r_p_i_1_1_material_type_asset_creator =
     [ "ConnectMaterialPropertyToShaderEnabled", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a300393291e26512d7038a3ac1946733d", null ],
     [ "ConnectMaterialPropertyToShaderInput", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a9675db3e279f28e5b6b47f7de597f54b", null ],
     [ "ConnectMaterialPropertyToShaderOptions", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a5792ae4c89fb610db4f9994fac107d36", null ],
-    [ "End", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a707cddd00bda955b63a3ddce038f5b3e", null ],
     [ "EndMaterialProperty", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#ab8074f64ff4d72c46caa1577017a64e2", null ],
-    [ "GetMaterialPropertiesLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a7cb4c6d96efc00c1d57cee74b6f0abc3", null ],
-    [ "GetMaterialShaderResourceGroupLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a3c450787d19b8c6e209d7f2aed136418", null ],
+    [ "GetMaterialPropertiesLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a5aeeddd428bc49c5ec49e849c5547761", null ],
+    [ "GetMaterialShaderResourceGroupLayout", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a901471d9f950c8546e79cc82d44b5963", null ],
     [ "SetMaterialPropertyEnumNames", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a668a5ec2d625c8ef20bb2b51181dbf22", null ],
     [ "SetPropertyValue", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a7c6143893d5651c0b053f113eb37e123", null ],
-    [ "SetPropertyValue", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a8a8c2aded85f51d5a8c92d8206e1213c", null ],
-    [ "SetPropertyValue", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a6d259edb20a29ff0e5cdc715f62ba5e9", null ],
     [ "SetPropertyValue", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a176433d5e129fe57a8f17cfa2eecbc0d", null ],
     [ "SetVersion", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html#a1719ee0f11b1f9b9a7c1d74128c7b2c2", null ]
 ];

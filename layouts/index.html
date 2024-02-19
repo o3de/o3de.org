@@ -1,9 +1,77 @@
 {{ define "main" }}
-{{ partial "home/hero-slideshow.html" . }}
-{{ partial "home/features.html" . }}
-{{ partial "home/partners.html" . }}
-{{ partial "home/get-started.html" . }}
-{{ partial "home/content.html" . }}
+
+{{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
+{{ $docsSections := where $allSections "Section" "docs" }}
+
+<section class="hide-content docs-sidebar">
+  {{ partial "section-nav.html" . }}
+</section>
+
+<div class="container pt-3 px-5 pb-3">
+  <div class="row flex">
+    <div class="col-12 docs-content">
+      <h1 class="title">{{ .Page.Title | markdownify }}</h1>
+      {{ partial "docs/content.html" . }}  
+    </div>
+  </div>
+  <div class="row mt-3">
+      {{ range $docsSections }}
+        {{ range where .Sections ".Page.LinkTitle" "Get Started" }}
+            <div class="col col-12 col-lg-8 pb-3">
+            <a href="{{ .RelPermalink }}" class="card doc_card intro">
+              <div class="row">
+                  <div class="col-md-6 pb-20 card-image" style="background-image: url('{{ .Param "guide_img" }}')">
+                  </div>
+                  <div class="col-md-6 offset-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
+                      <p class="card-text">{{ .Page.Description }}</p>
+                    </div>
+                  </div>
+              </div>
+            </a>
+        </div>
+      {{ end }}
+      {{ range where .Sections ".Page.LinkTitle" "Release Notes" }}
+          <div class="col col-12 col-lg-4 pb-3">
+          <a href="{{ .RelPermalink }}" class="card doc_card intro">
+            <div class="row">
+                <div class="col-12">
+                  <div class="card-body">
+                    <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
+                    <p class="card-text">{{ .Page.Description }}</p>
+                  </div>
+                </div>
+            </div>
+          </a>
+      </div>
+    {{ end }}
+  {{ end }}
+  </div>
+  <div class="row flex">
+    <div class="col-12 docs-content">
+      <h1 class="title">Guides</h1>
+      <div class="content">
+       Jump into the following guides for O3DE based on your needs. 
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+      {{ range $docsSections }}
+        {{ range where (where .Sections ".Page.LinkTitle" "!=" "Get Started") ".Page.LinkTitle" "!=" "Release Notes" }}
+        <div class="col-12 col-lg-4 col-md-6 pb-3">
+          <a href="{{ .RelPermalink }}" class="card doc_card">
+              <img src="{{ .Param "guide_img" }}" class="card-img-top" alt="{{ .Page.Title }}">
+              <div class="card-body">
+              <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
+              <p class="card-text">{{ .Page.Description }}</p>
+              </div>
+          </a>
+        </div>
+      {{ end }}
+  {{ end }}
+  </div>
+</div>
 {{ partial "home/download.html" . }}
 {{ partial "footer.html" . }}
 {{ end }}

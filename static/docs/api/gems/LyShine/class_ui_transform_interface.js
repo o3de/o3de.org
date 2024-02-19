@@ -1,8 +1,7 @@
 var class_ui_transform_interface =
 [
-    [ "Rect", "struct_ui_transform_interface_1_1_rect.html", "struct_ui_transform_interface_1_1_rect" ],
-    [ "RectPoints", "struct_ui_transform_interface_1_1_rect_points.html", "struct_ui_transform_interface_1_1_rect_points" ],
-    [ "RectPointsArray", "class_ui_transform_interface.html#a5fd32b88c056d4075f42e2c82a25d0e3", null ],
+    [ "Rect", "struct_ui_transform_interface_1_1_rect.html", null ],
+    [ "RectPoints", "struct_ui_transform_interface_1_1_rect_points.html", null ],
     [ "Recompute", "class_ui_transform_interface.html#a1d61bb6f8f4dad36d160f2aac4ed7f2b", [
       [ "RectOnly", "class_ui_transform_interface.html#a1d61bb6f8f4dad36d160f2aac4ed7f2bae698df98af21e3d69d585179365232fc", null ],
       [ "TransformOnly", "class_ui_transform_interface.html#a1d61bb6f8f4dad36d160f2aac4ed7f2ba931c9eaa839fb27b85da6296811a378b", null ],
@@ -19,7 +18,6 @@ var class_ui_transform_interface =
       [ "ScaleXOnly", "class_ui_transform_interface.html#aaf7f8beb19f467c156be050c39347b7cae6843246ea3b512e5035d4183ef13a88", null ],
       [ "ScaleYOnly", "class_ui_transform_interface.html#aaf7f8beb19f467c156be050c39347b7caea3f28ad33f5879522c05be9e9127af5", null ]
     ] ],
-    [ "~UiTransformInterface", "class_ui_transform_interface.html#a1f4800730d29d07dcd8617e2e6048ae2", null ],
     [ "BoundsAreOverlappingRect", "class_ui_transform_interface.html#a5b330b9c0ede632f66b1bd00ad77dac3", null ],
     [ "GetCanvasPosition", "class_ui_transform_interface.html#a8655ed02402d817af7fea5c5ab13f585", null ],
     [ "GetCanvasSpacePivot", "class_ui_transform_interface.html#a89ca2732401bcbe3ef59cab7c0d8761a", null ],

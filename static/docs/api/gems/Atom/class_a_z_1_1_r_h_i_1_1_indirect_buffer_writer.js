@@ -1,25 +1,15 @@
 var class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer =
 [
-    [ "~IndirectBufferWriter", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#af9cd59a64350d840c6f2a3a217095219", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a9c04ba599768bf0375117edc7c4c52aa", null ],
-    [ "Dispatch", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a99d6769a9c2ab2bdee1a3db58dce6dda", null ],
-    [ "Draw", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#ae660f1a0603b87e33de1455f8111c493", null ],
-    [ "DrawIndexed", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a47b890626d3f9a8dc0c1a492774c5a9f", null ],
+    [ "Dispatch", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a0f11d4233e882f35027b2c549b52b4c5", null ],
+    [ "Draw", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#acb65e5a0d8bf080c887d73ef6e5f59c6", null ],
+    [ "DrawIndexed", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a2b83944ee9ace09b337de08a6a5eae1c", null ],
     [ "Flush", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#ab3df98f9c6382abd9ab4f80b6eee3289", null ],
-    [ "GetCurrentSequenceIndex", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a12171c7e98b3890370bf46fd7844a8bd", null ],
-    [ "GetTargetMemory", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a0649ba68eb532208fa9e511441ca85ba", null ],
     [ "Init", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a8fa4fe94ca1bae5a49d2c36a426230a6", null ],
     [ "Init", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a55a7a0f61e6f15b5327b0eadb79a255a", null ],
-    [ "IsInitialized", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a75ccc41833f620c0699986695825b702", null ],
     [ "NextSequence", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#ae73b5942155efbfd14327a24d31b2a1a", null ],
     [ "Seek", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a75185cd69c31dd2756e132c915303ef7", null ],
-    [ "SetIndexView", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#abc8f17517954bc3babb6d498e67a42f5", null ],
-    [ "SetRootConstants", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a3175fdac8fd8ef7360dc788afc1a4a79", null ],
-    [ "SetVertexView", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a4107be107176e9113b79b0b797d0ebd8", null ],
-    [ "Shutdown", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a2a5e39db46f29e841bb3f4162ad7bd9a", null ],
-    [ "m_buffer", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a9df67f9736f8f23d46bff799d9d7df55", null ],
-    [ "m_bufferOffset", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a5154113391e252744893ccac08d5ea6f", null ],
-    [ "m_maxSequences", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a4363af8c40a576e7629b4676e992e232", null ],
-    [ "m_sequenceStride", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a4291c40b712dbfde10bbcb16b341023d", null ],
-    [ "m_signature", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a76acd61f9e4b139a0816e058feba2dc3", null ]
+    [ "SetIndexView", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a9252531d0ccde109c30f2c5b64b8d41f", null ],
+    [ "SetRootConstants", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#ab4f69376199de7520e53e145bb06652c", null ],
+    [ "SetVertexView", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#abcb8a0607c0174f45846101bd9195fdb", null ],
+    [ "Shutdown", "class_a_z_1_1_r_h_i_1_1_indirect_buffer_writer.html#a2a5e39db46f29e841bb3f4162ad7bd9a", null ]
 ];

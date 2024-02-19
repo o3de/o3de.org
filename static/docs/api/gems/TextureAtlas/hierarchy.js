@@ -1,20 +1,20 @@
 var hierarchy =
 [
-    [ "Handler", null, [
+    [ "AssetBuilderSDK::AssetBuilderCommandBus::Handler", null, [
       [ "TextureAtlasBuilder::AtlasBuilderWorker", "class_texture_atlas_builder_1_1_atlas_builder_worker.html", null ]
     ] ],
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "TextureAtlasBuilder::AtlasBuilderComponent", "class_texture_atlas_builder_1_1_atlas_builder_component.html", null ],
       [ "TextureAtlasNamespace::TextureAtlasSystemComponent", "class_texture_atlas_namespace_1_1_texture_atlas_system_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "TextureAtlasNamespace::TextureAtlasNotifications", "class_texture_atlas_namespace_1_1_texture_atlas_notifications.html", null ],
       [ "TextureAtlasNamespace::TextureAtlasRequests", "class_texture_atlas_namespace_1_1_texture_atlas_requests.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "AzFramework::AssetCatalogEventBus::Handler", null, [
       [ "TextureAtlasNamespace::TextureAtlasSystemComponent", "class_texture_atlas_namespace_1_1_texture_atlas_system_component.html", null ]
     ] ],
-    [ "hash", null, [
+    [ "AZStd::hash", null, [
       [ "TextureAtlasNamespace::hash_case_insensitive", "struct_texture_atlas_namespace_1_1hash__case__insensitive.html", null ]
     ] ],
     [ "TextureAtlasBuilder::AtlasBuilderInput", "struct_texture_atlas_builder_1_1_atlas_builder_input.html", null ],
@@ -26,7 +26,7 @@ var hierarchy =
     ] ],
     [ "TextureAtlasNamespace::TextureAtlasAsset", "class_texture_atlas_namespace_1_1_texture_atlas_asset.html", null ],
     [ "TextureAtlasNamespace::TextureAtlasSystemComponent::AtlasInfo", "struct_texture_atlas_namespace_1_1_texture_atlas_system_component_1_1_atlas_info.html", null ],
-    [ "Handler", null, [
+    [ "TextureAtlasRequestBus::Handler", null, [
       [ "TextureAtlasNamespace::TextureAtlasSystemComponent", "class_texture_atlas_namespace_1_1_texture_atlas_system_component.html", null ]
     ] ]
 ];

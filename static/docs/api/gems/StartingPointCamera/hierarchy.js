@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "Handler", null, [
+    [ "AZ::GameplayNotificationBus::Handler", null, [
       [ "Camera::RotateCameraLookAt", "class_camera_1_1_rotate_camera_look_at.html", null ]
     ] ],
-    [ "MultiHandler", null, [
+    [ "AZ::GameplayNotificationBus::MultiHandler", null, [
       [ "Camera::FollowTargetFromDistance", "class_camera_1_1_follow_target_from_distance.html", null ]
     ] ],
     [ "ICameraLookAtBehavior", null, [
@@ -22,7 +22,7 @@ var hierarchy =
       [ "Camera::OffsetCameraPosition", "class_camera_1_1_offset_camera_position.html", null ],
       [ "Camera::Rotate", "class_camera_1_1_rotate.html", null ]
     ] ],
-    [ "Handler", null, [
+    [ "LmbrCentral::TagGlobalNotificationBus::Handler", null, [
       [ "Camera::AcquireByTag", "class_camera_1_1_acquire_by_tag.html", null ]
     ] ]
 ];

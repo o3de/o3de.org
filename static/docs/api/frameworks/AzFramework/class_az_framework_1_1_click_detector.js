@@ -11,7 +11,6 @@ var class_az_framework_1_1_click_detector =
       [ "Click", "class_az_framework_1_1_click_detector.html#afed38d96e276d4af7836bb30138fa2a8a316853cc3718335f11c048e33b9be98a", null ],
       [ "Release", "class_az_framework_1_1_click_detector.html#afed38d96e276d4af7836bb30138fa2a8ab8e7b465df7c5979dc731d06e84ce2cf", null ]
     ] ],
-    [ "ClickDetector", "class_az_framework_1_1_click_detector.html#a96ed6ef4a3f4ec70742ac83548518a69", null ],
     [ "DetectClick", "class_az_framework_1_1_click_detector.html#a014e7b90a9cbb3d5769a003f276a73f0", null ],
     [ "OverrideTimeNowFn", "class_az_framework_1_1_click_detector.html#aba8687a1983d4bc0db0ece775c07443e", null ],
     [ "SetClickDownEventFn", "class_az_framework_1_1_click_detector.html#a21d246bd98e66d00d558ebdce936138a", null ],

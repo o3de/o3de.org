@@ -1,6 +1,5 @@
 var class_atom_tools_framework_1_1_inspector_requests =
 [
-    [ "BusIdType", "class_atom_tools_framework_1_1_inspector_requests.html#ab5d031e2aa00283323a2b990895b5e52", null ],
     [ "AddGroup", "class_atom_tools_framework_1_1_inspector_requests.html#a204c5a856c783f6c09ac6ffe30d7f7b8", null ],
     [ "AddGroupsBegin", "class_atom_tools_framework_1_1_inspector_requests.html#a85a21ee7216a44b803f7ff242c0d1435", null ],
     [ "AddGroupsEnd", "class_atom_tools_framework_1_1_inspector_requests.html#a1b8fa9c1fb8010db88e99b03d26df670", null ],
@@ -18,7 +17,5 @@ var class_atom_tools_framework_1_1_inspector_requests =
     [ "RefreshAll", "class_atom_tools_framework_1_1_inspector_requests.html#acb02526260d2c336020c77254c842169", null ],
     [ "RefreshGroup", "class_atom_tools_framework_1_1_inspector_requests.html#a23d878959f3c2e827b2e9bfe6782e993", null ],
     [ "Reset", "class_atom_tools_framework_1_1_inspector_requests.html#a1f1d2f6011b579dc274e2dec1399f09e", null ],
-    [ "SetGroupVisible", "class_atom_tools_framework_1_1_inspector_requests.html#a42af5e2a707500e2105a65e0994189f2", null ],
-    [ "AddressPolicy", "class_atom_tools_framework_1_1_inspector_requests.html#a06809d56b4da7d5af0afc610c90b3abc", null ],
-    [ "HandlerPolicy", "class_atom_tools_framework_1_1_inspector_requests.html#a5f324c413836adba05dd5ff62cd556a4", null ]
+    [ "SetGroupVisible", "class_atom_tools_framework_1_1_inspector_requests.html#a42af5e2a707500e2105a65e0994189f2", null ]
 ];

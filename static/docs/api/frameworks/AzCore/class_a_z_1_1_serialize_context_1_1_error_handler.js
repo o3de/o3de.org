@@ -1,9 +1,7 @@
 var class_a_z_1_1_serialize_context_1_1_error_handler =
 [
-    [ "ErrorHandler", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a8d63d56ca06c7019af83c861a3cbd48b", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a5f317a063c10c2956e27037e8d4000c4", null ],
-    [ "GetErrorCount", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a0c57fa14e30d783117b445ceaae445be", null ],
-    [ "GetWarningCount", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a883f69856258f2e231a475204da2b182", null ],
+    [ "GetErrorCount", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a8bf51f64e494709de0733cd98e4e1f6f", null ],
+    [ "GetWarningCount", "class_a_z_1_1_serialize_context_1_1_error_handler.html#ae21fbe83fbddcfcf48aea1061c6d4d20", null ],
     [ "Pop", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a11b95ba906b7af3ca48e5f455460a2f5", null ],
     [ "Push", "class_a_z_1_1_serialize_context_1_1_error_handler.html#ab7cfafbde0826fc33e3eb4908c984b35", null ],
     [ "ReportError", "class_a_z_1_1_serialize_context_1_1_error_handler.html#aceb4ec8ee733af03baa21071343bf173", null ],

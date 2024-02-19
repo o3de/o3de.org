@@ -3,7 +3,6 @@ var class_barrier_input_1_1_barrier_input_system_component =
     [ "BarrierInputSystemComponent", "class_barrier_input_1_1_barrier_input_system_component.html#a9867d1bb8a128cfc5fcc42a6c53dc6bb", null ],
     [ "~BarrierInputSystemComponent", "class_barrier_input_1_1_barrier_input_system_component.html#a816dbbf97ef8c68d8e0bec62cdc543a1", null ],
     [ "Activate", "class_barrier_input_1_1_barrier_input_system_component.html#a4d6406cea5d2bb8b3b9b67455b450c8b", null ],
-    [ "AZ_COMPONENT", "class_barrier_input_1_1_barrier_input_system_component.html#af8ae53be0eee2b2981fc83ecf5ce788b", null ],
     [ "Deactivate", "class_barrier_input_1_1_barrier_input_system_component.html#a22f70296c6f9e1d697c0e85c6f19d410", null ],
     [ "DestroyBarrierClientAndInputDeviceImplementations", "class_barrier_input_1_1_barrier_input_system_component.html#a665777a97d0f77c49449b869b6c72b1d", null ],
     [ "GetIncompatibleServices", "class_barrier_input_1_1_barrier_input_system_component.html#a5b12330ef693983c65a412250191dfc3", null ],

@@ -1,27 +1,4 @@
 var struct_a_z_1_1_vulkan_1_1_sparse_image_info =
 [
-    [ "NonTailMipInfo", "struct_a_z_1_1_vulkan_1_1_sparse_image_info_1_1_non_tail_mip_info.html", "struct_a_z_1_1_vulkan_1_1_sparse_image_info_1_1_non_tail_mip_info" ],
-    [ "MemoryViews", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a074f73dec0d4c5f886c557e6635a5549", null ],
-    [ "MipMemoryBinds", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a0064b13773dde93379076fe470122416", null ],
-    [ "MultiHeapTiles", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a9eecefc267dd113f70dfe42e833633b3", null ],
-    [ "GetBindSparseInfo", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a9f9d9f5f53c5b8586d04bd41da3b0502", null ],
-    [ "GetRequiredMemorySize", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a027d339e4f18dad227b2c0e6d198d6e1", null ],
-    [ "Init", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#acb2e85ed21d62f13128899a1cdacb534", null ],
-    [ "MultiHeapTilesToMemoryViews", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#afe432a49f9e75d2db2865077083ce1b4", null ],
-    [ "UpdateMemoryBindInfo", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#ac019bef80011b3ab6a01e396e37c6491", null ],
-    [ "UpdateMipMemoryBindInfo", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a329e071fc80dd3ec4174a99e8842bbc0", null ],
-    [ "UpdateMipTailMemoryBindInfo", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a1a02c7ea1ca8712686eaf4bde58335b8", null ],
-    [ "m_blockSizeInBytes", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a4c22e886c1f643250216ecd19ebb2db3", null ],
-    [ "m_emptyMipMemoryBindInfos", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#aae21a26b126cd75da2532e1baa7042ae", null ],
-    [ "m_image", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#adb7bef3c30407418f467cd41b84afb8b", null ],
-    [ "m_mipMemoryBindInfos", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#ae0b993fa112ce617fe71f2988354427e", null ],
-    [ "m_mipTailBlockCount", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#aba507d06f82c8630f86dbf687ef25536", null ],
-    [ "m_mipTailHeapTiles", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#aa85a525d21ba35a7774e98c652af4a59", null ],
-    [ "m_mipTailMemoryBindInfo", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a78f84feeb72ec251f2b021b7f7ddfc22", null ],
-    [ "m_mipTailMemoryBinds", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#ac632c49c36e55d3ce8257d284a71fe09", null ],
-    [ "m_nonTailMipInfos", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#aa08ce3e044a3d7c361a2bcf48c1ee7cc", null ],
-    [ "m_sparseImageMemoryRequirements", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#ab2b7611801d233c4d5574cbd8e2a1213", null ],
-    [ "m_tailStartMip", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a2dc72118ca18eb11e2b8d1db5f2123b5", null ],
-    [ "m_useSingleMipTail", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#a3dfce8945da57b8500d6a84f5551c1f7", null ],
-    [ "StandardBlockSize", "struct_a_z_1_1_vulkan_1_1_sparse_image_info.html#aa299a62b8ccd74c88cb806739f1810ec", null ]
+    [ "NonTailMipInfo", "struct_a_z_1_1_vulkan_1_1_sparse_image_info_1_1_non_tail_mip_info.html", null ]
 ];

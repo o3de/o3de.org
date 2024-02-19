@@ -6,10 +6,9 @@ var class_a_z_1_1_sfmt =
     [ "Destroy", "class_a_z_1_1_sfmt.html#a388e739868ff30192674b5f47949091d", null ],
     [ "FillArray32", "class_a_z_1_1_sfmt.html#aa240f421e56e2471b4d378c0ac105833", null ],
     [ "FillArray64", "class_a_z_1_1_sfmt.html#a91b468f0f2697d72a557f383e971fda9", null ],
-    [ "GetInstance", "class_a_z_1_1_sfmt.html#a62accda63831f6f1652fa887190985c6", null ],
-    [ "GetMinArray32Size", "class_a_z_1_1_sfmt.html#a4e65757099bf42142d47d08b4aded949", null ],
-    [ "GetMinArray64Size", "class_a_z_1_1_sfmt.html#a46dc31718d723dd62e05e6baea06c2ab", null ],
-    [ "PeriodCertification", "class_a_z_1_1_sfmt.html#a5280db97a77001d2157817be73f67415", null ],
+    [ "GetInstance", "class_a_z_1_1_sfmt.html#a253d6555ad5e593ffe4a164b55cf035b", null ],
+    [ "GetMinArray32Size", "class_a_z_1_1_sfmt.html#ab8e38c50be77248ff4fa6b81ad9e25cd", null ],
+    [ "GetMinArray64Size", "class_a_z_1_1_sfmt.html#a813c8d7ecdadd3bae87eb71e6946b92d", null ],
     [ "Rand32", "class_a_z_1_1_sfmt.html#ab43dcd48159ccf297ec77cf5da30b260", null ],
     [ "Rand64", "class_a_z_1_1_sfmt.html#a00612015ebb748da1abb9993dcc7f7bf", null ],
     [ "RandR32", "class_a_z_1_1_sfmt.html#a137cb7d384809a2298a24d867550248f", null ],
@@ -17,9 +16,6 @@ var class_a_z_1_1_sfmt =
     [ "RandR32_2", "class_a_z_1_1_sfmt.html#aee390715141e43fa3b87b3a8a8a0785d", null ],
     [ "Seed", "class_a_z_1_1_sfmt.html#a285983ec2b4efd974ad9c134526e1237", null ],
     [ "Seed", "class_a_z_1_1_sfmt.html#ae5ff4bf5e348b44d41b8bc1d86c05864", null ],
-    [ "m_index", "class_a_z_1_1_sfmt.html#af0965d95bec5383c838e2ce9a48c1203", null ],
     [ "m_psfmt32", "class_a_z_1_1_sfmt.html#a7c4956c51ea8c5a882ec96a9baff1561", null ],
-    [ "m_psfmt64", "class_a_z_1_1_sfmt.html#a0c35124d7a8059068985c637bf855f5f", null ],
-    [ "m_sfmt", "class_a_z_1_1_sfmt.html#ab1c90385b970410bd6394e8dc1894de0", null ],
-    [ "m_sfmtMutex", "class_a_z_1_1_sfmt.html#abd23e17721f9547c8fb672e7716cbb94", null ]
+    [ "m_psfmt64", "class_a_z_1_1_sfmt.html#a0c35124d7a8059068985c637bf855f5f", null ]
 ];

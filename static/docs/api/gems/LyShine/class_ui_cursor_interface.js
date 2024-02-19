@@ -5,7 +5,5 @@ var class_ui_cursor_interface =
     [ "IncrementVisibleCounter", "class_ui_cursor_interface.html#a2bb6cc546a8df49b427afecc38f9937f", null ],
     [ "IsUiCursorVisible", "class_ui_cursor_interface.html#a750e3b6e9a31758222d0539c13d9bb95", null ],
     [ "SetUiCursor", "class_ui_cursor_interface.html#a4d376cafa7fc5276a1177233d3f0c671", null ],
-    [ "SetUiCursorPosition", "class_ui_cursor_interface.html#a20af33106cdbe62c92ac5b40f27a0847", null ],
-    [ "AddressPolicy", "class_ui_cursor_interface.html#a627d3500547e139922451a61670e7678", null ],
-    [ "HandlerPolicy", "class_ui_cursor_interface.html#a076e817fc75b96c1267bac6577c98b02", null ]
+    [ "SetUiCursorPosition", "class_ui_cursor_interface.html#a20af33106cdbe62c92ac5b40f27a0847", null ]
 ];

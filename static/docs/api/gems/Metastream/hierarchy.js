@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "Component", null, [
+    [ "AZ::Component", null, [
       [ "Metastream::MetastreamReflectComponent", "class_metastream_1_1_metastream_reflect_component.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "Metastream::MetastreamRequests", "class_metastream_1_1_metastream_requests.html", null ]
     ] ],
     [ "CryHooksModule", null, [
@@ -15,7 +15,7 @@ var hierarchy =
     [ "Metastream::DataCache", "class_metastream_1_1_data_cache.html", null ],
     [ "Metastream::HttpRequest", "struct_metastream_1_1_http_request.html", null ],
     [ "Metastream::HttpResponse", "struct_metastream_1_1_http_response.html", null ],
-    [ "Handler", null, [
+    [ "MetastreamRequestBus::Handler", null, [
       [ "Metastream::MetastreamGem", "class_metastream_1_1_metastream_gem.html", null ]
     ] ]
 ];

@@ -11,7 +11,5 @@ var class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications =
     [ "OnForgotPasswordFail", "class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html#a59e7e72c552ae611ee9626da180f2ce1", null ],
     [ "OnForgotPasswordSuccess", "class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html#a2a89d004880668844e019083b9835134", null ],
     [ "OnPhoneSignUpFail", "class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html#a8230885b6c7794e287fe15e2ff7b0fe6", null ],
-    [ "OnPhoneSignUpSuccess", "class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html#a2f85435d79122095ba9da9d953e6757d", null ],
-    [ "AddressPolicy", "class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html#a558bff1b0726a89cb11ba2140cfed794", null ],
-    [ "HandlerPolicy", "class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html#a54dac9a87d8b83d87fb82a6f1755c1a5", null ]
+    [ "OnPhoneSignUpSuccess", "class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html#a2f85435d79122095ba9da9d953e6757d", null ]
 ];

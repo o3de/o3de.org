@@ -1,14 +1,8 @@
 var class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9 =
 [
-    [ "GenericClassUniquePtr", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#ac523827bf65bbc8e366081309ea889d6", null ],
-    [ "AZ_TYPE_INFO", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#a8fc3ee44b88930d868c72a1dc7824786", null ],
     [ "CanStoreType", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#aa1eed4a95435769204179dde2346daeb", null ],
-    [ "GetClassData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#a1c05bd48f377e18fb915a1dd15095874", null ],
+    [ "GetClassData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#a7e30cb473b3401dade0cdfdff5af07a0", null ],
     [ "GetGenericTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#aaec04d5c4970a7d046ee2aac1e21ecc5", null ],
-    [ "GetNumTemplatedArguments", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#a4f4c2a9130df53134adea04382890863", null ],
     [ "GetSpecializedTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#ac97e19ffa06869b6b7278333fece7b7c", null ],
-    [ "GetTemplatedTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#aa8b9ff16c1f7b625e04751eec13ae35f", null ],
-    [ "Reflect", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#aa5a3580b7d3c6520b57e0a2788a3e50e", null ],
-    [ "m_classData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#a5bf2d14c15bc789474290d3afc89d12b", null ],
-    [ "m_containerStorage", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#a35ea3bd125fbba9499b2135b54b5c084", null ]
+    [ "Reflect", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#aa5a3580b7d3c6520b57e0a2788a3e50e", null ]
 ];

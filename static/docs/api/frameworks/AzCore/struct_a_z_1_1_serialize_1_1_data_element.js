@@ -5,12 +5,6 @@ var struct_a_z_1_1_serialize_1_1_data_element =
       [ "DT_BINARY", "struct_a_z_1_1_serialize_1_1_data_element.html#a6812db045bfe8ee1a97236be5b125aafaca54ac0f2357a42c3abdc4eb20e8ae3b", null ],
       [ "DT_BINARY_BE", "struct_a_z_1_1_serialize_1_1_data_element.html#a6812db045bfe8ee1a97236be5b125aafac93c53d59f0ba49e31315ea649c69543", null ]
     ] ],
-    [ "DataElement", "struct_a_z_1_1_serialize_1_1_data_element.html#a9c7b9c6645ab65abd2e648073a0c5b86", null ],
-    [ "~DataElement", "struct_a_z_1_1_serialize_1_1_data_element.html#a58e9e2e0d38fcf57476342b59b89a123", null ],
-    [ "DataElement", "struct_a_z_1_1_serialize_1_1_data_element.html#ad003718b95d9c5a3cf46fee827c3ceac", null ],
-    [ "DataElement", "struct_a_z_1_1_serialize_1_1_data_element.html#aabd61d2598fd8ee797be3bd241bbf91d", null ],
-    [ "operator=", "struct_a_z_1_1_serialize_1_1_data_element.html#ae7a04448910184efc5ec39c23d50d0bd", null ],
-    [ "operator=", "struct_a_z_1_1_serialize_1_1_data_element.html#a96686ee290a272ddf19313ec7548bb2a", null ],
     [ "m_buffer", "struct_a_z_1_1_serialize_1_1_data_element.html#a5c67c516d6d6aa160aa126d290ac01c0", null ],
     [ "m_byteStream", "struct_a_z_1_1_serialize_1_1_data_element.html#ab3048d1c47b0406ca9f5f40d48d80b5a", null ],
     [ "m_dataSize", "struct_a_z_1_1_serialize_1_1_data_element.html#ac2c0a3660ca488861adfa4c001b79fad", null ],

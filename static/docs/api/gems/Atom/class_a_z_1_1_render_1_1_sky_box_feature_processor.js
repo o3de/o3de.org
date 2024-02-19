@@ -1,29 +1,5 @@
 var class_a_z_1_1_render_1_1_sky_box_feature_processor =
 [
-    [ "SkyBoxFeatureProcessor", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a615cfebed2a4c0289ebb93478a1c94de", null ],
-    [ "~SkyBoxFeatureProcessor", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#aedde0b9fdcf490e2479c9ca412338778", null ],
     [ "Activate", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a14d5bcab830dc553dba34149b8912dba", null ],
-    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a640d547e3ed5405ef4433401104d0b14", null ],
-    [ "Deactivate", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a059a24908efa7df97590b8764a878c63", null ],
-    [ "Enable", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a4cf75b4cf687f7bbf6f4d83bfdcfac90", null ],
-    [ "IsEnabled", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a423681fa0e2ff354c433fefe4ed5e17b", null ],
-    [ "IsFogEnabled", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a61389c87df038ba0f8f2c5ae99b8ded2", null ],
-    [ "Reflect", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a73e96702e827bb656ed1a023e1833269", null ],
-    [ "Render", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#aec2a6ceabba103923993c9b8843e5434", null ],
-    [ "SetCubemap", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#ae2e755d49ed14c8b5cea6c591879d6cc", null ],
-    [ "SetCubemapExposure", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a37b47e447182e702f1dd69987d676cdf", null ],
-    [ "SetCubemapRotationMatrix", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a3b3352f4998081d2286f8ae05693818e", null ],
-    [ "SetFogBottomHeight", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a3f01a0b3dddca0df5adc6d49889fb3a1", null ],
-    [ "SetFogColor", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#ab37db2d5406af00e6248a4f96d43de89", null ],
-    [ "SetFogEnabled", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#aebfeef60d9f1efba312a2fed21ed86f6", null ],
-    [ "SetFogSettings", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a3a9ff3f5fd942d56aaf5258e06093a56", null ],
-    [ "SetFogTopHeight", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#acd6495e08187a62c517e8f5520f93068", null ],
-    [ "SetSkyboxMode", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a7cf971ab2951dffa0f170a7616694e16", null ],
-    [ "SetSkyIntensity", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#ae026ad9c57813fd06bf92c4315ea4d0a", null ],
-    [ "SetSunIntensity", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a82002eb37d1c1a8bcb4845c63b74dcd4", null ],
-    [ "SetSunPosition", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a5e25b8686a2a14414a9a3968b286257a", null ],
-    [ "SetSunPosition", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a597129cdbab28ffc8a13cd83bcb28c80", null ],
-    [ "SetSunRadiusFactor", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#ab95d2c942459269dde9a8267d490ae68", null ],
-    [ "SetTurbidity", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a1596ffd0caac3ab98e845caedf303bd3", null ],
-    [ "Simulate", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#aa92d8862ff035cb7d9beb221fa941b97", null ]
+    [ "Deactivate", "class_a_z_1_1_render_1_1_sky_box_feature_processor.html#a059a24908efa7df97590b8764a878c63", null ]
 ];
