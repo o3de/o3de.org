@@ -28,9 +28,10 @@ It is also internally used to publish static and dynamic transforms which are co
 
 Note that the simulation ROS node accessible through component's API is there as a convenience, and you can create your own nodes and executors if you wish.
 
-## ROS2RequestsBus
+## ROS2RequestsBus and ROS2Interface
 
-The `ROS2RequestBus` is an API system bus that is intended for both internal ROS 2 Gem components and external Gems.
+The `ROS2RequestBus` alongside the `ROS2Interface` is an API system bus and interface
+intended for both internal ROS 2 Gem components and external Gems.
 
 | Request Name           | Description                                                                                                      | Parameters                                                              | Return                                                     | Scriptable |
 |------------------------|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------|-|
