@@ -10,7 +10,7 @@ This tutorial teaches you how to use the **Legacy Asset Converter** to convert l
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | - | - | - | - |
-| Beginner | 10 Minutes | Convert .mtl files and test them in O3DE | February 27, 2024 |
+| Beginner | 15 Minutes | Convert .mtl files and test them in O3DE | February 27, 2024 |
 
 ## Launch the Legacy Asset Converter application
 
@@ -31,12 +31,16 @@ This utility application lies in the AtomLyIntegration gem, there is a **first-t
 
 The utility rely on the **local O3DE python install**, made accessible via a .bat file for Windows and .sh for Linux. Now that the settings are set, you can open a command line on the `DccScriptingInterface` folder and run :
 
-- `.\python foundation.py`
-- `.\python config.py`
+```cmd
+.\python foundation.py
+.\python config.py
+```
 
 Finally, you will be able to **open the Legacy Asset Converter** from this folder via the following command :
 
-- `.\python SDK\Maya\Scripts\Python\legacy_asset_converter\main.py`
+```cmd
+.\python SDK\Maya\Scripts\Python\legacy_asset_converter\main.py
+```
 
 ## Convert materials and textures
 
@@ -57,4 +61,14 @@ For now the utility **only handle *.fbx* files as entry** and will only convert 
 
 ## Import the materials in O3DE
 
-Launch O3DE and open a project (check the [Get Started](/docs/welcome-guide) section if you don't know how to proceed). Then simply open your export folder and **copy the content of `Assets` into your O3DE project `Assets` folder**. The asset processor will detect and compile the new content, and you will be able to open the material files.
+If you plan to convert the lumberyard slices and levels, it is important to **keep the same file hierarchy** that was in place in the StarterGame. We will create a **local Gem to store the assets**, in order to do so open a command line in your O3DE folder and run :
+
+```cmd
+YOUR_O3DE_REPO\scripts\o3de create-gem --gem-path CUSTOM_PATH --template-name AssetGem
+```
+
+Now the folder where you exported the materials and **copy the content of `Assets` into your O3DE gem `Assets` folder**. Do not discard the `.assetinfo` files as they provide information to O3DE on how to open the models and their Colliders/LODs. 
+
+You can either create a new O3DE project or modify an existing one. What matters is that you **add your new Gem as a dependency to your project**. You can check [this documentation](/docs/user-guide/project-config/add-remove-gems/) for a step-by-step approach to enabling gems. With that in place, next time that you open the project you should be able to browse to your exported materials and open them in the **Material Editor**.
+
+![Material Editor](/images/learning-guide/tutorials/lumberyard-to-o3de/material-editor.png)

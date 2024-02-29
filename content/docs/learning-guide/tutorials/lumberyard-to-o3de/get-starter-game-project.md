@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-This tutorial teaches you how to download and run Amazon Lumberyard Engine with its Starter Game project. Additional sections of the tutorial introduce how to build the engine from sources and use other projects.
+This tutorial teaches you how to download and run **Amazon Lumberyard Engine** with its Starter Game project. Additional sections of the tutorial introduce how to build Lumberyard from sources and use other projects.
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | - | - | - | - |
