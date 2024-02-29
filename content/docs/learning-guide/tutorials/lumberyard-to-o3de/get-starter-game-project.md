@@ -47,7 +47,7 @@ The Lumberyard asset processor does not automatically close when you exit Lumber
 
 You will need to go through the Lumberyard Setup Assistant and follow the *"Full Install"* path. You can open this assistant anytime via `SetupAssistant.bat` in the Lumberyard folder. You will need Visual Studio 2019 with its "Desktop development with C++" component properly installed.
 
-Once the setup is over, you might want to generate or re-generate a Visual Studio solution. Simply run `./lmbr_waf.bat configure --enabled-game-projects=SamplesProject,StarterGame` from the **dev** folder. Then open `dev\Solutions\LumberyardSDK_vs2019.sln` with Visual Studio 2019. 
+Once the setup is over, you might want to generate or re-generate a Visual Studio solution. Simply run `.\lmbr_waf.bat configure --enabled-game-projects=SamplesProject,StarterGame` from the **dev** folder. Then open `dev\Solutions\LumberyardSDK_vs2019.sln` with Visual Studio 2019. 
 
 To run the editor, set **Sandbox\Editor** as startup project on right click.
 
