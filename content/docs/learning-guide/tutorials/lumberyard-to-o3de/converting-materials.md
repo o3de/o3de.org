@@ -29,7 +29,7 @@ This utility application lies in the AtomLyIntegration gem, there is a **first-t
 "O3DE_DEV" is the location of your local O3DE github repository. "PATH_O3DE_3RDPARTY" is the 3rd party install folder (by default `C:\Users\CURRENT_USER\.o3de\3rdParty`). "PATH_O3DE_BIN" is the folder where the O3DE `editor.exe` is available. "DCCSI_LOG_PATH" is the location where the logs for this tool will be outputed, you can use anything.
 {{< /note >}}
 
-The utility rely on the **local O3DE python install**, made accessible via a .bat file for Windows and .sh for Linux. Now that the settings are set, you can open a command line on the `DccScriptingInterface` folder and run :
+The utility rely on the **local O3DE python install**, made accessible via a `.bat` file for Windows and `.sh` for Linux. Now that the settings are set, you can open a command line on the `DccScriptingInterface` folder and run :
 
 ```cmd
 .\python foundation.py

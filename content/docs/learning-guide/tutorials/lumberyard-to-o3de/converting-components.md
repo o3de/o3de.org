@@ -67,7 +67,7 @@ This means that you **need to delete layers by hand and move their entities to a
 
 Don't forget to close the asset processor from the task bar once that you close Lumberyard, else the O3DE asset processor will not be launched.
 
-![Remove Layers](/images/learning-guide/tutorials/lumberyard-to-o3de/remove-layer.gif)
+{{< video src="/images/learning-guide/tutorials/lumberyard-to-o3de/remove-layer.mp4" info="Remove layers." autoplay="true" loop="true" >}}
 
 ## Run the Legacy Content Conversion script
 
