@@ -61,13 +61,11 @@ You will be able to revert this change once that you have successfuly ran the Le
 
 ## Remove layers from the Lumberyard level
 
-{{< note >}}
-This step is the most time consuming but won't be necessary anymore in the near future
-{{< /note >}}
-
 In theory level layers are still supported by O3DE when prefab system is disabled. However in practice with levels as large as the StarterGame it will crash when you open the level. Moreover, the SerializeContextTools used to convert levels to prefab in the next section is not yet able to parse layers.
 
 This means that you **need to delete layers by hand and move their entities to a new parent entity**. For nested layers you need to do the same operation. It takes around 25 minutes to do this on the StarterGame level.
+
+Don't forget to close the asset processor from the task bar once that you close Lumberyard, else the O3DE asset processor will not be launched.
 
 ![Remove Layers](/images/learning-guide/tutorials/lumberyard-to-o3de/remove-layer.gif)
 

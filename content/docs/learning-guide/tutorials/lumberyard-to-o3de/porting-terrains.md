@@ -12,4 +12,15 @@ This tutorial teaches you how **export terrain data from Lumberyard** to a set o
 | - | - | - | - |
 | Beginner | 15 Minutes | Port terrain data from Lumberyard to O3DE | February 27, 2024 |
 
+## Export heightmap and splat maps from Lumberyard
+
+Todo
+
+## Re-create terrain materials in O3DE
+
+Todo
+
+## Create the terrain in O3DE
+
+Todo
 
