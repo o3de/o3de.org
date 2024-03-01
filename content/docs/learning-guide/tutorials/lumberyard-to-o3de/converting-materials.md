@@ -10,7 +10,7 @@ This tutorial teaches you how to use the **Legacy Asset Converter** to convert l
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | - | - | - | - |
-| Beginner | 15 Minutes | Convert .mtl files and test them in O3DE | February 27, 2024 |
+| Beginner | 15 Minutes | Convert `.mtl` files and test them in O3DE | February 27, 2024 |
 
 ## Launch the Legacy Asset Converter application
 
@@ -48,7 +48,7 @@ The tool will greet you with a friendly UI that will allow you to select options
 
 ![Legacy Asset Converter](/images/learning-guide/tutorials/lumberyard-to-o3de/legacy-asset-converter.png)
 
-1. Click on the button to set the input folder containing the *.mtl* files.
+1. Click on the button to set the input folder containing the `.mtl` files.
 2. Click on the button to set the output folder.
 3. Click to launch the conversion
 4. You can follow the progress via this bar
@@ -56,7 +56,7 @@ The tool will greet you with a friendly UI that will allow you to select options
 Most of the assets for the **StarterGame** project are located in the folder `LUMBERYARD_FOLDER\dev\Gems\StarterGame`. It is recommended to convert one Gem at a time by using its `Assets` folder as input, as it will keep the folder hierarchy. Some materials are not yet supported by the conversion, you can check the `legacy_asset_converter\constants.py` file to see the supported types.
 
 {{< known-issue >}}
-For now the utility **only handle *.fbx* files as entry** and will only convert their associated *.mtl* files. Materials with no .fbx association such as terrain or effect materials will not be converted (will be fixed in the near future).
+For now the utility **only handle *.fbx* files as entry** and will only convert their associated `.mtl` files. Materials with no .fbx association such as terrain or effect materials will not be converted (will be fixed in the near future).
 {{< /known-issue >}}
 
 ## Import the materials in O3DE

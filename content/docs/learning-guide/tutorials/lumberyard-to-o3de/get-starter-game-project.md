@@ -12,7 +12,9 @@ This tutorial teaches you how to download and run **Amazon Lumberyard Engine** w
 | - | - | - | - |
 | Beginner | 15 Minutes | Install Lumberyard and open a project | February 27, 2024 |
 
-_Disclaimer: As Lumberyard can only run on Windows, this tutorial can only be followed by Windows users_
+{{< note >}}
+As Lumberyard can only run on Windows, this tutorial can only be followed by Windows users
+{{< /note >}}
 
 ## Clone the Lumberyard github repository
 
@@ -50,6 +52,18 @@ You will need to go through the Lumberyard Setup Assistant and follow the *"Full
 Once the setup is over, you might want to generate or re-generate a Visual Studio solution. Simply run `.\lmbr_waf.bat configure --enabled-game-projects=SamplesProject,StarterGame` from the **dev** folder. Then open `dev\Solutions\LumberyardSDK_vs2019.sln` with Visual Studio 2019. 
 
 To run the editor, set **Sandbox\Editor** as startup project on right click.
+
+If you encounter a build error, check the `LocalFileIO.cpp` and update the `SetAlias` method like this
+
+```cpp
+void LocalFileIO::SetAlias(const char* key, const char* path)
+{
+    ClearAlias(key);
+    char fullPath[AZ_MAX_PATH_LEN];
+    ConvertToAbsolutePath(path, fullPath, AZ_MAX_PATH_LEN);
+    m_aliases.push_back(AliasType(key, fullPath));
+}
+```
 
 ## (Optional) Try out other samples
 

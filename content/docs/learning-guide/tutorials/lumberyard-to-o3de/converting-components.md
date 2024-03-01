@@ -10,7 +10,7 @@ This tutorial teaches you how to use the **Legacy Content Conversion** on Lumber
 
 | O3DE Experience | Time to Complete | Feature Focus | Last Updated |
 | - | - | - | - |
-| Intermediate | 30 Minutes | Convert legacy components and open .ly and .slice files with O3DE | February 27, 2024 |
+| Intermediate | 1 Hour | Convert legacy components and open `.ly` and `.slice` files with O3DE | February 27, 2024 |
 
 {{< note >}}
 You will need to use a **custom build** of O3DE to follow this tutorial. Check [Settings up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github/) to learn how to proceed.
@@ -42,7 +42,7 @@ If you are converting the StarterGame project, you should rename or delete the `
 
 ## Generate the AssetCatalog file
 
-The `assetcatalog.xml` file is a list of every assets processed for a given project along with their relative path and asset id. It is generated when you open a O3DE project (under `YOUR_PROJECT_FOLDER\Cache\pc`) and we rely on it to **find the asset ids that O3DE attributed to our exported assets**.
+The `assetcatalog.xml` file is a list of every assets processed for a given project along with their relative path and asset id. It is generated when you open a O3DE project (under `YOUR_PROJECT_FOLDER\Cache\pc`) and we rely on it to **find the asset ids that O3DE attributed to our converted assets**.
 
 We need a custom build of O3DE because this file is in binary by default and we need to change that to XML to be able to parse it in our pyton script. Open a code editor and go to `YOUR_O3DE_REPO/Tools/AssetProcessor/native/AssetManager/AssetCatalog.cpp`. In `AssetCatalog::SaveRegistry_Impl()` change `AZ::ObjectStream::ST_BINARY` to `AZ::ObjectStream::ST_XML`.
 
@@ -57,6 +57,20 @@ AZ::ObjectStream* objStream = AZ::ObjectStream::Create(&catalogFileStream, *seri
 
 Then delete the `Cache` folder inside of your project folder and relaunch the engine. You will have to wait for the asset processor tasks to be over (if you used Lumberyard before make sure to **close the Lumberyard Asset Processor** in the task bar before launching O3DE).
 
+You will be able to revert this change once that you have successfuly ran the Legacy Content Conversion script.
+
+## Remove layers from the Lumberyard level
+
+{{< note >}}
+This step is the most time consuming but won't be necessary anymore in the near future
+{{< /note >}}
+
+In theory level layers are still supported by O3DE when prefab system is disabled. However in practice with levels as large as the StarterGame it will crash when you open the level. Moreover, the SerializeContextTools used to convert levels to prefab in the next section is not yet able to parse layers.
+
+This means that you **need to delete layers by hand and move their entities to a new parent entity**. For nested layers you need to do the same operation. It takes around 25 minutes to do this on the StarterGame level.
+
+![Remove Layers](/images/learning-guide/tutorials/lumberyard-to-o3de/remove-layer.gif)
+
 ## Run the Legacy Content Conversion script
 
 The script is located in `YOUR_O3DE_REPOSITORY\Gems\AtomLyIntegration\CommonFeatures\Assets\Editor\Scripts\LegacyContentConversion\LegacyComponentConverter.py`. By itself the script is straightforward and has no third-party dependencies, however **it expects to be launched from the Lumberyard dev folder** so you need to open a command line there. Then run (make sure to update the args) :
@@ -65,7 +79,7 @@ The script is located in `YOUR_O3DE_REPOSITORY\Gems\AtomLyIntegration\CommonFeat
 YOUR_O3DE_REPOSITORY\python\python SCRIPT_PATH\LegacyComponentConverter.py -project=StarterGame -include_gems -assetCatalogOverridePath=YOUR_O3DE_PROJECT_PATH\Cache\pc\assetcatalog.xml
 ```
 
-You will see multiple warnings about *"Could not match (...) to a corresponding source atom material"*. If you look closely this warnings are always about "_physics" or "_proxy" materials. This is done on purpose as these materials are not really supported in Atom so we simply skip them.
+You will see multiple warnings about *"Could not match (...) to a corresponding source atom material"*. If you look closely these warnings are always about *"_physics"* or *"_proxy"* materials. This is done on purpose as these materials are not really supported in Atom so we simply skip them (they are skipped via the "Skip White Texture Materials" in the Legacy Asset Converter).
 
 {{< caution >}}
 This **tool is destructive**, it changes the files inline and does not create a copy. It is recommended that you track your Gems, Levels and Slice Lumberyard folders with Git (or make a copy) if you want to go back after the conversion.
@@ -75,7 +89,7 @@ If you want to check the diff between old and new slice files, make sure to hide
 
 ## (Optional) Open the modified Lumberyard level in your O3DE project
 
-For now O3DE is still able to open .slice and .ly files but [support will be removed from the engine](https://github.com/o3de/sig-content/issues/148) at some point. To toggle this setup, you just need to **disable the prefab system** via an hidden user setting. Create a new file or replace the content in `YOUR_O3DE_PROJECT\user\Registry\editorpreferences.setreg` with what is shown below.
+For now O3DE is still able to open `.slice` and `.ly` files but [support will be removed from the engine](https://github.com/o3de/sig-content/issues/148) at some point. To toggle this setup, you just need to **disable the prefab system** via an hidden user setting. Create a new file or replace the content in `YOUR_O3DE_PROJECT\user\Registry\editorpreferences.setreg` with what is shown below.
 
 ```json
 {
