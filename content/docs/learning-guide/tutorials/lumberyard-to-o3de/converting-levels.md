@@ -32,7 +32,14 @@ Then paste it in the `Command Arguments` field under the Debugging section. Agai
 
 ![Launch arguments](/images/learning-guide/tutorials/lumberyard-to-o3de/serialize-context-tools-launch.png)
 
-Finally you will be able to launch the process. Once everything is over you will encounter an Assertion during the application Teardown, just exit the program when it happens, the `.prefab` files where already generated next to the `.slice` files.
+For now you also need to remove the `AZ_Assert` in the `Instance.cpp` file in the two following methods :
+
+```cpp
+void Instance::ClearEntities()
+bool Instance::RegisterEntity()
+```
+
+Finally you will be able to launch the process. Once everything is over you will encounter an Assertion during the application Teardown (you will see `SerializeContextTools.exe!AZ::ModuleManager::UnloadModules()` in the callstack). Just exit the program when it happens, the `.prefab` files where already generated next to the `.slice` files.
 
 ## Copy the prefab files to your O3DE project
 
