@@ -53,6 +53,8 @@ O3DE requires CMake {{< versions/cmake >}} or higher.
 | [O3DE Packages](packages) | Learn about the O3DE package system that's used to ship binaries along with your Gem or project. |
 | [Troubleshooting](troubleshooting) | How to debug and troubleshoot CMake and build problems. |
 | [CMake Settings Reference](reference) | Reference for user-configurable CMake settings specific to O3DE. |
+| [Script-Only 'Quick-Start' Projects](script-only-projects) | Details about Script only 'Quick Start' projects. |
+| [Templates](templates) | Information about Project, Gem, and other Templates available in the engine |
 
 ## Related topics
 
