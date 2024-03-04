@@ -9,7 +9,7 @@ weight: 100
 
 Robots described in either [SDFormat](http://sdformat.org/), [URDF](http://wiki.ros.org/urdf), or [XACRO](http://wiki.ros.org/xacro) format, can be imported into your O3DE simulation project using the Robot Importer. The tool creates O3DE entities and components that model a robot. You can find more details about Robot Importer in the [documentation](/docs/user-guide/interactivity/robotics/importing-robot/). 
 
-SDFormat standard allows the extension of the functionality of the imported robot by adding _plugins_ to the description. The same description can be incorporated into URDF and XACRO files using `<gazebo>` tag. Technically, such a plugin is a dynamically loaded chunk of code that can extend _world_, _model_, or _sensor_ description. Currently, only _models'_ and _sensors'_ _plugins_ are supported. Please refer to [SDformat sensors page](./sdformat-sensors.md) to learn more about sensors' _plugins_. 
+SDFormat standard allows the extension of the functionality of the imported robot by adding _plugins_ to the description. The same description can be incorporated into URDF and XACRO files using `<gazebo>` tag. Technically, such a plugin is a dynamically loaded chunk of code that can extend _world_, _model_, or _sensor_ description. Currently, only _models_, _sensors_ and _plugins_ are supported. Please refer to [SDformat sensors page](./sdformat-sensors.md) to learn more about _sensors_ and _plugins_. 
 
 ## Plugin import architecture
 

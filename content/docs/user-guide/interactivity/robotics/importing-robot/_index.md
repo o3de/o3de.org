@@ -27,7 +27,7 @@ Robot models are typically available in packages that include the robot descript
 Import robots into your O3DE simulation project using the Robot Importer that's included in the ROS 2 Gem. Robot Importer has the following features:
 
 - Guides you through the import process step by step.
-- Allows to change parameters of the import, including search paths for assets.
+- Allows you to change parameters of the import, including search paths for assets.
 - Reads SDFormat, URDF and XACRO files.
 - Copies all required assets files to the `Assets` folder of your O3DE project.
 - Creates a prefab with a multi-body structure using articulations or classic rigid bodies and joints components.
