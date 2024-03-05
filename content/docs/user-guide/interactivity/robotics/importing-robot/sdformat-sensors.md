@@ -43,7 +43,7 @@ First, you need to declare `ROS2::SDFormat::SensorImporterHook` structure that c
 * set of the supported parameters in the input robot description (used for import verbose only)
 * registered callback function that is invoked by Robot Importer when _hook's_ definition matches the input data
 
-The registered callback function creates a number of O3DE components that are necessary to simulate a particular sensor. Additionally, it parses the robot description file to read certain processing parameters and lists the supported sensors and plugins. Your sample implementation for `sdf::SensorType::NAVSAT` that implements `libgazebo_myps_sensor.so` in O3DE can look as follows:
+The registered callback function creates a number of O3DE components that are necessary to simulate a particular sensor. Additionally, it parses the robot description file to read certain processing parameters and lists the supported sensors and plugins. Your sample implementation for `sdf::SensorType::NAVSAT` that implements `libgazebo_mygps_sensor.so` in O3DE can look as follows:
 
 ```cpp
 ROS2::SDFormat::SensorImporterHook ROS2SensorHooks::MyGNSSSensor()
