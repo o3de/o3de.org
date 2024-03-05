@@ -13,7 +13,7 @@ The Kythera AI Gem adds a broad toolset of AI features to **Open 3D Engine (O3DE
 
 The Gem is available from our website at [https://www.kythera.ai/kythera-for-o3de](https://www.kythera.ai/kythera-for-o3de).
 
-* [Kythera AI Gem Setup](kythera-ai-gem-setup) - How to install the Kythera AI Gem and get started
+* [Kythera AI Gem Setup](setup) - How to install the Kythera AI Gem and get started
 
 ## 2D navigation
 
