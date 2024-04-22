@@ -143,17 +143,13 @@ As with the other operating systems, [CMake {{< versions/cmake >}} or later](htt
 
 O3DE requires [Clang](https://clang.llvm.org/get_started.html) and the [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/) to compile all of the native C++ code. The minimum version of Clang required by O3DE is clang-12.
 
-{{< tabs name="Clang install" >}}
-{{% tab name="22.04 LTS" %}}
-
-You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
-
-```shell
+{{< note >}}
+The default version of clang on Ubuntu 22.04 LTS is 14, which satisfies the minimum requirement. Installing clang and the GNU C++ Library can be done through `apt`.
+```
 sudo apt install libstdc++-12-dev clang
 ```
+{{< /note >}}
 
-{{% /tab %}}
-{{< /tabs >}}
 
 ### Vulkan supported video drivers
 
