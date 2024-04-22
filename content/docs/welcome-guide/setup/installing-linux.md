@@ -109,7 +109,7 @@ Example of launching Project Manager from the shell:
 ## Installing O3DE from a Snap package
 
 {{< note >}}
-The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 20.04 and 22.04 LTS. You will need to install all of the dependencies listed in [Linux requirements](/docs/welcome-guide/requirements/#linux).
+The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 22.04 LTS. You will need to install all of the dependencies listed in [Linux requirements](/docs/welcome-guide/requirements/#linux).
 {{< /note >}}
 
 1. Download the Snap package from the [O3DE download](https://o3de.org/download/#linux) page or get instructions from the [Snap store](https://snapcraft.io/o3de).
