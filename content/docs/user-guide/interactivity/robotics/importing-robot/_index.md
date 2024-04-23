@@ -149,6 +149,6 @@ You can either resolve the issues now or after you finish using Robot Importer:
 
 Use the Robot Importer to re-import URDF files. In some cases, assets (mesh files) don't update if they were previously imported correctly. To work around this and do a complete re-import, delete the assets from your project by using the Asset Browser or in the directory.
 
-### Details
+### More information
 
-Details about supported SDFormat sensors are available in the [SDFormat sensors sub-page](./sdformat-sensors.md). Additional information about SDFormat model plugins are given in the [SDFormat plugins sub-page](./sdformat-plugins.md).
+Details about supported SDFormat sensors are available in the [SDFormat sensors sub-page](./sdformat-sensors.md). Additional information about SDFormat model plugins are given in the [SDFormat plugins sub-page](./sdformat-plugins.md). You might be interested in checking a more thorough import description of [Turtlebot4 robot](https://clearpathrobotics.com/turtlebot-4/) in the [Importing Turtlebot4](./importing-turtlebot4.md) sub-page.
