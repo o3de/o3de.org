@@ -98,15 +98,10 @@ To register robotic templates and assets:
     cd ${O3DE_EXTRAS_HOME}
     git lfs install && git lfs pull
     ```
-2. Register the following robotic templates and assets.
+2. Register the following templates and assets from o3de-extras.
     ```bash
-    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ProteusRobot
-    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/RosRobotSample
-    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseAssets
-    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseSample
-    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2FleetRobotTemplate
-    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2RoboticManipulationTemplate
-    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate
+    ${O3DE_HOME}/scripts/o3de.sh register --all-gems-path ${O3DE_EXTRAS_HOME}/Gems/
+    ${O3DE_HOME}/scripts/o3de.sh register --all-templates-path ${O3DE_EXTRAS_HOME}/Templates/
     ```
    
 For more information, refer to [Adding and Removing Gems](/docs/user-guide/project-config/add-remove-gems/) and [Registering Gems](/docs/user-guide/project-config/register-gems/).
@@ -158,10 +153,13 @@ cd $PROJECT_PATH
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
 cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets 
 ```
-
-These commands build O3DE with PhysX 5 (as opposed to default PhysX 4), which is better suited for robotic simulation.
-For a deeper understanding on how O3DE projects are built, please refer to [Configure and Build](/docs/user-guide/build/configure-and-build).
-
+{{<note>}}
+Before version 24.10, PhysX 5 was experimental and compiled during the engine's source code compilation process. 
+If you're utilizing version 23.10.2 or an earlier release, you'll need to specify an additional flag: `-DAZ_USE_PHYSX5:BOOL=ON`.
+```shell
+cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
+```
+{{</note>}}
 ### Launching your project in O3DE Editor
 
 Once your project is built, run the following command to start the Editor:
