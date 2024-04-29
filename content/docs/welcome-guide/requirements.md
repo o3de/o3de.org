@@ -136,73 +136,20 @@ The following instructions describe how to retrieve and install the required sof
 
 ### CMake {#linux-cmake}
 
-As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it with the following command.
+As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you can upgrade it to the current version from CMake's [download](https://cmake.org/download/) page.
 
-```shell
-sudo apt remove cmake
-```
-
-Install CMake using the instructions for the version of Ubuntu that you have installed:
-
-{{< tabs name="CMake install" >}}
-{{% tab name="20.04 LTS" %}}
-
-In order to get the latest version of CMake for Ubuntu 20.04 LTS, you can add the Kitware APT repository to your Ubuntu package list and run `apt` to install it. Refer to [Kitware APT Page](https://apt.kitware.com/) for more information.
-
-```shell
-wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
-
-echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ focal main' | sudo tee /etc/apt/sources.list.d/kitware.list >/dev/null
-
-sudo apt update
-
-sudo apt install cmake
-```
-
-{{% /tab %}}
-{{% tab name="22.04 LTS" %}}
-
-You can install the default version of CMake for Ubuntu 22.04 LTS. For additional information, refer to the CMake [download page](https://cmake.org/download/#latest).
-
-```shell
-sudo apt install cmake
-```
-
-{{% /tab %}}
-{{< /tabs >}}
-
-Once installed, verify that the version meets the minimum version criteria.
-
-```shell
-cmake --version
-```
 
 ### Clang
 
-O3DE requires [Clang](https://clang.llvm.org/get_started.html) and the [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/) to compile all of the native C++ code.
+O3DE requires [Clang](https://clang.llvm.org/get_started.html) and the [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/) to compile all of the native C++ code. The minimum version of Clang required by O3DE is clang-12.
 
-Install Clang and the GNU C++ Library using the instructions for the version of Ubuntu that you have installed:
-
-{{< tabs name="Clang install" >}}
-{{% tab name="20.04 LTS" %}}
-
-The minimum version of Clang required by O3DE is clang-12. To override the older default version of Clang for Ubuntu 20.04 LTS during the installation of Clang, you will need to specify a version as part of the install command. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
-
-```shell
-sudo apt install libstdc++-9-dev clang-12
+{{< note >}}
+The default version of clang on Ubuntu 22.04 LTS is 14, which satisfies the minimum requirement. Installing clang and the GNU C++ Library can be done through `apt`.
 ```
-
-{{% /tab %}}
-{{% tab name="22.04 LTS" %}}
-
-You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
-
-```shell
 sudo apt install libstdc++-12-dev clang
 ```
+{{< /note >}}
 
-{{% /tab %}}
-{{< /tabs >}}
 
 ### Vulkan supported video drivers
 
