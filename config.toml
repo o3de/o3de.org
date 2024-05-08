@@ -36,7 +36,7 @@ sourceRepo = "https://github.com/o3de/o3de"
 # Docs version data format: ["display name", "baseURL"]
 # Note: A version that has "www.o3de.org" in its baseURL will get " (latest)" appended to its display name in the version selector.
 versions = [
-  ["23.10.1", "https://docs.o3de.org"],
+  ["23.10.3", "https://docs.o3de.org"],
   ["development", "https://development--o3deorg.netlify.app"],
   ["23.10", "https://version-2310--o3deorg.netlify.app"],
   ["23.05", "https://version-2305--o3deorg.netlify.app"],
