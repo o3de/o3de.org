@@ -45,6 +45,15 @@ game_load_screen_bink_path="Videos\GameLoadingScreen.bk2"
 game_load_screen_minimum_time=5
 ```
 
+## Modifying a Splash Screen (Renderer Loading Screen) on Linux
+
+A splash screen serves as a loading screen for the renderer. Typically, the renderer takes a few seconds to boot up, during which time even the game's loading screen cannot be displayed. To prevent an awkward black screen during this period, you can use the splash screen settings to display a static PNG image. Please note that transparency will not be respected and should be replaced with black.
+
+To set a custom splash screen, replace the `logo.png` file located at `Code/Framework/AzFramework/Platform/Common/Xcb/AzFramework/logo.png`. It's crucial that the filename remains unchanged and the image is an 8-bit PNG. This image will be injected into the O3DE code during compilation, so a rebuild of the engine is necessary for the change to take effect.
+
+For the best results, follow up this splash screen with a UI-based game loading screen, as it loads quickly. If you don't, you may still see a black screen during the period when Atom has started loading, taken control over the display, but has not yet begun to output the rendered scene.
+
+
 ## Defining a Level Loading Screen 
 
 To define a level loading screen, first do one of the following:
