@@ -150,12 +150,12 @@ For convenience, here is an example of parametrized CMake calls:
 
 ```shell
 cd $PROJECT_PATH
-cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
+cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON
 cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets 
 ```
 {{<note>}}
-Before version 24.10, PhysX 5 was experimental and compiled during the engine's source code compilation process. 
-If you're utilizing version 23.10.2 or an earlier release, you'll need to specify an additional flag: `-DAZ_USE_PHYSX5:BOOL=ON`.
+Before version 24.09, PhysX 5 was experimental and compiled during the engine's source code compilation process. 
+If you're utilizing version 23.10.3 or an earlier release, you'll need to specify an additional flag: `-DAZ_USE_PHYSX5:BOOL=ON` :
 ```shell
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
 ```
