@@ -129,7 +129,7 @@ If the current CMake version was not returned because CMake cannot be found, loc
 The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}.
 
 {{< note >}}
-Support for Ubuntu on 64-bit ARMv8 processors is in an experimental stage.
+Support for Ubuntu 24.04 LTS and Ubuntu on 64-bit ARMv8 processors is in an experimental stage.
 {{< /note >}}
 
 The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt` command-line utility.
