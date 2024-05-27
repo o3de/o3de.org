@@ -11,15 +11,15 @@ To avoid performance issues, debugging features are disabled by default.
 
 **To enable HPHA memory debugging**
 
-1. In the engine source `Code\Framework\AzCore\AzCore\Memory\HphaSchema.cpp` file, uncomment the following line:
+1. In the system allocator source file [SystemAllocator.cpp](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/SystemAllocator.cpp#L54) file, change the HphaSchema to use the HphaSchemaBase with the debug option set to true:
 
-   ```
-   #define DEBUG_ALLOCATOR
-   ```
+```c++
+m_subAllocator = AZStd::make_unique<HphaSchemaBase<true>>();
+```
 
-1. Save the file.
+2. Save the file.
 
-1. Perform a build in debug mode. For more information, see [Building O3DE projects](/docs/user-guide/build/).
+3. Perform a build in debug mode. For more information, see [Building O3DE projects](/docs/user-guide/build/).
 
 ## Characteristics and Limitations 
 
@@ -34,6 +34,10 @@ Because of certain limitations, the HPHA debugger can help find memory issues bu
 ## How Memory Debugging Works 
 
 Some memory debugging features detect memory issues when an allocation is freed, and others detect issues when the HPHA allocator is destroyed. The memory debugging works by keeping a set of debug records for each allocation. When memory is requested or returned, the debugger compares the allocation or deallocation operation with the debug records. When anomalies are detected, the debugger enforces rules with asserts. The following sections describe the asserts that occur for the different memory operations.
+
+### Enabling Overrun Detection
+
+The [AZ::AllocatorDebug::UsesMemoryGuard](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/IAllocator.h#L105-L106) property can be used when implementing the IAllocator [GetDebugConfig()](https://github.com/o3de/o3de/blob/298cb5945b35fdc2d016501b5d16235536332292/Code/Framework/AzCore/AzCore/Memory/SystemAllocator.cpp#L58-L65) function to turn on memory overrun detection.  
 
 ### Allocations 
 
