@@ -13,6 +13,7 @@ For more technical details, see [Atom Developer Guide - Material System](/docs/a
 |--------------------------------------|---------|
 | [Material System Overview](material-system/) | An overview of the material system. |
 | [PBR Materials](pbr/) | The basic concepts of physically based rendering and how it applies to Atom's PBR shading model. |
+| [Wrinkle Masks for Skin Materials](wrinkle-masks/) | Workflow for using wrinkle masks with the skin material type. |
 | [Material File Specification](material-file-spec/) | JSON reference for material data. |
 | [Material Type File Specification](material-type-file-spec/) | JSON reference for material type data. |
 
