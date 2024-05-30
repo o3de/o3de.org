@@ -6,11 +6,13 @@ description: High Level Developer Overview for the Project Export command.
 
 ## Motivation
 
-Before the 23.10 release of O3DE, exporting game projects for sharing has been a very difficult task for new users. A lot of cognitive burden to keep track of the various tools required to process the game, requiring interaction with multiple independent tools (i.e. CMake, AssetProcessor, AssetBundler, etc.). For experienced users, there was a lack of standardized automation for the most common tasks.
+Before the 23.10 release of O3DE, exporting game projects for sharing was a very difficult task for new users. There was a lot of cognitive burden to keep track of the tools required to process the game, requiring interaction with multiple independent parts (i.e. CMake, AssetProcessor, AssetBundler, etc.). For experienced users, there was also a lack of unified automation for the most common tasks.
 
-This causes the export experience to be highly error prone. At the same time, the export system should follow the spirit of modularity found in other parts of the O3DE ecosystem, as diverse needs grow overtime in the open source ecosystem.
+This caused the export experience to be highly error prone. 
 
 To put this in perspective, back in Q4 2022, an engineer took 1 week to manually package the Newspaper Delivery Game demo project. The same process with the Project Export command takes 2-15 minutes.
+
+The Project Export command also follows the spirit of modularity found in other parts of the O3DE ecosystem, as diverse needs grow overtime in the open source ecosystem.
 
 ## Command Setup
 The `export-project` command has the following setup:
@@ -29,13 +31,18 @@ The entry function is called [`_run_export_script`](https://github.com/o3de/o3de
 ##### Layer 1: **`_run_export_script`**  
 Enables logging and sets up the user arguments to be fed into the export system.
 ##### Layer 2: **[`_export_script`](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L307)** 
-Validate the user supplied export script and project, and determine the locations (if the user supplied a relative path). In some cases, check to see if the user asked for the O3DE standard export scripts. Error out early if something goes wrong. Otherwise construct an [O3DE Context](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L112) object and proceed to the next layer.
-##### Layer 3: **[`execute_python_script`](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L235)** 
-This is one of the APIs readily available for custom use with any export script. In this context it is used to run the main script supplied by the user. It first modifies the session's system path using [prepend_to_system_path](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/utils.py#L154) to include directories for the O3DE CLI folder, as well as the folder of the user's Export Script. This allows users to easily import the API functionality using nothing more than `import o3de`. From here, the fourth layer actually executes the script.
-##### Layer 4: **[load_and_execute_script](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/utils.py#L167)**
-This function uses Python's importlib functionality to load external scripts. It also utilizes `setattr` to inject the script module with the O3DE Context that was created at layer 2. This allows for seamless usage of O3DE export data as the script runs.
+Validates the user supplied export script and project, and determine the locations (if the user supplied a relative path). In some cases, this layer will check to see if the user asked for the O3DE standard export scripts. 
 
-Execution of these four layers will successfully load and run the user's Export Script, setting it up with a built in O3DE context, and the necessary path environment to natively use O3DE Python API.
+If anything went wrong in validation, this layer halts. Otherwise it constructs an [O3DE Context](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L112) object and proceeds to the next layer.
+##### Layer 3: **[`execute_python_script`](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L235)** 
+Runs the main Export Script supplied by the user. It first modifies the session's system path using [prepend_to_system_path](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/utils.py#L154) to include directories for the O3DE CLI folder, as well as the folder of the user's Export Script. This allows users to easily import the API functionality using nothing more than `import o3de`. From here, the fourth layer actually executes the script.
+
+`execute_python_script` is one of the APIs readily available for custom use with any export script. 
+
+##### Layer 4: **[load_and_execute_script](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/utils.py#L167)**
+This function uses Python's `importlib` functionality to load external scripts. It also uses `setattr` to inject the script module with the O3DE Context that was created at layer 2. This allows for seamless usage of O3DE export data as the script runs.
+
+Execution of these four layers will successfully load and run the user's Export Script, setting it up with a built-in O3DE context, and the necessary path environment to natively use O3DE Python API.
 
 ## Standard Export Script
 
@@ -53,7 +60,7 @@ These functions are defined as top level APIs so that other systems can utilize 
 
 `export_standalone_project` is the workhorse responsible for preparing the project as a game for PC. These are the main steps in this process: 
 1. Determine Engine type, validate paths and arguments, and determine levels and seedlists to package. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L84-L128)
-1. Determine whether to build toolchain or not. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L133-L141)
+1. Determine whether to build the toolchain or not. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L133-L141)
 1. Prepare and bundle assets. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L144-L156)
 1. Build the target executables of the game. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L159-L178)
 1. Prepare export package output directory layout. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L181-L208)
@@ -89,5 +96,5 @@ Setting up the export layout directory takes the following steps:
 1. Reset the directory folder structure, and clear old files. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L934-L939)
 2. Copy all bundles and configuration files that are not ignored. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L943-L959)
 3. Copy files from any additional file patterns the user specified. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L961-L963)
-4. If we are using profile mode, add an additional setregpatch file to run standalone without asset processor. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L968-L975)
-5. If user specified it, archive the layout directory (for example as a zip file). [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L978-L982)
+4. If we are using profile mode, add an additional setregpatch file to run standalone without the AssetProcessor. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L968-L975)
+5. If user specified, archive the layout directory (for example as a zip file). [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L978-L982)
