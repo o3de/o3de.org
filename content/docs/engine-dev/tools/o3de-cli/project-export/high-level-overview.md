@@ -19,7 +19,7 @@ The `export-project` command has the following setup:
 
 ![Project Export CLI setup](/images/engine-dev/o3de-cli/project-export/project-export-cli-setup.png)
 
-The central driver of the command is the Export Script. In O3DE, the Export Script is simply any python script that the user wishes to run using the O3DE Python CLI.
+The central driver of the command is the Export Script. In O3DE, the Export Script is simply any Python script that the user wishes to run using the O3DE Python CLI.
 
 The way this works is that O3DE CLI (`o3de.bat` on Windows or `o3de.sh` on Linux) [invokes](https://github.com/o3de/o3de/blob/development/scripts/o3de.py#L107-L108) the `export-project` [sub-command argument](https://github.com/o3de/o3de/blob/development/scripts/o3de.py#L79) via a specified [entry-hook](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L484). This system heavily relies on the `argparse` standard library to configure the expected function for the parsed command in a modular fashion.
 
@@ -29,9 +29,9 @@ Note that `export-project` only partially parses arguments. This is because the 
 The entry function is called [`_run_export_script`](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L367), and is structured to start the setup of the export process in the following layers:
 
 ##### Layer 1: **`_run_export_script`**  
-Enables logging and sets up the user arguments to be fed into the export system.
+Enables logging and feeds the user arguments into the export system.
 ##### Layer 2: **[`_export_script`](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L307)** 
-Validates the user supplied export script and project, and determine the locations (if the user supplied a relative path). In some cases, this layer will check to see if the user asked for the O3DE standard export scripts. 
+Validates the user supplied export script and project path, and determine the locations of each (if the user supplied a relative path). In some cases, this layer will check to see if the user asked for the O3DE standard export scripts. 
 
 If anything went wrong in validation, this layer halts. Otherwise it constructs an [O3DE Context](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L112) object and proceeds to the next layer.
 ##### Layer 3: **[`execute_python_script`](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L235)** 
@@ -59,7 +59,7 @@ These functions are defined as top level APIs so that other systems can utilize 
 `export_standalone_run_command` takes the arguments previously specified, validates them, and assuming everything is correct, proceeds to call the `export_standalone_project`.
 
 `export_standalone_project` is the workhorse responsible for preparing the project as a game for PC. These are the main steps in this process: 
-1. Determine Engine type, validate paths and arguments, and determine levels and seedlists to package. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L84-L128)
+1. Determine Engine type (source built or SDK installed), validate paths and arguments, and determine levels and seedlists to package. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L84-L128)
 1. Determine whether to build the toolchain or not. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L133-L141)
 1. Prepare and bundle assets. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L144-L156)
 1. Build the target executables of the game. [code](https://github.com/o3de/o3de/blob/development/scripts/o3de/ExportScripts/export_source_built_project.py#L159-L178)
@@ -77,7 +77,7 @@ Wrapping the subprocess in this manner allows us to [clean up](https://github.co
 
 
 ##### **[`build_assets`](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L583)** 
-This first calculates the path of the `AssetProcessorBatch` executable, based on whether O3DE is a source built or SDK installed engine. Based on that `process_command` is used to run the batch tool with arguments for the project, and selected platform if specified.
+This first calculates the path of the `AssetProcessorBatch` executable, based on whether O3DE is a source built or SDK installed engine. Based on that `process_command` is used to run the batch tool with arguments for the project, and with selected platform.
 
 ##### **[`bundle_assets`](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L797)** 
 This calculates the path of the `AssetBundlerBatch` executable, along with setting up the relevant folders for bundling. Then it iterates over every desired platform, and does the following:

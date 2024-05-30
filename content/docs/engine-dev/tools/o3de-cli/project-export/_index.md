@@ -7,7 +7,7 @@ description: High Level Developer Overview for the Project Export command.
 ***The Project Export*** command enables shipping of O3DE projects into distributable games. It is designed to fulfill arbitrary needs in the export process, and comes with standard export scripts for the majority of users.
 
 {{< note >}}
-You can find a presentation of the Project Export feature on the official O3DE Youtube channel: https://www.youtube.com/watch?v=fV1gmxiRHdY
+You can find a presentation of the Project Export feature on the official O3DE Youtube: https://www.youtube.com/watch?v=fV1gmxiRHdY
 {{< /note >}}
 
 
