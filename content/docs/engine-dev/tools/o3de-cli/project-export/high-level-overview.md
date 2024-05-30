@@ -21,7 +21,7 @@ The `export-project` command has the following setup:
 
 The central driver of the command is the Export Script. In O3DE, the Export Script is simply any python script that the user wishes to run using the O3DE Python CLI.
 
-The way this works is that `o3de.bat` (or `o3de.sh` on Linux) [invokes](https://github.com/o3de/o3de/blob/development/scripts/o3de.py#L107-L108) the `export-project` [sub-command argument](https://github.com/o3de/o3de/blob/development/scripts/o3de.py#L79) via a specified [entry-hook](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L484). This system heavily relies on the `argparse` standard library to configure the expected function for the parsed command in a modular fashion.
+The way this works is that O3DE CLI (`o3de.bat` on Windows or `o3de.sh` on Linux) [invokes](https://github.com/o3de/o3de/blob/development/scripts/o3de.py#L107-L108) the `export-project` [sub-command argument](https://github.com/o3de/o3de/blob/development/scripts/o3de.py#L79) via a specified [entry-hook](https://github.com/o3de/o3de/blob/development/scripts/o3de/o3de/export_project.py#L484). This system heavily relies on the `argparse` standard library to configure the expected function for the parsed command in a modular fashion.
 
 Note that `export-project` only partially parses arguments. This is because the remaining arguments are fed through to the main Export Script when it runs, which will have its own argument parsing logic.
 
