@@ -129,27 +129,74 @@ If the current CMake version was not returned because CMake cannot be found, loc
 The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}.
 
 {{< note >}}
-Support for Ubuntu on 64-bit ARMv8 processors is in an experimental stage.
+Support for Ubuntu 24.04 LTS and Ubuntu on 64-bit ARMv8 processors is in an experimental stage.
 {{< /note >}}
 
 The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt` command-line utility.
 
 ### CMake {#linux-cmake}
 
-As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you can upgrade it to the current version from CMake's [download](https://cmake.org/download/) page.
+As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it with the following command.
 
+```shell
+sudo apt remove cmake
+```
+
+Install CMake using the instructions for the version of Ubuntu that you have installed:
+
+{{< tabs name="CMake install" >}}
+{{% tab name="22.04 LTS" %}}
+
+You can install the default version of CMake for Ubuntu 22.04 LTS, which is version 3.22. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest).
+
+```shell
+sudo apt install cmake
+```
+
+{{% /tab %}}
+{{% tab name="24.04 LTS" %}}
+
+You can install the default version of CMake for Ubuntu 24.04 LTS, which is version 3.28. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest).
+
+```shell
+sudo apt install cmake
+```
+
+{{% /tab %}}
+{{< /tabs >}}
+
+Once installed, verify that the version meets the minimum version criteria.
+
+```shell
+cmake --version
+```
 
 ### Clang
 
-O3DE requires [Clang](https://clang.llvm.org/get_started.html) and the [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/) to compile all of the native C++ code. The minimum version of Clang required by O3DE is clang-12.
+O3DE requires [Clang {{< versions/clang >}} or later](https://clang.llvm.org/get_started.html) and the [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/) to compile all of the native C++ code.
 
-{{< note >}}
-The default version of clang on Ubuntu 22.04 LTS is 14, which satisfies the minimum requirement. Installing clang and the GNU C++ Library can be done through `apt`.
-```
+Install Clang and the GNU C++ Library using the instructions for the version of Ubuntu that you have installed:
+
+{{< tabs name="Clang install" >}}
+{{% tab name="22.04 LTS" %}}
+
+You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
+
+```shell
 sudo apt install libstdc++-12-dev clang
 ```
-{{< /note >}}
 
+{{% /tab %}}
+{{% tab name="24.04 LTS" %}}
+
+You can install the default version of Clang for Ubuntu 24.04 LTS, which is clang-18. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
+
+```shell
+sudo apt install libstdc++-12-dev clang
+```
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ### Vulkan supported video drivers
 
