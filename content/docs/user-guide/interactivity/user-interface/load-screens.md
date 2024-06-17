@@ -49,7 +49,9 @@ game_load_screen_minimum_time=5
 
 A splash screen serves as a loading screen for the renderer. Typically, the renderer takes a few seconds to boot up, during which time even the game's loading screen cannot be displayed. To prevent an awkward black screen during this period, you can use the splash screen settings to display a static PNG image. Please note that transparency will not be respected and should be replaced with black.
 
-To set a custom splash screen, replace the `logo.png` file located at `Code/Framework/AzFramework/Platform/Common/Xcb/AzFramework/logo.png`. It's crucial that the filename remains unchanged and the image is an 8-bit PNG. This image will be injected into the O3DE code during compilation, so a rebuild of the engine is necessary for the change to take effect.
+It is required that `xdd` linux utility is installed for this feature to work.
+
+To set a custom splash screen, place your logo in your project under `Resources/Splash.png`. Alternatively, set the `SPLASH_FILE` environment variable to the path of such a file. The only image requirement is that it must be an 8-Bit PNG. This image will be injected into the O3DE code during compilation, so a rebuild is necessary for the change to take effect.
 
 For the best results, follow up this splash screen with a UI-based game loading screen, as it loads quickly. If you don't, you may still see a black screen during the period when Atom has started loading, taken control over the display, but has not yet begun to output the rendered scene.
 
