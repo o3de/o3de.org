@@ -18,7 +18,7 @@ The following diagram illustrates the hierarchy of AZ memory allocators.
 
 ![AZ memory allocator hierarchy](/images/user-guide/programming/memory/memory-allocators.svg)
 
-+ **`OSAllocator`** - Acts as the interface to operating system memory and should be used for direct operating system allocations on the C heap. `OSAllocator` is initialized on the first call to `AllocatorInstance<OSAllocator>::Get()`.
++ **`OSAllocator`** - Acts as the interface to operating system memory and should be used for direct operating system allocations on the C heap. `OSAllocator` is lazily initialized on the first call to `AllocatorInstance<OSAllocator>::Get()`.
 
   `OSAllocator` uses OS system calls to allocate memory. The calls are not recorded or tracked by default, but can be by following the [Allocator Tagging Guide wiki startup config](https://github.com/o3de/o3de/wiki/Allocator-Tagging-Guide#startupcfg) section. Other allocators use `OSAllocator` to obtain memory from the operating system. 
 + **`SystemAllocator`** - The system allocator is the general purpose allocator for the AZ memory library. It is initialized with the first call to `AllocatorInstance<SystemAllocator>::Get()`. All other allocators use `SystemAllocator` for internal allocations.
@@ -55,7 +55,7 @@ Each allocator commonly implements the `IAllocator` interface and uses a schema 
 ## Creating an Allocator 
 
 We recommend that each O3DE gem or logical subsystem create a `ChildAllocatorSchema` to properly tag the memory that it allocates. This practice makes it easier to budget resource usage and get a holistic view of it.
-Tagged memory usage can be viewed or written to files in several ways including by running the `sys_DumpAllocators` or `sys_DumpAllocationRecordsToFile` console commands.
+Tagged memory usage can be viewed or written to files in several ways including running the `sys_DumpAllocators` or `sys_DumpAllocationRecordsToFile` console commands.
 
 If you choose to write your own schema, be aware that caching significant chunks of memory can be problematic. Such caching can hamper the ability of other systems to evolve to fit the content in your game. Unless you have specific requirements, we recommend that you create a `ChildAllocatorSchema` that eventually uses the `SystemAllocator`. Using a `ChildAllocatorSchema` ensures that your memory is as recoverable and reusable as possible.
 
