@@ -35,7 +35,7 @@ The following diagram illustrates the hierarchy of AZ memory allocators.
 To apply an allocator to your class, use the `AZ_CLASS_ALLOCATOR` macro in your class or directly call `AZ::AllocatorInstance`<*some\_allocator*>.
 
 AZCore relies on `AZ_CLASS_ALLOCATOR` to specify the default allocator for the class or on explicit `azcreate` and `azdestroy` calls that specify the allocator in their signature.
-+ If your class does not implement `AZ_CLASS_ALLOCATOR, calls to `new` or `delete` will use the global `operator new` or `operator delete`.
++ If your class does not implement `AZ_CLASS_ALLOCATOR`, calls to `new` or `delete` will use the global `operator new` or `operator delete`.
 + If your class does not implement `AZ_CLASS_ALLOCATOR` and you call `aznew`, a compile error will trigger indicating that the `operator new` must be overwritten.
 
 ## AZ Allocator Schemas 
