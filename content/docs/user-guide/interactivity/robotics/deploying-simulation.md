@@ -97,7 +97,7 @@ To run headless, start with `-NullRenderer -rhi=null`.
 ```
 The above command should work for environments that have no GPU. 
 If your simulation relies on the ROS 2 Camera component, you will need RHI. 
-In such cases, it can be simulated with third-party tools like `xvfb-run`, which creates a virtual X server environment.
+In such cases, it can be simulated with `console-mode` switch:
 ```bash
-xvfb-run ./Ros2Project.GameLauncher
+./Ros2Project.GameLauncher -console-mode
 ```
