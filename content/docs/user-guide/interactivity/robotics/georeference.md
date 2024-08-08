@@ -14,8 +14,8 @@ ROS 2 Gem offers a mechanism to put the simulated level in this context.
 
 ### Georeferencing a Level
 
-To add to the level information about its geographical location component called **Georeference Editor Level Component** needs to be attached to the level entity. 
-This component to function requires:
+To set the level's geographical location information, the **Georeference Editor Level Component** needs to be attached to the level entity. 
+This component requires:
 
 - A [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84) location of a known place in the level (e.g, location of the intersection)
 - An O3DE entity located in a known place in the level (e.g., the abovementioned intersection). This entity should be located in the location given with WGS-84 coordinates. This entity should also have orientation as follows (ENU):
@@ -25,7 +25,7 @@ This component to function requires:
 
 ## Usage
 
-With the Georeference Editor Level Component setup correctly, you can use :
+With the Georeference Editor Level Component setup correctly, you can use:
  - ROS 2 GNSS Sensor 
  - Public API to convert geographical location to level coordinate system and _vice versa_ using `GeoreferenceRequestsBus`. 
 
@@ -58,10 +58,10 @@ The correct location of the ENU entity is shown in the image: \
 ![enu_location](/images/user-guide/interactivity/robotics/enu_location.png)
 
 {{< note >}}
-The ENU entitie does not need any additional components. 
+The ENU entity does not need any additional components. 
 {{< /note >}}
 
-You can test if everything works as expected placing a few simulated GNSS Sensor from ROS 2 Gem and moving it on the scene.
+You can test if everything works as expected by placing a few simulated GNSS sensors from ROS 2 Gem and moving them on the scene.
 In the example shown in the image below, there are three similar GNSS sensors in places marked with colored spheres in the O3DE editor on the left.
 On the right, you can see NavSat messages produced by those GNSS sensors visualized in Foxglove studio. 
 
