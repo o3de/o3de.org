@@ -48,12 +48,12 @@ Georeference Editor Level Component can be added only to the level entity.
 {{< /note >}}
 
 
-Since then the map has used, and the directions in texture space are:
+The used ortophotomap has following geographical directions:
 ```
 North - up
 East - left
 ```
-The ENU entity needs to be rotated accordingly.
+The ENU entity needs to be rotated accordingly to follow direction of the underlying ortophotomap.
 The correct location of the ENU entity is shown in the image: \
 ![enu_location](/images/user-guide/interactivity/robotics/enu_location.png)
 
