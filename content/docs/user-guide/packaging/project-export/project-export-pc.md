@@ -1,29 +1,60 @@
 ---
-linkTitle: Project Export CLI
-title: Project Export CLI Tool
-description: Learn how to use the Project Export CLI to automate preparing your project for release.
+linkTitle: Project Export for Windows and Linux
+title: Project Export for Windows and Linux
+description: Learn how to use the Project Export functionality to automate preparing your project for release.
 toc: true
 weight: 400
 ---
-The export-project CLI command is used to automatically package game code and assets for a release.
+
+## Prerequisites
+To make best use of the export button in the Project Manager, or the `export-project` CLI command, it is recommended to have a project with at least one starting scene, and all necessary seedlist files prepared. AssetProcessor Registry file settings may need to be tweaked. To learn how to set this up, please consult the following page: [Creating a Project Game Release Layout for Windows, section: Set the Starting Level](../windows-release-builds/#set-the-starting-level).
+
+To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/overview/).
+
 
 {{< note >}}
 If you wish to learn how to prepare projects manually for Windows, please consult the page [Creating a Project Game Release Layout for Windows.](/docs/user-guide/packaging/windows-release-builds)
 {{< /note >}}
+## Using Project Manager
 
-## Prerequisites
-To make best use of the `export-project` command, it is recommended to have a project with at least one starting scene, and all necessary seedlist files prepared. AssetProcessor Registry file settings may need to be tweaked. To learn how to set this up, please consult the following page: [Creating a Project Game Release Layout for Windows, section: Set the Starting Level](../windows-release-builds/#set-the-starting-level).
+### Getting Started
+Using the export feature in Project Manager is similar to building projects, in that it only takes a single action to kick off the export process. Click the dropdown for your desired project card to see the export options listed below.
 
-To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/overview/).
+{{< image-width "/images/user-guide/packaging/project-export-pc/export-button-dropdown.png" "400">}}
 
-## Getting Started
+The Export Launcher option shows a sub-menu of platforms to run the export process for. The top-most option always matches the operating system of your development machine. If developing on Windows, the platform will be Windows, otherwise it will be Linux. 
+
+{{< image-width "/images/user-guide/packaging/project-export-pc/export-button-platform-submenu.png" "400">}}
+
+Upon clicking one of the platform options, the export process will begin. A confirmation popup will ask if you wish to proceed, and remind you to check the export settings if you have not already.
+
+{{< image-width "/images/user-guide/packaging/project-export-pc/export-button-confirmation.png" "400">}}
+
+Once you have confirmed you are ready to proceed, the Project Manager will begin exporting your project. If you picked the Windows/Linux platform, it will create a PC based game launcher based on the export settings. The final output will be located in directory specified by the "Output Path" setting in the [export settings panel](#export-settings-panel).
+
+{{< image-width "/images/user-guide/packaging/project-export-pc/export-card-running.png" "200">}}
+
+### Export Settings Panel
+
+To access the Export Settings Panel, simply click the "Open Export Settings..." button in the dropdown shown in the previous section. Upon clicking it, you should see the following form.
+
+{{< image-width "/images/user-guide/packaging/project-export-pc/export-settings-pc.png" "400">}}
+
+The panel is divided into two main sections. The top half of the panel contains settings that are common across all supported platforms for O3DE. The bottom half contains platform specific settings separated by tabs. In this guide we will focus on the "Windows" tab (note: this tab will be appropriately named "Linux" if you are developing from a Linux distro).
+
+To learn more about each setting, you can hover the mouse over the text label of each setting to get a tooltip description. Alternatively, you can consult [this CLI parameter table](#usage) to see the parameters that the Export settings are based on.
+
+## Using CLI
+The `export-project` CLI command is used to automatically package game code and assets for a release.
+
+### Getting Started with CLI and Scripts
 To use the `export-project` command correctly, it is important to first understand how it works at a high level.
 
 The command operates in 2 stages:
 1. Script Loading
 2. Script Running
 
-### Script Loading
+#### Script Loading
 Before the export process can begin, the export-project command does the following pre-processing steps:
 * Parse and validate initial set of arguments, and filters arguments to be processed by desired export script
 * Load the export script as a python module
@@ -32,12 +63,12 @@ Before the export process can begin, the export-project command does the followi
 * Prepares the O3DE script context, which contains useful values like project path, engine path, project name, CMake args, etc.
 * Runs the export script with the prepared context injected
 
-### Script Running
+#### Script Running
 The `export-project` command can run any python script that the user designates as the export script. As a result, the exact behavior entirely depends on the supplied script. O3DE includes a standard script, which is described [further below.](#standard-export-script)
 
 Any script run by the command has access to the running context of the exporter, along with common APIs.
 
-## Export CLI Command
+### Export CLI Command
 The `export-project` command is accessed via the O3DE CLI that is shipped with the engine. This is found in `<engine>/scripts/o3de.bat`, or on Unix systems as `<engine>/scripts/o3de.sh`. The command has the following arguments:
 
 | Argument Name | Description | Required? |
@@ -58,7 +89,7 @@ or in condensed form:
 <engine-folder>\scripts\o3de.bat export-project -es C:\..\path\to\export-script -pp C:\..\path\to\project-folder -ll INFO
 ```
 
-### Project Template
+#### Project Template
 
 Project Export functionality is also available on a per-project basis. This is because there are helper export scripts that are included in the Project Templates, as can be seen with [`package.bat`](https://github.com/o3de/o3de/blob/f25503785829c3eb75d3f00420d2072985d5ed05/Templates/DefaultProject/Template/package.bat) and [`package.sh` for Unix](https://github.com/o3de/o3de/blob/f25503785829c3eb75d3f00420d2072985d5ed05/Templates/DefaultProject/Template/package.sh). These scripts are included at the root folder of every new Project created with the `DefaultProject` template.
 
@@ -73,13 +104,13 @@ In order to use it, simply run the following command (assuming project has alrea
 \path\to\project\package.sh
 ```
 
-## Standard Export Script
+### Standard Export Script
 O3DE now ships with a [standard project export script](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py), capable of automating most typical use cases of projects. The code and API are provided so that users with more particular needs can investigate, expand or modify the code as necessary. Currently this script only supports Windows and Linux platforms, and does not handle deployment to external services.
 
-The export script has 2 primary sections: the function [`export_standalone_project`](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#L19) and the [startup code that only runs if the script is invoked by the CLI](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#L187). In depth discussion on these two sections will be made in the [Developer Guide](https://docs.o3de.org/docs/engine-dev/) in the future.
+The export script has 2 primary sections: the function [`export_standalone_project`](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#L19) and the [startup code that only runs if the script is invoked by the CLI](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/ExportScripts/export_source_built_project.py#L187). In-depth discussion on these two sections can be found in the [Developer Guide](/docs/engine-dev/tools/o3de-cli/project-export).
 
 
-### Usage
+#### Usage
 To use the export script, first ensure you have the necessary seedlist files for your project (as mentioned in the pre-requisites).
 
 You can issue the arguments for this script at the same time that you are running the `export-project` command, so long as you are using the script as your designated export script. The arguments specific to the script will be deferred until the script begins running.
@@ -132,11 +163,11 @@ Where `O3DE_ENGINE_PATH`, `O3DE_PROJECT_PATH` and `OUTPUT_PATH` are environment 
 
 For more information on how to export the MultiplayerSample project using the CLI, please see [these instructions](https://github.com/o3de/o3de-multiplayersample/blob/f00b3035285b695b2dbd1b1e59912973f4e1a32f/Documentation/O3DEMPSProjectExportTesting.md).
 
-## Custom Scripts
+### Custom Scripts
 
 You can study the standard export script to understand how the `export-project` API works, but this section will help provide a high level overview of what's available.
 
-### O3DE Context and Logger
+#### O3DE Context and Logger
 All export scripts are automatically injected with 2 global variables when the `export-project` command is run: `o3de_context`, and `o3de_logger`.
 
 `o3de_context` is an instance of the [export_project.O3DEScriptExportContext](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/o3de/export_project.py#L104) class. This context object is used to store parameter values and variables throughout the lifetime of an export script's execution. It also stores convenient properties such as the export script's path, project path, engine path, unprocessed arguments, cmake specific arguments, and the project name from the project.json file.
@@ -146,7 +177,7 @@ For any APIs of `export-project` that expect a parameter of type `O3DEScriptExpo
 
 `o3de_logger` is an instance of the `logging.Logger` class from the Python standard library, which can be used to track and emit logs over the course of the script's lifetime.
 
-### API
+#### API
 For users wishing to create custom export scripts, the `export-project` command exposes the following APIs (please click the links in the function name to view details on parameters):
 
 | Function Name | Description |
@@ -164,11 +195,11 @@ For users wishing to create custom export scripts, the `export-project` command 
 | [setup_launcher_layout_directory](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/o3de/export_project.py#L699) | Setup the launcher layout directory for a path. |
 | [validate_project_artifact_paths](https://github.com/o3de/o3de/blob/753480ec930e55f3431f92ed7b974ba7f9e73a13/scripts/o3de/o3de/export_project.py#L759) | Validate and adjust project artifact paths as necessary. If paths are provide as relative, then check it against the project path for existence. |
 
-### Example Custom Scripts
+#### Example Custom Scripts
 
 To demonstrate the basic functionality of the API, we will look at an example script using 2 functions: `execute_python_script` and `process_command`, which are the building blocks for the rest of the functionality.
 
-#### test_export.py
+##### test_export.py
 Here is an example test export script:
 ```python
 #test_export.py
@@ -205,7 +236,7 @@ With `process_command`, users can run any terminal command that they wish. This 
 
 The function `export_python_script` does something special here. It's able to run another python script anywhere on the machine, while supplying it the same `o3de_context` the current export script is using. This can allow for very modular scripting abilities. Let us take a closer look at `hello.py` to see what it does.
 
-#### hello.py
+##### hello.py
 ```python
 #hello.py
 import o3de.export_project as exp
@@ -231,7 +262,7 @@ o3de_context.message2 = "hiya!"
 
 Not only can it read them, but it can also overwrite an existing variable, such as with `message2`, changing it from `'____'` to `'hiya!'`, or even introduce new variables like `hello_back`, which upon completion of `hello.py` will be visible to the `test_export.py` script.
 
-#### The Results
+##### The Results
 If you were to run the `test_export.py` script on Windows, this is what the logs would show:
 ```
 <engine-path>\scripts\o3de.bat export-project -es C:\workspace\projects\NewspaperDeliveryGame\export_rules\test_export.py -ll INFO
