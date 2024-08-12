@@ -15,7 +15,7 @@ SDFormat standard allows the extension of the functionality of the imported robo
 
 _Plugin_ import, i.e. the mapping between Gazebo description and O3DE components, is based on the O3DE [reflection system](/docs/user-guide/programming/components/reflection/reflecting-for-serialization/). In particular, O3DE components that are designed to mirror the behavior of SDFormat _plugins_ are registered using a specialized attribute tag. The import structure, called _hook_, implements the conversion scheme between the robot description parameters and O3DE data. The Robot Importer finds all active _hooks_ and checks, if any of them can be used to import SDFormat data. The mapping is extendable, allowing you to add your _hooks_ and map them to existing SDFormat data.
 
-The matching between the _hooks_ and the robot description is done based on the plugins' names. This way you can override the default behavior of the Robot Importer using your specific implementation connected with the specific name. 
+The matching between the _hooks_ and the robot description is done based on the plugins' filenames. This way you can override the default behavior of the Robot Importer using your specific implementation connected with the specific filename. 
 
 ### Default model plugins
 
@@ -30,6 +30,18 @@ _ROS2SkidSteeringModel_ is a pre-defined _hook_ used to map `libgazebo_ros_skid_
 _ROS2AckermannModel_ is a pre-defined hook used to map `libgazebo_ros_ackermann_drive.so` SDFormat plugin into a number of O3DE components. In particular, it creates _ROS2RobotControlComponent_, and _SkidSteeringModelComponent_ O3DE components in a base link of the robot alongside _WheelControllerComponent_  components in wheels. 
 
 If you decide to use articulations in your imported robot, you might need to enable motor in articulation links of your steering joints manually. Moreover, your import will fail when steering joints in SDFormat description are defined as _Universal Joints_, which are currently not supported in O3DE.
+
+#### O3DE Joint State Publisher
+
+_ROS2JointStatePublisherModel_ is a pre-defined _hook_ used to map `libgazebo_ros_joint_state_publisher.so` SDFormat plugin into the _JointsManipulationEditorComponent_ in O3DE. The component is added to the base link of the robot alongside either _JointsArticulationControllerComponent_ or _JointsPIDControllerComponent_ depending on whether you decide to use articulations in your imported robot.
+
+Note that, as the namespace policy in O3DE differs from Gazebo, this hook won't change the namespace on which joint states are published whether or not you specified it in the SDFormat file. Similarly, you won't be able to specify the names of the joints to be published; O3DE _JointsManipulationEditorComponent_ will publish the states of each joint either way.
+
+#### O3DE Joint Pose Trajectory
+
+_ROS2JointPoseTrajectoryModel_ is a pre-defined _hook_ used to map `libgazebo_ros_joint_pose_trajectory.so` SDFormat plugin into the _JointsTrajectoryComponent_ in O3DE. The component is added to the base link of the robot alongside _JointsManipulationEditorComponent_ and either _JointsArticulationControllerComponent_ or _JointsPIDControllerComponent_ depending on whether you decide to use articulations in your imported robot.
+
+Note that if you plan on importing both Joint State Publisher and Joint Pose Trajectory in one SDFormat file, Joint State Publisher might not get imported because of the order in which plugins are listed in your file. _JointsManipulationEditorComponent_ will be added anyway, as it is a required component for `libgazebo_ros_joint_pose_trajectory.so` plugin to be imported. Similarly to Joint State Publisher hook, namespace remapping won't be parsed here. If you decide to use articulations in your imported robot, you might need to enable motor in articulation links of your joints manually in order to be able to adjust their trajectory.
 
 ### Extending default mapping
 
