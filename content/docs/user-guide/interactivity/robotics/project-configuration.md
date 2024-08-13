@@ -54,13 +54,14 @@ If you have multiple ROS 2 versions installed, make sure you [source](https://do
 * Ackermann messages: `ros-${ROS_DISTRO}-ackermann-msgs`
 * Control toolbox `ros-${ROS_DISTRO}-control-toolbox`
 * XACRO `ros-${ROS_DISTRO}-xacro`
+* Vision msgs `ros-${ROS_DISTRO}-vision-msgs`
 
 If a `desktop` installation of ROS 2 distro was selected, everything else should be there.
 
 Use this helpful command to install:
 
 ```
-sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-toolbox ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro
+sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-toolbox ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro ros-${ROS_DISTRO}-vision-msgs
 ```
 
 ### Clone the Gem repository
