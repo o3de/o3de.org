@@ -8,25 +8,30 @@ weight: 520
 
 ## Overview
 
-Your robotics simulation often needs to be placed in a geographical location. 
-ROS 2 Gem offers a mechanism to put the simulated level in this context.
+Robotics simulations often need to work with geographical locations, 
+in order to simulate behavior and data streams of robots that use global positioning devices and geo-reference APIs. 
+Georeference Component will allow you to work with such data.
 
 
-### Georeferencing a Level
+### How to setup a simulated geographical location
 
-To set the level's geographical location information, the **Georeference Editor Level Component** needs to be attached to the level entity. 
-This component requires:
+First, add a **Georeference Editor Level Component** to your level entity.
 
-- A [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84) location of a known place in the level (e.g, location of the intersection)
-- An O3DE entity located in a known place in the level (e.g., the abovementioned intersection). This entity should be located in the location given with WGS-84 coordinates. This entity should also have orientation as follows (ENU):
+As a next step, you need to determine which place in your virtual environment will be fixed to a real-world location, by placing an entity in the desired spot.
+Good candidates for such a place include characteristic locations such as intersections. You need:
+- To know the real-world [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84) location for this entity.
+- To set orientation for the simulation entity as follows (ENU):
   - X should point East direction
   - Y should point Nort direction
   - Z should point Up
 
+Now, all that is left is to set this entity in configuration of **Georeference Editor Level Component** alongside WGS-84 coordinates.
+
+
 ## Usage
 
 With the Georeference Editor Level Component setup correctly, you can use:
- - ROS 2 GNSS Sensor 
+ - ROS 2 GNSS Sensor to simulate and publish ROS 2 geolocation data using standard messages. 
  - Public API to convert geographical location to level coordinate system and _vice versa_ using `GeoreferenceRequestsBus`. 
 
 ## Example
