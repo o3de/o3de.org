@@ -8,17 +8,17 @@ weight: 410
 This guide covers how to use project export tooling to build and deploy games on Android. We will use the Android export script to generate a Gradle project, prepare assets, and then build the project. The end result of export should be an APK file that can be installed on your Android device, along with an additional step to auto-install on a connected phone.
 
 {{< note >}}
-To learn more about the project export tooling in general, please consult the page [Project Export for Windows and Linux.](/docs/user-guide/packaging/project-export/project-export-pc)
+To learn more about the project export tooling, please consult the page [Project Export for Windows and Linux](/docs/user-guide/packaging/project-export/project-export-pc).
 {{< /note >}}
 {{< note >}}
-To learn more about how to manually export an Android project, please consult the page [Generating an Android Project](https://development--o3deorg.netlify.app/docs/user-guide/platforms/android/generating_android_project_windows/#prerequisites).
+To learn more about how to manually export an Android project, please consult the page [Generating an Android Project](/docs/user-guide/platforms/android/generating_android_project_windows/#prerequisites).
 {{< /note >}}
 
 ## Prerequisites
 1. Make sure that the [Project Export for Windows and Linux page](/docs/user-guide/packaging/project-export/project-export-pc) prerequisites are satisfied.
-2. Make sure you have your project created and registered with your engine. Check that you can successfully build and open your project with the Project Manager and Editor.
-3. Ensure all pre-requisites for working with Android in O3DE are satsified. You can learn about software dependencies [here](https://development--o3deorg.netlify.app/docs/user-guide/platforms/android/#prerequisite-software-and-packages) and project setup pre-requisites [here](https://development--o3deorg.netlify.app/docs/user-guide/platforms/android/generating_android_project_windows/#prerequisites). For the Android SDK, make sure to record where the root folder path is located on your hard drive, as that will be needed for setting up configuration.
-4. Ensure that you have a proper keystore file configured for signing. You can learn more [here](https://development--o3deorg.netlify.app/docs/user-guide/platforms/android/#apk-signing). Here is an example keystore file you can create to start with (you will need the JDK with `keytool`):
+2. Make sure you have your project created and registered with your engine. Check that you can successfully build and open your project with the Editor.
+3. Ensure all prerequisites for working with Android in O3DE are satsified. You can learn about software dependencies [here](/docs/user-guide/platforms/android/#prerequisite-software-and-packages) and project setup prerequisites [here](/docs/user-guide/platforms/android/generating_android_project_windows/#prerequisites). For the Android SDK, make sure to record where the root folder path is located on your hard drive, as that will be needed for setting up configuration.
+4. Ensure that you have a proper keystore file configured for signing. You can learn more [here](/docs/user-guide/platforms/android/#apk-signing). Here is an example keystore file you can create to start with (you will need the JDK with `keytool`):
 ```
 set KEYSTORE_FILE_PATH=C:\path\to\android-key.keystore
 set STOREPASS=o3depass
@@ -62,7 +62,7 @@ Make sure the passwords supplied here match what you used in the keystore file, 
 ### Getting Started
 To learn more about the export button feature and the export settings panel in the Project Manager in general, [click here](project-export-pc/#getting-started). This guide will only cover Android specific details.
 
-To kick off Android export, the process is identical to what would be done for Windows or Linux. From your project card, simply click the drop-down and go to `Export Launchers->Android`. When clicked, after confirming you are ready to proceed, the export should immediately begin.
+To kick off Android export, the process is identical to what would be done for Windows or Linux. From your project card, simply open the dropdown menu and click the Android option in the Export Launchers sub-menu. When clicked, after confirming you are ready to proceed, the export should immediately begin.
 
 Assuming there are no errors in your build, the resulting Android Project will appear wherever you specified the Android APK Build Path in the export settings panel.
 
@@ -86,7 +86,7 @@ On some platforms, such as Windows, when trying to export an Android APK project
 ```
 ...the filename is too long (exceeds 260 characters)
 ```
-If you encounter this issue, and the Android APK build path is relative to the project folder, you may need to change the folder closer to the root of your hard drive (such as `C:/o3de-android`).
+If you encounter this issue, and the Android APK build path is relative to the project folder, you may need to move the folder closer to the root of your hard drive such as `C:/o3de-android`.
 {{< /note >}}
 
 ## Using CLI
@@ -108,7 +108,7 @@ As a result of the export process, the resulting Android Gradle project folder w
 ## Android Export Script
 O3DE ships with an [Android Export Script](https://github.com/o3de/o3de/blob/bb3eafe30d8291f50b69924e5b7a432c8c6f53ca/scripts/o3de/ExportScripts/export_source_android.py#L28), capable of generating an Android Gradle project folder to handle standard use cases of O3DE projects on Android.
 
-The export script has two primary sections: the function [`export_source_android_project`](https://github.com/o3de/o3de/blob/bb3eafe30d8291f50b69924e5b7a432c8c6f53ca/scripts/o3de/ExportScripts/export_source_android.py#L28) and the [startup code that only runs if the script is invoked by the CLI](https://github.com/o3de/o3de/blob/bb3eafe30d8291f50b69924e5b7a432c8c6f53ca/scripts/o3de/ExportScripts/export_source_android.py#L222). In-depth discussion on these two sections can be found in the [Developer Guide](/docs/engine-dev/tools/o3de-cli/project-export).
+The export script has two primary sections: the function [`export_source_android_project`](https://github.com/o3de/o3de/blob/bb3eafe30d8291f50b69924e5b7a432c8c6f53ca/scripts/o3de/ExportScripts/export_source_android.py#L28) and the [startup code](https://github.com/o3de/o3de/blob/bb3eafe30d8291f50b69924e5b7a432c8c6f53ca/scripts/o3de/ExportScripts/export_source_android.py#L222) that only runs if the script is invoked by the CLI. In-depth discussion on these two sections can be found in the [Developer Guide](/docs/engine-dev/tools/o3de-cli/project-export).
 
 ### Usage
 To use the export script, you can issue the arguments at the same time that you are running the `export-project` command. The arguments specific to the script will be deferred until it begins running.

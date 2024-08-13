@@ -7,13 +7,13 @@ weight: 400
 ---
 
 ## Prerequisites
-To make best use of the export button in the Project Manager, or the `export-project` CLI command, it is recommended to have a project with at least one starting scene, and all necessary seedlist files prepared. AssetProcessor Registry file settings may need to be tweaked. To learn how to set this up, please consult the following page: [Creating a Project Game Release Layout for Windows, section: Set the Starting Level](../windows-release-builds/#set-the-starting-level).
+To make best use of the export button in the Project Manager, or the `export-project` CLI command, it is recommended to have a project with at least one starting level, and all necessary seedlist files prepared. AssetProcessor Registry file settings may need to be tweaked. To learn how to set this up, please consult the following page: [Creating a Project Game Release Layout for Windows, section: Set the Starting Level](../windows-release-builds/#set-the-starting-level).
 
 To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/overview/).
 
 
 {{< note >}}
-If you wish to learn how to prepare projects manually for Windows, please consult the page [Creating a Project Game Release Layout for Windows.](/docs/user-guide/packaging/windows-release-builds)
+If you wish to learn how to prepare projects manually for Windows, please consult the page [Creating a Project Game Release Layout for Windows](/docs/user-guide/packaging/windows-release-builds).
 {{< /note >}}
 ## Using Project Manager
 
@@ -22,7 +22,7 @@ Using the export feature in Project Manager is similar to building projects, in 
 
 {{< image-width "/images/user-guide/packaging/project-export-pc/export-button-dropdown.png" "400">}}
 
-The Export Launcher option shows a sub-menu of platforms to run the export process for. The top-most option always matches the operating system of your development machine. If developing on Windows, the platform will be Windows, otherwise it will be Linux. 
+The Export Launcher option shows a sub-menu of platforms to run the export process for. The top-most option always matches the operating system of your development machine.
 
 {{< image-width "/images/user-guide/packaging/project-export-pc/export-button-platform-submenu.png" "400">}}
 
@@ -111,7 +111,7 @@ The export script has 2 primary sections: the function [`export_standalone_proje
 
 
 #### Usage
-To use the export script, first ensure you have the necessary seedlist files for your project (as mentioned in the pre-requisites).
+To use the export script, first ensure you have the necessary seedlist files for your project (as mentioned in the prerequisites).
 
 You can issue the arguments for this script at the same time that you are running the `export-project` command, so long as you are using the script as your designated export script. The arguments specific to the script will be deferred until the script begins running.
 
