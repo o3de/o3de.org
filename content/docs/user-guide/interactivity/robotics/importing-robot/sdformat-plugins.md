@@ -29,7 +29,7 @@ _ROS2SkidSteeringModel_ is a pre-defined _hook_ used to map `libgazebo_ros_skid_
 
 _ROS2AckermannModel_ is a pre-defined hook used to map `libgazebo_ros_ackermann_drive.so` SDFormat plugin into a number of O3DE components. In particular, it creates _ROS2RobotControlComponent_, and _SkidSteeringModelComponent_ O3DE components in a base link of the robot alongside _WheelControllerComponent_  components in wheels. 
 
-You might need to enable motor in articulation links of your steering joints manually. Moreover, your import will fail when steering joints in SDFormat description are defined as _Universal Joints_, which are currently not supported in O3DE.
+You might need to enable motor in joints (or articullation links) of your steering joints manually. Moreover, your import will fail when steering joints in SDFormat description are defined as _Universal Joints_, which are currently not supported in O3DE.
 
 #### O3DE Joint State Publisher
 
@@ -45,7 +45,7 @@ If you plan on importing both Joint State Publisher and Joint Pose Trajectory in
 1. Make sure that `libgazebo_ros_joint_state_publisher.so` plugin is listed before `libgazebo_ros_joint_pose_trajectory.so` in your SDFormat file. If not, you can change their order manually by simply swapping their descriptions (including headlines as well as plugin parameters) using copy-paste.
 2. After performing succesful import of your SDFormat file (excluding `libgazebo_ros_joint_state_publisher.so`), go to the base link of your model and manually adjust parameters of the _JointsManipulationEditorComponent_. Note that since this O3DE component serves not only for publishing joint states, but also for actions like setting joints start positions, you might encounter more parameters avilable than just those that define the way your joint states will be published. The parameters that you might need to adjust are all visible under the _Joint State Publisher_ section.
 
-After preforming successful import, you might need to enable motor in articulation links of your joints manually in order to be able to adjust their trajectory.
+After preforming successful import, you might need to enable motor in joints (or articullation links) of your joints manually in order to be able to adjust their trajectory.
 
 ### Extending default mapping
 
