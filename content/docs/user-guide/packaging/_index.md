@@ -11,7 +11,7 @@ The topics in this section provide information about how to prepare and package 
 
 | Topic | Description |
 | - | - |
-| [Creating a Project Game Release Layout for Windows](windows-release-builds) | Learn how to create an O3DE project game release layout for Windows. |
+| [Creating a Project Game Release Layout for Windows](windows-release-builds) | Learn how to create an O3DE project game release layout for Windows manually. |
 | [Creating a Content Patch Update Package](content-patch-package) | Learn how to create updated asset bundles for content patches and release updates. |
 | [Project Export](project-export) | Learn how to use the Project Export CLI to automate preparing your project for release. |
 | [Asset Bundler](asset-bundler/) | Learn how to manage your assets and package them into asset bundles. |
