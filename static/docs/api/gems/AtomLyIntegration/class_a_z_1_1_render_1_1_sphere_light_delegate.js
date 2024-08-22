@@ -1,6 +1,5 @@
 var class_a_z_1_1_render_1_1_sphere_light_delegate =
 [
-    [ "SphereLightDelegate", "class_a_z_1_1_render_1_1_sphere_light_delegate.html#a86ecf14b16ffe37521236a736991dac3", null ],
     [ "CalculateAttenuationRadius", "class_a_z_1_1_render_1_1_sphere_light_delegate.html#a4471b3482c99994a2eaac220ebea98c0", null ],
     [ "DrawDebugDisplay", "class_a_z_1_1_render_1_1_sphere_light_delegate.html#afd5ee4c64021bb4a9fd2290351b898a3", null ],
     [ "GetEffectiveSolidAngle", "class_a_z_1_1_render_1_1_sphere_light_delegate.html#ab1f524bafce94312f190d60779d6be59", null ],

@@ -1,4 +1,0 @@
-var struct_a_z_1_1_enum_type_from_vector_of_enum_constants_3_01_a_z_std_1_1vector_3_01_edit_1_1_enum1588f032829586342a6c23d9823abe3a =
-[
-    [ "type", "struct_a_z_1_1_enum_type_from_vector_of_enum_constants_3_01_a_z_std_1_1vector_3_01_edit_1_1_enum1588f032829586342a6c23d9823abe3a.html#a56cf94ea45832f99183a5b6cfc0b1700", null ]
-];

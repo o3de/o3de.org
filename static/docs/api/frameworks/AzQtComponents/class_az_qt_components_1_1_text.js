@@ -1,6 +1,6 @@
 var class_az_qt_components_1_1_text =
 [
-    [ "Config", "struct_az_qt_components_1_1_text_1_1_config.html", "struct_az_qt_components_1_1_text_1_1_config" ],
+    [ "Config", "struct_az_qt_components_1_1_text_1_1_config.html", null ],
     [ "addBlackStyle", "class_az_qt_components_1_1_text.html#ad1ebcaa9747234653349d3032c5446cb", null ],
     [ "addButtonStyle", "class_az_qt_components_1_1_text.html#a3cc4eb6322e8fdc3821fdfe13d2b85ae", null ],
     [ "addHeadlineStyle", "class_az_qt_components_1_1_text.html#a7f04adac86c8dd55479ce4e4f09a3915", null ],

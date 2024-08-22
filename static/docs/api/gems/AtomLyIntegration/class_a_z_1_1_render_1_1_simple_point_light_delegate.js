@@ -1,6 +1,5 @@
 var class_a_z_1_1_render_1_1_simple_point_light_delegate =
 [
-    [ "SimplePointLightDelegate", "class_a_z_1_1_render_1_1_simple_point_light_delegate.html#aed66d55dedf84a5b71844d6a0cf18ded", null ],
     [ "CalculateAttenuationRadius", "class_a_z_1_1_render_1_1_simple_point_light_delegate.html#afdbe8123b7ae0d0132be383a4904c11d", null ],
     [ "DrawDebugDisplay", "class_a_z_1_1_render_1_1_simple_point_light_delegate.html#ac53a1a8fa35e77f8a838be8b2c9da6b8", null ],
     [ "GetEffectiveSolidAngle", "class_a_z_1_1_render_1_1_simple_point_light_delegate.html#a127671fb607b101e3eb38706dc398bb7", null ],

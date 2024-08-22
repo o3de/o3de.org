@@ -1,9 +1,5 @@
 var class_a_z_1_1_catmull_rom_spline =
 [
-    [ "CatmullRomSpline", "class_a_z_1_1_catmull_rom_spline.html#a98263c5e0f5db0bc45ecf789648f3c2e", null ],
-    [ "CatmullRomSpline", "class_a_z_1_1_catmull_rom_spline.html#ab7a42b94fdd924857617f6cb056bd328", null ],
-    [ "CatmullRomSpline", "class_a_z_1_1_catmull_rom_spline.html#a9b42e67863d158d1500f4f95671843dc", null ],
-    [ "~CatmullRomSpline", "class_a_z_1_1_catmull_rom_spline.html#a2dbe5a2f1ccf8f735d532a11fa80fbc6", null ],
     [ "GetAabb", "class_a_z_1_1_catmull_rom_spline.html#a07a1f4f6fed3341c4d7f77124dc9fc7f", null ],
     [ "GetAddressByDistance", "class_a_z_1_1_catmull_rom_spline.html#a5ddc3311fb978990481becc72cabb3b4", null ],
     [ "GetAddressByFraction", "class_a_z_1_1_catmull_rom_spline.html#a5fe864480ac1cc53eba685f394a62c57", null ],
@@ -17,9 +13,6 @@ var class_a_z_1_1_catmull_rom_spline =
     [ "GetSegmentLength", "class_a_z_1_1_catmull_rom_spline.html#a903a67da990d5cac0c0e30e4181d641c", null ],
     [ "GetSplineLength", "class_a_z_1_1_catmull_rom_spline.html#a57ca848d373e063f68e1d1ec7bfe5252", null ],
     [ "GetTangent", "class_a_z_1_1_catmull_rom_spline.html#adfea334c80633f5a8951e46d7f8fd241", null ],
-    [ "operator=", "class_a_z_1_1_catmull_rom_spline.html#ae6e6e926e25d21000df0c27654d81770", null ],
-    [ "operator=", "class_a_z_1_1_catmull_rom_spline.html#a990ea9e88e305cb696282b37e02c9e56", null ],
-    [ "Reflect", "class_a_z_1_1_catmull_rom_spline.html#adb378a294eac2f88c64e993c536ca797", null ],
     [ "SetKnotParameterization", "class_a_z_1_1_catmull_rom_spline.html#a11a4370789e64da42440802e5f15f63c", null ],
     [ "m_granularity", "class_a_z_1_1_catmull_rom_spline.html#af0791560640a88ea4be957385678e595", null ],
     [ "m_knotParameterization", "class_a_z_1_1_catmull_rom_spline.html#a7bc47e64ef428dc5d53460fbfa8138ed", null ]

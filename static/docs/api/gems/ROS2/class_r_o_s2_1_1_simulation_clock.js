@@ -1,8 +1,6 @@
 var class_r_o_s2_1_1_simulation_clock =
 [
-    [ "GetExpectedSimulationLoopTime", "class_r_o_s2_1_1_simulation_clock.html#a68250d552d7fc79d90a2fba4435661c2", null ],
-    [ "GetROSTimestamp", "class_r_o_s2_1_1_simulation_clock.html#ab96234733c31b080ca4c71c1ef81068d", null ],
-    [ "GetROSTimestamp", "class_r_o_s2_1_1_simulation_clock.html#ab96234733c31b080ca4c71c1ef81068d", null ],
-    [ "Tick", "class_r_o_s2_1_1_simulation_clock.html#a76a2f092d84d50953267556a53e396eb", null ],
-    [ "Tick", "class_r_o_s2_1_1_simulation_clock.html#a76a2f092d84d50953267556a53e396eb", null ]
+    [ "GetExpectedSimulationLoopTime", "class_r_o_s2_1_1_simulation_clock.html#aa951ae105a2e630646e8254189e0b3f3", null ],
+    [ "GetROSTimestamp", "class_r_o_s2_1_1_simulation_clock.html#a0eb560d1c76e7a43d8ee4b57ebfc8ae0", null ],
+    [ "Tick", "class_r_o_s2_1_1_simulation_clock.html#ab95a2f6f71107e04c8333337c76d0a6e", null ]
 ];

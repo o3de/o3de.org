@@ -1,14 +1,15 @@
 var class_r_o_s2_1_1_lidar_raycaster_requests =
 [
-    [ "~LidarRaycasterRequests", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a178bd14b54ad63cfce9f340426140b65", null ],
-    [ "AZ_RTTI", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a1635aa936ffba2d2a32cce50dc60ae0f", null ],
-    [ "ConfigureLayerIgnoring", "class_r_o_s2_1_1_lidar_raycaster_requests.html#ab3f474d74e9799add0c1b3b3e59582a1", null ],
-    [ "ConfigureMaxRangePointAddition", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a78dbdde9e91531e40ab89e1f80cf7d5f", null ],
-    [ "ConfigureNoiseParameters", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a294bb350754ba689f7aec4c3849cd5ed", null ],
+    [ "CanHandlePublishing", "class_r_o_s2_1_1_lidar_raycaster_requests.html#aaa76996cc8c4eefe0a8e53991672bafb", null ],
+    [ "ConfigureIgnoredCollisionLayers", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a7ac13203e8e3c622f991e944f0e6c3f3", null ],
+    [ "ConfigureMaxRangePointAddition", "class_r_o_s2_1_1_lidar_raycaster_requests.html#ad54adddf46e8db4db3d958c4e1cd54c2", null ],
+    [ "ConfigureMinimumRayRange", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a4089441a621616f2bce524c2f9e5b977", null ],
+    [ "ConfigureNoiseParameters", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a475dbb3609e46e5ae1a08553f7a4c5db", null ],
+    [ "ConfigurePointCloudPublisher", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a0f8c39b7cf4ea17cc3fe448ef2a30393", null ],
+    [ "ConfigureRaycastResultFlags", "class_r_o_s2_1_1_lidar_raycaster_requests.html#ace70f3c259f92a6846a0ae3e775ab30c", null ],
     [ "ConfigureRayOrientations", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a143558eb4e847a4bac529801c7e8d7de", null ],
     [ "ConfigureRayRange", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a66428d327b5b58637cf3fa05c0f7ff36", null ],
-    [ "ExcludeEntities", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a277f3b88ee66ac85372ae0de4e449091", null ],
-    [ "PerformRaycast", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a28e1dfee06adf4432dbc573fc9a99f6c", null ],
-    [ "ValidateRayOrientations", "class_r_o_s2_1_1_lidar_raycaster_requests.html#ae794ee42cadf17ce6f2552cc728ae5bc", null ],
-    [ "ValidateRayRange", "class_r_o_s2_1_1_lidar_raycaster_requests.html#acc17fc16548b190a346146b55d86a953", null ]
+    [ "ExcludeEntities", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a2fcf80bdb1ce8d9527f012538ab72966", null ],
+    [ "PerformRaycast", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a97a597860fd7d7262690a9807b9c9506", null ],
+    [ "UpdatePublisherTimestamp", "class_r_o_s2_1_1_lidar_raycaster_requests.html#a60e334b13572e0e40057da53e9c1f1c1", null ]
 ];

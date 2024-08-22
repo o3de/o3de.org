@@ -1,12 +1,9 @@
 var class_a_z_1_1_data_patch =
 [
-    [ "LegacyStreamWrapper", "struct_a_z_1_1_data_patch_1_1_legacy_stream_wrapper.html", "struct_a_z_1_1_data_patch_1_1_legacy_stream_wrapper" ],
-    [ "AddressType", "class_a_z_1_1_data_patch.html#a87105cd1391b3ab80202faf5f3293b8c", null ],
+    [ "LegacyStreamWrapper", "struct_a_z_1_1_data_patch_1_1_legacy_stream_wrapper.html", null ],
     [ "AddressTypeElement", "class_a_z_1_1_data_patch.html#a8a780be087b06b5755b4d11264f18a02", null ],
-    [ "ChildPatchMap", "class_a_z_1_1_data_patch.html#add7c3c0fff9fa2cfda69415b8a040cf5", null ],
     [ "Flags", "class_a_z_1_1_data_patch.html#ad7b129d80b658edd528260f2f79978be", null ],
     [ "FlagsMap", "class_a_z_1_1_data_patch.html#a3f4c0a62c0b6096b97217a05b31db07f", null ],
-    [ "PatchMap", "class_a_z_1_1_data_patch.html#a68416b5bd5536fa8949e604d603d3290", null ],
     [ "Flag", "class_a_z_1_1_data_patch.html#a39e6073764052c3b6a1115d3dc0d44ce", [
       [ "ForceOverrideSet", "class_a_z_1_1_data_patch.html#a39e6073764052c3b6a1115d3dc0d44ceae830e298995c51fb245d124aba8f63c8", null ],
       [ "PreventOverrideSet", "class_a_z_1_1_data_patch.html#a39e6073764052c3b6a1115d3dc0d44cea06d7dddbd8b8c4a188796b8e878f2ab6", null ],
@@ -17,25 +14,14 @@ var class_a_z_1_1_data_patch =
       [ "SetMask", "class_a_z_1_1_data_patch.html#a39e6073764052c3b6a1115d3dc0d44cea7b0c647eb5a8f1031694d9b132d95f09", null ],
       [ "EffectMask", "class_a_z_1_1_data_patch.html#a39e6073764052c3b6a1115d3dc0d44cea246876bcc98858010c9a9f89294948fb", null ]
     ] ],
-    [ "DataPatch", "class_a_z_1_1_data_patch.html#abb2fc6ed2800c5482d99a52a09d9014f", null ],
-    [ "DataPatch", "class_a_z_1_1_data_patch.html#ac3aa83691fa4d9a8a106cdde152f29ff", null ],
-    [ "DataPatch", "class_a_z_1_1_data_patch.html#a6c8f1bb3dd3fc1ad92445d901ac28f28", null ],
-    [ "Apply", "class_a_z_1_1_data_patch.html#a34baf7be62027a64f6bc5ec4407542c0", null ],
-    [ "Apply", "class_a_z_1_1_data_patch.html#a5e0ae4493bb779551c92656cdeeca8af", null ],
-    [ "Apply", "class_a_z_1_1_data_patch.html#ae64eb94626954e182fe24a229005ebfd", null ],
+    [ "Apply", "class_a_z_1_1_data_patch.html#a5c193bf20f5c0b41700abf773dc319ed", null ],
     [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_data_patch.html#ab0553b38346454715c0294a4cb2e848b", null ],
-    [ "Create", "class_a_z_1_1_data_patch.html#a1f4fb05a064dad93ee2a9b486c034d98", null ],
     [ "Create", "class_a_z_1_1_data_patch.html#a1dfe5246f05dcd7474a623e2094207a3", null ],
+    [ "Create", "class_a_z_1_1_data_patch.html#a1f4fb05a064dad93ee2a9b486c034d98", null ],
     [ "GetEffectOfParentFlagsOnThisAddress", "class_a_z_1_1_data_patch.html#a6cf9daf6f1b0a90ab1f3e982cdffbbfd", null ],
     [ "GetEffectOfSourceFlagsOnThisAddress", "class_a_z_1_1_data_patch.html#a24d6e0ae767e5ea03db0c4fead472146", null ],
     [ "GetEffectOfTargetFlagsOnThisAddress", "class_a_z_1_1_data_patch.html#a757f085afcd16c172527bd17804b536b", null ],
-    [ "GetLegacyDataPatchTypeId", "class_a_z_1_1_data_patch.html#aecd10a63b8f465173031fc13ba162375", null ],
-    [ "IsData", "class_a_z_1_1_data_patch.html#a1ba6f2aca4b81e536785c6fa34b8e051", null ],
-    [ "IsValid", "class_a_z_1_1_data_patch.html#ad90adcfe2e648277ad9ea7da534da666", null ],
-    [ "operator=", "class_a_z_1_1_data_patch.html#ac1796dfc9692050007369e6dc3dbb530", null ],
-    [ "operator=", "class_a_z_1_1_data_patch.html#ac17df5e1e2e8ac23b7b47367ec5bb0c9", null ],
-    [ "Reflect", "class_a_z_1_1_data_patch.html#a8ae99444d82eea80e45d3a4a546abb0c", null ],
-    [ "m_patch", "class_a_z_1_1_data_patch.html#adbb85cc9bea23489b3b63d5b16a0eb34", null ],
-    [ "m_targetClassId", "class_a_z_1_1_data_patch.html#a2aad01833ced21b1da9cbd819a88dfd2", null ],
-    [ "m_targetClassVersion", "class_a_z_1_1_data_patch.html#a3cf3be525c09f5f725d047d9023ecbfd", null ]
+    [ "IsData", "class_a_z_1_1_data_patch.html#a3ce454e1de9acc92ebc51f962f6eabea", null ],
+    [ "IsValid", "class_a_z_1_1_data_patch.html#a826d7166a7f1ee584907675b7c8576cf", null ],
+    [ "Reflect", "class_a_z_1_1_data_patch.html#a8ae99444d82eea80e45d3a4a546abb0c", null ]
 ];

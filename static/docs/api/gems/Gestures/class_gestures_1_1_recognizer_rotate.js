@@ -1,28 +1,7 @@
 var class_gestures_1_1_recognizer_rotate =
 [
-    [ "Config", "struct_gestures_1_1_recognizer_rotate_1_1_config.html", "struct_gestures_1_1_recognizer_rotate_1_1_config" ],
-    [ "RecognizerRotate", "class_gestures_1_1_recognizer_rotate.html#a4210e07d1abfee15638461e2a178a9cc", null ],
-    [ "~RecognizerRotate", "class_gestures_1_1_recognizer_rotate.html#a279440cb7ef4f4be14478f8f426fdd8d", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_gestures_1_1_recognizer_rotate.html#ab65995482500824ab4610acc95869cd7", null ],
-    [ "AZ_RTTI", "class_gestures_1_1_recognizer_rotate.html#a98f0391dbef06a48eb3d542bcc156906", null ],
-    [ "GetConfig", "class_gestures_1_1_recognizer_rotate.html#a3ddfda331e7db8086fb4ac57fb612d2d", null ],
-    [ "GetConfig", "class_gestures_1_1_recognizer_rotate.html#aeee481b53bc8f56ad141caff3963c868", null ],
-    [ "GetCurrentDistance", "class_gestures_1_1_recognizer_rotate.html#a9a816e78ab0915781278c473f4fd771e", null ],
-    [ "GetCurrentMidpoint", "class_gestures_1_1_recognizer_rotate.html#acc14b9ae776d8d4f4e315150bb5890ee", null ],
-    [ "GetCurrentPosition0", "class_gestures_1_1_recognizer_rotate.html#ab89e894c3354f5d7500c5c1cc8812656", null ],
-    [ "GetCurrentPosition1", "class_gestures_1_1_recognizer_rotate.html#af4d4c7a3eb464a3c958c98a792feeea4", null ],
-    [ "GetDefaultConfig", "class_gestures_1_1_recognizer_rotate.html#a509ed1db0ca18cb3d0d252799ad43108", null ],
-    [ "GetDefaultMaxPixelsMoved", "class_gestures_1_1_recognizer_rotate.html#a2a2ddb7dedf75755ceec50dcbd5dc055", null ],
-    [ "GetDefaultMinAngleDegrees", "class_gestures_1_1_recognizer_rotate.html#a85d94290ff9ea681f14f43c75002b6c9", null ],
-    [ "GetDefaultPriority", "class_gestures_1_1_recognizer_rotate.html#a9057fb832e742afe1ebcc924093dacef", null ],
-    [ "GetPriority", "class_gestures_1_1_recognizer_rotate.html#a72a1831ed84c3fd4dd2bc214e5f951b9", null ],
-    [ "GetSignedRotationInDegrees", "class_gestures_1_1_recognizer_rotate.html#a031305d5ed1cf47571062b2903ca407c", null ],
-    [ "GetStartDistance", "class_gestures_1_1_recognizer_rotate.html#a1bc55e24b7aac7e7000a50dc1d30e28e", null ],
-    [ "GetStartMidpoint", "class_gestures_1_1_recognizer_rotate.html#ab928104de4688af2c22bd86c0d496664", null ],
-    [ "GetStartPosition0", "class_gestures_1_1_recognizer_rotate.html#a70227a17ecc79876d1ceca813e1ae521", null ],
-    [ "GetStartPosition1", "class_gestures_1_1_recognizer_rotate.html#aec76cf0276e42b92aadfff0eae73efa0", null ],
+    [ "Config", "struct_gestures_1_1_recognizer_rotate_1_1_config.html", null ],
     [ "OnDownEvent", "class_gestures_1_1_recognizer_rotate.html#a7bc2fe3cbb9425c2fb705b68256bb473", null ],
     [ "OnPressedEvent", "class_gestures_1_1_recognizer_rotate.html#a2dedc50d33564432e5da07935f0f5e35", null ],
-    [ "OnReleasedEvent", "class_gestures_1_1_recognizer_rotate.html#a51b9802a8ef15f479826e429185c0efb", null ],
-    [ "SetConfig", "class_gestures_1_1_recognizer_rotate.html#a8cf4086b93aefc0fc9e8c3e1838883e5", null ]
+    [ "OnReleasedEvent", "class_gestures_1_1_recognizer_rotate.html#a51b9802a8ef15f479826e429185c0efb", null ]
 ];

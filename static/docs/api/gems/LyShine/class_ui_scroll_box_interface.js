@@ -1,17 +1,6 @@
 var class_ui_scroll_box_interface =
 [
     [ "ScrollOffsetChangeCallback", "class_ui_scroll_box_interface.html#a3deec0a9ca5c44b77a273e5c99349d3a", null ],
-    [ "ScrollBarVisibility", "class_ui_scroll_box_interface.html#af238070e519f1f833ce83085c48947d2", [
-      [ "AlwaysShow", "class_ui_scroll_box_interface.html#af238070e519f1f833ce83085c48947d2af4c9a8099b832818e9d8ee5e12d9916a", null ],
-      [ "AutoHide", "class_ui_scroll_box_interface.html#af238070e519f1f833ce83085c48947d2a6060ccae5af5a564eac006bcc8968cb9", null ],
-      [ "AutoHideAndResizeViewport", "class_ui_scroll_box_interface.html#af238070e519f1f833ce83085c48947d2af826a87a7dc2dc627a413afce6916ba7", null ]
-    ] ],
-    [ "SnapMode", "class_ui_scroll_box_interface.html#a7adde58c0e13862d61e40250666c8cda", [
-      [ "None", "class_ui_scroll_box_interface.html#a7adde58c0e13862d61e40250666c8cdaa6adf97f83acf6453d4a6a4b1070f3754", null ],
-      [ "Children", "class_ui_scroll_box_interface.html#a7adde58c0e13862d61e40250666c8cdaa64e4aca4297806247f62a7b5f8cbd3df", null ],
-      [ "Grid", "class_ui_scroll_box_interface.html#a7adde58c0e13862d61e40250666c8cdaa5174d1309f275ba6f275db3af9eb3e18", null ]
-    ] ],
-    [ "~UiScrollBoxInterface", "class_ui_scroll_box_interface.html#a551da46ccddc90b2f57057b2a33a14bb", null ],
     [ "ChangeContentSizeAndScrollOffset", "class_ui_scroll_box_interface.html#ad3a36ff5f81b78e146dca8e4d32c3670", null ],
     [ "FindClosestContentChildElement", "class_ui_scroll_box_interface.html#a5fbcb4e331ae088a4b0d6420bc932cc7", null ],
     [ "GetContentEntity", "class_ui_scroll_box_interface.html#a18868dfdcb7300cccec69afb0500d399", null ],
@@ -22,9 +11,9 @@ var class_ui_scroll_box_interface =
     [ "GetIsVerticalScrollingEnabled", "class_ui_scroll_box_interface.html#ab6aeb48c0b34e3ff6267a6c79e7e67f7", null ],
     [ "GetNormalizedScrollValue", "class_ui_scroll_box_interface.html#ac94b19ec6fb144ae1c34620f01b6f2ad", null ],
     [ "GetScrollOffset", "class_ui_scroll_box_interface.html#a2ec5ffd1bcf2265fb950b17452ca5a63", null ],
-    [ "GetScrollOffsetChangedActionName", "class_ui_scroll_box_interface.html#a5e803c6d5f1b4c58b1019962ffdc2dcb", null ],
+    [ "GetScrollOffsetChangedActionName", "class_ui_scroll_box_interface.html#ac7685d34cb50c3fafebc50447028ebc0", null ],
     [ "GetScrollOffsetChangedCallback", "class_ui_scroll_box_interface.html#aad7c5732acd49ec46c32471e475e70bf", null ],
-    [ "GetScrollOffsetChangingActionName", "class_ui_scroll_box_interface.html#ae8710dc6a5ff18a7ccef01f6fc5766eb", null ],
+    [ "GetScrollOffsetChangingActionName", "class_ui_scroll_box_interface.html#a7c10e3c371760aa59fcf968d66ab1ae5", null ],
     [ "GetScrollOffsetChangingCallback", "class_ui_scroll_box_interface.html#aa9ee4ddb2b623edd04970818c2656786", null ],
     [ "GetSnapGrid", "class_ui_scroll_box_interface.html#a8cee3420e586ab502ac5734fc37fefb2", null ],
     [ "GetSnapMode", "class_ui_scroll_box_interface.html#a8e0b99105ae7327377540ac879f811fd", null ],

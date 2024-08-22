@@ -1,8 +1,6 @@
 var struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info =
 [
-    [ "AZ_TYPE_INFO", "struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#ae658e45280c829aa264f35643d6f5582", null ],
     [ "m_bufferIndex", "struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#ae1dd795f5fab1b8355168cc88f0d18c5", null ],
-    [ "m_byteCount", "struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#ac835737fa3aceeb77dd7004e191cef74", null ],
     [ "m_byteOffset", "struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#a787cf93281aa53558e884b4791dde6dd", null ],
     [ "m_customName", "struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#a507c269f8d44996bc735befcda6fe874", null ],
     [ "m_format", "struct_a_z_1_1_r_p_i_1_1_model_lod_1_1_stream_buffer_info.html#ab871f62f753d0f29f5eb881052201d07", null ],

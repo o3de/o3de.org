@@ -1,26 +1,7 @@
 var class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface =
 [
-    [ "InstantiatedEntitiesCallback", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a3f0ec010b05be798afbeb4731a8c4d18", null ],
-    [ "AddLink", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a42f854718fa438f704c9c32689646125", null ],
-    [ "AddTemplate", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a31f0fc284c9a7dff9aa22af40f2f0817", null ],
     [ "AreDirtyTemplatesPresent", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#ac2228f1956db44f24856282959cf3195", null ],
-    [ "AZ_RTTI", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a91878e83eb478bb911194cd7e20755f6", null ],
-    [ "CreateLink", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#ab206249739b6153947891bb38ef3dbd9", null ],
-    [ "CreatePrefab", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a356f0ae14770f40bff8dc8f90b7a7cd3", null ],
-    [ "FindLink", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a9afe66ff378cf05ce7273e37ecd90607", null ],
-    [ "FindTemplate", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#aef24d01dae1741a119c36404fd812b58", null ],
-    [ "FindTemplateDom", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a3a77a39b6b5f29423bbf58b39bdb19ce", null ],
-    [ "GetDirtyTemplatePaths", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a0f71e90faf11220a613e81219489c430", null ],
-    [ "GetTemplateIdFromFilePath", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a001bc655eb1d5e478dbfb8ffdf9b523e", null ],
-    [ "InstantiatePrefab", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#aa24d0a215dbd51069d9120943f6e2369", null ],
-    [ "InstantiatePrefab", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a43a7c7ea2dda4eaf538d597fa41dcb3a", null ],
-    [ "IsTemplateDirty", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#aa420a45ef3421adcade7974a891b09b2", null ],
-    [ "PropagateTemplateChanges", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a2ce2916be856863fec1316c542362b3d", null ],
-    [ "RemoveAllTemplates", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a75cfcd43a2c587d577aaca401a5c29f9", null ],
-    [ "RemoveLink", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#aa3e58f5765c2cb2242cc093839888337", null ],
-    [ "RemoveTemplate", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a0d93b5a019182015b2502e5314981af1", null ],
-    [ "SaveAllDirtyTemplates", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#ab3b26c75e78a158b2e5726c497ca302b", null ],
-    [ "SetTemplateDirtyFlag", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#aca6672fa04086ddc70052127d57ccc4b", null ],
-    [ "UpdatePrefabTemplate", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a7312a82fa896ff38dd121793785911da", null ],
-    [ "UpdateTemplateFilePath", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a58899f1ec9a86bd6b7aacdd0b4df7ba1", null ]
+    [ "CreatePrefabWithCustomEntityAliases", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#ac949dff70771f420545345e71a567ef2", null ],
+    [ "GetDirtyTemplatePaths", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a698f8bb20622befe7eb3090b27fdada1", null ],
+    [ "SaveAllDirtyTemplates", "class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#ab3b26c75e78a158b2e5726c497ca302b", null ]
 ];

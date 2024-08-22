@@ -1,29 +1,10 @@
 var class_a_w_s_core_1_1_aws_api_request_job =
 [
-    [ "Function", "class_a_w_s_core_1_1_aws_api_request_job_1_1_function.html", "class_a_w_s_core_1_1_aws_api_request_job_1_1_function" ],
-    [ "AwsApiClientJobType", "class_a_w_s_core_1_1_aws_api_request_job.html#a53d846a338c6a634b50362300fe92acc", null ],
-    [ "AwsApiRequestJobType", "class_a_w_s_core_1_1_aws_api_request_job.html#ad8e168c2588cc5d2b0a8160d48d6e484", null ],
-    [ "ClientType", "class_a_w_s_core_1_1_aws_api_request_job.html#a21983b00c5c7b4955096d03334f52ced", null ],
-    [ "Config", "class_a_w_s_core_1_1_aws_api_request_job.html#a117a0ad7e3c635a93c6db7f6dd3f5f15", null ],
-    [ "ErrorType", "class_a_w_s_core_1_1_aws_api_request_job.html#a726931d52f7ea670edbc2bda3311457c", null ],
-    [ "IConfig", "class_a_w_s_core_1_1_aws_api_request_job.html#aebcfcbb0eaa0de6e55f6706c462bf232", null ],
-    [ "OnFailureFunction", "class_a_w_s_core_1_1_aws_api_request_job.html#a531c2cdd31586c254764822482f3e3e8", null ],
-    [ "OnSuccessFunction", "class_a_w_s_core_1_1_aws_api_request_job.html#a48488d3045bd849f0e16a051f9dd1c54", null ],
-    [ "OutcomeType", "class_a_w_s_core_1_1_aws_api_request_job.html#a827011f80b405d653e433fe5d9054b5e", null ],
-    [ "RequestType", "class_a_w_s_core_1_1_aws_api_request_job.html#aa6b8945244e5c23112545edb10bc2ad6", null ],
-    [ "ResultType", "class_a_w_s_core_1_1_aws_api_request_job.html#ac71e7884d22bc0e5fb6f08b7f4528202", null ],
-    [ "AZ_CLASS_ALLOCATOR", "class_a_w_s_core_1_1_aws_api_request_job.html#ad438aa578b9b207682a28ba08b90b033", null ],
-    [ "Create", "class_a_w_s_core_1_1_aws_api_request_job.html#a9abf62254276bd51b07c1de93dfd99c0", null ],
-    [ "Create", "class_a_w_s_core_1_1_aws_api_request_job.html#a8a662a8af69b8e8261253817b08129bc", null ],
+    [ "Function", "class_a_w_s_core_1_1_aws_api_request_job_1_1_function.html", null ],
     [ "DoCleanup", "class_a_w_s_core_1_1_aws_api_request_job.html#a4554e290f7ee35751091a3881ad779be", null ],
-    [ "GetDefaultConfig", "class_a_w_s_core_1_1_aws_api_request_job.html#a5d91877904bc40a4ce681dc1484ae250", null ],
     [ "OnFailure", "class_a_w_s_core_1_1_aws_api_request_job.html#a00c020a347bb94c36c71d50fa71412c1", null ],
     [ "OnSuccess", "class_a_w_s_core_1_1_aws_api_request_job.html#a273f58e80a34a51969f239a12bff5763", null ],
     [ "PrepareRequest", "class_a_w_s_core_1_1_aws_api_request_job.html#a9a76316d090a910b5417e0283dacb668", null ],
-    [ "Process", "class_a_w_s_core_1_1_aws_api_request_job.html#a58f35015ed44ab75d5342b8ab4931361", null ],
-    [ "__pad0__", "class_a_w_s_core_1_1_aws_api_request_job.html#a316854204b44b74a6d0fd991aebf0e44", null ],
-    [ "config", "class_a_w_s_core_1_1_aws_api_request_job.html#a95f3ce487b7abd35f347deb482b0b3cf", null ],
-    [ "error", "class_a_w_s_core_1_1_aws_api_request_job.html#a64280068dd1d81dec7a71b7e12198e28", null ],
-    [ "m_wasSuccess", "class_a_w_s_core_1_1_aws_api_request_job.html#ad369c372ca8860797d5ec330ced4d577", null ],
-    [ "result", "class_a_w_s_core_1_1_aws_api_request_job.html#a173dabdc80a0f4932dc1cf03141817d5", null ]
+    [ "Reset", "class_a_w_s_core_1_1_aws_api_request_job.html#ac091e92c86f37d5938455ae3ab85e505", null ],
+    [ "WasSuccess", "class_a_w_s_core_1_1_aws_api_request_job.html#ab4be8cc52f7f332dd2fa269e6f4844da", null ]
 ];

@@ -1,6 +1,5 @@
 var struct_a_z_1_1_d_x12_1_1_execute_work_request =
 [
-    [ "FenceValueNull", "struct_a_z_1_1_d_x12_1_1_execute_work_request.html#adada3085d639f0e70012888183d2b510", null ],
     [ "m_commandLists", "struct_a_z_1_1_d_x12_1_1_execute_work_request.html#af542b5caa23e5ca954902f24f8611776", null ],
     [ "m_signalFence", "struct_a_z_1_1_d_x12_1_1_execute_work_request.html#abf694d1ea26d9a99d2170949077be850", null ],
     [ "m_userFencesToSignal", "struct_a_z_1_1_d_x12_1_1_execute_work_request.html#ac8c04f18f796f07554a663f9486a5663", null ],

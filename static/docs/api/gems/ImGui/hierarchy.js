@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "EBusConnectionPolicy", null, [
+    [ "AZ::EBusConnectionPolicy", null, [
       [ "ImGui::IImGuiUpdateDebugComponentListener::ConnectionPolicy< Bus >", "struct_im_gui_1_1_i_im_gui_update_debug_component_listener_1_1_connection_policy.html", null ]
     ] ],
-    [ "EBusTraits", null, [
+    [ "AZ::EBusTraits", null, [
       [ "ImGui::IImGuiAssetExplorerRequests", "class_im_gui_1_1_i_im_gui_asset_explorer_requests.html", null ],
       [ "ImGui::IImGuiCameraMonitorRequests", "class_im_gui_1_1_i_im_gui_camera_monitor_requests.html", null ],
       [ "ImGui::IImGuiEntityOutlinerNotifications", "class_im_gui_1_1_i_im_gui_entity_outliner_notifications.html", null ],
@@ -96,10 +96,6 @@ var hierarchy =
     [ "ImRect", "struct_im_rect.html", null ],
     [ "ImSpan< T >", "struct_im_span.html", null ],
     [ "ImSpanAllocator< CHUNKS >", "struct_im_span_allocator.html", null ],
-    [ "ImStb::STB_TexteditState", "struct_im_stb_1_1_s_t_b___textedit_state.html", null ],
-    [ "ImStb::StbTexteditRow", "struct_im_stb_1_1_stb_textedit_row.html", null ],
-    [ "ImStb::StbUndoRecord", "struct_im_stb_1_1_stb_undo_record.html", null ],
-    [ "ImStb::StbUndoState", "struct_im_stb_1_1_stb_undo_state.html", null ],
     [ "ImVec1", "struct_im_vec1.html", null ],
     [ "ImVec2", "struct_im_vec2.html", null ],
     [ "ImVec2ih", "struct_im_vec2ih.html", null ],

@@ -5,6 +5,5 @@ var class_gradient_signal_1_1_gradient_image_creator_requests =
     [ "GetOutputResolution", "class_gradient_signal_1_1_gradient_image_creator_requests.html#ae51648a760f09645068d8044906145f0", null ],
     [ "SetOutputFormat", "class_gradient_signal_1_1_gradient_image_creator_requests.html#a09ad9ce98f6d8e951e4f99748e376b8d", null ],
     [ "SetOutputImagePath", "class_gradient_signal_1_1_gradient_image_creator_requests.html#a770562141c31a2aa21927a42c7604104", null ],
-    [ "SetOutputResolution", "class_gradient_signal_1_1_gradient_image_creator_requests.html#a9853486f8a08ab8dc229f42fdb7aaec2", null ],
-    [ "HandlerPolicy", "class_gradient_signal_1_1_gradient_image_creator_requests.html#aa870174663af450312b6d61b489aafd6", null ]
+    [ "SetOutputResolution", "class_gradient_signal_1_1_gradient_image_creator_requests.html#a9853486f8a08ab8dc229f42fdb7aaec2", null ]
 ];

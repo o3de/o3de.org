@@ -1,8 +1,6 @@
 var class_lmbr_central_1_1_simple_state_component_requests =
 [
-    [ "~SimpleStateComponentRequests", "class_lmbr_central_1_1_simple_state_component_requests.html#aa33937cfa41ebaca72bce51fefdf1de7", null ],
-    [ "GetCurrentState", "class_lmbr_central_1_1_simple_state_component_requests.html#a79a3b03fce5e5dc0202f42c885016a1c", null ],
-    [ "GetNumStates", "class_lmbr_central_1_1_simple_state_component_requests.html#a5a7fea118b43e1e5a68ba7878cd251a4", null ],
+    [ "GetCurrentState", "class_lmbr_central_1_1_simple_state_component_requests.html#a4658814e9b895fc7a1f0a14e90b02d5a", null ],
     [ "SetState", "class_lmbr_central_1_1_simple_state_component_requests.html#a9e9207d6c855f5d7ab4879b1892d0fa1", null ],
     [ "SetStateByIndex", "class_lmbr_central_1_1_simple_state_component_requests.html#a57d67621d190091ccf461ed81b5d6dd1", null ],
     [ "SetToFirstState", "class_lmbr_central_1_1_simple_state_component_requests.html#adc13bed15dfaa3616595f471c422a2f7", null ],

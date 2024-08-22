@@ -1,6 +1,5 @@
 var class_a_z_1_1_render_1_1_polygon_light_delegate =
 [
-    [ "PolygonLightDelegate", "class_a_z_1_1_render_1_1_polygon_light_delegate.html#a311007a7aa75195fcf11ec4a7ae6a0e8", null ],
     [ "CalculateAttenuationRadius", "class_a_z_1_1_render_1_1_polygon_light_delegate.html#a7c3afea22f74d79ae94abdd6ddee5c2e", null ],
     [ "DrawDebugDisplay", "class_a_z_1_1_render_1_1_polygon_light_delegate.html#a072400247437678d8aa71d5ea8c8335f", null ],
     [ "GetEffectiveSolidAngle", "class_a_z_1_1_render_1_1_polygon_light_delegate.html#a5582d165adf835be51cb8e7bf8ca5993", null ],

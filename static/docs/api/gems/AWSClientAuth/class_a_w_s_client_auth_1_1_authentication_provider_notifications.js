@@ -12,7 +12,5 @@ var class_a_w_s_client_auth_1_1_authentication_provider_notifications =
     [ "OnPasswordGrantSingleFactorSignInSuccess", "class_a_w_s_client_auth_1_1_authentication_provider_notifications.html#a5640478721b0546d1ad9c1166172131e", null ],
     [ "OnRefreshTokensFail", "class_a_w_s_client_auth_1_1_authentication_provider_notifications.html#a223ec76c3903ae356a1de468f1091802", null ],
     [ "OnRefreshTokensSuccess", "class_a_w_s_client_auth_1_1_authentication_provider_notifications.html#a684061512e7ce893464d71b982eee890", null ],
-    [ "OnSignOut", "class_a_w_s_client_auth_1_1_authentication_provider_notifications.html#a33644adf4f3d27ee49106fc3d0490c4e", null ],
-    [ "AddressPolicy", "class_a_w_s_client_auth_1_1_authentication_provider_notifications.html#a1fe6da23564d1210db89546682ef7d38", null ],
-    [ "HandlerPolicy", "class_a_w_s_client_auth_1_1_authentication_provider_notifications.html#abc1104bba9b4e33cf6d057a642c4bb8b", null ]
+    [ "OnSignOut", "class_a_w_s_client_auth_1_1_authentication_provider_notifications.html#a33644adf4f3d27ee49106fc3d0490c4e", null ]
 ];
