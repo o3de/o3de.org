@@ -16,7 +16,7 @@ The **Camera** component adds a camera to an entity.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Be this camera** | Choose the **Be this camera** button to activate the camera's view in the viewport.  For more information, see [Changing the Camera View](/docs/user-guide/editor/camera-space/). |||
+| **Be this camera** | Choose the **Be this camera** button to activate the camera's view in the viewport.  For more information, see [Viewport Manipulators](/docs/user-guide/editor/viewport#manipulators). |||
 | **Orthographic** | If set to enabled, this camera will use an orthographic projection instead of a perspective projection. Objects will appear the same size, regardless of their distance from the camera. | Boolean | `Disabled` |
 | **Field of view** | Vertical field of view in degrees. | 0.0 - 180.0 | `75` |
 | **Near clip distance** | Distance to the near clip plane of the view frustum in meters. Must be less than **Far clip distance**. | 0.001 to Infinity | `0.2` |
