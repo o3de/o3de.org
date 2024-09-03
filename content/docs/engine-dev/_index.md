@@ -25,7 +25,7 @@ This section is currently incomplete, with a stub example for application bootst
 
 | Name | Description |
 |-|-|
-| [Project bootstrapping](./architecture/bootstrap) | Learn about the execution flow of project launchers and how O3DE loads libraries at project runtime. |
+| Project bootstrapping | Learn about the execution flow of project launchers and how O3DE loads libraries at project runtime. |
 | [Prefab System](./architecture/prefabs) | Learn about the prefab system, which is the default scene authoring system in O3DE. |
 
 ## O3DE Frameworks
@@ -38,7 +38,7 @@ This section is currently incomplete, with a stub example for AzCore. As documen
 
 | Name | Description |
 |-|-|
-| [AzCore](./frameworks/azcore) | Learn about the core internals of O3DE such as memory management and the custom RTTI system. |
+| AzCore | Learn about the core internals of O3DE such as memory management and the custom RTTI system. |
 
 ## Included Gems
 
