@@ -36,7 +36,6 @@ sourceRepo = "https://github.com/o3de/o3de"
 versions = [
   ["24.09", "https://docs.o3de.org"],
   ["development", "https://development--o3deorg.netlify.app"],
-  # ["23.10.3", "https://version-231003--o3deorg.netlify.app"],
   ["23.10", "https://version-2310--o3deorg.netlify.app"],
   ["23.05", "https://version-2305--o3deorg.netlify.app"],
   ["22.10", "https://version-2210--o3deorg.netlify.app"]
