@@ -8,7 +8,7 @@ toc: true
 
 ## Requirements
 
-* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble or ROS 2 Iron.
+* Ubuntu 22.04 with ROS 2 Humble or Ubuntu 24.04 with ROS 2 Jazzy. Other Ubuntu versions, ROS 2 versions, and Linux distributions can also work, but are not supported.
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
