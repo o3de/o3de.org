@@ -1,7 +1,7 @@
 ---
 linkTitle: Georeference  
 title: Georeference
-description: Applying to georeference for O3DE level
+description: Applying georeference for O3DE level
 toc: true
 weight: 520
 ---
@@ -22,7 +22,7 @@ Good candidates for such a place include characteristic locations such as inters
 - To know the real-world [WGS-84](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84) location for this entity.
 - To set orientation for the simulation entity as follows (ENU):
   - X should point East direction
-  - Y should point Nort direction
+  - Y should point North direction
   - Z should point Up
 
 Now, all that is left is to set this entity in configuration of **Georeference Editor Level Component** alongside WGS-84 coordinates.
@@ -58,7 +58,7 @@ The used ortophotomap has following geographical directions:
 North - up
 East - left
 ```
-The ENU entity needs to be rotated accordingly to follow direction of the underlying ortophotomap.
+The ENU entity needs to be rotated accordingly to follow direction of the underlying ortophoto map.
 The correct location of the ENU entity is shown in the image: \
 ![enu_location](/images/user-guide/interactivity/robotics/enu_location.png)
 
@@ -68,7 +68,7 @@ The ENU entity does not need any additional components.
 
 You can test if everything works as expected by placing a few simulated GNSS sensors from ROS 2 Gem and moving them on the scene.
 In the example shown in the image below, there are three similar GNSS sensors in places marked with colored spheres in the O3DE editor on the left.
-On the right, you can see NavSat messages produced by those GNSS sensors visualized in Foxglove studio. 
+On the right, you can see NavSat messages produced by those GNSS sensors visualized in [Foxglove studio](https://foxglove.dev). 
 
 ![simulated_gnss](/images/user-guide/interactivity/robotics/simulated_gnss.png)
 
