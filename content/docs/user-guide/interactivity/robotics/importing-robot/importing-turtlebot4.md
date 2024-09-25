@@ -20,7 +20,7 @@ sudo apt install ros-${ROS_DISTRO}-turtlebot4-description ros-${ROS_DISTRO}-turt
 
 ### Robot importer wizard
 
-Open the Robot Importer tool and select the input file. You should find it in your ROS 2 install folder: `/opt/ros/${ROS_DISTRO}/share/turtlebot4_description/urdf/standard/turtlebot4.urdf.xacro` is a default path. Next, switch off the first two toggles, as in the picture below.
+Open the Robot Importer tool and select the input file. You should find it in your ROS 2 install folder. By default, the file is located in the path: `/opt/ros/${ROS_DISTRO}/share/turtlebot4_description/urdf/standard/turtlebot4.urdf.xacro`. Next, switch off the first two toggles, as in the picture below.
 
 ![Turtlebot tutorial](/images/user-guide/gems/ros2/URDF_importer_turtlebot0.png)
 
@@ -32,9 +32,7 @@ Depending on the robot description, the importer might create colliders that int
 
 ### The robot control
 
-Turtlebot 4 is controlled by `libgazebo_ros2_control` plugin, which is currently not supported by the Robot Importer. Instead, you might manually add [Skid Steering](https://www.docs.o3de.org/docs/user-guide/interactivity/robotics/vehicle-dynamics/) to the robot to make it drive. 
-
-You need to add three components to `base_link`:
+Turtlebot 4 is controlled by `libgazebo_ros2_control` plugin, which is not supported by the Robot Importer. Instead, you might manually add [Skid Steering](https://www.docs.o3de.org/docs/user-guide/interactivity/robotics/vehicle-dynamics/) to the robot to make it drive. To do it, add three components to `base_link`:
 - `Skid Steering Twist Control`
 - `ROS2 Robot Control`
 - `Skid Steering Vehicle Model`
@@ -53,4 +51,7 @@ The Robot Importer correctly imports multiple [sensors](./sdformat-sensors.md) t
 - the _LiDAR_ sensor is attached to `rplidar_link`, as defined in the robot description
 - the _IMU_ sensor is missing in `imu_link` due to unsupported `libgazebo_ros_create_imu` plugin
 - the _RGBD_ camera sensor is added to `oakd_rgb_camera_frame` link, but the orientation of the sensor should be adjusted
-- the _contact sensors_ and _ir_ sensors are skipped by the Robot Importer completely as unsupported
+- the _ir_ sensors are imported as LiDAR sensors
+- the _contact sensors_ are skipped by the Robot Importer completely as unsupported
+
+Lidar sensors may not function correctly for the same reason as the robot itself, namely due to self-collisions. To resolve this issue, you can either remove or disable some of the colliders responsible for these self-collisions. A more optimal solution, however, would be to assign different collision layers to distinguish between objects that should and should not interact with the Lidar sensors, thereby preventing unwanted interference.
