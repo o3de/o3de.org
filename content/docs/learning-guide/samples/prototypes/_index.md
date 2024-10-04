@@ -18,4 +18,4 @@ Projects made to test a game idea, generally over the span of a week. They are a
 | Image | Link | Description | Last Updated |
 | - | - | - | - |
 | <img src="/images/learning-guide/samples/prototypes/loherangrin-o3de-jam.png" width="300px" /> | [Loherangrin's O3DE Jam 2305](https://github.com/loherangrin/games.o3de.o3de-jam-2305) | A top down exploration game using C++ scripting | O3DE **23.10.3**. April 28, 2024 |
-| <img src="/images/learning-guide/samples/prototypes/shoot-the-furniture.png" width="300px" />  | [Shoot the Furniture](https://github.com/AlexRamallo/shootthefurniture) | A first person shooter using C++ scripting made for the [Lumdum Dare 55](https://ldjam.com/events/ludum-dare/55/shoot-the-furniture-featuring-s-k-eleton) | O3DE **24.09.0**. September 01, 2024 |
+| <img src="/images/learning-guide/samples/prototypes/shoot-the-furniture.png" width="300px" />  | [Shoot the Furniture](https://github.com/AlexRamallo/shootthefurniture) | A first person shooter using C++ scripting made for the [Lumdum Dare 55](https://ldjam.com/events/ludum-dare/55/shoot-the-furniture-featuring-s-k-eleton) | O3DE **24.09.0**. October 09, 2024 |
