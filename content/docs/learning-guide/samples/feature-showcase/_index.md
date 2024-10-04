@@ -15,4 +15,4 @@ Feature Showcase projects serves as a live documentation for engine features and
 
 | Image | Link | Description | Last Updated |
 | - | - | - | - |
-| <img src="/images/learning-guide/samples/feature-showcase/customizing-graphics-pipeline.png" width="300px" /> | [Customizing Graphics Pipeline](https://github.com/galibzon/siggraph2024) | Presentation for Siggraph 2024 about customizing the graphics pipeline (custom passes, feature processor) | O3DE **24.09.0**. September 01, 2024 |
+| <img src="/images/learning-guide/samples/feature-showcase/customizing-graphics-pipeline.png" width="300px" /> | [Customizing Graphics Pipeline](https://github.com/galibzon/siggraph2024) | Presentation for Siggraph 2024 about customizing the graphics pipeline (custom passes, feature processor) | O3DE **24.09.0**. October 09, 2024 |
