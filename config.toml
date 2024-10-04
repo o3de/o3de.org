@@ -40,7 +40,8 @@ versions = [
   ["development", "https://development--o3deorg.netlify.app"],
   ["23.10", "https://version-2310--o3deorg.netlify.app"],
   ["23.05", "https://version-2305--o3deorg.netlify.app"],
-  ["22.10", "https://version-2210--o3deorg.netlify.app"]
+  ["22.10", "https://version-2210--o3deorg.netlify.app"],
+  ["22.05", "https://version-2205--o3deorg.netlify.app"]
 ]
 
 [params.logos]
