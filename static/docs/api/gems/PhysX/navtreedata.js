@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Open 3D Engine PhysX Gem API Reference", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", null ],
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
@@ -52,9 +52,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_phys_x_1_1_editor_primitive_collider_component_requests.html#a6658970315734888e19017d56febb142",
-"class_phys_x_1_1_rigid_body_configuration.html#a984c2d55513234fb2f84ed312f432911",
-"struct_polygon_prism_mesh_utils_1_1_half_edge.html#a02a420a48f9afe8e25eef341c95af557"
+"class_phys_x_1_1_editor_mesh_collider_component.html",
+"class_phys_x_1_1_px_az_allocator_callback.html",
+"struct_phys_x_1_1_editor_character_controller_proxy_shape_config.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

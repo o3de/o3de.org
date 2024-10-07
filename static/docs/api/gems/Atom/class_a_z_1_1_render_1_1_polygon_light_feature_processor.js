@@ -8,6 +8,7 @@ var class_a_z_1_1_render_1_1_polygon_light_feature_processor =
     [ "Render", "class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#aff2e3a657d549147ba8cd2fe28312987", null ],
     [ "SetAttenuationRadius", "class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#acde1ab37ed6110cd49eecf4bbce0871d", null ],
     [ "SetLightEmitsBothDirections", "class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#af5fbab2b905dfb4a473be7637490f1e7", null ],
+    [ "SetLightingChannelMask", "class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#a56a07d23e3ac23ee9b6f96b08408ed2c", null ],
     [ "SetPolygonPoints", "class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#a1779b932ca5055ba2c4e3cbfe0eb3eb3", null ],
     [ "SetPosition", "class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#a9bcd5d6bc75fc568465112fca1217735", null ],
     [ "SetRgbIntensity", "class_a_z_1_1_render_1_1_polygon_light_feature_processor.html#a6d6837f3b4ef52aad5b056a1669ddf6d", null ],

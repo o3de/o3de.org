@@ -1,6 +1,6 @@
 var class_a_z_1_1_z_lib =
 [
-    [ "Header", "class_a_z_1_1_z_lib.html#aad8b7dd7d7437dce36497d64cd5372b1", null ],
+    [ "Header", "class_a_z_1_1_z_lib.html#a2455a330b620a86268b1acd4b7ed3b15", null ],
     [ "Compress", "class_a_z_1_1_z_lib.html#a560911546dbd14d46f9218332096b918", null ],
     [ "GetMinCompressedBufferSize", "class_a_z_1_1_z_lib.html#a2be87a5cd1816af90c8ec87f6534b1ba", null ],
     [ "ResetDecompressor", "class_a_z_1_1_z_lib.html#a843fe2b8d74f2f13c34f509829eac681", null ],

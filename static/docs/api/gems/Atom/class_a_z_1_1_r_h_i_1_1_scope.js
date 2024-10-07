@@ -14,6 +14,7 @@ var class_a_z_1_1_r_h_i_1_1_scope =
     [ "GetConsumerOnSameQueue", "class_a_z_1_1_r_h_i_1_1_scope.html#a28a48d3c4fe6338afb96c58da709c8a9", null ],
     [ "GetEstimatedItemCount", "class_a_z_1_1_r_h_i_1_1_scope.html#a4ba0ba1002a93e6b785cb7b4ff53323b", null ],
     [ "GetFencesToSignal", "class_a_z_1_1_r_h_i_1_1_scope.html#ab6e4bc81d5c6cf9354ee879994bf4224", null ],
+    [ "GetFencesToWaitFor", "class_a_z_1_1_r_h_i_1_1_scope.html#a5377791cd7448703d545906914d60fb0", null ],
     [ "GetFrameGraph", "class_a_z_1_1_r_h_i_1_1_scope.html#a6e274ab37bba39b9b39a73799fbb81f4", null ],
     [ "GetFrameGraphGroupId", "class_a_z_1_1_r_h_i_1_1_scope.html#af2b67be08c091c93211061cf2c2a3016", null ],
     [ "GetHardwareQueueClass", "class_a_z_1_1_r_h_i_1_1_scope.html#ac4c37cd541c3cdc5797754bdc36e1795", null ],

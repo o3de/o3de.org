@@ -40,9 +40,10 @@ var class_az_tools_framework_1_1_prefab_1_1_instance =
     [ "Reflect", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a1da8792bbc70753f30384898bad3bc11", null ],
     [ "RemoveEntitiesInHierarchy", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a7c75dd1e723a77ce3d9bc68fab388289", null ],
     [ "ReplaceEntity", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a52ab9a64ed43087244047fd7f09abd7a", null ],
-    [ "Reset", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a464fe8e0e77c41f75ebc91dc339eff2f", null ],
+    [ "Reset", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a3f08d31227d196854c01fee5127044d2", null ],
     [ "SetContainerEntityName", "class_az_tools_framework_1_1_prefab_1_1_instance.html#ab253a2ae4ed317028365282e336b8aa2", null ],
     [ "SetLinkId", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a804448a89b3838fece29b9712d3ef5d8", null ],
     [ "SetTemplateId", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a5b073df15e64eff80ce46aa26cca47d3", null ],
-    [ "SetTemplateSourcePath", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a77058aeb5686b59c46f7ec208aac5bbb", null ]
+    [ "SetTemplateSourcePath", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a77058aeb5686b59c46f7ec208aac5bbb", null ],
+    [ "s_DomCachingEnabledDefault", "class_az_tools_framework_1_1_prefab_1_1_instance.html#a66c8c728257a60cbe1dc5ce3e0fc7906", null ]
 ];

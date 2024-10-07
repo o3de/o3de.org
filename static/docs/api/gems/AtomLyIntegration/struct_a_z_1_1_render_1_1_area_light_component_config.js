@@ -16,6 +16,7 @@ var struct_a_z_1_1_render_1_1_area_light_component_config =
     [ "SupportsAffectsGI", "struct_a_z_1_1_render_1_1_area_light_component_config.html#a8d50ebb08728ab1d6426e40ffd1961ec", null ],
     [ "SupportsBothDirections", "struct_a_z_1_1_render_1_1_area_light_component_config.html#acec61361d3d1b9506c40ad265674b65a", null ],
     [ "SupportsFastApproximation", "struct_a_z_1_1_render_1_1_area_light_component_config.html#acebffe7bd072c804442978cf605168c2", null ],
+    [ "SupportsGobo", "struct_a_z_1_1_render_1_1_area_light_component_config.html#ae73e5383c5dbc0932f6588d67dc57acd", null ],
     [ "SupportsShadows", "struct_a_z_1_1_render_1_1_area_light_component_config.html#afe04a57c7515fa7e0d04b3537055b615", null ],
     [ "SupportsShutters", "struct_a_z_1_1_render_1_1_area_light_component_config.html#a4cc7ffbb427e2992d629c8a50334dd23", null ]
 ];

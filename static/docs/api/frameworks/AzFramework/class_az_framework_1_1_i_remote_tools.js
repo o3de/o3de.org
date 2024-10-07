@@ -1,6 +1,7 @@
 var class_az_framework_1_1_i_remote_tools =
 [
     [ "ClearReceivedMessages", "class_az_framework_1_1_i_remote_tools.html#a17b884e8f745b5789e946d30c3648763", null ],
+    [ "ClearReceivedMessagesForNextTick", "class_az_framework_1_1_i_remote_tools.html#aeb6f509cc0901860fb55505f47545396", null ],
     [ "EnumTargetInfos", "class_az_framework_1_1_i_remote_tools.html#a439689b045fe03f1f507ceeea52b0603", null ],
     [ "GetDesiredEndpoint", "class_az_framework_1_1_i_remote_tools.html#ad252b493a51851df4e8de5c685267abb", null ],
     [ "GetEndpointInfo", "class_az_framework_1_1_i_remote_tools.html#a9e24d456f560881c58d28f05d9198811", null ],

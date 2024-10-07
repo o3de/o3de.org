@@ -20,6 +20,7 @@ var class_az_tools_framework_1_1_editor_transform_component_selection_requests =
     [ "CopyScaleToSelectedEntitiesIndividualWorld", "class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a6cb0c072e1e2c927adac6303033d0da3", null ],
     [ "CopyTranslationToSelectedEntitiesGroup", "class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a77e4686fe1d15855df0ba42c153319d4", null ],
     [ "CopyTranslationToSelectedEntitiesIndividual", "class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a2fd4cd93b57f1ab5a54d06da0d9e4400", null ],
+    [ "DeselectEntities", "class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a1edf783473944dc9940f997b4261ad22", null ],
     [ "GetManipulatorTransform", "class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#addbc71a69b956c498dff63259ee33348", null ],
     [ "GetTransformMode", "class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#aaa64d588968be1196cb616ccd471df4d", null ],
     [ "OverrideComponentModeSwitcher", "class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a3ed3606cdf25d700283c2ec92ce9243b", null ],

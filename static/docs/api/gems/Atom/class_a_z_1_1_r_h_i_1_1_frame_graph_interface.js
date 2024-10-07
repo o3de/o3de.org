@@ -20,5 +20,6 @@ var class_a_z_1_1_r_h_i_1_1_frame_graph_interface =
     [ "UseShaderAttachment", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a03e8f7a8489b9a5aeab91bb5f67da22e", null ],
     [ "UseShaderAttachment", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#ab24fad45eea4648da160492f133edfb5", null ],
     [ "UseSubpassInputAttachment", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#ac7caa035af6dd415a736db0f365781f9", null ],
-    [ "UseSubpassInputAttachments", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#ae55c35fc942117a7faf1c836f1ff0ee4", null ]
+    [ "UseSubpassInputAttachments", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#ae55c35fc942117a7faf1c836f1ff0ee4", null ],
+    [ "WaitFence", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a3c3cbe1814beb67832e6f8481a35f00d", null ]
 ];

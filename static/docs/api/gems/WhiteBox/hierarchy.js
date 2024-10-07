@@ -122,9 +122,6 @@ var hierarchy =
     [ "EditorWhiteBoxTransformModeRequestBus::Handler", null, [
       [ "WhiteBox::TransformMode", "class_white_box_1_1_transform_mode.html", null ]
     ] ],
-    [ "WhiteBox::GenericHandle< struct EdgeHandleTag >", "class_white_box_1_1_generic_handle.html", null ],
-    [ "WhiteBox::GenericHandle< struct FaceHandleTag >", "class_white_box_1_1_generic_handle.html", null ],
-    [ "WhiteBox::GenericHandle< struct VertexHandleTag >", "class_white_box_1_1_generic_handle.html", null ],
     [ "IEditorNotifyListener", null, [
       [ "WhiteBox::EditorWhiteBoxMeshAsset", "class_white_box_1_1_editor_white_box_mesh_asset.html", null ]
     ] ],
@@ -152,6 +149,9 @@ var hierarchy =
     [ "WhiteBox::EdgeScaleModifier", "class_white_box_1_1_edge_scale_modifier.html", null ],
     [ "WhiteBox::EdgeTranslationModifier", "class_white_box_1_1_edge_translation_modifier.html", null ],
     [ "WhiteBox::GenericHandle< Tag >", "class_white_box_1_1_generic_handle.html", null ],
+    [ "WhiteBox::GenericHandle< struct EdgeHandleTag >", "class_white_box_1_1_generic_handle.html", null ],
+    [ "WhiteBox::GenericHandle< struct FaceHandleTag >", "class_white_box_1_1_generic_handle.html", null ],
+    [ "WhiteBox::GenericHandle< struct VertexHandleTag >", "class_white_box_1_1_generic_handle.html", null ],
     [ "WhiteBox::GeometryIntersectionData", "struct_white_box_1_1_geometry_intersection_data.html", null ],
     [ "WhiteBox::Intersection", "struct_white_box_1_1_intersection.html", null ],
     [ "WhiteBox::IntersectionAndRenderData", "struct_white_box_1_1_intersection_and_render_data.html", null ],

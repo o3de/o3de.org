@@ -204,38 +204,6 @@ var hierarchy =
     [ "DistributionFilterRequestBus::Handler", null, [
       [ "Vegetation::DistributionFilterComponent", "class_vegetation_1_1_distribution_filter_component.html", null ]
     ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< AreaDebugComponent, AreaDebugConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< BlockerComponent, BlockerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< DebugComponent, DebugConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorListCombinerComponent, DescriptorListCombinerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorListComponent, DescriptorListConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorWeightSelectorComponent, DescriptorWeightSelectorConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< DistanceBetweenFilterComponent, DistanceBetweenFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< DistributionFilterComponent, DistributionFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< LevelSettingsComponent, LevelSettingsConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "Vegetation::EditorLevelSettingsComponent", "class_vegetation_1_1_editor_level_settings_component.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< PositionModifierComponent, PositionModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< RotationModifierComponent, RotationModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< ScaleModifierComponent, ScaleModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< ShapeIntersectionFilterComponent, ShapeIntersectionFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SlopeAlignmentModifierComponent, SlopeAlignmentModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SpawnerComponent, SpawnerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceAltitudeFilterComponent, SurfaceAltitudeFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceMaskDepthFilterComponent, SurfaceMaskDepthFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceMaskFilterComponent, SurfaceMaskFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceSlopeFilterComponent, SurfaceSlopeFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "Vegetation::EditorVegetationComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
-        [ "Vegetation::EditorAreaComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
-        [ "Vegetation::EditorAreaComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
-        [ "Vegetation::EditorAreaComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
-        [ "Vegetation::EditorAreaComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ],
-        [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
-      ] ]
-    ] ],
     [ "FilterRequestBus::Handler", null, [
       [ "Vegetation::DistanceBetweenFilterComponent", "class_vegetation_1_1_distance_between_filter_component.html", null ],
       [ "Vegetation::DistributionFilterComponent", "class_vegetation_1_1_distribution_filter_component.html", null ],
@@ -275,58 +243,113 @@ var hierarchy =
       [ "Vegetation::AreaComponentBase", "class_vegetation_1_1_area_component_base.html", null ],
       [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
     ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "Vegetation::EditorVegetationComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", null ],
+    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
+    [ "LmbrCentral::EditorWrappedComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< AreaBlenderComponent, AreaBlenderConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< AreaDebugComponent, AreaDebugConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< AreaDebugComponent, AreaDebugConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorAreaDebugComponent", "class_vegetation_1_1_editor_area_debug_component.html", null ]
-      ] ],
-      [ "Vegetation::EditorVegetationComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", null ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< BlockerComponent, BlockerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< BlockerComponent, BlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DebugComponent, DebugConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< DebugComponent, DebugConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorDebugComponent", "class_vegetation_1_1_editor_debug_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorListCombinerComponent, DescriptorListCombinerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< DescriptorListCombinerComponent, DescriptorListCombinerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorDescriptorListCombinerComponent", "class_vegetation_1_1_editor_descriptor_list_combiner_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorListComponent, DescriptorListConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< DescriptorListComponent, DescriptorListConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorDescriptorListComponent", "class_vegetation_1_1_editor_descriptor_list_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DescriptorWeightSelectorComponent, DescriptorWeightSelectorConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< DescriptorWeightSelectorComponent, DescriptorWeightSelectorConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorDescriptorWeightSelectorComponent", "class_vegetation_1_1_editor_descriptor_weight_selector_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DistanceBetweenFilterComponent, DistanceBetweenFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< DistanceBetweenFilterComponent, DistanceBetweenFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorDistanceBetweenFilterComponent", "class_vegetation_1_1_editor_distance_between_filter_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< DistributionFilterComponent, DistributionFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< DistributionFilterComponent, DistributionFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorDistributionFilterComponent", "class_vegetation_1_1_editor_distribution_filter_component.html", null ]
-      ] ],
-      [ "Vegetation::EditorVegetationComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", null ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< LevelSettingsComponent, LevelSettingsConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorLevelSettingsComponent", "class_vegetation_1_1_editor_level_settings_component.html", null ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< MeshBlockerComponent, MeshBlockerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< PositionModifierComponent, PositionModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< PositionModifierComponent, PositionModifierConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorPositionModifierComponent", "class_vegetation_1_1_editor_position_modifier_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< RotationModifierComponent, RotationModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< RotationModifierComponent, RotationModifierConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorRotationModifierComponent", "class_vegetation_1_1_editor_rotation_modifier_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< ScaleModifierComponent, ScaleModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< ScaleModifierComponent, ScaleModifierConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorScaleModifierComponent", "class_vegetation_1_1_editor_scale_modifier_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< ShapeIntersectionFilterComponent, ShapeIntersectionFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< ShapeIntersectionFilterComponent, ShapeIntersectionFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorShapeIntersectionFilterComponent", "class_vegetation_1_1_editor_shape_intersection_filter_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SlopeAlignmentModifierComponent, SlopeAlignmentModifierConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< SlopeAlignmentModifierComponent, SlopeAlignmentModifierConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorSlopeAlignmentModifierComponent", "class_vegetation_1_1_editor_slope_alignment_modifier_component.html", null ]
-      ] ],
-      [ "Vegetation::EditorVegetationComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", null ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SpawnerComponent, SpawnerConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< SpawnerComponent, SpawnerConfig >", "class_vegetation_1_1_editor_area_component_base.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceAltitudeFilterComponent, SurfaceAltitudeFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< SurfaceAltitudeFilterComponent, SurfaceAltitudeFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorSurfaceAltitudeFilterComponent", "class_vegetation_1_1_editor_surface_altitude_filter_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceMaskDepthFilterComponent, SurfaceMaskDepthFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< SurfaceMaskDepthFilterComponent, SurfaceMaskDepthFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorSurfaceMaskDepthFilterComponent", "class_vegetation_1_1_editor_surface_mask_depth_filter_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceMaskFilterComponent, SurfaceMaskFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< SurfaceMaskFilterComponent, SurfaceMaskFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorSurfaceMaskFilterComponent", "class_vegetation_1_1_editor_surface_mask_filter_component.html", null ]
-      ] ],
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceSlopeFilterComponent, SurfaceSlopeFilterConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Vegetation::EditorVegetationComponentBase< SurfaceSlopeFilterComponent, SurfaceSlopeFilterConfig >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
         [ "Vegetation::EditorSurfaceSlopeFilterComponent", "class_vegetation_1_1_editor_surface_slope_filter_component.html", null ]
+      ] ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "Vegetation::EditorVegetationComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_vegetation_component_base.html", [
+        [ "Vegetation::EditorAreaComponentBase< TComponent, TConfiguration >", "class_vegetation_1_1_editor_area_component_base.html", null ]
       ] ]
     ] ],
     [ "LmbrCentral::ShapeComponentNotificationsBus::Handler", null, [

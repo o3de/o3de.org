@@ -1,6 +1,7 @@
 var class_az_framework_1_1_application =
 [
     [ "Implementation", "class_az_framework_1_1_application_1_1_implementation.html", null ],
+    [ "ImplementationFactory", "class_az_framework_1_1_application_1_1_implementation_factory.html", null ],
     [ "Application", "class_az_framework_1_1_application.html#a5785042817c90a849ede5605f395b3c0", null ],
     [ "Application", "class_az_framework_1_1_application.html#af485053995c15ceb7419898ee6266093", null ],
     [ "RegisterCoreComponents", "class_az_framework_1_1_application.html#ab92ce9db5ec6bde815a4f9c000c50029", null ],

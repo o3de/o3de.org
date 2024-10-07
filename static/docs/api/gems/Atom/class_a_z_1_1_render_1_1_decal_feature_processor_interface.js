@@ -6,6 +6,8 @@ var class_a_z_1_1_render_1_1_decal_feature_processor_interface =
     [ "GetDecalCount", "class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a36c3bbf4a6a89bc8f55852abdff8a5b0", null ],
     [ "ReleaseDecal", "class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#ac1bc01d93a79dd64a4ff3f7ee4f59b44", null ],
     [ "SetDecalAttenuationAngle", "class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a2fcac17e39584c9a5f80fef317fda4be", null ],
+    [ "SetDecalColor", "class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a0ebbab2df13762cf9258a6e9e88423c5", null ],
+    [ "SetDecalColorFactor", "class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#ae07ee0abf49428cf74386a9830b31bfa", null ],
     [ "SetDecalData", "class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a183802edd23fbd329aaeea715452fa07", null ],
     [ "SetDecalHalfSize", "class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#ab68868eac064704ca61c3cdf1ee8ebb1", null ],
     [ "SetDecalMaterial", "class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a48507fc4a3ea666aadc9b7e3494b1bde", null ],

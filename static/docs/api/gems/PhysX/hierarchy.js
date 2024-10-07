@@ -30,7 +30,8 @@ var hierarchy =
       [ "PhysX::RagdollComponent", "class_phys_x_1_1_ragdoll_component.html", null ],
       [ "PhysX::RigidBodyComponent", "class_phys_x_1_1_rigid_body_component.html", null ],
       [ "PhysX::StaticRigidBodyComponent", "class_phys_x_1_1_static_rigid_body_component.html", null ],
-      [ "PhysX::SystemComponent", "class_phys_x_1_1_system_component.html", null ]
+      [ "PhysX::SystemComponent", "class_phys_x_1_1_system_component.html", null ],
+      [ "PhysXDebug::SystemComponent", "class_phys_x_debug_1_1_system_component.html", null ]
     ] ],
     [ "AZ::ComponentBus", null, [
       [ "PhysX::ArticulationJointRequests", "class_phys_x_1_1_articulation_joint_requests.html", null ],
@@ -75,7 +76,8 @@ var hierarchy =
       [ "PhysX::Editor::ConfigurationWindowRequests", "class_phys_x_1_1_editor_1_1_configuration_window_requests.html", null ],
       [ "PhysX::ForceRegionNotifications", "class_phys_x_1_1_force_region_notifications.html", null ],
       [ "PhysX::JointRequests", "class_phys_x_1_1_joint_requests.html", null ],
-      [ "PhysX::SystemRequests", "class_phys_x_1_1_system_requests.html", null ]
+      [ "PhysX::SystemRequests", "class_phys_x_1_1_system_requests.html", null ],
+      [ "PhysXDebug::DebugRequests", "class_phys_x_debug_1_1_debug_requests.html", null ]
     ] ],
     [ "AZ::EntityBus::Handler", null, [
       [ "PhysX::CharacterControllerComponent", "class_phys_x_1_1_character_controller_component.html", null ],
@@ -93,25 +95,13 @@ var hierarchy =
       [ "PhysX::JointsComponentModeRequests", "class_phys_x_1_1_joints_component_mode_requests.html", null ]
     ] ],
     [ "AZ::Interface::Registrar", null, [
-      [ "PhysX::PhysXEditorJointHelpersInterface", "class_phys_x_1_1_phys_x_editor_joint_helpers_interface.html", null ]
-    ] ],
-    [ "AZ::Interface::Registrar", null, [
-      [ "PhysX::PhysXJointHelpersInterface", "class_phys_x_1_1_phys_x_joint_helpers_interface.html", null ]
-    ] ],
-    [ "AZ::Interface::Registrar", null, [
-      [ "PhysX::PhysXSceneInterface", "class_phys_x_1_1_phys_x_scene_interface.html", null ]
-    ] ],
-    [ "AZ::Interface::Registrar", null, [
-      [ "PhysX::PhysXSystem", "class_phys_x_1_1_phys_x_system.html", null ]
-    ] ],
-    [ "AZ::Interface::Registrar", null, [
-      [ "PhysX::MaterialManager", "class_phys_x_1_1_material_manager.html", null ]
-    ] ],
-    [ "AZ::Interface::Registrar", null, [
+      [ "PhysX::Debug::PhysXDebug", "class_phys_x_1_1_debug_1_1_phys_x_debug.html", null ],
+      [ "PhysX::MaterialManager", "class_phys_x_1_1_material_manager.html", null ],
+      [ "PhysX::PhysXEditorJointHelpersInterface", "class_phys_x_1_1_phys_x_editor_joint_helpers_interface.html", null ],
+      [ "PhysX::PhysXJointHelpersInterface", "class_phys_x_1_1_phys_x_joint_helpers_interface.html", null ],
+      [ "PhysX::PhysXSceneInterface", "class_phys_x_1_1_phys_x_scene_interface.html", null ],
+      [ "PhysX::PhysXSystem", "class_phys_x_1_1_phys_x_system.html", null ],
       [ "PhysX::WindProvider", "class_phys_x_1_1_wind_provider.html", null ]
-    ] ],
-    [ "AZ::Interface::Registrar", null, [
-      [ "PhysX::Debug::PhysXDebug", "class_phys_x_1_1_debug_1_1_phys_x_debug.html", null ]
     ] ],
     [ "AZ::Job", null, [
       [ "PhysX::PhysXJob", "class_phys_x_1_1_phys_x_job.html", null ]
@@ -141,7 +131,8 @@ var hierarchy =
       [ "PhysX::JointComponent", "class_phys_x_1_1_joint_component.html", null ],
       [ "PhysX::RigidBodyComponent", "class_phys_x_1_1_rigid_body_component.html", null ],
       [ "PhysX::SystemComponent", "class_phys_x_1_1_system_component.html", null ],
-      [ "PhysX::WindProvider", "class_phys_x_1_1_wind_provider.html", null ]
+      [ "PhysX::WindProvider", "class_phys_x_1_1_wind_provider.html", null ],
+      [ "PhysXDebug::SystemComponent", "class_phys_x_debug_1_1_system_component.html", null ]
     ] ],
     [ "AZ::TransformNotificationBus::Handler", null, [
       [ "PhysX::ArticulationLinkComponent", "class_phys_x_1_1_articulation_link_component.html", null ],
@@ -276,7 +267,8 @@ var hierarchy =
       [ "PhysX::EditorMeshColliderComponent", "class_phys_x_1_1_editor_mesh_collider_component.html", null ],
       [ "PhysX::EditorRigidBodyComponent", "class_phys_x_1_1_editor_rigid_body_component.html", null ],
       [ "PhysX::EditorShapeColliderComponent", "class_phys_x_1_1_editor_shape_collider_component.html", null ],
-      [ "PhysX::EditorStaticRigidBodyComponent", "class_phys_x_1_1_editor_static_rigid_body_component.html", null ]
+      [ "PhysX::EditorStaticRigidBodyComponent", "class_phys_x_1_1_editor_static_rigid_body_component.html", null ],
+      [ "PhysXDebug::EditorSystemComponent", "class_phys_x_debug_1_1_editor_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::EditorComponentSelectionNotificationsBus::Handler", null, [
       [ "PhysX::EditorJointComponent", "class_phys_x_1_1_editor_joint_component.html", null ]
@@ -287,14 +279,13 @@ var hierarchy =
       [ "PhysX::EditorMeshColliderComponent", "class_phys_x_1_1_editor_mesh_collider_component.html", null ],
       [ "PhysX::EditorRigidBodyComponent", "class_phys_x_1_1_editor_rigid_body_component.html", null ]
     ] ],
-    [ "AzToolsFramework::EditorContextMenuBus::Handler", null, [
-      [ "PhysX::EditorSystemComponent", "class_phys_x_1_1_editor_system_component.html", null ]
-    ] ],
     [ "AzToolsFramework::EditorEntityContextNotificationBus::Handler", null, [
-      [ "PhysX::EditorSystemComponent", "class_phys_x_1_1_editor_system_component.html", null ]
+      [ "PhysX::EditorSystemComponent", "class_phys_x_1_1_editor_system_component.html", null ],
+      [ "PhysXDebug::EditorSystemComponent", "class_phys_x_debug_1_1_editor_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [
-      [ "PhysX::EditorSystemComponent", "class_phys_x_1_1_editor_system_component.html", null ]
+      [ "PhysX::EditorSystemComponent", "class_phys_x_1_1_editor_system_component.html", null ],
+      [ "PhysXDebug::EditorSystemComponent", "class_phys_x_debug_1_1_editor_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::EntitySelectionEvents::Bus::Handler", null, [
       [ "PhysX::DebugDraw::Collider", "class_phys_x_1_1_debug_draw_1_1_collider.html", null ],
@@ -345,6 +336,10 @@ var hierarchy =
     [ "ConfigurationWindowRequestBus::Handler", null, [
       [ "PhysX::Editor::ConfigurationWidget", "class_phys_x_1_1_editor_1_1_configuration_widget.html", null ]
     ] ],
+    [ "CrySystemEventBus::Handler", null, [
+      [ "PhysXDebug::EditorSystemComponent", "class_phys_x_debug_1_1_editor_system_component.html", null ],
+      [ "PhysXDebug::SystemComponent", "class_phys_x_debug_1_1_system_component.html", null ]
+    ] ],
     [ "EditorHeightfieldColliderRequestBus::Handler", null, [
       [ "PhysX::EditorHeightfieldColliderComponent", "class_phys_x_1_1_editor_heightfield_collider_component.html", null ]
     ] ],
@@ -365,6 +360,9 @@ var hierarchy =
     ] ],
     [ "ForceWorldSpaceRequestBus::Handler", null, [
       [ "PhysX::ForceWorldSpace", "class_phys_x_1_1_force_world_space.html", null ]
+    ] ],
+    [ "IEditorNotifyListener", null, [
+      [ "PhysXDebug::EditorSystemComponent", "class_phys_x_debug_1_1_editor_system_component.html", null ]
     ] ],
     [ "JointRequestBus::Handler", null, [
       [ "PhysX::HingeJointComponent", "class_phys_x_1_1_hinge_joint_component.html", null ],
@@ -612,6 +610,12 @@ var hierarchy =
     [ "PhysX::Utils::Characters::DepthData", "struct_phys_x_1_1_utils_1_1_characters_1_1_depth_data.html", null ],
     [ "PhysX::Utils::PrefabInfo", "struct_phys_x_1_1_utils_1_1_prefab_info.html", null ],
     [ "PhysX::WindConfiguration", "class_phys_x_1_1_wind_configuration.html", null ],
+    [ "PhysXDebug::ColorMappings", "struct_phys_x_debug_1_1_color_mappings.html", null ],
+    [ "PhysXDebug::Culling", "struct_phys_x_debug_1_1_culling.html", null ],
+    [ "PhysXDebug::PhysXVisualizationSettings", "struct_phys_x_debug_1_1_phys_x_visualization_settings.html", null ],
+    [ "PhysXDebugRequestBus::Handler", null, [
+      [ "PhysXDebug::SystemComponent", "class_phys_x_debug_1_1_system_component.html", null ]
+    ] ],
     [ "PolygonPrismMeshUtils::Face", "struct_polygon_prism_mesh_utils_1_1_face.html", null ],
     [ "PolygonPrismMeshUtils::HalfEdge", "struct_polygon_prism_mesh_utils_1_1_half_edge.html", null ],
     [ "PolygonPrismMeshUtils::Mesh2D", "class_polygon_prism_mesh_utils_1_1_mesh2_d.html", null ],

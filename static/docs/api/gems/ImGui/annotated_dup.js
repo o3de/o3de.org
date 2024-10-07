@@ -19,6 +19,12 @@ var annotated_dup =
       [ "OtherActiveImGuiRequests", "class_im_gui_1_1_other_active_im_gui_requests.html", null ],
       [ "PointEncapsulation", "struct_im_gui_1_1_point_encapsulation.html", null ]
     ] ],
+    [ "ImStb", null, [
+      [ "STB_TexteditState", "struct_im_stb_1_1_s_t_b___textedit_state.html", null ],
+      [ "StbTexteditRow", "struct_im_stb_1_1_stb_textedit_row.html", null ],
+      [ "StbUndoRecord", "struct_im_stb_1_1_stb_undo_record.html", null ],
+      [ "StbUndoState", "struct_im_stb_1_1_stb_undo_state.html", null ]
+    ] ],
     [ "ImBitArray", "struct_im_bit_array.html", null ],
     [ "ImBitVector", "struct_im_bit_vector.html", null ],
     [ "ImChunkStream", "struct_im_chunk_stream.html", null ],

@@ -14,7 +14,6 @@ var annotated_dup =
       [ "ActorClothColliders", "class_nv_cloth_1_1_actor_cloth_colliders.html", "class_nv_cloth_1_1_actor_cloth_colliders" ],
       [ "ActorClothSkinning", "class_nv_cloth_1_1_actor_cloth_skinning.html", "class_nv_cloth_1_1_actor_cloth_skinning" ],
       [ "AssetHelper", "class_nv_cloth_1_1_asset_helper.html", "class_nv_cloth_1_1_asset_helper" ],
-      [ "AzClothAllocator", "class_nv_cloth_1_1_az_cloth_allocator.html", null ],
       [ "CapsuleCollider", "struct_nv_cloth_1_1_capsule_collider.html", "struct_nv_cloth_1_1_capsule_collider" ],
       [ "Cloth", "class_nv_cloth_1_1_cloth.html", "class_nv_cloth_1_1_cloth" ],
       [ "ClothComponent", "class_nv_cloth_1_1_cloth_component.html", null ],

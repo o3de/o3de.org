@@ -6,7 +6,6 @@ var class_m_core_1_1_ray =
     [ "GetDest", "class_m_core_1_1_ray.html#a96be439d46b0fde4a5fad5897109d29a", null ],
     [ "GetDirection", "class_m_core_1_1_ray.html#a91620504c441df400553d6288b5ebbc7", null ],
     [ "GetOrigin", "class_m_core_1_1_ray.html#a5fbf34ac70827682b71c3af22518f449", null ],
-    [ "Intersects", "class_m_core_1_1_ray.html#a965727b5e09d2eb3315b7995c7eff847", null ],
     [ "Intersects", "class_m_core_1_1_ray.html#ac3c98b2c4642483c9a3738445b0ac135", null ],
     [ "Intersects", "class_m_core_1_1_ray.html#acb3c7a592d8aca4315b240076e8c52e0", null ],
     [ "Intersects", "class_m_core_1_1_ray.html#aa492f09bebf67f65309f34dac57b639c", null ],

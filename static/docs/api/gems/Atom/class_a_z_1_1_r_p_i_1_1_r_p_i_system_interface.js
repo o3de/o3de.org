@@ -4,6 +4,7 @@ var class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface =
     [ "GetCommonShaderAssetForSrgs", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a8d32dbcc1c72df8740bb7ea256ef6f92", null ],
     [ "GetCurrentTick", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a3722f40dc2d526a9f5ad6c060b35d039", null ],
     [ "GetDescriptor", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a44758458b95c07e0bd6d42ae42fa230d", null ],
+    [ "GetNumScenes", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a9c248f59264a439ef446d51f522996a2", null ],
     [ "GetRenderApiName", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a3e5a6a3eb74685f1bbe19132deee37d3", null ],
     [ "GetRenderPipelineForWindow", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#af5bb54ab4b1b22ada3354e7910fc33d4", null ],
     [ "GetScene", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a45fb482313023eda64e53212d8fecbd6", null ],

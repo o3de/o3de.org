@@ -1,6 +1,6 @@
 var class_az_tools_framework_1_1_editor_requests =
 [
-    [ "WidgetCreationFunc", "class_az_tools_framework_1_1_editor_requests.html#afbe220b9b5c766093a9ba3d3b9c0b771", null ],
+    [ "WidgetCreationFunc", "class_az_tools_framework_1_1_editor_requests.html#a63d6b190cf902c391f469518995c441e", null ],
     [ "BrowseForAssets", "class_az_tools_framework_1_1_editor_requests.html#a46985f6609f3ed7ce6b90ce3927a5a7c", null ],
     [ "CalculateAgentNavigationRadius", "class_az_tools_framework_1_1_editor_requests.html#a541571b3a2d8caf94c0dc61b908065ae", null ],
     [ "CanGoToSelectedEntitiesInViewports", "class_az_tools_framework_1_1_editor_requests.html#a1e8e0f34ccaa8e2d7b7f21364ddd452a", null ],
@@ -12,7 +12,6 @@ var class_az_tools_framework_1_1_editor_requests =
     [ "CreateNewEntityAsChild", "class_az_tools_framework_1_1_editor_requests.html#ab84bd44e97b163d3db1797eec60f027f", null ],
     [ "CreateNewEntityAtPosition", "class_az_tools_framework_1_1_editor_requests.html#aa6077752759d717be92bc5ea7da545b2", null ],
     [ "DeleteSelectedEntities", "class_az_tools_framework_1_1_editor_requests.html#a601c011b050f3953f8d07cd51a170568", null ],
-    [ "DestroyEditorRepresentation", "class_az_tools_framework_1_1_editor_requests.html#a074a449123e6e7ccdb71d16b859cc836", null ],
     [ "GetAgentTypes", "class_az_tools_framework_1_1_editor_requests.html#ae4a6bd85f00148c36a05a35cee23510b", null ],
     [ "GetComponentEditorIcon", "class_az_tools_framework_1_1_editor_requests.html#abefa75b6bf8dbee9df9edff9655b7e33", null ],
     [ "GetComponentIconPath", "class_az_tools_framework_1_1_editor_requests.html#afa6fada8a182f51fbe291e701eceb7b7", null ],
@@ -28,6 +27,7 @@ var class_az_tools_framework_1_1_editor_requests =
     [ "GetShowCircularDependencyError", "class_az_tools_framework_1_1_editor_requests.html#ae04db5df7c907812cf23a43bfb829398", null ],
     [ "GetViewPaneWidget", "class_az_tools_framework_1_1_editor_requests.html#ad0059f314107c036ab087b4e5c98ff08", null ],
     [ "GetWorldPositionAtViewportCenter", "class_az_tools_framework_1_1_editor_requests.html#af99a438d9ce431d5719d985cc68f90e3", null ],
+    [ "GetWorldPositionAtViewportInteraction", "class_az_tools_framework_1_1_editor_requests.html#a1c72ffdfa5b110e984146876e16806cd", null ],
     [ "GoToSelectedEntitiesInViewports", "class_az_tools_framework_1_1_editor_requests.html#a64ab1d13b2f24fc1fbfbc985e6d1992d", null ],
     [ "GoToSelectedOrHighlightedEntitiesInViewports", "class_az_tools_framework_1_1_editor_requests.html#a55b73625d461eeba5890545d923e7c6c", null ],
     [ "InstanceViewPane", "class_az_tools_framework_1_1_editor_requests.html#a40d1b873e2c297edb968b6241e000848", null ],

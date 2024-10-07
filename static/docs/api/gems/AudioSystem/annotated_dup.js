@@ -49,9 +49,7 @@ var annotated_dup =
         [ "UnloadControls", "struct_audio_1_1_system_request_1_1_unload_controls.html", null ],
         [ "UnmuteAll", "struct_audio_1_1_system_request_1_1_unmute_all.html", null ]
       ] ],
-      [ "AudioBankAllocator", "class_audio_1_1_audio_bank_allocator.html", null ],
       [ "AudioFileCacheManagerNotifications", "class_audio_1_1_audio_file_cache_manager_notifications.html", null ],
-      [ "AudioImplAllocator", "class_audio_1_1_audio_impl_allocator.html", null ],
       [ "AudioImplMemoryPoolInfo", "struct_audio_1_1_audio_impl_memory_pool_info.html", null ],
       [ "AudioObjectIDFactory", "class_audio_1_1_audio_object_i_d_factory.html", null ],
       [ "AudioPreloadNotifications", "class_audio_1_1_audio_preload_notifications.html", null ],
@@ -64,7 +62,6 @@ var annotated_dup =
       [ "AudioStreamData", "struct_audio_1_1_audio_stream_data.html", null ],
       [ "AudioStreamingRequests", "class_audio_1_1_audio_streaming_requests.html", null ],
       [ "AudioStreamMultiTrackData", "struct_audio_1_1_audio_stream_multi_track_data.html", null ],
-      [ "AudioSystemAllocator", "class_audio_1_1_audio_system_allocator.html", null ],
       [ "AudioSystemImplementation", "class_audio_1_1_audio_system_implementation.html", null ],
       [ "AudioSystemImplementationNotifications", "class_audio_1_1_audio_system_implementation_notifications.html", "class_audio_1_1_audio_system_implementation_notifications" ],
       [ "AudioSystemImplementationRequests", "class_audio_1_1_audio_system_implementation_requests.html", "class_audio_1_1_audio_system_implementation_requests" ],

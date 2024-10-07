@@ -113,7 +113,8 @@ var annotated_dup =
         [ "ClassData", "struct_a_z_1_1_edit_1_1_class_data.html", null ],
         [ "ElementData", "struct_a_z_1_1_edit_1_1_element_data.html", "struct_a_z_1_1_edit_1_1_element_data" ],
         [ "EnumConstant", "struct_a_z_1_1_edit_1_1_enum_constant.html", null ],
-        [ "EnumConstantBase", "struct_a_z_1_1_edit_1_1_enum_constant_base.html", null ]
+        [ "EnumConstantBase", "struct_a_z_1_1_edit_1_1_enum_constant_base.html", null ],
+        [ "TypeVisitor", "struct_a_z_1_1_edit_1_1_type_visitor.html", "struct_a_z_1_1_edit_1_1_type_visitor" ]
       ] ],
       [ "EntityUtils", null, [
         [ "EntityIdAccessor", "class_a_z_1_1_entity_utils_1_1_entity_id_accessor.html", null ],
@@ -227,15 +228,16 @@ var annotated_dup =
       [ "Json", null, [
         [ "RapidjsonStackAllocator", "class_a_z_1_1_json_1_1_rapidjson_stack_allocator.html", "class_a_z_1_1_json_1_1_rapidjson_stack_allocator" ]
       ] ],
-      [ "JSON", null, [
-        [ "RapidJSONAllocator", "class_a_z_1_1_j_s_o_n_1_1_rapid_j_s_o_n_allocator.html", null ]
-      ] ],
       [ "JsonSerializationResult", null, [
         [ "Result", "class_a_z_1_1_json_serialization_result_1_1_result.html", null ],
         [ "ResultCode", "union_a_z_1_1_json_serialization_result_1_1_result_code.html", "union_a_z_1_1_json_serialization_result_1_1_result_code" ]
       ] ],
       [ "JsonSerializationUtils", null, [
         [ "WriteJsonSettings", "struct_a_z_1_1_json_serialization_utils_1_1_write_json_settings.html", null ]
+      ] ],
+      [ "Locale", null, [
+        [ "ScopedSerializationLocale", "class_a_z_1_1_locale_1_1_scoped_serialization_locale.html", "class_a_z_1_1_locale_1_1_scoped_serialization_locale" ],
+        [ "ScopedSerializationLocale_Platform", "class_a_z_1_1_locale_1_1_scoped_serialization_locale___platform.html", null ]
       ] ],
       [ "Metrics", null, [
         [ "AsyncArgs", "struct_a_z_1_1_metrics_1_1_async_args.html", "struct_a_z_1_1_metrics_1_1_async_args" ],
@@ -315,6 +317,8 @@ var annotated_dup =
         [ "StaticInstance", "struct_a_z_1_1_serialize_1_1_static_instance.html", null ]
       ] ],
       [ "Settings", null, [
+        [ "CommandLineArgument", "struct_a_z_1_1_settings_1_1_command_line_argument.html", null ],
+        [ "CommandLineParserSettings", "struct_a_z_1_1_settings_1_1_command_line_parser_settings.html", "struct_a_z_1_1_settings_1_1_command_line_parser_settings" ],
         [ "ConfigParserSettings", "struct_a_z_1_1_settings_1_1_config_parser_settings.html", "struct_a_z_1_1_settings_1_1_config_parser_settings" ],
         [ "TextParserSettings", "struct_a_z_1_1_settings_1_1_text_parser_settings.html", "struct_a_z_1_1_settings_1_1_text_parser_settings" ]
       ] ],
@@ -356,14 +360,12 @@ var annotated_dup =
       [ "Adl", "struct_a_z_1_1_adl.html", null ],
       [ "AllocatorBase", "class_a_z_1_1_allocator_base.html", "class_a_z_1_1_allocator_base" ],
       [ "AllocatorDebugConfig", "struct_a_z_1_1_allocator_debug_config.html", "struct_a_z_1_1_allocator_debug_config" ],
-      [ "AllocatorGlobalWrapper", "class_a_z_1_1_allocator_global_wrapper.html", null ],
       [ "AllocatorInstance", "class_a_z_1_1_allocator_instance.html", null ],
       [ "AllocatorManager", "class_a_z_1_1_allocator_manager.html", "class_a_z_1_1_allocator_manager" ],
-      [ "AllocatorPointerWrapper", "class_a_z_1_1_allocator_pointer_wrapper.html", null ],
       [ "AllocatorWrapper", "class_a_z_1_1_allocator_wrapper.html", "class_a_z_1_1_allocator_wrapper" ],
       [ "AnyTypeInfoConcept", "struct_a_z_1_1_any_type_info_concept.html", null ],
       [ "AnyTypeInfoConcept< ValueType, AZStd::enable_if_t< AZStd::is_abstract< ValueType >::value > >", "struct_a_z_1_1_any_type_info_concept_3_01_value_type_00_01_a_z_std_1_1enable__if__t_3_01_a_z_stdc8ac22fae239092e6b2e6b5289d8447f.html", null ],
-      [ "ApplicationTypeQuery", "struct_a_z_1_1_application_type_query.html", null ],
+      [ "ApplicationTypeQuery", "struct_a_z_1_1_application_type_query.html", "struct_a_z_1_1_application_type_query" ],
       [ "AssetManagerComponent", "class_a_z_1_1_asset_manager_component.html", "class_a_z_1_1_asset_manager_component" ],
       [ "AssetSerializer", "class_a_z_1_1_asset_serializer.html", "class_a_z_1_1_asset_serializer" ],
       [ "AssetTypeInfo", "class_a_z_1_1_asset_type_info.html", "class_a_z_1_1_asset_type_info" ],
@@ -426,7 +428,8 @@ var annotated_dup =
       [ "Capsule", "class_a_z_1_1_capsule.html", "class_a_z_1_1_capsule" ],
       [ "CatmullRomSpline", "class_a_z_1_1_catmull_rom_spline.html", "class_a_z_1_1_catmull_rom_spline" ],
       [ "CheckedOperationInfo", "struct_a_z_1_1_checked_operation_info.html", null ],
-      [ "ChildAllocatorSchema", "class_a_z_1_1_child_allocator_schema.html", null ],
+      [ "ChildAllocatorSchema", "class_a_z_1_1_child_allocator_schema.html", "class_a_z_1_1_child_allocator_schema" ],
+      [ "ChildAllocatorSchemaBase", "class_a_z_1_1_child_allocator_schema_base.html", null ],
       [ "ClampedIntegralLimits", "struct_a_z_1_1_clamped_integral_limits.html", "struct_a_z_1_1_clamped_integral_limits" ],
       [ "Color", "class_a_z_1_1_color.html", "class_a_z_1_1_color" ],
       [ "CommandLine", "class_a_z_1_1_command_line.html", "class_a_z_1_1_command_line" ],
@@ -435,6 +438,7 @@ var annotated_dup =
       [ "ComponentApplication", "class_a_z_1_1_component_application.html", "class_a_z_1_1_component_application" ],
       [ "ComponentApplicationRequests", "class_a_z_1_1_component_application_requests.html", "class_a_z_1_1_component_application_requests" ],
       [ "ComponentApplicationRequestsEBusTraits", "class_a_z_1_1_component_application_requests_e_bus_traits.html", "class_a_z_1_1_component_application_requests_e_bus_traits" ],
+      [ "ComponentApplicationSettings", "struct_a_z_1_1_component_application_settings.html", "struct_a_z_1_1_component_application_settings" ],
       [ "ComponentBus", "class_a_z_1_1_component_bus.html", "class_a_z_1_1_component_bus" ],
       [ "ComponentConfig", "class_a_z_1_1_component_config.html", null ],
       [ "ComponentDescriptor", "class_a_z_1_1_component_descriptor.html", "class_a_z_1_1_component_descriptor" ],
@@ -445,7 +449,8 @@ var annotated_dup =
       [ "ConfigurableStackInterface", "class_a_z_1_1_configurable_stack_interface.html", null ],
       [ "Console", "class_a_z_1_1_console.html", "class_a_z_1_1_console" ],
       [ "ConsoleCommandMemberFunctorSignature", "struct_a_z_1_1_console_command_member_functor_signature.html", null ],
-      [ "ConsoleCommandMemberFunctorSignature< T, AZStd::enable_if_t< AZStd::is_class_v< T > > >", "struct_a_z_1_1_console_command_member_functor_signature_3_01_t_00_01_a_z_std_1_1enable__if__t_3_6110396f7a1fe9dba4ee50a050aa7851.html", null ],
+      [ "ConsoleCommandMemberFunctorSignature< T, AZStd::enable_if_t< AZStd::is_class_v< T > &&!AZStd::is_const_v< T > > >", "struct_a_z_1_1_console_command_member_functor_signature_3_01_t_00_01_a_z_std_1_1enable__if__t_3_d1dcf85739e00f22db926f1f6caca523.html", null ],
+      [ "ConsoleCommandMemberFunctorSignature< T, AZStd::enable_if_t< AZStd::is_class_v< T > &&AZStd::is_const_v< T > > >", "struct_a_z_1_1_console_command_member_functor_signature_3_01_t_00_01_a_z_std_1_1enable__if__t_3_a18bedc9e0d99a0c51c4757db967c48e.html", null ],
       [ "ConsoleDataContainer", "class_a_z_1_1_console_data_container.html", null ],
       [ "ConsoleDataContainer< BASE_TYPE, ThreadSafety::RequiresLock >", "class_a_z_1_1_console_data_container_3_01_b_a_s_e___t_y_p_e_00_01_thread_safety_1_1_requires_lock_01_4.html", null ],
       [ "ConsoleDataContainer< BASE_TYPE, ThreadSafety::UseStdAtomic >", "class_a_z_1_1_console_data_container_3_01_b_a_s_e___t_y_p_e_00_01_thread_safety_1_1_use_std_atomic_01_4.html", null ],
@@ -681,9 +686,13 @@ var annotated_dup =
       [ "OverloadArgumentGroupInfo", "struct_a_z_1_1_overload_argument_group_info.html", null ],
       [ "OverloadInfo", "struct_a_z_1_1_overload_info.html", null ],
       [ "OverloadVariance", "struct_a_z_1_1_overload_variance.html", null ],
+      [ "PackedVector2", "class_a_z_1_1_packed_vector2.html", null ],
       [ "PackedVector3", "class_a_z_1_1_packed_vector3.html", null ],
+      [ "PackedVector4", "class_a_z_1_1_packed_vector4.html", null ],
       [ "Plane", "class_a_z_1_1_plane.html", "class_a_z_1_1_plane" ],
       [ "PlatformHelper", "class_a_z_1_1_platform_defaults_1_1_platform_helper.html", "class_a_z_1_1_platform_defaults_1_1_platform_helper" ],
+      [ "PointerJsonSerializer", "class_a_z_1_1_pointer_json_serializer.html", "class_a_z_1_1_pointer_json_serializer" ],
+      [ "PointerObject", "struct_a_z_1_1_pointer_object.html", null ],
       [ "PolygonPrism", "class_a_z_1_1_polygon_prism.html", "class_a_z_1_1_polygon_prism" ],
       [ "PoolAllocation", "class_a_z_1_1_pool_allocation.html", null ],
       [ "PoolAllocator", "class_a_z_1_1_pool_allocator.html", "class_a_z_1_1_pool_allocator" ],
@@ -805,6 +814,7 @@ var annotated_dup =
       [ "SimpleLcgRandom", "class_a_z_1_1_simple_lcg_random.html", null ],
       [ "SimpleLcgRandomVec4", "class_a_z_1_1_simple_lcg_random_vec4.html", null ],
       [ "SimpleSchemaAllocator", "class_a_z_1_1_simple_schema_allocator.html", "class_a_z_1_1_simple_schema_allocator" ],
+      [ "SimpleSchemaAllocatorBase", "class_a_z_1_1_simple_schema_allocator_base.html", null ],
       [ "SizeType", "struct_a_z_1_1_size_type.html", null ],
       [ "SizeType< 0, false >", "struct_a_z_1_1_size_type_3_010_00_01false_01_4.html", null ],
       [ "SizeType< 0, true >", "struct_a_z_1_1_size_type_3_010_00_01true_01_4.html", null ],
@@ -930,7 +940,7 @@ var annotated_dup =
         [ "as_rvalue_view", "class_a_z_std_1_1ranges_1_1as__rvalue__view.html", null ],
         [ "common_view", "class_a_z_std_1_1ranges_1_1common__view.html", null ],
         [ "dangling", "struct_a_z_std_1_1ranges_1_1dangling.html", null ],
-        [ "elements_view", "class_a_z_std_1_1ranges_1_1elements__view.html", null ],
+        [ "elements_view", "class_a_z_std_1_1ranges_1_1elements__view.html", "class_a_z_std_1_1ranges_1_1elements__view" ],
         [ "elements_view_iterator_category", "struct_a_z_std_1_1ranges_1_1elements__view__iterator__category.html", null ],
         [ "empty_view", "class_a_z_std_1_1ranges_1_1empty__view.html", null ],
         [ "empty_view< T, enable_if_t< is_object_v< T > > >", "class_a_z_std_1_1ranges_1_1empty__view_3_01_t_00_01enable__if__t_3_01is__object__v_3_01_t_01_4_01_4_01_4.html", null ],
@@ -945,9 +955,9 @@ var annotated_dup =
         [ "in_in_result", "struct_a_z_std_1_1ranges_1_1in__in__result.html", null ],
         [ "in_out_result", "struct_a_z_std_1_1ranges_1_1in__out__result.html", null ],
         [ "iota_view", "class_a_z_std_1_1ranges_1_1iota__view.html", "class_a_z_std_1_1ranges_1_1iota__view" ],
-        [ "join_view", "class_a_z_std_1_1ranges_1_1join__view.html", null ],
+        [ "join_view", "class_a_z_std_1_1ranges_1_1join__view.html", "class_a_z_std_1_1ranges_1_1join__view" ],
         [ "join_view_iterator_category", "struct_a_z_std_1_1ranges_1_1join__view__iterator__category.html", null ],
-        [ "join_with_view", "class_a_z_std_1_1ranges_1_1join__with__view.html", null ],
+        [ "join_with_view", "class_a_z_std_1_1ranges_1_1join__with__view.html", "class_a_z_std_1_1ranges_1_1join__with__view" ],
         [ "join_with_view_iterator_category", "struct_a_z_std_1_1ranges_1_1join__with__view__iterator__category.html", null ],
         [ "less", "struct_a_z_std_1_1ranges_1_1less.html", null ],
         [ "less_equal", "struct_a_z_std_1_1ranges_1_1less__equal.html", null ],
@@ -963,12 +973,12 @@ var annotated_dup =
         [ "split_view", "class_a_z_std_1_1ranges_1_1split__view.html", "class_a_z_std_1_1ranges_1_1split__view" ],
         [ "subrange", "class_a_z_std_1_1ranges_1_1subrange.html", null ],
         [ "subrange< I, S, K, enable_if_t< conjunction_v< bool_constant< input_or_output_iterator< I > >, bool_constant< sentinel_for< S, I > >, bool_constant<(K==subrange_kind::sized||!sized_sentinel_for< S, I >)> > > >", "class_a_z_std_1_1ranges_1_1subrange_3_01_i_00_01_s_00_01_k_00_01enable__if__t_3_01conjunction__vc58a58bfb37124a15cfa245f7c762900.html", null ],
-        [ "transform_view", "class_a_z_std_1_1ranges_1_1transform__view.html", null ],
+        [ "transform_view", "class_a_z_std_1_1ranges_1_1transform__view.html", "class_a_z_std_1_1ranges_1_1transform__view" ],
         [ "transform_view_iterator_category", "struct_a_z_std_1_1ranges_1_1transform__view__iterator__category.html", null ],
         [ "view_base", "struct_a_z_std_1_1ranges_1_1view__base.html", null ],
         [ "view_interface", "class_a_z_std_1_1ranges_1_1view__interface.html", null ],
         [ "view_interface< D, enable_if_t< is_class_v< D > &&same_as< D, remove_cv_t< D > > > >", "class_a_z_std_1_1ranges_1_1view__interface_3_01_d_00_01enable__if__t_3_01is__class__v_3_01_d_01_f256fb7be662db1e7231fa0865d33e7f.html", null ],
-        [ "zip_view", "class_a_z_std_1_1ranges_1_1zip__view.html", null ]
+        [ "zip_view", "class_a_z_std_1_1ranges_1_1zip__view.html", "class_a_z_std_1_1ranges_1_1zip__view" ]
       ] ],
       [ "variant_detail", null, [
         [ "get_alternative", null, [
@@ -1028,6 +1038,8 @@ var annotated_dup =
       [ "array< T, 0U >", "class_a_z_std_1_1array_3_01_t_00_010_u_01_4.html", null ],
       [ "BackTracingState", "class_a_z_std_1_1_back_tracing_state.html", null ],
       [ "basic_common_reference", "struct_a_z_std_1_1basic__common__reference.html", null ],
+      [ "basic_common_reference< pair< T1, T2 >, pair< U1, U2 >, TQual, UQual >", "struct_a_z_std_1_1basic__common__reference_3_01pair_3_01_t1_00_01_t2_01_4_00_01pair_3_01_u1_00_008131a11ff4f3a0cdbe0dcdecc336c74.html", null ],
+      [ "basic_common_reference< tuple< TTypes... >, tuple< UTypes... >, TQual, UQual >", "struct_a_z_std_1_1basic__common__reference_3_01tuple_3_01_t_types_8_8_8_01_4_00_01tuple_3_01_u_t822fcf9a8f74f9c7cfd77821bedbee5b.html", null ],
       [ "basic_const_iterator", "class_a_z_std_1_1basic__const__iterator.html", "class_a_z_std_1_1basic__const__iterator" ],
       [ "basic_fixed_string", "class_a_z_std_1_1basic__fixed__string.html", "class_a_z_std_1_1basic__fixed__string" ],
       [ "basic_regex", "class_a_z_std_1_1basic__regex.html", null ],
@@ -1365,9 +1377,11 @@ var annotated_dup =
       [ "threadcache_t", "structnedalloc_1_1threadcache__t.html", null ],
       [ "threadcacheblk_t", "structnedalloc_1_1threadcacheblk__t.html", null ]
     ] ],
-    [ "std", null, [
+    [ "std", "namespacestd.html", [
       [ "common_type< AZStd::basic_const_iterator< T >, AZStd::basic_const_iterator< U > >", "structstd_1_1common__type_3_01_a_z_std_1_1basic__const__iterator_3_01_t_01_4_00_01_a_z_std_1_1baf7d077a2a8848d1d574089e995925257.html", null ],
       [ "common_type< AZStd::basic_const_iterator< T >, U >", "structstd_1_1common__type_3_01_a_z_std_1_1basic__const__iterator_3_01_t_01_4_00_01_u_01_4.html", null ],
+      [ "common_type< AZStd::pair< T1, T2 >, AZStd::pair< U1, U2 > >", "structstd_1_1common__type_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_00_01_a_z_std_1_1pair_3_01_u1_00_01_u2_01_4_01_4.html", null ],
+      [ "common_type< tuple< TTypes... >, tuple< UTypes... > >", "structstd_1_1common__type_3_01tuple_3_01_t_types_8_8_8_01_4_00_01tuple_3_01_u_types_8_8_8_01_4_01_4.html", null ],
       [ "common_type< U, AZStd::basic_const_iterator< T > >", "structstd_1_1common__type_3_01_u_00_01_a_z_std_1_1basic__const__iterator_3_01_t_01_4_01_4.html", null ],
       [ "tuple_element< 0, AZStd::pair< T1, T2 > >", "structstd_1_1tuple__element_3_010_00_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4.html", null ],
       [ "tuple_element< 0, AZStd::ranges::subrange< I, S, K > >", "structstd_1_1tuple__element_3_010_00_01_a_z_std_1_1ranges_1_1subrange_3_01_i_00_01_s_00_01_k_01_4_01_4.html", null ],
@@ -1386,6 +1400,7 @@ var annotated_dup =
       ] ]
     ] ],
     [ "_GUID", "struct___g_u_i_d.html", null ],
+    [ "AllocateAddress", "struct_allocate_address.html", "struct_allocate_address" ],
     [ "ConsoleDataWrapper< BASE_TYPE, THREAD_SAFETY >", "class_console_data_wrapper_3_01_b_a_s_e___t_y_p_e_00_01_t_h_r_e_a_d___s_a_f_e_t_y_01_4.html", null ],
     [ "mallinfo", "structmallinfo.html", null ],
     [ "malloc_chunk", "structmalloc__chunk.html", null ],

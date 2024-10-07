@@ -9,6 +9,7 @@ var class_a_z_1_1_render_1_1_point_light_feature_processor_interface =
     [ "SetBulbRadius", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a717539fc7431cc0eac572d96699f2c3a", null ],
     [ "SetEsmExponent", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a456f0c1633af821c861561fda91f5a9b", null ],
     [ "SetFilteringSampleCount", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#ac477fa63557151d6c5729d54239b2b5e", null ],
+    [ "SetLightingChannelMask", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a12df5f85d37b81eafeaa93f22bf772db", null ],
     [ "SetNormalShadowBias", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#ab86683d8f3e69a2a6b73f3dfd492680f", null ],
     [ "SetPointData", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#abe07c51aea5863f6fd3b318af26d591c", null ],
     [ "SetPosition", "class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html#a0992e26beea55555eed0dabc5f064c3b", null ],

@@ -26,7 +26,6 @@ var hierarchy =
       [ "EMotionFX::Integration::AnimGraphComponent", "class_e_motion_f_x_1_1_integration_1_1_anim_graph_component.html", null ]
     ] ],
     [ "AnimGraphSelectionItem", "struct_anim_graph_selection_item.html", null ],
-    [ "MCore::Array2D< EMotionFX::SkinInfluence >", "class_m_core_1_1_array2_d.html", null ],
     [ "AssetBuilderSDK::AssetBuilderCommandBus::Handler", null, [
       [ "EMotionFX::EMotionFXBuilder::AnimGraphBuilderWorker", "class_e_motion_f_x_1_1_e_motion_f_x_builder_1_1_anim_graph_builder_worker.html", null ],
       [ "EMotionFX::EMotionFXBuilder::MotionSetBuilderWorker", "class_e_motion_f_x_1_1_e_motion_f_x_builder_1_1_motion_set_builder_worker.html", null ]
@@ -242,11 +241,6 @@ var hierarchy =
       [ "EMotionFX::Pipeline::UI::LODSceneGraphWidget", "class_e_motion_f_x_1_1_pipeline_1_1_u_i_1_1_l_o_d_scene_graph_widget.html", null ]
     ] ],
     [ "AZ::SerializeGenericTypeInfo< AZStd::shared_ptr< const EMotionFX::EventData > >", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_1_1_event_data_01_4_01_4.html", null ],
-    [ "AZ::SimpleSchemaAllocator", null, [
-      [ "EMStudio::UIAllocator", "class_e_m_studio_1_1_u_i_allocator.html", null ],
-      [ "EMotionFX::Integration::EMotionFXAllocator", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_allocator.html", null ],
-      [ "EMotionFX::PropertyWidgetAllocator", "class_e_motion_f_x_1_1_property_widget_allocator.html", null ]
-    ] ],
     [ "AZ::ThreadPoolBase", null, [
       [ "EMotionFX::AnimGraphConditionAllocator", "class_e_motion_f_x_1_1_anim_graph_condition_allocator.html", null ],
       [ "EMotionFX::AnimGraphObjectDataAllocator", "class_e_motion_f_x_1_1_anim_graph_object_data_allocator.html", null ],
@@ -312,7 +306,7 @@ var hierarchy =
     [ "AZStd::allocator", null, [
       [ "MCore::StaticAllocator", "class_m_core_1_1_static_allocator.html", null ]
     ] ],
-    [ "AZStd::IntrusivePtrCountPolicy< MCore::MemoryObject >", "struct_a_z_std_1_1_intrusive_ptr_count_policy_3_01_m_core_1_1_memory_object_01_4.html", null ],
+    [ "AZStd::IntrusivePtrCountPolicy< MCore::RefCounted >", "struct_a_z_std_1_1_intrusive_ptr_count_policy_3_01_m_core_1_1_ref_counted_01_4.html", null ],
     [ "AzToolsFramework::AssetSystemBus::Handler", null, [
       [ "EMStudio::FileManager", "class_e_m_studio_1_1_file_manager.html", null ]
     ] ],
@@ -646,6 +640,9 @@ var hierarchy =
     [ "EMotionFX::Integration::CVars", "class_e_motion_f_x_1_1_integration_1_1_c_vars.html", null ],
     [ "EMotionFX::Integration::EditorAudioTriggerEvent", "struct_e_motion_f_x_1_1_integration_1_1_editor_audio_trigger_event.html", null ],
     [ "EMotionFX::Integration::EMotionFXPtr< ObjectType >", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr.html", null ],
+    [ "EMotionFX::Integration::EMotionFXPtr< EMotionFX::ActorInstance >", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr.html", null ],
+    [ "EMotionFX::Integration::EMotionFXPtr< EMotionFX::AnimGraphInstance >", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr.html", null ],
+    [ "EMotionFX::Integration::EMotionFXPtr< EMotionFX::Motion >", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr.html", null ],
     [ "EMotionFX::Integration::IRaycastRequests", "class_e_motion_f_x_1_1_integration_1_1_i_raycast_requests.html", [
       [ "EMotionFX::Integration::SystemComponent", "class_e_motion_f_x_1_1_integration_1_1_system_component.html", null ]
     ] ],
@@ -670,6 +667,9 @@ var hierarchy =
     [ "EMotionFX::KeyFrame< ReturnType, StorageType >", "class_e_motion_f_x_1_1_key_frame.html", null ],
     [ "EMotionFX::KeyFrameFinder< ReturnType, StorageType >", "class_e_motion_f_x_1_1_key_frame_finder.html", null ],
     [ "EMotionFX::KeyTrackLinearDynamic< ReturnType, StorageType >", "class_e_motion_f_x_1_1_key_track_linear_dynamic.html", null ],
+    [ "EMotionFX::KeyTrackLinearDynamic< AZ::Quaternion, AZ::Quaternion >", "class_e_motion_f_x_1_1_key_track_linear_dynamic.html", null ],
+    [ "EMotionFX::KeyTrackLinearDynamic< AZ::Vector3, AZ::Vector3 >", "class_e_motion_f_x_1_1_key_track_linear_dynamic.html", null ],
+    [ "EMotionFX::KeyTrackLinearDynamic< float, float >", "class_e_motion_f_x_1_1_key_track_linear_dynamic.html", null ],
     [ "EMotionFX::MorphMeshDeformer::DeformPass", "struct_e_motion_f_x_1_1_morph_mesh_deformer_1_1_deform_pass.html", null ],
     [ "EMotionFX::MorphSetupInstance::MorphTarget", "class_e_motion_f_x_1_1_morph_setup_instance_1_1_morph_target.html", null ],
     [ "EMotionFX::MorphTargetStandard::DeformData::VertexDelta", "struct_e_motion_f_x_1_1_morph_target_standard_1_1_deform_data_1_1_vertex_delta.html", null ],
@@ -710,6 +710,9 @@ var hierarchy =
     [ "EMotionFX::NodeGroup", "class_e_motion_f_x_1_1_node_group.html", null ],
     [ "EMotionFX::NodeMap::MapEntry", "struct_e_motion_f_x_1_1_node_map_1_1_map_entry.html", null ],
     [ "EMotionFX::NonUniformMotionData::KeyTrack< T >", "struct_e_motion_f_x_1_1_non_uniform_motion_data_1_1_key_track.html", null ],
+    [ "EMotionFX::NonUniformMotionData::KeyTrack< AZ::Vector3 >", "struct_e_motion_f_x_1_1_non_uniform_motion_data_1_1_key_track.html", null ],
+    [ "EMotionFX::NonUniformMotionData::KeyTrack< float >", "struct_e_motion_f_x_1_1_non_uniform_motion_data_1_1_key_track.html", null ],
+    [ "EMotionFX::NonUniformMotionData::KeyTrack< MCore::Compressed16BitQuaternion >", "struct_e_motion_f_x_1_1_non_uniform_motion_data_1_1_key_track.html", null ],
     [ "EMotionFX::ObjectAffectedByParameterChanges", "class_e_motion_f_x_1_1_object_affected_by_parameter_changes.html", [
       [ "EMotionFX::AnimGraphParameterAction", "class_e_motion_f_x_1_1_anim_graph_parameter_action.html", null ],
       [ "EMotionFX::AnimGraphParameterCondition", "class_e_motion_f_x_1_1_anim_graph_parameter_condition.html", null ],
@@ -727,50 +730,56 @@ var hierarchy =
             [ "EMotionFX::TagParameter", "class_e_motion_f_x_1_1_tag_parameter.html", null ]
           ] ]
         ] ],
-        [ "EMotionFX::DefaultValueParameter< AZ::Color, RangedValueParameter< AZ::Color, ColorParameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", null ],
-        [ "EMotionFX::DefaultValueParameter< float, RangedValueParameter< float, FloatParameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", null ],
-        [ "EMotionFX::DefaultValueParameter< int, RangedValueParameter< int, IntParameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", null ],
-        [ "EMotionFX::DefaultValueParameter< ValueType, RangedValueParameter< ValueType, Derived > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
-          [ "EMotionFX::RangedValueParameter< ValueType, Derived >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", null ]
-        ] ],
-        [ "EMotionFX::DefaultValueParameter< AZ::Quaternion, RangedValueParameter< AZ::Quaternion, RotationParameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", null ],
-        [ "EMotionFX::DefaultValueParameter< AZStd::string, StringParameter >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
-          [ "EMotionFX::StringParameter", "class_e_motion_f_x_1_1_string_parameter.html", null ]
-        ] ],
-        [ "EMotionFX::DefaultValueParameter< AZ::Vector2, RangedValueParameter< AZ::Vector2, Vector2Parameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", null ],
-        [ "EMotionFX::DefaultValueParameter< AZ::Vector3, RangedValueParameter< AZ::Vector3, Vector3Parameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", null ],
-        [ "EMotionFX::DefaultValueParameter< AZ::Vector4, RangedValueParameter< AZ::Vector4, Vector4Parameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", null ],
-        [ "EMotionFX::DefaultValueParameter< ValueType, Derived >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
+        [ "EMotionFX::DefaultValueParameter< AZ::Color, RangedValueParameter< AZ::Color, ColorParameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
           [ "EMotionFX::RangedValueParameter< AZ::Color, ColorParameter >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", [
             [ "EMotionFX::ColorParameter", "class_e_motion_f_x_1_1_color_parameter.html", null ]
-          ] ],
+          ] ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< float, RangedValueParameter< float, FloatParameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
           [ "EMotionFX::RangedValueParameter< float, FloatParameter >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", [
             [ "EMotionFX::FloatParameter", "class_e_motion_f_x_1_1_float_parameter.html", [
               [ "EMotionFX::FloatSliderParameter", "class_e_motion_f_x_1_1_float_slider_parameter.html", null ],
               [ "EMotionFX::FloatSpinnerParameter", "class_e_motion_f_x_1_1_float_spinner_parameter.html", null ]
             ] ]
-          ] ],
+          ] ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< int, RangedValueParameter< int, IntParameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
           [ "EMotionFX::RangedValueParameter< int, IntParameter >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", [
             [ "EMotionFX::IntParameter", "class_e_motion_f_x_1_1_int_parameter.html", [
               [ "EMotionFX::IntSliderParameter", "class_e_motion_f_x_1_1_int_slider_parameter.html", null ],
               [ "EMotionFX::IntSpinnerParameter", "class_e_motion_f_x_1_1_int_spinner_parameter.html", null ]
             ] ]
-          ] ],
+          ] ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< ValueType, RangedValueParameter< ValueType, Derived > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
+          [ "EMotionFX::RangedValueParameter< ValueType, Derived >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", null ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< AZ::Quaternion, RangedValueParameter< AZ::Quaternion, RotationParameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
           [ "EMotionFX::RangedValueParameter< AZ::Quaternion, RotationParameter >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", [
             [ "EMotionFX::RotationParameter", "class_e_motion_f_x_1_1_rotation_parameter.html", null ]
-          ] ],
+          ] ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< AZStd::string, StringParameter >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
+          [ "EMotionFX::StringParameter", "class_e_motion_f_x_1_1_string_parameter.html", null ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< AZ::Vector2, RangedValueParameter< AZ::Vector2, Vector2Parameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
           [ "EMotionFX::RangedValueParameter< AZ::Vector2, Vector2Parameter >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", [
             [ "EMotionFX::Vector2Parameter", "class_e_motion_f_x_1_1_vector2_parameter.html", null ]
-          ] ],
+          ] ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< AZ::Vector3, RangedValueParameter< AZ::Vector3, Vector3Parameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
           [ "EMotionFX::RangedValueParameter< AZ::Vector3, Vector3Parameter >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", [
             [ "EMotionFX::Vector3Parameter", "class_e_motion_f_x_1_1_vector3_parameter.html", [
               [ "EMotionFX::Vector3GizmoParameter", "class_e_motion_f_x_1_1_vector3_gizmo_parameter.html", null ]
             ] ]
-          ] ],
+          ] ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< AZ::Vector4, RangedValueParameter< AZ::Vector4, Vector4Parameter > >", "class_e_motion_f_x_1_1_default_value_parameter.html", [
           [ "EMotionFX::RangedValueParameter< AZ::Vector4, Vector4Parameter >", "class_e_motion_f_x_1_1_ranged_value_parameter.html", [
             [ "EMotionFX::Vector4Parameter", "class_e_motion_f_x_1_1_vector4_parameter.html", null ]
           ] ]
-        ] ]
+        ] ],
+        [ "EMotionFX::DefaultValueParameter< ValueType, Derived >", "class_e_motion_f_x_1_1_default_value_parameter.html", null ]
       ] ]
     ] ],
     [ "EMotionFX::ParameterFactory", "class_e_motion_f_x_1_1_parameter_factory.html", null ],
@@ -899,9 +908,6 @@ var hierarchy =
     [ "EMotionFX::TransformSpace", "class_e_motion_f_x_1_1_transform_space.html", null ],
     [ "EMotionFX::TriggerActionSetup", "class_e_motion_f_x_1_1_trigger_action_setup.html", null ],
     [ "EMotionFX::UniformMotionData::InitSettings", "struct_e_motion_f_x_1_1_uniform_motion_data_1_1_init_settings.html", null ],
-    [ "EMotionFX::Integration::EMotionFXPtr< EMotionFX::ActorInstance >", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr.html", null ],
-    [ "EMotionFX::Integration::EMotionFXPtr< EMotionFX::AnimGraphInstance >", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr.html", null ],
-    [ "EMotionFX::Integration::EMotionFXPtr< EMotionFX::Motion >", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr.html", null ],
     [ "EMotionFXRequestBus::Handler", null, [
       [ "EMotionFX::Integration::SystemComponent", "class_e_motion_f_x_1_1_integration_1_1_system_component.html", null ]
     ] ],
@@ -1006,19 +1012,13 @@ var hierarchy =
     [ "InspectorRequestBus::Handler", null, [
       [ "EMStudio::InspectorWindow", "class_e_m_studio_1_1_inspector_window.html", null ]
     ] ],
-    [ "EMotionFX::NonUniformMotionData::KeyTrack< AZ::Vector3 >", "struct_e_motion_f_x_1_1_non_uniform_motion_data_1_1_key_track.html", null ],
-    [ "EMotionFX::NonUniformMotionData::KeyTrack< float >", "struct_e_motion_f_x_1_1_non_uniform_motion_data_1_1_key_track.html", null ],
-    [ "EMotionFX::NonUniformMotionData::KeyTrack< MCore::Compressed16BitQuaternion >", "struct_e_motion_f_x_1_1_non_uniform_motion_data_1_1_key_track.html", null ],
-    [ "EMotionFX::KeyTrackLinearDynamic< AZ::Quaternion, AZ::Quaternion >", "class_e_motion_f_x_1_1_key_track_linear_dynamic.html", null ],
-    [ "EMotionFX::KeyTrackLinearDynamic< AZ::Vector3, AZ::Vector3 >", "class_e_motion_f_x_1_1_key_track_linear_dynamic.html", null ],
-    [ "EMotionFX::KeyTrackLinearDynamic< float, float >", "class_e_motion_f_x_1_1_key_track_linear_dynamic.html", null ],
     [ "LmbrCentral::AttachmentComponentNotificationBus::Handler", null, [
       [ "EMotionFX::Integration::ActorComponent", "class_e_motion_f_x_1_1_integration_1_1_actor_component.html", null ],
       [ "EMotionFX::Integration::EditorActorComponent", "class_e_motion_f_x_1_1_integration_1_1_editor_actor_component.html", null ]
     ] ],
-    [ "MCore::AABB", "class_m_core_1_1_a_a_b_b.html", null ],
     [ "MCore::Array2D< T >", "class_m_core_1_1_array2_d.html", null ],
     [ "MCore::Array2D< T >::TableEntry", "struct_m_core_1_1_array2_d_1_1_table_entry.html", null ],
+    [ "MCore::Array2D< EMotionFX::SkinInfluence >", "class_m_core_1_1_array2_d.html", null ],
     [ "MCore::AtomicInt32", "class_m_core_1_1_atomic_int32.html", null ],
     [ "MCore::AtomicSizeT", "class_m_core_1_1_atomic_size_t.html", null ],
     [ "MCore::AtomicUInt32", "class_m_core_1_1_atomic_u_int32.html", null ],
@@ -1107,112 +1107,6 @@ var hierarchy =
     [ "MCore::LogManager", "class_m_core_1_1_log_manager.html", null ],
     [ "MCore::Math", "class_m_core_1_1_math.html", null ],
     [ "MCore::MCoreSystem", "class_m_core_1_1_m_core_system.html", null ],
-    [ "MCore::MemoryObject", "class_m_core_1_1_memory_object.html", [
-      [ "EMotionFX::BaseObject", "class_e_motion_f_x_1_1_base_object.html", [
-        [ "EMotionFX::ActorInstance", "class_e_motion_f_x_1_1_actor_instance.html", null ],
-        [ "EMotionFX::ActorManager", "class_e_motion_f_x_1_1_actor_manager.html", null ],
-        [ "EMotionFX::ActorUpdateScheduler", "class_e_motion_f_x_1_1_actor_update_scheduler.html", [
-          [ "EMotionFX::MultiThreadScheduler", "class_e_motion_f_x_1_1_multi_thread_scheduler.html", null ],
-          [ "EMotionFX::SingleThreadScheduler", "class_e_motion_f_x_1_1_single_thread_scheduler.html", null ]
-        ] ],
-        [ "EMotionFX::AnimGraphInstance", "class_e_motion_f_x_1_1_anim_graph_instance.html", null ],
-        [ "EMotionFX::AnimGraphManager", "class_e_motion_f_x_1_1_anim_graph_manager.html", null ],
-        [ "EMotionFX::AnimGraphObjectData", "class_e_motion_f_x_1_1_anim_graph_object_data.html", [
-          [ "EMotionFX::AnimGraphMotionCondition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_motion_condition_1_1_unique_data.html", null ],
-          [ "EMotionFX::AnimGraphNodeData", "class_e_motion_f_x_1_1_anim_graph_node_data.html", [
-            [ "EMotionFX::AnimGraphExitNode::UniqueData", "class_e_motion_f_x_1_1_anim_graph_exit_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::AnimGraphHubNode::UniqueData", "class_e_motion_f_x_1_1_anim_graph_hub_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::AnimGraphMotionNode::UniqueData", "class_e_motion_f_x_1_1_anim_graph_motion_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::AnimGraphReferenceNode::UniqueData", "class_e_motion_f_x_1_1_anim_graph_reference_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::AnimGraphStateMachine::UniqueData", "class_e_motion_f_x_1_1_anim_graph_state_machine_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendSpace1DNode::UniqueData", "class_e_motion_f_x_1_1_blend_space1_d_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendSpace2DNode::UniqueData", "class_e_motion_f_x_1_1_blend_space2_d_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeAccumTransformNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_accum_transform_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeBlend2NodeBase::UniqueData", "class_e_motion_f_x_1_1_blend_tree_blend2_node_base_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeBlendNNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_blend_n_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeFootIKNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_foot_i_k_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeGetTransformNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_get_transform_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeLookAtNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_look_at_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeMaskLegacyNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeMaskNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_mask_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeMorphTargetNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_morph_target_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeMotionFrameNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_motion_frame_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreePoseSwitchNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_pose_switch_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeRagdollNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_ragdoll_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeRagdollStrenghModifierNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_ragdoll_strengh_modifier_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeSetTransformNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_set_transform_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeSimulatedObjectNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_simulated_object_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeSmoothingNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_smoothing_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeTransformNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_transform_node_1_1_unique_data.html", null ],
-            [ "EMotionFX::BlendTreeTwoLinkIKNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_two_link_i_k_node_1_1_unique_data.html", null ]
-          ] ],
-          [ "EMotionFX::AnimGraphParameterCondition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_parameter_condition_1_1_unique_data.html", null ],
-          [ "EMotionFX::AnimGraphStateCondition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_state_condition_1_1_unique_data.html", null ],
-          [ "EMotionFX::AnimGraphStateTransition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_state_transition_1_1_unique_data.html", null ],
-          [ "EMotionFX::AnimGraphTimeCondition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_time_condition_1_1_unique_data.html", null ]
-        ] ],
-        [ "EMotionFX::Attachment", "class_e_motion_f_x_1_1_attachment.html", [
-          [ "EMotionFX::AttachmentNode", "class_e_motion_f_x_1_1_attachment_node.html", null ],
-          [ "EMotionFX::AttachmentSkin", "class_e_motion_f_x_1_1_attachment_skin.html", null ]
-        ] ],
-        [ "EMotionFX::BlendSpaceManager", "class_e_motion_f_x_1_1_blend_space_manager.html", null ],
-        [ "EMotionFX::BlendSpaceParamEvaluator", "class_e_motion_f_x_1_1_blend_space_param_evaluator.html", [
-          [ "EMotionFX::BlendSpaceFrontBackVelocityParamEvaluator", "class_e_motion_f_x_1_1_blend_space_front_back_velocity_param_evaluator.html", null ],
-          [ "EMotionFX::BlendSpaceLeftRightVelocityParamEvaluator", "class_e_motion_f_x_1_1_blend_space_left_right_velocity_param_evaluator.html", null ],
-          [ "EMotionFX::BlendSpaceMoveSpeedParamEvaluator", "class_e_motion_f_x_1_1_blend_space_move_speed_param_evaluator.html", null ],
-          [ "EMotionFX::BlendSpaceParamEvaluatorNone", "class_e_motion_f_x_1_1_blend_space_param_evaluator_none.html", null ],
-          [ "EMotionFX::BlendSpaceTravelDirectionParamEvaluator", "class_e_motion_f_x_1_1_blend_space_travel_direction_param_evaluator.html", null ],
-          [ "EMotionFX::BlendSpaceTravelDistanceParamEvaluator", "class_e_motion_f_x_1_1_blend_space_travel_distance_param_evaluator.html", null ],
-          [ "EMotionFX::BlendSpaceTravelSlopeParamEvaluator", "class_e_motion_f_x_1_1_blend_space_travel_slope_param_evaluator.html", null ],
-          [ "EMotionFX::BlendSpaceTurnAngleParamEvaluator", "class_e_motion_f_x_1_1_blend_space_turn_angle_param_evaluator.html", null ],
-          [ "EMotionFX::BlendSpaceTurnSpeedParamEvaluator", "class_e_motion_f_x_1_1_blend_space_turn_speed_param_evaluator.html", null ]
-        ] ],
-        [ "EMotionFX::ChunkProcessor", "class_e_motion_f_x_1_1_chunk_processor.html", null ],
-        [ "EMotionFX::EMotionFXManager", "class_e_motion_f_x_1_1_e_motion_f_x_manager.html", null ],
-        [ "EMotionFX::EventManager", "class_e_motion_f_x_1_1_event_manager.html", null ],
-        [ "EMotionFX::Importer", "class_e_motion_f_x_1_1_importer.html", null ],
-        [ "EMotionFX::LayerPass", "class_e_motion_f_x_1_1_layer_pass.html", [
-          [ "EMotionFX::RepositioningLayerPass", "class_e_motion_f_x_1_1_repositioning_layer_pass.html", null ]
-        ] ],
-        [ "EMotionFX::Mesh", "class_e_motion_f_x_1_1_mesh.html", null ],
-        [ "EMotionFX::MeshDeformer", "class_e_motion_f_x_1_1_mesh_deformer.html", [
-          [ "EMotionFX::DualQuatSkinDeformer", "class_e_motion_f_x_1_1_dual_quat_skin_deformer.html", null ],
-          [ "EMotionFX::MorphMeshDeformer", "class_e_motion_f_x_1_1_morph_mesh_deformer.html", null ],
-          [ "EMotionFX::SoftSkinDeformer", "class_e_motion_f_x_1_1_soft_skin_deformer.html", null ]
-        ] ],
-        [ "EMotionFX::MeshDeformerStack", "class_e_motion_f_x_1_1_mesh_deformer_stack.html", null ],
-        [ "EMotionFX::MorphSetup", "class_e_motion_f_x_1_1_morph_setup.html", null ],
-        [ "EMotionFX::MorphSetupInstance", "class_e_motion_f_x_1_1_morph_setup_instance.html", null ],
-        [ "EMotionFX::MorphTarget", "class_e_motion_f_x_1_1_morph_target.html", [
-          [ "EMotionFX::MorphTargetStandard", "class_e_motion_f_x_1_1_morph_target_standard.html", null ]
-        ] ],
-        [ "EMotionFX::MorphTargetStandard::DeformData", "class_e_motion_f_x_1_1_morph_target_standard_1_1_deform_data.html", null ],
-        [ "EMotionFX::Motion", "class_e_motion_f_x_1_1_motion.html", null ],
-        [ "EMotionFX::MotionInstance", "class_e_motion_f_x_1_1_motion_instance.html", null ],
-        [ "EMotionFX::MotionInstancePool", "class_e_motion_f_x_1_1_motion_instance_pool.html", null ],
-        [ "EMotionFX::MotionManager", "class_e_motion_f_x_1_1_motion_manager.html", null ],
-        [ "EMotionFX::MotionQueue", "class_e_motion_f_x_1_1_motion_queue.html", null ],
-        [ "EMotionFX::MotionSystem", "class_e_motion_f_x_1_1_motion_system.html", [
-          [ "EMotionFX::MotionLayerSystem", "class_e_motion_f_x_1_1_motion_layer_system.html", null ]
-        ] ],
-        [ "EMotionFX::Node", "class_e_motion_f_x_1_1_node.html", null ],
-        [ "EMotionFX::NodeAttribute", "class_e_motion_f_x_1_1_node_attribute.html", null ],
-        [ "EMotionFX::NodeMap", "class_e_motion_f_x_1_1_node_map.html", null ],
-        [ "EMotionFX::Recorder", "class_e_motion_f_x_1_1_recorder.html", null ],
-        [ "EMotionFX::SharedData", "class_e_motion_f_x_1_1_shared_data.html", [
-          [ "EMotionFX::SharedHelperData", "class_e_motion_f_x_1_1_shared_helper_data.html", null ]
-        ] ],
-        [ "EMotionFX::Skeleton", "class_e_motion_f_x_1_1_skeleton.html", null ],
-        [ "EMotionFX::SoftSkinManager", "class_e_motion_f_x_1_1_soft_skin_manager.html", null ],
-        [ "EMotionFX::SubMesh", "class_e_motion_f_x_1_1_sub_mesh.html", null ],
-        [ "EMotionFX::ThreadData", "class_e_motion_f_x_1_1_thread_data.html", null ],
-        [ "EMotionFX::TransformData", "class_e_motion_f_x_1_1_transform_data.html", null ],
-        [ "EMotionFX::VertexAttributeLayer", "class_e_motion_f_x_1_1_vertex_attribute_layer.html", [
-          [ "EMotionFX::SkinningInfoVertexAttributeLayer", "class_e_motion_f_x_1_1_skinning_info_vertex_attribute_layer.html", null ],
-          [ "EMotionFX::VertexAttributeLayerAbstractData", "class_e_motion_f_x_1_1_vertex_attribute_layer_abstract_data.html", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "MCore::MemoryTracker", "class_m_core_1_1_memory_tracker.html", null ],
     [ "MCore::MemoryTracker::Allocation", "struct_m_core_1_1_memory_tracker_1_1_allocation.html", null ],
     [ "MCore::MemoryTracker::CategoryStats", "struct_m_core_1_1_memory_tracker_1_1_category_stats.html", null ],
@@ -1224,8 +1118,111 @@ var hierarchy =
     [ "MCore::PlaneEq", "class_m_core_1_1_plane_eq.html", null ],
     [ "MCore::Random", "class_m_core_1_1_random.html", null ],
     [ "MCore::Ray", "class_m_core_1_1_ray.html", null ],
+    [ "MCore::RefCounted", "class_m_core_1_1_ref_counted.html", [
+      [ "EMotionFX::ActorInstance", "class_e_motion_f_x_1_1_actor_instance.html", null ],
+      [ "EMotionFX::ActorManager", "class_e_motion_f_x_1_1_actor_manager.html", null ],
+      [ "EMotionFX::ActorUpdateScheduler", "class_e_motion_f_x_1_1_actor_update_scheduler.html", [
+        [ "EMotionFX::MultiThreadScheduler", "class_e_motion_f_x_1_1_multi_thread_scheduler.html", null ],
+        [ "EMotionFX::SingleThreadScheduler", "class_e_motion_f_x_1_1_single_thread_scheduler.html", null ]
+      ] ],
+      [ "EMotionFX::AnimGraphInstance", "class_e_motion_f_x_1_1_anim_graph_instance.html", null ],
+      [ "EMotionFX::AnimGraphManager", "class_e_motion_f_x_1_1_anim_graph_manager.html", null ],
+      [ "EMotionFX::AnimGraphObjectData", "class_e_motion_f_x_1_1_anim_graph_object_data.html", [
+        [ "EMotionFX::AnimGraphMotionCondition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_motion_condition_1_1_unique_data.html", null ],
+        [ "EMotionFX::AnimGraphNodeData", "class_e_motion_f_x_1_1_anim_graph_node_data.html", [
+          [ "EMotionFX::AnimGraphExitNode::UniqueData", "class_e_motion_f_x_1_1_anim_graph_exit_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::AnimGraphHubNode::UniqueData", "class_e_motion_f_x_1_1_anim_graph_hub_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::AnimGraphMotionNode::UniqueData", "class_e_motion_f_x_1_1_anim_graph_motion_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::AnimGraphReferenceNode::UniqueData", "class_e_motion_f_x_1_1_anim_graph_reference_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::AnimGraphStateMachine::UniqueData", "class_e_motion_f_x_1_1_anim_graph_state_machine_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendSpace1DNode::UniqueData", "class_e_motion_f_x_1_1_blend_space1_d_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendSpace2DNode::UniqueData", "class_e_motion_f_x_1_1_blend_space2_d_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeAccumTransformNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_accum_transform_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeBlend2NodeBase::UniqueData", "class_e_motion_f_x_1_1_blend_tree_blend2_node_base_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeBlendNNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_blend_n_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeFootIKNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_foot_i_k_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeGetTransformNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_get_transform_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeLookAtNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_look_at_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeMaskLegacyNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeMaskNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_mask_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeMorphTargetNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_morph_target_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeMotionFrameNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_motion_frame_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreePoseSwitchNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_pose_switch_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeRagdollNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_ragdoll_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeRagdollStrenghModifierNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_ragdoll_strengh_modifier_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeSetTransformNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_set_transform_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeSimulatedObjectNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_simulated_object_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeSmoothingNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_smoothing_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeTransformNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_transform_node_1_1_unique_data.html", null ],
+          [ "EMotionFX::BlendTreeTwoLinkIKNode::UniqueData", "class_e_motion_f_x_1_1_blend_tree_two_link_i_k_node_1_1_unique_data.html", null ]
+        ] ],
+        [ "EMotionFX::AnimGraphParameterCondition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_parameter_condition_1_1_unique_data.html", null ],
+        [ "EMotionFX::AnimGraphStateCondition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_state_condition_1_1_unique_data.html", null ],
+        [ "EMotionFX::AnimGraphStateTransition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_state_transition_1_1_unique_data.html", null ],
+        [ "EMotionFX::AnimGraphTimeCondition::UniqueData", "class_e_motion_f_x_1_1_anim_graph_time_condition_1_1_unique_data.html", null ]
+      ] ],
+      [ "EMotionFX::Attachment", "class_e_motion_f_x_1_1_attachment.html", [
+        [ "EMotionFX::AttachmentNode", "class_e_motion_f_x_1_1_attachment_node.html", null ],
+        [ "EMotionFX::AttachmentSkin", "class_e_motion_f_x_1_1_attachment_skin.html", null ]
+      ] ],
+      [ "EMotionFX::BlendSpaceManager", "class_e_motion_f_x_1_1_blend_space_manager.html", null ],
+      [ "EMotionFX::BlendSpaceParamEvaluator", "class_e_motion_f_x_1_1_blend_space_param_evaluator.html", [
+        [ "EMotionFX::BlendSpaceFrontBackVelocityParamEvaluator", "class_e_motion_f_x_1_1_blend_space_front_back_velocity_param_evaluator.html", null ],
+        [ "EMotionFX::BlendSpaceLeftRightVelocityParamEvaluator", "class_e_motion_f_x_1_1_blend_space_left_right_velocity_param_evaluator.html", null ],
+        [ "EMotionFX::BlendSpaceMoveSpeedParamEvaluator", "class_e_motion_f_x_1_1_blend_space_move_speed_param_evaluator.html", null ],
+        [ "EMotionFX::BlendSpaceParamEvaluatorNone", "class_e_motion_f_x_1_1_blend_space_param_evaluator_none.html", null ],
+        [ "EMotionFX::BlendSpaceTravelDirectionParamEvaluator", "class_e_motion_f_x_1_1_blend_space_travel_direction_param_evaluator.html", null ],
+        [ "EMotionFX::BlendSpaceTravelDistanceParamEvaluator", "class_e_motion_f_x_1_1_blend_space_travel_distance_param_evaluator.html", null ],
+        [ "EMotionFX::BlendSpaceTravelSlopeParamEvaluator", "class_e_motion_f_x_1_1_blend_space_travel_slope_param_evaluator.html", null ],
+        [ "EMotionFX::BlendSpaceTurnAngleParamEvaluator", "class_e_motion_f_x_1_1_blend_space_turn_angle_param_evaluator.html", null ],
+        [ "EMotionFX::BlendSpaceTurnSpeedParamEvaluator", "class_e_motion_f_x_1_1_blend_space_turn_speed_param_evaluator.html", null ]
+      ] ],
+      [ "EMotionFX::ChunkProcessor", "class_e_motion_f_x_1_1_chunk_processor.html", null ],
+      [ "EMotionFX::EMotionFXManager", "class_e_motion_f_x_1_1_e_motion_f_x_manager.html", null ],
+      [ "EMotionFX::EventManager", "class_e_motion_f_x_1_1_event_manager.html", null ],
+      [ "EMotionFX::Importer", "class_e_motion_f_x_1_1_importer.html", null ],
+      [ "EMotionFX::LayerPass", "class_e_motion_f_x_1_1_layer_pass.html", [
+        [ "EMotionFX::RepositioningLayerPass", "class_e_motion_f_x_1_1_repositioning_layer_pass.html", null ]
+      ] ],
+      [ "EMotionFX::Mesh", "class_e_motion_f_x_1_1_mesh.html", null ],
+      [ "EMotionFX::MeshDeformer", "class_e_motion_f_x_1_1_mesh_deformer.html", [
+        [ "EMotionFX::DualQuatSkinDeformer", "class_e_motion_f_x_1_1_dual_quat_skin_deformer.html", null ],
+        [ "EMotionFX::MorphMeshDeformer", "class_e_motion_f_x_1_1_morph_mesh_deformer.html", null ],
+        [ "EMotionFX::SoftSkinDeformer", "class_e_motion_f_x_1_1_soft_skin_deformer.html", null ]
+      ] ],
+      [ "EMotionFX::MeshDeformerStack", "class_e_motion_f_x_1_1_mesh_deformer_stack.html", null ],
+      [ "EMotionFX::MorphSetup", "class_e_motion_f_x_1_1_morph_setup.html", null ],
+      [ "EMotionFX::MorphSetupInstance", "class_e_motion_f_x_1_1_morph_setup_instance.html", null ],
+      [ "EMotionFX::MorphTarget", "class_e_motion_f_x_1_1_morph_target.html", [
+        [ "EMotionFX::MorphTargetStandard", "class_e_motion_f_x_1_1_morph_target_standard.html", null ]
+      ] ],
+      [ "EMotionFX::MorphTargetStandard::DeformData", "class_e_motion_f_x_1_1_morph_target_standard_1_1_deform_data.html", null ],
+      [ "EMotionFX::Motion", "class_e_motion_f_x_1_1_motion.html", null ],
+      [ "EMotionFX::MotionInstance", "class_e_motion_f_x_1_1_motion_instance.html", null ],
+      [ "EMotionFX::MotionInstancePool", "class_e_motion_f_x_1_1_motion_instance_pool.html", null ],
+      [ "EMotionFX::MotionManager", "class_e_motion_f_x_1_1_motion_manager.html", null ],
+      [ "EMotionFX::MotionQueue", "class_e_motion_f_x_1_1_motion_queue.html", null ],
+      [ "EMotionFX::MotionSystem", "class_e_motion_f_x_1_1_motion_system.html", [
+        [ "EMotionFX::MotionLayerSystem", "class_e_motion_f_x_1_1_motion_layer_system.html", null ]
+      ] ],
+      [ "EMotionFX::Node", "class_e_motion_f_x_1_1_node.html", null ],
+      [ "EMotionFX::NodeAttribute", "class_e_motion_f_x_1_1_node_attribute.html", null ],
+      [ "EMotionFX::NodeMap", "class_e_motion_f_x_1_1_node_map.html", null ],
+      [ "EMotionFX::Recorder", "class_e_motion_f_x_1_1_recorder.html", null ],
+      [ "EMotionFX::SharedData", "class_e_motion_f_x_1_1_shared_data.html", [
+        [ "EMotionFX::SharedHelperData", "class_e_motion_f_x_1_1_shared_helper_data.html", null ]
+      ] ],
+      [ "EMotionFX::Skeleton", "class_e_motion_f_x_1_1_skeleton.html", null ],
+      [ "EMotionFX::SoftSkinManager", "class_e_motion_f_x_1_1_soft_skin_manager.html", null ],
+      [ "EMotionFX::SubMesh", "class_e_motion_f_x_1_1_sub_mesh.html", null ],
+      [ "EMotionFX::ThreadData", "class_e_motion_f_x_1_1_thread_data.html", null ],
+      [ "EMotionFX::TransformData", "class_e_motion_f_x_1_1_transform_data.html", null ],
+      [ "EMotionFX::VertexAttributeLayer", "class_e_motion_f_x_1_1_vertex_attribute_layer.html", [
+        [ "EMotionFX::SkinningInfoVertexAttributeLayer", "class_e_motion_f_x_1_1_skinning_info_vertex_attribute_layer.html", null ],
+        [ "EMotionFX::VertexAttributeLayerAbstractData", "class_e_motion_f_x_1_1_vertex_attribute_layer_abstract_data.html", null ]
+      ] ]
+    ] ],
     [ "MCore::ReflectionSerializer", "class_m_core_1_1_reflection_serializer.html", null ],
-    [ "MCore::RGBAColor", "class_m_core_1_1_r_g_b_a_color.html", null ],
     [ "MCore::Stream", "class_m_core_1_1_stream.html", [
       [ "MCore::File", "class_m_core_1_1_file.html", [
         [ "MCore::DiskFile", "class_m_core_1_1_disk_file.html", null ],

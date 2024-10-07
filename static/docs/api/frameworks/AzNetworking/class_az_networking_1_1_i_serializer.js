@@ -28,6 +28,6 @@ var class_az_networking_1_1_i_serializer =
     [ "Serialize", "class_az_networking_1_1_i_serializer.html#a2937d2124aa7356a1691ce9f9df07747", null ],
     [ "Serialize", "class_az_networking_1_1_i_serializer.html#a0a5f982f34835d5c546a894c6c3b71d7", null ],
     [ "Serialize", "class_az_networking_1_1_i_serializer.html#a466fa2ffababd694b1fa68cf83eb72f3", null ],
-    [ "Serialize", "class_az_networking_1_1_i_serializer.html#a92b7d55b9b89370062d9d3a5161b2be6", null ],
+    [ "Serialize", "class_az_networking_1_1_i_serializer.html#a8779152042bc0d1bcee59c96dc1ed752", null ],
     [ "SerializeBytes", "class_az_networking_1_1_i_serializer.html#a8f7aa0608cd401151167c1c3c7e93c0a", null ]
 ];

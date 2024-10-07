@@ -1,7 +1,7 @@
 var class_a_z_1_1_tick_events =
 [
     [ "BusHandlerOrderCompare", "struct_a_z_1_1_tick_events_1_1_bus_handler_order_compare.html", null ],
-    [ "EventQueueMutexType", "class_a_z_1_1_tick_events.html#af61d96ee91a477de987a5d323d2a874a", null ],
+    [ "EventQueueMutexType", "class_a_z_1_1_tick_events.html#a3da04232d5931f6aad6034613aa300a0", null ],
     [ "TickEvents", "class_a_z_1_1_tick_events.html#ae0a25e62de046bda16836c2a70d9a44e", null ],
     [ "~TickEvents", "class_a_z_1_1_tick_events.html#aa9d3081c8eb6d049db98359122dc5c24", null ],
     [ "GetTickOrder", "class_a_z_1_1_tick_events.html#a4c63ea1efaf23340024dabd1de1fd311", null ],

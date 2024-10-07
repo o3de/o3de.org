@@ -44,7 +44,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "class_az_networking_1_1_i_serializer.html#a65cae59af6098ed864834a78cd2ced41",
 "class_az_networking_1_1_tcp_socket_manager.html#a5ff047e1e2bf8f2de182760e60b440cc",
-"struct_az_networking_1_1_network_interface_metrics.html#a78bc72b5c75d56295522223ce43520f3"
+"struct_az_networking_1_1_quantized_values_helper.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Open 3D Engine ROS2 Gem API Reference", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", null ],
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ]
@@ -43,15 +43,20 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ]
       ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_r_o_s2_1_1_sensor_event_source.html#ae8408155da631d8096a153b2bd959a43",
-"struct_r_o_s2_1_1_urdf_parser_1_1_parse_result.html#a123bccef966eda851783e6bbde089c2e"
+"_r_o_s2_sensor_types_ids_8h.html",
+"class_r_o_s2_1_1_joints_manipulation_requests.html",
+"class_r_o_s2_1_1_r_o_s2_frame_system_requests.html",
+"class_r_o_s2_1_1_vehicle_dynamics_1_1_vehicle_configuration.html#aa03c1db6479f51adee2af9829e823c5c",
+"struct_r_o_s2_1_1_lidar_template_1_1_noise_parameters.html#a926b6d57cb9189a0507fdb65041cc77a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

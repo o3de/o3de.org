@@ -6,6 +6,7 @@ var class_x_r_1_1_session =
     [ "GetControllerPose", "class_x_r_1_1_session.html#a188e8d04eafd0f57ec0be9c05847711d", null ],
     [ "GetControllerScale", "class_x_r_1_1_session.html#ac63996866c1246a1a9fe9be863eb000d", null ],
     [ "GetControllerStagePose", "class_x_r_1_1_session.html#ac5d65e1d15435cfcdd2e0e0517813eab", null ],
+    [ "GetControllerTransform", "class_x_r_1_1_session.html#a65d3a13f121628003e42006f440d88f3", null ],
     [ "GetDescriptor", "class_x_r_1_1_session.html#a9c24496e88ebd0b40e109a1a511d1507", null ],
     [ "GetInput", "class_x_r_1_1_session.html#a4945e83c306f01c1063c81dd8d684f91", null ],
     [ "GetSpace", "class_x_r_1_1_session.html#aaf4e1e24f89e6e3bca764410f1aba199", null ],

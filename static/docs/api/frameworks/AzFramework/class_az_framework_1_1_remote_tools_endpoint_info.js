@@ -6,5 +6,6 @@ var class_az_framework_1_1_remote_tools_endpoint_info =
     [ "IsOnline", "class_az_framework_1_1_remote_tools_endpoint_info.html#a1103bbc868c66931cbdfdcce4112e86d", null ],
     [ "IsSelf", "class_az_framework_1_1_remote_tools_endpoint_info.html#a5b6c93197b825a166da6d120a5bd21e4", null ],
     [ "IsValid", "class_az_framework_1_1_remote_tools_endpoint_info.html#a0fc2fe33635698a6fd5b859478a35123", null ],
+    [ "Reflect", "class_az_framework_1_1_remote_tools_endpoint_info.html#a6f4aaa327e712235b5ee2942218165af", null ],
     [ "SetInfo", "class_az_framework_1_1_remote_tools_endpoint_info.html#a3dc621fcef2f22425630063e8806ecad", null ]
 ];

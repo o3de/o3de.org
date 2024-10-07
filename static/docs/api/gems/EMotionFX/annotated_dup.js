@@ -7,7 +7,7 @@ var annotated_dup =
       [ "SerializeGenericTypeInfo< AZStd::shared_ptr< const EMotionFX::EventData > >", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_1_1_event_data_01_4_01_4.html", "struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_1_1_event_data_01_4_01_4" ]
     ] ],
     [ "AZStd", null, [
-      [ "IntrusivePtrCountPolicy< MCore::MemoryObject >", "struct_a_z_std_1_1_intrusive_ptr_count_policy_3_01_m_core_1_1_memory_object_01_4.html", null ]
+      [ "IntrusivePtrCountPolicy< MCore::RefCounted >", "struct_a_z_std_1_1_intrusive_ptr_count_policy_3_01_m_core_1_1_ref_counted_01_4.html", null ]
     ] ],
     [ "CommandSystem", null, [
       [ "AnimGraphCopyPasteData", "class_command_system_1_1_anim_graph_copy_paste_data.html", "class_command_system_1_1_anim_graph_copy_paste_data" ],
@@ -112,7 +112,6 @@ var annotated_dup =
         [ "EditorSimpleLODComponent", "class_e_motion_f_x_1_1_integration_1_1_editor_simple_l_o_d_component.html", null ],
         [ "EditorSimpleMotionComponent", "class_e_motion_f_x_1_1_integration_1_1_editor_simple_motion_component.html", null ],
         [ "EditorSimpleMotionComponentRequests", "class_e_motion_f_x_1_1_integration_1_1_editor_simple_motion_component_requests.html", null ],
-        [ "EMotionFXAllocator", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_allocator.html", null ],
         [ "EMotionFXAsset", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_asset.html", null ],
         [ "EMotionFXAssetHandler", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_asset_handler.html", null ],
         [ "EMotionFXPtr", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr.html", "class_e_motion_f_x_1_1_integration_1_1_e_motion_f_x_ptr" ],
@@ -293,7 +292,6 @@ var annotated_dup =
       [ "AttachmentSkin", "class_e_motion_f_x_1_1_attachment_skin.html", "class_e_motion_f_x_1_1_attachment_skin" ],
       [ "AttributeMotionInstance", "class_e_motion_f_x_1_1_attribute_motion_instance.html", null ],
       [ "AttributePose", "class_e_motion_f_x_1_1_attribute_pose.html", null ],
-      [ "BaseObject", "class_e_motion_f_x_1_1_base_object.html", "class_e_motion_f_x_1_1_base_object" ],
       [ "BlendNParamWeight", "class_e_motion_f_x_1_1_blend_n_param_weight.html", null ],
       [ "BlendNParamWeightContainerWidget", "class_e_motion_f_x_1_1_blend_n_param_weight_container_widget.html", null ],
       [ "BlendNParamWeightElementHandler", "class_e_motion_f_x_1_1_blend_n_param_weight_element_handler.html", null ],
@@ -511,7 +509,6 @@ var annotated_dup =
       [ "PoseData", "class_e_motion_f_x_1_1_pose_data.html", null ],
       [ "PoseDataFactory", "class_e_motion_f_x_1_1_pose_data_factory.html", null ],
       [ "PoseDataRagdoll", "class_e_motion_f_x_1_1_pose_data_ragdoll.html", null ],
-      [ "PropertyWidgetAllocator", "class_e_motion_f_x_1_1_property_widget_allocator.html", null ],
       [ "RagdollCard", "class_e_motion_f_x_1_1_ragdoll_card.html", null ],
       [ "RagdollCardHeader", "class_e_motion_f_x_1_1_ragdoll_card_header.html", null ],
       [ "RagdollInstance", "class_e_motion_f_x_1_1_ragdoll_instance.html", "class_e_motion_f_x_1_1_ragdoll_instance" ],
@@ -760,7 +757,6 @@ var annotated_dup =
       [ "TrackDataHeaderWidget", "class_e_m_studio_1_1_track_data_header_widget.html", null ],
       [ "TrackDataWidget", "class_e_m_studio_1_1_track_data_widget.html", null ],
       [ "TrackHeaderWidget", "class_e_m_studio_1_1_track_header_widget.html", null ],
-      [ "UIAllocator", "class_e_m_studio_1_1_u_i_allocator.html", null ],
       [ "ValueParameterEditor", "class_e_m_studio_1_1_value_parameter_editor.html", null ],
       [ "Vector2ParameterEditor", "class_e_m_studio_1_1_vector2_parameter_editor.html", null ],
       [ "Vector3GizmoParameterEditor", "class_e_m_studio_1_1_vector3_gizmo_parameter_editor.html", null ],
@@ -772,7 +768,6 @@ var annotated_dup =
       [ "ZoomableLineEdit", "class_e_m_studio_1_1_zoomable_line_edit.html", null ]
     ] ],
     [ "MCore", null, [
-      [ "AABB", "class_m_core_1_1_a_a_b_b.html", "class_m_core_1_1_a_a_b_b" ],
       [ "Array2D", "class_m_core_1_1_array2_d.html", "class_m_core_1_1_array2_d" ],
       [ "AtomicInt32", "class_m_core_1_1_atomic_int32.html", null ],
       [ "AtomicSizeT", "class_m_core_1_1_atomic_size_t.html", null ],
@@ -820,15 +815,14 @@ var annotated_dup =
       [ "Math", "class_m_core_1_1_math.html", "class_m_core_1_1_math" ],
       [ "MCoreSystem", "class_m_core_1_1_m_core_system.html", "class_m_core_1_1_m_core_system" ],
       [ "MemoryFile", "class_m_core_1_1_memory_file.html", "class_m_core_1_1_memory_file" ],
-      [ "MemoryObject", "class_m_core_1_1_memory_object.html", "class_m_core_1_1_memory_object" ],
       [ "MemoryTracker", "class_m_core_1_1_memory_tracker.html", "class_m_core_1_1_memory_tracker" ],
       [ "Mutex", "class_m_core_1_1_mutex.html", null ],
       [ "MutexRecursive", "class_m_core_1_1_mutex_recursive.html", null ],
       [ "PlaneEq", "class_m_core_1_1_plane_eq.html", "class_m_core_1_1_plane_eq" ],
       [ "Random", "class_m_core_1_1_random.html", "class_m_core_1_1_random" ],
       [ "Ray", "class_m_core_1_1_ray.html", "class_m_core_1_1_ray" ],
+      [ "RefCounted", "class_m_core_1_1_ref_counted.html", "class_m_core_1_1_ref_counted" ],
       [ "ReflectionSerializer", "class_m_core_1_1_reflection_serializer.html", null ],
-      [ "RGBAColor", "class_m_core_1_1_r_g_b_a_color.html", "class_m_core_1_1_r_g_b_a_color" ],
       [ "StaticAllocator", "class_m_core_1_1_static_allocator.html", null ],
       [ "Stream", "class_m_core_1_1_stream.html", "class_m_core_1_1_stream" ],
       [ "StringIdPool", "class_m_core_1_1_string_id_pool.html", "class_m_core_1_1_string_id_pool" ],

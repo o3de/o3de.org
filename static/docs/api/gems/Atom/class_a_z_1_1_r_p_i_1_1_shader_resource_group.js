@@ -3,6 +3,7 @@ var class_a_z_1_1_r_p_i_1_1_shader_resource_group =
     [ "ApplyDataMappingArray", "class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#aa13ced8c259494789ad63771f272e71b", null ],
     [ "ApplyDataMappings", "class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a0653a5a42feb026dea7908bb0d9afc1f", null ],
     [ "Compile", "class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a95be9f8474f2064a68bb4ecebbd21787", null ],
+    [ "CopyShaderResourceGroupData", "class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a5ca57377a05686647f697c01b72d523f", null ],
     [ "Create", "class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#ae43c9d5aff6feb8009c683e0321a8a68", null ],
     [ "Create", "class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a308232c6d02ac1c0b2618a93cce2dd54", null ],
     [ "FindShaderInputBufferIndex", "class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a48de78b0a620bb0bb363597324f24ed6", null ],

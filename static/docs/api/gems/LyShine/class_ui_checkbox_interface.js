@@ -1,6 +1,6 @@
 var class_ui_checkbox_interface =
 [
-    [ "StateChangeCallback", "class_ui_checkbox_interface.html#a8d2cf3e660802c502050f105adcae006", null ],
+    [ "StateChangeCallback", "class_ui_checkbox_interface.html#ae7b27d6a314c8e2a48faf68f302e9e66", null ],
     [ "GetChangedActionName", "class_ui_checkbox_interface.html#ac7f8a9fe661e4de7dd96b569b20e1c5f", null ],
     [ "GetCheckedEntity", "class_ui_checkbox_interface.html#a50058a16ac216f579b4a7de2839bcecc", null ],
     [ "GetState", "class_ui_checkbox_interface.html#af141cff1cc19155b34d73bd981ac703b", null ],

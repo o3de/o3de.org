@@ -4,6 +4,7 @@ var class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests =
     [ "CreatePrefabInMemory", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a8a1e3ff34ed8580d44c1530372567d81", null ],
     [ "DeleteEntitiesAndAllDescendantsInInstance", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a70a6c894f67d93a01faadd93f6b8f0af", null ],
     [ "DetachPrefab", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a04a007cce70443487b3866f199b12ef5", null ],
+    [ "DetachPrefabAndRemoveContainerEntity", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#a2ca33d104a599bf8aaa4ff3fd90bac77", null ],
     [ "DuplicateEntitiesInInstance", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aaee6c9f073462e5c5cd2a01f365ae8ae", null ],
     [ "GetInMemorySpawnableAssetId", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#ad2260d17b0389ede51e4dc72e822df4d", null ],
     [ "GetOwningInstancePrefabPath", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_requests.html#aa1bc6d5265243d4406b1545f3cae5054", null ],

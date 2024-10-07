@@ -6,7 +6,7 @@ var class_e_motion_f_x_1_1_importer =
     [ "MotionSetSettings", "struct_e_motion_f_x_1_1_importer_1_1_motion_set_settings.html", null ],
     [ "MotionSettings", "struct_e_motion_f_x_1_1_importer_1_1_motion_settings.html", "struct_e_motion_f_x_1_1_importer_1_1_motion_settings" ],
     [ "NodeMapSettings", "struct_e_motion_f_x_1_1_importer_1_1_node_map_settings.html", "struct_e_motion_f_x_1_1_importer_1_1_node_map_settings" ],
-    [ "AttributeEndianConverter", "class_e_motion_f_x_1_1_importer.html#a914f08eb8695b5e21be5f4ba0193e526", null ],
+    [ "AttributeEndianConverter", "class_e_motion_f_x_1_1_importer.html#a1a6378970d8cf5c901ddcd6075ae6d8a", null ],
     [ "EFileType", "class_e_motion_f_x_1_1_importer.html#aea4eb6023a76b6abb383329cb0642067", [
       [ "FILETYPE_UNKNOWN", "class_e_motion_f_x_1_1_importer.html#aea4eb6023a76b6abb383329cb0642067aaf6ad9750964341cbdfadf28ffb1de31", null ],
       [ "FILETYPE_ACTOR", "class_e_motion_f_x_1_1_importer.html#aea4eb6023a76b6abb383329cb0642067a5a2c8b0ac54cfe234c00fc347978e23f", null ],

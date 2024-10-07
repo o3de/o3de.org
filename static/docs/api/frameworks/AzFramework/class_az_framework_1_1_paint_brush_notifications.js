@@ -2,7 +2,7 @@ var class_az_framework_1_1_paint_brush_notifications =
 [
     [ "BlendFn", "class_az_framework_1_1_paint_brush_notifications.html#ad3342c1b878c291a4ed11c6474f1ef7f", null ],
     [ "SmoothFn", "class_az_framework_1_1_paint_brush_notifications.html#a27be5b7947dfe7d71356f6e893253003", null ],
-    [ "ValueLookupFn", "class_az_framework_1_1_paint_brush_notifications.html#abc4e0c2f7e48fb1a30a1f3188ab82500", null ],
+    [ "ValueLookupFn", "class_az_framework_1_1_paint_brush_notifications.html#a566f40bd21211fea3481df78bf21a9b0", null ],
     [ "OnBrushStrokeBegin", "class_az_framework_1_1_paint_brush_notifications.html#ac38760478141f8b94bf2189f0fcebc29", null ],
     [ "OnBrushStrokeEnd", "class_az_framework_1_1_paint_brush_notifications.html#a8b431defdcfdb4e1f9348149b8c1f06c", null ],
     [ "OnGetColor", "class_az_framework_1_1_paint_brush_notifications.html#a3046a335df6d5753b93adc32d56432f1", null ],

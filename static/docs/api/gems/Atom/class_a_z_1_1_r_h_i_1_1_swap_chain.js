@@ -14,7 +14,7 @@ var class_a_z_1_1_r_h_i_1_1_swap_chain =
     [ "InitImages", "class_a_z_1_1_r_h_i_1_1_swap_chain.html#ab35d4b847bee72d8071f1df5b2cd9ac4", null ],
     [ "IsExclusiveFullScreenPreferred", "class_a_z_1_1_r_h_i_1_1_swap_chain.html#a303b3f85ab7d4ba9b52f8b5be19c098a", null ],
     [ "Present", "class_a_z_1_1_r_h_i_1_1_swap_chain.html#acfe3aef24d6fdb57a539b6073f96ecf5", null ],
-    [ "ProcessRecreation", "class_a_z_1_1_r_h_i_1_1_swap_chain.html#a4f40fac6d10a31232e4465e6f0fb86c5", null ],
+    [ "ProcessRecreation", "class_a_z_1_1_r_h_i_1_1_swap_chain.html#a7c99c79d3958c5dcd780f1b03c9fcef3", null ],
     [ "Resize", "class_a_z_1_1_r_h_i_1_1_swap_chain.html#a4de63d2f9bdcdbdcff9fa6ab4d80735f", null ],
     [ "SetExclusiveFullScreenState", "class_a_z_1_1_r_h_i_1_1_swap_chain.html#a4df2bbfdc35ec37fa2acde3a856c2a8a", null ],
     [ "SetVerticalSyncInterval", "class_a_z_1_1_r_h_i_1_1_swap_chain.html#ae82286bb441a9ef8eaf3f7814942487b", null ],

@@ -46,10 +46,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_a_z_1_1_render_1_1_directional_light_requests.html#aeedc504f832ad40805ecd0680dbc0e40",
-"class_a_z_1_1_render_1_1_light_delegate_base.html#a44ced3ed5da2e38ce0268cf7babaa93e",
-"class_a_z_1_1_render_1_1_sky_atmosphere_requests.html#a84bcaa27b0a668f1bfc22d9d06eef514",
-"struct_a_z_1_1_render_1_1_material_assignment_id.html#a118a5986ac185e0911c055f1d18b63d0"
+"class_a_z_1_1_render_1_1_directional_light_requests.html#a9282524a00c34ec6ed9a760c082fed3b",
+"class_a_z_1_1_render_1_1_grid_component_requests.html#a2dd0833485af1bfab85a6b9069116b1b",
+"class_a_z_1_1_render_1_1_simple_spot_light_delegate.html#abd0a69ee8ce49940839f7feb0da23123",
+"struct_a_z_1_1_render_1_1_attachment_configuration.html#a958063ce725ca6a0795cedd5e60bb85e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

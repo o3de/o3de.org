@@ -1,12 +1,5 @@
 var class_a_z_1_1_debug_1_1_allocation_records =
 [
-    [ "Mode", "class_a_z_1_1_debug_1_1_allocation_records.html#ab8ddd9944b54d2e540ea50ccc964ead2", [
-      [ "RECORD_NO_RECORDS", "class_a_z_1_1_debug_1_1_allocation_records.html#ab8ddd9944b54d2e540ea50ccc964ead2aef35a5d727d943d9b126077701f68531", null ],
-      [ "RECORD_STACK_NEVER", "class_a_z_1_1_debug_1_1_allocation_records.html#ab8ddd9944b54d2e540ea50ccc964ead2a97b22c231eb7c965abf49118184297b0", null ],
-      [ "RECORD_STACK_IF_NO_FILE_LINE", "class_a_z_1_1_debug_1_1_allocation_records.html#ab8ddd9944b54d2e540ea50ccc964ead2ace1d0a40990bb25fc5695833c83354f4", null ],
-      [ "RECORD_FULL", "class_a_z_1_1_debug_1_1_allocation_records.html#ab8ddd9944b54d2e540ea50ccc964ead2ac52a9816ab74387197904c40d2ae90b7", null ],
-      [ "RECORD_MAX", "class_a_z_1_1_debug_1_1_allocation_records.html#ab8ddd9944b54d2e540ea50ccc964ead2a91d370d6388a7a6a7dad698863186e45", null ]
-    ] ],
     [ "AllocationRecords", "class_a_z_1_1_debug_1_1_allocation_records.html#a6f7bb490e08d9a4a1a5eb894e1384368", null ],
     [ "AutoIntegrityCheck", "class_a_z_1_1_debug_1_1_allocation_records.html#a67406572afe21d10f1651937f46c0647", null ],
     [ "EnumerateAllocations", "class_a_z_1_1_debug_1_1_allocation_records.html#aaebf3073cb92f02e70b094b71bf64659", null ],

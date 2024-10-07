@@ -1,6 +1,6 @@
 var class_ui_text_interface =
 [
-    [ "DisplayedTextFunction", "class_ui_text_interface.html#abb04ec7d9b59a473c8d062f5dd1d6300", null ],
+    [ "DisplayedTextFunction", "class_ui_text_interface.html#af15457295da228c9bf38c6f753bf7aab", null ],
     [ "GetTextFlags", "class_ui_text_interface.html#aa5be45533398f0c44b52bb3588263761", [
       [ "GetAsIs", "class_ui_text_interface.html#aa5be45533398f0c44b52bb3588263761a8234ccd725f670005f144c6f74ef75fd", null ],
       [ "GetLocalized", "class_ui_text_interface.html#aa5be45533398f0c44b52bb3588263761af46c6f4b528d353d0b27c20f9103e2fc", null ]

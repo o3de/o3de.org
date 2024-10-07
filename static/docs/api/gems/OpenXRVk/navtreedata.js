@@ -25,12 +25,15 @@
 var NAVTREE =
 [
   [ "Open 3D Engine OpenXRVk Gem API Reference", "index.html", [
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ]
@@ -41,7 +44,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#abb124182d7e480486ad8b0fcfaf9fbe6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -4,6 +4,7 @@ var class_a_z_1_1_r_p_i_1_1_material =
     [ "ApplyGlobalShaderOptions", "class_a_z_1_1_r_p_i_1_1_material.html#a716ca048cfe3eccc81eee6932d6ff649", null ],
     [ "CanCompile", "class_a_z_1_1_r_p_i_1_1_material.html#a0fa8a65ace996c0f4e62f7675b581efd", null ],
     [ "Compile", "class_a_z_1_1_r_p_i_1_1_material.html#a6b2d74df36fa691cc3b33e6f9f4a63b3", null ],
+    [ "ConnectEvent", "class_a_z_1_1_r_p_i_1_1_material.html#a05f094be3e5211190b2b235627f56714", null ],
     [ "FindPropertyIndex", "class_a_z_1_1_r_p_i_1_1_material.html#a2d9ff319c56b9f5a8d2c6869d26516ee", null ],
     [ "ForAllShaderItems", "class_a_z_1_1_r_p_i_1_1_material.html#ab12af5f9d04fc9a63731c8be4bef8d75", null ],
     [ "GetCurrentChangeId", "class_a_z_1_1_r_p_i_1_1_material.html#a6d842bbca11d13893b17b1dc13280960", null ],

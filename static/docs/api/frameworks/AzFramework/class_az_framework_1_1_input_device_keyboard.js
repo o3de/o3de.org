@@ -1,10 +1,10 @@
 var class_az_framework_1_1_input_device_keyboard =
 [
     [ "Implementation", "class_az_framework_1_1_input_device_keyboard_1_1_implementation.html", "class_az_framework_1_1_input_device_keyboard_1_1_implementation" ],
+    [ "ImplementationFactory", "class_az_framework_1_1_input_device_keyboard_1_1_implementation_factory.html", null ],
     [ "Key", "struct_az_framework_1_1_input_device_keyboard_1_1_key.html", "struct_az_framework_1_1_input_device_keyboard_1_1_key" ],
-    [ "ImplementationFactory", "class_az_framework_1_1_input_device_keyboard.html#a8607760a57b800dabe7ce60b95b594c6", null ],
     [ "KeyChannelByIdMap", "class_az_framework_1_1_input_device_keyboard.html#a142da7140cca4c46772517c5a3969e68", null ],
-    [ "InputDeviceKeyboard", "class_az_framework_1_1_input_device_keyboard.html#a395d9973805de444d18560f94d163ae2", null ],
+    [ "InputDeviceKeyboard", "class_az_framework_1_1_input_device_keyboard.html#aa480ec6c1063c001ac5eddb1598ea87c", null ],
     [ "~InputDeviceKeyboard", "class_az_framework_1_1_input_device_keyboard.html#a6b09bb667e76447df0665082d1f1942d", null ],
     [ "GetAssignedLocalUserId", "class_az_framework_1_1_input_device_keyboard.html#ac4f4a6dd5db253ae9a83c74692cb32c2", null ],
     [ "GetInputChannelsById", "class_az_framework_1_1_input_device_keyboard.html#a53870ee2fd56faf87275fcde31ac3140", null ],

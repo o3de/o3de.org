@@ -14,7 +14,7 @@ var class_az_physics_1_1_system_interface =
     [ "RegisterPostSimulateEvent", "class_az_physics_1_1_system_interface.html#a6776f0a7ff82ca3d5a1ed7507082fdc4", null ],
     [ "RegisterPreSimulateEvent", "class_az_physics_1_1_system_interface.html#a2a79229eef73b4ba5dd052d11b0f49a5", null ],
     [ "RegisterSceneAddedEvent", "class_az_physics_1_1_system_interface.html#adbe933c3e08f14bd90a6dbae84711ff7", null ],
-    [ "RegisterSceneRemovedEvent", "class_az_physics_1_1_system_interface.html#ab32f4b5f7bac9ea8ba4e260e755b106e", null ],
+    [ "RegisterSceneRemovedEvent", "class_az_physics_1_1_system_interface.html#a7b418b01fa05b17616089e90f8b5e93d", null ],
     [ "RegisterSystemConfigurationChangedEvent", "class_az_physics_1_1_system_interface.html#a541e53bb985984b0f96218d7420271df", null ],
     [ "RegisterSystemInitializedEvent", "class_az_physics_1_1_system_interface.html#a120b7045dcecd2ccaa8d4f9142beef30", null ],
     [ "RegisterSystemReInitializedEvent", "class_az_physics_1_1_system_interface.html#a9e4947026667bc4916a2f7b2c0628aff", null ],

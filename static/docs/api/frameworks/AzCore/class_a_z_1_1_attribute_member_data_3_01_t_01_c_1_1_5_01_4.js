@@ -1,4 +1,5 @@
 var class_a_z_1_1_attribute_member_data_3_01_t_01_c_1_1_5_01_4 =
 [
-    [ "GetAsDomValue", "class_a_z_1_1_attribute_member_data_3_01_t_01_c_1_1_5_01_4.html#a7065c6dd8ade752d61f0e5730b40c734", null ]
+    [ "GetAsDomValue", "class_a_z_1_1_attribute_member_data_3_01_t_01_c_1_1_5_01_4.html#afae5e761b55f52108255038feb42fc62", null ],
+    [ "GetPotentialClassTypeId", "class_a_z_1_1_attribute_member_data_3_01_t_01_c_1_1_5_01_4.html#aea725207777d4ab50cb3675db903e899", null ]
 ];

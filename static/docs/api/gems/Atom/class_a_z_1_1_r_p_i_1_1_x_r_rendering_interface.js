@@ -7,6 +7,7 @@ var class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface =
     [ "GetControllerPose", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a60a55e15e2f07e3dcaf1839de54987bb", null ],
     [ "GetControllerScale", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a73853f3b4c73a4337ec3cc449250eac5", null ],
     [ "GetControllerStagePose", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a3ddfad19b8c77bba3405234a3124e1aa", null ],
+    [ "GetControllerTransform", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a977cf9583b59074e42a153139ea56715", null ],
     [ "GetNumViews", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#ac6abb17f6b95755451d2c4918ca16c88", null ],
     [ "GetRHIXRRenderingInterface", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a0b04d4ec217f223247e354bf9c899e57", null ],
     [ "GetSqueezeState", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a22c13e53f6ecd2ede5ca023f8d767f7d", null ],
@@ -23,6 +24,5 @@ var class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface =
     [ "GetYButtonState", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#abeb7caa288447cb8b42d7228710813ce", null ],
     [ "GetYJoyStickState", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a6f7f79cae9b936f3f8a8f0bc5b26b956", null ],
     [ "InitInstance", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#ac47044de4d96ecf71d3f9ab139b15dd7", null ],
-    [ "InitPassFoveatedAttachment", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#ac3d24d438a255c82bb7eb6bee1451f2a", null ],
     [ "ShouldRender", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a53bd821a31aee2d8c1e1aa5d1f06b4b0", null ]
 ];

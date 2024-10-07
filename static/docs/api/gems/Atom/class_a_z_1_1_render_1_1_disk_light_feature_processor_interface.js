@@ -14,6 +14,7 @@ var class_a_z_1_1_render_1_1_disk_light_feature_processor_interface =
     [ "SetDiskRadius", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#ab219314c7717eb7818ce2d4b2c55374f", null ],
     [ "SetEsmExponent", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a140bf5440387ce3b71e084559d2cd55b", null ],
     [ "SetFilteringSampleCount", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#ad679829146ea3b3c98fab30f2fab32ee", null ],
+    [ "SetLightingChannelMask", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a5fcecb3b14fe6df388addd917a56bc6f", null ],
     [ "SetNormalShadowBias", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#ac15612a1b9ff31e0f99694a64bd7e92a", null ],
     [ "SetPosition", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#ab3837102124a59dddda14c8d9b20a641", null ],
     [ "SetRgbIntensity", "class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html#a950c61ad83bf6e8110d4c95a963f0660", null ],

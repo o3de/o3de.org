@@ -1,8 +1,10 @@
 var class_a_z_1_1_i_allocator =
 [
+    [ "allocate", "class_a_z_1_1_i_allocator.html#ad7fc3ebaeeaa9c0f4d094a89d87105eb", null ],
     [ "AllocationSize", "class_a_z_1_1_i_allocator.html#a47104481b1b2e820bdde7b580b4266a0", null ],
     [ "AZ_DEPRECATED_MESSAGE", "class_a_z_1_1_i_allocator.html#a238723419d3aa62b8a7ec4312c5af716", null ],
     [ "Capacity", "class_a_z_1_1_i_allocator.html#a4257e87f5acb9156319653bde747ec51", null ],
+    [ "deallocate", "class_a_z_1_1_i_allocator.html#a4a20c56dc4dfb13521300130263ff0ef", null ],
     [ "Destroy", "class_a_z_1_1_i_allocator.html#ac4cc6df15cdc178f7580001468910cd6", null ],
     [ "GetDebugConfig", "class_a_z_1_1_i_allocator.html#a329c5607d81481afd8e9fc2775448c5c", null ],
     [ "GetMaxAllocationSize", "class_a_z_1_1_i_allocator.html#aa3ee1cea0107a70bd0098df8bb7f5882", null ],

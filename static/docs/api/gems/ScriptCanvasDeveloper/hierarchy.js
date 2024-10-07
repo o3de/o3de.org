@@ -71,6 +71,9 @@ var hierarchy =
       [ "ScriptCanvas::Developer::CutCopyPasteDuplicateTest", "class_script_canvas_1_1_developer_1_1_cut_copy_paste_duplicate_test.html", null ],
       [ "ScriptCanvas::Developer::Nodes::WrapperMock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock.html", null ]
     ] ],
+    [ "ImGui::ImGuiUpdateListenerBus::Handler", null, [
+      [ "ScriptCanvas::Developer::SystemComponent", "class_script_canvas_1_1_developer_1_1_system_component.html", null ]
+    ] ],
     [ "MockDescriptorNotificationBus::MultiHandler", null, [
       [ "ScriptCanvas::Developer::Nodes::WrapperMock", "class_script_canvas_1_1_developer_1_1_nodes_1_1_wrapper_mock.html", null ]
     ] ],

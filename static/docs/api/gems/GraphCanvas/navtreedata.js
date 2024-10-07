@@ -42,8 +42,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "class_graph_canvas_1_1_graph_canvas_property_bus_handler.html",
-"class_graph_canvas_1_1_scene_notifications.html#ad58047ff6634ea26c8e936185879be1e",
-"functions_f.html"
+"class_graph_canvas_1_1_scene_notifications.html#ac7d84b84df1c06e68b982bf139a1188c",
+"functions_c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

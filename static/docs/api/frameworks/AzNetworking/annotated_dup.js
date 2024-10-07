@@ -100,6 +100,7 @@ var annotated_dup =
       [ "UdpConnection", "class_az_networking_1_1_udp_connection.html", "class_az_networking_1_1_udp_connection" ],
       [ "UdpConnectionSet", "class_az_networking_1_1_udp_connection_set.html", "class_az_networking_1_1_udp_connection_set" ],
       [ "UdpFragmentQueue", "class_az_networking_1_1_udp_fragment_queue.html", "class_az_networking_1_1_udp_fragment_queue" ],
+      [ "UdpHeartbeatThread", "class_az_networking_1_1_udp_heartbeat_thread.html", null ],
       [ "UdpNetworkInterface", "class_az_networking_1_1_udp_network_interface.html", "class_az_networking_1_1_udp_network_interface" ],
       [ "UdpPacketHeader", "class_az_networking_1_1_udp_packet_header.html", "class_az_networking_1_1_udp_packet_header" ],
       [ "UdpPacketIdWindow", "class_az_networking_1_1_udp_packet_id_window.html", "class_az_networking_1_1_udp_packet_id_window" ],

@@ -11,7 +11,7 @@ var annotated_dup =
       [ "DebugDrawRequests", "class_debug_draw_1_1_debug_draw_requests.html", "class_debug_draw_1_1_debug_draw_requests" ],
       [ "DebugDrawSphereComponent", "class_debug_draw_1_1_debug_draw_sphere_component.html", null ],
       [ "DebugDrawSphereElement", "class_debug_draw_1_1_debug_draw_sphere_element.html", null ],
-      [ "DebugDrawSystemComponent", "class_debug_draw_1_1_debug_draw_system_component.html", null ],
+      [ "DebugDrawSystemComponent", "class_debug_draw_1_1_debug_draw_system_component.html", "class_debug_draw_1_1_debug_draw_system_component" ],
       [ "DebugDrawTextComponent", "class_debug_draw_1_1_debug_draw_text_component.html", null ],
       [ "DebugDrawTextElement", "class_debug_draw_1_1_debug_draw_text_element.html", null ],
       [ "EditorDebugDrawComponentSettings", "class_debug_draw_1_1_editor_debug_draw_component_settings.html", null ],

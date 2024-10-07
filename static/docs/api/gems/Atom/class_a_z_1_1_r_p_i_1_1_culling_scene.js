@@ -1,8 +1,8 @@
 var class_a_z_1_1_r_p_i_1_1_culling_scene =
 [
     [ "OcclusionPlane", "struct_a_z_1_1_r_p_i_1_1_culling_scene_1_1_occlusion_plane.html", null ],
-    [ "BeginCulling", "class_a_z_1_1_r_p_i_1_1_culling_scene.html#a8de95a9da4fb69d1b5f581b9edc1ccde", null ],
-    [ "EndCulling", "class_a_z_1_1_r_p_i_1_1_culling_scene.html#aaccc86e0b4f76a41ef44d600e2e2fbaa", null ],
+    [ "BeginCulling", "class_a_z_1_1_r_p_i_1_1_culling_scene.html#a0a0e0e690ba06ae16a25faf27a6138db", null ],
+    [ "EndCulling", "class_a_z_1_1_r_p_i_1_1_culling_scene.html#a2ce9d4877edb5f638fb67b786ff56906", null ],
     [ "GetNumCullables", "class_a_z_1_1_r_p_i_1_1_culling_scene.html#a71cbf5453c67ecc8d16bf271ffaae6bc", null ],
     [ "GetVisibilityScene", "class_a_z_1_1_r_p_i_1_1_culling_scene.html#a788c3babf283883386eb68a12028c9de", null ],
     [ "ProcessCullables", "class_a_z_1_1_r_p_i_1_1_culling_scene.html#af3081a5484db477bfa18248bc69e9005", null ],

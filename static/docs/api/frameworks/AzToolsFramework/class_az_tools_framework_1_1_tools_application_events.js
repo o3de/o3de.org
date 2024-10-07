@@ -13,6 +13,7 @@ var class_az_tools_framework_1_1_tools_application_events =
     [ "EntityRegistered", "class_az_tools_framework_1_1_tools_application_events.html#ad7d8d84eab206560dddf07501f46a106", null ],
     [ "GotSceneSourceControlStatus", "class_az_tools_framework_1_1_tools_application_events.html#a5702691bdefee9274dfb92fe75c62fa2", null ],
     [ "InvalidatePropertyDisplay", "class_az_tools_framework_1_1_tools_application_events.html#af8016d717916eea43cbf814e425385a0", null ],
+    [ "InvalidatePropertyDisplayForComponent", "class_az_tools_framework_1_1_tools_application_events.html#a59fc37fe3c2eb44710aec08c1c561b72", null ],
     [ "OnBeginUndo", "class_az_tools_framework_1_1_tools_application_events.html#a3d7b8f490ae52926c630a20eb36d96d7", null ],
     [ "OnEndUndo", "class_az_tools_framework_1_1_tools_application_events.html#a786d9f70a6291d43f11238b715273c03", null ],
     [ "OnEnterEditorIsolationMode", "class_az_tools_framework_1_1_tools_application_events.html#a6248caa36a6a0f2e7d420eb3dcb77d6e", null ],

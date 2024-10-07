@@ -1,6 +1,6 @@
 var annotated_dup =
 [
-    [ "AZ", null, [
+    [ "AZ", "namespace_a_z.html", [
       [ "Serialize", null, [
         [ "InstanceFactory", "struct_a_z_1_1_serialize_1_1_instance_factory.html", null ]
       ] ],
@@ -393,7 +393,6 @@ var annotated_dup =
       [ "AssetDescription", "class_script_canvas_1_1_asset_description.html", null ],
       [ "AssetRegistry", "class_script_canvas_1_1_asset_registry.html", null ],
       [ "AssetRegistryRequests", "class_script_canvas_1_1_asset_registry_requests.html", null ],
-      [ "AutoGenRegistryManager", "class_script_canvas_1_1_auto_gen_registry_manager.html", "class_script_canvas_1_1_auto_gen_registry_manager" ],
       [ "BatchOperationNotifications", "class_script_canvas_1_1_batch_operation_notifications.html", null ],
       [ "BehaviorContextObject", "class_script_canvas_1_1_behavior_context_object.html", null ],
       [ "BehaviorContextResultTag", "struct_script_canvas_1_1_behavior_context_result_tag.html", null ],
@@ -525,6 +524,7 @@ var annotated_dup =
       [ "ReplicaNetworkProperties", "struct_script_canvas_1_1_replica_network_properties.html", null ],
       [ "RequestByNodeIdTraits", "struct_script_canvas_1_1_request_by_node_id_traits.html", null ],
       [ "RestrictedTypeContract", "class_script_canvas_1_1_restricted_type_contract.html", null ],
+      [ "ReturnSignalTag", "struct_script_canvas_1_1_return_signal_tag.html", null ],
       [ "RuntimeAsset", "class_script_canvas_1_1_runtime_asset.html", null ],
       [ "RuntimeAssetDescription", "class_script_canvas_1_1_runtime_asset_description.html", null ],
       [ "RuntimeAssetHandler", "class_script_canvas_1_1_runtime_asset_handler.html", null ],
@@ -541,7 +541,6 @@ var annotated_dup =
       [ "ScriptCanvasData", "class_script_canvas_1_1_script_canvas_data.html", null ],
       [ "ScriptCanvasModule", "class_script_canvas_1_1_script_canvas_module.html", null ],
       [ "ScriptCanvasModuleCommon", "class_script_canvas_1_1_script_canvas_module_common.html", null ],
-      [ "ScriptCanvasRegistry", "class_script_canvas_1_1_script_canvas_registry.html", null ],
       [ "ScriptCanvasSettingsRequests", "class_script_canvas_1_1_script_canvas_settings_requests.html", null ],
       [ "ScriptEventNodeRequests", "class_script_canvas_1_1_script_event_node_requests.html", null ],
       [ "ScriptEventVersionMismatch", "class_script_canvas_1_1_script_event_version_mismatch.html", null ],
@@ -755,7 +754,6 @@ var annotated_dup =
       [ "EditorScriptCanvasComponent", "class_script_canvas_editor_1_1_editor_script_canvas_component.html", null ],
       [ "EditorScriptCanvasComponentLogging", "class_script_canvas_editor_1_1_editor_script_canvas_component_logging.html", null ],
       [ "EditorScriptCanvasComponentRequests", "class_script_canvas_editor_1_1_editor_script_canvas_component_requests.html", null ],
-      [ "EditorScriptCanvasRequests", "class_script_canvas_editor_1_1_editor_script_canvas_requests.html", "class_script_canvas_editor_1_1_editor_script_canvas_requests" ],
       [ "EndpointSelectionAction", "class_script_canvas_editor_1_1_endpoint_selection_action.html", null ],
       [ "EntityMimeDataHandler", "class_script_canvas_editor_1_1_entity_mime_data_handler.html", null ],
       [ "EntityPivotTreeEntityItem", "class_script_canvas_editor_1_1_entity_pivot_tree_entity_item.html", null ],
@@ -959,5 +957,6 @@ var annotated_dup =
       [ "Slot", "struct_script_canvas_editor_tools_1_1_slot.html", null ],
       [ "TranslationFormat", "struct_script_canvas_editor_tools_1_1_translation_format.html", null ],
       [ "TranslationGeneration", "class_script_canvas_editor_tools_1_1_translation_generation.html", "class_script_canvas_editor_tools_1_1_translation_generation" ]
-    ] ]
+    ] ],
+    [ "ScriptCanvasModel", "class_script_canvas_model.html", null ]
 ];

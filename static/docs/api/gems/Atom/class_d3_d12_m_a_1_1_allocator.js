@@ -14,5 +14,5 @@ var class_d3_d12_m_a_1_1_allocator =
     [ "IsCacheCoherentUMA", "class_d3_d12_m_a_1_1_allocator.html#a08210561b92c4bd7ede9dd7beba4bb80", null ],
     [ "IsUMA", "class_d3_d12_m_a_1_1_allocator.html#a9e742884bd45dd7f01193d13fcd05af0", null ],
     [ "SetCurrentFrameIndex", "class_d3_d12_m_a_1_1_allocator.html#a468ba0c93121eaaee402b08775f1dd11", null ],
-    [ "CreateAllocator", "class_d3_d12_m_a_1_1_allocator.html#a458f044fdc81e4a0b147e99ffcf73459", null ]
+    [ "CreateAllocator", "class_d3_d12_m_a_1_1_allocator.html#a6e114ef3b4a791a3bf2e3109a3971559", null ]
 ];

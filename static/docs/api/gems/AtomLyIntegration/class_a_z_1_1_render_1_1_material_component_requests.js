@@ -21,6 +21,7 @@ var class_a_z_1_1_render_1_1_material_component_requests =
     [ "GetPropertyValue", "class_a_z_1_1_render_1_1_material_component_requests.html#aa0ea83567bd1d7dc8303bc725ef47f4b", null ],
     [ "GetPropertyValues", "class_a_z_1_1_render_1_1_material_component_requests.html#ab1624afe507d968e55ba45079b9ab9ad", null ],
     [ "GetPropertyValueT", "class_a_z_1_1_render_1_1_material_component_requests.html#a4918fae5369532acbe1b80dcc5876d6e", null ],
+    [ "HasPropertiesOverridden", "class_a_z_1_1_render_1_1_material_component_requests.html#a2555e79f5ebc2a78f7bc0e9560d3f95b", null ],
     [ "IsMaterialAssetIdOverridden", "class_a_z_1_1_render_1_1_material_component_requests.html#a0bbc651441197ea1c39baabcdc9bb6b7", null ],
     [ "RepairMaterialsWithMissingAssets", "class_a_z_1_1_render_1_1_material_component_requests.html#a686b873d554d6c3c04daa121da68a5b5", null ],
     [ "RepairMaterialsWithRenamedProperties", "class_a_z_1_1_render_1_1_material_component_requests.html#a2343e1a47aa78f6d0e37545f4a513a43", null ],

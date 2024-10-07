@@ -59,7 +59,7 @@ var class_a_z_1_1_slice_component =
     [ "GetSlices", "class_a_z_1_1_slice_component.html#aa55961b3fc2bc030f8aca79f71521d05", null ],
     [ "GetSlices", "class_a_z_1_1_slice_component.html#aeabfc76c86e59871606af2c19bfce8ef", null ],
     [ "InitMetadata", "class_a_z_1_1_slice_component.html#af3f4215322115fea8f3a4327f368f1ec", null ],
-    [ "Instantiate", "class_a_z_1_1_slice_component.html#ad8ae90d8abf42560dd4659e8101b29b6", null ],
+    [ "Instantiate", "class_a_z_1_1_slice_component.html#a51967daaa453bd0cacce1955ba45ae36", null ],
     [ "IsAllowPartialInstantiation", "class_a_z_1_1_slice_component.html#ac99620a7e88f364ced47a8aad7f994f6", null ],
     [ "IsDynamic", "class_a_z_1_1_slice_component.html#a5d9c219059195af65e9fde74cc4caa3d", null ],
     [ "IsNewEntity", "class_a_z_1_1_slice_component.html#abcda77f547238eb7970ea5060e805344", null ],

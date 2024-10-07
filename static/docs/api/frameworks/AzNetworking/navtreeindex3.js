@@ -1,17 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"struct_az_networking_1_1_network_interface_metrics.html#a78bc72b5c75d56295522223ce43520f3":[0,0,1,37,0],
-"struct_az_networking_1_1_network_interface_metrics.html#a8c193066a3ce42fbd4b2d1a1ee2d74a5":[0,0,1,37,2],
-"struct_az_networking_1_1_network_interface_metrics.html#a910f6a5f99799313ed745cd922aa586f":[0,0,1,37,6],
-"struct_az_networking_1_1_network_interface_metrics.html#aa364edce966056b7db5c0155eeeab906":[0,0,1,37,7],
-"struct_az_networking_1_1_network_interface_metrics.html#ab057961414865f4eddd6b82a2721b4ff":[0,0,1,37,15],
-"struct_az_networking_1_1_network_interface_metrics.html#ab7eda70b6207b2484005f11d3951d149":[0,0,1,37,5],
-"struct_az_networking_1_1_network_interface_metrics.html#ae0ad5ec1ee289f623fe631a3ec859a88":[0,0,1,37,11],
-"struct_az_networking_1_1_network_interface_metrics.html#aea5fcae7704707e37432022688374725":[0,0,1,37,4],
-"struct_az_networking_1_1_network_interface_metrics.html#aec4618ee17679341db1d7934d0597a0c":[0,0,1,37,1],
-"struct_az_networking_1_1_pending_packet.html":[0,0,1,39],
-"struct_az_networking_1_1_quantized_values_conversion_helper.html":[0,0,1,41],
-"struct_az_networking_1_1_quantized_values_conversion_helper_3_01_n_u_m___e_l_e_m_e_n_t_s_00_014_cde6cd2fd9d7c6be01285352004fbebf.html":[0,0,1,42],
 "struct_az_networking_1_1_quantized_values_helper.html":[0,0,1,43],
 "struct_az_networking_1_1_quantized_values_helper_3_011_01_4.html":[0,0,1,44],
 "struct_az_networking_1_1_quantized_values_helper_3_012_01_4.html":[0,0,1,45],
@@ -44,5 +32,5 @@ var NAVTREEINDEX3 =
 "struct_az_networking_1_1_serialize_type.html":[0,0,1,75],
 "struct_az_networking_1_1_tcp_network_interface_1_1_pending_connection.html":[0,0,1,80,0],
 "struct_az_networking_1_1_timeout_queue_1_1_timeout_item.html":[0,0,1,87,0],
-"struct_az_networking_1_1_udp_reader_thread_1_1_received_packet.html":[0,0,1,98,0]
+"struct_az_networking_1_1_udp_reader_thread_1_1_received_packet.html":[0,0,1,99,0]
 };

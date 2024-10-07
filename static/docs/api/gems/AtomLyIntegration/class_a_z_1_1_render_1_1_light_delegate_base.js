@@ -11,6 +11,7 @@ var class_a_z_1_1_render_1_1_light_delegate_base =
     [ "SetFilteringSampleCount", "class_a_z_1_1_render_1_1_light_delegate_base.html#a1805dcb56bf105e9584f9eeb33e80bed", null ],
     [ "SetIntensity", "class_a_z_1_1_render_1_1_light_delegate_base.html#a44ced3ed5da2e38ce0268cf7babaa93e", null ],
     [ "SetLightEmitsBothDirections", "class_a_z_1_1_render_1_1_light_delegate_base.html#ac5c7e69e1be62b3beddf1f616a0a75a9", null ],
+    [ "SetLightingChannelMask", "class_a_z_1_1_render_1_1_light_delegate_base.html#a48e836b9e30036bb2650f53143eafd65", null ],
     [ "SetNormalShadowBias", "class_a_z_1_1_render_1_1_light_delegate_base.html#a6aa2d7f27e464327a1a0e9caa8086ee5", null ],
     [ "SetPhotometricUnit", "class_a_z_1_1_render_1_1_light_delegate_base.html#a4e7632fcd76d208384223e976bb78d87", null ],
     [ "SetShadowBias", "class_a_z_1_1_render_1_1_light_delegate_base.html#a58c5e4918e416aa8c53708dde0d37187", null ],

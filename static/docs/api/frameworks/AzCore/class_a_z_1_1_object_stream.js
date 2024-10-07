@@ -3,9 +3,9 @@ var class_a_z_1_1_object_stream =
     [ "Descriptor", "struct_a_z_1_1_object_stream_1_1_descriptor.html", null ],
     [ "FilterDescriptor", "struct_a_z_1_1_object_stream_1_1_filter_descriptor.html", null ],
     [ "Handle", "class_a_z_1_1_object_stream_1_1_handle.html", null ],
-    [ "ClassReadyCB", "class_a_z_1_1_object_stream.html#a4394862950087eeb20cfefacb19de884", null ],
-    [ "CompletionCB", "class_a_z_1_1_object_stream.html#aab65aac8a8373c56c49c9227584195f4", null ],
-    [ "InplaceLoadRootInfoCB", "class_a_z_1_1_object_stream.html#abbc98ffdb49a7a9c937a487d00b442da", null ],
+    [ "ClassReadyCB", "class_a_z_1_1_object_stream.html#a6641ad6719a5fec7e6942622e6429261", null ],
+    [ "CompletionCB", "class_a_z_1_1_object_stream.html#a07f188016a50ce1136d59caa1688105f", null ],
+    [ "InplaceLoadRootInfoCB", "class_a_z_1_1_object_stream.html#a49c4746fa6096ab8dcb11fa47426214a", null ],
     [ "FilterFlags", "class_a_z_1_1_object_stream.html#aef7083a8b08465591c180d75577adf1b", [
       [ "FILTERFLAG_STRICT", "class_a_z_1_1_object_stream.html#aef7083a8b08465591c180d75577adf1ba93976dbc8261ca42c4518f0e618b9afb", null ],
       [ "FILTERFLAG_IGNORE_UNKNOWN_CLASSES", "class_a_z_1_1_object_stream.html#aef7083a8b08465591c180d75577adf1ba0c20325ff0e5e3c83049c20e91cbc31d", null ]

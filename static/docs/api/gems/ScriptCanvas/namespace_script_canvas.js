@@ -9,7 +9,6 @@ var namespace_script_canvas =
     [ "AssetDescription", "class_script_canvas_1_1_asset_description.html", null ],
     [ "AssetRegistry", "class_script_canvas_1_1_asset_registry.html", null ],
     [ "AssetRegistryRequests", "class_script_canvas_1_1_asset_registry_requests.html", null ],
-    [ "AutoGenRegistryManager", "class_script_canvas_1_1_auto_gen_registry_manager.html", "class_script_canvas_1_1_auto_gen_registry_manager" ],
     [ "BatchOperationNotifications", "class_script_canvas_1_1_batch_operation_notifications.html", null ],
     [ "BehaviorContextObject", "class_script_canvas_1_1_behavior_context_object.html", null ],
     [ "BehaviorContextResultTag", "struct_script_canvas_1_1_behavior_context_result_tag.html", null ],
@@ -141,6 +140,7 @@ var namespace_script_canvas =
     [ "ReplicaNetworkProperties", "struct_script_canvas_1_1_replica_network_properties.html", null ],
     [ "RequestByNodeIdTraits", "struct_script_canvas_1_1_request_by_node_id_traits.html", null ],
     [ "RestrictedTypeContract", "class_script_canvas_1_1_restricted_type_contract.html", null ],
+    [ "ReturnSignalTag", "struct_script_canvas_1_1_return_signal_tag.html", null ],
     [ "RuntimeAsset", "class_script_canvas_1_1_runtime_asset.html", null ],
     [ "RuntimeAssetDescription", "class_script_canvas_1_1_runtime_asset_description.html", null ],
     [ "RuntimeAssetHandler", "class_script_canvas_1_1_runtime_asset_handler.html", null ],
@@ -157,7 +157,6 @@ var namespace_script_canvas =
     [ "ScriptCanvasData", "class_script_canvas_1_1_script_canvas_data.html", null ],
     [ "ScriptCanvasModule", "class_script_canvas_1_1_script_canvas_module.html", null ],
     [ "ScriptCanvasModuleCommon", "class_script_canvas_1_1_script_canvas_module_common.html", null ],
-    [ "ScriptCanvasRegistry", "class_script_canvas_1_1_script_canvas_registry.html", null ],
     [ "ScriptCanvasSettingsRequests", "class_script_canvas_1_1_script_canvas_settings_requests.html", null ],
     [ "ScriptEventNodeRequests", "class_script_canvas_1_1_script_event_node_requests.html", null ],
     [ "ScriptEventVersionMismatch", "class_script_canvas_1_1_script_event_version_mismatch.html", null ],
@@ -214,7 +213,7 @@ var namespace_script_canvas =
     [ "VersionData", "struct_script_canvas_1_1_version_data.html", null ],
     [ "VersioningUtils", "class_script_canvas_1_1_versioning_utils.html", null ],
     [ "VisualExtensionSlotConfiguration", "struct_script_canvas_1_1_visual_extension_slot_configuration.html", null ],
-    [ "ContractCreationFunction", "namespace_script_canvas.html#a9b726e7ed8ba7ea629c289e8c6550c52", null ],
+    [ "ContractCreationFunction", "namespace_script_canvas.html#ac8e51bde02cbeb06c968bb520ab4fcc5", null ],
     [ "GetNodeRegistry", "namespace_script_canvas.html#a02f282983c1ce86b379741adfc32e9c7", null ],
     [ "LoadFromFile", "namespace_script_canvas.html#a9bde32a0ec5213f6fc331ab4b5f0ea9f", null ]
 ];

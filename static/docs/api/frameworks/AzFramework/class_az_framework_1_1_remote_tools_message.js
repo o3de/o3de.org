@@ -7,6 +7,6 @@ var class_az_framework_1_1_remote_tools_message =
     [ "GetId", "class_az_framework_1_1_remote_tools_message.html#a040299101790cf0a9a2a5de87f6288da", null ],
     [ "GetIsBlobOwner", "class_az_framework_1_1_remote_tools_message.html#a1f411d9bcf4326661c5e2f6161a83294", null ],
     [ "GetSenderTargetId", "class_az_framework_1_1_remote_tools_message.html#ab66318661374202beb4adf2a479b4b6a", null ],
-    [ "ReflectRemoteToolsMessage", "class_az_framework_1_1_remote_tools_message.html#a57f1443ad2b2b89937f6c6561c36dd25", null ],
+    [ "Reflect", "class_az_framework_1_1_remote_tools_message.html#a96f4b24de9070ddefc925453a04dcaae", null ],
     [ "SetSenderTargetId", "class_az_framework_1_1_remote_tools_message.html#a97965feadb891aef5026943fa9e072a6", null ]
 ];

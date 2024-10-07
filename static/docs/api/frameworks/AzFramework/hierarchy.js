@@ -40,6 +40,7 @@ var hierarchy =
       [ "AzFramework::AzFrameworkConfigurationSystemComponent", "class_az_framework_1_1_az_framework_configuration_system_component.html", null ],
       [ "AzFramework::Components::ComponentAdapter< TController, TConfiguration >", "class_az_framework_1_1_components_1_1_component_adapter.html", null ],
       [ "AzFramework::CustomAssetTypeComponent", "class_az_framework_1_1_custom_asset_type_component.html", null ],
+      [ "AzFramework::DeviceAttributesSystemComponent", "class_az_framework_1_1_device_attributes_system_component.html", null ],
       [ "AzFramework::FileTag::ExcludeFileComponent", "class_az_framework_1_1_file_tag_1_1_exclude_file_component.html", null ],
       [ "AzFramework::FileTag::FileTagComponent", "class_az_framework_1_1_file_tag_1_1_file_tag_component.html", null ],
       [ "AzFramework::FileTag::FileTagQueryComponent", "class_az_framework_1_1_file_tag_1_1_file_tag_query_component.html", null ],
@@ -47,6 +48,7 @@ var hierarchy =
       [ "AzFramework::InputContextComponent", "class_az_framework_1_1_input_context_component.html", null ],
       [ "AzFramework::InputSystemComponent", "class_az_framework_1_1_input_system_component.html", null ],
       [ "AzFramework::LogComponent", "class_az_framework_1_1_log_component.html", null ],
+      [ "AzFramework::NativeUISystemComponent", "class_az_framework_1_1_native_u_i_system_component.html", null ],
       [ "AzFramework::NonUniformScaleComponent", "class_az_framework_1_1_non_uniform_scale_component.html", null ],
       [ "AzFramework::OctreeSystemComponent", "class_az_framework_1_1_octree_system_component.html", null ],
       [ "AzFramework::PaintBrushSystemComponent", "class_az_framework_1_1_paint_brush_system_component.html", null ],
@@ -164,7 +166,10 @@ var hierarchy =
       [ "AZ::DocumentPropertyEditor::LabeledRowDPEExpanderSettings", "class_a_z_1_1_document_property_editor_1_1_labeled_row_d_p_e_expander_settings.html", null ]
     ] ],
     [ "AZ::DocumentPropertyEditor::NodeDefinition", "struct_a_z_1_1_document_property_editor_1_1_node_definition.html", [
-      [ "AZ::DocumentPropertyEditor::Nodes::NumericEditor< Dom::Value >", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_numeric_editor.html", null ],
+      [ "AZ::DocumentPropertyEditor::Nodes::NumericEditor< Dom::Value >", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_numeric_editor.html", [
+        [ "AZ::DocumentPropertyEditor::Nodes::Slider< T >", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_slider.html", null ],
+        [ "AZ::DocumentPropertyEditor::Nodes::SpinBox< T >", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_spin_box.html", null ]
+      ] ],
       [ "AZ::DocumentPropertyEditor::Nodes::Asset", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_asset.html", null ],
       [ "AZ::DocumentPropertyEditor::Nodes::AudioControl", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_audio_control.html", null ],
       [ "AZ::DocumentPropertyEditor::Nodes::Button", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_button.html", null ],
@@ -189,10 +194,7 @@ var hierarchy =
         ] ],
         [ "AZ::DocumentPropertyEditor::Nodes::Row", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_row.html", null ]
       ] ],
-      [ "AZ::DocumentPropertyEditor::Nodes::NumericEditor< T >", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_numeric_editor.html", [
-        [ "AZ::DocumentPropertyEditor::Nodes::Slider< T >", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_slider.html", null ],
-        [ "AZ::DocumentPropertyEditor::Nodes::SpinBox< T >", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_spin_box.html", null ]
-      ] ],
+      [ "AZ::DocumentPropertyEditor::Nodes::NumericEditor< T >", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_numeric_editor.html", null ],
       [ "AZ::DocumentPropertyEditor::Nodes::Quaternion", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_quaternion.html", null ],
       [ "AZ::DocumentPropertyEditor::Nodes::RadioButton", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_radio_button.html", null ],
       [ "AZ::DocumentPropertyEditor::Nodes::Vector2", "struct_a_z_1_1_document_property_editor_1_1_nodes_1_1_vector2.html", null ],
@@ -241,7 +243,6 @@ var hierarchy =
       [ "AzFramework::DarwinLifecycleEvents", "class_az_framework_1_1_darwin_lifecycle_events.html", null ],
       [ "AzFramework::DebugDisplayEvents", "class_az_framework_1_1_debug_display_events.html", null ],
       [ "AzFramework::DebugDisplayRequests", "class_az_framework_1_1_debug_display_requests.html", null ],
-      [ "AzFramework::DisplayContextRequests", "class_az_framework_1_1_display_context_requests.html", null ],
       [ "AzFramework::EngineConnectionEvents", "class_az_framework_1_1_engine_connection_events.html", null ],
       [ "AzFramework::EntityContextEvents", "class_az_framework_1_1_entity_context_events.html", null ],
       [ "AzFramework::EntityContextRequests", "class_az_framework_1_1_entity_context_requests.html", null ],
@@ -275,6 +276,7 @@ var hierarchy =
       [ "AzFramework::LinuxLifecycleEvents", "class_az_framework_1_1_linux_lifecycle_events.html", null ],
       [ "AzFramework::MetricsPlainTextNameRegistrationBusTraits", "class_az_framework_1_1_metrics_plain_text_name_registration_bus_traits.html", null ],
       [ "AzFramework::MissingAssetNotifications", "class_az_framework_1_1_missing_asset_notifications.html", null ],
+      [ "AzFramework::OcclusionRequests", "class_az_framework_1_1_occlusion_requests.html", null ],
       [ "AzFramework::PaintBrushNotifications", "class_az_framework_1_1_paint_brush_notifications.html", null ],
       [ "AzFramework::PaintBrushSession", "class_az_framework_1_1_paint_brush_session.html", null ],
       [ "AzFramework::QualitySystemEvents", "class_az_framework_1_1_quality_system_events.html", null ],
@@ -398,7 +400,8 @@ var hierarchy =
       [ "AzFramework::Terrain::TerrainJobContext", "class_az_framework_1_1_terrain_1_1_terrain_job_context.html", null ]
     ] ],
     [ "AZ::Module", null, [
-      [ "AzFramework::AzFrameworkModule", "class_az_framework_1_1_az_framework_module.html", null ]
+      [ "AzFramework::AzFrameworkModule", "class_az_framework_1_1_az_framework_module.html", null ],
+      [ "AzFramework::AzFrameworkNativeUIModule", "class_az_framework_1_1_az_framework_native_u_i_module.html", null ]
     ] ],
     [ "AZ::NonUniformScaleRequestBus::Handler", null, [
       [ "AzFramework::NonUniformScaleComponent", "class_az_framework_1_1_non_uniform_scale_component.html", null ]
@@ -425,6 +428,7 @@ var hierarchy =
     [ "AZ::TickBus::Handler", null, [
       [ "AzFramework::EntityVisibilityBoundsUnionSystem", "class_az_framework_1_1_entity_visibility_bounds_union_system.html", null ],
       [ "AzFramework::InputSystemComponent", "class_az_framework_1_1_input_system_component.html", null ],
+      [ "AzFramework::ScriptComponent", "class_az_framework_1_1_script_component.html", null ],
       [ "AzFramework::Scripts::SpawnableScriptMediator", "class_az_framework_1_1_scripts_1_1_spawnable_script_mediator.html", null ],
       [ "AzFramework::SpawnableSystemComponent", "class_az_framework_1_1_spawnable_system_component.html", null ]
     ] ],
@@ -443,8 +447,10 @@ var hierarchy =
     [ "AzFramework::AabbUnionAggregator", "struct_az_framework_1_1_aabb_union_aggregator.html", null ],
     [ "AzFramework::AndroidEventDispatcher", "class_az_framework_1_1_android_event_dispatcher.html", null ],
     [ "AzFramework::Application::Implementation", "class_az_framework_1_1_application_1_1_implementation.html", [
+      [ "AzFramework::ApplicationWindows", "class_az_framework_1_1_application_windows.html", null ],
       [ "AzFramework::XcbApplication", "class_az_framework_1_1_xcb_application.html", null ]
     ] ],
+    [ "AzFramework::Application::ImplementationFactory", "class_az_framework_1_1_application_1_1_implementation_factory.html", null ],
     [ "AzFramework::AssetBundleManifest", "class_az_framework_1_1_asset_bundle_manifest.html", null ],
     [ "AzFramework::AssetCatalogEventBus::Handler", null, [
       [ "AzFramework::FileTag::ExcludeFileComponent", "class_az_framework_1_1_file_tag_1_1_exclude_file_component.html", null ]
@@ -520,7 +526,8 @@ var hierarchy =
       [ "AzFramework::AssetSystem::ShowAssetProcessorRequest", "class_az_framework_1_1_asset_system_1_1_show_asset_processor_request.html", null ],
       [ "AzFramework::AssetSystem::SourceAssetInfoRequest", "class_az_framework_1_1_asset_system_1_1_source_asset_info_request.html", null ],
       [ "AzFramework::AssetSystem::SourceAssetInfoResponse", "class_az_framework_1_1_asset_system_1_1_source_asset_info_response.html", null ],
-      [ "AzFramework::AssetSystem::UnregisterSourceAssetRequest", "class_az_framework_1_1_asset_system_1_1_unregister_source_asset_request.html", null ]
+      [ "AzFramework::AssetSystem::UnregisterSourceAssetRequest", "class_az_framework_1_1_asset_system_1_1_unregister_source_asset_request.html", null ],
+      [ "AzFramework::AssetSystem::UpdateSourceControlStatusRequest", "class_az_framework_1_1_asset_system_1_1_update_source_control_status_request.html", null ]
     ] ],
     [ "AzFramework::AssetSystem::ConnectionSettings", "struct_az_framework_1_1_asset_system_1_1_connection_settings.html", null ],
     [ "AzFramework::AssetSystem::NetworkAssetUpdateInterface", "class_az_framework_1_1_asset_system_1_1_network_asset_update_interface.html", [
@@ -559,8 +566,15 @@ var hierarchy =
     [ "AzFramework::DependencySearchRule", "class_az_framework_1_1_dependency_search_rule.html", null ],
     [ "AzFramework::DespawnAllEntitiesOptionalArgs", "struct_az_framework_1_1_despawn_all_entities_optional_args.html", null ],
     [ "AzFramework::DespawnEntityOptionalArgs", "struct_az_framework_1_1_despawn_entity_optional_args.html", null ],
+    [ "AzFramework::DeviceAttribute", "class_az_framework_1_1_device_attribute.html", [
+      [ "AzFramework::DeviceAttributeDeviceModel", "class_az_framework_1_1_device_attribute_device_model.html", null ],
+      [ "AzFramework::DeviceAttributeGPUModel", "class_az_framework_1_1_device_attribute_g_p_u_model.html", null ],
+      [ "AzFramework::DeviceAttributeRAM", "class_az_framework_1_1_device_attribute_r_a_m.html", null ]
+    ] ],
+    [ "AzFramework::DeviceAttributeRegistrarInterface", "class_az_framework_1_1_device_attribute_registrar_interface.html", [
+      [ "AzFramework::DeviceAttributesSystemComponent", "class_az_framework_1_1_device_attributes_system_component.html", null ]
+    ] ],
     [ "AzFramework::DiscreteInputEvent", "struct_az_framework_1_1_discrete_input_event.html", null ],
-    [ "AzFramework::DisplayContextRequestGuard", "class_az_framework_1_1_display_context_request_guard.html", null ],
     [ "AzFramework::EditorEntityEvents", "class_az_framework_1_1_editor_entity_events.html", null ],
     [ "AzFramework::EntityAliasTypeChange", "struct_az_framework_1_1_entity_alias_type_change.html", null ],
     [ "AzFramework::EntityOwnershipServiceInterface", "class_az_framework_1_1_entity_ownership_service_interface.html", null ],
@@ -596,31 +610,42 @@ var hierarchy =
     [ "AzFramework::InputChannelRequests::BusIdType", "class_az_framework_1_1_input_channel_requests_1_1_bus_id_type.html", null ],
     [ "AzFramework::InputContext::InitData", "struct_az_framework_1_1_input_context_1_1_init_data.html", null ],
     [ "AzFramework::InputDeviceGamepad::Button", "struct_az_framework_1_1_input_device_gamepad_1_1_button.html", null ],
-    [ "AzFramework::InputDeviceGamepad::Implementation", "class_az_framework_1_1_input_device_gamepad_1_1_implementation.html", null ],
+    [ "AzFramework::InputDeviceGamepad::Implementation", "class_az_framework_1_1_input_device_gamepad_1_1_implementation.html", [
+      [ "AzFramework::InputDeviceGamepadLinux", "class_az_framework_1_1_input_device_gamepad_linux.html", null ],
+      [ "AzFramework::InputDeviceGamepadWindows", "class_az_framework_1_1_input_device_gamepad_windows.html", null ]
+    ] ],
     [ "AzFramework::InputDeviceGamepad::Implementation::RawGamepadState", "struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html", null ],
+    [ "AzFramework::InputDeviceGamepad::ImplementationFactory", "class_az_framework_1_1_input_device_gamepad_1_1_implementation_factory.html", null ],
     [ "AzFramework::InputDeviceGamepad::ThumbStickAxis1D", "struct_az_framework_1_1_input_device_gamepad_1_1_thumb_stick_axis1_d.html", null ],
     [ "AzFramework::InputDeviceGamepad::ThumbStickAxis2D", "struct_az_framework_1_1_input_device_gamepad_1_1_thumb_stick_axis2_d.html", null ],
     [ "AzFramework::InputDeviceGamepad::ThumbStickDirection", "struct_az_framework_1_1_input_device_gamepad_1_1_thumb_stick_direction.html", null ],
     [ "AzFramework::InputDeviceGamepad::Trigger", "struct_az_framework_1_1_input_device_gamepad_1_1_trigger.html", null ],
     [ "AzFramework::InputDeviceId", "class_az_framework_1_1_input_device_id.html", null ],
     [ "AzFramework::InputDeviceKeyboard::Implementation", "class_az_framework_1_1_input_device_keyboard_1_1_implementation.html", [
+      [ "AzFramework::InputDeviceKeyboardWindows", "class_az_framework_1_1_input_device_keyboard_windows.html", null ],
       [ "AzFramework::XcbInputDeviceKeyboard", "class_az_framework_1_1_xcb_input_device_keyboard.html", null ]
     ] ],
+    [ "AzFramework::InputDeviceKeyboard::ImplementationFactory", "class_az_framework_1_1_input_device_keyboard_1_1_implementation_factory.html", null ],
     [ "AzFramework::InputDeviceKeyboard::Key", "struct_az_framework_1_1_input_device_keyboard_1_1_key.html", null ],
     [ "AzFramework::InputDeviceMotion::Acceleration", "struct_az_framework_1_1_input_device_motion_1_1_acceleration.html", null ],
     [ "AzFramework::InputDeviceMotion::Implementation", "class_az_framework_1_1_input_device_motion_1_1_implementation.html", null ],
+    [ "AzFramework::InputDeviceMotion::ImplementationFactory", "struct_az_framework_1_1_input_device_motion_1_1_implementation_factory.html", null ],
     [ "AzFramework::InputDeviceMotion::MagneticField", "struct_az_framework_1_1_input_device_motion_1_1_magnetic_field.html", null ],
     [ "AzFramework::InputDeviceMotion::Orientation", "struct_az_framework_1_1_input_device_motion_1_1_orientation.html", null ],
     [ "AzFramework::InputDeviceMotion::RotationRate", "struct_az_framework_1_1_input_device_motion_1_1_rotation_rate.html", null ],
     [ "AzFramework::InputDeviceMouse::Button", "struct_az_framework_1_1_input_device_mouse_1_1_button.html", null ],
     [ "AzFramework::InputDeviceMouse::Implementation", "class_az_framework_1_1_input_device_mouse_1_1_implementation.html", [
+      [ "AzFramework::InputDeviceMouseWindows", "class_az_framework_1_1_input_device_mouse_windows.html", null ],
       [ "AzFramework::XcbInputDeviceMouse", "class_az_framework_1_1_xcb_input_device_mouse.html", null ]
     ] ],
+    [ "AzFramework::InputDeviceMouse::ImplementationFactory", "class_az_framework_1_1_input_device_mouse_1_1_implementation_factory.html", null ],
     [ "AzFramework::InputDeviceMouse::Movement", "struct_az_framework_1_1_input_device_mouse_1_1_movement.html", null ],
     [ "AzFramework::InputDeviceTouch::Implementation", "class_az_framework_1_1_input_device_touch_1_1_implementation.html", null ],
+    [ "AzFramework::InputDeviceTouch::ImplementationFactory", "class_az_framework_1_1_input_device_touch_1_1_implementation_factory.html", null ],
     [ "AzFramework::InputDeviceTouch::Touch", "struct_az_framework_1_1_input_device_touch_1_1_touch.html", null ],
     [ "AzFramework::InputDeviceVirtualKeyboard::Command", "struct_az_framework_1_1_input_device_virtual_keyboard_1_1_command.html", null ],
     [ "AzFramework::InputDeviceVirtualKeyboard::Implementation", "class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html", null ],
+    [ "AzFramework::InputDeviceVirtualKeyboard::ImplementationFactory", "class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation_factory.html", null ],
     [ "AzFramework::InputMapping::ConfigBase", "class_az_framework_1_1_input_mapping_1_1_config_base.html", [
       [ "AzFramework::InputMappingAnd::Config", "class_az_framework_1_1_input_mapping_and_1_1_config.html", null ],
       [ "AzFramework::InputMappingOr::Config", "class_az_framework_1_1_input_mapping_or_1_1_config.html", null ]
@@ -635,6 +660,7 @@ var hierarchy =
     ] ],
     [ "AzFramework::IVisibilityScene::NodeData", "struct_az_framework_1_1_i_visibility_scene_1_1_node_data.html", null ],
     [ "AzFramework::IVisibilitySystem", "class_az_framework_1_1_i_visibility_system.html", null ],
+    [ "AzFramework::LibEVDevWrapper", "struct_az_framework_1_1_lib_e_v_dev_wrapper.html", null ],
     [ "AzFramework::LinearlyInterpolatedSample< T >", "class_az_framework_1_1_linearly_interpolated_sample.html", null ],
     [ "AzFramework::ListEntitiesOptionalArgs", "struct_az_framework_1_1_list_entities_optional_args.html", null ],
     [ "AzFramework::LoadBarrierOptionalArgs", "struct_az_framework_1_1_load_barrier_optional_args.html", null ],
@@ -643,8 +669,10 @@ var hierarchy =
     [ "AzFramework::MotionEvent< MotionTag >", "struct_az_framework_1_1_motion_event.html", null ],
     [ "AzFramework::MultiViewportControllerInstanceInterface< TController >", "class_az_framework_1_1_multi_viewport_controller_instance_interface.html", null ],
     [ "AzFramework::NativeWindow::Implementation", "class_az_framework_1_1_native_window_1_1_implementation.html", [
+      [ "AzFramework::NativeWindowImpl_Win32", "class_az_framework_1_1_native_window_impl___win32.html", null ],
       [ "AzFramework::XcbNativeWindow", "class_az_framework_1_1_xcb_native_window.html", null ]
     ] ],
+    [ "AzFramework::NativeWindow::ImplementationFactory", "class_az_framework_1_1_native_window_1_1_implementation_factory.html", null ],
     [ "AzFramework::OctreeDebug", "struct_az_framework_1_1_octree_debug.html", null ],
     [ "AzFramework::PaintBrush", "class_az_framework_1_1_paint_brush.html", null ],
     [ "AzFramework::PaintBrushSessionBus::Handler", null, [
@@ -678,6 +706,14 @@ var hierarchy =
     [ "AzFramework::RetrieveTicketOptionalArgs", "struct_az_framework_1_1_retrieve_ticket_optional_args.html", null ],
     [ "AzFramework::RootSpawnableDefinition", "class_az_framework_1_1_root_spawnable_definition.html", null ],
     [ "AzFramework::Sample< Value >", "class_az_framework_1_1_sample.html", null ],
+    [ "AzFramework::Sample< AZ::Quaternion >", "class_az_framework_1_1_sample.html", [
+      [ "AzFramework::LinearlyInterpolatedSample< AZ::Quaternion >", "class_az_framework_1_1_linearly_interpolated_sample_3_01_a_z_1_1_quaternion_01_4.html", null ],
+      [ "AzFramework::UninterpolatedSample< AZ::Quaternion >", "class_az_framework_1_1_uninterpolated_sample_3_01_a_z_1_1_quaternion_01_4.html", null ]
+    ] ],
+    [ "AzFramework::Sample< AZ::Vector3 >", "class_az_framework_1_1_sample.html", [
+      [ "AzFramework::LinearlyInterpolatedSample< AZ::Vector3 >", "class_az_framework_1_1_linearly_interpolated_sample_3_01_a_z_1_1_vector3_01_4.html", null ],
+      [ "AzFramework::UninterpolatedSample< AZ::Vector3 >", "class_az_framework_1_1_uninterpolated_sample_3_01_a_z_1_1_vector3_01_4.html", null ]
+    ] ],
     [ "AzFramework::Scene", "class_az_framework_1_1_scene.html", null ],
     [ "AzFramework::ScreenPoint", "struct_az_framework_1_1_screen_point.html", null ],
     [ "AzFramework::ScreenSize", "struct_az_framework_1_1_screen_size.html", null ],
@@ -907,7 +943,8 @@ var hierarchy =
       [ "AzFramework::InputContextComponent", "class_az_framework_1_1_input_context_component.html", null ]
     ] ],
     [ "InputDeviceImplementationRequest::Bus::Handler", null, [
-      [ "AzFramework::InputDeviceImplementationRequestHandler< AzFramework::InputDeviceGamepad >", "class_az_framework_1_1_input_device_implementation_request_handler.html", null ]
+      [ "AzFramework::InputDeviceImplementationRequestHandler< AzFramework::InputDeviceGamepad >", "class_az_framework_1_1_input_device_implementation_request_handler.html", null ],
+      [ "AzFramework::InputDeviceImplementationRequestHandler< InputDeviceType >", "class_az_framework_1_1_input_device_implementation_request_handler.html", null ]
     ] ],
     [ "InputDeviceImplementationRequest::Bus::Handler", null, [
       [ "AzFramework::InputDeviceImplementationRequestHandler< AzFramework::InputDeviceKeyboard >", "class_az_framework_1_1_input_device_implementation_request_handler.html", null ]
@@ -923,9 +960,6 @@ var hierarchy =
     ] ],
     [ "InputDeviceImplementationRequest::Bus::Handler", null, [
       [ "AzFramework::InputDeviceImplementationRequestHandler< AzFramework::InputDeviceVirtualKeyboard >", "class_az_framework_1_1_input_device_implementation_request_handler.html", null ]
-    ] ],
-    [ "InputDeviceImplementationRequest::Bus::Handler", null, [
-      [ "AzFramework::InputDeviceImplementationRequestHandler< InputDeviceType >", "class_az_framework_1_1_input_device_implementation_request_handler.html", null ]
     ] ],
     [ "InputDeviceRequestBus::Handler", null, [
       [ "AzFramework::InputDevice", "class_az_framework_1_1_input_device.html", null ]
@@ -967,7 +1001,6 @@ var hierarchy =
     [ "MissingAssetNotificationBus::Handler", null, [
       [ "AzFramework::MissingAssetLogger", "class_az_framework_1_1_missing_asset_logger.html", null ]
     ] ],
-    [ "Physics::AnimationConfiguration", "class_physics_1_1_animation_configuration.html", null ],
     [ "Physics::CharacterColliderConfiguration", "class_physics_1_1_character_collider_configuration.html", null ],
     [ "Physics::CharacterColliderNodeConfiguration", "class_physics_1_1_character_collider_node_configuration.html", null ],
     [ "Physics::CharacterPhysicsDebugDraw", "class_physics_1_1_character_physics_debug_draw.html", null ],
@@ -1008,19 +1041,16 @@ var hierarchy =
     [ "QueryFileTagsEventBus::Handler", null, [
       [ "AzFramework::FileTag::FileTagQueryManager", "class_az_framework_1_1_file_tag_1_1_file_tag_query_manager.html", null ]
     ] ],
+    [ "RawInputNotificationBusWindows::Handler", null, [
+      [ "AzFramework::InputDeviceGamepadWindows", "class_az_framework_1_1_input_device_gamepad_windows.html", null ],
+      [ "AzFramework::InputDeviceKeyboardWindows", "class_az_framework_1_1_input_device_keyboard_windows.html", null ],
+      [ "AzFramework::InputDeviceMouseWindows", "class_az_framework_1_1_input_device_mouse_windows.html", null ]
+    ] ],
     [ "RootSpawnableInterface::Registrar", null, [
       [ "AzFramework::SpawnableSystemComponent", "class_az_framework_1_1_spawnable_system_component.html", null ]
     ] ],
     [ "RootSpawnableNotificationBus::Handler", null, [
       [ "AzFramework::SpawnableSystemComponent", "class_az_framework_1_1_spawnable_system_component.html", null ]
-    ] ],
-    [ "AzFramework::Sample< AZ::Quaternion >", "class_az_framework_1_1_sample.html", [
-      [ "AzFramework::LinearlyInterpolatedSample< AZ::Quaternion >", "class_az_framework_1_1_linearly_interpolated_sample_3_01_a_z_1_1_quaternion_01_4.html", null ],
-      [ "AzFramework::UninterpolatedSample< AZ::Quaternion >", "class_az_framework_1_1_uninterpolated_sample_3_01_a_z_1_1_quaternion_01_4.html", null ]
-    ] ],
-    [ "AzFramework::Sample< AZ::Vector3 >", "class_az_framework_1_1_sample.html", [
-      [ "AzFramework::LinearlyInterpolatedSample< AZ::Vector3 >", "class_az_framework_1_1_linearly_interpolated_sample_3_01_a_z_1_1_vector3_01_4.html", null ],
-      [ "AzFramework::UninterpolatedSample< AZ::Vector3 >", "class_az_framework_1_1_uninterpolated_sample_3_01_a_z_1_1_vector3_01_4.html", null ]
     ] ],
     [ "SceneSystemInterface::Registrar", null, [
       [ "AzFramework::SceneSystemComponent", "class_az_framework_1_1_scene_system_component.html", null ]
@@ -1054,6 +1084,9 @@ var hierarchy =
     ] ],
     [ "WindowRequestBus::Handler", null, [
       [ "AzFramework::NativeWindow", "class_az_framework_1_1_native_window.html", null ]
+    ] ],
+    [ "WindowsLifecycleEvents::Bus::Handler", null, [
+      [ "AzFramework::ApplicationWindows", "class_az_framework_1_1_application_windows.html", null ]
     ] ],
     [ "XcbEventHandlerBus::Handler", null, [
       [ "AzFramework::XcbInputDeviceKeyboard", "class_az_framework_1_1_xcb_input_device_keyboard.html", null ],

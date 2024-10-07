@@ -1,15 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"struct_multiplayer_1_1_session_config.html":[2,0,1,119],
-"struct_multiplayer_1_1_session_config.html#a3b6a5db2c9978cb3a62d7fbdc53f2e78":[2,0,1,119,13],
-"struct_multiplayer_1_1_session_config.html#a4c3ef0bda2ff7b26e3335c5730a34e05":[2,0,1,119,0],
-"struct_multiplayer_1_1_session_config.html#a5311e729a6377ee3b72883dd93bf71ef":[2,0,1,119,4],
-"struct_multiplayer_1_1_session_config.html#a5a58dd9277b14206610ea26c73d050a9":[2,0,1,119,1],
-"struct_multiplayer_1_1_session_config.html#a61419b6147804af07c55a45ab3460f6a":[2,0,1,119,9],
-"struct_multiplayer_1_1_session_config.html#a8b853a60cb7151a4592538a1952f00b8":[2,0,1,119,2],
-"struct_multiplayer_1_1_session_config.html#a8ccc652dc97044e27b847dccfbb40040":[2,0,1,119,12],
-"struct_multiplayer_1_1_session_config.html#a925351f29a20e2fa07bbe9b36538c8e0":[2,0,1,119,6],
-"struct_multiplayer_1_1_session_config.html#a9d5324d4b845e2a3e03e5151f86c878c":[2,0,1,119,5],
 "struct_multiplayer_1_1_session_config.html#aa0c842fb40314ce8a4d6a1eb8400dde9":[2,0,1,119,10],
 "struct_multiplayer_1_1_session_config.html#ac61b0b06959a4f1b2d5d012d0169436c":[2,0,1,119,11],
 "struct_multiplayer_1_1_session_config.html#acf9e70ea06b2ff8ca46afed558a44d53":[2,0,1,119,3],

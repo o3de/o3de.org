@@ -20,6 +20,7 @@ var struct_a_z_1_1_render_1_1_directional_light_component_config =
     [ "m_isShadowmapFrustumSplitAutomatic", "struct_a_z_1_1_render_1_1_directional_light_component_config.html#a82c9a4854b05389467a1dda0fc03e90f", null ],
     [ "m_receiverPlaneBiasEnabled", "struct_a_z_1_1_render_1_1_directional_light_component_config.html#a3818e0d584fa48c2a5e4999ccc765869", null ],
     [ "m_shadowBias", "struct_a_z_1_1_render_1_1_directional_light_component_config.html#a13f8598dd472f996f5735de8c20d51e2", null ],
+    [ "m_shadowEnabled", "struct_a_z_1_1_render_1_1_directional_light_component_config.html#aa0b4fe9c0ed0596173c24f91b9ecdc02", null ],
     [ "m_shadowFarClipDistance", "struct_a_z_1_1_render_1_1_directional_light_component_config.html#a2a676d4ec50a1a17483eb7704d762c1b", null ],
     [ "m_shadowFilterMethod", "struct_a_z_1_1_render_1_1_directional_light_component_config.html#a20b85a6ff3bba8ca8429d6934394ab25", null ],
     [ "m_shadowmapFrustumSplitSchemeRatio", "struct_a_z_1_1_render_1_1_directional_light_component_config.html#ab072d7db13c2a99bba77705839421fb6", null ],

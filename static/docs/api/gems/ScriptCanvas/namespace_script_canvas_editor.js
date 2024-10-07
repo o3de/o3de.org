@@ -73,7 +73,6 @@ var namespace_script_canvas_editor =
     [ "EditorScriptCanvasComponent", "class_script_canvas_editor_1_1_editor_script_canvas_component.html", null ],
     [ "EditorScriptCanvasComponentLogging", "class_script_canvas_editor_1_1_editor_script_canvas_component_logging.html", null ],
     [ "EditorScriptCanvasComponentRequests", "class_script_canvas_editor_1_1_editor_script_canvas_component_requests.html", null ],
-    [ "EditorScriptCanvasRequests", "class_script_canvas_editor_1_1_editor_script_canvas_requests.html", "class_script_canvas_editor_1_1_editor_script_canvas_requests" ],
     [ "EndpointSelectionAction", "class_script_canvas_editor_1_1_endpoint_selection_action.html", null ],
     [ "EntityMimeDataHandler", "class_script_canvas_editor_1_1_entity_mime_data_handler.html", null ],
     [ "EntityPivotTreeEntityItem", "class_script_canvas_editor_1_1_entity_pivot_tree_entity_item.html", null ],

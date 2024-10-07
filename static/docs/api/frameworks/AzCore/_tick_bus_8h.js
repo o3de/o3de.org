@@ -4,7 +4,7 @@ var _tick_bus_8h =
     [ "AZ::TickEvents::BusHandlerOrderCompare", "struct_a_z_1_1_tick_events_1_1_bus_handler_order_compare.html", null ],
     [ "AZ::TickRequests", "class_a_z_1_1_tick_requests.html", "class_a_z_1_1_tick_requests" ],
     [ "AZ::SystemTickEvents", "class_a_z_1_1_system_tick_events.html", "class_a_z_1_1_system_tick_events" ],
-    [ "SystemTickBus", "_tick_bus_8h.html#ae026317ae0435b26c00cc6fb8c032302", null ],
+    [ "SystemTickBus", "_tick_bus_8h.html#a6334d7834235a5258cf59978bd0188da", null ],
     [ "TickBus", "_tick_bus_8h.html#a7d1883808b1ab3654f7a93e177d5bf50", null ],
     [ "TickRequestBus", "_tick_bus_8h.html#a4a978153f97e869c8113177818434aa7", null ],
     [ "ComponentTickBus", "_tick_bus_8h.html#a62ef7e159c578958b5ac0b9c819b3fa9", [

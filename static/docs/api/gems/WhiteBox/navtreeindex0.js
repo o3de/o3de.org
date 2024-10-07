@@ -28,7 +28,7 @@ var NAVTREEINDEX0 =
 "class_white_box_1_1_buffer.html#ace34fbe33c770b02d841e07146f8196a":[0,0,0,14,5],
 "class_white_box_1_1_buffer.html#adf7eb2f6ca35f2972d2365398744218f":[0,0,0,14,4],
 "class_white_box_1_1_default_mode.html":[0,0,0,15],
-"class_white_box_1_1_default_mode.html#aea73d895307d900267e8ae2d461061c1":[0,0,0,15,0],
+"class_white_box_1_1_default_mode.html#a765f6a263369f98e0b6ff16ba8c2b6fb":[0,0,0,15,0],
 "class_white_box_1_1_edge_restore_mode.html":[0,0,0,20],
 "class_white_box_1_1_edge_scale_modifier.html":[0,0,0,21],
 "class_white_box_1_1_edge_translation_modifier.html":[0,0,0,22],

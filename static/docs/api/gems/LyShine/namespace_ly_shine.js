@@ -7,6 +7,7 @@ var namespace_ly_shine =
     [ "LyShineFeatureProcessor", "class_ly_shine_1_1_ly_shine_feature_processor.html", null ],
     [ "LyShineModule", "class_ly_shine_1_1_ly_shine_module.html", "class_ly_shine_1_1_ly_shine_module" ],
     [ "LyShinePass", "class_ly_shine_1_1_ly_shine_pass.html", null ],
+    [ "LyShinePoolAllocator", "class_ly_shine_1_1_ly_shine_pool_allocator.html", null ],
     [ "LyShineRequests", "class_ly_shine_1_1_ly_shine_requests.html", null ],
     [ "LyShineSystemComponent", "class_ly_shine_1_1_ly_shine_system_component.html", null ],
     [ "MaskRenderNode", "class_ly_shine_1_1_mask_render_node.html", "class_ly_shine_1_1_mask_render_node" ],

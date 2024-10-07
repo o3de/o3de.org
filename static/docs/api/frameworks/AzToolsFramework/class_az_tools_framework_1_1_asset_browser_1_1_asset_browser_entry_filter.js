@@ -1,11 +1,13 @@
 var class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter =
 [
-    [ "PropagateDirection", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#ab4c16923d471b9dd42161beb72856c35", [
-      [ "None", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#ab4c16923d471b9dd42161beb72856c35a452f2571da44031c07b27bf3ccb82d79", null ],
-      [ "Up", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#ab4c16923d471b9dd42161beb72856c35ab1f46b8ada01fa0f86ec39e0fb9c3458", null ],
-      [ "Down", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#ab4c16923d471b9dd42161beb72856c35a78e71ef5977f7feabb29d2d178086ff8", null ]
+    [ "PropagateDirection", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a77ff40762770cc480236f1487c2bc2a5", [
+      [ "None", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a77ff40762770cc480236f1487c2bc2a5a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Up", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a77ff40762770cc480236f1487c2bc2a5a258f49887ef8d14ac268c92b02503aaa", null ],
+      [ "Down", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a77ff40762770cc480236f1487c2bc2a5a08a38277b0309070706f6652eeae9a53", null ],
+      [ "Both", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a77ff40762770cc480236f1487c2bc2a5a130c5b3473c57faa76e2a1c54e26f88e", null ]
     ] ],
-    [ "Filter", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a7f1f1539c260c5a4ecc3d74ba20e9b90", null ],
+    [ "Clone", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#ad639ebe4a1d29a16c5cba5f9e9acfd60", null ],
+    [ "Filter", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a673e33c26a12a7afdf89f74bcfe9970b", null ],
     [ "GetName", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#afc758105a3c9f6862770dbd3f6dfd8e8", null ],
     [ "GetTag", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a3178a34251b3454cc430b88e4efcbdab", null ],
     [ "Match", "class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry_filter.html#a4db4cd16df86f9121f3f5d0f66b9289b", null ],

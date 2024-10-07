@@ -15,7 +15,7 @@ var class_a_z_1_1_slice_component_1_1_slice_reference =
     [ "GetInstances", "class_a_z_1_1_slice_component_1_1_slice_reference.html#a37543cacd435d83cc512e9da1d2dcf8f", null ],
     [ "GetSliceAsset", "class_a_z_1_1_slice_component_1_1_slice_reference.html#a2cec2056cedc561a366fac09f1563458", null ],
     [ "GetSliceComponent", "class_a_z_1_1_slice_component_1_1_slice_reference.html#a58dfd30a0c0dd2525f8da12e44726bcb", null ],
-    [ "Instantiate", "class_a_z_1_1_slice_component_1_1_slice_reference.html#a4bdf36a040eb76bd00fd8b0a3e25fc67", null ],
+    [ "Instantiate", "class_a_z_1_1_slice_component_1_1_slice_reference.html#ab54d70bfa7b416590974474c3f29d0a9", null ],
     [ "IsInstantiated", "class_a_z_1_1_slice_component_1_1_slice_reference.html#aa3ab48c64c5f801ef6e0d8dce9b242bb", null ],
     [ "PrepareCreateInstance", "class_a_z_1_1_slice_component_1_1_slice_reference.html#a1ec925eeeb07c40c6a838ff1b4558241", null ],
     [ "RemoveEntity", "class_a_z_1_1_slice_component_1_1_slice_reference.html#aee6ce91c4554e19f76d6e0d7b0bed4b2", null ],

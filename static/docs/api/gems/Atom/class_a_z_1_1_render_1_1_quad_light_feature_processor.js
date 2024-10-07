@@ -10,6 +10,7 @@ var class_a_z_1_1_render_1_1_quad_light_feature_processor =
     [ "SetAffectsGIFactor", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a2748bc308996a57cddea270bac0c8b06", null ],
     [ "SetAttenuationRadius", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a3099c63a42e4f9c80db2ada2ee80460e", null ],
     [ "SetLightEmitsBothDirections", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#ab3923f54826ebf6ae7865679d28c2d01", null ],
+    [ "SetLightingChannelMask", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a85a3447be176416b408c0abd1e198106", null ],
     [ "SetOrientation", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#abc40966c60889df308fd914272adcb49", null ],
     [ "SetPosition", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#a68b1884446390371fa5932cd303e151c", null ],
     [ "SetQuadData", "class_a_z_1_1_render_1_1_quad_light_feature_processor.html#ad0e6e875836d8c7ecc662aef2ff08d05", null ],

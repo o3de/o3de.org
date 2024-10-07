@@ -17,6 +17,8 @@ var class_a_z_1_1_component_application =
     [ "GetRequiredSystemComponents", "class_a_z_1_1_component_application.html#a7bb590b77868c9983af842963c2d5df3", null ],
     [ "GetSerializeContext", "class_a_z_1_1_component_application.html#aac7721c3df1aa785d07a07b207ae0e7f", null ],
     [ "GetTickDeltaTime", "class_a_z_1_1_component_application.html#a843431dc0dd48090da3a931d10293214", null ],
+    [ "InitializeAllocatorSettings", "class_a_z_1_1_component_application.html#a10bca389da7a3f9248ff910512d827be", null ],
+    [ "InitializeSettingsRegistry", "class_a_z_1_1_component_application.html#a89fe98cac31f701fcb28f470278ab163", null ],
     [ "LoadDynamicModules", "class_a_z_1_1_component_application.html#a8667e8b23af980350870aee021fda86c", null ],
     [ "LoadModules", "class_a_z_1_1_component_application.html#a7d24e7b2c0036626e5cea61faf8923b8", null ],
     [ "LoadStaticModules", "class_a_z_1_1_component_application.html#ac37dda7a38985a1617cedcc1fe4a538d", null ],

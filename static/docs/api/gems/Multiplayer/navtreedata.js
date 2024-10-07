@@ -37,7 +37,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ]
   ] ]
@@ -48,7 +48,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "class_multiplayer_1_1_multiplayer_connection_viewport_message_system_component.html",
 "class_multiplayer_1_1_network_hierarchy_requests.html#afb206f845d84967ee4e5409e8b1e1582",
-"struct_multiplayer_1_1_session_config.html"
+"struct_multiplayer_1_1_session_config.html#aa0c842fb40314ce8a4d6a1eb8400dde9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

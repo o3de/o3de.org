@@ -12,6 +12,7 @@ var class_a_z_1_1_render_1_1_capsule_light_feature_processor =
     [ "SetCapsuleData", "class_a_z_1_1_render_1_1_capsule_light_feature_processor.html#a6266b67c1de74574fd9a4f02b32f40e1", null ],
     [ "SetCapsuleLineSegment", "class_a_z_1_1_render_1_1_capsule_light_feature_processor.html#a49f62598a9b922ef2938d26986395a33", null ],
     [ "SetCapsuleRadius", "class_a_z_1_1_render_1_1_capsule_light_feature_processor.html#a3d11c900f665cf0fa2d1c3024c8c79dd", null ],
+    [ "SetLightingChannelMask", "class_a_z_1_1_render_1_1_capsule_light_feature_processor.html#a3f37fea497ca383c40109ed98cb32736", null ],
     [ "SetRgbIntensity", "class_a_z_1_1_render_1_1_capsule_light_feature_processor.html#aecae9cc9539926498466871fba0b6b1d", null ],
     [ "Simulate", "class_a_z_1_1_render_1_1_capsule_light_feature_processor.html#ab640ad45ff3d3460351354f7e3ec85a1", null ]
 ];

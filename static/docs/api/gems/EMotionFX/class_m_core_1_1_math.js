@@ -2,7 +2,7 @@ var class_m_core_1_1_math =
 [
     [ "Abs", "class_m_core_1_1_math.html#a7fdfe95592895ab6e9de74f5f0b12006", null ],
     [ "ACos", "class_m_core_1_1_math.html#acfad51c320621716c6506f53353901c0", null ],
-    [ "Align", "class_m_core_1_1_math.html#a1abb963c9fa78e383b56b4863a865b43", null ],
+    [ "Align", "class_m_core_1_1_math.html#aaed72703396c014dbd07277ff6022020", null ],
     [ "ASin", "class_m_core_1_1_math.html#aefce8207c59b3a94807c9de78553130e", null ],
     [ "ATan", "class_m_core_1_1_math.html#a5c7614d890fdc925828ea3c58daceea0", null ],
     [ "ATan2", "class_m_core_1_1_math.html#aa3ecd607bd0bcbc6ddefc75809b8cb71", null ],

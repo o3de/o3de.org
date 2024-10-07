@@ -233,7 +233,6 @@ var hierarchy =
       [ "ScriptCanvasEditor::EditorNodeNotifications", "class_script_canvas_editor_1_1_editor_node_notifications.html", null ],
       [ "ScriptCanvasEditor::EditorSceneVariableManagerRequests", "class_script_canvas_editor_1_1_editor_scene_variable_manager_requests.html", null ],
       [ "ScriptCanvasEditor::EditorScriptCanvasComponentRequests", "class_script_canvas_editor_1_1_editor_script_canvas_component_requests.html", null ],
-      [ "ScriptCanvasEditor::EditorScriptCanvasRequests", "class_script_canvas_editor_1_1_editor_script_canvas_requests.html", null ],
       [ "ScriptCanvasEditor::GeneralAssetNotifications", "class_script_canvas_editor_1_1_general_asset_notifications.html", null ],
       [ "ScriptCanvasEditor::GeneralEditorNotifications", "class_script_canvas_editor_1_1_general_editor_notifications.html", null ],
       [ "ScriptCanvasEditor::GeneralGraphEvents", "class_script_canvas_editor_1_1_general_graph_events.html", null ],
@@ -288,6 +287,7 @@ var hierarchy =
     [ "AZ::Serialize::InstanceFactory< T, U, A >", "struct_a_z_1_1_serialize_1_1_instance_factory.html", null ],
     [ "AZ::SystemTickBus::Handler", null, [
       [ "ScriptCanvas::Debugger::ClientTransceiver", "class_script_canvas_1_1_debugger_1_1_client_transceiver.html", null ],
+      [ "ScriptCanvas::Debugger::ServiceComponent", "class_script_canvas_1_1_debugger_1_1_service_component.html", null ],
       [ "ScriptCanvas::Execution::PerformanceStatistician", "class_script_canvas_1_1_execution_1_1_performance_statistician.html", null ],
       [ "ScriptCanvas::Nodeables::Time::BaseTimer", "class_script_canvas_1_1_nodeables_1_1_time_1_1_base_timer.html", [
         [ "ScriptCanvas::Nodeables::Core::RepeaterNodeable", "class_script_canvas_1_1_nodeables_1_1_core_1_1_repeater_nodeable.html", null ],
@@ -656,7 +656,11 @@ var hierarchy =
       [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", [
         [ "ScriptCanvasEditor::ScriptCanvasComboBoxPropertyDataInterface< DataType >", "class_script_canvas_editor_1_1_script_canvas_combo_box_property_data_interface.html", null ]
       ] ],
-      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, int >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ]
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, int >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", [
+        [ "ScriptCanvasEditor::ScriptCanvasComboBoxPropertyDataInterface< int >", "class_script_canvas_editor_1_1_script_canvas_combo_box_property_data_interface.html", [
+          [ "ScriptCanvasEditor::ScriptCanvasEnumComboBoxPropertyDataInterface", "class_script_canvas_editor_1_1_script_canvas_enum_combo_box_property_data_interface.html", null ]
+        ] ]
+      ] ]
     ] ],
     [ "GraphCanvas::ComponentSaveData", null, [
       [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent::EBusHandlerNodeDescriptorSaveData", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component_1_1_e_bus_handler_node_descriptor_save_data.html", null ],
@@ -886,7 +890,6 @@ var hierarchy =
     [ "GraphRequestBus::Handler", null, [
       [ "ScriptCanvas::Graph", "class_script_canvas_1_1_graph.html", null ]
     ] ],
-    [ "ScriptCanvas::GraphScopedIdentifier< VariableId >", "class_script_canvas_1_1_graph_scoped_identifier.html", null ],
     [ "GraphValidatorDockWidgetNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::MainWindowStatusWidget", "class_script_canvas_editor_1_1_main_window_status_widget.html", null ]
     ] ],
@@ -898,11 +901,7 @@ var hierarchy =
     ] ],
     [ "InterfaceType", null, [
       [ "ScriptCanvasEditor::ScriptCanvasDataInterface< InterfaceType >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
-      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< InterfaceType, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", [
-        [ "ScriptCanvasEditor::ScriptCanvasComboBoxPropertyDataInterface< int >", "class_script_canvas_editor_1_1_script_canvas_combo_box_property_data_interface.html", [
-          [ "ScriptCanvasEditor::ScriptCanvasEnumComboBoxPropertyDataInterface", "class_script_canvas_editor_1_1_script_canvas_enum_combo_box_property_data_interface.html", null ]
-        ] ]
-      ] ]
+      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< InterfaceType, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ]
     ] ],
     [ "LogBus::Handler", null, [
       [ "ScriptCanvasEditor::VersionExplorer::Log", "class_script_canvas_editor_1_1_version_explorer_1_1_log.html", null ]
@@ -926,11 +925,6 @@ var hierarchy =
     ] ],
     [ "ModificationNotificationsBus::Handler", null, [
       [ "ScriptCanvasEditor::VersionExplorer::Modifier", "class_script_canvas_editor_1_1_version_explorer_1_1_modifier.html", null ]
-    ] ],
-    [ "ScriptCanvas::Internal::MultipleOutputHelper< t_Func, function, t_Traits, 1 >", null, [
-      [ "ScriptCanvas::Internal::MultipleOutputInvokeHelper< t_Func, function, t_Traits, AZStd::decay_t< AZStd::function_traits_get_result_t< t_Func > > >", null, [
-        [ "ScriptCanvas::MultipleOutputInvoker< t_Func, function, t_Traits >", "struct_script_canvas_1_1_multiple_output_invoker.html", null ]
-      ] ]
     ] ],
     [ "NodeCreationNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::EditorGraph", "class_script_canvas_editor_1_1_editor_graph.html", null ]
@@ -1042,7 +1036,6 @@ var hierarchy =
       [ "ScriptCanvas::RuntimeAssetDescription", "class_script_canvas_1_1_runtime_asset_description.html", null ],
       [ "ScriptCanvas::SubgraphInterfaceAssetDescription", "class_script_canvas_1_1_subgraph_interface_asset_description.html", null ]
     ] ],
-    [ "ScriptCanvas::AutoGenRegistryManager", "class_script_canvas_1_1_auto_gen_registry_manager.html", null ],
     [ "ScriptCanvas::BatchOperationNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
     ] ],
@@ -1076,6 +1069,18 @@ var hierarchy =
     [ "ScriptCanvas::Data::eTraits< eType >", "struct_script_canvas_1_1_data_1_1e_traits.html", null ],
     [ "ScriptCanvas::Data::eTraits< eType::BehaviorContextObject >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_behavior_context_object_01_4.html", null ],
     [ "ScriptCanvas::Data::GetterWrapper", "struct_script_canvas_1_1_data_1_1_getter_wrapper.html", null ],
+    [ "ScriptCanvas::Data::Internal::WrapGetterHelper< FunctionType, AZStd::decay_t< AZStd::function_traits_get_arg_t< FunctionType, 0 > > >", null, [
+      [ "ScriptCanvas::Data::WrapGetter< FunctionType, AZStd::enable_if_t<!AZStd::is_member_pointer< FunctionType >::value &&AZStd::function_traits< FunctionType >::arity==1 > >", "struct_script_canvas_1_1_data_1_1_wrap_getter_3_01_function_type_00_01_a_z_std_1_1enable__if__t_19dbb84783bf479f832407ea8b2d72b3.html", null ]
+    ] ],
+    [ "ScriptCanvas::Data::Internal::WrapGetterHelper< FunctionType, AZStd::function_traits< FunctionType >::class_type >", null, [
+      [ "ScriptCanvas::Data::WrapGetter< FunctionType, AZStd::enable_if_t< AZStd::is_member_pointer< FunctionType >::value > >", "struct_script_canvas_1_1_data_1_1_wrap_getter_3_01_function_type_00_01_a_z_std_1_1enable__if__t_ff97ad3a0e4a7585f364607746699174.html", null ]
+    ] ],
+    [ "ScriptCanvas::Data::Internal::WrapSetterHelper< FunctionType, AZStd::function_traits< FunctionType >::class_type, AZStd::function_traits_get_arg_t< FunctionType, 0 > >", null, [
+      [ "ScriptCanvas::Data::WrapSetter< FunctionType, AZStd::enable_if_t< AZStd::is_member_function_pointer< FunctionType >::value &&AZStd::function_traits< FunctionType >::arity==1 > >", "struct_script_canvas_1_1_data_1_1_wrap_setter_3_01_function_type_00_01_a_z_std_1_1enable__if__t_f76bc430c6ad32ac8df1e289c672b11b.html", null ]
+    ] ],
+    [ "ScriptCanvas::Data::Internal::WrapSetterHelper< FunctionType, AZStd::function_traits_get_arg_t< FunctionType, 0 >, AZStd::function_traits_get_arg_t< FunctionType, 1 > >", null, [
+      [ "ScriptCanvas::Data::WrapSetter< FunctionType, AZStd::enable_if_t<!AZStd::is_member_function_pointer< FunctionType >::value &&AZStd::function_traits< FunctionType >::arity==2 > >", "struct_script_canvas_1_1_data_1_1_wrap_setter_3_01_function_type_00_01_a_z_std_1_1enable__if__t_795d095c297634cdb6c2bfef13cc9c1c.html", null ]
+    ] ],
     [ "ScriptCanvas::Data::Properties::TypeErasedPropertyTraits", "struct_script_canvas_1_1_data_1_1_properties_1_1_type_erased_property_traits.html", null ],
     [ "ScriptCanvas::Data::PropertyMetadata", "struct_script_canvas_1_1_data_1_1_property_metadata.html", null ],
     [ "ScriptCanvas::Data::PropertyTraits< eType >", "struct_script_canvas_1_1_data_1_1_property_traits.html", null ],
@@ -1094,6 +1099,108 @@ var hierarchy =
     [ "ScriptCanvas::Data::SetterWrapper", "struct_script_canvas_1_1_data_1_1_setter_wrapper.html", null ],
     [ "ScriptCanvas::Data::TraitsBase< t_Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
       [ "ScriptCanvas::Data::Traits< t_Type >", "struct_script_canvas_1_1_data_1_1_traits.html", null ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< AABBType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< AABBType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_a_a_b_b_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::AABB >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_a_a_b_b_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< AssetIdType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< AssetIdType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_asset_id_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::AssetId >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_asset_id_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< BooleanType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< BooleanType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_boolean_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Boolean >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_boolean_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< ColorType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< ColorType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_color_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Color >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_color_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< CRCType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< CRCType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_c_r_c_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::CRC >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_c_r_c_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< EntityIDType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< EntityIDType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_entity_i_d_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::EntityID >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_entity_i_d_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< Matrix3x3Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< Matrix3x3Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_matrix3x3_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Matrix3x3 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_matrix3x3_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< Matrix4x4Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< Matrix4x4Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_matrix4x4_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Matrix4x4 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_matrix4x4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< MatrixMxNType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< MatrixMxNType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_matrix_mx_n_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::MatrixMxN >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_matrix_mx_n_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< NamedEntityIDType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< NamedEntityIDType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_named_entity_i_d_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::NamedEntityID >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_named_entity_i_d_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< NumberType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< NumberType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_number_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Number >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_number_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< OBBType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< OBBType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_o_b_b_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::OBB >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_o_b_b_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< PlaneType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< PlaneType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_plane_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Plane >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_plane_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< QuaternionType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< QuaternionType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_quaternion_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Quaternion >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_quaternion_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< StringType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< StringType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_string_type_01_4.html", [
+        [ "ScriptCanvas::Data::Traits< AZStd::string_view >", "struct_script_canvas_1_1_data_1_1_traits_3_01_a_z_std_1_1string__view_01_4.html", null ],
+        [ "ScriptCanvas::Data::Traits< const char * >", "struct_script_canvas_1_1_data_1_1_traits_3_01const_01char_01_5_01_4.html", null ],
+        [ "ScriptCanvas::Data::eTraits< eType::String >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_string_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< TransformType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< TransformType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_transform_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Transform >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_transform_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< Vector2Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< Vector2Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_vector2_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Vector2 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_vector2_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< Vector3Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< Vector3Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_vector3_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Vector3 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_vector3_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< Vector4Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< Vector4Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_vector4_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::Vector4 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_vector4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "ScriptCanvas::Data::TraitsBase< VectorNType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
+      [ "ScriptCanvas::Data::Traits< VectorNType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_vector_n_type_01_4.html", [
+        [ "ScriptCanvas::Data::eTraits< eType::VectorN >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_vector_n_01_4.html", null ]
+      ] ]
     ] ],
     [ "ScriptCanvas::Data::Type", "class_script_canvas_1_1_data_1_1_type.html", null ],
     [ "ScriptCanvas::Data::TypeErasedDataTraits", "struct_script_canvas_1_1_data_1_1_type_erased_data_traits.html", null ],
@@ -1257,6 +1364,7 @@ var hierarchy =
       [ "ScriptCanvasEditor::NodelingDescriptorComponent", "class_script_canvas_editor_1_1_nodeling_descriptor_component.html", null ]
     ] ],
     [ "ScriptCanvas::GraphScopedIdentifier< T >", "class_script_canvas_1_1_graph_scoped_identifier.html", null ],
+    [ "ScriptCanvas::GraphScopedIdentifier< VariableId >", "class_script_canvas_1_1_graph_scoped_identifier.html", null ],
     [ "ScriptCanvas::GraphUpdateReport", "struct_script_canvas_1_1_graph_update_report.html", null ],
     [ "ScriptCanvas::GraphVariable::Comparator", "class_script_canvas_1_1_graph_variable_1_1_comparator.html", null ],
     [ "ScriptCanvas::GraphVariableManagerNotificationBus::Handler", null, [
@@ -1284,6 +1392,11 @@ var hierarchy =
       [ "ScriptCanvas::InvalidVariableTypeEvent", "class_script_canvas_1_1_invalid_variable_type_event.html", null ]
     ] ],
     [ "ScriptCanvas::InputSignalTag", "struct_script_canvas_1_1_input_signal_tag.html", null ],
+    [ "ScriptCanvas::Internal::MultipleOutputHelper< t_Func, function, t_Traits, 1 >", null, [
+      [ "ScriptCanvas::Internal::MultipleOutputInvokeHelper< t_Func, function, t_Traits, AZStd::decay_t< AZStd::function_traits_get_result_t< t_Func > > >", null, [
+        [ "ScriptCanvas::MultipleOutputInvoker< t_Func, function, t_Traits >", "struct_script_canvas_1_1_multiple_output_invoker.html", null ]
+      ] ]
+    ] ],
     [ "ScriptCanvas::Library::LibraryDefinition", "struct_script_canvas_1_1_library_1_1_library_definition.html", null ],
     [ "ScriptCanvas::LoggableEvent", "struct_script_canvas_1_1_loggable_event.html", [
       [ "ScriptCanvas::TaggedDataValue< VariableChangeTag >", "struct_script_canvas_1_1_tagged_data_value.html", null ],
@@ -1355,10 +1468,11 @@ var hierarchy =
       [ "ScriptCanvasEditor::Widget::PropertyGrid", "class_script_canvas_editor_1_1_widget_1_1_property_grid.html", null ]
     ] ],
     [ "ScriptCanvas::NodePropertyInterface", "class_script_canvas_1_1_node_property_interface.html", [
-      [ "ScriptCanvas::TypedNodePropertyInterface< int >", "class_script_canvas_1_1_typed_node_property_interface.html", null ],
+      [ "ScriptCanvas::TypedNodePropertyInterface< int >", "class_script_canvas_1_1_typed_node_property_interface.html", [
+        [ "ScriptCanvas::TypedComboBoxNodePropertyInterface< int >", "class_script_canvas_1_1_typed_combo_box_node_property_interface.html", null ]
+      ] ],
       [ "ScriptCanvas::TypedNodePropertyInterface< ScriptCanvas::Data::StringType >", "class_script_canvas_1_1_typed_node_property_interface.html", null ],
       [ "ScriptCanvas::TypedNodePropertyInterface< DataType >", "class_script_canvas_1_1_typed_node_property_interface.html", [
-        [ "ScriptCanvas::TypedComboBoxNodePropertyInterface< int >", "class_script_canvas_1_1_typed_combo_box_node_property_interface.html", null ],
         [ "ScriptCanvas::TypedComboBoxNodePropertyInterface< DataType >", "class_script_canvas_1_1_typed_combo_box_node_property_interface.html", null ]
       ] ]
     ] ],
@@ -1390,6 +1504,7 @@ var hierarchy =
     [ "ScriptCanvas::OverloadSelection", "struct_script_canvas_1_1_overload_selection.html", null ],
     [ "ScriptCanvas::RegistrarGeneric< t_Node >", "class_script_canvas_1_1_registrar_generic.html", null ],
     [ "ScriptCanvas::ReplicaNetworkProperties", "struct_script_canvas_1_1_replica_network_properties.html", null ],
+    [ "ScriptCanvas::ReturnSignalTag", "struct_script_canvas_1_1_return_signal_tag.html", null ],
     [ "ScriptCanvas::RuntimeComponentUserData", "struct_script_canvas_1_1_runtime_component_user_data.html", null ],
     [ "ScriptCanvas::RuntimeData", "struct_script_canvas_1_1_runtime_data.html", null ],
     [ "ScriptCanvas::RuntimeDataOverrides", "struct_script_canvas_1_1_runtime_data_overrides.html", null ],
@@ -1397,7 +1512,6 @@ var hierarchy =
     [ "ScriptCanvas::RuntimeVariable", "struct_script_canvas_1_1_runtime_variable.html", null ],
     [ "ScriptCanvas::ScopedAuxiliaryEntityHandler", "class_script_canvas_1_1_scoped_auxiliary_entity_handler.html", null ],
     [ "ScriptCanvas::ScopedBatchOperation", "class_script_canvas_1_1_scoped_batch_operation.html", null ],
-    [ "ScriptCanvas::ScriptCanvasRegistry", "class_script_canvas_1_1_script_canvas_registry.html", null ],
     [ "ScriptCanvas::ScriptCanvasSettingsRequestBus::Handler", null, [
       [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
     ] ],
@@ -1603,6 +1717,7 @@ var hierarchy =
     [ "ScriptCanvasExecutionBus::Handler", null, [
       [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
     ] ],
+    [ "ScriptCanvasModel", "class_script_canvas_model.html", null ],
     [ "ScriptEventReceiveNodeDescriptorNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::ScriptEventReceiverEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_event_node_descriptor_component.html", null ]
     ] ],
@@ -1636,108 +1751,6 @@ var hierarchy =
     ] ],
     [ "TraceSuppressionBus::Handler", null, [
       [ "ScriptCanvasEditor::TraceMessageComponent", "class_script_canvas_editor_1_1_trace_message_component.html", null ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< AABBType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< AABBType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_a_a_b_b_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::AABB >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_a_a_b_b_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< AssetIdType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< AssetIdType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_asset_id_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::AssetId >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_asset_id_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< BooleanType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< BooleanType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_boolean_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Boolean >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_boolean_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< ColorType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< ColorType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_color_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Color >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_color_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< CRCType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< CRCType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_c_r_c_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::CRC >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_c_r_c_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< EntityIDType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< EntityIDType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_entity_i_d_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::EntityID >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_entity_i_d_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< Matrix3x3Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< Matrix3x3Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_matrix3x3_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Matrix3x3 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_matrix3x3_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< Matrix4x4Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< Matrix4x4Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_matrix4x4_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Matrix4x4 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_matrix4x4_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< MatrixMxNType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< MatrixMxNType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_matrix_mx_n_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::MatrixMxN >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_matrix_mx_n_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< NamedEntityIDType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< NamedEntityIDType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_named_entity_i_d_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::NamedEntityID >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_named_entity_i_d_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< NumberType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< NumberType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_number_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Number >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_number_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< OBBType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< OBBType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_o_b_b_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::OBB >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_o_b_b_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< PlaneType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< PlaneType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_plane_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Plane >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_plane_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< QuaternionType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< QuaternionType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_quaternion_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Quaternion >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_quaternion_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< StringType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< StringType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_string_type_01_4.html", [
-        [ "ScriptCanvas::Data::Traits< AZStd::string_view >", "struct_script_canvas_1_1_data_1_1_traits_3_01_a_z_std_1_1string__view_01_4.html", null ],
-        [ "ScriptCanvas::Data::Traits< const char * >", "struct_script_canvas_1_1_data_1_1_traits_3_01const_01char_01_5_01_4.html", null ],
-        [ "ScriptCanvas::Data::eTraits< eType::String >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_string_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< TransformType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< TransformType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_transform_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Transform >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_transform_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< Vector2Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< Vector2Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_vector2_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Vector2 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_vector2_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< Vector3Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< Vector3Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_vector3_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Vector3 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_vector3_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< Vector4Type >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< Vector4Type >", "struct_script_canvas_1_1_data_1_1_traits_3_01_vector4_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::Vector4 >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_vector4_01_4.html", null ]
-      ] ]
-    ] ],
-    [ "ScriptCanvas::Data::TraitsBase< VectorNType >", "struct_script_canvas_1_1_data_1_1_traits_base.html", [
-      [ "ScriptCanvas::Data::Traits< VectorNType >", "struct_script_canvas_1_1_data_1_1_traits_3_01_vector_n_type_01_4.html", [
-        [ "ScriptCanvas::Data::eTraits< eType::VectorN >", "struct_script_canvas_1_1_data_1_1e_traits_3_01e_type_1_1_vector_n_01_4.html", null ]
-      ] ]
     ] ],
     [ "UIRequestBus::Handler", null, [
       [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
@@ -1781,17 +1794,5 @@ var hierarchy =
     ] ],
     [ "VariableRequestBus::MultiHandler", null, [
       [ "ScriptCanvas::GraphVariableManagerComponent", "class_script_canvas_1_1_graph_variable_manager_component.html", null ]
-    ] ],
-    [ "ScriptCanvas::Data::Internal::WrapGetterHelper< FunctionType, AZStd::decay_t< AZStd::function_traits_get_arg_t< FunctionType, 0 > > >", null, [
-      [ "ScriptCanvas::Data::WrapGetter< FunctionType, AZStd::enable_if_t<!AZStd::is_member_pointer< FunctionType >::value &&AZStd::function_traits< FunctionType >::arity==1 > >", "struct_script_canvas_1_1_data_1_1_wrap_getter_3_01_function_type_00_01_a_z_std_1_1enable__if__t_19dbb84783bf479f832407ea8b2d72b3.html", null ]
-    ] ],
-    [ "ScriptCanvas::Data::Internal::WrapGetterHelper< FunctionType, AZStd::function_traits< FunctionType >::class_type >", null, [
-      [ "ScriptCanvas::Data::WrapGetter< FunctionType, AZStd::enable_if_t< AZStd::is_member_pointer< FunctionType >::value > >", "struct_script_canvas_1_1_data_1_1_wrap_getter_3_01_function_type_00_01_a_z_std_1_1enable__if__t_ff97ad3a0e4a7585f364607746699174.html", null ]
-    ] ],
-    [ "ScriptCanvas::Data::Internal::WrapSetterHelper< FunctionType, AZStd::function_traits< FunctionType >::class_type, AZStd::function_traits_get_arg_t< FunctionType, 0 > >", null, [
-      [ "ScriptCanvas::Data::WrapSetter< FunctionType, AZStd::enable_if_t< AZStd::is_member_function_pointer< FunctionType >::value &&AZStd::function_traits< FunctionType >::arity==1 > >", "struct_script_canvas_1_1_data_1_1_wrap_setter_3_01_function_type_00_01_a_z_std_1_1enable__if__t_f76bc430c6ad32ac8df1e289c672b11b.html", null ]
-    ] ],
-    [ "ScriptCanvas::Data::Internal::WrapSetterHelper< FunctionType, AZStd::function_traits_get_arg_t< FunctionType, 0 >, AZStd::function_traits_get_arg_t< FunctionType, 1 > >", null, [
-      [ "ScriptCanvas::Data::WrapSetter< FunctionType, AZStd::enable_if_t<!AZStd::is_member_function_pointer< FunctionType >::value &&AZStd::function_traits< FunctionType >::arity==2 > >", "struct_script_canvas_1_1_data_1_1_wrap_setter_3_01_function_type_00_01_a_z_std_1_1enable__if__t_795d095c297634cdb6c2bfef13cc9c1c.html", null ]
     ] ]
 ];

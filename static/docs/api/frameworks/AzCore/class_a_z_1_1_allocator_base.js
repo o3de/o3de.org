@@ -1,7 +1,6 @@
 var class_a_z_1_1_allocator_base =
 [
     [ "DisableRegistration", "class_a_z_1_1_allocator_base.html#a9db7f2fedbda2663e5b12434ab5b09a1", null ],
-    [ "GetRecords", "class_a_z_1_1_allocator_base.html#a447393580c82163232499ea0e99a7524", null ],
     [ "GetRecords", "class_a_z_1_1_allocator_base.html#aec877716cebf3bb11f8738e2fb40e41d", null ],
     [ "IsProfilingActive", "class_a_z_1_1_allocator_base.html#a7c400ce989f21e09674ab4568f728097", null ],
     [ "IsReady", "class_a_z_1_1_allocator_base.html#a3b10cc083fcbbe17112c15604923dcb8", null ],

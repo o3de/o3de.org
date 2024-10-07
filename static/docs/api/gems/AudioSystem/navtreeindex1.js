@@ -1,8 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"struct_audio_1_1_system_request_1_1_draw_debug.html":[0,0,0,4,3],
-"struct_audio_1_1_system_request_1_1_get_focus.html":[0,0,0,4,4],
-"struct_audio_1_1_system_request_1_1_initialize.html":[0,0,0,4,5],
 "struct_audio_1_1_system_request_1_1_load_bank.html":[0,0,0,4,6],
 "struct_audio_1_1_system_request_1_1_load_controls.html":[0,0,0,4,7],
 "struct_audio_1_1_system_request_1_1_lose_focus.html":[0,0,0,4,8],
@@ -16,7 +13,7 @@ var NAVTREEINDEX1 =
 "struct_audio_1_1_system_request_1_1_unload_banks_by_scope.html":[0,0,0,4,16],
 "struct_audio_1_1_system_request_1_1_unload_controls.html":[0,0,0,4,17],
 "struct_audio_1_1_system_request_1_1_unmute_all.html":[0,0,0,4,18],
-"struct_audio_1_1_trigger_notification_id_type.html":[0,0,0,86],
+"struct_audio_1_1_trigger_notification_id_type.html":[0,0,0,83],
 "struct_audio_controls_1_1_i_a_t_l_control_model_listener.html":[0,0,1,17],
 "struct_audio_controls_1_1_s_control_def.html":[0,0,1,27],
 "struct_audio_controls_1_1_s_control_def.html#a1dac65fc7c0bdd1921669e4f527461cc":[0,0,1,27,3],

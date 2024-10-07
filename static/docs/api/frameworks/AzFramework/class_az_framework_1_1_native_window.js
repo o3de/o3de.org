@@ -1,6 +1,7 @@
 var class_az_framework_1_1_native_window =
 [
     [ "Implementation", "class_az_framework_1_1_native_window_1_1_implementation.html", null ],
+    [ "ImplementationFactory", "class_az_framework_1_1_native_window_1_1_implementation_factory.html", null ],
     [ "NativeWindow", "class_az_framework_1_1_native_window.html#a9b05f97200f0ae5b68b6d8143856c7c0", null ],
     [ "Activate", "class_az_framework_1_1_native_window.html#a265010d3eb09170ad1b0f355f1a7401c", null ],
     [ "CanToggleFullScreenStateOfDefaultWindow", "class_az_framework_1_1_native_window.html#ac035fe57e61c5324a66343ada74f7def", null ],

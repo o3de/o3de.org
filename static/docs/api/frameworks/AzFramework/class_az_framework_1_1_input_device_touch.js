@@ -1,10 +1,10 @@
 var class_az_framework_1_1_input_device_touch =
 [
     [ "Implementation", "class_az_framework_1_1_input_device_touch_1_1_implementation.html", "class_az_framework_1_1_input_device_touch_1_1_implementation" ],
+    [ "ImplementationFactory", "class_az_framework_1_1_input_device_touch_1_1_implementation_factory.html", null ],
     [ "Touch", "struct_az_framework_1_1_input_device_touch_1_1_touch.html", "struct_az_framework_1_1_input_device_touch_1_1_touch" ],
-    [ "ImplementationFactory", "class_az_framework_1_1_input_device_touch.html#a4c7e9b3daafadeb1c7f6cc75bb0008df", null ],
     [ "TouchChannelByIdMap", "class_az_framework_1_1_input_device_touch.html#ad591f60e247c636e708c6cd385574d0d", null ],
-    [ "InputDeviceTouch", "class_az_framework_1_1_input_device_touch.html#a14ab8889aa5b6bd12cf540aa2b1aa71b", null ],
+    [ "InputDeviceTouch", "class_az_framework_1_1_input_device_touch.html#a7510782c87a2831029ef7b549572e836", null ],
     [ "~InputDeviceTouch", "class_az_framework_1_1_input_device_touch.html#a58c08be9b02ca776134275aaf3a1980d", null ],
     [ "GetAssignedLocalUserId", "class_az_framework_1_1_input_device_touch.html#a226b1ab5a64ea46a77305a8450262773", null ],
     [ "GetInputChannelsById", "class_az_framework_1_1_input_device_touch.html#a8cbb578057257d327ef283daa5243709", null ],

@@ -6,6 +6,7 @@ var class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface =
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html#a571513b2de1986f86aa23be71bc73c46", null ],
     [ "SetAffectsGIFactor", "class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html#a29442e368a1b462002f185d6e2b7bcc5", null ],
     [ "SetAttenuationRadius", "class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html#ab963a4f0cc0d76afba6241aa4d2bab85", null ],
+    [ "SetLightingChannelMask", "class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html#a5a76cdefc8212adfe3e6d44d45858845", null ],
     [ "SetPosition", "class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html#a76d198f601b571a88517df35df34327f", null ],
     [ "SetRgbIntensity", "class_a_z_1_1_render_1_1_simple_point_light_feature_processor_interface.html#ac2268e5ce4198232349ff8a6cf614350", null ]
 ];

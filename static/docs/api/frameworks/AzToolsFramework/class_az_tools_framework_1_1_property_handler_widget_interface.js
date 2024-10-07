@@ -5,7 +5,7 @@ var class_az_tools_framework_1_1_property_handler_widget_interface =
     [ "GetLastInTabOrder", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a96627af80fb0b9cfb7c8f1825c136d57", null ],
     [ "GetWidget", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a174e1bd0e10db903c638658dc48edbff", null ],
     [ "IsDefaultHandler", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a473278dba9ed608ba745db166319a74a", null ],
-    [ "PrepareWidgetForReuse", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a37ce717fca64ddfc045a3570b1644069", null ],
+    [ "ResetToDefaults", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a971f0ee42dd1584800ece0fdcbdc8fe8", null ],
     [ "SetValueFromDom", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a4b927a9124d67c9d9ebf76fda893329f", null ],
     [ "ShouldHandleType", "class_az_tools_framework_1_1_property_handler_widget_interface.html#a0ce42acfb1ce1f762279b1846faabd42", null ]
 ];

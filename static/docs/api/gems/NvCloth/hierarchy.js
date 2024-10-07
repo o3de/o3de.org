@@ -6,9 +6,7 @@ var hierarchy =
       [ "NvCloth::SystemComponent", "class_nv_cloth_1_1_system_component.html", null ]
     ] ],
     [ "AZ::Interface::Registrar", null, [
-      [ "NvCloth::FabricCooker", "class_nv_cloth_1_1_fabric_cooker.html", null ]
-    ] ],
-    [ "AZ::Interface::Registrar", null, [
+      [ "NvCloth::FabricCooker", "class_nv_cloth_1_1_fabric_cooker.html", null ],
       [ "NvCloth::TangentSpaceHelper", "class_nv_cloth_1_1_tangent_space_helper.html", null ]
     ] ],
     [ "AZ::Render::MeshComponentNotificationBus::Handler", null, [
@@ -27,9 +25,6 @@ var hierarchy =
     [ "AZ::SceneAPI::SceneCore::BehaviorComponent", null, [
       [ "NvCloth::Pipeline::ClothRuleBehavior", "class_nv_cloth_1_1_pipeline_1_1_cloth_rule_behavior.html", null ]
     ] ],
-    [ "AZ::SystemAllocator", null, [
-      [ "NvCloth::AzClothAllocator", "class_nv_cloth_1_1_az_cloth_allocator.html", null ]
-    ] ],
     [ "AZ::TickBus::Handler", null, [
       [ "NvCloth::ClothComponentMesh", "class_nv_cloth_1_1_cloth_component_mesh.html", null ],
       [ "NvCloth::SystemComponent", "class_nv_cloth_1_1_system_component.html", null ]
@@ -47,8 +42,6 @@ var hierarchy =
     [ "AzToolsFramework::PropertyHandler", null, [
       [ "NvCloth::Editor::MeshNodeHandler", "class_nv_cloth_1_1_editor_1_1_mesh_node_handler.html", null ]
     ] ],
-    [ "NvCloth::GenericId< struct ClothIdTag >", "class_nv_cloth_1_1_generic_id.html", null ],
-    [ "NvCloth::GenericId< struct FabricIdTag >", "class_nv_cloth_1_1_generic_id.html", null ],
     [ "NvCloth::ActorClothColliders", "class_nv_cloth_1_1_actor_cloth_colliders.html", null ],
     [ "NvCloth::ActorClothSkinning", "class_nv_cloth_1_1_actor_cloth_skinning.html", null ],
     [ "NvCloth::ActorClothSkinning::NonSimulatedVertex", "struct_nv_cloth_1_1_actor_cloth_skinning_1_1_non_simulated_vertex.html", null ],
@@ -67,6 +60,8 @@ var hierarchy =
     [ "NvCloth::FabricCookedData", "struct_nv_cloth_1_1_fabric_cooked_data.html", null ],
     [ "NvCloth::Factory", "class_nv_cloth_1_1_factory.html", null ],
     [ "NvCloth::GenericId< Tag >", "class_nv_cloth_1_1_generic_id.html", null ],
+    [ "NvCloth::GenericId< struct ClothIdTag >", "class_nv_cloth_1_1_generic_id.html", null ],
+    [ "NvCloth::GenericId< struct FabricIdTag >", "class_nv_cloth_1_1_generic_id.html", null ],
     [ "NvCloth::ICloth", "class_nv_cloth_1_1_i_cloth.html", [
       [ "NvCloth::Cloth", "class_nv_cloth_1_1_cloth.html", null ]
     ] ],

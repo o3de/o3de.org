@@ -2,9 +2,9 @@ var class_az_framework_1_1_input_device_virtual_keyboard =
 [
     [ "Command", "struct_az_framework_1_1_input_device_virtual_keyboard_1_1_command.html", "struct_az_framework_1_1_input_device_virtual_keyboard_1_1_command" ],
     [ "Implementation", "class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html", "class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation" ],
+    [ "ImplementationFactory", "class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation_factory.html", null ],
     [ "CommandChannelByIdMap", "class_az_framework_1_1_input_device_virtual_keyboard.html#afbc5829ba00ac4a7b8e87f7010cc087d", null ],
-    [ "ImplementationFactory", "class_az_framework_1_1_input_device_virtual_keyboard.html#a2af14791323d2bf47ed3fb1d9ca9884d", null ],
-    [ "InputDeviceVirtualKeyboard", "class_az_framework_1_1_input_device_virtual_keyboard.html#acb2346af1319ce05a255cd8fcac49482", null ],
+    [ "InputDeviceVirtualKeyboard", "class_az_framework_1_1_input_device_virtual_keyboard.html#a09c18e9ee8244e094f6d684dd021c3b7", null ],
     [ "~InputDeviceVirtualKeyboard", "class_az_framework_1_1_input_device_virtual_keyboard.html#a4b865f1a4eb7abeb6e43b913862cec37", null ],
     [ "GetInputChannelsById", "class_az_framework_1_1_input_device_virtual_keyboard.html#a3f20babb4ee5b7761f65eb4995634909", null ],
     [ "HasTextEntryStarted", "class_az_framework_1_1_input_device_virtual_keyboard.html#a09db3dbce3df68f053d3e384337c3428", null ],

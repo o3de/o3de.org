@@ -162,6 +162,7 @@ var hierarchy =
       [ "UiTextInputInterface", "class_ui_text_input_interface.html", null ],
       [ "UiTextInputNotifications", "class_ui_text_input_notifications.html", null ],
       [ "UiTextInterface", "class_ui_text_interface.html", null ],
+      [ "UiTextNotifications", "class_ui_text_notifications.html", null ],
       [ "UiTooltipDataPopulatorInterface", "class_ui_tooltip_data_populator_interface.html", null ],
       [ "UiTooltipDisplayInterface", "class_ui_tooltip_display_interface.html", null ],
       [ "UiTooltipDisplayNotifications", "class_ui_tooltip_display_notifications.html", null ],
@@ -210,6 +211,9 @@ var hierarchy =
       [ "UiCanvasComponent", "class_ui_canvas_component.html", null ],
       [ "UiElementComponent", "class_ui_element_component.html", null ]
     ] ],
+    [ "AZ::PoolAllocator", null, [
+      [ "LyShine::LyShinePoolAllocator", "class_ly_shine_1_1_ly_shine_pool_allocator.html", null ]
+    ] ],
     [ "AZ::Render::Bootstrap::NotificationBus::Handler", null, [
       [ "CDraw2d", "class_c_draw2d.html", null ],
       [ "CLyShine", "class_c_ly_shine.html", null ],
@@ -235,7 +239,8 @@ var hierarchy =
     ] ],
     [ "AZ::TickBus::Handler", null, [
       [ "CLyShine", "class_c_ly_shine.html", null ],
-      [ "UiDropdownComponent", "class_ui_dropdown_component.html", null ]
+      [ "UiDropdownComponent", "class_ui_dropdown_component.html", null ],
+      [ "UiScrollBoxComponent", "class_ui_scroll_box_component.html", null ]
     ] ],
     [ "AzFramework::AssetCatalogEventBus::Handler", null, [
       [ "UiCanvasManager", "class_ui_canvas_manager.html", null ],
@@ -632,7 +637,6 @@ var hierarchy =
       [ "CSprite", "class_c_sprite.html", null ],
       [ "UiTextComponent", "class_ui_text_component.html", null ]
     ] ],
-    [ "UiSpline::TSpline< SplineKeyEx< T >, spline::BezierBasis >", "class_ui_spline_1_1_t_spline.html", null ],
     [ "UiAnimateEntityBus::Handler", null, [
       [ "UiFaderComponent", "class_ui_fader_component.html", null ],
       [ "UiImageComponent", "class_ui_image_component.html", null ],
@@ -1028,6 +1032,7 @@ var hierarchy =
     [ "UiSpline::TSpline< KeyType, BasisType >", "class_ui_spline_1_1_t_spline.html", [
       [ "UiSpline::BezierSpline< T, Key >", "class_ui_spline_1_1_bezier_spline.html", null ]
     ] ],
+    [ "UiSpline::TSpline< SplineKeyEx< T >, spline::BezierBasis >", "class_ui_spline_1_1_t_spline.html", null ],
     [ "UiSpriteSettingsChangeNotificationBus::Handler", null, [
       [ "UiImageComponent", "class_ui_image_component.html", null ]
     ] ],
