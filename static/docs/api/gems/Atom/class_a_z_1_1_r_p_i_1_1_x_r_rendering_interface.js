@@ -1,6 +1,10 @@
 var class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface =
 [
+    [ "XRRenderingInterface", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a8b7c026a732ce0ed1b77f7873eb86af5", null ],
+    [ "~XRRenderingInterface", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a22b5088e9726721ec675c7f9c549efde", null ],
     [ "AcquireSwapChainImage", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#aff352a80f669b3415c7edf70c379b057", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a7ea032cdc98d1117bb1c2f170c66ca34", null ],
+    [ "AZ_RTTI", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a471d9fb98d160a8a588a9ec754bc86cb", null ],
     [ "CreateStereoscopicProjection", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a6a5b90606bd8d5928ff60ac0c6b21579", null ],
     [ "GetAButtonState", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#acbe7d417b7bdd1379916655abab09290", null ],
     [ "GetBButtonState", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#af3d849b00ad5c4c88f2bb885c71d0533", null ],
@@ -9,7 +13,7 @@ var class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface =
     [ "GetControllerStagePose", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a3ddfad19b8c77bba3405234a3124e1aa", null ],
     [ "GetControllerTransform", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a977cf9583b59074e42a153139ea56715", null ],
     [ "GetNumViews", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#ac6abb17f6b95755451d2c4918ca16c88", null ],
-    [ "GetRHIXRRenderingInterface", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a0b04d4ec217f223247e354bf9c899e57", null ],
+    [ "GetRHIXRRenderingInterface", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a3b463d120d069d1dabce03973042f8a7", null ],
     [ "GetSqueezeState", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a22c13e53f6ecd2ede5ca023f8d767f7d", null ],
     [ "GetSwapChainFormat", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a8a6c69ee37852aa28427f67edd64607d", null ],
     [ "GetSwapChainHeight", "class_a_z_1_1_r_p_i_1_1_x_r_rendering_interface.html#a297af04a8a4528ceb7aac546e73a3acb", null ],

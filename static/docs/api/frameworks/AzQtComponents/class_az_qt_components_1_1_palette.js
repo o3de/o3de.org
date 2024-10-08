@@ -1,15 +1,31 @@
 var class_az_qt_components_1_1_palette =
 [
+    [ "Palette", "class_az_qt_components_1_1_palette.html#ab8a410e38664666d3e1709d24077a940", null ],
+    [ "Palette", "class_az_qt_components_1_1_palette.html#ac6bb032b7bcfdd40d241e468cf3c35fd", null ],
+    [ "Palette", "class_az_qt_components_1_1_palette.html#a70d69cb6ee4bed8c56be4e09656e8c42", null ],
+    [ "Palette", "class_az_qt_components_1_1_palette.html#ab22eea25718934246a5d3b5a21f91cff", null ],
+    [ "colors", "class_az_qt_components_1_1_palette.html#ad548393f269d4afb22b1c3ea3485ae6a", null ],
     [ "containsAnyColor", "class_az_qt_components_1_1_palette.html#a9864bcb05e61adafe40a165ee271122c", null ],
     [ "containsAnyColor", "class_az_qt_components_1_1_palette.html#a3d9bc0209396ca3f3575ec509a17ff79", null ],
     [ "containsColor", "class_az_qt_components_1_1_palette.html#af78d38c7a9248c2dffe7aa59f79b0f79", null ],
     [ "insertColorsIgnoringDuplicates", "class_az_qt_components_1_1_palette.html#ad50dbfa319eaa156f664ac54930e54f2", null ],
     [ "isValid", "class_az_qt_components_1_1_palette.html#a9ba9775dc06475bb4e5a36862f6ff40c", null ],
+    [ "load", "class_az_qt_components_1_1_palette.html#af3a14ae974412e710163ac8e1516ab8a", null ],
+    [ "load", "class_az_qt_components_1_1_palette.html#a9fcdfa6b01e46d81d27d84c50850d229", null ],
+    [ "load", "class_az_qt_components_1_1_palette.html#a0270f7963e0bceb76544bde1b0bb39d6", null ],
+    [ "operator=", "class_az_qt_components_1_1_palette.html#a24f8631a8d83a24a6e58925173187d27", null ],
+    [ "save", "class_az_qt_components_1_1_palette.html#adc499a31b970cdde0b9362a88b9a0af5", null ],
+    [ "save", "class_az_qt_components_1_1_palette.html#a05ca4ad9535c15e3e384f5a616de642c", null ],
+    [ "save", "class_az_qt_components_1_1_palette.html#ab678fcc1eaa53e12250d36d6dba3cbb8", null ],
     [ "tryAppendColor", "class_az_qt_components_1_1_palette.html#abf4ee26d5ea46a5738aa5164857741c7", null ],
     [ "tryAppendColors", "class_az_qt_components_1_1_palette.html#ac62c3723ead51e8ea3dfcab06b44d671", null ],
     [ "tryAppendColors", "class_az_qt_components_1_1_palette.html#a351b8b9dd36f305d3edde86e4c787525", null ],
     [ "tryInsertColor", "class_az_qt_components_1_1_palette.html#a76a184de0898a707f126b9cd6fffc3b7", null ],
     [ "tryInsertColors", "class_az_qt_components_1_1_palette.html#ada9c34fd3be4f5a7c262fe48cffd73ae", null ],
     [ "tryInsertColors", "class_az_qt_components_1_1_palette.html#acb5661148f21729f6389e81d3b17df6d", null ],
-    [ "tryRemoveColors", "class_az_qt_components_1_1_palette.html#a115189ef479905cc406194ec9e2b2437", null ]
+    [ "tryRemoveColors", "class_az_qt_components_1_1_palette.html#a115189ef479905cc406194ec9e2b2437", null ],
+    [ "trySetColor", "class_az_qt_components_1_1_palette.html#a748ca502c83870a8702c130c2e7e097f", null ],
+    [ "operator<<", "class_az_qt_components_1_1_palette.html#ae7f9155fe3e4703034cb07dea496b6ea", null ],
+    [ "operator>>", "class_az_qt_components_1_1_palette.html#a04d9157d8c83c0cba278ec6c84c9912b", null ],
+    [ "PaletteModel", "class_az_qt_components_1_1_palette.html#ade0f7b66ec40df556b57124fd4acee7b", null ]
 ];

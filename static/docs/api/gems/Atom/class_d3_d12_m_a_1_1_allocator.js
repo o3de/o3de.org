@@ -9,10 +9,14 @@ var class_d3_d12_m_a_1_1_allocator =
     [ "CreateResource", "class_d3_d12_m_a_1_1_allocator.html#aa37d6b9fe8ea0864f7a35b9d68e8345a", null ],
     [ "FreeStatsString", "class_d3_d12_m_a_1_1_allocator.html#a8392663494384c16d8bfa12b827b4f9c", null ],
     [ "GetBudget", "class_d3_d12_m_a_1_1_allocator.html#a1ac113daec5f6ef28ecb1786cf544144", null ],
-    [ "GetD3D12Options", "class_d3_d12_m_a_1_1_allocator.html#ae276d2358a58a36f8c6639f837f29be5", null ],
+    [ "GetD3D12Options", "class_d3_d12_m_a_1_1_allocator.html#a8ce95f85e5f2a1d41b81d676b21c04ae", null ],
     [ "GetMemoryCapacity", "class_d3_d12_m_a_1_1_allocator.html#a434ae3147209953253da26687bfd62dc", null ],
     [ "IsCacheCoherentUMA", "class_d3_d12_m_a_1_1_allocator.html#a08210561b92c4bd7ede9dd7beba4bb80", null ],
     [ "IsUMA", "class_d3_d12_m_a_1_1_allocator.html#a9e742884bd45dd7f01193d13fcd05af0", null ],
+    [ "ReleaseThis", "class_d3_d12_m_a_1_1_allocator.html#a192c4b875809b2ee290a111cf6a65274", null ],
     [ "SetCurrentFrameIndex", "class_d3_d12_m_a_1_1_allocator.html#a468ba0c93121eaaee402b08775f1dd11", null ],
-    [ "CreateAllocator", "class_d3_d12_m_a_1_1_allocator.html#a6e114ef3b4a791a3bf2e3109a3971559", null ]
+    [ "CreateAllocator", "class_d3_d12_m_a_1_1_allocator.html#a458f044fdc81e4a0b147e99ffcf73459", null ],
+    [ "D3D12MA_DELETE", "class_d3_d12_m_a_1_1_allocator.html#a968f13f23d03e50cc50b87835b6d5a85", null ],
+    [ "DefragmentationContext", "class_d3_d12_m_a_1_1_allocator.html#ad6c67376cbcb356093df35717d783026", null ],
+    [ "Pool", "class_d3_d12_m_a_1_1_allocator.html#aaa45caad0db0173735281fcdf9aa5e8b", null ]
 ];

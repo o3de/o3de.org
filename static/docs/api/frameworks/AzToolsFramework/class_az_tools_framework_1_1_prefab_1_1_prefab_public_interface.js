@@ -1,5 +1,6 @@
 var class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface =
 [
+    [ "AZ_RTTI", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a28b681df52f8999a9d37e8748a708ecb", null ],
     [ "CreateEntity", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#ae905468dc2ae176e5762e9595ce5f74f", null ],
     [ "CreatePrefabAndSaveToDisk", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#addb5b11b37445dd8385f3a9076b3a3f9", null ],
     [ "CreatePrefabInDisk", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a6cca2d6a8cbaad2c33a9f8134fe43856", null ],

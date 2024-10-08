@@ -1,7 +1,8 @@
 var class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item =
 [
-    [ "GetArguments", "class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item.html#a5058746a585121357ef88b7968742773", null ],
-    [ "GetDeviceDispatchRaysItem", "class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item.html#a0a92946a117b55b44616854eba6adbf6", null ],
+    [ "MultiDeviceDispatchRaysItem", "class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item.html#aed6c4b634d0a60ee7b8783b5658cf3a3", null ],
+    [ "GetArguments", "class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item.html#ae5ea0567e89de906b954a30211c93d62", null ],
+    [ "GetDeviceDispatchRaysItem", "class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item.html#a3402bdbaafbd9004503efd20d53346cd", null ],
     [ "SetArguments", "class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item.html#a517e72c9304058baf00b5f9f886c3190", null ],
     [ "SetPipelineState", "class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item.html#adf0c78f0a29d5b7144a938a3a24eb71a", null ],
     [ "SetRayTracingPipelineState", "class_a_z_1_1_r_h_i_1_1_multi_device_dispatch_rays_item.html#abefbe37472c5ba21b2ae122416ebf4d4", null ],

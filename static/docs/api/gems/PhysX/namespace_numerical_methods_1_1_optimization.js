@@ -1,8 +1,8 @@
 var namespace_numerical_methods_1_1_optimization =
 [
-    [ "Function", "class_numerical_methods_1_1_optimization_1_1_function.html", "class_numerical_methods_1_1_optimization_1_1_function" ],
-    [ "LineSearchResult", "struct_numerical_methods_1_1_optimization_1_1_line_search_result.html", null ],
     [ "SolverResult", "struct_numerical_methods_1_1_optimization_1_1_solver_result.html", "struct_numerical_methods_1_1_optimization_1_1_solver_result" ],
+    [ "Function", "class_numerical_methods_1_1_optimization_1_1_function.html", "class_numerical_methods_1_1_optimization_1_1_function" ],
+    [ "LineSearchResult", "struct_numerical_methods_1_1_optimization_1_1_line_search_result.html", "struct_numerical_methods_1_1_optimization_1_1_line_search_result" ],
     [ "FunctionOutcome", "namespace_numerical_methods_1_1_optimization.html#af74a560c9f735689fd6a780ca34cc6de", [
       [ "InvalidInput", "namespace_numerical_methods_1_1_optimization.html#af74a560c9f735689fd6a780ca34cc6dead8f78ca9a692a9411afbc7584b69d043", null ]
     ] ],
@@ -29,5 +29,11 @@ var namespace_numerical_methods_1_1_optimization =
     [ "QuadraticMinimum", "namespace_numerical_methods_1_1_optimization.html#a9e06bf7df3b37550b69d16468bc69603", null ],
     [ "SelectStepSizeFromInterval", "namespace_numerical_methods_1_1_optimization.html#ac073834b334086fb0b955b19c1a2e7ee", null ],
     [ "SolverBFGS", "namespace_numerical_methods_1_1_optimization.html#a671c919132c5a0776e13dd3791620f9a", null ],
-    [ "ValidateStepSize", "namespace_numerical_methods_1_1_optimization.html#a4f6b44b215e317cb2fa4f90c9aa513b0", null ]
+    [ "ValidateStepSize", "namespace_numerical_methods_1_1_optimization.html#a4f6b44b215e317cb2fa4f90c9aa513b0", null ],
+    [ "epsilon", "namespace_numerical_methods_1_1_optimization.html#a7c736f58d9356ec8f34706322cfa0532", null ],
+    [ "gradientTolerance", "namespace_numerical_methods_1_1_optimization.html#ae8698f309fdf642598f61ae3d2096ca0", null ],
+    [ "lineSearchIterations", "namespace_numerical_methods_1_1_optimization.html#a8edc5493eed65668edaa3c54af90c1df", null ],
+    [ "solverIterations", "namespace_numerical_methods_1_1_optimization.html#a3d5b3a6e8da12e0d0a403cc40695203b", null ],
+    [ "WolfeConditionsC1", "namespace_numerical_methods_1_1_optimization.html#a08ccf3cc04e762a19f0791323808d2e4", null ],
+    [ "WolfeConditionsC2", "namespace_numerical_methods_1_1_optimization.html#a6e1e55ea6195e1649a586990e22e8240", null ]
 ];

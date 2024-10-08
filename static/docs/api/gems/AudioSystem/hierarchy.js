@@ -53,27 +53,6 @@ var hierarchy =
     ] ],
     [ "Audio::CATLDebugNameStore", "class_audio_1_1_c_a_t_l_debug_name_store.html", null ],
     [ "Audio::CATLEntity< IDType >", "class_audio_1_1_c_a_t_l_entity.html", null ],
-    [ "Audio::CATLEntity< TAudioControlID >", "class_audio_1_1_c_a_t_l_entity.html", [
-      [ "Audio::CATLRtpc", "class_audio_1_1_c_a_t_l_rtpc.html", null ],
-      [ "Audio::CATLSwitch", "class_audio_1_1_c_a_t_l_switch.html", null ],
-      [ "Audio::CATLTrigger", "class_audio_1_1_c_a_t_l_trigger.html", null ]
-    ] ],
-    [ "Audio::CATLEntity< TAudioEnvironmentID >", "class_audio_1_1_c_a_t_l_entity.html", [
-      [ "Audio::CATLAudioEnvironment", "class_audio_1_1_c_a_t_l_audio_environment.html", null ]
-    ] ],
-    [ "Audio::CATLEntity< TAudioEventID >", "class_audio_1_1_c_a_t_l_entity.html", [
-      [ "Audio::CATLEvent", "class_audio_1_1_c_a_t_l_event.html", null ]
-    ] ],
-    [ "Audio::CATLEntity< TAudioObjectID >", "class_audio_1_1_c_a_t_l_entity.html", [
-      [ "Audio::CATLAudioObjectBase", "class_audio_1_1_c_a_t_l_audio_object_base.html", [
-        [ "Audio::CATLAudioObject", "class_audio_1_1_c_a_t_l_audio_object.html", null ],
-        [ "Audio::CATLGlobalAudioObject", "class_audio_1_1_c_a_t_l_global_audio_object.html", null ]
-      ] ],
-      [ "Audio::CATLListenerObject", "class_audio_1_1_c_a_t_l_listener_object.html", null ]
-    ] ],
-    [ "Audio::CATLEntity< TAudioPreloadRequestID >", "class_audio_1_1_c_a_t_l_entity.html", [
-      [ "Audio::CATLPreloadRequest", "class_audio_1_1_c_a_t_l_preload_request.html", null ]
-    ] ],
     [ "Audio::CATLSwitchState", "class_audio_1_1_c_a_t_l_switch_state.html", null ],
     [ "Audio::CATLXmlProcessor", "class_audio_1_1_c_a_t_l_xml_processor.html", null ],
     [ "Audio::CAudioEventManager", "class_audio_1_1_c_audio_event_manager.html", null ],
@@ -81,11 +60,8 @@ var hierarchy =
     [ "Audio::CAudioObjectManager", "class_audio_1_1_c_audio_object_manager.html", null ],
     [ "Audio::CAudioThread", "class_audio_1_1_c_audio_thread.html", null ],
     [ "Audio::CInstanceManager< ObjType, IDType >", "class_audio_1_1_c_instance_manager.html", null ],
-    [ "Audio::CInstanceManager< Audio::CATLAudioObject, TAudioObjectID >", "class_audio_1_1_c_instance_manager.html", null ],
-    [ "Audio::CInstanceManager< Audio::CATLEvent, TAudioEventID >", "class_audio_1_1_c_instance_manager.html", null ],
     [ "Audio::CSmoothFloat", "class_audio_1_1_c_smooth_float.html", null ],
     [ "Audio::Flags< StoredType, typename >", "class_audio_1_1_flags.html", null ],
-    [ "Audio::Flags< TATLEnumFlagsType >", "class_audio_1_1_flags.html", null ],
     [ "Audio::Gem::SystemRequestBus::Handler", null, [
       [ "AudioSystemGem::AudioSystemGemSystemComponent", "class_audio_system_gem_1_1_audio_system_gem_system_component.html", null ]
     ] ],
@@ -190,6 +166,30 @@ var hierarchy =
     [ "AzToolsFramework::AudioControlSelectorRequestBus::MultiHandler", null, [
       [ "AudioControls::AudioControlSelectorHandler", "class_audio_controls_1_1_audio_control_selector_handler.html", null ]
     ] ],
+    [ "Audio::CATLEntity< TAudioControlID >", "class_audio_1_1_c_a_t_l_entity.html", [
+      [ "Audio::CATLRtpc", "class_audio_1_1_c_a_t_l_rtpc.html", null ],
+      [ "Audio::CATLSwitch", "class_audio_1_1_c_a_t_l_switch.html", null ],
+      [ "Audio::CATLTrigger", "class_audio_1_1_c_a_t_l_trigger.html", null ]
+    ] ],
+    [ "Audio::CATLEntity< TAudioEnvironmentID >", "class_audio_1_1_c_a_t_l_entity.html", [
+      [ "Audio::CATLAudioEnvironment", "class_audio_1_1_c_a_t_l_audio_environment.html", null ]
+    ] ],
+    [ "Audio::CATLEntity< TAudioEventID >", "class_audio_1_1_c_a_t_l_entity.html", [
+      [ "Audio::CATLEvent", "class_audio_1_1_c_a_t_l_event.html", null ]
+    ] ],
+    [ "Audio::CATLEntity< TAudioObjectID >", "class_audio_1_1_c_a_t_l_entity.html", [
+      [ "Audio::CATLAudioObjectBase", "class_audio_1_1_c_a_t_l_audio_object_base.html", [
+        [ "Audio::CATLAudioObject", "class_audio_1_1_c_a_t_l_audio_object.html", null ],
+        [ "Audio::CATLGlobalAudioObject", "class_audio_1_1_c_a_t_l_global_audio_object.html", null ]
+      ] ],
+      [ "Audio::CATLListenerObject", "class_audio_1_1_c_a_t_l_listener_object.html", null ]
+    ] ],
+    [ "Audio::CATLEntity< TAudioPreloadRequestID >", "class_audio_1_1_c_a_t_l_entity.html", [
+      [ "Audio::CATLPreloadRequest", "class_audio_1_1_c_a_t_l_preload_request.html", null ]
+    ] ],
+    [ "Audio::CInstanceManager< Audio::CATLAudioObject, TAudioObjectID >", "class_audio_1_1_c_instance_manager.html", null ],
+    [ "Audio::CInstanceManager< Audio::CATLEvent, TAudioEventID >", "class_audio_1_1_c_instance_manager.html", null ],
+    [ "Audio::Flags< TATLEnumFlagsType >", "class_audio_1_1_flags.html", null ],
     [ "IEditorNotifyListener", null, [
       [ "AudioControls::CAudioControlsEditorWindow", "class_audio_controls_1_1_c_audio_controls_editor_window.html", null ]
     ] ],

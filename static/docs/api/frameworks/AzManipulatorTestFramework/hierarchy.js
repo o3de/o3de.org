@@ -1,9 +1,9 @@
 var hierarchy =
 [
-    [ "AzManipulatorTestFramework::ActionDispatcher< DerivedDispatcherT >", "class_az_manipulator_test_framework_1_1_action_dispatcher.html", null ],
     [ "AzManipulatorTestFramework::ActionDispatcher< ImmediateModeActionDispatcher >", "class_az_manipulator_test_framework_1_1_action_dispatcher.html", [
       [ "AzManipulatorTestFramework::ImmediateModeActionDispatcher", "class_az_manipulator_test_framework_1_1_immediate_mode_action_dispatcher.html", null ]
     ] ],
+    [ "AzManipulatorTestFramework::ActionDispatcher< DerivedDispatcherT >", "class_az_manipulator_test_framework_1_1_action_dispatcher.html", null ],
     [ "AzManipulatorTestFramework::ManipulatorManagerInterface", "class_az_manipulator_test_framework_1_1_manipulator_manager_interface.html", null ],
     [ "AzManipulatorTestFramework::ManipulatorViewportInteraction", "class_az_manipulator_test_framework_1_1_manipulator_viewport_interaction.html", [
       [ "AzManipulatorTestFramework::DirectCallManipulatorViewportInteraction", "class_az_manipulator_test_framework_1_1_direct_call_manipulator_viewport_interaction.html", null ],

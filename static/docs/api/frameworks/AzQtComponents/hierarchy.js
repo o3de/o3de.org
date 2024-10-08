@@ -24,9 +24,6 @@ var hierarchy =
     [ "AzQtComponents::CheckBox", "class_az_qt_components_1_1_check_box.html", null ],
     [ "AzQtComponents::CheckBox::Config", "struct_az_qt_components_1_1_check_box_1_1_config.html", null ],
     [ "AzQtComponents::ColorHexEdit::ParsedColor", "struct_az_qt_components_1_1_color_hex_edit_1_1_parsed_color.html", null ],
-    [ "AzQtComponents::ColorPicker::ColorGridConfig", "struct_az_qt_components_1_1_color_picker_1_1_color_grid_config.html", null ],
-    [ "AzQtComponents::ColorPicker::Config", "struct_az_qt_components_1_1_color_picker_1_1_config.html", null ],
-    [ "AzQtComponents::ColorPicker::DialogButtonsConfig", "struct_az_qt_components_1_1_color_picker_1_1_dialog_buttons_config.html", null ],
     [ "AzQtComponents::ComboBox", "class_az_qt_components_1_1_combo_box.html", null ],
     [ "AzQtComponents::ComboBox::Config", "struct_az_qt_components_1_1_combo_box_1_1_config.html", null ],
     [ "AzQtComponents::ConfigHelpers::GroupGuard", "class_az_qt_components_1_1_config_helpers_1_1_group_guard.html", null ],
@@ -119,11 +116,7 @@ var hierarchy =
       [ "AzQtComponents::AzQtApplication", "class_az_qt_components_1_1_az_qt_application.html", null ]
     ] ],
     [ "QDialog", null, [
-      [ "AzQtComponents::StyledDialog", "class_az_qt_components_1_1_styled_dialog.html", [
-        [ "AzQtComponents::LogicalTabOrderingWidget< StyledDialog >", "class_az_qt_components_1_1_logical_tab_ordering_widget.html", [
-          [ "AzQtComponents::ColorPicker", "class_az_qt_components_1_1_color_picker.html", null ]
-        ] ]
-      ] ],
+      [ "AzQtComponents::StyledDialog", "class_az_qt_components_1_1_styled_dialog.html", null ],
       [ "AzQtComponents::ToastNotification", "class_az_qt_components_1_1_toast_notification.html", null ]
     ] ],
     [ "QDockWidget", null, [
@@ -162,8 +155,7 @@ var hierarchy =
       [ "AzQtComponents::SelectionProxyModel", "class_az_qt_components_1_1_selection_proxy_model.html", null ]
     ] ],
     [ "QLabel", null, [
-      [ "AzQtComponents::ElidingLabel", "class_az_qt_components_1_1_eliding_label.html", null ],
-      [ "AzQtComponents::ExtendedLabel", "class_az_qt_components_1_1_extended_label.html", null ]
+      [ "AzQtComponents::ElidingLabel", "class_az_qt_components_1_1_eliding_label.html", null ]
     ] ],
     [ "QLayout", null, [
       [ "FlowLayout", "class_flow_layout.html", null ]

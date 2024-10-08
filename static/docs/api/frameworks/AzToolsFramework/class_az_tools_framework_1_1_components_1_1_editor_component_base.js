@@ -8,7 +8,7 @@ var class_az_tools_framework_1_1_components_1_1_editor_component_base =
     [ "Deactivate", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a6bffcffe0fba83213a41476d61432e55", null ],
     [ "GetLocalTM", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a1ff3a6380fdc0f407e90deef79107cfc", null ],
     [ "GetSerializedIdentifier", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a2919c8c47a36e6d57c4af87f0dfa0780", null ],
-    [ "GetTransform", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a1f6f98836bd36350c85a182b7915c442", null ],
+    [ "GetTransform", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a8afa8f0ab017c8cbc0467415b6698d90", null ],
     [ "GetWorldTM", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#ae2a65c31fcf30ea5da616d8ebf3691df", null ],
     [ "Init", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a693b2c6426a04b255b5640899db80356", null ],
     [ "InvalidatePropertyDisplay", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a54e8a5bbea33b4a44b84be984bb4637a", null ],
@@ -17,5 +17,8 @@ var class_az_tools_framework_1_1_components_1_1_editor_component_base =
     [ "Reflect", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a663b83c55b0f573c41840c2e7a79aba4", null ],
     [ "SetDirty", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#afc361d74cc807f4374ea338378b20ed6", null ],
     [ "SetPrimaryAsset", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a84b9458691ab8798b47a16d9cda353e6", null ],
-    [ "SetSerializedIdentifier", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#adeb13c8ffb44c14a4bb6a8e4116d4897", null ]
+    [ "SetSerializedIdentifier", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#adeb13c8ffb44c14a4bb6a8e4116d4897", null ],
+    [ "EditorDisabledCompositionComponent", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a7ee206c9230d9d37cc4a6029e273f1ee", null ],
+    [ "EditorEntityActionComponent", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a8186dc8a08c3bc76d73f831704b9641c", null ],
+    [ "EditorPendingCompositionComponent", "class_az_tools_framework_1_1_components_1_1_editor_component_base.html#a39d164387019abcdde7aa146785187c0", null ]
 ];

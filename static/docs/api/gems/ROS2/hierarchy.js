@@ -10,17 +10,17 @@ var hierarchy =
       [ "ROS2::JsonFrameComponentConfigSerializer", "class_r_o_s2_1_1_json_frame_component_config_serializer.html", null ]
     ] ],
     [ "AZ::Component", null, [
+      [ "ROS2::ROS2SensorComponentBase< PhysicsBasedSource >", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html", [
+        [ "ROS2::ROS2ImuSensorComponent", "class_r_o_s2_1_1_r_o_s2_imu_sensor_component.html", null ],
+        [ "ROS2::ROS2OdometrySensorComponent", "class_r_o_s2_1_1_r_o_s2_odometry_sensor_component.html", null ],
+        [ "ROS2::ROS2WheelOdometryComponent", "class_r_o_s2_1_1_r_o_s2_wheel_odometry_component.html", null ]
+      ] ],
       [ "ROS2::ROS2SensorComponentBase< TickBasedSource >", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html", [
         [ "ROS2::ROS2CameraSensorComponent", "class_r_o_s2_1_1_r_o_s2_camera_sensor_component.html", null ],
         [ "ROS2::ROS2ContactSensorComponent", "class_r_o_s2_1_1_r_o_s2_contact_sensor_component.html", null ],
         [ "ROS2::ROS2GNSSSensorComponent", "class_r_o_s2_1_1_r_o_s2_g_n_s_s_sensor_component.html", null ],
         [ "ROS2::ROS2Lidar2DSensorComponent", "class_r_o_s2_1_1_r_o_s2_lidar2_d_sensor_component.html", null ],
         [ "ROS2::ROS2LidarSensorComponent", "class_r_o_s2_1_1_r_o_s2_lidar_sensor_component.html", null ]
-      ] ],
-      [ "ROS2::ROS2SensorComponentBase< PhysicsBasedSource >", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html", [
-        [ "ROS2::ROS2ImuSensorComponent", "class_r_o_s2_1_1_r_o_s2_imu_sensor_component.html", null ],
-        [ "ROS2::ROS2OdometrySensorComponent", "class_r_o_s2_1_1_r_o_s2_odometry_sensor_component.html", null ],
-        [ "ROS2::ROS2WheelOdometryComponent", "class_r_o_s2_1_1_r_o_s2_wheel_odometry_component.html", null ]
       ] ],
       [ "ROS2::AckermannControlComponent", "class_r_o_s2_1_1_ackermann_control_component.html", null ],
       [ "ROS2::FingerGripperComponent", "class_r_o_s2_1_1_finger_gripper_component.html", null ],
@@ -151,6 +151,7 @@ var hierarchy =
     [ "CameraPostProcessingRequestBus::Handler", null, [
       [ "ROS2::ROS2ImageEncodingConversionComponent", "class_r_o_s2_1_1_r_o_s2_image_encoding_conversion_component.html", null ]
     ] ],
+    [ "ROS2::EventSourceAdapter< ROS2::PhysicsBasedSource >", "class_r_o_s2_1_1_event_source_adapter.html", null ],
     [ "GeoReferenceLevelComponentBase", null, [
       [ "ROS2::GeoReferenceLevelComponent", "class_r_o_s2_1_1_geo_reference_level_component.html", null ]
     ] ],
@@ -169,6 +170,8 @@ var hierarchy =
       [ "ROS2::JointMotorControllerComponent", "class_r_o_s2_1_1_joint_motor_controller_component.html", null ],
       [ "ROS2::VacuumGripperComponent", "class_r_o_s2_1_1_vacuum_gripper_component.html", null ]
     ] ],
+    [ "ROS2::VehicleDynamics::InputZeroedOnTimeout< AZ::Vector3 >", "class_r_o_s2_1_1_vehicle_dynamics_1_1_input_zeroed_on_timeout.html", null ],
+    [ "ROS2::VehicleDynamics::InputZeroedOnTimeout< AZStd::vector< float > >", "class_r_o_s2_1_1_vehicle_dynamics_1_1_input_zeroed_on_timeout.html", null ],
     [ "JointsManipulationRequestBus::Handler", null, [
       [ "ROS2::JointsManipulationComponent", "class_r_o_s2_1_1_joints_manipulation_component.html", null ]
     ] ],
@@ -221,9 +224,6 @@ var hierarchy =
     [ "ROS2::Controllers::PidConfiguration", "class_r_o_s2_1_1_controllers_1_1_pid_configuration.html", null ],
     [ "ROS2::EncodingConversion", "struct_r_o_s2_1_1_encoding_conversion.html", null ],
     [ "ROS2::EventSourceAdapter< EventSourceT >", "class_r_o_s2_1_1_event_source_adapter.html", null ],
-    [ "ROS2::EventSourceAdapter< PhysicsBasedSource >", "class_r_o_s2_1_1_event_source_adapter.html", null ],
-    [ "ROS2::EventSourceAdapter< ROS2::PhysicsBasedSource >", "class_r_o_s2_1_1_event_source_adapter.html", null ],
-    [ "ROS2::EventSourceAdapter< TickBasedSource >", "class_r_o_s2_1_1_event_source_adapter.html", null ],
     [ "ROS2::FollowingCameraConfiguration", "struct_r_o_s2_1_1_following_camera_configuration.html", null ],
     [ "ROS2::FollowJointTrajectoryActionServer", "class_r_o_s2_1_1_follow_joint_trajectory_action_server.html", null ],
     [ "ROS2::GeoreferenceRequests", "class_r_o_s2_1_1_georeference_requests.html", null ],
@@ -232,11 +232,11 @@ var hierarchy =
       [ "ROS2::ControlSubscriptionHandler< ackermann_msgs::msg::AckermannDrive >", "class_r_o_s2_1_1_control_subscription_handler.html", [
         [ "ROS2::AckermannSubscriptionHandler", "class_r_o_s2_1_1_ackermann_subscription_handler.html", null ]
       ] ],
-      [ "ROS2::ControlSubscriptionHandler< std_msgs::msg::Float64MultiArray >", "class_r_o_s2_1_1_control_subscription_handler.html", [
-        [ "ROS2::JointPositionsSubscriptionHandler", "class_r_o_s2_1_1_joint_positions_subscription_handler.html", null ]
-      ] ],
       [ "ROS2::ControlSubscriptionHandler< geometry_msgs::msg::Twist >", "class_r_o_s2_1_1_control_subscription_handler.html", [
         [ "ROS2::TwistSubscriptionHandler", "class_r_o_s2_1_1_twist_subscription_handler.html", null ]
+      ] ],
+      [ "ROS2::ControlSubscriptionHandler< std_msgs::msg::Float64MultiArray >", "class_r_o_s2_1_1_control_subscription_handler.html", [
+        [ "ROS2::JointPositionsSubscriptionHandler", "class_r_o_s2_1_1_joint_positions_subscription_handler.html", null ]
       ] ],
       [ "ROS2::ControlSubscriptionHandler< T >", "class_r_o_s2_1_1_control_subscription_handler.html", null ]
     ] ],
@@ -281,16 +281,9 @@ var hierarchy =
     [ "ROS2::SDFormat::SensorImporterHook", "struct_r_o_s2_1_1_s_d_format_1_1_sensor_importer_hook.html", null ],
     [ "ROS2::SensorConfiguration", "struct_r_o_s2_1_1_sensor_configuration.html", null ],
     [ "ROS2::SensorEventSource< EventT, EventHandlerT, EventArgs >", "class_r_o_s2_1_1_sensor_event_source.html", null ],
-    [ "ROS2::SensorEventSource< AZ::Event, AZ::EventHandler, float, AZ::ScriptTimePoint >", "class_r_o_s2_1_1_sensor_event_source.html", [
-      [ "ROS2::TickBasedSource", "class_r_o_s2_1_1_tick_based_source.html", null ]
-    ] ],
-    [ "ROS2::SensorEventSource< AZ::OrderedEvent, AZ::OrderedEventHandler, AzPhysics::SceneHandle, float >", "class_r_o_s2_1_1_sensor_event_source.html", [
-      [ "ROS2::PhysicsBasedSource", "class_r_o_s2_1_1_physics_based_source.html", null ]
-    ] ],
     [ "ROS2::SensorsMaker", "class_r_o_s2_1_1_sensors_maker.html", null ],
     [ "ROS2::SpawnPointInfo", "struct_r_o_s2_1_1_spawn_point_info.html", null ],
     [ "ROS2::StronglyTypedUuid< Tag >", "class_r_o_s2_1_1_strongly_typed_uuid.html", null ],
-    [ "ROS2::StronglyTypedUuid< struct LidarIdTag >", "class_r_o_s2_1_1_strongly_typed_uuid.html", null ],
     [ "ROS2::TopicConfiguration", "struct_r_o_s2_1_1_topic_configuration.html", null ],
     [ "ROS2::UrdfParser::ParseResult", "struct_r_o_s2_1_1_urdf_parser_1_1_parse_result.html", null ],
     [ "ROS2::URDFPrefabMaker", "class_r_o_s2_1_1_u_r_d_f_prefab_maker.html", null ],
@@ -309,8 +302,6 @@ var hierarchy =
       [ "ROS2::VehicleDynamics::SkidSteeringDriveModel", "class_r_o_s2_1_1_vehicle_dynamics_1_1_skid_steering_drive_model.html", null ]
     ] ],
     [ "ROS2::VehicleDynamics::InputZeroedOnTimeout< T >", "class_r_o_s2_1_1_vehicle_dynamics_1_1_input_zeroed_on_timeout.html", null ],
-    [ "ROS2::VehicleDynamics::InputZeroedOnTimeout< AZ::Vector3 >", "class_r_o_s2_1_1_vehicle_dynamics_1_1_input_zeroed_on_timeout.html", null ],
-    [ "ROS2::VehicleDynamics::InputZeroedOnTimeout< AZStd::vector< float > >", "class_r_o_s2_1_1_vehicle_dynamics_1_1_input_zeroed_on_timeout.html", null ],
     [ "ROS2::VehicleDynamics::ManualControlEventHandler", "class_r_o_s2_1_1_vehicle_dynamics_1_1_manual_control_event_handler.html", null ],
     [ "ROS2::VehicleDynamics::SteeringDynamicsData", "struct_r_o_s2_1_1_vehicle_dynamics_1_1_steering_dynamics_data.html", null ],
     [ "ROS2::VehicleDynamics::VehicleConfiguration", "class_r_o_s2_1_1_vehicle_dynamics_1_1_vehicle_configuration.html", null ],
@@ -346,9 +337,15 @@ var hierarchy =
       [ "ROS2::ROS2SpawnPointEditorComponent", "class_r_o_s2_1_1_r_o_s2_spawn_point_editor_component.html", null ]
     ] ],
     [ "SensorConfigurationRequestBus::Handler", null, [
-      [ "ROS2::ROS2SensorComponentBase< TickBasedSource >", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html", null ],
       [ "ROS2::ROS2SensorComponentBase< PhysicsBasedSource >", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html", null ],
+      [ "ROS2::ROS2SensorComponentBase< TickBasedSource >", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html", null ],
       [ "ROS2::ROS2SensorComponentBase< EventSourceT >", "class_r_o_s2_1_1_r_o_s2_sensor_component_base.html", null ]
+    ] ],
+    [ "ROS2::SensorEventSource< AZ::Event, AZ::EventHandler, float, AZ::ScriptTimePoint >", "class_r_o_s2_1_1_sensor_event_source.html", [
+      [ "ROS2::TickBasedSource", "class_r_o_s2_1_1_tick_based_source.html", null ]
+    ] ],
+    [ "ROS2::SensorEventSource< AZ::OrderedEvent, AZ::OrderedEventHandler, AzPhysics::SceneHandle, float >", "class_r_o_s2_1_1_sensor_event_source.html", [
+      [ "ROS2::PhysicsBasedSource", "class_r_o_s2_1_1_physics_based_source.html", null ]
     ] ],
     [ "SpawnerRequestsBus::Handler", null, [
       [ "ROS2::ROS2SpawnerComponentController", "class_r_o_s2_1_1_r_o_s2_spawner_component_controller.html", null ],
@@ -357,6 +354,7 @@ var hierarchy =
     [ "StartingPointInput::InputEventNotificationBus::Handler", null, [
       [ "ROS2::VehicleDynamics::ManualControlSingleEventHandler", "class_r_o_s2_1_1_vehicle_dynamics_1_1_manual_control_single_event_handler.html", null ]
     ] ],
+    [ "ROS2::StronglyTypedUuid< struct LidarIdTag >", "class_r_o_s2_1_1_strongly_typed_uuid.html", null ],
     [ "TwistNotificationBus::Handler", null, [
       [ "ROS2::RigidBodyTwistControlComponent", "class_r_o_s2_1_1_rigid_body_twist_control_component.html", null ],
       [ "ROS2::SkidSteeringControlComponent", "class_r_o_s2_1_1_skid_steering_control_component.html", null ]

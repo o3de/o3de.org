@@ -1,7 +1,14 @@
 var class_az_qt_components_1_1_slider_double =
 [
+    [ "SliderDouble", "class_az_qt_components_1_1_slider_double.html#a4f2e7c974ffbd27caf2c8867be6fdd65", null ],
+    [ "SliderDouble", "class_az_qt_components_1_1_slider_double.html#ab142d3ad61ef33fb719e091ef55c51a9", null ],
+    [ "calculateRealSliderValue", "class_az_qt_components_1_1_slider_double.html#ae78e68661d0865f5f412dce134500eeb", null ],
+    [ "convertFromSliderValue", "class_az_qt_components_1_1_slider_double.html#a36ffed7e7ded0dc473241c8b3c2ed158", null ],
+    [ "convertPowerCurveValue", "class_az_qt_components_1_1_slider_double.html#a1d10f7be4c4e7023bed9b73063b17828", null ],
+    [ "convertToSliderValue", "class_az_qt_components_1_1_slider_double.html#a370db224b4026374cc7736cf191a6d7a", null ],
     [ "curveMidpoint", "class_az_qt_components_1_1_slider_double.html#add4d419c96c27d3597c6825e75f10763", null ],
     [ "decimals", "class_az_qt_components_1_1_slider_double.html#aaf9b9f541d132f343421df0fdf33489f", null ],
+    [ "hoverValueText", "class_az_qt_components_1_1_slider_double.html#a49b15e73bf5b21f9c86953bae4b3f810", null ],
     [ "maximum", "class_az_qt_components_1_1_slider_double.html#a2ddda7bc215b95235573d06d1bfcef57", null ],
     [ "minimum", "class_az_qt_components_1_1_slider_double.html#a4b1e0b6f9e261efd371039dea6dc180b", null ],
     [ "numSteps", "class_az_qt_components_1_1_slider_double.html#a723a662ce520e56cc3de031df3ca3926", null ],

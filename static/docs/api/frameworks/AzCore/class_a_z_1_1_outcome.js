@@ -1,5 +1,7 @@
 var class_a_z_1_1_outcome =
 [
+    [ "ErrorType", "class_a_z_1_1_outcome.html#aaedbfdf80b150e3b4a9e6fac8a86f59a", null ],
+    [ "ValueType", "class_a_z_1_1_outcome.html#ab0299d6477ecece25cd9840165cfbc3e", null ],
     [ "Outcome", "class_a_z_1_1_outcome.html#a51bd416b8abd5e88fea65a1b7e942c41", null ],
     [ "Outcome", "class_a_z_1_1_outcome.html#a85a768eb370a2c239dfd1a250305285b", null ],
     [ "Outcome", "class_a_z_1_1_outcome.html#a81dcc78fefe71b41419016205940b5f8", null ],
@@ -7,10 +9,14 @@ var class_a_z_1_1_outcome =
     [ "Outcome", "class_a_z_1_1_outcome.html#a8573c5ec0d11536de89af6d8b18a30af", null ],
     [ "Outcome", "class_a_z_1_1_outcome.html#a4a63e3b0138361456b50b798b32d3380", null ],
     [ "Outcome", "class_a_z_1_1_outcome.html#a1606a1137000d27418a4ee17b031d2b7", null ],
+    [ "~Outcome", "class_a_z_1_1_outcome.html#aa28e2c276b2fe57f0471d9d1ce358bf6", null ],
     [ "GetError", "class_a_z_1_1_outcome.html#ac28dfca6bea71d2f3a51d4f22f8cec14", null ],
+    [ "GetError", "class_a_z_1_1_outcome.html#a1a9267b1d6d962363cc125355e5307c9", null ],
     [ "GetValue", "class_a_z_1_1_outcome.html#a3c4e9ff7ca128be521d2381878d1963b", null ],
+    [ "GetValue", "class_a_z_1_1_outcome.html#a063dfa8e962a27d76410c5637eb1b7ef", null ],
     [ "GetValueOr", "class_a_z_1_1_outcome.html#a83a582292e67c15a71f2988113754da1", null ],
     [ "IsSuccess", "class_a_z_1_1_outcome.html#a0aad003ae1ba0474410f5526f62843ee", null ],
+    [ "operator bool", "class_a_z_1_1_outcome.html#a16a30834bfb59c0934e1b48dc915520a", null ],
     [ "operator=", "class_a_z_1_1_outcome.html#a8656d64764fa53027283ca200aaa263d", null ],
     [ "operator=", "class_a_z_1_1_outcome.html#abdcd008633b7a9c1351f99ddb1d7de1c", null ],
     [ "operator=", "class_a_z_1_1_outcome.html#a0381f629a82d4d32083d2f0ddbdf0084", null ],

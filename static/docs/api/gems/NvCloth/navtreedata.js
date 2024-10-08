@@ -41,7 +41,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_nv_cloth_1_1_i_cloth_configurator.html#aa43d77dfa9c5bc6717dc667897aaf3a5",
+"struct_nv_cloth_1_1_fabric_cooked_data.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -302,14 +302,14 @@ var hierarchy =
       [ "PropertyAssetDirectorySelectionCtrl", "class_property_asset_directory_selection_ctrl.html", null ]
     ] ],
     [ "AzToolsFramework::PropertyHandler", null, [
-      [ "LegacyVectorPropertyHandlerBase< Vec2 >", "class_legacy_vector_property_handler_base.html", [
-        [ "PropertyHandlerVec2", "class_property_handler_vec2.html", null ]
+      [ "LegacyVectorPropertyHandlerBase< Vec4 >", "class_legacy_vector_property_handler_base.html", [
+        [ "PropertyHandlerVec4", "class_property_handler_vec4.html", null ]
       ] ],
       [ "LegacyVectorPropertyHandlerBase< Vec3 >", "class_legacy_vector_property_handler_base.html", [
         [ "PropertyHandlerVec3", "class_property_handler_vec3.html", null ]
       ] ],
-      [ "LegacyVectorPropertyHandlerBase< Vec4 >", "class_legacy_vector_property_handler_base.html", [
-        [ "PropertyHandlerVec4", "class_property_handler_vec4.html", null ]
+      [ "LegacyVectorPropertyHandlerBase< Vec2 >", "class_legacy_vector_property_handler_base.html", [
+        [ "PropertyHandlerVec2", "class_property_handler_vec2.html", null ]
       ] ],
       [ "UIVectorPropertyHandlerBase< UiLayoutInterface::Padding >", "class_u_i_vector_property_handler_base.html", [
         [ "PropertyHandlerLayoutPadding", "class_property_handler_layout_padding.html", null ]
@@ -636,6 +636,9 @@ var hierarchy =
     [ "TextureAtlasNamespace::TextureAtlasNotificationBus::Handler", null, [
       [ "CSprite", "class_c_sprite.html", null ],
       [ "UiTextComponent", "class_ui_text_component.html", null ]
+    ] ],
+    [ "UiSpline::TSpline< SplineKeyEx< T >, spline::BezierBasis >", "class_ui_spline_1_1_t_spline.html", [
+      [ "UiSpline::BezierSpline< T, Key >", "class_ui_spline_1_1_bezier_spline.html", null ]
     ] ],
     [ "UiAnimateEntityBus::Handler", null, [
       [ "UiFaderComponent", "class_ui_fader_component.html", null ],
@@ -1029,10 +1032,7 @@ var hierarchy =
       [ "UiSpline::SplineKeyEx< T >", "struct_ui_spline_1_1_spline_key_ex.html", null ]
     ] ],
     [ "UiSpline::TrackSplineInterpolator< T >", "class_ui_spline_1_1_track_spline_interpolator.html", null ],
-    [ "UiSpline::TSpline< KeyType, BasisType >", "class_ui_spline_1_1_t_spline.html", [
-      [ "UiSpline::BezierSpline< T, Key >", "class_ui_spline_1_1_bezier_spline.html", null ]
-    ] ],
-    [ "UiSpline::TSpline< SplineKeyEx< T >, spline::BezierBasis >", "class_ui_spline_1_1_t_spline.html", null ],
+    [ "UiSpline::TSpline< KeyType, BasisType >", "class_ui_spline_1_1_t_spline.html", null ],
     [ "UiSpriteSettingsChangeNotificationBus::Handler", null, [
       [ "UiImageComponent", "class_ui_image_component.html", null ]
     ] ],

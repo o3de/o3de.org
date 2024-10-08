@@ -6,6 +6,25 @@ var hierarchy =
     [ "ArcBallControllerRequestBus::Handler", null, [
       [ "AZ::Debug::ArcBallControllerComponent", "class_a_z_1_1_debug_1_1_arc_ball_controller_component.html", null ]
     ] ],
+    [ "AZ::Data::Asset< AssetDataT >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::AnyAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::AttachmentImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::BufferAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::ImageMipChainAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::MaterialAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::MaterialTypeAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::ModelAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::ModelLodAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::MorphTargetMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::PassAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::ResourcePoolAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::ShaderAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::ShaderVariantAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::ShaderVariantTreeAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::SkinMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< AZ::RPI::StreamingImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< Data::AssetData >", "class_a_z_1_1_data_1_1_asset.html", null ],
+    [ "AZ::Data::Asset< ScriptAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AssetBuilderSDK::AssetBuilderCommandBus::Handler", null, [
       [ "AZ::PrecompiledShaderBuilder", "class_a_z_1_1_precompiled_shader_builder.html", null ],
       [ "AZ::RPI::AnyAssetBuilder", "class_a_z_1_1_r_p_i_1_1_any_asset_builder.html", null ],
@@ -18,6 +37,51 @@ var hierarchy =
       [ "AZ::ShaderBuilder::ShaderVariantListBuilder", "class_a_z_1_1_shader_builder_1_1_shader_variant_list_builder.html", null ],
       [ "ImageProcessingAtom::ImageBuilderWorker", "class_image_processing_atom_1_1_image_builder_worker.html", null ]
     ] ],
+    [ "AZ::RPI::AssetCreator< AttachmentImageAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::AttachmentImageAssetCreator", "class_a_z_1_1_r_p_i_1_1_attachment_image_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< BufferAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::BufferAssetCreator", "class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< ImageMipChainAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::ImageMipChainAssetCreator", "class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< MaterialAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::MaterialAssetCreator", "class_a_z_1_1_r_p_i_1_1_material_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< MaterialTypeAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::MaterialTypeAssetCreator", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< ModelAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::ModelAssetCreator", "class_a_z_1_1_r_p_i_1_1_model_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< ModelLodAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::ModelLodAssetCreator", "class_a_z_1_1_r_p_i_1_1_model_lod_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< MorphTargetMetaAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::MorphTargetMetaAssetCreator", "class_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< ResourcePoolAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::ResourcePoolAssetCreator", "class_a_z_1_1_r_p_i_1_1_resource_pool_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< ShaderAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::ShaderAssetCreator", "class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< ShaderVariantAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::ShaderVariantAssetCreator", "class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< ShaderVariantTreeAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::ShaderVariantTreeAssetCreator", "class_a_z_1_1_r_p_i_1_1_shader_variant_tree_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< SkinMetaAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::SkinMetaAssetCreator", "class_a_z_1_1_r_p_i_1_1_skin_meta_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< StreamingImageAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::StreamingImageAssetCreator", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html", null ]
+    ] ],
+    [ "AZ::RPI::AssetCreator< StreamingImagePoolAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
+      [ "AZ::RPI::StreamingImagePoolAssetCreator", "class_a_z_1_1_r_p_i_1_1_streaming_image_pool_asset_creator.html", null ]
+    ] ],
     [ "AssetInitBus::Handler", null, [
       [ "AZ::RPI::MaterialAsset", "class_a_z_1_1_r_p_i_1_1_material_asset.html", null ],
       [ "AZ::RPI::MaterialTypeAsset", "class_a_z_1_1_r_p_i_1_1_material_type_asset.html", null ],
@@ -26,6 +90,7 @@ var hierarchy =
     [ "AssetStatusReporterSystemRequestBus::Handler", null, [
       [ "AtomToolsFramework::AssetStatusReporterSystem", "class_atom_tools_framework_1_1_asset_status_reporter_system.html", null ]
     ] ],
+    [ "AZ::Render::AsyncLoadTracker< DecalHandle >", "class_a_z_1_1_render_1_1_async_load_tracker.html", null ],
     [ "AtomToolsAnyDocumentRequestBus::Handler", null, [
       [ "AtomToolsFramework::AtomToolsAnyDocument", "class_atom_tools_framework_1_1_atom_tools_any_document.html", null ]
     ] ],
@@ -174,40 +239,6 @@ var hierarchy =
       [ "AZ::Render::SkyBoxFogRequests", "class_a_z_1_1_render_1_1_sky_box_fog_requests.html", null ]
     ] ],
     [ "AZ::Data::Asset< T >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AssetDataT >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AttachmentImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::AnyAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::AttachmentImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::BufferAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::ImageMipChainAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::MaterialAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::MaterialTypeAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::ModelAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::ModelLodAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::MorphTargetMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::PassAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::ResourcePoolAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::ShaderAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::ShaderVariantAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::ShaderVariantTreeAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::SkinMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< AZ::RPI::StreamingImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< BufferAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< Data::AssetData >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< ImageMipChainAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< MaterialAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< MaterialTypeAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< ModelAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< ModelLodAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< MorphTargetMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< ResourcePoolAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< ScriptAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< ShaderAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< ShaderVariantAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< ShaderVariantTreeAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< SkinMetaAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< StreamingImageAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
-    [ "AZ::Data::Asset< StreamingImagePoolAsset >", "class_a_z_1_1_data_1_1_asset.html", null ],
     [ "AZ::Data::AssetBus::Handler", null, [
       [ "AZ::Render::ReflectionProbe", "class_a_z_1_1_render_1_1_reflection_probe.html", null ]
     ] ],
@@ -371,14 +402,12 @@ var hierarchy =
       [ "AtomToolsFramework::PreviewerFeatureProcessorProviderRequests", "class_atom_tools_framework_1_1_previewer_feature_processor_provider_requests.html", null ],
       [ "ImageProcessingAtom::ImageBuilderRequests", "class_image_processing_atom_1_1_image_builder_requests.html", null ],
       [ "ImageProcessingAtom::ImageProcessingRequests", "class_image_processing_atom_1_1_image_processing_requests.html", null ],
-      [ "ImageProcessingAtomEditor::ImageProcessingEditorInteralNotifications", "class_image_processing_atom_editor_1_1_image_processing_editor_interal_notifications.html", null ],
       [ "ImageProcessingAtomEditor::ImageProcessingEditorRequests", "class_image_processing_atom_editor_1_1_image_processing_editor_requests.html", null ],
       [ "MaterialEditor::MaterialDocumentRequests", "class_material_editor_1_1_material_document_requests.html", null ],
       [ "ShaderManagementConsole::ShaderManagementConsoleDocumentRequests", "class_shader_management_console_1_1_shader_management_console_document_requests.html", null ],
       [ "ShaderManagementConsole::ShaderManagementConsoleRequests", "class_shader_management_console_1_1_shader_management_console_requests.html", null ]
     ] ],
     [ "AZ::EnvironmentVariable< T >", "class_a_z_1_1_environment_variable.html", null ],
-    [ "AZ::EnvironmentVariable< ImageProcessingAtom::BuilderSettingManager * >", "class_a_z_1_1_environment_variable.html", null ],
     [ "AZ::Interface::Registrar", null, [
       [ "AZ::RPI::ShaderVariantAsyncLoader", "class_a_z_1_1_r_p_i_1_1_shader_variant_async_loader.html", null ]
     ] ],
@@ -414,7 +443,6 @@ var hierarchy =
     ] ],
     [ "AZ::Render::AcesParameterOverrides", "struct_a_z_1_1_render_1_1_aces_parameter_overrides.html", null ],
     [ "AZ::Render::AsyncLoadTracker< FeatureProcessorHandle >", "class_a_z_1_1_render_1_1_async_load_tracker.html", null ],
-    [ "AZ::Render::AsyncLoadTracker< DecalHandle >", "class_a_z_1_1_render_1_1_async_load_tracker.html", null ],
     [ "AZ::Render::AuxGeomBufferData", "struct_a_z_1_1_render_1_1_aux_geom_buffer_data.html", null ],
     [ "AZ::Render::AuxGeomDynamicVertex", "struct_a_z_1_1_render_1_1_aux_geom_dynamic_vertex.html", null ],
     [ "AZ::Render::AuxGeomPosition", "struct_a_z_1_1_render_1_1_aux_geom_position.html", null ],
@@ -494,12 +522,7 @@ var hierarchy =
     [ "AZ::Render::ImGuiTimestampView", "class_a_z_1_1_render_1_1_im_gui_timestamp_view.html", null ],
     [ "AZ::Render::ImGuiTransientAttachmentProfiler", "class_a_z_1_1_render_1_1_im_gui_transient_attachment_profiler.html", null ],
     [ "AZ::Render::IndexableList< T >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
-    [ "AZ::Render::IndexableList< AZStd::pair< AZ::RHI::Size, AZ::Render::DecalTextureArray > >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
-    [ "AZ::Render::IndexableList< MaterialData >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
     [ "AZ::Render::IndexedDataVector< DataType, IndexType >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
-    [ "AZ::Render::IndexedDataVector< AZ::Render::DirectionalLightData >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
-    [ "AZ::Render::IndexedDataVector< AZ::Render::DirectionalLightFeatureProcessor::ShadowProperty >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
-    [ "AZ::Render::IndexedDataVector< ShadowProperty >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
     [ "AZ::Render::LightConfig", "struct_a_z_1_1_render_1_1_light_config.html", null ],
     [ "AZ::Render::LightingChannelConfiguration", "struct_a_z_1_1_render_1_1_lighting_channel_configuration.html", null ],
     [ "AZ::Render::LightingPreset", "struct_a_z_1_1_render_1_1_lighting_preset.html", null ],
@@ -532,16 +555,7 @@ var hierarchy =
     [ "AZ::Render::MultiIndexedDataVector< Ts >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
     [ "AZ::Render::MultiIndexedDataVector< Ts >::CopyBackElementFunctor< IndexType >", "struct_a_z_1_1_render_1_1_multi_indexed_data_vector_1_1_copy_back_element_functor.html", null ],
     [ "AZ::Render::MultiIndexedDataVector< Ts >::ReserveFunctor", "struct_a_z_1_1_render_1_1_multi_indexed_data_vector_1_1_reserve_functor.html", null ],
-    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::CapsuleLightData, AZ::Capsule >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
-    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::DecalData, AZ::Aabb >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
-    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::DiskLightData, MeshCommon::BoundsVariant >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
-    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::PointLightData, AZ::Sphere >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
-    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::QuadLightData, MeshCommon::BoundsVariant >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
-    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::SimplePointLightFeatureProcessor::SimplePointLightData, AZ::Sphere >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
-    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::SimpleSpotLightData, ExtraData >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
-    [ "AZ::Render::MultiIndexedDataVector< PolygonLightData, PolygonPoints, MeshCommon::BoundsVariant >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
     [ "AZ::Render::MultiSparseVector< Ts >", "class_a_z_1_1_render_1_1_multi_sparse_vector.html", null ],
-    [ "AZ::Render::MultiSparseVector< ShadowData, AZ::Render::EsmShadowmapsPass::FilterParameter, uint16_t >", "class_a_z_1_1_render_1_1_multi_sparse_vector.html", null ],
     [ "AZ::Render::PaniniProjectionSettingsInterface", "class_a_z_1_1_render_1_1_panini_projection_settings_interface.html", [
       [ "AZ::Render::PaniniProjectionSettings", "class_a_z_1_1_render_1_1_panini_projection_settings.html", null ]
     ] ],
@@ -586,9 +600,6 @@ var hierarchy =
     [ "AZ::Render::RayTracingFeatureProcessor::SubMeshBlasInstance", "struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_1_1_sub_mesh_blas_instance.html", null ],
     [ "AZ::Render::RayTracingFeatureProcessor::SubMeshMaterial", "struct_a_z_1_1_render_1_1_ray_tracing_feature_processor_1_1_sub_mesh_material.html", null ],
     [ "AZ::Render::RayTracingIndexList< BlockSize >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
-    [ "AZ::Render::RayTracingIndexList< 1 >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
-    [ "AZ::Render::RayTracingIndexList< NumMaterialTexturesPerMesh >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
-    [ "AZ::Render::RayTracingIndexList< NumMeshBuffersPerMesh >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
     [ "AZ::Render::RayTracingResourceList< TResource >", "class_a_z_1_1_render_1_1_ray_tracing_resource_list.html", null ],
     [ "AZ::Render::ReflectionRenderData", "struct_a_z_1_1_render_1_1_reflection_render_data.html", null ],
     [ "AZ::Render::RenderDebugSettingsInterface", "class_a_z_1_1_render_1_1_render_debug_settings_interface.html", [
@@ -622,7 +633,6 @@ var hierarchy =
     [ "AZ::Render::SMAAConfigurationDescriptor", "struct_a_z_1_1_render_1_1_s_m_a_a_configuration_descriptor.html", null ],
     [ "AZ::Render::SMAAData", "struct_a_z_1_1_render_1_1_s_m_a_a_data.html", null ],
     [ "AZ::Render::SparseVector< T >", "class_a_z_1_1_render_1_1_sparse_vector.html", null ],
-    [ "AZ::Render::SparseVector< SkyAtmosphere >", "class_a_z_1_1_render_1_1_sparse_vector.html", null ],
     [ "AZ::Render::SplashScreenSettings", "class_a_z_1_1_render_1_1_splash_screen_settings.html", null ],
     [ "AZ::Render::SpotLightUtils::general_", "struct_a_z_1_1_render_1_1_spot_light_utils_1_1general__.html", [
       [ "AZ::Render::SpotLightUtils::special_", "struct_a_z_1_1_render_1_1_spot_light_utils_1_1special__.html", null ]
@@ -675,7 +685,6 @@ var hierarchy =
     [ "AZ::RHI::BufferMapResponse", "struct_a_z_1_1_r_h_i_1_1_buffer_map_response.html", null ],
     [ "AZ::RHI::BufferProperty< T >", "class_a_z_1_1_r_h_i_1_1_buffer_property.html", null ],
     [ "AZ::RHI::BufferProperty< T >::PropertyRange", "struct_a_z_1_1_r_h_i_1_1_buffer_property_1_1_property_range.html", null ],
-    [ "AZ::RHI::BufferProperty< QueueId >", "class_a_z_1_1_r_h_i_1_1_buffer_property.html", null ],
     [ "AZ::RHI::BufferStreamRequestTemplate< BufferClass, FenceClass >", "struct_a_z_1_1_r_h_i_1_1_buffer_stream_request_template.html", null ],
     [ "AZ::RHI::BufferSubresourceRange", "struct_a_z_1_1_r_h_i_1_1_buffer_subresource_range.html", null ],
     [ "AZ::RHI::BufferViewDescriptor", "struct_a_z_1_1_r_h_i_1_1_buffer_view_descriptor.html", null ],
@@ -746,16 +755,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "AZ::RHI::FrameCountMaxRingBuffer< T >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
-    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::DX12::RayTracingBlas::BlasBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
-    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::DX12::RayTracingShaderTable::ShaderTableBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
-    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::DX12::RayTracingTlas::TlasBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
-    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::Vulkan::RayTracingBlas::BlasBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
-    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::Vulkan::RayTracingShaderTable::ShaderTableBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
-    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::Vulkan::RayTracingTlas::TlasBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
-    [ "AZ::RHI::FrameCountMaxRingBuffer< Data::Instance< Buffer > >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", [
-      [ "AZ::RPI::RingBuffer", "class_a_z_1_1_r_p_i_1_1_ring_buffer.html", null ]
-    ] ],
-    [ "AZ::RHI::FrameCountMaxRingBuffer< void * >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
     [ "AZ::RHI::FrameGraph", "class_a_z_1_1_r_h_i_1_1_frame_graph.html", null ],
     [ "AZ::RHI::FrameGraphAttachmentDatabase", "class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_database.html", null ],
     [ "AZ::RHI::FrameGraphAttachmentInterface", "class_a_z_1_1_r_h_i_1_1_frame_graph_attachment_interface.html", null ],
@@ -790,20 +789,6 @@ var hierarchy =
     [ "AZ::RHI::FrameSchedulerDescriptor", "struct_a_z_1_1_r_h_i_1_1_frame_scheduler_descriptor.html", null ],
     [ "AZ::RHI::Handle< T, NamespaceType >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
     [ "AZ::RHI::Handle< T, NamespaceType >::NullType", "struct_a_z_1_1_r_h_i_1_1_handle_1_1_null_type.html", null ],
-    [ "AZ::RHI::Handle< size_t >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint16_t, RootParameter >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint16_t, SkyAtmosphereFeatureProcessorInterface >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint32_t >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint32_t, class ShaderAsset >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint32_t, class ShaderOptionIndexNamespace >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint32_t, class ShaderOptionValueNamespace >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint32_t, MaterialPropertyIndexType >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint32_t, ShaderInputConstantDescriptor >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint32_t, ShaderVariantId >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint32_t, TransformServiceFeatureProcessorInterface >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint64_t, AsyncWorkQueue >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint64_t, class Window >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
-    [ "AZ::RHI::Handle< uint8_t >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
     [ "AZ::RHI::HeapAllocationParameters", "struct_a_z_1_1_r_h_i_1_1_heap_allocation_parameters.html", null ],
     [ "AZ::RHI::HeapMemoryHintParameters", "struct_a_z_1_1_r_h_i_1_1_heap_memory_hint_parameters.html", null ],
     [ "AZ::RHI::HeapMemoryTransfer", "struct_a_z_1_1_r_h_i_1_1_heap_memory_transfer.html", null ],
@@ -813,9 +798,6 @@ var hierarchy =
     [ "AZ::RHI::ImageInitRequestTemplate< ImageClass >", "struct_a_z_1_1_r_h_i_1_1_image_init_request_template.html", null ],
     [ "AZ::RHI::ImageProperty< T >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
     [ "AZ::RHI::ImageProperty< T >::PropertyRange", "struct_a_z_1_1_r_h_i_1_1_image_property_1_1_property_range.html", null ],
-    [ "AZ::RHI::ImageProperty< D3D12_RESOURCE_STATES >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
-    [ "AZ::RHI::ImageProperty< QueueId >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
-    [ "AZ::RHI::ImageProperty< VkImageLayout >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
     [ "AZ::RHI::ImageSubresource", "struct_a_z_1_1_r_h_i_1_1_image_subresource.html", null ],
     [ "AZ::RHI::ImageSubresourceLayout", "struct_a_z_1_1_r_h_i_1_1_image_subresource_layout.html", null ],
     [ "AZ::RHI::ImageSubresourceRange", "struct_a_z_1_1_r_h_i_1_1_image_subresource_range.html", null ],
@@ -841,14 +823,7 @@ var hierarchy =
     [ "AZ::RHI::interval_map< Key, T, Compare >::const_iterator", "class_a_z_1_1_r_h_i_1_1interval__map_1_1const__iterator.html", [
       [ "AZ::RHI::interval_map< Key, T, Compare >::iterator", "class_a_z_1_1_r_h_i_1_1interval__map_1_1iterator.html", null ]
     ] ],
-    [ "AZ::RHI::interval_map< uint32_t, D3D12_RESOURCE_STATES >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
-    [ "AZ::RHI::interval_map< uint32_t, QueueId >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
-    [ "AZ::RHI::interval_map< uint32_t, T >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
-    [ "AZ::RHI::interval_map< uint32_t, VkImageLayout >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
-    [ "AZ::RHI::interval_map< uint64_t, QueueId >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
-    [ "AZ::RHI::interval_map< uint64_t, T >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
     [ "AZ::RHI::MemoryAllocation< MemoryType >", "struct_a_z_1_1_r_h_i_1_1_memory_allocation.html", null ],
-    [ "AZ::RHI::MemoryAllocation< Memory >", "struct_a_z_1_1_r_h_i_1_1_memory_allocation.html", null ],
     [ "AZ::RHI::MemoryStatistics", "struct_a_z_1_1_r_h_i_1_1_memory_statistics.html", null ],
     [ "AZ::RHI::MemoryStatistics::Buffer", "struct_a_z_1_1_r_h_i_1_1_memory_statistics_1_1_buffer.html", null ],
     [ "AZ::RHI::MemoryStatistics::Heap", "struct_a_z_1_1_r_h_i_1_1_memory_statistics_1_1_heap.html", null ],
@@ -856,14 +831,8 @@ var hierarchy =
     [ "AZ::RHI::MemoryStatistics::Pool", "struct_a_z_1_1_r_h_i_1_1_memory_statistics_1_1_pool.html", null ],
     [ "AZ::RHI::MemoryStatisticsBuilder", "class_a_z_1_1_r_h_i_1_1_memory_statistics_builder.html", null ],
     [ "AZ::RHI::MemorySubAllocator< Traits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
-    [ "AZ::RHI::MemorySubAllocator< MemoryFreeListSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
-    [ "AZ::RHI::MemorySubAllocator< MemoryLinearSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
     [ "AZ::RHI::MemorySubAllocator< MemoryLinearSubAllocatorTraits< MemoryType, MemoryPageAllocatorType > >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator_3_01_memory_linear_sub_allocator_traits_3_01_memory5c0c85a4ac76d3c7c3c5ac98e39fcc31.html", null ],
-    [ "AZ::RHI::MemorySubAllocator< MemoryPoolSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
     [ "AZ::RHI::MemorySubAllocatorTraits< MemoryType, MemoryPageAllocatorType, AllocatorType >", "struct_a_z_1_1_r_h_i_1_1_memory_sub_allocator_traits.html", null ],
-    [ "AZ::RHI::MemorySubAllocatorTraits< MemoryType, MemoryPageAllocatorType, LinearAllocator >", "struct_a_z_1_1_r_h_i_1_1_memory_sub_allocator_traits.html", [
-      [ "AZ::RHI::MemoryLinearSubAllocatorTraits< MemoryType, MemoryPageAllocatorType >", "struct_a_z_1_1_r_h_i_1_1_memory_linear_sub_allocator_traits.html", null ]
-    ] ],
     [ "AZ::RHI::MultiDeviceBufferMapResponse", "struct_a_z_1_1_r_h_i_1_1_multi_device_buffer_map_response.html", null ],
     [ "AZ::RHI::MultiDeviceCopyBufferDescriptor", "struct_a_z_1_1_r_h_i_1_1_multi_device_copy_buffer_descriptor.html", null ],
     [ "AZ::RHI::MultiDeviceCopyBufferToImageDescriptor", "struct_a_z_1_1_r_h_i_1_1_multi_device_copy_buffer_to_image_descriptor.html", null ],
@@ -898,17 +867,6 @@ var hierarchy =
     [ "AZ::RHI::MultiDeviceSwapChain::InitImageRequest", "struct_a_z_1_1_r_h_i_1_1_multi_device_swap_chain_1_1_init_image_request.html", null ],
     [ "AZ::RHI::MultisampleState", "struct_a_z_1_1_r_h_i_1_1_multisample_state.html", null ],
     [ "AZ::RHI::NameIdReflectionMap< IndexType >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< AZ::RHI::Handle< uint32_t > >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< MaterialPropertyIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< RHI::Handle< uint32_t > >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< ShaderInputBufferIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< ShaderInputBufferUnboundedArrayIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< ShaderInputConstantIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< ShaderInputImageIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< ShaderInputImageUnboundedArrayIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< ShaderInputSamplerIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< ShaderOptionIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
-    [ "AZ::RHI::NameIdReflectionMap< ShaderOptionValue >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
     [ "AZ::RHI::NullMutex", "struct_a_z_1_1_r_h_i_1_1_null_mutex.html", null ],
     [ "AZ::RHI::Object", "class_a_z_1_1_r_h_i_1_1_object.html", [
       [ "AZ::Metal::CommandListBase", "class_a_z_1_1_metal_1_1_command_list_base.html", [
@@ -1191,27 +1149,9 @@ var hierarchy =
       [ "AZ::Vulkan::WSISurface", "class_a_z_1_1_vulkan_1_1_w_s_i_surface.html", null ]
     ] ],
     [ "AZ::RHI::ObjectCache< ObjectType, KeyType, EvictionCallback >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
-    [ "AZ::RHI::ObjectCache< AZ::DX12::Sampler >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
-    [ "AZ::RHI::ObjectCache< AZ::RHI::BufferView >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
-    [ "AZ::RHI::ObjectCache< AZ::RHI::ImageView >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
-    [ "AZ::RHI::ObjectCache< AZ::RHI::MultiDeviceResource >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
-    [ "AZ::RHI::ObjectCache< AZ::RHI::Resource >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
-    [ "AZ::RHI::ObjectCache< AZ::Vulkan::MergedShaderResourceGroup, MergedShaderResourceGroup::ShaderResourceGroupArray >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
     [ "AZ::RHI::ObjectCacheEvictionCallbackNull< ObjectType >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
-    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::DX12::Sampler >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
-    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::BufferView >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
-    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::ImageView >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
-    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::MultiDeviceResource >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
-    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::Resource >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
-    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::Vulkan::MergedShaderResourceGroup >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
     [ "AZ::RHI::ObjectCollector< Traits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
     [ "AZ::RHI::ObjectCollector< Traits >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_object_collector_1_1_descriptor.html", null ],
-    [ "AZ::RHI::ObjectCollector< D3d12maReleaseQueueTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
-    [ "AZ::RHI::ObjectCollector< DescriptorPoolAllocatorlTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
-    [ "AZ::RHI::ObjectCollector< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
-    [ "AZ::RHI::ObjectCollector< MemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
-    [ "AZ::RHI::ObjectCollector< ReleaseQueueTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
-    [ "AZ::RHI::ObjectCollector< Traits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
     [ "AZ::RHI::ObjectCollectorTraits", "struct_a_z_1_1_r_h_i_1_1_object_collector_traits.html", [
       [ "AZ::DX12::D3d12maReleaseQueueTraits", "class_a_z_1_1_d_x12_1_1_d3d12ma_release_queue_traits.html", null ],
       [ "AZ::DX12::ReleaseQueueTraits", "class_a_z_1_1_d_x12_1_1_release_queue_traits.html", null ],
@@ -1226,29 +1166,7 @@ var hierarchy =
     ] ],
     [ "AZ::RHI::ObjectFactoryBase< ObjectType >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
     [ "AZ::RHI::ObjectFactoryBase< ObjectType >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_object_factory_base_1_1_descriptor.html", null ],
-    [ "AZ::RHI::ObjectFactoryBase< CommandList >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
-      [ "AZ::Metal::CommandListFactory", "class_a_z_1_1_metal_1_1_command_list_factory.html", null ]
-    ] ],
-    [ "AZ::RHI::ObjectFactoryBase< CommandPool >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
-    [ "AZ::RHI::ObjectFactoryBase< DescriptorPool >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
-    [ "AZ::RHI::ObjectFactoryBase< Heap >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
-      [ "AZ::DX12::HeapFactory", "class_a_z_1_1_d_x12_1_1_heap_factory.html", null ]
-    ] ],
-    [ "AZ::RHI::ObjectFactoryBase< ID3D12CommandAllocator >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
-    [ "AZ::RHI::ObjectFactoryBase< Memory >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
-      [ "AZ::DX12::MemoryPageFactory", "class_a_z_1_1_d_x12_1_1_memory_page_factory.html", null ],
-      [ "AZ::Metal::MemoryPageFactory", "class_a_z_1_1_metal_1_1_memory_page_factory.html", null ]
-    ] ],
-    [ "AZ::RHI::ObjectFactoryBase< Semaphore >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
     [ "AZ::RHI::ObjectPool< Traits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", null ],
-    [ "AZ::RHI::ObjectPool< DescriptorPoolAllocatorlTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", null ],
-    [ "AZ::RHI::ObjectPool< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", [
-      [ "AZ::DX12::HeapAllocator", "class_a_z_1_1_d_x12_1_1_heap_allocator.html", null ]
-    ] ],
-    [ "AZ::RHI::ObjectPool< MemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", [
-      [ "AZ::DX12::MemoryPageAllocator", "class_a_z_1_1_d_x12_1_1_memory_page_allocator.html", null ],
-      [ "AZ::Metal::MemoryPageAllocator", "class_a_z_1_1_metal_1_1_memory_page_allocator.html", null ]
-    ] ],
     [ "AZ::RHI::Origin", "struct_a_z_1_1_r_h_i_1_1_origin.html", null ],
     [ "AZ::RHI::PageTileAllocator", "class_a_z_1_1_r_h_i_1_1_page_tile_allocator.html", null ],
     [ "AZ::RHI::PageTiles< PageType >", "struct_a_z_1_1_r_h_i_1_1_page_tiles.html", null ],
@@ -1481,7 +1399,6 @@ var hierarchy =
     [ "AZ::RHI::TileAllocator< Traits >", "class_a_z_1_1_r_h_i_1_1_tile_allocator.html", null ],
     [ "AZ::RHI::TileAllocator< Traits >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_tile_allocator_1_1_descriptor.html", null ],
     [ "AZ::RHI::TileAllocator< Traits >::PageContext", "struct_a_z_1_1_r_h_i_1_1_tile_allocator_1_1_page_context.html", null ],
-    [ "AZ::RHI::TileAllocator< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_tile_allocator.html", null ],
     [ "AZ::RHI::TransientAttachmentPoolBudgets", "struct_a_z_1_1_r_h_i_1_1_transient_attachment_pool_budgets.html", null ],
     [ "AZ::RHI::TransientAttachmentPoolDescriptor", "struct_a_z_1_1_r_h_i_1_1_transient_attachment_pool_descriptor.html", null ],
     [ "AZ::RHI::TransientAttachmentStatistics", "struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics.html", null ],
@@ -1499,51 +1416,6 @@ var hierarchy =
     [ "AZ::RPI::AnyAssetCreator", "class_a_z_1_1_r_p_i_1_1_any_asset_creator.html", null ],
     [ "AZ::RPI::AssetAliases", "class_a_z_1_1_r_p_i_1_1_asset_aliases.html", null ],
     [ "AZ::RPI::AssetCreator< AssetDataT >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", null ],
-    [ "AZ::RPI::AssetCreator< AttachmentImageAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::AttachmentImageAssetCreator", "class_a_z_1_1_r_p_i_1_1_attachment_image_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< BufferAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::BufferAssetCreator", "class_a_z_1_1_r_p_i_1_1_buffer_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< ImageMipChainAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::ImageMipChainAssetCreator", "class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< MaterialAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::MaterialAssetCreator", "class_a_z_1_1_r_p_i_1_1_material_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< MaterialTypeAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::MaterialTypeAssetCreator", "class_a_z_1_1_r_p_i_1_1_material_type_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< ModelAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::ModelAssetCreator", "class_a_z_1_1_r_p_i_1_1_model_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< ModelLodAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::ModelLodAssetCreator", "class_a_z_1_1_r_p_i_1_1_model_lod_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< MorphTargetMetaAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::MorphTargetMetaAssetCreator", "class_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< ResourcePoolAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::ResourcePoolAssetCreator", "class_a_z_1_1_r_p_i_1_1_resource_pool_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< ShaderAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::ShaderAssetCreator", "class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< ShaderVariantAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::ShaderVariantAssetCreator", "class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< ShaderVariantTreeAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::ShaderVariantTreeAssetCreator", "class_a_z_1_1_r_p_i_1_1_shader_variant_tree_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< SkinMetaAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::SkinMetaAssetCreator", "class_a_z_1_1_r_p_i_1_1_skin_meta_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< StreamingImageAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::StreamingImageAssetCreator", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html", null ]
-    ] ],
-    [ "AZ::RPI::AssetCreator< StreamingImagePoolAsset >", "class_a_z_1_1_r_p_i_1_1_asset_creator.html", [
-      [ "AZ::RPI::StreamingImagePoolAssetCreator", "class_a_z_1_1_r_p_i_1_1_streaming_image_pool_asset_creator.html", null ]
-    ] ],
     [ "AZ::RPI::AssetReference", "struct_a_z_1_1_r_p_i_1_1_asset_reference.html", null ],
     [ "AZ::RPI::AttachmentReadback", "class_a_z_1_1_r_p_i_1_1_attachment_readback.html", null ],
     [ "AZ::RPI::AttachmentReadback::MipInfo", "struct_a_z_1_1_r_p_i_1_1_attachment_readback_1_1_mip_info.html", null ],
@@ -1837,24 +1709,15 @@ var hierarchy =
     [ "AZ::ShaderBuilder::TextureSrgData", "struct_a_z_1_1_shader_builder_1_1_texture_srg_data.html", null ],
     [ "AZ::ShaderBuilder::Variable", "struct_a_z_1_1_shader_builder_1_1_variable.html", null ],
     [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >", "class_a_z_1_1_stable_dynamic_array.html", null ],
-    [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::const_iterator", "class_a_z_1_1_stable_dynamic_array_1_1const__iterator.html", null ],
-    [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::iterator", "class_a_z_1_1_stable_dynamic_array_1_1iterator.html", null ],
+    [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::iterator", "class_a_z_1_1_stable_dynamic_array_1_1iterator.html", [
+      [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::const_iterator", "class_a_z_1_1_stable_dynamic_array_1_1const__iterator.html", null ]
+    ] ],
     [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::IteratorRange", "struct_a_z_1_1_stable_dynamic_array_1_1_iterator_range.html", null ],
     [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::Page", "struct_a_z_1_1_stable_dynamic_array_1_1_page.html", null ],
     [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >::pageIterator", "class_a_z_1_1_stable_dynamic_array_1_1page_iterator.html", null ],
-    [ "AZ::StableDynamicArray< AZ::Render::ModelDataInstance >", "class_a_z_1_1_stable_dynamic_array.html", null ],
-    [ "AZ::StableDynamicArray< AZ::Render::SkinnedMeshRenderProxy >", "class_a_z_1_1_stable_dynamic_array.html", null ],
-    [ "AZ::StableDynamicArray< MeshInstanceGroupData, 4096 >", "class_a_z_1_1_stable_dynamic_array.html", null ],
-    [ "AZ::StableDynamicArray< ProceduralGeometryType >", "class_a_z_1_1_stable_dynamic_array.html", null ],
-    [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >", "class_a_z_1_1_stable_dynamic_array.html", null ],
     [ "AZ::StableDynamicArrayHandle< ValueType >", "class_a_z_1_1_stable_dynamic_array_handle.html", null ],
-    [ "AZ::StableDynamicArrayHandle< MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_handle.html", null ],
-    [ "AZ::StableDynamicArrayHandle< ModelDataInstance >", "class_a_z_1_1_stable_dynamic_array_handle.html", null ],
     [ "AZ::StableDynamicArrayMetrics", "struct_a_z_1_1_stable_dynamic_array_metrics.html", null ],
     [ "AZ::StableDynamicArrayWeakHandle< ValueType >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
-    [ "AZ::StableDynamicArrayWeakHandle< AZ::Render::MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
-    [ "AZ::StableDynamicArrayWeakHandle< MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
-    [ "AZ::StableDynamicArrayWeakHandle< ProceduralGeometryType >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
     [ "AZ::SystemTickBus::Handler", null, [
       [ "AZ::RPI::RPISystem", "class_a_z_1_1_r_p_i_1_1_r_p_i_system.html", null ],
       [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ],
@@ -1927,12 +1790,6 @@ var hierarchy =
     [ "AZ::Vulkan::LoaderContext", "class_a_z_1_1_vulkan_1_1_loader_context.html", null ],
     [ "AZ::Vulkan::LoaderContext::Descriptor", "struct_a_z_1_1_vulkan_1_1_loader_context_1_1_descriptor.html", null ],
     [ "AZ::Vulkan::MemoryTypeView< T >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", null ],
-    [ "AZ::Vulkan::MemoryTypeView< BufferMemory >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", [
-      [ "AZ::Vulkan::BufferMemoryView", "class_a_z_1_1_vulkan_1_1_buffer_memory_view.html", null ]
-    ] ],
-    [ "AZ::Vulkan::MemoryTypeView< VulkanMemoryAllocation >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", [
-      [ "AZ::Vulkan::MemoryView", "class_a_z_1_1_vulkan_1_1_memory_view.html", null ]
-    ] ],
     [ "AZ::Vulkan::Pipeline::Descriptor", "struct_a_z_1_1_vulkan_1_1_pipeline_1_1_descriptor.html", null ],
     [ "AZ::Vulkan::PipelineLayout::Descriptor", "struct_a_z_1_1_vulkan_1_1_pipeline_layout_1_1_descriptor.html", null ],
     [ "AZ::Vulkan::Queue::Descriptor", "struct_a_z_1_1_vulkan_1_1_queue_1_1_descriptor.html", null ],
@@ -1974,8 +1831,20 @@ var hierarchy =
       [ "AZ::RPI::WindowContext", "class_a_z_1_1_r_p_i_1_1_window_context.html", null ]
     ] ],
     [ "AzFramework::GenericAssetHandler", null, [
+      [ "AZ::RPI::AssetHandler< StreamingImageAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
+        [ "AZ::RPI::StreamingImageAssetHandler", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_handler.html", null ]
+      ] ],
       [ "AZ::RPI::AssetHandler< AnyAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
         [ "AZ::RPI::AnyAssetHandler", "class_a_z_1_1_r_p_i_1_1_any_asset_handler.html", null ]
+      ] ],
+      [ "AZ::RPI::AssetHandler< ModelAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
+        [ "AZ::RPI::ModelAssetHandler", "class_a_z_1_1_r_p_i_1_1_model_asset_handler.html", null ]
+      ] ],
+      [ "AZ::RPI::AssetHandler< MaterialTypeAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
+        [ "AZ::RPI::MaterialTypeAssetHandler", "class_a_z_1_1_r_p_i_1_1_material_type_asset_handler.html", null ]
+      ] ],
+      [ "AZ::RPI::AssetHandler< ShaderAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
+        [ "AZ::RPI::ShaderAssetHandler", "class_a_z_1_1_r_p_i_1_1_shader_asset_handler.html", null ]
       ] ],
       [ "AZ::RPI::AssetHandler< ImageMipChainAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
         [ "AZ::RPI::ImageMipChainAssetHandler", "class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset_handler.html", null ]
@@ -1983,23 +1852,11 @@ var hierarchy =
       [ "AZ::RPI::AssetHandler< MaterialAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
         [ "AZ::RPI::MaterialAssetHandler", "class_a_z_1_1_r_p_i_1_1_material_asset_handler.html", null ]
       ] ],
-      [ "AZ::RPI::AssetHandler< MaterialTypeAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
-        [ "AZ::RPI::MaterialTypeAssetHandler", "class_a_z_1_1_r_p_i_1_1_material_type_asset_handler.html", null ]
-      ] ],
-      [ "AZ::RPI::AssetHandler< ModelAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
-        [ "AZ::RPI::ModelAssetHandler", "class_a_z_1_1_r_p_i_1_1_model_asset_handler.html", null ]
-      ] ],
-      [ "AZ::RPI::AssetHandler< ShaderAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
-        [ "AZ::RPI::ShaderAssetHandler", "class_a_z_1_1_r_p_i_1_1_shader_asset_handler.html", null ]
-      ] ],
-      [ "AZ::RPI::AssetHandler< ShaderVariantAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
-        [ "AZ::RPI::ShaderVariantAssetHandler", "class_a_z_1_1_r_p_i_1_1_shader_variant_asset_handler.html", null ]
-      ] ],
       [ "AZ::RPI::AssetHandler< ShaderVariantTreeAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
         [ "AZ::RPI::ShaderVariantTreeAssetHandler", "class_a_z_1_1_r_p_i_1_1_shader_variant_tree_asset_handler.html", null ]
       ] ],
-      [ "AZ::RPI::AssetHandler< StreamingImageAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
-        [ "AZ::RPI::StreamingImageAssetHandler", "class_a_z_1_1_r_p_i_1_1_streaming_image_asset_handler.html", null ]
+      [ "AZ::RPI::AssetHandler< ShaderVariantAsset >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", [
+        [ "AZ::RPI::ShaderVariantAssetHandler", "class_a_z_1_1_r_p_i_1_1_shader_variant_asset_handler.html", null ]
       ] ],
       [ "AZ::RPI::AssetHandler< AssetDataT >", "class_a_z_1_1_r_p_i_1_1_asset_handler.html", null ]
     ] ],
@@ -2055,7 +1912,6 @@ var hierarchy =
     [ "AZStd::hash< T >", "struct_a_z_std_1_1hash.html", null ],
     [ "AZStd::hash< AZ::Render::MeshInstanceGroupKey >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_render_1_1_mesh_instance_group_key_01_4.html", null ],
     [ "AZStd::hash< AZ::RHI::Handle< HandleType, NamespaceType > >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_r_h_i_1_1_handle_3_01_handle_type_00_01_namespace_type_01_4_01_4.html", null ],
-    [ "AZStd::hash< AZ::RHI::PipelineStateCache::PipelineStateEntry >", "struct_a_z_std_1_1hash.html", null ],
     [ "AZStd::hash< AZ::RHI::ShaderSemantic >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_r_h_i_1_1_shader_semantic_01_4.html", null ],
     [ "AZStd::hash< AZ::RPI::MaterialPipelineSourceData::ShaderTemplate >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_r_p_i_1_1_material_pipeline_source_data_1_1_shader_template_01_4.html", null ],
     [ "AZStd::hash< AZ::RPI::MaterialPropertyId >", "struct_a_z_std_1_1hash_3_01_a_z_1_1_r_p_i_1_1_material_property_id_01_4.html", null ],
@@ -2169,57 +2025,13 @@ var hierarchy =
       [ "AZ::RPI::Query", "class_a_z_1_1_r_p_i_1_1_query.html", null ]
     ] ],
     [ "AZStd::shared_ptr< T >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AtomToolsFramework::DynamicPropertyGroup >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AtomToolsFramework::EntityPreviewViewportContent >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AtomToolsFramework::EntityPreviewViewportInputController >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AtomToolsFramework::EntityPreviewViewportScene >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AtomToolsFramework::GraphCompiler >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AtomToolsFramework::GraphTemplateFileDataCache >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AtomToolsFramework::PreviewContent >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AtomToolsFramework::ViewportInputBehavior >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::DX12::DescriptorContext >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RHI::BufferViewDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RHI::ClearValue >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RHI::ImageViewDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RHI::RayTracingShaderTableDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RHI::ResourcePoolDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RHI::ScopeProducer >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RPI::AttachmentReadback >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RPI::ImageAttachmentCopy >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RPI::PassData >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RPI::PassRequest >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RPI::PassTemplate >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::RPI::WindowContext >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::ShaderBuilder::ShaderFiles >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::StableDynamicArrayHandle< ModelDataInstance > >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZ::Vulkan::SignalEvent >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AzFramework::EntityContext >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AzFramework::Scene >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< AZStd::vector< uint8_t > >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< class AuxGeomDraw >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< const AZ::RPI::PassTemplate >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< const BitangentData >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< const MeshData >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< const TangentData >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< GraphModel::GraphContext >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< GraphViewSettings >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< IImageObject >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< ImageProcessingAtom::ImageConvertProcessDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< ImageProcessingAtom::Utils::AsyncImageAssetLoader >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< MeshLoader >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< RenderPipeline >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< Scene >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< View >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< ViewGroup >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< ViewportContext >", "class_a_z_std_1_1shared__ptr.html", null ],
-    [ "AZStd::shared_ptr< WindowContext >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "AZStd::ThreadEventBus::Handler", null, [
-      [ "AZ::RHI::ThreadLocalContext< AZStd::lru_cache< uint64_t, D3D12_RESOURCE_ALLOCATION_INFO > >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
-      [ "AZ::RHI::ThreadLocalContext< AZ::RHI::MemorySubAllocator >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
-      [ "AZ::RHI::ThreadLocalContext< DrawListsByTag >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
-      [ "AZ::RHI::ThreadLocalContext< ThreadLibrarySet >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
-      [ "AZ::RHI::ThreadLocalContext< VisibleObjectList >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
       [ "AZ::RHI::ThreadLocalContext< AZStd::lru_cache< uint64_t, VkMemoryRequirements > >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< DrawListsByTag >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< AZ::RHI::MemorySubAllocator >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< VisibleObjectList >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< AZStd::lru_cache< uint64_t, D3D12_RESOURCE_ALLOCATION_INFO > >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
+      [ "AZ::RHI::ThreadLocalContext< ThreadLibrarySet >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ],
       [ "AZ::RHI::ThreadLocalContext< Storage >", "class_a_z_1_1_r_h_i_1_1_thread_local_context.html", null ]
     ] ],
     [ "AzToolsFramework::AssetBrowser::AssetBrowserInteractionNotificationBus::Handler", null, [
@@ -2305,6 +2117,7 @@ var hierarchy =
       [ "AZ::RPI::JsonMaterialPropertyValueSerializer", "class_a_z_1_1_r_p_i_1_1_json_material_property_value_serializer.html", null ],
       [ "AZ::RPI::JsonMaterialPropertyValueSourceDataSerializer", "class_a_z_1_1_r_p_i_1_1_json_material_property_value_source_data_serializer.html", null ]
     ] ],
+    [ "AZ::RHI::BufferProperty< QueueId >", "class_a_z_1_1_r_h_i_1_1_buffer_property.html", null ],
     [ "BufferResourceViewData", "struct_buffer_resource_view_data.html", null ],
     [ "Camera::CameraRequestBus::Handler", null, [
       [ "AZ::Debug::CameraComponent", "class_a_z_1_1_debug_1_1_camera_component.html", null ]
@@ -2390,6 +2203,7 @@ var hierarchy =
     [ "EntityPreviewViewportSettingsRequestBus::Handler", null, [
       [ "AtomToolsFramework::EntityPreviewViewportSettingsSystem", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_system.html", null ]
     ] ],
+    [ "AZ::EnvironmentVariable< ImageProcessingAtom::BuilderSettingManager * >", "class_a_z_1_1_environment_variable.html", null ],
     [ "FactoryManagerBus::Handler", null, [
       [ "AZ::RHI::FactoryManagerSystemComponent", "class_a_z_1_1_r_h_i_1_1_factory_manager_system_component.html", null ]
     ] ],
@@ -2399,6 +2213,16 @@ var hierarchy =
     [ "FrameCaptureTestRequestBus::Handler", null, [
       [ "AZ::Render::FrameCaptureSystemComponent", "class_a_z_1_1_render_1_1_frame_capture_system_component.html", null ]
     ] ],
+    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::DX12::RayTracingBlas::BlasBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
+    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::DX12::RayTracingShaderTable::ShaderTableBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
+    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::DX12::RayTracingTlas::TlasBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
+    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::Vulkan::RayTracingBlas::BlasBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
+    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::Vulkan::RayTracingShaderTable::ShaderTableBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
+    [ "AZ::RHI::FrameCountMaxRingBuffer< AZ::Vulkan::RayTracingTlas::TlasBuffers >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
+    [ "AZ::RHI::FrameCountMaxRingBuffer< Data::Instance< Buffer > >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", [
+      [ "AZ::RPI::RingBuffer", "class_a_z_1_1_r_p_i_1_1_ring_buffer.html", null ]
+    ] ],
+    [ "AZ::RHI::FrameCountMaxRingBuffer< void * >", "class_a_z_1_1_r_h_i_1_1_frame_count_max_ring_buffer.html", null ],
     [ "FrameEventBus::Handler", null, [
       [ "AZ::RHI::AliasedAttachmentAllocator< Heap >", "class_a_z_1_1_r_h_i_1_1_aliased_attachment_allocator.html", null ],
       [ "AZ::RHI::ResourcePool", "class_a_z_1_1_r_h_i_1_1_resource_pool.html", null ]
@@ -2439,6 +2263,21 @@ var hierarchy =
     [ "GraphTemplateFileDataCacheRequestBus::Handler", null, [
       [ "AtomToolsFramework::GraphTemplateFileDataCache", "class_atom_tools_framework_1_1_graph_template_file_data_cache.html", null ]
     ] ],
+    [ "AZ::RHI::Handle< size_t >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint16_t, RootParameter >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint16_t, SkyAtmosphereFeatureProcessorInterface >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint32_t >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint32_t, class ShaderAsset >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint32_t, class ShaderOptionIndexNamespace >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint32_t, class ShaderOptionValueNamespace >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint32_t, MaterialPropertyIndexType >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint32_t, ShaderInputConstantDescriptor >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint32_t, ShaderVariantId >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint32_t, TransformServiceFeatureProcessorInterface >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint64_t, AsyncWorkQueue >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint64_t, class Window >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZ::RHI::Handle< uint8_t >", "struct_a_z_1_1_r_h_i_1_1_handle.html", null ],
+    [ "AZStd::hash< AZ::RHI::PipelineStateCache::PipelineStateEntry >", "struct_a_z_std_1_1hash.html", null ],
     [ "Heap::Descriptor", null, [
       [ "AZ::RHI::AliasedAttachmentAllocator< Heap >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_aliased_attachment_allocator_1_1_descriptor.html", null ]
     ] ],
@@ -2489,6 +2328,65 @@ var hierarchy =
     [ "ImageProcessingAtom::ImageToProcess", "class_image_processing_atom_1_1_image_to_process.html", null ],
     [ "ImageProcessingAtom::IPixelOperation", "class_image_processing_atom_1_1_i_pixel_operation.html", null ],
     [ "ImageProcessingAtom::IWindowFunction< T >", "class_image_processing_atom_1_1_i_window_function.html", null ],
+    [ "ImageProcessingAtom::MipmapSettings", "struct_image_processing_atom_1_1_mipmap_settings.html", null ],
+    [ "ImageProcessingAtom::MultiplatformPresetSettings", "class_image_processing_atom_1_1_multiplatform_preset_settings.html", null ],
+    [ "ImageProcessingAtom::PixelFormatInfo", "struct_image_processing_atom_1_1_pixel_format_info.html", null ],
+    [ "ImageProcessingAtom::PlatformSetting", "struct_image_processing_atom_1_1_platform_setting.html", null ],
+    [ "ImageProcessingAtom::PresetSettings", "class_image_processing_atom_1_1_preset_settings.html", null ],
+    [ "ImageProcessingAtom::SFilterProgress", "struct_image_processing_atom_1_1_s_filter_progress.html", null ],
+    [ "ImageProcessingAtom::SHalf", "struct_image_processing_atom_1_1_s_half.html", null ],
+    [ "ImageProcessingAtom::SThreadOptionsThread0", "struct_image_processing_atom_1_1_s_thread_options_thread0.html", null ],
+    [ "ImageProcessingAtom::SThreadOptionsThread1", "struct_image_processing_atom_1_1_s_thread_options_thread1.html", null ],
+    [ "ImageProcessingAtom::TextureSettings", "class_image_processing_atom_1_1_texture_settings.html", null ],
+    [ "ImageProcessingAtomEditor::ImageProcessingEditorRequestBus::Handler", null, [
+      [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ]
+    ] ],
+    [ "ImageProcessingRequestBus::Handler", null, [
+      [ "ImageProcessingAtom::BuilderPluginComponent", "class_image_processing_atom_1_1_builder_plugin_component.html", null ],
+      [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ]
+    ] ],
+    [ "AZ::RHI::ImageProperty< D3D12_RESOURCE_STATES >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
+    [ "AZ::RHI::ImageProperty< QueueId >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
+    [ "AZ::RHI::ImageProperty< VkImageLayout >", "class_a_z_1_1_r_h_i_1_1_image_property.html", null ],
+    [ "ImageResourceViewData", "struct_image_resource_view_data.html", null ],
+    [ "ImageTagBus::Handler", null, [
+      [ "AZ::RPI::ImageTagSystemComponent", "class_a_z_1_1_r_p_i_1_1_image_tag_system_component.html", null ]
+    ] ],
+    [ "ImGui::ImGuiFrameVisualizerField", "class_im_gui_1_1_im_gui_frame_visualizer_field.html", [
+      [ "ImGui::ImGuiFrameVisualizerTextField", "class_im_gui_1_1_im_gui_frame_visualizer_text_field.html", null ]
+    ] ],
+    [ "ImGui::ImGuiFrameVisualizerNode", "class_im_gui_1_1_im_gui_frame_visualizer_node.html", null ],
+    [ "ImGui::ImGuiFrameVisualizerWindow", "class_im_gui_1_1_im_gui_frame_visualizer_window.html", null ],
+    [ "ImGuiSystemNotificationBus::Handler", null, [
+      [ "AZ::Render::ImGuiActiveContextScope", "class_a_z_1_1_render_1_1_im_gui_active_context_scope.html", null ]
+    ] ],
+    [ "ImGuiSystemRequestBus::Handler", null, [
+      [ "AZ::Render::ImGuiSystemComponent", "class_a_z_1_1_render_1_1_im_gui_system_component.html", null ]
+    ] ],
+    [ "AZ::Render::IndexableList< AZStd::pair< AZ::RHI::Size, AZ::Render::DecalTextureArray > >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
+    [ "AZ::Render::IndexableList< MaterialData >", "class_a_z_1_1_render_1_1_indexable_list.html", null ],
+    [ "AZ::Render::IndexedDataVector< AZ::Render::DirectionalLightData >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
+    [ "AZ::Render::IndexedDataVector< AZ::Render::DirectionalLightFeatureProcessor::ShadowProperty >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
+    [ "AZ::Render::IndexedDataVector< ShadowProperty >", "class_a_z_1_1_render_1_1_indexed_data_vector.html", null ],
+    [ "InspectorRequestBus::Handler", null, [
+      [ "AtomToolsFramework::InspectorWidget", "class_atom_tools_framework_1_1_inspector_widget.html", [
+        [ "AtomToolsFramework::AtomToolsDocumentInspector", "class_atom_tools_framework_1_1_atom_tools_document_inspector.html", null ],
+        [ "AtomToolsFramework::EntityPreviewViewportSettingsInspector", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_inspector.html", null ]
+      ] ]
+    ] ],
+    [ "AZ::RHI::interval_map< uint32_t, D3D12_RESOURCE_STATES >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
+    [ "AZ::RHI::interval_map< uint32_t, QueueId >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
+    [ "AZ::RHI::interval_map< uint32_t, T >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
+    [ "AZ::RHI::interval_map< uint32_t, VkImageLayout >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
+    [ "AZ::RHI::interval_map< uint64_t, QueueId >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
+    [ "AZ::RHI::interval_map< uint64_t, T >", "class_a_z_1_1_r_h_i_1_1interval__map.html", null ],
+    [ "IUnknownImpl", null, [
+      [ "D3D12MA::Allocation", "class_d3_d12_m_a_1_1_allocation.html", null ],
+      [ "D3D12MA::Allocator", "class_d3_d12_m_a_1_1_allocator.html", null ],
+      [ "D3D12MA::DefragmentationContext", "class_d3_d12_m_a_1_1_defragmentation_context.html", null ],
+      [ "D3D12MA::Pool", "class_d3_d12_m_a_1_1_pool.html", null ],
+      [ "D3D12MA::VirtualBlock", "class_d3_d12_m_a_1_1_virtual_block.html", null ]
+    ] ],
     [ "ImageProcessingAtom::IWindowFunction< double >", "class_image_processing_atom_1_1_i_window_function.html", [
       [ "ImageProcessingAtom::BoxWindowFunction< double >", "class_image_processing_atom_1_1_box_window_function.html", [
         [ "ImageProcessingAtom::PointWindowFunction< T >", "class_image_processing_atom_1_1_point_window_function.html", null ]
@@ -2519,54 +2417,6 @@ var hierarchy =
       [ "ImageProcessingAtom::SineWindowFunction< T >", "class_image_processing_atom_1_1_sine_window_function.html", null ],
       [ "ImageProcessingAtom::TriangleWindowFunction< T >", "class_image_processing_atom_1_1_triangle_window_function.html", null ]
     ] ],
-    [ "ImageProcessingAtom::MipmapSettings", "struct_image_processing_atom_1_1_mipmap_settings.html", null ],
-    [ "ImageProcessingAtom::MultiplatformPresetSettings", "class_image_processing_atom_1_1_multiplatform_preset_settings.html", null ],
-    [ "ImageProcessingAtom::PixelFormatInfo", "struct_image_processing_atom_1_1_pixel_format_info.html", null ],
-    [ "ImageProcessingAtom::PlatformSetting", "struct_image_processing_atom_1_1_platform_setting.html", null ],
-    [ "ImageProcessingAtom::PresetSettings", "class_image_processing_atom_1_1_preset_settings.html", null ],
-    [ "ImageProcessingAtom::SFilterProgress", "struct_image_processing_atom_1_1_s_filter_progress.html", null ],
-    [ "ImageProcessingAtom::SHalf", "struct_image_processing_atom_1_1_s_half.html", null ],
-    [ "ImageProcessingAtom::SThreadOptionsThread0", "struct_image_processing_atom_1_1_s_thread_options_thread0.html", null ],
-    [ "ImageProcessingAtom::SThreadOptionsThread1", "struct_image_processing_atom_1_1_s_thread_options_thread1.html", null ],
-    [ "ImageProcessingAtom::TextureSettings", "class_image_processing_atom_1_1_texture_settings.html", null ],
-    [ "ImageProcessingAtomEditor::EditorHelper", "class_image_processing_atom_editor_1_1_editor_helper.html", null ],
-    [ "ImageProcessingAtomEditor::EditorTextureSetting", "struct_image_processing_atom_editor_1_1_editor_texture_setting.html", null ],
-    [ "ImageProcessingAtomEditor::ImageProcessingEditorRequestBus::Handler", null, [
-      [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ]
-    ] ],
-    [ "ImageProcessingAtomEditor::ResolutionInfo", "struct_image_processing_atom_editor_1_1_resolution_info.html", null ],
-    [ "ImageProcessingRequestBus::Handler", null, [
-      [ "ImageProcessingAtom::BuilderPluginComponent", "class_image_processing_atom_1_1_builder_plugin_component.html", null ],
-      [ "ImageProcessingAtom::ImageProcessingSystemComponent", "class_image_processing_atom_1_1_image_processing_system_component.html", null ]
-    ] ],
-    [ "ImageResourceViewData", "struct_image_resource_view_data.html", null ],
-    [ "ImageTagBus::Handler", null, [
-      [ "AZ::RPI::ImageTagSystemComponent", "class_a_z_1_1_r_p_i_1_1_image_tag_system_component.html", null ]
-    ] ],
-    [ "ImGui::ImGuiFrameVisualizerField", "class_im_gui_1_1_im_gui_frame_visualizer_field.html", [
-      [ "ImGui::ImGuiFrameVisualizerTextField", "class_im_gui_1_1_im_gui_frame_visualizer_text_field.html", null ]
-    ] ],
-    [ "ImGui::ImGuiFrameVisualizerNode", "class_im_gui_1_1_im_gui_frame_visualizer_node.html", null ],
-    [ "ImGui::ImGuiFrameVisualizerWindow", "class_im_gui_1_1_im_gui_frame_visualizer_window.html", null ],
-    [ "ImGuiSystemNotificationBus::Handler", null, [
-      [ "AZ::Render::ImGuiActiveContextScope", "class_a_z_1_1_render_1_1_im_gui_active_context_scope.html", null ]
-    ] ],
-    [ "ImGuiSystemRequestBus::Handler", null, [
-      [ "AZ::Render::ImGuiSystemComponent", "class_a_z_1_1_render_1_1_im_gui_system_component.html", null ]
-    ] ],
-    [ "InspectorRequestBus::Handler", null, [
-      [ "AtomToolsFramework::InspectorWidget", "class_atom_tools_framework_1_1_inspector_widget.html", [
-        [ "AtomToolsFramework::AtomToolsDocumentInspector", "class_atom_tools_framework_1_1_atom_tools_document_inspector.html", null ],
-        [ "AtomToolsFramework::EntityPreviewViewportSettingsInspector", "class_atom_tools_framework_1_1_entity_preview_viewport_settings_inspector.html", null ]
-      ] ]
-    ] ],
-    [ "IUnknownImpl", null, [
-      [ "D3D12MA::Allocation", "class_d3_d12_m_a_1_1_allocation.html", null ],
-      [ "D3D12MA::Allocator", "class_d3_d12_m_a_1_1_allocator.html", null ],
-      [ "D3D12MA::DefragmentationContext", "class_d3_d12_m_a_1_1_defragmentation_context.html", null ],
-      [ "D3D12MA::Pool", "class_d3_d12_m_a_1_1_pool.html", null ],
-      [ "D3D12MA::VirtualBlock", "class_d3_d12_m_a_1_1_virtual_block.html", null ]
-    ] ],
     [ "MaskedOcclusionCulling", "class_masked_occlusion_culling.html", [
       [ "MaskedOcclusionCullingPrivate", "class_masked_occlusion_culling_private.html", null ]
     ] ],
@@ -2578,8 +2428,21 @@ var hierarchy =
     [ "MaterialDocumentRequestBus::Handler", null, [
       [ "MaterialEditor::MaterialDocument", "class_material_editor_1_1_material_document.html", null ]
     ] ],
+    [ "AZ::RHI::MemoryAllocation< Memory >", "struct_a_z_1_1_r_h_i_1_1_memory_allocation.html", null ],
     [ "MemoryStatisticsEventBus::Handler", null, [
       [ "AZ::RHI::ResourcePool", "class_a_z_1_1_r_h_i_1_1_resource_pool.html", null ]
+    ] ],
+    [ "AZ::RHI::MemorySubAllocator< MemoryFreeListSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
+    [ "AZ::RHI::MemorySubAllocator< MemoryLinearSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
+    [ "AZ::RHI::MemorySubAllocator< MemoryPoolSubAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html", null ],
+    [ "AZ::RHI::MemorySubAllocatorTraits< MemoryType, MemoryPageAllocatorType, LinearAllocator >", "struct_a_z_1_1_r_h_i_1_1_memory_sub_allocator_traits.html", [
+      [ "AZ::RHI::MemoryLinearSubAllocatorTraits< MemoryType, MemoryPageAllocatorType >", "struct_a_z_1_1_r_h_i_1_1_memory_linear_sub_allocator_traits.html", null ]
+    ] ],
+    [ "AZ::Vulkan::MemoryTypeView< BufferMemory >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", [
+      [ "AZ::Vulkan::BufferMemoryView", "class_a_z_1_1_vulkan_1_1_buffer_memory_view.html", null ]
+    ] ],
+    [ "AZ::Vulkan::MemoryTypeView< VulkanMemoryAllocation >", "class_a_z_1_1_vulkan_1_1_memory_type_view.html", [
+      [ "AZ::Vulkan::MemoryView", "class_a_z_1_1_vulkan_1_1_memory_view.html", null ]
     ] ],
     [ "MetalResourceHash", "struct_metal_resource_hash.html", null ],
     [ "ModelTagBus::Handler", null, [
@@ -2588,6 +2451,26 @@ var hierarchy =
     [ "ModularViewportCameraControllerRequestBus::Handler", null, [
       [ "AtomToolsFramework::ModularViewportCameraControllerInstance", "class_atom_tools_framework_1_1_modular_viewport_camera_controller_instance.html", null ]
     ] ],
+    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::CapsuleLightData, AZ::Capsule >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
+    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::DecalData, AZ::Aabb >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
+    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::DiskLightData, MeshCommon::BoundsVariant >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
+    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::PointLightData, AZ::Sphere >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
+    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::QuadLightData, MeshCommon::BoundsVariant >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
+    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::SimplePointLightFeatureProcessor::SimplePointLightData, AZ::Sphere >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
+    [ "AZ::Render::MultiIndexedDataVector< AZ::Render::SimpleSpotLightData, ExtraData >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
+    [ "AZ::Render::MultiIndexedDataVector< PolygonLightData, PolygonPoints, MeshCommon::BoundsVariant >", "class_a_z_1_1_render_1_1_multi_indexed_data_vector.html", null ],
+    [ "AZ::Render::MultiSparseVector< ShadowData, AZ::Render::EsmShadowmapsPass::FilterParameter, uint16_t >", "class_a_z_1_1_render_1_1_multi_sparse_vector.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< AZ::RHI::Handle< uint32_t > >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< MaterialPropertyIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< RHI::Handle< uint32_t > >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< ShaderInputBufferIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< ShaderInputBufferUnboundedArrayIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< ShaderInputConstantIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< ShaderInputImageIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< ShaderInputImageUnboundedArrayIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< ShaderInputSamplerIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< ShaderOptionIndex >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
+    [ "AZ::RHI::NameIdReflectionMap< ShaderOptionValue >", "class_a_z_1_1_r_h_i_1_1_name_id_reflection_map.html", null ],
     [ "NativeViewControllerType", null, [
       [ "RHIMetalViewController", "interface_r_h_i_metal_view_controller.html", null ]
     ] ],
@@ -2597,8 +2480,48 @@ var hierarchy =
     [ "NoClipControllerRequestBus::Handler", null, [
       [ "AZ::Debug::NoClipControllerComponent", "class_a_z_1_1_debug_1_1_no_clip_controller_component.html", null ]
     ] ],
+    [ "AZ::RHI::ObjectCache< AZ::DX12::Sampler >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
+    [ "AZ::RHI::ObjectCache< AZ::RHI::BufferView >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
+    [ "AZ::RHI::ObjectCache< AZ::RHI::ImageView >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
+    [ "AZ::RHI::ObjectCache< AZ::RHI::MultiDeviceResource >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
+    [ "AZ::RHI::ObjectCache< AZ::RHI::Resource >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
+    [ "AZ::RHI::ObjectCache< AZ::Vulkan::MergedShaderResourceGroup, MergedShaderResourceGroup::ShaderResourceGroupArray >", "class_a_z_1_1_r_h_i_1_1_object_cache.html", null ],
+    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::DX12::Sampler >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
+    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::BufferView >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
+    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::ImageView >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
+    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::MultiDeviceResource >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
+    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::RHI::Resource >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
+    [ "AZ::RHI::ObjectCacheEvictionCallbackNull< AZ::Vulkan::MergedShaderResourceGroup >", "struct_a_z_1_1_r_h_i_1_1_object_cache_eviction_callback_null.html", null ],
+    [ "AZ::RHI::ObjectCollector< D3d12maReleaseQueueTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
+    [ "AZ::RHI::ObjectCollector< DescriptorPoolAllocatorlTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
+    [ "AZ::RHI::ObjectCollector< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
+    [ "AZ::RHI::ObjectCollector< MemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
+    [ "AZ::RHI::ObjectCollector< ReleaseQueueTraits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
+    [ "AZ::RHI::ObjectCollector< Traits >", "class_a_z_1_1_r_h_i_1_1_object_collector.html", null ],
+    [ "AZ::RHI::ObjectFactoryBase< CommandList >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
+      [ "AZ::Metal::CommandListFactory", "class_a_z_1_1_metal_1_1_command_list_factory.html", null ]
+    ] ],
+    [ "AZ::RHI::ObjectFactoryBase< CommandPool >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
+    [ "AZ::RHI::ObjectFactoryBase< DescriptorPool >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
+    [ "AZ::RHI::ObjectFactoryBase< Heap >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
+      [ "AZ::DX12::HeapFactory", "class_a_z_1_1_d_x12_1_1_heap_factory.html", null ]
+    ] ],
+    [ "AZ::RHI::ObjectFactoryBase< ID3D12CommandAllocator >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
+    [ "AZ::RHI::ObjectFactoryBase< Memory >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", [
+      [ "AZ::DX12::MemoryPageFactory", "class_a_z_1_1_d_x12_1_1_memory_page_factory.html", null ],
+      [ "AZ::Metal::MemoryPageFactory", "class_a_z_1_1_metal_1_1_memory_page_factory.html", null ]
+    ] ],
+    [ "AZ::RHI::ObjectFactoryBase< Semaphore >", "class_a_z_1_1_r_h_i_1_1_object_factory_base.html", null ],
     [ "ObjectFactoryDescriptor", null, [
       [ "AZ::RHI::ObjectPool< Traits >::Descriptor", "struct_a_z_1_1_r_h_i_1_1_object_pool_1_1_descriptor.html", null ]
+    ] ],
+    [ "AZ::RHI::ObjectPool< DescriptorPoolAllocatorlTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", null ],
+    [ "AZ::RHI::ObjectPool< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", [
+      [ "AZ::DX12::HeapAllocator", "class_a_z_1_1_d_x12_1_1_heap_allocator.html", null ]
+    ] ],
+    [ "AZ::RHI::ObjectPool< MemoryPageAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_object_pool.html", [
+      [ "AZ::DX12::MemoryPageAllocator", "class_a_z_1_1_d_x12_1_1_memory_page_allocator.html", null ],
+      [ "AZ::Metal::MemoryPageAllocator", "class_a_z_1_1_metal_1_1_memory_page_allocator.html", null ]
     ] ],
     [ "PerformanceCollectorOwner::Registrar", null, [
       [ "AZ::RPI::RPISystemComponent", "class_a_z_1_1_r_p_i_1_1_r_p_i_system_component.html", null ]
@@ -2664,6 +2587,9 @@ var hierarchy =
       [ "ImageProcessingAtomEditor::TexturePresetSelectionWidget", "class_image_processing_atom_editor_1_1_texture_preset_selection_widget.html", null ],
       [ "ImageProcessingAtomEditor::TexturePreviewWidget", "class_image_processing_atom_editor_1_1_texture_preview_widget.html", null ]
     ] ],
+    [ "AZ::Render::RayTracingIndexList< 1 >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
+    [ "AZ::Render::RayTracingIndexList< NumMaterialTexturesPerMesh >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
+    [ "AZ::Render::RayTracingIndexList< NumMeshBuffersPerMesh >", "class_a_z_1_1_render_1_1_ray_tracing_index_list.html", null ],
     [ "Render::Bootstrap::DefaultWindowBus::Handler", null, [
       [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ]
     ] ],
@@ -2826,12 +2752,67 @@ var hierarchy =
       [ "AZ::RPI::Shader", "class_a_z_1_1_r_p_i_1_1_shader.html", null ],
       [ "AZ::RPI::ShaderAsset", "class_a_z_1_1_r_p_i_1_1_shader_asset.html", null ]
     ] ],
+    [ "AZStd::shared_ptr< AtomToolsFramework::DynamicPropertyGroup >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AtomToolsFramework::EntityPreviewViewportContent >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AtomToolsFramework::EntityPreviewViewportInputController >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AtomToolsFramework::EntityPreviewViewportScene >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AtomToolsFramework::GraphCompiler >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AtomToolsFramework::GraphTemplateFileDataCache >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AtomToolsFramework::PreviewContent >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AtomToolsFramework::ViewportInputBehavior >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::DX12::DescriptorContext >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::BufferViewDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::ClearValue >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::ImageViewDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::RayTracingShaderTableDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::ResourcePoolDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RHI::ScopeProducer >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RPI::AttachmentReadback >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RPI::ImageAttachmentCopy >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RPI::PassData >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RPI::PassRequest >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RPI::PassTemplate >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::RPI::WindowContext >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::ShaderBuilder::ShaderFiles >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZ::Vulkan::SignalEvent >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AzFramework::EntityContext >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AzFramework::Scene >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< AZStd::vector< uint8_t > >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< class AuxGeomDraw >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< const AZ::RPI::PassTemplate >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< const BitangentData >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< const MeshData >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< const TangentData >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< GraphModel::GraphContext >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< GraphViewSettings >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< IImageObject >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< ImageProcessingAtom::ImageConvertProcessDescriptor >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< ImageProcessingAtom::Utils::AsyncImageAssetLoader >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< MeshLoader >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< RenderPipeline >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< Scene >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< StableDynamicArrayHandle< ModelDataInstance > >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< View >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< ViewGroup >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< ViewportContext >", "class_a_z_std_1_1shared__ptr.html", null ],
+    [ "AZStd::shared_ptr< WindowContext >", "class_a_z_std_1_1shared__ptr.html", null ],
     [ "SkinnedMeshShaderOptionNotificationBus::Handler", null, [
       [ "AZ::Render::SkinnedMeshDispatchItem", "class_a_z_1_1_render_1_1_skinned_mesh_dispatch_item.html", null ]
     ] ],
     [ "SkinnedMeshStatsRequestBus::Handler", null, [
       [ "AZ::Render::SkinnedMeshStatsCollector", "class_a_z_1_1_render_1_1_skinned_mesh_stats_collector.html", null ]
     ] ],
+    [ "AZ::Render::SparseVector< SkyAtmosphere >", "class_a_z_1_1_render_1_1_sparse_vector.html", null ],
+    [ "AZ::StableDynamicArray< AZ::Render::ModelDataInstance >", "class_a_z_1_1_stable_dynamic_array.html", null ],
+    [ "AZ::StableDynamicArray< AZ::Render::SkinnedMeshRenderProxy >", "class_a_z_1_1_stable_dynamic_array.html", null ],
+    [ "AZ::StableDynamicArray< MeshInstanceGroupData, 4096 >", "class_a_z_1_1_stable_dynamic_array.html", null ],
+    [ "AZ::StableDynamicArray< ProceduralGeometryType >", "class_a_z_1_1_stable_dynamic_array.html", null ],
+    [ "AZ::StableDynamicArray< T, ElementsPerPage, Allocator >", "class_a_z_1_1_stable_dynamic_array.html", null ],
+    [ "AZ::StableDynamicArrayHandle< MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_handle.html", null ],
+    [ "AZ::StableDynamicArrayHandle< ModelDataInstance >", "class_a_z_1_1_stable_dynamic_array_handle.html", null ],
+    [ "AZ::StableDynamicArrayWeakHandle< AZ::Render::MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
+    [ "AZ::StableDynamicArrayWeakHandle< MeshInstanceGroupData >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
+    [ "AZ::StableDynamicArrayWeakHandle< ProceduralGeometryType >", "class_a_z_1_1_stable_dynamic_array_weak_handle.html", null ],
     [ "StdVideoDecodeH264PictureInfo", "struct_std_video_decode_h264_picture_info.html", null ],
     [ "StdVideoDecodeH264PictureInfoFlags", "struct_std_video_decode_h264_picture_info_flags.html", null ],
     [ "StdVideoDecodeH264ReferenceInfo", "struct_std_video_decode_h264_reference_info.html", null ],
@@ -2872,6 +2853,7 @@ var hierarchy =
       [ "AZ::Debug::NoClipControllerComponent", "class_a_z_1_1_debug_1_1_no_clip_controller_component.html", null ],
       [ "AZ::Render::Bootstrap::BootstrapSystemComponent", "class_a_z_1_1_render_1_1_bootstrap_1_1_bootstrap_system_component.html", null ]
     ] ],
+    [ "AZ::RHI::TileAllocator< HeapAllocatorTraits >", "class_a_z_1_1_r_h_i_1_1_tile_allocator.html", null ],
     [ "TransformNotificationBus::Handler", null, [
       [ "AZ::Debug::CameraComponent", "class_a_z_1_1_debug_1_1_camera_component.html", null ]
     ] ],

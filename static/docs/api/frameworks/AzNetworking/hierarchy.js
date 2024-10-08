@@ -17,10 +17,6 @@ var hierarchy =
     [ "AzNetworking::AzContainerHelper::HasReserveMethod< TYPE >", "struct_az_networking_1_1_az_container_helper_1_1_has_reserve_method.html", null ],
     [ "AzNetworking::AzContainerHelper::IsIterableContainer< C >", "struct_az_networking_1_1_az_container_helper_1_1_is_iterable_container.html", null ],
     [ "AzNetworking::ByteBuffer< SIZE >", "class_az_networking_1_1_byte_buffer.html", null ],
-    [ "AzNetworking::ByteBuffer< 1024 >", "class_az_networking_1_1_byte_buffer.html", null ],
-    [ "AzNetworking::ByteBuffer< MaxPacketSize >", "class_az_networking_1_1_byte_buffer.html", null ],
-    [ "AzNetworking::ByteBuffer< MaxUdpReceiveBufferSize >", "class_az_networking_1_1_byte_buffer.html", null ],
-    [ "AzNetworking::ByteBuffer< MaxUdpTransmissionUnit >", "class_az_networking_1_1_byte_buffer.html", null ],
     [ "AzNetworking::CidrAddress", "class_az_networking_1_1_cidr_address.html", null ],
     [ "AzNetworking::ConnectionComputeRtt", "class_az_networking_1_1_connection_compute_rtt.html", null ],
     [ "AzNetworking::ConnectionMetrics", "struct_az_networking_1_1_connection_metrics.html", null ],
@@ -30,8 +26,8 @@ var hierarchy =
     [ "AzNetworking::DatarateMetrics", "class_az_networking_1_1_datarate_metrics.html", null ],
     [ "AzNetworking::DtlsEndpoint", "class_az_networking_1_1_dtls_endpoint.html", null ],
     [ "AzNetworking::IBitset", "class_az_networking_1_1_i_bitset.html", [
-      [ "AzNetworking::FixedSizeBitset< CAPACITY, uint8_t >", "class_az_networking_1_1_fixed_size_bitset.html", null ],
       [ "AzNetworking::FixedSizeBitset< 1, uint8_t >", "class_az_networking_1_1_fixed_size_bitset.html", null ],
+      [ "AzNetworking::FixedSizeBitset< CAPACITY, uint8_t >", "class_az_networking_1_1_fixed_size_bitset.html", null ],
       [ "AzNetworking::FixedSizeVectorBitset< 255 >", "class_az_networking_1_1_fixed_size_vector_bitset.html", null ],
       [ "AzNetworking::FixedSizeBitset< SIZE, ElementType >", "class_az_networking_1_1_fixed_size_bitset.html", null ],
       [ "AzNetworking::FixedSizeBitsetView", "class_az_networking_1_1_fixed_size_bitset_view.html", null ],
@@ -89,7 +85,6 @@ var hierarchy =
     [ "AzNetworking::QuantizedValuesHelper< 3 >", "struct_az_networking_1_1_quantized_values_helper_3_013_01_4.html", null ],
     [ "AzNetworking::QuantizedValuesHelper< 4 >", "struct_az_networking_1_1_quantized_values_helper_3_014_01_4.html", null ],
     [ "AzNetworking::RingbufferBitset< SIZE >", "class_az_networking_1_1_ringbuffer_bitset.html", null ],
-    [ "AzNetworking::RingbufferBitset< PacketWindowAckCount >", "class_az_networking_1_1_ringbuffer_bitset.html", null ],
     [ "AzNetworking::ScopedEnableValidation", "struct_az_networking_1_1_scoped_enable_validation.html", null ],
     [ "AzNetworking::SequenceGenerator", "class_az_networking_1_1_sequence_generator.html", null ],
     [ "AzNetworking::SerializeAzContainer< TYPE >", "struct_az_networking_1_1_serialize_az_container.html", null ],
@@ -119,8 +114,6 @@ var hierarchy =
     [ "AzNetworking::SerializeType< OBJECT_TYPE >", "struct_az_networking_1_1_serialize_type.html", null ],
     [ "AzNetworking::TcpNetworkInterface::PendingConnection", "struct_az_networking_1_1_tcp_network_interface_1_1_pending_connection.html", null ],
     [ "AzNetworking::TcpRingBuffer< SIZE >", "class_az_networking_1_1_tcp_ring_buffer.html", null ],
-    [ "AzNetworking::TcpRingBuffer< RecvRingbufferSize >", "class_az_networking_1_1_tcp_ring_buffer.html", null ],
-    [ "AzNetworking::TcpRingBuffer< SendRingbufferSize >", "class_az_networking_1_1_tcp_ring_buffer.html", null ],
     [ "AzNetworking::TcpRingBufferImpl", "class_az_networking_1_1_tcp_ring_buffer_impl.html", null ],
     [ "AzNetworking::TcpSocket", "class_az_networking_1_1_tcp_socket.html", [
       [ "AzNetworking::TlsSocket", "class_az_networking_1_1_tls_socket.html", null ]
@@ -146,7 +139,14 @@ var hierarchy =
       [ "AzNetworking::TrackChangedSerializer< BASE_TYPE >", "class_az_networking_1_1_track_changed_serializer.html", null ],
       [ "AzNetworking::TypeValidatingSerializer< BASE_TYPE >", "class_az_networking_1_1_type_validating_serializer.html", null ]
     ] ],
+    [ "AzNetworking::ByteBuffer< 1024 >", "class_az_networking_1_1_byte_buffer.html", null ],
+    [ "AzNetworking::ByteBuffer< MaxPacketSize >", "class_az_networking_1_1_byte_buffer.html", null ],
+    [ "AzNetworking::ByteBuffer< MaxUdpReceiveBufferSize >", "class_az_networking_1_1_byte_buffer.html", null ],
+    [ "AzNetworking::ByteBuffer< MaxUdpTransmissionUnit >", "class_az_networking_1_1_byte_buffer.html", null ],
     [ "RingBufferBitset", "class_ring_buffer_bitset.html", null ],
+    [ "AzNetworking::RingbufferBitset< PacketWindowAckCount >", "class_az_networking_1_1_ringbuffer_bitset.html", null ],
     [ "SerializerTypeValidator", "class_serializer_type_validator.html", null ],
+    [ "AzNetworking::TcpRingBuffer< RecvRingbufferSize >", "class_az_networking_1_1_tcp_ring_buffer.html", null ],
+    [ "AzNetworking::TcpRingBuffer< SendRingbufferSize >", "class_az_networking_1_1_tcp_ring_buffer.html", null ],
     [ "UdpSocketReader", "class_udp_socket_reader.html", null ]
 ];

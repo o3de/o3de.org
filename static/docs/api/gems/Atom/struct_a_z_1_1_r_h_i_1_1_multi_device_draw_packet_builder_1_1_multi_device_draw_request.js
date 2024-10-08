@@ -1,5 +1,6 @@
 var struct_a_z_1_1_r_h_i_1_1_multi_device_draw_packet_builder_1_1_multi_device_draw_request =
 [
+    [ "MultiDeviceDrawRequest", "struct_a_z_1_1_r_h_i_1_1_multi_device_draw_packet_builder_1_1_multi_device_draw_request.html#a98d7236e3492612099678e548cb587c8", null ],
     [ "GetDeviceDrawRequest", "struct_a_z_1_1_r_h_i_1_1_multi_device_draw_packet_builder_1_1_multi_device_draw_request.html#aaf5a8a643d817eaabc98d4b9d2fbb428", null ],
     [ "m_deviceStreamBufferViews", "struct_a_z_1_1_r_h_i_1_1_multi_device_draw_packet_builder_1_1_multi_device_draw_request.html#adc714224dc149a383e99360cd46d0d8f", null ],
     [ "m_drawFilterMask", "struct_a_z_1_1_r_h_i_1_1_multi_device_draw_packet_builder_1_1_multi_device_draw_request.html#a96a7cb005bd5eaf1394574a4e03be051", null ],

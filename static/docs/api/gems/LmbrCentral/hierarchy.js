@@ -213,8 +213,10 @@ var hierarchy =
       [ "LmbrCentral::EditorTubeShapeComponentModeRequests", "class_lmbr_central_1_1_editor_tube_shape_component_mode_requests.html", null ]
     ] ],
     [ "AZ::FixedVerticesRequestBus::Handler", null, [
-      [ "LmbrCentral::EditorSplineComponent", "class_lmbr_central_1_1_editor_spline_component.html", null ],
       [ "LmbrCentral::PolygonPrismShape", "class_lmbr_central_1_1_polygon_prism_shape.html", null ]
+    ] ],
+    [ "AZ::FixedVerticesRequestBus::Handler", null, [
+      [ "LmbrCentral::EditorSplineComponent", "class_lmbr_central_1_1_editor_spline_component.html", null ]
     ] ],
     [ "AZ::GameplayNotificationId", "class_a_z_1_1_gameplay_notification_id.html", null ],
     [ "AZ::IO::ArchiveNotificationBus::Handler", null, [
@@ -274,8 +276,10 @@ var hierarchy =
       [ "LmbrCentral::SplineComponentRequests", "class_lmbr_central_1_1_spline_component_requests.html", null ]
     ] ],
     [ "AZ::VariableVerticesRequestBus::Handler", null, [
-      [ "LmbrCentral::EditorSplineComponent", "class_lmbr_central_1_1_editor_spline_component.html", null ],
       [ "LmbrCentral::PolygonPrismShape", "class_lmbr_central_1_1_polygon_prism_shape.html", null ]
+    ] ],
+    [ "AZ::VariableVerticesRequestBus::Handler", null, [
+      [ "LmbrCentral::EditorSplineComponent", "class_lmbr_central_1_1_editor_spline_component.html", null ]
     ] ],
     [ "AZ::VertexContainerNotificationInterface", null, [
       [ "LmbrCentral::PolygonPrismShapeComponentNotification", "class_lmbr_central_1_1_polygon_prism_shape_component_notification.html", null ],
@@ -345,7 +349,7 @@ var hierarchy =
       [ "LmbrCentral::EditorSpawnerComponent", "class_lmbr_central_1_1_editor_spawner_component.html", null ],
       [ "LmbrCentral::EditorSplineComponent", "class_lmbr_central_1_1_editor_spline_component.html", null ],
       [ "LmbrCentral::EditorTagComponent", "class_lmbr_central_1_1_editor_tag_component.html", null ],
-      [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ]
+      [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ]
     ] ],
     [ "AzToolsFramework::CylinderManipulatorRequestBus::Handler", null, [
       [ "LmbrCentral::EditorCylinderShapeComponent", "class_lmbr_central_1_1_editor_cylinder_shape_component.html", null ]
@@ -360,7 +364,7 @@ var hierarchy =
     ] ],
     [ "AzToolsFramework::EditorVisibilityNotificationBus::Handler", null, [
       [ "LmbrCentral::EditorWrappedComponentBase< ReferenceShapeComponent, ReferenceShapeConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-      [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ]
+      [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ]
     ] ],
     [ "AzToolsFramework::RadiusManipulatorRequestBus::Handler", null, [
       [ "LmbrCentral::EditorCapsuleShapeComponent", "class_lmbr_central_1_1_editor_capsule_shape_component.html", null ],
@@ -418,15 +422,6 @@ var hierarchy =
     [ "EditorTubeShapeComponentRequestBus::Handler", null, [
       [ "LmbrCentral::EditorTubeShapeComponent", "class_lmbr_central_1_1_editor_tube_shape_component.html", null ]
     ] ],
-    [ "LmbrCentral::AssetSystemDebugComponent::EventInfo", "struct_lmbr_central_1_1_asset_system_debug_component_1_1_event_info.html", null ],
-    [ "LmbrCentral::AssetSystemDebugComponent::EventSortMostRecentCompleted", "struct_lmbr_central_1_1_asset_system_debug_component_1_1_event_sort_most_recent_completed.html", null ],
-    [ "LmbrCentral::AssetSystemDebugComponent::EventSortOldest", "struct_lmbr_central_1_1_asset_system_debug_component_1_1_event_sort_oldest.html", null ],
-    [ "LmbrCentral::CompoundShapeConfiguration", "class_lmbr_central_1_1_compound_shape_configuration.html", null ],
-    [ "LmbrCentral::EditorTagComponentRequestBus::Handler", null, [
-      [ "LmbrCentral::EditorTagComponent", "class_lmbr_central_1_1_editor_tag_component.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorTubeShapeComponentMode::TubeManipulatorState", "struct_lmbr_central_1_1_editor_tube_shape_component_mode_1_1_tube_manipulator_state.html", null ],
-    [ "LmbrCentral::IntersectionTestDataCache< ShapeConfiguration >", "class_lmbr_central_1_1_intersection_test_data_cache.html", null ],
     [ "LmbrCentral::IntersectionTestDataCache< AZ::PolygonPrism >", "class_lmbr_central_1_1_intersection_test_data_cache.html", null ],
     [ "LmbrCentral::IntersectionTestDataCache< BoxShapeConfig >", "class_lmbr_central_1_1_intersection_test_data_cache.html", [
       [ "LmbrCentral::BoxShape::BoxIntersectionDataCache", "class_lmbr_central_1_1_box_shape_1_1_box_intersection_data_cache.html", null ]
@@ -436,6 +431,15 @@ var hierarchy =
     [ "LmbrCentral::IntersectionTestDataCache< DiskShapeConfig >", "class_lmbr_central_1_1_intersection_test_data_cache.html", null ],
     [ "LmbrCentral::IntersectionTestDataCache< QuadShapeConfig >", "class_lmbr_central_1_1_intersection_test_data_cache.html", null ],
     [ "LmbrCentral::IntersectionTestDataCache< SphereShapeConfig >", "class_lmbr_central_1_1_intersection_test_data_cache.html", null ],
+    [ "LmbrCentral::AssetSystemDebugComponent::EventInfo", "struct_lmbr_central_1_1_asset_system_debug_component_1_1_event_info.html", null ],
+    [ "LmbrCentral::AssetSystemDebugComponent::EventSortMostRecentCompleted", "struct_lmbr_central_1_1_asset_system_debug_component_1_1_event_sort_most_recent_completed.html", null ],
+    [ "LmbrCentral::AssetSystemDebugComponent::EventSortOldest", "struct_lmbr_central_1_1_asset_system_debug_component_1_1_event_sort_oldest.html", null ],
+    [ "LmbrCentral::CompoundShapeConfiguration", "class_lmbr_central_1_1_compound_shape_configuration.html", null ],
+    [ "LmbrCentral::EditorTagComponentRequestBus::Handler", null, [
+      [ "LmbrCentral::EditorTagComponent", "class_lmbr_central_1_1_editor_tag_component.html", null ]
+    ] ],
+    [ "LmbrCentral::EditorTubeShapeComponentMode::TubeManipulatorState", "struct_lmbr_central_1_1_editor_tube_shape_component_mode_1_1_tube_manipulator_state.html", null ],
+    [ "LmbrCentral::IntersectionTestDataCache< ShapeConfiguration >", "class_lmbr_central_1_1_intersection_test_data_cache.html", null ],
     [ "LmbrCentral::OpenBundleInfo", "struct_lmbr_central_1_1_open_bundle_info.html", null ],
     [ "LmbrCentral::PolygonPrismMesh", "struct_lmbr_central_1_1_polygon_prism_mesh.html", null ],
     [ "LmbrCentral::RandomTimedSpawnerConfiguration", "class_lmbr_central_1_1_random_timed_spawner_configuration.html", [

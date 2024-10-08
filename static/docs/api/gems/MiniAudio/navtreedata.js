@@ -40,7 +40,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_mini_audio_1_1_sound_asset.html#ae4af9529194d1292b961f4e27aa38885"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

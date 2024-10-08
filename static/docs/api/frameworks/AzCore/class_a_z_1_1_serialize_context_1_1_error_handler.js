@@ -1,5 +1,7 @@
 var class_a_z_1_1_serialize_context_1_1_error_handler =
 [
+    [ "ErrorHandler", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a8d63d56ca06c7019af83c861a3cbd48b", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a5f317a063c10c2956e27037e8d4000c4", null ],
     [ "GetErrorCount", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a8bf51f64e494709de0733cd98e4e1f6f", null ],
     [ "GetWarningCount", "class_a_z_1_1_serialize_context_1_1_error_handler.html#ae21fbe83fbddcfcf48aea1061c6d4d20", null ],
     [ "Pop", "class_a_z_1_1_serialize_context_1_1_error_handler.html#a11b95ba906b7af3ca48e5f455460a2f5", null ],

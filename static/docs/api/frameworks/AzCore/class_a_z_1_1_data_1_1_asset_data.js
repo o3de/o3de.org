@@ -1,5 +1,8 @@
 var class_a_z_1_1_data_1_1_asset_data =
 [
+    [ "AssetDataFlags", "class_a_z_1_1_data_1_1_asset_data.html#a5a69a78e51e913da2174f82a49fd61a6", [
+      [ "Requeue", "class_a_z_1_1_data_1_1_asset_data.html#a5a69a78e51e913da2174f82a49fd61a6aca7f4a2f6673cbff04bd56da7eac7b4b", null ]
+    ] ],
     [ "AssetStatus", "class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3", [
       [ "NotLoaded", "class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a5111e24c1ecc6266ce0de4b4dc42033b", null ],
       [ "Queued", "class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a7b2f31b90fe1c2cc33a52233c1925df3", null ],
@@ -10,8 +13,40 @@ var class_a_z_1_1_data_1_1_asset_data =
       [ "Ready", "class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3ae7d31fc0602fb2ede144d18cdffd816b", null ],
       [ "Error", "class_a_z_1_1_data_1_1_asset_data.html#ad5dfcf78a6efdfb4f7c53da4ed9ec9f3a902b0d55fddef6f8d651fe1035b7d4bd", null ]
     ] ],
+    [ "AssetData", "class_a_z_1_1_data_1_1_asset_data.html#afbf0f81cabe6016c956d79c5518fc524", null ],
+    [ "~AssetData", "class_a_z_1_1_data_1_1_asset_data.html#a3fa182bff34f67fb5708b395eb32a749", null ],
+    [ "AssetData", "class_a_z_1_1_data_1_1_asset_data.html#a5602ac24002ce18f1bad0e4ad7108f80", null ],
+    [ "Acquire", "class_a_z_1_1_data_1_1_asset_data.html#a8ac6ae9d63fdca44edf03ce28dbe601e", null ],
+    [ "AcquireWeak", "class_a_z_1_1_data_1_1_asset_data.html#a3594aea9b0fb679a0a9195acb2427767", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_data_1_1_asset_data.html#a30f484aa6a49199614efde9d29947fd1", null ],
+    [ "AZ_RTTI", "class_a_z_1_1_data_1_1_asset_data.html#aa43a5a214b4993ebc259b5022d206f83", null ],
+    [ "GetCreationToken", "class_a_z_1_1_data_1_1_asset_data.html#a0fadb01dae5198c539c9bed78cd78c76", null ],
+    [ "GetFlag", "class_a_z_1_1_data_1_1_asset_data.html#a2daefe8060d4df71d90e24fa7a10ab8f", null ],
+    [ "GetId", "class_a_z_1_1_data_1_1_asset_data.html#add51c82d2785a6593475fc3d8484593e", null ],
+    [ "GetRequeue", "class_a_z_1_1_data_1_1_asset_data.html#a96d3b9955c92079204b99c7758e9b639", null ],
+    [ "GetStatus", "class_a_z_1_1_data_1_1_asset_data.html#a2a91a73b0d4f9ef4c6354892ca7a6c62", null ],
+    [ "GetType", "class_a_z_1_1_data_1_1_asset_data.html#ac078b5c901cce1f9d9ea9bc86d33e697", null ],
+    [ "GetUseCount", "class_a_z_1_1_data_1_1_asset_data.html#ab9afba4a987ea199a81d409a211a8d99", null ],
     [ "HandleAutoReload", "class_a_z_1_1_data_1_1_asset_data.html#a2891d0c2927571fbc9ddf81ed0027b53", null ],
     [ "IsError", "class_a_z_1_1_data_1_1_asset_data.html#a26033343da7eebed84116debe6ee971b", null ],
+    [ "IsLoading", "class_a_z_1_1_data_1_1_asset_data.html#a99c1b3e9da3c70926fa4de8249ae8c80", null ],
     [ "IsReady", "class_a_z_1_1_data_1_1_asset_data.html#ab914a198a5ac61fab5b835dbf3407fd1", null ],
-    [ "IsRegisterReadonlyAndShareable", "class_a_z_1_1_data_1_1_asset_data.html#a2be0b04ba405ca171db0857b65aee178", null ]
+    [ "IsRegisterReadonlyAndShareable", "class_a_z_1_1_data_1_1_asset_data.html#a2be0b04ba405ca171db0857b65aee178", null ],
+    [ "Reflect", "class_a_z_1_1_data_1_1_asset_data.html#a78fc734eba42d55ee17bd1b69218e17a", null ],
+    [ "RegisterWithHandler", "class_a_z_1_1_data_1_1_asset_data.html#ae2959fca5194eafab6baf335a8c0bc2d", null ],
+    [ "Release", "class_a_z_1_1_data_1_1_asset_data.html#ae3cca2d1ace635b4e191a750b36b56e8", null ],
+    [ "ReleaseWeak", "class_a_z_1_1_data_1_1_asset_data.html#a41e78ed5f044a8032f5a2816342bd336", null ],
+    [ "SetFlag", "class_a_z_1_1_data_1_1_asset_data.html#ab74d783c84ba5787622b57b38b89588b", null ],
+    [ "SetRequeue", "class_a_z_1_1_data_1_1_asset_data.html#ae4b32feb068687e8041ce1c014b03edd", null ],
+    [ "UnregisterWithHandler", "class_a_z_1_1_data_1_1_asset_data.html#afd853f66ab40c30a33d455873e809424", null ],
+    [ "Asset", "class_a_z_1_1_data_1_1_asset_data.html#a169d706000d14d13c47c044dc895f86d", null ],
+    [ "AssetHandler", "class_a_z_1_1_data_1_1_asset_data.html#a1ac81dc60ae2dc1192172d1c75b4f8e1", null ],
+    [ "AssetManager", "class_a_z_1_1_data_1_1_asset_data.html#aafe72876a584aedb5a5546d4fe7746fb", null ],
+    [ "m_assetId", "class_a_z_1_1_data_1_1_asset_data.html#afdd57ded596f2ee8720ed127489f8ce4", null ],
+    [ "m_creationToken", "class_a_z_1_1_data_1_1_asset_data.html#afcec040abeb13b8108ced81beb32113a", null ],
+    [ "m_flags", "class_a_z_1_1_data_1_1_asset_data.html#aba75dc17f9a81614320980fa91be5efa", null ],
+    [ "m_registeredHandler", "class_a_z_1_1_data_1_1_asset_data.html#a9e325a9957684da4e8959126b3e19d96", null ],
+    [ "m_status", "class_a_z_1_1_data_1_1_asset_data.html#af2345d143459fd81cac89b592cbfe7e4", null ],
+    [ "m_useCount", "class_a_z_1_1_data_1_1_asset_data.html#a5f61e013bb3484218f9e2013668579b1", null ],
+    [ "m_weakUseCount", "class_a_z_1_1_data_1_1_asset_data.html#af4cd6a63d7bcc92ab0d2f344603c44cc", null ]
 ];

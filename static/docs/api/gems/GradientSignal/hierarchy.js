@@ -158,6 +158,15 @@ var hierarchy =
     [ "DitherGradientRequestBus::Handler", null, [
       [ "GradientSignal::DitherGradientComponent", "class_gradient_signal_1_1_dither_gradient_component.html", null ]
     ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< GradientSurfaceDataComponent, GradientSurfaceDataConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "GradientSignal::EditorGradientSurfaceDataComponent", "class_gradient_signal_1_1_editor_gradient_surface_data_component.html", null ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< GradientTransformComponent, GradientTransformConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "GradientSignal::EditorGradientTransformComponent", "class_gradient_signal_1_1_editor_gradient_transform_component.html", null ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "GradientSignal::EditorGradientComponentBase< TComponent, TConfiguration >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
+    ] ],
     [ "GradientBakerRequestBus::Handler", null, [
       [ "GradientSignal::EditorGradientBakerComponent", "class_gradient_signal_1_1_editor_gradient_baker_component.html", null ]
     ] ],
@@ -234,50 +243,50 @@ var hierarchy =
       [ "GradientSignal::LevelsGradientComponent", "class_gradient_signal_1_1_levels_gradient_component.html", null ]
     ] ],
     [ "LmbrCentral::DependencyNotificationBus::Handler", null, [
-      [ "GradientSignal::EditorGradientComponentBase< ConstantGradientComponent, ConstantGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorConstantGradientComponent", "class_gradient_signal_1_1_editor_constant_gradient_component.html", null ]
-      ] ],
-      [ "GradientSignal::EditorGradientComponentBase< DitherGradientComponent, DitherGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorDitherGradientComponent", "class_gradient_signal_1_1_editor_dither_gradient_component.html", null ]
-      ] ],
-      [ "GradientSignal::EditorGradientComponentBase< InvertGradientComponent, InvertGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorInvertGradientComponent", "class_gradient_signal_1_1_editor_invert_gradient_component.html", null ]
-      ] ],
-      [ "GradientSignal::EditorGradientComponentBase< LevelsGradientComponent, LevelsGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorLevelsGradientComponent", "class_gradient_signal_1_1_editor_levels_gradient_component.html", null ]
-      ] ],
-      [ "GradientSignal::EditorGradientComponentBase< MixedGradientComponent, MixedGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorMixedGradientComponent", "class_gradient_signal_1_1_editor_mixed_gradient_component.html", null ]
-      ] ],
       [ "GradientSignal::EditorGradientComponentBase< PerlinGradientComponent, PerlinGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
         [ "GradientSignal::EditorPerlinGradientComponent", "class_gradient_signal_1_1_editor_perlin_gradient_component.html", null ]
       ] ],
-      [ "GradientSignal::EditorGradientComponentBase< PosterizeGradientComponent, PosterizeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorPosterizeGradientComponent", "class_gradient_signal_1_1_editor_posterize_gradient_component.html", null ]
-      ] ],
-      [ "GradientSignal::EditorGradientComponentBase< RandomGradientComponent, RandomGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorRandomGradientComponent", "class_gradient_signal_1_1_editor_random_gradient_component.html", null ]
-      ] ],
-      [ "GradientSignal::EditorGradientComponentBase< ReferenceGradientComponent, ReferenceGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorReferenceGradientComponent", "class_gradient_signal_1_1_editor_reference_gradient_component.html", null ]
+      [ "GradientSignal::EditorGradientComponentBase< ThresholdGradientComponent, ThresholdGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorThresholdGradientComponent", "class_gradient_signal_1_1_editor_threshold_gradient_component.html", null ]
       ] ],
       [ "GradientSignal::EditorGradientComponentBase< ShapeAreaFalloffGradientComponent, ShapeAreaFalloffGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
         [ "GradientSignal::EditorShapeAreaFalloffGradientComponent", "class_gradient_signal_1_1_editor_shape_area_falloff_gradient_component.html", null ]
       ] ],
-      [ "GradientSignal::EditorGradientComponentBase< SmoothStepGradientComponent, SmoothStepGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorSmoothStepGradientComponent", "class_gradient_signal_1_1_editor_smooth_step_gradient_component.html", null ]
+      [ "GradientSignal::EditorGradientComponentBase< SurfaceMaskGradientComponent, SurfaceMaskGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorSurfaceMaskGradientComponent", "class_gradient_signal_1_1_editor_surface_mask_gradient_component.html", null ]
+      ] ],
+      [ "GradientSignal::EditorGradientComponentBase< RandomGradientComponent, RandomGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorRandomGradientComponent", "class_gradient_signal_1_1_editor_random_gradient_component.html", null ]
+      ] ],
+      [ "GradientSignal::EditorGradientComponentBase< InvertGradientComponent, InvertGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorInvertGradientComponent", "class_gradient_signal_1_1_editor_invert_gradient_component.html", null ]
       ] ],
       [ "GradientSignal::EditorGradientComponentBase< SurfaceAltitudeGradientComponent, SurfaceAltitudeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
         [ "GradientSignal::EditorSurfaceAltitudeGradientComponent", "class_gradient_signal_1_1_editor_surface_altitude_gradient_component.html", null ]
       ] ],
-      [ "GradientSignal::EditorGradientComponentBase< SurfaceMaskGradientComponent, SurfaceMaskGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorSurfaceMaskGradientComponent", "class_gradient_signal_1_1_editor_surface_mask_gradient_component.html", null ]
+      [ "GradientSignal::EditorGradientComponentBase< ReferenceGradientComponent, ReferenceGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorReferenceGradientComponent", "class_gradient_signal_1_1_editor_reference_gradient_component.html", null ]
       ] ],
       [ "GradientSignal::EditorGradientComponentBase< SurfaceSlopeGradientComponent, SurfaceSlopeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
         [ "GradientSignal::EditorSurfaceSlopeGradientComponent", "class_gradient_signal_1_1_editor_surface_slope_gradient_component.html", null ]
       ] ],
-      [ "GradientSignal::EditorGradientComponentBase< ThresholdGradientComponent, ThresholdGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
-        [ "GradientSignal::EditorThresholdGradientComponent", "class_gradient_signal_1_1_editor_threshold_gradient_component.html", null ]
+      [ "GradientSignal::EditorGradientComponentBase< PosterizeGradientComponent, PosterizeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorPosterizeGradientComponent", "class_gradient_signal_1_1_editor_posterize_gradient_component.html", null ]
+      ] ],
+      [ "GradientSignal::EditorGradientComponentBase< MixedGradientComponent, MixedGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorMixedGradientComponent", "class_gradient_signal_1_1_editor_mixed_gradient_component.html", null ]
+      ] ],
+      [ "GradientSignal::EditorGradientComponentBase< SmoothStepGradientComponent, SmoothStepGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorSmoothStepGradientComponent", "class_gradient_signal_1_1_editor_smooth_step_gradient_component.html", null ]
+      ] ],
+      [ "GradientSignal::EditorGradientComponentBase< LevelsGradientComponent, LevelsGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorLevelsGradientComponent", "class_gradient_signal_1_1_editor_levels_gradient_component.html", null ]
+      ] ],
+      [ "GradientSignal::EditorGradientComponentBase< DitherGradientComponent, DitherGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorDitherGradientComponent", "class_gradient_signal_1_1_editor_dither_gradient_component.html", null ]
+      ] ],
+      [ "GradientSignal::EditorGradientComponentBase< ConstantGradientComponent, ConstantGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", [
+        [ "GradientSignal::EditorConstantGradientComponent", "class_gradient_signal_1_1_editor_constant_gradient_component.html", null ]
       ] ],
       [ "GradientSignal::EditorGradientBakerComponent", "class_gradient_signal_1_1_editor_gradient_baker_component.html", null ],
       [ "GradientSignal::EditorGradientComponentBase< TComponent, TConfiguration >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
@@ -288,60 +297,22 @@ var hierarchy =
       [ "GradientSignal::GradientTransformComponent", "class_gradient_signal_1_1_gradient_transform_component.html", null ],
       [ "GradientSignal::SurfaceAltitudeGradientComponent", "class_gradient_signal_1_1_surface_altitude_gradient_component.html", null ]
     ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
-    [ "LmbrCentral::EditorWrappedComponentBase< ConstantGradientComponent, ConstantGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
+      [ "GradientSignal::EditorGradientComponentBase< PerlinGradientComponent, PerlinGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< ThresholdGradientComponent, ThresholdGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< ShapeAreaFalloffGradientComponent, ShapeAreaFalloffGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< SurfaceMaskGradientComponent, SurfaceMaskGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< RandomGradientComponent, RandomGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< InvertGradientComponent, InvertGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< SurfaceAltitudeGradientComponent, SurfaceAltitudeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< ReferenceGradientComponent, ReferenceGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< SurfaceSlopeGradientComponent, SurfaceSlopeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< PosterizeGradientComponent, PosterizeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< MixedGradientComponent, MixedGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< SmoothStepGradientComponent, SmoothStepGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< LevelsGradientComponent, LevelsGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
+      [ "GradientSignal::EditorGradientComponentBase< DitherGradientComponent, DitherGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ],
       [ "GradientSignal::EditorGradientComponentBase< ConstantGradientComponent, ConstantGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< DitherGradientComponent, DitherGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< DitherGradientComponent, DitherGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< GradientSurfaceDataComponent, GradientSurfaceDataConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientSurfaceDataComponent", "class_gradient_signal_1_1_editor_gradient_surface_data_component.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< GradientTransformComponent, GradientTransformConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientTransformComponent", "class_gradient_signal_1_1_editor_gradient_transform_component.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< InvertGradientComponent, InvertGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< InvertGradientComponent, InvertGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< LevelsGradientComponent, LevelsGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< LevelsGradientComponent, LevelsGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< MixedGradientComponent, MixedGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< MixedGradientComponent, MixedGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< PerlinGradientComponent, PerlinGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< PerlinGradientComponent, PerlinGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< PosterizeGradientComponent, PosterizeGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< PosterizeGradientComponent, PosterizeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< RandomGradientComponent, RandomGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< RandomGradientComponent, RandomGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< ReferenceGradientComponent, ReferenceGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< ReferenceGradientComponent, ReferenceGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< ShapeAreaFalloffGradientComponent, ShapeAreaFalloffGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< ShapeAreaFalloffGradientComponent, ShapeAreaFalloffGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SmoothStepGradientComponent, SmoothStepGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< SmoothStepGradientComponent, SmoothStepGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceAltitudeGradientComponent, SurfaceAltitudeGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< SurfaceAltitudeGradientComponent, SurfaceAltitudeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceMaskGradientComponent, SurfaceMaskGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< SurfaceMaskGradientComponent, SurfaceMaskGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< SurfaceSlopeGradientComponent, SurfaceSlopeGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< SurfaceSlopeGradientComponent, SurfaceSlopeGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< TComponent, TConfiguration >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< ThresholdGradientComponent, ThresholdGradientConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
-      [ "GradientSignal::EditorGradientComponentBase< ThresholdGradientComponent, ThresholdGradientConfig >", "class_gradient_signal_1_1_editor_gradient_component_base.html", null ]
     ] ],
     [ "LmbrCentral::ShapeComponentNotificationsBus::Handler", null, [
       [ "GradientSignal::GradientSurfaceDataComponent", "class_gradient_signal_1_1_gradient_surface_data_component.html", null ],

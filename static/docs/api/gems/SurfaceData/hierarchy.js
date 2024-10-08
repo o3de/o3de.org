@@ -47,13 +47,13 @@ var hierarchy =
     [ "AzToolsFramework::Components::EditorComponentBase", null, [
       [ "SurfaceData::EditorSurfaceDataSystemComponent", "class_surface_data_1_1_editor_surface_data_system_component.html", null ]
     ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
     [ "LmbrCentral::EditorWrappedComponentBase< SurfaceDataColliderComponent, SurfaceDataColliderConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "SurfaceData::EditorSurfaceDataColliderComponent", "class_surface_data_1_1_editor_surface_data_collider_component.html", null ]
     ] ],
     [ "LmbrCentral::EditorWrappedComponentBase< SurfaceDataShapeComponent, SurfaceDataShapeConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "SurfaceData::EditorSurfaceDataShapeComponent", "class_surface_data_1_1_editor_surface_data_shape_component.html", null ]
     ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
     [ "LmbrCentral::ShapeComponentNotificationsBus::Handler", null, [
       [ "SurfaceData::SurfaceDataShapeComponent", "class_surface_data_1_1_surface_data_shape_component.html", null ]
     ] ],

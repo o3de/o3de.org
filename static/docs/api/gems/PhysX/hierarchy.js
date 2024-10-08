@@ -95,13 +95,25 @@ var hierarchy =
       [ "PhysX::JointsComponentModeRequests", "class_phys_x_1_1_joints_component_mode_requests.html", null ]
     ] ],
     [ "AZ::Interface::Registrar", null, [
-      [ "PhysX::Debug::PhysXDebug", "class_phys_x_1_1_debug_1_1_phys_x_debug.html", null ],
-      [ "PhysX::MaterialManager", "class_phys_x_1_1_material_manager.html", null ],
-      [ "PhysX::PhysXEditorJointHelpersInterface", "class_phys_x_1_1_phys_x_editor_joint_helpers_interface.html", null ],
-      [ "PhysX::PhysXJointHelpersInterface", "class_phys_x_1_1_phys_x_joint_helpers_interface.html", null ],
-      [ "PhysX::PhysXSceneInterface", "class_phys_x_1_1_phys_x_scene_interface.html", null ],
-      [ "PhysX::PhysXSystem", "class_phys_x_1_1_phys_x_system.html", null ],
+      [ "PhysX::PhysXEditorJointHelpersInterface", "class_phys_x_1_1_phys_x_editor_joint_helpers_interface.html", null ]
+    ] ],
+    [ "AZ::Interface::Registrar", null, [
+      [ "PhysX::PhysXJointHelpersInterface", "class_phys_x_1_1_phys_x_joint_helpers_interface.html", null ]
+    ] ],
+    [ "AZ::Interface::Registrar", null, [
+      [ "PhysX::PhysXSceneInterface", "class_phys_x_1_1_phys_x_scene_interface.html", null ]
+    ] ],
+    [ "AZ::Interface::Registrar", null, [
+      [ "PhysX::PhysXSystem", "class_phys_x_1_1_phys_x_system.html", null ]
+    ] ],
+    [ "AZ::Interface::Registrar", null, [
+      [ "PhysX::MaterialManager", "class_phys_x_1_1_material_manager.html", null ]
+    ] ],
+    [ "AZ::Interface::Registrar", null, [
       [ "PhysX::WindProvider", "class_phys_x_1_1_wind_provider.html", null ]
+    ] ],
+    [ "AZ::Interface::Registrar", null, [
+      [ "PhysX::Debug::PhysXDebug", "class_phys_x_1_1_debug_1_1_phys_x_debug.html", null ]
     ] ],
     [ "AZ::Job", null, [
       [ "PhysX::PhysXJob", "class_phys_x_1_1_phys_x_job.html", null ]

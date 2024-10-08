@@ -1,0 +1,21 @@
+var NAVTREEINDEX1 =
+{
+"struct_machine_learning_1_1_layer_training_data.html#a7ce7916839e33fa0381b6b872ca7c35d":[0,0,0,22,2],
+"struct_machine_learning_1_1_layer_training_data.html#aac3faa44202773da98eb5ce7c6eb7d7f":[0,0,0,22,3],
+"struct_machine_learning_1_1_layer_training_data.html#abc2f9bcd09bf838380123fc0cc1ff354":[0,0,0,22,0],
+"struct_machine_learning_1_1_mlp_inference_context.html":[0,0,0,24],
+"struct_machine_learning_1_1_mlp_inference_context.html#aaf3a345308bde3c9c741c9b4595d288e":[0,0,0,24,0],
+"struct_machine_learning_1_1_mlp_training_context.html":[0,0,0,25],
+"struct_machine_learning_1_1_mlp_training_context.html#a0a338c2fcb8e63b8d7486ffa08dbe4c4":[0,0,0,25,0],
+"struct_machine_learning_1_1_mlp_training_context.html#a290757c425df0d63facb45278b3cf678":[0,0,0,25,2],
+"struct_machine_learning_1_1_mlp_training_context.html#a31879f05e9f1e05c9b5d8b8f2e2724b8":[0,0,0,25,1],
+"struct_machine_learning_1_1_training_instance.html":[0,0,0,16],
+"struct_machine_learning_1_1_training_instance.html#a0b1222f931c3ba54926b4391e702759d":[0,0,0,16,0],
+"struct_machine_learning_1_1_training_instance.html#a11546f7ffcb9e1a876f55fea934832a9":[0,0,0,16,6],
+"struct_machine_learning_1_1_training_instance.html#a60cc73ef402248c21cf02d95aca49361":[0,0,0,16,1],
+"struct_machine_learning_1_1_training_instance.html#a78f7488c39b86496553f50c03abc9cd5":[0,0,0,16,3],
+"struct_machine_learning_1_1_training_instance.html#a8b0a58a539bf75b782aa6293173862b1":[0,0,0,16,4],
+"struct_machine_learning_1_1_training_instance.html#aadb4610d0c1436435898c885d6f82b80":[0,0,0,16,2],
+"struct_machine_learning_1_1_training_instance.html#ae05f44bafe470baf5fae02fe6763b2b6":[0,0,0,16,7],
+"struct_machine_learning_1_1_training_instance.html#ae56b4a7d8111cc6d62d2317028601a83":[0,0,0,16,5]
+};

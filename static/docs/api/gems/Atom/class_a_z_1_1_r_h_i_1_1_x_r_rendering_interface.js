@@ -1,5 +1,9 @@
 var class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface =
 [
+    [ "XRRenderingInterface", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#aa2affa723c286aecfe1f4decb3ca2fa3", null ],
+    [ "~XRRenderingInterface", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a6da4a0c9be535521cc06dc4107aa187e", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a53db4bc746fd0dc662a82d426df92ce2", null ],
+    [ "AZ_RTTI", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#ad61ca0da9dd1eeab08797781d2283574", null ],
     [ "BeginFrame", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a5814419035199345a0d6451f10e3cbeb", null ],
     [ "CreateDevice", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#a59df3d5180f23440accb5f4e22883c65", null ],
     [ "CreateSession", "class_a_z_1_1_r_h_i_1_1_x_r_rendering_interface.html#ac5af3dbb54675a3a2e2c164307a058b9", null ],

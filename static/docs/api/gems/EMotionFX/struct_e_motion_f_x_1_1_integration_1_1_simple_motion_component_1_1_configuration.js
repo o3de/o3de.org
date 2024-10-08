@@ -1,5 +1,9 @@
 var struct_e_motion_f_x_1_1_integration_1_1_simple_motion_component_1_1_configuration =
 [
+    [ "Configuration", "struct_e_motion_f_x_1_1_integration_1_1_simple_motion_component_1_1_configuration.html#aa8ba0173506ff1d92379d400eb2da2c3", null ],
+    [ "GetBlendOutTimeVisibility", "struct_e_motion_f_x_1_1_integration_1_1_simple_motion_component_1_1_configuration.html#ad58aec44ccf6436de58aaf59223acd54", null ],
+    [ "GetFreezeAtLastFrameVisibility", "struct_e_motion_f_x_1_1_integration_1_1_simple_motion_component_1_1_configuration.html#a266d65931805913490840148689c7631", null ],
+    [ "Reflect", "struct_e_motion_f_x_1_1_integration_1_1_simple_motion_component_1_1_configuration.html#a0cf2c8bdb60694408e4df3c3d5676bce", null ],
     [ "m_blendInTime", "struct_e_motion_f_x_1_1_integration_1_1_simple_motion_component_1_1_configuration.html#aaeaaa2ea5edd5e3f0c9c282a1842651c", null ],
     [ "m_blendOutTime", "struct_e_motion_f_x_1_1_integration_1_1_simple_motion_component_1_1_configuration.html#a8bbbe76d681f8dc883ddcc4c2ee9051d", null ],
     [ "m_freezeAtLastFrame", "struct_e_motion_f_x_1_1_integration_1_1_simple_motion_component_1_1_configuration.html#a23458b011052f28353ea562ddca4ac8e", null ],

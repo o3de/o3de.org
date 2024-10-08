@@ -203,8 +203,6 @@ var hierarchy =
     [ "Multiplayer::ReplicationRecordStats", "struct_multiplayer_1_1_replication_record_stats.html", null ],
     [ "Multiplayer::RewindableFixedVector< TYPE, SIZE >", "class_multiplayer_1_1_rewindable_fixed_vector.html", null ],
     [ "Multiplayer::RewindableObject< BASE_TYPE, REWIND_SIZE >", "class_multiplayer_1_1_rewindable_object.html", null ],
-    [ "Multiplayer::RewindableObject< AZ::Transform, Multiplayer::RewindHistorySize >", "class_multiplayer_1_1_rewindable_object.html", null ],
-    [ "Multiplayer::RewindableObject< uint32_t, Multiplayer::RewindHistorySize >", "class_multiplayer_1_1_rewindable_object.html", null ],
     [ "Multiplayer::ScopedAlterTime", "class_multiplayer_1_1_scoped_alter_time.html", null ],
     [ "Multiplayer::SearchSessionsRequest", "struct_multiplayer_1_1_search_sessions_request.html", null ],
     [ "Multiplayer::SearchSessionsResponse", "struct_multiplayer_1_1_search_sessions_response.html", null ],
@@ -277,6 +275,8 @@ var hierarchy =
       [ "Multiplayer::NetworkRigidBodyComponent", "class_multiplayer_1_1_network_rigid_body_component.html", null ],
       [ "Multiplayer::NetworkRigidBodyComponentController", "class_multiplayer_1_1_network_rigid_body_component_controller.html", null ]
     ] ],
+    [ "Multiplayer::RewindableObject< AZ::Transform, Multiplayer::RewindHistorySize >", "class_multiplayer_1_1_rewindable_object.html", null ],
+    [ "Multiplayer::RewindableObject< uint32_t, Multiplayer::RewindHistorySize >", "class_multiplayer_1_1_rewindable_object.html", null ],
     [ "ScriptCanvas::Nodeable", null, [
       [ "ScriptCanvasMultiplayer::GatherEntitiesByComponentAabb", "class_script_canvas_multiplayer_1_1_gather_entities_by_component_aabb.html", null ],
       [ "ScriptCanvasMultiplayer::GatherEntitiesByComponentSphere", "class_script_canvas_multiplayer_1_1_gather_entities_by_component_sphere.html", null ],

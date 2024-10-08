@@ -1,6 +1,25 @@
 var class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor =
 [
-    [ "Build", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#afb253ee0ffddde38aed32e1926dd89f6", null ],
-    [ "GetConfiguration", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a58319c7141dfe18897525d5cd0b542fd", null ],
-    [ "GetDeviceRayTracingPipelineStateDescriptor", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a71c4a76d2ce3ee9e92e0b9b54b7a3d9d", null ]
+    [ "MultiDeviceRayTracingPipelineStateDescriptor", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#af52347952f0f41c11b9d386ec0fec9ba", null ],
+    [ "~MultiDeviceRayTracingPipelineStateDescriptor", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a5993b9b4c04d5542d96adea7f289b295", null ],
+    [ "AnyHitShaderName", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a37dfbec59156f376a85862a187402773", null ],
+    [ "Build", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#affb8a1b1bd502a856665a8f6f4b93d5b", null ],
+    [ "ClosestHitShaderName", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#acd8ed1349462a20402d479e450e003e6", null ],
+    [ "GetConfiguration", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#aa41ae55b5bfd41244e9551cecf3a3e54", null ],
+    [ "GetConfiguration", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a658ba69f794940dc8126c9bf2682cbb2", null ],
+    [ "GetDeviceRayTracingPipelineStateDescriptor", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a71c4a76d2ce3ee9e92e0b9b54b7a3d9d", null ],
+    [ "GetHitGroups", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#af4987fe62cf04960864e9d5b85e184a0", null ],
+    [ "GetHitGroups", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#abcc4e3afd04af94f41a414a502a4f7b7", null ],
+    [ "GetPipelineState", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a890bbdc64f452ad941921d8b135eb5fd", null ],
+    [ "GetShaderLibraries", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#abeb74a1bbec42e8d23b21ab9f8c199fc", null ],
+    [ "GetShaderLibraries", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a972f81ee5afc1cc73e489f2f6254ef69", null ],
+    [ "HitGroup", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a338c6efbb70edeb2ace84b0d431485a5", null ],
+    [ "IntersectionShaderName", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a3a70f8fa2e953f9a7003b572c6bc516f", null ],
+    [ "MaxAttributeSize", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a446638d655e11a3e32ae21bab9963eea", null ],
+    [ "MaxPayloadSize", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#ae2c9894563d2b2f230cf96eb1bcd8212", null ],
+    [ "MaxRecursionDepth", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a388b58b6fab8d3c1791f215d1da186ba", null ],
+    [ "MissShaderName", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#aee84524fc4878d4b6ff6fd490f5b999a", null ],
+    [ "PipelineState", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a5e9d4f857f7a1bd1f763972e1072ce9a", null ],
+    [ "RayGenerationShaderName", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#a8f6778ac461b6b18828f61ef1138f166", null ],
+    [ "ShaderLibrary", "class_a_z_1_1_r_h_i_1_1_multi_device_ray_tracing_pipeline_state_descriptor.html#aaa9ca7b89543170a7a30beafb2da9524", null ]
 ];

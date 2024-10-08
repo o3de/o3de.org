@@ -1,6 +1,7 @@
 var class_a_z_1_1_entity_id =
 [
     [ "EntityId", "class_a_z_1_1_entity_id.html#a02951ce9d8318bc3a79c0afdda03211b", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_entity_id.html#a2da146c997f10739b872486418df5028", null ],
     [ "AZ_TYPE_INFO", "class_a_z_1_1_entity_id.html#ad03047c63f03dfa262d045574a47ece7", null ],
     [ "IsValid", "class_a_z_1_1_entity_id.html#a8ed32b8b82ade8e79120e25d0ad936a1", null ],
     [ "operator u64", "class_a_z_1_1_entity_id.html#a9b80c7a80f2c19f1a78d7756d6de0946", null ],
@@ -10,6 +11,8 @@ var class_a_z_1_1_entity_id =
     [ "operator>", "class_a_z_1_1_entity_id.html#ae90a0cc82ee66ca32aaa7de4457b66e1", null ],
     [ "SetInvalid", "class_a_z_1_1_entity_id.html#a48bca377db706ea777628f4a40768453", null ],
     [ "ToString", "class_a_z_1_1_entity_id.html#a2af7e16cfa72dab7f0136cb3539b2da7", null ],
+    [ "Entity", "class_a_z_1_1_entity_id.html#a614439ccac0344926adc4c0165d64060", null ],
+    [ "JsonEntityIdSerializer", "class_a_z_1_1_entity_id.html#a8cd385c66d315f15bcec92e4583e24f0", null ],
     [ "InvalidEntityId", "class_a_z_1_1_entity_id.html#a1bea891e0b885622bb025589c0a438f8", null ],
     [ "m_id", "class_a_z_1_1_entity_id.html#aef981595b4ff248175042942a0924e3f", null ]
 ];

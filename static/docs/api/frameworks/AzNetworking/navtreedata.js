@@ -42,9 +42,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_az_networking_1_1_i_serializer.html#a65cae59af6098ed864834a78cd2ced41",
-"class_az_networking_1_1_tcp_socket_manager.html#a5ff047e1e2bf8f2de182760e60b440cc",
-"struct_az_networking_1_1_quantized_values_helper.html"
+"class_az_networking_1_1_i_connection_listener.html#a5f08745ffaea9cac7cb3e1a052beb70e",
+"class_az_networking_1_1_stringify_serializer.html#a0b16741c44cc83215af538bfafa74035",
+"class_az_networking_1_1_udp_connection.html#a7432e42842b63440b7b9a6b73754fc33",
+"struct_az_networking_1_1_connection_quality.html#a596681f048683034ba90e4a88917eac3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

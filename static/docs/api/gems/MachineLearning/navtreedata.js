@@ -40,7 +40,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"struct_machine_learning_1_1_layer_training_data.html#a7ce7916839e33fa0381b6b872ca7c35d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

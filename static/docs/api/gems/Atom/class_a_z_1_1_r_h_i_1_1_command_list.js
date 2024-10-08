@@ -1,6 +1,6 @@
 var class_a_z_1_1_r_h_i_1_1_command_list =
 [
-    [ "SubmitRange", "struct_a_z_1_1_r_h_i_1_1_command_list_1_1_submit_range.html", null ],
+    [ "SubmitRange", "struct_a_z_1_1_r_h_i_1_1_command_list_1_1_submit_range.html", "struct_a_z_1_1_r_h_i_1_1_command_list_1_1_submit_range" ],
     [ "BeginPredication", "class_a_z_1_1_r_h_i_1_1_command_list.html#a7755b80905c0ccbd8bb1a633188e0ffd", null ],
     [ "BuildBottomLevelAccelerationStructure", "class_a_z_1_1_r_h_i_1_1_command_list.html#aa2ac0f6d8a78de551a7b3519bb150df2", null ],
     [ "BuildTopLevelAccelerationStructure", "class_a_z_1_1_r_h_i_1_1_command_list.html#a41c8351446c84ef4b3a16a7dde641c27", null ],

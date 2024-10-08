@@ -1,6 +1,6 @@
 var class_az_framework_1_1_entity_context_events =
 [
-    [ "BusIdType", "class_az_framework_1_1_entity_context_events.html#a0ea9e94828f6b8e707935aefd601c397", null ],
+    [ "BusIdType", "class_az_framework_1_1_entity_context_events.html#aecf07d4c3b8fcce825fe5b62d3ef4f16", null ],
     [ "~EntityContextEvents", "class_az_framework_1_1_entity_context_events.html#abe4b117ea6c8621b6caf64dea208d5ae", null ],
     [ "OnEntityContextCreateEntity", "class_az_framework_1_1_entity_context_events.html#af5e4f24064d59cbb00b4440c35d056f5", null ],
     [ "OnEntityContextDestroyEntity", "class_az_framework_1_1_entity_context_events.html#a81a57b5598ce822449531ad7c65b95c1", null ],

@@ -1,5 +1,8 @@
 var class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler =
 [
+    [ "PrefabPublicHandler", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a6b8cfc187ef4e7054dfa7868f0d1cecf", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a4a30e849beae533c1cc808107e9b100a", null ],
+    [ "AZ_RTTI", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a24b174ae3408ec677401c3925a6847f5", null ],
     [ "CreateEntity", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a742cfb08b34bce17cd2518d345259232", null ],
     [ "CreatePrefabAndSaveToDisk", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#ac711ce2eb285363d9ee9692f2edb1837", null ],
     [ "CreatePrefabInDisk", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#ab2357fa7e9bd487e132d465996bb0b12", null ],
@@ -20,5 +23,7 @@ var class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler =
     [ "IsLevelInstanceContainerEntity", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a97b64ffb7c6e07e5d4553652e5a31e92", null ],
     [ "IsOwnedByPrefabInstance", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a4bb68c9650634e97c6eceab8bbc32cc3", null ],
     [ "IsOwnedByProceduralPrefabInstance", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a3d9b4da44048053f031822dee0680b29", null ],
-    [ "SavePrefab", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aa62eafa9d157e2013f22fc895398651d", null ]
+    [ "RegisterPrefabPublicHandlerInterface", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a2b7a03f642e4ce7bca4ba823ef3c3b2c", null ],
+    [ "SavePrefab", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aa62eafa9d157e2013f22fc895398651d", null ],
+    [ "UnregisterPrefabPublicHandlerInterface", "class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#adcd8d809855927b9aef5649d4976534a", null ]
 ];

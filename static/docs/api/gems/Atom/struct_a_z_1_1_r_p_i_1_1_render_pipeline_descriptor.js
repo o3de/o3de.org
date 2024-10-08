@@ -1,5 +1,8 @@
 var struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor =
 [
+    [ "AZ_TYPE_INFO", "struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#aa77cb7e286e9f5ff7df5b43378c35d4a", null ],
+    [ "Reflect", "struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#a05797b77ab4616d0a34879bbc3e39ecf", null ],
+    [ "Extension", "struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#a49eaebdad0c79c100ec3db9e13e03de6", null ],
     [ "m_allowModification", "struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#ae4504ffe87f3e304f40f6cac87b5be5d", null ],
     [ "m_defaultAAMethod", "struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#a6be547acf1b5e42f176c917e32d6bdbd", null ],
     [ "m_executeOnce", "struct_a_z_1_1_r_p_i_1_1_render_pipeline_descriptor.html#afe66e68f19b82d44fdc5d510585d8882", null ],

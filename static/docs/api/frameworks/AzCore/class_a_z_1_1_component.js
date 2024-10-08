@@ -3,10 +3,11 @@ var class_a_z_1_1_component =
     [ "Component", "class_a_z_1_1_component.html#a5eb510965b854b25d3f1116bfa31414b", null ],
     [ "~Component", "class_a_z_1_1_component.html#a5faccc3bb9e65300b1c4740135dc4775", null ],
     [ "Activate", "class_a_z_1_1_component.html#a3e3e21c0cb8c2a8cb6dc42c83c94a8fe", null ],
+    [ "AZ_RTTI_NO_TYPE_INFO_DECL", "class_a_z_1_1_component.html#a53de7857ca64197cc5506cad23e1ba17", null ],
     [ "AZ_TYPE_INFO_WITH_NAME_DECL", "class_a_z_1_1_component.html#a8d87e0f96b89cc385de6e3acc51ce2ac", null ],
     [ "Deactivate", "class_a_z_1_1_component.html#a7b78b890df9b149722d8703da05c79ac", null ],
     [ "GetConfiguration", "class_a_z_1_1_component.html#ae737d3f9415acfa4a6d06a31c71cb7bf", null ],
-    [ "GetEntity", "class_a_z_1_1_component.html#a926d2c900f99405e857b8b4d35cba2ce", null ],
+    [ "GetEntity", "class_a_z_1_1_component.html#a411ea9020c4c082961fb416365bc83a7", null ],
     [ "GetEntityId", "class_a_z_1_1_component.html#a3eb18df65172811f74e6279c92760f45", null ],
     [ "GetId", "class_a_z_1_1_component.html#ab1cabfdba04540b717cebd833cb4fa25", null ],
     [ "GetNamedEntityId", "class_a_z_1_1_component.html#a3cad9d7927d8f8eed15e281389af7f45", null ],
@@ -21,6 +22,7 @@ var class_a_z_1_1_component =
     [ "SetSerializedIdentifier", "class_a_z_1_1_component.html#a77d2f8c22d47dbfbf1c21dacbbf59512", null ],
     [ "ValidateComponentRequirements", "class_a_z_1_1_component.html#a3d6ed45650fa60bdd6997051cb4068f7", null ],
     [ "WriteOutConfig", "class_a_z_1_1_component.html#ab8b0e06c3c155ffe8965227a286ca9b6", null ],
+    [ "Entity", "class_a_z_1_1_component.html#a614439ccac0344926adc4c0165d64060", null ],
     [ "m_entity", "class_a_z_1_1_component.html#aa3e2d5415247e5cf67d7572aaa733693", null ],
     [ "m_id", "class_a_z_1_1_component.html#a738455cb4649e6d7acd8c5b970530c04", null ]
 ];

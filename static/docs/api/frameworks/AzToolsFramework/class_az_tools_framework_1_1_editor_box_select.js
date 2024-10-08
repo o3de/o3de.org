@@ -1,7 +1,8 @@
 var class_az_tools_framework_1_1_editor_box_select =
 [
+    [ "EditorBoxSelect", "class_az_tools_framework_1_1_editor_box_select.html#ab31cba6333ff8af49fd28f4962b8cd19", null ],
     [ "Active", "class_az_tools_framework_1_1_editor_box_select.html#a8616d69e155a3080ac2d65cf0626f507", null ],
-    [ "BoxRegion", "class_az_tools_framework_1_1_editor_box_select.html#abb3bd12113f87383d77cf173ea5e04da", null ],
+    [ "BoxRegion", "class_az_tools_framework_1_1_editor_box_select.html#a981d9924d282e93adc1eca5ced20d8f9", null ],
     [ "Display2d", "class_az_tools_framework_1_1_editor_box_select.html#a114e21dcfe2d629ff7436638ff1ae959", null ],
     [ "DisplayScene", "class_az_tools_framework_1_1_editor_box_select.html#ae1f57f0de3c21bf49e7800fd0e5755ae", null ],
     [ "HandleMouseInteraction", "class_az_tools_framework_1_1_editor_box_select.html#af7bccaa3c8b4720f6791c0765e98c515", null ],

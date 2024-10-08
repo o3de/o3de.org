@@ -12,5 +12,7 @@ var class_http_requestor_1_1_http_requestor_requests =
     [ "AddTextRequestWithHeadersAndBody", "class_http_requestor_1_1_http_requestor_requests.html#ad59a4a36529264c0ced97fd780f7c55a", null ],
     [ "AddTextRequestWithHeadersAndClientConfiguration", "class_http_requestor_1_1_http_requestor_requests.html#aa0acd1ad6fe80621bf7d0142063c0c1b", null ],
     [ "AddTextRequestWithHeadersBodyAndClientConfiguration", "class_http_requestor_1_1_http_requestor_requests.html#a12405631d7f813caff9b5a54adf34e75", null ],
-    [ "GetLastRoundTripTime", "class_http_requestor_1_1_http_requestor_requests.html#a9de4dfe26b2093f6232cb654b96b1f54", null ]
+    [ "GetLastRoundTripTime", "class_http_requestor_1_1_http_requestor_requests.html#a9de4dfe26b2093f6232cb654b96b1f54", null ],
+    [ "AddressPolicy", "class_http_requestor_1_1_http_requestor_requests.html#a4b443e7e94a4f0f793c6fb30dbb4b1a4", null ],
+    [ "HandlerPolicy", "class_http_requestor_1_1_http_requestor_requests.html#aa3014b7914d83557f8e21bfda1091c38", null ]
 ];

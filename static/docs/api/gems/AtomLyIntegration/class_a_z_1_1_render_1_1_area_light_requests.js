@@ -1,10 +1,12 @@
 var class_a_z_1_1_render_1_1_area_light_requests =
 [
+    [ "~AreaLightRequests", "class_a_z_1_1_render_1_1_area_light_requests.html#abde8c97ecf658a59da09217fa0b6c68f", null ],
+    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_area_light_requests.html#a7a564a7f38af0f11f13f61fa92ec41d6", null ],
     [ "ConvertToIntensityMode", "class_a_z_1_1_render_1_1_area_light_requests.html#a3e7ef166cc9eee97fd150da4dfb85b46", null ],
     [ "GetAffectsGI", "class_a_z_1_1_render_1_1_area_light_requests.html#a41f293d12e8c058faa3a233dc0845cd6", null ],
     [ "GetAffectsGIFactor", "class_a_z_1_1_render_1_1_area_light_requests.html#ad84fd38d93ac3ffbe74e66b974457a4a", null ],
     [ "GetAttenuationRadius", "class_a_z_1_1_render_1_1_area_light_requests.html#aea77bdf0c5d1eaf410963a686fe17a13", null ],
-    [ "GetColor", "class_a_z_1_1_render_1_1_area_light_requests.html#a21f97662aa12c4bbbb88256918123f12", null ],
+    [ "GetColor", "class_a_z_1_1_render_1_1_area_light_requests.html#a216188d6f6aaaecea30afd428da28147", null ],
     [ "GetEnableShadow", "class_a_z_1_1_render_1_1_area_light_requests.html#a4182f565a672510af614dbd6bcfdd4c0", null ],
     [ "GetEnableShutters", "class_a_z_1_1_render_1_1_area_light_requests.html#a5e12a86e8059272628d59e94b87fe48f", null ],
     [ "GetEsmExponent", "class_a_z_1_1_render_1_1_area_light_requests.html#a7ee6a252b6efe24e9878d5d784fe6fb8", null ],
@@ -26,6 +28,7 @@ var class_a_z_1_1_render_1_1_area_light_requests =
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_area_light_requests.html#a3985a27d78e211e1929fc44fdcf0e8be", null ],
     [ "SetAffectsGIFactor", "class_a_z_1_1_render_1_1_area_light_requests.html#a315c57a9766b999a0e1d9ca4f0a0bdce", null ],
     [ "SetAttenuationRadius", "class_a_z_1_1_render_1_1_area_light_requests.html#a062a060ce716a752fb041e0c17e3f53b", null ],
+    [ "SetAttenuationRadiusMode", "class_a_z_1_1_render_1_1_area_light_requests.html#a3f7074c29b0bc083725a66abb1a278c3", null ],
     [ "SetColor", "class_a_z_1_1_render_1_1_area_light_requests.html#a1334cd922506cfdb394b5713bcb81ecb", null ],
     [ "SetEnableShadow", "class_a_z_1_1_render_1_1_area_light_requests.html#ab8ac98961496518fdae64cce58ca8cd9", null ],
     [ "SetEnableShutters", "class_a_z_1_1_render_1_1_area_light_requests.html#adba96bad6cab3c5f9657632bead279fe", null ],

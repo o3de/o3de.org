@@ -1,7 +1,12 @@
 var class_a_z_1_1_allocator_base =
 [
+    [ "AllocatorBase", "class_a_z_1_1_allocator_base.html#a816315be559347e7417bfdd5521c14cf", null ],
+    [ "AllocatorBase", "class_a_z_1_1_allocator_base.html#a12c5a0bddc2eb1f99796a234ca7e3cc7", null ],
+    [ "~AllocatorBase", "class_a_z_1_1_allocator_base.html#ac677c920ab48bc67a7169f16f913dd78", null ],
     [ "DisableRegistration", "class_a_z_1_1_allocator_base.html#a9db7f2fedbda2663e5b12434ab5b09a1", null ],
-    [ "GetRecords", "class_a_z_1_1_allocator_base.html#aec877716cebf3bb11f8738e2fb40e41d", null ],
+    [ "GetRecords", "class_a_z_1_1_allocator_base.html#a461b751255e79fa51a4805b6c8292f55", null ],
+    [ "GetRecords", "class_a_z_1_1_allocator_base.html#a3bf0033d0a97792b9587eabfe1fa7fa5", null ],
+    [ "GetRecords", "class_a_z_1_1_allocator_base.html#a93257302783a66ef70fc1089c2926726", null ],
     [ "IsProfilingActive", "class_a_z_1_1_allocator_base.html#a7c400ce989f21e09674ab4568f728097", null ],
     [ "IsReady", "class_a_z_1_1_allocator_base.html#a3b10cc083fcbbe17112c15604923dcb8", null ],
     [ "MemorySizeAdjustedDown", "class_a_z_1_1_allocator_base.html#add248fc9ce272bb9673579d8aee7f4f0", null ],

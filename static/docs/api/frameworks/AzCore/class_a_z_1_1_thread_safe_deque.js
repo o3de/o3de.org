@@ -1,5 +1,8 @@
 var class_a_z_1_1_thread_safe_deque =
 [
+    [ "DequeType", "class_a_z_1_1_thread_safe_deque.html#aaa409d15a7988f5cdf2b4f0a591e0393", null ],
+    [ "ThreadSafeDeque", "class_a_z_1_1_thread_safe_deque.html#a5f7a98261bab3b55616e7a45b04af684", null ],
+    [ "~ThreadSafeDeque", "class_a_z_1_1_thread_safe_deque.html#ac19fbdc4041473796564de80f2162232", null ],
     [ "Clear", "class_a_z_1_1_thread_safe_deque.html#a0fb7682fa9a3ec76d007bce6aba983aa", null ],
     [ "PopBackItem", "class_a_z_1_1_thread_safe_deque.html#acf8b40c9c0ca1bdb7c159fcee475a504", null ],
     [ "PopFrontItem", "class_a_z_1_1_thread_safe_deque.html#a55bded2e7a4ca383ca7a6c7eec078b3d", null ],

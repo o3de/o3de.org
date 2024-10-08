@@ -1,8 +1,27 @@
 var class_r_o_s2_1_1_r_o_s2_frame_editor_component =
 [
+    [ "ROS2FrameEditorComponent", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#ac759a5ab95d2d5c00567ac39371080cd", null ],
+    [ "~ROS2FrameEditorComponent", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#aec0adf6985004fea55be68bdb63d613d", null ],
     [ "ROS2FrameEditorComponent", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#afb83859aaf6346f05f198f902ae6f900", null ],
+    [ "ROS2FrameEditorComponent", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a2ed94ffa6d55033ac261eacd0ac62e4e", null ],
+    [ "Activate", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a58b70234ab0c072a0391f0b310e26187", null ],
+    [ "AZ_COMPONENT", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#aa0cb7f027a24e500d859ee4f589eebb3", null ],
+    [ "BuildGameEntity", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#acbdc25b40dc21422a676302fc518f71d", null ],
+    [ "Deactivate", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#ad20354e87ce455e1b9a1f26f29323c6c", null ],
+    [ "GetFrameChildren", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#abb32d32b268a6bb6a3c3578a2722be76", null ],
+    [ "GetFrameID", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a1f2b8ac32d0fff20d0e46c8967d07888", null ],
+    [ "GetFrameParent", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a7a08b35036b39b0e05cca5bb20a3b5d1", null ],
+    [ "GetGlobalFrameName", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#aa0eaf9609f9a4bb5ed31a4f51ffd3150", null ],
+    [ "GetIncompatibleServices", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a6bfc2dcf2fbd2d108372cb2e2d4577c3", null ],
+    [ "GetJointName", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a1f36e9937bd1c73043d4c19ba3f2ec35", null ],
+    [ "GetNamespace", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#ae08ab0eda0e8a2dc8ec1c29d816d977d", null ],
+    [ "GetProvidedServices", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#af2ccbe9891e64785471a4775fb793c00", null ],
+    [ "GetRequiredServices", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a3493c8d97f8119b6d1c47d226908196c", null ],
+    [ "Init", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#aadeb9c8986d70c9ff8f688c253e29df5", null ],
     [ "IsTopLevel", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a4d4a6533bbb3152b202c2f1cf09b4791", null ],
+    [ "Reflect", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a63755499a404cc10be45a2c92925fb42", null ],
     [ "SetFrameID", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a646c66b027a7fabb6fade8aea130fe87", null ],
     [ "SetJointName", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a024df9893b6353983f678460bdb5c9e4", null ],
+    [ "UpdateNamespace", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a55957873a069fda4804037b1a49d0db8", null ],
     [ "UpdateNamespaceConfiguration", "class_r_o_s2_1_1_r_o_s2_frame_editor_component.html#a43c1d0fe55e246a4363fb68f580072e1", null ]
 ];

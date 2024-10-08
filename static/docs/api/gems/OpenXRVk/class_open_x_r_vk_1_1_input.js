@@ -1,5 +1,8 @@
 var class_open_x_r_vk_1_1_input =
 [
+    [ "AZ_CLASS_ALLOCATOR", "class_open_x_r_vk_1_1_input.html#a94098249516cd2628ca2aa4dc340cae4", null ],
+    [ "AZ_RTTI", "class_open_x_r_vk_1_1_input.html#a8dd4af08c6397ec208c1c0b6a2e518fe", null ],
+    [ "Create", "class_open_x_r_vk_1_1_input.html#a3e2fea115ff15bd01189c84f9f37ba9b", null ],
     [ "GetAButtonState", "class_open_x_r_vk_1_1_input.html#a342895de11e4f90c6a36881d1d05873d", null ],
     [ "GetBButtonState", "class_open_x_r_vk_1_1_input.html#a580c86d6aa611cc9867aa6721961f146", null ],
     [ "GetButtonState", "class_open_x_r_vk_1_1_input.html#ac0b3ea352a787f73f4a730e724014e6f", null ],
@@ -23,5 +26,6 @@ var class_open_x_r_vk_1_1_input =
     [ "LocateControllerSpace", "class_open_x_r_vk_1_1_input.html#aec4144a5a8b8867ac8fd44a9534a7387", null ],
     [ "LocateVisualizedSpace", "class_open_x_r_vk_1_1_input.html#abdbf51791d9b6fd1ef71f1303ca5ca14", null ],
     [ "PollActions", "class_open_x_r_vk_1_1_input.html#ac2164ab3d36fd6c1e2173703cbb0f991", null ],
-    [ "UpdateXrSpaceLocations", "class_open_x_r_vk_1_1_input.html#a0f2ef16462ce864e99801fcac50355e6", null ]
+    [ "UpdateXrSpaceLocations", "class_open_x_r_vk_1_1_input.html#a0f2ef16462ce864e99801fcac50355e6", null ],
+    [ "LogName", "class_open_x_r_vk_1_1_input.html#a0b6ef54c7c6cf286c0d0bfbb16c6caf7", null ]
 ];

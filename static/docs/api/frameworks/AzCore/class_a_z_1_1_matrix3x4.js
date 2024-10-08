@@ -1,6 +1,10 @@
 var class_a_z_1_1_matrix3x4 =
 [
+    [ "Axis", "class_a_z_1_1_matrix3x4.html#af4793d778a6c17253f911c6063718c87", null ],
     [ "Matrix3x4", "class_a_z_1_1_matrix3x4.html#ab6c490cd92be5e2b04d858122d432ba2", null ],
+    [ "Matrix3x4", "class_a_z_1_1_matrix3x4.html#a532b6f738d3cc44092f3c9add3c9e749", null ],
+    [ "Matrix3x4", "class_a_z_1_1_matrix3x4.html#a7062da86b3afad4f9c6010d7505a6b12", null ],
+    [ "AZ_TYPE_INFO", "class_a_z_1_1_matrix3x4.html#a76b27d2bfa8c7146a043a50bd876c12d", null ],
     [ "CreateDiagonal", "class_a_z_1_1_matrix3x4.html#a09c8f9210bf8baa08b1d7fdf4155f784", null ],
     [ "CreateFromColumnMajorFloat12", "class_a_z_1_1_matrix3x4.html#a31929060d4bcf4ccb6aa775880e5f3cd", null ],
     [ "CreateFromColumnMajorFloat16", "class_a_z_1_1_matrix3x4.html#ae6eea397383b4f00dd8a8b0a19697b55", null ],
@@ -39,6 +43,8 @@ var class_a_z_1_1_matrix3x4 =
     [ "GetRow", "class_a_z_1_1_matrix3x4.html#a2014fdd85df6627f0b9cd37b61625bdd", null ],
     [ "GetRowAsVector3", "class_a_z_1_1_matrix3x4.html#aefe7e268c250758bf1e1d072d4f55005", null ],
     [ "GetRows", "class_a_z_1_1_matrix3x4.html#a5382b186d59de723e145913181efb23a", null ],
+    [ "GetSimdValues", "class_a_z_1_1_matrix3x4.html#a771703cc358fca6848e38649615caeb8", null ],
+    [ "GetSimdValues", "class_a_z_1_1_matrix3x4.html#ac8b438c1fbbcf26b29ed3474472c1511", null ],
     [ "GetTranslation", "class_a_z_1_1_matrix3x4.html#a7c7a2e59c12258080accd48a1ae90eb2", null ],
     [ "GetTranspose", "class_a_z_1_1_matrix3x4.html#a2d889caabb28144caaabf57c1ca0069c", null ],
     [ "GetTranspose3x3", "class_a_z_1_1_matrix3x4.html#a9631a09061880e66c5bcdef7894dcc57", null ],
@@ -56,10 +62,15 @@ var class_a_z_1_1_matrix3x4 =
     [ "operator*", "class_a_z_1_1_matrix3x4.html#a6ff72bcd7d99e803384c044281e918f0", null ],
     [ "operator*", "class_a_z_1_1_matrix3x4.html#a73c66e7eadddf6d0ff52c838275c6516", null ],
     [ "operator*", "class_a_z_1_1_matrix3x4.html#a60eba0ab1e824aa74ba4b0c4045e2d6c", null ],
+    [ "operator*=", "class_a_z_1_1_matrix3x4.html#af16f5695393f62e103b32e0d7cb3ace8", null ],
+    [ "operator*=", "class_a_z_1_1_matrix3x4.html#abef87778855ffdb08c59f674eb6f2ace", null ],
     [ "operator+", "class_a_z_1_1_matrix3x4.html#a7555c8859bb258d049a52902b57a0d4c", null ],
+    [ "operator+=", "class_a_z_1_1_matrix3x4.html#a29c9b080332b737a992be895b81bc3d2", null ],
     [ "operator-", "class_a_z_1_1_matrix3x4.html#afc3759acca6a9ca728c803972f48bcf9", null ],
     [ "operator-", "class_a_z_1_1_matrix3x4.html#a67d412e2c1f9ad765adb20fac9001766", null ],
+    [ "operator-=", "class_a_z_1_1_matrix3x4.html#a285b798e7f06027a3d1fc155d8ed89dc", null ],
     [ "operator/", "class_a_z_1_1_matrix3x4.html#a36d42cd34383fad3615a822d2e874968", null ],
+    [ "operator/=", "class_a_z_1_1_matrix3x4.html#a10d799a93bc1db99b26f8659a43beea4", null ],
     [ "operator==", "class_a_z_1_1_matrix3x4.html#a108ba32875775a271b2f4df6a4f52f0e", null ],
     [ "Orthogonalize", "class_a_z_1_1_matrix3x4.html#aaf0d473d1ebcd1a571748abc098df7c0", null ],
     [ "Reflect", "class_a_z_1_1_matrix3x4.html#a57d473ab6d2bdf014f180a3021340b18", null ],
@@ -92,5 +103,7 @@ var class_a_z_1_1_matrix3x4 =
     [ "TransformVector", "class_a_z_1_1_matrix3x4.html#afd54d0acde0fce310a2e078a4263110e", null ],
     [ "Transpose", "class_a_z_1_1_matrix3x4.html#a2e9c29b47171b0579828c99a24d0aa4f", null ],
     [ "Transpose3x3", "class_a_z_1_1_matrix3x4.html#af521754c17f249c93659474a6259fbe0", null ],
-    [ "UnsafeCreateFromMatrix4x4", "class_a_z_1_1_matrix3x4.html#a4e9f3e3bfc42189dbe5d25d521de37b2", null ]
+    [ "UnsafeCreateFromMatrix4x4", "class_a_z_1_1_matrix3x4.html#a4e9f3e3bfc42189dbe5d25d521de37b2", null ],
+    [ "ColCount", "class_a_z_1_1_matrix3x4.html#ac47c69c6b27efc73595a9158b782c50e", null ],
+    [ "RowCount", "class_a_z_1_1_matrix3x4.html#a6a907ee388bfcbc90b76b07de99a789a", null ]
 ];

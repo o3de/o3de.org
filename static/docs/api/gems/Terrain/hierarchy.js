@@ -111,12 +111,6 @@ var hierarchy =
     [ "AzToolsFramework::EditorVisibilityNotificationBus::Handler", null, [
       [ "Terrain::EditorTerrainMacroMaterialComponent", "class_terrain_1_1_editor_terrain_macro_material_component.html", null ]
     ] ],
-    [ "LmbrCentral::DependencyNotificationBus::Handler", null, [
-      [ "Terrain::EditorTerrainMacroMaterialComponent", "class_terrain_1_1_editor_terrain_macro_material_component.html", null ],
-      [ "Terrain::TerrainHeightGradientListComponent", "class_terrain_1_1_terrain_height_gradient_list_component.html", null ],
-      [ "Terrain::TerrainSurfaceGradientListComponent", "class_terrain_1_1_terrain_surface_gradient_list_component.html", null ]
-    ] ],
-    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
     [ "LmbrCentral::EditorWrappedComponentBase< TerrainHeightGradientListComponent, TerrainHeightGradientListConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Terrain::EditorTerrainHeightGradientListComponent", "class_terrain_1_1_editor_terrain_height_gradient_list_component.html", null ]
     ] ],
@@ -138,6 +132,12 @@ var hierarchy =
     [ "LmbrCentral::EditorWrappedComponentBase< TerrainWorldRendererComponent, TerrainWorldRendererConfig >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", [
       [ "Terrain::EditorTerrainWorldRendererComponent", "class_terrain_1_1_editor_terrain_world_renderer_component.html", null ]
     ] ],
+    [ "LmbrCentral::DependencyNotificationBus::Handler", null, [
+      [ "Terrain::EditorTerrainMacroMaterialComponent", "class_terrain_1_1_editor_terrain_macro_material_component.html", null ],
+      [ "Terrain::TerrainHeightGradientListComponent", "class_terrain_1_1_terrain_height_gradient_list_component.html", null ],
+      [ "Terrain::TerrainSurfaceGradientListComponent", "class_terrain_1_1_terrain_surface_gradient_list_component.html", null ]
+    ] ],
+    [ "LmbrCentral::EditorWrappedComponentBase< typename, typename >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ],
     [ "LmbrCentral::ShapeComponentNotificationsBus::Handler", null, [
       [ "Terrain::TerrainLayerSpawnerComponent", "class_terrain_1_1_terrain_layer_spawner_component.html", null ],
       [ "Terrain::TerrainMacroMaterialComponent", "class_terrain_1_1_terrain_macro_material_component.html", null ],

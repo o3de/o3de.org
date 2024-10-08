@@ -1,8 +1,18 @@
 var class_a_z_1_1_serialize_1_1_class_data =
 [
+    [ "ClassData", "class_a_z_1_1_serialize_1_1_class_data.html#ac19d9f0f8f68236a478dd52c1df5f010", null ],
+    [ "~ClassData", "class_a_z_1_1_serialize_1_1_class_data.html#a587cab604be9e2d8fa344e80229e15aa", null ],
+    [ "ClassData", "class_a_z_1_1_serialize_1_1_class_data.html#a7d3025b6db373f51e802e7a443f17e2c", null ],
+    [ "AZ_TYPE_INFO_WITH_NAME_DECL", "class_a_z_1_1_serialize_1_1_class_data.html#a097d9da9a08575767568ed5a2086808d", null ],
     [ "CanConvertFromType", "class_a_z_1_1_serialize_1_1_class_data.html#ae5e32f80712a429a19604c32ce320088", null ],
-    [ "FindAttribute", "class_a_z_1_1_serialize_1_1_class_data.html#a630894055a3e3c73940fe47adaa214c1", null ],
+    [ "ClearAttributes", "class_a_z_1_1_serialize_1_1_class_data.html#a5271fc6a2d7d9728316de7b17c561c85", null ],
+    [ "ConvertFromType", "class_a_z_1_1_serialize_1_1_class_data.html#adb83e03e952ab134cb3ca36d89b3afc2", null ],
+    [ "Create", "class_a_z_1_1_serialize_1_1_class_data.html#abddfb24292643906bd45923899033685", null ],
+    [ "FindAttribute", "class_a_z_1_1_serialize_1_1_class_data.html#ab22bea9e87c65dd5f7f9996bdcd549c1", null ],
     [ "GetPersistentId", "class_a_z_1_1_serialize_1_1_class_data.html#a61f2a4d0325c39ac4bb859acdc9f4799", null ],
+    [ "IsDeprecated", "class_a_z_1_1_serialize_1_1_class_data.html#a5841eca1af4a3a508542fd4334459556", null ],
+    [ "operator=", "class_a_z_1_1_serialize_1_1_class_data.html#aa20a71d9afd88a00afba1942d8fee166", null ],
+    [ "m_attributes", "class_a_z_1_1_serialize_1_1_class_data.html#a7a358c187084bc9d718191ad1ae9e781", null ],
     [ "m_azRtti", "class_a_z_1_1_serialize_1_1_class_data.html#a6e98c23b3b43eaeb1cab4e83624efa4d", null ],
     [ "m_container", "class_a_z_1_1_serialize_1_1_class_data.html#add64c2737f4d2ce1cc8b4a5eb8b9793a", null ],
     [ "m_converter", "class_a_z_1_1_serialize_1_1_class_data.html#a8e20b74c55939fd10fa8e595ffc9e175", null ],
@@ -14,7 +24,9 @@ var class_a_z_1_1_serialize_1_1_class_data =
     [ "m_elements", "class_a_z_1_1_serialize_1_1_class_data.html#a35f799eaaaead2b0896742a7c2d203df", null ],
     [ "m_eventHandler", "class_a_z_1_1_serialize_1_1_class_data.html#a2e65b879290df29fa840493fa9c9ff70", null ],
     [ "m_factory", "class_a_z_1_1_serialize_1_1_class_data.html#acedfb55cf5d399389d7227d7d07299a2", null ],
+    [ "m_name", "class_a_z_1_1_serialize_1_1_class_data.html#a8a858e8a7d0d53d978266a6c1d980a44", null ],
     [ "m_persistentId", "class_a_z_1_1_serialize_1_1_class_data.html#a9a9bfae900f248707a1fd73f91ee3d47", null ],
     [ "m_serializer", "class_a_z_1_1_serialize_1_1_class_data.html#acdeafd9599e9b44b8a064e3550a30550", null ],
+    [ "m_typeId", "class_a_z_1_1_serialize_1_1_class_data.html#a3f6cdf0aa944f540f2e88f5931f5b327", null ],
     [ "m_version", "class_a_z_1_1_serialize_1_1_class_data.html#ad453770124169b6399f2ca0d40039f44", null ]
 ];

@@ -41,7 +41,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_terrain_1_1_terrain_clipmap_manager.html#a87d46469dcbbecdaab7e58fecdc66a0f",
+"class_terrain_1_1_terrain_physics_collider_component.html#a5998c542145a2b49ff19afb6ce44b5ee",
+"class_terrain_1_1_vector2i.html#a0508b7b79b2def24efba1d83c8129739"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
