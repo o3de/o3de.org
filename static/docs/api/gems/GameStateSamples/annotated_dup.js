@@ -1,8 +1,8 @@
 var annotated_dup =
 [
     [ "GameStateSamples", null, [
-      [ "GameOptionRequests", "class_game_state_samples_1_1_game_option_requests.html", "class_game_state_samples_1_1_game_option_requests" ],
       [ "GameOptions", "class_game_state_samples_1_1_game_options.html", "class_game_state_samples_1_1_game_options" ],
+      [ "GameOptionRequests", "class_game_state_samples_1_1_game_option_requests.html", "class_game_state_samples_1_1_game_option_requests" ],
       [ "GameStateLevelLoading", "class_game_state_samples_1_1_game_state_level_loading.html", "class_game_state_samples_1_1_game_state_level_loading" ],
       [ "GameStateLevelPaused", "class_game_state_samples_1_1_game_state_level_paused.html", "class_game_state_samples_1_1_game_state_level_paused" ],
       [ "GameStateLevelRunning", "class_game_state_samples_1_1_game_state_level_running.html", "class_game_state_samples_1_1_game_state_level_running" ],

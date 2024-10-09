@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Open 3D Engine ROS2 Gem API Reference", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", null ],
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ]
@@ -43,15 +43,23 @@ var NAVTREE =
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ]
       ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_r_o_s2_1_1_sensor_event_source.html#ae8408155da631d8096a153b2bd959a43",
-"struct_r_o_s2_1_1_urdf_parser_1_1_parse_result.html#a123bccef966eda851783e6bbde089c2e"
+"",
+"class_r_o_s2_1_1_ackermann_control_component.html#a8b532dae4d6d48e1c560cb6fb588e28d",
+"class_r_o_s2_1_1_joints_manipulation_component.html#a6fcf7b5bf16bdc089643ae7f28c7f88c",
+"class_r_o_s2_1_1_prefab_maker_page.html#a76ab8a31f24b8ffd2afc554e25e46974",
+"class_r_o_s2_1_1_r_o_s2_robot_importer_editor_system_component.html#a07f3394c9b6406360f050f2bb9aace97",
+"class_r_o_s2_1_1_spawner_requests.html#a0b7b06a187f288f80dc3184677b431c5",
+"functions_s.html",
+"struct_r_o_s2_1_1_s_d_format_1_1_sensor_importer_hook.html#a00866d79bb332d7dc506d19fdd8ced1f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

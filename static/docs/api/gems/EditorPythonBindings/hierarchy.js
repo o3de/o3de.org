@@ -41,6 +41,7 @@ var hierarchy =
       [ "EditorPythonBindings::TypeConverterTuple", "class_editor_python_bindings_1_1_type_converter_tuple.html", null ]
     ] ],
     [ "EditorPythonBindings::PythonProxyObject", "class_editor_python_bindings_1_1_python_proxy_object.html", null ],
+    [ "EditorPythonBindings::Text::PythonBehaviorDescription", "class_editor_python_bindings_1_1_text_1_1_python_behavior_description.html", null ],
     [ "EditorPythonBindingsNotificationBus::Handler", null, [
       [ "EditorPythonBindings::PythonLogSymbolsComponent", "class_editor_python_bindings_1_1_python_log_symbols_component.html", null ]
     ] ],

@@ -1,6 +1,6 @@
 var struct_vma_allocator_create_info =
 [
-    [ "VMA_LEN_IF_NOT_NULL", "struct_vma_allocator_create_info.html#ad19447d8c50cdb04f0f473009edccd7c", null ],
+    [ "VMA_LEN_IF_NOT_NULL", "struct_vma_allocator_create_info.html#a82466e83a09c9c49da27e8ba0f733794", null ],
     [ "device", "struct_vma_allocator_create_info.html#ac35aa355d3bfcbf6bb2eb88ccf68125c", null ],
     [ "flags", "struct_vma_allocator_create_info.html#a392ea2ecbaff93f91a7c49f735ad4346", null ],
     [ "instance", "struct_vma_allocator_create_info.html#aa2d4e3d86e6828834a56cf9f9406149a", null ],

@@ -1,5 +1,6 @@
 var class_white_box_1_1_attribute_buffer =
 [
+    [ "Trait", "class_white_box_1_1_attribute_buffer.html#abe04901b198ad13774634e3c719872c0", null ],
     [ "AttributeBuffer", "class_white_box_1_1_attribute_buffer.html#aff79fedf9730a8503ce58fa88f5058b0", null ],
     [ "AddLodStreamBuffer", "class_white_box_1_1_attribute_buffer.html#afc3185169bc70b04d182414a6dc01f67", null ],
     [ "AddMeshStreamBuffer", "class_white_box_1_1_attribute_buffer.html#a3b4af585c43260002ffcd9db2ea2d014", null ],

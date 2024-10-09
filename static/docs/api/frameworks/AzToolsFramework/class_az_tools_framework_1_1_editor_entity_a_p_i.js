@@ -1,5 +1,6 @@
 var class_az_tools_framework_1_1_editor_entity_a_p_i =
 [
+    [ "AZ_RTTI", "class_az_tools_framework_1_1_editor_entity_a_p_i.html#a72911d086538ac2f3209fa63a034a225", null ],
     [ "DeleteEntities", "class_az_tools_framework_1_1_editor_entity_a_p_i.html#a3594b9297bd76ec27728a15994ae31d4", null ],
     [ "DeleteEntitiesAndAllDescendants", "class_az_tools_framework_1_1_editor_entity_a_p_i.html#ab7266588761ed3e8f60acb14d68a0304", null ],
     [ "DeleteEntityAndAllDescendants", "class_az_tools_framework_1_1_editor_entity_a_p_i.html#a255c7671085d58270831550e43518682", null ],

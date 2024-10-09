@@ -1,6 +1,14 @@
 var class_a_z_1_1_render_1_1_directional_light_feature_processor_interface =
 [
+    [ "LightHandle", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#af44623aac57f5e90f11829ea2b85226f", null ],
+    [ "DebugDrawFlags", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498", [
+      [ "DebugDrawNone", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498a10331a6f2c876c9febf1a68ba97d615b", null ],
+      [ "DebugDrawColoring", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498a5e0b09acfa51ad73e2ad6cd6183b7a71", null ],
+      [ "DebugDrawBoundingBoxes", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498a7ae2d9fe18dd5a1a0bbcb4fd518c36f3", null ],
+      [ "DebugDrawAll", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a744671423c7988203016ee608a260498a72524839d00b027385accdc4ddee40bf", null ]
+    ] ],
     [ "AcquireLight", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a1a17b4564eeacd11ea46f7c726d23d44", null ],
+    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a48f18f2bf31315064b0040535e3f7662", null ],
     [ "CloneLight", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a7e1197dc611bbeeed7f512ea9960d078", null ],
     [ "ReleaseLight", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a4dd9b8faf22bd039ccad3cc17729f457", null ],
     [ "SetAffectsGI", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a00ad03dfc00ea2eae867a05a463acf69", null ],
@@ -18,9 +26,11 @@ var class_a_z_1_1_render_1_1_directional_light_feature_processor_interface =
     [ "SetFullscreenBlurDepthFalloffStrength", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a92d59b12498c6d4f260b767ec667e365", null ],
     [ "SetFullscreenBlurEnabled", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a2e0f407f29effcf8f64e9371cb5352e3", null ],
     [ "SetGroundHeight", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#ab8bba71f40c67db485b13af62b5b5a5e", null ],
+    [ "SetLightingChannelMask", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a87478d9aa44b58dfccdb7efe654f495e", null ],
     [ "SetNormalShadowBias", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a6ad1c24554efa5175ab527c93f50ab8d", null ],
     [ "SetRgbIntensity", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a6fa8b3d899a9eaf36302b943fa8483c1", null ],
     [ "SetShadowBias", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#acd71d8f94a9b1d9e8fcf477083c01949", null ],
+    [ "SetShadowEnabled", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a47611df06a0ec067ec4b33aec5ec4b55", null ],
     [ "SetShadowFarClipDistance", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a2af97c7970e590b4c8642f90869ca356", null ],
     [ "SetShadowFilterMethod", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#aeaf03a939f4dd2298730780b2a2fa767", null ],
     [ "SetShadowmapFrustumSplitSchemeRatio", "class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html#a6b953d301eed087af8692e382949f2c0", null ],

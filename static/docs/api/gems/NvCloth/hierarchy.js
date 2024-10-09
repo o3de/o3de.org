@@ -27,9 +27,6 @@ var hierarchy =
     [ "AZ::SceneAPI::SceneCore::BehaviorComponent", null, [
       [ "NvCloth::Pipeline::ClothRuleBehavior", "class_nv_cloth_1_1_pipeline_1_1_cloth_rule_behavior.html", null ]
     ] ],
-    [ "AZ::SystemAllocator", null, [
-      [ "NvCloth::AzClothAllocator", "class_nv_cloth_1_1_az_cloth_allocator.html", null ]
-    ] ],
     [ "AZ::TickBus::Handler", null, [
       [ "NvCloth::ClothComponentMesh", "class_nv_cloth_1_1_cloth_component_mesh.html", null ],
       [ "NvCloth::SystemComponent", "class_nv_cloth_1_1_system_component.html", null ]

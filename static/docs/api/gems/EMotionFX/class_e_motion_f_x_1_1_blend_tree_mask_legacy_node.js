@@ -1,4 +1,29 @@
 var class_e_motion_f_x_1_1_blend_tree_mask_legacy_node =
 [
-    [ "UniqueData", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node_1_1_unique_data.html", null ]
+    [ "UniqueData", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node_1_1_unique_data.html", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node_1_1_unique_data" ],
+    [ "BlendTreeMaskLegacyNode", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a9be41b4d974d699ff4c9e55bf91d6f27", null ],
+    [ "~BlendTreeMaskLegacyNode", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a207b3a7380a047d87ab9caa52ddfb8e1", null ],
+    [ "CreateUniqueData", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#ad5d97def35fb9c28f7b23ef5e8cb9f5b", null ],
+    [ "GetHasOutputPose", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#ae01202cadcad0aa655c590409f5d5978", null ],
+    [ "GetMainOutputPose", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a8f0b892736db1a601c17d4342936c4d1", null ],
+    [ "GetMask0", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#af26a957cc26d5b71ee85d856204a52ac", null ],
+    [ "GetMask1", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#abb40a402c384fdd856e76fdb893ee8d5", null ],
+    [ "GetMask2", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a8d5052ab69bd0c17468c0d5656c7bc9b", null ],
+    [ "GetMask3", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#ab682d35f8619ffebf61958f14ce9d2c3", null ],
+    [ "GetNumMasks", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a1a61a6c0daef710efd916b9978d1e429", null ],
+    [ "GetOutputEvents", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a3fbd0a0ac4e43e23b9fcfc838d0003b5", null ],
+    [ "GetPaletteCategory", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a963d57f719e9e9ce5d051a1f8870b5e8", null ],
+    [ "GetPaletteName", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a52a6822de7d67c08aa2230148507f655", null ],
+    [ "GetSupportsVisualization", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#af78c79a6c1d4f2834c3db240c36e0736", null ],
+    [ "GetVisualColor", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a1f241a1615b8144eaabbd3ad0a645506", null ],
+    [ "InitAfterLoading", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#ab8dbe04467550614269110e144350171", null ],
+    [ "Reflect", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#ae446d5a0c3d02811e3e6bfc7114cd52c", null ],
+    [ "SetMask0", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a6018256bf63a349544dde32a981a167f", null ],
+    [ "SetMask1", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a82d6b5ce6e4cd3eaf85d3149e5c9daa6", null ],
+    [ "SetMask2", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#aaecc2874d87326a0539a77727087c009", null ],
+    [ "SetMask3", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#aa924bc629e38ba5b411d61730c68872c", null ],
+    [ "SetOutputEvents0", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a9bbe1cde9be331e3f6733a5aef8b5b27", null ],
+    [ "SetOutputEvents1", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a9e51cae3c34403ab7d7350ae7595e567", null ],
+    [ "SetOutputEvents2", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a83503fb74724e34867174f57c852f5c1", null ],
+    [ "SetOutputEvents3", "class_e_motion_f_x_1_1_blend_tree_mask_legacy_node.html#a4be9f70aba66f2c699af436656540ef3", null ]
 ];

@@ -1,7 +1,8 @@
 var class_ui_transform_interface =
 [
-    [ "Rect", "struct_ui_transform_interface_1_1_rect.html", null ],
-    [ "RectPoints", "struct_ui_transform_interface_1_1_rect_points.html", null ],
+    [ "Rect", "struct_ui_transform_interface_1_1_rect.html", "struct_ui_transform_interface_1_1_rect" ],
+    [ "RectPoints", "struct_ui_transform_interface_1_1_rect_points.html", "struct_ui_transform_interface_1_1_rect_points" ],
+    [ "RectPointsArray", "class_ui_transform_interface.html#a5fd32b88c056d4075f42e2c82a25d0e3", null ],
     [ "Recompute", "class_ui_transform_interface.html#a1d61bb6f8f4dad36d160f2aac4ed7f2b", [
       [ "RectOnly", "class_ui_transform_interface.html#a1d61bb6f8f4dad36d160f2aac4ed7f2bae698df98af21e3d69d585179365232fc", null ],
       [ "TransformOnly", "class_ui_transform_interface.html#a1d61bb6f8f4dad36d160f2aac4ed7f2ba931c9eaa839fb27b85da6296811a378b", null ],
@@ -18,6 +19,7 @@ var class_ui_transform_interface =
       [ "ScaleXOnly", "class_ui_transform_interface.html#aaf7f8beb19f467c156be050c39347b7cae6843246ea3b512e5035d4183ef13a88", null ],
       [ "ScaleYOnly", "class_ui_transform_interface.html#aaf7f8beb19f467c156be050c39347b7caea3f28ad33f5879522c05be9e9127af5", null ]
     ] ],
+    [ "~UiTransformInterface", "class_ui_transform_interface.html#a1f4800730d29d07dcd8617e2e6048ae2", null ],
     [ "BoundsAreOverlappingRect", "class_ui_transform_interface.html#a5b330b9c0ede632f66b1bd00ad77dac3", null ],
     [ "GetCanvasPosition", "class_ui_transform_interface.html#a8655ed02402d817af7fea5c5ab13f585", null ],
     [ "GetCanvasSpacePivot", "class_ui_transform_interface.html#a89ca2732401bcbe3ef59cab7c0d8761a", null ],
@@ -26,6 +28,7 @@ var class_ui_transform_interface =
     [ "GetCanvasSpacePointsNoScaleRotate", "class_ui_transform_interface.html#a07e1cbd7fa51332b077259fd8298bcb7", null ],
     [ "GetCanvasSpaceRectNoScaleRotate", "class_ui_transform_interface.html#adda7890b0b90b667c3ac348d4245f337", null ],
     [ "GetCanvasSpaceSizeNoScaleRotate", "class_ui_transform_interface.html#ae9a0c120151fe31c2e29f24ec2270d17", null ],
+    [ "GetIsFlooringOffsets", "class_ui_transform_interface.html#aa47aa3d444958a643a9c38e275284f7e", null ],
     [ "GetLocalInverseTransform", "class_ui_transform_interface.html#ab1cc1525e8295d9a594efd3010a64508", null ],
     [ "GetLocalPosition", "class_ui_transform_interface.html#a001f3ce203e2b19959df1dc5d2927a3a", null ],
     [ "GetLocalPositionX", "class_ui_transform_interface.html#ac4822fc1129ee575adfa6794d5678de0", null ],
@@ -57,6 +60,7 @@ var class_ui_transform_interface =
     [ "NotifyAndResetCanvasSpaceRectChange", "class_ui_transform_interface.html#af1638f97297274593d54199dfeccc8a1", null ],
     [ "RotateAndScalePoints", "class_ui_transform_interface.html#a3bc06396e922881f3ef607e13214a62f", null ],
     [ "SetCanvasPosition", "class_ui_transform_interface.html#a83a6ec90d51324d5623309ccd8f86074", null ],
+    [ "SetIsFlooringOffsets", "class_ui_transform_interface.html#ac5c8b1883b1c4a6968dd26508995a249", null ],
     [ "SetLocalPosition", "class_ui_transform_interface.html#a739620100714c397bcc69ca18a987a7e", null ],
     [ "SetLocalPositionX", "class_ui_transform_interface.html#acffc4bfe972b2dd0b84a2e9177aac9b5", null ],
     [ "SetLocalPositionY", "class_ui_transform_interface.html#a419210e610e96cb4cbe72b48ae52cadc", null ],

@@ -1,5 +1,11 @@
 var class_az_framework_1_1_spawnable_monitor =
 [
+    [ "IssueType", "class_az_framework_1_1_spawnable_monitor.html#a2bb980680873d81be38909a78955eedf", [
+      [ "Error", "class_az_framework_1_1_spawnable_monitor.html#a2bb980680873d81be38909a78955eedfa5920349243131b60a4b0ffe3fe511d16", null ],
+      [ "Cancel", "class_az_framework_1_1_spawnable_monitor.html#a2bb980680873d81be38909a78955eedfa2d8dfb3ac49a2b814ddc3436f9081d77", null ],
+      [ "ReloadError", "class_az_framework_1_1_spawnable_monitor.html#a2bb980680873d81be38909a78955eedfafddf5cbf4b9f83bbdfe824335718749c", null ]
+    ] ],
+    [ "SpawnableMonitor", "class_az_framework_1_1_spawnable_monitor.html#a1edd237e4edf3bb0aeb2138f1c23a370", null ],
     [ "SpawnableMonitor", "class_az_framework_1_1_spawnable_monitor.html#a0585f12a168f358f92e19d06cc9e8913", null ],
     [ "~SpawnableMonitor", "class_az_framework_1_1_spawnable_monitor.html#a58aac373e46ff515ff96f28b917dadd1", null ],
     [ "Connect", "class_az_framework_1_1_spawnable_monitor.html#ac7614ba38cdbb1d6a4670a837f9a7e90", null ],

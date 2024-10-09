@@ -1,10 +1,12 @@
 var class_physics_1_1_character_requests =
 [
+    [ "~CharacterRequests", "class_physics_1_1_character_requests.html#a53a000ea3a5d353d9314a333a55a5822", null ],
+    [ "AddVelocity", "class_physics_1_1_character_requests.html#ad0d24f2a08a3ef4986accee81f7eafb6", null ],
     [ "AddVelocityForPhysicsTimestep", "class_physics_1_1_character_requests.html#a1d033a8f55be38714b0b5a8e575886c5", null ],
     [ "AddVelocityForTick", "class_physics_1_1_character_requests.html#ae72a86d15bfea97cc133129a942328d2", null ],
     [ "GetBasePosition", "class_physics_1_1_character_requests.html#aaf1d28bae4f008cf2d0e602c4b047a19", null ],
     [ "GetCenterPosition", "class_physics_1_1_character_requests.html#a6850932664bda14a0725a963363c23cd", null ],
-    [ "GetCharacter", "class_physics_1_1_character_requests.html#a006642118ece2042da03f556c41f566f", null ],
+    [ "GetCharacter", "class_physics_1_1_character_requests.html#a5e9ae0428430fa2a29e169878fb06e2c", null ],
     [ "GetMaximumSpeed", "class_physics_1_1_character_requests.html#a00085ae7f9f841914d9f619a810bcbd6", null ],
     [ "GetSlopeLimitDegrees", "class_physics_1_1_character_requests.html#a33634e7ee8d3de7bdd030e464c9e8e52", null ],
     [ "GetStepHeight", "class_physics_1_1_character_requests.html#a695f6f02b01e680456ce031b06f7568b", null ],

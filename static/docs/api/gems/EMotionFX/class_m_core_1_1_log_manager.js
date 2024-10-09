@@ -5,7 +5,7 @@ var class_m_core_1_1_log_manager =
     [ "AddLogCallback", "class_m_core_1_1_log_manager.html#a3494af5a77adc253d07b5675a3729b41", null ],
     [ "ClearLogCallbacks", "class_m_core_1_1_log_manager.html#a54be7c54888bf8ae011b81098e2d1a98", null ],
     [ "FindLogCallback", "class_m_core_1_1_log_manager.html#a7d1c8830be7291ff02632463246d6b01", null ],
-    [ "GetLogCallback", "class_m_core_1_1_log_manager.html#a2d6475059c65b99008b69c0c9bb520bc", null ],
+    [ "GetLogCallback", "class_m_core_1_1_log_manager.html#a4321ed4e14670f6fa3461897e1420317", null ],
     [ "GetLogLevels", "class_m_core_1_1_log_manager.html#a5711d4d29188e7d4b38a0dc84685455a", null ],
     [ "GetNumLogCallbacks", "class_m_core_1_1_log_manager.html#a9fe78e962bf679da0d389eef4e49c53a", null ],
     [ "InitLogLevels", "class_m_core_1_1_log_manager.html#a343c7bf800d2c23192223bd7a30866a8", null ],

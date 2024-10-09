@@ -1,5 +1,6 @@
 var class_surface_data_1_1_surface_tag_weights =
 [
+    [ "SurfaceTagWeights", "class_surface_data_1_1_surface_tag_weights.html#a5ffe25ab17bb598964397230482fd8ea", null ],
     [ "SurfaceTagWeights", "class_surface_data_1_1_surface_tag_weights.html#a04c1167ebd26557439d3e41f674d01f2", null ],
     [ "AddSurfaceTagWeight", "class_surface_data_1_1_surface_tag_weights.html#a31518e4a01f0dd37773aa2acbd8c6fde", null ],
     [ "AddSurfaceTagWeights", "class_surface_data_1_1_surface_tag_weights.html#a3aa54838b65c3edb75eddeb6f055ace8", null ],

@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Open 3D Engine PhysX Gem API Reference", "index.html", [
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", null ],
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
@@ -51,10 +51,19 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_phys_x_1_1_editor_primitive_collider_component_requests.html#a6658970315734888e19017d56febb142",
-"class_phys_x_1_1_rigid_body_configuration.html#a984c2d55513234fb2f84ed312f432911",
-"struct_polygon_prism_mesh_utils_1_1_half_edge.html#a02a420a48f9afe8e25eef341c95af557"
+"",
+"_prefab_conversion_utils_8h.html#a7121ff4fc3dfd854d0803a4e57fa3904",
+"class_phys_x_1_1_base_collider_component.html#a2eb0e28f2586c5ac0f29d249b9db1062",
+"class_phys_x_1_1_collider_box_mode.html#ad12c499bda1d8eba14662b3ee8fae768",
+"class_phys_x_1_1_editor_articulation_link_component.html#a5b7ca672cfc084770bc0ac0a65a3d37b",
+"class_phys_x_1_1_editor_material_asset.html#acd1b8ecc0c870701a965a21b5ce1a0b9",
+"class_phys_x_1_1_force_world_space.html#ae2d822b5cf8820ac375e391856c191ad",
+"class_phys_x_1_1_mesh_collider_component.html#a3c3374dd17c2207753266f09b2905b8d",
+"class_phys_x_1_1_pipeline_1_1_convex_asset_params.html#a8230363ed53ce9d3ddf2c8a267834e36",
+"class_phys_x_1_1_ragdoll_component.html#a98b581258f03e6f9c3d708d12f4b3485",
+"class_phys_x_1_1_static_rigid_body.html#aac038e266c3ec3da9a9a4e234200b653",
+"struct_numerical_methods_1_1_optimization_1_1_line_search_result.html",
+"struct_phys_x_1_1_editor_proxy_shape_config.html#a5f2dc5a6cdf38b585a1477ab1e5b1cd5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

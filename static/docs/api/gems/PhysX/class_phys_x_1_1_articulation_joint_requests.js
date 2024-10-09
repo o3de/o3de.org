@@ -7,7 +7,7 @@ var class_phys_x_1_1_articulation_joint_requests =
     [ "GetFrictionCoefficient", "class_phys_x_1_1_articulation_joint_requests.html#a3753d3c122c35c952278e8c016c75986", null ],
     [ "GetJointPosition", "class_phys_x_1_1_articulation_joint_requests.html#a679e12a674656c50fdd5b665e03e8a4b", null ],
     [ "GetJointVelocity", "class_phys_x_1_1_articulation_joint_requests.html#a448cf4941ef5f64c7e77dfe82fb6598d", null ],
-    [ "GetLimit", "class_phys_x_1_1_articulation_joint_requests.html#a717f08f3ef85bd116ead93f8d9092fcb", null ],
+    [ "GetLimit", "class_phys_x_1_1_articulation_joint_requests.html#a67a4703488cd65446250a42b23a61422", null ],
     [ "GetMaxForce", "class_phys_x_1_1_articulation_joint_requests.html#a4131f04b4903878f1929d616db0ce435", null ],
     [ "GetMaxJointVelocity", "class_phys_x_1_1_articulation_joint_requests.html#aa7d2c99fc8fbe412f7561f5ab18a1dbc", null ],
     [ "GetMotion", "class_phys_x_1_1_articulation_joint_requests.html#a66c77bc76ea4de08dc8a78736bab0840", null ],

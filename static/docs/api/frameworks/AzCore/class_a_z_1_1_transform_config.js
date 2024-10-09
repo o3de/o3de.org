@@ -6,6 +6,8 @@ var class_a_z_1_1_transform_config =
     ] ],
     [ "TransformConfig", "class_a_z_1_1_transform_config.html#a39f6bea53ab8cc6f527330e3c1e9dfec", null ],
     [ "TransformConfig", "class_a_z_1_1_transform_config.html#a5a685bcc6fc289555f5e78c1f21c685e", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_transform_config.html#a35e536525060d6c46ff2de4158f3249e", null ],
+    [ "AZ_RTTI", "class_a_z_1_1_transform_config.html#afba999fb4761723c8b8354a9526b124c", null ],
     [ "m_interpolatePosition", "class_a_z_1_1_transform_config.html#ad944278e9dfde0bb0f4b00984dffd258", null ],
     [ "m_interpolateRotation", "class_a_z_1_1_transform_config.html#a4fa3033564ebed6fd20fecc1fb488f5e", null ],
     [ "m_isStatic", "class_a_z_1_1_transform_config.html#a5db3c12f79c45d5fbe7b0daa434592be", null ],
