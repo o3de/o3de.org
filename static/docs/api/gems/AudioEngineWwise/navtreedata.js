@@ -40,7 +40,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_wwise_builder_1_1_builder_plugin_component.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

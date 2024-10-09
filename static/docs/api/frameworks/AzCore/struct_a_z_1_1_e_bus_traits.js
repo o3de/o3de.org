@@ -9,6 +9,7 @@ var struct_a_z_1_1_e_bus_traits =
     [ "ConnectionPolicy", "struct_a_z_1_1_e_bus_traits.html#aa769c4108d542aa0dc5f5555b7588838", null ],
     [ "ConnectLockGuard", "struct_a_z_1_1_e_bus_traits.html#a54035b6bc2b36202fd17aa9a72d6685c", null ],
     [ "DispatchLockGuard", "struct_a_z_1_1_e_bus_traits.html#ae1a111142fb7527a57987841927b4113", null ],
+    [ "EventProcessingPolicy", "struct_a_z_1_1_e_bus_traits.html#a26e2728bcd1004fe8f1959350d55ab8f", null ],
     [ "EventQueueMutexType", "struct_a_z_1_1_e_bus_traits.html#ae29d85afa3eba414331c9399eba61db7", null ],
     [ "MutexType", "struct_a_z_1_1_e_bus_traits.html#af7caac0bc5f090561541f1ecf359040c", null ],
     [ "RouterPolicy", "struct_a_z_1_1_e_bus_traits.html#acd01ca86374f2359f691cdc496269315", null ],

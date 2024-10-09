@@ -10,8 +10,14 @@ var hierarchy =
     [ "AzFramework::InputDeviceKeyboard::Implementation", null, [
       [ "BarrierInput::InputDeviceKeyboardBarrier", "class_barrier_input_1_1_input_device_keyboard_barrier.html", null ]
     ] ],
+    [ "AzFramework::InputDeviceKeyboard::ImplementationFactory", null, [
+      [ "BarrierInput::InputDeviceKeyboardBarrierImplFactory", "struct_barrier_input_1_1_input_device_keyboard_barrier_impl_factory.html", null ]
+    ] ],
     [ "AzFramework::InputDeviceMouse::Implementation", null, [
       [ "BarrierInput::InputDeviceMouseBarrier", "class_barrier_input_1_1_input_device_mouse_barrier.html", null ]
+    ] ],
+    [ "AzFramework::InputDeviceMouse::ImplementationFactory", null, [
+      [ "BarrierInput::InputDeviceMouseBarrierImplFactory", "struct_barrier_input_1_1_input_device_mouse_barrier_impl_factory.html", null ]
     ] ],
     [ "BarrierInput::BarrierClient", "class_barrier_input_1_1_barrier_client.html", null ],
     [ "BarrierInputConnectionNotificationBus::Handler", null, [

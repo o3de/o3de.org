@@ -1,0 +1,25 @@
+var class_tress_f_x_hair_object =
+[
+    [ "TressFXHairObject", "class_tress_f_x_hair_object.html#acbd73daab88555f11c78f9360ac7078b", null ],
+    [ "DrawStrands", "class_tress_f_x_hair_object.html#a90d28bb9c108a97289334ed57a59d671", null ],
+    [ "GetCPULocalShapeIterations", "class_tress_f_x_hair_object.html#a540bb1a560b2fb0be4700a271f823af3", null ],
+    [ "GetDynamicState", "class_tress_f_x_hair_object.html#a7542b434f95388997f6c1832ead74666", null ],
+    [ "GetNumFollowHairsPerGuideHair", "class_tress_f_x_hair_object.html#af9443815b1f8d6985754852e1d1ff555", null ],
+    [ "GetNumTotalHairStrands", "class_tress_f_x_hair_object.html#a2f4eacba6db2b0d8414a4ad30edb66d4", null ],
+    [ "GetNumTotalHairStrands", "class_tress_f_x_hair_object.html#a6b63dc1053c9ee6724860c9f0bab3d60", null ],
+    [ "GetNumTotalHairVertices", "class_tress_f_x_hair_object.html#a51e3f5591924a1f50511a04d90f83fae", null ],
+    [ "GetNumTotalHairVertices", "class_tress_f_x_hair_object.html#ae21f1c0004631cbbd874a41e080bf748", null ],
+    [ "GetNumVerticesPerStrand", "class_tress_f_x_hair_object.html#a14794edc5efe68ca0027b731f6dfc505", null ],
+    [ "GetNumVerticesPerStrand", "class_tress_f_x_hair_object.html#a8d5f5270f9001689d458559899e49b58", null ],
+    [ "GetRenderLayoutBindSet", "class_tress_f_x_hair_object.html#a4c3834bd79d2d52ff7ba5c69fb37ef1d", null ],
+    [ "GetSimBindSet", "class_tress_f_x_hair_object.html#a96a53f5a41bf4cbb6c6c88b14efb834f", null ],
+    [ "IncreaseSimulationFrame", "class_tress_f_x_hair_object.html#a84c9b167d69e711ae3a9d5c6199835f4", null ],
+    [ "PopulateDrawStrandsBindSet", "class_tress_f_x_hair_object.html#a4ffa8ee2b9d1a58582388cc6ce74cfc6", null ],
+    [ "ResetPositions", "class_tress_f_x_hair_object.html#a38f249a84a349383c58b16186b22e1b3", null ],
+    [ "UpdateBoneMatrices", "class_tress_f_x_hair_object.html#ab019cb5c048b331485ffbc2a911b1ac5", null ],
+    [ "UpdateCapsuleCollisions", "class_tress_f_x_hair_object.html#a44186382a1d8c2b05e4a7ee7cd447d84", null ],
+    [ "UpdateConstantBuffer", "class_tress_f_x_hair_object.html#a1ff1455fdfd5eabaf89b9c425c5b5233", null ],
+    [ "UpdatePerObjectRenderParams", "class_tress_f_x_hair_object.html#a4761b02a7b15f1b90588386d01864f0c", null ],
+    [ "UpdateRenderingParameters", "class_tress_f_x_hair_object.html#af1726e564ac310520ba1558a10cfb74f", null ],
+    [ "UpdateSimulationParameters", "class_tress_f_x_hair_object.html#a166b88fdc9aceacdfbfb118e91c64779", null ]
+];

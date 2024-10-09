@@ -1,5 +1,7 @@
 var class_a_z_1_1_vulkan_1_1_device_requirements_request =
 [
-    [ "CollectAdditionalRequiredDeviceExtensions", "class_a_z_1_1_vulkan_1_1_device_requirements_request.html#a9e09dae74d6fd223b18f0797f2a6c991", null ],
-    [ "FilterSupportedDevices", "class_a_z_1_1_vulkan_1_1_device_requirements_request.html#a3f27c0985ef1c8493a30e8b2eb048f5b", null ]
+    [ "~DeviceRequirementsRequest", "class_a_z_1_1_vulkan_1_1_device_requirements_request.html#ac4f273fd7c75ebbf3b1804939932447b", null ],
+    [ "CollectAdditionalRequiredDeviceExtensions", "class_a_z_1_1_vulkan_1_1_device_requirements_request.html#ac4f153d53560207e1dc2e065656054f3", null ],
+    [ "FilterSupportedDevices", "class_a_z_1_1_vulkan_1_1_device_requirements_request.html#ae9f6e6085d56c86f9219b30b8696b309", null ],
+    [ "HandlerPolicy", "class_a_z_1_1_vulkan_1_1_device_requirements_request.html#a66a9ad7c0d5e2035f48e6ff65f489b70", null ]
 ];

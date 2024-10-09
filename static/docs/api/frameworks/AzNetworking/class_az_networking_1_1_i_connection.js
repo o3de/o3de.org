@@ -1,6 +1,7 @@
 var class_az_networking_1_1_i_connection =
 [
     [ "IConnection", "class_az_networking_1_1_i_connection.html#a1fa0c0f8f068e74bcca1cb2c710cabf4", null ],
+    [ "~IConnection", "class_az_networking_1_1_i_connection.html#a6c77c5730fc1bcfa7c4cb2f877aa2825", null ],
     [ "Disconnect", "class_az_networking_1_1_i_connection.html#aedd94ad1c2c3ae940ba0fe2078d6056f", null ],
     [ "GetConnectionId", "class_az_networking_1_1_i_connection.html#a94cbe434c6a802bcf786ede8c81e150b", null ],
     [ "GetConnectionMtu", "class_az_networking_1_1_i_connection.html#a0305654f0c7277c6b5f4d03bbe3bf7f9", null ],

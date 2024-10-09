@@ -41,7 +41,7 @@ var group__group__alloc =
       [ "srcAllocation", "struct_vma_defragmentation_move.html#a51c1ff05d7c1290499c4af2ffe238df5", null ]
     ] ],
     [ "VmaDefragmentationPassMoveInfo", "struct_vma_defragmentation_pass_move_info.html", [
-      [ "VMA_LEN_IF_NOT_NULL", "struct_vma_defragmentation_pass_move_info.html#a761d239e4d75f197dc301c33be31d140", null ],
+      [ "VMA_LEN_IF_NOT_NULL", "struct_vma_defragmentation_pass_move_info.html#acca326a7a5f8ed223b6742f3617b4b40", null ],
       [ "moveCount", "struct_vma_defragmentation_pass_move_info.html#a1b3e18c23f9691f35baf183e615c4408", null ]
     ] ],
     [ "VmaDefragmentationStats", "struct_vma_defragmentation_stats.html", [

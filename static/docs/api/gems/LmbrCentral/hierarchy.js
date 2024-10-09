@@ -351,6 +351,9 @@ var hierarchy =
       [ "LmbrCentral::EditorTagComponent", "class_lmbr_central_1_1_editor_tag_component.html", null ],
       [ "LmbrCentral::EditorWrappedComponentBase< TComponent, TConfiguration >", "class_lmbr_central_1_1_editor_wrapped_component_base.html", null ]
     ] ],
+    [ "AzToolsFramework::CylinderManipulatorRequestBus::Handler", null, [
+      [ "LmbrCentral::EditorCylinderShapeComponent", "class_lmbr_central_1_1_editor_cylinder_shape_component.html", null ]
+    ] ],
     [ "AzToolsFramework::EditorComponentSelectionNotificationsBus::Handler", null, [
       [ "LmbrCentral::EditorBaseShapeComponent", "class_lmbr_central_1_1_editor_base_shape_component.html", null ],
       [ "LmbrCentral::EditorSplineComponent", "class_lmbr_central_1_1_editor_spline_component.html", null ]
@@ -365,12 +368,14 @@ var hierarchy =
     ] ],
     [ "AzToolsFramework::RadiusManipulatorRequestBus::Handler", null, [
       [ "LmbrCentral::EditorCapsuleShapeComponent", "class_lmbr_central_1_1_editor_capsule_shape_component.html", null ],
+      [ "LmbrCentral::EditorCylinderShapeComponent", "class_lmbr_central_1_1_editor_cylinder_shape_component.html", null ],
       [ "LmbrCentral::EditorSphereShapeComponent", "class_lmbr_central_1_1_editor_sphere_shape_component.html", null ]
     ] ],
     [ "AzToolsFramework::ShapeManipulatorRequestBus::Handler", null, [
       [ "LmbrCentral::EditorAxisAlignedBoxShapeComponent", "class_lmbr_central_1_1_editor_axis_aligned_box_shape_component.html", null ],
       [ "LmbrCentral::EditorBoxShapeComponent", "class_lmbr_central_1_1_editor_box_shape_component.html", null ],
       [ "LmbrCentral::EditorCapsuleShapeComponent", "class_lmbr_central_1_1_editor_capsule_shape_component.html", null ],
+      [ "LmbrCentral::EditorCylinderShapeComponent", "class_lmbr_central_1_1_editor_cylinder_shape_component.html", null ],
       [ "LmbrCentral::EditorSphereShapeComponent", "class_lmbr_central_1_1_editor_sphere_shape_component.html", null ]
     ] ],
     [ "BoxShapeComponentRequestsBus::Handler", null, [

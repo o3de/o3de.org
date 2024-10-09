@@ -1,10 +1,12 @@
 var class_a_z_1_1_render_1_1_photometric_value =
 [
+    [ "PhotometricValue", "class_a_z_1_1_render_1_1_photometric_value.html#a1edacb437251426a43537e9219230799", null ],
     [ "PhotometricValue", "class_a_z_1_1_render_1_1_photometric_value.html#aa04ec55e09e42bfffc9c01716698fe06", null ],
+    [ "AZ_RTTI", "class_a_z_1_1_render_1_1_photometric_value.html#a87a19869aa329ef912bf2a3e33f81cf7", null ],
     [ "ConvertIntensityBetweenUnits", "class_a_z_1_1_render_1_1_photometric_value.html#a83f4aa3768a41237c552545e4d77580d", null ],
     [ "ConvertToPhotometricUnit", "class_a_z_1_1_render_1_1_photometric_value.html#a2e848511abea2acd3098602201959208", null ],
     [ "GetArea", "class_a_z_1_1_render_1_1_photometric_value.html#a0a3d836de89c9963b79e855279ac89d5", null ],
-    [ "GetChroma", "class_a_z_1_1_render_1_1_photometric_value.html#a62ec85b154463a9ab4cefdbe412fade3", null ],
+    [ "GetChroma", "class_a_z_1_1_render_1_1_photometric_value.html#a0d76f8ef468f952e1f947e0ae71312b9", null ],
     [ "GetCombinedIntensity", "class_a_z_1_1_render_1_1_photometric_value.html#a8e689b4a659860a9f0cbbbc7d17acf93", null ],
     [ "GetCombinedIntensity", "class_a_z_1_1_render_1_1_photometric_value.html#a54932a1302d2dddcf469e27d63938217", null ],
     [ "GetCombinedRgb", "class_a_z_1_1_render_1_1_photometric_value.html#a3aedae4e32a5582a24e7a48f1d18ea77", null ],
@@ -13,9 +15,17 @@ var class_a_z_1_1_render_1_1_photometric_value =
     [ "GetIntensity", "class_a_z_1_1_render_1_1_photometric_value.html#a3100065e4e8d01199cc1b6a5e95d662d", null ],
     [ "GetPerceptualLuminance", "class_a_z_1_1_render_1_1_photometric_value.html#a1b2f21e8aec28d693db6c87a863fcccd", null ],
     [ "GetType", "class_a_z_1_1_render_1_1_photometric_value.html#acb13f6c9de0b2bbf6b0838e40a950a92", null ],
-    [ "GetTypeSuffix", "class_a_z_1_1_render_1_1_photometric_value.html#a6447d93c57a24d25b2f47b31c6c4a584", null ],
+    [ "GetTypeSuffix", "class_a_z_1_1_render_1_1_photometric_value.html#ad87d81b9120fa700e6034ef44c15b6df", null ],
+    [ "Reflect", "class_a_z_1_1_render_1_1_photometric_value.html#a326a3c0826f775444960a5edd76aad6c", null ],
     [ "SetArea", "class_a_z_1_1_render_1_1_photometric_value.html#a26917bd35fcd3987514dcfe5c234f1c0", null ],
     [ "SetChroma", "class_a_z_1_1_render_1_1_photometric_value.html#a3dbe1ab0ece1972de0427ed0c56d99a4", null ],
     [ "SetEffectiveSolidAngle", "class_a_z_1_1_render_1_1_photometric_value.html#a0d42483303f1342bc08367a1c28c6523", null ],
-    [ "SetIntensity", "class_a_z_1_1_render_1_1_photometric_value.html#aba17a1b3f9871867541aab808888fccb", null ]
+    [ "SetIntensity", "class_a_z_1_1_render_1_1_photometric_value.html#aba17a1b3f9871867541aab808888fccb", null ],
+    [ "DirectionalEffectiveSteradians", "class_a_z_1_1_render_1_1_photometric_value.html#af1860f458066fffc4c2a51ad6f47f667", null ],
+    [ "Ev100Iso", "class_a_z_1_1_render_1_1_photometric_value.html#a5624ef84a28933a4b4031d96bf063fa6", null ],
+    [ "Ev100LightMeterConstantIlluminance", "class_a_z_1_1_render_1_1_photometric_value.html#afdf3c1a0da40f47698de15bfa16ae94c", null ],
+    [ "Ev100LightMeterConstantLuminance", "class_a_z_1_1_render_1_1_photometric_value.html#a0582d14039295703f16c072b9a418362", null ],
+    [ "Ev100ShutterSpeed", "class_a_z_1_1_render_1_1_photometric_value.html#ad096ff6ca8c9edb1a7df11f9328d607e", null ],
+    [ "LuxToNitsRatio", "class_a_z_1_1_render_1_1_photometric_value.html#a89176b35d8f8317ade3a26e119567d02", null ],
+    [ "OmnidirectionalSteradians", "class_a_z_1_1_render_1_1_photometric_value.html#ac7ea4dc9af96aa272fa8c88da00907ab", null ]
 ];

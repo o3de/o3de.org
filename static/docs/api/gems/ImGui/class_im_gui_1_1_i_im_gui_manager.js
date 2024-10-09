@@ -1,0 +1,28 @@
+var class_im_gui_1_1_i_im_gui_manager =
+[
+    [ "ImGuiSetEnabledEvent", "class_im_gui_1_1_i_im_gui_manager.html#a7d5dda6b7fec56e378f53b34b0104142", null ],
+    [ "~IImGuiManager", "class_im_gui_1_1_i_im_gui_manager.html#a013d7175151db750c97af4a1111ba63c", null ],
+    [ "AZ_RTTI", "class_im_gui_1_1_i_im_gui_manager.html#a72d658b3247eb6f4fac1f71cf894e986", null ],
+    [ "ConnectImGuiSetEnabledChangedHandler", "class_im_gui_1_1_i_im_gui_manager.html#aaeb9095283b8eadac4ea87b194d49129", null ],
+    [ "EnableControllerSupportMode", "class_im_gui_1_1_i_im_gui_manager.html#a7273fcdc2809e78bc84a927bc1879196", null ],
+    [ "GetControllerMouseSensitivity", "class_im_gui_1_1_i_im_gui_manager.html#a29fb82e9e302f76cf0c62f09f3437aef", null ],
+    [ "GetDisplayState", "class_im_gui_1_1_i_im_gui_manager.html#ad3f8a05068d781ccc4d67e52369f20d8", null ],
+    [ "GetDpiScalingFactor", "class_im_gui_1_1_i_im_gui_manager.html#ab3237fd123dcfdff687e79f795cac14d", null ],
+    [ "GetEnableDiscreteInputMode", "class_im_gui_1_1_i_im_gui_manager.html#a30de960ac55ee4a5fef19217d77316d8", null ],
+    [ "GetImguiDrawData", "class_im_gui_1_1_i_im_gui_manager.html#af96162670b77cd0e668277335c47df8a", null ],
+    [ "GetImGuiRenderResolution", "class_im_gui_1_1_i_im_gui_manager.html#a79cf1f5bca280c306d06a44ade323ed1", null ],
+    [ "GetResolutionMode", "class_im_gui_1_1_i_im_gui_manager.html#a5457467acc6905eb279e553248ba2882", null ],
+    [ "GetUniqueName", "class_im_gui_1_1_i_im_gui_manager.html#a1dfaa6d21eeb14fa410490523ba1d8f6", null ],
+    [ "IsControllerSupportModeEnabled", "class_im_gui_1_1_i_im_gui_manager.html#a5c9220eee960f6839b79d13b23e9bb05", null ],
+    [ "OverrideRenderWindowSize", "class_im_gui_1_1_i_im_gui_manager.html#a8587504d3ce6daa361d848084e0328c1", null ],
+    [ "RestoreRenderWindowSizeToDefault", "class_im_gui_1_1_i_im_gui_manager.html#ac09df69a2c35ec4ddf77572dfa4b678a", null ],
+    [ "SetControllerMouseSensitivity", "class_im_gui_1_1_i_im_gui_manager.html#ab3bb71f7e09dc5cc9cad4a3127fa0fcf", null ],
+    [ "SetDisplayState", "class_im_gui_1_1_i_im_gui_manager.html#af9c42d7cd0313df55ffb2dc8bef67082", null ],
+    [ "SetDpiScalingFactor", "class_im_gui_1_1_i_im_gui_manager.html#a939a4ac8c6d04bca12bea61a8b68f7ed", null ],
+    [ "SetEnableDiscreteInputMode", "class_im_gui_1_1_i_im_gui_manager.html#a6abea81a527f42f84e2aa1a2290d20a5", null ],
+    [ "SetImGuiRenderResolution", "class_im_gui_1_1_i_im_gui_manager.html#a0c1f4a3397c77891a91653119ea587e3", null ],
+    [ "SetResolutionMode", "class_im_gui_1_1_i_im_gui_manager.html#ad12b8d7eaa37df646e76203e239173ff", null ],
+    [ "ToggleThroughImGuiVisibleState", "class_im_gui_1_1_i_im_gui_manager.html#a75a55237547b87c669a77d48d1217424", null ],
+    [ "ToggleToImGuiVisibleState", "class_im_gui_1_1_i_im_gui_manager.html#a7f5d670c1ea591927169d16f3dc5445f", null ],
+    [ "m_setEnabledEvent", "class_im_gui_1_1_i_im_gui_manager.html#a99c96e13e4d86cfc1f24b30a0ed0534d", null ]
+];

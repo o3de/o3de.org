@@ -2,6 +2,7 @@ var class_az_networking_1_1_tcp_connection =
 [
     [ "TcpConnection", "class_az_networking_1_1_tcp_connection.html#a7f75642b0806b8bf88366bd5c0f835c6", null ],
     [ "TcpConnection", "class_az_networking_1_1_tcp_connection.html#a27e1abc10fea05936e4a1a361c0c450b", null ],
+    [ "~TcpConnection", "class_az_networking_1_1_tcp_connection.html#a1ea7929e784cf1322ef165cdf56e5614", null ],
     [ "Connect", "class_az_networking_1_1_tcp_connection.html#a356eb74d100ffcca37d0591fbbbce906", null ],
     [ "Disconnect", "class_az_networking_1_1_tcp_connection.html#a5b0121acde90c9818f5992c2c4753892", null ],
     [ "GetConnectionMtu", "class_az_networking_1_1_tcp_connection.html#ade1138199f46276ff9e2094c116f9298", null ],

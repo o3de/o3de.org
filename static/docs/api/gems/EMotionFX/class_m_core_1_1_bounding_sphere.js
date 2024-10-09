@@ -6,7 +6,7 @@ var class_m_core_1_1_bounding_sphere =
     [ "Contains", "class_m_core_1_1_bounding_sphere.html#a6b926abe2a575a20b9e0c2fd40eb917a", null ],
     [ "Contains", "class_m_core_1_1_bounding_sphere.html#a3e771cb98a0a69f39233747c78f8cd7e", null ],
     [ "EncapsulateFast", "class_m_core_1_1_bounding_sphere.html#a8af697c4ad6c6694d70c344594cb1ea7", null ],
-    [ "GetCenter", "class_m_core_1_1_bounding_sphere.html#a61827c0ad8a27199050f008f524d3cff", null ],
+    [ "GetCenter", "class_m_core_1_1_bounding_sphere.html#a2f6b593832f6fadb47687cef8b9aec2e", null ],
     [ "GetRadius", "class_m_core_1_1_bounding_sphere.html#aa16be633368af5b24efde448d863fbbe", null ],
     [ "GetRadiusSquared", "class_m_core_1_1_bounding_sphere.html#a6d8fdb451859be648f42830dedfb01ac", null ],
     [ "Init", "class_m_core_1_1_bounding_sphere.html#a7a12be5bd9b23f43e82cf0124c887f9d", null ],

@@ -26,8 +26,8 @@ var hierarchy =
     [ "AzNetworking::DatarateMetrics", "class_az_networking_1_1_datarate_metrics.html", null ],
     [ "AzNetworking::DtlsEndpoint", "class_az_networking_1_1_dtls_endpoint.html", null ],
     [ "AzNetworking::IBitset", "class_az_networking_1_1_i_bitset.html", [
-      [ "AzNetworking::FixedSizeBitset< CAPACITY, uint8_t >", "class_az_networking_1_1_fixed_size_bitset.html", null ],
       [ "AzNetworking::FixedSizeBitset< 1, uint8_t >", "class_az_networking_1_1_fixed_size_bitset.html", null ],
+      [ "AzNetworking::FixedSizeBitset< CAPACITY, uint8_t >", "class_az_networking_1_1_fixed_size_bitset.html", null ],
       [ "AzNetworking::FixedSizeVectorBitset< 255 >", "class_az_networking_1_1_fixed_size_vector_bitset.html", null ],
       [ "AzNetworking::FixedSizeBitset< SIZE, ElementType >", "class_az_networking_1_1_fixed_size_bitset.html", null ],
       [ "AzNetworking::FixedSizeBitsetView", "class_az_networking_1_1_fixed_size_bitset_view.html", null ],
@@ -121,6 +121,7 @@ var hierarchy =
     [ "AzNetworking::TcpSocketManager", "class_az_networking_1_1_tcp_socket_manager.html", null ],
     [ "AzNetworking::TimedThread", "class_az_networking_1_1_timed_thread.html", [
       [ "AzNetworking::TcpListenThread", "class_az_networking_1_1_tcp_listen_thread.html", null ],
+      [ "AzNetworking::UdpHeartbeatThread", "class_az_networking_1_1_udp_heartbeat_thread.html", null ],
       [ "AzNetworking::UdpReaderThread", "class_az_networking_1_1_udp_reader_thread.html", null ]
     ] ],
     [ "AzNetworking::TimeoutQueue", "class_az_networking_1_1_timeout_queue.html", null ],

@@ -17,3 +17,4 @@ This is a stub page intended to serve as an example of guide structure. Informat
 |-|-|
 | [Project Manager](./project-manager) | Learn about the internals of **Project Manager**, including an overview of the major classes and data structures that work together to create the UI and implement the project management and Gem library features of this tool. |
 | [Test Impact Analysis Framework](./tiaf) | Learn about the internals of the Test Impact Analysis Framework, including an overview of the major classes and data structures that work together to create the C++ and Python test support of this tool. |
+| [O3DE CLI](./o3de-cli) | Learn about the internals of the **O3DE CLI**. |

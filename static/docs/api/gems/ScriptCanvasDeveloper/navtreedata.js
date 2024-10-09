@@ -35,7 +35,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_script_canvas_1_1_developer_1_1_create_variable_node_from_graph_palette.html#ae7c599969d85f75858375f889aeafc0a",
+"class_script_canvas_1_1_developer_1_1_nodes_1_1_mock.html#ac59bedc4202e13c38c47a7a7110581b6",
+"struct_script_canvas_1_1_developer_1_1_nodes_1_1_slot_config.html#a2649cdeddb29f83d630907c0c07f5edf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

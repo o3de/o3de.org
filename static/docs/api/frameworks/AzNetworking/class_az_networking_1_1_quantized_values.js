@@ -1,5 +1,9 @@
 var class_az_networking_1_1_quantized_values =
 [
+    [ "SelfType", "class_az_networking_1_1_quantized_values.html#ae88a4eaf142042a6e055b2cd7af4d733", null ],
+    [ "SimdTypef", "class_az_networking_1_1_quantized_values.html#ad8a65ce3a884fb3d3b8af3e2f52f5d13", null ],
+    [ "SimdTypei", "class_az_networking_1_1_quantized_values.html#af344d6ad0980123cd1947a92ef2bd443", null ],
+    [ "ValueType", "class_az_networking_1_1_quantized_values.html#a830c295d365f55e4592963ce6fe51509", null ],
     [ "QuantizedValues", "class_az_networking_1_1_quantized_values.html#ae16457380b6429a8be63fa2a1014bee6", null ],
     [ "QuantizedValues", "class_az_networking_1_1_quantized_values.html#ad9147687b67b849f3bb520030d846f9b", null ],
     [ "QuantizedValues", "class_az_networking_1_1_quantized_values.html#a299d1a7bc80a33c8f820d802d3a2e341", null ],
@@ -19,5 +23,8 @@ var class_az_networking_1_1_quantized_values =
     [ "operator=", "class_az_networking_1_1_quantized_values.html#a96e752dba568e043655804a5c36f01c0", null ],
     [ "operator==", "class_az_networking_1_1_quantized_values.html#ab2c2b4aa8048fcb879c3ecda915f6072", null ],
     [ "operator==", "class_az_networking_1_1_quantized_values.html#a3bf9352d568f9eb9943d9b6b560e1894", null ],
-    [ "Serialize", "class_az_networking_1_1_quantized_values.html#a11e056b746a1823e4115672886f02882", null ]
+    [ "Serialize", "class_az_networking_1_1_quantized_values.html#a11e056b746a1823e4115672886f02882", null ],
+    [ "QuantizedValuesConversionHelper", "class_az_networking_1_1_quantized_values.html#a0cf716df8fd712407d81135409615547", null ],
+    [ "m_serializeValues", "class_az_networking_1_1_quantized_values.html#a51545154ecdfaa6b44a7364c942b8561", null ],
+    [ "m_serializeVector", "class_az_networking_1_1_quantized_values.html#a244b024a4614386a42c8141508d658da", null ]
 ];

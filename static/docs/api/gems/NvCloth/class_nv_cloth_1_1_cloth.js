@@ -1,18 +1,21 @@
 var class_nv_cloth_1_1_cloth =
 [
+    [ "Cloth", "class_nv_cloth_1_1_cloth.html#a0918206893d5753fe8b76b4c332dd250", null ],
+    [ "~Cloth", "class_nv_cloth_1_1_cloth.html#acf16f62161baf1595f0d8b7e76c959b4", null ],
+    [ "AZ_RTTI", "class_nv_cloth_1_1_cloth.html#ab00f7dc78de85cc9828f25efe0382231", null ],
     [ "ClearInertia", "class_nv_cloth_1_1_cloth.html#a550631489836647be1e334f2e3fc47d4", null ],
     [ "ClearMotionConstraints", "class_nv_cloth_1_1_cloth.html#ace7ecac13c804ddcfe268b928570adbe", null ],
     [ "ClearSeparationConstraints", "class_nv_cloth_1_1_cloth.html#a934b82200a42b27539c9f32345bf256b", null ],
     [ "DiscardParticleDelta", "class_nv_cloth_1_1_cloth.html#a7ad8a3971acae17ed632a22a92604f37", null ],
     [ "EnableContinuousCollision", "class_nv_cloth_1_1_cloth.html#ac2b59ced2ea125eb0a97d6ede4237a3c", null ],
-    [ "GetClothConfigurator", "class_nv_cloth_1_1_cloth.html#a17594a838c622dfe4b2b775e21fd714d", null ],
-    [ "GetFabric", "class_nv_cloth_1_1_cloth.html#aeb0ba6ba19746f3f61561ff702050693", null ],
-    [ "GetFabricCookedData", "class_nv_cloth_1_1_cloth.html#a76a6d144d532a941ed25a16c0b5ba570", null ],
+    [ "GetClothConfigurator", "class_nv_cloth_1_1_cloth.html#a4e026fd2e7721c8fa33743a88c4d6213", null ],
+    [ "GetFabric", "class_nv_cloth_1_1_cloth.html#a11489dd56564a92002ab4b0b9891a0fd", null ],
+    [ "GetFabricCookedData", "class_nv_cloth_1_1_cloth.html#a254855c689cec49fadcf61aafd6dec15", null ],
     [ "GetId", "class_nv_cloth_1_1_cloth.html#ab201328c24a96c1ff8b9ad8924222f30", null ],
-    [ "GetInitialIndices", "class_nv_cloth_1_1_cloth.html#a8f51c14285169486aa6f4a285c35ea01", null ],
-    [ "GetInitialParticles", "class_nv_cloth_1_1_cloth.html#a51bb568c15e07d1622a7683133a145d7", null ],
-    [ "GetParticles", "class_nv_cloth_1_1_cloth.html#a57771229431549174b702d07a51d75c1", null ],
-    [ "GetSolver", "class_nv_cloth_1_1_cloth.html#ac2a47bdfd248b49251830026155828b3", null ],
+    [ "GetInitialIndices", "class_nv_cloth_1_1_cloth.html#af876cf8f0c65d82eb60cc36834e210dd", null ],
+    [ "GetInitialParticles", "class_nv_cloth_1_1_cloth.html#af9078f5fbf394dee4cbdfa137c1a4da1", null ],
+    [ "GetParticles", "class_nv_cloth_1_1_cloth.html#a617ffdacf64728b06ab45bdcdd59a4b9", null ],
+    [ "GetSolver", "class_nv_cloth_1_1_cloth.html#aca17210659417b07db0588225142ff81", null ],
     [ "SetAcceleationFilterWidth", "class_nv_cloth_1_1_cloth.html#ae7431bd1bc616c8190a633e30b11d23c", null ],
     [ "SetAngularInertia", "class_nv_cloth_1_1_cloth.html#ac742bca28d8b132e036c790faea8561e", null ],
     [ "SetBendingPhaseConfig", "class_nv_cloth_1_1_cloth.html#a55936a5618b05522dae21bef6cc59056", null ],
@@ -53,5 +56,6 @@ var class_nv_cloth_1_1_cloth =
     [ "SetWindFluidDensity", "class_nv_cloth_1_1_cloth.html#af1230090f017b9688b891230c43fb735", null ],
     [ "SetWindLiftCoefficient", "class_nv_cloth_1_1_cloth.html#a228e24a564d6304e4352cb6261350cde", null ],
     [ "SetWindVelocity", "class_nv_cloth_1_1_cloth.html#afc9fc90dfc2a84ac25eaa9b184ca1593", null ],
-    [ "Update", "class_nv_cloth_1_1_cloth.html#a643172cfc2e0381119de02b68e3a547b", null ]
+    [ "Update", "class_nv_cloth_1_1_cloth.html#a643172cfc2e0381119de02b68e3a547b", null ],
+    [ "Solver", "class_nv_cloth_1_1_cloth.html#a16432758b314f3cedad3fba81c895417", null ]
 ];

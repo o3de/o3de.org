@@ -67,6 +67,10 @@ If you move the project, you will need to update this manifest entry.
 
 Use **CMake** to create the Linux build project for your O3DE project.
 
+{{< important >}}
+When building using the O3DE pre-build **Snap** SDK, first export the `O3DE_SNAP` environment variable so CMake does not attempt to install Python pip requirements and fail. To export the `O3DE_SNAP` environment variable, run the command `export O3DE_SNAP` from the command line before running the CMake commands below.
+{{< /important >}}
+
 1. Create the Linux build project in your new project directory. Supply the build directory, the project source directory, the Ninja Multi-Config generator, and any other project options. Paths can be absolute or relative. Example:
 
     ```shell

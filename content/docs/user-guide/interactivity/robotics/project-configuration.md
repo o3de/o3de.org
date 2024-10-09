@@ -8,7 +8,7 @@ toc: true
 
 ## Requirements
 
-* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble or ROS 2 Iron.
+* Ubuntu 22.04 with ROS 2 Humble or Ubuntu 24.04 with ROS 2 Jazzy. Other Ubuntu versions, ROS 2 versions, and Linux distributions can also work, but are not supported.
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
@@ -54,13 +54,14 @@ If you have multiple ROS 2 versions installed, make sure you [source](https://do
 * Ackermann messages: `ros-${ROS_DISTRO}-ackermann-msgs`
 * Control toolbox `ros-${ROS_DISTRO}-control-toolbox`
 * XACRO `ros-${ROS_DISTRO}-xacro`
+* Vision msgs `ros-${ROS_DISTRO}-vision-msgs`
 
 If a `desktop` installation of ROS 2 distro was selected, everything else should be there.
 
 Use this helpful command to install:
 
 ```
-sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-toolbox ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro
+sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-toolbox ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro ros-${ROS_DISTRO}-vision-msgs
 ```
 
 ### Clone the Gem repository
@@ -98,15 +99,10 @@ To register robotic templates and assets:
     cd ${O3DE_EXTRAS_HOME}
     git lfs install && git lfs pull
     ```
-2. Register the following robotic templates and assets.
+2. Register the following templates and assets from o3de-extras.
     ```bash
-    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ProteusRobot
-    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/RosRobotSample
-    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseAssets
-    ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/WarehouseSample
-    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2FleetRobotTemplate
-    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2RoboticManipulationTemplate
-    ${O3DE_HOME}/scripts/o3de.sh register --template-path ${O3DE_EXTRAS_HOME}/Templates/Ros2ProjectTemplate
+    ${O3DE_HOME}/scripts/o3de.sh register --all-gems-path ${O3DE_EXTRAS_HOME}/Gems/
+    ${O3DE_HOME}/scripts/o3de.sh register --all-templates-path ${O3DE_EXTRAS_HOME}/Templates/
     ```
    
 For more information, refer to [Adding and Removing Gems](/docs/user-guide/project-config/add-remove-gems/) and [Registering Gems](/docs/user-guide/project-config/register-gems/).
@@ -155,13 +151,16 @@ For convenience, here is an example of parametrized CMake calls:
 
 ```shell
 cd $PROJECT_PATH
-cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
+cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON
 cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets 
 ```
-
-These commands build O3DE with PhysX 5 (as opposed to default PhysX 4), which is better suited for robotic simulation.
-For a deeper understanding on how O3DE projects are built, please refer to [Configure and Build](/docs/user-guide/build/configure-and-build).
-
+{{<note>}}
+Before version 24.09.0, PhysX 5 was experimental and compiled during the engine's source code compilation process. 
+If you're utilizing version 23.10.3 or an earlier release, you'll need to specify an additional flag: `-DAZ_USE_PHYSX5:BOOL=ON` :
+```shell
+cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
+```
+{{</note>}}
 ### Launching your project in O3DE Editor
 
 Once your project is built, run the following command to start the Editor:

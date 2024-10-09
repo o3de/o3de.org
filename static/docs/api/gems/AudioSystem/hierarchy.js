@@ -153,11 +153,6 @@ var hierarchy =
       [ "Audio::CAudioSystem", "class_audio_1_1_c_audio_system.html", null ],
       [ "Audio::NullAudioSystem", "class_audio_1_1_null_audio_system.html", null ]
     ] ],
-    [ "AZ::SystemAllocator", null, [
-      [ "Audio::AudioBankAllocator", "class_audio_1_1_audio_bank_allocator.html", null ],
-      [ "Audio::AudioImplAllocator", "class_audio_1_1_audio_impl_allocator.html", null ],
-      [ "Audio::AudioSystemAllocator", "class_audio_1_1_audio_system_allocator.html", null ]
-    ] ],
     [ "AzFramework::ApplicationLifecycleEvents::Bus::Handler", null, [
       [ "AudioSystemGem::AudioSystemGemSystemComponent", "class_audio_system_gem_1_1_audio_system_gem_system_component.html", null ]
     ] ],

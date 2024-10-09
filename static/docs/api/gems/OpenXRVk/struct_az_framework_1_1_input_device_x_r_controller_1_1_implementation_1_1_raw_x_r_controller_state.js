@@ -1,6 +1,8 @@
 var struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state =
 [
     [ "RawXRControllerState", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a9cdb3afe9b32d49e7c238e418b5a4c24", null ],
+    [ "~RawXRControllerState", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a00305a0ed983fb18a9510a0e16acb325", null ],
+    [ "AZ_DISABLE_COPY_MOVE", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a3e1528a8e6a8d1fdccdf1396a27e1c33", null ],
     [ "GetDigitalButtonState", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a5d00c84ed83436db427bba95423c1a1a", null ],
     [ "GetLeftGripAdjustedForDeadZoneAndNormalized", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a89e82342c107279b6631521bd8ed3e9d", null ],
     [ "GetLeftThumbStickAdjustedForDeadZoneAndNormalized", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a030d7a076fb98927c3cd724c3af74ec9", null ],
@@ -11,6 +13,7 @@ var struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_r
     [ "GetRightThumbStickNormalizedValues", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#aeb5c60327983a0d236e6f805034a4289", null ],
     [ "GetRightTriggerAdjustedForDeadZoneAndNormalized", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a55fd9074af01e08f1cc3ba86a7e3d524", null ],
     [ "Reset", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#aad4d697285a70c3f4eea8c64952a2efb", null ],
+    [ "m_buttonIdsToBitMasks", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a62740c6de3f27eeaed36fedbccf6792d", null ],
     [ "m_digitalButtonStates", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a4c0cf34e87cd2c595e0d3af58130b3ba", null ],
     [ "m_gripDeadZoneValue", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#a7bab27f5a6fb87bbe1ae23396420d734", null ],
     [ "m_gripMaxValue", "struct_az_framework_1_1_input_device_x_r_controller_1_1_implementation_1_1_raw_x_r_controller_state.html#afd27901bae8fdd0b48d7edcdca5bbe90", null ],

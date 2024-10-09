@@ -9,7 +9,7 @@ full_img: "/images/blog/motion-matching/full_image.png"
 
 Motion matching is a data-driven animation technique that is gaining popularity since games like 'The Last Of Us Part II', 'FIFA', and 'Half-Life: Alyx' have adopted it. Users have higher expectations for animation quality including more realistic animations and a greater variety of interactions between characters and their environments. This growth in expectation resulted in increasingly complex animation graphs that became harder to maintain and more expensive to create. Motion matching is a way to animate a character in a controlled way by jumping and blending between pre-recorded animation sequences several times a second, synthesizing the animation for the character. It can be used for realistic locomotion without the need to manually create carefully timed transition points and synchronization between animation clips.
 
-We brought motion matching to O3DE's animation system [EMotion FX](https://www.o3de.org/docs/user-guide/visualization/animation/char-intro/) as a blend tree node so that it can still be used and mixed with everything else available in the animation graph.
+We brought motion matching to O3DE's animation system [EMotion FX](https://docs.o3de.org/docs/user-guide/gems/reference/animation/emotionfx/) as a blend tree node so that it can still be used and mixed with everything else available in the animation graph.
 
 {{< video src="/images/blog/motion-matching/controlled-character.mp4" autoplay="true" loop="true" width="100%" info="Gamepad controlled character using motion matching." >}}
 <br>

@@ -9,7 +9,7 @@ To get started quickly with O3DE in Linux, download and install the deb package.
 
 ## Prerequisites
 
-The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](../requirements).
+The following instructions assume that you have met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements/#linux).
 
 ## Installing O3DE from a deb package
 
@@ -40,7 +40,7 @@ sudo chmod -Rv 700 /var/cache/apt/archives/partial/
     {{< known-issue link="https://salsa.debian.org/apt-team/apt/-/merge_requests/177" >}}
 If removing and installing the package, you may observe a warning like the following:
 ```
-W: Repository is broken: o3de:amd64 (= 23.10.3) has no Size information
+W: Repository is broken: o3de:amd64 (= 24.09) has no Size information
 ```
 This is a bug in apt that has already been fixed. The warning should go away once your current Linux distribution takes the fix. The issue is a warning and does not affect installing or removing.
     {{< /known-issue >}}
@@ -76,7 +76,7 @@ When installation is complete, you can find **Project Manager** and other tools 
 
 Example of launching Project Manager from the shell:
 ```shell
-/opt/O3DE/23.10.3/bin/Linux/profile/Default/o3de
+/opt/O3DE/24.09/bin/Linux/profile/Default/o3de
 ```
 
 ## Removing O3DE installed from a deb package
@@ -109,7 +109,7 @@ Example of launching Project Manager from the shell:
 ## Installing O3DE from a Snap package
 
 {{< note >}}
-The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 20.04 and 22.04 LTS. You will need to install all of the dependencies listed in [Linux requirements](/docs/welcome-guide/requirements/#linux).
+The Snap package is experimental and may run into issues on some distros. These instructions have been tested on Ubuntu 22.04 LTS. You will need to install all of the dependencies listed in [Linux requirements](/docs/welcome-guide/requirements/#linux).
 {{< /note >}}
 
 1. Download the Snap package from the [O3DE download](https://o3de.org/download/#linux) page or get instructions from the [Snap store](https://snapcraft.io/o3de).
@@ -132,9 +132,9 @@ The Snap package is experimental and may run into issues on some distros. These 
    ```shell
    o3de <version> installed
    ```
-   Where `<version>` is the version of the installer. Example: `23.10.3`.
+   Where `<version>` is the version of the installer. Example: `24.09`.
 
-O3DE will be installed in the default location: `/snap/o3de/current/<version>`, where `<version>` is the version of the installer. Example: `23.10.3`.
+O3DE will be installed in the default location: `/snap/o3de/current/<version>`, where `<version>` is the version of the installer. Example: `24.09`.
 
 When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`. `snapd` will add this `Default` directory to your shell environment's path.
 
@@ -142,6 +142,10 @@ Example of launching Project Manager from the shell:
 ```shell
 o3de
 ```
+
+{{< important >}}
+When configuring or building using the O3DE pre-build **Snap** SDK from the command line, first export the `O3DE_SNAP` environment variable so CMake does not attempt to install Python pip requirements and fail. To export the `O3DE_SNAP` environment variable, run the command `export O3DE_SNAP` from the command line before running the CMake commands below.
+{{< /important >}}
 
 ## Removing O3DE installed from a Snap package
 
