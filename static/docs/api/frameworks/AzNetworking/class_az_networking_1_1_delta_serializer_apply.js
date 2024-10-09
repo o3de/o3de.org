@@ -1,9 +1,12 @@
 var class_az_networking_1_1_delta_serializer_apply =
 [
+    [ "DeltaSerializerApply", "class_az_networking_1_1_delta_serializer_apply.html#a832d80a4369aa395a55a6da80b04d4c2", null ],
+    [ "~DeltaSerializerApply", "class_az_networking_1_1_delta_serializer_apply.html#accfa7e74a0a4fc9e1caace815d9ece67", null ],
+    [ "ApplyDelta", "class_az_networking_1_1_delta_serializer_apply.html#a02762b96054c13ec5b2199028422fdaa", null ],
     [ "BeginObject", "class_az_networking_1_1_delta_serializer_apply.html#abe501cb2b3a77ef9d70fd15c1bb15083", null ],
     [ "ClearTrackedChangesFlag", "class_az_networking_1_1_delta_serializer_apply.html#a9901e4b2df313f5483f12913b560c510", null ],
     [ "EndObject", "class_az_networking_1_1_delta_serializer_apply.html#a74c137cfeb640cf6b553722d45711da8", null ],
-    [ "GetBuffer", "class_az_networking_1_1_delta_serializer_apply.html#a4482645993d50a061c19baadfcd1a0f5", null ],
+    [ "GetBuffer", "class_az_networking_1_1_delta_serializer_apply.html#a72ed7002b09bedc4eb4e0433bb5e3333", null ],
     [ "GetCapacity", "class_az_networking_1_1_delta_serializer_apply.html#a865a6f75574243bca1e3981f8b604acb", null ],
     [ "GetSerializerMode", "class_az_networking_1_1_delta_serializer_apply.html#a6baf34734658c081b523e782b7252072", null ],
     [ "GetSize", "class_az_networking_1_1_delta_serializer_apply.html#a79213cea83aea2c967a381c61054d780", null ],

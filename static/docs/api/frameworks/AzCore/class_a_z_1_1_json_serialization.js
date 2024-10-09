@@ -23,5 +23,10 @@ var class_a_z_1_1_json_serialization =
     [ "Store", "class_a_z_1_1_json_serialization.html#a79a537d3c6cf3e082adb08af3e7e3dc4", null ],
     [ "Store", "class_a_z_1_1_json_serialization.html#ac3dbd0fbdc85b3b55298db4dd8c6ac63", null ],
     [ "StoreTypeId", "class_a_z_1_1_json_serialization.html#aa3551ba3a22040189cfcf59ef98b197b", null ],
-    [ "StoreTypeId", "class_a_z_1_1_json_serialization.html#ae8e3318316e8de1dabed2a6a73caf63f", null ]
+    [ "StoreTypeId", "class_a_z_1_1_json_serialization.html#ae8e3318316e8de1dabed2a6a73caf63f", null ],
+    [ "DefaultStringIdentifier", "class_a_z_1_1_json_serialization.html#a212ba70acd55d2f3624bec135ae7afc1", null ],
+    [ "ImportDirectiveIdentifier", "class_a_z_1_1_json_serialization.html#acc39bd5e81a517fdbb681de1a897f2d5", null ],
+    [ "KeyFieldIdentifier", "class_a_z_1_1_json_serialization.html#a19342e77c5cc28e44c6e20095f63cd2f", null ],
+    [ "TypeIdFieldIdentifier", "class_a_z_1_1_json_serialization.html#a53c61b81e84b23f92a888ae0176ad006", null ],
+    [ "ValueFieldIdentifier", "class_a_z_1_1_json_serialization.html#ab3f245683a19195fcd1353bc6da44a1a", null ]
 ];

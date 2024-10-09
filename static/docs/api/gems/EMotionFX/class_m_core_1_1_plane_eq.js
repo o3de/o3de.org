@@ -15,6 +15,6 @@ var class_m_core_1_1_plane_eq =
     [ "Construct", "class_m_core_1_1_plane_eq.html#aea9c438f048953217f151c40479a2954", null ],
     [ "Construct", "class_m_core_1_1_plane_eq.html#a1209d4dde3bf7ede7f4e0bea550cbb68", null ],
     [ "GetDist", "class_m_core_1_1_plane_eq.html#a69ef380e7f2b33518f70afd43ede5336", null ],
-    [ "GetNormal", "class_m_core_1_1_plane_eq.html#ab827b978c8ef5589f6d25587792efabb", null ],
+    [ "GetNormal", "class_m_core_1_1_plane_eq.html#a5d682112a9e5853864e73df853e65705", null ],
     [ "Project", "class_m_core_1_1_plane_eq.html#a20a6f990ba8a699d9b4eea0948c3d5cb", null ]
 ];

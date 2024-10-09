@@ -14,7 +14,11 @@ var group__group__stats =
       [ "unusedRangeSizeMax", "struct_vma_detailed_statistics.html#af98943b5da98cf441ffa04b67914c78c", null ],
       [ "unusedRangeSizeMin", "struct_vma_detailed_statistics.html#a830eda847ed735d0e91da25cfcf797a4", null ]
     ] ],
-    [ "VmaTotalStatistics", "struct_vma_total_statistics.html", null ],
+    [ "VmaTotalStatistics", "struct_vma_total_statistics.html", [
+      [ "memoryHeap", "struct_vma_total_statistics.html#a39beeba5b3a2e7cfe5f5e2331a2705ce", null ],
+      [ "memoryType", "struct_vma_total_statistics.html#acb70e5b7fe543813ed8ba9282640969d", null ],
+      [ "total", "struct_vma_total_statistics.html#a76f1935f7101883f5bb2a03b6c5649d2", null ]
+    ] ],
     [ "VmaBudget", "struct_vma_budget.html", [
       [ "budget", "struct_vma_budget.html#ab82e1d1754c2d210d0bdf90220bc6cdd", null ],
       [ "statistics", "struct_vma_budget.html#a6d15ab3a798fd62d9efa3a1e1f83bf54", null ],

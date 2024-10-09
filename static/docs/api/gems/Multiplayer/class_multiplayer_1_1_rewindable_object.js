@@ -1,5 +1,6 @@
 var class_multiplayer_1_1_rewindable_object =
 [
+    [ "RewindableObject", "class_multiplayer_1_1_rewindable_object.html#a0aa41a035859427c4fdc1275203e770a", null ],
     [ "RewindableObject", "class_multiplayer_1_1_rewindable_object.html#af3ae28b3c3b506863d2679ef30dbe8ce", null ],
     [ "RewindableObject", "class_multiplayer_1_1_rewindable_object.html#abf14231ffa19f6d0d1f41274ac9144ea", null ],
     [ "RewindableObject", "class_multiplayer_1_1_rewindable_object.html#a3c6fa60d9196fbbf633392386101146f", null ],

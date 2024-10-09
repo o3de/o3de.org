@@ -1,5 +1,8 @@
 var class_az_qt_components_1_1_slider_int =
 [
+    [ "SliderInt", "class_az_qt_components_1_1_slider_int.html#a6518b74b3835d0432ce2f145ed59d6b5", null ],
+    [ "SliderInt", "class_az_qt_components_1_1_slider_int.html#a7236ae6db2b22cbe669cba2247799535", null ],
+    [ "hoverValueText", "class_az_qt_components_1_1_slider_int.html#ade084c3b378243fa9eafb4a1805ca47e", null ],
     [ "maximum", "class_az_qt_components_1_1_slider_int.html#a29b4d8895ce5365977053466bc81368e", null ],
     [ "minimum", "class_az_qt_components_1_1_slider_int.html#a598942ec9865c3bf392873953a6ac254", null ],
     [ "rangeChanged", "class_az_qt_components_1_1_slider_int.html#a5081b81a1bf9225054a74877b660ae1d", null ],

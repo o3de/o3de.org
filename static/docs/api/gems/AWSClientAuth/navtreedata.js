@@ -39,7 +39,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_a_w_s_client_auth_1_1_google_authentication_provider.html#a94a0d2a09b1cf48689138720b152a496"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -9,6 +9,8 @@ var class_d3_d12_m_a_1_1_virtual_block =
     [ "GetAllocationInfo", "class_d3_d12_m_a_1_1_virtual_block.html#ac605dce05ca0d411e46079f0bad765d1", null ],
     [ "GetStatistics", "class_d3_d12_m_a_1_1_virtual_block.html#a0f1dda0e019e218b021f64987a74b110", null ],
     [ "IsEmpty", "class_d3_d12_m_a_1_1_virtual_block.html#a7b23fd2da6f0343095fb14b31395678b", null ],
+    [ "ReleaseThis", "class_d3_d12_m_a_1_1_virtual_block.html#a808320f9ee28289bf5d25a5e0336d338", null ],
     [ "SetAllocationPrivateData", "class_d3_d12_m_a_1_1_virtual_block.html#ab96e34500b75a83a09d73b4585669114", null ],
-    [ "CreateVirtualBlock", "class_d3_d12_m_a_1_1_virtual_block.html#a0485028cbe13b5457fe422865f7edf74", null ]
+    [ "CreateVirtualBlock", "class_d3_d12_m_a_1_1_virtual_block.html#a0485028cbe13b5457fe422865f7edf74", null ],
+    [ "D3D12MA_DELETE", "class_d3_d12_m_a_1_1_virtual_block.html#a968f13f23d03e50cc50b87835b6d5a85", null ]
 ];

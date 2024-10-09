@@ -1,9 +1,15 @@
 var class_az_tools_framework_1_1_base_manipulator =
 [
+    [ "UniqueEntityComponentIds", "class_az_tools_framework_1_1_base_manipulator.html#aeeb4395f7e5d1f06324fd1b0fffc4b78", null ],
+    [ "UniqueEntityIds", "class_az_tools_framework_1_1_base_manipulator.html#a5541280a9e993000f65b3a4dae24f075", null ],
+    [ "BaseManipulator", "class_az_tools_framework_1_1_base_manipulator.html#a02b5d7668dc213acf654fd07aa541a07", null ],
+    [ "~BaseManipulator", "class_az_tools_framework_1_1_base_manipulator.html#accb4ca1bc0fc708fb66546960539f2a2", null ],
     [ "BaseManipulator", "class_az_tools_framework_1_1_base_manipulator.html#a730c7fb5886d6dd3e78c200ccc07efc5", null ],
     [ "AddEntityComponentIdPair", "class_az_tools_framework_1_1_base_manipulator.html#a2f90fb67370be737bb329b651ff15ed9", null ],
+    [ "AttachLeftMouseDownImpl", "class_az_tools_framework_1_1_base_manipulator.html#a8c969ec581e50b4fea8be5edb405c823", null ],
+    [ "AttachRightMouseDownImpl", "class_az_tools_framework_1_1_base_manipulator.html#a87c9825f2070ba30ce0d84b3e56273c7", null ],
     [ "Draw", "class_az_tools_framework_1_1_base_manipulator.html#adb122b0f441ab30ebb3d9bb736428f6d", null ],
-    [ "EntityComponentIdPairs", "class_az_tools_framework_1_1_base_manipulator.html#aca509e36edfe9ac61e0216d468baa713", null ],
+    [ "EntityComponentIdPairs", "class_az_tools_framework_1_1_base_manipulator.html#aa39862bb1f71b79e21f7c148dc9a4266", null ],
     [ "ForwardMouseOverEvent", "class_az_tools_framework_1_1_base_manipulator.html#a30fc3dcbe19023bc1381b0e4444058b1", null ],
     [ "GetManipulatorId", "class_az_tools_framework_1_1_base_manipulator.html#a7a7ed911f49c4f5b9aaf2190ec671c42", null ],
     [ "GetManipulatorManagerId", "class_az_tools_framework_1_1_base_manipulator.html#aa9cce75a73e2bd704ab7858bd07dece1", null ],
@@ -26,6 +32,7 @@ var class_az_tools_framework_1_1_base_manipulator =
     [ "OnRightMouseDownImpl", "class_az_tools_framework_1_1_base_manipulator.html#a754509981cf8f356764c5064a63c1efb", null ],
     [ "OnRightMouseUp", "class_az_tools_framework_1_1_base_manipulator.html#ad9be9cf910073f780970e48246dd109a", null ],
     [ "OnRightMouseUpImpl", "class_az_tools_framework_1_1_base_manipulator.html#a6642f98d110bcaf18311afd04fd3c807", null ],
+    [ "operator=", "class_az_tools_framework_1_1_base_manipulator.html#ab85eccb02088b99b4153fe312b40e378", null ],
     [ "PerformingAction", "class_az_tools_framework_1_1_base_manipulator.html#a800fbae448d1b31599e96f63eec96b3f", null ],
     [ "Register", "class_az_tools_framework_1_1_base_manipulator.html#a64b09c78961394a3dd617bd4b3b50c21", null ],
     [ "Registered", "class_az_tools_framework_1_1_base_manipulator.html#a5ab05af09752c14cbdf57ad7992ec650", null ],
@@ -33,5 +40,7 @@ var class_az_tools_framework_1_1_base_manipulator =
     [ "RemoveEntityId", "class_az_tools_framework_1_1_base_manipulator.html#af6b5a204c23e9fe2fec8d936c3a1a5ed", null ],
     [ "SetBoundsDirty", "class_az_tools_framework_1_1_base_manipulator.html#aa24f6ef6b4bd33f36798849a3013adba", null ],
     [ "SetBoundsDirtyImpl", "class_az_tools_framework_1_1_base_manipulator.html#a049c0d0040ff0ad91312d27c65c4c987", null ],
-    [ "Unregister", "class_az_tools_framework_1_1_base_manipulator.html#a103fde0a2447b957c8a191f35a955694", null ]
+    [ "Unregister", "class_az_tools_framework_1_1_base_manipulator.html#a103fde0a2447b957c8a191f35a955694", null ],
+    [ "ManipulatorManager", "class_az_tools_framework_1_1_base_manipulator.html#ab3f6c2bb41c363e4f4926a9ad372bf95", null ],
+    [ "s_defaultMouseOverColor", "class_az_tools_framework_1_1_base_manipulator.html#a12da19035d239d12e1b1518423e320e8", null ]
 ];

@@ -1,7 +1,28 @@
 var class_gestures_1_1_recognizer_pinch =
 [
-    [ "Config", "struct_gestures_1_1_recognizer_pinch_1_1_config.html", null ],
+    [ "Config", "struct_gestures_1_1_recognizer_pinch_1_1_config.html", "struct_gestures_1_1_recognizer_pinch_1_1_config" ],
+    [ "RecognizerPinch", "class_gestures_1_1_recognizer_pinch.html#a2adc8301904eb8b06110d62fb46ef401", null ],
+    [ "~RecognizerPinch", "class_gestures_1_1_recognizer_pinch.html#a820d6df1e69a20bffc4920c994a81b65", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_gestures_1_1_recognizer_pinch.html#adba514a5b169d471f711d079ec0a39ad", null ],
+    [ "AZ_RTTI", "class_gestures_1_1_recognizer_pinch.html#a2b1651eb7684b70253cd33f02463ece7", null ],
+    [ "GetConfig", "class_gestures_1_1_recognizer_pinch.html#a1608a08d5cb9c18c1318657c13c54f86", null ],
+    [ "GetConfig", "class_gestures_1_1_recognizer_pinch.html#a4544a6a79bef1b3acf6ac76c35c8ff93", null ],
+    [ "GetCurrentDistance", "class_gestures_1_1_recognizer_pinch.html#aa0429a495f8e884128ecf0895f853564", null ],
+    [ "GetCurrentMidpoint", "class_gestures_1_1_recognizer_pinch.html#a6b7bd269ae0b1a587d62dcaec9f30608", null ],
+    [ "GetCurrentPosition0", "class_gestures_1_1_recognizer_pinch.html#ab4ee04c1996ba4d3c893fb9f771ab91c", null ],
+    [ "GetCurrentPosition1", "class_gestures_1_1_recognizer_pinch.html#acae7e7a8393f9d4f2bb47b78bd82739e", null ],
+    [ "GetDefaultConfig", "class_gestures_1_1_recognizer_pinch.html#aa953cf2dc80fbe54718899c59b065dd1", null ],
+    [ "GetDefaultMaxAngleDegrees", "class_gestures_1_1_recognizer_pinch.html#a3e137f42c2d62d68b99c216933a7960c", null ],
+    [ "GetDefaultMinPixelsMoved", "class_gestures_1_1_recognizer_pinch.html#ae6d5f6a6818e2ffd9174655f3b770985", null ],
+    [ "GetDefaultPriority", "class_gestures_1_1_recognizer_pinch.html#a3a3e86af3f29b36fd1010c14164aab2a", null ],
+    [ "GetPinchRatio", "class_gestures_1_1_recognizer_pinch.html#ac5d6c447695a4bf1e1657362e0c87544", null ],
+    [ "GetPriority", "class_gestures_1_1_recognizer_pinch.html#ab17af54e56bf6ff51c184103004fe50e", null ],
+    [ "GetStartDistance", "class_gestures_1_1_recognizer_pinch.html#a3c5762f6116558581f74143bc7e567cb", null ],
+    [ "GetStartMidpoint", "class_gestures_1_1_recognizer_pinch.html#afd160d215b803f450314c591d290556a", null ],
+    [ "GetStartPosition0", "class_gestures_1_1_recognizer_pinch.html#a0d9929f72fe158bd41cadb2957557a1a", null ],
+    [ "GetStartPosition1", "class_gestures_1_1_recognizer_pinch.html#a2450eab8728092e751b32865c3a002a3", null ],
     [ "OnDownEvent", "class_gestures_1_1_recognizer_pinch.html#ad75266ef5c5a16faa80819d15d3d971a", null ],
     [ "OnPressedEvent", "class_gestures_1_1_recognizer_pinch.html#aeb9ba383ba945d4c8f22a70d4116e5d0", null ],
-    [ "OnReleasedEvent", "class_gestures_1_1_recognizer_pinch.html#aaf319aba6ec4d2c09a6bf5d8ccba58ab", null ]
+    [ "OnReleasedEvent", "class_gestures_1_1_recognizer_pinch.html#aaf319aba6ec4d2c09a6bf5d8ccba58ab", null ],
+    [ "SetConfig", "class_gestures_1_1_recognizer_pinch.html#abcab46ff5c48fbf57879e937dc41e45b", null ]
 ];

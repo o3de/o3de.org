@@ -1,5 +1,6 @@
 var class_a_z_1_1_metal_1_1_bindless_argument_buffer =
 [
+    [ "BindlessArgumentBuffer", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#add102317e4c4f3f52b3bcdedb0b2e2c5", null ],
     [ "AttachReadBuffer", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#a88dd554962baa6339f73c13cf66890c9", null ],
     [ "AttachReadCubeMapImage", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#aca6b56cd065b6dc51fd98d648c6e9844", null ],
     [ "AttachReadImage", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#ad577d78756cbc4fad05d52322ec5e7d6", null ],
@@ -12,8 +13,9 @@ var class_a_z_1_1_metal_1_1_bindless_argument_buffer =
     [ "DetachReadWriteBuffer", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#aa938087e847aedc08dc2c30fb86d7f35", null ],
     [ "DetachReadWriteImage", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#ae889e2bd5610c34b06b0a148fefb549d", null ],
     [ "GarbageCollect", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#a150445745ca54c8d3fd92675d2490e90", null ],
-    [ "GetBindlessArgbuffer", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#a4641fd53884ea537da2eed807743b2ce", null ],
+    [ "GetBindlessArgbuffer", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#afa4710ff59c98b605ce633e3941d7c1f", null ],
     [ "GetBindlessSrgBindingSlot", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#a613291006f24213b69783801c330e373", null ],
+    [ "Init", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#accd7acd02860556750917d8425f0fb90", null ],
     [ "IsInitialized", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#aeafa2a141b59b836761c02b7641ecf63", null ],
     [ "MakeBindlessArgumentBuffersResident", "class_a_z_1_1_metal_1_1_bindless_argument_buffer.html#ac37338fd03af07b926af88a19d9289b8", null ]
 ];

@@ -5,7 +5,7 @@ var class_az_networking_1_1_network_input_serializer =
     [ "ClearTrackedChangesFlag", "class_az_networking_1_1_network_input_serializer.html#a3ee92983ac4e8922a8ab8ac0d97954ff", null ],
     [ "CopyToBuffer", "class_az_networking_1_1_network_input_serializer.html#a13685436a93900f4b450a57c80bc1c38", null ],
     [ "EndObject", "class_az_networking_1_1_network_input_serializer.html#af0b18045dd38adc01149228285a34e80", null ],
-    [ "GetBuffer", "class_az_networking_1_1_network_input_serializer.html#a6eca72e251fade8c5d28e8a50d41eee5", null ],
+    [ "GetBuffer", "class_az_networking_1_1_network_input_serializer.html#aff8e6680d1cf7082ccff04fd4e1338a8", null ],
     [ "GetCapacity", "class_az_networking_1_1_network_input_serializer.html#a410b9ad4140fe21ce0f29fc567ac7b67", null ],
     [ "GetSerializerMode", "class_az_networking_1_1_network_input_serializer.html#a0e875ee80a3b0d8c21a423c603b522b5", null ],
     [ "GetSize", "class_az_networking_1_1_network_input_serializer.html#a35b550ed7f93ed0fe473acac39ec4228", null ],

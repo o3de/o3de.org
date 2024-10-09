@@ -1,5 +1,6 @@
 var class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface =
 [
+    [ "AZ_RTTI", "class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#a24e77f1ded8766d5faf6a5cc08ec9305", null ],
     [ "FocusOnPrefabInstanceOwningEntityId", "class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#ad93db738064c457ddfb2dd0783ca87c8", null ],
     [ "GetFocusedPrefabInstance", "class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#ad62458fb0c84d1cf8a6f02a0248d8be9", null ],
     [ "GetFocusedPrefabTemplateId", "class_az_tools_framework_1_1_prefab_1_1_prefab_focus_interface.html#a5f6ed2340d55923860d92faa64d06bfd", null ],

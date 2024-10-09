@@ -1,5 +1,7 @@
 var class_az_networking_1_1_byte_buffer =
 [
+    [ "ByteBuffer", "class_az_networking_1_1_byte_buffer.html#adc5a4f165bd1ecac9707c692aceb1c2d", null ],
+    [ "~ByteBuffer", "class_az_networking_1_1_byte_buffer.html#a6fde5e51e6d38a8f389f097cd35bbaa0", null ],
     [ "CopyValues", "class_az_networking_1_1_byte_buffer.html#ad9dc50be1c714271d6cd5684d430c19b", null ],
     [ "GetBuffer", "class_az_networking_1_1_byte_buffer.html#a430d09668183e98161b3573deafde772", null ],
     [ "GetBuffer", "class_az_networking_1_1_byte_buffer.html#ab6a0e9bae60052ae74a7ea03151777cb", null ],

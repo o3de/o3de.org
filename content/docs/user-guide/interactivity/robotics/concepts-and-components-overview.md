@@ -132,7 +132,7 @@ Before the simulation, you must set up as the component's available spawnables a
 This can be done by adding `ROS2SpawnPointComponent` to a child entity of an entity with `ROS2SpawnerComponent`. 
 During the simulation you can access the names of available spawnables and request spawning by using ROS 2 services.
 The names of services are `/get_available_spawnable_names` and `/spawn_entity` respectivly.
-GetWorldProperties.srv and SpawnEntity.srv types are used to handle these features.
+_GetWorldProperties.srv_ and _SpawnEntity.srv_ types are used to handle these features.
 In order to request the defined spawn point names, you can use the `/get_spawn_points_names` service with the `GetWorldProperties.srv` type.
 Detailed information about specific spawn point, such as pose, can be accessed using the `/get_spawn_point_info` service with the `GetModelState.srv` type.
 All used services types are defined in the **gazebo_msgs** package.
@@ -140,12 +140,17 @@ All used services types are defined in the **gazebo_msgs** package.
 - **Spawning**: To spawn, you must pass in the spawnable name into `request.name` and the position of entity into `request.initial_pose`.
   - Example call: 
   ```
-  ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity '{name: 'robot', initial_pose: {position:{ x: 4, y: 4, z: 0.2}, orientation: {x: 0.0, y: 0.0, z: 0.0, w:.0}}}
+  ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity "{name: 'robot', initial_pose: {position:{ x: 4.0, y: 4.0, z: 0.2 }, orientation: { x: 0.0, y: 0.0, z: 0.0, w: 0.0 } } }"
   ```
 - **Spawning in defined spawn point**: Pass in a spawnable into `request.name` and the name of the spawn point into `request.xml`.
   - Example call:
     ``` 
-    ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity '{name: 'robot', xml: 'spawn_spot'}'
+    ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity "{name: 'robot', xml: 'spawn_spot'}"
+    ```
+- **Spawning using WGS84 coordinates**: You can also spawn objects using geographical location when [Georeference component](georeference.md) is enabled. Set the `reference_frame` to _wgs84_ and provide the coordinates.
+  - Example call spawning at 52°14′22″N, 21°02′44″E:
+    ```
+    ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity "{name: 'robot', initial_pose: { position: { x: 52.2406855386909, y: 21.04264386637526, z: 0.0 }, orientation: {  x: 0.0, y: 0.0, z: 0.0, w: 0.0 } }, reference_frame: 'wgs84'}"
     ```
 - **Available spawnable names access**: Send the names of available spawnables into `response.model_names`.
   - Example call:
@@ -160,5 +165,5 @@ All used services types are defined in the **gazebo_msgs** package.
 - **Detailed spawn point info access**: Pass in the spawn point name into `request.model_name` and the defined pose into `response.pose`.
   - Example call:
     ```
-    ros2 service call /get_spawn_point_info gazebo_msgs/srv/GetModelState '{model_name: 'spawn_spot'}'
+    ros2 service call /get_spawn_point_info gazebo_msgs/srv/GetModelState "{model_name: 'spawn_spot'}"
     ```

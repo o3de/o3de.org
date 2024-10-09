@@ -1,0 +1,5 @@
+var struct_a_z_1_1_r_h_i_1_1_multi_device_shader_resource_group_data_1_1_multi_device_bindless_resource_views =
+[
+    [ "m_bindlessResources", "struct_a_z_1_1_r_h_i_1_1_multi_device_shader_resource_group_data_1_1_multi_device_bindless_resource_views.html#ab82932411c68cf8104c5f086fb2646fd", null ],
+    [ "m_bindlessResourceType", "struct_a_z_1_1_r_h_i_1_1_multi_device_shader_resource_group_data_1_1_multi_device_bindless_resource_views.html#a2df4e6bc0509e79becd48504ca8af905", null ]
+];

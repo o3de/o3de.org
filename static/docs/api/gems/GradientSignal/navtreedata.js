@@ -42,7 +42,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"struct_gradient_signal_1_1_gradient_sample_params.html"
+"class_gradient_signal_1_1_editor_invert_gradient_component.html#a68819516f4dba6875983ce2675c20d32",
+"class_gradient_signal_1_1_gradient_sampler.html#a4d86327f0dff2b9f7f88beb2adbe1882",
+"class_gradient_signal_1_1_image_creator_utils_1_1_paintable_image_asset_helper_base.html#a3d562afb7af1d01e410656f5d48e0621",
+"class_gradient_signal_1_1_mixed_gradient_component.html#afc5a756244769b4dd0d5ba56ba2e2345",
+"class_gradient_signal_1_1_smooth_step_gradient_component.html#aaa9307268a74add318ca926b0c0b25f0",
+"struct_gradient_signal_1_1_gradient_sample_params.html#aa7349c95bdfacd5780a365cbac2d02cf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

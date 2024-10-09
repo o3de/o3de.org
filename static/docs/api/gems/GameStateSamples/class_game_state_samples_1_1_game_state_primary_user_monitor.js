@@ -2,6 +2,8 @@ var class_game_state_samples_1_1_game_state_primary_user_monitor =
 [
     [ "GameStatePrimaryUserMonitor", "class_game_state_samples_1_1_game_state_primary_user_monitor.html#a8898c365c57dcc5b3b3fc655c5c8292d", null ],
     [ "~GameStatePrimaryUserMonitor", "class_game_state_samples_1_1_game_state_primary_user_monitor.html#ac357b2e5346a4683f459af2fc614b77a", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_game_state_samples_1_1_game_state_primary_user_monitor.html#a44c6cf7aa6d3e9a68dc236b512a7b470", null ],
+    [ "AZ_RTTI", "class_game_state_samples_1_1_game_state_primary_user_monitor.html#a1d4fb2b3ee7520eb72efc2c6eed19d69", null ],
     [ "OnActiveGameStateChanged", "class_game_state_samples_1_1_game_state_primary_user_monitor.html#a3aa31d7937e908765507dc19e5e3fcf5", null ],
     [ "OnApplicationUnconstrained", "class_game_state_samples_1_1_game_state_primary_user_monitor.html#a18493a134406726bdd640b2c00fb2323", null ],
     [ "OnInputDeviceConnectedEvent", "class_game_state_samples_1_1_game_state_primary_user_monitor.html#a46b0f92c494e3efd7f98451677cb9606", null ],

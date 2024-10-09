@@ -1,5 +1,6 @@
 var class_script_canvas_editor_tools_1_1_translation_generation =
 [
+    [ "TranslationGeneration", "class_script_canvas_editor_tools_1_1_translation_generation.html#a968dc197a0fd868ea7a394f014cadafb", null ],
     [ "TranslateAZEvents", "class_script_canvas_editor_tools_1_1_translation_generation.html#ac200ec61b12c93a3167244dbcfcf9e56", null ],
     [ "TranslateBehaviorClass", "class_script_canvas_editor_tools_1_1_translation_generation.html#a72ffe724eb81b500793e06c2af501681", null ],
     [ "TranslateBehaviorClasses", "class_script_canvas_editor_tools_1_1_translation_generation.html#a09b3c5c2a995bf8abcb97fa6ecee8011", null ],

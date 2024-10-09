@@ -35,7 +35,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"struct_twitch_1_1_f_p_s_info.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,8 @@
 var class_az_networking_1_1_fixed_size_bitset =
 [
+    [ "ContainerType", "class_az_networking_1_1_fixed_size_bitset.html#a0e242a578555d7d737c96cb71a50d563", null ],
+    [ "SelfType", "class_az_networking_1_1_fixed_size_bitset.html#a8ca27d95445060f4ff1ac6ca5091b226", null ],
+    [ "FixedSizeBitset", "class_az_networking_1_1_fixed_size_bitset.html#a873e26be5ad1d98b464527aa0a2a3db7", null ],
     [ "FixedSizeBitset", "class_az_networking_1_1_fixed_size_bitset.html#ac9267476dab6f9609930f81c9bb6b78d", null ],
     [ "FixedSizeBitset", "class_az_networking_1_1_fixed_size_bitset.html#a8ae48756a0832d2bd6eacb664f2cbdf9", null ],
     [ "FixedSizeBitset", "class_az_networking_1_1_fixed_size_bitset.html#a85893f59e0f7c745c8f0a36ea29c5aeb", null ],
@@ -15,5 +18,8 @@ var class_az_networking_1_1_fixed_size_bitset =
     [ "operator|=", "class_az_networking_1_1_fixed_size_bitset.html#aec1d7a3176ad0f91ab19e0cfa0b2d5a2", null ],
     [ "Serialize", "class_az_networking_1_1_fixed_size_bitset.html#a2dddd815e62e216e30af2fd7c087c970", null ],
     [ "SetBit", "class_az_networking_1_1_fixed_size_bitset.html#affc075cea4b3ff0dd9a8274ff34f64f9", null ],
-    [ "Subtract", "class_az_networking_1_1_fixed_size_bitset.html#aa851f9485d48bdf41bf4b81320497543", null ]
+    [ "Subtract", "class_az_networking_1_1_fixed_size_bitset.html#aa851f9485d48bdf41bf4b81320497543", null ],
+    [ "FixedSizeVectorBitset", "class_az_networking_1_1_fixed_size_bitset.html#a3767451f6d9b633b10a59a7d74ee8783", null ],
+    [ "ElementCount", "class_az_networking_1_1_fixed_size_bitset.html#afdac790d289d8385723730b0a065c9b6", null ],
+    [ "ElementTypeBits", "class_az_networking_1_1_fixed_size_bitset.html#a176d439c84a99296dd740e375f423a31", null ]
 ];

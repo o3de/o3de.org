@@ -162,7 +162,7 @@ function updateSelectElement(currentOrigin) {
     // - Add "(latest)" to the production URL option.
     // - Set the selected option and enhance its style.
     $("#version-switcher").children("option").attr("value", function(i, currentValue) {
-        if (currentValue.includes("www.o3de.org")) {
+        if (currentValue.includes("docs.o3de.org")) {
             $(this).text($(this).text() + " (latest)");
         }
 

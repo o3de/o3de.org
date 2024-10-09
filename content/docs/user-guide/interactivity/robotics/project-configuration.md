@@ -8,7 +8,7 @@ toc: true
 
 ## Requirements
 
-* Ubuntu 22.04. Other Ubuntu versions and Linux distributions can also work as long as they support ROS 2 Humble or ROS 2 Iron.
+* Ubuntu 22.04 with ROS 2 Humble or Ubuntu 24.04 with ROS 2 Jazzy. Other Ubuntu versions, ROS 2 versions, and Linux distributions can also work, but are not supported.
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
@@ -155,7 +155,7 @@ cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAK
 cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets 
 ```
 {{<note>}}
-Before version 24.09, PhysX 5 was experimental and compiled during the engine's source code compilation process. 
+Before version 24.09.0, PhysX 5 was experimental and compiled during the engine's source code compilation process. 
 If you're utilizing version 23.10.3 or an earlier release, you'll need to specify an additional flag: `-DAZ_USE_PHYSX5:BOOL=ON` :
 ```shell
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 

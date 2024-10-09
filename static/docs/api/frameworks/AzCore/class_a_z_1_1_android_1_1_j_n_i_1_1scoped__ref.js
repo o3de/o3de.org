@@ -1,5 +1,6 @@
 var class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref =
 [
+    [ "UnspecifiedBoolType", "class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#a763980e192f4a5ff9ec300a548f736d4", null ],
     [ "scoped_ref", "class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#a4ed42efc60829cba5855c738d1dd07fc", null ],
     [ "~scoped_ref", "class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#a9b4b967f9ec4da7bd216d2c61f469dd1", null ],
     [ "get", "class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#a19a5c0f938272ce116181860290f97fb", null ],

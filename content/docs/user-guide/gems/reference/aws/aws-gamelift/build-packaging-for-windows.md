@@ -42,7 +42,7 @@ You must create a separate installation folder to copy over the required assets,
   
 3. Copy all of the files (loose assets) in your project's cache folder, `<project folder>/Cache/pc`, to the `<package base folder>/assets/pc` folder.
 
-4. Copy the `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019` to the package base folder.
+4. [Download the `VC_redist.x64.exe` file](https://aka.ms/vs/17/release/vc_redist.x64.exe) and copy it to the package base folder.
 
 5. Create a build install script called `install.bat` in the package base folder and add the following content to the file. For more information about the build install script, please check [Upload a custom server build to GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-build-cli-uploading.html)
 

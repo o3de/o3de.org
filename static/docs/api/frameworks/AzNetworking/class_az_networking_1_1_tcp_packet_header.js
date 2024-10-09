@@ -1,6 +1,8 @@
 var class_az_networking_1_1_tcp_packet_header =
 [
     [ "TcpPacketHeader", "class_az_networking_1_1_tcp_packet_header.html#ab96c45538d602a6c75a982147b3f66b5", null ],
+    [ "~TcpPacketHeader", "class_az_networking_1_1_tcp_packet_header.html#a8c79ca5b5c09351e73a995f58fd2d11d", null ],
+    [ "AZ_RTTI", "class_az_networking_1_1_tcp_packet_header.html#ad412b859bf544bbcaf7a77b163b0122b", null ],
     [ "GetPacketId", "class_az_networking_1_1_tcp_packet_header.html#aec4cf73e48c6e840ade861d16cfb9be2", null ],
     [ "GetPacketSize", "class_az_networking_1_1_tcp_packet_header.html#a873d816248d9c7049ca5c02e1c2a8b20", null ],
     [ "GetPacketType", "class_az_networking_1_1_tcp_packet_header.html#af6c2dda7f4c736189a0072f1c52b6fcd", null ],

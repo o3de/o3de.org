@@ -1,5 +1,8 @@
 var class_a_z_1_1_console_data_wrapper =
 [
+    [ "BaseType", "class_a_z_1_1_console_data_wrapper.html#a8f015206dcf96c6c8a30d7558307a34d", null ],
+    [ "CallbackFunc", "class_a_z_1_1_console_data_wrapper.html#a56f81b80a1b6981009b5074698951f79", null ],
+    [ "SelfType", "class_a_z_1_1_console_data_wrapper.html#ad1bd147f0fe1f316c37870bdedf6bfbf", null ],
     [ "ConsoleDataWrapper", "class_a_z_1_1_console_data_wrapper.html#abe8557e1c50045a30811775fbf02cb6c", null ],
     [ "CvarFunctor", "class_a_z_1_1_console_data_wrapper.html#a5169e8c2c5ee8de57d9f15d8ba13eda3", null ],
     [ "InvokeCallback", "class_a_z_1_1_console_data_wrapper.html#a9ac301e5927465eabbeab18d6fde49c7", null ],
