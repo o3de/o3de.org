@@ -1,5 +1,6 @@
 var class_a_z_1_1_render_1_1_skinned_mesh_instance =
 [
+    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a9f8c92a4d7c4ea62104c86f234095c06", null ],
     [ "DisableSkinning", "class_a_z_1_1_render_1_1_skinned_mesh_instance.html#af29ba14977831279e5f44e10ba5c0fb8", null ],
     [ "EnableSkinning", "class_a_z_1_1_render_1_1_skinned_mesh_instance.html#ac979ae725c776ca72b1b0798e6c58429", null ],
     [ "IsSkinningEnabled", "class_a_z_1_1_render_1_1_skinned_mesh_instance.html#a408cff70930e31ce27f5d3ed079a9902", null ],

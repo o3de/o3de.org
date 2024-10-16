@@ -12,6 +12,8 @@ var class_a_z_1_1_base_json_serializer =
       [ "ManualDefault", "class_a_z_1_1_base_json_serializer.html#a1b7b72ae25e0bee97dc867d42321086aa80dee92723457a1179366b7b2fc12f56", null ],
       [ "InitializeNewInstance", "class_a_z_1_1_base_json_serializer.html#a1b7b72ae25e0bee97dc867d42321086aa16476b5f3594746903c52b7861f7513a", null ]
     ] ],
+    [ "~BaseJsonSerializer", "class_a_z_1_1_base_json_serializer.html#a2b22c443383ea32adb0387d78d1980e7", null ],
+    [ "AZ_RTTI", "class_a_z_1_1_base_json_serializer.html#a6579858e746679ee702450c71311a49d", null ],
     [ "ContinueLoading", "class_a_z_1_1_base_json_serializer.html#a88ee560340ef3ecd31886a9022b8c6a4", null ],
     [ "ContinueLoadingFromJsonObjectField", "class_a_z_1_1_base_json_serializer.html#aa69c640876235401f9f3c3f61b42e411", null ],
     [ "ContinueStoring", "class_a_z_1_1_base_json_serializer.html#a6203ea28163f97458caee84b2550ee63", null ],

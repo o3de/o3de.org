@@ -1,11 +1,12 @@
 var class_ui_interactable_states_interface =
 [
     [ "State", "class_ui_interactable_states_interface.html#a5aee58becf5ad8a83bd2ec9a75422586", null ],
+    [ "~UiInteractableStatesInterface", "class_ui_interactable_states_interface.html#a2d4913a8cf94cfdb34dd487a91318b2c", null ],
     [ "GetStateAlpha", "class_ui_interactable_states_interface.html#a94a8e4478edc80664be974c4da6091a6", null ],
     [ "GetStateColor", "class_ui_interactable_states_interface.html#a7275ab2bb9034d193f8a3828694fea97", null ],
     [ "GetStateFontEffectIndex", "class_ui_interactable_states_interface.html#a952215a57ea075c64fbd1d85e6ab2879", null ],
     [ "GetStateFontPathname", "class_ui_interactable_states_interface.html#ab744751ed2c43a38c46d30c8a1c345df", null ],
-    [ "GetStateSprite", "class_ui_interactable_states_interface.html#a592bcbb1330f6c7016a804b2d2cc73f4", null ],
+    [ "GetStateSprite", "class_ui_interactable_states_interface.html#a9f78b516ca225cc8e58a5b6f6bdbdec9", null ],
     [ "GetStateSpritePathname", "class_ui_interactable_states_interface.html#a02105a61ec27f5ff1ed134c7c098354a", null ],
     [ "HasStateAlpha", "class_ui_interactable_states_interface.html#adc4bb6a76744cda93640283f45e6c3c1", null ],
     [ "HasStateColor", "class_ui_interactable_states_interface.html#ad68e8ca39838a21c25d423138cbf5e6f", null ],

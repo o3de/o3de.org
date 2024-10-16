@@ -129,7 +129,7 @@ Running `hugo server` outputs the following error:
 Error: Error building site: TOCSS: failed to transform "blah.sass" (text/x-sass): SCSS processing failed: file "stdin", line 26, col 1: File to import not found or unreadable: bootstrap/scss/functions.
 ```
 
-#### Description
+#### Description 1
 
 This indicates that your local `o3de.org` repository may be missing bootstrap, or that the wrong version is installed. Similar errors may indicate that other dependent packages are missing.
 
@@ -142,3 +142,21 @@ For a complete list of required dependencies, see `package.json`.
 2. Verify that the required dependencies have been installed by running the command, `npm list`. This outputs the list of dependencies and indicates whether or not they've been installed.
 
 3. Install missing dependencies. You can install all of the dependencies by running the command, `npm install`. Or, you can install a specific dependency. For example: `npm install bootstrap@4.6.1`
+
+#### Description 2
+
+If you are on a Mac (particularly an ARM Mac) and have confirmed you have Bootstrap installed, but are still getting this error, it is very likely a [known issue with libsass](https://github.com/gohugoio/hugo/issues/12649#issuecomment-2299360331) and Mac's file limits.
+
+#### Steps to fix
+
+Installing an earlier version of Hugo:
+
+1. Download [v0.115.3 extended from the release archive](https://github.com/gohugoio/hugo/releases/tag/v0.115.3) and extract the archive.
+
+2. To use it alongside an existing copy of Hugo, copy the `hugo` executable into `/usr/local/bin` and rename it to distinguish it from your existing version (for example, `hugo1153`).
+
+3. Open the executable with `cmd+click` and select `Open` from the context menu and accept the security popup, warning about an unsigned application.
+
+4. Call the executable in the command line to run server (for example, `hugo1153 server`).
+
+Alternatively, you can increase your maxfiles `ulimit`. The process for this varies dramatically depending on Mac OS version, so consult the documentation for the version you are running.

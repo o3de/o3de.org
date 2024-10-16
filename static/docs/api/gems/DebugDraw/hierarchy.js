@@ -29,9 +29,13 @@ var hierarchy =
     ] ],
     [ "DebugDraw::DebugDrawAabbElement", "class_debug_draw_1_1_debug_draw_aabb_element.html", null ],
     [ "DebugDraw::DebugDrawLineElement", "class_debug_draw_1_1_debug_draw_line_element.html", null ],
-    [ "DebugDraw::DebugDrawObbElement", "class_debug_draw_1_1_debug_draw_obb_element.html", null ],
+    [ "DebugDraw::DebugDrawObbElement", "class_debug_draw_1_1_debug_draw_obb_element.html", [
+      [ "DebugDraw::DebugDrawSystemComponent::DebugDrawObbElementWrapper", "struct_debug_draw_1_1_debug_draw_system_component_1_1_debug_draw_obb_element_wrapper.html", null ]
+    ] ],
     [ "DebugDraw::DebugDrawRayElement", "class_debug_draw_1_1_debug_draw_ray_element.html", null ],
-    [ "DebugDraw::DebugDrawSphereElement", "class_debug_draw_1_1_debug_draw_sphere_element.html", null ],
+    [ "DebugDraw::DebugDrawSphereElement", "class_debug_draw_1_1_debug_draw_sphere_element.html", [
+      [ "DebugDraw::DebugDrawSystemComponent::DebugDrawSphereElementWrapper", "struct_debug_draw_1_1_debug_draw_system_component_1_1_debug_draw_sphere_element_wrapper.html", null ]
+    ] ],
     [ "DebugDraw::DebugDrawTextElement", "class_debug_draw_1_1_debug_draw_text_element.html", null ],
     [ "DebugDraw::EditorDebugDrawComponentSettings", "class_debug_draw_1_1_editor_debug_draw_component_settings.html", null ],
     [ "DebugDrawInternalRequestBus::Handler", null, [

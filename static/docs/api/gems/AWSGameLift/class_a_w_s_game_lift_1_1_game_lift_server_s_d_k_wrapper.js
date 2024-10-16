@@ -1,5 +1,7 @@
 var class_a_w_s_game_lift_1_1_game_lift_server_s_d_k_wrapper =
 [
+    [ "GameLiftServerSDKWrapper", "class_a_w_s_game_lift_1_1_game_lift_server_s_d_k_wrapper.html#aead74c207778d75d7d4a57819ab9637a", null ],
+    [ "~GameLiftServerSDKWrapper", "class_a_w_s_game_lift_1_1_game_lift_server_s_d_k_wrapper.html#a87b3ece34e6af27ca04236e1ca7e0759", null ],
     [ "AcceptPlayerSession", "class_a_w_s_game_lift_1_1_game_lift_server_s_d_k_wrapper.html#ae723b07a45784c53a43aa9d3dd7c6b47", null ],
     [ "ActivateGameSession", "class_a_w_s_game_lift_1_1_game_lift_server_s_d_k_wrapper.html#a4df2dfb4ba20b9744b3af735e4560836", null ],
     [ "DescribePlayerSessions", "class_a_w_s_game_lift_1_1_game_lift_server_s_d_k_wrapper.html#a853302437ebce976388c43231e892fa9", null ],

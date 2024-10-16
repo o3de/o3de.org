@@ -1,10 +1,19 @@
 var class_a_z_1_1_metal_1_1_command_list =
 [
+    [ "MetalArgumentBufferArray", "class_a_z_1_1_metal_1_1_command_list.html#a11df2e580dc59242da5a990da0a7ff30", null ],
+    [ "MetalArgumentBufferArrayOffsets", "class_a_z_1_1_metal_1_1_command_list.html#a775e9782ae72d143532f2ec502bf4fb2", null ],
+    [ "ResourceProperties", "class_a_z_1_1_metal_1_1_command_list.html#ad42552c95598e33976f91e9ed10462cf", null ],
+    [ "AZ_CLASS_ALLOCATOR", "class_a_z_1_1_metal_1_1_command_list.html#acc37673b51def1f34dcd8a0b31b3de0f", null ],
     [ "BeginPredication", "class_a_z_1_1_metal_1_1_command_list.html#a6104ea30dcef945ee9540b1653f6db23", null ],
     [ "BuildBottomLevelAccelerationStructure", "class_a_z_1_1_metal_1_1_command_list.html#ae86d488c5e0f488cf690feaed955dfa8", null ],
-    [ "BuildTopLevelAccelerationStructure", "class_a_z_1_1_metal_1_1_command_list.html#abbba2e8ee7bd181ae13a6355c746844f", null ],
+    [ "BuildTopLevelAccelerationStructure", "class_a_z_1_1_metal_1_1_command_list.html#a31105a77e64245b13b313c1ca88c2a61", null ],
+    [ "Close", "class_a_z_1_1_metal_1_1_command_list.html#a062a96970eb779e9031a8dbbe4dde971", null ],
+    [ "Create", "class_a_z_1_1_metal_1_1_command_list.html#a802229b252ca3cccafe6c1a1fbb806f6", null ],
     [ "EndPredication", "class_a_z_1_1_metal_1_1_command_list.html#ad24ce7016ae05aba30067cd77af84450", null ],
-    [ "SetFragmentShadingRate", "class_a_z_1_1_metal_1_1_command_list.html#a1fc74eca880e53b4a35dcc8805ab8f77", null ],
+    [ "FlushEncoder", "class_a_z_1_1_metal_1_1_command_list.html#a8b5b854787e982abe3bfa7be05439ad4", null ],
+    [ "Init", "class_a_z_1_1_metal_1_1_command_list.html#af340cca688c2ac51f62a0a7ae1c98343", null ],
+    [ "Reset", "class_a_z_1_1_metal_1_1_command_list.html#a04fab330bc6f8dd82e662fbba84e3bcb", null ],
+    [ "SetFragmentShadingRate", "class_a_z_1_1_metal_1_1_command_list.html#a04c291bcc20a99109d029c96716b3c0e", null ],
     [ "SetScissors", "class_a_z_1_1_metal_1_1_command_list.html#a10004b8f7321dde519bdb3322584353e", null ],
     [ "SetShaderResourceGroupForDispatch", "class_a_z_1_1_metal_1_1_command_list.html#a8e3063dce308fbffa73f46f8c17629cc", null ],
     [ "SetShaderResourceGroupForDraw", "class_a_z_1_1_metal_1_1_command_list.html#aa97c9fe94e4c56a6a5dc84eba6676a31", null ],
@@ -13,5 +22,6 @@ var class_a_z_1_1_metal_1_1_command_list =
     [ "Submit", "class_a_z_1_1_metal_1_1_command_list.html#afe93041c3f3a420a98c15168af62c783", null ],
     [ "Submit", "class_a_z_1_1_metal_1_1_command_list.html#a3f8a7ee8e7375250492d225297204c0a", null ],
     [ "Submit", "class_a_z_1_1_metal_1_1_command_list.html#acc07435b63575292d3e53164f440ad69", null ],
-    [ "Submit", "class_a_z_1_1_metal_1_1_command_list.html#a443b73355cd7ba6ec12e7518441f4493", null ]
+    [ "Submit", "class_a_z_1_1_metal_1_1_command_list.html#a443b73355cd7ba6ec12e7518441f4493", null ],
+    [ "UpdateBottomLevelAccelerationStructure", "class_a_z_1_1_metal_1_1_command_list.html#a800f481241e3019a341c0756253eb419", null ]
 ];

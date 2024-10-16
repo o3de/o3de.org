@@ -19,6 +19,9 @@ var hierarchy =
     [ "AZ::RPI::ViewProviderBus::Handler", null, [
       [ "Camera::CameraComponentController", "class_camera_1_1_camera_component_controller.html", null ]
     ] ],
+    [ "AZ::RPI::XRSpaceNotificationBus::Handler", null, [
+      [ "Camera::CameraComponentController", "class_camera_1_1_camera_component_controller.html", null ]
+    ] ],
     [ "AZ::TransformNotificationBus::Handler", null, [
       [ "Camera::CameraComponentController", "class_camera_1_1_camera_component_controller.html", null ]
     ] ],
@@ -26,9 +29,6 @@ var hierarchy =
       [ "Camera::EditorCameraComponent", "class_camera_1_1_editor_camera_component.html", null ]
     ] ],
     [ "AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler", null, [
-      [ "Camera::CameraEditorSystemComponent", "class_camera_1_1_camera_editor_system_component.html", null ]
-    ] ],
-    [ "AzToolsFramework::EditorContextMenuBus::Handler", null, [
       [ "Camera::CameraEditorSystemComponent", "class_camera_1_1_camera_editor_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::EditorEvents::Bus::Handler", null, [

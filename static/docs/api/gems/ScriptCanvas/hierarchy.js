@@ -233,7 +233,6 @@ var hierarchy =
       [ "ScriptCanvasEditor::EditorNodeNotifications", "class_script_canvas_editor_1_1_editor_node_notifications.html", null ],
       [ "ScriptCanvasEditor::EditorSceneVariableManagerRequests", "class_script_canvas_editor_1_1_editor_scene_variable_manager_requests.html", null ],
       [ "ScriptCanvasEditor::EditorScriptCanvasComponentRequests", "class_script_canvas_editor_1_1_editor_script_canvas_component_requests.html", null ],
-      [ "ScriptCanvasEditor::EditorScriptCanvasRequests", "class_script_canvas_editor_1_1_editor_script_canvas_requests.html", null ],
       [ "ScriptCanvasEditor::GeneralAssetNotifications", "class_script_canvas_editor_1_1_general_asset_notifications.html", null ],
       [ "ScriptCanvasEditor::GeneralEditorNotifications", "class_script_canvas_editor_1_1_general_editor_notifications.html", null ],
       [ "ScriptCanvasEditor::GeneralGraphEvents", "class_script_canvas_editor_1_1_general_graph_events.html", null ],
@@ -288,6 +287,7 @@ var hierarchy =
     [ "AZ::Serialize::InstanceFactory< T, U, A >", "struct_a_z_1_1_serialize_1_1_instance_factory.html", null ],
     [ "AZ::SystemTickBus::Handler", null, [
       [ "ScriptCanvas::Debugger::ClientTransceiver", "class_script_canvas_1_1_debugger_1_1_client_transceiver.html", null ],
+      [ "ScriptCanvas::Debugger::ServiceComponent", "class_script_canvas_1_1_debugger_1_1_service_component.html", null ],
       [ "ScriptCanvas::Execution::PerformanceStatistician", "class_script_canvas_1_1_execution_1_1_performance_statistician.html", null ],
       [ "ScriptCanvas::Nodeables::Time::BaseTimer", "class_script_canvas_1_1_nodeables_1_1_time_1_1_base_timer.html", [
         [ "ScriptCanvas::Nodeables::Core::RepeaterNodeable", "class_script_canvas_1_1_nodeables_1_1_core_1_1_repeater_nodeable.html", null ],
@@ -314,8 +314,7 @@ var hierarchy =
       [ "ScriptCanvas::Nodeables::Time::BaseTimer", "class_script_canvas_1_1_nodeables_1_1_time_1_1_base_timer.html", null ],
       [ "ScriptCanvas::Nodeables::Time::DelayNodeable", "class_script_canvas_1_1_nodeables_1_1_time_1_1_delay_nodeable.html", null ],
       [ "ScriptCanvas::Nodeables::Time::DurationNodeable", "class_script_canvas_1_1_nodeables_1_1_time_1_1_duration_nodeable.html", null ],
-      [ "ScriptCanvas::Nodes::LerpBetweenNodeable< t_Operand >", "class_script_canvas_1_1_nodes_1_1_lerp_between_nodeable.html", null ],
-      [ "ScriptCanvasEditor::UnitTestBrowserFilterModel", "class_script_canvas_editor_1_1_unit_test_browser_filter_model.html", null ]
+      [ "ScriptCanvas::Nodes::LerpBetweenNodeable< t_Operand >", "class_script_canvas_1_1_nodes_1_1_lerp_between_nodeable.html", null ]
     ] ],
     [ "AZ::UserSettings", null, [
       [ "ScriptCanvasEditor::EditorSettings::EditorWorkspace", "class_script_canvas_editor_1_1_editor_settings_1_1_editor_workspace.html", null ],
@@ -451,8 +450,7 @@ var hierarchy =
       [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
     ] ],
     [ "AzToolsFramework::AssetBrowser::AssetBrowserFilterModel", null, [
-      [ "ScriptCanvasEditor::ScriptCanvasAssetBrowserModel", "class_script_canvas_editor_1_1_script_canvas_asset_browser_model.html", null ],
-      [ "ScriptCanvasEditor::UnitTestBrowserFilterModel", "class_script_canvas_editor_1_1_unit_test_browser_filter_model.html", null ]
+      [ "ScriptCanvasEditor::ScriptCanvasAssetBrowserModel", "class_script_canvas_editor_1_1_script_canvas_asset_browser_model.html", null ]
     ] ],
     [ "AzToolsFramework::AssetBrowser::AssetBrowserInteractionNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
@@ -655,8 +653,7 @@ var hierarchy =
       ] ],
       [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", [
         [ "ScriptCanvasEditor::ScriptCanvasComboBoxPropertyDataInterface< DataType >", "class_script_canvas_editor_1_1_script_canvas_combo_box_property_data_interface.html", null ]
-      ] ],
-      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, int >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ]
+      ] ]
     ] ],
     [ "GraphCanvas::ComponentSaveData", null, [
       [ "ScriptCanvasEditor::EBusHandlerNodeDescriptorComponent::EBusHandlerNodeDescriptorSaveData", "class_script_canvas_editor_1_1_e_bus_handler_node_descriptor_component_1_1_e_bus_handler_node_descriptor_save_data.html", null ],
@@ -1042,7 +1039,6 @@ var hierarchy =
       [ "ScriptCanvas::RuntimeAssetDescription", "class_script_canvas_1_1_runtime_asset_description.html", null ],
       [ "ScriptCanvas::SubgraphInterfaceAssetDescription", "class_script_canvas_1_1_subgraph_interface_asset_description.html", null ]
     ] ],
-    [ "ScriptCanvas::AutoGenRegistryManager", "class_script_canvas_1_1_auto_gen_registry_manager.html", null ],
     [ "ScriptCanvas::BatchOperationNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
     ] ],
@@ -1247,9 +1243,9 @@ var hierarchy =
         [ "ScriptCanvas::NodeStateChange", "struct_script_canvas_1_1_node_state_change.html", null ]
       ] ],
       [ "ScriptCanvas::Signal", "struct_script_canvas_1_1_signal.html", [
-        [ "ScriptCanvas::TaggedParent< BreakpointTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
         [ "ScriptCanvas::TaggedParent< InputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
-        [ "ScriptCanvas::TaggedParent< OutputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ]
+        [ "ScriptCanvas::TaggedParent< OutputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
+        [ "ScriptCanvas::TaggedParent< BreakpointTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ]
       ] ],
       [ "ScriptCanvas::TaggedDataValue< t_Tag >", "struct_script_canvas_1_1_tagged_data_value.html", null ]
     ] ],
@@ -1287,9 +1283,9 @@ var hierarchy =
     [ "ScriptCanvas::Library::LibraryDefinition", "struct_script_canvas_1_1_library_1_1_library_definition.html", null ],
     [ "ScriptCanvas::LoggableEvent", "struct_script_canvas_1_1_loggable_event.html", [
       [ "ScriptCanvas::TaggedDataValue< VariableChangeTag >", "struct_script_canvas_1_1_tagged_data_value.html", null ],
-      [ "ScriptCanvas::TaggedParent< BreakpointTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
       [ "ScriptCanvas::TaggedParent< InputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
       [ "ScriptCanvas::TaggedParent< OutputSignalTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
+      [ "ScriptCanvas::TaggedParent< BreakpointTag, Signal >", "struct_script_canvas_1_1_tagged_parent.html", null ],
       [ "ScriptCanvas::ExecutionThreadBeginning", "struct_script_canvas_1_1_execution_thread_beginning.html", null ],
       [ "ScriptCanvas::GraphInfoEventBase", "struct_script_canvas_1_1_graph_info_event_base.html", null ],
       [ "ScriptCanvas::TaggedDataValue< t_Tag >", "struct_script_canvas_1_1_tagged_data_value.html", null ],
@@ -1338,13 +1334,13 @@ var hierarchy =
       [ "ScriptCanvasEditor::NodelingDescriptorComponent", "class_script_canvas_editor_1_1_nodeling_descriptor_component.html", null ]
     ] ],
     [ "ScriptCanvas::NodeNotificationsBus::Handler", null, [
-      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::AssetIdDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
-      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::BooleanDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
       [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::StringDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
-      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::VectorDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
-      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::EntityIdDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
       [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::ComboBoxDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
       [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::NumericDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::VectorDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::BooleanDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::EntityIdDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
+      [ "ScriptCanvasEditor::ScriptCanvasDataInterface< GraphCanvas::AssetIdDataInterface >", "class_script_canvas_editor_1_1_script_canvas_data_interface.html", null ],
       [ "ScriptCanvas::Nodes::NodeableNodeOverloaded", "class_script_canvas_1_1_nodes_1_1_nodeable_node_overloaded.html", null ],
       [ "ScriptCanvasEditor::DynamicSlotComponent", "class_script_canvas_editor_1_1_dynamic_slot_component.html", null ],
       [ "ScriptCanvasEditor::NodeDescriptorComponent", "class_script_canvas_editor_1_1_node_descriptor_component.html", null ],
@@ -1355,8 +1351,6 @@ var hierarchy =
       [ "ScriptCanvasEditor::Widget::PropertyGrid", "class_script_canvas_editor_1_1_widget_1_1_property_grid.html", null ]
     ] ],
     [ "ScriptCanvas::NodePropertyInterface", "class_script_canvas_1_1_node_property_interface.html", [
-      [ "ScriptCanvas::TypedNodePropertyInterface< int >", "class_script_canvas_1_1_typed_node_property_interface.html", null ],
-      [ "ScriptCanvas::TypedNodePropertyInterface< ScriptCanvas::Data::StringType >", "class_script_canvas_1_1_typed_node_property_interface.html", null ],
       [ "ScriptCanvas::TypedNodePropertyInterface< DataType >", "class_script_canvas_1_1_typed_node_property_interface.html", [
         [ "ScriptCanvas::TypedComboBoxNodePropertyInterface< int >", "class_script_canvas_1_1_typed_combo_box_node_property_interface.html", null ],
         [ "ScriptCanvas::TypedComboBoxNodePropertyInterface< DataType >", "class_script_canvas_1_1_typed_combo_box_node_property_interface.html", null ]
@@ -1364,7 +1358,6 @@ var hierarchy =
     ] ],
     [ "ScriptCanvas::NodePropertyInterfaceListener", "class_script_canvas_1_1_node_property_interface_listener.html", [
       [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, DataType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ],
-      [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::ComboBoxDataInterface, int >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ],
       [ "ScriptCanvasEditor::ScriptCanvasPropertyDataInterface< GraphCanvas::StringDataInterface, ScriptCanvas::Data::StringType >", "class_script_canvas_editor_1_1_script_canvas_property_data_interface.html", null ],
       [ "ScriptCanvas::Nodeables::Time::BaseTimer", "class_script_canvas_1_1_nodeables_1_1_time_1_1_base_timer.html", null ],
       [ "ScriptCanvas::Nodes::Core::Internal::Nodeling", null, null ],
@@ -1390,6 +1383,7 @@ var hierarchy =
     [ "ScriptCanvas::OverloadSelection", "struct_script_canvas_1_1_overload_selection.html", null ],
     [ "ScriptCanvas::RegistrarGeneric< t_Node >", "class_script_canvas_1_1_registrar_generic.html", null ],
     [ "ScriptCanvas::ReplicaNetworkProperties", "struct_script_canvas_1_1_replica_network_properties.html", null ],
+    [ "ScriptCanvas::ReturnSignalTag", "struct_script_canvas_1_1_return_signal_tag.html", null ],
     [ "ScriptCanvas::RuntimeComponentUserData", "struct_script_canvas_1_1_runtime_component_user_data.html", null ],
     [ "ScriptCanvas::RuntimeData", "struct_script_canvas_1_1_runtime_data.html", null ],
     [ "ScriptCanvas::RuntimeDataOverrides", "struct_script_canvas_1_1_runtime_data_overrides.html", null ],
@@ -1397,7 +1391,6 @@ var hierarchy =
     [ "ScriptCanvas::RuntimeVariable", "struct_script_canvas_1_1_runtime_variable.html", null ],
     [ "ScriptCanvas::ScopedAuxiliaryEntityHandler", "class_script_canvas_1_1_scoped_auxiliary_entity_handler.html", null ],
     [ "ScriptCanvas::ScopedBatchOperation", "class_script_canvas_1_1_scoped_batch_operation.html", null ],
-    [ "ScriptCanvas::ScriptCanvasRegistry", "class_script_canvas_1_1_script_canvas_registry.html", null ],
     [ "ScriptCanvas::ScriptCanvasSettingsRequestBus::Handler", null, [
       [ "ScriptCanvasEditor::MainWindow", "class_script_canvas_editor_1_1_main_window.html", null ]
     ] ],
@@ -1425,17 +1418,17 @@ var hierarchy =
       ] ]
     ] ],
     [ "ScriptCanvas::SlotDescriptor", "struct_script_canvas_1_1_slot_descriptor.html", [
-      [ "ScriptCanvas::DescriptorHelper< ConnectionType::Input, SlotTypeDescriptor::Data >", "struct_script_canvas_1_1_descriptor_helper.html", [
-        [ "ScriptCanvas::SlotDescriptors::DataInDescriptor", "struct_script_canvas_1_1_slot_descriptors_1_1_data_in_descriptor.html", null ]
+      [ "ScriptCanvas::DescriptorHelper< ConnectionType::Input, SlotTypeDescriptor::Execution >", "struct_script_canvas_1_1_descriptor_helper.html", [
+        [ "ScriptCanvas::SlotDescriptors::ExecutionInDescriptor", "struct_script_canvas_1_1_slot_descriptors_1_1_execution_in_descriptor.html", null ]
       ] ],
       [ "ScriptCanvas::DescriptorHelper< ConnectionType::Output, SlotTypeDescriptor::Data >", "struct_script_canvas_1_1_descriptor_helper.html", [
         [ "ScriptCanvas::SlotDescriptors::DataOutDescriptor", "struct_script_canvas_1_1_slot_descriptors_1_1_data_out_descriptor.html", null ]
       ] ],
-      [ "ScriptCanvas::DescriptorHelper< ConnectionType::Input, SlotTypeDescriptor::Execution >", "struct_script_canvas_1_1_descriptor_helper.html", [
-        [ "ScriptCanvas::SlotDescriptors::ExecutionInDescriptor", "struct_script_canvas_1_1_slot_descriptors_1_1_execution_in_descriptor.html", null ]
-      ] ],
       [ "ScriptCanvas::DescriptorHelper< ConnectionType::Output, SlotTypeDescriptor::Execution >", "struct_script_canvas_1_1_descriptor_helper.html", [
         [ "ScriptCanvas::SlotDescriptors::ExecutionOutDescriptor", "struct_script_canvas_1_1_slot_descriptors_1_1_execution_out_descriptor.html", null ]
+      ] ],
+      [ "ScriptCanvas::DescriptorHelper< ConnectionType::Input, SlotTypeDescriptor::Data >", "struct_script_canvas_1_1_descriptor_helper.html", [
+        [ "ScriptCanvas::SlotDescriptors::DataInDescriptor", "struct_script_canvas_1_1_slot_descriptors_1_1_data_in_descriptor.html", null ]
       ] ],
       [ "ScriptCanvas::DescriptorHelper< ConnectionName, SlotTypeName >", "struct_script_canvas_1_1_descriptor_helper.html", null ]
     ] ],
@@ -1603,6 +1596,7 @@ var hierarchy =
     [ "ScriptCanvasExecutionBus::Handler", null, [
       [ "ScriptCanvasEditor::SystemComponent", "class_script_canvas_editor_1_1_system_component.html", null ]
     ] ],
+    [ "ScriptCanvasModel", "class_script_canvas_model.html", null ],
     [ "ScriptEventReceiveNodeDescriptorNotificationBus::Handler", null, [
       [ "ScriptCanvasEditor::ScriptEventReceiverEventNodeDescriptorComponent", "class_script_canvas_editor_1_1_script_event_receiver_event_node_descriptor_component.html", null ]
     ] ],
@@ -1749,7 +1743,6 @@ var hierarchy =
       [ "ScriptCanvasEditor::UndoHelper", "class_script_canvas_editor_1_1_undo_helper.html", null ]
     ] ],
     [ "UnitTestWidgetNotificationBus::Handler", null, [
-      [ "ScriptCanvasEditor::UnitTestBrowserFilterModel", "class_script_canvas_editor_1_1_unit_test_browser_filter_model.html", null ],
       [ "ScriptCanvasEditor::UnitTestDockWidget", "class_script_canvas_editor_1_1_unit_test_dock_widget.html", null ]
     ] ],
     [ "UpgradeNotificationsBus::Handler", null, [

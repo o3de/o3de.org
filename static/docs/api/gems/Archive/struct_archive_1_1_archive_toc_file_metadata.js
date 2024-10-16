@@ -1,5 +1,6 @@
 var struct_archive_1_1_archive_toc_file_metadata =
 [
+    [ "ArchiveTocFileMetadata", "struct_archive_1_1_archive_toc_file_metadata.html#a71c81b8b09aff9a122df2250e4b84df2", null ],
     [ "m_blockLineTableFirstIndex", "struct_archive_1_1_archive_toc_file_metadata.html#a134917718b12a07bcdfd1070979590fc", null ],
     [ "m_compressedSizeInSectors", "struct_archive_1_1_archive_toc_file_metadata.html#aa1f9a16ace84d3201ab68dadfa32f975", null ],
     [ "m_compressionAlgoIndex", "struct_archive_1_1_archive_toc_file_metadata.html#a1f2777975100af86d0c0fa880ae7d88d", null ],

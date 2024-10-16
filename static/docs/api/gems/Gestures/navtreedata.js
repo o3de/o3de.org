@@ -41,7 +41,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_gestures_1_1_recognizer_swipe.html#ac9c085d00ed93d48f895e9ad232a742c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

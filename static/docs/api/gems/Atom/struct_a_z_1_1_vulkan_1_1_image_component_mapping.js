@@ -9,6 +9,8 @@ var struct_a_z_1_1_vulkan_1_1_image_component_mapping =
       [ "B", "struct_a_z_1_1_vulkan_1_1_image_component_mapping.html#a28e83f8cbaf1ecfabefb0fe827a362fba9d5ed678fe57bcca610140957afab571", null ],
       [ "A", "struct_a_z_1_1_vulkan_1_1_image_component_mapping.html#a28e83f8cbaf1ecfabefb0fe827a362fba7fc56270e7a70fa81a5935b72eacbe29", null ]
     ] ],
+    [ "ImageComponentMapping", "struct_a_z_1_1_vulkan_1_1_image_component_mapping.html#ade66cd82690ae31f4081e0f0bd8bc299", null ],
+    [ "ImageComponentMapping", "struct_a_z_1_1_vulkan_1_1_image_component_mapping.html#a5dc11347c820e19c33e0189e266b87c7", null ],
     [ "m_alpha", "struct_a_z_1_1_vulkan_1_1_image_component_mapping.html#aaf6316eb2e05a76a13305ac2cb5a5f9b", null ],
     [ "m_blue", "struct_a_z_1_1_vulkan_1_1_image_component_mapping.html#a464d051aeb6327efe261b0407aac0f71", null ],
     [ "m_green", "struct_a_z_1_1_vulkan_1_1_image_component_mapping.html#a47fef9930b58462a9b66df2e67cd8137", null ],

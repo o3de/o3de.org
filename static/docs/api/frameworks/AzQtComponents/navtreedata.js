@@ -51,14 +51,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_az_qt_components_1_1_card_header.html#a63f9bae95608e4e639bc3e9803722bb6",
-"class_az_qt_components_1_1_drag_and_drop.html#a4f1c8e1882a5627b1d713ef13b758f27",
-"class_az_qt_components_1_1_r_g_b_a_low_range_validator.html",
-"class_az_qt_components_1_1_slider.html#aa91e549a5ff1e949b37b72c05e7db1fd",
-"class_az_qt_components_1_1_style.html",
-"class_az_qt_components_1_1_vector_input.html",
-"struct_az_qt_components_1_1_line_edit_1_1_config.html#a48ef748995235de427b96fe2f32fa324"
+"",
+"class_az_qt_components_1_1_card.html#acf788547283b20e9c18be19919f98295",
+"class_az_qt_components_1_1_combo_box.html#af5b5cee9f64fb7c50def60c9e0e6d29f",
+"class_az_qt_components_1_1_fancy_docking_drop_zone_widget.html#a8b47184cf9556fe1b9d607ad351c71fb",
+"class_az_qt_components_1_1_interactive_window_resizer.html#aea630158c62479b234472bd5858699f0",
+"class_az_qt_components_1_1_scroll_bar.html#a0f3e3c0781a1d6ba2b7744c97c0d7bf3",
+"class_az_qt_components_1_1_slider_double.html#a420f426f63791b51988364d2a80cd445",
+"class_az_qt_components_1_1_styled_dock_widget.html#a137739219e9b131693cbbbcf36d0ad7f",
+"class_az_qt_components_1_1_title_bar.html#abcb5cdcb76bbdb1210b064bcb2544155",
+"class_az_qt_components_1_1internal_1_1_spin_box_line_edit.html",
+"functions_func_p.html",
+"struct_az_qt_components_1_1_overlay_widget_button.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

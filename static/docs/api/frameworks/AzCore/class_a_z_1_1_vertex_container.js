@@ -1,5 +1,8 @@
 var class_a_z_1_1_vertex_container =
 [
+    [ "VertexContainer", "class_a_z_1_1_vertex_container.html#abf0fd315e9ea54a3ce7f0f5fe00022e1", null ],
+    [ "VertexContainer", "class_a_z_1_1_vertex_container.html#abea989869b493424d521e33d7977a102", null ],
+    [ "~VertexContainer", "class_a_z_1_1_vertex_container.html#a66f0062b7e8f6c9b2f3b612234a3c524", null ],
     [ "AddVertex", "class_a_z_1_1_vertex_container.html#a2c3abde15a3d42ac3942a12bfc8b0528", null ],
     [ "Clear", "class_a_z_1_1_vertex_container.html#a8f87ce090900e971e386cb10ba62c46b", null ],
     [ "Empty", "class_a_z_1_1_vertex_container.html#a6dc1e9bd9b3eb6834aa37f77b913f479", null ],
@@ -8,6 +11,7 @@ var class_a_z_1_1_vertex_container =
     [ "GetVertices", "class_a_z_1_1_vertex_container.html#a3ed7d35de37a7e2ccfa784a58ab117e4", null ],
     [ "InsertVertex", "class_a_z_1_1_vertex_container.html#a8482b787d477a1021ea09994b6257d63", null ],
     [ "operator[]", "class_a_z_1_1_vertex_container.html#ab878870ae0fd5d9b9f6067ed89a3e892", null ],
+    [ "Reflect", "class_a_z_1_1_vertex_container.html#ad4ba7a1589228d4d63b5af95db718c64", null ],
     [ "RemoveVertex", "class_a_z_1_1_vertex_container.html#a3b9e593faf293d3ed2e11514ea0737bc", null ],
     [ "SetCallbacks", "class_a_z_1_1_vertex_container.html#a60de6be0bbebe76a3106ac0f1c0be50a", null ],
     [ "SetVertices", "class_a_z_1_1_vertex_container.html#addb469d3a7d2dab9e2df86430b975607", null ],

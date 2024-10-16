@@ -14,7 +14,7 @@ var class_m_core_1_1_disk_file =
     [ "Flush", "class_m_core_1_1_disk_file.html#a56bdcb35afc98d872278bbdb54da92be", null ],
     [ "Forward", "class_m_core_1_1_disk_file.html#a87dff58e828add4599825ff4e2776cde", null ],
     [ "GetFileMode", "class_m_core_1_1_disk_file.html#a464d47882e165913b570d7b1440f32c2", null ],
-    [ "GetFileName", "class_m_core_1_1_disk_file.html#af9b45fb7c41fcf199af57a733de78952", null ],
+    [ "GetFileName", "class_m_core_1_1_disk_file.html#a94119c7e1b118d6b6e8dd60a7f70c3d6", null ],
     [ "GetFileSize", "class_m_core_1_1_disk_file.html#ac803f14849c8bb0797e02b2d51426363", null ],
     [ "GetIsEOF", "class_m_core_1_1_disk_file.html#ab28fbe13d9f8e05c65c8ccc53cffee4b", null ],
     [ "GetIsOpen", "class_m_core_1_1_disk_file.html#a96b2e0018fc5eb7361142402860ee6a0", null ],

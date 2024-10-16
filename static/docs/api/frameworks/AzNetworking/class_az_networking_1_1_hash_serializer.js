@@ -1,10 +1,13 @@
 var class_az_networking_1_1_hash_serializer =
 [
+    [ "HashSerializer", "class_az_networking_1_1_hash_serializer.html#a8e00c2f447d63b66b79a1f16ec7a57e4", null ],
+    [ "~HashSerializer", "class_az_networking_1_1_hash_serializer.html#a7d96f62aaa77c5dad0ccd6d95d66bcf1", null ],
     [ "BeginObject", "class_az_networking_1_1_hash_serializer.html#a4e3d6447631507d4470b091ad68dfba2", null ],
     [ "ClearTrackedChangesFlag", "class_az_networking_1_1_hash_serializer.html#a0e49b0b89739d614861eaa2962c4a13a", null ],
     [ "EndObject", "class_az_networking_1_1_hash_serializer.html#a34d1b61d8309bcb9a1a9bf3be122c664", null ],
-    [ "GetBuffer", "class_az_networking_1_1_hash_serializer.html#aef83e62ec4a8c20d3b5eff2edc15eedf", null ],
+    [ "GetBuffer", "class_az_networking_1_1_hash_serializer.html#a2a678b0c5350d6e21cfe2a8867a69203", null ],
     [ "GetCapacity", "class_az_networking_1_1_hash_serializer.html#a8d454ad37df2fc9806821ceecba3bcd4", null ],
+    [ "GetHash", "class_az_networking_1_1_hash_serializer.html#a550e574e17a0d5af2812365355689161", null ],
     [ "GetSerializerMode", "class_az_networking_1_1_hash_serializer.html#a947c81f125a017c7bcc1f0a5d77d6ccb", null ],
     [ "GetSize", "class_az_networking_1_1_hash_serializer.html#a4c14d6135b3116eb897fc68fd9531e4b", null ],
     [ "GetTrackedChangesFlag", "class_az_networking_1_1_hash_serializer.html#a47e6261339bb74ee72128bb2f1799f60", null ],

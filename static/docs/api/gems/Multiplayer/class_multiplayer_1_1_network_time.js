@@ -1,5 +1,7 @@
 var class_multiplayer_1_1_network_time =
 [
+    [ "NetworkTime", "class_multiplayer_1_1_network_time.html#a28e242af7cc9a49b1c0cfcade386fdcf", null ],
+    [ "~NetworkTime", "class_multiplayer_1_1_network_time.html#a07ed59a68ce1a971f6975b0c23c6de77", null ],
     [ "AlterTime", "class_multiplayer_1_1_network_time.html#ab42d9596182195ae73fb0169a02617b0", null ],
     [ "ClearRewoundEntities", "class_multiplayer_1_1_network_time.html#a494ac12f917d9961367a5f5e2dc191e8", null ],
     [ "ForceSetTime", "class_multiplayer_1_1_network_time.html#ab752cff0446077c749a23ba1528a7029", null ],
@@ -10,5 +12,6 @@ var class_multiplayer_1_1_network_time =
     [ "GetUnalteredHostFrameId", "class_multiplayer_1_1_network_time.html#a88b75879d143b73d64422e9c3df346a4", null ],
     [ "IncrementHostFrameId", "class_multiplayer_1_1_network_time.html#a38df5bb6130a45c5b68f83349dd6a66c", null ],
     [ "IsTimeRewound", "class_multiplayer_1_1_network_time.html#a834aa2061d7d48d296ee2d2608a4e3d2", null ],
+    [ "Reflect", "class_multiplayer_1_1_network_time.html#abfc28d43648b3bdf6aa6ca6bd1184e08", null ],
     [ "SyncEntitiesToRewindState", "class_multiplayer_1_1_network_time.html#a7951ec629469f3bfd768458904bd5b0b", null ]
 ];

@@ -2,6 +2,7 @@ var struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_game
 [
     [ "RawGamepadState", "struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html#a38a98e2db4db8e295e089217959a7d96", null ],
     [ "~RawGamepadState", "struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html#a2430ed471900ccf8e72347ecb5a43f92", null ],
+    [ "AZ_DISABLE_COPY_MOVE", "struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html#af6d1778f462d75edc47743fc7b23f55e", null ],
     [ "GetLeftThumbStickAdjustedForDeadZoneAndNormalized", "struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html#a1af27cf5502a20e10a3a8ae67526dc99", null ],
     [ "GetLeftThumbStickNormalizedValues", "struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html#a26f06e72d1d5dd8edd8730cb063265ae", null ],
     [ "GetLeftTriggerAdjustedForDeadZoneAndNormalized", "struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html#a3c0d55375e779229ce7caa6c23974aef", null ],

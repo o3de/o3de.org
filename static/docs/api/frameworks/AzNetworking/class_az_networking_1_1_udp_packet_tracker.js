@@ -1,5 +1,7 @@
 var class_az_networking_1_1_udp_packet_tracker =
 [
+    [ "UdpPacketTracker", "class_az_networking_1_1_udp_packet_tracker.html#ab5dc9993e072b85f7fe7658ecb86107b", null ],
+    [ "~UdpPacketTracker", "class_az_networking_1_1_udp_packet_tracker.html#ab1be8c471fb92dd39ad3ca4a64c960ce", null ],
     [ "GetAcknowledgedWindow", "class_az_networking_1_1_udp_packet_tracker.html#ad877f35ce6a23b68fe3c9ac5088d10f1", null ],
     [ "GetLastReceivedSequenceId", "class_az_networking_1_1_udp_packet_tracker.html#a029b83526e8d07bdabdc3096afe4a2fb", null ],
     [ "GetNextPacketId", "class_az_networking_1_1_udp_packet_tracker.html#a4c30ea589e22b1e226ebc5807bf0c017", null ],

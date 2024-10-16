@@ -1,9 +1,11 @@
 var class_gradient_signal_1_1_gradient_transform =
 [
+    [ "GradientTransform", "class_gradient_signal_1_1_gradient_transform.html#a0f02ba6b916ff37ba2694e30382f6636", null ],
     [ "GradientTransform", "class_gradient_signal_1_1_gradient_transform.html#ada6e9c163506cf63ef32fae7ad3813e5", null ],
     [ "GetBounds", "class_gradient_signal_1_1_gradient_transform.html#a0e0048e50a57b9988fba3ccf183708ec", null ],
     [ "GetFrequencyZoom", "class_gradient_signal_1_1_gradient_transform.html#a8c259b6bc60f95f35d69bad0eeb98240", null ],
     [ "GetMinMaxUvwValues", "class_gradient_signal_1_1_gradient_transform.html#abe4ff52f1bb599f496fb4b44863a5568", null ],
+    [ "GetMinMaxUvwValuesNormalized", "class_gradient_signal_1_1_gradient_transform.html#a8804385dcc678993c32bb9f41f9ce55e", null ],
     [ "GetScale", "class_gradient_signal_1_1_gradient_transform.html#adb3f5a63d0a674fbab1bbd2a839cba6e", null ],
     [ "GetTransformMatrix", "class_gradient_signal_1_1_gradient_transform.html#a3e49654c9bacc82c7e1d6ab59220dded", null ],
     [ "GetWrappingType", "class_gradient_signal_1_1_gradient_transform.html#ae5760e19e4f29c781db000192481c13e", null ],

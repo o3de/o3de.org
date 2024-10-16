@@ -76,9 +76,6 @@ var hierarchy =
     [ "AzToolsFramework::ActionManagerRegistrationNotificationBus::Handler", null, [
       [ "Multiplayer::MultiplayerEditorSystemComponent", "class_multiplayer_1_1_multiplayer_editor_system_component.html", null ]
     ] ],
-    [ "AzToolsFramework::EditorContextMenuBus::Handler", null, [
-      [ "Multiplayer::MultiplayerEditorSystemComponent", "class_multiplayer_1_1_multiplayer_editor_system_component.html", null ]
-    ] ],
     [ "AzToolsFramework::EditorEntityContextNotificationBus::Handler", null, [
       [ "Multiplayer::MultiplayerEditorSystemComponent", "class_multiplayer_1_1_multiplayer_editor_system_component.html", null ]
     ] ],
@@ -96,6 +93,9 @@ var hierarchy =
     ] ],
     [ "IEditorNotifyListener", null, [
       [ "Multiplayer::MultiplayerEditorSystemComponent", "class_multiplayer_1_1_multiplayer_editor_system_component.html", null ]
+    ] ],
+    [ "INetworkTimeRequestBus::Handler", null, [
+      [ "Multiplayer::NetworkTime", "class_multiplayer_1_1_network_time.html", null ]
     ] ],
     [ "LocalPredictionPlayerInputComponentBase", null, [
       [ "Multiplayer::LocalPredictionPlayerInputComponent", "class_multiplayer_1_1_local_prediction_player_input_component.html", null ]
@@ -148,9 +148,7 @@ var hierarchy =
     [ "Multiplayer::INetworkSpawnableLibrary", "class_multiplayer_1_1_i_network_spawnable_library.html", [
       [ "Multiplayer::NetworkSpawnableLibrary", "class_multiplayer_1_1_network_spawnable_library.html", null ]
     ] ],
-    [ "Multiplayer::INetworkTime", "class_multiplayer_1_1_i_network_time.html", [
-      [ "Multiplayer::NetworkTime", "class_multiplayer_1_1_network_time.html", null ]
-    ] ],
+    [ "Multiplayer::INetworkTime", "class_multiplayer_1_1_i_network_time.html", null ],
     [ "Multiplayer::IReplicationWindow", "class_multiplayer_1_1_i_replication_window.html", [
       [ "Multiplayer::NullReplicationWindow", "class_multiplayer_1_1_null_replication_window.html", null ],
       [ "Multiplayer::ServerToClientReplicationWindow", "class_multiplayer_1_1_server_to_client_replication_window.html", null ]

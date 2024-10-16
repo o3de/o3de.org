@@ -1,10 +1,14 @@
 var class_az_framework_1_1_application_requests =
 [
+    [ "Bus", "class_az_framework_1_1_application_requests.html#ab1684f88f494d3aeadcb6625db147700", null ],
+    [ "MutexType", "class_az_framework_1_1_application_requests.html#a3861659943fa1a7c1c7dfeb1fcd1b25d", null ],
+    [ "ApplicationRequests", "class_az_framework_1_1_application_requests.html#a51ccbb3cf777c025cddb8d05cf08d142", null ],
+    [ "~ApplicationRequests", "class_az_framework_1_1_application_requests.html#ae26bd5165d748f46ec185947c7c748fa", null ],
     [ "ArePrefabWipFeaturesEnabled", "class_az_framework_1_1_application_requests.html#a8713c01a86b5bb6e991a69cd8f6a58c1", null ],
     [ "CalculateBranchTokenForEngineRoot", "class_az_framework_1_1_application_requests.html#a2f99339f430409d7a1480ee7e3a31315", null ],
     [ "ExitMainLoop", "class_az_framework_1_1_application_requests.html#a5367161020503fd0ed29b7e334ba0000", null ],
-    [ "GetApplicationCommandLine", "class_az_framework_1_1_application_requests.html#aa332afee86fe02ef865d847b0a9ca581", null ],
-    [ "GetCommandLine", "class_az_framework_1_1_application_requests.html#a37a9ae1490fae780ef9913eb3242c900", null ],
+    [ "GetApplicationCommandLine", "class_az_framework_1_1_application_requests.html#ac434ea89f2f4bac3b204778462121c52", null ],
+    [ "GetCommandLine", "class_az_framework_1_1_application_requests.html#ad57de6246899661f8bd43129e87b3d13", null ],
     [ "GetComponentTypeId", "class_az_framework_1_1_application_requests.html#a3e71bf0887725949beae7d5e48012fa7", null ],
     [ "IsEditorModeFeedbackEnabled", "class_az_framework_1_1_application_requests.html#aaf93f06ca97877f47286bbaf8f45d6b6", null ],
     [ "IsPrefabSystemEnabled", "class_az_framework_1_1_application_requests.html#a7578ee73fa1308cd2aec69496310a30f", null ],
@@ -17,10 +21,12 @@ var class_az_framework_1_1_application_requests =
     [ "PumpSystemEventLoopOnce", "class_az_framework_1_1_application_requests.html#a4935ee5c133a1c23939bacb2e0364ad8", null ],
     [ "PumpSystemEventLoopUntilEmpty", "class_az_framework_1_1_application_requests.html#a87f43f33dadd0e223cd6d83e4e184147", null ],
     [ "PumpSystemEventLoopWhileDoingWorkInNewThread", "class_az_framework_1_1_application_requests.html#a9e99e04d4fa8f346efbb179ea456c937", null ],
+    [ "RegisterComponentType", "class_az_framework_1_1_application_requests.html#a36f8c83f8caa5edf083391b9c7e4c9fa", null ],
     [ "ResolveEnginePath", "class_az_framework_1_1_application_requests.html#a1c266284e99d33768a9c85e7b590e232", null ],
     [ "RunMainLoop", "class_az_framework_1_1_application_requests.html#ab44609739861ff6c22668f2c9e7b8b09", null ],
-    [ "SetPrefabSystemEnabled", "class_az_framework_1_1_application_requests.html#acd00d451a6d6e917c63401ebec8e8e12", null ],
+    [ "SetPrefabSystemEnabled", "class_az_framework_1_1_application_requests.html#a7706814be2e722adbeb7227c1cae6229", null ],
     [ "ShouldAssertForLegacySlicesUsage", "class_az_framework_1_1_application_requests.html#ad9d2cee28e9b30944b54b21c1250aa1a", null ],
     [ "TerminateOnError", "class_az_framework_1_1_application_requests.html#a7f5907e96596d870645c5a89ab1f3e28", null ],
-    [ "WasExitMainLoopRequested", "class_az_framework_1_1_application_requests.html#a9e58dc73a9db81caa25ff112ef7fbd28", null ]
+    [ "WasExitMainLoopRequested", "class_az_framework_1_1_application_requests.html#a9e58dc73a9db81caa25ff112ef7fbd28", null ],
+    [ "HandlerPolicy", "class_az_framework_1_1_application_requests.html#a65e925f793b2f6412863c56eb58304fe", null ]
 ];

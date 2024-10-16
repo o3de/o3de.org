@@ -1,6 +1,8 @@
 var class_a_z_1_1_dom_1_1_visitor =
 [
     [ "Result", "class_a_z_1_1_dom_1_1_visitor.html#a22042435a01e35464340461c9a3dee80", null ],
+    [ "~Visitor", "class_a_z_1_1_dom_1_1_visitor.html#aba7bbe7c755f35feea5ecb796fc64233", null ],
+    [ "Visitor", "class_a_z_1_1_dom_1_1_visitor.html#a9955bf68b848b4f1b8db10ef5e9943c7", null ],
     [ "Bool", "class_a_z_1_1_dom_1_1_visitor.html#a35c248f3b572b33654b4c50cf0e03132", null ],
     [ "Double", "class_a_z_1_1_dom_1_1_visitor.html#a69f973b1386432cc673fc39e4bd85a78", null ],
     [ "EndArray", "class_a_z_1_1_dom_1_1_visitor.html#a43ae83f0f648667661fe0745b9be9a03", null ],
@@ -14,7 +16,7 @@ var class_a_z_1_1_dom_1_1_visitor =
     [ "RawKey", "class_a_z_1_1_dom_1_1_visitor.html#a2d4838ee9c922821c9168405a8fc2f27", null ],
     [ "RawStartNode", "class_a_z_1_1_dom_1_1_visitor.html#ab08dcded69aa2eef847dc7478da5cf3e", null ],
     [ "RawValue", "class_a_z_1_1_dom_1_1_visitor.html#a482be789e0540b5a1db337b0bb59ab39", null ],
-    [ "RefCountedString", "class_a_z_1_1_dom_1_1_visitor.html#a2a8132e7ed1b7f823bf14cf9965faa9d", null ],
+    [ "RefCountedString", "class_a_z_1_1_dom_1_1_visitor.html#a4550079b361c0b78153d4d0cf91d7ee1", null ],
     [ "StartArray", "class_a_z_1_1_dom_1_1_visitor.html#a289dac6f087d5e213937635277a7ea31", null ],
     [ "StartNode", "class_a_z_1_1_dom_1_1_visitor.html#a6a8fe680399c62088dbdd78a4b119d3d", null ],
     [ "StartObject", "class_a_z_1_1_dom_1_1_visitor.html#aca1ebb66156d8a1d6b592500a3c5fbfc", null ],

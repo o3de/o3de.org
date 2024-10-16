@@ -1,5 +1,7 @@
 var class_r_o_s2_1_1_gripper_action_server =
 [
+    [ "GoalHandleGripperCommand", "class_r_o_s2_1_1_gripper_action_server.html#a8056cfa7dab3833f65ca0535c754b108", null ],
+    [ "GripperCommand", "class_r_o_s2_1_1_gripper_action_server.html#ab4df225a01186d676bac89499e1bbb5e", null ],
     [ "GripperActionServer", "class_r_o_s2_1_1_gripper_action_server.html#a2bbc6bb49b8b87c449c7bcf900fe518e", null ],
     [ "CancelGoal", "class_r_o_s2_1_1_gripper_action_server.html#a36942f529cc3ee193f57e99b84c44f09", null ],
     [ "GoalSuccess", "class_r_o_s2_1_1_gripper_action_server.html#a6bdfe9109500da022cfbb6ae19eff05f", null ],

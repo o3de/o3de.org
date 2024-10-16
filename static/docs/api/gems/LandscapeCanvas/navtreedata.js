@@ -40,7 +40,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"class_landscape_canvas_1_1_fast_noise_gradient_node.html#ae69eb4b95aed8752baf1678564087aef",
+"class_landscape_canvas_1_1_smooth_step_gradient_modifier_node.html#a02d79f4f6de462fb9b662084d1ef4d62"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -4,6 +4,8 @@ var class_az_networking_1_1_udp_packet_header =
     [ "UdpPacketHeader", "class_az_networking_1_1_udp_packet_header.html#ae45c8e20b984dd2bf47c583285bc8ccb", null ],
     [ "UdpPacketHeader", "class_az_networking_1_1_udp_packet_header.html#a73123ff6517a014c19a52ed8646735b9", null ],
     [ "UdpPacketHeader", "class_az_networking_1_1_udp_packet_header.html#a4ee2545c13e571a3065ee459f2d37b3c", null ],
+    [ "~UdpPacketHeader", "class_az_networking_1_1_udp_packet_header.html#a14167666e66c1cefdee474d9d9c55360", null ],
+    [ "AZ_RTTI", "class_az_networking_1_1_udp_packet_header.html#a0e0141187a41b9fab61274e6411acaaf", null ],
     [ "GetIsReliable", "class_az_networking_1_1_udp_packet_header.html#a984dfac37b266157014f217e5b81cc05", null ],
     [ "GetLocalSequenceId", "class_az_networking_1_1_udp_packet_header.html#a81ccbc47cb0ddfe4ec531ce9b9488bd9", null ],
     [ "GetPacketId", "class_az_networking_1_1_udp_packet_header.html#a6c7088e21c3e7016ff32cdba7dd11f71", null ],
@@ -16,5 +18,6 @@ var class_az_networking_1_1_udp_packet_header =
     [ "Serialize", "class_az_networking_1_1_udp_packet_header.html#a16b5d66c318e0c0dcf47056186ab0619", null ],
     [ "SerializePacketFlags", "class_az_networking_1_1_udp_packet_header.html#ac5334ee7bc1214964b1f32076c006548", null ],
     [ "SetPacketFlag", "class_az_networking_1_1_udp_packet_header.html#a6ff3917fb464f500d70660bcf3373a5d", null ],
-    [ "SetPacketFlags", "class_az_networking_1_1_udp_packet_header.html#a73e5ed0e88d36f3e2d0928086100f5f4", null ]
+    [ "SetPacketFlags", "class_az_networking_1_1_udp_packet_header.html#a73e5ed0e88d36f3e2d0928086100f5f4", null ],
+    [ "UdpPacketIdWindow", "class_az_networking_1_1_udp_packet_header.html#a951ff395492ca175a618c0839cc702a7", null ]
 ];

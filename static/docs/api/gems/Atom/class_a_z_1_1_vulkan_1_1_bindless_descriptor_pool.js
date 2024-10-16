@@ -13,5 +13,7 @@ var class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool =
     [ "GarbageCollect", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#ad0f5fe776c70cd76b81ef0f819b5acf9", null ],
     [ "GetBindlessSrgBindingSlot", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#ac234522c2d60116d564988a1b7201ee7", null ],
     [ "GetNativeDescriptorSet", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#aa27e660263dfea92229f533999d923e5", null ],
-    [ "IsInitialized", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#a5d04beba59a03a2740fe23ad7b8fb190", null ]
+    [ "Init", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#aef516254ec5b5c46891b1f1c80a54460", null ],
+    [ "IsInitialized", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#a5d04beba59a03a2740fe23ad7b8fb190", null ],
+    [ "Shutdown", "class_a_z_1_1_vulkan_1_1_bindless_descriptor_pool.html#a4ad208523edfb3ea1c882f96e0576b6f", null ]
 ];

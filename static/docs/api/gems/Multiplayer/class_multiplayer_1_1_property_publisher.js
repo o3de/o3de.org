@@ -1,5 +1,10 @@
 var class_multiplayer_1_1_property_publisher =
 [
+    [ "OwnsLifetime", "class_multiplayer_1_1_property_publisher.html#a40357dc89671d6cfc715e76ef41820c6", [
+      [ "True", "class_multiplayer_1_1_property_publisher.html#a40357dc89671d6cfc715e76ef41820c6af827cf462f62848df37c5e1e94a4da74", null ],
+      [ "False", "class_multiplayer_1_1_property_publisher.html#a40357dc89671d6cfc715e76ef41820c6af8320b26d30ab433c5a54546d21f414c", null ]
+    ] ],
+    [ "PropertyPublisher", "class_multiplayer_1_1_property_publisher.html#a1bd5fb115adbb43dfdf0d43665ff3537", null ],
     [ "CacheDeletePacket", "class_multiplayer_1_1_property_publisher.html#a6cfa38bd3ba24aacfc4c71bd38fad662", null ],
     [ "FinalizeSerialization", "class_multiplayer_1_1_property_publisher.html#a0f116637bd3047a8dbf88eea8f0226c8", null ],
     [ "GenerateMigrationPacket", "class_multiplayer_1_1_property_publisher.html#a5eeb2f773468a10a37b1e22a99cffaf2", null ],

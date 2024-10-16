@@ -1,5 +1,7 @@
 var class_a_z_1_1_r_h_i_1_1_frame_graph_interface =
 [
+    [ "FrameGraphInterface", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a8703a4c8c88b52d7a6bc506dbcf9b1c5", null ],
+    [ "~FrameGraphInterface", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a0d4710c3ba9cd7882f23d6f714983cf5", null ],
     [ "ExecuteAfter", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a22bf8e9c94056c9abf89b6955945f5da", null ],
     [ "ExecuteBefore", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a3954434d8b1c38a6b6ae921000481d12", null ],
     [ "GetAttachmentDatabase", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#aa77f47e253990bacc3a0772d585768a8", null ],
@@ -20,5 +22,6 @@ var class_a_z_1_1_r_h_i_1_1_frame_graph_interface =
     [ "UseShaderAttachment", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a03e8f7a8489b9a5aeab91bb5f67da22e", null ],
     [ "UseShaderAttachment", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#ab24fad45eea4648da160492f133edfb5", null ],
     [ "UseSubpassInputAttachment", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#ac7caa035af6dd415a736db0f365781f9", null ],
-    [ "UseSubpassInputAttachments", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#ae55c35fc942117a7faf1c836f1ff0ee4", null ]
+    [ "UseSubpassInputAttachments", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#ae55c35fc942117a7faf1c836f1ff0ee4", null ],
+    [ "WaitFence", "class_a_z_1_1_r_h_i_1_1_frame_graph_interface.html#a3c3cbe1814beb67832e6f8481a35f00d", null ]
 ];
