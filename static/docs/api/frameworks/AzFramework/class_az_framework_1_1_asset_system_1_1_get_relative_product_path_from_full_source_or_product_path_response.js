@@ -1,4 +1,0 @@
-var class_az_framework_1_1_asset_system_1_1_get_relative_product_path_from_full_source_or_product_path_response =
-[
-    [ "GetMessageType", "class_az_framework_1_1_asset_system_1_1_get_relative_product_path_from_full_source_or_product_path_response.html#a8481fe3f60f4617875429a63ac9515c3", null ]
-];

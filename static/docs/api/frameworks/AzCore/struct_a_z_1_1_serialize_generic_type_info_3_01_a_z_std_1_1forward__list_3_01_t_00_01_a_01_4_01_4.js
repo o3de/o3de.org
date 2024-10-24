@@ -1,4 +1,0 @@
-var struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1forward__list_3_01_t_00_01_a_01_4_01_4 =
-[
-    [ "GenericClassInfoForwardList", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1forward__list_3_01_t_00_01_a_01_4_01_42a66f4c394a69fff78c0d8d6a1acbf48.html", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1forward__list_3_01_t_00_01_a_01_4_01_42a66f4c394a69fff78c0d8d6a1acbf48" ]
-];
