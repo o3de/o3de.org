@@ -1,4 +1,0 @@
-var struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_1_1_event_data_01_4_01_4 =
-[
-    [ "GenericClassSharedPtr", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01const_01_e_motion_f_x_d128eab16e919d1f69b3362a44533d34.html", null ]
-];
