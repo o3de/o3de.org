@@ -27,7 +27,7 @@ Lidars are useful for tasks such as obstacle detection, localization, and naviga
 | **Lidar Model**             | What kind of lidar it is. This can be a custom one or corresponding to a real device.                                                                                      | Enumeration | `Custom3DLidar` |
 | **Lidar Implementation**    | Which mechanism to use for ray-casting (or other methods of acquiring data). Implementations can be registered by external Gems.                                           | Enumeration | `SceneQueries`  |
 | **Ignore Collision Layers** | Collision layers to ignore when acquiring data. This is useful to avoid obstruction by the sensor mesh itself.                                                             | List        | empty           |
-| **Enable Segmentation**     | Whether to enable the class and instance segmentation feature. See [Class Segmenatation Configuration Component](common/class-segmentation-configuration.md)               | Boolean     | false           |
+| **Enable Segmentation**     | Whether to enable the class and instance segmentation feature. See [Class Segmentation Configuration Component](common/class-segmentation-configuration.md)               | Boolean     | false           |
 | **Points At Max**           | Whether to return points for values above maximum range (with infinity value).                                                                                             | Boolean     | false           |
 
 Note that depending on the lidar implementation, some additional properties may be present.
