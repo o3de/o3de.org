@@ -22,7 +22,7 @@ Note that if an entity does not possess a Tag component with a name that matches
 
 ## Usage
 
-1. Add **Class Segmentation Configuration** to the level  entity; then add the desired segmentation classes (example shown above).
+1. Add **Class Segmentation Configuration** to the level entity; then add the desired segmentation classes (example shown above).
 2. Tag entities associated with each class with their respective segmentation class names (See [Tag](/docs/user-guide/components/reference/gameplay/tag.md)).
 
     ![Class Segmentation Tag component example](/images/user-guide/components/reference/robotics/ros2/ros2-class-segmentation-tag.png)
