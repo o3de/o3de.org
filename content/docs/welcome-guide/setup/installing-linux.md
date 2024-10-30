@@ -40,7 +40,7 @@ sudo chmod -Rv 700 /var/cache/apt/archives/partial/
     {{< known-issue link="https://salsa.debian.org/apt-team/apt/-/merge_requests/177" >}}
 If removing and installing the package, you may observe a warning like the following:
 ```
-W: Repository is broken: o3de:amd64 (= 23.10.3) has no Size information
+W: Repository is broken: o3de:amd64 (= 24.09) has no Size information
 ```
 This is a bug in apt that has already been fixed. The warning should go away once your current Linux distribution takes the fix. The issue is a warning and does not affect installing or removing.
     {{< /known-issue >}}
@@ -76,7 +76,7 @@ When installation is complete, you can find **Project Manager** and other tools 
 
 Example of launching Project Manager from the shell:
 ```shell
-/opt/O3DE/23.10.3/bin/Linux/profile/Default/o3de
+/opt/O3DE/24.09/bin/Linux/profile/Default/o3de
 ```
 
 ## Removing O3DE installed from a deb package
@@ -132,9 +132,9 @@ The Snap package is experimental and may run into issues on some distros. These 
    ```shell
    o3de <version> installed
    ```
-   Where `<version>` is the version of the installer. Example: `23.10.3`.
+   Where `<version>` is the version of the installer. Example: `24.09`.
 
-O3DE will be installed in the default location: `/snap/o3de/current/<version>`, where `<version>` is the version of the installer. Example: `23.10.3`.
+O3DE will be installed in the default location: `/snap/o3de/current/<version>`, where `<version>` is the version of the installer. Example: `24.09`.
 
 When installation is complete, you can find **Project Manager** and other tools in `<install-directory>/bin/Linux/profile/Default`. `snapd` will add this `Default` directory to your shell environment's path.
 

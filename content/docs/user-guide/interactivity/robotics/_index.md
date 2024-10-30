@@ -17,6 +17,7 @@ These Gems provide various O3DE components such as sensors, robot control and st
 | [Grippers](grippers.md)                                             | Documentation of robotic grippers feature.                                                    |
 | [Joints Manipulation](joints-manipulation.md)                       | Joints manipulation, such as with robotic manipulator arms.                                   |
 | [Deploying simulation](deploying-simulation.md)                     | Building standalone simulation.                                                               |
+| [Georeference](georeference.md)                                     | Link your scene with the existing location.                                                   |
 | [Troubleshooting the simulation](troubleshooting.md)                | Helpful solutions to some of the most common issues with ROS 2.                               |
 
 

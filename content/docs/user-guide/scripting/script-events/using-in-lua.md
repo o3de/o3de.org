@@ -272,7 +272,7 @@ function OnActivate()
 end
 
 -- -- Optional. Disconnect when this Lua Script Deactivates
-function Spells004:OnDeactivate()
+function OnDeactivate()
 	  -- scriptEventHandler:Disconnect();
 end
 
