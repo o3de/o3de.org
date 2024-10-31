@@ -17,6 +17,11 @@ Third party gems and plugins can only be used if they are also pre-built.
 Despite these limitations it is a way to quickly get into the editor and start creating immediately, without downloading a compiler and without downloading any additional c++ development libraries such as the Qt SDK.
 
 ## Creating a Script-only Project
+
+{{< note >}}
+While Script-only mode does not require a C++ compiler, a compatible build system such as [Ninja](https://ninja-build.org/) or [GNU Make](https://www.gnu.org/software/make/) *is* required, because it's responsible for copying all the bits and pieces into the build folder.
+{{< /note >}}
+
 You can create a new Script-only project by using the ScriptOnlyProject [template](/docs/user-guide/build/templates.md), see the [Creating Projects](/docs/welcome-guide/create) document for more information.
 
 You can also convert an existing project into a Script-only project by modifying the `project.json` file in the root.  The flag that determines whether a project is script-only is the following tag at the root of a `project.json`:
