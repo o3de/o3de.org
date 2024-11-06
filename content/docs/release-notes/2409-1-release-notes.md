@@ -12,6 +12,7 @@
 * Fixes for script-only mode on Windows   
 * Fixes for two AR test crashes
 * Python boot-strapping fixes for the Linux installer
+* 
 **Robotics and Simulation**
 
 * Update ros2 template package \#769 fixes version numbers of the project templates;  
