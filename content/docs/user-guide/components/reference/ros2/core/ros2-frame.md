@@ -35,3 +35,4 @@ The **ROS 2 Frame** component depends on Transform Service, which is provided by
 **ROS 2 Frame** component handles namespace, frame id, and joint name associated with an entity, which is a part of a robot.
 Many other components such as sensors and controllers depend on it. **ROS 2 Frame** works internally with these components to
 ensure namespacing of topics, sending of proper `frame_id` in each message, and broadcasting of transforms to `/tf` and `/tf_static` topics.
+The transformation is continously updated and published to `/tf` if the entity contains a JointComponent (which is not a fixed joint) or an ArticulatedComponent. Otherwise, it will be published once on the `/tf_static` topic and not updated even if the entity moves.
