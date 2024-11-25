@@ -1,2 +1,4 @@
 github.com/o3de/api.o3de.org v0.0.0-20241125215138-b46239496bf4 h1:iF7rh0BQsGM2wrGNjPzfo2EJDS6utLVYjE1B5QiVuRw=
 github.com/o3de/api.o3de.org v0.0.0-20241125215138-b46239496bf4/go.mod h1:d6EE5TgwFjafgZ4tehTcZte3u6bP3bbaCAWsoE1h9KA=
+github.com/o3de/api.o3de.org v0.0.0-20241125220518-53400bdef9d7 h1:YuwCSun/U8A4FWVPBBLZy/GXeScxUXsMLb0EyCBEJ8M=
+github.com/o3de/api.o3de.org v0.0.0-20241125220518-53400bdef9d7/go.mod h1:d6EE5TgwFjafgZ4tehTcZte3u6bP3bbaCAWsoE1h9KA=
