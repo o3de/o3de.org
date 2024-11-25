@@ -15,7 +15,7 @@ enableRobotsTXT = true
   [[module.imports]]
     path = "github.com/shaunagordon/hugo-odie"
   [[module.imports]]
-    path = "github.com/shaunagordon/o3de.org-api"
+    path = "github.com/o3de/api.o3de.org"
 
 [markup.highlight]
   style = "paraiso-dark"
