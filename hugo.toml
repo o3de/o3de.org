@@ -1,4 +1,4 @@
-baseURL = "https://www.docs.o3de.org"
+baseURL = "https://docs.o3de.org"
 title = "Open 3D Engine"
 copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
 languageCode = 'en-us'
@@ -13,9 +13,16 @@ enableRobotsTXT = true
     extended = true
     min = "0.131.0"
   [[module.imports]]
-    path = "github.com/shaunagordon/hugo-odie"
+    path = "github.com/o3de/hugo-odie"
   [[module.imports]]
     path = "github.com/o3de/api.o3de.org"
+    [[module.imports.mounts]]
+      source = "frameworks"
+      target = "static/docs/api/frameworks"
+    [[module.imports.mounts]]
+      source = "gems"
+      target = "static/docs/api/gems"
+
 
 [markup.highlight]
   style = "paraiso-dark"
