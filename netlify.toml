@@ -3,8 +3,8 @@ publish = "public"
 command = "make production-build"
 
 [build.environment]
-HUGO_VERSION = "0.105.0"
-GO_VERSION = "1.18"
+HUGO_VERSION = "0.131.0"
+GO_VERSION = "1.22"
 
 [context.deploy-preview]
 command = "make preview-build"
