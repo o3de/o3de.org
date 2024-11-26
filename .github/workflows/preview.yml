@@ -33,12 +33,18 @@ env:
   HUGO_ENVIRONMENT: production
   NETLIFY_SITE_NAME: bucolic-gaufre-15c8dc
   DART_SASS_VERSION: 1.81.0
+  GO_VERSION: 1.23
 
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Ensure right Go version
+        uses: actions/setup-go@v5
+        with:
+          go-version: '>=${{ env.GO_VERSION }}'
+      - run: go version
       - name: Install Hugo CLI
         run: sudo snap install hugo
       - name: Checkout
