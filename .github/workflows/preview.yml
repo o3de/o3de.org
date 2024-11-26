@@ -66,6 +66,11 @@ jobs:
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-hugomod-
+      - name: Sanity check
+        run: |
+          ls -la ${{ runner.temp }}/hugo_cache \
+          && ls -la ${{ runner.temp }}/hugo_cache/modules \
+          && ls -la ${{ runner.temp }}/hugo_cache/modules/filecache/modules/pkg/mod
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
