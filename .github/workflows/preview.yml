@@ -30,7 +30,6 @@ defaults:
 
 env:
   HUGO_VERSION: 0.139.0
-  HUGO_CACHEDIR: /home/runner/work/_temp/.cache/hugo_cache
   HUGO_ENVIRONMENT: production
   NETLIFY_SITE_NAME: bucolic-gaufre-15c8dc
 
@@ -52,12 +51,11 @@ jobs:
       - name: Fetch Hugo modules
         run: |
           hugo mod get
-      - name: Sanity Check
-        run: |
-          ls -la ${{ env.HUGO_CACHEDIR }}/modules/filecache/pkg/mod
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         run: |
           hugo \
             --minify \
