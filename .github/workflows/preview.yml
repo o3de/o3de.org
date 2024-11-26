@@ -54,9 +54,9 @@ jobs:
       #   run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
       - name: Fetch Hugo modules
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         run: |
           hugo mod get
       - name: Install Node.js dependencies
