@@ -40,28 +40,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Dart Sass
-        uses: dw-labs-org/dart-sass-gha@v1
-        with:
-          version: ${{ env.DART_SASS_VERSION }}
-        # run: |
-        #   curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz \
-        #   && tar -xf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz \
-        #   && cp -r dart-sass/* /usr/local/bin \
-        #   && rm -rf dart-sass* \
-        #   && sass --embedded --version
-      # - name: Install Hugo CLI
-      #   run: |
-      #     wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-      #     && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+        run: |
+          curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz \
+          && tar -xf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz \
+          && cp -r dart-sass/* /usr/local/bin \
+          && rm -rf dart-sass* \
+          && sass --embedded --version
       # - name: Install Dart Sass
       #   run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
-      # - name: Fetch Hugo modules
-      #   env:
-      #     HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-      #   run: |
-      #     hugo mod get
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -69,6 +57,15 @@ jobs:
           extended: true
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Cache
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.HUGO_CACHEDIR }} # <- Use the same env variable just right here
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
