@@ -58,10 +58,6 @@ jobs:
             --baseURL "${{ env.NETLIFY_SITE_NAME }}.netlify.app" \
             --buildFuture \
             --disableKinds="robotsTXT"
-      # - name: Upload artifact
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: ./public
 
   # Deployment job
   deploy:
