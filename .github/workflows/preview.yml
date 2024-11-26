@@ -28,12 +28,16 @@ defaults:
   run:
     shell: bash
 
+env:
+  HUGO_VERSION: 0.139.0
+  HUGO_CACHEDIR: /tmp/hugo_cache
+  HUGO_ENVIRONMENT: production
+  NETLIFY_SITE_NAME: bucolic-gaufre-15c8dc
+
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.139.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -43,25 +47,24 @@ jobs:
         run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Fetch Hugo modules
         run: |
           hugo mod get
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
-        env:
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}" \
+            --baseURL "${{ env.NETLIFY_SITE_ID }}.netlify.app" \
             --buildFuture \
             --disableKinds="robotsTXT"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./public
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     path: ./public
 
   # Deployment job
   deploy:
