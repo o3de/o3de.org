@@ -30,7 +30,7 @@ defaults:
 
 env:
   HUGO_VERSION: 0.139.0
-  HUGO_CACHEDIR: /tmp/hugo_cache
+  HUGO_CACHEDIR: ~/.cache/hugo_cache
   HUGO_ENVIRONMENT: production
   NETLIFY_SITE_NAME: bucolic-gaufre-15c8dc
 
