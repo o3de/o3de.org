@@ -1,6 +1,6 @@
 module github.com/o3de/o3de.org
 
-go 1.22.5
+go 1.23
 
 replace github.com/o3de/hugo-odie => ../hugo-odie
 
