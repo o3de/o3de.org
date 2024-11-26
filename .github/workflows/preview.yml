@@ -39,38 +39,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Dart Sass
-        run: |
-          curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz \
-          && tar -xf dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz \
-          && cp -r dart-sass/* /usr/local/bin \
-          && rm -rf dart-sass* \
-          && sass --embedded --version
-      # - name: Install Dart Sass
-      #   run: sudo snap install dart-sass
+      - name: Install Hugo CLI
+        run: sudo snap install hugo
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true
+          submodules: recursive
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Cache
-        env:
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.HUGO_CACHEDIR }} # <- Use the same env variable just right here
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-      - name: Sanity check
-        run: |
-          ls -la ${{ runner.temp }}/hugo_cache \
-          && ls -la ${{ runner.temp }}/hugo_cache/modules \
-          && ls -la ${{ runner.temp }}/hugo_cache/modules/filecache/modules/pkg/mod
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
