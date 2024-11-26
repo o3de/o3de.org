@@ -52,6 +52,9 @@ jobs:
       - name: Fetch Hugo modules
         run: |
           hugo mod get
+      - name: Sanity Check
+        run: |
+          ls -la ${{ env.HUGO_CACHEDIR }}/modules/filecache/pkg/mod/github.com/o3de/hugo-odie@v0.0.0-20241126002926-cac27abcb022
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
