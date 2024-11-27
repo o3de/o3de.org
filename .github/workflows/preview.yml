@@ -69,34 +69,4 @@ jobs:
         with:
           # Publish directory
           publish-dir: './public'
-          # Functions directory
-          functions-dir: # optional
-          # Custom deploy message for Netlify
-          deploy-message: # optional
-          # GitHub token
-          github-token: # optional
-          # Production branch
-          production-branch: # optional
-          # Indicate whether to deploy production build
-          production-deploy: # optional
-          # Enable pull request comment
-          enable-pull-request-comment: # optional
-          # Enable commit comment
-          enable-commit-comment: # optional
-          # Enable GitHub commit status
-          enable-commit-status: # optional
-          # Overwrites pull request comment
-          overwrites-pull-request-comment: # optional
-          # Path to netlify.toml
-          netlify-config-path: './netlify.toml'
-          # Specifies the prefix for the deployment URL
-          alias: # optional
-          # Whether or not to deploy to GitHub
-          enable-github-deployment: # optional
-          # Environment name of GitHub Deployments
-          github-deployment-environment: 'Netlify'
-          # Description of the GitHub Deployment
-          github-deployment-description: # optional
-          # Fails if no credentials provided
-          fails-without-credentials: # optional
 
