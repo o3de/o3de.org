@@ -58,6 +58,10 @@ jobs:
             --baseURL "${{ env.NETLIFY_SITE_NAME }}.netlify.app" \
             --buildFuture \
             --disableKinds="robotsTXT"
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: './public'
 
   # Deployment job
   deploy:
@@ -65,6 +69,10 @@ jobs:
     environment: Netlify
     needs: build
     steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: './public'
       - name: Netlify Actions
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
