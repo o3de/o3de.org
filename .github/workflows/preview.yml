@@ -55,7 +55,6 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ env.NETLIFY_SITE_NAME }}.netlify.app" \
             --buildFuture \
             --disableKinds="robotsTXT"
       - name: Upload Artifacts
