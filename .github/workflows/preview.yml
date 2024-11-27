@@ -72,14 +72,14 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v4
         with:
-          path: './artifact'
+          path: './'
       - name: Netlify Actions
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         uses: nwtgck/actions-netlify@v3.0
         with:
-          publish-dir: './public'
+          publish-dir: './artifact'
           fails-without-credentials: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           production-branch: next
