@@ -57,6 +57,8 @@ jobs:
             --minify \
             --buildFuture \
             --disableKinds="robotsTXT"
+      - name: Check
+        run: ls -R
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
