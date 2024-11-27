@@ -65,11 +65,11 @@ jobs:
     needs: build
     steps:
       - name: Netlify Actions
-        env:
+        uses: jsmrcaga/action-netlify-deploy@v2.0.0
+        with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        uses: nwtgck/actions-netlify@v3.0
-        with:
-          # Publish directory
-          publish-dir: './public'
+          build_directory: './public'
+          install_command: "echo Skipping installing the dependencies"
+          build_command: "echo Skipping building the web files"
 
