@@ -53,18 +53,18 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         run: |
-          hugo \
+          hugo mod get \
+          && hugo build \
             --minify \
             --buildFuture \
-            --disableKinds="robotsTXT"
+            --disableKinds="robotsTXT" \
+            --destination="./build"
       - name: Check
         run: ls -R
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with:
-          path: |
-            './public'
-            './resources'
+          path: './build'
 
   # Deployment job
   deploy:
