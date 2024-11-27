@@ -74,6 +74,8 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: './'
+      - name: Check
+        run: ls -R
       - name: Netlify Actions
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
