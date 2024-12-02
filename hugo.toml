@@ -22,6 +22,9 @@ enableRobotsTXT = true
     [[module.imports.mounts]]
       source = "gems"
       target = "static/docs/api/gems"
+    [[module.imports.mounts]]
+      source = "content"
+      target = "content/docs/api"
 
 
 [markup.highlight]
