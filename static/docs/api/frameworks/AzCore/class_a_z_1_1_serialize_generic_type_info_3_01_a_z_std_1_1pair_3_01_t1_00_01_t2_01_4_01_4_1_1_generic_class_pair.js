@@ -1,7 +1,0 @@
-var class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4_1_1_generic_class_pair =
-[
-    [ "GetClassData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4_1_1_generic_class_pair.html#af7e40225c0df9e2705db012bf5330230", null ],
-    [ "GetGenericTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4_1_1_generic_class_pair.html#a258f60331fcc64ebecb8af6afa0c090b", null ],
-    [ "GetSpecializedTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4_1_1_generic_class_pair.html#abce35d4fb24d53269ad5d92717b6b6f5", null ],
-    [ "Reflect", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4_1_1_generic_class_pair.html#abe80597878dee582c365015935d9df9c", null ]
-];

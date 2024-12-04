@@ -1,6 +1,0 @@
-{{ $repoUrl := .Site.Params.repositoryUrl }}
-{{ $filePath := .File.Path }}
-{{ $editUrl := print $repoUrl "/blob/main/content/" $filePath }}
-<a href="{{ $editUrl }}" class="btn btn-light border" target="_blank">
-  <span class="fas fa-pen"></span> &nbsp; Edit on GitHub
-</a>

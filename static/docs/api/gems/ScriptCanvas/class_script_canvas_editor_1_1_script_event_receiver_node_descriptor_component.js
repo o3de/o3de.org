@@ -1,4 +1,0 @@
-var class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component =
-[
-    [ "ScriptEventReceiverHandlerNodeDescriptorSaveData", "class_script_canvas_editor_1_1_script_event_receiver_node_descriptor_component_1_1_script_event_0dc736d3a1289582cf897fdeb56156cc.html", null ]
-];

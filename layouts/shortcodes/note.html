@@ -1,8 +1,0 @@
-{{/* This shortcode creates a note callout. Any provided text will be enclosed in the box. */}}
-
-<blockquote class="warning callout card border-info">
-  <div class="row no-gutters">
-    <div class="col-md-2 bg-info text-white p-2"><strong>Note: </strong></div> 
-    <div class="col p-2">  {{ trim .Inner " \n" | markdownify }}</div>
-    </div>
-</blockquote>

@@ -1,4 +1,0 @@
-var struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4 =
-[
-    [ "GenericClassPair", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4_1_1_generic_class_pair.html", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1pair_3_01_t1_00_01_t2_01_4_01_4_1_1_generic_class_pair" ]
-];

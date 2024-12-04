@@ -1,8 +1,0 @@
-var class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01_t_01_4_01_4_1_1_generic_class_shared_ptr =
-[
-    [ "CanStoreType", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01_t_01_4_01_4_1_1_generic_class_shared_ptr.html#afbfaa1f10d44d9adbcd33c6012ca1ecc", null ],
-    [ "GetClassData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01_t_01_4_01_4_1_1_generic_class_shared_ptr.html#a49f6151a6acc6d2601fea299fdbd0d7d", null ],
-    [ "GetGenericTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01_t_01_4_01_4_1_1_generic_class_shared_ptr.html#a26cf68ae7656d52ae39ac94360280e51", null ],
-    [ "GetSpecializedTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01_t_01_4_01_4_1_1_generic_class_shared_ptr.html#a8f43f62b28dc47f6074fd064a8c1717c", null ],
-    [ "Reflect", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1shared__ptr_3_01_t_01_4_01_4_1_1_generic_class_shared_ptr.html#af4d7ae0eac275dd245a3847799f5d68c", null ]
-];
