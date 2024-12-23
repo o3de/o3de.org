@@ -6,6 +6,10 @@ toc: true
 weight: 100
 ---
 
+{{< important >}}
+O3DE no longer includes AWS gems by default. Visit https://github.com/aws/o3de-repo for instructions on how to install AWS gems.
+{{< /important >}}
+
 ## Prerequisites
 
 The AWS Metrics Gem requires the following to be installed and configured:

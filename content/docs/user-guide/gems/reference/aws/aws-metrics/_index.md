@@ -5,6 +5,10 @@ description: Introduction to the Open 3D Engine (O3DE) AWS Metrics Gem.
 toc: true
 ---
 
+{{< important >}}
+O3DE no longer includes AWS gems by default. Visit https://github.com/aws/o3de-repo for instructions on how to install AWS gems.
+{{< /important >}}
+
 The **AWS Metrics** Gem provides an extensible, out-of-the-box instrumentation and analytics solution for O3DE developers. It builds an analytics pipeline using the AWS Core Gem, and connects you to AWS services that support common metrics operations on your analytics data, including:
 
 * Ingestion

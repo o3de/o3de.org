@@ -6,6 +6,10 @@ toc: true
 weight: 200
 ---
 
+{{< important >}}
+O3DE no longer includes AWS gems by default. Visit https://github.com/aws/o3de-repo for instructions on how to install AWS gems.
+{{< /important >}}
+
 This topic teaches you how to set up the **AWS GameLift** Gem in **Open 3D Engine (O3DE)**, so you can use Amazon GameLift in your project.
 
 ## 1. Understand GameLift

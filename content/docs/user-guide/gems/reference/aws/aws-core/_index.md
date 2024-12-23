@@ -6,6 +6,10 @@ weight: 100
 toc: true
 ---
 
+{{< important >}}
+O3DE no longer includes AWS gems by default. Visit https://github.com/aws/o3de-repo for instructions on how to install AWS gems.
+{{< /important >}}
+
 The **AWS Core** Gem lets you use AWS services from within O3DE. Other AWS Gems typically have a dependency on this Gem since it provides the common mechanisms to do the following:
 * Set up the required AWS SDK for C++.
 * Configure platform clients.

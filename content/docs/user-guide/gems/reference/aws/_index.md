@@ -4,6 +4,10 @@ title: AWS, AWS Gems, and O3DE
 description: Use AWS Gems to access AWS cloud-connected services in Open 3D Engine (O3DE).
 ---
 
+{{< important >}}
+O3DE no longer includes AWS gems by default. Visit https://github.com/aws/o3de-repo for instructions on how to install AWS gems.
+{{< /important >}}
+
 Amazon Web Services (AWS) is a cloud platform that offers an extensive and powerful collection of services. You can use these cloud services to upload or download files, access databases, execute code in the cloud, and perform many other operations. Using a cloud service saves you the trouble of maintaining the infrastructure that it relies on.
 
 For an overview of AWS Gems in **Open 3D Engine (O3DE)**, check out the video below. Then, read on to learn more about using AWS in your O3DE projects!
