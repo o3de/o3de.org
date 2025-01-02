@@ -5,9 +5,7 @@ toc: true
 weight: 100
 ---
 
-{{< important >}}
-O3DE no longer includes AWS gems by default. Visit https://github.com/aws/o3de-repo for instructions on how to install AWS gems.
-{{< /important >}}
+{{< o3de-aws-gems-moved >}}
 
 To get started using AWS Gems with AWS services in your O3DE project, complete the following steps.
 
