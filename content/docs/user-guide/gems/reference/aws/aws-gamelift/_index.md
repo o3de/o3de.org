@@ -5,6 +5,8 @@ description: The AWS GameLift Gem provides a framework to extend O3DE networking
 toc: true
 ---
 
+{{< o3de-aws-gems-moved >}}
+
 ## Feature overview
 The **AWS GameLift** Gem provides the following features:
 
