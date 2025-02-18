@@ -17,3 +17,4 @@ Feature Showcase projects serves as a live documentation for engine features and
 | Image | Link | Description | Language | Last Updated |
 | - | - | - | - | - |
 | <img src="/images/learning-guide/samples/feature-showcase/customizing-graphics-pipeline.png" width="300px" /> | [Customizing Graphics Pipeline](https://github.com/galibzon/siggraph2024) | Presentation for Siggraph 2024 about customizing the graphics pipeline (custom passes, feature processor) | C++ | O3DE **24.09.0**. October 09, 2024 |
+| <img src="/images/learning-guide/samples/feature-showcase/spritesheet.png" width="300px" /> | [ProjectK](https://github.com/PHandradee/ProjectK-O3DE) | Simple setup to show and animate a 2D spritesheet via a custom "FlipBook" component | C++ | O3DE **24.09.02**. February 18, 2025 |
