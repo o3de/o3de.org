@@ -10,6 +10,8 @@ The **Open 3D Engine (O3DE)** is an updated version of the [Lumberyard engine](h
 
 The following tutorials will use the Lumberyard [Starter Game](https://www.youtube.com/watch?v=HakIPkpJta0) project as an example. It is a third-person shooter set in a futuristic settings. It features a large-scale terrain with vegetation, scripted events, artificial intelligence and many user-interfaces.
 
+The **completed conversion** to O3DE is [accessible here](https://github.com/o3de/startergame-assets)
+
 | Tutorial | Description |
 | - | - |
 | [Get the Starter Game project](get-starter-game-project) | Learn how to get Lumberyard and run the StarterGame project |
