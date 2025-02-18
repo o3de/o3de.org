@@ -16,6 +16,7 @@ This guide contains video tutorials, written step-by-step tutorials, and sample 
 | [Video Tutorials](#video-tutorials) | These video tutorials cover all the topics you need to get started, including an overview of O3DE, instructions on installing O3DE, building O3DE from source, and creating projects. It also introduces important features and key systems such as the Editor, the modular Gem system, networking, the visual scripting environment, and O3DE's integrated renderer, Atom. |
 | [Tutorials](tutorials) | These written tutorials are grouped by concept and focus on specific features, tools, and processes. |
 | [Samples](samples) | These topics cover sample projects and sample Gems available for O3DE. |
+| [Made With O3DE](made-with-o3de) | Showcase commercial projects using O3DE. |
 
 ## Video Tutorials
 
