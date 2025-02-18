@@ -52,7 +52,7 @@ If you have multiple ROS 2 versions installed, make sure you [source](https://do
 * gazebo_msgs: `ros-${ROS_DISTRO}-gazebo-msgs`
     * gazebo_msgs are used for robot spawning (no dependency on Gazebo).
 * Ackermann messages: `ros-${ROS_DISTRO}-ackermann-msgs`
-* Control toolbox `ros-${ROS_DISTRO}-control-toolbox`
+* Control messages `ros-${ROS_DISTRO}-control-msgs`
 * XACRO `ros-${ROS_DISTRO}-xacro`
 * Vision msgs `ros-${ROS_DISTRO}-vision-msgs`
 
@@ -61,7 +61,7 @@ If a `desktop` installation of ROS 2 distro was selected, everything else should
 Use this helpful command to install:
 
 ```
-sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-toolbox ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro ros-${ROS_DISTRO}-vision-msgs
+sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-msgs ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro ros-${ROS_DISTRO}-vision-msgs
 ```
 
 ### Clone the Gem repository
