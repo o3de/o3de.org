@@ -124,7 +124,7 @@ Prints the contents of the seed list after performing operations.
 
 The platforms used for this command. Defaults to all supported platforms for the current project. Supported platforms can be changed by modifying `AssetProcessorPlatformConfig.ini`.
 
-Platform names can be found in the `Registry/AssetProcessorPlatformConfig.setreg` file, or as folder names found under `dev/Cache/ProjectName`.
+Platform names can be found in the `AssetProcessorPlatformConfig.ini` file, or as folder names found under `dev/Cache/ProjectName`.
 
 * *Type:* Multi-value argument
 * *Required:* No
