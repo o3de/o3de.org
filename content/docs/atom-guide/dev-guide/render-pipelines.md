@@ -19,31 +19,31 @@ The render pipeline consists of a root pass that drives a collection of passes t
 
 This table lists the features that are supported by the Main Rendering Pipeline and the Low-end Rendering Pipeline by default.
 
-| Feature | Description | Main Pipeline | Low-end Pipeline |
-| - | - | - | - |
-| Skinning | Compute-shader-based mesh skinning for bone weighted animations and morph targets. | Yes | Yes |
-| Directional shadows | Cascaded shadowmap to simulate sun light. | Yes | Yes |
-| Punctual shadows | Shadows for punctual light types: point and spot lights. | Yes | Yes |
-| Area lights | Spherical, disk, capsule, quad, and polygonal lights. | Yes | Yes |
-| Light culling | Tile-based or cluster-based light culling for efficient light iteration in the Forward+ pass. | Yes | Yes |
-| RTX global illumination | Real-time global illumination that uses NVIDIA RTXGI (RTX Global Illumination). | Yes | No |
-| Reflection probe | Generates and uses reflection probes for specular image-based lighting (IBL). | Yes | Yes |
-| Physically based sky | Basic sky rendering that uses physically-based atmospheric modeling. | Yes | No |
-| HDR skybox | Uses an HDR image as a skybox. | Yes | Yes |
-| Screen space ambient occlusion (SSAO) | Applies SSAO to the scene to create contact shadows where objects meet.  | Yes | No |
-| Subsurface scattering | Calculates subsurface scattering for materials, such as skin, by using a screen space technique. | Yes | No |
-| Deferred fog | Applies a height-based fog to the scene. | Yes | No |
-| Screen space reflections (SSR) | Implements SSR by using renderered lighting buffer to approximate real-time reflections. | Yes | No |
-| Depth of field | Applies a bokeh-shaped depth of field effect to the scene that's based on the scene's depth and camera focus paramters. | Yes | No |
-| Bloom | Applies a bloom effect to the rendered image, making bright pixels bleed out into neighboring pixels. | Yes | No |
-| Subpixel morphological anti-aliasing (SMAA) | Applies SMAA as an anti-aliasing technique. | Yes | No |
-| Temporal anti-aliasing (TAA) | TAA uses motion vectors and temporal super-sampling to reduce aliasing in the final image. | Yes | No |
-| Light adaptation | Adjusts brightness of the final image based on the scene's average luminance, so the image appears neither too dark nor too bright. | Yes | Yes |
-| Look modification and color grading | Allows artists to adjust the final look of the image by using look up tables (LUTs). | Yes | Yes |
-| Display mapping | Adjusts the color values of the final image based on the color range that the screen expects. | Yes | Yes |
-| User interface (UI) | Renders 2D UI components. | Yes | Yes |
-| Auxilary geometry (AuxGeom) | Renders various geometry and text for in-editor tools and debugging, such as gizmos, grids, debug lines, and shapes. | Yes | Yes |
-
+| Feature                                     | Description                                                                                                                         | Main Pipeline | Low-end Pipeline |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------- | ---------------- |
+| Skinning                                    | Compute-shader-based mesh skinning for bone weighted animations and morph targets.                                                  | Yes           | Yes              |
+| Directional shadows                         | Cascaded shadowmap to simulate sun light.                                                                                           | Yes           | Yes              |
+| Punctual shadows                            | Shadows for punctual light types: point and spot lights.                                                                            | Yes           | Yes              |
+| Area lights                                 | Spherical, disk, capsule, quad, and polygonal lights.                                                                               | Yes           | Yes              |
+| Light culling                               | Tile-based or cluster-based light culling for efficient light iteration in the Forward+ pass.                                       | Yes           | Yes              |
+| RTX global illumination                     | Real-time global illumination that uses NVIDIA RTXGI (RTX Global Illumination).                                                     | Yes           | No               |
+| Reflection probe                            | Generates and uses reflection probes for specular image-based lighting (IBL).                                                       | Yes           | Yes              |
+| Physically based sky                        | Basic sky rendering that uses physically-based atmospheric modeling.                                                                | Yes           | No               |
+| HDR skybox                                  | Uses an HDR image as a skybox.                                                                                                      | Yes           | Yes              |
+| Screen space ambient occlusion (SSAO)       | Applies SSAO to the scene to create contact shadows where objects meet.                                                             | Yes           | No               |
+| Subsurface scattering                       | Calculates subsurface scattering for materials, such as skin, by using a screen space technique.                                    | Yes           | No               |
+| Deferred fog                                | Applies a height-based fog to the scene.                                                                                            | Yes           | No               |
+| Screen space reflections (SSR)              | Implements SSR by using rendered lighting buffer to approximate real-time reflections.                                              | Yes           | No               |
+| Depth of field                              | Applies a bokeh-shaped depth of field effect to the scene that's based on the scene's depth and camera focus parameters.            | Yes           | No               |
+| Bloom                                       | Applies a bloom effect to the rendered image, making bright pixels bleed out into neighboring pixels.                               | Yes           | No               |
+| Subpixel morphological anti-aliasing (SMAA) | Applies SMAA as an anti-aliasing technique.                                                                                         | Yes           | No               |
+| Temporal anti-aliasing (TAA)                | TAA uses motion vectors and temporal super-sampling to reduce aliasing in the final image.                                          | Yes           | No               |
+| Light adaptation                            | Adjusts brightness of the final image based on the scene's average luminance, so the image appears neither too dark nor too bright. | Yes           | Yes              |
+| Look modification and color grading         | Allows artists to adjust the final look of the image by using look up tables (LUTs).                                                | Yes           | Yes              |
+| Display mapping                             | Adjusts the color values of the final image based on the color range that the screen expects.                                       | Yes           | Yes              |
+| User interface (UI)                         | Renders 2D UI components.                                                                                                           | Yes           | Yes              |
+| Auxilary geometry (AuxGeom)                 | Renders various geometry and text for in-editor tools and debugging, such as gizmos, grids, debug lines, and shapes.                | Yes           | Yes              |
+| Terrain system                              | Enables terrain authoring, simulation, and visualization for levels of arbitrary size                                               | Yes           | No               |
 
 
 ## File structure
