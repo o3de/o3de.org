@@ -29,7 +29,7 @@ The wheel controller has the following parameters shown below.
 
 ### Ackermann Drive Model
 
-The implementation of **AckermannDriveModel** uses [PID controllers](https://en.wikipedia.org/wiki/PID_controller) from [control_toolbox](https://github.com/ros-controls/control_toolbox) package. The model computes velocities or forces in the joints of the vehicle and applies it accordingly to commanded velocity.
+The implementation of **AckermannDriveModel** uses [PID controllers](https://en.wikipedia.org/wiki/PID_controller). The model computes velocities or forces in the joints of the vehicle and applies it accordingly to commanded velocity.
 
 ![AckermannModel](/images/user-guide/gems/ros2/ackermanModel.png)
 
