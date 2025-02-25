@@ -1,4 +1,0 @@
-var class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_world_editor_only_entity_handler =
-[
-    [ "HandleEditorOnlyEntities", "class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_world_editor_only_entity_handler.html#a37bacfe5514e7f44dcba91ac2799e4fe", null ]
-];

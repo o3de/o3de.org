@@ -1,0 +1,92 @@
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site
+
+on:
+  pull_request:
+  
+  push:
+    branches:
+      - 'next'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN
+permissions:
+  contents: read
+  pages: read
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+env:
+  HUGO_VERSION: 0.139.0
+  HUGO_ENVIRONMENT: production
+  NETLIFY_SITE_NAME: bucolic-gaufre-15c8dc
+  DART_SASS_VERSION: 1.81.0
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+        run: |
+          hugo mod get \
+          && hugo build \
+            --minify \
+            --buildFuture \
+            --disableKinds="robotsTXT" \
+            --destination="./build"
+      - name: Check
+        run: ls -R
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: './build'
+
+  # Deployment job
+  deploy:
+    runs-on: ubuntu-latest
+    environment: Netlify
+    needs: build
+    steps:
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: './'
+      - name: Check
+        run: ls -R
+      - name: Netlify Actions
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: './artifact'
+          fails-without-credentials: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          production-branch: next
+          github-deployment-environment: Netlify
+

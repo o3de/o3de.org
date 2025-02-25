@@ -1,4 +1,0 @@
-var struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1bitset_3_01_num_bits_01_4_01_4 =
-[
-    [ "GenericClassBitSet", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1bitset_3_01_num_bits_01_4_01_4_1_1_generic_class_bit_set.html", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1bitset_3_01_num_bits_01_4_01_4_1_1_generic_class_bit_set" ]
-];

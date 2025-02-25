@@ -1,4 +1,0 @@
-var struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_1_1_outcome_3_01t___success_00_01t___failure_01_4_01_4 =
-[
-    [ "GenericClassOutcome", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_1_1_outcome_3_01t___success_00_01t___failure_79396d28988750a55e391484b42cee9d.html", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_1_1_outcome_3_01t___success_00_01t___failure_79396d28988750a55e391484b42cee9d" ]
-];

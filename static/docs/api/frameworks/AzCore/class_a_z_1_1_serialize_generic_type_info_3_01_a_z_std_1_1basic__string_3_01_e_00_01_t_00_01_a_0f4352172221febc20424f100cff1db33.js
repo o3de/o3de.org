@@ -1,7 +1,0 @@
-var class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33 =
-[
-    [ "GetClassData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#af978ae7f2f04b5c38f779c88f441e44d", null ],
-    [ "GetGenericTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#a13c8309ac413c650419a0aaea89647a2", null ],
-    [ "GetSpecializedTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#aa915ece3652c56ef312ea53902020839", null ],
-    [ "Reflect", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1basic__string_3_01_e_00_01_t_00_01_a_0f4352172221febc20424f100cff1db33.html#af6f9360cf256f8a34b26feb2ebf6f7dd", null ]
-];

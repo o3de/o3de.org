@@ -6,7 +6,7 @@ resources/
 node_modules/
 
 # files
-package-lock.json
+# package-lock.json
 yarn.lock
 
 # IDE / editor files
