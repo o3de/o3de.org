@@ -11,7 +11,7 @@ command = """\
 [build.environment]
 HUGO_VERSION = "0.143.0"
 GO_VERSION = "1.24"
-DART_SASS_VERSION = "1.84.0"
+DART_SASS_VERSION = "1.85.1"
 
 [context.deploy-preview]
 command = """\
