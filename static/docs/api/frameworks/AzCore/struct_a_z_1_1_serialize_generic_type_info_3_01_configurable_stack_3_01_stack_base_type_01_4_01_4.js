@@ -1,4 +1,0 @@
-var struct_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4 =
-[
-    [ "GenericConfigurableStackInfo", "class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315.html", "class_a_z_1_1_serialize_generic_type_info_3_01_configurable_stack_3_01_stack_base_type_01_4_01_4f130e718390b1d14ec8663040bfab315" ]
-];
