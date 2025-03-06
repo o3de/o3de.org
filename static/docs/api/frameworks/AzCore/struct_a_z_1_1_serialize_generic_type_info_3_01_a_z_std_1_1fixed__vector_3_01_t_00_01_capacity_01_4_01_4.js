@@ -1,4 +1,0 @@
-var struct_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1fixed__vector_3_01_t_00_01_capacity_01_4_01_4 =
-[
-    [ "GenericClassInfoFixedVector", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1fixed__vector_3_01_t_00_01_capacity_0134c7c7c5b3ec0c8ba14558624759fef1.html", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1fixed__vector_3_01_t_00_01_capacity_0134c7c7c5b3ec0c8ba14558624759fef1" ]
-];

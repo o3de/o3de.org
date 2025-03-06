@@ -1,4 +1,0 @@
-var class_a_z_1_1_render_1_1_editor_material_component_inspector_1_1_material_model_uv_name_map_inspector =
-[
-    [ "Reset", "class_a_z_1_1_render_1_1_editor_material_component_inspector_1_1_material_model_uv_name_map_inspector.html#aade1559f3f494fe2f72fea3a5996a0e8", null ]
-];

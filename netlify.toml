@@ -1,13 +1,13 @@
 [build]
 publish = "public"
-command = "make production-build"
+# command = "make production-build"
 
 [build.environment]
-HUGO_VERSION = "0.105.0"
-GO_VERSION = "1.18"
+HUGO_VERSION = "0.139.0"
+GO_VERSION = "1.23"
 
-[context.deploy-preview]
-command = "make preview-build"
+# [context.deploy-preview]
+# command = "make preview-build"
 
-[context.branch-deploy]
-command = "make preview-build"
+# [context.branch-deploy]
+# command = "make preview-build"
