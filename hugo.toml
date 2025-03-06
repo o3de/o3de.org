@@ -7,7 +7,15 @@ languageCode = "en-us"
 [module]
   [module.hugoVersion]
     extended = true
-    min = '0.93.0'
+    min = '0.143.0'
+  [[module.imports]]
+    path = "github.com/o3de/api.o3de.org"
+    [[module.imports.mounts]]
+      source = "frameworks"
+      target = "static/docs/api/frameworks"
+    [[module.imports.mounts]]
+      source = "gems"
+      target = "static/docs/api/gems"
 
 enableGitInfo = true
 enableRobotsTXT = true 
