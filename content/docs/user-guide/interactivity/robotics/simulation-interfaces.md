@@ -14,7 +14,7 @@ The `SimulationInterfaces` Gem has been created to integrate O3DE with the ROS 2
 
 The `SimulationInterfaces` Gem requires:
 - [ROS2 Gem](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2) version 3.3.0 or newer
-- [simulation_interfaces](https://github.com/ros-simulation/simulation_interfaces) package built and sourced
+- [simulation_interfaces](https://github.com/ros-simulation/simulation_interfaces) package installed.
 
 ## Adding SimulationInterfaces Gem to the project
 
@@ -33,6 +33,42 @@ ros2 action list
 ```
 
 The details of the listed interfaces are provided in a later section.
+
+## Motivation 
+
+The `SimulationInterfaces` is ROS 2 API that allows to affect simulated entities in various ways.
+It is can be thought as ROS 2 API to talk with :
+- [Simulated Bodies](/docs/user-guide/interactivity/physics/nvidia-physx/simulated-bodies/),
+- [Spawning and despawning](/docs/learning-guide/tutorials/entities-and-prefabs/spawn-a-prefab/),
+- pausing simulation,
+- resetting simulation.
+
+With `SimulationInterfaces` you can query and modify state of simulated bodies. 
+Those are entities with components such as [Rigid Body Component](docs/user-guide/components/reference/physx/rigid-body/) or [Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) and others.
+
+{{< note >}}
+Entities that has no physics, will not be available by `SimulationInterfaces`
+{{< /note >}}
+
+There is recommendation to build your simulation assets in tree like structure where the trunk is a [Rigid Body Component](docs/user-guide/components/reference/physx/rigid-body/) or [Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) and children are other components (like meshes, lights and others).
+
+The correctly designed prefab should has following structure:\
+![prefab](/images/user-guide/interactivity/robotics/correct_structure.png)
+
+The `Rack` entity has [Static Rigid Body](/docs/user-guide/components/reference/physx/static-rigid-body/) and [PhysX Mesh Collider Component](/docs/user-guide/components/reference/physx/mesh-collider/) and is available in `SimulationInterfaces`.
+Entities `Boxes`, `Lv0`, `Lv1`, `Lv2` are only decorative. 
+However, above-mentioned will follow `Rack`, due to parent-child relation and [Transform Component](/docs/user-guide/components/reference/transform/).
+
+The `SimulationInterfaces` allows to perform bound search. 
+You can specify what is you region of interests and ask for Simulated Entities inside.
+This feature uses [Overlap Scene Query](/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries/#overlap). 
+You need to have collider shapes added to entities to get results from [Overlap Scene Query](/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries/#overlap).
+
+{{< note >}}
+The number of results in scene queries is pretty limited by default (32). 
+We highly recommend to increase this limit to Overlap Query Buffer Size in [PhysX Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/).
+{{< /note >}}
+
 
 ## Supported Features overview
 
