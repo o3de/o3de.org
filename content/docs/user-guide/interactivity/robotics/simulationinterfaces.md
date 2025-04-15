@@ -164,7 +164,7 @@ The transition from *PLAYING* to *PAUSED* asks the default physics scene to be d
 
 The transition from *PLAYING*, *PAUSED*, or *STOPPED* to *QUITTING* closes simulator calling `ConsoleRequestBus` with `quit` command.
 
-The transition form *QUITTING* to any other state is forbidden.
+Transitions from *STOPPED* to *PAUSED* and from *QUITTING* to any other state are forbidden.
 
 ### GetSimulationState service
 
