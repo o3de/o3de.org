@@ -2,7 +2,7 @@
 linkTitle: Importing robot
 title: Importing robots
 description: Importing robots from description file with ROS 2 Gem in Open 3D Engine (O3DE).
-weight: 450
+weight: 400
 toc: true
 ---
 

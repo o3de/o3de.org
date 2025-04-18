@@ -2,7 +2,7 @@
 linkTitle: SDFormat sensors
 title: SDFormat sensors
 description: Detailed description of support of SDFormat sensors in Robot Importer.
-weight: 100
+weight: 480
 ---
 
 ## Introduction
