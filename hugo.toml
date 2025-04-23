@@ -5,6 +5,7 @@ copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under 
 languageCode = "en-us"
 
 [module]
+  # replacements = "github.com/o3de/api.o3de.org -> ../../api.o3de.org"
   [module.hugoVersion]
     extended = true
     min = '0.143.0'
@@ -16,6 +17,12 @@ languageCode = "en-us"
     [[module.imports.mounts]]
       source = "gems"
       target = "static/docs/api/gems"
+    [[module.imports.mounts]]
+      source = "content/frameworks"
+      target = "content/frameworks"
+    [[module.imports.mounts]]
+      source = "content/gems"
+      target = "content/gems"
 
 enableGitInfo = true
 enableRobotsTXT = true 
