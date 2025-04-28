@@ -1,8 +1,0 @@
-var class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9 =
-[
-    [ "CanStoreType", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#aa1eed4a95435769204179dde2346daeb", null ],
-    [ "GetClassData", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#a7e30cb473b3401dade0cdfdff5af07a0", null ],
-    [ "GetGenericTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#aaec04d5c4970a7d046ee2aac1e21ecc5", null ],
-    [ "GetSpecializedTypeId", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#ac97e19ffa06869b6b7278333fece7b7c", null ],
-    [ "Reflect", "class_a_z_1_1_serialize_generic_type_info_3_01_a_z_std_1_1unique__ptr_3_01_t_00_01_deleter_01_4_3cad05a4cf3ac1a155f958650f0541b9.html#aa5a3580b7d3c6520b57e0a2788a3e50e", null ]
-];
