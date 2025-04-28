@@ -12,7 +12,9 @@ If you are working on the documentation or interested in seeing a specific branc
 
 To build the O3DE website locally, you need the items below.
 - `o3de.org` repository
-- **Hugo (extended version 0.93 or later)**, a static site generator that builds the website.
+- **Hugo (extended version 0.145 or later)**, a static site generator that builds the website.
+- **Go (version 1.23.0 or later)**, the runtime for Hugo and its associated features. This may install with Hugo, depending on your install method. Run `go version` after installing Hugo to verify.
+- **dart-sass**, the current Sass processor, which doesn't ship with Hugo.
 - **npm** (or another package manager) to install the **bootstrap** package, which Hugo needs for styling.
 
 ### Download the repository
@@ -25,7 +27,7 @@ You can download this repository or clone it onto your local machine. Cloning th
 ### Setup Hugo, npm, and dependencies
 1. To install **Hugo (extended version)**, follow the instructions for your machine in the [Hugo documentation](https://gohugo.io/getting-started/installing). 
    
-    *Note: You must install the **extended version** of Hugo, version 0.93 or later. If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.*
+    *Note: You must install the **extended version** of Hugo, version 0.139 or later. If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.*
 
 2. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **Node.js**.
 
@@ -33,6 +35,7 @@ You can download this repository or clone it onto your local machine. Cloning th
 
     ```shell
     cd <path-to-repo>/o3de.org
+    hugo mod get
     npm install
     ```
 

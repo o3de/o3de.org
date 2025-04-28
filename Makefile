@@ -7,6 +7,7 @@ serve: yarn
 		--disableFastRender
 
 production-build:
+	hugo mod get
 	hugo \
 		--minify
 
