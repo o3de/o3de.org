@@ -18,7 +18,7 @@
 {{ $fontsUrl := printf "https://fonts.googleapis.com/css?family=%s" (delimit $fontSlice "|") }}
 @import url("{{ $fontsUrl }}")
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400500700800900&display=swap')
 
 {{ end }}
 
@@ -66,7 +66,7 @@
 // Variables 
 
 $font-family-headers: "Open Sans" 
-$font-family-Poppins: "Poppins", sans-serif;
+$font-family-Poppins: "Poppins", sans-serif
 $o3de-black: #000
 $o3de-white: #fff
 $o3de-lightgray: #ddd
@@ -266,15 +266,15 @@ code
 
 .card
   border: 2px solid  $o3de-lightgray
-  box-shadow: 0 2px 4px rgba(0,0,0,.1);
-  transition: all .3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1)
+  transition: all .3s ease
   &:hover
     border: 2px solid  $o3de-blue
 
 // additional button definitions
 
 .btn-primary
-  background: linear-gradient(0deg, #1E70EB 0%, #0095F2 100%);
+  background: linear-gradient(0deg, #1E70EB 0%, #0095F2 100%)
   border-color: #0095F2
   
   &:hover 
@@ -282,7 +282,7 @@ code
 
 .btn-green
   color: #fff
-  background: linear-gradient(0deg, #008525 0%, #00A62E 100%);
+  background: linear-gradient(0deg, #008525 0%, #00A62E 100%)
   border-color: #00A62E
     
   &:hover 
@@ -293,7 +293,7 @@ code
 .main-navbar 
   background-color: rgba(0, 0, 0, 0.9)
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
-  padding: 1.25rem 1rem;
+  padding: 1.25rem 1rem
 
 .navbar-collapse
   @include media-breakpoint-down(md)
@@ -318,10 +318,10 @@ code
   &:last-child
     margin-left: 25px
     border: 1px solid $o3de-white
-    border-radius: 4px;
+    border-radius: 4px
     .nav-link
-      padding-right: 1.2rem;
-      padding-left: 1.2rem;
+      padding-right: 1.2rem
+      padding-left: 1.2rem
 
 .navbar-light .navbar-nav .nav-link
   color: $o3de-white 
@@ -329,7 +329,7 @@ code
   line-height: 2.8
   font-family: $font-family-Poppins
   font-weight: 700
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05rem
   transition: 300ms ease
   &:hover 
     color: $o3de-white 
@@ -401,7 +401,7 @@ code
 
 .navbar-docs
   ul
-    flex-direction: row;
+    flex-direction: row
     margin-left: 3rem
     
     .nav-link
@@ -485,7 +485,7 @@ a.top-banner
 
   .top-notification
     position: relative
-    padding: 0rem 1rem;
+    padding: 0rem 1rem
 
     @include media-breakpoint-down(lg)
       max-width: 100%
@@ -496,9 +496,9 @@ a.top-banner
       float: left
       width: 182px
       height: 42px
-      margin-right: 32px;
-      background-repeat: no-repeat;
-      margin-left: 19px;
+      margin-right: 32px
+      background-repeat: no-repeat
+      margin-left: 19px
 
       @include media-breakpoint-down(md)
         display: none
@@ -519,20 +519,20 @@ a.top-banner
       font-weight: 700
       font-family: $font-family-Poppins
       font-size: .9rem
-      letter-spacing: 1px;
+      letter-spacing: 1px
 
     .banner-subtitle
       font-size: .9rem
       font-weight: 700
       font-family: $font-family-Poppins
       text-transform: uppercase
-      letter-spacing: 1px;
-      line-height: 1;
+      letter-spacing: 1px
+      line-height: 1
 
     .banner-call-to-action
       position: absolute
       right: 66px
-      width: 140px;
+      width: 140px
       top: 50%
       transform: translate(0, -50%)
       background: #fff
@@ -545,21 +545,21 @@ a.top-banner
       border-radius: 4px
       transition: .2s ease
       border: 2px solid $o3de-white
-      letter-spacing: 1.4px;
+      letter-spacing: 1.4px
 
       @include media-breakpoint-down(md)
-        right: 16px;
-        width: auto;
+        right: 16px
+        width: auto
 
       &:hover
         border-color: $o3de-purple
 
 //scales the header proportionally
-$width: '59vw';
+$width: '59vw'
 
 .scalable 
     width: 100%
-    height: calc((#{$width} / 3) * 2); // note the variable is declared inside #${}
+    height: calc((#{$width} / 3) * 2) // note the variable is declared inside #${}
     background: black
     @include media-breakpoint-down(lg) 
       height: auto 
@@ -637,11 +637,11 @@ $width: '59vw';
   line-height: 1
   font-family: $font-family-Poppins
   font-weight: 700
-  padding: 12px 18px;
+  padding: 12px 18px
   color: $o3de-black
-  letter-spacing: 1.4px;
+  letter-spacing: 1.4px
   transition: 300ms
-  margin-right: 23px;
+  margin-right: 23px
 
   &:hover 
     background-color: darken($o3de-aqua, 15%)
@@ -655,10 +655,10 @@ $width: '59vw';
   line-height: 1
   font-family: $font-family-Poppins
   font-weight: 700
-  padding: 12px 29px;
+  padding: 12px 29px
   color: $o3de-white
   border: 1px solid #fff
-  letter-spacing: 1.4px;
+  letter-spacing: 1.4px
   transition: 300ms
 
   &:hover 
@@ -669,7 +669,7 @@ $width: '59vw';
 .hero-block
   position: relative
   height: 100vh
-  padding-bottom: 80px;
+  padding-bottom: 80px
 
 .hero-slideshow-background,
 .hero-slideshow
@@ -683,12 +683,12 @@ $width: '59vw';
   top: -64px
 .hero-slideshow
   video
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    object-fit: cover
   
 
   &::after
@@ -731,20 +731,20 @@ $width: '59vw';
     font-size: 3.8rem
     font-family: $font-family-Poppins
     font-weight: 800
-    margin-bottom: 30px;
+    margin-bottom: 30px
     @include media-breakpoint-down(md)
       font-size: 2.2rem
       
   h5
     font-size: 1rem
     font-family: $font-family-Poppins
-    font-weight: 900;
-    letter-spacing: 0.2em;
+    font-weight: 900
+    letter-spacing: 0.2em
 
   p
    font-family: $font-family-Poppins
-   font-weight: 500;
-   letter-spacing: 1px;
+   font-weight: 500
+   letter-spacing: 1px
 
 
 // layouts/partial/download/hero.html
@@ -777,7 +777,7 @@ $os-selector-mobile-height: 48px
 
 .os-selector
   overflow: visible
-  height: $os-selector-height / 2
+  height: calc($os-selector-height / 2)
   
   @include media-breakpoint-down(md)
     height: $os-selector-mobile-height
@@ -802,7 +802,7 @@ $os-selector-mobile-height: 48px
   height: 100%
   line-height: $os-selector-height
   font-size: 1.25rem
-  box-shadow: 0px 2px 4px 0px #0000001A;
+  box-shadow: 0px 2px 4px 0px #0000001A
 
   &:hover
     color: #000000
@@ -903,7 +903,7 @@ $os-selector-mobile-height: 48px
     right: 50%
     top: 0
     bottom: 0
-    position: absolute;
+    position: absolute
     margin-right: 110px
     background-position: 100% 0
   
@@ -921,7 +921,7 @@ $os-selector-mobile-height: 48px
     right: 0
     top: 0
     bottom: 0
-    position: absolute;
+    position: absolute
     margin-left: 110px
     background-position: 0 0
   
@@ -1037,18 +1037,18 @@ $os-selector-mobile-height: 48px
 
   .backtrace-logo
     background-image: url('/img/logos/partnerLogos/backtrace.svg')
-	
+  
   .caict-logo
     background-image: url('/img/logos/partnerLogos/caict.jpg')
-	    height: 200px
+      height: 200px
     margin: 0 -24px 0 0
 
   .daocloud-logo
     background-image: url('/img/logos/partnerLogos/daocloud.png')
-	
+  
   .robotecai-logo
     background-image: url('/img/logos/partnerLogos/robotecai.png')
-	
+  
   .oppo-logo
     background-image: url('/img/logos/partnerLogos/oppo.png')
 
@@ -1057,7 +1057,7 @@ $os-selector-mobile-height: 48px
 
   .kutztown-logo
     background-image: url('/img/logos/partnerLogos/kutztown.jpeg')
-	
+  
   .carbonated-logo
     background-image: url('/img/logos/partnerLogos/carbonated.svg')
     width: 96px
@@ -1109,14 +1109,14 @@ $os-selector-mobile-height: 48px
   .fas.fa-circle
     color: #EEEEEE
     border: 2px solid #1E70EB !important
-    border-radius: 0.5rem !important;
+    border-radius: 0.5rem !important
 
 .partner-carousel
   .carousel-inner
     width: 100%
     max-width: 1080px
     height: 220px
-    text-align: center;
+    text-align: center
     
     @include media-breakpoint-down(lg)
       height: 320px
@@ -1139,91 +1139,6 @@ $os-selector-mobile-height: 48px
 
   @include media-breakpoint-down(md)
     text-align: center
-    
-// layouts/partials/home/collaboration.html 
-
-.home-collaboration
-  background: linear-gradient(180deg, rgba(42, 72, 117, .75) 20.83%, rgba(42, 72, 117, 0.2) 76.56%), 
-  linear-gradient(180deg, rgba(42, 72, 117, 0.2) 0%, rgba(21, 29, 43, 0.9) 87.5%),
-  url('/img/home/collaboration.png')
-  background-size: cover
-  background-position: 50% 50%
-  color: $o3de-white
-  text-align: center
-
-  & > .container > p
-    width: 80%
-    margin: 0 10% 3rem
-
-  .collaboration-more
-    text-align: center
-    margin: 2rem 0 5rem
-
-    .btn
-      width: 320px
-
-      @include media-breakpoint-down(md)
-        width: 240px
-
-  .collaboration-box
-    position: relative
-    display: block
-    padding-bottom: 53%
-    background-size: auto 100%
-    background-position: 50% 50%
-    border-radius: 5px
-    overflow: hidden
-    transition: background-size .6s ease
-    -webkit-transition: background-size .6s ease
-    
-    @include media-breakpoint-down(md)
-      margin-bottom: 2rem
-  
-    .collaboration-overlay
-      position: absolute
-      background-color: rgba(0,0,0,.2)
-      transition: background-color .6s ease
-      -webkit-transition: background-color .6s ease
-      left: 0
-      top: 0
-      right: 0
-      bottom: 0
-
-      .collaboration-content
-        position: absolute
-        top: 50%
-        width: 100%
-        text-align: center
-        color: #fff
-        transform: translate(0, -50%)
-        -webkit-transform: translate(0, -50%)
-        margin-top: 28px
-        transition: all .6s ease
-
-        .cta
-          border: 1px solid #fff
-          border-radius: 5px
-          width: 140px
-          padding: 5px 0
-          margin: 10px auto 0
-          transition: all .6s ease
-          opacity: 0
-
-          &:hover
-            background-color: #fff
-            color: #000
-    
-    &:hover
-      background-size: auto 105%
-
-      .collaboration-overlay
-        background-color: rgba(0,0,0,.5)
-
-        .collaboration-content
-          margin-top: 0
-
-          .cta
-            opacity: 1
 
 // Lightbox
 
@@ -1272,7 +1187,7 @@ $os-selector-mobile-height: 48px
 
 .home-download  
   background-image: url('/img/home/download-bg.jpg')
-  background-size: cover;
+  background-size: cover
   background-position: 50% 50%
   text-align: center
   color: $o3de-white
@@ -1521,7 +1436,7 @@ $os-selector-mobile-height: 48px
     width: 100%
 
     @include media-breakpoint-up(md)
-      position: absolute;
+      position: absolute
       left: 0
       top: 0
       bottom: 0
@@ -1735,8 +1650,8 @@ nav.docs-nav
 @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%))
   // For Google Chrome
   &::-webkit-scrollbar
-    width:  $size;
-    height: $size;
+    width:  $size
+    height: $size
   
   &::-webkit-scrollbar-thumb
     background: $foreground-color
@@ -1795,21 +1710,21 @@ nav.docs-nav
       display: block
       
 .navbar-brand
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0
+  padding-bottom: 0
 
 .home-page
   a.top-banner
     position: absolute
-    padding-bottom: 7px;
+    padding-bottom: 7px
 
   .vertical-text
-    writing-mode: vertical-lr;
+    writing-mode: vertical-lr
     color: #fff
     font-family: $font-family-Poppins
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
+    font-weight: 700
+    font-size: 14px
+    line-height: 21px
     position: absolute
     right: 30px
     top: 50%
