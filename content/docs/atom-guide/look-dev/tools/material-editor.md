@@ -41,7 +41,7 @@ To create child materials, open an existing material and select **Main Menu > Fi
 
 ### Mirroring changes to O3DE Editor
 - Materials saved in the Material Editor will be processed by the Asset Processor.
-- If the O3DE Editor is open and the saved material is assigned to a Material Component or terrain it will automatically not reload to reflect the changes.
+- If the O3DE Editor is open and the saved material is assigned to a Material Component or terrain it will automatically hot reload to reflect the changes.
 - Enabling the autosave in Material Editor settings dialog will causes updates to be continuously mirrored in the O3DE Editor.
 
 ## Navigating Material Editor
