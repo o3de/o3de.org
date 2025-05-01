@@ -2,7 +2,7 @@
 linkTitle: Project Configuration
 title: ROS 2 Project Configuration
 description: How to install dependencies and build a project with the ROS 2 Gem in Open 3D Engine (O3DE).
-weight: 200
+weight: 110
 toc: true
 ---
 
@@ -23,7 +23,7 @@ toc: true
 #### Source your ROS 2 workspace
 
 To build or run projects using ROS 2 Gem, you must [source your ROS 2 workspace](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html) in your console. The best way to ensure that ROS 2 is sourced at all times is by adding the following line to the `~/.profile` file:
-```
+```shell
 source /opt/ros/<distro>/setup.bash
 ```
 Replace `<distro>` with the ROS 2 distribution name (such as `humble`).
@@ -37,7 +37,7 @@ Source your workspace on top of the ROS 2 installation to include custom package
 The Gem comes with a number of ROS 2 packages already included and linked, but you might want to include additional packages in your project.
 To do so, use the `target_depends_on_ros2` function in your project's `Gem/CMakeLists.txt`:
 
-```
+```cmake
 target_depends_on_ros2_packages(<your_target> <ros_package1> <ros_package2>)
 ```
 
@@ -60,7 +60,7 @@ If a `desktop` installation of ROS 2 distro was selected, everything else should
 
 Use this helpful command to install:
 
-```
+```shell
 sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-msgs ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro ros-${ROS_DISTRO}-vision-msgs
 ```
 
@@ -68,7 +68,7 @@ sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-msgs
 
 The ROS 2 Gem lives in the [`o3de/o3de-extras`](https://github.com/o3de/o3de-extras) repository. Clone the GitHub repository to your machine:
 
-```
+```shell
 git clone https://github.com/o3de/o3de-extras
 ```
 
@@ -85,7 +85,7 @@ export O3DE_EXTRAS_HOME=${HOME}/o3de-extras
 ```
 
 Run the following command to register the ROS 2 Gem:
-```bash
+```shell
 ${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ROS2
 ```
 
@@ -95,12 +95,12 @@ Robotics project templates can help you quickly start your simulation project. W
 
 To register robotic templates and assets:
 1. Enable Git Large File Storage (LFS), if you haven't already.  Asset Gems use LFS to store large files.
-    ```bash
+    ```shell
     cd ${O3DE_EXTRAS_HOME}
     git lfs install && git lfs pull
     ```
 2. Register the following templates and assets from o3de-extras.
-    ```bash
+    ```shell
     ${O3DE_HOME}/scripts/o3de.sh register --all-gems-path ${O3DE_EXTRAS_HOME}/Gems/
     ${O3DE_HOME}/scripts/o3de.sh register --all-templates-path ${O3DE_EXTRAS_HOME}/Templates/
     ```

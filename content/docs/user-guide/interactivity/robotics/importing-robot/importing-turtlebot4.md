@@ -2,7 +2,7 @@
 linkTitle: Importing Turtlebot 4
 title: Importing Turtlebot 4
 description: Robot Importer example - importing Turtlebot 4
-weight: 100
+weight: 460
 ---
 
 ## Introduction

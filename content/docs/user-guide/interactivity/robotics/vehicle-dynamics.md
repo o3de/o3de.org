@@ -3,7 +3,7 @@ linkTitle: Vehicle Dynamics
 title: ROS 2 Vehicle Dynamics
 description: Understanding basic concepts and structure of the ROS 2 Gem's vehicle dynamics in Open 3D Engine (O3DE).
 toc: true
-weight: 500
+weight: 200
 ---
 
 ## Vehicle Model

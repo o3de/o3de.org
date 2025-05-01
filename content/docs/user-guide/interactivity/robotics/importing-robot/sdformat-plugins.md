@@ -2,7 +2,7 @@
 linkTitle: SDFormat plugins
 title: SDFormat plugins
 description: Detailed description of support of SDFormat plugins in Robot Importer.
-weight: 100
+weight: 470
 ---
 
 ## Introduction
