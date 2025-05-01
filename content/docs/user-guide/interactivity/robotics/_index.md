@@ -12,6 +12,7 @@ These Gems provide various O3DE components such as sensors, robot control and st
 | [Overview](overview.md)                                             | Overview of Gems, Templates and demos for robotics in O3DE.                                   |
 | [ROS 2 Project Configuration](project-configuration.md)             | Learn how to configure, build and run a project with the ROS 2 Gem.                           |
 | [ROS 2 Concepts and Structure](concepts-and-components-overview.md) | Overview of concepts and structure of the ROS 2 Gem, including an overview of its components. |
+| [ROS 2 Simulation Interfaces](simulation-interfaces.md)             | Implementation details of ROS 2 [simulation_interfaces](https://github.com/ros-simulation/simulation_interfaces) package in O3DE. |
 | [Creating robotic simulation](creating-robotic-simulation.md)       | High-level steps to create a robotic simulation with O3DE.                                    |
 | [Deploying simulation](deploying-simulation.md)                     | Building standalone simulation.                                                               |
 | [Vehicle Dynamics](vehicle-dynamics.md)                             | Drive your robot with skid steering or Ackermann drive models.                                 |
