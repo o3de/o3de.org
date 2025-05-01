@@ -3,7 +3,7 @@ linkTitle: Joints Manipulation
 title: Joints Manipulation
 description: Controlling joint systems such as manipulator arms with ROS 2 Gem Open 3D Engine (O3DE).
 toc: true
-weight: 510
+weight: 210
 ---
 
 ## Overview

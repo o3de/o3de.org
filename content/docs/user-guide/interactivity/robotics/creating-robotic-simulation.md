@@ -2,7 +2,7 @@
 linkTitle: Creating a Robotic Simulation
 title: Creating a Robotic Simulation
 description: A step-by-step process on how to create a robotic simulation using the ROS 2 Gem in Open 3D Engine (O3DE).
-weight: 400
+weight: 130
 toc: true
 ---
 
@@ -19,7 +19,7 @@ toc: true
 Once you are set up and familiar with the [example project](/docs/user-guide/interactivity/robotics/overview/#demos), consider the following steps:
 1. [Create a new O3DE project](/docs/welcome-guide/create/)
    1. It is best to use one of [Project Templates](/docs/user-guide/interactivity/robotics/overview/#templates) for robotics to start quickly.
-2. [Registering ROS2 Gem for your Project](/docs/user-guide/project-config/register-gems/) guide.
+2. [Register ROS2 Gem for your Project](/docs/user-guide/project-config/register-gems/)
 3. Create or import Assets for your robots and environment.
    1. You can use formats supported by O3DE.
    2. You can [import your robot from URDF/XACRO](/docs/user-guide/interactivity/robotics/importing-robot).
@@ -28,7 +28,7 @@ Once you are set up and familiar with the [example project](/docs/user-guide/int
 4. Determine which sensors you need to simulate.
    1. Some sensors are already implemented in this Gem.
       1. They might require specialization (implementation specific for particular models).
-      2. You might like to consider tradeoffs between performance and realism in each case.
+      2. You might like to consider trade-offs between performance and realism in each case.
    2. Use `ROS2SensorComponent` as a base class if you are implementing a new sensor. 
 5. Develop necessary sensors and their prefabs.
 7. Develop your scene and simulation scenario, placing Assets and configuring components.

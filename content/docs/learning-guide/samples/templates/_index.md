@@ -10,6 +10,9 @@ Templates are a great way to get started on a new project. They also provide ins
 | Image | Link | Description | Language | Last Updated |
 | - | - | - | - | - |
 | <img src="/images/learning-guide/samples/templates/third-person.png" width="300px" /> | [Third person template](https://github.com/o3de/ThirdPersonTemplate) | Showcase a simple animated Third Person Character Controller | ScriptCanvas | O3DE **23.10.3**. April 28, 2024 |
+| <img src="/images/learning-guide/samples/templates/ros2-template.png" width="300px" /> | [ROS 2 template](https://github.com/o3de/o3de-extras/tree/main/Templates/Ros2ProjectTemplate) | Showcase a simple ROS 2 project with one AMR | C++ | O3DE **25.05.0**. April 18, 2025 |
+| <img src="/images/learning-guide/samples/templates/ros2-fleet.png" width="300px" /> | [ROS 2 fleet template](https://github.com/o3de/o3de-extras/tree/main/Templates/Ros2FleetRobotTemplate) | Showcase a simple ROS 2 project with multiple AMRs | _no code_ | O3DE **25.05.0**. April 18, 2025 |
+| <img src="/images/learning-guide/samples/templates/ros2-manipulation.png" width="300px" /> | [ROS 2 manipulation template](https://github.com/o3de/o3de-extras/tree/main/Templates/Ros2RoboticManipulationTemplate) | Showcase a simple ROS 2 project focused on robotic manipulation | _no code_ | O3DE **25.05.0**. April 18, 2025 |
 
 ## Community curated
 
