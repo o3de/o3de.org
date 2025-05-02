@@ -20,7 +20,7 @@ There are several Gems to power robotic simulations with **Open 3D Engine (O3DE)
   - [WarehouseAssets](https://github.com/o3de/o3de-extras/tree/main/Gems/WarehouseAssets) and [WarehouseAutomation](https://github.com/o3de/o3de-extras/tree/main/Gems/WarehouseAutomation) Gems providing useful assets for warehouse environments
 - 3rd party Gems: 
   - [Robotec GPU Lidar (RGL) Gem](https://github.com/RobotecAI/o3de-rgl-gem) - GPU accelerated LIDAR simulation in O3DE using CUDA.
-  - [Robotec Vehicle Dynamics Gem](https://github.com/RobotecAI/robotec-vehicle-dynamics-gem) - simple vehicle controller.
+  - [Robotec Vehicle Dynamics Gem](https://github.com/RobotecAI/o3de-vehicle-dynamics-gem) - simple vehicle controller.
 
 ## Templates
 
