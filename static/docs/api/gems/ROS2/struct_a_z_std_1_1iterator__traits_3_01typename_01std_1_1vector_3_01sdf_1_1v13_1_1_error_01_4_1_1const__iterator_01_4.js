@@ -1,9 +1,0 @@
-var struct_a_z_std_1_1iterator__traits_3_01typename_01std_1_1vector_3_01sdf_1_1v13_1_1_error_01_4_1_1const__iterator_01_4 =
-[
-    [ "difference_type", "struct_a_z_std_1_1iterator__traits_3_01typename_01std_1_1vector_3_01sdf_1_1v13_1_1_error_01_4_1_1const__iterator_01_4.html#a21bf1a9a448c1362579a1617d3a288dd", null ],
-    [ "iterator_category", "struct_a_z_std_1_1iterator__traits_3_01typename_01std_1_1vector_3_01sdf_1_1v13_1_1_error_01_4_1_1const__iterator_01_4.html#a099cfb8fdf182339fe2877ebfddf7fe2", null ],
-    [ "iterator_concept", "struct_a_z_std_1_1iterator__traits_3_01typename_01std_1_1vector_3_01sdf_1_1v13_1_1_error_01_4_1_1const__iterator_01_4.html#a5f83d91356736380586615c4c8d355d8", null ],
-    [ "pointer", "struct_a_z_std_1_1iterator__traits_3_01typename_01std_1_1vector_3_01sdf_1_1v13_1_1_error_01_4_1_1const__iterator_01_4.html#a85069f0b043b11f4456cc5f43e9aea4c", null ],
-    [ "reference", "struct_a_z_std_1_1iterator__traits_3_01typename_01std_1_1vector_3_01sdf_1_1v13_1_1_error_01_4_1_1const__iterator_01_4.html#afd38b4ab6e8a1a56e6d124d751697076", null ],
-    [ "value_type", "struct_a_z_std_1_1iterator__traits_3_01typename_01std_1_1vector_3_01sdf_1_1v13_1_1_error_01_4_1_1const__iterator_01_4.html#a5324e44079d98fc6614c1f4307fd39e8", null ]
-];

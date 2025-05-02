@@ -1,8 +1,0 @@
-var class_a_z_std_1_1variant__detail_1_1variant__impl__move__assignment_3_01_special_function_traits0596ac9cdbafb04fc40913a2734e2889 =
-[
-    [ "~variant_impl_move_assignment", "class_a_z_std_1_1variant__detail_1_1variant__impl__move__assignment_3_01_special_function_traits0596ac9cdbafb04fc40913a2734e2889.html#aaabadc5dbc1a475170c6644e9374697f", null ],
-    [ "variant_impl_move_assignment", "class_a_z_std_1_1variant__detail_1_1variant__impl__move__assignment_3_01_special_function_traits0596ac9cdbafb04fc40913a2734e2889.html#a543a55e45d1704c933abaf1500fe586d", null ],
-    [ "variant_impl_move_assignment", "class_a_z_std_1_1variant__detail_1_1variant__impl__move__assignment_3_01_special_function_traits0596ac9cdbafb04fc40913a2734e2889.html#a7f724b3f080f391933eae4b26ea01499", null ],
-    [ "operator=", "class_a_z_std_1_1variant__detail_1_1variant__impl__move__assignment_3_01_special_function_traits0596ac9cdbafb04fc40913a2734e2889.html#a730941830ad767092466f511ce53954f", null ],
-    [ "operator=", "class_a_z_std_1_1variant__detail_1_1variant__impl__move__assignment_3_01_special_function_traits0596ac9cdbafb04fc40913a2734e2889.html#a037418e721037a6187b7bb34d3c73d30", null ]
-];
