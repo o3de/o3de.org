@@ -1,4 +1,0 @@
-var structstd_1_1common__type_3_01tuple_3_01_t_types_8_8_8_01_4_00_01tuple_3_01_u_types_8_8_8_01_4_01_4 =
-[
-    [ "type", "structstd_1_1common__type_3_01tuple_3_01_t_types_8_8_8_01_4_00_01tuple_3_01_u_types_8_8_8_01_4_01_4.html#abe457d33cb8b457c80de4099f409cc5f", null ]
-];
