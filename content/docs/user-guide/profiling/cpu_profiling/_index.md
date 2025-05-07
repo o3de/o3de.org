@@ -63,11 +63,117 @@ While these markers are not required if you use a sampling profiler, it is alway
 
 ## Using the Built-in profiler (All platforms)
 
+### Enabling the Built-in Profiler Gem
+
+The built-in profiler is an optional Gem from the core O3DE repository. You can follow [this documentation](/docs/user-guide/project-config/add-remove-gems) to learn how to use the project manager to enable gems. If you search for "Profiler" you will see the Gem listed and you will able to enable it.
+
+![Imgui profiler enable](/images/user-guide/profiling/enable-gem.jpg)
+
+### Opening the Profiler
+
+The Profiler is embedded inside the **[ImGui tools](/docs/user-guide/gems/reference/debug/imgui)**. Please refer to the documentation to open the ImGui tools. Once opened, you should see a "Profiler" entry in the ImGui menu, click on it to Open the CPU Profiler.
+
+![Imgui profiler overview](/images/user-guide/profiling/imgui/cpu-profiler-open.png)
+
+### Launch a capture
+
+Upon being opened the profiler will be showing the performance for last few frames. Click on the **"Resume/Pause"** button in the top left to toggle the update.
+
+If you want to capture more than a few frames, press the **"Begin"** button and let the profiler run, maybe jump into gameplay to perform specific actions. Once that you have enough data, you can press the **"End"** button to stop the capture and be able to navigate it.
+
 ![Imgui profiler overview](/images/user-guide/profiling/imgui/overview.png)
 
+### Navigate your capture
+
+The navigation within the profiler is done using the mouse. You can click on the **"Swap to visualizer/statistics"** to switch between the two primary views of the Profiler. Clicking on an item in the visualizer view will switch to the statistics view, as seen below.
+
+![Imgui profiler statistics](/images/user-guide/profiling/imgui/start.png)
+
+Use the **Find Region** in the visualizer to search for specific events. The timeline is interactive, click on it with the left mouse button to have it focused, then :
+
+- Hold left mouse button to move around the timeline
+- Hold the ctrl key and use the mouse wheel to change the timeline scale
+
+![Imgui profiler search](/images/user-guide/profiling/imgui/profile-event-search.jpg)
+
+When the timeline is scaled-out, you will be able to see the frametime in ms for every captured frame in the profiler. This is an easy way to find frames which are over your budget.
+
+### Save your capture
+
+Press the "Capture" button to save your captured data in a json file. The path will be indicated right above the button. You can load any previous capture thanks to the "Load file" button.
+
+![Imgui profiler save](/images/user-guide/profiling/imgui/save.png)
 
 ## Using Tracy profiler (All platforms)
 
+The "client" is the game or the editor while the "server" is the external Tracy application used to visualize the captured data. This application is available on windows but need to be built for other platforms.
+
+### (Windows) Grabbing the server application
+
+You can download [the latest release](https://github.com/wolfpld/tracy/releases) from github, pick the `windows-x.x.zip` file. Once downloaded, extract it, the server application is `tracy-profiler.exe`, you will have to launch it anytime you want to make a new capture.
+
+### (Other platforms) Building the server application
+
+You will have to build the application yourself, this process is outlined in the documentation file under "2.3 Building the server". You can find a summary below :
+
+1. Install git and CMake (you can learn how to set them up via the [o3de documentation](/docs/welcome-guide/requirements))
+
+Then you can open a terminal in the folder of your choice to :
+
+2. Install required libraries
+
+```bash
+sudo apt install libxkbcommon wayland wayland-protocols libglvnd
+```
+
+3. Clone the Tracy repository
+
+```bash
+git clone https://github.com/wolfpld/tracy.git
+```
+
+4. Configure the Build
+
+```bash
+cmake -B build
+```
+
+5. Build Tracy
+
+```bash
+cmake -B build --target TracyServer
+```
+
+### Launch a capture
+
+Todo
+
+### Navigate your capture
+
+Todo
+
 ## Using Optick profiler (Windows-only)
 
+### Grabbing the application
+
+Todo
+
+### Launch a capture
+
+Todo
+
+### Navigate your capture
+
+Todo
+
 ## Using Superluminal profiler (Windows-only)
+
+### Grabbing the application
+
+### Launch a capture
+
+Todo
+
+### Navigate your capture
+
+Todo
