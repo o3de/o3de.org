@@ -112,37 +112,58 @@ The "client" is the game or the editor while the "server" is the external Tracy 
 
 You can download [the latest release](https://github.com/wolfpld/tracy/releases) from github, pick the `windows-x.x.zip` file. Once downloaded, extract it, the server application is `tracy-profiler.exe`, you will have to launch it anytime you want to make a new capture.
 
-### (Other platforms) Building the server application
+### (Linux) Building the server application
 
 You will have to build the application yourself, this process is outlined in the documentation file under "2.3 Building the server". You can find a summary below :
 
-1. Install git and CMake (you can learn how to set them up via the [o3de documentation](/docs/welcome-guide/requirements))
+1. Install git, CMake and clang (you can learn how to set them up via the [o3de documentation](/docs/welcome-guide/requirements))
 
 Then you can open a terminal in the folder of your choice to :
 
-2. Install required libraries
-
-```bash
-sudo apt install libxkbcommon wayland wayland-protocols libglvnd
-```
-
-3. Clone the Tracy repository
+2. Clone the Tracy repository and go inside the server application folder
 
 ```bash
 git clone https://github.com/wolfpld/tracy.git
+cd tracy/profiler
 ```
 
-4. Configure the Build
+3. Install required libraries and configure the build
 
 ```bash
-cmake -B build
+echo $XDG_SESSION_TYPE
 ```
+
+If "X11" was shown
+
+```bash
+sudo apt install libdbus-1-dev libfreetype-dev libtbb-dev
+cmake -B build -DLEGACY=1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
+```
+
+If "Wayland" was shown
+
+```bash
+sudo apt install libglfw3-dev
+cmake -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER:FILEPATH=/usr/bin/clang -DCMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++ 
+```
+
+{{< tip >}}
+The `DCMAKE_C_COMPILER` arguments are not usually required, but you can run into linker issues at the end of the build when they are not set
+{{< /tip >}}
 
 5. Build Tracy
 
 ```bash
-cmake -B build --target TracyServer
+cmake --build build --parallel --config Release --target all
 ```
+
+If the build succeeded, you can launch the Tracy application via the following command
+
+```bash
+./build/tracy-profiler 
+```
+
+If the build failed, it might be because of missing libraries which you can usually install via `sudo apt install libNAME-dev`. Else you might want to try to build using Visual Studio Code as outlined in the Tracy documentation.
 
 ### Launch a capture
 
