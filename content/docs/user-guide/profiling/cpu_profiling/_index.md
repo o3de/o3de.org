@@ -104,6 +104,16 @@ Press the "Capture" button to save your captured data in a json file. The path w
 
 ![Imgui profiler save](/images/user-guide/profiling/imgui/save.png)
 
+## Prerequisites for Tracy, Optick and Superluminal
+
+These profiler Gems are located in the [o3de-extras](https://github.com/o3de/o3de-extras) github repository. 
+
+1. This repository follows the Remote Content format, you can follow [this documentation](/docs/user-guide/remote-content/use-a-remote-repository) to learn how to **register a remote repository**.
+
+2. Else if you prefer to download o3de-extra yourself, you can follow [this documentation](/docs/user-guide/project-config/register-gems). Within o3de-extra folder, the profiler gems are located in "*Gems/ExternalProfilers*".
+
+Once that the profiler gem that you want to use has been registered, you need to enable it for your project and rebuild the project. Refer to the [first steps of enabling the Built-In profiler](#enabling-the-built-in-profiler-gem) to see how to enable a gem for your project.
+
 ## Using Tracy profiler (All platforms)
 
 The "client" is the game or the editor while the "server" is the external Tracy application used to visualize the captured data. This application is available on windows but need to be built for other platforms.
@@ -175,11 +185,20 @@ Todo
 
 ## Using Optick profiler (Windows-only)
 
+It is possible to profile and save the profile data for any platform, but the GUI Application used to visualize this capture is only available on windows (built with WPF). It might be possible to run it via [Wine](https://en.wikipedia.org/wiki/Wine_(software)) on linux, but this is outside of the scope of this documentation.
+
 ### Grabbing the application
 
-Todo
+You can download [the latest release](https://github.com/bombomby/optick/releases) from github, pick the `Optick_x.x.zip` file. Once downloaded, extract it, the application is `Optick.exe`, you will have to launch it anytime you want to make a new capture.
 
 ### Launch a capture
+
+Launch as admin for more stuff like flamegraph
+
+import azlmbr.debug
+azlmbr.debug.g_ProfilerSystem.IsValid()
+azlmbr.debug.g_ProfilerSystem.StartCapture("D:/Downloads/mycapture.opt")
+azlmbr.debug.g_ProfilerSystem.EndCapture()
 
 Todo
 
