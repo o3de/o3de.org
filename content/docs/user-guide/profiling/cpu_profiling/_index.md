@@ -28,9 +28,10 @@ O3DE currently support multiple profiling tools as Gems to toggle on and off. Th
 | Profiler | Description | Type | Platform |
 | - | - | - | - |
 | Built-in | Provides a quick overview of the CPU and GPU events. It is embedded via the [ImGui tools](https://docs.o3de.org/docs/user-guide/gems/reference/debug/imgui/) | Instrumentation | All |
-| [Tracy](https://youtu.be/ghXk3Bk5F2U?si=h2j82B6EDma3rNs7&t=36) | An external free and open-source profiler which combines many features making it an hybrid profiler. [Online demo](https://tracy.nereid.pl/) | Instrumentation (sampling not working as of now) | All |
-| [Optick](https://github.com/bombomby/optick) | An external free and open-source profiler widely used in the games industry. The development has halted since the past few years. | Instrumentation (with minor sampling support) | Windows |
+| [Tracy](https://youtu.be/ghXk3Bk5F2U?si=h2j82B6EDma3rNs7&t=36) | An external free and open-source profiler which combines many features making it an hybrid profiler. [Online demo](https://tracy.nereid.pl/) | Instrumentation (with optional sampling support) | All |
+| [Optick](https://github.com/bombomby/optick) | An external free and open-source profiler widely used in the games industry. The development has halted since the past few years. | Instrumentation (with optional sampling support) | Windows |
 | [Superluminal](https://superluminal.eu/) | An external commercial profiler with strong sampling performance and UX. Widely used in the games industry | Sampling (with Instrumentation support) | Windows |
+| [Pix](https://devblogs.microsoft.com/pix/) | The official Microsoft profiler used on XBox consoles | Sampling (with Instrumentation support) | Windows |
 
 ### Adding Instrumentation marker in your code
 
@@ -130,10 +131,11 @@ You will have to build the application yourself, this process is outlined in the
 
 Then you can open a terminal in the folder of your choice to :
 
-2. Clone the Tracy repository and go inside the server application folder
+2. Clone the Tracy repository. Sync to the same version used by the Gem (visible in the o3de-extra repository, under `Gems/ExternalProfilers/TracyProfiler/Code/CMakeLists.txt`). Then go inside the server application folder.
 
 ```bash
 git clone https://github.com/wolfpld/tracy.git
+git checkout 5d542dc09f3d9378d005092a4ad446bd405f819a
 cd tracy/profiler
 ```
 
@@ -177,15 +179,70 @@ If the build failed, it might be because of missing libraries which you can usua
 
 ### Launch a capture
 
-Todo
+While not required, **launching the editor or game as Administrator** will allow the profiler to gather sampling data on top of the instrumentation tags (at the time of writing, tracy sampling only works on linux).
+
+On Windows:
+- Right click on the editor shortcut that you use, and select **Run as administrator**. You will likely want to use `--project-path="C:/Path_To_Your_Project"` as launch argument if it is not present yet.
+
+On Linux:
+- Open a terminal next to your editor build. Then launch it with sudo `sudo ./Editor --project-path="/home/Path_To_Your_Project"`
+
+Then you can launch the **tracy-profiler** application that you downloaded or built. Under the **"connect"** button you should see the **"Editor"** process being listed. Click on it to start the capture of profiling data.
+
+![Tracy connect](/images/user-guide/profiling/tracy/connect.jpg)
 
 ### Navigate your capture
 
-Todo
+![Tracy overview](/images/user-guide/profiling/tracy/overview.jpg)
+
+- **Frame Navigator** : Allow you to quickly jump to a frame which is above your 16ms target.
+- **Sampling Info** : Allow to see the context switches, callstacks or areas without instrumenting events.
+- **Event Timeline** : Contains all of the instrumenting events recorded. This is the main view.
+- **Sub-Windows** : Undocked by default, these are used for advanced filtering and statistics options.
+
+### Basic navigation
+
+Navigation is done using the mouse :
+
+- Hold right click to move through the Event Timeline
+- Use the mouse wheel to zoom-in and out of the Event Timeline
+
+Add the middle mouse button is used to **focus** :
+
+- Click on the middle mouse button to focus on the event below the cursor
+- Click and drag the middle mouse button to focus on the drawn area
+
+### Basic Search
+
+If you want to **find a specific event**, press `ctrl + F` to open the "Find zone" window. 
+
+1. You will want to tick the **"Ignore case"** option.
+2. Enter the name of event that you want to inspect and press enter.
+3. Scroll at the bottom, open the dropdown with the threads name. Click with the middle mouse button to **focus** the timeline on the event.
+
+![Tracy search](/images/user-guide/profiling/tracy/find.jpg)
+
+### Basic Analysis
+
+You might want to see for a given time range the most expensive events. In order to do so, open the **Statistics** panel
+
+1. You can order by time spent if you click on the **"Total time"** column.
+2. Click on the **"Limits"** button to access advanced filtering
+3. Tick the **"Statistics"** button and click on **Limit to view**.
+
+The event shown in the statistics will now only contain the range in red in the timeline.
+
+![Tracy limit view](/images/user-guide/profiling/tracy/limit-view.jpg)
+
+Tracy offers many advanced features that you will discover while using the tool. If needed, you can refer to the [official documentation](https://github.com/wolfpld/tracy).
 
 ## Using Optick profiler (Windows-only)
 
+{{< tip >}}
 It is possible to profile and save the profile data for any platform, but the GUI Application used to visualize this capture is only available on windows (built with WPF). It might be possible to run it via [Wine](https://en.wikipedia.org/wiki/Wine_(software)) on linux, but this is outside of the scope of this documentation.
+{{< /tip >}}
+
+The creator of Optick [made this youtube video](https://www.youtube.com/watch?v=p57TV5342fo) to showcase the tool if you want to get a quick overview.
 
 ### Grabbing the application
 
@@ -193,20 +250,65 @@ You can download [the latest release](https://github.com/bombomby/optick/release
 
 ### Launch a capture
 
-Launch as admin for more stuff like flamegraph
+While not required, **launching the editor or game as Administrator** will allow the profiler to gather sampling data on top of the instrumentation tags. Right click on the editor shortcut that you use, and select "Run as administrator". You will likely want to use `--project-path="C:/Path_To_Your_Project"` as launch argument.
 
-import azlmbr.debug
-azlmbr.debug.g_ProfilerSystem.IsValid()
-azlmbr.debug.g_ProfilerSystem.StartCapture("D:/Downloads/mycapture.opt")
-azlmbr.debug.g_ProfilerSystem.EndCapture()
+You can now launch Optick. Click on the **play button in the top left corner to start the capture**. Jump into game and move around until you have enough data.
 
-Todo
+![Optick connect](/images/user-guide/profiling/optick/connect.jpg)
+
+Clicking on the same button will stop the capture. Make sure you **click on the editor/game window afterwards** so that it is able to send the last captured data to finish the profile capture.
+
+### Navigate your capture
+
+![Optick overview](/images/user-guide/profiling/optick/overview.jpg)
+
+- **Frame Navigator**: Allow to quickly see which frames are above your budget.
+- **Sampling Info**: Displays the CPU load, context switches and callstacks.
+- **Event Timeline**: The main view with all of the instrumeting events.
+- **Sub-Windows**: Advanced filtering and data search option. The "Function Flamegraph" displays sampling data.
+
+### Basic navigation
+
+Navigation is done using the mouse :
+
+- Hold right click to move through the Event Timeline
+- Use the mouse wheel to zoom-in and out of the Event Timeline
+
+## Using Superluminal profiler (Windows-only)
+
+Superluminal is a Commercial profiler, it offers a trial period but you have to buy a license past this trial if you want to continue using it. To prevent licensing issues we won't attach screenshots and we recommend you to have a look [at the official documentation](https://www.superluminal.eu/docs/documentation.html).
+
+The **Superluminal Gem is not required** to use Superluminal with 03DE, it will only offer some instrumentation data on top of the existing sampling data.
+
+### Grabbing the application
+
+You can download Superluminal [from the main website](https://superluminal.eu/). During the installation process, if you decide to not use the default installation folder (`C:/Program Files/Superluminal`) you will have to update the CMake variable `SUPERLUMINAL_API_PATH` if you enable the Superluminal 03DE Gem.
+
+### Launch a capture
+
+You can open `Superluminal` directly, it will be in charge of launching 03DE. Under the **Start** menu on the left click on the **Run** button and fill-up the following fields :
+
+- Application: The path to your `Editor.exe` or your exported game
+- Working Directory: You can use the same folder as your executable
+- Commandline Arguments: If you use the editor, enter `--project-path="C:/path/to/your/project"`
+
+Then under **Capture Options**
+
+- Tick "Enable PerformanceAPI events" if you enabled the Superluminal Gem
+- Untick "Enable child process profiling" so that the asset processor don't add noise to your capture
+- Untick "Start profiling immediately"
+
+You are ready to press `Run` ! The editor or your game will boot. When you are ready, click the `Start Recording` button and the capture will start. Stop it when you are done, after a bit the capture will be ready to navigate.
 
 ### Navigate your capture
 
 Todo
 
-## Using Superluminal profiler (Windows-only)
+## Using Pix profiler (Windows-only)
+
+### Prerequisites
+
+
 
 ### Grabbing the application
 
