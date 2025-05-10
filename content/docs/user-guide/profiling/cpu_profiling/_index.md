@@ -29,7 +29,7 @@ O3DE currently support multiple profiling tools as Gems to toggle on and off. Th
 | - | - | - | - |
 | Built-in | Provides a quick overview of the CPU and GPU events. It is embedded via the [ImGui tools](https://docs.o3de.org/docs/user-guide/gems/reference/debug/imgui/) | Instrumentation | All |
 | [Tracy](https://youtu.be/ghXk3Bk5F2U?si=h2j82B6EDma3rNs7&t=36) | An external free and open-source profiler which combines many features making it an hybrid profiler. [Online demo](https://tracy.nereid.pl/) | Instrumentation (with optional sampling support) | All |
-| [Optick](https://github.com/bombomby/optick) | An external free and open-source profiler widely used in the games industry. The development has halted since the past few years. | Instrumentation (with optional sampling support) | Windows |
+| [Optick](https://github.com/bombomby/optick) | An external free and open-source profiler widely used in the games industry. The development has halted since the past few years but it is feature-complete | Instrumentation (with optional sampling support) | Windows |
 | [Superluminal](https://superluminal.eu/) | An external commercial profiler with strong sampling performance and UX. Widely used in the games industry | Sampling (with Instrumentation support) | Windows |
 | [Pix](https://devblogs.microsoft.com/pix/) | The official Microsoft profiler used on XBox consoles | Sampling (with Instrumentation support) | Windows |
 
@@ -273,6 +273,44 @@ Navigation is done using the mouse :
 
 - Hold right click to move through the Event Timeline
 - Use the mouse wheel to zoom-in and out of the Event Timeline
+- Left click on an event in the Event Timeline to select it, the Sub-Windows will use it as the top item
+
+### Basic Search
+
+If you want to **find a specific event**, press `ctrl + F` and start typing. 
+
+1. Use key down and key up to switch between events, and press enter to jump to it (it will pick the most expensive one amongst all the occurences)
+2. In the Function Tree sub-window, you will see the events below yours, with the time spent in ms. On the top right of the function tree, click on the **"%" button** to show what each event represents in the callstack.
+
+![Optick search](/images/user-guide/profiling/optick/find.jpg)
+
+### Sampled Callstack
+
+The sampling will capture the callstacks at regular intervals. You can inspect them from the Event Timeline :
+
+1. Click on **"Show callstacks"** on the top right of the timeline
+2. Diamonds will be shown in the timeline. Use `ctrl + Right click` on one to see the callstack. The yellow diamonds are system calls whereas the red diamonds are auto-sampling.
+
+![Optick callstack](/images/user-guide/profiling/optick/callstack.jpg)
+
+### Context Switch
+
+A context switch occurs when your thread is put to sleep so that another one can take priority. Optick differentiates two reasons for context switches :
+
+- **Preemption**, shown as a thin pink line at the top of the event, can occur at anytime an higher priority thread has to take over.
+- **Synchronisation primitives**, shown is a thin red line at the top of the event, occurs when you explicitly wait in code, for example to acquire the lock on a mutex.
+
+If you **hold control and left click** in the context switch in the timeline, a dialog will open showing the threads which you took priority at this moment in time, and the time you waited for them until execution of your thread was resumed.
+
+![Optick contexts](/images/user-guide/profiling/optick/switch-context.jpg)
+
+### Further Settings
+
+You can have more fine-grained control over the sampling and capture mode in general if you click on the **"Cog" button** next to the play button. Can be useful if you want to increase the autosampling frequency.
+
+![Optick settings](/images/user-guide/profiling/optick/sampling.jpg)
+
+Optick can be tailored to attach many additionnal informations on the capture, threads and events. If your game need it don't hesitate to jump into the Optick Gem to extend it for your needs.
 
 ## Using Superluminal profiler (Windows-only)
 
@@ -298,24 +336,88 @@ Then under **Capture Options**
 - Untick "Enable child process profiling" so that the asset processor don't add noise to your capture
 - Untick "Start profiling immediately"
 
-You are ready to press `Run` ! The editor or your game will boot. When you are ready, click the `Start Recording` button and the capture will start. Stop it when you are done, after a bit the capture will be ready to navigate.
+You are ready to press `Run` ! The editor or your game will boot. When you are ready, click the **Start Recording** button and the capture will start. Stop it when you are done, after a bit the capture will be ready to navigate.
 
 ### Navigate your capture
 
-Todo
+The layout is close to Optick so the same terms will be used. The **Event Timeline contains both sampling and instrumenting events**. The sampling events are blue whereas the instrumenting events have a color attributed to their category (Physics, System, etc).
+
+By default all threads are in a **collapsed state** [in the timeline](https://www.superluminal.eu/docs/documentation.html#quick_ui_overview), so you will want to expand the main thread dropdown on the left side.
+
+Navigation is done using the mouse :
+
+- Hold right click to move through the Event Timeline
+- Use the mouse wheel to scroll up and done in the Event Timeline
+- Hold ctrl and use the mouse wheel to zoom-in and out of the Event Timeline
+
+And left click is used for quick filtering :
+
+- Left click on an event in the Event Timeline to select it, the Sub-Windows will use it as the top item
+- Left click and drag on the Event Timeline will limit the Sub-Windows analysis to the selected area.
+
+### See the Frame Navigator
+
+Superluminal has **no notion of frame**, but it can take any event and display all of its occurences in a similar look as Optick Frame Navigator. Simply right click on the main loop event ("CryEditApp::OnIdle" for the editor) and click **"Find all occurences"**. You will see to tab at the top showing the occurences as a column chart with their ms time. This tab is called the ["Instance Graph"](https://www.superluminal.eu/docs/documentation.html#function_statistics_UI)
+
+The first few calls might be longer than usual as the capture was warming up, so you might want to **drag select on the timeline before doing the filtering** to only show the occurences in your selected range. Another important points is that **the column chart is ordered by performance, not by frame number** so that the most expensive frames will be shown first.
+
+### Navigate the Thread Interaction
+
+Right above each thread dropdown you have the [Thread Interaction view](https://www.superluminal.eu/docs/documentation.html#thread_activity_interaction). The green area is when the thread is executed whereas **the red areas shows when the thread is waiting**. If you click on a red area, it will open a view at the bottom showing what the thread is waiting for, for how long, and what resolved it.
 
 ## Using Pix profiler (Windows-only)
 
-### Prerequisites
+Pix is a free profiler made by Microsoft. Originaly made to profile GPU event for DirectX12, it is now able to profile the CPU. To prevent licensing issues we won't attach screenshots and we recommend you to have a look [at the official documentation](https://devblogs.microsoft.com/pix/documentation/) and this [official youtube playlist](https://www.youtube.com/watch?v=thiF3xKT_Qg&list=PLeHvwXyqearWuPPxh6T03iwX-McPG5LkB).
 
-
+{{< caution >}}
+At the time of writing the Pix is not implemented as a Gem in 03DE, so you have to [build the engine from source](/docs/welcome-guide/setup/setup-from-github) if you want to use it
+{{< /caution >}}
 
 ### Grabbing the application
 
+You have to download both the application and the WinPixEventRuntime library from the [Microsoft website](https://devblogs.microsoft.com/pix/download/). Installing the application should be straightforward, but there are specific steps to do in order to provide WinPixEventRuntime to 03DE.
+
+1. Download the nuget package from [the nuget website](https://www.nuget.org/packages/WinPixEventRuntime) (look for **Download package** on the right below the "About" section).
+2. Change the extension of the file from `.nuget` to `.zip`
+3. Unzip the file, and rename the directory to `winpixeventruntime`
+4. Copy the folder to your `$LY_3RDPARTY_PATH` folder. By default on windows it is `C:\Users\YOUR_NAME\.o3de\3rdParty`
+5. Set the CMake flag `LY_PIX_ENABLED` to on and reconfigure the build (`-DLY_PIX_ENABLED=ON` on your configure command)
+
+After recompiling you will be able to use PIX with 03DE.
+
 ### Launch a capture
 
-Todo
+PIX is in charge of launching 03DE so just launch the PIX application. You will have to fill the following fields under **Select Target Process** (pick **"Launch Win32"**) :
+
+- Path to executable: The path to your `Editor.exe` or your exported game
+- Working directory: You can use the same folder as your executable
+- Command line arguments: If you use the editor, enter `--project-path="C:/path/to/your/project"`
+- Launch for GPU Capture: Make sure it is unticked as we are profiling the CPU
+
+You can then click **Launch** to start the editor/game. When you are ready to capture, click **Start Timing Capture** to start the capture, and click on the same button again to stop it.
 
 ### Navigate your capture
 
-Todo
+You will be greeted by the "Capture Summary". For a first overview you should pick the **"Timeline"** tab to browse the events per frame.
+
+Navigation is done using the mouse :
+
+- Hold right click to move through the Event Timeline
+- Use the mouse wheel to scroll up and done in the Event Timeline
+- Hold ctrl and use the mouse wheel to zoom-in and out of the Event Timeline
+
+And left click is used for quick filtering :
+
+- Left click on an event in the Event Timeline to select it, the Sub-Windows will use it as the top item
+- Left click and drag on the Event Timeline will limit the Sub-Windows analysis to the selected area.
+
+### Basic Search
+
+If you want to **find a specific event**, use the "Range Details" tab at the bottom and start typing the name of the event.
+
+- You can filter-out threads from your search via the "Selector" view below. The event found will be shown on the right with their callstack.
+- You can right click on an event and press **"Show in Timeline"** in order to focus on it.
+
+### Context Switch
+
+Above each thread you can see red lines for each context switch that occurs. If you click on it you can see which threads caused this context switch to occur and for how long we waited.
