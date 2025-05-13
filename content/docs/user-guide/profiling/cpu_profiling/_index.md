@@ -97,7 +97,7 @@ Use the **Find Region** in the visualizer to search for specific events. The tim
 
 ![Imgui profiler search](/images/user-guide/profiling/imgui/profile-event-search.jpg)
 
-When the timeline is scaled-out, you will be able to see the frametime in ms for every captured frame in the profiler. This is an easy way to find frames which are over your budget.
+To find frames that are over your budget, zoom out the timeline scale until every captured frame's frametime is displayed in milliseconds.
 
 ### Save your capture
 
