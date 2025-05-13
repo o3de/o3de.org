@@ -15,7 +15,7 @@ The code behaves differently between debug and release build, so it is very like
 
 ### Quick definition of profiler types
 
-There are multiple ways to capture profiling data, each one with their pros and cons :
+There are multiple ways to capture profiling data, each with their pros and cons:
 
 - **Instrumentation** : You add Start/End events yourself in the code. It is fast, the result is clean, but it might take a few try until you are able to pinpoint the exact problematic area
 - **Sampling** : At specified intervals, data collection is done on your running program to know where the code is currently executed. Depending on the interval it can have a big performance impact. It is great to find right away the problematic area, but the amount of data can make it difficult to navigate
