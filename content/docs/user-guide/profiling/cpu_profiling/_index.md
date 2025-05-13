@@ -86,7 +86,7 @@ To capture more frames, press the `Begin` button to start the profiler, then per
 
 ### Navigate your capture
 
-The navigation within the profiler is done using the mouse. You can click on the **"Swap to visualizer/statistics"** to switch between the two primary views of the Profiler. Clicking on an item in the visualizer view will switch to the statistics view, as seen below.
+Use the mouse to navigate within the profiler. Click on `Swap to visualizer/statistics` to switch between the two primary views. Clicking on an item in the visualizer view will switch to the statistics view, as seen below.
 
 ![Imgui profiler statistics](/images/user-guide/profiling/imgui/start.png)
 
