@@ -111,7 +111,7 @@ These profiler Gems are located in the [o3de-extras](https://github.com/o3de/o3d
 
 1. This repository follows the Remote Content format, you can follow [this documentation](/docs/user-guide/remote-content/use-a-remote-repository) to learn how to **register a remote repository**.
 
-2. Else if you prefer to download o3de-extra yourself, you can follow [this documentation](/docs/user-guide/project-config/register-gems). Within o3de-extra folder, the profiler gems are located in "*Gems/ExternalProfilers*".
+2. If you prefer to download o3de-extras yourself, you can follow the [Register Gems guide](/docs/user-guide/project-config/register-gems). The profiler gems are located in `Gems/ExternalProfilers` in the `o3de-extras` folder.
 
 Once that the profiler gem that you want to use has been registered, you need to enable it for your project and rebuild the project. Refer to the [first steps of enabling the Built-In profiler](#enabling-the-built-in-profiler-gem) to see how to enable a gem for your project.
 
