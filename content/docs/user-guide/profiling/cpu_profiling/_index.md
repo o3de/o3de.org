@@ -8,7 +8,7 @@ weight: 100
 A CPU Profiler is used to **monitor the performance of your processor** while running the editor or game. It collects timed events so you can easily identify the sources of slowdowns in the codebase.
 
 {{< tip >}}
-The code behaves differently between debug and release build, so it is very likely that you will want to only profile release build to look at the performance issues of your application
+The code behaves differently between debug and release build, so you will very likely want to only profile release build to look at the performance issues of your application.
 {{< /tip >}}
 
 ## Overview
