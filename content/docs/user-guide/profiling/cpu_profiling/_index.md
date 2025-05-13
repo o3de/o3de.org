@@ -80,7 +80,7 @@ The Profiler is embedded inside the **[ImGui tools](/docs/user-guide/gems/refere
 
 Upon being opened the profiler will be showing the performance for last few frames. Click on the **"Resume/Pause"** button in the top left to toggle the update.
 
-If you want to capture more than a few frames, press the **"Begin"** button and let the profiler run, maybe jump into gameplay to perform specific actions. Once that you have enough data, you can press the **"End"** button to stop the capture and be able to navigate it.
+To capture more frames, press the `Begin` button to start the profiler, then perform the actions to profile. Once you have enough data, press the `End` button to stop the capture and navigate the data.
 
 ![Imgui profiler overview](/images/user-guide/profiling/imgui/overview.png)
 
