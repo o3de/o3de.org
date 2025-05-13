@@ -1,5 +1,5 @@
 ---
-description: Learn about the profiling tools by Open 3D Engine. 
+description: Learn about the profiling tools for Open 3D Engine. 
 title: Profiling
 linkTitle: Profiling
 weight: 1200
