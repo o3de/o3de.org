@@ -35,7 +35,7 @@ O3DE currently supports multiple profiling tools as Gems. While you can only hav
 
 ### Adding Instrumentation markers in your code
 
-You have to include `<AzCore/Debug/Profiler.h>` in your C++ file to access the profiling markers. These markers are then forwarded to the currently enabled profiler Gem (we never use a specific profiler API). You can have a look in this file to see what is exposed, but most of your use case can be covered using these two macros :
+To access the profiling markers, include `<AzCore/Debug/Profile.h>` in your C++ file. O3DE then forwards the markers to the enabled profiler Gem. Most use cases are covered using these two macros:
 
 - **AZ_PROFILE_FUNCTION** : To place at the start of a function, it will automatically grab the name of the function and take the duration of the whole function execution.
 - **AZ_PROFILE_SCOPE** : To place at the start of a scope "{}". You have to provide a name, and it will take the duration of the scope it is in (so from the AZ_PROFILE_SCOPE to the next "}").
