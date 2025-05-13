@@ -23,7 +23,7 @@ There are multiple ways to capture profiling data, each with their pros and cons
 
 ### Profiler Gems
 
-O3DE currently support multiple profiling tools as Gems to toggle on and off. These are all very capable tools so choosing between them might come down as personal taste. While you can only have one profiling Gem enabled at a time, it is easy to switch in between them so that it should be straightforward to try them all out.
+O3DE currently supports multiple profiling tools as Gems. While you can only have one profiling Gem enabled at a time, the Gem manager makes it straightforward to switch between them and try them all.
 
 | Profiler | Description | Type | Platform |
 | - | - | - | - |
