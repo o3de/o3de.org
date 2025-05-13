@@ -31,7 +31,7 @@ O3DE currently supports multiple profiling tools as Gems. While you can only hav
 | [Tracy](https://youtu.be/ghXk3Bk5F2U?si=h2j82B6EDma3rNs7&t=36) | An external free and open-source profiler which combines many features making it a hybrid profiler. [Online demo](https://tracy.nereid.pl/) | Instrumentation (with optional sampling support) | All |
 | [Optick](https://github.com/bombomby/optick) | An external free and open-source profiler widely used in the games industry. The development has halted in recent years, but it is feature-complete. | Instrumentation (with optional sampling support) | Windows |
 | [Superluminal](https://superluminal.eu/) | An external commercial profiler with strong sampling performance and UX. Widely used in the games industry. | Sampling (with Instrumentation support) | Windows |
-| [Pix](https://devblogs.microsoft.com/pix/) | The official Microsoft profiler used on XBox consoles | Sampling (with Instrumentation support) | Windows |
+| [Pix](https://devblogs.microsoft.com/pix/) | The official Microsoft profiler used on XBox consoles. | Sampling (with Instrumentation support) | Windows |
 
 ### Adding Instrumentation marker in your code
 
