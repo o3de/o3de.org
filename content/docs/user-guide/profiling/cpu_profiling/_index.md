@@ -90,7 +90,7 @@ The navigation within the profiler is done using the mouse. You can click on the
 
 ![Imgui profiler statistics](/images/user-guide/profiling/imgui/start.png)
 
-Use the **Find Region** in the visualizer to search for specific events. The timeline is interactive, click on it with the left mouse button to have it focused, then :
+Use the **Find Region** in the visualizer to search for specific events. The timeline is interactive, click on it with the left mouse button to focus it, then:
 
 - Hold left mouse button to move around the timeline
 - Hold the ctrl key and use the mouse wheel to change the timeline scale
