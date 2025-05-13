@@ -72,7 +72,7 @@ The built-in profiler is an optional Gem from the core O3DE repository. Follow [
 
 ### Opening the Profiler
 
-The Profiler is embedded inside the **[ImGui tools](/docs/user-guide/gems/reference/debug/imgui)**. Please refer to the documentation to open the ImGui tools. Once opened, you should see a "Profiler" entry in the ImGui menu, click on it to Open the CPU Profiler.
+The Profiler is embedded inside the **[ImGui tools](/docs/user-guide/gems/reference/debug/imgui)**. Open the ImGui tools, then click on the "Profiler" entry in the ImGui menu to Open the CPU Profiler.
 
 ![Imgui profiler overview](/images/user-guide/profiling/imgui/cpu-profiler-open.png)
 
