@@ -33,7 +33,7 @@ O3DE currently supports multiple profiling tools as Gems. While you can only hav
 | [Superluminal](https://superluminal.eu/) | An external commercial profiler with strong sampling performance and UX. Widely used in the games industry. | Sampling (with Instrumentation support) | Windows |
 | [Pix](https://devblogs.microsoft.com/pix/) | The official Microsoft profiler used on XBox consoles. | Sampling (with Instrumentation support) | Windows |
 
-### Adding Instrumentation marker in your code
+### Adding Instrumentation markers in your code
 
 You have to include `<AzCore/Debug/Profiler.h>` in your C++ file to access the profiling markers. These markers are then forwarded to the currently enabled profiler Gem (we never use a specific profiler API). You can have a look in this file to see what is exposed, but most of your use case can be covered using these two macros :
 
