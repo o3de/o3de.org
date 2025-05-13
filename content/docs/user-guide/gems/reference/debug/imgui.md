@@ -11,7 +11,7 @@ One of the great things about ImGui is that there is next to no overhead when th
 
 ## Accessing ImGui menus
 
-**On Host Platforms:** ImGui can be accessed by pressing the **~** key or the **home** key in the editor, game or server launchers.
+**On Host Platforms:** ImGui can be accessed by pressing the `~` key or the `home` key in the editor, game or server launchers.
 
 **On Mobile Platforms:** Edit the respective platform's system config (e.g. Android = system_android_android.cfg) to include `imgui_EnableImGui=1` before deploying to device
 
