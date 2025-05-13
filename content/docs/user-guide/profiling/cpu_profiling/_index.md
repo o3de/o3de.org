@@ -27,7 +27,7 @@ O3DE currently supports multiple profiling tools as Gems. While you can only hav
 
 | Profiler | Description | Type | Platform |
 | - | - | - | - |
-| Built-in | Provides a quick overview of the CPU and GPU events. It is embedded via the [ImGui tools](https://docs.o3de.org/docs/user-guide/gems/reference/debug/imgui/) | Instrumentation | All |
+| Built-in | Provides a quick overview of the CPU and GPU events. It is embedded via the [ImGui tools](/docs/user-guide/gems/reference/debug/imgui/). | Instrumentation | All |
 | [Tracy](https://youtu.be/ghXk3Bk5F2U?si=h2j82B6EDma3rNs7&t=36) | An external free and open-source profiler which combines many features making it an hybrid profiler. [Online demo](https://tracy.nereid.pl/) | Instrumentation (with optional sampling support) | All |
 | [Optick](https://github.com/bombomby/optick) | An external free and open-source profiler widely used in the games industry. The development has halted since the past few years but it is feature-complete | Instrumentation (with optional sampling support) | Windows |
 | [Superluminal](https://superluminal.eu/) | An external commercial profiler with strong sampling performance and UX. Widely used in the games industry | Sampling (with Instrumentation support) | Windows |
