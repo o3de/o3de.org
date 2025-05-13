@@ -15,7 +15,7 @@ One of the great things about ImGui is that there is next to no overhead when th
 
 **On Mobile Platforms:** Edit the respective platform's system config (e.g. Android = system_android_android.cfg) to include `imgui_EnableImGui=1` before deploying to device
 
-**On Editor:** Set the imgui_EnableImGui variable to 1 via the Console variable window
+**On Editor:** Set the `imgui_EnableImGui` variable to 1 via the Console variable window
 
 ![Enable ImGui](/images/user-guide/gems/reference/debug/imgui_enable.jpg)
 
