@@ -66,7 +66,7 @@ While these markers are not required if you use a sampling profiler, it is alway
 
 ### Enabling the Built-in Profiler Gem
 
-The built-in profiler is an optional Gem from the core O3DE repository. You can follow [this documentation](/docs/user-guide/project-config/add-remove-gems) to learn how to use the project manager to enable gems. If you search for "Profiler" you will see the Gem listed and you will able to enable it.
+The built-in profiler is an optional Gem from the core O3DE repository. Follow [this documentation](/docs/user-guide/project-config/add-remove-gems) to learn how to use the project manager to enable gems. In the gem manager, search for `Profiler` to find and enable the gem.
 
 ![Imgui profiler enable](/images/user-guide/profiling/enable-gem.jpg)
 
