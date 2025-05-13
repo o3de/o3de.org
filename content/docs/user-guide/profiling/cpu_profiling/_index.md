@@ -109,7 +109,7 @@ Press the `Capture` button to save your captured data in a json file. The path w
 
 These profiler Gems are located in the [o3de-extras](https://github.com/o3de/o3de-extras) github repository. 
 
-1. This repository follows the Remote Content format, you can follow [this documentation](/docs/user-guide/remote-content/use-a-remote-repository) to learn how to **register a remote repository**.
+1. This repository follows the Remote Content format, follow the [Use A Remote Repository guide](/docs/user-guide/remote-content/use-a-remote-repository) to learn how to **register a remote repository**.
 
 2. If you prefer to download o3de-extras yourself, you can follow the [Register Gems guide](/docs/user-guide/project-config/register-gems). The profiler gems are located in `Gems/ExternalProfilers` in the `o3de-extras` folder.
 
