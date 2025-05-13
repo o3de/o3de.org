@@ -101,7 +101,7 @@ When the timeline is scaled-out, you will be able to see the frametime in ms for
 
 ### Save your capture
 
-Press the "Capture" button to save your captured data in a json file. The path will be indicated right above the button. You can load any previous capture thanks to the "Load file" button.
+Press the `Capture` button to save your captured data in a json file. The path will be indicated right above the button. You can load any previous capture using the `Load file` button.
 
 ![Imgui profiler save](/images/user-guide/profiling/imgui/save.png)
 
