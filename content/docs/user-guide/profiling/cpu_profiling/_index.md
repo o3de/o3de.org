@@ -42,7 +42,7 @@ To access the profiling markers, include `<AzCore/Debug/Profile.h>` in your C++ 
 
 These two macros take a "Budget" as argument, it is used to group these tags under the same category. You can see the available budgets if you look for `AZ_DEFINE_BUDGET`.
 
-Here is an example of API in action :
+Example usage:
 
 ```cpp
 #include <AzCore/Debug/Profiler.h>
