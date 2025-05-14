@@ -90,13 +90,13 @@ The built-in profiler is an optional Gem from the core O3DE repository. Follow [
 
 ### Opening the Profiler
 
-The Profiler is embedded inside the **[ImGui tools](/docs/user-guide/gems/reference/debug/imgui)**. Open the ImGui tools, then click on the "Profiler" entry in the ImGui menu to Open the CPU Profiler.
+The Profiler is embedded inside the **[ImGui tools](/docs/user-guide/gems/reference/debug/imgui)**. Open the ImGui tools, then click on the `Profiler` entry in the ImGui menu to Open the CPU Profiler.
 
 ![Imgui profiler overview](/images/user-guide/profiling/imgui/cpu-profiler-open.png)
 
 ### Launch a capture
 
-The profiler stores the state of the last 10 frames in memory. Upon being opened you will see the timeline constantly updating as new frames are pushed unto the stack. Click on the **`Resume/Pause`** button in the top left to pause this update.
+The profiler stores the state of **the last 10 frames** in memory. Upon being opened you will see the timeline constantly updating as new frames are pushed unto the stack. Click on the **`Resume/Pause`** button in the top left to pause this update.
 
 To capture more frames, press the `Begin` button. The profiler will be able to capture a maximum of 2 minutes of data at 120 frames per seconds. Once you have enough data, press the `End` button to stop the capture.
 
@@ -232,9 +232,9 @@ Add the middle mouse button is used to **focus** :
 
 ### Basic Search
 
-If you want to **find a specific event**, press `ctrl + F` to open the "Find zone" window. 
+If you want to **find a specific event**, press `ctrl + F` to open the `Find zone` window. 
 
-1. You will want to tick the **"Ignore case"** option.
+1. You will want to tick the **`Ignore case`** option.
 2. Enter the name of event that you want to inspect and press enter.
 3. Scroll at the bottom, open the dropdown with the threads name. Click with the middle mouse button to **focus** the timeline on the event.
 
@@ -334,15 +334,15 @@ Optick can be tailored to attach many additionnal informations on the capture, t
 
 Superluminal is a Commercial profiler, it offers a trial period but you have to buy a license past this trial if you want to continue using it. To prevent licensing issues we won't attach screenshots and we recommend you to have a look [at the official documentation](https://www.superluminal.eu/docs/documentation.html).
 
-The **Superluminal Gem is not required** to use Superluminal with 03DE, it will only offer some instrumentation data on top of the existing sampling data.
+The **Superluminal Gem is not required** to use Superluminal with o3de, it will only offer some instrumentation data on top of the existing sampling data.
 
 ### Grabbing the application
 
-You can download Superluminal [from the main website](https://superluminal.eu/). During the installation process, if you decide to not use the default installation folder (`C:/Program Files/Superluminal`) you will have to update the CMake variable `SUPERLUMINAL_API_PATH` if you enable the Superluminal 03DE Gem.
+You can download Superluminal [from the main website](https://superluminal.eu/). During the installation process, if you decide to not use the default installation folder (`C:/Program Files/Superluminal`) you will have to update the CMake variable `SUPERLUMINAL_API_PATH` if you enable the Superluminal o3de Gem.
 
 ### Launch a capture
 
-You can open `Superluminal` directly, it will be in charge of launching 03DE. Under the **`Start`** menu on the left click on the **`Run`** button and fill-up the following fields :
+You can open `Superluminal` directly, it will be in charge of launching o3de. Under the **`Start`** menu on the left click on the **`Run`** button and fill-up the following fields :
 
 - Application: The path to your `Editor.exe` or your exported game
 - Working Directory: You can use the same folder as your executable
@@ -375,7 +375,7 @@ And left click is used for quick filtering :
 
 ### See the Frame Navigator
 
-Superluminal has **no notion of frame**, but it can take any event and display all of its occurences in a similar look as Optick Frame Navigator. Simply right click on the main loop event ("CryEditApp::OnIdle" for the editor) and click **"Find all occurences"**. You will see to tab at the top showing the occurences as a column chart with their ms time. This tab is called the ["Instance Graph"](https://www.superluminal.eu/docs/documentation.html#function_statistics_UI)
+Superluminal has **no notion of frame**, but it can take any event and display all of its occurences in a similar look as Optick Frame Navigator. Simply right click on the main loop event (`CryEditApp::OnIdle` for the editor) and click **`Find all occurences`**. You will see to tab at the top showing the occurences as a column chart with their ms time. This tab is called the [`Instance Graph`](https://www.superluminal.eu/docs/documentation.html#function_statistics_UI)
 
 The first few calls might be longer than usual as the capture was warming up, so you might want to **drag select on the timeline before doing the filtering** to only show the occurences in your selected range. Another important points is that **the column chart is ordered by performance, not by frame number** so that the most expensive frames will be shown first.
 
@@ -388,12 +388,12 @@ Right above each thread dropdown you have the [Thread Interaction view](https://
 Pix is a free profiler made by Microsoft. Originaly made to profile GPU event for DirectX12, it is now able to profile the CPU. To prevent licensing issues we won't attach screenshots and we recommend you to have a look [at the official documentation](https://devblogs.microsoft.com/pix/documentation/) and this [official youtube playlist](https://www.youtube.com/watch?v=thiF3xKT_Qg&list=PLeHvwXyqearWuPPxh6T03iwX-McPG5LkB).
 
 {{< caution >}}
-At the time of writing the Pix is not implemented as a Gem in 03DE, so you have to [build the engine from source](/docs/welcome-guide/setup/setup-from-github) if you want to use it
+At the time of writing the Pix is not implemented as a Gem in o3de, so you have to [build the engine from source](/docs/welcome-guide/setup/setup-from-github) if you want to use it
 {{< /caution >}}
 
 ### Grabbing the application
 
-You have to download both the application and the WinPixEventRuntime library from the [Microsoft website](https://devblogs.microsoft.com/pix/download/). Installing the application should be straightforward, but there are specific steps to do in order to provide WinPixEventRuntime to 03DE.
+You have to download both the application and the WinPixEventRuntime library from the [Microsoft website](https://devblogs.microsoft.com/pix/download/). Installing the application should be straightforward, but there are specific steps to do in order to provide WinPixEventRuntime to o3de.
 
 1. Download the nuget package from [the nuget website](https://www.nuget.org/packages/WinPixEventRuntime) (look for **Download package** on the right below the "About" section).
 2. Change the extension of the file from `.nuget` to `.zip`
@@ -401,11 +401,11 @@ You have to download both the application and the WinPixEventRuntime library fro
 4. Copy the folder to your `$LY_3RDPARTY_PATH` folder. By default on windows it is `C:\Users\YOUR_NAME\.o3de\3rdParty`
 5. Set the CMake flag `LY_PIX_ENABLED` to on and reconfigure the build (`-DLY_PIX_ENABLED=ON` on your configure command)
 
-After recompiling you will be able to use PIX with 03DE.
+After recompiling you will be able to use PIX with o3de.
 
 ### Launch a capture
 
-PIX is in charge of launching 03DE so just launch the PIX application. You will have to fill the following fields under **`Select Target Process`** (pick **`Launch Win32`**) :
+PIX is in charge of launching o3de so just launch the PIX application. You will have to fill the following fields under **`Select Target Process`** (pick **`Launch Win32`**) :
 
 - Path to executable: The path to your `Editor.exe` or your exported game
 - Working directory: You can use the same folder as your executable
@@ -434,7 +434,7 @@ And left click is used for quick filtering :
 If you want to **find a specific event**, use the `Range Details` tab at the bottom and start typing the name of the event.
 
 - You can filter-out threads from your search via the `Selector` view below. The event found will be shown on the right with their callstack.
-- You can right click on an event and press **"`Show in Timeline`** in order to focus on it.
+- You can right click on an event and press **`Show in Timeline`** in order to focus on it.
 
 ### Context Switch
 
