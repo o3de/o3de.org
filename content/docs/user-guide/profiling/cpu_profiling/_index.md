@@ -96,9 +96,9 @@ The Profiler is embedded inside the **[ImGui tools](/docs/user-guide/gems/refere
 
 ### Launch a capture
 
-Upon being opened the profiler will be showing the performance for last few frames. Click on the **"Resume/Pause"** button in the top left to toggle the update.
+The profiler stores the state of the last 10 frames in memory. Upon being opened you will see the timeline constantly updating as a new frame is pushed into the stack. Click on the **"Resume/Pause"** button in the top left to pause this update.
 
-To capture more frames, press the `Begin` button to start the profiler, then perform the actions to profile. Once you have enough data, press the `End` button to stop the capture and navigate the data.
+To capture more frames, press the `Begin` button. The profiler will be able to capture a maximum of 2 minutes of data at 120 frames per seconds. Once you have enough data, press the `End` button to stop the capture.
 
 ![Imgui profiler overview](/images/user-guide/profiling/imgui/overview.png)
 
