@@ -40,9 +40,9 @@ To access the profiling markers, include `<AzCore/Debug/Profile.h>` in your C++ 
 - **AZ_PROFILE_FUNCTION** : Start a timing event with the name of the current function.
 - **AZ_PROFILE_SCOPE** : Start a timing event with a custom name.
 
-A timing event is automatically ended when you reach the end of the current scope (the next "}"). Its duration is computed as follows `timeAtEventEnd - timeAtEventStart`.
+A timing event is automatically ended when you reach the end of the current scope (the next "`}`").
 
-You have to provide a "Budget" argument when using any of these two macros. The budget is used to group these tags under the same category. The following budgets are available by default :
+You have to provide a **"Budget"** argument when using any of these two macros. It is is used to group these tags under the same category. The following budgets are available by default :
 
 - Animation
 - Audio
@@ -78,7 +78,7 @@ While markers are **not required if you use a sampling profiler**, they will hel
 - The budget name will be visible next to the event name.
 - Events from the same budget group will share the same color in the external profiler application.
 
-Given that the sampled events won't have these additional informations, they will stand out in the capture and provide context about the surrounding area.
+Given that the sampled events won't have these additional informations, your markers will stand out in the capture and provide context about the surrounding area.
 
 ## Using the Built-in profiler (All platforms)
 
@@ -96,7 +96,7 @@ The Profiler is embedded inside the **[ImGui tools](/docs/user-guide/gems/refere
 
 ### Launch a capture
 
-The profiler stores the state of the last 10 frames in memory. Upon being opened you will see the timeline constantly updating as a new frame is pushed into the stack. Click on the **"Resume/Pause"** button in the top left to pause this update.
+The profiler stores the state of the last 10 frames in memory. Upon being opened you will see the timeline constantly updating as new frames are pushed unto the stack. Click on the **`Resume/Pause`** button in the top left to pause this update.
 
 To capture more frames, press the `Begin` button. The profiler will be able to capture a maximum of 2 minutes of data at 120 frames per seconds. Once you have enough data, press the `End` button to stop the capture.
 
@@ -143,7 +143,7 @@ You can download [the latest release](https://github.com/wolfpld/tracy/releases)
 
 ### (Linux) Building the server application
 
-You will have to build the application yourself, this process is outlined in the documentation file under "2.3 Building the server". You can find a summary below :
+You will have to build the application yourself, this process is outlined in the [documentation file](https://github.com/wolfpld/tracy/releases/latest/download/tracy.pdf) under "2.3 Building the server". You can find a summary below :
 
 1. Install git, CMake and clang (you can learn how to set them up via the [o3de documentation](/docs/welcome-guide/requirements))
 
@@ -205,7 +205,7 @@ On Windows:
 On Linux:
 - Open a terminal next to your editor build. Then launch it with sudo `sudo ./Editor --project-path="/home/Path_To_Your_Project"`
 
-Then you can launch the **tracy-profiler** application that you downloaded or built. Under the **"connect"** button you should see the **"Editor"** process being listed. Click on it to start the capture of profiling data.
+Then you can launch the **tracy-profiler** application that you downloaded or built. Under the **`connect`** button you should see the **"Editor"** process being listed. Click on it to start the capture of profiling data.
 
 ![Tracy connect](/images/user-guide/profiling/tracy/connect.jpg)
 
@@ -242,11 +242,11 @@ If you want to **find a specific event**, press `ctrl + F` to open the "Find zon
 
 ### Basic Analysis
 
-You might want to see for a given time range the most expensive events. In order to do so, open the **Statistics** panel
+You might want to see for a given time range the most expensive events. In order to do so, open the **`Statistics`** panel
 
-1. You can order by time spent if you click on the **"Total time"** column.
-2. Click on the **"Limits"** button to access advanced filtering
-3. Tick the **"Statistics"** button and click on **Limit to view**.
+1. You can order by time spent if you click on the **`Total time`** column.
+2. Click on the **`Limits`** button to access advanced filtering
+3. Tick the **`Statistics`** button and click on **`Limit to view`**.
 
 The event shown in the statistics will now only contain the range in red in the timeline.
 
@@ -270,7 +270,7 @@ You can download [the latest release](https://github.com/bombomby/optick/release
 
 While not required, **launching the editor or game as Administrator** will allow the profiler to gather sampling data on top of the instrumentation tags. Right click on the editor shortcut that you use, and select "Run as administrator". You will likely want to use `--project-path="C:/Path_To_Your_Project"` as launch argument.
 
-You can now launch Optick. Click on the **play button in the top left corner to start the capture**. Jump into game and move around until you have enough data.
+You can now launch Optick. Click on the **`play` button in the top left corner to start the capture**. Jump into game and move around until you have enough data.
 
 ![Optick connect](/images/user-guide/profiling/optick/connect.jpg)
 
@@ -298,7 +298,7 @@ Navigation is done using the mouse :
 If you want to **find a specific event**, press `ctrl + F` and start typing. 
 
 1. Use key down and key up to switch between events, and press enter to jump to it (it will pick the most expensive one amongst all the occurences)
-2. In the Function Tree sub-window, you will see the events below yours, with the time spent in ms. On the top right of the function tree, click on the **"%" button** to show what each event represents in the callstack.
+2. In the Function Tree sub-window, you will see the events below yours, with the time spent in ms. On the top right of the function tree, click on the **`%` button** to show what each event represents in the callstack.
 
 ![Optick search](/images/user-guide/profiling/optick/find.jpg)
 
@@ -306,7 +306,7 @@ If you want to **find a specific event**, press `ctrl + F` and start typing.
 
 The sampling will capture the callstacks at regular intervals. You can inspect them from the Event Timeline :
 
-1. Click on **"Show callstacks"** on the top right of the timeline
+1. Click on **`Show callstacks`** on the top right of the timeline
 2. Diamonds will be shown in the timeline. Use `ctrl + Right click` on one to see the callstack. The yellow diamonds are system calls whereas the red diamonds are auto-sampling.
 
 ![Optick callstack](/images/user-guide/profiling/optick/callstack.jpg)
@@ -324,7 +324,7 @@ If you **hold control and left click** in the context switch in the timeline, a 
 
 ### Further Settings
 
-You can have more fine-grained control over the sampling and capture mode in general if you click on the **"Cog" button** next to the play button. Can be useful if you want to increase the autosampling frequency.
+You can have more fine-grained control over the sampling and capture mode in general if you click on the **`Cog` button** next to the play button. Can be useful if you want to increase the autosampling frequency.
 
 ![Optick settings](/images/user-guide/profiling/optick/sampling.jpg)
 
@@ -342,19 +342,19 @@ You can download Superluminal [from the main website](https://superluminal.eu/).
 
 ### Launch a capture
 
-You can open `Superluminal` directly, it will be in charge of launching 03DE. Under the **Start** menu on the left click on the **Run** button and fill-up the following fields :
+You can open `Superluminal` directly, it will be in charge of launching 03DE. Under the **`Start`** menu on the left click on the **`Run`** button and fill-up the following fields :
 
 - Application: The path to your `Editor.exe` or your exported game
 - Working Directory: You can use the same folder as your executable
 - Commandline Arguments: If you use the editor, enter `--project-path="C:/path/to/your/project"`
 
-Then under **Capture Options**
+Then under **`Capture Options`**
 
-- Tick "Enable PerformanceAPI events" if you enabled the Superluminal Gem
-- Untick "Enable child process profiling" so that the asset processor don't add noise to your capture
-- Untick "Start profiling immediately"
+- Tick `Enable PerformanceAPI events` if you enabled the Superluminal Gem
+- Untick `Enable child process profiling` so that the asset processor don't add noise to your capture
+- Untick `Start profiling immediately`
 
-You are ready to press `Run` ! The editor or your game will boot. When you are ready, click the **Start Recording** button and the capture will start. Stop it when you are done, after a bit the capture will be ready to navigate.
+You are ready to press `Run` ! The editor or your game will boot. When you are ready, click the **`Start Recording`** button and the capture will start. Stop it when you are done, after a bit the capture will be ready to navigate.
 
 ### Navigate your capture
 
@@ -405,18 +405,18 @@ After recompiling you will be able to use PIX with 03DE.
 
 ### Launch a capture
 
-PIX is in charge of launching 03DE so just launch the PIX application. You will have to fill the following fields under **Select Target Process** (pick **"Launch Win32"**) :
+PIX is in charge of launching 03DE so just launch the PIX application. You will have to fill the following fields under **`Select Target Process`** (pick **`Launch Win32`**) :
 
 - Path to executable: The path to your `Editor.exe` or your exported game
 - Working directory: You can use the same folder as your executable
 - Command line arguments: If you use the editor, enter `--project-path="C:/path/to/your/project"`
 - Launch for GPU Capture: Make sure it is unticked as we are profiling the CPU
 
-You can then click **Launch** to start the editor/game. When you are ready to capture, click **Start Timing Capture** to start the capture, and click on the same button again to stop it.
+You can then click **`Launch`** to start the editor/game. When you are ready to capture, click **`Start Timing Capture`** to start the capture, and click on the same button again to stop it.
 
 ### Navigate your capture
 
-You will be greeted by the "Capture Summary". For a first overview you should pick the **"Timeline"** tab to browse the events per frame.
+You will be greeted by the `Capture Summary`. For a first overview you should pick the **`Timeline`** tab to browse the events per frame.
 
 Navigation is done using the mouse :
 
@@ -431,10 +431,10 @@ And left click is used for quick filtering :
 
 ### Basic Search
 
-If you want to **find a specific event**, use the "Range Details" tab at the bottom and start typing the name of the event.
+If you want to **find a specific event**, use the `Range Details` tab at the bottom and start typing the name of the event.
 
-- You can filter-out threads from your search via the "Selector" view below. The event found will be shown on the right with their callstack.
-- You can right click on an event and press **"Show in Timeline"** in order to focus on it.
+- You can filter-out threads from your search via the `Selector` view below. The event found will be shown on the right with their callstack.
+- You can right click on an event and press **"`Show in Timeline`** in order to focus on it.
 
 ### Context Switch
 
