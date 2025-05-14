@@ -32,7 +32,7 @@ Simply unzip the folder once that it has been downloaded.
 Some repositories are using git lfs to store large files. In this case you shouldn't use the download button as files will be omitted, but rather perform a `git clone`. A similar setup can be seen [in this documentation](/docs/welcome-guide/setup/setup-from-github). A repository uses git lfs when it contains a `.gitattributes` file at the root.
 {{< /caution >}}
 
-Now that you have the Gem content in local, you can use the project manager to register it. Simply use the **Gems** page, and use the right burger menu to finally click on **"Add Existing Gem"**. It will open a file dialog that you can use to browse to your gem folder (it should contain a `gem.json` file).
+Now that you have the Gem content in local, you can use the project manager to register it. Simply use the **`Gems`** page, and use the right burger menu to finally click on **`Add Existing Gem`**. It will open a file dialog that you can use to browse to your gem folder (it should contain a `gem.json` file).
 
 ![Register Gem](/images/user-guide/project-config/register-gems/register-gem.jpg)
 
@@ -40,7 +40,7 @@ If the operation succeeded, you should see your Gem listed in the Gems tab. If y
 
 ### Deregister a local Gem
 
-The **Gems** page is listing every gems currently registered. If you use the filter on the left to only display the **Local** Gems, and pick one of them, then you should see a button on the right to **Remove Gem**. Click on this button to unregister the Gem. 
+The **`Gems`** page is listing every gems currently registered. If you use the filter on the left to only display the **Local** Gems, and pick one of them, then you should see a button on the right to **`Remove Gem`**. Click on this button to unregister the Gem. 
 
 ![Remove Gem](/images/user-guide/project-config/register-gems/remove-gem.jpg)
 
