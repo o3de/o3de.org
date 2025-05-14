@@ -37,10 +37,23 @@ O3DE currently supports multiple profiling tools as Gems. While you can only hav
 
 To access the profiling markers, include `<AzCore/Debug/Profile.h>` in your C++ file. O3DE then forwards the markers to the enabled profiler Gem. Most use cases are covered using these two macros:
 
-- **AZ_PROFILE_FUNCTION** : To place at the start of a function, it will automatically grab the name of the function and take the duration of the whole function execution.
-- **AZ_PROFILE_SCOPE** : To place at the start of a scope "{}". You have to provide a name, and it will take the duration of the scope it is in (so from the AZ_PROFILE_SCOPE to the next "}").
+- **AZ_PROFILE_FUNCTION** : Start a timing event with the name of the current function.
+- **AZ_PROFILE_SCOPE** : Start a timing event with a custom name.
 
-These two macros take a "Budget" as argument, it is used to group these tags under the same category. You can see the available budgets if you look for `AZ_DEFINE_BUDGET`.
+A timing event is automatically ended when you reach the end of the current scope (the next "}"). Its duration is computed as follows `timeAtEventEnd - timeAtEventStart`.
+
+You have to provide a "Budget" argument when using any of these two macros. The budget is used to group these tags under the same category. The following budgets are available by default :
+
+- Animation
+- Audio
+- AzCore
+- Editor
+- Entity
+- Game
+- System
+- Physics
+
+You can create new budget types by using `AZ_DEFINE_BUDGET(YOUR_BUDGET_NAME)` in the global scope of a C++ file.
 
 Example usage:
 
@@ -60,7 +73,12 @@ void AssetDataStream::Open(const AZStd::vector<AZ::u8>& data)
 }
 ```
 
-While these markers are not required if you use a sampling profiler, it is always nice to have them around for sensitive codepaths as it does make the navigation in the profiler easier (sampling profilers often supports instrumentation tags on top of their sampled data).
+While markers are **not required if you use a sampling profiler**, they will help you navigate your capture :
+
+- The budget name will be visible next to the event name.
+- Events from the same budget group will share the same color in the external profiler application.
+
+Given that the sampled events won't have these additional informations, they will stand out in the capture and provide context about the surrounding area.
 
 ## Using the Built-in profiler (All platforms)
 
