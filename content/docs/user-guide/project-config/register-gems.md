@@ -14,7 +14,7 @@ After you've registered a Gem, you can enable it for use in your project. Refer 
 
 ## Using Project Manager
 
-Launch Project Manager, which can be found on your desktop or in `bin/Windows/profile/Default/o3de.exe` if you installed O3DE, or in your engine build directory if you built O3DE from source.
+Launch Project Manager, which can be found on your desktop or in `bin/{platform}/profile/Default/o3de.exe` if you installed O3DE, or in your engine build directory if you built O3DE from source.
 
 ### Register a local Gem
 
