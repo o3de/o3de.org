@@ -22,7 +22,7 @@ Launch Project Manager, which can be found on your desktop or in `bin/{platform}
 If the gem that you want to register is part of a repository, it might use the **Remote Content** format (look for a `repo.json` file at the root folder). In this case you can follow [this documentation](/docs/user-guide/remote-content/use-a-remote-repository) for a straightforward way to register multiple gems at once.
 {{< /tip >}}
 
-If the gem does not yet exist in your local files, you will have to **download it from the source**. It is common to host content in websites such as github, so you can find an example below on how to download a repository from github which contains a Gem. 
+If the gem does not yet exist in your local files, you will have to **download it from the source**. It is common to host content on websites such as GitHub, so you can find an example below on how to download a repository from GitHub which contains a Gem. 
 
 ![Download repository](/images/user-guide/project-config/register-gems/github-download.jpg)
 
