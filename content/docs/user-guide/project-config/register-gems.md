@@ -26,7 +26,7 @@ If the gem does not yet exist in your local files, you will have to **download i
 
 ![Download repository](/images/user-guide/project-config/register-gems/github-download.jpg)
 
-Simply unzip the folder once that it has been downloaded.
+Unzip the folder once it has been downloaded.
 
 {{< caution >}}
 Some repositories are using git lfs to store large files. In this case you shouldn't use the download button as files will be omitted, but rather perform a `git clone`. A similar setup can be seen [in this documentation](/docs/welcome-guide/setup/setup-from-github). A repository uses git lfs when it contains a `.gitattributes` file at the root.
