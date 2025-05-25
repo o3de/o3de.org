@@ -44,9 +44,9 @@ Creating new projects or using the advanced development features of O3DE require
 
 ## Microsoft Windows
 
-At this time, Microsoft Windows is the primary platform for using the O3DE
-editor and for building source. Specifically, **Windows 10 version 20H2 (10.0.19042)**
-or later is required.
+To use the O3DE Editor on Windows, **Windows 10 version 20H2 (10.0.19042)** or later is required.
+
+The following instructions describe how to install the required additional software.
 
 ### Microsoft Visual Studio
 
