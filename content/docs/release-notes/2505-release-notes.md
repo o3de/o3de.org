@@ -160,7 +160,7 @@ For simulation, O3DE now implements the newly standardized simulation interfaces
   - Fixed generating Buffer Barriers for Transient Attachments 
   - Fixed Vulkan version handling
   - Fixed validation error when subpassMergeFeedback is not supported
-  - Added RHI HDR support
+  - Added RHI HDR support (activated via CVAR)
 - DX12 specific fixes:
   - Fixed bindless descriptors
   - Fixed DX12::StreamingImagePool related deadlock
