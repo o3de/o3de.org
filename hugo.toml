@@ -43,14 +43,14 @@ unsafe = true
   page = ["HTML", "RSS"]
 
 [params]
-font_awesome_version = "5.12.0"
-mermaid_version = ["9.2.2", "sha384-W/RuUCsZGwf4MwkS0K4JdFzoA0RgiA6foiYzRo68rW5DNPfq+5Dr0uGKY1zecHEA"]
-description = "Open 3D Engine (O3DE) is a modular, open source, cross-platform 3D engine built to power anything from AAA games to cinema-quality 3D worlds to high-fidelity simulations. No fees or commercial obligations. Apache 2.0-licensed. Managed by The Linux Foundation."
-favicon = "favicon.ico"
-repositoryUrl = "https://github.com/o3de/o3de.org"
-contentDir = "/content/"
-docsDir = "/docs/"
-sourceRepo = "https://github.com/o3de/o3de"
+  font_awesome_version = "5.12.0"
+  mermaid_version = ["9.2.2", "sha384-W/RuUCsZGwf4MwkS0K4JdFzoA0RgiA6foiYzRo68rW5DNPfq+5Dr0uGKY1zecHEA"]
+  description = "Open 3D Engine (O3DE) is a modular, open source, cross-platform 3D engine built to power anything from AAA games to cinema-quality 3D worlds to high-fidelity simulations. No fees or commercial obligations. Apache 2.0-licensed. Managed by The Linux Foundation."
+  favicon = "favicon.ico"
+  repositoryUrl = "https://github.com/o3de/o3de.org"
+  contentDir = "/content/"
+  docsDir = "/docs/"
+  sourceRepo = "https://github.com/o3de/o3de"
 
 [params.docs]
 # Docs version data format: ["display name", "baseURL"]
@@ -65,55 +65,55 @@ versions = [
 ]
 
 [params.logos]
-navbar = "O3DE-Logo-with-color-black.svg"
-footer = "O3DE-Logo-REV-Mono.svg"
-og_image = "O3DE-Circle-Icon.png"
-docs_footer = "O3DE-Logo-with-color.svg"
+  navbar = "O3DE-Logo-with-color-black.svg"
+  footer = "O3DE-Logo-REV-Mono.svg"
+  og_image = "O3DE-Circle-Icon.png"
+  docs_footer = "O3DE-Logo-with-color.svg"
 
 [[params.social]]
-name = "O3DE GitHub Forums"
-url = "https://github.com/o3de/o3de/discussions"
-icon = "fab fa-github"
+  name = "O3DE GitHub Forums"
+  url = "https://github.com/o3de/o3de/discussions"
+  icon = "fab fa-github"
 
 [[params.social]]
-name = "O3DE Discord Chat"
-url = "https://discord.com/invite/o3de"
-icon = "fab fa-discord"
+  name = "O3DE Discord Chat"
+  url = "https://discord.com/invite/o3de"
+  icon = "fab fa-discord"
 
 [[params.social]]
-name = "O3DE Public Calendar"
-url = "https://lists.o3de.org/g/o3de-calendar/calendar"
-icon = "fas fa-calendar-day"
+  name = "O3DE Public Calendar"
+  url = "https://lists.o3de.org/g/o3de-calendar/calendar"
+  icon = "fas fa-calendar-day"
 
 [[params.social]]
-name = "O3DE Twitter"
-url = "https://twitter.com/o3dengine"
-icon = "fab fa-twitter"
+  name = "O3DE Twitter"
+  url = "https://twitter.com/o3dengine"
+  icon = "fab fa-twitter"
 
 [[params.social]]
-name = "O3DE YouTube"
-url = "https://www.youtube.com/channel/UCTC8GDw1XidOTUBEFRbN-sA"
-icon = "fab fa-youtube"
+  name = "O3DE YouTube"
+  url = "https://www.youtube.com/channel/UCTC8GDw1XidOTUBEFRbN-sA"
+  icon = "fab fa-youtube"
 
 [[params.fonts]]
-name = "Open Sans"
-sizes = [300, 400, 600, 700]
-type = "sans_serif"
+  name = "Open Sans"
+  sizes = [300, 400, 600, 700]
+  type = "sans_serif"
 
 [[params.fonts]]
-name = "Fira Mono"
-sizes = [300, 400, 600, 700]
-type = "monospace"
+  name = "Fira Mono"
+  sizes = [300, 400, 600, 700]
+  type = "monospace"
 
 [[params.fonts]]
-name = "Open Sans"
-sizes = [100, 200, 300, 400, 500, 600, 700]
-type = "heading_font"
+  name = "Open Sans"
+  sizes = [100, 200, 300, 400, 500, 600, 700]
+  type = "heading_font"
 
 [[menu.main]]
-name = "DOWNLOAD"
-url = "/download"
-weight = 5
+  name = "DOWNLOAD"
+  url = "/download"
+  weight = 5
 
 # [[menu.main]]
 # name = "News"
@@ -121,15 +121,15 @@ weight = 5
 # weight = 2
 
 [[menu.main]]
-name = "GET STARTED"
-url = "/docs/welcome-guide"
-weight = 1
+  name = "GET STARTED"
+  url = "/docs/welcome-guide"
+  weight = 1
 
 [[menu.main]]
-name = "COMMUNITY"
-url = "/community"
-weight = 2
-identifier = "community"
+  name = "COMMUNITY"
+  url = "/community"
+  weight = 2
+  identifier = "community"
 
 # [[menu.main]]
 # name = "Community subitem placeholder"
@@ -138,12 +138,12 @@ identifier = "community"
 # parent = "community"
 
 [[menu.main]]
-name = "LEARN"
-url = "/docs"
-weight = 3
-identifier = "docs"
+  name = "LEARN"
+  url = "/docs"
+  weight = 3
+  identifier = "docs"
 
 [[menu.main]]
-name = "CONTRIBUTE"
-url = "/contribute"
-weight = 4
+  name = "CONTRIBUTE"
+  url = "/contribute"
+  weight = 4
