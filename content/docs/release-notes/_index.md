@@ -12,7 +12,7 @@ primary: true
 
 ## Current version of Open 3D Engine
 
-**Latest version**: 25.05, released on June 3, 2025.
+**Latest version**: 25.05, released on June 17, 2025.
 
 **Release Notes**: [O3DE 25.05 Release Notes](./2505-release-notes)
 
