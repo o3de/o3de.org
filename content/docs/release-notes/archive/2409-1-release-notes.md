@@ -2,7 +2,7 @@
 linktitle: 24.09.1 Release Notes
 title: Release Notes for Open 3D Engine 24.09.1
 description: Full release notes for Open 3D Engine (O3DE) version 24.09.1.
-weight: 890
+weight: 889
 toc: true
 ---
 
