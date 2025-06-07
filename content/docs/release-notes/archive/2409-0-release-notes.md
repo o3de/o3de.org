@@ -1,3 +1,11 @@
+---
+linktitle: 24.09.0 Release Notes
+title: Release Notes for Open 3D Engine 24.09.0
+description: Full release notes for Open 3D Engine (O3DE) version 24.09.0.
+weight: 891
+toc: true
+---
+
 # O3DE 24.09.0 Release Notes
 
 Get ready for a game-changing update with the O3DE 24.09 release. This latest version is packed with fantastic enhancements driven by your feedback, focusing on turbocharging performance and elevating your experience. Now, with the installer version, you can build projects using only Script Canvas and Lua—no compiler needed\! But that’s just the beginning. We’ve supercharged editor startup times with up to a jaw-dropping 90% boost for large projects brimming with assets. Mobile developers, rejoice\! Enjoy a staggering 400% increase in performance on both iOS and Android, along with dramatically reduced runtime memory usage. For simulation use cases, we have added the Georeference component, ability to parse Gazebo data, and a ROS2FrameComponent, along with many simulation performance improvements. This release is bursting with hundreds of quality of life improvements and bug fixes. Dive in to explore just a few of the exciting highlights that 24.09 has in store.

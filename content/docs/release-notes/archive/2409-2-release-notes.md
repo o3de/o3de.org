@@ -1,3 +1,11 @@
+---
+linktitle: 24.09.2 Release Notes
+title: Release Notes for Open 3D Engine 24.09.2
+description: Full release notes for Open 3D Engine (O3DE) version 24.09.2.
+weight: 889
+toc: true
+---
+
 ## 24.09.2 Release Notes
 
 24.09.2 is a maintenance release to fix issues found in the 24.09.0 release. Primarily focused on performance optimizations and bug fixes. 

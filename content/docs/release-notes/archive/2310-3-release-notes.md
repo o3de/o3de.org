@@ -1,3 +1,11 @@
+---
+linktitle: 23.10.3 Release Notes
+title: Release Notes for Open 3D Engine 23.10.3
+description: Full release notes for Open 3D Engine (O3DE) version 23.10.3.
+weight: 892
+toc: true
+---
+
 The **Open 3D Engine (O3DE)** 23.10.3 This release is a point release (primarily bug fixes) for the 23.10 major release. This point release focuses on bug fixes for the Document Property Editor (DPE), crashes across Windows and Linux, optimization for decals, minor improvements for editor startup times, address control input inconsistencies, quality of life improvements for the Asset Browser, and resolves some build issues with clang versions.
 
 
