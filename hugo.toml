@@ -8,7 +8,7 @@ languageCode = "en-us"
   # Uncomment and modify as necessary to test local versions of imports.
   # Be sure to comment out again before commit.
   # replacements = "github.com/o3de/api.o3de.org -> ../../api.o3de.org"
-  replacements = "github.com/o3de/hugo-odie -> ../../odie-theme"
+  # replacements = "github.com/o3de/hugo-odie -> ../../hugo-odie"
   [module.hugoVersion]
     extended = true
     min = '0.143.0'
