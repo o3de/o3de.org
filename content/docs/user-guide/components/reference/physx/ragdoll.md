@@ -22,7 +22,7 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll.
 
 1. Choose **Tools**, **Animation Editor**.
 
-1. Use the **Animation Editor** to create and control the physical representation of the ragdoll. For more information, see [Creating and Simulating a PhysX Ragdoll](/docs/user-guide/visualization/animation/animation-editor/creating-and-simulating-physx-ragdoll/).
+1. Use the **Animation Editor** to create and control the physical representation of the ragdoll. For more information, see [Creating and Simulating a PhysX Ragdoll](/docs/user-guide/visualization/animation/animation-editor/ragdoll/ragdoll-simulating-in-editor).
 
 ## PhysX Ragdoll Component Properties 
 
