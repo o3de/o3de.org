@@ -3,13 +3,13 @@ linkTitle: Grippers
 title: Grippers
 description: Simulating robotic grippers with ROS 2 Gem Open 3D Engine (O3DE).
 toc: true
-weight: 520
+weight: 220
 ---
 
 ## Overview
 
 Grippers are one of the most widely used effectors in robotic manipulation. 
-The simulated robotic grippers are controlled by ROS 2 action servers that allow the user to track the current status of the gipping operation.
+The simulated robotic grippers are controlled by ROS 2 action servers that allow the user to track the current status of the gripping operation.
 The API to control the gripper through an action server is available in [control_msgs](https://github.com/ros-controls/control_msgs/blob/master/control_msgs/action/GripperCommand.action).
 ### Supported features
 

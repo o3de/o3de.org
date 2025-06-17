@@ -5,6 +5,8 @@ toc: true
 weight: 100
 ---
 
+{{< o3de-aws-gems-moved >}}
+
 To get started using AWS Gems with AWS services in your O3DE project, complete the following steps.
 
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you don't have one.

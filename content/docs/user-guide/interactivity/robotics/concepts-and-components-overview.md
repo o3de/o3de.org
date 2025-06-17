@@ -2,7 +2,7 @@
 linkTitle: Concepts and Structure
 title: ROS 2 Concepts and Structure
 description: Understanding basic concepts and structure of the ROS 2 Gem in Open 3D Engine (O3DE).
-weight: 300
+weight: 120
 toc: true
 ---
 
@@ -22,7 +22,7 @@ Note that the simulation node is handled through `ROS2SystemComponent` - a singl
 Typically, you will be creating publishers and subscriptions in order to communicate with the ROS 2 ecosystem using common topics.
 This is done through [rclcpp API](https://docs.ros.org/en/humble/p/rclcpp/generated/classrclcpp_1_1Node.html#classrclcpp_1_1Node). Example:
 
-```
+```cpp
 auto ros2Node = ROS2Interface::Get()->GetNode();
 AZStd::string fullTopic = ROS2Names::GetNamespacedName(GetNamespace(), m_MyTopic);
 m_myPublisher = ros2Node->create_publisher<sensor_msgs::msg::PointCloud2>(fullTopic.data(), QoS());
@@ -131,7 +131,7 @@ See the [Vehicle Dynamics](vehicle-dynamics.md) section.
 Before the simulation, you must set up as the component's available spawnables and define the named spawn points in the component's properties via the **O3DE Editor**.
 This can be done by adding `ROS2SpawnPointComponent` to a child entity of an entity with `ROS2SpawnerComponent`. 
 During the simulation you can access the names of available spawnables and request spawning by using ROS 2 services.
-The names of services are `/get_available_spawnable_names` and `/spawn_entity` respectivly.
+The names of services are `/get_available_spawnable_names` and `/spawn_entity` respectively.
 _GetWorldProperties.srv_ and _SpawnEntity.srv_ types are used to handle these features.
 In order to request the defined spawn point names, you can use the `/get_spawn_points_names` service with the `GetWorldProperties.srv` type.
 Detailed information about specific spawn point, such as pose, can be accessed using the `/get_spawn_point_info` service with the `GetModelState.srv` type.
@@ -139,31 +139,35 @@ All used services types are defined in the **gazebo_msgs** package.
 
 - **Spawning**: To spawn, you must pass in the spawnable name into `request.name` and the position of entity into `request.initial_pose`.
   - Example call: 
-  ```
+  ```shell
   ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity "{name: 'robot', initial_pose: {position:{ x: 4.0, y: 4.0, z: 0.2 }, orientation: { x: 0.0, y: 0.0, z: 0.0, w: 0.0 } } }"
   ```
 - **Spawning in defined spawn point**: Pass in a spawnable into `request.name` and the name of the spawn point into `request.xml`.
   - Example call:
-    ``` 
+    ```shell
     ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity "{name: 'robot', xml: 'spawn_spot'}"
     ```
 - **Spawning using WGS84 coordinates**: You can also spawn objects using geographical location when [Georeference component](georeference.md) is enabled. Set the `reference_frame` to _wgs84_ and provide the coordinates.
   - Example call spawning at 52°14′22″N, 21°02′44″E:
-    ```
+    ```shell
     ros2 service call /spawn_entity gazebo_msgs/srv/SpawnEntity "{name: 'robot', initial_pose: { position: { x: 52.2406855386909, y: 21.04264386637526, z: 0.0 }, orientation: {  x: 0.0, y: 0.0, z: 0.0, w: 0.0 } }, reference_frame: 'wgs84'}"
     ```
 - **Available spawnable names access**: Send the names of available spawnables into `response.model_names`.
   - Example call:
-    ```
+    ```shell
     ros2 service call /get_available_spawnable_names gazebo_msgs/srv/GetWorldProperties
     ```
 - **Defined spawn points' names access**: Send the names of defined points into `response.model_names`
   - Example call:
-    ```
+    ```shell
     ros2 service call /get_spawn_points_names gazebo_msgs/srv/GetWorldProperties
     ```
 - **Detailed spawn point info access**: Pass in the spawn point name into `request.model_name` and the defined pose into `response.pose`.
   - Example call:
-    ```
+    ```shell
     ros2 service call /get_spawn_point_info gazebo_msgs/srv/GetModelState "{model_name: 'spawn_spot'}"
     ```
+
+{{<note>}}
+The `ROS2ContactSensorComponent`, `ROS2SpawnerComponent`, and `ROS2SpawnComopnent` depend on `gazebo_msg` ROS 2 package that was marked deprecated in ROS 2 _Jazzy_ and will not be available as of ROS 2 _Kilted_. The components are disabled automatically if the package is not available in O3DE 25.05.0.
+{{</note>}}

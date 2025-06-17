@@ -9,16 +9,26 @@ toc: true
 You can use the [Project Manager](#using-project-manager-to-access-o3de-remote-repositories#using-project-manager-to-access-o3de-remote-repositories) and [O3DE CLI](#using-the-o3de-command-line-tool-to-access-o3de-remote-repositories) to display,  download and register **Gems**, **Projects**, and **Templates** from **Remote Repositories**.
 
 ## Using Project Manager to access O3DE remote repositories
+
+Launch Project Manager, which can be found on your desktop or in `bin/Windows/profile/Default/o3de.exe` if you installed O3DE, or in your engine build directory if you built O3DE from source.
+
 ### Add a remote repository
 
-You can add existing O3DE remote repositories using the **Remote Sources** page in Project Manager which you can access from the **Engine** tab, or from the **Gem Catalog** right panel menu.
-1. Press the **Add Repository** button. In the dialog box that opens you can supply the URL or local path for a Gem repository. 
+The remote repository adress can come from two different sources :
 
-    ![Add Remote Source Dialog](/images/user-guide/remote-content/ProjectManagerAddRemoteSource.JPG)
+1. From an hosting service such as Github. In this case you will use the same URL that you would use to do a git clone. You can see an example below for the [o3de-extra repository](https://github.com/o3de/o3de-extras).
 
-1. If you have a URL for an online Gem repository, copy and paste it into the `Repository Path` field and press the **Add** button.
-1. Alternatively, if you want to add an O3DE remote repository from your local hard drive, enter a local path on your computer or press the folder button on the right side of the Repository Path field to open the `Browse` dialog box, select the folder with the O3DE remote repository, press the **Select Folder** button, and finally press the **Add** button.
+![Copy Github link](/images/user-guide/remote-content/github-copy-url.jpg)
 
+2. Alternatively, if you downloaded the repository yourself and want to add it from your local hard drive, you can use the local path on your computer.
+
+The menu to add a remote repository from the Project Manager is located in the **Engine** tab under the **Remote Sources** page. There is also a shortcut available from the **Gem Catalog** right panel menu.
+
+![Navigate to remote repository](/images/user-guide/remote-content/add-remote-repository.jpg)
+
+Press the **Add Repository** button. In the dialog box that opens you can paste the git clone URL, or alternatively the local path (the folder icon can be clicked to browse to a local folder). Finally press the **Add** button to register the repository.
+
+![Add Remote Source Dialog](/images/user-guide/remote-content/ProjectManagerAddRemoteSource.JPG)
 
 A new entry will be added to the list of remote sources, and the Gems, Projects and Templates provided by the O3DE remote repository will be available to download and use.
 

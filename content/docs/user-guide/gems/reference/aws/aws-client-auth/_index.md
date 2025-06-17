@@ -5,6 +5,8 @@ description: Introduction to the Open 3D Engine (O3DE) AWS Client Auth Gem.
 toc: true
 ---
 
+{{< o3de-aws-gems-moved >}}
+
 The **AWS Client Auth** Gem lets authenticated or anonymous users access AWS services when running your game or simulation. It provides authentication options using any of the following supported identity providers:
 
 * Amazon Cognito user pool

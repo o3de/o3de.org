@@ -32,6 +32,6 @@ O3DE is an open-source, cross-platform, real time 3D engine that you can use to 
 
 | Tutorial | Description |
 |---|---|
-| [Create your first game: Pong!](/docs/learning-guide/tutorials/first-project/) | Start from a new O3DE project and build your first game: Pong! What's "Pong"? Two paddles square off, in a ball-based battle to land the highest score. This tutorial series will introduce you to basic game UI development, scripting, and controls in O3DE. |
+| [Create your first game: Pong!](/docs/learning-guide/samples/follow-along/pong.md) | Start from a new O3DE project and build your first game: Pong! What's "Pong"? Two paddles square off, in a ball-based battle to land the highest score. This tutorial series will introduce you to basic game UI development, scripting, and controls in O3DE. |
 
 For more detailed docs, check out the [Open 3D Engine User Guide](/docs/user-guide/).

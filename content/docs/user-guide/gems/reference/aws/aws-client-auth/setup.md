@@ -6,6 +6,8 @@ toc: true
 weight: 100
 ---
 
+{{< o3de-aws-gems-moved >}}
+
 ## Prerequisites
 
 The AWS Client Auth Gem requires the following to be installed and configured:

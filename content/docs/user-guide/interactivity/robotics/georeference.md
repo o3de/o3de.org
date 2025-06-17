@@ -3,15 +3,12 @@ linkTitle: Georeference
 title: Georeference
 description: Applying georeference for O3DE level
 toc: true
-weight: 520
+weight: 300
 ---
 
 ## Overview
 
-Robotics simulations often need to work with geographical locations, 
-in order to simulate behavior and data streams of robots that use global positioning devices and geo-reference APIs. 
-Georeference Component will allow you to work with such data.
-
+Robotics simulations often need to work with geographical locations, in order to simulate behavior and data streams of robots that use global positioning devices and geo-reference APIs. Georeference Component will allow you to work with such data.
 
 ### How to setup a simulated geographical location
 
@@ -27,7 +24,6 @@ Good candidates for such a place include characteristic locations such as inters
 
 Now, all that is left is to set this entity in configuration of **Georeference Editor Level Component** alongside WGS-84 coordinates.
 
-
 ## Usage
 
 With the Georeference Editor Level Component setup correctly, you can use:
@@ -41,7 +37,7 @@ This texture was imported into O3DE and applied as texture to a plane primitive 
 The next plane was scaled according to the scale and resolution of the downloaded map.
 
 Next in knowing the location (for example city hall) was placed ENU entity with WGS-84 coordinates:
-```
+```code
 50.06175556 North 
 19.93727500 East 
 ```
@@ -54,7 +50,7 @@ Georeference Editor Level Component can be added only to the level entity.
 
 
 The used ortophotomap has following geographical directions:
-```
+```code
 North - up
 East - left
 ```

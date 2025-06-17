@@ -13,24 +13,30 @@ controllers of different types of drives, manipulator arms, and dynamic spawning
 ## Gems
 
 There are several Gems to power robotic simulations with **Open 3D Engine (O3DE)**.
-- [ROS 2 Gem](/docs/user-guide/gems/reference/robotics/ros2), the central and the most important one. It provides most features and other robotics Gems depend on it. 
-- Asset Gems providing sample ROS 2 prefabs (robots) and scene decorations, including `ProteusRobot`, `RosRobotSample`, `WarehouseAssets`, `WarehouseAutomation`, and `WarehouseSample`.
+- [ROS 2 Gem](/docs/user-guide/gems/reference/robotics/ros2), the central and the most important one. It provides most features and other robotics Gems depend on it.
+- [Georeferencing Gem](georeference.md), a helper Gem enabling simulated robots to use global positioning devices and geo-reference APIs.
+- Asset Gems providing sample ROS 2 prefabs (robots) and scene decorations, including:
+  - [ROS 2 Sample Robots Gem](https://github.com/o3de/o3de-extras/tree/main/Gems/ROS2SampleRobots) providing assets of `ProteusRobot`, `ROSBot XL`, and `Panda Franka` robots.
+  - [WarehouseAssets](https://github.com/o3de/o3de-extras/tree/main/Gems/WarehouseAssets) and [WarehouseAutomation](https://github.com/o3de/o3de-extras/tree/main/Gems/WarehouseAutomation) Gems providing useful assets for warehouse environments
 - 3rd party Gems: 
   - [Robotec GPU Lidar (RGL) Gem](https://github.com/RobotecAI/o3de-rgl-gem) - GPU accelerated LIDAR simulation in O3DE using CUDA.
-  - [Robotec Vehicle Dynamics Gem](https://github.com/RobotecAI/robotec-vehicle-dynamics-gem) - simple vehicle controller.
+  - [Robotec Vehicle Dynamics Gem](https://github.com/RobotecAI/o3de-vehicle-dynamics-gem) - simple vehicle controller.
 
 ## Templates
 
 There are three templates for robotics:
-- [ROS 2 project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate):
-  - A simple interior scene with ROSBot XL robot, a differential drive (skid steering) robot.
+- [ROS 2 project template](https://github.com/o3de/o3de-extras/tree/main/Templates/Ros2ProjectTemplate):
+  - A small warehouse scene with `ROSBot XL` robot (differential drive AMR) and a sample implementation of a ROS 2 _subscriber_ and a ROS 2 _publisher_ linked with ImGui interface.
   - It is the most lightweight and basic robotic project template.
-- [Warehouse project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2FleetRobotTemplate):
-  - A photorealistic warehouse with a Proteus robot.
+  - It is possible to navigate the AMR with a provided ROS 2 launcher script.
+- [Warehouse project template](https://github.com/o3de/o3de-extras/tree/main/Templates/Ros2FleetRobotTemplate):
+  - A large warehouse scene ready to spawn multiple `Proteus robots` (differential drive AMRs).
   - It is easy to add more robots using the included spawning component.
-- [Manipulation project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2RoboticManipulationTemplate):
-  - Two levels for use-cases with robotic arms: Manipulation R&D and Palletization.
-  - Suitable for use-cases with robotic arms, presenting two kinds of grippers. Items for manipulation are included.
+  - It is possible to spawn and navigate three AMRs with a provided ROS 2 launcher script.
+- [Manipulation project template](https://github.com/o3de/o3de-extras/tree/main/Templates/Ros2RoboticManipulationTemplate):
+  - A small room level with a `Panda Franka` robotic arm for R&D in manipulation domain.
+  - Suitable for use-cases with robotic arms, presenting a gripper. Items for manipulation are included.
+  - It is possible to manipulate the items with a provided ROS 2 launcher script.
 
 ## Demos
 
