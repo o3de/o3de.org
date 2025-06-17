@@ -55,7 +55,7 @@ This tutorial will use the following environment variables in the example steps
 
 - `TARGET_ANDROID_PROJECT_PATH`
 
-  The path write the Android Project Gradle script to.
+  The path that the project generation script will create to contain the android project (including the Gradle wrapper).  This can be any path inside the project folder, but it contains local machine paths, so should be somewhere that is not checked into source control or shared with other users.  A good path to use would be something like `%O3DE_PROJECT_PATH%/build/AndroidProject` to put it inside the build folder, a folder already in the `.gitignore` file and skipped by Asset Processor.
 
 - `ANDROID_SDK_HOME`
 
@@ -87,7 +87,7 @@ This tutorial will use the following environment variables in the example steps
 
    cd %O3DE_PROJECT_PATH%\build\windows
 
-   bin\profile\AssetProcessorBatch.exe --platform android
+   bin\profile\AssetProcessorBatch.exe --platforms=android
 
    ```
 
