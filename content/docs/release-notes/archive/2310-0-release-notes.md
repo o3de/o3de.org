@@ -2,7 +2,7 @@
 linktitle: 23.10.0 Release Notes
 title: Release Notes for Open 3D Engine 23.10.0
 description: Full release notes for Open 3D Engine (O3DE) version 23.10.0.
-weight: 895
+weight: 894
 toc: true
 ---
 

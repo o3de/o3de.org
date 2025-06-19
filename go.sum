@@ -1,5 +1,7 @@
 github.com/o3de/api.o3de.org v0.0.0-20250423195941-0e2558c28af7 h1:3uftQ7l8QWnkQjWrJafG2/SytkMm9VFJfIuvkYVSAKg=
 github.com/o3de/api.o3de.org v0.0.0-20250423195941-0e2558c28af7/go.mod h1:d6EE5TgwFjafgZ4tehTcZte3u6bP3bbaCAWsoE1h9KA=
+github.com/o3de/api.o3de.org v0.0.0-20250617150600-838e0a54f582 h1:7FFz/cbNMQlMMmKTL6QtFWpe3hwl+VlOWtvbsDbQsDk=
+github.com/o3de/api.o3de.org v0.0.0-20250617150600-838e0a54f582/go.mod h1:d6EE5TgwFjafgZ4tehTcZte3u6bP3bbaCAWsoE1h9KA=
 github.com/o3de/hugo-odie v0.0.0-20241126002926-cac27abcb022 h1:cnPDk4/430IcnnbPzNcGdXGDWxPwGTqHm89/TrU5B+I=
 github.com/o3de/hugo-odie v0.0.0-20241126002926-cac27abcb022/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
 github.com/o3de/hugo-odie v0.0.0-20250607164835-e8c6464265ee h1:wLdC9W1ObTx1mGM9ypAmAZ4Wi2RK7nJ4eeElP0kNgvo=
