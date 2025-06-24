@@ -13,7 +13,7 @@ You can open the **Script Canvas Editor** from **O3DE Editor**.
 
 1. Choose **File**, **New Script** or drag a node from the **Node Palette** and drop it on the canvas.
 
-![Use the Script Canvas Editor in O3DE to create connections for nodes.](/images/user-guide/scripting/script-canvas/user-interface.png)
+{{<image-width src="/images/user-guide/scripting/script-canvas/user-interface.png" width="900" alt="Use the Script Canvas Editor in O3DE to create connections for nodes." >}}
 
 In the Script Canvas Editor, you can do the following:
 
@@ -23,6 +23,8 @@ In the Script Canvas Editor, you can do the following:
    + Change the Script Canvas Editor view.
 
 1. Use the tabs to switch between scripts.
+
+1. In the **Graph Outliner**, you can select the nodes on the graph with a click and jump between them with double-click.
 
 1. In the **Node Palette**, you can search for nodes.
 
@@ -35,6 +37,8 @@ In the Script Canvas Editor, you can do the following:
 1. The **Variable Manager** shows the variables that are used in the script. You can add or delete variables and set their default values. To create **Get**, **Set**, or **OnValueChanged** nodes, you can drag a variable from the **Variable Manager** onto the script. Refer to [Script Canvas Variables and the Variable Manager](/docs/user-guide/scripting/script-canvas/editor-reference/variables/) for more information.
 
 1. In the **Node Inspector**, you can view and modify the properties for a selected node.
+
+1. On the **MiniMap**, you can navigate around the graph.
 
 ## Additional Tools
 
