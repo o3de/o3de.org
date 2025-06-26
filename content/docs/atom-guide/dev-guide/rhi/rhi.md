@@ -18,7 +18,7 @@ The RHI provides customers with a platform-independent, general purpose renderin
 The RHI is designed to allow platform developers to take advantage of specialized hardware features, to the extent possible, without the need for custom code paths at both the lower and higher levels of the renderer. The Frame Scheduler, a component of the RHI, enables whole-frame optimization by representing render passes as nodes in a graph. The graph execution strategy is determined at the platform-specific level to best optimize the frame for the needs of the hardware. RHI is an ever-growing layer with plans to support more backends and the latest API across current backends. Some of the RHI's optimization techniques include the following:
 - Generate multi-threaded command buffer on platforms that facilitate it, such as PC and mobile.
 - Save significant amounts of GPU memory by reclaiming unused regions within the current frame.
-- Ability to use Async Compute to help fill up compute resources not used by graphics tasks within a frame.
+- Ability to use Async Compute to help fill up compute resources not used by graphics tasks.
 - Explicitly track all the resources through FrameGraph. 
 - Ability to keep render targets in on-chip memory on mobile.
 - Long term, we will take advantage of Heterogeneous and linked multi-GPU setups, which will become more tractable by having full-frame knowledge.
