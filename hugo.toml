@@ -4,6 +4,9 @@ disableKinds = ["taxonomy", "term"]
 copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
 languageCode = "en-us"
 
+enableGitInfo = true
+enableRobotsTXT = true 
+
 [module]
   # Uncomment and modify as necessary to test local versions of imports.
   # Be sure to comment out again before commit.
@@ -23,20 +26,14 @@ languageCode = "en-us"
       source = "gems"
       target = "static/docs/api/gems"
     [[module.imports.mounts]]
-      source = "content/frameworks"
-      target = "content/frameworks"
-    [[module.imports.mounts]]
-      source = "content/gems"
-      target = "content/gems"
-
-enableGitInfo = true
-enableRobotsTXT = true 
+      source = "content"
+      target = "content/docs/api"
 
 [markup.highlight]
-style = "paraiso-dark"
+  style = "paraiso-dark"
 
 [markup.goldmark.renderer]
-unsafe = true
+  unsafe = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
