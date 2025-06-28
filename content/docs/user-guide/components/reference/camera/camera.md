@@ -22,8 +22,8 @@ The **Camera** component adds a camera to an entity.
 | **Near clip distance** | Distance to the near clip plane of the view frustum in meters. Must be less than **Far clip distance**. | 0.001 to Infinity | `0.2` |
 | **Far clip distance** | Distance to the near far plane of the view frustum in meters. Must be greater than **Near clip distance**. | 0.001 to Infinity | `1024` |
 | **Make active camera on activation** | If set to enabled, this camera will become the active render camera when the component activates. | Boolean | `Enabled` |
-| **Debug - Frustrum length**| Length of the frustum shape as a percentage of the **Far clip distance**. | 0.01 - 100.0 | `1.0` |
-| **Debug - Frustrum color** | Color of the frustum shape. | Eight bits per channel color: 0-255 | `255,255,0` |
+| **Debug - Frustum length**| Length of the frustum shape as a percentage of the **Far clip distance**. | 0.01 - 100.0 | `1.0` |
+| **Debug - Frustum color** | Color of the frustum shape. | Eight bits per channel color: 0-255 | `255,255,0` |
 
 ## CameraRequestBus
 
