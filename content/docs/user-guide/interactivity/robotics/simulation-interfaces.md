@@ -81,7 +81,7 @@ The `SimulationInterfaces` can be configured in your project with following regi
 | Registry key                                                | Feature 
 |-------------------------------------------------------------|-----------------------------------------------------
 | `SimulationInterfaces/PrintStateNameInGui`                  | If set to `true`, the current state is shown in GUI 
-| `SimulationInterfaces/StartInStoppedState`                  | By default, simulation starts in stopped state. Setting to 'true' allows to start simulation automatically
+| `SimulationInterfaces/StartInStoppedState`                  | By default, simulation starts in stopped state. Setting to 'false' allows to start simulation automatically
 | `SimulationInterfaces/KeyboardTransitions/StoppedToPlaying` | Set the keyboard key that will change simulation state from Stopped to Playing e.g., `keyboard_key_alphanumeric_R`
 | `SimulationInterfaces/KeyboardTransitions/PausedToPlaying`  | Set the keyboard key that will change simulation state from Paused to Playing e.g., `keyboard_key_alphanumeric_P`
 | `SimulationInterfaces/KeyboardTransitions/PlayingToPaused`  | Set the keyboard key that will change simulation state from Playing to Paused e.g., `keyboard_key_alphanumeric_P`
