@@ -5,15 +5,17 @@ description: An overview of concepts, Gems, templates and demos for robotics in 
 weight: 100
 ---
 
-The ROS 2 Gem helps to build robotic simulations with [ROS 2 / Robot Operating System](https://docs.ros.org/en/jazzy/index.html).
+The Simulation Gems help to build robotic simulations with [ROS 2 / Robot Operating System](https://docs.ros.org/en/jazzy/index.html).
 
-The ROS 2 Gem contains a number of components to build robotic simulations, such as sensors,
-controllers of different types of drives, manipulator arms, and dynamic spawning of robots. It also comes with plenty of utilities.
+They contain a number of components to build robotic simulations, such as sensors, controllers of different types of drives, manipulator arms, and dynamic spawning of robots. The core Gem, `ROS2` also comes with plenty of utilities. Finally, the `ROS2RobotImporter` Gem provides tools to import robots from common formats.
 
 ## Gems
 
 There are several Gems to power robotic simulations with **Open 3D Engine (O3DE)**.
 - [ROS 2 Gem](/docs/user-guide/gems/reference/robotics/ros2), the central and the most important one. It provides most features and other robotics Gems depend on it.
+- [ROS 2 Sensors Gem](/docs/user-guide/gems/reference/robotics/ros2sensors), which provides sensor components such as Lidar, Camera, IMU, Odometry, GNSS, and Contact.
+- [ROS 2 Controllers Gem](/docs/user-guide/gems/reference/robotics/ros2controllers), which provides components for controlling joint systems such as manipulator arms, grippers, and vehicles.
+- [ROS 2 Robot Importer Gem](/docs/user-guide/gems/reference/robotics/ros2robotimporter), which provides a tool to import robots from URDF, SDF, and XACRO formats.
 - [Georeferencing Gem](georeference.md), a helper Gem enabling simulated robots to use global positioning devices and geo-reference APIs.
 - Asset Gems providing sample ROS 2 prefabs (robots) and scene decorations, including:
   - [ROS 2 Sample Robots Gem](https://github.com/o3de/o3de-extras/tree/main/Gems/ROS2SampleRobots) providing assets of `ProteusRobot`, `ROSBot XL`, and `Panda Franka` robots.
@@ -37,6 +39,8 @@ There are three templates for robotics:
   - A small room level with a `Panda Franka` robotic arm for R&D in manipulation domain.
   - Suitable for use-cases with robotic arms, presenting a gripper. Items for manipulation are included.
   - It is possible to manipulate the items with a provided ROS 2 launcher script.
+
+:bulb: The template repositories also include examples that you can try out by following their README files.
 
 ## Demos
 
