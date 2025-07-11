@@ -17,13 +17,15 @@ For detailed instructions, please refer to the [Packaging and Release](docs/user
 ## Step-by-Step Project Template Release Example
 
 This is an example of how to build a standalone package that can be run without the need for installing O3DE.
-We will use one of [project templates](/docs/user-guide/interactivity/robotics/overview/#templates) to create a new project that will be build as monohlitic _GameLauncher_.
+We will use one of [project templates](/docs/user-guide/interactivity/robotics/overview/#templates) to create a new project that will be build as monolithic _GameLauncher_.
 This is a step-by-step example of a minimal use case. 
 You can use different project names and modify the process (e.g., by bundling assets).
 Note that several prerequisites are required:
 
 - O3DE setup from source
 - [ROS2](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2) Gem registered
+- [ROS2Sensors](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2Sensors) Gem registered
+- [ROS2Controllers](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2Controllers) Gem registered
 - [WarehouseAssets](https://github.com/o3de/o3de-extras/tree/development/Gems/WarehousAssets) Gem registered
 - [ROS2SampleRobots](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2SampleRobots) Gem registered
 

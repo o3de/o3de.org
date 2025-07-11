@@ -5,5 +5,5 @@ description: Core components for Robot Operating System (ROS 2) in Open 3D Engin
 ---
 
 The following pages describe the ROS 2 Gem core components:
--  [System Components](ros2-system-component.md). 
--  [Frame components](ros2-frame).
+-  [System Components](./ros2-system-component.md). 
+-  [Frame components](./ros2-frame).

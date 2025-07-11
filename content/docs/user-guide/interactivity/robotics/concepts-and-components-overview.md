@@ -15,7 +15,7 @@ For a quick introduction to ROS 2 concepts, please refer to [ROS 2 Concepts docu
 
 ## Structure and Communication
 
-The Gem creates a [ROS 2 node](https://docs.ros.org/en/humble/Tutorials/Understanding-ROS2-Nodes.html) which is directly a part of the ROS 2 ecosystem. As such, your simulation will not use any bridges to communicate and is subject to configuration through settings such as Environment Variables. It is truly a part of the ecosystem.
+The `ROS2` Gem creates a [ROS 2 node](https://docs.ros.org/en/humble/Tutorials/Understanding-ROS2-Nodes.html) which is directly a part of the ROS 2 ecosystem. As such, your simulation will not use any bridges to communicate and is subject to configuration through settings such as Environment Variables. It is truly a part of the ecosystem.
 
 Note that the simulation node is handled through `ROS2SystemComponent` - a singleton. However, you are free to create and use your own nodes if you need more than one.
 
@@ -30,6 +30,25 @@ m_myPublisher = ros2Node->create_publisher<sensor_msgs::msg::PointCloud2>(fullTo
 
 Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/en/humble/p/rclcpp/generated/classrclcpp_1_1QoS.html).
 
+## ROS 2 related Gems
+
+Four ROS 2 related Gems are provided. Each of them has a specific purpose:
+
+| Gem name            | Description                                                                                     |
+| ------------------- | ----------------------------------------------------------------------------------------------- |
+| _ROS2_              | Base Gem for any _ROS 2_ based Gem/project, including:                                          |
+|                     | - _ROS 2 Node_ (singleton) allowing the communication with the _ROS 2_ ecosystem                |
+|                     | - automated handling of simulation time                                                         |
+|                     | - handling of transformation frames                                                             |
+|                     | - handling ROS 2 _namespaces_ and ROS 2 _topics_                                                |
+|                     | - dynamic objects spawning via ROS 2 _services_                                                 |
+|                     | - base components (e.g. for sensors that can be implemented in any Gem)                         |
+| _ROS2Sensors_       | Gem interfacing with _ROS 2_ ecosystem implementing the following simulation sensors:           |
+|                     | camera, contact, GNSS, imu, lidar, odometry                                                     |
+| _ROS2Controllers_   | Gem interfacing with _ROS 2_ ecosystem implementing robot control, manipulation, grippers,      |
+|                     | and vehicle dynamics; it will also include sensors related to controllers (e.g. wheel odometry) |
+| _ROS2RobotImporter_ | Gem implementing robot importer tool using _ROS 2_ components                                   |
+
 ## Components overview
 
 - __Central Singleton__
@@ -38,31 +57,31 @@ Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/
   - `ROS2FrameComponent`
   - `ROS2SensorComponent`
 - __Sensors__
-  - `ROS2CameraSensorComponent`
-  - `ROS2GNSSSensorComponent`
-  - `ROS2IMUSensorComponent`
-  - `ROS2LidarSensorComponent`
-  - `ROS2Lidar2DSensorComponent`
-  - `ROS2OdometrySensorComponent`
-  - `ROS2ContactSensorComponent`
+  - `ROS2CameraSensorComponent` (available in `ROS2Sensors` Gem)
+  - `ROS2GNSSSensorComponent` (available in `ROS2Sensors` Gem)
+  - `ROS2IMUSensorComponent` (available in `ROS2Sensors` Gem)
+  - `ROS2LidarSensorComponent` (available in `ROS2Sensors` Gem)
+  - `ROS2Lidar2DSensorComponent` (available in `ROS2Sensors` Gem)
+  - `ROS2OdometrySensorComponent` (available in `ROS2Sensors` Gem)
+  - `ROS2ContactSensorComponent` (available in `ROS2Sensors` Gem)
 - __Robot control__
-  - `AckermannControlComponent`
-  - `RigidBodyTwistControlComponent`
-  - `SkidSteeringControlComponent`
+  - `AckermannControlComponent` (available in `ROS2Controllers` Gem)
+  - `RigidBodyTwistControlComponent` (available in `ROS2Controllers` Gem)
+  - `SkidSteeringControlComponent` (available in `ROS2Controllers` Gem)
 - __Spawner__
   - `ROS2SpawnerComponent`
   - `ROS2SpawnPointComponent`
 - __Vehicle dynamics__
-  - `AckermannVehicleModelComponent`
-  - `SkidSteeringModelComponent`
-  - `WheelControllerComponent`
+  - `AckermannVehicleModelComponent` (available in `ROS2Controllers` Gem)
+  - `SkidSteeringModelComponent` (available in `ROS2Controllers` Gem)
+  - `WheelControllerComponent` (available in `ROS2Controllers` Gem)
 - __Robot Import (URDF) system component__
-  - `ROS2RobotImporterSystemComponent`
+  - `ROS2RobotImporterSystemComponent` (available in `ROS2RobotImporter` Gem)
 - __Joints and Manipulation__
-  - `JointsManipulationComponent`
-  - `JointsTrajectoryComponent`
-  - `JointsArticulationControllerComponent`
-  - `JointsPIDControllerComponent`
+  - `JointsManipulationComponent` (available in `ROS2Controllers` Gem)
+  - `JointsTrajectoryComponent` (available in `ROS2Controllers` Gem)
+  - `JointsArticulationControllerComponent` (available in `ROS2Controllers` Gem)
+  - `JointsPIDControllerComponent` (available in `ROS2Controllers` Gem)
 
 ### Frames
 
@@ -72,7 +91,7 @@ All Sensors and the Robot Control components require `ROS2FrameComponent`.
 
 ### Sensors
 
-Sensors acquire data from the simulated environment and publish it to ROS 2 domain. Sensor components derive from `ROS2SensorComponentBase`.
+Sensors acquire data from the simulated environment and publish it to ROS 2 domain. Sensor components derive from `ROS2SensorComponentBase`, which provides a common interface for all sensors.
 
 - Each sensor has a configuration, including one or more Publishers.
 - Sensors publish at a given rate (frequency), using one of two event sources: frame update or physics scene simulation events.
@@ -81,6 +100,8 @@ Sensors acquire data from the simulated environment and publish it to ROS 2 doma
 If your sensor is not supported by the provided sensor components, you will most likely need to create a new component deriving from `ROS2SensorComponentBase`. 
 When developing a new sensor, it is useful to look at how sensors that are already provided within the ROS2 Gem are implemented. 
 Consider adding your new sensor as a separate Gem. A good example of such sensor Gem is the [RGL Gem](https://github.com/RobotecAI/o3de-rgl-gem).
+
+The most common sensors are already implemented in the `ROS2Sensors` Gem.
 
 ### Robot Control
 
@@ -99,6 +120,8 @@ You can use tools such as [rqt_robot_steering](https://index.ros.org/p/rqt_robot
 `RobotControl` is suitable to use with [ROS 2 navigation stack](https://navigation.ros.org/).
 It is possible to implement your own control mechanisms with this component.
 
+The implementation is available in `ROS2Controllers` Gem.
+
 ### Joints and Manipulators
 
 To control robotic joints systems such as manipulator arms, some integration with [MoveIt2](https://github.com/ros-planning/moveit2) is in place.
@@ -113,13 +136,19 @@ Each of these has one or more implementations within ROS 2 Gem, and it is possib
 `JointManipulationComponent` allows you to set target positions for all joints. If you wish to control the movement using trajectory through 
 [FollowJointTrajectory action](https://github.com/ros-controls/control_msgs/blob/master/control_msgs/action/FollowJointTrajectory.action), use `JointsTrajectoryComponent`.
 
+The implementation is available in `ROS2Controllers` Gem.
+
 #### Joint States
 
 `JointsManipulationComponent` also publishes [joint states](https://docs.ros2.org/latest/api/sensor_msgs/msg/JointState.html) by default.
 
+The implementation is available in `ROS2Controllers` Gem.
+
 ### Vehicle Model
 
 `VehicleModelComponent` serves the purpose of converting inputs such as target velocity, steering or acceleration to physical forces on parts of a vehicle (robot). `VehicleModel` has a `VehicleConfiguration` which is used to define axles, parametrize and assign wheels. The model requires a `WheelControllerComponent` present in each wheel entity. It also uses an implementation of `DriveModel`, which converts vehicle inputs to forces acting on steering elements and wheels.
+
+The implementation is available in `ROS2Controllers` Gem.
 
 ### Vehicle Dynamics
 
@@ -169,5 +198,5 @@ All used services types are defined in the **gazebo_msgs** package.
     ```
 
 {{<note>}}
-The `ROS2ContactSensorComponent`, `ROS2SpawnerComponent`, and `ROS2SpawnComopnent` depend on `gazebo_msg` ROS 2 package that was marked deprecated in ROS 2 _Jazzy_ and will not be available as of ROS 2 _Kilted_. The components are disabled automatically if the package is not available in O3DE 25.05.0.
+The `ROS2ContactSensorComponent`, `ROS2SpawnerComponent`, and `ROS2SpawnComopnent` depend on `gazebo_msg` ROS 2 package that was marked deprecated in ROS 2 _Jazzy_ and will not be available as of ROS 2 _Kilted_. The components are disabled automatically if the package is not available from O3DE 25.05.0.
 {{</note>}}
