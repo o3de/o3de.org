@@ -74,6 +74,47 @@ We highly recommend to increase this limit to Overlap Query Buffer Size in [Phys
 
 This section presents the detailed description of the currently implemented and supported simulation features.
 
+### Gem configuration
+
+The `SimulationInterfaces` can be configured in your project with following registry keys:
+
+| Registry key                                                | Feature 
+|-------------------------------------------------------------|-----------------------------------------------------
+| `SimulationInterfaces/PrintStateNameInGui`                  | If set to `true`, the current state is shown in GUI 
+| `SimulationInterfaces/StartInStoppedState`                  | By default, simulation starts in stopped state. Setting to 'false' allows to start simulation automatically
+| `SimulationInterfaces/KeyboardTransitions/StoppedToPlaying` | Set the keyboard key that will change simulation state from Stopped to Playing e.g., `keyboard_key_alphanumeric_R`
+| `SimulationInterfaces/KeyboardTransitions/PausedToPlaying`  | Set the keyboard key that will change simulation state from Paused to Playing e.g., `keyboard_key_alphanumeric_P`
+| `SimulationInterfaces/KeyboardTransitions/PlayingToPaused`  | Set the keyboard key that will change simulation state from Playing to Paused e.g., `keyboard_key_alphanumeric_P`
+
+{{< note >}}
+You can assign the same key to multiple `SimulationInterfaces/KeyboardTransitions` registry key.
+{{< /note >}}
+
+{{< note >}}
+The name of keyboard's key to use (e.g., `keyboard_key_alphanumeric_R`) you can find in header [InputDeviceKeyboard.h](https://github.com/o3de/o3de/blob/d2692fc0b2130ca8d7642c33a181983bca053dd9/Code/Framework/AzFramework/AzFramework/Input/Devices/Keyboard/InputDeviceKeyboard.h#L94)
+{{< /note >}}
+
+{{< note >}}
+More on registry in O3DE can be found in [Settings Registry](/docs/user-guide/settings/).
+{{< /note >}}
+
+The sample registry file that you can put under directory `<your_project>/Registry/simulationinterface_settings.setreg` is listed below:
+
+```json
+{
+    "SimulationInterfaces": {
+        "PrintStateNameInGui": true,
+        "StartInStoppedState": true,
+        "KeyboardTransitions":
+        {
+            "StoppedToPlaying": "keyboard_key_alphanumeric_R",
+            "PausedToPlaying": "keyboard_key_alphanumeric_R",
+            "PlayingToPaused": "keyboard_key_alphanumeric_P"
+        }
+    }
+}
+```
+
 ### GetSimulatorFeatures service
 
 The `GetSimulatorFeatures` _service_ allows users to get the list of [simulation_interfaces](https://github.com/ros-simulation/simulation_interfaces) features that are supported by the simulator.
