@@ -108,20 +108,22 @@ Each **GetMaterialPropertyValue\_** function takes a `string` property name and 
 
 Returns a boolean whether a property with the given name exists. Note the material property does not have to be listed in [GetMaterialPropertyDependencies](#main-functions) because this function is checking availability only, not *reading values*.
 
-### SetShaderConstant\_
+### SetShaderParameterValue\_
 
-Each **SetShaderConstant\_** function takes a `string` shader input name and value to set. You must use the version that matches the data type of the shader input.
+The functions **SetShaderConstant_<type>** were renamed to **SetShaderParameterValue_<type>** to more accurately reflect the underlying implementation. For backwards compatability the **SetShaderConstant_<type>** are still available, but considered deprecated.
 
-  * **SetShaderConstant_bool**(`string`, `boolean`)
-  * **SetShaderConstant_int**(`string`, `number`)
-  * **SetShaderConstant_uint**(`string`, `number`)
-  * **SetShaderConstant_float**(`string`, `number`)
-  * **SetShaderConstant_Vector2**(`string`, `Vector2`)
-  * **SetShaderConstant_Vector3**(`string`, `Vector3`)
-  * **SetShaderConstant_Vector4**(`string`, `Vector4`)
-  * **SetShaderConstant_Color**(`string`, `Color`)
-  * **SetShaderConstant_Matrix3x3**(`string`, `Matrix3x3`)
-  * **SetShaderConstant_Matrix4x4**(`string`, `Matrix4x4`)
+Each **SetShaderParameterValue\_** function takes a `string` shader input name and value to set. You must use the version that matches the data type of the shader input.
+
+  * **SetShaderParameterValue_bool**(`string`, `boolean`)
+  * **SetShaderParameterValue_int**(`string`, `number`)
+  * **SetShaderParameterValue_uint**(`string`, `number`)
+  * **SetShaderParameterValue_float**(`string`, `number`)
+  * **SetShaderParameterValue_Vector2**(`string`, `Vector2`)
+  * **SetShaderParameterValue_Vector3**(`string`, `Vector3`)
+  * **SetShaderParameterValue_Vector4**(`string`, `Vector4`)
+  * **SetShaderParameterValue_Color**(`string`, `Color`)
+  * **SetShaderParameterValue_Matrix3x3**(`string`, `Matrix3x3`)
+  * **SetShaderParameterValue_Matrix4x4**(`string`, `Matrix4x4`)
 
 ### SetShaderOptionValue\_
 
