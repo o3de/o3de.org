@@ -45,4 +45,4 @@ toc: true
     ```sh
     cmake -B build/linux -S . -G "Ninja Multi-Config" -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18
     ```
-- An error message complaining about missing `xcb-input` library may happen when building the engine with an old Linux distribution. If you are using Ubuntu 22.04 LTS (or similar), please consider upgrading your default **CMake** installation to at least version **3.27**.
+- In the next release of O3DE the minimum requirement for **CMake** will be set to version **3.28.3**, in order to support the latest changes under development. If you are using Ubuntu 22.04 LTS (or similar), please consider upgrading your default **CMake** installation.
