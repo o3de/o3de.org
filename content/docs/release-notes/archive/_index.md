@@ -10,16 +10,17 @@ Looking for older versions of release notes for **Open 3D Engine (O3DE)**? Look 
 
 | Version     |  Link                                           | Date of Release    |
 |-------------|-------------------------------------------------|--------------------|
-| 24.09.2     | [24.09.2 Release Notes](./2409-2-release-notes/)| 2/25/2025 |
-| 24.09.1     | [24.09.1 Release Notes](./2409-1-release-notes/)| 11/6/2024 |
-| 24.09.0     | [24.09.0 Release Notes](./2409-0-release-notes/)| 10/9/2024 |
-| 23.10.0     | [23.10.0 Release Notes](./2310-0-release-notes/)| 10/9/2023 |
-| 23.05.0     | [23.05.0 Release Notes](./2305-0-release-notes/)| 5/3/2023 |
-| 22.10.0     | [22.10.0 Release Notes](./22-10-0/)             | 10/17/2022 |
-| 22.05.0     | [22.05.0 Release Notes](./22-05-0/)             | 5/12/2022 |
-| 2111.2      | [2111.2 Release Notes](./2111-2-release-notes)  | 1/27/2022 |
-| 2111.1      | [2111.1 Release Notes](./21-11-release-notes)     | 12/2/2021          |
-| 2107.1      | [2107.1 Release Notes](./2107-1-release-notes)   | 7/6/2021           |
+| 25.05.0     | [25.05.0 Release Notes](./2505-0-release-notes/)| 6/17/2025
+| 24.09.2     | [24.09.2 Release Notes](./2409-2-release-notes/)| 2/25/2025          |
+| 24.09.1     | [24.09.1 Release Notes](./2409-1-release-notes/)| 11/6/2024          |
+| 24.09.0     | [24.09.0 Release Notes](./2409-0-release-notes/)| 10/9/2024          |
+| 23.10.0     | [23.10.0 Release Notes](./2310-0-release-notes/)| 10/9/2023          |
+| 23.05.0     | [23.05.0 Release Notes](./2305-0-release-notes/)| 5/3/2023           |
+| 22.10.0     | [22.10.0 Release Notes](./22-10-0/)             | 10/17/2022         |
+| 22.05.0     | [22.05.0 Release Notes](./22-05-0/)             | 5/12/2022          |
+| 2111.2      | [2111.2 Release Notes](./2111-2-release-notes)  | 1/27/2022          |
+| 2111.1      | [2111.1 Release Notes](./21-11-release-notes)   | 12/2/2021          |
+| 2107.1      | [2107.1 Release Notes](./2107-1-release-notes)  | 7/6/2021           |
 
 {{< note >}}
 With version 22.05.0, the versioning release scheme changed. Binary installers now share a version with source, and the friendly name has been removed.
