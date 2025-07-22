@@ -1,3 +1,11 @@
+---
+linktitle: 25.05.0 Release Notes
+title: Release Notes for Open 3D Engine 25.05.0
+description: Full release notes for Open 3D Engine (O3DE) version 25.05.0.
+weight: 887
+toc: true
+---
+
 # O3DE 25.05.0 Release Notes
 
 Open 3D Engine (O3DE) continues its forward momentum with a new set of updates focused on stability, performance, and overall user experience. As part of these improvements, Trackview has been comprehensively overhauled—thanks to contributions from Tech-Round—and is now fully operational within the O3DE ecosystem. Additionally, performance and usability enhancements to the Atom renderer have been delivered through the leadership of AWS and Huawei.  
