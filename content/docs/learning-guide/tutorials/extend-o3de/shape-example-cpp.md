@@ -4,6 +4,8 @@ title: Create a Custom Tool Gem in C++ to Extend Open 3D Engine Editor
 description: Learn how to extend the Open 3D Engine (O3DE) Editor by creating a custom tool Gem in C++.
 weight: 200
 toc: true
+aliases:
+- "/docs/learning-guide/tutorials/extend-the-editor/shape-example-cpp"
 ---
 
 In this tutorial, you'll learn how to extend the **Open 3D Engine (O3DE) Editor** using the `CppToolGem` template to create a custom tool Gem called **MyShapeExample**. This custom tool allows you to create entities with a Shape component and configure their component properties. The Gem is written in C++ with [Qt](https://wiki.qt.io/Main), the O3DE Tools UI API, and other O3DE APIs.
