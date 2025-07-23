@@ -8,7 +8,7 @@ weight: 520
 
 ## Overview
 
-The `SimulationInterfaces` Gem has been created to integrate O3DE with the ROS 2 [simulation_interfaces](https://github.com/ros-simulation/simulation_interfaces) package, which is a new standard for simulation usage. The new Gem contains the O3DE implementation together with the API based on the EBuses, as well as the ROS 2 interface to allow communication with O3DE via the ROS 2 framework.
+The `SimulationInterfaces` Gem has been created to integrate O3DE with the ROS 2 [simulation_interfaces](https://github.com/ros-simulation/simulation_interfaces) package, which is a new standard for simulation usage. The Gem contains the O3DE implementation together with the API based on the EBuses, as well as the ROS 2 interface to allow communication with O3DE via the ROS 2 framework.
 
 ## Requirements
 
@@ -59,7 +59,7 @@ The `Rack` entity has [Static Rigid Body](/docs/user-guide/components/reference/
 Entities `Boxes`, `Lv0`, `Lv1`, `Lv2` are only decorative. 
 However, above-mentioned will follow `Rack`, due to parent-child relation and [Transform Component](/docs/user-guide/components/reference/transform/).
 
-The `SimulationInterfaces` allows to perform bound search. 
+The `SimulationInterfaces` allows performing bound search. 
 You can specify what is you region of interests and ask for Simulated Entities inside.
 This feature uses [Overlap Scene Query](/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries/#overlap). 
 You need to have collider shapes added to entities to get results from [Overlap Scene Query](/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries/#overlap).
@@ -78,13 +78,13 @@ This section presents the detailed description of the currently implemented and 
 
 The `SimulationInterfaces` can be configured in your project with following registry keys:
 
-| Registry key                                                | Feature 
-|-------------------------------------------------------------|-----------------------------------------------------
-| `SimulationInterfaces/PrintStateNameInGui`                  | If set to `true`, the current state is shown in GUI 
-| `SimulationInterfaces/StartInStoppedState`                  | By default, simulation starts in stopped state. Setting to 'false' allows to start simulation automatically
-| `SimulationInterfaces/KeyboardTransitions/StoppedToPlaying` | Set the keyboard key that will change simulation state from Stopped to Playing e.g., `keyboard_key_alphanumeric_R`
-| `SimulationInterfaces/KeyboardTransitions/PausedToPlaying`  | Set the keyboard key that will change simulation state from Paused to Playing e.g., `keyboard_key_alphanumeric_P`
-| `SimulationInterfaces/KeyboardTransitions/PlayingToPaused`  | Set the keyboard key that will change simulation state from Playing to Paused e.g., `keyboard_key_alphanumeric_P`
+| Registry key                                                | Feature                                                                                                            |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `SimulationInterfaces/PrintStateNameInGui`                  | If set to `true`, the current state is shown in GUI                                                                |
+| `SimulationInterfaces/StartInStoppedState`                  | By default, simulation starts in stopped state. Setting to `false` allows starting simulation automatically        |
+| `SimulationInterfaces/KeyboardTransitions/StoppedToPlaying` | Set the keyboard key that will change simulation state from Stopped to Playing e.g., `keyboard_key_alphanumeric_R` |
+| `SimulationInterfaces/KeyboardTransitions/PausedToPlaying`  | Set the keyboard key that will change simulation state from Paused to Playing e.g., `keyboard_key_alphanumeric_P`  |
+| `SimulationInterfaces/KeyboardTransitions/PlayingToPaused`  | Set the keyboard key that will change simulation state from Playing to Paused e.g., `keyboard_key_alphanumeric_P`  |
 
 {{< note >}}
 You can assign the same key to multiple `SimulationInterfaces/KeyboardTransitions` registry key.

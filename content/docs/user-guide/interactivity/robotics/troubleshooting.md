@@ -44,7 +44,7 @@ For additional solution, refer to ROS 2's [Installation troubleshooting](https:/
 
 ## Is it a Gem or O3DE issue?
 
-If your debugging confirm that the issue is with either the ROS 2 Gem or O3DE, please help the community by raising an issue in [`o3de-extras`](https://github.com/o3de/o3de-extras/issues) or [`o3de`](https://github.com/o3de/o3de/issues) repos. First, please check the list of reported issues to avoid duplicates. 
+If your debugging confirm that the issue is with either the ROS 2 related Gem or O3DE, please help the community by raising an issue in [`o3de-extras`](https://github.com/o3de/o3de-extras/issues) or [`o3de`](https://github.com/o3de/o3de/issues) repos. First, please check the list of reported issues to avoid duplicates. 
 
 Even better, help us to fix it and make the open source simulation for robotics better for everyone.
 Follow the [Contribution Guide](/docs/contributing/) to learn how to submit fixes and improvements.
