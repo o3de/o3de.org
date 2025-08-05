@@ -92,12 +92,14 @@ In your cpp file (of your custom component), search for the Activate and Deactiv
 void MyCustomExampleComponent::Activate()
 {
     /// rest of the code...
-    UiButtonNotificationBus::Handler::BusConnect(m_buttonRefresh);   
+    UiButtonNotificationBus::Handler::BusConnect(m_buttonRefresh); // only one button
+    //UiButtonNotificationBus::MultiHandler::BusConnect(m_buttonRefresh); // multiple buttons
 }
 void MyCustomExampleComponent::Deactivate()
 {
     /// rest of the code...
-    UiButtonNotificationBus::Handler::BusDisconnect(m_buttonRefresh);
+    UiButtonNotificationBus::Handler::BusDisconnect(m_buttonRefresh); // only one button
+    //UiButtonNotificationBus::MultiHandler::BusDisconnect(m_buttonRefresh); // multiple buttons
 }
 ```
 
@@ -108,8 +110,8 @@ Add any code you want inside the OnButtonClick event. You can see an example in 
 ```
 void MyCustomExampleComponent::OnButtonClick(const AZ::EntityId& entityId)
 {
-    //AZ::EntityId thisId = GetEntityId();
-    //AZ_Printf("MyButton", "EntityId (numeric): %llu", static_cast<unsigned long long>(thisId));
+    //const AZ::EntityId* btnId = UiButtonNotificationBus::GetCurrentBusId();
+    //AZ_Printf("ButtonClick", "Button clicked: %s\n", btnId->ToString().c_str());
 }
 ```
 
