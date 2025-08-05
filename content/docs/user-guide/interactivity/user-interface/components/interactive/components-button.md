@@ -64,11 +64,11 @@ ly_add_target(
             LyShine
 )
 ```
-That will tell your CMAKE configuration that you want to reference headers (files) that are inside the LyShine Gem.
+That will tell your CMAKE configuration that you want to reference header (files) that are inside the LyShine Gem.
 
 In your header file (of your custom component), include the UiButtonBus header, at the beggining of the file (after #pragma once and before namespace).
 
-You also need to inherit from the UiButtonNotificationBus (this is inside the UiButtonBus.h)
+You also need to inherit from the UiButtonNotificationBus (this is inside the UiButtonBus.h). In order to listen, or handle one and only one address, ::Handler is the appropriate choice (only on button). In order to listen to multiple addresses ::MultiHandler is advised (multiple buttons). 
 
 ```
 #pragma once
@@ -79,14 +79,14 @@ You also need to inherit from the UiButtonNotificationBus (this is inside the Ui
 
 namespace MyCustomGem
 {
-    class MyCustomExampleComponent: public AZ::Component, public MyCustomExampleRequestBus::Handler, private UiButtonNotificationBus::Handler
+    class MyCustomExampleComponent: public AZ::Component, public MyCustomExampleRequestBus::Handler, private UiButtonNotificationBus::Handler // , private UiButtonNotificationBus::MultiHandler
     {
      private:
         AZ::EntityId m_buttonRefresh;
 /// rest of the code...
 ```
 
-In your cpp file (of your custom component), search for the Activate and Deactivate methods and add connect and disconnect methods. This will expose the OnButtonClick method as it can be seen the source code for the  [**UiButtonBus.h**](https://github.com/o3de/o3de/blob/be6604e28033e205f36a8863251279ff067ce31e/Gems/LyShine/Code/Include/LyShine/Bus/UiButtonBus.h#L64)
+In your cpp file (of your custom component), search for the Activate and Deactivate methods and add connect and disconnect methods. This will expose the OnButtonClick method. Here is a cpp example: [**UiButtonBus.h**](https://github.com/o3de/o3de/blob/be6604e28033e205f36a8863251279ff067ce31e/Gems/LyShine/Code/Include/LyShine/Bus/UiButtonBus.h#L64)
 
 ```
 void MyCustomExampleComponent::Activate()
@@ -141,11 +141,11 @@ void MyCustomExampleComponent::Reflect(AZ::ReflectContext* context)
 
 ****Lua****
 
-In Lua scripting, you can add the script in the UI without any further changes. The ButtonRefresh inside the properties will allow you to reference your button.
+In Lua scripting, you can add the script in the UI without any further changes. The ButtonRefresh inside the properties table will allow you to reference your button.
 
-OnActivate and OnDeactivate you connect and disconnect the bus of the button, using the id of the element you passed as an input param (the ButtonRefresh which is an EntityId()). This will automatically connect and disconnect when the script becomes active and deactivate.
+OnActivate and OnDeactivate is often where the connect and disconnect of the bus of the button is done, using the id of the element you passed as an input param (the ButtonRefresh which is an EntityId()).
 
-OnButtonClick method becomes available once you connect the bus. Notice that if you add more buttons, it will use the same OnButtonClick method.
+OnButtonClick method becomes a trigger once you connect the bus. Notice that if you add more buttons, it will use the same OnButtonClick method.
 
 ```
 local YourLuaScript =
