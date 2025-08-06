@@ -11,10 +11,10 @@ You can use a **Hierarchy Interactivity Toggle** component to make an element an
 
 To start interactive, or start non-interactive, you can change the **Is Interactable** toggle in the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor) **Properties** pane.
 
-Using the script node **"Set Interactivity State"**, you can change the interactive components on the element and all its children at once. This allows an easy way to group up clusters of interactive elements and enable and disable them collectively. Useful when making ui windows or sections that should all be enabled and disabled at once, for example, when making a pop-up window disable the ui behind it.
+Using the [script node](/docs/user-guide/scripting/script-canvas/get-started/editor-interface): **"Set Interactivity State"**, you can change the interactive components on the element and all its children at once. This allows an easy way to group up clusters of interactive elements and enable and disable them collectively. Useful when making ui windows or sections that should all be enabled and disabled at once, for example, when making a pop-up window disable the ui behind it.
 
 **To add a Hierarchy Interactivity Toggle to an element**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), **Properties** pane, select **Add Component...**, in the Component list select "HierarchyInterativityToggle".
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), **Properties** pane, select **Add Component...**, in the Component list select **"HierarchyInterativityToggle"**.
 
 **To edit a Hierarchy Interactivity Toggle component**
 
