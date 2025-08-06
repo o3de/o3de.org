@@ -11,7 +11,7 @@ You can use a **Hierarchy Interactivity Toggle** component to make an element an
 
 To start interactive, or start non-interactive, you can change the **Is Interactable** toggle in the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor) **Properties** pane.
 
-Using the [script node](/docs/user-guide/scripting/script-canvas/get-started/editor-interface): **"Set Interactivity State"**, you can change the interactive components on the element and all its children at once. This allows an easy way to group up clusters of interactive elements and enable and disable them collectively. Useful when making ui windows or sections that should all be enabled and disabled at once, for example, when making a pop-up window disable the ui behind it.
+Using the [script node](/docs/user-guide/scripting/script-canvas/get-started/editor-interface): **"Set Interactivity State"**, you can change the interactive components on the element and all its children at once. This allows an easy way to group up interactive elements and enable and disable them collectively. Useful when making UI windows or sections that should all be enabled and disabled at once, for example, when making a pop-up window disable the UI behind it.
 
 **To add a Hierarchy Interactivity Toggle to an element**
 + In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), **Properties** pane, select **Add Component...**, in the Component list select **"HierarchyInterativityToggle"**.
@@ -22,8 +22,8 @@ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor) **P
 
 ****Is Interactable****
 
-By toggling it on, your Ui Element and it's children will start interactive, like is default.
+By toggling it on, your UI Element and it's children will start interactive, like is default.
 
-By toggling it off, your Ui Element and it's children will start non-interactive, making all [interactive components](/docs/user-guide/interactivity/user-interface/components/interactive) on the element or children unable to be navigated to with [ui navigation](/docs/user-guide/interactivity/user-interface/components/interactive/properties/navigation/) input, or [clicked with the mouse](/docs/user-guide/interactivity/user-interface/components/interactive/properties/components-interactive-properties-states).
+By toggling it off, your UI Element and it's children will start non-interactive, making all [interactive components](/docs/user-guide/interactivity/user-interface/components/interactive) on the element or children unable to be navigated to with [UI navigation](/docs/user-guide/interactivity/user-interface/components/interactive/properties/navigation/) input, or [clicked with the mouse](/docs/user-guide/interactivity/user-interface/components/interactive/properties/components-interactive-properties-states).
 
 Control the interactivity with scripts to enable and disable interactivity on command.
