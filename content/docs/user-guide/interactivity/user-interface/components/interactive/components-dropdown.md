@@ -112,25 +112,23 @@ Inside your cpp file you should connect your dropdown bus when the component is 
 
     void MyCustomExampleComponent::Activate()
     {
-        DropDownDropTargetRequestBus::Handler::BusConnect(GetEntityId());
+        MyCustomExampleRequestBus::Handler::BusConnect(GetEntityId());
 
         UiDropdownNotificationBus::Handler::BusConnect(m_DropDown);
     }
     void MyCustomExampleComponent::Deactivate()
     {
-        DropDownDropTargetRequestBus::Handler::BusDisconnect(GetEntityId());
+        MyCustomExampleRequestBus::Handler::BusDisconnect(GetEntityId());
 
         UiDropdownNotificationBus::Handler::BusDisconnect(m_DropDown);
     }
     
     void MyCustomExampleComponent::OnDropdownExpanded()
     {
-        // Handle dropdown expanded logic here
         AZ_Printf("MyCustomExampleComponent", "Dropdown expanded.\n");
     }
     void MyCustomExampleComponent::OnDropdownCollapsed()
     {
-        // Handle dropdown collapsed logic here
         AZ_Printf("MyCustomExampleComponent", "Dropdown collapsed.\n");
     }
     void MyCustomExampleComponent::OnDropdownValueChanged([[maybe_unused]] AZ::EntityId option)
