@@ -36,18 +36,10 @@ Four ROS 2 related Gems are provided. Each of them has a specific purpose:
 
 | Gem name            | Description                                                                                     |
 | ------------------- | ----------------------------------------------------------------------------------------------- |
-| _ROS2_              | Base Gem for any _ROS 2_ based Gem/project, including:                                          |
-|                     | - _ROS 2 Node_ (singleton) allowing the communication with the _ROS 2_ ecosystem                |
-|                     | - automated handling of simulation time                                                         |
-|                     | - handling of transformation frames                                                             |
-|                     | - handling ROS 2 _namespaces_ and ROS 2 _topics_                                                |
-|                     | - dynamic objects spawning via ROS 2 _services_                                                 |
-|                     | - base components (e.g. for sensors that can be implemented in any Gem)                         |
-| _ROS2Sensors_       | Gem interfacing with _ROS 2_ ecosystem implementing the following simulation sensors:           |
-|                     | camera, contact, GNSS, imu, lidar, odometry                                                     |
-| _ROS2Controllers_   | Gem interfacing with _ROS 2_ ecosystem implementing robot control, manipulation, grippers,      |
-|                     | and vehicle dynamics; it will also include sensors related to controllers (e.g. wheel odometry) |
-| _ROS2RobotImporter_ | Gem implementing robot importer tool using _ROS 2_ components                                   |
+| [ROS2](/docs/user-guide/gems/reference/robotics/ros2.md) | Base Gem for any _ROS 2_ based Gem/project, including:  <ul><li> _ROS 2 Node_ (singleton) allowing the communication with the _ROS 2_ ecosystem <li> automated handling of simulation time <li> handling of transformation frames  <li> handling ROS 2 _namespaces_ and ROS 2 _topics_   <li> dynamic objects spawning via ROS 2 _services_ <li> base components (e.g. for sensors that can be implemented in any Gem)                         |
+| [ROS2Sensors](/docs/user-guide/gems/reference/robotics/ros2sensors.md) | Gem interfacing with _ROS 2_ ecosystem implementing the following simulation sensors: camera, contact, GNSS, imu, lidar, odometry                                                     |
+| [ROS2Controllers](/docs/user-guide/gems/reference/robotics/ros2controllers.md) | Gem interfacing with _ROS 2_ ecosystem implementing robot control, manipulation, grippers, and vehicle dynamics; it will also include sensors related to controllers (e.g. wheel odometry) |
+| [ROS2RobotImporter](/docs/user-guide/gems/reference/robotics/ros2robotimporter.md) | Gem implementing robot importer tool using _ROS 2_ components                                   |
 
 ## Components overview
 

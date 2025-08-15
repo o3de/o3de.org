@@ -7,7 +7,7 @@ toc: true
 
 <!-- # O3DE Simulation Interfaces Gem -->
 
-The **Simulation Interfaces Gem** allows to control the simulation and the simulation environment in **Open 3D Engine (O3DE)** using the standardized ROS 2 [simulation_interfaces](https://github.com/ros-simulation/simulation_interfaces) package.  The Gem contains the O3DE implementation together with the API based on the EBuses, as well as the ROS 2 interface to allow communication with O3DE via the ROS 2 framework.
+The **Simulation Interfaces Gem** allows to control the simulation and the simulation environment in **Open 3D Engine (O3DE)** using the standardized ROS 2 [simulation_interfaces](https://github.com/ros-simulation/simulation_interfaces) package. The Gem contains the O3DE implementation together with the API based on the EBuses, as well as the ROS 2 interface to allow communication with O3DE via the ROS 2 framework.
 
 The `SimulationInterfaces` Gem requires:
 - [ROS 2 Gem](/docs/user-guide/gems/reference/robotics/ros2.md) enabled.
