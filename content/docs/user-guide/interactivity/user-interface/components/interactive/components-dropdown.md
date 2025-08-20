@@ -84,7 +84,7 @@ Once the component is available in the UI editor; and the UI dropdown is in the 
 
 Open your component header, include the UiDropdownBus and inherit from UiDropdownNotificationBus. In order to listen or handle one and only one address use ::Handler. In order to listen to multiple addresses use::MultiHandler. An EntityID is advised too so you can connect and disconnect the dropdown. Expanded, Collapsed and ValueChanged are the events obtained through the inheritance. Here is an example of what you should have in your header:
 
-```
+```cpp
 #pragma once
 
 #include <AzCore/Component/Component.h>
@@ -107,7 +107,7 @@ namespace MyCustomGem // namespace should match your custom gem
 
 Inside your cpp file you should connect your dropdown bus when the component is activated; and disconnect it when the component is deactivated. To evaluate if the events are working as expected, you can print something in the console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console.
 
-```
+```cpp
     /// other code...
 
     void MyCustomExampleComponent::Activate()
