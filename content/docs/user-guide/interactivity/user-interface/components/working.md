@@ -92,11 +92,11 @@ Some actions are disabled, depending on the context. For example, you can't past
 
 An UI component is very similar to a game component. To create your first component follow the [Creating a Component](https://www.docs.o3de.org/docs/user-guide/programming/components/create-component/) tutorial and change it from "Game" component to "UI" component. The components are usually created inside Gems, if you need to create your first gem, follow the [Creating an O3DE Gem](https://www.docs.o3de.org/docs/user-guide/programming/gems/creating/) tutorial.
 
-O3DE has [LyShine](https://www.docs.o3de.org/docs/user-guide/gems/reference/ui/lyshine/) as its default UI. If you intend to use any of its componenents, then adding LyShine as a build dependency in CMake is advised.
+O3DE has [LyShine](https://www.docs.o3de.org/docs/user-guide/gems/reference/ui/lyshine/) as its default UI. If you intend to use any of its componenents, add LyShine as a build dependency in CMake.
 
 Search for your CMakeLists.txt of your gem and reference the LyShine Gem under BUILD_DEPENDENCIES, PUBLIC. If you are only using this in your gem, you can add this under your Private.Object module.
 
-```
+```cmake
 # The ${gem_name}.Private.Object target is an internal target
 # It should not be used outside of this Gems CMakeLists.txt
 ly_add_target(
@@ -123,4 +123,3 @@ The above CMAKE configuration allows C++ to reference header (files) that are in
 
 In your header file (of your custom component), you can then include the UiBus headers, at the beggining of the file (after #pragma once and before namespace).
 
-## Create your UI Components: Lua
