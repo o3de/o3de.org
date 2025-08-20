@@ -47,7 +47,7 @@ Once the component is available in the UI editor; and the UI button is in the ca
 
 Open your component header, include the UiButtonBus and inherit from UiButtonNotificationBus. In order to listen or handle one and only one address use ::Handler. In order to listen to multiple addresses use::MultiHandler. An EntityID is advised too so you can connect and disconnect the button. OnButtonClick is the event obtained through the inheritance. Here is an example of what you should have in your header:
 
-```
+```cpp
 #pragma once
 
 #include <AzCore/Component/Component.h>
@@ -65,7 +65,7 @@ namespace MyCustomGem
 
 Inside your cpp file you should connect your button bus when the component is activated; and disconnect it when the component is deactivated. To evaluate if the event is working as expected, you can print something in the console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console. Feel free to inspect the [UIButtonBus.h](https://github.com/o3de/o3de/blob/be6604e28033e205f36a8863251279ff067ce31e/Gems/LyShine/Code/Include/LyShine/Bus/UiButtonBus.h#L64) code.
 
-```
+```cpp
 void MyCustomExampleComponent::Activate()
 {
     /// rest of the code...
@@ -96,7 +96,7 @@ OnActivate and OnDeactivate is often where the connect and disconnect of the bus
 
 OnButtonClick method becomes a trigger once you connect the bus. Notice that if you add more buttons, it will use the same OnButtonClick method.
 
-```
+```lua
 local YourLuaScript =
 {
     Properties =
