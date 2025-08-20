@@ -45,7 +45,7 @@ Once the component is available in the UI editor; and the UI dropdown (with a dy
 
 Open your component header, include the UiDynamicLayoutBus and inherit from UiDynamicLayoutBus. In order to listen or handle one and only one address use ::Handler. In order to listen to multiple addresses use::MultiHandler. An EntityID is advised too so you can connect and disconnect the dynamic layout. SetNumChildElements is the event obtained through the inheritance. Here is an example of what you should have in your header:
 
-```
+```cpp
 #pragma once
 
 #include <AzCore/Component/Component.h>
@@ -65,12 +65,11 @@ namespace MyCustomGem // namespace should match your custom gem
       void SetNumChildElements(int numChildren);
       /// rest of the code...
     
-``
 ```
 
 Inside your cpp file you should connect your dropdown bus when the component is activated; and disconnect it when the component is deactivated. To evaluate if the event is working, run the UI editor. The dropdown should display 3 options instead of just one.
 
-```
+```cpp
     /// other code...
     void MyCustomExampleComponent::Activate()
     {
