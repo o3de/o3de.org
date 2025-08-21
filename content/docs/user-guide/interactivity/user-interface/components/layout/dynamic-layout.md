@@ -33,6 +33,8 @@ For a [**LayoutGrid**](components-layout-grid) element, the cell size of the **L
 
    This image serves as the prototype element that will be cloned and filled with dynamic content.
 
+---
+
 **Cpp**
 
 To create your own UI components, check the [Working with UI Components](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/working/) page.
@@ -55,7 +57,7 @@ Open your component header, include the UiDynamicLayoutBus and inherit from UiDy
 
 namespace MyCustomGem // namespace should match your custom gem
 {
-    class MyCustomExampleComponent: public AZ::Component, public MyCustomExampleRequestBus::Handler, private UiDropdownNotificationBus::Handler, private UiDynamicLayoutBus::Handler // or MultiHandler if you are want to listen to multiple events
+    class MyCustomExampleComponent: public AZ::Component, public MyCustomExampleRequestBus::Handler, private UiDropdownNotificationBus::Handler // or MultiHandler if you are want to listen to multiple events
     {
     private:
       AZ::EntityId m_DropDown;
@@ -75,29 +77,51 @@ Inside your cpp file you should connect your dropdown bus when the component is 
     {
          MyCustomExampleRequestBus::Handler::BusConnect(GetEntityId());
          UiDropdownNotificationBus::Handler::BusConnect(m_DropDown); // or another component that also uses dynamic layout content 
-         UiDynamicLayoutBus::Handler::BusConnect(m_dpdContentUI);
     }
     void MyCustomExampleComponent::Deactivate()
     {
          MyCustomExampleRequestBus::Handler::BusDisconnect(GetEntityId());
          UiDropdownNotificationBus::Handler::BusDisconnect(m_DropDown); // or another component that also uses dynamic layout content
-         UiDynamicLayoutBus::Handler::BusDisconnect(m_dpdContentUI);
     }
     
     void MyCustomExampleComponent::OnDropdownExpanded()
     {
+         /// Mock options for demonstration purposes
+         AZStd::vector<AZStd::string>& options = { "Fireball", "Ice Shard", "Lightning Bolt" };
+
          /// This will clone the existing Option leaving 3 avaliable options to choose in the dropdown
          AZ::EntityId layoutEntityId = m_dpdContentUI;
-         int desiredChildCount = 3;
+         int desiredChildCount = static_cast<int>(options.size()); /// assuming it is a safe cast, since you own't exceed int32
          UiDynamicLayoutBus::Event(layoutEntityId, &UiDynamicLayoutInterface::SetNumChildElements, desiredChildCount);
+
+         /// set the text-option. e.g. for first index: "Fireball"
+         for (int i = 0; i < desiredChildCount; ++i)
+         {
+            AZ::EntityId childEntityId;
+            UiElementBus::EventResult(childEntityId, m_dpdContentUI, &UiElementBus::Events::GetChildEntityId, i);
+            AZStd::string entityIdStr = childEntityId.ToString();
+
+            AZ::Entity* textEntityId = nullptr;
+            UiElementBus::EventResult(textEntityId, childEntityId, &UiElementBus::Events::FindChildByName, m_TextOfTheOption);
+            AZ::EntityId textEntityId2 = textEntityId ? textEntityId->GetId() : AZ::EntityId();
+            AZStd::string entityIdStr2 = textEntityId2.ToString();
+
+            UiTextBus::Event(textEntityId2, &UiTextBus::Events::SetText, options[i]);
+         }
     }
 
     /// rest of the code...
 ```
 
-In other words, the above code clones or copies the only Option available ("Option1") and populates the remaining childs with the clones. Here is what you can expect when running the example in the UI Editor.
+In other words, the above code clones or copies the only Option available ("Option1") and populates the remaining childs with the clones giving this as the result. 
 
 ![alt text](image.png)
+
+If you use the vector of strings that contains 3 indexes it will modify the text-element of each option and populate the dropdown as expected.
+
+<img width="236" height="157" alt="image" src="https://github.com/user-attachments/assets/07a1ac9b-dd90-4e17-b6d7-8754f114e30a" />
+
+---
 
 **Lua**
 
