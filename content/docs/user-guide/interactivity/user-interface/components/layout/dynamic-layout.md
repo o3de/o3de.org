@@ -98,3 +98,7 @@ Inside your cpp file you should connect your dropdown bus when the component is 
 In other words, the above code clones or copies the only Option available ("Option1") and populates the remaining childs with the clones. Here is what you can expect when running the example in the UI Editor.
 
 ![alt text](image.png)
+
+**Lua**
+
+In Lua, there are code examples available in the official GitHub project as part of LyShineExamples. Here is an example for [MultiSelectionDropdown](https://github.com/o3de/o3de/blob/f17b405699c55400a985b8741af2649c39f11315/Gems/LyShineExamples/Assets/UI/Scripts/LyShineExamples/Dropdown/MultiSelectionDropdown.lua#L29)
