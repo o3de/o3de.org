@@ -45,44 +45,47 @@ To create your own UI components, check the [Working with UI Components](https:/
 
 Once the component is available in the UI editor; and the UI button is in the canvas; you can attach the cpp component to it.
 
-Open your component header, include the UiButtonBus and inherit from UiButtonNotificationBus. In order to listen or handle one and only one address use ::Handler. In order to listen to multiple addresses use::MultiHandler. An EntityID is advised too so you can connect and disconnect the button. OnButtonClick is the event obtained through the inheritance. Here is an example of what you should have in your header:
+Open your component header, include the (1) UiButtonBus and inherit from (2) UiButtonNotificationBus. In order to listen or handle one and only one address use ::Handler. In order to listen to multiple addresses use::MultiHandler. The EntityID variable is required to connect and disconnect the button. OnButtonClick is the event obtained through the inheritance. Here is an example of what you should have in your header:
 
 ```cpp
 #pragma once
 
 #include <AzCore/Component/Component.h>
 #include <MyCustomGem/MyCustomExampleInterface.h>
-#include <LyShine/Bus/UiButtonBus.h>
+#include <LyShine/Bus/UiButtonBus.h> // (1) bus 
 
 namespace MyCustomGem
 {
-    class MyCustomExampleComponent: public AZ::Component, public MyCustomExampleRequestBus::Handler, private UiButtonNotificationBus::Handler // , private UiButtonNotificationBus::MultiHandler
+    class MyCustomExampleComponent: public AZ::Component, public MyCustomExampleRequestBus::Handler,
+      private UiButtonNotificationBus::Handler // (2), private UiButtonNotificationBus::MultiHandler
     {
+     public:
+        void OnButtonClick() override;
      private:
-        AZ::EntityId m_buttonRefresh;
+        AZ::EntityId m_buttonRefresh; // (3) your element ID
 /// rest of the code...
 ```
 
-Inside your cpp file you should connect your button bus when the component is activated; and disconnect it when the component is deactivated. To evaluate if the event is working as expected, you can print something in the console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console. Feel free to inspect the [UIButtonBus.h](https://github.com/o3de/o3de/blob/be6604e28033e205f36a8863251279ff067ce31e/Gems/LyShine/Code/Include/LyShine/Bus/UiButtonBus.h#L64) code.
+Inside your cpp file you should (1) connect and (2) disconnect. To evaluate if the event is working as expected, you can (3) print something in the console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console. Feel free to inspect the [UIButtonBus.h](https://github.com/o3de/o3de/blob/be6604e28033e205f36a8863251279ff067ce31e/Gems/LyShine/Code/Include/LyShine/Bus/UiButtonBus.h#L64) code.
 
 ```cpp
 void MyCustomExampleComponent::Activate()
 {
     /// rest of the code...
-    UiButtonNotificationBus::Handler::BusConnect(m_buttonRefresh); // only one button
-    //UiButtonNotificationBus::MultiHandler::BusConnect(m_buttonRefresh); // if you expect to add multiple buttons
+    UiButtonNotificationBus::Handler::BusConnect(m_buttonRefresh); // (1) only one 
+    //UiButtonNotificationBus::MultiHandler::BusConnect(m_buttonRefresh); // if you expect multiple
 }
 void MyCustomExampleComponent::Deactivate()
 {
     /// rest of the code...
-    UiButtonNotificationBus::Handler::BusDisconnect(m_buttonRefresh); // only one button
-    //UiButtonNotificationBus::MultiHandler::BusDisconnect(m_buttonRefresh); // if you expect to add multiple buttons
+    UiButtonNotificationBus::Handler::BusDisconnect(m_buttonRefresh); // (2) only one 
+    //UiButtonNotificationBus::MultiHandler::BusDisconnect(m_buttonRefresh); // if you expect multiple
 }
 
 void MyCustomExampleComponent::OnButtonClick(const AZ::EntityId& entityId)
 {
     //const AZ::EntityId* btnId = UiButtonNotificationBus::GetCurrentBusId();
-    //AZ_Printf("ButtonClick", "Button clicked: %s\n", btnId->ToString().c_str());
+    //AZ_Printf("ButtonClick", "Button clicked: %s\n", btnId->ToString().c_str()); // (3) print
 }
 ```
 
@@ -92,7 +95,7 @@ void MyCustomExampleComponent::OnButtonClick(const AZ::EntityId& entityId)
 
 In Lua scripting, you can add the script in the UI without any further changes. The ButtonRefresh inside the properties table will allow you to reference your button.
 
-OnActivate and OnDeactivate is often where the connect and disconnect of the bus of the button is done, using the id of the element you passed as an input param (the ButtonRefresh which is an EntityId()).
+You should (1) connect and (2) disconnect the bus, using the id of the element you passed as an input param (the ButtonRefresh which is an EntityId()).
 
 OnButtonClick method becomes a trigger once you connect the bus. Notice that if you add more buttons, it will use the same OnButtonClick method.
 
@@ -112,15 +115,15 @@ local YourLuaScript =
 local LO = YourLuaScript;
 
 function LO:OnActivate()
-  self.btnRefreshHandler = UiButtonNotificationBus.Connect(self, self.Properties.ButtonRefresh);
+  self.btnRefreshHandler = UiButtonNotificationBus.Connect(self, self.Properties.ButtonRefresh); -- (1)
 end
 
 function LO:OnDeactivate()
-  self.btnRefreshHandler:Disconnect();
+  self.btnRefreshHandler:Disconnect(); -- (2)
 end
 
 function LO:OnButtonClick()
-  Debug.Log("All button clicks of all buttons pass through this method");
+  Debug.Log("All button clicks of all buttons pass through this method"); 
 end
 
 -- -- rest of the code
