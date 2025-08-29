@@ -126,3 +126,9 @@ If you use the vector of strings that contains 3 indexes it will modify the text
 **Lua**
 
 In Lua, there are code examples available in the official GitHub project as part of LyShineExamples. Here is an example for [MultiSelectionDropdown](https://github.com/o3de/o3de/blob/f17b405699c55400a985b8741af2649c39f11315/Gems/LyShineExamples/Assets/UI/Scripts/LyShineExamples/Dropdown/MultiSelectionDropdown.lua#L29)
+
+--- 
+
+**Outros**
+
+The dynamic layout is often dependent on other UI-components that may or may not be ready when the above code is executed. If you are unsure when to populate the dynamic layout, consider doing it after all UI elements are loaded and ready. This is possible with the In-Game Post-activate event that can be consulted [here](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/canvases/accessing-ui-canvas-runtime/).
