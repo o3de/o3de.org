@@ -45,7 +45,7 @@ To create your own UI components, check the [Working with UI Components](https:/
 
 Once the component is available in the UI editor; and the UI button is in the canvas; you can attach the cpp component to it.
 
-Open your component header, include the (1) UiButtonBus and inherit from (2) UiButtonNotificationBus. In order to listen or handle one and only one address use ::Handler. In order to listen to multiple addresses use::MultiHandler. The EntityID variable is required to connect and disconnect the button. OnButtonClick is the event obtained through the inheritance. Here is an example of what you should have in your header:
+Open your component header, include the (1) UiButtonBus and inherit from (2) UiButtonNotificationBus. In order to listen or handle one and only one address use ::Handler. The EntityID variable is required to connect and disconnect the button. OnButtonClick is the event obtained through the inheritance. Here is an example of what you should have in your header:
 
 ```cpp
 #pragma once
@@ -57,7 +57,7 @@ Open your component header, include the (1) UiButtonBus and inherit from (2) UiB
 namespace MyCustomGem
 {
     class MyCustomExampleComponent: public AZ::Component, public MyCustomExampleRequestBus::Handler,
-      private UiButtonNotificationBus::Handler // (2), private UiButtonNotificationBus::MultiHandler
+      private UiButtonNotificationBus::Handler // (2)
     {
      public:
         void OnButtonClick() override;
@@ -73,16 +73,14 @@ void MyCustomExampleComponent::Activate()
 {
     /// rest of the code...
     UiButtonNotificationBus::Handler::BusConnect(m_buttonRefresh); // (1) only one 
-    //UiButtonNotificationBus::MultiHandler::BusConnect(m_buttonRefresh); // if you expect multiple
 }
 void MyCustomExampleComponent::Deactivate()
 {
     /// rest of the code...
     UiButtonNotificationBus::Handler::BusDisconnect(m_buttonRefresh); // (2) only one 
-    //UiButtonNotificationBus::MultiHandler::BusDisconnect(m_buttonRefresh); // if you expect multiple
 }
 
-void MyCustomExampleComponent::OnButtonClick(const AZ::EntityId& entityId)
+void MyCustomExampleComponent::OnButtonClick()
 {
     //const AZ::EntityId* btnId = UiButtonNotificationBus::GetCurrentBusId();
     //AZ_Printf("ButtonClick", "Button clicked: %s\n", btnId->ToString().c_str()); // (3) print
