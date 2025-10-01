@@ -27,3 +27,4 @@ An interactive element is defined as an element that has an interactive componen
 | [UI Drop Target](components-drop-target) | Add target locations to a canvas that allow UI draggable elements. |
 | [UI Dropdown](components-dropdown) | Add a dropdown menu to a UI canvas. |
 | [UI Dropdown Option](components-dropdownoption) | Learn how to add options to a dropdown menu. |
+| [UI Hierarchy Interactivity Toggle](components-interactivitytoggle) | Learn how to enable and disable interactivity on an element and all it's children. |

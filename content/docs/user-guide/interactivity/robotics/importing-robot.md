@@ -21,7 +21,6 @@ SDFormat, URDF, and XACRO are widely used robot description standards within the
 URDF/XACRO files contain complete robot descriptions, including references to external geometry files. While you can define primitive geometries directly within the URDF/XACRO file, it's common practice to use external mesh files, in formats such as DAE (Collada) or STL, to represent the visual and collision shapes of the robot.
 Robot models are typically available in packages that include the URDF/XACRO file and additional geometry files that contain visualizations and collision shapes, either as primitive geometries or external mesh files. These packages may be distributed as ROS workspaces, which are more straightforward to use in ROS applications. 
 
-
 ## Introduction to Robot Importer
 
 Import robots into your O3DE simulation project using the Robot Importer that's included in the ROS 2 Gem. Robot Importer has the following features:
@@ -34,10 +33,9 @@ Import robots into your O3DE simulation project using the Robot Importer that's 
 
 ## Importing a robot into your simulation project
 
-
 ### Prerequisite
 
-Before you can use robot description files in a ROS package, you must first build a workspace with the package and its dependencies. This ensures that Robot Importer can find all the required files. 
+Before you can use robot description files in a ROS package, you might need to build a workspace with the package and its dependencies. This ensures that Robot Importer can find all the required files. Otherwise, the Robot Importer UI allows to specify the path to the robot description files and their dependencies. 
 
 To build, create a workspace and run `colcon build`. Do not forget to source ROS 2 workspace before launching the O3DE Editor. 
 
@@ -45,7 +43,7 @@ For more information, refer to the robot description package's documentation, wh
 
 ### Loading the robot definition file with Robot Importer
 
-1. Load your project and select a level in O3DE Editor.
+1. Load your project and select a level in O3DE Editor. Remember to enable `ROS2RobotImporter` Gem in your project.
 
 2. Launch Robot Importer from the Editor by doing either of the following:
    - Select **Main Menu > Tools > Robot Importer**
@@ -153,3 +151,9 @@ Use the Robot Importer to re-import URDF files. In some cases, assets (mesh file
 ### Details
 
 Implementation details are available in [RFC](https://github.com/o3de/sig-simulation/issues/80)
+
+## Asset builder
+
+The `ROS2RobotImporter` Gem provides an asset builder that processes URDF, SDF, and XACRO files. The asset builder is used to convert the robot description files into O3DE assets, such as `*.azmodel` and `*.pxmesh`. The asset builder is automatically invoked when you add the Gem to your project.
+
+The asset builder processes the input data without letting you change the parameters. This might be enough for simple models, but if you need to change the parameters, you can use the Robot Importer tool.
