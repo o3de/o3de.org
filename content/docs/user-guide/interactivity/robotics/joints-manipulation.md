@@ -12,6 +12,10 @@ Manipulating joints is crucial for applications involving robotic arms or other 
 O3DE supports control of joint systems with ROS through packages such as [ros2_controllers](https://github.com/ros-controls/ros2_controllers),
 and through integration with [MoveIt2](https://moveit.ros.org/).
 
+{{<note>}}
+The manipulation functionality is available in the `ROS2Controllers` Gem.
+{{</note>}}
+
 ### Supported features
 
 With manipulation components, you can:
@@ -29,10 +33,10 @@ Manipulation components only work with single degree of freedom joints.
 
 Movement of joints is handled through a set of interfaces and components that implement them.
 
-| Interface                            | Components                                                                     | Role                                                                                           |
-|--------------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| __JointsPositionControllerRequests__ | __JointsArticulationControllerComponent__<br/>__JointsPIDControllerComponent__ | Move joints towards desired positions.                                                         |
-| __JointsManipulationRequests__       | __JointsManipulationComponent__                                                | Hold and publish joints state information, relay commands to controllers.                      |
+| Interface                            | Components                                                                     | Role                                                                                            |
+| ------------------------------------ | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| __JointsPositionControllerRequests__ | __JointsArticulationControllerComponent__<br/>__JointsPIDControllerComponent__ | Move joints towards desired positions.                                                          |
+| __JointsManipulationRequests__       | __JointsManipulationComponent__                                                | Hold and publish joints state information, relay commands to controllers.                       |
 | __JointsTrajectoryRequests__         | __JointsTrajectoryComponent__                                                  | Host action server for trajectory commands, control trajectory through a sequence of positions. |
 
 ## Simulating joint systems
@@ -101,7 +105,7 @@ Finally, run the launch file and control your simulated joint system with MoveIt
 ## Related topics
 
 | Topic                   | Description                         |
-|-------------------------|-------------------------------------|
+| ----------------------- | ----------------------------------- |
 | [Grippers](grippers.md) | Simulating robotic grippers in O3DE |
 
 

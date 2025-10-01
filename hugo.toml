@@ -29,11 +29,19 @@ enableRobotsTXT = true
       source = "content"
       target = "content/docs/api"
 
-[markup.highlight]
-  style = "paraiso-dark"
-
-[markup.goldmark.renderer]
-  unsafe = true
+[markup]
+  [markup.highlight]
+    style = "paraiso-dark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+    [markup.goldmark.renderer]
+      unsafe = true
+  
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -48,6 +56,7 @@ enableRobotsTXT = true
   contentDir = "/content/"
   docsDir = "/docs/"
   sourceRepo = "https://github.com/o3de/o3de"
+  math = true
 
 [params.docs]
 # Docs version data format: ["display name", "baseURL"]

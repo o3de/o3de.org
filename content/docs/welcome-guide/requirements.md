@@ -147,7 +147,7 @@ Install CMake using the instructions for the version of Ubuntu that you have ins
 {{< tabs name="CMake install" >}}
 {{% tab name="22.04 LTS" %}}
 
-You can install the default version of CMake for Ubuntu 22.04 LTS, which is version 3.22. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest).
+The default version of CMake for Ubuntu 22.04 LTS is version 3.22, however version 3.24 is the minimum requirement for O3DE. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest).
 
 ```shell
 sudo apt install cmake
