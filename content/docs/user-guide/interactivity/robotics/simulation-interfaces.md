@@ -91,7 +91,7 @@ The `SimulationInterfaces` can be configured in your project with following regi
 | `SimulationInterfaces/KeyboardTransitions/StoppedToPlaying` | Set the keyboard key that will change simulation state from Stopped to Playing e.g., `keyboard_key_alphanumeric_R` |
 | `SimulationInterfaces/KeyboardTransitions/PausedToPlaying`  | Set the keyboard key that will change simulation state from Paused to Playing e.g., `keyboard_key_alphanumeric_P`  |
 | `SimulationInterfaces/KeyboardTransitions/PlayingToPaused`  | Set the keyboard key that will change simulation state from Playing to Paused e.g., `keyboard_key_alphanumeric_P`  |
-| `ROS2SimulationInterfaces/<ServiceType>`                    | Change default service name, if empty string is pass service is disabled                                           |
+| `ROS2SimulationInterfaces/<ServiceType>`                    | Change default service name (service is disabled if empty string is passed)                                        |
 
 {{< note >}}
 You can assign the same key to multiple `SimulationInterfaces/KeyboardTransitions` registry key.
@@ -173,7 +173,7 @@ The following features are currently supported:
 
 ### SpawnEntity service
 
-The `SpawnEntity` _service_ lets you add simulated _spawnables_ into the simulation environment. List of available _spawnables_ gan be obtained with the `GetSpawnables` _service_.
+The `SpawnEntity` _service_ lets you add simulated _spawnables_ into the simulation environment. List of available _spawnables_ can be obtained with the `GetSpawnables` _service_.
 
 ROS 2 _service_ definition: [SpawnEntity.srv](https://github.com/ros-simulation/simulation_interfaces/tree/main/srv/SpawnEntity.srv) \
 Default _service_ name: `/spawn_entity` \
@@ -191,7 +191,7 @@ ROS 2 _service_ definition: [DeleteEntity.srv](https://github.com/ros-simulation
 Default _service_ name: `/delete_entity` \
 O3DE EBus: `SimulationInterfaces::SimulationEntityManagerRequests::DeleteEntity`
 
-**Note:** This mechanism allows you only to delete entities which were spawned by the `SimulationInterfaces` Gem.
+**Note:** This mechanism allows you to delete only entities which were previously spawned with the `SimulationInterfaces` interface.
 
 ### GetNamedPoses service
 
@@ -357,7 +357,7 @@ O3DE EBus: `SimulationInterfaces::SimulationManagerRequests::StepSimulation`
 
 ### LoadWorld service
 
-The `LoadWorld` _service_ allows to load level in simulation. Calling `LoadWorld` _service_ with already loaded level, unloads old one and loads requested level. 
+The `LoadWorld` _service_ loads levels into the simulation. Calling the _service_ with a loaded level unloads it before loading the requested level. 
 
 ROS 2 _service_ definition: [LoadWorld.srv](https://github.com/ros-simulation/simulation_interfaces/blob/main/srv/LoadWorld.srv) \
 Default _service_ name: `/load_world` \
@@ -367,7 +367,7 @@ O3DE EBus: `SimulationInterfaces::LevelManager::LoadWorld`
 
 ### UnloadWorld service
 
-The `UnloadWorld` _service_ allows to unload current level in simulation. 
+The `UnloadWorld` _service_ unloads the current level from the simulation. 
 
 ROS 2 _service_ definition: [UnloadWorld.srv](https://github.com/ros-simulation/simulation_interfaces/blob/main/srv/UnloadWorld.srv) \
 Default _service_ name: `/unload_world` \
@@ -375,7 +375,7 @@ O3DE EBus: `SimulationInterfaces::LevelManager::UnloadWorld`
 
 ### GetCurrentWorld service
 
-The `GetCurrentWorld` _service_ allows to get data about currently loaded level.
+The `GetCurrentWorld` _service_ publishes information about the level that is currently loaded into the simulation.
 
 ROS 2 _service_ definition: [GetCurrentWorld.srv](https://github.com/ros-simulation/simulation_interfaces/blob/main/srv/GetCurrentWorld.srv) \
 Default _service_ name: `/get_current_world` \
@@ -383,10 +383,10 @@ O3DE EBus: `SimulationInterfaces::LevelManager::GetCurrentWorld`
 
 ### GetAvailableWorlds service
 
-The `GetAvailableWorlds` _service_ allows to list all available levels
+The `GetAvailableWorlds` _service_ lists all available levels.
 
 ROS 2 _service_ definition: [GetAvailableWorlds.srv](https://github.com/ros-simulation/simulation_interfaces/blob/main/srv/GetAvailableWorlds.srv) \
 Default _service_ name: `/get_available_worlds` \
 O3DE EBus: `SimulationInterfaces::LevelManager::GetAvailableWorlds`
 
-**Note** The simulator currently doesn't support searching in online resources
+**Note** The simulator doesn't support searching for online resources.
