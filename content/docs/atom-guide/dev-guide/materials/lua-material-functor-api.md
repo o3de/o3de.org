@@ -110,7 +110,7 @@ Returns a boolean whether a property with the given name exists. Note the materi
 
 ### SetShaderParameterValue\_
 
-The functions **SetShaderConstant_<type>** were renamed to **SetShaderParameterValue_<type>** to more accurately reflect the underlying implementation. For backwards compatability the **SetShaderConstant_<type>** are still available, but considered deprecated.
+The functions **SetShaderConstant_** were renamed to **SetShaderParameterValue_** to more accurately reflect the underlying implementation. For backwards compatibility the **SetShaderConstant_** functions are still available, but considered deprecated.
 
 Each **SetShaderParameterValue\_** function takes a `string` shader input name and value to set. You must use the version that matches the data type of the shader input.
 
