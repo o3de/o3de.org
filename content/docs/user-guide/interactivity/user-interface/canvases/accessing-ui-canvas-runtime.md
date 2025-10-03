@@ -59,7 +59,7 @@ namespace MyCustomGem
 /// rest of the code...
 ```
 
-Inside your cpp file you should (1) connect and (2) disconnect your Ui Initialization Bus. To evaluate if the event is working as expected, you can print something in the (3) console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console. The Open 3D Engine LyShine Gem API reference about this bus is available [here](https://www.docs.o3de.org/docs/api/gems/lyshine/class_ui_initialization_interface.html)
+Inside your cpp file you should (1) connect and (2) disconnect your Ui Initialization Bus. To evaluate if the event is working as expected, you can print something in the (3) console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console. The Open 3D Engine LyShine Gem API reference about this bus is available [here](/docs/api/gems/lyshine/class_ui_initialization_interface)
 
 ```cpp
 void MyCustomExampleComponent::Activate()
