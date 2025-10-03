@@ -78,7 +78,7 @@ Enter a text string to be sent as an action on the UI canvas when a drop-down op
 
 **Cpp**
 
-To create your own UI components, check the [Working with UI Components](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/working/) page.
+To create your own UI components, check the [Working with UI Components](/docs/user-guide/interactivity/user-interface/components/working/) page.
 
 Once the component is available in the UI editor; and the UI dropdown is in the canvas; you can attach the cpp component to it.
 
