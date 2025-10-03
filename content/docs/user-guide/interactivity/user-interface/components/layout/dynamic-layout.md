@@ -5,7 +5,7 @@ title: UI Dynamic Layout Component
 weight: 550
 ---
 
-With the **DynamicLayout** component, you can change the number of children of the layout element at run time. To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](components-layout-column), [**LayoutRow**](components-layout-row), or [**LayoutGrid**](components-layout-grid) component. There are also other components like the [DropDown](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/interactive/components-dropdown/) that already include a dynamic layout.
+With the **DynamicLayout** component, you can change the number of children of the layout element at run time. To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](components-layout-column), [**LayoutRow**](components-layout-row), or [**LayoutGrid**](components-layout-grid) component. There are also other components like the [DropDown](/docs/user-guide/interactivity/user-interface/components/interactive/components-dropdown/) that already include a dynamic layout.
 
 The layout element (1) dynamically resizes to fit its child elements. The first child (2) of the layout element acts as the prototype element. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout.
 
@@ -37,9 +37,9 @@ For a [**LayoutGrid**](components-layout-grid) element, the cell size of the **L
 
 **Cpp**
 
-To create your own UI components, check the [Working with UI Components](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/working/) page.
+To create your own UI components, check the [Working with UI Components](/docs/user-guide/interactivity/user-interface/components/working/) page.
 
-As mentioned above, the dynamic layout content is often part of other components such as the [DropDown](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/interactive/components-dropdown/). This allows the dropdown to populate its [Options}(https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/interactive/components-dropdownoption/) dynamically, during runtime of the game or simulation.
+As mentioned above, the dynamic layout content is often part of other components such as the [DropDown](/docs/user-guide/interactivity/user-interface/components/interactive/components-dropdown/). This allows the dropdown to populate its [Options}(https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/interactive/components-dropdownoption/) dynamically, during runtime of the game or simulation.
 
  The following explanation and code examples expect you to already have a working a dropdown or another component that also uses a dynamic layout.
 
@@ -131,4 +131,4 @@ In Lua, there are code examples available in the official GitHub project as part
 
 **Outros**
 
-The dynamic layout is often dependent on other UI-components that may or may not be ready when the above code is executed. If you are unsure when to populate the dynamic layout, consider doing it after all UI elements are loaded and ready. This is possible with the In-Game Post-activate event that can be consulted [here](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/canvases/accessing-ui-canvas-runtime/).
+The dynamic layout is often dependent on other UI-components that may or may not be ready when the above code is executed. If you are unsure when to populate the dynamic layout, consider doing it after all UI elements are loaded and ready. This is possible with the In-Game Post-activate event that can be consulted [here](/docs/user-guide/interactivity/user-interface/canvases/accessing-ui-canvas-runtime/).
