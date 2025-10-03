@@ -94,7 +94,7 @@ An UI component is very similar to a game component. To create your first compon
 
 O3DE has [LyShine](/docs/user-guide/gems/reference/ui/lyshine/) as its default UI. If you intend to use any of its componenents, add LyShine as a build dependency in CMake.
 
-Search for your CMakeLists.txt of your gem and reference the LyShine Gem under BUILD_DEPENDENCIES, PUBLIC. If you are only using this in your gem, you can add this under your Private.Object module.
+Search for your CMakeLists.txt of your gem and reference the LyShine Gem under BUILD_DEPENDENCIES, PUBLIC. If you are only using this in your gem, you can add this under your Private.Object module. 
 
 ```cmake
 # The ${gem_name}.Private.Object target is an internal target
