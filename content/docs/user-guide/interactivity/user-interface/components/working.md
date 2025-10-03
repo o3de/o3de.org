@@ -90,9 +90,9 @@ Some actions are disabled, depending on the context. For example, you can't past
 
 ## Create your UI Components: Cpp
 
-An UI component is very similar to a game component. To create your first component follow the [Creating a Component](https://www.docs.o3de.org/docs/user-guide/programming/components/create-component/) tutorial and change it from "Game" component to "UI" component. The components are usually created inside Gems, if you need to create your first gem, follow the [Creating an O3DE Gem](https://www.docs.o3de.org/docs/user-guide/programming/gems/creating/) tutorial.
+An UI component is very similar to a game component. To create your first component follow the [Creating a Component](/docs/user-guide/programming/components/create-component/) tutorial and change it from "Game" component to "UI" component. The components are usually created inside Gems, if you need to create your first gem, follow the [Creating an O3DE Gem](/docs/user-guide/programming/gems/creating/) tutorial.
 
-O3DE has [LyShine](https://www.docs.o3de.org/docs/user-guide/gems/reference/ui/lyshine/) as its default UI. If you intend to use any of its componenents, add LyShine as a build dependency in CMake.
+O3DE has [LyShine](/docs/user-guide/gems/reference/ui/lyshine/) as its default UI. If you intend to use any of its componenents, add LyShine as a build dependency in CMake.
 
 Search for your CMakeLists.txt of your gem and reference the LyShine Gem under BUILD_DEPENDENCIES, PUBLIC. If you are only using this in your gem, you can add this under your Private.Object module.
 
