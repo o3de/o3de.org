@@ -76,7 +76,7 @@ Enter a text string. This string is sent as an action on the UI canvas when the 
 
 **Cpp**
 
-To create your own UI components, check the [Working with UI Components](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/working/) page.
+To create your own UI components, check the [Working with UI Components](/docs/user-guide/interactivity/user-interface/components/working/) page.
 
 Once the component is available in the UI editor; and the UI text input is in the canvas; you can attach the cpp component to it.
 
@@ -99,9 +99,9 @@ namespace MyCustomGem
 /// rest of the code...
 ```
 
-Text input has several methods that you can use. If you are not sure which one is of interest to you, consider exploring the api documentation about the class [UiTextInputInterface](https://docs.o3de.org/docs/api/gems/lyshine/class_ui_text_input_interface.html). The following C++ example showcases how you can use one of those methods, GetText.
+Text input has several methods that you can use. If you are not sure which one is of interest to you, consider exploring the api documentation about the class [UiTextInputInterface](/docs/api/gems/lyshine/class_ui_text_input_interface). The following C++ example showcases how you can use one of those methods, GetText.
 
-Inside your cpp file you should (1) connect and (2) disconnect your textinput bus. To evaluate if the event is working as expected, you can print something in the (3) console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console. Consider adding a [UI Button](https://www.docs.o3de.org/docs/user-guide/interactivity/user-interface/components/interactive/components-button/) too so you can write in the text input and then print the text in the console when you click the button.
+Inside your cpp file you should (1) connect and (2) disconnect your textinput bus. To evaluate if the event is working as expected, you can print something in the (3) console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console. Consider adding a [UI Button](/docs/user-guide/interactivity/user-interface/components/interactive/components-button/) too so you can write in the text input and then print the text in the console when you click the button.
 
 ```cpp
 void MyCustomExampleComponent::Activate()
