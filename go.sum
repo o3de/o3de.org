@@ -8,3 +8,9 @@ github.com/o3de/hugo-odie v0.0.0-20241126002926-cac27abcb022 h1:cnPDk4/430IcnnbP
 github.com/o3de/hugo-odie v0.0.0-20241126002926-cac27abcb022/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
 github.com/o3de/hugo-odie v0.0.0-20250607164835-e8c6464265ee h1:wLdC9W1ObTx1mGM9ypAmAZ4Wi2RK7nJ4eeElP0kNgvo=
 github.com/o3de/hugo-odie v0.0.0-20250607164835-e8c6464265ee/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
+github.com/o3de/hugo-odie v0.0.0-20250925181214-be7e5cba112a h1:SD38w8wKxZ8vGbRpET65y1VqTm8xNkHZbeqKPiYtxdk=
+github.com/o3de/hugo-odie v0.0.0-20250925181214-be7e5cba112a/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
+github.com/o3de/hugo-odie v0.0.0-20250925183307-3bcc173cefc0 h1:Uaw6x7H/82HRQ+6wYO6lkYcv9z2li+VM2Qlpw/zzMts=
+github.com/o3de/hugo-odie v0.0.0-20250925183307-3bcc173cefc0/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
+github.com/o3de/hugo-odie v0.0.0-20250926192417-45f3dcf3acd2 h1:jpr3CHOMCb2lae1GPcz3GDHpGQ79EUEP1ZIsDAPeFCI=
+github.com/o3de/hugo-odie v0.0.0-20250926192417-45f3dcf3acd2/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
