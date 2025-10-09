@@ -226,3 +226,13 @@ To implement the component interface, start with the following steps that walk t
     ```
 
     For details on how to implement these component services, refer to [Defining and Using Component Services](services).
+
+
+## UI component
+
+    To make your component available in the UI Editor instead of the Game editor, search for your component Reflect method. Change its attribute from "Game" to "UI". Cmake, and build your project. This alone will make the component available as an UI component, instead of a game component.
+
+     ```cpp
+    // change AZ_CRC_CE("Game") to AZ_CRC_CE("UI")
+    ->Attribute(AZ::Edit::Attributes::AppearsInAddComponentMenu, AZ_CRC_CE("UI"))
+    ```

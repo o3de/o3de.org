@@ -1,6 +1,6 @@
 ---
 linkTitle: Working with UI Components
-description: Learn how to add and delete components, reference UI elements as component properties, and manage components in Open 3D Engine's UI Editor .
+description: Learn how to add and delete components, reference UI elements as component properties, manage existing components in Open 3D Engine's UI Editor and create your own UI components.
 title: Working with UI Components
 weight: 100
 ---
@@ -87,3 +87,39 @@ You can also use the context menu to act on multiple components at once.
 The **Element** and **Transform2D** components are automatically added to a UI element and can't be removed from the component list.
 Some actions are disabled, depending on the context. For example, you can't paste a component if you haven't copied one.
 {{< /note >}}
+
+## Create your UI Components: Cpp
+
+An UI component is very similar to a game component. To create your first component follow the [Creating a Component](/docs/user-guide/programming/components/create-component/) tutorial and change it from "Game" component to "UI" component. The components are usually created inside Gems, if you need to create your first gem, follow the [Creating an O3DE Gem](/docs/user-guide/programming/gems/creating/) tutorial.
+
+O3DE has [LyShine](/docs/user-guide/gems/reference/ui/lyshine/) as its default UI. If you intend to use any of its componenents, add LyShine as a build dependency in CMake.
+
+Search for your CMakeLists.txt of your gem and reference the LyShine Gem under BUILD_DEPENDENCIES, PUBLIC. If you are only using this in your gem, you can add this under your Private.Object module. 
+
+```cmake
+# The ${gem_name}.Private.Object target is an internal target
+# It should not be used outside of this Gems CMakeLists.txt
+ly_add_target(
+    NAME ${gem_name}.Private.Object STATIC
+    NAMESPACE Gem
+    FILES_CMAKE
+        mycustomgem_private_files.cmake
+        ${pal_dir}/mycustomgem_private_files.cmake
+    TARGET_PROPERTIES
+        O3DE_PRIVATE_TARGET TRUE
+    INCLUDE_DIRECTORIES
+        PRIVATE
+            Include
+            Source
+    BUILD_DEPENDENCIES
+        PUBLIC
+            AZ::AzCore
+            AZ::AzFramework
+            LyShine
+)
+```
+
+The above CMAKE configuration allows C++ to reference header (files) that are inside the LyShine Gem.
+
+In your header file (of your custom component), you can then include the UiBus headers, at the beggining of the file (after #pragma once and before namespace).
+
