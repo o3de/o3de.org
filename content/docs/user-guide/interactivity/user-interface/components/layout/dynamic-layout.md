@@ -119,7 +119,7 @@ In other words, the above code clones or copies the only Option available ("Opti
 
 If you use the vector of strings that contains 3 indexes it will modify the text-element of each option and populate the dropdown as expected.
 
-<img width="236" height="157" alt="image" src="https://github.com/user-attachments/assets/07a1ac9b-dd90-4e17-b6d7-8754f114e30a" />
+![alt text](image2.png)
 
 ---
 
