@@ -11,6 +11,11 @@ weight: 220
 Grippers are one of the most widely used effectors in robotic manipulation. 
 The simulated robotic grippers are controlled by ROS 2 action servers that allow the user to track the current status of the gripping operation.
 The API to control the gripper through an action server is available in [control_msgs](https://github.com/ros-controls/control_msgs/blob/master/control_msgs/action/GripperCommand.action).
+
+{{<note>}}
+The grippers are available in the `ROS2Controllers` Gem.
+{{</note>}}
+
 ### Supported features
 
 Two grippers are available:

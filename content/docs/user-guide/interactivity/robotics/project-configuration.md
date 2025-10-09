@@ -8,13 +8,13 @@ toc: true
 
 ## Requirements
 
-* Ubuntu 22.04 with ROS 2 Humble or Ubuntu 24.04 with ROS 2 Jazzy. Other Ubuntu versions, ROS 2 versions, and Linux distributions can also work, but are not supported.
+The O3DE ROS 2 Gem has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) and [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation.html) with Ubuntu 22.04 and 24.04, respectively.
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
-* [O3DE built from source on Linux](/docs/welcome-guide/setup/setup-from-github/building-linux).
-* The [latest released version](https://docs.ros.org/en/rolling/Releases.html#list-of-distributions ) of ROS 2. This instruction assumes that the `desktop` version is installed. Otherwise, some packages might be missing. 
-  * The O3DE ROS 2 has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) and [ROS 2 Iron](https://docs.ros.org/en/iron/Installation.html) with Ubuntu 22.04.
+
+This instruction assumes that the `desktop` version of ROS 2 is installed. Otherwise, some packages might be missing. It asssumes that you have a working O3DE installation or a source code checkout of O3DE.
+Please visit the [instructions](/docs/welcome-guide/setup/setup-from-github/building-linux) to learn how to build O3DE from the source code.
 
 ## Setting up
 
@@ -49,8 +49,6 @@ If you have multiple ROS 2 versions installed, make sure you [source](https://do
 
 ### Additional ROS 2 packages required
 
-* gazebo_msgs: `ros-${ROS_DISTRO}-gazebo-msgs`
-    * gazebo_msgs are used for robot spawning (no dependency on Gazebo).
 * Ackermann messages: `ros-${ROS_DISTRO}-ackermann-msgs`
 * Control messages `ros-${ROS_DISTRO}-control-msgs`
 * XACRO `ros-${ROS_DISTRO}-xacro`
@@ -61,20 +59,20 @@ If a `desktop` installation of ROS 2 distro was selected, everything else should
 Use this helpful command to install:
 
 ```shell
-sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-msgs ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-gazebo-msgs ros-${ROS_DISTRO}-xacro ros-${ROS_DISTRO}-vision-msgs
+sudo apt install ros-${ROS_DISTRO}-ackermann-msgs ros-${ROS_DISTRO}-control-msgs ros-${ROS_DISTRO}-nav-msgs ros-${ROS_DISTRO}-xacro ros-${ROS_DISTRO}-vision-msgs
 ```
+
+{{<note>}}
+You might want to install `gazebo_msgs` package to use some of the features, such as dynamic spawning of robots and contact sensor. However, it is not required for the `ROS2` Gem to work. The `gazebo_msgs` package is deprecated in ROS 2 _Jazzy_ and will not be available as of ROS 2 _Kilted_.
+{{</note>}}
 
 ### Clone the Gem repository
 
-The ROS 2 Gem lives in the [`o3de/o3de-extras`](https://github.com/o3de/o3de-extras) repository. Clone the GitHub repository to your machine:
+To use the `ROS2` Gem in any O3DE project, you need to register it with O3DE. Similarly, you need to register the `ROS2Sensors`, `ROS2Controllers`, and assets' Gems to use their features. They live in the [`o3de/o3de-extras`](https://github.com/o3de/o3de-extras) repository. Clone the GitHub repository to your machine:
 
 ```shell
 git clone https://github.com/o3de/o3de-extras
 ```
-
-### Registering the Gem
-
-To use the ROS 2 Gem in any O3DE project, you need to register it with O3DE.
 
 For convenience, set a couple of environment variables: `O3DE_HOME` to where your O3DE is located and `O3DE_EXTRAS_HOME`
 to the path of your cloned o3de-extras repository, for example:
@@ -84,26 +82,19 @@ export O3DE_HOME=${HOME}/o3de
 export O3DE_EXTRAS_HOME=${HOME}/o3de-extras
 ```
 
-Run the following command to register the ROS 2 Gem:
+Enable Git Large File Storage (LFS), if you haven't already. Asset Gems use LFS to store large files.
 ```shell
-${O3DE_HOME}/scripts/o3de.sh register --gem-path ${O3DE_EXTRAS_HOME}/Gems/ROS2
+cd ${O3DE_EXTRAS_HOME}
+git lfs install && git lfs pull
 ```
 
-### Registering robotic project templates
+### Registering robotic project templates and Gems
 
 Robotics project templates can help you quickly start your simulation project. We recommend that you register the robotics project template Gems and their Asset Gems, which you downloaded with the `o3de-extras` repository.
-
-To register robotic templates and assets:
-1. Enable Git Large File Storage (LFS), if you haven't already.  Asset Gems use LFS to store large files.
-    ```shell
-    cd ${O3DE_EXTRAS_HOME}
-    git lfs install && git lfs pull
-    ```
-2. Register the following templates and assets from o3de-extras.
-    ```shell
-    ${O3DE_HOME}/scripts/o3de.sh register --all-gems-path ${O3DE_EXTRAS_HOME}/Gems/
-    ${O3DE_HOME}/scripts/o3de.sh register --all-templates-path ${O3DE_EXTRAS_HOME}/Templates/
-    ```
+```shell
+${O3DE_HOME}/scripts/o3de.sh register --all-gems-path ${O3DE_EXTRAS_HOME}/Gems/
+${O3DE_HOME}/scripts/o3de.sh register --all-templates-path ${O3DE_EXTRAS_HOME}/Templates/
+```
    
 For more information, refer to [Adding and Removing Gems](/docs/user-guide/project-config/add-remove-gems/) and [Registering Gems](/docs/user-guide/project-config/register-gems/).
 
@@ -119,14 +110,11 @@ Robotic project templates are designed to help you to quickly start simulating r
 #### ROS 2 Project Templates
 
 There are three templates for robotics:
-- [ROS 2 project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate):
-  - A versatile, lightweight template that is good for a starting project and includes a robot with differential drive.
-- [Warehouse project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2FleetRobotTemplate):
-  - A photorealistic warehouse with a Proteus robot, easy to customize and scale up (multi-robot).
-- [Manipulation project template](https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2RoboticManipulationTemplate):
-  - Includes two levels with robotic manipulator arms: one focused on palletization, the other one on R&D.
+- _Ros2ProjectTemplate_: a warehouse template that includes a differential drive robot and a C++ example that shows how to use the ROS 2 functionality in O3DE.
+- _Ros2FleetRobotTemplate_:a warehouse template with a differential drive robot, easy to customize and scale up (multi-robot).
+- _Ros2RoboticManipulationTemplate_: a template for robotic manipulation with a robotic arm and a set of objects that can be grabbed.
 
-:bulb: The template repositories also include examples that you can try out by following their README files.
+See more details about the templates in the  [overview](/docs/user-guide/interactivity/robotics/overview.md)
 
 #### Create a new project with a template
 
@@ -152,7 +140,7 @@ For convenience, here is an example of parametrized CMake calls:
 ```shell
 cd $PROJECT_PATH
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON
-cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets 
+cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets ${PROJECT_NAME}.GameLauncher
 ```
 {{<note>}}
 Before version 24.09.0, PhysX 5 was experimental and compiled during the engine's source code compilation process. 
@@ -161,10 +149,17 @@ If you're utilizing version 23.10.3 or an earlier release, you'll need to specif
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
 ```
 {{</note>}}
+
 ### Launching your project in O3DE Editor
 
 Once your project is built, run the following command to start the Editor:
 
 ```shell
 ${PROJECT_PATH}/build/linux/bin/profile/Editor
+```
+
+You might also use the `GameLauncher` to run your project without the Editor. The `GameLauncher` is built as part of the build process and can be found in the same directory as the Editor.
+
+```shell
+${PROJECT_PATH}/build/linux/bin/profile/${PROJECT_NAME}.GameLauncher
 ```

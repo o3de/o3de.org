@@ -75,3 +75,66 @@ Enter a text string to be sent as an action on the UI canvas when the drop-down 
 **Actions, Option Selected**
 
 Enter a text string to be sent as an action on the UI canvas when a drop-down option is selected.
+
+**Cpp**
+
+To create your own UI components, check the [Working with UI Components](/docs/user-guide/interactivity/user-interface/components/working/) page.
+
+Once the component is available in the UI editor; and the UI dropdown is in the canvas; you can attach the cpp component to it.
+
+Open your component header, include the UiDropdownBus and inherit from UiDropdownNotificationBus. In order to listen or handle one and only one address use ::Handler. In order to listen to multiple addresses use::MultiHandler. An EntityID is advised too so you can connect and disconnect the dropdown. Expanded, Collapsed and ValueChanged are the events obtained through the inheritance. Here is an example of what you should have in your header:
+
+```cpp
+#pragma once
+
+#include <AzCore/Component/Component.h>
+#include <MyCustomGem/MyCustomExampleInterface.h> //interface should match your custom gem and component
+#include <LyShine/Bus/UiButtonBus.h>
+
+namespace MyCustomGem // namespace should match your custom gem
+{
+    class MyCustomExampleComponent: public AZ::Component, public MyCustomExampleRequestBus::Handler, private UiButtonNotificationBus::Handler // , private UiButtonNotificationBus::MultiHandler
+    {
+    private:
+        AZ::EntityId m_dropDown;
+        /// rest of the code...
+    public:
+        void OnDropdownExpanded() override;
+        void OnDropdownCollapsed() override;
+        void OnDropdownValueChanged([[maybe_unused]] AZ::EntityId option) override;
+    
+```
+
+Inside your cpp file you should connect your dropdown bus when the component is activated; and disconnect it when the component is deactivated. To evaluate if the events are working as expected, you can print something in the console. Even if you test this in the UI Editor, the messages will appear in your Game-Editor console.
+
+```cpp
+    /// other code...
+
+    void MyCustomExampleComponent::Activate()
+    {
+        MyCustomExampleRequestBus::Handler::BusConnect(GetEntityId());
+
+        UiDropdownNotificationBus::Handler::BusConnect(m_DropDown);
+    }
+    void MyCustomExampleComponent::Deactivate()
+    {
+        MyCustomExampleRequestBus::Handler::BusDisconnect(GetEntityId());
+
+        UiDropdownNotificationBus::Handler::BusDisconnect(m_DropDown);
+    }
+    
+    void MyCustomExampleComponent::OnDropdownExpanded()
+    {
+        AZ_Printf("MyCustomExampleComponent", "Dropdown expanded.\n");
+    }
+    void MyCustomExampleComponent::OnDropdownCollapsed()
+    {
+        AZ_Printf("MyCustomExampleComponent", "Dropdown collapsed.\n");
+    }
+    void MyCustomExampleComponent::OnDropdownValueChanged([[maybe_unused]] AZ::EntityId option)
+    {
+         AZ_Printf("MyCustomExampleComponent", "Dropdown value changed.\n");
+    }
+
+    /// rest of the code...
+```
