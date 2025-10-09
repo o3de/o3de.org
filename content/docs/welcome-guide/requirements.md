@@ -20,23 +20,23 @@ Installing the engine with the [pre-built installer](https://o3debinaries.org/do
 
 ### Minimum hardware specification
 
-| Hardware Component | Minimum Required Specification |
-| - | - |
-| CPU | Quad-core (4 cores) 64-bit x86-capable Intel or AMD processor, 2.5 GHz, with the SSE 4.1 SIMD instruction set |
-| RAM | 16 GB RAM (8GB RAM may be acceptable if you limit the number of threads used for compilation) |
-| GPU | - DirectX 12 or Vulkan-compatible video card <br> - 2 GB VRAM <br> - Shader Model 6.2 (or Shader Model 6.3 to use raytracing features) <br> - NVIDIA GeForce GTX 1060, driver version 471.11 or later recommended _or_ <br> - AMD Radeon Pro 560 _or_ <br> - Intel HD 630 <br> |
-| Hard Disk | 40 GB (using the [pre-built installer](https://o3debinaries.org/download/windows.html)) _or_ 100+ GB (depending on project configuration) of free disk space |
-| Display Device | 1366 x 768 pixel screen resolution |
+| Hardware Component | Minimum Required Specification                                                                                                                                                                                                                                                 |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| CPU                | Quad-core (4 cores) 64-bit x86-capable Intel or AMD processor, 2.5 GHz, with the SSE 4.1 SIMD instruction set                                                                                                                                                                  |
+| RAM                | 16 GB RAM (8GB RAM may be acceptable if you limit the number of threads used for compilation)                                                                                                                                                                                  |
+| GPU                | - DirectX 12 or Vulkan-compatible video card <br> - 2 GB VRAM <br> - Shader Model 6.2 (or Shader Model 6.3 to use raytracing features) <br> - NVIDIA GeForce GTX 1060, driver version 471.11 or later recommended _or_ <br> - AMD Radeon Pro 560 _or_ <br> - Intel HD 630 <br> |
+| Hard Disk          | 40 GB (using the [pre-built installer](https://o3debinaries.org/download/windows.html)) _or_ 100+ GB (depending on project configuration) of free disk space                                                                                                                   |
+| Display Device     | 1366 x 768 pixel screen resolution                                                                                                                                                                                                                                             |
 
 ### Recommended hardware specification
 
-| Hardware Component | Minimum Recommended Specification |
-| - | - |
-| CPU | Hexa-core (6 cores) 64-bit x86-capable Intel or AMD processor, 2.5 GHz, supports the SSE 4.1 SIMD instruction set |
-| RAM | 32 GB RAM |
-| GPU | - DirectX 12 or Vulkan-compatible video card <br> - 6 GB VRAM <br> - Shader Model 6.2 (or Shader Model 6.3 to use raytracing features) <br> - NVIDIA GeForce GTX 16 Series, driver version 471.11 or later recommended _or_ <br> - AMD RX 5000 Series |
-| Hard Disk | SSD with 1 TB of free disk space |
-| Display Device | 1366 x 768 pixel screen resolution |
+| Hardware Component | Minimum Recommended Specification                                                                                                                                                                                                                     |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CPU                | Hexa-core (6 cores) 64-bit x86-capable Intel or AMD processor, 2.5 GHz, supports the SSE 4.1 SIMD instruction set                                                                                                                                     |
+| RAM                | 32 GB RAM                                                                                                                                                                                                                                             |
+| GPU                | - DirectX 12 or Vulkan-compatible video card <br> - 6 GB VRAM <br> - Shader Model 6.2 (or Shader Model 6.3 to use raytracing features) <br> - NVIDIA GeForce GTX 16 Series, driver version 471.11 or later recommended _or_ <br> - AMD RX 5000 Series |
+| Hard Disk          | SSD with 1 TB of free disk space                                                                                                                                                                                                                      |
+| Display Device     | 1366 x 768 pixel screen resolution                                                                                                                                                                                                                    |
 
 ## Software prerequisites and configuration {#software-prerequisites}
 
@@ -75,7 +75,7 @@ The default Visual Studio installation might not include all of the features tha
       + In the **Installation details** panel on the right, select a **Windows 10 SDK** version at **10.0.19041.0** or later.
    + Select **Desktop development with C++**.
 
-1. Once you've completed your changes, choose the **Install** button in the lower right hand corner, selecting your preferred download option.
+1. Once you've completed your changes, choose the **Install** button in the lower right-hand corner, selecting your preferred download option.
   {{< note >}}
   If you've made changes to an existing installation, you might see a **Modify** button in the lower right corner of the options window instead.
   {{< /note >}}
@@ -126,31 +126,33 @@ If the current CMake version was not returned because CMake cannot be found, loc
 
 ## Linux
 
-The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}.
+The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}. 
 
 {{< note >}}
-Support for Ubuntu 24.04 LTS and Ubuntu on 64-bit ARMv8 processors is in an experimental stage.
+Ubuntu on 64-bit ARMv8 processors is in an experimental stage.
 {{< /note >}}
 
 The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt` command-line utility.
 
 ### CMake {#linux-cmake}
 
-As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it with the following command.
-
-```shell
-sudo apt remove cmake
-```
+[CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it and install a more recent version.
 
 Install CMake using the instructions for the version of Ubuntu that you have installed:
 
 {{< tabs name="CMake install" >}}
 {{% tab name="22.04 LTS" %}}
 
-The default version of CMake for Ubuntu 22.04 LTS is version 3.22, however version 3.24 is the minimum requirement for O3DE. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest).
+The default version of CMake for Ubuntu 22.04 LTS is version 3.22, however version CMake {{< versions/cmake >}} is the minimum requirement for O3DE. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest) or follow the instructions below to install it using Kitware APT repository.
 
 ```shell
-sudo apt install cmake
+sudo apt remove --purge cmake -y
+sudo apt update
+sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg
+sudo wget -O /usr/share/keyrings/kitware-archive-keyring.gpg https://apt.kitware.com/keys/kitware-archive-latest.asc
+echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ jammy main' | sudo tee /etc/apt/sources.list.d/kitware.list
+sudo apt update
+sudo apt install -y cmake
 ```
 
 {{% /tab %}}
@@ -159,7 +161,7 @@ sudo apt install cmake
 You can install the default version of CMake for Ubuntu 24.04 LTS, which is version 3.28. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest).
 
 ```shell
-sudo apt install cmake
+sudo apt install -y cmake
 ```
 
 {{% /tab %}}
@@ -183,7 +185,7 @@ Install Clang and the GNU C++ Library using the instructions for the version of 
 You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
 
 ```shell
-sudo apt install libstdc++-12-dev clang
+sudo apt install -y libstdc++-12-dev clang clang++
 ```
 
 {{% /tab %}}
@@ -192,7 +194,7 @@ sudo apt install libstdc++-12-dev clang
 You can install the default version of Clang for Ubuntu 24.04 LTS, which is clang-18. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
 
 ```shell
-sudo apt install libstdc++-12-dev clang
+sudo apt install -y libstdc++-12-dev clang clang++
 ```
 
 {{% /tab %}}
