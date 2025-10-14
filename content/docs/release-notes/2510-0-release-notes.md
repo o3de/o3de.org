@@ -1,7 +1,7 @@
 ---
 linktitle: 25.10.0 Release Notes
 title: Release Notes for Open 3D Engine 25.10.0
-description: Full release notes for Open 3D Engine (O3DE) version 25.05.1.
+description: Full release notes for Open 3D Engine (O3DE) version 25.10.0.
 # weight: 885
 toc: true
 ---
