@@ -17,4 +17,4 @@
 * [ ] **Answer the question at hand** - Does the documentation answer a *what*, *why*, *how*, or *where* type of question?
 * [ ] **Consistency** - Does the content consistently follow the [Style Guide](https://o3de.org/docs/contributing/to-docs/style-guide/quick-reference)?
 * [ ] **Help the user** - Does the documentation show the user something *meaningful*?
-
+* [ ] **All commits are signed off** - Do all commits have a `Signed-off-by` line at the end, with an email verified by GitHub?
