@@ -12,10 +12,13 @@ If you are working on the documentation or interested in seeing a specific branc
 
 To build the O3DE website locally, you need the items below.
 - `o3de.org` repository
-- **Hugo (extended version >=0.145)**, a static site generator that builds the website.
+- **Hugo (extended version 0.145 or later)**, a static site generator that builds the website.
 - **Go (version 1.23.0 or later)**, the runtime for Hugo and its associated features. This may install with Hugo, depending on your install method. Run `go version` after installing Hugo to verify.
-- **dart-sass (version >=1.90.0)**, the current Sass processor, which doesn't ship with Hugo.
+- **dart-sass (version 1.90.0 or later)**, the current Sass processor, which doesn't ship with Hugo.
 - **npm** (or another package manager) to install the **bootstrap** package, which Hugo needs for styling.
+
+> [!NOTE]
+> Version references on here are recommendations and known to work as of the the last update to the repo. Versions prior to the listed ones *may* work, but are not guaranteed to, due to breaking changes in both Dart-Sass and Hugo. Likewise, while we try to reasonably keep up with version changes, future versions may also introduce breaking changes. If you run into troubles not addressed in the Troubleshooting session, then try with the exact versions mentioned above.
 
 ### Download the repository
 You can download this repository or clone it onto your local machine. Cloning the repository will copy the whole repository to your local machine. This allows you to contribute to the documentation, such as pull the latest changes, create branches, and make pull requests. 
