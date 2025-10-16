@@ -30,7 +30,7 @@ You can download this repository or clone it onto your local machine. Cloning th
 ### Setup Hugo, npm, and dependencies
 1. To install **Hugo (extended version)**, follow the instructions for your machine in the [Hugo documentation](https://gohugo.io/getting-started/installing). 
    
-    *Note: You must install the **extended version** of Hugo, version 0.145 or later. If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.*
+    *Note: You must install the **extended version** of Hugo. If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.*
 
 2. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **Node.js**.
 
@@ -92,6 +92,15 @@ You can download this repository or clone it onto your local machine. Cloning th
 3. To view a local build of the O3DE website, open a web browser and go to http://localhost:1313/.
 
 You can now view the O3DE website on your local machine! Find the O3DE documentation under the **Learn** section of the O3DE website.
+
+## Updating the Theme or testing theme updates
+
+1. Download the o3de/hugo-odie theme to the same parent folder in which you've downloaded this repo
+2. In hugo.toml, uncomment the hugo-odie `replacements` line to alias the reference to hugo-odie
+3. Rebuild the o3de site
+
+> [!IMPORTANT]
+> Remember to undo the uncomment before opening a PR for your changes!
 
 ## Troubleshooting
 
