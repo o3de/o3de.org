@@ -12,9 +12,9 @@ If you are working on the documentation or interested in seeing a specific branc
 
 To build the O3DE website locally, you need the items below.
 - `o3de.org` repository
-- **Hugo (extended version >=0.145 and <147.3)**, a static site generator that builds the website.
+- **Hugo (extended version >=0.145)**, a static site generator that builds the website.
 - **Go (version 1.23.0 or later)**, the runtime for Hugo and its associated features. This may install with Hugo, depending on your install method. Run `go version` after installing Hugo to verify.
-- **dart-sass (version <=1.89.1)**, the current Sass processor, which doesn't ship with Hugo.
+- **dart-sass (version >=1.90.0)**, the current Sass processor, which doesn't ship with Hugo.
 - **npm** (or another package manager) to install the **bootstrap** package, which Hugo needs for styling.
 
 ### Download the repository
@@ -27,7 +27,7 @@ You can download this repository or clone it onto your local machine. Cloning th
 ### Setup Hugo, npm, and dependencies
 1. To install **Hugo (extended version)**, follow the instructions for your machine in the [Hugo documentation](https://gohugo.io/getting-started/installing). 
    
-    *Note: You must install the **extended version** of Hugo, version 0.139 or later. If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.*
+    *Note: You must install the **extended version** of Hugo, version 0.145 or later. If downloading a prebuilt binary, make sure the filename starts with `hugo_extended`.*
 
 2. To install **npm**, follow the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **Node.js**.
 
@@ -102,7 +102,7 @@ WARN ... Module "project" is not compatible with this Hugo version; run "hugo mo
 
 #### Description
 
-This indicates that you are not using the correct edition or version of Hugo. The `o3de.org` website requires Hugo extended edition, version 0.93 or later.
+This indicates that you are not using the correct edition or version of Hugo. The `o3de.org` website requires Hugo extended edition, version 0.145 or later.
 
 #### Steps to fix
 
@@ -145,21 +145,3 @@ For a complete list of required dependencies, see `package.json`.
 2. Verify that the required dependencies have been installed by running the command, `npm list`. This outputs the list of dependencies and indicates whether or not they've been installed.
 
 3. Install missing dependencies. You can install all of the dependencies by running the command, `npm install`. Or, you can install a specific dependency. For example: `npm install bootstrap@4.6.1`
-
-#### Description 2
-
-If you are on a Mac (particularly an ARM Mac) and have confirmed you have Bootstrap installed, but are still getting this error, it is very likely a [known issue with libsass](https://github.com/gohugoio/hugo/issues/12649#issuecomment-2299360331) and Mac's file limits.
-
-#### Steps to fix
-
-Installing an earlier version of Hugo:
-
-1. Download [v0.115.3 extended from the release archive](https://github.com/gohugoio/hugo/releases/tag/v0.115.3) and extract the archive.
-
-2. To use it alongside an existing copy of Hugo, copy the `hugo` executable into `/usr/local/bin` and rename it to distinguish it from your existing version (for example, `hugo1153`).
-
-3. Open the executable with `cmd+click` and select `Open` from the context menu and accept the security popup, warning about an unsigned application.
-
-4. Call the executable in the command line to run server (for example, `hugo1153 server`).
-
-Alternatively, you can increase your maxfiles `ulimit`. The process for this varies dramatically depending on Mac OS version, so consult the documentation for the version you are running.
