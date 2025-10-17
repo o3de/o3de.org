@@ -551,13 +551,23 @@ You can embed mathematical formulas using TeX and MathML input formats, for more
 
 **Example Usage**
 
+Block:
+
 ```markdown
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+```
+Inline:
+
+```markdown
+This is some math equation: \( ( \sum_{k=1}^n a_k b_k)^2 \)
 ```
 
 **Example Output**
 
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+
+This is some math equation: \( ( \sum_{k=1}^n a_k b_k)^2 \)
+
 
 ## Embedding Mermaid diagrams
 
