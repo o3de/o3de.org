@@ -1,5 +1,4 @@
 ---
-title: Middleware Controls Pane
 title: Audio Engine Middleware Controls Pane
 description: Use the Audio Controls Editor's audio engine middleware controls pane to filter and select a middleware-specific control to assign to an ATL control in Open 3D Engine.
 weight: 300
