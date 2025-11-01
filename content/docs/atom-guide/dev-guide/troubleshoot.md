@@ -65,6 +65,75 @@ You can enable validation in your RHI device to output additional debugging info
 - `--rhi-device-validation="verbose"`: Enables basic driver validation and additional reporting.
 - `--rhi-device-validation="gpu"`: Enables GPU-based validation (GBV). This validation mode runs slower, but catches issues that the `enable` and `verbose` modes may not catch. Note that this mode may produce false positives.
 
+## Configuring RHI Settings in Editor
+
+In addition to using the command line, you can modify these settings directly in the Editor.
+
+Open the **Editor.**
+
+Go to **Edit → Editor Settings → Edit Platform Settings → Windows.**
+
+Under the Graphics section, select:
+
+Graphics API:
+```cmd
+	Vulkan
+	DX12 (Windows Only)
+```
+Validation Mode:
+```cmd
+	Disabled
+	Enabled (warnings and errors)
+	Verbose (warnings, errors, and info)
+	GPU
+```
+
+**Save and restart the Editor.**
+
+Settings are saved to: **<your_project>/Registry/rhi.setreg**
+
+**Example**
+```cmd
+{
+    "O3DE": {
+        "Atom": {
+            "RHI": {
+                "FactoryManager": {
+                    "factoriesPriority": [
+                        "Vulkan",
+                        "DX12"
+                    ]
+                }
+            },
+            "rhi-device-validation": "enable"
+        }
+    }
+}
+```
+{{< note >}}
+Both the `Editor` and `GameLauncher` read **rhi.setreg** file at startup.
+{{< /note >}}
+
+For Windows platforms, Editor settings are written to:
+**<user_project>/Platform/Windows/windows_project.json**
+
+**Example**
+```cmd
+{
+    "Tags": [
+        "Windows"
+    ],
+    "windows_settings": {
+        "graphics": {
+            "graphicsAPI": "DX12",
+            "validationMode": 0
+        }
+    }
+}
+```
+The platform-specific file ensures that your selected configuration is accurately reflected in the Editor's settings.
+{{< note >}} If you manually edit this file, it must remain a valid JSON document. At minimum, it should contain a pair of curly braces `{}`.
+{{< /note >}}
 
 ## DRED logs (Windows DirectX Only)
 
