@@ -46,3 +46,7 @@ The component lifecycle is straightforward. After initialization, component acti
 * **`Deactivate()`** -- (Required) When an entity is deactivated, it calls `Deactivate()` on all of its components. In the `Deactivate()` function, a component should release all resources and disconnect from all EBuses. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on. Components should be completely dormant after deactivation, and they should be in more or less the same state that they are in after `Init()` is called.
 
 The remaining API operations of a component should be established by the EBus that it implements.
+
+{{<note>}}
+The owning Entity can be Activated and Deactivated any number of times during runtime.
+{{</note>}}

@@ -67,6 +67,11 @@ By default, an entity starts as active in a level. When you create a game, you c
     Editor only entities have an icon that is not shaded and editor only text appears in the viewport.
 
     ![Specify whether component is active, inactive, or active in editor mode only.](/images/shared/shared-component-entity-inspector-editor-only-example.png)
+
+{{<note>}}
+Setting an Entity to Inactive at start or during runtime will make all child Entities inactive as well.
+However, their local active state is not overridden. When the parent Entity reactivates, whatever state the child entity was originally in will remain the same.
+{{</note>}}
    
 ## Pinning an Entity Inspector
 
