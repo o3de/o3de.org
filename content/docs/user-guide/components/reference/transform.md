@@ -521,3 +521,8 @@ Signals that a child was removed from the entity.
 
 **Parameters**
 EntityId - The entity ID of the removed child
+
+## Parent Active State
+All child entities will become inactive if a parent becomes inactive.
+
+For more information about parent activation, refer to [Entity Activation System](/docs/user-guide/programming/components/entity-activation-system/).
