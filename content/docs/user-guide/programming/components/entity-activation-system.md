@@ -24,13 +24,13 @@ If you wish to directly control an entity's active state there are a few subtlet
 Direct Entity handling is only necessary in controlled and systemic environments where you want direct command of the state-changing stages and where you'll handle them.
 
 Handling entity activation manually requires two steps to properly work:
-- You need to change its desired state by using the `SetEntityActive` method.
+- You need to change its desired state by using the `SetEntityActive`, or `SetEffectiveActiveLayerByTypeIndex` methods.
 - You then need to call its `ApplyEffectiveActiveState` method to make it actually process its new Active State and change to it accordingly.
 
 The purpose of this segmentation is to allow systems to make many changes to an entity's state, then once finalized, apply it once. Removing any excessive update calls.
 
 ## How an Entity determines it's Active State
-The entity activation state is controlled indirectly. At runtime, the Entity contains a 32-bit set of user-defined flags, any of which can be registered by other systems to use. After changing the bits that are set, Entity::ApplyEffectiveActiveState is invoked to compute the state transition. The entity will transition to Active if all bits are set (which is the default) or Inactive if any bit is unset. Systems that want to manage entity activation state can register a bit index to control, and then toggle those bits to activate and deactivate entities.
+The entity activation state is controlled indirectly. At runtime, the Entity contains a 32-bit set of user-defined flags, all active by default, any of which can be registered by other systems to use. After changing the bits that are set, `Entity::ApplyEffectiveActiveState` is invoked to compute the state transition. The entity will transition to Active if all bits are set or Inactive if any bit is unset. Systems that want to manage entity activation state can register a bit index to control, and then toggle those bits to activate and deactivate entities.
 
 As an example, one bit is already reserved for whether the entity itself should be active or not (explicitly), and another bit is reserved by the [Transform system](/docs/user-guide/components/reference/transform/) (which stores the parent/child relationships between entities). The transform system controls one of the bits in the bitset related to whether a parent is active or not.
 
@@ -48,7 +48,7 @@ bool SetEffectiveActiveLayerByTypeIndex(size_t index, bool active);
 bool ApplyEffectiveActiveState();
 
 //! Returns the current effective active state of the Entity.
-bool IsEffectivelyActive()
+bool IsEffectivelyActive();
 ```
 
 ## Creating and Registering a Custom Activate Type
@@ -59,13 +59,13 @@ Getting a Type that doesn't exist will automatically register a new type, and re
 Access and registration can be done by `string` or by `Crc32` id.
 
 ```C++
-size_t GetActiveTypeIndexByName(AZStd::string typeName) const noexcept
+size_t GetActiveTypeIndexByName(AZStd::string typeName) const noexcept;
 
-size_t GetActiveTypeIndexById(AZ::Crc32 typeNameId) const noexcept
+size_t GetActiveTypeIndexById(AZ::Crc32 typeNameId) const noexcept;
 
-size_t RegisterEntityActiveTypeByName(AZStd::string typeName)
+size_t RegisterEntityActiveTypeByName(AZStd::string typeName);
 
-size_t RegisterEntityActiveType(AZ::Crc32 typeNameId)
+size_t RegisterEntityActiveType(AZ::Crc32 typeNameId);
 ```
 
 Note that the Get Active Type and Register Active Type events all return the index targeting the bit of your chosen type.
