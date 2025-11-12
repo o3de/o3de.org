@@ -19,6 +19,8 @@ In C++, `AzFramework::GameEntityContextRequestBus` can be used to set an entity'
 
 These, like the Script Canvas nodes, handle everything for you directly.
 
+Note that when deactivating an entity that has transform children, their children, will also automatically deactivate. Reactivating the entity will restore their children to whatever activation state they were at when the parent reactivates.
+
 ### Direct Entity Active State Control
 If you wish to directly control an entity's active state there are a few subtleties.
 Direct Entity handling is only necessary in controlled and systemic environments where you want direct command of the state-changing stages and where you'll handle them.
