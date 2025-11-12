@@ -71,3 +71,18 @@ After you create the code for your component, add it to your project's system en
    }
    ...
    ```
+
+## System Component Dependencies
+
+System components may rely on other system-level components, for example, using the "RPISystem" to make custom render passes.
+
+Adding the required service to your System Component's `GetRequiredServices` method ensures that the required component is activated before your dependent one. This enables the use of events to reliably communicate with that system.
+
+For more information about Required Services, refer to [Defining and Using Component Services](/docs/user-guide/programming/components/services/).
+
+``` cpp
+void MyRenderPassSystemComponent::GetRequiredServices([[maybe_unused]] AZ::ComponentDescriptor::DependencyArrayType &required)
+{
+    required.push_back(AZ_CRC_CE("RPISystem"));
+}
+```
