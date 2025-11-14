@@ -9,6 +9,8 @@ The **Transform** component controls the translation, rotation, and scale inform
 
 *World space* refers to the entity's absolute translation, rotation, and scale in the level. If a child is attached to a parent entity, *local space* refers to the entity's translation, rotation, and scale relative to its parent entity.
 
+The Transform Component behaves uniquely in that it stays connected to its event buses when Deactivated. This enables the preservation of the Parent-Child hierarchy regardless of the active state of any given Transform. This means you can access any Transform data through events regardless of the entity's active state.
+
 ## Transform Component Properties 
 
 The **Transform** component has the following properties:
