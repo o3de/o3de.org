@@ -59,16 +59,11 @@ Using the `AZ::EntityActiveSystemRequestBus`, you can get and handle the registr
 
 Getting a Type that doesn't exist will automatically register a new type, and return that registered index if successful.
 
-Access and registration can be done by `string` or by `Crc32` id.
+Get calls can be done by `string` or by `Crc32` id.
 
 ```C++
-size_t GetActiveTypeIndexByName(AZStd::string typeName) const noexcept;
+size_t GetActiveTypeIndexByName(AZStd::string typeName);
 
-size_t GetActiveTypeIndexById(AZ::Crc32 typeNameId) const noexcept;
-
-size_t RegisterEntityActiveTypeByName(AZStd::string typeName);
-
-size_t RegisterEntityActiveType(AZ::Crc32 typeNameId);
+size_t GetActiveTypeIndexById(AZ::Crc32 typeNameId);
 ```
 
-Note that the Get Active Type and Register Active Type events all return the index targeting the bit of your chosen type.
