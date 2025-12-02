@@ -21,7 +21,8 @@ These Gems provide various O3DE components such as sensors, robot control and st
 | [Georeference](georeference.md)                                     | Link your scene with the existing location.                                                                                       |
 | [Importing robots](importing-robot.md)                              | Learn how to import robots using Robot Importer.                                                                                  |
 | [Troubleshooting the simulation](troubleshooting.md)                | Helpful solutions to some of the most common issues with ROS 2.                                                                   |
-
+| [Simulation Time for Robotics Gems](simulation-time.md)             | Configure simulation time settings for robotics Gems in O3DE.                                                                     |
+| [Registry settings](registry-settings.md)                           | List of registry settings for robotics Gems.                                                                                      |
 
 ## Related topics
 
