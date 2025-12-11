@@ -52,8 +52,10 @@ The following instructions describe how to install the required additional softw
 
 The following versions of Visual Studio are supported:
 
-+ [Microsoft Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) version **16.11.x**.
-+ [Microsoft Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version **17.3.x**.
++ [Microsoft Visual Studio 2019](https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes) version **16.11.x**.
++ [Microsoft Visual Studio 2022](https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes) version **17.3.x**.
++ [Microsoft Visual Studio 2026](https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes) version **18.0.x**. (See CMake Note)
+
 
 You can use any Microsoft Visual Studio license, including the Community edition.
 
@@ -90,6 +92,10 @@ After installing the C++ redistributable, you might be prompted to restart your 
 
 ### CMake
 
+  {{< note >}}
+  The 25.10.1 point release introduces support for Visual Studio 2026. But, users are required to use a more recent CMake version (4.2.0)
+  {{< /note >}}
+  
 [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** from the CMake download page instead of a Release Candidate. During installation, select one of the options that adds CMake to the system PATH. This will save you from having to do this later.
 
    ![Add CMake to the system PATH during installation](/images/welcome-guide/requirements-cmake-install-add-to-path.png)
