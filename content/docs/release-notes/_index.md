@@ -14,7 +14,7 @@ primary: true
 
 **Latest version**: 25.10.1, released on Dec 9, 2025.
 
-**Release Notes**: [O3DE 25.10.0 Release Notes](./2510-1-release-notes)
+**Release Notes**: [O3DE 25.10.1 Release Notes](./2510-1-release-notes)
 
 
 ### Download the latest version
