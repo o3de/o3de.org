@@ -40,7 +40,7 @@ To switch back to a 'normal' project, flip the same above flag to false, or remo
 You can then start adding C++ components to your project or use the [template](/docs/user-guide/build/templates.md) system to instantiate new c++ components.  You may need to modify the CMake build files to include new subdirectories containing code, just like any project.
 
 ## Shipping a Script-only project
-Script-only projects do include a script at the root to export the project into a standalone project.  See the [Project Export](content/docs/user-guide/packaging/project-export) documentation for details on how project export functions, as it is the same export system used as regular projects.
+Script-only projects do include a script at the root to export the project into a standalone project.  See the [Project Export](/docs/user-guide/packaging/project-export) documentation for details on how project export functions, as it is the same export system used as regular projects.
 
 ## Trade-offs to be aware of
 
