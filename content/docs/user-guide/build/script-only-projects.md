@@ -63,5 +63,4 @@ Finally, a 'fake' game launcher for the project is declared to CMake which depen
 
 Because the compiler and linker are fake, CMake will not actually compile or link this 'fake' target, but will still consider it to have succeeded, and copy the things it depends on (recursively) to the binaries folder, which is how the generic game launcher and all its dependencies end up in the binaries folder.
 
-This means that developers wishing to support Script-only mode for their modules can do so, but would need to ship with pre-built shared libraries which are exposed as `add_library(name SHARED IMPORTED GLOBAL)` in cmake and list their runtime dependencies in that declaration using normal cmake conventions. 
-  
+This means that developers wishing to support Script-only mode for their modules can do so, but would need to ship with pre-built shared libraries which are exposed as `add_library(name SHARED IMPORTED GLOBAL)` in cmake and list their runtime dependencies in that declaration using normal cmake conventions.
