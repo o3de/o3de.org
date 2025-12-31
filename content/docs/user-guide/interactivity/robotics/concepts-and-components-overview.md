@@ -24,8 +24,7 @@ This is done through [rclcpp API](https://docs.ros.org/en/humble/p/rclcpp/genera
 
 ```cpp
 auto ros2Node = ROS2Interface::Get()->GetNode();
-AZStd::string fullTopic = ROS2Names::GetNamespacedName(GetNamespace(), m_MyTopic);
-m_myPublisher = ros2Node->create_publisher<sensor_msgs::msg::PointCloud2>(fullTopic.data(), QoS());
+m_myPublisher = ros2Node->create_publisher<sensor_msgs::msg::PointCloud2>(myTopic.c_str(), QoS());
 ```
 
 Note that QoS class is a simple wrapper to [`rclcpp::QoS`](https://docs.ros.org/en/humble/p/rclcpp/generated/classrclcpp_1_1QoS.html).
@@ -74,6 +73,12 @@ Four ROS 2 related Gems are provided. Each of them has a specific purpose:
   - `JointsTrajectoryComponent` (available in `ROS2Controllers` Gem)
   - `JointsArticulationControllerComponent` (available in `ROS2Controllers` Gem)
   - `JointsPIDControllerComponent` (available in `ROS2Controllers` Gem)
+
+### ROS 2 Node (Singleton)
+
+_ROS 2 Node_ (singleton) is created and managed by `ROS2SystemComponent`. It is the main entry point for communication with the ROS 2 ecosystem. This node is created when the simulation starts (with _ROS 2_ Gem enabled) and destroyed when the simulation stops. You can pass additional parameters to the node during its creation by using a registry key: `/O3DE/ROS2/NodeArguments`.
+
+You can find more details about using the registry settings in the [Settings Registry documentation](/docs/user-guide/settings/).
 
 ### Frames
 
