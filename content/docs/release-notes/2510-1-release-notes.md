@@ -2,12 +2,12 @@
 linktitle: 25.10.1 Release Notes
 title: Release Notes for Open 3D Engine 25.10.1
 description: Full release notes for Open 3D Engine (O3DE) version 25.10.1.
-# weight: 885
+weight: 884
 toc: true
 ---
 
 # 25.10.1 Release Notes
-The O3DE 25.10.1 is a maintenance release that resolves a few issues found in the 25.10.0 release:
+The O3DE 25.10.1 is a maintenance release that resolves a few issues found in the [25.10.0 release](./2510-0-release-notes.md):
 - Git is no longer required when using O3DE installers for Windows and Linux,
 - Support for latest Android SDK (with Android Gradle Plugin 8.13),
 - Support for Visual Studio 2026,

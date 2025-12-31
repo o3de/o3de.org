@@ -19,11 +19,11 @@ primary: true
 
 ### Download the latest version
 
-| Version                            | Binary download link                             |  Date of Release   |
-|------------------------------------|--------------------------------------------------|--------------------|
-| 25.10.1 \[Windows\] | [Download](https://o3debinaries.org/download/windows.html) | Dec 9, 2025 |
-| 25.10.1 \[Linux\] | [Download](https://o3debinaries.org/download/linux.html) | Dec 9, 2025 |
-| 25.10.1 \[Source code\] | [GitHub repository](https://github.com/o3de/o3de/tree/main) |  Dec 9, 2025 |
+| Version                 | Binary download link                                        | Date of Release |
+| ----------------------- | ----------------------------------------------------------- | --------------- |
+| 25.10.1 **Windows**     | [Download](https://o3debinaries.org/download/windows.html)  | Dec 9, 2025     |
+| 25.10.1 **Linux**       | [Download](https://o3debinaries.org/download/linux.html)    | Dec 9, 2025     |
+| 25.10.1 **Source code** | [GitHub repository](https://github.com/o3de/o3de/tree/main) | Dec 9, 2025     |
 
 
 ## Older versions
