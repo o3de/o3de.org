@@ -21,9 +21,9 @@ primary: true
 
 | Version                 | Binary download link                                        | Date of Release |
 | ----------------------- | ----------------------------------------------------------- | --------------- |
-| 25.10.2 **Windows**     | [Download](https://o3debinaries.org/download/windows.html)  | Dec 9, 2025     |
-| 25.10.2 **Linux**       | [Download](https://o3debinaries.org/download/linux.html)    | Dec 9, 2025     |
-| 25.10.2 **Source code** | [GitHub repository](https://github.com/o3de/o3de/tree/main) | Dec 9, 2025     |
+| 25.10.2 **Windows**     | [Download](https://o3debinaries.org/download/windows.html)  | Jan 27, 2026     |
+| 25.10.2 **Linux**       | [Download](https://o3debinaries.org/download/linux.html)    | Jan 27, 2026     |
+| 25.10.2 **Source code** | [GitHub repository](https://github.com/o3de/o3de/tree/main) | Jan 27, 2026     |
 
 
 ## Older versions
