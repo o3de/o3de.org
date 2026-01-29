@@ -5,7 +5,7 @@ description: Learn how to set Entity Active States, and define new Custom Activa
 weight: 900
 ---
 
-An Entity in **Open 3D Engine (O3DE)** is made up of a list of Components and a state, which can be (Constructed, Initialized, Active, Inactive). When the Entity's state changes, the Entity calls the appropriate functions on the components in its list (Initialized(), Activated(), Deactivated() respectively) to let them know about the state transition.
+An Entity in **Open 3D Engine (O3DE)** is made up of a list of Components and a state, which can be `Constructed`, `Initialized`, `Active`, `Inactive`. When the Entity's state changes, the Entity calls the appropriate functions on the components in its list (`Initialized`, `Activated`, `Deactivated` respectively) to let them know about the state transition.
 
 ## Activating and Deactivating an Entity
 ### Scripting and GameEntityContext
