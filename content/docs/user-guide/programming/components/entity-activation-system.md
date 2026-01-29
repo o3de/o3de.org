@@ -33,7 +33,7 @@ Handling entity activation manually requires two steps to properly work:
 
 The purpose of this segmentation is to allow systems to make many changes to an entity's state, then once finalized, apply it once. Removing any excessive update calls.
 
-## How an Entity determines it's Active State
+## How an Entity determines its Active State
 The entity activation state is controlled indirectly. At runtime, the Entity contains a 32-bit set of user-defined flags, all active by default, any of which can be registered by other systems to use. After changing the bits that are set, `Entity::ApplyEffectiveActiveState` is invoked to compute the state transition. The entity will transition to Active if all bits are set or Inactive if any bit is unset. Systems that want to manage entity activation state can register a bit index to control, and then toggle those bits to activate and deactivate entities.
 
 ```C++
@@ -56,7 +56,7 @@ As an example, one bit is already reserved for whether the entity itself should 
 
 By using `Entity::SetEffectiveActiveLayerByTypeIndex` you toggle the entity's bit of your registered type's index. Using the example above you would have 2 bits "`11`", the first index (`0`) is the "Entity" type, and the second index (`1`) would be the "Parent" type. When an entity applies it's effective state, it will become effectively active if both bits are set active: "`11`", or effectively inactive if any one or both bits are set inactive: "`01`", "`10`", "`00`".
 
-![Visualization of how the entity determines it's active state.](/images/user-guide/programming/components/effective-active-per-instance.png)
+![Visualization of how the entity determines its active state.](/images/user-guide/programming/components/effective-active-per-instance.png)
 
 ## Creating and Registering a Custom Activate Type
 Using the `AZ::EntityActiveSystemRequestBus`, you can get and handle the registration of Active Types and their index position on the entity's bit set.
