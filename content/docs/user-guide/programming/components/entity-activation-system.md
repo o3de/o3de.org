@@ -52,11 +52,11 @@ bool ApplyEffectiveActiveState();
 bool IsEffectivelyActive();
 ```
 
-![Visualization of how the entity determines it's active state.](/images/user-guide/programming/components/effective-active-mapping.png)
-
 As an example, one bit is already reserved for whether the entity itself should be active or not (explicitly), and another bit is reserved by the [Transform system](/docs/user-guide/components/reference/transform/) (which stores the parent/child relationships between entities). The transform system controls one of the bits in the bitset related to whether a parent is active or not.
 
 By using `Entity::SetEffectiveActiveLayerByTypeIndex` you toggle the entity's bit of your registered type's index. Using the example above you would have 2 bits "`11`", the first index (`0`) is the "Entity" type, and the second index (`1`) would be the "Parent" type. When an entity applies it's effective state, it will become effectively active if both bits are set active: "`11`", or effectively inactive if any one or both bits are set inactive: "`01`", "`10`", "`00`".
+
+![Visualization of how the entity determines it's active state.](/images/user-guide/programming/components/effective-active-per-instance.png)
 
 ## Creating and Registering a Custom Activate Type
 Using the `AZ::EntityActiveSystemRequestBus`, you can get and handle the registration of Active Types and their index position on the entity's bit set.
