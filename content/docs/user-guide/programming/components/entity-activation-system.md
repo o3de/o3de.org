@@ -9,7 +9,7 @@ An Entity in **Open 3D Engine (O3DE)** is made up of a list of Components and a 
 
 ## Activating and Deactivating an Entity
 ### Scripting and GameEntityContext
-The following Script Canvas Nodes can be used to handle entity state: ActivateGameEntity and DeactivateGameEntity nodes.
+The `ActivateGameEntity` and `DeactivateGameEntity` Script Canvas nodes can be used to handle entity state.
 
 ![Script Canvas ActivateGameEntity and DeactivateGameEntity nodes.](/images/user-guide/programming/components/activate-game-entity-nodes.png)
 
