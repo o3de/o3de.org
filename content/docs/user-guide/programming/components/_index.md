@@ -19,3 +19,4 @@ This section provides engine and game programmers with examples and best practic
 + [Tick Bus and Components](./tick)
 + [Exposing Custom Components to Track View for Animation](./expose-animation)
 + [Components and EBuses: Best Practices](./entity-system-pg-components-ebuses-best-practices)
++ [Entity Activation System](./entity-activation-system)
