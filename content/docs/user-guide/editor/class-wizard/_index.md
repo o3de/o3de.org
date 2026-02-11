@@ -1,6 +1,7 @@
 ---
 title: "Class Creation Wizard - Overview"
 linkTitle: "Overview"
+description: ""
 weight: 100
 ---
 
