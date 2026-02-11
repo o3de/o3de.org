@@ -2,7 +2,7 @@
 title: "Class Creation Wizard - Overview"
 linkTitle: "Class Creation Wizard"
 description: ""
-weight: 100
+weight: 450
 ---
 
 # Class Creation Wizard
