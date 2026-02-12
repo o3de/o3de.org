@@ -17,6 +17,7 @@ To learn various aspects of Open 3D Engine's (O3DE) **Editor**, refer to the fol
 | [Pin the Entity Inspector](./entity-inspector#pinning-an-entity-inspector) | Pin the Entity Inspector to view and edit the components of multiple entities. |
 | [Set entity status](./entity-inspector#setting-entity-status) | Set the active status on entities. |
 | [Viewport Interaction Model](./viewport) | Learn how to work in the Editor viewport with the viewport interaction model. |
+| [Class Creation Wizard](./class-wizard/) | Utilizing the Class Wizard to create many different kinds of components, assets, and classes. |
 | [Console](./console) | In the O3DE Console, you can see output from commands and processes and enter commands to set options and features for your project. |
 | [Console variables (CVARs)](./console-cvars-commands) | Learn to use console commands and CVARs. |
 | [Editor automation](./editor-automation) | Automate tasks in O3DE Editor with Python. |

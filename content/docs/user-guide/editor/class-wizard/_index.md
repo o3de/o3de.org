@@ -1,13 +1,13 @@
 ---
-title: "Class Creation Wizard - Overview"
+title: "Class Creation Wizard"
 linkTitle: "Class Creation Wizard"
 description: ""
 weight: 450
 ---
 
-# Class Creation Wizard
+The **Class Creation Wizard** is a dynamic code generation and project integration tool for O3DE. It discovers your project structure, scans gem sources, identifies CMake build targets, and uses a template descriptor language to generate fully integrated C++ classes -- components, data assets, and any custom types you want to define.
 
-The **Class Creation Wizard** is a dynamic code generation and project integration tool for O3DE. It discovers your project structure, scans gem sources, identifies CMake build targets, and uses a template descriptor language to generate fully integrated C++ classes -- components, data assets, dialogue effects, and any custom type your team defines.
+![Class Wizard GUI](images/user-guide/editor/class-wizard/ClassWizardGUI.png)
 
 ## What It Does
 
@@ -27,10 +27,12 @@ The wizard ships with templates for the most common O3DE class types:
 
 | Template | What It Creates |
 |---|---|
-| **Basic Component** | A standard game component (`.h` / `.cpp`) with optional interface header. Registers in CMake, module descriptor, and system component list. |
-| **Data Asset** | A custom data asset class with asset handler registration, `.setreg` configuration, and optional file extension mapping. |
-| **LyShine Component** | A UI component for the LyShine (UI 2.0) system. |
+| **Basic Component** | A standard game component (`.h` / `.cpp`) with optional interface header. |
+| **Level Component** | A standard level component with optional interface header. |
 | **System Component** | An engine-level system component for services that run outside of entity context. |
+| **LyShine Component** | A UI component for the [LyShine](content/docs/user-guide/components/reference/ui/_index.md) (UI 2.0) system. |
+| **Data Asset** | A custom data asset class with asset handler registration, `.setreg` configuration, and optional file extension mapping. |
+| **Attimage** | An image file type used in rendering features across the engine. |
 
 Each template can be extended or overridden by placing custom templates in your project or gem `Templates/` directories.
 
