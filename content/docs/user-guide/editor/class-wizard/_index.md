@@ -7,7 +7,7 @@ weight: 450
 
 The **Class Creation Wizard** is a dynamic code generation and project integration tool for O3DE. It discovers your project structure, scans gem sources, identifies CMake build targets, and uses a template descriptor language to generate fully integrated C++ classes -- components, data assets, and any custom types you want to define.
 
-![Class Wizard GUI](images/user-guide/editor/class-wizard/ClassWizardGUI.png)
+![Image of Class Wizard GUI](/images/user-guide/editor/class-wizard/class-wizard-gui.png)
 
 ## What It Does
 
