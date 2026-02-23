@@ -46,7 +46,7 @@ The parts of O3DE that handle the above goals are:
   for example, what file extension it should filter by, what the friendly name of the asset type is, 
   what its typeid is, how to display it on the UI, etc.
 
-Making a new custom asset type involves thus
+Making a new custom asset type involves the following steps:
 * Creating your `AssetData`-derived class to hold your loaded data.
 * Creating and registering a Handler on startup and associating it with that new type of Asset.
 * Creating a builder and registering it to transform whatever your source data type is into the AssetData.

@@ -33,7 +33,7 @@ This class is the actual "Asset".   It contains the data you
 want to make available at runtime, and what it contains is entirely
 up to you.  Since this document is about the Generic Asset system,
 the assumption is that this class is a data holder for whatever
-c++ properties you want:  
+c++ serializable properties you want.
 
 ```cpp
 // An example of an Asset class
@@ -55,11 +55,11 @@ public:
     // Your system component is responsible for calling this.
     static void Reflect(AZ::ReflectContext* context);
 
-// --------------------------------------------------------------------------------
+    // --------------------------------------------------------------------------------
     // The rest of this class is whatever data you want to store in your asset, however
     // you might want to store it, including containers, AZStd::Any, plain data fields, refererences
     // to other assets, etc.  It can include anything that can be serialized using the O3DE
-    // serialization system, including pointers, baseclass containers, etc, just like any 
+    // serialization system, including pointers, pointers to a base class, containers, etc, just like any 
     // component class.
 
     // Here are some examples:
@@ -80,10 +80,8 @@ public:
 ```
 
 The `Reflect` function for an AssetData is how you tell the system how to read/write it and how to
-display it in the Asset Editor UI.  It works exactly the same as [Component Reflection](/docs/user-guide/programming/components/reflection/reflecting-for-serialization.md) does, declaring each field to the system, so if you want to understand more about how you can customize the Editor UI 
-for your class, see that guide.
+display it in the Asset Editor UI.  It works exactly the same as [Component Reflection](/docs/user-guide/programming/components/reflection/reflecting-for-serialization.md) does, declaring each field to the system, so if you want to understand more about how you can customize the Editor UI for your class, see that guide.
 
- does.
 ```cpp
 void MyAsset::Reflect(AZ::ReflectContext* context)
 {
@@ -287,5 +285,8 @@ To make sure that the above module (`Gem::MyGemName`) **also** loads inside Asse
 ly_create_alias(NAME MyGemName.Builders   NAMESPACE Gem TARGETS Gem::MyGemName) # load it in builders.
 ```
 
-Once you've verified all of the above, you should see your custom asset type appear in the "Create New" menu in the Asset Editor,
-you should see assets of the 
+With all of the above, your custom asset types will appear in the "Create New" menu in the Asset Editor.
+Any time you create one using this editor, it will be processed into binary by the Asset Processor, and will be
+available via drag-and-drop or browse in the Asset Browser UI, to use in custom components with a member
+field of type `AZ::Data::Asset<T>`, where the `<T>` is your Asset class, derived from `AZ::Data::AssetData`.
+
