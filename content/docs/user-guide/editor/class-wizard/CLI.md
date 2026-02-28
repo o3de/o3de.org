@@ -1,11 +1,9 @@
 ---
 title: "CLI Reference"
 linkTitle: "CLI"
-description: ""
-weight: 150
+description: "Complete command-line reference for the Class Creation Wizard."
+weight: 200
 ---
-
-# CLI Reference
 
 The Class Creation Wizard runs fully headless via command-line. Template-specific flags are
 discovered dynamically from each template's `input_vars`, so the exact flag set changes per
@@ -114,26 +112,26 @@ python ClassWizard.py \
 
 ## Examples
 
-### GUI mode
+### GUI Mode
 
 ```
 python ClassWizard.py --engine-path D:\O3DE
 ```
 
-### List all templates
+### List All Templates
 
 ```
 python ClassWizard.py --engine-path D:\O3DE --project-path D:\MyProject --list-templates
 ```
 
-### Full help for a template
+### Full Help for a Template
 
 ```
 python ClassWizard.py --engine-path D:\O3DE --project-path D:\MyProject \
   --template-help default_component
 ```
 
-### Basic Component -- files only, no registration
+### Basic Component -- Files Only, No Registration
 
 ```
 python ClassWizard.py \
@@ -144,7 +142,7 @@ python ClassWizard.py \
   --namespace      GS_Core
 ```
 
-### Basic Component -- with registration and editor adapter
+### Basic Component -- With Registration and Editor Adapter
 
 ```
 python ClassWizard.py \
@@ -157,7 +155,7 @@ python ClassWizard.py \
   --include-editor
 ```
 
-### Basic Component -- skip interface, keep comments
+### Basic Component -- Skip Interface, Keep Comments
 
 ```
 python ClassWizard.py \
@@ -171,38 +169,39 @@ python ClassWizard.py \
   --keep-comments
 ```
 
-### Manager Component
+### System Component
 
 ```
 python ClassWizard.py \
   --engine-path  D:\O3DE \
   --project-path D:\MyProject \
-  --template     manager_component \
+  --template     system_component \
   --component-name TimeManager \
   --namespace      GS_Core \
   --automatic-register
 ```
 
-### Pulsor Reactor (required text input)
+### Data Asset with Custom Extension
 
 ```
 python ClassWizard.py \
   --engine-path  D:\O3DE \
   --project-path D:\MyProject \
-  --template     Reactor \
-  --component-name OnButtonPress \
-  --namespace      GS_Interaction \
+  --template     data_asset \
+  --component-name QuestData \
+  --namespace      GS_Quests \
   --automatic-register \
-  --pulse-channel ButtonPressed
+  --file-extension questdata \
+  --asset-group Other
 ```
 
-### Dialogue Effect with custom destination
+### Custom Destination Path
 
 ```
 python ClassWizard.py \
   --engine-path  D:\O3DE \
   --project-path D:\MyProject \
-  --template     dialogueEffect \
+  --template     default_component \
   --component-name FadeToBlack \
   --namespace      GS_Cinematics \
   --target-path    D:\MyProject\Gems\GS_Cinematics\Code \

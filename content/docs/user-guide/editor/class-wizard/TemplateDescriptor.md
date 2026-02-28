@@ -1,43 +1,13 @@
 ---
-title: "Template Descriptor Language"
+title: "Template Descriptor Format"
 linkTitle: "Template Descriptor"
-description: ""
-weight: 300
+description: "Full reference for the template.json descriptor file used by the Class Creation Wizard."
+weight: 400
 ---
-
-# Template Descriptor Language
 
 Every Class Creation Wizard template is defined by a `template.json` file placed in a `Templates/<TemplateName>/` directory. This file combines standard O3DE template metadata with a `class_wizard` block that the wizard uses to drive code generation and project integration.
 
-## Template Discovery
-
-The wizard scans for templates in three locations:
-
-| Source | Path Pattern |
-|---|---|
-| Engine | `<Engine>/Templates/*/template.json` |
-| Project | `<Project>/Templates/*/template.json` |
-| Gems | `<Gem>/Templates/*/template.json` |
-
-Only templates containing a `class_wizard` block are recognized by the wizard. Standard O3DE templates without this block are ignored. Templates are deduplicated by resolved directory path and sorted alphabetically by display name.
-
-## File Structure
-
-A complete template directory:
-
-```
-Templates/
-  MyTemplate/
-    template.json          -- Descriptor file
-    Template/              -- Source files for o3de create-from-template
-      Source/
-        ${Name}MyType.cpp
-        ${Name}MyType.h
-      Include/
-        ${GemName}/
-          ${Name}Interface.h
-    preview.png            -- Optional icon for GUI display
-```
+---
 
 ## Full Schema
 
@@ -72,6 +42,8 @@ Templates/
 }
 ```
 
+---
+
 ## Top-Level Fields
 
 These fields are standard O3DE template metadata. The wizard uses some of them during file staging.
@@ -86,7 +58,9 @@ These fields are standard O3DE template metadata. The wizard uses some of them d
 | `copyFiles` | Yes | Files to copy from `Template/` into the target gem. |
 | `createDirectories` | No | Directories to ensure exist before copying. |
 
-### copyFiles
+---
+
+## copyFiles
 
 Each entry in `copyFiles` defines a file to generate:
 
@@ -100,7 +74,7 @@ Each entry in `copyFiles` defines a file to generate:
 | `isTemplated` | boolean | `true` | If `true`, O3DE processes `${variable}` tokens inside the file content. |
 | `isInterface` | boolean | `false` | Marks the file as an EBus interface header. When true, `cleanup_hint` defaults to `"interface"`. |
 | `condition` | string | -- | If set, the file is only created when the condition evaluates to true. See [Conditions](#conditions). |
-| `cleanup_hint` | string | -- | Controls reference scrubbing when the file is excluded by a false condition. See [Cleanup Hints](#cleanup-hints) below. |
+| `cleanup_hint` | string | -- | Controls reference scrubbing when the file is excluded by a false condition. See [Cleanup Hints](#cleanup-hints). |
 
 ### Cleanup Hints
 
@@ -112,7 +86,7 @@ When a conditional file is excluded (its `condition` is false), the wizard can s
 | `"editor"` | `#include` lines referencing the excluded file's header |
 | *(omitted)* | The file is deleted from staging; no reference cleanup is performed |
 
-When `isInterface` is `true` and `cleanup_hint` is not set, the wizard defaults to `"interface"` cleanup automatically for backward compatibility.
+When `isInterface` is `true` and `cleanup_hint` is not set, the wizard defaults to `"interface"` cleanup automatically.
 
 **Example -- optional interface with cleanup:**
 
@@ -152,7 +126,9 @@ This is the wizard-specific configuration. Without this block, the template is i
 | `description` | No | Longer description shown in `--template-help` output. |
 | `component_suffix` | Yes | Appended to `${Name}` to form the full class name. Available as `${ComponentSuffix}`. |
 
-### input_vars
+---
+
+## input_vars
 
 Defines user-facing input fields. Each variable becomes a GUI widget and a CLI flag.
 
@@ -193,11 +169,19 @@ Defines user-facing input fields. Each variable becomes a GUI widget and a CLI f
 | `description` | No | Help text shown in GUI tooltips and `--template-help`. |
 | `required` | No | If `true`, the field must be filled. Only meaningful for `text` inputs. |
 | `options` | No | Array of choices. Only used with `"dropdown"` type. |
-| `show_if` | No | Project condition key. If set, the input only appears when the selected gem satisfies this condition. See [Project Conditions](#project-conditions) below. |
+| `show_if` | No | Project condition key. If set, the input only appears when the selected gem satisfies this condition. |
 
-### Project Conditions
+### Input Types
 
-The `show_if` field lets input variables appear or disappear based on the structure of the selected target gem. This allows templates to expose optional features (like an editor adapter) only when the gem is actually set up to support them.
+| Type | GUI Widget | CLI Flag | Variable Value |
+|---|---|---|---|
+| `toggle` | Checkbox | `--var-name` (store_true) | `true` / `false` |
+| `text` | Text field | `--var-name VALUE` | String |
+| `dropdown` | Combo box | `--var-name VALUE` (choices) | Selected string |
+
+### Project Conditions (show_if)
+
+The `show_if` field lets input variables appear or disappear based on the structure of the selected target gem.
 
 | Condition Key | True When |
 |---|---|
@@ -217,17 +201,11 @@ The `show_if` field lets input variables appear or disappear based on the struct
 }
 ```
 
-If the selected gem has no editor module, the toggle is hidden and the variable defaults to `false`, which naturally excludes any files conditioned on `include_editor`.
+If the selected gem has no editor module, the toggle is hidden and the variable defaults to `false`.
 
-#### Input Types
+---
 
-| Type | GUI Widget | CLI Flag | Variable Value |
-|---|---|---|---|
-| `toggle` | Checkbox | `--var-name` (store_true) | `true` / `false` |
-| `text` | Text field | `--var-name VALUE` | String |
-| `dropdown` | Combo box | `--var-name VALUE` (choices) | Selected string |
-
-### process_commands
+## process_commands
 
 An ordered array of commands to execute after files are generated and merged into the gem.
 
@@ -245,27 +223,17 @@ An ordered array of commands to execute after files are generated and merged int
     {
         "command": "add_gem_dependency",
         "args": { "dependency": "Gem::SomeOtherGem.API" }
-    },
-    {
-        "command": "replace_text",
-        "args": {
-            "component_name": "${Name}_Reactor.h",
-            "text_to_replace": "${PulseChannel}",
-            "replacement_var": "pulse_channel"
-        }
     }
 ]
 ```
 
 | Field | Required | Description |
 |---|---|---|
-| `command` | Yes | Registered command name. See [Command Reference](Commands.md). |
+| `command` | Yes | Registered command name. See [Command Reference](../commands/). |
 | `args` | Yes | Object of arguments passed to the command constructor. All string values support `${variable}` substitution. |
 | `condition` | No | If set, the command only runs when the condition is true. |
 
 Commands execute in order. Registration commands (those with `is_registration_command = True`) only run when `--automatic-register` is enabled. All other commands always run.
-
-See the [Command Reference](Commands.md) for the full list of available commands and their arguments.
 
 ---
 
@@ -284,13 +252,7 @@ Variables are substituted in file paths, file content (when `isTemplated` is tru
 
 ### User Variables
 
-Any `var_name` defined in `input_vars` is available as `${var_name}`:
-
-```json
-"input_vars": [{ "var_name": "pulse_channel", ... }]
-```
-
-Accessible in args as `${pulse_channel}` or via `replacement_var: "pulse_channel"` in the `replace_text` command.
+Any `var_name` defined in `input_vars` is available as `${var_name}`.
 
 ---
 
@@ -332,7 +294,7 @@ A gem template for a dialogue effect component:
     "class_wizard": {
         "display_name": "Dialogue Effect",
         "class_name": "dialogue_effect",
-        "description": "Creates a new dialogue effect that integrates with the GS_Cinematics dialogue system.",
+        "description": "Creates a new dialogue effect for the GS_Cinematics dialogue system.",
         "component_suffix": "DialogueEffect",
 
         "input_vars": [],

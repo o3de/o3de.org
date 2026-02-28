@@ -1,31 +1,17 @@
 ---
 title: "Command Authoring Guide"
 linkTitle: "Command Authoring"
-description: ""
-weight: 400
+description: "How to create custom command plugins for the Class Creation Wizard."
+weight: 200
 ---
-
-# Command Authoring Guide
 
 The Class Creation Wizard uses a modular plugin architecture. Each command is a self-contained Python class that registers itself with the wizard at load time. You can add new commands to the engine, your project, or any gem -- no changes to the wizard core required.
 
-## Plugin Discovery
-
-The wizard discovers command plugins from three locations, loaded in this order:
-
-| Priority | Location | Namespace |
-|---|---|---|
-| 1 (highest) | `<EngineTools>/ClassCreationWizard/commands/*.py` | `engine` |
-| 2 | `<Project>/ClassWizardCommands/*.py` | `project` |
-| 3 | `<Gem>/ClassWizardCommands/*.py` | Gem name (alphabetical) |
-
-**First registration wins.** If two plugins register the same command name, the first one loaded takes priority and a warning is logged. This means engine commands cannot be overridden by project or gem commands -- this is intentional for stability.
-
-Files prefixed with `_` are skipped. Each plugin is loaded as an isolated module named `cw_cmd_{namespace}_{filename}`.
+---
 
 ## Writing a Command
 
-### 1. Create the file
+### 1. Create the File
 
 Place your command file in the appropriate `ClassWizardCommands/` directory:
 
@@ -35,7 +21,7 @@ MyGem/
     my_custom_command.py
 ```
 
-### 2. Define the command class
+### 2. Define the Command Class
 
 ```python
 from command_plugin import CommandRegistry, WizardCommand, CommandContext
@@ -102,7 +88,7 @@ class MyCustomCommand(WizardCommand):
         return True
 ```
 
-### 3. Use it in a template
+### 3. Use It in a Template
 
 ```json
 {
@@ -113,6 +99,8 @@ class MyCustomCommand(WizardCommand):
     }
 }
 ```
+
+---
 
 ## The CommandContext
 
@@ -127,6 +115,8 @@ Every command receives a `CommandContext` with these fields:
 | `variables` | `dict` | All resolved variables -- base vars (`Name`, `GemName`, `ComponentSuffix`) plus user input values |
 | `logger` | `callable` | Logging function -- call `ctx.logger("message")` |
 | `engine_path` | `Path` | Path to the O3DE engine root |
+
+---
 
 ## The WizardCommand Interface
 
@@ -173,6 +163,8 @@ class MyRegistrationCmd(WizardCommand):
     # ...
 ```
 
+---
+
 ## Constructor Arguments
 
 Constructor parameters map directly to the `args` object in the template JSON. The wizard calls `CommandRegistry.create(name, args)` which instantiates your class with `**args`. So if your template says:
@@ -192,6 +184,8 @@ def __init__(self, target_file: str, value: str = "default"):
 
 Use default values for optional arguments.
 
+---
+
 ## Variable Resolution
 
 All string values in `args` are resolved **before** your constructor is called. `${Name}`, `${GemName}`, `${ComponentSuffix}`, and any template `input_vars` are substituted automatically. Your command receives final, resolved strings.
@@ -201,6 +195,8 @@ To access raw variable values at execution time (e.g. for the `replace_text` pat
 ```python
 channel = ctx.variables.get("pulse_channel", "DefaultChannel")
 ```
+
+---
 
 ## Conditional Execution
 
@@ -223,6 +219,8 @@ Condition syntax:
 | `"!var_name"` | Runs if the variable is falsy |
 | `"${var} == 'value'"` | Equality check |
 | `"${var} != 'value'"` | Inequality check |
+
+---
 
 ## Tips
 

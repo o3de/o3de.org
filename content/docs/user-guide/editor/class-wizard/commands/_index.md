@@ -1,15 +1,25 @@
 ---
-title: "Command Reference"
+title: "Command System"
 linkTitle: "Commands"
-description: ""
-weight: 200
+description: "How the Class Creation Wizard command system works, and a reference of all built-in commands."
+weight: 500
 ---
-
-# Command Reference
 
 Commands are the actions the Class Creation Wizard executes after generating template files. They handle build system integration -- registering files in CMake, adding module descriptors, inserting dependencies, and modifying generated source.
 
-Commands are invoked from the `process_commands` array in a template's `class_wizard` block. Each entry specifies a command name, its arguments, and an optional condition.
+---
+
+## How Commands Work
+
+### Architecture
+
+The command system is built on three classes in `command_plugin.py`:
+
+- **`WizardCommand`** -- Abstract base class that all commands extend
+- **`CommandContext`** -- Data object passed to every command's `execute()` method
+- **`CommandRegistry`** -- Global registry that maps command names to their classes
+
+Commands are invoked from the `process_commands` array in a template's `class_wizard` block. Each entry specifies a command name, its arguments, and an optional condition:
 
 ```json
 {
@@ -18,15 +28,39 @@ Commands are invoked from the `process_commands` array in a template's `class_wi
 }
 ```
 
-> **Note -- Conditional file exclusion is automatic.** You do not invoke a command to exclude files. Conditional file exclusion and reference cleanup (EBus scrubbing, editor include removal) is handled automatically before `process_commands` runs, based on the `condition` and `cleanup_hint` fields in each `copyFiles` entry. See the [Template Descriptor Language](TemplateDescriptor.md) for details.
+### Command Discovery
 
-## Registration Commands
+The `CommandPluginLoader` scans for Python files in three locations, loaded in this order:
+
+| Priority | Location | Namespace |
+|---|---|---|
+| 1 (highest) | `<EngineTools>/ClassCreationWizard/commands/*.py` | `engine` |
+| 2 | `<Project>/ClassWizardCommands/*.py` | `project` |
+| 3 | `<Gem>/ClassWizardCommands/*.py` | Gem name (alphabetical) |
+
+**First registration wins.** If two plugins register the same command name, the first one loaded takes priority and a warning is logged. Files prefixed with `_` are skipped.
+
+### Execution Flow
+
+1. Template files are generated and staged
+2. Conditional file exclusion and cleanup runs
+3. Commands execute in order from `process_commands`
+4. Registration commands (those with `is_registration_command = True`) only run when `--automatic-register` is enabled
+5. Each command receives a `CommandContext` and returns `True` (success) or `False` (failure)
+
+> **Note -- Conditional file exclusion is automatic.** You do not invoke a command to exclude files. Conditional file exclusion and reference cleanup (EBus scrubbing, editor include removal) is handled automatically before `process_commands` runs, based on the `condition` and `cleanup_hint` fields in each `copyFiles` entry. See the [Template Descriptor Format](../TemplateDescriptor/) for details.
+
+---
+
+## Built-in Commands
+
+### Registration Commands
 
 Registration commands only run when the `--automatic-register` flag is set (or the GUI checkbox is enabled). They modify CMake and module files to integrate the new class into the build.
 
 ---
 
-### register_file_list
+#### register_file_list
 
 Adds the generated `.h` and `.cpp` files to the gem's CMake build target.
 
@@ -38,7 +72,7 @@ Adds the generated `.h` and `.cpp` files to the gem's CMake build target.
 
 ---
 
-### register_module_descriptor
+#### register_module_descriptor
 
 Adds a `CreateDescriptor()` call to the gem's module file so the component is instantiated at startup.
 
@@ -51,7 +85,7 @@ Adds a `CreateDescriptor()` call to the gem's module file so the component is in
 
 ---
 
-### register_system_component
+#### register_system_component
 
 Adds the component to the `GetRequiredSystemComponents()` list so it activates automatically.
 
@@ -64,7 +98,7 @@ Adds the component to the `GetRequiredSystemComponents()` list so it activates a
 
 ---
 
-### register_interface_header
+#### register_interface_header
 
 Registers an interface header (e.g. `PlayerHealthInterface.h`) in the gem's INTERFACE or API build target.
 
@@ -76,13 +110,13 @@ Registers an interface header (e.g. `PlayerHealthInterface.h`) in the gem's INTE
 
 ---
 
-## General Commands
+### General Commands
 
 These commands run regardless of the `--automatic-register` setting.
 
 ---
 
-### add_gem_dependency
+#### add_gem_dependency
 
 Adds a gem dependency to the current build target's `BUILD_DEPENDENCIES` block in CMake.
 
@@ -94,7 +128,7 @@ Adds a gem dependency to the current build target's `BUILD_DEPENDENCIES` block i
 
 ---
 
-### copy_file
+#### copy_file
 
 Copies a file from one location to another within the gem directory.
 
@@ -105,7 +139,7 @@ Copies a file from one location to another within the gem directory.
 
 ---
 
-### copy_setreg
+#### copy_setreg
 
 Ensures the `Registry/` directory exists for setreg file placement.
 
@@ -117,7 +151,7 @@ Ensures the `Registry/` directory exists for setreg file placement.
 
 ---
 
-### register_asset_setreg
+#### register_asset_setreg
 
 Configures the O3DE Asset Processor to recognize a custom data asset file extension.
 
@@ -130,7 +164,7 @@ Configures the O3DE Asset Processor to recognize a custom data asset file extens
 
 ---
 
-### register_generic_asset
+#### register_generic_asset
 
 Registers a `GenericAssetHandler` in the gem's `DataAssetSystemComponent`.
 
@@ -144,7 +178,7 @@ Registers a `GenericAssetHandler` in the gem's `DataAssetSystemComponent`.
 
 ---
 
-### replace_text
+#### replace_text
 
 Performs find-and-replace on a generated source file. Useful for injecting variable values into template placeholders that are not standard O3DE template variables.
 
@@ -168,4 +202,34 @@ Performs find-and-replace on a generated source file. Useful for injecting varia
 }
 ```
 
-The `pulse_channel` value comes from the template's `input_vars` and is provided by the user at creation time.
+---
+
+#### generate_uuid
+
+Generates and assigns UUIDs to template variables.
+
+**Behavior:** Creates fresh UUIDs for use in `AZ_COMPONENT_IMPL` and other O3DE macros that require unique identifiers.
+
+---
+
+## Command Summary Table
+
+| Command | Type | Purpose |
+|---|---|---|
+| `register_file_list` | Registration | Adds source files to CMake build target |
+| `register_module_descriptor` | Registration | Adds `CreateDescriptor()` to module file |
+| `register_system_component` | Registration | Adds to `GetRequiredSystemComponents()` |
+| `register_interface_header` | Registration | Registers interface header in API target |
+| `add_gem_dependency` | General | Adds gem dependency to CMake |
+| `copy_file` | General | Copies file within gem directory |
+| `copy_setreg` | General | Ensures Registry directory exists |
+| `register_asset_setreg` | General | Configures Asset Processor for custom extension |
+| `register_generic_asset` | General | Registers GenericAssetHandler |
+| `replace_text` | General | Find-and-replace in generated files |
+| `generate_uuid` | General | Generates UUIDs for template variables |
+
+---
+
+## Writing Custom Commands
+
+You can extend the command system by writing your own command plugins. See the [Command Authoring Guide](command-authoring/) for a complete walkthrough.
