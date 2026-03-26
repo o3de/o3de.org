@@ -1,5 +1,5 @@
 ---
-linkTitle: Importing robot
+linkTitle: Importing robots
 title: Importing robots
 description: Importing robots from description file with ROS 2 Gem in Open 3D Engine (O3DE).
 weight: 400
@@ -18,7 +18,7 @@ SDFormat, URDF, and XACRO are widely used robot description standards within the
 
 [XML Macros (XACRO)](http://wiki.ros.org/xacro) is a macro language that simplifies the creation and maintenance of URDF files. XACRO allows you to generate URDF files using XML macros. In XACRO, you can define parameters and include files, which is useful to change and iterate on robot models. You can also expand and reuse XACRO across multiple robot models. 
 
-URDF/XACRO files contain complete robot descriptions, including references to external geometry files. While you can define primitive geometries directly within the URDF/XACRO file, it's common practice to use external mesh files, in formats such as DAE (Collada) or STL, to represent the visual and collision shapes of the robot.
+URDF/XACRO files contain complete robot descriptions, including references to external geometry files. While you can define primitive geometries directly within the URDF/XACRO file, it is a common practice to use external mesh files, in formats such as DAE (Collada) or STL, to represent the visual and collision shapes of the robot.
 Robot models are typically available in packages that include the URDF/XACRO file and additional geometry files that contain visualizations and collision shapes, either as primitive geometries or external mesh files. These packages may be distributed as ROS workspaces, which are more straightforward to use in ROS applications. 
 
 ## Introduction to Robot Importer
@@ -26,7 +26,7 @@ Robot models are typically available in packages that include the URDF/XACRO fil
 Import robots into your O3DE simulation project using the Robot Importer that's included in the ROS 2 Gem. Robot Importer has the following features:
 
 - Guides you through the import process step by step.
-- Allows to change parameters of the import.
+- Allows changing parameters of the import.
 - Reads SDF, URDF and XACRO files.
 - Copies all required assets files to the `Assets` folder of your O3DE project.
 - Creates a prefab with a multi-body structure using articulations or classic rigid bodies and joints components.

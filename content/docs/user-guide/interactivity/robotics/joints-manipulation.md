@@ -57,7 +57,7 @@ The template comes with a couple of examples which you can run following its [RE
 ### Configure your robot
 
 #### Import the robot
-Once your project is up, use the [robot import](importing-robot.md) feature to load your robot of choice into O3DE.
+Once your project is up, use the [robot import](importing-robots.md) feature to load your robot of choice into O3DE.
 Make sure that the checkbox ```Use articulation for joints and rigid bodies``` is checked on the last page of the importer.
 Using articulations is strongly recommended for stable simulation of robotic arms and other joint systems.
 

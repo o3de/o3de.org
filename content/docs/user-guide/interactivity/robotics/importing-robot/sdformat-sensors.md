@@ -7,7 +7,7 @@ weight: 480
 
 ## Introduction
 
-Robots described in either [SDFormat](http://sdformat.org/), [URDF](http://wiki.ros.org/urdf), or [XACRO](http://wiki.ros.org/xacro) format, can be imported into your O3DE simulation project using the Robot Importer. The tool creates O3DE entities and components that model a robot. You can find more details about Robot Importer in the [documentation](/docs/user-guide/interactivity/robotics/importing-robot/). 
+Robots described in either [SDFormat](http://sdformat.org/), [URDF](http://wiki.ros.org/urdf), or [XACRO](http://wiki.ros.org/xacro) format, can be imported into your O3DE simulation project using the Robot Importer. The tool creates O3DE entities and components that model a robot. You can find more details about Robot Importer in the [documentation](/docs/user-guide/interactivity/robotics/importing-robots/). 
 
 Similarly, the robots' [sensors](http://sdformat.org/spec?ver=1.10&elem=sensor) are imported from the description files into O3DE using ROS 2 sensor components available in [ROS 2 Gem](/docs/user-guide/gems/reference/robotics/ros2/). Note, that the sensor's description can be stored directly in SDFormat files or using `<gazebo>` tag in URDF and XACRO files.
 
