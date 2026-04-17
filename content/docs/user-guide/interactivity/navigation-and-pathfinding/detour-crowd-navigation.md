@@ -31,10 +31,10 @@ The Detour Crowd Navigation component is ideal for:
     
     - **Max Agent Radius**: The maximum agent size used for path planning. This should match or exceed the largest **Agent Radius** of any agent you plan to add to this crowd.
     
-    - **Use Advanced Obstacle Avoidance Params**: Enable to use manual obstacle avoidance configuration. When disabled, the component uses one of four built-in quality presets.
+    - **Manual Obstacle Avoidance Presets**: Enable to configure obstacle avoidance parameters directly. When disabled, the component uses one of four built-in quality presets.
 
 	{{< note >}}
-Multiple **Detour Crowd Navigation** components can reference the same **Recast Navigation Mesh** component, allowing you to organize agents into separate crowds. Seperate crowds will not avoid each other.
+Multiple **Detour Crowd Navigation** components can reference the same **Recast Navigation Mesh** component, allowing you to organize agents into separate crowds. Separate crowds will not avoid each other.
 	{{< /note >}}
 
 ## Adding and Controlling Agents
@@ -42,7 +42,7 @@ Multiple **Detour Crowd Navigation** components can reference the same **Recast 
 Agents can be added to a crowd programmatically using C++ or Script Canvas. Each agent is an entity that the crowd system will manage independently.
 
 {{< note >}}
-When an agent is added to the crowd, the crowd system takes control of its movement. You should not directly manipulate the agent's position or velocity while it is part of the crowd, as this can lead to missmatch between the agent's actual position and the crowd's internal navigation state. Instead, use the provided APIs to set movement targets and let the crowd system handle the navigation and collision avoidance.
+When an agent is added to the crowd, the crowd system takes control of its movement. You should not directly manipulate the agent's position or velocity while it is part of the crowd, as this can lead to mismatch between the agent's actual position and the crowd's internal navigation state. Instead, use the provided APIs to set movement targets and let the crowd system handle the navigation and collision avoidance.
 {{< /note >}}
 
 ### Adding Agents via C++
@@ -141,7 +141,7 @@ You can call the same Detour Crowd requests directly from Script Canvas.
     - **AddAgent** with Agent Entity Id, Start Position, and Agent Params
     - **SetAgentMoveTarget** with Agent Entity Id and Move Target Position
 
-1. From the node pallete, add **OnAgentPositionUpdated** event from `DetourCrowdAgentNotificationBus` to receive agent position updates and drive your entity's transform.
+1. From the node palette, add **OnAgentPositionUpdated** event from `DetourCrowdAgentNotificationBus` to receive agent position updates and drive your entity's transform.
 
     ![Detour Crowd Navigation OnAgentPositionUpdated](/images/user-guide/interactivity/navigation/on-agent-position.png)
 
@@ -161,8 +161,8 @@ Each agent can be configured with specific parameters that control how it moves 
 | **Collision Query Range** | 7.2 | Distance used for detecting nearby agents |
 | **Path Optimization Range** | 18.0 | Range for path smoothing around obstacles |
 | **Separation Weight** | 2.0 | Strength of separation forces from nearby agents |
-| **Update Flags** | 0 | Bitfield to enable/disable specific agent behaviors (see below) |
-| **Obstacle Avoidance Type** | 0 | Id of the obstacle avoidance quality preset to use (0-3) when advanced params are disabled |
+| **Obstacle Avoidance Type** | 0 | Index of the obstacle avoidance quality preset to use (0-3) when **Manual Obstacle Avoidance Presets** is disabled |
+| **Query Filter Type** | 0 | Index of the navigation query filter used by this agent |
 
 ### Behavior Flags
 
@@ -178,15 +178,15 @@ These boolean flags enable or disable specific crowd behaviors:
 
 ### Obstacle Avoidance Quality Presets
 
-When **Use Advanced Obstacle Avoidance Params** is disabled, the crowd system uses one of four built-in quality presets:
+When **Manual Obstacle Avoidance Presets** is disabled, the crowd system uses one of four built-in quality presets:
 
 - **Low**: Fastest performance, minimal collision prediction
 - **Medium**: Balanced performance and quality
 - **Good**: Higher quality with more accurate predictions
 - **High**: Best quality, most CPU intensive
 
-Obstacle avoidance parameters can be manually tuned when **Use Advanced Obstacle Avoidance Params** is enabled.
+Obstacle avoidance parameters can be manually tuned when **Manual Obstacle Avoidance Presets** is enabled.
 
 {{< note >}}
-Each of these preset coresponds to a number ID that is used in the **Obstacle Avoidance Type**. **Low** = 0, **Medium** = 1, **Good** = 2, **High** = 3. When using the advanced obstacle avoidance parameters the ID is set manually.
+Each of these presets corresponds to an index used in **Obstacle Avoidance Type**: **Low** = 0, **Medium** = 1, **Good** = 2, **High** = 3. When using **Manual Obstacle Avoidance Presets**, the index is set manually.
 {{< /note >}}
