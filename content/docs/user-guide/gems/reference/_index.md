@@ -147,6 +147,7 @@ toc: true
 | [Atom TressFX](./rendering/amd/atom-tressfx) | The Atom TressFX Gem provides realistic hair and fur simulation and rendering in Atom and Open 3D Engine. |
 | [Camera](./rendering/camera) | The Camera Gem provides a basic camera component that defines a frustum for runtime rendering. |
 | [Camera Framework](./rendering/camera-framework) | The Camera Framework Gem provides a base for implementing more complex camera systems. |
+| [Open Particle System](./rendering/open-particle-system) | The Open Particle System Gem provides a particle simulation and rendering system, for visual effects. |
 | [PBR Reference Materials](./rendering/pbr-reference-materials) | The PBR Reference Materials Gem provides physically based reference materials for Open 3D Engine (O3DE) projects. |
 | [Stars](./rendering/stars) | The Stars Gem provides physically-based animated resolution-independent distant stars. |
 | [Starting Point Camera](./rendering/starting-point-camera) | The Starting Point Camera Gem provides the behaviors used with the Camera Framework Gem to define a camera rig. |
