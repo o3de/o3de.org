@@ -23,5 +23,4 @@ The following sections in the Atom guide provide more detail about the graphics 
 | [Materials](/docs/atom-guide/dev-guide/materials/) | Create PBR materials with global illumination support using Atom's Material Editor. |
 | [Shaders](/docs/atom-guide/dev-guide/shaders/) | Create shaders using Atom's shading language, AZSL. |
 | [Atom Gem Components](/docs/user-guide/components/reference/#atom) | Add mesh, lighting, and a variety of post-processing effects using components provided by the Atom Gem. |
-| [Open Particle System](/docs/user-guide/visualization/particles) | Produce particle effects using O3DE's native particle system |
-| Particles | Produce particle effects using a third-party plugin [PopcornFX](https://www.popcornfx.com/o3de/) integrated into Atom. |
+
