@@ -27,3 +27,5 @@
 /docs/user-guide/programming/ebus-design            /docs/user-guide/programming/messaging/ebus-design
 /docs/user-guide/programming/az-interface           /docs/user-guide/programming/messaging/az-interface
 /docs/user-guide/programming/az-event               /docs/user-guide/programming/messaging/az-event
+
+/docs/user-guide/assets/builder                     /docs/user-guide/assets/custom-assets/builder
