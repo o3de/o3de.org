@@ -41,7 +41,7 @@ Builds created with these commands are located in the `<project-directory>/<buil
 
 Refer to [Configure and Build](configure-and-build) for a list of other build configurations.
 
-O3DE requires CMake {{< versions/cmake >}} or higher.
+O3DE requires CMake {{< versions/cmake >}} or higher. Older versions may still work for now, but this will become a mandatory minimum after the O3DE 26.05 release.
 
 ## Section topics
 

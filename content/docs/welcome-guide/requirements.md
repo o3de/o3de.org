@@ -95,7 +95,15 @@ After installing the C++ redistributable, you might be prompted to restart your 
   {{< note >}}
   The 25.10.1 point release introduces support for Visual Studio 2026. But, users are required to use a more recent CMake version (4.2.0)
   {{< /note >}}
-  
+
+  {{< note >}}
+  The O3DE prepackaged installer for Windows includes CMake 4.2.3. If you are using the installer, you do not need to install CMake separately.
+  {{< /note >}}
+
+  {{< important >}}
+  CMake {{< versions/cmake >}} is the new recommended minimum version for O3DE. Older versions may still work for now, but this will become a mandatory minimum after the O3DE 26.05 release.
+  {{< /important >}}
+
 [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** from the CMake download page instead of a Release Candidate. During installation, select one of the options that adds CMake to the system PATH. This will save you from having to do this later.
 
    ![Add CMake to the system PATH during installation](/images/welcome-guide/requirements-cmake-install-add-to-path.png)
@@ -142,6 +150,14 @@ The following instructions describe how to retrieve and install the required sof
 
 ### CMake {#linux-cmake}
 
+{{< note >}}
+The O3DE prepackaged installer for Linux includes CMake 4.2.3. If you are using the installer, you do not need to install CMake separately.
+{{< /note >}}
+
+{{< important >}}
+CMake {{< versions/cmake >}} is the new recommended minimum version for O3DE. Older versions may still work for now, but this will become a mandatory minimum after the O3DE 26.05 release.
+{{< /important >}}
+
 [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it and install a more recent version.
 
 Install CMake using the instructions for the version of Ubuntu that you have installed:
@@ -164,9 +180,15 @@ sudo apt install -y cmake
 {{% /tab %}}
 {{% tab name="24.04 LTS" %}}
 
-You can install the default version of CMake for Ubuntu 24.04 LTS, which is version 3.28. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest).
+The default version of CMake for Ubuntu 24.04 LTS is version 3.28, which is below the recommended minimum of CMake {{< versions/cmake >}}. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest) or follow the instructions below to install it using the Kitware APT repository.
 
 ```shell
+sudo apt remove --purge cmake -y
+sudo apt update
+sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg
+sudo wget -O /usr/share/keyrings/kitware-archive-keyring.gpg https://apt.kitware.com/keys/kitware-archive-latest.asc
+echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ noble main' | sudo tee /etc/apt/sources.list.d/kitware.list
+sudo apt update
 sudo apt install -y cmake
 ```
 
