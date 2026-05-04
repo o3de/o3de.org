@@ -210,6 +210,27 @@ sudo apt install -y libstdc++-12-dev clang clang++
 
 In addition to the minimum hardware requirements for video cards for O3DE, Linux requires that the latest drivers for the video card are installed and enabled. Refer to the video card manufacturer's support page for instructions on how to do this.
 
+### Wayland
+
+{{< note >}}
+Wayland is currently in an experimental stage and requires building from source to enable. At this time, Wayland support is limited to the **Game Launcher**. O3DE Editor support is planned for when O3DE migrates to Qt6.
+{{< /note >}}
+
+The compositor must support the Wayland protocols listed in the following table. Optional protocols are not required, but their absence may result in a reduced user experience. Qt may impose additional Wayland compositor requirements beyond those listed here.
+
+You can use [Waycheck](https://flathub.org/en/apps/dev.serebit.Waycheck) to verify which protocols your compositor supports.
+
+| Protocol            | Min Version | Required |
+|---------------------|-------------|----------|
+| Wayland seat        | v6          | Yes      |
+| XDG shell           | v3          | Yes      |
+| Pointer constraints | v1          | Yes      |
+| Relative pointer    | v1          | Yes      |
+| Cursor shape        | v2          | No       |
+| XDG decor           | v1          | No       |
+| XDG toplevel drag   | v1          | No       |
+
+
 ### Additional library dependencies
 
 O3DE also requires some additional library packages to be installed:
