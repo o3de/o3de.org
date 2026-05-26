@@ -62,12 +62,12 @@ enableRobotsTXT = true
 # Docs version data format: ["display name", "baseURL"]
 # Note: A version that has "www.o3de.org" in its baseURL will get " (latest)" appended to its display name in the version selector.
 versions = [
-  ["25.10", "https://docs.o3de.org"],
+  ["26.05", "https://docs.o3de.org"],
   ["development", "https://development--o3deorg.netlify.app"],
+  ["25.10", "https://version-2510--o3deorg.netlify.app"],
   ["25.05", "https://version-2505--o3deorg.netlify.app"],
   ["24.09", "https://version-2409--o3deorg.netlify.app"],
-  ["23.10", "https://version-2310--o3deorg.netlify.app"],
-  ["23.05", "https://version-2305--o3deorg.netlify.app"]
+  ["23.10", "https://version-2310--o3deorg.netlify.app"]
 ]
 
 [params.logos]
