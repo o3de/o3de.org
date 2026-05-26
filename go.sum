@@ -18,3 +18,5 @@ github.com/o3de/hugo-odie v0.0.0-20250926192417-45f3dcf3acd2 h1:jpr3CHOMCb2lae1G
 github.com/o3de/hugo-odie v0.0.0-20250926192417-45f3dcf3acd2/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
 github.com/o3de/hugo-odie v0.0.0-20251024151654-ae93eb2e6e4e h1:y72sXVnouxhdnWtJj4uLbhS2lqlsDXhiv3lXyhiYGhw=
 github.com/o3de/hugo-odie v0.0.0-20251024151654-ae93eb2e6e4e/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
+github.com/o3de/hugo-odie v0.0.0-20251031153332-d1379137cabb h1:wJm9irMKTd1osKpvihy43HTLvJT1Dr4KyI5P8ngniTw=
+github.com/o3de/hugo-odie v0.0.0-20251031153332-d1379137cabb/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
