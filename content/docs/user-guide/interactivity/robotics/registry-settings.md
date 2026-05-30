@@ -24,7 +24,7 @@ The following table lists the available registry settings for the ROS 2 Gem:
 | `/O3DE/ROS2/ClockType`                                        | Simulation clock type. Refer to [Simulation Time](simulation-time.md)                             | `simulation`                  |
 | `/O3DE/ROS2/SteadyClock/ResetTimestampOnLevelReload`          | Resets `simulation_time` to zero on level reload when using `simulation` clock.                   | true                          |
 | `/O3DE/ROS2/xacro_executable_path`                            | Path to the xacro executable used for processing xacro files.                                     | `xacro`                       |
-| `/O3DE/ROS2/GlobalFrameName`                                  | The name of the global frame used in the ROS 2 Gem. More in [ROS 2 Frame Component](docs/user-guide/components/reference/ros2/core/ros2-frame/). | `odom`                        |
+| `/O3DE/ROS2/GlobalFrameName`                                  | The name of the global frame used in the ROS 2 Gem. More in [ROS 2 Frame Component](/docs/user-guide/components/reference/ros2/core/ros2-frame/). | `odom`                        |
 | `/SimulationInterfaces/PrintStateNameInGui`                   | Enables printing the current state name of the Simulation Interfaces state machine in the GUI.    | true                          |
 | `/SimulationInterfaces/StartInStoppedState`                   | Starts the Simulation Interfaces state machine in the Stopped state.                              | false                         |
 | `/SimulationInterfaces/KeyboardTransitions/StoppedToPlaying`  | Keyboard binding to change simulation state from Stopped to Playing.                              | `keyboard_key_alphanumeric_R` |
