@@ -12,18 +12,18 @@ primary: true
 
 ## Current version of Open 3D Engine
 
-**Latest version**: 25.10.2, released on Jan 27, 2026.
+**Latest version**: 26.05.0, released on May 27, 2026.
 
-**Release Notes**: [O3DE 25.10.2 Release Notes](./2510-2-release-notes)
+**Release Notes**: [O3DE 26.05.0 Release Notes](./2605-0-release-notes)
 
 
 ### Download the latest version
 
 | Version                 | Binary download link                                        | Date of Release |
 | ----------------------- | ----------------------------------------------------------- | --------------- |
-| 25.10.2 **Windows**     | [Download](https://o3debinaries.org/download/windows.html)  | Jan 27, 2026     |
-| 25.10.2 **Linux**       | [Download](https://o3debinaries.org/download/linux.html)    | Jan 27, 2026     |
-| 25.10.2 **Source code** | [GitHub repository](https://github.com/o3de/o3de/tree/main) | Jan 27, 2026     |
+| 26.05.0 **Windows**     | [Download](https://o3debinaries.org/download/windows.html)  | May 27, 2026     |
+| 26.05.0 **Linux**       | [Download](https://o3debinaries.org/download/linux.html)    | May 27, 2026     |
+| 26.05.0 **Source code** | [GitHub repository](https://github.com/o3de/o3de/tree/main) | May 27, 2026     |
 
 
 ## Older versions
