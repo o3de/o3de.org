@@ -8,5 +8,5 @@ This section contains step-by-step tutorials related to artificial intelligence 
 
 | Tutorial | Description |
 | - | - |
-| [2D Navigation with Kythera AI](navigation-2d) | Create an artificial intelligence (AI) agent that performs ground-based navigation and follows a visually scripted behavior tree. This tutorial uses the broad toolset provided by the [Kythera AI](/docs/user-guide/gems/reference/kythera-ai) Gem.  |
+| [2D Navigation with Kythera AI](navigation-2d) [**Depricated**]| Create an artificial intelligence (AI) agent that performs ground-based navigation and follows a visually scripted behavior tree. This tutorial uses the broad toolset provided by the [Kythera AI](/docs/user-guide/gems/reference/kythera-ai) Gem.  |
 
