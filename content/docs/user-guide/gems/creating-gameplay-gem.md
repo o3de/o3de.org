@@ -20,8 +20,6 @@ The **GameplayGem** template provides a complete, pre-configured C++ Gem structu
 * **Built-in Example Level**: Includes `/Levels/DefaultLevel/DefaultLevel.prefab` ready to hit **Play** in the O3DE Editor.
 * **Cross-Platform PAL Setup**: CMake platform abstraction files for Windows, Linux, macOS, Android, and iOS.
 
----
-
 ## Step 1: Create a Gem from the GameplayGem Template
 
 You can create a Gem using the **O3DE Project Manager GUI** or the **O3DE CLI**.
@@ -43,19 +41,23 @@ Open a terminal or command prompt in your O3DE engine root directory and run:
 o3de create-gem -t GameplayGem -gn CombatSystem -gp <path-to-your-gems-folder>/CombatSystem
 ```
 
----
+## Step 2: Add Gem to Your Project
 
-## Step 2: Register the Gem with Your Project
+To use your new Gem, you must add it to an active O3DE project using the **O3DE Project Manager** or the **O3DE CLI**. For comprehensive details on project configuration, see [Adding Gems](../../project-config/add-remove-gems/#adding-gems).
 
-To add your new Gem to an active O3DE project:
+### Option A: O3DE Project Manager GUI
+
+1. Open **O3DE Project Manager**.
+2. Locate your project and select **Edit Project Settings -> Configure Gems**.
+3. Enable your new Gem in the list and save your configuration.
+
+### Option B: O3DE Command Line (CLI)
+
+Run the following command to register and enable the Gem in your project's `project.json` manifest:
 
 ```bash
 o3de register-gem -gp <path-to-your-gems-folder>/CombatSystem -pp <path-to-your-project>
 ```
-
-This registers the Gem in your project's `project.json` manifest.
-
----
 
 ## Step 3: Architecture & File Overview
 
@@ -68,8 +70,6 @@ The generated Gem contains the following key source files under `Code/Source/`:
 | `Tools/Components/EditorExampleComponent.h` / `.cpp` | Editor companion component providing Inspector reflection and `BuildGameEntity()`. |
 | `Include/<GemName>/<GemName>Bus.h` | EBus interface definitions for event messaging. |
 
----
-
 ## Step 4: Testing Your Gem in the O3DE Editor
 
 1. Open your project in **O3DE Editor**.
@@ -78,7 +78,7 @@ The generated Gem contains the following key source files under `Code/Source/`:
 4. Click the **Play (Ctrl + G)** button in the main viewport.
 5. Open the **Console (~)** to observe tick output and component activation.
 
----
+![Testing Gameplay Gem in O3DE Editor](/images/user-guide/gems/gameplay-gem-testing.png)
 
 ## Summary & Next Steps
 
