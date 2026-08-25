@@ -6,6 +6,10 @@ weight: 100
 toc: true
 ---
 
+{{< important >}}
+This tutorial is deprecated due to the end of Kythera AI support for O3DE.
+{{< /important >}}
+
 This tutorial shows you how to use the [Kythera AI Gem](/docs/user-guide/gems/reference/kythera-ai/) to create an area of level that can be navigated by Kythera AI agents, and a simple AI agent that follows a visually scripted behavior tree.
 
 You will need to begin from either your own project with the Kythera AI Gem enabled, or the Kythera AI Demo project. See [Kythera AI Gem setup](/docs/user-guide/gems/reference/kythera-ai/kythera-ai-gem-setup/) for information on setting up the Kythera AI Demo project.
