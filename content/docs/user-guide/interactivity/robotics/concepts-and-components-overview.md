@@ -90,7 +90,7 @@ The ROS 2 frame component handles two main responsibilities:
 1. **Transformations**: It publishes the transformation of its entity in the TF2 tree. It also allows querying transformations to other frames.
 2. **Namespacing**: It provides a namespace for topics and services related to the entity.
 
-More details about frames can be found in the [Frames documentation](user-guide/components/reference/ros2/core/ros2-frame/).
+More details about frames can be found in the [Frames documentation](/docs/user-guide/components/reference/ros2/core/ros2-frame/).
 
 ### Sensors
 
