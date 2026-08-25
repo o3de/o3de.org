@@ -12,7 +12,7 @@ The **ROS 2 GNSS Sensor** component encapsulates the simulation of a Global Navi
 
 ## Dependencies
 
-[ROS 2 Frame Component](/user-guide/components/reference/ros2/core/ros2-frame)
+[ROS 2 Frame Component](/docs/user-guide/components/reference/ros2/core/ros2-frame)
 
 ## Properties
 
