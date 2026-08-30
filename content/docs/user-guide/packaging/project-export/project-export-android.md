@@ -17,7 +17,7 @@ To learn more about how to manually export an Android project, please consult th
 ## Prerequisites
 1. Make sure that the [Project Export for Windows and Linux page](/docs/user-guide/packaging/project-export/project-export-pc) prerequisites are satisfied.
 2. Make sure you have your project created and registered with your engine. Check that you can successfully build and open your project with the Editor.
-3. Ensure all prerequisites for working with Android in O3DE are satsified. You can learn about software dependencies [here](/docs/user-guide/platforms/android/#prerequisite-software-and-packages) and project setup prerequisites [here](/docs/user-guide/platforms/android/generating_android_project_windows/#prerequisites). For the Android SDK, make sure to record where the root folder path is located on your hard drive, as that will be needed for setting up configuration.
+3. Ensure all prerequisites for working with Android in O3DE are satisfied. You can learn about software dependencies [here](/docs/user-guide/platforms/android/#prerequisite-software-and-packages) and project setup prerequisites [here](/docs/user-guide/platforms/android/generating_android_project_windows/#prerequisites). For the Android SDK, make sure to record where the root folder path is located on your hard drive, as that will be needed for setting up configuration.
 4. Ensure that you have a proper keystore file configured for signing. You can learn more [here](/docs/user-guide/platforms/android/#apk-signing). Here is an example keystore file you can create to start with (you will need the JDK with `keytool`):
 ```
 set KEYSTORE_FILE_PATH=C:\path\to\android-key.keystore
