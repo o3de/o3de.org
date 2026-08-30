@@ -8,7 +8,7 @@ weight: 420
 This guide covers how to use project export tooling to build and deploy games on iOS. We will use the iOS export script to generate an Xcode project and prepare assets and then build the project. The end result of export should be an IPA file that can be installed on your iOS device.
 
 {{< note >}}
-To learn more about the project export tooling, please consult the page [Project Export CLI Tool.](/docs/user-guide/packaging/project-export/project-export-cli)
+To learn more about the project export tooling, please consult the [Project Export for Windows and Linux page](/docs/user-guide/packaging/project-export/project-export-pc)
 {{< /note >}}
 {{< important >}}
 The iOS export functionality is only available on macOS, which is currently experimental for O3DE.
