@@ -8,14 +8,14 @@ weight: 420
 This guide covers how to use project export tooling to build and deploy games on iOS. We will use the iOS export script to generate an Xcode project and prepare assets and then build the project. The end result of export should be an IPA file that can be installed on your iOS device.
 
 {{< note >}}
-To learn more about the project export tooling, please consult the page [Project Export CLI Tool.](/docs/user-guide/packaging/project-export/project-export-cli)
+To learn more about the project export tooling, please consult the [Project Export for Windows and Linux page](/docs/user-guide/packaging/project-export/project-export-pc)
 {{< /note >}}
 {{< important >}}
 The iOS export functionality is only available on macOS, which is currently experimental for O3DE.
 {{< /important >}}
 
 ## Prerequisites
-1. Make sure that the [Project Export CLI Tool page](/docs/user-guide/packaging/project-export/project-export-cli) prerequisites are satisfied.
+1. Make sure that the [Project Export for Windows and Linux page](/docs/user-guide/packaging/project-export/project-export-pc) prerequisites are satisfied.
 2. Make sure you have your project created and registered with your engine.
 3. Have a valid copy of Xcode installed on your machine, and a valid Apple Developer ID associated with that IDE. To set up such an ID, go to [developer.apple.com](https://developer.apple.com). To use your desired Apple ID, in Xcode go to `Xcode -> Settings`. In the Settings window, go to the Accounts tab and click the '+' icon at the bottom of the left panel to add your account. Select Apple ID to proceed, and follow on-screen instructions.
 4. You will also need to ensure that Xcode has the standard SDKs installed for macOS and iOS, and that your preferred iOS test device is compatible with Xcode. If you are not sure, you can consult [this page on installing Simulator Runtimes](https://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes).
