@@ -5,7 +5,7 @@ description: The Recast Navigation Gem provides navigation mesh calculation and 
 toc: true
 ---
 
-The Recast Navigation Gem provides support for building navigation meshes and calculating walkable paths within those navigation meshes. It uses open source library [Recast Navigation](https://github.com/recastnavigation/recastnavigation).
+The Recast Navigation Gem provides support for building navigation meshes and calculating walkable paths within those navigation meshes. It includes `Detour`, which provides pathfinding capabilities and `DetourCrowd`, which provides crowd simulation capabilities. It uses open source library [Recast Navigation](https://github.com/recastnavigation/recastnavigation).
 
 An example of its use can be found in AutomatedTesting project in Navigation Sample level.
 
@@ -14,6 +14,7 @@ This Gem includes the following features:
 * Create a navigation mesh
 * Configure navigation mesh parameters
 * Find paths between entities or positions within a navigation mesh
+* Manage crowds of agents with collision avoidance and steering behaviors
 * Visualize the navigation mesh
 
 For more information, see [Using Recast Navigation Gem](/docs/user-guide/interactivity/navigation-and-pathfinding/recast-navigation).

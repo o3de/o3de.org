@@ -15,7 +15,7 @@ Lidars are useful for tasks such as obstacle detection, localization, and naviga
 
 ## Dependencies
 
-[ROS 2 Frame component](/user-guide/components/reference/ros2/core/ros2-frame)
+[ROS 2 Frame Component](/docs/user-guide/components/reference/ros2/core/ros2-frame)
 
 ## Properties
 
