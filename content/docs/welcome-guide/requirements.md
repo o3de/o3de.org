@@ -163,24 +163,9 @@ CMake {{< versions/cmake >}} is the new recommended minimum version for O3DE. Ol
 Install CMake using the instructions for the version of Ubuntu that you have installed:
 
 {{< tabs name="CMake install" >}}
-{{% tab name="22.04 LTS" %}}
-
-The default version of CMake for Ubuntu 22.04 LTS is version 3.22, however version CMake {{< versions/cmake >}} is the minimum requirement for O3DE. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest) or follow the instructions below to install it using Kitware APT repository.
-
-```shell
-sudo apt remove --purge cmake -y
-sudo apt update
-sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg
-sudo wget -O /usr/share/keyrings/kitware-archive-keyring.gpg https://apt.kitware.com/keys/kitware-archive-latest.asc
-echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ jammy main' | sudo tee /etc/apt/sources.list.d/kitware.list
-sudo apt update
-sudo apt install -y cmake
-```
-
-{{% /tab %}}
 {{% tab name="24.04 LTS" %}}
 
-The default version of CMake for Ubuntu 24.04 LTS is version 3.28, which is below the recommended minimum of CMake {{< versions/cmake >}}. To install more recent versions, refer to the CMake [download page](https://cmake.org/download/#latest) or follow the instructions below to install it using the Kitware APT repository.
+To install CMake {{< versions/cmake >}} or later, refer to the CMake [download page](https://cmake.org/download/#latest) or follow the instructions below to install it using the Kitware APT repository.
 
 ```shell
 sudo apt remove --purge cmake -y
@@ -188,6 +173,16 @@ sudo apt update
 sudo apt install -y software-properties-common apt-transport-https ca-certificates gnupg
 sudo wget -O /usr/share/keyrings/kitware-archive-keyring.gpg https://apt.kitware.com/keys/kitware-archive-latest.asc
 echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ noble main' | sudo tee /etc/apt/sources.list.d/kitware.list
+sudo apt update
+sudo apt install -y cmake
+```
+
+{{% /tab %}}
+{{% tab name="26.04 LTS" %}}
+
+The default version of CMake on Ubuntu 26.04 LTS already satisfies the minimum requirement, so you can install it directly.
+
+```shell
 sudo apt update
 sudo apt install -y cmake
 ```
@@ -208,18 +203,18 @@ O3DE requires [Clang {{< versions/clang >}} or later](https://clang.llvm.org/get
 Install Clang and the GNU C++ Library using the instructions for the version of Ubuntu that you have installed:
 
 {{< tabs name="Clang install" >}}
-{{% tab name="22.04 LTS" %}}
+{{% tab name="24.04 LTS" %}}
 
-You can install the default version of Clang for Ubuntu 22.04 LTS, which is clang-14. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
+Install Clang {{< versions/clang >}} or later and the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
 
 ```shell
 sudo apt install -y libstdc++-12-dev clang clang++
 ```
 
 {{% /tab %}}
-{{% tab name="24.04 LTS" %}}
+{{% tab name="26.04 LTS" %}}
 
-You can install the default version of Clang for Ubuntu 24.04 LTS, which is clang-18. You will also need to install the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
+Install Clang {{< versions/clang >}} or later and the corresponding [GNU C++ Library](https://gcc.gnu.org/onlinedocs/libstdc++/).
 
 ```shell
 sudo apt install -y libstdc++-12-dev clang clang++
@@ -264,25 +259,21 @@ O3DE also requires some additional library packages to be installed:
 * libxcb-xinput-dev
 * libxcb-xfixes0-dev
 * libxcb-xkb-dev
-* libxcb-image0-dev
-* libxcb-randr0-dev
 * libxcb-keysyms1-dev
 * libxkbcommon-dev
 * libxkbcommon-x11-dev
 * libfontconfig1-dev
-* libcurl4-openssl-dev
 * libpcre2-16-0
 * zlib1g-dev
 * mesa-common-dev
-* libssl-dev
 * libunwind-dev
 * libzstd-dev
-* xxd
+* pkg-config
 
 You can download and install these packages through `apt`.
 
 ```shell
-sudo apt install libglu1-mesa-dev libxcb-randr0-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxcb-image0-dev libxcb-randr0-dev libxcb-keysyms1-devlibxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libpcre2-16-0 zlib1g-dev mesa-common-dev libssl-dev libunwind-dev libzstd-dev xxd
+sudo apt install libglu1-mesa-dev libxcb-randr0-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxcb-keysyms1-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libpcre2-16-0 zlib1g-dev mesa-common-dev libunwind-dev libzstd-dev pkg-config
 ```
 
 ### Ninja Build System (Optional)

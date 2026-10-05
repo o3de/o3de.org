@@ -8,7 +8,7 @@ toc: true
 
 ## Requirements
 
-The O3DE ROS 2 Gem has been tested with [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html) and [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation.html) with Ubuntu 22.04 and 24.04, respectively.
+The O3DE Simulation Gems support [ROS 2 Humble](https://docs.ros.org/en/humble/Installation.html), [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/Installation.html), [ROS 2 Kilted](https://docs.ros.org/en/kilted/Installation.html), and [ROS 2 Lyrical](https://docs.ros.org/en/lyrical/Installation.html).
   {{< important >}}
   The ROS 2 Gem is not available for Windows.
   {{< /important >}}
@@ -142,13 +142,6 @@ cd $PROJECT_PATH
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON
 cmake --build build/linux --config profile --target ${PROJECT_NAME} Editor ${PROJECT_NAME}.Assets ${PROJECT_NAME}.GameLauncher
 ```
-{{<note>}}
-Before version 24.09.0, PhysX 5 was experimental and compiled during the engine's source code compilation process. 
-If you're utilizing version 23.10.3 or an earlier release, you'll need to specify an additional flag: `-DAZ_USE_PHYSX5:BOOL=ON` :
-```shell
-cmake -B build/linux -G "Ninja Multi-Config" -DLY_DISABLE_TEST_MODULES=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_STRIP_DEBUG_SYMBOLS=ON -DAZ_USE_PHYSX5:BOOL=ON 
-```
-{{</note>}}
 
 ### Launching your project in O3DE Editor
 
