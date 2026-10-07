@@ -15,5 +15,5 @@ With EBus, listeners subscribe to a global singleton that is automatically creat
 
 ## API Reference
 
-- [`AZ::Event`](docs/api/frameworks/azcore/class_a_z_1_1_event) API Reference
+- [`AZ::Event`](/docs/api/frameworks/azcore/class_a_z_1_1_event) API Reference
 - [`AZ::EventHandler`](/docs/api/frameworks/azcore/class_a_z_1_1_event_handler.html) API Reference
