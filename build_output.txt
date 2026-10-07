@@ -1,0 +1,290 @@
+WARN  deprecated: project config key languageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use locale instead.
+Start building sites … 
+hugo v0.164.0-ce2470e7012b5ab5fc4e10ebe4027e9f8d9e00dc+extended windows/amd64 BuildDate=2026-07-06T16:39:30Z VendorInfo=gohugoio
+
+WARN  deprecated: .Site.LanguageCode was deprecated in Hugo v0.158.0 and will be removed in a future release. Use .Site.Language.Locale instead.
+WARN  Dart Sass: DEPRECATED [import]: C:/Users/gaian/AppData/Local/hugo_cache/modules/filecache/modules/pkg/mod/github.com/o3de/hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e/assets/scss/custom.scss:6:8: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+WARN  Dart Sass: DEPRECATED [import]: C:/Users/gaian/AppData/Local/hugo_cache/modules/filecache/modules/pkg/mod/github.com/o3de/hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e/assets/scss/custom.scss:571:8: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+WARN  Dart Sass: DEPRECATED [import]: C:/Users/gaian/AppData/Local/hugo_cache/modules/filecache/modules/pkg/mod/github.com/o3de/hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e/assets/scss/custom.scss:572:8: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+WARN  Dart Sass: DEPRECATED [import]: C:/Users/gaian/AppData/Local/hugo_cache/modules/filecache/modules/pkg/mod/github.com/o3de/hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e/assets/scss/custom.scss:573:8: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+WARN  Dart Sass: DEPRECATED [import]: C:/Users/gaian/AppData/Local/hugo_cache/modules/filecache/modules/pkg/mod/github.com/o3de/hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e/assets/scss/custom.scss:574:8: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+WARN  Dart Sass: 6 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+
+Alloc = 553.7 MB
+TotalAlloc = 3.1 GB
+Sys = 941.8 MB
+NumGC = 21
+
+
+
+Alloc = 721.9 MB
+TotalAlloc = 6.8 GB
+Sys = 1.1 GB
+NumGC = 30
+
+WARN  Template /_default/section.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\_default\\section.html"
+WARN  Template /_partials-base/footer.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials-base\\footer.html"
+WARN  Template /_partials-base/head.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials-base\\head.html"
+WARN  Template /_partials-base/head/css.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials-base\\head\\css.html"
+WARN  Template /_partials-base/head/js.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials-base\\head\\js.html"
+WARN  Template /_partials-base/header.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials-base\\header.html"
+WARN  Template /_partials-base/menu.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials-base\\menu.html"
+WARN  Template /_partials-base/terms.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials-base\\terms.html"
+WARN  Template /_partials/github-edit.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials\\github-edit.html"
+WARN  Template /_partials/menu-loop.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials\\menu-loop.html"
+WARN  Template /_partials/nav-link-titles.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials\\nav-link-titles.html"
+WARN  Template /_partials/preview-info.html is unused, source "D:\\OffLocalDev\\o3de.org\\layouts\\partials\\preview-info.html"
+WARN  Template /_partials/search.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials\\search.html"
+WARN  Template /_partials/section-nav-recurse.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\partials\\section-nav-recurse.html"
+WARN  Template /_partials/version-warning.html is unused, source "D:\\OffLocalDev\\o3de.org\\layouts\\partials\\version-warning.html"
+WARN  Template /_shortcodes/button.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\shortcodes\\button.html"
+WARN  Template /_shortcodes/placeholder.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\shortcodes\\placeholder.html"
+WARN  Template /single.html is unused, source "C:\\Users\\gaian\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\o3de\\hugo-odie@v0.0.0-20251024151654-ae93eb2e6e4e\\layouts\\_default\\single.html"
+
+
+Alloc = 733.8 MB
+TotalAlloc = 7.2 GB
+Sys = 1.1 GB
+NumGC = 31
+
+
+
+Alloc = 650.9 MB
+TotalAlloc = 7.4 GB
+Sys = 1.1 GB
+NumGC = 32
+
+
+
+Alloc = 462.8 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 468.9 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 475.8 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 484.1 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 488.1 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 491.8 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 495.4 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 499.3 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 503.2 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 506.2 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 508.3 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 511.9 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 516.0 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 520.5 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 524.3 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 528.2 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 532.0 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 536.4 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 540.6 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 547.2 MB
+TotalAlloc = 7.6 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 553.4 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 558.5 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 566.7 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 572.0 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 33
+
+
+
+Alloc = 397.2 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 34
+
+
+
+Alloc = 403.4 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 34
+
+
+
+Alloc = 408.1 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 34
+
+
+
+Alloc = 416.6 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 34
+
+
+
+Alloc = 421.9 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 34
+
+
+                  │  EN   
+──────────────────┼───────
+ Pages            │  2338 
+ Paginator pages  │     5 
+ Non-page files   │    19 
+ Static files     │ 39784 
+ Processed images │     0 
+ Aliases          │     2 
+ Cleaned          │     0 
+
+Total in 166140 ms
+
+
+Alloc = 423.8 MB
+TotalAlloc = 7.7 GB
+Sys = 1.1 GB
+NumGC = 34
+
