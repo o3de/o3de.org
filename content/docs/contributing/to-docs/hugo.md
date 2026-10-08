@@ -168,7 +168,7 @@ As described above, Hugo looks for progressively more specific layouts and appli
 For example, let's look at `/layouts/_default/baseof.html`:
 
 ```html
-{{ $lang := site.LanguageCode }}
+{{ $lang := .Site.Language.Lacale }}
 <!DOCTYPE html>
 <html{{ with $lang }} lang="{{ . }}"{{ end }}>
   <head>
