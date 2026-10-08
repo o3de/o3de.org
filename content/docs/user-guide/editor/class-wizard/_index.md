@@ -46,4 +46,3 @@ Your project or gems may add their own templates too -- those show up in the sam
 ## Going Further
 
 Follow [Getting Started](getting-started/) to use the GUI, or [CLI Quick Start](cli/) to use the wizard from the command line. To author your own templates and commands, or to understand the architecture of the system, see the [Class Creation Wizard Developer Guide](/docs/engine-dev/tools/class-wizard/).
-
