@@ -2,7 +2,7 @@ baseURL = "https://www.docs.o3de.org"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "term"]
 copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
-languageCode = "en-us"
+locale = "en-us"
 
 enableGitInfo = true
 enableRobotsTXT = true 
