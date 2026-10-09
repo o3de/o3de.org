@@ -146,6 +146,9 @@ The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/
 Ubuntu on 64-bit ARMv8 processors is in an experimental stage.
 {{< /note >}}
 
+On other Linux distributions, like Fedora, Debian, Arch, and others, the use of [`Distrobox`](https://distrobox.it/), a wrapper for `docker`, `podman` or `lilipod`, is recommended.
+
+
 The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt` command-line utility.
 
 ### CMake {#linux-cmake}
