@@ -15,7 +15,7 @@ A *GameLift fleet* is a set of Amazon EC2 virtual machines, called *instances*, 
 
 In most cases, your game will use more than one fleet. To avoid using a fixed fleet ID in your script, you can use a resource mapping file, which lets you look up fleet IDs at runtime. Using a resource mapping file helps keep your code or script clean and consistent. For more information, refer to [Resource Mapping Files](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-files/).
 
-The following examples use [Script Canvas](/docs/user-guide/scripting/script-canvas/), but you can also search and join sessions using the [AWS GameLift Gem C++ API](/docs/api/gems/awsgamelift/).
+The following examples use [Script Canvas](/docs/user-guide/scripting/script-canvas/), but you can also search and join sessions using the [AWS GameLift Gem C++ API](https://github.com/aws/o3de-repo/tree/main/Gems/AWSGameLift).
 
 
 ### Example: Create a game session with 1 max player on 1 fleet
@@ -64,7 +64,7 @@ In Script Canvas, follow these steps:
 
 The simplest method to search for sessions is by browsing through the server, which shows all of the available games. Then, the player can filter the games based on the type that they want to play, choose a game, and join a session.
 
-The following examples use [Script Canvas](/docs/user-guide/scripting/script-canvas/), but you can also search and join sessions using the [AWS GameLift Gem C++ API](/docs/api/gems/awsgamelift/).
+The following examples use [Script Canvas](/docs/user-guide/scripting/script-canvas/), but you can also search and join sessions using the [AWS GameLift Gem C++ API](https://github.com/aws/o3de-repo/tree/main/Gems/AWSGameLift).
 
 
 ### Example: Search for sessions based on filter criteria

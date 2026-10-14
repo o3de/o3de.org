@@ -89,7 +89,7 @@ You will need to:
 O3DE ships with many ImGui tools so the options you see will be dependent on the specific gems active in your project.
 
 * [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/)
-* [Multiplayer helpers](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/running/#running-locally-using-imgui-options)
+* [Multiplayer helpers](/docs/user-guide/networking/multiplayer/running/#running-locally-using-imgui-options)
 
 ## CVARs
 

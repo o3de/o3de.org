@@ -89,4 +89,4 @@ To use a custom authentication provider with the AWS Client Auth Gem, you must h
 
     d. Authorization will work if the Amazon Cognito setting above is set up correctly.
 
-Refer to the [AWS Client Auth](/docs/api/gems/awsclientauth) API Reference for more information.
+Refer to the [AWS Client Auth](https://github.com/aws/o3de-repo/tree/main/Gems/AWSClientAuth) Gem source code for more information.

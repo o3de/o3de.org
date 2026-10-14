@@ -318,7 +318,7 @@ The scene pipeline uses the AssImp library to import source scene files into a s
 
 User defined properties in the source scene file might be imported with unexpected results such as missing keys or changed values. There could be a mismatch in what the AssImp library will import, options to export custom properties might have been missed, or the scene pipeline might expect exact value types from the source scene file.
 
-For more information, refer to [Scene API: User Defined Properties](/docs/user-guide/assets/pipeline/scene-api-udp/).
+For more information, refer to [Scene API: User Defined Properties](/docs/user-guide/assets/scene-pipeline/scene-api-udp/).
 
 #### Wrong scene manifest rules used
 

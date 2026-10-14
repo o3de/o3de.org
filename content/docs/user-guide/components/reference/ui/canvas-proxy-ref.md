@@ -22,7 +22,7 @@ For more information, refer to [Placing UI Canvases in the 3D World](/docs/user-
 
 ## UI Canvas Proxy Ref properties 
 
-![UI Canvas Proxy Ref properties](/images/user-guide/components/reference/ui/ui-proxy-ref-component.png)
+![UI Canvas Proxy Ref properties](/images/user-guide/components/reference/ui/ui-canvas-proxy-ref-component.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
