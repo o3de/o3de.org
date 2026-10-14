@@ -15,4 +15,5 @@ This is a stub page intended to serve as an example of guide structure. Informat
 
 | Name | Description |
 |-|-|
-| [AzCore](./azcore) | Learn about the core internals of Open 3D Engine such as memory management and the custom RTTI system. |
+| [Programming Guide](/docs/user-guide/programming/) | Learn about the core systems of Open 3D Engine, which are provided by the AzCore framework, and how to extend them by programming. |
+| [Memory management](/docs/user-guide/programming/memory-management/) | Learn the best practices for allocating and managing memory in Open 3D Engine. |
