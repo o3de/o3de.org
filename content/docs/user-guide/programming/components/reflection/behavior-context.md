@@ -88,7 +88,7 @@ behaviorContext->Class<ScriptClass>()
     ->Enum<ScriptClass::SC_ET_VALUE2>("SC_ET_VALUE2");
 ```
 
-For more information about these functions, refer to [ClassBuilder](/docs/api/frameworks/azcore/struct_a_z_1_1_behavior_context_1_1_class_builder.html) in the O3DE `AzCore` API Reference.
+For more information about these functions, refer to [BehaviorContext](/docs/api/frameworks/AzCore/class_a_z_1_1_behavior_context.html), which lists the `ClassBuilder` functions, in the O3DE `AzCore` API Reference.
 
 ### Attributes
 
