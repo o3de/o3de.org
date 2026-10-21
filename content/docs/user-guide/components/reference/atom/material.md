@@ -91,7 +91,7 @@ A "material consumer" is any component that accepts material and property change
 | 'FindMaterialAssignmentId' | Searches for and returns the MaterialAssignmentId matching the LOD index and label substring. Use LOD index of -1 for default and model materials. If no matching material is found the default material will be returned. | LOD Index: Integer, Label: String | Material Assignment Slot ID: MaterialAssignmentId | Yes |
 | 'GetMaterialAssignments' | Returns a map of available material slots and their default assignments | None | Unmodified Material Slot Layout: MaterialAssignmentMap | Yes |
 | 'GetModelMaterialSlots' | Returns a map containing details about the available material slots like a stable ID and label name. [Mesh Component](/docs/user-guide/components/reference/atom/mesh/) and [Actor Component](/docs/user-guide/components/reference/animation/actor/) extract this data from model assets but the same data could be provided by any other rendering components. | None | Material Slot Layout: ModelMaterialSlotMap | No |
-| 'GetModelUvNames' | Returns a map of available UV channel names that can be remapped per material using the Material Component. | None | Model UV Channel Names: AZStd::unordered_set<AZ::Name> | Yes |
+| 'GetModelUvNames' | Returns a map of available UV channel names that can be remapped per material using the Material Component. | None | Model UV Channel Names: `AZStd::unordered_set<AZ::Name>` | Yes |
 
 ## MaterialConsumerNotificationBus
 This notification bus is used to inform the Material Component and its editor equivalent of changes in the layout and default values of available material slots. Notifications consumed from this bus inform the editor Material Component that UI changes need to occur. 

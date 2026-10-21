@@ -29,6 +29,6 @@ These Gems are only built and loaded for products that require them:
 
 * **EditorPythonBindings** - Support for dynamic Python scripting of the Editor. Read the [Python Bindings Examples](/docs/user-guide/editor/editor-automation/#python-editor-bindings-gem-examples) for more information.
 
-* **PythonAssetBuilder** - Adds Asset Processor support for building assets via Python scripts. Read the [Python Asset Builder Gem documentation](/docs/user-guide/assets/builder/) for more information.
+* **PythonAssetBuilder** - Adds Asset Processor support for building assets via Python scripts. Read the [Python Asset Builder Gem documentation](/docs/user-guide/assets/custom-assets/builder/) for more information.
 
 * **ImageProcessing** - Adds the ability to handle common image formats to the Asset Processor.

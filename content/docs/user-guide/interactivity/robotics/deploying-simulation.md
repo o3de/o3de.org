@@ -26,7 +26,7 @@ Note that several prerequisites are required:
 - [ROS2](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2) Gem registered
 - [ROS2Sensors](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2Sensors) Gem registered
 - [ROS2Controllers](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2Controllers) Gem registered
-- [WarehouseAssets](https://github.com/o3de/o3de-extras/tree/development/Gems/WarehousAssets) Gem registered
+- [WarehouseAssets](https://github.com/o3de/o3de-extras/tree/development/Gems/WarehouseAssets) Gem registered
 - [ROS2SampleRobots](https://github.com/o3de/o3de-extras/tree/development/Gems/ROS2SampleRobots) Gem registered
 
 Ensure that other Gems are enabled if you intend to build other project templates.

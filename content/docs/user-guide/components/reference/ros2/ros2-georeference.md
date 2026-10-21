@@ -4,7 +4,7 @@ linktitle: Georeference Level Component
 description: The Georeference Level component enables you to specify the geographical location of your simulation within the Robot Operating System (ROS 2) in Open 3D Engine (O3DE).
 ---
 
-The **Georeference Level** component allows you to choose the geographical location of your simulation. This component is a level component and should be added to the level entity. If you are using, for example, the [GNSS Sensor Component](../sensors/ros2-gnss-sensor.md), it complements its functionality.
+The **Georeference Level** component allows you to choose the geographical location of your simulation. This component is a level component and should be added to the level entity. If you are using, for example, the [GNSS Sensor Component](/docs/user-guide/components/reference/ros2/sensors/ros2-gnss-sensor/), it complements its functionality.
 
 ## Provider
 

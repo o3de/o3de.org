@@ -68,7 +68,7 @@ All mapping files should be saved into the project's `Config` directory.
 
 Define the resource mapping file to use on load in the `ResourceMappingConfigFileName` setting in the `awscoreconfiguration.setreg` file, located in the project's `Registry` directory. See [Project Settings](./getting-started/#project-settings) for more information about this file. The AWS Core Gem loads the defined mapping file on initialization and supports access to the mappings.
 
-Use the request bus (`AWSResourceMappingRequestBus`) to interact with a configured resource mapping file. See [AWSResourceMappingRequests](https://o3de.org/docs/api/gems/awscore/class_a_w_s_core_1_1_a_w_s_resource_mapping_requests.html) for the class API reference for the bus.
+Use the request bus (`AWSResourceMappingRequestBus`) to interact with a configured resource mapping file. See [AWSResourceMappingRequests](https://github.com/aws/o3de-repo/blob/main/Gems/AWSCore/Code/Include/ResourceMapping/AWSResourceMappingBus.h) in the `aws/o3de-repo` GitHub repository for the class API reference for the bus.
 
 **Example: Reading an entry**
 

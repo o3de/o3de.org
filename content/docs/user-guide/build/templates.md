@@ -81,7 +81,7 @@ scripts\o3de create-from-template --gem-path %USERPROFILE%\O3DE\Projects\MyProje
 This template contains a simple component that can be injected into an existing gem or project.  This saves you boilerplate typing when adding new components to an existing code-base. It includes an interface header that allows you to immediately start adding EBus messages to talk to the component.
 
 ### GemRepo
-This template contains the scaffold of a Gem Repository.  Users can add the URL of a Gem Repository to their Project Manager and the Gems inside that repository will become available for use.  See the [Gem Repository Overview](/docs/user-guide/gems/repositories/overview) for more information.
+This template contains the scaffold of a Gem Repository.  Users can add the URL of a Gem Repository to their Project Manager and the Gems inside that repository will become available for use.  See the [Remote Repository Overview](/docs/user-guide/remote-content/remote-repository-overview/) for more information.
 
 ### RemoteRepo
 This template contains the scaffold of a Remote Repository.  See the [Remote Repository](/docs/learning-guide/tutorials/remote-repositories/create-remote-repository) documentation for more information.
