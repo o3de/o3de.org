@@ -7,7 +7,7 @@ toc: true
 
 # Human Worker Gem
 
-![O3DE showing a level with HumanWorkerNavigation prefab](/static/images/user-guide/gems/humanworker-demo.png)
+![O3DE showing a level with HumanWorkerNavigation prefab](/images/user-guide/gems/humanworker-demo.png)
 
 This Gem provides a simulated human worker who can navigate between waypoints in the scene and is visible to any robots that maneuver in the same area. The navigation paths of the non-player characters (NPC) are pre-calculated at the start using [Recast framework](../ai/recast/recast-navigation.md).
 
@@ -17,7 +17,7 @@ Human worker assets are delivered as O3DE prefabs, containing visual models and 
 * Mesh animations of human walking
 * O3DE components for basic navigation of the human worker in a scene
 
-There are multiple prefabs that you can directly import to the scene. The simplest one, `HumanWorkerStatic.prefab`, is a prefab combining mesh and textures. You can use it as a decoration only. `HumanWorker.prefab` is additionally extended by the idle animations. It does not move around the set, as it does not contain any navigation-related components. Add `HumanWorkerNavigation.prefab` to your scene to achieve the fully functional NPC. By default, it comes with a placeholder for two navigation points. The worker walks between these points and stops for the idle animation in each. You can extend the number of waypoints and modify their positions with prefab overrides. Check the [tutorial](/content/docs/learning-guide/tutorials/entities-and-prefabs/override-a-prefab.md) for more details.
+There are multiple prefabs that you can directly import to the scene. The simplest one, `HumanWorkerStatic.prefab`, is a prefab combining mesh and textures. You can use it as a decoration only. `HumanWorker.prefab` is additionally extended by the idle animations. It does not move around the set, as it does not contain any navigation-related components. Add `HumanWorkerNavigation.prefab` to your scene to achieve the fully functional NPC. By default, it comes with a placeholder for two navigation points. The worker walks between these points and stops for the idle animation in each. You can extend the number of waypoints and modify their positions with prefab overrides. Check the [tutorial](/docs/learning-guide/tutorials/entities-and-prefabs/override-a-prefab/) for more details.
 
 You can find an example of this Gem use in [ROSCon2023Demo](https://github.com/RobotecAI/ROSCon2023Demo). This Gem project has a [GitHub repository](https://github.com/RobotecAI/o3de-humanworker-gem). For more information, refer to the _README_ file of the Gem.
 

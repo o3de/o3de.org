@@ -52,7 +52,7 @@ set AWS_EC2_METADATA_DISABLED=true
 ## C++ API
 
 {{< note >}}
-This content is in the process of being moved to the [API Reference](https://o3de.org/docs/api/gems/httprequestor/class_http_requestor_1_1_http_requestor_requests.html).
+For the API reference, see the [HttpRequestorBus.h](https://github.com/aws/o3de-repo/blob/main/Gems/HttpRequestor/Code/Include/HttpRequestor/HttpRequestorBus.h) header in the `aws/o3de-repo` GitHub repository.
 {{< /note >}}
 
 The HttpRequestor Gem has two sets of APIs: one set for making requests that return JSON responses and one set for return string (text) responses.

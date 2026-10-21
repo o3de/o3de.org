@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-Assets can be created in any content creation program that can export to a [file format](../asset-types) supported by **Open 3D Engine's (O3DE)** [Asset Pipeline](../asset-pipeline). This section focus on *scene source assets*, which are 3D meshes and animations created in applications such as Blender or Maya.
+Assets can be created in any content creation program that can export to a [file format](../asset-types) supported by **Open 3D Engine's (O3DE)** [Asset Pipeline](/docs/user-guide/assets/pipeline/). This section focus on *scene source assets*, which are 3D meshes and animations created in applications such as Blender or Maya.
 
 ## Source and product assets
 
@@ -33,7 +33,6 @@ The topics in this section provide general information about creating scene sour
 | [Scene format support](scene-format-support) | In depth information on scene data supported in O3DE. |
 | [Best Practices](source-asset-best-practices) | Best practices for scene source assets created in DCC applications to be processed for O3DE. |
 | [Scene Settings](scene-settings) | Documentation on the Scene Settings tool that you can use to customize how individual scene source assets are processed. |
-| [Interface](interface) | An overview of the Scene Settings interface and the options it displays based on the contents of source assets. |
 | [Meshes](meshes-tab) | An explanation of the **Meshes** tab, and the modifiers you can add to customize mesh product asset generation. |
 | [Actors](actors-tab) | An explanation of the **Actors** tab, and the modifiers you can add to customize actor product asset generation. |
 | [Motions](motions-tab) | An explanation of the **Motions** tab, and the modifiers you can add to customize motion product asset generation. |

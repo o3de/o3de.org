@@ -115,11 +115,11 @@ Inside your cpp file you should connect your dropdown bus when the component is 
 
 In other words, the above code clones or copies the only Option available ("Option1") and populates the remaining childs with the clones giving this as the result. 
 
-![alt text](image.png)
+![Dynamic layout list with three Option1 entries](/images/user-guide/interactivity/user-interface/components/layout/ui-editor-components-dynamic-layout-options.png)
 
 If you use the vector of strings that contains 3 indexes it will modify the text-element of each option and populate the dropdown as expected.
 
-![alt text](image2.png)
+![Dynamic layout list populated with Fireball, Ice Shard and Lightning Bolt](/images/user-guide/interactivity/user-interface/components/layout/ui-editor-components-dynamic-layout-populated.png)
 
 ---
 

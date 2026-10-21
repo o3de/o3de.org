@@ -2230,7 +2230,7 @@ This will generate an Android Gradle project for **\<project\>** in the director
      Loose assets the individual compiled asset files.
 
   - **PAK**
-     Bundled release files are bundled assets that are compressed into release Pak files. See [Bundling Project Assets](/docs/user-guide/asset-bundler/bundle-assets-for-release/) for information on how to create bundled assets.
+     Bundled release files are bundled assets that are compressed into release Pak files. See [Bundling Project Assets](/docs/user-guide/packaging/asset-bundler/bundle-assets-for-release/) for information on how to create bundled assets.
 
     The `asset.mode` setting controls the default value for the asset deployment mode.
 
