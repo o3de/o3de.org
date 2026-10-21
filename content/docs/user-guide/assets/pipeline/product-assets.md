@@ -8,7 +8,7 @@ toc: true
 
 A **product asset** is the runtime ready form of content in O3DE projects.
 
-The [Asset Processor](/docs/user-guide/assets/assets/asset-processor/) uses [Asset Builders](/docs/user-guide/assets/pipeline/asset-builders/) to generate product assets from [source assets](/docs/user-guide/assets/pipeline/source-assets/).
+The [Asset Processor](/docs/user-guide/assets/asset-processor/) uses [Asset Builders](/docs/user-guide/assets/pipeline/asset-builders/) to generate product assets from [source assets](/docs/user-guide/assets/pipeline/source-assets/).
 
 This page covers best practices for generating product assets from an asset builder.
 

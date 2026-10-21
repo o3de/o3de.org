@@ -91,7 +91,7 @@ The `NetworkProperty` tag has the following properties:
 | IsPredictable | If true, the Autonomous player is allowed to edit this property even if **ReplicateFrom** is `Authority` and not `Autonomous`. The autonomous player doesn't have control of this network property, but they may predict and change its value locally. For example, with the Network Transform component, the autonomous player is allowed to alter their player's position locally, even before receiving explicit permission from the server to move. This makes the player's movements feel responsive. | `bool` |
 | ExposeToEditor | If `true`, this property is accessible in the O3DE Editor. | `bool` |
 | ExposeToScript | If `true`, this property is accessible for runtime scripting via Lua and ScriptCanvas.  | `bool` |
-| GenerateEventBindings | If `true`, [AZ::Event](https://www.o3de.org/docs/user-guide/programming/az-event/) callbacks will be triggered whenever the value of this network property is changed. | `bool` |
+| GenerateEventBindings | If `true`, [AZ::Event](/docs/user-guide/programming/messaging/az-event/) callbacks will be triggered whenever the value of this network property is changed. | `bool` |
 
 ### Remote procedure calls (RPCs)
 
@@ -118,7 +118,7 @@ The `RemoteProcedure` tag has the following properties:
 | HandleOn | Tells the network which roles handles this RPC. If Authority, the RPC is handled by the server that has authority over that entity. If Autonomous, the RPC is handled only by the relevant player's local client. If Client, the RPC is handled on all clients. | `Authority`, `Autonomous`, `Client` |
 | IsPublic | If `true`, this property's access modifier is set to `public`, allowing others to send this RPC across the network. | `bool` |
 | IsReliable | If `true`, RPC is reliable and uses a queue to guarantee the delivery of a message. Otherwise, RPC is unreliable and are sent over a "fire and forget" method. Be aware that RPCs can be reliably sent, but are not guaranteed to arrive in any particular order.  | `bool` |
-| GenerateEventBindings | If `true`, [AZ::Event](https://www.o3de.org/docs/user-guide/programming/az-event/) callbacks will be triggered whenever the value of this network property is changed. | `bool` |
+| GenerateEventBindings | If `true`, [AZ::Event](/docs/user-guide/programming/messaging/az-event/) callbacks will be triggered whenever the value of this network property is changed. | `bool` |
 
 
 ### Archetype property

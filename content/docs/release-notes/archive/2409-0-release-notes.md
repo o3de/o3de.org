@@ -154,8 +154,8 @@ See Simulation, Rendering, and AR/VR sections for specific changes in these area
 
 **Other Gems worth noticing:**
 
-* Pointcloud https://github.com/RobotecAI/robotec-o3de-tools/tree/main/Gems/Pointcloud  
-* ROS2ScriptIntegration https://github.com/RobotecAI/robotec-o3de-tools/tree/main/Gems/ROS2ScriptIntegration  
+* Pointcloud https://github.com/RobotecAI/robotec-o3de-tools/tree/o3de-2409/Gems/Pointcloud  
+* ROS2ScriptIntegration https://github.com/RobotecAI/robotec-o3de-tools/tree/o3de-2409/Gems/ROS2ScriptIntegration  
 * VehicleDynamics https://github.com/RobotecAI/o3de-vehicle-dynamics-gem
 
 ## Rendering Specific Changes for 24.09.0 Release

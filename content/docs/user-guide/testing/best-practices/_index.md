@@ -301,7 +301,7 @@ Performance testing targets the efficiency of a process, hardware configuration,
 O3DE's performance testing tools focus on two layers of creating metrics on the local machine:
 
 1. [Micro-benchmarks](/docs/user-guide/testing/getting-started/#googlebenchmark) of individual functions with GoogleBenchmark, similar to unit tests.
-2. [Profiling markers](/docs/user-guide/testing/profiler/) annotated into different systems of the engine, similar to system tests.
+2. [Profiling markers](/docs/user-guide/profiling/cpu_profiling/) annotated into different systems of the engine, similar to system tests.
 
 ## Which tests are best?
 

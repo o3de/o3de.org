@@ -82,5 +82,5 @@ In addition to the previously described roles, O3DE has an additional role found
 | Topic | Description |
 |--|--|
 | [AzNetworking](/docs/user-guide/networking/aznetworking/) | Learn about the low-level networking stack in O3DE that the Multiplayer Gem is built on top of. |
-| [Automate Source Generation from Templates with AzAutoGen](/docs/user-guide/engine/autogen/) | Learn about the AzAutoGen code generation system used to create [auto-components](./autocomponents) for projects using the Multiplayer Gem. |
+| [Automate Source Generation from Templates with AzAutoGen](/docs/user-guide/programming/autogen/) | Learn about the AzAutoGen code generation system used to create [auto-components](./autocomponents) for projects using the Multiplayer Gem. |
 | [Multiplayer Gem API Reference](/docs/api/gems/multiplayer/annotated.html) | The complete C++ API reference for the O3DE Multiplayer Gem. |
