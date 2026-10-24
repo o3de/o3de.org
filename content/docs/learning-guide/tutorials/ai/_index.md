@@ -6,7 +6,12 @@ description: Learn to create artificial intelligence (AI) for your Open 3D Engin
 
 This section contains step-by-step tutorials related to artificial intelligence (AI) in **Open 3D Engine (O3DE)**.
 
+{{< todo >}}
+This is a stub page intended to serve as an example of guide structure. Information will be filled in and changed as the AI Developer Guide is published.
+{{< /todo >}}
+
+
+
 | Tutorial | Description |
 | - | - |
-| [2D Navigation with Kythera AI](navigation-2d) [**Deprecated**]| Create an artificial intelligence (AI) agent that performs ground-based navigation and follows a visually scripted behavior tree. This tutorial uses the broad toolset provided by the [Kythera AI](/docs/user-guide/gems/reference/kythera-ai) Gem.  |
-
+| | 
