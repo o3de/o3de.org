@@ -29,9 +29,7 @@ The following components are grouped by type as they appear in the O3DE Editor.
 ### AI
 | Component | Description | 
 | - | - |
-| [Navigation](/docs/user-guide/components/reference/ai/navigation/) | Provides basic path-finding and path-following services to an entity. |
-| [Navigation Area](/docs/user-guide/components/reference/ai/nav-area/) | Configures the area used for navigation and pathfinding. |
-| [Navigation Seed](/docs/user-guide/components/reference/ai/nav-seed/) | Determines the reachable navigation nodes along the path.  |
+
 -->
 
 

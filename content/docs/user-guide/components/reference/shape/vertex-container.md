@@ -7,7 +7,7 @@ weight: 500
 
 
 
-`VertexContainer` is a concrete type and an interface that is used by several **Open 3D Engine (O3DE)** component buses. It is implemented directly by the [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) component and the [Spline](/docs/user-guide/components/reference/shape/spline/) component, and used indirectly by the [Navigation Area](/docs/user-guide/components/reference/ai/nav-area) component.
+`VertexContainer` is a concrete type and an interface that is used by several **Open 3D Engine (O3DE)** component buses. It is implemented directly by the [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) component and the [Spline](/docs/user-guide/components/reference/shape/spline/) component.
 
 ## Vertex Container Interface
 
