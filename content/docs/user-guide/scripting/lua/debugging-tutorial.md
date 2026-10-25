@@ -64,8 +64,6 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
 
 1. In the **Lua Script** component, click {{< icon "open-in-internal-app.svg" >}} to launch Lua Editor.
 
-    ![Launch Lua Editor from Lua Script component in O3DE Editor](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
-    
 ## Connect to O3DE Editor
 
 The [**Remote Tools Gem**](/docs/user-guide/gems/reference/debug/remote-tools) facilitates local connections between O3DE applications. 
