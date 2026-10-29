@@ -288,4 +288,54 @@ sudo apt install ninja-build
 
 ## macOS
 
-Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Big Sur, Intel x86_64, XCode {{< versions/xcode >}} or later, and a Metal-compatible video card that meets the hardware requirements above.
+Support for developing on macOS is in an experimental stage, and only Apple Silicon (ARM64) Macs are supported; Intel-based Macs are not. At a minimum, you need macOS Sequoia (15) or later, Xcode {{< versions/xcode >}} or later with the Metal Toolchain, CMake {{< versions/cmake >}} or later, and a Metal-compatible video card that meets the hardware requirements above.
+
+### Xcode and the Metal Toolchain {#macos-xcode}
+
+O3DE compiles shaders with Apple's Metal compiler (`metal`), which is only available with the full **Xcode** application. The **Xcode Command Line Tools** alone are not sufficient: they provide `clang`, but not the Metal compiler.
+
+1. Install [Xcode](https://apps.apple.com/app/xcode/id497799835) from the App Store or from [Apple Developer downloads](https://developer.apple.com/download/applications/). O3DE does not need any simulator platforms, so you can leave iOS, watchOS, tvOS, and visionOS unselected when Xcode first launches.
+
+1. Make Xcode the active developer directory. If `xcode-select -p` prints `/Library/Developer/CommandLineTools`, command line tools such as `xcrun` cannot find the Metal compiler.
+
+    ```shell
+    sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+    ```
+
+1. Starting with Xcode 26, the Metal Toolchain is a separate component that is not installed with Xcode. Download it with `xcodebuild`:
+
+    ```shell
+    xcodebuild -downloadComponent MetalToolchain
+    ```
+
+1. Verify that the Metal compiler is available:
+
+    ```shell
+    xcrun -f metal
+    ```
+
+If the Metal compiler is missing, the Asset Processor fails every shader job and the O3DE Editor stops during startup with an error such as `Could not compile asset 'Shaders/SimpleTextured.azshader'`. The shader job logs in `<project>/user/log/JobLogs/Shaders/` report one of the following errors:
+
+```
+MslToAir: xcrun: error: unable to find utility "metal", not a developer tool or in PATH
+```
+
+```
+error: cannot execute tool 'metal' due to missing Metal Toolchain; use: xcodebuild -downloadComponent MetalToolchain
+```
+
+After installing the Metal Toolchain, restart the Asset Processor so that it processes the failed shader jobs again.
+
+### CMake {#macos-cmake}
+
+[CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. You can install it from the CMake download page or with [Homebrew](https://brew.sh/):
+
+```shell
+brew install cmake
+```
+
+Verify that the version meets the minimum version criteria:
+
+```shell
+cmake --version
+```
