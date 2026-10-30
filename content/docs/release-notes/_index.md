@@ -14,7 +14,7 @@ primary: true
 
 **Latest version**: 26.05.0, released on May 27, 2026.
 
-**Release Notes**: [O3DE 26.05.0 Release Notes](./2605-0-release-notes)
+**Release Notes**: [O3DE 26.05.0 Release Notes](archive/2605-0-release-notes.md)
 
 
 ### Download the latest version
