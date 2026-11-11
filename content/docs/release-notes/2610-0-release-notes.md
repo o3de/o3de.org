@@ -2,8 +2,8 @@
 linktitle: 26.10.0 Release Notes
 title: Release Notes for Open 3D Engine 26.10.0
 description: Full release notes for Open 3D Engine (O3DE) version 26.10.0.
-weight: xxx 
-toc: xxx 
+weight: 881 
+toc: true 
 ---
 # 26.10.0 Release Notes
 
