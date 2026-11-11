@@ -5,7 +5,7 @@ description: Use event buses and the eventing system to dispatch messages betwee
 weight: 200
 ---
 
-Most engines driven by *entity-component systems (ECS)*, such as Open 3D Engine's [Component Entity System](../../components), use a *publish-subscribe (pub/sub)* model to decouple event generators from event consumers. In these systems, an entity *publishes* events which interested consumers can *subscribe* to. For example, a collision component would want to *publish* an event when an object collides into it, and the entity which owns the component would *subscribe* to these events in order to adjust the other components.
+Most engines driven by *entity-component systems (ECS)*. Open 3D Engine though is driven by a [component entity system](/docs/welcome-guide/key-concepts#component-entity-system), which uses a *publish-subscribe (pub/sub)* model to decouple event generators from event consumers. In these systems, an entity *publishes* events which interested consumers can *subscribe* to. For example, a collision component would want to *publish* an event when an object collides into it, and the entity which owns the component would *subscribe* to these events in order to adjust the other components.
 
 In O3DE, the two main pub/sub systems are **EBus** (Event Bus), and [`AZ::Event`](/docs/user-guide/programming/messaging/az-event.md). `AZ::Event` uses a delegate pattern: Specific component instances have a member of type `AZ::Event`, and the component adds (or removes) [`AZ::EventHandler`](/docs/api/frameworks/azcore/class_a_z_1_1_event_handler.html) objects
 which perform the actual processing of the event itself for the component.
