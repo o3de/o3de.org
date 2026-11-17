@@ -5,7 +5,7 @@ description: Learn how Open 3D Engine (O3DE) components fit into the Entity-Comp
 weight: 100
 ---
 
-**Open 3D Engine (O3DE)** is an *entity-component system (ECS)* engine. This means that rather than using a polymorphism system where objects derive from one another ("is-a" relationships), it instead uses composition ("has-a" relationships). A common polymorphism example is "a car *is a* vehicle", whereas a composition example is "a car *has the components of a* vehicle". Using composition makes it much easier to extend objects, design for reuse, and keep base implementations as flexible as possible for performance and ease of use.
+**Open 3D Engine (O3DE)** is an *component entity system (CES)* engine. This means that rather than using a polymorphism system where objects derive from one another ("is-a" relationships), it instead uses composition ("has-a" relationships). A common polymorphism example is "a car *is a* vehicle", whereas a composition example is "a car *has the components of a* vehicle". Using composition makes it much easier to extend objects, design for reuse, and keep base implementations as flexible as possible for performance and ease of use.
 
 Entities have no functionality by themselves; rather, they are essentially an ID and a container for components. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
