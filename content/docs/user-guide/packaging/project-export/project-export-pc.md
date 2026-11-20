@@ -9,7 +9,7 @@ weight: 400
 ## Prerequisites
 To make best use of the export button in the Project Manager, or the `export-project` CLI command, it is recommended to have a project with at least one starting level, and all necessary seedlist files prepared. AssetProcessor Registry file settings may need to be tweaked. To learn how to set this up, please consult the following page: [Creating a Project Game Release Layout for Windows, section: Set the Starting Level](../windows-release-builds/#set-the-starting-level).
 
-To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](https://docs.o3de.org/docs/user-guide/packaging/asset-bundler/overview/).
+To learn more about the AssetBundler and Seed Files, please visit the [overview page on the AssetBundler tool](/docs/user-guide/packaging/asset-bundler/overview/).
 
 
 {{< note >}}

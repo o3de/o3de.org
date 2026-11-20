@@ -8,3 +8,4 @@ Use the information in this section to learn about navigation and path finding i
 | Topic | Description |
 | - | - |
 | [Recast Navigation](recast-navigation) | Learn about the Recast Navigation tools that you can use to create navigation meshes and find paths. |
+| [Detour Crowd Navigation](detour-crowd-navigation) | Learn about the Detour Crowd Navigation component that you can use to manage crowds of agents with collision avoidance. |

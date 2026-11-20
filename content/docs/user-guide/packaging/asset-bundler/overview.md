@@ -78,7 +78,7 @@ With the O3DE asset bundling workflow, you need only dig into the individual ass
 
 An Asset Builder is a standalone application that primarily translates intermediate assets to a platform-native asset format. An Asset Builder also provides dependency tracking and tasks related to managing asset metadata.
 
-O3DE ships with Asset Builders for many common asset types. The Asset Bundler relies on the information produced by the Asset Builders for your project to manage the dependencies. If you use custom asset types, you can [create your own Asset Builders](/docs/user-guide/assets/builder) to support proper asset management and bundling with O3DE.
+O3DE ships with Asset Builders for many common asset types. The Asset Bundler relies on the information produced by the Asset Builders for your project to manage the dependencies. If you use custom asset types, you can [create your own Asset Builders](/docs/user-guide/assets/custom-assets/builder/) to support proper asset management and bundling with O3DE.
 
 For example, Asset Builders for images can convert any portable image asset into a set of performance image formats. When the Asset Builder for the images run, they create the dependency tree for the performance-oriented image formats generated from the more general-use portable image formats, and define them as dependent on the respective portable image format. If you create the performance-oriented images manually or through a separate process, the dependencies are not defined and not available to the Asset Bundler.
 
@@ -86,7 +86,7 @@ In addition to processing your asset, Asset Builders also determine any product 
 
 You can use the Asset Builder APIs to develop your own Asset Builders, which can then process your custom asset type's source files and generate files that you can use in O3DE. Source code for a sample Asset Builder implementation is provided in the `Games/CustomAssetExample/Code/Source/Builder` directory under your O3DE installation root.
 
-For more information, see the [the Asset Builder documentation](/docs/user-guide/assets/builder).
+For more information, see the [the Asset Builder documentation](/docs/user-guide/assets/custom-assets/builder/).
 
 ## Define dependencies in your Asset Builder 
 In addition to processing your asset, Asset Builders also define any product or source asset dependencies, and then store that information in a database for later use by the Asset Bundler. Specifically, defining an asset dependency means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game. Without defined dependencies, the Asset Bundler cannot identify which assets your game needs when it's time to prepare your asset bundles release. As a result, you could end up missing assets, including too many, or shipping undesirable ones. With Asset Dependencies defined in your Asset Builders, you are including the exact assets that you need for your game.

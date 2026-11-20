@@ -28,9 +28,6 @@ The O3DE Core (LmbrCentral) Gem contains required code and assets for running **
 
 <!--
 * AI components
-    * [Navigation](/docs/user-guide/components/reference/ai/navigation)
-    * [Navigation Area](/docs/user-guide/components/reference/ai/nav-area)
-    * [Navigation Seed Point](/docs/user-guide/components/reference/ai/nav-seed)
 -->
 
 * Audio components

@@ -8,6 +8,8 @@ github.com/o3de/api.o3de.org v0.0.0-20251014175601-4f32c37da4eb h1:r/WTVbAsmWzEk
 github.com/o3de/api.o3de.org v0.0.0-20251014175601-4f32c37da4eb/go.mod h1:d6EE5TgwFjafgZ4tehTcZte3u6bP3bbaCAWsoE1h9KA=
 github.com/o3de/api.o3de.org v0.0.0-20260527151816-227b4820cd0d h1:FiW78r0CLvjZh+JtjbDoJyzg25tT/akOijGK+vwX8fE=
 github.com/o3de/api.o3de.org v0.0.0-20260527151816-227b4820cd0d/go.mod h1:d6EE5TgwFjafgZ4tehTcZte3u6bP3bbaCAWsoE1h9KA=
+github.com/o3de/api.o3de.org v0.0.0-20261110145333-ff716ddeed20 h1:MVgJ8QNFOTbCHeo9/Bq8rLu5T8ZHcKeP4zDFisN3Mnw=
+github.com/o3de/api.o3de.org v0.0.0-20261110145333-ff716ddeed20/go.mod h1:d6EE5TgwFjafgZ4tehTcZte3u6bP3bbaCAWsoE1h9KA=
 github.com/o3de/hugo-odie v0.0.0-20241126002926-cac27abcb022 h1:cnPDk4/430IcnnbPzNcGdXGDWxPwGTqHm89/TrU5B+I=
 github.com/o3de/hugo-odie v0.0.0-20241126002926-cac27abcb022/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
 github.com/o3de/hugo-odie v0.0.0-20250607164835-e8c6464265ee h1:wLdC9W1ObTx1mGM9ypAmAZ4Wi2RK7nJ4eeElP0kNgvo=
@@ -22,3 +24,5 @@ github.com/o3de/hugo-odie v0.0.0-20251024151654-ae93eb2e6e4e h1:y72sXVnouxhdnWtJ
 github.com/o3de/hugo-odie v0.0.0-20251024151654-ae93eb2e6e4e/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
 github.com/o3de/hugo-odie v0.0.0-20251031153332-d1379137cabb h1:wJm9irMKTd1osKpvihy43HTLvJT1Dr4KyI5P8ngniTw=
 github.com/o3de/hugo-odie v0.0.0-20251031153332-d1379137cabb/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=
+github.com/o3de/hugo-odie v0.0.0-20261110145842-ef6c14712a4a h1:5dipcFAyxYIlguNoGCIZiPPBYW94Ll/Ll7vl4U5zJKk=
+github.com/o3de/hugo-odie v0.0.0-20261110145842-ef6c14712a4a/go.mod h1:nsaJnNh0bcthbzUyIh5ZAkSmxr5VMy9DvF6ohz6+M04=

@@ -152,7 +152,7 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Deferred Fog | 🟢 Complete | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟢 Optimized | All  | | [Link](https://o3de.org/docs/user-guide/components/reference/atom/deferred-fog/) |
-| Tonemapping | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/atom-guide/atom-sample-viewer/graphics-feature-samples/#tonemapping) |
+| Tonemapping | 🟢 Complete | 🟢 Complete | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](/docs/user-guide/components/reference/atom/display-mapper/) |
 | Direct Lighting / Area Lights | 🟢 Complete | 🟢 Complete | ⭕ Not Required | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/user-guide/components/reference/atom/light/) |
 | Meshes | 🟡 Active | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/atom-guide/features/#meshes) |
 | Skinned Meshes | 🟢 Complete | 🟡 Partial | 🟢 Complete | 🟢 Stable | 🟡 Needs Optimization | All  | | [Link](https://www.o3de.org/docs/atom-guide/features/#meshes) |
@@ -518,8 +518,8 @@ For an up-to-date feature grid and full notes, open the [Feature State Form](htt
 
 | Module | Feature | Functional | Content | Code/API | Performance | Platform | Github Link | Doc Link |
 | :-- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Component Card | 🟡 Active | 🟡 Partial | | | | | | [Link](https://www.o3de.org/docs/tools-ui/ux-patterns/component-card/overview/) |
-| Error & Warnings handling | 🟠 Planned | 🟠 Minimal | | | | | | [Link](https://www.o3de.org/docs/tools-ui/ux-patterns/error/overview/) |
+| Component Card | 🟡 Active | 🟡 Partial | | | | | | [Link](/docs/tools-ui/ux-patterns/component-card/) |
+| Error & Warnings handling | 🟠 Planned | 🟠 Minimal | | | | | | [Link](/docs/tools-ui/ux-patterns/error/) |
 | Hotkey management | 🔵 Backlogged | 🟠 Minimal | | | | | | |
 | UI/UX Responsiveness standards | 🔵 Backlogged | ❌ None | | | | | | |
 | Viewport interaction | 🔵 Backlogged | 🔵 In-Design | | | | | | |

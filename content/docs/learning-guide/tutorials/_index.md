@@ -22,7 +22,7 @@ Do you have O3DE installed and you aren't sure where to start? Then [try the fol
 
 | Tutorial | Description |
 | - | - |
-| [2D Navigation with Kythera AI](ai/navigation-2d) | Create an artificial intelligence (AI) agent that performs ground-based navigation and follows a visually scripted behavior tree. This tutorial uses the broad toolset that the [Kythera AI Gem](/docs/user-guide/gems/reference/kythera-ai) provides. |
+|  | 
 
 ## Assets
 

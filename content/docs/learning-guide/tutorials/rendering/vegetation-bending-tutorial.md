@@ -48,7 +48,7 @@ Vegetation bending is done through a material that uses vertex shaders to create
 
 The following list is an overview of the files required for a material:
 ``
-- The [`.materialtype`](/docs/atom-guide/dev-guide/materials/materials/#material-types) file references the shader files you will use on the material of this material type. 
+- The [`.materialtype`](/docs/atom-guide/look-dev/materials/material-type-file-spec/) file references the shader files you will use on the material of this material type. 
 - The [`.shader`](/docs/atom-guide/look-dev/shaders/shader-file-spec.md) files define which types of shaders, such as vertex and pixel shaders, should be used, and references the actual shader code in [`.azsl`](/docs/atom-guide/dev-guide/shaders/azsl/) files. They also specify the `DrawList`, which controls which pass should run that shader. 
 - Often, `.azsl` files will include `.azsli` files, which are also written in the Amazon Shading Language (AZSL). These files are separate so multiple `.azsl` files can reuse the shader code from the `.azsli` files. 
 

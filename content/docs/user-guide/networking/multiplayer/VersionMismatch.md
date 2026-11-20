@@ -14,7 +14,7 @@ Servers and clients must be running the same version of all the multiplayer comp
 **Open 3D Engine (O3DE)** networking provides multiplayer version checks to identify and guard against this unexpected behavior.
 
 ## How to enable the Multiplayer Version Mismatch feature:
-Multiplayer version mismatch detection is enabled automatically inside the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/). If two multiplayer endpoints connect with different versions, a `Multiplayer::VersionMismatchEvent` [AZ::Event](/docs/user-guide/programming/az-event/) will be triggered. In addition, information about which auto-components are mismatched will be printed to the console and written to logs to aid debugging.
+Multiplayer version mismatch detection is enabled automatically inside the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer-gem/). If two multiplayer endpoints connect with different versions, a `Multiplayer::VersionMismatchEvent` [AZ::Event](/docs/user-guide/programming/messaging/az-event/) will be triggered. In addition, information about which auto-components are mismatched will be printed to the console and written to logs to aid debugging.
 
 ## Relevant console variables (CVARs)
 | Setting                            | Description                                                 | Default |                    | 
@@ -32,5 +32,5 @@ Multiplayer version mismatch detection is enabled automatically inside the [Mult
     1. If there's a multiplayer system version mismatch then:
         1. A version mismatch packet is exchanged containing the version hash of each individual auto-component in order for the server and client to know exactly which components are out-of-date.
         2. Error logs are reported.
-        3. An [AZ::Event](/docs/user-guide/programming/az-event/) is broadcast using `AZ::Interface<IMultiplayer>::Get()->AddVersionMismatchHandler`.
+        3. An [AZ::Event](/docs/user-guide/programming/messaging/az-event/) is broadcast using `AZ::Interface<IMultiplayer>::Get()->AddVersionMismatchHandler`.
         4. The connection is terminated (if `sv_versionMismatch_autoDisconnect` is enabled). 

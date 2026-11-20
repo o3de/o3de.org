@@ -10,7 +10,7 @@ In this tutorial section, you will create a new level that is ready for authorin
 
 ## Create a new level
 
-1. In **O3DE Editor**, create a new level. (Refer to the [Create a new level](/docs/learning-guide/tutorials/reference/environments/create-a-level) tutorial for more details)
+1. In **O3DE Editor**, create a new level. (Refer to the [Create a new level](/docs/learning-guide/tutorials/environments/create-a-level/) tutorial for more details)
 
 2. Delete the **Grid**, **Ground**, and **Shader Ball** entities underneath the **Atom Default Environment** so that the terrain you will build is fully visible.
 

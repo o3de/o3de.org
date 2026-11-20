@@ -16,7 +16,7 @@ To build the forked version of OpenCppCoverage:
 ## How do I reproduce a TIAF AR run locally?
 
 {{< note >}}
-Prior to running TIAF locally, you must [clone and build the OpenCppCoverage fork](./debugging-tiaf/#how-do-i-configure-and-install-opencppcoverage) and [enable the TIAF at the CMake level](./general-information/#how-do-i-turn-the-tiaf-onoff-in-automated-review). 
+Prior to running TIAF locally, you must [clone and build the OpenCppCoverage fork](#how-do-i-configure-and-install-opencppcoverage) and [enable the TIAF at the CMake level](/docs/engine-dev/tools/tiaf/maintaining-tiaf/general-information/#how-do-i-turn-the-tiaf-onoff-in-automated-review). 
 {{< /note >}}
 
 When you encounter issues related to the TIAF in an automated review (AR) integration, it may be difficult to debug them in AR due to limited tools. Instead, you can debug the TIAF issue by running the TIAF runtime on your local machine and attaching a debugger. These steps help ensure that you run the TIAF runtime using the same environment as the Git commit that failed in the Jenkins AR run. For more information, refer to [Automated Review Integration](/docs/engine-dev/tools/tiaf/architectural-overview/ar-integration) in the TIAF section. 

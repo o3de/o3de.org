@@ -110,7 +110,7 @@ Material types are stored in files with the `.materialtype` extension.
 Material type asset  
 : A material type asset is generated from material type data into a form that is consumable by the simulation. Material type assets are stored in files with the `.azmaterialtype` extension and are stored in the engine's cache for use at runtime.
 
-*Related to: [Material System](dev-guide/materials/), [Material System](dev-guide/materials/materials/)<!--, [Material Build Pipeline](dev-guide/materials/material-build-pipeline)DRAFT TOPIC-->*
+*Related to: [Material System](dev-guide/materials/), [Material System](/docs/atom-guide/look-dev/materials/material-system/)<!--, [Material Build Pipeline](dev-guide/materials/material-build-pipeline)DRAFT TOPIC-->*
 
 Pass  
 : A pass is a logical grouping of render work with a defined input and output. Passes are organized into a tree hierarchy, where each pass belongs to a parent pass. Passes live in the RPI and are similar to scopes in the RHI.

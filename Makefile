@@ -16,7 +16,8 @@ preview-build:
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildFuture \
 		--minify \
-		--disableKinds="robotsTXT"
+		--disableKinds="robotsTXT" \
+		--logLevel=error
 
 open:
 	open https://o3de.netlify.com
